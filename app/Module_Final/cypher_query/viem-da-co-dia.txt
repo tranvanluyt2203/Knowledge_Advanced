@@ -1,0 +1,1113 @@
+
+MERGE (o1:symptom {id: 'ngứa_symptom'})
+MERGE (o2:disease {id: 'viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r0:isSymptomOf]->(o2)
+SET r0.text = 'Viêm da cơ địa (chàm thể tạng) là bệnh phổ biến, với triệu chứng ngứa rất điển hình.'
+
+MERGE (o1:disease {id: 'viêm_da_cơ_địa_disease'})
+MERGE (o2:symptom {id: 'ngứa_symptom'})
+MERGE (o1)-[r1:isSymptomOf]->(o2)
+SET r1.text = 'Viêm da cơ địa (chàm thể tạng) là bệnh phổ biến, với triệu chứng ngứa rất điển hình.'
+
+MERGE (o1:cause {id: 'di_truyền_cause'})
+MERGE (o2:disease {id: 'viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r2:causedBy]->(o2)
+SET r2.text = 'Bệnh gặp ở mọi lứa tuổi, có liên quan đến di truyền (gồm: Rối loạn chức năng miễn dịch và rối loạn cấu tạo da); bệnh thường nặng thêm do các tác động của yếu tố môi trường (bụi, ô nhiễm, hóa chất,…).'
+
+MERGE (o1:cause {id: 'rối_loạn_chức_năng_miễn_dịch_cause'})
+MERGE (o2:disease {id: 'viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r3:causedBy]->(o2)
+SET r3.text = 'Bệnh gặp ở mọi lứa tuổi, có liên quan đến di truyền (gồm: Rối loạn chức năng miễn dịch và rối loạn cấu tạo da); bệnh thường nặng thêm do các tác động của yếu tố môi trường (bụi, ô nhiễm, hóa chất,…).'
+
+MERGE (o1:cause {id: 'rối_loạn_cấu_tạo_da_cause'})
+MERGE (o2:disease {id: 'viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r4:causedBy]->(o2)
+SET r4.text = 'Bệnh gặp ở mọi lứa tuổi, có liên quan đến di truyền (gồm: Rối loạn chức năng miễn dịch và rối loạn cấu tạo da); bệnh thường nặng thêm do các tác động của yếu tố môi trường (bụi, ô nhiễm, hóa chất,…).'
+
+MERGE (o1:cause {id: 'bụi_cause'})
+MERGE (o2:disease {id: 'viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r5:aggravatedBy]->(o2)
+SET r5.text = 'Bệnh gặp ở mọi lứa tuổi, có liên quan đến di truyền (gồm: Rối loạn chức năng miễn dịch và rối loạn cấu tạo da); bệnh thường nặng thêm do các tác động của yếu tố môi trường (bụi, ô nhiễm, hóa chất,…).'
+
+MERGE (o1:cause {id: 'ô_nhiễm_cause'})
+MERGE (o2:disease {id: 'viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r6:aggravatedBy]->(o2)
+SET r6.text = 'Bệnh gặp ở mọi lứa tuổi, có liên quan đến di truyền (gồm: Rối loạn chức năng miễn dịch và rối loạn cấu tạo da); bệnh thường nặng thêm do các tác động của yếu tố môi trường (bụi, ô nhiễm, hóa chất,…).'
+
+MERGE (o1:cause {id: 'hóa_chất_cause'})
+MERGE (o2:disease {id: 'viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r7:aggravatedBy]->(o2)
+SET r7.text = 'Bệnh gặp ở mọi lứa tuổi, có liên quan đến di truyền (gồm: Rối loạn chức năng miễn dịch và rối loạn cấu tạo da); bệnh thường nặng thêm do các tác động của yếu tố môi trường (bụi, ô nhiễm, hóa chất,…).'
+
+MERGE (o1:symptom {id: 'tổn_thương_da_symptom'})
+MERGE (o2:disease {id: 'viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r8:isSymptomOf]->(o2)
+SET r8.text = 'Người bệnh bị tổn thương da dai dẳng gây ảnh hưởng đến thẩm mỹ, giảm tự tin khi giao tiếp, gây trầm cảm, mất ngủ và giảm chất lượng cuộc sống.'
+
+MERGE (o1:symptom {id: 'giảm_tự_tin_symptom'})
+MERGE (o2:disease {id: 'viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r9:isSymptomOf]->(o2)
+SET r9.text = 'Người bệnh bị tổn thương da dai dẳng gây ảnh hưởng đến thẩm mỹ, giảm tự tin khi giao tiếp, gây trầm cảm, mất ngủ và giảm chất lượng cuộc sống.'
+
+MERGE (o1:symptom {id: 'trầm_cảm_symptom'})
+MERGE (o2:disease {id: 'viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r10:isSymptomOf]->(o2)
+SET r10.text = 'Người bệnh bị tổn thương da dai dẳng gây ảnh hưởng đến thẩm mỹ, giảm tự tin khi giao tiếp, gây trầm cảm, mất ngủ và giảm chất lượng cuộc sống.'
+
+MERGE (o1:symptom {id: 'mất_ngủ_symptom'})
+MERGE (o2:disease {id: 'viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r11:isSymptomOf]->(o2)
+SET r11.text = 'Người bệnh bị tổn thương da dai dẳng gây ảnh hưởng đến thẩm mỹ, giảm tự tin khi giao tiếp, gây trầm cảm, mất ngủ và giảm chất lượng cuộc sống.'
+
+MERGE (o1:symptom {id: 'giảm_chất_lượng_cuộc_sống_symptom'})
+MERGE (o2:disease {id: 'viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r12:isSymptomOf]->(o2)
+SET r12.text = 'Người bệnh bị tổn thương da dai dẳng gây ảnh hưởng đến thẩm mỹ, giảm tự tin khi giao tiếp, gây trầm cảm, mất ngủ và giảm chất lượng cuộc sống.'
+
+MERGE (o1:disease {id: 'viêm_da_cơ_địa_disease'})
+MERGE (o2:disease {id: 'chàm_thể_tạng_disease'})
+MERGE (o1)-[r13:relatedTo]->(o2)
+SET r13.text = 'Viêm da cơ địa còn được gọi là chàm thể tạng,
+,chàm sữa hay lác sữa ở trẻ em
+.'
+
+MERGE (o1:disease {id: 'viêm_da_cơ_địa_disease'})
+MERGE (o2:disease {id: 'chàm_sữa_disease'})
+MERGE (o1)-[r14:relatedTo]->(o2)
+SET r14.text = 'Viêm da cơ địa còn được gọi là chàm thể tạng,
+,chàm sữa hay lác sữa ở trẻ em
+.'
+
+MERGE (o1:disease {id: 'viêm_da_cơ_địa_disease'})
+MERGE (o2:disease {id: 'lác_sữa_disease'})
+MERGE (o1)-[r15:relatedTo]->(o2)
+SET r15.text = 'Viêm da cơ địa còn được gọi là chàm thể tạng,
+,chàm sữa hay lác sữa ở trẻ em
+.'
+
+MERGE (o1:symptom {id: 'da_viêm_đỏ_symptom'})
+MERGE (o2:disease {id: 'viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r16:isSymptomOf]->(o2)
+SET r16.text = 'Bệnh có đặc trưng xuất hiện các mảng da viêm đỏ, bong vảy, hoặc da viêm đỏ rỉ dịch và ngứa dữ dội.'
+
+MERGE (o1:symptom {id: 'bong_vảy_symptom'})
+MERGE (o2:disease {id: 'viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r17:isSymptomOf]->(o2)
+SET r17.text = 'Bệnh có đặc trưng xuất hiện các mảng da viêm đỏ, bong vảy, hoặc da viêm đỏ rỉ dịch và ngứa dữ dội.'
+
+MERGE (o1:symptom {id: 'da_viêm_đỏ_rỉ_dịch_symptom'})
+MERGE (o2:disease {id: 'viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r18:isSymptomOf]->(o2)
+SET r18.text = 'Bệnh có đặc trưng xuất hiện các mảng da viêm đỏ, bong vảy, hoặc da viêm đỏ rỉ dịch và ngứa dữ dội.'
+
+MERGE (o1:symptom {id: 'ngứa_dữ_dội_symptom'})
+MERGE (o2:disease {id: 'viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r19:isSymptomOf]->(o2)
+SET r19.text = 'Bệnh có đặc trưng xuất hiện các mảng da viêm đỏ, bong vảy, hoặc da viêm đỏ rỉ dịch và ngứa dữ dội.'
+
+MERGE (o1:lifestyle {id: 'gãi_lifestyle'})
+MERGE (o2:disease {id: 'viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r20:aggravatedBy]->(o2)
+SET r20.text = 'Nếu càng gãi (để giảm ngứa) thì càng làm da bị chấn thương, trầy xước gây nhiễm trùng da.'
+
+MERGE (o1:symptom {id: 'chấn_thương_symptom'})
+MERGE (o2:disease {id: 'viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r21:isSymptomOf]->(o2)
+SET r21.text = 'Nếu càng gãi (để giảm ngứa) thì càng làm da bị chấn thương, trầy xước gây nhiễm trùng da.'
+
+MERGE (o1:symptom {id: 'trầy_xước_symptom'})
+MERGE (o2:disease {id: 'viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r22:isSymptomOf]->(o2)
+SET r22.text = 'Nếu càng gãi (để giảm ngứa) thì càng làm da bị chấn thương, trầy xước gây nhiễm trùng da.'
+
+MERGE (o1:symptom {id: 'nhiễm_trùng_da_symptom'})
+MERGE (o2:disease {id: 'viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r23:isSymptomOf]->(o2)
+SET r23.text = 'Nếu càng gãi (để giảm ngứa) thì càng làm da bị chấn thương, trầy xước gây nhiễm trùng da.'
+
+MERGE (o1:disease {id: 'viêm_da_cơ_địa_disease'})
+MERGE (o2:disease {id: 'bệnh_mạn_tính_disease'})
+MERGE (o1)-[r24:relatedTo]->(o2)
+SET r24.text = 'Đây là bệnh mạn tính, dễ tái phát.'
+
+MERGE (o1:disease {id: 'viêm_da_cơ_địa_disease'})
+MERGE (o2:disease {id: 'bệnh_chàm_disease'})
+MERGE (o1)-[r25:relatedTo]->(o2)
+SET r25.text = 'Bệnh viêm da cơ địa là một dạng bệnh đặc biệt của
+bệnh chàm, thuật ngữ
+bệnh chàm dùng để chỉ nhiều loại viêm da có đặc điểm khá giống nhau như:'
+
+MERGE (o1:disease {id: 'bệnh_chàm_ở_tay_disease'})
+MERGE (o2:disease {id: 'bệnh_chàm_disease'})
+MERGE (o1)-[r26:relatedTo]->(o2)
+SET r26.text = 'Bệnh chàm ở tay: Chỉ xuất hiện tổn thương ở tay, do tiếp xúc thường xuyên với các hóa chất gây kích ứng.'
+
+MERGE (o1:symptom {id: 'tổn_thương_ở_tay_symptom'})
+MERGE (o2:disease {id: 'bệnh_chàm_ở_tay_disease'})
+MERGE (o1)-[r27:isSymptomOf]->(o2)
+SET r27.text = 'Bệnh chàm ở tay: Chỉ xuất hiện tổn thương ở tay, do tiếp xúc thường xuyên với các hóa chất gây kích ứng.'
+
+MERGE (o1:cause {id: 'tiếp_xúc_thường_xuyên_với_các_hóa_chất_gây_kích_ứng_cause'})
+MERGE (o2:disease {id: 'bệnh_chàm_ở_tay_disease'})
+MERGE (o1)-[r28:causedBy]->(o2)
+SET r28.text = 'Bệnh chàm ở tay: Chỉ xuất hiện tổn thương ở tay, do tiếp xúc thường xuyên với các hóa chất gây kích ứng.'
+
+MERGE (o1:disease {id: 'viêm_da_tiếp_xúc_disease'})
+MERGE (o2:disease {id: 'bệnh_chàm_disease'})
+MERGE (o1)-[r29:relatedTo]->(o2)
+SET r29.text = 'Viêm da tiếp xúc (do dị ứng hoặc kích ứng):Là tình trạng da bị tổn thương do tiếp xúc với một số hóa chất.'
+
+MERGE (o1:symptom {id: 'tổn_thương_da_symptom'})
+MERGE (o2:disease {id: 'viêm_da_tiếp_xúc_disease'})
+MERGE (o1)-[r30:isSymptomOf]->(o2)
+SET r30.text = 'Viêm da tiếp xúc (do dị ứng hoặc kích ứng):Là tình trạng da bị tổn thương do tiếp xúc với một số hóa chất.'
+
+MERGE (o1:cause {id: 'tiếp_xúc_với_một_số_hóa_chất_cause'})
+MERGE (o2:disease {id: 'viêm_da_tiếp_xúc_disease'})
+MERGE (o1)-[r31:causedBy]->(o2)
+SET r31.text = 'Viêm da tiếp xúc (do dị ứng hoặc kích ứng):Là tình trạng da bị tổn thương do tiếp xúc với một số hóa chất.'
+
+MERGE (o1:disease {id: 'bệnh_tổ_đỉa_disease'})
+MERGE (o2:disease {id: 'bệnh_chàm_disease'})
+MERGE (o1)-[r32:relatedTo]->(o2)
+SET r32.text = 'Bệnh tổ đỉa: Bệnh chàm với nhiều mụn nước, chỉ phát triển ở ngón tay, lòng bàn tay và lòng bàn chân, ngứa nhiều.'
+
+MERGE (o1:symptom {id: 'mụn_nước_symptom'})
+MERGE (o2:disease {id: 'bệnh_tổ_đỉa_disease'})
+MERGE (o1)-[r33:isSymptomOf]->(o2)
+SET r33.text = 'Bệnh tổ đỉa: Bệnh chàm với nhiều mụn nước, chỉ phát triển ở ngón tay, lòng bàn tay và lòng bàn chân, ngứa nhiều.'
+
+MERGE (o1:organ {id: 'ngón_tay_organ'})
+MERGE (o2:disease {id: 'bệnh_tổ_đỉa_disease'})
+MERGE (o1)-[r34:locatedIn]->(o2)
+SET r34.text = 'Bệnh tổ đỉa: Bệnh chàm với nhiều mụn nước, chỉ phát triển ở ngón tay, lòng bàn tay và lòng bàn chân, ngứa nhiều.'
+
+MERGE (o1:organ {id: 'lòng_bàn_tay_organ'})
+MERGE (o2:disease {id: 'bệnh_tổ_đỉa_disease'})
+MERGE (o1)-[r35:locatedIn]->(o2)
+SET r35.text = 'Bệnh tổ đỉa: Bệnh chàm với nhiều mụn nước, chỉ phát triển ở ngón tay, lòng bàn tay và lòng bàn chân, ngứa nhiều.'
+
+MERGE (o1:organ {id: 'lòng_bàn_chân_organ'})
+MERGE (o2:disease {id: 'bệnh_tổ_đỉa_disease'})
+MERGE (o1)-[r36:locatedIn]->(o2)
+SET r36.text = 'Bệnh tổ đỉa: Bệnh chàm với nhiều mụn nước, chỉ phát triển ở ngón tay, lòng bàn tay và lòng bàn chân, ngứa nhiều.'
+
+MERGE (o1:symptom {id: 'ngứa_nhiều_symptom'})
+MERGE (o2:disease {id: 'bệnh_tổ_đỉa_disease'})
+MERGE (o1)-[r37:isSymptomOf]->(o2)
+SET r37.text = 'Bệnh tổ đỉa: Bệnh chàm với nhiều mụn nước, chỉ phát triển ở ngón tay, lòng bàn tay và lòng bàn chân, ngứa nhiều.'
+
+MERGE (o1:disease {id: 'viêm_da_thần_kinh_disease'})
+MERGE (o2:disease {id: 'bệnh_chàm_disease'})
+MERGE (o1)-[r38:relatedTo]->(o2)
+SET r38.text = 'Viêm da thần kinh: Đặc trưng bởi các mảng da dày lên do bị cọ xát hoặc gãi nhiều lần.'
+
+MERGE (o1:symptom {id: 'da_dày_lên_symptom'})
+MERGE (o2:disease {id: 'viêm_da_thần_kinh_disease'})
+MERGE (o1)-[r39:isSymptomOf]->(o2)
+SET r39.text = 'Viêm da thần kinh: Đặc trưng bởi các mảng da dày lên do bị cọ xát hoặc gãi nhiều lần.'
+
+MERGE (o1:cause {id: 'cọ_xát_cause'})
+MERGE (o2:disease {id: 'viêm_da_thần_kinh_disease'})
+MERGE (o1)-[r40:causedBy]->(o2)
+SET r40.text = 'Viêm da thần kinh: Đặc trưng bởi các mảng da dày lên do bị cọ xát hoặc gãi nhiều lần.'
+
+MERGE (o1:cause {id: 'gãi_nhiều_lần_cause'})
+MERGE (o2:disease {id: 'viêm_da_thần_kinh_disease'})
+MERGE (o1)-[r41:causedBy]->(o2)
+SET r41.text = 'Viêm da thần kinh: Đặc trưng bởi các mảng da dày lên do bị cọ xát hoặc gãi nhiều lần.'
+
+MERGE (o1:disease {id: 'viêm_da_ứ_nước_disease'})
+MERGE (o2:disease {id: 'bệnh_chàm_disease'})
+MERGE (o1)-[r42:relatedTo]->(o2)
+SET r42.text = 'Viêm da ứ nước: Một loại kích ứng da ở người có hệ tuần hoàn kém, chủ yếu ở vùng cẳng chân.'
+
+MERGE (o1:symptom {id: 'kích_ứng_da_symptom'})
+MERGE (o2:disease {id: 'viêm_da_ứ_nước_disease'})
+MERGE (o1)-[r43:isSymptomOf]->(o2)
+SET r43.text = 'Viêm da ứ nước: Một loại kích ứng da ở người có hệ tuần hoàn kém, chủ yếu ở vùng cẳng chân.'
+
+MERGE (o1:cause {id: 'hệ_tuần_hoàn_kém_cause'})
+MERGE (o2:disease {id: 'viêm_da_ứ_nước_disease'})
+MERGE (o1)-[r44:causedBy]->(o2)
+SET r44.text = 'Viêm da ứ nước: Một loại kích ứng da ở người có hệ tuần hoàn kém, chủ yếu ở vùng cẳng chân.'
+
+MERGE (o1:organ {id: 'cẳng_chân_organ'})
+MERGE (o2:disease {id: 'viêm_da_ứ_nước_disease'})
+MERGE (o1)-[r45:locatedIn]->(o2)
+SET r45.text = 'Viêm da ứ nước: Một loại kích ứng da ở người có hệ tuần hoàn kém, chủ yếu ở vùng cẳng chân.'
+
+MERGE (o1:disease {id: 'nứt_nẻ_da_chân__da_tay_disease'})
+MERGE (o2:disease {id: 'bệnh_chàm_disease'})
+MERGE (o1)-[r46:relatedTo]->(o2)
+SET r46.text = 'Nứt nẻ da chân, da tay: Là một dạng bệnh mạn tính của bệnh chàm, da phản ứng bằng cách tăng sừng quá mức gây những đường nứt da, chảy máu và đau nhiều.'
+
+MERGE (o1:symptom {id: 'tăng_sừng_quá_mức_symptom'})
+MERGE (o2:disease {id: 'nứt_nẻ_da_chân__da_tay_disease'})
+MERGE (o1)-[r47:isSymptomOf]->(o2)
+SET r47.text = 'Nứt nẻ da chân, da tay: Là một dạng bệnh mạn tính của bệnh chàm, da phản ứng bằng cách tăng sừng quá mức gây những đường nứt da, chảy máu và đau nhiều.'
+
+MERGE (o1:symptom {id: 'nứt_da_symptom'})
+MERGE (o2:disease {id: 'nứt_nẻ_da_chân__da_tay_disease'})
+MERGE (o1)-[r48:isSymptomOf]->(o2)
+SET r48.text = 'Nứt nẻ da chân, da tay: Là một dạng bệnh mạn tính của bệnh chàm, da phản ứng bằng cách tăng sừng quá mức gây những đường nứt da, chảy máu và đau nhiều.'
+
+MERGE (o1:symptom {id: 'chảy_máu_symptom'})
+MERGE (o2:disease {id: 'nứt_nẻ_da_chân__da_tay_disease'})
+MERGE (o1)-[r49:isSymptomOf]->(o2)
+SET r49.text = 'Nứt nẻ da chân, da tay: Là một dạng bệnh mạn tính của bệnh chàm, da phản ứng bằng cách tăng sừng quá mức gây những đường nứt da, chảy máu và đau nhiều.'
+
+MERGE (o1:symptom {id: 'đau_nhiều_symptom'})
+MERGE (o2:disease {id: 'nứt_nẻ_da_chân__da_tay_disease'})
+MERGE (o1)-[r50:isSymptomOf]->(o2)
+SET r50.text = 'Nứt nẻ da chân, da tay: Là một dạng bệnh mạn tính của bệnh chàm, da phản ứng bằng cách tăng sừng quá mức gây những đường nứt da, chảy máu và đau nhiều.'
+
+MERGE (o1:disease {id: 'viêm_da_cơ_địa_disease'})
+MERGE (o2:lifestyle {id: '5%_dân_số_lifestyle'})
+MERGE (o1)-[r51:relatedTo]->(o2)
+SET r51.text = 'Tại Viêt Nam, viêm da cơ địa chiếm khoảng 5% dân số.'
+
+MERGE (o1:disease {id: 'viêm_da_cơ_địa_disease'})
+MERGE (o2:lifestyle {id: 'những_tháng_đầu_đời_của_trẻ_lifestyle'})
+MERGE (o1)-[r52:relatedTo]->(o2)
+SET r52.text = 'Bệnh viêm da cơ địa thường gặp ở những tháng đầu đời của trẻ và bệnh nặng nếu trẻ có gien di truyền đồng hợp tử, sau đó bệnh giảm dần khi trẻ lên 2-3 tuổi.'
+
+MERGE (o1:cause {id: 'gien_di_truyền_đồng_hợp_tử_cause'})
+MERGE (o2:disease {id: 'viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r53:causedBy]->(o2)
+SET r53.text = 'Bệnh viêm da cơ địa thường gặp ở những tháng đầu đời của trẻ và bệnh nặng nếu trẻ có gien di truyền đồng hợp tử, sau đó bệnh giảm dần khi trẻ lên 2-3 tuổi.'
+
+MERGE (o1:disease {id: 'viêm_da_cơ_địa_disease'})
+MERGE (o2:lifestyle {id: '2-3_tuổi_lifestyle'})
+MERGE (o1)-[r54:relatedTo]->(o2)
+SET r54.text = 'Bệnh viêm da cơ địa thường gặp ở những tháng đầu đời của trẻ và bệnh nặng nếu trẻ có gien di truyền đồng hợp tử, sau đó bệnh giảm dần khi trẻ lên 2-3 tuổi.'
+
+MERGE (o1:disease {id: 'viêm_da_cơ_địa_disease'})
+MERGE (o2:lifestyle {id: '60%_bệnh_nhân_viêm_da_cơ_địa_khi_sinh_con__con_cũng_bị_bệnh_này_lifestyle'})
+MERGE (o1)-[r55:relatedTo]->(o2)
+SET r55.text = 'Nhiều thống kê cho thấy, 60% bệnh nhân viêm da cơ địa khi sinh con, con cũng bị bệnh này.'
+
+MERGE (o1:disease {id: 'viêm_da_cơ_địa_disease'})
+MERGE (o2:lifestyle {id: '80%_nguy_cơ_bị_bệnh_lifestyle'})
+MERGE (o1)-[r56:relatedTo]->(o2)
+SET r56.text = 'Nếu cả ba lẫn mẹ đều bị viêm da cơ địa thì trẻ sinh ra có đến 80% nguy cơ bị bệnh.'
+
+MERGE (o1:disease {id: 'viêm_da_cơ_địa_disease'})
+MERGE (o2:disease {id: 'hen_suyễn_disease'})
+MERGE (o1)-[r57:associatedWith]->(o2)
+SET r57.text = 'Ở một số trường hợp bệnh viêm da cơ địa đi kèm với hen suyễn, viêm mũi dị ứng và dị ứng thực phẩm tạo thành một phức hợp bệnh cơ địa dị ứng (thường gặp ở trẻ mang gien di truyền từ bố và mẹ).'
+
+MERGE (o1:disease {id: 'viêm_da_cơ_địa_disease'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o1)-[r58:associatedWith]->(o2)
+SET r58.text = 'Ở một số trường hợp bệnh viêm da cơ địa đi kèm với hen suyễn, viêm mũi dị ứng và dị ứng thực phẩm tạo thành một phức hợp bệnh cơ địa dị ứng (thường gặp ở trẻ mang gien di truyền từ bố và mẹ).'
+
+MERGE (o1:disease {id: 'viêm_da_cơ_địa_disease'})
+MERGE (o2:disease {id: 'dị_ứng_thực_phẩm_disease'})
+MERGE (o1)-[r59:associatedWith]->(o2)
+SET r59.text = 'Ở một số trường hợp bệnh viêm da cơ địa đi kèm với hen suyễn, viêm mũi dị ứng và dị ứng thực phẩm tạo thành một phức hợp bệnh cơ địa dị ứng (thường gặp ở trẻ mang gien di truyền từ bố và mẹ).'
+
+MERGE (o1:symptom {id: 'da_viêm_đỏ_symptom'})
+MERGE (o2:disease {id: 'viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r60:isSymptomOf]->(o2)
+SET r60.text = 'Bệnh viêm da cơ địa có triệu chứng điển hình là da viêm đỏ, tróc vảy, chảy dịch, dày sừng, nứt nẻ, ngứa râm ran hay ngứa dữ dội.'
+
+MERGE (o1:symptom {id: 'tróc_vảy_symptom'})
+MERGE (o2:disease {id: 'viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r61:isSymptomOf]->(o2)
+SET r61.text = 'Bệnh viêm da cơ địa có triệu chứng điển hình là da viêm đỏ, tróc vảy, chảy dịch, dày sừng, nứt nẻ, ngứa râm ran hay ngứa dữ dội.'
+
+MERGE (o1:symptom {id: 'chảy_dịch_symptom'})
+MERGE (o2:disease {id: 'viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r62:isSymptomOf]->(o2)
+SET r62.text = 'Bệnh viêm da cơ địa có triệu chứng điển hình là da viêm đỏ, tróc vảy, chảy dịch, dày sừng, nứt nẻ, ngứa râm ran hay ngứa dữ dội.'
+
+MERGE (o1:symptom {id: 'dày_sừng_symptom'})
+MERGE (o2:disease {id: 'viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r63:isSymptomOf]->(o2)
+SET r63.text = 'Bệnh viêm da cơ địa có triệu chứng điển hình là da viêm đỏ, tróc vảy, chảy dịch, dày sừng, nứt nẻ, ngứa râm ran hay ngứa dữ dội.'
+
+MERGE (o1:symptom {id: 'nứt_nẻ_symptom'})
+MERGE (o2:disease {id: 'viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r64:isSymptomOf]->(o2)
+SET r64.text = 'Bệnh viêm da cơ địa có triệu chứng điển hình là da viêm đỏ, tróc vảy, chảy dịch, dày sừng, nứt nẻ, ngứa râm ran hay ngứa dữ dội.'
+
+MERGE (o1:symptom {id: 'ngứa_râm_ran_symptom'})
+MERGE (o2:disease {id: 'viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r65:isSymptomOf]->(o2)
+SET r65.text = 'Bệnh viêm da cơ địa có triệu chứng điển hình là da viêm đỏ, tróc vảy, chảy dịch, dày sừng, nứt nẻ, ngứa râm ran hay ngứa dữ dội.'
+
+MERGE (o1:symptom {id: 'ngứa_dữ_dội_symptom'})
+MERGE (o2:disease {id: 'viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r66:isSymptomOf]->(o2)
+SET r66.text = 'Bệnh viêm da cơ địa có triệu chứng điển hình là da viêm đỏ, tróc vảy, chảy dịch, dày sừng, nứt nẻ, ngứa râm ran hay ngứa dữ dội.'
+
+MERGE (o1:disease {id: 'viêm_da_cơ_địa_disease'})
+MERGE (o2:lifestyle {id: '0-_1_tuổi_lifestyle'})
+MERGE (o1)-[r67:relatedTo]->(o2)
+SET r67.text = 'Khoảng 60% ca mắc bệnh viêm da cơ địa khởi phát ở trẻ từ 0- 1 tuổi và khởi phát chủ yếu khi được 2 - 3 tháng tuổi.'
+
+MERGE (o1:disease {id: 'viêm_da_cơ_địa_disease'})
+MERGE (o2:lifestyle {id: '2_-_3_tháng_tuổi_lifestyle'})
+MERGE (o1)-[r68:relatedTo]->(o2)
+SET r68.text = 'Khoảng 60% ca mắc bệnh viêm da cơ địa khởi phát ở trẻ từ 0- 1 tuổi và khởi phát chủ yếu khi được 2 - 3 tháng tuổi.'
+
+MERGE (o1:disease {id: 'viêm_da_cơ_địa_disease'})
+MERGE (o2:lifestyle {id: 'trẻ_sơ_sinh_lifestyle'})
+MERGE (o1)-[r69:relatedTo]->(o2)
+SET r69.text = 'Trẻ sơ sinh bị viêm da cơ địa sẽ có những triệu chứng sau:'
+
+MERGE (o1:symptom {id: 'ban_đỏ_symptom'})
+MERGE (o2:disease {id: 'viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r70:isSymptomOf]->(o2)
+SET r70.text = 'Xuất hiện ban đỏ, tróc vảy ở 2 bên má, quanh miệng, trán, thân mình, cổ và bẹn, các kẽ da (nếp da).'
+
+MERGE (o1:symptom {id: 'tróc_vảy_symptom'})
+MERGE (o2:disease {id: 'viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r71:isSymptomOf]->(o2)
+SET r71.text = 'Xuất hiện ban đỏ, tróc vảy ở 2 bên má, quanh miệng, trán, thân mình, cổ và bẹn, các kẽ da (nếp da).'
+
+MERGE (o1:organ {id: '2_bên_má_organ'})
+MERGE (o2:disease {id: 'viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r72:locatedIn]->(o2)
+SET r72.text = 'Xuất hiện ban đỏ, tróc vảy ở 2 bên má, quanh miệng, trán, thân mình, cổ và bẹn, các kẽ da (nếp da).'
+
+MERGE (o1:organ {id: 'quanh_miệng_organ'})
+MERGE (o2:disease {id: 'viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r73:locatedIn]->(o2)
+SET r73.text = 'Xuất hiện ban đỏ, tróc vảy ở 2 bên má, quanh miệng, trán, thân mình, cổ và bẹn, các kẽ da (nếp da).'
+
+MERGE (o1:organ {id: 'trán_organ'})
+MERGE (o2:disease {id: 'viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r74:locatedIn]->(o2)
+SET r74.text = 'Xuất hiện ban đỏ, tróc vảy ở 2 bên má, quanh miệng, trán, thân mình, cổ và bẹn, các kẽ da (nếp da).'
+
+MERGE (o1:organ {id: 'thân_mình_organ'})
+MERGE (o2:disease {id: 'viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r75:locatedIn]->(o2)
+SET r75.text = 'Xuất hiện ban đỏ, tróc vảy ở 2 bên má, quanh miệng, trán, thân mình, cổ và bẹn, các kẽ da (nếp da).'
+
+MERGE (o1:organ {id: 'cổ_organ'})
+MERGE (o2:disease {id: 'viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r76:locatedIn]->(o2)
+SET r76.text = 'Xuất hiện ban đỏ, tróc vảy ở 2 bên má, quanh miệng, trán, thân mình, cổ và bẹn, các kẽ da (nếp da).'
+
+MERGE (o1:organ {id: 'bẹn_organ'})
+MERGE (o2:disease {id: 'viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r77:locatedIn]->(o2)
+SET r77.text = 'Xuất hiện ban đỏ, tróc vảy ở 2 bên má, quanh miệng, trán, thân mình, cổ và bẹn, các kẽ da (nếp da).'
+
+MERGE (o1:organ {id: 'các_kẽ_da_organ'})
+MERGE (o2:disease {id: 'viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r78:locatedIn]->(o2)
+SET r78.text = 'Xuất hiện ban đỏ, tróc vảy ở 2 bên má, quanh miệng, trán, thân mình, cổ và bẹn, các kẽ da (nếp da).'
+
+MERGE (o1:cause {id: 'gien_cause'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r79:causedBy]->(o2)
+SET r79.text = 'Với sự phát triển của y sinh học, nhất là sinh học phân tử, đã tìm ra được một số gien gây ra bệnh viêm da cơ địa.'
+
+MERGE (o1:disease {id: 'hen_suyễn_disease'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r80:associatedWith]->(o2)
+SET r80.text = 'Các nghiên cứu y tế chỉ ra rằng: Nếu trong gia đình có người bị hen suyễn, bị viêm mũi dị ứng thì thế hệ sau sẽ có di truyền các bệnh dị ứng (gồm bộ 3 các bệnh cơ địa như sau: Bệnh viêm da cơ địa, hen suyễn, viêm mũi dị ứng).'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r81:associatedWith]->(o2)
+SET r81.text = 'Các nghiên cứu y tế chỉ ra rằng: Nếu trong gia đình có người bị hen suyễn, bị viêm mũi dị ứng thì thế hệ sau sẽ có di truyền các bệnh dị ứng (gồm bộ 3 các bệnh cơ địa như sau: Bệnh viêm da cơ địa, hen suyễn, viêm mũi dị ứng).'
+
+MERGE (o1:cause {id: 'di_truyền_cause'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r82:causedBy]->(o2)
+SET r82.text = 'Các nghiên cứu y tế chỉ ra rằng: Nếu trong gia đình có người bị hen suyễn, bị viêm mũi dị ứng thì thế hệ sau sẽ có di truyền các bệnh dị ứng (gồm bộ 3 các bệnh cơ địa như sau: Bệnh viêm da cơ địa, hen suyễn, viêm mũi dị ứng).'
+
+MERGE (o1:cause {id: 'dị_ứng_cause'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r83:causedBy]->(o2)
+SET r83.text = 'Bệnh xuất hiện ở những người hay bị dị ứng;'
+
+MERGE (o1:cause {id: 'xà_phòng_cause'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r84:causedBy]->(o2)
+SET r84.text = 'Một số tác nhân liên quan đến bệnh viêm da cơ địa như: Xà phòng, chất tẩy rửa, dị ứng thời tiết,&#8230;;'
+
+MERGE (o1:cause {id: 'chất_tẩy_rửa_cause'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r85:causedBy]->(o2)
+SET r85.text = 'Một số tác nhân liên quan đến bệnh viêm da cơ địa như: Xà phòng, chất tẩy rửa, dị ứng thời tiết,&#8230;;'
+
+MERGE (o1:cause {id: 'dị_ứng_thời_tiết_cause'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r86:causedBy]->(o2)
+SET r86.text = 'Một số tác nhân liên quan đến bệnh viêm da cơ địa như: Xà phòng, chất tẩy rửa, dị ứng thời tiết,&#8230;;'
+
+MERGE (o1:cause {id: 'dị_ứng_thực_phẩm_cause'})
+MERGE (o2:disease {id: 'bệnh_chàm_disease'})
+MERGE (o1)-[r87:causedBy]->(o2)
+SET r87.text = 'Dị ứng thực phẩm được coi là nguyên nhân chính gây ra bệnh chàm ở trẻ nhỏ;'
+
+MERGE (o1:cause {id: 'nhiễm_trùng_cấp_tính_cause'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r88:causedBy]->(o2)
+SET r88.text = 'Nhiễm trùng cấp tính gây suy giảm miễn dịch cũng làm gia tăng tỷ lệ mắc bệnh viêm da cơ địa;'
+
+MERGE (o1:cause {id: 'rối_loạn_nội_tiết_cause'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r89:causedBy]->(o2)
+SET r89.text = 'Rối loạn nội tiết;'
+
+MERGE (o1:cause {id: 'căng_thẳng_thần_kinh_cause'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r90:causedBy]->(o2)
+SET r90.text = 'Căng thẳng thần kinh.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o2:disease {id: 'bệnh_chàm_disease'})
+MERGE (o1)-[r91:relatedTo]->(o2)
+SET r91.text = 'Bệnh viêm da cơ địa (bệnh chàm) nếu không được điều trị đúng cách và kịp thời có thể gây ra các biến chứng sau:'
+
+MERGE (o1:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o2:disease {id: 'bệnh_hen_suyễn_disease'})
+MERGE (o1)-[r92:associatedWith]->(o2)
+SET r92.text = 'Bệnh hen suyễn và sốt cỏ khô: Hơn 50% trẻ bị viêm da cơ địa dễ mắc thêm bệnh hen suyễn và sốt cỏ khô.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o2:disease {id: 'sốt_cỏ_khô_disease'})
+MERGE (o1)-[r93:associatedWith]->(o2)
+SET r93.text = 'Bệnh hen suyễn và sốt cỏ khô: Hơn 50% trẻ bị viêm da cơ địa dễ mắc thêm bệnh hen suyễn và sốt cỏ khô.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o2:disease {id: 'viêm_da_thần_kinh_mạn_tính_disease'})
+MERGE (o1)-[r94:relatedTo]->(o2)
+SET r94.text = 'Viêm da thần kinh mạn tính: Viêm da cơ địa có thể bị biến chứng thành viêm da thần kinh mạn tính, với biểu hiện da có vảy và ngứa mạn tính.'
+
+MERGE (o1:disease {id: 'viêm_da_thần_kinh_mạn_tính_disease'})
+MERGE (o2:symptom {id: 'da_có_vảy_symptom'})
+MERGE (o1)-[r95:isSymptomOf]->(o2)
+SET r95.text = 'Viêm da thần kinh mạn tính: Viêm da cơ địa có thể bị biến chứng thành viêm da thần kinh mạn tính, với biểu hiện da có vảy và ngứa mạn tính.'
+
+MERGE (o1:disease {id: 'viêm_da_thần_kinh_mạn_tính_disease'})
+MERGE (o2:symptom {id: 'ngứa_mạn_tính_symptom'})
+MERGE (o1)-[r96:isSymptomOf]->(o2)
+SET r96.text = 'Viêm da thần kinh mạn tính: Viêm da cơ địa có thể bị biến chứng thành viêm da thần kinh mạn tính, với biểu hiện da có vảy và ngứa mạn tính.'
+
+MERGE (o1:lifestyle {id: 'gãi_lifestyle'})
+MERGE (o2:symptom {id: 'ngứa_symptom'})
+MERGE (o1)-[r97:aggravatedBy]->(o2)
+SET r97.text = 'Người bệnh càng gãi thì càng ngứa, điều này khiến vùng da có thể bị tổn thương, đổi màu, dày lên.'
+
+MERGE (o1:lifestyle {id: 'gãi_lifestyle'})
+MERGE (o2:organ {id: 'da_organ'})
+MERGE (o1)-[r98:affects]->(o2)
+SET r98.text = 'Người bệnh càng gãi thì càng ngứa, điều này khiến vùng da có thể bị tổn thương, đổi màu, dày lên.'
+
+MERGE (o1:lifestyle {id: 'gãi_lifestyle'})
+MERGE (o2:symptom {id: 'tổn_thương_da_symptom'})
+MERGE (o1)-[r99:isSymptomOf]->(o2)
+SET r99.text = 'Người bệnh càng gãi thì càng ngứa, điều này khiến vùng da có thể bị tổn thương, đổi màu, dày lên.'
+
+MERGE (o1:lifestyle {id: 'gãi_lifestyle'})
+MERGE (o2:symptom {id: 'da_đổi_màu_symptom'})
+MERGE (o1)-[r100:isSymptomOf]->(o2)
+SET r100.text = 'Người bệnh càng gãi thì càng ngứa, điều này khiến vùng da có thể bị tổn thương, đổi màu, dày lên.'
+
+MERGE (o1:lifestyle {id: 'gãi_lifestyle'})
+MERGE (o2:symptom {id: 'da_dày_lên_symptom'})
+MERGE (o1)-[r101:isSymptomOf]->(o2)
+SET r101.text = 'Người bệnh càng gãi thì càng ngứa, điều này khiến vùng da có thể bị tổn thương, đổi màu, dày lên.'
+
+MERGE (o1:disease {id: 'nhiễm_trùng_da_disease'})
+MERGE (o2:symptom {id: 'tổn_thương_da_symptom'})
+MERGE (o1)-[r102:isSymptomOf]->(o2)
+SET r102.text = 'Nhiễm trùng da: Da có thể bị tổn thương do gãi nhiều gây ra các vết loét, vết nứt, làm tăng nguy cơ nhiễm vi khuẩn và vi rút.'
+
+MERGE (o1:lifestyle {id: 'gãi_lifestyle'})
+MERGE (o2:symptom {id: 'tổn_thương_da_symptom'})
+MERGE (o1)-[r103:causedBy]->(o2)
+SET r103.text = 'Nhiễm trùng da: Da có thể bị tổn thương do gãi nhiều gây ra các vết loét, vết nứt, làm tăng nguy cơ nhiễm vi khuẩn và vi rút.'
+
+MERGE (o1:lifestyle {id: 'gãi_lifestyle'})
+MERGE (o2:symptom {id: 'vết_loét_symptom'})
+MERGE (o1)-[r104:isSymptomOf]->(o2)
+SET r104.text = 'Nhiễm trùng da: Da có thể bị tổn thương do gãi nhiều gây ra các vết loét, vết nứt, làm tăng nguy cơ nhiễm vi khuẩn và vi rút.'
+
+MERGE (o1:lifestyle {id: 'gãi_lifestyle'})
+MERGE (o2:symptom {id: 'vết_nứt_symptom'})
+MERGE (o1)-[r105:isSymptomOf]->(o2)
+SET r105.text = 'Nhiễm trùng da: Da có thể bị tổn thương do gãi nhiều gây ra các vết loét, vết nứt, làm tăng nguy cơ nhiễm vi khuẩn và vi rút.'
+
+MERGE (o1:lifestyle {id: 'gãi_lifestyle'})
+MERGE (o2:cause {id: 'nhiễm_vi_khuẩn_cause'})
+MERGE (o1)-[r106:causedBy]->(o2)
+SET r106.text = 'Nhiễm trùng da: Da có thể bị tổn thương do gãi nhiều gây ra các vết loét, vết nứt, làm tăng nguy cơ nhiễm vi khuẩn và vi rút.'
+
+MERGE (o1:lifestyle {id: 'gãi_lifestyle'})
+MERGE (o2:cause {id: 'nhiễm_vi_rút_cause'})
+MERGE (o1)-[r107:causedBy]->(o2)
+SET r107.text = 'Nhiễm trùng da: Da có thể bị tổn thương do gãi nhiều gây ra các vết loét, vết nứt, làm tăng nguy cơ nhiễm vi khuẩn và vi rút.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o2:disease {id: 'viêm_da_tay_disease'})
+MERGE (o1)-[r108:relatedTo]->(o2)
+SET r108.text = 'Viêm da tay: Viêm da cơ địa có thể gây ra biến chứng viêm da tay gây khó chịu cho người bệnh, đặc biệt với người làm trong môi trường ẩm ướt, tiếp xúc với xà phòng và chất tẩy rửa.'
+
+MERGE (o1:disease {id: 'viêm_da_tay_disease'})
+MERGE (o2:symptom {id: 'khó_chịu_symptom'})
+MERGE (o1)-[r109:isSymptomOf]->(o2)
+SET r109.text = 'Viêm da tay: Viêm da cơ địa có thể gây ra biến chứng viêm da tay gây khó chịu cho người bệnh, đặc biệt với người làm trong môi trường ẩm ướt, tiếp xúc với xà phòng và chất tẩy rửa.'
+
+MERGE (o1:lifestyle {id: 'môi_trường_ẩm_ướt_lifestyle'})
+MERGE (o2:disease {id: 'viêm_da_tay_disease'})
+MERGE (o1)-[r110:aggravatedBy]->(o2)
+SET r110.text = 'Viêm da tay: Viêm da cơ địa có thể gây ra biến chứng viêm da tay gây khó chịu cho người bệnh, đặc biệt với người làm trong môi trường ẩm ướt, tiếp xúc với xà phòng và chất tẩy rửa.'
+
+MERGE (o1:cause {id: 'xà_phòng_cause'})
+MERGE (o2:disease {id: 'viêm_da_tay_disease'})
+MERGE (o1)-[r111:aggravatedBy]->(o2)
+SET r111.text = 'Viêm da tay: Viêm da cơ địa có thể gây ra biến chứng viêm da tay gây khó chịu cho người bệnh, đặc biệt với người làm trong môi trường ẩm ướt, tiếp xúc với xà phòng và chất tẩy rửa.'
+
+MERGE (o1:cause {id: 'chất_tẩy_rửa_cause'})
+MERGE (o2:disease {id: 'viêm_da_tay_disease'})
+MERGE (o1)-[r112:aggravatedBy]->(o2)
+SET r112.text = 'Viêm da tay: Viêm da cơ địa có thể gây ra biến chứng viêm da tay gây khó chịu cho người bệnh, đặc biệt với người làm trong môi trường ẩm ướt, tiếp xúc với xà phòng và chất tẩy rửa.'
+
+MERGE (o1:cause {id: 'hóa_chất_công_nghiệp_cause'})
+MERGE (o2:disease {id: 'viêm_da_tiếp_xúc_dị_ứng_disease'})
+MERGE (o1)-[r113:causedBy]->(o2)
+SET r113.text = 'Viêm da tiếp xúc dị ứng hoặc kích ứng: Do tiếp xúc với các hóa chất công nghiệp, hóa mỹ phẩm, ô nhiễm môi trường,…'
+
+MERGE (o1:cause {id: 'hóa_mỹ_phẩm_cause'})
+MERGE (o2:disease {id: 'viêm_da_tiếp_xúc_dị_ứng_disease'})
+MERGE (o1)-[r114:causedBy]->(o2)
+SET r114.text = 'Viêm da tiếp xúc dị ứng hoặc kích ứng: Do tiếp xúc với các hóa chất công nghiệp, hóa mỹ phẩm, ô nhiễm môi trường,…'
+
+MERGE (o1:cause {id: 'ô_nhiễm_môi_trường_cause'})
+MERGE (o2:disease {id: 'viêm_da_tiếp_xúc_dị_ứng_disease'})
+MERGE (o1)-[r115:causedBy]->(o2)
+SET r115.text = 'Viêm da tiếp xúc dị ứng hoặc kích ứng: Do tiếp xúc với các hóa chất công nghiệp, hóa mỹ phẩm, ô nhiễm môi trường,…'
+
+MERGE (o1:cause {id: 'hóa_chất_công_nghiệp_cause'})
+MERGE (o2:disease {id: 'viêm_da_tiếp_xúc_kích_ứng_disease'})
+MERGE (o1)-[r116:causedBy]->(o2)
+SET r116.text = 'Viêm da tiếp xúc dị ứng hoặc kích ứng: Do tiếp xúc với các hóa chất công nghiệp, hóa mỹ phẩm, ô nhiễm môi trường,…'
+
+MERGE (o1:cause {id: 'hóa_mỹ_phẩm_cause'})
+MERGE (o2:disease {id: 'viêm_da_tiếp_xúc_kích_ứng_disease'})
+MERGE (o1)-[r117:causedBy]->(o2)
+SET r117.text = 'Viêm da tiếp xúc dị ứng hoặc kích ứng: Do tiếp xúc với các hóa chất công nghiệp, hóa mỹ phẩm, ô nhiễm môi trường,…'
+
+MERGE (o1:cause {id: 'ô_nhiễm_môi_trường_cause'})
+MERGE (o2:disease {id: 'viêm_da_tiếp_xúc_kích_ứng_disease'})
+MERGE (o1)-[r118:causedBy]->(o2)
+SET r118.text = 'Viêm da tiếp xúc dị ứng hoặc kích ứng: Do tiếp xúc với các hóa chất công nghiệp, hóa mỹ phẩm, ô nhiễm môi trường,…'
+
+MERGE (o1:symptom {id: 'ngứa_symptom'})
+MERGE (o2:lifestyle {id: 'giấc_ngủ_lifestyle'})
+MERGE (o1)-[r119:affects]->(o2)
+SET r119.text = 'Rối loạn giấc ngủ: Việc bị ngứa nhiều ảnh hưởng đến giấc ngủ như ngủ không ngon, thức dậy lúc nửa đêm,&#8230;'
+
+MERGE (o1:symptom {id: 'ngứa_symptom'})
+MERGE (o2:symptom {id: 'ngủ_không_ngon_symptom'})
+MERGE (o1)-[r120:isSymptomOf]->(o2)
+SET r120.text = 'Rối loạn giấc ngủ: Việc bị ngứa nhiều ảnh hưởng đến giấc ngủ như ngủ không ngon, thức dậy lúc nửa đêm,&#8230;'
+
+MERGE (o1:symptom {id: 'ngứa_symptom'})
+MERGE (o2:symptom {id: 'thức_dậy_lúc_nửa_đêm_symptom'})
+MERGE (o1)-[r121:isSymptomOf]->(o2)
+SET r121.text = 'Rối loạn giấc ngủ: Việc bị ngứa nhiều ảnh hưởng đến giấc ngủ như ngủ không ngon, thức dậy lúc nửa đêm,&#8230;'
+
+MERGE (o1:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o2:test {id: 'khám_lâm_sàng_test'})
+MERGE (o1)-[r122:diagnosedBy]->(o2)
+SET r122.text = 'Bệnh viêm da cơ địa thường được chẩn đoán dựa trên khám lâm sàng và hỏi bệnh sử của cá nhân và gia đình, một số xét nghiệm cần thực hiện để xác định độ nặng và biến chứng của bệnh.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o2:test {id: 'hỏi_bệnh_sử_test'})
+MERGE (o1)-[r123:diagnosedBy]->(o2)
+SET r123.text = 'Bệnh viêm da cơ địa thường được chẩn đoán dựa trên khám lâm sàng và hỏi bệnh sử của cá nhân và gia đình, một số xét nghiệm cần thực hiện để xác định độ nặng và biến chứng của bệnh.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o2:test {id: 'xét_nghiệm_test'})
+MERGE (o1)-[r124:diagnosedBy]->(o2)
+SET r124.text = 'Bệnh viêm da cơ địa thường được chẩn đoán dựa trên khám lâm sàng và hỏi bệnh sử của cá nhân và gia đình, một số xét nghiệm cần thực hiện để xác định độ nặng và biến chứng của bệnh.'
+
+MERGE (o1:symptom {id: 'tình_trạng_da_symptom'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r125:diagnosedBy]->(o2)
+SET r125.text = 'Bác sĩ sẽ xem tình trạng da, các triệu chứng ở người bệnh và tiền sử bệnh của người thân trong gia đình để chất đoán bệnh.'
+
+MERGE (o1:symptom {id: 'triệu_chứng_symptom'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r126:diagnosedBy]->(o2)
+SET r126.text = 'Bác sĩ sẽ xem tình trạng da, các triệu chứng ở người bệnh và tiền sử bệnh của người thân trong gia đình để chất đoán bệnh.'
+
+MERGE (o1:symptom {id: 'tiền_sử_bệnh_symptom'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r127:diagnosedBy]->(o2)
+SET r127.text = 'Bác sĩ sẽ xem tình trạng da, các triệu chứng ở người bệnh và tiền sử bệnh của người thân trong gia đình để chất đoán bệnh.'
+
+MERGE (o1:symptom {id: 'da_khô_symptom'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r128:isSymptomOf]->(o2)
+SET r128.text = 'Bác sĩ sẽ dựa trên các triệu chứng như: Da khô, viêm kết mạc mắt tái phát nhiều lần, viêm môi, da mặt bị đỏ hoặc tái, có chàm ở lòng hoặc mu bàn tay, vảy trắng,&#8230;'
+
+MERGE (o1:symptom {id: 'viêm_kết_mạc_mắt_tái_phát_nhiều_lần_symptom'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r129:isSymptomOf]->(o2)
+SET r129.text = 'Bác sĩ sẽ dựa trên các triệu chứng như: Da khô, viêm kết mạc mắt tái phát nhiều lần, viêm môi, da mặt bị đỏ hoặc tái, có chàm ở lòng hoặc mu bàn tay, vảy trắng,&#8230;'
+
+MERGE (o1:symptom {id: 'viêm_môi_symptom'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r130:isSymptomOf]->(o2)
+SET r130.text = 'Bác sĩ sẽ dựa trên các triệu chứng như: Da khô, viêm kết mạc mắt tái phát nhiều lần, viêm môi, da mặt bị đỏ hoặc tái, có chàm ở lòng hoặc mu bàn tay, vảy trắng,&#8230;'
+
+MERGE (o1:symptom {id: 'da_mặt_bị_đỏ_symptom'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r131:isSymptomOf]->(o2)
+SET r131.text = 'Bác sĩ sẽ dựa trên các triệu chứng như: Da khô, viêm kết mạc mắt tái phát nhiều lần, viêm môi, da mặt bị đỏ hoặc tái, có chàm ở lòng hoặc mu bàn tay, vảy trắng,&#8230;'
+
+MERGE (o1:symptom {id: 'da_mặt_bị_tái_symptom'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r132:isSymptomOf]->(o2)
+SET r132.text = 'Bác sĩ sẽ dựa trên các triệu chứng như: Da khô, viêm kết mạc mắt tái phát nhiều lần, viêm môi, da mặt bị đỏ hoặc tái, có chàm ở lòng hoặc mu bàn tay, vảy trắng,&#8230;'
+
+MERGE (o1:symptom {id: 'có_chàm_ở_lòng_hoặc_mu_bàn_tay_symptom'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r133:isSymptomOf]->(o2)
+SET r133.text = 'Bác sĩ sẽ dựa trên các triệu chứng như: Da khô, viêm kết mạc mắt tái phát nhiều lần, viêm môi, da mặt bị đỏ hoặc tái, có chàm ở lòng hoặc mu bàn tay, vảy trắng,&#8230;'
+
+MERGE (o1:symptom {id: 'vảy_trắng_symptom'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r134:isSymptomOf]->(o2)
+SET r134.text = 'Bác sĩ sẽ dựa trên các triệu chứng như: Da khô, viêm kết mạc mắt tái phát nhiều lần, viêm môi, da mặt bị đỏ hoặc tái, có chàm ở lòng hoặc mu bàn tay, vảy trắng,&#8230;'
+
+MERGE (o1:disease {id: 'viêm_da_cơ_địa_disease'})
+MERGE (o2:disease {id: 'dị_ứng_disease'})
+MERGE (o1)-[r135:associatedWith]->(o2)
+SET r135.text = 'Bản thân hoặc gia đình có tiền sử bị viêm da cơ địa, dị ứng, hen, viêm mũi dị ứng, viêm da mãn tính,&#8230;'
+
+MERGE (o1:disease {id: 'viêm_da_cơ_địa_disease'})
+MERGE (o2:disease {id: 'hen_disease'})
+MERGE (o1)-[r136:associatedWith]->(o2)
+SET r136.text = 'Bản thân hoặc gia đình có tiền sử bị viêm da cơ địa, dị ứng, hen, viêm mũi dị ứng, viêm da mãn tính,&#8230;'
+
+MERGE (o1:disease {id: 'viêm_da_cơ_địa_disease'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o1)-[r137:associatedWith]->(o2)
+SET r137.text = 'Bản thân hoặc gia đình có tiền sử bị viêm da cơ địa, dị ứng, hen, viêm mũi dị ứng, viêm da mãn tính,&#8230;'
+
+MERGE (o1:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o2:disease {id: 'bệnh_mạn_tính_disease'})
+MERGE (o1)-[r138:isSymptomOf]->(o2)
+SET r138.text = 'Bệnh viêm da cơ địa là một bệnh mạn tính, bệnh không thể chữa dứt điểm (stop) hoàn toàn nhưng vẫn có thể kiểm soát (control) được bệnh.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o2:treatment {id: 'kiểm_soát_treatment'})
+MERGE (o1)-[r139:treatedBy]->(o2)
+SET r139.text = 'Bệnh viêm da cơ địa là một bệnh mạn tính, bệnh không thể chữa dứt điểm (stop) hoàn toàn nhưng vẫn có thể kiểm soát (control) được bệnh.'
+
+MERGE (o1:treatment {id: 'các_biện_pháp_điều_trị_treatment'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r140:treatedBy]->(o2)
+SET r140.text = 'Các biện pháp điều trị hiện nay chỉ nhằm đưa da về tình trạng bình thường càng lâu càng tốt, phòng ngừa và điều trị các cơn bùng phát/các biến chứng.'
+
+MERGE (o1:treatment {id: 'kem_chống_ngứa_treatment'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r141:treatedBy]->(o2)
+SET r141.text = 'Dùng kem chống ngứa: Đây là biện pháp giúp người bệnh giảm cảm giác ngứa, tránh gãi nhiều gây tổn thương da.'
+
+MERGE (o1:symptom {id: 'ngứa_symptom'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r142:isSymptomOf]->(o2)
+SET r142.text = 'Dùng kem chống ngứa: Đây là biện pháp giúp người bệnh giảm cảm giác ngứa, tránh gãi nhiều gây tổn thương da.'
+
+MERGE (o1:treatment {id: 'thuốc_kháng_histamine_chống_dị_ứng_treatment'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r143:treatedBy]->(o2)
+SET r143.text = 'Bệnh nhân được chỉ định dùng kem bôi để chống ngứa, trong trường hợp vẫn cảm thấy ngứa nhiều người bệnh cần uống thêm thuốc kháng histamine chống dị ứng.'
+
+MERGE (o1:treatment {id: 'kem_dưỡng_ẩm_treatment'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r144:treatedBy]->(o2)
+SET r144.text = 'Bảo vệ da bằng kem dưỡng ẩm: Khi bị viêm da cơ địa, da thường bị khô, sử dụng kem dưỡng ẩm để làm mềm da từ 2 - 3 lần mỗi ngày, tránh nứt nẻ gây nhiễm trùng.'
+
+MERGE (o1:symptom {id: 'da_khô_symptom'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r145:isSymptomOf]->(o2)
+SET r145.text = 'Bảo vệ da bằng kem dưỡng ẩm: Khi bị viêm da cơ địa, da thường bị khô, sử dụng kem dưỡng ẩm để làm mềm da từ 2 - 3 lần mỗi ngày, tránh nứt nẻ gây nhiễm trùng.'
+
+MERGE (o1:treatment {id: 'kem_kháng_viêm_treatment'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r146:treatedBy]->(o2)
+SET r146.text = 'Bôi kem kháng viêm: Nếu da viêm, sưng đỏ, ngứa hãy dùng kem kháng viêm để bôi.'
+
+MERGE (o1:symptom {id: 'da_viêm_symptom'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r147:isSymptomOf]->(o2)
+SET r147.text = 'Bôi kem kháng viêm: Nếu da viêm, sưng đỏ, ngứa hãy dùng kem kháng viêm để bôi.'
+
+MERGE (o1:symptom {id: 'sưng_đỏ_symptom'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r148:isSymptomOf]->(o2)
+SET r148.text = 'Bôi kem kháng viêm: Nếu da viêm, sưng đỏ, ngứa hãy dùng kem kháng viêm để bôi.'
+
+MERGE (o1:symptom {id: 'ngứa_symptom'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r149:isSymptomOf]->(o2)
+SET r149.text = 'Bôi kem kháng viêm: Nếu da viêm, sưng đỏ, ngứa hãy dùng kem kháng viêm để bôi.'
+
+MERGE (o1:treatment {id: 'kháng_sinh_treatment'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r150:treatedBy]->(o2)
+SET r150.text = 'Điều trị kháng sinh nếu da bị nhiễm trùng: Chỉ bổ sung thêm kháng sinh trong thời gian ngắn.'
+
+MERGE (o1:symptom {id: 'da_bị_nhiễm_trùng_symptom'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r151:isSymptomOf]->(o2)
+SET r151.text = 'Điều trị kháng sinh nếu da bị nhiễm trùng: Chỉ bổ sung thêm kháng sinh trong thời gian ngắn.'
+
+MERGE (o1:symptom {id: 'vết_thương_bị_hở_symptom'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r152:isSymptomOf]->(o2)
+SET r152.text = 'Nếu vết thương bị hở hay chảy dịch cần đắp gạc và vệ sinh thay băng mỗi ngày để tránh bội nhiễm.'
+
+MERGE (o1:symptom {id: 'chảy_dịch_symptom'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r153:isSymptomOf]->(o2)
+SET r153.text = 'Nếu vết thương bị hở hay chảy dịch cần đắp gạc và vệ sinh thay băng mỗi ngày để tránh bội nhiễm.'
+
+MERGE (o1:treatment {id: 'chườm_lạnh_treatment'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r154:treatedBy]->(o2)
+SET r154.text = 'Có thể chườm lạnh để giảm viêm và giảm ngứa ở da.'
+
+MERGE (o1:symptom {id: 'viêm_symptom'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r155:isSymptomOf]->(o2)
+SET r155.text = 'Có thể chườm lạnh để giảm viêm và giảm ngứa ở da.'
+
+MERGE (o1:symptom {id: 'ngứa_symptom'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r156:isSymptomOf]->(o2)
+SET r156.text = 'Có thể chườm lạnh để giảm viêm và giảm ngứa ở da.'
+
+MERGE (o1:lifestyle {id: 'áp_lực_lifestyle'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r157:aggravatedBy]->(o2)
+SET r157.text = 'Tránh áp lực và căng thẳng khi làm việc, cần nghỉ và ngủ điều độ đủ giấc, thường xuyên tập thể dục.'
+
+MERGE (o1:lifestyle {id: 'căng_thẳng_lifestyle'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r158:aggravatedBy]->(o2)
+SET r158.text = 'Tránh áp lực và căng thẳng khi làm việc, cần nghỉ và ngủ điều độ đủ giấc, thường xuyên tập thể dục.'
+
+MERGE (o1:lifestyle {id: 'nghỉ_ngơi_lifestyle'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r159:treatedBy]->(o2)
+SET r159.text = 'Tránh áp lực và căng thẳng khi làm việc, cần nghỉ và ngủ điều độ đủ giấc, thường xuyên tập thể dục.'
+
+MERGE (o1:lifestyle {id: 'ngủ_đủ_giấc_lifestyle'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r160:treatedBy]->(o2)
+SET r160.text = 'Tránh áp lực và căng thẳng khi làm việc, cần nghỉ và ngủ điều độ đủ giấc, thường xuyên tập thể dục.'
+
+MERGE (o1:lifestyle {id: 'tập_thể_dục_lifestyle'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r161:treatedBy]->(o2)
+SET r161.text = 'Tránh áp lực và căng thẳng khi làm việc, cần nghỉ và ngủ điều độ đủ giấc, thường xuyên tập thể dục.'
+
+MERGE (o1:lifestyle {id: 'chế_độ_ăn_uống_lành_mạnh_lifestyle'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r162:treatedBy]->(o2)
+SET r162.text = 'Xây dựng chế độ ăn uống lành mạnh, đầy đủ dinh dưỡng, tăng cường hệ miễn dịch.'
+
+MERGE (o1:lifestyle {id: 'dinh_dưỡng_đầy_đủ_lifestyle'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r163:treatedBy]->(o2)
+SET r163.text = 'Xây dựng chế độ ăn uống lành mạnh, đầy đủ dinh dưỡng, tăng cường hệ miễn dịch.'
+
+MERGE (o1:organ {id: 'hệ_miễn_dịch_organ'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r164:relatedTo]->(o2)
+SET r164.text = 'Xây dựng chế độ ăn uống lành mạnh, đầy đủ dinh dưỡng, tăng cường hệ miễn dịch.'
+
+MERGE (o1:treatment {id: 'kem_dưỡng_ẩm_treatment'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r165:treatedBy]->(o2)
+SET r165.text = 'Tiếp tục bảo vệ da bằng kem dưỡng ẩm'
+
+MERGE (o1:treatment {id: 'hóa_mỹ_phẩm_treatment'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r166:treatedBy]->(o2)
+SET r166.text = 'Sử dụng các hóa mỹ phẩm dành cho da nhạy cảm'
+
+MERGE (o1:lifestyle {id: 'chế_độ_ăn_uống_lifestyle'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r167:treatedBy]->(o2)
+SET r167.text = 'Tiếp tục chế độ ăn uống, chế độ vận động lành mạnh'
+
+MERGE (o1:lifestyle {id: 'chế_độ_vận_động_lifestyle'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r168:treatedBy]->(o2)
+SET r168.text = 'Tiếp tục chế độ ăn uống, chế độ vận động lành mạnh'
+
+MERGE (o1:cause {id: 'yếu_tố_kích_thích_cause'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r169:aggravatedBy]->(o2)
+SET r169.text = 'Trong quá trình điều trị viêm da cơ địa, người bệnh cần hạn chế các yếu tố kích thích bệnh khởi phát dưới đây:'
+
+MERGE (o1:food {id: 'thức_ăn_dễ_gây_dị_ứng_food'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r170:aggravatedBy]->(o2)
+SET r170.text = 'Tránh ăn thức ăn dễ gây dị ứng, vệ sinh nhà cửa sạch sẽ, thường xuyên giặt chăn, nệm, thảm, rèm cửa, tránh khói thuốc lá và môi trường nhiều bụi, ô nhiễm.'
+
+MERGE (o1:lifestyle {id: 'vệ_sinh_nhà_cửa_lifestyle'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r171:preventedBy]->(o2)
+SET r171.text = 'Tránh ăn thức ăn dễ gây dị ứng, vệ sinh nhà cửa sạch sẽ, thường xuyên giặt chăn, nệm, thảm, rèm cửa, tránh khói thuốc lá và môi trường nhiều bụi, ô nhiễm.'
+
+MERGE (o1:lifestyle {id: 'khói_thuốc_lá_lifestyle'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r172:aggravatedBy]->(o2)
+SET r172.text = 'Tránh ăn thức ăn dễ gây dị ứng, vệ sinh nhà cửa sạch sẽ, thường xuyên giặt chăn, nệm, thảm, rèm cửa, tránh khói thuốc lá và môi trường nhiều bụi, ô nhiễm.'
+
+MERGE (o1:lifestyle {id: 'môi_trường_nhiều_bụi_lifestyle'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r173:aggravatedBy]->(o2)
+SET r173.text = 'Tránh ăn thức ăn dễ gây dị ứng, vệ sinh nhà cửa sạch sẽ, thường xuyên giặt chăn, nệm, thảm, rèm cửa, tránh khói thuốc lá và môi trường nhiều bụi, ô nhiễm.'
+
+MERGE (o1:lifestyle {id: 'môi_trường_ô_nhiễm_lifestyle'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r174:aggravatedBy]->(o2)
+SET r174.text = 'Tránh ăn thức ăn dễ gây dị ứng, vệ sinh nhà cửa sạch sẽ, thường xuyên giặt chăn, nệm, thảm, rèm cửa, tránh khói thuốc lá và môi trường nhiều bụi, ô nhiễm.'
+
+MERGE (o1:lifestyle {id: 'tắm_nước_nóng_lifestyle'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r175:aggravatedBy]->(o2)
+SET r175.text = 'Không tắm quá 20 phút một lần, ưu tiên tắm bằng nước ấm hơn là nước nóng.'
+
+MERGE (o1:treatment {id: 'xà_phòng_treatment'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r176:treatedBy]->(o2)
+SET r176.text = 'Nên dùng cố định 1 loại xà phòng, nước hoa, dầu gội, chất tẩy rửa nhẹ nhàng.'
+
+MERGE (o1:treatment {id: 'nước_hoa_treatment'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r177:treatedBy]->(o2)
+SET r177.text = 'Nên dùng cố định 1 loại xà phòng, nước hoa, dầu gội, chất tẩy rửa nhẹ nhàng.'
+
+MERGE (o1:treatment {id: 'dầu_gội_treatment'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r178:treatedBy]->(o2)
+SET r178.text = 'Nên dùng cố định 1 loại xà phòng, nước hoa, dầu gội, chất tẩy rửa nhẹ nhàng.'
+
+MERGE (o1:treatment {id: 'chất_tẩy_rửa_treatment'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r179:treatedBy]->(o2)
+SET r179.text = 'Nên dùng cố định 1 loại xà phòng, nước hoa, dầu gội, chất tẩy rửa nhẹ nhàng.'
+
+MERGE (o1:treatment {id: 'chất_tẩy_rửa_treatment'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r180:aggravatedBy]->(o2)
+SET r180.text = 'Nếu muốn thử chất tẩy rửa, tắm gội mới nên thử trên vùng da mỏng để xem có gây kích ứng không.'
+
+MERGE (o1:lifestyle {id: 'gãi_ngứa_lifestyle'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r181:aggravatedBy]->(o2)
+SET r181.text = 'Hạn chế tối đa gãi ngứa, cắt móng tay tránh việc gãi mạnh gây tổn thương da, với trẻ em cần đeo tất tay vào buổi tối.'
+
+MERGE (o1:lifestyle {id: 'cắt_móng_tay_lifestyle'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r182:treatedBy]->(o2)
+SET r182.text = 'Hạn chế tối đa gãi ngứa, cắt móng tay tránh việc gãi mạnh gây tổn thương da, với trẻ em cần đeo tất tay vào buổi tối.'
+
+MERGE (o1:symptom {id: 'tổn_thương_da_symptom'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r183:isSymptomOf]->(o2)
+SET r183.text = 'Hạn chế tối đa gãi ngứa, cắt móng tay tránh việc gãi mạnh gây tổn thương da, với trẻ em cần đeo tất tay vào buổi tối.'
+
+MERGE (o1:lifestyle {id: 'mặc_áo_thoáng_mát_lifestyle'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r184:treatedBy]->(o2)
+SET r184.text = 'Nên mặc áo thoáng mát, vải mềm, mỏng trong thời tiết nóng.'
+
+MERGE (o1:treatment {id: 'vải_mềm_treatment'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r185:treatedBy]->(o2)
+SET r185.text = 'Nên mặc áo thoáng mát, vải mềm, mỏng trong thời tiết nóng.'
+
+MERGE (o1:treatment {id: 'vải_mỏng_treatment'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r186:treatedBy]->(o2)
+SET r186.text = 'Nên mặc áo thoáng mát, vải mềm, mỏng trong thời tiết nóng.'
+
+MERGE (o1:lifestyle {id: 'uống_đủ_nước_lifestyle'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r187:treatedBy]->(o2)
+SET r187.text = 'Uống đủ nước mỗi ngày.'
+
+MERGE (o1:treatment {id: 'kem_dưỡng_ẩm_treatment'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r188:treatedBy]->(o2)
+SET r188.text = 'Người bệnh viêm da cơ địa nên bảo vệ da tay bằng kem dưỡng ẩm'
+
+MERGE (o1:treatment {id: 'vaccine_treatment'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r189:preventedBy]->(o2)
+SET r189.text = 'Hiện chưa có vaccine phòng bệnh viêm da cơ địa, tuy nhiên chúng ta vẫn có thể phòng ngừa bệnh khởi phát bằng những cách sau:'
+
+MERGE (o1:lifestyle {id: 'vệ_sinh_cơ_thể_lifestyle'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r190:preventedBy]->(o2)
+SET r190.text = 'Vệ sinh cơ thể sạch sẽ và thường xuyên, đặc biệt sau khi đổ nhiều mồ hôi, sau khi chơi thể thao, tiếp xúc trong môi trường nhiều bụi ô nhiễm.'
+
+MERGE (o1:symptom {id: 'đổ_nhiều_mồ_hôi_symptom'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r191:aggravatedBy]->(o2)
+SET r191.text = 'Vệ sinh cơ thể sạch sẽ và thường xuyên, đặc biệt sau khi đổ nhiều mồ hôi, sau khi chơi thể thao, tiếp xúc trong môi trường nhiều bụi ô nhiễm.'
+
+MERGE (o1:lifestyle {id: 'chơi_thể_thao_lifestyle'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r192:aggravatedBy]->(o2)
+SET r192.text = 'Vệ sinh cơ thể sạch sẽ và thường xuyên, đặc biệt sau khi đổ nhiều mồ hôi, sau khi chơi thể thao, tiếp xúc trong môi trường nhiều bụi ô nhiễm.'
+
+MERGE (o1:lifestyle {id: 'môi_trường_nhiều_bụi_lifestyle'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r193:aggravatedBy]->(o2)
+SET r193.text = 'Vệ sinh cơ thể sạch sẽ và thường xuyên, đặc biệt sau khi đổ nhiều mồ hôi, sau khi chơi thể thao, tiếp xúc trong môi trường nhiều bụi ô nhiễm.'
+
+MERGE (o1:lifestyle {id: 'môi_trường_ô_nhiễm_lifestyle'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r194:aggravatedBy]->(o2)
+SET r194.text = 'Vệ sinh cơ thể sạch sẽ và thường xuyên, đặc biệt sau khi đổ nhiều mồ hôi, sau khi chơi thể thao, tiếp xúc trong môi trường nhiều bụi ô nhiễm.'
+
+MERGE (o1:treatment {id: 'kem_dưỡng_ẩm_treatment'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r195:preventedBy]->(o2)
+SET r195.text = 'Bôi kem dưỡng ẩm cho da sau khi tắm để tránh da bị khô gây nứt nẻ, viêm nhiễm.'
+
+MERGE (o1:symptom {id: 'da_khô_symptom'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r196:aggravatedBy]->(o2)
+SET r196.text = 'Bôi kem dưỡng ẩm cho da sau khi tắm để tránh da bị khô gây nứt nẻ, viêm nhiễm.'
+
+MERGE (o1:symptom {id: 'nứt_nẻ_symptom'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r197:isSymptomOf]->(o2)
+SET r197.text = 'Bôi kem dưỡng ẩm cho da sau khi tắm để tránh da bị khô gây nứt nẻ, viêm nhiễm.'
+
+MERGE (o1:symptom {id: 'viêm_nhiễm_symptom'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r198:isSymptomOf]->(o2)
+SET r198.text = 'Bôi kem dưỡng ẩm cho da sau khi tắm để tránh da bị khô gây nứt nẻ, viêm nhiễm.'
+
+MERGE (o1:lifestyle {id: 'tắm_nước_nóng_lifestyle'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r199:aggravatedBy]->(o2)
+SET r199.text = 'Hạn chế tắm nước nóng để tránh kích thích da, gây ngứa và viêm.'
+
+MERGE (o1:symptom {id: 'ngứa_symptom'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r200:isSymptomOf]->(o2)
+SET r200.text = 'Hạn chế tắm nước nóng để tránh kích thích da, gây ngứa và viêm.'
+
+MERGE (o1:symptom {id: 'viêm_symptom'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r201:isSymptomOf]->(o2)
+SET r201.text = 'Hạn chế tắm nước nóng để tránh kích thích da, gây ngứa và viêm.'
+
+MERGE (o1:treatment {id: 'nước_hoa_treatment'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r202:treatedBy]->(o2)
+SET r202.text = 'Lựa chọn nước hoa, mỹ phẩm, xà phòng tắm gội dịu nhẹ, phù hợp với làn da của bạn.'
+
+MERGE (o1:treatment {id: 'mỹ_phẩm_treatment'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r203:treatedBy]->(o2)
+SET r203.text = 'Lựa chọn nước hoa, mỹ phẩm, xà phòng tắm gội dịu nhẹ, phù hợp với làn da của bạn.'
+
+MERGE (o1:treatment {id: 'xà_phòng_treatment'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r204:treatedBy]->(o2)
+SET r204.text = 'Lựa chọn nước hoa, mỹ phẩm, xà phòng tắm gội dịu nhẹ, phù hợp với làn da của bạn.'
+
+MERGE (o1:treatment {id: 'thành_phần_treatment'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r205:aggravatedBy]->(o2)
+SET r205.text = 'Nên đọc kỹ thành phần để tránh gây kích ứng cho da.'
+
+MERGE (o1:food {id: 'hải_sản_food'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r206:aggravatedBy]->(o2)
+SET r206.text = 'Hạn chế ăn hải sản, uống rượu bia, không hút thuốc lá,&#8230; có thể kích thích dị ứng, gây ngứa ngáy.'
+
+MERGE (o1:food {id: 'rượu_bia_food'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r207:aggravatedBy]->(o2)
+SET r207.text = 'Hạn chế ăn hải sản, uống rượu bia, không hút thuốc lá,&#8230; có thể kích thích dị ứng, gây ngứa ngáy.'
+
+MERGE (o1:lifestyle {id: 'hút_thuốc_lá_lifestyle'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r208:aggravatedBy]->(o2)
+SET r208.text = 'Hạn chế ăn hải sản, uống rượu bia, không hút thuốc lá,&#8230; có thể kích thích dị ứng, gây ngứa ngáy.'
+
+MERGE (o1:symptom {id: 'dị_ứng_symptom'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r209:isSymptomOf]->(o2)
+SET r209.text = 'Hạn chế ăn hải sản, uống rượu bia, không hút thuốc lá,&#8230; có thể kích thích dị ứng, gây ngứa ngáy.'
+
+MERGE (o1:symptom {id: 'ngứa_ngáy_symptom'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r210:isSymptomOf]->(o2)
+SET r210.text = 'Hạn chế ăn hải sản, uống rượu bia, không hút thuốc lá,&#8230; có thể kích thích dị ứng, gây ngứa ngáy.'
+
+MERGE (o1:treatment {id: 'thuốc_chống_dị_ứng_treatment'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r211:treatedBy]->(o2)
+SET r211.text = 'Không tự ý mua thuốc chống dị ứng, cần uống theo toa của bác sĩ.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o2:disease {id: 'bệnh_viêm_mũi_dị_ứng_disease'})
+MERGE (o1)-[r212:relatedTo]->(o2)
+SET r212.text = 'Bệnh viêm da cơ địa là một bệnh mạn tính, bệnh không chữa dứt hoàn toàn được nhưng có thể kiểm soát được bệnh bằng nhiều biện pháp (giống như bệnh viêm mũi dị ứng, không thể chữa dứt được nhưng có thể phòng ngừa và kiểm soát được).'
+
+MERGE (o1:lifestyle {id: 'chế_độ_ăn_uống_lifestyle'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r213:affects]->(o2)
+SET r213.text = 'Ăn uống có thể ảnh hưởng lớn đến tình trạng bệnh, ngoài việc điều trị bằng thuốc thì người bệnh cần có một chế độ ăn uống phù hợp để cải thiện tình trạng bệnh.'
+
+MERGE (o1:food {id: 'cá_giàu_omega_food'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r214:treatedBy]->(o2)
+SET r214.text = 'Các loại thực phẩm người bệnh viêm da cơ địa nên ăn: Các loại cá giàu omega giúp kháng viêm như: Cá ngừ, cá thu, cá hồi, cá mòi, cá trích,&#8230;; Các loại sản phẩm lên men chứa nhiều probiotic; trái cây và rau củ có chứa flavonoid kháng viêm như: Dâu, sơ ri, táo, súp lơ xanh, cải bó xôi, cải xoăn,&#8230;'
+
+MERGE (o1:food {id: 'sản_phẩm_lên_men_food'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r215:treatedBy]->(o2)
+SET r215.text = 'Các loại thực phẩm người bệnh viêm da cơ địa nên ăn: Các loại cá giàu omega giúp kháng viêm như: Cá ngừ, cá thu, cá hồi, cá mòi, cá trích,&#8230;; Các loại sản phẩm lên men chứa nhiều probiotic; trái cây và rau củ có chứa flavonoid kháng viêm như: Dâu, sơ ri, táo, súp lơ xanh, cải bó xôi, cải xoăn,&#8230;'
+
+MERGE (o1:food {id: 'trái_cây_và_rau_củ_food'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r216:treatedBy]->(o2)
+SET r216.text = 'Các loại thực phẩm người bệnh viêm da cơ địa nên ăn: Các loại cá giàu omega giúp kháng viêm như: Cá ngừ, cá thu, cá hồi, cá mòi, cá trích,&#8230;; Các loại sản phẩm lên men chứa nhiều probiotic; trái cây và rau củ có chứa flavonoid kháng viêm như: Dâu, sơ ri, táo, súp lơ xanh, cải bó xôi, cải xoăn,&#8230;'
+
+MERGE (o1:food {id: 'thực_phẩm_dễ_gây_dị_ứng_food'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r217:aggravatedBy]->(o2)
+SET r217.text = 'Người bệnh tránh ăn thực phẩm dễ gây dị ứng, khiến bệnh nặng thêm như: Trứng, đậu nành, cà chua, các loại hạt, cây họ cam quýt, các sản phẩm từ sữa, vani, quế, đinh hương.'
+
+MERGE (o1:food {id: 'trứng_food'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r218:aggravatedBy]->(o2)
+SET r218.text = 'Người bệnh tránh ăn thực phẩm dễ gây dị ứng, khiến bệnh nặng thêm như: Trứng, đậu nành, cà chua, các loại hạt, cây họ cam quýt, các sản phẩm từ sữa, vani, quế, đinh hương.'
+
+MERGE (o1:food {id: 'đậu_nành_food'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r219:aggravatedBy]->(o2)
+SET r219.text = 'Người bệnh tránh ăn thực phẩm dễ gây dị ứng, khiến bệnh nặng thêm như: Trứng, đậu nành, cà chua, các loại hạt, cây họ cam quýt, các sản phẩm từ sữa, vani, quế, đinh hương.'
+
+MERGE (o1:food {id: 'cà_chua_food'})
+MERGE (o2:disease {id: 'bệnh_viêm_da_cơ_địa_disease'})
+MERGE (o1)-[r220:aggravatedBy]->(o2)
+SET r220.text = 'Người bệnh tránh ăn thực phẩm dễ gây dị ứng, khiến bệnh nặng thêm như: Trứng, đậu nành, cà chua, các loại hạt, cây họ cam quýt, các sản phẩm từ sữa, vani, quế, đinh hương.'

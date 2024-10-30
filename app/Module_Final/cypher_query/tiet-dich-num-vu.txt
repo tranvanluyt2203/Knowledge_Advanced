@@ -1,0 +1,335 @@
+
+MERGE (o1:symptom {id: 'tiết_dịch_núm_vú_symptom'})
+MERGE (o2:lifestyle {id: 'phụ_nữ_độ_tuổi_sinh_sản_lifestyle'})
+MERGE (o1)-[r0:associatedWith]->(o2)
+SET r0.text = 'Tiết dịch núm vú thường xuất hiện ở phụ nữ độ trong độ tuổi sinh sản, ngay cả khi không mang thai hoặc cho con bú.'
+
+MERGE (o1:symptom {id: 'tiết_dịch_núm_vú_symptom'})
+MERGE (o2:lifestyle {id: 'không_mang_thai_lifestyle'})
+MERGE (o1)-[r1:associatedWith]->(o2)
+SET r1.text = 'Tiết dịch núm vú thường xuất hiện ở phụ nữ độ trong độ tuổi sinh sản, ngay cả khi không mang thai hoặc cho con bú.'
+
+MERGE (o1:symptom {id: 'tiết_dịch_núm_vú_symptom'})
+MERGE (o2:lifestyle {id: 'cho_con_bú_lifestyle'})
+MERGE (o1)-[r2:associatedWith]->(o2)
+SET r2.text = 'Tiết dịch núm vú thường xuất hiện ở phụ nữ độ trong độ tuổi sinh sản, ngay cả khi không mang thai hoặc cho con bú.'
+
+MERGE (o1:symptom {id: 'tiết_dịch_núm_vú_symptom'})
+MERGE (o2:disease {id: 'bệnh_lý_nguy_hiểm_liên_quan_đến_tuyến_vú_disease'})
+MERGE (o1)-[r3:isSymptomOf]->(o2)
+SET r3.text = 'Tuy nhiên, trong một số trường hợp, tiết dịch núm vú có thể cảnh báo một số bệnh lý nguy hiểm liên quan đến tuyến vú.'
+
+MERGE (o1:symptom {id: 'tiết_dịch_núm_vú_symptom'})
+MERGE (o2:cause {id: 'nguyên_nhân_cause'})
+MERGE (o1)-[r4:causedBy]->(o2)
+SET r4.text = 'Vậy tiết dịch núm vú nguyên nhân do đâu, dấu hiệu nhận biết, khi nào cần gặp bác sĩ và cách khắc phục ra sao?'
+
+MERGE (o1:symptom {id: 'tiết_dịch_núm_vú_symptom'})
+MERGE (o2:symptom {id: 'dịch_chảy_ra_từ_núm_vú_symptom'})
+MERGE (o1)-[r5:isSymptomOf]->(o2)
+SET r5.text = 'Tiết dịch núm vú (nipple discharge) là tình trạng dịch chảy ra từ núm vú.'
+
+MERGE (o1:symptom {id: 'tiết_dịch_núm_vú_symptom'})
+MERGE (o2:lifestyle {id: 'mang_thai_lifestyle'})
+MERGE (o1)-[r6:associatedWith]->(o2)
+SET r6.text = 'Tiết dịch núm vú khi mang thai và cho con bú là bình thường.'
+
+MERGE (o1:symptom {id: 'tiết_dịch_núm_vú_symptom'})
+MERGE (o2:lifestyle {id: 'cho_con_bú_lifestyle'})
+MERGE (o1)-[r7:associatedWith]->(o2)
+SET r7.text = 'Tiết dịch núm vú khi mang thai và cho con bú là bình thường.'
+
+MERGE (o1:symptom {id: 'tiết_dịch_núm_vú_symptom'})
+MERGE (o2:lifestyle {id: 'phụ_nữ_không_mang_thai_lifestyle'})
+MERGE (o1)-[r8:associatedWith]->(o2)
+SET r8.text = 'Tiết dịch núm vú ở những phụ nữ không mang thai hoặc cho con bú thì ít gặp, có thể không đáng lo ngại nhưng nên đi khám để bác sĩ đánh giá chính xác hơn.'
+
+MERGE (o1:symptom {id: 'tiết_dịch_núm_vú_symptom'})
+MERGE (o2:lifestyle {id: 'cho_con_bú_lifestyle'})
+MERGE (o1)-[r9:associatedWith]->(o2)
+SET r9.text = 'Tiết dịch núm vú ở những phụ nữ không mang thai hoặc cho con bú thì ít gặp, có thể không đáng lo ngại nhưng nên đi khám để bác sĩ đánh giá chính xác hơn.'
+
+MERGE (o1:symptom {id: 'tiết_dịch_ở_núm_vú_symptom'})
+MERGE (o2:lifestyle {id: 'nam_giới_lifestyle'})
+MERGE (o1)-[r10:associatedWith]->(o2)
+SET r10.text = 'Nam giới bị tiết dịch ở núm vú trong bất kỳ trường hợp nào cũng nên được đánh giá.'
+
+MERGE (o1:symptom {id: 'tiết_dịch_ở_núm_vú_symptom'})
+MERGE (o2:organ {id: 'vú_organ'})
+MERGE (o1)-[r11:locatedIn]->(o2)
+SET r11.text = 'Một hoặc cả hai vú có thể tiết dịch ở núm vú, tiết dịch tự nhiên hoặc khi bóp nặn ngay núm vú.'
+
+MERGE (o1:symptom {id: 'dịch_tiết_ở_núm_vú_symptom'})
+MERGE (o2:cause {id: 'màu_sắc_cause'})
+MERGE (o1)-[r12:relatedTo]->(o2)
+SET r12.text = 'Dịch tiết ở núm vú có thể có màu trắng đục, trong, vàng, xanh lá cây, nâu hoặc có máu.'
+
+MERGE (o1:symptom {id: 'dịch_tiết_ở_núm_vú_symptom'})
+MERGE (o2:food {id: 'sữa_food'})
+MERGE (o1)-[r13:relatedTo]->(o2)
+SET r13.text = 'Chất dịch này không phải là sữa, dịch chảy ra từ núm vú qua cùng một ống dẫn sữa.'
+
+MERGE (o1:symptom {id: 'dịch_tiết_ở_núm_vú_symptom'})
+MERGE (o2:organ {id: 'ống_dẫn_sữa_organ'})
+MERGE (o1)-[r14:relatedTo]->(o2)
+SET r14.text = 'Chất dịch này không phải là sữa, dịch chảy ra từ núm vú qua cùng một ống dẫn sữa.'
+
+MERGE (o1:symptom {id: 'tiết_dịch_symptom'})
+MERGE (o2:organ {id: 'ống_dẫn_organ'})
+MERGE (o1)-[r15:relatedTo]->(o2)
+SET r15.text = 'Tiết dịch có thể liên quan đến một hoặc nhiều ống dẫn.'
+
+MERGE (o1:symptom {id: 'dịch_tiết_núm_vú_symptom'})
+MERGE (o2:cause {id: 'độ_đặc_cause'})
+MERGE (o1)-[r16:relatedTo]->(o2)
+SET r16.text = 'Độ đặc của dịch tiết núm vú có thể khác nhau, có thể đặc và dính hoặc loãng và chảy nước.'
+
+MERGE (o1:symptom {id: 'tiết_dịch_núm_vú_symptom'})
+MERGE (o2:symptom {id: 'lo_lắng_symptom'})
+MERGE (o1)-[r17:relatedTo]->(o2)
+SET r17.text = 'Đa phần chị em khi thấy vú của mình tiết dịch sẽ vô cùng lo lắng, vậy tiết dịch núm vú có nguy hiểm không?'
+
+MERGE (o1:symptom {id: 'tiết_dịch_núm_vú_symptom'})
+MERGE (o2:cause {id: 'màu_trắng_trong_cause'})
+MERGE (o1)-[r18:relatedTo]->(o2)
+SET r18.text = 'Các bác sĩ chuyên khoa cho biết, khi thấy đầu núm vú tiết dịch, dùng tay nặn thấy nhũ hoa tiết dịch màu trắng trong hoặc trắng gần giống như sữa thì không có vấn đề gì nghiêm trọng.'
+
+MERGE (o1:symptom {id: 'tiết_dịch_núm_vú_symptom'})
+MERGE (o2:cause {id: 'màu_trắng_gần_giống_như_sữa_cause'})
+MERGE (o1)-[r19:relatedTo]->(o2)
+SET r19.text = 'Các bác sĩ chuyên khoa cho biết, khi thấy đầu núm vú tiết dịch, dùng tay nặn thấy nhũ hoa tiết dịch màu trắng trong hoặc trắng gần giống như sữa thì không có vấn đề gì nghiêm trọng.'
+
+MERGE (o1:symptom {id: 'tiết_dịch_ở_núm_vú_symptom'})
+MERGE (o2:disease {id: 'ung_thư_vú_disease'})
+MERGE (o1)-[r20:isSymptomOf]->(o2)
+SET r20.text = 'Tiết dịch ở núm vú hiếm khi là dấu hiệu của ung thư vú, nhưng có thể là dấu hiệu của một tình trạng tiềm ẩn cần được thăm khám và điều trị.'
+
+MERGE (o1:symptom {id: 'tiết_dịch_ở_núm_vú_symptom'})
+MERGE (o2:disease {id: 'tình_trạng_tiềm_ẩn_disease'})
+MERGE (o1)-[r21:isSymptomOf]->(o2)
+SET r21.text = 'Tiết dịch ở núm vú hiếm khi là dấu hiệu của ung thư vú, nhưng có thể là dấu hiệu của một tình trạng tiềm ẩn cần được thăm khám và điều trị.'
+
+MERGE (o1:treatment {id: 'gặp_bác_sĩ_treatment'})
+MERGE (o2:symptom {id: 'tiết_dịch_núm_vú_symptom'})
+MERGE (o1)-[r22:relatedTo]->(o2)
+SET r22.text = 'Khi nào cần gặp bác sĩ?'
+
+MERGE (o1:symptom {id: 'dịch_tiết_ở_núm_vú_symptom'})
+MERGE (o2:lifestyle {id: 'kinh_nguyệt_lifestyle'})
+MERGE (o1)-[r23:associatedWith]->(o2)
+SET r23.text = 'Nếu bạn vẫn có kinh nguyệt và dịch tiết ở núm vú không tự hết sau chu kỳ kinh nguyệt tiếp theo và xảy ra một cách tự nhiên, cần đi khám để được thăm khám và đánh giá.'
+
+MERGE (o1:symptom {id: 'dịch_tiết_ở_núm_vú_symptom'})
+MERGE (o2:lifestyle {id: 'chu_kỳ_kinh_nguyệt_lifestyle'})
+MERGE (o1)-[r24:associatedWith]->(o2)
+SET r24.text = 'Nếu bạn vẫn có kinh nguyệt và dịch tiết ở núm vú không tự hết sau chu kỳ kinh nguyệt tiếp theo và xảy ra một cách tự nhiên, cần đi khám để được thăm khám và đánh giá.'
+
+MERGE (o1:symptom {id: 'tiết_dịch_núm_vú_symptom'})
+MERGE (o2:lifestyle {id: 'phụ_nữ_trên_40_tuổi_lifestyle'})
+MERGE (o1)-[r25:associatedWith]->(o2)
+SET r25.text = 'Trong trường hợp phụ nữ trên 40 tuổi hoặc đã mãn kinh và bạn có tình trạng tiết dịch núm vú tự phát từ một ống dẫn duy nhất ở một bên vú cũng đi khám.'
+
+MERGE (o1:symptom {id: 'tiết_dịch_núm_vú_symptom'})
+MERGE (o2:lifestyle {id: 'mãn_kinh_lifestyle'})
+MERGE (o1)-[r26:associatedWith]->(o2)
+SET r26.text = 'Trong trường hợp phụ nữ trên 40 tuổi hoặc đã mãn kinh và bạn có tình trạng tiết dịch núm vú tự phát từ một ống dẫn duy nhất ở một bên vú cũng đi khám.'
+
+MERGE (o1:symptom {id: 'tiết_dịch_núm_vú_symptom'})
+MERGE (o2:symptom {id: 'tiết_dịch_xảy_ra_thường_xuyên_symptom'})
+MERGE (o1)-[r27:associatedWith]->(o2)
+SET r27.text = 'Cần đi khám nếu bạn có tiết dịch núm vú kèm những triệu chứng sau:  Tiết dịch xảy ra thường xuyên và nhiều lần Tiết dịch từ 1 bên vú Dịch tiết có dính máu hoặc có mùi Bạn hiện tại không cho con bú, tiết dịch núm vú chảy tự nhiên, không có kích thích bằng lực Trên 50 tuổi Có các triệu chứng khác như có khối u, đau, đỏ hoặc sưng ở vú Bạn là nam giới'
+
+MERGE (o1:symptom {id: 'tiết_dịch_núm_vú_symptom'})
+MERGE (o2:symptom {id: 'tiết_dịch_nhiều_lần_symptom'})
+MERGE (o1)-[r28:associatedWith]->(o2)
+SET r28.text = 'Cần đi khám nếu bạn có tiết dịch núm vú kèm những triệu chứng sau:  Tiết dịch xảy ra thường xuyên và nhiều lần Tiết dịch từ 1 bên vú Dịch tiết có dính máu hoặc có mùi Bạn hiện tại không cho con bú, tiết dịch núm vú chảy tự nhiên, không có kích thích bằng lực Trên 50 tuổi Có các triệu chứng khác như có khối u, đau, đỏ hoặc sưng ở vú Bạn là nam giới'
+
+MERGE (o1:symptom {id: 'tiết_dịch_núm_vú_symptom'})
+MERGE (o2:symptom {id: 'tiết_dịch_từ_1_bên_vú_symptom'})
+MERGE (o1)-[r29:associatedWith]->(o2)
+SET r29.text = 'Cần đi khám nếu bạn có tiết dịch núm vú kèm những triệu chứng sau:  Tiết dịch xảy ra thường xuyên và nhiều lần Tiết dịch từ 1 bên vú Dịch tiết có dính máu hoặc có mùi Bạn hiện tại không cho con bú, tiết dịch núm vú chảy tự nhiên, không có kích thích bằng lực Trên 50 tuổi Có các triệu chứng khác như có khối u, đau, đỏ hoặc sưng ở vú Bạn là nam giới'
+
+MERGE (o1:symptom {id: 'dịch_tiết_symptom'})
+MERGE (o2:cause {id: 'máu_cause'})
+MERGE (o1)-[r30:relatedTo]->(o2)
+SET r30.text = 'Cần đi khám nếu bạn có tiết dịch núm vú kèm những triệu chứng sau:  Tiết dịch xảy ra thường xuyên và nhiều lần Tiết dịch từ 1 bên vú Dịch tiết có dính máu hoặc có mùi Bạn hiện tại không cho con bú, tiết dịch núm vú chảy tự nhiên, không có kích thích bằng lực Trên 50 tuổi Có các triệu chứng khác như có khối u, đau, đỏ hoặc sưng ở vú Bạn là nam giới'
+
+MERGE (o1:symptom {id: 'dịch_tiết_symptom'})
+MERGE (o2:cause {id: 'mùi_cause'})
+MERGE (o1)-[r31:relatedTo]->(o2)
+SET r31.text = 'Cần đi khám nếu bạn có tiết dịch núm vú kèm những triệu chứng sau:  Tiết dịch xảy ra thường xuyên và nhiều lần Tiết dịch từ 1 bên vú Dịch tiết có dính máu hoặc có mùi Bạn hiện tại không cho con bú, tiết dịch núm vú chảy tự nhiên, không có kích thích bằng lực Trên 50 tuổi Có các triệu chứng khác như có khối u, đau, đỏ hoặc sưng ở vú Bạn là nam giới'
+
+MERGE (o1:symptom {id: 'tiết_dịch_núm_vú_symptom'})
+MERGE (o2:lifestyle {id: 'không_cho_con_bú_lifestyle'})
+MERGE (o1)-[r32:associatedWith]->(o2)
+SET r32.text = 'Cần đi khám nếu bạn có tiết dịch núm vú kèm những triệu chứng sau:  Tiết dịch xảy ra thường xuyên và nhiều lần Tiết dịch từ 1 bên vú Dịch tiết có dính máu hoặc có mùi Bạn hiện tại không cho con bú, tiết dịch núm vú chảy tự nhiên, không có kích thích bằng lực Trên 50 tuổi Có các triệu chứng khác như có khối u, đau, đỏ hoặc sưng ở vú Bạn là nam giới'
+
+MERGE (o1:symptom {id: 'tiết_dịch_núm_vú_symptom'})
+MERGE (o2:symptom {id: 'chảy_tự_nhiên_symptom'})
+MERGE (o1)-[r33:associatedWith]->(o2)
+SET r33.text = 'Cần đi khám nếu bạn có tiết dịch núm vú kèm những triệu chứng sau:  Tiết dịch xảy ra thường xuyên và nhiều lần Tiết dịch từ 1 bên vú Dịch tiết có dính máu hoặc có mùi Bạn hiện tại không cho con bú, tiết dịch núm vú chảy tự nhiên, không có kích thích bằng lực Trên 50 tuổi Có các triệu chứng khác như có khối u, đau, đỏ hoặc sưng ở vú Bạn là nam giới'
+
+MERGE (o1:symptom {id: 'tiết_dịch_núm_vú_symptom'})
+MERGE (o2:symptom {id: 'không_có_kích_thích_bằng_lực_symptom'})
+MERGE (o1)-[r34:associatedWith]->(o2)
+SET r34.text = 'Cần đi khám nếu bạn có tiết dịch núm vú kèm những triệu chứng sau:  Tiết dịch xảy ra thường xuyên và nhiều lần Tiết dịch từ 1 bên vú Dịch tiết có dính máu hoặc có mùi Bạn hiện tại không cho con bú, tiết dịch núm vú chảy tự nhiên, không có kích thích bằng lực Trên 50 tuổi Có các triệu chứng khác như có khối u, đau, đỏ hoặc sưng ở vú Bạn là nam giới'
+
+MERGE (o1:symptom {id: 'tiết_dịch_núm_vú_symptom'})
+MERGE (o2:lifestyle {id: 'trên_50_tuổi_lifestyle'})
+MERGE (o1)-[r35:associatedWith]->(o2)
+SET r35.text = 'Cần đi khám nếu bạn có tiết dịch núm vú kèm những triệu chứng sau:  Tiết dịch xảy ra thường xuyên và nhiều lần Tiết dịch từ 1 bên vú Dịch tiết có dính máu hoặc có mùi Bạn hiện tại không cho con bú, tiết dịch núm vú chảy tự nhiên, không có kích thích bằng lực Trên 50 tuổi Có các triệu chứng khác như có khối u, đau, đỏ hoặc sưng ở vú Bạn là nam giới'
+
+MERGE (o1:symptom {id: 'tiết_dịch_núm_vú_symptom'})
+MERGE (o2:symptom {id: 'khối_u_symptom'})
+MERGE (o1)-[r36:associatedWith]->(o2)
+SET r36.text = 'Cần đi khám nếu bạn có tiết dịch núm vú kèm những triệu chứng sau:  Tiết dịch xảy ra thường xuyên và nhiều lần Tiết dịch từ 1 bên vú Dịch tiết có dính máu hoặc có mùi Bạn hiện tại không cho con bú, tiết dịch núm vú chảy tự nhiên, không có kích thích bằng lực Trên 50 tuổi Có các triệu chứng khác như có khối u, đau, đỏ hoặc sưng ở vú Bạn là nam giới'
+
+MERGE (o1:symptom {id: 'tiết_dịch_núm_vú_symptom'})
+MERGE (o2:symptom {id: 'đau_symptom'})
+MERGE (o1)-[r37:associatedWith]->(o2)
+SET r37.text = 'Cần đi khám nếu bạn có tiết dịch núm vú kèm những triệu chứng sau:  Tiết dịch xảy ra thường xuyên và nhiều lần Tiết dịch từ 1 bên vú Dịch tiết có dính máu hoặc có mùi Bạn hiện tại không cho con bú, tiết dịch núm vú chảy tự nhiên, không có kích thích bằng lực Trên 50 tuổi Có các triệu chứng khác như có khối u, đau, đỏ hoặc sưng ở vú Bạn là nam giới'
+
+MERGE (o1:symptom {id: 'tiết_dịch_núm_vú_symptom'})
+MERGE (o2:symptom {id: 'đỏ_symptom'})
+MERGE (o1)-[r38:associatedWith]->(o2)
+SET r38.text = 'Cần đi khám nếu bạn có tiết dịch núm vú kèm những triệu chứng sau:  Tiết dịch xảy ra thường xuyên và nhiều lần Tiết dịch từ 1 bên vú Dịch tiết có dính máu hoặc có mùi Bạn hiện tại không cho con bú, tiết dịch núm vú chảy tự nhiên, không có kích thích bằng lực Trên 50 tuổi Có các triệu chứng khác như có khối u, đau, đỏ hoặc sưng ở vú Bạn là nam giới'
+
+MERGE (o1:symptom {id: 'tiết_dịch_núm_vú_symptom'})
+MERGE (o2:symptom {id: 'sưng_ở_vú_symptom'})
+MERGE (o1)-[r39:associatedWith]->(o2)
+SET r39.text = 'Cần đi khám nếu bạn có tiết dịch núm vú kèm những triệu chứng sau:  Tiết dịch xảy ra thường xuyên và nhiều lần Tiết dịch từ 1 bên vú Dịch tiết có dính máu hoặc có mùi Bạn hiện tại không cho con bú, tiết dịch núm vú chảy tự nhiên, không có kích thích bằng lực Trên 50 tuổi Có các triệu chứng khác như có khối u, đau, đỏ hoặc sưng ở vú Bạn là nam giới'
+
+MERGE (o1:symptom {id: 'tiết_dịch_núm_vú_symptom'})
+MERGE (o2:lifestyle {id: 'nam_giới_lifestyle'})
+MERGE (o1)-[r40:associatedWith]->(o2)
+SET r40.text = 'Cần đi khám nếu bạn có tiết dịch núm vú kèm những triệu chứng sau:  Tiết dịch xảy ra thường xuyên và nhiều lần Tiết dịch từ 1 bên vú Dịch tiết có dính máu hoặc có mùi Bạn hiện tại không cho con bú, tiết dịch núm vú chảy tự nhiên, không có kích thích bằng lực Trên 50 tuổi Có các triệu chứng khác như có khối u, đau, đỏ hoặc sưng ở vú Bạn là nam giới'
+
+MERGE (o1:symptom {id: 'tiết_dịch_núm_vú_symptom'})
+MERGE (o2:symptom {id: 'triệu_chứng_bất_thường_symptom'})
+MERGE (o1)-[r41:relatedTo]->(o2)
+SET r41.text = 'Tiết dịch núm vú kéo dài kèm các triệu chứng bất thường khác cần gặp bác sĩ để được kiểm tra, thăm khám sớm'
+
+MERGE (o1:symptom {id: 'tiết_dịch_núm_vú_symptom'})
+MERGE (o2:test {id: 'kiểm_tra_test'})
+MERGE (o1)-[r42:diagnosedBy]->(o2)
+SET r42.text = 'Tiết dịch núm vú kéo dài kèm các triệu chứng bất thường khác cần gặp bác sĩ để được kiểm tra, thăm khám sớm'
+
+MERGE (o1:symptom {id: 'tiết_dịch_núm_vú_symptom'})
+MERGE (o2:test {id: 'thăm_khám_test'})
+MERGE (o1)-[r43:diagnosedBy]->(o2)
+SET r43.text = 'Tiết dịch núm vú kéo dài kèm các triệu chứng bất thường khác cần gặp bác sĩ để được kiểm tra, thăm khám sớm'
+
+MERGE (o1:test {id: 'khám_lâm_sàng_test'})
+MERGE (o2:symptom {id: 'khối_u_symptom'})
+MERGE (o1)-[r44:diagnosedBy]->(o2)
+SET r44.text = 'Bác sĩ sẽ khám lâm sàng để kiểm tra vú của bạn xem có khối u hoặc các dấu hiệu ung thư khác không.'
+
+MERGE (o1:test {id: 'khám_lâm_sàng_test'})
+MERGE (o2:disease {id: 'ung_thư_disease'})
+MERGE (o1)-[r45:diagnosedBy]->(o2)
+SET r45.text = 'Bác sĩ sẽ khám lâm sàng để kiểm tra vú của bạn xem có khối u hoặc các dấu hiệu ung thư khác không.'
+
+MERGE (o1:symptom {id: 'khối_u_symptom'})
+MERGE (o2:disease {id: 'ung_thư_disease'})
+MERGE (o1)-[r46:isSymptomOf]->(o2)
+SET r46.text = 'Bác sĩ sẽ khám lâm sàng để kiểm tra vú của bạn xem có khối u hoặc các dấu hiệu ung thư khác không.'
+
+MERGE (o1:symptom {id: 'tiết_dịch_núm_vú_symptom'})
+MERGE (o2:cause {id: 'nguyên_nhân_cause'})
+MERGE (o1)-[r47:causedBy]->(o2)
+SET r47.text = 'Ngoài ra, bác sĩ cũng có thể chỉ định một số phương pháp khác để tìm nguyên nhân gây tiết dịch núm vú, cụ thể:'
+
+MERGE (o1:test {id: 'xét_nghiệm_tế_bào_học_dịch_tiết_ở_núm_vú_test'})
+MERGE (o2:symptom {id: 'tiết_dịch_núm_vú_symptom'})
+MERGE (o1)-[r48:diagnosedBy]->(o2)
+SET r48.text = 'Bác sĩ có thể chỉ định xét nghiệm tế bào học dịch tiết ở núm vú để truy tìm tế bào ung thư bong ra, tuy nhiên, kết quả thường khó đánh giá nguyên nhân tiết dịch, do đó ít được thực hiện'
+
+MERGE (o1:test {id: 'xét_nghiệm_tế_bào_học_dịch_tiết_ở_núm_vú_test'})
+MERGE (o2:disease {id: 'ung_thư_disease'})
+MERGE (o1)-[r49:diagnosedBy]->(o2)
+SET r49.text = 'Bác sĩ có thể chỉ định xét nghiệm tế bào học dịch tiết ở núm vú để truy tìm tế bào ung thư bong ra, tuy nhiên, kết quả thường khó đánh giá nguyên nhân tiết dịch, do đó ít được thực hiện'
+
+MERGE (o1:test {id: 'siêu_âm_vú_test'})
+MERGE (o2:symptom {id: 'bất_thường_về_hình_thái_tuyến_vú_symptom'})
+MERGE (o1)-[r50:diagnosedBy]->(o2)
+SET r50.text = 'Siêu âm vú là phương pháp khảo sát mô vú thông qua sóng âm thanh tần số cực thấp nhằm cung cấp thông cấu trúc bên trong mô vú, giúp phát hiện các bất thường về hình thái tuyến vú.'
+
+MERGE (o1:test {id: 'siêu_âm_vú_test'})
+MERGE (o2:symptom {id: 'tiết_dịch_núm_vú_symptom'})
+MERGE (o1)-[r51:diagnosedBy]->(o2)
+SET r51.text = 'Siêu âm vú là phương pháp khảo sát mô vú thông qua sóng âm thanh tần số cực thấp nhằm cung cấp thông cấu trúc bên trong mô vú, giúp phát hiện các bất thường về hình thái tuyến vú.'
+
+MERGE (o1:test {id: 'chụp_nhũ_ảnh_3d_test'})
+MERGE (o2:symptom {id: 'tiết_dịch_núm_vú_symptom'})
+MERGE (o1)-[r52:diagnosedBy]->(o2)
+SET r52.text = 'Chụp nhũ ảnh 3D là phương pháp dùng tia X để ghi nhận ảnh tuyến vú, nhằm mục đích chẩn đoán khi xuất hiện các triệu chứng như tiết dịch núm vú, sờ có khối u, da vú dày lên hoặc lõm vào, núm vú bị thụt vào bất thường….'
+
+MERGE (o1:test {id: 'chụp_nhũ_ảnh_3d_test'})
+MERGE (o2:symptom {id: 'khối_u_symptom'})
+MERGE (o1)-[r53:diagnosedBy]->(o2)
+SET r53.text = 'Chụp nhũ ảnh 3D là phương pháp dùng tia X để ghi nhận ảnh tuyến vú, nhằm mục đích chẩn đoán khi xuất hiện các triệu chứng như tiết dịch núm vú, sờ có khối u, da vú dày lên hoặc lõm vào, núm vú bị thụt vào bất thường….'
+
+MERGE (o1:test {id: 'chụp_nhũ_ảnh_3d_test'})
+MERGE (o2:symptom {id: 'da_vú_dày_lên_symptom'})
+MERGE (o1)-[r54:diagnosedBy]->(o2)
+SET r54.text = 'Chụp nhũ ảnh 3D là phương pháp dùng tia X để ghi nhận ảnh tuyến vú, nhằm mục đích chẩn đoán khi xuất hiện các triệu chứng như tiết dịch núm vú, sờ có khối u, da vú dày lên hoặc lõm vào, núm vú bị thụt vào bất thường….'
+
+MERGE (o1:test {id: 'chụp_nhũ_ảnh_3d_test'})
+MERGE (o2:symptom {id: 'lõm_vào_symptom'})
+MERGE (o1)-[r55:diagnosedBy]->(o2)
+SET r55.text = 'Chụp nhũ ảnh 3D là phương pháp dùng tia X để ghi nhận ảnh tuyến vú, nhằm mục đích chẩn đoán khi xuất hiện các triệu chứng như tiết dịch núm vú, sờ có khối u, da vú dày lên hoặc lõm vào, núm vú bị thụt vào bất thường….'
+
+MERGE (o1:test {id: 'chụp_nhũ_ảnh_3d_test'})
+MERGE (o2:symptom {id: 'núm_vú_bị_thụt_vào_symptom'})
+MERGE (o1)-[r56:diagnosedBy]->(o2)
+SET r56.text = 'Chụp nhũ ảnh 3D là phương pháp dùng tia X để ghi nhận ảnh tuyến vú, nhằm mục đích chẩn đoán khi xuất hiện các triệu chứng như tiết dịch núm vú, sờ có khối u, da vú dày lên hoặc lõm vào, núm vú bị thụt vào bất thường….'
+
+MERGE (o1:test {id: 'máy_nhũ_ảnh_kỹ_thuật_số_3d_(dbt)_mammomat_inspiration_test'})
+MERGE (o2:symptom {id: 'tiết_dịch_núm_vú_symptom'})
+MERGE (o1)-[r57:diagnosedBy]->(o2)
+SET r57.text = 'Máy nhũ ảnh kỹ thuật số 3D (DBT) Mammomat Inspiration là phương pháp chụp X quang vú tiến tiến nhất hiện nay.'
+
+MERGE (o1:test {id: 'sinh_thiết_vú_test'})
+MERGE (o2:symptom {id: 'tiết_dịch_núm_vú_symptom'})
+MERGE (o1)-[r58:diagnosedBy]->(o2)
+SET r58.text = 'Sinh thiết vú là kỹ thuật lấy mẫu mô từ tuyến vú để quan sát dưới kính hiển vi nhằm phân tích các chỉ số hình thái tế bào và cấu trúc mô vú.'
+
+MERGE (o1:test {id: 'sinh_thiết_vú_test'})
+MERGE (o2:symptom {id: 'khối_u_vú_symptom'})
+MERGE (o1)-[r59:diagnosedBy]->(o2)
+SET r59.text = 'Sinh thiết vú là kỹ thuật lấy mẫu mô từ tuyến vú để quan sát dưới kính hiển vi nhằm phân tích các chỉ số hình thái tế bào và cấu trúc mô vú.'
+
+MERGE (o1:test {id: 'chọc_hút_bằng_kim_nhỏ_test'})
+MERGE (o2:symptom {id: 'khối_u_vú_symptom'})
+MERGE (o1)-[r60:diagnosedBy]->(o2)
+SET r60.text = 'Hiện có nhiều phương pháp sinh thiết để chẩn đoán khối u vú như chọc hút bằng kim nhỏ, sinh thiết lõi kim, sinh thiết vú có hỗ trợ hút chân không…'
+
+MERGE (o1:test {id: 'sinh_thiết_lõi_kim_test'})
+MERGE (o2:symptom {id: 'khối_u_vú_symptom'})
+MERGE (o1)-[r61:diagnosedBy]->(o2)
+SET r61.text = 'Hiện có nhiều phương pháp sinh thiết để chẩn đoán khối u vú như chọc hút bằng kim nhỏ, sinh thiết lõi kim, sinh thiết vú có hỗ trợ hút chân không…'
+
+MERGE (o1:test {id: 'sinh_thiết_vú_có_hỗ_trợ_hút_chân_không_test'})
+MERGE (o2:symptom {id: 'khối_u_vú_symptom'})
+MERGE (o1)-[r62:diagnosedBy]->(o2)
+SET r62.text = 'Hiện có nhiều phương pháp sinh thiết để chẩn đoán khối u vú như chọc hút bằng kim nhỏ, sinh thiết lõi kim, sinh thiết vú có hỗ trợ hút chân không…'
+
+MERGE (o1:symptom {id: 'tiết_dịch_núm_vú_symptom'})
+MERGE (o2:treatment {id: 'phác_đồ_điều_trị_treatment'})
+MERGE (o1)-[r63:treatedBy]->(o2)
+SET r63.text = 'Khi chẩn đoán được nguyên nhân gây tiết dịch núm vú, các bác sĩ sẽ xây dựng phác đồ điều trị thích hợp.'
+
+MERGE (o1:cause {id: 'mang_thai_cause'})
+MERGE (o2:symptom {id: 'tiết_dịch_núm_vú_symptom'})
+MERGE (o1)-[r64:causedBy]->(o2)
+SET r64.text = 'Nếu trường hợp dịch tiết do mang thai hoặc cho con bú có thể không cần can thiệp, điều trị.'
+
+MERGE (o1:cause {id: 'cho_con_bú_cause'})
+MERGE (o2:symptom {id: 'tiết_dịch_núm_vú_symptom'})
+MERGE (o1)-[r65:causedBy]->(o2)
+SET r65.text = 'Nếu trường hợp dịch tiết do mang thai hoặc cho con bú có thể không cần can thiệp, điều trị.'
+
+MERGE (o1:symptom {id: 'tiết_dịch_núm_vú_symptom'})
+MERGE (o2:treatment {id: 'điều_trị_treatment'})
+MERGE (o1)-[r66:treatedBy]->(o2)
+SET r66.text = 'Các nguyên nhân bệnh lý khác gây tiết dịch núm vú có thể điều trị dựa theo tình trạng bệnh, sức khỏe của người bệnh.'

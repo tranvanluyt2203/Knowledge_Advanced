@@ -1,0 +1,490 @@
+[
+    {
+        "text": "Người bệnh ung thư cổ tử cung giai đoạn I (giai đoạn đầu) thường không có triệu chứng đặc hiệu.",
+        "head": "triệu chứng đặc hiệu",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "ung thư cổ tử cung giai đoạn I",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tầm soát là cách tốt nhất để phát hiện sớm và điều trị bệnh hiệu quả.",
+        "head": "Tầm soát",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "ung thư cổ tử cung giai đoạn I",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Giai đoạn bệnh phản ánh mức độ phát triển của khối u và tình trạng di căn.",
+        "head": "Giai đoạn bệnh",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "khối u",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Giai đoạn bệnh phản ánh mức độ phát triển của khối u và tình trạng di căn.",
+        "head": "Giai đoạn bệnh",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "di căn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Xác định giai đoạn giúp bác sĩ có thể đưa ra quyết định lựa chọn các phương pháp điều trị tối ưu nhất cho người bệnh.",
+        "head": "Xác định giai đoạn",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "ung thư cổ tử cung",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Xác định giai đoạn giúp bác sĩ có thể đưa ra quyết định lựa chọn các phương pháp điều trị tối ưu nhất cho người bệnh.",
+        "head": "các phương pháp điều trị",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "ung thư cổ tử cung",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Hệ thống phân loại của Hội Sản Phụ khoa Quốc tế (FIGO) thường được sử dụng trong phân giai đoạn cho ung thư cổ tử cung, gồm có 4 giai đoạn được ký hiệu bằng chữ số La Mã từ I đến IV.",
+        "head": "Hệ thống phân loại của Hội Sản Phụ khoa Quốc tế (FIGO)",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "ung thư cổ tử cung",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Chẩn đoán ung thư cổ tử cung giai đoạn I (IA và IB) khi bệnh giới hạn trong cổ tử cung, chưa lan sang các mô xung quanh hoặc các cơ quan khác.",
+        "head": "ung thư cổ tử cung giai đoạn I",
+        "head_type": "disease",
+        "relation": "locatedIn",
+        "tail": "cổ tử cung",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Chẩn đoán ung thư cổ tử cung giai đoạn I (IA và IB) khi bệnh giới hạn trong cổ tử cung, chưa lan sang các mô xung quanh hoặc các cơ quan khác.",
+        "head": "ung thư cổ tử cung giai đoạn I",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "các mô xung quanh",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Chẩn đoán ung thư cổ tử cung giai đoạn I (IA và IB) khi bệnh giới hạn trong cổ tử cung, chưa lan sang các mô xung quanh hoặc các cơ quan khác.",
+        "head": "ung thư cổ tử cung giai đoạn I",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "các cơ quan khác",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Ung thư cổ tử cung giai đoạn I tiên lượng tốt, điều trị cho hiệu quả cao.",
+        "head": "ung thư cổ tử cung giai đoạn I",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "điều trị",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Ở giai đoạn IA, sự phát triển của khối u rất nhỏ nên chỉ có thể quan sát được dưới kính hiển vi.",
+        "head": "khối u",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "ung thư cổ tử cung giai đoạn IA",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Giai đoạn này có thể được chia thành 2 phân nhóm:",
+        "head": "Giai đoạn này",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "ung thư cổ tử cung giai đoạn IA",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ung thư cổ tử cung giai đoạn IA1: Độ sâu tổn thương &lt; 3mm.",
+        "head": "Độ sâu tổn thương &lt; 3mm",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "ung thư cổ tử cung giai đoạn IA1",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ung thư cổ tử cung giai đoạn IA2: Độ sâu tổn thương từ 3 - 5mm.",
+        "head": "Độ sâu tổn thương từ 3 - 5mm",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "ung thư cổ tử cung giai đoạn IA2",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ở giai đoạn này, khối u có kích thước lớn hơn nhưng còn giới hạn tại cổ tử cung, chưa di căn xa.",
+        "head": "khối u",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "ung thư cổ tử cung giai đoạn IB",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ở giai đoạn này, khối u có kích thước lớn hơn nhưng còn giới hạn tại cổ tử cung, chưa di căn xa.",
+        "head": "di căn xa",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "ung thư cổ tử cung giai đoạn IB",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Giai đoạn này có thể được chia thành 3 nhóm :",
+        "head": "Giai đoạn này",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "ung thư cổ tử cung giai đoạn IB",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ung thư cổ tử cung giai đoạn IB1: Tổn thương có độ sâu ≥ 5mm và độ rộng &lt; 2cm.",
+        "head": "Tổn thương có độ sâu ≥ 5mm và độ rộng &lt; 2cm",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "ung thư cổ tử cung giai đoạn IB1",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ung thư cổ tử cung giai đoạn IB2: Tổn thương có độ sâu ≥ 5mm và độ rộng từ 2 - 5cm.",
+        "head": "Tổn thương có độ sâu ≥ 5mm và độ rộng từ 2 - 5cm",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "ung thư cổ tử cung giai đoạn IB2",
+        "tail_type": "disease"
+    },
+    {
+        "text": "TS.BS Vũ Hữu Khiêm - Trưởng khoa Ung bướu, BVĐK Tâm Anh Hà Nội, cho biết, triệu chứng ung thư cổ tử cung giai đoạn 1 (giai đoạn đầu) thường không rõ ràng.",
+        "head": "triệu chứng ung thư cổ tử cung giai đoạn 1",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "ung thư cổ tử cung giai đoạn 1",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bệnh diễn tiến trong nhiều năm, do vậy việc tầm soát ung thư cổ tử cung là cách tốt nhất để phát hiện các bất thường ở giai đoạn này.",
+        "head": "tầm soát ung thư cổ tử cung",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "ung thư cổ tử cung",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các dấu hiệu và triệu chứng ung thư cổ tử cung giai đoạn I có thể bao gồm:\nDịch âm đạo có máu, khí hư;",
+        "head": "Dịch âm đạo có máu, khí hư",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "ung thư cổ tử cung giai đoạn I",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các dấu hiệu và triệu chứng ung thư cổ tử cung giai đoạn I có thể bao gồm:\nChảy máu âm đạo sau khi giao hợp, giữa chu kỳ kinh nguyệt hoặc sau khi mãn kinh;",
+        "head": "Chảy máu âm đạo sau khi giao hợp, giữa chu kỳ kinh nguyệt hoặc sau khi mãn kinh",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "ung thư cổ tử cung giai đoạn I",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các dấu hiệu và triệu chứng ung thư cổ tử cung giai đoạn I có thể bao gồm:\nKinh nguyệt có thể ra nhiều và kéo dài hơn bình thường.",
+        "head": "Kinh nguyệt có thể ra nhiều và kéo dài hơn bình thường",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "ung thư cổ tử cung giai đoạn I",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu không được điều trị kịp thời, bệnh sẽ tiến triển qua các giai đoạn sau và gây ra các triệu chứng gồm:\nTiểu khó, tiểu đau, đôi khi có máu trong nước tiểu;",
+        "head": "Tiểu khó, tiểu đau, đôi khi có máu trong nước tiểu",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "ung thư cổ tử cung",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu không được điều trị kịp thời, bệnh sẽ tiến triển qua các giai đoạn sau và gây ra các triệu chứng gồm:\nTiêu chảy, đau hoặc chảy máu từ trực tràng;",
+        "head": "Tiêu chảy, đau hoặc chảy máu từ trực tràng",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "ung thư cổ tử cung",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu không được điều trị kịp thời, bệnh sẽ tiến triển qua các giai đoạn sau và gây ra các triệu chứng gồm:\nMệt mỏi, sụt cân;",
+        "head": "Mệt mỏi, sụt cân",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "ung thư cổ tử cung",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu không được điều trị kịp thời, bệnh sẽ tiến triển qua các giai đoạn sau và gây ra các triệu chứng gồm:\nĐau lưng âm ỉ hoặc phù chân;",
+        "head": "Đau lưng âm ỉ hoặc phù chân",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "ung thư cổ tử cung",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu không được điều trị kịp thời, bệnh sẽ tiến triển qua các giai đoạn sau và gây ra các triệu chứng gồm:\nĐau vùng chậu/bụng.",
+        "head": "Đau vùng chậu/bụng",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "ung thư cổ tử cung",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu bị ra máu hay tiết dịch âm đạo bất thường hoặc bất kỳ triệu chứng nào khác không thể giải thích được, bạn nên khám phụ khoa toàn diện bao gồm cả xét nghiệm Pap.",
+        "head": "khám phụ khoa toàn diện",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "ung thư cổ tử cung",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu bị ra máu hay tiết dịch âm đạo bất thường hoặc bất kỳ triệu chứng nào khác không thể giải thích được, bạn nên khám phụ khoa toàn diện bao gồm cả xét nghiệm Pap.",
+        "head": "xét nghiệm Pap",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "ung thư cổ tử cung",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tỷ lệ sống còn 5 năm cho ung thư cổ tử cung giai đoạn I tại Mỹ vào khoảng 92% (theo SEER).",
+        "head": "ung thư cổ tử cung giai đoạn I",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "điều trị",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Khám phụ khoa định kỳ kết hợp xét nghiệm Pap có thể phát hiện hầu hết các trường hợp ung thư cổ tử cung.",
+        "head": "Khám phụ khoa định kỳ",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "ung thư cổ tử cung",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khám phụ khoa định kỳ kết hợp xét nghiệm Pap có thể phát hiện hầu hết các trường hợp ung thư cổ tử cung.",
+        "head": "xét nghiệm Pap",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "ung thư cổ tử cung",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Xét nghiệm Pap (hay Pap smear) là phương pháp thu thập các tế bào từ cổ tử cung, sau đó kiểm tra để tìm các dấu hiệu tiền ung thư, ung thư hoặc các bệnh lý lành tính khác.",
+        "head": "xét nghiệm Pap",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "ung thư cổ tử cung",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Xét nghiệm Pap (hay Pap smear) là phương pháp thu thập các tế bào từ cổ tử cung, sau đó kiểm tra để tìm các dấu hiệu tiền ung thư, ung thư hoặc các bệnh lý lành tính khác.",
+        "head": "xét nghiệm Pap",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "tiền ung thư",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Xét nghiệm Pap (hay Pap smear) là phương pháp thu thập các tế bào từ cổ tử cung, sau đó kiểm tra để tìm các dấu hiệu tiền ung thư, ung thư hoặc các bệnh lý lành tính khác.",
+        "head": "xét nghiệm Pap",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "bệnh lý lành tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu kết quả Pap bất thường, người bệnh thường được kiểm tra thêm bằng xét nghiệm HPV.",
+        "head": "xét nghiệm HPV",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "ung thư cổ tử cung",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đây là xét nghiệm nhằm đánh giá các tế bào từ cổ tử cung có nhiễm HPV hay không.",
+        "head": "xét nghiệm HPV",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "nhiễm HPV",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Người bệnh nằm ngửa trên bàn khám phụ khoa, một dụng cụ gọi là mỏ vịt được đưa vào âm đạo (dụng cụ này sẽ mở ra âm đạo).",
+        "head": "mỏ vịt",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "ung thư cổ tử cung",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bác sĩ sử dụng dụng cụ giống bàn chải để lấy tế bào hoặc nong và nạo cổ tử cung lấy bệnh phẩm làm xét nghiệm Pap và xét nghiệm HPV.",
+        "head": "nong và nạo cổ tử cung",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "ung thư cổ tử cung",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bác sĩ sử dụng dụng cụ giống bàn chải để lấy tế bào hoặc nong và nạo cổ tử cung lấy bệnh phẩm làm xét nghiệm Pap và xét nghiệm HPV.",
+        "head": "xét nghiệm Pap",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "ung thư cổ tử cung",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bác sĩ sử dụng dụng cụ giống bàn chải để lấy tế bào hoặc nong và nạo cổ tử cung lấy bệnh phẩm làm xét nghiệm Pap và xét nghiệm HPV.",
+        "head": "xét nghiệm HPV",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "ung thư cổ tử cung",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Xét nghiệm HPV được thực hiện nếu xét nghiệm Pap có bất thường",
+        "head": "xét nghiệm HPV",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "ung thư cổ tử cung",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bác sĩ cũng có thể kiểm tra cổ tử cung và lấy mẫu mô làm sinh thiết khi nghi ngờ tổn thương ác tính.",
+        "head": "sinh thiết",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "tổn thương ác tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nhiều kỹ thuật có thể được sử dụng để lấy bệnh phẩm, như bấm kim sinh thiết hay khoét chóp,…",
+        "head": "bấm kim sinh thiết",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "tổn thương ác tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nhiều kỹ thuật có thể được sử dụng để lấy bệnh phẩm, như bấm kim sinh thiết hay khoét chóp,…",
+        "head": "khoét chóp",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "tổn thương ác tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu kết quả sinh thiết chỉ ra tình trạng ác tính, các chẩn đoán hình ảnh học sẽ được tiến hành để đánh giá giai đoạn bệnh, bao gồm:\nMRI vùng tiểu khung",
+        "head": "MRI vùng tiểu khung",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "ung thư cổ tử cung",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu kết quả sinh thiết chỉ ra tình trạng ác tính, các chẩn đoán hình ảnh học sẽ được tiến hành để đánh giá giai đoạn bệnh, bao gồm:\nChụp CT ngực - bụng - chậu hay PET/CT",
+        "head": "Chụp CT ngực - bụng - chậu hay PET/CT",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "ung thư cổ tử cung",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu kết quả sinh thiết chỉ ra tình trạng ác tính, các chẩn đoán hình ảnh học sẽ được tiến hành để đánh giá giai đoạn bệnh, bao gồm:\nNội soi bàng quang, trực tràng",
+        "head": "Nội soi bàng quang, trực tràng",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "ung thư cổ tử cung",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Phẫu thuật là phương pháp điều trị chính cho bệnh ung thư cổ tử cung giai đoạn I.",
+        "head": "Phẫu thuật",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "bệnh ung thư cổ tử cung giai đoạn I",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Việc lựa chọn loại phẫu thuật sẽ phụ thuộc vào nhiều yếu tố, bao gồm tuổi tác, giai đoạn và nguyện vọng sinh sản của bệnh nhân.",
+        "head": "tuổi tác",
+        "head_type": "lifestyle",
+        "relation": "relatedTo",
+        "tail": "lựa chọn loại phẫu thuật",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Việc lựa chọn loại phẫu thuật sẽ phụ thuộc vào nhiều yếu tố, bao gồm tuổi tác, giai đoạn và nguyện vọng sinh sản của bệnh nhân.",
+        "head": "giai đoạn",
+        "head_type": "lifestyle",
+        "relation": "relatedTo",
+        "tail": "lựa chọn loại phẫu thuật",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Việc lựa chọn loại phẫu thuật sẽ phụ thuộc vào nhiều yếu tố, bao gồm tuổi tác, giai đoạn và nguyện vọng sinh sản của bệnh nhân.",
+        "head": "nguyện vọng sinh sản",
+        "head_type": "lifestyle",
+        "relation": "relatedTo",
+        "tail": "lựa chọn loại phẫu thuật",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Không, bạn sẽ không thể cảm nhận ung thư cổ tử cung bằng ngón tay của mình trong giai đoạn này do kích thước khối u còn rất nhỏ và chỉ có thể quan sát thấy dưới kính hiển vi.",
+        "head": "ung thư cổ tử cung",
+        "head_type": "disease",
+        "relation": "locatedIn",
+        "tail": "cổ tử cung",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Không, bạn sẽ không thể cảm nhận ung thư cổ tử cung bằng ngón tay của mình trong giai đoạn này do kích thước khối u còn rất nhỏ và chỉ có thể quan sát thấy dưới kính hiển vi.",
+        "head": "kích thước khối u",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "ung thư cổ tử cung",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bạn nên đến bệnh viện thăm khám ngay nếu nhận thấy có khối bất thường bên trong âm đạo.",
+        "head": "khối bất thường",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "ung thư cổ tử cung",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bạn nên đến bệnh viện thăm khám ngay nếu nhận thấy có khối bất thường bên trong âm đạo.",
+        "head": "khối bất thường",
+        "head_type": "symptom",
+        "relation": "locatedIn",
+        "tail": "âm đạo",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Hầu hết người bệnh sẽ không biết mình bị ung thư cổ tử cung cho đến khi được chẩn đoán bệnh.",
+        "head": "ung thư cổ tử cung",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "chẩn đoán bệnh",
+        "tail_type": "test"
+    },
+    {
+        "text": "Bác sĩ sẽ tiến hành các xét nghiệm và làm sinh thiết để xác định giải phẫu bệnh.",
+        "head": "xét nghiệm",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "ung thư cổ tử cung",
+        "tail_type": "disease"
+    }
+]

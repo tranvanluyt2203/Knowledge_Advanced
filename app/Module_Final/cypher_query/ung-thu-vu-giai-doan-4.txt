@@ -1,0 +1,566 @@
+
+MERGE (o1:treatment {id: 'giảm_nhẹ_các_triệu_chứng_treatment'})
+MERGE (o2:disease {id: 'bệnh_ung_thư_vú_giai_đoạn_iv_disease'})
+MERGE (o1)-[r0:treatedBy]->(o2)
+SET r0.text = 'Mục đích điều trị đối với bệnh ung thư vú giai đoạn IV không phải chữa hết hẳn bệnh, nhưng có thể giúp giảm nhẹ các triệu chứng và kéo dài thêm thời gian sống cho bệnh nhân.'
+
+MERGE (o1:treatment {id: 'kéo_dài_thêm_thời_gian_sống_treatment'})
+MERGE (o2:disease {id: 'bệnh_ung_thư_vú_giai_đoạn_iv_disease'})
+MERGE (o1)-[r1:treatedBy]->(o2)
+SET r1.text = 'Mục đích điều trị đối với bệnh ung thư vú giai đoạn IV không phải chữa hết hẳn bệnh, nhưng có thể giúp giảm nhẹ các triệu chứng và kéo dài thêm thời gian sống cho bệnh nhân.'
+
+MERGE (o1:disease {id: 'ung_thư_vú_giai_đoạn_iv_disease'})
+MERGE (o2:disease {id: 'ung_thư_vú_di_căn_disease'})
+MERGE (o1)-[r2:relatedTo]->(o2)
+SET r2.text = 'Ung thư vú giai đoạn IV còn được gọi là ung thư vú di căn, nghĩa là bệnh ung thư vú đã di căn sang các bộ phận khác trong cơ thể.'
+
+MERGE (o1:disease {id: 'ung_thư_vú_di_căn_disease'})
+MERGE (o2:disease {id: 'ung_thư_vú_disease'})
+MERGE (o1)-[r3:isSymptomOf]->(o2)
+SET r3.text = 'Ung thư vú giai đoạn IV còn được gọi là ung thư vú di căn, nghĩa là bệnh ung thư vú đã di căn sang các bộ phận khác trong cơ thể.'
+
+MERGE (o1:disease {id: 'di_căn_disease'})
+MERGE (o2:cause {id: 'các_tế_bào_ung_thư_di_chuyển_theo_đường_máu_và/hoặc_hạch_đến_các_bộ_phận_khác_trong_cơ_thể_cause'})
+MERGE (o1)-[r4:causedBy]->(o2)
+SET r4.text = 'Khi các tế bào ung thư di chuyển theo đường máu và/hoặc hạch đến các bộ phận khác trong cơ thể thì gọi là di căn.'
+
+MERGE (o1:disease {id: 'ung_thư_vú_disease'})
+MERGE (o2:organ {id: 'bộ_phận_khác_trong_cơ_thể_organ'})
+MERGE (o1)-[r5:affects]->(o2)
+SET r5.text = 'Ung thư vú có thể di căn đến bộ phận khác trong cơ thể trong thời gian vài tháng hoặc vài năm sau khi được chẩn đoán và điều trị.'
+
+MERGE (o1:disease {id: 'di_căn_disease'})
+MERGE (o2:disease {id: 'ung_thư_vú_disease'})
+MERGE (o1)-[r6:isSymptomOf]->(o2)
+SET r6.text = 'Ung thư vú có thể di căn đến bộ phận khác trong cơ thể trong thời gian vài tháng hoặc vài năm sau khi được chẩn đoán và điều trị.'
+
+MERGE (o1:disease {id: 'di_căn_disease'})
+MERGE (o2:disease {id: 'bệnh_ung_thư_vú_disease'})
+MERGE (o1)-[r7:isSymptomOf]->(o2)
+SET r7.text = 'Cũng có khi, bệnh ung thư vú được phát hiện và chẩn đoán trong tình trạng đã có di căn đến các bộ phận khác trong cơ thể.'
+
+MERGE (o1:disease {id: 'ung_thư_vú_disease'})
+MERGE (o2:organ {id: 'tất_cả_các_bộ_phận_trong_cơ_thể_organ'})
+MERGE (o1)-[r8:affects]->(o2)
+SET r8.text = 'Ung thư vú có thể di căn đến tất cả các bộ phận trong cơ thể.'
+
+MERGE (o1:organ {id: 'xương_organ'})
+MERGE (o2:disease {id: 'ung_thư_vú_disease'})
+MERGE (o1)-[r9:affectedBy]->(o2)
+SET r9.text = 'Tuy nhiên, các bộ phận thường bị di căn nhất của ung thư vú là xương, phổi, gan, não và hạch.'
+
+MERGE (o1:organ {id: 'phổi_organ'})
+MERGE (o2:disease {id: 'ung_thư_vú_disease'})
+MERGE (o1)-[r10:affectedBy]->(o2)
+SET r10.text = 'Tuy nhiên, các bộ phận thường bị di căn nhất của ung thư vú là xương, phổi, gan, não và hạch.'
+
+MERGE (o1:organ {id: 'gan_organ'})
+MERGE (o2:disease {id: 'ung_thư_vú_disease'})
+MERGE (o1)-[r11:affectedBy]->(o2)
+SET r11.text = 'Tuy nhiên, các bộ phận thường bị di căn nhất của ung thư vú là xương, phổi, gan, não và hạch.'
+
+MERGE (o1:organ {id: 'não_organ'})
+MERGE (o2:disease {id: 'ung_thư_vú_disease'})
+MERGE (o1)-[r12:affectedBy]->(o2)
+SET r12.text = 'Tuy nhiên, các bộ phận thường bị di căn nhất của ung thư vú là xương, phổi, gan, não và hạch.'
+
+MERGE (o1:organ {id: 'hạch_organ'})
+MERGE (o2:disease {id: 'ung_thư_vú_disease'})
+MERGE (o1)-[r13:affectedBy]->(o2)
+SET r13.text = 'Tuy nhiên, các bộ phận thường bị di căn nhất của ung thư vú là xương, phổi, gan, não và hạch.'
+
+MERGE (o1:symptom {id: 'các_triệu_chứng_ung_thư_vú_giai_đoạn_iv_symptom'})
+MERGE (o2:disease {id: 'ung_thư_vú_giai_đoạn_iv_disease'})
+MERGE (o1)-[r14:isSymptomOf]->(o2)
+SET r14.text = 'Theo bác sĩ Trần Thị Thiên Hương, các triệu chứng ung thư vú giai đoạn IV có thể rất khác nhau tùy thuộc vào vị trí di căn, nhưng có thể chia thành các nhóm như sau: (2)'
+
+MERGE (o1:symptom {id: 'đau_vùng_lưng-xương_hoặc_khớp_symptom'})
+MERGE (o2:disease {id: 'di_căn_xương_disease'})
+MERGE (o1)-[r15:isSymptomOf]->(o2)
+SET r15.text = 'Nhóm các triệu chứng liên quan đến di căn xương, di căn mô mềm quanh xương có kèm theo chèn ép tủy sống: Đau vùng lưng-xương hoặc khớp, tê hoặc yếu bất cứ nơi nào trên cơ thể,… không liên quan đến các nguyên nhân lành tính khác và không giảm với điều trị nội khoa thông thường.'
+
+MERGE (o1:symptom {id: 'tê_hoặc_yếu_bất_cứ_nơi_nào_trên_cơ_thể_symptom'})
+MERGE (o2:disease {id: 'di_căn_xương_disease'})
+MERGE (o1)-[r16:isSymptomOf]->(o2)
+SET r16.text = 'Nhóm các triệu chứng liên quan đến di căn xương, di căn mô mềm quanh xương có kèm theo chèn ép tủy sống: Đau vùng lưng-xương hoặc khớp, tê hoặc yếu bất cứ nơi nào trên cơ thể,… không liên quan đến các nguyên nhân lành tính khác và không giảm với điều trị nội khoa thông thường.'
+
+MERGE (o1:symptom {id: 'khó_đi_tiểu_(tiểu_không_tự_chủ_hoặc_không_thể_đi)_symptom'})
+MERGE (o2:disease {id: 'di_căn_xương_disease'})
+MERGE (o1)-[r17:isSymptomOf]->(o2)
+SET r17.text = 'Nhóm các triệu chứng liên quan đến di căn xương, di căn mô mềm quanh xương có kèm theo chèn ép tủy sống: Đau vùng lưng-xương hoặc khớp, tê hoặc yếu bất cứ nơi nào trên cơ thể,… không liên quan đến các nguyên nhân lành tính khác và không giảm với điều trị nội khoa thông thường.'
+
+MERGE (o1:symptom {id: 'ho_khan_kéo_dài_trên_1-2_tháng_symptom'})
+MERGE (o2:disease {id: 'di_căn_phổi-màng_phổi-hạch_vùng_trung_thất_disease'})
+MERGE (o1)-[r18:isSymptomOf]->(o2)
+SET r18.text = 'Nhóm các triệu chứng liên quan đến di căn phổi-màng phổi-hạch vùng trung thất (khoảng giữa lồng ngực): Ho khan kéo dài trên 1-2 tháng, thở gấp hoặc khó thở, tức ngực không liên quan đến các nguyên nhân lành tính khác và không giảm với điều trị nội khoa thông thường.'
+
+MERGE (o1:symptom {id: 'thở_gấp_hoặc_khó_thở_symptom'})
+MERGE (o2:disease {id: 'di_căn_phổi-màng_phổi-hạch_vùng_trung_thất_disease'})
+MERGE (o1)-[r19:isSymptomOf]->(o2)
+SET r19.text = 'Nhóm các triệu chứng liên quan đến di căn phổi-màng phổi-hạch vùng trung thất (khoảng giữa lồng ngực): Ho khan kéo dài trên 1-2 tháng, thở gấp hoặc khó thở, tức ngực không liên quan đến các nguyên nhân lành tính khác và không giảm với điều trị nội khoa thông thường.'
+
+MERGE (o1:symptom {id: 'tức_ngực_symptom'})
+MERGE (o2:disease {id: 'di_căn_phổi-màng_phổi-hạch_vùng_trung_thất_disease'})
+MERGE (o1)-[r20:isSymptomOf]->(o2)
+SET r20.text = 'Nhóm các triệu chứng liên quan đến di căn phổi-màng phổi-hạch vùng trung thất (khoảng giữa lồng ngực): Ho khan kéo dài trên 1-2 tháng, thở gấp hoặc khó thở, tức ngực không liên quan đến các nguyên nhân lành tính khác và không giảm với điều trị nội khoa thông thường.'
+
+MERGE (o1:symptom {id: 'ăn_không_ngon_kéo_dài_symptom'})
+MERGE (o2:disease {id: 'di_căn_gan-hạch_disease'})
+MERGE (o1)-[r21:isSymptomOf]->(o2)
+SET r21.text = 'Nhóm các triệu chứng liên quan đến di căn gan-hạch: Ăn không ngon kéo dài không liên quan đến nguyên nhân khác, chướng bụng, đau bụng, buồn nôn liên tục, nôn mửa hoặc sụt cân, vàng da (màu vàng ở da và lòng trắng của mắt),… không liên quan đến các nguyên nhân lành tính khác và không giảm với điều trị nội khoa thông thường.'
+
+MERGE (o1:symptom {id: 'chướng_bụng_symptom'})
+MERGE (o2:disease {id: 'di_căn_gan-hạch_disease'})
+MERGE (o1)-[r22:isSymptomOf]->(o2)
+SET r22.text = 'Nhóm các triệu chứng liên quan đến di căn gan-hạch: Ăn không ngon kéo dài không liên quan đến nguyên nhân khác, chướng bụng, đau bụng, buồn nôn liên tục, nôn mửa hoặc sụt cân, vàng da (màu vàng ở da và lòng trắng của mắt),… không liên quan đến các nguyên nhân lành tính khác và không giảm với điều trị nội khoa thông thường.'
+
+MERGE (o1:symptom {id: 'đau_bụng_symptom'})
+MERGE (o2:disease {id: 'di_căn_gan-hạch_disease'})
+MERGE (o1)-[r23:isSymptomOf]->(o2)
+SET r23.text = 'Nhóm các triệu chứng liên quan đến di căn gan-hạch: Ăn không ngon kéo dài không liên quan đến nguyên nhân khác, chướng bụng, đau bụng, buồn nôn liên tục, nôn mửa hoặc sụt cân, vàng da (màu vàng ở da và lòng trắng của mắt),… không liên quan đến các nguyên nhân lành tính khác và không giảm với điều trị nội khoa thông thường.'
+
+MERGE (o1:symptom {id: 'buồn_nôn_liên_tục_symptom'})
+MERGE (o2:disease {id: 'di_căn_gan-hạch_disease'})
+MERGE (o1)-[r24:isSymptomOf]->(o2)
+SET r24.text = 'Nhóm các triệu chứng liên quan đến di căn gan-hạch: Ăn không ngon kéo dài không liên quan đến nguyên nhân khác, chướng bụng, đau bụng, buồn nôn liên tục, nôn mửa hoặc sụt cân, vàng da (màu vàng ở da và lòng trắng của mắt),… không liên quan đến các nguyên nhân lành tính khác và không giảm với điều trị nội khoa thông thường.'
+
+MERGE (o1:symptom {id: 'nôn_mửa_symptom'})
+MERGE (o2:disease {id: 'di_căn_gan-hạch_disease'})
+MERGE (o1)-[r25:isSymptomOf]->(o2)
+SET r25.text = 'Nhóm các triệu chứng liên quan đến di căn gan-hạch: Ăn không ngon kéo dài không liên quan đến nguyên nhân khác, chướng bụng, đau bụng, buồn nôn liên tục, nôn mửa hoặc sụt cân, vàng da (màu vàng ở da và lòng trắng của mắt),… không liên quan đến các nguyên nhân lành tính khác và không giảm với điều trị nội khoa thông thường.'
+
+MERGE (o1:symptom {id: 'sụt_cân_symptom'})
+MERGE (o2:disease {id: 'di_căn_gan-hạch_disease'})
+MERGE (o1)-[r26:isSymptomOf]->(o2)
+SET r26.text = 'Nhóm các triệu chứng liên quan đến di căn gan-hạch: Ăn không ngon kéo dài không liên quan đến nguyên nhân khác, chướng bụng, đau bụng, buồn nôn liên tục, nôn mửa hoặc sụt cân, vàng da (màu vàng ở da và lòng trắng của mắt),… không liên quan đến các nguyên nhân lành tính khác và không giảm với điều trị nội khoa thông thường.'
+
+MERGE (o1:symptom {id: 'vàng_da_symptom'})
+MERGE (o2:disease {id: 'di_căn_gan-hạch_disease'})
+MERGE (o1)-[r27:isSymptomOf]->(o2)
+SET r27.text = 'Nhóm các triệu chứng liên quan đến di căn gan-hạch: Ăn không ngon kéo dài không liên quan đến nguyên nhân khác, chướng bụng, đau bụng, buồn nôn liên tục, nôn mửa hoặc sụt cân, vàng da (màu vàng ở da và lòng trắng của mắt),… không liên quan đến các nguyên nhân lành tính khác và không giảm với điều trị nội khoa thông thường.'
+
+MERGE (o1:symptom {id: 'đau_đầu_kéo_dài_symptom'})
+MERGE (o2:disease {id: 'di_căn_não-màng_não_disease'})
+MERGE (o1)-[r28:isSymptomOf]->(o2)
+SET r28.text = 'Nhóm các triệu chứng liên quan đến di căn não-màng não: Đau đầu kéo dài, các vấn đề về thị lực (nhìn mờ, nhìn đôi, mất thị lực), chóng mặt, rối loạn trong việc giữ thăng bằng, động kinh… không liên quan đến các nguyên nhân lành tính khác và không giảm với điều trị nội khoa thông thường.'
+
+MERGE (o1:symptom {id: 'các_vấn_đề_về_thị_lực_symptom'})
+MERGE (o2:disease {id: 'di_căn_não-màng_não_disease'})
+MERGE (o1)-[r29:isSymptomOf]->(o2)
+SET r29.text = 'Nhóm các triệu chứng liên quan đến di căn não-màng não: Đau đầu kéo dài, các vấn đề về thị lực (nhìn mờ, nhìn đôi, mất thị lực), chóng mặt, rối loạn trong việc giữ thăng bằng, động kinh… không liên quan đến các nguyên nhân lành tính khác và không giảm với điều trị nội khoa thông thường.'
+
+MERGE (o1:symptom {id: 'chóng_mặt_symptom'})
+MERGE (o2:disease {id: 'di_căn_não-màng_não_disease'})
+MERGE (o1)-[r30:isSymptomOf]->(o2)
+SET r30.text = 'Nhóm các triệu chứng liên quan đến di căn não-màng não: Đau đầu kéo dài, các vấn đề về thị lực (nhìn mờ, nhìn đôi, mất thị lực), chóng mặt, rối loạn trong việc giữ thăng bằng, động kinh… không liên quan đến các nguyên nhân lành tính khác và không giảm với điều trị nội khoa thông thường.'
+
+MERGE (o1:symptom {id: 'rối_loạn_trong_việc_giữ_thăng_bằng_symptom'})
+MERGE (o2:disease {id: 'di_căn_não-màng_não_disease'})
+MERGE (o1)-[r31:isSymptomOf]->(o2)
+SET r31.text = 'Nhóm các triệu chứng liên quan đến di căn não-màng não: Đau đầu kéo dài, các vấn đề về thị lực (nhìn mờ, nhìn đôi, mất thị lực), chóng mặt, rối loạn trong việc giữ thăng bằng, động kinh… không liên quan đến các nguyên nhân lành tính khác và không giảm với điều trị nội khoa thông thường.'
+
+MERGE (o1:disease {id: 'ung_thư_vú_giai_đoạn_iv_disease'})
+MERGE (o2:treatment {id: 'không_thể_chữa_khỏi_treatment'})
+MERGE (o1)-[r32:treatedBy]->(o2)
+SET r32.text = 'Ung thư vú giai đoạn IV có chữa được không?
+Ung thư vú giai đoạn IV
+không thể chữa khỏi.'
+
+MERGE (o1:symptom {id: 'tiên_lượng_symptom'})
+MERGE (o2:disease {id: 'khối_u_đã_di_căn_toàn_thân_disease'})
+MERGE (o1)-[r33:isSymptomOf]->(o2)
+SET r33.text = 'Tiên lượng sẽ xấu đi đáng kể khi khối u đã di căn toàn thân.'
+
+MERGE (o1:symptom {id: 'sống_sót_sau_5_năm_tiếp_theo_symptom'})
+MERGE (o2:disease {id: 'ung_thư_vú_giai_đoạn_iv_disease'})
+MERGE (o1)-[r34:isSymptomOf]->(o2)
+SET r34.text = 'Thông thường, chỉ có khoảng 22% bệnh nhân
+ung thư vú giai đoạn IV
+sống sót sau 5 năm tiếp theo.'
+
+MERGE (o1:disease {id: 'ung_thư_vú_disease'})
+MERGE (o2:test {id: 'xét_nghiệm_test'})
+MERGE (o1)-[r35:diagnosedBy]->(o2)
+SET r35.text = 'Nếu có tiền sử ung thư vú hoặc mới chẩn đoán bệnh ung thư vú và có bất kỳ triệu chứng nào nghi ngờ tình trạng di căn, bác sĩ có thể đề nghị một hoặc nhiều xét nghiệm sau:'
+
+MERGE (o1:test {id: 'xét_nghiệm_máu_test'})
+MERGE (o2:disease {id: 'ung_thư_vú_disease'})
+MERGE (o1)-[r36:diagnosedBy]->(o2)
+SET r36.text = 'Xét nghiệm máu (bao gồm các chất chỉ điểm khối u ở một số bệnh nhân).'
+
+MERGE (o1:test {id: 'siêu_âm_vú_và_nhũ_ảnh_test'})
+MERGE (o2:disease {id: 'ung_thư_vú_disease'})
+MERGE (o1)-[r37:diagnosedBy]->(o2)
+SET r37.text = 'Siêu âm vú và nhũ ảnh để xác định tính chất của khối u vú + hạch nách.'
+
+MERGE (o1:test {id: 'chụp_ct_test'})
+MERGE (o2:disease {id: 'ung_thư_vú_disease'})
+MERGE (o1)-[r38:diagnosedBy]->(o2)
+SET r38.text = 'Chụp CT (chụp cắt lớp vi tính) một phần của cơ thể (não, cổ, ngực, bụng, chậu) hoặc chụp CT toàn thân.'
+
+MERGE (o1:test {id: 'chụp_pet-ct_test'})
+MERGE (o2:disease {id: 'ung_thư_vú_disease'})
+MERGE (o1)-[r39:diagnosedBy]->(o2)
+SET r39.text = 'Chụp PET-CT.'
+
+MERGE (o1:test {id: 'mri_test'})
+MERGE (o2:disease {id: 'ung_thư_vú_disease'})
+MERGE (o1)-[r40:diagnosedBy]->(o2)
+SET r40.text = 'MRI (cộng hưởng từ) của vú, cột sống hoặc não.'
+
+MERGE (o1:test {id: 'xạ_hình_xương_test'})
+MERGE (o2:disease {id: 'ung_thư_vú_disease'})
+MERGE (o1)-[r41:diagnosedBy]->(o2)
+SET r41.text = 'Xạ hình xương toàn bộ cơ thể, có thể kết hợp chụp X-quang các vị trí nghi ngờ.'
+
+MERGE (o1:test {id: 'nội_soi_phế_quản_test'})
+MERGE (o2:disease {id: 'ung_thư_vú_disease'})
+MERGE (o1)-[r42:diagnosedBy]->(o2)
+SET r42.text = 'Nội soi phế quản: có thể được chỉ định nếu người bệnh bị ho liên tục hoặc khó thở, để loại trừ các tổn thương nguyên phát ở khí quản - phế quản đồng thời đánh giá tình trạng đường thở có bị tắc nghẽn hay không.'
+
+MERGE (o1:test {id: 'sinh_thiết_test'})
+MERGE (o2:disease {id: 'ung_thư_vú_disease'})
+MERGE (o1)-[r43:diagnosedBy]->(o2)
+SET r43.text = 'Sinh thiết bất kỳ bộ phận có tổn thương nghi ngờ di căn: để làm xét nghiệm tế bào học, nhằm xác định tế bào ung thư cũng như thực hiện các xét nghiệm sinh học của khối u (thụ thể nội tiết ER PR, thụ thể Her2, đột biến gen), để chẩn đoán và chọn phương pháp điều trị phù hợp.'
+
+MERGE (o1:test {id: 'chọc_hút_dịch_test'})
+MERGE (o2:disease {id: 'ung_thư_vú_disease'})
+MERGE (o1)-[r44:diagnosedBy]->(o2)
+SET r44.text = 'Chọc hút dịch từ bộ phận có triệu chứng (dịch màng phổi, dịch màng bụng…): trước tiên nhằm để giảm nhẹ triệu chứng, sau đó có thể thực hiện xét nghiệm tế bào học nhằm xác định tế bào ung thư cũng như thực hiện các xét nghiệm sinh học của khối u (thụ thể nội tiết ER PR, thụ thể Her2, đột biến gen), để chẩn đoán và chọn phương pháp điều trị phù hợp.'
+
+MERGE (o1:test {id: 'hệ_thống_chụp_nhũ_ảnh_dbt_test'})
+MERGE (o2:disease {id: 'ung_thư_vú_disease'})
+MERGE (o1)-[r45:diagnosedBy]->(o2)
+SET r45.text = 'Hệ thống chụp nhũ ảnh DBT giúp xác định tính chất của khối u vú.'
+
+MERGE (o1:treatment {id: 'liệu_pháp_điều_trị_toàn_thân_bằng_thuốc_treatment'})
+MERGE (o2:disease {id: 'ung_thư_vú_giai_đoạn_iv_disease'})
+MERGE (o1)-[r46:treatedBy]->(o2)
+SET r46.text = 'Liệu pháp điều trị toàn thân bằng thuốc (hóa trị và các loại thuốc khác) là phương pháp điều trị chính.'
+
+MERGE (o1:treatment {id: 'hóa_trị_treatment'})
+MERGE (o2:disease {id: 'ung_thư_vú_giai_đoạn_iv_disease'})
+MERGE (o1)-[r47:treatedBy]->(o2)
+SET r47.text = 'Các loại thuốc có thể được dùng bao gồm hóa trị, liệu pháp nội tiết, liệu pháp nhắm trúng đích và liệu pháp miễn dịch.'
+
+MERGE (o1:treatment {id: 'liệu_pháp_nội_tiết_treatment'})
+MERGE (o2:disease {id: 'ung_thư_vú_giai_đoạn_iv_disease'})
+MERGE (o1)-[r48:treatedBy]->(o2)
+SET r48.text = 'Các loại thuốc có thể được dùng bao gồm hóa trị, liệu pháp nội tiết, liệu pháp nhắm trúng đích và liệu pháp miễn dịch.'
+
+MERGE (o1:treatment {id: 'liệu_pháp_nhắm_trúng_đích_treatment'})
+MERGE (o2:disease {id: 'ung_thư_vú_giai_đoạn_iv_disease'})
+MERGE (o1)-[r49:treatedBy]->(o2)
+SET r49.text = 'Các loại thuốc có thể được dùng bao gồm hóa trị, liệu pháp nội tiết, liệu pháp nhắm trúng đích và liệu pháp miễn dịch.'
+
+MERGE (o1:treatment {id: 'liệu_pháp_miễn_dịch_treatment'})
+MERGE (o2:disease {id: 'ung_thư_vú_giai_đoạn_iv_disease'})
+MERGE (o1)-[r50:treatedBy]->(o2)
+SET r50.text = 'Các loại thuốc có thể được dùng bao gồm hóa trị, liệu pháp nội tiết, liệu pháp nhắm trúng đích và liệu pháp miễn dịch.'
+
+MERGE (o1:treatment {id: 'thuốc_treatment'})
+MERGE (o2:disease {id: 'ung_thư_vú_giai_đoạn_iv_disease'})
+MERGE (o1)-[r51:treatedBy]->(o2)
+SET r51.text = 'Các loại thuốc này có thể được dùng riêng lẻ hoặc phối hợp với nhau.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_treatment'})
+MERGE (o2:disease {id: 'ung_thư_vú_giai_đoạn_iv_disease'})
+MERGE (o1)-[r52:treatedBy]->(o2)
+SET r52.text = 'Phẫu thuật và/hoặc xạ trị có thể hữu ích trong một số trường hợp nhất định.'
+
+MERGE (o1:treatment {id: 'xạ_trị_treatment'})
+MERGE (o2:disease {id: 'ung_thư_vú_giai_đoạn_iv_disease'})
+MERGE (o1)-[r53:treatedBy]->(o2)
+SET r53.text = 'Phẫu thuật và/hoặc xạ trị có thể hữu ích trong một số trường hợp nhất định.'
+
+MERGE (o1:treatment {id: 'giảm_nhẹ_các_triệu_chứng_treatment'})
+MERGE (o2:disease {id: 'ung_thư_vú_giai_đoạn_iv_disease'})
+MERGE (o1)-[r54:treatedBy]->(o2)
+SET r54.text = 'Theo bác sĩ Thảo Nghi, mục đích điều trị
+ung thư vú giai đoạn IV
+không phải chữa hết hẳn bệnh, mà nhằm giảm nhẹ các triệu chứng và kéo dài thêm thời gian sống cho bệnh nhân.'
+
+MERGE (o1:treatment {id: 'kéo_dài_thêm_thời_gian_sống_treatment'})
+MERGE (o2:disease {id: 'ung_thư_vú_giai_đoạn_iv_disease'})
+MERGE (o1)-[r55:treatedBy]->(o2)
+SET r55.text = 'Theo bác sĩ Thảo Nghi, mục đích điều trị
+ung thư vú giai đoạn IV
+không phải chữa hết hẳn bệnh, mà nhằm giảm nhẹ các triệu chứng và kéo dài thêm thời gian sống cho bệnh nhân.'
+
+MERGE (o1:treatment {id: 'giảm_kích_thước_treatment'})
+MERGE (o2:disease {id: 'ung_thư_vú_giai_đoạn_iv_disease'})
+MERGE (o1)-[r56:treatedBy]->(o2)
+SET r56.text = 'Nếu đáp ứng tốt với điều trị, có thể giảm kích thước hoặc biến mất tạm thời các tổn thương, hoặc làm chậm sự phát triển của chúng.'
+
+MERGE (o1:treatment {id: 'biến_mất_tạm_thời_các_tổn_thương_treatment'})
+MERGE (o2:disease {id: 'ung_thư_vú_giai_đoạn_iv_disease'})
+MERGE (o1)-[r57:treatedBy]->(o2)
+SET r57.text = 'Nếu đáp ứng tốt với điều trị, có thể giảm kích thước hoặc biến mất tạm thời các tổn thương, hoặc làm chậm sự phát triển của chúng.'
+
+MERGE (o1:treatment {id: 'làm_chậm_sự_phát_triển_treatment'})
+MERGE (o2:disease {id: 'ung_thư_vú_giai_đoạn_iv_disease'})
+MERGE (o1)-[r58:treatedBy]->(o2)
+SET r58.text = 'Nếu đáp ứng tốt với điều trị, có thể giảm kích thước hoặc biến mất tạm thời các tổn thương, hoặc làm chậm sự phát triển của chúng.'
+
+MERGE (o1:symptom {id: 'tiến_triển_trở_lại_symptom'})
+MERGE (o2:disease {id: 'ung_thư_vú_giai_đoạn_iv_disease'})
+MERGE (o1)-[r59:isSymptomOf]->(o2)
+SET r59.text = 'Tuy nhiên, các tổn thương này không bị triệt tiêu hoàn toàn, mà vẫn có thể tiến triển trở lại.'
+
+MERGE (o1:treatment {id: 'tổng_thời_gian_điều_trị_treatment'})
+MERGE (o2:disease {id: 'ung_thư_vú_giai_đoạn_iv_disease'})
+MERGE (o1)-[r60:treatedBy]->(o2)
+SET r60.text = 'Vì vậy, không có tổng thời gian điều trị cụ thể cho giai đoạn này.'
+
+MERGE (o1:symptom {id: 'tiến_triển_trở_lại_symptom'})
+MERGE (o2:disease {id: 'ung_thư_vú_giai_đoạn_iv_disease'})
+MERGE (o1)-[r61:isSymptomOf]->(o2)
+SET r61.text = 'Việc điều trị thường kéo dài cho đến khi bệnh ung thư bắt đầu tiến triển trở lại; hoặc cho đến khi xảy ra các tác dụng phụ có thể gây bất lợi cho bệnh nhân.'
+
+MERGE (o1:symptom {id: 'tác_dụng_phụ_symptom'})
+MERGE (o2:disease {id: 'ung_thư_vú_giai_đoạn_iv_disease'})
+MERGE (o1)-[r62:isSymptomOf]->(o2)
+SET r62.text = 'Việc điều trị thường kéo dài cho đến khi bệnh ung thư bắt đầu tiến triển trở lại; hoặc cho đến khi xảy ra các tác dụng phụ có thể gây bất lợi cho bệnh nhân.'
+
+MERGE (o1:treatment {id: 'chuyển_qua_loại_thuốc_khác_treatment'})
+MERGE (o2:disease {id: 'ung_thư_vú_giai_đoạn_iv_disease'})
+MERGE (o1)-[r63:treatedBy]->(o2)
+SET r63.text = 'Khi đó, bệnh nhân có thể được chuyển qua loại thuốc khác.'
+
+MERGE (o1:treatment {id: 'thuốc_điều_trị_treatment'})
+MERGE (o2:disease {id: 'ung_thư_vú_giai_đoạn_iv_disease'})
+MERGE (o1)-[r64:treatedBy]->(o2)
+SET r64.text = 'Việc lựa chọn thuốc điều trị tùy thuộc vào tính chất sinh học của khối u (thụ thể nội tiết ER PR, thụ thể HER2, đột biến gen) cũng như tình trạng di căn của bệnh và thể trạng của bệnh nhân.'
+
+MERGE (o1:cause {id: 'tính_chất_sinh_học_của_khối_u_cause'})
+MERGE (o2:disease {id: 'ung_thư_vú_giai_đoạn_iv_disease'})
+MERGE (o1)-[r65:causedBy]->(o2)
+SET r65.text = 'Việc lựa chọn thuốc điều trị tùy thuộc vào tính chất sinh học của khối u (thụ thể nội tiết ER PR, thụ thể HER2, đột biến gen) cũng như tình trạng di căn của bệnh và thể trạng của bệnh nhân.'
+
+MERGE (o1:cause {id: 'tình_trạng_di_căn_cause'})
+MERGE (o2:disease {id: 'ung_thư_vú_giai_đoạn_iv_disease'})
+MERGE (o1)-[r66:causedBy]->(o2)
+SET r66.text = 'Việc lựa chọn thuốc điều trị tùy thuộc vào tính chất sinh học của khối u (thụ thể nội tiết ER PR, thụ thể HER2, đột biến gen) cũng như tình trạng di căn của bệnh và thể trạng của bệnh nhân.'
+
+MERGE (o1:cause {id: 'thể_trạng_cause'})
+MERGE (o2:disease {id: 'ung_thư_vú_giai_đoạn_iv_disease'})
+MERGE (o1)-[r67:causedBy]->(o2)
+SET r67.text = 'Việc lựa chọn thuốc điều trị tùy thuộc vào tính chất sinh học của khối u (thụ thể nội tiết ER PR, thụ thể HER2, đột biến gen) cũng như tình trạng di căn của bệnh và thể trạng của bệnh nhân.'
+
+MERGE (o1:treatment {id: 'công_thức_mẫu_cố_định_treatment'})
+MERGE (o2:disease {id: 'ung_thư_vú_giai_đoạn_iv_disease'})
+MERGE (o1)-[r68:treatedBy]->(o2)
+SET r68.text = 'Hoàn toàn không có bất kỳ công thức mẫu cố định nào, mà có rất nhiều tình huống để cân nhắc chọn lựa.'
+
+MERGE (o1:treatment {id: 'ví_dụ_treatment'})
+MERGE (o2:disease {id: 'ung_thư_vú_giai_đoạn_iv_disease'})
+MERGE (o1)-[r69:treatedBy]->(o2)
+SET r69.text = 'Có thể tham khảo một vài ví dụ sau:'
+
+MERGE (o1:treatment {id: 'liệu_pháp_nội_tiết_treatment'})
+MERGE (o2:disease {id: 'ung_thư_vú_giai_đoạn_iv_disease'})
+MERGE (o1)-[r70:treatedBy]->(o2)
+SET r70.text = 'Nếu thụ thể nội tiết ER PR dương, thụ thể HER2 âm: C
+ó thể được
+điều trị trước bằng liệu pháp nội tiết (Tamoxifen hoặc chất ức chế Aromatase); các thuốc này có thể được kết hợp với một loại thuốc nhắm mục tiêu như chất ức chế CDK4 / 6, Everolimus hoặc chất ức chế PI3K.'
+
+MERGE (o1:treatment {id: 'tamoxifen_treatment'})
+MERGE (o2:disease {id: 'ung_thư_vú_giai_đoạn_iv_disease'})
+MERGE (o1)-[r71:treatedBy]->(o2)
+SET r71.text = 'Nếu thụ thể nội tiết ER PR dương, thụ thể HER2 âm: C
+ó thể được
+điều trị trước bằng liệu pháp nội tiết (Tamoxifen hoặc chất ức chế Aromatase); các thuốc này có thể được kết hợp với một loại thuốc nhắm mục tiêu như chất ức chế CDK4 / 6, Everolimus hoặc chất ức chế PI3K.'
+
+MERGE (o1:treatment {id: 'chất_ức_chế_aromatase_treatment'})
+MERGE (o2:disease {id: 'ung_thư_vú_giai_đoạn_iv_disease'})
+MERGE (o1)-[r72:treatedBy]->(o2)
+SET r72.text = 'Nếu thụ thể nội tiết ER PR dương, thụ thể HER2 âm: C
+ó thể được
+điều trị trước bằng liệu pháp nội tiết (Tamoxifen hoặc chất ức chế Aromatase); các thuốc này có thể được kết hợp với một loại thuốc nhắm mục tiêu như chất ức chế CDK4 / 6, Everolimus hoặc chất ức chế PI3K.'
+
+MERGE (o1:treatment {id: 'chất_ức_chế_cdk4_/_6_treatment'})
+MERGE (o2:disease {id: 'ung_thư_vú_giai_đoạn_iv_disease'})
+MERGE (o1)-[r73:treatedBy]->(o2)
+SET r73.text = 'Nếu thụ thể nội tiết ER PR dương, thụ thể HER2 âm: C
+ó thể được
+điều trị trước bằng liệu pháp nội tiết (Tamoxifen hoặc chất ức chế Aromatase); các thuốc này có thể được kết hợp với một loại thuốc nhắm mục tiêu như chất ức chế CDK4 / 6, Everolimus hoặc chất ức chế PI3K.'
+
+MERGE (o1:treatment {id: 'everolimus_treatment'})
+MERGE (o2:disease {id: 'ung_thư_vú_giai_đoạn_iv_disease'})
+MERGE (o1)-[r74:treatedBy]->(o2)
+SET r74.text = 'Nếu thụ thể nội tiết ER PR dương, thụ thể HER2 âm: C
+ó thể được
+điều trị trước bằng liệu pháp nội tiết (Tamoxifen hoặc chất ức chế Aromatase); các thuốc này có thể được kết hợp với một loại thuốc nhắm mục tiêu như chất ức chế CDK4 / 6, Everolimus hoặc chất ức chế PI3K.'
+
+MERGE (o1:treatment {id: 'chất_ức_chế_pi3k_treatment'})
+MERGE (o2:disease {id: 'ung_thư_vú_giai_đoạn_iv_disease'})
+MERGE (o1)-[r75:treatedBy]->(o2)
+SET r75.text = 'Nếu thụ thể nội tiết ER PR dương, thụ thể HER2 âm: C
+ó thể được
+điều trị trước bằng liệu pháp nội tiết (Tamoxifen hoặc chất ức chế Aromatase); các thuốc này có thể được kết hợp với một loại thuốc nhắm mục tiêu như chất ức chế CDK4 / 6, Everolimus hoặc chất ức chế PI3K.'
+
+MERGE (o1:treatment {id: 'tamoxifen_treatment'})
+MERGE (o2:disease {id: 'ung_thư_vú_giai_đoạn_iv_disease'})
+MERGE (o1)-[r76:treatedBy]->(o2)
+SET r76.text = 'Tùy theo tình trạng mãn kinh, bác sĩ sẽ lựa chọn các phương pháp như: (4)    Chưa mãn kinh: Tamoxifen, có thể kết hợp cắt chức năng buồng trứng (bằng phẫu thuật, xạ trị hay bằng thuốc).'
+
+MERGE (o1:treatment {id: 'cắt_chức_năng_buồng_trứng_treatment'})
+MERGE (o2:disease {id: 'ung_thư_vú_giai_đoạn_iv_disease'})
+MERGE (o1)-[r77:treatedBy]->(o2)
+SET r77.text = 'Tùy theo tình trạng mãn kinh, bác sĩ sẽ lựa chọn các phương pháp như: (4)    Chưa mãn kinh: Tamoxifen, có thể kết hợp cắt chức năng buồng trứng (bằng phẫu thuật, xạ trị hay bằng thuốc).'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_treatment'})
+MERGE (o2:disease {id: 'ung_thư_vú_giai_đoạn_iv_disease'})
+MERGE (o1)-[r78:treatedBy]->(o2)
+SET r78.text = 'Tùy theo tình trạng mãn kinh, bác sĩ sẽ lựa chọn các phương pháp như: (4)    Chưa mãn kinh: Tamoxifen, có thể kết hợp cắt chức năng buồng trứng (bằng phẫu thuật, xạ trị hay bằng thuốc).'
+
+MERGE (o1:treatment {id: 'xạ_trị_treatment'})
+MERGE (o2:disease {id: 'ung_thư_vú_giai_đoạn_iv_disease'})
+MERGE (o1)-[r79:treatedBy]->(o2)
+SET r79.text = 'Tùy theo tình trạng mãn kinh, bác sĩ sẽ lựa chọn các phương pháp như: (4)    Chưa mãn kinh: Tamoxifen, có thể kết hợp cắt chức năng buồng trứng (bằng phẫu thuật, xạ trị hay bằng thuốc).'
+
+MERGE (o1:treatment {id: 'thuốc_ức_chế_aromatase_treatment'})
+MERGE (o2:disease {id: 'ung_thư_vú_giai_đoạn_iv_disease'})
+MERGE (o1)-[r80:treatedBy]->(o2)
+SET r80.text = 'Đã mãn kinh hoặc đã cắt chức năng buồng trứng: Sử dụng nhóm thuốc ức chế Aromatase (Letrozole, Anastrozol, Exemestan); cân nhắc sử dụng thêm thuốc Biphosphonate nếu cần.'
+
+MERGE (o1:treatment {id: 'letrozole_treatment'})
+MERGE (o2:disease {id: 'ung_thư_vú_giai_đoạn_iv_disease'})
+MERGE (o1)-[r81:treatedBy]->(o2)
+SET r81.text = 'Đã mãn kinh hoặc đã cắt chức năng buồng trứng: Sử dụng nhóm thuốc ức chế Aromatase (Letrozole, Anastrozol, Exemestan); cân nhắc sử dụng thêm thuốc Biphosphonate nếu cần.'
+
+MERGE (o1:treatment {id: 'anastrozol_treatment'})
+MERGE (o2:disease {id: 'ung_thư_vú_giai_đoạn_iv_disease'})
+MERGE (o1)-[r82:treatedBy]->(o2)
+SET r82.text = 'Đã mãn kinh hoặc đã cắt chức năng buồng trứng: Sử dụng nhóm thuốc ức chế Aromatase (Letrozole, Anastrozol, Exemestan); cân nhắc sử dụng thêm thuốc Biphosphonate nếu cần.'
+
+MERGE (o1:treatment {id: 'exemestan_treatment'})
+MERGE (o2:disease {id: 'ung_thư_vú_giai_đoạn_iv_disease'})
+MERGE (o1)-[r83:treatedBy]->(o2)
+SET r83.text = 'Đã mãn kinh hoặc đã cắt chức năng buồng trứng: Sử dụng nhóm thuốc ức chế Aromatase (Letrozole, Anastrozol, Exemestan); cân nhắc sử dụng thêm thuốc Biphosphonate nếu cần.'
+
+MERGE (o1:treatment {id: 'biphosphonate_treatment'})
+MERGE (o2:disease {id: 'ung_thư_vú_giai_đoạn_iv_disease'})
+MERGE (o1)-[r84:treatedBy]->(o2)
+SET r84.text = 'Đã mãn kinh hoặc đã cắt chức năng buồng trứng: Sử dụng nhóm thuốc ức chế Aromatase (Letrozole, Anastrozol, Exemestan); cân nhắc sử dụng thêm thuốc Biphosphonate nếu cần.'
+
+MERGE (o1:treatment {id: 'hóa_trị_treatment'})
+MERGE (o2:disease {id: 'ung_thư_vú_giai_đoạn_iv_disease'})
+MERGE (o1)-[r85:treatedBy]->(o2)
+SET r85.text = 'Nếu thụ thể nội tiết ER PR âm, thụ thể HER2 âm (còn gọi là thể tam âm): Hóa trị là phương pháp điều trị chính.'
+
+MERGE (o1:treatment {id: 'liệu_pháp_miễn_dịch_treatment'})
+MERGE (o2:disease {id: 'ung_thư_vú_giai_đoạn_iv_disease'})
+MERGE (o1)-[r86:treatedBy]->(o2)
+SET r86.text = 'Có thể phối hợp liệu pháp miễn dịch (nếu PD-L1 dương), hoặc phối hợp thuốc có hoạt chất ức chế PARP (Olaparib hoặc Talazoparib) (nếu đột biến BRCA dương),'
+
+MERGE (o1:treatment {id: 'thuốc_có_hoạt_chất_ức_chế_parp_treatment'})
+MERGE (o2:disease {id: 'ung_thư_vú_giai_đoạn_iv_disease'})
+MERGE (o1)-[r87:treatedBy]->(o2)
+SET r87.text = 'Có thể phối hợp liệu pháp miễn dịch (nếu PD-L1 dương), hoặc phối hợp thuốc có hoạt chất ức chế PARP (Olaparib hoặc Talazoparib) (nếu đột biến BRCA dương),'
+
+MERGE (o1:treatment {id: 'olaparib_treatment'})
+MERGE (o2:disease {id: 'ung_thư_vú_giai_đoạn_iv_disease'})
+MERGE (o1)-[r88:treatedBy]->(o2)
+SET r88.text = 'Có thể phối hợp liệu pháp miễn dịch (nếu PD-L1 dương), hoặc phối hợp thuốc có hoạt chất ức chế PARP (Olaparib hoặc Talazoparib) (nếu đột biến BRCA dương),'
+
+MERGE (o1:treatment {id: 'talazoparib_treatment'})
+MERGE (o2:disease {id: 'ung_thư_vú_giai_đoạn_iv_disease'})
+MERGE (o1)-[r89:treatedBy]->(o2)
+SET r89.text = 'Có thể phối hợp liệu pháp miễn dịch (nếu PD-L1 dương), hoặc phối hợp thuốc có hoạt chất ức chế PARP (Olaparib hoặc Talazoparib) (nếu đột biến BRCA dương),'
+
+MERGE (o1:treatment {id: 'hóa_trị_treatment'})
+MERGE (o2:disease {id: 'ung_thư_vú_giai_đoạn_iv_disease'})
+MERGE (o1)-[r90:treatedBy]->(o2)
+SET r90.text = 'Nếu thụ thể HER2 dương: L
+iệu pháp điều trị thường là hóa trị kết hợp với thuốc kháng HER2 (Trastuzumab có thể kèm với Pertuzumab).'
+
+MERGE (o1:treatment {id: 'thuốc_kháng_her2_treatment'})
+MERGE (o2:disease {id: 'ung_thư_vú_giai_đoạn_iv_disease'})
+MERGE (o1)-[r91:treatedBy]->(o2)
+SET r91.text = 'Nếu thụ thể HER2 dương: L
+iệu pháp điều trị thường là hóa trị kết hợp với thuốc kháng HER2 (Trastuzumab có thể kèm với Pertuzumab).'
+
+MERGE (o1:treatment {id: 'trastuzumab_treatment'})
+MERGE (o2:disease {id: 'ung_thư_vú_giai_đoạn_iv_disease'})
+MERGE (o1)-[r92:treatedBy]->(o2)
+SET r92.text = 'Nếu thụ thể HER2 dương: L
+iệu pháp điều trị thường là hóa trị kết hợp với thuốc kháng HER2 (Trastuzumab có thể kèm với Pertuzumab).'
+
+MERGE (o1:treatment {id: 'pertuzumab_treatment'})
+MERGE (o2:disease {id: 'ung_thư_vú_giai_đoạn_iv_disease'})
+MERGE (o1)-[r93:treatedBy]->(o2)
+SET r93.text = 'Nếu thụ thể HER2 dương: L
+iệu pháp điều trị thường là hóa trị kết hợp với thuốc kháng HER2 (Trastuzumab có thể kèm với Pertuzumab).'
+
+MERGE (o1:treatment {id: 'liệu_pháp_nội_tiết_treatment'})
+MERGE (o2:disease {id: 'ung_thư_vú_giai_đoạn_iv_disease'})
+MERGE (o1)-[r94:treatedBy]->(o2)
+SET r94.text = 'Liệu pháp nội tiết có thể được kết hợp nếu thụ thể nội tiết ER PR dương.'
+
+MERGE (o1:treatment {id: 'thuốc_liên_hợp_kháng_thể_fam-trastuzumab_deruxtecan_treatment'})
+MERGE (o2:disease {id: 'ung_thư_vú_giai_đoạn_iv_disease'})
+MERGE (o1)-[r95:treatedBy]->(o2)
+SET r95.text = 'Nếu thụ thể HER2 âm: C
+ó thể cân nhắc điều trị
+với thuốc liên hợp kháng thể Fam-Trastuzumab Deruxtecan.'
+
+MERGE (o1:treatment {id: 'thuốc_có_hoạt_chất_ức_chế_parp_treatment'})
+MERGE (o2:disease {id: 'ung_thư_vú_giai_đoạn_iv_disease'})
+MERGE (o1)-[r96:treatedBy]->(o2)
+SET r96.text = 'Nếu thụ thể HER2 âm, có đột biến gen BRCA trên mẫu máu xét nghiệm: Đ
+iều trị bằng thuốc có hoạt chất ức chế PARP, chẳng hạn như Olaparib hoặc Talazoparib.'
+
+MERGE (o1:treatment {id: 'olaparib_treatment'})
+MERGE (o2:disease {id: 'ung_thư_vú_giai_đoạn_iv_disease'})
+MERGE (o1)-[r97:treatedBy]->(o2)
+SET r97.text = 'Nếu thụ thể HER2 âm, có đột biến gen BRCA trên mẫu máu xét nghiệm: Đ
+iều trị bằng thuốc có hoạt chất ức chế PARP, chẳng hạn như Olaparib hoặc Talazoparib.'
+
+MERGE (o1:treatment {id: 'talazoparib_treatment'})
+MERGE (o2:disease {id: 'ung_thư_vú_giai_đoạn_iv_disease'})
+MERGE (o1)-[r98:treatedBy]->(o2)
+SET r98.text = 'Nếu thụ thể HER2 âm, có đột biến gen BRCA trên mẫu máu xét nghiệm: Đ
+iều trị bằng thuốc có hoạt chất ức chế PARP, chẳng hạn như Olaparib hoặc Talazoparib.'
+
+MERGE (o1:treatment {id: 'liệu_pháp_nội_tiết_treatment'})
+MERGE (o2:disease {id: 'ung_thư_vú_giai_đoạn_iv_disease'})
+MERGE (o1)-[r99:treatedBy]->(o2)
+SET r99.text = 'Có thể kết hợp liệu pháp nội tiết (nếu thụ thể nội tiết ER PR dương tính) và thuốc hóa trị.'
+
+MERGE (o1:treatment {id: 'thuốc_hóa_trị_treatment'})
+MERGE (o2:disease {id: 'ung_thư_vú_giai_đoạn_iv_disease'})
+MERGE (o1)-[r100:treatedBy]->(o2)
+SET r100.text = 'Có thể kết hợp liệu pháp nội tiết (nếu thụ thể nội tiết ER PR dương tính) và thuốc hóa trị.'
+
+MERGE (o1:treatment {id: 'chất_ức_chế_pik3_treatment'})
+MERGE (o2:disease {id: 'ung_thư_vú_giai_đoạn_iv_disease'})
+MERGE (o1)-[r101:treatedBy]->(o2)
+SET r101.text = 'Nếu thụ thể HER2 âm, có đột biến gen PIK3CA trên mô u (hoặc trong máu), thụ thể nội tiết ER dương: C
+hất ức chế PIK3 có thể được dùng cùng với Fulvestrant cho phụ nữ sau mãn kinh.'
+
+MERGE (o1:treatment {id: 'fulvestrant_treatment'})
+MERGE (o2:disease {id: 'ung_thư_vú_giai_đoạn_iv_disease'})
+MERGE (o1)-[r102:treatedBy]->(o2)
+SET r102.text = 'Nếu thụ thể HER2 âm, có đột biến gen PIK3CA trên mô u (hoặc trong máu), thụ thể nội tiết ER dương: C
+hất ức chế PIK3 có thể được dùng cùng với Fulvestrant cho phụ nữ sau mãn kinh.'
+
+MERGE (o1:treatment {id: 'giảm_nhẹ_triệu_chứng_treatment'})
+MERGE (o2:disease {id: 'ung_thư_vú_giai_đoạn_iv_disease'})
+MERGE (o1)-[r103:treatedBy]->(o2)
+SET r103.text = 'Mục đích điều trị ung thư vú giai đoạn IV nhằm giảm nhẹ triệu chứng và kéo dài thời gian sống cho người bệnh.'
+
+MERGE (o1:treatment {id: 'kéo_dài_thời_gian_sống_treatment'})
+MERGE (o2:disease {id: 'ung_thư_vú_giai_đoạn_iv_disease'})
+MERGE (o1)-[r104:treatedBy]->(o2)
+SET r104.text = 'Mục đích điều trị ung thư vú giai đoạn IV nhằm giảm nhẹ triệu chứng và kéo dài thời gian sống cho người bệnh.'
+
+MERGE (o1:treatment {id: 'xạ_trị_treatment'})
+MERGE (o2:disease {id: 'ung_thư_vú_giai_đoạn_iv_disease'})
+MERGE (o1)-[r105:treatedBy]->(o2)
+SET r105.text = 'Xạ trị và/hoặc phẫu thuật có thể được dùng trong một số trường hợp nhằm giảm nhẹ triệu chứng tại chỗ/tại vùng, chẳng hạn như:'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_treatment'})
+MERGE (o2:disease {id: 'ung_thư_vú_giai_đoạn_iv_disease'})
+MERGE (o1)-[r106:treatedBy]->(o2)
+SET r106.text = 'Xạ trị và/hoặc phẫu thuật có thể được dùng trong một số trường hợp nhằm giảm nhẹ triệu chứng tại chỗ/tại vùng, chẳng hạn như:'

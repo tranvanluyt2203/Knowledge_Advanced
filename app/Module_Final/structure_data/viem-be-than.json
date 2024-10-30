@@ -1,0 +1,1354 @@
+[
+    {
+        "text": "Viêm bể thận là bệnh lý nhiễm khuẩn đường tiết niệu thường gặp.",
+        "head": "Viêm bể thận",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Nhiễm khuẩn đường tiết niệu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bệnh khi không được phát hiện sớm và điều trị đúng cách có thể dẫn tới nhiều biến chứng nguy hiểm.",
+        "head": "Viêm bể thận",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Không được phát hiện sớm và điều trị đúng cách",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Viêm bể thận (pyelonephritis) thường xảy ra khi vi khuẩn xâm nhập gây nhiễm trùng, tác nhân phổ biến nhất là vi khuẩn gram âm (1)",
+        "head": "Viêm bể thận",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Vi khuẩn xâm nhập gây nhiễm trùng",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Vi khuẩn gram âm",
+        "head": "Vi khuẩn gram âm",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Viêm bể thận",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Viêm bể thận cấp là bệnh lý nhiễm khuẩn đường tiết niệu khá thường gặp, gây triệu chứng đột ngột, nghiêm trọng.",
+        "head": "Viêm bể thận cấp",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Nhiễm khuẩn đường tiết niệu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Viêm bể thận cấp là bệnh lý nhiễm khuẩn đường tiết niệu khá thường gặp, gây triệu chứng đột ngột, nghiêm trọng.",
+        "head": "Viêm bể thận cấp",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Triệu chứng đột ngột, nghiêm trọng",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Vi khuẩn có thể đi ngược từ bàng quang lên niệu quản đến đài bể thận hoặc xâm nhập theo đường máu khi bệnh nhân bị nhiễm khuẩn huyết.",
+        "head": "Vi khuẩn",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Viêm bể thận",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Vi khuẩn có thể đi ngược từ bàng quang lên niệu quản đến đài bể thận hoặc xâm nhập theo đường máu khi bệnh nhân bị nhiễm khuẩn huyết.",
+        "head": "Vi khuẩn",
+        "head_type": "cause",
+        "relation": "locatedIn",
+        "tail": "Bàng quang",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Vi khuẩn có thể đi ngược từ bàng quang lên niệu quản đến đài bể thận hoặc xâm nhập theo đường máu khi bệnh nhân bị nhiễm khuẩn huyết.",
+        "head": "Vi khuẩn",
+        "head_type": "cause",
+        "relation": "locatedIn",
+        "tail": "Niệu quản",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Vi khuẩn có thể đi ngược từ bàng quang lên niệu quản đến đài bể thận hoặc xâm nhập theo đường máu khi bệnh nhân bị nhiễm khuẩn huyết.",
+        "head": "Vi khuẩn",
+        "head_type": "cause",
+        "relation": "locatedIn",
+        "tail": "Đài bể thận",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Vi khuẩn có thể đi ngược từ bàng quang lên niệu quản đến đài bể thận hoặc xâm nhập theo đường máu khi bệnh nhân bị nhiễm khuẩn huyết.",
+        "head": "Vi khuẩn",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Nhiễm khuẩn huyết",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu không được chữa trị kịp thời có thể dẫn tới tử vong.",
+        "head": "Viêm bể thận",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Không được chữa trị kịp thời",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Viêm thận bể thận mạn là tình trạng tổn thương mạn tính ở nhu mô, mô kẽ của thận, và là hậu quả của quá trình viêm đài bể thận vào thận, lặp đi lặp lại hoặc kéo dài dai dẳng, làm hủy hoại và xơ hoá tổ chức thận, dẫn đến suy thận.",
+        "head": "Viêm thận bể thận mạn",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Nhu mô, mô kẽ của thận",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Viêm thận bể thận mạn là tình trạng tổn thương mạn tính ở nhu mô, mô kẽ của thận, và là hậu quả của quá trình viêm đài bể thận vào thận, lặp đi lặp lại hoặc kéo dài dai dẳng, làm hủy hoại và xơ hoá tổ chức thận, dẫn đến suy thận.",
+        "head": "Viêm thận bể thận mạn",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Viêm đài bể thận vào thận, lặp đi lặp lại hoặc kéo dài dai dẳng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Viêm thận bể thận mạn là tình trạng tổn thương mạn tính ở nhu mô, mô kẽ của thận, và là hậu quả của quá trình viêm đài bể thận vào thận, lặp đi lặp lại hoặc kéo dài dai dẳng, làm hủy hoại và xơ hoá tổ chức thận, dẫn đến suy thận.",
+        "head": "Viêm thận bể thận mạn",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Suy thận",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Dạng mạn tính hiếm gặp, nhưng thường xuyên được phát hiện ở trẻ em hoặc những người bị tắc nghẽn đường tiểu mắc phải hoặc bẩm sinh.",
+        "head": "Viêm thận bể thận mạn",
+        "head_type": "disease",
+        "relation": "associatedWith",
+        "tail": "Trẻ em",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Dạng mạn tính hiếm gặp, nhưng thường xuyên được phát hiện ở trẻ em hoặc những người bị tắc nghẽn đường tiểu mắc phải hoặc bẩm sinh.",
+        "head": "Viêm thận bể thận mạn",
+        "head_type": "disease",
+        "relation": "associatedWith",
+        "tail": "Tắc nghẽn đường tiểu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các triệu chứng thường xuất hiện trong khoảng 2 ngày kể từ khi nhiễm trùng.",
+        "head": "Triệu chứng",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Nhiễm trùng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Sốt trên 38,9°C.",
+        "head": "Sốt trên 38,9°C",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm bể thận",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đau ở bụng, lưng, bên hông hoặc bẹn.",
+        "head": "Đau ở bụng, lưng, bên hông hoặc bẹn",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm bể thận",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Thường đau lệch 1 bên",
+        "head": "Đau lệch 1 bên",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm bể thận",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tiểu đau, tiểu rát.",
+        "head": "Tiểu đau, tiểu rát",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm bể thận",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nước tiểu đục.",
+        "head": "Nước tiểu đục",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm bể thận",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Xuất hiện mủ hoặc máu trong nước tiểu.",
+        "head": "Xuất hiện mủ hoặc máu trong nước tiểu",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm bể thận",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tiểu gấp hoặc tiểu dắt.",
+        "head": "Tiểu gấp hoặc tiểu dắt",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm bể thận",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nước tiểu có mùi tanh.",
+        "head": "Nước tiểu có mùi tanh",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm bể thận",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ngoài ra, người bệnh có thể gặp phải các triệu chứng đi kèm như gai rét, sốt rét run, ớn lạnh, buồn nôn, nôn mửa, đau nhức, mệt mỏi, rối loạn tâm thần (mental confusion).",
+        "head": "Gai rét, sốt rét run, ớn lạnh, buồn nôn, nôn mửa, đau nhức, mệt mỏi, rối loạn tâm thần",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm bể thận",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các triệu chứng ở trẻ em và người lớn tuổi có thể khác với những người khác.",
+        "head": "Triệu chứng",
+        "head_type": "symptom",
+        "relation": "associatedWith",
+        "tail": "Trẻ em",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Các triệu chứng ở trẻ em và người lớn tuổi có thể khác với những người khác.",
+        "head": "Triệu chứng",
+        "head_type": "symptom",
+        "relation": "associatedWith",
+        "tail": "Người lớn tuổi",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Ví dụ, rối loạn tâm thần thường gặp ở người lớn tuổi và thường là triệu chứng duy nhất của họ.",
+        "head": "Rối loạn tâm thần",
+        "head_type": "symptom",
+        "relation": "associatedWith",
+        "tail": "Người lớn tuổi",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Những người bị viêm thận bể thận mạn tính có thể chỉ gặp các triệu chứng nhẹ hoặc thậm chí có thể hoàn toàn không có các triệu chứng đáng chú ý dẫn đến bỏ sót tình trạng bệnh.",
+        "head": "Viêm thận bể thận mạn",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Triệu chứng nhẹ",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Viêm thận bể thận là nhiễm trùng bắt đầu ở đường tiết niệu dưới, dưới dạng nhiễm trùng đường tiết niệu (như viêm bàng quang cấp).",
+        "head": "Viêm thận bể thận",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Nhiễm trùng đường tiết niệu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Viêm thận bể thận là nhiễm trùng bắt đầu ở đường tiết niệu dưới, dưới dạng nhiễm trùng đường tiết niệu (như viêm bàng quang cấp).",
+        "head": "Viêm thận bể thận",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Viêm bàng quang cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Vi khuẩn xâm nhập vào cơ thể qua niệu đạo và bắt đầu sinh sôi và lan lên bàng quang.",
+        "head": "Vi khuẩn",
+        "head_type": "cause",
+        "relation": "causes",
+        "tail": "Viêm thận bể thận",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Vi khuẩn xâm nhập vào cơ thể qua niệu đạo và bắt đầu sinh sôi và lan lên bàng quang.",
+        "head": "Vi khuẩn",
+        "head_type": "cause",
+        "relation": "locatedIn",
+        "tail": "Niệu đạo",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Vi khuẩn xâm nhập vào cơ thể qua niệu đạo và bắt đầu sinh sôi và lan lên bàng quang.",
+        "head": "Vi khuẩn",
+        "head_type": "cause",
+        "relation": "locatedIn",
+        "tail": "Bàng quang",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Từ đó, vi khuẩn trào ngược qua niệu quản đến thận.",
+        "head": "Vi khuẩn",
+        "head_type": "cause",
+        "relation": "locatedIn",
+        "tail": "Niệu quản",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Từ đó, vi khuẩn trào ngược qua niệu quản đến thận.",
+        "head": "Vi khuẩn",
+        "head_type": "cause",
+        "relation": "locatedIn",
+        "tail": "Thận",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Vi khuẩn gây bệnh là thường là những vi khuẩn gram âm như E.Coli, Klebsiella, Proteus mirabilis và Enterobacter.",
+        "head": "E.Coli",
+        "head_type": "cause",
+        "relation": "causes",
+        "tail": "Viêm thận bể thận",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Vi khuẩn gây bệnh là thường là những vi khuẩn gram âm như E.Coli, Klebsiella, Proteus mirabilis và Enterobacter.",
+        "head": "Klebsiella",
+        "head_type": "cause",
+        "relation": "causes",
+        "tail": "Viêm thận bể thận",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Vi khuẩn gây bệnh là thường là những vi khuẩn gram âm như E.Coli, Klebsiella, Proteus mirabilis và Enterobacter.",
+        "head": "Proteus mirabilis",
+        "head_type": "cause",
+        "relation": "causes",
+        "tail": "Viêm thận bể thận",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Vi khuẩn gây bệnh là thường là những vi khuẩn gram âm như E.Coli, Klebsiella, Proteus mirabilis và Enterobacter.",
+        "head": "Enterobacter",
+        "head_type": "cause",
+        "relation": "causes",
+        "tail": "Viêm thận bể thận",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ngoài ra, những vi khuẩn Gram dương vẫn có khả năng gây bệnh nhưng hiếm gặp hơn như tụ cầu, liên cầu…",
+        "head": "Tụ cầu",
+        "head_type": "cause",
+        "relation": "causes",
+        "tail": "Viêm thận bể thận",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ngoài ra, những vi khuẩn Gram dương vẫn có khả năng gây bệnh nhưng hiếm gặp hơn như tụ cầu, liên cầu…",
+        "head": "Liên cầu",
+        "head_type": "cause",
+        "relation": "causes",
+        "tail": "Viêm thận bể thận",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bất kỳ bất thường nào làm gián đoạn dòng chảy bình thường của nước tiểu đều có khả năng gây viêm thận bể thận cấp.",
+        "head": "Bất thường dòng chảy nước tiểu",
+        "head_type": "cause",
+        "relation": "causes",
+        "tail": "Viêm thận bể thận cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Chẳng hạn như người có đường tiết niệu bất thường về kích thước hoặc hình dạng có thể đối mặt với nguy cơ viêm thận bể thận cao.",
+        "head": "Bất thường đường tiết niệu",
+        "head_type": "cause",
+        "relation": "causes",
+        "tail": "Viêm thận bể thận",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ngoài ra, niệu đạo của phụ nữ ngắn hơn nam giới.",
+        "head": "Niệu đạo ngắn",
+        "head_type": "cause",
+        "relation": "causes",
+        "tail": "Viêm thận bể thận",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Điều này khiến phụ nữ dễ bị nhiễm trùng thận và có nguy cơ cao bị viêm thận bể thận cấp.",
+        "head": "Nhiễm trùng thận",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Viêm thận bể thận cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Những yếu tố làm tăng nguy cơ mắc viêm thận bể thận cấp gồm:  Người bệnh sỏi thận.",
+        "head": "Sỏi thận",
+        "head_type": "cause",
+        "relation": "causes",
+        "tail": "Viêm thận bể thận cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Những yếu tố làm tăng nguy cơ mắc viêm thận bể thận cấp gồm:  Người có các bất thường ở thận hoặc bàng quang.",
+        "head": "Bất thường ở thận",
+        "head_type": "cause",
+        "relation": "causes",
+        "tail": "Viêm thận bể thận cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Những yếu tố làm tăng nguy cơ mắc viêm thận bể thận cấp gồm:  Người có các bất thường ở thận hoặc bàng quang.",
+        "head": "Bất thường ở bàng quang",
+        "head_type": "cause",
+        "relation": "causes",
+        "tail": "Viêm thận bể thận cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Những yếu tố làm tăng nguy cơ mắc viêm thận bể thận cấp gồm:  Người cao tuổi.",
+        "head": "Tuổi già",
+        "head_type": "cause",
+        "relation": "causes",
+        "tail": "Viêm thận bể thận cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Những yếu tố làm tăng nguy cơ mắc viêm thận bể thận cấp gồm:  Người có hệ miễn dịch bị suy giảm như người bệnh đái tháo đường, HIV/AIDS, ung thư.",
+        "head": "Suy giảm hệ miễn dịch",
+        "head_type": "cause",
+        "relation": "causes",
+        "tail": "Viêm thận bể thận cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Những yếu tố làm tăng nguy cơ mắc viêm thận bể thận cấp gồm:  Người có hệ miễn dịch bị suy giảm như người bệnh đái tháo đường, HIV/AIDS, ung thư.",
+        "head": "Bệnh đái tháo đường",
+        "head_type": "disease",
+        "relation": "causes",
+        "tail": "Viêm thận bể thận cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Những yếu tố làm tăng nguy cơ mắc viêm thận bể thận cấp gồm:  Người có hệ miễn dịch bị suy giảm như người bệnh đái tháo đường, HIV/AIDS, ung thư.",
+        "head": "HIV/AIDS",
+        "head_type": "disease",
+        "relation": "causes",
+        "tail": "Viêm thận bể thận cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Những yếu tố làm tăng nguy cơ mắc viêm thận bể thận cấp gồm:  Người có hệ miễn dịch bị suy giảm như người bệnh đái tháo đường, HIV/AIDS, ung thư.",
+        "head": "Ung thư",
+        "head_type": "disease",
+        "relation": "causes",
+        "tail": "Viêm thận bể thận cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Những yếu tố làm tăng nguy cơ mắc viêm thận bể thận cấp gồm:  Người bị trào ngược bàng quang niệu quản (vesicoureteral reflux) hoặc có bất thường co bóp bàng quang niệu quản (tình trạng một lượng nhỏ nước tiểu trào ngược từ bàng quang vào niệu quản và thận).",
+        "head": "Trào ngược bàng quang niệu quản",
+        "head_type": "cause",
+        "relation": "causes",
+        "tail": "Viêm thận bể thận cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Những yếu tố làm tăng nguy cơ mắc viêm thận bể thận cấp gồm:  Người bị trào ngược bàng quang niệu quản (vesicoureteral reflux) hoặc có bất thường co bóp bàng quang niệu quản (tình trạng một lượng nhỏ nước tiểu trào ngược từ bàng quang vào niệu quản và thận).",
+        "head": "Bất thường co bóp bàng quang niệu quản",
+        "head_type": "cause",
+        "relation": "causes",
+        "tail": "Viêm thận bể thận cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Những yếu tố làm tăng nguy cơ mắc viêm thận bể thận cấp gồm:  Người bị tăng sinh lành tính tuyến tiền liệt.",
+        "head": "Tăng sinh lành tính tuyến tiền liệt",
+        "head_type": "cause",
+        "relation": "causes",
+        "tail": "Viêm thận bể thận cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các yếu tố khác có thể khiến bạn dễ mắc bệnh gồm:  Sử dụng ống thông tiểu (catheter).",
+        "head": "Sử dụng ống thông tiểu",
+        "head_type": "cause",
+        "relation": "causes",
+        "tail": "Viêm thận bể thận",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các yếu tố khác có thể khiến bạn dễ mắc bệnh gồm:  Nội soi bàng quang.",
+        "head": "Nội soi bàng quang",
+        "head_type": "cause",
+        "relation": "causes",
+        "tail": "Viêm thận bể thận",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các yếu tố khác có thể khiến bạn dễ mắc bệnh gồm:  Phẫu thuật tiết niệu.",
+        "head": "Phẫu thuật tiết niệu",
+        "head_type": "cause",
+        "relation": "causes",
+        "tail": "Viêm thận bể thận",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các yếu tố khác có thể khiến bạn dễ mắc bệnh gồm:  Một số loại thuốc.",
+        "head": "Thuốc",
+        "head_type": "cause",
+        "relation": "causes",
+        "tail": "Viêm thận bể thận",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các yếu tố khác có thể khiến bạn dễ mắc bệnh gồm:  Tổn thương dây thần kinh hoặc tủy sống.",
+        "head": "Tổn thương dây thần kinh",
+        "head_type": "cause",
+        "relation": "causes",
+        "tail": "Viêm thận bể thận",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các yếu tố khác có thể khiến bạn dễ mắc bệnh gồm:  Tổn thương dây thần kinh hoặc tủy sống.",
+        "head": "Tổn thương tủy sống",
+        "head_type": "cause",
+        "relation": "causes",
+        "tail": "Viêm thận bể thận",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các dạng mạn tính của bệnh phổ biến ở những người bị tắc nghẽn đường tiết niệu (urinary obstructions).",
+        "head": "Viêm thận bể thận mạn tính",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Tắc nghẽn đường tiết niệu",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Nguyên nhân có thể là do nhiễm trùng tiểu, trào ngược bàng quang niệu quản, bất thường ở đường tiết niệu (anatomical anomalies).",
+        "head": "Viêm thận bể thận mạn tính",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Nhiễm trùng tiểu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nguyên nhân có thể là do nhiễm trùng tiểu, trào ngược bàng quang niệu quản, bất thường ở đường tiết niệu (anatomical anomalies).",
+        "head": "Viêm thận bể thận mạn tính",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Trào ngược bàng quang niệu quản",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Nguyên nhân có thể là do nhiễm trùng tiểu, trào ngược bàng quang niệu quản, bất thường ở đường tiết niệu (anatomical anomalies).",
+        "head": "Viêm thận bể thận mạn tính",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Bất thường ở đường tiết niệu",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Hơn nữa, viêm thận bể thận mạn tính thường gặp ở trẻ em hơn người lớn.",
+        "head": "Viêm thận bể thận mạn tính",
+        "head_type": "disease",
+        "relation": "associatedWith",
+        "tail": "Trẻ em",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Viêm bể thận nếu không được chữa trị kịp thời có thể dẫn tới những biến chứng nguy hiểm như:  Áp xe thận: Đây là tình trạng xuất hiện ổ mủ quanh thận do nhiễm trùng những mô mềm xung quanh thận.",
+        "head": "Viêm bể thận",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Áp xe thận",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Viêm bể thận nếu không được chữa trị kịp thời có thể dẫn tới những biến chứng nguy hiểm như:  Áp xe thận: Đây là tình trạng xuất hiện ổ mủ quanh thận do nhiễm trùng những mô mềm xung quanh thận.",
+        "head": "Áp xe thận",
+        "head_type": "disease",
+        "relation": "locatedIn",
+        "tail": "Thận",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Viêm bể thận nếu không được chữa trị kịp thời có thể dẫn tới những biến chứng nguy hiểm như:  Áp xe thận: Đây là tình trạng xuất hiện ổ mủ quanh thận do nhiễm trùng những mô mềm xung quanh thận.",
+        "head": "Áp xe thận",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Nhiễm trùng",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Viêm bể thận nếu không được chữa trị kịp thời có thể dẫn tới những biến chứng nguy hiểm như:  Nhiễm khuẩn huyết: Đây là tình trạng vi khuẩn tràn vào máu.",
+        "head": "Viêm bể thận",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Nhiễm khuẩn huyết",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Viêm bể thận nếu không được chữa trị kịp thời có thể dẫn tới những biến chứng nguy hiểm như:  Nhiễm khuẩn huyết: Đây là tình trạng vi khuẩn tràn vào máu.",
+        "head": "Nhiễm khuẩn huyết",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Vi khuẩn",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Viêm bể thận nếu không được chữa trị kịp thời có thể dẫn tới những biến chứng nguy hiểm như:  Suy thận cấp: Biến chứng nguy hiểm của viêm thận bể thận.",
+        "head": "Viêm bể thận",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Suy thận cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Viêm bể thận nếu không được chữa trị kịp thời có thể dẫn tới những biến chứng nguy hiểm như:  Suy thận cấp: Biến chứng nguy hiểm của viêm thận bể thận.",
+        "head": "Suy thận cấp",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Thận",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Biểu hiện là thiểu niệu hoặc vô niệu, xét nghiệm máu nồng độ ure/creatinin tăng cao.",
+        "head": "Thiểu niệu",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Suy thận cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Biểu hiện là thiểu niệu hoặc vô niệu, xét nghiệm máu nồng độ ure/creatinin tăng cao.",
+        "head": "Vô niệu",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Suy thận cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Biểu hiện là thiểu niệu hoặc vô niệu, xét nghiệm máu nồng độ ure/creatinin tăng cao.",
+        "head": "Xét nghiệm máu nồng độ ure/creatinin tăng cao",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "Suy thận cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Suy thận cấp có khả năng gây ra những biến chứng như tăng huyết áp cấp hoặc phù phổi cấp, gây nguy hiểm tới tính mạng.",
+        "head": "Suy thận cấp",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Tăng huyết áp cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Suy thận cấp có khả năng gây ra những biến chứng như tăng huyết áp cấp hoặc phù phổi cấp, gây nguy hiểm tới tính mạng.",
+        "head": "Suy thận cấp",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Phù phổi cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu trì hoãn điều trị có thể dẫn tới suy thận mạn.",
+        "head": "Suy thận cấp",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Suy thận mạn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Hoại tử nhú thận: Nhiễm trùng nặng kéo dài có thể làm hoại tử những nhú thận, khiến toàn bộ hay một phần nhú thận bị chết.",
+        "head": "Viêm bể thận",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Hoại tử nhú thận",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Hoại tử nhú thận: Nhiễm trùng nặng kéo dài có thể làm hoại tử những nhú thận, khiến toàn bộ hay một phần nhú thận bị chết.",
+        "head": "Hoại tử nhú thận",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Nhú thận",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Hoại tử nhú thận: Nhiễm trùng nặng kéo dài có thể làm hoại tử những nhú thận, khiến toàn bộ hay một phần nhú thận bị chết.",
+        "head": "Hoại tử nhú thận",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Nhiễm trùng",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Nhú thận là vị trí mở của ống góp vào thận.",
+        "head": "Nhú thận",
+        "head_type": "organ",
+        "relation": "locatedIn",
+        "tail": "Thận",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Đây là nơi nước tiểu chảy vào niệu quản.",
+        "head": "Nước tiểu",
+        "head_type": "cause",
+        "relation": "locatedIn",
+        "tail": "Niệu quản",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Khi hoại tử, nhú thận bong ra rồi theo nước tiểu gây tắc nghẽn niệu quản hay niệu đạo.",
+        "head": "Hoại tử nhú thận",
+        "head_type": "disease",
+        "relation": "causes",
+        "tail": "Tắc nghẽn niệu quản",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Khi hoại tử, nhú thận bong ra rồi theo nước tiểu gây tắc nghẽn niệu quản hay niệu đạo.",
+        "head": "Hoại tử nhú thận",
+        "head_type": "disease",
+        "relation": "causes",
+        "tail": "Tắc nghẽn niệu đạo",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Nếu không được can thiệp, tình trạng này sẽ là nguyên nhân trở nặng bệnh khi ứ mủ bể thận.",
+        "head": "Ứ mủ bể thận",
+        "head_type": "disease",
+        "relation": "causes",
+        "tail": "Viêm thận bể thận",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Từ đó, người bệnh phải đối mặt với nguy cơ suy thận cấp rất cao.",
+        "head": "Ứ mủ bể thận",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Suy thận cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Kháng kháng sinh: Biến chứng này có thể là do bản chất loại vi trùng đa đề kháng và do sử dụng kháng sinh không phù hợp, không đủ liều, không đủ lâu.",
+        "head": "Viêm thận bể thận",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Kháng kháng sinh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Kháng kháng sinh: Biến chứng này có thể là do bản chất loại vi trùng đa đề kháng và do sử dụng kháng sinh không phù hợp, không đủ liều, không đủ lâu.",
+        "head": "Kháng kháng sinh",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Vi trùng đa đề kháng",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Kháng kháng sinh: Biến chứng này có thể là do bản chất loại vi trùng đa đề kháng và do sử dụng kháng sinh không phù hợp, không đủ liều, không đủ lâu.",
+        "head": "Kháng kháng sinh",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Sử dụng kháng sinh không phù hợp",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Kháng kháng sinh: Biến chứng này có thể là do bản chất loại vi trùng đa đề kháng và do sử dụng kháng sinh không phù hợp, không đủ liều, không đủ lâu.",
+        "head": "Kháng kháng sinh",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Sử dụng kháng sinh không đủ liều",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Kháng kháng sinh: Biến chứng này có thể là do bản chất loại vi trùng đa đề kháng và do sử dụng kháng sinh không phù hợp, không đủ liều, không đủ lâu.",
+        "head": "Kháng kháng sinh",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Sử dụng kháng sinh không đủ lâu",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Suy thận mạn: Viêm bể thận cấp có kháng kháng sinh, tái viêm thường xuyên, khi không được điều trị kịp thời và đúng cách, rất dẫn đến viêm thận bể thận mạn, suy thận mạn.",
+        "head": "Viêm thận bể thận cấp",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Suy thận mạn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Suy thận mạn: Viêm bể thận cấp có kháng kháng sinh, tái viêm thường xuyên, khi không được điều trị kịp thời và đúng cách, rất dẫn đến viêm thận bể thận mạn, suy thận mạn.",
+        "head": "Viêm thận bể thận cấp",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Viêm thận bể thận mạn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Suy thận mạn: Viêm bể thận cấp có kháng kháng sinh, tái viêm thường xuyên, khi không được điều trị kịp thời và đúng cách, rất dẫn đến viêm thận bể thận mạn, suy thận mạn.",
+        "head": "Kháng kháng sinh",
+        "head_type": "disease",
+        "relation": "causes",
+        "tail": "Suy thận mạn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Suy thận mạn: Viêm bể thận cấp có kháng kháng sinh, tái viêm thường xuyên, khi không được điều trị kịp thời và đúng cách, rất dẫn đến viêm thận bể thận mạn, suy thận mạn.",
+        "head": "Tái viêm thường xuyên",
+        "head_type": "cause",
+        "relation": "causes",
+        "tail": "Suy thận mạn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Suy thận mạn: Viêm bể thận cấp có kháng kháng sinh, tái viêm thường xuyên, khi không được điều trị kịp thời và đúng cách, rất dẫn đến viêm thận bể thận mạn, suy thận mạn.",
+        "head": "Điều trị không kịp thời",
+        "head_type": "cause",
+        "relation": "causes",
+        "tail": "Suy thận mạn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi chẩn đoán viêm bể thận, bác sĩ sẽ dựa vào những biểu hiện như:  Biểu hiện nhiễm trùng: Rét run, sốt cao, mệt mỏi, đau đầu, lưỡi bẩn, môi khô… Biểu hiện bàng quang cấp: Tiểu khó, tiểu buốt, tiểu rắt, tiểu máu, tiểu đục, tiểu mủ. Biểu hiện đau: Đau hông lưng, mạn sườn nhiều, thường đau một bên, hiếm khi hai bên. Có trường hợp xuất hiện cơn đau quặn thận.",
+        "head": "Rét run",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm bể thận",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi chẩn đoán viêm bể thận, bác sĩ sẽ dựa vào những biểu hiện như:  Biểu hiện nhiễm trùng: Rét run, sốt cao, mệt mỏi, đau đầu, lưỡi bẩn, môi khô… Biểu hiện bàng quang cấp: Tiểu khó, tiểu buốt, tiểu rắt, tiểu máu, tiểu đục, tiểu mủ. Biểu hiện đau: Đau hông lưng, mạn sườn nhiều, thường đau một bên, hiếm khi hai bên. Có trường hợp xuất hiện cơn đau quặn thận.",
+        "head": "Sốt cao",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm bể thận",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi chẩn đoán viêm bể thận, bác sĩ sẽ dựa vào những biểu hiện như:  Biểu hiện nhiễm trùng: Rét run, sốt cao, mệt mỏi, đau đầu, lưỡi bẩn, môi khô… Biểu hiện bàng quang cấp: Tiểu khó, tiểu buốt, tiểu rắt, tiểu máu, tiểu đục, tiểu mủ. Biểu hiện đau: Đau hông lưng, mạn sườn nhiều, thường đau một bên, hiếm khi hai bên. Có trường hợp xuất hiện cơn đau quặn thận.",
+        "head": "Mệt mỏi",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm bể thận",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi chẩn đoán viêm bể thận, bác sĩ sẽ dựa vào những biểu hiện như:  Biểu hiện nhiễm trùng: Rét run, sốt cao, mệt mỏi, đau đầu, lưỡi bẩn, môi khô… Biểu hiện bàng quang cấp: Tiểu khó, tiểu buốt, tiểu rắt, tiểu máu, tiểu đục, tiểu mủ. Biểu hiện đau: Đau hông lưng, mạn sườn nhiều, thường đau một bên, hiếm khi hai bên. Có trường hợp xuất hiện cơn đau quặn thận.",
+        "head": "Đau đầu",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm bể thận",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi chẩn đoán viêm bể thận, bác sĩ sẽ dựa vào những biểu hiện như:  Biểu hiện nhiễm trùng: Rét run, sốt cao, mệt mỏi, đau đầu, lưỡi bẩn, môi khô… Biểu hiện bàng quang cấp: Tiểu khó, tiểu buốt, tiểu rắt, tiểu máu, tiểu đục, tiểu mủ. Biểu hiện đau: Đau hông lưng, mạn sườn nhiều, thường đau một bên, hiếm khi hai bên. Có trường hợp xuất hiện cơn đau quặn thận.",
+        "head": "Lưỡi bẩn",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm bể thận",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi chẩn đoán viêm bể thận, bác sĩ sẽ dựa vào những biểu hiện như:  Biểu hiện nhiễm trùng: Rét run, sốt cao, mệt mỏi, đau đầu, lưỡi bẩn, môi khô… Biểu hiện bàng quang cấp: Tiểu khó, tiểu buốt, tiểu rắt, tiểu máu, tiểu đục, tiểu mủ. Biểu hiện đau: Đau hông lưng, mạn sườn nhiều, thường đau một bên, hiếm khi hai bên. Có trường hợp xuất hiện cơn đau quặn thận.",
+        "head": "Môi khô",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm bể thận",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi chẩn đoán viêm bể thận, bác sĩ sẽ dựa vào những biểu hiện như:  Biểu hiện nhiễm trùng: Rét run, sốt cao, mệt mỏi, đau đầu, lưỡi bẩn, môi khô… Biểu hiện bàng quang cấp: Tiểu khó, tiểu buốt, tiểu rắt, tiểu máu, tiểu đục, tiểu mủ. Biểu hiện đau: Đau hông lưng, mạn sườn nhiều, thường đau một bên, hiếm khi hai bên. Có trường hợp xuất hiện cơn đau quặn thận.",
+        "head": "Tiểu khó",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm bể thận",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi chẩn đoán viêm bể thận, bác sĩ sẽ dựa vào những biểu hiện như:  Biểu hiện nhiễm trùng: Rét run, sốt cao, mệt mỏi, đau đầu, lưỡi bẩn, môi khô… Biểu hiện bàng quang cấp: Tiểu khó, tiểu buốt, tiểu rắt, tiểu máu, tiểu đục, tiểu mủ. Biểu hiện đau: Đau hông lưng, mạn sườn nhiều, thường đau một bên, hiếm khi hai bên. Có trường hợp xuất hiện cơn đau quặn thận.",
+        "head": "Tiểu buốt",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm bể thận",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi chẩn đoán viêm bể thận, bác sĩ sẽ dựa vào những biểu hiện như:  Biểu hiện nhiễm trùng: Rét run, sốt cao, mệt mỏi, đau đầu, lưỡi bẩn, môi khô… Biểu hiện bàng quang cấp: Tiểu khó, tiểu buốt, tiểu rắt, tiểu máu, tiểu đục, tiểu mủ. Biểu hiện đau: Đau hông lưng, mạn sườn nhiều, thường đau một bên, hiếm khi hai bên. Có trường hợp xuất hiện cơn đau quặn thận.",
+        "head": "Tiểu rắt",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm bể thận",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi chẩn đoán viêm bể thận, bác sĩ sẽ dựa vào những biểu hiện như:  Biểu hiện nhiễm trùng: Rét run, sốt cao, mệt mỏi, đau đầu, lưỡi bẩn, môi khô… Biểu hiện bàng quang cấp: Tiểu khó, tiểu buốt, tiểu rắt, tiểu máu, tiểu đục, tiểu mủ. Biểu hiện đau: Đau hông lưng, mạn sườn nhiều, thường đau một bên, hiếm khi hai bên. Có trường hợp xuất hiện cơn đau quặn thận.",
+        "head": "Tiểu máu",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm bể thận",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi chẩn đoán viêm bể thận, bác sĩ sẽ dựa vào những biểu hiện như:  Biểu hiện nhiễm trùng: Rét run, sốt cao, mệt mỏi, đau đầu, lưỡi bẩn, môi khô… Biểu hiện bàng quang cấp: Tiểu khó, tiểu buốt, tiểu rắt, tiểu máu, tiểu đục, tiểu mủ. Biểu hiện đau: Đau hông lưng, mạn sườn nhiều, thường đau một bên, hiếm khi hai bên. Có trường hợp xuất hiện cơn đau quặn thận.",
+        "head": "Tiểu đục",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm bể thận",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi chẩn đoán viêm bể thận, bác sĩ sẽ dựa vào những biểu hiện như:  Biểu hiện nhiễm trùng: Rét run, sốt cao, mệt mỏi, đau đầu, lưỡi bẩn, môi khô… Biểu hiện bàng quang cấp: Tiểu khó, tiểu buốt, tiểu rắt, tiểu máu, tiểu đục, tiểu mủ. Biểu hiện đau: Đau hông lưng, mạn sườn nhiều, thường đau một bên, hiếm khi hai bên. Có trường hợp xuất hiện cơn đau quặn thận.",
+        "head": "Tiểu mủ",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm bể thận",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi chẩn đoán viêm bể thận, bác sĩ sẽ dựa vào những biểu hiện như:  Biểu hiện nhiễm trùng: Rét run, sốt cao, mệt mỏi, đau đầu, lưỡi bẩn, môi khô… Biểu hiện bàng quang cấp: Tiểu khó, tiểu buốt, tiểu rắt, tiểu máu, tiểu đục, tiểu mủ. Biểu hiện đau: Đau hông lưng, mạn sườn nhiều, thường đau một bên, hiếm khi hai bên. Có trường hợp xuất hiện cơn đau quặn thận.",
+        "head": "Đau hông lưng",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm bể thận",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi chẩn đoán viêm bể thận, bác sĩ sẽ dựa vào những biểu hiện như:  Biểu hiện nhiễm trùng: Rét run, sốt cao, mệt mỏi, đau đầu, lưỡi bẩn, môi khô… Biểu hiện bàng quang cấp: Tiểu khó, tiểu buốt, tiểu rắt, tiểu máu, tiểu đục, tiểu mủ. Biểu hiện đau: Đau hông lưng, mạn sườn nhiều, thường đau một bên, hiếm khi hai bên. Có trường hợp xuất hiện cơn đau quặn thận.",
+        "head": "Đau mạn sườn",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm bể thận",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi chẩn đoán viêm bể thận, bác sĩ sẽ dựa vào những biểu hiện như:  Biểu hiện nhiễm trùng: Rét run, sốt cao, mệt mỏi, đau đầu, lưỡi bẩn, môi khô… Biểu hiện bàng quang cấp: Tiểu khó, tiểu buốt, tiểu rắt, tiểu máu, tiểu đục, tiểu mủ. Biểu hiện đau: Đau hông lưng, mạn sườn nhiều, thường đau một bên, hiếm khi hai bên. Có trường hợp xuất hiện cơn đau quặn thận.",
+        "head": "Đau quặn thận",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm bể thận",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Xét nghiệm công thức máu: Viêm bể thận cấp là nhiễm trùng. Vì thế, bác sĩ thường chỉ định người bệnh xét nghiệm công thức máu để kiểm tra chỉ số bạch cầu tăng rõ rệt, nhất là tình trạng tăng bạch cầu đa nhân trung tính.",
+        "head": "Xét nghiệm công thức máu",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "Viêm bể thận",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Xét nghiệm công thức máu: Viêm bể thận cấp là nhiễm trùng. Vì thế, bác sĩ thường chỉ định người bệnh xét nghiệm công thức máu để kiểm tra chỉ số bạch cầu tăng rõ rệt, nhất là tình trạng tăng bạch cầu đa nhân trung tính.",
+        "head": "Tăng bạch cầu",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm bể thận",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Cấy máu: Phương pháp này giúp xác định trường hợp nhiễm trùng tiết niệu do nhóm vi khuẩn nào.",
+        "head": "Cấy máu",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "Nhiễm trùng tiết niệu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Siêu âm: tìm dấu hiệu giãn niệu quản, giãn đài bể thận, hình ảnh sỏi thận – tiết niệu, khối u chèn ép…",
+        "head": "Siêu âm",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "Viêm bể thận",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Siêu âm: tìm dấu hiệu giãn niệu quản, giãn đài bể thận, hình ảnh sỏi thận – tiết niệu, khối u chèn ép…",
+        "head": "Giãn niệu quản",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm bể thận",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Siêu âm: tìm dấu hiệu giãn niệu quản, giãn đài bể thận, hình ảnh sỏi thận – tiết niệu, khối u chèn ép…",
+        "head": "Giãn đài bể thận",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm bể thận",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Siêu âm: tìm dấu hiệu giãn niệu quản, giãn đài bể thận, hình ảnh sỏi thận – tiết niệu, khối u chèn ép…",
+        "head": "Sỏi thận",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Viêm bể thận",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Chụp X-quang: khi nghi ngờ có trào ngược bàng quang – thận.",
+        "head": "Chụp X-quang",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "Trào ngược bàng quang – thận",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bên cạnh đó, để xác định viêm bể thận, có thể thực hiện thêm một số xét nghiệm như protein niệu, cặn Addis, cấy nước tiểu tìm vi khuẩn.",
+        "head": "Protein niệu",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "Viêm bể thận",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bên cạnh đó, để xác định viêm bể thận, có thể thực hiện thêm một số xét nghiệm như protein niệu, cặn Addis, cấy nước tiểu tìm vi khuẩn.",
+        "head": "Cấy nước tiểu tìm vi khuẩn",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "Viêm bể thận",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Người bệnh viêm bể thận nếu bị rét run hay sử dụng thuốc kháng sinh ngoại trú 3 - 5 ngày không đáp ứng, bệnh không giảm sẽ được chuyển điều trị nội trú.",
+        "head": "Thuốc kháng sinh",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Viêm bể thận",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Người bệnh viêm bể thận nếu bị rét run hay sử dụng thuốc kháng sinh ngoại trú 3 - 5 ngày không đáp ứng, bệnh không giảm sẽ được chuyển điều trị nội trú.",
+        "head": "Điều trị nội trú",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Viêm bể thận",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu triệu chứng nhẹ sẽ được theo dõi ngoại trú và sử dụng kháng sinh.",
+        "head": "Theo dõi ngoại trú",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Viêm bể thận",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu triệu chứng nhẹ sẽ được theo dõi ngoại trú và sử dụng kháng sinh.",
+        "head": "Kháng sinh",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Viêm bể thận",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi người bệnh chuẩn bị sử dụng kháng sinh, bác sĩ thường chỉ định cấy nước tiểu tìm vi khuẩn niệu, máu.",
+        "head": "Cấy nước tiểu tìm vi khuẩn niệu",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "Viêm bể thận",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi người bệnh chuẩn bị sử dụng kháng sinh, bác sĩ thường chỉ định cấy nước tiểu tìm vi khuẩn niệu, máu.",
+        "head": "Cấy máu",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "Viêm bể thận",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Trong khi chờ kết quả cấy vi khuẩn, người bệnh được dùng kháng sinh và theo dõi đánh giá lại sau 3 - 5 ngày tình trạng đáp ứng kháng sinh và tiếp tục điều chỉnh hoặc chỉ định nhập viện điều trị khi cần.",
+        "head": "Kháng sinh",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Viêm bể thận",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Trong khi chờ kết quả cấy vi khuẩn, người bệnh được dùng kháng sinh và theo dõi đánh giá lại sau 3 - 5 ngày tình trạng đáp ứng kháng sinh và tiếp tục điều chỉnh hoặc chỉ định nhập viện điều trị khi cần.",
+        "head": "Nhập viện điều trị",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Viêm bể thận",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đối với các trường hợp không có triệu chứng nặng sẽ được chỉ định dùng kháng sinh trong 1 - 14 ngày bằng đường uống.",
+        "head": "Kháng sinh",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Viêm bể thận",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu tình trạng lâm sàng không tiến triển tốt, người bệnh có tình trạng nhiễm trùng rõ, vẫn sốt, tiểu đục, đau, mất nước… cần được chuyển vào điều trị nội trú.",
+        "head": "Điều trị nội trú",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Viêm bể thận",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Những loại kháng sinh thường được chỉ định điều trị như:  Aminopenicillins: Dùng đơn độc hoặc phối hợp Acid clavulanic. Aminoglycosides: Dùng đơn độc hoặc phối hợp Aminopenicillins. Aztreonam, Cephalosporines thế hệ 2 hay thế hệ 3. Cotrimoxazol và Fluoroquinolones.",
+        "head": "Aminopenicillins",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Viêm bể thận",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Những loại kháng sinh thường được chỉ định điều trị như:  Aminopenicillins: Dùng đơn độc hoặc phối hợp Acid clavulanic. Aminoglycosides: Dùng đơn độc hoặc phối hợp Aminopenicillins. Aztreonam, Cephalosporines thế hệ 2 hay thế hệ 3. Cotrimoxazol và Fluoroquinolones.",
+        "head": "Acid clavulanic",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Viêm bể thận",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Những loại kháng sinh thường được chỉ định điều trị như:  Aminopenicillins: Dùng đơn độc hoặc phối hợp Acid clavulanic. Aminoglycosides: Dùng đơn độc hoặc phối hợp Aminopenicillins. Aztreonam, Cephalosporines thế hệ 2 hay thế hệ 3. Cotrimoxazol và Fluoroquinolones.",
+        "head": "Aminoglycosides",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Viêm bể thận",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Những loại kháng sinh thường được chỉ định điều trị như:  Aminopenicillins: Dùng đơn độc hoặc phối hợp Acid clavulanic. Aminoglycosides: Dùng đơn độc hoặc phối hợp Aminopenicillins. Aztreonam, Cephalosporines thế hệ 2 hay thế hệ 3. Cotrimoxazol và Fluoroquinolones.",
+        "head": "Aztreonam",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Viêm bể thận",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Những loại kháng sinh thường được chỉ định điều trị như:  Aminopenicillins: Dùng đơn độc hoặc phối hợp Acid clavulanic. Aminoglycosides: Dùng đơn độc hoặc phối hợp Aminopenicillins. Aztreonam, Cephalosporines thế hệ 2 hay thế hệ 3. Cotrimoxazol và Fluoroquinolones.",
+        "head": "Cephalosporines",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Viêm bể thận",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Những loại kháng sinh thường được chỉ định điều trị như:  Aminopenicillins: Dùng đơn độc hoặc phối hợp Acid clavulanic. Aminoglycosides: Dùng đơn độc hoặc phối hợp Aminopenicillins. Aztreonam, Cephalosporines thế hệ 2 hay thế hệ 3. Cotrimoxazol và Fluoroquinolones.",
+        "head": "Cotrimoxazol",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Viêm bể thận",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Những loại kháng sinh thường được chỉ định điều trị như:  Aminopenicillins: Dùng đơn độc hoặc phối hợp Acid clavulanic. Aminoglycosides: Dùng đơn độc hoặc phối hợp Aminopenicillins. Aztreonam, Cephalosporines thế hệ 2 hay thế hệ 3. Cotrimoxazol và Fluoroquinolones.",
+        "head": "Fluoroquinolones",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Viêm bể thận",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các trường hợp được chỉ định điều trị tại bệnh viện khi có triệu chứng nặng, thai phụ, người có bệnh lý nền cần nhập viện để theo dõi điều trị.",
+        "head": "Điều trị tại bệnh viện",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Viêm bể thận",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Việc điều trị đối với phụ nữ có thai thường khó khăn hơn do hạn chế trong quá trình điều trị.",
+        "head": "Điều trị",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Viêm bể thận",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Viêm thận bể thận ở phụ nữ mang thai thường phải nhập viện.",
+        "head": "Nhập viện",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Viêm bể thận",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nó có thể đe dọa đến tính mạng của cả mẹ và bé.",
+        "head": "Viêm bể thận",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Mẹ và bé",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Nó cũng có thể làm tăng nguy cơ sinh non.",
+        "head": "Viêm bể thận",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Sinh non",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Phụ nữ mang thai được điều trị bằng kháng sinh beta-lactam ít nhất 24 giờ cho đến khi các triệu chứng của họ được cải thiện.",
+        "head": "Kháng sinh beta-lactam",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Viêm bể thận",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Để phòng ngừa viêm thận bể thận ở phụ nữ có thai, nên cấy nước tiểu vào giữa tuần thứ 12 và 16 của thai kỳ.",
+        "head": "Cấy nước tiểu",
+        "head_type": "test",
+        "relation": "preventedBy",
+        "tail": "Viêm bể thận",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nhiễm trùng tiểu không có triệu chứng có thể dẫn đến sự phát triển của viêm thận bể thận.",
+        "head": "Nhiễm trùng tiểu",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Viêm bể thận",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Phát hiện sớm nhiễm trùng tiểu có thể ngăn ngừa nhiễm trùng thận.",
+        "head": "Phát hiện sớm nhiễm trùng tiểu",
+        "head_type": "treatment",
+        "relation": "preventedBy",
+        "tail": "Viêm bể thận",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Viêm bể thận có thể dẫn tới tình trạng tắc nghẽn ở thận hoặc gây sốc nhiễm khuẩn.",
+        "head": "Viêm bể thận",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Tắc nghẽn ở thận",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Viêm bể thận có thể dẫn tới tình trạng tắc nghẽn ở thận hoặc gây sốc nhiễm khuẩn.",
+        "head": "Viêm bể thận",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Sốc nhiễm khuẩn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Cả hai biến chứng này đều rất nguy hiểm, có tiên lượng tử vong cao.",
+        "head": "Tắc nghẽn ở thận",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "Tử vong",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Cả hai biến chứng này đều rất nguy hiểm, có tiên lượng tử vong cao.",
+        "head": "Sốc nhiễm khuẩn",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "Tử vong",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Khi đó, người bệnh thường được chỉ định phẫu thuật để giải quyết tình trạng tắc nghẽn để loại bỏ bất kỳ vật cản nào hoặc để sửa chữa bất kỳ vấn đề cấu trúc nào trong thận.",
+        "head": "Phẫu thuật",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Tắc nghẽn ở thận",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Phẫu thuật cũng có thể cần thiết để dẫn lưu ổ áp xe không đáp ứng với thuốc kháng sinh.",
+        "head": "Phẫu thuật",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Áp xe",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Trong trường hợp nhiễm trùng nặng, phẫu thuật cắt bỏ thận có thể là cần thiết.",
+        "head": "Phẫu thuật cắt bỏ thận",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Nhiễm trùng nặng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Viêm thận bể thận là bệnh lý nguy hiểm.",
+        "head": "Viêm thận bể thận",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "Nguy hiểm",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Khi không được phát hiện sớm và điều trị kịp thời có thể gây tử vong.",
+        "head": "Viêm thận bể thận",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "Tử vong",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Tuy nhiên, bệnh có thể được phòng ngừa nếu chúng ta quan tâm đến sức khỏe, giữ gìn vệ sinh, theo dõi các diễn biến bất thường trong cơ thể và thường xuyên khám sức khỏe tổng quát (6 tháng/lần).",
+        "head": "Viêm thận bể thận",
+        "head_type": "disease",
+        "relation": "preventedBy",
+        "tail": "Quan tâm đến sức khỏe",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Tuy nhiên, bệnh có thể được phòng ngừa nếu chúng ta quan tâm đến sức khỏe, giữ gìn vệ sinh, theo dõi các diễn biến bất thường trong cơ thể và thường xuyên khám sức khỏe tổng quát (6 tháng/lần).",
+        "head": "Viêm thận bể thận",
+        "head_type": "disease",
+        "relation": "preventedBy",
+        "tail": "Giữ gìn vệ sinh",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Tuy nhiên, bệnh có thể được phòng ngừa nếu chúng ta quan tâm đến sức khỏe, giữ gìn vệ sinh, theo dõi các diễn biến bất thường trong cơ thể và thường xuyên khám sức khỏe tổng quát (6 tháng/lần).",
+        "head": "Viêm thận bể thận",
+        "head_type": "disease",
+        "relation": "preventedBy",
+        "tail": "Theo dõi các diễn biến bất thường trong cơ thể",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Tuy nhiên, bệnh có thể được phòng ngừa nếu chúng ta quan tâm đến sức khỏe, giữ gìn vệ sinh, theo dõi các diễn biến bất thường trong cơ thể và thường xuyên khám sức khỏe tổng quát (6 tháng/lần).",
+        "head": "Viêm thận bể thận",
+        "head_type": "disease",
+        "relation": "preventedBy",
+        "tail": "Khám sức khỏe tổng quát",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Để phòng bệnh cần lưu ý:  Giữ vệ sinh cơ quan sinh dục - tiết niệu: Đặc biệt là nữ giới cần vệ sinh kỹ trong thời kỳ kinh nguyệt, sau quan hệ tình dục…",
+        "head": "Giữ vệ sinh cơ quan sinh dục - tiết niệu",
+        "head_type": "lifestyle",
+        "relation": "preventedBy",
+        "tail": "Viêm bể thận",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Người nhiễm khuẩn tiết niệu do tắc nghẽn đường tiết niệu cần điều trị sớm nhằm phòng ngừa biến chứng viêm thận bể thận.",
+        "head": "Nhiễm khuẩn tiết niệu",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Viêm bể thận",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Người nhiễm khuẩn tiết niệu do tắc nghẽn đường tiết niệu cần điều trị sớm nhằm phòng ngừa biến chứng viêm thận bể thận.",
+        "head": "Tắc nghẽn đường tiết niệu",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Viêm bể thận",
+        "tail_type": "disease"
+    }
+]

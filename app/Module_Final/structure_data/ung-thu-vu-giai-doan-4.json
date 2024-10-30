@@ -1,0 +1,858 @@
+[
+    {
+        "text": "Mục đích điều trị đối với bệnh ung thư vú giai đoạn IV không phải chữa hết hẳn bệnh, nhưng có thể giúp giảm nhẹ các triệu chứng và kéo dài thêm thời gian sống cho bệnh nhân.",
+        "head": "giảm nhẹ các triệu chứng",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "bệnh ung thư vú giai đoạn IV",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Mục đích điều trị đối với bệnh ung thư vú giai đoạn IV không phải chữa hết hẳn bệnh, nhưng có thể giúp giảm nhẹ các triệu chứng và kéo dài thêm thời gian sống cho bệnh nhân.",
+        "head": "kéo dài thêm thời gian sống",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "bệnh ung thư vú giai đoạn IV",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ung thư vú giai đoạn IV còn được gọi là ung thư vú di căn, nghĩa là bệnh ung thư vú đã di căn sang các bộ phận khác trong cơ thể.",
+        "head": "ung thư vú giai đoạn IV",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "ung thư vú di căn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ung thư vú giai đoạn IV còn được gọi là ung thư vú di căn, nghĩa là bệnh ung thư vú đã di căn sang các bộ phận khác trong cơ thể.",
+        "head": "ung thư vú di căn",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "ung thư vú",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi các tế bào ung thư di chuyển theo đường máu và/hoặc hạch đến các bộ phận khác trong cơ thể thì gọi là di căn.",
+        "head": "di căn",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "các tế bào ung thư di chuyển theo đường máu và/hoặc hạch đến các bộ phận khác trong cơ thể",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Ung thư vú có thể di căn đến bộ phận khác trong cơ thể trong thời gian vài tháng hoặc vài năm sau khi được chẩn đoán và điều trị.",
+        "head": "ung thư vú",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "bộ phận khác trong cơ thể",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Ung thư vú có thể di căn đến bộ phận khác trong cơ thể trong thời gian vài tháng hoặc vài năm sau khi được chẩn đoán và điều trị.",
+        "head": "di căn",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "ung thư vú",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Cũng có khi, bệnh ung thư vú được phát hiện và chẩn đoán trong tình trạng đã có di căn đến các bộ phận khác trong cơ thể.",
+        "head": "di căn",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "bệnh ung thư vú",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ung thư vú có thể di căn đến tất cả các bộ phận trong cơ thể.",
+        "head": "ung thư vú",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "tất cả các bộ phận trong cơ thể",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Tuy nhiên, các bộ phận thường bị di căn nhất của ung thư vú là xương, phổi, gan, não và hạch.",
+        "head": "xương",
+        "head_type": "organ",
+        "relation": "affectedBy",
+        "tail": "ung thư vú",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tuy nhiên, các bộ phận thường bị di căn nhất của ung thư vú là xương, phổi, gan, não và hạch.",
+        "head": "phổi",
+        "head_type": "organ",
+        "relation": "affectedBy",
+        "tail": "ung thư vú",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tuy nhiên, các bộ phận thường bị di căn nhất của ung thư vú là xương, phổi, gan, não và hạch.",
+        "head": "gan",
+        "head_type": "organ",
+        "relation": "affectedBy",
+        "tail": "ung thư vú",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tuy nhiên, các bộ phận thường bị di căn nhất của ung thư vú là xương, phổi, gan, não và hạch.",
+        "head": "não",
+        "head_type": "organ",
+        "relation": "affectedBy",
+        "tail": "ung thư vú",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tuy nhiên, các bộ phận thường bị di căn nhất của ung thư vú là xương, phổi, gan, não và hạch.",
+        "head": "hạch",
+        "head_type": "organ",
+        "relation": "affectedBy",
+        "tail": "ung thư vú",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Theo bác sĩ Trần Thị Thiên Hương, các triệu chứng ung thư vú giai đoạn IV có thể rất khác nhau tùy thuộc vào vị trí di căn, nhưng có thể chia thành các nhóm như sau: (2)",
+        "head": "các triệu chứng ung thư vú giai đoạn IV",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "ung thư vú giai đoạn IV",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nhóm các triệu chứng liên quan đến di căn xương, di căn mô mềm quanh xương có kèm theo chèn ép tủy sống: Đau vùng lưng-xương hoặc khớp, tê hoặc yếu bất cứ nơi nào trên cơ thể,… không liên quan đến các nguyên nhân lành tính khác và không giảm với điều trị nội khoa thông thường.",
+        "head": "Đau vùng lưng-xương hoặc khớp",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "di căn xương",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nhóm các triệu chứng liên quan đến di căn xương, di căn mô mềm quanh xương có kèm theo chèn ép tủy sống: Đau vùng lưng-xương hoặc khớp, tê hoặc yếu bất cứ nơi nào trên cơ thể,… không liên quan đến các nguyên nhân lành tính khác và không giảm với điều trị nội khoa thông thường.",
+        "head": "tê hoặc yếu bất cứ nơi nào trên cơ thể",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "di căn xương",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nhóm các triệu chứng liên quan đến di căn xương, di căn mô mềm quanh xương có kèm theo chèn ép tủy sống: Đau vùng lưng-xương hoặc khớp, tê hoặc yếu bất cứ nơi nào trên cơ thể,… không liên quan đến các nguyên nhân lành tính khác và không giảm với điều trị nội khoa thông thường.",
+        "head": "khó đi tiểu (tiểu không tự chủ hoặc không thể đi)",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "di căn xương",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nhóm các triệu chứng liên quan đến di căn phổi-màng phổi-hạch vùng trung thất (khoảng giữa lồng ngực): Ho khan kéo dài trên 1-2 tháng, thở gấp hoặc khó thở, tức ngực không liên quan đến các nguyên nhân lành tính khác và không giảm với điều trị nội khoa thông thường.",
+        "head": "Ho khan kéo dài trên 1-2 tháng",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "di căn phổi-màng phổi-hạch vùng trung thất",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nhóm các triệu chứng liên quan đến di căn phổi-màng phổi-hạch vùng trung thất (khoảng giữa lồng ngực): Ho khan kéo dài trên 1-2 tháng, thở gấp hoặc khó thở, tức ngực không liên quan đến các nguyên nhân lành tính khác và không giảm với điều trị nội khoa thông thường.",
+        "head": "thở gấp hoặc khó thở",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "di căn phổi-màng phổi-hạch vùng trung thất",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nhóm các triệu chứng liên quan đến di căn phổi-màng phổi-hạch vùng trung thất (khoảng giữa lồng ngực): Ho khan kéo dài trên 1-2 tháng, thở gấp hoặc khó thở, tức ngực không liên quan đến các nguyên nhân lành tính khác và không giảm với điều trị nội khoa thông thường.",
+        "head": "tức ngực",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "di căn phổi-màng phổi-hạch vùng trung thất",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nhóm các triệu chứng liên quan đến di căn gan-hạch: Ăn không ngon kéo dài không liên quan đến nguyên nhân khác, chướng bụng, đau bụng, buồn nôn liên tục, nôn mửa hoặc sụt cân, vàng da (màu vàng ở da và lòng trắng của mắt),… không liên quan đến các nguyên nhân lành tính khác và không giảm với điều trị nội khoa thông thường.",
+        "head": "Ăn không ngon kéo dài",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "di căn gan-hạch",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nhóm các triệu chứng liên quan đến di căn gan-hạch: Ăn không ngon kéo dài không liên quan đến nguyên nhân khác, chướng bụng, đau bụng, buồn nôn liên tục, nôn mửa hoặc sụt cân, vàng da (màu vàng ở da và lòng trắng của mắt),… không liên quan đến các nguyên nhân lành tính khác và không giảm với điều trị nội khoa thông thường.",
+        "head": "chướng bụng",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "di căn gan-hạch",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nhóm các triệu chứng liên quan đến di căn gan-hạch: Ăn không ngon kéo dài không liên quan đến nguyên nhân khác, chướng bụng, đau bụng, buồn nôn liên tục, nôn mửa hoặc sụt cân, vàng da (màu vàng ở da và lòng trắng của mắt),… không liên quan đến các nguyên nhân lành tính khác và không giảm với điều trị nội khoa thông thường.",
+        "head": "đau bụng",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "di căn gan-hạch",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nhóm các triệu chứng liên quan đến di căn gan-hạch: Ăn không ngon kéo dài không liên quan đến nguyên nhân khác, chướng bụng, đau bụng, buồn nôn liên tục, nôn mửa hoặc sụt cân, vàng da (màu vàng ở da và lòng trắng của mắt),… không liên quan đến các nguyên nhân lành tính khác và không giảm với điều trị nội khoa thông thường.",
+        "head": "buồn nôn liên tục",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "di căn gan-hạch",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nhóm các triệu chứng liên quan đến di căn gan-hạch: Ăn không ngon kéo dài không liên quan đến nguyên nhân khác, chướng bụng, đau bụng, buồn nôn liên tục, nôn mửa hoặc sụt cân, vàng da (màu vàng ở da và lòng trắng của mắt),… không liên quan đến các nguyên nhân lành tính khác và không giảm với điều trị nội khoa thông thường.",
+        "head": "nôn mửa",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "di căn gan-hạch",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nhóm các triệu chứng liên quan đến di căn gan-hạch: Ăn không ngon kéo dài không liên quan đến nguyên nhân khác, chướng bụng, đau bụng, buồn nôn liên tục, nôn mửa hoặc sụt cân, vàng da (màu vàng ở da và lòng trắng của mắt),… không liên quan đến các nguyên nhân lành tính khác và không giảm với điều trị nội khoa thông thường.",
+        "head": "sụt cân",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "di căn gan-hạch",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nhóm các triệu chứng liên quan đến di căn gan-hạch: Ăn không ngon kéo dài không liên quan đến nguyên nhân khác, chướng bụng, đau bụng, buồn nôn liên tục, nôn mửa hoặc sụt cân, vàng da (màu vàng ở da và lòng trắng của mắt),… không liên quan đến các nguyên nhân lành tính khác và không giảm với điều trị nội khoa thông thường.",
+        "head": "vàng da",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "di căn gan-hạch",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nhóm các triệu chứng liên quan đến di căn não-màng não: Đau đầu kéo dài, các vấn đề về thị lực (nhìn mờ, nhìn đôi, mất thị lực), chóng mặt, rối loạn trong việc giữ thăng bằng, động kinh… không liên quan đến các nguyên nhân lành tính khác và không giảm với điều trị nội khoa thông thường.",
+        "head": "Đau đầu kéo dài",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "di căn não-màng não",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nhóm các triệu chứng liên quan đến di căn não-màng não: Đau đầu kéo dài, các vấn đề về thị lực (nhìn mờ, nhìn đôi, mất thị lực), chóng mặt, rối loạn trong việc giữ thăng bằng, động kinh… không liên quan đến các nguyên nhân lành tính khác và không giảm với điều trị nội khoa thông thường.",
+        "head": "các vấn đề về thị lực",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "di căn não-màng não",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nhóm các triệu chứng liên quan đến di căn não-màng não: Đau đầu kéo dài, các vấn đề về thị lực (nhìn mờ, nhìn đôi, mất thị lực), chóng mặt, rối loạn trong việc giữ thăng bằng, động kinh… không liên quan đến các nguyên nhân lành tính khác và không giảm với điều trị nội khoa thông thường.",
+        "head": "chóng mặt",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "di căn não-màng não",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nhóm các triệu chứng liên quan đến di căn não-màng não: Đau đầu kéo dài, các vấn đề về thị lực (nhìn mờ, nhìn đôi, mất thị lực), chóng mặt, rối loạn trong việc giữ thăng bằng, động kinh… không liên quan đến các nguyên nhân lành tính khác và không giảm với điều trị nội khoa thông thường.",
+        "head": "rối loạn trong việc giữ thăng bằng",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "di căn não-màng não",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ung thư vú giai đoạn IV có chữa được không?\nUng thư vú giai đoạn IV\nkhông thể chữa khỏi.",
+        "head": "Ung thư vú giai đoạn IV",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "không thể chữa khỏi",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Tiên lượng sẽ xấu đi đáng kể khi khối u đã di căn toàn thân.",
+        "head": "Tiên lượng",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "khối u đã di căn toàn thân",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Thông thường, chỉ có khoảng 22% bệnh nhân\nung thư vú giai đoạn IV\nsống sót sau 5 năm tiếp theo.",
+        "head": "sống sót sau 5 năm tiếp theo",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "ung thư vú giai đoạn IV",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu có tiền sử ung thư vú hoặc mới chẩn đoán bệnh ung thư vú và có bất kỳ triệu chứng nào nghi ngờ tình trạng di căn, bác sĩ có thể đề nghị một hoặc nhiều xét nghiệm sau:",
+        "head": "ung thư vú",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "xét nghiệm",
+        "tail_type": "test"
+    },
+    {
+        "text": "Xét nghiệm máu (bao gồm các chất chỉ điểm khối u ở một số bệnh nhân).",
+        "head": "Xét nghiệm máu",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "ung thư vú",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Siêu âm vú và nhũ ảnh để xác định tính chất của khối u vú + hạch nách.",
+        "head": "Siêu âm vú và nhũ ảnh",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "ung thư vú",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Chụp CT (chụp cắt lớp vi tính) một phần của cơ thể (não, cổ, ngực, bụng, chậu) hoặc chụp CT toàn thân.",
+        "head": "Chụp CT",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "ung thư vú",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Chụp PET-CT.",
+        "head": "Chụp PET-CT",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "ung thư vú",
+        "tail_type": "disease"
+    },
+    {
+        "text": "MRI (cộng hưởng từ) của vú, cột sống hoặc não.",
+        "head": "MRI",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "ung thư vú",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Xạ hình xương toàn bộ cơ thể, có thể kết hợp chụp X-quang các vị trí nghi ngờ.",
+        "head": "Xạ hình xương",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "ung thư vú",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nội soi phế quản: có thể được chỉ định nếu người bệnh bị ho liên tục hoặc khó thở, để loại trừ các tổn thương nguyên phát ở khí quản - phế quản đồng thời đánh giá tình trạng đường thở có bị tắc nghẽn hay không.",
+        "head": "Nội soi phế quản",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "ung thư vú",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Sinh thiết bất kỳ bộ phận có tổn thương nghi ngờ di căn: để làm xét nghiệm tế bào học, nhằm xác định tế bào ung thư cũng như thực hiện các xét nghiệm sinh học của khối u (thụ thể nội tiết ER PR, thụ thể Her2, đột biến gen), để chẩn đoán và chọn phương pháp điều trị phù hợp.",
+        "head": "Sinh thiết",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "ung thư vú",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Chọc hút dịch từ bộ phận có triệu chứng (dịch màng phổi, dịch màng bụng…): trước tiên nhằm để giảm nhẹ triệu chứng, sau đó có thể thực hiện xét nghiệm tế bào học nhằm xác định tế bào ung thư cũng như thực hiện các xét nghiệm sinh học của khối u (thụ thể nội tiết ER PR, thụ thể Her2, đột biến gen), để chẩn đoán và chọn phương pháp điều trị phù hợp.",
+        "head": "Chọc hút dịch",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "ung thư vú",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Hệ thống chụp nhũ ảnh DBT giúp xác định tính chất của khối u vú.",
+        "head": "Hệ thống chụp nhũ ảnh DBT",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "ung thư vú",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Liệu pháp điều trị toàn thân bằng thuốc (hóa trị và các loại thuốc khác) là phương pháp điều trị chính.",
+        "head": "Liệu pháp điều trị toàn thân bằng thuốc",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "ung thư vú giai đoạn IV",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các loại thuốc có thể được dùng bao gồm hóa trị, liệu pháp nội tiết, liệu pháp nhắm trúng đích và liệu pháp miễn dịch.",
+        "head": "hóa trị",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "ung thư vú giai đoạn IV",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các loại thuốc có thể được dùng bao gồm hóa trị, liệu pháp nội tiết, liệu pháp nhắm trúng đích và liệu pháp miễn dịch.",
+        "head": "liệu pháp nội tiết",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "ung thư vú giai đoạn IV",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các loại thuốc có thể được dùng bao gồm hóa trị, liệu pháp nội tiết, liệu pháp nhắm trúng đích và liệu pháp miễn dịch.",
+        "head": "liệu pháp nhắm trúng đích",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "ung thư vú giai đoạn IV",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các loại thuốc có thể được dùng bao gồm hóa trị, liệu pháp nội tiết, liệu pháp nhắm trúng đích và liệu pháp miễn dịch.",
+        "head": "liệu pháp miễn dịch",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "ung thư vú giai đoạn IV",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các loại thuốc này có thể được dùng riêng lẻ hoặc phối hợp với nhau.",
+        "head": "thuốc",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "ung thư vú giai đoạn IV",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Phẫu thuật và/hoặc xạ trị có thể hữu ích trong một số trường hợp nhất định.",
+        "head": "Phẫu thuật",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "ung thư vú giai đoạn IV",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Phẫu thuật và/hoặc xạ trị có thể hữu ích trong một số trường hợp nhất định.",
+        "head": "xạ trị",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "ung thư vú giai đoạn IV",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Theo bác sĩ Thảo Nghi, mục đích điều trị\nung thư vú giai đoạn IV\nkhông phải chữa hết hẳn bệnh, mà nhằm giảm nhẹ các triệu chứng và kéo dài thêm thời gian sống cho bệnh nhân.",
+        "head": "giảm nhẹ các triệu chứng",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "ung thư vú giai đoạn IV",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Theo bác sĩ Thảo Nghi, mục đích điều trị\nung thư vú giai đoạn IV\nkhông phải chữa hết hẳn bệnh, mà nhằm giảm nhẹ các triệu chứng và kéo dài thêm thời gian sống cho bệnh nhân.",
+        "head": "kéo dài thêm thời gian sống",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "ung thư vú giai đoạn IV",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu đáp ứng tốt với điều trị, có thể giảm kích thước hoặc biến mất tạm thời các tổn thương, hoặc làm chậm sự phát triển của chúng.",
+        "head": "giảm kích thước",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "ung thư vú giai đoạn IV",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu đáp ứng tốt với điều trị, có thể giảm kích thước hoặc biến mất tạm thời các tổn thương, hoặc làm chậm sự phát triển của chúng.",
+        "head": "biến mất tạm thời các tổn thương",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "ung thư vú giai đoạn IV",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu đáp ứng tốt với điều trị, có thể giảm kích thước hoặc biến mất tạm thời các tổn thương, hoặc làm chậm sự phát triển của chúng.",
+        "head": "làm chậm sự phát triển",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "ung thư vú giai đoạn IV",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tuy nhiên, các tổn thương này không bị triệt tiêu hoàn toàn, mà vẫn có thể tiến triển trở lại.",
+        "head": "tiến triển trở lại",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "ung thư vú giai đoạn IV",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Vì vậy, không có tổng thời gian điều trị cụ thể cho giai đoạn này.",
+        "head": "tổng thời gian điều trị",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "ung thư vú giai đoạn IV",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Việc điều trị thường kéo dài cho đến khi bệnh ung thư bắt đầu tiến triển trở lại; hoặc cho đến khi xảy ra các tác dụng phụ có thể gây bất lợi cho bệnh nhân.",
+        "head": "tiến triển trở lại",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "ung thư vú giai đoạn IV",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Việc điều trị thường kéo dài cho đến khi bệnh ung thư bắt đầu tiến triển trở lại; hoặc cho đến khi xảy ra các tác dụng phụ có thể gây bất lợi cho bệnh nhân.",
+        "head": "tác dụng phụ",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "ung thư vú giai đoạn IV",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi đó, bệnh nhân có thể được chuyển qua loại thuốc khác.",
+        "head": "chuyển qua loại thuốc khác",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "ung thư vú giai đoạn IV",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Việc lựa chọn thuốc điều trị tùy thuộc vào tính chất sinh học của khối u (thụ thể nội tiết ER PR, thụ thể HER2, đột biến gen) cũng như tình trạng di căn của bệnh và thể trạng của bệnh nhân.",
+        "head": "thuốc điều trị",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "ung thư vú giai đoạn IV",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Việc lựa chọn thuốc điều trị tùy thuộc vào tính chất sinh học của khối u (thụ thể nội tiết ER PR, thụ thể HER2, đột biến gen) cũng như tình trạng di căn của bệnh và thể trạng của bệnh nhân.",
+        "head": "tính chất sinh học của khối u",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "ung thư vú giai đoạn IV",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Việc lựa chọn thuốc điều trị tùy thuộc vào tính chất sinh học của khối u (thụ thể nội tiết ER PR, thụ thể HER2, đột biến gen) cũng như tình trạng di căn của bệnh và thể trạng của bệnh nhân.",
+        "head": "tình trạng di căn",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "ung thư vú giai đoạn IV",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Việc lựa chọn thuốc điều trị tùy thuộc vào tính chất sinh học của khối u (thụ thể nội tiết ER PR, thụ thể HER2, đột biến gen) cũng như tình trạng di căn của bệnh và thể trạng của bệnh nhân.",
+        "head": "thể trạng",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "ung thư vú giai đoạn IV",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Hoàn toàn không có bất kỳ công thức mẫu cố định nào, mà có rất nhiều tình huống để cân nhắc chọn lựa.",
+        "head": "công thức mẫu cố định",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "ung thư vú giai đoạn IV",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Có thể tham khảo một vài ví dụ sau:",
+        "head": "ví dụ",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "ung thư vú giai đoạn IV",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu thụ thể nội tiết ER PR dương, thụ thể HER2 âm: C\nó thể được\nđiều trị trước bằng liệu pháp nội tiết (Tamoxifen hoặc chất ức chế Aromatase); các thuốc này có thể được kết hợp với một loại thuốc nhắm mục tiêu như chất ức chế CDK4 / 6, Everolimus hoặc chất ức chế PI3K.",
+        "head": "liệu pháp nội tiết",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "ung thư vú giai đoạn IV",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu thụ thể nội tiết ER PR dương, thụ thể HER2 âm: C\nó thể được\nđiều trị trước bằng liệu pháp nội tiết (Tamoxifen hoặc chất ức chế Aromatase); các thuốc này có thể được kết hợp với một loại thuốc nhắm mục tiêu như chất ức chế CDK4 / 6, Everolimus hoặc chất ức chế PI3K.",
+        "head": "Tamoxifen",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "ung thư vú giai đoạn IV",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu thụ thể nội tiết ER PR dương, thụ thể HER2 âm: C\nó thể được\nđiều trị trước bằng liệu pháp nội tiết (Tamoxifen hoặc chất ức chế Aromatase); các thuốc này có thể được kết hợp với một loại thuốc nhắm mục tiêu như chất ức chế CDK4 / 6, Everolimus hoặc chất ức chế PI3K.",
+        "head": "chất ức chế Aromatase",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "ung thư vú giai đoạn IV",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu thụ thể nội tiết ER PR dương, thụ thể HER2 âm: C\nó thể được\nđiều trị trước bằng liệu pháp nội tiết (Tamoxifen hoặc chất ức chế Aromatase); các thuốc này có thể được kết hợp với một loại thuốc nhắm mục tiêu như chất ức chế CDK4 / 6, Everolimus hoặc chất ức chế PI3K.",
+        "head": "chất ức chế CDK4 / 6",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "ung thư vú giai đoạn IV",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu thụ thể nội tiết ER PR dương, thụ thể HER2 âm: C\nó thể được\nđiều trị trước bằng liệu pháp nội tiết (Tamoxifen hoặc chất ức chế Aromatase); các thuốc này có thể được kết hợp với một loại thuốc nhắm mục tiêu như chất ức chế CDK4 / 6, Everolimus hoặc chất ức chế PI3K.",
+        "head": "Everolimus",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "ung thư vú giai đoạn IV",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu thụ thể nội tiết ER PR dương, thụ thể HER2 âm: C\nó thể được\nđiều trị trước bằng liệu pháp nội tiết (Tamoxifen hoặc chất ức chế Aromatase); các thuốc này có thể được kết hợp với một loại thuốc nhắm mục tiêu như chất ức chế CDK4 / 6, Everolimus hoặc chất ức chế PI3K.",
+        "head": "chất ức chế PI3K",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "ung thư vú giai đoạn IV",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tùy theo tình trạng mãn kinh, bác sĩ sẽ lựa chọn các phương pháp như: (4)    Chưa mãn kinh: Tamoxifen, có thể kết hợp cắt chức năng buồng trứng (bằng phẫu thuật, xạ trị hay bằng thuốc).",
+        "head": "Tamoxifen",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "ung thư vú giai đoạn IV",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tùy theo tình trạng mãn kinh, bác sĩ sẽ lựa chọn các phương pháp như: (4)    Chưa mãn kinh: Tamoxifen, có thể kết hợp cắt chức năng buồng trứng (bằng phẫu thuật, xạ trị hay bằng thuốc).",
+        "head": "cắt chức năng buồng trứng",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "ung thư vú giai đoạn IV",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tùy theo tình trạng mãn kinh, bác sĩ sẽ lựa chọn các phương pháp như: (4)    Chưa mãn kinh: Tamoxifen, có thể kết hợp cắt chức năng buồng trứng (bằng phẫu thuật, xạ trị hay bằng thuốc).",
+        "head": "phẫu thuật",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "ung thư vú giai đoạn IV",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tùy theo tình trạng mãn kinh, bác sĩ sẽ lựa chọn các phương pháp như: (4)    Chưa mãn kinh: Tamoxifen, có thể kết hợp cắt chức năng buồng trứng (bằng phẫu thuật, xạ trị hay bằng thuốc).",
+        "head": "xạ trị",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "ung thư vú giai đoạn IV",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đã mãn kinh hoặc đã cắt chức năng buồng trứng: Sử dụng nhóm thuốc ức chế Aromatase (Letrozole, Anastrozol, Exemestan); cân nhắc sử dụng thêm thuốc Biphosphonate nếu cần.",
+        "head": "thuốc ức chế Aromatase",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "ung thư vú giai đoạn IV",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đã mãn kinh hoặc đã cắt chức năng buồng trứng: Sử dụng nhóm thuốc ức chế Aromatase (Letrozole, Anastrozol, Exemestan); cân nhắc sử dụng thêm thuốc Biphosphonate nếu cần.",
+        "head": "Letrozole",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "ung thư vú giai đoạn IV",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đã mãn kinh hoặc đã cắt chức năng buồng trứng: Sử dụng nhóm thuốc ức chế Aromatase (Letrozole, Anastrozol, Exemestan); cân nhắc sử dụng thêm thuốc Biphosphonate nếu cần.",
+        "head": "Anastrozol",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "ung thư vú giai đoạn IV",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đã mãn kinh hoặc đã cắt chức năng buồng trứng: Sử dụng nhóm thuốc ức chế Aromatase (Letrozole, Anastrozol, Exemestan); cân nhắc sử dụng thêm thuốc Biphosphonate nếu cần.",
+        "head": "Exemestan",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "ung thư vú giai đoạn IV",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đã mãn kinh hoặc đã cắt chức năng buồng trứng: Sử dụng nhóm thuốc ức chế Aromatase (Letrozole, Anastrozol, Exemestan); cân nhắc sử dụng thêm thuốc Biphosphonate nếu cần.",
+        "head": "Biphosphonate",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "ung thư vú giai đoạn IV",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu thụ thể nội tiết ER PR âm, thụ thể HER2 âm (còn gọi là thể tam âm): Hóa trị là phương pháp điều trị chính.",
+        "head": "Hóa trị",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "ung thư vú giai đoạn IV",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Có thể phối hợp liệu pháp miễn dịch (nếu PD-L1 dương), hoặc phối hợp thuốc có hoạt chất ức chế PARP (Olaparib hoặc Talazoparib) (nếu đột biến BRCA dương),",
+        "head": "liệu pháp miễn dịch",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "ung thư vú giai đoạn IV",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Có thể phối hợp liệu pháp miễn dịch (nếu PD-L1 dương), hoặc phối hợp thuốc có hoạt chất ức chế PARP (Olaparib hoặc Talazoparib) (nếu đột biến BRCA dương),",
+        "head": "thuốc có hoạt chất ức chế PARP",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "ung thư vú giai đoạn IV",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Có thể phối hợp liệu pháp miễn dịch (nếu PD-L1 dương), hoặc phối hợp thuốc có hoạt chất ức chế PARP (Olaparib hoặc Talazoparib) (nếu đột biến BRCA dương),",
+        "head": "Olaparib",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "ung thư vú giai đoạn IV",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Có thể phối hợp liệu pháp miễn dịch (nếu PD-L1 dương), hoặc phối hợp thuốc có hoạt chất ức chế PARP (Olaparib hoặc Talazoparib) (nếu đột biến BRCA dương),",
+        "head": "Talazoparib",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "ung thư vú giai đoạn IV",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu thụ thể HER2 dương: L\niệu pháp điều trị thường là hóa trị kết hợp với thuốc kháng HER2 (Trastuzumab có thể kèm với Pertuzumab).",
+        "head": "hóa trị",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "ung thư vú giai đoạn IV",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu thụ thể HER2 dương: L\niệu pháp điều trị thường là hóa trị kết hợp với thuốc kháng HER2 (Trastuzumab có thể kèm với Pertuzumab).",
+        "head": "thuốc kháng HER2",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "ung thư vú giai đoạn IV",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu thụ thể HER2 dương: L\niệu pháp điều trị thường là hóa trị kết hợp với thuốc kháng HER2 (Trastuzumab có thể kèm với Pertuzumab).",
+        "head": "Trastuzumab",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "ung thư vú giai đoạn IV",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu thụ thể HER2 dương: L\niệu pháp điều trị thường là hóa trị kết hợp với thuốc kháng HER2 (Trastuzumab có thể kèm với Pertuzumab).",
+        "head": "Pertuzumab",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "ung thư vú giai đoạn IV",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Liệu pháp nội tiết có thể được kết hợp nếu thụ thể nội tiết ER PR dương.",
+        "head": "liệu pháp nội tiết",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "ung thư vú giai đoạn IV",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu thụ thể HER2 âm: C\nó thể cân nhắc điều trị\nvới thuốc liên hợp kháng thể Fam-Trastuzumab Deruxtecan.",
+        "head": "thuốc liên hợp kháng thể Fam-Trastuzumab Deruxtecan",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "ung thư vú giai đoạn IV",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu thụ thể HER2 âm, có đột biến gen BRCA trên mẫu máu xét nghiệm: Đ\niều trị bằng thuốc có hoạt chất ức chế PARP, chẳng hạn như Olaparib hoặc Talazoparib.",
+        "head": "thuốc có hoạt chất ức chế PARP",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "ung thư vú giai đoạn IV",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu thụ thể HER2 âm, có đột biến gen BRCA trên mẫu máu xét nghiệm: Đ\niều trị bằng thuốc có hoạt chất ức chế PARP, chẳng hạn như Olaparib hoặc Talazoparib.",
+        "head": "Olaparib",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "ung thư vú giai đoạn IV",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu thụ thể HER2 âm, có đột biến gen BRCA trên mẫu máu xét nghiệm: Đ\niều trị bằng thuốc có hoạt chất ức chế PARP, chẳng hạn như Olaparib hoặc Talazoparib.",
+        "head": "Talazoparib",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "ung thư vú giai đoạn IV",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Có thể kết hợp liệu pháp nội tiết (nếu thụ thể nội tiết ER PR dương tính) và thuốc hóa trị.",
+        "head": "liệu pháp nội tiết",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "ung thư vú giai đoạn IV",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Có thể kết hợp liệu pháp nội tiết (nếu thụ thể nội tiết ER PR dương tính) và thuốc hóa trị.",
+        "head": "thuốc hóa trị",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "ung thư vú giai đoạn IV",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu thụ thể HER2 âm, có đột biến gen PIK3CA trên mô u (hoặc trong máu), thụ thể nội tiết ER dương: C\nhất ức chế PIK3 có thể được dùng cùng với Fulvestrant cho phụ nữ sau mãn kinh.",
+        "head": "chất ức chế PIK3",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "ung thư vú giai đoạn IV",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu thụ thể HER2 âm, có đột biến gen PIK3CA trên mô u (hoặc trong máu), thụ thể nội tiết ER dương: C\nhất ức chế PIK3 có thể được dùng cùng với Fulvestrant cho phụ nữ sau mãn kinh.",
+        "head": "Fulvestrant",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "ung thư vú giai đoạn IV",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Mục đích điều trị ung thư vú giai đoạn IV nhằm giảm nhẹ triệu chứng và kéo dài thời gian sống cho người bệnh.",
+        "head": "giảm nhẹ triệu chứng",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "ung thư vú giai đoạn IV",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Mục đích điều trị ung thư vú giai đoạn IV nhằm giảm nhẹ triệu chứng và kéo dài thời gian sống cho người bệnh.",
+        "head": "kéo dài thời gian sống",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "ung thư vú giai đoạn IV",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Xạ trị và/hoặc phẫu thuật có thể được dùng trong một số trường hợp nhằm giảm nhẹ triệu chứng tại chỗ/tại vùng, chẳng hạn như:",
+        "head": "Xạ trị",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "ung thư vú giai đoạn IV",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Xạ trị và/hoặc phẫu thuật có thể được dùng trong một số trường hợp nhằm giảm nhẹ triệu chứng tại chỗ/tại vùng, chẳng hạn như:",
+        "head": "phẫu thuật",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "ung thư vú giai đoạn IV",
+        "tail_type": "disease"
+    }
+]

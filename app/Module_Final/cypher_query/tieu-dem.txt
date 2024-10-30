@@ -1,0 +1,360 @@
+
+MERGE (o1:symptom {id: 'tiểu_đêm_symptom'})
+MERGE (o2:disease {id: 'bệnh_disease'})
+MERGE (o1)-[r0:isSymptomOf]->(o2)
+SET r0.text = 'Tiểu đêm là nỗi ám ảnh thầm kín của nhiều người bệnh.'
+
+MERGE (o1:symptom {id: 'tiểu_đêm_symptom'})
+MERGE (o2:organ {id: 'sức_khỏe_organ'})
+MERGE (o1)-[r1:affects]->(o2)
+SET r1.text = 'Tình trạng này nếu không được khắc phục sớm sẽ gây mất ngủ, mệt mỏi, khó chịu, làm suy giảm sức khỏe nghiêm trọng.'
+
+MERGE (o1:symptom {id: 'tiểu_đêm_symptom'})
+MERGE (o2:symptom {id: 'mất_ngủ__mệt_mỏi__khó_chịu_symptom'})
+MERGE (o1)-[r2:causedBy]->(o2)
+SET r2.text = 'Tình trạng này nếu không được khắc phục sớm sẽ gây mất ngủ, mệt mỏi, khó chịu, làm suy giảm sức khỏe nghiêm trọng.'
+
+MERGE (o1:organ {id: 'bàng_quang_organ'})
+MERGE (o2:lifestyle {id: 'người_trưởng_thành_khỏe_mạnh_lifestyle'})
+MERGE (o1)-[r3:locatedIn]->(o2)
+SET r3.text = 'Bàng quang của người trưởng thành khỏe mạnh có thể chứa khoảng 300 - 400ml nước tiểu.'
+
+MERGE (o1:organ {id: 'bàng_quang_organ'})
+MERGE (o2:organ {id: 'não_bộ_organ'})
+MERGE (o1)-[r4:affects]->(o2)
+SET r4.text = 'Khi đầy, bàng quang sẽ kích thích dẫn truyền lên não bộ để tạo ra phản xạ đi tiểu.'
+
+MERGE (o1:organ {id: 'thần_kinh_organ'})
+MERGE (o2:organ {id: 'bàng_quang_organ'})
+MERGE (o1)-[r5:affects]->(o2)
+SET r5.text = 'Trong giấc ngủ đêm, thần kinh sẽ ức chế không cho bàng quang co bóp để tạo phản xạ đi tiểu, giúp duy trì giấc ngủ ngon.'
+
+MERGE (o1:symptom {id: 'tiểu_đêm_symptom'})
+MERGE (o2:symptom {id: 'thức_giấc_nhiều_hơn_1_lần_để_đi_tiểu_symptom'})
+MERGE (o1)-[r6:isSymptomOf]->(o2)
+SET r6.text = 'Tiểu đêm là tình trạng người bệnh thường xuyên thức giấc nhiều hơn 1 lần để đi tiểu.'
+
+MERGE (o1:disease {id: 'bệnh_disease'})
+MERGE (o2:lifestyle {id: 'tuổi_lifestyle'})
+MERGE (o1)-[r7:associatedWith]->(o2)
+SET r7.text = 'Tỷ lệ mắc bệnh tăng dần theo độ tuổi, đặc biệt là ở người trên 50 tuổi.'
+
+MERGE (o1:symptom {id: 'thức_dậy_đi_tiểu_nhiều_hơn_2_lần_trong_đêm_symptom'})
+MERGE (o2:disease {id: 'bệnh_lý_ở_thận_hoặc_một_số_vấn_đề_về_chức_năng_sinh_lý_disease'})
+MERGE (o1)-[r8:isSymptomOf]->(o2)
+SET r8.text = 'Vì thế, khi thức dậy đi tiểu nhiều hơn 2 lần trong đêm, bạn nên nhanh chóng đi khám.'
+
+MERGE (o1:lifestyle {id: 'ngủ_6_-_8_tiếng_lifestyle'})
+MERGE (o2:symptom {id: 'thức_giấc_giữa_đêm_để_đi_tiểu_symptom'})
+MERGE (o1)-[r9:preventedBy]->(o2)
+SET r9.text = 'Một người bình thường có thể ngủ 6 - 8 tiếng, không cần thức giấc giữa đêm để đi tiểu.'
+
+MERGE (o1:symptom {id: 'tiểu_đêm_symptom'})
+MERGE (o2:symptom {id: 'thức_dậy_nhiều_hơn_1_lần_trong_khi_ngủ_để_đi_tiểu_symptom'})
+MERGE (o1)-[r10:causedBy]->(o2)
+SET r10.text = 'Người bệnh tiểu đêm sẽ thức dậy nhiều hơn 1 lần trong khi ngủ để đi tiểu.'
+
+MERGE (o1:symptom {id: 'tiểu_đêm_symptom'})
+MERGE (o2:symptom {id: 'uể_oải__suy_nhược_cơ_thể_symptom'})
+MERGE (o1)-[r11:affects]->(o2)
+SET r11.text = 'Tình trạng này nếu kéo dài có thể làm người bệnh bị uể oải, thậm chí là suy nhược cơ thể.'
+
+MERGE (o1:symptom {id: 'đi_tiểu_2_-_3_lần_trong_đêm_symptom'})
+MERGE (o2:disease {id: 'ảnh_hưởng_thần_kinh_disease'})
+MERGE (o1)-[r12:isSymptomOf]->(o2)
+SET r12.text = 'Nếu tần suất tiểu đêm dày đặc nhưng không có biện pháp can thiệp kịp thời, người bệnh có thể đối mặt với các biến chứng như: Ảnh hưởng thần kinh: Đi tiểu 2 - 3 lần trong đêm gây mất ngủ kéo dài, ngủ không sâu giấc. Lâu dần, hệ thần kinh sẽ bị ảnh hưởng, trí nhớ sụt giảm, mệt mỏi khi thức dậy buổi sáng.'
+
+MERGE (o1:disease {id: 'ảnh_hưởng_thần_kinh_disease'})
+MERGE (o2:organ {id: 'hệ_thần_kinh_organ'})
+MERGE (o1)-[r13:affects]->(o2)
+SET r13.text = 'Nếu tần suất tiểu đêm dày đặc nhưng không có biện pháp can thiệp kịp thời, người bệnh có thể đối mặt với các biến chứng như: Ảnh hưởng thần kinh: Đi tiểu 2 - 3 lần trong đêm gây mất ngủ kéo dài, ngủ không sâu giấc. Lâu dần, hệ thần kinh sẽ bị ảnh hưởng, trí nhớ sụt giảm, mệt mỏi khi thức dậy buổi sáng.'
+
+MERGE (o1:disease {id: 'ảnh_hưởng_thần_kinh_disease'})
+MERGE (o2:symptom {id: 'mất_ngủ_kéo_dài_symptom'})
+MERGE (o1)-[r14:isSymptomOf]->(o2)
+SET r14.text = 'Nếu tần suất tiểu đêm dày đặc nhưng không có biện pháp can thiệp kịp thời, người bệnh có thể đối mặt với các biến chứng như: Ảnh hưởng thần kinh: Đi tiểu 2 - 3 lần trong đêm gây mất ngủ kéo dài, ngủ không sâu giấc. Lâu dần, hệ thần kinh sẽ bị ảnh hưởng, trí nhớ sụt giảm, mệt mỏi khi thức dậy buổi sáng.'
+
+MERGE (o1:disease {id: 'ảnh_hưởng_thần_kinh_disease'})
+MERGE (o2:symptom {id: 'trí_nhớ_sụt_giảm_symptom'})
+MERGE (o1)-[r15:isSymptomOf]->(o2)
+SET r15.text = 'Nếu tần suất tiểu đêm dày đặc nhưng không có biện pháp can thiệp kịp thời, người bệnh có thể đối mặt với các biến chứng như: Ảnh hưởng thần kinh: Đi tiểu 2 - 3 lần trong đêm gây mất ngủ kéo dài, ngủ không sâu giấc. Lâu dần, hệ thần kinh sẽ bị ảnh hưởng, trí nhớ sụt giảm, mệt mỏi khi thức dậy buổi sáng.'
+
+MERGE (o1:disease {id: 'ảnh_hưởng_thần_kinh_disease'})
+MERGE (o2:symptom {id: 'mệt_mỏi_khi_thức_dậy_buổi_sáng_symptom'})
+MERGE (o1)-[r16:isSymptomOf]->(o2)
+SET r16.text = 'Nếu tần suất tiểu đêm dày đặc nhưng không có biện pháp can thiệp kịp thời, người bệnh có thể đối mặt với các biến chứng như: Ảnh hưởng thần kinh: Đi tiểu 2 - 3 lần trong đêm gây mất ngủ kéo dài, ngủ không sâu giấc. Lâu dần, hệ thần kinh sẽ bị ảnh hưởng, trí nhớ sụt giảm, mệt mỏi khi thức dậy buổi sáng.'
+
+MERGE (o1:symptom {id: 'tiểu_đêm_nhiều_nhiều_lần_symptom'})
+MERGE (o2:disease {id: 'tăng_nguy_cơ_mắc_bệnh_tim_disease'})
+MERGE (o1)-[r17:isSymptomOf]->(o2)
+SET r17.text = 'Nếu tần suất tiểu đêm dày đặc nhưng không có biện pháp can thiệp kịp thời, người bệnh có thể đối mặt với các biến chứng như: Tăng nguy cơ mắc bệnh tim: Tiểu đêm nhiều nhiều lần ở người lớn tuổi làm tăng nguy cơ mắc bệnh huyết áp, tim mạch do phải thức dậy nhiều lần, giấc ngủ bị gián đoạn.'
+
+MERGE (o1:symptom {id: 'tiểu_đêm_nhiều_nhiều_lần_symptom'})
+MERGE (o2:disease {id: 'tăng_nguy_cơ_mắc_bệnh_huyết_áp_disease'})
+MERGE (o1)-[r18:isSymptomOf]->(o2)
+SET r18.text = 'Nếu tần suất tiểu đêm dày đặc nhưng không có biện pháp can thiệp kịp thời, người bệnh có thể đối mặt với các biến chứng như: Tăng nguy cơ mắc bệnh tim: Tiểu đêm nhiều nhiều lần ở người lớn tuổi làm tăng nguy cơ mắc bệnh huyết áp, tim mạch do phải thức dậy nhiều lần, giấc ngủ bị gián đoạn.'
+
+MERGE (o1:symptom {id: 'tiểu_đêm_nhiều_nhiều_lần_symptom'})
+MERGE (o2:disease {id: 'tăng_nguy_cơ_mắc_bệnh_tim_mạch_disease'})
+MERGE (o1)-[r19:isSymptomOf]->(o2)
+SET r19.text = 'Nếu tần suất tiểu đêm dày đặc nhưng không có biện pháp can thiệp kịp thời, người bệnh có thể đối mặt với các biến chứng như: Tăng nguy cơ mắc bệnh tim: Tiểu đêm nhiều nhiều lần ở người lớn tuổi làm tăng nguy cơ mắc bệnh huyết áp, tim mạch do phải thức dậy nhiều lần, giấc ngủ bị gián đoạn.'
+
+MERGE (o1:symptom {id: 'thức_dậy_nhiều_lần_symptom'})
+MERGE (o2:symptom {id: 'giấc_ngủ_bị_gián_đoạn_symptom'})
+MERGE (o1)-[r20:isSymptomOf]->(o2)
+SET r20.text = 'Nếu tần suất tiểu đêm dày đặc nhưng không có biện pháp can thiệp kịp thời, người bệnh có thể đối mặt với các biến chứng như: Tăng nguy cơ mắc bệnh tim: Tiểu đêm nhiều nhiều lần ở người lớn tuổi làm tăng nguy cơ mắc bệnh huyết áp, tim mạch do phải thức dậy nhiều lần, giấc ngủ bị gián đoạn.'
+
+MERGE (o1:symptom {id: 'tiểu_đêm_symptom'})
+MERGE (o2:disease {id: 'bệnh_lý_liên_quan_đến_tuyến_tiền_liệt_disease'})
+MERGE (o1)-[r21:causedBy]->(o2)
+SET r21.text = 'Nếu tần suất tiểu đêm dày đặc nhưng không có biện pháp can thiệp kịp thời, người bệnh có thể đối mặt với các biến chứng như: Tổn thương lâu dài: Tiểu đêm do những bệnh lý liên quan đến tuyến tiền liệt, u xơ tử cung, tiểu đường hay bệnh thận, nếu trì hoãn điều trị có thể gây tổn thương khó hồi phục, ảnh hưởng nghiêm trọng tới sức khỏe.'
+
+MERGE (o1:symptom {id: 'tiểu_đêm_symptom'})
+MERGE (o2:disease {id: 'u_xơ_tử_cung_disease'})
+MERGE (o1)-[r22:causedBy]->(o2)
+SET r22.text = 'Nếu tần suất tiểu đêm dày đặc nhưng không có biện pháp can thiệp kịp thời, người bệnh có thể đối mặt với các biến chứng như: Tổn thương lâu dài: Tiểu đêm do những bệnh lý liên quan đến tuyến tiền liệt, u xơ tử cung, tiểu đường hay bệnh thận, nếu trì hoãn điều trị có thể gây tổn thương khó hồi phục, ảnh hưởng nghiêm trọng tới sức khỏe.'
+
+MERGE (o1:symptom {id: 'tiểu_đêm_symptom'})
+MERGE (o2:disease {id: 'tiểu_đường_disease'})
+MERGE (o1)-[r23:causedBy]->(o2)
+SET r23.text = 'Nếu tần suất tiểu đêm dày đặc nhưng không có biện pháp can thiệp kịp thời, người bệnh có thể đối mặt với các biến chứng như: Tổn thương lâu dài: Tiểu đêm do những bệnh lý liên quan đến tuyến tiền liệt, u xơ tử cung, tiểu đường hay bệnh thận, nếu trì hoãn điều trị có thể gây tổn thương khó hồi phục, ảnh hưởng nghiêm trọng tới sức khỏe.'
+
+MERGE (o1:symptom {id: 'tiểu_đêm_symptom'})
+MERGE (o2:disease {id: 'bệnh_thận_disease'})
+MERGE (o1)-[r24:causedBy]->(o2)
+SET r24.text = 'Nếu tần suất tiểu đêm dày đặc nhưng không có biện pháp can thiệp kịp thời, người bệnh có thể đối mặt với các biến chứng như: Tổn thương lâu dài: Tiểu đêm do những bệnh lý liên quan đến tuyến tiền liệt, u xơ tử cung, tiểu đường hay bệnh thận, nếu trì hoãn điều trị có thể gây tổn thương khó hồi phục, ảnh hưởng nghiêm trọng tới sức khỏe.'
+
+MERGE (o1:lifestyle {id: 'uống_nước_lifestyle'})
+MERGE (o2:symptom {id: 'tần_suất_đi_tiểu_symptom'})
+MERGE (o1)-[r25:relatedTo]->(o2)
+SET r25.text = 'Người bệnh nên ghi chép lại những thông tin trong ngày như bạn đã uống gì và số lượng nước nạp vào là bao nhiêu cùng tần suất đi tiểu.'
+
+MERGE (o1:symptom {id: 'thông_tin_về_tần_suất_đi_tiểu_symptom'})
+MERGE (o2:treatment {id: 'bác_sĩ_treatment'})
+MERGE (o1)-[r26:diagnosedBy]->(o2)
+SET r26.text = 'Khi đi khám, bạn cần đưa đầy đủ các thông tin này cho bác sĩ.'
+
+MERGE (o1:symptom {id: 'tiểu_đêm_symptom'})
+MERGE (o2:disease {id: 'bệnh_về_bàng_quang_disease'})
+MERGE (o1)-[r27:relatedTo]->(o2)
+SET r27.text = 'Ngoài ra, người bệnh có thể được yêu cầu trả lời một số câu hỏi như: Tình trạng tiểu đêm bắt đầu từ khi nào? Phải thức dậy bao nhiêu lần để đi tiểu? Cơ thể có tạo ra ít nước tiểu hơn trước đây không? Có bất kỳ dấu hiệu bất thường nào khác không? Đang sử dụng các loại thuốc nào? Có tiền sử mắc các bệnh về bàng quang hoặc tiểu đường hay không?'
+
+MERGE (o1:symptom {id: 'tiểu_đêm_symptom'})
+MERGE (o2:disease {id: 'tiểu_đường_disease'})
+MERGE (o1)-[r28:relatedTo]->(o2)
+SET r28.text = 'Ngoài ra, người bệnh có thể được yêu cầu trả lời một số câu hỏi như: Tình trạng tiểu đêm bắt đầu từ khi nào? Phải thức dậy bao nhiêu lần để đi tiểu? Cơ thể có tạo ra ít nước tiểu hơn trước đây không? Có bất kỳ dấu hiệu bất thường nào khác không? Đang sử dụng các loại thuốc nào? Có tiền sử mắc các bệnh về bàng quang hoặc tiểu đường hay không?'
+
+MERGE (o1:test {id: 'đo_đường_huyết_test'})
+MERGE (o2:disease {id: 'tiểu_đường_disease'})
+MERGE (o1)-[r29:diagnosedBy]->(o2)
+SET r29.text = 'Bên cạnh đó, bác sĩ có thể chỉ định người bệnh tiến hành các xét nghiệm gồm: Đo đường huyết (xác định có mắc tiểu đường hay không).'
+
+MERGE (o1:test {id: 'xét_nghiệm_ure_máu_test'})
+MERGE (o2:disease {id: 'bệnh_thận_disease'})
+MERGE (o1)-[r30:relatedTo]->(o2)
+SET r30.text = 'Bên cạnh đó, bác sĩ có thể chỉ định người bệnh tiến hành các xét nghiệm gồm: Xét nghiệm ure máu.'
+
+MERGE (o1:test {id: 'nghiệm_pháp_nhịn_nước_test'})
+MERGE (o2:symptom {id: 'tiểu_đêm_symptom'})
+MERGE (o1)-[r31:relatedTo]->(o2)
+SET r31.text = 'Bên cạnh đó, bác sĩ có thể chỉ định người bệnh tiến hành các xét nghiệm gồm: Nghiệm pháp nhịn nước (uid deprivation test ).'
+
+MERGE (o1:test {id: 'cấy_nước_tiểu_test'})
+MERGE (o2:disease {id: 'nhiễm_trùng_đường_tiểu_disease'})
+MERGE (o1)-[r32:diagnosedBy]->(o2)
+SET r32.text = 'Bên cạnh đó, bác sĩ có thể chỉ định người bệnh tiến hành các xét nghiệm gồm: Cấy nước tiểu.'
+
+MERGE (o1:test {id: 'siêu_âm_test'})
+MERGE (o2:disease {id: 'bệnh_lý_liên_quan_đến_tuyến_tiền_liệt_disease'})
+MERGE (o1)-[r33:diagnosedBy]->(o2)
+SET r33.text = 'Bên cạnh đó, bác sĩ có thể chỉ định người bệnh tiến hành các xét nghiệm gồm: Siêu âm, chụp CT.'
+
+MERGE (o1:test {id: 'siêu_âm_test'})
+MERGE (o2:disease {id: 'u_xơ_tử_cung_disease'})
+MERGE (o1)-[r34:diagnosedBy]->(o2)
+SET r34.text = 'Bên cạnh đó, bác sĩ có thể chỉ định người bệnh tiến hành các xét nghiệm gồm: Siêu âm, chụp CT.'
+
+MERGE (o1:test {id: 'chụp_ct_test'})
+MERGE (o2:disease {id: 'bệnh_lý_liên_quan_đến_tuyến_tiền_liệt_disease'})
+MERGE (o1)-[r35:diagnosedBy]->(o2)
+SET r35.text = 'Bên cạnh đó, bác sĩ có thể chỉ định người bệnh tiến hành các xét nghiệm gồm: Siêu âm, chụp CT.'
+
+MERGE (o1:test {id: 'chụp_ct_test'})
+MERGE (o2:disease {id: 'u_xơ_tử_cung_disease'})
+MERGE (o1)-[r36:diagnosedBy]->(o2)
+SET r36.text = 'Bên cạnh đó, bác sĩ có thể chỉ định người bệnh tiến hành các xét nghiệm gồm: Siêu âm, chụp CT.'
+
+MERGE (o1:test {id: 'nội_soi_bàng_quang_test'})
+MERGE (o2:disease {id: 'bệnh_lý_liên_quan_đến_bàng_quang_disease'})
+MERGE (o1)-[r37:diagnosedBy]->(o2)
+SET r37.text = 'Bên cạnh đó, bác sĩ có thể chỉ định người bệnh tiến hành các xét nghiệm gồm: Nội soi bàng quang'
+
+MERGE (o1:symptom {id: 'tiểu_đêm_symptom'})
+MERGE (o2:treatment {id: 'sử_dụng_thuốc_sớm_hơn_vào_ban_ngày_treatment'})
+MERGE (o1)-[r38:treatedBy]->(o2)
+SET r38.text = 'Tùy thuộc vào nguyên nhân gây tiểu đêm, bác sĩ sẽ có hướng điều trị phù hợp, cụ thể: Do tác động từ thuốc: Người bệnh nên sử dụng thuốc sớm hơn vào ban ngày.'
+
+MERGE (o1:symptom {id: 'tiểu_đêm_symptom'})
+MERGE (o2:disease {id: 'chứng_ngưng_thở_khi_ngủ_disease'})
+MERGE (o1)-[r39:causedBy]->(o2)
+SET r39.text = 'Tùy thuộc vào nguyên nhân gây tiểu đêm, bác sĩ sẽ có hướng điều trị phù hợp, cụ thể: Do chứng ngưng thở khi ngủ: Người bệnh được khuyến nghị thăm khám các chuyên gia về giấc ngủ hay bác sĩ tim mạch.'
+
+MERGE (o1:disease {id: 'chứng_ngưng_thở_khi_ngủ_disease'})
+MERGE (o2:treatment {id: 'thăm_khám_các_chuyên_gia_về_giấc_ngủ_treatment'})
+MERGE (o1)-[r40:treatedBy]->(o2)
+SET r40.text = 'Tùy thuộc vào nguyên nhân gây tiểu đêm, bác sĩ sẽ có hướng điều trị phù hợp, cụ thể: Do chứng ngưng thở khi ngủ: Người bệnh được khuyến nghị thăm khám các chuyên gia về giấc ngủ hay bác sĩ tim mạch.'
+
+MERGE (o1:disease {id: 'chứng_ngưng_thở_khi_ngủ_disease'})
+MERGE (o2:treatment {id: 'bác_sĩ_tim_mạch_treatment'})
+MERGE (o1)-[r41:treatedBy]->(o2)
+SET r41.text = 'Tùy thuộc vào nguyên nhân gây tiểu đêm, bác sĩ sẽ có hướng điều trị phù hợp, cụ thể: Do chứng ngưng thở khi ngủ: Người bệnh được khuyến nghị thăm khám các chuyên gia về giấc ngủ hay bác sĩ tim mạch.'
+
+MERGE (o1:symptom {id: 'tiểu_đêm_symptom'})
+MERGE (o2:disease {id: 'bệnh_lý_nghiêm_trọng_disease'})
+MERGE (o1)-[r42:isSymptomOf]->(o2)
+SET r42.text = 'Tùy thuộc vào nguyên nhân gây tiểu đêm, bác sĩ sẽ có hướng điều trị phù hợp, cụ thể: Do bệnh lý: Tiểu đêm có thể là dấu hiệu của bệnh lý nghiêm trọng như đái tháo đường, nhiễm trùng đường tiểu… Các trường hợp tiểu đêm do bệnh lý thường sẽ thuyên giảm khi bệnh được kiểm soát tốt.'
+
+MERGE (o1:symptom {id: 'tiểu_đêm_symptom'})
+MERGE (o2:disease {id: 'đái_tháo_đường_disease'})
+MERGE (o1)-[r43:isSymptomOf]->(o2)
+SET r43.text = 'Tùy thuộc vào nguyên nhân gây tiểu đêm, bác sĩ sẽ có hướng điều trị phù hợp, cụ thể: Do bệnh lý: Tiểu đêm có thể là dấu hiệu của bệnh lý nghiêm trọng như đái tháo đường, nhiễm trùng đường tiểu… Các trường hợp tiểu đêm do bệnh lý thường sẽ thuyên giảm khi bệnh được kiểm soát tốt.'
+
+MERGE (o1:symptom {id: 'tiểu_đêm_symptom'})
+MERGE (o2:disease {id: 'nhiễm_trùng_đường_tiểu_disease'})
+MERGE (o1)-[r44:isSymptomOf]->(o2)
+SET r44.text = 'Tùy thuộc vào nguyên nhân gây tiểu đêm, bác sĩ sẽ có hướng điều trị phù hợp, cụ thể: Do bệnh lý: Tiểu đêm có thể là dấu hiệu của bệnh lý nghiêm trọng như đái tháo đường, nhiễm trùng đường tiểu… Các trường hợp tiểu đêm do bệnh lý thường sẽ thuyên giảm khi bệnh được kiểm soát tốt.'
+
+MERGE (o1:lifestyle {id: 'hạn_chế_uống_nước_lifestyle'})
+MERGE (o2:symptom {id: 'tiểu_đêm_symptom'})
+MERGE (o1)-[r45:preventedBy]->(o2)
+SET r45.text = 'Hạn chế uống nước (ít nhất 2 tiếng) trước khi ngủ.'
+
+MERGE (o1:symptom {id: 'tiểu_đêm_symptom'})
+MERGE (o2:lifestyle {id: 'hạn_chế_uống_nước_lifestyle'})
+MERGE (o1)-[r46:aggravatedBy]->(o2)
+SET r46.text = 'Hạn chế uống nước (ít nhất 2 tiếng) trước khi ngủ.'
+
+MERGE (o1:food {id: 'rượu_bia__cà_phê__trà_food'})
+MERGE (o2:symptom {id: 'tiểu_đêm_symptom'})
+MERGE (o1)-[r47:aggravatedBy]->(o2)
+SET r47.text = 'Tránh sử dụng các thức uống lợi tiểu vào buổi tối như rượu bia, cà phê, trà…'
+
+MERGE (o1:symptom {id: 'tiểu_đêm_symptom'})
+MERGE (o2:food {id: 'rượu_bia__cà_phê__trà_food'})
+MERGE (o1)-[r48:aggravatedBy]->(o2)
+SET r48.text = 'Tránh sử dụng các thức uống lợi tiểu vào buổi tối như rượu bia, cà phê, trà…'
+
+MERGE (o1:lifestyle {id: 'ăn_mặn_lifestyle'})
+MERGE (o2:symptom {id: 'tiểu_đêm_symptom'})
+MERGE (o1)-[r49:aggravatedBy]->(o2)
+SET r49.text = 'Trong bữa ăn tối, tránh ăn mặn, hạn chế ăn các loại trái cây nhiều nước như bưởi, dưa hấu, cam…'
+
+MERGE (o1:symptom {id: 'tiểu_đêm_symptom'})
+MERGE (o2:lifestyle {id: 'ăn_mặn_lifestyle'})
+MERGE (o1)-[r50:aggravatedBy]->(o2)
+SET r50.text = 'Trong bữa ăn tối, tránh ăn mặn, hạn chế ăn các loại trái cây nhiều nước như bưởi, dưa hấu, cam…'
+
+MERGE (o1:food {id: 'bưởi__dưa_hấu__cam_food'})
+MERGE (o2:symptom {id: 'tiểu_đêm_symptom'})
+MERGE (o1)-[r51:aggravatedBy]->(o2)
+SET r51.text = 'Trong bữa ăn tối, tránh ăn mặn, hạn chế ăn các loại trái cây nhiều nước như bưởi, dưa hấu, cam…'
+
+MERGE (o1:symptom {id: 'tiểu_đêm_symptom'})
+MERGE (o2:food {id: 'bưởi__dưa_hấu__cam_food'})
+MERGE (o1)-[r52:aggravatedBy]->(o2)
+SET r52.text = 'Trong bữa ăn tối, tránh ăn mặn, hạn chế ăn các loại trái cây nhiều nước như bưởi, dưa hấu, cam…'
+
+MERGE (o1:lifestyle {id: 'tập_thói_quen_đi_tiểu_trước_khi_ngủ_lifestyle'})
+MERGE (o2:symptom {id: 'tiểu_đêm_symptom'})
+MERGE (o1)-[r53:preventedBy]->(o2)
+SET r53.text = 'Tập thói quen đi tiểu trước khi ngủ, kê cao chân khi ngủ.'
+
+MERGE (o1:lifestyle {id: 'kê_cao_chân_khi_ngủ_lifestyle'})
+MERGE (o2:symptom {id: 'tiểu_đêm_symptom'})
+MERGE (o1)-[r54:preventedBy]->(o2)
+SET r54.text = 'Tập thói quen đi tiểu trước khi ngủ, kê cao chân khi ngủ.'
+
+MERGE (o1:symptom {id: 'tiểu_đêm_symptom'})
+MERGE (o2:lifestyle {id: 'tập_thói_quen_đi_tiểu_trước_khi_ngủ_lifestyle'})
+MERGE (o1)-[r55:aggravatedBy]->(o2)
+SET r55.text = 'Tập thói quen đi tiểu trước khi ngủ, kê cao chân khi ngủ.'
+
+MERGE (o1:symptom {id: 'tiểu_đêm_symptom'})
+MERGE (o2:lifestyle {id: 'kê_cao_chân_khi_ngủ_lifestyle'})
+MERGE (o1)-[r56:aggravatedBy]->(o2)
+SET r56.text = 'Tập thói quen đi tiểu trước khi ngủ, kê cao chân khi ngủ.'
+
+MERGE (o1:lifestyle {id: 'thư_giãn__giữ_tinh_thần_thoải_mái_lifestyle'})
+MERGE (o2:symptom {id: 'tiểu_đêm_symptom'})
+MERGE (o1)-[r57:preventedBy]->(o2)
+SET r57.text = 'Thư giãn, giữ tinh thần thoải mái trước khi ngủ.'
+
+MERGE (o1:symptom {id: 'tiểu_đêm_symptom'})
+MERGE (o2:lifestyle {id: 'thư_giãn__giữ_tinh_thần_thoải_mái_lifestyle'})
+MERGE (o1)-[r58:aggravatedBy]->(o2)
+SET r58.text = 'Thư giãn, giữ tinh thần thoải mái trước khi ngủ.'
+
+MERGE (o1:symptom {id: 'tiểu_đêm_symptom'})
+MERGE (o2:symptom {id: 'té_ngã_symptom'})
+MERGE (o1)-[r59:associatedWith]->(o2)
+SET r59.text = 'Nếu có người nhà mắc bệnh nên chuẩn bị lối đi thuận tiện từ chỗ nằm đến nhà vệ sinh để tránh té ngã.'
+
+MERGE (o1:lifestyle {id: 'tập_thể_dục_lifestyle'})
+MERGE (o2:symptom {id: 'tiểu_đêm_symptom'})
+MERGE (o1)-[r60:preventedBy]->(o2)
+SET r60.text = 'Ngoài ra, người bệnh nên tăng cường tập thể dục để kiểm soát tốt cân nặng, tránh tình trạng thừa cân, béo phì.'
+
+MERGE (o1:symptom {id: 'tiểu_đêm_symptom'})
+MERGE (o2:lifestyle {id: 'tập_thể_dục_lifestyle'})
+MERGE (o1)-[r61:aggravatedBy]->(o2)
+SET r61.text = 'Ngoài ra, người bệnh nên tăng cường tập thể dục để kiểm soát tốt cân nặng, tránh tình trạng thừa cân, béo phì.'
+
+MERGE (o1:disease {id: 'thừa_cân__béo_phì_disease'})
+MERGE (o2:symptom {id: 'tiểu_đêm_symptom'})
+MERGE (o1)-[r62:aggravatedBy]->(o2)
+SET r62.text = 'Ngoài ra, người bệnh nên tăng cường tập thể dục để kiểm soát tốt cân nặng, tránh tình trạng thừa cân, béo phì.'
+
+MERGE (o1:symptom {id: 'tiểu_đêm_symptom'})
+MERGE (o2:disease {id: 'thừa_cân__béo_phì_disease'})
+MERGE (o1)-[r63:aggravatedBy]->(o2)
+SET r63.text = 'Ngoài ra, người bệnh nên tăng cường tập thể dục để kiểm soát tốt cân nặng, tránh tình trạng thừa cân, béo phì.'
+
+MERGE (o1:treatment {id: 'thuốc_điều_hòa_huyết_áp_treatment'})
+MERGE (o2:symptom {id: 'tiểu_đêm_symptom'})
+MERGE (o1)-[r64:aggravatedBy]->(o2)
+SET r64.text = 'Nếu đang sử dụng các loại thuốc điều hòa huyết áp, bạn nên trao đổi với bác sĩ về tác dụng phụ lợi tiểu của thuốc.'
+
+MERGE (o1:symptom {id: 'tiểu_đêm_symptom'})
+MERGE (o2:treatment {id: 'thuốc_điều_hòa_huyết_áp_treatment'})
+MERGE (o1)-[r65:aggravatedBy]->(o2)
+SET r65.text = 'Nếu đang sử dụng các loại thuốc điều hòa huyết áp, bạn nên trao đổi với bác sĩ về tác dụng phụ lợi tiểu của thuốc.'
+
+MERGE (o1:treatment {id: 'thuốc_lợi_tiểu_treatment'})
+MERGE (o2:symptom {id: 'tiểu_đêm_symptom'})
+MERGE (o1)-[r66:aggravatedBy]->(o2)
+SET r66.text = 'Các thuốc có tính lợi tiểu sẽ làm tăng số lần đi tiểu nếu được dùng vào buổi tối.'
+
+MERGE (o1:symptom {id: 'tiểu_đêm_symptom'})
+MERGE (o2:treatment {id: 'thuốc_lợi_tiểu_treatment'})
+MERGE (o1)-[r67:aggravatedBy]->(o2)
+SET r67.text = 'Các thuốc có tính lợi tiểu sẽ làm tăng số lần đi tiểu nếu được dùng vào buổi tối.'
+
+MERGE (o1:symptom {id: 'tiểu_đêm_symptom'})
+MERGE (o2:lifestyle {id: 'chất_lượng_giấc_ngủ_lifestyle'})
+MERGE (o1)-[r68:affects]->(o2)
+SET r68.text = 'Chứng tiểu đêm khiến người bệnh phải thức giấc nhiều lần, ảnh hưởng lớn đến chất lượng giấc ngủ và sức khỏe tinh thần.'
+
+MERGE (o1:symptom {id: 'tiểu_đêm_symptom'})
+MERGE (o2:lifestyle {id: 'sức_khỏe_tinh_thần_lifestyle'})
+MERGE (o1)-[r69:affects]->(o2)
+SET r69.text = 'Chứng tiểu đêm khiến người bệnh phải thức giấc nhiều lần, ảnh hưởng lớn đến chất lượng giấc ngủ và sức khỏe tinh thần.'
+
+MERGE (o1:symptom {id: 'tiểu_đêm_symptom'})
+MERGE (o2:disease {id: 'bệnh_lý_nguy_hiểm_disease'})
+MERGE (o1)-[r70:isSymptomOf]->(o2)
+SET r70.text = 'Chứng tiểu đêm khiến người bệnh phải thức giấc nhiều lần, ảnh hưởng lớn đến chất lượng giấc ngủ và sức khỏe tinh thần.'
+
+MERGE (o1:symptom {id: 'tiểu_đêm_symptom'})
+MERGE (o2:treatment {id: 'khám_bác_sĩ_treatment'})
+MERGE (o1)-[r71:treatedBy]->(o2)
+SET r71.text = 'Nếu tình trạng này kéo dài không thuyên giảm, bạn nên nhanh chóng đi khám để được bác sĩ tư vấn và điều trị kịp thời.'

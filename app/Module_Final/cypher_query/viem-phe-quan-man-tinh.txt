@@ -1,0 +1,640 @@
+
+MERGE (o1:disease {id: 'viêm_phế_quản_mãn_tính_disease'})
+MERGE (o2:organ {id: 'hệ_hô_hấp_organ'})
+MERGE (o1)-[r0:relatedTo]->(o2)
+SET r0.text = 'Viêm phế quản mãn tính được xem là bệnh lý nguy hiểm liên quan đến hệ hô hấp.'
+
+MERGE (o1:disease {id: 'viêm_phế_quản_mạn_tính_disease'})
+MERGE (o2:disease {id: 'bệnh_phổi_tắc_nghẽn_mãn_tính_disease'})
+MERGE (o1)-[r1:isSymptomOf]->(o2)
+SET r1.text = 'Nếu không được phát hiện sớm và điều trị kịp thời, viêm phế quản mạn tính có thể biến chứng dẫn đến bệnh phổi tắc nghẽn mãn tính, suy hô hấp, và nghiêm trọng hơn là ung thư phế quản, ung thư phổi hoặc lao phổi.'
+
+MERGE (o1:disease {id: 'viêm_phế_quản_mạn_tính_disease'})
+MERGE (o2:disease {id: 'suy_hô_hấp_disease'})
+MERGE (o1)-[r2:isSymptomOf]->(o2)
+SET r2.text = 'Nếu không được phát hiện sớm và điều trị kịp thời, viêm phế quản mạn tính có thể biến chứng dẫn đến bệnh phổi tắc nghẽn mãn tính, suy hô hấp, và nghiêm trọng hơn là ung thư phế quản, ung thư phổi hoặc lao phổi.'
+
+MERGE (o1:disease {id: 'viêm_phế_quản_mạn_tính_disease'})
+MERGE (o2:disease {id: 'ung_thư_phế_quản_disease'})
+MERGE (o1)-[r3:isSymptomOf]->(o2)
+SET r3.text = 'Nếu không được phát hiện sớm và điều trị kịp thời, viêm phế quản mạn tính có thể biến chứng dẫn đến bệnh phổi tắc nghẽn mãn tính, suy hô hấp, và nghiêm trọng hơn là ung thư phế quản, ung thư phổi hoặc lao phổi.'
+
+MERGE (o1:disease {id: 'viêm_phế_quản_mạn_tính_disease'})
+MERGE (o2:disease {id: 'ung_thư_phổi_disease'})
+MERGE (o1)-[r4:isSymptomOf]->(o2)
+SET r4.text = 'Nếu không được phát hiện sớm và điều trị kịp thời, viêm phế quản mạn tính có thể biến chứng dẫn đến bệnh phổi tắc nghẽn mãn tính, suy hô hấp, và nghiêm trọng hơn là ung thư phế quản, ung thư phổi hoặc lao phổi.'
+
+MERGE (o1:disease {id: 'viêm_phế_quản_mạn_tính_disease'})
+MERGE (o2:disease {id: 'lao_phổi_disease'})
+MERGE (o1)-[r5:isSymptomOf]->(o2)
+SET r5.text = 'Nếu không được phát hiện sớm và điều trị kịp thời, viêm phế quản mạn tính có thể biến chứng dẫn đến bệnh phổi tắc nghẽn mãn tính, suy hô hấp, và nghiêm trọng hơn là ung thư phế quản, ung thư phổi hoặc lao phổi.'
+
+MERGE (o1:disease {id: 'viêm_phế_quản_mãn_tính_disease'})
+MERGE (o2:symptom {id: 'triệu_chứng_symptom'})
+MERGE (o1)-[r6:isSymptomOf]->(o2)
+SET r6.text = 'Vậy triệu chứng viêm phế quản mãn tính là gì, viêm phế quản mãn tính có nguy hiểm không, cách điều trị và phòng ngừa bệnh như thế nào?'
+
+MERGE (o1:disease {id: 'viêm_phế_quản_mạn_tính_disease'})
+MERGE (o2:disease {id: 'bệnh_phổi_tắc_nghẽn_mạn_tính_(copd)_disease'})
+MERGE (o1)-[r7:isSymptomOf]->(o2)
+SET r7.text = 'Viêm phế quản mạn tính là một loại của bệnh phổi tắc nghẽn mạn tính (COPD).'
+
+MERGE (o1:disease {id: 'viêm_phế_quản_cấp_tính_disease'})
+MERGE (o2:symptom {id: 'tổn_thương_nghiêm_trọng_symptom'})
+MERGE (o1)-[r8:isSymptomOf]->(o2)
+SET r8.text = 'Đây là tình trạng viêm phế quản cấp tính nhưng không được điều trị dứt điểm gây tái đi tái lại nhiều lần, dẫn đến việc các ống phế quản bị tổn thương nghiêm trọng tạo ra nhiều đàm, gây ho và khó thở.'
+
+MERGE (o1:disease {id: 'viêm_phế_quản_cấp_tính_disease'})
+MERGE (o2:symptom {id: 'tạo_ra_nhiều_đàm_symptom'})
+MERGE (o1)-[r9:isSymptomOf]->(o2)
+SET r9.text = 'Đây là tình trạng viêm phế quản cấp tính nhưng không được điều trị dứt điểm gây tái đi tái lại nhiều lần, dẫn đến việc các ống phế quản bị tổn thương nghiêm trọng tạo ra nhiều đàm, gây ho và khó thở.'
+
+MERGE (o1:disease {id: 'viêm_phế_quản_cấp_tính_disease'})
+MERGE (o2:symptom {id: 'ho_symptom'})
+MERGE (o1)-[r10:isSymptomOf]->(o2)
+SET r10.text = 'Đây là tình trạng viêm phế quản cấp tính nhưng không được điều trị dứt điểm gây tái đi tái lại nhiều lần, dẫn đến việc các ống phế quản bị tổn thương nghiêm trọng tạo ra nhiều đàm, gây ho và khó thở.'
+
+MERGE (o1:disease {id: 'viêm_phế_quản_cấp_tính_disease'})
+MERGE (o2:symptom {id: 'khó_thở_symptom'})
+MERGE (o1)-[r11:isSymptomOf]->(o2)
+SET r11.text = 'Đây là tình trạng viêm phế quản cấp tính nhưng không được điều trị dứt điểm gây tái đi tái lại nhiều lần, dẫn đến việc các ống phế quản bị tổn thương nghiêm trọng tạo ra nhiều đàm, gây ho và khó thở.'
+
+MERGE (o1:disease {id: 'viêm_phế_quản_mãn_tính_disease'})
+MERGE (o2:disease {id: 'bệnh_phổi_tắc_nghẽn_mạn_tính_disease'})
+MERGE (o1)-[r12:isSymptomOf]->(o2)
+SET r12.text = 'Nếu không được khắc phục sớm, viêm phế quản mãn tính có thể biến chứng trở thành bệnh phổi tắc nghẽn mạn tính vô cùng nguy hiểm, khó điều trị, để lại nhiều hậu quả lâu dài và thậm chí có thể đe dọa đến tính mạng của người bệnh.'
+
+MERGE (o1:disease {id: 'viêm_phế_quản_mãn_tính_disease'})
+MERGE (o2:symptom {id: 'ho_symptom'})
+MERGE (o1)-[r13:isSymptomOf]->(o2)
+SET r13.text = 'Bệnh viêm phế quản mãn tính thường xuất hiện ở người lớn tuổi, có các triệu chứng đi kèm như ho, khạc đờm, khó thở.'
+
+MERGE (o1:disease {id: 'viêm_phế_quản_mãn_tính_disease'})
+MERGE (o2:symptom {id: 'khạc_đờm_symptom'})
+MERGE (o1)-[r14:isSymptomOf]->(o2)
+SET r14.text = 'Bệnh viêm phế quản mãn tính thường xuất hiện ở người lớn tuổi, có các triệu chứng đi kèm như ho, khạc đờm, khó thở.'
+
+MERGE (o1:disease {id: 'viêm_phế_quản_mãn_tính_disease'})
+MERGE (o2:symptom {id: 'khó_thở_symptom'})
+MERGE (o1)-[r15:isSymptomOf]->(o2)
+SET r15.text = 'Bệnh viêm phế quản mãn tính thường xuất hiện ở người lớn tuổi, có các triệu chứng đi kèm như ho, khạc đờm, khó thở.'
+
+MERGE (o1:disease {id: 'viêm_phế_quản_disease'})
+MERGE (o2:location {id: 'việt_nam_location'})
+MERGE (o1)-[r16:relatedTo]->(o2)
+SET r16.text = 'Theo BS.CKII Trần Vũ Minh Phát, viêm phế quản nói chung và viêm phế quản mạn tính nói riêng là một bệnh lý phổ biến tại Việt Nam, có thể xuất hiện ở bất kỳ độ tuổi nào.'
+
+MERGE (o1:lifestyle {id: 'người_nghiện_hút_thuốc_lá_lifestyle'})
+MERGE (o2:symptom {id: 'tổn_hại_phổi_nghiêm_trọng_symptom'})
+MERGE (o1)-[r17:causedBy]->(o2)
+SET r17.text = 'Tuy nhiên, trong đó có những đối tượng có nguy cơ mắc bệnh cao hơn bao gồm:    Người nghiện hút thuốc lá: Trong khói thuốc lá có chứa một số chất triệt tiêu lông mao bên trong phổi, gây tổn hại phổi nghiêm trọng.'
+
+MERGE (o1:disease {id: 'viêm_phế_quản_mạn_tính_disease'})
+MERGE (o2:lifestyle {id: 'hút_thuốc_lá_lifestyle'})
+MERGE (o1)-[r18:causedBy]->(o2)
+SET r18.text = 'Theo thống kê, có hơn 90% người mắc bệnh viêm phế quản mạn tính có tiền sử hút thuốc lá.'
+
+MERGE (o1:lifestyle {id: 'người_thường_xuyên_tiếp_xúc_với_nguồn_không_khí_độc_hại_lifestyle'})
+MERGE (o2:cause {id: 'môi_trường_ô_nhiễm_cause'})
+MERGE (o1)-[r19:causedBy]->(o2)
+SET r19.text = 'Người thường xuyên tiếp xúc với nguồn không khí độc hại: Làm việc trong môi trường ô nhiễm, thường xuyên hít phải bụi bẩn, khí độc hoặc tiếp xúc nhiều với các chất gây kích thích đường hô hấp như bông gòn, bụi vải, khói hoá học&#8230;'
+
+MERGE (o1:lifestyle {id: 'người_thường_xuyên_tiếp_xúc_với_nguồn_không_khí_độc_hại_lifestyle'})
+MERGE (o2:cause {id: 'bụi_bẩn_cause'})
+MERGE (o1)-[r20:causedBy]->(o2)
+SET r20.text = 'Người thường xuyên tiếp xúc với nguồn không khí độc hại: Làm việc trong môi trường ô nhiễm, thường xuyên hít phải bụi bẩn, khí độc hoặc tiếp xúc nhiều với các chất gây kích thích đường hô hấp như bông gòn, bụi vải, khói hoá học&#8230;'
+
+MERGE (o1:lifestyle {id: 'người_thường_xuyên_tiếp_xúc_với_nguồn_không_khí_độc_hại_lifestyle'})
+MERGE (o2:cause {id: 'khí_độc_cause'})
+MERGE (o1)-[r21:causedBy]->(o2)
+SET r21.text = 'Người thường xuyên tiếp xúc với nguồn không khí độc hại: Làm việc trong môi trường ô nhiễm, thường xuyên hít phải bụi bẩn, khí độc hoặc tiếp xúc nhiều với các chất gây kích thích đường hô hấp như bông gòn, bụi vải, khói hoá học&#8230;'
+
+MERGE (o1:lifestyle {id: 'người_thường_xuyên_tiếp_xúc_với_nguồn_không_khí_độc_hại_lifestyle'})
+MERGE (o2:cause {id: 'bông_gòn_cause'})
+MERGE (o1)-[r22:causedBy]->(o2)
+SET r22.text = 'Người thường xuyên tiếp xúc với nguồn không khí độc hại: Làm việc trong môi trường ô nhiễm, thường xuyên hít phải bụi bẩn, khí độc hoặc tiếp xúc nhiều với các chất gây kích thích đường hô hấp như bông gòn, bụi vải, khói hoá học&#8230;'
+
+MERGE (o1:lifestyle {id: 'người_thường_xuyên_tiếp_xúc_với_nguồn_không_khí_độc_hại_lifestyle'})
+MERGE (o2:cause {id: 'bụi_vải_cause'})
+MERGE (o1)-[r23:causedBy]->(o2)
+SET r23.text = 'Người thường xuyên tiếp xúc với nguồn không khí độc hại: Làm việc trong môi trường ô nhiễm, thường xuyên hít phải bụi bẩn, khí độc hoặc tiếp xúc nhiều với các chất gây kích thích đường hô hấp như bông gòn, bụi vải, khói hoá học&#8230;'
+
+MERGE (o1:lifestyle {id: 'người_thường_xuyên_tiếp_xúc_với_nguồn_không_khí_độc_hại_lifestyle'})
+MERGE (o2:cause {id: 'khói_hoá_học_cause'})
+MERGE (o1)-[r24:causedBy]->(o2)
+SET r24.text = 'Người thường xuyên tiếp xúc với nguồn không khí độc hại: Làm việc trong môi trường ô nhiễm, thường xuyên hít phải bụi bẩn, khí độc hoặc tiếp xúc nhiều với các chất gây kích thích đường hô hấp như bông gòn, bụi vải, khói hoá học&#8230;'
+
+MERGE (o1:lifestyle {id: 'người_có_sức_đề_kháng_yếu_lifestyle'})
+MERGE (o2:symptom {id: 'suy_giảm_hệ_thống_miễn_dịch_symptom'})
+MERGE (o1)-[r25:causedBy]->(o2)
+SET r25.text = 'Người có sức đề kháng yếu, hoặc có tiền sử mắc bệnh mạn tính gây ra tình trạng suy giảm hệ thống miễn dịch.'
+
+MERGE (o1:symptom {id: 'các_triệu_chứng_viêm_phế_quản_mãn_tính_symptom'})
+MERGE (o2:disease {id: 'viêm_phế_quản_mãn_tính_disease'})
+MERGE (o1)-[r26:isSymptomOf]->(o2)
+SET r26.text = 'Tùy vào từng trường hợp cụ thể, mà các triệu chứng viêm phế quản mãn tính, tần suất và mức độ nghiêm trọng có thể sẽ khác nhau.'
+
+MERGE (o1:symptom {id: 'ho_dai_dẳng_kéo_dài_symptom'})
+MERGE (o2:disease {id: 'viêm_phế_quản_mãn_tính_disease'})
+MERGE (o1)-[r27:isSymptomOf]->(o2)
+SET r27.text = 'Thông thường, bệnh viêm phế quản mãn tính bao gồm những triệu chứng đặc trưng như:  Ho dai dẳng kéo dài Khạc đờm Khó thở, thở khò khè.'
+
+MERGE (o1:symptom {id: 'khạc_đờm_symptom'})
+MERGE (o2:disease {id: 'viêm_phế_quản_mãn_tính_disease'})
+MERGE (o1)-[r28:isSymptomOf]->(o2)
+SET r28.text = 'Thông thường, bệnh viêm phế quản mãn tính bao gồm những triệu chứng đặc trưng như:  Ho dai dẳng kéo dài Khạc đờm Khó thở, thở khò khè.'
+
+MERGE (o1:symptom {id: 'khó_thở_symptom'})
+MERGE (o2:disease {id: 'viêm_phế_quản_mãn_tính_disease'})
+MERGE (o1)-[r29:isSymptomOf]->(o2)
+SET r29.text = 'Thông thường, bệnh viêm phế quản mãn tính bao gồm những triệu chứng đặc trưng như:  Ho dai dẳng kéo dài Khạc đờm Khó thở, thở khò khè.'
+
+MERGE (o1:symptom {id: 'thở_khò_khè_symptom'})
+MERGE (o2:disease {id: 'viêm_phế_quản_mãn_tính_disease'})
+MERGE (o1)-[r30:isSymptomOf]->(o2)
+SET r30.text = 'Thông thường, bệnh viêm phế quản mãn tính bao gồm những triệu chứng đặc trưng như:  Ho dai dẳng kéo dài Khạc đờm Khó thở, thở khò khè.'
+
+MERGE (o1:symptom {id: 'chất_đờm_nhầy_symptom'})
+MERGE (o2:disease {id: 'viêm_phế_quản_mãn_tính_disease'})
+MERGE (o1)-[r31:isSymptomOf]->(o2)
+SET r31.text = 'Cụ thể, chất đờm nhầy thường có màu xanh, vàng, trắng.'
+
+MERGE (o1:cause {id: 'sự_sản_xuất_chất_nhầy_trong_phổi_cause'})
+MERGE (o2:disease {id: 'viêm_phế_quản_mãn_tính_disease'})
+MERGE (o1)-[r32:causedBy]->(o2)
+SET r32.text = 'Theo thời gian, lượng chất nhầy này sẽ tăng dần lên do sự sản xuất chất nhầy trong phổi và tích tụ lại trong các ống phế quản làm hạn chế luồng không khí.'
+
+MERGE (o1:cause {id: 'tích_tụ_lại_trong_các_ống_phế_quản_cause'})
+MERGE (o2:disease {id: 'viêm_phế_quản_mãn_tính_disease'})
+MERGE (o1)-[r33:causedBy]->(o2)
+SET r33.text = 'Theo thời gian, lượng chất nhầy này sẽ tăng dần lên do sự sản xuất chất nhầy trong phổi và tích tụ lại trong các ống phế quản làm hạn chế luồng không khí.'
+
+MERGE (o1:symptom {id: 'khó_thở_symptom'})
+MERGE (o2:disease {id: 'viêm_phế_quản_mãn_tính_disease'})
+MERGE (o1)-[r34:isSymptomOf]->(o2)
+SET r34.text = 'Điều này là nguyên nhân gây ra việc khó thở, có thể đi kèm với thở khò khè ở người bị viêm phế quản mạn tính.'
+
+MERGE (o1:symptom {id: 'thở_khò_khè_symptom'})
+MERGE (o2:disease {id: 'viêm_phế_quản_mãn_tính_disease'})
+MERGE (o1)-[r35:isSymptomOf]->(o2)
+SET r35.text = 'Điều này là nguyên nhân gây ra việc khó thở, có thể đi kèm với thở khò khè ở người bị viêm phế quản mạn tính.'
+
+MERGE (o1:symptom {id: 'triệu_chứng_này_symptom'})
+MERGE (o2:disease {id: 'viêm_phế_quản_mãn_tính_disease'})
+MERGE (o1)-[r36:isSymptomOf]->(o2)
+SET r36.text = 'Triệu chứng này sẽ trở nên nghiêm trọng hơn nếu không được điều trị kịp thời.'
+
+MERGE (o1:symptom {id: 'mệt_mỏi_symptom'})
+MERGE (o2:disease {id: 'viêm_phế_quản_mãn_tính_disease'})
+MERGE (o1)-[r37:isSymptomOf]->(o2)
+SET r37.text = 'Bên cạnh đó, còn có những dấu hiệuviêm phế quản mãn tính khác như: mệt mỏi, ớn lạnh, sốt, tức ngực, tắc nghẽn xoang hoặc hôi miệng.'
+
+MERGE (o1:symptom {id: 'ớn_lạnh_symptom'})
+MERGE (o2:disease {id: 'viêm_phế_quản_mãn_tính_disease'})
+MERGE (o1)-[r38:isSymptomOf]->(o2)
+SET r38.text = 'Bên cạnh đó, còn có những dấu hiệuviêm phế quản mãn tính khác như: mệt mỏi, ớn lạnh, sốt, tức ngực, tắc nghẽn xoang hoặc hôi miệng.'
+
+MERGE (o1:symptom {id: 'sốt_symptom'})
+MERGE (o2:disease {id: 'viêm_phế_quản_mãn_tính_disease'})
+MERGE (o1)-[r39:isSymptomOf]->(o2)
+SET r39.text = 'Bên cạnh đó, còn có những dấu hiệuviêm phế quản mãn tính khác như: mệt mỏi, ớn lạnh, sốt, tức ngực, tắc nghẽn xoang hoặc hôi miệng.'
+
+MERGE (o1:symptom {id: 'tức_ngực_symptom'})
+MERGE (o2:disease {id: 'viêm_phế_quản_mãn_tính_disease'})
+MERGE (o1)-[r40:isSymptomOf]->(o2)
+SET r40.text = 'Bên cạnh đó, còn có những dấu hiệuviêm phế quản mãn tính khác như: mệt mỏi, ớn lạnh, sốt, tức ngực, tắc nghẽn xoang hoặc hôi miệng.'
+
+MERGE (o1:symptom {id: 'tắc_nghẽn_xoang_symptom'})
+MERGE (o2:disease {id: 'viêm_phế_quản_mãn_tính_disease'})
+MERGE (o1)-[r41:isSymptomOf]->(o2)
+SET r41.text = 'Bên cạnh đó, còn có những dấu hiệuviêm phế quản mãn tính khác như: mệt mỏi, ớn lạnh, sốt, tức ngực, tắc nghẽn xoang hoặc hôi miệng.'
+
+MERGE (o1:symptom {id: 'hôi_miệng_symptom'})
+MERGE (o2:disease {id: 'viêm_phế_quản_mãn_tính_disease'})
+MERGE (o1)-[r42:isSymptomOf]->(o2)
+SET r42.text = 'Bên cạnh đó, còn có những dấu hiệuviêm phế quản mãn tính khác như: mệt mỏi, ớn lạnh, sốt, tức ngực, tắc nghẽn xoang hoặc hôi miệng.'
+
+MERGE (o1:symptom {id: 'da_và_môi_xanh_xao__nhợt_nhạt_symptom'})
+MERGE (o2:disease {id: 'viêm_phế_quản_mãn_tính_disease'})
+MERGE (o1)-[r43:isSymptomOf]->(o2)
+SET r43.text = 'Do tính trạng thiếu oxy trong máu, nên da và môi của những người bệnh giai đoạn sau thường xanh xao, nhợt nhạt.'
+
+MERGE (o1:symptom {id: 'thiếu_oxy_trong_máu_symptom'})
+MERGE (o2:disease {id: 'viêm_phế_quản_mãn_tính_disease'})
+MERGE (o1)-[r44:isSymptomOf]->(o2)
+SET r44.text = 'Do tính trạng thiếu oxy trong máu, nên da và môi của những người bệnh giai đoạn sau thường xanh xao, nhợt nhạt.'
+
+MERGE (o1:symptom {id: 'phù_ngoại_biên_symptom'})
+MERGE (o2:disease {id: 'viêm_phế_quản_mãn_tính_disease'})
+MERGE (o1)-[r45:isSymptomOf]->(o2)
+SET r45.text = 'Một số trường hợp còn có thể dẫn tới hiện tượng phù ngoại biên, sưng ở chân và mắt cá chân.'
+
+MERGE (o1:symptom {id: 'sưng_ở_chân_và_mắt_cá_chân_symptom'})
+MERGE (o2:disease {id: 'viêm_phế_quản_mãn_tính_disease'})
+MERGE (o1)-[r46:isSymptomOf]->(o2)
+SET r46.text = 'Một số trường hợp còn có thể dẫn tới hiện tượng phù ngoại biên, sưng ở chân và mắt cá chân.'
+
+MERGE (o1:cause {id: 'khói_thuốc_lá_cause'})
+MERGE (o2:disease {id: 'viêm_phế_quản_mãn_tính_disease'})
+MERGE (o1)-[r47:causedBy]->(o2)
+SET r47.text = 'Khói thuốc lá được xem là kẻ thù đối với sức khỏe con người, gây ảnh hưởng không tốt đến phổi và phế quản.'
+
+MERGE (o1:cause {id: 'tiêu_diệt_lông_mao_bên_trong_phổi_cause'})
+MERGE (o2:disease {id: 'viêm_phế_quản_mãn_tính_disease'})
+MERGE (o1)-[r48:causedBy]->(o2)
+SET r48.text = 'Nhiều nghiên cứu đã chỉ ra rằng, trong khói thuốc lá có chứa một số chất làm tiêu diệt lông mao bên trong phổi, gây tổn thương nghiêm trọng.'
+
+MERGE (o1:cause {id: 'những_tổn_thương_này_cause'})
+MERGE (o2:disease {id: 'viêm_phế_quản_mãn_tính_disease'})
+MERGE (o1)-[r49:causedBy]->(o2)
+SET r49.text = 'Những tổn thương này nếu kéo dài sẽ khiến bệnh viêm phế quản mãn tiến triển nguy hiểm hơn.'
+
+MERGE (o1:cause {id: 'hút_thuốc_thụ_động_cause'})
+MERGE (o2:disease {id: 'viêm_phế_quản_mãn_tính_disease'})
+MERGE (o1)-[r50:causedBy]->(o2)
+SET r50.text = 'Không chỉ hút thuốc chủ động, mà ngay cả việc thường xuyên hít phải khói thuốc lá (hút thuốc thụ động) cũng là chính là nguyên nhân gây viêm phế quản mạn tính.'
+
+MERGE (o1:cause {id: 'các_chất_thải_độc_hại_cause'})
+MERGE (o2:disease {id: 'viêm_phế_quản_mãn_tính_disease'})
+MERGE (o1)-[r51:causedBy]->(o2)
+SET r51.text = 'Các chất thải độc hại như khí công nghiệp, chất thải hóa học, khí độc… được xem là những yếu tố nguy hiểm gây kích thích đến phổi, dẫn đến tình trạng viêm phế quản mãn tính.'
+
+MERGE (o1:cause {id: 'khí_công_nghiệp_cause'})
+MERGE (o2:disease {id: 'viêm_phế_quản_mãn_tính_disease'})
+MERGE (o1)-[r52:causedBy]->(o2)
+SET r52.text = 'Các chất thải độc hại như khí công nghiệp, chất thải hóa học, khí độc… được xem là những yếu tố nguy hiểm gây kích thích đến phổi, dẫn đến tình trạng viêm phế quản mãn tính.'
+
+MERGE (o1:cause {id: 'chất_thải_hóa_học_cause'})
+MERGE (o2:disease {id: 'viêm_phế_quản_mãn_tính_disease'})
+MERGE (o1)-[r53:causedBy]->(o2)
+SET r53.text = 'Các chất thải độc hại như khí công nghiệp, chất thải hóa học, khí độc… được xem là những yếu tố nguy hiểm gây kích thích đến phổi, dẫn đến tình trạng viêm phế quản mãn tính.'
+
+MERGE (o1:cause {id: 'khí_độc_cause'})
+MERGE (o2:disease {id: 'viêm_phế_quản_mãn_tính_disease'})
+MERGE (o1)-[r54:causedBy]->(o2)
+SET r54.text = 'Các chất thải độc hại như khí công nghiệp, chất thải hóa học, khí độc… được xem là những yếu tố nguy hiểm gây kích thích đến phổi, dẫn đến tình trạng viêm phế quản mãn tính.'
+
+MERGE (o1:cause {id: 'môi_trường_ô_nhiễm_cause'})
+MERGE (o2:disease {id: 'viêm_phế_quản_mãn_tính_disease'})
+MERGE (o1)-[r55:causedBy]->(o2)
+SET r55.text = 'Do đó, những người thường xuyên làm việc trong môi trường ô nhiễm, tiếp xúc trực tiếp với các chất kích thích phổi như công nhân xây dựng, công nhân làm việc ở mỏ than, xưởng dệt vải… sẽ có nguy cơ cao mắc bệnh viêm phế quản mạn tính.'
+
+MERGE (o1:cause {id: 'các_chất_kích_thích_phổi_cause'})
+MERGE (o2:disease {id: 'viêm_phế_quản_mãn_tính_disease'})
+MERGE (o1)-[r56:causedBy]->(o2)
+SET r56.text = 'Do đó, những người thường xuyên làm việc trong môi trường ô nhiễm, tiếp xúc trực tiếp với các chất kích thích phổi như công nhân xây dựng, công nhân làm việc ở mỏ than, xưởng dệt vải… sẽ có nguy cơ cao mắc bệnh viêm phế quản mạn tính.'
+
+MERGE (o1:cause {id: 'công_nhân_xây_dựng_cause'})
+MERGE (o2:disease {id: 'viêm_phế_quản_mãn_tính_disease'})
+MERGE (o1)-[r57:causedBy]->(o2)
+SET r57.text = 'Do đó, những người thường xuyên làm việc trong môi trường ô nhiễm, tiếp xúc trực tiếp với các chất kích thích phổi như công nhân xây dựng, công nhân làm việc ở mỏ than, xưởng dệt vải… sẽ có nguy cơ cao mắc bệnh viêm phế quản mạn tính.'
+
+MERGE (o1:cause {id: 'công_nhân_làm_việc_ở_mỏ_than_cause'})
+MERGE (o2:disease {id: 'viêm_phế_quản_mãn_tính_disease'})
+MERGE (o1)-[r58:causedBy]->(o2)
+SET r58.text = 'Do đó, những người thường xuyên làm việc trong môi trường ô nhiễm, tiếp xúc trực tiếp với các chất kích thích phổi như công nhân xây dựng, công nhân làm việc ở mỏ than, xưởng dệt vải… sẽ có nguy cơ cao mắc bệnh viêm phế quản mạn tính.'
+
+MERGE (o1:cause {id: 'xưởng_dệt_vải_cause'})
+MERGE (o2:disease {id: 'viêm_phế_quản_mãn_tính_disease'})
+MERGE (o1)-[r59:causedBy]->(o2)
+SET r59.text = 'Do đó, những người thường xuyên làm việc trong môi trường ô nhiễm, tiếp xúc trực tiếp với các chất kích thích phổi như công nhân xây dựng, công nhân làm việc ở mỏ than, xưởng dệt vải… sẽ có nguy cơ cao mắc bệnh viêm phế quản mạn tính.'
+
+MERGE (o1:treatment {id: 'các_biện_pháp_để_tự_bảo_vệ_sức_khỏe_treatment'})
+MERGE (o2:disease {id: 'viêm_phế_quản_mãn_tính_disease'})
+MERGE (o1)-[r60:treatedBy]->(o2)
+SET r60.text = 'Mọi người cần phải sử dụng các biện pháp để tự bảo vệ sức khỏe, trang bị đồ bảo hộ đạt chất lượng tốt trong suốt quá trình lao động.'
+
+MERGE (o1:treatment {id: 'trang_bị_đồ_bảo_hộ_đạt_chất_lượng_tốt_treatment'})
+MERGE (o2:disease {id: 'viêm_phế_quản_mãn_tính_disease'})
+MERGE (o1)-[r61:treatedBy]->(o2)
+SET r61.text = 'Mọi người cần phải sử dụng các biện pháp để tự bảo vệ sức khỏe, trang bị đồ bảo hộ đạt chất lượng tốt trong suốt quá trình lao động.'
+
+MERGE (o1:cause {id: 'người_lớn_tuổi_cause'})
+MERGE (o2:disease {id: 'viêm_phế_quản_mãn_tính_disease'})
+MERGE (o1)-[r62:causedBy]->(o2)
+SET r62.text = 'Người lớn tuổi và trẻ sơ sinh có sức đề kháng yếu; những người thường xuyên bị cảm lạnh, mắc một số bệnh cấp hoặc mạn tính làm suy giảm hệ miễn dịch rất dễ bị virus tấn công, có nguy cơ cao nhiễm bệnh viêm phế quản mãn tính.'
+
+MERGE (o1:cause {id: 'trẻ_sơ_sinh_cause'})
+MERGE (o2:disease {id: 'viêm_phế_quản_mãn_tính_disease'})
+MERGE (o1)-[r63:causedBy]->(o2)
+SET r63.text = 'Người lớn tuổi và trẻ sơ sinh có sức đề kháng yếu; những người thường xuyên bị cảm lạnh, mắc một số bệnh cấp hoặc mạn tính làm suy giảm hệ miễn dịch rất dễ bị virus tấn công, có nguy cơ cao nhiễm bệnh viêm phế quản mãn tính.'
+
+MERGE (o1:cause {id: 'sức_đề_kháng_yếu_cause'})
+MERGE (o2:disease {id: 'viêm_phế_quản_mãn_tính_disease'})
+MERGE (o1)-[r64:causedBy]->(o2)
+SET r64.text = 'Người lớn tuổi và trẻ sơ sinh có sức đề kháng yếu; những người thường xuyên bị cảm lạnh, mắc một số bệnh cấp hoặc mạn tính làm suy giảm hệ miễn dịch rất dễ bị virus tấn công, có nguy cơ cao nhiễm bệnh viêm phế quản mãn tính.'
+
+MERGE (o1:cause {id: 'cảm_lạnh_cause'})
+MERGE (o2:disease {id: 'viêm_phế_quản_mãn_tính_disease'})
+MERGE (o1)-[r65:causedBy]->(o2)
+SET r65.text = 'Người lớn tuổi và trẻ sơ sinh có sức đề kháng yếu; những người thường xuyên bị cảm lạnh, mắc một số bệnh cấp hoặc mạn tính làm suy giảm hệ miễn dịch rất dễ bị virus tấn công, có nguy cơ cao nhiễm bệnh viêm phế quản mãn tính.'
+
+MERGE (o1:cause {id: 'bệnh_cấp_cause'})
+MERGE (o2:disease {id: 'viêm_phế_quản_mãn_tính_disease'})
+MERGE (o1)-[r66:causedBy]->(o2)
+SET r66.text = 'Người lớn tuổi và trẻ sơ sinh có sức đề kháng yếu; những người thường xuyên bị cảm lạnh, mắc một số bệnh cấp hoặc mạn tính làm suy giảm hệ miễn dịch rất dễ bị virus tấn công, có nguy cơ cao nhiễm bệnh viêm phế quản mãn tính.'
+
+MERGE (o1:cause {id: 'bệnh_mạn_tính_cause'})
+MERGE (o2:disease {id: 'viêm_phế_quản_mãn_tính_disease'})
+MERGE (o1)-[r67:causedBy]->(o2)
+SET r67.text = 'Người lớn tuổi và trẻ sơ sinh có sức đề kháng yếu; những người thường xuyên bị cảm lạnh, mắc một số bệnh cấp hoặc mạn tính làm suy giảm hệ miễn dịch rất dễ bị virus tấn công, có nguy cơ cao nhiễm bệnh viêm phế quản mãn tính.'
+
+MERGE (o1:cause {id: 'suy_giảm_hệ_miễn_dịch_cause'})
+MERGE (o2:disease {id: 'viêm_phế_quản_mãn_tính_disease'})
+MERGE (o1)-[r68:causedBy]->(o2)
+SET r68.text = 'Người lớn tuổi và trẻ sơ sinh có sức đề kháng yếu; những người thường xuyên bị cảm lạnh, mắc một số bệnh cấp hoặc mạn tính làm suy giảm hệ miễn dịch rất dễ bị virus tấn công, có nguy cơ cao nhiễm bệnh viêm phế quản mãn tính.'
+
+MERGE (o1:cause {id: 'sức_đề_kháng_yếu_cause'})
+MERGE (o2:disease {id: 'viêm_phế_quản_mãn_tính_disease'})
+MERGE (o1)-[r69:causedBy]->(o2)
+SET r69.text = 'Ngoài ra, sức đề kháng yếu, không đủ sức chống chọi các tác nhân gây bệnh là nguyên nhân khiến bệnh viêm phế quản cấp tính tái đi tái lại nhiều lần, sau đó trở nên nghiêm trọng hơn và cuối cùng dẫn tới tình trạng viêm phế quản mạn tính.'
+
+MERGE (o1:disease {id: 'viêm_phế_quản_cấp_tính_disease'})
+MERGE (o2:disease {id: 'viêm_phế_quản_mãn_tính_disease'})
+MERGE (o1)-[r70:causedBy]->(o2)
+SET r70.text = 'Ngoài ra, sức đề kháng yếu, không đủ sức chống chọi các tác nhân gây bệnh là nguyên nhân khiến bệnh viêm phế quản cấp tính tái đi tái lại nhiều lần, sau đó trở nên nghiêm trọng hơn và cuối cùng dẫn tới tình trạng viêm phế quản mạn tính.'
+
+MERGE (o1:disease {id: 'viêm_phế_quản_mãn_tính_disease'})
+MERGE (o2:disease {id: 'bệnh_phổi_tắc_nghẽn_mạn_tính_disease'})
+MERGE (o1)-[r71:relatedTo]->(o2)
+SET r71.text = 'BS.CKII Trần Vũ Minh Phát cho biết, bệnh viêm phế quản mãn tính có thể bị nhầm lẫn với những bệnh lý đường hô hấp khác như: bệnh phổi tắc nghẽn mạn tính, hen phế quản, viêm phổi… do không gây ra những triệu chứng điển hình.'
+
+MERGE (o1:disease {id: 'viêm_phế_quản_mãn_tính_disease'})
+MERGE (o2:disease {id: 'hen_phế_quản_disease'})
+MERGE (o1)-[r72:relatedTo]->(o2)
+SET r72.text = 'BS.CKII Trần Vũ Minh Phát cho biết, bệnh viêm phế quản mãn tính có thể bị nhầm lẫn với những bệnh lý đường hô hấp khác như: bệnh phổi tắc nghẽn mạn tính, hen phế quản, viêm phổi… do không gây ra những triệu chứng điển hình.'
+
+MERGE (o1:disease {id: 'viêm_phế_quản_mãn_tính_disease'})
+MERGE (o2:disease {id: 'viêm_phổi_disease'})
+MERGE (o1)-[r73:relatedTo]->(o2)
+SET r73.text = 'BS.CKII Trần Vũ Minh Phát cho biết, bệnh viêm phế quản mãn tính có thể bị nhầm lẫn với những bệnh lý đường hô hấp khác như: bệnh phổi tắc nghẽn mạn tính, hen phế quản, viêm phổi… do không gây ra những triệu chứng điển hình.'
+
+MERGE (o1:test {id: 'thăm_khám_lâm_sàng_test'})
+MERGE (o2:disease {id: 'viêm_phế_quản_mãn_tính_disease'})
+MERGE (o1)-[r74:diagnosedBy]->(o2)
+SET r74.text = 'Để xác định bệnh và đưa ra phác đồ điều trị phù hợp, bác sĩ sẽ thực hiện thăm khám lâm sàng, sau đó chỉ định người bệnh thực hiện các xét nghiệm cần thiết sau:'
+
+MERGE (o1:test {id: 'đo_chức_năng_thông_khí_phổi_test'})
+MERGE (o2:disease {id: 'viêm_phế_quản_mãn_tính_disease'})
+MERGE (o1)-[r75:diagnosedBy]->(o2)
+SET r75.text = 'Đo chức năng thông khí phổi được xem là phương pháp có giá trị chẩn đoán cao, có khả năng loại trừ những nguyên nhân gây ra các cơn ho kéo dài thường xuất hiện trong bệnh giãn phế quản, viêm phổi&#8230;'
+
+MERGE (o1:test {id: 'đo_chức_năng_thông_khí_phổi_test'})
+MERGE (o2:disease {id: 'bệnh_giãn_phế_quản_disease'})
+MERGE (o1)-[r76:diagnosedBy]->(o2)
+SET r76.text = 'Đo chức năng thông khí phổi được xem là phương pháp có giá trị chẩn đoán cao, có khả năng loại trừ những nguyên nhân gây ra các cơn ho kéo dài thường xuất hiện trong bệnh giãn phế quản, viêm phổi&#8230;'
+
+MERGE (o1:test {id: 'đo_chức_năng_thông_khí_phổi_test'})
+MERGE (o2:disease {id: 'viêm_phổi_disease'})
+MERGE (o1)-[r77:diagnosedBy]->(o2)
+SET r77.text = 'Đo chức năng thông khí phổi được xem là phương pháp có giá trị chẩn đoán cao, có khả năng loại trừ những nguyên nhân gây ra các cơn ho kéo dài thường xuất hiện trong bệnh giãn phế quản, viêm phổi&#8230;'
+
+MERGE (o1:test {id: 'kết_quả_đo_chức_năng_thông_khí_phổi_bình_thường_test'})
+MERGE (o2:disease {id: 'viêm_phế_quản_mãn_tính_disease'})
+MERGE (o1)-[r78:diagnosedBy]->(o2)
+SET r78.text = 'Nếu kết quả đo chức năng thông khí phổi bình thường, nhu mô phổi không bị tổn thương, người bệnh sẽ được chẩn đoán mắc bệnh viêm phế quản mạn tính.'
+
+MERGE (o1:test {id: 'nhu_mô_phổi_không_bị_tổn_thương_test'})
+MERGE (o2:disease {id: 'viêm_phế_quản_mãn_tính_disease'})
+MERGE (o1)-[r79:diagnosedBy]->(o2)
+SET r79.text = 'Nếu kết quả đo chức năng thông khí phổi bình thường, nhu mô phổi không bị tổn thương, người bệnh sẽ được chẩn đoán mắc bệnh viêm phế quản mạn tính.'
+
+MERGE (o1:test {id: 'kết_quả_kiểm_tra_cho_thấy_hình_ảnh_rối_loạn_thông_khí_tắc_nghẽn_test'})
+MERGE (o2:disease {id: 'bệnh_phổi_tắc_nghẽn_mạn_tính_disease'})
+MERGE (o1)-[r80:diagnosedBy]->(o2)
+SET r80.text = 'Trong trường hợp kết quả kiểm tra cho thấy hình ảnh rối loạn thông khí tắc nghẽn, người bệnh sẽ được chẩn đoán mắc bệnh phổi tắc nghẽn mạn tính.'
+
+MERGE (o1:test {id: 'chụp_x-quang_phổi_test'})
+MERGE (o2:disease {id: 'viêm_phế_quản_mãn_tính_disease'})
+MERGE (o1)-[r81:diagnosedBy]->(o2)
+SET r81.text = 'Chụp x-quang phổi cũng là một trong những phương pháp giúp chẩn đoán viêm phế quản mãn tính.'
+
+MERGE (o1:organ {id: 'các_mạch_máu_organ'})
+MERGE (o2:organ {id: 'phổi_organ'})
+MERGE (o1)-[r82:locatedIn]->(o2)
+SET r82.text = 'Thông qua phim chụp x-quang, bác sĩ có thể quan sát được tình trạng phổi của người bệnh; nhận thấy được những dấu hiệu như các mạch máu, ống dẫn khí, tổ chức kẽ phế quản dày lên.'
+
+MERGE (o1:organ {id: 'ống_dẫn_khí_organ'})
+MERGE (o2:organ {id: 'phổi_organ'})
+MERGE (o1)-[r83:locatedIn]->(o2)
+SET r83.text = 'Thông qua phim chụp x-quang, bác sĩ có thể quan sát được tình trạng phổi của người bệnh; nhận thấy được những dấu hiệu như các mạch máu, ống dẫn khí, tổ chức kẽ phế quản dày lên.'
+
+MERGE (o1:organ {id: 'tổ_chức_kẽ_phế_quản_organ'})
+MERGE (o2:organ {id: 'phổi_organ'})
+MERGE (o1)-[r84:locatedIn]->(o2)
+SET r84.text = 'Thông qua phim chụp x-quang, bác sĩ có thể quan sát được tình trạng phổi của người bệnh; nhận thấy được những dấu hiệu như các mạch máu, ống dẫn khí, tổ chức kẽ phế quản dày lên.'
+
+MERGE (o1:test {id: 'chụp_x-quang_phổi_test'})
+MERGE (o2:disease {id: 'viêm_phổi_kẽ_disease'})
+MERGE (o1)-[r85:diagnosedBy]->(o2)
+SET r85.text = 'Bên cạnh đó, chụp x-quang phổi còn có ý nghĩa đặc biệt quan trọng trong việc xác định, phân biệt và loại trừ những khả năng do các bệnh lý gây tổn thương nhu mô phổi như: viêm phổi kẽ, lao phổi, ung thư phổi; bệnh lý giãn phế quản… có cùng triệu chứng là những cơn ho kéo dài.'
+
+MERGE (o1:test {id: 'chụp_x-quang_phổi_test'})
+MERGE (o2:disease {id: 'lao_phổi_disease'})
+MERGE (o1)-[r86:diagnosedBy]->(o2)
+SET r86.text = 'Bên cạnh đó, chụp x-quang phổi còn có ý nghĩa đặc biệt quan trọng trong việc xác định, phân biệt và loại trừ những khả năng do các bệnh lý gây tổn thương nhu mô phổi như: viêm phổi kẽ, lao phổi, ung thư phổi; bệnh lý giãn phế quản… có cùng triệu chứng là những cơn ho kéo dài.'
+
+MERGE (o1:test {id: 'chụp_x-quang_phổi_test'})
+MERGE (o2:disease {id: 'ung_thư_phổi_disease'})
+MERGE (o1)-[r87:diagnosedBy]->(o2)
+SET r87.text = 'Bên cạnh đó, chụp x-quang phổi còn có ý nghĩa đặc biệt quan trọng trong việc xác định, phân biệt và loại trừ những khả năng do các bệnh lý gây tổn thương nhu mô phổi như: viêm phổi kẽ, lao phổi, ung thư phổi; bệnh lý giãn phế quản… có cùng triệu chứng là những cơn ho kéo dài.'
+
+MERGE (o1:test {id: 'chụp_x-quang_phổi_test'})
+MERGE (o2:disease {id: 'bệnh_lý_giãn_phế_quản_disease'})
+MERGE (o1)-[r88:diagnosedBy]->(o2)
+SET r88.text = 'Bên cạnh đó, chụp x-quang phổi còn có ý nghĩa đặc biệt quan trọng trong việc xác định, phân biệt và loại trừ những khả năng do các bệnh lý gây tổn thương nhu mô phổi như: viêm phổi kẽ, lao phổi, ung thư phổi; bệnh lý giãn phế quản… có cùng triệu chứng là những cơn ho kéo dài.'
+
+MERGE (o1:disease {id: 'viêm_phế_quản_mạn_tính_disease'})
+MERGE (o2:treatment {id: 'cách_chữa_treatment'})
+MERGE (o1)-[r89:treatedBy]->(o2)
+SET r89.text = 'Tùy vào từng tình trạng cụ thể mà cách chữa viêm phế quản mạn tính sẽ khác nhau.'
+
+MERGE (o1:treatment {id: 'các_phương_pháp_điều_trị_treatment'})
+MERGE (o2:symptom {id: 'triệu_chứng_symptom'})
+MERGE (o1)-[r90:relatedTo]->(o2)
+SET r90.text = 'Nhìn chung, các phương pháp điều trị sẽ nhằm vào các triệu chứng của bệnh, bao gồm:'
+
+MERGE (o1:disease {id: 'người_mắc_bệnh_viêm_phế_quản_mãn_tính_disease'})
+MERGE (o2:treatment {id: 'thuốc_giãn_phế_quản_treatment'})
+MERGE (o1)-[r91:treatedBy]->(o2)
+SET r91.text = 'Người mắc bệnh viêm phế quản mãn tính thường được bác sĩ chỉ định cho sử dụng thuốc giãn phế quản.'
+
+MERGE (o1:treatment {id: 'thuốc_giãn_phế_quản_treatment'})
+MERGE (o2:organ {id: 'đường_lưu_thông_không_khí_đến_phổi_organ'})
+MERGE (o1)-[r92:affects]->(o2)
+SET r92.text = 'Thuốc này có tác dụng mở rộng đường lưu thông không khí đến phổi, giúp người bệnh có thể thở một cách dễ dàng hơn.'
+
+MERGE (o1:treatment {id: 'máy_hô_hấp_treatment'})
+MERGE (o2:treatment {id: 'thuốc_treatment'})
+MERGE (o1)-[r93:relatedTo]->(o2)
+SET r93.text = 'Tùy vào từng trường hợp cụ thể, bác sĩ sẽ hướng dẫn người bệnh sử dụng một loại máy hô hấp giúp đưa thuốc vào cơ thể.'
+
+MERGE (o1:treatment {id: 'thuốc_theophylline_treatment'})
+MERGE (o2:organ {id: 'các_lớp_cơ_ở_đường_thở_organ'})
+MERGE (o1)-[r94:affects]->(o2)
+SET r94.text = 'Đối với những trường hợp nghiêm trọng hơn, bác sĩ sẽ chỉ định sử dụng thuốc theophylline nhằm xoa dịu các lớp cơ ở đường thở, giúp người bệnh có thể thở dễ dàng hơn.'
+
+MERGE (o1:treatment {id: 'thuốc_kháng_viêm_dạng_hít_hoặc_viên_nén_treatment'})
+MERGE (o2:organ {id: 'đường_thở_organ'})
+MERGE (o1)-[r95:affects]->(o2)
+SET r95.text = 'Trong trường hợp cả hai loại thuốc trên đều không hiệu quả, bác sĩ sẽ chỉ định sử dụng thuốc kháng viêm dạng hít hoặc viên nén, giúp mở đường thở.'
+
+MERGE (o1:treatment {id: 'chương_trình_phục_hồi_chức_năng_phổi_treatment'})
+MERGE (o2:disease {id: 'viêm_phế_quản_mãn_tính_disease'})
+MERGE (o1)-[r96:relatedTo]->(o2)
+SET r96.text = 'Chương trình phục hồi chức năng phổi: Đây là phương pháp bao gồm các bài tập thể dục, các bài tập về hô hấp và chế độ dinh dưỡng phù hợp với những người mắc bệnh viêm phế quản mãn tính.'
+
+MERGE (o1:treatment {id: 'chương_trình_phục_hồi_chức_năng_phổi_treatment'})
+MERGE (o2:organ {id: 'quá_trình_thở_organ'})
+MERGE (o1)-[r97:affects]->(o2)
+SET r97.text = 'Việc áp dụng một cách khoa học chương trình phục hồi chức năng phổi sẽ giúp người bệnh nâng cao thể lực, tăng cường sức đề kháng và giúp quá trình thở được diễn ra dễ dàng hơn.'
+
+MERGE (o1:treatment {id: 'các_thiết_bị_làm_sạch_chất_nhầy_treatment'})
+MERGE (o2:symptom {id: 'ho_ra_chất_lỏng_symptom'})
+MERGE (o1)-[r98:affects]->(o2)
+SET r98.text = 'Sử dụng các thiết bị làm sạch chất nhầy, giúp người bệnh có thể ho ra chất lỏng dễ dàng hơn.'
+
+MERGE (o1:treatment {id: 'liệu_pháp_oxy_treatment'})
+MERGE (o2:disease {id: 'viêm_phế_quản_mãn_tính_disease'})
+MERGE (o1)-[r99:relatedTo]->(o2)
+SET r99.text = 'Liệu pháp oxy giúp người bệnh viêm phế quản mãn tính thở tốt hơn.'
+
+MERGE (o1:lifestyle {id: 'tập_thể_dục__vận_động_nhẹ_nhàng_lifestyle'})
+MERGE (o2:disease {id: 'viêm_phế_quản_mãn_tính_disease'})
+MERGE (o1)-[r100:relatedTo]->(o2)
+SET r100.text = 'Tập thể dục, vận động nhẹ nhàng giúp cải thiện sức khỏe cho người bệnh viêm phế quản mãn tính.'
+
+MERGE (o1:disease {id: 'viêm_phế_quản_mãn_tính_disease'})
+MERGE (o2:lifestyle {id: 'những_điều_sau_lifestyle'})
+MERGE (o1)-[r101:preventedBy]->(o2)
+SET r101.text = 'Để phòng tránh và giảm nguy cơ mắc bệnh viêm phế quản mãn tính, ngay từ bây giờ, mọi người cần lưu ý những điều sau:'
+
+MERGE (o1:lifestyle {id: 'hút_thuốc_lá_lifestyle'})
+MERGE (o2:disease {id: 'viêm_phế_quản_mãn_tính_disease'})
+MERGE (o1)-[r102:causes]->(o2)
+SET r102.text = 'Bỏ hút thuốc lá: Thuốc là được xem là một trong những tác nhân nguy hiểm gây ra bệnh viêm phế quản mãn tính nói riêng, và các bệnh lý về phổi nói chung, dẫn đến suy giảm chức năng của hệ hô hấp và thậm chí là ung thư phổi.'
+
+MERGE (o1:lifestyle {id: 'hút_thuốc_lá_lifestyle'})
+MERGE (o2:disease {id: 'các_bệnh_lý_về_phổi_disease'})
+MERGE (o1)-[r103:causes]->(o2)
+SET r103.text = 'Bỏ hút thuốc lá: Thuốc là được xem là một trong những tác nhân nguy hiểm gây ra bệnh viêm phế quản mãn tính nói riêng, và các bệnh lý về phổi nói chung, dẫn đến suy giảm chức năng của hệ hô hấp và thậm chí là ung thư phổi.'
+
+MERGE (o1:lifestyle {id: 'hút_thuốc_lá_lifestyle'})
+MERGE (o2:organ {id: 'hệ_hô_hấp_organ'})
+MERGE (o1)-[r104:affects]->(o2)
+SET r104.text = 'Bỏ hút thuốc lá: Thuốc là được xem là một trong những tác nhân nguy hiểm gây ra bệnh viêm phế quản mãn tính nói riêng, và các bệnh lý về phổi nói chung, dẫn đến suy giảm chức năng của hệ hô hấp và thậm chí là ung thư phổi.'
+
+MERGE (o1:lifestyle {id: 'hút_thuốc_lá_lifestyle'})
+MERGE (o2:disease {id: 'ung_thư_phổi_disease'})
+MERGE (o1)-[r105:causes]->(o2)
+SET r105.text = 'Bỏ hút thuốc lá: Thuốc là được xem là một trong những tác nhân nguy hiểm gây ra bệnh viêm phế quản mãn tính nói riêng, và các bệnh lý về phổi nói chung, dẫn đến suy giảm chức năng của hệ hô hấp và thậm chí là ung thư phổi.'
+
+MERGE (o1:lifestyle {id: 'hút_thuốc_lá_lifestyle'})
+MERGE (o2:organ {id: 'sức_khỏe_organ'})
+MERGE (o1)-[r106:affects]->(o2)
+SET r106.text = 'Từ bỏ thói quen hút thuốc lá không chỉ giúp bảo vệ sức khỏe cho bản thân bạn, mà cả những người xung quanh.'
+
+MERGE (o1:lifestyle {id: 'hút_thuốc_lá_thụ_động_lifestyle'})
+MERGE (o2:organ {id: 'sức_khỏe_organ'})
+MERGE (o1)-[r107:affects]->(o2)
+SET r107.text = 'Bởi những người hút thuốc lá thụ động cũng bị ảnh hưởng nghiêm trọng đến sức khỏe.'
+
+MERGE (o1:lifestyle {id: 'khẩu_trang__đồ_bảo_hộ_lifestyle'})
+MERGE (o2:cause {id: 'xâm_nhập_của_những_tác_nhân_gây_hại_đến_đường_hô_hấp_cause'})
+MERGE (o1)-[r108:preventedBy]->(o2)
+SET r108.text = 'Thường xuyên đeo khẩu trang, đồ bảo hộ khi tiếp xúc hoặc làm việc trong môi trường ô nhiễm, khói bụi để tránh nguy cơ xâm nhập của những tác nhân gây hại đến đường hô hấp.'
+
+MERGE (o1:lifestyle {id: 'đeo_khẩu_trang_lifestyle'})
+MERGE (o2:disease {id: 'bệnh_viêm_phế_quản_mãn_tính_disease'})
+MERGE (o1)-[r109:preventedBy]->(o2)
+SET r109.text = 'Đeo khẩu trang khi tiếp xúc với môi trường ô nhiễm giúp hạn chế nguy cơ mắc bệnh viêm phế quản mãn tính.'
+
+MERGE (o1:cause {id: 'môi_trường_ô_nhiễm_cause'})
+MERGE (o2:disease {id: 'bệnh_viêm_phế_quản_mãn_tính_disease'})
+MERGE (o1)-[r110:causedBy]->(o2)
+SET r110.text = 'Đeo khẩu trang khi tiếp xúc với môi trường ô nhiễm giúp hạn chế nguy cơ mắc bệnh viêm phế quản mãn tính.'
+
+MERGE (o1:lifestyle {id: 'rửa_tay_đúng_cách_bằng_xà_phòng_diệt_khuẩn_lifestyle'})
+MERGE (o2:disease {id: 'bệnh_viêm_phế_quản_mãn_tính_disease'})
+MERGE (o1)-[r111:preventedBy]->(o2)
+SET r111.text = 'Thường xuyên rửa tay đúng cách bằng xà phòng diệt khuẩn; vệ sinh đường hô hấp (nhỏ mũi, súc họng…) bằng nước muối sinh lý; vệ sinh sạch sẽ nở ở, hạn chế tối đa bụi bẩn gây ảnh hưởng đến đường hô hấp.'
+
+MERGE (o1:treatment {id: 'vệ_sinh_đường_hô_hấp_(nhỏ_mũi__súc_họng…)_bằng_nước_muối_sinh_lý_treatment'})
+MERGE (o2:disease {id: 'bệnh_viêm_phế_quản_mãn_tính_disease'})
+MERGE (o1)-[r112:treatedBy]->(o2)
+SET r112.text = 'Thường xuyên rửa tay đúng cách bằng xà phòng diệt khuẩn; vệ sinh đường hô hấp (nhỏ mũi, súc họng…) bằng nước muối sinh lý; vệ sinh sạch sẽ nở ở, hạn chế tối đa bụi bẩn gây ảnh hưởng đến đường hô hấp.'
+
+MERGE (o1:cause {id: 'bụi_bẩn_cause'})
+MERGE (o2:disease {id: 'bệnh_viêm_phế_quản_mãn_tính_disease'})
+MERGE (o1)-[r113:causedBy]->(o2)
+SET r113.text = 'Thường xuyên rửa tay đúng cách bằng xà phòng diệt khuẩn; vệ sinh đường hô hấp (nhỏ mũi, súc họng…) bằng nước muối sinh lý; vệ sinh sạch sẽ nở ở, hạn chế tối đa bụi bẩn gây ảnh hưởng đến đường hô hấp.'
+
+MERGE (o1:cause {id: 'bụi_bẩn_cause'})
+MERGE (o2:organ {id: 'đường_hô_hấp_organ'})
+MERGE (o1)-[r114:affects]->(o2)
+SET r114.text = 'Thường xuyên rửa tay đúng cách bằng xà phòng diệt khuẩn; vệ sinh đường hô hấp (nhỏ mũi, súc họng…) bằng nước muối sinh lý; vệ sinh sạch sẽ nở ở, hạn chế tối đa bụi bẩn gây ảnh hưởng đến đường hô hấp.'
+
+MERGE (o1:treatment {id: 'tiêm_vắc_xin_phòng_bệnh_viêm_phổi_treatment'})
+MERGE (o2:disease {id: 'bệnh_viêm_phế_quản_mãn_tính_disease'})
+MERGE (o1)-[r115:treatedBy]->(o2)
+SET r115.text = 'Tiêm vắc xin phòng bệnh viêm phổi, tiêm vắc xin cúm, vắc-xin ho gà… cũng là phương cách hữu hiệu giúp bảo vệ cơ thể khỏi một số bệnh về đường hô hấp, trong đó có bệnh viêm phế quản mãn tính.'
+
+MERGE (o1:treatment {id: 'tiêm_vắc_xin_cúm_treatment'})
+MERGE (o2:disease {id: 'bệnh_viêm_phế_quản_mãn_tính_disease'})
+MERGE (o1)-[r116:treatedBy]->(o2)
+SET r116.text = 'Tiêm vắc xin phòng bệnh viêm phổi, tiêm vắc xin cúm, vắc-xin ho gà… cũng là phương cách hữu hiệu giúp bảo vệ cơ thể khỏi một số bệnh về đường hô hấp, trong đó có bệnh viêm phế quản mãn tính.'
+
+MERGE (o1:treatment {id: 'tiêm_vắc_xin_ho_gà_treatment'})
+MERGE (o2:disease {id: 'bệnh_viêm_phế_quản_mãn_tính_disease'})
+MERGE (o1)-[r117:treatedBy]->(o2)
+SET r117.text = 'Tiêm vắc xin phòng bệnh viêm phổi, tiêm vắc xin cúm, vắc-xin ho gà… cũng là phương cách hữu hiệu giúp bảo vệ cơ thể khỏi một số bệnh về đường hô hấp, trong đó có bệnh viêm phế quản mãn tính.'
+
+MERGE (o1:disease {id: 'bệnh_về_đường_hô_hấp_disease'})
+MERGE (o2:disease {id: 'bệnh_viêm_phế_quản_mãn_tính_disease'})
+MERGE (o1)-[r118:relatedTo]->(o2)
+SET r118.text = 'Tiêm vắc xin phòng bệnh viêm phổi, tiêm vắc xin cúm, vắc-xin ho gà… cũng là phương cách hữu hiệu giúp bảo vệ cơ thể khỏi một số bệnh về đường hô hấp, trong đó có bệnh viêm phế quản mãn tính.'
+
+MERGE (o1:disease {id: 'viêm_phế_quản_mãn_tính_disease'})
+MERGE (o2:organ {id: 'hệ_hô_hấp_organ'})
+MERGE (o1)-[r119:affects]->(o2)
+SET r119.text = 'Viêm phế quản mãn tính là bệnh lý liên quan đến hệ hô hấp rất nguy hiểm, có khả năng biến chứng dẫn đến bệnh phổi tắc nghẽn mãn tính và suy hô hấp.'
+
+MERGE (o1:disease {id: 'viêm_phế_quản_mãn_tính_disease'})
+MERGE (o2:disease {id: 'bệnh_phổi_tắc_nghẽn_mãn_tính_disease'})
+MERGE (o1)-[r120:isSymptomOf]->(o2)
+SET r120.text = 'Viêm phế quản mãn tính là bệnh lý liên quan đến hệ hô hấp rất nguy hiểm, có khả năng biến chứng dẫn đến bệnh phổi tắc nghẽn mãn tính và suy hô hấp.'
+
+MERGE (o1:disease {id: 'viêm_phế_quản_mãn_tính_disease'})
+MERGE (o2:disease {id: 'suy_hô_hấp_disease'})
+MERGE (o1)-[r121:isSymptomOf]->(o2)
+SET r121.text = 'Viêm phế quản mãn tính là bệnh lý liên quan đến hệ hô hấp rất nguy hiểm, có khả năng biến chứng dẫn đến bệnh phổi tắc nghẽn mãn tính và suy hô hấp.'
+
+MERGE (o1:disease {id: 'viêm_phế_quản_mãn_tính_disease'})
+MERGE (o2:disease {id: 'ung_thư_phế_quản_disease'})
+MERGE (o1)-[r122:isSymptomOf]->(o2)
+SET r122.text = 'Nghiêm trọng hơn, người bệnh viêm phế quản mãn tính còn có nguy cơ cao mắc bệnh ung thư phế quản, ung thư phổi hoặc lao phổi.'
+
+MERGE (o1:disease {id: 'viêm_phế_quản_mãn_tính_disease'})
+MERGE (o2:disease {id: 'ung_thư_phổi_disease'})
+MERGE (o1)-[r123:isSymptomOf]->(o2)
+SET r123.text = 'Nghiêm trọng hơn, người bệnh viêm phế quản mãn tính còn có nguy cơ cao mắc bệnh ung thư phế quản, ung thư phổi hoặc lao phổi.'
+
+MERGE (o1:disease {id: 'viêm_phế_quản_mãn_tính_disease'})
+MERGE (o2:disease {id: 'lao_phổi_disease'})
+MERGE (o1)-[r124:isSymptomOf]->(o2)
+SET r124.text = 'Nghiêm trọng hơn, người bệnh viêm phế quản mãn tính còn có nguy cơ cao mắc bệnh ung thư phế quản, ung thư phổi hoặc lao phổi.'
+
+MERGE (o1:disease {id: 'viêm_phế_quản_mãn_tính_disease'})
+MERGE (o2:treatment {id: 'điều_trị_treatment'})
+MERGE (o1)-[r125:treatedBy]->(o2)
+SET r125.text = 'Bên cạnh đó, việc điều trị dứt điểm bệnh viêm phế quản mãn tính cũng gặp rất nhiều khó khăn, vì khả năng hô hấp của người bệnh bị suy giảm đáng kể.'
+
+MERGE (o1:disease {id: 'viêm_phế_quản_mãn_tính_disease'})
+MERGE (o2:symptom {id: 'khả_năng_hô_hấp_symptom'})
+MERGE (o1)-[r126:affects]->(o2)
+SET r126.text = 'Bên cạnh đó, việc điều trị dứt điểm bệnh viêm phế quản mãn tính cũng gặp rất nhiều khó khăn, vì khả năng hô hấp của người bệnh bị suy giảm đáng kể.'
+
+MERGE (o1:disease {id: 'viêm_phế_quản_mãn_tính_disease'})
+MERGE (o2:treatment {id: 'đi_khám_treatment'})
+MERGE (o1)-[r127:treatedBy]->(o2)
+SET r127.text = '“Chính vì vậy, người bệnh viêm phế quản mãn tính không nên chủ quan, cần thường xuyên đi khám và tuyệt đối tuân thủ theo phác đồ điều trị của bác sĩ để hạn chế tối đa nguy cơ gặp biến chứng nguy hiểm”, BS.CKII Trần Vũ Minh Phát cho biết.'

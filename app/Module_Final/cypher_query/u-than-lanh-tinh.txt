@@ -1,0 +1,853 @@
+
+MERGE (o1:disease {id: 'u_thận_lành_tính_disease'})
+MERGE (o2:organ {id: 'thận_organ'})
+MERGE (o1)-[r0:relatedTo]->(o2)
+SET r0.text = 'U thận lành tính khá phổ biến.'
+
+MERGE (o1:disease {id: 'u_thận_lành_tính_disease'})
+MERGE (o2:symptom {id: 'biểu_hiện_bất_thường_symptom'})
+MERGE (o1)-[r1:isSymptomOf]->(o2)
+SET r1.text = 'Về nguyên lý khoa học, bệnh không nguy hiểm, nhưng vẫn có những biểu hiện bất thường, làm ảnh hưởng đến sức khỏe, cuộc sống của người bệnh và tiềm ẩn nguy cơ phát triển thành u ác tính.'
+
+MERGE (o1:disease {id: 'u_thận_lành_tính_disease'})
+MERGE (o2:symptom {id: 'sức_khỏe_symptom'})
+MERGE (o1)-[r2:relatedTo]->(o2)
+SET r2.text = 'U thận lành tính khá phổ biến.'
+
+MERGE (o1:disease {id: 'u_thận_lành_tính_disease'})
+MERGE (o2:lifestyle {id: 'cuộc_sống_lifestyle'})
+MERGE (o1)-[r3:relatedTo]->(o2)
+SET r3.text = 'U thận lành tính khá phổ biến.'
+
+MERGE (o1:disease {id: 'u_thận_lành_tính_disease'})
+MERGE (o2:disease {id: 'u_ác_tính_disease'})
+MERGE (o1)-[r4:relatedTo]->(o2)
+SET r4.text = 'U thận lành tính khá phổ biến.'
+
+MERGE (o1:disease {id: 'u_thận_lành_tính_disease'})
+MERGE (o2:organ {id: 'thận_organ'})
+MERGE (o1)-[r5:locatedIn]->(o2)
+SET r5.text = 'U thận lành tính là tình trạng khối u hình thành và phát triển trong quả thận, nhưng không có khả năng di căn đến các bộ phận khác của cơ thể.'
+
+MERGE (o1:disease {id: 'u_thận_lành_tính_disease'})
+MERGE (o2:disease {id: 'khối_u_disease'})
+MERGE (o1)-[r6:relatedTo]->(o2)
+SET r6.text = 'U thận lành tính là tình trạng khối u hình thành và phát triển trong quả thận, nhưng không có khả năng di căn đến các bộ phận khác của cơ thể.'
+
+MERGE (o1:disease {id: 'u_thận_lành_tính_disease'})
+MERGE (o2:symptom {id: 'di_căn_symptom'})
+MERGE (o1)-[r7:relatedTo]->(o2)
+SET r7.text = 'U thận lành tính là tình trạng khối u hình thành và phát triển trong quả thận, nhưng không có khả năng di căn đến các bộ phận khác của cơ thể.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:organ {id: 'cơ_quan_nội_tạng_organ'})
+MERGE (o1)-[r8:affects]->(o2)
+SET r8.text = 'Đôi khi, kích thước của khối u có thể lớn dần, chèn lên các cơ quan nội tạng và các mô lân cận.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:organ {id: 'mô_lân_cận_organ'})
+MERGE (o1)-[r9:affects]->(o2)
+SET r9.text = 'Đôi khi, kích thước của khối u có thể lớn dần, chèn lên các cơ quan nội tạng và các mô lân cận.'
+
+MERGE (o1:disease {id: 'khối_tăng_trưởng_lành_tính_disease'})
+MERGE (o2:organ {id: 'cơ_thể_con_người_organ'})
+MERGE (o1)-[r10:locatedIn]->(o2)
+SET r10.text = 'Các khối tăng trưởng lành tính rất phổ biến và có thể hình thành ở bất cứ đâu trong cơ thể con người.'
+
+MERGE (o1:disease {id: 'khối_tăng_trưởng_lành_tính_disease'})
+MERGE (o2:symptom {id: 'lo_lắng_symptom'})
+MERGE (o1)-[r11:isSymptomOf]->(o2)
+SET r11.text = 'Khi được phát hiện, chúng có thể gây ra sự lo lắng, sợ hãi.'
+
+MERGE (o1:disease {id: 'khối_tăng_trưởng_lành_tính_disease'})
+MERGE (o2:symptom {id: 'sợ_hãi_symptom'})
+MERGE (o1)-[r12:isSymptomOf]->(o2)
+SET r12.text = 'Khi được phát hiện, chúng có thể gây ra sự lo lắng, sợ hãi.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:disease {id: 'lành_tính_disease'})
+MERGE (o1)-[r13:relatedTo]->(o2)
+SET r13.text = 'Tuy nhiên, điều may mắn là hầu hết các khối u đều lành tính.'
+
+MERGE (o1:disease {id: 'khối_u_lành_tính_disease'})
+MERGE (o2:lifestyle {id: 'trẻ_em_lifestyle'})
+MERGE (o1)-[r14:relatedTo]->(o2)
+SET r14.text = 'Bất cứ ai trong chúng ta cũng có thể phát triển một khối u lành tính, bao gồm cả trẻ em.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:lifestyle {id: 'người_lớn_tuổi_lifestyle'})
+MERGE (o1)-[r15:relatedTo]->(o2)
+SET r15.text = 'Tuy nhiên, các kết quả thống kê cho thấy người lớn tuổi có nhiều khả năng phát triển khối u hơn so với các nhóm đối tượng khác.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:organ {id: 'thận_organ'})
+MERGE (o1)-[r16:locatedIn]->(o2)
+SET r16.text = 'Khối u hình thành và phát triển trong quả thận, nhưng không có khả năng di căn đến các bộ phận khác.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:symptom {id: 'di_căn_symptom'})
+MERGE (o1)-[r17:relatedTo]->(o2)
+SET r17.text = 'Khối u hình thành và phát triển trong quả thận, nhưng không có khả năng di căn đến các bộ phận khác.'
+
+MERGE (o1:disease {id: 'u_thận_lành_tính_disease'})
+MERGE (o2:organ {id: 'trung_tâm_tiết_niệu_thận_học_organ'})
+MERGE (o1)-[r18:relatedTo]->(o2)
+SET r18.text = 'Theo các chuyên gia Trung tâm Tiết niệu Thận học, Hệ thống BVĐK Tâm Anh, u thận lành tính thường được phân loại theo nơi chúng phát triển, bao gồm các loại sau đây:'
+
+MERGE (o1:disease {id: 'u_tuyến_disease'})
+MERGE (o2:organ {id: 'tuyến_organ'})
+MERGE (o1)-[r19:locatedIn]->(o2)
+SET r19.text = 'U tuyến hình thành trong lớp mô mỏng bao phủ các tuyến, các cơ quan và cấu trúc bên trong khác.'
+
+MERGE (o1:disease {id: 'u_tuyến_disease'})
+MERGE (o2:organ {id: 'cơ_quan_organ'})
+MERGE (o1)-[r20:locatedIn]->(o2)
+SET r20.text = 'U tuyến hình thành trong lớp mô mỏng bao phủ các tuyến, các cơ quan và cấu trúc bên trong khác.'
+
+MERGE (o1:disease {id: 'u_tuyến_disease'})
+MERGE (o2:organ {id: 'cấu_trúc_bên_trong_organ'})
+MERGE (o1)-[r21:locatedIn]->(o2)
+SET r21.text = 'U tuyến hình thành trong lớp mô mỏng bao phủ các tuyến, các cơ quan và cấu trúc bên trong khác.'
+
+MERGE (o1:disease {id: 'polyp_disease'})
+MERGE (o2:organ {id: 'ruột_kết_organ'})
+MERGE (o1)-[r22:locatedIn]->(o2)
+SET r22.text = 'Ví dụ như polyp hình thành trong ruột kết, gan…'
+
+MERGE (o1:disease {id: 'polyp_disease'})
+MERGE (o2:organ {id: 'gan_organ'})
+MERGE (o1)-[r23:locatedIn]->(o2)
+SET r23.text = 'Ví dụ như polyp hình thành trong ruột kết, gan…'
+
+MERGE (o1:disease {id: 'khối_u_tuyến_thận_(adenoma)_disease'})
+MERGE (o2:organ {id: 'thận_organ'})
+MERGE (o1)-[r24:locatedIn]->(o2)
+SET r24.text = 'Ở thận, khối u tuyến thận (Adenoma) xuất hiện rất nhiều và có đặc điểm là lành tính.'
+
+MERGE (o1:disease {id: 'khối_u_tuyến_thận_(adenoma)_disease'})
+MERGE (o2:disease {id: 'lành_tính_disease'})
+MERGE (o1)-[r25:relatedTo]->(o2)
+SET r25.text = 'Ở thận, khối u tuyến thận (Adenoma) xuất hiện rất nhiều và có đặc điểm là lành tính.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:symptom {id: 'kích_thước_symptom'})
+MERGE (o1)-[r26:relatedTo]->(o2)
+SET r26.text = 'Mỗi khối u này thường có kích thước khoảng 2 cm, ở vùng vỏ ngoài tách biệt với thận, màu xám hay vàng nhạt.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:organ {id: 'vùng_vỏ_ngoài_organ'})
+MERGE (o1)-[r27:locatedIn]->(o2)
+SET r27.text = 'Mỗi khối u này thường có kích thước khoảng 2 cm, ở vùng vỏ ngoài tách biệt với thận, màu xám hay vàng nhạt.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:symptom {id: 'màu_xám_symptom'})
+MERGE (o1)-[r28:relatedTo]->(o2)
+SET r28.text = 'Mỗi khối u này thường có kích thước khoảng 2 cm, ở vùng vỏ ngoài tách biệt với thận, màu xám hay vàng nhạt.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:symptom {id: 'màu_vàng_nhạt_symptom'})
+MERGE (o1)-[r29:relatedTo]->(o2)
+SET r29.text = 'Mỗi khối u này thường có kích thước khoảng 2 cm, ở vùng vỏ ngoài tách biệt với thận, màu xám hay vàng nhạt.'
+
+MERGE (o1:disease {id: 'u_tế_bào_hạt_(oncocytom)_disease'})
+MERGE (o2:lifestyle {id: 'nam_giới_lifestyle'})
+MERGE (o1)-[r30:relatedTo]->(o2)
+SET r30.text = 'U tế bào hạt (Oncocytom) khá hiếm gặp và thường xuất hiện nhiều hơn ở nam giới.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:symptom {id: 'kích_thước_lớn_symptom'})
+MERGE (o1)-[r31:relatedTo]->(o2)
+SET r31.text = 'Khối u này được hình thành từ các tế bào biểu mô có kích thước lớn, với đường kính khoảng 12 cm, có màu vàng hoặc nâu nhạt.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:symptom {id: 'đường_kính_symptom'})
+MERGE (o1)-[r32:relatedTo]->(o2)
+SET r32.text = 'Khối u này được hình thành từ các tế bào biểu mô có kích thước lớn, với đường kính khoảng 12 cm, có màu vàng hoặc nâu nhạt.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:symptom {id: 'màu_vàng_symptom'})
+MERGE (o1)-[r33:relatedTo]->(o2)
+SET r33.text = 'Khối u này được hình thành từ các tế bào biểu mô có kích thước lớn, với đường kính khoảng 12 cm, có màu vàng hoặc nâu nhạt.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:symptom {id: 'màu_nâu_nhạt_symptom'})
+MERGE (o1)-[r34:relatedTo]->(o2)
+SET r34.text = 'Khối u này được hình thành từ các tế bào biểu mô có kích thước lớn, với đường kính khoảng 12 cm, có màu vàng hoặc nâu nhạt.'
+
+MERGE (o1:disease {id: 'u_tế_bào_hạt_disease'})
+MERGE (o2:disease {id: 'u_thận_lành_tính_disease'})
+MERGE (o1)-[r35:relatedTo]->(o2)
+SET r35.text = 'U tế bào hạt cũng là một u thận lành tính nên có rất ít nguy cơ xâm lấn các mô lân cận.'
+
+MERGE (o1:disease {id: 'u_tế_bào_hạt_disease'})
+MERGE (o2:symptom {id: 'xâm_lấn_symptom'})
+MERGE (o1)-[r36:relatedTo]->(o2)
+SET r36.text = 'U tế bào hạt cũng là một u thận lành tính nên có rất ít nguy cơ xâm lấn các mô lân cận.'
+
+MERGE (o1:disease {id: 'u_tế_bào_hạt_disease'})
+MERGE (o2:organ {id: 'mô_lân_cận_organ'})
+MERGE (o1)-[r37:affects]->(o2)
+SET r37.text = 'U tế bào hạt cũng là một u thận lành tính nên có rất ít nguy cơ xâm lấn các mô lân cận.'
+
+MERGE (o1:disease {id: 'u_mạch_cơ_mỡ_thận_disease'})
+MERGE (o2:disease {id: 'u_ác_tính_disease'})
+MERGE (o1)-[r38:relatedTo]->(o2)
+SET r38.text = 'So với hai loại u lành tính nêu trên, u mạch cơ mỡ thận thuộc loại hiếm gặp nhất, nhưng có nhiều nguy cơ phát triển thành u ác tính hơn.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:disease {id: 'xơ_cứng_củ_disease'})
+MERGE (o1)-[r39:relatedTo]->(o2)
+SET r39.text = 'Sự hình thành khối u này liên quan đến tình trạng xơ cứng củ, một hội chứng thần kinh có liên quan đến sự rối loạn di truyền và kiểu gen gây động kinh và chậm phát triển trí tuệ&#8230;'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:disease {id: 'hội_chứng_thần_kinh_disease'})
+MERGE (o1)-[r40:relatedTo]->(o2)
+SET r40.text = 'Sự hình thành khối u này liên quan đến tình trạng xơ cứng củ, một hội chứng thần kinh có liên quan đến sự rối loạn di truyền và kiểu gen gây động kinh và chậm phát triển trí tuệ&#8230;'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:disease {id: 'rối_loạn_di_truyền_disease'})
+MERGE (o1)-[r41:relatedTo]->(o2)
+SET r41.text = 'Sự hình thành khối u này liên quan đến tình trạng xơ cứng củ, một hội chứng thần kinh có liên quan đến sự rối loạn di truyền và kiểu gen gây động kinh và chậm phát triển trí tuệ&#8230;'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:disease {id: 'kiểu_gen_disease'})
+MERGE (o1)-[r42:relatedTo]->(o2)
+SET r42.text = 'Sự hình thành khối u này liên quan đến tình trạng xơ cứng củ, một hội chứng thần kinh có liên quan đến sự rối loạn di truyền và kiểu gen gây động kinh và chậm phát triển trí tuệ&#8230;'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:disease {id: 'động_kinh_disease'})
+MERGE (o1)-[r43:relatedTo]->(o2)
+SET r43.text = 'Sự hình thành khối u này liên quan đến tình trạng xơ cứng củ, một hội chứng thần kinh có liên quan đến sự rối loạn di truyền và kiểu gen gây động kinh và chậm phát triển trí tuệ&#8230;'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:disease {id: 'chậm_phát_triển_trí_tuệ_disease'})
+MERGE (o1)-[r44:relatedTo]->(o2)
+SET r44.text = 'Sự hình thành khối u này liên quan đến tình trạng xơ cứng củ, một hội chứng thần kinh có liên quan đến sự rối loạn di truyền và kiểu gen gây động kinh và chậm phát triển trí tuệ&#8230;'
+
+MERGE (o1:disease {id: 'nang_đơn_thận_disease'})
+MERGE (o2:organ {id: 'thận_organ'})
+MERGE (o1)-[r45:locatedIn]->(o2)
+SET r45.text = 'Nang đơn thận là tình trạng xuất hiện khối dịch bất thường ở một hoặc hai bên quả thận.'
+
+MERGE (o1:disease {id: 'nang_đơn_thận_disease'})
+MERGE (o2:symptom {id: 'khối_dịch_bất_thường_symptom'})
+MERGE (o1)-[r46:relatedTo]->(o2)
+SET r46.text = 'Nang đơn thận là tình trạng xuất hiện khối dịch bất thường ở một hoặc hai bên quả thận.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:symptom {id: 'hình_tròn_symptom'})
+MERGE (o1)-[r47:relatedTo]->(o2)
+SET r47.text = 'Khối u này thường có hình tròn, có dịch bên trong và không xâm lấn vào đài bể thận.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:symptom {id: 'dịch_bên_trong_symptom'})
+MERGE (o1)-[r48:relatedTo]->(o2)
+SET r48.text = 'Khối u này thường có hình tròn, có dịch bên trong và không xâm lấn vào đài bể thận.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:symptom {id: 'xâm_lấn_symptom'})
+MERGE (o1)-[r49:relatedTo]->(o2)
+SET r49.text = 'Khối u này thường có hình tròn, có dịch bên trong và không xâm lấn vào đài bể thận.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:organ {id: 'đài_bể_thận_organ'})
+MERGE (o1)-[r50:locatedIn]->(o2)
+SET r50.text = 'Khối u này thường có hình tròn, có dịch bên trong và không xâm lấn vào đài bể thận.'
+
+MERGE (o1:disease {id: 'nang_đơn_thận_disease'})
+MERGE (o2:lifestyle {id: 'người_lớn_tuổi_lifestyle'})
+MERGE (o1)-[r51:relatedTo]->(o2)
+SET r51.text = 'Trường hợp này thường xuất hiện ở người lớn tuổi.'
+
+MERGE (o1:disease {id: 'u_thận_lành_tính_disease'})
+MERGE (o2:cause {id: 'nguyên_nhân_đa_dạng_cause'})
+MERGE (o1)-[r52:causedBy]->(o2)
+SET r52.text = 'Nguyên nhân gây
+u thận lành tính rất đa dạng và hiện vẫn là một trong những vấn đề được các chuyên gia quan tâm.'
+
+MERGE (o1:disease {id: 'u_thận_disease'})
+MERGE (o2:cause {id: 'bệnh_lý_về_thận_không_được_điều_trị_kịp_thời_và_đúng_phác_đồ_cause'})
+MERGE (o1)-[r53:causedBy]->(o2)
+SET r53.text = 'Do người bệnh có các bệnh lý về thận, nhưng không được điều trị kịp thời và đúng phác đồ làm xuất hiện các khối u thận.'
+
+MERGE (o1:disease {id: 'u_thận_disease'})
+MERGE (o2:treatment {id: 'thuốc_ức_chế_enzyme_monoamin_oxidase_treatment'})
+MERGE (o1)-[r54:causedBy]->(o2)
+SET r54.text = 'Do người bệnh sử dụng các loại thuốc ức chế enzyme monoamin oxidase trong điều trị trầm cảm, chất kích thích… nên gây ra các khối u thận.'
+
+MERGE (o1:disease {id: 'u_thận_disease'})
+MERGE (o2:cause {id: 'rối_loạn_di_truyền_cause'})
+MERGE (o1)-[r55:causedBy]->(o2)
+SET r55.text = 'Do người bệnh có những vấn đề liên quan đến rối loạn di truyền như bệnh xơ hóa thần kinh đệm 1, bệnh di truyền đa u tuyến nội tiết type 1…'
+
+MERGE (o1:disease {id: 'u_thận_disease'})
+MERGE (o2:lifestyle {id: 'thói_quen_sống_thiếu_khoa_học_lifestyle'})
+MERGE (o1)-[r56:causedBy]->(o2)
+SET r56.text = 'Do người bệnh có thói quen sống thiếu khoa học: ăn uống không lành mạnh, ít vận động, dùng thuốc không đúng chỉ định, hút thuốc lá…'
+
+MERGE (o1:disease {id: 'u_thận_disease'})
+MERGE (o2:lifestyle {id: 'ăn_uống_không_lành_mạnh_lifestyle'})
+MERGE (o1)-[r57:aggravatedBy]->(o2)
+SET r57.text = 'Do người bệnh có thói quen sống thiếu khoa học: ăn uống không lành mạnh, ít vận động, dùng thuốc không đúng chỉ định, hút thuốc lá…'
+
+MERGE (o1:disease {id: 'u_thận_disease'})
+MERGE (o2:lifestyle {id: 'ít_vận_động_lifestyle'})
+MERGE (o1)-[r58:aggravatedBy]->(o2)
+SET r58.text = 'Do người bệnh có thói quen sống thiếu khoa học: ăn uống không lành mạnh, ít vận động, dùng thuốc không đúng chỉ định, hút thuốc lá…'
+
+MERGE (o1:disease {id: 'u_thận_disease'})
+MERGE (o2:lifestyle {id: 'dùng_thuốc_không_đúng_chỉ_định_lifestyle'})
+MERGE (o1)-[r59:aggravatedBy]->(o2)
+SET r59.text = 'Do người bệnh có thói quen sống thiếu khoa học: ăn uống không lành mạnh, ít vận động, dùng thuốc không đúng chỉ định, hút thuốc lá…'
+
+MERGE (o1:disease {id: 'u_thận_disease'})
+MERGE (o2:lifestyle {id: 'hút_thuốc_lá_lifestyle'})
+MERGE (o1)-[r60:aggravatedBy]->(o2)
+SET r60.text = 'Do người bệnh có thói quen sống thiếu khoa học: ăn uống không lành mạnh, ít vận động, dùng thuốc không đúng chỉ định, hút thuốc lá…'
+
+MERGE (o1:disease {id: 'u_thận_lành_tính_disease'})
+MERGE (o2:organ {id: 'mọi_người_organ'})
+MERGE (o1)-[r61:affects]->(o2)
+SET r61.text = 'Trên thực tế, hầu hết mọi người đều có thể bị
+u thận lành tính.'
+
+MERGE (o1:disease {id: 'u_thận_lành_tính_disease'})
+MERGE (o2:cause {id: 'độ_tuổi_từ_20-50_cause'})
+MERGE (o1)-[r62:associatedWith]->(o2)
+SET r62.text = 'Tuy nhiên, yếu tố nguy cơ thuộc về nhóm:
+Người có độ tuổi từ 20-50, nguy cơ có xu hướng tăng dần theo độ tuổi'
+
+MERGE (o1:disease {id: 'u_thận_disease'})
+MERGE (o2:cause {id: 'giới_tính_nam_cause'})
+MERGE (o1)-[r63:associatedWith]->(o2)
+SET r63.text = 'Nam giới dễ mắc u thận hơn nữ giới'
+
+MERGE (o1:disease {id: 'u_thận_disease'})
+MERGE (o2:cause {id: 'vấn_đề_sức_khỏe_cause'})
+MERGE (o1)-[r64:associatedWith]->(o2)
+SET r64.text = 'Người thường gặp các vấn đề về sức khỏe'
+
+MERGE (o1:disease {id: 'u_thận_disease'})
+MERGE (o2:lifestyle {id: 'dùng_thuốc_không_đúng_chỉ_định_lifestyle'})
+MERGE (o1)-[r65:aggravatedBy]->(o2)
+SET r65.text = 'Người thường xuyên dùng thuốc không đúng chỉ định dễ bị u thận.'
+
+MERGE (o1:disease {id: 'u_thận_lành_tính_disease'})
+MERGE (o2:symptom {id: 'triệu_chứng_cụ_thể_symptom'})
+MERGE (o1)-[r66:isSymptomOf]->(o2)
+SET r66.text = 'Tùy thuộc vào vị trí của khối u lành tính mà người bệnh sẽ có những triệu chứng cụ thể hay không.'
+
+MERGE (o1:disease {id: 'u_thận_lành_tính_disease'})
+MERGE (o2:symptom {id: 'không_có_triệu_chứng_symptom'})
+MERGE (o1)-[r67:isSymptomOf]->(o2)
+SET r67.text = 'Thậm chí, trong rất nhiều trường hợp khối
+u thận lành tính
+không được phát hiện do người bệnh không có bất kỳ triệu chứng nào.'
+
+MERGE (o1:symptom {id: 'tăng_huyết_áp_symptom'})
+MERGE (o2:disease {id: 'u_thận_lành_tính_disease'})
+MERGE (o1)-[r68:isSymptomOf]->(o2)
+SET r68.text = 'Tăng huyết áp: Đây là một trong những triệu chứng điển hình của u thận lành tính.'
+
+MERGE (o1:symptom {id: 'tăng_huyết_áp_symptom'})
+MERGE (o2:organ {id: 'sức_khỏe_organ'})
+MERGE (o1)-[r69:affects]->(o2)
+SET r69.text = 'Người bệnh bị tăng huyết áp khá cao, đột ngột và gây nguy hiểm cho sức khỏe.'
+
+MERGE (o1:symptom {id: 'tăng_nhịp_tim_bất_thường_symptom'})
+MERGE (o2:disease {id: 'u_thận_lành_tính_disease'})
+MERGE (o1)-[r70:isSymptomOf]->(o2)
+SET r70.text = 'Tăng nhịp tim bất thường: Nhiều trường hợp tăng đến 180 lần/phút'
+
+MERGE (o1:symptom {id: 'màu_da_tái_nhợt__xanh_xao_symptom'})
+MERGE (o2:disease {id: 'u_thận_lành_tính_disease'})
+MERGE (o1)-[r71:isSymptomOf]->(o2)
+SET r71.text = 'Màu da tái nhợt, xanh xao, người mệt mỏi, yếu ớt, sụt cân'
+
+MERGE (o1:symptom {id: 'mệt_mỏi_symptom'})
+MERGE (o2:disease {id: 'u_thận_lành_tính_disease'})
+MERGE (o1)-[r72:isSymptomOf]->(o2)
+SET r72.text = 'Màu da tái nhợt, xanh xao, người mệt mỏi, yếu ớt, sụt cân'
+
+MERGE (o1:symptom {id: 'yếu_ớt_symptom'})
+MERGE (o2:disease {id: 'u_thận_lành_tính_disease'})
+MERGE (o1)-[r73:isSymptomOf]->(o2)
+SET r73.text = 'Màu da tái nhợt, xanh xao, người mệt mỏi, yếu ớt, sụt cân'
+
+MERGE (o1:symptom {id: 'sụt_cân_symptom'})
+MERGE (o2:disease {id: 'u_thận_lành_tính_disease'})
+MERGE (o1)-[r74:isSymptomOf]->(o2)
+SET r74.text = 'Màu da tái nhợt, xanh xao, người mệt mỏi, yếu ớt, sụt cân'
+
+MERGE (o1:symptom {id: 'đau_đầu_symptom'})
+MERGE (o2:disease {id: 'u_thận_lành_tính_disease'})
+MERGE (o1)-[r75:isSymptomOf]->(o2)
+SET r75.text = 'Đau đầu không tìm được nguyên nhân'
+
+MERGE (o1:symptom {id: 'buồn_nôn_symptom'})
+MERGE (o2:disease {id: 'u_thận_lành_tính_disease'})
+MERGE (o1)-[r76:isSymptomOf]->(o2)
+SET r76.text = 'Buồn nôn, khó thở, ớn lạnh, hay đổ mồ hôi'
+
+MERGE (o1:symptom {id: 'khó_thở_symptom'})
+MERGE (o2:disease {id: 'u_thận_lành_tính_disease'})
+MERGE (o1)-[r77:isSymptomOf]->(o2)
+SET r77.text = 'Buồn nôn, khó thở, ớn lạnh, hay đổ mồ hôi'
+
+MERGE (o1:symptom {id: 'ớn_lạnh_symptom'})
+MERGE (o2:disease {id: 'u_thận_lành_tính_disease'})
+MERGE (o1)-[r78:isSymptomOf]->(o2)
+SET r78.text = 'Buồn nôn, khó thở, ớn lạnh, hay đổ mồ hôi'
+
+MERGE (o1:symptom {id: 'đổ_mồ_hôi_symptom'})
+MERGE (o2:disease {id: 'u_thận_lành_tính_disease'})
+MERGE (o1)-[r79:isSymptomOf]->(o2)
+SET r79.text = 'Buồn nôn, khó thở, ớn lạnh, hay đổ mồ hôi'
+
+MERGE (o1:symptom {id: 'táo_bón_symptom'})
+MERGE (o2:disease {id: 'u_thận_lành_tính_disease'})
+MERGE (o1)-[r80:isSymptomOf]->(o2)
+SET r80.text = 'Có vấn đề về tiêu hóa như táo bón'
+
+MERGE (o1:symptom {id: 'bất_an_symptom'})
+MERGE (o2:disease {id: 'u_thận_lành_tính_disease'})
+MERGE (o1)-[r81:isSymptomOf]->(o2)
+SET r81.text = 'Tâm trạng bất an, lo lắng, bồn chồn'
+
+MERGE (o1:symptom {id: 'lo_lắng_symptom'})
+MERGE (o2:disease {id: 'u_thận_lành_tính_disease'})
+MERGE (o1)-[r82:isSymptomOf]->(o2)
+SET r82.text = 'Tâm trạng bất an, lo lắng, bồn chồn'
+
+MERGE (o1:symptom {id: 'bồn_chồn_symptom'})
+MERGE (o2:disease {id: 'u_thận_lành_tính_disease'})
+MERGE (o1)-[r83:isSymptomOf]->(o2)
+SET r83.text = 'Tâm trạng bất an, lo lắng, bồn chồn'
+
+MERGE (o1:disease {id: 'u_thận_lành_tính_disease'})
+MERGE (o2:cause {id: 'phụ_nữ_mang_thai_cause'})
+MERGE (o1)-[r84:associatedWith]->(o2)
+SET r84.text = 'Phần lớn trường hợp
+u thận lành tính không có triệu chứng, nhưng nhóm đối tượng đặc thù như phụ nữ mang thai, người lao động tay chân… sẽ có biểu hiện nghiêm trọng và dễ nhận biết hơn.'
+
+MERGE (o1:disease {id: 'u_thận_lành_tính_disease'})
+MERGE (o2:cause {id: 'người_lao_động_tay_chân_cause'})
+MERGE (o1)-[r85:associatedWith]->(o2)
+SET r85.text = 'Phần lớn trường hợp
+u thận lành tính không có triệu chứng, nhưng nhóm đối tượng đặc thù như phụ nữ mang thai, người lao động tay chân… sẽ có biểu hiện nghiêm trọng và dễ nhận biết hơn.'
+
+MERGE (o1:disease {id: 'u_thận_lành_tính_disease'})
+MERGE (o2:lifestyle {id: 'chất_lượng_cuộc_sống_lifestyle'})
+MERGE (o1)-[r86:affects]->(o2)
+SET r86.text = 'Các khối u thận lành tính hầu như đều không đe dọa đến tính mạng người bệnh, tuy nhiên với những biểu hiện triệu chứng bất thường có thể gây ảnh hưởng đến chất lượng cuộc sống hằng ngày của người bệnh.'
+
+MERGE (o1:disease {id: 'u_thận_disease'})
+MERGE (o2:treatment {id: 'bác_sĩ_treatment'})
+MERGE (o1)-[r87:diagnosedBy]->(o2)
+SET r87.text = 'Dù khối u thận là lành tính, nhưng các chuyên gia khuyên bạn vẫn nên đặt lịch hẹn với bác sĩ ngay khi phát hiện các dấu hiệu bất thường để được tư vấn và hướng dẫn một số biện pháp theo dõi, chăm sóc sức khỏe.'
+
+MERGE (o1:disease {id: 'u_thận_disease'})
+MERGE (o2:treatment {id: 'chăm_sóc_sức_khỏe_treatment'})
+MERGE (o1)-[r88:treatedBy]->(o2)
+SET r88.text = 'Dù khối u thận là lành tính, nhưng các chuyên gia khuyên bạn vẫn nên đặt lịch hẹn với bác sĩ ngay khi phát hiện các dấu hiệu bất thường để được tư vấn và hướng dẫn một số biện pháp theo dõi, chăm sóc sức khỏe.'
+
+MERGE (o1:disease {id: 'u_thận_lành_tính_disease'})
+MERGE (o2:test {id: 'các_biện_pháp_khác_nhau_test'})
+MERGE (o1)-[r89:diagnosedBy]->(o2)
+SET r89.text = 'Để chẩn đoán u thận lành tính, các bác sĩ sử dụng nhiều biện pháp khác nhau.'
+
+MERGE (o1:test {id: 'chẩn_đoán_test'})
+MERGE (o2:disease {id: 'khối_u_disease'})
+MERGE (o1)-[r90:relatedTo]->(o2)
+SET r90.text = 'Chìa khóa của việc chẩn đoán là xác định xem khối u là lành tính hay ác tính.'
+
+MERGE (o1:test {id: 'khám_lâm_sàng_test'})
+MERGE (o2:disease {id: 'u_thận_lành_tính_disease'})
+MERGE (o1)-[r91:diagnosedBy]->(o2)
+SET r91.text = 'Các phương pháp lâm sàng và cận lâm sàng được thực hiện như sau:
+Khám lâm sàng
+Bác sĩ có thể bắt đầu bằng việc khám sức khỏe và thu thập tiền sử bệnh, trao đổi về các triệu chứng người bệnh đang gặp phải.'
+
+MERGE (o1:test {id: 'khám_lâm_sàng_test'})
+MERGE (o2:symptom {id: 'tiền_sử_bệnh_symptom'})
+MERGE (o1)-[r92:relatedTo]->(o2)
+SET r92.text = 'Các phương pháp lâm sàng và cận lâm sàng được thực hiện như sau:
+Khám lâm sàng
+Bác sĩ có thể bắt đầu bằng việc khám sức khỏe và thu thập tiền sử bệnh, trao đổi về các triệu chứng người bệnh đang gặp phải.'
+
+MERGE (o1:test {id: 'khám_lâm_sàng_test'})
+MERGE (o2:symptom {id: 'các_triệu_chứng_symptom'})
+MERGE (o1)-[r93:relatedTo]->(o2)
+SET r93.text = 'Các phương pháp lâm sàng và cận lâm sàng được thực hiện như sau:
+Khám lâm sàng
+Bác sĩ có thể bắt đầu bằng việc khám sức khỏe và thu thập tiền sử bệnh, trao đổi về các triệu chứng người bệnh đang gặp phải.'
+
+MERGE (o1:test {id: 'xét_nghiệm_máu_test'})
+MERGE (o2:disease {id: 'u_thận_lành_tính_disease'})
+MERGE (o1)-[r94:diagnosedBy]->(o2)
+SET r94.text = 'Chẩn đoán cận lâm sàng
+Xét nghiệm máu đánh giá chức năng thận qua các chỉ số: creatinin, ure, axit uric…'
+
+MERGE (o1:test {id: 'xét_nghiệm_máu_test'})
+MERGE (o2:organ {id: 'chức_năng_thận_organ'})
+MERGE (o1)-[r95:relatedTo]->(o2)
+SET r95.text = 'Chẩn đoán cận lâm sàng
+Xét nghiệm máu đánh giá chức năng thận qua các chỉ số: creatinin, ure, axit uric…'
+
+MERGE (o1:test {id: 'xét_nghiệm_máu_test'})
+MERGE (o2:test {id: 'creatinin_test'})
+MERGE (o1)-[r96:relatedTo]->(o2)
+SET r96.text = 'Chẩn đoán cận lâm sàng
+Xét nghiệm máu đánh giá chức năng thận qua các chỉ số: creatinin, ure, axit uric…'
+
+MERGE (o1:test {id: 'xét_nghiệm_máu_test'})
+MERGE (o2:test {id: 'ure_test'})
+MERGE (o1)-[r97:relatedTo]->(o2)
+SET r97.text = 'Chẩn đoán cận lâm sàng
+Xét nghiệm máu đánh giá chức năng thận qua các chỉ số: creatinin, ure, axit uric…'
+
+MERGE (o1:test {id: 'xét_nghiệm_máu_test'})
+MERGE (o2:test {id: 'axit_uric_test'})
+MERGE (o1)-[r98:relatedTo]->(o2)
+SET r98.text = 'Chẩn đoán cận lâm sàng
+Xét nghiệm máu đánh giá chức năng thận qua các chỉ số: creatinin, ure, axit uric…'
+
+MERGE (o1:test {id: 'phân_tích_nước_tiểu_test'})
+MERGE (o2:disease {id: 'u_thận_lành_tính_disease'})
+MERGE (o1)-[r99:diagnosedBy]->(o2)
+SET r99.text = 'Phân tích nước tiểu để tìm hồng cầu, bạch cầu, nồng độ hormone tuyến thượng thận…'
+
+MERGE (o1:test {id: 'phân_tích_nước_tiểu_test'})
+MERGE (o2:test {id: 'hồng_cầu_test'})
+MERGE (o1)-[r100:relatedTo]->(o2)
+SET r100.text = 'Phân tích nước tiểu để tìm hồng cầu, bạch cầu, nồng độ hormone tuyến thượng thận…'
+
+MERGE (o1:test {id: 'phân_tích_nước_tiểu_test'})
+MERGE (o2:test {id: 'bạch_cầu_test'})
+MERGE (o1)-[r101:relatedTo]->(o2)
+SET r101.text = 'Phân tích nước tiểu để tìm hồng cầu, bạch cầu, nồng độ hormone tuyến thượng thận…'
+
+MERGE (o1:test {id: 'phân_tích_nước_tiểu_test'})
+MERGE (o2:test {id: 'nồng_độ_hormone_tuyến_thượng_thận_test'})
+MERGE (o1)-[r102:relatedTo]->(o2)
+SET r102.text = 'Phân tích nước tiểu để tìm hồng cầu, bạch cầu, nồng độ hormone tuyến thượng thận…'
+
+MERGE (o1:test {id: 'siêu_âm_test'})
+MERGE (o2:disease {id: 'u_thận_lành_tính_disease'})
+MERGE (o1)-[r103:diagnosedBy]->(o2)
+SET r103.text = 'Siêu âm để đánh giá số lượng, kích thước, cấu tạo khối u…'
+
+MERGE (o1:test {id: 'siêu_âm_test'})
+MERGE (o2:disease {id: 'khối_u_disease'})
+MERGE (o1)-[r104:relatedTo]->(o2)
+SET r104.text = 'Siêu âm để đánh giá số lượng, kích thước, cấu tạo khối u…'
+
+MERGE (o1:test {id: 'chụp_cắt_lớp_vi_tính_(ct_scan)_test'})
+MERGE (o2:disease {id: 'u_thận_lành_tính_disease'})
+MERGE (o1)-[r105:diagnosedBy]->(o2)
+SET r105.text = 'Chụp cắt lớp vi tính (CT scan) giúp xác định đặc tính khối u thận lành tính, hoạt động của thận còn lại…'
+
+MERGE (o1:test {id: 'chụp_cắt_lớp_vi_tính_(ct_scan)_test'})
+MERGE (o2:organ {id: 'hoạt_động_của_thận_organ'})
+MERGE (o1)-[r106:relatedTo]->(o2)
+SET r106.text = 'Chụp cắt lớp vi tính (CT scan) giúp xác định đặc tính khối u thận lành tính, hoạt động của thận còn lại…'
+
+MERGE (o1:test {id: 'chụp_cộng_hưởng_từ_(mri)_test'})
+MERGE (o2:disease {id: 'u_thận_lành_tính_disease'})
+MERGE (o1)-[r107:diagnosedBy]->(o2)
+SET r107.text = 'Chụp cộng hưởng từ (MRI), chụp cắt lớp phát xạ positron (PET) cũng được chỉ định để kiểm tra vị trí, kích thước, tính chất khối u'
+
+MERGE (o1:test {id: 'chụp_cộng_hưởng_từ_(mri)_test'})
+MERGE (o2:organ {id: 'vị_trí_organ'})
+MERGE (o1)-[r108:relatedTo]->(o2)
+SET r108.text = 'Chụp cộng hưởng từ (MRI), chụp cắt lớp phát xạ positron (PET) cũng được chỉ định để kiểm tra vị trí, kích thước, tính chất khối u'
+
+MERGE (o1:test {id: 'chụp_cộng_hưởng_từ_(mri)_test'})
+MERGE (o2:organ {id: 'kích_thước_organ'})
+MERGE (o1)-[r109:relatedTo]->(o2)
+SET r109.text = 'Chụp cộng hưởng từ (MRI), chụp cắt lớp phát xạ positron (PET) cũng được chỉ định để kiểm tra vị trí, kích thước, tính chất khối u'
+
+MERGE (o1:test {id: 'chụp_cộng_hưởng_từ_(mri)_test'})
+MERGE (o2:organ {id: 'tính_chất_organ'})
+MERGE (o1)-[r110:relatedTo]->(o2)
+SET r110.text = 'Chụp cộng hưởng từ (MRI), chụp cắt lớp phát xạ positron (PET) cũng được chỉ định để kiểm tra vị trí, kích thước, tính chất khối u'
+
+MERGE (o1:test {id: 'chụp_cắt_lớp_phát_xạ_positron_(pet)_test'})
+MERGE (o2:disease {id: 'u_thận_lành_tính_disease'})
+MERGE (o1)-[r111:diagnosedBy]->(o2)
+SET r111.text = 'Chụp cộng hưởng từ (MRI), chụp cắt lớp phát xạ positron (PET) cũng được chỉ định để kiểm tra vị trí, kích thước, tính chất khối u'
+
+MERGE (o1:test {id: 'chụp_cắt_lớp_phát_xạ_positron_(pet)_test'})
+MERGE (o2:organ {id: 'vị_trí_organ'})
+MERGE (o1)-[r112:relatedTo]->(o2)
+SET r112.text = 'Chụp cộng hưởng từ (MRI), chụp cắt lớp phát xạ positron (PET) cũng được chỉ định để kiểm tra vị trí, kích thước, tính chất khối u'
+
+MERGE (o1:test {id: 'chụp_cắt_lớp_phát_xạ_positron_(pet)_test'})
+MERGE (o2:organ {id: 'kích_thước_organ'})
+MERGE (o1)-[r113:relatedTo]->(o2)
+SET r113.text = 'Chụp cộng hưởng từ (MRI), chụp cắt lớp phát xạ positron (PET) cũng được chỉ định để kiểm tra vị trí, kích thước, tính chất khối u'
+
+MERGE (o1:test {id: 'chụp_cắt_lớp_phát_xạ_positron_(pet)_test'})
+MERGE (o2:organ {id: 'tính_chất_organ'})
+MERGE (o1)-[r114:relatedTo]->(o2)
+SET r114.text = 'Chụp cộng hưởng từ (MRI), chụp cắt lớp phát xạ positron (PET) cũng được chỉ định để kiểm tra vị trí, kích thước, tính chất khối u'
+
+MERGE (o1:test {id: 'chụp_thận_có_thuốc_cản_quang_test'})
+MERGE (o2:disease {id: 'u_thận_lành_tính_disease'})
+MERGE (o1)-[r115:diagnosedBy]->(o2)
+SET r115.text = 'Chụp thận có thuốc cản quang giúp tìm kiếm sự chèn ép vào nhu mô thận và phân biệt với các bệnh lý thận khác, cụ thể như thận ứ nước'
+
+MERGE (o1:test {id: 'chụp_thận_có_thuốc_cản_quang_test'})
+MERGE (o2:organ {id: 'nhu_mô_thận_organ'})
+MERGE (o1)-[r116:relatedTo]->(o2)
+SET r116.text = 'Chụp thận có thuốc cản quang giúp tìm kiếm sự chèn ép vào nhu mô thận và phân biệt với các bệnh lý thận khác, cụ thể như thận ứ nước'
+
+MERGE (o1:test {id: 'chụp_thận_có_thuốc_cản_quang_test'})
+MERGE (o2:disease {id: 'bệnh_lý_thận_disease'})
+MERGE (o1)-[r117:relatedTo]->(o2)
+SET r117.text = 'Chụp thận có thuốc cản quang giúp tìm kiếm sự chèn ép vào nhu mô thận và phân biệt với các bệnh lý thận khác, cụ thể như thận ứ nước'
+
+MERGE (o1:test {id: 'chụp_thận_có_thuốc_cản_quang_test'})
+MERGE (o2:disease {id: 'thận_ứ_nước_disease'})
+MERGE (o1)-[r118:relatedTo]->(o2)
+SET r118.text = 'Chụp thận có thuốc cản quang giúp tìm kiếm sự chèn ép vào nhu mô thận và phân biệt với các bệnh lý thận khác, cụ thể như thận ứ nước'
+
+MERGE (o1:test {id: 'xét_nghiệm_di_truyền_test'})
+MERGE (o2:disease {id: 'u_thận_lành_tính_disease'})
+MERGE (o1)-[r119:diagnosedBy]->(o2)
+SET r119.text = 'Xét nghiệm di truyền có thể được chỉ định để xác định yếu tố nguy cơ gây u thận lành tính, nhất là với Hội chứng polyp gia đình và bệnh di truyền đa u tuyến nội tiết tuýp 1.'
+
+MERGE (o1:test {id: 'xét_nghiệm_di_truyền_test'})
+MERGE (o2:cause {id: 'yếu_tố_nguy_cơ_cause'})
+MERGE (o1)-[r120:relatedTo]->(o2)
+SET r120.text = 'Xét nghiệm di truyền có thể được chỉ định để xác định yếu tố nguy cơ gây u thận lành tính, nhất là với Hội chứng polyp gia đình và bệnh di truyền đa u tuyến nội tiết tuýp 1.'
+
+MERGE (o1:test {id: 'xét_nghiệm_di_truyền_test'})
+MERGE (o2:disease {id: 'hội_chứng_polyp_gia_đình_disease'})
+MERGE (o1)-[r121:relatedTo]->(o2)
+SET r121.text = 'Xét nghiệm di truyền có thể được chỉ định để xác định yếu tố nguy cơ gây u thận lành tính, nhất là với Hội chứng polyp gia đình và bệnh di truyền đa u tuyến nội tiết tuýp 1.'
+
+MERGE (o1:test {id: 'xét_nghiệm_di_truyền_test'})
+MERGE (o2:disease {id: 'bệnh_di_truyền_đa_u_tuyến_nội_tiết_tuýp_1_disease'})
+MERGE (o1)-[r122:relatedTo]->(o2)
+SET r122.text = 'Xét nghiệm di truyền có thể được chỉ định để xác định yếu tố nguy cơ gây u thận lành tính, nhất là với Hội chứng polyp gia đình và bệnh di truyền đa u tuyến nội tiết tuýp 1.'
+
+MERGE (o1:test {id: 'sinh_thiết_u_thận_test'})
+MERGE (o2:disease {id: 'u_thận_lành_tính_disease'})
+MERGE (o1)-[r123:diagnosedBy]->(o2)
+SET r123.text = 'Sinh thiết u thận để chẩn đoán xác định u thận lành tính hoặc ác tính, giúp bác sĩ đưa ra phương án điều trị phù hợp'
+
+MERGE (o1:test {id: 'sinh_thiết_u_thận_test'})
+MERGE (o2:disease {id: 'u_thận_ác_tính_disease'})
+MERGE (o1)-[r124:relatedTo]->(o2)
+SET r124.text = 'Sinh thiết u thận để chẩn đoán xác định u thận lành tính hoặc ác tính, giúp bác sĩ đưa ra phương án điều trị phù hợp'
+
+MERGE (o1:test {id: 'sinh_thiết_u_thận_test'})
+MERGE (o2:treatment {id: 'phương_án_điều_trị_treatment'})
+MERGE (o1)-[r125:relatedTo]->(o2)
+SET r125.text = 'Sinh thiết u thận để chẩn đoán xác định u thận lành tính hoặc ác tính, giúp bác sĩ đưa ra phương án điều trị phù hợp'
+
+MERGE (o1:disease {id: 'u_thận_disease'})
+MERGE (o2:cause {id: 'yếu_tố_nguy_cơ_cause'})
+MERGE (o1)-[r126:causedBy]->(o2)
+SET r126.text = 'Nhận biết các yếu tố nguy cơ góp phần gây ra u thận có thể giúp bạn xây dựng một lối sống khoa học, lành mạnh, góp phần làm giảm nguy cơ ung thư.'
+
+MERGE (o1:disease {id: 'u_thận_disease'})
+MERGE (o2:lifestyle {id: 'lối_sống_khoa_học__lành_mạnh_lifestyle'})
+MERGE (o1)-[r127:preventedBy]->(o2)
+SET r127.text = 'Nhận biết các yếu tố nguy cơ góp phần gây ra u thận có thể giúp bạn xây dựng một lối sống khoa học, lành mạnh, góp phần làm giảm nguy cơ ung thư.'
+
+MERGE (o1:disease {id: 'u_thận_disease'})
+MERGE (o2:disease {id: 'ung_thư_disease'})
+MERGE (o1)-[r128:relatedTo]->(o2)
+SET r128.text = 'Nhận biết các yếu tố nguy cơ góp phần gây ra u thận có thể giúp bạn xây dựng một lối sống khoa học, lành mạnh, góp phần làm giảm nguy cơ ung thư.'
+
+MERGE (o1:disease {id: 'u_thận_disease'})
+MERGE (o2:lifestyle {id: 'những_cách_tốt_nhất_lifestyle'})
+MERGE (o1)-[r129:preventedBy]->(o2)
+SET r129.text = 'Theo các chuyên gia Tiết niệu Thận học, dưới đây là những cách tốt nhất để ngăn ngừa u thận:'
+
+MERGE (o1:lifestyle {id: 'thuốc_lá_lifestyle'})
+MERGE (o2:disease {id: 'u_thận_disease'})
+MERGE (o1)-[r130:causedBy]->(o2)
+SET r130.text = 'Hạn chế và nỗ lực ngừng hẳn việc sử dụng thuốc lá, tránh xa khói thuốc'
+
+MERGE (o1:lifestyle {id: 'khói_thuốc_lifestyle'})
+MERGE (o2:disease {id: 'u_thận_disease'})
+MERGE (o1)-[r131:causedBy]->(o2)
+SET r131.text = 'Hạn chế và nỗ lực ngừng hẳn việc sử dụng thuốc lá, tránh xa khói thuốc'
+
+MERGE (o1:lifestyle {id: 'chế_độ_dinh_dưỡng_lành_mạnh_lifestyle'})
+MERGE (o2:disease {id: 'u_thận_disease'})
+MERGE (o1)-[r132:preventedBy]->(o2)
+SET r132.text = 'Xây dựng một chế độ dinh dưỡng lành mạnh, cân bằng bằng cách:
+Hạn chế ăn các loại thịt chế biến sẵn
+Áp dụng các chế độ ăn tập trung vào thực phẩm có nguồn gốc thực vật, đạm từ thịt nạc và chất béo lành mạnh'
+
+MERGE (o1:food {id: 'thịt_chế_biến_sẵn_food'})
+MERGE (o2:disease {id: 'u_thận_disease'})
+MERGE (o1)-[r133:causedBy]->(o2)
+SET r133.text = 'Xây dựng một chế độ dinh dưỡng lành mạnh, cân bằng bằng cách:
+Hạn chế ăn các loại thịt chế biến sẵn
+Áp dụng các chế độ ăn tập trung vào thực phẩm có nguồn gốc thực vật, đạm từ thịt nạc và chất béo lành mạnh'
+
+MERGE (o1:food {id: 'thực_phẩm_có_nguồn_gốc_thực_vật_food'})
+MERGE (o2:disease {id: 'u_thận_disease'})
+MERGE (o1)-[r134:preventedBy]->(o2)
+SET r134.text = 'Xây dựng một chế độ dinh dưỡng lành mạnh, cân bằng bằng cách:
+Hạn chế ăn các loại thịt chế biến sẵn
+Áp dụng các chế độ ăn tập trung vào thực phẩm có nguồn gốc thực vật, đạm từ thịt nạc và chất béo lành mạnh'
+
+MERGE (o1:food {id: 'thịt_nạc_food'})
+MERGE (o2:disease {id: 'u_thận_disease'})
+MERGE (o1)-[r135:preventedBy]->(o2)
+SET r135.text = 'Xây dựng một chế độ dinh dưỡng lành mạnh, cân bằng bằng cách:
+Hạn chế ăn các loại thịt chế biến sẵn
+Áp dụng các chế độ ăn tập trung vào thực phẩm có nguồn gốc thực vật, đạm từ thịt nạc và chất béo lành mạnh'
+
+MERGE (o1:food {id: 'chất_béo_lành_mạnh_food'})
+MERGE (o2:disease {id: 'u_thận_disease'})
+MERGE (o1)-[r136:preventedBy]->(o2)
+SET r136.text = 'Xây dựng một chế độ dinh dưỡng lành mạnh, cân bằng bằng cách:
+Hạn chế ăn các loại thịt chế biến sẵn
+Áp dụng các chế độ ăn tập trung vào thực phẩm có nguồn gốc thực vật, đạm từ thịt nạc và chất béo lành mạnh'
+
+MERGE (o1:lifestyle {id: 'rượu_lifestyle'})
+MERGE (o2:disease {id: 'u_thận_disease'})
+MERGE (o1)-[r137:causedBy]->(o2)
+SET r137.text = 'Tránh uống rượu hoặc uống có chừng mực'
+
+MERGE (o1:lifestyle {id: 'cân_nặng_hợp_lý_lifestyle'})
+MERGE (o2:disease {id: 'u_thận_disease'})
+MERGE (o1)-[r138:preventedBy]->(o2)
+SET r138.text = 'Giữ cân nặng hợp lý bằng cách tăng cường vận động cơ thể ít nhất 30 phút/ngày'
+
+MERGE (o1:lifestyle {id: 'vận_động_cơ_thể_lifestyle'})
+MERGE (o2:disease {id: 'u_thận_disease'})
+MERGE (o1)-[r139:preventedBy]->(o2)
+SET r139.text = 'Giữ cân nặng hợp lý bằng cách tăng cường vận động cơ thể ít nhất 30 phút/ngày'
+
+MERGE (o1:lifestyle {id: 'ánh_nắng_mặt_trời_lifestyle'})
+MERGE (o2:disease {id: 'u_thận_disease'})
+MERGE (o1)-[r140:causedBy]->(o2)
+SET r140.text = 'Che chắn cơ thể khỏi ánh nắng mặt trời'
+
+MERGE (o1:disease {id: 'bệnh_nhiễm_virus_disease'})
+MERGE (o2:disease {id: 'ung_thư_thận_disease'})
+MERGE (o1)-[r141:causedBy]->(o2)
+SET r141.text = 'Tiêm phòng các bệnh nhiễm virus có thể dẫn đến ung thư thận, chẳng hạn như viêm gan B và HPV.'
+
+MERGE (o1:disease {id: 'viêm_gan_b_disease'})
+MERGE (o2:disease {id: 'ung_thư_thận_disease'})
+MERGE (o1)-[r142:causedBy]->(o2)
+SET r142.text = 'Tiêm phòng các bệnh nhiễm virus có thể dẫn đến ung thư thận, chẳng hạn như viêm gan B và HPV.'
+
+MERGE (o1:disease {id: 'hpv_disease'})
+MERGE (o2:disease {id: 'ung_thư_thận_disease'})
+MERGE (o1)-[r143:causedBy]->(o2)
+SET r143.text = 'Tiêm phòng các bệnh nhiễm virus có thể dẫn đến ung thư thận, chẳng hạn như viêm gan B và HPV.'
+
+MERGE (o1:disease {id: 'ung_thư_thận_disease'})
+MERGE (o2:disease {id: 'u_thận_disease'})
+MERGE (o1)-[r144:relatedTo]->(o2)
+SET r144.text = 'Tiêm phòng các bệnh nhiễm virus có thể dẫn đến ung thư thận, chẳng hạn như viêm gan B và HPV.'
+
+MERGE (o1:treatment {id: 'thuốc_treatment'})
+MERGE (o2:disease {id: 'u_thận_disease'})
+MERGE (o1)-[r145:causedBy]->(o2)
+SET r145.text = 'Không sử dụng thuốc, nhất là thuốc kê đơn, khi chưa có chỉ định của bác sĩ'
+
+MERGE (o1:test {id: 'tầm_soát_ung_thư_test'})
+MERGE (o2:disease {id: 'u_thận_disease'})
+MERGE (o1)-[r146:diagnosedBy]->(o2)
+SET r146.text = 'Quan tâm đến sức khỏe và tuân thủ lịch chăm sóc sức khỏe định kỳ để tầm soát các loại ung thư kịp thời, mang đến hiệu quả điều trị cao'
+
+MERGE (o1:treatment {id: 'tiêm_ngừa_vắc_xin_viêm_gan_b_treatment'})
+MERGE (o2:disease {id: 'u_thận_disease'})
+MERGE (o1)-[r147:preventedBy]->(o2)
+SET r147.text = 'Tiêm ngừa vắc xin viêm gan B, HPV là một trong các biện pháp phòng u thận hiệu quả.'
+
+MERGE (o1:treatment {id: 'tiêm_ngừa_vắc_xin_hpv_treatment'})
+MERGE (o2:disease {id: 'u_thận_disease'})
+MERGE (o1)-[r148:preventedBy]->(o2)
+SET r148.text = 'Tiêm ngừa vắc xin viêm gan B, HPV là một trong các biện pháp phòng u thận hiệu quả.'
+
+MERGE (o1:disease {id: 'khối_u_thận_lành_tính_disease'})
+MERGE (o2:treatment {id: 'điều_trị_treatment'})
+MERGE (o1)-[r149:treatedBy]->(o2)
+SET r149.text = 'Không phải tất cả các khối u thận lành tính đều cần điều trị.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:symptom {id: 'triệu_chứng_symptom'})
+MERGE (o1)-[r150:relatedTo]->(o2)
+SET r150.text = 'Nếu khối u của người bệnh nhỏ và không gây ra bất kỳ triệu chứng nào, bác sĩ có thể hướng dẫn một số biện pháp theo dõi định kỳ.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:treatment {id: 'theo_dõi_định_kỳ_treatment'})
+MERGE (o1)-[r151:treatedBy]->(o2)
+SET r151.text = 'Nếu khối u của người bệnh nhỏ và không gây ra bất kỳ triệu chứng nào, bác sĩ có thể hướng dẫn một số biện pháp theo dõi định kỳ.'
+
+MERGE (o1:treatment {id: 'điều_trị_treatment'})
+MERGE (o2:organ {id: 'vị_trí_organ'})
+MERGE (o1)-[r152:relatedTo]->(o2)
+SET r152.text = 'Nếu bác sĩ chỉ định điều trị, phương pháp cụ thể sẽ phụ thuộc vào vị trí của khối u, nguy cơ ảnh hưởng đến các cơ quan nội tạng, dây thần kinh, mạch máu… (3)'
+
+MERGE (o1:treatment {id: 'điều_trị_treatment'})
+MERGE (o2:organ {id: 'cơ_quan_nội_tạng_organ'})
+MERGE (o1)-[r153:relatedTo]->(o2)
+SET r153.text = 'Nếu bác sĩ chỉ định điều trị, phương pháp cụ thể sẽ phụ thuộc vào vị trí của khối u, nguy cơ ảnh hưởng đến các cơ quan nội tạng, dây thần kinh, mạch máu… (3)'
+
+MERGE (o1:treatment {id: 'điều_trị_treatment'})
+MERGE (o2:organ {id: 'dây_thần_kinh_organ'})
+MERGE (o1)-[r154:relatedTo]->(o2)
+SET r154.text = 'Nếu bác sĩ chỉ định điều trị, phương pháp cụ thể sẽ phụ thuộc vào vị trí của khối u, nguy cơ ảnh hưởng đến các cơ quan nội tạng, dây thần kinh, mạch máu… (3)'
+
+MERGE (o1:treatment {id: 'điều_trị_treatment'})
+MERGE (o2:organ {id: 'mạch_máu_organ'})
+MERGE (o1)-[r155:relatedTo]->(o2)
+SET r155.text = 'Nếu bác sĩ chỉ định điều trị, phương pháp cụ thể sẽ phụ thuộc vào vị trí của khối u, nguy cơ ảnh hưởng đến các cơ quan nội tạng, dây thần kinh, mạch máu… (3)'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_khối_u_treatment'})
+MERGE (o2:disease {id: 'u_thận_lành_tính_disease'})
+MERGE (o1)-[r156:treatedBy]->(o2)
+SET r156.text = 'Phẫu thuật khối u thường được thực hiện bằng kỹ thuật nội soi để hạn chế nguy cơ xâm lấn, vết mổ nhỏ hơn, ít chảy máu và rút ngắn thời gian hồi phục.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_khối_u_treatment'})
+MERGE (o2:treatment {id: 'kỹ_thuật_nội_soi_treatment'})
+MERGE (o1)-[r157:relatedTo]->(o2)
+SET r157.text = 'Phẫu thuật khối u thường được thực hiện bằng kỹ thuật nội soi để hạn chế nguy cơ xâm lấn, vết mổ nhỏ hơn, ít chảy máu và rút ngắn thời gian hồi phục.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_khối_u_treatment'})
+MERGE (o2:treatment {id: 'xâm_lấn_treatment'})
+MERGE (o1)-[r158:relatedTo]->(o2)
+SET r158.text = 'Phẫu thuật khối u thường được thực hiện bằng kỹ thuật nội soi để hạn chế nguy cơ xâm lấn, vết mổ nhỏ hơn, ít chảy máu và rút ngắn thời gian hồi phục.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_khối_u_treatment'})
+MERGE (o2:treatment {id: 'vết_mổ_treatment'})
+MERGE (o1)-[r159:relatedTo]->(o2)
+SET r159.text = 'Phẫu thuật khối u thường được thực hiện bằng kỹ thuật nội soi để hạn chế nguy cơ xâm lấn, vết mổ nhỏ hơn, ít chảy máu và rút ngắn thời gian hồi phục.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_khối_u_treatment'})
+MERGE (o2:treatment {id: 'chảy_máu_treatment'})
+MERGE (o1)-[r160:relatedTo]->(o2)
+SET r160.text = 'Phẫu thuật khối u thường được thực hiện bằng kỹ thuật nội soi để hạn chế nguy cơ xâm lấn, vết mổ nhỏ hơn, ít chảy máu và rút ngắn thời gian hồi phục.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_khối_u_treatment'})
+MERGE (o2:treatment {id: 'thời_gian_hồi_phục_treatment'})
+MERGE (o1)-[r161:relatedTo]->(o2)
+SET r161.text = 'Phẫu thuật khối u thường được thực hiện bằng kỹ thuật nội soi để hạn chế nguy cơ xâm lấn, vết mổ nhỏ hơn, ít chảy máu và rút ngắn thời gian hồi phục.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_khối_u_treatment'})
+MERGE (o2:treatment {id: 'ở_lại_bệnh_viện_treatment'})
+MERGE (o1)-[r162:relatedTo]->(o2)
+SET r162.text = 'Khi thực hiện phương pháp này, người bệnh có thể cần ở lại bệnh viện 1-2 ngày để chờ ổn định và xuất viện.'
+
+MERGE (o1:treatment {id: 'mổ_mở_treatment'})
+MERGE (o2:treatment {id: 'xâm_lấn_treatment'})
+MERGE (o1)-[r163:relatedTo]->(o2)
+SET r163.text = 'Thời gian phục hồi sau mổ mở tỷ lệ thuận với mức độ can thiệp xâm lấn.'
+
+MERGE (o1:treatment {id: 'liệu_pháp_vận_động_treatment'})
+MERGE (o2:disease {id: 'khối_u_disease'})
+MERGE (o1)-[r164:treatedBy]->(o2)
+SET r164.text = 'Sau khi khối u đã được loại bỏ, người bệnh có thể cần liệu pháp vận động, chăm sóc chuyên biệt để giải quyết các vấn đề mà khối u để lại.'

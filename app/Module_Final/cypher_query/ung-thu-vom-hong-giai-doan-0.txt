@@ -1,0 +1,65 @@
+
+MERGE (o1:treatment {id: 'điều_trị_ung_thư_vòm_họng_giai_đoạn_0_treatment'})
+MERGE (o2:symptom {id: 'tỷ_lệ_sống_sau_5_năm_trên_82%_symptom'})
+MERGE (o1)-[r0:relatedTo]->(o2)
+SET r0.text = 'Theo ThS.BS Nguyễn Tiến Sỹ, điều trị ung thư vòm họng giai đoạn 0 thường có kết quả tốt, với tỷ lệ sống sau 5 năm trên 82%.'
+
+MERGE (o1:disease {id: 'ung_thư_vòm_họng_giai_đoạn_0_disease'})
+MERGE (o2:treatment {id: 'điều_trị_ung_thư_vòm_họng_giai_đoạn_0_treatment'})
+MERGE (o1)-[r1:treatedBy]->(o2)
+SET r1.text = 'Theo ThS.BS Nguyễn Tiến Sỹ, điều trị ung thư vòm họng giai đoạn 0 thường có kết quả tốt, với tỷ lệ sống sau 5 năm trên 82%.'
+
+MERGE (o1:disease {id: 'ung_thư_disease'})
+MERGE (o2:symptom {id: 'tình_trạng_nguy_hiểm_symptom'})
+MERGE (o1)-[r2:isSymptomOf]->(o2)
+SET r2.text = 'Nói chung đã mắc ung thư là rơi vào tình trạng nguy hiểm, vì vậy người bệnh không được lơ là trong việc điều trị, tái khám nhằm kiểm soát ung thư.'
+
+MERGE (o1:treatment {id: 'tái_khám_treatment'})
+MERGE (o2:disease {id: 'ung_thư_disease'})
+MERGE (o1)-[r3:treatedBy]->(o2)
+SET r3.text = 'Nói chung đã mắc ung thư là rơi vào tình trạng nguy hiểm, vì vậy người bệnh không được lơ là trong việc điều trị, tái khám nhằm kiểm soát ung thư.'
+
+MERGE (o1:disease {id: 'ung_thư_vòm_họng_disease'})
+MERGE (o2:test {id: 'tầm_soát_và_chẩn_đoán_ung_thư_vòm_họng_test'})
+MERGE (o1)-[r4:diagnosedBy]->(o2)
+SET r4.text = 'Những phương pháp tầm soát và chẩn đoán ung thư vòm họng thường được sử dụng bao gồm:'
+
+MERGE (o1:disease {id: 'ung_thư_vòm_họng_disease'})
+MERGE (o2:lifestyle {id: 'lối_sống__chế_độ_dinh_dưỡng_lifestyle'})
+MERGE (o1)-[r5:causedBy]->(o2)
+SET r5.text = 'Bác sĩ sẽ hỏi tiền sử của bệnh nhân và gia đình, bao gồm các vấn đề về lối sống, chế độ dinh dưỡng và các yếu tố khác có thể làm tăng nguy cơ phát triển ung thư vòm họng.'
+
+MERGE (o1:organ {id: 'hạch_cổ_organ'})
+MERGE (o2:organ {id: 'cổ_organ'})
+MERGE (o1)-[r6:locatedIn]->(o2)
+SET r6.text = 'Bác sĩ sẽ sờ xem có hạch cổ nghi ngờ hay không để phát hiện những vị trí có bất thường.'
+
+MERGE (o1:symptom {id: 'tổn_thương_nghi_ngờ_symptom'})
+MERGE (o2:disease {id: 'ung_thư_vòm_họng_disease'})
+MERGE (o1)-[r7:isSymptomOf]->(o2)
+SET r7.text = 'Nếu phát hiện có tổn thương nghi ngờ, bác sĩ có thể bấm sinh thiết để lấy một mẫu mô.'
+
+MERGE (o1:symptom {id: 'tế_bào_ung_thư_symptom'})
+MERGE (o2:disease {id: 'ung_thư_vòm_họng_disease'})
+MERGE (o1)-[r8:isSymptomOf]->(o2)
+SET r8.text = 'Mẫu mô này sẽ được các bác sĩ giải phẫu bệnh đánh giá nhằm phát hiện các tế bào ung thư.'
+
+MERGE (o1:symptom {id: 'di_căn_hạch_vùng_symptom'})
+MERGE (o2:disease {id: 'ung_thư_vòm_họng_disease'})
+MERGE (o1)-[r9:isSymptomOf]->(o2)
+SET r9.text = 'Phương pháp này được chỉ định để đánh giá các đặc điểm bướu tại chỗ và tình trạng di căn hạch vùng.'
+
+MERGE (o1:symptom {id: 'di_căn_symptom'})
+MERGE (o2:disease {id: 'ung_thư_vòm_họng_disease'})
+MERGE (o1)-[r10:isSymptomOf]->(o2)
+SET r10.text = 'Kỹ thuật này có thể được dùng để đánh giá bướu đã di căn đến các cơ quan khác hay chưa.'
+
+MERGE (o1:disease {id: 'ung_thư_vòm_họng_giai_đoạn_0_disease'})
+MERGE (o2:treatment {id: 'điều_trị_khỏi_bệnh_treatment'})
+MERGE (o1)-[r11:treatedBy]->(o2)
+SET r11.text = 'ThS.BS Nguyễn Tiến Sỹ cho biết, bệnh ung thư vòm họng giai đoạn 0 có cơ hội điều trị khỏi bệnh rất cao.'
+
+MERGE (o1:symptom {id: 'dấu_hiệu_bất_thường_symptom'})
+MERGE (o2:disease {id: 'ung_thư_vòm_họng_disease'})
+MERGE (o1)-[r12:isSymptomOf]->(o2)
+SET r12.text = 'Việc chủ động đi khám bệnh khi thấy có dấu hiệu bất thường, hoặc chủ động tầm soát trên nhóm bệnh nhân có nguy cơ cao có thể giúp phát hiện bệnh ở giai đoạn sớm.'

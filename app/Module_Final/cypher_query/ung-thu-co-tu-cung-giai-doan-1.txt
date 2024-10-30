@@ -1,0 +1,316 @@
+
+MERGE (o1:symptom {id: 'triệu_chứng_đặc_hiệu_symptom'})
+MERGE (o2:disease {id: 'ung_thư_cổ_tử_cung_giai_đoạn_i_disease'})
+MERGE (o1)-[r0:isSymptomOf]->(o2)
+SET r0.text = 'Người bệnh ung thư cổ tử cung giai đoạn I (giai đoạn đầu) thường không có triệu chứng đặc hiệu.'
+
+MERGE (o1:test {id: 'tầm_soát_test'})
+MERGE (o2:disease {id: 'ung_thư_cổ_tử_cung_giai_đoạn_i_disease'})
+MERGE (o1)-[r1:diagnosedBy]->(o2)
+SET r1.text = 'Tầm soát là cách tốt nhất để phát hiện sớm và điều trị bệnh hiệu quả.'
+
+MERGE (o1:disease {id: 'giai_đoạn_bệnh_disease'})
+MERGE (o2:disease {id: 'khối_u_disease'})
+MERGE (o1)-[r2:relatedTo]->(o2)
+SET r2.text = 'Giai đoạn bệnh phản ánh mức độ phát triển của khối u và tình trạng di căn.'
+
+MERGE (o1:disease {id: 'giai_đoạn_bệnh_disease'})
+MERGE (o2:disease {id: 'di_căn_disease'})
+MERGE (o1)-[r3:relatedTo]->(o2)
+SET r3.text = 'Giai đoạn bệnh phản ánh mức độ phát triển của khối u và tình trạng di căn.'
+
+MERGE (o1:test {id: 'xác_định_giai_đoạn_test'})
+MERGE (o2:disease {id: 'ung_thư_cổ_tử_cung_disease'})
+MERGE (o1)-[r4:diagnosedBy]->(o2)
+SET r4.text = 'Xác định giai đoạn giúp bác sĩ có thể đưa ra quyết định lựa chọn các phương pháp điều trị tối ưu nhất cho người bệnh.'
+
+MERGE (o1:treatment {id: 'các_phương_pháp_điều_trị_treatment'})
+MERGE (o2:disease {id: 'ung_thư_cổ_tử_cung_disease'})
+MERGE (o1)-[r5:treatedBy]->(o2)
+SET r5.text = 'Xác định giai đoạn giúp bác sĩ có thể đưa ra quyết định lựa chọn các phương pháp điều trị tối ưu nhất cho người bệnh.'
+
+MERGE (o1:test {id: 'hệ_thống_phân_loại_của_hội_sản_phụ_khoa_quốc_tế_(figo)_test'})
+MERGE (o2:disease {id: 'ung_thư_cổ_tử_cung_disease'})
+MERGE (o1)-[r6:diagnosedBy]->(o2)
+SET r6.text = 'Hệ thống phân loại của Hội Sản Phụ khoa Quốc tế (FIGO) thường được sử dụng trong phân giai đoạn cho ung thư cổ tử cung, gồm có 4 giai đoạn được ký hiệu bằng chữ số La Mã từ I đến IV.'
+
+MERGE (o1:disease {id: 'ung_thư_cổ_tử_cung_giai_đoạn_i_disease'})
+MERGE (o2:organ {id: 'cổ_tử_cung_organ'})
+MERGE (o1)-[r7:locatedIn]->(o2)
+SET r7.text = 'Chẩn đoán ung thư cổ tử cung giai đoạn I (IA và IB) khi bệnh giới hạn trong cổ tử cung, chưa lan sang các mô xung quanh hoặc các cơ quan khác.'
+
+MERGE (o1:disease {id: 'ung_thư_cổ_tử_cung_giai_đoạn_i_disease'})
+MERGE (o2:organ {id: 'các_mô_xung_quanh_organ'})
+MERGE (o1)-[r8:affects]->(o2)
+SET r8.text = 'Chẩn đoán ung thư cổ tử cung giai đoạn I (IA và IB) khi bệnh giới hạn trong cổ tử cung, chưa lan sang các mô xung quanh hoặc các cơ quan khác.'
+
+MERGE (o1:disease {id: 'ung_thư_cổ_tử_cung_giai_đoạn_i_disease'})
+MERGE (o2:organ {id: 'các_cơ_quan_khác_organ'})
+MERGE (o1)-[r9:affects]->(o2)
+SET r9.text = 'Chẩn đoán ung thư cổ tử cung giai đoạn I (IA và IB) khi bệnh giới hạn trong cổ tử cung, chưa lan sang các mô xung quanh hoặc các cơ quan khác.'
+
+MERGE (o1:disease {id: 'ung_thư_cổ_tử_cung_giai_đoạn_i_disease'})
+MERGE (o2:treatment {id: 'điều_trị_treatment'})
+MERGE (o1)-[r10:treatedBy]->(o2)
+SET r10.text = 'Ung thư cổ tử cung giai đoạn I tiên lượng tốt, điều trị cho hiệu quả cao.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:disease {id: 'ung_thư_cổ_tử_cung_giai_đoạn_ia_disease'})
+MERGE (o1)-[r11:isSymptomOf]->(o2)
+SET r11.text = 'Ở giai đoạn IA, sự phát triển của khối u rất nhỏ nên chỉ có thể quan sát được dưới kính hiển vi.'
+
+MERGE (o1:disease {id: 'giai_đoạn_này_disease'})
+MERGE (o2:disease {id: 'ung_thư_cổ_tử_cung_giai_đoạn_ia_disease'})
+MERGE (o1)-[r12:relatedTo]->(o2)
+SET r12.text = 'Giai đoạn này có thể được chia thành 2 phân nhóm:'
+
+MERGE (o1:symptom {id: 'độ_sâu_tổn_thương_&lt;_3mm_symptom'})
+MERGE (o2:disease {id: 'ung_thư_cổ_tử_cung_giai_đoạn_ia1_disease'})
+MERGE (o1)-[r13:isSymptomOf]->(o2)
+SET r13.text = 'Ung thư cổ tử cung giai đoạn IA1: Độ sâu tổn thương &lt; 3mm.'
+
+MERGE (o1:symptom {id: 'độ_sâu_tổn_thương_từ_3_-_5mm_symptom'})
+MERGE (o2:disease {id: 'ung_thư_cổ_tử_cung_giai_đoạn_ia2_disease'})
+MERGE (o1)-[r14:isSymptomOf]->(o2)
+SET r14.text = 'Ung thư cổ tử cung giai đoạn IA2: Độ sâu tổn thương từ 3 - 5mm.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:disease {id: 'ung_thư_cổ_tử_cung_giai_đoạn_ib_disease'})
+MERGE (o1)-[r15:isSymptomOf]->(o2)
+SET r15.text = 'Ở giai đoạn này, khối u có kích thước lớn hơn nhưng còn giới hạn tại cổ tử cung, chưa di căn xa.'
+
+MERGE (o1:disease {id: 'di_căn_xa_disease'})
+MERGE (o2:disease {id: 'ung_thư_cổ_tử_cung_giai_đoạn_ib_disease'})
+MERGE (o1)-[r16:isSymptomOf]->(o2)
+SET r16.text = 'Ở giai đoạn này, khối u có kích thước lớn hơn nhưng còn giới hạn tại cổ tử cung, chưa di căn xa.'
+
+MERGE (o1:disease {id: 'giai_đoạn_này_disease'})
+MERGE (o2:disease {id: 'ung_thư_cổ_tử_cung_giai_đoạn_ib_disease'})
+MERGE (o1)-[r17:relatedTo]->(o2)
+SET r17.text = 'Giai đoạn này có thể được chia thành 3 nhóm :'
+
+MERGE (o1:symptom {id: 'tổn_thương_có_độ_sâu_≥_5mm_và_độ_rộng_&lt;_2cm_symptom'})
+MERGE (o2:disease {id: 'ung_thư_cổ_tử_cung_giai_đoạn_ib1_disease'})
+MERGE (o1)-[r18:isSymptomOf]->(o2)
+SET r18.text = 'Ung thư cổ tử cung giai đoạn IB1: Tổn thương có độ sâu ≥ 5mm và độ rộng &lt; 2cm.'
+
+MERGE (o1:symptom {id: 'tổn_thương_có_độ_sâu_≥_5mm_và_độ_rộng_từ_2_-_5cm_symptom'})
+MERGE (o2:disease {id: 'ung_thư_cổ_tử_cung_giai_đoạn_ib2_disease'})
+MERGE (o1)-[r19:isSymptomOf]->(o2)
+SET r19.text = 'Ung thư cổ tử cung giai đoạn IB2: Tổn thương có độ sâu ≥ 5mm và độ rộng từ 2 - 5cm.'
+
+MERGE (o1:symptom {id: 'triệu_chứng_ung_thư_cổ_tử_cung_giai_đoạn_1_symptom'})
+MERGE (o2:disease {id: 'ung_thư_cổ_tử_cung_giai_đoạn_1_disease'})
+MERGE (o1)-[r20:isSymptomOf]->(o2)
+SET r20.text = 'TS.BS Vũ Hữu Khiêm - Trưởng khoa Ung bướu, BVĐK Tâm Anh Hà Nội, cho biết, triệu chứng ung thư cổ tử cung giai đoạn 1 (giai đoạn đầu) thường không rõ ràng.'
+
+MERGE (o1:test {id: 'tầm_soát_ung_thư_cổ_tử_cung_test'})
+MERGE (o2:disease {id: 'ung_thư_cổ_tử_cung_disease'})
+MERGE (o1)-[r21:diagnosedBy]->(o2)
+SET r21.text = 'Bệnh diễn tiến trong nhiều năm, do vậy việc tầm soát ung thư cổ tử cung là cách tốt nhất để phát hiện các bất thường ở giai đoạn này.'
+
+MERGE (o1:symptom {id: 'dịch_âm_đạo_có_máu__khí_hư_symptom'})
+MERGE (o2:disease {id: 'ung_thư_cổ_tử_cung_giai_đoạn_i_disease'})
+MERGE (o1)-[r22:isSymptomOf]->(o2)
+SET r22.text = 'Các dấu hiệu và triệu chứng ung thư cổ tử cung giai đoạn I có thể bao gồm:
+Dịch âm đạo có máu, khí hư;'
+
+MERGE (o1:symptom {id: 'chảy_máu_âm_đạo_sau_khi_giao_hợp__giữa_chu_kỳ_kinh_nguyệt_hoặc_sau_khi_mãn_kinh_symptom'})
+MERGE (o2:disease {id: 'ung_thư_cổ_tử_cung_giai_đoạn_i_disease'})
+MERGE (o1)-[r23:isSymptomOf]->(o2)
+SET r23.text = 'Các dấu hiệu và triệu chứng ung thư cổ tử cung giai đoạn I có thể bao gồm:
+Chảy máu âm đạo sau khi giao hợp, giữa chu kỳ kinh nguyệt hoặc sau khi mãn kinh;'
+
+MERGE (o1:symptom {id: 'kinh_nguyệt_có_thể_ra_nhiều_và_kéo_dài_hơn_bình_thường_symptom'})
+MERGE (o2:disease {id: 'ung_thư_cổ_tử_cung_giai_đoạn_i_disease'})
+MERGE (o1)-[r24:isSymptomOf]->(o2)
+SET r24.text = 'Các dấu hiệu và triệu chứng ung thư cổ tử cung giai đoạn I có thể bao gồm:
+Kinh nguyệt có thể ra nhiều và kéo dài hơn bình thường.'
+
+MERGE (o1:symptom {id: 'tiểu_khó__tiểu_đau__đôi_khi_có_máu_trong_nước_tiểu_symptom'})
+MERGE (o2:disease {id: 'ung_thư_cổ_tử_cung_disease'})
+MERGE (o1)-[r25:isSymptomOf]->(o2)
+SET r25.text = 'Nếu không được điều trị kịp thời, bệnh sẽ tiến triển qua các giai đoạn sau và gây ra các triệu chứng gồm:
+Tiểu khó, tiểu đau, đôi khi có máu trong nước tiểu;'
+
+MERGE (o1:symptom {id: 'tiêu_chảy__đau_hoặc_chảy_máu_từ_trực_tràng_symptom'})
+MERGE (o2:disease {id: 'ung_thư_cổ_tử_cung_disease'})
+MERGE (o1)-[r26:isSymptomOf]->(o2)
+SET r26.text = 'Nếu không được điều trị kịp thời, bệnh sẽ tiến triển qua các giai đoạn sau và gây ra các triệu chứng gồm:
+Tiêu chảy, đau hoặc chảy máu từ trực tràng;'
+
+MERGE (o1:symptom {id: 'mệt_mỏi__sụt_cân_symptom'})
+MERGE (o2:disease {id: 'ung_thư_cổ_tử_cung_disease'})
+MERGE (o1)-[r27:isSymptomOf]->(o2)
+SET r27.text = 'Nếu không được điều trị kịp thời, bệnh sẽ tiến triển qua các giai đoạn sau và gây ra các triệu chứng gồm:
+Mệt mỏi, sụt cân;'
+
+MERGE (o1:symptom {id: 'đau_lưng_âm_ỉ_hoặc_phù_chân_symptom'})
+MERGE (o2:disease {id: 'ung_thư_cổ_tử_cung_disease'})
+MERGE (o1)-[r28:isSymptomOf]->(o2)
+SET r28.text = 'Nếu không được điều trị kịp thời, bệnh sẽ tiến triển qua các giai đoạn sau và gây ra các triệu chứng gồm:
+Đau lưng âm ỉ hoặc phù chân;'
+
+MERGE (o1:symptom {id: 'đau_vùng_chậu/bụng_symptom'})
+MERGE (o2:disease {id: 'ung_thư_cổ_tử_cung_disease'})
+MERGE (o1)-[r29:isSymptomOf]->(o2)
+SET r29.text = 'Nếu không được điều trị kịp thời, bệnh sẽ tiến triển qua các giai đoạn sau và gây ra các triệu chứng gồm:
+Đau vùng chậu/bụng.'
+
+MERGE (o1:test {id: 'khám_phụ_khoa_toàn_diện_test'})
+MERGE (o2:disease {id: 'ung_thư_cổ_tử_cung_disease'})
+MERGE (o1)-[r30:diagnosedBy]->(o2)
+SET r30.text = 'Nếu bị ra máu hay tiết dịch âm đạo bất thường hoặc bất kỳ triệu chứng nào khác không thể giải thích được, bạn nên khám phụ khoa toàn diện bao gồm cả xét nghiệm Pap.'
+
+MERGE (o1:test {id: 'xét_nghiệm_pap_test'})
+MERGE (o2:disease {id: 'ung_thư_cổ_tử_cung_disease'})
+MERGE (o1)-[r31:diagnosedBy]->(o2)
+SET r31.text = 'Nếu bị ra máu hay tiết dịch âm đạo bất thường hoặc bất kỳ triệu chứng nào khác không thể giải thích được, bạn nên khám phụ khoa toàn diện bao gồm cả xét nghiệm Pap.'
+
+MERGE (o1:disease {id: 'ung_thư_cổ_tử_cung_giai_đoạn_i_disease'})
+MERGE (o2:treatment {id: 'điều_trị_treatment'})
+MERGE (o1)-[r32:treatedBy]->(o2)
+SET r32.text = 'Tỷ lệ sống còn 5 năm cho ung thư cổ tử cung giai đoạn I tại Mỹ vào khoảng 92% (theo SEER).'
+
+MERGE (o1:test {id: 'khám_phụ_khoa_định_kỳ_test'})
+MERGE (o2:disease {id: 'ung_thư_cổ_tử_cung_disease'})
+MERGE (o1)-[r33:diagnosedBy]->(o2)
+SET r33.text = 'Khám phụ khoa định kỳ kết hợp xét nghiệm Pap có thể phát hiện hầu hết các trường hợp ung thư cổ tử cung.'
+
+MERGE (o1:test {id: 'xét_nghiệm_pap_test'})
+MERGE (o2:disease {id: 'ung_thư_cổ_tử_cung_disease'})
+MERGE (o1)-[r34:diagnosedBy]->(o2)
+SET r34.text = 'Khám phụ khoa định kỳ kết hợp xét nghiệm Pap có thể phát hiện hầu hết các trường hợp ung thư cổ tử cung.'
+
+MERGE (o1:test {id: 'xét_nghiệm_pap_test'})
+MERGE (o2:disease {id: 'ung_thư_cổ_tử_cung_disease'})
+MERGE (o1)-[r35:diagnosedBy]->(o2)
+SET r35.text = 'Xét nghiệm Pap (hay Pap smear) là phương pháp thu thập các tế bào từ cổ tử cung, sau đó kiểm tra để tìm các dấu hiệu tiền ung thư, ung thư hoặc các bệnh lý lành tính khác.'
+
+MERGE (o1:test {id: 'xét_nghiệm_pap_test'})
+MERGE (o2:disease {id: 'tiền_ung_thư_disease'})
+MERGE (o1)-[r36:diagnosedBy]->(o2)
+SET r36.text = 'Xét nghiệm Pap (hay Pap smear) là phương pháp thu thập các tế bào từ cổ tử cung, sau đó kiểm tra để tìm các dấu hiệu tiền ung thư, ung thư hoặc các bệnh lý lành tính khác.'
+
+MERGE (o1:test {id: 'xét_nghiệm_pap_test'})
+MERGE (o2:disease {id: 'bệnh_lý_lành_tính_disease'})
+MERGE (o1)-[r37:diagnosedBy]->(o2)
+SET r37.text = 'Xét nghiệm Pap (hay Pap smear) là phương pháp thu thập các tế bào từ cổ tử cung, sau đó kiểm tra để tìm các dấu hiệu tiền ung thư, ung thư hoặc các bệnh lý lành tính khác.'
+
+MERGE (o1:test {id: 'xét_nghiệm_hpv_test'})
+MERGE (o2:disease {id: 'ung_thư_cổ_tử_cung_disease'})
+MERGE (o1)-[r38:diagnosedBy]->(o2)
+SET r38.text = 'Nếu kết quả Pap bất thường, người bệnh thường được kiểm tra thêm bằng xét nghiệm HPV.'
+
+MERGE (o1:test {id: 'xét_nghiệm_hpv_test'})
+MERGE (o2:disease {id: 'nhiễm_hpv_disease'})
+MERGE (o1)-[r39:diagnosedBy]->(o2)
+SET r39.text = 'Đây là xét nghiệm nhằm đánh giá các tế bào từ cổ tử cung có nhiễm HPV hay không.'
+
+MERGE (o1:treatment {id: 'mỏ_vịt_treatment'})
+MERGE (o2:disease {id: 'ung_thư_cổ_tử_cung_disease'})
+MERGE (o1)-[r40:treatedBy]->(o2)
+SET r40.text = 'Người bệnh nằm ngửa trên bàn khám phụ khoa, một dụng cụ gọi là mỏ vịt được đưa vào âm đạo (dụng cụ này sẽ mở ra âm đạo).'
+
+MERGE (o1:treatment {id: 'nong_và_nạo_cổ_tử_cung_treatment'})
+MERGE (o2:disease {id: 'ung_thư_cổ_tử_cung_disease'})
+MERGE (o1)-[r41:treatedBy]->(o2)
+SET r41.text = 'Bác sĩ sử dụng dụng cụ giống bàn chải để lấy tế bào hoặc nong và nạo cổ tử cung lấy bệnh phẩm làm xét nghiệm Pap và xét nghiệm HPV.'
+
+MERGE (o1:test {id: 'xét_nghiệm_pap_test'})
+MERGE (o2:disease {id: 'ung_thư_cổ_tử_cung_disease'})
+MERGE (o1)-[r42:diagnosedBy]->(o2)
+SET r42.text = 'Bác sĩ sử dụng dụng cụ giống bàn chải để lấy tế bào hoặc nong và nạo cổ tử cung lấy bệnh phẩm làm xét nghiệm Pap và xét nghiệm HPV.'
+
+MERGE (o1:test {id: 'xét_nghiệm_hpv_test'})
+MERGE (o2:disease {id: 'ung_thư_cổ_tử_cung_disease'})
+MERGE (o1)-[r43:diagnosedBy]->(o2)
+SET r43.text = 'Bác sĩ sử dụng dụng cụ giống bàn chải để lấy tế bào hoặc nong và nạo cổ tử cung lấy bệnh phẩm làm xét nghiệm Pap và xét nghiệm HPV.'
+
+MERGE (o1:test {id: 'xét_nghiệm_hpv_test'})
+MERGE (o2:disease {id: 'ung_thư_cổ_tử_cung_disease'})
+MERGE (o1)-[r44:diagnosedBy]->(o2)
+SET r44.text = 'Xét nghiệm HPV được thực hiện nếu xét nghiệm Pap có bất thường'
+
+MERGE (o1:test {id: 'sinh_thiết_test'})
+MERGE (o2:disease {id: 'tổn_thương_ác_tính_disease'})
+MERGE (o1)-[r45:diagnosedBy]->(o2)
+SET r45.text = 'Bác sĩ cũng có thể kiểm tra cổ tử cung và lấy mẫu mô làm sinh thiết khi nghi ngờ tổn thương ác tính.'
+
+MERGE (o1:test {id: 'bấm_kim_sinh_thiết_test'})
+MERGE (o2:disease {id: 'tổn_thương_ác_tính_disease'})
+MERGE (o1)-[r46:diagnosedBy]->(o2)
+SET r46.text = 'Nhiều kỹ thuật có thể được sử dụng để lấy bệnh phẩm, như bấm kim sinh thiết hay khoét chóp,…'
+
+MERGE (o1:test {id: 'khoét_chóp_test'})
+MERGE (o2:disease {id: 'tổn_thương_ác_tính_disease'})
+MERGE (o1)-[r47:diagnosedBy]->(o2)
+SET r47.text = 'Nhiều kỹ thuật có thể được sử dụng để lấy bệnh phẩm, như bấm kim sinh thiết hay khoét chóp,…'
+
+MERGE (o1:test {id: 'mri_vùng_tiểu_khung_test'})
+MERGE (o2:disease {id: 'ung_thư_cổ_tử_cung_disease'})
+MERGE (o1)-[r48:diagnosedBy]->(o2)
+SET r48.text = 'Nếu kết quả sinh thiết chỉ ra tình trạng ác tính, các chẩn đoán hình ảnh học sẽ được tiến hành để đánh giá giai đoạn bệnh, bao gồm:
+MRI vùng tiểu khung'
+
+MERGE (o1:test {id: 'chụp_ct_ngực_-_bụng_-_chậu_hay_pet/ct_test'})
+MERGE (o2:disease {id: 'ung_thư_cổ_tử_cung_disease'})
+MERGE (o1)-[r49:diagnosedBy]->(o2)
+SET r49.text = 'Nếu kết quả sinh thiết chỉ ra tình trạng ác tính, các chẩn đoán hình ảnh học sẽ được tiến hành để đánh giá giai đoạn bệnh, bao gồm:
+Chụp CT ngực - bụng - chậu hay PET/CT'
+
+MERGE (o1:test {id: 'nội_soi_bàng_quang__trực_tràng_test'})
+MERGE (o2:disease {id: 'ung_thư_cổ_tử_cung_disease'})
+MERGE (o1)-[r50:diagnosedBy]->(o2)
+SET r50.text = 'Nếu kết quả sinh thiết chỉ ra tình trạng ác tính, các chẩn đoán hình ảnh học sẽ được tiến hành để đánh giá giai đoạn bệnh, bao gồm:
+Nội soi bàng quang, trực tràng'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_treatment'})
+MERGE (o2:disease {id: 'bệnh_ung_thư_cổ_tử_cung_giai_đoạn_i_disease'})
+MERGE (o1)-[r51:treatedBy]->(o2)
+SET r51.text = 'Phẫu thuật là phương pháp điều trị chính cho bệnh ung thư cổ tử cung giai đoạn I.'
+
+MERGE (o1:lifestyle {id: 'tuổi_tác_lifestyle'})
+MERGE (o2:treatment {id: 'lựa_chọn_loại_phẫu_thuật_treatment'})
+MERGE (o1)-[r52:relatedTo]->(o2)
+SET r52.text = 'Việc lựa chọn loại phẫu thuật sẽ phụ thuộc vào nhiều yếu tố, bao gồm tuổi tác, giai đoạn và nguyện vọng sinh sản của bệnh nhân.'
+
+MERGE (o1:lifestyle {id: 'giai_đoạn_lifestyle'})
+MERGE (o2:treatment {id: 'lựa_chọn_loại_phẫu_thuật_treatment'})
+MERGE (o1)-[r53:relatedTo]->(o2)
+SET r53.text = 'Việc lựa chọn loại phẫu thuật sẽ phụ thuộc vào nhiều yếu tố, bao gồm tuổi tác, giai đoạn và nguyện vọng sinh sản của bệnh nhân.'
+
+MERGE (o1:lifestyle {id: 'nguyện_vọng_sinh_sản_lifestyle'})
+MERGE (o2:treatment {id: 'lựa_chọn_loại_phẫu_thuật_treatment'})
+MERGE (o1)-[r54:relatedTo]->(o2)
+SET r54.text = 'Việc lựa chọn loại phẫu thuật sẽ phụ thuộc vào nhiều yếu tố, bao gồm tuổi tác, giai đoạn và nguyện vọng sinh sản của bệnh nhân.'
+
+MERGE (o1:disease {id: 'ung_thư_cổ_tử_cung_disease'})
+MERGE (o2:organ {id: 'cổ_tử_cung_organ'})
+MERGE (o1)-[r55:locatedIn]->(o2)
+SET r55.text = 'Không, bạn sẽ không thể cảm nhận ung thư cổ tử cung bằng ngón tay của mình trong giai đoạn này do kích thước khối u còn rất nhỏ và chỉ có thể quan sát thấy dưới kính hiển vi.'
+
+MERGE (o1:symptom {id: 'kích_thước_khối_u_symptom'})
+MERGE (o2:disease {id: 'ung_thư_cổ_tử_cung_disease'})
+MERGE (o1)-[r56:isSymptomOf]->(o2)
+SET r56.text = 'Không, bạn sẽ không thể cảm nhận ung thư cổ tử cung bằng ngón tay của mình trong giai đoạn này do kích thước khối u còn rất nhỏ và chỉ có thể quan sát thấy dưới kính hiển vi.'
+
+MERGE (o1:symptom {id: 'khối_bất_thường_symptom'})
+MERGE (o2:disease {id: 'ung_thư_cổ_tử_cung_disease'})
+MERGE (o1)-[r57:isSymptomOf]->(o2)
+SET r57.text = 'Bạn nên đến bệnh viện thăm khám ngay nếu nhận thấy có khối bất thường bên trong âm đạo.'
+
+MERGE (o1:symptom {id: 'khối_bất_thường_symptom'})
+MERGE (o2:organ {id: 'âm_đạo_organ'})
+MERGE (o1)-[r58:locatedIn]->(o2)
+SET r58.text = 'Bạn nên đến bệnh viện thăm khám ngay nếu nhận thấy có khối bất thường bên trong âm đạo.'
+
+MERGE (o1:disease {id: 'ung_thư_cổ_tử_cung_disease'})
+MERGE (o2:test {id: 'chẩn_đoán_bệnh_test'})
+MERGE (o1)-[r59:diagnosedBy]->(o2)
+SET r59.text = 'Hầu hết người bệnh sẽ không biết mình bị ung thư cổ tử cung cho đến khi được chẩn đoán bệnh.'
+
+MERGE (o1:test {id: 'xét_nghiệm_test'})
+MERGE (o2:disease {id: 'ung_thư_cổ_tử_cung_disease'})
+MERGE (o1)-[r60:diagnosedBy]->(o2)
+SET r60.text = 'Bác sĩ sẽ tiến hành các xét nghiệm và làm sinh thiết để xác định giải phẫu bệnh.'

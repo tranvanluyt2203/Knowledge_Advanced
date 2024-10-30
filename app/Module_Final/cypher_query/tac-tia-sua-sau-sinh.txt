@@ -1,0 +1,640 @@
+
+MERGE (o1:disease {id: 'tắc_tia_sữa_disease'})
+MERGE (o2:disease {id: 'viêm_vú_disease'})
+MERGE (o1)-[r0:isSymptomOf]->(o2)
+SET r0.text = 'Khoảng 20% phụ nữ bị tắc tia sữa và viêm vú sau sinh gây nên tình trạng đau nhức, mệt mỏi và ảnh hưởng đến mục tiêu nuôi con hoàn toàn bằng sữa mẹ.'
+
+MERGE (o1:disease {id: 'viêm_vú_disease'})
+MERGE (o2:disease {id: 'tắc_tia_sữa_disease'})
+MERGE (o1)-[r1:isSymptomOf]->(o2)
+SET r1.text = 'Khoảng 20% phụ nữ bị tắc tia sữa và viêm vú sau sinh gây nên tình trạng đau nhức, mệt mỏi và ảnh hưởng đến mục tiêu nuôi con hoàn toàn bằng sữa mẹ.'
+
+MERGE (o1:disease {id: 'tắc_tia_sữa_disease'})
+MERGE (o2:symptom {id: 'đau_nhức_symptom'})
+MERGE (o1)-[r2:isSymptomOf]->(o2)
+SET r2.text = 'Khoảng 20% phụ nữ bị tắc tia sữa và viêm vú sau sinh gây nên tình trạng đau nhức, mệt mỏi và ảnh hưởng đến mục tiêu nuôi con hoàn toàn bằng sữa mẹ.'
+
+MERGE (o1:disease {id: 'tắc_tia_sữa_disease'})
+MERGE (o2:symptom {id: 'mệt_mỏi_symptom'})
+MERGE (o1)-[r3:isSymptomOf]->(o2)
+SET r3.text = 'Khoảng 20% phụ nữ bị tắc tia sữa và viêm vú sau sinh gây nên tình trạng đau nhức, mệt mỏi và ảnh hưởng đến mục tiêu nuôi con hoàn toàn bằng sữa mẹ.'
+
+MERGE (o1:disease {id: 'tắc_tia_sữa_disease'})
+MERGE (o2:lifestyle {id: 'nuôi_con_hoàn_toàn_bằng_sữa_mẹ_lifestyle'})
+MERGE (o1)-[r4:affects]->(o2)
+SET r4.text = 'Khoảng 20% phụ nữ bị tắc tia sữa và viêm vú sau sinh gây nên tình trạng đau nhức, mệt mỏi và ảnh hưởng đến mục tiêu nuôi con hoàn toàn bằng sữa mẹ.'
+
+MERGE (o1:disease {id: 'tắc_tia_sữa_disease'})
+MERGE (o2:treatment {id: 'điều_trị_sớm_treatment'})
+MERGE (o1)-[r5:treatedBy]->(o2)
+SET r5.text = 'Nhiều trường hợp không được điều trị sớm và hiệu quả có thể gây áp xe tuyến vú, dần dần trở thành các dải xơ hóa hoặc u xơ tuyến vú.'
+
+MERGE (o1:disease {id: 'tắc_tia_sữa_disease'})
+MERGE (o2:disease {id: 'áp_xe_tuyến_vú_disease'})
+MERGE (o1)-[r6:causedBy]->(o2)
+SET r6.text = 'Nhiều trường hợp không được điều trị sớm và hiệu quả có thể gây áp xe tuyến vú, dần dần trở thành các dải xơ hóa hoặc u xơ tuyến vú.'
+
+MERGE (o1:disease {id: 'tắc_tia_sữa_disease'})
+MERGE (o2:disease {id: 'dải_xơ_hóa_disease'})
+MERGE (o1)-[r7:causedBy]->(o2)
+SET r7.text = 'Nhiều trường hợp không được điều trị sớm và hiệu quả có thể gây áp xe tuyến vú, dần dần trở thành các dải xơ hóa hoặc u xơ tuyến vú.'
+
+MERGE (o1:disease {id: 'tắc_tia_sữa_disease'})
+MERGE (o2:disease {id: 'u_xơ_tuyến_vú_disease'})
+MERGE (o1)-[r8:causedBy]->(o2)
+SET r8.text = 'Nhiều trường hợp không được điều trị sớm và hiệu quả có thể gây áp xe tuyến vú, dần dần trở thành các dải xơ hóa hoặc u xơ tuyến vú.'
+
+MERGE (o1:disease {id: 'tắc_tia_sữa_disease'})
+MERGE (o2:symptom {id: 'sữa_mẹ_bị_ứ_đọng_symptom'})
+MERGE (o1)-[r9:isSymptomOf]->(o2)
+SET r9.text = 'Tắc tia sữa còn gọi là tắc tuyến sữa hay tắc ống dẫn sữa, là tình trạng sữa mẹ bị ứ đọng bên trong các ống dẫn sữa ở bầu ngực mà không được đẩy ra ngoài, khiến việc cho con bú gặp nhiều khó khăn cũng như gây đau đớn cho người mẹ.'
+
+MERGE (o1:disease {id: 'tắc_tia_sữa_disease'})
+MERGE (o2:symptom {id: 'việc_cho_con_bú_gặp_nhiều_khó_khăn_symptom'})
+MERGE (o1)-[r10:isSymptomOf]->(o2)
+SET r10.text = 'Tắc tia sữa còn gọi là tắc tuyến sữa hay tắc ống dẫn sữa, là tình trạng sữa mẹ bị ứ đọng bên trong các ống dẫn sữa ở bầu ngực mà không được đẩy ra ngoài, khiến việc cho con bú gặp nhiều khó khăn cũng như gây đau đớn cho người mẹ.'
+
+MERGE (o1:disease {id: 'tắc_tia_sữa_disease'})
+MERGE (o2:symptom {id: 'đau_đớn_symptom'})
+MERGE (o1)-[r11:isSymptomOf]->(o2)
+SET r11.text = 'Tắc tia sữa còn gọi là tắc tuyến sữa hay tắc ống dẫn sữa, là tình trạng sữa mẹ bị ứ đọng bên trong các ống dẫn sữa ở bầu ngực mà không được đẩy ra ngoài, khiến việc cho con bú gặp nhiều khó khăn cũng như gây đau đớn cho người mẹ.'
+
+MERGE (o1:disease {id: 'tắc_tia_sữa_disease'})
+MERGE (o2:organ {id: 'các_ống_dẫn_sữa_ở_bầu_ngực_organ'})
+MERGE (o1)-[r12:locatedIn]->(o2)
+SET r12.text = 'Tắc tia sữa còn gọi là tắc tuyến sữa hay tắc ống dẫn sữa, là tình trạng sữa mẹ bị ứ đọng bên trong các ống dẫn sữa ở bầu ngực mà không được đẩy ra ngoài, khiến việc cho con bú gặp nhiều khó khăn cũng như gây đau đớn cho người mẹ.'
+
+MERGE (o1:disease {id: 'tắc_tia_sữa_disease'})
+MERGE (o2:lifestyle {id: 'sản_phụ_sau_sinh_lifestyle'})
+MERGE (o1)-[r13:associatedWith]->(o2)
+SET r13.text = 'Tình trạng này thường xảy ra ở sản phụ sau sinh khoảng 6-8 tuần hoặc bất kỳ thời điểm nào trong thời kỳ nuôi con bằng sữa mẹ.'
+
+MERGE (o1:disease {id: 'tắc_tia_sữa_disease'})
+MERGE (o2:lifestyle {id: 'nuôi_con_bằng_sữa_mẹ_lifestyle'})
+MERGE (o1)-[r14:associatedWith]->(o2)
+SET r14.text = 'Tình trạng này thường xảy ra ở sản phụ sau sinh khoảng 6-8 tuần hoặc bất kỳ thời điểm nào trong thời kỳ nuôi con bằng sữa mẹ.'
+
+MERGE (o1:food {id: 'sữa_mẹ_food'})
+MERGE (o2:organ {id: 'các_nang_sữa_organ'})
+MERGE (o1)-[r15:producedBy]->(o2)
+SET r15.text = 'Sữa mẹ được sản xuất từ các nang sữa, theo các ống dẫn sữa đổ về xoang chứa sữa nằm ở phía sau quầng vú, dưới tác động kích thích từ hoạt động bú mút của trẻ mà sữa sẽ chảy ra ngoài.'
+
+MERGE (o1:food {id: 'sữa_mẹ_food'})
+MERGE (o2:organ {id: 'các_ống_dẫn_sữa_organ'})
+MERGE (o1)-[r16:locatedIn]->(o2)
+SET r16.text = 'Sữa mẹ được sản xuất từ các nang sữa, theo các ống dẫn sữa đổ về xoang chứa sữa nằm ở phía sau quầng vú, dưới tác động kích thích từ hoạt động bú mút của trẻ mà sữa sẽ chảy ra ngoài.'
+
+MERGE (o1:food {id: 'sữa_mẹ_food'})
+MERGE (o2:organ {id: 'xoang_chứa_sữa_organ'})
+MERGE (o1)-[r17:locatedIn]->(o2)
+SET r17.text = 'Sữa mẹ được sản xuất từ các nang sữa, theo các ống dẫn sữa đổ về xoang chứa sữa nằm ở phía sau quầng vú, dưới tác động kích thích từ hoạt động bú mút của trẻ mà sữa sẽ chảy ra ngoài.'
+
+MERGE (o1:food {id: 'sữa_mẹ_food'})
+MERGE (o2:organ {id: 'quầng_vú_organ'})
+MERGE (o1)-[r18:locatedIn]->(o2)
+SET r18.text = 'Sữa mẹ được sản xuất từ các nang sữa, theo các ống dẫn sữa đổ về xoang chứa sữa nằm ở phía sau quầng vú, dưới tác động kích thích từ hoạt động bú mút của trẻ mà sữa sẽ chảy ra ngoài.'
+
+MERGE (o1:food {id: 'sữa_mẹ_food'})
+MERGE (o2:lifestyle {id: 'hoạt_động_bú_mút_của_trẻ_lifestyle'})
+MERGE (o1)-[r19:causedBy]->(o2)
+SET r19.text = 'Sữa mẹ được sản xuất từ các nang sữa, theo các ống dẫn sữa đổ về xoang chứa sữa nằm ở phía sau quầng vú, dưới tác động kích thích từ hoạt động bú mút của trẻ mà sữa sẽ chảy ra ngoài.'
+
+MERGE (o1:disease {id: 'tắc_tia_sữa_disease'})
+MERGE (o2:symptom {id: 'lòng_ống_dẫn_sữa_bị_bít_hẹp_symptom'})
+MERGE (o1)-[r20:causedBy]->(o2)
+SET r20.text = 'Tuy nhiên, khi lòng ống dẫn sữa bị bít hẹp lại, sữa sẽ không thể chảy ra ngoài, lâu dần vón cục do hiện tượng sữa đông kết.'
+
+MERGE (o1:disease {id: 'tắc_tia_sữa_disease'})
+MERGE (o2:symptom {id: 'sữa_đông_kết_symptom'})
+MERGE (o1)-[r21:isSymptomOf]->(o2)
+SET r21.text = 'Tuy nhiên, khi lòng ống dẫn sữa bị bít hẹp lại, sữa sẽ không thể chảy ra ngoài, lâu dần vón cục do hiện tượng sữa đông kết.'
+
+MERGE (o1:disease {id: 'tắc_tia_sữa_disease'})
+MERGE (o2:symptom {id: 'các_ống_dẫn_trước_ngày_càng_căng_giãn_symptom'})
+MERGE (o1)-[r22:isSymptomOf]->(o2)
+SET r22.text = 'Song song đó sữa mới vẫn tiếp tục được tạo ra, làm cho chỗ tắc ở các ống dẫn trước ngày càng căng giãn ra khiến tình trạng tắc sữa ngày càng nghiêm trọng hơn.'
+
+MERGE (o1:disease {id: 'tắc_tia_sữa_disease'})
+MERGE (o2:cause {id: 'sữa_được_sản_xuất_rất_nhiều_trong_bầu_ngực_nhưng_chưa_thể_chảy_ra_ngoài_do_bé_chưa_ngậm_đúng_khớp_ngậm_sữa_không_thoát_ra_ngoài__bị_ứ_đọng_khiến_bầu_ngực_căng_cứng_và_tắc_tia_sữa._cause'})
+MERGE (o1)-[r23:causedBy]->(o2)
+SET r23.text = 'Có nhiều nguyên nhân dẫn đến hiện tượng tắc tuyến sữa sau sinh, thường gặp nhất là:'
+
+MERGE (o1:disease {id: 'tắc_tia_sữa_disease'})
+MERGE (o2:cause {id: 'bé_chưa_ngậm_đúng_khớp_ngậm_sữa_cause'})
+MERGE (o1)-[r24:causedBy]->(o2)
+SET r24.text = 'Một số mẹ gặp phải tình trạng tắc tia sữa sau sinh khi sữa được sản xuất rất nhiều trong bầu ngực nhưng chưa thể chảy ra ngoài do bé chưa ngậm đúng khớp ngậm sữa không thoát ra ngoài, bị ứ đọng khiến bầu ngực căng cứng và tắc tia sữa.'
+
+MERGE (o1:disease {id: 'tắc_tia_sữa_disease'})
+MERGE (o2:cause {id: 'sữa_không_thoát_ra_ngoài_cause'})
+MERGE (o1)-[r25:causedBy]->(o2)
+SET r25.text = 'Một số mẹ gặp phải tình trạng tắc tia sữa sau sinh khi sữa được sản xuất rất nhiều trong bầu ngực nhưng chưa thể chảy ra ngoài do bé chưa ngậm đúng khớp ngậm sữa không thoát ra ngoài, bị ứ đọng khiến bầu ngực căng cứng và tắc tia sữa.'
+
+MERGE (o1:disease {id: 'tắc_tia_sữa_disease'})
+MERGE (o2:symptom {id: 'bầu_ngực_căng_cứng_symptom'})
+MERGE (o1)-[r26:causedBy]->(o2)
+SET r26.text = 'Một số mẹ gặp phải tình trạng tắc tia sữa sau sinh khi sữa được sản xuất rất nhiều trong bầu ngực nhưng chưa thể chảy ra ngoài do bé chưa ngậm đúng khớp ngậm sữa không thoát ra ngoài, bị ứ đọng khiến bầu ngực căng cứng và tắc tia sữa.'
+
+MERGE (o1:disease {id: 'tắc_tia_sữa_disease'})
+MERGE (o2:cause {id: 'sữa_mẹ_còn_dư_thừa_trong_bầu_ngực_cause'})
+MERGE (o1)-[r27:causedBy]->(o2)
+SET r27.text = 'Nhiều trường hợp tắc ống dẫn sữa do sữa mẹ còn dư thừa trong bầu ngực do bé bú không hết hoặc mẹ không hút hết phần sữa còn lại sau khi bé đã bú no, dẫn đến sữa ứ đọng lại gây tắc nghẽn.'
+
+MERGE (o1:disease {id: 'tắc_tia_sữa_disease'})
+MERGE (o2:cause {id: 'bé_bú_không_hết_cause'})
+MERGE (o1)-[r28:causedBy]->(o2)
+SET r28.text = 'Nhiều trường hợp tắc ống dẫn sữa do sữa mẹ còn dư thừa trong bầu ngực do bé bú không hết hoặc mẹ không hút hết phần sữa còn lại sau khi bé đã bú no, dẫn đến sữa ứ đọng lại gây tắc nghẽn.'
+
+MERGE (o1:disease {id: 'tắc_tia_sữa_disease'})
+MERGE (o2:cause {id: 'mẹ_không_hút_hết_phần_sữa_còn_lại_cause'})
+MERGE (o1)-[r29:causedBy]->(o2)
+SET r29.text = 'Nhiều trường hợp tắc ống dẫn sữa do sữa mẹ còn dư thừa trong bầu ngực do bé bú không hết hoặc mẹ không hút hết phần sữa còn lại sau khi bé đã bú no, dẫn đến sữa ứ đọng lại gây tắc nghẽn.'
+
+MERGE (o1:disease {id: 'tắc_tia_sữa_disease'})
+MERGE (o2:cause {id: 'sữa_ứ_đọng_cause'})
+MERGE (o1)-[r30:causedBy]->(o2)
+SET r30.text = 'Nhiều trường hợp tắc ống dẫn sữa do sữa mẹ còn dư thừa trong bầu ngực do bé bú không hết hoặc mẹ không hút hết phần sữa còn lại sau khi bé đã bú no, dẫn đến sữa ứ đọng lại gây tắc nghẽn.'
+
+MERGE (o1:disease {id: 'tắc_tia_sữa_disease'})
+MERGE (o2:lifestyle {id: 'mặc_áo_ngực_quá_chật_lifestyle'})
+MERGE (o1)-[r31:causedBy]->(o2)
+SET r31.text = 'Chẳng hạn như mặc áo ngực quá chật, bó sát hoặc mang địu bé trước ngực khiến tia sữa bị tắc.'
+
+MERGE (o1:disease {id: 'tắc_tia_sữa_disease'})
+MERGE (o2:lifestyle {id: 'mang_địu_bé_trước_ngực_lifestyle'})
+MERGE (o1)-[r32:causedBy]->(o2)
+SET r32.text = 'Chẳng hạn như mặc áo ngực quá chật, bó sát hoặc mang địu bé trước ngực khiến tia sữa bị tắc.'
+
+MERGE (o1:disease {id: 'tắc_tia_sữa_disease'})
+MERGE (o2:lifestyle {id: 'tư_thế_nằm_sấp_khi_ngủ_lifestyle'})
+MERGE (o1)-[r33:causedBy]->(o2)
+SET r33.text = 'Ngoài ra, tư thế nằm sấp khi ngủ cũng có thể gây ra tình trạng này.'
+
+MERGE (o1:disease {id: 'tắc_tia_sữa_disease'})
+MERGE (o2:cause {id: 'không_cho_bé_bú_thường_xuyên_cause'})
+MERGE (o1)-[r34:causedBy]->(o2)
+SET r34.text = 'Nếu không cho bé bú thường xuyên hoặc không hút hết sữa ra ngoài trong khoảng 5-24 giờ sẽ gây ra tình trạng tắc tuyến sữa.'
+
+MERGE (o1:disease {id: 'tắc_tia_sữa_disease'})
+MERGE (o2:cause {id: 'không_hút_hết_sữa_ra_ngoài_cause'})
+MERGE (o1)-[r35:causedBy]->(o2)
+SET r35.text = 'Nếu không cho bé bú thường xuyên hoặc không hút hết sữa ra ngoài trong khoảng 5-24 giờ sẽ gây ra tình trạng tắc tuyến sữa.'
+
+MERGE (o1:disease {id: 'tắc_tia_sữa_disease'})
+MERGE (o2:cause {id: 'bé_không_ngậm_bắt_vú_mẹ_đúng_cause'})
+MERGE (o1)-[r36:causedBy]->(o2)
+SET r36.text = 'Khi không ngậm bắt vú mẹ đúng bé sẽ không bú đủ lượng sữa mẹ được sản xuất ra, khiến sữa mẹ vẫn còn ứ đọng trong bầu ngực chính là nguyên nhân dẫn đến tắc tia sữa.'
+
+MERGE (o1:cause {id: 'ít_hút_sữa_hoặc_hút_không_hết_lượng_sữa_còn_ứ_đọng_trong_bầu_ngực_cause'})
+MERGE (o2:disease {id: 'tắc_ống_dẫn_sữa_disease'})
+MERGE (o1)-[r37:causedBy]->(o2)
+SET r37.text = 'Nếu ít hút sữa hoặc hút không hết lượng sữa còn ứ đọng trong bầu ngực có thể gây ra tình trạng tắc ống dẫn sữa.'
+
+MERGE (o1:disease {id: 'tắc_ống_dẫn_sữa_disease'})
+MERGE (o2:disease {id: 'tắc_tuyến_sữa_disease'})
+MERGE (o1)-[r38:isSymptomOf]->(o2)
+SET r38.text = 'Nếu ít hút sữa hoặc hút không hết lượng sữa còn ứ đọng trong bầu ngực có thể gây ra tình trạng tắc ống dẫn sữa.'
+
+MERGE (o1:cause {id: 'lực_hút_của_máy_hút_sữa_quá_yếu__không_thể_hút_hết_sữa_ra_ngoài_cause'})
+MERGE (o2:disease {id: 'tắc_ống_dẫn_sữa_disease'})
+MERGE (o1)-[r39:causedBy]->(o2)
+SET r39.text = 'Một số trường hợp lực hút của máy hút sữa quá yếu, không thể hút hết sữa ra ngoài cũng dẫn đến tình trạng này.'
+
+MERGE (o1:cause {id: 'yếu_tố_tâm_lý_cause'})
+MERGE (o2:symptom {id: 'chậm_quá_trình_sản_sinh_oxytocin_symptom'})
+MERGE (o1)-[r40:causedBy]->(o2)
+SET r40.text = 'Yếu tố tâm lý cũng ảnh hưởng trực tiếp đến việc sản xuất sữa mẹ, nếu mẹ quá căng thẳng sẽ làm chậm quá trình sản sinh oxytocin - một loại hormone có nhiệm vụ kích thích vú tiết sữa.'
+
+MERGE (o1:lifestyle {id: 'quá_căng_thẳng_lifestyle'})
+MERGE (o2:symptom {id: 'chậm_quá_trình_sản_sinh_oxytocin_symptom'})
+MERGE (o1)-[r41:aggravatedBy]->(o2)
+SET r41.text = 'Yếu tố tâm lý cũng ảnh hưởng trực tiếp đến việc sản xuất sữa mẹ, nếu mẹ quá căng thẳng sẽ làm chậm quá trình sản sinh oxytocin - một loại hormone có nhiệm vụ kích thích vú tiết sữa.'
+
+MERGE (o1:treatment {id: 'oxytocin_treatment'})
+MERGE (o2:symptom {id: 'kích_thích_vú_tiết_sữa_symptom'})
+MERGE (o1)-[r42:treatedBy]->(o2)
+SET r42.text = 'Yếu tố tâm lý cũng ảnh hưởng trực tiếp đến việc sản xuất sữa mẹ, nếu mẹ quá căng thẳng sẽ làm chậm quá trình sản sinh oxytocin - một loại hormone có nhiệm vụ kích thích vú tiết sữa.'
+
+MERGE (o1:disease {id: 'tình_trạng_này_disease'})
+MERGE (o2:lifestyle {id: 'chị_em_lần_đầu_làm_mẹ_khi_chưa_thích_nghi_với_cuộc_sống_có_thêm_thành_viên_mới_lifestyle'})
+MERGE (o1)-[r43:associatedWith]->(o2)
+SET r43.text = 'Tình trạng này thường gặp ở những chị em lần đầu làm mẹ khi chưa thích nghi với cuộc sống có thêm thành viên mới.'
+
+MERGE (o1:disease {id: 'tắc_tuyến_sữa_disease'})
+MERGE (o2:lifestyle {id: 'không_cho_con_bú_sữa_mẹ_lifestyle'})
+MERGE (o1)-[r44:associatedWith]->(o2)
+SET r44.text = 'Nhiều mẹ lầm tưởng rằng chỉ những trường hợp không cho con bú sữa mẹ mới gặp tình trạng tắc tuyến sữa.'
+
+MERGE (o1:cause {id: 'mẹ_không_cho_con_bú_thường_xuyên_hoặc_mẹ_cho_con_bú_không_đúng_cách__bé_ngậm_bắt_vú_sai_hoặc_mẹ_không_hút_hết_sữa_còn_sót_lại_ra_ngoài_dẫn_đến_sữa_còn_ứ_đọng_trong_bầu_ngực_cause'})
+MERGE (o2:disease {id: 'tắc_tuyến_sữa_disease'})
+MERGE (o1)-[r45:causedBy]->(o2)
+SET r45.text = 'Trên thực tế, có nhiều nguyên nhân dẫn đến tình trạng này, trong đó phải kể đến việc mẹ không cho con bú thường xuyên hoặc mẹ cho con bú không đúng cách, bé ngậm bắt vú sai hoặc mẹ không hút hết sữa còn sót lại ra ngoài dẫn đến sữa còn ứ đọng trong bầu ngực gây tắc nghẽn.'
+
+MERGE (o1:disease {id: 'tắc_tia_sữa_disease'})
+MERGE (o2:lifestyle {id: 'nuôi_con_bằng_sữa_mẹ_lifestyle'})
+MERGE (o1)-[r46:associatedWith]->(o2)
+SET r46.text = 'Mẹ có thể bị tắc tia sữa ngay sau sinh hoặc trong thời gian nuôi con bằng sữa mẹ'
+
+MERGE (o1:disease {id: 'tắc_tia_sữa_disease'})
+MERGE (o2:lifestyle {id: 'cho_con_bú_lifestyle'})
+MERGE (o1)-[r47:associatedWith]->(o2)
+SET r47.text = 'Bác sĩ Khánh Quyên cho biết, tình trạng tia sữa bị tắc có thể xảy ra bất cứ lúc nào dù mẹ mới bắt đầu cho con bú hoặc đã cho con bú được một thời gian.'
+
+MERGE (o1:symptom {id: 'không_tiết_sữa_hoặc_tiết_sữa_rất_ít__kể_cả_khi_mẹ_chủ_động_vắt_sữa_symptom'})
+MERGE (o2:disease {id: 'tắc_tia_sữa_disease'})
+MERGE (o1)-[r48:isSymptomOf]->(o2)
+SET r48.text = 'Vì thế, mẹ cần lưu ý những dấu hiệu dưới đây để nhận biết sớm tình trạng tắc tia sữa và can thiệp điều trị kịp thời, bao gồm: (3)  Không tiết sữa hoặc tiết sữa rất ít, kể cả khi mẹ chủ động vắt sữa.'
+
+MERGE (o1:symptom {id: 'ngực_càng_lúc_càng_căng_cứng_và_to_hơn__đi_kèm_với_cảm_giác_đau_nhức_symptom'})
+MERGE (o2:disease {id: 'tắc_tia_sữa_disease'})
+MERGE (o1)-[r49:isSymptomOf]->(o2)
+SET r49.text = 'Ngực càng lúc càng căng cứng và to hơn, đi kèm với cảm giác đau nhức.'
+
+MERGE (o1:symptom {id: 'sờ_vào_đầu_vú_cảm_giác_có_một_hoặc_nhiều_cục_cứng_symptom'})
+MERGE (o2:disease {id: 'tắc_tia_sữa_disease'})
+MERGE (o1)-[r50:isSymptomOf]->(o2)
+SET r50.text = 'Sờ vào đầu vú cảm giác có một hoặc nhiều cục cứng.'
+
+MERGE (o1:disease {id: 'tắc_tia_sữa_disease'})
+MERGE (o2:disease {id: 'mất_sữa_hoàn_toàn_disease'})
+MERGE (o1)-[r51:causedBy]->(o2)
+SET r51.text = 'Mặc dù tắc tia sữa không gây nguy hiểm đến tính mạng nhưng sẽ gây nhiều biến chứng nguy hiểm cho sức khỏe của mẹ, tăng nguy cơ gặp các biến chứng như mất sữa hoàn toàn, viêm tuyến vú, áp xe vú lâu dần phát triển thành các dải xơ hóa ở vú.'
+
+MERGE (o1:disease {id: 'tắc_tia_sữa_disease'})
+MERGE (o2:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o1)-[r52:causedBy]->(o2)
+SET r52.text = 'Mặc dù tắc tia sữa không gây nguy hiểm đến tính mạng nhưng sẽ gây nhiều biến chứng nguy hiểm cho sức khỏe của mẹ, tăng nguy cơ gặp các biến chứng như mất sữa hoàn toàn, viêm tuyến vú, áp xe vú lâu dần phát triển thành các dải xơ hóa ở vú.'
+
+MERGE (o1:disease {id: 'tắc_tia_sữa_disease'})
+MERGE (o2:disease {id: 'áp_xe_vú_disease'})
+MERGE (o1)-[r53:causedBy]->(o2)
+SET r53.text = 'Mặc dù tắc tia sữa không gây nguy hiểm đến tính mạng nhưng sẽ gây nhiều biến chứng nguy hiểm cho sức khỏe của mẹ, tăng nguy cơ gặp các biến chứng như mất sữa hoàn toàn, viêm tuyến vú, áp xe vú lâu dần phát triển thành các dải xơ hóa ở vú.'
+
+MERGE (o1:disease {id: 'mất_sữa_disease'})
+MERGE (o2:disease {id: 'tắc_tia_sữa_disease'})
+MERGE (o1)-[r54:isSymptomOf]->(o2)
+SET r54.text = 'Mất sữa: khi mẹ có sữa nhưng không thể tiết ra cho bé bú mặc dù đã vắt hoặc sử dụng máy hút sữa.'
+
+MERGE (o1:symptom {id: 'thiếu_hụt_dinh_dưỡng_symptom'})
+MERGE (o2:disease {id: 'mất_sữa_disease'})
+MERGE (o1)-[r55:causedBy]->(o2)
+SET r55.text = 'Khi không có sữa mẹ trẻ buộc phải uống sữa ngoài, dẫn đến trẻ bị thiếu hụt dinh dưỡng và các kháng thể tự nhiên so với những trẻ được bú sữa mẹ hoàn toàn, trẻ chậm lớn, dễ mắc bệnh vặt hơn…'
+
+MERGE (o1:symptom {id: 'thiếu_hụt_kháng_thể_tự_nhiên_symptom'})
+MERGE (o2:disease {id: 'mất_sữa_disease'})
+MERGE (o1)-[r56:causedBy]->(o2)
+SET r56.text = 'Khi không có sữa mẹ trẻ buộc phải uống sữa ngoài, dẫn đến trẻ bị thiếu hụt dinh dưỡng và các kháng thể tự nhiên so với những trẻ được bú sữa mẹ hoàn toàn, trẻ chậm lớn, dễ mắc bệnh vặt hơn…'
+
+MERGE (o1:symptom {id: 'chậm_lớn_symptom'})
+MERGE (o2:disease {id: 'mất_sữa_disease'})
+MERGE (o1)-[r57:causedBy]->(o2)
+SET r57.text = 'Khi không có sữa mẹ trẻ buộc phải uống sữa ngoài, dẫn đến trẻ bị thiếu hụt dinh dưỡng và các kháng thể tự nhiên so với những trẻ được bú sữa mẹ hoàn toàn, trẻ chậm lớn, dễ mắc bệnh vặt hơn…'
+
+MERGE (o1:symptom {id: 'dễ_mắc_bệnh_vặt_symptom'})
+MERGE (o2:disease {id: 'mất_sữa_disease'})
+MERGE (o1)-[r58:causedBy]->(o2)
+SET r58.text = 'Khi không có sữa mẹ trẻ buộc phải uống sữa ngoài, dẫn đến trẻ bị thiếu hụt dinh dưỡng và các kháng thể tự nhiên so với những trẻ được bú sữa mẹ hoàn toàn, trẻ chậm lớn, dễ mắc bệnh vặt hơn…'
+
+MERGE (o1:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o2:disease {id: 'tắc_tia_sữa_disease'})
+MERGE (o1)-[r59:isSymptomOf]->(o2)
+SET r59.text = 'Viêm tuyến vú: ngực sưng to hơn và cảm thấy đau nhức, khi chạm tay vào sờ thấy nhiều cục cứng, sưng đỏ và đau, dù có cố gắng nặn cũng không thấy chảy sữa ra ngoài.'
+
+MERGE (o1:symptom {id: 'ngực_sưng_to_symptom'})
+MERGE (o2:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o1)-[r60:isSymptomOf]->(o2)
+SET r60.text = 'Viêm tuyến vú: ngực sưng to hơn và cảm thấy đau nhức, khi chạm tay vào sờ thấy nhiều cục cứng, sưng đỏ và đau, dù có cố gắng nặn cũng không thấy chảy sữa ra ngoài.'
+
+MERGE (o1:symptom {id: 'đau_nhức_symptom'})
+MERGE (o2:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o1)-[r61:isSymptomOf]->(o2)
+SET r61.text = 'Viêm tuyến vú: ngực sưng to hơn và cảm thấy đau nhức, khi chạm tay vào sờ thấy nhiều cục cứng, sưng đỏ và đau, dù có cố gắng nặn cũng không thấy chảy sữa ra ngoài.'
+
+MERGE (o1:symptom {id: 'cục_cứng_symptom'})
+MERGE (o2:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o1)-[r62:isSymptomOf]->(o2)
+SET r62.text = 'Viêm tuyến vú: ngực sưng to hơn và cảm thấy đau nhức, khi chạm tay vào sờ thấy nhiều cục cứng, sưng đỏ và đau, dù có cố gắng nặn cũng không thấy chảy sữa ra ngoài.'
+
+MERGE (o1:symptom {id: 'sưng_đỏ_symptom'})
+MERGE (o2:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o1)-[r63:isSymptomOf]->(o2)
+SET r63.text = 'Viêm tuyến vú: ngực sưng to hơn và cảm thấy đau nhức, khi chạm tay vào sờ thấy nhiều cục cứng, sưng đỏ và đau, dù có cố gắng nặn cũng không thấy chảy sữa ra ngoài.'
+
+MERGE (o1:symptom {id: 'đau_symptom'})
+MERGE (o2:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o1)-[r64:isSymptomOf]->(o2)
+SET r64.text = 'Viêm tuyến vú: ngực sưng to hơn và cảm thấy đau nhức, khi chạm tay vào sờ thấy nhiều cục cứng, sưng đỏ và đau, dù có cố gắng nặn cũng không thấy chảy sữa ra ngoài.'
+
+MERGE (o1:disease {id: 'áp_xe_vú_disease'})
+MERGE (o2:disease {id: 'tắc_tia_sữa_disease'})
+MERGE (o1)-[r65:isSymptomOf]->(o2)
+SET r65.text = 'Áp xe vú là tình trạng vú sưng đỏ đau, tụ mủ bên trong vú do vi khuẩn gây ra, thường xảy ra ở mẹ bị tắc tia sữa kéo dài nhưng không được điều trị hiệu quả.'
+
+MERGE (o1:symptom {id: 'vú_sưng_đỏ_đau_symptom'})
+MERGE (o2:disease {id: 'áp_xe_vú_disease'})
+MERGE (o1)-[r66:isSymptomOf]->(o2)
+SET r66.text = 'Áp xe vú là tình trạng vú sưng đỏ đau, tụ mủ bên trong vú do vi khuẩn gây ra, thường xảy ra ở mẹ bị tắc tia sữa kéo dài nhưng không được điều trị hiệu quả.'
+
+MERGE (o1:symptom {id: 'tụ_mủ_symptom'})
+MERGE (o2:disease {id: 'áp_xe_vú_disease'})
+MERGE (o1)-[r67:isSymptomOf]->(o2)
+SET r67.text = 'Áp xe vú là tình trạng vú sưng đỏ đau, tụ mủ bên trong vú do vi khuẩn gây ra, thường xảy ra ở mẹ bị tắc tia sữa kéo dài nhưng không được điều trị hiệu quả.'
+
+MERGE (o1:cause {id: 'vi_khuẩn_cause'})
+MERGE (o2:disease {id: 'áp_xe_vú_disease'})
+MERGE (o1)-[r68:causedBy]->(o2)
+SET r68.text = 'Áp xe vú là tình trạng vú sưng đỏ đau, tụ mủ bên trong vú do vi khuẩn gây ra, thường xảy ra ở mẹ bị tắc tia sữa kéo dài nhưng không được điều trị hiệu quả.'
+
+MERGE (o1:disease {id: 'tắc_tuyến_sữa_disease'})
+MERGE (o2:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o1)-[r69:causedBy]->(o2)
+SET r69.text = 'Khi mẹ bị tắc tuyến sữa lâu ngày nhưng không được điều trị kịp thời sẽ dẫn đến tình trạng viêm tuyến vú, và viêm tuyến vú nếu không được điều trị sẽ dẫn đến áp xe tuyến vú.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o2:disease {id: 'áp_xe_tuyến_vú_disease'})
+MERGE (o1)-[r70:causedBy]->(o2)
+SET r70.text = 'Khi mẹ bị tắc tuyến sữa lâu ngày nhưng không được điều trị kịp thời sẽ dẫn đến tình trạng viêm tuyến vú, và viêm tuyến vú nếu không được điều trị sẽ dẫn đến áp xe tuyến vú.'
+
+MERGE (o1:disease {id: 'áp_xe_vú_disease'})
+MERGE (o2:disease {id: 'hoại_tử_mô_vú_disease'})
+MERGE (o1)-[r71:causedBy]->(o2)
+SET r71.text = 'Biến chứng áp xe vú có thể gây hoại tử mô vú, nhiễm trùng nặng.'
+
+MERGE (o1:disease {id: 'áp_xe_vú_disease'})
+MERGE (o2:disease {id: 'nhiễm_trùng_nặng_disease'})
+MERGE (o1)-[r72:causedBy]->(o2)
+SET r72.text = 'Biến chứng áp xe vú có thể gây hoại tử mô vú, nhiễm trùng nặng.'
+
+MERGE (o1:cause {id: 'ứ_đọng_cause'})
+MERGE (o2:disease {id: 'tắc_tia_sữa_disease'})
+MERGE (o1)-[r73:causedBy]->(o2)
+SET r73.text = 'Sau khi bé bú no, mẹ nên hút hết sữa còn lại ra ngoài để tránh gây ứ đọng làm tắc tia sữa'
+
+MERGE (o1:disease {id: 'tắc_ống_dẫn_sữa_disease'})
+MERGE (o2:disease {id: 'tắc_tia_sữa_disease'})
+MERGE (o1)-[r74:relatedTo]->(o2)
+SET r74.text = 'Trước những nguy hiểm của tình trạng tắc ống dẫn sữa, mẹ thắc mắc khi nào cần đến gặp bác sĩ.'
+
+MERGE (o1:symptom {id: 'cục_chai_cứng_symptom'})
+MERGE (o2:disease {id: 'tắc_tia_sữa_disease'})
+MERGE (o1)-[r75:isSymptomOf]->(o2)
+SET r75.text = 'Bác sĩ Khánh Quyên nhắn nhủ mẹ cần đến ngay bệnh viện khi có những bất thường ở vùng ngực, gồm: (4)  Sờ thấy có cục chai cứng ở bầu ngực.'
+
+MERGE (o1:symptom {id: 'khối_cứng_symptom'})
+MERGE (o2:disease {id: 'tắc_tia_sữa_disease'})
+MERGE (o1)-[r76:isSymptomOf]->(o2)
+SET r76.text = 'Bạn đã cố gắng cho bé bú và đã vắt sữa nhưng vẫn không hết khối cứng ở vú.'
+
+MERGE (o1:disease {id: 'tắc_tia_sữa_disease'})
+MERGE (o2:lifestyle {id: 'kéo_dài_hơn_2-3_ngày_lifestyle'})
+MERGE (o1)-[r77:relatedTo]->(o2)
+SET r77.text = 'Tình trạng tắc tia sữa kéo dài hơn 2-3 ngày mà không biến mất.'
+
+MERGE (o1:symptom {id: 'khối_căng_cứng_symptom'})
+MERGE (o2:disease {id: 'tắc_tia_sữa_disease'})
+MERGE (o1)-[r78:isSymptomOf]->(o2)
+SET r78.text = 'Khối căng cứng ở ngực ngày càng to, sưng đỏ và đau.'
+
+MERGE (o1:symptom {id: 'sưng_đỏ_symptom'})
+MERGE (o2:disease {id: 'tắc_tia_sữa_disease'})
+MERGE (o1)-[r79:isSymptomOf]->(o2)
+SET r79.text = 'Khối căng cứng ở ngực ngày càng to, sưng đỏ và đau.'
+
+MERGE (o1:symptom {id: 'đau_symptom'})
+MERGE (o2:disease {id: 'tắc_tia_sữa_disease'})
+MERGE (o1)-[r80:isSymptomOf]->(o2)
+SET r80.text = 'Khối căng cứng ở ngực ngày càng to, sưng đỏ và đau.'
+
+MERGE (o1:symptom {id: 'đau_ngực_symptom'})
+MERGE (o2:disease {id: 'tắc_tia_sữa_disease'})
+MERGE (o1)-[r81:isSymptomOf]->(o2)
+SET r81.text = 'Đau ngực kèm sốt cao.'
+
+MERGE (o1:symptom {id: 'sốt_cao_symptom'})
+MERGE (o2:disease {id: 'tắc_tia_sữa_disease'})
+MERGE (o1)-[r82:isSymptomOf]->(o2)
+SET r82.text = 'Đau ngực kèm sốt cao.'
+
+MERGE (o1:disease {id: 'tắc_tia_sữa_disease'})
+MERGE (o2:treatment {id: 'biện_pháp_cải_thiện_tại_nhà_treatment'})
+MERGE (o1)-[r83:treatedBy]->(o2)
+SET r83.text = 'Đã áp dụng các biện pháp cải thiện tình trạng tắc tia sữa tại nhà nhưng không hiệu quả.'
+
+MERGE (o1:disease {id: 'tắc_tia_sữa_disease'})
+MERGE (o2:treatment {id: 'làm_tan_các_cục_sữa_bị_ứ_đọng_treatment'})
+MERGE (o1)-[r84:treatedBy]->(o2)
+SET r84.text = 'Mục tiêu trong điều trị tắc tia sữa chính là làm tan các cục sữa bị ứ đọng, vón cục để khơi thông tia sữa.'
+
+MERGE (o1:disease {id: 'tắc_tia_sữa_disease'})
+MERGE (o2:treatment {id: 'khơi_thông_tia_sữa_treatment'})
+MERGE (o1)-[r85:treatedBy]->(o2)
+SET r85.text = 'Mục tiêu trong điều trị tắc tia sữa chính là làm tan các cục sữa bị ứ đọng, vón cục để khơi thông tia sữa.'
+
+MERGE (o1:treatment {id: 'chườm_ấm_bầu_ngực_treatment'})
+MERGE (o2:disease {id: 'tắc_tia_sữa_disease'})
+MERGE (o1)-[r86:treatedBy]->(o2)
+SET r86.text = 'Trước khi cho bé bú, mẹ nên dùng khăn ấm để chườm ấm bầu ngực.'
+
+MERGE (o1:treatment {id: 'massage_bầu_ngực_treatment'})
+MERGE (o2:disease {id: 'tắc_tia_sữa_disease'})
+MERGE (o1)-[r87:treatedBy]->(o2)
+SET r87.text = 'Đồng thời, massage nhẹ nhàng bầu ngực từ trên xuống dưới và từ ngoài vào trong để lưu thông sữa tốt hơn.'
+
+MERGE (o1:disease {id: 'tắc_tia_sữa_disease'})
+MERGE (o2:treatment {id: 'chườm_nóng_hay_lạnh_treatment'})
+MERGE (o1)-[r88:relatedTo]->(o2)
+SET r88.text = 'Có thể bạn quan tâm: Tắc tia sữa chườm nóng hay lạnh thì tốt hơn'
+
+MERGE (o1:treatment {id: 'xoa_bóp_đầu_ti_treatment'})
+MERGE (o2:disease {id: 'tắc_tia_sữa_disease'})
+MERGE (o1)-[r89:treatedBy]->(o2)
+SET r89.text = 'Nên xoa bóp đầu ti nhẹ nhàng theo vòng tròn nhằm kích thích và khơi thông tia sữa.'
+
+MERGE (o1:treatment {id: 'cho_bé_bú_treatment'})
+MERGE (o2:disease {id: 'tắc_tia_sữa_disease'})
+MERGE (o1)-[r90:treatedBy]->(o2)
+SET r90.text = 'Cho bé bú ở bên ngực bị tắc trước, sau đó mới chuyển sang bên ngực còn lại.'
+
+MERGE (o1:treatment {id: 'hút_sữa_treatment'})
+MERGE (o2:disease {id: 'tắc_tia_sữa_disease'})
+MERGE (o1)-[r91:treatedBy]->(o2)
+SET r91.text = 'Sau khi bé bú xong, mẹ nên hút hết sữa còn lại ra ngoài bằng tay hoặc máy hút sữa chuyên dụng để đảm bảo sữa không còn dư trong bầu ngực gây ứ đọng.'
+
+MERGE (o1:lifestyle {id: 'mặc_áo_ngực_thoải_mái_lifestyle'})
+MERGE (o2:disease {id: 'tắc_tia_sữa_disease'})
+MERGE (o1)-[r92:treatedBy]->(o2)
+SET r92.text = 'Mẹ nên mặc áo ngực thoải mái hoặc hạn chế mặc áo ngực để bầu ngực được thông thoáng hơn, là cách giúp sữa được lưu thông dễ dàng hơn.'
+
+MERGE (o1:disease {id: 'tắc_tia_sữa_disease'})
+MERGE (o2:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o1)-[r93:causedBy]->(o2)
+SET r93.text = '“Tuy nhiên, đối với những trường hợp tắc tia sữa lâu ngày dẫn đến tình trạng viêm tuyến vú hoặc áp xe vú, mẹ cần thăm khám sớm để được bác sĩ hướng dẫn phương pháp điều trị phù hợp như rạch thoát mủ hoặc sử dụng kháng sinh”, bác sĩ Khánh Quyên nhấn mạnh.'
+
+MERGE (o1:disease {id: 'tắc_tia_sữa_disease'})
+MERGE (o2:disease {id: 'áp_xe_vú_disease'})
+MERGE (o1)-[r94:causedBy]->(o2)
+SET r94.text = '“Tuy nhiên, đối với những trường hợp tắc tia sữa lâu ngày dẫn đến tình trạng viêm tuyến vú hoặc áp xe vú, mẹ cần thăm khám sớm để được bác sĩ hướng dẫn phương pháp điều trị phù hợp như rạch thoát mủ hoặc sử dụng kháng sinh”, bác sĩ Khánh Quyên nhấn mạnh.'
+
+MERGE (o1:disease {id: 'tắc_tia_sữa_disease'})
+MERGE (o2:treatment {id: 'rạch_thoát_mủ_treatment'})
+MERGE (o1)-[r95:treatedBy]->(o2)
+SET r95.text = '“Tuy nhiên, đối với những trường hợp tắc tia sữa lâu ngày dẫn đến tình trạng viêm tuyến vú hoặc áp xe vú, mẹ cần thăm khám sớm để được bác sĩ hướng dẫn phương pháp điều trị phù hợp như rạch thoát mủ hoặc sử dụng kháng sinh”, bác sĩ Khánh Quyên nhấn mạnh.'
+
+MERGE (o1:disease {id: 'tắc_tia_sữa_disease'})
+MERGE (o2:treatment {id: 'kháng_sinh_treatment'})
+MERGE (o1)-[r96:treatedBy]->(o2)
+SET r96.text = '“Tuy nhiên, đối với những trường hợp tắc tia sữa lâu ngày dẫn đến tình trạng viêm tuyến vú hoặc áp xe vú, mẹ cần thăm khám sớm để được bác sĩ hướng dẫn phương pháp điều trị phù hợp như rạch thoát mủ hoặc sử dụng kháng sinh”, bác sĩ Khánh Quyên nhấn mạnh.'
+
+MERGE (o1:disease {id: 'tắc_tia_sữa_disease'})
+MERGE (o2:treatment {id: 'chuyên_gia_sản_phụ_khoa_treatment'})
+MERGE (o1)-[r97:treatedBy]->(o2)
+SET r97.text = 'Trung tâm Sản Phụ khoa Hệ thống Bệnh viện Đa khoa Tâm Anh quy tụ đội ngũ chuyên gia Sản Phụ khoa giỏi chuyên môn, giàu kinh nghiệm, sở hữu hệ thống máy móc hiện đại, phác đồ thăm khám và điều trị cá thể hóa, tùy vào từng tổn thương cụ thể mà có phác đồ điều trị riêng biệt và hiệu quả, không gây tổn thương các tuyến sữa bình thường khác, không cần sử dụng thuốc giảm đau và chống viêm toàn thân, trong thời gian điều trị mẹ vẫn có thể cho con bú bình thường, đảm bảo cung cấp dinh dưỡng thiết yếu và kháng thể tự nhiên cho con phát triển khỏe mạnh và phát triển toàn diện nhất.'
+
+MERGE (o1:disease {id: 'tắc_tia_sữa_disease'})
+MERGE (o2:treatment {id: 'máy_móc_hiện_đại_treatment'})
+MERGE (o1)-[r98:treatedBy]->(o2)
+SET r98.text = 'Trung tâm Sản Phụ khoa Hệ thống Bệnh viện Đa khoa Tâm Anh quy tụ đội ngũ chuyên gia Sản Phụ khoa giỏi chuyên môn, giàu kinh nghiệm, sở hữu hệ thống máy móc hiện đại, phác đồ thăm khám và điều trị cá thể hóa, tùy vào từng tổn thương cụ thể mà có phác đồ điều trị riêng biệt và hiệu quả, không gây tổn thương các tuyến sữa bình thường khác, không cần sử dụng thuốc giảm đau và chống viêm toàn thân, trong thời gian điều trị mẹ vẫn có thể cho con bú bình thường, đảm bảo cung cấp dinh dưỡng thiết yếu và kháng thể tự nhiên cho con phát triển khỏe mạnh và phát triển toàn diện nhất.'
+
+MERGE (o1:disease {id: 'tắc_tia_sữa_disease'})
+MERGE (o2:treatment {id: 'phác_đồ_điều_trị_cá_thể_hóa_treatment'})
+MERGE (o1)-[r99:treatedBy]->(o2)
+SET r99.text = 'Trung tâm Sản Phụ khoa Hệ thống Bệnh viện Đa khoa Tâm Anh quy tụ đội ngũ chuyên gia Sản Phụ khoa giỏi chuyên môn, giàu kinh nghiệm, sở hữu hệ thống máy móc hiện đại, phác đồ thăm khám và điều trị cá thể hóa, tùy vào từng tổn thương cụ thể mà có phác đồ điều trị riêng biệt và hiệu quả, không gây tổn thương các tuyến sữa bình thường khác, không cần sử dụng thuốc giảm đau và chống viêm toàn thân, trong thời gian điều trị mẹ vẫn có thể cho con bú bình thường, đảm bảo cung cấp dinh dưỡng thiết yếu và kháng thể tự nhiên cho con phát triển khỏe mạnh và phát triển toàn diện nhất.'
+
+MERGE (o1:disease {id: 'tắc_tia_sữa_disease'})
+MERGE (o2:treatment {id: 'thuốc_giảm_đau_treatment'})
+MERGE (o1)-[r100:treatedBy]->(o2)
+SET r100.text = 'Trung tâm Sản Phụ khoa Hệ thống Bệnh viện Đa khoa Tâm Anh quy tụ đội ngũ chuyên gia Sản Phụ khoa giỏi chuyên môn, giàu kinh nghiệm, sở hữu hệ thống máy móc hiện đại, phác đồ thăm khám và điều trị cá thể hóa, tùy vào từng tổn thương cụ thể mà có phác đồ điều trị riêng biệt và hiệu quả, không gây tổn thương các tuyến sữa bình thường khác, không cần sử dụng thuốc giảm đau và chống viêm toàn thân, trong thời gian điều trị mẹ vẫn có thể cho con bú bình thường, đảm bảo cung cấp dinh dưỡng thiết yếu và kháng thể tự nhiên cho con phát triển khỏe mạnh và phát triển toàn diện nhất.'
+
+MERGE (o1:disease {id: 'tắc_tia_sữa_disease'})
+MERGE (o2:treatment {id: 'thuốc_chống_viêm_toàn_thân_treatment'})
+MERGE (o1)-[r101:treatedBy]->(o2)
+SET r101.text = 'Trung tâm Sản Phụ khoa Hệ thống Bệnh viện Đa khoa Tâm Anh quy tụ đội ngũ chuyên gia Sản Phụ khoa giỏi chuyên môn, giàu kinh nghiệm, sở hữu hệ thống máy móc hiện đại, phác đồ thăm khám và điều trị cá thể hóa, tùy vào từng tổn thương cụ thể mà có phác đồ điều trị riêng biệt và hiệu quả, không gây tổn thương các tuyến sữa bình thường khác, không cần sử dụng thuốc giảm đau và chống viêm toàn thân, trong thời gian điều trị mẹ vẫn có thể cho con bú bình thường, đảm bảo cung cấp dinh dưỡng thiết yếu và kháng thể tự nhiên cho con phát triển khỏe mạnh và phát triển toàn diện nhất.'
+
+MERGE (o1:disease {id: 'tắc_tia_sữa_sau_sinh_disease'})
+MERGE (o2:symptom {id: 'đau_đớn_và_mệt_mỏi_symptom'})
+MERGE (o1)-[r102:isSymptomOf]->(o2)
+SET r102.text = 'Tắc tia sữa sau sinh có thể khiến mẹ đau đớn và mệt mỏi, tăng nguy cơ trầm cảm sau sinh cũng như không đảm bảo lượng sữa cung cấp dưỡng chất thiết yếu và kháng thể tự nhiên cho con.'
+
+MERGE (o1:disease {id: 'tắc_tia_sữa_sau_sinh_disease'})
+MERGE (o2:disease {id: 'trầm_cảm_sau_sinh_disease'})
+MERGE (o1)-[r103:isSymptomOf]->(o2)
+SET r103.text = 'Tắc tia sữa sau sinh có thể khiến mẹ đau đớn và mệt mỏi, tăng nguy cơ trầm cảm sau sinh cũng như không đảm bảo lượng sữa cung cấp dưỡng chất thiết yếu và kháng thể tự nhiên cho con.'
+
+MERGE (o1:disease {id: 'tắc_tia_sữa_sau_sinh_disease'})
+MERGE (o2:food {id: 'lượng_sữa_cung_cấp_dưỡng_chất_thiết_yếu_và_kháng_thể_tự_nhiên_food'})
+MERGE (o1)-[r104:affects]->(o2)
+SET r104.text = 'Tắc tia sữa sau sinh có thể khiến mẹ đau đớn và mệt mỏi, tăng nguy cơ trầm cảm sau sinh cũng như không đảm bảo lượng sữa cung cấp dưỡng chất thiết yếu và kháng thể tự nhiên cho con.'
+
+MERGE (o1:disease {id: 'tắc_tia_sữa_sau_sinh_disease'})
+MERGE (o2:treatment {id: 'hút_sữa_thường_xuyên_treatment'})
+MERGE (o1)-[r105:preventedBy]->(o2)
+SET r105.text = 'Vì thế, mẹ cần phòng ngừa tình trạng này bằng cách:  Tập thói quen hút sữa thường xuyên: Ngoài việc cho con bú đúng cữ và bú thường xuyên, mẹ cần hút sữa đều đặn mỗi lần sau khi bé bú no để đảm bảo sữa không bị ứ đọng, sữa mới luôn được sản xuất.'
+
+MERGE (o1:treatment {id: 'hút_sữa_thường_xuyên_treatment'})
+MERGE (o2:symptom {id: 'sữa_không_bị_ứ_đọng_symptom'})
+MERGE (o1)-[r106:affects]->(o2)
+SET r106.text = 'Vì thế, mẹ cần phòng ngừa tình trạng này bằng cách:  Tập thói quen hút sữa thường xuyên: Ngoài việc cho con bú đúng cữ và bú thường xuyên, mẹ cần hút sữa đều đặn mỗi lần sau khi bé bú no để đảm bảo sữa không bị ứ đọng, sữa mới luôn được sản xuất.'
+
+MERGE (o1:treatment {id: 'hút_sữa_thường_xuyên_treatment'})
+MERGE (o2:food {id: 'sản_xuất_sữa_mới_food'})
+MERGE (o1)-[r107:affects]->(o2)
+SET r107.text = 'Vì thế, mẹ cần phòng ngừa tình trạng này bằng cách:  Tập thói quen hút sữa thường xuyên: Ngoài việc cho con bú đúng cữ và bú thường xuyên, mẹ cần hút sữa đều đặn mỗi lần sau khi bé bú no để đảm bảo sữa không bị ứ đọng, sữa mới luôn được sản xuất.'
+
+MERGE (o1:disease {id: 'tắc_tia_sữa_sau_sinh_disease'})
+MERGE (o2:lifestyle {id: 'lối_sống_khoa_học_lifestyle'})
+MERGE (o1)-[r108:preventedBy]->(o2)
+SET r108.text = 'Thực hiện lối sống khoa học: Mẹ cần xây dựng lối sống khoa học bằng việc ăn uống đầy đủ dinh dưỡng, bổ sung đầy đủ các nhóm chất, nghỉ ngơi hợp lý, tránh căng thẳng hoặc mệt mỏi kéo dài ảnh hưởng đến việc tiết sữa.'
+
+MERGE (o1:lifestyle {id: 'lối_sống_khoa_học_lifestyle'})
+MERGE (o2:lifestyle {id: 'ăn_uống_đầy_đủ_dinh_dưỡng_lifestyle'})
+MERGE (o1)-[r109:affects]->(o2)
+SET r109.text = 'Thực hiện lối sống khoa học: Mẹ cần xây dựng lối sống khoa học bằng việc ăn uống đầy đủ dinh dưỡng, bổ sung đầy đủ các nhóm chất, nghỉ ngơi hợp lý, tránh căng thẳng hoặc mệt mỏi kéo dài ảnh hưởng đến việc tiết sữa.'
+
+MERGE (o1:lifestyle {id: 'lối_sống_khoa_học_lifestyle'})
+MERGE (o2:food {id: 'bổ_sung_đầy_đủ_các_nhóm_chất_food'})
+MERGE (o1)-[r110:affects]->(o2)
+SET r110.text = 'Thực hiện lối sống khoa học: Mẹ cần xây dựng lối sống khoa học bằng việc ăn uống đầy đủ dinh dưỡng, bổ sung đầy đủ các nhóm chất, nghỉ ngơi hợp lý, tránh căng thẳng hoặc mệt mỏi kéo dài ảnh hưởng đến việc tiết sữa.'
+
+MERGE (o1:lifestyle {id: 'lối_sống_khoa_học_lifestyle'})
+MERGE (o2:lifestyle {id: 'nghỉ_ngơi_hợp_lý_lifestyle'})
+MERGE (o1)-[r111:affects]->(o2)
+SET r111.text = 'Thực hiện lối sống khoa học: Mẹ cần xây dựng lối sống khoa học bằng việc ăn uống đầy đủ dinh dưỡng, bổ sung đầy đủ các nhóm chất, nghỉ ngơi hợp lý, tránh căng thẳng hoặc mệt mỏi kéo dài ảnh hưởng đến việc tiết sữa.'
+
+MERGE (o1:lifestyle {id: 'lối_sống_khoa_học_lifestyle'})
+MERGE (o2:symptom {id: 'căng_thẳng_hoặc_mệt_mỏi_kéo_dài_symptom'})
+MERGE (o1)-[r112:affects]->(o2)
+SET r112.text = 'Thực hiện lối sống khoa học: Mẹ cần xây dựng lối sống khoa học bằng việc ăn uống đầy đủ dinh dưỡng, bổ sung đầy đủ các nhóm chất, nghỉ ngơi hợp lý, tránh căng thẳng hoặc mệt mỏi kéo dài ảnh hưởng đến việc tiết sữa.'
+
+MERGE (o1:lifestyle {id: 'lối_sống_khoa_học_lifestyle'})
+MERGE (o2:food {id: 'tiết_sữa_food'})
+MERGE (o1)-[r113:affects]->(o2)
+SET r113.text = 'Thực hiện lối sống khoa học: Mẹ cần xây dựng lối sống khoa học bằng việc ăn uống đầy đủ dinh dưỡng, bổ sung đầy đủ các nhóm chất, nghỉ ngơi hợp lý, tránh căng thẳng hoặc mệt mỏi kéo dài ảnh hưởng đến việc tiết sữa.'
+
+MERGE (o1:disease {id: 'tắc_tia_sữa_sau_sinh_disease'})
+MERGE (o2:lifestyle {id: 'uống_đủ_nước_lifestyle'})
+MERGE (o1)-[r114:preventedBy]->(o2)
+SET r114.text = 'Uống đủ nước: Mẹ nên uống đủ lượng nước khuyến cáo mỗi ngày để giúp sữa được sản xuất nhiều hơn, nhờ đó khơi thông tuyến sữa tốt hơn.'
+
+MERGE (o1:lifestyle {id: 'uống_đủ_nước_lifestyle'})
+MERGE (o2:food {id: 'sản_xuất_sữa_food'})
+MERGE (o1)-[r115:affects]->(o2)
+SET r115.text = 'Uống đủ nước: Mẹ nên uống đủ lượng nước khuyến cáo mỗi ngày để giúp sữa được sản xuất nhiều hơn, nhờ đó khơi thông tuyến sữa tốt hơn.'
+
+MERGE (o1:lifestyle {id: 'uống_đủ_nước_lifestyle'})
+MERGE (o2:organ {id: 'tuyến_sữa_organ'})
+MERGE (o1)-[r116:affects]->(o2)
+SET r116.text = 'Uống đủ nước: Mẹ nên uống đủ lượng nước khuyến cáo mỗi ngày để giúp sữa được sản xuất nhiều hơn, nhờ đó khơi thông tuyến sữa tốt hơn.'
+
+MERGE (o1:disease {id: 'tắc_tia_sữa_sau_sinh_disease'})
+MERGE (o2:lifestyle {id: 'hạn_chế_những_tác_động_lên_bầu_ngực_lifestyle'})
+MERGE (o1)-[r117:preventedBy]->(o2)
+SET r117.text = 'Hạn chế những tác động lên bầu ngực: Mẹ không nên mặc áo ngực quá ngực, không nằm sấp khi ngủ và cần hạn chế những tác động mạnh lên bầu ngực.'
+
+MERGE (o1:lifestyle {id: 'hạn_chế_những_tác_động_lên_bầu_ngực_lifestyle'})
+MERGE (o2:lifestyle {id: 'mặc_áo_ngực_quá_ngực_lifestyle'})
+MERGE (o1)-[r118:affects]->(o2)
+SET r118.text = 'Hạn chế những tác động lên bầu ngực: Mẹ không nên mặc áo ngực quá ngực, không nằm sấp khi ngủ và cần hạn chế những tác động mạnh lên bầu ngực.'
+
+MERGE (o1:lifestyle {id: 'hạn_chế_những_tác_động_lên_bầu_ngực_lifestyle'})
+MERGE (o2:lifestyle {id: 'nằm_sấp_khi_ngủ_lifestyle'})
+MERGE (o1)-[r119:affects]->(o2)
+SET r119.text = 'Hạn chế những tác động lên bầu ngực: Mẹ không nên mặc áo ngực quá ngực, không nằm sấp khi ngủ và cần hạn chế những tác động mạnh lên bầu ngực.'
+
+MERGE (o1:lifestyle {id: 'hạn_chế_những_tác_động_lên_bầu_ngực_lifestyle'})
+MERGE (o2:lifestyle {id: 'tác_động_mạnh_lên_bầu_ngực_lifestyle'})
+MERGE (o1)-[r120:affects]->(o2)
+SET r120.text = 'Hạn chế những tác động lên bầu ngực: Mẹ không nên mặc áo ngực quá ngực, không nằm sấp khi ngủ và cần hạn chế những tác động mạnh lên bầu ngực.'
+
+MERGE (o1:disease {id: 'tắc_tia_sữa_sau_sinh_disease'})
+MERGE (o2:lifestyle {id: 'tập_luyện_thể_dục_thể_thao_nhẹ_nhàng_lifestyle'})
+MERGE (o1)-[r121:preventedBy]->(o2)
+SET r121.text = 'Tập luyện thể dục thể thao nhẹ nhàng: Mẹ có thể tham khảo các bộ môn nhẹ nhàng với phụ nữ sau sinh như yoga, kegel, đi bộ… ngoài việc hỗ trợ hoạt động sản xuất sữa mẹ, cải thiện sắc vóc còn mang đến nhiều lợi ích sức khỏe khác.'
+
+MERGE (o1:lifestyle {id: 'tập_luyện_thể_dục_thể_thao_nhẹ_nhàng_lifestyle'})
+MERGE (o2:food {id: 'sản_xuất_sữa_mẹ_food'})
+MERGE (o1)-[r122:affects]->(o2)
+SET r122.text = 'Tập luyện thể dục thể thao nhẹ nhàng: Mẹ có thể tham khảo các bộ môn nhẹ nhàng với phụ nữ sau sinh như yoga, kegel, đi bộ… ngoài việc hỗ trợ hoạt động sản xuất sữa mẹ, cải thiện sắc vóc còn mang đến nhiều lợi ích sức khỏe khác.'
+
+MERGE (o1:lifestyle {id: 'tập_luyện_thể_dục_thể_thao_nhẹ_nhàng_lifestyle'})
+MERGE (o2:symptom {id: 'sắc_vóc_symptom'})
+MERGE (o1)-[r123:affects]->(o2)
+SET r123.text = 'Tập luyện thể dục thể thao nhẹ nhàng: Mẹ có thể tham khảo các bộ môn nhẹ nhàng với phụ nữ sau sinh như yoga, kegel, đi bộ… ngoài việc hỗ trợ hoạt động sản xuất sữa mẹ, cải thiện sắc vóc còn mang đến nhiều lợi ích sức khỏe khác.'
+
+MERGE (o1:disease {id: 'tắc_tia_sữa_sau_sinh_disease'})
+MERGE (o2:treatment {id: 'thăm_khám_treatment'})
+MERGE (o1)-[r124:treatedBy]->(o2)
+SET r124.text = 'Ngay khi phát hiện những biểu hiện tắc tia sữa kể trên, mẹ nên đến ngay cơ sở y tế uy tín để được thăm khám, can thiệp sớm và hiệu quả, tránh những trường hợp phát triển thành viêm tuyến vú hoặc áp xe vú ảnh hưởng đến sức khỏe mẹ và bé.'
+
+MERGE (o1:disease {id: 'tắc_tia_sữa_sau_sinh_disease'})
+MERGE (o2:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o1)-[r125:isSymptomOf]->(o2)
+SET r125.text = 'Ngay khi phát hiện những biểu hiện tắc tia sữa kể trên, mẹ nên đến ngay cơ sở y tế uy tín để được thăm khám, can thiệp sớm và hiệu quả, tránh những trường hợp phát triển thành viêm tuyến vú hoặc áp xe vú ảnh hưởng đến sức khỏe mẹ và bé.'
+
+MERGE (o1:disease {id: 'tắc_tia_sữa_sau_sinh_disease'})
+MERGE (o2:disease {id: 'áp_xe_vú_disease'})
+MERGE (o1)-[r126:isSymptomOf]->(o2)
+SET r126.text = 'Ngay khi phát hiện những biểu hiện tắc tia sữa kể trên, mẹ nên đến ngay cơ sở y tế uy tín để được thăm khám, can thiệp sớm và hiệu quả, tránh những trường hợp phát triển thành viêm tuyến vú hoặc áp xe vú ảnh hưởng đến sức khỏe mẹ và bé.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o2:symptom {id: 'sức_khỏe_mẹ_và_bé_symptom'})
+MERGE (o1)-[r127:affects]->(o2)
+SET r127.text = 'Ngay khi phát hiện những biểu hiện tắc tia sữa kể trên, mẹ nên đến ngay cơ sở y tế uy tín để được thăm khám, can thiệp sớm và hiệu quả, tránh những trường hợp phát triển thành viêm tuyến vú hoặc áp xe vú ảnh hưởng đến sức khỏe mẹ và bé.'

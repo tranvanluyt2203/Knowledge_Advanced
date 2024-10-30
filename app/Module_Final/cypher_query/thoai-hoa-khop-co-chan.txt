@@ -1,0 +1,655 @@
+
+MERGE (o1:disease {id: 'thoái_hóa_khớp_cổ_chân_disease'})
+MERGE (o2:symptom {id: 'đau_đớn__sưng_và_cứng_khớp_symptom'})
+MERGE (o1)-[r0:isSymptomOf]->(o2)
+SET r0.text = 'Thoái hóa khớp cổ chân là tình trạng gây đau đớn, sưng và cứng khớp, đặc biệt là sau đi bộ.'
+
+MERGE (o1:disease {id: 'thoái_hóa_khớp_cổ_chân_disease'})
+MERGE (o2:lifestyle {id: 'đi_bộ_lifestyle'})
+MERGE (o1)-[r1:aggravatedBy]->(o2)
+SET r1.text = 'Thoái hóa khớp cổ chân là tình trạng gây đau đớn, sưng và cứng khớp, đặc biệt là sau đi bộ.'
+
+MERGE (o1:treatment {id: 'chẩn_đoán_và_điều_trị_sớm_treatment'})
+MERGE (o2:disease {id: 'thoái_hóa_khớp_cổ_chân_disease'})
+MERGE (o1)-[r2:treatedBy]->(o2)
+SET r2.text = 'Chẩn đoán và điều trị sớm là cách tốt nhất để kiểm soát các triệu chứng và ngăn ngừa các rủi ro liên quan.'
+
+MERGE (o1:treatment {id: 'chẩn_đoán_và_điều_trị_sớm_treatment'})
+MERGE (o2:symptom {id: 'rủi_ro_liên_quan_symptom'})
+MERGE (o1)-[r3:preventedBy]->(o2)
+SET r3.text = 'Chẩn đoán và điều trị sớm là cách tốt nhất để kiểm soát các triệu chứng và ngăn ngừa các rủi ro liên quan.'
+
+MERGE (o1:disease {id: 'thoái_hóa_khớp_cổ_chân_disease'})
+MERGE (o2:cause {id: 'chấn_thương_cause'})
+MERGE (o1)-[r4:causedBy]->(o2)
+SET r4.text = 'Khoảng 90% người bị thoái hóa cổ chân xuất phát từ một trong hai yếu tố nguy cơ chính là chấn thương hoặc bệnh lý có từ trước.'
+
+MERGE (o1:disease {id: 'thoái_hóa_khớp_cổ_chân_disease'})
+MERGE (o2:cause {id: 'bệnh_lý_có_từ_trước_cause'})
+MERGE (o1)-[r5:causedBy]->(o2)
+SET r5.text = 'Khoảng 90% người bị thoái hóa cổ chân xuất phát từ một trong hai yếu tố nguy cơ chính là chấn thương hoặc bệnh lý có từ trước.'
+
+MERGE (o1:disease {id: 'thoái_hóa_khớp_cổ_chân_disease'})
+MERGE (o2:cause {id: 'tiền_sử_gia_đình_cause'})
+MERGE (o1)-[r6:causedBy]->(o2)
+SET r6.text = 'Nhóm nguyên nhân còn lại thuộc về tiền sử gia đình, thừa cân béo phì…'
+
+MERGE (o1:disease {id: 'thoái_hóa_khớp_cổ_chân_disease'})
+MERGE (o2:lifestyle {id: 'thừa_cân_béo_phì_lifestyle'})
+MERGE (o1)-[r7:causedBy]->(o2)
+SET r7.text = 'Nhóm nguyên nhân còn lại thuộc về tiền sử gia đình, thừa cân béo phì…'
+
+MERGE (o1:disease {id: 'thoái_hóa_khớp_cổ_chân_disease'})
+MERGE (o2:lifestyle {id: 'tuổi_trên_40_lifestyle'})
+MERGE (o1)-[r8:associatedWith]->(o2)
+SET r8.text = 'Tình trạng này thường xuất hiện ở độ tuổi trên 40 và đang có xu hướng trẻ hóa, gây ảnh hưởng nặng nề đến cuộc sống của người bệnh.'
+
+MERGE (o1:disease {id: 'thoái_hóa_khớp_cổ_chân_disease'})
+MERGE (o2:lifestyle {id: 'cuộc_sống_của_người_bệnh_lifestyle'})
+MERGE (o1)-[r9:affects]->(o2)
+SET r9.text = 'Tình trạng này thường xuất hiện ở độ tuổi trên 40 và đang có xu hướng trẻ hóa, gây ảnh hưởng nặng nề đến cuộc sống của người bệnh.'
+
+MERGE (o1:disease {id: 'thoái_hóa_khớp_cổ_chân_disease'})
+MERGE (o2:organ {id: 'sụn_khớp_organ'})
+MERGE (o1)-[r10:affects]->(o2)
+SET r10.text = 'Thoái hóa khớp cổ chân là tình trạng sụn khớp bị bào mòn theo thời gian, khiến các xương cọ vào nhau khi di chuyển, kèm với phản ứng viêm nên gây đau, cứng và các triệu chứng khác cho người bệnh.'
+
+MERGE (o1:disease {id: 'thoái_hóa_khớp_cổ_chân_disease'})
+MERGE (o2:symptom {id: 'đau__cứng_symptom'})
+MERGE (o1)-[r11:isSymptomOf]->(o2)
+SET r11.text = 'Thoái hóa khớp cổ chân là tình trạng sụn khớp bị bào mòn theo thời gian, khiến các xương cọ vào nhau khi di chuyển, kèm với phản ứng viêm nên gây đau, cứng và các triệu chứng khác cho người bệnh.'
+
+MERGE (o1:disease {id: 'thoái_hóa_khớp_cổ_chân_disease'})
+MERGE (o2:organ {id: 'xương_organ'})
+MERGE (o1)-[r12:affects]->(o2)
+SET r12.text = 'Tình trạng này không chỉ ảnh hưởng đến sụn mà còn có thể gây tổn thương xương, dây chằng, gân xung quanh khớp.'
+
+MERGE (o1:disease {id: 'thoái_hóa_khớp_cổ_chân_disease'})
+MERGE (o2:organ {id: 'dây_chằng_organ'})
+MERGE (o1)-[r13:affects]->(o2)
+SET r13.text = 'Tình trạng này không chỉ ảnh hưởng đến sụn mà còn có thể gây tổn thương xương, dây chằng, gân xung quanh khớp.'
+
+MERGE (o1:disease {id: 'thoái_hóa_khớp_cổ_chân_disease'})
+MERGE (o2:organ {id: 'gân_organ'})
+MERGE (o1)-[r14:affects]->(o2)
+SET r14.text = 'Tình trạng này không chỉ ảnh hưởng đến sụn mà còn có thể gây tổn thương xương, dây chằng, gân xung quanh khớp.'
+
+MERGE (o1:disease {id: 'thoái_hóa_khớp_cổ_chân_disease'})
+MERGE (o2:lifestyle {id: 'tuổi_trên_45_lifestyle'})
+MERGE (o1)-[r15:associatedWith]->(o2)
+SET r15.text = 'Bệnh có thể xuất hiện ở mọi lứa tuổi, nhưng phổ biến nhất ở nhóm người trên 45 tuổi và nữ giới chiếm tỷ lệ nhiều hơn nam giới.'
+
+MERGE (o1:disease {id: 'thoái_hóa_khớp_cổ_chân_disease'})
+MERGE (o2:lifestyle {id: 'nữ_giới_lifestyle'})
+MERGE (o1)-[r16:associatedWith]->(o2)
+SET r16.text = 'Bệnh có thể xuất hiện ở mọi lứa tuổi, nhưng phổ biến nhất ở nhóm người trên 45 tuổi và nữ giới chiếm tỷ lệ nhiều hơn nam giới.'
+
+MERGE (o1:organ {id: 'khớp_cổ_chân_organ'})
+MERGE (o2:organ {id: 'cổ_chân_organ'})
+MERGE (o1)-[r17:locatedIn]->(o2)
+SET r17.text = 'Cấu trúc của khớp cổ chân khá đặc biệt, gồm 3 mặt khớp: sên mác ở bên ngoài, chày sên ở trên và mắt cá trong - sên ở bên trong.'
+
+MERGE (o1:organ {id: 'sên_mác_organ'})
+MERGE (o2:organ {id: 'khớp_cổ_chân_organ'})
+MERGE (o1)-[r18:locatedIn]->(o2)
+SET r18.text = 'Cấu trúc của khớp cổ chân khá đặc biệt, gồm 3 mặt khớp: sên mác ở bên ngoài, chày sên ở trên và mắt cá trong - sên ở bên trong.'
+
+MERGE (o1:organ {id: 'chày_sên_organ'})
+MERGE (o2:organ {id: 'khớp_cổ_chân_organ'})
+MERGE (o1)-[r19:locatedIn]->(o2)
+SET r19.text = 'Cấu trúc của khớp cổ chân khá đặc biệt, gồm 3 mặt khớp: sên mác ở bên ngoài, chày sên ở trên và mắt cá trong - sên ở bên trong.'
+
+MERGE (o1:organ {id: 'mắt_cá_trong_-_sên_organ'})
+MERGE (o2:organ {id: 'khớp_cổ_chân_organ'})
+MERGE (o1)-[r20:locatedIn]->(o2)
+SET r20.text = 'Cấu trúc của khớp cổ chân khá đặc biệt, gồm 3 mặt khớp: sên mác ở bên ngoài, chày sên ở trên và mắt cá trong - sên ở bên trong.'
+
+MERGE (o1:organ {id: 'khớp_cổ_chân_organ'})
+MERGE (o2:symptom {id: 'diện_tích_nhỏ_symptom'})
+MERGE (o1)-[r21:relatedTo]->(o2)
+SET r21.text = 'Diện tích của mặt khớp cổ chân nhỏ, khoảng 350mm.'
+
+MERGE (o1:organ {id: 'sụn_khớp_cổ_chân_organ'})
+MERGE (o2:symptom {id: 'độ_dày_không_nhiều_symptom'})
+MERGE (o1)-[r22:relatedTo]->(o2)
+SET r22.text = 'Độ dày sụn khớp cổ chân không nhiều, có chỗ nhỏ hơn &lt;1mm, nên áp lực lên sụn khớp cổ chân rất lớn.'
+
+MERGE (o1:organ {id: 'sụn_khớp_cổ_chân_organ'})
+MERGE (o2:symptom {id: 'áp_lực_lớn_symptom'})
+MERGE (o1)-[r23:relatedTo]->(o2)
+SET r23.text = 'Độ dày sụn khớp cổ chân không nhiều, có chỗ nhỏ hơn &lt;1mm, nên áp lực lên sụn khớp cổ chân rất lớn.'
+
+MERGE (o1:organ {id: 'khớp_cổ_chân_organ'})
+MERGE (o2:symptom {id: 'lực_bẻ_gãy_cao_symptom'})
+MERGE (o1)-[r24:relatedTo]->(o2)
+SET r24.text = 'Tuy nhiên, lực bẻ gãy và độ cứng của sụn cao gấp nhiều lần so với gối và háng, nên khớp cổ chân ít bị thoái hóa nguyên phát hơn khớp gối và khớp háng.'
+
+MERGE (o1:organ {id: 'khớp_cổ_chân_organ'})
+MERGE (o2:symptom {id: 'độ_cứng_cao_symptom'})
+MERGE (o1)-[r25:relatedTo]->(o2)
+SET r25.text = 'Tuy nhiên, lực bẻ gãy và độ cứng của sụn cao gấp nhiều lần so với gối và háng, nên khớp cổ chân ít bị thoái hóa nguyên phát hơn khớp gối và khớp háng.'
+
+MERGE (o1:organ {id: 'khớp_cổ_chân_organ'})
+MERGE (o2:symptom {id: 'ít_bị_thoái_hóa_nguyên_phát_symptom'})
+MERGE (o1)-[r26:relatedTo]->(o2)
+SET r26.text = 'Tuy nhiên, lực bẻ gãy và độ cứng của sụn cao gấp nhiều lần so với gối và háng, nên khớp cổ chân ít bị thoái hóa nguyên phát hơn khớp gối và khớp háng.'
+
+MERGE (o1:organ {id: 'khớp_gối_organ'})
+MERGE (o2:symptom {id: 'thoái_hóa_nguyên_phát_symptom'})
+MERGE (o1)-[r27:relatedTo]->(o2)
+SET r27.text = 'Tuy nhiên, lực bẻ gãy và độ cứng của sụn cao gấp nhiều lần so với gối và háng, nên khớp cổ chân ít bị thoái hóa nguyên phát hơn khớp gối và khớp háng.'
+
+MERGE (o1:organ {id: 'khớp_háng_organ'})
+MERGE (o2:symptom {id: 'thoái_hóa_nguyên_phát_symptom'})
+MERGE (o1)-[r28:relatedTo]->(o2)
+SET r28.text = 'Tuy nhiên, lực bẻ gãy và độ cứng của sụn cao gấp nhiều lần so với gối và háng, nên khớp cổ chân ít bị thoái hóa nguyên phát hơn khớp gối và khớp háng.'
+
+MERGE (o1:disease {id: 'khớp_cổ_chân_thoái_hóa_disease'})
+MERGE (o2:cause {id: 'chấn_thương_cause'})
+MERGE (o1)-[r29:causedBy]->(o2)
+SET r29.text = 'Khớp cổ chân thoái hóa chủ yếu là do nguyên nhân thứ phát sau chấn thương.'
+
+MERGE (o1:disease {id: 'thoái_hóa_mắt_cá_chân_disease'})
+MERGE (o2:lifestyle {id: 'thừa_cân__béo_phì_lifestyle'})
+MERGE (o1)-[r30:causedBy]->(o2)
+SET r30.text = 'Nguy cơ phát triển thoái hóa mắt cá chân thường liên quan đến:  Tình trạng thừa cân, béo phì.'
+
+MERGE (o1:disease {id: 'thoái_hóa_mắt_cá_chân_disease'})
+MERGE (o2:lifestyle {id: 'thừa_cân_lifestyle'})
+MERGE (o1)-[r31:associatedWith]->(o2)
+SET r31.text = 'Nguy cơ phát triển thoái hóa mắt cá chân thường liên quan đến:  Tình trạng thừa cân, béo phì.'
+
+MERGE (o1:disease {id: 'thoái_hóa_mắt_cá_chân_disease'})
+MERGE (o2:lifestyle {id: 'béo_phì_lifestyle'})
+MERGE (o1)-[r32:associatedWith]->(o2)
+SET r32.text = 'Nguy cơ phát triển thoái hóa mắt cá chân thường liên quan đến:  Tình trạng thừa cân, béo phì.'
+
+MERGE (o1:disease {id: 'thoái_hóa_mắt_cá_chân_disease'})
+MERGE (o2:disease {id: 'viêm_khớp_dạng_thấp_disease'})
+MERGE (o1)-[r33:causedBy]->(o2)
+SET r33.text = 'Yếu tố di truyền các bệnh lý như viêm khớp dạng thấp, gout.'
+
+MERGE (o1:disease {id: 'thoái_hóa_mắt_cá_chân_disease'})
+MERGE (o2:disease {id: 'gout_disease'})
+MERGE (o1)-[r34:causedBy]->(o2)
+SET r34.text = 'Yếu tố di truyền các bệnh lý như viêm khớp dạng thấp, gout.'
+
+MERGE (o1:disease {id: 'thoái_hóa_khớp_cổ_chân_disease'})
+MERGE (o2:lifestyle {id: 'tuổi_tác_lifestyle'})
+MERGE (o1)-[r35:associatedWith]->(o2)
+SET r35.text = 'Mỗi người sẽ những dấu hiệu thoái hóa khớp cổ chân khác nhau, tùy theo tuổi tác, cân nặng, điều kiện sinh hoạt, làm việc…'
+
+MERGE (o1:disease {id: 'thoái_hóa_khớp_cổ_chân_disease'})
+MERGE (o2:lifestyle {id: 'cân_nặng_lifestyle'})
+MERGE (o1)-[r36:associatedWith]->(o2)
+SET r36.text = 'Mỗi người sẽ những dấu hiệu thoái hóa khớp cổ chân khác nhau, tùy theo tuổi tác, cân nặng, điều kiện sinh hoạt, làm việc…'
+
+MERGE (o1:disease {id: 'thoái_hóa_khớp_cổ_chân_disease'})
+MERGE (o2:lifestyle {id: 'điều_kiện_sinh_hoạt_lifestyle'})
+MERGE (o1)-[r37:associatedWith]->(o2)
+SET r37.text = 'Mỗi người sẽ những dấu hiệu thoái hóa khớp cổ chân khác nhau, tùy theo tuổi tác, cân nặng, điều kiện sinh hoạt, làm việc…'
+
+MERGE (o1:disease {id: 'thoái_hóa_khớp_cổ_chân_disease'})
+MERGE (o2:lifestyle {id: 'làm_việc_lifestyle'})
+MERGE (o1)-[r38:associatedWith]->(o2)
+SET r38.text = 'Mỗi người sẽ những dấu hiệu thoái hóa khớp cổ chân khác nhau, tùy theo tuổi tác, cân nặng, điều kiện sinh hoạt, làm việc…'
+
+MERGE (o1:disease {id: 'thoái_hóa_vùng_khớp_cổ_chân_disease'})
+MERGE (o2:symptom {id: 'sưng__nóng__đỏ__đau_ở_các_khớp_bị_ảnh_hưởng._symptom'})
+MERGE (o1)-[r39:isSymptomOf]->(o2)
+SET r39.text = 'Nhưng nhìn chung, các triệu chứng phổ biến nhất của thoái hóa vùng khớp cổ chân là:'
+
+MERGE (o1:symptom {id: 'sưng_symptom'})
+MERGE (o2:disease {id: 'thoái_hóa_vùng_khớp_cổ_chân_disease'})
+MERGE (o1)-[r40:isSymptomOf]->(o2)
+SET r40.text = 'Sưng, nóng, đỏ, đau ở các khớp bị ảnh hưởng.'
+
+MERGE (o1:symptom {id: 'nóng_symptom'})
+MERGE (o2:disease {id: 'thoái_hóa_vùng_khớp_cổ_chân_disease'})
+MERGE (o1)-[r41:isSymptomOf]->(o2)
+SET r41.text = 'Sưng, nóng, đỏ, đau ở các khớp bị ảnh hưởng.'
+
+MERGE (o1:symptom {id: 'đỏ_symptom'})
+MERGE (o2:disease {id: 'thoái_hóa_vùng_khớp_cổ_chân_disease'})
+MERGE (o1)-[r42:isSymptomOf]->(o2)
+SET r42.text = 'Sưng, nóng, đỏ, đau ở các khớp bị ảnh hưởng.'
+
+MERGE (o1:symptom {id: 'đau_symptom'})
+MERGE (o2:disease {id: 'thoái_hóa_vùng_khớp_cổ_chân_disease'})
+MERGE (o1)-[r43:isSymptomOf]->(o2)
+SET r43.text = 'Sưng, nóng, đỏ, đau ở các khớp bị ảnh hưởng.'
+
+MERGE (o1:symptom {id: 'đau_symptom'})
+MERGE (o2:disease {id: 'thoái_hóa_vùng_khớp_cổ_chân_disease'})
+MERGE (o1)-[r44:isSymptomOf]->(o2)
+SET r44.text = 'Đau khi bị chạm vào.'
+
+MERGE (o1:symptom {id: 'nhức_mỏi_ở_bàn_chân_symptom'})
+MERGE (o2:disease {id: 'thoái_hóa_vùng_khớp_cổ_chân_disease'})
+MERGE (o1)-[r45:isSymptomOf]->(o2)
+SET r45.text = 'Nhức mỏi ở bàn chân, đặc biệt là khi vận động mạnh hoặc đi giày cao gót.'
+
+MERGE (o1:symptom {id: 'nhức_mỏi_ở_bàn_chân_symptom'})
+MERGE (o2:lifestyle {id: 'vận_động_mạnh_lifestyle'})
+MERGE (o1)-[r46:aggravatedBy]->(o2)
+SET r46.text = 'Nhức mỏi ở bàn chân, đặc biệt là khi vận động mạnh hoặc đi giày cao gót.'
+
+MERGE (o1:symptom {id: 'nhức_mỏi_ở_bàn_chân_symptom'})
+MERGE (o2:lifestyle {id: 'đi_giày_cao_gót_lifestyle'})
+MERGE (o1)-[r47:aggravatedBy]->(o2)
+SET r47.text = 'Nhức mỏi ở bàn chân, đặc biệt là khi vận động mạnh hoặc đi giày cao gót.'
+
+MERGE (o1:symptom {id: 'đau_nhức_symptom'})
+MERGE (o2:disease {id: 'thoái_hóa_vùng_khớp_cổ_chân_disease'})
+MERGE (o1)-[r48:isSymptomOf]->(o2)
+SET r48.text = 'Một số người thường bị đau nhức vào ban đêm'
+
+MERGE (o1:symptom {id: 'cứng_khớp_symptom'})
+MERGE (o2:disease {id: 'thoái_hóa_vùng_khớp_cổ_chân_disease'})
+MERGE (o1)-[r49:isSymptomOf]->(o2)
+SET r49.text = 'Cứng khớp, nhất là khi người bệnh không di chuyển một thời gian'
+
+MERGE (o1:symptom {id: 'cứng_khớp_symptom'})
+MERGE (o2:lifestyle {id: 'không_di_chuyển_lifestyle'})
+MERGE (o1)-[r50:aggravatedBy]->(o2)
+SET r50.text = 'Cứng khớp, nhất là khi người bệnh không di chuyển một thời gian'
+
+MERGE (o1:disease {id: 'các_khớp_bị_thoái_hóa_disease'})
+MERGE (o2:symptom {id: 'lớn_hơn_bình_thường_symptom'})
+MERGE (o1)-[r51:isSymptomOf]->(o2)
+SET r51.text = 'Các khớp bị thoái hóa nhìn sẽ lớn hơn bình thường'
+
+MERGE (o1:symptom {id: 'khớp_phát_ra_tiếng_kêu_symptom'})
+MERGE (o2:disease {id: 'thoái_hóa_vùng_khớp_cổ_chân_disease'})
+MERGE (o1)-[r52:isSymptomOf]->(o2)
+SET r52.text = 'Khớp phát ra tiếng kêu lắc rắc hoặc lạo xạo khi cử động bàn chân, mắt cá chân'
+
+MERGE (o1:disease {id: 'thoái_hóa_disease'})
+MERGE (o2:organ {id: 'dây_chằng_organ'})
+MERGE (o1)-[r53:affects]->(o2)
+SET r53.text = 'Thoái hóa có thể làm cho dây chằng trở nên yếu đi, gây áp lực lên sụn.'
+
+MERGE (o1:disease {id: 'thoái_hóa_disease'})
+MERGE (o2:organ {id: 'sụn_organ'})
+MERGE (o1)-[r54:affects]->(o2)
+SET r54.text = 'Thoái hóa có thể làm cho dây chằng trở nên yếu đi, gây áp lực lên sụn.'
+
+MERGE (o1:symptom {id: 'các_cơ_lỏng_lẻo_symptom'})
+MERGE (o2:disease {id: 'thoái_hóa_vùng_khớp_cổ_chân_disease'})
+MERGE (o1)-[r55:isSymptomOf]->(o2)
+SET r55.text = 'Các cơ lỏng lẻo khiến người bệnh cảm thấy đau khi đi bộ hoặc dồn trọng lực lên mắt cá chân và gây mất vững khi di chuyển.'
+
+MERGE (o1:symptom {id: 'các_cơ_lỏng_lẻo_symptom'})
+MERGE (o2:lifestyle {id: 'đi_bộ_lifestyle'})
+MERGE (o1)-[r56:aggravatedBy]->(o2)
+SET r56.text = 'Các cơ lỏng lẻo khiến người bệnh cảm thấy đau khi đi bộ hoặc dồn trọng lực lên mắt cá chân và gây mất vững khi di chuyển.'
+
+MERGE (o1:symptom {id: 'các_cơ_lỏng_lẻo_symptom'})
+MERGE (o2:lifestyle {id: 'dồn_trọng_lực_lên_mắt_cá_chân_lifestyle'})
+MERGE (o1)-[r57:aggravatedBy]->(o2)
+SET r57.text = 'Các cơ lỏng lẻo khiến người bệnh cảm thấy đau khi đi bộ hoặc dồn trọng lực lên mắt cá chân và gây mất vững khi di chuyển.'
+
+MERGE (o1:organ {id: 'khớp_cổ_chân_organ'})
+MERGE (o2:disease {id: 'thoái_hóa_vùng_khớp_cổ_chân_disease'})
+MERGE (o1)-[r58:isSymptomOf]->(o2)
+SET r58.text = 'Khớp cổ chân ít linh hoạt và giảm biên độ hoạt động'
+
+MERGE (o1:symptom {id: 'ít_linh_hoạt_symptom'})
+MERGE (o2:disease {id: 'thoái_hóa_vùng_khớp_cổ_chân_disease'})
+MERGE (o1)-[r59:isSymptomOf]->(o2)
+SET r59.text = 'Khớp cổ chân ít linh hoạt và giảm biên độ hoạt động'
+
+MERGE (o1:symptom {id: 'giảm_biên_độ_hoạt_động_symptom'})
+MERGE (o2:disease {id: 'thoái_hóa_vùng_khớp_cổ_chân_disease'})
+MERGE (o1)-[r60:isSymptomOf]->(o2)
+SET r60.text = 'Khớp cổ chân ít linh hoạt và giảm biên độ hoạt động'
+
+MERGE (o1:treatment {id: 'quá_trình_sửa_chữa_treatment'})
+MERGE (o2:disease {id: 'thoái_hóa_vùng_khớp_cổ_chân_disease'})
+MERGE (o1)-[r61:treatedBy]->(o2)
+SET r61.text = 'Quá trình sửa chữa trong khớp cổ chân có thể làm hình thành các gai ở rìa xương và thay đổi hình dạng khớp.'
+
+MERGE (o1:treatment {id: 'quá_trình_sửa_chữa_treatment'})
+MERGE (o2:symptom {id: 'hình_thành_các_gai_ở_rìa_xương_symptom'})
+MERGE (o1)-[r62:isSymptomOf]->(o2)
+SET r62.text = 'Quá trình sửa chữa trong khớp cổ chân có thể làm hình thành các gai ở rìa xương và thay đổi hình dạng khớp.'
+
+MERGE (o1:disease {id: 'thoái_hóa_khớp_cổ_chân_disease'})
+MERGE (o2:cause {id: 'nhiều_nguyên_nhân_cause'})
+MERGE (o1)-[r63:causedBy]->(o2)
+SET r63.text = 'Theo các chuyên gia cơ xương khớp, Trung tâm Chấn thương chỉnh hình, BVĐK Tâm Anh, có rất nhiều nguyên nhân gây thoái hóa khớp cổ chân.'
+
+MERGE (o1:treatment {id: 'bác_sĩ_treatment'})
+MERGE (o2:disease {id: 'thoái_hóa_khớp_cổ_chân_disease'})
+MERGE (o1)-[r64:diagnosedBy]->(o2)
+SET r64.text = 'Việc xác định đúng nguyên nhân gây bệnh sẽ giúp bác sĩ chẩn đoán chính xác và có phương pháp điều trị hiệu quả.'
+
+MERGE (o1:disease {id: 'thoái_hóa_khớp_disease'})
+MERGE (o2:lifestyle {id: 'người_lớn_tuổi_lifestyle'})
+MERGE (o1)-[r65:associatedWith]->(o2)
+SET r65.text = 'Thoái hóa khớp có thể xuất hiện ở bất kỳ giai đoạn nào trong cuộc đời, nhưng thường gặp nhất ở người lớn tuổi.'
+
+MERGE (o1:organ {id: 'sụn_khớp_organ'})
+MERGE (o2:disease {id: 'thoái_hóa_khớp_disease'})
+MERGE (o1)-[r66:affects]->(o2)
+SET r66.text = 'Thời gian làm các lớp sụn khớp bị bào mòn, mỏng đi, kém linh hoạt và dễ bị thoái hóa.'
+
+MERGE (o1:organ {id: 'mắt_cá_chân_organ'})
+MERGE (o2:symptom {id: 'bong_gân__gãy_xương_symptom'})
+MERGE (o1)-[r67:isSymptomOf]->(o2)
+SET r67.text = 'Mắt cá chân đặc biệt dễ bị bong gân, gãy xương và các chấn thương khác trong quá trình sinh hoạt, chơi thể thao, làm việc…'
+
+MERGE (o1:cause {id: 'chấn_thương_cause'})
+MERGE (o2:disease {id: 'thoái_hóa_khớp_disease'})
+MERGE (o1)-[r68:causes]->(o2)
+SET r68.text = 'Khớp bị chấn thương sẽ có nguy cơ bị viêm, thoái hóa nhiều hơn các khớp khác đến 7 lần.'
+
+MERGE (o1:cause {id: 'chấn_thương_cause'})
+MERGE (o2:disease {id: 'thoái_hóa_khớp_cổ_chân_disease'})
+MERGE (o1)-[r69:causes]->(o2)
+SET r69.text = 'Một số thống kê cho thấy, 70-80% trường hợp khớp cổ chân bị thoái hóa xảy ra ở mắt cá chân từng bị chấn thương trước đó.'
+
+MERGE (o1:symptom {id: 'tổn_thương_symptom'})
+MERGE (o2:disease {id: 'thoái_hóa_khớp_cổ_chân_disease'})
+MERGE (o1)-[r70:isSymptomOf]->(o2)
+SET r70.text = 'Thường các tổn thương sẽ lành lại và chức năng khớp chân được phục hồi.'
+
+MERGE (o1:cause {id: 'chấn_thương_cause'})
+MERGE (o2:disease {id: 'thoái_hóa_khớp_disease'})
+MERGE (o1)-[r71:causes]->(o2)
+SET r71.text = 'Tuy nhiên, chấn thương cũng có thể dẫn đến những thay đổi ở khớp và thúc đẩy tốc độ thoái hóa nhanh hơn.'
+
+MERGE (o1:disease {id: 'thoái_hóa_khớp_disease'})
+MERGE (o2:cause {id: 'chấn_thương_cause'})
+MERGE (o1)-[r72:causedBy]->(o2)
+SET r72.text = 'Đặc biệt, nguy cơ thoái hóa cũng có thể xảy ra, dù sau khi chấn thương đã được điều trị đúng cách.'
+
+MERGE (o1:disease {id: 'thoái_hóa_khớp_vùng_cổ_chân_disease'})
+MERGE (o2:cause {id: 'chấn_thương_cause'})
+MERGE (o1)-[r73:causedBy]->(o2)
+SET r73.text = 'Các triệu chứng thoái hóa khớp vùng cổ chân thường xuất hiện khoảng 2 năm sau chấn thương, nhưng một vài trường hợp sau đó hàng chục năm.'
+
+MERGE (o1:disease {id: 'viêm_khớp_dạng_thấp_và_viêm_khớp_phản_ứng_disease'})
+MERGE (o2:disease {id: 'thoái_hóa_khớp_cổ_chân_disease'})
+MERGE (o1)-[r74:causes]->(o2)
+SET r74.text = 'Các tình trạng có thể làm tăng nguy cơ phát triển bệnh bao gồm:  Viêm khớp dạng thấp và viêm khớp phản ứng.'
+
+MERGE (o1:disease {id: 'bệnh_khớp_toàn_thân_disease'})
+MERGE (o2:organ {id: 'xương_khớp_organ'})
+MERGE (o1)-[r75:affects]->(o2)
+SET r75.text = 'Các bệnh khớp toàn thân này có thể gây tổn thương xương khớp theo thời gian'
+
+MERGE (o1:disease {id: 'bệnh_huyết_học_disease'})
+MERGE (o2:disease {id: 'thoái_hóa_khớp_cổ_chân_disease'})
+MERGE (o1)-[r76:causes]->(o2)
+SET r76.text = 'Bệnh huyết học như máu khó đông, bệnh huyết sắc tố'
+
+MERGE (o1:disease {id: 'bàn_chân_khoèo_disease'})
+MERGE (o2:disease {id: 'thoái_hóa_khớp_cổ_chân_disease'})
+MERGE (o1)-[r77:causes]->(o2)
+SET r77.text = 'Bàn chân khoèo hoặc các khuyết tật bẩm sinh ở chân khác dẫn đến liên kết khớp mắt cá chân kém'
+
+MERGE (o1:disease {id: 'bệnh_hoại_tử_vô_mạch_và_chứng_thoái_hóa_xương_disease'})
+MERGE (o2:disease {id: 'thoái_hóa_khớp_cổ_chân_disease'})
+MERGE (o1)-[r78:causes]->(o2)
+SET r78.text = 'Bệnh hoại tử vô mạch và chứng thoái hóa xương khiến cho xương và sụn của khớp cổ chân dễ bị tổn thương cho do lưu thông máu kém'
+
+MERGE (o1:disease {id: 'viêm_khớp_cổ_chân_nguyên_phát_disease'})
+MERGE (o2:disease {id: 'thoái_hóa_khớp_cổ_chân_disease'})
+MERGE (o1)-[r79:relatedTo]->(o2)
+SET r79.text = 'Một số trường hợp cổ chân bị thoái hóa không do chấn thương hoặc tình trạng bệnh lý trước đó được gọi là viêm khớp cổ chân nguyên phát.'
+
+MERGE (o1:disease {id: 'viêm_khớp_cổ_chân_nguyên_phát_disease'})
+MERGE (o2:lifestyle {id: '10%_trường_hợp_lifestyle'})
+MERGE (o1)-[r80:associatedWith]->(o2)
+SET r80.text = 'Tình trạng này thường chiếm khoảng 10% trường hợp.'
+
+MERGE (o1:disease {id: 'thoái_hóa_cổ_chân_nguyên_phát_disease'})
+MERGE (o2:symptom {id: 'ít_bị_đau_symptom'})
+MERGE (o1)-[r81:isSymptomOf]->(o2)
+SET r81.text = 'Người bị thoái hóa cổ chân nguyên phát có xu hướng ít bị đau hơn và có phạm vi vận động tốt hơn những trường hợp khác.'
+
+MERGE (o1:cause {id: 'căng_thẳng_khớp_và_chấn_thương_nhỏ_cause'})
+MERGE (o2:disease {id: 'thoái_hóa_khớp_cổ_chân_disease'})
+MERGE (o1)-[r82:causes]->(o2)
+SET r82.text = 'Căng thẳng khớp và chấn thương nhỏ: Thường xuất hiện ở những người có các hoạt động thường xuyên gây căng thẳng cho cổ chân như vũ công ba lê, cầu thủ…'
+
+MERGE (o1:lifestyle {id: 'thừa_cân__béo_phì_lifestyle'})
+MERGE (o2:disease {id: 'thoái_hóa_khớp_cổ_chân_disease'})
+MERGE (o1)-[r83:causes]->(o2)
+SET r83.text = 'Thừa cân, béo phì: Khớp cổ chân gánh một khối lượng gấp 5 lần trọng lượng cơ thể khi chúng ta đi bộ.'
+
+MERGE (o1:lifestyle {id: 'cân_nặng_lớn_lifestyle'})
+MERGE (o2:disease {id: 'thoái_hóa_khớp_cổ_chân_disease'})
+MERGE (o1)-[r84:causes]->(o2)
+SET r84.text = 'Do đó, nếu một người có cân nặng càng lớn, khớp cổ chân càng dễ bị tổn thương.'
+
+MERGE (o1:cause {id: 'tiền_sử_gia_đình_cause'})
+MERGE (o2:disease {id: 'thoái_hóa_khớp_disease'})
+MERGE (o1)-[r85:causes]->(o2)
+SET r85.text = 'Tiền sử gia đình: Thoái hóa khớp bị ảnh hưởng bởi yếu tố do di truyền.'
+
+MERGE (o1:disease {id: 'thoái_hóa_khớp_disease'})
+MERGE (o2:cause {id: 'tiền_sử_gia_đình_cause'})
+MERGE (o1)-[r86:associatedWith]->(o2)
+SET r86.text = 'Vì vậy, người có cha hoặc mẹ bị thoái hóa khớp sẽ có nguy cơ mắc bệnh cao hơn những người khác.'
+
+MERGE (o1:disease {id: 'thoái_hóa_khớp_cổ_chân_disease'})
+MERGE (o2:treatment {id: 'điều_trị_treatment'})
+MERGE (o1)-[r87:treatedBy]->(o2)
+SET r87.text = 'Nếu tình trạng thoái hóa khớp cổ chân không được điều trị, sụn có thể bị mòn hoàn toàn.'
+
+MERGE (o1:disease {id: 'hội_chứng_cứng_khớp_hallux_disease'})
+MERGE (o2:disease {id: 'thoái_hóa_khớp_cổ_chân_disease'})
+MERGE (o1)-[r88:isSymptomOf]->(o2)
+SET r88.text = 'Điều này có thể làm cho xương bàn chân của bạn dính lại với nhau gây tê cứng ngón chân cái, gọi là Hội chứng cứng khớp Hallux.'
+
+MERGE (o1:disease {id: 'hội_chứng_cứng_khớp_hallux_disease'})
+MERGE (o2:symptom {id: 'cử_động_ngón_chân_cái_symptom'})
+MERGE (o1)-[r89:affects]->(o2)
+SET r89.text = 'Tình trạng này có thể khiến việc cử động ngón chân cái khó khăn và việc đi lại cũng bị ảnh hưởng.'
+
+MERGE (o1:disease {id: 'viêm_khớp_biến_dạng_ngón_chân_cái_disease'})
+MERGE (o2:disease {id: 'hội_chứng_cứng_khớp_hallux_disease'})
+MERGE (o1)-[r90:isSymptomOf]->(o2)
+SET r90.text = 'Chứng cứng khớp Hallux có thể khiến ngón chân cái bị nghiêng về phía các ngón chân khác, gọi là viêm khớp biến dạng ngón chân cái.'
+
+MERGE (o1:symptom {id: 'đỏ__sưng_và_mất_vững_symptom'})
+MERGE (o2:disease {id: 'viêm_khớp_biến_dạng_ngón_chân_cái_disease'})
+MERGE (o1)-[r91:isSymptomOf]->(o2)
+SET r91.text = 'Người bệnh có thể bị đỏ, sưng và mất vững khi đứng, đi bộ.'
+
+MERGE (o1:symptom {id: 'nốt_chai_symptom'})
+MERGE (o2:disease {id: 'thoái_hóa_khớp_cổ_chân_disease'})
+MERGE (o1)-[r92:isSymptomOf]->(o2)
+SET r92.text = 'Các nốt chai có thể hình thành ở những nơi chịu áp lực hoặc bị cọ xát nhiều.'
+
+MERGE (o1:symptom {id: 'không_thoải_mái_khi_mang_giày_dép__đau_khi_đi_lại_symptom'})
+MERGE (o2:symptom {id: 'nốt_chai_symptom'})
+MERGE (o1)-[r93:isSymptomOf]->(o2)
+SET r93.text = 'Tình trạng này khiến người bệnh cảm thấy không thoải mái khi mang giày dép, đau khi đi lại.'
+
+MERGE (o1:treatment {id: 'bác_sĩ_treatment'})
+MERGE (o2:disease {id: 'thoái_hóa_khớp_cổ_chân_disease'})
+MERGE (o1)-[r94:diagnosedBy]->(o2)
+SET r94.text = 'Bác sĩ sẽ tiến hành kiểm tra các triệu chứng ở cổ chân của người bệnh, hỏi bệnh sử và tình trạng sức khỏe.'
+
+MERGE (o1:disease {id: 'thoái_hóa_khớp_disease'})
+MERGE (o2:test {id: 'xem_dáng_đi_test'})
+MERGE (o1)-[r95:diagnosedBy]->(o2)
+SET r95.text = 'Người bệnh cũng được yêu cầu đi lại để xem dáng đi và mức độ ảnh hưởng của tình trạng thoái hóa khớp.'
+
+MERGE (o1:treatment {id: 'bác_sĩ_treatment'})
+MERGE (o2:disease {id: 'thoái_hóa_khớp_cổ_chân_disease'})
+MERGE (o1)-[r96:diagnosedBy]->(o2)
+SET r96.text = 'Các biện pháp chẩn đoán hình ảnh cũng được chỉ định để bác sĩ có thêm thông tin về mức độ viêm khớp và/hoặc loại trừ các nguyên nhân khác có thể gây đau cổ chân.'
+
+MERGE (o1:test {id: 'chụp_x-quang_test'})
+MERGE (o2:disease {id: 'thoái_hóa_khớp_cổ_chân_disease'})
+MERGE (o1)-[r97:diagnosedBy]->(o2)
+SET r97.text = 'Chụp X-quang'
+
+MERGE (o1:symptom {id: 'thu_hẹp_không_gian_khớp_cổ_chân__mất_sụn_ở_mắt_cá_chân_và_các_gai_xương_symptom'})
+MERGE (o2:disease {id: 'thoái_hóa_khớp_cổ_chân_disease'})
+MERGE (o1)-[r98:isSymptomOf]->(o2)
+SET r98.text = 'Hình ảnh X-quang sẽ cho thấy tình trạng thu hẹp không gian khớp cổ chân, mất sụn ở mắt cá chân và các gai xương, một dấu hiệu cho thấy sự bù đắp lượng sụn bị mất bằng sự phát triển thêm của xương.'
+
+MERGE (o1:test {id: 'chụp_cộng_hưởng_từ_(mri)_test'})
+MERGE (o2:disease {id: 'thoái_hóa_khớp_cổ_chân_disease'})
+MERGE (o1)-[r99:diagnosedBy]->(o2)
+SET r99.text = 'Chụp cộng hưởng từ (MRI)'
+
+MERGE (o1:test {id: 'chụp_cộng_hưởng_từ_(mri)_test'})
+MERGE (o2:organ {id: 'mô_mềm_(dây_chằng__gân_và_cơ)_và_xương_ở_vùng_cổ_chân_organ'})
+MERGE (o1)-[r100:affects]->(o2)
+SET r100.text = 'Kết quả chụp cộng hưởng từ cung cấp hình ảnh của mô mềm (dây chằng, gân và cơ) và xương ở vùng cổ chân.'
+
+MERGE (o1:treatment {id: 'bác_sĩ_treatment'})
+MERGE (o2:disease {id: 'thoái_hóa_khớp_cổ_chân_disease'})
+MERGE (o1)-[r101:diagnosedBy]->(o2)
+SET r101.text = 'Nhờ đó, bác sĩ có thể loại trừ nguyên nhân viêm xương khớp, tổn thương dây chằng hoặc gân ở mắt cá chân.'
+
+MERGE (o1:test {id: 'xét_nghiệm_máu_test'})
+MERGE (o2:disease {id: 'thoái_hóa_khớp_cổ_chân_disease'})
+MERGE (o1)-[r102:diagnosedBy]->(o2)
+SET r102.text = 'Xét nghiệm máu'
+
+MERGE (o1:disease {id: 'thoái_hóa_khớp_cổ_chân_disease'})
+MERGE (o2:treatment {id: 'không_có_phương_pháp_nào_treatment'})
+MERGE (o1)-[r103:treatedBy]->(o2)
+SET r103.text = 'Trên thực tế, không có phương pháp nào có thể đẩy lùi tình trạng thoái hóa khớp cổ chân.'
+
+MERGE (o1:disease {id: 'người_bệnh_disease'})
+MERGE (o2:treatment {id: 'điều_trị_các_triệu_chứng_treatment'})
+MERGE (o1)-[r104:treatedBy]->(o2)
+SET r104.text = 'Tuy nhiên, người bệnh có thể được điều trị các triệu chứng, giúp giảm đau và cải thiện khả năng vận động.'
+
+MERGE (o1:disease {id: 'thoái_hóa_khớp_cổ_chân_disease'})
+MERGE (o2:treatment {id: 'kem_bôi_có_chứa_thành_phần:_capsaicin__tinh_dầu_bạc_hà_treatment'})
+MERGE (o1)-[r105:treatedBy]->(o2)
+SET r105.text = 'Dùng các loại kem bôi có chứa thành phần: capsaicin, tinh dầu bạc hà,&#8230;'
+
+MERGE (o1:disease {id: 'thoái_hóa_khớp_cổ_chân_disease'})
+MERGE (o2:cause {id: 'áp_lực_lên_cổ_chân_cause'})
+MERGE (o1)-[r106:aggravatedBy]->(o2)
+SET r106.text = 'Giảm cân để giảm áp lực lên cổ chân'
+
+MERGE (o1:disease {id: 'thoái_hóa_khớp_cổ_chân_disease'})
+MERGE (o2:lifestyle {id: 'thay_đổi_thói_quen_vận_động_lifestyle'})
+MERGE (o1)-[r107:preventedBy]->(o2)
+SET r107.text = 'Thay đổi thói quen vận động để tránh gây tổn thương khớp'
+
+MERGE (o1:disease {id: 'thoái_hóa_khớp_cổ_chân_disease'})
+MERGE (o2:treatment {id: 'tập_vật_lý_trị_liệu_treatment'})
+MERGE (o1)-[r108:treatedBy]->(o2)
+SET r108.text = 'Tập vật lý trị liệu theo hướng dẫn của các chuyên gia'
+
+MERGE (o1:disease {id: 'thoái_hóa_khớp_cổ_chân_disease'})
+MERGE (o2:treatment {id: 'nẹp__gậy_hoặc_mang_giày_chuyên_dụng_treatment'})
+MERGE (o1)-[r109:treatedBy]->(o2)
+SET r109.text = 'Sử dụng nẹp, gậy hoặc mang giày chuyên dụng'
+
+MERGE (o1:disease {id: 'thoái_hóa_khớp_cổ_chân_disease'})
+MERGE (o2:treatment {id: 'acetaminophen;_thuốc_chống_viêm_không_steroid_(nsaids;_advil__aleve)_treatment'})
+MERGE (o1)-[r110:treatedBy]->(o2)
+SET r110.text = 'Thuốc giảm đau bao gồm Acetaminophen; thuốc chống viêm không steroid (NSAIDS; Advil, Aleve)'
+
+MERGE (o1:disease {id: 'thoái_hóa_khớp_cổ_chân_disease'})
+MERGE (o2:treatment {id: 'gel_hoặc_kem_bao_gồm_nsaid_(ví_dụ_voltaren)__lidocain_(aspercreme)_và_salicylat_treatment'})
+MERGE (o1)-[r111:treatedBy]->(o2)
+SET r111.text = 'Điều trị tại chỗ bằng gel hoặc kem bao gồm NSAID (Ví dụ Voltaren), Lidocain (Aspercreme) và Salicylat'
+
+MERGE (o1:disease {id: 'thoái_hóa_khớp_cổ_chân_disease'})
+MERGE (o2:treatment {id: 'tiêm_glucocorticoid_treatment'})
+MERGE (o1)-[r112:treatedBy]->(o2)
+SET r112.text = 'Tiêm glucocorticoid giúp giảm đau nhanh và chỉ nên tiêm 3-4 lần/năm.'
+
+MERGE (o1:disease {id: 'thoái_hóa_khớp_cổ_chân_disease'})
+MERGE (o2:treatment {id: 'phẫu_thuật_treatment'})
+MERGE (o1)-[r113:treatedBy]->(o2)
+SET r113.text = 'Nếu các phương pháp dùng thuốc và không dùng thuốc không mang lại hiệu quả, khả năng vận động vẫn bị hạn chế, tình trạng đau không thuyên giảm, người bệnh có thể cần phải được phẫu thuật.'
+
+MERGE (o1:disease {id: 'thoái_hóa_khớp_cổ_chân_disease'})
+MERGE (o2:treatment {id: 'phẫu_thuật_nội_soi_treatment'})
+MERGE (o1)-[r114:treatedBy]->(o2)
+SET r114.text = 'Phẫu thuật nội soi: Phương pháp này ít được áp dụng, nhưng vẫn có thể hữu ích cho một số người bệnh.'
+
+MERGE (o1:disease {id: 'thoái_hóa_khớp_cổ_chân_disease'})
+MERGE (o2:treatment {id: 'phẫu_thuật_hợp_nhất_khớp_treatment'})
+MERGE (o1)-[r115:treatedBy]->(o2)
+SET r115.text = 'Phẫu thuật hợp nhất khớp: Phương pháp này giúp giảm đau bằng cách cố định xương ở cổ chân.'
+
+MERGE (o1:disease {id: 'thoái_hóa_khớp_cổ_chân_disease'})
+MERGE (o2:treatment {id: 'phẫu_thuật_tạo_hình_khớp_treatment'})
+MERGE (o1)-[r116:treatedBy]->(o2)
+SET r116.text = 'Phẫu thuật tạo hình khớp: Đây là phương pháp thay thế toàn bộ cổ chân, sụn và xương bị hư hỏng bằng khớp nhân tạo.'
+
+MERGE (o1:disease {id: 'thoái_hóa_disease'})
+MERGE (o2:cause {id: 'quá_trình_tự_nhiên_của_cơ_thể_cause'})
+MERGE (o1)-[r117:relatedTo]->(o2)
+SET r117.text = 'Thoái hóa là một quá trình tự nhiên của cơ thể.'
+
+MERGE (o1:disease {id: 'thoái_hóa_khớp_disease'})
+MERGE (o2:lifestyle {id: 'xây_dựng_lối_sống_khoa_học_lifestyle'})
+MERGE (o1)-[r118:preventedBy]->(o2)
+SET r118.text = 'Nhưng nếu chúng ta xây dựng lối sống khoa học, tuân thủ những hướng dẫn sau đây của các chuyên gia cơ xương khớp, tình trạng thoái hóa khớp vẫn có thể được kiểm soát một cách hiệu quả:'
+
+MERGE (o1:disease {id: 'thoái_hóa_khớp_disease'})
+MERGE (o2:lifestyle {id: 'mang_vác_vật_nặng_quá_sức_lifestyle'})
+MERGE (o1)-[r119:preventedBy]->(o2)
+SET r119.text = 'Tránh mang vác vật nặng quá sức'
+
+MERGE (o1:disease {id: 'thoái_hóa_khớp_disease'})
+MERGE (o2:lifestyle {id: 'vận_động_cường_độ_cao_khi_chưa_khởi_động_hoặc_không_có_dụng_cụ_bảo_vệ_lifestyle'})
+MERGE (o1)-[r120:preventedBy]->(o2)
+SET r120.text = 'Tránh vận động cường độ cao khi chưa khởi động hoặc không có dụng cụ bảo vệ'
+
+MERGE (o1:disease {id: 'thoái_hóa_khớp_disease'})
+MERGE (o2:lifestyle {id: 'chọn_giày_dép_đúng_kích_thước__độ_mềm__tránh_mang_giày_cao_gót_quá_lâu_lifestyle'})
+MERGE (o1)-[r121:preventedBy]->(o2)
+SET r121.text = 'Chọn giày dép đúng kích thước, độ mềm, tránh mang giày cao gót quá lâu'
+
+MERGE (o1:disease {id: 'thoái_hóa_khớp_disease'})
+MERGE (o2:lifestyle {id: 'vận_động_thường_xuyên_lifestyle'})
+MERGE (o1)-[r122:preventedBy]->(o2)
+SET r122.text = 'Vận động thường xuyên, phù hợp với thể lực và tình trạng sức khỏe'
+
+MERGE (o1:disease {id: 'thoái_hóa_khớp_disease'})
+MERGE (o2:lifestyle {id: 'chế_độ_dinh_dưỡng_khoa_học_lifestyle'})
+MERGE (o1)-[r123:preventedBy]->(o2)
+SET r123.text = 'Xây dựng chế độ dinh dưỡng khoa học, với đầy đủ vitamin và khoáng chất'
+
+MERGE (o1:disease {id: 'thoái_hóa_khớp_disease'})
+MERGE (o2:lifestyle {id: 'duy_trì_cân_nặng_ở_mức_hợp_lý_lifestyle'})
+MERGE (o1)-[r124:preventedBy]->(o2)
+SET r124.text = 'Duy trì cân nặng ở mức hợp lý'
+
+MERGE (o1:disease {id: 'thoái_hóa_ở_vùng_cổ_chân_disease'})
+MERGE (o2:lifestyle {id: 'tuân_thủ_các_biện_pháp_phòng_ngừa_lifestyle'})
+MERGE (o1)-[r125:preventedBy]->(o2)
+SET r125.text = 'Do đó, mỗi người nên tuân thủ các biện pháp phòng ngừa thoái hóa ở vùng cổ chân.'
+
+MERGE (o1:disease {id: 'thoái_hóa_ở_vùng_cổ_chân_disease'})
+MERGE (o2:treatment {id: 'các_cơ_sở_y_tế_chuyên_khoa_treatment'})
+MERGE (o1)-[r126:diagnosedBy]->(o2)
+SET r126.text = 'Khi có các triệu chứng liên quan, nên đến các cơ sở y tế chuyên khoa càng sớm càng tốt để được chẩn đoán và điều trị kịp thời, hạn chế nguy cơ dẫn đến biến chứng.'
+
+MERGE (o1:disease {id: 'thoái_hóa_ở_vùng_cổ_chân_disease'})
+MERGE (o2:treatment {id: 'bác_sĩ_treatment'})
+MERGE (o1)-[r127:treatedBy]->(o2)
+SET r127.text = 'Trong quá trình điều trị, cần phối hợp chặt chẽ với bác sĩ, nghiêm túc tuân thủ các chỉ định để đạt được mục tiêu điều trị'
+
+MERGE (o1:disease {id: 'thoái_hóa_ở_vùng_cổ_chân_disease'})
+MERGE (o2:treatment {id: 'trung_tâm_chấn_thương_chỉnh_hình__hệ_thống_bvđk_tâm_anh_treatment'})
+MERGE (o1)-[r128:treatedBy]->(o2)
+SET r128.text = 'Trung tâm Chấn thương chỉnh hình, Hệ thống BVĐK Tâm Anh, là nơi quy tụ đội ngũ chuyên gia đầu ngành, bác sĩ ngoại khoa giàu kinh nghiệm, tận tâm, nhiệt tình như: TTND.GS.TS.BS Nguyễn Việt Tiến; PGS.TS.BS Đặng Hồng Hoa; TS.BS Tăng Hà Nam Anh; ThS.BS Trần Anh Vũ; BS.CKI Trần Xuân Anh, ThS.BS Lê Đình Khoa, TS.BS Đỗ Tiến Dũng; TS.BS.CKII Vũ Hữu Dũng…'
+
+MERGE (o1:disease {id: 'thoái_hóa_ở_vùng_cổ_chân_disease'})
+MERGE (o2:treatment {id: 'trung_tâm_chấn_thương_chỉnh_hình__hệ_thống_bvđk_tâm_anh_treatment'})
+MERGE (o1)-[r129:treatedBy]->(o2)
+SET r129.text = 'Đây cũng là một trong những đơn vị tiên phong trong việc chẩn đoán và điều trị các bệnh về cơ xương khớp với kỹ thuật hiện đại theo phác đồ cập nhật quốc tế.'
+
+MERGE (o1:disease {id: 'thoái_hóa_ở_vùng_cổ_chân_disease'})
+MERGE (o2:test {id: 'máy_chụp_ct_768_lát_cắt_somatom_drive__máy_cộng_hưởng_từ_thế_hệ_mới_magnetom_amira_biomatrix__robot_artis_pheno__máy_đo_mật_độ_xương__máy_siêu_âm…;_hệ_thống_kính_vi_phẫu_thuật_opmi_vario_700_zeiss__bàn_mổ_meera-maquet…_test'})
+MERGE (o1)-[r130:diagnosedBy]->(o2)
+SET r130.text = 'Bệnh viện còn được trang bị hệ thống máy móc, trang thiết bị chẩn đoán hình ảnh hiện đại như: máy chụp CT 768 lát cắt Somatom Drive, máy cộng hưởng từ thế hệ mới Magnetom Amira BioMatrix, robot Artis Pheno, máy đo mật độ xương, máy siêu âm…; hệ thống kính vi phẫu thuật Opmi Vario 700 Zeiss, bàn mổ Meera-Maquet… để có thể phát hiện sớm các tổn thương và điều trị hiệu quả các bệnh lý về cơ xương khớp…'

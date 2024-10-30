@@ -1,0 +1,922 @@
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_disease'})
+MERGE (o2:symptom {id: 'nhú_gai_kết_mạc_sụn_mi_trên_symptom'})
+MERGE (o1)-[r0:isSymptomOf]->(o2)
+SET r0.text = '40% dân số bị viêm kết mạc mắt. Viêm kết mạc có thể gây ra các biến chứng như: nhú gai kết mạc sụn mi trên, gây loét giác mạc, biến dạng bờ mi, lông quặm, khô mắt, thậm chí có thể dẫn đến mù lòa.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_disease'})
+MERGE (o2:symptom {id: 'loét_giác_mạc_symptom'})
+MERGE (o1)-[r1:isSymptomOf]->(o2)
+SET r1.text = '40% dân số bị viêm kết mạc mắt. Viêm kết mạc có thể gây ra các biến chứng như: nhú gai kết mạc sụn mi trên, gây loét giác mạc, biến dạng bờ mi, lông quặm, khô mắt, thậm chí có thể dẫn đến mù lòa.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_disease'})
+MERGE (o2:symptom {id: 'biến_dạng_bờ_mi_symptom'})
+MERGE (o1)-[r2:isSymptomOf]->(o2)
+SET r2.text = '40% dân số bị viêm kết mạc mắt. Viêm kết mạc có thể gây ra các biến chứng như: nhú gai kết mạc sụn mi trên, gây loét giác mạc, biến dạng bờ mi, lông quặm, khô mắt, thậm chí có thể dẫn đến mù lòa.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_disease'})
+MERGE (o2:symptom {id: 'lông_quặm_symptom'})
+MERGE (o1)-[r3:isSymptomOf]->(o2)
+SET r3.text = '40% dân số bị viêm kết mạc mắt. Viêm kết mạc có thể gây ra các biến chứng như: nhú gai kết mạc sụn mi trên, gây loét giác mạc, biến dạng bờ mi, lông quặm, khô mắt, thậm chí có thể dẫn đến mù lòa.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_disease'})
+MERGE (o2:symptom {id: 'khô_mắt_symptom'})
+MERGE (o1)-[r4:isSymptomOf]->(o2)
+SET r4.text = '40% dân số bị viêm kết mạc mắt. Viêm kết mạc có thể gây ra các biến chứng như: nhú gai kết mạc sụn mi trên, gây loét giác mạc, biến dạng bờ mi, lông quặm, khô mắt, thậm chí có thể dẫn đến mù lòa.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_disease'})
+MERGE (o2:symptom {id: 'mù_lòa_symptom'})
+MERGE (o1)-[r5:isSymptomOf]->(o2)
+SET r5.text = '40% dân số bị viêm kết mạc mắt. Viêm kết mạc có thể gây ra các biến chứng như: nhú gai kết mạc sụn mi trên, gây loét giác mạc, biến dạng bờ mi, lông quặm, khô mắt, thậm chí có thể dẫn đến mù lòa.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_mắt_disease'})
+MERGE (o2:organ {id: 'mắt_organ'})
+MERGE (o1)-[r6:relatedTo]->(o2)
+SET r6.text = 'Vậy viêm kết mạc mắt là gì? Nguyên nhân, triệu chứng và phòng ngừa viêm kết mạc mắt ra sao?'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_disease'})
+MERGE (o2:organ {id: 'tròng_trắng_của_mắt_organ'})
+MERGE (o1)-[r7:locatedIn]->(o2)
+SET r7.text = 'Viêm kết mạc là tình trạng viêm lớp mô mỏng trong suốt nằm trên phần tròng trắng của mắt và lót bên trong mí mắt (kết mạc).'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_disease'})
+MERGE (o2:organ {id: 'mí_mắt_organ'})
+MERGE (o1)-[r8:locatedIn]->(o2)
+SET r8.text = 'Viêm kết mạc là tình trạng viêm lớp mô mỏng trong suốt nằm trên phần tròng trắng của mắt và lót bên trong mí mắt (kết mạc).'
+
+MERGE (o1:organ {id: 'mạch_máu_nhỏ_organ'})
+MERGE (o2:organ {id: 'kết_mạc_organ'})
+MERGE (o1)-[r9:locatedIn]->(o2)
+SET r9.text = 'Khi các mạch máu nhỏ trong kết mạc sưng lên và bị kích thích sẽ khiến cho tròng trắng mắt có màu đỏ hoặc hồng.'
+
+MERGE (o1:organ {id: 'kết_mạc_organ'})
+MERGE (o2:symptom {id: 'tròng_trắng_mắt_có_màu_đỏ_hoặc_hồng_symptom'})
+MERGE (o1)-[r10:isSymptomOf]->(o2)
+SET r10.text = 'Khi các mạch máu nhỏ trong kết mạc sưng lên và bị kích thích sẽ khiến cho tròng trắng mắt có màu đỏ hoặc hồng.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_mắt_disease'})
+MERGE (o2:symptom {id: 'khó_chịu_symptom'})
+MERGE (o1)-[r11:isSymptomOf]->(o2)
+SET r11.text = 'Viêm kết mạc mắt có thể gây khó chịu, ít biến chứng nếu đi điều trị sớm.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_mắt_disease'})
+MERGE (o2:treatment {id: 'điều_trị_sớm_treatment'})
+MERGE (o1)-[r12:treatedBy]->(o2)
+SET r12.text = 'Viêm kết mạc mắt có thể gây khó chịu, ít biến chứng nếu đi điều trị sớm.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_disease'})
+MERGE (o2:symptom {id: 'lây_lan_symptom'})
+MERGE (o1)-[r13:associatedWith]->(o2)
+SET r13.text = 'Bệnh rất dễ lây lan nên việc chẩn đoán sớm và áp dụng các biện pháp phòng ngừa nhất định có thể giúp hạn chế bệnh phát tán.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_disease'})
+MERGE (o2:treatment {id: 'chẩn_đoán_sớm_treatment'})
+MERGE (o1)-[r14:treatedBy]->(o2)
+SET r14.text = 'Bệnh rất dễ lây lan nên việc chẩn đoán sớm và áp dụng các biện pháp phòng ngừa nhất định có thể giúp hạn chế bệnh phát tán.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_disease'})
+MERGE (o2:treatment {id: 'phòng_ngừa_treatment'})
+MERGE (o1)-[r15:treatedBy]->(o2)
+SET r15.text = 'Bệnh rất dễ lây lan nên việc chẩn đoán sớm và áp dụng các biện pháp phòng ngừa nhất định có thể giúp hạn chế bệnh phát tán.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_truyền_nhiễm_disease'})
+MERGE (o2:cause {id: 'virus_cause'})
+MERGE (o1)-[r16:causedBy]->(o2)
+SET r16.text = 'Viêm kết mạc truyền nhiễm phổ biến nhất là viêm kết mạc do virus hoặc vi khuẩn.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_truyền_nhiễm_disease'})
+MERGE (o2:cause {id: 'vi_khuẩn_cause'})
+MERGE (o1)-[r17:causedBy]->(o2)
+SET r17.text = 'Viêm kết mạc truyền nhiễm phổ biến nhất là viêm kết mạc do virus hoặc vi khuẩn.'
+
+MERGE (o1:symptom {id: 'đau_mắt_đỏ_symptom'})
+MERGE (o2:cause {id: 'adenovirus_cause'})
+MERGE (o1)-[r18:causedBy]->(o2)
+SET r18.text = 'Hầu hết các trường hợp đau mắt đỏ là do adenovirus gây ra nhưng cũng có thể do các loại virus khác như virus herpes simplex và virus varicella-zoster.'
+
+MERGE (o1:symptom {id: 'đau_mắt_đỏ_symptom'})
+MERGE (o2:cause {id: 'virus_herpes_simplex_cause'})
+MERGE (o1)-[r19:causedBy]->(o2)
+SET r19.text = 'Hầu hết các trường hợp đau mắt đỏ là do adenovirus gây ra nhưng cũng có thể do các loại virus khác như virus herpes simplex và virus varicella-zoster.'
+
+MERGE (o1:symptom {id: 'đau_mắt_đỏ_symptom'})
+MERGE (o2:cause {id: 'virus_varicella-zoster_cause'})
+MERGE (o1)-[r20:causedBy]->(o2)
+SET r20.text = 'Hầu hết các trường hợp đau mắt đỏ là do adenovirus gây ra nhưng cũng có thể do các loại virus khác như virus herpes simplex và virus varicella-zoster.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_dị_ứng_disease'})
+MERGE (o2:cause {id: 'dị_vật_cause'})
+MERGE (o1)-[r21:causedBy]->(o2)
+SET r21.text = 'Ngoài ra, còn có viêm kết mạc dị ứng do dị vật, khói, bụi, nước hoa, ô nhiễm môi trường…'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_dị_ứng_disease'})
+MERGE (o2:cause {id: 'khói_cause'})
+MERGE (o1)-[r22:causedBy]->(o2)
+SET r22.text = 'Ngoài ra, còn có viêm kết mạc dị ứng do dị vật, khói, bụi, nước hoa, ô nhiễm môi trường…'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_dị_ứng_disease'})
+MERGE (o2:cause {id: 'bụi_cause'})
+MERGE (o1)-[r23:causedBy]->(o2)
+SET r23.text = 'Ngoài ra, còn có viêm kết mạc dị ứng do dị vật, khói, bụi, nước hoa, ô nhiễm môi trường…'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_dị_ứng_disease'})
+MERGE (o2:cause {id: 'nước_hoa_cause'})
+MERGE (o1)-[r24:causedBy]->(o2)
+SET r24.text = 'Ngoài ra, còn có viêm kết mạc dị ứng do dị vật, khói, bụi, nước hoa, ô nhiễm môi trường…'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_dị_ứng_disease'})
+MERGE (o2:cause {id: 'ô_nhiễm_môi_trường_cause'})
+MERGE (o1)-[r25:causedBy]->(o2)
+SET r25.text = 'Ngoài ra, còn có viêm kết mạc dị ứng do dị vật, khói, bụi, nước hoa, ô nhiễm môi trường…'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_do_virus_và_vi_khuẩn_disease'})
+MERGE (o2:disease {id: 'cảm_lạnh_disease'})
+MERGE (o1)-[r26:associatedWith]->(o2)
+SET r26.text = 'Viêm kết mạc do virus và vi khuẩn đều có thể xảy ra cùng với cảm lạnh hoặc các triệu chứng của nhiễm trùng đường hô hấp, chẳng hạn như đau họng.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_do_virus_và_vi_khuẩn_disease'})
+MERGE (o2:disease {id: 'nhiễm_trùng_đường_hô_hấp_disease'})
+MERGE (o1)-[r27:associatedWith]->(o2)
+SET r27.text = 'Viêm kết mạc do virus và vi khuẩn đều có thể xảy ra cùng với cảm lạnh hoặc các triệu chứng của nhiễm trùng đường hô hấp, chẳng hạn như đau họng.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_do_virus_và_vi_khuẩn_disease'})
+MERGE (o2:symptom {id: 'đau_họng_symptom'})
+MERGE (o1)-[r28:isSymptomOf]->(o2)
+SET r28.text = 'Viêm kết mạc do virus và vi khuẩn đều có thể xảy ra cùng với cảm lạnh hoặc các triệu chứng của nhiễm trùng đường hô hấp, chẳng hạn như đau họng.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_do_vi_khuẩn_disease'})
+MERGE (o2:lifestyle {id: 'kính_áp_tròng_không_sạch_sẽ_lifestyle'})
+MERGE (o1)-[r29:causedBy]->(o2)
+SET r29.text = 'Đeo kính áp tròng không sạch sẽ cũng có thể dẫn đến tình trạng viêm kết mạc do vi khuẩn.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_do_virus_và_vi_khuẩn_disease'})
+MERGE (o2:organ {id: 'mắt_organ'})
+MERGE (o1)-[r30:affects]->(o2)
+SET r30.text = 'Cả hai loại này có thể ảnh hưởng đến một hoặc hai mắt.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_do_virus_và_vi_khuẩn_disease'})
+MERGE (o2:symptom {id: 'truyền_nhiễm_symptom'})
+MERGE (o1)-[r31:associatedWith]->(o2)
+SET r31.text = 'Cả 2 loại đều rất dễ truyền nhiễm thông qua tiếp xúc trực tiếp hoặc gián tiếp với dịch tiết từ mắt của người bị nhiễm bệnh.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_dị_ứng_disease'})
+MERGE (o2:cause {id: 'phấn_hoa_cause'})
+MERGE (o1)-[r32:causedBy]->(o2)
+SET r32.text = 'Viêm kết mạc dị ứng xảy ra khi mắt tiếp xúc với chất gây dị ứng như phấn hoa.'
+
+MERGE (o1:organ {id: 'cơ_thể_organ'})
+MERGE (o2:treatment {id: 'immunoglobulin_e_(ige)_treatment'})
+MERGE (o1)-[r33:treatedBy]->(o2)
+SET r33.text = 'Để chống lại các tác nhân gây dị ứng, cơ thể sẽ sinh ra một kháng thể gọi là immunoglobulin E (IgE).'
+
+MERGE (o1:treatment {id: 'ige_treatment'})
+MERGE (o2:organ {id: 'niêm_mạc_mắt_organ'})
+MERGE (o1)-[r34:affects]->(o2)
+SET r34.text = 'IgE sẽ kích hoạt các tế bào đặc biệt trong niêm mạc mắt và đường hô hấp để giải phóng các chất gây viêm bao gồm histamine.'
+
+MERGE (o1:treatment {id: 'ige_treatment'})
+MERGE (o2:organ {id: 'đường_hô_hấp_organ'})
+MERGE (o1)-[r35:affects]->(o2)
+SET r35.text = 'IgE sẽ kích hoạt các tế bào đặc biệt trong niêm mạc mắt và đường hô hấp để giải phóng các chất gây viêm bao gồm histamine.'
+
+MERGE (o1:cause {id: 'histamin_cause'})
+MERGE (o2:symptom {id: 'đỏ_mắt_symptom'})
+MERGE (o1)-[r36:isSymptomOf]->(o2)
+SET r36.text = 'Việc cơ thể giải phóng histamin có thể tạo ra một số triệu chứng dị ứng như là đỏ mắt.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_dị_ứng_disease'})
+MERGE (o2:symptom {id: 'không_lây_nhiễm_symptom'})
+MERGE (o1)-[r37:associatedWith]->(o2)
+SET r37.text = 'Loại viêm kết mạc này không lây nhiễm và hầu hết các trường hợp đều có thể được kiểm soát bằng thuốc nhỏ mắt chống dị ứng.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_dị_ứng_disease'})
+MERGE (o2:treatment {id: 'thuốc_nhỏ_mắt_chống_dị_ứng_treatment'})
+MERGE (o1)-[r38:treatedBy]->(o2)
+SET r38.text = 'Loại viêm kết mạc này không lây nhiễm và hầu hết các trường hợp đều có thể được kiểm soát bằng thuốc nhỏ mắt chống dị ứng.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_mắt_disease'})
+MERGE (o2:cause {id: 'hóa_chất_bắn_vào_mắt_cause'})
+MERGE (o1)-[r39:causedBy]->(o2)
+SET r39.text = 'Viêm kết mạc mắt cũng có thể liên quan đến các kích ứng do hóa chất bắn vào mắt hoặc dị vật rơi vào mắt.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_mắt_disease'})
+MERGE (o2:cause {id: 'dị_vật_rơi_vào_mắt_cause'})
+MERGE (o1)-[r40:causedBy]->(o2)
+SET r40.text = 'Viêm kết mạc mắt cũng có thể liên quan đến các kích ứng do hóa chất bắn vào mắt hoặc dị vật rơi vào mắt.'
+
+MERGE (o1:organ {id: 'mắt_organ'})
+MERGE (o2:symptom {id: 'đỏ_symptom'})
+MERGE (o1)-[r41:isSymptomOf]->(o2)
+SET r41.text = 'Vì vậy, mắt sẽ tạo ra cơ chế báo động, xuất hiện tình trạng đỏ và chảy nước mắt để để rửa sạch hóa chất hoặc dị vật gây kích ứng.'
+
+MERGE (o1:organ {id: 'mắt_organ'})
+MERGE (o2:symptom {id: 'chảy_nước_mắt_symptom'})
+MERGE (o1)-[r42:isSymptomOf]->(o2)
+SET r42.text = 'Vì vậy, mắt sẽ tạo ra cơ chế báo động, xuất hiện tình trạng đỏ và chảy nước mắt để để rửa sạch hóa chất hoặc dị vật gây kích ứng.'
+
+MERGE (o1:symptom {id: 'chảy_nước_mắt_symptom'})
+MERGE (o2:symptom {id: 'tiết_dịch_nhầy_symptom'})
+MERGE (o1)-[r43:associatedWith]->(o2)
+SET r43.text = 'Các triệu chứng có thể bao gồm chảy nước mắt và tiết dịch nhầy thường tự khỏi trong 24 giờ.'
+
+MERGE (o1:symptom {id: 'chảy_nước_mắt_symptom'})
+MERGE (o2:treatment {id: 'tự_khỏi_treatment'})
+MERGE (o1)-[r44:treatedBy]->(o2)
+SET r44.text = 'Các triệu chứng có thể bao gồm chảy nước mắt và tiết dịch nhầy thường tự khỏi trong 24 giờ.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_mắt_disease'})
+MERGE (o2:treatment {id: 'bệnh_viện_treatment'})
+MERGE (o1)-[r45:treatedBy]->(o2)
+SET r45.text = 'Nếu việc làm sạch bằng nước không giúp kiểm soát các triệu chứng hoặc gặp trường hợp hóa chất tiếp xúc với mắt là chất ăn da như dung dịch kiềm, hãy đến ngay bệnh viện gần nhất hoặc bác sĩ chuyên khoa mắt.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_mắt_disease'})
+MERGE (o2:treatment {id: 'bác_sĩ_chuyên_khoa_mắt_treatment'})
+MERGE (o1)-[r46:treatedBy]->(o2)
+SET r46.text = 'Nếu việc làm sạch bằng nước không giúp kiểm soát các triệu chứng hoặc gặp trường hợp hóa chất tiếp xúc với mắt là chất ăn da như dung dịch kiềm, hãy đến ngay bệnh viện gần nhất hoặc bác sĩ chuyên khoa mắt.'
+
+MERGE (o1:cause {id: 'hóa_chất_văng_vào_mắt_cause'})
+MERGE (o2:symptom {id: 'thương_tật_vĩnh_viễn_symptom'})
+MERGE (o1)-[r47:isSymptomOf]->(o2)
+SET r47.text = 'Hóa chất văng vào mắt có thể gây thương tật vĩnh viễn cho mắt.'
+
+MERGE (o1:cause {id: 'hóa_chất_văng_vào_mắt_cause'})
+MERGE (o2:organ {id: 'mắt_organ'})
+MERGE (o1)-[r48:affects]->(o2)
+SET r48.text = 'Hóa chất văng vào mắt có thể gây thương tật vĩnh viễn cho mắt.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_mắt_disease'})
+MERGE (o2:cause {id: 'nhiều_nguyên_nhân_cause'})
+MERGE (o1)-[r49:causedBy]->(o2)
+SET r49.text = 'Có rất nhiều nguyên nhân viêm kết mạc mắt, trong đó cũng xuất hiện muôn hình vạn trạng biểu hiện.'
+
+MERGE (o1:cause {id: 'nhiễm_khuẩn_cause'})
+MERGE (o2:cause {id: 'côn_trùng_cause'})
+MERGE (o1)-[r50:causedBy]->(o2)
+SET r50.text = 'Các nguyên nhân nhiễm khuẩn thường bắt đầu từ côn trùng, tiếp xúc trực tiếp với người khác, kém vệ sinh (chạm vào mắt bằng tay không sạch) hoặc sử dụng đồ trang điểm mắt và kem dưỡng nhiễm khuẩn cũng có thể gây nhiễm trùng.'
+
+MERGE (o1:cause {id: 'nhiễm_khuẩn_cause'})
+MERGE (o2:cause {id: 'tiếp_xúc_trực_tiếp_với_người_khác_cause'})
+MERGE (o1)-[r51:causedBy]->(o2)
+SET r51.text = 'Các nguyên nhân nhiễm khuẩn thường bắt đầu từ côn trùng, tiếp xúc trực tiếp với người khác, kém vệ sinh (chạm vào mắt bằng tay không sạch) hoặc sử dụng đồ trang điểm mắt và kem dưỡng nhiễm khuẩn cũng có thể gây nhiễm trùng.'
+
+MERGE (o1:cause {id: 'nhiễm_khuẩn_cause'})
+MERGE (o2:cause {id: 'kém_vệ_sinh_cause'})
+MERGE (o1)-[r52:causedBy]->(o2)
+SET r52.text = 'Các nguyên nhân nhiễm khuẩn thường bắt đầu từ côn trùng, tiếp xúc trực tiếp với người khác, kém vệ sinh (chạm vào mắt bằng tay không sạch) hoặc sử dụng đồ trang điểm mắt và kem dưỡng nhiễm khuẩn cũng có thể gây nhiễm trùng.'
+
+MERGE (o1:cause {id: 'nhiễm_khuẩn_cause'})
+MERGE (o2:cause {id: 'sử_dụng_đồ_trang_điểm_mắt_và_kem_dưỡng_nhiễm_khuẩn_cause'})
+MERGE (o1)-[r53:causedBy]->(o2)
+SET r53.text = 'Các nguyên nhân nhiễm khuẩn thường bắt đầu từ côn trùng, tiếp xúc trực tiếp với người khác, kém vệ sinh (chạm vào mắt bằng tay không sạch) hoặc sử dụng đồ trang điểm mắt và kem dưỡng nhiễm khuẩn cũng có thể gây nhiễm trùng.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_do_vi_khuẩn_disease'})
+MERGE (o2:lifestyle {id: 'dùng_chung_đồ_trang_điểm_và_đồ_đạc_cá_nhân_lifestyle'})
+MERGE (o1)-[r54:causedBy]->(o2)
+SET r54.text = 'Việc dùng chung đồ trang điểm và đồ đạc cá nhân như kính áp tròng cũng có thể dẫn đến tính trạng viêm kết mạc do vi khuẩn.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_disease'})
+MERGE (o2:cause {id: 'vi_khuẩn_tụ_cầu_cause'})
+MERGE (o1)-[r55:causedBy]->(o2)
+SET r55.text = 'Có thể do vi khuẩn tụ cầu hoặc liên cầu gây ra:
+Staphylococcus aureus, Streptococcus pneumoniae, Haemophilus influenzae, Moraxella catarrhalis,
+hoặc ít phổ biến hơn như
+Chlamydia trachomatis
+và
+Neisseria gonorrhoeae.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_disease'})
+MERGE (o2:cause {id: 'vi_khuẩn_liên_cầu_cause'})
+MERGE (o1)-[r56:causedBy]->(o2)
+SET r56.text = 'Có thể do vi khuẩn tụ cầu hoặc liên cầu gây ra:
+Staphylococcus aureus, Streptococcus pneumoniae, Haemophilus influenzae, Moraxella catarrhalis,
+hoặc ít phổ biến hơn như
+Chlamydia trachomatis
+và
+Neisseria gonorrhoeae.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_disease'})
+MERGE (o2:cause {id: 'staphylococcus_aureus_cause'})
+MERGE (o1)-[r57:causedBy]->(o2)
+SET r57.text = 'Có thể do vi khuẩn tụ cầu hoặc liên cầu gây ra:
+Staphylococcus aureus, Streptococcus pneumoniae, Haemophilus influenzae, Moraxella catarrhalis,
+hoặc ít phổ biến hơn như
+Chlamydia trachomatis
+và
+Neisseria gonorrhoeae.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_disease'})
+MERGE (o2:cause {id: 'streptococcus_pneumoniae_cause'})
+MERGE (o1)-[r58:causedBy]->(o2)
+SET r58.text = 'Có thể do vi khuẩn tụ cầu hoặc liên cầu gây ra:
+Staphylococcus aureus, Streptococcus pneumoniae, Haemophilus influenzae, Moraxella catarrhalis,
+hoặc ít phổ biến hơn như
+Chlamydia trachomatis
+và
+Neisseria gonorrhoeae.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_disease'})
+MERGE (o2:cause {id: 'haemophilus_influenzae_cause'})
+MERGE (o1)-[r59:causedBy]->(o2)
+SET r59.text = 'Có thể do vi khuẩn tụ cầu hoặc liên cầu gây ra:
+Staphylococcus aureus, Streptococcus pneumoniae, Haemophilus influenzae, Moraxella catarrhalis,
+hoặc ít phổ biến hơn như
+Chlamydia trachomatis
+và
+Neisseria gonorrhoeae.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_disease'})
+MERGE (o2:cause {id: 'moraxella_catarrhalis_cause'})
+MERGE (o1)-[r60:causedBy]->(o2)
+SET r60.text = 'Có thể do vi khuẩn tụ cầu hoặc liên cầu gây ra:
+Staphylococcus aureus, Streptococcus pneumoniae, Haemophilus influenzae, Moraxella catarrhalis,
+hoặc ít phổ biến hơn như
+Chlamydia trachomatis
+và
+Neisseria gonorrhoeae.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_disease'})
+MERGE (o2:cause {id: 'chlamydia_trachomatis_cause'})
+MERGE (o1)-[r61:causedBy]->(o2)
+SET r61.text = 'Có thể do vi khuẩn tụ cầu hoặc liên cầu gây ra:
+Staphylococcus aureus, Streptococcus pneumoniae, Haemophilus influenzae, Moraxella catarrhalis,
+hoặc ít phổ biến hơn như
+Chlamydia trachomatis
+và
+Neisseria gonorrhoeae.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_disease'})
+MERGE (o2:cause {id: 'neisseria_gonorrhoeae_cause'})
+MERGE (o1)-[r62:causedBy]->(o2)
+SET r62.text = 'Có thể do vi khuẩn tụ cầu hoặc liên cầu gây ra:
+Staphylococcus aureus, Streptococcus pneumoniae, Haemophilus influenzae, Moraxella catarrhalis,
+hoặc ít phổ biến hơn như
+Chlamydia trachomatis
+và
+Neisseria gonorrhoeae.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_disease'})
+MERGE (o2:organ {id: 'trẻ_em_organ'})
+MERGE (o1)-[r63:affects]->(o2)
+SET r63.text = 'Xuất hiện ở trẻ em nhiều hơn ở người lớn.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_disease'})
+MERGE (o2:organ {id: 'người_lớn_organ'})
+MERGE (o1)-[r64:affects]->(o2)
+SET r64.text = 'Xuất hiện ở trẻ em nhiều hơn ở người lớn.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_disease'})
+MERGE (o2:lifestyle {id: 'tháng_12_đến_tháng_4_lifestyle'})
+MERGE (o1)-[r65:associatedWith]->(o2)
+SET r65.text = 'Thường xảy ra từ tháng 12 đến tháng 4 hàng năm.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_disease'})
+MERGE (o2:symptom {id: 'lây_lan_dễ_dàng_symptom'})
+MERGE (o1)-[r66:associatedWith]->(o2)
+SET r66.text = 'Có thể lây lan dễ dàng, đặc biệt là với số lượng vi khuẩn lớn trong một số môi trường nhất định.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_disease'})
+MERGE (o2:symptom {id: 'dịch_tiết_từ_mắt_đặc_symptom'})
+MERGE (o1)-[r67:isSymptomOf]->(o2)
+SET r67.text = 'Dịch tiết từ mắt đặc (mủ) dẫn đến việc mí mắt bị dính vào nhau.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_disease'})
+MERGE (o2:symptom {id: 'mí_mắt_bị_dính_vào_nhau_symptom'})
+MERGE (o1)-[r68:isSymptomOf]->(o2)
+SET r68.text = 'Dịch tiết từ mắt đặc (mủ) dẫn đến việc mí mắt bị dính vào nhau.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_disease'})
+MERGE (o2:disease {id: 'viêm_tai_giữa_disease'})
+MERGE (o1)-[r69:associatedWith]->(o2)
+SET r69.text = 'Đôi khi xảy ra cùng với viêm tai giữa.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_disease'})
+MERGE (o2:cause {id: 'vi_rút_cảm_lạnh_thông_thường_cause'})
+MERGE (o1)-[r70:causedBy]->(o2)
+SET r70.text = 'Do vi rút cảm lạnh thông thường gây ra và truyền nhiễm khi người bệnh ho hoặc hắt hơi.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_disease'})
+MERGE (o2:symptom {id: 'ho_symptom'})
+MERGE (o1)-[r71:associatedWith]->(o2)
+SET r71.text = 'Do vi rút cảm lạnh thông thường gây ra và truyền nhiễm khi người bệnh ho hoặc hắt hơi.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_disease'})
+MERGE (o2:symptom {id: 'hắt_hơi_symptom'})
+MERGE (o1)-[r72:associatedWith]->(o2)
+SET r72.text = 'Do vi rút cảm lạnh thông thường gây ra và truyền nhiễm khi người bệnh ho hoặc hắt hơi.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_do_virus_disease'})
+MERGE (o2:cause {id: 'virus_cause'})
+MERGE (o1)-[r73:causedBy]->(o2)
+SET r73.text = 'Viêm kết mạc do virus cũng có thể xảy ra khi virus lây lan dọc theo màng nhầy của cơ thể, kết nối phổi, cổ họng, mũi, ống dẫn nước mắt và kết mạc.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_do_virus_disease'})
+MERGE (o2:organ {id: 'màng_nhầy_organ'})
+MERGE (o1)-[r74:affects]->(o2)
+SET r74.text = 'Viêm kết mạc do virus cũng có thể xảy ra khi virus lây lan dọc theo màng nhầy của cơ thể, kết nối phổi, cổ họng, mũi, ống dẫn nước mắt và kết mạc.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_do_virus_disease'})
+MERGE (o2:organ {id: 'phổi_organ'})
+MERGE (o1)-[r75:affects]->(o2)
+SET r75.text = 'Viêm kết mạc do virus cũng có thể xảy ra khi virus lây lan dọc theo màng nhầy của cơ thể, kết nối phổi, cổ họng, mũi, ống dẫn nước mắt và kết mạc.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_do_virus_disease'})
+MERGE (o2:organ {id: 'cổ_họng_organ'})
+MERGE (o1)-[r76:affects]->(o2)
+SET r76.text = 'Viêm kết mạc do virus cũng có thể xảy ra khi virus lây lan dọc theo màng nhầy của cơ thể, kết nối phổi, cổ họng, mũi, ống dẫn nước mắt và kết mạc.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_do_virus_disease'})
+MERGE (o2:organ {id: 'mũi_organ'})
+MERGE (o1)-[r77:affects]->(o2)
+SET r77.text = 'Viêm kết mạc do virus cũng có thể xảy ra khi virus lây lan dọc theo màng nhầy của cơ thể, kết nối phổi, cổ họng, mũi, ống dẫn nước mắt và kết mạc.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_do_virus_disease'})
+MERGE (o2:organ {id: 'ống_dẫn_nước_mắt_organ'})
+MERGE (o1)-[r78:affects]->(o2)
+SET r78.text = 'Viêm kết mạc do virus cũng có thể xảy ra khi virus lây lan dọc theo màng nhầy của cơ thể, kết nối phổi, cổ họng, mũi, ống dẫn nước mắt và kết mạc.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_do_virus_disease'})
+MERGE (o2:organ {id: 'kết_mạc_organ'})
+MERGE (o1)-[r79:affects]->(o2)
+SET r79.text = 'Viêm kết mạc do virus cũng có thể xảy ra khi virus lây lan dọc theo màng nhầy của cơ thể, kết nối phổi, cổ họng, mũi, ống dẫn nước mắt và kết mạc.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_do_virus_disease'})
+MERGE (o2:symptom {id: 'xì_mũi_mạnh_symptom'})
+MERGE (o1)-[r80:associatedWith]->(o2)
+SET r80.text = 'Vì nước mắt chảy vào đường mũi nên xì mũi mạnh có thể khiến virus di chuyển từ hệ hô hấp sang mắt.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_do_virus_disease'})
+MERGE (o2:symptom {id: 'dịch_tiết_từ_mắt_lỏng_symptom'})
+MERGE (o1)-[r81:isSymptomOf]->(o2)
+SET r81.text = 'Dịch tiết từ mắt thường lỏng chứ không đặc.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_do_virus_disease'})
+MERGE (o2:symptom {id: 'bắt_đầu_ở_một_mắt_symptom'})
+MERGE (o1)-[r82:associatedWith]->(o2)
+SET r82.text = 'Thường bắt đầu ở một mắt và có thể lan sang mắt kia trong vòng vài ngày.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_do_virus_disease'})
+MERGE (o2:symptom {id: 'lan_sang_mắt_kia_symptom'})
+MERGE (o1)-[r83:associatedWith]->(o2)
+SET r83.text = 'Thường bắt đầu ở một mắt và có thể lan sang mắt kia trong vòng vài ngày.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_do_virus_disease'})
+MERGE (o2:disease {id: 'cảm_lạnh_disease'})
+MERGE (o1)-[r84:associatedWith]->(o2)
+SET r84.text = 'Có thể xảy ra cùng với các triệu chứng cảm lạnh, cúm hoặc nhiễm trùng đường hô hấp khác.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_do_virus_disease'})
+MERGE (o2:disease {id: 'cúm_disease'})
+MERGE (o1)-[r85:associatedWith]->(o2)
+SET r85.text = 'Có thể xảy ra cùng với các triệu chứng cảm lạnh, cúm hoặc nhiễm trùng đường hô hấp khác.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_do_virus_disease'})
+MERGE (o2:disease {id: 'nhiễm_trùng_đường_hô_hấp_disease'})
+MERGE (o1)-[r86:associatedWith]->(o2)
+SET r86.text = 'Có thể xảy ra cùng với các triệu chứng cảm lạnh, cúm hoặc nhiễm trùng đường hô hấp khác.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_do_virus_disease'})
+MERGE (o2:symptom {id: 'dễ_lây_lan_symptom'})
+MERGE (o1)-[r87:associatedWith]->(o2)
+SET r87.text = 'Rất dễ lây lan.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_do_virus_disease'})
+MERGE (o2:symptom {id: 'bùng_phát_lớn_symptom'})
+MERGE (o1)-[r88:associatedWith]->(o2)
+SET r88.text = 'Đôi khi có thể dẫn đến bùng phát lớn tùy thuộc vào chủng loại virus.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_dị_ứng_disease'})
+MERGE (o2:cause {id: 'phản_ứng_của_cơ_thể_với_các_chất_gây_dị_ứng_cause'})
+MERGE (o1)-[r89:causedBy]->(o2)
+SET r89.text = 'Là phản ứng của cơ thể với các chất gây dị ứng, chẳng hạn như phấn hoa từ cây cối, thực vật, cỏ và cỏ dại, bụi bẩn, nấm mốc, lông thú cưng, các loại thuốc hoặc mỹ phẩm.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_dị_ứng_disease'})
+MERGE (o2:cause {id: 'phấn_hoa_cause'})
+MERGE (o1)-[r90:causedBy]->(o2)
+SET r90.text = 'Là phản ứng của cơ thể với các chất gây dị ứng, chẳng hạn như phấn hoa từ cây cối, thực vật, cỏ và cỏ dại, bụi bẩn, nấm mốc, lông thú cưng, các loại thuốc hoặc mỹ phẩm.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_dị_ứng_disease'})
+MERGE (o2:cause {id: 'bụi_bẩn_cause'})
+MERGE (o1)-[r91:causedBy]->(o2)
+SET r91.text = 'Là phản ứng của cơ thể với các chất gây dị ứng, chẳng hạn như phấn hoa từ cây cối, thực vật, cỏ và cỏ dại, bụi bẩn, nấm mốc, lông thú cưng, các loại thuốc hoặc mỹ phẩm.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_dị_ứng_disease'})
+MERGE (o2:cause {id: 'nấm_mốc_cause'})
+MERGE (o1)-[r92:causedBy]->(o2)
+SET r92.text = 'Là phản ứng của cơ thể với các chất gây dị ứng, chẳng hạn như phấn hoa từ cây cối, thực vật, cỏ và cỏ dại, bụi bẩn, nấm mốc, lông thú cưng, các loại thuốc hoặc mỹ phẩm.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_dị_ứng_disease'})
+MERGE (o2:cause {id: 'lông_thú_cưng_cause'})
+MERGE (o1)-[r93:causedBy]->(o2)
+SET r93.text = 'Là phản ứng của cơ thể với các chất gây dị ứng, chẳng hạn như phấn hoa từ cây cối, thực vật, cỏ và cỏ dại, bụi bẩn, nấm mốc, lông thú cưng, các loại thuốc hoặc mỹ phẩm.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_dị_ứng_disease'})
+MERGE (o2:cause {id: 'thuốc_cause'})
+MERGE (o1)-[r94:causedBy]->(o2)
+SET r94.text = 'Là phản ứng của cơ thể với các chất gây dị ứng, chẳng hạn như phấn hoa từ cây cối, thực vật, cỏ và cỏ dại, bụi bẩn, nấm mốc, lông thú cưng, các loại thuốc hoặc mỹ phẩm.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_dị_ứng_disease'})
+MERGE (o2:cause {id: 'mỹ_phẩm_cause'})
+MERGE (o1)-[r95:causedBy]->(o2)
+SET r95.text = 'Là phản ứng của cơ thể với các chất gây dị ứng, chẳng hạn như phấn hoa từ cây cối, thực vật, cỏ và cỏ dại, bụi bẩn, nấm mốc, lông thú cưng, các loại thuốc hoặc mỹ phẩm.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_dị_ứng_disease'})
+MERGE (o2:symptom {id: 'không_lây_nhiễm_symptom'})
+MERGE (o1)-[r96:associatedWith]->(o2)
+SET r96.text = 'Không lây nhiễm.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_dị_ứng_disease'})
+MERGE (o2:disease {id: 'sốt_disease'})
+MERGE (o1)-[r97:associatedWith]->(o2)
+SET r97.text = 'Xảy ra thường xuyên hơn ở những người mắc các bệnh dị ứng khác, chẳng hạn như sốt, hen suyễn và bệnh chàm.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_dị_ứng_disease'})
+MERGE (o2:disease {id: 'hen_suyễn_disease'})
+MERGE (o1)-[r98:associatedWith]->(o2)
+SET r98.text = 'Xảy ra thường xuyên hơn ở những người mắc các bệnh dị ứng khác, chẳng hạn như sốt, hen suyễn và bệnh chàm.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_dị_ứng_disease'})
+MERGE (o2:disease {id: 'bệnh_chàm_disease'})
+MERGE (o1)-[r99:associatedWith]->(o2)
+SET r99.text = 'Xảy ra thường xuyên hơn ở những người mắc các bệnh dị ứng khác, chẳng hạn như sốt, hen suyễn và bệnh chàm.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_dị_ứng_disease'})
+MERGE (o2:cause {id: 'phấn_hoa_cause'})
+MERGE (o1)-[r100:associatedWith]->(o2)
+SET r100.text = 'Có thể xảy ra theo mùa khi các chất gây dị ứng như phấn hoa xuất hiện với tần suất lớn.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_dị_ứng_disease'})
+MERGE (o2:cause {id: 'bụi_bẩn_cause'})
+MERGE (o1)-[r101:associatedWith]->(o2)
+SET r101.text = 'Cũng có thể xảy ra quanh năm do các chất gây dị ứng tồn tại trong nhà (bụi bẩn, lông thú).'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_dị_ứng_disease'})
+MERGE (o2:cause {id: 'lông_thú_cause'})
+MERGE (o1)-[r102:associatedWith]->(o2)
+SET r102.text = 'Cũng có thể xảy ra quanh năm do các chất gây dị ứng tồn tại trong nhà (bụi bẩn, lông thú).'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_dị_ứng_disease'})
+MERGE (o2:organ {id: 'cả_hai_mắt_organ'})
+MERGE (o1)-[r103:associatedWith]->(o2)
+SET r103.text = 'Thường xảy ra ở cả hai mắt.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_dị_ứng_disease'})
+MERGE (o2:symptom {id: 'ngứa_dữ_dội_symptom'})
+MERGE (o1)-[r104:isSymptomOf]->(o2)
+SET r104.text = 'Ngứa dữ dội, chảy nước mắt và sưng tấy.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_dị_ứng_disease'})
+MERGE (o2:symptom {id: 'chảy_nước_mắt_symptom'})
+MERGE (o1)-[r105:isSymptomOf]->(o2)
+SET r105.text = 'Ngứa dữ dội, chảy nước mắt và sưng tấy.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_dị_ứng_disease'})
+MERGE (o2:symptom {id: 'sưng_tấy_symptom'})
+MERGE (o1)-[r106:isSymptomOf]->(o2)
+SET r106.text = 'Ngứa dữ dội, chảy nước mắt và sưng tấy.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_dị_ứng_disease'})
+MERGE (o2:symptom {id: 'ngứa_mũi_symptom'})
+MERGE (o1)-[r107:associatedWith]->(o2)
+SET r107.text = 'Có thể xảy ra cùng các triệu chứng dị ứng, chẳng hạn như ngứa mũi, chảy nước mũi, hắt hơi, ngứa cổ họng hoặc hen suyễn.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_dị_ứng_disease'})
+MERGE (o2:symptom {id: 'chảy_nước_mũi_symptom'})
+MERGE (o1)-[r108:associatedWith]->(o2)
+SET r108.text = 'Có thể xảy ra cùng các triệu chứng dị ứng, chẳng hạn như ngứa mũi, chảy nước mũi, hắt hơi, ngứa cổ họng hoặc hen suyễn.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_dị_ứng_disease'})
+MERGE (o2:symptom {id: 'hắt_hơi_symptom'})
+MERGE (o1)-[r109:associatedWith]->(o2)
+SET r109.text = 'Có thể xảy ra cùng các triệu chứng dị ứng, chẳng hạn như ngứa mũi, chảy nước mũi, hắt hơi, ngứa cổ họng hoặc hen suyễn.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_dị_ứng_disease'})
+MERGE (o2:symptom {id: 'ngứa_cổ_họng_symptom'})
+MERGE (o1)-[r110:associatedWith]->(o2)
+SET r110.text = 'Có thể xảy ra cùng các triệu chứng dị ứng, chẳng hạn như ngứa mũi, chảy nước mũi, hắt hơi, ngứa cổ họng hoặc hen suyễn.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_dị_ứng_disease'})
+MERGE (o2:disease {id: 'hen_suyễn_disease'})
+MERGE (o1)-[r111:associatedWith]->(o2)
+SET r111.text = 'Có thể xảy ra cùng các triệu chứng dị ứng, chẳng hạn như ngứa mũi, chảy nước mũi, hắt hơi, ngứa cổ họng hoặc hen suyễn.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_disease'})
+MERGE (o2:cause {id: 'bụi_bẩn_cause'})
+MERGE (o1)-[r112:causedBy]->(o2)
+SET r112.text = 'Các chất dị ứng như bụi bẩn, lông thú cưng,&#8230; là nguyên nhân gây ra viêm kết mạc'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_disease'})
+MERGE (o2:cause {id: 'lông_thú_cưng_cause'})
+MERGE (o1)-[r113:causedBy]->(o2)
+SET r113.text = 'Các chất dị ứng như bụi bẩn, lông thú cưng,&#8230; là nguyên nhân gây ra viêm kết mạc'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_disease'})
+MERGE (o2:cause {id: 'nhiễm_độc_cause'})
+MERGE (o1)-[r114:causedBy]->(o2)
+SET r114.text = 'Do nhiễm độc là do khói, chất lỏng, khói hoặc hóa chất ăn mòn.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_disease'})
+MERGE (o2:cause {id: 'khói_cause'})
+MERGE (o1)-[r115:causedBy]->(o2)
+SET r115.text = 'Do nhiễm độc là do khói, chất lỏng, khói hoặc hóa chất ăn mòn.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_disease'})
+MERGE (o2:cause {id: 'chất_lỏng_cause'})
+MERGE (o1)-[r116:causedBy]->(o2)
+SET r116.text = 'Do nhiễm độc là do khói, chất lỏng, khói hoặc hóa chất ăn mòn.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_disease'})
+MERGE (o2:cause {id: 'hóa_chất_ăn_mòn_cause'})
+MERGE (o1)-[r117:causedBy]->(o2)
+SET r117.text = 'Do nhiễm độc là do khói, chất lỏng, khói hoặc hóa chất ăn mòn.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_disease'})
+MERGE (o2:treatment {id: 'rửa_sạch_với_nước_treatment'})
+MERGE (o1)-[r118:treatedBy]->(o2)
+SET r118.text = 'Cần rửa sạch với nước ngay lập tức để loại bỏ chất độc hại.'
+
+MERGE (o1:disease {id: 'đau_mắt_đỏ_do_clo_disease'})
+MERGE (o2:cause {id: 'clo_cause'})
+MERGE (o1)-[r119:causedBy]->(o2)
+SET r119.text = 'Các trường hợp đau mắt đỏ do clo trong bể bơi thường không nghiêm trọng và không cần điều trị.'
+
+MERGE (o1:disease {id: 'đau_mắt_đỏ_do_clo_disease'})
+MERGE (o2:symptom {id: 'không_nghiêm_trọng_symptom'})
+MERGE (o1)-[r120:associatedWith]->(o2)
+SET r120.text = 'Các trường hợp đau mắt đỏ do clo trong bể bơi thường không nghiêm trọng và không cần điều trị.'
+
+MERGE (o1:disease {id: 'đau_mắt_đỏ_do_clo_disease'})
+MERGE (o2:treatment {id: 'không_cần_điều_trị_treatment'})
+MERGE (o1)-[r121:associatedWith]->(o2)
+SET r121.text = 'Các trường hợp đau mắt đỏ do clo trong bể bơi thường không nghiêm trọng và không cần điều trị.'
+
+MERGE (o1:disease {id: 'đau_mắt_đỏ_do_clo_disease'})
+MERGE (o2:treatment {id: 'nước_mắt_nhân_tạo_treatment'})
+MERGE (o1)-[r122:treatedBy]->(o2)
+SET r122.text = 'Sau khi rửa mắt có thể sử dụng nước mắt nhân tạo hoặc thuốc mỡ để giảm mẩn đỏ và kích ứng.'
+
+MERGE (o1:disease {id: 'đau_mắt_đỏ_do_clo_disease'})
+MERGE (o2:treatment {id: 'thuốc_mỡ_treatment'})
+MERGE (o1)-[r123:treatedBy]->(o2)
+SET r123.text = 'Sau khi rửa mắt có thể sử dụng nước mắt nhân tạo hoặc thuốc mỡ để giảm mẩn đỏ và kích ứng.'
+
+MERGE (o1:disease {id: 'đau_mắt_đỏ_nghiêm_trọng_disease'})
+MERGE (o2:cause {id: 'hóa_chất_độc_hại_cause'})
+MERGE (o1)-[r124:causedBy]->(o2)
+SET r124.text = 'Các triệu chứng đau mắt đỏ nghiêm trọng do hóa chất độc hại gây ra bao gồm: đau dữ dội, giảm thị lực, đỏ mắt, sưng tấy.'
+
+MERGE (o1:disease {id: 'đau_mắt_đỏ_nghiêm_trọng_disease'})
+MERGE (o2:symptom {id: 'đau_dữ_dội_symptom'})
+MERGE (o1)-[r125:isSymptomOf]->(o2)
+SET r125.text = 'Các triệu chứng đau mắt đỏ nghiêm trọng do hóa chất độc hại gây ra bao gồm: đau dữ dội, giảm thị lực, đỏ mắt, sưng tấy.'
+
+MERGE (o1:disease {id: 'đau_mắt_đỏ_nghiêm_trọng_disease'})
+MERGE (o2:symptom {id: 'giảm_thị_lực_symptom'})
+MERGE (o1)-[r126:isSymptomOf]->(o2)
+SET r126.text = 'Các triệu chứng đau mắt đỏ nghiêm trọng do hóa chất độc hại gây ra bao gồm: đau dữ dội, giảm thị lực, đỏ mắt, sưng tấy.'
+
+MERGE (o1:disease {id: 'đau_mắt_đỏ_nghiêm_trọng_disease'})
+MERGE (o2:symptom {id: 'đỏ_mắt_symptom'})
+MERGE (o1)-[r127:isSymptomOf]->(o2)
+SET r127.text = 'Các triệu chứng đau mắt đỏ nghiêm trọng do hóa chất độc hại gây ra bao gồm: đau dữ dội, giảm thị lực, đỏ mắt, sưng tấy.'
+
+MERGE (o1:disease {id: 'đau_mắt_đỏ_nghiêm_trọng_disease'})
+MERGE (o2:symptom {id: 'sưng_tấy_symptom'})
+MERGE (o1)-[r128:isSymptomOf]->(o2)
+SET r128.text = 'Các triệu chứng đau mắt đỏ nghiêm trọng do hóa chất độc hại gây ra bao gồm: đau dữ dội, giảm thị lực, đỏ mắt, sưng tấy.'
+
+MERGE (o1:disease {id: 'đau_mắt_đỏ_nghiêm_trọng_disease'})
+MERGE (o2:treatment {id: 'tư_vấn_treatment'})
+MERGE (o1)-[r129:treatedBy]->(o2)
+SET r129.text = 'Cần được đưa ngay đến trung tâm y tế hay bệnh viện gần nhất để được tư vấn và xử lý kịp thời.'
+
+MERGE (o1:disease {id: 'đau_mắt_đỏ_nghiêm_trọng_disease'})
+MERGE (o2:treatment {id: 'xử_lý_kịp_thời_treatment'})
+MERGE (o1)-[r130:treatedBy]->(o2)
+SET r130.text = 'Cần được đưa ngay đến trung tâm y tế hay bệnh viện gần nhất để được tư vấn và xử lý kịp thời.'
+
+MERGE (o1:disease {id: 'đau_mắt_đỏ_nghiêm_trọng_disease'})
+MERGE (o2:symptom {id: 'không_lây_nhiễm_symptom'})
+MERGE (o1)-[r131:associatedWith]->(o2)
+SET r131.text = 'Không lây nhiễm.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_do_virus_disease'})
+MERGE (o2:disease {id: 'viêm_kết_mạc_disease'})
+MERGE (o1)-[r132:isSymptomOf]->(o2)
+SET r132.text = 'Hầu hết các trường hợp viêm kết mạc do virus đều nhẹ và sẽ tự khỏi sau 7 - 14 ngày mà không cần điều trị mà không để lại di chứng.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_do_virus_disease'})
+MERGE (o2:treatment {id: 'tự_khỏi_treatment'})
+MERGE (o1)-[r133:treatedBy]->(o2)
+SET r133.text = 'Hầu hết các trường hợp viêm kết mạc do virus đều nhẹ và sẽ tự khỏi sau 7 - 14 ngày mà không cần điều trị mà không để lại di chứng.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_do_virus_disease'})
+MERGE (o2:symptom {id: 'mất_từ_​​2_-_3_tuần_trở_lên_bệnh_symptom'})
+MERGE (o1)-[r134:isSymptomOf]->(o2)
+SET r134.text = 'Tuy nhiên cũng có trường hợp mất từ ​​2 - 3 tuần trở lên bệnh.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_do_virus_disease'})
+MERGE (o2:treatment {id: 'thuốc_kháng_virus_treatment'})
+MERGE (o1)-[r135:treatedBy]->(o2)
+SET r135.text = 'Bác sĩ có thể kê đơn thuốc kháng virus cho người bệnh để điều trị các dạng viêm kết mạc nghiêm trọng hơn, ví dụ viêm kết mạc do
+virus herpes simplex
+hoặc
+virus varicella-zoste
+r gây ra.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_do_virus_disease'})
+MERGE (o2:cause {id: 'virus_herpes_simplex_cause'})
+MERGE (o1)-[r136:causedBy]->(o2)
+SET r136.text = 'Bác sĩ có thể kê đơn thuốc kháng virus cho người bệnh để điều trị các dạng viêm kết mạc nghiêm trọng hơn, ví dụ viêm kết mạc do
+virus herpes simplex
+hoặc
+virus varicella-zoste
+r gây ra.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_do_virus_disease'})
+MERGE (o2:cause {id: 'virus_varicella-zoste_cause'})
+MERGE (o1)-[r137:causedBy]->(o2)
+SET r137.text = 'Bác sĩ có thể kê đơn thuốc kháng virus cho người bệnh để điều trị các dạng viêm kết mạc nghiêm trọng hơn, ví dụ viêm kết mạc do
+virus herpes simplex
+hoặc
+virus varicella-zoste
+r gây ra.'
+
+MERGE (o1:treatment {id: 'thuốc_kháng_sinh_treatment'})
+MERGE (o2:disease {id: 'viêm_kết_mạc_do_virus_disease'})
+MERGE (o1)-[r138:treatedBy]->(o2)
+SET r138.text = 'Thuốc kháng sinh sẽ không có tác dụng trong trường hợp này.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_do_vi_khuẩn_disease'})
+MERGE (o2:disease {id: 'viêm_kết_mạc_disease'})
+MERGE (o1)-[r139:isSymptomOf]->(o2)
+SET r139.text = 'Viêm kết mạc do vi khuẩn nhẹ có thể tự cải thiện trở 2 - 5 ngày mà không cần điều trị bằng kháng sinh và cũng không để lại bất kỳ biến chứng nào, nhưng có thể mất đến 2 tuần để bệnh khỏi hẳn.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_do_vi_khuẩn_disease'})
+MERGE (o2:treatment {id: 'tự_cải_thiện_treatment'})
+MERGE (o1)-[r140:treatedBy]->(o2)
+SET r140.text = 'Viêm kết mạc do vi khuẩn nhẹ có thể tự cải thiện trở 2 - 5 ngày mà không cần điều trị bằng kháng sinh và cũng không để lại bất kỳ biến chứng nào, nhưng có thể mất đến 2 tuần để bệnh khỏi hẳn.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_do_vi_khuẩn_disease'})
+MERGE (o2:treatment {id: 'kháng_sinh_treatment'})
+MERGE (o1)-[r141:treatedBy]->(o2)
+SET r141.text = 'Viêm kết mạc do vi khuẩn nhẹ có thể tự cải thiện trở 2 - 5 ngày mà không cần điều trị bằng kháng sinh và cũng không để lại bất kỳ biến chứng nào, nhưng có thể mất đến 2 tuần để bệnh khỏi hẳn.'
+
+MERGE (o1:treatment {id: 'thuốc_kháng_sinh_treatment'})
+MERGE (o2:disease {id: 'viêm_kết_mạc_do_vi_khuẩn_disease'})
+MERGE (o1)-[r142:treatedBy]->(o2)
+SET r142.text = 'Các đơn thuốc kháng sinh bác sĩ kê trong trường hợp này thường là các loại thuốc tại chỗ như thuốc nhỏ mắt hoặc thuốc mỡ.'
+
+MERGE (o1:treatment {id: 'thuốc_kháng_sinh_treatment'})
+MERGE (o2:disease {id: 'viêm_kết_mạc_do_vi_khuẩn_disease'})
+MERGE (o1)-[r143:treatedBy]->(o2)
+SET r143.text = 'Thuốc kháng sinh có thể giúp rút ngắn thời gian nhiễm trùng, giảm biến chứng và giảm lây lan sang người khác.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_do_dị_ứng_disease'})
+MERGE (o2:disease {id: 'viêm_kết_mạc_disease'})
+MERGE (o1)-[r144:isSymptomOf]->(o2)
+SET r144.text = 'Viêm kết mạc do dị ứng (như phấn hoa hoặc lông động vật) thường được cải thiện bằng cách loại bỏ chất gây dị ứng khỏi môi trường sống.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_do_dị_ứng_disease'})
+MERGE (o2:cause {id: 'phấn_hoa_cause'})
+MERGE (o1)-[r145:causedBy]->(o2)
+SET r145.text = 'Viêm kết mạc do dị ứng (như phấn hoa hoặc lông động vật) thường được cải thiện bằng cách loại bỏ chất gây dị ứng khỏi môi trường sống.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_do_dị_ứng_disease'})
+MERGE (o2:cause {id: 'lông_động_vật_cause'})
+MERGE (o1)-[r146:causedBy]->(o2)
+SET r146.text = 'Viêm kết mạc do dị ứng (như phấn hoa hoặc lông động vật) thường được cải thiện bằng cách loại bỏ chất gây dị ứng khỏi môi trường sống.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_do_dị_ứng_disease'})
+MERGE (o2:treatment {id: 'loại_bỏ_chất_gây_dị_ứng_treatment'})
+MERGE (o1)-[r147:treatedBy]->(o2)
+SET r147.text = 'Viêm kết mạc do dị ứng (như phấn hoa hoặc lông động vật) thường được cải thiện bằng cách loại bỏ chất gây dị ứng khỏi môi trường sống.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_do_dị_ứng_disease'})
+MERGE (o2:treatment {id: 'thuốc_chống_dị_ứng_treatment'})
+MERGE (o1)-[r148:treatedBy]->(o2)
+SET r148.text = 'Thuốc chống dị ứng và một số loại thuốc nhỏ mắt (thuốc kháng histamine và thuốc co mạch tại chỗ), bao gồm cả một số loại thuốc nhỏ mắt theo toa cũng có thể giúp thuyên giảm các triệu chứng viêm kết mạc do dị ứng.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_do_dị_ứng_disease'})
+MERGE (o2:treatment {id: 'thuốc_nhỏ_mắt_treatment'})
+MERGE (o1)-[r149:treatedBy]->(o2)
+SET r149.text = 'Thuốc chống dị ứng và một số loại thuốc nhỏ mắt (thuốc kháng histamine và thuốc co mạch tại chỗ), bao gồm cả một số loại thuốc nhỏ mắt theo toa cũng có thể giúp thuyên giảm các triệu chứng viêm kết mạc do dị ứng.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_do_dị_ứng_disease'})
+MERGE (o2:treatment {id: 'thuốc_kháng_histamine_treatment'})
+MERGE (o1)-[r150:treatedBy]->(o2)
+SET r150.text = 'Thuốc chống dị ứng và một số loại thuốc nhỏ mắt (thuốc kháng histamine và thuốc co mạch tại chỗ), bao gồm cả một số loại thuốc nhỏ mắt theo toa cũng có thể giúp thuyên giảm các triệu chứng viêm kết mạc do dị ứng.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_do_dị_ứng_disease'})
+MERGE (o2:treatment {id: 'thuốc_co_mạch_tại_chỗ_treatment'})
+MERGE (o1)-[r151:treatedBy]->(o2)
+SET r151.text = 'Thuốc chống dị ứng và một số loại thuốc nhỏ mắt (thuốc kháng histamine và thuốc co mạch tại chỗ), bao gồm cả một số loại thuốc nhỏ mắt theo toa cũng có thể giúp thuyên giảm các triệu chứng viêm kết mạc do dị ứng.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_do_dị_ứng_disease'})
+MERGE (o2:treatment {id: 'kết_hợp_nhiều_loại_thuốc_treatment'})
+MERGE (o1)-[r152:treatedBy]->(o2)
+SET r152.text = 'Bác sĩ có thể đề nghị kết hợp nhiều loại thuốc để cải thiện tình trạng bệnh.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_do_hóa_chất_disease'})
+MERGE (o2:disease {id: 'viêm_kết_mạc_disease'})
+MERGE (o1)-[r153:isSymptomOf]->(o2)
+SET r153.text = 'Rửa mắt bằng nước muối là phương pháp điều trị y tế tiêu chuẩn cho trường hợp viêm kết mạc do hóa chất.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_do_hóa_chất_disease'})
+MERGE (o2:treatment {id: 'rửa_mắt_bằng_nước_muối_treatment'})
+MERGE (o1)-[r154:treatedBy]->(o2)
+SET r154.text = 'Rửa mắt bằng nước muối là phương pháp điều trị y tế tiêu chuẩn cho trường hợp viêm kết mạc do hóa chất.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_do_hóa_chất_disease'})
+MERGE (o2:treatment {id: 'steroid_tại_chỗ_treatment'})
+MERGE (o1)-[r155:treatedBy]->(o2)
+SET r155.text = 'Người bệnh cũng có thể cân nhắc cần sử dụng steroid tại chỗ.'
+
+MERGE (o1:disease {id: 'tổn_thương_mắt_do_hóa_chất_disease'})
+MERGE (o2:disease {id: 'viêm_kết_mạc_do_hóa_chất_disease'})
+MERGE (o1)-[r156:isSymptomOf]->(o2)
+SET r156.text = 'Tổn thương mắt do hóa chất thường khá nghiêm trọng, đặc biệt bỏng kiềm là trường hợp cấp cứu y tế và có thể dẫn đến sẹo, suy giảm thị lực, thậm chí có thể gây mù lòa.'
+
+MERGE (o1:disease {id: 'tổn_thương_mắt_do_hóa_chất_disease'})
+MERGE (o2:cause {id: 'bỏng_kiềm_cause'})
+MERGE (o1)-[r157:causedBy]->(o2)
+SET r157.text = 'Tổn thương mắt do hóa chất thường khá nghiêm trọng, đặc biệt bỏng kiềm là trường hợp cấp cứu y tế và có thể dẫn đến sẹo, suy giảm thị lực, thậm chí có thể gây mù lòa.'
+
+MERGE (o1:disease {id: 'tổn_thương_mắt_do_hóa_chất_disease'})
+MERGE (o2:symptom {id: 'sẹo_symptom'})
+MERGE (o1)-[r158:isSymptomOf]->(o2)
+SET r158.text = 'Tổn thương mắt do hóa chất thường khá nghiêm trọng, đặc biệt bỏng kiềm là trường hợp cấp cứu y tế và có thể dẫn đến sẹo, suy giảm thị lực, thậm chí có thể gây mù lòa.'
+
+MERGE (o1:disease {id: 'tổn_thương_mắt_do_hóa_chất_disease'})
+MERGE (o2:symptom {id: 'suy_giảm_thị_lực_symptom'})
+MERGE (o1)-[r159:isSymptomOf]->(o2)
+SET r159.text = 'Tổn thương mắt do hóa chất thường khá nghiêm trọng, đặc biệt bỏng kiềm là trường hợp cấp cứu y tế và có thể dẫn đến sẹo, suy giảm thị lực, thậm chí có thể gây mù lòa.'
+
+MERGE (o1:disease {id: 'tổn_thương_mắt_do_hóa_chất_disease'})
+MERGE (o2:symptom {id: 'mù_lòa_symptom'})
+MERGE (o1)-[r160:isSymptomOf]->(o2)
+SET r160.text = 'Tổn thương mắt do hóa chất thường khá nghiêm trọng, đặc biệt bỏng kiềm là trường hợp cấp cứu y tế và có thể dẫn đến sẹo, suy giảm thị lực, thậm chí có thể gây mù lòa.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_do_hóa_chất_disease'})
+MERGE (o2:treatment {id: 'rửa_mắt_với_nước_treatment'})
+MERGE (o1)-[r161:treatedBy]->(o2)
+SET r161.text = 'Nếu hóa chất tiếp xúc trực tiếp với mắt, hãy rửa mắt với nước trong vài phút trước khi đưa nạn nhân đến trung tâm y tế gần nhất.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_disease'})
+MERGE (o2:treatment {id: 'biện_pháp_phòng_ngừa_treatment'})
+MERGE (o1)-[r162:preventedBy]->(o2)
+SET r162.text = 'Vì viêm kết mạc rất dễ lây lan nên việc thực hiện các biện pháp phòng ngừa sẽ giúp ngăn chặn tình trạng bệnh tiến triển và diễn biến xấu.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_disease'})
+MERGE (o2:lifestyle {id: 'chạm_vào_hoặc_dụi_mắt_lifestyle'})
+MERGE (o1)-[r163:aggravatedBy]->(o2)
+SET r163.text = 'Tránh chạm vào hoặc dụi mắt vì điều này có thể làm bệnh tình trở nên tồi tệ hơn hoặc lây sang mắt còn lại.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_disease'})
+MERGE (o2:lifestyle {id: 'rửa_tay_sạch_lifestyle'})
+MERGE (o1)-[r164:preventedBy]->(o2)
+SET r164.text = 'Rửa tay sạch trước khi vệ sinh mắt.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_disease'})
+MERGE (o2:treatment {id: 'lau_các_dịch_tiết_từ_mắt_treatment'})
+MERGE (o1)-[r165:treatedBy]->(o2)
+SET r165.text = 'Dùng khăn hoặc bông gòn sạch lau các dịch tiết từ mắt.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_disease'})
+MERGE (o2:lifestyle {id: 'giặt_khăn_đã_sử_dụng_bằng_nước_nóng_và_xà_bông_lifestyle'})
+MERGE (o1)-[r166:preventedBy]->(o2)
+SET r166.text = 'Vứt bỏ bông gòn sau khi sử dụng và giặt khăn đã sử dụng bằng nước nóng và xà bông, sau đó rửa tay lại bằng xà phòng và nước ấm.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_disease'})
+MERGE (o2:lifestyle {id: 'rửa_tay_thường_xuyên_lifestyle'})
+MERGE (o1)-[r167:preventedBy]->(o2)
+SET r167.text = 'Rửa tay thường xuyên bằng xà phòng và nước ấm ít nhất 20 giây, đặc biệt trước và sau khi vệ sinh mắt, hoặc trước khi tra thuốc nhỏ mắt hoặc thuốc mỡ.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_disease'})
+MERGE (o2:treatment {id: 'sử_dụng_nước_rửa_tay_khô_treatment'})
+MERGE (o1)-[r168:preventedBy]->(o2)
+SET r168.text = 'Trường hợp không có xà phòng và nước có thể sử dụng nước rửa tay khô có chứa ít nhất 60% cồn để sát khuẩn tay.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_disease'})
+MERGE (o2:lifestyle {id: 'làm_sạch_kính_đeo_mắt_lifestyle'})
+MERGE (o1)-[r169:preventedBy]->(o2)
+SET r169.text = 'Làm sạch kính đeo mắt và cẩn thận không làm nhiễm bẩn các vật dụng đồ vật có thể dùng chung như khăn lau tay.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_disease'})
+MERGE (o2:lifestyle {id: 'giặt_vỏ_gối__khăn_trải_giường__khăn_mặt_và_khăn_tắm_thường_xuyên_lifestyle'})
+MERGE (o1)-[r170:preventedBy]->(o2)
+SET r170.text = 'Giặt vỏ gối, khăn trải giường, khăn mặt và khăn tắm thường xuyên bằng nước nóng và xà bông.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_disease'})
+MERGE (o2:lifestyle {id: 'không_nên_sử_dụng_cùng_một_chai_thuốc_nhỏ_mắt_cho_cả_2_mắt_lifestyle'})
+MERGE (o1)-[r171:preventedBy]->(o2)
+SET r171.text = 'Lưu ý nếu chỉ có một mắt bị viêm kết mạc thì không nên sử dụng cùng một chai thuốc nhỏ mắt cho cả 2 mắt.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_disease'})
+MERGE (o2:lifestyle {id: 'làm_sạch__bảo_quản__thay_thế_kính_áp_tròng_lifestyle'})
+MERGE (o1)-[r172:preventedBy]->(o2)
+SET r172.text = 'Làm sạch, bảo quản, thay thế kính áp tròng theo chỉ định của bác sĩ.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_disease'})
+MERGE (o2:lifestyle {id: 'ngưng_đeo_kính_áp_tròng_lifestyle'})
+MERGE (o1)-[r173:preventedBy]->(o2)
+SET r173.text = 'Ngưng đeo kính áp tròng đến khi nhận được sự cho phép của bác sĩ nhãn khoa.'

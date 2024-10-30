@@ -1,0 +1,1085 @@
+
+MERGE (o1:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o2:symptom {id: 'nguy_hiểm_symptom'})
+MERGE (o1)-[r0:isSymptomOf]->(o2)
+SET r0.text = 'Viêm màng não mủ là bệnh vô cùng nguy hiểm, bệnh thường gặp ở trẻ em, đặc biệt ở lứa tuổi dưới 5 tuổi.'
+
+MERGE (o1:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o2:organ {id: 'trẻ_em_organ'})
+MERGE (o1)-[r1:affects]->(o2)
+SET r1.text = 'Viêm màng não mủ là bệnh vô cùng nguy hiểm, bệnh thường gặp ở trẻ em, đặc biệt ở lứa tuổi dưới 5 tuổi.'
+
+MERGE (o1:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o2:organ {id: 'lứa_tuổi_dưới_5_tuổi_organ'})
+MERGE (o1)-[r2:affects]->(o2)
+SET r2.text = 'Viêm màng não mủ là bệnh vô cùng nguy hiểm, bệnh thường gặp ở trẻ em, đặc biệt ở lứa tuổi dưới 5 tuổi.'
+
+MERGE (o1:treatment {id: 'cấp_cứu_kịp_thời_treatment'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r3:treatedBy]->(o2)
+SET r3.text = 'Ngay cả khi được cấp cứu kịp thời và điều trị tích cực bệnh vẫn có thể để lại di chứng nặng nề về thần kinh, vận động thậm chí là tử vong.'
+
+MERGE (o1:treatment {id: 'điều_trị_tích_cực_treatment'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r4:treatedBy]->(o2)
+SET r4.text = 'Ngay cả khi được cấp cứu kịp thời và điều trị tích cực bệnh vẫn có thể để lại di chứng nặng nề về thần kinh, vận động thậm chí là tử vong.'
+
+MERGE (o1:symptom {id: 'di_chứng_nặng_nề_về_thần_kinh_symptom'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r5:isSymptomOf]->(o2)
+SET r5.text = 'Ngay cả khi được cấp cứu kịp thời và điều trị tích cực bệnh vẫn có thể để lại di chứng nặng nề về thần kinh, vận động thậm chí là tử vong.'
+
+MERGE (o1:symptom {id: 'di_chứng_nặng_nề_về_vận_động_symptom'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r6:isSymptomOf]->(o2)
+SET r6.text = 'Ngay cả khi được cấp cứu kịp thời và điều trị tích cực bệnh vẫn có thể để lại di chứng nặng nề về thần kinh, vận động thậm chí là tử vong.'
+
+MERGE (o1:symptom {id: 'tử_vong_symptom'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r7:isSymptomOf]->(o2)
+SET r7.text = 'Ngay cả khi được cấp cứu kịp thời và điều trị tích cực bệnh vẫn có thể để lại di chứng nặng nề về thần kinh, vận động thậm chí là tử vong.'
+
+MERGE (o1:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o2:organ {id: 'màng_não_organ'})
+MERGE (o1)-[r8:affects]->(o2)
+SET r8.text = 'Viêm màng não mủ là tình trạng viêm của màng não khi có sự xâm lấn và tăng sinh của các yếu tố gây bệnh trong dịch não tủy.'
+
+MERGE (o1:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o2:cause {id: 'sự_xâm_lấn_và_tăng_sinh_của_các_yếu_tố_gây_bệnh_trong_dịch_não_tủy_cause'})
+MERGE (o1)-[r9:causedBy]->(o2)
+SET r9.text = 'Viêm màng não mủ là tình trạng viêm của màng não khi có sự xâm lấn và tăng sinh của các yếu tố gây bệnh trong dịch não tủy.'
+
+MERGE (o1:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o2:organ {id: 'trẻ_dưới_5_tuổi_organ'})
+MERGE (o1)-[r10:affects]->(o2)
+SET r10.text = 'Đây là một trong những bệnh thường gặp ở trẻ dưới 5 tuổi với tỷ lệ tử vong cao.'
+
+MERGE (o1:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o2:symptom {id: 'tỷ_lệ_tử_vong_cao_symptom'})
+MERGE (o1)-[r11:isSymptomOf]->(o2)
+SET r11.text = 'Đây là một trong những bệnh thường gặp ở trẻ dưới 5 tuổi với tỷ lệ tử vong cao.'
+
+MERGE (o1:treatment {id: 'sống_sốt_treatment'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r12:treatedBy]->(o2)
+SET r12.text = 'Nếu may mắn sống sốt, trẻ có thể chịu những di chứng nặng nề về thần kinh và vận động.'
+
+MERGE (o1:symptom {id: 'di_chứng_nặng_nề_về_thần_kinh_symptom'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r13:isSymptomOf]->(o2)
+SET r13.text = 'Nếu may mắn sống sốt, trẻ có thể chịu những di chứng nặng nề về thần kinh và vận động.'
+
+MERGE (o1:symptom {id: 'di_chứng_nặng_nề_về_vận_động_symptom'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r14:isSymptomOf]->(o2)
+SET r14.text = 'Nếu may mắn sống sốt, trẻ có thể chịu những di chứng nặng nề về thần kinh và vận động.'
+
+MERGE (o1:cause {id: 'h._influenza_(haemophilus_influenza)_cause'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r15:causedBy]->(o2)
+SET r15.text = 'Có 3 loại vi khuẩn gây bệnh viêm màng não mủ phổ biến nhất là H. influenza (Haemophilus influenza); phế cầu (Streptococcus pneumonia); não mô cầu (Neisseria meningitidis).'
+
+MERGE (o1:cause {id: 'phế_cầu_(streptococcus_pneumonia)_cause'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r16:causedBy]->(o2)
+SET r16.text = 'Có 3 loại vi khuẩn gây bệnh viêm màng não mủ phổ biến nhất là H. influenza (Haemophilus influenza); phế cầu (Streptococcus pneumonia); não mô cầu (Neisseria meningitidis).'
+
+MERGE (o1:cause {id: 'não_mô_cầu_(neisseria_meningitidis)_cause'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r17:causedBy]->(o2)
+SET r17.text = 'Có 3 loại vi khuẩn gây bệnh viêm màng não mủ phổ biến nhất là H. influenza (Haemophilus influenza); phế cầu (Streptococcus pneumonia); não mô cầu (Neisseria meningitidis).'
+
+MERGE (o1:cause {id: 'escherichia_coli_cause'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r18:causedBy]->(o2)
+SET r18.text = 'Đối với trẻ sơ sinh, vi khuẩn gây bệnh viêm màng não mủ phổ biến là Escherichia coli, Listeria monocytogenes, B.streptococcus.'
+
+MERGE (o1:cause {id: 'listeria_monocytogenes_cause'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r19:causedBy]->(o2)
+SET r19.text = 'Đối với trẻ sơ sinh, vi khuẩn gây bệnh viêm màng não mủ phổ biến là Escherichia coli, Listeria monocytogenes, B.streptococcus.'
+
+MERGE (o1:cause {id: 'b.streptococcus_cause'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r20:causedBy]->(o2)
+SET r20.text = 'Đối với trẻ sơ sinh, vi khuẩn gây bệnh viêm màng não mủ phổ biến là Escherichia coli, Listeria monocytogenes, B.streptococcus.'
+
+MERGE (o1:cause {id: 'vi_khuẩn_và_nấm_cause'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r21:causedBy]->(o2)
+SET r21.text = 'Ngoài ra, nhiều loại vi khuẩn và nấm khác cũng có thể là căn nguyên dẫn đến bệnh viêm màng não mủ nhưng ít gặp hơn và thường xảy ra trên những người bệnh có tình trạng suy giảm miễn dịch, nhiễm khuẩn huyết… (1)'
+
+MERGE (o1:symptom {id: 'suy_giảm_miễn_dịch_symptom'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r22:isSymptomOf]->(o2)
+SET r22.text = 'Ngoài ra, nhiều loại vi khuẩn và nấm khác cũng có thể là căn nguyên dẫn đến bệnh viêm màng não mủ nhưng ít gặp hơn và thường xảy ra trên những người bệnh có tình trạng suy giảm miễn dịch, nhiễm khuẩn huyết… (1)'
+
+MERGE (o1:symptom {id: 'nhiễm_khuẩn_huyết_symptom'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r23:isSymptomOf]->(o2)
+SET r23.text = 'Ngoài ra, nhiều loại vi khuẩn và nấm khác cũng có thể là căn nguyên dẫn đến bệnh viêm màng não mủ nhưng ít gặp hơn và thường xảy ra trên những người bệnh có tình trạng suy giảm miễn dịch, nhiễm khuẩn huyết… (1)'
+
+MERGE (o1:cause {id: 'haemophilus_influenzae_type_b_(hib)_cause'})
+MERGE (o2:disease {id: 'viêm_màng_não_cấp_disease'})
+MERGE (o1)-[r24:causedBy]->(o2)
+SET r24.text = 'Haemophilus influenzae type B (Hib) nguyên nhân hàng đầu gây viêm màng não cấp ở trẻ.'
+
+MERGE (o1:symptom {id: 'sốt_symptom'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r25:isSymptomOf]->(o2)
+SET r25.text = 'Bệnh nhân bị viêm màng não mủ có triệu chứng lâm sàng thường là sốt, li bì, mệt mỏi, trẻ bỏ ăn, quấy khóc và có thể kèm theo viêm long đường hô hấp trên, với những bệnh nhi lớn trên 18 tháng có thể có dấu hiệu hiệu cứng cổ.'
+
+MERGE (o1:symptom {id: 'li_bì_symptom'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r26:isSymptomOf]->(o2)
+SET r26.text = 'Bệnh nhân bị viêm màng não mủ có triệu chứng lâm sàng thường là sốt, li bì, mệt mỏi, trẻ bỏ ăn, quấy khóc và có thể kèm theo viêm long đường hô hấp trên, với những bệnh nhi lớn trên 18 tháng có thể có dấu hiệu hiệu cứng cổ.'
+
+MERGE (o1:symptom {id: 'mệt_mỏi_symptom'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r27:isSymptomOf]->(o2)
+SET r27.text = 'Bệnh nhân bị viêm màng não mủ có triệu chứng lâm sàng thường là sốt, li bì, mệt mỏi, trẻ bỏ ăn, quấy khóc và có thể kèm theo viêm long đường hô hấp trên, với những bệnh nhi lớn trên 18 tháng có thể có dấu hiệu hiệu cứng cổ.'
+
+MERGE (o1:symptom {id: 'trẻ_bỏ_ăn_symptom'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r28:isSymptomOf]->(o2)
+SET r28.text = 'Bệnh nhân bị viêm màng não mủ có triệu chứng lâm sàng thường là sốt, li bì, mệt mỏi, trẻ bỏ ăn, quấy khóc và có thể kèm theo viêm long đường hô hấp trên, với những bệnh nhi lớn trên 18 tháng có thể có dấu hiệu hiệu cứng cổ.'
+
+MERGE (o1:symptom {id: 'quấy_khóc_symptom'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r29:isSymptomOf]->(o2)
+SET r29.text = 'Bệnh nhân bị viêm màng não mủ có triệu chứng lâm sàng thường là sốt, li bì, mệt mỏi, trẻ bỏ ăn, quấy khóc và có thể kèm theo viêm long đường hô hấp trên, với những bệnh nhi lớn trên 18 tháng có thể có dấu hiệu hiệu cứng cổ.'
+
+MERGE (o1:symptom {id: 'viêm_long_đường_hô_hấp_trên_symptom'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r30:isSymptomOf]->(o2)
+SET r30.text = 'Bệnh nhân bị viêm màng não mủ có triệu chứng lâm sàng thường là sốt, li bì, mệt mỏi, trẻ bỏ ăn, quấy khóc và có thể kèm theo viêm long đường hô hấp trên, với những bệnh nhi lớn trên 18 tháng có thể có dấu hiệu hiệu cứng cổ.'
+
+MERGE (o1:symptom {id: 'cứng_cổ_symptom'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r31:isSymptomOf]->(o2)
+SET r31.text = 'Bệnh nhân bị viêm màng não mủ có triệu chứng lâm sàng thường là sốt, li bì, mệt mỏi, trẻ bỏ ăn, quấy khóc và có thể kèm theo viêm long đường hô hấp trên, với những bệnh nhi lớn trên 18 tháng có thể có dấu hiệu hiệu cứng cổ.'
+
+MERGE (o1:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o2:organ {id: 'trẻ_sơ_sinh_organ'})
+MERGE (o1)-[r32:affects]->(o2)
+SET r32.text = 'Với những trẻ sơ sinh và trẻ dưới 3 tháng tuổi bệnh viêm màng não mủ thường xảy ra ở những trẻ sinh non, bị nhiễm khuẩn ối và ngạt sau đẻ.'
+
+MERGE (o1:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o2:organ {id: 'trẻ_dưới_3_tháng_tuổi_organ'})
+MERGE (o1)-[r33:affects]->(o2)
+SET r33.text = 'Với những trẻ sơ sinh và trẻ dưới 3 tháng tuổi bệnh viêm màng não mủ thường xảy ra ở những trẻ sinh non, bị nhiễm khuẩn ối và ngạt sau đẻ.'
+
+MERGE (o1:cause {id: 'sinh_non_cause'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r34:causedBy]->(o2)
+SET r34.text = 'Với những trẻ sơ sinh và trẻ dưới 3 tháng tuổi bệnh viêm màng não mủ thường xảy ra ở những trẻ sinh non, bị nhiễm khuẩn ối và ngạt sau đẻ.'
+
+MERGE (o1:cause {id: 'nhiễm_khuẩn_ối_cause'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r35:causedBy]->(o2)
+SET r35.text = 'Với những trẻ sơ sinh và trẻ dưới 3 tháng tuổi bệnh viêm màng não mủ thường xảy ra ở những trẻ sinh non, bị nhiễm khuẩn ối và ngạt sau đẻ.'
+
+MERGE (o1:cause {id: 'ngạt_sau_đẻ_cause'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r36:causedBy]->(o2)
+SET r36.text = 'Với những trẻ sơ sinh và trẻ dưới 3 tháng tuổi bệnh viêm màng não mủ thường xảy ra ở những trẻ sinh non, bị nhiễm khuẩn ối và ngạt sau đẻ.'
+
+MERGE (o1:symptom {id: 'hội_chứng_nhiễm_khuẩn_symptom'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r37:isSymptomOf]->(o2)
+SET r37.text = 'Khi mắc bệnh, các hội chứng nhiễm khuẩn thường không rõ rệt, trẻ có thể không xuất hiện triệu chứng sốt, thậm chí có trẻ bị hạ thân nhiệt, hội chứng màng não cũng không quá rõ ràng.'
+
+MERGE (o1:symptom {id: 'sốt_symptom'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r38:isSymptomOf]->(o2)
+SET r38.text = 'Khi mắc bệnh, các hội chứng nhiễm khuẩn thường không rõ rệt, trẻ có thể không xuất hiện triệu chứng sốt, thậm chí có trẻ bị hạ thân nhiệt, hội chứng màng não cũng không quá rõ ràng.'
+
+MERGE (o1:symptom {id: 'hạ_thân_nhiệt_symptom'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r39:isSymptomOf]->(o2)
+SET r39.text = 'Khi mắc bệnh, các hội chứng nhiễm khuẩn thường không rõ rệt, trẻ có thể không xuất hiện triệu chứng sốt, thậm chí có trẻ bị hạ thân nhiệt, hội chứng màng não cũng không quá rõ ràng.'
+
+MERGE (o1:symptom {id: 'hội_chứng_màng_não_symptom'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r40:isSymptomOf]->(o2)
+SET r40.text = 'Khi mắc bệnh, các hội chứng nhiễm khuẩn thường không rõ rệt, trẻ có thể không xuất hiện triệu chứng sốt, thậm chí có trẻ bị hạ thân nhiệt, hội chứng màng não cũng không quá rõ ràng.'
+
+MERGE (o1:symptom {id: 'bỏ_bú_symptom'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r41:isSymptomOf]->(o2)
+SET r41.text = 'Trẻ sơ sinh thường bỏ bú, nôn trớ, thở không đều và có những cơn ngưng thở.'
+
+MERGE (o1:symptom {id: 'nôn_trớ_symptom'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r42:isSymptomOf]->(o2)
+SET r42.text = 'Trẻ sơ sinh thường bỏ bú, nôn trớ, thở không đều và có những cơn ngưng thở.'
+
+MERGE (o1:symptom {id: 'thở_không_đều_symptom'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r43:isSymptomOf]->(o2)
+SET r43.text = 'Trẻ sơ sinh thường bỏ bú, nôn trớ, thở không đều và có những cơn ngưng thở.'
+
+MERGE (o1:symptom {id: 'ngưng_thở_symptom'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r44:isSymptomOf]->(o2)
+SET r44.text = 'Trẻ sơ sinh thường bỏ bú, nôn trớ, thở không đều và có những cơn ngưng thở.'
+
+MERGE (o1:symptom {id: 'thóp_bé_phồng_symptom'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r45:isSymptomOf]->(o2)
+SET r45.text = 'Mẹ quan sát có thể thấy thóp bé phồng hoặc căng nhẹ thóp, bụng trướng, tiêu chảy và giảm trương cơ lực, bé giảm hoặc mất các phản xạ sinh lý, một số trường hợp có kèm theo co giật.'
+
+MERGE (o1:symptom {id: 'căng_nhẹ_thóp_symptom'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r46:isSymptomOf]->(o2)
+SET r46.text = 'Mẹ quan sát có thể thấy thóp bé phồng hoặc căng nhẹ thóp, bụng trướng, tiêu chảy và giảm trương cơ lực, bé giảm hoặc mất các phản xạ sinh lý, một số trường hợp có kèm theo co giật.'
+
+MERGE (o1:symptom {id: 'bụng_trướng_symptom'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r47:isSymptomOf]->(o2)
+SET r47.text = 'Mẹ quan sát có thể thấy thóp bé phồng hoặc căng nhẹ thóp, bụng trướng, tiêu chảy và giảm trương cơ lực, bé giảm hoặc mất các phản xạ sinh lý, một số trường hợp có kèm theo co giật.'
+
+MERGE (o1:symptom {id: 'tiêu_chảy_symptom'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r48:isSymptomOf]->(o2)
+SET r48.text = 'Mẹ quan sát có thể thấy thóp bé phồng hoặc căng nhẹ thóp, bụng trướng, tiêu chảy và giảm trương cơ lực, bé giảm hoặc mất các phản xạ sinh lý, một số trường hợp có kèm theo co giật.'
+
+MERGE (o1:symptom {id: 'giảm_trương_cơ_lực_symptom'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r49:isSymptomOf]->(o2)
+SET r49.text = 'Mẹ quan sát có thể thấy thóp bé phồng hoặc căng nhẹ thóp, bụng trướng, tiêu chảy và giảm trương cơ lực, bé giảm hoặc mất các phản xạ sinh lý, một số trường hợp có kèm theo co giật.'
+
+MERGE (o1:symptom {id: 'giảm_phản_xạ_sinh_lý_symptom'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r50:isSymptomOf]->(o2)
+SET r50.text = 'Mẹ quan sát có thể thấy thóp bé phồng hoặc căng nhẹ thóp, bụng trướng, tiêu chảy và giảm trương cơ lực, bé giảm hoặc mất các phản xạ sinh lý, một số trường hợp có kèm theo co giật.'
+
+MERGE (o1:symptom {id: 'mất_phản_xạ_sinh_lý_symptom'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r51:isSymptomOf]->(o2)
+SET r51.text = 'Mẹ quan sát có thể thấy thóp bé phồng hoặc căng nhẹ thóp, bụng trướng, tiêu chảy và giảm trương cơ lực, bé giảm hoặc mất các phản xạ sinh lý, một số trường hợp có kèm theo co giật.'
+
+MERGE (o1:symptom {id: 'co_giật_symptom'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r52:isSymptomOf]->(o2)
+SET r52.text = 'Mẹ quan sát có thể thấy thóp bé phồng hoặc căng nhẹ thóp, bụng trướng, tiêu chảy và giảm trương cơ lực, bé giảm hoặc mất các phản xạ sinh lý, một số trường hợp có kèm theo co giật.'
+
+MERGE (o1:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o2:organ {id: 'trẻ_em_organ'})
+MERGE (o1)-[r53:affects]->(o2)
+SET r53.text = 'Đối với trẻ em, các triệu chứng rõ ràng hơn, bé bị sốt và có thể kèm theo long đường hô hấp trên.'
+
+MERGE (o1:symptom {id: 'sốt_symptom'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r54:isSymptomOf]->(o2)
+SET r54.text = 'Đối với trẻ em, các triệu chứng rõ ràng hơn, bé bị sốt và có thể kèm theo long đường hô hấp trên.'
+
+MERGE (o1:symptom {id: 'viêm_long_đường_hô_hấp_trên_symptom'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r55:isSymptomOf]->(o2)
+SET r55.text = 'Đối với trẻ em, các triệu chứng rõ ràng hơn, bé bị sốt và có thể kèm theo long đường hô hấp trên.'
+
+MERGE (o1:symptom {id: 'quấy_khóc_symptom'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r56:isSymptomOf]->(o2)
+SET r56.text = 'Trẻ hay quấy khóc, khó chịu và li bì, nhiều trẻ mệt mỏi, bỏ ăn kèm da tái xanh.'
+
+MERGE (o1:symptom {id: 'khó_chịu_symptom'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r57:isSymptomOf]->(o2)
+SET r57.text = 'Trẻ hay quấy khóc, khó chịu và li bì, nhiều trẻ mệt mỏi, bỏ ăn kèm da tái xanh.'
+
+MERGE (o1:symptom {id: 'li_bì_symptom'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r58:isSymptomOf]->(o2)
+SET r58.text = 'Trẻ hay quấy khóc, khó chịu và li bì, nhiều trẻ mệt mỏi, bỏ ăn kèm da tái xanh.'
+
+MERGE (o1:symptom {id: 'mệt_mỏi_symptom'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r59:isSymptomOf]->(o2)
+SET r59.text = 'Trẻ hay quấy khóc, khó chịu và li bì, nhiều trẻ mệt mỏi, bỏ ăn kèm da tái xanh.'
+
+MERGE (o1:symptom {id: 'bỏ_ăn_symptom'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r60:isSymptomOf]->(o2)
+SET r60.text = 'Trẻ hay quấy khóc, khó chịu và li bì, nhiều trẻ mệt mỏi, bỏ ăn kèm da tái xanh.'
+
+MERGE (o1:symptom {id: 'da_tái_xanh_symptom'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r61:isSymptomOf]->(o2)
+SET r61.text = 'Trẻ hay quấy khóc, khó chịu và li bì, nhiều trẻ mệt mỏi, bỏ ăn kèm da tái xanh.'
+
+MERGE (o1:symptom {id: 'hội_chứng_màng_não_symptom'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r62:isSymptomOf]->(o2)
+SET r62.text = 'Trẻ có hội chứng màng não, thường nôn và buồn nôn, đau đầu, có các rối loạn về tiêu hóa, trẻ có dấu hiệu sợ ánh sáng, thường nằm ở tư thế cò súng.'
+
+MERGE (o1:symptom {id: 'nôn_symptom'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r63:isSymptomOf]->(o2)
+SET r63.text = 'Trẻ có hội chứng màng não, thường nôn và buồn nôn, đau đầu, có các rối loạn về tiêu hóa, trẻ có dấu hiệu sợ ánh sáng, thường nằm ở tư thế cò súng.'
+
+MERGE (o1:symptom {id: 'buồn_nôn_symptom'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r64:isSymptomOf]->(o2)
+SET r64.text = 'Trẻ có hội chứng màng não, thường nôn và buồn nôn, đau đầu, có các rối loạn về tiêu hóa, trẻ có dấu hiệu sợ ánh sáng, thường nằm ở tư thế cò súng.'
+
+MERGE (o1:symptom {id: 'đau_đầu_symptom'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r65:isSymptomOf]->(o2)
+SET r65.text = 'Trẻ có hội chứng màng não, thường nôn và buồn nôn, đau đầu, có các rối loạn về tiêu hóa, trẻ có dấu hiệu sợ ánh sáng, thường nằm ở tư thế cò súng.'
+
+MERGE (o1:symptom {id: 'rối_loạn_tiêu_hóa_symptom'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r66:isSymptomOf]->(o2)
+SET r66.text = 'Trẻ có hội chứng màng não, thường nôn và buồn nôn, đau đầu, có các rối loạn về tiêu hóa, trẻ có dấu hiệu sợ ánh sáng, thường nằm ở tư thế cò súng.'
+
+MERGE (o1:symptom {id: 'sợ_ánh_sáng_symptom'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r67:isSymptomOf]->(o2)
+SET r67.text = 'Trẻ có hội chứng màng não, thường nôn và buồn nôn, đau đầu, có các rối loạn về tiêu hóa, trẻ có dấu hiệu sợ ánh sáng, thường nằm ở tư thế cò súng.'
+
+MERGE (o1:symptom {id: 'tư_thế_cò_súng_symptom'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r68:isSymptomOf]->(o2)
+SET r68.text = 'Trẻ có hội chứng màng não, thường nôn và buồn nôn, đau đầu, có các rối loạn về tiêu hóa, trẻ có dấu hiệu sợ ánh sáng, thường nằm ở tư thế cò súng.'
+
+MERGE (o1:symptom {id: 'gáy_cứng_symptom'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r69:isSymptomOf]->(o2)
+SET r69.text = 'Các dấu hiệu thực thể khác có thể gồm gáy cứng, có dấu hiệu Kernig, vạch màng não, co giật, liệt khu trú và rối loạn tri giác hoặc hôn mê, ban xuất huyết hoại tử hình sao.'
+
+MERGE (o1:symptom {id: 'dấu_hiệu_kernig_symptom'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r70:isSymptomOf]->(o2)
+SET r70.text = 'Các dấu hiệu thực thể khác có thể gồm gáy cứng, có dấu hiệu Kernig, vạch màng não, co giật, liệt khu trú và rối loạn tri giác hoặc hôn mê, ban xuất huyết hoại tử hình sao.'
+
+MERGE (o1:symptom {id: 'vạch_màng_não_symptom'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r71:isSymptomOf]->(o2)
+SET r71.text = 'Các dấu hiệu thực thể khác có thể gồm gáy cứng, có dấu hiệu Kernig, vạch màng não, co giật, liệt khu trú và rối loạn tri giác hoặc hôn mê, ban xuất huyết hoại tử hình sao.'
+
+MERGE (o1:symptom {id: 'co_giật_symptom'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r72:isSymptomOf]->(o2)
+SET r72.text = 'Các dấu hiệu thực thể khác có thể gồm gáy cứng, có dấu hiệu Kernig, vạch màng não, co giật, liệt khu trú và rối loạn tri giác hoặc hôn mê, ban xuất huyết hoại tử hình sao.'
+
+MERGE (o1:symptom {id: 'liệt_khu_trú_symptom'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r73:isSymptomOf]->(o2)
+SET r73.text = 'Các dấu hiệu thực thể khác có thể gồm gáy cứng, có dấu hiệu Kernig, vạch màng não, co giật, liệt khu trú và rối loạn tri giác hoặc hôn mê, ban xuất huyết hoại tử hình sao.'
+
+MERGE (o1:symptom {id: 'rối_loạn_tri_giác_symptom'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r74:isSymptomOf]->(o2)
+SET r74.text = 'Các dấu hiệu thực thể khác có thể gồm gáy cứng, có dấu hiệu Kernig, vạch màng não, co giật, liệt khu trú và rối loạn tri giác hoặc hôn mê, ban xuất huyết hoại tử hình sao.'
+
+MERGE (o1:cause {id: 'hemophilus_influenza_type_b_(hib)_cause'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r75:causedBy]->(o2)
+SET r75.text = 'Có nhiều loại vi khuẩn có thể gây nên bệnh viêm màng não mủ như Hemophilus influenza type b (Hib), vi khuẩn phế cầu, não mô cầu, tụ cầu khuẩn và các loại vi khuẩn gram âm.'
+
+MERGE (o1:cause {id: 'vi_khuẩn_phế_cầu_cause'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r76:causedBy]->(o2)
+SET r76.text = 'Có nhiều loại vi khuẩn có thể gây nên bệnh viêm màng não mủ như Hemophilus influenza type b (Hib), vi khuẩn phế cầu, não mô cầu, tụ cầu khuẩn và các loại vi khuẩn gram âm.'
+
+MERGE (o1:cause {id: 'não_mô_cầu_cause'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r77:causedBy]->(o2)
+SET r77.text = 'Có nhiều loại vi khuẩn có thể gây nên bệnh viêm màng não mủ như Hemophilus influenza type b (Hib), vi khuẩn phế cầu, não mô cầu, tụ cầu khuẩn và các loại vi khuẩn gram âm.'
+
+MERGE (o1:cause {id: 'tụ_cầu_khuẩn_cause'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r78:causedBy]->(o2)
+SET r78.text = 'Có nhiều loại vi khuẩn có thể gây nên bệnh viêm màng não mủ như Hemophilus influenza type b (Hib), vi khuẩn phế cầu, não mô cầu, tụ cầu khuẩn và các loại vi khuẩn gram âm.'
+
+MERGE (o1:cause {id: 'các_loại_vi_khuẩn_gram_âm_cause'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r79:causedBy]->(o2)
+SET r79.text = 'Có nhiều loại vi khuẩn có thể gây nên bệnh viêm màng não mủ như Hemophilus influenza type b (Hib), vi khuẩn phế cầu, não mô cầu, tụ cầu khuẩn và các loại vi khuẩn gram âm.'
+
+MERGE (o1:lifestyle {id: 'tuổi_lifestyle'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r80:associatedWith]->(o2)
+SET r80.text = 'Tần suất mắc của từng chủng vi khuẩn có liên quan đến tuổi cũng như một số yếu tố về đề kháng của cơ thể.'
+
+MERGE (o1:lifestyle {id: 'đề_kháng_của_cơ_thể_lifestyle'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r81:associatedWith]->(o2)
+SET r81.text = 'Tần suất mắc của từng chủng vi khuẩn có liên quan đến tuổi cũng như một số yếu tố về đề kháng của cơ thể.'
+
+MERGE (o1:cause {id: 'haemophilus_influenzae_type_b_(hib)_cause'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r82:causedBy]->(o2)
+SET r82.text = 'Do mắc vi khuẩn Hib: Vi khuẩn Haemophilus influenzae type B (Hib) được biết đến là nguyên nhân gây ra viêm màng não mủ ở người, vi khuẩn này khu trú ở mũi họng và dễ dàng lây truyền từ người này qua người khác thông qua đường hô hấp hay dịch mũi họng.'
+
+MERGE (o1:cause {id: 'vi_khuẩn_này_cause'})
+MERGE (o2:organ {id: 'mũi_họng_organ'})
+MERGE (o1)-[r83:locatedIn]->(o2)
+SET r83.text = 'Do mắc vi khuẩn Hib: Vi khuẩn Haemophilus influenzae type B (Hib) được biết đến là nguyên nhân gây ra viêm màng não mủ ở người, vi khuẩn này khu trú ở mũi họng và dễ dàng lây truyền từ người này qua người khác thông qua đường hô hấp hay dịch mũi họng.'
+
+MERGE (o1:cause {id: 'vi_khuẩn_này_cause'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r84:causedBy]->(o2)
+SET r84.text = 'Do mắc vi khuẩn Hib: Vi khuẩn Haemophilus influenzae type B (Hib) được biết đến là nguyên nhân gây ra viêm màng não mủ ở người, vi khuẩn này khu trú ở mũi họng và dễ dàng lây truyền từ người này qua người khác thông qua đường hô hấp hay dịch mũi họng.'
+
+MERGE (o1:cause {id: 'vi_khuẩn_này_cause'})
+MERGE (o2:organ {id: 'đường_hô_hấp_organ'})
+MERGE (o1)-[r85:spreadsThrough]->(o2)
+SET r85.text = 'Do mắc vi khuẩn Hib: Vi khuẩn Haemophilus influenzae type B (Hib) được biết đến là nguyên nhân gây ra viêm màng não mủ ở người, vi khuẩn này khu trú ở mũi họng và dễ dàng lây truyền từ người này qua người khác thông qua đường hô hấp hay dịch mũi họng.'
+
+MERGE (o1:cause {id: 'vi_khuẩn_này_cause'})
+MERGE (o2:organ {id: 'dịch_mũi_họng_organ'})
+MERGE (o1)-[r86:spreadsThrough]->(o2)
+SET r86.text = 'Do mắc vi khuẩn Hib: Vi khuẩn Haemophilus influenzae type B (Hib) được biết đến là nguyên nhân gây ra viêm màng não mủ ở người, vi khuẩn này khu trú ở mũi họng và dễ dàng lây truyền từ người này qua người khác thông qua đường hô hấp hay dịch mũi họng.'
+
+MERGE (o1:cause {id: 'vi_khuẩn_hib_dạng_có_vỏ_cause'})
+MERGE (o2:disease {id: 'bệnh_nhiễm_trùng_có_xâm_lấn_do_hib_disease'})
+MERGE (o1)-[r87:causedBy]->(o2)
+SET r87.text = 'Từ năm 1930, các nhà khoa học tìm ra 2 dạng của vi khuẩn Hib là loại có vỏ và không có vỏ, gần như các bệnh nhiễm trùng có xâm lấn do Hib đều do vi khuẩn Hib dạng có vỏ với chủng huyết thanh B mang độc lực cao nhất gây ra (H. influenzae B).'
+
+MERGE (o1:cause {id: 'chủng_huyết_thanh_b_cause'})
+MERGE (o2:disease {id: 'bệnh_nhiễm_trùng_có_xâm_lấn_do_hib_disease'})
+MERGE (o1)-[r88:causedBy]->(o2)
+SET r88.text = 'Từ năm 1930, các nhà khoa học tìm ra 2 dạng của vi khuẩn Hib là loại có vỏ và không có vỏ, gần như các bệnh nhiễm trùng có xâm lấn do Hib đều do vi khuẩn Hib dạng có vỏ với chủng huyết thanh B mang độc lực cao nhất gây ra (H. influenzae B).'
+
+MERGE (o1:cause {id: 'vi_khuẩn_hib_cause'})
+MERGE (o2:disease {id: 'bệnh_ở_người_disease'})
+MERGE (o1)-[r89:causedBy]->(o2)
+SET r89.text = 'Vi khuẩn này có khả năng lây lan nhanh và gây bệnh ở người. Khi xâm nhập vào cơ thể người chưa có miễn dịch, lớp vỏ này giúp vi khuẩn Hib tránh không bị tiêu diệt bởi các bạch huyết cầu và hệ thống complement.'
+
+MERGE (o1:cause {id: 'lớp_vỏ_cause'})
+MERGE (o2:treatment {id: 'tiêu_diệt_bởi_các_bạch_huyết_cầu_treatment'})
+MERGE (o1)-[r90:preventedBy]->(o2)
+SET r90.text = 'Vi khuẩn này có khả năng lây lan nhanh và gây bệnh ở người. Khi xâm nhập vào cơ thể người chưa có miễn dịch, lớp vỏ này giúp vi khuẩn Hib tránh không bị tiêu diệt bởi các bạch huyết cầu và hệ thống complement.'
+
+MERGE (o1:cause {id: 'lớp_vỏ_cause'})
+MERGE (o2:treatment {id: 'tiêu_diệt_bởi_hệ_thống_complement_treatment'})
+MERGE (o1)-[r91:preventedBy]->(o2)
+SET r91.text = 'Vi khuẩn này có khả năng lây lan nhanh và gây bệnh ở người. Khi xâm nhập vào cơ thể người chưa có miễn dịch, lớp vỏ này giúp vi khuẩn Hib tránh không bị tiêu diệt bởi các bạch huyết cầu và hệ thống complement.'
+
+MERGE (o1:disease {id: 'viêm_màng_não_mủ_do_hib_disease'})
+MERGE (o2:organ {id: 'bộ_não_của_trẻ_organ'})
+MERGE (o1)-[r92:affects]->(o2)
+SET r92.text = 'Viêm màng não mủ do Hib thường xảy ra ở trẻ nhũ nhi và trẻ nhỏ từ 1 đến 36 tháng, lúc này bộ não của trẻ còn non nớt và nếu trẻ chưa được tiêm phòng và chưa có kháng thể.'
+
+MERGE (o1:disease {id: 'viêm_màng_não_mủ_do_hib_disease'})
+MERGE (o2:treatment {id: 'tiêm_phòng_treatment'})
+MERGE (o1)-[r93:preventedBy]->(o2)
+SET r93.text = 'Viêm màng não mủ do Hib thường xảy ra ở trẻ nhũ nhi và trẻ nhỏ từ 1 đến 36 tháng, lúc này bộ não của trẻ còn non nớt và nếu trẻ chưa được tiêm phòng và chưa có kháng thể.'
+
+MERGE (o1:disease {id: 'viêm_màng_não_mủ_do_hib_disease'})
+MERGE (o2:treatment {id: 'kháng_thể_treatment'})
+MERGE (o1)-[r94:preventedBy]->(o2)
+SET r94.text = 'Viêm màng não mủ do Hib thường xảy ra ở trẻ nhũ nhi và trẻ nhỏ từ 1 đến 36 tháng, lúc này bộ não của trẻ còn non nớt và nếu trẻ chưa được tiêm phòng và chưa có kháng thể.'
+
+MERGE (o1:cause {id: 'nhiễm_vi_khuẩn_hib_cause'})
+MERGE (o2:symptom {id: 'biến_chứng_nặng_symptom'})
+MERGE (o1)-[r95:causedBy]->(o2)
+SET r95.text = 'Nếu trẻ không may nhiễm vi khuẩn Hib có thể dẫn tới những biến chứng nặng, thậm chí là tử vong nhanh chóng.'
+
+MERGE (o1:cause {id: 'nhiễm_vi_khuẩn_hib_cause'})
+MERGE (o2:symptom {id: 'tử_vong_nhanh_chóng_symptom'})
+MERGE (o1)-[r96:causedBy]->(o2)
+SET r96.text = 'Nếu trẻ không may nhiễm vi khuẩn Hib có thể dẫn tới những biến chứng nặng, thậm chí là tử vong nhanh chóng.'
+
+MERGE (o1:cause {id: 'vi_khuẩn_e.coli_cause'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r97:causedBy]->(o2)
+SET r97.text = 'Do mắc vi khuẩn E.Coli: Vi khuẩn E.coli thường cư trú trong hệ tiêu hóa, có thể gây nên viêm màng não mủ cho trẻ, đặc biệt là ở trẻ sơ sinh và trẻ nhỏ.'
+
+MERGE (o1:cause {id: 'vi_khuẩn_e.coli_cause'})
+MERGE (o2:organ {id: 'hệ_tiêu_hóa_organ'})
+MERGE (o1)-[r98:locatedIn]->(o2)
+SET r98.text = 'Do mắc vi khuẩn E.Coli: Vi khuẩn E.coli thường cư trú trong hệ tiêu hóa, có thể gây nên viêm màng não mủ cho trẻ, đặc biệt là ở trẻ sơ sinh và trẻ nhỏ.'
+
+MERGE (o1:cause {id: 'vi_khuẩn_e.coli_cause'})
+MERGE (o2:lifestyle {id: 'trẻ_sơ_sinh_lifestyle'})
+MERGE (o1)-[r99:affects]->(o2)
+SET r99.text = 'Do mắc vi khuẩn E.Coli: Vi khuẩn E.coli thường cư trú trong hệ tiêu hóa, có thể gây nên viêm màng não mủ cho trẻ, đặc biệt là ở trẻ sơ sinh và trẻ nhỏ.'
+
+MERGE (o1:cause {id: 'vi_khuẩn_e.coli_cause'})
+MERGE (o2:lifestyle {id: 'trẻ_nhỏ_lifestyle'})
+MERGE (o1)-[r100:affects]->(o2)
+SET r100.text = 'Do mắc vi khuẩn E.Coli: Vi khuẩn E.coli thường cư trú trong hệ tiêu hóa, có thể gây nên viêm màng não mủ cho trẻ, đặc biệt là ở trẻ sơ sinh và trẻ nhỏ.'
+
+MERGE (o1:disease {id: 'viêm_màng_não_mủ_do_e.coli_disease'})
+MERGE (o2:symptom {id: 'bệnh_cảnh_nặng_symptom'})
+MERGE (o1)-[r101:isSymptomOf]->(o2)
+SET r101.text = 'Trẻ mắc viêm màng não mủ do E.coli thường nằm trong bệnh cảnh nặng, nhiễm trùng huyết gây tử vong cao.'
+
+MERGE (o1:disease {id: 'viêm_màng_não_mủ_do_e.coli_disease'})
+MERGE (o2:symptom {id: 'nhiễm_trùng_huyết_symptom'})
+MERGE (o1)-[r102:isSymptomOf]->(o2)
+SET r102.text = 'Trẻ mắc viêm màng não mủ do E.coli thường nằm trong bệnh cảnh nặng, nhiễm trùng huyết gây tử vong cao.'
+
+MERGE (o1:symptom {id: 'nhiễm_trùng_huyết_symptom'})
+MERGE (o2:symptom {id: 'tử_vong_cao_symptom'})
+MERGE (o1)-[r103:causedBy]->(o2)
+SET r103.text = 'Trẻ mắc viêm màng não mủ do E.coli thường nằm trong bệnh cảnh nặng, nhiễm trùng huyết gây tử vong cao.'
+
+MERGE (o1:cause {id: 'vi_khuẩn_e.coli_cause'})
+MERGE (o2:food {id: 'thực_phẩm_tươi_sống_food'})
+MERGE (o1)-[r104:locatedIn]->(o2)
+SET r104.text = 'Vi khuẩn E.Coli thường có trong thực phẩm tươi sống, thịt và sữa.'
+
+MERGE (o1:cause {id: 'vi_khuẩn_e.coli_cause'})
+MERGE (o2:food {id: 'thịt_food'})
+MERGE (o1)-[r105:locatedIn]->(o2)
+SET r105.text = 'Vi khuẩn E.Coli thường có trong thực phẩm tươi sống, thịt và sữa.'
+
+MERGE (o1:cause {id: 'vi_khuẩn_e.coli_cause'})
+MERGE (o2:food {id: 'sữa_food'})
+MERGE (o1)-[r106:locatedIn]->(o2)
+SET r106.text = 'Vi khuẩn E.Coli thường có trong thực phẩm tươi sống, thịt và sữa.'
+
+MERGE (o1:lifestyle {id: 'suy_giảm_miễn_dịch_lifestyle'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r107:associatedWith]->(o2)
+SET r107.text = 'Những bệnh nhân bị suy giảm miễn dịch hay đang điều trị với các thuốc ức chế miễn dịch, người có sức đề kháng yếu thường là đối tượng có nguy cơ cao mắc bệnh.'
+
+MERGE (o1:treatment {id: 'điều_trị_với_các_thuốc_ức_chế_miễn_dịch_treatment'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r108:associatedWith]->(o2)
+SET r108.text = 'Những bệnh nhân bị suy giảm miễn dịch hay đang điều trị với các thuốc ức chế miễn dịch, người có sức đề kháng yếu thường là đối tượng có nguy cơ cao mắc bệnh.'
+
+MERGE (o1:lifestyle {id: 'sức_đề_kháng_yếu_lifestyle'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r109:associatedWith]->(o2)
+SET r109.text = 'Những bệnh nhân bị suy giảm miễn dịch hay đang điều trị với các thuốc ức chế miễn dịch, người có sức đề kháng yếu thường là đối tượng có nguy cơ cao mắc bệnh.'
+
+MERGE (o1:cause {id: 'listeria_monocytogenes_cause'})
+MERGE (o2:disease {id: 'viêm_màng_não_disease'})
+MERGE (o1)-[r110:causedBy]->(o2)
+SET r110.text = 'Do mắc vi khuẩn Listeria Monocytogenes: Listeria là một loại vi khuẩn nhỏ hiếu khí, không có vỏ bọc, kháng acid, không hình thành bào tử, chúng thường tồn tại trong ruột người hoặc ở động vật có vú, chim, hươu và các loại giáp xác, có một số loài listeria nhưng Listeria Monocytogenes là vi khuẩn gây bệnh chính ở người.'
+
+MERGE (o1:cause {id: 'listeria_monocytogenes_cause'})
+MERGE (o2:organ {id: 'ruột_người_organ'})
+MERGE (o1)-[r111:locatedIn]->(o2)
+SET r111.text = 'Do mắc vi khuẩn Listeria Monocytogenes: Listeria là một loại vi khuẩn nhỏ hiếu khí, không có vỏ bọc, kháng acid, không hình thành bào tử, chúng thường tồn tại trong ruột người hoặc ở động vật có vú, chim, hươu và các loại giáp xác, có một số loài listeria nhưng Listeria Monocytogenes là vi khuẩn gây bệnh chính ở người.'
+
+MERGE (o1:cause {id: 'listeria_monocytogenes_cause'})
+MERGE (o2:lifestyle {id: 'động_vật_có_vú_lifestyle'})
+MERGE (o1)-[r112:locatedIn]->(o2)
+SET r112.text = 'Do mắc vi khuẩn Listeria Monocytogenes: Listeria là một loại vi khuẩn nhỏ hiếu khí, không có vỏ bọc, kháng acid, không hình thành bào tử, chúng thường tồn tại trong ruột người hoặc ở động vật có vú, chim, hươu và các loại giáp xác, có một số loài listeria nhưng Listeria Monocytogenes là vi khuẩn gây bệnh chính ở người.'
+
+MERGE (o1:cause {id: 'listeria_monocytogenes_cause'})
+MERGE (o2:lifestyle {id: 'chim_lifestyle'})
+MERGE (o1)-[r113:locatedIn]->(o2)
+SET r113.text = 'Do mắc vi khuẩn Listeria Monocytogenes: Listeria là một loại vi khuẩn nhỏ hiếu khí, không có vỏ bọc, kháng acid, không hình thành bào tử, chúng thường tồn tại trong ruột người hoặc ở động vật có vú, chim, hươu và các loại giáp xác, có một số loài listeria nhưng Listeria Monocytogenes là vi khuẩn gây bệnh chính ở người.'
+
+MERGE (o1:cause {id: 'listeria_monocytogenes_cause'})
+MERGE (o2:lifestyle {id: 'hươu_lifestyle'})
+MERGE (o1)-[r114:locatedIn]->(o2)
+SET r114.text = 'Do mắc vi khuẩn Listeria Monocytogenes: Listeria là một loại vi khuẩn nhỏ hiếu khí, không có vỏ bọc, kháng acid, không hình thành bào tử, chúng thường tồn tại trong ruột người hoặc ở động vật có vú, chim, hươu và các loại giáp xác, có một số loài listeria nhưng Listeria Monocytogenes là vi khuẩn gây bệnh chính ở người.'
+
+MERGE (o1:cause {id: 'listeria_monocytogenes_cause'})
+MERGE (o2:food {id: 'các_loại_giáp_xác_food'})
+MERGE (o1)-[r115:locatedIn]->(o2)
+SET r115.text = 'Do mắc vi khuẩn Listeria Monocytogenes: Listeria là một loại vi khuẩn nhỏ hiếu khí, không có vỏ bọc, kháng acid, không hình thành bào tử, chúng thường tồn tại trong ruột người hoặc ở động vật có vú, chim, hươu và các loại giáp xác, có một số loài listeria nhưng Listeria Monocytogenes là vi khuẩn gây bệnh chính ở người.'
+
+MERGE (o1:cause {id: 'vi_khuẩn_này_cause'})
+MERGE (o2:lifestyle {id: 'môi_trường_lifestyle'})
+MERGE (o1)-[r116:locatedIn]->(o2)
+SET r116.text = 'Vi khuẩn này rất phổ biến trong môi trường, khả năng lây nhiễm nhiều trong quá trình chế biến và sản xuất thực phẩm, đặc biệt các thực phẩm lạnh mà không cần qua nấu trước khi ăn.'
+
+MERGE (o1:cause {id: 'vi_khuẩn_này_cause'})
+MERGE (o2:lifestyle {id: 'quá_trình_chế_biến_và_sản_xuất_thực_phẩm_lifestyle'})
+MERGE (o1)-[r117:spreadsThrough]->(o2)
+SET r117.text = 'Vi khuẩn này rất phổ biến trong môi trường, khả năng lây nhiễm nhiều trong quá trình chế biến và sản xuất thực phẩm, đặc biệt các thực phẩm lạnh mà không cần qua nấu trước khi ăn.'
+
+MERGE (o1:cause {id: 'vi_khuẩn_này_cause'})
+MERGE (o2:food {id: 'thực_phẩm_lạnh_food'})
+MERGE (o1)-[r118:locatedIn]->(o2)
+SET r118.text = 'Vi khuẩn này rất phổ biến trong môi trường, khả năng lây nhiễm nhiều trong quá trình chế biến và sản xuất thực phẩm, đặc biệt các thực phẩm lạnh mà không cần qua nấu trước khi ăn.'
+
+MERGE (o1:cause {id: 'vi_khuẩn_này_cause'})
+MERGE (o2:disease {id: 'viêm_màng_não_disease'})
+MERGE (o1)-[r119:causedBy]->(o2)
+SET r119.text = 'Vi khuẩn này gây lên đến 20% trường hợp viêm màng não ở trẻ và ở bệnh nhân trên 60 tuổi.'
+
+MERGE (o1:cause {id: 'vi_khuẩn_này_cause'})
+MERGE (o2:lifestyle {id: 'trẻ_lifestyle'})
+MERGE (o1)-[r120:affects]->(o2)
+SET r120.text = 'Vi khuẩn này gây lên đến 20% trường hợp viêm màng não ở trẻ và ở bệnh nhân trên 60 tuổi.'
+
+MERGE (o1:cause {id: 'vi_khuẩn_này_cause'})
+MERGE (o2:lifestyle {id: 'bệnh_nhân_trên_60_tuổi_lifestyle'})
+MERGE (o1)-[r121:affects]->(o2)
+SET r121.text = 'Vi khuẩn này gây lên đến 20% trường hợp viêm màng não ở trẻ và ở bệnh nhân trên 60 tuổi.'
+
+MERGE (o1:symptom {id: 'thay_đổi_ý_thức_symptom'})
+MERGE (o2:disease {id: 'viêm_màng_não_disease'})
+MERGE (o1)-[r122:isSymptomOf]->(o2)
+SET r122.text = 'Người bệnh có những biểu hiện về thay đổi ý thức, liệt dây thần kinh sọ, mất vận động hoặc cảm giác…'
+
+MERGE (o1:symptom {id: 'liệt_dây_thần_kinh_sọ_symptom'})
+MERGE (o2:disease {id: 'viêm_màng_não_disease'})
+MERGE (o1)-[r123:isSymptomOf]->(o2)
+SET r123.text = 'Người bệnh có những biểu hiện về thay đổi ý thức, liệt dây thần kinh sọ, mất vận động hoặc cảm giác…'
+
+MERGE (o1:symptom {id: 'mất_vận_động_symptom'})
+MERGE (o2:disease {id: 'viêm_màng_não_disease'})
+MERGE (o1)-[r124:isSymptomOf]->(o2)
+SET r124.text = 'Người bệnh có những biểu hiện về thay đổi ý thức, liệt dây thần kinh sọ, mất vận động hoặc cảm giác…'
+
+MERGE (o1:symptom {id: 'mất_cảm_giác_symptom'})
+MERGE (o2:disease {id: 'viêm_màng_não_disease'})
+MERGE (o1)-[r125:isSymptomOf]->(o2)
+SET r125.text = 'Người bệnh có những biểu hiện về thay đổi ý thức, liệt dây thần kinh sọ, mất vận động hoặc cảm giác…'
+
+MERGE (o1:cause {id: 'phế_cầu_khuẩn_(streptococcus_pneumonia)_cause'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r126:causedBy]->(o2)
+SET r126.text = 'Do mắc phế cầu khuẩn: Phế cầu khuẩn (Streptococcus pneumonia) được xem là nguyên nhân hàng đầu gây viêm màng não mủ tại các quốc gia đã chủng ngừa Haemophilus influenzae tuýp b.'
+
+MERGE (o1:disease {id: 'viêm_màng_não_mủ_do_phế_cầu_disease'})
+MERGE (o2:lifestyle {id: '1-3/1.000_dân_lifestyle'})
+MERGE (o1)-[r127:affects]->(o2)
+SET r127.text = 'Tỷ lệ người bị viêm màng não mủ do phế cầu khoảng 1-3/1.000 dân.'
+
+MERGE (o1:cause {id: 'vi_khuẩn_phế_cầu_cause'})
+MERGE (o2:organ {id: 'niêm_mạc_họng_organ'})
+MERGE (o1)-[r128:locatedIn]->(o2)
+SET r128.text = 'Vi khuẩn phế cầu thường cư trú ở niêm mạc họng gây viêm xoang và viêm tai giữa, từ đó tấn công lên dịch não tủy và gây nên bệnh viêm màng não mủ'
+
+MERGE (o1:cause {id: 'vi_khuẩn_phế_cầu_cause'})
+MERGE (o2:disease {id: 'viêm_xoang_disease'})
+MERGE (o1)-[r129:causedBy]->(o2)
+SET r129.text = 'Vi khuẩn phế cầu thường cư trú ở niêm mạc họng gây viêm xoang và viêm tai giữa, từ đó tấn công lên dịch não tủy và gây nên bệnh viêm màng não mủ'
+
+MERGE (o1:cause {id: 'vi_khuẩn_phế_cầu_cause'})
+MERGE (o2:disease {id: 'viêm_tai_giữa_disease'})
+MERGE (o1)-[r130:causedBy]->(o2)
+SET r130.text = 'Vi khuẩn phế cầu thường cư trú ở niêm mạc họng gây viêm xoang và viêm tai giữa, từ đó tấn công lên dịch não tủy và gây nên bệnh viêm màng não mủ'
+
+MERGE (o1:cause {id: 'vi_khuẩn_phế_cầu_cause'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r131:causedBy]->(o2)
+SET r131.text = 'Vi khuẩn phế cầu thường cư trú ở niêm mạc họng gây viêm xoang và viêm tai giữa, từ đó tấn công lên dịch não tủy và gây nên bệnh viêm màng não mủ'
+
+MERGE (o1:disease {id: 'viêm_màng_não_mủ_do_não_mô_cầu_khuẩn_disease'})
+MERGE (o2:lifestyle {id: 'trẻ_từ_6_đến_12_tháng_tuổi_lifestyle'})
+MERGE (o1)-[r132:affects]->(o2)
+SET r132.text = 'Do não mô cầu khuẩn: Viêm màng não mủ do não mô cầu khuẩn thường xảy ra ở trẻ từ 6 đến 12 tháng tuổi.'
+
+MERGE (o1:disease {id: 'viêm_màng_não_mủ_do_não_mô_cầu_khuẩn_disease'})
+MERGE (o2:lifestyle {id: 'trẻ_trên_1_tuổi_lifestyle'})
+MERGE (o1)-[r133:affects]->(o2)
+SET r133.text = 'Với những trẻ trên 1 tuổi có mắc nhưng ở tỷ lệ thấp hơn.'
+
+MERGE (o1:disease {id: 'viêm_màng_não_mủ_do_não_mô_cầu_khuẩn_disease'})
+MERGE (o2:lifestyle {id: 'giọt_bắn_lifestyle'})
+MERGE (o1)-[r134:spreadsThrough]->(o2)
+SET r134.text = 'Bệnh lây trực tiếp từ người qua người thông qua giọt bắn.'
+
+MERGE (o1:symptom {id: 'ban_xuất_huyết_hình_sao_symptom'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_do_não_mô_cầu_disease'})
+MERGE (o1)-[r135:isSymptomOf]->(o2)
+SET r135.text = 'Người bị viêm màng não mủ do não mô cầu thường có dấu hiệu đặc trưng là có ban xuất huyết hình sao.'
+
+MERGE (o1:disease {id: 'viêm_màng_não_mủ_do_não_mô_cầu_disease'})
+MERGE (o2:symptom {id: 'tử_vong_cao_symptom'})
+MERGE (o1)-[r136:isSymptomOf]->(o2)
+SET r136.text = 'Tỷ lệ tử vong cao, đặc biệt có thể tử vong trong vòng 24h sau khi nhập viện.'
+
+MERGE (o1:disease {id: 'viêm_màng_não_mủ_do_não_mô_cầu_disease'})
+MERGE (o2:symptom {id: 'tử_vong_trong_vòng_24h_sau_khi_nhập_viện_symptom'})
+MERGE (o1)-[r137:isSymptomOf]->(o2)
+SET r137.text = 'Tỷ lệ tử vong cao, đặc biệt có thể tử vong trong vòng 24h sau khi nhập viện.'
+
+MERGE (o1:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o2:symptom {id: 'bệnh_nguy_hiểm_symptom'})
+MERGE (o1)-[r138:isSymptomOf]->(o2)
+SET r138.text = 'Viêm màng não mủ là bệnh nguy hiểm với nhiều tác nhân gây bệnh.'
+
+MERGE (o1:cause {id: 'vi_khuẩn_gây_bệnh_cause'})
+MERGE (o2:organ {id: 'tai_organ'})
+MERGE (o1)-[r139:locatedIn]->(o2)
+SET r139.text = 'Các loại vi khuẩn gây bệnh có thể đi từ tai, mũi, họng, phổi hoặc theo đường máu vào não hoặc theo các đường kế cận từ các ổ nhiễm khuẩn cạnh màng não hoặc đi trực tiếp vào não thông qua các chấn thương sọ não hoặc nứt sọ não.'
+
+MERGE (o1:cause {id: 'vi_khuẩn_gây_bệnh_cause'})
+MERGE (o2:organ {id: 'mũi_organ'})
+MERGE (o1)-[r140:locatedIn]->(o2)
+SET r140.text = 'Các loại vi khuẩn gây bệnh có thể đi từ tai, mũi, họng, phổi hoặc theo đường máu vào não hoặc theo các đường kế cận từ các ổ nhiễm khuẩn cạnh màng não hoặc đi trực tiếp vào não thông qua các chấn thương sọ não hoặc nứt sọ não.'
+
+MERGE (o1:cause {id: 'vi_khuẩn_gây_bệnh_cause'})
+MERGE (o2:organ {id: 'họng_organ'})
+MERGE (o1)-[r141:locatedIn]->(o2)
+SET r141.text = 'Các loại vi khuẩn gây bệnh có thể đi từ tai, mũi, họng, phổi hoặc theo đường máu vào não hoặc theo các đường kế cận từ các ổ nhiễm khuẩn cạnh màng não hoặc đi trực tiếp vào não thông qua các chấn thương sọ não hoặc nứt sọ não.'
+
+MERGE (o1:cause {id: 'vi_khuẩn_gây_bệnh_cause'})
+MERGE (o2:organ {id: 'phổi_organ'})
+MERGE (o1)-[r142:locatedIn]->(o2)
+SET r142.text = 'Các loại vi khuẩn gây bệnh có thể đi từ tai, mũi, họng, phổi hoặc theo đường máu vào não hoặc theo các đường kế cận từ các ổ nhiễm khuẩn cạnh màng não hoặc đi trực tiếp vào não thông qua các chấn thương sọ não hoặc nứt sọ não.'
+
+MERGE (o1:cause {id: 'vi_khuẩn_gây_bệnh_cause'})
+MERGE (o2:organ {id: 'đường_máu_organ'})
+MERGE (o1)-[r143:spreadsThrough]->(o2)
+SET r143.text = 'Các loại vi khuẩn gây bệnh có thể đi từ tai, mũi, họng, phổi hoặc theo đường máu vào não hoặc theo các đường kế cận từ các ổ nhiễm khuẩn cạnh màng não hoặc đi trực tiếp vào não thông qua các chấn thương sọ não hoặc nứt sọ não.'
+
+MERGE (o1:cause {id: 'vi_khuẩn_gây_bệnh_cause'})
+MERGE (o2:organ {id: 'não_organ'})
+MERGE (o1)-[r144:locatedIn]->(o2)
+SET r144.text = 'Các loại vi khuẩn gây bệnh có thể đi từ tai, mũi, họng, phổi hoặc theo đường máu vào não hoặc theo các đường kế cận từ các ổ nhiễm khuẩn cạnh màng não hoặc đi trực tiếp vào não thông qua các chấn thương sọ não hoặc nứt sọ não.'
+
+MERGE (o1:cause {id: 'vi_khuẩn_gây_bệnh_cause'})
+MERGE (o2:organ {id: 'các_đường_kế_cận_từ_các_ổ_nhiễm_khuẩn_cạnh_màng_não_organ'})
+MERGE (o1)-[r145:spreadsThrough]->(o2)
+SET r145.text = 'Các loại vi khuẩn gây bệnh có thể đi từ tai, mũi, họng, phổi hoặc theo đường máu vào não hoặc theo các đường kế cận từ các ổ nhiễm khuẩn cạnh màng não hoặc đi trực tiếp vào não thông qua các chấn thương sọ não hoặc nứt sọ não.'
+
+MERGE (o1:cause {id: 'vi_khuẩn_gây_bệnh_cause'})
+MERGE (o2:symptom {id: 'chấn_thương_sọ_não_symptom'})
+MERGE (o1)-[r146:spreadsThrough]->(o2)
+SET r146.text = 'Các loại vi khuẩn gây bệnh có thể đi từ tai, mũi, họng, phổi hoặc theo đường máu vào não hoặc theo các đường kế cận từ các ổ nhiễm khuẩn cạnh màng não hoặc đi trực tiếp vào não thông qua các chấn thương sọ não hoặc nứt sọ não.'
+
+MERGE (o1:cause {id: 'vi_khuẩn_gây_bệnh_cause'})
+MERGE (o2:symptom {id: 'nứt_sọ_não_symptom'})
+MERGE (o1)-[r147:spreadsThrough]->(o2)
+SET r147.text = 'Các loại vi khuẩn gây bệnh có thể đi từ tai, mũi, họng, phổi hoặc theo đường máu vào não hoặc theo các đường kế cận từ các ổ nhiễm khuẩn cạnh màng não hoặc đi trực tiếp vào não thông qua các chấn thương sọ não hoặc nứt sọ não.'
+
+MERGE (o1:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o2:test {id: 'biểu_hiện_lâm_sàng_kết_hợp_kết_quả_xét_nghiệm_dịch_não_tủy_test'})
+MERGE (o1)-[r148:diagnosedBy]->(o2)
+SET r148.text = 'Để chẩn đoán viêm màng não mủ cần dựa trên các biểu hiện lâm sàng kết hợp kết quả xét nghiệm dịch não tủy.'
+
+MERGE (o1:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o2:symptom {id: 'sốt_symptom'})
+MERGE (o1)-[r149:isSymptomOf]->(o2)
+SET r149.text = 'Viêm màng não mủ có diễn tiến cấp tính với các triệu chứng như sốt, thường sốt cao đột ngột, trẻ li bì, mệt mỏi, bỏ ăn và da tái xanh.'
+
+MERGE (o1:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o2:symptom {id: 'sốt_cao_đột_ngột_symptom'})
+MERGE (o1)-[r150:isSymptomOf]->(o2)
+SET r150.text = 'Viêm màng não mủ có diễn tiến cấp tính với các triệu chứng như sốt, thường sốt cao đột ngột, trẻ li bì, mệt mỏi, bỏ ăn và da tái xanh.'
+
+MERGE (o1:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o2:symptom {id: 'li_bì_symptom'})
+MERGE (o1)-[r151:isSymptomOf]->(o2)
+SET r151.text = 'Viêm màng não mủ có diễn tiến cấp tính với các triệu chứng như sốt, thường sốt cao đột ngột, trẻ li bì, mệt mỏi, bỏ ăn và da tái xanh.'
+
+MERGE (o1:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o2:symptom {id: 'mệt_mỏi_symptom'})
+MERGE (o1)-[r152:isSymptomOf]->(o2)
+SET r152.text = 'Viêm màng não mủ có diễn tiến cấp tính với các triệu chứng như sốt, thường sốt cao đột ngột, trẻ li bì, mệt mỏi, bỏ ăn và da tái xanh.'
+
+MERGE (o1:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o2:symptom {id: 'bỏ_ăn_symptom'})
+MERGE (o1)-[r153:isSymptomOf]->(o2)
+SET r153.text = 'Viêm màng não mủ có diễn tiến cấp tính với các triệu chứng như sốt, thường sốt cao đột ngột, trẻ li bì, mệt mỏi, bỏ ăn và da tái xanh.'
+
+MERGE (o1:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o2:symptom {id: 'da_tái_xanh_symptom'})
+MERGE (o1)-[r154:isSymptomOf]->(o2)
+SET r154.text = 'Viêm màng não mủ có diễn tiến cấp tính với các triệu chứng như sốt, thường sốt cao đột ngột, trẻ li bì, mệt mỏi, bỏ ăn và da tái xanh.'
+
+MERGE (o1:disease {id: 'hội_chứng_màng_não_disease'})
+MERGE (o2:symptom {id: 'nôn_symptom'})
+MERGE (o1)-[r155:isSymptomOf]->(o2)
+SET r155.text = 'Xuất hiện hội chứng màng não với các dấu hiệu cơ bản như nôn, buồn nôn, đau đầu, táo bón có thể có biểu hiện sợ ánh sáng và nằm ở tư thế cò súng.'
+
+MERGE (o1:disease {id: 'hội_chứng_màng_não_disease'})
+MERGE (o2:symptom {id: 'buồn_nôn_symptom'})
+MERGE (o1)-[r156:isSymptomOf]->(o2)
+SET r156.text = 'Xuất hiện hội chứng màng não với các dấu hiệu cơ bản như nôn, buồn nôn, đau đầu, táo bón có thể có biểu hiện sợ ánh sáng và nằm ở tư thế cò súng.'
+
+MERGE (o1:disease {id: 'hội_chứng_màng_não_disease'})
+MERGE (o2:symptom {id: 'đau_đầu_symptom'})
+MERGE (o1)-[r157:isSymptomOf]->(o2)
+SET r157.text = 'Xuất hiện hội chứng màng não với các dấu hiệu cơ bản như nôn, buồn nôn, đau đầu, táo bón có thể có biểu hiện sợ ánh sáng và nằm ở tư thế cò súng.'
+
+MERGE (o1:disease {id: 'hội_chứng_màng_não_disease'})
+MERGE (o2:symptom {id: 'táo_bón_symptom'})
+MERGE (o1)-[r158:isSymptomOf]->(o2)
+SET r158.text = 'Xuất hiện hội chứng màng não với các dấu hiệu cơ bản như nôn, buồn nôn, đau đầu, táo bón có thể có biểu hiện sợ ánh sáng và nằm ở tư thế cò súng.'
+
+MERGE (o1:disease {id: 'hội_chứng_màng_não_disease'})
+MERGE (o2:symptom {id: 'sợ_ánh_sáng_symptom'})
+MERGE (o1)-[r159:isSymptomOf]->(o2)
+SET r159.text = 'Xuất hiện hội chứng màng não với các dấu hiệu cơ bản như nôn, buồn nôn, đau đầu, táo bón có thể có biểu hiện sợ ánh sáng và nằm ở tư thế cò súng.'
+
+MERGE (o1:disease {id: 'hội_chứng_màng_não_disease'})
+MERGE (o2:symptom {id: 'nằm_ở_tư_thế_cò_súng_symptom'})
+MERGE (o1)-[r160:isSymptomOf]->(o2)
+SET r160.text = 'Xuất hiện hội chứng màng não với các dấu hiệu cơ bản như nôn, buồn nôn, đau đầu, táo bón có thể có biểu hiện sợ ánh sáng và nằm ở tư thế cò súng.'
+
+MERGE (o1:symptom {id: 'gáy_cứng_symptom'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r161:isSymptomOf]->(o2)
+SET r161.text = 'Các dấu hiệu thực thể như gáy cứng, hoặc cổ mềm ở trẻ nhỏ, dấu hiệu Kernig, Brudzinsky, thóp phồng, căng, li bì, mắt nhìn vô cảm.'
+
+MERGE (o1:symptom {id: 'cổ_mềm_symptom'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r162:isSymptomOf]->(o2)
+SET r162.text = 'Các dấu hiệu thực thể như gáy cứng, hoặc cổ mềm ở trẻ nhỏ, dấu hiệu Kernig, Brudzinsky, thóp phồng, căng, li bì, mắt nhìn vô cảm.'
+
+MERGE (o1:symptom {id: 'dấu_hiệu_kernig_symptom'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r163:isSymptomOf]->(o2)
+SET r163.text = 'Các dấu hiệu thực thể như gáy cứng, hoặc cổ mềm ở trẻ nhỏ, dấu hiệu Kernig, Brudzinsky, thóp phồng, căng, li bì, mắt nhìn vô cảm.'
+
+MERGE (o1:symptom {id: 'dấu_hiệu_brudzinsky_symptom'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r164:isSymptomOf]->(o2)
+SET r164.text = 'Các dấu hiệu thực thể như gáy cứng, hoặc cổ mềm ở trẻ nhỏ, dấu hiệu Kernig, Brudzinsky, thóp phồng, căng, li bì, mắt nhìn vô cảm.'
+
+MERGE (o1:symptom {id: 'thóp_phồng_symptom'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r165:isSymptomOf]->(o2)
+SET r165.text = 'Các dấu hiệu thực thể như gáy cứng, hoặc cổ mềm ở trẻ nhỏ, dấu hiệu Kernig, Brudzinsky, thóp phồng, căng, li bì, mắt nhìn vô cảm.'
+
+MERGE (o1:symptom {id: 'thóp_căng_symptom'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r166:isSymptomOf]->(o2)
+SET r166.text = 'Các dấu hiệu thực thể như gáy cứng, hoặc cổ mềm ở trẻ nhỏ, dấu hiệu Kernig, Brudzinsky, thóp phồng, căng, li bì, mắt nhìn vô cảm.'
+
+MERGE (o1:symptom {id: 'li_bì_symptom'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r167:isSymptomOf]->(o2)
+SET r167.text = 'Các dấu hiệu thực thể như gáy cứng, hoặc cổ mềm ở trẻ nhỏ, dấu hiệu Kernig, Brudzinsky, thóp phồng, căng, li bì, mắt nhìn vô cảm.'
+
+MERGE (o1:symptom {id: 'mắt_nhìn_vô_cảm_symptom'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r168:isSymptomOf]->(o2)
+SET r168.text = 'Các dấu hiệu thực thể như gáy cứng, hoặc cổ mềm ở trẻ nhỏ, dấu hiệu Kernig, Brudzinsky, thóp phồng, căng, li bì, mắt nhìn vô cảm.'
+
+MERGE (o1:symptom {id: 'co_giật_symptom'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r169:isSymptomOf]->(o2)
+SET r169.text = 'Một số biểu hiện khác như co giật, liệt khu trú, shock nhiễm khuẩn hay rối loạn tri giác, trẻ rơi vào hôn mê.'
+
+MERGE (o1:symptom {id: 'liệt_khu_trú_symptom'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r170:isSymptomOf]->(o2)
+SET r170.text = 'Một số biểu hiện khác như co giật, liệt khu trú, shock nhiễm khuẩn hay rối loạn tri giác, trẻ rơi vào hôn mê.'
+
+MERGE (o1:symptom {id: 'shock_nhiễm_khuẩn_symptom'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r171:isSymptomOf]->(o2)
+SET r171.text = 'Một số biểu hiện khác như co giật, liệt khu trú, shock nhiễm khuẩn hay rối loạn tri giác, trẻ rơi vào hôn mê.'
+
+MERGE (o1:symptom {id: 'rối_loạn_tri_giác_symptom'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r172:isSymptomOf]->(o2)
+SET r172.text = 'Một số biểu hiện khác như co giật, liệt khu trú, shock nhiễm khuẩn hay rối loạn tri giác, trẻ rơi vào hôn mê.'
+
+MERGE (o1:symptom {id: 'hôn_mê_symptom'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r173:isSymptomOf]->(o2)
+SET r173.text = 'Một số biểu hiện khác như co giật, liệt khu trú, shock nhiễm khuẩn hay rối loạn tri giác, trẻ rơi vào hôn mê.'
+
+MERGE (o1:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o2:cause {id: 'trẻ_sinh_non_cause'})
+MERGE (o1)-[r174:causedBy]->(o2)
+SET r174.text = 'Đối với trẻ sơ sinh, viêm màng não mủ thường xảy ra với trẻ sinh non, bị nhiễm trùng ối hoặc ngạt sau đẻ.'
+
+MERGE (o1:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o2:cause {id: 'nhiễm_trùng_ối_cause'})
+MERGE (o1)-[r175:causedBy]->(o2)
+SET r175.text = 'Đối với trẻ sơ sinh, viêm màng não mủ thường xảy ra với trẻ sinh non, bị nhiễm trùng ối hoặc ngạt sau đẻ.'
+
+MERGE (o1:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o2:cause {id: 'ngạt_sau_đẻ_cause'})
+MERGE (o1)-[r176:causedBy]->(o2)
+SET r176.text = 'Đối với trẻ sơ sinh, viêm màng não mủ thường xảy ra với trẻ sinh non, bị nhiễm trùng ối hoặc ngạt sau đẻ.'
+
+MERGE (o1:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o2:symptom {id: 'không_sốt_symptom'})
+MERGE (o1)-[r177:isSymptomOf]->(o2)
+SET r177.text = 'Với trẻ sơ sinh, các biểu hiện nhiễm trùng không rõ rệt, trẻ có thể không sốt, nhiều trẻ còn hạ thân nhiệt, trẻ thường bỏ bú, tiêu chảy, mất phản xạ sinh lý và giảm trương cơ lực.'
+
+MERGE (o1:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o2:symptom {id: 'hạ_thân_nhiệt_symptom'})
+MERGE (o1)-[r178:isSymptomOf]->(o2)
+SET r178.text = 'Với trẻ sơ sinh, các biểu hiện nhiễm trùng không rõ rệt, trẻ có thể không sốt, nhiều trẻ còn hạ thân nhiệt, trẻ thường bỏ bú, tiêu chảy, mất phản xạ sinh lý và giảm trương cơ lực.'
+
+MERGE (o1:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o2:symptom {id: 'bỏ_bú_symptom'})
+MERGE (o1)-[r179:isSymptomOf]->(o2)
+SET r179.text = 'Với trẻ sơ sinh, các biểu hiện nhiễm trùng không rõ rệt, trẻ có thể không sốt, nhiều trẻ còn hạ thân nhiệt, trẻ thường bỏ bú, tiêu chảy, mất phản xạ sinh lý và giảm trương cơ lực.'
+
+MERGE (o1:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o2:symptom {id: 'tiêu_chảy_symptom'})
+MERGE (o1)-[r180:isSymptomOf]->(o2)
+SET r180.text = 'Với trẻ sơ sinh, các biểu hiện nhiễm trùng không rõ rệt, trẻ có thể không sốt, nhiều trẻ còn hạ thân nhiệt, trẻ thường bỏ bú, tiêu chảy, mất phản xạ sinh lý và giảm trương cơ lực.'
+
+MERGE (o1:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o2:symptom {id: 'mất_phản_xạ_sinh_lý_symptom'})
+MERGE (o1)-[r181:isSymptomOf]->(o2)
+SET r181.text = 'Với trẻ sơ sinh, các biểu hiện nhiễm trùng không rõ rệt, trẻ có thể không sốt, nhiều trẻ còn hạ thân nhiệt, trẻ thường bỏ bú, tiêu chảy, mất phản xạ sinh lý và giảm trương cơ lực.'
+
+MERGE (o1:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o2:symptom {id: 'giảm_trương_cơ_lực_symptom'})
+MERGE (o1)-[r182:isSymptomOf]->(o2)
+SET r182.text = 'Với trẻ sơ sinh, các biểu hiện nhiễm trùng không rõ rệt, trẻ có thể không sốt, nhiều trẻ còn hạ thân nhiệt, trẻ thường bỏ bú, tiêu chảy, mất phản xạ sinh lý và giảm trương cơ lực.'
+
+MERGE (o1:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o2:test {id: 'xét_nghiệm_dịch_não_tủy_test'})
+MERGE (o1)-[r183:diagnosedBy]->(o2)
+SET r183.text = 'Xét nghiệm dịch não tủy: Đây là xét nghiệm quan trọng mang tính chất quyết định để chẩn đoán viêm màng não mủ.'
+
+MERGE (o1:test {id: 'xét_nghiệm_dịch_não_tủy_test'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r184:relatedTo]->(o2)
+SET r184.text = 'Xét nghiệm dịch não tủy: Đây là xét nghiệm quan trọng mang tính chất quyết định để chẩn đoán viêm màng não mủ.'
+
+MERGE (o1:test {id: 'dịch_não_tủy_test'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r185:relatedTo]->(o2)
+SET r185.text = 'Nếu dịch não tủy có màu lờ đục hoặc màu trong như nước vo gạo cần phải điều trị ngay.'
+
+MERGE (o1:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o2:test {id: 'công_thức_máu_test'})
+MERGE (o1)-[r186:diagnosedBy]->(o2)
+SET r186.text = 'Công thức máu: Nếu công thức máu cho thấy bạch cầu tăng cao, tỷ lệ bạch cầu đa nhân trung tính chiếm ưu thế và ở trẻ sơ sinh, trẻ nhỏ có giảm nồng độ huyết sắc tố.'
+
+MERGE (o1:test {id: 'công_thức_máu_test'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r187:relatedTo]->(o2)
+SET r187.text = 'Công thức máu: Nếu công thức máu cho thấy bạch cầu tăng cao, tỷ lệ bạch cầu đa nhân trung tính chiếm ưu thế và ở trẻ sơ sinh, trẻ nhỏ có giảm nồng độ huyết sắc tố.'
+
+MERGE (o1:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o2:test {id: 'cấy_máu_và_dịch_tỵ_hầu_test'})
+MERGE (o1)-[r188:diagnosedBy]->(o2)
+SET r188.text = 'Cấy máu và dịch tỵ hầu việc cấy máu và mẫu bệnh phẩm có thể xác định được vi khuẩn gây ra bệnh.'
+
+MERGE (o1:test {id: 'cấy_máu_và_dịch_tỵ_hầu_test'})
+MERGE (o2:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o1)-[r189:relatedTo]->(o2)
+SET r189.text = 'Cấy máu và dịch tỵ hầu việc cấy máu và mẫu bệnh phẩm có thể xác định được vi khuẩn gây ra bệnh.'
+
+MERGE (o1:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o2:test {id: 'siêu_âm_qua_thóp_test'})
+MERGE (o1)-[r190:diagnosedBy]->(o2)
+SET r190.text = 'Bên cạnh đó, có một số phương pháp như siêu âm qua thóp hay chụp CT sọ não có thể xác định được các biến chứng có thể gặp.'
+
+MERGE (o1:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o2:test {id: 'chụp_ct_sọ_não_test'})
+MERGE (o1)-[r191:diagnosedBy]->(o2)
+SET r191.text = 'Bên cạnh đó, có một số phương pháp như siêu âm qua thóp hay chụp CT sọ não có thể xác định được các biến chứng có thể gặp.'
+
+MERGE (o1:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o2:test {id: 'xét_nghiệm_dnt_test'})
+MERGE (o1)-[r192:diagnosedBy]->(o2)
+SET r192.text = 'Ngoài ra một số xét nghiệm DNT có thể chẩn đoán phân biệt trong một số trường hợp viêm màng não mủ không điển hình.'
+
+MERGE (o1:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o2:symptom {id: 'nguy_hiểm_symptom'})
+MERGE (o1)-[r193:relatedTo]->(o2)
+SET r193.text = 'Viêm màng não mủ là bệnh vô cùng nguy hiểm nhưng tỷ lệ trẻ được phát hiện và nhập viện kịp thời lại thấp, không ít trẻ nhập viện trong tình trạng bệnh đã trở nặng.'
+
+MERGE (o1:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o2:symptom {id: 'sốt_symptom'})
+MERGE (o1)-[r194:isSymptomOf]->(o2)
+SET r194.text = 'Với biểu hiện lâm sàng đa dạng như sốt, quấy khóc, chảy mũi… nên bố mẹ dễ nhầm lẫn với các triệu chứng cảm cúm thông thường và tự ý mua thuốc về nhà điều trị.'
+
+MERGE (o1:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o2:symptom {id: 'quấy_khóc_symptom'})
+MERGE (o1)-[r195:isSymptomOf]->(o2)
+SET r195.text = 'Với biểu hiện lâm sàng đa dạng như sốt, quấy khóc, chảy mũi… nên bố mẹ dễ nhầm lẫn với các triệu chứng cảm cúm thông thường và tự ý mua thuốc về nhà điều trị.'
+
+MERGE (o1:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o2:symptom {id: 'chảy_mũi_symptom'})
+MERGE (o1)-[r196:isSymptomOf]->(o2)
+SET r196.text = 'Với biểu hiện lâm sàng đa dạng như sốt, quấy khóc, chảy mũi… nên bố mẹ dễ nhầm lẫn với các triệu chứng cảm cúm thông thường và tự ý mua thuốc về nhà điều trị.'
+
+MERGE (o1:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o2:symptom {id: 'co_giật_symptom'})
+MERGE (o1)-[r197:isSymptomOf]->(o2)
+SET r197.text = 'Chỉ đến khi trẻ có những biểu hiện tăng nặng như co giật, mất ý thức, hô mê thì mới đưa đến viện điều trị.'
+
+MERGE (o1:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o2:symptom {id: 'mất_ý_thức_symptom'})
+MERGE (o1)-[r198:isSymptomOf]->(o2)
+SET r198.text = 'Chỉ đến khi trẻ có những biểu hiện tăng nặng như co giật, mất ý thức, hô mê thì mới đưa đến viện điều trị.'
+
+MERGE (o1:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o2:symptom {id: 'hô_mê_symptom'})
+MERGE (o1)-[r199:isSymptomOf]->(o2)
+SET r199.text = 'Chỉ đến khi trẻ có những biểu hiện tăng nặng như co giật, mất ý thức, hô mê thì mới đưa đến viện điều trị.'
+
+MERGE (o1:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o2:symptom {id: 'quấy_khóc_symptom'})
+MERGE (o1)-[r200:isSymptomOf]->(o2)
+SET r200.text = 'Bác sĩ Trọng Tuấn khuyến cáo, nếu phụ huynh thấy trẻ có những dấu hiệu như quấy khóc, li bì, sốt cao, thóp phồng, co giật… cần nghĩ ngay đến viêm màng não mủ và đưa trẻ đến ngay trung tâm y tế gần nhất để được điều trị.'
+
+MERGE (o1:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o2:symptom {id: 'li_bì_symptom'})
+MERGE (o1)-[r201:isSymptomOf]->(o2)
+SET r201.text = 'Bác sĩ Trọng Tuấn khuyến cáo, nếu phụ huynh thấy trẻ có những dấu hiệu như quấy khóc, li bì, sốt cao, thóp phồng, co giật… cần nghĩ ngay đến viêm màng não mủ và đưa trẻ đến ngay trung tâm y tế gần nhất để được điều trị.'
+
+MERGE (o1:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o2:symptom {id: 'sốt_cao_symptom'})
+MERGE (o1)-[r202:isSymptomOf]->(o2)
+SET r202.text = 'Bác sĩ Trọng Tuấn khuyến cáo, nếu phụ huynh thấy trẻ có những dấu hiệu như quấy khóc, li bì, sốt cao, thóp phồng, co giật… cần nghĩ ngay đến viêm màng não mủ và đưa trẻ đến ngay trung tâm y tế gần nhất để được điều trị.'
+
+MERGE (o1:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o2:symptom {id: 'thóp_phồng_symptom'})
+MERGE (o1)-[r203:isSymptomOf]->(o2)
+SET r203.text = 'Bác sĩ Trọng Tuấn khuyến cáo, nếu phụ huynh thấy trẻ có những dấu hiệu như quấy khóc, li bì, sốt cao, thóp phồng, co giật… cần nghĩ ngay đến viêm màng não mủ và đưa trẻ đến ngay trung tâm y tế gần nhất để được điều trị.'
+
+MERGE (o1:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o2:symptom {id: 'co_giật_symptom'})
+MERGE (o1)-[r204:isSymptomOf]->(o2)
+SET r204.text = 'Bác sĩ Trọng Tuấn khuyến cáo, nếu phụ huynh thấy trẻ có những dấu hiệu như quấy khóc, li bì, sốt cao, thóp phồng, co giật… cần nghĩ ngay đến viêm màng não mủ và đưa trẻ đến ngay trung tâm y tế gần nhất để được điều trị.'
+
+MERGE (o1:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o2:treatment {id: 'điều_trị_của_bác_sĩ_treatment'})
+MERGE (o1)-[r205:treatedBy]->(o2)
+SET r205.text = 'Đặc biệt, bố mẹ không nên tự ý điều trị cho bé tại nhà trong khi chưa rõ bệnh lý bé mắc phải và chưa có chỉ định của bác sĩ.'
+
+MERGE (o1:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o2:treatment {id: 'chẩn_đoán_treatment'})
+MERGE (o1)-[r206:treatedBy]->(o2)
+SET r206.text = 'Nguyên tắc chung trong điều trị viêm màng não mủ là cần nhanh chóng được chẩn đoán, điều trị và theo dõi chặt chẽ tình trạng tiến triển của bệnh.'
+
+MERGE (o1:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o2:treatment {id: 'điều_trị_treatment'})
+MERGE (o1)-[r207:treatedBy]->(o2)
+SET r207.text = 'Nguyên tắc chung trong điều trị viêm màng não mủ là cần nhanh chóng được chẩn đoán, điều trị và theo dõi chặt chẽ tình trạng tiến triển của bệnh.'
+
+MERGE (o1:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o2:treatment {id: 'theo_dõi_chặt_chẽ_tình_trạng_tiến_triển_của_bệnh_treatment'})
+MERGE (o1)-[r208:treatedBy]->(o2)
+SET r208.text = 'Nguyên tắc chung trong điều trị viêm màng não mủ là cần nhanh chóng được chẩn đoán, điều trị và theo dõi chặt chẽ tình trạng tiến triển của bệnh.'
+
+MERGE (o1:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o2:treatment {id: 'kháng_sinh_treatment'})
+MERGE (o1)-[r209:treatedBy]->(o2)
+SET r209.text = 'Trong điều trị viêm màng não mủ, liệu pháp sử dụng kháng sinh cần phải được chỉ định đúng và càng sớm càng tốt.'
+
+MERGE (o1:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o2:treatment {id: 'điều_trị_tích_cực_treatment'})
+MERGE (o1)-[r210:treatedBy]->(o2)
+SET r210.text = 'Trong trường hợp bệnh tiến triển nặng, cần tập trung các biện pháp điều trị tích cực để cứu sống được người bệnh và giảm thiểu tối đa các di chứng.'
+
+MERGE (o1:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o2:treatment {id: 'điều_trị_và_chăm_sóc_tại_phòng_cấp_cứu_treatment'})
+MERGE (o1)-[r211:treatedBy]->(o2)
+SET r211.text = 'Trong trường hợp bệnh nhân hôn mê hoặc bệnh nhân có dấu hiệu nhiễm khuẩn nặng, đe dọa sốc nhiễm khuẩn thì cần được điều trị và chăm sóc tại phòng cấp cứu hoặc phòng điều trị tích cực.'
+
+MERGE (o1:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o2:treatment {id: 'điều_trị_và_chăm_sóc_tại_phòng_điều_trị_tích_cực_treatment'})
+MERGE (o1)-[r212:treatedBy]->(o2)
+SET r212.text = 'Trong trường hợp bệnh nhân hôn mê hoặc bệnh nhân có dấu hiệu nhiễm khuẩn nặng, đe dọa sốc nhiễm khuẩn thì cần được điều trị và chăm sóc tại phòng cấp cứu hoặc phòng điều trị tích cực.'
+
+MERGE (o1:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o2:treatment {id: 'thở_oxy_treatment'})
+MERGE (o1)-[r213:treatedBy]->(o2)
+SET r213.text = 'Với trường hợp suy hô hấp cần được thở oxy hoặc hỗ trợ hô hấp, trong trường hợp đặc biệt có thể thở máy nếu có chỉ định.'
+
+MERGE (o1:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o2:treatment {id: 'hỗ_trợ_hô_hấp_treatment'})
+MERGE (o1)-[r214:treatedBy]->(o2)
+SET r214.text = 'Với trường hợp suy hô hấp cần được thở oxy hoặc hỗ trợ hô hấp, trong trường hợp đặc biệt có thể thở máy nếu có chỉ định.'
+
+MERGE (o1:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o2:treatment {id: 'thở_máy_treatment'})
+MERGE (o1)-[r215:treatedBy]->(o2)
+SET r215.text = 'Với trường hợp suy hô hấp cần được thở oxy hoặc hỗ trợ hô hấp, trong trường hợp đặc biệt có thể thở máy nếu có chỉ định.'
+
+MERGE (o1:disease {id: 'viêm_màng_não_mủ_disease'})
+MERGE (o2:treatment {id: 'truyền_dinh_dưỡng_qua_đường_tĩnh_mạch_treatment'})
+MERGE (o1)-[r216:treatedBy]->(o2)
+SET r216.text = 'Người bệnh cần được đảm bảo về thông khí, chống ứ đọng đàm dãi… trong trường hợp bệnh nhân không ăn được cần truyền dinh dưỡng qua đường tĩnh mạch hoặc cho ăn qua sonde.'

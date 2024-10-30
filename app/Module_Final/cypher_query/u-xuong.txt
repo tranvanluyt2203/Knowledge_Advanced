@@ -1,0 +1,975 @@
+
+MERGE (o1:disease {id: 'u_xương_disease'})
+MERGE (o2:cause {id: 'sự_phát_triển_bất_thường_của_tế_bào_xương_cause'})
+MERGE (o1)-[r0:isSymptomOf]->(o2)
+SET r0.text = 'U xương là tên gọi tình trạng xương xuất hiện khối u do sự phát triển bất thường của tế bào xương.'
+
+MERGE (o1:disease {id: 'khối_u_ở_xương_disease'})
+MERGE (o2:cause {id: 'nguyên_nhân_cause'})
+MERGE (o1)-[r1:causedBy]->(o2)
+SET r1.text = 'Khối u ở xương có thể lành tính hoặc ác tính, tùy thuộc vào nguyên nhân mà từng người bệnh gặp phải.'
+
+MERGE (o1:disease {id: 'khối_u_phát_triển_disease'})
+MERGE (o2:organ {id: 'các_mô_khỏe_mạnh_bên_trong_xương_organ'})
+MERGE (o1)-[r2:affects]->(o2)
+SET r2.text = 'Tuy nhiên, tất cả đều là tình trạng đáng báo động vì khối u phát triển sẽ ảnh hưởng đến các mô khỏe mạnh bên trong xương.'
+
+MERGE (o1:disease {id: 'khối_u_phát_triển_disease'})
+MERGE (o2:symptom {id: 'vận_động_symptom'})
+MERGE (o1)-[r3:affects]->(o2)
+SET r3.text = 'Và từ đó gây ra những cản trở bất tiện về vận động của người bệnh.'
+
+MERGE (o1:disease {id: 'u_xương_disease'})
+MERGE (o2:treatment {id: 'bác_sĩ_chuyên_môn_treatment'})
+MERGE (o1)-[r4:diagnosedBy]->(o2)
+SET r4.text = 'Khi có các dấu hiệu nghi ngờ u xương, người bệnh cần nhanh chóng đến gặp bác sĩ chuyên môn để được chẩn đoán và điều trị ngay để giảm được các rủi ro bệnh có thể mắc phải.'
+
+MERGE (o1:disease {id: 'u_xương_disease'})
+MERGE (o2:cause {id: 'sự_phát_triển_không_kiểm_soát_của_tế_bào_trong_xương_cause'})
+MERGE (o1)-[r5:isSymptomOf]->(o2)
+SET r5.text = 'U xương là hiện tượng khối u phát triển bất thường bên trong xương do các tế bào phát triển không kiểm soát trong xương.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:disease {id: 'ung_thư_xương_disease'})
+MERGE (o1)-[r6:relatedTo]->(o2)
+SET r6.text = 'Khối u tạo thành bên trong xương có thể ác tính liên quan đến ung thư xương hoặc là lành tính.'
+
+MERGE (o1:disease {id: 'u_xương_disease'})
+MERGE (o2:disease {id: 'bệnh_lý_cơ_xương_khớp_disease'})
+MERGE (o1)-[r7:causedBy]->(o2)
+SET r7.text = 'Mặt khác, u xương cũng có thể là một loại biến chứng di căn của các bệnh lý cơ xương khớp khác.'
+
+MERGE (o1:disease {id: 'khối_u_xương_do_di_căn_disease'})
+MERGE (o2:disease {id: 'ung_thư_xương_disease'})
+MERGE (o1)-[r8:relatedTo]->(o2)
+SET r8.text = 'Và trong trường hợp khối u xương do di căn thì luôn là khối u ác tính, dẫn đến ung thư xương.'
+
+MERGE (o1:disease {id: 'u_xương_disease'})
+MERGE (o2:lifestyle {id: 'trẻ_em_lifestyle'})
+MERGE (o1)-[r9:affects]->(o2)
+SET r9.text = 'Bệnh có thể xảy ra ở cả trẻ em và người lớn tuổi.'
+
+MERGE (o1:disease {id: 'u_xương_disease'})
+MERGE (o2:lifestyle {id: 'người_lớn_tuổi_lifestyle'})
+MERGE (o1)-[r10:affects]->(o2)
+SET r10.text = 'Bệnh có thể xảy ra ở cả trẻ em và người lớn tuổi.'
+
+MERGE (o1:disease {id: 'u_xương_disease'})
+MERGE (o2:symptom {id: 'sự_tiến_triển_của_bệnh_symptom'})
+MERGE (o1)-[r11:affects]->(o2)
+SET r11.text = 'Tuy nhiên, sự tiến triển của bệnh ở hai nhóm khác nhau.'
+
+MERGE (o1:disease {id: 'khối_u_ở_xương_disease'})
+MERGE (o2:disease {id: 'ung_thư_disease'})
+MERGE (o1)-[r12:relatedTo]->(o2)
+SET r12.text = 'Ở trẻ em, phần lớn các trường hợp khối u ở xương đều là nguyên phát, khả năng liên quan đến ung thư khá thấp.'
+
+MERGE (o1:disease {id: 'khối_u_xương_ung_thư_disease'})
+MERGE (o2:cause {id: 'di_căn_cause'})
+MERGE (o1)-[r13:relatedTo]->(o2)
+SET r13.text = 'Người lớn, đặc biệt là người lớn tuổi, hầu hết các khối u xương ung thư đều là di căn.'
+
+MERGE (o1:disease {id: 'u_xương_nguyên_phát_disease'})
+MERGE (o2:disease {id: 'ung_thư_disease'})
+MERGE (o1)-[r14:relatedTo]->(o2)
+SET r14.text = 'Tuy nhiên, các trường hợp u xương nguyên phát dẫn đến ung thư ít gặp.'
+
+MERGE (o1:disease {id: 'u_xương_nguyên_phát_gây_ung_thư_disease'})
+MERGE (o2:disease {id: 'ung_thư_disease'})
+MERGE (o1)-[r15:relatedTo]->(o2)
+SET r15.text = 'Số trường hợp u xương nguyên phát gây ung thư chỉ chiếm khoảng 3900 người mỗi năm ở Hoa Kỳ, được thống kê vào năm 2022 bởi Cẩm nang Y khoa MSD Manual Hoa Kỳ.'
+
+MERGE (o1:disease {id: 'u_ác_tính_disease'})
+MERGE (o2:symptom {id: 'đau_xương_symptom'})
+MERGE (o1)-[r16:isSymptomOf]->(o2)
+SET r16.text = 'Dù là u ác tính hay lành tính, người bệnh sẽ trải qua những cơn đau xương không rõ nguyên nhân, cường độ cơn đau tăng dần theo thời gian nếu không điều trị kịp thời.'
+
+MERGE (o1:disease {id: 'u_lành_tính_disease'})
+MERGE (o2:symptom {id: 'đau_xương_symptom'})
+MERGE (o1)-[r17:isSymptomOf]->(o2)
+SET r17.text = 'Dù là u ác tính hay lành tính, người bệnh sẽ trải qua những cơn đau xương không rõ nguyên nhân, cường độ cơn đau tăng dần theo thời gian nếu không điều trị kịp thời.'
+
+MERGE (o1:disease {id: 'u_xương_disease'})
+MERGE (o2:symptom {id: 'sưng_tấy_symptom'})
+MERGE (o1)-[r18:isSymptomOf]->(o2)
+SET r18.text = 'Tình trạng bệnh nghiêm trọng hơn khi người bệnh đồng thời phát các triệu chứng sưng tấy tại vị trí có khối u và dễ gãy xương hơn bình thường.'
+
+MERGE (o1:disease {id: 'u_xương_disease'})
+MERGE (o2:symptom {id: 'gãy_xương_symptom'})
+MERGE (o1)-[r19:isSymptomOf]->(o2)
+SET r19.text = 'Tình trạng bệnh nghiêm trọng hơn khi người bệnh đồng thời phát các triệu chứng sưng tấy tại vị trí có khối u và dễ gãy xương hơn bình thường.'
+
+MERGE (o1:disease {id: 'u_xương_sụn_disease'})
+MERGE (o2:disease {id: 'u_xương_lành_tính_disease'})
+MERGE (o1)-[r20:relatedTo]->(o2)
+SET r20.text = 'U xương sụn là loại u lành tính phổ biến nhất, chiếm khoảng 40% các trường hợp u xương lành tính.'
+
+MERGE (o1:disease {id: 'u_xương_sụn_disease'})
+MERGE (o2:cause {id: 'sự_bất_thường_tăng_trưởng_của_sụn_và_xương_cause'})
+MERGE (o1)-[r21:causedBy]->(o2)
+SET r21.text = 'Tình trạng u xương sụn là do sự bất thường tăng trưởng của sụn và xương, cụ thể là tăng trưởng quá nhiều.'
+
+MERGE (o1:disease {id: 'u_xương_sụn_disease'})
+MERGE (o2:lifestyle {id: 'độ_tuổi_phát_triển_lifestyle'})
+MERGE (o1)-[r22:affects]->(o2)
+SET r22.text = 'Chính vì thế mà bệnh thường xảy ra với những người nằm trong độ tuổi phát triển, từ 13 - 25 tuổi.'
+
+MERGE (o1:disease {id: 'u_xương_sụn_disease'})
+MERGE (o2:lifestyle {id: 'trẻ_em_vị_thành_niên_và_thanh_niên_lifestyle'})
+MERGE (o1)-[r23:affects]->(o2)
+SET r23.text = 'Thống kê của Học viện Phẫu thuật Chỉnh hình Hoa Kỳ (AAOS) cũng kết luận u xương sụn thường rơi vào những trường hợp trẻ em vị thành niên và thanh niên.'
+
+MERGE (o1:disease {id: 'khối_u_ở_xương_sụn_disease'})
+MERGE (o2:organ {id: 'đầu_xương_dài_organ'})
+MERGE (o1)-[r24:locatedIn]->(o2)
+SET r24.text = 'Các khối u ở xương sụn hình thành ở vị trí đầu xương dài như xương cánh tay hoặc xương chân.'
+
+MERGE (o1:disease {id: 'khối_u_ở_xương_sụn_disease'})
+MERGE (o2:organ {id: 'xương_cánh_tay_organ'})
+MERGE (o1)-[r25:locatedIn]->(o2)
+SET r25.text = 'Các khối u ở xương sụn hình thành ở vị trí đầu xương dài như xương cánh tay hoặc xương chân.'
+
+MERGE (o1:disease {id: 'khối_u_ở_xương_sụn_disease'})
+MERGE (o2:organ {id: 'xương_chân_organ'})
+MERGE (o1)-[r26:locatedIn]->(o2)
+SET r26.text = 'Các khối u ở xương sụn hình thành ở vị trí đầu xương dài như xương cánh tay hoặc xương chân.'
+
+MERGE (o1:disease {id: 'u_xơ_không_cốt_hóa_disease'})
+MERGE (o2:cause {id: 'sự_tổn_thương_xơ_hóa_của_xương_cause'})
+MERGE (o1)-[r27:isSymptomOf]->(o2)
+SET r27.text = 'U xơ không cốt hóa là một loại u xương, hình thành do sự tổn thương xơ hóa của xương với triệu chứng cận lâm sàng là tiêu vỏ xương có xuất hiện tổn thương.'
+
+MERGE (o1:disease {id: 'u_xơ_không_cốt_hóa_disease'})
+MERGE (o2:symptom {id: 'tiêu_vỏ_xương_symptom'})
+MERGE (o1)-[r28:isSymptomOf]->(o2)
+SET r28.text = 'U xơ không cốt hóa là một loại u xương, hình thành do sự tổn thương xơ hóa của xương với triệu chứng cận lâm sàng là tiêu vỏ xương có xuất hiện tổn thương.'
+
+MERGE (o1:disease {id: 'u_xơ_không_cốt_hóa_disease'})
+MERGE (o2:disease {id: 'u_lành_tính_disease'})
+MERGE (o1)-[r29:relatedTo]->(o2)
+SET r29.text = 'Đây là loại u lành tính.'
+
+MERGE (o1:disease {id: 'u_xơ_không_cốt_hóa_disease'})
+MERGE (o2:symptom {id: 'ổ_khuyết_symptom'})
+MERGE (o1)-[r30:isSymptomOf]->(o2)
+SET r30.text = 'Người bị u xơ không cốt hóa sẽ có những ổ khuyết khá nhỏ bên trong xương.'
+
+MERGE (o1:symptom {id: 'ổ_khuyết_symptom'})
+MERGE (o2:organ {id: 'mô_xơ_organ'})
+MERGE (o1)-[r31:relatedTo]->(o2)
+SET r31.text = 'Những ổ khuyết này sẽ được lấp đầy bằng mô xơ thay vì mô xương như người khỏe mạnh.'
+
+MERGE (o1:symptom {id: 'ổ_khuyết_symptom'})
+MERGE (o2:organ {id: 'mô_xương_organ'})
+MERGE (o1)-[r32:relatedTo]->(o2)
+SET r32.text = 'Những ổ khuyết này sẽ được lấp đầy bằng mô xơ thay vì mô xương như người khỏe mạnh.'
+
+MERGE (o1:disease {id: 'u_tế_bào_khổng_lồ_disease'})
+MERGE (o2:disease {id: 'u_lành_tính_disease'})
+MERGE (o1)-[r33:relatedTo]->(o2)
+SET r33.text = 'U tế bào khổng lồ còn được gọi là u đại bào hoặc u hủy cốt bào, là một trong những kiểu u lành tính phổ biến.'
+
+MERGE (o1:disease {id: 'u_tế_bào_khổng_lồ_disease'})
+MERGE (o2:disease {id: 'u_đại_bào_disease'})
+MERGE (o1)-[r34:relatedTo]->(o2)
+SET r34.text = 'U tế bào khổng lồ còn được gọi là u đại bào hoặc u hủy cốt bào, là một trong những kiểu u lành tính phổ biến.'
+
+MERGE (o1:disease {id: 'u_tế_bào_khổng_lồ_disease'})
+MERGE (o2:disease {id: 'u_hủy_cốt_bào_disease'})
+MERGE (o1)-[r35:relatedTo]->(o2)
+SET r35.text = 'U tế bào khổng lồ còn được gọi là u đại bào hoặc u hủy cốt bào, là một trong những kiểu u lành tính phổ biến.'
+
+MERGE (o1:disease {id: 'u_tế_bào_khổng_lồ_disease'})
+MERGE (o2:disease {id: 'u_tế_bào_khổng_lồ_ác_tính_disease'})
+MERGE (o1)-[r36:relatedTo]->(o2)
+SET r36.text = 'Tuy nhiên, bệnh có thể tiến triển thanh u tế bào khổng lồ ác tính, vì thế yêu cầu người bệnh cần có sự chú tâm điều trị bệnh hơn các u loại u xương lành tính khác.'
+
+MERGE (o1:disease {id: 'u_tế_bào_khổng_lồ_disease'})
+MERGE (o2:organ {id: 'đầu_xương_dài_organ'})
+MERGE (o1)-[r37:locatedIn]->(o2)
+SET r37.text = 'U tế bào khổng lồ diễn ra ở vị trí đầu xương dài, thường gặp là đầu trên xương chày, xương đùi, xương quay và đầu dưới xương cùng.'
+
+MERGE (o1:disease {id: 'u_tế_bào_khổng_lồ_disease'})
+MERGE (o2:organ {id: 'đầu_trên_xương_chày_organ'})
+MERGE (o1)-[r38:locatedIn]->(o2)
+SET r38.text = 'U tế bào khổng lồ diễn ra ở vị trí đầu xương dài, thường gặp là đầu trên xương chày, xương đùi, xương quay và đầu dưới xương cùng.'
+
+MERGE (o1:disease {id: 'u_tế_bào_khổng_lồ_disease'})
+MERGE (o2:organ {id: 'xương_đùi_organ'})
+MERGE (o1)-[r39:locatedIn]->(o2)
+SET r39.text = 'U tế bào khổng lồ diễn ra ở vị trí đầu xương dài, thường gặp là đầu trên xương chày, xương đùi, xương quay và đầu dưới xương cùng.'
+
+MERGE (o1:disease {id: 'u_tế_bào_khổng_lồ_disease'})
+MERGE (o2:organ {id: 'xương_quay_organ'})
+MERGE (o1)-[r40:locatedIn]->(o2)
+SET r40.text = 'U tế bào khổng lồ diễn ra ở vị trí đầu xương dài, thường gặp là đầu trên xương chày, xương đùi, xương quay và đầu dưới xương cùng.'
+
+MERGE (o1:disease {id: 'u_tế_bào_khổng_lồ_disease'})
+MERGE (o2:organ {id: 'đầu_dưới_xương_cùng_organ'})
+MERGE (o1)-[r41:locatedIn]->(o2)
+SET r41.text = 'U tế bào khổng lồ diễn ra ở vị trí đầu xương dài, thường gặp là đầu trên xương chày, xương đùi, xương quay và đầu dưới xương cùng.'
+
+MERGE (o1:disease {id: 'u_tế_bào_khổng_lồ_disease'})
+MERGE (o2:disease {id: 'u_nhỏ_lành_tính_disease'})
+MERGE (o1)-[r42:isSymptomOf]->(o2)
+SET r42.text = 'Bệnh gồm 3 giai đoạn:  U nhỏ lành tính, vỏ xương bị phá hủy.'
+
+MERGE (o1:disease {id: 'u_tế_bào_khổng_lồ_disease'})
+MERGE (o2:symptom {id: 'vỏ_xương_bị_phá_hủy_symptom'})
+MERGE (o1)-[r43:isSymptomOf]->(o2)
+SET r43.text = 'Bệnh gồm 3 giai đoạn:  U nhỏ lành tính, vỏ xương bị phá hủy.'
+
+MERGE (o1:disease {id: 'u_tế_bào_khổng_lồ_disease'})
+MERGE (o2:symptom {id: 'u_tăng_kích_thước_symptom'})
+MERGE (o1)-[r44:isSymptomOf]->(o2)
+SET r44.text = 'U tăng kích thước, vỏ xương bị tổn thương và mỏng hơn bình thường'
+
+MERGE (o1:disease {id: 'u_tế_bào_khổng_lồ_disease'})
+MERGE (o2:symptom {id: 'vỏ_xương_bị_tổn_thương_symptom'})
+MERGE (o1)-[r45:isSymptomOf]->(o2)
+SET r45.text = 'U tăng kích thước, vỏ xương bị tổn thương và mỏng hơn bình thường'
+
+MERGE (o1:disease {id: 'u_tế_bào_khổng_lồ_disease'})
+MERGE (o2:symptom {id: 'vỏ_xương_mỏng_symptom'})
+MERGE (o1)-[r46:isSymptomOf]->(o2)
+SET r46.text = 'U tăng kích thước, vỏ xương bị tổn thương và mỏng hơn bình thường'
+
+MERGE (o1:disease {id: 'u_tế_bào_khổng_lồ_disease'})
+MERGE (o2:symptom {id: 'u_tăng_sinh_symptom'})
+MERGE (o1)-[r47:isSymptomOf]->(o2)
+SET r47.text = 'U tăng sinh đáng kể, ảnh hưởng xấu đến các phần mềm xung quanh.'
+
+MERGE (o1:disease {id: 'u_tế_bào_khổng_lồ_disease'})
+MERGE (o2:organ {id: 'phần_mềm_xung_quanh_organ'})
+MERGE (o1)-[r48:affects]->(o2)
+SET r48.text = 'U tăng sinh đáng kể, ảnh hưởng xấu đến các phần mềm xung quanh.'
+
+MERGE (o1:disease {id: 'u_tế_bào_khổng_lồ_disease'})
+MERGE (o2:symptom {id: 'mạch_máu_tăng_sinh_symptom'})
+MERGE (o1)-[r49:isSymptomOf]->(o2)
+SET r49.text = 'Đồng thời mạch máu cũng tăng sinh nhiều.'
+
+MERGE (o1:disease {id: 'u_sụn_disease'})
+MERGE (o2:cause {id: 'u_nang_sụn_phát_triển_bên_trong_tủy_xương_cause'})
+MERGE (o1)-[r50:isSymptomOf]->(o2)
+SET r50.text = 'U sụn là tình trạng u nang sụn phát triển bên trong tủy xương, có các loại là u nguyên bào sụn, u xơ sụn và u nội sụn.'
+
+MERGE (o1:disease {id: 'u_sụn_disease'})
+MERGE (o2:disease {id: 'u_nguyên_bào_sụn_disease'})
+MERGE (o1)-[r51:relatedTo]->(o2)
+SET r51.text = 'U sụn là tình trạng u nang sụn phát triển bên trong tủy xương, có các loại là u nguyên bào sụn, u xơ sụn và u nội sụn.'
+
+MERGE (o1:disease {id: 'u_sụn_disease'})
+MERGE (o2:disease {id: 'u_xơ_sụn_disease'})
+MERGE (o1)-[r52:relatedTo]->(o2)
+SET r52.text = 'U sụn là tình trạng u nang sụn phát triển bên trong tủy xương, có các loại là u nguyên bào sụn, u xơ sụn và u nội sụn.'
+
+MERGE (o1:disease {id: 'u_sụn_disease'})
+MERGE (o2:disease {id: 'u_nội_sụn_disease'})
+MERGE (o1)-[r53:relatedTo]->(o2)
+SET r53.text = 'U sụn là tình trạng u nang sụn phát triển bên trong tủy xương, có các loại là u nguyên bào sụn, u xơ sụn và u nội sụn.'
+
+MERGE (o1:disease {id: 'u_nội_sụn_disease'})
+MERGE (o2:disease {id: 'u_xương_lành_tính_disease'})
+MERGE (o1)-[r54:relatedTo]->(o2)
+SET r54.text = 'U nội sụn thường xảy ra như dạng u xương lành tính, trong khi u nguyên bào sụn tương đối hiếm gặp .'
+
+MERGE (o1:disease {id: 'u_nguyên_bào_sụn_disease'})
+MERGE (o2:disease {id: 'u_xương_lành_tính_disease'})
+MERGE (o1)-[r55:relatedTo]->(o2)
+SET r55.text = 'U nội sụn thường xảy ra như dạng u xương lành tính, trong khi u nguyên bào sụn tương đối hiếm gặp .'
+
+MERGE (o1:disease {id: 'u_nội_sụn_disease'})
+MERGE (o2:lifestyle {id: 'mọi_lứa_tuổi_lifestyle'})
+MERGE (o1)-[r56:affects]->(o2)
+SET r56.text = 'U nội sụn có thể xảy ra ở mọi lứa tuổi và đối tượng.'
+
+MERGE (o1:disease {id: 'u_nội_sụn_disease'})
+MERGE (o2:symptom {id: 'sưng_symptom'})
+MERGE (o1)-[r57:isSymptomOf]->(o2)
+SET r57.text = 'Bệnh thường không có các triệu chứng đi kèm, nhưng sự phát triển của khối u sẽ gây sưng và đau tại vị trí tổn thương.'
+
+MERGE (o1:disease {id: 'u_nội_sụn_disease'})
+MERGE (o2:symptom {id: 'đau_symptom'})
+MERGE (o1)-[r58:isSymptomOf]->(o2)
+SET r58.text = 'Bệnh thường không có các triệu chứng đi kèm, nhưng sự phát triển của khối u sẽ gây sưng và đau tại vị trí tổn thương.'
+
+MERGE (o1:disease {id: 'u_nội_sụn_disease'})
+MERGE (o2:disease {id: 'ung_thư_nội_sụn_disease'})
+MERGE (o1)-[r59:relatedTo]->(o2)
+SET r59.text = 'Đây là một dạng khối u lành tính, tuy nhiên trong trường hợp người bệnh có nhiều khối u nội sụn, nhất là có xảy ra hiện tượng chảy máu mô mềm thì sẽ có nguy cơ mắc ung thư nội sụn cao hơn người khác.'
+
+MERGE (o1:disease {id: 'nang_xương_phình_mạch_disease'})
+MERGE (o2:cause {id: 'tổn_thương_nang_cause'})
+MERGE (o1)-[r60:isSymptomOf]->(o2)
+SET r60.text = 'Nang xương phình mạch là sự tổn thương nang ở các vùng hành xương của xương dài, phần lớn xảy ra với những người trên 25 tuổi.'
+
+MERGE (o1:disease {id: 'nang_xương_phình_mạch_disease'})
+MERGE (o2:organ {id: 'hành_xương_organ'})
+MERGE (o1)-[r61:affects]->(o2)
+SET r61.text = 'Nang xương phình mạch là sự tổn thương nang ở các vùng hành xương của xương dài, phần lớn xảy ra với những người trên 25 tuổi.'
+
+MERGE (o1:disease {id: 'nang_xương_phình_mạch_disease'})
+MERGE (o2:organ {id: 'xương_dài_organ'})
+MERGE (o1)-[r62:affects]->(o2)
+SET r62.text = 'Nang xương phình mạch là sự tổn thương nang ở các vùng hành xương của xương dài, phần lớn xảy ra với những người trên 25 tuổi.'
+
+MERGE (o1:disease {id: 'nang_xương_phình_mạch_disease'})
+MERGE (o2:lifestyle {id: 'người_trên_25_tuổi_lifestyle'})
+MERGE (o1)-[r63:affects]->(o2)
+SET r63.text = 'Nang xương phình mạch là sự tổn thương nang ở các vùng hành xương của xương dài, phần lớn xảy ra với những người trên 25 tuổi.'
+
+MERGE (o1:disease {id: 'tổn_thương_do_nang_xương_phình_mạch_disease'})
+MERGE (o2:symptom {id: 'kéo_dài_vài_tuần_symptom'})
+MERGE (o1)-[r64:isSymptomOf]->(o2)
+SET r64.text = 'Tổn thương do nang xương phình mạch có thể kéo dài từ vài tuần đến vài năm trước khi được chẩn đoán.'
+
+MERGE (o1:disease {id: 'tổn_thương_do_nang_xương_phình_mạch_disease'})
+MERGE (o2:symptom {id: 'kéo_dài_vài_năm_symptom'})
+MERGE (o1)-[r65:isSymptomOf]->(o2)
+SET r65.text = 'Tổn thương do nang xương phình mạch có thể kéo dài từ vài tuần đến vài năm trước khi được chẩn đoán.'
+
+MERGE (o1:disease {id: 'nang_xương_bị_tổn_thương_disease'})
+MERGE (o2:symptom {id: 'phát_triển_chậm_symptom'})
+MERGE (o1)-[r66:isSymptomOf]->(o2)
+SET r66.text = 'Các nang xương bị tổn thương có xu hướng phát triển chậm hơn bình thường, đồng thời xảy ra tình trạng phồng xương.'
+
+MERGE (o1:disease {id: 'ung_thư_xương_tạo_xương_disease'})
+MERGE (o2:disease {id: 'u_xác_tính_disease'})
+MERGE (o1)-[r67:isSymptomOf]->(o2)
+SET r67.text = 'Ung thư xương tạo xương là một loại u xác tính, xảy ra khi các tế bào tạo ra khối u ác tính thay vì xương mới.'
+
+MERGE (o1:cause {id: 'các_tế_bào_tạo_ra_khối_u_ác_tính_cause'})
+MERGE (o2:disease {id: 'ung_thư_xương_tạo_xương_disease'})
+MERGE (o1)-[r68:causes]->(o2)
+SET r68.text = 'Ung thư xương tạo xương là một loại u xác tính, xảy ra khi các tế bào tạo ra khối u ác tính thay vì xương mới.'
+
+MERGE (o1:disease {id: 'bệnh_u_xương_ác_tính_disease'})
+MERGE (o2:organ {id: 'xương_đầu_gối_hoặc_xương_vai_và_các_vùng_xương_dài_organ'})
+MERGE (o1)-[r69:locatedIn]->(o2)
+SET r69.text = 'Bệnh u xương ác tính này phần lớn xảy ra ở những vị trí xương đầu gối hoặc xương vai và các vùng xương dài.'
+
+MERGE (o1:symptom {id: 'sưng_đau_quanh_khu_vực_có_khối_u_xương_ác_tính_symptom'})
+MERGE (o2:disease {id: 'bệnh_u_xương_ác_tính_disease'})
+MERGE (o1)-[r70:isSymptomOf]->(o2)
+SET r70.text = 'Người bệnh có những triệu chứng sưng đau quanh khu vực có khối u xương ác tính, cường độ cơn đau cao, có ảnh hưởng đến đi lại, sinh hoạt hằng ngày.'
+
+MERGE (o1:symptom {id: 'cường_độ_cơn_đau_cao_symptom'})
+MERGE (o2:disease {id: 'bệnh_u_xương_ác_tính_disease'})
+MERGE (o1)-[r71:isSymptomOf]->(o2)
+SET r71.text = 'Người bệnh có những triệu chứng sưng đau quanh khu vực có khối u xương ác tính, cường độ cơn đau cao, có ảnh hưởng đến đi lại, sinh hoạt hằng ngày.'
+
+MERGE (o1:symptom {id: 'ảnh_hưởng_đến_đi_lại__sinh_hoạt_hằng_ngày_symptom'})
+MERGE (o2:disease {id: 'bệnh_u_xương_ác_tính_disease'})
+MERGE (o1)-[r72:isSymptomOf]->(o2)
+SET r72.text = 'Người bệnh có những triệu chứng sưng đau quanh khu vực có khối u xương ác tính, cường độ cơn đau cao, có ảnh hưởng đến đi lại, sinh hoạt hằng ngày.'
+
+MERGE (o1:disease {id: 'bệnh_u_xương_ác_tính_disease'})
+MERGE (o2:disease {id: 'ewing_sarcoma_disease'})
+MERGE (o1)-[r73:associatedWith]->(o2)
+SET r73.text = 'Bệnh u xương ác tính, ung thư có tính chất gia đình Ewing Sarcoma thường gặp ở đối tượng thanh thiếu niên và thanh niên.'
+
+MERGE (o1:disease {id: 'ewing_sarcoma_disease'})
+MERGE (o2:lifestyle {id: 'thanh_thiếu_niên_và_thanh_niên_lifestyle'})
+MERGE (o1)-[r74:associatedWith]->(o2)
+SET r74.text = 'Bệnh u xương ác tính, ung thư có tính chất gia đình Ewing Sarcoma thường gặp ở đối tượng thanh thiếu niên và thanh niên.'
+
+MERGE (o1:disease {id: 'sarcoma_ewing_disease'})
+MERGE (o2:lifestyle {id: 'trẻ_em_trên_5_tuổi_lifestyle'})
+MERGE (o1)-[r75:associatedWith]->(o2)
+SET r75.text = 'Dù vậy, bệnh Sarcoma Ewing cũng có thể xảy ra ở trẻ em trên 5 tuổi.'
+
+MERGE (o1:cause {id: 'tế_bào_ung_thư_của_sarcoma_ewing_cause'})
+MERGE (o2:disease {id: 'sarcoma_ewing_disease'})
+MERGE (o1)-[r76:causes]->(o2)
+SET r76.text = 'Tế bào ung thư của Sarcoma Ewing xuất phát từ các hốc tủy, đó là phần hốc xương nơi tủy xương được tạo ra.'
+
+MERGE (o1:cause {id: 'tế_bào_ung_thư_của_sarcoma_ewing_cause'})
+MERGE (o2:organ {id: 'các_hốc_tủy_organ'})
+MERGE (o1)-[r77:locatedIn]->(o2)
+SET r77.text = 'Tế bào ung thư của Sarcoma Ewing xuất phát từ các hốc tủy, đó là phần hốc xương nơi tủy xương được tạo ra.'
+
+MERGE (o1:cause {id: 'tế_bào_ung_thư_của_sarcoma_ewing_cause'})
+MERGE (o2:organ {id: 'hốc_xương_organ'})
+MERGE (o1)-[r78:locatedIn]->(o2)
+SET r78.text = 'Tế bào ung thư của Sarcoma Ewing xuất phát từ các hốc tủy, đó là phần hốc xương nơi tủy xương được tạo ra.'
+
+MERGE (o1:disease {id: 'sarcoma_ewing_disease'})
+MERGE (o2:organ {id: 'các_mô_mềm_như_mỡ__cơ_và_mạch_máu_organ'})
+MERGE (o1)-[r79:locatedIn]->(o2)
+SET r79.text = 'Ngoài ra Sarcoma Ewing cũng có thể phát triển trong các mô mềm như mỡ, cơ và mạch máu.'
+
+MERGE (o1:disease {id: 'bệnh_sarcoma_sụn_disease'})
+MERGE (o2:disease {id: 'ung_thư_sụn_disease'})
+MERGE (o1)-[r80:isSymptomOf]->(o2)
+SET r80.text = 'Bệnh Sarcoma sụn, còn được gọi là ung thư sụn, tiến triển từ những khối u xương ác tính phổ biến.'
+
+MERGE (o1:disease {id: 'ung_thư_sụn_disease'})
+MERGE (o2:disease {id: 'khối_u_xương_ác_tính_disease'})
+MERGE (o1)-[r81:isSymptomOf]->(o2)
+SET r81.text = 'Bệnh Sarcoma sụn, còn được gọi là ung thư sụn, tiến triển từ những khối u xương ác tính phổ biến.'
+
+MERGE (o1:disease {id: 'ung_thư_sụn_disease'})
+MERGE (o2:organ {id: 'xương_chậu__hông_và_vai_organ'})
+MERGE (o1)-[r82:locatedIn]->(o2)
+SET r82.text = 'Ung thư sụn thuộc loại ung thư nguyên phát, có tính phát triển và di căn, thường xảy ra ở xương chậu, hông và vai.'
+
+MERGE (o1:disease {id: 'ung_thư_sụn_disease'})
+MERGE (o2:disease {id: 'di_căn_disease'})
+MERGE (o1)-[r83:associatedWith]->(o2)
+SET r83.text = 'Ung thư sụn thuộc loại ung thư nguyên phát, có tính phát triển và di căn, thường xảy ra ở xương chậu, hông và vai.'
+
+MERGE (o1:disease {id: 'bệnh_disease'})
+MERGE (o2:disease {id: 'di_căn_đến_các_cơ_quan_khác_disease'})
+MERGE (o1)-[r84:associatedWith]->(o2)
+SET r84.text = 'Bệnh gồm 3 giai đoạn bệnh và nguy cơ di căn đến các cơ quan khác khá cao.'
+
+MERGE (o1:disease {id: 'ung_thư_di_căn_xương_disease'})
+MERGE (o2:disease {id: 'ung_thư_thứ_phát_disease'})
+MERGE (o1)-[r85:isSymptomOf]->(o2)
+SET r85.text = 'Ung thư di căn xương là dạng ung thư thứ phát, xảy ra với những trường hợp đang có tế bào ung thư tại cơ quan khác.'
+
+MERGE (o1:cause {id: 'tế_bào_ung_thư_tại_cơ_quan_khác_cause'})
+MERGE (o2:disease {id: 'ung_thư_di_căn_xương_disease'})
+MERGE (o1)-[r86:causes]->(o2)
+SET r86.text = 'Ung thư di căn xương là dạng ung thư thứ phát, xảy ra với những trường hợp đang có tế bào ung thư tại cơ quan khác.'
+
+MERGE (o1:disease {id: 'bệnh_disease'})
+MERGE (o2:disease {id: 'ung_thư_thận_disease'})
+MERGE (o1)-[r87:isSymptomOf]->(o2)
+SET r87.text = 'Bệnh có thể là biến chứng từ các ung thư như:  Ung thư thận Ung thư vú Ung thư tuyến tiền liệt Ung thư phổi Ung thư tuyến giáp'
+
+MERGE (o1:disease {id: 'bệnh_disease'})
+MERGE (o2:disease {id: 'ung_thư_vú_disease'})
+MERGE (o1)-[r88:isSymptomOf]->(o2)
+SET r88.text = 'Bệnh có thể là biến chứng từ các ung thư như:  Ung thư thận Ung thư vú Ung thư tuyến tiền liệt Ung thư phổi Ung thư tuyến giáp'
+
+MERGE (o1:disease {id: 'bệnh_disease'})
+MERGE (o2:disease {id: 'ung_thư_tuyến_tiền_liệt_disease'})
+MERGE (o1)-[r89:isSymptomOf]->(o2)
+SET r89.text = 'Bệnh có thể là biến chứng từ các ung thư như:  Ung thư thận Ung thư vú Ung thư tuyến tiền liệt Ung thư phổi Ung thư tuyến giáp'
+
+MERGE (o1:disease {id: 'bệnh_disease'})
+MERGE (o2:disease {id: 'ung_thư_phổi_disease'})
+MERGE (o1)-[r90:isSymptomOf]->(o2)
+SET r90.text = 'Bệnh có thể là biến chứng từ các ung thư như:  Ung thư thận Ung thư vú Ung thư tuyến tiền liệt Ung thư phổi Ung thư tuyến giáp'
+
+MERGE (o1:disease {id: 'bệnh_disease'})
+MERGE (o2:disease {id: 'ung_thư_tuyến_giáp_disease'})
+MERGE (o1)-[r91:isSymptomOf]->(o2)
+SET r91.text = 'Bệnh có thể là biến chứng từ các ung thư như:  Ung thư thận Ung thư vú Ung thư tuyến tiền liệt Ung thư phổi Ung thư tuyến giáp'
+
+MERGE (o1:disease {id: 'bệnh_đa_u_tủy_disease'})
+MERGE (o2:disease {id: 'ung_thư_của_tương_bào_disease'})
+MERGE (o1)-[r92:isSymptomOf]->(o2)
+SET r92.text = 'Bệnh đa u tủy là ung thư của tương bào, phá hủy các xương xung quanh bằng cách xâm lấn và gây tổn thương chúng.'
+
+MERGE (o1:symptom {id: 'phá_hủy_các_xương_xung_quanh_symptom'})
+MERGE (o2:disease {id: 'bệnh_đa_u_tủy_disease'})
+MERGE (o1)-[r93:isSymptomOf]->(o2)
+SET r93.text = 'Bệnh đa u tủy là ung thư của tương bào, phá hủy các xương xung quanh bằng cách xâm lấn và gây tổn thương chúng.'
+
+MERGE (o1:symptom {id: 'tổn_thương_mỡ_trong_xương_symptom'})
+MERGE (o2:disease {id: 'bệnh_đa_u_tủy_disease'})
+MERGE (o1)-[r94:isSymptomOf]->(o2)
+SET r94.text = 'Bệnh gây ra các tình trạng tổn thương mỡ trong xương, gãy xương, suy thận hoặc nhiễm trùng.'
+
+MERGE (o1:symptom {id: 'gãy_xương_symptom'})
+MERGE (o2:disease {id: 'bệnh_đa_u_tủy_disease'})
+MERGE (o1)-[r95:isSymptomOf]->(o2)
+SET r95.text = 'Bệnh gây ra các tình trạng tổn thương mỡ trong xương, gãy xương, suy thận hoặc nhiễm trùng.'
+
+MERGE (o1:symptom {id: 'suy_thận_symptom'})
+MERGE (o2:disease {id: 'bệnh_đa_u_tủy_disease'})
+MERGE (o1)-[r96:isSymptomOf]->(o2)
+SET r96.text = 'Bệnh gây ra các tình trạng tổn thương mỡ trong xương, gãy xương, suy thận hoặc nhiễm trùng.'
+
+MERGE (o1:symptom {id: 'nhiễm_trùng_symptom'})
+MERGE (o2:disease {id: 'bệnh_đa_u_tủy_disease'})
+MERGE (o1)-[r97:isSymptomOf]->(o2)
+SET r97.text = 'Bệnh gây ra các tình trạng tổn thương mỡ trong xương, gãy xương, suy thận hoặc nhiễm trùng.'
+
+MERGE (o1:symptom {id: 'đau_xương_dai_dẳng_symptom'})
+MERGE (o2:disease {id: 'bệnh_đa_u_tủy_disease'})
+MERGE (o1)-[r98:isSymptomOf]->(o2)
+SET r98.text = 'Những triệu chứng phổ biến ở bệnh u xương ác tính đa u tủy là đau xương dai dẳng, đặc biệt ở phần lưng và ngực.'
+
+MERGE (o1:symptom {id: 'đau_xương_dai_dẳng_symptom'})
+MERGE (o2:organ {id: 'phần_lưng_và_ngực_organ'})
+MERGE (o1)-[r99:locatedIn]->(o2)
+SET r99.text = 'Những triệu chứng phổ biến ở bệnh u xương ác tính đa u tủy là đau xương dai dẳng, đặc biệt ở phần lưng và ngực.'
+
+MERGE (o1:disease {id: 'u_xương_disease'})
+MERGE (o2:cause {id: 'chưa_được_xác_định_cause'})
+MERGE (o1)-[r100:causedBy]->(o2)
+SET r100.text = 'Nguyên nhân u xương ở người hiện nay vẫn chưa được xác định.'
+
+MERGE (o1:cause {id: 'xạ_trị_cause'})
+MERGE (o2:disease {id: 'khối_u_disease'})
+MERGE (o1)-[r101:causes]->(o2)
+SET r101.text = 'Có rất nhiều nguyên nhân thứ phát khiến xương phát triển khối u như xạ trị, tác dụng phụ của thuốc chống ung thư, tiền sử chấn thương xương, và di truyền.'
+
+MERGE (o1:cause {id: 'tác_dụng_phụ_của_thuốc_chống_ung_thư_cause'})
+MERGE (o2:disease {id: 'khối_u_disease'})
+MERGE (o1)-[r102:causes]->(o2)
+SET r102.text = 'Có rất nhiều nguyên nhân thứ phát khiến xương phát triển khối u như xạ trị, tác dụng phụ của thuốc chống ung thư, tiền sử chấn thương xương, và di truyền.'
+
+MERGE (o1:cause {id: 'tiền_sử_chấn_thương_xương_cause'})
+MERGE (o2:disease {id: 'khối_u_disease'})
+MERGE (o1)-[r103:causes]->(o2)
+SET r103.text = 'Có rất nhiều nguyên nhân thứ phát khiến xương phát triển khối u như xạ trị, tác dụng phụ của thuốc chống ung thư, tiền sử chấn thương xương, và di truyền.'
+
+MERGE (o1:cause {id: 'di_truyền_cause'})
+MERGE (o2:disease {id: 'khối_u_disease'})
+MERGE (o1)-[r104:causes]->(o2)
+SET r104.text = 'Có rất nhiều nguyên nhân thứ phát khiến xương phát triển khối u như xạ trị, tác dụng phụ của thuốc chống ung thư, tiền sử chấn thương xương, và di truyền.'
+
+MERGE (o1:disease {id: 'khối_u_lành_tính_disease'})
+MERGE (o2:lifestyle {id: 'giai_đoạn_xương_phát_triển_vượt_trội_nhất_lifestyle'})
+MERGE (o1)-[r105:associatedWith]->(o2)
+SET r105.text = 'Với khối u lành tính, khối u xuất hiện phần lớn trong giai đoạn xương phát triển vượt trội nhất.'
+
+MERGE (o1:disease {id: 'u_xương_lành_tính_disease'})
+MERGE (o2:lifestyle {id: 'nhóm_đối_tượng_từ_10_-_20_tuổi_lifestyle'})
+MERGE (o1)-[r106:associatedWith]->(o2)
+SET r106.text = 'Do vậy, độ tuổi có nguy cơ mắc u xương lành tính rơi vào nhóm đối tượng từ 10 - 20 tuổi.'
+
+MERGE (o1:disease {id: 'u_xương_ác_tính_disease'})
+MERGE (o2:disease {id: 'ung_thư_nguyên_phát_disease'})
+MERGE (o1)-[r107:isSymptomOf]->(o2)
+SET r107.text = 'U xương ác tính hay ung thư xương có thể là ung thư nguyên phát hoặc do di căn.'
+
+MERGE (o1:disease {id: 'u_xương_ác_tính_disease'})
+MERGE (o2:disease {id: 'di_căn_disease'})
+MERGE (o1)-[r108:isSymptomOf]->(o2)
+SET r108.text = 'U xương ác tính hay ung thư xương có thể là ung thư nguyên phát hoặc do di căn.'
+
+MERGE (o1:disease {id: 'u_xương_ác_tính_nguyên_phát_disease'})
+MERGE (o2:organ {id: 'bên_trong_xương_organ'})
+MERGE (o1)-[r109:locatedIn]->(o2)
+SET r109.text = 'U xương ác tính nguyên phát là do bên trong xương phát triển khối u ác tính, và nguyên nhân trực tiếp hình thành khối u vẫn chưa được xác định.'
+
+MERGE (o1:cause {id: 'khối_u_ác_tính_cause'})
+MERGE (o2:disease {id: 'u_xương_ác_tính_nguyên_phát_disease'})
+MERGE (o1)-[r110:causes]->(o2)
+SET r110.text = 'U xương ác tính nguyên phát là do bên trong xương phát triển khối u ác tính, và nguyên nhân trực tiếp hình thành khối u vẫn chưa được xác định.'
+
+MERGE (o1:disease {id: 'khối_u_xương_ác_tính_thứ_phát_disease'})
+MERGE (o2:disease {id: 'ung_thư_xương_do_di_căn_disease'})
+MERGE (o1)-[r111:isSymptomOf]->(o2)
+SET r111.text = 'Đối với khối u xương ác tính thứ phát, cũng là ung thư xương do di căn từ những bệnh lý khác như:  Ung thư vú Ung thư thận Ung thư phổi Ung thư tuyến tiền liệt Ung thư tuyến giáp'
+
+MERGE (o1:disease {id: 'khối_u_xương_ác_tính_thứ_phát_disease'})
+MERGE (o2:disease {id: 'ung_thư_vú_disease'})
+MERGE (o1)-[r112:isSymptomOf]->(o2)
+SET r112.text = 'Đối với khối u xương ác tính thứ phát, cũng là ung thư xương do di căn từ những bệnh lý khác như:  Ung thư vú Ung thư thận Ung thư phổi Ung thư tuyến tiền liệt Ung thư tuyến giáp'
+
+MERGE (o1:disease {id: 'khối_u_xương_ác_tính_thứ_phát_disease'})
+MERGE (o2:disease {id: 'ung_thư_thận_disease'})
+MERGE (o1)-[r113:isSymptomOf]->(o2)
+SET r113.text = 'Đối với khối u xương ác tính thứ phát, cũng là ung thư xương do di căn từ những bệnh lý khác như:  Ung thư vú Ung thư thận Ung thư phổi Ung thư tuyến tiền liệt Ung thư tuyến giáp'
+
+MERGE (o1:disease {id: 'khối_u_xương_ác_tính_thứ_phát_disease'})
+MERGE (o2:disease {id: 'ung_thư_phổi_disease'})
+MERGE (o1)-[r114:isSymptomOf]->(o2)
+SET r114.text = 'Đối với khối u xương ác tính thứ phát, cũng là ung thư xương do di căn từ những bệnh lý khác như:  Ung thư vú Ung thư thận Ung thư phổi Ung thư tuyến tiền liệt Ung thư tuyến giáp'
+
+MERGE (o1:disease {id: 'khối_u_xương_ác_tính_thứ_phát_disease'})
+MERGE (o2:disease {id: 'ung_thư_tuyến_tiền_liệt_disease'})
+MERGE (o1)-[r115:isSymptomOf]->(o2)
+SET r115.text = 'Đối với khối u xương ác tính thứ phát, cũng là ung thư xương do di căn từ những bệnh lý khác như:  Ung thư vú Ung thư thận Ung thư phổi Ung thư tuyến tiền liệt Ung thư tuyến giáp'
+
+MERGE (o1:disease {id: 'khối_u_xương_ác_tính_thứ_phát_disease'})
+MERGE (o2:disease {id: 'ung_thư_tuyến_giáp_disease'})
+MERGE (o1)-[r116:isSymptomOf]->(o2)
+SET r116.text = 'Đối với khối u xương ác tính thứ phát, cũng là ung thư xương do di căn từ những bệnh lý khác như:  Ung thư vú Ung thư thận Ung thư phổi Ung thư tuyến tiền liệt Ung thư tuyến giáp'
+
+MERGE (o1:symptom {id: 'cơn_đau_âm_ỉ_quanh_vùng_có_khối_u_symptom'})
+MERGE (o2:disease {id: 'khối_u_ở_xương_disease'})
+MERGE (o1)-[r117:isSymptomOf]->(o2)
+SET r117.text = 'Khối u ở xương được nhận biết qua triệu chứng điển hình nhất là cơn đau âm ỉ quanh vùng có khối u.'
+
+MERGE (o1:symptom {id: 'cảm_giác_đau_tại_vị_trí_tổn_thương_symptom'})
+MERGE (o2:disease {id: 'u_xương_lành_tính_disease'})
+MERGE (o1)-[r118:isSymptomOf]->(o2)
+SET r118.text = 'Dù là u xương lành tính hay ác tính, người bệnh sẽ trải qua cảm giác đau tại vị trí tổn thương.'
+
+MERGE (o1:symptom {id: 'cảm_giác_đau_tại_vị_trí_tổn_thương_symptom'})
+MERGE (o2:disease {id: 'u_xương_ác_tính_disease'})
+MERGE (o1)-[r119:isSymptomOf]->(o2)
+SET r119.text = 'Dù là u xương lành tính hay ác tính, người bệnh sẽ trải qua cảm giác đau tại vị trí tổn thương.'
+
+MERGE (o1:symptom {id: 'cường_độ_cơn_đau_sẽ_tăng_dần_symptom'})
+MERGE (o2:disease {id: 'u_xương_disease'})
+MERGE (o1)-[r120:isSymptomOf]->(o2)
+SET r120.text = 'Cường độ cơn đau sẽ tăng dần và nghiêm trọng hơn nếu bệnh kéo dài không điều trị, có thể ảnh hưởng đến sinh hoạt hàng ngày của người bệnh, thậm chí có thể đánh thức người bệnh lúc nửa đêm.'
+
+MERGE (o1:symptom {id: 'ảnh_hưởng_đến_sinh_hoạt_hàng_ngày_symptom'})
+MERGE (o2:disease {id: 'u_xương_disease'})
+MERGE (o1)-[r121:isSymptomOf]->(o2)
+SET r121.text = 'Cường độ cơn đau sẽ tăng dần và nghiêm trọng hơn nếu bệnh kéo dài không điều trị, có thể ảnh hưởng đến sinh hoạt hàng ngày của người bệnh, thậm chí có thể đánh thức người bệnh lúc nửa đêm.'
+
+MERGE (o1:symptom {id: 'đánh_thức_người_bệnh_lúc_nửa_đêm_symptom'})
+MERGE (o2:disease {id: 'u_xương_disease'})
+MERGE (o1)-[r122:isSymptomOf]->(o2)
+SET r122.text = 'Cường độ cơn đau sẽ tăng dần và nghiêm trọng hơn nếu bệnh kéo dài không điều trị, có thể ảnh hưởng đến sinh hoạt hàng ngày của người bệnh, thậm chí có thể đánh thức người bệnh lúc nửa đêm.'
+
+MERGE (o1:symptom {id: 'các_cơn_đau_symptom'})
+MERGE (o2:lifestyle {id: 'vận_động_mạnh_lifestyle'})
+MERGE (o1)-[r123:aggravatedBy]->(o2)
+SET r123.text = 'Hầu hết, các cơn đau xảy ra khi người bệnh vận động mạnh, tạo áp lực lớn lên vị trí khối u như mang vác nặng.'
+
+MERGE (o1:symptom {id: 'các_cơn_đau_symptom'})
+MERGE (o2:lifestyle {id: 'mang_vác_nặng_lifestyle'})
+MERGE (o1)-[r124:aggravatedBy]->(o2)
+SET r124.text = 'Hầu hết, các cơn đau xảy ra khi người bệnh vận động mạnh, tạo áp lực lớn lên vị trí khối u như mang vác nặng.'
+
+MERGE (o1:symptom {id: 'cơn_đau_tăng_dần_theo_thời_gian_symptom'})
+MERGE (o2:disease {id: 'u_xương_ác_tính_disease'})
+MERGE (o1)-[r125:isSymptomOf]->(o2)
+SET r125.text = 'U xương ác tính sẽ có triệu chứng từ cơn đau tăng dần theo thời gian, bên cạnh đó, xương cũng sẽ trở nên yếu dần.'
+
+MERGE (o1:symptom {id: 'xương_yếu_dần_symptom'})
+MERGE (o2:disease {id: 'u_xương_ác_tính_disease'})
+MERGE (o1)-[r126:isSymptomOf]->(o2)
+SET r126.text = 'U xương ác tính sẽ có triệu chứng từ cơn đau tăng dần theo thời gian, bên cạnh đó, xương cũng sẽ trở nên yếu dần.'
+
+MERGE (o1:symptom {id: 'gãy_xương_symptom'})
+MERGE (o2:disease {id: 'u_xương_ác_tính_disease'})
+MERGE (o1)-[r127:isSymptomOf]->(o2)
+SET r127.text = 'Điều này khiến người bệnh đối mặt với nguy cơ gãy xương cao, kể cả trong những trường hợp chấn thương nhẹ.'
+
+MERGE (o1:disease {id: 'u_xương_lành_tính_disease'})
+MERGE (o2:symptom {id: 'không_gây_ra_bất_cứ_triệu_chứng_nào_symptom'})
+MERGE (o1)-[r128:associatedWith]->(o2)
+SET r128.text = 'Tuy nhiên, những trường hợp u xương lành tính có thể không gây ra bất cứ triệu chứng nào.'
+
+MERGE (o1:disease {id: 'u_xương_disease'})
+MERGE (o2:symptom {id: 'không_gây_ra_triệu_chứng_symptom'})
+MERGE (o1)-[r129:associatedWith]->(o2)
+SET r129.text = 'Vì thế, nếu u xương không gây ra triệu chứng, khối u không gây cản trở đến hoạt động và vận động hàng ngày, người bệnh sẽ khó có thể nhận biết được mình đang mắc bệnh nếu như không đi thực hiện các xét nghiệm cận lâm sàng.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:symptom {id: 'không_gây_cản_trở_đến_hoạt_động_và_vận_động_hàng_ngày_symptom'})
+MERGE (o1)-[r130:associatedWith]->(o2)
+SET r130.text = 'Vì thế, nếu u xương không gây ra triệu chứng, khối u không gây cản trở đến hoạt động và vận động hàng ngày, người bệnh sẽ khó có thể nhận biết được mình đang mắc bệnh nếu như không đi thực hiện các xét nghiệm cận lâm sàng.'
+
+MERGE (o1:disease {id: 'chẩn_đoán_bệnh_u_xương_disease'})
+MERGE (o2:symptom {id: 'thu_thập_các_triệu_chứng_lâm_sàng_symptom'})
+MERGE (o1)-[r131:diagnosedBy]->(o2)
+SET r131.text = 'Chẩn đoán bệnh u xương bắt đầu với việc thu thập các triệu chứng lâm sàng của người bệnh để có thể loại trừ các bệnh lý khác như gãy xương, nhiễm trùng,&#8230; Bác sĩ sẽ chỉ định người bệnh thực hiện các phương pháp chẩn đoán cận lâm sàng tiếp theo đó để thu thập kết quả hình ảnh nhằm chẩn đoán rõ hơn về tình trạng khối u xương.'
+
+MERGE (o1:disease {id: 'chẩn_đoán_bệnh_u_xương_disease'})
+MERGE (o2:test {id: 'các_phương_pháp_chẩn_đoán_cận_lâm_sàng_test'})
+MERGE (o1)-[r132:diagnosedBy]->(o2)
+SET r132.text = 'Chẩn đoán bệnh u xương bắt đầu với việc thu thập các triệu chứng lâm sàng của người bệnh để có thể loại trừ các bệnh lý khác như gãy xương, nhiễm trùng,&#8230; Bác sĩ sẽ chỉ định người bệnh thực hiện các phương pháp chẩn đoán cận lâm sàng tiếp theo đó để thu thập kết quả hình ảnh nhằm chẩn đoán rõ hơn về tình trạng khối u xương.'
+
+MERGE (o1:disease {id: 'chẩn_đoán_bệnh_u_xương_disease'})
+MERGE (o2:test {id: 'thu_thập_kết_quả_hình_ảnh_test'})
+MERGE (o1)-[r133:diagnosedBy]->(o2)
+SET r133.text = 'Chẩn đoán bệnh u xương bắt đầu với việc thu thập các triệu chứng lâm sàng của người bệnh để có thể loại trừ các bệnh lý khác như gãy xương, nhiễm trùng,&#8230; Bác sĩ sẽ chỉ định người bệnh thực hiện các phương pháp chẩn đoán cận lâm sàng tiếp theo đó để thu thập kết quả hình ảnh nhằm chẩn đoán rõ hơn về tình trạng khối u xương.'
+
+MERGE (o1:test {id: 'kiểm_tra_vùng_nghi_ngờ_có_khối_u_test'})
+MERGE (o2:disease {id: 'bệnh_u_xương_disease'})
+MERGE (o1)-[r134:diagnosedBy]->(o2)
+SET r134.text = 'Đầu tiên, bác sĩ sẽ kiểm tra vùng nghi ngờ có khối u. Đồng thời, đánh giá tình trạng độ mềm trong xương người bệnh và phạm vi vận động.'
+
+MERGE (o1:test {id: 'đánh_giá_tình_trạng_độ_mềm_trong_xương_test'})
+MERGE (o2:disease {id: 'bệnh_u_xương_disease'})
+MERGE (o1)-[r135:diagnosedBy]->(o2)
+SET r135.text = 'Đầu tiên, bác sĩ sẽ kiểm tra vùng nghi ngờ có khối u. Đồng thời, đánh giá tình trạng độ mềm trong xương người bệnh và phạm vi vận động.'
+
+MERGE (o1:test {id: 'đánh_giá_phạm_vi_vận_động_test'})
+MERGE (o2:disease {id: 'bệnh_u_xương_disease'})
+MERGE (o1)-[r136:diagnosedBy]->(o2)
+SET r136.text = 'Đầu tiên, bác sĩ sẽ kiểm tra vùng nghi ngờ có khối u. Đồng thời, đánh giá tình trạng độ mềm trong xương người bệnh và phạm vi vận động.'
+
+MERGE (o1:test {id: 'xét_nghiệm_máu_test'})
+MERGE (o2:disease {id: 'bệnh_u_xương_disease'})
+MERGE (o1)-[r137:diagnosedBy]->(o2)
+SET r137.text = 'Tiếp theo, người bệnh sẽ thực hiện các bước cần thiết như xét nghiệm máu và nước tiểu trước khi đi xét nghiệm chẩn đoán chuyên sâu.'
+
+MERGE (o1:test {id: 'xét_nghiệm_nước_tiểu_test'})
+MERGE (o2:disease {id: 'bệnh_u_xương_disease'})
+MERGE (o1)-[r138:diagnosedBy]->(o2)
+SET r138.text = 'Tiếp theo, người bệnh sẽ thực hiện các bước cần thiết như xét nghiệm máu và nước tiểu trước khi đi xét nghiệm chẩn đoán chuyên sâu.'
+
+MERGE (o1:test {id: 'chụp_x-quang_test'})
+MERGE (o2:disease {id: 'bệnh_u_xương_disease'})
+MERGE (o1)-[r139:diagnosedBy]->(o2)
+SET r139.text = 'Những phương pháp chẩn đoán bệnh u xương được sử dụng nhiều gồm:  Chụp x-quang Chụp cắt lớp vi tính CT Chụp MRI Sinh thiết khối u Sinh thiết mở'
+
+MERGE (o1:test {id: 'chụp_cắt_lớp_vi_tính_ct_test'})
+MERGE (o2:disease {id: 'bệnh_u_xương_disease'})
+MERGE (o1)-[r140:diagnosedBy]->(o2)
+SET r140.text = 'Những phương pháp chẩn đoán bệnh u xương được sử dụng nhiều gồm:  Chụp x-quang Chụp cắt lớp vi tính CT Chụp MRI Sinh thiết khối u Sinh thiết mở'
+
+MERGE (o1:test {id: 'chụp_mri_test'})
+MERGE (o2:disease {id: 'bệnh_u_xương_disease'})
+MERGE (o1)-[r141:diagnosedBy]->(o2)
+SET r141.text = 'Những phương pháp chẩn đoán bệnh u xương được sử dụng nhiều gồm:  Chụp x-quang Chụp cắt lớp vi tính CT Chụp MRI Sinh thiết khối u Sinh thiết mở'
+
+MERGE (o1:test {id: 'sinh_thiết_khối_u_test'})
+MERGE (o2:disease {id: 'bệnh_u_xương_disease'})
+MERGE (o1)-[r142:diagnosedBy]->(o2)
+SET r142.text = 'Những phương pháp chẩn đoán bệnh u xương được sử dụng nhiều gồm:  Chụp x-quang Chụp cắt lớp vi tính CT Chụp MRI Sinh thiết khối u Sinh thiết mở'
+
+MERGE (o1:test {id: 'sinh_thiết_mở_test'})
+MERGE (o2:disease {id: 'bệnh_u_xương_disease'})
+MERGE (o1)-[r143:diagnosedBy]->(o2)
+SET r143.text = 'Những phương pháp chẩn đoán bệnh u xương được sử dụng nhiều gồm:  Chụp x-quang Chụp cắt lớp vi tính CT Chụp MRI Sinh thiết khối u Sinh thiết mở'
+
+MERGE (o1:disease {id: 'biến_chứng_u_xương_disease'})
+MERGE (o2:disease {id: 'u_ác_tính_disease'})
+MERGE (o1)-[r144:isSymptomOf]->(o2)
+SET r144.text = 'Biến chứng u xương sẽ xảy ra với trường hợp u ác tính, ung thư xương.'
+
+MERGE (o1:disease {id: 'biến_chứng_u_xương_disease'})
+MERGE (o2:disease {id: 'ung_thư_xương_disease'})
+MERGE (o1)-[r145:isSymptomOf]->(o2)
+SET r145.text = 'Biến chứng u xương sẽ xảy ra với trường hợp u ác tính, ung thư xương.'
+
+MERGE (o1:disease {id: 'biến_chứng_disease'})
+MERGE (o2:organ {id: 'chức_năng_chi_thể_organ'})
+MERGE (o1)-[r146:affects]->(o2)
+SET r146.text = 'Bệnh phát triển các biến chứng sẽ khiến người bệnh đối mặt với rủi ro bị tàn phế, mất chức năng chi thể.'
+
+MERGE (o1:disease {id: 'ung_thư_xương_disease'})
+MERGE (o2:organ {id: 'các_mô_xương_bình_thường_organ'})
+MERGE (o1)-[r147:affects]->(o2)
+SET r147.text = 'Đặc biệt, ung thư xương sẽ có thể gây ra di căn đến khắp cơ thể và phá huỷ các mô xương bình thường.'
+
+MERGE (o1:disease {id: 'u_xương_lành_tính_disease'})
+MERGE (o2:symptom {id: 'không_có_triệu_chứng_nguy_hiểm_symptom'})
+MERGE (o1)-[r148:isSymptomOf]->(o2)
+SET r148.text = 'U xương lành tính hầu như không gây ra biến chứng gì đáng lo ngại vì vốn bệnh cũng không có triệu chứng nguy hiểm cho sức khỏe người bệnh.'
+
+MERGE (o1:symptom {id: 'yếu_xương_symptom'})
+MERGE (o2:disease {id: 'khối_u_disease'})
+MERGE (o1)-[r149:isSymptomOf]->(o2)
+SET r149.text = 'Dù vậy, người bệnh có thể sẽ bị yếu xương hơn bình thường do bị ảnh hưởng của khối u.'
+
+MERGE (o1:disease {id: 'u_xương_lành_tính_disease'})
+MERGE (o2:treatment {id: 'điều_trị_treatment'})
+MERGE (o1)-[r150:treatedBy]->(o2)
+SET r150.text = 'U xương lành tính không nhất thiết điều trị nếu người bệnh không bị triệu chứng bệnh cản trở các hoạt động và vận động thường ngày.'
+
+MERGE (o1:disease {id: 'khối_u_lành_tính_disease'})
+MERGE (o2:treatment {id: 'tiêu_biến_dần_theo_thời_gian_treatment'})
+MERGE (o1)-[r151:treatedBy]->(o2)
+SET r151.text = 'Thông thường, khối u lành tính sẽ tiêu biến dần theo thời gian.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:symptom {id: 'không_biến_mất_symptom'})
+MERGE (o1)-[r152:isSymptomOf]->(o2)
+SET r152.text = 'Tuy nhiên có những trường hợp khối u không biến mất hoặc phát triển to hơn.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:symptom {id: 'phát_triển_to_hơn_symptom'})
+MERGE (o1)-[r153:isSymptomOf]->(o2)
+SET r153.text = 'Tuy nhiên có những trường hợp khối u không biến mất hoặc phát triển to hơn.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_cắt_bỏ_khối_u_treatment'})
+MERGE (o2:disease {id: 'khối_u_disease'})
+MERGE (o1)-[r154:treatedBy]->(o2)
+SET r154.text = 'Lúc này, bác sĩ sẽ xem xét và chỉ định người bệnh phẫu thuật cắt bỏ khối u để tránh tình trạng lan rộng khối u hoặc biến đổi thành khối u ác tính, nguy hiểm đến tính mạng người bệnh.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_cắt_bỏ_khối_u_treatment'})
+MERGE (o2:disease {id: 'lan_rộng_khối_u_disease'})
+MERGE (o1)-[r155:preventedBy]->(o2)
+SET r155.text = 'Lúc này, bác sĩ sẽ xem xét và chỉ định người bệnh phẫu thuật cắt bỏ khối u để tránh tình trạng lan rộng khối u hoặc biến đổi thành khối u ác tính, nguy hiểm đến tính mạng người bệnh.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_cắt_bỏ_khối_u_treatment'})
+MERGE (o2:disease {id: 'biến_đổi_thành_khối_u_ác_tính_disease'})
+MERGE (o1)-[r156:preventedBy]->(o2)
+SET r156.text = 'Lúc này, bác sĩ sẽ xem xét và chỉ định người bệnh phẫu thuật cắt bỏ khối u để tránh tình trạng lan rộng khối u hoặc biến đổi thành khối u ác tính, nguy hiểm đến tính mạng người bệnh.'
+
+MERGE (o1:treatment {id: 'phương_pháp_điều_trị_u_xương_ác_tính_treatment'})
+MERGE (o2:disease {id: 'u_xương_ác_tính_disease'})
+MERGE (o1)-[r157:treatedBy]->(o2)
+SET r157.text = 'Phương pháp điều trị u xương ác tính phụ thuộc vào loại u xương hoặc ung thư xương của người bệnh.'
+
+MERGE (o1:treatment {id: 'phương_pháp_điều_trị_u_xương_ác_tính_treatment'})
+MERGE (o2:disease {id: 'ung_thư_xương_disease'})
+MERGE (o1)-[r158:treatedBy]->(o2)
+SET r158.text = 'Phương pháp điều trị u xương ác tính phụ thuộc vào loại u xương hoặc ung thư xương của người bệnh.'
+
+MERGE (o1:treatment {id: 'phác_đồ_điều_trị_treatment'})
+MERGE (o2:disease {id: 'di_căn_của_tế_bào_ung_thư_disease'})
+MERGE (o1)-[r159:treatedBy]->(o2)
+SET r159.text = 'Ngoài ra, phác đồ điều trị cũng cần phải đánh giá về tình trạng di căn của tế bào ung thư, vị trí phát triển tế bào.'
+
+MERGE (o1:treatment {id: 'quá_trình_điều_trị_treatment'})
+MERGE (o2:disease {id: 'u_xương_ác_tính_disease'})
+MERGE (o1)-[r160:treatedBy]->(o2)
+SET r160.text = 'Quá trình điều trị sẽ khó khăn hơn nếu u xương ác tính đã tiến đến giai đoạn di căn.'
+
+MERGE (o1:treatment {id: 'quá_trình_điều_trị_treatment'})
+MERGE (o2:disease {id: 'di_căn_disease'})
+MERGE (o1)-[r161:aggravatedBy]->(o2)
+SET r161.text = 'Quá trình điều trị sẽ khó khăn hơn nếu u xương ác tính đã tiến đến giai đoạn di căn.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_loại_bỏ_hoàn_toàn_khối_u_treatment'})
+MERGE (o2:disease {id: 'u_xương_ác_tính_disease'})
+MERGE (o1)-[r162:treatedBy]->(o2)
+SET r162.text = 'Những phương pháp điều trị u xương ác tính, ung thư xương gồm:  Phẫu thuật loại bỏ hoàn toàn khối u Xạ trị, thường được kết hợp với việc phẫu thuật để thu nhỏ khối u trước khi phẫu thuật.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_loại_bỏ_hoàn_toàn_khối_u_treatment'})
+MERGE (o2:disease {id: 'ung_thư_xương_disease'})
+MERGE (o1)-[r163:treatedBy]->(o2)
+SET r163.text = 'Những phương pháp điều trị u xương ác tính, ung thư xương gồm:  Phẫu thuật loại bỏ hoàn toàn khối u Xạ trị, thường được kết hợp với việc phẫu thuật để thu nhỏ khối u trước khi phẫu thuật.'
+
+MERGE (o1:treatment {id: 'xạ_trị_treatment'})
+MERGE (o2:disease {id: 'u_xương_ác_tính_disease'})
+MERGE (o1)-[r164:treatedBy]->(o2)
+SET r164.text = 'Những phương pháp điều trị u xương ác tính, ung thư xương gồm:  Phẫu thuật loại bỏ hoàn toàn khối u Xạ trị, thường được kết hợp với việc phẫu thuật để thu nhỏ khối u trước khi phẫu thuật.'
+
+MERGE (o1:treatment {id: 'xạ_trị_treatment'})
+MERGE (o2:disease {id: 'ung_thư_xương_disease'})
+MERGE (o1)-[r165:treatedBy]->(o2)
+SET r165.text = 'Những phương pháp điều trị u xương ác tính, ung thư xương gồm:  Phẫu thuật loại bỏ hoàn toàn khối u Xạ trị, thường được kết hợp với việc phẫu thuật để thu nhỏ khối u trước khi phẫu thuật.'
+
+MERGE (o1:treatment {id: 'xạ_trị_treatment'})
+MERGE (o2:disease {id: 'tế_bào_ung_thư_disease'})
+MERGE (o1)-[r166:treatedBy]->(o2)
+SET r166.text = 'Ngoài ra, xạ trị cũng được áp dụng để tiêu diệt tế bào ung thư'
+
+MERGE (o1:treatment {id: 'hóa_trị_treatment'})
+MERGE (o2:disease {id: 'tế_bào_ung_thư_disease'})
+MERGE (o1)-[r167:treatedBy]->(o2)
+SET r167.text = 'Hóa trị để tiêu diệt tế bào ung thư đang phát triển hoặc có khả năng di căn cao'
+
+MERGE (o1:treatment {id: 'hóa_trị_treatment'})
+MERGE (o2:disease {id: 'di_căn_disease'})
+MERGE (o1)-[r168:preventedBy]->(o2)
+SET r168.text = 'Hóa trị để tiêu diệt tế bào ung thư đang phát triển hoặc có khả năng di căn cao'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_lạnh_treatment'})
+MERGE (o2:disease {id: 'tế_bào_ung_thư_disease'})
+MERGE (o1)-[r169:treatedBy]->(o2)
+SET r169.text = 'Phẫu thuật lạnh, loại bỏ tế bào ung thư bằng nitơ lỏng'
+
+MERGE (o1:treatment {id: 'hóa_trị_treatment'})
+MERGE (o2:symptom {id: 'tác_dụng_phụ_symptom'})
+MERGE (o1)-[r170:isSymptomOf]->(o2)
+SET r170.text = 'Cần lưu ý một số tác dụng phụ mà người bệnh có thể gặp phải khi thực hiện hóa trị, xạ trị để điều trị u xương ác tính.'
+
+MERGE (o1:treatment {id: 'xạ_trị_treatment'})
+MERGE (o2:symptom {id: 'tác_dụng_phụ_symptom'})
+MERGE (o1)-[r171:isSymptomOf]->(o2)
+SET r171.text = 'Cần lưu ý một số tác dụng phụ mà người bệnh có thể gặp phải khi thực hiện hóa trị, xạ trị để điều trị u xương ác tính.'
+
+MERGE (o1:symptom {id: 'buồn_nôn_symptom'})
+MERGE (o2:treatment {id: 'hóa_trị_treatment'})
+MERGE (o1)-[r172:isSymptomOf]->(o2)
+SET r172.text = 'Những tác dụng phục gồm:  Buồn nôn Cáu gắt Rụng tóc Suy nhược cơ thể'
+
+MERGE (o1:symptom {id: 'buồn_nôn_symptom'})
+MERGE (o2:treatment {id: 'xạ_trị_treatment'})
+MERGE (o1)-[r173:isSymptomOf]->(o2)
+SET r173.text = 'Những tác dụng phục gồm:  Buồn nôn Cáu gắt Rụng tóc Suy nhược cơ thể'
+
+MERGE (o1:symptom {id: 'cáu_gắt_symptom'})
+MERGE (o2:treatment {id: 'hóa_trị_treatment'})
+MERGE (o1)-[r174:isSymptomOf]->(o2)
+SET r174.text = 'Những tác dụng phục gồm:  Buồn nôn Cáu gắt Rụng tóc Suy nhược cơ thể'
+
+MERGE (o1:symptom {id: 'cáu_gắt_symptom'})
+MERGE (o2:treatment {id: 'xạ_trị_treatment'})
+MERGE (o1)-[r175:isSymptomOf]->(o2)
+SET r175.text = 'Những tác dụng phục gồm:  Buồn nôn Cáu gắt Rụng tóc Suy nhược cơ thể'
+
+MERGE (o1:symptom {id: 'rụng_tóc_symptom'})
+MERGE (o2:treatment {id: 'hóa_trị_treatment'})
+MERGE (o1)-[r176:isSymptomOf]->(o2)
+SET r176.text = 'Những tác dụng phục gồm:  Buồn nôn Cáu gắt Rụng tóc Suy nhược cơ thể'
+
+MERGE (o1:symptom {id: 'rụng_tóc_symptom'})
+MERGE (o2:treatment {id: 'xạ_trị_treatment'})
+MERGE (o1)-[r177:isSymptomOf]->(o2)
+SET r177.text = 'Những tác dụng phục gồm:  Buồn nôn Cáu gắt Rụng tóc Suy nhược cơ thể'
+
+MERGE (o1:symptom {id: 'suy_nhược_cơ_thể_symptom'})
+MERGE (o2:treatment {id: 'hóa_trị_treatment'})
+MERGE (o1)-[r178:isSymptomOf]->(o2)
+SET r178.text = 'Những tác dụng phục gồm:  Buồn nôn Cáu gắt Rụng tóc Suy nhược cơ thể'
+
+MERGE (o1:treatment {id: 'tái_khám_treatment'})
+MERGE (o2:disease {id: 'u_xương_disease'})
+MERGE (o1)-[r179:treatedBy]->(o2)
+SET r179.text = 'Người bệnh sau điều trị u xương cần thực hiện đúng theo yêu cầu tái khám của bác sĩ, kết hợp với việc tự quản lý sức khỏe cơ thể của mình.'
+
+MERGE (o1:treatment {id: 'tái_khám_treatment'})
+MERGE (o2:disease {id: 'khối_u_disease'})
+MERGE (o1)-[r180:relatedTo]->(o2)
+SET r180.text = 'Việc tái khám đúng hẹn với bác sĩ giúp người bệnh nắm rõ được tình trạng khối u trong cơ thể, cũng như kịp thời xử lý sớm những nguy cơ có thể gặp phải.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:organ {id: 'cơ_thể_organ'})
+MERGE (o1)-[r181:locatedIn]->(o2)
+SET r181.text = 'Thời gian phục hồi sau điều trị phụ thuộc vào kích thước và vị trí khối u.'
+
+MERGE (o1:lifestyle {id: 'lối_sống_khỏe_mạnh_lifestyle'})
+MERGE (o2:treatment {id: 'hồi_phục_treatment'})
+MERGE (o1)-[r182:relatedTo]->(o2)
+SET r182.text = 'Ngoài ra, người bệnh tuân thủ đúng những yêu cầu của bác sĩ, thực hiện lối sống khỏe mạnh cùng chế độ dinh dưỡng phù hợp cũng sẽ góp phần thúc đẩy quá trình hồi phục và hiệu quả của phác đồ.'
+
+MERGE (o1:disease {id: 'u_xương_disease'})
+MERGE (o2:treatment {id: 'ngăn_ngừa_treatment'})
+MERGE (o1)-[r183:preventedBy]->(o2)
+SET r183.text = 'U xương chưa có phương pháp ngăn ngừa hoàn toàn.'
+
+MERGE (o1:lifestyle {id: 'sức_khỏe_tổng_thể_lifestyle'})
+MERGE (o2:disease {id: 'u_xương_disease'})
+MERGE (o1)-[r184:preventedBy]->(o2)
+SET r184.text = 'Cách phòng ngừa bệnh tối ưu nhất là xây dựng một nền sức khỏe tổng thể tốt và nắm rõ tình trạng sức khỏe của chính mình.'
+
+MERGE (o1:disease {id: 'u_xương_disease'})
+MERGE (o2:disease {id: 'bệnh_lý_disease'})
+MERGE (o1)-[r185:relatedTo]->(o2)
+SET r185.text = 'Việc này không chỉ giúp bạn có thể giảm thiểu được rủi ro bị u xương mà còn là những bệnh lý khác.'
+
+MERGE (o1:lifestyle {id: 'chế_độ_dinh_dưỡng_phù_hợp__lành_mạnh_lifestyle'})
+MERGE (o2:lifestyle {id: 'sức_khỏe_lifestyle'})
+MERGE (o1)-[r186:relatedTo]->(o2)
+SET r186.text = 'Những hành động và thói quen cần được áp dụng hàng ngày để tăng cường sức khỏe cho bản thân là: Có chế độ dinh dưỡng phù hợp, lành mạnh.'
+
+MERGE (o1:food {id: 'canxi_food'})
+MERGE (o2:organ {id: 'cơ_thể_organ'})
+MERGE (o1)-[r187:relatedTo]->(o2)
+SET r187.text = 'Đặc biệt, cung cấp lượng canxi vừa đủ cho cơ thể'
+
+MERGE (o1:treatment {id: 'thăm_khám_định_kỳ_treatment'})
+MERGE (o2:lifestyle {id: 'sức_khỏe_lifestyle'})
+MERGE (o1)-[r188:relatedTo]->(o2)
+SET r188.text = 'Thực hiện thăm khám định kỳ 2 lần/năm'
+
+MERGE (o1:lifestyle {id: 'tập_luyện_thể_thao_lifestyle'})
+MERGE (o2:lifestyle {id: 'sức_khỏe_lifestyle'})
+MERGE (o1)-[r189:relatedTo]->(o2)
+SET r189.text = 'Tập luyện thể thao để duy trì sức khỏe'
+
+MERGE (o1:cause {id: 'chất_độc_hại__tia_phóng_xạ_cause'})
+MERGE (o2:disease {id: 'u_xương_disease'})
+MERGE (o1)-[r190:causedBy]->(o2)
+SET r190.text = 'Hạn chế tối đa việc tiếp xúc với các chất độc hại, tia phóng xạ'
+
+MERGE (o1:cause {id: 'bệnh_sử_liên_quan_đến_xương_hoặc_ung_thư_xương_cause'})
+MERGE (o2:disease {id: 'u_xương_disease'})
+MERGE (o1)-[r191:causedBy]->(o2)
+SET r191.text = 'Có ý thức ngừa bệnh sớm nếu người trong gia đình có bệnh sử liên quan đến xương hoặc ung thư xương'
+
+MERGE (o1:treatment {id: 'trung_tâm_chấn_thương_chỉnh_hình__hệ_thống_bvđk_tâm_anh_treatment'})
+MERGE (o2:disease {id: 'u_xương_disease'})
+MERGE (o1)-[r192:treatedBy]->(o2)
+SET r192.text = 'Trung tâm Chấn thương chỉnh hình, Hệ thống BVĐK Tâm Anh, là nơi quy tụ đội ngũ chuyên gia đầu ngành, bác sĩ ngoại khoa giàu kinh nghiệm, tận tâm, nhiệt tình như: TTND.GS.TS.BS Nguyễn Việt Tiến; PGS.TS.BS Đặng Hồng Hoa; TS.BS Tăng Hà Nam Anh; ThS.BS.CKII Trần Anh Vũ; BS.CKI Trần Xuân Anh, ThS.BS.CKI Lê Đình Khoa, ThS.BS Nguyễn Quang Tôn Quyền; TS.BS Đỗ Tiến Dũng; TS.BS.CKII Vũ Hữu Dũng…'
+
+MERGE (o1:treatment {id: 'chẩn_đoán_và_điều_trị_treatment'})
+MERGE (o2:disease {id: 'bệnh_về_cơ_xương_khớp_disease'})
+MERGE (o1)-[r193:treatedBy]->(o2)
+SET r193.text = 'Đây cũng là một trong những đơn vị tiên phong trong việc chẩn đoán và điều trị các bệnh về cơ xương khớp với kỹ thuật hiện đại theo phác đồ cập nhật quốc tế.'
+
+MERGE (o1:test {id: 'máy_chụp_ct_768_lát_cắt_somatom_drive__máy_cộng_hưởng_từ_thế_hệ_mới_magnetom_amira_biomatrix__robot_artis_pheno__máy_đo_mật_độ_xương__máy_siêu_âm…;_hệ_thống_kính_vi_phẫu_thuật_opmi_vario_700_zeiss__bàn_mổ_meera-maquet…_test'})
+MERGE (o2:disease {id: 'bệnh_lý_về_cơ_xương_khớp_disease'})
+MERGE (o1)-[r194:diagnosedBy]->(o2)
+SET r194.text = 'Bệnh viện còn được trang bị hệ thống máy móc, trang thiết bị chẩn đoán hình ảnh hiện đại như: máy chụp CT 768 lát cắt Somatom Drive, máy cộng hưởng từ thế hệ mới Magnetom Amira BioMatrix, robot Artis Pheno, máy đo mật độ xương, máy siêu âm…; hệ thống kính vi phẫu thuật Opmi Vario 700 Zeiss, bàn mổ Meera-Maquet… để có thể phát hiện sớm các tổn thương và điều trị hiệu quả các bệnh lý về cơ xương khớp…'

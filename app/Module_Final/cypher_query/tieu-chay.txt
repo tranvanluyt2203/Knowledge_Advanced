@@ -1,0 +1,925 @@
+
+MERGE (o1:disease {id: 'tiêu_chảy_disease'})
+MERGE (o2:disease {id: 'rối_loạn_tiêu_hóa_disease'})
+MERGE (o1)-[r0:isSymptomOf]->(o2)
+SET r0.text = 'Tiêu chảy là tình trạng rối loạn tiêu hóa thường gặp ở hầu hết các đối tượng, đặc biệt là trẻ em.'
+
+MERGE (o1:disease {id: 'tiêu_chảy_disease'})
+MERGE (o2:cause {id: 'nhiều_nhóm_nguyên_nhân_khác_nhau_cause'})
+MERGE (o1)-[r1:causedBy]->(o2)
+SET r1.text = 'Bệnh xuất phát từ nhiều nhóm nguyên nhân khác nhau, nếu không được khắc phục sớm sẽ dẫn đến các biến chứng nguy hiểm, đe dọa trực tiếp đến sức khỏe.'
+
+MERGE (o1:disease {id: 'tiêu_chảy_disease'})
+MERGE (o2:organ {id: 'sức_khỏe_organ'})
+MERGE (o1)-[r2:affects]->(o2)
+SET r2.text = 'Bệnh xuất phát từ nhiều nhóm nguyên nhân khác nhau, nếu không được khắc phục sớm sẽ dẫn đến các biến chứng nguy hiểm, đe dọa trực tiếp đến sức khỏe.'
+
+MERGE (o1:disease {id: 'tiêu_chảy_disease'})
+MERGE (o2:treatment {id: 'theo_dõi__phát_hiện_để_điều_trị_kịp_thời_treatment'})
+MERGE (o1)-[r3:treatedBy]->(o2)
+SET r3.text = 'Vậy nên, bên cạnh việc phòng ngừa, quá trình theo dõi, phát hiện để điều trị kịp thời là thực sự cần thiết.'
+
+MERGE (o1:disease {id: 'tiêu_chảy_disease'})
+MERGE (o2:disease {id: 'bệnh_lý_tiêu_hóa_disease'})
+MERGE (o1)-[r4:isSymptomOf]->(o2)
+SET r4.text = 'Tiêu chảy (ỉa chảy)là một trong những bệnh lý tiêu hóa phổ biến nhất, xuất hiện ở cả người lớn và trẻ em.'
+
+MERGE (o1:symptom {id: 'đi_ngoài_nhiều_lần__phân_lỏng_kèm_nước_bất_thường_symptom'})
+MERGE (o2:disease {id: 'tiêu_chảy_disease'})
+MERGE (o1)-[r5:isSymptomOf]->(o2)
+SET r5.text = 'Tình trạng được nhận biết dễ dàng bởi dấu hiệu đi ngoài nhiều lần, phân lỏng kèm nước bất thường.'
+
+MERGE (o1:symptom {id: 'đại_tiện_nhiều_nhưng_phân_đặc_hoặc_phân_lỏng__dính_symptom'})
+MERGE (o2:disease {id: 'tiêu_chảy_disease'})
+MERGE (o1)-[r6:isSymptomOf]->(o2)
+SET r6.text = 'Tuy nhiên, người bệnh cần phân biệt rõ với hiện tượng đại tiện nhiều nhưng phân đặc hoặc phân lỏng, dính ở em bé bú mẹ.'
+
+MERGE (o1:symptom {id: 'đại_tiện_nhiều_nhưng_phân_đặc_hoặc_phân_lỏng__dính_symptom'})
+MERGE (o2:disease {id: 'tiêu_chảy_disease'})
+MERGE (o1)-[r7:relatedTo]->(o2)
+SET r7.text = 'Cả hai trường hợp này đều không phải là tiêu chảy.'
+
+MERGE (o1:disease {id: 'tiêu_chảy_disease'})
+MERGE (o2:organ {id: 'tính_mạng_organ'})
+MERGE (o1)-[r8:affects]->(o2)
+SET r8.text = 'Thông thường, tình trạng có thể phát triển từ nhẹ đến nghiêm trọng và đe dọa đến tính mạng nếu không được kiểm soát kịp thời.'
+
+MERGE (o1:disease {id: 'tiêu_chảy_disease'})
+MERGE (o2:treatment {id: 'thăm_khám_để_điều_trị_sớm_treatment'})
+MERGE (o1)-[r9:treatedBy]->(o2)
+SET r9.text = 'Vì vậy, ngay khi nhận biết dấu hiệu rối loạn, người bệnh nên chủ động thăm khám để điều trị sớm, tránh ảnh hưởng tiêu cực đến sức khỏe.'
+
+MERGE (o1:disease {id: 'tiêu_chảy_disease'})
+MERGE (o2:cause {id: 'cơ_chế__thời_gian_mắc_bệnh__mức_độ_nghiêm_trọng__đặc_điểm_phân_cause'})
+MERGE (o1)-[r10:relatedTo]->(o2)
+SET r10.text = 'Dựa trên các yếu tố về cơ chế, thời gian mắc bệnh, mức độ nghiêm trọng cũng như đặc điểm phân (nhiều nước, sủi bọt, có chất béo, nhầy máu,&#8230;), tiêu chảy có thể được phân loại khác nhau, dựa theo thời gian thì có tiêu chảy cấp và mạn, ,dựa theo cơ chế bệnh học thì có tiêu chảy thẩm thấu và tiêu chảy xuất tiết, dựa vào nguyên nhân thì có tiêu chảy nhiễm trùng hoặc tiêu chảy không nhiễm trùng…'
+
+MERGE (o1:disease {id: 'tiêu_chảy_disease'})
+MERGE (o2:disease {id: 'tiêu_chảy_cấp_và_mạn_disease'})
+MERGE (o1)-[r11:relatedTo]->(o2)
+SET r11.text = 'Dựa trên các yếu tố về cơ chế, thời gian mắc bệnh, mức độ nghiêm trọng cũng như đặc điểm phân (nhiều nước, sủi bọt, có chất béo, nhầy máu,&#8230;), tiêu chảy có thể được phân loại khác nhau, dựa theo thời gian thì có tiêu chảy cấp và mạn, ,dựa theo cơ chế bệnh học thì có tiêu chảy thẩm thấu và tiêu chảy xuất tiết, dựa vào nguyên nhân thì có tiêu chảy nhiễm trùng hoặc tiêu chảy không nhiễm trùng…'
+
+MERGE (o1:disease {id: 'tiêu_chảy_disease'})
+MERGE (o2:disease {id: 'tiêu_chảy_thẩm_thấu_và_tiêu_chảy_xuất_tiết_disease'})
+MERGE (o1)-[r12:relatedTo]->(o2)
+SET r12.text = 'Dựa trên các yếu tố về cơ chế, thời gian mắc bệnh, mức độ nghiêm trọng cũng như đặc điểm phân (nhiều nước, sủi bọt, có chất béo, nhầy máu,&#8230;), tiêu chảy có thể được phân loại khác nhau, dựa theo thời gian thì có tiêu chảy cấp và mạn, ,dựa theo cơ chế bệnh học thì có tiêu chảy thẩm thấu và tiêu chảy xuất tiết, dựa vào nguyên nhân thì có tiêu chảy nhiễm trùng hoặc tiêu chảy không nhiễm trùng…'
+
+MERGE (o1:disease {id: 'tiêu_chảy_disease'})
+MERGE (o2:disease {id: 'tiêu_chảy_nhiễm_trùng_hoặc_tiêu_chảy_không_nhiễm_trùng_disease'})
+MERGE (o1)-[r13:relatedTo]->(o2)
+SET r13.text = 'Dựa trên các yếu tố về cơ chế, thời gian mắc bệnh, mức độ nghiêm trọng cũng như đặc điểm phân (nhiều nước, sủi bọt, có chất béo, nhầy máu,&#8230;), tiêu chảy có thể được phân loại khác nhau, dựa theo thời gian thì có tiêu chảy cấp và mạn, ,dựa theo cơ chế bệnh học thì có tiêu chảy thẩm thấu và tiêu chảy xuất tiết, dựa vào nguyên nhân thì có tiêu chảy nhiễm trùng hoặc tiêu chảy không nhiễm trùng…'
+
+MERGE (o1:disease {id: 'tiêu_chảy_disease'})
+MERGE (o2:organ {id: 'trẻ_em_trong_độ_tuổi_mầm_non_và_những_năm_đầu_tiểu_học_organ'})
+MERGE (o1)-[r14:affects]->(o2)
+SET r14.text = 'Tình trạng này thường gặp ở trẻ em trong độ tuổi mầm non và những năm đầu tiểu học.'
+
+MERGE (o1:disease {id: 'tiêu_chảy_disease'})
+MERGE (o2:symptom {id: 'đi_ngoài_phân_lỏng_nhiều_nước__số_lần_đại_tiện_nhiều_hơn_3_lần/ngày_symptom'})
+MERGE (o1)-[r15:isSymptomOf]->(o2)
+SET r15.text = 'Bệnh xuất hiện đột ngột, kéo dài khoảng một tuần với triệu chứng đi ngoài phân lỏng nhiều nước, số lần đại tiện nhiều hơn 3 lần/ngày.'
+
+MERGE (o1:disease {id: 'tiêu_chảy_cấp_tính_disease'})
+MERGE (o2:cause {id: 'tiêu_thụ_thức_ăn_không_phù_hợp_hoặc_nhiễm_khuẩn_thực_phẩm_cause'})
+MERGE (o1)-[r16:causedBy]->(o2)
+SET r16.text = 'Tiêu chảy cấp tính xuất hiện do cơ thể tiêu thụ thức ăn không phù hợp hoặc nhiễm khuẩn thực phẩm.'
+
+MERGE (o1:cause {id: 'rotavirus_cause'})
+MERGE (o2:disease {id: 'tiêu_chảy_cấp_tính_disease'})
+MERGE (o1)-[r17:causes]->(o2)
+SET r17.text = 'Trong đó, Rotavirus là tác nhân chính khiến tình trạng trở nặng và có nguy cơ đe dọa đến tính mạng của trẻ.(4)'
+
+MERGE (o1:disease {id: 'tiêu_chảy_cấp_tính_disease'})
+MERGE (o2:organ {id: 'tính_mạng_của_trẻ_organ'})
+MERGE (o1)-[r18:affects]->(o2)
+SET r18.text = 'Trong đó, Rotavirus là tác nhân chính khiến tình trạng trở nặng và có nguy cơ đe dọa đến tính mạng của trẻ.(4)'
+
+MERGE (o1:disease {id: 'tiêu_chảy_mãn_tính_disease'})
+MERGE (o2:disease {id: 'tiêu_chảy_disease'})
+MERGE (o1)-[r19:isSymptomOf]->(o2)
+SET r19.text = 'Ở cấp độ mãn tính, bệnh kéo dài hơn 2 - 4 tuần.'
+
+MERGE (o1:disease {id: 'tiêu_chảy_mãn_tính_disease'})
+MERGE (o2:organ {id: 'sức_khỏe_organ'})
+MERGE (o1)-[r20:affects]->(o2)
+SET r20.text = 'Với cơ thể của một người khỏe mạnh, tình trạng này có thể gây bất tiện đối với sinh hoạt và trở thành vấn đề nghiêm trọng cho sức khỏe.'
+
+MERGE (o1:disease {id: 'tiêu_chảy_mãn_tính_disease'})
+MERGE (o2:organ {id: 'hệ_miễn_dịch_organ'})
+MERGE (o1)-[r21:affects]->(o2)
+SET r21.text = 'Tuy nhiên, nếu hệ miễn dịch yếu hoặc suy giảm, tiêu chảy mãn tính sẽ trở thành nguy cơ đe dọa đến tính mạng người bệnh.'
+
+MERGE (o1:disease {id: 'tiêu_chảy_mãn_tính_disease'})
+MERGE (o2:organ {id: 'tính_mạng_người_bệnh_organ'})
+MERGE (o1)-[r22:affects]->(o2)
+SET r22.text = 'Tuy nhiên, nếu hệ miễn dịch yếu hoặc suy giảm, tiêu chảy mãn tính sẽ trở thành nguy cơ đe dọa đến tính mạng người bệnh.'
+
+MERGE (o1:disease {id: 'tiêu_chảy_thẩm_thấu_disease'})
+MERGE (o2:cause {id: 'giảm_hấp_thu_chất_điện_giải__dịch_và_dinh_dưỡng_cause'})
+MERGE (o1)-[r23:causedBy]->(o2)
+SET r23.text = 'Đây là tình trạng xảy ra do giảm hấp thu chất điện giải, dịch và dinh dưỡng.'
+
+MERGE (o1:disease {id: 'tiêu_chảy_thẩm_thấu_disease'})
+MERGE (o2:symptom {id: 'khối_lượng_phân_dao_động_từ_khoảng_250ml_đến_1_lít/ngày_symptom'})
+MERGE (o1)-[r24:isSymptomOf]->(o2)
+SET r24.text = 'Ở mức độ từ nhẹ đến vừa, khối lượng phân sẽ dao động từ khoảng 250ml đến 1 lít/ngày.'
+
+MERGE (o1:disease {id: 'tiêu_chảy_thẩm_thấu_disease'})
+MERGE (o2:symptom {id: 'trướng_bụng_symptom'})
+MERGE (o1)-[r25:isSymptomOf]->(o2)
+SET r25.text = 'Ngoài ra, việc không hấp thu một chất dinh dưỡng đơn thuần như Lactose thương dẫn đến triệu chứng trướng bụng hơn là ỉa chảy, ngoại trừ trường hợp nặng.'
+
+MERGE (o1:disease {id: 'tiêu_chảy_thẩm_thấu_disease'})
+MERGE (o2:cause {id: 'không_hấp_thu_lactose_cause'})
+MERGE (o1)-[r26:causedBy]->(o2)
+SET r26.text = 'Ngoài ra, việc không hấp thu một chất dinh dưỡng đơn thuần như Lactose thương dẫn đến triệu chứng trướng bụng hơn là ỉa chảy, ngoại trừ trường hợp nặng.'
+
+MERGE (o1:disease {id: 'tiêu_chảy_thẩm_thấu_disease'})
+MERGE (o2:treatment {id: 'ngừng_tiêu_thụ_những_loại_thực_phẩm_đó_treatment'})
+MERGE (o1)-[r27:treatedBy]->(o2)
+SET r27.text = 'Hiện tượng tiêu chảy thẩm thấu sẽ dừng lại khi người bệnh ngừng tiêu thụ những loại thực phẩm đó.'
+
+MERGE (o1:disease {id: 'tiêu_chảy_xuất_tiết_disease'})
+MERGE (o2:cause {id: 'rối_loạn_chuyển_tải_ion_trong_các_tế_bào_biểu_mô_ruột_cause'})
+MERGE (o1)-[r28:causedBy]->(o2)
+SET r28.text = 'Đây là tình trạng rối loạn chuyển tải ion trong các tế bào biểu mô ruột, làm tăng bài tiết và giảm hấp thu hoặc cả hai trường hợp.'
+
+MERGE (o1:lifestyle {id: 'vệ_sinh_không_đầy_đủ__nguồn_nước_không_an_toàn__không_đủ_vệ_sinh_lifestyle'})
+MERGE (o2:disease {id: 'tiêu_chảy_disease'})
+MERGE (o1)-[r29:causedBy]->(o2)
+SET r29.text = 'Theo Trung tâm kiểm soát và phòng ngừa dịch bệnh Hoa Kỳ, khoảng đến 88% các trường hợp tử vong liên quan đến tiêu chảy là do vệ sinh không đầy đủ, nguồn nước không an toàn, không đủ vệ sinh.'
+
+MERGE (o1:disease {id: 'tiêu_chảy_disease'})
+MERGE (o2:symptom {id: 'tử_vong_symptom'})
+MERGE (o1)-[r30:associatedWith]->(o2)
+SET r30.text = 'Theo Trung tâm kiểm soát và phòng ngừa dịch bệnh Hoa Kỳ, khoảng đến 88% các trường hợp tử vong liên quan đến tiêu chảy là do vệ sinh không đầy đủ, nguồn nước không an toàn, không đủ vệ sinh.'
+
+MERGE (o1:cause {id: 'rotavirus_cause'})
+MERGE (o2:disease {id: 'ỉa_chảy_cấp_disease'})
+MERGE (o1)-[r31:causedBy]->(o2)
+SET r31.text = 'Trong đó, Rotavirus chính là tác nhân hàng đầu dẫn đến ỉa chảy cấp.'
+
+MERGE (o1:cause {id: 'rotavirus_cause'})
+MERGE (o2:symptom {id: 'nhập_viện_symptom'})
+MERGE (o1)-[r32:causedBy]->(o2)
+SET r32.text = 'Cụ thể, loại vi sinh vật này đã gây ra khoảng 40% trường hợp nhập viện ở đối tượng trẻ em dưới 5 tuổi.'
+
+MERGE (o1:symptom {id: 'nhập_viện_symptom'})
+MERGE (o2:lifestyle {id: 'trẻ_em_dưới_5_tuổi_lifestyle'})
+MERGE (o1)-[r33:associatedWith]->(o2)
+SET r33.text = 'Cụ thể, loại vi sinh vật này đã gây ra khoảng 40% trường hợp nhập viện ở đối tượng trẻ em dưới 5 tuổi.'
+
+MERGE (o1:disease {id: 'tiêu_chảy_disease'})
+MERGE (o2:cause {id: 'nhiễm_vi_sinh_vật_cause'})
+MERGE (o1)-[r34:causedBy]->(o2)
+SET r34.text = 'Có thể chia ra 2 nhóm nguyên nhân: (1) Nhóm tiêu chảy do nhiễm vi sinh vật (hay còn gọi là nhiễm trùng, nhiễm vi rút, nhiễm ký sinh trùng); (2) Nhóm tiêu chảy KHÔNG do nhiễm trùng.'
+
+MERGE (o1:disease {id: 'tiêu_chảy_disease'})
+MERGE (o2:cause {id: 'nhiễm_trùng_cause'})
+MERGE (o1)-[r35:causedBy]->(o2)
+SET r35.text = 'Có thể chia ra 2 nhóm nguyên nhân: (1) Nhóm tiêu chảy do nhiễm vi sinh vật (hay còn gọi là nhiễm trùng, nhiễm vi rút, nhiễm ký sinh trùng); (2) Nhóm tiêu chảy KHÔNG do nhiễm trùng.'
+
+MERGE (o1:disease {id: 'tiêu_chảy_disease'})
+MERGE (o2:cause {id: 'nhiễm_vi_rút_cause'})
+MERGE (o1)-[r36:causedBy]->(o2)
+SET r36.text = 'Có thể chia ra 2 nhóm nguyên nhân: (1) Nhóm tiêu chảy do nhiễm vi sinh vật (hay còn gọi là nhiễm trùng, nhiễm vi rút, nhiễm ký sinh trùng); (2) Nhóm tiêu chảy KHÔNG do nhiễm trùng.'
+
+MERGE (o1:disease {id: 'tiêu_chảy_disease'})
+MERGE (o2:cause {id: 'nhiễm_ký_sinh_trùng_cause'})
+MERGE (o1)-[r37:causedBy]->(o2)
+SET r37.text = 'Có thể chia ra 2 nhóm nguyên nhân: (1) Nhóm tiêu chảy do nhiễm vi sinh vật (hay còn gọi là nhiễm trùng, nhiễm vi rút, nhiễm ký sinh trùng); (2) Nhóm tiêu chảy KHÔNG do nhiễm trùng.'
+
+MERGE (o1:cause {id: 'mầm_bệnh_cause'})
+MERGE (o2:disease {id: 'viêm_nhiễm_disease'})
+MERGE (o1)-[r38:causedBy]->(o2)
+SET r38.text = 'Mầm bệnh từ bên ngoài đi vào cơ thể sẽ gây ra kích thích lên các mô trong đường tiêu hóa, dẫn đến viêm nhiễm.'
+
+MERGE (o1:disease {id: 'viêm_nhiễm_disease'})
+MERGE (o2:organ {id: 'đường_tiêu_hóa_organ'})
+MERGE (o1)-[r39:affects]->(o2)
+SET r39.text = 'Mầm bệnh từ bên ngoài đi vào cơ thể sẽ gây ra kích thích lên các mô trong đường tiêu hóa, dẫn đến viêm nhiễm.'
+
+MERGE (o1:disease {id: 'viêm_nhiễm_disease'})
+MERGE (o2:symptom {id: 'ỉa_chảy_symptom'})
+MERGE (o1)-[r40:causedBy]->(o2)
+SET r40.text = 'Đây chính là nguyên nhân chính gây ra tình trạng ỉa chảy, thường gặp nhất là khi cơ thể tiêu thụ phải thực phẩm không đảm bảo vệ sinh.'
+
+MERGE (o1:food {id: 'thực_phẩm_không_đảm_bảo_vệ_sinh_food'})
+MERGE (o2:symptom {id: 'ỉa_chảy_symptom'})
+MERGE (o1)-[r41:causedBy]->(o2)
+SET r41.text = 'Đây chính là nguyên nhân chính gây ra tình trạng ỉa chảy, thường gặp nhất là khi cơ thể tiêu thụ phải thực phẩm không đảm bảo vệ sinh.'
+
+MERGE (o1:cause {id: 'vi_khuẩn_salmonella__clostridium__khuẩn_tụ_cầu_cause'})
+MERGE (o2:disease {id: 'ngộ_độc_disease'})
+MERGE (o1)-[r42:causedBy]->(o2)
+SET r42.text = 'Nguồn thức ăn chứa vi khuẩn Salmonella, Clostridium, khuẩn tụ cầu,… sẽ dẫn đến ngộ độc.'
+
+MERGE (o1:disease {id: 'ngộ_độc_disease'})
+MERGE (o2:food {id: 'thức_ăn_food'})
+MERGE (o1)-[r43:causedBy]->(o2)
+SET r43.text = 'Nguồn thức ăn chứa vi khuẩn Salmonella, Clostridium, khuẩn tụ cầu,… sẽ dẫn đến ngộ độc.'
+
+MERGE (o1:cause {id: 'nước_ô_nhiễm_cause'})
+MERGE (o2:cause {id: 'lây_truyền_ký_sinh_trùng_và_vi_khuẩn_cause'})
+MERGE (o1)-[r44:causedBy]->(o2)
+SET r44.text = 'Chưa kể, việc tiếp xúc với nguồn nước ô nhiễm, ăn rau sống, gỏi, đồ tái,&#8230; rau củ quả bị tưới bằng nước bẩn, phân tươi sẽ làm tăng nguy cơ lây truyền ký sinh trùng và vi khuẩn.'
+
+MERGE (o1:food {id: 'rau_sống__gỏi__đồ_tái_food'})
+MERGE (o2:cause {id: 'lây_truyền_ký_sinh_trùng_và_vi_khuẩn_cause'})
+MERGE (o1)-[r45:causedBy]->(o2)
+SET r45.text = 'Chưa kể, việc tiếp xúc với nguồn nước ô nhiễm, ăn rau sống, gỏi, đồ tái,&#8230; rau củ quả bị tưới bằng nước bẩn, phân tươi sẽ làm tăng nguy cơ lây truyền ký sinh trùng và vi khuẩn.'
+
+MERGE (o1:food {id: 'rau_củ_quả_bị_tưới_bằng_nước_bẩn_food'})
+MERGE (o2:cause {id: 'lây_truyền_ký_sinh_trùng_và_vi_khuẩn_cause'})
+MERGE (o1)-[r46:causedBy]->(o2)
+SET r46.text = 'Chưa kể, việc tiếp xúc với nguồn nước ô nhiễm, ăn rau sống, gỏi, đồ tái,&#8230; rau củ quả bị tưới bằng nước bẩn, phân tươi sẽ làm tăng nguy cơ lây truyền ký sinh trùng và vi khuẩn.'
+
+MERGE (o1:cause {id: 'phân_tươi_cause'})
+MERGE (o2:cause {id: 'lây_truyền_ký_sinh_trùng_và_vi_khuẩn_cause'})
+MERGE (o1)-[r47:causedBy]->(o2)
+SET r47.text = 'Chưa kể, việc tiếp xúc với nguồn nước ô nhiễm, ăn rau sống, gỏi, đồ tái,&#8230; rau củ quả bị tưới bằng nước bẩn, phân tươi sẽ làm tăng nguy cơ lây truyền ký sinh trùng và vi khuẩn.'
+
+MERGE (o1:lifestyle {id: 'điều_kiện_vệ_sinh_kém_lifestyle'})
+MERGE (o2:disease {id: 'tiêu_chảy_nhiễm_trùng_disease'})
+MERGE (o1)-[r48:causedBy]->(o2)
+SET r48.text = 'Điều kiện vệ sinh kém cũng là một trong những nguyên nhân hàng đầu làm tăng nguy cơ lây lan vi khuẩn gây tiêu chảy nhiễm trùng.'
+
+MERGE (o1:lifestyle {id: 'giữ_gìn_không_gian_sống__đồ_dùng_cá_nhân__cơ_thể__thức_ăn_&#8230;_sạch_sẽ_lifestyle'})
+MERGE (o2:cause {id: 'vi_sinh_vật_gây_hại_xâm_nhập_vào_đường_tiêu_hóa_cause'})
+MERGE (o1)-[r49:preventedBy]->(o2)
+SET r49.text = 'Do đó, việc giữ gìn không gian sống, đồ dùng cá nhân, cơ thể, thức ăn,&#8230; sạch sẽ cũng là biện pháp cần thiết để tránh vi sinh vật gây hại xâm nhập vào đường tiêu hóa.'
+
+MERGE (o1:lifestyle {id: 'lạm_dụng_thuốc_kháng_sinh_lifestyle'})
+MERGE (o2:disease {id: 'mất_cân_bằng_hệ_vi_sinh_đường_ruột_disease'})
+MERGE (o1)-[r50:causedBy]->(o2)
+SET r50.text = 'Thói quen lạm dụng thuốc kháng sinh sẽ vô tình tiêu diệt các loại vi khuẩn có lợi, dẫn đến mất cân bằng hệ vi sinh đường ruột.'
+
+MERGE (o1:disease {id: 'mất_cân_bằng_hệ_vi_sinh_đường_ruột_disease'})
+MERGE (o2:symptom {id: 'đi_ngoài_nhiều_lần__phân_sống__lỏng_hoặc_không_thành_khuôn_symptom'})
+MERGE (o1)-[r51:causedBy]->(o2)
+SET r51.text = 'Từ đó khả năng hấp thu dinh dưỡng kém, nhu động ruột tăng, gây ra hiện tượng đi ngoài nhiều lần, phân sống, lỏng hoặc không thành khuôn.'
+
+MERGE (o1:disease {id: 'không_dung_nạp_đường_disease'})
+MERGE (o2:disease {id: 'tiêu_chảy_kéo_dài_disease'})
+MERGE (o1)-[r52:causedBy]->(o2)
+SET r52.text = 'Nhiều người thường gặp tình trạng cơ thể không có khả năng dung nạp các loại đường như: Lactose, Glucose-Galactose, Fructose,&#8230; từ sữa, chế phẩm từ sữa, mật ong, trái cây,&#8230;'
+
+MERGE (o1:food {id: 'sữa__chế_phẩm_từ_sữa__mật_ong__trái_cây_food'})
+MERGE (o2:disease {id: 'tiêu_chảy_kéo_dài_disease'})
+MERGE (o1)-[r53:aggravatedBy]->(o2)
+SET r53.text = 'Nhiều người thường gặp tình trạng cơ thể không có khả năng dung nạp các loại đường như: Lactose, Glucose-Galactose, Fructose,&#8230; từ sữa, chế phẩm từ sữa, mật ong, trái cây,&#8230;'
+
+MERGE (o1:disease {id: 'tiêu_chảy_kéo_dài_disease'})
+MERGE (o2:food {id: 'ăn_phải_những_thực_phẩm_này_food'})
+MERGE (o1)-[r54:causedBy]->(o2)
+SET r54.text = 'Điều đó dẫn đến hiện tượng bị tiêu chảy kéo dài nếu ăn phải những thực phẩm này.'
+
+MERGE (o1:cause {id: 'thiếu_men_sucrase-isomaltase__lactase_cause'})
+MERGE (o2:disease {id: 'ỉa_chảy_disease'})
+MERGE (o1)-[r55:causedBy]->(o2)
+SET r55.text = 'Ngoài ra, cơ thể bị thiếu men Sucrase-isomaltase, Lactase… cũng là nguyên nhân gây ra bệnh ỉa chảy thường gặp.'
+
+MERGE (o1:food {id: 'thức_ăn_ôi_thiu__nhiễm_độc_hoặc_chứa_phụ_gia_độc_hại_food'})
+MERGE (o2:disease {id: 'ngộ_độc_thực_phẩm_disease'})
+MERGE (o1)-[r56:causedBy]->(o2)
+SET r56.text = 'Đây là hậu quả do sử dụng thức ăn ôi thiu, nhiễm độc hoặc chứa phụ gia độc hại.'
+
+MERGE (o1:disease {id: 'ngộ_độc_thực_phẩm_disease'})
+MERGE (o2:symptom {id: 'đau_bụng__đi_ngoài_dữ_dội_sau_khi_ăn__sốt_cao__ỉa_chảy__nôn_mửa_symptom'})
+MERGE (o1)-[r57:isSymptomOf]->(o2)
+SET r57.text = 'Ngộ độc thực phẩm có thể xuất hiện các triệu chứng rõ rệt như: đau bụng, đi ngoài dữ dội sau khi ăn, sốt cao, ỉa chảy, nôn mửa,&#8230;'
+
+MERGE (o1:symptom {id: 'co_giật_symptom'})
+MERGE (o2:disease {id: 'ngộ_độc_thực_phẩm_disease'})
+MERGE (o1)-[r58:isSymptomOf]->(o2)
+SET r58.text = 'Thậm chí, nhiều trường hợp còn gặp phải hiện tượng co giật dẫn đến tử vong nếu không được cấp cứu kịp thời.'
+
+MERGE (o1:symptom {id: 'tử_vong_symptom'})
+MERGE (o2:disease {id: 'ngộ_độc_thực_phẩm_disease'})
+MERGE (o1)-[r59:isSymptomOf]->(o2)
+SET r59.text = 'Thậm chí, nhiều trường hợp còn gặp phải hiện tượng co giật dẫn đến tử vong nếu không được cấp cứu kịp thời.'
+
+MERGE (o1:disease {id: 'hội_chứng_ruột_kích_thích_disease'})
+MERGE (o2:lifestyle {id: 'thay_đổi_thói_quen_ăn_uống_lifestyle'})
+MERGE (o1)-[r60:causedBy]->(o2)
+SET r60.text = 'Hội chứng ruột kích thích xuất hiện do thay đổi thói quen ăn uống, sau khi dùng một số thuốc điều trị hoặc ăn đồ lạ.'
+
+MERGE (o1:disease {id: 'hội_chứng_ruột_kích_thích_disease'})
+MERGE (o2:treatment {id: 'dùng_thuốc_điều_trị_treatment'})
+MERGE (o1)-[r61:causedBy]->(o2)
+SET r61.text = 'Hội chứng ruột kích thích xuất hiện do thay đổi thói quen ăn uống, sau khi dùng một số thuốc điều trị hoặc ăn đồ lạ.'
+
+MERGE (o1:disease {id: 'hội_chứng_ruột_kích_thích_disease'})
+MERGE (o2:food {id: 'ăn_đồ_lạ_food'})
+MERGE (o1)-[r62:causedBy]->(o2)
+SET r62.text = 'Hội chứng ruột kích thích xuất hiện do thay đổi thói quen ăn uống, sau khi dùng một số thuốc điều trị hoặc ăn đồ lạ.'
+
+MERGE (o1:cause {id: 'nhu_động_ruột_bị_co_thắt_quá_mức_và_kéo_dài_cause'})
+MERGE (o2:disease {id: 'hội_chứng_ruột_kích_thích_disease'})
+MERGE (o1)-[r63:causedBy]->(o2)
+SET r63.text = 'Nguyên nhân bởi nhu động ruột bị co thắt quá mức và kéo dài khiến thức ăn trong đường tiêu hóa di chuyển nhanh hơn.'
+
+MERGE (o1:symptom {id: 'tiêu_chảy_đột_ngột_symptom'})
+MERGE (o2:disease {id: 'hội_chứng_ruột_kích_thích_disease'})
+MERGE (o1)-[r64:isSymptomOf]->(o2)
+SET r64.text = 'Lúc này, nước sẽ không được tái hấp thu hoặc tiết ra quá mức từ niêm mạc ruột dẫn đến hiện tượng tiêu chảy đột ngột.'
+
+MERGE (o1:disease {id: 'viêm_đại_tràng_disease'})
+MERGE (o2:symptom {id: 'ỉa_chảy_symptom'})
+MERGE (o1)-[r65:isSymptomOf]->(o2)
+SET r65.text = 'Bệnh nhân viêm đại tràng thường phải đối mặt với tình trạng rối loạn tiêu hóa, trong đó có ỉa chảy.'
+
+MERGE (o1:disease {id: 'viêm_đại_tràng_disease'})
+MERGE (o2:cause {id: 'vi_khuẩn_(shigella__samonella_…)__ký_sinh_trùng__nấm_cause'})
+MERGE (o1)-[r66:causedBy]->(o2)
+SET r66.text = 'Bệnh xuất phát từ sự xâm nhập và gây hại của các tác nhân như: vi khuẩn (Shigella, Samonella,…), ký sinh trùng, nấm,&#8230;'
+
+MERGE (o1:cause {id: 'rối_loạn_thần_kinh_thực_vật__ngộ_độc_hóa_chất__tâm_lý_căng_thẳng__áp_lực_cause'})
+MERGE (o2:disease {id: 'viêm_đại_tràng_disease'})
+MERGE (o1)-[r67:causedBy]->(o2)
+SET r67.text = 'Ngoài ra, rối loạn thần kinh thực vật, ngộ độc hóa chất, tâm lý căng thẳng, áp lực,&#8230; cũng là những nhóm nguyên nhân quan trọng không thể bỏ qua.'
+
+MERGE (o1:disease {id: 'tiêu_chảy_disease'})
+MERGE (o2:symptom {id: 'đi_ngoài_nhiều_lần_(trên_3_lần_mỗi_ngày)__phân_lỏng_và_kèm_nước_symptom'})
+MERGE (o1)-[r68:isSymptomOf]->(o2)
+SET r68.text = 'Triệu chứng phổ biến và dễ nhận biết nhất của bệnh tiêu chảy là đi ngoài nhiều lần (trên 3 lần mỗi ngày), phân lỏng và kèm nước.'
+
+MERGE (o1:disease {id: 'tiêu_chảy_disease'})
+MERGE (o2:symptom {id: 'đầy_bụng__sôi_bụng_symptom'})
+MERGE (o1)-[r69:isSymptomOf]->(o2)
+SET r69.text = 'Ngoài ra, tình trạng cũng xuất hiện với nhiều triệu chứng đi kèm khác, cụ thể như sau:  Đầy bụng, sôi bụng.'
+
+MERGE (o1:disease {id: 'tiêu_chảy_disease'})
+MERGE (o2:symptom {id: 'ỉa_chảy_liên_tục__nhiều_lần__ban_đầu_phân_lỏng_sau_toàn_là_nước_symptom'})
+MERGE (o1)-[r70:isSymptomOf]->(o2)
+SET r70.text = 'Ngoài ra, tình trạng cũng xuất hiện với nhiều triệu chứng đi kèm khác, cụ thể như sau:  Ỉa chảy liên tục, nhiều lần, ban đầu phân lỏng sau toàn là nước.'
+
+MERGE (o1:disease {id: 'tiêu_chảy_disease'})
+MERGE (o2:symptom {id: 'nôn_thức_ăn__nước_trong_hoặc_màu_vàng_nhạt_symptom'})
+MERGE (o1)-[r71:isSymptomOf]->(o2)
+SET r71.text = 'Ngoài ra, tình trạng cũng xuất hiện với nhiều triệu chứng đi kèm khác, cụ thể như sau:  Nôn thức ăn, nước trong hoặc màu vàng nhạt.'
+
+MERGE (o1:disease {id: 'tiêu_chảy_disease'})
+MERGE (o2:symptom {id: 'mệt_lả_symptom'})
+MERGE (o1)-[r72:isSymptomOf]->(o2)
+SET r72.text = 'Ngoài ra, tình trạng cũng xuất hiện với nhiều triệu chứng đi kèm khác, cụ thể như sau:  Người luôn trong tình trạng mệt lả.'
+
+MERGE (o1:disease {id: 'tiêu_chảy_disease'})
+MERGE (o2:symptom {id: 'chuột_rút_symptom'})
+MERGE (o1)-[r73:isSymptomOf]->(o2)
+SET r73.text = 'Ngoài ra, tình trạng cũng xuất hiện với nhiều triệu chứng đi kèm khác, cụ thể như sau:  Chuột rút.'
+
+MERGE (o1:disease {id: 'tiêu_chảy_disease'})
+MERGE (o2:symptom {id: 'mất_nước_symptom'})
+MERGE (o1)-[r74:isSymptomOf]->(o2)
+SET r74.text = 'Ngoài ra, tình trạng cũng xuất hiện với nhiều triệu chứng đi kèm khác, cụ thể như sau:  Biểu hiện mất nước từ nhẹ đến nặng: khát nước, da nhăn nheo, khô, cơ thể hốc hác, mắt trũng, mạch đập nhanh, hạ huyết áp, tiểu tiện ít hoặc vô niệu, chân tay lạnh,&#8230;'
+
+MERGE (o1:symptom {id: 'mất_nước_symptom'})
+MERGE (o2:symptom {id: 'khát_nước__da_nhăn_nheo__khô__cơ_thể_hốc_hác__mắt_trũng__mạch_đập_nhanh__hạ_huyết_áp__tiểu_tiện_ít_hoặc_vô_niệu__chân_tay_lạnh_symptom'})
+MERGE (o1)-[r75:isSymptomOf]->(o2)
+SET r75.text = 'Ngoài ra, tình trạng cũng xuất hiện với nhiều triệu chứng đi kèm khác, cụ thể như sau:  Biểu hiện mất nước từ nhẹ đến nặng: khát nước, da nhăn nheo, khô, cơ thể hốc hác, mắt trũng, mạch đập nhanh, hạ huyết áp, tiểu tiện ít hoặc vô niệu, chân tay lạnh,&#8230;'
+
+MERGE (o1:disease {id: 'tiêu_chảy_cấp_disease'})
+MERGE (o2:treatment {id: 'tự_khỏi_treatment'})
+MERGE (o1)-[r76:treatedBy]->(o2)
+SET r76.text = 'Hầu hết các trường hợp tiêu chảy cấp đều có khả năng tự khỏi và triệu chứng sẽ cải thiện trong vài ngày.'
+
+MERGE (o1:disease {id: 'tiêu_chảy_kéo_dài_hơn_2_ngày_disease'})
+MERGE (o2:treatment {id: 'chăm_sóc_y_tế_treatment'})
+MERGE (o1)-[r77:treatedBy]->(o2)
+SET r77.text = 'Tuy nhiên, nếu tình trạng kéo dài hơn 2 ngày, người bệnh tốt nhất nên đến gặp bác sĩ để được chăm sóc cũng như điều trị y tế kịp thời.'
+
+MERGE (o1:symptom {id: 'ỉa_chảy_symptom'})
+MERGE (o2:disease {id: 'cấp_cứu_nghiêm_trọng_disease'})
+MERGE (o1)-[r78:isSymptomOf]->(o2)
+SET r78.text = 'Thực tế, ỉa chảy cũng là triệu chứng của một số trường hợp cấp cứu nghiêm trọng.'
+
+MERGE (o1:symptom {id: 'đi_ngoài_ra_máu_symptom'})
+MERGE (o2:disease {id: 'cấp_cứu_nghiêm_trọng_disease'})
+MERGE (o1)-[r79:isSymptomOf]->(o2)
+SET r79.text = 'Vì vậy, ngay khi nhận thấy phân lỏng, nhiều nước kèm các dấu hiệu nguy hiểm sau, người bệnh nên tìm kiếm sự giúp đỡ khẩn cấp:  Đi ngoài ra máu.'
+
+MERGE (o1:symptom {id: 'đi_ngoài_phân_đen__hắc_ín_symptom'})
+MERGE (o2:disease {id: 'cấp_cứu_nghiêm_trọng_disease'})
+MERGE (o1)-[r80:isSymptomOf]->(o2)
+SET r80.text = 'Vì vậy, ngay khi nhận thấy phân lỏng, nhiều nước kèm các dấu hiệu nguy hiểm sau, người bệnh nên tìm kiếm sự giúp đỡ khẩn cấp:  Đi ngoài phân đen, hắc ín.'
+
+MERGE (o1:symptom {id: 'sốt_cao_trên_38_3_độ_c_hoặc_kéo_dài_hơn_24_giờ_symptom'})
+MERGE (o2:disease {id: 'cấp_cứu_nghiêm_trọng_disease'})
+MERGE (o1)-[r81:isSymptomOf]->(o2)
+SET r81.text = 'Vì vậy, ngay khi nhận thấy phân lỏng, nhiều nước kèm các dấu hiệu nguy hiểm sau, người bệnh nên tìm kiếm sự giúp đỡ khẩn cấp:  Sốt cao trên 38,3 độ C hoặc kéo dài hơn 24 giờ.'
+
+MERGE (o1:symptom {id: 'ỉa_chảy_kéo_dài_hơn_2_ngày_symptom'})
+MERGE (o2:disease {id: 'cấp_cứu_nghiêm_trọng_disease'})
+MERGE (o1)-[r82:isSymptomOf]->(o2)
+SET r82.text = 'Vì vậy, ngay khi nhận thấy phân lỏng, nhiều nước kèm các dấu hiệu nguy hiểm sau, người bệnh nên tìm kiếm sự giúp đỡ khẩn cấp:  Ỉa chảy kéo dài hơn 2 ngày.'
+
+MERGE (o1:symptom {id: 'buồn_nôn_và_không_thể_uống_chất_lỏng_thay_thế_symptom'})
+MERGE (o2:disease {id: 'cấp_cứu_nghiêm_trọng_disease'})
+MERGE (o1)-[r83:isSymptomOf]->(o2)
+SET r83.text = 'Vì vậy, ngay khi nhận thấy phân lỏng, nhiều nước kèm các dấu hiệu nguy hiểm sau, người bệnh nên tìm kiếm sự giúp đỡ khẩn cấp:  Buồn nôn và không thể uống chất lỏng thay thế.'
+
+MERGE (o1:symptom {id: 'đau_dữ_dội_ở_phần_bụng_(đặc_biệt_là_vùng_hạ_sườn_bên_phải_hoặc_phần_sau)_symptom'})
+MERGE (o2:disease {id: 'cấp_cứu_nghiêm_trọng_disease'})
+MERGE (o1)-[r84:isSymptomOf]->(o2)
+SET r84.text = 'Vì vậy, ngay khi nhận thấy phân lỏng, nhiều nước kèm các dấu hiệu nguy hiểm sau, người bệnh nên tìm kiếm sự giúp đỡ khẩn cấp:  Đau dữ dội ở phần bụng (đặc biệt là vùng hạ sườn bên phải hoặc phần sau).'
+
+MERGE (o1:symptom {id: 'tiêu_chảy_sau_khi_đi_từ_nước_ngoài_trở_về_symptom'})
+MERGE (o2:disease {id: 'cấp_cứu_nghiêm_trọng_disease'})
+MERGE (o1)-[r85:isSymptomOf]->(o2)
+SET r85.text = 'Vì vậy, ngay khi nhận thấy phân lỏng, nhiều nước kèm các dấu hiệu nguy hiểm sau, người bệnh nên tìm kiếm sự giúp đỡ khẩn cấp:  Tiêu chảy sau khi đi từ nước ngoài trở về.'
+
+MERGE (o1:symptom {id: 'nước_tiểu_màu_đậm_symptom'})
+MERGE (o2:disease {id: 'cấp_cứu_nghiêm_trọng_disease'})
+MERGE (o1)-[r86:isSymptomOf]->(o2)
+SET r86.text = 'Vì vậy, ngay khi nhận thấy phân lỏng, nhiều nước kèm các dấu hiệu nguy hiểm sau, người bệnh nên tìm kiếm sự giúp đỡ khẩn cấp:  Nước tiểu màu đậm.'
+
+MERGE (o1:symptom {id: 'lượng_nước_tiểu_ít_hơn_bình_thường_symptom'})
+MERGE (o2:disease {id: 'cấp_cứu_nghiêm_trọng_disease'})
+MERGE (o1)-[r87:isSymptomOf]->(o2)
+SET r87.text = 'Vì vậy, ngay khi nhận thấy phân lỏng, nhiều nước kèm các dấu hiệu nguy hiểm sau, người bệnh nên tìm kiếm sự giúp đỡ khẩn cấp:  Lượng nước tiểu ít hơn bình thường.'
+
+MERGE (o1:symptom {id: 'nhịp_tim_nhanh_symptom'})
+MERGE (o2:disease {id: 'cấp_cứu_nghiêm_trọng_disease'})
+MERGE (o1)-[r88:isSymptomOf]->(o2)
+SET r88.text = 'Vì vậy, ngay khi nhận thấy phân lỏng, nhiều nước kèm các dấu hiệu nguy hiểm sau, người bệnh nên tìm kiếm sự giúp đỡ khẩn cấp:  Nhịp tim nhanh.'
+
+MERGE (o1:symptom {id: 'nhức_đầu_symptom'})
+MERGE (o2:disease {id: 'cấp_cứu_nghiêm_trọng_disease'})
+MERGE (o1)-[r89:isSymptomOf]->(o2)
+SET r89.text = 'Vì vậy, ngay khi nhận thấy phân lỏng, nhiều nước kèm các dấu hiệu nguy hiểm sau, người bệnh nên tìm kiếm sự giúp đỡ khẩn cấp:  Nhức đầu.'
+
+MERGE (o1:disease {id: 'bệnh_tiêu_chảy_disease'})
+MERGE (o2:cause {id: 'lây_nhiễm_cause'})
+MERGE (o1)-[r90:isSymptomOf]->(o2)
+SET r90.text = 'Bệnh tiêu chảy xảy ra phổ biến mỗi năm, dễ lây nhiễm và bùng phát thành dịch.'
+
+MERGE (o1:disease {id: 'bệnh_tiêu_chảy_disease'})
+MERGE (o2:cause {id: 'bùng_phát_thành_dịch_cause'})
+MERGE (o1)-[r91:isSymptomOf]->(o2)
+SET r91.text = 'Bệnh tiêu chảy xảy ra phổ biến mỗi năm, dễ lây nhiễm và bùng phát thành dịch.'
+
+MERGE (o1:disease {id: 'bệnh_tiêu_chảy_disease'})
+MERGE (o2:lifestyle {id: 'ăn_uống__sinh_hoạt_gần_với_bệnh_nhân_ỉa_chảy_lifestyle'})
+MERGE (o1)-[r92:aggravatedBy]->(o2)
+SET r92.text = 'Theo đó, Bộ Y tế khuyến cáo những đối tượng nằm trong nhóm nguy cơ cao gồm:  Những người thường xuyên ăn uống, sinh hoạt gần với bệnh nhân ỉa chảy nhưng không áp dụng biện pháp phòng ngừa.'
+
+MERGE (o1:disease {id: 'bệnh_tiêu_chảy_disease'})
+MERGE (o2:lifestyle {id: 'áp_dụng_biện_pháp_phòng_ngừa_lifestyle'})
+MERGE (o1)-[r93:preventedBy]->(o2)
+SET r93.text = 'Theo đó, Bộ Y tế khuyến cáo những đối tượng nằm trong nhóm nguy cơ cao gồm:  Những người thường xuyên ăn uống, sinh hoạt gần với bệnh nhân ỉa chảy nhưng không áp dụng biện pháp phòng ngừa.'
+
+MERGE (o1:disease {id: 'bệnh_tiêu_chảy_disease'})
+MERGE (o2:lifestyle {id: 'sử_dụng_nhà_tiêu_không_hợp_vệ_sinh_lifestyle'})
+MERGE (o1)-[r94:causedBy]->(o2)
+SET r94.text = 'Dân cư sống trong khu vực sử dụng nhà tiêu không hợp vệ sinh, phân đi thẳng ra cống, ao, hồ, sông, suối, mương,&#8230;'
+
+MERGE (o1:disease {id: 'bệnh_tiêu_chảy_disease'})
+MERGE (o2:lifestyle {id: 'phân_đi_thẳng_ra_cống__ao__hồ__sông__suối__mương_lifestyle'})
+MERGE (o1)-[r95:causedBy]->(o2)
+SET r95.text = 'Dân cư sống trong khu vực sử dụng nhà tiêu không hợp vệ sinh, phân đi thẳng ra cống, ao, hồ, sông, suối, mương,&#8230;'
+
+MERGE (o1:disease {id: 'bệnh_tiêu_chảy_disease'})
+MERGE (o2:lifestyle {id: 'sử_dụng_nguồn_nước_ô_nhiễm_lifestyle'})
+MERGE (o1)-[r96:causedBy]->(o2)
+SET r96.text = 'Sử dụng nguồn nước ô nhiễm, không đảm bảo vệ sinh.'
+
+MERGE (o1:disease {id: 'bệnh_tiêu_chảy_disease'})
+MERGE (o2:lifestyle {id: 'nguồn_nước_không_đảm_bảo_vệ_sinh_lifestyle'})
+MERGE (o1)-[r97:causedBy]->(o2)
+SET r97.text = 'Sử dụng nguồn nước ô nhiễm, không đảm bảo vệ sinh.'
+
+MERGE (o1:disease {id: 'bệnh_tiêu_chảy_disease'})
+MERGE (o2:lifestyle {id: 'ăn_uống_thiếu_vệ_sinh_lifestyle'})
+MERGE (o1)-[r98:causedBy]->(o2)
+SET r98.text = 'Có thói quen ăn uống thiếu vệ sinh, thường xuyên ăn rau sống, thủy hải sản chưa chín kỹ.'
+
+MERGE (o1:disease {id: 'bệnh_tiêu_chảy_disease'})
+MERGE (o2:food {id: 'ăn_rau_sống_food'})
+MERGE (o1)-[r99:causedBy]->(o2)
+SET r99.text = 'Có thói quen ăn uống thiếu vệ sinh, thường xuyên ăn rau sống, thủy hải sản chưa chín kỹ.'
+
+MERGE (o1:disease {id: 'bệnh_tiêu_chảy_disease'})
+MERGE (o2:food {id: 'thủy_hải_sản_chưa_chín_kỹ_food'})
+MERGE (o1)-[r100:causedBy]->(o2)
+SET r100.text = 'Có thói quen ăn uống thiếu vệ sinh, thường xuyên ăn rau sống, thủy hải sản chưa chín kỹ.'
+
+MERGE (o1:disease {id: 'bệnh_tiêu_chảy_disease'})
+MERGE (o2:lifestyle {id: 'sử_dụng_phân_tươi_lifestyle'})
+MERGE (o1)-[r101:causedBy]->(o2)
+SET r101.text = 'Sử dụng phân tươi, phân chưa được xử lý trong trồng trọt.'
+
+MERGE (o1:disease {id: 'bệnh_tiêu_chảy_disease'})
+MERGE (o2:lifestyle {id: 'phân_chưa_được_xử_lý_lifestyle'})
+MERGE (o1)-[r102:causedBy]->(o2)
+SET r102.text = 'Sử dụng phân tươi, phân chưa được xử lý trong trồng trọt.'
+
+MERGE (o1:disease {id: 'bệnh_tiêu_chảy_disease'})
+MERGE (o2:cause {id: 'ngập_lụt_cause'})
+MERGE (o1)-[r103:causedBy]->(o2)
+SET r103.text = 'Dân cư sống tại khu vực bị ngập lụt hoặc sau ngập lụt.'
+
+MERGE (o1:symptom {id: 'tiêu_chảy_symptom'})
+MERGE (o2:disease {id: 'bệnh_tiêu_chảy_disease'})
+MERGE (o1)-[r104:isSymptomOf]->(o2)
+SET r104.text = 'Khi có dấu hiệu của tiêu chảy, người bệnh cần liên hệ với bác sĩ để được xem xét, tiến hành một số xét nghiệm cần thiết nhằm xác định nguyên nhân chính xác.'
+
+MERGE (o1:symptom {id: 'tiêu_chảy_symptom'})
+MERGE (o2:test {id: 'xét_nghiệm_test'})
+MERGE (o1)-[r105:diagnosedBy]->(o2)
+SET r105.text = 'Khi có dấu hiệu của tiêu chảy, người bệnh cần liên hệ với bác sĩ để được xem xét, tiến hành một số xét nghiệm cần thiết nhằm xác định nguyên nhân chính xác.'
+
+MERGE (o1:disease {id: 'bệnh_tiêu_chảy_disease'})
+MERGE (o2:treatment {id: 'phương_pháp_điều_trị_treatment'})
+MERGE (o1)-[r106:treatedBy]->(o2)
+SET r106.text = 'Đây là nền tảng cơ bản để thực hiện các phương pháp điều trị phù hợp và hiệu quả về sau.'
+
+MERGE (o1:disease {id: 'bệnh_tiêu_chảy_disease'})
+MERGE (o2:test {id: 'xét_nghiệm_công_thức_máu_toàn_phần_(cbc)_test'})
+MERGE (o1)-[r107:diagnosedBy]->(o2)
+SET r107.text = 'xét nghiệm công thức máu toàn phần (CBC), yếu tố viêm, điện giải máu, chức năng gan, thận sẽ giúp bác sĩ có hướng chẩn đoán nguyên nhân và cách điều trị thích hợp'
+
+MERGE (o1:disease {id: 'bệnh_tiêu_chảy_disease'})
+MERGE (o2:test {id: 'xét_nghiệm_yếu_tố_viêm_test'})
+MERGE (o1)-[r108:diagnosedBy]->(o2)
+SET r108.text = 'xét nghiệm công thức máu toàn phần (CBC), yếu tố viêm, điện giải máu, chức năng gan, thận sẽ giúp bác sĩ có hướng chẩn đoán nguyên nhân và cách điều trị thích hợp'
+
+MERGE (o1:disease {id: 'bệnh_tiêu_chảy_disease'})
+MERGE (o2:test {id: 'xét_nghiệm_điện_giải_máu_test'})
+MERGE (o1)-[r109:diagnosedBy]->(o2)
+SET r109.text = 'xét nghiệm công thức máu toàn phần (CBC), yếu tố viêm, điện giải máu, chức năng gan, thận sẽ giúp bác sĩ có hướng chẩn đoán nguyên nhân và cách điều trị thích hợp'
+
+MERGE (o1:disease {id: 'bệnh_tiêu_chảy_disease'})
+MERGE (o2:test {id: 'xét_nghiệm_chức_năng_gan_test'})
+MERGE (o1)-[r110:diagnosedBy]->(o2)
+SET r110.text = 'xét nghiệm công thức máu toàn phần (CBC), yếu tố viêm, điện giải máu, chức năng gan, thận sẽ giúp bác sĩ có hướng chẩn đoán nguyên nhân và cách điều trị thích hợp'
+
+MERGE (o1:disease {id: 'bệnh_tiêu_chảy_disease'})
+MERGE (o2:test {id: 'xét_nghiệm_chức_năng_thận_test'})
+MERGE (o1)-[r111:diagnosedBy]->(o2)
+SET r111.text = 'xét nghiệm công thức máu toàn phần (CBC), yếu tố viêm, điện giải máu, chức năng gan, thận sẽ giúp bác sĩ có hướng chẩn đoán nguyên nhân và cách điều trị thích hợp'
+
+MERGE (o1:disease {id: 'bệnh_tiêu_chảy_disease'})
+MERGE (o2:test {id: 'dịch_cấy_phân_test'})
+MERGE (o1)-[r112:diagnosedBy]->(o2)
+SET r112.text = 'Các bác sĩ có thể xác định ký sinh trùng, vi khuẩn và một vài loại vi rút trong dịch cấy phân.'
+
+MERGE (o1:disease {id: 'bệnh_tiêu_chảy_disease'})
+MERGE (o2:test {id: 'xét_nghiệm_phân_test'})
+MERGE (o1)-[r113:diagnosedBy]->(o2)
+SET r113.text = 'Xét nghiệm phân cũng có thể phát hiện máu vi thể (hồng cầu), bạch cầu và các manh mối khác để chẩn đoán.'
+
+MERGE (o1:disease {id: 'bệnh_tiêu_chảy_disease'})
+MERGE (o2:test {id: 'nội_soi_đại_tràng_test'})
+MERGE (o1)-[r114:diagnosedBy]->(o2)
+SET r114.text = 'Thông qua quá trình nội soi đại tràng, bác sĩ sẽ quan sát được toàn bộ khung đại tràng, một phần ruột non để xác định chính xác các tổn thương tại đây và tìm ra nguyên nhân ỉa chảy.'
+
+MERGE (o1:disease {id: 'bệnh_tiêu_chảy_disease'})
+MERGE (o2:organ {id: 'đại_tràng_organ'})
+MERGE (o1)-[r115:affects]->(o2)
+SET r115.text = 'Thông qua quá trình nội soi đại tràng, bác sĩ sẽ quan sát được toàn bộ khung đại tràng, một phần ruột non để xác định chính xác các tổn thương tại đây và tìm ra nguyên nhân ỉa chảy.'
+
+MERGE (o1:disease {id: 'bệnh_tiêu_chảy_disease'})
+MERGE (o2:organ {id: 'ruột_non_organ'})
+MERGE (o1)-[r116:affects]->(o2)
+SET r116.text = 'Thông qua quá trình nội soi đại tràng, bác sĩ sẽ quan sát được toàn bộ khung đại tràng, một phần ruột non để xác định chính xác các tổn thương tại đây và tìm ra nguyên nhân ỉa chảy.'
+
+MERGE (o1:disease {id: 'bệnh_tiêu_chảy_disease'})
+MERGE (o2:test {id: 'sinh_thiết_test'})
+MERGE (o1)-[r117:diagnosedBy]->(o2)
+SET r117.text = 'Ngoài ra, ống nội soi cũng được trang bị dụng cụ hỗ trợ, giúp lấy sinh thiết (một mẫu mô nhỏ) từ đại tràng để thực hiện kiểm tra trong phòng thí nghiệm.'
+
+MERGE (o1:symptom {id: 'tiêu_chảy_symptom'})
+MERGE (o2:treatment {id: 'tự_khỏi_treatment'})
+MERGE (o1)-[r118:treatedBy]->(o2)
+SET r118.text = 'Các trường hợp ỉa chảy mức độ nhẹ đều có thể tự khỏi trong một thời gian ngắn mà không cần đến thuốc điều trị.'
+
+MERGE (o1:symptom {id: 'tiêu_chảy_symptom'})
+MERGE (o2:cause {id: 'kéo_dài_nhiều_ngày_cause'})
+MERGE (o1)-[r119:aggravatedBy]->(o2)
+SET r119.text = 'Tuy nhiên, nếu tình trạng kéo dài nhiều ngày, mức độ nặng, tăng dần kèm các triệu chứng nghiêm trọng, người bệnh cần liên hệ sớm với bác sĩ để được kiểm tra và xử lý kịp thời.'
+
+MERGE (o1:symptom {id: 'tiêu_chảy_symptom'})
+MERGE (o2:cause {id: 'mức_độ_nặng_cause'})
+MERGE (o1)-[r120:aggravatedBy]->(o2)
+SET r120.text = 'Tuy nhiên, nếu tình trạng kéo dài nhiều ngày, mức độ nặng, tăng dần kèm các triệu chứng nghiêm trọng, người bệnh cần liên hệ sớm với bác sĩ để được kiểm tra và xử lý kịp thời.'
+
+MERGE (o1:symptom {id: 'tiêu_chảy_symptom'})
+MERGE (o2:cause {id: 'tăng_dần_cause'})
+MERGE (o1)-[r121:aggravatedBy]->(o2)
+SET r121.text = 'Tuy nhiên, nếu tình trạng kéo dài nhiều ngày, mức độ nặng, tăng dần kèm các triệu chứng nghiêm trọng, người bệnh cần liên hệ sớm với bác sĩ để được kiểm tra và xử lý kịp thời.'
+
+MERGE (o1:symptom {id: 'tiêu_chảy_symptom'})
+MERGE (o2:symptom {id: 'triệu_chứng_nghiêm_trọng_symptom'})
+MERGE (o1)-[r122:aggravatedBy]->(o2)
+SET r122.text = 'Tuy nhiên, nếu tình trạng kéo dài nhiều ngày, mức độ nặng, tăng dần kèm các triệu chứng nghiêm trọng, người bệnh cần liên hệ sớm với bác sĩ để được kiểm tra và xử lý kịp thời.'
+
+MERGE (o1:disease {id: 'bệnh_tiêu_chảy_disease'})
+MERGE (o2:treatment {id: 'phương_pháp_điều_trị_treatment'})
+MERGE (o1)-[r123:treatedBy]->(o2)
+SET r123.text = 'Một số phương pháp điều trị tiêu chảy thường được áp dụng gồm:'
+
+MERGE (o1:symptom {id: 'tiêu_chảy_symptom'})
+MERGE (o2:treatment {id: 'dung_dịch_oresol_(ors_-_oral_rehydration_salts)_treatment'})
+MERGE (o1)-[r124:treatedBy]->(o2)
+SET r124.text = 'Đây là việc đầu tiên cần thực hiện ngay khi bị tiêu chảy.'
+
+MERGE (o1:treatment {id: 'dung_dịch_oresol_(ors_-_oral_rehydration_salts)_treatment'})
+MERGE (o2:organ {id: 'ruột_non_organ'})
+MERGE (o1)-[r125:affects]->(o2)
+SET r125.text = 'Đây là một dạng hỗn hợp gồm nước sạch, đường, muối, được hấp thụ tại ruột non để bù lượng nước và điện giải đã mất.'
+
+MERGE (o1:symptom {id: 'tiêu_chảy_symptom'})
+MERGE (o2:symptom {id: 'buồn_nôn_symptom'})
+MERGE (o1)-[r126:aggravatedBy]->(o2)
+SET r126.text = 'Trong trường hợp không thể uống do buồn nôn hoặc đau dạ dày, phương án truyền dịch qua tĩnh mạch là cần thiết.'
+
+MERGE (o1:symptom {id: 'tiêu_chảy_symptom'})
+MERGE (o2:symptom {id: 'đau_dạ_dày_symptom'})
+MERGE (o1)-[r127:aggravatedBy]->(o2)
+SET r127.text = 'Trong trường hợp không thể uống do buồn nôn hoặc đau dạ dày, phương án truyền dịch qua tĩnh mạch là cần thiết.'
+
+MERGE (o1:symptom {id: 'tiêu_chảy_symptom'})
+MERGE (o2:treatment {id: 'truyền_dịch_qua_tĩnh_mạch_treatment'})
+MERGE (o1)-[r128:treatedBy]->(o2)
+SET r128.text = 'Trong trường hợp không thể uống do buồn nôn hoặc đau dạ dày, phương án truyền dịch qua tĩnh mạch là cần thiết.'
+
+MERGE (o1:disease {id: 'bệnh_tiêu_chảy_disease'})
+MERGE (o2:treatment {id: 'thuốc_kháng_sinh_treatment'})
+MERGE (o1)-[r129:treatedBy]->(o2)
+SET r129.text = 'Thuốc kháng sinh sẽ đem lại hiệu quả điều trị tích cực trong trường hợp ỉa chảy do vi khuẩn hoặc ký sinh trùng.'
+
+MERGE (o1:disease {id: 'bệnh_tiêu_chảy_disease'})
+MERGE (o2:cause {id: 'vi_khuẩn_cause'})
+MERGE (o1)-[r130:causedBy]->(o2)
+SET r130.text = 'Thuốc kháng sinh sẽ đem lại hiệu quả điều trị tích cực trong trường hợp ỉa chảy do vi khuẩn hoặc ký sinh trùng.'
+
+MERGE (o1:disease {id: 'bệnh_tiêu_chảy_disease'})
+MERGE (o2:cause {id: 'ký_sinh_trùng_cause'})
+MERGE (o1)-[r131:causedBy]->(o2)
+SET r131.text = 'Thuốc kháng sinh sẽ đem lại hiệu quả điều trị tích cực trong trường hợp ỉa chảy do vi khuẩn hoặc ký sinh trùng.'
+
+MERGE (o1:disease {id: 'bệnh_tiêu_chảy_disease'})
+MERGE (o2:cause {id: 'virus_cause'})
+MERGE (o1)-[r132:causedBy]->(o2)
+SET r132.text = 'Tuy nhiên, nếu nguyên nhân xuất phát từ virus thì phương pháp này hoàn toàn không có tác dụng.'
+
+MERGE (o1:symptom {id: 'tiêu_chảy_symptom'})
+MERGE (o2:disease {id: 'bệnh_lý_disease'})
+MERGE (o1)-[r133:isSymptomOf]->(o2)
+SET r133.text = 'Nhiều trường hợp tiêu chảy xuất hiện là triệu chứng của một bệnh lý khác.'
+
+MERGE (o1:disease {id: 'bệnh_lý_disease'})
+MERGE (o2:treatment {id: 'điều_trị_treatment'})
+MERGE (o1)-[r134:treatedBy]->(o2)
+SET r134.text = 'Đối với tình trạng này, bác sĩ sẽ chỉ định điều trị vấn đề đó trước tiên.'
+
+MERGE (o1:disease {id: 'bệnh_tiêu_chảy_disease'})
+MERGE (o2:treatment {id: 'thuốc_kháng_sinh_treatment'})
+MERGE (o1)-[r135:causedBy]->(o2)
+SET r135.text = 'Nếu thuốc kháng sinh là nguyên nhân chính gây ỉa chảy, việc giảm liều dùng hoặc đổi loại khác là biện pháp nhanh nhất để chấm dứt tác dụng phụ.'
+
+MERGE (o1:disease {id: 'bệnh_tiêu_chảy_disease'})
+MERGE (o2:treatment {id: 'giảm_liều_dùng_treatment'})
+MERGE (o1)-[r136:treatedBy]->(o2)
+SET r136.text = 'Nếu thuốc kháng sinh là nguyên nhân chính gây ỉa chảy, việc giảm liều dùng hoặc đổi loại khác là biện pháp nhanh nhất để chấm dứt tác dụng phụ.'
+
+MERGE (o1:disease {id: 'bệnh_tiêu_chảy_disease'})
+MERGE (o2:treatment {id: 'đổi_loại_thuốc_treatment'})
+MERGE (o1)-[r137:treatedBy]->(o2)
+SET r137.text = 'Nếu thuốc kháng sinh là nguyên nhân chính gây ỉa chảy, việc giảm liều dùng hoặc đổi loại khác là biện pháp nhanh nhất để chấm dứt tác dụng phụ.'
+
+MERGE (o1:disease {id: 'tiêu_chảy_disease'})
+MERGE (o2:symptom {id: 'tử_vong_symptom'})
+MERGE (o1)-[r138:isSymptomOf]->(o2)
+SET r138.text = 'Mức độ nghiêm trọng và mối nguy hiểm tiềm ẩn của tiêu chảy đã được Trung tâm kiểm soát bệnh tật Hoa Kỳ (CDC) khuyến cáo: “Tiêu chảy ở trẻ gây tử vong cao hơn cả sốt rét, sởi và AIDS kết hợp.”'
+
+MERGE (o1:disease {id: 'tiêu_chảy_disease'})
+MERGE (o2:treatment {id: 'xử_lý_đúng_cách_treatment'})
+MERGE (o1)-[r139:causedBy]->(o2)
+SET r139.text = 'Cụ thể, bệnh lý này có thể kéo dài từ vài ngày đến một tuần và không gây ảnh hưởng lớn cho sức khỏe nếu được xử lý đúng cách.'
+
+MERGE (o1:disease {id: 'tiêu_chảy_disease'})
+MERGE (o2:symptom {id: 'hôn_mê_symptom'})
+MERGE (o1)-[r140:causedBy]->(o2)
+SET r140.text = 'Tuy nhiên, trong trường hợp ngược lại, cơ thể có nguy cơ sẽ phải đối mặt với nhiều vấn đề nghiêm trọng như: hôn mê, trụy mạch, suy kiệt, suy dinh dưỡng, mất nước, thậm chí là tử vong.'
+
+MERGE (o1:disease {id: 'tiêu_chảy_disease'})
+MERGE (o2:symptom {id: 'trụy_mạch_symptom'})
+MERGE (o1)-[r141:causedBy]->(o2)
+SET r141.text = 'Tuy nhiên, trong trường hợp ngược lại, cơ thể có nguy cơ sẽ phải đối mặt với nhiều vấn đề nghiêm trọng như: hôn mê, trụy mạch, suy kiệt, suy dinh dưỡng, mất nước, thậm chí là tử vong.'
+
+MERGE (o1:disease {id: 'tiêu_chảy_disease'})
+MERGE (o2:symptom {id: 'suy_kiệt_symptom'})
+MERGE (o1)-[r142:causedBy]->(o2)
+SET r142.text = 'Tuy nhiên, trong trường hợp ngược lại, cơ thể có nguy cơ sẽ phải đối mặt với nhiều vấn đề nghiêm trọng như: hôn mê, trụy mạch, suy kiệt, suy dinh dưỡng, mất nước, thậm chí là tử vong.'
+
+MERGE (o1:disease {id: 'tiêu_chảy_disease'})
+MERGE (o2:symptom {id: 'suy_dinh_dưỡng_symptom'})
+MERGE (o1)-[r143:causedBy]->(o2)
+SET r143.text = 'Tuy nhiên, trong trường hợp ngược lại, cơ thể có nguy cơ sẽ phải đối mặt với nhiều vấn đề nghiêm trọng như: hôn mê, trụy mạch, suy kiệt, suy dinh dưỡng, mất nước, thậm chí là tử vong.'
+
+MERGE (o1:disease {id: 'tiêu_chảy_disease'})
+MERGE (o2:symptom {id: 'mất_nước_symptom'})
+MERGE (o1)-[r144:causedBy]->(o2)
+SET r144.text = 'Tuy nhiên, trong trường hợp ngược lại, cơ thể có nguy cơ sẽ phải đối mặt với nhiều vấn đề nghiêm trọng như: hôn mê, trụy mạch, suy kiệt, suy dinh dưỡng, mất nước, thậm chí là tử vong.'
+
+MERGE (o1:disease {id: 'tiêu_chảy_disease'})
+MERGE (o2:symptom {id: 'tử_vong_symptom'})
+MERGE (o1)-[r145:causedBy]->(o2)
+SET r145.text = 'Tuy nhiên, trong trường hợp ngược lại, cơ thể có nguy cơ sẽ phải đối mặt với nhiều vấn đề nghiêm trọng như: hôn mê, trụy mạch, suy kiệt, suy dinh dưỡng, mất nước, thậm chí là tử vong.'
+
+MERGE (o1:disease {id: 'tiêu_chảy_disease'})
+MERGE (o2:symptom {id: 'vùng_quanh_hậu_môn_bị_hăm_loét_đỏ_symptom'})
+MERGE (o1)-[r146:causedBy]->(o2)
+SET r146.text = 'Một số biến chứng nguy hiểm phải kể đến gồm:  Vùng quanh hậu môn bị hăm loét đỏ do đi ngoài quá nhiều lần.'
+
+MERGE (o1:disease {id: 'tiêu_chảy_disease'})
+MERGE (o2:symptom {id: 'suy_dinh_dưỡng_symptom'})
+MERGE (o1)-[r147:causedBy]->(o2)
+SET r147.text = 'Suy dinh dưỡng: Bệnh ỉa chảy là một trong những nguyên nhân hàng đầu dẫn đến suy dinh dưỡng ở trẻ em dưới 5 tuổi bởi tác động trực tiếp đến quá trình tăng trưởng và phát triển nhận thức.'
+
+MERGE (o1:disease {id: 'tiêu_chảy_disease'})
+MERGE (o2:symptom {id: 'mất_nước_symptom'})
+MERGE (o1)-[r148:causedBy]->(o2)
+SET r148.text = 'Mất nước: Đây là mối đe dọa nghiêm trọng của tiêu chảy.'
+
+MERGE (o1:disease {id: 'tiêu_chảy_disease'})
+MERGE (o2:symptom {id: 'nôn_mửa_symptom'})
+MERGE (o1)-[r149:causedBy]->(o2)
+SET r149.text = 'Trong giai đoạn đầu của bệnh, nước và các chất điện giải như: Natri, Clorua, Kali, Bicarbonate,&#8230; sẽ bị mất qua nôn mửa, mồ hôi, nước tiểu, phân, thở.'
+
+MERGE (o1:disease {id: 'tiêu_chảy_disease'})
+MERGE (o2:symptom {id: 'mồ_hôi_symptom'})
+MERGE (o1)-[r150:causedBy]->(o2)
+SET r150.text = 'Trong giai đoạn đầu của bệnh, nước và các chất điện giải như: Natri, Clorua, Kali, Bicarbonate,&#8230; sẽ bị mất qua nôn mửa, mồ hôi, nước tiểu, phân, thở.'
+
+MERGE (o1:disease {id: 'tiêu_chảy_disease'})
+MERGE (o2:symptom {id: 'nước_tiểu_symptom'})
+MERGE (o1)-[r151:causedBy]->(o2)
+SET r151.text = 'Trong giai đoạn đầu của bệnh, nước và các chất điện giải như: Natri, Clorua, Kali, Bicarbonate,&#8230; sẽ bị mất qua nôn mửa, mồ hôi, nước tiểu, phân, thở.'
+
+MERGE (o1:disease {id: 'tiêu_chảy_disease'})
+MERGE (o2:symptom {id: 'phân_symptom'})
+MERGE (o1)-[r152:causedBy]->(o2)
+SET r152.text = 'Trong giai đoạn đầu của bệnh, nước và các chất điện giải như: Natri, Clorua, Kali, Bicarbonate,&#8230; sẽ bị mất qua nôn mửa, mồ hôi, nước tiểu, phân, thở.'
+
+MERGE (o1:disease {id: 'tiêu_chảy_disease'})
+MERGE (o2:symptom {id: 'thở_symptom'})
+MERGE (o1)-[r153:causedBy]->(o2)
+SET r153.text = 'Trong giai đoạn đầu của bệnh, nước và các chất điện giải như: Natri, Clorua, Kali, Bicarbonate,&#8230; sẽ bị mất qua nôn mửa, mồ hôi, nước tiểu, phân, thở.'
+
+MERGE (o1:disease {id: 'tiêu_chảy_disease'})
+MERGE (o2:symptom {id: 'co_giật_symptom'})
+MERGE (o1)-[r154:causedBy]->(o2)
+SET r154.text = 'Nếu việc thay thế không được thực hiện, cơ thể sẽ dễ xuất hiện co giật, tổn thương não, thậm chí tử vong.'
+
+MERGE (o1:disease {id: 'tiêu_chảy_disease'})
+MERGE (o2:symptom {id: 'tổn_thương_não_symptom'})
+MERGE (o1)-[r155:causedBy]->(o2)
+SET r155.text = 'Nếu việc thay thế không được thực hiện, cơ thể sẽ dễ xuất hiện co giật, tổn thương não, thậm chí tử vong.'
+
+MERGE (o1:disease {id: 'tiêu_chảy_disease'})
+MERGE (o2:treatment {id: 'phòng_ngừa_treatment'})
+MERGE (o1)-[r156:preventedBy]->(o2)
+SET r156.text = 'Bệnh tiêu chảy dễ lây lan, biến chứng nguy hiểm nhưng hoàn toàn có thể phòng ngừa ngay từ ban đầu.'
+
+MERGE (o1:disease {id: 'tiêu_chảy_disease'})
+MERGE (o2:lifestyle {id: 'vệ_sinh_cá_nhân_lifestyle'})
+MERGE (o1)-[r157:preventedBy]->(o2)
+SET r157.text = 'Một số biện pháp hữu ích có thể áp dụng như:(7)  Tăng cường vệ sinh cá nhân, môi trường, không gian sống,&#8230;'
+
+MERGE (o1:disease {id: 'tiêu_chảy_disease'})
+MERGE (o2:lifestyle {id: 'vệ_sinh_môi_trường_lifestyle'})
+MERGE (o1)-[r158:preventedBy]->(o2)
+SET r158.text = 'Một số biện pháp hữu ích có thể áp dụng như:(7)  Tăng cường vệ sinh cá nhân, môi trường, không gian sống,&#8230;'
+
+MERGE (o1:disease {id: 'tiêu_chảy_disease'})
+MERGE (o2:lifestyle {id: 'an_toàn_vệ_sinh_thực_phẩm_lifestyle'})
+MERGE (o1)-[r159:preventedBy]->(o2)
+SET r159.text = 'Bảo đảm an toàn vệ sinh thực phẩm, ăn chín, uống sôi.'
+
+MERGE (o1:disease {id: 'tiêu_chảy_disease'})
+MERGE (o2:lifestyle {id: 'ăn_chín_lifestyle'})
+MERGE (o1)-[r160:preventedBy]->(o2)
+SET r160.text = 'Bảo đảm an toàn vệ sinh thực phẩm, ăn chín, uống sôi.'
+
+MERGE (o1:disease {id: 'tiêu_chảy_disease'})
+MERGE (o2:lifestyle {id: 'uống_sôi_lifestyle'})
+MERGE (o1)-[r161:preventedBy]->(o2)
+SET r161.text = 'Bảo đảm an toàn vệ sinh thực phẩm, ăn chín, uống sôi.'
+
+MERGE (o1:disease {id: 'tiêu_chảy_disease'})
+MERGE (o2:lifestyle {id: 'nguồn_nước_sạch_lifestyle'})
+MERGE (o1)-[r162:preventedBy]->(o2)
+SET r162.text = 'Đảm bảo sử dụng nguồn nước sạch cho sinh hoạt.'
+
+MERGE (o1:disease {id: 'tiêu_chảy_disease'})
+MERGE (o2:lifestyle {id: 'bảo_vệ_nguồn_nước_lifestyle'})
+MERGE (o1)-[r163:preventedBy]->(o2)
+SET r163.text = 'Bảo vệ nguồn nước.'
+
+MERGE (o1:disease {id: 'tiêu_chảy_disease'})
+MERGE (o2:treatment {id: 'xử_lý_đúng_cách_treatment'})
+MERGE (o1)-[r164:preventedBy]->(o2)
+SET r164.text = 'Thực hiện các biện pháp xử lý đúng cách khi có người bị ỉa chảy cấp.'
+
+MERGE (o1:disease {id: 'tiêu_chảy_disease'})
+MERGE (o2:cause {id: 'vi_khuẩn_cause'})
+MERGE (o1)-[r165:causedBy]->(o2)
+SET r165.text = 'Cập nhật kiến thức về sự lây lan của vi khuẩn gây bệnh ỉa chảy.'
+
+MERGE (o1:disease {id: 'tiêu_chảy_disease'})
+MERGE (o2:symptom {id: 'đau_vùng_trực_tràng_symptom'})
+MERGE (o1)-[r166:causedBy]->(o2)
+SET r166.text = 'Khi bị tiêu chảy, vùng trực tràng sẽ bị đau kèm triệu chứng ngứa, rát, đau, khó chịu sau khi đi vệ sinh.'
+
+MERGE (o1:disease {id: 'tiêu_chảy_disease'})
+MERGE (o2:symptom {id: 'ngứa_vùng_trực_tràng_symptom'})
+MERGE (o1)-[r167:causedBy]->(o2)
+SET r167.text = 'Khi bị tiêu chảy, vùng trực tràng sẽ bị đau kèm triệu chứng ngứa, rát, đau, khó chịu sau khi đi vệ sinh.'
+
+MERGE (o1:disease {id: 'tiêu_chảy_disease'})
+MERGE (o2:symptom {id: 'rát_vùng_trực_tràng_symptom'})
+MERGE (o1)-[r168:causedBy]->(o2)
+SET r168.text = 'Khi bị tiêu chảy, vùng trực tràng sẽ bị đau kèm triệu chứng ngứa, rát, đau, khó chịu sau khi đi vệ sinh.'
+
+MERGE (o1:disease {id: 'tiêu_chảy_disease'})
+MERGE (o2:symptom {id: 'khó_chịu_vùng_trực_tràng_symptom'})
+MERGE (o1)-[r169:causedBy]->(o2)
+SET r169.text = 'Khi bị tiêu chảy, vùng trực tràng sẽ bị đau kèm triệu chứng ngứa, rát, đau, khó chịu sau khi đi vệ sinh.'
+
+MERGE (o1:disease {id: 'tiêu_chảy_disease'})
+MERGE (o2:treatment {id: 'tắm_nước_ấm_treatment'})
+MERGE (o1)-[r170:treatedBy]->(o2)
+SET r170.text = 'Trong trường hợp này, người bệnh hãy tắm nước ấm hoặc ngâm mình trong tắm sau đó lau khô những khu vực này bằng khăn mềm và sạch.'
+
+MERGE (o1:disease {id: 'tiêu_chảy_disease'})
+MERGE (o2:treatment {id: 'bismuth_subsalicylate_treatment'})
+MERGE (o1)-[r171:treatedBy]->(o2)
+SET r171.text = 'Ngoài ra, người lớn cũng có thể sử dụng một số thuốc không kê đơn cho tình trạng nhẹ như Bismuth Subsalicylate, Loperamide dạng lỏng hoặc viên nén.'
+
+MERGE (o1:disease {id: 'tiêu_chảy_disease'})
+MERGE (o2:treatment {id: 'loperamide_treatment'})
+MERGE (o1)-[r172:treatedBy]->(o2)
+SET r172.text = 'Ngoài ra, người lớn cũng có thể sử dụng một số thuốc không kê đơn cho tình trạng nhẹ như Bismuth Subsalicylate, Loperamide dạng lỏng hoặc viên nén.'
+
+MERGE (o1:disease {id: 'tiêu_chảy_disease'})
+MERGE (o2:treatment {id: 'cung_cấp_đủ_nước_treatment'})
+MERGE (o1)-[r173:treatedBy]->(o2)
+SET r173.text = 'Đặc biệt, việc cung cấp đủ nước cho cơ thể là rất cần thiết.'
+
+MERGE (o1:disease {id: 'tiêu_chảy_disease'})
+MERGE (o2:treatment {id: 'uống_nước_treatment'})
+MERGE (o1)-[r174:treatedBy]->(o2)
+SET r174.text = 'Người bệnh cần uống ít nhất 6 cốc nước mỗi ngày.'
+
+MERGE (o1:disease {id: 'tiêu_chảy_disease'})
+MERGE (o2:treatment {id: 'đồ_uống_thay_thế_chất_điện_giải_treatment'})
+MERGE (o1)-[r175:treatedBy]->(o2)
+SET r175.text = 'Bên cạnh đó có thể chọn thêm đồ uống thay thế chất điện giải, soda không chứa caffein, nước luộc gà (không chất béo), trà với mật ong,&#8230;'
+
+MERGE (o1:disease {id: 'tiêu_chảy_disease'})
+MERGE (o2:treatment {id: 'soda_không_chứa_caffein_treatment'})
+MERGE (o1)-[r176:treatedBy]->(o2)
+SET r176.text = 'Bên cạnh đó có thể chọn thêm đồ uống thay thế chất điện giải, soda không chứa caffein, nước luộc gà (không chất béo), trà với mật ong,&#8230;'
+
+MERGE (o1:disease {id: 'tiêu_chảy_disease'})
+MERGE (o2:treatment {id: 'nước_luộc_gà_treatment'})
+MERGE (o1)-[r177:treatedBy]->(o2)
+SET r177.text = 'Bên cạnh đó có thể chọn thêm đồ uống thay thế chất điện giải, soda không chứa caffein, nước luộc gà (không chất béo), trà với mật ong,&#8230;'
+
+MERGE (o1:disease {id: 'tiêu_chảy_disease'})
+MERGE (o2:treatment {id: 'trà_với_mật_ong_treatment'})
+MERGE (o1)-[r178:treatedBy]->(o2)
+SET r178.text = 'Bên cạnh đó có thể chọn thêm đồ uống thay thế chất điện giải, soda không chứa caffein, nước luộc gà (không chất béo), trà với mật ong,&#8230;'
+
+MERGE (o1:disease {id: 'tiêu_chảy_disease'})
+MERGE (o2:treatment {id: 'uống_giữa_bữa_treatment'})
+MERGE (o1)-[r179:treatedBy]->(o2)
+SET r179.text = 'Thay vì uống trong bữa ăn, người bệnh nên uống giữa bữa để đem lại hiệu quả tốt hơn.'
+
+MERGE (o1:disease {id: 'tiêu_chảy_disease'})
+MERGE (o2:treatment {id: 'trung_tâm_nội_soi_và_phẫu_thuật_nội_soi_tiêu_hóa_treatment'})
+MERGE (o1)-[r180:treatedBy]->(o2)
+SET r180.text = 'Trung tâm Nội soi và Phẫu thuật nội soi tiêu hóa (BVĐK Tâm Anh TP.HCM) và Khoa Tiêu hóa - Gan mật - Tụy (BVĐK Tâm Anh Hà Nội) là những trung tâm y tế chuyên khoa Tiêu hóa uy tín, cung cấp dịch vụ thăm khám và điều trị cao cấp, hiệu quả cho các bệnh nhân mắc các vấn đề về gan từ nhẹ đến nặng (gan nhiễm mỡ, viêm gan cấp tính, mãn tính, xơ gan, ung thư gan…).'
+
+MERGE (o1:disease {id: 'tiêu_chảy_disease'})
+MERGE (o2:treatment {id: 'khoa_tiêu_hóa_-_gan_mật_-_tụy_treatment'})
+MERGE (o1)-[r181:treatedBy]->(o2)
+SET r181.text = 'Trung tâm Nội soi và Phẫu thuật nội soi tiêu hóa (BVĐK Tâm Anh TP.HCM) và Khoa Tiêu hóa - Gan mật - Tụy (BVĐK Tâm Anh Hà Nội) là những trung tâm y tế chuyên khoa Tiêu hóa uy tín, cung cấp dịch vụ thăm khám và điều trị cao cấp, hiệu quả cho các bệnh nhân mắc các vấn đề về gan từ nhẹ đến nặng (gan nhiễm mỡ, viêm gan cấp tính, mãn tính, xơ gan, ung thư gan…).'
+
+MERGE (o1:disease {id: 'tiêu_chảy_disease'})
+MERGE (o2:treatment {id: 'bác_sĩ_nội_khoa_treatment'})
+MERGE (o1)-[r182:treatedBy]->(o2)
+SET r182.text = 'Hệ thống BVĐK Tâm Anh quy tụ đội ngũ bác sĩ Nội khoa – Ngoại khoa – Nội soi tiêu hóa chuyên môn cao, giàu kinh nghiệm, bên cạnh đó là sự hỗ trợ của hệ thống thiết bị y tế hiện đại, nhập khẩu từ nước ngoài, phục vụ tối đa nhu cầu thăm khám và điều trị của khách hàng.'
+
+MERGE (o1:disease {id: 'tiêu_chảy_disease'})
+MERGE (o2:treatment {id: 'bác_sĩ_ngoại_khoa_treatment'})
+MERGE (o1)-[r183:treatedBy]->(o2)
+SET r183.text = 'Hệ thống BVĐK Tâm Anh quy tụ đội ngũ bác sĩ Nội khoa – Ngoại khoa – Nội soi tiêu hóa chuyên môn cao, giàu kinh nghiệm, bên cạnh đó là sự hỗ trợ của hệ thống thiết bị y tế hiện đại, nhập khẩu từ nước ngoài, phục vụ tối đa nhu cầu thăm khám và điều trị của khách hàng.'
+
+MERGE (o1:disease {id: 'tiêu_chảy_disease'})
+MERGE (o2:treatment {id: 'bác_sĩ_nội_soi_tiêu_hóa_treatment'})
+MERGE (o1)-[r184:treatedBy]->(o2)
+SET r184.text = 'Hệ thống BVĐK Tâm Anh quy tụ đội ngũ bác sĩ Nội khoa – Ngoại khoa – Nội soi tiêu hóa chuyên môn cao, giàu kinh nghiệm, bên cạnh đó là sự hỗ trợ của hệ thống thiết bị y tế hiện đại, nhập khẩu từ nước ngoài, phục vụ tối đa nhu cầu thăm khám và điều trị của khách hàng.'

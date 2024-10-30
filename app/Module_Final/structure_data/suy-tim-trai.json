@@ -1,0 +1,1130 @@
+[
+    {
+        "text": "Suy tim trái là tình trạng xảy ra khi tim mất khả năng bơm máu.",
+        "head": "Suy tim trái",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Tim mất khả năng bơm máu",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Suy tim trái là tình trạng xảy ra khi tim mất khả năng bơm máu. Điều này khiến các cơ quan trong cơ thể không nhận đủ lượng oxy cần thiết.",
+        "head": "Tim mất khả năng bơm máu",
+        "head_type": "symptom",
+        "relation": "affects",
+        "tail": "Các cơ quan trong cơ thể",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Suy tim trái là tình trạng xảy ra khi tim mất khả năng bơm máu. Điều này khiến các cơ quan trong cơ thể không nhận đủ lượng oxy cần thiết. Nếu không kịp thời điều trị, tình trạng suy tim trái có thể dẫn đến nhiều biến chứng như suy gan, suy thận, rối loạn nhịp hoặc tử vong.",
+        "head": "Suy tim trái",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Suy gan, suy thận, rối loạn nhịp hoặc tử vong",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Đau ngực là triệu chứng thường gặp nhất của suy tim trái",
+        "head": "Đau ngực",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Suy tim trái",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Suy tim trái là bệnh lý xảy ra khi chức năng co bóp của tâm thất trái suy giảm.",
+        "head": "Suy tim trái",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Chức năng co bóp của tâm thất trái suy giảm",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Suy tim trái là bệnh lý xảy ra khi chức năng co bóp của tâm thất trái suy giảm. Theo thời gian, tình trạng này có thể khiến tim bị suy yếu và không còn khả năng xử lý máu nhận được từ phổi.",
+        "head": "Chức năng co bóp của tâm thất trái suy giảm",
+        "head_type": "symptom",
+        "relation": "affects",
+        "tail": "Tim",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Suy tim trái là bệnh lý xảy ra khi chức năng co bóp của tâm thất trái suy giảm. Theo thời gian, tình trạng này có thể khiến tim bị suy yếu và không còn khả năng xử lý máu nhận được từ phổi.",
+        "head": "Tim",
+        "head_type": "organ",
+        "relation": "relatedTo",
+        "tail": "Máu nhận được từ phổi",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Suy tim bên trái được chia thành 2 dạng: (1)\nSuy tim tâm thu: chức năng co bóp tống máu của tâm thất trái quá yếu, không khả năng bơm máu ra động mạch chủ để nuôi dưỡng các cơ quan trong cơ thể.",
+        "head": "Suy tim tâm thu",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Chức năng co bóp tống máu của tâm thất trái quá yếu",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Suy tim bên trái được chia thành 2 dạng: (1)\nSuy tim tâm thu: chức năng co bóp tống máu của tâm thất trái quá yếu, không khả năng bơm máu ra động mạch chủ để nuôi dưỡng các cơ quan trong cơ thể. Dạng này còn được gọi là suy tim phân suất tống máu giảm.",
+        "head": "Suy tim tâm thu",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "Suy tim phân suất tống máu giảm",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Suy tim bên trái được chia thành 2 dạng: (1)\nSuy tim tâm thu: chức năng co bóp tống máu của tâm thất trái quá yếu, không khả năng bơm máu ra động mạch chủ để nuôi dưỡng các cơ quan trong cơ thể. Dạng này còn được gọi là suy tim phân suất tống máu giảm.\nSuy tim tâm trương: Tâm thất trái bị cứng, giảm đàn hồi và không thể thư giãn thích hợp, gây khó khăn cho việc hút máu về tâm thất.",
+        "head": "Suy tim tâm trương",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Tâm thất trái bị cứng, giảm đàn hồi và không thể thư giãn thích hợp",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Suy tim bên trái được chia thành 2 dạng: (1)\nSuy tim tâm thu: chức năng co bóp tống máu của tâm thất trái quá yếu, không khả năng bơm máu ra động mạch chủ để nuôi dưỡng các cơ quan trong cơ thể. Dạng này còn được gọi là suy tim phân suất tống máu giảm.\nSuy tim tâm trương: Tâm thất trái bị cứng, giảm đàn hồi và không thể thư giãn thích hợp, gây khó khăn cho việc hút máu về tâm thất. Dạng này còn được gọi là suy tim phân suất tống máu bảo tồn.",
+        "head": "Suy tim tâm trương",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "Suy tim phân suất tống máu bảo tồn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tim có hai buồng bơm chính: tâm thất phải và tâm thất trái.",
+        "head": "Tim",
+        "head_type": "organ",
+        "relation": "locatedIn",
+        "tail": "Tâm thất phải và tâm thất trái",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Hai buồng này hoạt động theo những cách khác nhau để bơm máu:",
+        "head": "Tâm thất phải và tâm thất trái",
+        "head_type": "organ",
+        "relation": "relatedTo",
+        "tail": "Bơm máu",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Buồng trái: Nhận máu giàu oxy từ phổi và đưa nó đến phần còn lại của cơ thể.",
+        "head": "Buồng trái",
+        "head_type": "organ",
+        "relation": "relatedTo",
+        "tail": "Máu giàu oxy từ phổi",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Buồng trái: Nhận máu giàu oxy từ phổi và đưa nó đến phần còn lại của cơ thể. Oxy giúp các cơ quan, cơ bắp và mô hoàn thành vai trò của chúng.",
+        "head": "Máu giàu oxy từ phổi",
+        "head_type": "symptom",
+        "relation": "affects",
+        "tail": "Các cơ quan, cơ bắp và mô",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Buồng phải: Nhận máu nghèo oxy từ các cơ quan trở về, đưa nó đến phổi để lấy thêm oxy.",
+        "head": "Buồng phải",
+        "head_type": "organ",
+        "relation": "relatedTo",
+        "tail": "Máu nghèo oxy từ các cơ quan trở về",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Ở giai đoạn đầu của suy tim trái, bạn có thể không nhận thấy các dấu hiệu của bệnh.",
+        "head": "suy tim trái",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "các dấu hiệu của bệnh",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Hoặc, những triệu chứng nhẹ khiến bạn nghĩ tới một số bệnh lý khác, chẳng hạn như dị ứng, nghẹt mũi, khó tiêu, cảm lạnh…",
+        "head": "dị ứng, nghẹt mũi, khó tiêu, cảm lạnh",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "bệnh lý khác",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi tim dần trở nên suy yếu, người bệnh sẽ có triệu chứng sung huyết phổi và ứ máu ở ngoại biên, bao gồm:",
+        "head": "tim",
+        "head_type": "organ",
+        "relation": "affects",
+        "tail": "sung huyết phổi và ứ máu ở ngoại biên",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Đau ngực",
+        "head": "Đau ngực",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "suy tim trái",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Mệt mỏi",
+        "head": "Mệt mỏi",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "suy tim trái",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Yếu sức",
+        "head": "Yếu sức",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "suy tim trái",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khó thở, đặc biệt khi gắng sức",
+        "head": "Khó thở",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "suy tim trái",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khó thở khi nằm xuống",
+        "head": "Khó thở",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "suy tim trái",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Thức giấc vào ban đêm và khó thở (khó thở kịch phát về đêm)",
+        "head": "Thức giấc vào ban đêm và khó thở",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "suy tim trái",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nhịp tim nhanh hoặc không đều",
+        "head": "Nhịp tim nhanh hoặc không đều",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "suy tim trái",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Sưng bàn chân, mắt cá chân và cẳng chân (phù ngoại vi)",
+        "head": "Sưng bàn chân, mắt cá chân và cẳng chân",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "suy tim trái",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tăng cân không rõ lý do",
+        "head": "Tăng cân không rõ lý do",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "suy tim trái",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Buồn nôn, đầy bụng, chán ăn, đau thượng vị do gan to",
+        "head": "Buồn nôn, đầy bụng, chán ăn, đau thượng vị",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "suy tim trái",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ho dai dẳng hoặc thở khò khè",
+        "head": "Ho dai dẳng hoặc thở khò khè",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "suy tim trái",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đi tiểu nhiều hơn bình thường hoặc tiểu nhiều vào ban đêm.",
+        "head": "Đi tiểu nhiều hơn bình thường hoặc tiểu nhiều vào ban đêm",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "suy tim trái",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Theo ThS.BS Huỳnh Thanh Kiều, suy thất trái xảy ra là do nhiều nguyên nhân tiềm ẩn, chẳng hạn như:",
+        "head": "suy thất trái",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "nhiều nguyên nhân tiềm ẩn",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Tăng huyết áp: Tăng huyết áp mạn tính là một trong những nguyên nhân phổ biến nhất của suy tim tâm trương.",
+        "head": "Tăng huyết áp mạn tính",
+        "head_type": "cause",
+        "relation": "causes",
+        "tail": "suy tim tâm trương",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi bạn bị huyết áp cao trong một thời gian dài, tim phải làm việc nhiều hơn để bơm máu đi khắp cơ thể.",
+        "head": "huyết áp cao",
+        "head_type": "cause",
+        "relation": "affects",
+        "tail": "tim",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Kết quả là tim trở nên dày và cứng hơn.",
+        "head": "tim",
+        "head_type": "organ",
+        "relation": "affects",
+        "tail": "tim",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Điều này ảnh hưởng đến khả năng thư giãn giữa các nhịp.",
+        "head": "tim",
+        "head_type": "organ",
+        "relation": "affects",
+        "tail": "khả năng thư giãn giữa các nhịp",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Bệnh đái tháo đường: Lượng đường trong máu cao là nguyên nhân gây xơ cứng các mạch máu.",
+        "head": "Bệnh đái tháo đường",
+        "head_type": "disease",
+        "relation": "causes",
+        "tail": "xơ cứng các mạch máu",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Tình trạng này khiến tim phải làm việc nhiều hơn và làm cho cơ dày lên.",
+        "head": "tim",
+        "head_type": "organ",
+        "relation": "affects",
+        "tail": "tim",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Bệnh động mạch vành: Sự tắc nghẽn mạch vành khiến máu đến nuôi cơ tim ít hơn.",
+        "head": "Bệnh động mạch vành",
+        "head_type": "disease",
+        "relation": "causes",
+        "tail": "máu đến nuôi cơ tim ít hơn",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Lưu lượng máu đến tim rất thấp có thể khiến các tế bào cơ tim chết đi (hoặc thiếu máu cục bộ), ngăn trái tim thư giãn và nạp đầy máu như bình thường.",
+        "head": "Lưu lượng máu đến tim rất thấp",
+        "head_type": "cause",
+        "relation": "causes",
+        "tail": "các tế bào cơ tim chết đi",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Viêm màng ngoài tim: Đây là tình trạng viêm kích thích của màng ngoài tim - lớp màng mỏng bao quanh tim, dẫn tới hạn chế khả năng đổ đầy máu của tim.",
+        "head": "Viêm màng ngoài tim",
+        "head_type": "disease",
+        "relation": "causes",
+        "tail": "hạn chế khả năng đổ đầy máu của tim",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Lối sống ít vận động: Thiếu hoạt động thể chất làm tăng nguy cơ bị huyết áp cao, đái tháo đường, bệnh mạch vành và béo phì.",
+        "head": "Lối sống ít vận động",
+        "head_type": "lifestyle",
+        "relation": "causes",
+        "tail": "huyết áp cao, đái tháo đường, bệnh mạch vành và béo phì",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tất cả những yếu tố này góp phần gây suy tim tâm trương.",
+        "head": "Tất cả những yếu tố này",
+        "head_type": "cause",
+        "relation": "causes",
+        "tail": "suy tim tâm trương",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ngưng thở khi ngủ do tắc nghẽn (OSA): Khi bị OSA, bạn sẽ ngừng thở trong khi ngủ.",
+        "head": "Ngưng thở khi ngủ do tắc nghẽn (OSA)",
+        "head_type": "disease",
+        "relation": "causes",
+        "tail": "ngừng thở trong khi ngủ",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Điều này dẫn đến một loạt thay đổi phức tạp trong cơ thể, bao gồm tăng huyết áp, giảm cung cấp oxy đến tim và tăng hoạt động của hệ thần kinh.",
+        "head": "ngừng thở trong khi ngủ",
+        "head_type": "symptom",
+        "relation": "causes",
+        "tail": "tăng huyết áp, giảm cung cấp oxy đến tim và tăng hoạt động của hệ thần kinh",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Những thay đổi này gây ra sự không phù hợp giữa cung và cầu oxy, làm cho bạn có nguy cơ cao bị suy tim tâm thu, suy tim tâm trương cũng như các bệnh tim mạch khác.",
+        "head": "Những thay đổi này",
+        "head_type": "cause",
+        "relation": "causes",
+        "tail": "suy tim tâm thu, suy tim tâm trương cũng như các bệnh tim mạch khác",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ngoài ra, suy tim tâm thu và suy tim tâm trương còn có những nguyên nhân gốc rễ khác nhau.",
+        "head": "suy tim tâm thu và suy tim tâm trương",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "những nguyên nhân gốc rễ khác nhau",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Rối loạn chức năng tâm thu thường do:",
+        "head": "Rối loạn chức năng tâm thu",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Bệnh cơ tim giãn vô căn, Bệnh mạch vành, Huyết áp tăng cao, Bệnh van tim, Bệnh tim bẩm sinh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bệnh cơ tim giãn vô căn",
+        "head": "Bệnh cơ tim giãn vô căn",
+        "head_type": "disease",
+        "relation": "causes",
+        "tail": "Rối loạn chức năng tâm thu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bệnh mạch vành",
+        "head": "Bệnh mạch vành",
+        "head_type": "disease",
+        "relation": "causes",
+        "tail": "Rối loạn chức năng tâm thu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Huyết áp tăng cao",
+        "head": "Huyết áp tăng cao",
+        "head_type": "disease",
+        "relation": "causes",
+        "tail": "Rối loạn chức năng tâm thu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bệnh van tim",
+        "head": "Bệnh van tim",
+        "head_type": "disease",
+        "relation": "causes",
+        "tail": "Rối loạn chức năng tâm thu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bệnh tim bẩm sinh",
+        "head": "Bệnh tim bẩm sinh",
+        "head_type": "disease",
+        "relation": "causes",
+        "tail": "Rối loạn chức năng tâm thu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Rối loạn chức năng tâm trương thường do:",
+        "head": "Rối loạn chức năng tâm trương",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Huyết áp cao, Béo phì, Bệnh động mạch vành, Bệnh cơ tim, Bệnh màng ngoài tim, Đái tháo đường, Rung nhĩ, Hội chứng ngưng thở khi ngủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Huyết áp cao",
+        "head": "Huyết áp cao",
+        "head_type": "disease",
+        "relation": "causes",
+        "tail": "Rối loạn chức năng tâm trương",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Béo phì",
+        "head": "Béo phì",
+        "head_type": "disease",
+        "relation": "causes",
+        "tail": "Rối loạn chức năng tâm trương",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bệnh động mạch vành",
+        "head": "Bệnh động mạch vành",
+        "head_type": "disease",
+        "relation": "causes",
+        "tail": "Rối loạn chức năng tâm trương",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bệnh cơ tim",
+        "head": "Bệnh cơ tim",
+        "head_type": "disease",
+        "relation": "causes",
+        "tail": "Rối loạn chức năng tâm trương",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bệnh màng ngoài tim",
+        "head": "Bệnh màng ngoài tim",
+        "head_type": "disease",
+        "relation": "causes",
+        "tail": "Rối loạn chức năng tâm trương",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đái tháo đường",
+        "head": "Đái tháo đường",
+        "head_type": "disease",
+        "relation": "causes",
+        "tail": "Rối loạn chức năng tâm trương",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Rung nhĩ",
+        "head": "Rung nhĩ",
+        "head_type": "disease",
+        "relation": "causes",
+        "tail": "Rối loạn chức năng tâm trương",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Hội chứng ngưng thở khi ngủ",
+        "head": "Hội chứng ngưng thở khi ngủ",
+        "head_type": "disease",
+        "relation": "causes",
+        "tail": "Rối loạn chức năng tâm trương",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Béo phì, ngưng thở khi ngủ là những yếu tố nguy cơ của bệnh suy tim trái",
+        "head": "Béo phì, ngưng thở khi ngủ",
+        "head_type": "disease",
+        "relation": "causes",
+        "tail": "suy tim trái",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Chẩn đoán và điều trị sớm là chìa khóa giúp làm chậm sự tiến triển của suy tim trái, kiểm soát triệu chứng và phòng ngừa biến chứng.",
+        "head": "Chẩn đoán và điều trị sớm",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "suy tim trái",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ngược lại, nếu không được chữa trị kịp thời, suy tim trái có thể gây ra các biến chứng như:",
+        "head": "suy tim trái",
+        "head_type": "disease",
+        "relation": "causes",
+        "tail": "các biến chứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Rối loạn nhịp tim như nhịp nhanh thất và rung nhĩ…",
+        "head": "Rối loạn nhịp tim",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "suy tim trái",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Hở van tim",
+        "head": "Hở van tim",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "suy tim trái",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tăng áp động mạch phổi",
+        "head": "Tăng áp động mạch phổi",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "suy tim trái",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Suy chức năng các cơ quan như suy gan, suy thận…",
+        "head": "Suy chức năng các cơ quan",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "suy tim trái",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Suy tim giai đoạn cuối kháng trị cần phải ghép tim",
+        "head": "Suy tim giai đoạn cuối kháng trị",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "ghép tim",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Đột tử hoặc tử vong",
+        "head": "Đột tử hoặc tử vong",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "suy tim trái",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Cục máu đông trong tim có thể đưa đến đột quỵ não hoặc tắc mạch",
+        "head": "Cục máu đông trong tim",
+        "head_type": "cause",
+        "relation": "causes",
+        "tail": "đột quỵ não hoặc tắc mạch",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Thiếu máu",
+        "head": "Thiếu máu",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "suy tim trái",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Để chẩn đoán suy tim trái, trước tiên, bác sĩ sẽ thăm khám tổng quát và hỏi bệnh sử của bạn.",
+        "head": "thăm khám tổng quát",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "suy tim trái",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Để chẩn đoán suy tim trái, trước tiên, bác sĩ sẽ thăm khám tổng quát và hỏi bệnh sử của bạn.",
+        "head": "hỏi bệnh sử",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "suy tim trái",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tiếp đến, bác sĩ tiến hành đo điện tâm đồ, chụp X-quang tim phổi, siêu âm tim nhằm đánh giá cấu trúc, chức năng của tâm thất trái, và xét nghiệm máu chất chỉ điểm sinh học của suy tim.",
+        "head": "đo điện tâm đồ",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "suy tim trái",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tiếp đến, bác sĩ tiến hành đo điện tâm đồ, chụp X-quang tim phổi, siêu âm tim nhằm đánh giá cấu trúc, chức năng của tâm thất trái, và xét nghiệm máu chất chỉ điểm sinh học của suy tim.",
+        "head": "chụp X-quang tim phổi",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "suy tim trái",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tiếp đến, bác sĩ tiến hành đo điện tâm đồ, chụp X-quang tim phổi, siêu âm tim nhằm đánh giá cấu trúc, chức năng của tâm thất trái, và xét nghiệm máu chất chỉ điểm sinh học của suy tim.",
+        "head": "siêu âm tim",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "suy tim trái",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tiếp đến, bác sĩ tiến hành đo điện tâm đồ, chụp X-quang tim phổi, siêu âm tim nhằm đánh giá cấu trúc, chức năng của tâm thất trái, và xét nghiệm máu chất chỉ điểm sinh học của suy tim.",
+        "head": "xét nghiệm máu chất chỉ điểm sinh học",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "suy tim trái",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bác sĩ sẽ hỏi kỹ bạn về tiền sử bệnh huyết áp cao, đái tháo đường, rối loạn lipid máu, thói quen uống rượu bia, hút thuốc lá, triệu chứng đau thắt ngực hoặc tiền sử nhồi máu cơ tim, triệu chứng khó thở hoặc tiền sử bị suy tim, bệnh van tim hay rối loạn nhịp tim trước đây.",
+        "head": "huyết áp cao",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "suy tim trái",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bác sĩ sẽ hỏi kỹ bạn về tiền sử bệnh huyết áp cao, đái tháo đường, rối loạn lipid máu, thói quen uống rượu bia, hút thuốc lá, triệu chứng đau thắt ngực hoặc tiền sử nhồi máu cơ tim, triệu chứng khó thở hoặc tiền sử bị suy tim, bệnh van tim hay rối loạn nhịp tim trước đây.",
+        "head": "đái tháo đường",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "suy tim trái",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bác sĩ sẽ hỏi kỹ bạn về tiền sử bệnh huyết áp cao, đái tháo đường, rối loạn lipid máu, thói quen uống rượu bia, hút thuốc lá, triệu chứng đau thắt ngực hoặc tiền sử nhồi máu cơ tim, triệu chứng khó thở hoặc tiền sử bị suy tim, bệnh van tim hay rối loạn nhịp tim trước đây.",
+        "head": "rối loạn lipid máu",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "suy tim trái",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bác sĩ sẽ hỏi kỹ bạn về tiền sử bệnh huyết áp cao, đái tháo đường, rối loạn lipid máu, thói quen uống rượu bia, hút thuốc lá, triệu chứng đau thắt ngực hoặc tiền sử nhồi máu cơ tim, triệu chứng khó thở hoặc tiền sử bị suy tim, bệnh van tim hay rối loạn nhịp tim trước đây.",
+        "head": "uống rượu bia",
+        "head_type": "lifestyle",
+        "relation": "aggravatedBy",
+        "tail": "suy tim trái",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bác sĩ sẽ hỏi kỹ bạn về tiền sử bệnh huyết áp cao, đái tháo đường, rối loạn lipid máu, thói quen uống rượu bia, hút thuốc lá, triệu chứng đau thắt ngực hoặc tiền sử nhồi máu cơ tim, triệu chứng khó thở hoặc tiền sử bị suy tim, bệnh van tim hay rối loạn nhịp tim trước đây.",
+        "head": "hút thuốc lá",
+        "head_type": "lifestyle",
+        "relation": "aggravatedBy",
+        "tail": "suy tim trái",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bác sĩ sẽ hỏi kỹ bạn về tiền sử bệnh huyết áp cao, đái tháo đường, rối loạn lipid máu, thói quen uống rượu bia, hút thuốc lá, triệu chứng đau thắt ngực hoặc tiền sử nhồi máu cơ tim, triệu chứng khó thở hoặc tiền sử bị suy tim, bệnh van tim hay rối loạn nhịp tim trước đây.",
+        "head": "đau thắt ngực",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "nhồi máu cơ tim",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bác sĩ sẽ hỏi kỹ bạn về tiền sử bệnh huyết áp cao, đái tháo đường, rối loạn lipid máu, thói quen uống rượu bia, hút thuốc lá, triệu chứng đau thắt ngực hoặc tiền sử nhồi máu cơ tim, triệu chứng khó thở hoặc tiền sử bị suy tim, bệnh van tim hay rối loạn nhịp tim trước đây.",
+        "head": "nhồi máu cơ tim",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "suy tim trái",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bác sĩ sẽ hỏi kỹ bạn về tiền sử bệnh huyết áp cao, đái tháo đường, rối loạn lipid máu, thói quen uống rượu bia, hút thuốc lá, triệu chứng đau thắt ngực hoặc tiền sử nhồi máu cơ tim, triệu chứng khó thở hoặc tiền sử bị suy tim, bệnh van tim hay rối loạn nhịp tim trước đây.",
+        "head": "khó thở",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "suy tim trái",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bác sĩ sẽ hỏi kỹ bạn về tiền sử bệnh huyết áp cao, đái tháo đường, rối loạn lipid máu, thói quen uống rượu bia, hút thuốc lá, triệu chứng đau thắt ngực hoặc tiền sử nhồi máu cơ tim, triệu chứng khó thở hoặc tiền sử bị suy tim, bệnh van tim hay rối loạn nhịp tim trước đây.",
+        "head": "suy tim",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "suy tim trái",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bác sĩ sẽ hỏi kỹ bạn về tiền sử bệnh huyết áp cao, đái tháo đường, rối loạn lipid máu, thói quen uống rượu bia, hút thuốc lá, triệu chứng đau thắt ngực hoặc tiền sử nhồi máu cơ tim, triệu chứng khó thở hoặc tiền sử bị suy tim, bệnh van tim hay rối loạn nhịp tim trước đây.",
+        "head": "bệnh van tim",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "suy tim trái",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bác sĩ sẽ hỏi kỹ bạn về tiền sử bệnh huyết áp cao, đái tháo đường, rối loạn lipid máu, thói quen uống rượu bia, hút thuốc lá, triệu chứng đau thắt ngực hoặc tiền sử nhồi máu cơ tim, triệu chứng khó thở hoặc tiền sử bị suy tim, bệnh van tim hay rối loạn nhịp tim trước đây.",
+        "head": "rối loạn nhịp tim",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "suy tim trái",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi thăm khám, bác sĩ sẽ chú ý đến các triệu chứng suy tim như khó thở, thở khò khè, thở co kéo, nói hụt hơi, tĩnh mạch cổ nổi to ở cổ, phù chân, gan to hay bụng báng.",
+        "head": "khó thở",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "suy tim trái",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi thăm khám, bác sĩ sẽ chú ý đến các triệu chứng suy tim như khó thở, thở khò khè, thở co kéo, nói hụt hơi, tĩnh mạch cổ nổi to ở cổ, phù chân, gan to hay bụng báng.",
+        "head": "thở khò khè",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "suy tim trái",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi thăm khám, bác sĩ sẽ chú ý đến các triệu chứng suy tim như khó thở, thở khò khè, thở co kéo, nói hụt hơi, tĩnh mạch cổ nổi to ở cổ, phù chân, gan to hay bụng báng.",
+        "head": "thở co kéo",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "suy tim trái",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi thăm khám, bác sĩ sẽ chú ý đến các triệu chứng suy tim như khó thở, thở khò khè, thở co kéo, nói hụt hơi, tĩnh mạch cổ nổi to ở cổ, phù chân, gan to hay bụng báng.",
+        "head": "nói hụt hơi",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "suy tim trái",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi thăm khám, bác sĩ sẽ chú ý đến các triệu chứng suy tim như khó thở, thở khò khè, thở co kéo, nói hụt hơi, tĩnh mạch cổ nổi to ở cổ, phù chân, gan to hay bụng báng.",
+        "head": "tĩnh mạch cổ nổi to",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "suy tim trái",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi thăm khám, bác sĩ sẽ chú ý đến các triệu chứng suy tim như khó thở, thở khò khè, thở co kéo, nói hụt hơi, tĩnh mạch cổ nổi to ở cổ, phù chân, gan to hay bụng báng.",
+        "head": "phù chân",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "suy tim trái",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi thăm khám, bác sĩ sẽ chú ý đến các triệu chứng suy tim như khó thở, thở khò khè, thở co kéo, nói hụt hơi, tĩnh mạch cổ nổi to ở cổ, phù chân, gan to hay bụng báng.",
+        "head": "gan to",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "suy tim trái",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi thăm khám, bác sĩ sẽ chú ý đến các triệu chứng suy tim như khó thở, thở khò khè, thở co kéo, nói hụt hơi, tĩnh mạch cổ nổi to ở cổ, phù chân, gan to hay bụng báng.",
+        "head": "bụng báng",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "suy tim trái",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nghe tim có thể có tiếng thổi bất thường, tim đập nhanh, không đều.",
+        "head": "tiếng thổi bất thường",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "suy tim trái",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nghe tim có thể có tiếng thổi bất thường, tim đập nhanh, không đều.",
+        "head": "tim đập nhanh",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "suy tim trái",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nghe tim có thể có tiếng thổi bất thường, tim đập nhanh, không đều.",
+        "head": "tim đập không đều",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "suy tim trái",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nghe phổi có thể có nhiều tiếng rít ở hai bên phổi hoặc dấu hiệu nghi ngờ có nước trong phổi.",
+        "head": "tiếng rít",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "suy tim trái",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nghe phổi có thể có nhiều tiếng rít ở hai bên phổi hoặc dấu hiệu nghi ngờ có nước trong phổi.",
+        "head": "nước trong phổi",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "suy tim trái",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đo điện tim: có dấu hiệu lớn các buồng tim, rung nhĩ, loạn nhịp tim hay dấu hiệu thiếu máu cơ tim hoặc nhồi máu cơ tim cũ trước đây.",
+        "head": "đo điện tâm đồ",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "suy tim trái",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đo điện tim: có dấu hiệu lớn các buồng tim, rung nhĩ, loạn nhịp tim hay dấu hiệu thiếu máu cơ tim hoặc nhồi máu cơ tim cũ trước đây.",
+        "head": "dấu hiệu lớn các buồng tim",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "suy tim trái",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đo điện tim: có dấu hiệu lớn các buồng tim, rung nhĩ, loạn nhịp tim hay dấu hiệu thiếu máu cơ tim hoặc nhồi máu cơ tim cũ trước đây.",
+        "head": "rung nhĩ",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "suy tim trái",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đo điện tim: có dấu hiệu lớn các buồng tim, rung nhĩ, loạn nhịp tim hay dấu hiệu thiếu máu cơ tim hoặc nhồi máu cơ tim cũ trước đây.",
+        "head": "loạn nhịp tim",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "suy tim trái",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đo điện tim: có dấu hiệu lớn các buồng tim, rung nhĩ, loạn nhịp tim hay dấu hiệu thiếu máu cơ tim hoặc nhồi máu cơ tim cũ trước đây.",
+        "head": "thiếu máu cơ tim",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "suy tim trái",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đo điện tim: có dấu hiệu lớn các buồng tim, rung nhĩ, loạn nhịp tim hay dấu hiệu thiếu máu cơ tim hoặc nhồi máu cơ tim cũ trước đây.",
+        "head": "nhồi máu cơ tim cũ",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "suy tim trái",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Chụp X-quang phổi: thấy được bóng tim to, sung huyết trong phổi hoặc có dịch trong phổi.",
+        "head": "chụp X-quang phổi",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "suy tim trái",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Chụp X-quang phổi: thấy được bóng tim to, sung huyết trong phổi hoặc có dịch trong phổi.",
+        "head": "bóng tim to",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "suy tim trái",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Chụp X-quang phổi: thấy được bóng tim to, sung huyết trong phổi hoặc có dịch trong phổi.",
+        "head": "sung huyết trong phổi",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "suy tim trái",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Chụp X-quang phổi: thấy được bóng tim to, sung huyết trong phổi hoặc có dịch trong phổi.",
+        "head": "dịch trong phổi",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "suy tim trái",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Xét nghiệm máu đo chất chỉ thị của suy tim (BNP/hoặc NT-ProBNP, sST2&#8230;): các chất này tăng cao trong suy tim.",
+        "head": "xét nghiệm máu đo chất chỉ thị",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "suy tim trái",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Xét nghiệm máu đo chất chỉ thị của suy tim (BNP/hoặc NT-ProBNP, sST2&#8230;): các chất này tăng cao trong suy tim.",
+        "head": "BNP",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "suy tim trái",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Xét nghiệm máu đo chất chỉ thị của suy tim (BNP/hoặc NT-ProBNP, sST2&#8230;): các chất này tăng cao trong suy tim.",
+        "head": "NT-ProBNP",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "suy tim trái",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Xét nghiệm máu đo chất chỉ thị của suy tim (BNP/hoặc NT-ProBNP, sST2&#8230;): các chất này tăng cao trong suy tim.",
+        "head": "sST2",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "suy tim trái",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Siêu âm tim: cung cấp nhiều thông tin cần thiết cho chẩn đoán và điều trị.",
+        "head": "siêu âm tim",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "suy tim trái",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Siêu âm tim cho biết có bệnh van tim không, có thiếu máu cục bộ cơ tim hay sẹo nhồi máu cơ tim cũ (vùng cơ tim giảm vận động hoặc vô động, không co bóp), kích thước các buồng tim, khả năng co bóp của cơ tim (phân suất tống máu), áp lực động mạch phổi, huyết khối trong buồng tim, dịch xung quanh màng ngoài tim&#8230;",
+        "head": "bệnh van tim",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "suy tim trái",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Siêu âm tim cho biết có bệnh van tim không, có thiếu máu cục bộ cơ tim hay sẹo nhồi máu cơ tim cũ (vùng cơ tim giảm vận động hoặc vô động, không co bóp), kích thước các buồng tim, khả năng co bóp của cơ tim (phân suất tống máu), áp lực động mạch phổi, huyết khối trong buồng tim, dịch xung quanh màng ngoài tim&#8230;",
+        "head": "thiếu máu cục bộ cơ tim",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "suy tim trái",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Siêu âm tim cho biết có bệnh van tim không, có thiếu máu cục bộ cơ tim hay sẹo nhồi máu cơ tim cũ (vùng cơ tim giảm vận động hoặc vô động, không co bóp), kích thước các buồng tim, khả năng co bóp của cơ tim (phân suất tống máu), áp lực động mạch phổi, huyết khối trong buồng tim, dịch xung quanh màng ngoài tim&#8230;",
+        "head": "sẹo nhồi máu cơ tim cũ",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "suy tim trái",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Siêu âm tim cho biết có bệnh van tim không, có thiếu máu cục bộ cơ tim hay sẹo nhồi máu cơ tim cũ (vùng cơ tim giảm vận động hoặc vô động, không co bóp), kích thước các buồng tim, khả năng co bóp của cơ tim (phân suất tống máu), áp lực động mạch phổi, huyết khối trong buồng tim, dịch xung quanh màng ngoài tim&#8230;",
+        "head": "cơ tim",
+        "head_type": "organ",
+        "relation": "affects",
+        "tail": "suy tim trái",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Siêu âm tim cho biết có bệnh van tim không, có thiếu máu cục bộ cơ tim hay sẹo nhồi máu cơ tim cũ (vùng cơ tim giảm vận động hoặc vô động, không co bóp), kích thước các buồng tim, khả năng co bóp của cơ tim (phân suất tống máu), áp lực động mạch phổi, huyết khối trong buồng tim, dịch xung quanh màng ngoài tim&#8230;",
+        "head": "phân suất tống máu",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "suy tim trái",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Siêu âm tim cho biết có bệnh van tim không, có thiếu máu cục bộ cơ tim hay sẹo nhồi máu cơ tim cũ (vùng cơ tim giảm vận động hoặc vô động, không co bóp), kích thước các buồng tim, khả năng co bóp của cơ tim (phân suất tống máu), áp lực động mạch phổi, huyết khối trong buồng tim, dịch xung quanh màng ngoài tim&#8230;",
+        "head": "áp lực động mạch phổi",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "suy tim trái",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Siêu âm tim cho biết có bệnh van tim không, có thiếu máu cục bộ cơ tim hay sẹo nhồi máu cơ tim cũ (vùng cơ tim giảm vận động hoặc vô động, không co bóp), kích thước các buồng tim, khả năng co bóp của cơ tim (phân suất tống máu), áp lực động mạch phổi, huyết khối trong buồng tim, dịch xung quanh màng ngoài tim&#8230;",
+        "head": "huyết khối trong buồng tim",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "suy tim trái",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Siêu âm tim cho biết có bệnh van tim không, có thiếu máu cục bộ cơ tim hay sẹo nhồi máu cơ tim cũ (vùng cơ tim giảm vận động hoặc vô động, không co bóp), kích thước các buồng tim, khả năng co bóp của cơ tim (phân suất tống máu), áp lực động mạch phổi, huyết khối trong buồng tim, dịch xung quanh màng ngoài tim&#8230;",
+        "head": "dịch xung quanh màng ngoài tim",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "suy tim trái",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Dựa vào kết quả siêu âm tim để phân loại suy tim, khi phân suất tống máu giảm nhỏ hơn hoặc bằng 40% thì gọi là suy tim phân suất tống máu giảm (suy tim tâm thu), nếu phân suất tống máu lớn hơn hoặc bằng 50% thì gọi là suy tim phân suất tống máu bảo tồn (suy tim tâm trương).",
+        "head": "suy tim phân suất tống máu giảm",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "suy tim trái",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Dựa vào kết quả siêu âm tim để phân loại suy tim, khi phân suất tống máu giảm nhỏ hơn hoặc bằng 40% thì gọi là suy tim phân suất tống máu giảm (suy tim tâm thu), nếu phân suất tống máu lớn hơn hoặc bằng 50% thì gọi là suy tim phân suất tống máu bảo tồn (suy tim tâm trương).",
+        "head": "suy tim tâm thu",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "suy tim trái",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Dựa vào kết quả siêu âm tim để phân loại suy tim, khi phân suất tống máu giảm nhỏ hơn hoặc bằng 40% thì gọi là suy tim phân suất tống máu giảm (suy tim tâm thu), nếu phân suất tống máu lớn hơn hoặc bằng 50% thì gọi là suy tim phân suất tống máu bảo tồn (suy tim tâm trương).",
+        "head": "suy tim phân suất tống máu bảo tồn",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "suy tim trái",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Dựa vào kết quả siêu âm tim để phân loại suy tim, khi phân suất tống máu giảm nhỏ hơn hoặc bằng 40% thì gọi là suy tim phân suất tống máu giảm (suy tim tâm thu), nếu phân suất tống máu lớn hơn hoặc bằng 50% thì gọi là suy tim phân suất tống máu bảo tồn (suy tim tâm trương).",
+        "head": "suy tim tâm trương",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "suy tim trái",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Sau khi xác định người bệnh có suy tim, bước kế tiếp là làm các xét nghiệm tìm nguyên nhân dẫn đến suy tim.",
+        "head": "xét nghiệm",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "suy tim trái",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Một số xét nghiệm chuyên sâu khác gồm trắc nghiệm gắng sức, Holter điện tâm đồ, chụp CT tim và động mạch vành có cản quang, chụp mạch vành bằng phương pháp xâm nhập, MRI tim, xạ ký cơ tim, xét nghiệm gene, sinh thiết cơ tim&#8230;",
+        "head": "trắc nghiệm gắng sức",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "suy tim trái",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Một số xét nghiệm chuyên sâu khác gồm trắc nghiệm gắng sức, Holter điện tâm đồ, chụp CT tim và động mạch vành có cản quang, chụp mạch vành bằng phương pháp xâm nhập, MRI tim, xạ ký cơ tim, xét nghiệm gene, sinh thiết cơ tim&#8230;",
+        "head": "Holter điện tâm đồ",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "suy tim trái",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Một số xét nghiệm chuyên sâu khác gồm trắc nghiệm gắng sức, Holter điện tâm đồ, chụp CT tim và động mạch vành có cản quang, chụp mạch vành bằng phương pháp xâm nhập, MRI tim, xạ ký cơ tim, xét nghiệm gene, sinh thiết cơ tim&#8230;",
+        "head": "chụp CT tim và động mạch vành có cản quang",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "suy tim trái",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Một số xét nghiệm chuyên sâu khác gồm trắc nghiệm gắng sức, Holter điện tâm đồ, chụp CT tim và động mạch vành có cản quang, chụp mạch vành bằng phương pháp xâm nhập, MRI tim, xạ ký cơ tim, xét nghiệm gene, sinh thiết cơ tim&#8230;",
+        "head": "chụp mạch vành bằng phương pháp xâm nhập",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "suy tim trái",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Một số xét nghiệm chuyên sâu khác gồm trắc nghiệm gắng sức, Holter điện tâm đồ, chụp CT tim và động mạch vành có cản quang, chụp mạch vành bằng phương pháp xâm nhập, MRI tim, xạ ký cơ tim, xét nghiệm gene, sinh thiết cơ tim&#8230;",
+        "head": "MRI tim",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "suy tim trái",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Một số xét nghiệm chuyên sâu khác gồm trắc nghiệm gắng sức, Holter điện tâm đồ, chụp CT tim và động mạch vành có cản quang, chụp mạch vành bằng phương pháp xâm nhập, MRI tim, xạ ký cơ tim, xét nghiệm gene, sinh thiết cơ tim&#8230;",
+        "head": "xạ ký cơ tim",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "suy tim trái",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Một số xét nghiệm chuyên sâu khác gồm trắc nghiệm gắng sức, Holter điện tâm đồ, chụp CT tim và động mạch vành có cản quang, chụp mạch vành bằng phương pháp xâm nhập, MRI tim, xạ ký cơ tim, xét nghiệm gene, sinh thiết cơ tim&#8230;",
+        "head": "xét nghiệm gene",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "suy tim trái",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Một số xét nghiệm chuyên sâu khác gồm trắc nghiệm gắng sức, Holter điện tâm đồ, chụp CT tim và động mạch vành có cản quang, chụp mạch vành bằng phương pháp xâm nhập, MRI tim, xạ ký cơ tim, xét nghiệm gene, sinh thiết cơ tim&#8230;",
+        "head": "sinh thiết cơ tim",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "suy tim trái",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Máy chụp cộng hưởng từ (MRI) công nghệ ma trận sinh học toàn phần được sử dụng trong chẩn đoán suy tim trái",
+        "head": "MRI",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "suy tim trái",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tuân thủ lối sống lành mạnh sẽ làm giảm nguy cơ mắc bệnh suy tim trái.",
+        "head": "lối sống lành mạnh",
+        "head_type": "lifestyle",
+        "relation": "preventedBy",
+        "tail": "bệnh suy tim trái",
+        "tail_type": "disease"
+    }
+]

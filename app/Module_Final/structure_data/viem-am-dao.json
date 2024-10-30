@@ -1,0 +1,1234 @@
+[
+    {
+        "text": "Viêm âm hộ là tình trạng viêm phần da mềm ở bên ngoài cơ quan sinh dục nữ.",
+        "head": "Viêm âm hộ",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Viêm phần da mềm ở bên ngoài cơ quan sinh dục nữ",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Chính đặc tính ẩm ướt và ấm áp của âm hộ là điều kiện lý tưởng cho vi khuẩn xâm nhập, khiến vùng này dễ bị viêm nhiễm.",
+        "head": "Đặc tính ẩm ướt và ấm áp của âm hộ",
+        "head_type": "cause",
+        "relation": "causes",
+        "tail": "Viêm nhiễm",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bất kỳ phụ nữ nào cũng có khả năng bị viêm âm hộ.",
+        "head": "Viêm âm hộ",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Phụ nữ",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Tuy nhiên, những người có cơ địa dễ bị dị ứng, nhạy cảm, nhiễm trùng có nguy cơ viêm nhiễm cao hơn.",
+        "head": "Dị ứng, nhạy cảm, nhiễm trùng",
+        "head_type": "cause",
+        "relation": "causes",
+        "tail": "Viêm nhiễm",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ngoài ra, trẻ em gái tuổi dậy thì và phụ nữ sau mãn kinh có mức estrogen thấp nên cũng thuộc nhóm đối tượng dễ mắc viêm âm hộ.",
+        "head": "Trẻ em gái tuổi dậy thì và phụ nữ sau mãn kinh có mức estrogen thấp",
+        "head_type": "cause",
+        "relation": "causes",
+        "tail": "Viêm âm hộ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi thấy xuất hiện các triệu chứng bệnh như ngứa, đỏ, rát, sưng, đau nhức, tiết dịch âm đạo bất thường… bạn nên thăm khám bác sĩ ngay.",
+        "head": "Ngứa, đỏ, rát, sưng, đau nhức, tiết dịch âm đạo bất thường",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm âm hộ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Âm đạo của phụ nữ thường tiết dịch có màu trắng trong hoặc hơi đục.",
+        "head": "Tiết dịch âm đạo",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Âm đạo",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Đây là cách âm đạo tự làm sạch các tế bào chết, cũng như ngăn ngừa nhiễm trùng và các vi khuẩn có hại xâm nhập vào âm đạo.",
+        "head": "Tiết dịch âm đạo",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Làm sạch các tế bào chết, ngăn ngừa nhiễm trùng và các vi khuẩn có hại xâm nhập vào âm đạo",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Có thể nói, tiết dịch âm đạo là cơ chế làm sạch cơ thể tự nhiên mà ai cũng phải có.",
+        "head": "Tiết dịch âm đạo",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Cơ chế làm sạch cơ thể tự nhiên",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Dịch tiết âm đạo bình thường (không phải bệnh lý) sẽ không gây cảm giác đau hay ngứa ngáy.",
+        "head": "Dịch tiết âm đạo bình thường",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Không gây cảm giác đau hay ngứa ngáy",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Lượng dịch tiết ra cũng khác nhau ở từng thời điểm.",
+        "head": "Lượng dịch tiết ra",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Thay đổi theo thời điểm",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Có khi nó chỉ là một lượng nhỏ rất loãng, có lúc tiết nhiều và đặc hơn.",
+        "head": "Lượng dịch tiết ra",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Thay đổi theo thời điểm",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Tuy nhiên, sẽ là bất thường khi âm đạo của bạn có các triệu chứng dưới đây, bởi đó là dấu hiệu cho thấy bạn đang bị viêm nhiễm vùng kín:",
+        "head": "Các triệu chứng dưới đây",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm nhiễm vùng kín",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Thay đổi màu sắc, mùi hoặc lượng dịch tiết ra từ âm đạo: dịch màu vàng hoặc trắng đục, có mùi hôi, ra rất nhiều;",
+        "head": "Thay đổi màu sắc, mùi hoặc lượng dịch tiết ra từ âm đạo: dịch màu vàng hoặc trắng đục, có mùi hôi, ra rất nhiều",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm nhiễm vùng kín",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ngứa hoặc kích ứng âm đạo;",
+        "head": "Ngứa hoặc kích ứng âm đạo",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm nhiễm vùng kín",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đau khi giao hợp;",
+        "head": "Đau khi giao hợp",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm nhiễm vùng kín",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Rát, buốt mỗi lần đi tiểu;",
+        "head": "Rát, buốt mỗi lần đi tiểu",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm nhiễm vùng kín",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Chảy máu âm đạo nhẹ.",
+        "head": "Chảy máu âm đạo nhẹ",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm nhiễm vùng kín",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Hãy đi khám bác sĩ ngay nếu bạn xuất hiện những triệu chứng trên, nhất là khi:",
+        "head": "Những triệu chứng trên",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm nhiễm vùng kín",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bạn từng bị nhiễm trùng âm đạo;",
+        "head": "Nhiễm trùng âm đạo",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Viêm nhiễm vùng kín",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bạn đã hoặc đang quan hệ tình dục không an toàn: quan hệ với nhiều bạn tình, không dùng biện pháp bảo vệ STD khi quan hệ, quan hệ đường miệng hoặc hậu môn…",
+        "head": "Quan hệ tình dục không an toàn",
+        "head_type": "lifestyle",
+        "relation": "causes",
+        "tail": "Viêm nhiễm vùng kín",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bạn đã hoàn thành một đợt điều trị viêm âm đạo bằng thuốc chống nấm men không kê đơn, nhưng các triệu chứng viêm không hết hẳn;",
+        "head": "Thuốc chống nấm men không kê đơn",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Viêm âm đạo",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bạn đang bị sốt, ớn lạnh hoặc đau vùng chậu.",
+        "head": "Sốt, ớn lạnh hoặc đau vùng chậu",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm nhiễm vùng kín",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tiết dịch âm đạo bất thường cùng với biểu hiện đau vùng chậu, sốt… cho thấy bạn có khả năng bị bệnh phụ khoa",
+        "head": "Tiết dịch âm đạo bất thường cùng với biểu hiện đau vùng chậu, sốt",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Bệnh phụ khoa",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nhiễm trùng âm đạo do nấm men là bệnh lý gây ra bởi một loài nấm có tên candida.",
+        "head": "Nhiễm trùng âm đạo do nấm men",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Loài nấm có tên candida",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Không chỉ có môi trường âm đạo, candida còn sống trong miệng và đường tiêu hóa của cả nam và nữ.",
+        "head": "Candida",
+        "head_type": "cause",
+        "relation": "locatedIn",
+        "tail": "Miệng và đường tiêu hóa của cả nam và nữ",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Việc nấm men hiện diện trong môi trường âm đạo là hết sức bình thường.",
+        "head": "Nấm men",
+        "head_type": "cause",
+        "relation": "locatedIn",
+        "tail": "Môi trường âm đạo",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Vậy, yếu tố nào tác động khiến chúng gây ra hiện tượng nhiễm trùng?",
+        "head": "Yếu tố tác động",
+        "head_type": "cause",
+        "relation": "causes",
+        "tail": "Nhiễm trùng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Câu trả lời là: hiện tượng nhiễm trùng xảy ra khi số lượng nấm candida tăng lên đáng kể sau một tác động từ bên ngoài.",
+        "head": "Số lượng nấm candida tăng lên đáng kể",
+        "head_type": "cause",
+        "relation": "causes",
+        "tail": "Nhiễm trùng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ví dụ, một phụ nữ bị nhiễm khuẩn đường tiết niệu và phải sử dụng thuốc kháng sinh để điều trị.",
+        "head": "Nhiễm khuẩn đường tiết niệu",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Thuốc kháng sinh",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Những loại thuốc này là thủ phạm tiêu diệt các vi khuẩn “thân thiện” với âm đạo, có nhiệm vụ giữ cho nấm men ở trạng thái cân bằng.",
+        "head": "Thuốc kháng sinh",
+        "head_type": "treatment",
+        "relation": "affects",
+        "tail": "Vi khuẩn “thân thiện” với âm đạo",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Kết quả là, nấm men phát triển vượt mức bình thường và gây ra hiện tượng nhiễm trùng.",
+        "head": "Nấm men phát triển vượt mức bình thường",
+        "head_type": "cause",
+        "relation": "causes",
+        "tail": "Nhiễm trùng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ngoài kháng sinh, những yếu tố có thể làm đảo lộn sự cân bằng này bao gồm mang thai, sự thay đổi nồng độ hormone và bệnh đái tháo đường.",
+        "head": "Mang thai, sự thay đổi nồng độ hormone và bệnh đái tháo đường",
+        "head_type": "cause",
+        "relation": "causes",
+        "tail": "Nhiễm trùng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Triệu chứng dễ nhận biết của viêm âm đạo do nấm men là âm đạo tiết dịch đặc, màu trắng ngà và không có mùi.",
+        "head": "Âm đạo tiết dịch đặc, màu trắng ngà và không có mùi",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm âm đạo do nấm men",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ngoài ra, bệnh còn khiến âm đạo cũng như âm hộ ngứa và đỏ, đôi khi sưng tấy cả trước khi bắt đầu tiết dịch.",
+        "head": "Âm đạo cũng như âm hộ ngứa và đỏ, đôi khi sưng tấy",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm âm đạo do nấm men",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Vùng da trên âm hộ cũng trở nên khô rát, khiến cả khu vực âm đạo bị nóng, buốt mỗi khi đi tiểu.",
+        "head": "Vùng da trên âm hộ khô rát, khiến cả khu vực âm đạo bị nóng, buốt mỗi khi đi tiểu",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm âm đạo do nấm men",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Viêm do vi khuẩn (BV) là bệnh nhiễm trùng âm đạo phổ biến nhất ở phụ nữ trong độ tuổi sinh sản (3).",
+        "head": "Viêm do vi khuẩn (BV)",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Nhiễm trùng âm đạo",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đây là căn bệnh gây ra bởi sự kết hợp của một số vi khuẩn thường sống trong âm đạo.",
+        "head": "Sự kết hợp của một số vi khuẩn thường sống trong âm đạo",
+        "head_type": "cause",
+        "relation": "causes",
+        "tail": "Viêm do vi khuẩn (BV)",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tương tự như nấm candida, những vi khuẩn này phát triển quá mức, làm cho sự cân bằng pH âm đạo bị rối loạn và khiến toàn bộ khu vực này viêm nhiễm.",
+        "head": "Vi khuẩn phát triển quá mức, làm cho sự cân bằng pH âm đạo bị rối loạn",
+        "head_type": "cause",
+        "relation": "causes",
+        "tail": "Viêm nhiễm",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi bị âm đạo bị viêm do vi khuẩn, bạn sẽ cảm nhận được dịch âm đạo có mùi bất thường (thường là mùi tanh), loãng và có màu trắng đục.",
+        "head": "Dịch âm đạo có mùi bất thường (thường là mùi tanh), loãng và có màu trắng đục",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm do vi khuẩn (BV)",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Mùi này càng trở nên rõ ràng hơn sau khi giao hợp.",
+        "head": "Giao hợp",
+        "head_type": "lifestyle",
+        "relation": "aggravatedBy",
+        "tail": "Mùi dịch âm đạo",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Đỏ hoặc ngứa âm đạo không phải là triệu chứng thường gặp nhất của bệnh viêm nhiễm âm đạo do vi khuẩn, trừ khi người bệnh bị đồng nhiễm BV và nấm men.",
+        "head": "Đỏ hoặc ngứa âm đạo",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm nhiễm âm đạo do vi khuẩn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Thậm chí, một số bệnh nhân còn không có triệu chứng gì cho đến khi đi khám phụ khoa định kỳ.",
+        "head": "Không có triệu chứng",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm nhiễm âm đạo do vi khuẩn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "BV không phải bệnh nhiễm trùng lây truyền qua đường tình dục, nhưng nó thường gặp ở những người có hoạt động tình dục đều đặn.",
+        "head": "Hoạt động tình dục đều đặn",
+        "head_type": "lifestyle",
+        "relation": "associatedWith",
+        "tail": "Viêm do vi khuẩn (BV)",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các yếu tố nguy cơ khiến tình trạng viêm do vi khuẩn bùng phát thường là:",
+        "head": "Các yếu tố nguy cơ",
+        "head_type": "cause",
+        "relation": "causes",
+        "tail": "Viêm do vi khuẩn (BV)",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Giao hợp với nhiều bạn tình",
+        "head": "Giao hợp với nhiều bạn tình",
+        "head_type": "lifestyle",
+        "relation": "causes",
+        "tail": "Viêm do vi khuẩn (BV)",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Thường xuyên thụt rửa âm đạo",
+        "head": "Thường xuyên thụt rửa âm đạo",
+        "head_type": "lifestyle",
+        "relation": "causes",
+        "tail": "Viêm do vi khuẩn (BV)",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Hút thuốc lá",
+        "head": "Hút thuốc lá",
+        "head_type": "lifestyle",
+        "relation": "causes",
+        "tail": "Viêm do vi khuẩn (BV)",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Vì BV là bệnh lý gây ra bởi vi khuẩn chứ không phải nấm men, cho nên, các loại thuốc để điều trị viêm âm đạo do nấm men hoàn toàn vô tác dụng với BV.",
+        "head": "Thuốc để điều trị viêm âm đạo do nấm men",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Viêm do vi khuẩn (BV)",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Không phải lúc nào cũng có thể nhìn thấy mụn cóc do HPV bằng mắt thường, và virus HPV chỉ được phát hiện khi thực hiện xét nghiệm Pap (một xét nghiệm để tầm soát và chẩn đoán ung thư cổ tử cung).",
+        "head": "mụn cóc do HPV",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "xét nghiệm Pap",
+        "tail_type": "test"
+    },
+    {
+        "text": "Không phải lúc nào cũng có thể nhìn thấy mụn cóc do HPV bằng mắt thường, và virus HPV chỉ được phát hiện khi thực hiện xét nghiệm Pap (một xét nghiệm để tầm soát và chẩn đoán ung thư cổ tử cung).",
+        "head": "xét nghiệm Pap",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "ung thư cổ tử cung",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Hiện tượng này không hiếm gặp: một phụ nữ có thể bị ngứa, rát, thậm chí tiết dịch âm đạo nhiều nhưng khi thăm khám thì không phát hiện viêm nhiễm vùng kín. Nguyên nhân dẫn tới tình trạng trên là do cơ thể người bệnh phản ứng, dị ứng hoặc kích ứng bởi thuốc xịt, dung dịch thụt rửa âm đạo hoặc tampon, cốc nguyệt san, sản phẩm diệt tinh trùng&#8230; Vùng da xung quanh âm đạo cũng có thể nhạy cảm với xà phòng thơm, kem dưỡng da, chất bôi trơn, bột giặt, nước xả vải&#8230; Cuối cùng, việc sử dụng các sản phẩm khử mùi, ngăn ngứa bôi ngoài da trong thời gian dài cũng khiến tình trạng viêm âm đạo bùng phát.",
+        "head": "ngứa",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "viêm nhiễm vùng kín",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Hiện tượng này không hiếm gặp: một phụ nữ có thể bị ngứa, rát, thậm chí tiết dịch âm đạo nhiều nhưng khi thăm khám thì không phát hiện viêm nhiễm vùng kín. Nguyên nhân dẫn tới tình trạng trên là do cơ thể người bệnh phản ứng, dị ứng hoặc kích ứng bởi thuốc xịt, dung dịch thụt rửa âm đạo hoặc tampon, cốc nguyệt san, sản phẩm diệt tinh trùng&#8230; Vùng da xung quanh âm đạo cũng có thể nhạy cảm với xà phòng thơm, kem dưỡng da, chất bôi trơn, bột giặt, nước xả vải&#8230; Cuối cùng, việc sử dụng các sản phẩm khử mùi, ngăn ngứa bôi ngoài da trong thời gian dài cũng khiến tình trạng viêm âm đạo bùng phát.",
+        "head": "rát",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "viêm nhiễm vùng kín",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Hiện tượng này không hiếm gặp: một phụ nữ có thể bị ngứa, rát, thậm chí tiết dịch âm đạo nhiều nhưng khi thăm khám thì không phát hiện viêm nhiễm vùng kín. Nguyên nhân dẫn tới tình trạng trên là do cơ thể người bệnh phản ứng, dị ứng hoặc kích ứng bởi thuốc xịt, dung dịch thụt rửa âm đạo hoặc tampon, cốc nguyệt san, sản phẩm diệt tinh trùng&#8230; Vùng da xung quanh âm đạo cũng có thể nhạy cảm với xà phòng thơm, kem dưỡng da, chất bôi trơn, bột giặt, nước xả vải&#8230; Cuối cùng, việc sử dụng các sản phẩm khử mùi, ngăn ngứa bôi ngoài da trong thời gian dài cũng khiến tình trạng viêm âm đạo bùng phát.",
+        "head": "tiết dịch âm đạo nhiều",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "viêm nhiễm vùng kín",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Hiện tượng này không hiếm gặp: một phụ nữ có thể bị ngứa, rát, thậm chí tiết dịch âm đạo nhiều nhưng khi thăm khám thì không phát hiện viêm nhiễm vùng kín. Nguyên nhân dẫn tới tình trạng trên là do cơ thể người bệnh phản ứng, dị ứng hoặc kích ứng bởi thuốc xịt, dung dịch thụt rửa âm đạo hoặc tampon, cốc nguyệt san, sản phẩm diệt tinh trùng&#8230; Vùng da xung quanh âm đạo cũng có thể nhạy cảm với xà phòng thơm, kem dưỡng da, chất bôi trơn, bột giặt, nước xả vải&#8230; Cuối cùng, việc sử dụng các sản phẩm khử mùi, ngăn ngứa bôi ngoài da trong thời gian dài cũng khiến tình trạng viêm âm đạo bùng phát.",
+        "head": "thuốc xịt",
+        "head_type": "treatment",
+        "relation": "causedBy",
+        "tail": "viêm nhiễm vùng kín",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Hiện tượng này không hiếm gặp: một phụ nữ có thể bị ngứa, rát, thậm chí tiết dịch âm đạo nhiều nhưng khi thăm khám thì không phát hiện viêm nhiễm vùng kín. Nguyên nhân dẫn tới tình trạng trên là do cơ thể người bệnh phản ứng, dị ứng hoặc kích ứng bởi thuốc xịt, dung dịch thụt rửa âm đạo hoặc tampon, cốc nguyệt san, sản phẩm diệt tinh trùng&#8230; Vùng da xung quanh âm đạo cũng có thể nhạy cảm với xà phòng thơm, kem dưỡng da, chất bôi trơn, bột giặt, nước xả vải&#8230; Cuối cùng, việc sử dụng các sản phẩm khử mùi, ngăn ngứa bôi ngoài da trong thời gian dài cũng khiến tình trạng viêm âm đạo bùng phát.",
+        "head": "dung dịch thụt rửa âm đạo",
+        "head_type": "treatment",
+        "relation": "causedBy",
+        "tail": "viêm nhiễm vùng kín",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Hiện tượng này không hiếm gặp: một phụ nữ có thể bị ngứa, rát, thậm chí tiết dịch âm đạo nhiều nhưng khi thăm khám thì không phát hiện viêm nhiễm vùng kín. Nguyên nhân dẫn tới tình trạng trên là do cơ thể người bệnh phản ứng, dị ứng hoặc kích ứng bởi thuốc xịt, dung dịch thụt rửa âm đạo hoặc tampon, cốc nguyệt san, sản phẩm diệt tinh trùng&#8230; Vùng da xung quanh âm đạo cũng có thể nhạy cảm với xà phòng thơm, kem dưỡng da, chất bôi trơn, bột giặt, nước xả vải&#8230; Cuối cùng, việc sử dụng các sản phẩm khử mùi, ngăn ngứa bôi ngoài da trong thời gian dài cũng khiến tình trạng viêm âm đạo bùng phát.",
+        "head": "tampon",
+        "head_type": "treatment",
+        "relation": "causedBy",
+        "tail": "viêm nhiễm vùng kín",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Hiện tượng này không hiếm gặp: một phụ nữ có thể bị ngứa, rát, thậm chí tiết dịch âm đạo nhiều nhưng khi thăm khám thì không phát hiện viêm nhiễm vùng kín. Nguyên nhân dẫn tới tình trạng trên là do cơ thể người bệnh phản ứng, dị ứng hoặc kích ứng bởi thuốc xịt, dung dịch thụt rửa âm đạo hoặc tampon, cốc nguyệt san, sản phẩm diệt tinh trùng&#8230; Vùng da xung quanh âm đạo cũng có thể nhạy cảm với xà phòng thơm, kem dưỡng da, chất bôi trơn, bột giặt, nước xả vải&#8230; Cuối cùng, việc sử dụng các sản phẩm khử mùi, ngăn ngứa bôi ngoài da trong thời gian dài cũng khiến tình trạng viêm âm đạo bùng phát.",
+        "head": "cốc nguyệt san",
+        "head_type": "treatment",
+        "relation": "causedBy",
+        "tail": "viêm nhiễm vùng kín",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Hiện tượng này không hiếm gặp: một phụ nữ có thể bị ngứa, rát, thậm chí tiết dịch âm đạo nhiều nhưng khi thăm khám thì không phát hiện viêm nhiễm vùng kín. Nguyên nhân dẫn tới tình trạng trên là do cơ thể người bệnh phản ứng, dị ứng hoặc kích ứng bởi thuốc xịt, dung dịch thụt rửa âm đạo hoặc tampon, cốc nguyệt san, sản phẩm diệt tinh trùng&#8230; Vùng da xung quanh âm đạo cũng có thể nhạy cảm với xà phòng thơm, kem dưỡng da, chất bôi trơn, bột giặt, nước xả vải&#8230; Cuối cùng, việc sử dụng các sản phẩm khử mùi, ngăn ngứa bôi ngoài da trong thời gian dài cũng khiến tình trạng viêm âm đạo bùng phát.",
+        "head": "sản phẩm diệt tinh trùng",
+        "head_type": "treatment",
+        "relation": "causedBy",
+        "tail": "viêm nhiễm vùng kín",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Hiện tượng này không hiếm gặp: một phụ nữ có thể bị ngứa, rát, thậm chí tiết dịch âm đạo nhiều nhưng khi thăm khám thì không phát hiện viêm nhiễm vùng kín. Nguyên nhân dẫn tới tình trạng trên là do cơ thể người bệnh phản ứng, dị ứng hoặc kích ứng bởi thuốc xịt, dung dịch thụt rửa âm đạo hoặc tampon, cốc nguyệt san, sản phẩm diệt tinh trùng&#8230; Vùng da xung quanh âm đạo cũng có thể nhạy cảm với xà phòng thơm, kem dưỡng da, chất bôi trơn, bột giặt, nước xả vải&#8230; Cuối cùng, việc sử dụng các sản phẩm khử mùi, ngăn ngứa bôi ngoài da trong thời gian dài cũng khiến tình trạng viêm âm đạo bùng phát.",
+        "head": "xà phòng thơm",
+        "head_type": "treatment",
+        "relation": "causedBy",
+        "tail": "viêm nhiễm vùng kín",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Hiện tượng này không hiếm gặp: một phụ nữ có thể bị ngứa, rát, thậm chí tiết dịch âm đạo nhiều nhưng khi thăm khám thì không phát hiện viêm nhiễm vùng kín. Nguyên nhân dẫn tới tình trạng trên là do cơ thể người bệnh phản ứng, dị ứng hoặc kích ứng bởi thuốc xịt, dung dịch thụt rửa âm đạo hoặc tampon, cốc nguyệt san, sản phẩm diệt tinh trùng&#8230; Vùng da xung quanh âm đạo cũng có thể nhạy cảm với xà phòng thơm, kem dưỡng da, chất bôi trơn, bột giặt, nước xả vải&#8230; Cuối cùng, việc sử dụng các sản phẩm khử mùi, ngăn ngứa bôi ngoài da trong thời gian dài cũng khiến tình trạng viêm âm đạo bùng phát.",
+        "head": "kem dưỡng da",
+        "head_type": "treatment",
+        "relation": "causedBy",
+        "tail": "viêm nhiễm vùng kín",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Hiện tượng này không hiếm gặp: một phụ nữ có thể bị ngứa, rát, thậm chí tiết dịch âm đạo nhiều nhưng khi thăm khám thì không phát hiện viêm nhiễm vùng kín. Nguyên nhân dẫn tới tình trạng trên là do cơ thể người bệnh phản ứng, dị ứng hoặc kích ứng bởi thuốc xịt, dung dịch thụt rửa âm đạo hoặc tampon, cốc nguyệt san, sản phẩm diệt tinh trùng&#8230; Vùng da xung quanh âm đạo cũng có thể nhạy cảm với xà phòng thơm, kem dưỡng da, chất bôi trơn, bột giặt, nước xả vải&#8230; Cuối cùng, việc sử dụng các sản phẩm khử mùi, ngăn ngứa bôi ngoài da trong thời gian dài cũng khiến tình trạng viêm âm đạo bùng phát.",
+        "head": "chất bôi trơn",
+        "head_type": "treatment",
+        "relation": "causedBy",
+        "tail": "viêm nhiễm vùng kín",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Hiện tượng này không hiếm gặp: một phụ nữ có thể bị ngứa, rát, thậm chí tiết dịch âm đạo nhiều nhưng khi thăm khám thì không phát hiện viêm nhiễm vùng kín. Nguyên nhân dẫn tới tình trạng trên là do cơ thể người bệnh phản ứng, dị ứng hoặc kích ứng bởi thuốc xịt, dung dịch thụt rửa âm đạo hoặc tampon, cốc nguyệt san, sản phẩm diệt tinh trùng&#8230; Vùng da xung quanh âm đạo cũng có thể nhạy cảm với xà phòng thơm, kem dưỡng da, chất bôi trơn, bột giặt, nước xả vải&#8230; Cuối cùng, việc sử dụng các sản phẩm khử mùi, ngăn ngứa bôi ngoài da trong thời gian dài cũng khiến tình trạng viêm âm đạo bùng phát.",
+        "head": "bột giặt",
+        "head_type": "treatment",
+        "relation": "causedBy",
+        "tail": "viêm nhiễm vùng kín",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Hiện tượng này không hiếm gặp: một phụ nữ có thể bị ngứa, rát, thậm chí tiết dịch âm đạo nhiều nhưng khi thăm khám thì không phát hiện viêm nhiễm vùng kín. Nguyên nhân dẫn tới tình trạng trên là do cơ thể người bệnh phản ứng, dị ứng hoặc kích ứng bởi thuốc xịt, dung dịch thụt rửa âm đạo hoặc tampon, cốc nguyệt san, sản phẩm diệt tinh trùng&#8230; Vùng da xung quanh âm đạo cũng có thể nhạy cảm với xà phòng thơm, kem dưỡng da, chất bôi trơn, bột giặt, nước xả vải&#8230; Cuối cùng, việc sử dụng các sản phẩm khử mùi, ngăn ngứa bôi ngoài da trong thời gian dài cũng khiến tình trạng viêm âm đạo bùng phát.",
+        "head": "nước xả vải",
+        "head_type": "treatment",
+        "relation": "causedBy",
+        "tail": "viêm nhiễm vùng kín",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Hiện tượng này không hiếm gặp: một phụ nữ có thể bị ngứa, rát, thậm chí tiết dịch âm đạo nhiều nhưng khi thăm khám thì không phát hiện viêm nhiễm vùng kín. Nguyên nhân dẫn tới tình trạng trên là do cơ thể người bệnh phản ứng, dị ứng hoặc kích ứng bởi thuốc xịt, dung dịch thụt rửa âm đạo hoặc tampon, cốc nguyệt san, sản phẩm diệt tinh trùng&#8230; Vùng da xung quanh âm đạo cũng có thể nhạy cảm với xà phòng thơm, kem dưỡng da, chất bôi trơn, bột giặt, nước xả vải&#8230; Cuối cùng, việc sử dụng các sản phẩm khử mùi, ngăn ngứa bôi ngoài da trong thời gian dài cũng khiến tình trạng viêm âm đạo bùng phát.",
+        "head": "sản phẩm khử mùi",
+        "head_type": "treatment",
+        "relation": "causedBy",
+        "tail": "viêm nhiễm vùng kín",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Hiện tượng này không hiếm gặp: một phụ nữ có thể bị ngứa, rát, thậm chí tiết dịch âm đạo nhiều nhưng khi thăm khám thì không phát hiện viêm nhiễm vùng kín. Nguyên nhân dẫn tới tình trạng trên là do cơ thể người bệnh phản ứng, dị ứng hoặc kích ứng bởi thuốc xịt, dung dịch thụt rửa âm đạo hoặc tampon, cốc nguyệt san, sản phẩm diệt tinh trùng&#8230; Vùng da xung quanh âm đạo cũng có thể nhạy cảm với xà phòng thơm, kem dưỡng da, chất bôi trơn, bột giặt, nước xả vải&#8230; Cuối cùng, việc sử dụng các sản phẩm khử mùi, ngăn ngứa bôi ngoài da trong thời gian dài cũng khiến tình trạng viêm âm đạo bùng phát.",
+        "head": "sản phẩm ngăn ngứa",
+        "head_type": "treatment",
+        "relation": "causedBy",
+        "tail": "viêm nhiễm vùng kín",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các triệu chứng của bệnh lý này là âm đạo tiết dịch nhiều, nhầy, có màu từ vàng đến xanh. Bệnh gặp nhiều nhất ở phụ nữ mãn kinh.",
+        "head": "âm đạo tiết dịch nhiều",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "viêm âm đạo",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các triệu chứng của bệnh lý này là âm đạo tiết dịch nhiều, nhầy, có màu từ vàng đến xanh. Bệnh gặp nhiều nhất ở phụ nữ mãn kinh.",
+        "head": "tiết dịch âm đạo nhầy",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "viêm âm đạo",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các triệu chứng của bệnh lý này là âm đạo tiết dịch nhiều, nhầy, có màu từ vàng đến xanh. Bệnh gặp nhiều nhất ở phụ nữ mãn kinh.",
+        "head": "tiết dịch âm đạo có màu từ vàng đến xanh",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "viêm âm đạo",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các triệu chứng của bệnh lý này là âm đạo tiết dịch nhiều, nhầy, có màu từ vàng đến xanh. Bệnh gặp nhiều nhất ở phụ nữ mãn kinh.",
+        "head": "viêm âm đạo",
+        "head_type": "disease",
+        "relation": "associatedWith",
+        "tail": "phụ nữ mãn kinh",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Tampon và cốc nguyệt san có thể là thủ phạm giấu mặt gây ra hiện tượng viêm không lây nhiễm",
+        "head": "tampon",
+        "head_type": "treatment",
+        "relation": "causedBy",
+        "tail": "viêm không lây nhiễm",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tampon và cốc nguyệt san có thể là thủ phạm giấu mặt gây ra hiện tượng viêm không lây nhiễm",
+        "head": "cốc nguyệt san",
+        "head_type": "treatment",
+        "relation": "causedBy",
+        "tail": "viêm không lây nhiễm",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Viêm teo âm đạo được xem là chứng bệnh của thời kỳ tiền mãn kinh và mãn kinh. Đây là một dạng viêm không lây nhiễm do giảm nội tiết tố, với biểu hiện âm đạo trở nên khô hoặc teo.",
+        "head": "viêm teo âm đạo",
+        "head_type": "disease",
+        "relation": "associatedWith",
+        "tail": "tiền mãn kinh",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Viêm teo âm đạo được xem là chứng bệnh của thời kỳ tiền mãn kinh và mãn kinh. Đây là một dạng viêm không lây nhiễm do giảm nội tiết tố, với biểu hiện âm đạo trở nên khô hoặc teo.",
+        "head": "viêm teo âm đạo",
+        "head_type": "disease",
+        "relation": "associatedWith",
+        "tail": "mãn kinh",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Viêm teo âm đạo được xem là chứng bệnh của thời kỳ tiền mãn kinh và mãn kinh. Đây là một dạng viêm không lây nhiễm do giảm nội tiết tố, với biểu hiện âm đạo trở nên khô hoặc teo.",
+        "head": "viêm teo âm đạo",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "giảm nội tiết tố",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Viêm teo âm đạo được xem là chứng bệnh của thời kỳ tiền mãn kinh và mãn kinh. Đây là một dạng viêm không lây nhiễm do giảm nội tiết tố, với biểu hiện âm đạo trở nên khô hoặc teo.",
+        "head": "âm đạo khô",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "viêm teo âm đạo",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Viêm teo âm đạo được xem là chứng bệnh của thời kỳ tiền mãn kinh và mãn kinh. Đây là một dạng viêm không lây nhiễm do giảm nội tiết tố, với biểu hiện âm đạo trở nên khô hoặc teo.",
+        "head": "âm đạo teo",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "viêm teo âm đạo",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Thủ thuật cắt bỏ buồng trứng, trạng thái cho con bú và sau khi sinh, các loại thuốc như chất ức chế aromatase (sử dụng trong điều trị ung thư vú) hoặc Lupron Depot® (sử dụng trong điều trị lạc nội mạc tử cung) cũng là tác nhân làm sụt giảm đáng kể mức estrogen, gây ra tình trạng teo âm đạo/âm hộ.",
+        "head": "cắt bỏ buồng trứng",
+        "head_type": "treatment",
+        "relation": "causedBy",
+        "tail": "teo âm đạo",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Thủ thuật cắt bỏ buồng trứng, trạng thái cho con bú và sau khi sinh, các loại thuốc như chất ức chế aromatase (sử dụng trong điều trị ung thư vú) hoặc Lupron Depot® (sử dụng trong điều trị lạc nội mạc tử cung) cũng là tác nhân làm sụt giảm đáng kể mức estrogen, gây ra tình trạng teo âm đạo/âm hộ.",
+        "head": "cho con bú",
+        "head_type": "lifestyle",
+        "relation": "causedBy",
+        "tail": "teo âm đạo",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Thủ thuật cắt bỏ buồng trứng, trạng thái cho con bú và sau khi sinh, các loại thuốc như chất ức chế aromatase (sử dụng trong điều trị ung thư vú) hoặc Lupron Depot® (sử dụng trong điều trị lạc nội mạc tử cung) cũng là tác nhân làm sụt giảm đáng kể mức estrogen, gây ra tình trạng teo âm đạo/âm hộ.",
+        "head": "sau khi sinh",
+        "head_type": "lifestyle",
+        "relation": "causedBy",
+        "tail": "teo âm đạo",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Thủ thuật cắt bỏ buồng trứng, trạng thái cho con bú và sau khi sinh, các loại thuốc như chất ức chế aromatase (sử dụng trong điều trị ung thư vú) hoặc Lupron Depot® (sử dụng trong điều trị lạc nội mạc tử cung) cũng là tác nhân làm sụt giảm đáng kể mức estrogen, gây ra tình trạng teo âm đạo/âm hộ.",
+        "head": "chất ức chế aromatase",
+        "head_type": "treatment",
+        "relation": "causedBy",
+        "tail": "teo âm đạo",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Thủ thuật cắt bỏ buồng trứng, trạng thái cho con bú và sau khi sinh, các loại thuốc như chất ức chế aromatase (sử dụng trong điều trị ung thư vú) hoặc Lupron Depot® (sử dụng trong điều trị lạc nội mạc tử cung) cũng là tác nhân làm sụt giảm đáng kể mức estrogen, gây ra tình trạng teo âm đạo/âm hộ.",
+        "head": "Lupron Depot®",
+        "head_type": "treatment",
+        "relation": "causedBy",
+        "tail": "teo âm đạo",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Thủ thuật cắt bỏ buồng trứng, trạng thái cho con bú và sau khi sinh, các loại thuốc như chất ức chế aromatase (sử dụng trong điều trị ung thư vú) hoặc Lupron Depot® (sử dụng trong điều trị lạc nội mạc tử cung) cũng là tác nhân làm sụt giảm đáng kể mức estrogen, gây ra tình trạng teo âm đạo/âm hộ.",
+        "head": "giảm estrogen",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "teo âm đạo",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi bị viêm teo âm đạo, bạn sẽ cảm thấy đau (nhất là khi quan hệ tình dục), ngứa và nóng rát âm đạo, đôi lúc tiểu rắt và thường xuyên.",
+        "head": "đau",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "viêm teo âm đạo",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi bị viêm teo âm đạo, bạn sẽ cảm thấy đau (nhất là khi quan hệ tình dục), ngứa và nóng rát âm đạo, đôi lúc tiểu rắt và thường xuyên.",
+        "head": "ngứa",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "viêm teo âm đạo",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi bị viêm teo âm đạo, bạn sẽ cảm thấy đau (nhất là khi quan hệ tình dục), ngứa và nóng rát âm đạo, đôi lúc tiểu rắt và thường xuyên.",
+        "head": "nóng rát âm đạo",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "viêm teo âm đạo",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi bị viêm teo âm đạo, bạn sẽ cảm thấy đau (nhất là khi quan hệ tình dục), ngứa và nóng rát âm đạo, đôi lúc tiểu rắt và thường xuyên.",
+        "head": "tiểu rắt",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "viêm teo âm đạo",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi bị viêm teo âm đạo, bạn sẽ cảm thấy đau (nhất là khi quan hệ tình dục), ngứa và nóng rát âm đạo, đôi lúc tiểu rắt và thường xuyên.",
+        "head": "tiểu thường xuyên",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "viêm teo âm đạo",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bệnh có thể điều trị bằng các loại thuốc uống cũng như thuốc đặt âm đạo.",
+        "head": "viêm teo âm đạo",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "thuốc uống",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Bệnh có thể điều trị bằng các loại thuốc uống cũng như thuốc đặt âm đạo.",
+        "head": "viêm teo âm đạo",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "thuốc đặt âm đạo",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Có những yếu tố làm tăng nguy cơ tiến triển bệnh viêm nhiễm âm đạo, gồm:",
+        "head": "viêm nhiễm âm đạo",
+        "head_type": "disease",
+        "relation": "aggravatedBy",
+        "tail": "thay đổi nội tiết tố",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Thay đổi nội tiết tố, thường diễn ra khi người phụ nữ mang thai, sử dụng thuốc tránh thai, bước vào giai đoạn tiền mãn kinh/mãn kinh, trải qua cuộc phẫu thuật cắt bỏ buồng trứng…",
+        "head": "thay đổi nội tiết tố",
+        "head_type": "cause",
+        "relation": "associatedWith",
+        "tail": "mang thai",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Thay đổi nội tiết tố, thường diễn ra khi người phụ nữ mang thai, sử dụng thuốc tránh thai, bước vào giai đoạn tiền mãn kinh/mãn kinh, trải qua cuộc phẫu thuật cắt bỏ buồng trứng…",
+        "head": "thay đổi nội tiết tố",
+        "head_type": "cause",
+        "relation": "associatedWith",
+        "tail": "thuốc tránh thai",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Thay đổi nội tiết tố, thường diễn ra khi người phụ nữ mang thai, sử dụng thuốc tránh thai, bước vào giai đoạn tiền mãn kinh/mãn kinh, trải qua cuộc phẫu thuật cắt bỏ buồng trứng…",
+        "head": "thay đổi nội tiết tố",
+        "head_type": "cause",
+        "relation": "associatedWith",
+        "tail": "tiền mãn kinh",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Thay đổi nội tiết tố, thường diễn ra khi người phụ nữ mang thai, sử dụng thuốc tránh thai, bước vào giai đoạn tiền mãn kinh/mãn kinh, trải qua cuộc phẫu thuật cắt bỏ buồng trứng…",
+        "head": "thay đổi nội tiết tố",
+        "head_type": "cause",
+        "relation": "associatedWith",
+        "tail": "mãn kinh",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Thay đổi nội tiết tố, thường diễn ra khi người phụ nữ mang thai, sử dụng thuốc tránh thai, bước vào giai đoạn tiền mãn kinh/mãn kinh, trải qua cuộc phẫu thuật cắt bỏ buồng trứng…",
+        "head": "thay đổi nội tiết tố",
+        "head_type": "cause",
+        "relation": "associatedWith",
+        "tail": "cắt bỏ buồng trứng",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Có những yếu tố làm tăng nguy cơ tiến triển bệnh viêm nhiễm âm đạo, gồm:",
+        "head": "viêm nhiễm âm đạo",
+        "head_type": "disease",
+        "relation": "aggravatedBy",
+        "tail": "sinh hoạt tình dục thường xuyên",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Sinh hoạt tình dục thường xuyên, đặc biệt là giao hợp với nhiều bạn tình, giao hợp không dùng bao cao su bảo vệ.",
+        "head": "sinh hoạt tình dục thường xuyên",
+        "head_type": "lifestyle",
+        "relation": "associatedWith",
+        "tail": "giao hợp với nhiều bạn tình",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Sinh hoạt tình dục thường xuyên, đặc biệt là giao hợp với nhiều bạn tình, giao hợp không dùng bao cao su bảo vệ.",
+        "head": "sinh hoạt tình dục thường xuyên",
+        "head_type": "lifestyle",
+        "relation": "associatedWith",
+        "tail": "giao hợp không dùng bao cao su",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Có những yếu tố làm tăng nguy cơ tiến triển bệnh viêm nhiễm âm đạo, gồm:",
+        "head": "viêm nhiễm âm đạo",
+        "head_type": "disease",
+        "relation": "aggravatedBy",
+        "tail": "nhiễm trùng lây truyền qua đường tình dục",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Có những yếu tố làm tăng nguy cơ tiến triển bệnh viêm nhiễm âm đạo, gồm:",
+        "head": "viêm nhiễm âm đạo",
+        "head_type": "disease",
+        "relation": "aggravatedBy",
+        "tail": "thuốc kháng sinh",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Có những yếu tố làm tăng nguy cơ tiến triển bệnh viêm nhiễm âm đạo, gồm:",
+        "head": "viêm nhiễm âm đạo",
+        "head_type": "disease",
+        "relation": "aggravatedBy",
+        "tail": "steroid",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Có những yếu tố làm tăng nguy cơ tiến triển bệnh viêm nhiễm âm đạo, gồm:",
+        "head": "viêm nhiễm âm đạo",
+        "head_type": "disease",
+        "relation": "aggravatedBy",
+        "tail": "chất diệt tinh trùng",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Có những yếu tố làm tăng nguy cơ tiến triển bệnh viêm nhiễm âm đạo, gồm:",
+        "head": "viêm nhiễm âm đạo",
+        "head_type": "disease",
+        "relation": "aggravatedBy",
+        "tail": "bệnh đái tháo đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Có những yếu tố làm tăng nguy cơ tiến triển bệnh viêm nhiễm âm đạo, gồm:",
+        "head": "viêm nhiễm âm đạo",
+        "head_type": "disease",
+        "relation": "aggravatedBy",
+        "tail": "dung dịch vệ sinh phụ nữ",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Có những yếu tố làm tăng nguy cơ tiến triển bệnh viêm nhiễm âm đạo, gồm:",
+        "head": "viêm nhiễm âm đạo",
+        "head_type": "disease",
+        "relation": "aggravatedBy",
+        "tail": "xịt âm đạo",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Có những yếu tố làm tăng nguy cơ tiến triển bệnh viêm nhiễm âm đạo, gồm:",
+        "head": "viêm nhiễm âm đạo",
+        "head_type": "disease",
+        "relation": "aggravatedBy",
+        "tail": "chất khử mùi âm đạo",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Có những yếu tố làm tăng nguy cơ tiến triển bệnh viêm nhiễm âm đạo, gồm:",
+        "head": "viêm nhiễm âm đạo",
+        "head_type": "disease",
+        "relation": "aggravatedBy",
+        "tail": "thụt rửa âm đạo thường xuyên",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Viêm nhiễm âm đạo là bệnh lý do nhiều loại sinh vật và điều kiện khách quan gây ra.",
+        "head": "Viêm nhiễm âm đạo",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "nhiều loại sinh vật và điều kiện khách quan",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Vì thế, mỗi loại viêm âm đạo sẽ có phương pháp điều trị khác nhau:",
+        "head": "Viêm âm đạo",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "phương pháp điều trị khác nhau",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Đối với loại viêm âm đạo này, bác sĩ sẽ kê đơn thuốc viên metronidazole dùng đường uống, gel metronidazole hoặc kem bôi clindamycin.",
+        "head": "Viêm âm đạo",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "thuốc viên metronidazole dùng đường uống, gel metronidazole hoặc kem bôi clindamycin",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Viêm do vi khuẩn: Đối với loại viêm âm đạo này, bác sĩ sẽ kê đơn thuốc viên metronidazole dùng đường uống, gel metronidazole hoặc kem bôi clindamycin.",
+        "head": "Viêm do vi khuẩn",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "thuốc viên metronidazole dùng đường uống, gel metronidazole hoặc kem bôi clindamycin",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Nhiễm trùng nấm men: Bệnh thường được điều trị bằng thuốc bôi hoặc kem chống nấm không kê đơn, chẳng hạn như miconazole, clotrimazole, butoconazole hoặc tioconazole.",
+        "head": "Nhiễm trùng nấm men",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "thuốc bôi hoặc kem chống nấm không kê đơn, chẳng hạn như miconazole, clotrimazole, butoconazole hoặc tioconazole",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Bác sĩ cũng có thể kê toa thuốc kháng nấm, chẳng hạn như fluconazole.",
+        "head": "Nhiễm trùng nấm men",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "thuốc kháng nấm, chẳng hạn như fluconazole",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Nhiễm trùng trichomonas: Thuốc được chỉ định là metronidazole hoặc tinidazole.",
+        "head": "Nhiễm trùng trichomonas",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "metronidazole hoặc tinidazole",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Viêm teo âm đạo: Estrogen - ở dạng kem, viên hoặc vòng đặt âm đạo - sẽ giúp cải thiện hiệu quả tình trạng này.",
+        "head": "Viêm teo âm đạo",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "Estrogen - ở dạng kem, viên hoặc vòng đặt âm đạo",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Viêm không do nhiễm trùng: Để điều trị bạn cần xác định chính xác tác nhân gây kích ứng để tránh xa nó.",
+        "head": "Viêm không do nhiễm trùng",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "tác nhân gây kích ứng",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Những tác nhân này có thể là dung dịch vệ sinh, bột giặt, nước xả vải, băng vệ sinh, tampon…",
+        "head": "Viêm không do nhiễm trùng",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "dung dịch vệ sinh, bột giặt, nước xả vải, băng vệ sinh, tampon",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Để phòng ngừa viêm âm đạo nói riêng và viêm nhiễm vùng kín nói chung, bạn cần thực hiện:",
+        "head": "Viêm âm đạo",
+        "head_type": "disease",
+        "relation": "preventedBy",
+        "tail": "thực hiện các biện pháp phòng ngừa",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Tránh tắm bồn, nhất là bồn nước nóng và bồn tạo sóng.",
+        "head": "Viêm âm đạo",
+        "head_type": "disease",
+        "relation": "preventedBy",
+        "tail": "tắm bồn, nhất là bồn nước nóng và bồn tạo sóng",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Thay vì vậy, hãy tắm bằng vòi hoa sen.",
+        "head": "Viêm âm đạo",
+        "head_type": "disease",
+        "relation": "preventedBy",
+        "tail": "tắm bằng vòi hoa sen",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Xả sạch xà phòng/sữa tắm khỏi vùng kín sau khi tắm.",
+        "head": "Viêm âm đạo",
+        "head_type": "disease",
+        "relation": "preventedBy",
+        "tail": "xả sạch xà phòng/sữa tắm khỏi vùng kín sau khi tắm",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Không sử dụng xà phòng có tính tẩy rửa mạnh, chẳng hạn như xà phòng có tác dụng khử mùi hoặc kháng khuẩn, gel tắm tẩy tế bào chết dạng hạt…",
+        "head": "Viêm âm đạo",
+        "head_type": "disease",
+        "relation": "preventedBy",
+        "tail": "sử dụng xà phòng có tính tẩy rửa mạnh, chẳng hạn như xà phòng có tác dụng khử mùi hoặc kháng khuẩn, gel tắm tẩy tế bào chết dạng hạt",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Luôn giữ vùng kín khô ráo để tránh kích ứng.",
+        "head": "Viêm âm đạo",
+        "head_type": "disease",
+        "relation": "preventedBy",
+        "tail": "giữ vùng kín khô ráo",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Lau từ trước ra sau sau khi đi vệ sinh: Việc làm này nhằm tránh lây lan vi khuẩn từ hậu môn vào âm đạo.",
+        "head": "Viêm âm đạo",
+        "head_type": "disease",
+        "relation": "preventedBy",
+        "tail": "lau từ trước ra sau sau khi đi vệ sinh",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Đừng thụt rửa: Vùng kín của phụ nữ không cần biện pháp làm sạch ngoài việc tắm rửa hàng ngày.",
+        "head": "Viêm âm đạo",
+        "head_type": "disease",
+        "relation": "preventedBy",
+        "tail": "thụt rửa",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Việc thụt rửa nhiều lần chẳng những không có ích gì cho tình trạng nhiễm trùng âm đạo mà còn tiêu diệt các sinh vật có lợi cư trú trong âm đạo, đồng thời làm tăng nguy cơ viêm nhiễm vùng kín.",
+        "head": "Viêm âm đạo",
+        "head_type": "disease",
+        "relation": "aggravatedBy",
+        "tail": "thụt rửa",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Sử dụng bao cao su: Cả bao cao su dành cho nam và nữ đều giúp bạn tránh bị nhiễm trùng lây lan khi quan hệ tình dục.",
+        "head": "Viêm âm đạo",
+        "head_type": "disease",
+        "relation": "preventedBy",
+        "tail": "sử dụng bao cao su",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Mặc đồ lót bằng vải cotton: Nấm men phát triển rất mạnh trong môi trường ẩm ướt.",
+        "head": "Viêm âm đạo",
+        "head_type": "disease",
+        "relation": "preventedBy",
+        "tail": "mặc đồ lót bằng vải cotton",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Vải cotton thoáng mát, thấm hút tốt nên sẽ tạo ra môi trường thông thoáng cho vùng kín, hạn chế sự phát triển của nấm và vi khuẩn gây bệnh.",
+        "head": "Viêm âm đạo",
+        "head_type": "disease",
+        "relation": "preventedBy",
+        "tail": "mặc đồ lót bằng vải cotton",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Sử dụng bao cao su là biện pháp phòng tránh viêm âm đạo lây qua đường tình dục hữu hiệu",
+        "head": "Viêm âm đạo",
+        "head_type": "disease",
+        "relation": "preventedBy",
+        "tail": "sử dụng bao cao su",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Hầu hết các trường hợp mắc bệnh không gây ra vấn đề nghiêm trọng cho sức khỏe khi được điều trị đúng cách.",
+        "head": "Viêm âm đạo",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "điều trị đúng cách",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Ngược lại, nếu không chữa trị dứt điểm, nhiễm trùng âm đạo có thể lây lan sang các cơ quan vùng chậu khác, gây nên tình trạng viêm vùng chậu (PID).",
+        "head": "Viêm âm đạo",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "các cơ quan vùng chậu",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Ngoài ra, phụ nữ có âm đạo bị viêm nhiễm quá lâu sẽ tăng khả năng mắc các bệnh STD, chẳng hạn như chlamydia và bệnh lậu.",
+        "head": "Viêm âm đạo",
+        "head_type": "disease",
+        "relation": "associatedWith",
+        "tail": "các bệnh STD, chẳng hạn như chlamydia và bệnh lậu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Cuối cùng, có nhiều khả năng bạn sẽ sinh con thiếu tháng nếu nhiễm BV (viêm âm đạo do vi khuẩn) khi đang mang thai.",
+        "head": "Viêm âm đạo do vi khuẩn",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "sinh con thiếu tháng",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Em bé sinh non thường nhẹ cân, dễ gặp phải các vấn đề sức khỏe về hô hấp, tuần hoàn, tiêu hóa, thần kinh… ảnh hưởng đến sự phát triển thể chất và trí não sau này.",
+        "head": "Sinh non",
+        "head_type": "symptom",
+        "relation": "affects",
+        "tail": "sự phát triển thể chất và trí não",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Viêm vùng kín kéo dài, khí hư ra nhiều sẽ làm tắc nghẽn ống dẫn trứng, cản trở trứng gặp tinh trùng.",
+        "head": "Viêm vùng kín",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "ống dẫn trứng",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Thêm vào đó, môi trường âm đạo bị “phá hủy” sẽ trở nên mất cân bằng.",
+        "head": "Viêm vùng kín",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "môi trường âm đạo",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Dù tinh trùng có bơi vào được cũng không thể sống ở đây.",
+        "head": "Viêm vùng kín",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "tinh trùng",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Do vậy, khả năng mang thai sẽ bị suy giảm nghiêm trọng ở những phụ nữ bị viêm nhiễm phụ khoa.",
+        "head": "Viêm vùng kín",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "khả năng mang thai",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Nếu bạn có suy nghĩ bệnh viêm nhiễm âm đạo chỉ tìm đến những phụ nữ đã quan hệ tình dục, hãy thay đổi ngay.",
+        "head": "Viêm nhiễm âm đạo",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "quan hệ tình dục",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Bởi lẽ, ngay cả trẻ em nữ ở độ tuổi dậy thì, chưa từng sinh hoạt tình dục cũng có nguy cơ bị các bệnh phụ khoa, trong đó có viêm âm đạo.",
+        "head": "Viêm âm đạo",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "trẻ em nữ ở độ tuổi dậy thì",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Nguyên nhân là do thói quen vệ sinh vùng kín không đúng cách, mặc đồ lót quá chật, sử dụng băng vệ sinh kém chất lượng, tự ý dùng các loại thuốc đặt âm đạo mà không hỏi ý kiến bác sĩ…",
+        "head": "Viêm âm đạo",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "thói quen vệ sinh vùng kín không đúng cách, mặc đồ lót quá chật, sử dụng băng vệ sinh kém chất lượng, tự ý dùng các loại thuốc đặt âm đạo mà không hỏi ý kiến bác sĩ",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Nếu bệnh viêm nhiễm vùng kín của bạn là do các tác nhân lây truyền qua đường tình dục gây ra, cần tuyệt đối kiêng giao hợp trong giai đoạn điều trị bệnh.",
+        "head": "Viêm nhiễm vùng kín",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "các tác nhân lây truyền qua đường tình dục",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Quan hệ tình dục trong lúc này chẳng những khiến bạn không thoải mái mà còn làm cho các triệu chứng bệnh trầm trọng hơn.",
+        "head": "Viêm nhiễm vùng kín",
+        "head_type": "disease",
+        "relation": "aggravatedBy",
+        "tail": "quan hệ tình dục",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Ngoài ra, bạn còn có thể lây bệnh cho bạn tình của mình.",
+        "head": "Viêm nhiễm vùng kín",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "lây bệnh cho bạn tình",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Đối với những trường hợp viêm không lây truyền qua đường tình dục, chẳng hạn như nhiễm trùng nấm men mãn tính (nhiễm nấm candida) hay viêm do vi khuẩn, việc giao hợp không khiến triệu chứng bệnh xấu đi.",
+        "head": "Viêm không lây truyền qua đường tình dục",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "giao hợp",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Quy tụ chuyên gia giàu kinh nghiệm và được đầu tư hệ thống máy móc hiện đại, Trung tâm Sản Phụ khoa BVĐK Tâm Anh ra đời với mục tiêu chăm sóc sức khỏe phụ khoa toàn diện cho chị em phụ nữ.",
+        "head": "Trung tâm Sản Phụ khoa BVĐK Tâm Anh",
+        "head_type": "organ",
+        "relation": "locatedIn",
+        "tail": "BVĐK Tâm Anh",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Quy tụ chuyên gia giàu kinh nghiệm và được đầu tư hệ thống máy móc hiện đại, Trung tâm Sản Phụ khoa BVĐK Tâm Anh ra đời với mục tiêu chăm sóc sức khỏe phụ khoa toàn diện cho chị em phụ nữ.",
+        "head": "Trung tâm Sản Phụ khoa BVĐK Tâm Anh",
+        "head_type": "organ",
+        "relation": "relatedTo",
+        "tail": "chăm sóc sức khỏe phụ khoa",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Quy tụ chuyên gia giàu kinh nghiệm và được đầu tư hệ thống máy móc hiện đại, Trung tâm Sản Phụ khoa BVĐK Tâm Anh ra đời với mục tiêu chăm sóc sức khỏe phụ khoa toàn diện cho chị em phụ nữ.",
+        "head": "Trung tâm Sản Phụ khoa BVĐK Tâm Anh",
+        "head_type": "organ",
+        "relation": "treatedBy",
+        "tail": "chuyên gia giàu kinh nghiệm",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Quy tụ chuyên gia giàu kinh nghiệm và được đầu tư hệ thống máy móc hiện đại, Trung tâm Sản Phụ khoa BVĐK Tâm Anh ra đời với mục tiêu chăm sóc sức khỏe phụ khoa toàn diện cho chị em phụ nữ.",
+        "head": "Trung tâm Sản Phụ khoa BVĐK Tâm Anh",
+        "head_type": "organ",
+        "relation": "treatedBy",
+        "tail": "hệ thống máy móc hiện đại",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Nơi đây cung cấp dịch vụ khám, tư vấn và điều trị các bệnh phụ khoa, ngoài",
+        "head": "Trung tâm Sản Phụ khoa BVĐK Tâm Anh",
+        "head_type": "organ",
+        "relation": "treatedBy",
+        "tail": "dịch vụ khám",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Nơi đây cung cấp dịch vụ khám, tư vấn và điều trị các bệnh phụ khoa, ngoài",
+        "head": "Trung tâm Sản Phụ khoa BVĐK Tâm Anh",
+        "head_type": "organ",
+        "relation": "treatedBy",
+        "tail": "dịch vụ tư vấn",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Nơi đây cung cấp dịch vụ khám, tư vấn và điều trị các bệnh phụ khoa, ngoài",
+        "head": "Trung tâm Sản Phụ khoa BVĐK Tâm Anh",
+        "head_type": "organ",
+        "relation": "treatedBy",
+        "tail": "dịch vụ điều trị",
+        "tail_type": "treatment"
+    }
+]

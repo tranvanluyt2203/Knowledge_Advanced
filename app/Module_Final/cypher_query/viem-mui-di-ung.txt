@@ -1,0 +1,630 @@
+
+MERGE (o1:cause {id: 'các_loại_nấm_mốc__phấn_hoa_cause'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_thời_tiết_disease'})
+MERGE (o1)-[r0:causedBy]->(o2)
+SET r0.text = 'Các loại nấm mốc, phấn hoa đặc biệt phát triển khi giao mùa, là yếu tố gây bệnh viêm mũi dị ứng thời tiết thường gặp nhất.'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_thời_tiết_disease'})
+MERGE (o2:lifestyle {id: 'giao_mùa_lifestyle'})
+MERGE (o1)-[r1:aggravatedBy]->(o2)
+SET r1.text = 'Các loại nấm mốc, phấn hoa đặc biệt phát triển khi giao mùa, là yếu tố gây bệnh viêm mũi dị ứng thời tiết thường gặp nhất.'
+
+MERGE (o1:disease {id: 'một_người_disease'})
+MERGE (o2:cause {id: 'phấn_hoa_cause'})
+MERGE (o1)-[r2:aggravatedBy]->(o2)
+SET r2.text = 'Một người có thể dị ứng với một hoặc nhiều loại phấn hoa.'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_lâu_năm_disease'})
+MERGE (o2:cause {id: 'tiếp_xúc_bụi_bẩn_trong_nhà_hay_ngoài_trời__lông_chó_mèo__gián__mọt_và_các_loài_gặm_nhấm_trong_nhà_cause'})
+MERGE (o1)-[r3:causedBy]->(o2)
+SET r3.text = 'Người bị viêm mũi dị ứng lâu năm chủ yếu do tiếp xúc bụi bẩn trong nhà hay ngoài trời, lông chó mèo, gián, mọt và các loài gặm nhấm trong nhà...'
+
+MERGE (o1:disease {id: 'bệnh_lý_này_disease'})
+MERGE (o2:cause {id: 'tiếp_xúc_với_phấn_hoa__bụi_bẩn__nấm_mốc_cause'})
+MERGE (o1)-[r4:causedBy]->(o2)
+SET r4.text = 'Bệnh lý này chỉ xuất hiện khi người bệnh có tiếp xúc với phấn hoa, bụi bẩn, nấm mốc.'
+
+MERGE (o1:symptom {id: 'triệu_chứng_bệnh_symptom'})
+MERGE (o2:lifestyle {id: 'tiếp_xúc_lifestyle'})
+MERGE (o1)-[r5:aggravatedBy]->(o2)
+SET r5.text = 'Khi hết tiếp xúc thì triệu chứng bệnh cũng biến mất.'
+
+MERGE (o1:disease {id: 'dị_ứng_với_thức_ăn_disease'})
+MERGE (o2:food {id: 'thức_ăn_food'})
+MERGE (o1)-[r6:causedBy]->(o2)
+SET r6.text = 'Một số trường hợp có thể dị ứng với thức ăn, gây ra các biểu hiện như nổi mề đay, tiêu chảy, đau bụng...'
+
+MERGE (o1:symptom {id: 'nổi_mề_đay__tiêu_chảy__đau_bụng_symptom'})
+MERGE (o2:disease {id: 'dị_ứng_với_thức_ăn_disease'})
+MERGE (o1)-[r7:isSymptomOf]->(o2)
+SET r7.text = 'Một số trường hợp có thể dị ứng với thức ăn, gây ra các biểu hiện như nổi mề đay, tiêu chảy, đau bụng...'
+
+MERGE (o1:cause {id: 'hóa_chất__bụi_gỗ__bụi_phấn__lông_thú__kim_loại__lông_thú_cause'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o1)-[r8:causedBy]->(o2)
+SET r8.text = 'Một số người phải làm việc ở những nơi có chứa các tác nhân gây dị ứng như hóa chất, bụi gỗ, bụi phấn, lông thú, kim loại, lông thú… cũng có thể mắc bệnh viêm mũi dị ứng.'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o2:symptom {id: 'các_triệu_chứng_symptom'})
+MERGE (o1)-[r9:isSymptomOf]->(o2)
+SET r9.text = 'Nếu các triệu chứng của viêm mũi dị ứng chỉ diễn ra ở một vài thời điểm trong ngày, không ảnh hưởng đến việc ăn, uống, sinh hoạt và giấc ngủ, người bệnh có thể tự vệ sinh mũi tại nhà.'
+
+MERGE (o1:treatment {id: 'tự_vệ_sinh_mũi_tại_nhà_treatment'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o1)-[r10:treatedBy]->(o2)
+SET r10.text = 'Nếu các triệu chứng của viêm mũi dị ứng chỉ diễn ra ở một vài thời điểm trong ngày, không ảnh hưởng đến việc ăn, uống, sinh hoạt và giấc ngủ, người bệnh có thể tự vệ sinh mũi tại nhà.'
+
+MERGE (o1:disease {id: 'viêm_mũi_xoang_nặng_disease'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o1)-[r11:isSymptomOf]->(o2)
+SET r11.text = 'Nếu các triệu chứng diễn ra lâu dài và lặp lại liên tục, ảnh hưởng đến sức khỏe, việc ăn, ngủ, sinh hoạt, người bệnh nên đến bệnh viện để được bác sĩ chẩn đoán và điều trị sớm, tránh việc bệnh kéo dài gây ra những biến chứng viêm mũi xoang nặng, đặc biệt là ở trẻ em.'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o2:symptom {id: 'các_triệu_chứng_diễn_ra_lâu_dài_và_lặp_lại_liên_tục_symptom'})
+MERGE (o1)-[r12:aggravatedBy]->(o2)
+SET r12.text = 'Nếu các triệu chứng diễn ra lâu dài và lặp lại liên tục, ảnh hưởng đến sức khỏe, việc ăn, ngủ, sinh hoạt, người bệnh nên đến bệnh viện để được bác sĩ chẩn đoán và điều trị sớm, tránh việc bệnh kéo dài gây ra những biến chứng viêm mũi xoang nặng, đặc biệt là ở trẻ em.'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o2:treatment {id: 'bác_sĩ_chẩn_đoán_và_điều_trị_sớm_treatment'})
+MERGE (o1)-[r13:treatedBy]->(o2)
+SET r13.text = 'Nếu các triệu chứng diễn ra lâu dài và lặp lại liên tục, ảnh hưởng đến sức khỏe, việc ăn, ngủ, sinh hoạt, người bệnh nên đến bệnh viện để được bác sĩ chẩn đoán và điều trị sớm, tránh việc bệnh kéo dài gây ra những biến chứng viêm mũi xoang nặng, đặc biệt là ở trẻ em.'
+
+MERGE (o1:symptom {id: 'nghẹt_mũi__sưng_và_đau_nhức_hốc_mũi;_ho_nhiều_và_sốt;_trẻ_ăn_uống_kém_hoặc_bỏ_ăn;_sụt_cân__mất_ngủ;_dị_ứng_nặng_đến_mức_phù_nề__thở_khó_symptom'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o1)-[r14:isSymptomOf]->(o2)
+SET r14.text = 'Nếu xuất hiện các triệu chứng nghiêm trọng này thì cần đến bệnh viện khám ngay: Nghẹt mũi, sưng và đau nhức hốc mũi; ho nhiều và sốt; trẻ ăn uống kém hoặc bỏ ăn; sụt cân, mất ngủ; dị ứng nặng đến mức phù nề, thở khó...'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o2:disease {id: 'tiền_sử_dị_ứng_disease'})
+MERGE (o1)-[r15:associatedWith]->(o2)
+SET r15.text = 'Bất cứ ai cũng có thể bị viêm mũi dị ứng nhưng bạn sẽ có nguy cơ mắc bệnh cao hơn nếu người trong gia đình có tiền sử dị ứng.'
+
+MERGE (o1:disease {id: 'bệnh_chàm_da_hoặc_hen_suyễn_disease'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o1)-[r16:associatedWith]->(o2)
+SET r16.text = 'Ngoài ra, nếu bạn bị bệnh chàm da hoặc hen suyễn thì bạn cũng thuộc nhóm nguy cơ này.'
+
+MERGE (o1:cause {id: 'histamin_cause'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o1)-[r17:causedBy]->(o2)
+SET r17.text = 'Nguyên nhân gây viêm mũi dị ứng là do cơ thể giải phóng histamin khi tiếp xúc với các tác nhân dị ứng.'
+
+MERGE (o1:cause {id: 'histamin_cause'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o1)-[r18:causedBy]->(o2)
+SET r18.text = 'Histamin là một chất hóa học tự nhiên giúp bảo vệ cơ thể khỏi tác nhân bên ngoài xâm nhập vô cơ thể nhưng nó lại gây phản ứng quá mức, gây ra tình trạng viêm mũi dị ứng.'
+
+MERGE (o1:cause {id: 'bụi_cause'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o1)-[r19:causedBy]->(o2)
+SET r19.text = 'Các tác nhân gây dị ứng trong nhà bao gồm: bụi, lông chó mèo, lông vải từ quần áo, chăn mền, nước hoa, mỹ phẩm, sữa tắm, xà phòng, nước xả vải, mùi thức ăn, nấm mốc…'
+
+MERGE (o1:cause {id: 'lông_chó_mèo_cause'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o1)-[r20:causedBy]->(o2)
+SET r20.text = 'Các tác nhân gây dị ứng trong nhà bao gồm: bụi, lông chó mèo, lông vải từ quần áo, chăn mền, nước hoa, mỹ phẩm, sữa tắm, xà phòng, nước xả vải, mùi thức ăn, nấm mốc…'
+
+MERGE (o1:cause {id: 'lông_vải_từ_quần_áo_cause'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o1)-[r21:causedBy]->(o2)
+SET r21.text = 'Các tác nhân gây dị ứng trong nhà bao gồm: bụi, lông chó mèo, lông vải từ quần áo, chăn mền, nước hoa, mỹ phẩm, sữa tắm, xà phòng, nước xả vải, mùi thức ăn, nấm mốc…'
+
+MERGE (o1:cause {id: 'nước_hoa_cause'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o1)-[r22:causedBy]->(o2)
+SET r22.text = 'Các tác nhân gây dị ứng trong nhà bao gồm: bụi, lông chó mèo, lông vải từ quần áo, chăn mền, nước hoa, mỹ phẩm, sữa tắm, xà phòng, nước xả vải, mùi thức ăn, nấm mốc…'
+
+MERGE (o1:cause {id: 'mỹ_phẩm_cause'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o1)-[r23:causedBy]->(o2)
+SET r23.text = 'Các tác nhân gây dị ứng trong nhà bao gồm: bụi, lông chó mèo, lông vải từ quần áo, chăn mền, nước hoa, mỹ phẩm, sữa tắm, xà phòng, nước xả vải, mùi thức ăn, nấm mốc…'
+
+MERGE (o1:cause {id: 'sữa_tắm_cause'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o1)-[r24:causedBy]->(o2)
+SET r24.text = 'Các tác nhân gây dị ứng trong nhà bao gồm: bụi, lông chó mèo, lông vải từ quần áo, chăn mền, nước hoa, mỹ phẩm, sữa tắm, xà phòng, nước xả vải, mùi thức ăn, nấm mốc…'
+
+MERGE (o1:cause {id: 'xà_phòng_cause'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o1)-[r25:causedBy]->(o2)
+SET r25.text = 'Các tác nhân gây dị ứng trong nhà bao gồm: bụi, lông chó mèo, lông vải từ quần áo, chăn mền, nước hoa, mỹ phẩm, sữa tắm, xà phòng, nước xả vải, mùi thức ăn, nấm mốc…'
+
+MERGE (o1:cause {id: 'nước_xả_vải_cause'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o1)-[r26:causedBy]->(o2)
+SET r26.text = 'Các tác nhân gây dị ứng trong nhà bao gồm: bụi, lông chó mèo, lông vải từ quần áo, chăn mền, nước hoa, mỹ phẩm, sữa tắm, xà phòng, nước xả vải, mùi thức ăn, nấm mốc…'
+
+MERGE (o1:cause {id: 'mùi_thức_ăn_cause'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o1)-[r27:causedBy]->(o2)
+SET r27.text = 'Các tác nhân gây dị ứng trong nhà bao gồm: bụi, lông chó mèo, lông vải từ quần áo, chăn mền, nước hoa, mỹ phẩm, sữa tắm, xà phòng, nước xả vải, mùi thức ăn, nấm mốc…'
+
+MERGE (o1:cause {id: 'nấm_mốc_cause'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o1)-[r28:causedBy]->(o2)
+SET r28.text = 'Các tác nhân gây dị ứng trong nhà bao gồm: bụi, lông chó mèo, lông vải từ quần áo, chăn mền, nước hoa, mỹ phẩm, sữa tắm, xà phòng, nước xả vải, mùi thức ăn, nấm mốc…'
+
+MERGE (o1:cause {id: 'phấn_hoa_cause'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o1)-[r29:causedBy]->(o2)
+SET r29.text = 'Các tác nhân gây dị ứng trong không khí bao gồm: phấn hoa, lông sâu, bướm, bụi lúa trong mùa gặt, khói, bụi, mùi rác thải, gió, không khí lạnh, mưa…'
+
+MERGE (o1:cause {id: 'lông_sâu_cause'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o1)-[r30:causedBy]->(o2)
+SET r30.text = 'Các tác nhân gây dị ứng trong không khí bao gồm: phấn hoa, lông sâu, bướm, bụi lúa trong mùa gặt, khói, bụi, mùi rác thải, gió, không khí lạnh, mưa…'
+
+MERGE (o1:cause {id: 'bướm_cause'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o1)-[r31:causedBy]->(o2)
+SET r31.text = 'Các tác nhân gây dị ứng trong không khí bao gồm: phấn hoa, lông sâu, bướm, bụi lúa trong mùa gặt, khói, bụi, mùi rác thải, gió, không khí lạnh, mưa…'
+
+MERGE (o1:cause {id: 'bụi_lúa_trong_mùa_gặt_cause'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o1)-[r32:causedBy]->(o2)
+SET r32.text = 'Các tác nhân gây dị ứng trong không khí bao gồm: phấn hoa, lông sâu, bướm, bụi lúa trong mùa gặt, khói, bụi, mùi rác thải, gió, không khí lạnh, mưa…'
+
+MERGE (o1:cause {id: 'khói_cause'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o1)-[r33:causedBy]->(o2)
+SET r33.text = 'Các tác nhân gây dị ứng trong không khí bao gồm: phấn hoa, lông sâu, bướm, bụi lúa trong mùa gặt, khói, bụi, mùi rác thải, gió, không khí lạnh, mưa…'
+
+MERGE (o1:cause {id: 'bụi_cause'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o1)-[r34:causedBy]->(o2)
+SET r34.text = 'Các tác nhân gây dị ứng trong không khí bao gồm: phấn hoa, lông sâu, bướm, bụi lúa trong mùa gặt, khói, bụi, mùi rác thải, gió, không khí lạnh, mưa…'
+
+MERGE (o1:cause {id: 'mùi_rác_thải_cause'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o1)-[r35:causedBy]->(o2)
+SET r35.text = 'Các tác nhân gây dị ứng trong không khí bao gồm: phấn hoa, lông sâu, bướm, bụi lúa trong mùa gặt, khói, bụi, mùi rác thải, gió, không khí lạnh, mưa…'
+
+MERGE (o1:cause {id: 'gió_cause'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o1)-[r36:causedBy]->(o2)
+SET r36.text = 'Các tác nhân gây dị ứng trong không khí bao gồm: phấn hoa, lông sâu, bướm, bụi lúa trong mùa gặt, khói, bụi, mùi rác thải, gió, không khí lạnh, mưa…'
+
+MERGE (o1:cause {id: 'không_khí_lạnh_cause'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o1)-[r37:causedBy]->(o2)
+SET r37.text = 'Các tác nhân gây dị ứng trong không khí bao gồm: phấn hoa, lông sâu, bướm, bụi lúa trong mùa gặt, khói, bụi, mùi rác thải, gió, không khí lạnh, mưa…'
+
+MERGE (o1:cause {id: 'mưa_cause'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o1)-[r38:causedBy]->(o2)
+SET r38.text = 'Các tác nhân gây dị ứng trong không khí bao gồm: phấn hoa, lông sâu, bướm, bụi lúa trong mùa gặt, khói, bụi, mùi rác thải, gió, không khí lạnh, mưa…'
+
+MERGE (o1:cause {id: 'bụi_phấn_ở_trường_học_cause'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o1)-[r39:causedBy]->(o2)
+SET r39.text = 'Các tác nhân gây dị ứng nghề nghiệp bao gồm: bụi phấn ở trường học, hóa chất trong các nhà máy, sợi vải trong các xưởng may, lông động vật trong các lò giết mổ, khói hương nhang trong các đền chùa, bụi xi măng trong các nhà máy vật liệu, bụi gỗ trong các xưởng mộc…'
+
+MERGE (o1:cause {id: 'hóa_chất_trong_các_nhà_máy_cause'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o1)-[r40:causedBy]->(o2)
+SET r40.text = 'Các tác nhân gây dị ứng nghề nghiệp bao gồm: bụi phấn ở trường học, hóa chất trong các nhà máy, sợi vải trong các xưởng may, lông động vật trong các lò giết mổ, khói hương nhang trong các đền chùa, bụi xi măng trong các nhà máy vật liệu, bụi gỗ trong các xưởng mộc…'
+
+MERGE (o1:cause {id: 'sợi_vải_trong_các_xưởng_may_cause'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o1)-[r41:causedBy]->(o2)
+SET r41.text = 'Các tác nhân gây dị ứng nghề nghiệp bao gồm: bụi phấn ở trường học, hóa chất trong các nhà máy, sợi vải trong các xưởng may, lông động vật trong các lò giết mổ, khói hương nhang trong các đền chùa, bụi xi măng trong các nhà máy vật liệu, bụi gỗ trong các xưởng mộc…'
+
+MERGE (o1:cause {id: 'lông_động_vật_trong_các_lò_giết_mổ_cause'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o1)-[r42:causedBy]->(o2)
+SET r42.text = 'Các tác nhân gây dị ứng nghề nghiệp bao gồm: bụi phấn ở trường học, hóa chất trong các nhà máy, sợi vải trong các xưởng may, lông động vật trong các lò giết mổ, khói hương nhang trong các đền chùa, bụi xi măng trong các nhà máy vật liệu, bụi gỗ trong các xưởng mộc…'
+
+MERGE (o1:cause {id: 'khói_hương_nhang_trong_các_đền_chùa_cause'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o1)-[r43:causedBy]->(o2)
+SET r43.text = 'Các tác nhân gây dị ứng nghề nghiệp bao gồm: bụi phấn ở trường học, hóa chất trong các nhà máy, sợi vải trong các xưởng may, lông động vật trong các lò giết mổ, khói hương nhang trong các đền chùa, bụi xi măng trong các nhà máy vật liệu, bụi gỗ trong các xưởng mộc…'
+
+MERGE (o1:cause {id: 'bụi_xi_măng_trong_các_nhà_máy_vật_liệu_cause'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o1)-[r44:causedBy]->(o2)
+SET r44.text = 'Các tác nhân gây dị ứng nghề nghiệp bao gồm: bụi phấn ở trường học, hóa chất trong các nhà máy, sợi vải trong các xưởng may, lông động vật trong các lò giết mổ, khói hương nhang trong các đền chùa, bụi xi măng trong các nhà máy vật liệu, bụi gỗ trong các xưởng mộc…'
+
+MERGE (o1:cause {id: 'bụi_gỗ_trong_các_xưởng_mộc_cause'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o1)-[r45:causedBy]->(o2)
+SET r45.text = 'Các tác nhân gây dị ứng nghề nghiệp bao gồm: bụi phấn ở trường học, hóa chất trong các nhà máy, sợi vải trong các xưởng may, lông động vật trong các lò giết mổ, khói hương nhang trong các đền chùa, bụi xi măng trong các nhà máy vật liệu, bụi gỗ trong các xưởng mộc…'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o2:symptom {id: 'tái_phát_symptom'})
+MERGE (o1)-[r46:associatedWith]->(o2)
+SET r46.text = 'Các yếu tố gây viêm mũi dị ứng tiềm ẩn ở mọi nơi nên chứng bệnh này rất dễ tái phát.'
+
+MERGE (o1:treatment {id: 'xịt_rửa_mũi_treatment'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o1)-[r47:treatedBy]->(o2)
+SET r47.text = 'Những người thường xuyên xịt rửa mũi thì các triệu chứng thường giảm nhẹ hơn.'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o2:symptom {id: 'triệu_chứng_lâm_sàng_symptom'})
+MERGE (o1)-[r48:diagnosedBy]->(o2)
+SET r48.text = 'Bác sĩ có thể dựa trên các triệu chứng lâm sàng người bệnh thường gặp phải, cộng với yếu tố nghề nghiệp, thời tiết, tiền sử bệnh của gia đình để chẩn đoán.'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o2:cause {id: 'yếu_tố_nghề_nghiệp_cause'})
+MERGE (o1)-[r49:diagnosedBy]->(o2)
+SET r49.text = 'Bác sĩ có thể dựa trên các triệu chứng lâm sàng người bệnh thường gặp phải, cộng với yếu tố nghề nghiệp, thời tiết, tiền sử bệnh của gia đình để chẩn đoán.'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o2:cause {id: 'thời_tiết_cause'})
+MERGE (o1)-[r50:diagnosedBy]->(o2)
+SET r50.text = 'Bác sĩ có thể dựa trên các triệu chứng lâm sàng người bệnh thường gặp phải, cộng với yếu tố nghề nghiệp, thời tiết, tiền sử bệnh của gia đình để chẩn đoán.'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o2:cause {id: 'tiền_sử_bệnh_của_gia_đình_cause'})
+MERGE (o1)-[r51:diagnosedBy]->(o2)
+SET r51.text = 'Bác sĩ có thể dựa trên các triệu chứng lâm sàng người bệnh thường gặp phải, cộng với yếu tố nghề nghiệp, thời tiết, tiền sử bệnh của gia đình để chẩn đoán.'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o2:test {id: 'xét_nghiệm_châm_chích_da_test'})
+MERGE (o1)-[r52:diagnosedBy]->(o2)
+SET r52.text = 'Đối với các trường hợp cần xem xét kỹ hơn, bác sĩ có thể cho người bệnh làm xét nghiệm để kiểm tra độ châm chích da bằng cách bôi một số chất lên da để xem cơ thể người bệnh phản ứng với từng chất như thế nào.'
+
+MERGE (o1:symptom {id: 'dị_ứng_symptom'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o1)-[r53:isSymptomOf]->(o2)
+SET r53.text = 'Nếu dị ứng với một chất nào đó, da của người bệnh sẽ xuất hiện dị ứng với một vết đỏ, có thể kèm sưng tấy.'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o2:test {id: 'xét_nghiệm_máu_test'})
+MERGE (o1)-[r54:diagnosedBy]->(o2)
+SET r54.text = 'Xét nghiệm máu hoặc xét nghiệm hấp thụ chất phóng xạ (RAST) phát hiện kháng thể IgE có thể được áp dụng để chẩn đoán viêm mũi dị ứng.'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o2:test {id: 'xét_nghiệm_hấp_thụ_chất_phóng_xạ_(rast)_test'})
+MERGE (o1)-[r55:diagnosedBy]->(o2)
+SET r55.text = 'Xét nghiệm máu hoặc xét nghiệm hấp thụ chất phóng xạ (RAST) phát hiện kháng thể IgE có thể được áp dụng để chẩn đoán viêm mũi dị ứng.'
+
+MERGE (o1:test {id: 'rast_test'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o1)-[r56:diagnosedBy]->(o2)
+SET r56.text = 'RAST đo lượng kháng thể immunoglobulin E đối với các chất gây dị ứng cụ thể trong máu của người bệnh.'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o2:symptom {id: 'niêm_mạc_mũi_thoái_hóa_symptom'})
+MERGE (o1)-[r57:affects]->(o2)
+SET r57.text = 'Viêm mũi dị ứng không được điều trị có thể gây ra các biến chứng như niêm mạc mũi thoái hóa, phù nề gây nghẹt mũi; các cuốn mũi bị quá phát xen kẽ thoái hóa polyp; viêm loét vùng tiền đình mũi; viêm họng, viêm phế quản; viêm xoang; viêm tai giữa.'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o2:symptom {id: 'phù_nề_gây_nghẹt_mũi_symptom'})
+MERGE (o1)-[r58:affects]->(o2)
+SET r58.text = 'Viêm mũi dị ứng không được điều trị có thể gây ra các biến chứng như niêm mạc mũi thoái hóa, phù nề gây nghẹt mũi; các cuốn mũi bị quá phát xen kẽ thoái hóa polyp; viêm loét vùng tiền đình mũi; viêm họng, viêm phế quản; viêm xoang; viêm tai giữa.'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o2:symptom {id: 'các_cuốn_mũi_bị_quá_phát_xen_kẽ_thoái_hóa_polyp_symptom'})
+MERGE (o1)-[r59:affects]->(o2)
+SET r59.text = 'Viêm mũi dị ứng không được điều trị có thể gây ra các biến chứng như niêm mạc mũi thoái hóa, phù nề gây nghẹt mũi; các cuốn mũi bị quá phát xen kẽ thoái hóa polyp; viêm loét vùng tiền đình mũi; viêm họng, viêm phế quản; viêm xoang; viêm tai giữa.'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o2:symptom {id: 'viêm_loét_vùng_tiền_đình_mũi_symptom'})
+MERGE (o1)-[r60:affects]->(o2)
+SET r60.text = 'Viêm mũi dị ứng không được điều trị có thể gây ra các biến chứng như niêm mạc mũi thoái hóa, phù nề gây nghẹt mũi; các cuốn mũi bị quá phát xen kẽ thoái hóa polyp; viêm loét vùng tiền đình mũi; viêm họng, viêm phế quản; viêm xoang; viêm tai giữa.'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o2:disease {id: 'viêm_họng_disease'})
+MERGE (o1)-[r61:affects]->(o2)
+SET r61.text = 'Viêm mũi dị ứng không được điều trị có thể gây ra các biến chứng như niêm mạc mũi thoái hóa, phù nề gây nghẹt mũi; các cuốn mũi bị quá phát xen kẽ thoái hóa polyp; viêm loét vùng tiền đình mũi; viêm họng, viêm phế quản; viêm xoang; viêm tai giữa.'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o2:disease {id: 'viêm_phế_quản_disease'})
+MERGE (o1)-[r62:affects]->(o2)
+SET r62.text = 'Viêm mũi dị ứng không được điều trị có thể gây ra các biến chứng như niêm mạc mũi thoái hóa, phù nề gây nghẹt mũi; các cuốn mũi bị quá phát xen kẽ thoái hóa polyp; viêm loét vùng tiền đình mũi; viêm họng, viêm phế quản; viêm xoang; viêm tai giữa.'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o2:disease {id: 'viêm_xoang_disease'})
+MERGE (o1)-[r63:affects]->(o2)
+SET r63.text = 'Viêm mũi dị ứng không được điều trị có thể gây ra các biến chứng như niêm mạc mũi thoái hóa, phù nề gây nghẹt mũi; các cuốn mũi bị quá phát xen kẽ thoái hóa polyp; viêm loét vùng tiền đình mũi; viêm họng, viêm phế quản; viêm xoang; viêm tai giữa.'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o2:disease {id: 'viêm_tai_giữa_disease'})
+MERGE (o1)-[r64:affects]->(o2)
+SET r64.text = 'Viêm mũi dị ứng không được điều trị có thể gây ra các biến chứng như niêm mạc mũi thoái hóa, phù nề gây nghẹt mũi; các cuốn mũi bị quá phát xen kẽ thoái hóa polyp; viêm loét vùng tiền đình mũi; viêm họng, viêm phế quản; viêm xoang; viêm tai giữa.'
+
+MERGE (o1:disease {id: 'viêm_phế_quản_disease'})
+MERGE (o2:organ {id: 'trẻ_nhỏ_organ'})
+MERGE (o1)-[r65:affects]->(o2)
+SET r65.text = 'Đối với biến chứng viêm phế quản có thể gây nguy hiểm cho trẻ nhỏ nếu không được điều trị kịp thời.'
+
+MERGE (o1:disease {id: 'viêm_phế_quản_disease'})
+MERGE (o2:organ {id: 'phổi_organ'})
+MERGE (o1)-[r66:affects]->(o2)
+SET r66.text = 'Viêm phế quản có thể lan xuống phổi gây viêm phổi, suy hô hấp, đe dọa tính mạng của trẻ.'
+
+MERGE (o1:disease {id: 'viêm_phế_quản_disease'})
+MERGE (o2:disease {id: 'viêm_phổi_disease'})
+MERGE (o1)-[r67:affects]->(o2)
+SET r67.text = 'Viêm phế quản có thể lan xuống phổi gây viêm phổi, suy hô hấp, đe dọa tính mạng của trẻ.'
+
+MERGE (o1:treatment {id: 'thuốc_kháng_histamin_treatment'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o1)-[r68:treatedBy]->(o2)
+SET r68.text = 'Để chữa viêm mũi dị ứng, người bệnh có thể áp dụng nhiều cách như:(5)    Thuốc điều trị: Dùng các loại thuốc kháng histamin (theo chỉ định của bác sĩ).'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o2:treatment {id: 'thuốc_kháng_histamin_treatment'})
+MERGE (o1)-[r69:treatedBy]->(o2)
+SET r69.text = 'Để chữa viêm mũi dị ứng, người bệnh có thể áp dụng nhiều cách như:(5)    Thuốc điều trị: Dùng các loại thuốc kháng histamin (theo chỉ định của bác sĩ).'
+
+MERGE (o1:treatment {id: 'thuốc_nhỏ_mắt_và_thuốc_xịt_mũi_treatment'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o1)-[r70:treatedBy]->(o2)
+SET r70.text = 'Để chữa viêm mũi dị ứng, người bệnh có thể áp dụng nhiều cách như:(5)    Thuốc điều trị: Dùng các loại thuốc kháng histamin (theo chỉ định của bác sĩ). Thuốc nhỏ mắt và thuốc xịt mũi: Dùng thuốc nhỏ mắt và thuốc xịt mũi có thể giúp giảm ngứa và các triệu chứng liên quan đến dị ứng khác trong thời gian ngắn (theo chỉ định của bác sĩ).'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o2:treatment {id: 'thuốc_nhỏ_mắt_và_thuốc_xịt_mũi_treatment'})
+MERGE (o1)-[r71:treatedBy]->(o2)
+SET r71.text = 'Để chữa viêm mũi dị ứng, người bệnh có thể áp dụng nhiều cách như:(5)    Thuốc điều trị: Dùng các loại thuốc kháng histamin (theo chỉ định của bác sĩ). Thuốc nhỏ mắt và thuốc xịt mũi: Dùng thuốc nhỏ mắt và thuốc xịt mũi có thể giúp giảm ngứa và các triệu chứng liên quan đến dị ứng khác trong thời gian ngắn (theo chỉ định của bác sĩ).'
+
+MERGE (o1:symptom {id: 'ngứa_symptom'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o1)-[r72:isSymptomOf]->(o2)
+SET r72.text = 'Để chữa viêm mũi dị ứng, người bệnh có thể áp dụng nhiều cách như:(5)    Thuốc điều trị: Dùng các loại thuốc kháng histamin (theo chỉ định của bác sĩ). Thuốc nhỏ mắt và thuốc xịt mũi: Dùng thuốc nhỏ mắt và thuốc xịt mũi có thể giúp giảm ngứa và các triệu chứng liên quan đến dị ứng khác trong thời gian ngắn (theo chỉ định của bác sĩ). Các biện pháp khắc phục tại nhà: Phụ thuộc vào chất gây dị ứng. Nếu bị dị ứng theo mùa hoặc phấn hoa, người bệnh nên tránh xa những nơi có nhiều cây cối; dùng máy hút ẩm hoặc bộ lọc không khí dạng hạt giúp bạn kiểm soát dị ứng khi ở trong nhà.'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o2:disease {id: 'dị_ứng_disease'})
+MERGE (o1)-[r73:isSymptomOf]->(o2)
+SET r73.text = 'Để chữa viêm mũi dị ứng, người bệnh có thể áp dụng nhiều cách như:(5)    Thuốc điều trị: Dùng các loại thuốc kháng histamin (theo chỉ định của bác sĩ). Thuốc nhỏ mắt và thuốc xịt mũi: Dùng thuốc nhỏ mắt và thuốc xịt mũi có thể giúp giảm ngứa và các triệu chứng liên quan đến dị ứng khác trong thời gian ngắn (theo chỉ định của bác sĩ). Các biện pháp khắc phục tại nhà: Phụ thuộc vào chất gây dị ứng. Nếu bị dị ứng theo mùa hoặc phấn hoa, người bệnh nên tránh xa những nơi có nhiều cây cối; dùng máy hút ẩm hoặc bộ lọc không khí dạng hạt giúp bạn kiểm soát dị ứng khi ở trong nhà.'
+
+MERGE (o1:cause {id: 'phấn_hoa_cause'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o1)-[r74:causedBy]->(o2)
+SET r74.text = 'Để chữa viêm mũi dị ứng, người bệnh có thể áp dụng nhiều cách như:(5)    Thuốc điều trị: Dùng các loại thuốc kháng histamin (theo chỉ định của bác sĩ). Thuốc nhỏ mắt và thuốc xịt mũi: Dùng thuốc nhỏ mắt và thuốc xịt mũi có thể giúp giảm ngứa và các triệu chứng liên quan đến dị ứng khác trong thời gian ngắn (theo chỉ định của bác sĩ). Các biện pháp khắc phục tại nhà: Phụ thuộc vào chất gây dị ứng. Nếu bị dị ứng theo mùa hoặc phấn hoa, người bệnh nên tránh xa những nơi có nhiều cây cối; dùng máy hút ẩm hoặc bộ lọc không khí dạng hạt giúp bạn kiểm soát dị ứng khi ở trong nhà.'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o2:cause {id: 'phấn_hoa_cause'})
+MERGE (o1)-[r75:aggravatedBy]->(o2)
+SET r75.text = 'Để chữa viêm mũi dị ứng, người bệnh có thể áp dụng nhiều cách như:(5)    Thuốc điều trị: Dùng các loại thuốc kháng histamin (theo chỉ định của bác sĩ). Thuốc nhỏ mắt và thuốc xịt mũi: Dùng thuốc nhỏ mắt và thuốc xịt mũi có thể giúp giảm ngứa và các triệu chứng liên quan đến dị ứng khác trong thời gian ngắn (theo chỉ định của bác sĩ). Các biện pháp khắc phục tại nhà: Phụ thuộc vào chất gây dị ứng. Nếu bị dị ứng theo mùa hoặc phấn hoa, người bệnh nên tránh xa những nơi có nhiều cây cối; dùng máy hút ẩm hoặc bộ lọc không khí dạng hạt giúp bạn kiểm soát dị ứng khi ở trong nhà.'
+
+MERGE (o1:cause {id: 'bụi_cause'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o1)-[r76:causedBy]->(o2)
+SET r76.text = 'Để chữa viêm mũi dị ứng, người bệnh có thể áp dụng nhiều cách như:(5)    Thuốc điều trị: Dùng các loại thuốc kháng histamin (theo chỉ định của bác sĩ). Thuốc nhỏ mắt và thuốc xịt mũi: Dùng thuốc nhỏ mắt và thuốc xịt mũi có thể giúp giảm ngứa và các triệu chứng liên quan đến dị ứng khác trong thời gian ngắn (theo chỉ định của bác sĩ). Các biện pháp khắc phục tại nhà: Phụ thuộc vào chất gây dị ứng. Nếu bị dị ứng theo mùa hoặc phấn hoa, người bệnh nên tránh xa những nơi có nhiều cây cối; dùng máy hút ẩm hoặc bộ lọc không khí dạng hạt giúp bạn kiểm soát dị ứng khi ở trong nhà. Nếu bạn bị dị ứng với bụi, mạt nhà; hãy giặt tấm trải giường và chăn mền bằng nước nóng trên 55 độ C; đeo khẩu trang khi làm việc nếu bị dị ứng với các tác nhân ở nơi làm việc…'
+
+MERGE (o1:cause {id: 'mạt_nhà_cause'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o1)-[r77:causedBy]->(o2)
+SET r77.text = 'Để chữa viêm mũi dị ứng, người bệnh có thể áp dụng nhiều cách như:(5)    Thuốc điều trị: Dùng các loại thuốc kháng histamin (theo chỉ định của bác sĩ). Thuốc nhỏ mắt và thuốc xịt mũi: Dùng thuốc nhỏ mắt và thuốc xịt mũi có thể giúp giảm ngứa và các triệu chứng liên quan đến dị ứng khác trong thời gian ngắn (theo chỉ định của bác sĩ). Các biện pháp khắc phục tại nhà: Phụ thuộc vào chất gây dị ứng. Nếu bị dị ứng theo mùa hoặc phấn hoa, người bệnh nên tránh xa những nơi có nhiều cây cối; dùng máy hút ẩm hoặc bộ lọc không khí dạng hạt giúp bạn kiểm soát dị ứng khi ở trong nhà. Nếu bạn bị dị ứng với bụi, mạt nhà; hãy giặt tấm trải giường và chăn mền bằng nước nóng trên 55 độ C; đeo khẩu trang khi làm việc nếu bị dị ứng với các tác nhân ở nơi làm việc…'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o2:cause {id: 'bụi_cause'})
+MERGE (o1)-[r78:aggravatedBy]->(o2)
+SET r78.text = 'Để chữa viêm mũi dị ứng, người bệnh có thể áp dụng nhiều cách như:(5)    Thuốc điều trị: Dùng các loại thuốc kháng histamin (theo chỉ định của bác sĩ). Thuốc nhỏ mắt và thuốc xịt mũi: Dùng thuốc nhỏ mắt và thuốc xịt mũi có thể giúp giảm ngứa và các triệu chứng liên quan đến dị ứng khác trong thời gian ngắn (theo chỉ định của bác sĩ). Các biện pháp khắc phục tại nhà: Phụ thuộc vào chất gây dị ứng. Nếu bị dị ứng theo mùa hoặc phấn hoa, người bệnh nên tránh xa những nơi có nhiều cây cối; dùng máy hút ẩm hoặc bộ lọc không khí dạng hạt giúp bạn kiểm soát dị ứng khi ở trong nhà. Nếu bạn bị dị ứng với bụi, mạt nhà; hãy giặt tấm trải giường và chăn mền bằng nước nóng trên 55 độ C; đeo khẩu trang khi làm việc nếu bị dị ứng với các tác nhân ở nơi làm việc…'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o2:cause {id: 'mạt_nhà_cause'})
+MERGE (o1)-[r79:aggravatedBy]->(o2)
+SET r79.text = 'Để chữa viêm mũi dị ứng, người bệnh có thể áp dụng nhiều cách như:(5)    Thuốc điều trị: Dùng các loại thuốc kháng histamin (theo chỉ định của bác sĩ). Thuốc nhỏ mắt và thuốc xịt mũi: Dùng thuốc nhỏ mắt và thuốc xịt mũi có thể giúp giảm ngứa và các triệu chứng liên quan đến dị ứng khác trong thời gian ngắn (theo chỉ định của bác sĩ). Các biện pháp khắc phục tại nhà: Phụ thuộc vào chất gây dị ứng. Nếu bị dị ứng theo mùa hoặc phấn hoa, người bệnh nên tránh xa những nơi có nhiều cây cối; dùng máy hút ẩm hoặc bộ lọc không khí dạng hạt giúp bạn kiểm soát dị ứng khi ở trong nhà. Nếu bạn bị dị ứng với bụi, mạt nhà; hãy giặt tấm trải giường và chăn mền bằng nước nóng trên 55 độ C; đeo khẩu trang khi làm việc nếu bị dị ứng với các tác nhân ở nơi làm việc…'
+
+MERGE (o1:cause {id: 'miễn_dịch_yếu_cause'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o1)-[r80:causedBy]->(o2)
+SET r80.text = 'Để phòng ngừa viêm mũi dị ứng, bác sĩ Hằng khuyên người dân nên:    Tăng cường miễn dịch: Khi miễn dịch yếu, cơ thể rất dễ bị dị ứng. Do đó, tăng cường hệ miễn dịch là một trong những cách tốt nhất để bảo vệ cơ thể tránh khỏi viêm mũi dị ứng.'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o2:cause {id: 'miễn_dịch_yếu_cause'})
+MERGE (o1)-[r81:aggravatedBy]->(o2)
+SET r81.text = 'Để phòng ngừa viêm mũi dị ứng, bác sĩ Hằng khuyên người dân nên:    Tăng cường miễn dịch: Khi miễn dịch yếu, cơ thể rất dễ bị dị ứng. Do đó, tăng cường hệ miễn dịch là một trong những cách tốt nhất để bảo vệ cơ thể tránh khỏi viêm mũi dị ứng.'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o2:lifestyle {id: 'tăng_cường_hệ_miễn_dịch_lifestyle'})
+MERGE (o1)-[r82:preventedBy]->(o2)
+SET r82.text = 'Để phòng ngừa viêm mũi dị ứng, bác sĩ Hằng khuyên người dân nên:    Tăng cường miễn dịch: Khi miễn dịch yếu, cơ thể rất dễ bị dị ứng. Do đó, tăng cường hệ miễn dịch là một trong những cách tốt nhất để bảo vệ cơ thể tránh khỏi viêm mũi dị ứng. Tránh xa các tác nhân gây dị ứng: Khi biết bản thân bị dị ứng với chất gì, hãy cố gắng tránh tiếp xúc với chất đó.'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o2:lifestyle {id: 'tránh_xa_các_tác_nhân_gây_dị_ứng_lifestyle'})
+MERGE (o1)-[r83:preventedBy]->(o2)
+SET r83.text = 'Để phòng ngừa viêm mũi dị ứng, bác sĩ Hằng khuyên người dân nên:    Tăng cường miễn dịch: Khi miễn dịch yếu, cơ thể rất dễ bị dị ứng. Do đó, tăng cường hệ miễn dịch là một trong những cách tốt nhất để bảo vệ cơ thể tránh khỏi viêm mũi dị ứng. Tránh xa các tác nhân gây dị ứng: Khi biết bản thân bị dị ứng với chất gì, hãy cố gắng tránh tiếp xúc với chất đó. Đeo khẩu trang trong vùng có nguy cơ xuất hiện các chất gây dị ứng là biện pháp phòng vệ tốt cho người bệnh.'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o2:lifestyle {id: 'bảo_vệ_tai_mũi_họng_lifestyle'})
+MERGE (o1)-[r84:preventedBy]->(o2)
+SET r84.text = 'Để phòng ngừa viêm mũi dị ứng, bác sĩ Hằng khuyên người dân nên:    Tăng cường miễn dịch: Khi miễn dịch yếu, cơ thể rất dễ bị dị ứng. Do đó, tăng cường hệ miễn dịch là một trong những cách tốt nhất để bảo vệ cơ thể tránh khỏi viêm mũi dị ứng. Tránh xa các tác nhân gây dị ứng: Khi biết bản thân bị dị ứng với chất gì, hãy cố gắng tránh tiếp xúc với chất đó. Đeo khẩu trang trong vùng có nguy cơ xuất hiện các chất gây dị ứng là biện pháp phòng vệ tốt cho người bệnh. Bảo vệ tai mũi họng: Tai mũi họng là một hệ thống thông với nhau, nên bảo vệ vùng tai và họng tốt sẽ giúp mũi khỏe mạnh để giảm bớt nguy cơ bị viêm mũi dị ứng nặng hơn.'
+
+MERGE (o1:organ {id: 'tai_mũi_họng_organ'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o1)-[r85:relatedTo]->(o2)
+SET r85.text = 'Để phòng ngừa viêm mũi dị ứng, bác sĩ Hằng khuyên người dân nên:    Tăng cường miễn dịch: Khi miễn dịch yếu, cơ thể rất dễ bị dị ứng. Do đó, tăng cường hệ miễn dịch là một trong những cách tốt nhất để bảo vệ cơ thể tránh khỏi viêm mũi dị ứng. Tránh xa các tác nhân gây dị ứng: Khi biết bản thân bị dị ứng với chất gì, hãy cố gắng tránh tiếp xúc với chất đó. Đeo khẩu trang trong vùng có nguy cơ xuất hiện các chất gây dị ứng là biện pháp phòng vệ tốt cho người bệnh. Bảo vệ tai mũi họng: Tai mũi họng là một hệ thống thông với nhau, nên bảo vệ vùng tai và họng tốt sẽ giúp mũi khỏe mạnh để giảm bớt nguy cơ bị viêm mũi dị ứng nặng hơn.'
+
+MERGE (o1:treatment {id: 'việc_kết_hợp_khéo_léo_giữa_sử_dụng_thuốc_và_chế_độ_dinh_dưỡng_treatment'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o1)-[r86:treatedBy]->(o2)
+SET r86.text = 'Việc kết hợp khéo léo giữa sử dụng thuốc và chế độ dinh dưỡng trong quá trình điều trị viêm mũi dị ứng sẽ mang lại hiệu quả cao.'
+
+MERGE (o1:food {id: 'thực_phẩm_giàu_vitamin_c_food'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o1)-[r87:treatedBy]->(o2)
+SET r87.text = 'Dưới đây là một số thực phẩm mà các chuyên gia khuyên dùng:    Thực phẩm giàu vitamin C: giúp tăng cường sức đề kháng, chống lại các tác nhân gây bệnh một cách hiệu quả.'
+
+MERGE (o1:lifestyle {id: 'tăng_cường_sức_đề_kháng_lifestyle'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o1)-[r88:treatedBy]->(o2)
+SET r88.text = 'Thực phẩm giàu vitamin C: giúp tăng cường sức đề kháng, chống lại các tác nhân gây bệnh một cách hiệu quả.'
+
+MERGE (o1:food {id: 'thực_phẩm_làm_ấm_cơ_thể_food'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o1)-[r89:treatedBy]->(o2)
+SET r89.text = 'Thực phẩm làm ấm cơ thể: các triệu chứng của bệnh viêm mũi dị ứng thường xuất hiện khi gặp lạnh, do đó việc bổ sung các loại thực phẩm làm ấm cơ thể như hành, tỏi, gừng… sẽ giúp người bệnh ngăn ngừa hoặc giảm đáng kể các triệu chứng.'
+
+MERGE (o1:symptom {id: 'các_triệu_chứng_của_bệnh_viêm_mũi_dị_ứng_symptom'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o1)-[r90:isSymptomOf]->(o2)
+SET r90.text = 'Thực phẩm làm ấm cơ thể: các triệu chứng của bệnh viêm mũi dị ứng thường xuất hiện khi gặp lạnh, do đó việc bổ sung các loại thực phẩm làm ấm cơ thể như hành, tỏi, gừng… sẽ giúp người bệnh ngăn ngừa hoặc giảm đáng kể các triệu chứng.'
+
+MERGE (o1:cause {id: 'gặp_lạnh_cause'})
+MERGE (o2:symptom {id: 'các_triệu_chứng_của_bệnh_viêm_mũi_dị_ứng_symptom'})
+MERGE (o1)-[r91:causedBy]->(o2)
+SET r91.text = 'Thực phẩm làm ấm cơ thể: các triệu chứng của bệnh viêm mũi dị ứng thường xuất hiện khi gặp lạnh, do đó việc bổ sung các loại thực phẩm làm ấm cơ thể như hành, tỏi, gừng… sẽ giúp người bệnh ngăn ngừa hoặc giảm đáng kể các triệu chứng.'
+
+MERGE (o1:food {id: 'hành__tỏi__gừng_food'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o1)-[r92:treatedBy]->(o2)
+SET r92.text = 'Thực phẩm làm ấm cơ thể: các triệu chứng của bệnh viêm mũi dị ứng thường xuất hiện khi gặp lạnh, do đó việc bổ sung các loại thực phẩm làm ấm cơ thể như hành, tỏi, gừng… sẽ giúp người bệnh ngăn ngừa hoặc giảm đáng kể các triệu chứng.'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o2:lifestyle {id: 'không_tiếp_xúc_với_các_yếu_tố_gây_dị_ứng_lifestyle'})
+MERGE (o1)-[r93:treatedBy]->(o2)
+SET r93.text = 'Viêm mũi dị ứng chỉ chữa khỏi hoàn toàn khi không tiếp xúc với các yếu tố gây dị ứng, do đó chỉ có thể điều trị làm giảm các triệu chứng dị ứng mũi khi bệnh nhân khởi phát bệnh.'
+
+MERGE (o1:cause {id: 'các_yếu_tố_gây_dị_ứng_cause'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o1)-[r94:causedBy]->(o2)
+SET r94.text = 'Viêm mũi dị ứng chỉ chữa khỏi hoàn toàn khi không tiếp xúc với các yếu tố gây dị ứng, do đó chỉ có thể điều trị làm giảm các triệu chứng dị ứng mũi khi bệnh nhân khởi phát bệnh.'
+
+MERGE (o1:symptom {id: 'các_triệu_chứng_dị_ứng_mũi_symptom'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o1)-[r95:isSymptomOf]->(o2)
+SET r95.text = 'Viêm mũi dị ứng chỉ chữa khỏi hoàn toàn khi không tiếp xúc với các yếu tố gây dị ứng, do đó chỉ có thể điều trị làm giảm các triệu chứng dị ứng mũi khi bệnh nhân khởi phát bệnh.'
+
+MERGE (o1:treatment {id: 'xịt_rửa_mũi_mỗi_ngày_treatment'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o1)-[r96:preventedBy]->(o2)
+SET r96.text = 'Phòng ngừa bằng cách xịt rửa mũi mỗi ngày và tránh tiếp xúc các yếu tố gây dị ứng.'
+
+MERGE (o1:lifestyle {id: 'tránh_tiếp_xúc_các_yếu_tố_gây_dị_ứng_lifestyle'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o1)-[r97:preventedBy]->(o2)
+SET r97.text = 'Phòng ngừa bằng cách xịt rửa mũi mỗi ngày và tránh tiếp xúc các yếu tố gây dị ứng.'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o2:organ {id: 'thai_nhi_organ'})
+MERGE (o1)-[r98:affects]->(o2)
+SET r98.text = 'Viêm mũi dị ứng không ảnh hưởng trực tiếp đến thai nhi nhưng có thể ảnh hưởng gián tiếp.'
+
+MERGE (o1:symptom {id: 'nghẹt_mũi__khó_thở_symptom'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o1)-[r99:isSymptomOf]->(o2)
+SET r99.text = 'Khi người mẹ nghẹt mũi, khó thở dẫn đến mất ngủ, cơ thể mệt mỏi, miễn dịch suy giảm, có thể làm tăng nguy cơ mắc bệnh.'
+
+MERGE (o1:symptom {id: 'mất_ngủ_symptom'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o1)-[r100:isSymptomOf]->(o2)
+SET r100.text = 'Khi người mẹ nghẹt mũi, khó thở dẫn đến mất ngủ, cơ thể mệt mỏi, miễn dịch suy giảm, có thể làm tăng nguy cơ mắc bệnh.'
+
+MERGE (o1:symptom {id: 'cơ_thể_mệt_mỏi_symptom'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o1)-[r101:isSymptomOf]->(o2)
+SET r101.text = 'Khi người mẹ nghẹt mũi, khó thở dẫn đến mất ngủ, cơ thể mệt mỏi, miễn dịch suy giảm, có thể làm tăng nguy cơ mắc bệnh.'
+
+MERGE (o1:symptom {id: 'miễn_dịch_suy_giảm_symptom'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o1)-[r102:isSymptomOf]->(o2)
+SET r102.text = 'Khi người mẹ nghẹt mũi, khó thở dẫn đến mất ngủ, cơ thể mệt mỏi, miễn dịch suy giảm, có thể làm tăng nguy cơ mắc bệnh.'
+
+MERGE (o1:symptom {id: 'cơ_thể_người_mẹ_không_khỏe_symptom'})
+MERGE (o2:organ {id: 'sự_phát_triển_của_thai_kỳ_organ'})
+MERGE (o1)-[r103:affects]->(o2)
+SET r103.text = 'Cơ thể người mẹ không khỏe chắc chắn sẽ ảnh hưởng đến sự phát triển của thai kỳ.'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o2:cause {id: 'cơ_thể_quá_nhạy_cảm_với_một_yếu_tố_gây_dị_ứng_nào_đó_cause'})
+MERGE (o1)-[r104:causedBy]->(o2)
+SET r104.text = 'Viêm mũi dị ứng là một bệnh tự phát do cơ thể quá nhạy cảm với một yếu tố gây dị ứng nào đó.'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o2:disease {id: 'bệnh_lây_nhiễm_disease'})
+MERGE (o1)-[r105:relatedTo]->(o2)
+SET r105.text = 'Do đó, đây không phải là bệnh lây nhiễm.'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o2:cause {id: 'các_tác_nhân_gây_dị_ứng_ngoài_môi_trường_cause'})
+MERGE (o1)-[r106:causedBy]->(o2)
+SET r106.text = 'Viêm mũi dị ứng là bệnh lý lành tính do các tác nhân gây dị ứng ngoài môi trường gây ra.'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o2:treatment {id: 'giảm_bớt_các_triệu_chứng_của_bệnh_treatment'})
+MERGE (o1)-[r107:treatedBy]->(o2)
+SET r107.text = 'Bệnh này không thể chữa khỏi mà chỉ có thể điều trị nhằm giảm bớt các triệu chứng của bệnh.'
+
+MERGE (o1:symptom {id: 'các_triệu_chứng_của_bệnh_symptom'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o1)-[r108:isSymptomOf]->(o2)
+SET r108.text = 'Bệnh này không thể chữa khỏi mà chỉ có thể điều trị nhằm giảm bớt các triệu chứng của bệnh.'
+
+MERGE (o1:lifestyle {id: 'tăng_cường_miễn_dịch_lifestyle'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o1)-[r109:preventedBy]->(o2)
+SET r109.text = 'Do đó, người dân nên chủ động tăng cường miễn dịch, bảo vệ cơ thể khỏi các yếu tố gây dị ứng, đặc biệt là người có cơ địa nhạy cảm - Bác sĩ Hằng khuyên.'
+
+MERGE (o1:lifestyle {id: 'bảo_vệ_cơ_thể_khỏi_các_yếu_tố_gây_dị_ứng_lifestyle'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o1)-[r110:preventedBy]->(o2)
+SET r110.text = 'Do đó, người dân nên chủ động tăng cường miễn dịch, bảo vệ cơ thể khỏi các yếu tố gây dị ứng, đặc biệt là người có cơ địa nhạy cảm - Bác sĩ Hằng khuyên.'
+
+MERGE (o1:cause {id: 'người_có_cơ_địa_nhạy_cảm_cause'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o1)-[r111:causedBy]->(o2)
+SET r111.text = 'Do đó, người dân nên chủ động tăng cường miễn dịch, bảo vệ cơ thể khỏi các yếu tố gây dị ứng, đặc biệt là người có cơ địa nhạy cảm - Bác sĩ Hằng khuyên.'
+
+MERGE (o1:treatment {id: 'tiêm_vaccine_treatment'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o1)-[r112:treatedBy]->(o2)
+SET r112.text = 'Theo bác sĩ Hằng, người có tiền sử bị viêm mũi dị ứng, dị ứng nhẹ ngoài da do thức ăn hay thuốc, viêm kết mạc dị ứng… đều có thể tiêm vaccine như người không có tiền sử dị ứng.'
+
+MERGE (o1:disease {id: 'dị_ứng_nhẹ_ngoài_da_do_thức_ăn_hay_thuốc_disease'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o1)-[r113:relatedTo]->(o2)
+SET r113.text = 'Theo bác sĩ Hằng, người có tiền sử bị viêm mũi dị ứng, dị ứng nhẹ ngoài da do thức ăn hay thuốc, viêm kết mạc dị ứng… đều có thể tiêm vaccine như người không có tiền sử dị ứng.'
+
+MERGE (o1:disease {id: 'viêm_kết_mạc_dị_ứng_disease'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o1)-[r114:relatedTo]->(o2)
+SET r114.text = 'Theo bác sĩ Hằng, người có tiền sử bị viêm mũi dị ứng, dị ứng nhẹ ngoài da do thức ăn hay thuốc, viêm kết mạc dị ứng… đều có thể tiêm vaccine như người không có tiền sử dị ứng.'
+
+MERGE (o1:cause {id: 'tiền_căn_dị_ứng_nặng_hoặc_shock_phản_vệ_với_các_loại_thức_ăn__một_số_loại_thuốc_cause'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o1)-[r115:causedBy]->(o2)
+SET r115.text = 'Một số trường hợp cần theo dõi kỹ khi tiêm vaccine bao gồm: tiền căn dị ứng nặng hoặc shock phản vệ với các loại thức ăn, một số loại thuốc.'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o2:lifestyle {id: 'chất_lượng_cuộc_sống_của_người_bệnh_lifestyle'})
+MERGE (o1)-[r116:affects]->(o2)
+SET r116.text = 'Trên thực tế, viêm mũi dị ứng không gây nguy hiểm đến tính mạng nhưng nếu không được điều trị đúng cách, bệnh có thể kéo dài và tiến triển nặng hơn, không chỉ gây ảnh hưởng đến chất lượng cuộc sống của người bệnh mà còn có nguy cơ gây ra các biến chứng đáng tiếc như viêm xoang cấp, mạn tính, polyp mũi xoang&#8230;'
+
+MERGE (o1:disease {id: 'viêm_xoang_cấp__mạn_tính__polyp_mũi_xoang_disease'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o1)-[r117:isSymptomOf]->(o2)
+SET r117.text = 'Trên thực tế, viêm mũi dị ứng không gây nguy hiểm đến tính mạng nhưng nếu không được điều trị đúng cách, bệnh có thể kéo dài và tiến triển nặng hơn, không chỉ gây ảnh hưởng đến chất lượng cuộc sống của người bệnh mà còn có nguy cơ gây ra các biến chứng đáng tiếc như viêm xoang cấp, mạn tính, polyp mũi xoang&#8230;'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o2:cause {id: 'di_truyền_cause'})
+MERGE (o1)-[r118:relatedTo]->(o2)
+SET r118.text = 'Viêm mũi dị ứng có khả năng di truyền, cụ thể là nếu trong gia đình có người mắc bệnh lý này thì tỷ lệ di truyền là 60-70%.'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o2:cause {id: 'ô_nhiễm_môi_trường__thay_đổi_thời_tiết__môi_trường_làm_việc_cause'})
+MERGE (o1)-[r119:causedBy]->(o2)
+SET r119.text = 'Ngoài ra, bệnh cũng phụ thuộc vào nhiều yếu tố bên ngoài như ô nhiễm môi trường, thay đổi thời tiết, môi trường làm việc…'
+
+MERGE (o1:symptom {id: 'những_dấu_hiệu_của_viêm_mũi_dị_ứng_symptom'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o1)-[r120:isSymptomOf]->(o2)
+SET r120.text = 'Vì thế, ngay khi có những dấu hiệu của viêm mũi dị ứng, người bệnh cần đến ngay các cơ sở y tế để thăm khám và điều trị kịp thời.'
+
+MERGE (o1:symptom {id: 'quấy_khóc__mệt_mỏi__chán_ăn_symptom'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o1)-[r121:isSymptomOf]->(o2)
+SET r121.text = 'Các triệu chứng của viêm mũi dị ứng ở trẻ em và người lớn là hoàn toàn giống nhau, tuy nhiên, do trẻ em có hệ miễn dịch chưa hoàn chỉnh cũng như chưa ý thức được mức độ nghiêm trọng của bệnh, chưa biết cách bảo vệ và chăm sóc bản thân nên sẽ cảm thấy khó chịu hơn với các biểu hiện như quấy khóc, mệt mỏi, chán ăn&#8230;'
+
+MERGE (o1:cause {id: 'tiếp_xúc_với_các_mầm_bệnh_cause'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o1)-[r122:causedBy]->(o2)
+SET r122.text = 'Ngoài ra, trẻ thường thích vui chơi với bạn bè cùng trang lứa nên rất dễ tiếp xúc với các mầm bệnh, khiến bệnh tiến triển nặng hoặc kéo dài hơn.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_mũi_dị_ứng_disease'})
+MERGE (o2:treatment {id: 'không_được_điều_trị_kịp_thời_và_đúng_cách_treatment'})
+MERGE (o1)-[r123:causedBy]->(o2)
+SET r123.text = 'Bệnh viêm mũi dị ứng nếu không được điều trị kịp thời và đúng cách sẽ dễ tiến triển nặng và gây ra các biến chứng, trong đó viêm mũi dị ứng bội nhiễm là biến chứng bội nhiễm vi trùng.'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_bội_nhiễm_disease'})
+MERGE (o2:disease {id: 'bệnh_viêm_mũi_dị_ứng_disease'})
+MERGE (o1)-[r124:isSymptomOf]->(o2)
+SET r124.text = 'Bệnh viêm mũi dị ứng nếu không được điều trị kịp thời và đúng cách sẽ dễ tiến triển nặng và gây ra các biến chứng, trong đó viêm mũi dị ứng bội nhiễm là biến chứng bội nhiễm vi trùng.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_mũi_dị_ứng_disease'})
+MERGE (o2:lifestyle {id: 'cuộc_sống_hàng_ngày_lifestyle'})
+MERGE (o1)-[r125:affects]->(o2)
+SET r125.text = 'Lúc này, bệnh không chỉ ảnh hưởng nhiều đến cuộc sống hàng ngày mà còn gây khó khăn trong quá trình điều trị cũng như làm tăng khả năng mắc các bệnh lý đường hô hấp khác như viêm xoang, viêm phế quản, hen suyễn, viêm phổi...'

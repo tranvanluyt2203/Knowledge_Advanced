@@ -1,0 +1,720 @@
+
+MERGE (o1:disease {id: 'xơ_phổi_disease'})
+MERGE (o2:organ {id: 'các_mô_bên_trong_phổi_organ'})
+MERGE (o1)-[r0:affects]->(o2)
+SET r0.text = 'Là bệnh thường gặp ở người lớn tuổi, đặc biệt là 50 - 70 tuổi, xơ phổi làm tổn thương các mô bên trong phổi, gây nên các cơn khó thở cùng nhiều biến chứng nguy hiểm khác.'
+
+MERGE (o1:disease {id: 'xơ_phổi_disease'})
+MERGE (o2:symptom {id: 'các_cơn_khó_thở_symptom'})
+MERGE (o1)-[r1:isSymptomOf]->(o2)
+SET r1.text = 'Là bệnh thường gặp ở người lớn tuổi, đặc biệt là 50 - 70 tuổi, xơ phổi làm tổn thương các mô bên trong phổi, gây nên các cơn khó thở cùng nhiều biến chứng nguy hiểm khác.'
+
+MERGE (o1:disease {id: 'xơ_phổi_disease'})
+MERGE (o2:symptom {id: 'tiên_lượng_sống_còn_symptom'})
+MERGE (o1)-[r2:relatedTo]->(o2)
+SET r2.text = 'Là bệnh thường gặp ở người lớn tuổi, đặc biệt là 50 - 70 tuổi, xơ phổi làm tổn thương các mô bên trong phổi, gây nên các cơn khó thở cùng nhiều biến chứng nguy hiểm khác. Tùy vào tiến triển bệnh mà tiên lượng sống còn của bệnh nhân khác nhau, trung bình chỉ từ 3-5 năm.'
+
+MERGE (o1:symptom {id: 'tiên_lượng_sống_còn_symptom'})
+MERGE (o2:disease {id: 'xơ_phổi_disease'})
+MERGE (o1)-[r3:relatedTo]->(o2)
+SET r3.text = 'Tùy vào tiến triển bệnh mà tiên lượng sống còn của bệnh nhân khác nhau, trung bình chỉ từ 3-5 năm.'
+
+MERGE (o1:disease {id: 'xơ_hóa_phổi_disease'})
+MERGE (o2:cause {id: 'nguyên_nhân_cause'})
+MERGE (o1)-[r4:causedBy]->(o2)
+SET r4.text = 'Vậy nguyên nhân gây bệnh xơ hóa phổi là gì và cách phòng tránh như thế nào?'
+
+MERGE (o1:symptom {id: 'ho_khan_symptom'})
+MERGE (o2:disease {id: 'xơ_phổi_disease'})
+MERGE (o1)-[r5:isSymptomOf]->(o2)
+SET r5.text = 'Người bệnh có thể ho khan, ho kéo dài, thậm chí ho ra máu'
+
+MERGE (o1:symptom {id: 'ho_kéo_dài_symptom'})
+MERGE (o2:disease {id: 'xơ_phổi_disease'})
+MERGE (o1)-[r6:isSymptomOf]->(o2)
+SET r6.text = 'Người bệnh có thể ho khan, ho kéo dài, thậm chí ho ra máu'
+
+MERGE (o1:symptom {id: 'ho_ra_máu_symptom'})
+MERGE (o2:disease {id: 'xơ_phổi_disease'})
+MERGE (o1)-[r7:isSymptomOf]->(o2)
+SET r7.text = 'Người bệnh có thể ho khan, ho kéo dài, thậm chí ho ra máu'
+
+MERGE (o1:disease {id: 'ung_thư_phổi_disease'})
+MERGE (o2:symptom {id: '23.000_người_symptom'})
+MERGE (o1)-[r8:relatedTo]->(o2)
+SET r8.text = 'Thống kê tại Việt Nam cho thấy, năm 2018 cả nước có hơn 23.000 người mắc ung thư phổi, dự đoán con số này sẽ còn tăng cao vào những năm tiếp theo.'
+
+MERGE (o1:disease {id: 'ung_thư_phổi_disease'})
+MERGE (o2:symptom {id: 'tỷ_lệ_tử_vong_cao_symptom'})
+MERGE (o1)-[r9:relatedTo]->(o2)
+SET r9.text = 'Ung thư phổi hay u phổi là một trong những căn bệnh “ung thư của thế kỷ”, có tỷ lệ tử vong cao, chỉ xếp sau ung thư gan.'
+
+MERGE (o1:disease {id: 'ung_thư_phổi_disease'})
+MERGE (o2:disease {id: 'ung_thư_gan_disease'})
+MERGE (o1)-[r10:relatedTo]->(o2)
+SET r10.text = 'Ung thư phổi hay u phổi là một trong những căn bệnh “ung thư của thế kỷ”, có tỷ lệ tử vong cao, chỉ xếp sau ung thư gan.'
+
+MERGE (o1:disease {id: 'xơ_phổi_disease'})
+MERGE (o2:disease {id: 'ung_thư_phổi_disease'})
+MERGE (o1)-[r11:associatedWith]->(o2)
+SET r11.text = 'Đáng lưu ý, một số nghiên cứu chỉ ra rằng, những bệnh nhân xơ phổi có nguy cơ mắc ung thư phổi cao gấp 7 lần người bình thường.'
+
+MERGE (o1:organ {id: 'phổi_organ'})
+MERGE (o2:organ {id: 'lồng_ngực_organ'})
+MERGE (o1)-[r12:locatedIn]->(o2)
+SET r12.text = 'Phổi nằm bên trong lồng ngực, được bao bọc bởi các xương sườn có chức năng chính là trao đổi khí giữa cơ thể và môi trường bên ngoài.'
+
+MERGE (o1:organ {id: 'phổi_organ'})
+MERGE (o2:organ {id: 'xương_sườn_organ'})
+MERGE (o1)-[r13:relatedTo]->(o2)
+SET r13.text = 'Phổi nằm bên trong lồng ngực, được bao bọc bởi các xương sườn có chức năng chính là trao đổi khí giữa cơ thể và môi trường bên ngoài.'
+
+MERGE (o1:organ {id: 'phổi_organ'})
+MERGE (o2:symptom {id: 'trao_đổi_khí_symptom'})
+MERGE (o1)-[r14:relatedTo]->(o2)
+SET r14.text = 'Phổi nằm bên trong lồng ngực, được bao bọc bởi các xương sườn có chức năng chính là trao đổi khí giữa cơ thể và môi trường bên ngoài. Chính cấu tạo có tính đàn hồi, mềm và xốp của phổi giúp đưa oxy từ không khí vào trong tĩnh mạch, đồng thời đưa khí CO2 từ động mạch ra bên ngoài.'
+
+MERGE (o1:organ {id: 'phổi_organ'})
+MERGE (o2:symptom {id: 'oxy_symptom'})
+MERGE (o1)-[r15:relatedTo]->(o2)
+SET r15.text = 'Chính cấu tạo có tính đàn hồi, mềm và xốp của phổi giúp đưa oxy từ không khí vào trong tĩnh mạch, đồng thời đưa khí CO2 từ động mạch ra bên ngoài.'
+
+MERGE (o1:organ {id: 'phổi_organ'})
+MERGE (o2:symptom {id: 'co2_symptom'})
+MERGE (o1)-[r16:relatedTo]->(o2)
+SET r16.text = 'Chính cấu tạo có tính đàn hồi, mềm và xốp của phổi giúp đưa oxy từ không khí vào trong tĩnh mạch, đồng thời đưa khí CO2 từ động mạch ra bên ngoài.'
+
+MERGE (o1:organ {id: 'phổi_organ'})
+MERGE (o2:symptom {id: 'lọc_và_loại_bỏ_các_độc_tố_trong_máu_symptom'})
+MERGE (o1)-[r17:relatedTo]->(o2)
+SET r17.text = 'Ngoài chức năng chính đó, phổi còn giúp lọc và loại bỏ các độc tố trong máu, lưu trữ máu bên trong và chuyển hóa các chất sinh hóa học.'
+
+MERGE (o1:organ {id: 'phổi_organ'})
+MERGE (o2:symptom {id: 'lưu_trữ_máu_symptom'})
+MERGE (o1)-[r18:relatedTo]->(o2)
+SET r18.text = 'Ngoài chức năng chính đó, phổi còn giúp lọc và loại bỏ các độc tố trong máu, lưu trữ máu bên trong và chuyển hóa các chất sinh hóa học.'
+
+MERGE (o1:disease {id: 'xơ_phổi_hay_xơ_hóa_phổi_disease'})
+MERGE (o2:symptom {id: 'tổn_thương__dày_lên__xơ_cứng__mất_chức_năng_đàn_hồi_và_tạo_thành_sẹo_ở_phổi_symptom'})
+MERGE (o1)-[r19:isSymptomOf]->(o2)
+SET r19.text = 'Xơ phổi hay xơ hóa phổi
+(Pulmonary Fibrosis) là tình trạng các mô trong phổi bị tổn thương, dày lên, xơ cứng, mất chức năng đàn hồi và tạo thành sẹo ở phổi (bao gồm cả đỉnh và thùy phổi).'
+
+MERGE (o1:disease {id: 'xơ_phổi_hay_xơ_hóa_phổi_disease'})
+MERGE (o2:organ {id: 'phổi_organ'})
+MERGE (o1)-[r20:locatedIn]->(o2)
+SET r20.text = 'Xơ phổi hay xơ hóa phổi
+(Pulmonary Fibrosis) là tình trạng các mô trong phổi bị tổn thương, dày lên, xơ cứng, mất chức năng đàn hồi và tạo thành sẹo ở phổi (bao gồm cả đỉnh và thùy phổi).'
+
+MERGE (o1:symptom {id: 'những_vết_sẹo_ở_phổi_symptom'})
+MERGE (o2:disease {id: 'xơ_phổi_hay_xơ_hóa_phổi_disease'})
+MERGE (o1)-[r21:isSymptomOf]->(o2)
+SET r21.text = 'Những vết sẹo ở phổi ngăn chặn và cản trở hoạt động hít thở của người bệnh, khiến người bệnh khó thở cùng các biến chứng nguy hiểm khác.'
+
+MERGE (o1:symptom {id: 'những_vết_sẹo_ở_phổi_symptom'})
+MERGE (o2:symptom {id: 'hoạt_động_hít_thở_symptom'})
+MERGE (o1)-[r22:affects]->(o2)
+SET r22.text = 'Những vết sẹo ở phổi ngăn chặn và cản trở hoạt động hít thở của người bệnh, khiến người bệnh khó thở cùng các biến chứng nguy hiểm khác.'
+
+MERGE (o1:symptom {id: 'những_vết_sẹo_ở_phổi_symptom'})
+MERGE (o2:symptom {id: 'khó_thở_symptom'})
+MERGE (o1)-[r23:isSymptomOf]->(o2)
+SET r23.text = 'Những vết sẹo ở phổi ngăn chặn và cản trở hoạt động hít thở của người bệnh, khiến người bệnh khó thở cùng các biến chứng nguy hiểm khác.'
+
+MERGE (o1:disease {id: 'bệnh_disease'})
+MERGE (o2:symptom {id: 'những_vết_sẹo_ở_phổi_symptom'})
+MERGE (o1)-[r24:isSymptomOf]->(o2)
+SET r24.text = 'Bệnh tạo thành những vết sẹo ở phổi Bệnh
+được chia thành 3 dạng:'
+
+MERGE (o1:disease {id: 'xơ_phổi_thứ_phát_disease'})
+MERGE (o2:symptom {id: 'tổn_thương_phổi_symptom'})
+MERGE (o1)-[r25:causedBy]->(o2)
+SET r25.text = 'Xơ phổi thứ phát: Xuất hiện sau khi có tổn thương phổi như lao phổi, viêm phổi, nhồi máu phổi.'
+
+MERGE (o1:disease {id: 'xơ_phổi_thứ_phát_disease'})
+MERGE (o2:disease {id: 'lao_phổi_disease'})
+MERGE (o1)-[r26:causedBy]->(o2)
+SET r26.text = 'Xơ phổi thứ phát: Xuất hiện sau khi có tổn thương phổi như lao phổi, viêm phổi, nhồi máu phổi.'
+
+MERGE (o1:disease {id: 'xơ_phổi_thứ_phát_disease'})
+MERGE (o2:disease {id: 'viêm_phổi_disease'})
+MERGE (o1)-[r27:causedBy]->(o2)
+SET r27.text = 'Xơ phổi thứ phát: Xuất hiện sau khi có tổn thương phổi như lao phổi, viêm phổi, nhồi máu phổi.'
+
+MERGE (o1:disease {id: 'xơ_phổi_thứ_phát_disease'})
+MERGE (o2:disease {id: 'nhồi_máu_phổi_disease'})
+MERGE (o1)-[r28:causedBy]->(o2)
+SET r28.text = 'Xơ phổi thứ phát: Xuất hiện sau khi có tổn thương phổi như lao phổi, viêm phổi, nhồi máu phổi.'
+
+MERGE (o1:disease {id: 'xơ_phổi_khu_trú_disease'})
+MERGE (o2:cause {id: 'hít_phải_các_chất_gây_kích_thích_cause'})
+MERGE (o1)-[r29:causedBy]->(o2)
+SET r29.text = 'Xơ phổi khu trú: Khi hít phải các chất gây kích thích như bụi than, silica.'
+
+MERGE (o1:disease {id: 'xơ_phổi_khu_trú_disease'})
+MERGE (o2:cause {id: 'bụi_than_cause'})
+MERGE (o1)-[r30:causedBy]->(o2)
+SET r30.text = 'Xơ phổi khu trú: Khi hít phải các chất gây kích thích như bụi than, silica.'
+
+MERGE (o1:disease {id: 'xơ_phổi_khu_trú_disease'})
+MERGE (o2:cause {id: 'silica_cause'})
+MERGE (o1)-[r31:causedBy]->(o2)
+SET r31.text = 'Xơ phổi khu trú: Khi hít phải các chất gây kích thích như bụi than, silica.'
+
+MERGE (o1:disease {id: 'xơ_phổi_vô_căn_disease'})
+MERGE (o2:disease {id: 'bệnh_phổi_mô_kẽ_lan_tỏa_disease'})
+MERGE (o1)-[r32:relatedTo]->(o2)
+SET r32.text = 'Xơ phổi vô căn (Idiopathic pulmonary fibrosis), bệnh phổi mô kẽ lan tỏa (Diffuse parenchymal lung disease) và bệnh viêm phế nang dị ứng ngoại lai, hay còn gọi là bệnh viêm phổi tăng cảm (Extrinsic allergic alveolitis).'
+
+MERGE (o1:disease {id: 'xơ_phổi_vô_căn_disease'})
+MERGE (o2:disease {id: 'bệnh_viêm_phế_nang_dị_ứng_ngoại_lai_disease'})
+MERGE (o1)-[r33:relatedTo]->(o2)
+SET r33.text = 'Xơ phổi vô căn (Idiopathic pulmonary fibrosis), bệnh phổi mô kẽ lan tỏa (Diffuse parenchymal lung disease) và bệnh viêm phế nang dị ứng ngoại lai, hay còn gọi là bệnh viêm phổi tăng cảm (Extrinsic allergic alveolitis).'
+
+MERGE (o1:disease {id: 'xơ_phổi_vô_căn_disease'})
+MERGE (o2:disease {id: 'bệnh_viêm_phổi_tăng_cảm_disease'})
+MERGE (o1)-[r34:relatedTo]->(o2)
+SET r34.text = 'Xơ phổi vô căn (Idiopathic pulmonary fibrosis), bệnh phổi mô kẽ lan tỏa (Diffuse parenchymal lung disease) và bệnh viêm phế nang dị ứng ngoại lai, hay còn gọi là bệnh viêm phổi tăng cảm (Extrinsic allergic alveolitis).'
+
+MERGE (o1:disease {id: 'phổi_xơ_hóa_disease'})
+MERGE (o2:symptom {id: 'tiến_triển_bệnh_rất_nhanh_symptom'})
+MERGE (o1)-[r35:isSymptomOf]->(o2)
+SET r35.text = 'Diễn tiến bệnh và mức độ nghiêm trọng của
+phổi xơ hóa
+khác nhau ở mỗi bệnh nhân, một số bệnh nhân tiến triển bệnh rất nhanh với các triệu chứng nghiêm trọng, một số khác lại chỉ có triệu chứng nhẹ, dần dần mới phát triển biến chứng mạnh mẽ sau vài tháng hoặc một năm.'
+
+MERGE (o1:disease {id: 'phổi_xơ_hóa_disease'})
+MERGE (o2:symptom {id: 'các_triệu_chứng_nghiêm_trọng_symptom'})
+MERGE (o1)-[r36:isSymptomOf]->(o2)
+SET r36.text = 'Diễn tiến bệnh và mức độ nghiêm trọng của
+phổi xơ hóa
+khác nhau ở mỗi bệnh nhân, một số bệnh nhân tiến triển bệnh rất nhanh với các triệu chứng nghiêm trọng, một số khác lại chỉ có triệu chứng nhẹ, dần dần mới phát triển biến chứng mạnh mẽ sau vài tháng hoặc một năm.'
+
+MERGE (o1:disease {id: 'phổi_xơ_hóa_disease'})
+MERGE (o2:symptom {id: 'triệu_chứng_nhẹ_symptom'})
+MERGE (o1)-[r37:isSymptomOf]->(o2)
+SET r37.text = 'Diễn tiến bệnh và mức độ nghiêm trọng của
+phổi xơ hóa
+khác nhau ở mỗi bệnh nhân, một số bệnh nhân tiến triển bệnh rất nhanh với các triệu chứng nghiêm trọng, một số khác lại chỉ có triệu chứng nhẹ, dần dần mới phát triển biến chứng mạnh mẽ sau vài tháng hoặc một năm.'
+
+MERGE (o1:disease {id: 'phổi_xơ_hóa_disease'})
+MERGE (o2:symptom {id: 'biến_chứng_mạnh_mẽ_symptom'})
+MERGE (o1)-[r38:isSymptomOf]->(o2)
+SET r38.text = 'Diễn tiến bệnh và mức độ nghiêm trọng của
+phổi xơ hóa
+khác nhau ở mỗi bệnh nhân, một số bệnh nhân tiến triển bệnh rất nhanh với các triệu chứng nghiêm trọng, một số khác lại chỉ có triệu chứng nhẹ, dần dần mới phát triển biến chứng mạnh mẽ sau vài tháng hoặc một năm.'
+
+MERGE (o1:person {id: 'gs.ts.bs_ngô_quý_châu_person'})
+MERGE (o2:disease {id: 'xơ_phổi_hay_xơ_hóa_phổi_disease'})
+MERGE (o1)-[r39:relatedTo]->(o2)
+SET r39.text = 'GS.TS.BS Ngô Quý Châu khuyến cáo, người bệnh cần đặc biệt chú ý khi có các dấu hiệu như:'
+
+MERGE (o1:symptom {id: 'khó_thở_symptom'})
+MERGE (o2:disease {id: 'xơ_phổi_hay_xơ_hóa_phổi_disease'})
+MERGE (o1)-[r40:isSymptomOf]->(o2)
+SET r40.text = 'GS.TS.BS Ngô Quý Châu khuyến cáo, người bệnh cần đặc biệt chú ý khi có các dấu hiệu như:
+Khó thở, đặc biệt là trong hoặc sau khi người bệnh hoạt động thể chất hoặc ho khan;'
+
+MERGE (o1:symptom {id: 'khó_thở_symptom'})
+MERGE (o2:lifestyle {id: 'hoạt_động_thể_chất_lifestyle'})
+MERGE (o1)-[r41:aggravatedBy]->(o2)
+SET r41.text = 'GS.TS.BS Ngô Quý Châu khuyến cáo, người bệnh cần đặc biệt chú ý khi có các dấu hiệu như:
+Khó thở, đặc biệt là trong hoặc sau khi người bệnh hoạt động thể chất hoặc ho khan;'
+
+MERGE (o1:symptom {id: 'ho_khan_symptom'})
+MERGE (o2:disease {id: 'xơ_phổi_hay_xơ_hóa_phổi_disease'})
+MERGE (o1)-[r42:isSymptomOf]->(o2)
+SET r42.text = 'GS.TS.BS Ngô Quý Châu khuyến cáo, người bệnh cần đặc biệt chú ý khi có các dấu hiệu như:
+Ho khan, ho kéo dài, ho khò khè, có thể ho ra máu;'
+
+MERGE (o1:symptom {id: 'ho_kéo_dài_symptom'})
+MERGE (o2:disease {id: 'xơ_phổi_hay_xơ_hóa_phổi_disease'})
+MERGE (o1)-[r43:isSymptomOf]->(o2)
+SET r43.text = 'GS.TS.BS Ngô Quý Châu khuyến cáo, người bệnh cần đặc biệt chú ý khi có các dấu hiệu như:
+Ho khan, ho kéo dài, ho khò khè, có thể ho ra máu;'
+
+MERGE (o1:symptom {id: 'ho_khò_khè_symptom'})
+MERGE (o2:disease {id: 'xơ_phổi_hay_xơ_hóa_phổi_disease'})
+MERGE (o1)-[r44:isSymptomOf]->(o2)
+SET r44.text = 'GS.TS.BS Ngô Quý Châu khuyến cáo, người bệnh cần đặc biệt chú ý khi có các dấu hiệu như:
+Ho khan, ho kéo dài, ho khò khè, có thể ho ra máu;'
+
+MERGE (o1:symptom {id: 'ho_ra_máu_symptom'})
+MERGE (o2:disease {id: 'xơ_phổi_hay_xơ_hóa_phổi_disease'})
+MERGE (o1)-[r45:isSymptomOf]->(o2)
+SET r45.text = 'GS.TS.BS Ngô Quý Châu khuyến cáo, người bệnh cần đặc biệt chú ý khi có các dấu hiệu như:
+Ho khan, ho kéo dài, ho khò khè, có thể ho ra máu;'
+
+MERGE (o1:symptom {id: 'đau_tức_ngực_symptom'})
+MERGE (o2:disease {id: 'xơ_phổi_hay_xơ_hóa_phổi_disease'})
+MERGE (o1)-[r46:isSymptomOf]->(o2)
+SET r46.text = 'GS.TS.BS Ngô Quý Châu khuyến cáo, người bệnh cần đặc biệt chú ý khi có các dấu hiệu như:
+Đau tức ngực;'
+
+MERGE (o1:symptom {id: 'đau_nhức_các_bắp_thịt_và_khớp_symptom'})
+MERGE (o2:disease {id: 'xơ_phổi_hay_xơ_hóa_phổi_disease'})
+MERGE (o1)-[r47:isSymptomOf]->(o2)
+SET r47.text = 'GS.TS.BS Ngô Quý Châu khuyến cáo, người bệnh cần đặc biệt chú ý khi có các dấu hiệu như:
+Đau nhức các bắp thịt và khớp;'
+
+MERGE (o1:symptom {id: 'mệt_mỏi_symptom'})
+MERGE (o2:disease {id: 'xơ_phổi_hay_xơ_hóa_phổi_disease'})
+MERGE (o1)-[r48:isSymptomOf]->(o2)
+SET r48.text = 'GS.TS.BS Ngô Quý Châu khuyến cáo, người bệnh cần đặc biệt chú ý khi có các dấu hiệu như:
+Thường xuyên rơi vào trạng thái mệt mỏi, sụt cân&#8230; mà không rõ lý do.'
+
+MERGE (o1:symptom {id: 'sụt_cân_symptom'})
+MERGE (o2:disease {id: 'xơ_phổi_hay_xơ_hóa_phổi_disease'})
+MERGE (o1)-[r49:isSymptomOf]->(o2)
+SET r49.text = 'GS.TS.BS Ngô Quý Châu khuyến cáo, người bệnh cần đặc biệt chú ý khi có các dấu hiệu như:
+Thường xuyên rơi vào trạng thái mệt mỏi, sụt cân&#8230; mà không rõ lý do.'
+
+MERGE (o1:person {id: 'gs.ts.bs_ngô_quý_châu_person'})
+MERGE (o2:symptom {id: 'quá_trình_hô_hấp_bình_thường_symptom'})
+MERGE (o1)-[r50:relatedTo]->(o2)
+SET r50.text = 'Giải thích về cơ chế của quá trình hô hấp bình thường, GS.TS.BS Ngô Quý Châu cho biết, khi hít vào, không khí sẽ di chuyển đến phổi thông qua đường dẫn khí lớn được gọi là phế quản.'
+
+MERGE (o1:organ {id: 'phế_quản_organ'})
+MERGE (o2:organ {id: 'phổi_organ'})
+MERGE (o1)-[r51:locatedIn]->(o2)
+SET r51.text = 'Giải thích về cơ chế của quá trình hô hấp bình thường, GS.TS.BS Ngô Quý Châu cho biết, khi hít vào, không khí sẽ di chuyển đến phổi thông qua đường dẫn khí lớn được gọi là phế quản.'
+
+MERGE (o1:organ {id: 'tiểu_phế_quản_organ'})
+MERGE (o2:organ {id: 'phế_quản_organ'})
+MERGE (o1)-[r52:locatedIn]->(o2)
+SET r52.text = 'Phế quản chia thành các nhánh đường hô hấp nhỏ gọi là tiểu phế quản, kết thúc bằng cụm túi không khí gọi là phế nang.'
+
+MERGE (o1:organ {id: 'phế_nang_organ'})
+MERGE (o2:organ {id: 'tiểu_phế_quản_organ'})
+MERGE (o1)-[r53:locatedIn]->(o2)
+SET r53.text = 'Phế quản chia thành các nhánh đường hô hấp nhỏ gọi là tiểu phế quản, kết thúc bằng cụm túi không khí gọi là phế nang.'
+
+MERGE (o1:organ {id: 'mao_mạch_organ'})
+MERGE (o2:organ {id: 'phế_nang_organ'})
+MERGE (o1)-[r54:locatedIn]->(o2)
+SET r54.text = 'Tại các thành phế nang là các mạch máu nhỏ (còn gọi là mao mạch) sẽ diễn ra quá trình nhận thêm oxy vào máu, và đưa CO2 - một chất thải của quá trình trao đổi chất ra ngoài.'
+
+MERGE (o1:disease {id: 'phổi_bị_xơ_hóa_disease'})
+MERGE (o2:organ {id: 'phế_nang_organ'})
+MERGE (o1)-[r55:affects]->(o2)
+SET r55.text = 'Ở những người
+có phổi bị xơ hóa
+, phế nang bị tổn thương và thành sẹo làm cho mô kẽ cứng và dày lên, kém linh hoạt và có cấu tạo như miếng bọt biển khô cứng, khiến cho người bệnh thở khó khăn hơn.'
+
+MERGE (o1:disease {id: 'phổi_bị_xơ_hóa_disease'})
+MERGE (o2:symptom {id: 'thở_khó_khăn_symptom'})
+MERGE (o1)-[r56:isSymptomOf]->(o2)
+SET r56.text = 'Ở những người
+có phổi bị xơ hóa
+, phế nang bị tổn thương và thành sẹo làm cho mô kẽ cứng và dày lên, kém linh hoạt và có cấu tạo như miếng bọt biển khô cứng, khiến cho người bệnh thở khó khăn hơn.'
+
+MERGE (o1:symptom {id: 'tổn_thương_phổi_symptom'})
+MERGE (o2:disease {id: 'xơ_hóa_phổi_disease'})
+MERGE (o1)-[r57:causes]->(o2)
+SET r57.text = 'Có rất nhiều nguyên nhân dẫn đến tổn thương phổi gây
+xơ hóa phổi
+, một số nguyên nhân thường gặp là:'
+
+MERGE (o1:cause {id: 'tiếp_xúc_với_các_chất_độc_hại_cause'})
+MERGE (o2:symptom {id: 'tổn_thương_phổi_symptom'})
+MERGE (o1)-[r58:causes]->(o2)
+SET r58.text = 'Việc tiếp xúc với các chất độc hại, chất gây ô nhiễm như bụi silic, sợi amiăng&#8230; trong thời gian dài có thể làm tổn thương phổi.'
+
+MERGE (o1:cause {id: 'bụi_silic_cause'})
+MERGE (o2:symptom {id: 'tổn_thương_phổi_symptom'})
+MERGE (o1)-[r59:causes]->(o2)
+SET r59.text = 'Việc tiếp xúc với các chất độc hại, chất gây ô nhiễm như bụi silic, sợi amiăng&#8230; trong thời gian dài có thể làm tổn thương phổi.'
+
+MERGE (o1:cause {id: 'sợi_amiăng_cause'})
+MERGE (o2:symptom {id: 'tổn_thương_phổi_symptom'})
+MERGE (o1)-[r60:causes]->(o2)
+SET r60.text = 'Việc tiếp xúc với các chất độc hại, chất gây ô nhiễm như bụi silic, sợi amiăng&#8230; trong thời gian dài có thể làm tổn thương phổi.'
+
+MERGE (o1:cause {id: 'phơi_nhiễm_kinh_niên_cause'})
+MERGE (o2:disease {id: 'xơ_hóa_phổi_disease'})
+MERGE (o1)-[r61:causes]->(o2)
+SET r61.text = 'Bên cạnh đó, quá trình phơi nhiễm kinh niên đối với một số chất hữu cơ kể cả bụi ngũ cốc, mía đường, phân động vật&#8230; cũng có thể gây
+xơ hóa phổi.'
+
+MERGE (o1:cause {id: 'bụi_ngũ_cốc_cause'})
+MERGE (o2:disease {id: 'xơ_hóa_phổi_disease'})
+MERGE (o1)-[r62:causes]->(o2)
+SET r62.text = 'Bên cạnh đó, quá trình phơi nhiễm kinh niên đối với một số chất hữu cơ kể cả bụi ngũ cốc, mía đường, phân động vật&#8230; cũng có thể gây
+xơ hóa phổi.'
+
+MERGE (o1:cause {id: 'mía_đường_cause'})
+MERGE (o2:disease {id: 'xơ_hóa_phổi_disease'})
+MERGE (o1)-[r63:causes]->(o2)
+SET r63.text = 'Bên cạnh đó, quá trình phơi nhiễm kinh niên đối với một số chất hữu cơ kể cả bụi ngũ cốc, mía đường, phân động vật&#8230; cũng có thể gây
+xơ hóa phổi.'
+
+MERGE (o1:cause {id: 'phân_động_vật_cause'})
+MERGE (o2:disease {id: 'xơ_hóa_phổi_disease'})
+MERGE (o1)-[r64:causes]->(o2)
+SET r64.text = 'Bên cạnh đó, quá trình phơi nhiễm kinh niên đối với một số chất hữu cơ kể cả bụi ngũ cốc, mía đường, phân động vật&#8230; cũng có thể gây
+xơ hóa phổi.'
+
+MERGE (o1:disease {id: 'bệnh_xơ_vôi_phổi_disease'})
+MERGE (o2:treatment {id: 'trị_liệu_bằng_bức_xạ_treatment'})
+MERGE (o1)-[r65:treatedBy]->(o2)
+SET r65.text = 'Thống kê cho thấy có một tỷ lệ nhỏ người
+bệnh xơ vôi phổi
+đã từng trải qua trị liệu bằng bức xạ trong điều trị các bệnh liên quan đến phổi và ung thư vú.'
+
+MERGE (o1:disease {id: 'bệnh_xơ_vôi_phổi_disease'})
+MERGE (o2:disease {id: 'ung_thư_vú_disease'})
+MERGE (o1)-[r66:relatedTo]->(o2)
+SET r66.text = 'Thống kê cho thấy có một tỷ lệ nhỏ người
+bệnh xơ vôi phổi
+đã từng trải qua trị liệu bằng bức xạ trong điều trị các bệnh liên quan đến phổi và ung thư vú.'
+
+MERGE (o1:treatment {id: 'trị_liệu_bằng_bức_xạ_treatment'})
+MERGE (o2:organ {id: 'phổi_organ'})
+MERGE (o1)-[r67:affects]->(o2)
+SET r67.text = 'Các tổn thương và mức độ ảnh hưởng của quá trình trị liệu phụ thuộc vào diện tích phổi tiếp xúc với bức xạ, tổng số lần bức xạ, hóa trị liệu được sử dụng&#8230;'
+
+MERGE (o1:lifestyle {id: 'lạm_dụng_thuốc_lifestyle'})
+MERGE (o2:symptom {id: 'tổn_thương_phổi_symptom'})
+MERGE (o1)-[r68:causes]->(o2)
+SET r68.text = 'Việc lạm dụng một số loại thuốc khi không có sự chỉ định của bác sĩ có thể gây hại cho phổi, nhất là các loại thuốc hóa trị như methotrexate, cyclophosphamide; thuốc điều trị rối loạn nhịp tim và các vấn đề tim mạch như amiodarone, propranolol; thuốc tâm thần và thuốc kháng sinh như nitrofurantoin, sulfasalazine.'
+
+MERGE (o1:treatment {id: 'thuốc_hóa_trị_treatment'})
+MERGE (o2:symptom {id: 'tổn_thương_phổi_symptom'})
+MERGE (o1)-[r69:causes]->(o2)
+SET r69.text = 'Việc lạm dụng một số loại thuốc khi không có sự chỉ định của bác sĩ có thể gây hại cho phổi, nhất là các loại thuốc hóa trị như methotrexate, cyclophosphamide; thuốc điều trị rối loạn nhịp tim và các vấn đề tim mạch như amiodarone, propranolol; thuốc tâm thần và thuốc kháng sinh như nitrofurantoin, sulfasalazine.'
+
+MERGE (o1:treatment {id: 'methotrexate_treatment'})
+MERGE (o2:symptom {id: 'tổn_thương_phổi_symptom'})
+MERGE (o1)-[r70:causes]->(o2)
+SET r70.text = 'Việc lạm dụng một số loại thuốc khi không có sự chỉ định của bác sĩ có thể gây hại cho phổi, nhất là các loại thuốc hóa trị như methotrexate, cyclophosphamide; thuốc điều trị rối loạn nhịp tim và các vấn đề tim mạch như amiodarone, propranolol; thuốc tâm thần và thuốc kháng sinh như nitrofurantoin, sulfasalazine.'
+
+MERGE (o1:treatment {id: 'cyclophosphamide_treatment'})
+MERGE (o2:symptom {id: 'tổn_thương_phổi_symptom'})
+MERGE (o1)-[r71:causes]->(o2)
+SET r71.text = 'Việc lạm dụng một số loại thuốc khi không có sự chỉ định của bác sĩ có thể gây hại cho phổi, nhất là các loại thuốc hóa trị như methotrexate, cyclophosphamide; thuốc điều trị rối loạn nhịp tim và các vấn đề tim mạch như amiodarone, propranolol; thuốc tâm thần và thuốc kháng sinh như nitrofurantoin, sulfasalazine.'
+
+MERGE (o1:treatment {id: 'thuốc_điều_trị_rối_loạn_nhịp_tim_treatment'})
+MERGE (o2:symptom {id: 'tổn_thương_phổi_symptom'})
+MERGE (o1)-[r72:causes]->(o2)
+SET r72.text = 'Việc lạm dụng một số loại thuốc khi không có sự chỉ định của bác sĩ có thể gây hại cho phổi, nhất là các loại thuốc hóa trị như methotrexate, cyclophosphamide; thuốc điều trị rối loạn nhịp tim và các vấn đề tim mạch như amiodarone, propranolol; thuốc tâm thần và thuốc kháng sinh như nitrofurantoin, sulfasalazine.'
+
+MERGE (o1:treatment {id: 'amiodarone_treatment'})
+MERGE (o2:symptom {id: 'tổn_thương_phổi_symptom'})
+MERGE (o1)-[r73:causes]->(o2)
+SET r73.text = 'Việc lạm dụng một số loại thuốc khi không có sự chỉ định của bác sĩ có thể gây hại cho phổi, nhất là các loại thuốc hóa trị như methotrexate, cyclophosphamide; thuốc điều trị rối loạn nhịp tim và các vấn đề tim mạch như amiodarone, propranolol; thuốc tâm thần và thuốc kháng sinh như nitrofurantoin, sulfasalazine.'
+
+MERGE (o1:treatment {id: 'propranolol_treatment'})
+MERGE (o2:symptom {id: 'tổn_thương_phổi_symptom'})
+MERGE (o1)-[r74:causes]->(o2)
+SET r74.text = 'Việc lạm dụng một số loại thuốc khi không có sự chỉ định của bác sĩ có thể gây hại cho phổi, nhất là các loại thuốc hóa trị như methotrexate, cyclophosphamide; thuốc điều trị rối loạn nhịp tim và các vấn đề tim mạch như amiodarone, propranolol; thuốc tâm thần và thuốc kháng sinh như nitrofurantoin, sulfasalazine.'
+
+MERGE (o1:treatment {id: 'thuốc_tâm_thần_treatment'})
+MERGE (o2:symptom {id: 'tổn_thương_phổi_symptom'})
+MERGE (o1)-[r75:causes]->(o2)
+SET r75.text = 'Việc lạm dụng một số loại thuốc khi không có sự chỉ định của bác sĩ có thể gây hại cho phổi, nhất là các loại thuốc hóa trị như methotrexate, cyclophosphamide; thuốc điều trị rối loạn nhịp tim và các vấn đề tim mạch như amiodarone, propranolol; thuốc tâm thần và thuốc kháng sinh như nitrofurantoin, sulfasalazine.'
+
+MERGE (o1:treatment {id: 'thuốc_kháng_sinh_treatment'})
+MERGE (o2:symptom {id: 'tổn_thương_phổi_symptom'})
+MERGE (o1)-[r76:causes]->(o2)
+SET r76.text = 'Việc lạm dụng một số loại thuốc khi không có sự chỉ định của bác sĩ có thể gây hại cho phổi, nhất là các loại thuốc hóa trị như methotrexate, cyclophosphamide; thuốc điều trị rối loạn nhịp tim và các vấn đề tim mạch như amiodarone, propranolol; thuốc tâm thần và thuốc kháng sinh như nitrofurantoin, sulfasalazine.'
+
+MERGE (o1:treatment {id: 'nitrofurantoin_treatment'})
+MERGE (o2:symptom {id: 'tổn_thương_phổi_symptom'})
+MERGE (o1)-[r77:causes]->(o2)
+SET r77.text = 'Việc lạm dụng một số loại thuốc khi không có sự chỉ định của bác sĩ có thể gây hại cho phổi, nhất là các loại thuốc hóa trị như methotrexate, cyclophosphamide; thuốc điều trị rối loạn nhịp tim và các vấn đề tim mạch như amiodarone, propranolol; thuốc tâm thần và thuốc kháng sinh như nitrofurantoin, sulfasalazine.'
+
+MERGE (o1:treatment {id: 'sulfasalazine_treatment'})
+MERGE (o2:symptom {id: 'tổn_thương_phổi_symptom'})
+MERGE (o1)-[r78:causes]->(o2)
+SET r78.text = 'Việc lạm dụng một số loại thuốc khi không có sự chỉ định của bác sĩ có thể gây hại cho phổi, nhất là các loại thuốc hóa trị như methotrexate, cyclophosphamide; thuốc điều trị rối loạn nhịp tim và các vấn đề tim mạch như amiodarone, propranolol; thuốc tâm thần và thuốc kháng sinh như nitrofurantoin, sulfasalazine.'
+
+MERGE (o1:disease {id: 'bệnh_nhiễm_trùng_phổi_disease'})
+MERGE (o2:symptom {id: 'tổn_thương_phổi_vĩnh_viễn_symptom'})
+MERGE (o1)-[r79:causes]->(o2)
+SET r79.text = 'Những bệnh nhiễm trùng phổi nghiêm trọng như bệnh lao, viêm phổi có thể gây tổn thương phổi vĩnh viễn; viêm khớp dạng thấp, bệnh lupus ban đỏ, hội chứng Sjogren và sarcoidosis, dạ dày trào ngược&#8230; ảnh hưởng đến tất cả các mô trong cơ thể, trong đó có phổi.'
+
+MERGE (o1:disease {id: 'bệnh_lao_disease'})
+MERGE (o2:symptom {id: 'tổn_thương_phổi_vĩnh_viễn_symptom'})
+MERGE (o1)-[r80:causes]->(o2)
+SET r80.text = 'Những bệnh nhiễm trùng phổi nghiêm trọng như bệnh lao, viêm phổi có thể gây tổn thương phổi vĩnh viễn; viêm khớp dạng thấp, bệnh lupus ban đỏ, hội chứng Sjogren và sarcoidosis, dạ dày trào ngược&#8230; ảnh hưởng đến tất cả các mô trong cơ thể, trong đó có phổi.'
+
+MERGE (o1:disease {id: 'viêm_phổi_disease'})
+MERGE (o2:symptom {id: 'tổn_thương_phổi_vĩnh_viễn_symptom'})
+MERGE (o1)-[r81:causes]->(o2)
+SET r81.text = 'Những bệnh nhiễm trùng phổi nghiêm trọng như bệnh lao, viêm phổi có thể gây tổn thương phổi vĩnh viễn; viêm khớp dạng thấp, bệnh lupus ban đỏ, hội chứng Sjogren và sarcoidosis, dạ dày trào ngược&#8230; ảnh hưởng đến tất cả các mô trong cơ thể, trong đó có phổi.'
+
+MERGE (o1:disease {id: 'viêm_khớp_dạng_thấp_disease'})
+MERGE (o2:organ {id: 'phổi_organ'})
+MERGE (o1)-[r82:affects]->(o2)
+SET r82.text = 'Những bệnh nhiễm trùng phổi nghiêm trọng như bệnh lao, viêm phổi có thể gây tổn thương phổi vĩnh viễn; viêm khớp dạng thấp, bệnh lupus ban đỏ, hội chứng Sjogren và sarcoidosis, dạ dày trào ngược&#8230; ảnh hưởng đến tất cả các mô trong cơ thể, trong đó có phổi.'
+
+MERGE (o1:disease {id: 'bệnh_lupus_ban_đỏ_disease'})
+MERGE (o2:organ {id: 'phổi_organ'})
+MERGE (o1)-[r83:affects]->(o2)
+SET r83.text = 'Những bệnh nhiễm trùng phổi nghiêm trọng như bệnh lao, viêm phổi có thể gây tổn thương phổi vĩnh viễn; viêm khớp dạng thấp, bệnh lupus ban đỏ, hội chứng Sjogren và sarcoidosis, dạ dày trào ngược&#8230; ảnh hưởng đến tất cả các mô trong cơ thể, trong đó có phổi.'
+
+MERGE (o1:disease {id: 'hội_chứng_sjogren_disease'})
+MERGE (o2:organ {id: 'phổi_organ'})
+MERGE (o1)-[r84:affects]->(o2)
+SET r84.text = 'Những bệnh nhiễm trùng phổi nghiêm trọng như bệnh lao, viêm phổi có thể gây tổn thương phổi vĩnh viễn; viêm khớp dạng thấp, bệnh lupus ban đỏ, hội chứng Sjogren và sarcoidosis, dạ dày trào ngược&#8230; ảnh hưởng đến tất cả các mô trong cơ thể, trong đó có phổi.'
+
+MERGE (o1:disease {id: 'sarcoidosis_disease'})
+MERGE (o2:organ {id: 'phổi_organ'})
+MERGE (o1)-[r85:affects]->(o2)
+SET r85.text = 'Những bệnh nhiễm trùng phổi nghiêm trọng như bệnh lao, viêm phổi có thể gây tổn thương phổi vĩnh viễn; viêm khớp dạng thấp, bệnh lupus ban đỏ, hội chứng Sjogren và sarcoidosis, dạ dày trào ngược&#8230; ảnh hưởng đến tất cả các mô trong cơ thể, trong đó có phổi.'
+
+MERGE (o1:disease {id: 'bệnh_xơ_phổi_disease'})
+MERGE (o2:organ {id: 'các_tổn_thương_phổi_organ'})
+MERGE (o1)-[r86:isSymptomOf]->(o2)
+SET r86.text = 'GS.TS.BS Ngô Quý Châu chia sẻ, bệnh xơ phổi tiến triển qua từng giai đoạn, điều đáng lo ngại là các dấu hiệu bệnh có thể kiểm soát được và thuyên giảm, nhưng không thể khôi phục được các tổn thương phổi.'
+
+MERGE (o1:symptom {id: 'khó_thở_symptom'})
+MERGE (o2:disease {id: 'bệnh_xơ_phổi_disease'})
+MERGE (o1)-[r87:isSymptomOf]->(o2)
+SET r87.text = 'Bệnh gây khó thở cùng một số biến chứng nguy hiểm cho người bệnh như: Giảm mức oxy trong máu xuống thấp: Phổi xơ hóa làm giảm lượng oxy nạp thêm vào máu, nguy cơ thiếu oxy trong máu gây phá vỡ hoạt động cơ thể, thậm chí có thể đe dọa tính mạng người bệnh.'
+
+MERGE (o1:symptom {id: 'giảm_mức_oxy_trong_máu_xuống_thấp_symptom'})
+MERGE (o2:disease {id: 'bệnh_xơ_phổi_disease'})
+MERGE (o1)-[r88:isSymptomOf]->(o2)
+SET r88.text = 'Bệnh gây khó thở cùng một số biến chứng nguy hiểm cho người bệnh như: Giảm mức oxy trong máu xuống thấp: Phổi xơ hóa làm giảm lượng oxy nạp thêm vào máu, nguy cơ thiếu oxy trong máu gây phá vỡ hoạt động cơ thể, thậm chí có thể đe dọa tính mạng người bệnh.'
+
+MERGE (o1:symptom {id: 'thiếu_oxy_trong_máu_symptom'})
+MERGE (o2:disease {id: 'bệnh_xơ_phổi_disease'})
+MERGE (o1)-[r89:isSymptomOf]->(o2)
+SET r89.text = 'Bệnh gây khó thở cùng một số biến chứng nguy hiểm cho người bệnh như: Giảm mức oxy trong máu xuống thấp: Phổi xơ hóa làm giảm lượng oxy nạp thêm vào máu, nguy cơ thiếu oxy trong máu gây phá vỡ hoạt động cơ thể, thậm chí có thể đe dọa tính mạng người bệnh.'
+
+MERGE (o1:symptom {id: 'tăng_áp_lực_lên_động_mạch_phổi_symptom'})
+MERGE (o2:disease {id: 'bệnh_xơ_phổi_disease'})
+MERGE (o1)-[r90:isSymptomOf]->(o2)
+SET r90.text = 'Bệnh gây khó thở cùng một số biến chứng nguy hiểm cho người bệnh như: Tăng áp lực lên động mạch phổi: Khi các động mạch và mao mạch nhỏ bị nén sẽ dẫn đến sức kháng mạch máu trong phổi tăng, làm tăng áp suất trong động mạch phổi.'
+
+MERGE (o1:symptom {id: 'tăng_áp_suất_trong_động_mạch_phổi_symptom'})
+MERGE (o2:disease {id: 'bệnh_xơ_phổi_disease'})
+MERGE (o1)-[r91:isSymptomOf]->(o2)
+SET r91.text = 'Bệnh gây khó thở cùng một số biến chứng nguy hiểm cho người bệnh như: Tăng áp lực lên động mạch phổi: Khi các động mạch và mao mạch nhỏ bị nén sẽ dẫn đến sức kháng mạch máu trong phổi tăng, làm tăng áp suất trong động mạch phổi. Đây là hiện tượng đặc biệt nghiêm trọng, có thể gây tử vong cho người bệnh ngay sau đó.'
+
+MERGE (o1:symptom {id: 'suy_tim_phải_symptom'})
+MERGE (o2:disease {id: 'bệnh_xơ_phổi_disease'})
+MERGE (o1)-[r92:isSymptomOf]->(o2)
+SET r92.text = 'Bệnh gây khó thở cùng một số biến chứng nguy hiểm cho người bệnh như: Suy tim phải: Trường hợp tâm thất phải hoạt động mạnh hơn, sức bơm mạnh hơn bình thường để di chuyển máu qua động mạch phổi bị chặn có thể dẫn đến suy tim phải.'
+
+MERGE (o1:symptom {id: 'suy_hô_hấp_symptom'})
+MERGE (o2:disease {id: 'bệnh_phổi_mãn_tính_disease'})
+MERGE (o1)-[r93:isSymptomOf]->(o2)
+SET r93.text = 'Bệnh gây khó thở cùng một số biến chứng nguy hiểm cho người bệnh như: Suy hô hấp: Hầu hết trường hợp này xảy ra ở giai đoạn cuối của bệnh phổi mãn tính, khi mức oxy trong máu giảm thấp đến mức báo động nguy hiểm, có thể dẫn đến rối loạn nhịp tim, gây bất tỉnh và hôn mê sâu.'
+
+MERGE (o1:disease {id: 'phổi_bị_xơ_hóa_disease'})
+MERGE (o2:disease {id: 'bệnh_xơ_phổi_disease'})
+MERGE (o1)-[r94:isSymptomOf]->(o2)
+SET r94.text = 'Phổi bị xơ hóa tiến triển chậm và có những dấu hiệu gần giống nhiều bệnh lý khác, do đó việc chẩn đoán bệnh khá khó khăn.'
+
+MERGE (o1:disease {id: 'bệnh_disease'})
+MERGE (o2:test {id: 'thăm_khám_test'})
+MERGE (o1)-[r95:diagnosedBy]->(o2)
+SET r95.text = 'Để chẩn đoán chính xác bệnh, bác sĩ cần thăm khám, hỏi tiền sử bệnh bản thân cũng như tiền sử gia đình, cụ thể các dấu hiệu bệnh hiện tại, các phơi nhiễm với khói bụi, hóa chất ô nhiễm nếu người bệnh có tiếp xúc..'
+
+MERGE (o1:disease {id: 'bệnh_disease'})
+MERGE (o2:test {id: 'hỏi_tiền_sử_bệnh_bản_thân_test'})
+MERGE (o1)-[r96:diagnosedBy]->(o2)
+SET r96.text = 'Để chẩn đoán chính xác bệnh, bác sĩ cần thăm khám, hỏi tiền sử bệnh bản thân cũng như tiền sử gia đình, cụ thể các dấu hiệu bệnh hiện tại, các phơi nhiễm với khói bụi, hóa chất ô nhiễm nếu người bệnh có tiếp xúc..'
+
+MERGE (o1:disease {id: 'bệnh_disease'})
+MERGE (o2:test {id: 'hỏi_tiền_sử_gia_đình_test'})
+MERGE (o1)-[r97:diagnosedBy]->(o2)
+SET r97.text = 'Để chẩn đoán chính xác bệnh, bác sĩ cần thăm khám, hỏi tiền sử bệnh bản thân cũng như tiền sử gia đình, cụ thể các dấu hiệu bệnh hiện tại, các phơi nhiễm với khói bụi, hóa chất ô nhiễm nếu người bệnh có tiếp xúc..'
+
+MERGE (o1:disease {id: 'bệnh_disease'})
+MERGE (o2:symptom {id: 'các_dấu_hiệu_bệnh_hiện_tại_symptom'})
+MERGE (o1)-[r98:diagnosedBy]->(o2)
+SET r98.text = 'Để chẩn đoán chính xác bệnh, bác sĩ cần thăm khám, hỏi tiền sử bệnh bản thân cũng như tiền sử gia đình, cụ thể các dấu hiệu bệnh hiện tại, các phơi nhiễm với khói bụi, hóa chất ô nhiễm nếu người bệnh có tiếp xúc..'
+
+MERGE (o1:disease {id: 'bệnh_disease'})
+MERGE (o2:cause {id: 'phơi_nhiễm_với_khói_bụi_cause'})
+MERGE (o1)-[r99:diagnosedBy]->(o2)
+SET r99.text = 'Để chẩn đoán chính xác bệnh, bác sĩ cần thăm khám, hỏi tiền sử bệnh bản thân cũng như tiền sử gia đình, cụ thể các dấu hiệu bệnh hiện tại, các phơi nhiễm với khói bụi, hóa chất ô nhiễm nếu người bệnh có tiếp xúc..'
+
+MERGE (o1:disease {id: 'bệnh_disease'})
+MERGE (o2:cause {id: 'phơi_nhiễm_với_hóa_chất_ô_nhiễm_cause'})
+MERGE (o1)-[r100:diagnosedBy]->(o2)
+SET r100.text = 'Để chẩn đoán chính xác bệnh, bác sĩ cần thăm khám, hỏi tiền sử bệnh bản thân cũng như tiền sử gia đình, cụ thể các dấu hiệu bệnh hiện tại, các phơi nhiễm với khói bụi, hóa chất ô nhiễm nếu người bệnh có tiếp xúc..'
+
+MERGE (o1:disease {id: 'bệnh_disease'})
+MERGE (o2:test {id: 'xét_nghiệm_test'})
+MERGE (o1)-[r101:diagnosedBy]->(o2)
+SET r101.text = 'Bên cạnh đó, người bệnh có thể được chỉ định thực hiện một số xét nghiệm kèm theo để kết quả chẩn đoán bệnh được đầy đủ và chính xác hơn.'
+
+MERGE (o1:disease {id: 'bệnh_disease'})
+MERGE (o2:test {id: 'x-quang_test'})
+MERGE (o1)-[r102:diagnosedBy]->(o2)
+SET r102.text = 'X-quang: Phim X-quang có thể cho thấy các mô sẹo điển hình của bệnh, rất hữu ích cho việc theo dõi tiến triển bệnh và hướng điều trị đúng đắn.'
+
+MERGE (o1:disease {id: 'bệnh_disease'})
+MERGE (o2:symptom {id: 'các_mô_sẹo_symptom'})
+MERGE (o1)-[r103:isSymptomOf]->(o2)
+SET r103.text = 'X-quang: Phim X-quang có thể cho thấy các mô sẹo điển hình của bệnh, rất hữu ích cho việc theo dõi tiến triển bệnh và hướng điều trị đúng đắn.'
+
+MERGE (o1:disease {id: 'bệnh_disease'})
+MERGE (o2:test {id: 'xét_nghiệm_test'})
+MERGE (o1)-[r104:diagnosedBy]->(o2)
+SET r104.text = 'X-quang: Phim X-quang có thể cho thấy các mô sẹo điển hình của bệnh, rất hữu ích cho việc theo dõi tiến triển bệnh và hướng điều trị đúng đắn. Tuy nhiên, một số trường hợp chụp X-quang chưa thấy rõ tổn thương phổi, người bệnh cần thực hiện thêm một số xét nghiệm khác hỗ trợ cho việc chẩn đoán.'
+
+MERGE (o1:symptom {id: 'các_tổn_thương_ở_phổi_symptom'})
+MERGE (o2:test {id: 'chụp_cắt_lớp_vi_tính_độ_phân_giải_cao_test'})
+MERGE (o1)-[r105:diagnosedBy]->(o2)
+SET r105.text = 'Chụp cắt lớp vi tính độ phân giải cao: Hình ảnh từ phim HRCT có độ phân giải cao cho thấy nhiều chi tiết sắc nét, kỹ càng các tổn thương ở phổi.'
+
+MERGE (o1:disease {id: 'bệnh_disease'})
+MERGE (o2:test {id: 'chụp_cắt_lớp_vi_tính_độ_phân_giải_cao_test'})
+MERGE (o1)-[r106:diagnosedBy]->(o2)
+SET r106.text = 'Chụp cắt lớp vi tính độ phân giải cao: Hình ảnh từ phim HRCT có độ phân giải cao cho thấy nhiều chi tiết sắc nét, kỹ càng các tổn thương ở phổi. Các dạng xơ phổi khác nhau sẽ có những đặc điểm hiển thị khác nhau trên HRCT, do đó đây được xem là công cụ hữu ích hỗ trợ cho việc chẩn đoán.'
+
+MERGE (o1:organ {id: 'chức_năng_phổi_organ'})
+MERGE (o2:test {id: 'đo_oxy_test'})
+MERGE (o1)-[r107:diagnosedBy]->(o2)
+SET r107.text = 'Để đánh giá chức năng, hoạt động hiện tại của phổi, bác sĩ có thể chỉ định thực hiện các kiểm tra cận lâm sàng như: Đo oxy: Sử dụng một thiết bị nhỏ đặt trên ngón tay để đo độ bão hòa oxy trong máu.'
+
+MERGE (o1:organ {id: 'chức_năng_phổi_organ'})
+MERGE (o2:test {id: 'thử_nghiệm_gắng_sức_test'})
+MERGE (o1)-[r108:diagnosedBy]->(o2)
+SET r108.text = 'Để đánh giá chức năng, hoạt động hiện tại của phổi, bác sĩ có thể chỉ định thực hiện các kiểm tra cận lâm sàng như: Thử nghiệm gắng sức: Thực hiện thử nghiệm trên máy chạy bộ hoặc xe đạp để theo dõi chức năng của phổi khi đang hoạt động.'
+
+MERGE (o1:organ {id: 'chức_năng_phổi_organ'})
+MERGE (o2:test {id: 'khí_máu_động_mạch_test'})
+MERGE (o1)-[r109:diagnosedBy]->(o2)
+SET r109.text = 'Để đánh giá chức năng, hoạt động hiện tại của phổi, bác sĩ có thể chỉ định thực hiện các kiểm tra cận lâm sàng như: Khí máu động mạch: Lấy một ít máu ở động mạch của người bệnh để đo các chỉ số oxy và CO2.'
+
+MERGE (o1:disease {id: 'bệnh_xơ_hóa_phổi_disease'})
+MERGE (o2:test {id: 'sinh_thiết_test'})
+MERGE (o1)-[r110:diagnosedBy]->(o2)
+SET r110.text = 'Sinh thiết: Bệnh xơ hóa phổi cũng có thể được chẩn đoán bằng cách kiểm tra một lượng nhỏ mô phổi (còn gọi là sinh thiết) trong phòng thí nghiệm.'
+
+MERGE (o1:disease {id: 'bệnh_xơ_hóa_phổi_disease'})
+MERGE (o2:test {id: 'nội_soi_phế_quản_test'})
+MERGE (o1)-[r111:diagnosedBy]->(o2)
+SET r111.text = 'Sinh thiết: Bệnh xơ hóa phổi cũng có thể được chẩn đoán bằng cách kiểm tra một lượng nhỏ mô phổi (còn gọi là sinh thiết) trong phòng thí nghiệm. Các cách thu mẫu sinh thiết gồm: Nội soi phế quản: Bác sĩ sẽ sử dụng một ống nhỏ đi qua mũi hoặc miệng vào phổi.'
+
+MERGE (o1:disease {id: 'bệnh_xơ_hóa_phổi_disease'})
+MERGE (o2:test {id: 'rửa_phế_quản_test'})
+MERGE (o1)-[r112:diagnosedBy]->(o2)
+SET r112.text = 'Sinh thiết: Bệnh xơ hóa phổi cũng có thể được chẩn đoán bằng cách kiểm tra một lượng nhỏ mô phổi (còn gọi là sinh thiết) trong phòng thí nghiệm. Các cách thu mẫu sinh thiết gồm: Rửa phế quản: Ở phương pháp này, bác sĩ sẽ tiêm nước muối qua soi phế quản, sau đó lại hút ra ngay lập tức.'
+
+MERGE (o1:disease {id: 'bệnh_xơ_hóa_phổi_disease'})
+MERGE (o2:test {id: 'phẫu_thuật_nội_soi_sinh_thiết_test'})
+MERGE (o1)-[r113:diagnosedBy]->(o2)
+SET r113.text = 'Sinh thiết: Bệnh xơ hóa phổi cũng có thể được chẩn đoán bằng cách kiểm tra một lượng nhỏ mô phổi (còn gọi là sinh thiết) trong phòng thí nghiệm. Các cách thu mẫu sinh thiết gồm: Phẫu thuật nội soi sinh thiết: Một số trường hợp người bệnh được khuyên thực hiện phẫu thuật nội soi sinh thiết để có kết quả chẩn đoán chính xác nhất, mặc dù đây là phương pháp chẩn đoán xâm lấn nhất.'
+
+MERGE (o1:disease {id: 'bệnh_xơ_hóa_phổi_disease'})
+MERGE (o2:treatment {id: 'phác_đồ_điều_trị_triệt_để_treatment'})
+MERGE (o1)-[r114:treatedBy]->(o2)
+SET r114.text = 'GS.TS.BS Ngô Quý Châu cho biết, hiện nay chưa có phác đồ điều trị triệt để bệnh xơ hóa phổi.'
+
+MERGE (o1:disease {id: 'bệnh_disease'})
+MERGE (o2:treatment {id: 'giảm_thiểu_các_triệu_chứng_bệnh_treatment'})
+MERGE (o1)-[r115:treatedBy]->(o2)
+SET r115.text = 'Những phương pháp điều trị hiện tại chủ yếu giảm thiểu, cải thiện các triệu chứng bệnh, làm chậm quá trình phát triển bệnh và cải thiện, nâng cao chất lượng cuộc sống của người bệnh.'
+
+MERGE (o1:disease {id: 'bệnh_disease'})
+MERGE (o2:treatment {id: 'làm_chậm_quá_trình_phát_triển_bệnh_treatment'})
+MERGE (o1)-[r116:treatedBy]->(o2)
+SET r116.text = 'Những phương pháp điều trị hiện tại chủ yếu giảm thiểu, cải thiện các triệu chứng bệnh, làm chậm quá trình phát triển bệnh và cải thiện, nâng cao chất lượng cuộc sống của người bệnh.'
+
+MERGE (o1:disease {id: 'bệnh_disease'})
+MERGE (o2:treatment {id: 'cải_thiện_chất_lượng_cuộc_sống_treatment'})
+MERGE (o1)-[r117:treatedBy]->(o2)
+SET r117.text = 'Những phương pháp điều trị hiện tại chủ yếu giảm thiểu, cải thiện các triệu chứng bệnh, làm chậm quá trình phát triển bệnh và cải thiện, nâng cao chất lượng cuộc sống của người bệnh.'
+
+MERGE (o1:disease {id: 'bệnh_disease'})
+MERGE (o2:treatment {id: 'prednisone_corticosteroid_treatment'})
+MERGE (o1)-[r118:treatedBy]->(o2)
+SET r118.text = 'Một số người bệnh được chỉ định điều trị ban đầu với prednisone corticosteroid, có thể kết hợp thêm các loại thuốc ức chế miễn dịch khác như methotrexate, cyclosporin.'
+
+MERGE (o1:disease {id: 'bệnh_disease'})
+MERGE (o2:treatment {id: 'thuốc_ức_chế_miễn_dịch_treatment'})
+MERGE (o1)-[r119:treatedBy]->(o2)
+SET r119.text = 'Một số người bệnh được chỉ định điều trị ban đầu với prednisone corticosteroid, có thể kết hợp thêm các loại thuốc ức chế miễn dịch khác như methotrexate, cyclosporin.'
+
+MERGE (o1:treatment {id: 'thuốc_treatment'})
+MERGE (o2:symptom {id: 'buồn_nôn_symptom'})
+MERGE (o1)-[r120:affects]->(o2)
+SET r120.text = 'Các loại thuốc này có thể có một số tác dụng phụ như buồn nôn, tiêu chảy hoặc phát ban.'
+
+MERGE (o1:treatment {id: 'thuốc_treatment'})
+MERGE (o2:symptom {id: 'tiêu_chảy_symptom'})
+MERGE (o1)-[r121:affects]->(o2)
+SET r121.text = 'Các loại thuốc này có thể có một số tác dụng phụ như buồn nôn, tiêu chảy hoặc phát ban.'
+
+MERGE (o1:treatment {id: 'thuốc_treatment'})
+MERGE (o2:symptom {id: 'phát_ban_symptom'})
+MERGE (o1)-[r122:affects]->(o2)
+SET r122.text = 'Các loại thuốc này có thể có một số tác dụng phụ như buồn nôn, tiêu chảy hoặc phát ban.'
+
+MERGE (o1:disease {id: 'bệnh_xơ_phổi_disease'})
+MERGE (o2:treatment {id: 'liệu_pháp_oxy_treatment'})
+MERGE (o1)-[r123:treatedBy]->(o2)
+SET r123.text = 'Liệu pháp oxy: Việc thở oxy không thể ngăn các tổn thương phổi nhưng hữu ích cho hơi thở, cải thiện vận động dễ dàng hơn, giảm các biến chứng, cải thiện giấc ngủ và tinh thần người bệnh.'
+
+MERGE (o1:treatment {id: 'liệu_pháp_oxy_treatment'})
+MERGE (o2:symptom {id: 'hơi_thở_symptom'})
+MERGE (o1)-[r124:affects]->(o2)
+SET r124.text = 'Liệu pháp oxy: Việc thở oxy không thể ngăn các tổn thương phổi nhưng hữu ích cho hơi thở, cải thiện vận động dễ dàng hơn, giảm các biến chứng, cải thiện giấc ngủ và tinh thần người bệnh.'
+
+MERGE (o1:treatment {id: 'liệu_pháp_oxy_treatment'})
+MERGE (o2:symptom {id: 'vận_động_symptom'})
+MERGE (o1)-[r125:affects]->(o2)
+SET r125.text = 'Liệu pháp oxy: Việc thở oxy không thể ngăn các tổn thương phổi nhưng hữu ích cho hơi thở, cải thiện vận động dễ dàng hơn, giảm các biến chứng, cải thiện giấc ngủ và tinh thần người bệnh.'
+
+MERGE (o1:treatment {id: 'liệu_pháp_oxy_treatment'})
+MERGE (o2:symptom {id: 'giấc_ngủ_symptom'})
+MERGE (o1)-[r126:affects]->(o2)
+SET r126.text = 'Liệu pháp oxy: Việc thở oxy không thể ngăn các tổn thương phổi nhưng hữu ích cho hơi thở, cải thiện vận động dễ dàng hơn, giảm các biến chứng, cải thiện giấc ngủ và tinh thần người bệnh.'
+
+MERGE (o1:treatment {id: 'liệu_pháp_oxy_treatment'})
+MERGE (o2:symptom {id: 'tinh_thần_symptom'})
+MERGE (o1)-[r127:affects]->(o2)
+SET r127.text = 'Liệu pháp oxy: Việc thở oxy không thể ngăn các tổn thương phổi nhưng hữu ích cho hơi thở, cải thiện vận động dễ dàng hơn, giảm các biến chứng, cải thiện giấc ngủ và tinh thần người bệnh.'
+
+MERGE (o1:treatment {id: 'liệu_pháp_oxy_treatment'})
+MERGE (o2:symptom {id: 'áp_lực_ở_tim_bên_phải_symptom'})
+MERGE (o1)-[r128:affects]->(o2)
+SET r128.text = 'Bên cạnh đó, liệu pháp oxy còn giúp giảm áp lực ở tim bên phải, do đó người bệnh có thể được chỉ định sử dụng liệu pháp này tùy theo mức độ bệnh và tình trạng sức khỏe.'
+
+MERGE (o1:disease {id: 'bệnh_xơ_phổi_disease'})
+MERGE (o2:treatment {id: 'phục_hồi_chức_năng_phổi_treatment'})
+MERGE (o1)-[r129:treatedBy]->(o2)
+SET r129.text = 'Phục hồi chức năng phổi: Mục đích chính của phương pháp này tập trung vào việc tập thể dục, cách hít thở hiệu quả để cải thiện tình trạng khó thở, tăng sức bền trong các hoạt động, không chỉ điều trị bệnh mà còn giúp cải thiện, nâng cao chất lượng cuộc sống người bệnh trong đời sống hàng ngày.'
+
+MERGE (o1:treatment {id: 'phục_hồi_chức_năng_phổi_treatment'})
+MERGE (o2:symptom {id: 'khó_thở_symptom'})
+MERGE (o1)-[r130:affects]->(o2)
+SET r130.text = 'Phục hồi chức năng phổi: Mục đích chính của phương pháp này tập trung vào việc tập thể dục, cách hít thở hiệu quả để cải thiện tình trạng khó thở, tăng sức bền trong các hoạt động, không chỉ điều trị bệnh mà còn giúp cải thiện, nâng cao chất lượng cuộc sống người bệnh trong đời sống hàng ngày.'
+
+MERGE (o1:treatment {id: 'phục_hồi_chức_năng_phổi_treatment'})
+MERGE (o2:symptom {id: 'sức_bền_symptom'})
+MERGE (o1)-[r131:affects]->(o2)
+SET r131.text = 'Phục hồi chức năng phổi: Mục đích chính của phương pháp này tập trung vào việc tập thể dục, cách hít thở hiệu quả để cải thiện tình trạng khó thở, tăng sức bền trong các hoạt động, không chỉ điều trị bệnh mà còn giúp cải thiện, nâng cao chất lượng cuộc sống người bệnh trong đời sống hàng ngày.'
+
+MERGE (o1:disease {id: 'bệnh_xơ_hóa_phổi_disease'})
+MERGE (o2:treatment {id: 'cấy_ghép_phổi_treatment'})
+MERGE (o1)-[r132:treatedBy]->(o2)
+SET r132.text = 'Cấy ghép phổi là lựa chọn cuối cùng đối với những người trẻ tuổi bị xơ hóa phổi nghiêm trọng, bệnh không thể cải thiện sau khi áp dụng các phương pháp điều trị khác.'
+
+MERGE (o1:treatment {id: 'cấy_ghép_phổi_treatment'})
+MERGE (o2:lifestyle {id: 'thuốc_lá_lifestyle'})
+MERGE (o1)-[r133:affects]->(o2)
+SET r133.text = 'Để thực hiện ghép phổi, người bệnh phải bỏ thuốc lá, đủ sức khỏe để trải qua quá trình phẫu thuật và điều trị sau phẫu thuật,&#8230; Tuy nhiên, đây cũng là phương pháp điều trị khá phức tạp, tốn chi phí và tiềm ẩn nhiều nguy cơ khác.'
+
+MERGE (o1:treatment {id: 'cấy_ghép_phổi_treatment'})
+MERGE (o2:symptom {id: 'sức_khỏe_symptom'})
+MERGE (o1)-[r134:affects]->(o2)
+SET r134.text = 'Để thực hiện ghép phổi, người bệnh phải bỏ thuốc lá, đủ sức khỏe để trải qua quá trình phẫu thuật và điều trị sau phẫu thuật,&#8230; Tuy nhiên, đây cũng là phương pháp điều trị khá phức tạp, tốn chi phí và tiềm ẩn nhiều nguy cơ khác.'
+
+MERGE (o1:treatment {id: 'cấy_ghép_phổi_treatment'})
+MERGE (o2:treatment {id: 'phẫu_thuật_treatment'})
+MERGE (o1)-[r135:affects]->(o2)
+SET r135.text = 'Để thực hiện ghép phổi, người bệnh phải bỏ thuốc lá, đủ sức khỏe để trải qua quá trình phẫu thuật và điều trị sau phẫu thuật,&#8230; Tuy nhiên, đây cũng là phương pháp điều trị khá phức tạp, tốn chi phí và tiềm ẩn nhiều nguy cơ khác.'
+
+MERGE (o1:treatment {id: 'cấy_ghép_phổi_treatment'})
+MERGE (o2:symptom {id: 'chi_phí_symptom'})
+MERGE (o1)-[r136:affects]->(o2)
+SET r136.text = 'Để thực hiện ghép phổi, người bệnh phải bỏ thuốc lá, đủ sức khỏe để trải qua quá trình phẫu thuật và điều trị sau phẫu thuật,&#8230; Tuy nhiên, đây cũng là phương pháp điều trị khá phức tạp, tốn chi phí và tiềm ẩn nhiều nguy cơ khác.'

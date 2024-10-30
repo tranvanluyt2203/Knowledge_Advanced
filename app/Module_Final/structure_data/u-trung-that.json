@@ -1,0 +1,1034 @@
+[
+    {
+        "text": "Các khối u trung thất lành tính và ác tính, bao gồm khối u từ tuyến ức, dây thần kinh, mô bạch huyết (hạch bạch huyết, mô liên kết hoặc tế bào mầm), có thể ảnh hưởng đến chức năng của các cơ quan lân cận nếu không được can thiệp sớm.",
+        "head": "Các khối u trung thất",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "chức năng của các cơ quan lân cận",
+        "tail_type": "organ"
+    },
+    {
+        "text": "U trung thất là khối u hình thành ở khu vực trung thất.",
+        "head": "U trung thất",
+        "head_type": "disease",
+        "relation": "locatedIn",
+        "tail": "khu vực trung thất",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Chúng có thể lành tính (không phải ung thư) hoặc ác tính (ung thư).",
+        "head": "U trung thất",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "ung thư",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khối u trung thất có khả năng xuất hiện ở phần trước hoặc sau của khu vực này.",
+        "head": "Khối u trung thất",
+        "head_type": "disease",
+        "relation": "locatedIn",
+        "tail": "phần trước hoặc sau của khu vực này",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Vị trí khối u phụ thuộc vào độ tuổi của người bệnh.",
+        "head": "Vị trí khối u",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "độ tuổi của người bệnh",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Thống kê cho thấy các khối u phát triển ở phần sau của trung thất chủ yếu gặp ở trẻ em, còn khối u ở phần trước trung thất xảy ra nhiều hơn ở người lớn.",
+        "head": "Các khối u phát triển ở phần sau của trung thất",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "trẻ em",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Thống kê cho thấy các khối u phát triển ở phần sau của trung thất chủ yếu gặp ở trẻ em, còn khối u ở phần trước trung thất xảy ra nhiều hơn ở người lớn.",
+        "head": "Các khối u phát triển ở phần trước trung thất",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "người lớn",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Trung thất là khu vực được bao quanh bởi xương ức ở phía trước, cột sống ở phía sau và phổi ở hai bên.",
+        "head": "Trung thất",
+        "head_type": "organ",
+        "relation": "locatedIn",
+        "tail": "xương ức ở phía trước, cột sống ở phía sau và phổi ở hai bên",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Trung thất chứa tim, động mạch chủ, các hạch bạch huyết, tuyến ức, thực quản, khí quản và dây thần kinh.",
+        "head": "Trung thất",
+        "head_type": "organ",
+        "relation": "contains",
+        "tail": "tim, động mạch chủ, các hạch bạch huyết, tuyến ức, thực quản, khí quản và dây thần kinh",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Ung thư hạch: bao gồm cả u Lympho Hodgkin và u Lympho không Hodgkin; U tuyến ức và u nang tuyến ức: là nguyên nhân phổ biến nhất gây ra khối u trung thất.",
+        "head": "Ung thư hạch",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "u Lympho Hodgkin và u Lympho không Hodgkin",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ung thư hạch: bao gồm cả u Lympho Hodgkin và u Lympho không Hodgkin; U tuyến ức và u nang tuyến ức: là nguyên nhân phổ biến nhất gây ra khối u trung thất.",
+        "head": "U tuyến ức và u nang tuyến ức",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "khối u trung thất",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Phần lớn các u tuyến ức là lành tính và được bao quanh bởi một bao xơ;",
+        "head": "các u tuyến ức",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "lành tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tế bào mầm: 60-70% các khối u tế bào mầm là lành tính, thường gặp ở cả nam và nữ;",
+        "head": "các khối u tế bào mầm",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "lành tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khối trung thất tuyến giáp: thường là khối u lành tính, chẳng hạn như bướu cổ.",
+        "head": "Khối trung thất tuyến giáp",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "lành tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "U nang phế quản: là một dạng phát triển lành tính có nguồn gốc từ đường hô hấp;",
+        "head": "U nang phế quản",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "lành tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nổi hạch trung thất: tình trạng hạch to lên;",
+        "head": "Nổi hạch trung thất",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "hạch to lên",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "U nang màng ngoài tim: khối u ác tính nguyên phát của màng ngoài tim;",
+        "head": "U nang màng ngoài tim",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "ác tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các khối u khí quản: có thể lành tính hoặc ác tính;",
+        "head": "Các khối u khí quản",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "lành tính hoặc ác tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các khối u thực quản: có thể lành tính hoặc ác tính;",
+        "head": "Các khối u thực quản",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "lành tính hoặc ác tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các bất thường về thực quản: bao gồm chứng giãn thực quản, túi thừa và thoát vị hông;",
+        "head": "Các bất thường về thực quản",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "chứng giãn thực quản, túi thừa và thoát vị hông",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bất thường mạch máu: bao gồm chứng phình động mạch chủ và bóc tách động mạch chủ.",
+        "head": "Bất thường mạch máu",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "chứng phình động mạch chủ và bóc tách động mạch chủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các khối u thần kinh: là nguyên nhân phổ biến nhất của các khối u trung thất sau, được phân loại thành khối u vỏ bọc thần kinh, khối u tế bào hạch và khối u tế bào paraganglionic.",
+        "head": "Các khối u thần kinh",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "khối u vỏ bọc thần kinh, khối u tế bào hạch và khối u tế bào paraganglionic",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khoảng 70% khối u thần kinh là lành tính;",
+        "head": "khối u thần kinh",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "lành tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nổi hạch: do sự tăng sinh của các hạch bạch huyết;",
+        "head": "Nổi hạch",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "sự tăng sinh của các hạch bạch huyết",
+        "tail_type": "disease"
+    },
+    {
+        "text": "U nang thần kinh: là dạng u hiếm gặp, liên quan đến cả yếu tố thần kinh và đường tiêu hóa;",
+        "head": "U nang thần kinh",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "yếu tố thần kinh và đường tiêu hóa",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Bất thường cột sống: bao gồm các bất thường nhiễm trùng, u ác tính và chấn thương lồng ngực;",
+        "head": "Bất thường cột sống",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "các bất thường nhiễm trùng, u ác tính và chấn thương lồng ngực",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Gần 40% những người có khối u trung thất không biểu hiện triệu chứng.",
+        "head": "không biểu hiện triệu chứng",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "khối u trung thất",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khối u thường được phát hiện trong quá trình chụp X-quang ngực để chẩn đoán một tình trạng sức khỏe khác.",
+        "head": "chụp X-quang ngực",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "khối u trung thất",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu các triệu chứng sau xuất hiện, đó là do khối u đang chèn ép các cơ quan xung quanh:  Ho Hụt hơi Đau ngực Buồn nôn và nôn Sốt Ớn lạnh Đổ mồ hôi đêm Ho ra máu Khàn tiếng Giảm cân không chủ đích Nổi hạch Thở khò khè Sụp mí mắt, đồng tử nhỏ và các vấn đề về mắt khác",
+        "head": "Ho",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "khối u trung thất",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu các triệu chứng sau xuất hiện, đó là do khối u đang chèn ép các cơ quan xung quanh:  Ho Hụt hơi Đau ngực Buồn nôn và nôn Sốt Ớn lạnh Đổ mồ hôi đêm Ho ra máu Khàn tiếng Giảm cân không chủ đích Nổi hạch Thở khò khè Sụp mí mắt, đồng tử nhỏ và các vấn đề về mắt khác",
+        "head": "Hụt hơi",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "khối u trung thất",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu các triệu chứng sau xuất hiện, đó là do khối u đang chèn ép các cơ quan xung quanh:  Ho Hụt hơi Đau ngực Buồn nôn và nôn Sốt Ớn lạnh Đổ mồ hôi đêm Ho ra máu Khàn tiếng Giảm cân không chủ đích Nổi hạch Thở khò khè Sụp mí mắt, đồng tử nhỏ và các vấn đề về mắt khác",
+        "head": "Đau ngực",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "khối u trung thất",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu các triệu chứng sau xuất hiện, đó là do khối u đang chèn ép các cơ quan xung quanh:  Ho Hụt hơi Đau ngực Buồn nôn và nôn Sốt Ớn lạnh Đổ mồ hôi đêm Ho ra máu Khàn tiếng Giảm cân không chủ đích Nổi hạch Thở khò khè Sụp mí mắt, đồng tử nhỏ và các vấn đề về mắt khác",
+        "head": "Buồn nôn và nôn",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "khối u trung thất",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu các triệu chứng sau xuất hiện, đó là do khối u đang chèn ép các cơ quan xung quanh:  Ho Hụt hơi Đau ngực Buồn nôn và nôn Sốt Ớn lạnh Đổ mồ hôi đêm Ho ra máu Khàn tiếng Giảm cân không chủ đích Nổi hạch Thở khò khè Sụp mí mắt, đồng tử nhỏ và các vấn đề về mắt khác",
+        "head": "Sốt",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "khối u trung thất",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu các triệu chứng sau xuất hiện, đó là do khối u đang chèn ép các cơ quan xung quanh:  Ho Hụt hơi Đau ngực Buồn nôn và nôn Sốt Ớn lạnh Đổ mồ hôi đêm Ho ra máu Khàn tiếng Giảm cân không chủ đích Nổi hạch Thở khò khè Sụp mí mắt, đồng tử nhỏ và các vấn đề về mắt khác",
+        "head": "Ớn lạnh",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "khối u trung thất",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu các triệu chứng sau xuất hiện, đó là do khối u đang chèn ép các cơ quan xung quanh:  Ho Hụt hơi Đau ngực Buồn nôn và nôn Sốt Ớn lạnh Đổ mồ hôi đêm Ho ra máu Khàn tiếng Giảm cân không chủ đích Nổi hạch Thở khò khè Sụp mí mắt, đồng tử nhỏ và các vấn đề về mắt khác",
+        "head": "Đổ mồ hôi đêm",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "khối u trung thất",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu các triệu chứng sau xuất hiện, đó là do khối u đang chèn ép các cơ quan xung quanh:  Ho Hụt hơi Đau ngực Buồn nôn và nôn Sốt Ớn lạnh Đổ mồ hôi đêm Ho ra máu Khàn tiếng Giảm cân không chủ đích Nổi hạch Thở khò khè Sụp mí mắt, đồng tử nhỏ và các vấn đề về mắt khác",
+        "head": "Ho ra máu",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "khối u trung thất",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu các triệu chứng sau xuất hiện, đó là do khối u đang chèn ép các cơ quan xung quanh:  Ho Hụt hơi Đau ngực Buồn nôn và nôn Sốt Ớn lạnh Đổ mồ hôi đêm Ho ra máu Khàn tiếng Giảm cân không chủ đích Nổi hạch Thở khò khè Sụp mí mắt, đồng tử nhỏ và các vấn đề về mắt khác",
+        "head": "Khàn tiếng",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "khối u trung thất",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu các triệu chứng sau xuất hiện, đó là do khối u đang chèn ép các cơ quan xung quanh:  Ho Hụt hơi Đau ngực Buồn nôn và nôn Sốt Ớn lạnh Đổ mồ hôi đêm Ho ra máu Khàn tiếng Giảm cân không chủ đích Nổi hạch Thở khò khè Sụp mí mắt, đồng tử nhỏ và các vấn đề về mắt khác",
+        "head": "Giảm cân không chủ đích",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "khối u trung thất",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu các triệu chứng sau xuất hiện, đó là do khối u đang chèn ép các cơ quan xung quanh:  Ho Hụt hơi Đau ngực Buồn nôn và nôn Sốt Ớn lạnh Đổ mồ hôi đêm Ho ra máu Khàn tiếng Giảm cân không chủ đích Nổi hạch Thở khò khè Sụp mí mắt, đồng tử nhỏ và các vấn đề về mắt khác",
+        "head": "Nổi hạch",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "khối u trung thất",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu các triệu chứng sau xuất hiện, đó là do khối u đang chèn ép các cơ quan xung quanh:  Ho Hụt hơi Đau ngực Buồn nôn và nôn Sốt Ớn lạnh Đổ mồ hôi đêm Ho ra máu Khàn tiếng Giảm cân không chủ đích Nổi hạch Thở khò khè Sụp mí mắt, đồng tử nhỏ và các vấn đề về mắt khác",
+        "head": "Thở khò khè",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "khối u trung thất",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu các triệu chứng sau xuất hiện, đó là do khối u đang chèn ép các cơ quan xung quanh:  Ho Hụt hơi Đau ngực Buồn nôn và nôn Sốt Ớn lạnh Đổ mồ hôi đêm Ho ra máu Khàn tiếng Giảm cân không chủ đích Nổi hạch Thở khò khè Sụp mí mắt, đồng tử nhỏ và các vấn đề về mắt khác",
+        "head": "Sụp mí mắt, đồng tử nhỏ và các vấn đề về mắt khác",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "khối u trung thất",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Những cơn ho dai dẳng, ho ra máu là biểu hiện cho thấy khối u trung thất đang chèn ép phổi",
+        "head": "ho dai dẳng, ho ra máu",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "khối u trung thất",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Những cơn ho dai dẳng, ho ra máu là biểu hiện cho thấy khối u trung thất đang chèn ép phổi",
+        "head": "khối u trung thất",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "phổi",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Theo TS.BS Nguyễn Anh Dũng, Trưởng khoa Phẫu thuật Tim mạch - Lồng ngực, Trung tâm tim mạch BVĐK Tâm Anh TP.HCM, cả khối u trung thất lành tính và ác tính đều cần điều trị.",
+        "head": "khối u trung thất lành tính",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "điều trị",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Theo TS.BS Nguyễn Anh Dũng, Trưởng khoa Phẫu thuật Tim mạch - Lồng ngực, Trung tâm tim mạch BVĐK Tâm Anh TP.HCM, cả khối u trung thất lành tính và ác tính đều cần điều trị.",
+        "head": "khối u trung thất ác tính",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "điều trị",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Nếu không can thiệp, khi khối u phát triển, chúng sẽ chèn ép các cơ quan và mô xung quanh, thậm chí ảnh hưởng đến chức năng của những cơ quan này.",
+        "head": "khối u",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "các cơ quan và mô xung quanh",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Trong khi đó, các khối u ác tính có thể lây lan sang những vùng khác của cơ thể.",
+        "head": "khối u ác tính",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "cơ thể",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Nếu chúng xâm lấn vào tủy sống sẽ gây chèn ép tủy sống.",
+        "head": "khối u",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "tủy sống",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Trường hợp chúng xâm lấn tim hoặc các mạch máu của tim, người bệnh sẽ đối mặt với nguy cơ tử vong.",
+        "head": "khối u",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "tim",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Trường hợp chúng xâm lấn tim hoặc các mạch máu của tim, người bệnh sẽ đối mặt với nguy cơ tử vong.",
+        "head": "khối u",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "các mạch máu của tim",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Bên cạnh đã điều trị u trung thất bằng phẫu thuật, hóa trị hoặc xạ trị, người bệnh vẫn có thể gặp phải các tác dụng phụ nghiêm trọng, chẳng hạn như:  Giảm cảm giác thèm ăn Chảy máu Thiếu máu Táo bón Tiêu chảy Mệt mỏi Rụng tóc Nhiễm trùng Buồn nôn, nôn Đau đớn Sưng tấy",
+        "head": "u trung thất",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "phẫu thuật",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Bên cạnh đã điều trị u trung thất bằng phẫu thuật, hóa trị hoặc xạ trị, người bệnh vẫn có thể gặp phải các tác dụng phụ nghiêm trọng, chẳng hạn như:  Giảm cảm giác thèm ăn Chảy máu Thiếu máu Táo bón Tiêu chảy Mệt mỏi Rụng tóc Nhiễm trùng Buồn nôn, nôn Đau đớn Sưng tấy",
+        "head": "u trung thất",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "hóa trị",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Bên cạnh đã điều trị u trung thất bằng phẫu thuật, hóa trị hoặc xạ trị, người bệnh vẫn có thể gặp phải các tác dụng phụ nghiêm trọng, chẳng hạn như:  Giảm cảm giác thèm ăn Chảy máu Thiếu máu Táo bón Tiêu chảy Mệt mỏi Rụng tóc Nhiễm trùng Buồn nôn, nôn Đau đớn Sưng tấy",
+        "head": "u trung thất",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "xạ trị",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Bên cạnh đã điều trị u trung thất bằng phẫu thuật, hóa trị hoặc xạ trị, người bệnh vẫn có thể gặp phải các tác dụng phụ nghiêm trọng, chẳng hạn như:  Giảm cảm giác thèm ăn Chảy máu Thiếu máu Táo bón Tiêu chảy Mệt mỏi Rụng tóc Nhiễm trùng Buồn nôn, nôn Đau đớn Sưng tấy",
+        "head": "Giảm cảm giác thèm ăn",
+        "head_type": "symptom",
+        "relation": "causedBy",
+        "tail": "điều trị u trung thất",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Bên cạnh đã điều trị u trung thất bằng phẫu thuật, hóa trị hoặc xạ trị, người bệnh vẫn có thể gặp phải các tác dụng phụ nghiêm trọng, chẳng hạn như:  Giảm cảm giác thèm ăn Chảy máu Thiếu máu Táo bón Tiêu chảy Mệt mỏi Rụng tóc Nhiễm trùng Buồn nôn, nôn Đau đớn Sưng tấy",
+        "head": "Chảy máu",
+        "head_type": "symptom",
+        "relation": "causedBy",
+        "tail": "điều trị u trung thất",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Bên cạnh đã điều trị u trung thất bằng phẫu thuật, hóa trị hoặc xạ trị, người bệnh vẫn có thể gặp phải các tác dụng phụ nghiêm trọng, chẳng hạn như:  Giảm cảm giác thèm ăn Chảy máu Thiếu máu Táo bón Tiêu chảy Mệt mỏi Rụng tóc Nhiễm trùng Buồn nôn, nôn Đau đớn Sưng tấy",
+        "head": "Thiếu máu",
+        "head_type": "symptom",
+        "relation": "causedBy",
+        "tail": "điều trị u trung thất",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Bên cạnh đã điều trị u trung thất bằng phẫu thuật, hóa trị hoặc xạ trị, người bệnh vẫn có thể gặp phải các tác dụng phụ nghiêm trọng, chẳng hạn như:  Giảm cảm giác thèm ăn Chảy máu Thiếu máu Táo bón Tiêu chảy Mệt mỏi Rụng tóc Nhiễm trùng Buồn nôn, nôn Đau đớn Sưng tấy",
+        "head": "Táo bón",
+        "head_type": "symptom",
+        "relation": "causedBy",
+        "tail": "điều trị u trung thất",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Bên cạnh đã điều trị u trung thất bằng phẫu thuật, hóa trị hoặc xạ trị, người bệnh vẫn có thể gặp phải các tác dụng phụ nghiêm trọng, chẳng hạn như:  Giảm cảm giác thèm ăn Chảy máu Thiếu máu Táo bón Tiêu chảy Mệt mỏi Rụng tóc Nhiễm trùng Buồn nôn, nôn Đau đớn Sưng tấy",
+        "head": "Tiêu chảy",
+        "head_type": "symptom",
+        "relation": "causedBy",
+        "tail": "điều trị u trung thất",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Bên cạnh đã điều trị u trung thất bằng phẫu thuật, hóa trị hoặc xạ trị, người bệnh vẫn có thể gặp phải các tác dụng phụ nghiêm trọng, chẳng hạn như:  Giảm cảm giác thèm ăn Chảy máu Thiếu máu Táo bón Tiêu chảy Mệt mỏi Rụng tóc Nhiễm trùng Buồn nôn, nôn Đau đớn Sưng tấy",
+        "head": "Mệt mỏi",
+        "head_type": "symptom",
+        "relation": "causedBy",
+        "tail": "điều trị u trung thất",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Bên cạnh đã điều trị u trung thất bằng phẫu thuật, hóa trị hoặc xạ trị, người bệnh vẫn có thể gặp phải các tác dụng phụ nghiêm trọng, chẳng hạn như:  Giảm cảm giác thèm ăn Chảy máu Thiếu máu Táo bón Tiêu chảy Mệt mỏi Rụng tóc Nhiễm trùng Buồn nôn, nôn Đau đớn Sưng tấy",
+        "head": "Rụng tóc",
+        "head_type": "symptom",
+        "relation": "causedBy",
+        "tail": "điều trị u trung thất",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Bên cạnh đã điều trị u trung thất bằng phẫu thuật, hóa trị hoặc xạ trị, người bệnh vẫn có thể gặp phải các tác dụng phụ nghiêm trọng, chẳng hạn như:  Giảm cảm giác thèm ăn Chảy máu Thiếu máu Táo bón Tiêu chảy Mệt mỏi Rụng tóc Nhiễm trùng Buồn nôn, nôn Đau đớn Sưng tấy",
+        "head": "Nhiễm trùng",
+        "head_type": "symptom",
+        "relation": "causedBy",
+        "tail": "điều trị u trung thất",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Bên cạnh đã điều trị u trung thất bằng phẫu thuật, hóa trị hoặc xạ trị, người bệnh vẫn có thể gặp phải các tác dụng phụ nghiêm trọng, chẳng hạn như:  Giảm cảm giác thèm ăn Chảy máu Thiếu máu Táo bón Tiêu chảy Mệt mỏi Rụng tóc Nhiễm trùng Buồn nôn, nôn Đau đớn Sưng tấy",
+        "head": "Buồn nôn, nôn",
+        "head_type": "symptom",
+        "relation": "causedBy",
+        "tail": "điều trị u trung thất",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Bên cạnh đã điều trị u trung thất bằng phẫu thuật, hóa trị hoặc xạ trị, người bệnh vẫn có thể gặp phải các tác dụng phụ nghiêm trọng, chẳng hạn như:  Giảm cảm giác thèm ăn Chảy máu Thiếu máu Táo bón Tiêu chảy Mệt mỏi Rụng tóc Nhiễm trùng Buồn nôn, nôn Đau đớn Sưng tấy",
+        "head": "Đau đớn",
+        "head_type": "symptom",
+        "relation": "causedBy",
+        "tail": "điều trị u trung thất",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Bên cạnh đã điều trị u trung thất bằng phẫu thuật, hóa trị hoặc xạ trị, người bệnh vẫn có thể gặp phải các tác dụng phụ nghiêm trọng, chẳng hạn như:  Giảm cảm giác thèm ăn Chảy máu Thiếu máu Táo bón Tiêu chảy Mệt mỏi Rụng tóc Nhiễm trùng Buồn nôn, nôn Đau đớn Sưng tấy",
+        "head": "Sưng tấy",
+        "head_type": "symptom",
+        "relation": "causedBy",
+        "tail": "điều trị u trung thất",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Các kỹ thuật thường được sử dụng để chẩn đoán và đánh giá khối u trung thất bao gồm:  Chụp cắt lớp vi tính (CT) vùng trung thất Xét nghiệm máu Siêu âm Sinh thiết X-quang ngực Chụp cộng hưởng từ (MRI) ngực Nội soi thực quản Nội soi phế quản Nội soi trung thất kèm sinh thiết",
+        "head": "khối u trung thất",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "Chụp cắt lớp vi tính (CT) vùng trung thất",
+        "tail_type": "test"
+    },
+    {
+        "text": "Các kỹ thuật thường được sử dụng để chẩn đoán và đánh giá khối u trung thất bao gồm:  Chụp cắt lớp vi tính (CT) vùng trung thất Xét nghiệm máu Siêu âm Sinh thiết X-quang ngực Chụp cộng hưởng từ (MRI) ngực Nội soi thực quản Nội soi phế quản Nội soi trung thất kèm sinh thiết",
+        "head": "khối u trung thất",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "Xét nghiệm máu",
+        "tail_type": "test"
+    },
+    {
+        "text": "Các kỹ thuật thường được sử dụng để chẩn đoán và đánh giá khối u trung thất bao gồm:  Chụp cắt lớp vi tính (CT) vùng trung thất Xét nghiệm máu Siêu âm Sinh thiết X-quang ngực Chụp cộng hưởng từ (MRI) ngực Nội soi thực quản Nội soi phế quản Nội soi trung thất kèm sinh thiết",
+        "head": "khối u trung thất",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "Siêu âm",
+        "tail_type": "test"
+    },
+    {
+        "text": "Các kỹ thuật thường được sử dụng để chẩn đoán và đánh giá khối u trung thất bao gồm:  Chụp cắt lớp vi tính (CT) vùng trung thất Xét nghiệm máu Siêu âm Sinh thiết X-quang ngực Chụp cộng hưởng từ (MRI) ngực Nội soi thực quản Nội soi phế quản Nội soi trung thất kèm sinh thiết",
+        "head": "khối u trung thất",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "Sinh thiết",
+        "tail_type": "test"
+    },
+    {
+        "text": "Các kỹ thuật thường được sử dụng để chẩn đoán và đánh giá khối u trung thất bao gồm:  Chụp cắt lớp vi tính (CT) vùng trung thất Xét nghiệm máu Siêu âm Sinh thiết X-quang ngực Chụp cộng hưởng từ (MRI) ngực Nội soi thực quản Nội soi phế quản Nội soi trung thất kèm sinh thiết",
+        "head": "khối u trung thất",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "X-quang ngực",
+        "tail_type": "test"
+    },
+    {
+        "text": "Các kỹ thuật thường được sử dụng để chẩn đoán và đánh giá khối u trung thất bao gồm:  Chụp cắt lớp vi tính (CT) vùng trung thất Xét nghiệm máu Siêu âm Sinh thiết X-quang ngực Chụp cộng hưởng từ (MRI) ngực Nội soi thực quản Nội soi phế quản Nội soi trung thất kèm sinh thiết",
+        "head": "khối u trung thất",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "Chụp cộng hưởng từ (MRI) ngực",
+        "tail_type": "test"
+    },
+    {
+        "text": "Các kỹ thuật thường được sử dụng để chẩn đoán và đánh giá khối u trung thất bao gồm:  Chụp cắt lớp vi tính (CT) vùng trung thất Xét nghiệm máu Siêu âm Sinh thiết X-quang ngực Chụp cộng hưởng từ (MRI) ngực Nội soi thực quản Nội soi phế quản Nội soi trung thất kèm sinh thiết",
+        "head": "khối u trung thất",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "Nội soi thực quản",
+        "tail_type": "test"
+    },
+    {
+        "text": "Các kỹ thuật thường được sử dụng để chẩn đoán và đánh giá khối u trung thất bao gồm:  Chụp cắt lớp vi tính (CT) vùng trung thất Xét nghiệm máu Siêu âm Sinh thiết X-quang ngực Chụp cộng hưởng từ (MRI) ngực Nội soi thực quản Nội soi phế quản Nội soi trung thất kèm sinh thiết",
+        "head": "khối u trung thất",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "Nội soi phế quản",
+        "tail_type": "test"
+    },
+    {
+        "text": "Các kỹ thuật thường được sử dụng để chẩn đoán và đánh giá khối u trung thất bao gồm:  Chụp cắt lớp vi tính (CT) vùng trung thất Xét nghiệm máu Siêu âm Sinh thiết X-quang ngực Chụp cộng hưởng từ (MRI) ngực Nội soi thực quản Nội soi phế quản Nội soi trung thất kèm sinh thiết",
+        "head": "khối u trung thất",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "Nội soi trung thất kèm sinh thiết",
+        "tail_type": "test"
+    },
+    {
+        "text": "Theo TS.BS Nguyễn Anh Dũng, phương pháp điều trị được áp dụng cho các khối u trung thất phụ thuộc vào loại khối u và vị trí của nó: (4)  Các u tuyến ức cần kết hợp phẫu thuật, xạ trị và hóa trị.",
+        "head": "Các u tuyến ức",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "phẫu thuật, xạ trị và hóa trị",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Theo TS.BS Nguyễn Anh Dũng, phương pháp điều trị được áp dụng cho các khối u trung thất phụ thuộc vào loại khối u và vị trí của nó: (4)  Các u tuyến ức cần kết hợp phẫu thuật, xạ trị và hóa trị.",
+        "head": "phẫu thuật",
+        "head_type": "treatment",
+        "relation": "relatedTo",
+        "tail": "Các u tuyến ức",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Theo TS.BS Nguyễn Anh Dũng, phương pháp điều trị được áp dụng cho các khối u trung thất phụ thuộc vào loại khối u và vị trí của nó: (4)  Các u tuyến ức cần kết hợp phẫu thuật, xạ trị và hóa trị.",
+        "head": "xạ trị",
+        "head_type": "treatment",
+        "relation": "relatedTo",
+        "tail": "Các u tuyến ức",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Theo TS.BS Nguyễn Anh Dũng, phương pháp điều trị được áp dụng cho các khối u trung thất phụ thuộc vào loại khối u và vị trí của nó: (4)  Các u tuyến ức cần kết hợp phẫu thuật, xạ trị và hóa trị.",
+        "head": "hóa trị",
+        "head_type": "treatment",
+        "relation": "relatedTo",
+        "tail": "Các u tuyến ức",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bác sĩ có thể thực hiện kỹ thuật xâm lấn tối thiểu như nội soi lồng ngực, phẫu thuật cắt bỏ bằng robot hoặc bằng phương pháp phẫu thuật cắt đoạn giữa - một phương pháp tiếp cận mở chia đôi xương ức.",
+        "head": "nội soi lồng ngực",
+        "head_type": "treatment",
+        "relation": "relatedTo",
+        "tail": "Các u tuyến ức",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bác sĩ có thể thực hiện kỹ thuật xâm lấn tối thiểu như nội soi lồng ngực, phẫu thuật cắt bỏ bằng robot hoặc bằng phương pháp phẫu thuật cắt đoạn giữa - một phương pháp tiếp cận mở chia đôi xương ức.",
+        "head": "phẫu thuật cắt bỏ bằng robot",
+        "head_type": "treatment",
+        "relation": "relatedTo",
+        "tail": "Các u tuyến ức",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bác sĩ có thể thực hiện kỹ thuật xâm lấn tối thiểu như nội soi lồng ngực, phẫu thuật cắt bỏ bằng robot hoặc bằng phương pháp phẫu thuật cắt đoạn giữa - một phương pháp tiếp cận mở chia đôi xương ức.",
+        "head": "phẫu thuật cắt đoạn giữa",
+        "head_type": "treatment",
+        "relation": "relatedTo",
+        "tail": "Các u tuyến ức",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các u lympho được can thiệp bằng hóa trị, sau đó là xạ trị.",
+        "head": "Các u lympho",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "hóa trị",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Các u lympho được can thiệp bằng hóa trị, sau đó là xạ trị.",
+        "head": "Các u lympho",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "xạ trị",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Bác sĩ cũng có thể phẫu thuật để lấy mô chẩn đoán.",
+        "head": "phẫu thuật",
+        "head_type": "treatment",
+        "relation": "relatedTo",
+        "tail": "Các u lympho",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các khối u thần kinh phát triển ở trung thất sau được điều trị bằng phẫu thuật.",
+        "head": "Các khối u thần kinh",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "phẫu thuật",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Các khối u thần kinh phát triển ở trung thất sau được điều trị bằng phẫu thuật.",
+        "head": "Các khối u thần kinh",
+        "head_type": "disease",
+        "relation": "locatedIn",
+        "tail": "trung thất sau",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Một số khối u lành tính và chưa ảnh hưởng tới các cơ quan xung quanh được điều trị nội khoa.",
+        "head": "khối u lành tính",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "điều trị nội khoa",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Một số khối u lành tính và chưa ảnh hưởng tới các cơ quan xung quanh được điều trị nội khoa.",
+        "head": "khối u lành tính",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "các cơ quan xung quanh",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Bác sĩ sẽ theo dõi sự phát triển của chúng và khi cần thiết mới tiến hành phẫu thuật.",
+        "head": "phẫu thuật",
+        "head_type": "treatment",
+        "relation": "relatedTo",
+        "tail": "khối u lành tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các bác sĩ tiến hành phẫu thuật nội soi loại bỏ u trung thất cho bệnh nhân tại Bệnh viện Đa khoa Tâm Anh",
+        "head": "phẫu thuật nội soi",
+        "head_type": "treatment",
+        "relation": "relatedTo",
+        "tail": "u trung thất",
+        "tail_type": "disease"
+    },
+    {
+        "text": "So với phẫu thuật truyền thống, những bệnh nhân trải qua phẫu thuật xâm lấn tối thiểu, chẳng hạn như nội soi lồng ngực loại bỏ u trung thất, sẽ được hưởng nhiều lợi ích như:  Ít đau sau phẫu thuật Thời gian nằm viện ngắn hơn Phục hồi nhanh hơn và sớm quay lại sinh hoạt hàng ngày Giảm nguy cơ nhiễm trùng Ít chảy máu trong và sau phẫu thuật",
+        "head": "phẫu thuật xâm lấn tối thiểu",
+        "head_type": "treatment",
+        "relation": "relatedTo",
+        "tail": "u trung thất",
+        "tail_type": "disease"
+    },
+    {
+        "text": "So với phẫu thuật truyền thống, những bệnh nhân trải qua phẫu thuật xâm lấn tối thiểu, chẳng hạn như nội soi lồng ngực loại bỏ u trung thất, sẽ được hưởng nhiều lợi ích như:  Ít đau sau phẫu thuật Thời gian nằm viện ngắn hơn Phục hồi nhanh hơn và sớm quay lại sinh hoạt hàng ngày Giảm nguy cơ nhiễm trùng Ít chảy máu trong và sau phẫu thuật",
+        "head": "nội soi lồng ngực",
+        "head_type": "treatment",
+        "relation": "relatedTo",
+        "tail": "u trung thất",
+        "tail_type": "disease"
+    },
+    {
+        "text": "So với phẫu thuật truyền thống, những bệnh nhân trải qua phẫu thuật xâm lấn tối thiểu, chẳng hạn như nội soi lồng ngực loại bỏ u trung thất, sẽ được hưởng nhiều lợi ích như:  Ít đau sau phẫu thuật Thời gian nằm viện ngắn hơn Phục hồi nhanh hơn và sớm quay lại sinh hoạt hàng ngày Giảm nguy cơ nhiễm trùng Ít chảy máu trong và sau phẫu thuật",
+        "head": "Ít đau sau phẫu thuật",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "phẫu thuật xâm lấn tối thiểu",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "So với phẫu thuật truyền thống, những bệnh nhân trải qua phẫu thuật xâm lấn tối thiểu, chẳng hạn như nội soi lồng ngực loại bỏ u trung thất, sẽ được hưởng nhiều lợi ích như:  Ít đau sau phẫu thuật Thời gian nằm viện ngắn hơn Phục hồi nhanh hơn và sớm quay lại sinh hoạt hàng ngày Giảm nguy cơ nhiễm trùng Ít chảy máu trong và sau phẫu thuật",
+        "head": "Thời gian nằm viện ngắn hơn",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "phẫu thuật xâm lấn tối thiểu",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "So với phẫu thuật truyền thống, những bệnh nhân trải qua phẫu thuật xâm lấn tối thiểu, chẳng hạn như nội soi lồng ngực loại bỏ u trung thất, sẽ được hưởng nhiều lợi ích như:  Ít đau sau phẫu thuật Thời gian nằm viện ngắn hơn Phục hồi nhanh hơn và sớm quay lại sinh hoạt hàng ngày Giảm nguy cơ nhiễm trùng Ít chảy máu trong và sau phẫu thuật",
+        "head": "Phục hồi nhanh hơn",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "phẫu thuật xâm lấn tối thiểu",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "So với phẫu thuật truyền thống, những bệnh nhân trải qua phẫu thuật xâm lấn tối thiểu, chẳng hạn như nội soi lồng ngực loại bỏ u trung thất, sẽ được hưởng nhiều lợi ích như:  Ít đau sau phẫu thuật Thời gian nằm viện ngắn hơn Phục hồi nhanh hơn và sớm quay lại sinh hoạt hàng ngày Giảm nguy cơ nhiễm trùng Ít chảy máu trong và sau phẫu thuật",
+        "head": "Giảm nguy cơ nhiễm trùng",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "phẫu thuật xâm lấn tối thiểu",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "So với phẫu thuật truyền thống, những bệnh nhân trải qua phẫu thuật xâm lấn tối thiểu, chẳng hạn như nội soi lồng ngực loại bỏ u trung thất, sẽ được hưởng nhiều lợi ích như:  Ít đau sau phẫu thuật Thời gian nằm viện ngắn hơn Phục hồi nhanh hơn và sớm quay lại sinh hoạt hàng ngày Giảm nguy cơ nhiễm trùng Ít chảy máu trong và sau phẫu thuật",
+        "head": "Ít chảy máu trong và sau phẫu thuật",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "phẫu thuật xâm lấn tối thiểu",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "So với mổ mở truyền thống, phẫu thuật nội soi loại bỏ u trung thất đã giúp giảm thiểu tối đa biến chứng trong và sau mổ.",
+        "head": "phẫu thuật nội soi",
+        "head_type": "treatment",
+        "relation": "relatedTo",
+        "tail": "u trung thất",
+        "tail_type": "disease"
+    },
+    {
+        "text": "So với mổ mở truyền thống, phẫu thuật nội soi loại bỏ u trung thất đã giúp giảm thiểu tối đa biến chứng trong và sau mổ.",
+        "head": "biến chứng",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "phẫu thuật nội soi",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Tuy vậy, vẫn tồn tại nguy cơ gặp phải rủi ro đối với phương pháp xâm lấn tối thiểu này.",
+        "head": "rủi ro",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "phẫu thuật xâm lấn tối thiểu",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Những rủi ro đó bao gồm:  Tổn thương khu vực xung quanh bao gồm tim, màng ngoài tim và tủy sống; Chảy máu nhiều trong lúc mổ, bệnh nhân cần truyền máu và bác sĩ phải rạch đường mổ lớn hơn; Tràn dịch màng phổi; Dẫn lưu hậu phẫu; Nhiễm trùng, chảy máu nhiều ở giai đoạn hậu phẫu.",
+        "head": "Tổn thương khu vực xung quanh",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "phẫu thuật xâm lấn tối thiểu",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Những rủi ro đó bao gồm:  Tổn thương khu vực xung quanh bao gồm tim, màng ngoài tim và tủy sống; Chảy máu nhiều trong lúc mổ, bệnh nhân cần truyền máu và bác sĩ phải rạch đường mổ lớn hơn; Tràn dịch màng phổi; Dẫn lưu hậu phẫu; Nhiễm trùng, chảy máu nhiều ở giai đoạn hậu phẫu.",
+        "head": "tim",
+        "head_type": "organ",
+        "relation": "locatedIn",
+        "tail": "khu vực xung quanh",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Những rủi ro đó bao gồm:  Tổn thương khu vực xung quanh bao gồm tim, màng ngoài tim và tủy sống; Chảy máu nhiều trong lúc mổ, bệnh nhân cần truyền máu và bác sĩ phải rạch đường mổ lớn hơn; Tràn dịch màng phổi; Dẫn lưu hậu phẫu; Nhiễm trùng, chảy máu nhiều ở giai đoạn hậu phẫu.",
+        "head": "màng ngoài tim",
+        "head_type": "organ",
+        "relation": "locatedIn",
+        "tail": "khu vực xung quanh",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Những rủi ro đó bao gồm:  Tổn thương khu vực xung quanh bao gồm tim, màng ngoài tim và tủy sống; Chảy máu nhiều trong lúc mổ, bệnh nhân cần truyền máu và bác sĩ phải rạch đường mổ lớn hơn; Tràn dịch màng phổi; Dẫn lưu hậu phẫu; Nhiễm trùng, chảy máu nhiều ở giai đoạn hậu phẫu.",
+        "head": "tủy sống",
+        "head_type": "organ",
+        "relation": "locatedIn",
+        "tail": "khu vực xung quanh",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Những rủi ro đó bao gồm:  Tổn thương khu vực xung quanh bao gồm tim, màng ngoài tim và tủy sống; Chảy máu nhiều trong lúc mổ, bệnh nhân cần truyền máu và bác sĩ phải rạch đường mổ lớn hơn; Tràn dịch màng phổi; Dẫn lưu hậu phẫu; Nhiễm trùng, chảy máu nhiều ở giai đoạn hậu phẫu.",
+        "head": "Chảy máu nhiều",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "phẫu thuật xâm lấn tối thiểu",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Những rủi ro đó bao gồm:  Tổn thương khu vực xung quanh bao gồm tim, màng ngoài tim và tủy sống; Chảy máu nhiều trong lúc mổ, bệnh nhân cần truyền máu và bác sĩ phải rạch đường mổ lớn hơn; Tràn dịch màng phổi; Dẫn lưu hậu phẫu; Nhiễm trùng, chảy máu nhiều ở giai đoạn hậu phẫu.",
+        "head": "truyền máu",
+        "head_type": "treatment",
+        "relation": "relatedTo",
+        "tail": "Chảy máu nhiều",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Những rủi ro đó bao gồm:  Tổn thương khu vực xung quanh bao gồm tim, màng ngoài tim và tủy sống; Chảy máu nhiều trong lúc mổ, bệnh nhân cần truyền máu và bác sĩ phải rạch đường mổ lớn hơn; Tràn dịch màng phổi; Dẫn lưu hậu phẫu; Nhiễm trùng, chảy máu nhiều ở giai đoạn hậu phẫu.",
+        "head": "Tràn dịch màng phổi",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "phẫu thuật xâm lấn tối thiểu",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Những rủi ro đó bao gồm:  Tổn thương khu vực xung quanh bao gồm tim, màng ngoài tim và tủy sống; Chảy máu nhiều trong lúc mổ, bệnh nhân cần truyền máu và bác sĩ phải rạch đường mổ lớn hơn; Tràn dịch màng phổi; Dẫn lưu hậu phẫu; Nhiễm trùng, chảy máu nhiều ở giai đoạn hậu phẫu.",
+        "head": "Dẫn lưu hậu phẫu",
+        "head_type": "treatment",
+        "relation": "relatedTo",
+        "tail": "phẫu thuật xâm lấn tối thiểu",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Những rủi ro đó bao gồm:  Tổn thương khu vực xung quanh bao gồm tim, màng ngoài tim và tủy sống; Chảy máu nhiều trong lúc mổ, bệnh nhân cần truyền máu và bác sĩ phải rạch đường mổ lớn hơn; Tràn dịch màng phổi; Dẫn lưu hậu phẫu; Nhiễm trùng, chảy máu nhiều ở giai đoạn hậu phẫu.",
+        "head": "Nhiễm trùng",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "phẫu thuật xâm lấn tối thiểu",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Những rủi ro đó bao gồm:  Tổn thương khu vực xung quanh bao gồm tim, màng ngoài tim và tủy sống; Chảy máu nhiều trong lúc mổ, bệnh nhân cần truyền máu và bác sĩ phải rạch đường mổ lớn hơn; Tràn dịch màng phổi; Dẫn lưu hậu phẫu; Nhiễm trùng, chảy máu nhiều ở giai đoạn hậu phẫu.",
+        "head": "chảy máu nhiều",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "phẫu thuật xâm lấn tối thiểu",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Tại Bệnh viện Đa khoa Tâm Anh, các bác sĩ sẽ hướng dẫn cụ thể để người bệnh chuẩn bị tốt cho ca phẫu thuật.",
+        "head": "phẫu thuật",
+        "head_type": "treatment",
+        "relation": "relatedTo",
+        "tail": "u trung thất",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Giai đoạn hậu phẫu, bệnh nhân cũng sẽ được hướng dẫn chi tiết cách chăm sóc vết mổ, chế độ ăn phù hợp và chế độ vận động hợp lý để sớm hồi phục sức khỏe.",
+        "head": "chăm sóc vết mổ",
+        "head_type": "treatment",
+        "relation": "relatedTo",
+        "tail": "u trung thất",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Giai đoạn hậu phẫu, bệnh nhân cũng sẽ được hướng dẫn chi tiết cách chăm sóc vết mổ, chế độ ăn phù hợp và chế độ vận động hợp lý để sớm hồi phục sức khỏe.",
+        "head": "chế độ ăn phù hợp",
+        "head_type": "lifestyle",
+        "relation": "relatedTo",
+        "tail": "u trung thất",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Giai đoạn hậu phẫu, bệnh nhân cũng sẽ được hướng dẫn chi tiết cách chăm sóc vết mổ, chế độ ăn phù hợp và chế độ vận động hợp lý để sớm hồi phục sức khỏe.",
+        "head": "chế độ vận động hợp lý",
+        "head_type": "lifestyle",
+        "relation": "relatedTo",
+        "tail": "u trung thất",
+        "tail_type": "disease"
+    },
+    {
+        "text": "TS.BS Nguyễn Anh Dũng cho biết, không thể ngăn ngừa u trung thất hình thành nhưng có thể loại bỏ nó hoàn toàn nếu phát hiện và điều trị ở giai đoạn sớm.",
+        "head": "u trung thất",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "điều trị",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "TS.BS Nguyễn Anh Dũng cho biết, không thể ngăn ngừa u trung thất hình thành nhưng có thể loại bỏ nó hoàn toàn nếu phát hiện và điều trị ở giai đoạn sớm.",
+        "head": "u trung thất",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "phát hiện",
+        "tail_type": "test"
+    },
+    {
+        "text": "Điều quan trọng là mỗi người quan tâm sức khỏe nhiều hơn và thăm khám định kỳ, trường hợp xuất hiện các triệu chứng đau tức ngực, khó thở, ho không rõ nguyên nhân… kéo dài hơn hai tuần, cần đến bệnh viện kiểm tra sớm.",
+        "head": "đau tức ngực",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "u trung thất",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Điều quan trọng là mỗi người quan tâm sức khỏe nhiều hơn và thăm khám định kỳ, trường hợp xuất hiện các triệu chứng đau tức ngực, khó thở, ho không rõ nguyên nhân… kéo dài hơn hai tuần, cần đến bệnh viện kiểm tra sớm.",
+        "head": "khó thở",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "u trung thất",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Điều quan trọng là mỗi người quan tâm sức khỏe nhiều hơn và thăm khám định kỳ, trường hợp xuất hiện các triệu chứng đau tức ngực, khó thở, ho không rõ nguyên nhân… kéo dài hơn hai tuần, cần đến bệnh viện kiểm tra sớm.",
+        "head": "ho không rõ nguyên nhân",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "u trung thất",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Quy tụ đội ngũ chuyên gia giàu kinh nghiệm trong lĩnh vực phẫu thuật tim mạch - lồng ngực, Trung tâm Tim mạch, Bệnh viện Đa khoa Tâm Anh đã điều trị thành công cho nhiều trường hợp bị bệnh lý u trung thất, có trường hợp khối u có kích thước lên tới 10cm.",
+        "head": "u trung thất",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "phẫu thuật tim mạch - lồng ngực",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Trung tâm ưu tiên phát triển kỹ thuật mổ nội soi hiện đại, ít xâm lấn, giúp giảm thiểu nguy cơ biến chứng cho người bệnh.",
+        "head": "mổ nội soi",
+        "head_type": "treatment",
+        "relation": "relatedTo",
+        "tail": "u trung thất",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Trung tâm ưu tiên phát triển kỹ thuật mổ nội soi hiện đại, ít xâm lấn, giúp giảm thiểu nguy cơ biến chứng cho người bệnh.",
+        "head": "biến chứng",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "mổ nội soi",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Bên cạnh đó, Trung tâm Tim mạch, Bệnh viện Đa khoa Tâm Anh còn thăm khám và điều trị cho bệnh nhân mắc các bệnh lý tim mạch khác như bệnh mạch vành, bệnh suy tim, bệnh van tim, bệnh cơ tim, suy giãn tĩnh mạch chân, bệnh tim bẩm sinh…",
+        "head": "bệnh mạch vành",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "u trung thất",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bên cạnh đó, Trung tâm Tim mạch, Bệnh viện Đa khoa Tâm Anh còn thăm khám và điều trị cho bệnh nhân mắc các bệnh lý tim mạch khác như bệnh mạch vành, bệnh suy tim, bệnh van tim, bệnh cơ tim, suy giãn tĩnh mạch chân, bệnh tim bẩm sinh…",
+        "head": "bệnh suy tim",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "u trung thất",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bên cạnh đó, Trung tâm Tim mạch, Bệnh viện Đa khoa Tâm Anh còn thăm khám và điều trị cho bệnh nhân mắc các bệnh lý tim mạch khác như bệnh mạch vành, bệnh suy tim, bệnh van tim, bệnh cơ tim, suy giãn tĩnh mạch chân, bệnh tim bẩm sinh…",
+        "head": "bệnh van tim",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "u trung thất",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bên cạnh đó, Trung tâm Tim mạch, Bệnh viện Đa khoa Tâm Anh còn thăm khám và điều trị cho bệnh nhân mắc các bệnh lý tim mạch khác như bệnh mạch vành, bệnh suy tim, bệnh van tim, bệnh cơ tim, suy giãn tĩnh mạch chân, bệnh tim bẩm sinh…",
+        "head": "bệnh cơ tim",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "u trung thất",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bên cạnh đó, Trung tâm Tim mạch, Bệnh viện Đa khoa Tâm Anh còn thăm khám và điều trị cho bệnh nhân mắc các bệnh lý tim mạch khác như bệnh mạch vành, bệnh suy tim, bệnh van tim, bệnh cơ tim, suy giãn tĩnh mạch chân, bệnh tim bẩm sinh…",
+        "head": "suy giãn tĩnh mạch chân",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "u trung thất",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bên cạnh đó, Trung tâm Tim mạch, Bệnh viện Đa khoa Tâm Anh còn thăm khám và điều trị cho bệnh nhân mắc các bệnh lý tim mạch khác như bệnh mạch vành, bệnh suy tim, bệnh van tim, bệnh cơ tim, suy giãn tĩnh mạch chân, bệnh tim bẩm sinh…",
+        "head": "bệnh tim bẩm sinh",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "u trung thất",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Trung tâm được trang bị hệ thống máy móc hiện đại như hệ thống chụp CT 768 lát cắt, hệ thống DSA - chụp mạch vành 2 bình diện, hệ thống máy siêu âm 4D… giúp phát hiện bệnh sớm và can thiệp kịp thời.",
+        "head": "chụp CT 768 lát cắt",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "u trung thất",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Trung tâm được trang bị hệ thống máy móc hiện đại như hệ thống chụp CT 768 lát cắt, hệ thống DSA - chụp mạch vành 2 bình diện, hệ thống máy siêu âm 4D… giúp phát hiện bệnh sớm và can thiệp kịp thời.",
+        "head": "DSA - chụp mạch vành 2 bình diện",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "u trung thất",
+        "tail_type": "disease"
+    }
+]

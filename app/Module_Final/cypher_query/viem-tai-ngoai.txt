@@ -1,0 +1,955 @@
+
+MERGE (o1:disease {id: 'viêm_tai_ngoài_disease'})
+MERGE (o2:symptom {id: 'sưng_và_đau_tai_symptom'})
+MERGE (o1)-[r0:causedBy]->(o2)
+SET r0.text = 'Viêm tai ngoài là một trong những nguyên nhân phổ biến nhất gây sưng và đau tai.'
+
+MERGE (o1:cause {id: 'vi_khuẩn_cause'})
+MERGE (o2:disease {id: 'viêm_tai_ngoài_disease'})
+MERGE (o1)-[r1:causedBy]->(o2)
+SET r1.text = 'Nguyên nhân thường do vi khuẩn, ngoài ra có thể do nấm hoặc các nguyên nhân ít gặp khác.'
+
+MERGE (o1:cause {id: 'nấm_cause'})
+MERGE (o2:disease {id: 'viêm_tai_ngoài_disease'})
+MERGE (o1)-[r2:causedBy]->(o2)
+SET r2.text = 'Nguyên nhân thường do vi khuẩn, ngoài ra có thể do nấm hoặc các nguyên nhân ít gặp khác.'
+
+MERGE (o1:disease {id: 'viêm_tai_ngoài_disease'})
+MERGE (o2:lifestyle {id: 'người_lớn_lifestyle'})
+MERGE (o1)-[r3:associatedWith]->(o2)
+SET r3.text = 'Viêm tai ngoài tương đối phổ biến ở người lớn với tỷ lệ khoảng 10% số người sẽ mắc viêm tai ngoài vào một thời điểm nào đó trong đời.'
+
+MERGE (o1:disease {id: 'viêm_tai_ngoài_disease'})
+MERGE (o2:lifestyle {id: '10%_số_người_lifestyle'})
+MERGE (o1)-[r4:associatedWith]->(o2)
+SET r4.text = 'Viêm tai ngoài tương đối phổ biến ở người lớn với tỷ lệ khoảng 10% số người sẽ mắc viêm tai ngoài vào một thời điểm nào đó trong đời.'
+
+MERGE (o1:disease {id: 'viêm_tai_ngoài_disease'})
+MERGE (o2:symptom {id: 'nhẹ_symptom'})
+MERGE (o1)-[r5:isSymptomOf]->(o2)
+SET r5.text = 'Viêm tai ngoài thường nhẹ và tự khỏi sau vài ngày hoặc vài tuần, nhưng đôi khi có thể kéo dài lâu hơn.'
+
+MERGE (o1:disease {id: 'viêm_tai_ngoài_disease'})
+MERGE (o2:symptom {id: 'tự_khỏi_symptom'})
+MERGE (o1)-[r6:isSymptomOf]->(o2)
+SET r6.text = 'Viêm tai ngoài thường nhẹ và tự khỏi sau vài ngày hoặc vài tuần, nhưng đôi khi có thể kéo dài lâu hơn.'
+
+MERGE (o1:disease {id: 'viêm_tai_ngoài_disease'})
+MERGE (o2:symptom {id: 'kéo_dài_lâu_hơn_symptom'})
+MERGE (o1)-[r7:isSymptomOf]->(o2)
+SET r7.text = 'Viêm tai ngoài thường nhẹ và tự khỏi sau vài ngày hoặc vài tuần, nhưng đôi khi có thể kéo dài lâu hơn.'
+
+MERGE (o1:disease {id: 'nhiễm_trùng_disease'})
+MERGE (o2:organ {id: 'các_mô_lân_cận_organ'})
+MERGE (o1)-[r8:affects]->(o2)
+SET r8.text = 'Một số trường hợp nhiễm trùng có thể lan sang các mô lân cận và gây ra biến chứng nghiêm trọng.'
+
+MERGE (o1:disease {id: 'nhiễm_trùng_disease'})
+MERGE (o2:symptom {id: 'biến_chứng_nghiêm_trọng_symptom'})
+MERGE (o1)-[r9:isSymptomOf]->(o2)
+SET r9.text = 'Một số trường hợp nhiễm trùng có thể lan sang các mô lân cận và gây ra biến chứng nghiêm trọng.'
+
+MERGE (o1:disease {id: 'viêm_tai_ngoài_disease'})
+MERGE (o2:lifestyle {id: '10%_người_trưởng_thành_lifestyle'})
+MERGE (o1)-[r10:associatedWith]->(o2)
+SET r10.text = 'Có khoảng 10% người trưởng thành sẽ mắc viêm tai ngoài vào một thời điểm nào đó trong đời.'
+
+MERGE (o1:disease {id: 'viêm_tai_ngoài_disease'})
+MERGE (o2:symptom {id: 'viêm_symptom'})
+MERGE (o1)-[r11:isSymptomOf]->(o2)
+SET r11.text = 'Viêm tai ngoài là tình trạng nhiễm trùng vùng tai ngoài dẫn đến viêm, sưng tấy, đỏ và đau.'
+
+MERGE (o1:disease {id: 'viêm_tai_ngoài_disease'})
+MERGE (o2:symptom {id: 'sưng_tấy_symptom'})
+MERGE (o1)-[r12:isSymptomOf]->(o2)
+SET r12.text = 'Viêm tai ngoài là tình trạng nhiễm trùng vùng tai ngoài dẫn đến viêm, sưng tấy, đỏ và đau.'
+
+MERGE (o1:disease {id: 'viêm_tai_ngoài_disease'})
+MERGE (o2:symptom {id: 'đỏ_symptom'})
+MERGE (o1)-[r13:isSymptomOf]->(o2)
+SET r13.text = 'Viêm tai ngoài là tình trạng nhiễm trùng vùng tai ngoài dẫn đến viêm, sưng tấy, đỏ và đau.'
+
+MERGE (o1:disease {id: 'viêm_tai_ngoài_disease'})
+MERGE (o2:symptom {id: 'đau_symptom'})
+MERGE (o1)-[r14:isSymptomOf]->(o2)
+SET r14.text = 'Viêm tai ngoài là tình trạng nhiễm trùng vùng tai ngoài dẫn đến viêm, sưng tấy, đỏ và đau.'
+
+MERGE (o1:symptom {id: 'viêm_symptom'})
+MERGE (o2:organ {id: 'các_mô_lân_cận_organ'})
+MERGE (o1)-[r15:affects]->(o2)
+SET r15.text = 'Tình trạng viêm có thể lây lan sang các mô lân cận và gây ra một số biến chứng nếu không được điều trị phù hợp.'
+
+MERGE (o1:symptom {id: 'viêm_symptom'})
+MERGE (o2:symptom {id: 'biến_chứng_symptom'})
+MERGE (o1)-[r16:isSymptomOf]->(o2)
+SET r16.text = 'Tình trạng viêm có thể lây lan sang các mô lân cận và gây ra một số biến chứng nếu không được điều trị phù hợp.'
+
+MERGE (o1:organ {id: 'tai_ngoài_organ'})
+MERGE (o2:organ {id: 'vành_tai_organ'})
+MERGE (o1)-[r17:locatedIn]->(o2)
+SET r17.text = 'Tai ngoài bao gồm vành tai và ống tai ngoài.'
+
+MERGE (o1:organ {id: 'tai_ngoài_organ'})
+MERGE (o2:organ {id: 'ống_tai_ngoài_organ'})
+MERGE (o1)-[r18:locatedIn]->(o2)
+SET r18.text = 'Tai ngoài bao gồm vành tai và ống tai ngoài.'
+
+MERGE (o1:organ {id: 'ống_tai_ngoài_organ'})
+MERGE (o2:organ {id: 'màng_nhĩ_organ'})
+MERGE (o1)-[r19:locatedIn]->(o2)
+SET r19.text = 'Ống tai ngoài dẫn từ màng nhĩ đến vành tai.'
+
+MERGE (o1:organ {id: 'ống_tai_ngoài_organ'})
+MERGE (o2:organ {id: 'vành_tai_organ'})
+MERGE (o1)-[r20:locatedIn]->(o2)
+SET r20.text = 'Ống tai ngoài dẫn từ màng nhĩ đến vành tai.'
+
+MERGE (o1:organ {id: 'tai_ngoài_organ'})
+MERGE (o2:cause {id: 'các_tác_nhân_gây_bệnh_cause'})
+MERGE (o1)-[r21:associatedWith]->(o2)
+SET r21.text = 'Vì là phần nằm ngoài cùng của tai nên tai ngoài dễ tiếp xúc với các tác nhân gây bệnh hơn, vì vậy viêm tai ngoài cũng là tình trạng viêm tai phổ biến nhất.'
+
+MERGE (o1:disease {id: 'viêm_tai_ngoài_disease'})
+MERGE (o2:disease {id: 'tình_trạng_viêm_tai_phổ_biến_nhất_disease'})
+MERGE (o1)-[r22:associatedWith]->(o2)
+SET r22.text = 'Vì là phần nằm ngoài cùng của tai nên tai ngoài dễ tiếp xúc với các tác nhân gây bệnh hơn, vì vậy viêm tai ngoài cũng là tình trạng viêm tai phổ biến nhất.'
+
+MERGE (o1:disease {id: 'viêm_tai_ngoài_disease'})
+MERGE (o2:lifestyle {id: '10%_tỷ_lệ_mắc_bệnh_lifestyle'})
+MERGE (o1)-[r23:associatedWith]->(o2)
+SET r23.text = 'Viêm tai ngoài có tỷ lệ mắc bệnh khoảng 10% và có thể biểu hiện ở dạng cấp tính, mạn tính và ác tính (hoại tử).'
+
+MERGE (o1:disease {id: 'viêm_tai_ngoài_disease'})
+MERGE (o2:symptom {id: 'cấp_tính_symptom'})
+MERGE (o1)-[r24:isSymptomOf]->(o2)
+SET r24.text = 'Viêm tai ngoài có tỷ lệ mắc bệnh khoảng 10% và có thể biểu hiện ở dạng cấp tính, mạn tính và ác tính (hoại tử).'
+
+MERGE (o1:disease {id: 'viêm_tai_ngoài_disease'})
+MERGE (o2:symptom {id: 'mạn_tính_symptom'})
+MERGE (o1)-[r25:isSymptomOf]->(o2)
+SET r25.text = 'Viêm tai ngoài có tỷ lệ mắc bệnh khoảng 10% và có thể biểu hiện ở dạng cấp tính, mạn tính và ác tính (hoại tử).'
+
+MERGE (o1:disease {id: 'viêm_tai_ngoài_disease'})
+MERGE (o2:symptom {id: 'ác_tính_symptom'})
+MERGE (o1)-[r26:isSymptomOf]->(o2)
+SET r26.text = 'Viêm tai ngoài có tỷ lệ mắc bệnh khoảng 10% và có thể biểu hiện ở dạng cấp tính, mạn tính và ác tính (hoại tử).'
+
+MERGE (o1:disease {id: 'viêm_tai_ngoài_disease'})
+MERGE (o2:symptom {id: 'hoại_tử_symptom'})
+MERGE (o1)-[r27:isSymptomOf]->(o2)
+SET r27.text = 'Viêm tai ngoài có tỷ lệ mắc bệnh khoảng 10% và có thể biểu hiện ở dạng cấp tính, mạn tính và ác tính (hoại tử).'
+
+MERGE (o1:disease {id: 'viêm_tai_ngoài_disease'})
+MERGE (o2:symptom {id: 'kéo_dài_dưới_3_tuần_symptom'})
+MERGE (o1)-[r28:isSymptomOf]->(o2)
+SET r28.text = 'Là tình trạng tai ngoài bị viêm kéo dài dưới 3 tuần.'
+
+MERGE (o1:disease {id: 'viêm_tai_ngoài_cấp_tính_disease'})
+MERGE (o2:symptom {id: 'tự_khỏi_trong_vòng_10_ngày_symptom'})
+MERGE (o1)-[r29:isSymptomOf]->(o2)
+SET r29.text = 'Nhiều trường hợp viêm tai ngoài cấp tính có thể tự khỏi trong vòng 10 ngày.'
+
+MERGE (o1:disease {id: 'viêm_tai_ngoài_mạn_tính_disease'})
+MERGE (o2:symptom {id: 'kéo_dài_trên_3_tháng_symptom'})
+MERGE (o1)-[r30:isSymptomOf]->(o2)
+SET r30.text = 'Biểu hiện viêm tai ngoài kéo dài trên 3 tháng, hoặc trên 4 đợt viêm tai ngoài mỗi năm được gọi là viêm tai ngoài mạn tính.'
+
+MERGE (o1:disease {id: 'viêm_tai_ngoài_mạn_tính_disease'})
+MERGE (o2:symptom {id: 'trên_4_đợt_viêm_tai_ngoài_mỗi_năm_symptom'})
+MERGE (o1)-[r31:isSymptomOf]->(o2)
+SET r31.text = 'Biểu hiện viêm tai ngoài kéo dài trên 3 tháng, hoặc trên 4 đợt viêm tai ngoài mỗi năm được gọi là viêm tai ngoài mạn tính.'
+
+MERGE (o1:disease {id: 'viêm_tai_ngoài_mạn_tính_disease'})
+MERGE (o2:treatment {id: 'viêm_tai_ngoài_cấp_tính_không_được_điều_trị_đầy_đủ__đúng_cách_treatment'})
+MERGE (o1)-[r32:causedBy]->(o2)
+SET r32.text = 'Viêm tai ngoài mạn tính có thể do viêm tai ngoài cấp tính không được điều trị đầy đủ, đúng cách.'
+
+MERGE (o1:disease {id: 'viêm_da_dị_ứng_disease'})
+MERGE (o2:disease {id: 'viêm_tai_ngoài_mạn_tính_disease'})
+MERGE (o1)-[r33:causedBy]->(o2)
+SET r33.text = 'Nguyên nhân phổ biến khác là do da ống tai mắc bệnh ngoài da như viêm da dị ứng hoặc bệnh vẩy nến.'
+
+MERGE (o1:disease {id: 'bệnh_vẩy_nến_disease'})
+MERGE (o2:disease {id: 'viêm_tai_ngoài_mạn_tính_disease'})
+MERGE (o1)-[r34:causedBy]->(o2)
+SET r34.text = 'Nguyên nhân phổ biến khác là do da ống tai mắc bệnh ngoài da như viêm da dị ứng hoặc bệnh vẩy nến.'
+
+MERGE (o1:disease {id: 'viêm_tai_ngoài_mạn_tính_disease'})
+MERGE (o2:organ {id: 'cả_hai_bên_tai_organ'})
+MERGE (o1)-[r35:associatedWith]->(o2)
+SET r35.text = 'Trên 50% bệnh nhân viêm tai ngoài mạn tính bị cả hai bên tai.'
+
+MERGE (o1:disease {id: 'viêm_tai_ngoài_mạn_tính_disease'})
+MERGE (o2:symptom {id: 'ngứa_symptom'})
+MERGE (o1)-[r36:isSymptomOf]->(o2)
+SET r36.text = 'Các triệu chứng điển hình của bệnh là ngứa, đau tai và nghe kém dẫn truyền do tắc nghẽn trong tai.'
+
+MERGE (o1:disease {id: 'viêm_tai_ngoài_mạn_tính_disease'})
+MERGE (o2:symptom {id: 'đau_tai_symptom'})
+MERGE (o1)-[r37:isSymptomOf]->(o2)
+SET r37.text = 'Các triệu chứng điển hình của bệnh là ngứa, đau tai và nghe kém dẫn truyền do tắc nghẽn trong tai.'
+
+MERGE (o1:disease {id: 'viêm_tai_ngoài_mạn_tính_disease'})
+MERGE (o2:symptom {id: 'nghe_kém_dẫn_truyền_symptom'})
+MERGE (o1)-[r38:isSymptomOf]->(o2)
+SET r38.text = 'Các triệu chứng điển hình của bệnh là ngứa, đau tai và nghe kém dẫn truyền do tắc nghẽn trong tai.'
+
+MERGE (o1:disease {id: 'viêm_tai_ngoài_mạn_tính_disease'})
+MERGE (o2:symptom {id: 'tắc_nghẽn_trong_tai_symptom'})
+MERGE (o1)-[r39:isSymptomOf]->(o2)
+SET r39.text = 'Các triệu chứng điển hình của bệnh là ngứa, đau tai và nghe kém dẫn truyền do tắc nghẽn trong tai.'
+
+MERGE (o1:disease {id: 'viêm_tai_ngoài_mạn_tính_disease'})
+MERGE (o2:symptom {id: 'da_ống_tay_khô_symptom'})
+MERGE (o1)-[r40:isSymptomOf]->(o2)
+SET r40.text = 'Biểu hiện viêm tai ngoài mạn tính có thể nhận thấy là da ống tay khô, có vảy, ẩm đỏ hoặc bóng trong ống tai.'
+
+MERGE (o1:disease {id: 'viêm_tai_ngoài_mạn_tính_disease'})
+MERGE (o2:symptom {id: 'có_vảy_symptom'})
+MERGE (o1)-[r41:isSymptomOf]->(o2)
+SET r41.text = 'Biểu hiện viêm tai ngoài mạn tính có thể nhận thấy là da ống tay khô, có vảy, ẩm đỏ hoặc bóng trong ống tai.'
+
+MERGE (o1:disease {id: 'viêm_tai_ngoài_mạn_tính_disease'})
+MERGE (o2:symptom {id: 'ẩm_đỏ_symptom'})
+MERGE (o1)-[r42:isSymptomOf]->(o2)
+SET r42.text = 'Biểu hiện viêm tai ngoài mạn tính có thể nhận thấy là da ống tay khô, có vảy, ẩm đỏ hoặc bóng trong ống tai.'
+
+MERGE (o1:disease {id: 'viêm_tai_ngoài_mạn_tính_disease'})
+MERGE (o2:symptom {id: 'bóng_trong_ống_tai_symptom'})
+MERGE (o1)-[r43:isSymptomOf]->(o2)
+SET r43.text = 'Biểu hiện viêm tai ngoài mạn tính có thể nhận thấy là da ống tay khô, có vảy, ẩm đỏ hoặc bóng trong ống tai.'
+
+MERGE (o1:symptom {id: 'ngứa_symptom'})
+MERGE (o2:organ {id: 'ống_tai_organ'})
+MERGE (o1)-[r44:affects]->(o2)
+SET r44.text = 'Người bệnh có thể bị ngứa nên tác động tới ống tai, gây trầy xước.'
+
+MERGE (o1:symptom {id: 'ngứa_symptom'})
+MERGE (o2:symptom {id: 'trầy_xước_symptom'})
+MERGE (o1)-[r45:isSymptomOf]->(o2)
+SET r45.text = 'Người bệnh có thể bị ngứa nên tác động tới ống tai, gây trầy xước.'
+
+MERGE (o1:symptom {id: 'trầy_xước_symptom'})
+MERGE (o2:disease {id: 'viêm_tai_ngoài_cấp_tính_disease'})
+MERGE (o1)-[r46:causedBy]->(o2)
+SET r46.text = 'Đây có thể là nguyên nhân dẫn đến viêm tai ngoài cấp tính.'
+
+MERGE (o1:disease {id: 'viêm_tai_ngoài_mạn_tính_disease'})
+MERGE (o2:symptom {id: 'xơ_hóa_ống_tai_tiến_triển_symptom'})
+MERGE (o1)-[r47:isSymptomOf]->(o2)
+SET r47.text = 'Viêm tai ngoài mạn tính có thể gây xơ hóa ống tai tiến triển.'
+
+MERGE (o1:disease {id: 'viêm_tai_ngoài_ác_tính_disease'})
+MERGE (o2:symptom {id: 'phá_hủy_ống_tai_ngoài_symptom'})
+MERGE (o1)-[r48:isSymptomOf]->(o2)
+SET r48.text = 'Viêm tai ngoài ác tính là một bệnh nhiễm trùng phá hủy ống tai ngoài và các mô mềm xung quanh, gây viêm màng não và viêm cốt tủy xương của nền sọ bên.'
+
+MERGE (o1:disease {id: 'viêm_tai_ngoài_ác_tính_disease'})
+MERGE (o2:symptom {id: 'viêm_màng_não_symptom'})
+MERGE (o1)-[r49:isSymptomOf]->(o2)
+SET r49.text = 'Viêm tai ngoài ác tính là một bệnh nhiễm trùng phá hủy ống tai ngoài và các mô mềm xung quanh, gây viêm màng não và viêm cốt tủy xương của nền sọ bên.'
+
+MERGE (o1:disease {id: 'viêm_tai_ngoài_ác_tính_disease'})
+MERGE (o2:symptom {id: 'viêm_cốt_tủy_xương_symptom'})
+MERGE (o1)-[r50:isSymptomOf]->(o2)
+SET r50.text = 'Viêm tai ngoài ác tính là một bệnh nhiễm trùng phá hủy ống tai ngoài và các mô mềm xung quanh, gây viêm màng não và viêm cốt tủy xương của nền sọ bên.'
+
+MERGE (o1:disease {id: 'viêm_tai_ngoài_ác_tính_disease'})
+MERGE (o2:lifestyle {id: 'nam_giới_cao_tuổi_lifestyle'})
+MERGE (o1)-[r51:associatedWith]->(o2)
+SET r51.text = 'Tình trạng này phát sinh chủ yếu ở nam giới cao tuổi mắc bệnh tiểu đường hoặc suy giảm miễn dịch.'
+
+MERGE (o1:disease {id: 'viêm_tai_ngoài_ác_tính_disease'})
+MERGE (o2:disease {id: 'bệnh_tiểu_đường_disease'})
+MERGE (o1)-[r52:associatedWith]->(o2)
+SET r52.text = 'Tình trạng này phát sinh chủ yếu ở nam giới cao tuổi mắc bệnh tiểu đường hoặc suy giảm miễn dịch.'
+
+MERGE (o1:disease {id: 'viêm_tai_ngoài_ác_tính_disease'})
+MERGE (o2:disease {id: 'suy_giảm_miễn_dịch_disease'})
+MERGE (o1)-[r53:associatedWith]->(o2)
+SET r53.text = 'Tình trạng này phát sinh chủ yếu ở nam giới cao tuổi mắc bệnh tiểu đường hoặc suy giảm miễn dịch.'
+
+MERGE (o1:disease {id: 'viêm_tai_ngoài_ác_tính_disease'})
+MERGE (o2:lifestyle {id: 'tỷ_lệ_mắc_lifestyle'})
+MERGE (o1)-[r54:associatedWith]->(o2)
+SET r54.text = 'Tỷ lệ mắc viêm tai ngoài ác tính không được biết chính xác.'
+
+MERGE (o1:disease {id: 'viêm_tai_ngoài_ác_tính_disease'})
+MERGE (o2:lifestyle {id: 'trẻ_em_bị_suy_giảm_miễn_dịch_nghiêm_trọng_lifestyle'})
+MERGE (o1)-[r55:associatedWith]->(o2)
+SET r55.text = 'Các trường hợp hiếm gặp đã được mô tả ở trẻ em bị suy giảm miễn dịch nghiêm trọng, chẳng hạn như trẻ em mắc bệnh bạch cầu cấp tính hoặc trẻ đã trải qua cấy ghép tủy xương.'
+
+MERGE (o1:disease {id: 'viêm_tai_ngoài_ác_tính_disease'})
+MERGE (o2:disease {id: 'bệnh_bạch_cầu_cấp_tính_disease'})
+MERGE (o1)-[r56:associatedWith]->(o2)
+SET r56.text = 'Các trường hợp hiếm gặp đã được mô tả ở trẻ em bị suy giảm miễn dịch nghiêm trọng, chẳng hạn như trẻ em mắc bệnh bạch cầu cấp tính hoặc trẻ đã trải qua cấy ghép tủy xương.'
+
+MERGE (o1:disease {id: 'viêm_tai_ngoài_ác_tính_disease'})
+MERGE (o2:treatment {id: 'cấy_ghép_tủy_xương_treatment'})
+MERGE (o1)-[r57:associatedWith]->(o2)
+SET r57.text = 'Các trường hợp hiếm gặp đã được mô tả ở trẻ em bị suy giảm miễn dịch nghiêm trọng, chẳng hạn như trẻ em mắc bệnh bạch cầu cấp tính hoặc trẻ đã trải qua cấy ghép tủy xương.'
+
+MERGE (o1:disease {id: 'viêm_tai_ngoài_ác_tính_disease'})
+MERGE (o2:symptom {id: 'khó_chữa_symptom'})
+MERGE (o1)-[r58:isSymptomOf]->(o2)
+SET r58.text = 'Chẩn đoán sớm là điều cần thiết vì viêm tai ngoài ác tính khó chữa và có thể gây tử vong.'
+
+MERGE (o1:disease {id: 'viêm_tai_ngoài_ác_tính_disease'})
+MERGE (o2:symptom {id: 'gây_tử_vong_symptom'})
+MERGE (o1)-[r59:isSymptomOf]->(o2)
+SET r59.text = 'Chẩn đoán sớm là điều cần thiết vì viêm tai ngoài ác tính khó chữa và có thể gây tử vong.'
+
+MERGE (o1:disease {id: 'nhiễm_trùng_tai_ngoài_disease'})
+MERGE (o2:cause {id: 'vi_khuẩn_cause'})
+MERGE (o1)-[r60:causedBy]->(o2)
+SET r60.text = 'Nhiễm trùng tai ngoài thường do vi khuẩn gây ra.'
+
+MERGE (o1:cause {id: 's._aureus_cause'})
+MERGE (o2:disease {id: 'nhiễm_trùng_tai_ngoài_disease'})
+MERGE (o1)-[r61:causedBy]->(o2)
+SET r61.text = 'Các loại vi khuẩn gây bệnh phổ biến nhất là S. aureus và S. aureus [MRSA].'
+
+MERGE (o1:cause {id: 's._aureus_[mrsa]_cause'})
+MERGE (o2:disease {id: 'nhiễm_trùng_tai_ngoài_disease'})
+MERGE (o1)-[r62:causedBy]->(o2)
+SET r62.text = 'Các loại vi khuẩn gây bệnh phổ biến nhất là S. aureus và S. aureus [MRSA].'
+
+MERGE (o1:cause {id: 'nấm_cause'})
+MERGE (o2:disease {id: 'nhiễm_trùng_tai_ngoài_disease'})
+MERGE (o1)-[r63:causedBy]->(o2)
+SET r63.text = 'Nhưng nấm cũng là một tác nhân phổ biến gây nấm ống tai ngoài, đặc biệt là các loài nấm Aspergillus niger và Candida albicans.(3)'
+
+MERGE (o1:disease {id: 'nấm_ống_tai_ngoài_disease'})
+MERGE (o2:cause {id: 'nấm_cause'})
+MERGE (o1)-[r64:causedBy]->(o2)
+SET r64.text = 'Nhưng nấm cũng là một tác nhân phổ biến gây nấm ống tai ngoài, đặc biệt là các loài nấm Aspergillus niger và Candida albicans.(3)'
+
+MERGE (o1:cause {id: 'aspergillus_niger_cause'})
+MERGE (o2:disease {id: 'nấm_ống_tai_ngoài_disease'})
+MERGE (o1)-[r65:causedBy]->(o2)
+SET r65.text = 'Nhưng nấm cũng là một tác nhân phổ biến gây nấm ống tai ngoài, đặc biệt là các loài nấm Aspergillus niger và Candida albicans.(3)'
+
+MERGE (o1:cause {id: 'candida_albicans_cause'})
+MERGE (o2:disease {id: 'nấm_ống_tai_ngoài_disease'})
+MERGE (o1)-[r66:causedBy]->(o2)
+SET r66.text = 'Nhưng nấm cũng là một tác nhân phổ biến gây nấm ống tai ngoài, đặc biệt là các loài nấm Aspergillus niger và Candida albicans.(3)'
+
+MERGE (o1:cause {id: 'bệnh_về_da_cause'})
+MERGE (o2:disease {id: 'viêm_tai_ngoài_disease'})
+MERGE (o1)-[r67:causedBy]->(o2)
+SET r67.text = 'Ngoài ra, các bệnh về da hoặc các phản ứng dị ứng, chẳng hạn như dị ứng với dầu gội đầu cũng có thể dẫn đến viêm tai ngoài.'
+
+MERGE (o1:cause {id: 'phản_ứng_dị_ứng_cause'})
+MERGE (o2:disease {id: 'viêm_tai_ngoài_disease'})
+MERGE (o1)-[r68:causedBy]->(o2)
+SET r68.text = 'Ngoài ra, các bệnh về da hoặc các phản ứng dị ứng, chẳng hạn như dị ứng với dầu gội đầu cũng có thể dẫn đến viêm tai ngoài.'
+
+MERGE (o1:cause {id: 'dị_ứng_với_dầu_gội_đầu_cause'})
+MERGE (o2:disease {id: 'viêm_tai_ngoài_disease'})
+MERGE (o1)-[r69:causedBy]->(o2)
+SET r69.text = 'Ngoài ra, các bệnh về da hoặc các phản ứng dị ứng, chẳng hạn như dị ứng với dầu gội đầu cũng có thể dẫn đến viêm tai ngoài.'
+
+MERGE (o1:lifestyle {id: 'bơi_lội_lifestyle'})
+MERGE (o2:disease {id: 'viêm_tai_ngoài_disease'})
+MERGE (o1)-[r70:aggravatedBy]->(o2)
+SET r70.text = 'Khi bơi lội, tai tiếp xúc với nước hồ bơi, vệ sinh tai không đúng cách làm tăng nguy cơ nhiễm trùng dẫn đến viêm tai ngoài.'
+
+MERGE (o1:cause {id: 'nước_hồ_bơi_cause'})
+MERGE (o2:disease {id: 'viêm_tai_ngoài_disease'})
+MERGE (o1)-[r71:causedBy]->(o2)
+SET r71.text = 'Khi bơi lội, tai tiếp xúc với nước hồ bơi, vệ sinh tai không đúng cách làm tăng nguy cơ nhiễm trùng dẫn đến viêm tai ngoài.'
+
+MERGE (o1:lifestyle {id: 'vệ_sinh_tai_không_đúng_cách_lifestyle'})
+MERGE (o2:disease {id: 'viêm_tai_ngoài_disease'})
+MERGE (o1)-[r72:aggravatedBy]->(o2)
+SET r72.text = 'Khi bơi lội, tai tiếp xúc với nước hồ bơi, vệ sinh tai không đúng cách làm tăng nguy cơ nhiễm trùng dẫn đến viêm tai ngoài.'
+
+MERGE (o1:lifestyle {id: 'sử_dụng_bông_ngoáy_tai_để_làm_sạch_tai_lifestyle'})
+MERGE (o2:disease {id: 'nhiễm_trùng_tai_disease'})
+MERGE (o1)-[r73:aggravatedBy]->(o2)
+SET r73.text = 'Sử dụng bông ngoáy tai để làm sạch tai hoặc thường xuyên đeo tai nghe, loại nhét vào sâu trong tai có thể làm tăng nguy cơ nhiễm trùng tai.'
+
+MERGE (o1:lifestyle {id: 'thường_xuyên_đeo_tai_nghe_lifestyle'})
+MERGE (o2:disease {id: 'nhiễm_trùng_tai_disease'})
+MERGE (o1)-[r74:aggravatedBy]->(o2)
+SET r74.text = 'Sử dụng bông ngoáy tai để làm sạch tai hoặc thường xuyên đeo tai nghe, loại nhét vào sâu trong tai có thể làm tăng nguy cơ nhiễm trùng tai.'
+
+MERGE (o1:lifestyle {id: 'nhét_vào_sâu_trong_tai_lifestyle'})
+MERGE (o2:disease {id: 'nhiễm_trùng_tai_disease'})
+MERGE (o1)-[r75:aggravatedBy]->(o2)
+SET r75.text = 'Sử dụng bông ngoáy tai để làm sạch tai hoặc thường xuyên đeo tai nghe, loại nhét vào sâu trong tai có thể làm tăng nguy cơ nhiễm trùng tai.'
+
+MERGE (o1:disease {id: 'viêm_tai_ngoài_disease'})
+MERGE (o2:disease {id: 'nhiễm_trùng_tai_ngoài_disease'})
+MERGE (o1)-[r76:associatedWith]->(o2)
+SET r76.text = 'Những người đã bị viêm tai ngoài thường dễ bị nhiễm trùng tai ngoài hơn.'
+
+MERGE (o1:lifestyle {id: 'sử_dụng_chung_dụng_cụ_lấy_ráy_tai_không_được_tiệt_trùng_kỹ_lifestyle'})
+MERGE (o2:disease {id: 'nhiễm_trùng_tai_disease'})
+MERGE (o1)-[r77:aggravatedBy]->(o2)
+SET r77.text = 'Sử dụng chung dụng cụ lấy ráy tai không được tiệt trùng kỹ cũng làm tăng nguy cơ nhiễm trùng tai.'
+
+MERGE (o1:disease {id: 'chàm_disease'})
+MERGE (o2:symptom {id: 'viêm_symptom'})
+MERGE (o1)-[r78:associatedWith]->(o2)
+SET r78.text = 'Mắc các bệnh về da như chàm hoặc bệnh vẩy nến: Da bị tổn thương có nhiều khả năng bị viêm.'
+
+MERGE (o1:disease {id: 'bệnh_vẩy_nến_disease'})
+MERGE (o2:symptom {id: 'viêm_symptom'})
+MERGE (o1)-[r79:associatedWith]->(o2)
+SET r79.text = 'Mắc các bệnh về da như chàm hoặc bệnh vẩy nến: Da bị tổn thương có nhiều khả năng bị viêm.'
+
+MERGE (o1:symptom {id: 'da_bị_tổn_thương_symptom'})
+MERGE (o2:symptom {id: 'viêm_symptom'})
+MERGE (o1)-[r80:aggravatedBy]->(o2)
+SET r80.text = 'Mắc các bệnh về da như chàm hoặc bệnh vẩy nến: Da bị tổn thương có nhiều khả năng bị viêm.'
+
+MERGE (o1:symptom {id: 'cơn_đau_dữ_dội_trong_tai_symptom'})
+MERGE (o2:disease {id: 'viêm_tai_ngoài_cấp_tính_disease'})
+MERGE (o1)-[r81:isSymptomOf]->(o2)
+SET r81.text = 'Triệu chứng viêm tai ngoài cấp tính đặc trưng là cơn đau dữ dội trong tai do kích thích màng ngoài xương ngay dưới lớp da mỏng của ống tai.'
+
+MERGE (o1:cause {id: 'kích_thích_màng_ngoài_xương_cause'})
+MERGE (o2:symptom {id: 'cơn_đau_dữ_dội_trong_tai_symptom'})
+MERGE (o1)-[r82:causedBy]->(o2)
+SET r82.text = 'Triệu chứng viêm tai ngoài cấp tính đặc trưng là cơn đau dữ dội trong tai do kích thích màng ngoài xương ngay dưới lớp da mỏng của ống tai.'
+
+MERGE (o1:lifestyle {id: 'kéo_vành_tai_lifestyle'})
+MERGE (o2:symptom {id: 'cơn_đau_symptom'})
+MERGE (o1)-[r83:aggravatedBy]->(o2)
+SET r83.text = 'Cơn đau thường trở nên tồi tệ hơn khi kéo vành tai.'
+
+MERGE (o1:symptom {id: 'chảy_dịch_tai_symptom'})
+MERGE (o2:disease {id: 'viêm_tai_ngoài_disease'})
+MERGE (o1)-[r84:isSymptomOf]->(o2)
+SET r84.text = 'Các dấu hiệu viêm tai ngoài khác như chảy dịch tai, ngứa, sung huyết và sưng ống tai, một số trường hợp có ù tai và nghe kém do bít lấp ống tai.'
+
+MERGE (o1:symptom {id: 'ngứa_symptom'})
+MERGE (o2:disease {id: 'viêm_tai_ngoài_disease'})
+MERGE (o1)-[r85:isSymptomOf]->(o2)
+SET r85.text = 'Các dấu hiệu viêm tai ngoài khác như chảy dịch tai, ngứa, sung huyết và sưng ống tai, một số trường hợp có ù tai và nghe kém do bít lấp ống tai.'
+
+MERGE (o1:symptom {id: 'sung_huyết_symptom'})
+MERGE (o2:disease {id: 'viêm_tai_ngoài_disease'})
+MERGE (o1)-[r86:isSymptomOf]->(o2)
+SET r86.text = 'Các dấu hiệu viêm tai ngoài khác như chảy dịch tai, ngứa, sung huyết và sưng ống tai, một số trường hợp có ù tai và nghe kém do bít lấp ống tai.'
+
+MERGE (o1:symptom {id: 'sưng_ống_tai_symptom'})
+MERGE (o2:disease {id: 'viêm_tai_ngoài_disease'})
+MERGE (o1)-[r87:isSymptomOf]->(o2)
+SET r87.text = 'Các dấu hiệu viêm tai ngoài khác như chảy dịch tai, ngứa, sung huyết và sưng ống tai, một số trường hợp có ù tai và nghe kém do bít lấp ống tai.'
+
+MERGE (o1:symptom {id: 'ù_tai_symptom'})
+MERGE (o2:disease {id: 'viêm_tai_ngoài_disease'})
+MERGE (o1)-[r88:isSymptomOf]->(o2)
+SET r88.text = 'Các dấu hiệu viêm tai ngoài khác như chảy dịch tai, ngứa, sung huyết và sưng ống tai, một số trường hợp có ù tai và nghe kém do bít lấp ống tai.'
+
+MERGE (o1:symptom {id: 'nghe_kém_symptom'})
+MERGE (o2:disease {id: 'viêm_tai_ngoài_disease'})
+MERGE (o1)-[r89:isSymptomOf]->(o2)
+SET r89.text = 'Các dấu hiệu viêm tai ngoài khác như chảy dịch tai, ngứa, sung huyết và sưng ống tai, một số trường hợp có ù tai và nghe kém do bít lấp ống tai.'
+
+MERGE (o1:cause {id: 'bít_lấp_ống_tai_cause'})
+MERGE (o2:symptom {id: 'nghe_kém_symptom'})
+MERGE (o1)-[r90:causedBy]->(o2)
+SET r90.text = 'Các dấu hiệu viêm tai ngoài khác như chảy dịch tai, ngứa, sung huyết và sưng ống tai, một số trường hợp có ù tai và nghe kém do bít lấp ống tai.'
+
+MERGE (o1:disease {id: 'viêm_tai_ngoài_disease'})
+MERGE (o2:test {id: 'hỏi_bệnh_sử_và_thăm_khám_test'})
+MERGE (o1)-[r91:diagnosedBy]->(o2)
+SET r91.text = 'ThS.BS.CKI Nguyễn Thị Hương khoa Tai Mũi Họng, BVĐK Tâm Anh TP.HCM, cho biết, viêm tai ngoài được chẩn đoán dựa trên hỏi bệnh sử và thăm khám, nội soi tai để đánh giá ống tai phía trong, màng nhĩ và tai giữa.'
+
+MERGE (o1:disease {id: 'viêm_tai_ngoài_disease'})
+MERGE (o2:test {id: 'nội_soi_tai_test'})
+MERGE (o1)-[r92:diagnosedBy]->(o2)
+SET r92.text = 'ThS.BS.CKI Nguyễn Thị Hương khoa Tai Mũi Họng, BVĐK Tâm Anh TP.HCM, cho biết, viêm tai ngoài được chẩn đoán dựa trên hỏi bệnh sử và thăm khám, nội soi tai để đánh giá ống tai phía trong, màng nhĩ và tai giữa.'
+
+MERGE (o1:symptom {id: 'đau_tai_symptom'})
+MERGE (o2:disease {id: 'viêm_tai_ngoài_cấp_tính_disease'})
+MERGE (o1)-[r93:isSymptomOf]->(o2)
+SET r93.text = 'Các biểu hiện đặc trưng trong viêm tai ngoài cấp tính là đau tai, tăng khi kéo vành tai, cùng với sưng nề ống tai, có thể bít lấp hoàn toàn ống tai.'
+
+MERGE (o1:symptom {id: 'tăng_khi_kéo_vành_tai_symptom'})
+MERGE (o2:disease {id: 'viêm_tai_ngoài_cấp_tính_disease'})
+MERGE (o1)-[r94:isSymptomOf]->(o2)
+SET r94.text = 'Các biểu hiện đặc trưng trong viêm tai ngoài cấp tính là đau tai, tăng khi kéo vành tai, cùng với sưng nề ống tai, có thể bít lấp hoàn toàn ống tai.'
+
+MERGE (o1:symptom {id: 'sưng_nề_ống_tai_symptom'})
+MERGE (o2:disease {id: 'viêm_tai_ngoài_cấp_tính_disease'})
+MERGE (o1)-[r95:isSymptomOf]->(o2)
+SET r95.text = 'Các biểu hiện đặc trưng trong viêm tai ngoài cấp tính là đau tai, tăng khi kéo vành tai, cùng với sưng nề ống tai, có thể bít lấp hoàn toàn ống tai.'
+
+MERGE (o1:symptom {id: 'bít_lấp_hoàn_toàn_ống_tai_symptom'})
+MERGE (o2:disease {id: 'viêm_tai_ngoài_cấp_tính_disease'})
+MERGE (o1)-[r96:isSymptomOf]->(o2)
+SET r96.text = 'Các biểu hiện đặc trưng trong viêm tai ngoài cấp tính là đau tai, tăng khi kéo vành tai, cùng với sưng nề ống tai, có thể bít lấp hoàn toàn ống tai.'
+
+MERGE (o1:symptom {id: 'đỏ_symptom'})
+MERGE (o2:disease {id: 'viêm_tai_ngoài_disease'})
+MERGE (o1)-[r97:isSymptomOf]->(o2)
+SET r97.text = 'Ngoài ra, da của ống tai có thể đỏ hoặc nhợt nhạt do phù nề.'
+
+MERGE (o1:symptom {id: 'nhợt_nhạt_symptom'})
+MERGE (o2:disease {id: 'viêm_tai_ngoài_disease'})
+MERGE (o1)-[r98:isSymptomOf]->(o2)
+SET r98.text = 'Ngoài ra, da của ống tai có thể đỏ hoặc nhợt nhạt do phù nề.'
+
+MERGE (o1:symptom {id: 'phù_nề_symptom'})
+MERGE (o2:disease {id: 'viêm_tai_ngoài_disease'})
+MERGE (o1)-[r99:isSymptomOf]->(o2)
+SET r99.text = 'Ngoài ra, da của ống tai có thể đỏ hoặc nhợt nhạt do phù nề.'
+
+MERGE (o1:symptom {id: 'chảy_dịch_tai_symptom'})
+MERGE (o2:disease {id: 'viêm_tai_ngoài_disease'})
+MERGE (o1)-[r100:isSymptomOf]->(o2)
+SET r100.text = 'Chảy dịch tai cũng thường gặp, có thể lấy mẫu dịch tai để nuôi cấy và làm kháng sinh đồ.'
+
+MERGE (o1:test {id: 'lấy_mẫu_dịch_tai_test'})
+MERGE (o2:disease {id: 'viêm_tai_ngoài_disease'})
+MERGE (o1)-[r101:diagnosedBy]->(o2)
+SET r101.text = 'Chảy dịch tai cũng thường gặp, có thể lấy mẫu dịch tai để nuôi cấy và làm kháng sinh đồ.'
+
+MERGE (o1:test {id: 'nuôi_cấy_test'})
+MERGE (o2:disease {id: 'viêm_tai_ngoài_disease'})
+MERGE (o1)-[r102:diagnosedBy]->(o2)
+SET r102.text = 'Chảy dịch tai cũng thường gặp, có thể lấy mẫu dịch tai để nuôi cấy và làm kháng sinh đồ.'
+
+MERGE (o1:test {id: 'kháng_sinh_đồ_test'})
+MERGE (o2:disease {id: 'viêm_tai_ngoài_disease'})
+MERGE (o1)-[r103:diagnosedBy]->(o2)
+SET r103.text = 'Chảy dịch tai cũng thường gặp, có thể lấy mẫu dịch tai để nuôi cấy và làm kháng sinh đồ.'
+
+MERGE (o1:symptom {id: 'sưng_tấy_vùng_da_quanh_tai_symptom'})
+MERGE (o2:disease {id: 'viêm_tai_ngoài_disease'})
+MERGE (o1)-[r104:isSymptomOf]->(o2)
+SET r104.text = 'Sưng tấy vùng da quanh tai, sốt có thể gặp khi bệnh ở mức độ nặng.'
+
+MERGE (o1:symptom {id: 'sốt_symptom'})
+MERGE (o2:disease {id: 'viêm_tai_ngoài_disease'})
+MERGE (o1)-[r105:isSymptomOf]->(o2)
+SET r105.text = 'Sưng tấy vùng da quanh tai, sốt có thể gặp khi bệnh ở mức độ nặng.'
+
+MERGE (o1:disease {id: 'viêm_tai_ngoài_disease'})
+MERGE (o2:test {id: 'chụp_ct_scan_test'})
+MERGE (o1)-[r106:diagnosedBy]->(o2)
+SET r106.text = 'Một số trường hợp nặng, khó đánh giá cần phải chụp CT scan để chẩn đoán chính xác mức độ của bệnh.'
+
+MERGE (o1:disease {id: 'viêm_tai_ngoài_mức_độ_nhẹ_disease'})
+MERGE (o2:treatment {id: 'làm_sạch_ống_tai_treatment'})
+MERGE (o1)-[r107:treatedBy]->(o2)
+SET r107.text = 'Đối với trường hợp viêm tai ngoài mức độ nhẹ, việc điều trị cần làm sạch ống tai, dùng thuốc nhỏ tai tại chỗ.'
+
+MERGE (o1:disease {id: 'viêm_tai_ngoài_mức_độ_nhẹ_disease'})
+MERGE (o2:treatment {id: 'thuốc_nhỏ_tai_tại_chỗ_treatment'})
+MERGE (o1)-[r108:treatedBy]->(o2)
+SET r108.text = 'Đối với trường hợp viêm tai ngoài mức độ nhẹ, việc điều trị cần làm sạch ống tai, dùng thuốc nhỏ tai tại chỗ.'
+
+MERGE (o1:disease {id: 'viêm_tai_ngoài_nặng_hơn_disease'})
+MERGE (o2:treatment {id: 'thuốc_đường_uống_treatment'})
+MERGE (o1)-[r109:treatedBy]->(o2)
+SET r109.text = 'Trong trường hợp nặng hơn cần dùng thuốc đường uống.'
+
+MERGE (o1:disease {id: 'viêm_tai_ngoài_biến_chứng_disease'})
+MERGE (o2:treatment {id: 'phẫu_thuật_treatment'})
+MERGE (o1)-[r110:treatedBy]->(o2)
+SET r110.text = 'Khi viêm tai ngoài biến chứng có thể cần phải phẫu thuật.'
+
+MERGE (o1:treatment {id: 'làm_sạch_ống_tai_treatment'})
+MERGE (o2:organ {id: 'bệnh_viện_organ'})
+MERGE (o1)-[r111:locatedIn]->(o2)
+SET r111.text = 'Việc làm sạch ống tai cần được thực hiện tại bệnh viện, bởi bác sĩ chuyên khoa Tai Mũi Họng.'
+
+MERGE (o1:treatment {id: 'làm_sạch_ống_tai_treatment'})
+MERGE (o2:organ {id: 'bác_sĩ_chuyên_khoa_tai_mũi_họng_organ'})
+MERGE (o1)-[r112:performedBy]->(o2)
+SET r112.text = 'Việc làm sạch ống tai cần được thực hiện tại bệnh viện, bởi bác sĩ chuyên khoa Tai Mũi Họng.'
+
+MERGE (o1:treatment {id: 'làm_sạch_ống_tai_treatment'})
+MERGE (o2:organ {id: 'bác_sĩ_nhi_khoa_organ'})
+MERGE (o1)-[r113:performedBy]->(o2)
+SET r113.text = 'Ở các địa phương không có chuyên khoa Tai Mũi Họng có thể được thực hiện bởi bác sĩ Nhi khoa hoặc bác sĩ Đa khoa.'
+
+MERGE (o1:treatment {id: 'làm_sạch_ống_tai_treatment'})
+MERGE (o2:organ {id: 'bác_sĩ_đa_khoa_organ'})
+MERGE (o1)-[r114:performedBy]->(o2)
+SET r114.text = 'Ở các địa phương không có chuyên khoa Tai Mũi Họng có thể được thực hiện bởi bác sĩ Nhi khoa hoặc bác sĩ Đa khoa.'
+
+MERGE (o1:treatment {id: 'làm_sạch_ống_tai_treatment'})
+MERGE (o2:treatment {id: 'loại_bỏ_ráy_tai_treatment'})
+MERGE (o1)-[r115:relatedTo]->(o2)
+SET r115.text = 'Làm sạch ống tai không gây chấn thương bao gồm loại bỏ ráy tai và dịch tiết.'
+
+MERGE (o1:treatment {id: 'làm_sạch_ống_tai_treatment'})
+MERGE (o2:treatment {id: 'loại_bỏ_dịch_tiết_treatment'})
+MERGE (o1)-[r116:relatedTo]->(o2)
+SET r116.text = 'Làm sạch ống tai không gây chấn thương bao gồm loại bỏ ráy tai và dịch tiết.'
+
+MERGE (o1:cause {id: 'dịch_tiết_cause'})
+MERGE (o2:cause {id: 'pseudomonas_exotoxin_a_cause'})
+MERGE (o1)-[r117:causedBy]->(o2)
+SET r117.text = 'Dịch tiết có thể chứa độc tố, ví dụ như Pseudomonas exotoxin A.'
+
+MERGE (o1:cause {id: 'pseudomonas_exotoxin_a_cause'})
+MERGE (o2:disease {id: 'quá_trình_viêm_disease'})
+MERGE (o1)-[r118:affects]->(o2)
+SET r118.text = 'Độc tố này làm cho quá trình viêm kéo dài và hạn chế hoặc ngăn chặn hiệu quả của thuốc bôi.'
+
+MERGE (o1:cause {id: 'pseudomonas_exotoxin_a_cause'})
+MERGE (o2:treatment {id: 'thuốc_bôi_treatment'})
+MERGE (o1)-[r119:affects]->(o2)
+SET r119.text = 'Độc tố này làm cho quá trình viêm kéo dài và hạn chế hoặc ngăn chặn hiệu quả của thuốc bôi.'
+
+MERGE (o1:treatment {id: 'làm_sạch_ống_tai_treatment'})
+MERGE (o2:organ {id: 'bác_sĩ_tai_mũi_họng_organ'})
+MERGE (o1)-[r120:performedBy]->(o2)
+SET r120.text = 'Bác sĩ Tai Mũi Họng sẽ tiến hành nội soi hoặc kính hiển vi để quan sát, dùng ống hút hoặc các dụng cụ để làm sạch ống tai.'
+
+MERGE (o1:treatment {id: 'làm_sạch_ống_tai_treatment'})
+MERGE (o2:test {id: 'nội_soi_test'})
+MERGE (o1)-[r121:diagnosedBy]->(o2)
+SET r121.text = 'Bác sĩ Tai Mũi Họng sẽ tiến hành nội soi hoặc kính hiển vi để quan sát, dùng ống hút hoặc các dụng cụ để làm sạch ống tai.'
+
+MERGE (o1:treatment {id: 'làm_sạch_ống_tai_treatment'})
+MERGE (o2:test {id: 'kính_hiển_vi_test'})
+MERGE (o1)-[r122:diagnosedBy]->(o2)
+SET r122.text = 'Bác sĩ Tai Mũi Họng sẽ tiến hành nội soi hoặc kính hiển vi để quan sát, dùng ống hút hoặc các dụng cụ để làm sạch ống tai.'
+
+MERGE (o1:treatment {id: 'làm_sạch_ống_tai_treatment'})
+MERGE (o2:treatment {id: 'ống_hút_treatment'})
+MERGE (o1)-[r123:treatedBy]->(o2)
+SET r123.text = 'Bác sĩ Tai Mũi Họng sẽ tiến hành nội soi hoặc kính hiển vi để quan sát, dùng ống hút hoặc các dụng cụ để làm sạch ống tai.'
+
+MERGE (o1:treatment {id: 'làm_sạch_ống_tai_treatment'})
+MERGE (o2:treatment {id: 'các_dụng_cụ_treatment'})
+MERGE (o1)-[r124:treatedBy]->(o2)
+SET r124.text = 'Bác sĩ Tai Mũi Họng sẽ tiến hành nội soi hoặc kính hiển vi để quan sát, dùng ống hút hoặc các dụng cụ để làm sạch ống tai.'
+
+MERGE (o1:organ {id: 'ống_tai_organ'})
+MERGE (o2:treatment {id: 'rửa_cẩn_thận_treatment'})
+MERGE (o1)-[r125:treatedBy]->(o2)
+SET r125.text = 'Khi đảm bảo màng nhĩ nguyên vẹn, ống tai có thể được rửa cẩn thận bằng các dung dịch sát trùng phù hợp.'
+
+MERGE (o1:organ {id: 'ống_tai_organ'})
+MERGE (o2:treatment {id: 'dung_dịch_sát_trùng_treatment'})
+MERGE (o1)-[r126:treatedBy]->(o2)
+SET r126.text = 'Khi đảm bảo màng nhĩ nguyên vẹn, ống tai có thể được rửa cẩn thận bằng các dung dịch sát trùng phù hợp.'
+
+MERGE (o1:lifestyle {id: 'tự_làm_sạch_tai_lifestyle'})
+MERGE (o2:disease {id: 'viêm_nặng_hơn_disease'})
+MERGE (o1)-[r127:aggravatedBy]->(o2)
+SET r127.text = 'Bác sĩ Nguyễn Thị Hương khuyến cáo, người bệnh không nên tự làm sạch tai tại nhà, vì có thể làm tổn thương tai tạo điều kiện cho vi khuẩn xâm nhập, gây viêm nặng hơn.'
+
+MERGE (o1:disease {id: 'viêm_tai_ngoài_cấp_tính_không_biến_chứng_disease'})
+MERGE (o2:treatment {id: 'làm_sạch_ống_tai_treatment'})
+MERGE (o1)-[r128:treatedBy]->(o2)
+SET r128.text = 'Việc điều trị viêm tai ngoài cấp tính không biến chứng bao gồm làm sạch ống tai, điều trị sát trùng, kháng khuẩn tại chỗ và kiểm soát đau.'
+
+MERGE (o1:disease {id: 'viêm_tai_ngoài_cấp_tính_không_biến_chứng_disease'})
+MERGE (o2:treatment {id: 'điều_trị_sát_trùng_treatment'})
+MERGE (o1)-[r129:treatedBy]->(o2)
+SET r129.text = 'Việc điều trị viêm tai ngoài cấp tính không biến chứng bao gồm làm sạch ống tai, điều trị sát trùng, kháng khuẩn tại chỗ và kiểm soát đau.'
+
+MERGE (o1:disease {id: 'viêm_tai_ngoài_cấp_tính_không_biến_chứng_disease'})
+MERGE (o2:treatment {id: 'kháng_khuẩn_tại_chỗ_treatment'})
+MERGE (o1)-[r130:treatedBy]->(o2)
+SET r130.text = 'Việc điều trị viêm tai ngoài cấp tính không biến chứng bao gồm làm sạch ống tai, điều trị sát trùng, kháng khuẩn tại chỗ và kiểm soát đau.'
+
+MERGE (o1:disease {id: 'viêm_tai_ngoài_cấp_tính_không_biến_chứng_disease'})
+MERGE (o2:treatment {id: 'kiểm_soát_đau_treatment'})
+MERGE (o1)-[r131:treatedBy]->(o2)
+SET r131.text = 'Việc điều trị viêm tai ngoài cấp tính không biến chứng bao gồm làm sạch ống tai, điều trị sát trùng, kháng khuẩn tại chỗ và kiểm soát đau.'
+
+MERGE (o1:disease {id: 'nhiễm_trùng_tai_ngoài_disease'})
+MERGE (o2:treatment {id: 'thuốc_rửa_tai_treatment'})
+MERGE (o1)-[r132:treatedBy]->(o2)
+SET r132.text = 'Các loại thuốc thường được sử dụng để điều trị nhiễm trùng tai ngoài bao gồm thuốc rửa tai, thuốc kháng sinh, kháng viêm tại chỗ.'
+
+MERGE (o1:disease {id: 'nhiễm_trùng_tai_ngoài_disease'})
+MERGE (o2:treatment {id: 'thuốc_kháng_sinh_treatment'})
+MERGE (o1)-[r133:treatedBy]->(o2)
+SET r133.text = 'Các loại thuốc thường được sử dụng để điều trị nhiễm trùng tai ngoài bao gồm thuốc rửa tai, thuốc kháng sinh, kháng viêm tại chỗ.'
+
+MERGE (o1:disease {id: 'nhiễm_trùng_tai_ngoài_disease'})
+MERGE (o2:treatment {id: 'kháng_viêm_tại_chỗ_treatment'})
+MERGE (o1)-[r134:treatedBy]->(o2)
+SET r134.text = 'Các loại thuốc thường được sử dụng để điều trị nhiễm trùng tai ngoài bao gồm thuốc rửa tai, thuốc kháng sinh, kháng viêm tại chỗ.'
+
+MERGE (o1:symptom {id: 'đau_symptom'})
+MERGE (o2:treatment {id: 'paracetamol_treatment'})
+MERGE (o1)-[r135:treatedBy]->(o2)
+SET r135.text = 'Có thể uống paracetamol hoặc ibuprofen để giảm đau.'
+
+MERGE (o1:symptom {id: 'đau_symptom'})
+MERGE (o2:treatment {id: 'ibuprofen_treatment'})
+MERGE (o1)-[r136:treatedBy]->(o2)
+SET r136.text = 'Có thể uống paracetamol hoặc ibuprofen để giảm đau.'
+
+MERGE (o1:disease {id: 'viêm_tai_nặng_hơn_disease'})
+MERGE (o2:treatment {id: 'kháng_sinh_đường_uống_treatment'})
+MERGE (o1)-[r137:treatedBy]->(o2)
+SET r137.text = 'Bác sĩ có thể chỉ định điều trị bằng kháng sinh đường uống đối với các trường hợp viêm tai nặng hơn, ống tai phù nề, bệnh lan rộng, người bệnh đái tháo đường hoặc suy giảm miễn dịch được kiểm soát kém, hoặc điều trị tại chỗ không đáp ứng.'
+
+MERGE (o1:symptom {id: 'ống_tai_phù_nề_symptom'})
+MERGE (o2:disease {id: 'viêm_tai_nặng_hơn_disease'})
+MERGE (o1)-[r138:isSymptomOf]->(o2)
+SET r138.text = 'Bác sĩ có thể chỉ định điều trị bằng kháng sinh đường uống đối với các trường hợp viêm tai nặng hơn, ống tai phù nề, bệnh lan rộng, người bệnh đái tháo đường hoặc suy giảm miễn dịch được kiểm soát kém, hoặc điều trị tại chỗ không đáp ứng.'
+
+MERGE (o1:symptom {id: 'bệnh_lan_rộng_symptom'})
+MERGE (o2:disease {id: 'viêm_tai_nặng_hơn_disease'})
+MERGE (o1)-[r139:isSymptomOf]->(o2)
+SET r139.text = 'Bác sĩ có thể chỉ định điều trị bằng kháng sinh đường uống đối với các trường hợp viêm tai nặng hơn, ống tai phù nề, bệnh lan rộng, người bệnh đái tháo đường hoặc suy giảm miễn dịch được kiểm soát kém, hoặc điều trị tại chỗ không đáp ứng.'
+
+MERGE (o1:disease {id: 'đái_tháo_đường_disease'})
+MERGE (o2:disease {id: 'viêm_tai_nặng_hơn_disease'})
+MERGE (o1)-[r140:associatedWith]->(o2)
+SET r140.text = 'Bác sĩ có thể chỉ định điều trị bằng kháng sinh đường uống đối với các trường hợp viêm tai nặng hơn, ống tai phù nề, bệnh lan rộng, người bệnh đái tháo đường hoặc suy giảm miễn dịch được kiểm soát kém, hoặc điều trị tại chỗ không đáp ứng.'
+
+MERGE (o1:disease {id: 'suy_giảm_miễn_dịch_disease'})
+MERGE (o2:disease {id: 'viêm_tai_nặng_hơn_disease'})
+MERGE (o1)-[r141:associatedWith]->(o2)
+SET r141.text = 'Bác sĩ có thể chỉ định điều trị bằng kháng sinh đường uống đối với các trường hợp viêm tai nặng hơn, ống tai phù nề, bệnh lan rộng, người bệnh đái tháo đường hoặc suy giảm miễn dịch được kiểm soát kém, hoặc điều trị tại chỗ không đáp ứng.'
+
+MERGE (o1:treatment {id: 'điều_trị_tại_chỗ_treatment'})
+MERGE (o2:disease {id: 'viêm_tai_nặng_hơn_disease'})
+MERGE (o1)-[r142:relatedTo]->(o2)
+SET r142.text = 'Bác sĩ có thể chỉ định điều trị bằng kháng sinh đường uống đối với các trường hợp viêm tai nặng hơn, ống tai phù nề, bệnh lan rộng, người bệnh đái tháo đường hoặc suy giảm miễn dịch được kiểm soát kém, hoặc điều trị tại chỗ không đáp ứng.'
+
+MERGE (o1:disease {id: 'viêm_tai_ác_tính_disease'})
+MERGE (o2:treatment {id: 'kháng_sinh_đường_tiêm_truyền_treatment'})
+MERGE (o1)-[r143:treatedBy]->(o2)
+SET r143.text = 'Điều trị kháng sinh đường tiêm truyền nên được xem xét trong số ít các trường hợp, nếu nghi ngờ viêm tai ác tính, có các biểu hiện toàn thân hoặc khi thấy dấu hiệu nhiễm trùng huyết.'
+
+MERGE (o1:symptom {id: 'biểu_hiện_toàn_thân_symptom'})
+MERGE (o2:disease {id: 'viêm_tai_ác_tính_disease'})
+MERGE (o1)-[r144:isSymptomOf]->(o2)
+SET r144.text = 'Điều trị kháng sinh đường tiêm truyền nên được xem xét trong số ít các trường hợp, nếu nghi ngờ viêm tai ác tính, có các biểu hiện toàn thân hoặc khi thấy dấu hiệu nhiễm trùng huyết.'
+
+MERGE (o1:disease {id: 'nhiễm_trùng_huyết_disease'})
+MERGE (o2:disease {id: 'viêm_tai_ác_tính_disease'})
+MERGE (o1)-[r145:associatedWith]->(o2)
+SET r145.text = 'Điều trị kháng sinh đường tiêm truyền nên được xem xét trong số ít các trường hợp, nếu nghi ngờ viêm tai ác tính, có các biểu hiện toàn thân hoặc khi thấy dấu hiệu nhiễm trùng huyết.'
+
+MERGE (o1:disease {id: 'nhiễm_trùng_tai_ngoài_cấp_tính_disease'})
+MERGE (o2:treatment {id: 'điều_trị_treatment'})
+MERGE (o1)-[r146:treatedBy]->(o2)
+SET r146.text = 'Nhiễm trùng tai ngoài cấp tính do vi khuẩn thường cải thiện sau vài ngày điều trị.'
+
+MERGE (o1:symptom {id: 'triệu_chứng_symptom'})
+MERGE (o2:disease {id: 'viêm_tai_ngoài_disease'})
+MERGE (o1)-[r147:relatedTo]->(o2)
+SET r147.text = 'Nếu các triệu chứng không cải thiện, người bệnh nên thăm khám chuyên khoa Tai Mũi Họng để được điều trị phù hợp.'
+
+MERGE (o1:disease {id: 'viêm_tai_ngoài_disease'})
+MERGE (o2:treatment {id: 'thăm_khám_chuyên_khoa_tai_mũi_họng_treatment'})
+MERGE (o1)-[r148:treatedBy]->(o2)
+SET r148.text = 'Nếu các triệu chứng không cải thiện, người bệnh nên thăm khám chuyên khoa Tai Mũi Họng để được điều trị phù hợp.'
+
+MERGE (o1:disease {id: 'nhiễm_nấm_disease'})
+MERGE (o2:treatment {id: 'lấy_hết_mô_nấm_treatment'})
+MERGE (o1)-[r149:treatedBy]->(o2)
+SET r149.text = 'Trong trường hợp nhiễm nấm, bác sĩ sẽ lấy hết mô nấm, làm sạch ống tai, dùng thuốc nhỏ tai có tác dụng kháng nấm (ciclopirox, nystatin, clotrimazole hoặc miconazole).'
+
+MERGE (o1:disease {id: 'nhiễm_nấm_disease'})
+MERGE (o2:treatment {id: 'làm_sạch_ống_tai_treatment'})
+MERGE (o1)-[r150:treatedBy]->(o2)
+SET r150.text = 'Trong trường hợp nhiễm nấm, bác sĩ sẽ lấy hết mô nấm, làm sạch ống tai, dùng thuốc nhỏ tai có tác dụng kháng nấm (ciclopirox, nystatin, clotrimazole hoặc miconazole).'
+
+MERGE (o1:disease {id: 'nhiễm_nấm_disease'})
+MERGE (o2:treatment {id: 'thuốc_nhỏ_tai_có_tác_dụng_kháng_nấm_treatment'})
+MERGE (o1)-[r151:treatedBy]->(o2)
+SET r151.text = 'Trong trường hợp nhiễm nấm, bác sĩ sẽ lấy hết mô nấm, làm sạch ống tai, dùng thuốc nhỏ tai có tác dụng kháng nấm (ciclopirox, nystatin, clotrimazole hoặc miconazole).'
+
+MERGE (o1:disease {id: 'nhiễm_nấm_disease'})
+MERGE (o2:treatment {id: 'ciclopirox_treatment'})
+MERGE (o1)-[r152:treatedBy]->(o2)
+SET r152.text = 'Trong trường hợp nhiễm nấm, bác sĩ sẽ lấy hết mô nấm, làm sạch ống tai, dùng thuốc nhỏ tai có tác dụng kháng nấm (ciclopirox, nystatin, clotrimazole hoặc miconazole).'
+
+MERGE (o1:disease {id: 'nhiễm_nấm_disease'})
+MERGE (o2:treatment {id: 'nystatin_treatment'})
+MERGE (o1)-[r153:treatedBy]->(o2)
+SET r153.text = 'Trong trường hợp nhiễm nấm, bác sĩ sẽ lấy hết mô nấm, làm sạch ống tai, dùng thuốc nhỏ tai có tác dụng kháng nấm (ciclopirox, nystatin, clotrimazole hoặc miconazole).'
+
+MERGE (o1:disease {id: 'nhiễm_nấm_disease'})
+MERGE (o2:treatment {id: 'clotrimazole_treatment'})
+MERGE (o1)-[r154:treatedBy]->(o2)
+SET r154.text = 'Trong trường hợp nhiễm nấm, bác sĩ sẽ lấy hết mô nấm, làm sạch ống tai, dùng thuốc nhỏ tai có tác dụng kháng nấm (ciclopirox, nystatin, clotrimazole hoặc miconazole).'
+
+MERGE (o1:disease {id: 'nhiễm_nấm_disease'})
+MERGE (o2:treatment {id: 'miconazole_treatment'})
+MERGE (o1)-[r155:treatedBy]->(o2)
+SET r155.text = 'Trong trường hợp nhiễm nấm, bác sĩ sẽ lấy hết mô nấm, làm sạch ống tai, dùng thuốc nhỏ tai có tác dụng kháng nấm (ciclopirox, nystatin, clotrimazole hoặc miconazole).'
+
+MERGE (o1:symptom {id: 'màng_nhĩ_bị_thủng_symptom'})
+MERGE (o2:disease {id: 'nhiễm_nấm_disease'})
+MERGE (o1)-[r156:isSymptomOf]->(o2)
+SET r156.text = 'Khi màng nhĩ bị thủng, điều trị làm sạch tại chỗ không hiệu quả, bác sĩ có thể sử dụng thuốc kháng nấm toàn thân, ví dụ như fluconazole hoặc itraconazole.'
+
+MERGE (o1:disease {id: 'nhiễm_nấm_disease'})
+MERGE (o2:treatment {id: 'thuốc_kháng_nấm_toàn_thân_treatment'})
+MERGE (o1)-[r157:treatedBy]->(o2)
+SET r157.text = 'Khi màng nhĩ bị thủng, điều trị làm sạch tại chỗ không hiệu quả, bác sĩ có thể sử dụng thuốc kháng nấm toàn thân, ví dụ như fluconazole hoặc itraconazole.'
+
+MERGE (o1:disease {id: 'nhiễm_nấm_disease'})
+MERGE (o2:treatment {id: 'fluconazole_treatment'})
+MERGE (o1)-[r158:treatedBy]->(o2)
+SET r158.text = 'Khi màng nhĩ bị thủng, điều trị làm sạch tại chỗ không hiệu quả, bác sĩ có thể sử dụng thuốc kháng nấm toàn thân, ví dụ như fluconazole hoặc itraconazole.'
+
+MERGE (o1:disease {id: 'nhiễm_nấm_disease'})
+MERGE (o2:treatment {id: 'itraconazole_treatment'})
+MERGE (o1)-[r159:treatedBy]->(o2)
+SET r159.text = 'Khi màng nhĩ bị thủng, điều trị làm sạch tại chỗ không hiệu quả, bác sĩ có thể sử dụng thuốc kháng nấm toàn thân, ví dụ như fluconazole hoặc itraconazole.'
+
+MERGE (o1:disease {id: 'nhọt_disease'})
+MERGE (o2:disease {id: 'nhiễm_trùng_tai_ngoài_disease'})
+MERGE (o1)-[r160:isSymptomOf]->(o2)
+SET r160.text = 'Nhọt là tình trạng nhiễm trùng tai ngoài, hình thành áp xe của nang lông ở phần sụn của ống tai ngoài.'
+
+MERGE (o1:symptom {id: 'áp_xe_symptom'})
+MERGE (o2:disease {id: 'nhọt_disease'})
+MERGE (o1)-[r161:isSymptomOf]->(o2)
+SET r161.text = 'Nhọt là tình trạng nhiễm trùng tai ngoài, hình thành áp xe của nang lông ở phần sụn của ống tai ngoài.'
+
+MERGE (o1:cause {id: 'staphylococcus_aureus_cause'})
+MERGE (o2:disease {id: 'nhọt_disease'})
+MERGE (o1)-[r162:causedBy]->(o2)
+SET r162.text = 'Nguyên nhân của loại viêm này chủ yếu do Staphylococcus aureus.'
+
+MERGE (o1:disease {id: 'nhiễm_trùng_tai_ngoài_disease'})
+MERGE (o2:lifestyle {id: 'tránh_gây_kích_ứng_hoặc_làm_chấn_thương_ống_tai_lifestyle'})
+MERGE (o1)-[r163:preventedBy]->(o2)
+SET r163.text = 'Để ngăn ngừa nhiễm trùng tai ngoài, mọi người cần tránh gây kích ứng hoặc làm chấn thương ống tai.'
+
+MERGE (o1:organ {id: 'ống_tai_organ'})
+MERGE (o2:lifestyle {id: 'gây_kích_ứng_hoặc_làm_chấn_thương_lifestyle'})
+MERGE (o1)-[r164:affectedBy]->(o2)
+SET r164.text = 'Để ngăn ngừa nhiễm trùng tai ngoài, mọi người cần tránh gây kích ứng hoặc làm chấn thương ống tai.'
+
+MERGE (o1:cause {id: 'vật_nhọn_cause'})
+MERGE (o2:disease {id: 'nhiễm_trùng_tai_ngoài_disease'})
+MERGE (o1)-[r165:causes]->(o2)
+SET r165.text = 'Không được đưa các vật nhọn vào ống tai, chẳng hạn như lấy ráy bằng dụng cụ bằng kim loại.'
+
+MERGE (o1:lifestyle {id: 'lấy_ráy_bằng_dụng_cụ_bằng_kim_loại_lifestyle'})
+MERGE (o2:disease {id: 'nhiễm_trùng_tai_ngoài_disease'})
+MERGE (o1)-[r166:causes]->(o2)
+SET r166.text = 'Không được đưa các vật nhọn vào ống tai, chẳng hạn như lấy ráy bằng dụng cụ bằng kim loại.'
+
+MERGE (o1:treatment {id: 'bịt_tai_treatment'})
+MERGE (o2:disease {id: 'nhiễm_trùng_tai_ngoài_disease'})
+MERGE (o1)-[r167:preventedBy]->(o2)
+SET r167.text = 'Nên đeo bịt tai khi đi bơi, khi tắm.'
+
+MERGE (o1:lifestyle {id: 'đi_bơi_lifestyle'})
+MERGE (o2:disease {id: 'nhiễm_trùng_tai_ngoài_disease'})
+MERGE (o1)-[r168:causes]->(o2)
+SET r168.text = 'Nên đeo bịt tai khi đi bơi, khi tắm.'
+
+MERGE (o1:lifestyle {id: 'tắm_lifestyle'})
+MERGE (o2:disease {id: 'nhiễm_trùng_tai_ngoài_disease'})
+MERGE (o1)-[r169:causes]->(o2)
+SET r169.text = 'Nên đeo bịt tai khi đi bơi, khi tắm.'
+
+MERGE (o1:cause {id: 'nước_cause'})
+MERGE (o2:disease {id: 'nhiễm_trùng_tai_ngoài_disease'})
+MERGE (o1)-[r170:causes]->(o2)
+SET r170.text = 'Nếu không bịt tai, sau khi bơi, tắm xong nên nghiêng đầu sang một bên và kéo dái tai xuống để nước chảy ra ngoài.'
+
+MERGE (o1:treatment {id: 'bông_ngoáy_tai_treatment'})
+MERGE (o2:disease {id: 'nhiễm_trùng_tai_ngoài_disease'})
+MERGE (o1)-[r171:preventedBy]->(o2)
+SET r171.text = 'Nên lau khô bên ngoài lỗ tai sau khi tắm bằng bông ngoáy tai, không vào sâu lỗ tai.'
+
+MERGE (o1:lifestyle {id: 'vào_sâu_lỗ_tai_lifestyle'})
+MERGE (o2:disease {id: 'nhiễm_trùng_tai_ngoài_disease'})
+MERGE (o1)-[r172:causes]->(o2)
+SET r172.text = 'Nên lau khô bên ngoài lỗ tai sau khi tắm bằng bông ngoáy tai, không vào sâu lỗ tai.'
+
+MERGE (o1:cause {id: 'dị_ứng_với_loại_dầu_gội__dầu_xả_cause'})
+MERGE (o2:disease {id: 'nhiễm_trùng_tai_ngoài_disease'})
+MERGE (o1)-[r173:causes]->(o2)
+SET r173.text = 'Nếu dị ứng với loại dầu gội, dầu xả nào đó thì nên ngưng sử dụng.'
+
+MERGE (o1:lifestyle {id: 'dùng_chung_dụng_cụ_vệ_sinh_tai_không_đảm_bảo_vệ_sinh_lifestyle'})
+MERGE (o2:disease {id: 'nhiễm_trùng_tai_ngoài_disease'})
+MERGE (o1)-[r174:causes]->(o2)
+SET r174.text = 'Tránh dùng chung dụng cụ vệ sinh tai không đảm bảo vệ sinh.'
+
+MERGE (o1:cause {id: 'ẩm_mốc_cause'})
+MERGE (o2:disease {id: 'nhiễm_trùng_tai_ngoài_disease'})
+MERGE (o1)-[r175:causes]->(o2)
+SET r175.text = 'Chú ý vệ sinh thiết bị tai nghe dạng nút tai, tránh ẩm mốc và hạn chế dùng tai nghe kéo dài.'
+
+MERGE (o1:lifestyle {id: 'dùng_tai_nghe_kéo_dài_lifestyle'})
+MERGE (o2:disease {id: 'nhiễm_trùng_tai_ngoài_disease'})
+MERGE (o1)-[r176:causes]->(o2)
+SET r176.text = 'Chú ý vệ sinh thiết bị tai nghe dạng nút tai, tránh ẩm mốc và hạn chế dùng tai nghe kéo dài.'
+
+MERGE (o1:lifestyle {id: 'rửa_tai_bằng_xà_phòng_lifestyle'})
+MERGE (o2:disease {id: 'nhiễm_trùng_tai_ngoài_disease'})
+MERGE (o1)-[r177:causes]->(o2)
+SET r177.text = 'Tránh rửa tai bằng xà phòng.'
+
+MERGE (o1:lifestyle {id: 'bơi_trong_nước_bị_ô_nhiễm_lifestyle'})
+MERGE (o2:disease {id: 'nhiễm_trùng_tai_ngoài_disease'})
+MERGE (o1)-[r178:causes]->(o2)
+SET r178.text = 'Tránh bơi trong nước bị ô nhiễm.'
+
+MERGE (o1:disease {id: 'viêm_tai_ngoài_disease'})
+MERGE (o2:disease {id: 'nhiễm_trùng_nhẹ_ống_tai_ngoài_disease'})
+MERGE (o1)-[r179:isSymptomOf]->(o2)
+SET r179.text = 'Viêm tai ngoài có nhiều mức độ nghiêm trọng từ nhiễm trùng nhẹ ống tai ngoài đến viêm tai ngoài ác tính đe dọa tính mạng nếu không được điều trị kịp thời.'
+
+MERGE (o1:disease {id: 'viêm_tai_ngoài_disease'})
+MERGE (o2:disease {id: 'viêm_tai_ngoài_ác_tính_disease'})
+MERGE (o1)-[r180:isSymptomOf]->(o2)
+SET r180.text = 'Viêm tai ngoài có nhiều mức độ nghiêm trọng từ nhiễm trùng nhẹ ống tai ngoài đến viêm tai ngoài ác tính đe dọa tính mạng nếu không được điều trị kịp thời.'
+
+MERGE (o1:disease {id: 'viêm_tai_ngoài_ác_tính_disease'})
+MERGE (o2:symptom {id: 'đe_dọa_tính_mạng_symptom'})
+MERGE (o1)-[r181:relatedTo]->(o2)
+SET r181.text = 'Viêm tai ngoài có nhiều mức độ nghiêm trọng từ nhiễm trùng nhẹ ống tai ngoài đến viêm tai ngoài ác tính đe dọa tính mạng nếu không được điều trị kịp thời.'
+
+MERGE (o1:disease {id: 'viêm_tai_ngoài_disease'})
+MERGE (o2:symptom {id: 'tự_khỏi_symptom'})
+MERGE (o1)-[r182:relatedTo]->(o2)
+SET r182.text = 'Viêm tai ngoài không thể tự khỏi.'
+
+MERGE (o1:disease {id: 'viêm_tai_ngoài_disease'})
+MERGE (o2:treatment {id: 'điều_trị_treatment'})
+MERGE (o1)-[r183:treatedBy]->(o2)
+SET r183.text = 'Người bệnh cần điều trị ngay khi phát hiện để phòng ngừa nguy cơ nhiễm trùng lan sang các mô lân cận.'
+
+MERGE (o1:disease {id: 'nhiễm_trùng_disease'})
+MERGE (o2:organ {id: 'các_mô_lân_cận_organ'})
+MERGE (o1)-[r184:relatedTo]->(o2)
+SET r184.text = 'Người bệnh cần điều trị ngay khi phát hiện để phòng ngừa nguy cơ nhiễm trùng lan sang các mô lân cận.'
+
+MERGE (o1:disease {id: 'viêm_tai_ngoài_disease'})
+MERGE (o2:treatment {id: 'điều_trị_đúng_cách_treatment'})
+MERGE (o1)-[r185:treatedBy]->(o2)
+SET r185.text = 'Viêm tai ngoài thường khỏi trong 10 ngày nếu điều trị đúng cách, có thể kéo dài vài tuần nếu không điều trị đúng.'
+
+MERGE (o1:disease {id: 'viêm_tai_ngoài_disease'})
+MERGE (o2:symptom {id: 'khỏi_symptom'})
+MERGE (o1)-[r186:relatedTo]->(o2)
+SET r186.text = 'Viêm tai ngoài thường khỏi trong 10 ngày nếu điều trị đúng cách, có thể kéo dài vài tuần nếu không điều trị đúng.'
+
+MERGE (o1:disease {id: 'viêm_tai_ngoài_disease'})
+MERGE (o2:symptom {id: 'kéo_dài_vài_tuần_symptom'})
+MERGE (o1)-[r187:relatedTo]->(o2)
+SET r187.text = 'Viêm tai ngoài thường khỏi trong 10 ngày nếu điều trị đúng cách, có thể kéo dài vài tuần nếu không điều trị đúng.'
+
+MERGE (o1:disease {id: 'viêm_tai_ngoài_disease'})
+MERGE (o2:treatment {id: 'nhỏ_thuốc_treatment'})
+MERGE (o1)-[r188:treatedBy]->(o2)
+SET r188.text = 'Bệnh nhân nên nằm nghiêng khi nhỏ thuốc vào ống tai bị viêm và tiếp tục nằm nghiêng trong 3-5 phút sau đó.'
+
+MERGE (o1:organ {id: 'ống_tai_organ'})
+MERGE (o2:organ {id: 'tai_organ'})
+MERGE (o1)-[r189:locatedIn]->(o2)
+SET r189.text = 'Bệnh nhân nên nằm nghiêng khi nhỏ thuốc vào ống tai bị viêm và tiếp tục nằm nghiêng trong 3-5 phút sau đó.'
+
+MERGE (o1:treatment {id: 'thuốc_treatment'})
+MERGE (o2:disease {id: 'viêm_tai_ngoài_disease'})
+MERGE (o1)-[r190:treatedBy]->(o2)
+SET r190.text = 'Nhẹ nhàng ấn nhẹ nắp tai qua lại để các giọt thuốc có thể vào sâu trong tai.'

@@ -1,0 +1,1266 @@
+[
+    {
+        "text": "Ung thư vú giai đoạn 1 được xếp vào giai đoạn sớm, tiên lượng tốt, có thể chữa khỏi hoặc tỷ lệ sống sau 5 năm tương đối khả quan.",
+        "head": "Ung thư vú giai đoạn 1",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "tiên lượng tốt",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Ung thư vú giai đoạn 1 được xếp vào giai đoạn sớm, tiên lượng tốt, có thể chữa khỏi hoặc tỷ lệ sống sau 5 năm tương đối khả quan.",
+        "head": "Ung thư vú giai đoạn 1",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "chữa khỏi",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Ung thư vú giai đoạn 1 được xếp vào giai đoạn sớm, tiên lượng tốt, có thể chữa khỏi hoặc tỷ lệ sống sau 5 năm tương đối khả quan.",
+        "head": "Ung thư vú giai đoạn 1",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "tỷ lệ sống sau 5 năm",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Ung thư vú được phân giai đoạn giống như các bệnh ung thư khác để xác định mức độ di căn của ung thư.",
+        "head": "Ung thư vú",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "di căn",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Các giai đoạn giúp hướng dẫn điều trị và tiên lượng.",
+        "head": "Các giai đoạn",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "điều trị",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Các giai đoạn giúp hướng dẫn điều trị và tiên lượng.",
+        "head": "Các giai đoạn",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "tiên lượng",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Hiểu được khối u giai đoạn 1 là gì, lựa chọn điều trị nào và tiên lượng ra sao có thể giúp tiếp thêm sức mạnh và xoa dịu nỗi sợ hãi cho người bệnh.",
+        "head": "khối u giai đoạn 1",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "tiên lượng",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Hiểu được khối u giai đoạn 1 là gì, lựa chọn điều trị nào và tiên lượng ra sao có thể giúp tiếp thêm sức mạnh và xoa dịu nỗi sợ hãi cho người bệnh.",
+        "head": "khối u giai đoạn 1",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "điều trị",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Ung thư vú giai đoạn 1 là giai đoạn sớm nhất của ung thư vú xâm lấn.",
+        "head": "Ung thư vú giai đoạn 1",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "ung thư vú xâm lấn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "“Xâm lấn” không có nghĩa là ung thư đã xâm lấn các khu vực khác của cơ thể mà các tế bào trong khối u đã xâm nhập vào khu vực qua màng đệm.",
+        "head": "Xâm lấn",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "ung thư",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi một khối u mới bắt đầu thì vẫn chưa phát triển qua lớp màng này và gọi là ung thư biểu mô tại chỗ.",
+        "head": "khối u",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "ung thư biểu mô tại chỗ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Những khối u này được gọi là khối u giai đoạn 0.",
+        "head": "khối u",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "khối u giai đoạn 0",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ung thư biểu mô tại chỗ có thể chữa khỏi 100% bằng phẫu thuật vì các tế bào được ngăn chặn hoàn toàn.",
+        "head": "Ung thư biểu mô tại chỗ",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "phẫu thuật",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Các khối u giai đoạn 1 là giai đoạn sớm nhất của ung thư vú xâm lấn.",
+        "head": "khối u giai đoạn 1",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "ung thư vú xâm lấn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Những khối u này nhỏ, và nếu chúng đã lan đến các hạch bạch huyết, thì sự lây lan chỉ ở mức độ vi mô.",
+        "head": "khối u",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "hạch bạch huyết",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Ung thư vú có nhiều dạng, và một số dạng ung thư vú giai đoạn 1 có thể bao gồm: Ung thư biểu mô ống dẫn sữa xâm lấn (IDC): Ung thư bắt nguồn từ các ống dẫn sữa của vú và đã lan vào các mô vú xung quanh.",
+        "head": "Ung thư biểu mô ống dẫn sữa xâm lấn (IDC)",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "ung thư vú",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ung thư vú có nhiều dạng, và một số dạng ung thư vú giai đoạn 1 có thể bao gồm: Ung thư biểu mô ống dẫn sữa xâm lấn (IDC): Ung thư bắt nguồn từ các ống dẫn sữa của vú và đã lan vào các mô vú xung quanh.",
+        "head": "Ung thư biểu mô ống dẫn sữa xâm lấn (IDC)",
+        "head_type": "disease",
+        "relation": "locatedIn",
+        "tail": "ống dẫn sữa của vú",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Ung thư vú có nhiều dạng, và một số dạng ung thư vú giai đoạn 1 có thể bao gồm: Ung thư biểu mô ống dẫn sữa xâm lấn (IDC): Ung thư bắt nguồn từ các ống dẫn sữa của vú và đã lan vào các mô vú xung quanh.",
+        "head": "Ung thư biểu mô ống dẫn sữa xâm lấn (IDC)",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "mô vú",
+        "tail_type": "organ"
+    },
+    {
+        "text": "IDC là loại ung thư vú phổ biến nhất, chiếm 80% các loại ung thư vú.",
+        "head": "IDC",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "ung thư vú",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ung thư vú có nhiều dạng, và một số dạng ung thư vú giai đoạn 1 có thể bao gồm: Ung thư biểu mô tiểu thùy xâm lấn (ILC): Ung thư bắt nguồn từ các tiểu thùy (tuyến) sản xuất sữa của vú và đã lan vào các mô vú xung quanh.",
+        "head": "Ung thư biểu mô tiểu thùy xâm lấn (ILC)",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "ung thư vú",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ung thư vú có nhiều dạng, và một số dạng ung thư vú giai đoạn 1 có thể bao gồm: Ung thư biểu mô tiểu thùy xâm lấn (ILC): Ung thư bắt nguồn từ các tiểu thùy (tuyến) sản xuất sữa của vú và đã lan vào các mô vú xung quanh.",
+        "head": "Ung thư biểu mô tiểu thùy xâm lấn (ILC)",
+        "head_type": "disease",
+        "relation": "locatedIn",
+        "tail": "tiểu thùy (tuyến) sản xuất sữa của vú",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Ung thư vú có nhiều dạng, và một số dạng ung thư vú giai đoạn 1 có thể bao gồm: Ung thư biểu mô tiểu thùy xâm lấn (ILC): Ung thư bắt nguồn từ các tiểu thùy (tuyến) sản xuất sữa của vú và đã lan vào các mô vú xung quanh.",
+        "head": "Ung thư biểu mô tiểu thùy xâm lấn (ILC)",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "mô vú",
+        "tail_type": "organ"
+    },
+    {
+        "text": "ILC là loại ung thư vú phổ biến thứ hai, và chiếm 10% các loại ung thư vú.",
+        "head": "ILC",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "ung thư vú",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ngoài ra còn có các dạng ung thư vú xâm lấn khác ít phổ biến hơn, chẳng hạn ung thư vú dạng viêm và bệnh Paget của núm vú.",
+        "head": "ung thư vú dạng viêm",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "ung thư vú",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ngoài ra còn có các dạng ung thư vú xâm lấn khác ít phổ biến hơn, chẳng hạn ung thư vú dạng viêm và bệnh Paget của núm vú.",
+        "head": "bệnh Paget của núm vú",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "ung thư vú",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ung thư vú giai đoạn 1 chỉ giới hạn ở khu vực bắt đầu phân chia tế bào bất thường và vẫn chưa lây lan đến bất kỳ nơi nào khác trong vú hoặc cơ thể.",
+        "head": "Ung thư vú giai đoạn 1",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "vú",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Ung thư vú giai đoạn 1 chỉ giới hạn ở khu vực bắt đầu phân chia tế bào bất thường và vẫn chưa lây lan đến bất kỳ nơi nào khác trong vú hoặc cơ thể.",
+        "head": "Ung thư vú giai đoạn 1",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "cơ thể",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Các bác sĩ thường dựa vào hệ thống TNM để phân loại ung thư vú.",
+        "head": "Các bác sĩ",
+        "head_type": "treatment",
+        "relation": "diagnosedBy",
+        "tail": "ung thư vú",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các bác sĩ thường dựa vào hệ thống TNM để phân loại ung thư vú.",
+        "head": "hệ thống TNM",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "ung thư vú",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Vì vậy hiểu về hệ thống TNM sẽ hữu ích cho người bệnh trong việc tìm hiểu giai đoạn ung thư vú.",
+        "head": "hệ thống TNM",
+        "head_type": "test",
+        "relation": "relatedTo",
+        "tail": "giai đoạn ung thư vú",
+        "tail_type": "disease"
+    },
+    {
+        "text": "T = Kích thước khối u: Tất cả ung thư giai đoạn 1 là T-0 hoặc T-1, có nghĩa là khối u có đường kính từ 2cm trở xuống.",
+        "head": "T",
+        "head_type": "test",
+        "relation": "relatedTo",
+        "tail": "Kích thước khối u",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "T = Kích thước khối u: Tất cả ung thư giai đoạn 1 là T-0 hoặc T-1, có nghĩa là khối u có đường kính từ 2cm trở xuống.",
+        "head": "T-0",
+        "head_type": "test",
+        "relation": "relatedTo",
+        "tail": "khối u",
+        "tail_type": "disease"
+    },
+    {
+        "text": "T = Kích thước khối u: Tất cả ung thư giai đoạn 1 là T-0 hoặc T-1, có nghĩa là khối u có đường kính từ 2cm trở xuống.",
+        "head": "T-1",
+        "head_type": "test",
+        "relation": "relatedTo",
+        "tail": "khối u",
+        "tail_type": "disease"
+    },
+    {
+        "text": "N = Nodes: Tất cả ung thư giai đoạn 1 là N-0 hoặc N-1mi.",
+        "head": "N",
+        "head_type": "test",
+        "relation": "relatedTo",
+        "tail": "Nodes",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "N = Nodes: Tất cả ung thư giai đoạn 1 là N-0 hoặc N-1mi.",
+        "head": "N-0",
+        "head_type": "test",
+        "relation": "relatedTo",
+        "tail": "hạch bạch huyết",
+        "tail_type": "organ"
+    },
+    {
+        "text": "N = Nodes: Tất cả ung thư giai đoạn 1 là N-0 hoặc N-1mi.",
+        "head": "N-1",
+        "head_type": "test",
+        "relation": "relatedTo",
+        "tail": "hạch bạch huyết",
+        "tail_type": "organ"
+    },
+    {
+        "text": "N-0, có nghĩa là chưa lây lan đến bất kỳ hạch bạch huyết nào.",
+        "head": "N-0",
+        "head_type": "test",
+        "relation": "relatedTo",
+        "tail": "hạch bạch huyết",
+        "tail_type": "organ"
+    },
+    {
+        "text": "N-1 có nghĩa là đã lan đến các hạch bạch huyết gần đó.",
+        "head": "N-1",
+        "head_type": "test",
+        "relation": "relatedTo",
+        "tail": "hạch bạch huyết",
+        "tail_type": "organ"
+    },
+    {
+        "text": "“Mi” có nghĩa là có các vi hạt, chỉ có thể nhìn thấy dưới kính hiển vi.",
+        "head": "Mi",
+        "head_type": "test",
+        "relation": "relatedTo",
+        "tail": "vi hạt",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Các micrometastases có đường kính từ 0,2mm - 2mm.",
+        "head": "micrometastases",
+        "head_type": "test",
+        "relation": "relatedTo",
+        "tail": "đường kính",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "M = Di căn: M-0 có nghĩa là ung thư chưa di căn đến các vùng khác của cơ thể.",
+        "head": "M",
+        "head_type": "test",
+        "relation": "relatedTo",
+        "tail": "Di căn",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "M = Di căn: M-0 có nghĩa là ung thư chưa di căn đến các vùng khác của cơ thể.",
+        "head": "M-0",
+        "head_type": "test",
+        "relation": "relatedTo",
+        "tail": "ung thư",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Do đó, bằng cách sử dụng hệ thống TNM, ung thư giai đoạn 1 được xác định như sau:",
+        "head": "hệ thống TNM",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "ung thư giai đoạn 1",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ung thư vú giai đoạn 1 được chia nhỏ thành Giai đoạn 1A và 1B.",
+        "head": "Ung thư vú giai đoạn 1",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "Giai đoạn 1A",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ung thư vú giai đoạn 1 được chia nhỏ thành Giai đoạn 1A và 1B.",
+        "head": "Ung thư vú giai đoạn 1",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "Giai đoạn 1B",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Trong giai đoạn này, việc điều trị thường rất hiệu quả và tiên lượng tốt.",
+        "head": "Giai đoạn này",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "điều trị",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Trong giai đoạn này, việc điều trị thường rất hiệu quả và tiên lượng tốt.",
+        "head": "Giai đoạn này",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "tiên lượng tốt",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Khối u có kích thước dưới 20mm và không lan đến các hạch bạch huyết.",
+        "head": "Khối u",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "hạch bạch huyết",
+        "tail_type": "organ"
+    },
+    {
+        "text": "T1N1miM0: Khối u có kích thước dưới 20mm và có các vi hạt trong một hạch bạch huyết gần đó.",
+        "head": "T1N1miM0",
+        "head_type": "test",
+        "relation": "relatedTo",
+        "tail": "Khối u",
+        "tail_type": "disease"
+    },
+    {
+        "text": "T1N1miM0: Khối u có kích thước dưới 20mm và có các vi hạt trong một hạch bạch huyết gần đó.",
+        "head": "T1N1miM0",
+        "head_type": "test",
+        "relation": "relatedTo",
+        "tail": "hạch bạch huyết",
+        "tail_type": "organ"
+    },
+    {
+        "text": "T1N1miM0: Khối u có kích thước dưới 20mm và có các vi hạt trong một hạch bạch huyết gần đó.",
+        "head": "T1N1miM0",
+        "head_type": "test",
+        "relation": "relatedTo",
+        "tail": "vi hạt",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "T0N1miM0: Không có bằng chứng về khối u nguyên phát ở vú nhưng có các vi hạt trong hạch bạch huyết (thường ở nách).",
+        "head": "T0N1miM0",
+        "head_type": "test",
+        "relation": "relatedTo",
+        "tail": "khối u",
+        "tail_type": "disease"
+    },
+    {
+        "text": "T0N1miM0: Không có bằng chứng về khối u nguyên phát ở vú nhưng có các vi hạt trong hạch bạch huyết (thường ở nách).",
+        "head": "T0N1miM0",
+        "head_type": "test",
+        "relation": "relatedTo",
+        "tail": "hạch bạch huyết",
+        "tail_type": "organ"
+    },
+    {
+        "text": "T0N1miM0: Không có bằng chứng về khối u nguyên phát ở vú nhưng có các vi hạt trong hạch bạch huyết (thường ở nách).",
+        "head": "T0N1miM0",
+        "head_type": "test",
+        "relation": "relatedTo",
+        "tail": "vi hạt",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "T0N1miM0: Không có bằng chứng về khối u nguyên phát ở vú nhưng có các vi hạt trong hạch bạch huyết (thường ở nách).",
+        "head": "T0N1miM0",
+        "head_type": "test",
+        "relation": "relatedTo",
+        "tail": "nách",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Dấu hiệu ung thư vú giai đoạn 1 có thể không rõ ràng, nhưng nếu có, các biểu hiện thường bao gồm những điều sau đây.",
+        "head": "Dấu hiệu ung thư vú giai đoạn 1",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Ung thư vú",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Dấu hiệu ung thư vú giai đoạn 1 có thể không rõ ràng, nhưng nếu có, các biểu hiện thường bao gồm những điều sau đây.  Tiết dịch núm vú; Da bị lõm; Sưng hoặc đỏ vú; Một khối u ở vú hoặc ở nách; Thay đổi kết cấu của da vú; Núm vú dẹt; Giảm cân không rõ nguyên nhân.",
+        "head": "Tiết dịch núm vú",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Ung thư vú",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Dấu hiệu ung thư vú giai đoạn 1 có thể không rõ ràng, nhưng nếu có, các biểu hiện thường bao gồm những điều sau đây.  Tiết dịch núm vú; Da bị lõm; Sưng hoặc đỏ vú; Một khối u ở vú hoặc ở nách; Thay đổi kết cấu của da vú; Núm vú dẹt; Giảm cân không rõ nguyên nhân.",
+        "head": "Da bị lõm",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Ung thư vú",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Dấu hiệu ung thư vú giai đoạn 1 có thể không rõ ràng, nhưng nếu có, các biểu hiện thường bao gồm những điều sau đây.  Tiết dịch núm vú; Da bị lõm; Sưng hoặc đỏ vú; Một khối u ở vú hoặc ở nách; Thay đổi kết cấu của da vú; Núm vú dẹt; Giảm cân không rõ nguyên nhân.",
+        "head": "Sưng hoặc đỏ vú",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Ung thư vú",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Dấu hiệu ung thư vú giai đoạn 1 có thể không rõ ràng, nhưng nếu có, các biểu hiện thường bao gồm những điều sau đây.  Tiết dịch núm vú; Da bị lõm; Sưng hoặc đỏ vú; Một khối u ở vú hoặc ở nách; Thay đổi kết cấu của da vú; Núm vú dẹt; Giảm cân không rõ nguyên nhân.",
+        "head": "Một khối u ở vú hoặc ở nách",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Ung thư vú",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Dấu hiệu ung thư vú giai đoạn 1 có thể không rõ ràng, nhưng nếu có, các biểu hiện thường bao gồm những điều sau đây.  Tiết dịch núm vú; Da bị lõm; Sưng hoặc đỏ vú; Một khối u ở vú hoặc ở nách; Thay đổi kết cấu của da vú; Núm vú dẹt; Giảm cân không rõ nguyên nhân.",
+        "head": "Thay đổi kết cấu của da vú",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Ung thư vú",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Dấu hiệu ung thư vú giai đoạn 1 có thể không rõ ràng, nhưng nếu có, các biểu hiện thường bao gồm những điều sau đây.  Tiết dịch núm vú; Da bị lõm; Sưng hoặc đỏ vú; Một khối u ở vú hoặc ở nách; Thay đổi kết cấu của da vú; Núm vú dẹt; Giảm cân không rõ nguyên nhân.",
+        "head": "Núm vú dẹt",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Ung thư vú",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Dấu hiệu ung thư vú giai đoạn 1 có thể không rõ ràng, nhưng nếu có, các biểu hiện thường bao gồm những điều sau đây.  Tiết dịch núm vú; Da bị lõm; Sưng hoặc đỏ vú; Một khối u ở vú hoặc ở nách; Thay đổi kết cấu của da vú; Núm vú dẹt; Giảm cân không rõ nguyên nhân.",
+        "head": "Giảm cân không rõ nguyên nhân",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Ung thư vú",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Theo dữ liệu từ Viện Y tế và Phúc lợi Úc, ung thư vú được chẩn đoán lần đầu tiên càng sớm thì kết quả càng tốt.",
+        "head": "Ung thư vú",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "Chẩn đoán sớm",
+        "tail_type": "test"
+    },
+    {
+        "text": "Tỷ lệ sống thêm của những người được chẩn đoán mắc bệnh ung thư vú cũng được cải thiện theo thời gian do phát hiện sớm hơn và cải thiện trong điều trị.",
+        "head": "Ung thư vú",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "Điều trị",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Ung thư vú giai đoạn 1 có chữa được không? Hầu hết những người bị ung thư vú giai đoạn 1 đều có thể được điều trị thành công với tỷ lệ gần 100%.",
+        "head": "Ung thư vú giai đoạn 1",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "Điều trị",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Tuy nhiên, không thể dự đoán chính xác quá trình ung thư và thời gian sống của mỗi người.",
+        "head": "Ung thư",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "Thời gian sống",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Tiên lượng sống sót cũng như hiệu quả điều trị phụ thuộc vào nhiều yếu tố.",
+        "head": "Tiên lượng sống sót",
+        "head_type": "lifestyle",
+        "relation": "relatedTo",
+        "tail": "Hiệu quả điều trị",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Các yếu tố ảnh hưởng đến tiên lượng sống của bệnh nhân bao gồm:  Khả năng đáp ứng với điều trị; Loại ung thư vú mắc phải; Tốc độ phát triển khối u; Các yếu tố khác như tuổi, tiền sử bệnh và sức khỏe tổng thể; Phương pháp điều trị có thể ảnh hưởng đến khả năng sống thêm của ung thư vú giai đoạn sớm.",
+        "head": "Khả năng đáp ứng với điều trị",
+        "head_type": "lifestyle",
+        "relation": "affects",
+        "tail": "Tiên lượng sống",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Các yếu tố ảnh hưởng đến tiên lượng sống của bệnh nhân bao gồm:  Khả năng đáp ứng với điều trị; Loại ung thư vú mắc phải; Tốc độ phát triển khối u; Các yếu tố khác như tuổi, tiền sử bệnh và sức khỏe tổng thể; Phương pháp điều trị có thể ảnh hưởng đến khả năng sống thêm của ung thư vú giai đoạn sớm.",
+        "head": "Loại ung thư vú mắc phải",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Tiên lượng sống",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Các yếu tố ảnh hưởng đến tiên lượng sống của bệnh nhân bao gồm:  Khả năng đáp ứng với điều trị; Loại ung thư vú mắc phải; Tốc độ phát triển khối u; Các yếu tố khác như tuổi, tiền sử bệnh và sức khỏe tổng thể; Phương pháp điều trị có thể ảnh hưởng đến khả năng sống thêm của ung thư vú giai đoạn sớm.",
+        "head": "Tốc độ phát triển khối u",
+        "head_type": "symptom",
+        "relation": "affects",
+        "tail": "Tiên lượng sống",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Các yếu tố ảnh hưởng đến tiên lượng sống của bệnh nhân bao gồm:  Khả năng đáp ứng với điều trị; Loại ung thư vú mắc phải; Tốc độ phát triển khối u; Các yếu tố khác như tuổi, tiền sử bệnh và sức khỏe tổng thể; Phương pháp điều trị có thể ảnh hưởng đến khả năng sống thêm của ung thư vú giai đoạn sớm.",
+        "head": "Tuổi",
+        "head_type": "lifestyle",
+        "relation": "affects",
+        "tail": "Tiên lượng sống",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Các yếu tố ảnh hưởng đến tiên lượng sống của bệnh nhân bao gồm:  Khả năng đáp ứng với điều trị; Loại ung thư vú mắc phải; Tốc độ phát triển khối u; Các yếu tố khác như tuổi, tiền sử bệnh và sức khỏe tổng thể; Phương pháp điều trị có thể ảnh hưởng đến khả năng sống thêm của ung thư vú giai đoạn sớm.",
+        "head": "Tiền sử bệnh",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Tiên lượng sống",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Các yếu tố ảnh hưởng đến tiên lượng sống của bệnh nhân bao gồm:  Khả năng đáp ứng với điều trị; Loại ung thư vú mắc phải; Tốc độ phát triển khối u; Các yếu tố khác như tuổi, tiền sử bệnh và sức khỏe tổng thể; Phương pháp điều trị có thể ảnh hưởng đến khả năng sống thêm của ung thư vú giai đoạn sớm.",
+        "head": "Sức khỏe tổng thể",
+        "head_type": "lifestyle",
+        "relation": "affects",
+        "tail": "Tiên lượng sống",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Các yếu tố ảnh hưởng đến tiên lượng sống của bệnh nhân bao gồm:  Khả năng đáp ứng với điều trị; Loại ung thư vú mắc phải; Tốc độ phát triển khối u; Các yếu tố khác như tuổi, tiền sử bệnh và sức khỏe tổng thể; Phương pháp điều trị có thể ảnh hưởng đến khả năng sống thêm của ung thư vú giai đoạn sớm.",
+        "head": "Phương pháp điều trị",
+        "head_type": "treatment",
+        "relation": "affects",
+        "tail": "Khả năng sống thêm",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Trong hầu hết các trường hợp, ung thư vú càng được chẩn đoán và điều trị sớm, cơ hội sống thêm càng cao.",
+        "head": "Ung thư vú",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "Điều trị sớm",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Tế bào ung thư thường trở nên khó điều trị hơn và có thể phát triển khả năng kháng thuốc khi bệnh lan tràn.",
+        "head": "Tế bào ung thư",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "Điều trị",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Mục đích của điều trị ung thư vú giai đoạn 1 là loại bỏ ung thư vú và bất kỳ tế bào ung thư nào khác còn sót lại trong vú, nách hoặc các bộ phận khác của cơ thể.",
+        "head": "Điều trị ung thư vú giai đoạn 1",
+        "head_type": "treatment",
+        "relation": "affects",
+        "tail": "Ung thư vú",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Mục đích của điều trị ung thư vú giai đoạn 1 là loại bỏ ung thư vú và bất kỳ tế bào ung thư nào khác còn sót lại trong vú, nách hoặc các bộ phận khác của cơ thể.",
+        "head": "Điều trị ung thư vú giai đoạn 1",
+        "head_type": "treatment",
+        "relation": "affects",
+        "tail": "Tế bào ung thư",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Mục đích của điều trị ung thư vú giai đoạn 1 là loại bỏ ung thư vú và bất kỳ tế bào ung thư nào khác còn sót lại trong vú, nách hoặc các bộ phận khác của cơ thể.",
+        "head": "Điều trị ung thư vú giai đoạn 1",
+        "head_type": "treatment",
+        "relation": "locatedIn",
+        "tail": "Vú",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Mục đích của điều trị ung thư vú giai đoạn 1 là loại bỏ ung thư vú và bất kỳ tế bào ung thư nào khác còn sót lại trong vú, nách hoặc các bộ phận khác của cơ thể.",
+        "head": "Điều trị ung thư vú giai đoạn 1",
+        "head_type": "treatment",
+        "relation": "locatedIn",
+        "tail": "Nách",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Điều trị ở giai đoạn này cũng có thể làm giảm nguy cơ ung thư tái phát.",
+        "head": "Điều trị",
+        "head_type": "treatment",
+        "relation": "affects",
+        "tail": "Nguy cơ ung thư tái phát",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bác sĩ có thể dựa trên việc thăm khám lâm sàng, hỏi bệnh sử cá nhân, gia đình và các triệu chứng để chẩn đoán bệnh.",
+        "head": "Bác sĩ",
+        "head_type": "treatment",
+        "relation": "diagnosedBy",
+        "tail": "Bệnh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu nghi ngờ ung thư vú, bác sĩ sẽ chỉ định thêm một số kiểm tra cận lâm sàng, bao gồm:",
+        "head": "Ung thư vú",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "Kiểm tra cận lâm sàng",
+        "tail_type": "test"
+    },
+    {
+        "text": "Phương pháp chụp nhũ ảnh thường được áp dụng thường quy trong chẩn đoán ung thư vú hiện nay.",
+        "head": "Chụp nhũ ảnh",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "Ung thư vú",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bệnh viện Đa khoa Tâm Anh thực hiện chẩn đoán ung thư vú bằng hệ thống chụp nhũ ảnh kỹ thuật số cắt lớp (DPT) với nhiều ưu điểm vượt trội so với chụp nhũ ảnh 2D.",
+        "head": "Bệnh viện Đa khoa Tâm Anh",
+        "head_type": "treatment",
+        "relation": "diagnosedBy",
+        "tail": "Ung thư vú",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bệnh viện Đa khoa Tâm Anh thực hiện chẩn đoán ung thư vú bằng hệ thống chụp nhũ ảnh kỹ thuật số cắt lớp (DPT) với nhiều ưu điểm vượt trội so với chụp nhũ ảnh 2D.",
+        "head": "Chụp nhũ ảnh kỹ thuật số cắt lớp (DPT)",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "Ung thư vú",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đây là hệ thống nhũ ảnh hiện đại bậc nhất, cho tỷ lệ phát hiện ung thư tăng lên 40% và giảm tỷ lệ dương tính giả 40%.",
+        "head": "Hệ thống nhũ ảnh",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "Ung thư",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bác sĩ có thể dựa vào các kết quả từ chụp nhũ ảnh để đưa ra kết luận chính xác và xây dựng phác đồ điều trị cá thể hóa hiệu quả.",
+        "head": "Bác sĩ",
+        "head_type": "treatment",
+        "relation": "diagnosedBy",
+        "tail": "Ung thư",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bác sĩ có thể dựa vào các kết quả từ chụp nhũ ảnh để đưa ra kết luận chính xác và xây dựng phác đồ điều trị cá thể hóa hiệu quả.",
+        "head": "Chụp nhũ ảnh",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "Ung thư",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Siêu âm thường là phương pháp được chỉ định tiếp theo chụp nhũ ảnh không nhạy.",
+        "head": "Siêu âm",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "Ung thư vú",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Siêu âm có thể đánh giá kích thước cũng như độ đặc của các khối u vú hiệu quả.",
+        "head": "Siêu âm",
+        "head_type": "test",
+        "relation": "affects",
+        "tail": "Kích thước khối u vú",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Siêu âm có thể đánh giá kích thước cũng như độ đặc của các khối u vú hiệu quả.",
+        "head": "Siêu âm",
+        "head_type": "test",
+        "relation": "affects",
+        "tail": "Độ đặc khối u vú",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "MRI thường được chỉ định cho bệnh nhân nghi ngờ bệnh ác tính đa ổ hoặc hai bên hoặc có tổn thương ẩn.",
+        "head": "MRI",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "Bệnh ác tính đa ổ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "MRI thường được chỉ định cho bệnh nhân nghi ngờ bệnh ác tính đa ổ hoặc hai bên hoặc có tổn thương ẩn.",
+        "head": "MRI",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "Bệnh ác tính hai bên",
+        "tail_type": "disease"
+    },
+    {
+        "text": "MRI thường được chỉ định cho bệnh nhân nghi ngờ bệnh ác tính đa ổ hoặc hai bên hoặc có tổn thương ẩn.",
+        "head": "MRI",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "Tổn thương ẩn",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Đặc biệt, chỉ định MRI là rất quan trọng trong các trường hợp như: Ung thư biểu mô tiểu thùy xâm lấn hoặc cần đánh giá đáp ứng với hóa trị liệu bổ trợ, lập kế hoạch sàng lọc và phẫu thuật bảo tồn vú ở những bệnh nhân có nguy cơ cao.",
+        "head": "MRI",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "Ung thư biểu mô tiểu thùy xâm lấn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đặc biệt, chỉ định MRI là rất quan trọng trong các trường hợp như: Ung thư biểu mô tiểu thùy xâm lấn hoặc cần đánh giá đáp ứng với hóa trị liệu bổ trợ, lập kế hoạch sàng lọc và phẫu thuật bảo tồn vú ở những bệnh nhân có nguy cơ cao.",
+        "head": "Hóa trị liệu bổ trợ",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Ung thư biểu mô tiểu thùy xâm lấn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đặc biệt, chỉ định MRI là rất quan trọng trong các trường hợp như: Ung thư biểu mô tiểu thùy xâm lấn hoặc cần đánh giá đáp ứng với hóa trị liệu bổ trợ, lập kế hoạch sàng lọc và phẫu thuật bảo tồn vú ở những bệnh nhân có nguy cơ cao.",
+        "head": "Phẫu thuật bảo tồn vú",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Ung thư biểu mô tiểu thùy xâm lấn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Hệ thống chụp cộng hưởng từ (MRI) ứng dụng công nghệ “Ma trận sinh học toàn phần” đang được ứng dụng tại bệnh viện Đa khoa Tâm Anh cho kết quả chẩn đoán vượt trội, tiết kiệm 50% thời gian chụp, giảm thiểu bức xạ so với quy trình chuẩn.",
+        "head": "Hệ thống chụp cộng hưởng từ (MRI)",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "Ung thư",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Sinh thiết mô là việc lấy mô vú để giải phẫu bệnh dưới kính hiển vi.",
+        "head": "Sinh thiết mô",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "Ung thư vú",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đây là một bước quan trọng để đánh giá mức độ nghiêm trọng của ung thư vú.",
+        "head": "Sinh thiết mô",
+        "head_type": "test",
+        "relation": "affects",
+        "tail": "Mức độ nghiêm trọng của ung thư vú",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Sinh thiết có thể bao gồm chọc hút tế bào bằng kim nhỏ, sinh thiết lõi (Trucut) hoặc sinh thiết rạch hay cắt.",
+        "head": "Chọc hút tế bào bằng kim nhỏ",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "Ung thư vú",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Sinh thiết có thể bao gồm chọc hút tế bào bằng kim nhỏ, sinh thiết lõi (Trucut) hoặc sinh thiết rạch hay cắt.",
+        "head": "Sinh thiết lõi (Trucut)",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "Ung thư vú",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Sinh thiết có thể bao gồm chọc hút tế bào bằng kim nhỏ, sinh thiết lõi (Trucut) hoặc sinh thiết rạch hay cắt.",
+        "head": "Sinh thiết rạch",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "Ung thư vú",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các lựa chọn điều trị bệnh ung thư vú giai đoạn 1 được chia thành hai loại chính:  Phương pháp điều trị tại chỗ: Các phương pháp này điều trị ung thư tại chỗ, bao gồm phẫu thuật và xạ trị.",
+        "head": "Phương pháp điều trị tại chỗ",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Ung thư vú giai đoạn 1",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các lựa chọn điều trị bệnh ung thư vú giai đoạn 1 được chia thành hai loại chính:  Phương pháp điều trị tại chỗ: Các phương pháp này điều trị ung thư tại chỗ, bao gồm phẫu thuật và xạ trị.",
+        "head": "Phẫu thuật",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Ung thư vú giai đoạn 1",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các lựa chọn điều trị bệnh ung thư vú giai đoạn 1 được chia thành hai loại chính:  Phương pháp điều trị tại chỗ: Các phương pháp này điều trị ung thư tại chỗ, bao gồm phẫu thuật và xạ trị.",
+        "head": "Xạ trị",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Ung thư vú giai đoạn 1",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các lựa chọn điều trị bệnh ung thư vú giai đoạn 1 được chia thành hai loại chính:  Phương pháp điều trị toàn thân: Những phương pháp này điều trị hệ thống, bao gồm hóa trị, liệu pháp nội tiết, liệu pháp nhắm mục tiêu và liệu pháp miễn dịch.",
+        "head": "Phương pháp điều trị toàn thân",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Ung thư vú giai đoạn 1",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các lựa chọn điều trị bệnh ung thư vú giai đoạn 1 được chia thành hai loại chính:  Phương pháp điều trị toàn thân: Những phương pháp này điều trị hệ thống, bao gồm hóa trị, liệu pháp nội tiết, liệu pháp nhắm mục tiêu và liệu pháp miễn dịch.",
+        "head": "Hóa trị",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Ung thư vú giai đoạn 1",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các lựa chọn điều trị bệnh ung thư vú giai đoạn 1 được chia thành hai loại chính:  Phương pháp điều trị toàn thân: Những phương pháp này điều trị hệ thống, bao gồm hóa trị, liệu pháp nội tiết, liệu pháp nhắm mục tiêu và liệu pháp miễn dịch.",
+        "head": "Liệu pháp nội tiết",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Ung thư vú giai đoạn 1",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các lựa chọn điều trị bệnh ung thư vú giai đoạn 1 được chia thành hai loại chính:  Phương pháp điều trị toàn thân: Những phương pháp này điều trị hệ thống, bao gồm hóa trị, liệu pháp nội tiết, liệu pháp nhắm mục tiêu và liệu pháp miễn dịch.",
+        "head": "Liệu pháp nhắm mục tiêu",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Ung thư vú giai đoạn 1",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các lựa chọn điều trị bệnh ung thư vú giai đoạn 1 được chia thành hai loại chính:  Phương pháp điều trị toàn thân: Những phương pháp này điều trị hệ thống, bao gồm hóa trị, liệu pháp nội tiết, liệu pháp nhắm mục tiêu và liệu pháp miễn dịch.",
+        "head": "Liệu pháp miễn dịch",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Ung thư vú giai đoạn 1",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu khối u rất nhỏ, thường chỉ cần điều trị tại chỗ.",
+        "head": "Khối u",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "Điều trị tại chỗ",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Trường hợp khối u lớn hơn, xâm lấn hơn đã lan đến các hạch bạch huyết hoặc có cấu trúc phân tử cho thấy có nhiều khả năng lan xa hơn, bác sĩ thường chỉ định điều trị bằng các phương pháp toàn thân.",
+        "head": "Khối u",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "Phương pháp điều trị toàn thân",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Trường hợp khối u lớn hơn, xâm lấn hơn đã lan đến các hạch bạch huyết hoặc có cấu trúc phân tử cho thấy có nhiều khả năng lan xa hơn, bác sĩ thường chỉ định điều trị bằng các phương pháp toàn thân.",
+        "head": "Khối u",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Hạch bạch huyết",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Với ung thư vú giai đoạn 1, việc sử dụng liệu pháp toàn thân được xem là liệu pháp bổ trợ nhằm loại bỏ bất kỳ tế bào ung thư có thể đã lan ra ngoài vú.",
+        "head": "Liệu pháp toàn thân",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Ung thư vú giai đoạn 1",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Phần lớn các bệnh nhân ung thư vú giai đoạn 1 thường được điều trị bằng phẫu thuật.",
+        "head": "Ung thư vú giai đoạn 1",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "Phẫu thuật",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Các lựa chọn bao gồm cắt bỏ khối u (chỉ cắt bỏ một phần vú) hoặc cắt bỏ vú (cắt bỏ toàn bộ vú).",
+        "head": "Cắt bỏ khối u",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Ung thư vú",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các lựa chọn bao gồm cắt bỏ khối u (chỉ cắt bỏ một phần vú) hoặc cắt bỏ vú (cắt bỏ toàn bộ vú).",
+        "head": "Cắt bỏ vú",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Ung thư vú",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu cắt bỏ khối u, sau phẫu thuật người bệnh thường được xạ trị để kiểm soát ung thư và ngăn ngừa tái phát.",
+        "head": "Xạ trị",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Ung thư",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu cắt bỏ khối u, sau phẫu thuật người bệnh thường được xạ trị để kiểm soát ung thư và ngăn ngừa tái phát.",
+        "head": "Xạ trị",
+        "head_type": "treatment",
+        "relation": "preventedBy",
+        "tail": "Tái phát",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu cắt bỏ toàn bộ vú, người bệnh có thể được tái tạo vú ngay trong phẫu thuật cắt bỏ.",
+        "head": "Tái tạo vú",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Ung thư vú",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Trong quy trình này, tạo hình thường được đặt cùng lúc với phẫu thuật cắt bỏ vú.",
+        "head": "Tạo hình",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Ung thư vú",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ngoài ra, tùy thuộc vào các yếu tố nguy cơ, người bệnh có thể cần phải cân nhắc giữa rủi ro và lợi ích của việc phẫu thuật cắt bỏ vú một lần so với hai lần.",
+        "head": "Phẫu thuật cắt bỏ vú",
+        "head_type": "treatment",
+        "relation": "relatedTo",
+        "tail": "Yếu tố nguy cơ",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Hóa trị đôi khi được sử dụng như một phương pháp điều trị bổ trợ cho ung thư vú giai đoạn 1.",
+        "head": "Hóa trị",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Ung thư vú giai đoạn 1",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Phương pháp này nhằm điều trị bất kỳ tế bào ung thư nào đã lan ra khỏi vú trước khi phát triển thành di căn.",
+        "head": "Tế bào ung thư",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "Hóa trị",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Phương pháp này nhằm điều trị bất kỳ tế bào ung thư nào đã lan ra khỏi vú trước khi phát triển thành di căn.",
+        "head": "Di căn",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Tế bào ung thư",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Việc sử dụng hóa trị cũng phụ thuộc rất nhiều vào tình trạng đáp ứng của khối u.",
+        "head": "Hóa trị",
+        "head_type": "treatment",
+        "relation": "relatedTo",
+        "tail": "Khối u",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ở một bệnh nhân HER-2 dương tính hoặc bộ ba âm tính, hóa trị thường được sử dụng ngay cả khi các hạch bạch huyết hoàn toàn âm tính.",
+        "head": "Hóa trị",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Bệnh nhân HER-2 dương tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ở một bệnh nhân HER-2 dương tính hoặc bộ ba âm tính, hóa trị thường được sử dụng ngay cả khi các hạch bạch huyết hoàn toàn âm tính.",
+        "head": "Hóa trị",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Bệnh nhân bộ ba âm tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ở một bệnh nhân HER-2 dương tính hoặc bộ ba âm tính, hóa trị thường được sử dụng ngay cả khi các hạch bạch huyết hoàn toàn âm tính.",
+        "head": "Hạch bạch huyết",
+        "head_type": "organ",
+        "relation": "relatedTo",
+        "tail": "Bệnh nhân HER-2 dương tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ở một bệnh nhân HER-2 dương tính hoặc bộ ba âm tính, hóa trị thường được sử dụng ngay cả khi các hạch bạch huyết hoàn toàn âm tính.",
+        "head": "Hạch bạch huyết",
+        "head_type": "organ",
+        "relation": "relatedTo",
+        "tail": "Bệnh nhân bộ ba âm tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tuy nhiên, rất khó để xác định rằng người bệnh có thể được hưởng lợi từ hóa trị liệu hay không.",
+        "head": "Hóa trị liệu",
+        "head_type": "treatment",
+        "relation": "relatedTo",
+        "tail": "Người bệnh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Điều này càng đặc biệt khó ở các khối u vú giai đoạn 1 âm tính hoặc dương tính với các thụ thể hormone hoặc âm tính với HER-2.",
+        "head": "Khối u vú giai đoạn 1",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "Thụ thể hormone",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Điều này càng đặc biệt khó ở các khối u vú giai đoạn 1 âm tính hoặc dương tính với các thụ thể hormone hoặc âm tính với HER-2.",
+        "head": "Khối u vú giai đoạn 1",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "HER-2",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Nếu cắt bỏ khối u, xạ trị thường được sử dụng để điều trị các mô vú còn lại.",
+        "head": "Xạ trị",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Mô vú",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Xạ trị có thể được thực hiện sau khi cắt bỏ khối u và cắt bỏ vú.",
+        "head": "Xạ trị",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Cắt bỏ khối u",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Xạ trị có thể được thực hiện sau khi cắt bỏ khối u và cắt bỏ vú.",
+        "head": "Xạ trị",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Cắt bỏ vú",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Xạ trị giúp tiêu diệt các tế bào ung thư có thể còn sót lại hoặc những tế bào quá nhỏ không thể nhìn thấy.",
+        "head": "Xạ trị",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Tế bào ung thư",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu khối u dương tính với thụ thể estrogen, liệu pháp nội tiết tố thường được khuyến cáo sau khi điều trị bằng phẫu thuật, hóa trị và xạ trị nhằm giảm nguy cơ ung thư tái phát, di căn.",
+        "head": "Liệu pháp nội tiết tố",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Ung thư",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu khối u dương tính với thụ thể estrogen, liệu pháp nội tiết tố thường được khuyến cáo sau khi điều trị bằng phẫu thuật, hóa trị và xạ trị nhằm giảm nguy cơ ung thư tái phát, di căn.",
+        "head": "Liệu pháp nội tiết tố",
+        "head_type": "treatment",
+        "relation": "preventedBy",
+        "tail": "Tái phát",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu khối u dương tính với thụ thể estrogen, liệu pháp nội tiết tố thường được khuyến cáo sau khi điều trị bằng phẫu thuật, hóa trị và xạ trị nhằm giảm nguy cơ ung thư tái phát, di căn.",
+        "head": "Liệu pháp nội tiết tố",
+        "head_type": "treatment",
+        "relation": "preventedBy",
+        "tail": "Di căn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu khối u dương tính với thụ thể estrogen, liệu pháp nội tiết tố thường được khuyến cáo sau khi điều trị bằng phẫu thuật, hóa trị và xạ trị nhằm giảm nguy cơ ung thư tái phát, di căn.",
+        "head": "Liệu pháp nội tiết tố",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Khối u",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khối u dương tính với thụ thể estrogen có nhiều khả năng tái phát muộn (hơn 5 năm sau khi chẩn đoán).",
+        "head": "Khối u",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "Thụ thể estrogen",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Khối u dương tính với thụ thể estrogen có nhiều khả năng tái phát muộn (hơn 5 năm sau khi chẩn đoán).",
+        "head": "Khối u",
+        "head_type": "disease",
+        "relation": "preventedBy",
+        "tail": "Chẩn đoán",
+        "tail_type": "test"
+    },
+    {
+        "text": "Thuốc tamoxifen thường được dùng cho phụ nữ tiền mãn kinh.",
+        "head": "Tamoxifen",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Phụ nữ tiền mãn kinh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Phụ nữ sau mãn kinh thường được điều trị bằng chất ức chế aromatase như Aromasin (exemestane), Arimidex (anastrozole), hoặc Femara (letrozole).",
+        "head": "Chất ức chế aromatase",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Phụ nữ sau mãn kinh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Phụ nữ sau mãn kinh thường được điều trị bằng chất ức chế aromatase như Aromasin (exemestane), Arimidex (anastrozole), hoặc Femara (letrozole).",
+        "head": "Aromasin (exemestane)",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Phụ nữ sau mãn kinh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Phụ nữ sau mãn kinh thường được điều trị bằng chất ức chế aromatase như Aromasin (exemestane), Arimidex (anastrozole), hoặc Femara (letrozole).",
+        "head": "Arimidex (anastrozole)",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Phụ nữ sau mãn kinh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Phụ nữ sau mãn kinh thường được điều trị bằng chất ức chế aromatase như Aromasin (exemestane), Arimidex (anastrozole), hoặc Femara (letrozole).",
+        "head": "Femara (letrozole)",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Phụ nữ sau mãn kinh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ở một số phụ nữ tiền mãn kinh có nguy cơ cao, chất ức chế aromatase đôi khi được sử dụng cùng với thuốc ức chế chức năng buồng trứng.",
+        "head": "Chất ức chế aromatase",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Phụ nữ tiền mãn kinh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ở một số phụ nữ tiền mãn kinh có nguy cơ cao, chất ức chế aromatase đôi khi được sử dụng cùng với thuốc ức chế chức năng buồng trứng.",
+        "head": "Thuốc ức chế chức năng buồng trứng",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Phụ nữ tiền mãn kinh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Là các liệu pháp được nhắm mục tiêu HER2.",
+        "head": "Liệu pháp nhắm mục tiêu HER2",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "HER2",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Nếu khối u HER2 dương tính, thuốc nhắm mục tiêu HER2 như Herceptin (trastuzumab) thường được chỉ định.",
+        "head": "Thuốc nhắm mục tiêu HER2",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Khối u HER2 dương tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu khối u HER2 dương tính, thuốc nhắm mục tiêu HER2 như Herceptin (trastuzumab) thường được chỉ định.",
+        "head": "Herceptin (trastuzumab)",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Khối u HER2 dương tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Cách duy nhất để đạt được tiến bộ trong điều trị ung thư vú là thông qua việc nghiên cứu các loại thuốc và quy trình mới trong các thử nghiệm lâm sàng.",
+        "head": "Thử nghiệm lâm sàng",
+        "head_type": "test",
+        "relation": "relatedTo",
+        "tail": "Điều trị ung thư vú",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Rất nhiều lầm tưởng về các thử nghiệm lâm sàng, nhưng sự thật là mọi phương pháp điều trị đang được sử dụng ngày nay đều đã từng được nghiên cứu trong một thử nghiệm lâm sàng.",
+        "head": "Thử nghiệm lâm sàng",
+        "head_type": "test",
+        "relation": "relatedTo",
+        "tail": "Phương pháp điều trị",
+        "tail_type": "treatment"
+    }
+]

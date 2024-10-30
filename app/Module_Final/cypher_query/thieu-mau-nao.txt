@@ -1,0 +1,1015 @@
+
+MERGE (o1:disease {id: 'thiếu_máu_não_disease'})
+MERGE (o2:cause {id: 'tổn_thương_não_cấp_tính_do_lưu_lượng_máu_đến_não_bị_suy_giảm_cause'})
+MERGE (o1)-[r0:causedBy]->(o2)
+SET r0.text = 'Thiếu máu não là một cơ chế hay gặp do tổn thương não cấp tính do lưu lượng máu đến não bị suy giảm.'
+
+MERGE (o1:disease {id: 'thiếu_máu_lên_não_disease'})
+MERGE (o2:disease {id: 'nhồi_máu_não_hoặc_bệnh_lý_tại_não_bộ_do_thiếu_oxy__thiếu_máu_cục_bộ_toàn_bộ_disease'})
+MERGE (o1)-[r1:isSymptomOf]->(o2)
+SET r1.text = 'Thiếu máu lên não là một trường hợp cấp cứu y tế; nếu không được điều trị, khả năng cao sẽ xảy ra nhồi máu não hoặc bệnh lý tại não bộ do thiếu oxy, thiếu máu cục bộ toàn bộ.'
+
+MERGE (o1:disease {id: 'thiếu_máu_lên_não_disease'})
+MERGE (o2:treatment {id: 'điều_trị_treatment'})
+MERGE (o1)-[r2:treatedBy]->(o2)
+SET r2.text = 'Thiếu máu lên não là một trường hợp cấp cứu y tế; nếu không được điều trị, khả năng cao sẽ xảy ra nhồi máu não hoặc bệnh lý tại não bộ do thiếu oxy, thiếu máu cục bộ toàn bộ.'
+
+MERGE (o1:disease {id: 'nhồi_máu_não_disease'})
+MERGE (o2:disease {id: 'thiếu_máu_lên_não_disease'})
+MERGE (o1)-[r3:isSymptomOf]->(o2)
+SET r3.text = 'Thiếu máu lên não là một trường hợp cấp cứu y tế; nếu không được điều trị, khả năng cao sẽ xảy ra nhồi máu não hoặc bệnh lý tại não bộ do thiếu oxy, thiếu máu cục bộ toàn bộ.'
+
+MERGE (o1:disease {id: 'bệnh_lý_tại_não_bộ_do_thiếu_oxy__thiếu_máu_cục_bộ_toàn_bộ_disease'})
+MERGE (o2:disease {id: 'thiếu_máu_lên_não_disease'})
+MERGE (o1)-[r4:isSymptomOf]->(o2)
+SET r4.text = 'Thiếu máu lên não là một trường hợp cấp cứu y tế; nếu không được điều trị, khả năng cao sẽ xảy ra nhồi máu não hoặc bệnh lý tại não bộ do thiếu oxy, thiếu máu cục bộ toàn bộ.'
+
+MERGE (o1:disease {id: 'thiếu_máu_lên_não_disease'})
+MERGE (o2:symptom {id: 'tử_vong_hoặc_có_nguy_cơ_tàn_tật_vĩnh_viễn_symptom'})
+MERGE (o1)-[r5:affects]->(o2)
+SET r5.text = 'Từ đó người bệnh có thể tử vong hoặc có nguy cơ tàn tật vĩnh viễn.'
+
+MERGE (o1:disease {id: 'thiếu_máu_não_disease'})
+MERGE (o2:cause {id: 'lượng_máu_lưu_thông_lên_não_không_đủ_cause'})
+MERGE (o1)-[r6:causedBy]->(o2)
+SET r6.text = 'Thiếu máu não hay thiếu máu lên não là hiện tượng lượng máu lưu thông lên não không đủ.'
+
+MERGE (o1:disease {id: 'thiếu_máu_lên_não_disease'})
+MERGE (o2:cause {id: 'lượng_máu_lưu_thông_lên_não_không_đủ_cause'})
+MERGE (o1)-[r7:causedBy]->(o2)
+SET r7.text = 'Thiếu máu não hay thiếu máu lên não là hiện tượng lượng máu lưu thông lên não không đủ.'
+
+MERGE (o1:symptom {id: 'đau_đầu_symptom'})
+MERGE (o2:disease {id: 'thiếu_máu_não_disease'})
+MERGE (o1)-[r8:isSymptomOf]->(o2)
+SET r8.text = 'Triệu chứng thiếu máu não ban đầu chỉ là đau đầu, ù tai, chóng mặt,… thoáng qua nên người bệnh thường chủ quan.'
+
+MERGE (o1:symptom {id: 'ù_tai_symptom'})
+MERGE (o2:disease {id: 'thiếu_máu_não_disease'})
+MERGE (o1)-[r9:isSymptomOf]->(o2)
+SET r9.text = 'Triệu chứng thiếu máu não ban đầu chỉ là đau đầu, ù tai, chóng mặt,… thoáng qua nên người bệnh thường chủ quan.'
+
+MERGE (o1:symptom {id: 'chóng_mặt_symptom'})
+MERGE (o2:disease {id: 'thiếu_máu_não_disease'})
+MERGE (o1)-[r10:isSymptomOf]->(o2)
+SET r10.text = 'Triệu chứng thiếu máu não ban đầu chỉ là đau đầu, ù tai, chóng mặt,… thoáng qua nên người bệnh thường chủ quan.'
+
+MERGE (o1:disease {id: 'thiếu_máu_não_disease'})
+MERGE (o2:treatment {id: 'chẩn_đoán_và_điều_trị_treatment'})
+MERGE (o1)-[r11:treatedBy]->(o2)
+SET r11.text = 'Nếu không kịp thời chẩn đoán và điều trị, bệnh thiếu máu não có thể dẫn đến nhiều biến chứng nguy hiểm như: suy giảm chức năng não, chết tế bào não, mất trí nhớ, tai biến mạch máu não,…'
+
+MERGE (o1:symptom {id: 'suy_giảm_chức_năng_não_symptom'})
+MERGE (o2:disease {id: 'thiếu_máu_não_disease'})
+MERGE (o1)-[r12:isSymptomOf]->(o2)
+SET r12.text = 'Nếu không kịp thời chẩn đoán và điều trị, bệnh thiếu máu não có thể dẫn đến nhiều biến chứng nguy hiểm như: suy giảm chức năng não, chết tế bào não, mất trí nhớ, tai biến mạch máu não,…'
+
+MERGE (o1:symptom {id: 'chết_tế_bào_não_symptom'})
+MERGE (o2:disease {id: 'thiếu_máu_não_disease'})
+MERGE (o1)-[r13:isSymptomOf]->(o2)
+SET r13.text = 'Nếu không kịp thời chẩn đoán và điều trị, bệnh thiếu máu não có thể dẫn đến nhiều biến chứng nguy hiểm như: suy giảm chức năng não, chết tế bào não, mất trí nhớ, tai biến mạch máu não,…'
+
+MERGE (o1:symptom {id: 'mất_trí_nhớ_symptom'})
+MERGE (o2:disease {id: 'thiếu_máu_não_disease'})
+MERGE (o1)-[r14:isSymptomOf]->(o2)
+SET r14.text = 'Nếu không kịp thời chẩn đoán và điều trị, bệnh thiếu máu não có thể dẫn đến nhiều biến chứng nguy hiểm như: suy giảm chức năng não, chết tế bào não, mất trí nhớ, tai biến mạch máu não,…'
+
+MERGE (o1:disease {id: 'tai_biến_mạch_máu_não_disease'})
+MERGE (o2:disease {id: 'thiếu_máu_não_disease'})
+MERGE (o1)-[r15:isSymptomOf]->(o2)
+SET r15.text = 'Nếu không kịp thời chẩn đoán và điều trị, bệnh thiếu máu não có thể dẫn đến nhiều biến chứng nguy hiểm như: suy giảm chức năng não, chết tế bào não, mất trí nhớ, tai biến mạch máu não,…'
+
+MERGE (o1:organ {id: 'não_organ'})
+MERGE (o2:organ {id: 'cơ_thể_organ'})
+MERGE (o1)-[r16:locatedIn]->(o2)
+SET r16.text = 'Bộ não con người là một cơ quan hoạt động trao đổi chất cao, chiếm khoảng 25% nhu cầu trao đổi chất của một người, mặc dù chỉ chiếm 2,5% trọng lượng cơ thể của một cá nhân điển hình.'
+
+MERGE (o1:organ {id: 'não_organ'})
+MERGE (o2:cause {id: 'trao_đổi_chất_cause'})
+MERGE (o1)-[r17:relatedTo]->(o2)
+SET r17.text = 'Bộ não con người là một cơ quan hoạt động trao đổi chất cao, chiếm khoảng 25% nhu cầu trao đổi chất của một người, mặc dù chỉ chiếm 2,5% trọng lượng cơ thể của một cá nhân điển hình.'
+
+MERGE (o1:organ {id: 'não_organ'})
+MERGE (o2:cause {id: 'gián_đoạn_lưu_lượng_máu_cause'})
+MERGE (o1)-[r18:affectedBy]->(o2)
+SET r18.text = 'Do đó, não cực kỳ nhạy cảm với sự gián đoạn lưu lượng máu.'
+
+MERGE (o1:cause {id: 'lưu_lượng_máu_não_cause'})
+MERGE (o2:cause {id: 'tự_điều_hòa_mạch_máu_não_cause'})
+MERGE (o1)-[r19:relatedTo]->(o2)
+SET r19.text = 'Cơ chế cân bằng nội môi phức tạp có hoạt động duy trì lưu lượng máu não thông qua quá trình tự điều hòa mạch máu não với tốc độ ổn định khoảng 50 ml/100g mô não mỗi phút.'
+
+MERGE (o1:cause {id: 'lưu_lượng_máu_cause'})
+MERGE (o2:disease {id: 'thiếu_máu_lên_não_disease'})
+MERGE (o1)-[r20:causedBy]->(o2)
+SET r20.text = 'Khi lưu lượng máu này bị tổn hại, sẽ dẫn đến thiếu máu lên não, đây chính một trong các cơ chế tổn thương não và rối loạn chức năng phổ biến nhất.'
+
+MERGE (o1:disease {id: 'thiếu_máu_lên_não_disease'})
+MERGE (o2:cause {id: 'tổn_thương_não_cause'})
+MERGE (o1)-[r21:causedBy]->(o2)
+SET r21.text = 'Khi lưu lượng máu này bị tổn hại, sẽ dẫn đến thiếu máu lên não, đây chính một trong các cơ chế tổn thương não và rối loạn chức năng phổ biến nhất.'
+
+MERGE (o1:disease {id: 'thiếu_máu_lên_não_disease'})
+MERGE (o2:cause {id: 'rối_loạn_chức_năng_cause'})
+MERGE (o1)-[r22:causedBy]->(o2)
+SET r22.text = 'Khi lưu lượng máu này bị tổn hại, sẽ dẫn đến thiếu máu lên não, đây chính một trong các cơ chế tổn thương não và rối loạn chức năng phổ biến nhất.'
+
+MERGE (o1:organ {id: 'tế_bào_thần_kinh_organ'})
+MERGE (o2:cause {id: 'tưới_máu_não_bị_tổn_thương_cause'})
+MERGE (o1)-[r23:affectedBy]->(o2)
+SET r23.text = 'Mức độ tổn thương tế bào thần kinh do tưới máu não bị tổn thương phụ thuộc vào cả mức độ và thời gian giảm tưới máu.'
+
+MERGE (o1:disease {id: 'thiếu_máu_não_disease'})
+MERGE (o2:cause {id: 'toàn_bộ_cause'})
+MERGE (o1)-[r24:relatedTo]->(o2)
+SET r24.text = 'Thiếu máu não có thể toàn bộ hoặc cục bộ.'
+
+MERGE (o1:disease {id: 'thiếu_máu_não_disease'})
+MERGE (o2:cause {id: 'cục_bộ_cause'})
+MERGE (o1)-[r25:relatedTo]->(o2)
+SET r25.text = 'Thiếu máu não có thể toàn bộ hoặc cục bộ.'
+
+MERGE (o1:disease {id: 'thiếu_máu_lên_não_toàn_bộ_disease'})
+MERGE (o2:cause {id: 'quá_trình_bệnh_toàn_thân_cause'})
+MERGE (o1)-[r26:causedBy]->(o2)
+SET r26.text = 'Thiếu máu lên não toàn bộ là hậu quả của quá trình bệnh toàn thân, thường gây sốc.'
+
+MERGE (o1:disease {id: 'thiếu_máu_lên_não_toàn_bộ_disease'})
+MERGE (o2:cause {id: 'sốc_cause'})
+MERGE (o1)-[r27:causedBy]->(o2)
+SET r27.text = 'Thiếu máu lên não toàn bộ là hậu quả của quá trình bệnh toàn thân, thường gây sốc.'
+
+MERGE (o1:cause {id: 'hạ_huyết_áp_toàn_thân_cause'})
+MERGE (o2:disease {id: 'thiếu_máu_não_toàn_bộ_disease'})
+MERGE (o1)-[r28:causedBy]->(o2)
+SET r28.text = 'Hạ huyết áp toàn thân là nguyên nhân phổ biến gây nên thiếu máu não toàn bộ.'
+
+MERGE (o1:cause {id: 'giảm_tưới_máu_não_thoáng_qua_cause'})
+MERGE (o2:cause {id: 'cơ_chế_tự_trị_và_thần_kinh_thể_dịch_kiểm_soát_huyết_áp_và_nhịp_tim_bị_gián_đoạn_cause'})
+MERGE (o1)-[r29:causedBy]->(o2)
+SET r29.text = 'Giảm tưới máu não thoáng qua có thể xảy ra khi cơ chế tự trị và thần kinh thể dịch kiểm soát huyết áp và nhịp tim bị gián đoạn, như trong hội chứng ngất vasovagal và nhịp tim nhanh tư thế.'
+
+MERGE (o1:cause {id: 'giảm_tưới_máu_não_thoáng_qua_cause'})
+MERGE (o2:disease {id: 'hội_chứng_ngất_vasovagal_disease'})
+MERGE (o1)-[r30:relatedTo]->(o2)
+SET r30.text = 'Giảm tưới máu não thoáng qua có thể xảy ra khi cơ chế tự trị và thần kinh thể dịch kiểm soát huyết áp và nhịp tim bị gián đoạn, như trong hội chứng ngất vasovagal và nhịp tim nhanh tư thế.'
+
+MERGE (o1:cause {id: 'giảm_tưới_máu_não_thoáng_qua_cause'})
+MERGE (o2:cause {id: 'nhịp_tim_nhanh_tư_thế_cause'})
+MERGE (o1)-[r31:relatedTo]->(o2)
+SET r31.text = 'Giảm tưới máu não thoáng qua có thể xảy ra khi cơ chế tự trị và thần kinh thể dịch kiểm soát huyết áp và nhịp tim bị gián đoạn, như trong hội chứng ngất vasovagal và nhịp tim nhanh tư thế.'
+
+MERGE (o1:disease {id: 'thiếu_máu_não_toàn_bộ_thoáng_qua_disease'})
+MERGE (o2:cause {id: 'các_vấn_đề_về_chức_năng_và_cấu_trúc_của_tim_cause'})
+MERGE (o1)-[r32:causedBy]->(o2)
+SET r32.text = 'Nguyên nhân thường gặp thứ 2 của bệnh thiếu máu não toàn bộ thoáng qua chính là các vấn đề về chức năng và cấu trúc của tim (đặc biệt là rối loạn nhịp tim).'
+
+MERGE (o1:disease {id: 'thiếu_máu_não_toàn_bộ_thoáng_qua_disease'})
+MERGE (o2:cause {id: 'rối_loạn_nhịp_tim_cause'})
+MERGE (o1)-[r33:relatedTo]->(o2)
+SET r33.text = 'Nguyên nhân thường gặp thứ 2 của bệnh thiếu máu não toàn bộ thoáng qua chính là các vấn đề về chức năng và cấu trúc của tim (đặc biệt là rối loạn nhịp tim).'
+
+MERGE (o1:symptom {id: 'tiền_ngất_symptom'})
+MERGE (o2:disease {id: 'thiếu_máu_não_toàn_bộ_thoáng_qua_disease'})
+MERGE (o1)-[r34:isSymptomOf]->(o2)
+SET r34.text = 'Khi hiệu ứng thoáng qua, tình trạng này thường biểu hiện dưới dạng tiền ngất hoặc ngất.'
+
+MERGE (o1:symptom {id: 'ngất_symptom'})
+MERGE (o2:disease {id: 'thiếu_máu_não_toàn_bộ_thoáng_qua_disease'})
+MERGE (o1)-[r35:isSymptomOf]->(o2)
+SET r35.text = 'Khi hiệu ứng thoáng qua, tình trạng này thường biểu hiện dưới dạng tiền ngất hoặc ngất.'
+
+MERGE (o1:disease {id: 'thiếu_máu_toàn_bộ_kéo_dài_disease'})
+MERGE (o2:symptom {id: 'tổn_thương_thần_kinh_vĩnh_viễn_symptom'})
+MERGE (o1)-[r36:affects]->(o2)
+SET r36.text = 'Mặt khác, thiếu máu toàn bộ kéo dài có thể dẫn đến tổn thương thần kinh vĩnh viễn.'
+
+MERGE (o1:disease {id: 'thiếu_máu_cục_bộ_não_cục_bộ_disease'})
+MERGE (o2:cause {id: 'tắc_nghẽn_lưu_lượng_máu_động_mạch_đến_não_cause'})
+MERGE (o1)-[r37:causedBy]->(o2)
+SET r37.text = 'Ngược lại, thiếu máu cục bộ não cục bộ thường phát sinh do tắc nghẽn lưu lượng máu động mạch đến não, thường là kết quả của huyết khối hoặc tắc mạch.'
+
+MERGE (o1:disease {id: 'thiếu_máu_cục_bộ_não_cục_bộ_disease'})
+MERGE (o2:cause {id: 'huyết_khối_cause'})
+MERGE (o1)-[r38:causedBy]->(o2)
+SET r38.text = 'Ngược lại, thiếu máu cục bộ não cục bộ thường phát sinh do tắc nghẽn lưu lượng máu động mạch đến não, thường là kết quả của huyết khối hoặc tắc mạch.'
+
+MERGE (o1:disease {id: 'thiếu_máu_cục_bộ_não_cục_bộ_disease'})
+MERGE (o2:cause {id: 'tắc_mạch_cause'})
+MERGE (o1)-[r39:causedBy]->(o2)
+SET r39.text = 'Ngược lại, thiếu máu cục bộ não cục bộ thường phát sinh do tắc nghẽn lưu lượng máu động mạch đến não, thường là kết quả của huyết khối hoặc tắc mạch.'
+
+MERGE (o1:disease {id: 'thiếu_máu_lên_não_cục_bộ_kéo_dài_disease'})
+MERGE (o2:symptom {id: 'mất_đi_các_tế_bào_thần_kinh_symptom'})
+MERGE (o1)-[r40:affects]->(o2)
+SET r40.text = 'Nếu thiếu máu lên não cục bộ kéo dài đủ lâu, tình trạng mất đi các tế bào thần kinh sẽ xảy ra, dẫn đến tình trạng đột quỵ do thiếu máu cục bộ.'
+
+MERGE (o1:disease {id: 'thiếu_máu_lên_não_cục_bộ_kéo_dài_disease'})
+MERGE (o2:disease {id: 'đột_quỵ_do_thiếu_máu_cục_bộ_disease'})
+MERGE (o1)-[r41:causedBy]->(o2)
+SET r41.text = 'Nếu thiếu máu lên não cục bộ kéo dài đủ lâu, tình trạng mất đi các tế bào thần kinh sẽ xảy ra, dẫn đến tình trạng đột quỵ do thiếu máu cục bộ.'
+
+MERGE (o1:disease {id: 'thiếu_máu_cục_bộ_disease'})
+MERGE (o2:cause {id: 'huyết_khối_hình_thành_từ_động_mạch_cảnh_trong_bị_hẹp_cause'})
+MERGE (o1)-[r42:causedBy]->(o2)
+SET r42.text = 'Thiếu máu cục bộ còn xảy ra khi có huyết khối hình thành từ động mạch cảnh trong bị hẹp hoặc mảng xơ vữa động mạch não.'
+
+MERGE (o1:disease {id: 'thiếu_máu_cục_bộ_disease'})
+MERGE (o2:cause {id: 'mảng_xơ_vữa_động_mạch_não_cause'})
+MERGE (o1)-[r43:causedBy]->(o2)
+SET r43.text = 'Thiếu máu cục bộ còn xảy ra khi có huyết khối hình thành từ động mạch cảnh trong bị hẹp hoặc mảng xơ vữa động mạch não.'
+
+MERGE (o1:disease {id: 'thiếu_máu_cục_bộ_não_disease'})
+MERGE (o2:cause {id: 'thuyên_tắc_cục_máu_đông_cause'})
+MERGE (o1)-[r44:causedBy]->(o2)
+SET r44.text = 'Ngoài ra nguyên nhân phổ biến nhất gây nên tình trạng thiếu máu cục bộ não (chiếm đến 60 - 70% tỷ lệ trường hợp thiếu máu lên não thoáng qua và đột quỵ) chính là thuyên tắc cục máu đông (trong tim hoặc động mạch lớn).'
+
+MERGE (o1:disease {id: 'thiếu_máu_cục_bộ_não_disease'})
+MERGE (o2:disease {id: 'thiếu_máu_lên_não_thoáng_qua_disease'})
+MERGE (o1)-[r45:relatedTo]->(o2)
+SET r45.text = 'Ngoài ra nguyên nhân phổ biến nhất gây nên tình trạng thiếu máu cục bộ não (chiếm đến 60 - 70% tỷ lệ trường hợp thiếu máu lên não thoáng qua và đột quỵ) chính là thuyên tắc cục máu đông (trong tim hoặc động mạch lớn).'
+
+MERGE (o1:disease {id: 'thiếu_máu_cục_bộ_não_disease'})
+MERGE (o2:disease {id: 'đột_quỵ_disease'})
+MERGE (o1)-[r46:relatedTo]->(o2)
+SET r46.text = 'Ngoài ra nguyên nhân phổ biến nhất gây nên tình trạng thiếu máu cục bộ não (chiếm đến 60 - 70% tỷ lệ trường hợp thiếu máu lên não thoáng qua và đột quỵ) chính là thuyên tắc cục máu đông (trong tim hoặc động mạch lớn).'
+
+MERGE (o1:cause {id: 'thuyên_tắc_cục_máu_đông_cause'})
+MERGE (o2:organ {id: 'tim_hoặc_động_mạch_lớn_organ'})
+MERGE (o1)-[r47:locatedIn]->(o2)
+SET r47.text = 'Ngoài ra nguyên nhân phổ biến nhất gây nên tình trạng thiếu máu cục bộ não (chiếm đến 60 - 70% tỷ lệ trường hợp thiếu máu lên não thoáng qua và đột quỵ) chính là thuyên tắc cục máu đông (trong tim hoặc động mạch lớn).'
+
+MERGE (o1:cause {id: 'thuyên_tắc_cause'})
+MERGE (o2:cause {id: 'chất_béo__nước_ối_trong_khi_mang_thai_cause'})
+MERGE (o1)-[r48:causedBy]->(o2)
+SET r48.text = 'Thuyên tắc do vật liệu khác, chẳng hạn như chất béo, , nước ối trong khi mang thai, có thể xảy ra nhưng ít gặp hơn nhiều.'
+
+MERGE (o1:disease {id: 'thiếu_máu_cục_bộ_não_disease'})
+MERGE (o2:cause {id: 'sự_bít_đột_ngột_hoặc_giảm_đường_kính_rõ_rệt_của_động_mạch_cung_cấp_máu_cho_một_vùng_não_cause'})
+MERGE (o1)-[r49:causedBy]->(o2)
+SET r49.text = 'Thiếu máu cục bộ não theo nghĩa rộng có thể là cục bộ hoặc nhiều ổ, gây ra bởi sự bít đột ngột hoặc giảm đường kính rõ rệt của động mạch cung cấp máu cho một vùng não, có thể là động mạch bị hẹp trước đó hoặc động mạch bình thường (tức là động mạch chủ, thân trên động mạch chủ hoặc động mạch nội sọ).'
+
+MERGE (o1:disease {id: 'thiếu_máu_cục_bộ_não_disease'})
+MERGE (o2:cause {id: 'động_mạch_bị_hẹp_trước_đó_cause'})
+MERGE (o1)-[r50:relatedTo]->(o2)
+SET r50.text = 'Thiếu máu cục bộ não theo nghĩa rộng có thể là cục bộ hoặc nhiều ổ, gây ra bởi sự bít đột ngột hoặc giảm đường kính rõ rệt của động mạch cung cấp máu cho một vùng não, có thể là động mạch bị hẹp trước đó hoặc động mạch bình thường (tức là động mạch chủ, thân trên động mạch chủ hoặc động mạch nội sọ).'
+
+MERGE (o1:disease {id: 'thiếu_máu_cục_bộ_não_disease'})
+MERGE (o2:cause {id: 'động_mạch_bình_thường_cause'})
+MERGE (o1)-[r51:relatedTo]->(o2)
+SET r51.text = 'Thiếu máu cục bộ não theo nghĩa rộng có thể là cục bộ hoặc nhiều ổ, gây ra bởi sự bít đột ngột hoặc giảm đường kính rõ rệt của động mạch cung cấp máu cho một vùng não, có thể là động mạch bị hẹp trước đó hoặc động mạch bình thường (tức là động mạch chủ, thân trên động mạch chủ hoặc động mạch nội sọ).'
+
+MERGE (o1:disease {id: 'thiếu_máu_cục_bộ_não_disease'})
+MERGE (o2:organ {id: 'động_mạch_chủ_organ'})
+MERGE (o1)-[r52:relatedTo]->(o2)
+SET r52.text = 'Thiếu máu cục bộ não theo nghĩa rộng có thể là cục bộ hoặc nhiều ổ, gây ra bởi sự bít đột ngột hoặc giảm đường kính rõ rệt của động mạch cung cấp máu cho một vùng não, có thể là động mạch bị hẹp trước đó hoặc động mạch bình thường (tức là động mạch chủ, thân trên động mạch chủ hoặc động mạch nội sọ).'
+
+MERGE (o1:disease {id: 'thiếu_máu_cục_bộ_não_disease'})
+MERGE (o2:organ {id: 'thân_trên_động_mạch_chủ_organ'})
+MERGE (o1)-[r53:relatedTo]->(o2)
+SET r53.text = 'Thiếu máu cục bộ não theo nghĩa rộng có thể là cục bộ hoặc nhiều ổ, gây ra bởi sự bít đột ngột hoặc giảm đường kính rõ rệt của động mạch cung cấp máu cho một vùng não, có thể là động mạch bị hẹp trước đó hoặc động mạch bình thường (tức là động mạch chủ, thân trên động mạch chủ hoặc động mạch nội sọ).'
+
+MERGE (o1:disease {id: 'thiếu_máu_cục_bộ_não_disease'})
+MERGE (o2:organ {id: 'động_mạch_nội_sọ_organ'})
+MERGE (o1)-[r54:relatedTo]->(o2)
+SET r54.text = 'Thiếu máu cục bộ não theo nghĩa rộng có thể là cục bộ hoặc nhiều ổ, gây ra bởi sự bít đột ngột hoặc giảm đường kính rõ rệt của động mạch cung cấp máu cho một vùng não, có thể là động mạch bị hẹp trước đó hoặc động mạch bình thường (tức là động mạch chủ, thân trên động mạch chủ hoặc động mạch nội sọ).'
+
+MERGE (o1:disease {id: 'thiếu_máu_cục_bộ_não_disease'})
+MERGE (o2:cause {id: 'thiếu_nguồn_cung_cấp_máu_não_toàn_bộ_cause'})
+MERGE (o1)-[r55:causedBy]->(o2)
+SET r55.text = 'Thiếu máu cục bộ não thường có thể được kích hoạt do thiếu nguồn cung cấp máu não toàn bộ, nguyên nhân gần hơn là rối loạn chức năng huyết động gây ra tụt huyết áp đột ngột.'
+
+MERGE (o1:disease {id: 'thiếu_máu_cục_bộ_não_disease'})
+MERGE (o2:cause {id: 'rối_loạn_chức_năng_huyết_động_cause'})
+MERGE (o1)-[r56:causedBy]->(o2)
+SET r56.text = 'Thiếu máu cục bộ não thường có thể được kích hoạt do thiếu nguồn cung cấp máu não toàn bộ, nguyên nhân gần hơn là rối loạn chức năng huyết động gây ra tụt huyết áp đột ngột.'
+
+MERGE (o1:disease {id: 'thiếu_máu_cục_bộ_não_disease'})
+MERGE (o2:cause {id: 'tụt_huyết_áp_đột_ngột_cause'})
+MERGE (o1)-[r57:causedBy]->(o2)
+SET r57.text = 'Thiếu máu cục bộ não thường có thể được kích hoạt do thiếu nguồn cung cấp máu não toàn bộ, nguyên nhân gần hơn là rối loạn chức năng huyết động gây ra tụt huyết áp đột ngột.'
+
+MERGE (o1:disease {id: 'mô_não_thiếu_máu_cục_bộ_disease'})
+MERGE (o2:symptom {id: 'ngừng_hoạt_động_symptom'})
+MERGE (o1)-[r58:affects]->(o2)
+SET r58.text = 'Mô não thiếu máu cục bộ ngừng hoạt động trong vài giây và bị hoại tử ngay sau 5 phút sau khi thiếu hoàn toàn oxy và glucose, so với 20-40 phút ở các bộ phận khác của cơ thể.'
+
+MERGE (o1:disease {id: 'mô_não_thiếu_máu_cục_bộ_disease'})
+MERGE (o2:cause {id: 'thiếu_hoàn_toàn_oxy_và_glucose_cause'})
+MERGE (o1)-[r59:causedBy]->(o2)
+SET r59.text = 'Mô não thiếu máu cục bộ ngừng hoạt động trong vài giây và bị hoại tử ngay sau 5 phút sau khi thiếu hoàn toàn oxy và glucose, so với 20-40 phút ở các bộ phận khác của cơ thể.'
+
+MERGE (o1:disease {id: 'thiếu_máu_cục_bộ_disease'})
+MERGE (o2:cause {id: 'tổn_thương_chọn_lọc_cause'})
+MERGE (o1)-[r60:relatedTo]->(o2)
+SET r60.text = 'Một số khu vực đặc biệt dễ bị thiếu máu cục bộ, một hiện tượng được gọi là tổn thương chọn lọc.'
+
+MERGE (o1:disease {id: 'đột_quỵ_disease'})
+MERGE (o2:disease {id: 'bệnh_mạch_máu_disease'})
+MERGE (o1)-[r61:relatedTo]->(o2)
+SET r61.text = 'Đột quỵ là một trong những bệnh mạch máu phổ biến nhất trên thế giới và liên tục được xếp hạng là nguyên nhân gây tử vong đứng hàng thứ 5 tại Hoa Kỳ.'
+
+MERGE (o1:disease {id: 'đột_quỵ_disease'})
+MERGE (o2:symptom {id: 'tử_vong_symptom'})
+MERGE (o1)-[r62:causedBy]->(o2)
+SET r62.text = 'Đột quỵ là một trong những bệnh mạch máu phổ biến nhất trên thế giới và liên tục được xếp hạng là nguyên nhân gây tử vong đứng hàng thứ 5 tại Hoa Kỳ.'
+
+MERGE (o1:disease {id: 'đột_quỵ_disease'})
+MERGE (o2:disease {id: 'bệnh_tim_disease'})
+MERGE (o1)-[r63:relatedTo]->(o2)
+SET r63.text = 'Báo cáo AHA năm 2019 về số liệu thống kê về bệnh tim và đột quỵ ước tính rằng 20 triệu người Mỹ trên 20 tuổi đã bị đột quỵ.'
+
+MERGE (o1:disease {id: 'đột_quỵ_disease'})
+MERGE (o2:cause {id: 'người_mỹ_trên_20_tuổi_cause'})
+MERGE (o1)-[r64:affectedBy]->(o2)
+SET r64.text = 'Báo cáo AHA năm 2019 về số liệu thống kê về bệnh tim và đột quỵ ước tính rằng 20 triệu người Mỹ trên 20 tuổi đã bị đột quỵ.'
+
+MERGE (o1:disease {id: 'đột_quỵ_disease'})
+MERGE (o2:cause {id: 'người_cause'})
+MERGE (o1)-[r65:affectedBy]->(o2)
+SET r65.text = 'Khoảng 795.000 người bị đột quỵ mỗi năm.'
+
+MERGE (o1:disease {id: 'đột_quỵ_disease'})
+MERGE (o2:cause {id: 'độ_tuổi_cause'})
+MERGE (o1)-[r66:affectedBy]->(o2)
+SET r66.text = 'Tỷ lệ đột quỵ tăng theo độ tuổi, với gần 75% trường hợp ảnh hưởng đến những người trên 65 tuổi.'
+
+MERGE (o1:disease {id: 'đột_quỵ_disease'})
+MERGE (o2:cause {id: 'người_trên_65_tuổi_cause'})
+MERGE (o1)-[r67:affectedBy]->(o2)
+SET r67.text = 'Tỷ lệ đột quỵ tăng theo độ tuổi, với gần 75% trường hợp ảnh hưởng đến những người trên 65 tuổi.'
+
+MERGE (o1:disease {id: 'đột_quỵ_disease'})
+MERGE (o2:cause {id: 'người_mỹ_gốc_phi_cause'})
+MERGE (o1)-[r68:affectedBy]->(o2)
+SET r68.text = 'Tỷ lệ đột quỵ ở người Mỹ gốc Phi và người gốc Tây Ban Nha cao hơn người da trắng.'
+
+MERGE (o1:disease {id: 'đột_quỵ_disease'})
+MERGE (o2:cause {id: 'người_gốc_tây_ban_nha_cause'})
+MERGE (o1)-[r69:affectedBy]->(o2)
+SET r69.text = 'Tỷ lệ đột quỵ ở người Mỹ gốc Phi và người gốc Tây Ban Nha cao hơn người da trắng.'
+
+MERGE (o1:disease {id: 'đột_quỵ_disease'})
+MERGE (o2:cause {id: 'người_da_trắng_cause'})
+MERGE (o1)-[r70:affectedBy]->(o2)
+SET r70.text = 'Tỷ lệ đột quỵ ở người Mỹ gốc Phi và người gốc Tây Ban Nha cao hơn người da trắng.'
+
+MERGE (o1:disease {id: 'đột_quỵ_disease'})
+MERGE (o2:cause {id: 'nam_cause'})
+MERGE (o1)-[r71:affectedBy]->(o2)
+SET r71.text = 'Tỷ lệ đột quỵ gần như giống nhau ở cả nam và nữ, trong đó nữ chiếm ưu thế hơn một chút do tỷ lệ này giảm ở nam trong 15 năm qua.'
+
+MERGE (o1:disease {id: 'đột_quỵ_disease'})
+MERGE (o2:cause {id: 'nữ_cause'})
+MERGE (o1)-[r72:affectedBy]->(o2)
+SET r72.text = 'Tỷ lệ đột quỵ gần như giống nhau ở cả nam và nữ, trong đó nữ chiếm ưu thế hơn một chút do tỷ lệ này giảm ở nam trong 15 năm qua.'
+
+MERGE (o1:disease {id: 'đột_quỵ_disease'})
+MERGE (o2:cause {id: 'tổn_thương_thần_kinh_cause'})
+MERGE (o1)-[r73:causedBy]->(o2)
+SET r73.text = 'Đột quỵ là một thuật ngữ rộng bao gồm tổn thương thần kinh do bất kỳ nguyên nhân mạch máu nào.'
+
+MERGE (o1:disease {id: 'đột_quỵ_disease'})
+MERGE (o2:cause {id: 'nguyên_nhân_mạch_máu_cause'})
+MERGE (o1)-[r74:causedBy]->(o2)
+SET r74.text = 'Đột quỵ là một thuật ngữ rộng bao gồm tổn thương thần kinh do bất kỳ nguyên nhân mạch máu nào.'
+
+MERGE (o1:disease {id: 'đột_quỵ_do_thiếu_máu_cục_bộ_disease'})
+MERGE (o2:disease {id: 'đột_quỵ_disease'})
+MERGE (o1)-[r75:relatedTo]->(o2)
+SET r75.text = 'Đột quỵ do thiếu máu cục bộ là loại phổ biến nhất, chiếm 87% tổng số ca đột quỵ.'
+
+MERGE (o1:disease {id: 'thiếu_máu_não_disease'})
+MERGE (o2:cause {id: '3_nhóm_nguyên_nhân_cause'})
+MERGE (o1)-[r76:causedBy]->(o2)
+SET r76.text = 'Có 3 nhóm nguyên nhân thiếu máu não chủ yếu bao gồm:'
+
+MERGE (o1:disease {id: 'thiếu_máu_lên_não_do_huyết_khối_disease'})
+MERGE (o2:cause {id: 'hình_thành_cục_máu_đông_ở_các_nhóm_động_mạch_lớn_cause'})
+MERGE (o1)-[r77:causedBy]->(o2)
+SET r77.text = 'Thiếu máu lên não do huyết khối: Đây là tình trạng hình thành cục máu đông ở các nhóm động mạch lớn (động mạch não giữa, động mạch đốt sống, động mạch cảnh trong,…). Việc hình thành cục máu đông này chủ yếu do hiện tượng xơ vữa động mạch gây ra.'
+
+MERGE (o1:cause {id: 'hình_thành_cục_máu_đông_cause'})
+MERGE (o2:cause {id: 'xơ_vữa_động_mạch_cause'})
+MERGE (o1)-[r78:causedBy]->(o2)
+SET r78.text = 'Thiếu máu lên não do huyết khối: Đây là tình trạng hình thành cục máu đông ở các nhóm động mạch lớn (động mạch não giữa, động mạch đốt sống, động mạch cảnh trong,…). Việc hình thành cục máu đông này chủ yếu do hiện tượng xơ vữa động mạch gây ra.'
+
+MERGE (o1:disease {id: 'thiếu_máu_lên_não_do_thuyên_tắc_disease'})
+MERGE (o2:cause {id: 'các_cục_máu_động_được_hình_thành_từ_vị_trí_khác_đã_di_chuyển_đến_não_gây_tắc_mạch_cause'})
+MERGE (o1)-[r79:causedBy]->(o2)
+SET r79.text = 'Thiếu máu lên não do thuyên tắc: Các cục máu động được hình thành từ vị trí khác đã di chuyển đến não gây tắc mạch. Thuyên tắc có nguồn gốc từ các bệnh lý về tim mạch như: nhồi máu cơ tim, bệnh về van tim, rung nhĩ,…'
+
+MERGE (o1:cause {id: 'thuyên_tắc_cause'})
+MERGE (o2:disease {id: 'các_bệnh_lý_về_tim_mạch_disease'})
+MERGE (o1)-[r80:causedBy]->(o2)
+SET r80.text = 'Thiếu máu lên não do thuyên tắc: Các cục máu động được hình thành từ vị trí khác đã di chuyển đến não gây tắc mạch. Thuyên tắc có nguồn gốc từ các bệnh lý về tim mạch như: nhồi máu cơ tim, bệnh về van tim, rung nhĩ,…'
+
+MERGE (o1:cause {id: 'thuyên_tắc_cause'})
+MERGE (o2:disease {id: 'nhồi_máu_cơ_tim_disease'})
+MERGE (o1)-[r81:relatedTo]->(o2)
+SET r81.text = 'Thiếu máu lên não do thuyên tắc: Các cục máu động được hình thành từ vị trí khác đã di chuyển đến não gây tắc mạch. Thuyên tắc có nguồn gốc từ các bệnh lý về tim mạch như: nhồi máu cơ tim, bệnh về van tim, rung nhĩ,…'
+
+MERGE (o1:cause {id: 'thuyên_tắc_cause'})
+MERGE (o2:disease {id: 'bệnh_về_van_tim_disease'})
+MERGE (o1)-[r82:relatedTo]->(o2)
+SET r82.text = 'Thiếu máu lên não do thuyên tắc: Các cục máu động được hình thành từ vị trí khác đã di chuyển đến não gây tắc mạch. Thuyên tắc có nguồn gốc từ các bệnh lý về tim mạch như: nhồi máu cơ tim, bệnh về van tim, rung nhĩ,…'
+
+MERGE (o1:cause {id: 'thuyên_tắc_cause'})
+MERGE (o2:disease {id: 'rung_nhĩ_disease'})
+MERGE (o1)-[r83:relatedTo]->(o2)
+SET r83.text = 'Thiếu máu lên não do thuyên tắc: Các cục máu động được hình thành từ vị trí khác đã di chuyển đến não gây tắc mạch. Thuyên tắc có nguồn gốc từ các bệnh lý về tim mạch như: nhồi máu cơ tim, bệnh về van tim, rung nhĩ,…'
+
+MERGE (o1:disease {id: 'thiếu_máu_lên_não_huyết_động_disease'})
+MERGE (o2:cause {id: 'những_bệnh_lý_ảnh_hưởng_đến_quá_trình_luân_chuyển_của_máu_cause'})
+MERGE (o1)-[r84:causedBy]->(o2)
+SET r84.text = 'Thiếu máu lên não huyết động: Những bệnh lý ảnh hưởng đến quá trình luân chuyển của máu: rối loạn đông máu, hạ huyết áp,…'
+
+MERGE (o1:disease {id: 'thiếu_máu_lên_não_huyết_động_disease'})
+MERGE (o2:disease {id: 'rối_loạn_đông_máu_disease'})
+MERGE (o1)-[r85:relatedTo]->(o2)
+SET r85.text = 'Thiếu máu lên não huyết động: Những bệnh lý ảnh hưởng đến quá trình luân chuyển của máu: rối loạn đông máu, hạ huyết áp,…'
+
+MERGE (o1:disease {id: 'thiếu_máu_lên_não_huyết_động_disease'})
+MERGE (o2:disease {id: 'hạ_huyết_áp_disease'})
+MERGE (o1)-[r86:relatedTo]->(o2)
+SET r86.text = 'Thiếu máu lên não huyết động: Những bệnh lý ảnh hưởng đến quá trình luân chuyển của máu: rối loạn đông máu, hạ huyết áp,…'
+
+MERGE (o1:disease {id: 'thiếu_máu_lên_não_disease'})
+MERGE (o2:lifestyle {id: 'thói_quen_sống_không_lành_mạnh_lifestyle'})
+MERGE (o1)-[r87:causedBy]->(o2)
+SET r87.text = 'Ngoài những nguyên nhân từ các bệnh lý nêu trên, nguyên nhân dẫn đến bệnh thiếu máu lên não có thể xuất phát từ thói quen sống không lành mạnh:'
+
+MERGE (o1:lifestyle {id: 'lạm_dụng_thuốc_lá__rượu_bia__chất_kích_thích_lifestyle'})
+MERGE (o2:disease {id: 'thiếu_máu_lên_não_disease'})
+MERGE (o1)-[r88:causedBy]->(o2)
+SET r88.text = 'Lạm dụng thuốc lá, rượu bia, chất kích thích,…'
+
+MERGE (o1:lifestyle {id: 'ít_vận_động__lười_tập_thể_dục_lifestyle'})
+MERGE (o2:disease {id: 'thiếu_máu_lên_não_disease'})
+MERGE (o1)-[r89:causedBy]->(o2)
+SET r89.text = 'Ít vận động, lười tập thể dục.'
+
+MERGE (o1:lifestyle {id: 'thường_xuyên_ăn_uống_thực_phẩm_nhiều_dầu_mỡ__chất_béo__ít_chất_xơ_lifestyle'})
+MERGE (o2:disease {id: 'thiếu_máu_lên_não_disease'})
+MERGE (o1)-[r90:causedBy]->(o2)
+SET r90.text = 'Thường xuyên ăn uống thực phẩm nhiều dầu mỡ, chất béo, ít chất xơ.'
+
+MERGE (o1:lifestyle {id: 'thói_quen_gối_đầu_quá_cao_khi_ngủ_lifestyle'})
+MERGE (o2:disease {id: 'thiếu_máu_lên_não_disease'})
+MERGE (o1)-[r91:causedBy]->(o2)
+SET r91.text = 'Thói quen gối đầu quá cao khi ngủ gây cản trở quá trình vận chuyển máu lên não.'
+
+MERGE (o1:lifestyle {id: 'căng_thẳng_kéo_dài__làm_việc_trên_máy_tính_quá_lâu_lifestyle'})
+MERGE (o2:disease {id: 'thiếu_máu_lên_não_disease'})
+MERGE (o1)-[r92:causedBy]->(o2)
+SET r92.text = 'Căng thẳng kéo dài, làm việc trên máy tính quá lâu.'
+
+MERGE (o1:disease {id: 'thiếu_máu_não_disease'})
+MERGE (o2:lifestyle {id: 'người_cao_tuổi_lifestyle'})
+MERGE (o1)-[r93:isSymptomOf]->(o2)
+SET r93.text = 'Triệu chứng thiếu máu não thường gặp ở đối tượng người cao tuổi, người mắc nhiều bệnh lý mãn tính: tim mạch, tiểu đường, huyết áp,… tuy nhiên, đối tượng bị thiếu máu não ngày càng trẻ hóa.'
+
+MERGE (o1:disease {id: 'thiếu_máu_não_disease'})
+MERGE (o2:lifestyle {id: 'người_mắc_nhiều_bệnh_lý_mãn_tính_lifestyle'})
+MERGE (o1)-[r94:isSymptomOf]->(o2)
+SET r94.text = 'Triệu chứng thiếu máu não thường gặp ở đối tượng người cao tuổi, người mắc nhiều bệnh lý mãn tính: tim mạch, tiểu đường, huyết áp,… tuy nhiên, đối tượng bị thiếu máu não ngày càng trẻ hóa.'
+
+MERGE (o1:disease {id: 'thiếu_máu_não_disease'})
+MERGE (o2:disease {id: 'tim_mạch_disease'})
+MERGE (o1)-[r95:relatedTo]->(o2)
+SET r95.text = 'Triệu chứng thiếu máu não thường gặp ở đối tượng người cao tuổi, người mắc nhiều bệnh lý mãn tính: tim mạch, tiểu đường, huyết áp,… tuy nhiên, đối tượng bị thiếu máu não ngày càng trẻ hóa.'
+
+MERGE (o1:disease {id: 'thiếu_máu_não_disease'})
+MERGE (o2:disease {id: 'tiểu_đường_disease'})
+MERGE (o1)-[r96:relatedTo]->(o2)
+SET r96.text = 'Triệu chứng thiếu máu não thường gặp ở đối tượng người cao tuổi, người mắc nhiều bệnh lý mãn tính: tim mạch, tiểu đường, huyết áp,… tuy nhiên, đối tượng bị thiếu máu não ngày càng trẻ hóa.'
+
+MERGE (o1:disease {id: 'thiếu_máu_não_disease'})
+MERGE (o2:disease {id: 'huyết_áp_disease'})
+MERGE (o1)-[r97:relatedTo]->(o2)
+SET r97.text = 'Triệu chứng thiếu máu não thường gặp ở đối tượng người cao tuổi, người mắc nhiều bệnh lý mãn tính: tim mạch, tiểu đường, huyết áp,… tuy nhiên, đối tượng bị thiếu máu não ngày càng trẻ hóa.'
+
+MERGE (o1:disease {id: 'thiếu_máu_lên_não_disease'})
+MERGE (o2:lifestyle {id: 'nhân_viên_văn_phòng_lifestyle'})
+MERGE (o1)-[r98:isSymptomOf]->(o2)
+SET r98.text = 'Cụ thể, đối tượng là người trẻ là nhân viên văn phòng, quản lý cấp cao, phụ nữ nội trợ,… với tính chất công việc có cường độ căng thẳng cao cũng rất dễ mắc phải chứng thiếu máu lên não.'
+
+MERGE (o1:disease {id: 'thiếu_máu_lên_não_disease'})
+MERGE (o2:lifestyle {id: 'quản_lý_cấp_cao_lifestyle'})
+MERGE (o1)-[r99:isSymptomOf]->(o2)
+SET r99.text = 'Cụ thể, đối tượng là người trẻ là nhân viên văn phòng, quản lý cấp cao, phụ nữ nội trợ,… với tính chất công việc có cường độ căng thẳng cao cũng rất dễ mắc phải chứng thiếu máu lên não.'
+
+MERGE (o1:disease {id: 'thiếu_máu_lên_não_disease'})
+MERGE (o2:lifestyle {id: 'phụ_nữ_nội_trợ_lifestyle'})
+MERGE (o1)-[r100:isSymptomOf]->(o2)
+SET r100.text = 'Cụ thể, đối tượng là người trẻ là nhân viên văn phòng, quản lý cấp cao, phụ nữ nội trợ,… với tính chất công việc có cường độ căng thẳng cao cũng rất dễ mắc phải chứng thiếu máu lên não.'
+
+MERGE (o1:disease {id: 'thiếu_máu_lên_não_disease'})
+MERGE (o2:lifestyle {id: 'lối_sống_thụ_động_lifestyle'})
+MERGE (o1)-[r101:isSymptomOf]->(o2)
+SET r101.text = 'Ngoài ra, người có lối sống thụ động, sống trong điều kiện môi trường ô nhiễm, chế độ ăn uống không đa dạng lành mạnh,… cũng là đối tượng dễ mắc phải bệnh lý này.'
+
+MERGE (o1:disease {id: 'thiếu_máu_lên_não_disease'})
+MERGE (o2:lifestyle {id: 'sống_trong_điều_kiện_môi_trường_ô_nhiễm_lifestyle'})
+MERGE (o1)-[r102:isSymptomOf]->(o2)
+SET r102.text = 'Ngoài ra, người có lối sống thụ động, sống trong điều kiện môi trường ô nhiễm, chế độ ăn uống không đa dạng lành mạnh,… cũng là đối tượng dễ mắc phải bệnh lý này.'
+
+MERGE (o1:disease {id: 'thiếu_máu_lên_não_disease'})
+MERGE (o2:lifestyle {id: 'chế_độ_ăn_uống_không_đa_dạng_lành_mạnh_lifestyle'})
+MERGE (o1)-[r103:isSymptomOf]->(o2)
+SET r103.text = 'Ngoài ra, người có lối sống thụ động, sống trong điều kiện môi trường ô nhiễm, chế độ ăn uống không đa dạng lành mạnh,… cũng là đối tượng dễ mắc phải bệnh lý này.'
+
+MERGE (o1:disease {id: 'thiếu_máu_não_disease'})
+MERGE (o2:disease {id: 'ung_thư_disease'})
+MERGE (o1)-[r104:causedBy]->(o2)
+SET r104.text = 'Theo WHO, thiếu máu não là nguyên nhân dẫn đến tử vong cao thứ 3 xếp sau ung thư và bệnh tim mạch.'
+
+MERGE (o1:disease {id: 'thiếu_máu_não_disease'})
+MERGE (o2:disease {id: 'bệnh_tim_mạch_disease'})
+MERGE (o1)-[r105:causedBy]->(o2)
+SET r105.text = 'Theo WHO, thiếu máu não là nguyên nhân dẫn đến tử vong cao thứ 3 xếp sau ung thư và bệnh tim mạch.'
+
+MERGE (o1:symptom {id: 'thiếu_oxy_lên_não_symptom'})
+MERGE (o2:disease {id: 'thiếu_máu_lên_não_disease'})
+MERGE (o1)-[r106:isSymptomOf]->(o2)
+SET r106.text = 'Não bộ cần tiêu thụ đến 20% dưỡng khí từ cơ thể, vì vậy tình trạng thiếu oxy lên não thuộc tình trạng rất nguy hiểm.'
+
+MERGE (o1:symptom {id: 'tế_bào_thần_kinh_chết_dần_symptom'})
+MERGE (o2:disease {id: 'thiếu_máu_lên_não_disease'})
+MERGE (o1)-[r107:isSymptomOf]->(o2)
+SET r107.text = 'Chỉ với 10 giây không nhận được lượng máu cần thiết các mô não sẽ rơi vào rối loạn, tình trạng này kéo dài vài phút sẽ khiến tế bào thần kinh chết dần.'
+
+MERGE (o1:disease {id: 'thiếu_máu_lên_não_disease'})
+MERGE (o2:disease {id: 'đột_quỵ_disease'})
+MERGE (o1)-[r108:causedBy]->(o2)
+SET r108.text = 'Thiếu máu lên não không chỉ gây ảnh hưởng cho hoạt động hàng ngày của người bệnh mà còn dẫn đến nguy cơ đột quỵ.'
+
+MERGE (o1:disease {id: 'đột_quỵ_disease'})
+MERGE (o2:symptom {id: 'tỷ_lệ_tử_vong_symptom'})
+MERGE (o1)-[r109:causedBy]->(o2)
+SET r109.text = 'Hàng năm tại Việt Nam có khoảng 200.000 trường hợp đột quỵ, trong đó tỷ lệ tử vong chiếm khoảng 50%.'
+
+MERGE (o1:disease {id: 'đột_quỵ_disease'})
+MERGE (o2:symptom {id: 'mất_giọng_symptom'})
+MERGE (o1)-[r110:isSymptomOf]->(o2)
+SET r110.text = 'Người bệnh may mắn sống sót sau đột quỵ phải sống chung với di chứng nghiêm trọng: mất giọng, suy giảm trí nhớ, liệt một bên hoặc toàn thân,…'
+
+MERGE (o1:disease {id: 'đột_quỵ_disease'})
+MERGE (o2:symptom {id: 'suy_giảm_trí_nhớ_symptom'})
+MERGE (o1)-[r111:isSymptomOf]->(o2)
+SET r111.text = 'Người bệnh may mắn sống sót sau đột quỵ phải sống chung với di chứng nghiêm trọng: mất giọng, suy giảm trí nhớ, liệt một bên hoặc toàn thân,…'
+
+MERGE (o1:disease {id: 'đột_quỵ_disease'})
+MERGE (o2:symptom {id: 'liệt_một_bên_hoặc_toàn_thân_symptom'})
+MERGE (o1)-[r112:isSymptomOf]->(o2)
+SET r112.text = 'Người bệnh may mắn sống sót sau đột quỵ phải sống chung với di chứng nghiêm trọng: mất giọng, suy giảm trí nhớ, liệt một bên hoặc toàn thân,…'
+
+MERGE (o1:disease {id: 'thiếu_máu_lên_não_disease'})
+MERGE (o2:cause {id: 'nguyên_nhân_cause'})
+MERGE (o1)-[r113:causedBy]->(o2)
+SET r113.text = 'Mức độ nguy hiểm của thiếu máu lên não được đánh giá dựa vào nguyên nhân, mức độ của bệnh và tình trạng sức khỏe tổng quát của người bệnh.'
+
+MERGE (o1:disease {id: 'thiếu_máu_lên_não_disease'})
+MERGE (o2:cause {id: 'mức_độ_của_bệnh_cause'})
+MERGE (o1)-[r114:causedBy]->(o2)
+SET r114.text = 'Mức độ nguy hiểm của thiếu máu lên não được đánh giá dựa vào nguyên nhân, mức độ của bệnh và tình trạng sức khỏe tổng quát của người bệnh.'
+
+MERGE (o1:disease {id: 'thiếu_máu_lên_não_disease'})
+MERGE (o2:cause {id: 'tình_trạng_sức_khỏe_tổng_quát_của_người_bệnh_cause'})
+MERGE (o1)-[r115:causedBy]->(o2)
+SET r115.text = 'Mức độ nguy hiểm của thiếu máu lên não được đánh giá dựa vào nguyên nhân, mức độ của bệnh và tình trạng sức khỏe tổng quát của người bệnh.'
+
+MERGE (o1:test {id: 'đường_huyết_test'})
+MERGE (o2:disease {id: 'thiếu_máu_não_disease'})
+MERGE (o1)-[r116:diagnosedBy]->(o2)
+SET r116.text = 'Đánh giá ban đầu của các triệu chứng gợi ý thiếu máu não nên bao gồm các xét nghiệm cơ bản, bao gồm đường huyết, công thức máu toàn phần, hóa học, các yếu tố đông máu, điện tâm đồ và men tim.'
+
+MERGE (o1:test {id: 'công_thức_máu_toàn_phần_test'})
+MERGE (o2:disease {id: 'thiếu_máu_não_disease'})
+MERGE (o1)-[r117:diagnosedBy]->(o2)
+SET r117.text = 'Đánh giá ban đầu của các triệu chứng gợi ý thiếu máu não nên bao gồm các xét nghiệm cơ bản, bao gồm đường huyết, công thức máu toàn phần, hóa học, các yếu tố đông máu, điện tâm đồ và men tim.'
+
+MERGE (o1:test {id: 'hóa_học_test'})
+MERGE (o2:disease {id: 'thiếu_máu_não_disease'})
+MERGE (o1)-[r118:diagnosedBy]->(o2)
+SET r118.text = 'Đánh giá ban đầu của các triệu chứng gợi ý thiếu máu não nên bao gồm các xét nghiệm cơ bản, bao gồm đường huyết, công thức máu toàn phần, hóa học, các yếu tố đông máu, điện tâm đồ và men tim.'
+
+MERGE (o1:test {id: 'các_yếu_tố_đông_máu_test'})
+MERGE (o2:disease {id: 'thiếu_máu_não_disease'})
+MERGE (o1)-[r119:diagnosedBy]->(o2)
+SET r119.text = 'Đánh giá ban đầu của các triệu chứng gợi ý thiếu máu não nên bao gồm các xét nghiệm cơ bản, bao gồm đường huyết, công thức máu toàn phần, hóa học, các yếu tố đông máu, điện tâm đồ và men tim.'
+
+MERGE (o1:test {id: 'điện_tâm_đồ_test'})
+MERGE (o2:disease {id: 'thiếu_máu_não_disease'})
+MERGE (o1)-[r120:diagnosedBy]->(o2)
+SET r120.text = 'Đánh giá ban đầu của các triệu chứng gợi ý thiếu máu não nên bao gồm các xét nghiệm cơ bản, bao gồm đường huyết, công thức máu toàn phần, hóa học, các yếu tố đông máu, điện tâm đồ và men tim.'
+
+MERGE (o1:test {id: 'men_tim_test'})
+MERGE (o2:disease {id: 'thiếu_máu_não_disease'})
+MERGE (o1)-[r121:diagnosedBy]->(o2)
+SET r121.text = 'Đánh giá ban đầu của các triệu chứng gợi ý thiếu máu não nên bao gồm các xét nghiệm cơ bản, bao gồm đường huyết, công thức máu toàn phần, hóa học, các yếu tố đông máu, điện tâm đồ và men tim.'
+
+MERGE (o1:test {id: 'ct_đầu_không_cản_quang_test'})
+MERGE (o2:disease {id: 'thiếu_máu_não_disease'})
+MERGE (o1)-[r122:diagnosedBy]->(o2)
+SET r122.text = 'Nên chụp CT đầu không cản quang để loại trừ xuất huyết hoặc tổn thương khối.'
+
+MERGE (o1:symptom {id: 'xuất_huyết_symptom'})
+MERGE (o2:disease {id: 'thiếu_máu_não_disease'})
+MERGE (o1)-[r123:isSymptomOf]->(o2)
+SET r123.text = 'Nên chụp CT đầu không cản quang để loại trừ xuất huyết hoặc tổn thương khối.'
+
+MERGE (o1:symptom {id: 'tổn_thương_khối_symptom'})
+MERGE (o2:disease {id: 'thiếu_máu_não_disease'})
+MERGE (o1)-[r124:isSymptomOf]->(o2)
+SET r124.text = 'Nên chụp CT đầu không cản quang để loại trừ xuất huyết hoặc tổn thương khối.'
+
+MERGE (o1:test {id: 'ct-angiogram_test'})
+MERGE (o2:disease {id: 'thiếu_máu_não_disease'})
+MERGE (o1)-[r125:diagnosedBy]->(o2)
+SET r125.text = 'Hình ảnh mạch máu, chẳng hạn như chụp CT-angiogram hoặc MR-angiogram, có thể rất có giá trị trong bối cảnh cấp tính.'
+
+MERGE (o1:test {id: 'mr-angiogram_test'})
+MERGE (o2:disease {id: 'thiếu_máu_não_disease'})
+MERGE (o1)-[r126:diagnosedBy]->(o2)
+SET r126.text = 'Hình ảnh mạch máu, chẳng hạn như chụp CT-angiogram hoặc MR-angiogram, có thể rất có giá trị trong bối cảnh cấp tính.'
+
+MERGE (o1:cause {id: 'xơ_vữa_động_mạch_lớn_cause'})
+MERGE (o2:disease {id: 'thiếu_máu_não_disease'})
+MERGE (o1)-[r127:causedBy]->(o2)
+SET r127.text = 'Hình ảnh mạch máu có thể giúp xác định nguyên nhân đột quỵ, đặc biệt trong trường hợp xơ vữa động mạch lớn; trong trường hợp tắc mạch máu lớn cấp tính, có thể thấy rõ vị trí tắc mạch máu.'
+
+MERGE (o1:cause {id: 'tắc_mạch_máu_lớn_cấp_tính_cause'})
+MERGE (o2:disease {id: 'thiếu_máu_não_disease'})
+MERGE (o1)-[r128:causedBy]->(o2)
+SET r128.text = 'Hình ảnh mạch máu có thể giúp xác định nguyên nhân đột quỵ, đặc biệt trong trường hợp xơ vữa động mạch lớn; trong trường hợp tắc mạch máu lớn cấp tính, có thể thấy rõ vị trí tắc mạch máu.'
+
+MERGE (o1:test {id: 'ct_đầu_không_cản_quang_test'})
+MERGE (o2:disease {id: 'thiếu_máu_não_cục_bộ_cấp_tính_disease'})
+MERGE (o1)-[r129:diagnosedBy]->(o2)
+SET r129.text = 'Thông thường trong bối cảnh đột quỵ thiếu máu cục bộ cấp tính, CT đầu không cản quang có thể không cho thấy bất thường rõ ràng nào, đặc biệt nếu bệnh nhân xuất hiện sớm trong quá trình bệnh.'
+
+MERGE (o1:test {id: 'tưới_máu_mri_test'})
+MERGE (o2:disease {id: 'thiếu_máu_não_cục_bộ_disease'})
+MERGE (o1)-[r130:diagnosedBy]->(o2)
+SET r130.text = 'Trong trường hợp này, tưới máu MRI hoặc CT có thể có giá trị để xác định khả năng tồn tại của mô thiếu máu cục bộ.'
+
+MERGE (o1:test {id: 'ct_test'})
+MERGE (o2:disease {id: 'thiếu_máu_não_cục_bộ_disease'})
+MERGE (o1)-[r131:diagnosedBy]->(o2)
+SET r131.text = 'Trong trường hợp này, tưới máu MRI hoặc CT có thể có giá trị để xác định khả năng tồn tại của mô thiếu máu cục bộ.'
+
+MERGE (o1:symptom {id: 'nhồi_máu_lõi_symptom'})
+MERGE (o2:disease {id: 'thiếu_máu_não_cục_bộ_cấp_tính_disease'})
+MERGE (o1)-[r132:isSymptomOf]->(o2)
+SET r132.text = 'Bởi vì số phận của mô thần kinh thiếu máu cục bộ phụ thuộc vào cả mức độ và thời gian thiếu máu cục bộ, bệnh nhân bị thiếu máu não cục bộ cấp tính thường có một vùng mô não bị nhồi máu (nhồi máu lõi) được bao quanh bởi một vùng não thiếu máu cục bộ lớn hơn mà có thể vẫn còn. khả thi.'
+
+MERGE (o1:symptom {id: 'thiếu_máu_cục_bộ_symptom'})
+MERGE (o2:disease {id: 'thiếu_máu_não_cục_bộ_cấp_tính_disease'})
+MERGE (o1)-[r133:isSymptomOf]->(o2)
+SET r133.text = 'Bởi vì số phận của mô thần kinh thiếu máu cục bộ phụ thuộc vào cả mức độ và thời gian thiếu máu cục bộ, bệnh nhân bị thiếu máu não cục bộ cấp tính thường có một vùng mô não bị nhồi máu (nhồi máu lõi) được bao quanh bởi một vùng não thiếu máu cục bộ lớn hơn mà có thể vẫn còn. khả thi.'
+
+MERGE (o1:symptom {id: 'vùng_tranh_sáng_tranh_tối_symptom'})
+MERGE (o2:disease {id: 'thiếu_máu_não_cục_bộ_disease'})
+MERGE (o1)-[r134:isSymptomOf]->(o2)
+SET r134.text = 'Khu vực có khả năng tồn tại này được gọi là vùng tranh sáng tranh tối.'
+
+MERGE (o1:test {id: 'chụp_ảnh_thần_kinh_test'})
+MERGE (o2:disease {id: 'thiếu_máu_não_cục_bộ_disease'})
+MERGE (o1)-[r135:diagnosedBy]->(o2)
+SET r135.text = 'Đã có nhiều nghiên cứu trong thập kỷ qua liên quan đến các phương thức chụp ảnh thần kinh để xác định thể tích vùng nửa tối do thiếu máu cục bộ.'
+
+MERGE (o1:disease {id: 'hạ_đường_huyết_disease'})
+MERGE (o2:disease {id: 'thiếu_máu_não_cục_bộ_disease'})
+MERGE (o1)-[r136:relatedTo]->(o2)
+SET r136.text = 'Chẩn đoán phân biệt đối với các triệu chứng giống như đột quỵ do thiếu máu cục bộ, bao gồm: hạ đường huyết, mất cân bằng điện giải như hạ natri máu, sử dụng ma túy, nhiễm trùng bao gồm viêm màng não, ngất do tim, TIA, viêm mạch, đau nửa đầu, khối u, xuất huyết não và co giật.'
+
+MERGE (o1:disease {id: 'mất_cân_bằng_điện_giải_disease'})
+MERGE (o2:disease {id: 'thiếu_máu_não_cục_bộ_disease'})
+MERGE (o1)-[r137:relatedTo]->(o2)
+SET r137.text = 'Chẩn đoán phân biệt đối với các triệu chứng giống như đột quỵ do thiếu máu cục bộ, bao gồm: hạ đường huyết, mất cân bằng điện giải như hạ natri máu, sử dụng ma túy, nhiễm trùng bao gồm viêm màng não, ngất do tim, TIA, viêm mạch, đau nửa đầu, khối u, xuất huyết não và co giật.'
+
+MERGE (o1:disease {id: 'hạ_natri_máu_disease'})
+MERGE (o2:disease {id: 'thiếu_máu_não_cục_bộ_disease'})
+MERGE (o1)-[r138:relatedTo]->(o2)
+SET r138.text = 'Chẩn đoán phân biệt đối với các triệu chứng giống như đột quỵ do thiếu máu cục bộ, bao gồm: hạ đường huyết, mất cân bằng điện giải như hạ natri máu, sử dụng ma túy, nhiễm trùng bao gồm viêm màng não, ngất do tim, TIA, viêm mạch, đau nửa đầu, khối u, xuất huyết não và co giật.'
+
+MERGE (o1:lifestyle {id: 'sử_dụng_ma_túy_lifestyle'})
+MERGE (o2:disease {id: 'thiếu_máu_não_cục_bộ_disease'})
+MERGE (o1)-[r139:aggravatedBy]->(o2)
+SET r139.text = 'Chẩn đoán phân biệt đối với các triệu chứng giống như đột quỵ do thiếu máu cục bộ, bao gồm: hạ đường huyết, mất cân bằng điện giải như hạ natri máu, sử dụng ma túy, nhiễm trùng bao gồm viêm màng não, ngất do tim, TIA, viêm mạch, đau nửa đầu, khối u, xuất huyết não và co giật.'
+
+MERGE (o1:disease {id: 'nhiễm_trùng_disease'})
+MERGE (o2:disease {id: 'thiếu_máu_não_cục_bộ_disease'})
+MERGE (o1)-[r140:relatedTo]->(o2)
+SET r140.text = 'Chẩn đoán phân biệt đối với các triệu chứng giống như đột quỵ do thiếu máu cục bộ, bao gồm: hạ đường huyết, mất cân bằng điện giải như hạ natri máu, sử dụng ma túy, nhiễm trùng bao gồm viêm màng não, ngất do tim, TIA, viêm mạch, đau nửa đầu, khối u, xuất huyết não và co giật.'
+
+MERGE (o1:disease {id: 'viêm_màng_não_disease'})
+MERGE (o2:disease {id: 'thiếu_máu_não_cục_bộ_disease'})
+MERGE (o1)-[r141:relatedTo]->(o2)
+SET r141.text = 'Chẩn đoán phân biệt đối với các triệu chứng giống như đột quỵ do thiếu máu cục bộ, bao gồm: hạ đường huyết, mất cân bằng điện giải như hạ natri máu, sử dụng ma túy, nhiễm trùng bao gồm viêm màng não, ngất do tim, TIA, viêm mạch, đau nửa đầu, khối u, xuất huyết não và co giật.'
+
+MERGE (o1:disease {id: 'ngất_do_tim_disease'})
+MERGE (o2:disease {id: 'thiếu_máu_não_cục_bộ_disease'})
+MERGE (o1)-[r142:relatedTo]->(o2)
+SET r142.text = 'Chẩn đoán phân biệt đối với các triệu chứng giống như đột quỵ do thiếu máu cục bộ, bao gồm: hạ đường huyết, mất cân bằng điện giải như hạ natri máu, sử dụng ma túy, nhiễm trùng bao gồm viêm màng não, ngất do tim, TIA, viêm mạch, đau nửa đầu, khối u, xuất huyết não và co giật.'
+
+MERGE (o1:disease {id: 'tia_disease'})
+MERGE (o2:disease {id: 'thiếu_máu_não_cục_bộ_disease'})
+MERGE (o1)-[r143:relatedTo]->(o2)
+SET r143.text = 'Chẩn đoán phân biệt đối với các triệu chứng giống như đột quỵ do thiếu máu cục bộ, bao gồm: hạ đường huyết, mất cân bằng điện giải như hạ natri máu, sử dụng ma túy, nhiễm trùng bao gồm viêm màng não, ngất do tim, TIA, viêm mạch, đau nửa đầu, khối u, xuất huyết não và co giật.'
+
+MERGE (o1:disease {id: 'viêm_mạch_disease'})
+MERGE (o2:disease {id: 'thiếu_máu_não_cục_bộ_disease'})
+MERGE (o1)-[r144:relatedTo]->(o2)
+SET r144.text = 'Chẩn đoán phân biệt đối với các triệu chứng giống như đột quỵ do thiếu máu cục bộ, bao gồm: hạ đường huyết, mất cân bằng điện giải như hạ natri máu, sử dụng ma túy, nhiễm trùng bao gồm viêm màng não, ngất do tim, TIA, viêm mạch, đau nửa đầu, khối u, xuất huyết não và co giật.'
+
+MERGE (o1:disease {id: 'đau_nửa_đầu_disease'})
+MERGE (o2:disease {id: 'thiếu_máu_não_cục_bộ_disease'})
+MERGE (o1)-[r145:relatedTo]->(o2)
+SET r145.text = 'Chẩn đoán phân biệt đối với các triệu chứng giống như đột quỵ do thiếu máu cục bộ, bao gồm: hạ đường huyết, mất cân bằng điện giải như hạ natri máu, sử dụng ma túy, nhiễm trùng bao gồm viêm màng não, ngất do tim, TIA, viêm mạch, đau nửa đầu, khối u, xuất huyết não và co giật.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:disease {id: 'thiếu_máu_não_cục_bộ_disease'})
+MERGE (o1)-[r146:relatedTo]->(o2)
+SET r146.text = 'Chẩn đoán phân biệt đối với các triệu chứng giống như đột quỵ do thiếu máu cục bộ, bao gồm: hạ đường huyết, mất cân bằng điện giải như hạ natri máu, sử dụng ma túy, nhiễm trùng bao gồm viêm màng não, ngất do tim, TIA, viêm mạch, đau nửa đầu, khối u, xuất huyết não và co giật.'
+
+MERGE (o1:disease {id: 'xuất_huyết_não_disease'})
+MERGE (o2:disease {id: 'thiếu_máu_não_cục_bộ_disease'})
+MERGE (o1)-[r147:relatedTo]->(o2)
+SET r147.text = 'Chẩn đoán phân biệt đối với các triệu chứng giống như đột quỵ do thiếu máu cục bộ, bao gồm: hạ đường huyết, mất cân bằng điện giải như hạ natri máu, sử dụng ma túy, nhiễm trùng bao gồm viêm màng não, ngất do tim, TIA, viêm mạch, đau nửa đầu, khối u, xuất huyết não và co giật.'
+
+MERGE (o1:symptom {id: 'co_giật_symptom'})
+MERGE (o2:disease {id: 'thiếu_máu_não_cục_bộ_disease'})
+MERGE (o1)-[r148:isSymptomOf]->(o2)
+SET r148.text = 'Chẩn đoán phân biệt đối với các triệu chứng giống như đột quỵ do thiếu máu cục bộ, bao gồm: hạ đường huyết, mất cân bằng điện giải như hạ natri máu, sử dụng ma túy, nhiễm trùng bao gồm viêm màng não, ngất do tim, TIA, viêm mạch, đau nửa đầu, khối u, xuất huyết não và co giật.'
+
+MERGE (o1:disease {id: 'thiếu_lên_máu_não_disease'})
+MERGE (o2:treatment {id: 'thăm_khám_trực_tiếp_với_bác_sĩ_treatment'})
+MERGE (o1)-[r149:diagnosedBy]->(o2)
+SET r149.text = 'Để có thể chẩn đoán tình trạng thiếu lên máu não chính xác, người bệnh cần đến cơ sở y tế để thăm khám trực tiếp với bác sĩ.'
+
+MERGE (o1:test {id: 'xét_nghiệm_lâm_sàng_test'})
+MERGE (o2:disease {id: 'thiếu_lên_máu_não_disease'})
+MERGE (o1)-[r150:diagnosedBy]->(o2)
+SET r150.text = 'Bác sẽ thăm khám và chỉ định người bệnh thực hiện một số xét nghiệm lâm sàng, dựa vào đó đưa ra chẩn đoán chính xác tình trạng bệnh.'
+
+MERGE (o1:test {id: 'xét_nghiệm_lâm_sàng_test'})
+MERGE (o2:disease {id: 'thiếu_máu_não_disease'})
+MERGE (o1)-[r151:diagnosedBy]->(o2)
+SET r151.text = 'Khi đến bệnh viện thăm khám, bác sĩ sẽ chỉ định người bệnh thực hiện các xét nghiệm lâm sàng để chẩn đoán bệnh thiếu máu não'
+
+MERGE (o1:disease {id: 'thiếu_máu_não_disease'})
+MERGE (o2:treatment {id: 'thăm_khám_tại_cơ_sở_y_tế_treatment'})
+MERGE (o1)-[r152:treatedBy]->(o2)
+SET r152.text = 'Để có thể điều trị bệnh thiếu máu não hiệu quả, người bệnh cần đến thăm khám tại cơ sở y tế sớm, ngay khi cảm thấy bản thân thường xuyên có dấu hiệu của bệnh.'
+
+MERGE (o1:treatment {id: 'thuốc_treatment'})
+MERGE (o2:disease {id: 'thiếu_máu_lên_não_disease'})
+MERGE (o1)-[r153:treatedBy]->(o2)
+SET r153.text = 'Một số loại thuốc điều trị hiện tượng thiếu máu lên não có tác dụng chủ yếu làm tăng lưu lượng máu dẫn lên não.'
+
+MERGE (o1:treatment {id: 'thuốc_treatment'})
+MERGE (o2:disease {id: 'thiếu_máu_lên_não_disease'})
+MERGE (o1)-[r154:treatedBy]->(o2)
+SET r154.text = 'Người bệnh cần tuân thủ theo phác đồ sử dụng thuốc điều trị từ bác sĩ và cần kiên trì để đạt hiệu quả tốt nhất.'
+
+MERGE (o1:lifestyle {id: 'lối_sống_lành_mạnh_lifestyle'})
+MERGE (o2:disease {id: 'thiếu_máu_não_disease'})
+MERGE (o1)-[r155:preventedBy]->(o2)
+SET r155.text = 'Kết hợp với phác đồ điều trị bằng thuốc từ bác sĩ, người bệnh cần duy trì lối sống lành mạnh, tránh xa các tác nhân gây nên triệu chứng thiếu máu não để đạt hiệu quả điều trị tốt nhất.'
+
+MERGE (o1:lifestyle {id: 'thông_tin_tiêu_cực_lifestyle'})
+MERGE (o2:disease {id: 'thiếu_máu_não_disease'})
+MERGE (o1)-[r156:aggravatedBy]->(o2)
+SET r156.text = 'Tránh xa các tác nhân tiêu cực gây căng thẳng: những thông tin tiêu cực, môi trường sống ô nhiễm (ô nhiễm không khí, tiếng ồn),…'
+
+MERGE (o1:lifestyle {id: 'môi_trường_sống_ô_nhiễm_lifestyle'})
+MERGE (o2:disease {id: 'thiếu_máu_não_disease'})
+MERGE (o1)-[r157:aggravatedBy]->(o2)
+SET r157.text = 'Tránh xa các tác nhân tiêu cực gây căng thẳng: những thông tin tiêu cực, môi trường sống ô nhiễm (ô nhiễm không khí, tiếng ồn),…'
+
+MERGE (o1:lifestyle {id: 'ô_nhiễm_không_khí_lifestyle'})
+MERGE (o2:disease {id: 'thiếu_máu_não_disease'})
+MERGE (o1)-[r158:aggravatedBy]->(o2)
+SET r158.text = 'Tránh xa các tác nhân tiêu cực gây căng thẳng: những thông tin tiêu cực, môi trường sống ô nhiễm (ô nhiễm không khí, tiếng ồn),…'
+
+MERGE (o1:lifestyle {id: 'tiếng_ồn_lifestyle'})
+MERGE (o2:disease {id: 'thiếu_máu_não_disease'})
+MERGE (o1)-[r159:aggravatedBy]->(o2)
+SET r159.text = 'Tránh xa các tác nhân tiêu cực gây căng thẳng: những thông tin tiêu cực, môi trường sống ô nhiễm (ô nhiễm không khí, tiếng ồn),…'
+
+MERGE (o1:lifestyle {id: 'gối_đầu_quá_cao_lifestyle'})
+MERGE (o2:disease {id: 'thiếu_máu_não_disease'})
+MERGE (o1)-[r160:aggravatedBy]->(o2)
+SET r160.text = 'Không gối đầu quá cao khi ngủ, ngủ đủ giấc, tránh xa các thực phẩm gây mất ngủ như: cà phê, trà,…'
+
+MERGE (o1:lifestyle {id: 'ngủ_đủ_giấc_lifestyle'})
+MERGE (o2:disease {id: 'thiếu_máu_não_disease'})
+MERGE (o1)-[r161:preventedBy]->(o2)
+SET r161.text = 'Không gối đầu quá cao khi ngủ, ngủ đủ giấc, tránh xa các thực phẩm gây mất ngủ như: cà phê, trà,…'
+
+MERGE (o1:food {id: 'cà_phê_food'})
+MERGE (o2:disease {id: 'thiếu_máu_não_disease'})
+MERGE (o1)-[r162:aggravatedBy]->(o2)
+SET r162.text = 'Không gối đầu quá cao khi ngủ, ngủ đủ giấc, tránh xa các thực phẩm gây mất ngủ như: cà phê, trà,…'
+
+MERGE (o1:food {id: 'trà_food'})
+MERGE (o2:disease {id: 'thiếu_máu_não_disease'})
+MERGE (o1)-[r163:aggravatedBy]->(o2)
+SET r163.text = 'Không gối đầu quá cao khi ngủ, ngủ đủ giấc, tránh xa các thực phẩm gây mất ngủ như: cà phê, trà,…'
+
+MERGE (o1:lifestyle {id: 'chất_kích_thích_lifestyle'})
+MERGE (o2:disease {id: 'thiếu_máu_não_disease'})
+MERGE (o1)-[r164:aggravatedBy]->(o2)
+SET r164.text = 'Không sử dụng chất kích thích, rượu bia.'
+
+MERGE (o1:food {id: 'rượu_bia_food'})
+MERGE (o2:disease {id: 'thiếu_máu_não_disease'})
+MERGE (o1)-[r165:aggravatedBy]->(o2)
+SET r165.text = 'Không sử dụng chất kích thích, rượu bia.'
+
+MERGE (o1:lifestyle {id: 'chế_độ_ăn_uống_đầy_đủ_chất_dinh_dưỡng_lifestyle'})
+MERGE (o2:disease {id: 'thiếu_máu_não_disease'})
+MERGE (o1)-[r166:preventedBy]->(o2)
+SET r166.text = 'Xây dựng và duy trì chế độ ăn uống đầy đủ chất dinh dưỡng cần thiết cho cơ thể: thực phẩm giàu omega 3, giàu polyphenols, giàu nitrat,… Hạn chế nạp vào cơ thể thực phẩm chế biến sẵn, thực phẩm nhiều dầu mỡ, chất bảo quản,…'
+
+MERGE (o1:food {id: 'thực_phẩm_giàu_omega_3_food'})
+MERGE (o2:disease {id: 'thiếu_máu_não_disease'})
+MERGE (o1)-[r167:preventedBy]->(o2)
+SET r167.text = 'Xây dựng và duy trì chế độ ăn uống đầy đủ chất dinh dưỡng cần thiết cho cơ thể: thực phẩm giàu omega 3, giàu polyphenols, giàu nitrat,… Hạn chế nạp vào cơ thể thực phẩm chế biến sẵn, thực phẩm nhiều dầu mỡ, chất bảo quản,…'
+
+MERGE (o1:food {id: 'thực_phẩm_giàu_polyphenols_food'})
+MERGE (o2:disease {id: 'thiếu_máu_não_disease'})
+MERGE (o1)-[r168:preventedBy]->(o2)
+SET r168.text = 'Xây dựng và duy trì chế độ ăn uống đầy đủ chất dinh dưỡng cần thiết cho cơ thể: thực phẩm giàu omega 3, giàu polyphenols, giàu nitrat,… Hạn chế nạp vào cơ thể thực phẩm chế biến sẵn, thực phẩm nhiều dầu mỡ, chất bảo quản,…'
+
+MERGE (o1:food {id: 'thực_phẩm_giàu_nitrat_food'})
+MERGE (o2:disease {id: 'thiếu_máu_não_disease'})
+MERGE (o1)-[r169:preventedBy]->(o2)
+SET r169.text = 'Xây dựng và duy trì chế độ ăn uống đầy đủ chất dinh dưỡng cần thiết cho cơ thể: thực phẩm giàu omega 3, giàu polyphenols, giàu nitrat,… Hạn chế nạp vào cơ thể thực phẩm chế biến sẵn, thực phẩm nhiều dầu mỡ, chất bảo quản,…'
+
+MERGE (o1:food {id: 'thực_phẩm_chế_biến_sẵn_food'})
+MERGE (o2:disease {id: 'thiếu_máu_não_disease'})
+MERGE (o1)-[r170:aggravatedBy]->(o2)
+SET r170.text = 'Xây dựng và duy trì chế độ ăn uống đầy đủ chất dinh dưỡng cần thiết cho cơ thể: thực phẩm giàu omega 3, giàu polyphenols, giàu nitrat,… Hạn chế nạp vào cơ thể thực phẩm chế biến sẵn, thực phẩm nhiều dầu mỡ, chất bảo quản,…'
+
+MERGE (o1:food {id: 'thực_phẩm_nhiều_dầu_mỡ_food'})
+MERGE (o2:disease {id: 'thiếu_máu_não_disease'})
+MERGE (o1)-[r171:aggravatedBy]->(o2)
+SET r171.text = 'Xây dựng và duy trì chế độ ăn uống đầy đủ chất dinh dưỡng cần thiết cho cơ thể: thực phẩm giàu omega 3, giàu polyphenols, giàu nitrat,… Hạn chế nạp vào cơ thể thực phẩm chế biến sẵn, thực phẩm nhiều dầu mỡ, chất bảo quản,…'
+
+MERGE (o1:food {id: 'chất_bảo_quản_food'})
+MERGE (o2:disease {id: 'thiếu_máu_não_disease'})
+MERGE (o1)-[r172:aggravatedBy]->(o2)
+SET r172.text = 'Xây dựng và duy trì chế độ ăn uống đầy đủ chất dinh dưỡng cần thiết cho cơ thể: thực phẩm giàu omega 3, giàu polyphenols, giàu nitrat,… Hạn chế nạp vào cơ thể thực phẩm chế biến sẵn, thực phẩm nhiều dầu mỡ, chất bảo quản,…'
+
+MERGE (o1:lifestyle {id: 'tập_thể_dục_lifestyle'})
+MERGE (o2:disease {id: 'thiếu_máu_não_disease'})
+MERGE (o1)-[r173:preventedBy]->(o2)
+SET r173.text = 'Thường xuyên tập thể dục rèn luyện sức bền cho cơ thể, người đã từng bệnh thiếu máu não cần duy trì vận động ít nhất 30 phút/ngày với cường độ tập vừa phải để phòng ngừa bệnh tái phát.'
+
+MERGE (o1:disease {id: 'thiếu_máu_não_disease'})
+MERGE (o2:symptom {id: 'các_dấu_hiệu_thiếu_máu_não_symptom'})
+MERGE (o1)-[r174:diagnosedBy]->(o2)
+SET r174.text = 'Người được chẩn đoán mắc các dấu hiệu thiếu máu não cần xây dựng cho mình chế độ ăn uống giàu dinh dưỡng.'
+
+MERGE (o1:disease {id: 'thiếu_máu_não_disease'})
+MERGE (o2:treatment {id: 'chế_độ_ăn_uống_giàu_dinh_dưỡng_treatment'})
+MERGE (o1)-[r175:treatedBy]->(o2)
+SET r175.text = 'Chế độ này cần có sự kết hợp giữa động vật lẫn thực vật, cụ thể người bệnh thiếu máu não cần đảm bảo nạp đủ các nhóm thực phẩm sau đây:'
+
+MERGE (o1:disease {id: 'thiếu_máu_não_disease'})
+MERGE (o2:treatment {id: 'chế_độ_dinh_dưỡng_phù_hợp_treatment'})
+MERGE (o1)-[r176:treatedBy]->(o2)
+SET r176.text = 'Người bệnh thiếu máu não cần xây dựng chế độ dinh dưỡng phù hợp, đặc biệt cần tránh xa thức ăn nhiều dầu mỡ, chất béo'
+
+MERGE (o1:food {id: 'thịt_bò_food'})
+MERGE (o2:disease {id: 'thiếu_máu_não_disease'})
+MERGE (o1)-[r177:relatedTo]->(o2)
+SET r177.text = 'Thịt bò: chứa nhiều sắt, giàu đạm, giàu vitamin nhóm B như B2, B6, B12 giúp cung cấp oxy cho các tế bào, thúc đẩy quá trình tái tạo hồng cầu trong cơ thể.'
+
+MERGE (o1:food {id: 'thịt_bò_food'})
+MERGE (o2:symptom {id: 'tái_tạo_hồng_cầu_symptom'})
+MERGE (o1)-[r178:relatedTo]->(o2)
+SET r178.text = 'Thịt bò: chứa nhiều sắt, giàu đạm, giàu vitamin nhóm B như B2, B6, B12 giúp cung cấp oxy cho các tế bào, thúc đẩy quá trình tái tạo hồng cầu trong cơ thể.'
+
+MERGE (o1:food {id: 'cá_hồi_food'})
+MERGE (o2:disease {id: 'thiếu_máu_não_disease'})
+MERGE (o1)-[r179:relatedTo]->(o2)
+SET r179.text = 'Cá hồi: đây là thực phẩm giàu sắt, đạm, axit béo không nó cùng các khoáng chất như: canxi, photpho, kẽm, vitamin A, D, B6, B12,… đặc biệt tốt cho hoạt động của não.'
+
+MERGE (o1:food {id: 'cá_hồi_food'})
+MERGE (o2:organ {id: 'hoạt_động_của_não_organ'})
+MERGE (o1)-[r180:relatedTo]->(o2)
+SET r180.text = 'Cá hồi: đây là thực phẩm giàu sắt, đạm, axit béo không nó cùng các khoáng chất như: canxi, photpho, kẽm, vitamin A, D, B6, B12,… đặc biệt tốt cho hoạt động của não.'
+
+MERGE (o1:food {id: 'các_loại_hải_sản_food'})
+MERGE (o2:disease {id: 'thiếu_máu_não_disease'})
+MERGE (o1)-[r181:relatedTo]->(o2)
+SET r181.text = 'Các loại hải sản: ngoài vitamin B12, sắt, kẽm hải sản còn chứa nhiều axit amin giúp thúc đẩy quá trình sản sinh hồng cầu, giảm căng thẳng, tăng cường sức đề kháng,… giúp quá trình lưu thông máu, cung cấp oxy cho não diễn ra thuận lợi hơn.'
+
+MERGE (o1:food {id: 'các_loại_hải_sản_food'})
+MERGE (o2:symptom {id: 'sản_sinh_hồng_cầu_symptom'})
+MERGE (o1)-[r182:relatedTo]->(o2)
+SET r182.text = 'Các loại hải sản: ngoài vitamin B12, sắt, kẽm hải sản còn chứa nhiều axit amin giúp thúc đẩy quá trình sản sinh hồng cầu, giảm căng thẳng, tăng cường sức đề kháng,… giúp quá trình lưu thông máu, cung cấp oxy cho não diễn ra thuận lợi hơn.'
+
+MERGE (o1:food {id: 'các_loại_hải_sản_food'})
+MERGE (o2:symptom {id: 'lưu_thông_máu_symptom'})
+MERGE (o1)-[r183:relatedTo]->(o2)
+SET r183.text = 'Các loại hải sản: ngoài vitamin B12, sắt, kẽm hải sản còn chứa nhiều axit amin giúp thúc đẩy quá trình sản sinh hồng cầu, giảm căng thẳng, tăng cường sức đề kháng,… giúp quá trình lưu thông máu, cung cấp oxy cho não diễn ra thuận lợi hơn.'
+
+MERGE (o1:food {id: 'lòng_đỏ_trứng_gà_food'})
+MERGE (o2:disease {id: 'thiếu_máu_não_disease'})
+MERGE (o1)-[r184:relatedTo]->(o2)
+SET r184.text = 'Lòng đỏ trứng gà: đây là thực phẩm giàu đạm, canxi, sắt, photpho, có giá sinh học cao.'
+
+MERGE (o1:food {id: 'lòng_đỏ_trứng_gà_food'})
+MERGE (o2:symptom {id: 'tạo_máu_symptom'})
+MERGE (o1)-[r185:relatedTo]->(o2)
+SET r185.text = 'Lòng đỏ trứng gà: đây là thực phẩm giàu đạm, canxi, sắt, photpho, có giá sinh học cao. Ngoài ra, trong lòng đỏ trứng gà còn chứa nhiều loại vitamin tham gia trong quá trình tạo máu của cơ thể.'
+
+MERGE (o1:food {id: 'cải_bó_xôi_food'})
+MERGE (o2:disease {id: 'thiếu_máu_não_disease'})
+MERGE (o1)-[r186:relatedTo]->(o2)
+SET r186.text = 'Cải bó xôi: đây là loại rau xanh giàu chất sắt, axit folic, vitamin B12.'
+
+MERGE (o1:food {id: 'bông_cải_xanh_food'})
+MERGE (o2:disease {id: 'thiếu_máu_não_disease'})
+MERGE (o1)-[r187:relatedTo]->(o2)
+SET r187.text = 'Bông cải xanh: chứa nhiều chất sắt, chất xơ, vitamin C, A, và nhiều magie.'
+
+MERGE (o1:food {id: 'cần_tây_food'})
+MERGE (o2:disease {id: 'thiếu_máu_não_disease'})
+MERGE (o1)-[r188:relatedTo]->(o2)
+SET r188.text = 'Cần tây: loại rau này rất giàu axit amin, kẽm, sắt, vitamin có tác động giúp tăng tuần hoàn máu.'
+
+MERGE (o1:food {id: 'cần_tây_food'})
+MERGE (o2:symptom {id: 'tuần_hoàn_máu_symptom'})
+MERGE (o1)-[r189:relatedTo]->(o2)
+SET r189.text = 'Cần tây: loại rau này rất giàu axit amin, kẽm, sắt, vitamin có tác động giúp tăng tuần hoàn máu.'
+
+MERGE (o1:food {id: 'bí_đỏ_food'})
+MERGE (o2:disease {id: 'thiếu_máu_não_disease'})
+MERGE (o1)-[r190:relatedTo]->(o2)
+SET r190.text = 'Bí đỏ: trong bí đỏ chứa rất nhiều canxi, protein, kẽm, sắt, carotene,…'
+
+MERGE (o1:food {id: 'củ_cà_rốt_food'})
+MERGE (o2:disease {id: 'thiếu_máu_não_disease'})
+MERGE (o1)-[r191:relatedTo]->(o2)
+SET r191.text = 'Củ cà rốt: cà rốt hay còn gọi là củ cải đỏ rất giàu các loại vitamin A, C, D, E, B, axit folic, kali, canxi, sắt, magie giúp cơ thể trao đổi chất và lưu thông máu tốt hơn.'
+
+MERGE (o1:food {id: 'củ_cà_rốt_food'})
+MERGE (o2:symptom {id: 'lưu_thông_máu_symptom'})
+MERGE (o1)-[r192:relatedTo]->(o2)
+SET r192.text = 'Củ cà rốt: cà rốt hay còn gọi là củ cải đỏ rất giàu các loại vitamin A, C, D, E, B, axit folic, kali, canxi, sắt, magie giúp cơ thể trao đổi chất và lưu thông máu tốt hơn.'
+
+MERGE (o1:food {id: 'quả_lựu_food'})
+MERGE (o2:disease {id: 'thiếu_máu_não_disease'})
+MERGE (o1)-[r193:relatedTo]->(o2)
+SET r193.text = 'Quả lựu: loại trái cây này rất giàu vitamin C, canxi, sắt,… đóng vai trò tăng hấp thu sắt, tham gia trong quá trình tạo máu của cơ thể.'
+
+MERGE (o1:food {id: 'quả_lựu_food'})
+MERGE (o2:symptom {id: 'tạo_máu_symptom'})
+MERGE (o1)-[r194:relatedTo]->(o2)
+SET r194.text = 'Quả lựu: loại trái cây này rất giàu vitamin C, canxi, sắt,… đóng vai trò tăng hấp thu sắt, tham gia trong quá trình tạo máu của cơ thể.'
+
+MERGE (o1:food {id: 'quả_mâm_xôi__quả_dâu_tây_food'})
+MERGE (o2:disease {id: 'thiếu_máu_não_disease'})
+MERGE (o1)-[r195:relatedTo]->(o2)
+SET r195.text = 'Quả mâm xôi, quả dâu tây: 2 loại quả này không chỉ giàu vitamin C mà còn chứa nhiều kẽm, carbohydrate, folate, chất chống oxy hóa hỗ trợ tăng khả năng hấp thu chất sắt và nâng cao sức khỏe cho hệ miễn dịch của cơ thể.'
+
+MERGE (o1:food {id: 'nho_khô_food'})
+MERGE (o2:disease {id: 'thiếu_máu_não_disease'})
+MERGE (o1)-[r196:relatedTo]->(o2)
+SET r196.text = 'Nho khô: giàu vitamin C và chất sắt hỗ trợ tăng cường khả năng hấp thu chất dinh dưỡng, từ đó làm tăng hemoglobin giúp tạo máu.'
+
+MERGE (o1:food {id: 'nho_khô_food'})
+MERGE (o2:symptom {id: 'tạo_máu_symptom'})
+MERGE (o1)-[r197:relatedTo]->(o2)
+SET r197.text = 'Nho khô: giàu vitamin C và chất sắt hỗ trợ tăng cường khả năng hấp thu chất dinh dưỡng, từ đó làm tăng hemoglobin giúp tạo máu.'
+
+MERGE (o1:food {id: 'quả_mận_food'})
+MERGE (o2:disease {id: 'thiếu_máu_não_disease'})
+MERGE (o1)-[r198:relatedTo]->(o2)
+SET r198.text = 'Quả mận: loại trái cây này chứa nhiều chất sắt, magie, chất xơ, vitamin A, E cao từ đó giúp cho cơ thể có thể loại bỏ các gốc tự do có hại, ngăn ngừa bệnh hiệu quả.'
+
+MERGE (o1:disease {id: 'thiếu_máu_não_disease'})
+MERGE (o2:symptom {id: 'những_cơn_đầu__buồn_nôn__tê_bì_chân_tay_hay_vùng_mặt_…_thoáng_qua_symptom'})
+MERGE (o1)-[r199:isSymptomOf]->(o2)
+SET r199.text = 'Triệu chứng thiếu máu não khi chưa tiến triển đến cấp độ nặng sẽ biểu hiện bằng: những cơn đầu, buồn nôn, tê bì chân tay hay vùng mặt,… thoáng qua.'
+
+MERGE (o1:disease {id: 'thiếu_máu_não_disease'})
+MERGE (o2:symptom {id: 'những_triệu_chứng_symptom'})
+MERGE (o1)-[r200:isSymptomOf]->(o2)
+SET r200.text = 'Đa phần những triệu chứng của bệnh thiếu máu não sẽ tự mất sau 10 đến 20 phút, người thân cần tìm hiểu những biện pháp xử lý để người bệnh không rơi vào trạng thái nguy hiểm.'
+
+MERGE (o1:symptom {id: 'các_triệu_chứng_symptom'})
+MERGE (o2:disease {id: 'thiếu_máu_não_disease'})
+MERGE (o1)-[r201:isSymptomOf]->(o2)
+SET r201.text = 'Khi xuất hiện các triệu chứng trên, mọi người có thể đặt người bệnh nằm trên mặt phẳng thông thoáng, đầu thấp, nới lỏng quần áo để máu có thể lưu thông đến não tốt hơn.'
+
+MERGE (o1:disease {id: 'thiếu_máu_não_disease'})
+MERGE (o2:treatment {id: 'bác_sĩ_thăm_khám_và_điều_trị_treatment'})
+MERGE (o1)-[r202:treatedBy]->(o2)
+SET r202.text = 'Ngay sau đó hãy nhanh chóng đưa người bệnh đến cơ sở y tế gần nhất để bác sĩ thăm khám và điều trị sớm nhất.'

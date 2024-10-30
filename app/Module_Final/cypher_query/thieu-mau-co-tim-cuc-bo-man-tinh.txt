@@ -1,0 +1,780 @@
+
+MERGE (o1:disease {id: 'bệnh_tim_thiếu_máu_cục_bộ_mạn_tính_disease'})
+MERGE (o2:symptom {id: 'tiến_triển_nặng_symptom'})
+MERGE (o1)-[r0:isSymptomOf]->(o2)
+SET r0.text = 'Bệnh tim thiếu máu cục bộ mạn tính khá phổ biến, có thể tiến triển nặng, đe dọa tính mạng người bệnh nếu không được phát hiện sớm và can thiệp điều trị kịp thời.'
+
+MERGE (o1:disease {id: 'bệnh_tim_thiếu_máu_cục_bộ_mạn_tính_disease'})
+MERGE (o2:symptom {id: 'đe_dọa_tính_mạng_người_bệnh_symptom'})
+MERGE (o1)-[r1:isSymptomOf]->(o2)
+SET r1.text = 'Bệnh tim thiếu máu cục bộ mạn tính khá phổ biến, có thể tiến triển nặng, đe dọa tính mạng người bệnh nếu không được phát hiện sớm và can thiệp điều trị kịp thời.'
+
+MERGE (o1:disease {id: 'bệnh_tim_thiếu_máu_cục_bộ_mạn_tính_disease'})
+MERGE (o2:treatment {id: 'phát_hiện_sớm_treatment'})
+MERGE (o1)-[r2:treatedBy]->(o2)
+SET r2.text = 'Bệnh tim thiếu máu cục bộ mạn tính khá phổ biến, có thể tiến triển nặng, đe dọa tính mạng người bệnh nếu không được phát hiện sớm và can thiệp điều trị kịp thời.'
+
+MERGE (o1:disease {id: 'bệnh_tim_thiếu_máu_cục_bộ_mạn_tính_disease'})
+MERGE (o2:treatment {id: 'can_thiệp_điều_trị_treatment'})
+MERGE (o1)-[r3:treatedBy]->(o2)
+SET r3.text = 'Bệnh tim thiếu máu cục bộ mạn tính khá phổ biến, có thể tiến triển nặng, đe dọa tính mạng người bệnh nếu không được phát hiện sớm và can thiệp điều trị kịp thời.'
+
+MERGE (o1:treatment {id: 'kiến_thức_về_bệnh_treatment'})
+MERGE (o2:treatment {id: 'kế_hoạch_điều_trị_treatment'})
+MERGE (o1)-[r4:treatedBy]->(o2)
+SET r4.text = 'Việc trang bị kiến thức về bệnh có ý nghĩa vô cùng quan trọng, giúp người bệnh có kế hoạch điều trị và chăm sóc sức khỏe hiệu quả.'
+
+MERGE (o1:treatment {id: 'kiến_thức_về_bệnh_treatment'})
+MERGE (o2:treatment {id: 'chăm_sóc_sức_khỏe_treatment'})
+MERGE (o1)-[r5:treatedBy]->(o2)
+SET r5.text = 'Việc trang bị kiến thức về bệnh có ý nghĩa vô cùng quan trọng, giúp người bệnh có kế hoạch điều trị và chăm sóc sức khỏe hiệu quả.'
+
+MERGE (o1:disease {id: 'bệnh_tim_thiếu_máu_cục_bộ_mạn_tính_disease'})
+MERGE (o2:disease {id: 'thiếu_máu_cơ_tim_cục_bộ_mạn_disease'})
+MERGE (o1)-[r6:relatedTo]->(o2)
+SET r6.text = 'Bệnh tim thiếu máu cục bộ mạn tính hay thiếu máu cơ tim cục bộ mạn là bệnh động mạch vành ổn định hay cơn đau thắt ngực ổn định.'
+
+MERGE (o1:disease {id: 'bệnh_tim_thiếu_máu_cục_bộ_mạn_tính_disease'})
+MERGE (o2:disease {id: 'bệnh_động_mạch_vành_ổn_định_disease'})
+MERGE (o1)-[r7:relatedTo]->(o2)
+SET r7.text = 'Bệnh tim thiếu máu cục bộ mạn tính hay thiếu máu cơ tim cục bộ mạn là bệnh động mạch vành ổn định hay cơn đau thắt ngực ổn định.'
+
+MERGE (o1:disease {id: 'bệnh_tim_thiếu_máu_cục_bộ_mạn_tính_disease'})
+MERGE (o2:symptom {id: 'cơn_đau_thắt_ngực_ổn_định_symptom'})
+MERGE (o1)-[r8:relatedTo]->(o2)
+SET r8.text = 'Bệnh tim thiếu máu cục bộ mạn tính hay thiếu máu cơ tim cục bộ mạn là bệnh động mạch vành ổn định hay cơn đau thắt ngực ổn định.'
+
+MERGE (o1:disease {id: 'bệnh_lý_disease'})
+MERGE (o2:symptom {id: 'gánh_nặng_bệnh_tật_symptom'})
+MERGE (o1)-[r9:isSymptomOf]->(o2)
+SET r9.text = 'Đây là bệnh lý thường gặp và có xu hướng ngày càng gia tăng ở các nước đang phát triển với gánh nặng bệnh tật và chi phí điều trị rất lớn.'
+
+MERGE (o1:disease {id: 'bệnh_lý_disease'})
+MERGE (o2:symptom {id: 'chi_phí_điều_trị_rất_lớn_symptom'})
+MERGE (o1)-[r10:isSymptomOf]->(o2)
+SET r10.text = 'Đây là bệnh lý thường gặp và có xu hướng ngày càng gia tăng ở các nước đang phát triển với gánh nặng bệnh tật và chi phí điều trị rất lớn.'
+
+MERGE (o1:disease {id: 'thiếu_máu_cơ_tim_disease'})
+MERGE (o2:disease {id: 'bệnh_động_mạch_vành_disease'})
+MERGE (o1)-[r11:relatedTo]->(o2)
+SET r11.text = 'Thiếu máu cơ tim (còn gọi là bệnh động mạch vành, bệnh mạch vành tim, bệnh suy vành) là tình trạng gây ra bởi động mạch vành bị hẹp làm hạn chế cung cấp máu, oxy và các chất dinh dưỡng nuôi tim, gây tổn thương một phần cơ tim.'
+
+MERGE (o1:disease {id: 'thiếu_máu_cơ_tim_disease'})
+MERGE (o2:disease {id: 'bệnh_mạch_vành_tim_disease'})
+MERGE (o1)-[r12:relatedTo]->(o2)
+SET r12.text = 'Thiếu máu cơ tim (còn gọi là bệnh động mạch vành, bệnh mạch vành tim, bệnh suy vành) là tình trạng gây ra bởi động mạch vành bị hẹp làm hạn chế cung cấp máu, oxy và các chất dinh dưỡng nuôi tim, gây tổn thương một phần cơ tim.'
+
+MERGE (o1:disease {id: 'thiếu_máu_cơ_tim_disease'})
+MERGE (o2:disease {id: 'bệnh_suy_vành_disease'})
+MERGE (o1)-[r13:relatedTo]->(o2)
+SET r13.text = 'Thiếu máu cơ tim (còn gọi là bệnh động mạch vành, bệnh mạch vành tim, bệnh suy vành) là tình trạng gây ra bởi động mạch vành bị hẹp làm hạn chế cung cấp máu, oxy và các chất dinh dưỡng nuôi tim, gây tổn thương một phần cơ tim.'
+
+MERGE (o1:disease {id: 'thiếu_máu_cơ_tim_disease'})
+MERGE (o2:symptom {id: 'động_mạch_vành_bị_hẹp_symptom'})
+MERGE (o1)-[r14:causedBy]->(o2)
+SET r14.text = 'Thiếu máu cơ tim (còn gọi là bệnh động mạch vành, bệnh mạch vành tim, bệnh suy vành) là tình trạng gây ra bởi động mạch vành bị hẹp làm hạn chế cung cấp máu, oxy và các chất dinh dưỡng nuôi tim, gây tổn thương một phần cơ tim.'
+
+MERGE (o1:disease {id: 'thiếu_máu_cơ_tim_disease'})
+MERGE (o2:symptom {id: 'hạn_chế_cung_cấp_máu_symptom'})
+MERGE (o1)-[r15:causedBy]->(o2)
+SET r15.text = 'Thiếu máu cơ tim (còn gọi là bệnh động mạch vành, bệnh mạch vành tim, bệnh suy vành) là tình trạng gây ra bởi động mạch vành bị hẹp làm hạn chế cung cấp máu, oxy và các chất dinh dưỡng nuôi tim, gây tổn thương một phần cơ tim.'
+
+MERGE (o1:disease {id: 'thiếu_máu_cơ_tim_disease'})
+MERGE (o2:symptom {id: 'oxy_symptom'})
+MERGE (o1)-[r16:causedBy]->(o2)
+SET r16.text = 'Thiếu máu cơ tim (còn gọi là bệnh động mạch vành, bệnh mạch vành tim, bệnh suy vành) là tình trạng gây ra bởi động mạch vành bị hẹp làm hạn chế cung cấp máu, oxy và các chất dinh dưỡng nuôi tim, gây tổn thương một phần cơ tim.'
+
+MERGE (o1:disease {id: 'thiếu_máu_cơ_tim_disease'})
+MERGE (o2:symptom {id: 'các_chất_dinh_dưỡng_nuôi_tim_symptom'})
+MERGE (o1)-[r17:causedBy]->(o2)
+SET r17.text = 'Thiếu máu cơ tim (còn gọi là bệnh động mạch vành, bệnh mạch vành tim, bệnh suy vành) là tình trạng gây ra bởi động mạch vành bị hẹp làm hạn chế cung cấp máu, oxy và các chất dinh dưỡng nuôi tim, gây tổn thương một phần cơ tim.'
+
+MERGE (o1:disease {id: 'thiếu_máu_cơ_tim_disease'})
+MERGE (o2:symptom {id: 'tổn_thương_một_phần_cơ_tim_symptom'})
+MERGE (o1)-[r18:causedBy]->(o2)
+SET r18.text = 'Thiếu máu cơ tim (còn gọi là bệnh động mạch vành, bệnh mạch vành tim, bệnh suy vành) là tình trạng gây ra bởi động mạch vành bị hẹp làm hạn chế cung cấp máu, oxy và các chất dinh dưỡng nuôi tim, gây tổn thương một phần cơ tim.'
+
+MERGE (o1:symptom {id: 'cơn_đau_thắt_ngực_ổn_định_symptom'})
+MERGE (o2:disease {id: 'bệnh_tim_thiếu_máu_cục_bộ_mạn_tính_disease'})
+MERGE (o1)-[r19:isSymptomOf]->(o2)
+SET r19.text = 'Biểu hiện lâm sàng đặc trưng là các cơn đau thắt ngực ổn định Biểu hiện lâm sàng đặc trưng của bệnh là cơn đau thắt ngực ổn định.'
+
+MERGE (o1:symptom {id: 'đau_thắt_ngực_ổn_định_symptom'})
+MERGE (o2:symptom {id: 'sự_ổn_định_của_các_mảng_xơ_vữa_động_mạch_vành_symptom'})
+MERGE (o1)-[r20:causedBy]->(o2)
+SET r20.text = 'Đau thắt ngực ổn định chính là sự ổn định của các mảng xơ vữa động mạch vành.'
+
+MERGE (o1:symptom {id: 'nứt_mảng_xơ_vữa_symptom'})
+MERGE (o2:symptom {id: 'hẹp_hoặc_tắc_lòng_mạch_symptom'})
+MERGE (o1)-[r21:causedBy]->(o2)
+SET r21.text = 'Trong quá trình phát triển của các mảng xơ vữa, một số trường hợp do nứt mảng xơ vữa có thể gây hẹp hoặc tắc lòng mạch một cách nhanh chóng.'
+
+MERGE (o1:disease {id: 'hội_chứng_vành_cấp_disease'})
+MERGE (o2:symptom {id: 'đau_thắt_ngực_không_ổn_định_symptom'})
+MERGE (o1)-[r22:isSymptomOf]->(o2)
+SET r22.text = 'Tình trạng này được gọi là hội chứng vành cấp (tiếng Anh là Acute Coronary Syndrome) gồm đau thắt ngực không ổn định, nhồi máu cơ tim ST chênh và nhồi máu cơ tim ST không chênh.'
+
+MERGE (o1:disease {id: 'hội_chứng_vành_cấp_disease'})
+MERGE (o2:disease {id: 'nhồi_máu_cơ_tim_st_chênh_disease'})
+MERGE (o1)-[r23:isSymptomOf]->(o2)
+SET r23.text = 'Tình trạng này được gọi là hội chứng vành cấp (tiếng Anh là Acute Coronary Syndrome) gồm đau thắt ngực không ổn định, nhồi máu cơ tim ST chênh và nhồi máu cơ tim ST không chênh.'
+
+MERGE (o1:disease {id: 'hội_chứng_vành_cấp_disease'})
+MERGE (o2:disease {id: 'nhồi_máu_cơ_tim_st_không_chênh_disease'})
+MERGE (o1)-[r24:isSymptomOf]->(o2)
+SET r24.text = 'Tình trạng này được gọi là hội chứng vành cấp (tiếng Anh là Acute Coronary Syndrome) gồm đau thắt ngực không ổn định, nhồi máu cơ tim ST chênh và nhồi máu cơ tim ST không chênh.'
+
+MERGE (o1:disease {id: 'hội_chứng_vành_cấp_disease'})
+MERGE (o2:treatment {id: 'điều_trị_ổn_định_treatment'})
+MERGE (o1)-[r25:treatedBy]->(o2)
+SET r25.text = 'Ngược lại, trong trường hợp người bệnh có hội chứng vành cấp được điều trị ổn định sau 1 năm sẽ được coi là bệnh mạch vành ổn định.'
+
+MERGE (o1:disease {id: 'hội_chứng_vành_cấp_disease'})
+MERGE (o2:disease {id: 'bệnh_mạch_vành_ổn_định_disease'})
+MERGE (o1)-[r26:relatedTo]->(o2)
+SET r26.text = 'Ngược lại, trong trường hợp người bệnh có hội chứng vành cấp được điều trị ổn định sau 1 năm sẽ được coi là bệnh mạch vành ổn định.'
+
+MERGE (o1:cause {id: 'yếu_tố_nguy_cơ_cause'})
+MERGE (o2:disease {id: 'bệnh_tim_thiếu_máu_cục_bộ_mạn_disease'})
+MERGE (o1)-[r27:causedBy]->(o2)
+SET r27.text = 'Các yếu tố nguy cơ của bệnh tim thiếu máu cục bộ mạn gồm nhóm yếu tố thay đổi được và nhóm yếu tố không thay đổi được:'
+
+MERGE (o1:cause {id: 'tuổi_tác_cause'})
+MERGE (o2:symptom {id: 'tăng_nguy_cơ_mắc_bệnh_tim_mạch_symptom'})
+MERGE (o1)-[r28:causedBy]->(o2)
+SET r28.text = 'Tuổi tác: Các nghiên cứu dịch tễ học cho thấy, tuổi tác là một trong những yếu tố làm tăng nguy cơ mắc bệnh tim mạch.'
+
+MERGE (o1:cause {id: 'tuổi_cao_cause'})
+MERGE (o2:symptom {id: 'hoạt_động_của_tim_kém_hiệu_quả_symptom'})
+MERGE (o1)-[r29:causedBy]->(o2)
+SET r29.text = 'Tuổi càng cao, hoạt động của tim càng kém hiệu quả bởi thành tim dày lên, các động mạch cứng lại, khiến quá trình bơm máu lên tim gặp nhiều khó khăn.'
+
+MERGE (o1:cause {id: 'tuổi_cao_cause'})
+MERGE (o2:symptom {id: 'thành_tim_dày_lên_symptom'})
+MERGE (o1)-[r30:causedBy]->(o2)
+SET r30.text = 'Tuổi càng cao, hoạt động của tim càng kém hiệu quả bởi thành tim dày lên, các động mạch cứng lại, khiến quá trình bơm máu lên tim gặp nhiều khó khăn.'
+
+MERGE (o1:cause {id: 'tuổi_cao_cause'})
+MERGE (o2:symptom {id: 'các_động_mạch_cứng_lại_symptom'})
+MERGE (o1)-[r31:causedBy]->(o2)
+SET r31.text = 'Tuổi càng cao, hoạt động của tim càng kém hiệu quả bởi thành tim dày lên, các động mạch cứng lại, khiến quá trình bơm máu lên tim gặp nhiều khó khăn.'
+
+MERGE (o1:cause {id: 'tuổi_cao_cause'})
+MERGE (o2:symptom {id: 'quá_trình_bơm_máu_lên_tim_gặp_nhiều_khó_khăn_symptom'})
+MERGE (o1)-[r32:causedBy]->(o2)
+SET r32.text = 'Tuổi càng cao, hoạt động của tim càng kém hiệu quả bởi thành tim dày lên, các động mạch cứng lại, khiến quá trình bơm máu lên tim gặp nhiều khó khăn.'
+
+MERGE (o1:cause {id: 'giới_tính_cause'})
+MERGE (o2:symptom {id: 'tăng_nguy_cơ_mắc_các_bệnh_tim_mạch_symptom'})
+MERGE (o1)-[r33:causedBy]->(o2)
+SET r33.text = 'Giới tính: Nam giới có nguy cơ mắc các bệnh tim mạch, mạch vành và đột quỵ cao hơn nữ giới.'
+
+MERGE (o1:cause {id: 'giới_tính_cause'})
+MERGE (o2:symptom {id: 'tăng_nguy_cơ_mắc_bệnh_mạch_vành_symptom'})
+MERGE (o1)-[r34:causedBy]->(o2)
+SET r34.text = 'Giới tính: Nam giới có nguy cơ mắc các bệnh tim mạch, mạch vành và đột quỵ cao hơn nữ giới.'
+
+MERGE (o1:cause {id: 'giới_tính_cause'})
+MERGE (o2:symptom {id: 'tăng_nguy_cơ_mắc_đột_quỵ_symptom'})
+MERGE (o1)-[r35:causedBy]->(o2)
+SET r35.text = 'Giới tính: Nam giới có nguy cơ mắc các bệnh tim mạch, mạch vành và đột quỵ cao hơn nữ giới.'
+
+MERGE (o1:cause {id: 'thời_kỳ_mãn_kinh_cause'})
+MERGE (o2:symptom {id: 'tăng_nguy_cơ_nữ_giới_mắc_bệnh_tim_mạch_symptom'})
+MERGE (o1)-[r36:causedBy]->(o2)
+SET r36.text = 'Tuy nhiên, khi bước vào thời kỳ mãn kinh, nguy cơ nữ giới mắc bệnh tim mạch không khác gì nam giới; và sau tuổi 65, nguy cơ mắc bệnh ở cả hai giới là như nhau.'
+
+MERGE (o1:cause {id: 'di_truyền_cause'})
+MERGE (o2:symptom {id: 'tăng_nguy_cơ_mắc_bệnh_tim_mạch_symptom'})
+MERGE (o1)-[r37:causedBy]->(o2)
+SET r37.text = 'Di truyền: Nếu thành viên gia đình có tiền sử bệnh tim mạch (cha, mẹ hoặc anh chị có vấn đề tim mạch trước tuổi 55) sẽ làm tăng nguy cơ mắc căn bệnh này.'
+
+MERGE (o1:lifestyle {id: 'hút_thuốc_lá_lifestyle'})
+MERGE (o2:symptom {id: 'tăng_nguy_cơ_mắc_bệnh_động_mạch_vành_symptom'})
+MERGE (o1)-[r38:causedBy]->(o2)
+SET r38.text = 'Thói quen hút thuốc lá: Hút thuốc lá được chứng minh là yếu tố làm tăng nguy cơ mắc bệnh động mạch vành, bệnh mạch máu ngoại biên và đột quỵ.'
+
+MERGE (o1:lifestyle {id: 'hút_thuốc_lá_lifestyle'})
+MERGE (o2:symptom {id: 'tăng_nguy_cơ_mắc_bệnh_mạch_máu_ngoại_biên_symptom'})
+MERGE (o1)-[r39:causedBy]->(o2)
+SET r39.text = 'Thói quen hút thuốc lá: Hút thuốc lá được chứng minh là yếu tố làm tăng nguy cơ mắc bệnh động mạch vành, bệnh mạch máu ngoại biên và đột quỵ.'
+
+MERGE (o1:lifestyle {id: 'hút_thuốc_lá_lifestyle'})
+MERGE (o2:symptom {id: 'tăng_nguy_cơ_mắc_đột_quỵ_symptom'})
+MERGE (o1)-[r40:causedBy]->(o2)
+SET r40.text = 'Thói quen hút thuốc lá: Hút thuốc lá được chứng minh là yếu tố làm tăng nguy cơ mắc bệnh động mạch vành, bệnh mạch máu ngoại biên và đột quỵ.'
+
+MERGE (o1:lifestyle {id: 'hút_thuốc_lá_lifestyle'})
+MERGE (o2:disease {id: 'ung_thư_phổi_disease'})
+MERGE (o1)-[r41:causedBy]->(o2)
+SET r41.text = 'Thêm vào đó, thói quen hút thuốc lá còn gây ung thư phổi và nhiều bệnh lý nguy hiểm khác.'
+
+MERGE (o1:lifestyle {id: 'hút_thuốc_lá_thụ_động_lifestyle'})
+MERGE (o2:symptom {id: 'tăng_nguy_cơ_mắc_các_bệnh_lý_symptom'})
+MERGE (o1)-[r42:causedBy]->(o2)
+SET r42.text = 'Những người xung quanh khi phải hút thuốc lá thụ động, có nguy cơ cao mắc phải các bệnh lý kể trên.'
+
+MERGE (o1:treatment {id: 'cai_thuốc_lá_treatment'})
+MERGE (o2:symptom {id: 'tránh_nguy_cơ_mắc_bệnh_symptom'})
+MERGE (o1)-[r43:treatedBy]->(o2)
+SET r43.text = 'Do đó, các chuyên gia tim mạch khuyến cáo người dân không nên hút thuốc lá, hãy cai thuốc lá để tránh nguy cơ mắc bệnh cho bản thân và gia đình.'
+
+MERGE (o1:lifestyle {id: 'lối_sống_thiếu_lành_mạnh_lifestyle'})
+MERGE (o2:lifestyle {id: 'ít_tập_thể_dục_lifestyle'})
+MERGE (o1)-[r44:causedBy]->(o2)
+SET r44.text = 'Lối sống thiếu lành mạnh như ít tập thể dục, thường xuyên bị căng thẳng, stress, sử dụng các chất kích thích chứa cocaine…'
+
+MERGE (o1:lifestyle {id: 'lối_sống_thiếu_lành_mạnh_lifestyle'})
+MERGE (o2:lifestyle {id: 'thường_xuyên_bị_căng_thẳng_lifestyle'})
+MERGE (o1)-[r45:causedBy]->(o2)
+SET r45.text = 'Lối sống thiếu lành mạnh như ít tập thể dục, thường xuyên bị căng thẳng, stress, sử dụng các chất kích thích chứa cocaine…'
+
+MERGE (o1:lifestyle {id: 'lối_sống_thiếu_lành_mạnh_lifestyle'})
+MERGE (o2:lifestyle {id: 'stress_lifestyle'})
+MERGE (o1)-[r46:causedBy]->(o2)
+SET r46.text = 'Lối sống thiếu lành mạnh như ít tập thể dục, thường xuyên bị căng thẳng, stress, sử dụng các chất kích thích chứa cocaine…'
+
+MERGE (o1:lifestyle {id: 'lối_sống_thiếu_lành_mạnh_lifestyle'})
+MERGE (o2:lifestyle {id: 'sử_dụng_các_chất_kích_thích_chứa_cocaine_lifestyle'})
+MERGE (o1)-[r47:causedBy]->(o2)
+SET r47.text = 'Lối sống thiếu lành mạnh như ít tập thể dục, thường xuyên bị căng thẳng, stress, sử dụng các chất kích thích chứa cocaine…'
+
+MERGE (o1:disease {id: 'bệnh_đái_tháo_đường_disease'})
+MERGE (o2:treatment {id: 'không_điều_trị_treatment'})
+MERGE (o1)-[r48:causedBy]->(o2)
+SET r48.text = 'Bệnh đái tháo đường, tăng huyết áp nhưng không điều trị hoặc có điều trị nhưng không tuân thủ hướng dẫn của bác sĩ, dẫn đến không kiểm soát tốt.'
+
+MERGE (o1:disease {id: 'bệnh_đái_tháo_đường_disease'})
+MERGE (o2:treatment {id: 'không_tuân_thủ_hướng_dẫn_của_bác_sĩ_treatment'})
+MERGE (o1)-[r49:causedBy]->(o2)
+SET r49.text = 'Bệnh đái tháo đường, tăng huyết áp nhưng không điều trị hoặc có điều trị nhưng không tuân thủ hướng dẫn của bác sĩ, dẫn đến không kiểm soát tốt.'
+
+MERGE (o1:disease {id: 'bệnh_đái_tháo_đường_disease'})
+MERGE (o2:symptom {id: 'không_kiểm_soát_tốt_symptom'})
+MERGE (o1)-[r50:causedBy]->(o2)
+SET r50.text = 'Bệnh đái tháo đường, tăng huyết áp nhưng không điều trị hoặc có điều trị nhưng không tuân thủ hướng dẫn của bác sĩ, dẫn đến không kiểm soát tốt.'
+
+MERGE (o1:lifestyle {id: 'chế_độ_ăn_giàu_chất_béo_lifestyle'})
+MERGE (o2:symptom {id: 'tích_tụ_mảng_xơ_vữa_symptom'})
+MERGE (o1)-[r51:causedBy]->(o2)
+SET r51.text = 'Chế độ ăn giàu chất béo, cholesterol gây tích tụ mảng xơ vữa làm tắc nghẽn lưu thông máu đến tim và các cơ quan khác.'
+
+MERGE (o1:lifestyle {id: 'chế_độ_ăn_giàu_chất_béo_lifestyle'})
+MERGE (o2:symptom {id: 'tắc_nghẽn_lưu_thông_máu_đến_tim_symptom'})
+MERGE (o1)-[r52:causedBy]->(o2)
+SET r52.text = 'Chế độ ăn giàu chất béo, cholesterol gây tích tụ mảng xơ vữa làm tắc nghẽn lưu thông máu đến tim và các cơ quan khác.'
+
+MERGE (o1:lifestyle {id: 'chế_độ_ăn_giàu_chất_béo_lifestyle'})
+MERGE (o2:symptom {id: 'tắc_nghẽn_lưu_thông_máu_đến_các_cơ_quan_khác_symptom'})
+MERGE (o1)-[r53:causedBy]->(o2)
+SET r53.text = 'Chế độ ăn giàu chất béo, cholesterol gây tích tụ mảng xơ vữa làm tắc nghẽn lưu thông máu đến tim và các cơ quan khác.'
+
+MERGE (o1:symptom {id: 'đau_thắt_ngực_symptom'})
+MERGE (o2:disease {id: 'thiếu_máu_cơ_tim_mạn_tính_disease'})
+MERGE (o1)-[r54:isSymptomOf]->(o2)
+SET r54.text = 'Bệnh được nhận diện thông qua các cơn đau thắt ngực ổn định có đặc điểm: (2)  Vị trí: Thường xuất hiện ở vị trí sau xương ức, lan ra cả vùng lên cổ, vai, hàm, thượng vị, sau lưng và tay. Có trường hợp cơn đau hướng lan lên vai trái xuống mặt trong tay trái, rồi xuống các ngón tay út, áp út.'
+
+MERGE (o1:symptom {id: 'đau_thắt_ngực_symptom'})
+MERGE (o2:organ {id: 'xương_ức_organ'})
+MERGE (o1)-[r55:locatedIn]->(o2)
+SET r55.text = 'Bệnh được nhận diện thông qua các cơn đau thắt ngực ổn định có đặc điểm: (2)  Vị trí: Thường xuất hiện ở vị trí sau xương ức, lan ra cả vùng lên cổ, vai, hàm, thượng vị, sau lưng và tay. Có trường hợp cơn đau hướng lan lên vai trái xuống mặt trong tay trái, rồi xuống các ngón tay út, áp út.'
+
+MERGE (o1:symptom {id: 'đau_thắt_ngực_symptom'})
+MERGE (o2:organ {id: 'cổ_organ'})
+MERGE (o1)-[r56:locatedIn]->(o2)
+SET r56.text = 'Bệnh được nhận diện thông qua các cơn đau thắt ngực ổn định có đặc điểm: (2)  Vị trí: Thường xuất hiện ở vị trí sau xương ức, lan ra cả vùng lên cổ, vai, hàm, thượng vị, sau lưng và tay. Có trường hợp cơn đau hướng lan lên vai trái xuống mặt trong tay trái, rồi xuống các ngón tay út, áp út.'
+
+MERGE (o1:symptom {id: 'đau_thắt_ngực_symptom'})
+MERGE (o2:organ {id: 'vai_organ'})
+MERGE (o1)-[r57:locatedIn]->(o2)
+SET r57.text = 'Bệnh được nhận diện thông qua các cơn đau thắt ngực ổn định có đặc điểm: (2)  Vị trí: Thường xuất hiện ở vị trí sau xương ức, lan ra cả vùng lên cổ, vai, hàm, thượng vị, sau lưng và tay. Có trường hợp cơn đau hướng lan lên vai trái xuống mặt trong tay trái, rồi xuống các ngón tay út, áp út.'
+
+MERGE (o1:symptom {id: 'đau_thắt_ngực_symptom'})
+MERGE (o2:organ {id: 'hàm_organ'})
+MERGE (o1)-[r58:locatedIn]->(o2)
+SET r58.text = 'Bệnh được nhận diện thông qua các cơn đau thắt ngực ổn định có đặc điểm: (2)  Vị trí: Thường xuất hiện ở vị trí sau xương ức, lan ra cả vùng lên cổ, vai, hàm, thượng vị, sau lưng và tay. Có trường hợp cơn đau hướng lan lên vai trái xuống mặt trong tay trái, rồi xuống các ngón tay út, áp út.'
+
+MERGE (o1:symptom {id: 'đau_thắt_ngực_symptom'})
+MERGE (o2:organ {id: 'thượng_vị_organ'})
+MERGE (o1)-[r59:locatedIn]->(o2)
+SET r59.text = 'Bệnh được nhận diện thông qua các cơn đau thắt ngực ổn định có đặc điểm: (2)  Vị trí: Thường xuất hiện ở vị trí sau xương ức, lan ra cả vùng lên cổ, vai, hàm, thượng vị, sau lưng và tay. Có trường hợp cơn đau hướng lan lên vai trái xuống mặt trong tay trái, rồi xuống các ngón tay út, áp út.'
+
+MERGE (o1:symptom {id: 'đau_thắt_ngực_symptom'})
+MERGE (o2:organ {id: 'lưng_organ'})
+MERGE (o1)-[r60:locatedIn]->(o2)
+SET r60.text = 'Bệnh được nhận diện thông qua các cơn đau thắt ngực ổn định có đặc điểm: (2)  Vị trí: Thường xuất hiện ở vị trí sau xương ức, lan ra cả vùng lên cổ, vai, hàm, thượng vị, sau lưng và tay. Có trường hợp cơn đau hướng lan lên vai trái xuống mặt trong tay trái, rồi xuống các ngón tay út, áp út.'
+
+MERGE (o1:symptom {id: 'đau_thắt_ngực_symptom'})
+MERGE (o2:organ {id: 'tay_organ'})
+MERGE (o1)-[r61:locatedIn]->(o2)
+SET r61.text = 'Bệnh được nhận diện thông qua các cơn đau thắt ngực ổn định có đặc điểm: (2)  Vị trí: Thường xuất hiện ở vị trí sau xương ức, lan ra cả vùng lên cổ, vai, hàm, thượng vị, sau lưng và tay. Có trường hợp cơn đau hướng lan lên vai trái xuống mặt trong tay trái, rồi xuống các ngón tay út, áp út.'
+
+MERGE (o1:symptom {id: 'đau_thắt_ngực_symptom'})
+MERGE (o2:organ {id: 'vai_trái_organ'})
+MERGE (o1)-[r62:locatedIn]->(o2)
+SET r62.text = 'Bệnh được nhận diện thông qua các cơn đau thắt ngực ổn định có đặc điểm: (2)  Vị trí: Thường xuất hiện ở vị trí sau xương ức, lan ra cả vùng lên cổ, vai, hàm, thượng vị, sau lưng và tay. Có trường hợp cơn đau hướng lan lên vai trái xuống mặt trong tay trái, rồi xuống các ngón tay út, áp út.'
+
+MERGE (o1:symptom {id: 'đau_thắt_ngực_symptom'})
+MERGE (o2:organ {id: 'tay_trái_organ'})
+MERGE (o1)-[r63:locatedIn]->(o2)
+SET r63.text = 'Bệnh được nhận diện thông qua các cơn đau thắt ngực ổn định có đặc điểm: (2)  Vị trí: Thường xuất hiện ở vị trí sau xương ức, lan ra cả vùng lên cổ, vai, hàm, thượng vị, sau lưng và tay. Có trường hợp cơn đau hướng lan lên vai trái xuống mặt trong tay trái, rồi xuống các ngón tay út, áp út.'
+
+MERGE (o1:symptom {id: 'đau_thắt_ngực_symptom'})
+MERGE (o2:organ {id: 'ngón_tay_út_organ'})
+MERGE (o1)-[r64:locatedIn]->(o2)
+SET r64.text = 'Bệnh được nhận diện thông qua các cơn đau thắt ngực ổn định có đặc điểm: (2)  Vị trí: Thường xuất hiện ở vị trí sau xương ức, lan ra cả vùng lên cổ, vai, hàm, thượng vị, sau lưng và tay. Có trường hợp cơn đau hướng lan lên vai trái xuống mặt trong tay trái, rồi xuống các ngón tay út, áp út.'
+
+MERGE (o1:symptom {id: 'đau_thắt_ngực_symptom'})
+MERGE (o2:organ {id: 'ngón_tay_áp_út_organ'})
+MERGE (o1)-[r65:locatedIn]->(o2)
+SET r65.text = 'Bệnh được nhận diện thông qua các cơn đau thắt ngực ổn định có đặc điểm: (2)  Vị trí: Thường xuất hiện ở vị trí sau xương ức, lan ra cả vùng lên cổ, vai, hàm, thượng vị, sau lưng và tay. Có trường hợp cơn đau hướng lan lên vai trái xuống mặt trong tay trái, rồi xuống các ngón tay út, áp út.'
+
+MERGE (o1:symptom {id: 'đau_thắt_ngực_symptom'})
+MERGE (o2:lifestyle {id: 'gắng_sức_lifestyle'})
+MERGE (o1)-[r66:aggravatedBy]->(o2)
+SET r66.text = 'Thời điểm: Xuất hiện khi người bệnh gắng sức, xúc động mạnh, người bệnh bị lạnh, sau khi ăn quá nhiều hoặc sau hút thuốc lá.'
+
+MERGE (o1:symptom {id: 'đau_thắt_ngực_symptom'})
+MERGE (o2:lifestyle {id: 'xúc_động_mạnh_lifestyle'})
+MERGE (o1)-[r67:aggravatedBy]->(o2)
+SET r67.text = 'Thời điểm: Xuất hiện khi người bệnh gắng sức, xúc động mạnh, người bệnh bị lạnh, sau khi ăn quá nhiều hoặc sau hút thuốc lá.'
+
+MERGE (o1:symptom {id: 'đau_thắt_ngực_symptom'})
+MERGE (o2:lifestyle {id: 'lạnh_lifestyle'})
+MERGE (o1)-[r68:aggravatedBy]->(o2)
+SET r68.text = 'Thời điểm: Xuất hiện khi người bệnh gắng sức, xúc động mạnh, người bệnh bị lạnh, sau khi ăn quá nhiều hoặc sau hút thuốc lá.'
+
+MERGE (o1:symptom {id: 'đau_thắt_ngực_symptom'})
+MERGE (o2:lifestyle {id: 'ăn_quá_nhiều_lifestyle'})
+MERGE (o1)-[r69:aggravatedBy]->(o2)
+SET r69.text = 'Thời điểm: Xuất hiện khi người bệnh gắng sức, xúc động mạnh, người bệnh bị lạnh, sau khi ăn quá nhiều hoặc sau hút thuốc lá.'
+
+MERGE (o1:symptom {id: 'đau_thắt_ngực_symptom'})
+MERGE (o2:lifestyle {id: 'hút_thuốc_lá_lifestyle'})
+MERGE (o1)-[r70:aggravatedBy]->(o2)
+SET r70.text = 'Thời điểm: Xuất hiện khi người bệnh gắng sức, xúc động mạnh, người bệnh bị lạnh, sau khi ăn quá nhiều hoặc sau hút thuốc lá.'
+
+MERGE (o1:symptom {id: 'đau_thắt_ngực_symptom'})
+MERGE (o2:lifestyle {id: 'thay_đổi_tư_thế_lifestyle'})
+MERGE (o1)-[r71:aggravatedBy]->(o2)
+SET r71.text = 'Một số trường hợp cơn đau xuất hiện về đêm, mỗi khi người bệnh thay đổi tư thế hoặc có kèm theo cơn nhịp nhanh.'
+
+MERGE (o1:symptom {id: 'đau_thắt_ngực_symptom'})
+MERGE (o2:symptom {id: 'nhịp_nhanh_symptom'})
+MERGE (o1)-[r72:associatedWith]->(o2)
+SET r72.text = 'Một số trường hợp cơn đau xuất hiện về đêm, mỗi khi người bệnh thay đổi tư thế hoặc có kèm theo cơn nhịp nhanh.'
+
+MERGE (o1:symptom {id: 'đau_thắt_ngực_symptom'})
+MERGE (o2:symptom {id: 'thắt_lại_symptom'})
+MERGE (o1)-[r73:relatedTo]->(o2)
+SET r73.text = 'Tính chất: Người bệnh cảm thấy đau thắt lại, bị đè nặng hoặc bóp nghẹt, đôi khi cảm thấy buốt giá (y văn mô tả cơn đau thắt ngực như có con voi giẫm lên ngực).'
+
+MERGE (o1:symptom {id: 'đau_thắt_ngực_symptom'})
+MERGE (o2:symptom {id: 'đè_nặng_symptom'})
+MERGE (o1)-[r74:relatedTo]->(o2)
+SET r74.text = 'Tính chất: Người bệnh cảm thấy đau thắt lại, bị đè nặng hoặc bóp nghẹt, đôi khi cảm thấy buốt giá (y văn mô tả cơn đau thắt ngực như có con voi giẫm lên ngực).'
+
+MERGE (o1:symptom {id: 'đau_thắt_ngực_symptom'})
+MERGE (o2:symptom {id: 'bóp_nghẹt_symptom'})
+MERGE (o1)-[r75:relatedTo]->(o2)
+SET r75.text = 'Tính chất: Người bệnh cảm thấy đau thắt lại, bị đè nặng hoặc bóp nghẹt, đôi khi cảm thấy buốt giá (y văn mô tả cơn đau thắt ngực như có con voi giẫm lên ngực).'
+
+MERGE (o1:symptom {id: 'đau_thắt_ngực_symptom'})
+MERGE (o2:symptom {id: 'buốt_giá_symptom'})
+MERGE (o1)-[r76:relatedTo]->(o2)
+SET r76.text = 'Tính chất: Người bệnh cảm thấy đau thắt lại, bị đè nặng hoặc bóp nghẹt, đôi khi cảm thấy buốt giá (y văn mô tả cơn đau thắt ngực như có con voi giẫm lên ngực).'
+
+MERGE (o1:symptom {id: 'mệt_mỏi_symptom'})
+MERGE (o2:symptom {id: 'đau_thắt_ngực_symptom'})
+MERGE (o1)-[r77:associatedWith]->(o2)
+SET r77.text = 'Người bệnh có thể cảm thấy mệt mỏi, đau đầu, khó thở, vã mồ hôi và buồn nôn trong cơn đau.'
+
+MERGE (o1:symptom {id: 'đau_đầu_symptom'})
+MERGE (o2:symptom {id: 'đau_thắt_ngực_symptom'})
+MERGE (o1)-[r78:associatedWith]->(o2)
+SET r78.text = 'Người bệnh có thể cảm thấy mệt mỏi, đau đầu, khó thở, vã mồ hôi và buồn nôn trong cơn đau.'
+
+MERGE (o1:symptom {id: 'khó_thở_symptom'})
+MERGE (o2:symptom {id: 'đau_thắt_ngực_symptom'})
+MERGE (o1)-[r79:associatedWith]->(o2)
+SET r79.text = 'Người bệnh có thể cảm thấy mệt mỏi, đau đầu, khó thở, vã mồ hôi và buồn nôn trong cơn đau.'
+
+MERGE (o1:symptom {id: 'vã_mồ_hôi_symptom'})
+MERGE (o2:symptom {id: 'đau_thắt_ngực_symptom'})
+MERGE (o1)-[r80:associatedWith]->(o2)
+SET r80.text = 'Người bệnh có thể cảm thấy mệt mỏi, đau đầu, khó thở, vã mồ hôi và buồn nôn trong cơn đau.'
+
+MERGE (o1:symptom {id: 'buồn_nôn_symptom'})
+MERGE (o2:symptom {id: 'đau_thắt_ngực_symptom'})
+MERGE (o1)-[r81:associatedWith]->(o2)
+SET r81.text = 'Người bệnh có thể cảm thấy mệt mỏi, đau đầu, khó thở, vã mồ hôi và buồn nôn trong cơn đau.'
+
+MERGE (o1:symptom {id: 'đau_thắt_ngực_symptom'})
+MERGE (o2:symptom {id: 'ngắn_symptom'})
+MERGE (o1)-[r82:relatedTo]->(o2)
+SET r82.text = 'Cơn đau thường ngắn (3-5 phút), có thể dài hơn nhưng thông thường không quá 20 phút.'
+
+MERGE (o1:symptom {id: 'đau_thắt_ngực_symptom'})
+MERGE (o2:symptom {id: 'dài_symptom'})
+MERGE (o1)-[r83:relatedTo]->(o2)
+SET r83.text = 'Cơn đau thường ngắn (3-5 phút), có thể dài hơn nhưng thông thường không quá 20 phút.'
+
+MERGE (o1:symptom {id: 'đau_thắt_ngực_symptom'})
+MERGE (o2:symptom {id: 'kéo_dài_symptom'})
+MERGE (o1)-[r84:relatedTo]->(o2)
+SET r84.text = 'Trong trường hợp cơn đau kéo dài và xuất hiện ngay cả lúc nghỉ ngơi, người bệnh cần đề phòng cơn đau thắt ngực không ổn định hoặc nhồi máu cơ tim.'
+
+MERGE (o1:symptom {id: 'đau_thắt_ngực_không_ổn_định_symptom'})
+MERGE (o2:symptom {id: 'đau_thắt_ngực_symptom'})
+MERGE (o1)-[r85:relatedTo]->(o2)
+SET r85.text = 'Trong trường hợp cơn đau kéo dài và xuất hiện ngay cả lúc nghỉ ngơi, người bệnh cần đề phòng cơn đau thắt ngực không ổn định hoặc nhồi máu cơ tim.'
+
+MERGE (o1:disease {id: 'nhồi_máu_cơ_tim_disease'})
+MERGE (o2:symptom {id: 'đau_thắt_ngực_symptom'})
+MERGE (o1)-[r86:relatedTo]->(o2)
+SET r86.text = 'Trong trường hợp cơn đau kéo dài và xuất hiện ngay cả lúc nghỉ ngơi, người bệnh cần đề phòng cơn đau thắt ngực không ổn định hoặc nhồi máu cơ tim.'
+
+MERGE (o1:symptom {id: 'đau_thắt_ngực_symptom'})
+MERGE (o2:symptom {id: 'ngắn_symptom'})
+MERGE (o1)-[r87:relatedTo]->(o2)
+SET r87.text = 'Đồng thời, với những cơn đau quá ngắn dưới 1 phút, người bệnh cần nghĩ đến nguyên nhân khác ngoài bệnh tim mạch.'
+
+MERGE (o1:disease {id: 'thiếu_máu_cơ_tim_mạn_disease'})
+MERGE (o2:symptom {id: 'đau_thắt_ngực_symptom'})
+MERGE (o1)-[r88:associatedWith]->(o2)
+SET r88.text = 'Không phải trường hợp thiếu máu cơ tim mạn nào cũng có những cơn đau thắt ngực ổn định với đặc điểm điển hình.'
+
+MERGE (o1:symptom {id: 'khó_chịu_ở_ngực_symptom'})
+MERGE (o2:disease {id: 'thiếu_máu_cơ_tim_mạn_disease'})
+MERGE (o1)-[r89:isSymptomOf]->(o2)
+SET r89.text = 'Nhiều trường hợp bệnh nhân chỉ cảm thấy khó chịu ở ngực, căng tức ngực, cứng hàm khi gắng sức…'
+
+MERGE (o1:symptom {id: 'căng_tức_ngực_symptom'})
+MERGE (o2:disease {id: 'thiếu_máu_cơ_tim_mạn_disease'})
+MERGE (o1)-[r90:isSymptomOf]->(o2)
+SET r90.text = 'Nhiều trường hợp bệnh nhân chỉ cảm thấy khó chịu ở ngực, căng tức ngực, cứng hàm khi gắng sức…'
+
+MERGE (o1:symptom {id: 'cứng_hàm_symptom'})
+MERGE (o2:disease {id: 'thiếu_máu_cơ_tim_mạn_disease'})
+MERGE (o1)-[r91:isSymptomOf]->(o2)
+SET r91.text = 'Nhiều trường hợp bệnh nhân chỉ cảm thấy khó chịu ở ngực, căng tức ngực, cứng hàm khi gắng sức…'
+
+MERGE (o1:symptom {id: 'khó_chịu_ở_ngực_symptom'})
+MERGE (o2:lifestyle {id: 'gắng_sức_lifestyle'})
+MERGE (o1)-[r92:aggravatedBy]->(o2)
+SET r92.text = 'Nhiều trường hợp bệnh nhân chỉ cảm thấy khó chịu ở ngực, căng tức ngực, cứng hàm khi gắng sức…'
+
+MERGE (o1:symptom {id: 'căng_tức_ngực_symptom'})
+MERGE (o2:lifestyle {id: 'gắng_sức_lifestyle'})
+MERGE (o1)-[r93:aggravatedBy]->(o2)
+SET r93.text = 'Nhiều trường hợp bệnh nhân chỉ cảm thấy khó chịu ở ngực, căng tức ngực, cứng hàm khi gắng sức…'
+
+MERGE (o1:symptom {id: 'cứng_hàm_symptom'})
+MERGE (o2:lifestyle {id: 'gắng_sức_lifestyle'})
+MERGE (o1)-[r94:aggravatedBy]->(o2)
+SET r94.text = 'Nhiều trường hợp bệnh nhân chỉ cảm thấy khó chịu ở ngực, căng tức ngực, cứng hàm khi gắng sức…'
+
+MERGE (o1:disease {id: 'thiếu_máu_cơ_tim_mạn_disease'})
+MERGE (o2:test {id: 'thăm_khám_test'})
+MERGE (o1)-[r95:diagnosedBy]->(o2)
+SET r95.text = 'Do đó, khuyến cáo người bệnh nên thăm khám sớm và thực hiện những kỹ thuật chẩn đoán hình ảnh hiện đại để có thể chẩn đoán chính xác bệnh lý'
+
+MERGE (o1:disease {id: 'thiếu_máu_cơ_tim_mạn_disease'})
+MERGE (o2:test {id: 'chẩn_đoán_hình_ảnh_test'})
+MERGE (o1)-[r96:diagnosedBy]->(o2)
+SET r96.text = 'Do đó, khuyến cáo người bệnh nên thăm khám sớm và thực hiện những kỹ thuật chẩn đoán hình ảnh hiện đại để có thể chẩn đoán chính xác bệnh lý'
+
+MERGE (o1:disease {id: 'thiếu_máu_cục_bộ_mạn_tính_disease'})
+MERGE (o2:organ {id: 'tim_organ'})
+MERGE (o1)-[r97:relatedTo]->(o2)
+SET r97.text = 'BS.CKII Võ Ngọc Cẩm, Phó khoa Hồi sức Tim mạch, Trung tâm Tim mạch, Bệnh viện Đa khoa Tâm Anh TP.HCM cho biết, tại Trung tâm Tim mạch Hệ thống Bệnh viện Đa khoa Tâm Anh TP.HCM, việc chẩn đoán căn bệnh tim thiếu máu cục bộ mạn tính là một quy trình chặt chẽ gồm các bước: (3)'
+
+MERGE (o1:disease {id: 'thiếu_máu_cục_bộ_mạn_tính_disease'})
+MERGE (o2:test {id: 'thăm_khám_test'})
+MERGE (o1)-[r98:diagnosedBy]->(o2)
+SET r98.text = 'Bác sĩ khai thác các triệu chứng của bệnh nhân, thăm hỏi tiền sử bệnh lý của bản thân người bệnh và gia đình, tiến hành các bước thăm khám ban đầu gồm đo huyết áp, nghe tim…'
+
+MERGE (o1:disease {id: 'thiếu_máu_cục_bộ_mạn_tính_disease'})
+MERGE (o2:test {id: 'đo_huyết_áp_test'})
+MERGE (o1)-[r99:diagnosedBy]->(o2)
+SET r99.text = 'Bác sĩ khai thác các triệu chứng của bệnh nhân, thăm hỏi tiền sử bệnh lý của bản thân người bệnh và gia đình, tiến hành các bước thăm khám ban đầu gồm đo huyết áp, nghe tim…'
+
+MERGE (o1:disease {id: 'thiếu_máu_cục_bộ_mạn_tính_disease'})
+MERGE (o2:test {id: 'nghe_tim_test'})
+MERGE (o1)-[r100:diagnosedBy]->(o2)
+SET r100.text = 'Bác sĩ khai thác các triệu chứng của bệnh nhân, thăm hỏi tiền sử bệnh lý của bản thân người bệnh và gia đình, tiến hành các bước thăm khám ban đầu gồm đo huyết áp, nghe tim…'
+
+MERGE (o1:disease {id: 'thiếu_máu_cơ_tim_mạn_tính_disease'})
+MERGE (o2:test {id: 'xét_nghiệm_sinh_hóa_máu_test'})
+MERGE (o1)-[r101:diagnosedBy]->(o2)
+SET r101.text = 'Khi người bệnh có những triệu chứng nghi ngờ hoặc gợi ý căn bệnh thiếu máu cơ tim mạn tính, bác sĩ sẽ chỉ định người bệnh thực hiện một số chẩn đoán cận lâm sàng gồm:  Xét nghiệm sinh hóa máu: kiểm tra số lượng hồng cầu, tiểu cầu trong máu, đánh giá mức độ cholesterol, đường máu, chức năng thận, chức năng gan, điện giải đồ,&#8230;'
+
+MERGE (o1:disease {id: 'thiếu_máu_cơ_tim_mạn_tính_disease'})
+MERGE (o2:test {id: 'kiểm_tra_số_lượng_hồng_cầu_test'})
+MERGE (o1)-[r102:diagnosedBy]->(o2)
+SET r102.text = 'Khi người bệnh có những triệu chứng nghi ngờ hoặc gợi ý căn bệnh thiếu máu cơ tim mạn tính, bác sĩ sẽ chỉ định người bệnh thực hiện một số chẩn đoán cận lâm sàng gồm:  Xét nghiệm sinh hóa máu: kiểm tra số lượng hồng cầu, tiểu cầu trong máu, đánh giá mức độ cholesterol, đường máu, chức năng thận, chức năng gan, điện giải đồ,&#8230;'
+
+MERGE (o1:disease {id: 'thiếu_máu_cơ_tim_mạn_tính_disease'})
+MERGE (o2:test {id: 'kiểm_tra_số_lượng_tiểu_cầu_test'})
+MERGE (o1)-[r103:diagnosedBy]->(o2)
+SET r103.text = 'Khi người bệnh có những triệu chứng nghi ngờ hoặc gợi ý căn bệnh thiếu máu cơ tim mạn tính, bác sĩ sẽ chỉ định người bệnh thực hiện một số chẩn đoán cận lâm sàng gồm:  Xét nghiệm sinh hóa máu: kiểm tra số lượng hồng cầu, tiểu cầu trong máu, đánh giá mức độ cholesterol, đường máu, chức năng thận, chức năng gan, điện giải đồ,&#8230;'
+
+MERGE (o1:disease {id: 'thiếu_máu_cơ_tim_mạn_tính_disease'})
+MERGE (o2:test {id: 'đánh_giá_mức_độ_cholesterol_test'})
+MERGE (o1)-[r104:diagnosedBy]->(o2)
+SET r104.text = 'Khi người bệnh có những triệu chứng nghi ngờ hoặc gợi ý căn bệnh thiếu máu cơ tim mạn tính, bác sĩ sẽ chỉ định người bệnh thực hiện một số chẩn đoán cận lâm sàng gồm:  Xét nghiệm sinh hóa máu: kiểm tra số lượng hồng cầu, tiểu cầu trong máu, đánh giá mức độ cholesterol, đường máu, chức năng thận, chức năng gan, điện giải đồ,&#8230;'
+
+MERGE (o1:disease {id: 'thiếu_máu_cơ_tim_mạn_tính_disease'})
+MERGE (o2:test {id: 'đánh_giá_mức_độ_đường_máu_test'})
+MERGE (o1)-[r105:diagnosedBy]->(o2)
+SET r105.text = 'Khi người bệnh có những triệu chứng nghi ngờ hoặc gợi ý căn bệnh thiếu máu cơ tim mạn tính, bác sĩ sẽ chỉ định người bệnh thực hiện một số chẩn đoán cận lâm sàng gồm:  Xét nghiệm sinh hóa máu: kiểm tra số lượng hồng cầu, tiểu cầu trong máu, đánh giá mức độ cholesterol, đường máu, chức năng thận, chức năng gan, điện giải đồ,&#8230;'
+
+MERGE (o1:disease {id: 'thiếu_máu_cơ_tim_mạn_tính_disease'})
+MERGE (o2:test {id: 'đánh_giá_chức_năng_thận_test'})
+MERGE (o1)-[r106:diagnosedBy]->(o2)
+SET r106.text = 'Khi người bệnh có những triệu chứng nghi ngờ hoặc gợi ý căn bệnh thiếu máu cơ tim mạn tính, bác sĩ sẽ chỉ định người bệnh thực hiện một số chẩn đoán cận lâm sàng gồm:  Xét nghiệm sinh hóa máu: kiểm tra số lượng hồng cầu, tiểu cầu trong máu, đánh giá mức độ cholesterol, đường máu, chức năng thận, chức năng gan, điện giải đồ,&#8230;'
+
+MERGE (o1:disease {id: 'thiếu_máu_cơ_tim_mạn_tính_disease'})
+MERGE (o2:test {id: 'đánh_giá_chức_năng_gan_test'})
+MERGE (o1)-[r107:diagnosedBy]->(o2)
+SET r107.text = 'Khi người bệnh có những triệu chứng nghi ngờ hoặc gợi ý căn bệnh thiếu máu cơ tim mạn tính, bác sĩ sẽ chỉ định người bệnh thực hiện một số chẩn đoán cận lâm sàng gồm:  Xét nghiệm sinh hóa máu: kiểm tra số lượng hồng cầu, tiểu cầu trong máu, đánh giá mức độ cholesterol, đường máu, chức năng thận, chức năng gan, điện giải đồ,&#8230;'
+
+MERGE (o1:disease {id: 'thiếu_máu_cơ_tim_mạn_tính_disease'})
+MERGE (o2:test {id: 'điện_giải_đồ_test'})
+MERGE (o1)-[r108:diagnosedBy]->(o2)
+SET r108.text = 'Khi người bệnh có những triệu chứng nghi ngờ hoặc gợi ý căn bệnh thiếu máu cơ tim mạn tính, bác sĩ sẽ chỉ định người bệnh thực hiện một số chẩn đoán cận lâm sàng gồm:  Xét nghiệm sinh hóa máu: kiểm tra số lượng hồng cầu, tiểu cầu trong máu, đánh giá mức độ cholesterol, đường máu, chức năng thận, chức năng gan, điện giải đồ,&#8230;'
+
+MERGE (o1:disease {id: 'thiếu_máu_cơ_tim_disease'})
+MERGE (o2:test {id: 'điện_tâm_đồ_test'})
+MERGE (o1)-[r109:diagnosedBy]->(o2)
+SET r109.text = 'Điện tâm đồ chẩn đoán thiếu máu cơ tim: có thể thấy thay đổi sóng ST-T, dày thất trái, sẹo nhồi máu cơ tim cũ,&#8230;'
+
+MERGE (o1:disease {id: 'thiếu_máu_cơ_tim_disease'})
+MERGE (o2:symptom {id: 'thay_đổi_sóng_st-t_symptom'})
+MERGE (o1)-[r110:relatedTo]->(o2)
+SET r110.text = 'Điện tâm đồ chẩn đoán thiếu máu cơ tim: có thể thấy thay đổi sóng ST-T, dày thất trái, sẹo nhồi máu cơ tim cũ,&#8230;'
+
+MERGE (o1:disease {id: 'thiếu_máu_cơ_tim_disease'})
+MERGE (o2:symptom {id: 'dày_thất_trái_symptom'})
+MERGE (o1)-[r111:relatedTo]->(o2)
+SET r111.text = 'Điện tâm đồ chẩn đoán thiếu máu cơ tim: có thể thấy thay đổi sóng ST-T, dày thất trái, sẹo nhồi máu cơ tim cũ,&#8230;'
+
+MERGE (o1:disease {id: 'thiếu_máu_cơ_tim_disease'})
+MERGE (o2:symptom {id: 'sẹo_nhồi_máu_cơ_tim_cũ_symptom'})
+MERGE (o1)-[r112:relatedTo]->(o2)
+SET r112.text = 'Điện tâm đồ chẩn đoán thiếu máu cơ tim: có thể thấy thay đổi sóng ST-T, dày thất trái, sẹo nhồi máu cơ tim cũ,&#8230;'
+
+MERGE (o1:disease {id: 'thiếu_máu_cơ_tim_mạn_tính_disease'})
+MERGE (o2:test {id: 'siêu_âm_doppler_tim_test'})
+MERGE (o1)-[r113:diagnosedBy]->(o2)
+SET r113.text = 'Siêu âm Doppler tim: xác định được rối loạn vận động vùng nghi do bệnh mạch vành, đánh giá chức năng tim, bệnh van tim,…'
+
+MERGE (o1:disease {id: 'thiếu_máu_cơ_tim_mạn_tính_disease'})
+MERGE (o2:symptom {id: 'rối_loạn_vận_động_vùng_nghi_do_bệnh_mạch_vành_symptom'})
+MERGE (o1)-[r114:relatedTo]->(o2)
+SET r114.text = 'Siêu âm Doppler tim: xác định được rối loạn vận động vùng nghi do bệnh mạch vành, đánh giá chức năng tim, bệnh van tim,…'
+
+MERGE (o1:disease {id: 'thiếu_máu_cơ_tim_mạn_tính_disease'})
+MERGE (o2:disease {id: 'bệnh_van_tim_disease'})
+MERGE (o1)-[r115:relatedTo]->(o2)
+SET r115.text = 'Siêu âm Doppler tim: xác định được rối loạn vận động vùng nghi do bệnh mạch vành, đánh giá chức năng tim, bệnh van tim,…'
+
+MERGE (o1:disease {id: 'thiếu_máu_cơ_tim_mạn_tính_disease'})
+MERGE (o2:test {id: 'nghiệm_pháp_gắng_sức_test'})
+MERGE (o1)-[r116:diagnosedBy]->(o2)
+SET r116.text = 'Nghiệm pháp gắng sức: giúp xác định có thiếu máu cục bộ cơ tim, phân tầng nguy cơ (thấp, trung bình và cao) để có hướng xử trí tiếp theo.'
+
+MERGE (o1:disease {id: 'thiếu_máu_cơ_tim_mạn_tính_disease'})
+MERGE (o2:disease {id: 'thiếu_máu_cục_bộ_cơ_tim_disease'})
+MERGE (o1)-[r117:relatedTo]->(o2)
+SET r117.text = 'Nghiệm pháp gắng sức: giúp xác định có thiếu máu cục bộ cơ tim, phân tầng nguy cơ (thấp, trung bình và cao) để có hướng xử trí tiếp theo.'
+
+MERGE (o1:disease {id: 'thiếu_máu_cơ_tim_mạn_tính_disease'})
+MERGE (o2:test {id: 'holter_điện_tim_test'})
+MERGE (o1)-[r118:diagnosedBy]->(o2)
+SET r118.text = 'Holter điện tim: gắn thiết bị theo dõi nhịp tim trên người bệnh nhân trong vòng 24-48 giờ để phát hiện những thời điểm xuất hiện bệnh tim thiếu máu cục bộ và nhiều rối loạn nhịp tim khác.'
+
+MERGE (o1:disease {id: 'thiếu_máu_cơ_tim_mạn_tính_disease'})
+MERGE (o2:symptom {id: 'rối_loạn_nhịp_tim_symptom'})
+MERGE (o1)-[r119:relatedTo]->(o2)
+SET r119.text = 'Holter điện tim: gắn thiết bị theo dõi nhịp tim trên người bệnh nhân trong vòng 24-48 giờ để phát hiện những thời điểm xuất hiện bệnh tim thiếu máu cục bộ và nhiều rối loạn nhịp tim khác.'
+
+MERGE (o1:disease {id: 'thiếu_máu_cơ_tim_mạn_tính_disease'})
+MERGE (o2:test {id: 'chụp_ct_mạch_vành_test'})
+MERGE (o1)-[r120:diagnosedBy]->(o2)
+SET r120.text = 'Chụp CT mạch vành: ghi nhận hình ảnh mạch vành bị hẹp hay tắc, vị trí và mức độ hẹp để có hướng điều trị.'
+
+MERGE (o1:disease {id: 'thiếu_máu_cơ_tim_mạn_tính_disease'})
+MERGE (o2:symptom {id: 'mạch_vành_bị_hẹp_symptom'})
+MERGE (o1)-[r121:relatedTo]->(o2)
+SET r121.text = 'Chụp CT mạch vành: ghi nhận hình ảnh mạch vành bị hẹp hay tắc, vị trí và mức độ hẹp để có hướng điều trị.'
+
+MERGE (o1:disease {id: 'thiếu_máu_cơ_tim_mạn_tính_disease'})
+MERGE (o2:symptom {id: 'mạch_vành_bị_tắc_symptom'})
+MERGE (o1)-[r122:relatedTo]->(o2)
+SET r122.text = 'Chụp CT mạch vành: ghi nhận hình ảnh mạch vành bị hẹp hay tắc, vị trí và mức độ hẹp để có hướng điều trị.'
+
+MERGE (o1:disease {id: 'thiếu_máu_cơ_tim_cục_bộ_mạn_tính_disease'})
+MERGE (o2:test {id: 'chẩn_đoán_test'})
+MERGE (o1)-[r123:diagnosedBy]->(o2)
+SET r123.text = '“Thiếu máu cơ tim cục bộ mạn tính có nguy hiểm không” là thắc mắc chung của bệnh nhân khi được chẩn đoán mắc căn bệnh này.'
+
+MERGE (o1:disease {id: 'thiếu_máu_cơ_tim_cục_bộ_mạn_tính_disease'})
+MERGE (o2:symptom {id: 'thắc_mắc_chung_symptom'})
+MERGE (o1)-[r124:isSymptomOf]->(o2)
+SET r124.text = '“Thiếu máu cơ tim cục bộ mạn tính có nguy hiểm không” là thắc mắc chung của bệnh nhân khi được chẩn đoán mắc căn bệnh này.'
+
+MERGE (o1:disease {id: 'thiếu_máu_cơ_tim_cục_bộ_mạn_tính_disease'})
+MERGE (o2:treatment {id: 'can_thiệp_điều_trị_treatment'})
+MERGE (o1)-[r125:treatedBy]->(o2)
+SET r125.text = 'Bệnh hoàn toàn không gây nguy hiểm nếu được phát hiện sớm và can thiệp điều trị hiệu quả, bệnh nhân tuân thủ đúng phác đồ điều trị của bác sĩ, có kế hoạch chăm sóc và quản lý bệnh tốt.'
+
+MERGE (o1:disease {id: 'thiếu_máu_cơ_tim_cục_bộ_mạn_tính_disease'})
+MERGE (o2:treatment {id: 'phác_đồ_điều_trị_treatment'})
+MERGE (o1)-[r126:treatedBy]->(o2)
+SET r126.text = 'Bệnh hoàn toàn không gây nguy hiểm nếu được phát hiện sớm và can thiệp điều trị hiệu quả, bệnh nhân tuân thủ đúng phác đồ điều trị của bác sĩ, có kế hoạch chăm sóc và quản lý bệnh tốt.'
+
+MERGE (o1:disease {id: 'thiếu_máu_cơ_tim_cục_bộ_mạn_tính_disease'})
+MERGE (o2:treatment {id: 'chăm_sóc_treatment'})
+MERGE (o1)-[r127:treatedBy]->(o2)
+SET r127.text = 'Bệnh hoàn toàn không gây nguy hiểm nếu được phát hiện sớm và can thiệp điều trị hiệu quả, bệnh nhân tuân thủ đúng phác đồ điều trị của bác sĩ, có kế hoạch chăm sóc và quản lý bệnh tốt.'
+
+MERGE (o1:disease {id: 'thiếu_máu_cơ_tim_cục_bộ_mạn_tính_disease'})
+MERGE (o2:treatment {id: 'quản_lý_bệnh_treatment'})
+MERGE (o1)-[r128:treatedBy]->(o2)
+SET r128.text = 'Bệnh hoàn toàn không gây nguy hiểm nếu được phát hiện sớm và can thiệp điều trị hiệu quả, bệnh nhân tuân thủ đúng phác đồ điều trị của bác sĩ, có kế hoạch chăm sóc và quản lý bệnh tốt.'
+
+MERGE (o1:disease {id: 'thiếu_máu_cơ_tim_cục_bộ_mạn_tính_disease'})
+MERGE (o2:disease {id: 'hội_chứng_mạch_vành_cấp_disease'})
+MERGE (o1)-[r129:relatedTo]->(o2)
+SET r129.text = 'Tuy nhiên, trong trường hợp bệnh phát hiện và điều trị muộn, bệnh có thể tiến triển thành hội chứng mạch vành cấp, người bệnh có nguy cơ gặp cơn đau thắt ngực không ổn định, nhồi máu cơ tim, nguy hiểm nhất là đột tử.'
+
+MERGE (o1:disease {id: 'thiếu_máu_cơ_tim_cục_bộ_mạn_tính_disease'})
+MERGE (o2:symptom {id: 'cơn_đau_thắt_ngực_không_ổn_định_symptom'})
+MERGE (o1)-[r130:relatedTo]->(o2)
+SET r130.text = 'Tuy nhiên, trong trường hợp bệnh phát hiện và điều trị muộn, bệnh có thể tiến triển thành hội chứng mạch vành cấp, người bệnh có nguy cơ gặp cơn đau thắt ngực không ổn định, nhồi máu cơ tim, nguy hiểm nhất là đột tử.'
+
+MERGE (o1:disease {id: 'thiếu_máu_cơ_tim_cục_bộ_mạn_tính_disease'})
+MERGE (o2:disease {id: 'nhồi_máu_cơ_tim_disease'})
+MERGE (o1)-[r131:relatedTo]->(o2)
+SET r131.text = 'Tuy nhiên, trong trường hợp bệnh phát hiện và điều trị muộn, bệnh có thể tiến triển thành hội chứng mạch vành cấp, người bệnh có nguy cơ gặp cơn đau thắt ngực không ổn định, nhồi máu cơ tim, nguy hiểm nhất là đột tử.'
+
+MERGE (o1:disease {id: 'thiếu_máu_cơ_tim_cục_bộ_mạn_tính_disease'})
+MERGE (o2:symptom {id: 'đột_tử_symptom'})
+MERGE (o1)-[r132:relatedTo]->(o2)
+SET r132.text = 'Tuy nhiên, trong trường hợp bệnh phát hiện và điều trị muộn, bệnh có thể tiến triển thành hội chứng mạch vành cấp, người bệnh có nguy cơ gặp cơn đau thắt ngực không ổn định, nhồi máu cơ tim, nguy hiểm nhất là đột tử.'
+
+MERGE (o1:treatment {id: 'can_thiệp_điều_trị_sớm_treatment'})
+MERGE (o2:disease {id: 'thiếu_máu_cơ_tim_cục_bộ_mạn_tính_disease'})
+MERGE (o1)-[r133:treatedBy]->(o2)
+SET r133.text = 'Do đó, việc can thiệp điều trị sớm có ý nghĩa vô cùng quan trọng đối với bệnh nhân mắc căn bệnh này.'
+
+MERGE (o1:disease {id: 'bệnh_tim_thiếu_máu_cục_bộ_disease'})
+MERGE (o2:lifestyle {id: 'kiểm_soát_tốt_nhóm_yếu_tố_nguy_cơ_lifestyle'})
+MERGE (o1)-[r134:preventedBy]->(o2)
+SET r134.text = 'Người bệnh hoàn toàn có thể ngăn ngừa bệnh tim thiếu máu cục bộ bằng cách kiểm soát tốt nhóm yếu tố nguy cơ có thể thay đổi được.'
+
+MERGE (o1:lifestyle {id: 'hút_thuốc_lá_lifestyle'})
+MERGE (o2:disease {id: 'bệnh_tim_thiếu_máu_cục_bộ_disease'})
+MERGE (o1)-[r135:aggravatedBy]->(o2)
+SET r135.text = 'Cụ thể là:  Không hút thuốc lá, uống rượu bia và sử dụng các chất kích thích.'
+
+MERGE (o1:lifestyle {id: 'uống_rượu_bia_lifestyle'})
+MERGE (o2:disease {id: 'bệnh_tim_thiếu_máu_cục_bộ_disease'})
+MERGE (o1)-[r136:aggravatedBy]->(o2)
+SET r136.text = 'Cụ thể là:  Không hút thuốc lá, uống rượu bia và sử dụng các chất kích thích.'
+
+MERGE (o1:lifestyle {id: 'sử_dụng_các_chất_kích_thích_lifestyle'})
+MERGE (o2:disease {id: 'bệnh_tim_thiếu_máu_cục_bộ_disease'})
+MERGE (o1)-[r137:aggravatedBy]->(o2)
+SET r137.text = 'Cụ thể là:  Không hút thuốc lá, uống rượu bia và sử dụng các chất kích thích.'
+
+MERGE (o1:lifestyle {id: 'chế_độ_ăn_uống_khoa_học_lifestyle'})
+MERGE (o2:disease {id: 'bệnh_tim_thiếu_máu_cục_bộ_disease'})
+MERGE (o1)-[r138:preventedBy]->(o2)
+SET r138.text = 'Có chế độ ăn uống khoa học: không ăn nhiều chất béo, cholesterol như mỡ động vật, sữa béo, trứng, sữa, hạn chế ăn mặn…; nên ăn nhiều cá, rau củ quả…'
+
+MERGE (o1:food {id: 'chất_béo_food'})
+MERGE (o2:disease {id: 'bệnh_tim_thiếu_máu_cục_bộ_disease'})
+MERGE (o1)-[r139:aggravatedBy]->(o2)
+SET r139.text = 'Có chế độ ăn uống khoa học: không ăn nhiều chất béo, cholesterol như mỡ động vật, sữa béo, trứng, sữa, hạn chế ăn mặn…; nên ăn nhiều cá, rau củ quả…'
+
+MERGE (o1:food {id: 'cholesterol_food'})
+MERGE (o2:disease {id: 'bệnh_tim_thiếu_máu_cục_bộ_disease'})
+MERGE (o1)-[r140:aggravatedBy]->(o2)
+SET r140.text = 'Có chế độ ăn uống khoa học: không ăn nhiều chất béo, cholesterol như mỡ động vật, sữa béo, trứng, sữa, hạn chế ăn mặn…; nên ăn nhiều cá, rau củ quả…'
+
+MERGE (o1:food {id: 'mỡ_động_vật_food'})
+MERGE (o2:disease {id: 'bệnh_tim_thiếu_máu_cục_bộ_disease'})
+MERGE (o1)-[r141:aggravatedBy]->(o2)
+SET r141.text = 'Có chế độ ăn uống khoa học: không ăn nhiều chất béo, cholesterol như mỡ động vật, sữa béo, trứng, sữa, hạn chế ăn mặn…; nên ăn nhiều cá, rau củ quả…'
+
+MERGE (o1:food {id: 'sữa_béo_food'})
+MERGE (o2:disease {id: 'bệnh_tim_thiếu_máu_cục_bộ_disease'})
+MERGE (o1)-[r142:aggravatedBy]->(o2)
+SET r142.text = 'Có chế độ ăn uống khoa học: không ăn nhiều chất béo, cholesterol như mỡ động vật, sữa béo, trứng, sữa, hạn chế ăn mặn…; nên ăn nhiều cá, rau củ quả…'
+
+MERGE (o1:food {id: 'trứng_food'})
+MERGE (o2:disease {id: 'bệnh_tim_thiếu_máu_cục_bộ_disease'})
+MERGE (o1)-[r143:aggravatedBy]->(o2)
+SET r143.text = 'Có chế độ ăn uống khoa học: không ăn nhiều chất béo, cholesterol như mỡ động vật, sữa béo, trứng, sữa, hạn chế ăn mặn…; nên ăn nhiều cá, rau củ quả…'
+
+MERGE (o1:food {id: 'sữa_food'})
+MERGE (o2:disease {id: 'bệnh_tim_thiếu_máu_cục_bộ_disease'})
+MERGE (o1)-[r144:aggravatedBy]->(o2)
+SET r144.text = 'Có chế độ ăn uống khoa học: không ăn nhiều chất béo, cholesterol như mỡ động vật, sữa béo, trứng, sữa, hạn chế ăn mặn…; nên ăn nhiều cá, rau củ quả…'
+
+MERGE (o1:lifestyle {id: 'ăn_mặn_lifestyle'})
+MERGE (o2:disease {id: 'bệnh_tim_thiếu_máu_cục_bộ_disease'})
+MERGE (o1)-[r145:aggravatedBy]->(o2)
+SET r145.text = 'Có chế độ ăn uống khoa học: không ăn nhiều chất béo, cholesterol như mỡ động vật, sữa béo, trứng, sữa, hạn chế ăn mặn…; nên ăn nhiều cá, rau củ quả…'
+
+MERGE (o1:food {id: 'cá_food'})
+MERGE (o2:disease {id: 'bệnh_tim_thiếu_máu_cục_bộ_disease'})
+MERGE (o1)-[r146:preventedBy]->(o2)
+SET r146.text = 'Có chế độ ăn uống khoa học: không ăn nhiều chất béo, cholesterol như mỡ động vật, sữa béo, trứng, sữa, hạn chế ăn mặn…; nên ăn nhiều cá, rau củ quả…'
+
+MERGE (o1:food {id: 'rau_củ_quả_food'})
+MERGE (o2:disease {id: 'bệnh_tim_thiếu_máu_cục_bộ_disease'})
+MERGE (o1)-[r147:preventedBy]->(o2)
+SET r147.text = 'Có chế độ ăn uống khoa học: không ăn nhiều chất béo, cholesterol như mỡ động vật, sữa béo, trứng, sữa, hạn chế ăn mặn…; nên ăn nhiều cá, rau củ quả…'
+
+MERGE (o1:lifestyle {id: 'tập_luyện_thể_dục_hàng_ngày_lifestyle'})
+MERGE (o2:disease {id: 'bệnh_tim_thiếu_máu_cục_bộ_disease'})
+MERGE (o1)-[r148:preventedBy]->(o2)
+SET r148.text = 'Duy trì tập luyện thể dục hàng ngày, nên tham khảo ý kiến bác sĩ về môn thể thao và cường độ tập luyện phù hợp với thể trạng.'
+
+MERGE (o1:treatment {id: 'tập_luyện_thể_dục_treatment'})
+MERGE (o2:disease {id: 'bệnh_tim_thiếu_máu_cục_bộ_disease'})
+MERGE (o1)-[r149:treatedBy]->(o2)
+SET r149.text = 'Duy trì tập luyện thể dục hàng ngày, nên tham khảo ý kiến bác sĩ về môn thể thao và cường độ tập luyện phù hợp với thể trạng.'
+
+MERGE (o1:lifestyle {id: 'kiểm_soát_cân_nặng_lifestyle'})
+MERGE (o2:disease {id: 'bệnh_tim_thiếu_máu_cục_bộ_disease'})
+MERGE (o1)-[r150:preventedBy]->(o2)
+SET r150.text = 'Kiểm soát cân nặng, tránh thừa cân và béo phì.'
+
+MERGE (o1:lifestyle {id: 'thừa_cân_lifestyle'})
+MERGE (o2:disease {id: 'bệnh_tim_thiếu_máu_cục_bộ_disease'})
+MERGE (o1)-[r151:aggravatedBy]->(o2)
+SET r151.text = 'Kiểm soát cân nặng, tránh thừa cân và béo phì.'
+
+MERGE (o1:lifestyle {id: 'béo_phì_lifestyle'})
+MERGE (o2:disease {id: 'bệnh_tim_thiếu_máu_cục_bộ_disease'})
+MERGE (o1)-[r152:aggravatedBy]->(o2)
+SET r152.text = 'Kiểm soát cân nặng, tránh thừa cân và béo phì.'
+
+MERGE (o1:lifestyle {id: 'nghỉ_ngơi_hợp_lý_lifestyle'})
+MERGE (o2:disease {id: 'bệnh_tim_thiếu_máu_cục_bộ_disease'})
+MERGE (o1)-[r153:preventedBy]->(o2)
+SET r153.text = 'Nghỉ ngơi hợp lý, giữ tinh thần vui vẻ, tránh căng thẳng, stress kéo dài.'
+
+MERGE (o1:lifestyle {id: 'căng_thẳng_lifestyle'})
+MERGE (o2:disease {id: 'bệnh_tim_thiếu_máu_cục_bộ_disease'})
+MERGE (o1)-[r154:aggravatedBy]->(o2)
+SET r154.text = 'Nghỉ ngơi hợp lý, giữ tinh thần vui vẻ, tránh căng thẳng, stress kéo dài.'
+
+MERGE (o1:lifestyle {id: 'stress_kéo_dài_lifestyle'})
+MERGE (o2:disease {id: 'bệnh_tim_thiếu_máu_cục_bộ_disease'})
+MERGE (o1)-[r155:aggravatedBy]->(o2)
+SET r155.text = 'Nghỉ ngơi hợp lý, giữ tinh thần vui vẻ, tránh căng thẳng, stress kéo dài.'

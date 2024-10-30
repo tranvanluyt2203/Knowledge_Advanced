@@ -1,0 +1,1594 @@
+[
+    {
+        "text": "Cơn nhịp tim nhanh (hay còn gọi là loạn nhịp nhanh) có thể xuất phát từ tâm thất hoặc tâm nhĩ.",
+        "head": "Cơn nhịp tim nhanh",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Loạn nhịp nhanh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Cơn nhịp tim nhanh (hay còn gọi là loạn nhịp nhanh) có thể xuất phát từ tâm thất hoặc tâm nhĩ.",
+        "head": "Loạn nhịp nhanh",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "Tâm thất",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Cơn nhịp tim nhanh (hay còn gọi là loạn nhịp nhanh) có thể xuất phát từ tâm thất hoặc tâm nhĩ.",
+        "head": "Loạn nhịp nhanh",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "Tâm nhĩ",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Nhịp tim đập nhanh có thể khiến tim không thể thực hiện tốt nhiệm vụ bơm máu giàu oxy đến các cơ quan còn lại của cơ thể.",
+        "head": "Nhịp tim đập nhanh",
+        "head_type": "symptom",
+        "relation": "affects",
+        "tail": "Tim",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Nhịp tim đập nhanh có thể khiến tim không thể thực hiện tốt nhiệm vụ bơm máu giàu oxy đến các cơ quan còn lại của cơ thể.",
+        "head": "Nhịp tim đập nhanh",
+        "head_type": "symptom",
+        "relation": "affects",
+        "tail": "Cơ quan",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Tim đập nhanh (nhịp tim nhanh) được xác định khi tim đập hơn 100 lần một phút khi nghỉ ngơi.",
+        "head": "Tim đập nhanh",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Nhịp tim nhanh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Cơn nhịp tim nhanh có thể kéo dài từ vài giây cho đến vài giờ.",
+        "head": "Cơn nhịp tim nhanh",
+        "head_type": "symptom",
+        "relation": "relatedTo",
+        "tail": "Thời gian",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Nhịp tim tăng lên khi tập thể dục hoặc căng thẳng thường là một phản ứng sinh lý bình thường, nhưng nhịp tim nhanh khi nghỉ ngơi có thể là dấu hiệu sớm của một bệnh lý nguy hiểm đáng lo ngại.",
+        "head": "Nhịp tim tăng lên",
+        "head_type": "symptom",
+        "relation": "causedBy",
+        "tail": "Tập thể dục",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Nhịp tim tăng lên khi tập thể dục hoặc căng thẳng thường là một phản ứng sinh lý bình thường, nhưng nhịp tim nhanh khi nghỉ ngơi có thể là dấu hiệu sớm của một bệnh lý nguy hiểm đáng lo ngại.",
+        "head": "Nhịp tim tăng lên",
+        "head_type": "symptom",
+        "relation": "causedBy",
+        "tail": "Căng thẳng",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Nhịp tim tăng lên khi tập thể dục hoặc căng thẳng thường là một phản ứng sinh lý bình thường, nhưng nhịp tim nhanh khi nghỉ ngơi có thể là dấu hiệu sớm của một bệnh lý nguy hiểm đáng lo ngại.",
+        "head": "Nhịp tim nhanh khi nghỉ ngơi",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Bệnh lý nguy hiểm",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nhịp tim bình thường khi nghỉ ngơi của người lớn là từ 60 đến 100, thay đổi tùy theo tình trạng thể chất hoặc do ảnh hưởng của các bệnh lý kèm theo.",
+        "head": "Nhịp tim bình thường",
+        "head_type": "symptom",
+        "relation": "relatedTo",
+        "tail": "Tình trạng thể chất",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Nhịp tim bình thường khi nghỉ ngơi của người lớn là từ 60 đến 100, thay đổi tùy theo tình trạng thể chất hoặc do ảnh hưởng của các bệnh lý kèm theo.",
+        "head": "Nhịp tim bình thường",
+        "head_type": "symptom",
+        "relation": "relatedTo",
+        "tail": "Bệnh lý kèm theo",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đôi khi tim đập nhanh lại báo hiệu một vấn đề sức khỏe nghiêm trọng, vì vậy cần phải chẩn đoán sớm nguyên nhân của nhịp tim nhanh và xác định xem có cần áp dụng các biện pháp xử trí khẩn cấp cũng như lên kế hoạch điều trị lâu dài hay không.",
+        "head": "Tim đập nhanh",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Vấn đề sức khỏe nghiêm trọng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đôi khi tim đập nhanh lại báo hiệu một vấn đề sức khỏe nghiêm trọng, vì vậy cần phải chẩn đoán sớm nguyên nhân của nhịp tim nhanh và xác định xem có cần áp dụng các biện pháp xử trí khẩn cấp cũng như lên kế hoạch điều trị lâu dài hay không.",
+        "head": "Nhịp tim nhanh",
+        "head_type": "symptom",
+        "relation": "diagnosedBy",
+        "tail": "Chẩn đoán",
+        "tail_type": "test"
+    },
+    {
+        "text": "Đôi khi tim đập nhanh lại báo hiệu một vấn đề sức khỏe nghiêm trọng, vì vậy cần phải chẩn đoán sớm nguyên nhân của nhịp tim nhanh và xác định xem có cần áp dụng các biện pháp xử trí khẩn cấp cũng như lên kế hoạch điều trị lâu dài hay không.",
+        "head": "Nhịp tim nhanh",
+        "head_type": "symptom",
+        "relation": "treatedBy",
+        "tail": "Xử trí khẩn cấp",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Đôi khi tim đập nhanh lại báo hiệu một vấn đề sức khỏe nghiêm trọng, vì vậy cần phải chẩn đoán sớm nguyên nhân của nhịp tim nhanh và xác định xem có cần áp dụng các biện pháp xử trí khẩn cấp cũng như lên kế hoạch điều trị lâu dài hay không.",
+        "head": "Nhịp tim nhanh",
+        "head_type": "symptom",
+        "relation": "treatedBy",
+        "tail": "Điều trị lâu dài",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Trong một số trường hợp, nhịp tim nhanh không gây ra triệu chứng hay biến chứng nào.",
+        "head": "Nhịp tim nhanh",
+        "head_type": "symptom",
+        "relation": "relatedTo",
+        "tail": "Triệu chứng",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Trong một số trường hợp, nhịp tim nhanh không gây ra triệu chứng hay biến chứng nào.",
+        "head": "Nhịp tim nhanh",
+        "head_type": "symptom",
+        "relation": "relatedTo",
+        "tail": "Biến chứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tuy nhiên, ThS.BS.CKI Vũ Xuân Quang, Bác sĩ Trung tâm Tim mạch Bệnh viện Đa khoa Tâm Anh TP.HCM cho biết, một số loại loạn nhịp nhanh có thể dẫn đến các biến chứng nặng nề như suy tim, đột quỵ, ngất xỉu hay thậm chí đột tử nếu không được đánh giá đúng và điều trị kịp thời.",
+        "head": "Loạn nhịp nhanh",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Suy tim",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tuy nhiên, ThS.BS.CKI Vũ Xuân Quang, Bác sĩ Trung tâm Tim mạch Bệnh viện Đa khoa Tâm Anh TP.HCM cho biết, một số loại loạn nhịp nhanh có thể dẫn đến các biến chứng nặng nề như suy tim, đột quỵ, ngất xỉu hay thậm chí đột tử nếu không được đánh giá đúng và điều trị kịp thời.",
+        "head": "Loạn nhịp nhanh",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Đột quỵ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tuy nhiên, ThS.BS.CKI Vũ Xuân Quang, Bác sĩ Trung tâm Tim mạch Bệnh viện Đa khoa Tâm Anh TP.HCM cho biết, một số loại loạn nhịp nhanh có thể dẫn đến các biến chứng nặng nề như suy tim, đột quỵ, ngất xỉu hay thậm chí đột tử nếu không được đánh giá đúng và điều trị kịp thời.",
+        "head": "Loạn nhịp nhanh",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Ngất xỉu",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Tuy nhiên, ThS.BS.CKI Vũ Xuân Quang, Bác sĩ Trung tâm Tim mạch Bệnh viện Đa khoa Tâm Anh TP.HCM cho biết, một số loại loạn nhịp nhanh có thể dẫn đến các biến chứng nặng nề như suy tim, đột quỵ, ngất xỉu hay thậm chí đột tử nếu không được đánh giá đúng và điều trị kịp thời.",
+        "head": "Loạn nhịp nhanh",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Đột tử",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Tuy nhiên, ThS.BS.CKI Vũ Xuân Quang, Bác sĩ Trung tâm Tim mạch Bệnh viện Đa khoa Tâm Anh TP.HCM cho biết, một số loại loạn nhịp nhanh có thể dẫn đến các biến chứng nặng nề như suy tim, đột quỵ, ngất xỉu hay thậm chí đột tử nếu không được đánh giá đúng và điều trị kịp thời.",
+        "head": "Loạn nhịp nhanh",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "Điều trị",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "ThS.BS.CKI Vũ Xuân Quang cho biết, có nhiều loại loạn nhịp nhanh với mức độ nghiêm trọng khác nhau, từ ít hoặc không ảnh hưởng tới sức khỏe đến những loại loạn nhịp nặng đe dọa tính mạng, cần được chăm sóc y tế ngay lập tức.",
+        "head": "Loạn nhịp nhanh",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "Mức độ nghiêm trọng",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "ThS.BS.CKI Vũ Xuân Quang cho biết, có nhiều loại loạn nhịp nhanh với mức độ nghiêm trọng khác nhau, từ ít hoặc không ảnh hưởng tới sức khỏe đến những loại loạn nhịp nặng đe dọa tính mạng, cần được chăm sóc y tế ngay lập tức.",
+        "head": "Loạn nhịp nhanh",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "Chăm sóc y tế",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Loạn nhịp nhanh thường được phân loại dựa vào nơi xuất phát của ổ loạn nhịp.",
+        "head": "Loạn nhịp nhanh",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "Ổ loạn nhịp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nút xoang là “nhạc trưởng” của tim, từ đây phát ra các tín hiệu điện lan đến các phần khác của tim, giúp giữ nhịp tim đều đặn và thay đổi tùy theo nhu cầu của cơ thể.",
+        "head": "Nút xoang",
+        "head_type": "organ",
+        "relation": "locatedIn",
+        "tail": "Tim",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Nút xoang là “nhạc trưởng” của tim, từ đây phát ra các tín hiệu điện lan đến các phần khác của tim, giúp giữ nhịp tim đều đặn và thay đổi tùy theo nhu cầu của cơ thể.",
+        "head": "Nút xoang",
+        "head_type": "organ",
+        "relation": "affects",
+        "tail": "Nhịp tim",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Nhịp nhanh xoang xảy ra khi nút xoang hoạt động quá mức kể cả khi nghỉ ngơi.",
+        "head": "Nhịp nhanh xoang",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "Nút xoang",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Nhịp nhanh xoang xảy ra khi nút xoang hoạt động quá mức kể cả khi nghỉ ngơi.",
+        "head": "Nhịp nhanh xoang",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "Nghỉ ngơi",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Điều này có thể do tình trạng căng thẳng, hoặc là dấu hiệu của một số bệnh lý khác như thiếu máu, các vấn đề về tuyến giáp, nhiễm trùng hoặc tình trạng sức khỏe kém nói chung.",
+        "head": "Căng thẳng",
+        "head_type": "lifestyle",
+        "relation": "causes",
+        "tail": "Nhịp nhanh xoang",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Điều này có thể do tình trạng căng thẳng, hoặc là dấu hiệu của một số bệnh lý khác như thiếu máu, các vấn đề về tuyến giáp, nhiễm trùng hoặc tình trạng sức khỏe kém nói chung.",
+        "head": "Thiếu máu",
+        "head_type": "disease",
+        "relation": "causes",
+        "tail": "Nhịp nhanh xoang",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Điều này có thể do tình trạng căng thẳng, hoặc là dấu hiệu của một số bệnh lý khác như thiếu máu, các vấn đề về tuyến giáp, nhiễm trùng hoặc tình trạng sức khỏe kém nói chung.",
+        "head": "Các vấn đề về tuyến giáp",
+        "head_type": "disease",
+        "relation": "causes",
+        "tail": "Nhịp nhanh xoang",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Điều này có thể do tình trạng căng thẳng, hoặc là dấu hiệu của một số bệnh lý khác như thiếu máu, các vấn đề về tuyến giáp, nhiễm trùng hoặc tình trạng sức khỏe kém nói chung.",
+        "head": "Nhiễm trùng",
+        "head_type": "disease",
+        "relation": "causes",
+        "tail": "Nhịp nhanh xoang",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Điều này có thể do tình trạng căng thẳng, hoặc là dấu hiệu của một số bệnh lý khác như thiếu máu, các vấn đề về tuyến giáp, nhiễm trùng hoặc tình trạng sức khỏe kém nói chung.",
+        "head": "Tình trạng sức khỏe kém",
+        "head_type": "disease",
+        "relation": "causes",
+        "tail": "Nhịp nhanh xoang",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đôi khi các rối loạn của bản thân nút xoang cũng là nguyên nhân gây ra nhịp nhanh xoang.",
+        "head": "Rối loạn của nút xoang",
+        "head_type": "disease",
+        "relation": "causes",
+        "tail": "Nhịp nhanh xoang",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các loại loạn nhịp nhanh xuất phát từ vùng trên tâm thất thường được gọi chung là nhịp nhanh trên thất.",
+        "head": "Loạn nhịp nhanh",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "Nhịp nhanh trên thất",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các loại loạn nhịp nhanh xuất phát từ vùng trên tâm thất thường được gọi chung là nhịp nhanh trên thất.",
+        "head": "Nhịp nhanh trên thất",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "Tâm thất",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Nhịp nhanh trên thất có vẻ ít gây đe dọa tính mạng hơn nhịp nhanh thất, tuy nhiên nếu nhịp tim quá nhanh có thể khiến tim co bóp không hiệu quả, làm giảm lưu lượng máu đến các cơ quan, gây tụt huyết áp và về lâu dài có thể dẫn đến suy tim.",
+        "head": "Nhịp nhanh trên thất",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "Nhịp nhanh thất",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nhịp nhanh trên thất có vẻ ít gây đe dọa tính mạng hơn nhịp nhanh thất, tuy nhiên nếu nhịp tim quá nhanh có thể khiến tim co bóp không hiệu quả, làm giảm lưu lượng máu đến các cơ quan, gây tụt huyết áp và về lâu dài có thể dẫn đến suy tim.",
+        "head": "Nhịp tim quá nhanh",
+        "head_type": "symptom",
+        "relation": "affects",
+        "tail": "Tim",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Nhịp nhanh trên thất có vẻ ít gây đe dọa tính mạng hơn nhịp nhanh thất, tuy nhiên nếu nhịp tim quá nhanh có thể khiến tim co bóp không hiệu quả, làm giảm lưu lượng máu đến các cơ quan, gây tụt huyết áp và về lâu dài có thể dẫn đến suy tim.",
+        "head": "Nhịp tim quá nhanh",
+        "head_type": "symptom",
+        "relation": "affects",
+        "tail": "Lưu lượng máu",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Nhịp nhanh trên thất có vẻ ít gây đe dọa tính mạng hơn nhịp nhanh thất, tuy nhiên nếu nhịp tim quá nhanh có thể khiến tim co bóp không hiệu quả, làm giảm lưu lượng máu đến các cơ quan, gây tụt huyết áp và về lâu dài có thể dẫn đến suy tim.",
+        "head": "Nhịp tim quá nhanh",
+        "head_type": "symptom",
+        "relation": "affects",
+        "tail": "Cơ quan",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Nhịp nhanh trên thất có vẻ ít gây đe dọa tính mạng hơn nhịp nhanh thất, tuy nhiên nếu nhịp tim quá nhanh có thể khiến tim co bóp không hiệu quả, làm giảm lưu lượng máu đến các cơ quan, gây tụt huyết áp và về lâu dài có thể dẫn đến suy tim.",
+        "head": "Nhịp tim quá nhanh",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Tụt huyết áp",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Nhịp nhanh trên thất có vẻ ít gây đe dọa tính mạng hơn nhịp nhanh thất, tuy nhiên nếu nhịp tim quá nhanh có thể khiến tim co bóp không hiệu quả, làm giảm lưu lượng máu đến các cơ quan, gây tụt huyết áp và về lâu dài có thể dẫn đến suy tim.",
+        "head": "Nhịp tim quá nhanh",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Suy tim",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Hai loại nhịp tim nhanh trên thất đáng chú ý là cuồng nhĩ và rung nhĩ có thể tạo ra cục máu đông dẫn đến đột quỵ nếu không được phát hiện và điều trị kịp thời.",
+        "head": "Cuồng nhĩ",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Nhịp tim nhanh trên thất",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Hai loại nhịp tim nhanh trên thất đáng chú ý là cuồng nhĩ và rung nhĩ có thể tạo ra cục máu đông dẫn đến đột quỵ nếu không được phát hiện và điều trị kịp thời.",
+        "head": "Rung nhĩ",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Nhịp tim nhanh trên thất",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Hai loại nhịp tim nhanh trên thất đáng chú ý là cuồng nhĩ và rung nhĩ có thể tạo ra cục máu đông dẫn đến đột quỵ nếu không được phát hiện và điều trị kịp thời.",
+        "head": "Cuồng nhĩ",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Cục máu đông",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Hai loại nhịp tim nhanh trên thất đáng chú ý là cuồng nhĩ và rung nhĩ có thể tạo ra cục máu đông dẫn đến đột quỵ nếu không được phát hiện và điều trị kịp thời.",
+        "head": "Rung nhĩ",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Cục máu đông",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Hai loại nhịp tim nhanh trên thất đáng chú ý là cuồng nhĩ và rung nhĩ có thể tạo ra cục máu đông dẫn đến đột quỵ nếu không được phát hiện và điều trị kịp thời.",
+        "head": "Cục máu đông",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Đột quỵ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Hai loại nhịp tim nhanh trên thất đáng chú ý là cuồng nhĩ và rung nhĩ có thể tạo ra cục máu đông dẫn đến đột quỵ nếu không được phát hiện và điều trị kịp thời.",
+        "head": "Cuồng nhĩ",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "Điều trị",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Hai loại nhịp tim nhanh trên thất đáng chú ý là cuồng nhĩ và rung nhĩ có thể tạo ra cục máu đông dẫn đến đột quỵ nếu không được phát hiện và điều trị kịp thời.",
+        "head": "Rung nhĩ",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "Điều trị",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Tâm thất là nơi trực tiếp bơm máu từ tim đến các bộ phận khác trong cơ thể.",
+        "head": "Tâm thất",
+        "head_type": "organ",
+        "relation": "locatedIn",
+        "tail": "Tim",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Tâm thất là nơi trực tiếp bơm máu từ tim đến các bộ phận khác trong cơ thể.",
+        "head": "Tâm thất",
+        "head_type": "organ",
+        "relation": "affects",
+        "tail": "Máu",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Tâm thất là nơi trực tiếp bơm máu từ tim đến các bộ phận khác trong cơ thể.",
+        "head": "Tâm thất",
+        "head_type": "organ",
+        "relation": "affects",
+        "tail": "Cơ thể",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Cơn nhịp nhanh xuất phát từ tâm thất thường làm giảm nghiêm trọng khả năng co bóp của tim gây tụt huyết áp, ngất và thậm chí dẫn đến tử vong nếu cơn loạn nhịp kéo dài mà không được xử trí kịp thời.",
+        "head": "Cơn nhịp nhanh",
+        "head_type": "symptom",
+        "relation": "relatedTo",
+        "tail": "Tâm thất",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Cơn nhịp nhanh xuất phát từ tâm thất thường làm giảm nghiêm trọng khả năng co bóp của tim gây tụt huyết áp, ngất và thậm chí dẫn đến tử vong nếu cơn loạn nhịp kéo dài mà không được xử trí kịp thời.",
+        "head": "Cơn nhịp nhanh",
+        "head_type": "symptom",
+        "relation": "affects",
+        "tail": "Tim",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Cơn nhịp nhanh xuất phát từ tâm thất thường làm giảm nghiêm trọng khả năng co bóp của tim gây tụt huyết áp, ngất và thậm chí dẫn đến tử vong nếu cơn loạn nhịp kéo dài mà không được xử trí kịp thời.",
+        "head": "Cơn nhịp nhanh",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Tụt huyết áp",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Cơn nhịp nhanh xuất phát từ tâm thất thường làm giảm nghiêm trọng khả năng co bóp của tim gây tụt huyết áp, ngất và thậm chí dẫn đến tử vong nếu cơn loạn nhịp kéo dài mà không được xử trí kịp thời.",
+        "head": "Cơn nhịp nhanh",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Ngất",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Cơn nhịp nhanh xuất phát từ tâm thất thường làm giảm nghiêm trọng khả năng co bóp của tim gây tụt huyết áp, ngất và thậm chí dẫn đến tử vong nếu cơn loạn nhịp kéo dài mà không được xử trí kịp thời.",
+        "head": "Cơn nhịp nhanh",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Tử vong",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Cơn nhịp nhanh xuất phát từ tâm thất thường làm giảm nghiêm trọng khả năng co bóp của tim gây tụt huyết áp, ngất và thậm chí dẫn đến tử vong nếu cơn loạn nhịp kéo dài mà không được xử trí kịp thời.",
+        "head": "Cơn loạn nhịp",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "Thời gian",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Bệnh nhân có thể có các triệu chứng khác nhau từ nhẹ đến nặng, hoặc đôi khi không cảm nhận triệu chứng.",
+        "head": "Các triệu chứng",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Nhịp tim nhanh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các triệu chứng thường gặp bao gồm:  Hụt hơi Đau ngực Tim đập nhanh Chóng mặt Lâng lâng Ngất xỉu",
+        "head": "Hụt hơi",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Nhịp tim nhanh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các triệu chứng thường gặp bao gồm:  Hụt hơi Đau ngực Tim đập nhanh Chóng mặt Lâng lâng Ngất xỉu",
+        "head": "Đau ngực",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Nhịp tim nhanh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các triệu chứng thường gặp bao gồm:  Hụt hơi Đau ngực Tim đập nhanh Chóng mặt Lâng lâng Ngất xỉu",
+        "head": "Tim đập nhanh",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Nhịp tim nhanh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các triệu chứng thường gặp bao gồm:  Hụt hơi Đau ngực Tim đập nhanh Chóng mặt Lâng lâng Ngất xỉu",
+        "head": "Chóng mặt",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Nhịp tim nhanh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các triệu chứng thường gặp bao gồm:  Hụt hơi Đau ngực Tim đập nhanh Chóng mặt Lâng lâng Ngất xỉu",
+        "head": "Lâng lâng",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Nhịp tim nhanh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các triệu chứng thường gặp bao gồm:  Hụt hơi Đau ngực Tim đập nhanh Chóng mặt Lâng lâng Ngất xỉu",
+        "head": "Ngất xỉu",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Nhịp tim nhanh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu không điều trị, một số loại nhịp tim nhanh có thể dẫn đến các cục máu đông, đột quỵ hay tim ngừng đập.",
+        "head": "Cục máu đông",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Nhịp tim nhanh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu không điều trị, một số loại nhịp tim nhanh có thể dẫn đến các cục máu đông, đột quỵ hay tim ngừng đập.",
+        "head": "Đột quỵ",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Nhịp tim nhanh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu không điều trị, một số loại nhịp tim nhanh có thể dẫn đến các cục máu đông, đột quỵ hay tim ngừng đập.",
+        "head": "Tim ngừng đập",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Nhịp tim nhanh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Chóng mặt là triệu chứng thường gặp của chứng nhịp tim nhanh.",
+        "head": "Chóng mặt",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Nhịp tim nhanh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nhịp tim nhanh do nguyên nhân sinh lý hoặc bệnh lý.",
+        "head": "Nhịp tim nhanh",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Nguyên nhân sinh lý",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Nhịp tim nhanh do nguyên nhân sinh lý hoặc bệnh lý.",
+        "head": "Nhịp tim nhanh",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Nguyên nhân bệnh lý",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Tim đập nhanh liên quan đến tăng hoạt động hệ thần kinh giao cảm, ví dụ như tập thể dục, căng thẳng, đau đớn hay lo lắng thường là đáp ứng sinh lý tự nhiên của cơ thể.",
+        "head": "Tim đập nhanh",
+        "head_type": "symptom",
+        "relation": "causedBy",
+        "tail": "Tăng hoạt động hệ thần kinh giao cảm",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Tim đập nhanh liên quan đến tăng hoạt động hệ thần kinh giao cảm, ví dụ như tập thể dục, căng thẳng, đau đớn hay lo lắng thường là đáp ứng sinh lý tự nhiên của cơ thể.",
+        "head": "Tập thể dục",
+        "head_type": "lifestyle",
+        "relation": "causedBy",
+        "tail": "Tim đập nhanh",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Tim đập nhanh liên quan đến tăng hoạt động hệ thần kinh giao cảm, ví dụ như tập thể dục, căng thẳng, đau đớn hay lo lắng thường là đáp ứng sinh lý tự nhiên của cơ thể.",
+        "head": "Căng thẳng",
+        "head_type": "lifestyle",
+        "relation": "causedBy",
+        "tail": "Tim đập nhanh",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Tim đập nhanh liên quan đến tăng hoạt động hệ thần kinh giao cảm, ví dụ như tập thể dục, căng thẳng, đau đớn hay lo lắng thường là đáp ứng sinh lý tự nhiên của cơ thể.",
+        "head": "Đau đớn",
+        "head_type": "symptom",
+        "relation": "causedBy",
+        "tail": "Tim đập nhanh",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Tim đập nhanh liên quan đến tăng hoạt động hệ thần kinh giao cảm, ví dụ như tập thể dục, căng thẳng, đau đớn hay lo lắng thường là đáp ứng sinh lý tự nhiên của cơ thể.",
+        "head": "Lo lắng",
+        "head_type": "symptom",
+        "relation": "causedBy",
+        "tail": "Tim đập nhanh",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Các nguyên nhân bệnh lý khiến tim đập nhanh có thể là do tim hoặc ngoài tim.",
+        "head": "Tim đập nhanh",
+        "head_type": "symptom",
+        "relation": "causedBy",
+        "tail": "Nguyên nhân bệnh lý",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Các nguyên nhân bệnh lý khiến tim đập nhanh có thể là do tim hoặc ngoài tim.",
+        "head": "Tim đập nhanh",
+        "head_type": "symptom",
+        "relation": "causedBy",
+        "tail": "Bệnh lý tim",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các nguyên nhân bệnh lý khiến tim đập nhanh có thể là do tim hoặc ngoài tim.",
+        "head": "Tim đập nhanh",
+        "head_type": "symptom",
+        "relation": "causedBy",
+        "tail": "Bệnh lý ngoài tim",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nhịp nhanh trên thất: Đây là một nhóm gồm rất nhiều loại bệnh lý do các ổ tín hiệu điện bất thường xuất phát từ vùng trên tâm thất khiến tim đập nhanh và không thể bơm máu hiệu quả;",
+        "head": "Nhịp nhanh trên thất",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Các ổ tín hiệu điện bất thường",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Nhịp nhanh trên thất: Đây là một nhóm gồm rất nhiều loại bệnh lý do các ổ tín hiệu điện bất thường xuất phát từ vùng trên tâm thất khiến tim đập nhanh và không thể bơm máu hiệu quả;",
+        "head": "Nhịp nhanh trên thất",
+        "head_type": "disease",
+        "relation": "locatedIn",
+        "tail": "Vùng trên tâm thất",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Nhịp nhanh trên thất: Đây là một nhóm gồm rất nhiều loại bệnh lý do các ổ tín hiệu điện bất thường xuất phát từ vùng trên tâm thất khiến tim đập nhanh và không thể bơm máu hiệu quả;",
+        "head": "Nhịp nhanh trên thất",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Tim",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Nhịp nhanh thất: Các tín hiệu điện bất thường xuất phát từ tâm thất khiến tim đập nhanh hơn.",
+        "head": "Nhịp nhanh thất",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Các tín hiệu điện bất thường",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Nhịp nhanh thất: Các tín hiệu điện bất thường xuất phát từ tâm thất khiến tim đập nhanh hơn.",
+        "head": "Nhịp nhanh thất",
+        "head_type": "disease",
+        "relation": "locatedIn",
+        "tail": "Tâm thất",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Do tâm thất là nơi trực tiếp bơm máu từ tim đến các cơ quan khác nên nhịp nhanh thất thường gây ra triệu chứng nặng nề hơn, có thể gây ngất hay thậm chí dẫn đến tử vong;",
+        "head": "Tâm thất",
+        "head_type": "organ",
+        "relation": "affects",
+        "tail": "Tim",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Do tâm thất là nơi trực tiếp bơm máu từ tim đến các cơ quan khác nên nhịp nhanh thất thường gây ra triệu chứng nặng nề hơn, có thể gây ngất hay thậm chí dẫn đến tử vong;",
+        "head": "Nhịp nhanh thất",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Tâm thất",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Do tâm thất là nơi trực tiếp bơm máu từ tim đến các cơ quan khác nên nhịp nhanh thất thường gây ra triệu chứng nặng nề hơn, có thể gây ngất hay thậm chí dẫn đến tử vong;",
+        "head": "Nhịp nhanh thất",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Ngất",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Do tâm thất là nơi trực tiếp bơm máu từ tim đến các cơ quan khác nên nhịp nhanh thất thường gây ra triệu chứng nặng nề hơn, có thể gây ngất hay thậm chí dẫn đến tử vong;",
+        "head": "Nhịp nhanh thất",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Tử vong",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Rung thất: Đây là dạng rối loạn nhịp nhanh nguy hiểm nhất, thường dẫn đến tử vong nếu không được cấp cứu kịp thời;",
+        "head": "Rung thất",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Tử vong",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Suy tim;",
+        "head": "Suy tim",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Nhịp tim nhanh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Hội chứng mạch vành cấp;",
+        "head": "Hội chứng mạch vành cấp",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Nhịp tim nhanh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Viêm cơ tim;",
+        "head": "Viêm cơ tim",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Nhịp tim nhanh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Chèn ép tim.",
+        "head": "Chèn ép tim",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Nhịp tim nhanh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Hô hấp: Thuyên tắc phổi hoặc các tình trạng gây suy hô hấp, giảm oxy máu;",
+        "head": "Thuyên tắc phổi",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Nhịp tim nhanh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Hô hấp: Thuyên tắc phổi hoặc các tình trạng gây suy hô hấp, giảm oxy máu;",
+        "head": "Suy hô hấp",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Nhịp tim nhanh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Hô hấp: Thuyên tắc phổi hoặc các tình trạng gây suy hô hấp, giảm oxy máu;",
+        "head": "Giảm oxy máu",
+        "head_type": "symptom",
+        "relation": "causedBy",
+        "tail": "Nhịp tim nhanh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các bệnh lý nhiễm trùng;",
+        "head": "Các bệnh lý nhiễm trùng",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Nhịp tim nhanh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Cường giáp;",
+        "head": "Cường giáp",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Nhịp tim nhanh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Thiếu máu cấp tính hoặc mạn tính;",
+        "head": "Thiếu máu cấp tính",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Nhịp tim nhanh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Thiếu máu cấp tính hoặc mạn tính;",
+        "head": "Thiếu máu mạn tính",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Nhịp tim nhanh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ngộ độc một số thuốc và độc chất;",
+        "head": "Ngộ độc",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Nhịp tim nhanh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Hạ đường huyết;",
+        "head": "Hạ đường huyết",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Nhịp tim nhanh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "mất nước;",
+        "head": "Mất nước",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Nhịp tim nhanh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "rối loạn điện giải.",
+        "head": "Rối loạn điện giải",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Nhịp tim nhanh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Hút thuốc lá, sử dụng các sản phẩm từ thuốc lá;",
+        "head": "Hút thuốc lá",
+        "head_type": "lifestyle",
+        "relation": "causedBy",
+        "tail": "Nhịp tim nhanh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Có tiền sử gia đình bị nhịp tim nhanh;",
+        "head": "Tiền sử gia đình bị nhịp tim nhanh",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Nhịp tim nhanh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các stress về thể chất và tâm lý;",
+        "head": "Stress",
+        "head_type": "lifestyle",
+        "relation": "causedBy",
+        "tail": "Nhịp tim nhanh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tăng huyết áp;",
+        "head": "Tăng huyết áp",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Nhịp tim nhanh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Thừa cân/Béo phì;",
+        "head": "Thừa cân",
+        "head_type": "lifestyle",
+        "relation": "causedBy",
+        "tail": "Nhịp tim nhanh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Thừa cân/Béo phì;",
+        "head": "Béo phì",
+        "head_type": "lifestyle",
+        "relation": "causedBy",
+        "tail": "Nhịp tim nhanh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Uống nhiều caffeine hoặc rượu;",
+        "head": "Caffeine",
+        "head_type": "food",
+        "relation": "causedBy",
+        "tail": "Nhịp tim nhanh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Uống nhiều caffeine hoặc rượu;",
+        "head": "Rượu",
+        "head_type": "food",
+        "relation": "causedBy",
+        "tail": "Nhịp tim nhanh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Mắc các bệnh lý tim mạch.",
+        "head": "Các bệnh lý tim mạch",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Nhịp tim nhanh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bác sĩ sẽ thăm khám và hỏi bệnh sử về các triệu chứng, thói quen và tiền sử bệnh để đánh giá người bệnh có nguy cơ bị nhịp tim nhanh hay không.",
+        "head": "Bác sĩ",
+        "head_type": "treatment",
+        "relation": "diagnosedBy",
+        "tail": "Nhịp tim nhanh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các kiểm tra cận lâm sàng được thực hiện để xác nhận nhịp tim nhanh bất thường và tìm kiếm các bệnh lý có thể gây ra loạn nhịp tim.",
+        "head": "Kiểm tra cận lâm sàng",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "Nhịp tim nhanh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các xét nghiệm để chẩn đoán nhịp tim nhanh bao gồm:",
+        "head": "Các xét nghiệm",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "Nhịp tim nhanh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đo và ghi lại hình ảnh hoạt động điện của tim, cho phép bác sĩ phát hiện ra những bất thường.",
+        "head": "Đo điện tâm đồ",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "Nhịp tim nhanh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Dùng để theo dõi liên tục điện tâm đồ người bệnh tại nhà, tùy theo đánh giá mà bác sĩ có thể chỉ định đeo trong 24h hoặc nhiều ngày hơn để ghi nhận hoạt động điện tim trong các sinh hoạt hàng ngày và ghi nhận các cơn loạn nhịp xuất hiện trong thời gian theo dõi.",
+        "head": "Theo dõi điện tâm đồ",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "Nhịp tim nhanh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Sử dụng sóng siêu âm để tạo ra hình ảnh của tim nhằm đánh giá chức năng tim, van tim và các bất thường cơ tim.",
+        "head": "Siêu âm tim",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "Nhịp tim nhanh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Kỹ thuật này nhằm phát hiện các bất thường về tim, phổi và màng phổi.",
+        "head": "Chụp X-quang ngực",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "Nhịp tim nhanh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Cung cấp hình ảnh chi tiết về các buồng tim, cơ tim để đánh giá chuyên sâu các bệnh lý cơ tim và tình trạng sẹo hóa cơ tim.",
+        "head": "Chụp cộng hưởng từ tim",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "Nhịp tim nhanh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Cung cấp hình ảnh chi tiết về tim, phổi và mạch máu của vùng được khảo sát. Tùy vào tình trạng bệnh lý mà bác sĩ có thể lựa chọn giữa chụp cắt lớp vi tính và chụp cộng hưởng từ tim, hoặc kết hợp cả hai để phục vụ công tác chẩn đoán và điều trị.",
+        "head": "Chụp cắt lớp vi tính",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "Nhịp tim nhanh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Cung cấp hình ảnh chi tiết về tim, phổi và mạch máu của vùng được khảo sát. Tùy vào tình trạng bệnh lý mà bác sĩ có thể lựa chọn giữa chụp cắt lớp vi tính và chụp cộng hưởng từ tim, hoặc kết hợp cả hai để phục vụ công tác chẩn đoán và điều trị.",
+        "head": "Chụp cộng hưởng từ tim",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "Nhịp tim nhanh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đưa dụng cụ đến các mạch máu nuôi tim để kiểm tra và can thiệp các mạch máu bị tắc hoặc hẹp trong tim, bằng cách sử dụng thuốc cản quang và tia X đặc biệt để hiển thị bên trong động mạch vành. Chụp mạch vành có thể được thực hiện để tìm nguyên nhân gây ra nhịp nhanh thất hoặc rung thất.",
+        "head": "Chụp mạch vành",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "Nhịp tim nhanh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đưa các điện cực vào buồng tim để xác nhận chẩn đoán nhịp tim nhanh và xác định vị trí ổ loạn nhịp trong tim. Khảo sát điện sinh lý thường được thực hiện kết hợp với triệt đốt ổ loạn nhịp nếu có chỉ định.",
+        "head": "Khảo sát điện sinh lý",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "Nhịp tim nhanh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Thường được dùng để đánh giá những bệnh nhân có triệu chứng ngất.",
+        "head": "Nghiệm pháp nghiêng bàn",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "Nhịp tim nhanh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Trong quá trình thực hiện nghiệm pháp, nhịp tim và huyết áp của người bệnh sẽ được theo dõi liên tục.",
+        "head": "Nghiệm pháp nghiêng bàn",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "Nhịp tim nhanh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Dưới sự giám sát cẩn thận của bác sĩ, chiếc bàn được nghiêng đến vị trí tương tự tư thế đứng, và sử dụng một loại thuốc để đánh giá tình trạng ngất cũng như những thay đổi về nhịp tim, huyết áp nếu cơn ngất xảy ra.",
+        "head": "Nghiệm pháp nghiêng bàn",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "Nhịp tim nhanh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Một số loại nhịp tim nhanh có thể được kích hoạt khi gắng sức.",
+        "head": "Nghiệm pháp gắng sức",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "Nhịp tim nhanh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Trong nghiệm pháp gắng sức, bác sĩ sẽ theo dõi điện tâm đồ liên tục khi bệnh nhân gắng sức bằng cách đạp xe đạp hoặc đi bộ trên máy chạy bộ.",
+        "head": "Nghiệm pháp gắng sức",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "Nhịp tim nhanh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nghiệm pháp gắng sức còn được dùng để đánh giá tình trạng hẹp mạch vành tim.",
+        "head": "Nghiệm pháp gắng sức",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "Hẹp mạch vành tim",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Theo ThS.BS.CKI Vũ Xuân Quang, một số loại nhịp tim nhanh rất nguy hiểm, đặc biệt là rung tâm thất.",
+        "head": "rung tâm thất",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "nhịp tim nhanh",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Theo ThS.BS.CKI Vũ Xuân Quang, một số loại nhịp tim nhanh rất nguy hiểm, đặc biệt là rung tâm thất. Rung thất có thể gây tử vong nếu không được điều trị ngay lập tức.",
+        "head": "rung tâm thất",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "tử vong",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Ngược lại, một số nhịp tim nhanh nhẹ hoặc gây ra các vấn đề nguy hiểm vừa phải.",
+        "head": "nhịp tim nhanh nhẹ",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "nhịp tim nhanh",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Nếu người bệnh bị nhịp nhanh xoang do căng thẳng, các triệu chứng sẽ biến mất khi nỗi sợ hãi, lo lắng hoặc kích động chấm dứt.",
+        "head": "nhịp nhanh xoang",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "căng thẳng",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Nếu người bệnh bị nhịp nhanh xoang do căng thẳng, các triệu chứng sẽ biến mất khi nỗi sợ hãi, lo lắng hoặc kích động chấm dứt.",
+        "head": "nhịp nhanh xoang",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "nỗi sợ hãi",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Nếu người bệnh bị nhịp nhanh xoang do căng thẳng, các triệu chứng sẽ biến mất khi nỗi sợ hãi, lo lắng hoặc kích động chấm dứt.",
+        "head": "nhịp nhanh xoang",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "lo lắng",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Nếu người bệnh bị nhịp nhanh xoang do căng thẳng, các triệu chứng sẽ biến mất khi nỗi sợ hãi, lo lắng hoặc kích động chấm dứt.",
+        "head": "nhịp nhanh xoang",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "kích động",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Đối với hầu hết các loại nhịp tim nhanh khác, người bệnh sẽ cần dùng thuốc hoặc can thiệp thủ thuật để ngăn các triệu chứng quay trở lại.",
+        "head": "nhịp tim nhanh",
+        "head_type": "symptom",
+        "relation": "treatedBy",
+        "tail": "thuốc",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Đối với hầu hết các loại nhịp tim nhanh khác, người bệnh sẽ cần dùng thuốc hoặc can thiệp thủ thuật để ngăn các triệu chứng quay trở lại.",
+        "head": "nhịp tim nhanh",
+        "head_type": "symptom",
+        "relation": "treatedBy",
+        "tail": "can thiệp thủ thuật",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Mặc dù thuốc không thể chữa khỏi chứng nhịp tim nhanh nhưng có thể giúp điều chỉnh nhịp tim nhanh.",
+        "head": "thuốc",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "nhịp tim nhanh",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Bên cạnh đó, can thiệp triệt đốt ổ loạn nhịp là một giải pháp lâu dài cho rất nhiều loại loạn nhịp nhanh.",
+        "head": "can thiệp triệt đốt ổ loạn nhịp",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "loạn nhịp nhanh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Theo ThS.BS.CKI Vũ Xuân Quang, tùy thuộc vào loại nhịp tim nhanh, bác sĩ sẽ áp dụng các phương pháp điều trị khác nhau.",
+        "head": "nhịp tim nhanh",
+        "head_type": "symptom",
+        "relation": "treatedBy",
+        "tail": "các phương pháp điều trị",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Thực hiện nghiệm pháp vagal như xoa xoang cảnh dưới sự hướng dẫn của bác sĩ; Tránh stress; Tránh sử dụng rượu bia, caffeine và các chất kích thích khác; Sử dụng thuốc; Sốc điện chuyển nhịp; Triệt đốt ổ loạn nhịp.",
+        "head": "nghiệm pháp vagal",
+        "head_type": "test",
+        "relation": "treatedBy",
+        "tail": "nhịp tim nhanh",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Thực hiện nghiệm pháp vagal như xoa xoang cảnh dưới sự hướng dẫn của bác sĩ; Tránh stress; Tránh sử dụng rượu bia, caffeine và các chất kích thích khác; Sử dụng thuốc; Sốc điện chuyển nhịp; Triệt đốt ổ loạn nhịp.",
+        "head": "xoa xoang cảnh",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "nhịp tim nhanh",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Thực hiện nghiệm pháp vagal như xoa xoang cảnh dưới sự hướng dẫn của bác sĩ; Tránh stress; Tránh sử dụng rượu bia, caffeine và các chất kích thích khác; Sử dụng thuốc; Sốc điện chuyển nhịp; Triệt đốt ổ loạn nhịp.",
+        "head": "stress",
+        "head_type": "lifestyle",
+        "relation": "aggravatedBy",
+        "tail": "nhịp tim nhanh",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Thực hiện nghiệm pháp vagal như xoa xoang cảnh dưới sự hướng dẫn của bác sĩ; Tránh stress; Tránh sử dụng rượu bia, caffeine và các chất kích thích khác; Sử dụng thuốc; Sốc điện chuyển nhịp; Triệt đốt ổ loạn nhịp.",
+        "head": "rượu bia",
+        "head_type": "food",
+        "relation": "aggravatedBy",
+        "tail": "nhịp tim nhanh",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Thực hiện nghiệm pháp vagal như xoa xoang cảnh dưới sự hướng dẫn của bác sĩ; Tránh stress; Tránh sử dụng rượu bia, caffeine và các chất kích thích khác; Sử dụng thuốc; Sốc điện chuyển nhịp; Triệt đốt ổ loạn nhịp.",
+        "head": "caffeine",
+        "head_type": "food",
+        "relation": "aggravatedBy",
+        "tail": "nhịp tim nhanh",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Thực hiện nghiệm pháp vagal như xoa xoang cảnh dưới sự hướng dẫn của bác sĩ; Tránh stress; Tránh sử dụng rượu bia, caffeine và các chất kích thích khác; Sử dụng thuốc; Sốc điện chuyển nhịp; Triệt đốt ổ loạn nhịp.",
+        "head": "các chất kích thích",
+        "head_type": "food",
+        "relation": "aggravatedBy",
+        "tail": "nhịp tim nhanh",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Thực hiện nghiệm pháp vagal như xoa xoang cảnh dưới sự hướng dẫn của bác sĩ; Tránh stress; Tránh sử dụng rượu bia, caffeine và các chất kích thích khác; Sử dụng thuốc; Sốc điện chuyển nhịp; Triệt đốt ổ loạn nhịp.",
+        "head": "thuốc",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "nhịp tim nhanh",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Thực hiện nghiệm pháp vagal như xoa xoang cảnh dưới sự hướng dẫn của bác sĩ; Tránh stress; Tránh sử dụng rượu bia, caffeine và các chất kích thích khác; Sử dụng thuốc; Sốc điện chuyển nhịp; Triệt đốt ổ loạn nhịp.",
+        "head": "sốc điện chuyển nhịp",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "nhịp tim nhanh",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Thực hiện nghiệm pháp vagal như xoa xoang cảnh dưới sự hướng dẫn của bác sĩ; Tránh stress; Tránh sử dụng rượu bia, caffeine và các chất kích thích khác; Sử dụng thuốc; Sốc điện chuyển nhịp; Triệt đốt ổ loạn nhịp.",
+        "head": "triệt đốt ổ loạn nhịp",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "nhịp tim nhanh",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Sử dụng thuốc; Sốc điện chuyển nhịp; Triệt đốt ổ loạn nhịp; Cấy máy khử rung tim (ICD).",
+        "head": "thuốc",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "nhịp tim nhanh",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Sử dụng thuốc; Sốc điện chuyển nhịp; Triệt đốt ổ loạn nhịp; Cấy máy khử rung tim (ICD).",
+        "head": "sốc điện chuyển nhịp",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "nhịp tim nhanh",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Sử dụng thuốc; Sốc điện chuyển nhịp; Triệt đốt ổ loạn nhịp; Cấy máy khử rung tim (ICD).",
+        "head": "triệt đốt ổ loạn nhịp",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "nhịp tim nhanh",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Sử dụng thuốc; Sốc điện chuyển nhịp; Triệt đốt ổ loạn nhịp; Cấy máy khử rung tim (ICD).",
+        "head": "cấy máy khử rung tim (ICD)",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "nhịp tim nhanh",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Các bác sĩ Trung tâm Tim mạch, BVĐK Tâm Anh can thiệp triệt đốt loạn nhịp tim cho bệnh nhân.",
+        "head": "triệt đốt loạn nhịp tim",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "nhịp tim nhanh",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Cách tốt nhất để ngăn ngừa nhịp tim nhanh là duy trì một trái tim khỏe mạnh và ngăn ngừa bệnh tim.",
+        "head": "nhịp tim nhanh",
+        "head_type": "symptom",
+        "relation": "preventedBy",
+        "tail": "trái tim khỏe mạnh",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Cách tốt nhất để ngăn ngừa nhịp tim nhanh là duy trì một trái tim khỏe mạnh và ngăn ngừa bệnh tim.",
+        "head": "nhịp tim nhanh",
+        "head_type": "symptom",
+        "relation": "preventedBy",
+        "tail": "bệnh tim",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Trường hợp đã mắc bệnh tim, người bệnh tích cực theo dõi và tuân theo phác đồ điều trị của bác sĩ.",
+        "head": "bệnh tim",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "phác đồ điều trị",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Ngoài ra, thay đổi lối sống để giảm nguy cơ mắc bệnh tim giúp ngăn ngừa các rối loạn nhịp tim có thể gây nhịp tim nhanh.",
+        "head": "nhịp tim nhanh",
+        "head_type": "symptom",
+        "relation": "preventedBy",
+        "tail": "thay đổi lối sống",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Chế độ ăn uống lành mạnh: Chọn chế độ ăn giàu ngũ cốc nguyên hạt, thịt nạc, sữa ít béo, trái cây và rau củ; đồng thời hạn chế muối, đường, rượu, chất béo bão hòa và chất béo chuyển hóa.",
+        "head": "chế độ ăn uống lành mạnh",
+        "head_type": "lifestyle",
+        "relation": "preventedBy",
+        "tail": "nhịp tim nhanh",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Chế độ ăn uống lành mạnh: Chọn chế độ ăn giàu ngũ cốc nguyên hạt, thịt nạc, sữa ít béo, trái cây và rau củ; đồng thời hạn chế muối, đường, rượu, chất béo bão hòa và chất béo chuyển hóa.",
+        "head": "ngũ cốc nguyên hạt",
+        "head_type": "food",
+        "relation": "preventedBy",
+        "tail": "nhịp tim nhanh",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Chế độ ăn uống lành mạnh: Chọn chế độ ăn giàu ngũ cốc nguyên hạt, thịt nạc, sữa ít béo, trái cây và rau củ; đồng thời hạn chế muối, đường, rượu, chất béo bão hòa và chất béo chuyển hóa.",
+        "head": "thịt nạc",
+        "head_type": "food",
+        "relation": "preventedBy",
+        "tail": "nhịp tim nhanh",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Chế độ ăn uống lành mạnh: Chọn chế độ ăn giàu ngũ cốc nguyên hạt, thịt nạc, sữa ít béo, trái cây và rau củ; đồng thời hạn chế muối, đường, rượu, chất béo bão hòa và chất béo chuyển hóa.",
+        "head": "sữa ít béo",
+        "head_type": "food",
+        "relation": "preventedBy",
+        "tail": "nhịp tim nhanh",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Chế độ ăn uống lành mạnh: Chọn chế độ ăn giàu ngũ cốc nguyên hạt, thịt nạc, sữa ít béo, trái cây và rau củ; đồng thời hạn chế muối, đường, rượu, chất béo bão hòa và chất béo chuyển hóa.",
+        "head": "trái cây",
+        "head_type": "food",
+        "relation": "preventedBy",
+        "tail": "nhịp tim nhanh",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Chế độ ăn uống lành mạnh: Chọn chế độ ăn giàu ngũ cốc nguyên hạt, thịt nạc, sữa ít béo, trái cây và rau củ; đồng thời hạn chế muối, đường, rượu, chất béo bão hòa và chất béo chuyển hóa.",
+        "head": "rau củ",
+        "head_type": "food",
+        "relation": "preventedBy",
+        "tail": "nhịp tim nhanh",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Chế độ ăn uống lành mạnh: Chọn chế độ ăn giàu ngũ cốc nguyên hạt, thịt nạc, sữa ít béo, trái cây và rau củ; đồng thời hạn chế muối, đường, rượu, chất béo bão hòa và chất béo chuyển hóa.",
+        "head": "muối",
+        "head_type": "food",
+        "relation": "aggravatedBy",
+        "tail": "nhịp tim nhanh",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Chế độ ăn uống lành mạnh: Chọn chế độ ăn giàu ngũ cốc nguyên hạt, thịt nạc, sữa ít béo, trái cây và rau củ; đồng thời hạn chế muối, đường, rượu, chất béo bão hòa và chất béo chuyển hóa.",
+        "head": "đường",
+        "head_type": "food",
+        "relation": "aggravatedBy",
+        "tail": "nhịp tim nhanh",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Chế độ ăn uống lành mạnh: Chọn chế độ ăn giàu ngũ cốc nguyên hạt, thịt nạc, sữa ít béo, trái cây và rau củ; đồng thời hạn chế muối, đường, rượu, chất béo bão hòa và chất béo chuyển hóa.",
+        "head": "rượu",
+        "head_type": "food",
+        "relation": "aggravatedBy",
+        "tail": "nhịp tim nhanh",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Chế độ ăn uống lành mạnh: Chọn chế độ ăn giàu ngũ cốc nguyên hạt, thịt nạc, sữa ít béo, trái cây và rau củ; đồng thời hạn chế muối, đường, rượu, chất béo bão hòa và chất béo chuyển hóa.",
+        "head": "chất béo bão hòa",
+        "head_type": "food",
+        "relation": "aggravatedBy",
+        "tail": "nhịp tim nhanh",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Chế độ ăn uống lành mạnh: Chọn chế độ ăn giàu ngũ cốc nguyên hạt, thịt nạc, sữa ít béo, trái cây và rau củ; đồng thời hạn chế muối, đường, rượu, chất béo bão hòa và chất béo chuyển hóa.",
+        "head": "chất béo chuyển hóa",
+        "head_type": "food",
+        "relation": "aggravatedBy",
+        "tail": "nhịp tim nhanh",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Luyện tập thể dục đều đặn: Cố gắng tập thể dục ít nhất 30 phút trong hầu hết các ngày.",
+        "head": "luyện tập thể dục đều đặn",
+        "head_type": "lifestyle",
+        "relation": "preventedBy",
+        "tail": "nhịp tim nhanh",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Duy trì cân nặng vừa phải: Thừa cân làm tăng nguy cơ phát triển bệnh tim.",
+        "head": "thừa cân",
+        "head_type": "lifestyle",
+        "relation": "aggravatedBy",
+        "tail": "bệnh tim",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Duy trì cân nặng vừa phải: Thừa cân làm tăng nguy cơ phát triển bệnh tim.",
+        "head": "bệnh tim",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "thừa cân",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Giữ huyết áp và mức cholesterol trong tầm kiểm soát: Thay đổi lối sống và dùng thuốc khi có chỉ định để kiểm soát tăng huyết áp hoặc cholesterol cao.",
+        "head": "huyết áp",
+        "head_type": "symptom",
+        "relation": "relatedTo",
+        "tail": "bệnh tim",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Giữ huyết áp và mức cholesterol trong tầm kiểm soát: Thay đổi lối sống và dùng thuốc khi có chỉ định để kiểm soát tăng huyết áp hoặc cholesterol cao.",
+        "head": "cholesterol",
+        "head_type": "symptom",
+        "relation": "relatedTo",
+        "tail": "bệnh tim",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Giữ huyết áp và mức cholesterol trong tầm kiểm soát: Thay đổi lối sống và dùng thuốc khi có chỉ định để kiểm soát tăng huyết áp hoặc cholesterol cao.",
+        "head": "tăng huyết áp",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "thay đổi lối sống",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Giữ huyết áp và mức cholesterol trong tầm kiểm soát: Thay đổi lối sống và dùng thuốc khi có chỉ định để kiểm soát tăng huyết áp hoặc cholesterol cao.",
+        "head": "tăng huyết áp",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "thuốc",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Giữ huyết áp và mức cholesterol trong tầm kiểm soát: Thay đổi lối sống và dùng thuốc khi có chỉ định để kiểm soát tăng huyết áp hoặc cholesterol cao.",
+        "head": "cholesterol cao",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "thay đổi lối sống",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Giữ huyết áp và mức cholesterol trong tầm kiểm soát: Thay đổi lối sống và dùng thuốc khi có chỉ định để kiểm soát tăng huyết áp hoặc cholesterol cao.",
+        "head": "cholesterol cao",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "thuốc",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Bỏ thuốc lá",
+        "head": "thuốc lá",
+        "head_type": "lifestyle",
+        "relation": "aggravatedBy",
+        "tail": "nhịp tim nhanh",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Hạn chế caffeine",
+        "head": "caffeine",
+        "head_type": "food",
+        "relation": "aggravatedBy",
+        "tail": "nhịp tim nhanh",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Tránh căng thẳng",
+        "head": "căng thẳng",
+        "head_type": "lifestyle",
+        "relation": "aggravatedBy",
+        "tail": "nhịp tim nhanh",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Hạn chế uống rượu, bia: Đối với người trưởng thành khỏe mạnh, uống tối đa một ly mỗi ngày đối với phụ nữ và tối đa hai ly mỗi ngày đối với nam giới.",
+        "head": "rượu",
+        "head_type": "food",
+        "relation": "aggravatedBy",
+        "tail": "nhịp tim nhanh",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Hạn chế uống rượu, bia: Đối với người trưởng thành khỏe mạnh, uống tối đa một ly mỗi ngày đối với phụ nữ và tối đa hai ly mỗi ngày đối với nam giới.",
+        "head": "bia",
+        "head_type": "food",
+        "relation": "aggravatedBy",
+        "tail": "nhịp tim nhanh",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Một số bệnh lý cần tránh uống rượu hoàn toàn.",
+        "head": "rượu",
+        "head_type": "food",
+        "relation": "aggravatedBy",
+        "tail": "bệnh lý",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Kiểm tra sức khỏe định kỳ: Khám sức khỏe định kỳ và trao đổi với bác sĩ nếu có bất kỳ thay đổi nào về nhịp tim.",
+        "head": "kiểm tra sức khỏe định kỳ",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "nhịp tim nhanh",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Được đầu tư hệ thống máy móc hiện đại như máy siêu âm tim và mạch máu 4D hiện đại, máy chụp cộng hưởng từ 1,5 - 3 Tesla, máy chụp MSCT tim và động mạch vành 768 lát cắt, hệ thống máy DSA chụp mạch vành cánh tay robot xoay 360 độ, hệ thống chụp cắt lớp quang học mạch vành (OCT), hệ thống siêu âm tim gắng sức xe đạp lực kế, hệ thống bàn nghiêng…, Trung tâm Tim mạch BVĐK Tâm Anh chẩn đoán và điều trị hiệu quả bệnh tim mạch (rối loạn nhịp tim, suy tim, tăng huyết áp, bệnh mạch vành, bệnh van tim, thiếu máu cơ tim, tim bẩm sinh…) cho người lớn và trẻ em.",
+        "head": "máy siêu âm tim và mạch máu 4D",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "bệnh tim mạch",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Được đầu tư hệ thống máy móc hiện đại như máy siêu âm tim và mạch máu 4D hiện đại, máy chụp cộng hưởng từ 1,5 - 3 Tesla, máy chụp MSCT tim và động mạch vành 768 lát cắt, hệ thống máy DSA chụp mạch vành cánh tay robot xoay 360 độ, hệ thống chụp cắt lớp quang học mạch vành (OCT), hệ thống siêu âm tim gắng sức xe đạp lực kế, hệ thống bàn nghiêng…, Trung tâm Tim mạch BVĐK Tâm Anh chẩn đoán và điều trị hiệu quả bệnh tim mạch (rối loạn nhịp tim, suy tim, tăng huyết áp, bệnh mạch vành, bệnh van tim, thiếu máu cơ tim, tim bẩm sinh…) cho người lớn và trẻ em.",
+        "head": "máy chụp cộng hưởng từ 1,5 - 3 Tesla",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "bệnh tim mạch",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Được đầu tư hệ thống máy móc hiện đại như máy siêu âm tim và mạch máu 4D hiện đại, máy chụp cộng hưởng từ 1,5 - 3 Tesla, máy chụp MSCT tim và động mạch vành 768 lát cắt, hệ thống máy DSA chụp mạch vành cánh tay robot xoay 360 độ, hệ thống chụp cắt lớp quang học mạch vành (OCT), hệ thống siêu âm tim gắng sức xe đạp lực kế, hệ thống bàn nghiêng…, Trung tâm Tim mạch BVĐK Tâm Anh chẩn đoán và điều trị hiệu quả bệnh tim mạch (rối loạn nhịp tim, suy tim, tăng huyết áp, bệnh mạch vành, bệnh van tim, thiếu máu cơ tim, tim bẩm sinh…) cho người lớn và trẻ em.",
+        "head": "máy chụp MSCT tim và động mạch vành 768 lát cắt",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "bệnh tim mạch",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Được đầu tư hệ thống máy móc hiện đại như máy siêu âm tim và mạch máu 4D hiện đại, máy chụp cộng hưởng từ 1,5 - 3 Tesla, máy chụp MSCT tim và động mạch vành 768 lát cắt, hệ thống máy DSA chụp mạch vành cánh tay robot xoay 360 độ, hệ thống chụp cắt lớp quang học mạch vành (OCT), hệ thống siêu âm tim gắng sức xe đạp lực kế, hệ thống bàn nghiêng…, Trung tâm Tim mạch BVĐK Tâm Anh chẩn đoán và điều trị hiệu quả bệnh tim mạch (rối loạn nhịp tim, suy tim, tăng huyết áp, bệnh mạch vành, bệnh van tim, thiếu máu cơ tim, tim bẩm sinh…) cho người lớn và trẻ em.",
+        "head": "hệ thống máy DSA chụp mạch vành cánh tay robot xoay 360 độ",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "bệnh tim mạch",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Được đầu tư hệ thống máy móc hiện đại như máy siêu âm tim và mạch máu 4D hiện đại, máy chụp cộng hưởng từ 1,5 - 3 Tesla, máy chụp MSCT tim và động mạch vành 768 lát cắt, hệ thống máy DSA chụp mạch vành cánh tay robot xoay 360 độ, hệ thống chụp cắt lớp quang học mạch vành (OCT), hệ thống siêu âm tim gắng sức xe đạp lực kế, hệ thống bàn nghiêng…, Trung tâm Tim mạch BVĐK Tâm Anh chẩn đoán và điều trị hiệu quả bệnh tim mạch (rối loạn nhịp tim, suy tim, tăng huyết áp, bệnh mạch vành, bệnh van tim, thiếu máu cơ tim, tim bẩm sinh…) cho người lớn và trẻ em.",
+        "head": "hệ thống chụp cắt lớp quang học mạch vành (OCT)",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "bệnh tim mạch",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Được đầu tư hệ thống máy móc hiện đại như máy siêu âm tim và mạch máu 4D hiện đại, máy chụp cộng hưởng từ 1,5 - 3 Tesla, máy chụp MSCT tim và động mạch vành 768 lát cắt, hệ thống máy DSA chụp mạch vành cánh tay robot xoay 360 độ, hệ thống chụp cắt lớp quang học mạch vành (OCT), hệ thống siêu âm tim gắng sức xe đạp lực kế, hệ thống bàn nghiêng…, Trung tâm Tim mạch BVĐK Tâm Anh chẩn đoán và điều trị hiệu quả bệnh tim mạch (rối loạn nhịp tim, suy tim, tăng huyết áp, bệnh mạch vành, bệnh van tim, thiếu máu cơ tim, tim bẩm sinh…) cho người lớn và trẻ em.",
+        "head": "hệ thống siêu âm tim gắng sức xe đạp lực kế",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "bệnh tim mạch",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Được đầu tư hệ thống máy móc hiện đại như máy siêu âm tim và mạch máu 4D hiện đại, máy chụp cộng hưởng từ 1,5 - 3 Tesla, máy chụp MSCT tim và động mạch vành 768 lát cắt, hệ thống máy DSA chụp mạch vành cánh tay robot xoay 360 độ, hệ thống chụp cắt lớp quang học mạch vành (OCT), hệ thống siêu âm tim gắng sức xe đạp lực kế, hệ thống bàn nghiêng…, Trung tâm Tim mạch BVĐK Tâm Anh chẩn đoán và điều trị hiệu quả bệnh tim mạch (rối loạn nhịp tim, suy tim, tăng huyết áp, bệnh mạch vành, bệnh van tim, thiếu máu cơ tim, tim bẩm sinh…) cho người lớn và trẻ em.",
+        "head": "hệ thống bàn nghiêng",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "bệnh tim mạch",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Được đầu tư hệ thống máy móc hiện đại như máy siêu âm tim và mạch máu 4D hiện đại, máy chụp cộng hưởng từ 1,5 - 3 Tesla, máy chụp MSCT tim và động mạch vành 768 lát cắt, hệ thống máy DSA chụp mạch vành cánh tay robot xoay 360 độ, hệ thống chụp cắt lớp quang học mạch vành (OCT), hệ thống siêu âm tim gắng sức xe đạp lực kế, hệ thống bàn nghiêng…, Trung tâm Tim mạch BVĐK Tâm Anh chẩn đoán và điều trị hiệu quả bệnh tim mạch (rối loạn nhịp tim, suy tim, tăng huyết áp, bệnh mạch vành, bệnh van tim, thiếu máu cơ tim, tim bẩm sinh…) cho người lớn và trẻ em.",
+        "head": "Trung tâm Tim mạch BVĐK Tâm Anh",
+        "head_type": "organ",
+        "relation": "locatedIn",
+        "tail": "BVĐK Tâm Anh",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Được đầu tư hệ thống máy móc hiện đại như máy siêu âm tim và mạch máu 4D hiện đại, máy chụp cộng hưởng từ 1,5 - 3 Tesla, máy chụp MSCT tim và động mạch vành 768 lát cắt, hệ thống máy DSA chụp mạch vành cánh tay robot xoay 360 độ, hệ thống chụp cắt lớp quang học mạch vành (OCT), hệ thống siêu âm tim gắng sức xe đạp lực kế, hệ thống bàn nghiêng…, Trung tâm Tim mạch BVĐK Tâm Anh chẩn đoán và điều trị hiệu quả bệnh tim mạch (rối loạn nhịp tim, suy tim, tăng huyết áp, bệnh mạch vành, bệnh van tim, thiếu máu cơ tim, tim bẩm sinh…) cho người lớn và trẻ em.",
+        "head": "Trung tâm Tim mạch BVĐK Tâm Anh",
+        "head_type": "organ",
+        "relation": "treatedBy",
+        "tail": "bệnh tim mạch",
+        "tail_type": "disease"
+    }
+]

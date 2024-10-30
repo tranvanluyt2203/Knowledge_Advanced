@@ -1,0 +1,875 @@
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:symptom {id: 'đau_âm_ĩ_vùng_thượng_vị_symptom'})
+MERGE (o1)-[r0:isSymptomOf]->(o2)
+SET r0.text = 'Viêm hang vị dạ dày là bệnh tiêu hóa thường gặp nhất với các triệu chứng điển hình như đau âm ĩ vùng thượng vị, ợ chua, ợ hơi, đầy bụng, khó tiêu...'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:symptom {id: 'ợ_chua_symptom'})
+MERGE (o1)-[r1:isSymptomOf]->(o2)
+SET r1.text = 'Viêm hang vị dạ dày là bệnh tiêu hóa thường gặp nhất với các triệu chứng điển hình như đau âm ĩ vùng thượng vị, ợ chua, ợ hơi, đầy bụng, khó tiêu...'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:symptom {id: 'ợ_hơi_symptom'})
+MERGE (o1)-[r2:isSymptomOf]->(o2)
+SET r2.text = 'Viêm hang vị dạ dày là bệnh tiêu hóa thường gặp nhất với các triệu chứng điển hình như đau âm ĩ vùng thượng vị, ợ chua, ợ hơi, đầy bụng, khó tiêu...'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:symptom {id: 'đầy_bụng_symptom'})
+MERGE (o1)-[r3:isSymptomOf]->(o2)
+SET r3.text = 'Viêm hang vị dạ dày là bệnh tiêu hóa thường gặp nhất với các triệu chứng điển hình như đau âm ĩ vùng thượng vị, ợ chua, ợ hơi, đầy bụng, khó tiêu...'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:symptom {id: 'khó_tiêu_symptom'})
+MERGE (o1)-[r4:isSymptomOf]->(o2)
+SET r4.text = 'Viêm hang vị dạ dày là bệnh tiêu hóa thường gặp nhất với các triệu chứng điển hình như đau âm ĩ vùng thượng vị, ợ chua, ợ hơi, đầy bụng, khó tiêu...'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:lifestyle {id: 'thói_quen_sinh_hoạt_lifestyle'})
+MERGE (o1)-[r5:causedBy]->(o2)
+SET r5.text = 'Bệnh là sự tổn thương của dạ dày tại vị trí hang vị, được gây ra bởi nhiều nguyên nhân khác nhau trong đó bao gồm cả thói quen sinh hoạt, chế độ dinh dưỡng cũng như sức khỏe tâm thần.'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:lifestyle {id: 'chế_độ_dinh_dưỡng_lifestyle'})
+MERGE (o1)-[r6:causedBy]->(o2)
+SET r6.text = 'Bệnh là sự tổn thương của dạ dày tại vị trí hang vị, được gây ra bởi nhiều nguyên nhân khác nhau trong đó bao gồm cả thói quen sinh hoạt, chế độ dinh dưỡng cũng như sức khỏe tâm thần.'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:lifestyle {id: 'sức_khỏe_tâm_thần_lifestyle'})
+MERGE (o1)-[r7:causedBy]->(o2)
+SET r7.text = 'Bệnh là sự tổn thương của dạ dày tại vị trí hang vị, được gây ra bởi nhiều nguyên nhân khác nhau trong đó bao gồm cả thói quen sinh hoạt, chế độ dinh dưỡng cũng như sức khỏe tâm thần.'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:treatment {id: 'điều_trị_treatment'})
+MERGE (o1)-[r8:treatedBy]->(o2)
+SET r8.text = 'Viêm hang vị dạ dày có thể điều trị dứt điểm.'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:organ {id: 'dạ_dày_organ'})
+MERGE (o1)-[r9:affects]->(o2)
+SET r9.text = 'Viêm hang vị dạ dày là tình trạng dạ dày bị tổn thương, cụ thể là viêm tại vị trí hang vị.'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:organ {id: 'hang_vị_organ'})
+MERGE (o1)-[r10:locatedIn]->(o2)
+SET r10.text = 'Viêm hang vị dạ dày là tình trạng dạ dày bị tổn thương, cụ thể là viêm tại vị trí hang vị.'
+
+MERGE (o1:organ {id: 'niêm_mạc_dạ_dày_organ'})
+MERGE (o2:organ {id: 'dạ_dày_organ'})
+MERGE (o1)-[r11:locatedIn]->(o2)
+SET r11.text = 'Niêm mạc dạ dày là một lớp màng mỏng, có chức năng bảo vệ thành dạ dày khỏi các tác nhân gây hại cũng như acid.'
+
+MERGE (o1:organ {id: 'niêm_mạc_dạ_dày_organ'})
+MERGE (o2:organ {id: 'dạ_dày_organ'})
+MERGE (o1)-[r12:affects]->(o2)
+SET r12.text = 'Niêm mạc dạ dày là một lớp màng mỏng, có chức năng bảo vệ thành dạ dày khỏi các tác nhân gây hại cũng như acid.'
+
+MERGE (o1:organ {id: 'niêm_mạc_organ'})
+MERGE (o2:disease {id: 'viêm_disease'})
+MERGE (o1)-[r13:causedBy]->(o2)
+SET r13.text = 'Khi lớp niêm mạc bị kích thích hoặc bị tổn thương sẽ dẫn đến tình trạng viêm'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:cause {id: 'nhiễm_khuẩn_helicobacter_pylori_cause'})
+MERGE (o1)-[r14:causedBy]->(o2)
+SET r14.text = 'Tình trạng viêm hang vị dạ dày có nhiều nguyên nhân gây ra, phổ biến nhất là do nhiễm khuẩn Helicobacter pylori (vi khuẩn HP).'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:cause {id: 'vi_khuẩn_hp_cause'})
+MERGE (o1)-[r15:causedBy]->(o2)
+SET r15.text = 'Tình trạng viêm hang vị dạ dày có nhiều nguyên nhân gây ra, phổ biến nhất là do nhiễm khuẩn Helicobacter pylori (vi khuẩn HP).'
+
+MERGE (o1:cause {id: 'vi_khuẩn_hp_cause'})
+MERGE (o2:organ {id: 'dạ_dày_organ'})
+MERGE (o1)-[r16:affects]->(o2)
+SET r16.text = 'Vi khuẩn HP sau khi xâm nhập vào dạ dày sẽ cư trú và làm tổn thương niêm mạc dạ dày.'
+
+MERGE (o1:cause {id: 'vi_khuẩn_hp_cause'})
+MERGE (o2:organ {id: 'niêm_mạc_dạ_dày_organ'})
+MERGE (o1)-[r17:affects]->(o2)
+SET r17.text = 'Vi khuẩn HP sau khi xâm nhập vào dạ dày sẽ cư trú và làm tổn thương niêm mạc dạ dày.'
+
+MERGE (o1:cause {id: 'vi_khuẩn_hp_cause'})
+MERGE (o2:disease {id: 'viêm_disease'})
+MERGE (o1)-[r18:causedBy]->(o2)
+SET r18.text = 'Từ đó, gây viêm và dẫn đến những triệu chứng bệnh.'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:treatment {id: 'uống_thuốc_treatment'})
+MERGE (o1)-[r19:treatedBy]->(o2)
+SET r19.text = 'Việc điều trị viêm hang vị dạ dày tương đối đơn giản, người bệnh có thể khỏi hoàn toàn bằng cách uống thuốc theo chỉ định của bác sĩ.'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:treatment {id: 'bác_sĩ_treatment'})
+MERGE (o1)-[r20:treatedBy]->(o2)
+SET r20.text = 'Việc điều trị viêm hang vị dạ dày tương đối đơn giản, người bệnh có thể khỏi hoàn toàn bằng cách uống thuốc theo chỉ định của bác sĩ.'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:lifestyle {id: 'không_chăm_sóc_sức_khỏe_tổng_quan_lifestyle'})
+MERGE (o1)-[r21:aggravatedBy]->(o2)
+SET r21.text = 'Tuy nhiên, người có bệnh sử bị viêm hang vị dạ dày có thể tái lại bệnh nếu không chăm sóc sức khỏe tổng quan lẫn tiêu hóa cẩn thận.'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:lifestyle {id: 'không_chăm_sóc_sức_khỏe_tiêu_hóa_lifestyle'})
+MERGE (o1)-[r22:aggravatedBy]->(o2)
+SET r22.text = 'Tuy nhiên, người có bệnh sử bị viêm hang vị dạ dày có thể tái lại bệnh nếu không chăm sóc sức khỏe tổng quan lẫn tiêu hóa cẩn thận.'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:disease {id: 'loét_disease'})
+MERGE (o1)-[r23:causedBy]->(o2)
+SET r23.text = 'Viêm hang vị dạ dày tái phát nhiều lần hoặc kéo dài không được điều trị là một trong những nguyên nhân chính gây ra các biến chứng nguy hiểm như loét, xuất huyết, thậm chí thủng hay ung thư hóa.'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:disease {id: 'xuất_huyết_disease'})
+MERGE (o1)-[r24:causedBy]->(o2)
+SET r24.text = 'Viêm hang vị dạ dày tái phát nhiều lần hoặc kéo dài không được điều trị là một trong những nguyên nhân chính gây ra các biến chứng nguy hiểm như loét, xuất huyết, thậm chí thủng hay ung thư hóa.'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:disease {id: 'thủng_disease'})
+MERGE (o1)-[r25:causedBy]->(o2)
+SET r25.text = 'Viêm hang vị dạ dày tái phát nhiều lần hoặc kéo dài không được điều trị là một trong những nguyên nhân chính gây ra các biến chứng nguy hiểm như loét, xuất huyết, thậm chí thủng hay ung thư hóa.'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:disease {id: 'ung_thư_hóa_disease'})
+MERGE (o1)-[r26:causedBy]->(o2)
+SET r26.text = 'Viêm hang vị dạ dày tái phát nhiều lần hoặc kéo dài không được điều trị là một trong những nguyên nhân chính gây ra các biến chứng nguy hiểm như loét, xuất huyết, thậm chí thủng hay ung thư hóa.'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:lifestyle {id: 'lưu_ý_đến_sức_khỏe_tiêu_hóa_lifestyle'})
+MERGE (o1)-[r27:preventedBy]->(o2)
+SET r27.text = 'Vì vậy người bệnh vẫn cần lưu ý đến sức khỏe tiêu hóa và hạn chế tối đa tái nhiễm bệnh nhiều lần để phòng ngừa các biến chứng nguy hiểm như trên.'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:lifestyle {id: 'hạn_chế_tối_đa_tái_nhiễm_bệnh_lifestyle'})
+MERGE (o1)-[r28:preventedBy]->(o2)
+SET r28.text = 'Vì vậy người bệnh vẫn cần lưu ý đến sức khỏe tiêu hóa và hạn chế tối đa tái nhiễm bệnh nhiều lần để phòng ngừa các biến chứng nguy hiểm như trên.'
+
+MERGE (o1:organ {id: 'hang_vị_dạ_dày_organ'})
+MERGE (o2:organ {id: 'dạ_dày_organ'})
+MERGE (o1)-[r29:locatedIn]->(o2)
+SET r29.text = 'Hang vị dạ dày nằm ở vị trí gần cuối dạ dày, ở giữa thân vị và môn vị.'
+
+MERGE (o1:organ {id: 'hang_vị_dạ_dày_organ'})
+MERGE (o2:organ {id: 'thân_vị_organ'})
+MERGE (o1)-[r30:locatedIn]->(o2)
+SET r30.text = 'Hang vị dạ dày nằm ở vị trí gần cuối dạ dày, ở giữa thân vị và môn vị.'
+
+MERGE (o1:organ {id: 'hang_vị_dạ_dày_organ'})
+MERGE (o2:organ {id: 'môn_vị_organ'})
+MERGE (o1)-[r31:locatedIn]->(o2)
+SET r31.text = 'Hang vị dạ dày nằm ở vị trí gần cuối dạ dày, ở giữa thân vị và môn vị.'
+
+MERGE (o1:organ {id: 'dạ_dày_organ'})
+MERGE (o2:organ {id: 'tâm_vị_organ'})
+MERGE (o1)-[r32:locatedIn]->(o2)
+SET r32.text = 'Dạ dày có 5 phần chính gồm: Tâm vị, phình vị, thân vị, hang vị và môn vị'
+
+MERGE (o1:organ {id: 'dạ_dày_organ'})
+MERGE (o2:organ {id: 'phình_vị_organ'})
+MERGE (o1)-[r33:locatedIn]->(o2)
+SET r33.text = 'Dạ dày có 5 phần chính gồm: Tâm vị, phình vị, thân vị, hang vị và môn vị'
+
+MERGE (o1:organ {id: 'dạ_dày_organ'})
+MERGE (o2:organ {id: 'thân_vị_organ'})
+MERGE (o1)-[r34:locatedIn]->(o2)
+SET r34.text = 'Dạ dày có 5 phần chính gồm: Tâm vị, phình vị, thân vị, hang vị và môn vị'
+
+MERGE (o1:organ {id: 'dạ_dày_organ'})
+MERGE (o2:organ {id: 'hang_vị_organ'})
+MERGE (o1)-[r35:locatedIn]->(o2)
+SET r35.text = 'Dạ dày có 5 phần chính gồm: Tâm vị, phình vị, thân vị, hang vị và môn vị'
+
+MERGE (o1:organ {id: 'dạ_dày_organ'})
+MERGE (o2:organ {id: 'môn_vị_organ'})
+MERGE (o1)-[r36:locatedIn]->(o2)
+SET r36.text = 'Dạ dày có 5 phần chính gồm: Tâm vị, phình vị, thân vị, hang vị và môn vị'
+
+MERGE (o1:cause {id: 'nhiễm_khuẩn_hp_cause'})
+MERGE (o2:disease {id: 'tổn_thương_dạ_dày_disease'})
+MERGE (o1)-[r37:causedBy]->(o2)
+SET r37.text = 'Nguyên nhân thường gặp nhất gây tổn thương dạ dày nói chung và hang vị nói riêng là nhiễm khuẩn Hp, nhóm nguyên nhân thứ hai gồm lạm dụng rượu, bia, thuốc lá, các loại thuốc giảm đau nhóm NSAIDs không đúng chỉ định và nhóm thứ ba như chế độ ăn uống không điều độ, căng thẳng, stress…'
+
+MERGE (o1:lifestyle {id: 'lạm_dụng_rượu__bia__thuốc_lá_lifestyle'})
+MERGE (o2:disease {id: 'tổn_thương_dạ_dày_disease'})
+MERGE (o1)-[r38:causedBy]->(o2)
+SET r38.text = 'Nguyên nhân thường gặp nhất gây tổn thương dạ dày nói chung và hang vị nói riêng là nhiễm khuẩn Hp, nhóm nguyên nhân thứ hai gồm lạm dụng rượu, bia, thuốc lá, các loại thuốc giảm đau nhóm NSAIDs không đúng chỉ định và nhóm thứ ba như chế độ ăn uống không điều độ, căng thẳng, stress…'
+
+MERGE (o1:treatment {id: 'các_loại_thuốc_giảm_đau_nhóm_nsaids_không_đúng_chỉ_định_treatment'})
+MERGE (o2:disease {id: 'tổn_thương_dạ_dày_disease'})
+MERGE (o1)-[r39:causedBy]->(o2)
+SET r39.text = 'Nguyên nhân thường gặp nhất gây tổn thương dạ dày nói chung và hang vị nói riêng là nhiễm khuẩn Hp, nhóm nguyên nhân thứ hai gồm lạm dụng rượu, bia, thuốc lá, các loại thuốc giảm đau nhóm NSAIDs không đúng chỉ định và nhóm thứ ba như chế độ ăn uống không điều độ, căng thẳng, stress…'
+
+MERGE (o1:lifestyle {id: 'chế_độ_ăn_uống_không_điều_độ_lifestyle'})
+MERGE (o2:disease {id: 'tổn_thương_dạ_dày_disease'})
+MERGE (o1)-[r40:causedBy]->(o2)
+SET r40.text = 'Nguyên nhân thường gặp nhất gây tổn thương dạ dày nói chung và hang vị nói riêng là nhiễm khuẩn Hp, nhóm nguyên nhân thứ hai gồm lạm dụng rượu, bia, thuốc lá, các loại thuốc giảm đau nhóm NSAIDs không đúng chỉ định và nhóm thứ ba như chế độ ăn uống không điều độ, căng thẳng, stress…'
+
+MERGE (o1:lifestyle {id: 'căng_thẳng_lifestyle'})
+MERGE (o2:disease {id: 'tổn_thương_dạ_dày_disease'})
+MERGE (o1)-[r41:causedBy]->(o2)
+SET r41.text = 'Nguyên nhân thường gặp nhất gây tổn thương dạ dày nói chung và hang vị nói riêng là nhiễm khuẩn Hp, nhóm nguyên nhân thứ hai gồm lạm dụng rượu, bia, thuốc lá, các loại thuốc giảm đau nhóm NSAIDs không đúng chỉ định và nhóm thứ ba như chế độ ăn uống không điều độ, căng thẳng, stress…'
+
+MERGE (o1:lifestyle {id: 'stress_lifestyle'})
+MERGE (o2:disease {id: 'tổn_thương_dạ_dày_disease'})
+MERGE (o1)-[r42:causedBy]->(o2)
+SET r42.text = 'Nguyên nhân thường gặp nhất gây tổn thương dạ dày nói chung và hang vị nói riêng là nhiễm khuẩn Hp, nhóm nguyên nhân thứ hai gồm lạm dụng rượu, bia, thuốc lá, các loại thuốc giảm đau nhóm NSAIDs không đúng chỉ định và nhóm thứ ba như chế độ ăn uống không điều độ, căng thẳng, stress…'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_cấp_tính_disease'})
+MERGE (o2:disease {id: 'tổn_thương_dạ_dày_vùng_hang_vị_disease'})
+MERGE (o1)-[r43:isSymptomOf]->(o2)
+SET r43.text = 'Tổn thương dạ dày vùng hang vị có thể gây ra các bệnh lý từ nhẹ đến nặng như: viêm hang vị cấp tính, loét hang vị, viêm teo hang vị, U malt lymphoma hay thậm chí ung thư hang vị dạ dày.'
+
+MERGE (o1:disease {id: 'loét_hang_vị_disease'})
+MERGE (o2:disease {id: 'tổn_thương_dạ_dày_vùng_hang_vị_disease'})
+MERGE (o1)-[r44:isSymptomOf]->(o2)
+SET r44.text = 'Tổn thương dạ dày vùng hang vị có thể gây ra các bệnh lý từ nhẹ đến nặng như: viêm hang vị cấp tính, loét hang vị, viêm teo hang vị, U malt lymphoma hay thậm chí ung thư hang vị dạ dày.'
+
+MERGE (o1:disease {id: 'viêm_teo_hang_vị_disease'})
+MERGE (o2:disease {id: 'tổn_thương_dạ_dày_vùng_hang_vị_disease'})
+MERGE (o1)-[r45:isSymptomOf]->(o2)
+SET r45.text = 'Tổn thương dạ dày vùng hang vị có thể gây ra các bệnh lý từ nhẹ đến nặng như: viêm hang vị cấp tính, loét hang vị, viêm teo hang vị, U malt lymphoma hay thậm chí ung thư hang vị dạ dày.'
+
+MERGE (o1:disease {id: 'u_malt_lymphoma_disease'})
+MERGE (o2:disease {id: 'tổn_thương_dạ_dày_vùng_hang_vị_disease'})
+MERGE (o1)-[r46:isSymptomOf]->(o2)
+SET r46.text = 'Tổn thương dạ dày vùng hang vị có thể gây ra các bệnh lý từ nhẹ đến nặng như: viêm hang vị cấp tính, loét hang vị, viêm teo hang vị, U malt lymphoma hay thậm chí ung thư hang vị dạ dày.'
+
+MERGE (o1:disease {id: 'ung_thư_hang_vị_dạ_dày_disease'})
+MERGE (o2:disease {id: 'tổn_thương_dạ_dày_vùng_hang_vị_disease'})
+MERGE (o1)-[r47:isSymptomOf]->(o2)
+SET r47.text = 'Tổn thương dạ dày vùng hang vị có thể gây ra các bệnh lý từ nhẹ đến nặng như: viêm hang vị cấp tính, loét hang vị, viêm teo hang vị, U malt lymphoma hay thậm chí ung thư hang vị dạ dày.'
+
+MERGE (o1:cause {id: 'helicobacter_pylori_cause'})
+MERGE (o2:disease {id: 'bệnh_liên_quan_đến_dạ_dày_disease'})
+MERGE (o1)-[r48:causedBy]->(o2)
+SET r48.text = 'Helicobacter Pylori là tên của một loại xoắn khuẩn, vi ái khí, gram âm, tồn tại trong lớp nhất chầy của niêm mạc dạ dày và gây ra các bệnh liên quan đến dạ dày Vi khuẩn HP thông thường xâm nhập vào cơ thể người bằng đường tiêu hóa.'
+
+MERGE (o1:cause {id: 'helicobacter_pylori_cause'})
+MERGE (o2:organ {id: 'lớp_nhất_chầy_của_niêm_mạc_dạ_dày_organ'})
+MERGE (o1)-[r49:locatedIn]->(o2)
+SET r49.text = 'Helicobacter Pylori là tên của một loại xoắn khuẩn, vi ái khí, gram âm, tồn tại trong lớp nhất chầy của niêm mạc dạ dày và gây ra các bệnh liên quan đến dạ dày Vi khuẩn HP thông thường xâm nhập vào cơ thể người bằng đường tiêu hóa.'
+
+MERGE (o1:cause {id: 'vi_khuẩn_hp_cause'})
+MERGE (o2:disease {id: 'bệnh_liên_quan_đến_dạ_dày_disease'})
+MERGE (o1)-[r50:causedBy]->(o2)
+SET r50.text = 'Helicobacter Pylori là tên của một loại xoắn khuẩn, vi ái khí, gram âm, tồn tại trong lớp nhất chầy của niêm mạc dạ dày và gây ra các bệnh liên quan đến dạ dày Vi khuẩn HP thông thường xâm nhập vào cơ thể người bằng đường tiêu hóa.'
+
+MERGE (o1:cause {id: 'vi_khuẩn_hp_cause'})
+MERGE (o2:organ {id: 'đường_tiêu_hóa_organ'})
+MERGE (o1)-[r51:locatedIn]->(o2)
+SET r51.text = 'Vi khuẩn HP thông thường xâm nhập vào cơ thể người bằng đường tiêu hóa.'
+
+MERGE (o1:lifestyle {id: 'khu_vực__môi_trường_và_chất_lượng_sống_lifestyle'})
+MERGE (o2:cause {id: 'vi_khuẩn_hp_cause'})
+MERGE (o1)-[r52:associatedWith]->(o2)
+SET r52.text = 'Điều này liên quan lớn đến khu vực, môi trường và chất lượng sống.'
+
+MERGE (o1:cause {id: 'vi_khuẩn_hp_cause'})
+MERGE (o2:organ {id: 'niêm_mạc_hang_vị_organ'})
+MERGE (o1)-[r53:affects]->(o2)
+SET r53.text = 'Khi vi khuẩn HP đã xâm nhập vào cơ thể, chúng có thể âm thầm phát triển gây ra hiện tượng tăng nồng độ acid và đổi môi trường niêm mạc hang vị.'
+
+MERGE (o1:cause {id: 'vi_khuẩn_hp_cause'})
+MERGE (o2:symptom {id: 'tăng_nồng_độ_acid_symptom'})
+MERGE (o1)-[r54:causedBy]->(o2)
+SET r54.text = 'Khi vi khuẩn HP đã xâm nhập vào cơ thể, chúng có thể âm thầm phát triển gây ra hiện tượng tăng nồng độ acid và đổi môi trường niêm mạc hang vị.'
+
+MERGE (o1:symptom {id: 'triệu_chứng_symptom'})
+MERGE (o2:cause {id: 'vi_khuẩn_hp_cause'})
+MERGE (o1)-[r55:isSymptomOf]->(o2)
+SET r55.text = 'Trong quá trình đó, người bệnh có thể sẽ không xuất hiện bất cứ triệu chứng gì.'
+
+MERGE (o1:treatment {id: 'thuốc_chống_viêm_nsaid_treatment'})
+MERGE (o2:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o1)-[r56:causedBy]->(o2)
+SET r56.text = 'Thuốc chống viêm NSAID là một trong những nguyên nhân hàng đầu dẫn đến viêm hang vị dạ dày.'
+
+MERGE (o1:lifestyle {id: 'tự_ý_uống_thuốc_lifestyle'})
+MERGE (o2:disease {id: 'tổn_thương_dạ_dày_disease'})
+MERGE (o1)-[r57:aggravatedBy]->(o2)
+SET r57.text = 'Người bệnh cần tuân thủ vấn đề sử dụng nhóm thuốc giảm đau này theo y lệnh thầy thuốc, tránh tình trạng tự ý uống thuốc, có thể dẫn đến tổn thương dạ dày nặng'
+
+MERGE (o1:lifestyle {id: 'căng_thẳng_lifestyle'})
+MERGE (o2:lifestyle {id: 'sức_khỏe_tâm_thần_lifestyle'})
+MERGE (o1)-[r58:associatedWith]->(o2)
+SET r58.text = 'Căng thẳng, trầm cảm là một trong những vấn đề điển hình từ sức khỏe tâm thần.'
+
+MERGE (o1:lifestyle {id: 'trầm_cảm_lifestyle'})
+MERGE (o2:lifestyle {id: 'sức_khỏe_tâm_thần_lifestyle'})
+MERGE (o1)-[r59:associatedWith]->(o2)
+SET r59.text = 'Căng thẳng, trầm cảm là một trong những vấn đề điển hình từ sức khỏe tâm thần.'
+
+MERGE (o1:organ {id: 'hệ_thống_thần_kinh_ruột_organ'})
+MERGE (o2:organ {id: 'hệ_thống_thần_kinh_trung_ương_organ'})
+MERGE (o1)-[r60:relatedTo]->(o2)
+SET r60.text = 'Hệ thống thần kinh ruột có giao tiếp với hệ thống thần kinh trung ương.'
+
+MERGE (o1:lifestyle {id: 'căng_thẳng_lifestyle'})
+MERGE (o2:lifestyle {id: 'sức_khỏe_tiêu_hóa_lifestyle'})
+MERGE (o1)-[r61:affects]->(o2)
+SET r61.text = 'Chính vì vậy, các tình trạng như căng thẳng, trầm cảm đều có ảnh hưởng đến sức khỏe tiêu hóa.'
+
+MERGE (o1:lifestyle {id: 'trầm_cảm_lifestyle'})
+MERGE (o2:lifestyle {id: 'sức_khỏe_tiêu_hóa_lifestyle'})
+MERGE (o1)-[r62:affects]->(o2)
+SET r62.text = 'Chính vì vậy, các tình trạng như căng thẳng, trầm cảm đều có ảnh hưởng đến sức khỏe tiêu hóa.'
+
+MERGE (o1:lifestyle {id: 'chế_độ_ăn_uống__sinh_hoạt_thiếu_khoa_học_lifestyle'})
+MERGE (o2:disease {id: 'hang_vị_dạ_dày_disease'})
+MERGE (o1)-[r63:causedBy]->(o2)
+SET r63.text = 'Chế độ ăn uống, sinh hoạt thiếu khoa học làm tăng nguy cơ mắc hang vị dạ dày.'
+
+MERGE (o1:lifestyle {id: 'ăn_uống_không_điều_độ_lifestyle'})
+MERGE (o2:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o1)-[r64:causedBy]->(o2)
+SET r64.text = 'Việc ăn uống không điều độ, ăn quá nhiều thức ăn khó tiêu, cay nóng là tác nhân dẫn đến các bệnh lý về dạ dày, bao gồm viêm hang vị dạ dày.'
+
+MERGE (o1:lifestyle {id: 'ăn_quá_nhiều_thức_ăn_khó_tiêu_lifestyle'})
+MERGE (o2:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o1)-[r65:causedBy]->(o2)
+SET r65.text = 'Việc ăn uống không điều độ, ăn quá nhiều thức ăn khó tiêu, cay nóng là tác nhân dẫn đến các bệnh lý về dạ dày, bao gồm viêm hang vị dạ dày.'
+
+MERGE (o1:food {id: 'thức_ăn_cay_nóng_food'})
+MERGE (o2:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o1)-[r66:aggravatedBy]->(o2)
+SET r66.text = 'Việc ăn uống không điều độ, ăn quá nhiều thức ăn khó tiêu, cay nóng là tác nhân dẫn đến các bệnh lý về dạ dày, bao gồm viêm hang vị dạ dày.'
+
+MERGE (o1:lifestyle {id: 'rượu_bia_và_thuốc_lá_lifestyle'})
+MERGE (o2:symptom {id: 'tăng_acid_bên_trong_thành_dạ_dày_symptom'})
+MERGE (o1)-[r67:causedBy]->(o2)
+SET r67.text = 'Bên cạnh đó, rượu bia và thuốc lá là nguyên nhân kích thích tăng acid bên trong thành dạ dày.'
+
+MERGE (o1:symptom {id: 'tăng_acid_bên_trong_thành_dạ_dày_symptom'})
+MERGE (o2:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o1)-[r68:causedBy]->(o2)
+SET r68.text = 'Tình trạng này có thể dễ dàng dẫn đến bệnh viêm hang vị dạ dày ở người.'
+
+MERGE (o1:lifestyle {id: 'sinh_hoạt_giấc_ngủ_lifestyle'})
+MERGE (o2:disease {id: 'hang_vị_dạ_dày_disease'})
+MERGE (o1)-[r69:relatedTo]->(o2)
+SET r69.text = 'Một vấn đề khác, sinh hoạt giấc ngủ tuy không ảnh hưởng nhiều đến hang vị dạ dày.'
+
+MERGE (o1:lifestyle {id: 'giấc_ngủ_lifestyle'})
+MERGE (o2:lifestyle {id: 'căng_thẳng_lifestyle'})
+MERGE (o1)-[r70:causedBy]->(o2)
+SET r70.text = 'Nhưng giấc ngủ lại là yếu tố gây ra căng thẳng và những vấn đề về sức khỏe tâm thần khác.'
+
+MERGE (o1:lifestyle {id: 'giấc_ngủ_lifestyle'})
+MERGE (o2:lifestyle {id: 'vấn_đề_về_sức_khỏe_tâm_thần_lifestyle'})
+MERGE (o1)-[r71:causedBy]->(o2)
+SET r71.text = 'Nhưng giấc ngủ lại là yếu tố gây ra căng thẳng và những vấn đề về sức khỏe tâm thần khác.'
+
+MERGE (o1:lifestyle {id: 'giấc_ngủ_lifestyle'})
+MERGE (o2:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o1)-[r72:causedBy]->(o2)
+SET r72.text = 'Đây là yếu tố gây ra viêm hang vị dạ dày tương tự như nguyên nhân căng thẳng và trầm cảm.'
+
+MERGE (o1:lifestyle {id: 'căng_thẳng_lifestyle'})
+MERGE (o2:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o1)-[r73:causedBy]->(o2)
+SET r73.text = 'Đây là yếu tố gây ra viêm hang vị dạ dày tương tự như nguyên nhân căng thẳng và trầm cảm.'
+
+MERGE (o1:lifestyle {id: 'trầm_cảm_lifestyle'})
+MERGE (o2:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o1)-[r74:causedBy]->(o2)
+SET r74.text = 'Đây là yếu tố gây ra viêm hang vị dạ dày tương tự như nguyên nhân căng thẳng và trầm cảm.'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:symptom {id: 'không_triệu_chứng_symptom'})
+MERGE (o1)-[r75:isSymptomOf]->(o2)
+SET r75.text = 'Ở một số trường hợp, viêm hang vị dạ dày có thể phát bệnh dưới dạng không triệu chứng.'
+
+MERGE (o1:symptom {id: 'xuất_hiện_các_cơn_đau_ở_vùng_thượng_vị_symptom'})
+MERGE (o2:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o1)-[r76:isSymptomOf]->(o2)
+SET r76.text = 'Một số dấu hiệu viêm hang vị dạ dày mà người bệnh có thể nhận biết bệnh gồm:  Xuất hiện các cơn đau ở vùng thượng vị Cảm giác đầy bụng, nóng rát ở thượng vị Ợ hơi, ợ chua Chán ăn Buồn nôn và nôn Nôn ra máu hoặc đi cầu phân đen'
+
+MERGE (o1:symptom {id: 'cảm_giác_đầy_bụng__nóng_rát_ở_thượng_vị_symptom'})
+MERGE (o2:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o1)-[r77:isSymptomOf]->(o2)
+SET r77.text = 'Một số dấu hiệu viêm hang vị dạ dày mà người bệnh có thể nhận biết bệnh gồm:  Xuất hiện các cơn đau ở vùng thượng vị Cảm giác đầy bụng, nóng rát ở thượng vị Ợ hơi, ợ chua Chán ăn Buồn nôn và nôn Nôn ra máu hoặc đi cầu phân đen'
+
+MERGE (o1:symptom {id: 'ợ_hơi__ợ_chua_symptom'})
+MERGE (o2:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o1)-[r78:isSymptomOf]->(o2)
+SET r78.text = 'Một số dấu hiệu viêm hang vị dạ dày mà người bệnh có thể nhận biết bệnh gồm:  Xuất hiện các cơn đau ở vùng thượng vị Cảm giác đầy bụng, nóng rát ở thượng vị Ợ hơi, ợ chua Chán ăn Buồn nôn và nôn Nôn ra máu hoặc đi cầu phân đen'
+
+MERGE (o1:symptom {id: 'chán_ăn_symptom'})
+MERGE (o2:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o1)-[r79:isSymptomOf]->(o2)
+SET r79.text = 'Một số dấu hiệu viêm hang vị dạ dày mà người bệnh có thể nhận biết bệnh gồm:  Xuất hiện các cơn đau ở vùng thượng vị Cảm giác đầy bụng, nóng rát ở thượng vị Ợ hơi, ợ chua Chán ăn Buồn nôn và nôn Nôn ra máu hoặc đi cầu phân đen'
+
+MERGE (o1:symptom {id: 'buồn_nôn_và_nôn_symptom'})
+MERGE (o2:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o1)-[r80:isSymptomOf]->(o2)
+SET r80.text = 'Một số dấu hiệu viêm hang vị dạ dày mà người bệnh có thể nhận biết bệnh gồm:  Xuất hiện các cơn đau ở vùng thượng vị Cảm giác đầy bụng, nóng rát ở thượng vị Ợ hơi, ợ chua Chán ăn Buồn nôn và nôn Nôn ra máu hoặc đi cầu phân đen'
+
+MERGE (o1:symptom {id: 'nôn_ra_máu_hoặc_đi_cầu_phân_đen_symptom'})
+MERGE (o2:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o1)-[r81:isSymptomOf]->(o2)
+SET r81.text = 'Một số dấu hiệu viêm hang vị dạ dày mà người bệnh có thể nhận biết bệnh gồm:  Xuất hiện các cơn đau ở vùng thượng vị Cảm giác đầy bụng, nóng rát ở thượng vị Ợ hơi, ợ chua Chán ăn Buồn nôn và nôn Nôn ra máu hoặc đi cầu phân đen'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:treatment {id: 'thăm_khám_và_chẩn_đoán_với_bác_sĩ_chuyên_môn_treatment'})
+MERGE (o1)-[r82:diagnosedBy]->(o2)
+SET r82.text = 'Nếu như xuất một trong những dấu hiệu nêu trên trong thời gian dài, người bệnh cần đến bệnh viện để được thăm khám và chẩn đoán với bác sĩ chuyên môn sớm.'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:disease {id: 'biến_chứng_nguy_hiểm_disease'})
+MERGE (o1)-[r83:causedBy]->(o2)
+SET r83.text = 'Viêm hang vị dạ dày nếu không điều trị kịp thời có thể dẫn đến những biến chứng nguy hiểm.'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:test {id: 'nội_soi_dạ_dày_test'})
+MERGE (o1)-[r84:diagnosedBy]->(o2)
+SET r84.text = 'Viêm hang vị dạ dày thường được chẩn đoán bằng phương pháp nội soi dạ dày.'
+
+MERGE (o1:symptom {id: 'triệu_chứng_symptom'})
+MERGE (o2:test {id: 'phương_pháp_chẩn_đoán_phù_hợp_test'})
+MERGE (o1)-[r85:diagnosedBy]->(o2)
+SET r85.text = 'Bên cạnh đó, tùy vào nhu cầu, triệu chứng của từng người bệnh mà bác sĩ sẽ chỉ định phương pháp chẩn đoán phù hợp.'
+
+MERGE (o1:test {id: 'nội_soi_dạ_dày_test'})
+MERGE (o2:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o1)-[r86:diagnosedBy]->(o2)
+SET r86.text = 'Một số phương pháp chẩn đoán viêm hang vị dạ dày và nguyên nhân:    Nội soi dạ dày: Phương pháp nội soi dạ dày giúp xác định chính xác vị trí, mức độ tổn thương ở hang vị.'
+
+MERGE (o1:test {id: 'nội_soi_dạ_dày_test'})
+MERGE (o2:organ {id: 'hang_vị_organ'})
+MERGE (o1)-[r87:affects]->(o2)
+SET r87.text = 'Một số phương pháp chẩn đoán viêm hang vị dạ dày và nguyên nhân:    Nội soi dạ dày: Phương pháp nội soi dạ dày giúp xác định chính xác vị trí, mức độ tổn thương ở hang vị.'
+
+MERGE (o1:test {id: 'clo_test_test'})
+MERGE (o2:cause {id: 'nhiễm_khuẩn_helicobacter_pylori_cause'})
+MERGE (o1)-[r88:diagnosedBy]->(o2)
+SET r88.text = 'Đồng thời qua nội soi có thể thực hiện CLO test là một test nhằm đánh giá tình trạng nhiễm khuẩn Helicobacter pylori ở dạ dày.'
+
+MERGE (o1:test {id: 'xét_nghiệm_máu_test'})
+MERGE (o2:cause {id: 'nhiễm_khuẩn_hp_cause'})
+MERGE (o1)-[r89:diagnosedBy]->(o2)
+SET r89.text = 'Xét nghiệm máu: Mục tiêu của xét nghiệm máu là để kiểm tra sự hiện diện của kháng thể chống lại khuẩn Hp trong máu người bệnh.'
+
+MERGE (o1:test {id: 'xét_nghiệm_máu_test'})
+MERGE (o2:treatment {id: 'điều_trị_treatment'})
+MERGE (o1)-[r90:associatedWith]->(o2)
+SET r90.text = 'Nhược điểm là nếu người bệnh trước đó nhiễm và đã được điều trị thì đôi khi xét nghiệm máu vẫn dương tính vài tháng sau đó.'
+
+MERGE (o1:test {id: 'xét_nghiệm_máu_test'})
+MERGE (o2:treatment {id: 'hiệu_quả_điều_trị_hp_treatment'})
+MERGE (o1)-[r91:diagnosedBy]->(o2)
+SET r91.text = 'Chính vì vậy xét nghiệm máu không áp dụng cho kiểm tra hiệu quả điều trị Hp trước đó.'
+
+MERGE (o1:test {id: 'test_hơi_thở_test'})
+MERGE (o2:cause {id: 'nhiễm_khuẩn_hp_cause'})
+MERGE (o1)-[r92:diagnosedBy]->(o2)
+SET r92.text = 'Test hơi thở: độ nhạy và độ đặc hiệu chẩn đoán Hp tương tự nội soi, là lựa chọn thay thế nội soi nếu chỉ đơn thuần cần xác định có nhiễm hay không nhiễm Hp dạ dày.'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:cause {id: 'nhiễm_vi_khuẩn_hp_cause'})
+MERGE (o1)-[r93:causedBy]->(o2)
+SET r93.text = 'Với những người bệnh viêm hang vị dạ dày do nhiễm vi khuẩn HP, bác sĩ sẽ chỉ định điều trị diệt vi khuẩn bằng kháng sinh trước.'
+
+MERGE (o1:treatment {id: 'điều_trị_diệt_vi_khuẩn_treatment'})
+MERGE (o2:treatment {id: 'kháng_sinh_treatment'})
+MERGE (o1)-[r94:treatedBy]->(o2)
+SET r94.text = 'Với những người bệnh viêm hang vị dạ dày do nhiễm vi khuẩn HP, bác sĩ sẽ chỉ định điều trị diệt vi khuẩn bằng kháng sinh trước.'
+
+MERGE (o1:treatment {id: 'phác_đồ_điều_trị_vi_khuẩn_hp_treatment'})
+MERGE (o2:treatment {id: 'kháng_sinh_đường_uống_treatment'})
+MERGE (o1)-[r95:treatedBy]->(o2)
+SET r95.text = 'Phác đồ điều trị vi khuẩn HP thông thường kéo dài 14 ngày, phối hợp ít nhất 2 kháng sinh đường uống và thuốc ức chế acid dạ dày.'
+
+MERGE (o1:treatment {id: 'phác_đồ_điều_trị_vi_khuẩn_hp_treatment'})
+MERGE (o2:treatment {id: 'thuốc_ức_chế_acid_dạ_dày_treatment'})
+MERGE (o1)-[r96:treatedBy]->(o2)
+SET r96.text = 'Phác đồ điều trị vi khuẩn HP thông thường kéo dài 14 ngày, phối hợp ít nhất 2 kháng sinh đường uống và thuốc ức chế acid dạ dày.'
+
+MERGE (o1:treatment {id: 'phác_đồ_điều_trị_vi_khuẩn_hp_treatment'})
+MERGE (o2:cause {id: 'vi_khuẩn_hp_cause'})
+MERGE (o1)-[r97:relatedTo]->(o2)
+SET r97.text = 'Phác đồ điều trị vi khuẩn HP thông thường kéo dài 14 ngày, phối hợp ít nhất 2 kháng sinh đường uống và thuốc ức chế acid dạ dày.'
+
+MERGE (o1:treatment {id: 'amoxicillin_treatment'})
+MERGE (o2:cause {id: 'vi_khuẩn_hp_cause'})
+MERGE (o1)-[r98:treatedBy]->(o2)
+SET r98.text = 'Các thuốc kháng sinh thường được dùng để diệt vi khuẩn HP gồm:  Amoxicillin Tetracycline Metronidazole Tinidazole Fluoroquinolone Bismuth'
+
+MERGE (o1:treatment {id: 'tetracycline_treatment'})
+MERGE (o2:cause {id: 'vi_khuẩn_hp_cause'})
+MERGE (o1)-[r99:treatedBy]->(o2)
+SET r99.text = 'Các thuốc kháng sinh thường được dùng để diệt vi khuẩn HP gồm:  Amoxicillin Tetracycline Metronidazole Tinidazole Fluoroquinolone Bismuth'
+
+MERGE (o1:treatment {id: 'metronidazole_treatment'})
+MERGE (o2:cause {id: 'vi_khuẩn_hp_cause'})
+MERGE (o1)-[r100:treatedBy]->(o2)
+SET r100.text = 'Các thuốc kháng sinh thường được dùng để diệt vi khuẩn HP gồm:  Amoxicillin Tetracycline Metronidazole Tinidazole Fluoroquinolone Bismuth'
+
+MERGE (o1:treatment {id: 'tinidazole_treatment'})
+MERGE (o2:cause {id: 'vi_khuẩn_hp_cause'})
+MERGE (o1)-[r101:treatedBy]->(o2)
+SET r101.text = 'Các thuốc kháng sinh thường được dùng để diệt vi khuẩn HP gồm:  Amoxicillin Tetracycline Metronidazole Tinidazole Fluoroquinolone Bismuth'
+
+MERGE (o1:treatment {id: 'fluoroquinolone_treatment'})
+MERGE (o2:cause {id: 'vi_khuẩn_hp_cause'})
+MERGE (o1)-[r102:treatedBy]->(o2)
+SET r102.text = 'Các thuốc kháng sinh thường được dùng để diệt vi khuẩn HP gồm:  Amoxicillin Tetracycline Metronidazole Tinidazole Fluoroquinolone Bismuth'
+
+MERGE (o1:treatment {id: 'bismuth_treatment'})
+MERGE (o2:cause {id: 'vi_khuẩn_hp_cause'})
+MERGE (o1)-[r103:treatedBy]->(o2)
+SET r103.text = 'Các thuốc kháng sinh thường được dùng để diệt vi khuẩn HP gồm:  Amoxicillin Tetracycline Metronidazole Tinidazole Fluoroquinolone Bismuth'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:treatment {id: 'thuốc_ức_chế_acid_dạ_dày_treatment'})
+MERGE (o1)-[r104:treatedBy]->(o2)
+SET r104.text = 'Viêm hang vị dạ dày thường sử dụng những loại thuốc có tác dụng làm giảm tác động của acid lên thành hang vị dạ dày và tăng bảo vệ lớp niêm mạc.'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:organ {id: 'hang_vị_dạ_dày_organ'})
+MERGE (o1)-[r105:affects]->(o2)
+SET r105.text = 'Viêm hang vị dạ dày thường sử dụng những loại thuốc có tác dụng làm giảm tác động của acid lên thành hang vị dạ dày và tăng bảo vệ lớp niêm mạc.'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:organ {id: 'niêm_mạc_organ'})
+MERGE (o1)-[r106:affects]->(o2)
+SET r106.text = 'Viêm hang vị dạ dày thường sử dụng những loại thuốc có tác dụng làm giảm tác động của acid lên thành hang vị dạ dày và tăng bảo vệ lớp niêm mạc.'
+
+MERGE (o1:treatment {id: 'thuốc_ức_chế_thụ_thể_histamin_h2_treatment'})
+MERGE (o2:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o1)-[r107:treatedBy]->(o2)
+SET r107.text = 'Một số loại thuốc thường được dùng điều trị viêm hang vị dạ dày gồm:  Thuốc ức chế thụ thể histamin H2 Thuốc ức chế bơm proton Thuốc trung hòa acid dịch vị'
+
+MERGE (o1:treatment {id: 'thuốc_ức_chế_bơm_proton_treatment'})
+MERGE (o2:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o1)-[r108:treatedBy]->(o2)
+SET r108.text = 'Một số loại thuốc thường được dùng điều trị viêm hang vị dạ dày gồm:  Thuốc ức chế thụ thể histamin H2 Thuốc ức chế bơm proton Thuốc trung hòa acid dịch vị'
+
+MERGE (o1:treatment {id: 'thuốc_trung_hòa_acid_dịch_vị_treatment'})
+MERGE (o2:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o1)-[r109:treatedBy]->(o2)
+SET r109.text = 'Một số loại thuốc thường được dùng điều trị viêm hang vị dạ dày gồm:  Thuốc ức chế thụ thể histamin H2 Thuốc ức chế bơm proton Thuốc trung hòa acid dịch vị'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:lifestyle {id: 'thay_đổi_thói_quen_ăn_uống_lifestyle'})
+MERGE (o1)-[r110:treatedBy]->(o2)
+SET r110.text = 'Người bệnh được khuyến khích thay đổi thói quen ăn uống cũng như lối sống lành mạnh để hỗ trợ quá trình điều trị viêm hang vị dạ dày.'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:lifestyle {id: 'lối_sống_lành_mạnh_lifestyle'})
+MERGE (o1)-[r111:treatedBy]->(o2)
+SET r111.text = 'Người bệnh được khuyến khích thay đổi thói quen ăn uống cũng như lối sống lành mạnh để hỗ trợ quá trình điều trị viêm hang vị dạ dày.'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:lifestyle {id: 'thay_đổi_thói_quen_ăn_uống_lifestyle'})
+MERGE (o1)-[r112:treatedBy]->(o2)
+SET r112.text = 'Thay đổi thói quen ăn uống và chế độ dinh dưỡng không phải là phương pháp điều trị bệnh viêm hang vị dạ dày, nhưng có thể giúp rút ngắn thời gian hồi phục, cải thiện được sức khỏe tiêu hóa và hạn chế tối đa khả năng tái phát bệnh.'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:lifestyle {id: 'chế_độ_dinh_dưỡng_lifestyle'})
+MERGE (o1)-[r113:treatedBy]->(o2)
+SET r113.text = 'Thay đổi thói quen ăn uống và chế độ dinh dưỡng không phải là phương pháp điều trị bệnh viêm hang vị dạ dày, nhưng có thể giúp rút ngắn thời gian hồi phục, cải thiện được sức khỏe tiêu hóa và hạn chế tối đa khả năng tái phát bệnh.'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:symptom {id: 'sức_khỏe_tiêu_hóa_symptom'})
+MERGE (o1)-[r114:affects]->(o2)
+SET r114.text = 'Thay đổi thói quen ăn uống và chế độ dinh dưỡng không phải là phương pháp điều trị bệnh viêm hang vị dạ dày, nhưng có thể giúp rút ngắn thời gian hồi phục, cải thiện được sức khỏe tiêu hóa và hạn chế tối đa khả năng tái phát bệnh.'
+
+MERGE (o1:food {id: 'rau_củ_có_màu_sẫm_food'})
+MERGE (o2:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o1)-[r115:treatedBy]->(o2)
+SET r115.text = 'Những loại loại rau củ có màu sẫm là những thực phẩm giàu dinh dưỡng, ưu tiên sử dụng cho người đang gặp vấn đề về tiêu hóa như viêm hang vị dạ dày.'
+
+MERGE (o1:food {id: 'rượu_bia_food'})
+MERGE (o2:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o1)-[r116:aggravatedBy]->(o2)
+SET r116.text = 'Bên cạnh đó, xây dựng thói quen hạn chế uống rượu bia, sử dụng các chất kích thích cũng là một cách hiệu quả để cải thiện và duy trì chức năng hang vị ở mức ổn định.'
+
+MERGE (o1:food {id: 'các_chất_kích_thích_food'})
+MERGE (o2:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o1)-[r117:aggravatedBy]->(o2)
+SET r117.text = 'Bên cạnh đó, xây dựng thói quen hạn chế uống rượu bia, sử dụng các chất kích thích cũng là một cách hiệu quả để cải thiện và duy trì chức năng hang vị ở mức ổn định.'
+
+MERGE (o1:organ {id: 'hang_vị_organ'})
+MERGE (o2:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o1)-[r118:relatedTo]->(o2)
+SET r118.text = 'Bên cạnh đó, xây dựng thói quen hạn chế uống rượu bia, sử dụng các chất kích thích cũng là một cách hiệu quả để cải thiện và duy trì chức năng hang vị ở mức ổn định.'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:disease {id: 'loét_dạ_dày_xuất_huyết_disease'})
+MERGE (o1)-[r119:isSymptomOf]->(o2)
+SET r119.text = 'Người bệnh có thể gặp các biến chứng nguy hiểm hay tình trạng viêm dai dẵng, tái phát nhiều lần, nhất là kèm theo nhiễm khuẩn Hp, sử dụng rượu bia, thuốc lá kéo dài:  Loét dạ dày xuất huyết Viêm teo dạ dày nặng Hẹp môn vị dạ dày Ung thư dạ dày'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:disease {id: 'viêm_teo_dạ_dày_nặng_disease'})
+MERGE (o1)-[r120:isSymptomOf]->(o2)
+SET r120.text = 'Người bệnh có thể gặp các biến chứng nguy hiểm hay tình trạng viêm dai dẵng, tái phát nhiều lần, nhất là kèm theo nhiễm khuẩn Hp, sử dụng rượu bia, thuốc lá kéo dài:  Loét dạ dày xuất huyết Viêm teo dạ dày nặng Hẹp môn vị dạ dày Ung thư dạ dày'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:disease {id: 'hẹp_môn_vị_dạ_dày_disease'})
+MERGE (o1)-[r121:isSymptomOf]->(o2)
+SET r121.text = 'Người bệnh có thể gặp các biến chứng nguy hiểm hay tình trạng viêm dai dẵng, tái phát nhiều lần, nhất là kèm theo nhiễm khuẩn Hp, sử dụng rượu bia, thuốc lá kéo dài:  Loét dạ dày xuất huyết Viêm teo dạ dày nặng Hẹp môn vị dạ dày Ung thư dạ dày'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:disease {id: 'ung_thư_dạ_dày_disease'})
+MERGE (o1)-[r122:isSymptomOf]->(o2)
+SET r122.text = 'Người bệnh có thể gặp các biến chứng nguy hiểm hay tình trạng viêm dai dẵng, tái phát nhiều lần, nhất là kèm theo nhiễm khuẩn Hp, sử dụng rượu bia, thuốc lá kéo dài:  Loét dạ dày xuất huyết Viêm teo dạ dày nặng Hẹp môn vị dạ dày Ung thư dạ dày'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:cause {id: 'nhiễm_khuẩn_hp_cause'})
+MERGE (o1)-[r123:aggravatedBy]->(o2)
+SET r123.text = 'Người bệnh có thể gặp các biến chứng nguy hiểm hay tình trạng viêm dai dẵng, tái phát nhiều lần, nhất là kèm theo nhiễm khuẩn Hp, sử dụng rượu bia, thuốc lá kéo dài:  Loét dạ dày xuất huyết Viêm teo dạ dày nặng Hẹp môn vị dạ dày Ung thư dạ dày'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:food {id: 'rượu_bia_food'})
+MERGE (o1)-[r124:aggravatedBy]->(o2)
+SET r124.text = 'Người bệnh có thể gặp các biến chứng nguy hiểm hay tình trạng viêm dai dẵng, tái phát nhiều lần, nhất là kèm theo nhiễm khuẩn Hp, sử dụng rượu bia, thuốc lá kéo dài:  Loét dạ dày xuất huyết Viêm teo dạ dày nặng Hẹp môn vị dạ dày Ung thư dạ dày'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:food {id: 'thuốc_lá_food'})
+MERGE (o1)-[r125:aggravatedBy]->(o2)
+SET r125.text = 'Người bệnh có thể gặp các biến chứng nguy hiểm hay tình trạng viêm dai dẵng, tái phát nhiều lần, nhất là kèm theo nhiễm khuẩn Hp, sử dụng rượu bia, thuốc lá kéo dài:  Loét dạ dày xuất huyết Viêm teo dạ dày nặng Hẹp môn vị dạ dày Ung thư dạ dày'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:lifestyle {id: 'lối_sống_khỏe_mạnh_lifestyle'})
+MERGE (o1)-[r126:preventedBy]->(o2)
+SET r126.text = 'Phương pháp phòng tránh viêm hang vị dạ dày tối ưu nhất là duy trì lối sống khỏe mạnh và chế độ ăn uống khoa học.'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:lifestyle {id: 'chế_độ_ăn_uống_khoa_học_lifestyle'})
+MERGE (o1)-[r127:preventedBy]->(o2)
+SET r127.text = 'Phương pháp phòng tránh viêm hang vị dạ dày tối ưu nhất là duy trì lối sống khỏe mạnh và chế độ ăn uống khoa học.'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:lifestyle {id: 'quản_lý_chất_lượng_môi_trường_sống_lifestyle'})
+MERGE (o1)-[r128:preventedBy]->(o2)
+SET r128.text = 'Bằng việc quản lý chất lượng môi trường sống, thói quen hằng ngày và sức khỏe tâm thần tốt, bạn có thể giảm thiểu được tối đa nguy cơ mắc bệnh viêm hang vị dạ dày.'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:lifestyle {id: 'thói_quen_hằng_ngày_lifestyle'})
+MERGE (o1)-[r129:preventedBy]->(o2)
+SET r129.text = 'Bằng việc quản lý chất lượng môi trường sống, thói quen hằng ngày và sức khỏe tâm thần tốt, bạn có thể giảm thiểu được tối đa nguy cơ mắc bệnh viêm hang vị dạ dày.'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:lifestyle {id: 'sức_khỏe_tâm_thần_tốt_lifestyle'})
+MERGE (o1)-[r130:preventedBy]->(o2)
+SET r130.text = 'Bằng việc quản lý chất lượng môi trường sống, thói quen hằng ngày và sức khỏe tâm thần tốt, bạn có thể giảm thiểu được tối đa nguy cơ mắc bệnh viêm hang vị dạ dày.'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:lifestyle {id: 'giữ_gìn_vệ_sinh_cho_bản_thân_và_môi_trường_sống_tốt_lifestyle'})
+MERGE (o1)-[r131:preventedBy]->(o2)
+SET r131.text = 'Những phương pháp phòng tránh viêm hang vị dạ dày hiệu quả gồm:  Giữ gìn vệ sinh cho bản thân và môi trường sống tốt Luôn rửa sạch tay Hạn chế ăn những thực phẩm có khả năng kích ứng niêm mạc như đồ cay nóng, cafein, rượu bia,&#8230; Không tự ý sử dụng các loại thuốc kháng sinh, giảm đau hoặc thuốc chống viêm NSAID'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:lifestyle {id: 'luôn_rửa_sạch_tay_lifestyle'})
+MERGE (o1)-[r132:preventedBy]->(o2)
+SET r132.text = 'Những phương pháp phòng tránh viêm hang vị dạ dày hiệu quả gồm:  Giữ gìn vệ sinh cho bản thân và môi trường sống tốt Luôn rửa sạch tay Hạn chế ăn những thực phẩm có khả năng kích ứng niêm mạc như đồ cay nóng, cafein, rượu bia,&#8230; Không tự ý sử dụng các loại thuốc kháng sinh, giảm đau hoặc thuốc chống viêm NSAID'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:lifestyle {id: 'hạn_chế_ăn_những_thực_phẩm_có_khả_năng_kích_ứng_niêm_mạc_lifestyle'})
+MERGE (o1)-[r133:preventedBy]->(o2)
+SET r133.text = 'Những phương pháp phòng tránh viêm hang vị dạ dày hiệu quả gồm:  Giữ gìn vệ sinh cho bản thân và môi trường sống tốt Luôn rửa sạch tay Hạn chế ăn những thực phẩm có khả năng kích ứng niêm mạc như đồ cay nóng, cafein, rượu bia,&#8230; Không tự ý sử dụng các loại thuốc kháng sinh, giảm đau hoặc thuốc chống viêm NSAID'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:food {id: 'đồ_cay_nóng_food'})
+MERGE (o1)-[r134:preventedBy]->(o2)
+SET r134.text = 'Những phương pháp phòng tránh viêm hang vị dạ dày hiệu quả gồm:  Giữ gìn vệ sinh cho bản thân và môi trường sống tốt Luôn rửa sạch tay Hạn chế ăn những thực phẩm có khả năng kích ứng niêm mạc như đồ cay nóng, cafein, rượu bia,&#8230; Không tự ý sử dụng các loại thuốc kháng sinh, giảm đau hoặc thuốc chống viêm NSAID'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:food {id: 'cafein_food'})
+MERGE (o1)-[r135:preventedBy]->(o2)
+SET r135.text = 'Những phương pháp phòng tránh viêm hang vị dạ dày hiệu quả gồm:  Giữ gìn vệ sinh cho bản thân và môi trường sống tốt Luôn rửa sạch tay Hạn chế ăn những thực phẩm có khả năng kích ứng niêm mạc như đồ cay nóng, cafein, rượu bia,&#8230; Không tự ý sử dụng các loại thuốc kháng sinh, giảm đau hoặc thuốc chống viêm NSAID'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:food {id: 'rượu_bia_food'})
+MERGE (o1)-[r136:preventedBy]->(o2)
+SET r136.text = 'Những phương pháp phòng tránh viêm hang vị dạ dày hiệu quả gồm:  Giữ gìn vệ sinh cho bản thân và môi trường sống tốt Luôn rửa sạch tay Hạn chế ăn những thực phẩm có khả năng kích ứng niêm mạc như đồ cay nóng, cafein, rượu bia,&#8230; Không tự ý sử dụng các loại thuốc kháng sinh, giảm đau hoặc thuốc chống viêm NSAID'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:treatment {id: 'thuốc_kháng_sinh_treatment'})
+MERGE (o1)-[r137:preventedBy]->(o2)
+SET r137.text = 'Những phương pháp phòng tránh viêm hang vị dạ dày hiệu quả gồm:  Giữ gìn vệ sinh cho bản thân và môi trường sống tốt Luôn rửa sạch tay Hạn chế ăn những thực phẩm có khả năng kích ứng niêm mạc như đồ cay nóng, cafein, rượu bia,&#8230; Không tự ý sử dụng các loại thuốc kháng sinh, giảm đau hoặc thuốc chống viêm NSAID'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:treatment {id: 'thuốc_giảm_đau_treatment'})
+MERGE (o1)-[r138:preventedBy]->(o2)
+SET r138.text = 'Những phương pháp phòng tránh viêm hang vị dạ dày hiệu quả gồm:  Giữ gìn vệ sinh cho bản thân và môi trường sống tốt Luôn rửa sạch tay Hạn chế ăn những thực phẩm có khả năng kích ứng niêm mạc như đồ cay nóng, cafein, rượu bia,&#8230; Không tự ý sử dụng các loại thuốc kháng sinh, giảm đau hoặc thuốc chống viêm NSAID'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:treatment {id: 'điều_trị_dứt_điểm_treatment'})
+MERGE (o1)-[r139:treatedBy]->(o2)
+SET r139.text = 'Viêm hang vị dạ dày là bệnh có thể điều trị dứt điểm nếu phát hiện sớm.'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:treatment {id: 'các_phương_pháp_điều_trị_phức_tạp_treatment'})
+MERGE (o1)-[r140:treatedBy]->(o2)
+SET r140.text = 'Bệnh không cần sử dụng các phương pháp điều trị phức tạp và thời gian điều trị không quá dài.'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:treatment {id: 'thời_gian_điều_trị_không_quá_dài_treatment'})
+MERGE (o1)-[r141:treatedBy]->(o2)
+SET r141.text = 'Bệnh không cần sử dụng các phương pháp điều trị phức tạp và thời gian điều trị không quá dài.'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:disease {id: 'viêm_dạ_dày_mạn_tính_disease'})
+MERGE (o1)-[r142:isSymptomOf]->(o2)
+SET r142.text = 'Tuy nhiên, viêm hang vị dạ dày sẽ phát triển thành viêm dạ dày mạn tính, hay xuất huyết dạ dày nếu không điều trị bệnh kịp thời.'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:disease {id: 'xuất_huyết_dạ_dày_disease'})
+MERGE (o1)-[r143:isSymptomOf]->(o2)
+SET r143.text = 'Tuy nhiên, viêm hang vị dạ dày sẽ phát triển thành viêm dạ dày mạn tính, hay xuất huyết dạ dày nếu không điều trị bệnh kịp thời.'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:lifestyle {id: 'không_điều_trị_bệnh_kịp_thời_lifestyle'})
+MERGE (o1)-[r144:aggravatedBy]->(o2)
+SET r144.text = 'Tuy nhiên, viêm hang vị dạ dày sẽ phát triển thành viêm dạ dày mạn tính, hay xuất huyết dạ dày nếu không điều trị bệnh kịp thời.'
+
+MERGE (o1:disease {id: 'viêm_dạ_dày_mạn_tính_disease'})
+MERGE (o2:disease {id: 'ung_thư_dạ_dày_disease'})
+MERGE (o1)-[r145:isSymptomOf]->(o2)
+SET r145.text = 'Đây là những biến chứng điển hình của bệnh, có khả năng làm tăng cao nguy cơ mắc ung thư dạ dày cho người bệnh.'
+
+MERGE (o1:disease {id: 'xuất_huyết_dạ_dày_disease'})
+MERGE (o2:disease {id: 'ung_thư_dạ_dày_disease'})
+MERGE (o1)-[r146:isSymptomOf]->(o2)
+SET r146.text = 'Đây là những biến chứng điển hình của bệnh, có khả năng làm tăng cao nguy cơ mắc ung thư dạ dày cho người bệnh.'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:test {id: 'chẩn_đoán_test'})
+MERGE (o1)-[r147:diagnosedBy]->(o2)
+SET r147.text = 'Khi được chẩn đoán mắc viêm hang vị dạ dày, người bệnh không cần quá lo lắng.'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:treatment {id: 'chỉ_định_điều_trị_của_bác_sĩ_treatment'})
+MERGE (o1)-[r148:treatedBy]->(o2)
+SET r148.text = 'Song, cần lưu ý làm theo đúng chỉ định điều trị của bác sĩ, đồng thời thay đổi chế độ ăn uống và thói quen sinh hoạt để bảo vệ sức khỏe tiêu hóa.'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:lifestyle {id: 'thay_đổi_chế_độ_ăn_uống_lifestyle'})
+MERGE (o1)-[r149:treatedBy]->(o2)
+SET r149.text = 'Song, cần lưu ý làm theo đúng chỉ định điều trị của bác sĩ, đồng thời thay đổi chế độ ăn uống và thói quen sinh hoạt để bảo vệ sức khỏe tiêu hóa.'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:lifestyle {id: 'thói_quen_sinh_hoạt_lifestyle'})
+MERGE (o1)-[r150:treatedBy]->(o2)
+SET r150.text = 'Song, cần lưu ý làm theo đúng chỉ định điều trị của bác sĩ, đồng thời thay đổi chế độ ăn uống và thói quen sinh hoạt để bảo vệ sức khỏe tiêu hóa.'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:food {id: 'bổ_sung_nhiều_nước_food'})
+MERGE (o1)-[r151:treatedBy]->(o2)
+SET r151.text = 'Người bị viêm hang vị dạ dày cần bổ sung nhiều nước, vitamin và các loại chất tốt để cải thiện chức năng hang vị, phục hồi tổn thương.'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:food {id: 'vitamin_food'})
+MERGE (o1)-[r152:treatedBy]->(o2)
+SET r152.text = 'Người bị viêm hang vị dạ dày cần bổ sung nhiều nước, vitamin và các loại chất tốt để cải thiện chức năng hang vị, phục hồi tổn thương.'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:food {id: 'các_loại_chất_tốt_food'})
+MERGE (o1)-[r153:treatedBy]->(o2)
+SET r153.text = 'Người bị viêm hang vị dạ dày cần bổ sung nhiều nước, vitamin và các loại chất tốt để cải thiện chức năng hang vị, phục hồi tổn thương.'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:organ {id: 'chức_năng_hang_vị_organ'})
+MERGE (o1)-[r154:affects]->(o2)
+SET r154.text = 'Người bị viêm hang vị dạ dày cần bổ sung nhiều nước, vitamin và các loại chất tốt để cải thiện chức năng hang vị, phục hồi tổn thương.'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:food {id: 'thực_phẩm_có_lợi_cho_hệ_tiêu_hóa_food'})
+MERGE (o1)-[r155:treatedBy]->(o2)
+SET r155.text = 'Những loại thực phẩm cần được bổ sung trong thực đơn của người bệnh viêm hang vị dạ dày là những loại thức ăn có lợi cho hệ tiêu hóa và hạn chế được sự phát triển của vi khuẩn HP.'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:cause {id: 'vi_khuẩn_hp_cause'})
+MERGE (o1)-[r156:aggravatedBy]->(o2)
+SET r156.text = 'Những loại thực phẩm cần được bổ sung trong thực đơn của người bệnh viêm hang vị dạ dày là những loại thức ăn có lợi cho hệ tiêu hóa và hạn chế được sự phát triển của vi khuẩn HP.'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:food {id: 'táo_food'})
+MERGE (o1)-[r157:treatedBy]->(o2)
+SET r157.text = 'Những loại rau củ giàu flavonoid như táo, trà xanh và gừng'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:food {id: 'trà_xanh_food'})
+MERGE (o1)-[r158:treatedBy]->(o2)
+SET r158.text = 'Những loại rau củ giàu flavonoid như táo, trà xanh và gừng'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:food {id: 'gừng_food'})
+MERGE (o1)-[r159:treatedBy]->(o2)
+SET r159.text = 'Những loại rau củ giàu flavonoid như táo, trà xanh và gừng'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:food {id: 'sữa_chua_food'})
+MERGE (o1)-[r160:treatedBy]->(o2)
+SET r160.text = 'Thực phẩm chứa vi khuẩn có lợi như sữa chua'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:food {id: 'rau_có_màu_xanh_đậm_food'})
+MERGE (o1)-[r161:treatedBy]->(o2)
+SET r161.text = 'Các loại rau có màu xanh đậm'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:food {id: 'khoai_lang_food'})
+MERGE (o1)-[r162:treatedBy]->(o2)
+SET r162.text = 'Thực phẩm giàu vitamin A và C như khoai lang, ổi, cam,&#8230;'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:food {id: 'ổi_food'})
+MERGE (o1)-[r163:treatedBy]->(o2)
+SET r163.text = 'Thực phẩm giàu vitamin A và C như khoai lang, ổi, cam,&#8230;'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:food {id: 'cam_food'})
+MERGE (o1)-[r164:treatedBy]->(o2)
+SET r164.text = 'Thực phẩm giàu vitamin A và C như khoai lang, ổi, cam,&#8230;'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:food {id: 'thực_phẩm_có_khả_năng_gây_kích_thích_niêm_mạc_food'})
+MERGE (o1)-[r165:aggravatedBy]->(o2)
+SET r165.text = 'Bên cạnh đó, người bị viêm hang vị dạ dày cần nghiêm khắc hạn chế những loại thực phẩm có khả năng gây kích thích niêm mạc, tăng acid trong dạ dày.'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:symptom {id: 'tăng_acid_trong_dạ_dày_symptom'})
+MERGE (o1)-[r166:aggravatedBy]->(o2)
+SET r166.text = 'Bên cạnh đó, người bị viêm hang vị dạ dày cần nghiêm khắc hạn chế những loại thực phẩm có khả năng gây kích thích niêm mạc, tăng acid trong dạ dày.'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:food {id: 'rượu_bia_food'})
+MERGE (o1)-[r167:aggravatedBy]->(o2)
+SET r167.text = 'Những loại thực phẩm đó bao gồm:  Rượu bia hoặc đồ uống có cồn'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:food {id: 'đồ_uống_có_cồn_food'})
+MERGE (o1)-[r168:aggravatedBy]->(o2)
+SET r168.text = 'Những loại thực phẩm đó bao gồm:  Rượu bia hoặc đồ uống có cồn'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:food {id: 'thức_ăn_cay_food'})
+MERGE (o1)-[r169:aggravatedBy]->(o2)
+SET r169.text = 'Thức ăn cay, nóng'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:food {id: 'thức_ăn_nóng_food'})
+MERGE (o1)-[r170:aggravatedBy]->(o2)
+SET r170.text = 'Thức ăn cay, nóng'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:food {id: 'thức_ăn_nhiều_dầu_mỡ_food'})
+MERGE (o1)-[r171:aggravatedBy]->(o2)
+SET r171.text = 'Thức ăn nhiều dầu mỡ'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:treatment {id: 'trung_tâm_nội_soi_và_phẫu_thuật_nội_soi_tiêu_hóa_(bvđk_tâm_anh_tp.hcm)_treatment'})
+MERGE (o1)-[r172:treatedBy]->(o2)
+SET r172.text = 'Trung tâm Nội soi và Phẫu thuật nội soi tiêu hóa (BVĐK Tâm Anh TP.HCM) và Khoa Tiêu hóa - Gan mật - Tụy (BVĐK Tâm Anh Hà Nội) là những trung tâm y tế chuyên khoa Tiêu hóa uy tín, cung cấp dịch vụ thăm khám và điều trị cao cấp, hiệu quả cho các bệnh nhân mắc các vấn đề về gan từ nhẹ đến nặng (gan nhiễm mỡ, viêm gan cấp tính, mạn tính, xơ gan, ung thư gan…), các bệnh về tiêu hóa (rối loạn tiêu hóa, xuất huyết tiêu hóa, đau dạ dày, viêm dạ dày, xuất huyết dạ dày,..).'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:treatment {id: 'khoa_tiêu_hóa_-_gan_mật_-_tụy_(bvđk_tâm_anh_hà_nội)_treatment'})
+MERGE (o1)-[r173:treatedBy]->(o2)
+SET r173.text = 'Trung tâm Nội soi và Phẫu thuật nội soi tiêu hóa (BVĐK Tâm Anh TP.HCM) và Khoa Tiêu hóa - Gan mật - Tụy (BVĐK Tâm Anh Hà Nội) là những trung tâm y tế chuyên khoa Tiêu hóa uy tín, cung cấp dịch vụ thăm khám và điều trị cao cấp, hiệu quả cho các bệnh nhân mắc các vấn đề về gan từ nhẹ đến nặng (gan nhiễm mỡ, viêm gan cấp tính, mạn tính, xơ gan, ung thư gan…), các bệnh về tiêu hóa (rối loạn tiêu hóa, xuất huyết tiêu hóa, đau dạ dày, viêm dạ dày, xuất huyết dạ dày,..).'
+
+MERGE (o1:disease {id: 'viêm_hang_vị_dạ_dày_disease'})
+MERGE (o2:treatment {id: 'bác_sĩ_nội_khoa_–_ngoại_khoa_–_nội_soi_tiêu_hóa_treatment'})
+MERGE (o1)-[r174:treatedBy]->(o2)
+SET r174.text = 'Hệ thống BVĐK Tâm Anh quy tụ đội ngũ bác sĩ Nội khoa – Ngoại khoa – Nội soi tiêu hóa chuyên môn cao, giàu kinh nghiệm, bên cạnh đó là sự hỗ trợ của hệ thống thiết bị y tế hiện đại, nhập khẩu từ nước ngoài, phục vụ tối đa nhu cầu thăm khám và điều trị của khách hàng.'

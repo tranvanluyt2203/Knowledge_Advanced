@@ -1,0 +1,845 @@
+
+MERGE (o1:disease {id: 'viêm_bể_thận_disease'})
+MERGE (o2:disease {id: 'nhiễm_khuẩn_đường_tiết_niệu_disease'})
+MERGE (o1)-[r0:isSymptomOf]->(o2)
+SET r0.text = 'Viêm bể thận là bệnh lý nhiễm khuẩn đường tiết niệu thường gặp.'
+
+MERGE (o1:disease {id: 'viêm_bể_thận_disease'})
+MERGE (o2:lifestyle {id: 'không_được_phát_hiện_sớm_và_điều_trị_đúng_cách_lifestyle'})
+MERGE (o1)-[r1:causedBy]->(o2)
+SET r1.text = 'Bệnh khi không được phát hiện sớm và điều trị đúng cách có thể dẫn tới nhiều biến chứng nguy hiểm.'
+
+MERGE (o1:disease {id: 'viêm_bể_thận_disease'})
+MERGE (o2:cause {id: 'vi_khuẩn_xâm_nhập_gây_nhiễm_trùng_cause'})
+MERGE (o1)-[r2:causedBy]->(o2)
+SET r2.text = 'Viêm bể thận (pyelonephritis) thường xảy ra khi vi khuẩn xâm nhập gây nhiễm trùng, tác nhân phổ biến nhất là vi khuẩn gram âm (1)'
+
+MERGE (o1:cause {id: 'vi_khuẩn_gram_âm_cause'})
+MERGE (o2:disease {id: 'viêm_bể_thận_disease'})
+MERGE (o1)-[r3:causedBy]->(o2)
+SET r3.text = 'Vi khuẩn gram âm'
+
+MERGE (o1:disease {id: 'viêm_bể_thận_cấp_disease'})
+MERGE (o2:disease {id: 'nhiễm_khuẩn_đường_tiết_niệu_disease'})
+MERGE (o1)-[r4:isSymptomOf]->(o2)
+SET r4.text = 'Viêm bể thận cấp là bệnh lý nhiễm khuẩn đường tiết niệu khá thường gặp, gây triệu chứng đột ngột, nghiêm trọng.'
+
+MERGE (o1:disease {id: 'viêm_bể_thận_cấp_disease'})
+MERGE (o2:symptom {id: 'triệu_chứng_đột_ngột__nghiêm_trọng_symptom'})
+MERGE (o1)-[r5:isSymptomOf]->(o2)
+SET r5.text = 'Viêm bể thận cấp là bệnh lý nhiễm khuẩn đường tiết niệu khá thường gặp, gây triệu chứng đột ngột, nghiêm trọng.'
+
+MERGE (o1:cause {id: 'vi_khuẩn_cause'})
+MERGE (o2:disease {id: 'viêm_bể_thận_disease'})
+MERGE (o1)-[r6:causedBy]->(o2)
+SET r6.text = 'Vi khuẩn có thể đi ngược từ bàng quang lên niệu quản đến đài bể thận hoặc xâm nhập theo đường máu khi bệnh nhân bị nhiễm khuẩn huyết.'
+
+MERGE (o1:cause {id: 'vi_khuẩn_cause'})
+MERGE (o2:organ {id: 'bàng_quang_organ'})
+MERGE (o1)-[r7:locatedIn]->(o2)
+SET r7.text = 'Vi khuẩn có thể đi ngược từ bàng quang lên niệu quản đến đài bể thận hoặc xâm nhập theo đường máu khi bệnh nhân bị nhiễm khuẩn huyết.'
+
+MERGE (o1:cause {id: 'vi_khuẩn_cause'})
+MERGE (o2:organ {id: 'niệu_quản_organ'})
+MERGE (o1)-[r8:locatedIn]->(o2)
+SET r8.text = 'Vi khuẩn có thể đi ngược từ bàng quang lên niệu quản đến đài bể thận hoặc xâm nhập theo đường máu khi bệnh nhân bị nhiễm khuẩn huyết.'
+
+MERGE (o1:cause {id: 'vi_khuẩn_cause'})
+MERGE (o2:organ {id: 'đài_bể_thận_organ'})
+MERGE (o1)-[r9:locatedIn]->(o2)
+SET r9.text = 'Vi khuẩn có thể đi ngược từ bàng quang lên niệu quản đến đài bể thận hoặc xâm nhập theo đường máu khi bệnh nhân bị nhiễm khuẩn huyết.'
+
+MERGE (o1:cause {id: 'vi_khuẩn_cause'})
+MERGE (o2:disease {id: 'nhiễm_khuẩn_huyết_disease'})
+MERGE (o1)-[r10:causedBy]->(o2)
+SET r10.text = 'Vi khuẩn có thể đi ngược từ bàng quang lên niệu quản đến đài bể thận hoặc xâm nhập theo đường máu khi bệnh nhân bị nhiễm khuẩn huyết.'
+
+MERGE (o1:disease {id: 'viêm_bể_thận_disease'})
+MERGE (o2:lifestyle {id: 'không_được_chữa_trị_kịp_thời_lifestyle'})
+MERGE (o1)-[r11:causedBy]->(o2)
+SET r11.text = 'Nếu không được chữa trị kịp thời có thể dẫn tới tử vong.'
+
+MERGE (o1:disease {id: 'viêm_thận_bể_thận_mạn_disease'})
+MERGE (o2:organ {id: 'nhu_mô__mô_kẽ_của_thận_organ'})
+MERGE (o1)-[r12:affects]->(o2)
+SET r12.text = 'Viêm thận bể thận mạn là tình trạng tổn thương mạn tính ở nhu mô, mô kẽ của thận, và là hậu quả của quá trình viêm đài bể thận vào thận, lặp đi lặp lại hoặc kéo dài dai dẳng, làm hủy hoại và xơ hoá tổ chức thận, dẫn đến suy thận.'
+
+MERGE (o1:disease {id: 'viêm_thận_bể_thận_mạn_disease'})
+MERGE (o2:disease {id: 'viêm_đài_bể_thận_vào_thận__lặp_đi_lặp_lại_hoặc_kéo_dài_dai_dẳng_disease'})
+MERGE (o1)-[r13:causedBy]->(o2)
+SET r13.text = 'Viêm thận bể thận mạn là tình trạng tổn thương mạn tính ở nhu mô, mô kẽ của thận, và là hậu quả của quá trình viêm đài bể thận vào thận, lặp đi lặp lại hoặc kéo dài dai dẳng, làm hủy hoại và xơ hoá tổ chức thận, dẫn đến suy thận.'
+
+MERGE (o1:disease {id: 'viêm_thận_bể_thận_mạn_disease'})
+MERGE (o2:disease {id: 'suy_thận_disease'})
+MERGE (o1)-[r14:causedBy]->(o2)
+SET r14.text = 'Viêm thận bể thận mạn là tình trạng tổn thương mạn tính ở nhu mô, mô kẽ của thận, và là hậu quả của quá trình viêm đài bể thận vào thận, lặp đi lặp lại hoặc kéo dài dai dẳng, làm hủy hoại và xơ hoá tổ chức thận, dẫn đến suy thận.'
+
+MERGE (o1:disease {id: 'viêm_thận_bể_thận_mạn_disease'})
+MERGE (o2:lifestyle {id: 'trẻ_em_lifestyle'})
+MERGE (o1)-[r15:associatedWith]->(o2)
+SET r15.text = 'Dạng mạn tính hiếm gặp, nhưng thường xuyên được phát hiện ở trẻ em hoặc những người bị tắc nghẽn đường tiểu mắc phải hoặc bẩm sinh.'
+
+MERGE (o1:disease {id: 'viêm_thận_bể_thận_mạn_disease'})
+MERGE (o2:disease {id: 'tắc_nghẽn_đường_tiểu_disease'})
+MERGE (o1)-[r16:associatedWith]->(o2)
+SET r16.text = 'Dạng mạn tính hiếm gặp, nhưng thường xuyên được phát hiện ở trẻ em hoặc những người bị tắc nghẽn đường tiểu mắc phải hoặc bẩm sinh.'
+
+MERGE (o1:symptom {id: 'triệu_chứng_symptom'})
+MERGE (o2:disease {id: 'nhiễm_trùng_disease'})
+MERGE (o1)-[r17:isSymptomOf]->(o2)
+SET r17.text = 'Các triệu chứng thường xuất hiện trong khoảng 2 ngày kể từ khi nhiễm trùng.'
+
+MERGE (o1:symptom {id: 'sốt_trên_38_9°c_symptom'})
+MERGE (o2:disease {id: 'viêm_bể_thận_disease'})
+MERGE (o1)-[r18:isSymptomOf]->(o2)
+SET r18.text = 'Sốt trên 38,9°C.'
+
+MERGE (o1:symptom {id: 'đau_ở_bụng__lưng__bên_hông_hoặc_bẹn_symptom'})
+MERGE (o2:disease {id: 'viêm_bể_thận_disease'})
+MERGE (o1)-[r19:isSymptomOf]->(o2)
+SET r19.text = 'Đau ở bụng, lưng, bên hông hoặc bẹn.'
+
+MERGE (o1:symptom {id: 'đau_lệch_1_bên_symptom'})
+MERGE (o2:disease {id: 'viêm_bể_thận_disease'})
+MERGE (o1)-[r20:isSymptomOf]->(o2)
+SET r20.text = 'Thường đau lệch 1 bên'
+
+MERGE (o1:symptom {id: 'tiểu_đau__tiểu_rát_symptom'})
+MERGE (o2:disease {id: 'viêm_bể_thận_disease'})
+MERGE (o1)-[r21:isSymptomOf]->(o2)
+SET r21.text = 'Tiểu đau, tiểu rát.'
+
+MERGE (o1:symptom {id: 'nước_tiểu_đục_symptom'})
+MERGE (o2:disease {id: 'viêm_bể_thận_disease'})
+MERGE (o1)-[r22:isSymptomOf]->(o2)
+SET r22.text = 'Nước tiểu đục.'
+
+MERGE (o1:symptom {id: 'xuất_hiện_mủ_hoặc_máu_trong_nước_tiểu_symptom'})
+MERGE (o2:disease {id: 'viêm_bể_thận_disease'})
+MERGE (o1)-[r23:isSymptomOf]->(o2)
+SET r23.text = 'Xuất hiện mủ hoặc máu trong nước tiểu.'
+
+MERGE (o1:symptom {id: 'tiểu_gấp_hoặc_tiểu_dắt_symptom'})
+MERGE (o2:disease {id: 'viêm_bể_thận_disease'})
+MERGE (o1)-[r24:isSymptomOf]->(o2)
+SET r24.text = 'Tiểu gấp hoặc tiểu dắt.'
+
+MERGE (o1:symptom {id: 'nước_tiểu_có_mùi_tanh_symptom'})
+MERGE (o2:disease {id: 'viêm_bể_thận_disease'})
+MERGE (o1)-[r25:isSymptomOf]->(o2)
+SET r25.text = 'Nước tiểu có mùi tanh.'
+
+MERGE (o1:symptom {id: 'gai_rét__sốt_rét_run__ớn_lạnh__buồn_nôn__nôn_mửa__đau_nhức__mệt_mỏi__rối_loạn_tâm_thần_symptom'})
+MERGE (o2:disease {id: 'viêm_bể_thận_disease'})
+MERGE (o1)-[r26:isSymptomOf]->(o2)
+SET r26.text = 'Ngoài ra, người bệnh có thể gặp phải các triệu chứng đi kèm như gai rét, sốt rét run, ớn lạnh, buồn nôn, nôn mửa, đau nhức, mệt mỏi, rối loạn tâm thần (mental confusion).'
+
+MERGE (o1:symptom {id: 'triệu_chứng_symptom'})
+MERGE (o2:lifestyle {id: 'trẻ_em_lifestyle'})
+MERGE (o1)-[r27:associatedWith]->(o2)
+SET r27.text = 'Các triệu chứng ở trẻ em và người lớn tuổi có thể khác với những người khác.'
+
+MERGE (o1:symptom {id: 'triệu_chứng_symptom'})
+MERGE (o2:lifestyle {id: 'người_lớn_tuổi_lifestyle'})
+MERGE (o1)-[r28:associatedWith]->(o2)
+SET r28.text = 'Các triệu chứng ở trẻ em và người lớn tuổi có thể khác với những người khác.'
+
+MERGE (o1:symptom {id: 'rối_loạn_tâm_thần_symptom'})
+MERGE (o2:lifestyle {id: 'người_lớn_tuổi_lifestyle'})
+MERGE (o1)-[r29:associatedWith]->(o2)
+SET r29.text = 'Ví dụ, rối loạn tâm thần thường gặp ở người lớn tuổi và thường là triệu chứng duy nhất của họ.'
+
+MERGE (o1:disease {id: 'viêm_thận_bể_thận_mạn_disease'})
+MERGE (o2:symptom {id: 'triệu_chứng_nhẹ_symptom'})
+MERGE (o1)-[r30:isSymptomOf]->(o2)
+SET r30.text = 'Những người bị viêm thận bể thận mạn tính có thể chỉ gặp các triệu chứng nhẹ hoặc thậm chí có thể hoàn toàn không có các triệu chứng đáng chú ý dẫn đến bỏ sót tình trạng bệnh.'
+
+MERGE (o1:disease {id: 'viêm_thận_bể_thận_disease'})
+MERGE (o2:disease {id: 'nhiễm_trùng_đường_tiết_niệu_disease'})
+MERGE (o1)-[r31:isSymptomOf]->(o2)
+SET r31.text = 'Viêm thận bể thận là nhiễm trùng bắt đầu ở đường tiết niệu dưới, dưới dạng nhiễm trùng đường tiết niệu (như viêm bàng quang cấp).'
+
+MERGE (o1:disease {id: 'viêm_thận_bể_thận_disease'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_cấp_disease'})
+MERGE (o1)-[r32:isSymptomOf]->(o2)
+SET r32.text = 'Viêm thận bể thận là nhiễm trùng bắt đầu ở đường tiết niệu dưới, dưới dạng nhiễm trùng đường tiết niệu (như viêm bàng quang cấp).'
+
+MERGE (o1:cause {id: 'vi_khuẩn_cause'})
+MERGE (o2:disease {id: 'viêm_thận_bể_thận_disease'})
+MERGE (o1)-[r33:causes]->(o2)
+SET r33.text = 'Vi khuẩn xâm nhập vào cơ thể qua niệu đạo và bắt đầu sinh sôi và lan lên bàng quang.'
+
+MERGE (o1:cause {id: 'vi_khuẩn_cause'})
+MERGE (o2:organ {id: 'niệu_đạo_organ'})
+MERGE (o1)-[r34:locatedIn]->(o2)
+SET r34.text = 'Vi khuẩn xâm nhập vào cơ thể qua niệu đạo và bắt đầu sinh sôi và lan lên bàng quang.'
+
+MERGE (o1:cause {id: 'vi_khuẩn_cause'})
+MERGE (o2:organ {id: 'bàng_quang_organ'})
+MERGE (o1)-[r35:locatedIn]->(o2)
+SET r35.text = 'Vi khuẩn xâm nhập vào cơ thể qua niệu đạo và bắt đầu sinh sôi và lan lên bàng quang.'
+
+MERGE (o1:cause {id: 'vi_khuẩn_cause'})
+MERGE (o2:organ {id: 'niệu_quản_organ'})
+MERGE (o1)-[r36:locatedIn]->(o2)
+SET r36.text = 'Từ đó, vi khuẩn trào ngược qua niệu quản đến thận.'
+
+MERGE (o1:cause {id: 'vi_khuẩn_cause'})
+MERGE (o2:organ {id: 'thận_organ'})
+MERGE (o1)-[r37:locatedIn]->(o2)
+SET r37.text = 'Từ đó, vi khuẩn trào ngược qua niệu quản đến thận.'
+
+MERGE (o1:cause {id: 'e.coli_cause'})
+MERGE (o2:disease {id: 'viêm_thận_bể_thận_disease'})
+MERGE (o1)-[r38:causes]->(o2)
+SET r38.text = 'Vi khuẩn gây bệnh là thường là những vi khuẩn gram âm như E.Coli, Klebsiella, Proteus mirabilis và Enterobacter.'
+
+MERGE (o1:cause {id: 'klebsiella_cause'})
+MERGE (o2:disease {id: 'viêm_thận_bể_thận_disease'})
+MERGE (o1)-[r39:causes]->(o2)
+SET r39.text = 'Vi khuẩn gây bệnh là thường là những vi khuẩn gram âm như E.Coli, Klebsiella, Proteus mirabilis và Enterobacter.'
+
+MERGE (o1:cause {id: 'proteus_mirabilis_cause'})
+MERGE (o2:disease {id: 'viêm_thận_bể_thận_disease'})
+MERGE (o1)-[r40:causes]->(o2)
+SET r40.text = 'Vi khuẩn gây bệnh là thường là những vi khuẩn gram âm như E.Coli, Klebsiella, Proteus mirabilis và Enterobacter.'
+
+MERGE (o1:cause {id: 'enterobacter_cause'})
+MERGE (o2:disease {id: 'viêm_thận_bể_thận_disease'})
+MERGE (o1)-[r41:causes]->(o2)
+SET r41.text = 'Vi khuẩn gây bệnh là thường là những vi khuẩn gram âm như E.Coli, Klebsiella, Proteus mirabilis và Enterobacter.'
+
+MERGE (o1:cause {id: 'tụ_cầu_cause'})
+MERGE (o2:disease {id: 'viêm_thận_bể_thận_disease'})
+MERGE (o1)-[r42:causes]->(o2)
+SET r42.text = 'Ngoài ra, những vi khuẩn Gram dương vẫn có khả năng gây bệnh nhưng hiếm gặp hơn như tụ cầu, liên cầu…'
+
+MERGE (o1:cause {id: 'liên_cầu_cause'})
+MERGE (o2:disease {id: 'viêm_thận_bể_thận_disease'})
+MERGE (o1)-[r43:causes]->(o2)
+SET r43.text = 'Ngoài ra, những vi khuẩn Gram dương vẫn có khả năng gây bệnh nhưng hiếm gặp hơn như tụ cầu, liên cầu…'
+
+MERGE (o1:cause {id: 'bất_thường_dòng_chảy_nước_tiểu_cause'})
+MERGE (o2:disease {id: 'viêm_thận_bể_thận_cấp_disease'})
+MERGE (o1)-[r44:causes]->(o2)
+SET r44.text = 'Bất kỳ bất thường nào làm gián đoạn dòng chảy bình thường của nước tiểu đều có khả năng gây viêm thận bể thận cấp.'
+
+MERGE (o1:cause {id: 'bất_thường_đường_tiết_niệu_cause'})
+MERGE (o2:disease {id: 'viêm_thận_bể_thận_disease'})
+MERGE (o1)-[r45:causes]->(o2)
+SET r45.text = 'Chẳng hạn như người có đường tiết niệu bất thường về kích thước hoặc hình dạng có thể đối mặt với nguy cơ viêm thận bể thận cao.'
+
+MERGE (o1:cause {id: 'niệu_đạo_ngắn_cause'})
+MERGE (o2:disease {id: 'viêm_thận_bể_thận_disease'})
+MERGE (o1)-[r46:causes]->(o2)
+SET r46.text = 'Ngoài ra, niệu đạo của phụ nữ ngắn hơn nam giới.'
+
+MERGE (o1:disease {id: 'nhiễm_trùng_thận_disease'})
+MERGE (o2:disease {id: 'viêm_thận_bể_thận_cấp_disease'})
+MERGE (o1)-[r47:isSymptomOf]->(o2)
+SET r47.text = 'Điều này khiến phụ nữ dễ bị nhiễm trùng thận và có nguy cơ cao bị viêm thận bể thận cấp.'
+
+MERGE (o1:cause {id: 'sỏi_thận_cause'})
+MERGE (o2:disease {id: 'viêm_thận_bể_thận_cấp_disease'})
+MERGE (o1)-[r48:causes]->(o2)
+SET r48.text = 'Những yếu tố làm tăng nguy cơ mắc viêm thận bể thận cấp gồm:  Người bệnh sỏi thận.'
+
+MERGE (o1:cause {id: 'bất_thường_ở_thận_cause'})
+MERGE (o2:disease {id: 'viêm_thận_bể_thận_cấp_disease'})
+MERGE (o1)-[r49:causes]->(o2)
+SET r49.text = 'Những yếu tố làm tăng nguy cơ mắc viêm thận bể thận cấp gồm:  Người có các bất thường ở thận hoặc bàng quang.'
+
+MERGE (o1:cause {id: 'bất_thường_ở_bàng_quang_cause'})
+MERGE (o2:disease {id: 'viêm_thận_bể_thận_cấp_disease'})
+MERGE (o1)-[r50:causes]->(o2)
+SET r50.text = 'Những yếu tố làm tăng nguy cơ mắc viêm thận bể thận cấp gồm:  Người có các bất thường ở thận hoặc bàng quang.'
+
+MERGE (o1:cause {id: 'tuổi_già_cause'})
+MERGE (o2:disease {id: 'viêm_thận_bể_thận_cấp_disease'})
+MERGE (o1)-[r51:causes]->(o2)
+SET r51.text = 'Những yếu tố làm tăng nguy cơ mắc viêm thận bể thận cấp gồm:  Người cao tuổi.'
+
+MERGE (o1:cause {id: 'suy_giảm_hệ_miễn_dịch_cause'})
+MERGE (o2:disease {id: 'viêm_thận_bể_thận_cấp_disease'})
+MERGE (o1)-[r52:causes]->(o2)
+SET r52.text = 'Những yếu tố làm tăng nguy cơ mắc viêm thận bể thận cấp gồm:  Người có hệ miễn dịch bị suy giảm như người bệnh đái tháo đường, HIV/AIDS, ung thư.'
+
+MERGE (o1:disease {id: 'bệnh_đái_tháo_đường_disease'})
+MERGE (o2:disease {id: 'viêm_thận_bể_thận_cấp_disease'})
+MERGE (o1)-[r53:causes]->(o2)
+SET r53.text = 'Những yếu tố làm tăng nguy cơ mắc viêm thận bể thận cấp gồm:  Người có hệ miễn dịch bị suy giảm như người bệnh đái tháo đường, HIV/AIDS, ung thư.'
+
+MERGE (o1:disease {id: 'hiv/aids_disease'})
+MERGE (o2:disease {id: 'viêm_thận_bể_thận_cấp_disease'})
+MERGE (o1)-[r54:causes]->(o2)
+SET r54.text = 'Những yếu tố làm tăng nguy cơ mắc viêm thận bể thận cấp gồm:  Người có hệ miễn dịch bị suy giảm như người bệnh đái tháo đường, HIV/AIDS, ung thư.'
+
+MERGE (o1:disease {id: 'ung_thư_disease'})
+MERGE (o2:disease {id: 'viêm_thận_bể_thận_cấp_disease'})
+MERGE (o1)-[r55:causes]->(o2)
+SET r55.text = 'Những yếu tố làm tăng nguy cơ mắc viêm thận bể thận cấp gồm:  Người có hệ miễn dịch bị suy giảm như người bệnh đái tháo đường, HIV/AIDS, ung thư.'
+
+MERGE (o1:cause {id: 'trào_ngược_bàng_quang_niệu_quản_cause'})
+MERGE (o2:disease {id: 'viêm_thận_bể_thận_cấp_disease'})
+MERGE (o1)-[r56:causes]->(o2)
+SET r56.text = 'Những yếu tố làm tăng nguy cơ mắc viêm thận bể thận cấp gồm:  Người bị trào ngược bàng quang niệu quản (vesicoureteral reflux) hoặc có bất thường co bóp bàng quang niệu quản (tình trạng một lượng nhỏ nước tiểu trào ngược từ bàng quang vào niệu quản và thận).'
+
+MERGE (o1:cause {id: 'bất_thường_co_bóp_bàng_quang_niệu_quản_cause'})
+MERGE (o2:disease {id: 'viêm_thận_bể_thận_cấp_disease'})
+MERGE (o1)-[r57:causes]->(o2)
+SET r57.text = 'Những yếu tố làm tăng nguy cơ mắc viêm thận bể thận cấp gồm:  Người bị trào ngược bàng quang niệu quản (vesicoureteral reflux) hoặc có bất thường co bóp bàng quang niệu quản (tình trạng một lượng nhỏ nước tiểu trào ngược từ bàng quang vào niệu quản và thận).'
+
+MERGE (o1:cause {id: 'tăng_sinh_lành_tính_tuyến_tiền_liệt_cause'})
+MERGE (o2:disease {id: 'viêm_thận_bể_thận_cấp_disease'})
+MERGE (o1)-[r58:causes]->(o2)
+SET r58.text = 'Những yếu tố làm tăng nguy cơ mắc viêm thận bể thận cấp gồm:  Người bị tăng sinh lành tính tuyến tiền liệt.'
+
+MERGE (o1:cause {id: 'sử_dụng_ống_thông_tiểu_cause'})
+MERGE (o2:disease {id: 'viêm_thận_bể_thận_disease'})
+MERGE (o1)-[r59:causes]->(o2)
+SET r59.text = 'Các yếu tố khác có thể khiến bạn dễ mắc bệnh gồm:  Sử dụng ống thông tiểu (catheter).'
+
+MERGE (o1:cause {id: 'nội_soi_bàng_quang_cause'})
+MERGE (o2:disease {id: 'viêm_thận_bể_thận_disease'})
+MERGE (o1)-[r60:causes]->(o2)
+SET r60.text = 'Các yếu tố khác có thể khiến bạn dễ mắc bệnh gồm:  Nội soi bàng quang.'
+
+MERGE (o1:cause {id: 'phẫu_thuật_tiết_niệu_cause'})
+MERGE (o2:disease {id: 'viêm_thận_bể_thận_disease'})
+MERGE (o1)-[r61:causes]->(o2)
+SET r61.text = 'Các yếu tố khác có thể khiến bạn dễ mắc bệnh gồm:  Phẫu thuật tiết niệu.'
+
+MERGE (o1:cause {id: 'thuốc_cause'})
+MERGE (o2:disease {id: 'viêm_thận_bể_thận_disease'})
+MERGE (o1)-[r62:causes]->(o2)
+SET r62.text = 'Các yếu tố khác có thể khiến bạn dễ mắc bệnh gồm:  Một số loại thuốc.'
+
+MERGE (o1:cause {id: 'tổn_thương_dây_thần_kinh_cause'})
+MERGE (o2:disease {id: 'viêm_thận_bể_thận_disease'})
+MERGE (o1)-[r63:causes]->(o2)
+SET r63.text = 'Các yếu tố khác có thể khiến bạn dễ mắc bệnh gồm:  Tổn thương dây thần kinh hoặc tủy sống.'
+
+MERGE (o1:cause {id: 'tổn_thương_tủy_sống_cause'})
+MERGE (o2:disease {id: 'viêm_thận_bể_thận_disease'})
+MERGE (o1)-[r64:causes]->(o2)
+SET r64.text = 'Các yếu tố khác có thể khiến bạn dễ mắc bệnh gồm:  Tổn thương dây thần kinh hoặc tủy sống.'
+
+MERGE (o1:disease {id: 'viêm_thận_bể_thận_mạn_tính_disease'})
+MERGE (o2:cause {id: 'tắc_nghẽn_đường_tiết_niệu_cause'})
+MERGE (o1)-[r65:causedBy]->(o2)
+SET r65.text = 'Các dạng mạn tính của bệnh phổ biến ở những người bị tắc nghẽn đường tiết niệu (urinary obstructions).'
+
+MERGE (o1:disease {id: 'viêm_thận_bể_thận_mạn_tính_disease'})
+MERGE (o2:disease {id: 'nhiễm_trùng_tiểu_disease'})
+MERGE (o1)-[r66:causedBy]->(o2)
+SET r66.text = 'Nguyên nhân có thể là do nhiễm trùng tiểu, trào ngược bàng quang niệu quản, bất thường ở đường tiết niệu (anatomical anomalies).'
+
+MERGE (o1:disease {id: 'viêm_thận_bể_thận_mạn_tính_disease'})
+MERGE (o2:cause {id: 'trào_ngược_bàng_quang_niệu_quản_cause'})
+MERGE (o1)-[r67:causedBy]->(o2)
+SET r67.text = 'Nguyên nhân có thể là do nhiễm trùng tiểu, trào ngược bàng quang niệu quản, bất thường ở đường tiết niệu (anatomical anomalies).'
+
+MERGE (o1:disease {id: 'viêm_thận_bể_thận_mạn_tính_disease'})
+MERGE (o2:cause {id: 'bất_thường_ở_đường_tiết_niệu_cause'})
+MERGE (o1)-[r68:causedBy]->(o2)
+SET r68.text = 'Nguyên nhân có thể là do nhiễm trùng tiểu, trào ngược bàng quang niệu quản, bất thường ở đường tiết niệu (anatomical anomalies).'
+
+MERGE (o1:disease {id: 'viêm_thận_bể_thận_mạn_tính_disease'})
+MERGE (o2:lifestyle {id: 'trẻ_em_lifestyle'})
+MERGE (o1)-[r69:associatedWith]->(o2)
+SET r69.text = 'Hơn nữa, viêm thận bể thận mạn tính thường gặp ở trẻ em hơn người lớn.'
+
+MERGE (o1:disease {id: 'viêm_bể_thận_disease'})
+MERGE (o2:disease {id: 'áp_xe_thận_disease'})
+MERGE (o1)-[r70:isSymptomOf]->(o2)
+SET r70.text = 'Viêm bể thận nếu không được chữa trị kịp thời có thể dẫn tới những biến chứng nguy hiểm như:  Áp xe thận: Đây là tình trạng xuất hiện ổ mủ quanh thận do nhiễm trùng những mô mềm xung quanh thận.'
+
+MERGE (o1:disease {id: 'áp_xe_thận_disease'})
+MERGE (o2:organ {id: 'thận_organ'})
+MERGE (o1)-[r71:locatedIn]->(o2)
+SET r71.text = 'Viêm bể thận nếu không được chữa trị kịp thời có thể dẫn tới những biến chứng nguy hiểm như:  Áp xe thận: Đây là tình trạng xuất hiện ổ mủ quanh thận do nhiễm trùng những mô mềm xung quanh thận.'
+
+MERGE (o1:disease {id: 'áp_xe_thận_disease'})
+MERGE (o2:cause {id: 'nhiễm_trùng_cause'})
+MERGE (o1)-[r72:causedBy]->(o2)
+SET r72.text = 'Viêm bể thận nếu không được chữa trị kịp thời có thể dẫn tới những biến chứng nguy hiểm như:  Áp xe thận: Đây là tình trạng xuất hiện ổ mủ quanh thận do nhiễm trùng những mô mềm xung quanh thận.'
+
+MERGE (o1:disease {id: 'viêm_bể_thận_disease'})
+MERGE (o2:disease {id: 'nhiễm_khuẩn_huyết_disease'})
+MERGE (o1)-[r73:isSymptomOf]->(o2)
+SET r73.text = 'Viêm bể thận nếu không được chữa trị kịp thời có thể dẫn tới những biến chứng nguy hiểm như:  Nhiễm khuẩn huyết: Đây là tình trạng vi khuẩn tràn vào máu.'
+
+MERGE (o1:disease {id: 'nhiễm_khuẩn_huyết_disease'})
+MERGE (o2:cause {id: 'vi_khuẩn_cause'})
+MERGE (o1)-[r74:causedBy]->(o2)
+SET r74.text = 'Viêm bể thận nếu không được chữa trị kịp thời có thể dẫn tới những biến chứng nguy hiểm như:  Nhiễm khuẩn huyết: Đây là tình trạng vi khuẩn tràn vào máu.'
+
+MERGE (o1:disease {id: 'viêm_bể_thận_disease'})
+MERGE (o2:disease {id: 'suy_thận_cấp_disease'})
+MERGE (o1)-[r75:isSymptomOf]->(o2)
+SET r75.text = 'Viêm bể thận nếu không được chữa trị kịp thời có thể dẫn tới những biến chứng nguy hiểm như:  Suy thận cấp: Biến chứng nguy hiểm của viêm thận bể thận.'
+
+MERGE (o1:disease {id: 'suy_thận_cấp_disease'})
+MERGE (o2:organ {id: 'thận_organ'})
+MERGE (o1)-[r76:affects]->(o2)
+SET r76.text = 'Viêm bể thận nếu không được chữa trị kịp thời có thể dẫn tới những biến chứng nguy hiểm như:  Suy thận cấp: Biến chứng nguy hiểm của viêm thận bể thận.'
+
+MERGE (o1:symptom {id: 'thiểu_niệu_symptom'})
+MERGE (o2:disease {id: 'suy_thận_cấp_disease'})
+MERGE (o1)-[r77:isSymptomOf]->(o2)
+SET r77.text = 'Biểu hiện là thiểu niệu hoặc vô niệu, xét nghiệm máu nồng độ ure/creatinin tăng cao.'
+
+MERGE (o1:symptom {id: 'vô_niệu_symptom'})
+MERGE (o2:disease {id: 'suy_thận_cấp_disease'})
+MERGE (o1)-[r78:isSymptomOf]->(o2)
+SET r78.text = 'Biểu hiện là thiểu niệu hoặc vô niệu, xét nghiệm máu nồng độ ure/creatinin tăng cao.'
+
+MERGE (o1:test {id: 'xét_nghiệm_máu_nồng_độ_ure/creatinin_tăng_cao_test'})
+MERGE (o2:disease {id: 'suy_thận_cấp_disease'})
+MERGE (o1)-[r79:diagnosedBy]->(o2)
+SET r79.text = 'Biểu hiện là thiểu niệu hoặc vô niệu, xét nghiệm máu nồng độ ure/creatinin tăng cao.'
+
+MERGE (o1:disease {id: 'suy_thận_cấp_disease'})
+MERGE (o2:disease {id: 'tăng_huyết_áp_cấp_disease'})
+MERGE (o1)-[r80:isSymptomOf]->(o2)
+SET r80.text = 'Suy thận cấp có khả năng gây ra những biến chứng như tăng huyết áp cấp hoặc phù phổi cấp, gây nguy hiểm tới tính mạng.'
+
+MERGE (o1:disease {id: 'suy_thận_cấp_disease'})
+MERGE (o2:disease {id: 'phù_phổi_cấp_disease'})
+MERGE (o1)-[r81:isSymptomOf]->(o2)
+SET r81.text = 'Suy thận cấp có khả năng gây ra những biến chứng như tăng huyết áp cấp hoặc phù phổi cấp, gây nguy hiểm tới tính mạng.'
+
+MERGE (o1:disease {id: 'suy_thận_cấp_disease'})
+MERGE (o2:disease {id: 'suy_thận_mạn_disease'})
+MERGE (o1)-[r82:isSymptomOf]->(o2)
+SET r82.text = 'Nếu trì hoãn điều trị có thể dẫn tới suy thận mạn.'
+
+MERGE (o1:disease {id: 'viêm_bể_thận_disease'})
+MERGE (o2:disease {id: 'hoại_tử_nhú_thận_disease'})
+MERGE (o1)-[r83:isSymptomOf]->(o2)
+SET r83.text = 'Hoại tử nhú thận: Nhiễm trùng nặng kéo dài có thể làm hoại tử những nhú thận, khiến toàn bộ hay một phần nhú thận bị chết.'
+
+MERGE (o1:disease {id: 'hoại_tử_nhú_thận_disease'})
+MERGE (o2:organ {id: 'nhú_thận_organ'})
+MERGE (o1)-[r84:affects]->(o2)
+SET r84.text = 'Hoại tử nhú thận: Nhiễm trùng nặng kéo dài có thể làm hoại tử những nhú thận, khiến toàn bộ hay một phần nhú thận bị chết.'
+
+MERGE (o1:disease {id: 'hoại_tử_nhú_thận_disease'})
+MERGE (o2:cause {id: 'nhiễm_trùng_cause'})
+MERGE (o1)-[r85:causedBy]->(o2)
+SET r85.text = 'Hoại tử nhú thận: Nhiễm trùng nặng kéo dài có thể làm hoại tử những nhú thận, khiến toàn bộ hay một phần nhú thận bị chết.'
+
+MERGE (o1:organ {id: 'nhú_thận_organ'})
+MERGE (o2:organ {id: 'thận_organ'})
+MERGE (o1)-[r86:locatedIn]->(o2)
+SET r86.text = 'Nhú thận là vị trí mở của ống góp vào thận.'
+
+MERGE (o1:cause {id: 'nước_tiểu_cause'})
+MERGE (o2:organ {id: 'niệu_quản_organ'})
+MERGE (o1)-[r87:locatedIn]->(o2)
+SET r87.text = 'Đây là nơi nước tiểu chảy vào niệu quản.'
+
+MERGE (o1:disease {id: 'hoại_tử_nhú_thận_disease'})
+MERGE (o2:cause {id: 'tắc_nghẽn_niệu_quản_cause'})
+MERGE (o1)-[r88:causes]->(o2)
+SET r88.text = 'Khi hoại tử, nhú thận bong ra rồi theo nước tiểu gây tắc nghẽn niệu quản hay niệu đạo.'
+
+MERGE (o1:disease {id: 'hoại_tử_nhú_thận_disease'})
+MERGE (o2:cause {id: 'tắc_nghẽn_niệu_đạo_cause'})
+MERGE (o1)-[r89:causes]->(o2)
+SET r89.text = 'Khi hoại tử, nhú thận bong ra rồi theo nước tiểu gây tắc nghẽn niệu quản hay niệu đạo.'
+
+MERGE (o1:disease {id: 'ứ_mủ_bể_thận_disease'})
+MERGE (o2:disease {id: 'viêm_thận_bể_thận_disease'})
+MERGE (o1)-[r90:causes]->(o2)
+SET r90.text = 'Nếu không được can thiệp, tình trạng này sẽ là nguyên nhân trở nặng bệnh khi ứ mủ bể thận.'
+
+MERGE (o1:disease {id: 'ứ_mủ_bể_thận_disease'})
+MERGE (o2:disease {id: 'suy_thận_cấp_disease'})
+MERGE (o1)-[r91:isSymptomOf]->(o2)
+SET r91.text = 'Từ đó, người bệnh phải đối mặt với nguy cơ suy thận cấp rất cao.'
+
+MERGE (o1:disease {id: 'viêm_thận_bể_thận_disease'})
+MERGE (o2:disease {id: 'kháng_kháng_sinh_disease'})
+MERGE (o1)-[r92:isSymptomOf]->(o2)
+SET r92.text = 'Kháng kháng sinh: Biến chứng này có thể là do bản chất loại vi trùng đa đề kháng và do sử dụng kháng sinh không phù hợp, không đủ liều, không đủ lâu.'
+
+MERGE (o1:disease {id: 'kháng_kháng_sinh_disease'})
+MERGE (o2:cause {id: 'vi_trùng_đa_đề_kháng_cause'})
+MERGE (o1)-[r93:causedBy]->(o2)
+SET r93.text = 'Kháng kháng sinh: Biến chứng này có thể là do bản chất loại vi trùng đa đề kháng và do sử dụng kháng sinh không phù hợp, không đủ liều, không đủ lâu.'
+
+MERGE (o1:disease {id: 'kháng_kháng_sinh_disease'})
+MERGE (o2:cause {id: 'sử_dụng_kháng_sinh_không_phù_hợp_cause'})
+MERGE (o1)-[r94:causedBy]->(o2)
+SET r94.text = 'Kháng kháng sinh: Biến chứng này có thể là do bản chất loại vi trùng đa đề kháng và do sử dụng kháng sinh không phù hợp, không đủ liều, không đủ lâu.'
+
+MERGE (o1:disease {id: 'kháng_kháng_sinh_disease'})
+MERGE (o2:cause {id: 'sử_dụng_kháng_sinh_không_đủ_liều_cause'})
+MERGE (o1)-[r95:causedBy]->(o2)
+SET r95.text = 'Kháng kháng sinh: Biến chứng này có thể là do bản chất loại vi trùng đa đề kháng và do sử dụng kháng sinh không phù hợp, không đủ liều, không đủ lâu.'
+
+MERGE (o1:disease {id: 'kháng_kháng_sinh_disease'})
+MERGE (o2:cause {id: 'sử_dụng_kháng_sinh_không_đủ_lâu_cause'})
+MERGE (o1)-[r96:causedBy]->(o2)
+SET r96.text = 'Kháng kháng sinh: Biến chứng này có thể là do bản chất loại vi trùng đa đề kháng và do sử dụng kháng sinh không phù hợp, không đủ liều, không đủ lâu.'
+
+MERGE (o1:disease {id: 'viêm_thận_bể_thận_cấp_disease'})
+MERGE (o2:disease {id: 'suy_thận_mạn_disease'})
+MERGE (o1)-[r97:isSymptomOf]->(o2)
+SET r97.text = 'Suy thận mạn: Viêm bể thận cấp có kháng kháng sinh, tái viêm thường xuyên, khi không được điều trị kịp thời và đúng cách, rất dẫn đến viêm thận bể thận mạn, suy thận mạn.'
+
+MERGE (o1:disease {id: 'viêm_thận_bể_thận_cấp_disease'})
+MERGE (o2:disease {id: 'viêm_thận_bể_thận_mạn_disease'})
+MERGE (o1)-[r98:isSymptomOf]->(o2)
+SET r98.text = 'Suy thận mạn: Viêm bể thận cấp có kháng kháng sinh, tái viêm thường xuyên, khi không được điều trị kịp thời và đúng cách, rất dẫn đến viêm thận bể thận mạn, suy thận mạn.'
+
+MERGE (o1:disease {id: 'kháng_kháng_sinh_disease'})
+MERGE (o2:disease {id: 'suy_thận_mạn_disease'})
+MERGE (o1)-[r99:causes]->(o2)
+SET r99.text = 'Suy thận mạn: Viêm bể thận cấp có kháng kháng sinh, tái viêm thường xuyên, khi không được điều trị kịp thời và đúng cách, rất dẫn đến viêm thận bể thận mạn, suy thận mạn.'
+
+MERGE (o1:cause {id: 'tái_viêm_thường_xuyên_cause'})
+MERGE (o2:disease {id: 'suy_thận_mạn_disease'})
+MERGE (o1)-[r100:causes]->(o2)
+SET r100.text = 'Suy thận mạn: Viêm bể thận cấp có kháng kháng sinh, tái viêm thường xuyên, khi không được điều trị kịp thời và đúng cách, rất dẫn đến viêm thận bể thận mạn, suy thận mạn.'
+
+MERGE (o1:cause {id: 'điều_trị_không_kịp_thời_cause'})
+MERGE (o2:disease {id: 'suy_thận_mạn_disease'})
+MERGE (o1)-[r101:causes]->(o2)
+SET r101.text = 'Suy thận mạn: Viêm bể thận cấp có kháng kháng sinh, tái viêm thường xuyên, khi không được điều trị kịp thời và đúng cách, rất dẫn đến viêm thận bể thận mạn, suy thận mạn.'
+
+MERGE (o1:symptom {id: 'rét_run_symptom'})
+MERGE (o2:disease {id: 'viêm_bể_thận_disease'})
+MERGE (o1)-[r102:isSymptomOf]->(o2)
+SET r102.text = 'Khi chẩn đoán viêm bể thận, bác sĩ sẽ dựa vào những biểu hiện như:  Biểu hiện nhiễm trùng: Rét run, sốt cao, mệt mỏi, đau đầu, lưỡi bẩn, môi khô… Biểu hiện bàng quang cấp: Tiểu khó, tiểu buốt, tiểu rắt, tiểu máu, tiểu đục, tiểu mủ. Biểu hiện đau: Đau hông lưng, mạn sườn nhiều, thường đau một bên, hiếm khi hai bên. Có trường hợp xuất hiện cơn đau quặn thận.'
+
+MERGE (o1:symptom {id: 'sốt_cao_symptom'})
+MERGE (o2:disease {id: 'viêm_bể_thận_disease'})
+MERGE (o1)-[r103:isSymptomOf]->(o2)
+SET r103.text = 'Khi chẩn đoán viêm bể thận, bác sĩ sẽ dựa vào những biểu hiện như:  Biểu hiện nhiễm trùng: Rét run, sốt cao, mệt mỏi, đau đầu, lưỡi bẩn, môi khô… Biểu hiện bàng quang cấp: Tiểu khó, tiểu buốt, tiểu rắt, tiểu máu, tiểu đục, tiểu mủ. Biểu hiện đau: Đau hông lưng, mạn sườn nhiều, thường đau một bên, hiếm khi hai bên. Có trường hợp xuất hiện cơn đau quặn thận.'
+
+MERGE (o1:symptom {id: 'mệt_mỏi_symptom'})
+MERGE (o2:disease {id: 'viêm_bể_thận_disease'})
+MERGE (o1)-[r104:isSymptomOf]->(o2)
+SET r104.text = 'Khi chẩn đoán viêm bể thận, bác sĩ sẽ dựa vào những biểu hiện như:  Biểu hiện nhiễm trùng: Rét run, sốt cao, mệt mỏi, đau đầu, lưỡi bẩn, môi khô… Biểu hiện bàng quang cấp: Tiểu khó, tiểu buốt, tiểu rắt, tiểu máu, tiểu đục, tiểu mủ. Biểu hiện đau: Đau hông lưng, mạn sườn nhiều, thường đau một bên, hiếm khi hai bên. Có trường hợp xuất hiện cơn đau quặn thận.'
+
+MERGE (o1:symptom {id: 'đau_đầu_symptom'})
+MERGE (o2:disease {id: 'viêm_bể_thận_disease'})
+MERGE (o1)-[r105:isSymptomOf]->(o2)
+SET r105.text = 'Khi chẩn đoán viêm bể thận, bác sĩ sẽ dựa vào những biểu hiện như:  Biểu hiện nhiễm trùng: Rét run, sốt cao, mệt mỏi, đau đầu, lưỡi bẩn, môi khô… Biểu hiện bàng quang cấp: Tiểu khó, tiểu buốt, tiểu rắt, tiểu máu, tiểu đục, tiểu mủ. Biểu hiện đau: Đau hông lưng, mạn sườn nhiều, thường đau một bên, hiếm khi hai bên. Có trường hợp xuất hiện cơn đau quặn thận.'
+
+MERGE (o1:symptom {id: 'lưỡi_bẩn_symptom'})
+MERGE (o2:disease {id: 'viêm_bể_thận_disease'})
+MERGE (o1)-[r106:isSymptomOf]->(o2)
+SET r106.text = 'Khi chẩn đoán viêm bể thận, bác sĩ sẽ dựa vào những biểu hiện như:  Biểu hiện nhiễm trùng: Rét run, sốt cao, mệt mỏi, đau đầu, lưỡi bẩn, môi khô… Biểu hiện bàng quang cấp: Tiểu khó, tiểu buốt, tiểu rắt, tiểu máu, tiểu đục, tiểu mủ. Biểu hiện đau: Đau hông lưng, mạn sườn nhiều, thường đau một bên, hiếm khi hai bên. Có trường hợp xuất hiện cơn đau quặn thận.'
+
+MERGE (o1:symptom {id: 'môi_khô_symptom'})
+MERGE (o2:disease {id: 'viêm_bể_thận_disease'})
+MERGE (o1)-[r107:isSymptomOf]->(o2)
+SET r107.text = 'Khi chẩn đoán viêm bể thận, bác sĩ sẽ dựa vào những biểu hiện như:  Biểu hiện nhiễm trùng: Rét run, sốt cao, mệt mỏi, đau đầu, lưỡi bẩn, môi khô… Biểu hiện bàng quang cấp: Tiểu khó, tiểu buốt, tiểu rắt, tiểu máu, tiểu đục, tiểu mủ. Biểu hiện đau: Đau hông lưng, mạn sườn nhiều, thường đau một bên, hiếm khi hai bên. Có trường hợp xuất hiện cơn đau quặn thận.'
+
+MERGE (o1:symptom {id: 'tiểu_khó_symptom'})
+MERGE (o2:disease {id: 'viêm_bể_thận_disease'})
+MERGE (o1)-[r108:isSymptomOf]->(o2)
+SET r108.text = 'Khi chẩn đoán viêm bể thận, bác sĩ sẽ dựa vào những biểu hiện như:  Biểu hiện nhiễm trùng: Rét run, sốt cao, mệt mỏi, đau đầu, lưỡi bẩn, môi khô… Biểu hiện bàng quang cấp: Tiểu khó, tiểu buốt, tiểu rắt, tiểu máu, tiểu đục, tiểu mủ. Biểu hiện đau: Đau hông lưng, mạn sườn nhiều, thường đau một bên, hiếm khi hai bên. Có trường hợp xuất hiện cơn đau quặn thận.'
+
+MERGE (o1:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o2:disease {id: 'viêm_bể_thận_disease'})
+MERGE (o1)-[r109:isSymptomOf]->(o2)
+SET r109.text = 'Khi chẩn đoán viêm bể thận, bác sĩ sẽ dựa vào những biểu hiện như:  Biểu hiện nhiễm trùng: Rét run, sốt cao, mệt mỏi, đau đầu, lưỡi bẩn, môi khô… Biểu hiện bàng quang cấp: Tiểu khó, tiểu buốt, tiểu rắt, tiểu máu, tiểu đục, tiểu mủ. Biểu hiện đau: Đau hông lưng, mạn sườn nhiều, thường đau một bên, hiếm khi hai bên. Có trường hợp xuất hiện cơn đau quặn thận.'
+
+MERGE (o1:symptom {id: 'tiểu_rắt_symptom'})
+MERGE (o2:disease {id: 'viêm_bể_thận_disease'})
+MERGE (o1)-[r110:isSymptomOf]->(o2)
+SET r110.text = 'Khi chẩn đoán viêm bể thận, bác sĩ sẽ dựa vào những biểu hiện như:  Biểu hiện nhiễm trùng: Rét run, sốt cao, mệt mỏi, đau đầu, lưỡi bẩn, môi khô… Biểu hiện bàng quang cấp: Tiểu khó, tiểu buốt, tiểu rắt, tiểu máu, tiểu đục, tiểu mủ. Biểu hiện đau: Đau hông lưng, mạn sườn nhiều, thường đau một bên, hiếm khi hai bên. Có trường hợp xuất hiện cơn đau quặn thận.'
+
+MERGE (o1:symptom {id: 'tiểu_máu_symptom'})
+MERGE (o2:disease {id: 'viêm_bể_thận_disease'})
+MERGE (o1)-[r111:isSymptomOf]->(o2)
+SET r111.text = 'Khi chẩn đoán viêm bể thận, bác sĩ sẽ dựa vào những biểu hiện như:  Biểu hiện nhiễm trùng: Rét run, sốt cao, mệt mỏi, đau đầu, lưỡi bẩn, môi khô… Biểu hiện bàng quang cấp: Tiểu khó, tiểu buốt, tiểu rắt, tiểu máu, tiểu đục, tiểu mủ. Biểu hiện đau: Đau hông lưng, mạn sườn nhiều, thường đau một bên, hiếm khi hai bên. Có trường hợp xuất hiện cơn đau quặn thận.'
+
+MERGE (o1:symptom {id: 'tiểu_đục_symptom'})
+MERGE (o2:disease {id: 'viêm_bể_thận_disease'})
+MERGE (o1)-[r112:isSymptomOf]->(o2)
+SET r112.text = 'Khi chẩn đoán viêm bể thận, bác sĩ sẽ dựa vào những biểu hiện như:  Biểu hiện nhiễm trùng: Rét run, sốt cao, mệt mỏi, đau đầu, lưỡi bẩn, môi khô… Biểu hiện bàng quang cấp: Tiểu khó, tiểu buốt, tiểu rắt, tiểu máu, tiểu đục, tiểu mủ. Biểu hiện đau: Đau hông lưng, mạn sườn nhiều, thường đau một bên, hiếm khi hai bên. Có trường hợp xuất hiện cơn đau quặn thận.'
+
+MERGE (o1:symptom {id: 'tiểu_mủ_symptom'})
+MERGE (o2:disease {id: 'viêm_bể_thận_disease'})
+MERGE (o1)-[r113:isSymptomOf]->(o2)
+SET r113.text = 'Khi chẩn đoán viêm bể thận, bác sĩ sẽ dựa vào những biểu hiện như:  Biểu hiện nhiễm trùng: Rét run, sốt cao, mệt mỏi, đau đầu, lưỡi bẩn, môi khô… Biểu hiện bàng quang cấp: Tiểu khó, tiểu buốt, tiểu rắt, tiểu máu, tiểu đục, tiểu mủ. Biểu hiện đau: Đau hông lưng, mạn sườn nhiều, thường đau một bên, hiếm khi hai bên. Có trường hợp xuất hiện cơn đau quặn thận.'
+
+MERGE (o1:symptom {id: 'đau_hông_lưng_symptom'})
+MERGE (o2:disease {id: 'viêm_bể_thận_disease'})
+MERGE (o1)-[r114:isSymptomOf]->(o2)
+SET r114.text = 'Khi chẩn đoán viêm bể thận, bác sĩ sẽ dựa vào những biểu hiện như:  Biểu hiện nhiễm trùng: Rét run, sốt cao, mệt mỏi, đau đầu, lưỡi bẩn, môi khô… Biểu hiện bàng quang cấp: Tiểu khó, tiểu buốt, tiểu rắt, tiểu máu, tiểu đục, tiểu mủ. Biểu hiện đau: Đau hông lưng, mạn sườn nhiều, thường đau một bên, hiếm khi hai bên. Có trường hợp xuất hiện cơn đau quặn thận.'
+
+MERGE (o1:symptom {id: 'đau_mạn_sườn_symptom'})
+MERGE (o2:disease {id: 'viêm_bể_thận_disease'})
+MERGE (o1)-[r115:isSymptomOf]->(o2)
+SET r115.text = 'Khi chẩn đoán viêm bể thận, bác sĩ sẽ dựa vào những biểu hiện như:  Biểu hiện nhiễm trùng: Rét run, sốt cao, mệt mỏi, đau đầu, lưỡi bẩn, môi khô… Biểu hiện bàng quang cấp: Tiểu khó, tiểu buốt, tiểu rắt, tiểu máu, tiểu đục, tiểu mủ. Biểu hiện đau: Đau hông lưng, mạn sườn nhiều, thường đau một bên, hiếm khi hai bên. Có trường hợp xuất hiện cơn đau quặn thận.'
+
+MERGE (o1:symptom {id: 'đau_quặn_thận_symptom'})
+MERGE (o2:disease {id: 'viêm_bể_thận_disease'})
+MERGE (o1)-[r116:isSymptomOf]->(o2)
+SET r116.text = 'Khi chẩn đoán viêm bể thận, bác sĩ sẽ dựa vào những biểu hiện như:  Biểu hiện nhiễm trùng: Rét run, sốt cao, mệt mỏi, đau đầu, lưỡi bẩn, môi khô… Biểu hiện bàng quang cấp: Tiểu khó, tiểu buốt, tiểu rắt, tiểu máu, tiểu đục, tiểu mủ. Biểu hiện đau: Đau hông lưng, mạn sườn nhiều, thường đau một bên, hiếm khi hai bên. Có trường hợp xuất hiện cơn đau quặn thận.'
+
+MERGE (o1:test {id: 'xét_nghiệm_công_thức_máu_test'})
+MERGE (o2:disease {id: 'viêm_bể_thận_disease'})
+MERGE (o1)-[r117:diagnosedBy]->(o2)
+SET r117.text = 'Xét nghiệm công thức máu: Viêm bể thận cấp là nhiễm trùng. Vì thế, bác sĩ thường chỉ định người bệnh xét nghiệm công thức máu để kiểm tra chỉ số bạch cầu tăng rõ rệt, nhất là tình trạng tăng bạch cầu đa nhân trung tính.'
+
+MERGE (o1:symptom {id: 'tăng_bạch_cầu_symptom'})
+MERGE (o2:disease {id: 'viêm_bể_thận_disease'})
+MERGE (o1)-[r118:isSymptomOf]->(o2)
+SET r118.text = 'Xét nghiệm công thức máu: Viêm bể thận cấp là nhiễm trùng. Vì thế, bác sĩ thường chỉ định người bệnh xét nghiệm công thức máu để kiểm tra chỉ số bạch cầu tăng rõ rệt, nhất là tình trạng tăng bạch cầu đa nhân trung tính.'
+
+MERGE (o1:test {id: 'cấy_máu_test'})
+MERGE (o2:disease {id: 'nhiễm_trùng_tiết_niệu_disease'})
+MERGE (o1)-[r119:diagnosedBy]->(o2)
+SET r119.text = 'Cấy máu: Phương pháp này giúp xác định trường hợp nhiễm trùng tiết niệu do nhóm vi khuẩn nào.'
+
+MERGE (o1:test {id: 'siêu_âm_test'})
+MERGE (o2:disease {id: 'viêm_bể_thận_disease'})
+MERGE (o1)-[r120:diagnosedBy]->(o2)
+SET r120.text = 'Siêu âm: tìm dấu hiệu giãn niệu quản, giãn đài bể thận, hình ảnh sỏi thận – tiết niệu, khối u chèn ép…'
+
+MERGE (o1:symptom {id: 'giãn_niệu_quản_symptom'})
+MERGE (o2:disease {id: 'viêm_bể_thận_disease'})
+MERGE (o1)-[r121:isSymptomOf]->(o2)
+SET r121.text = 'Siêu âm: tìm dấu hiệu giãn niệu quản, giãn đài bể thận, hình ảnh sỏi thận – tiết niệu, khối u chèn ép…'
+
+MERGE (o1:symptom {id: 'giãn_đài_bể_thận_symptom'})
+MERGE (o2:disease {id: 'viêm_bể_thận_disease'})
+MERGE (o1)-[r122:isSymptomOf]->(o2)
+SET r122.text = 'Siêu âm: tìm dấu hiệu giãn niệu quản, giãn đài bể thận, hình ảnh sỏi thận – tiết niệu, khối u chèn ép…'
+
+MERGE (o1:cause {id: 'sỏi_thận_cause'})
+MERGE (o2:disease {id: 'viêm_bể_thận_disease'})
+MERGE (o1)-[r123:causedBy]->(o2)
+SET r123.text = 'Siêu âm: tìm dấu hiệu giãn niệu quản, giãn đài bể thận, hình ảnh sỏi thận – tiết niệu, khối u chèn ép…'
+
+MERGE (o1:test {id: 'chụp_x-quang_test'})
+MERGE (o2:disease {id: 'trào_ngược_bàng_quang_–_thận_disease'})
+MERGE (o1)-[r124:diagnosedBy]->(o2)
+SET r124.text = 'Chụp X-quang: khi nghi ngờ có trào ngược bàng quang – thận.'
+
+MERGE (o1:test {id: 'protein_niệu_test'})
+MERGE (o2:disease {id: 'viêm_bể_thận_disease'})
+MERGE (o1)-[r125:diagnosedBy]->(o2)
+SET r125.text = 'Bên cạnh đó, để xác định viêm bể thận, có thể thực hiện thêm một số xét nghiệm như protein niệu, cặn Addis, cấy nước tiểu tìm vi khuẩn.'
+
+MERGE (o1:test {id: 'cấy_nước_tiểu_tìm_vi_khuẩn_test'})
+MERGE (o2:disease {id: 'viêm_bể_thận_disease'})
+MERGE (o1)-[r126:diagnosedBy]->(o2)
+SET r126.text = 'Bên cạnh đó, để xác định viêm bể thận, có thể thực hiện thêm một số xét nghiệm như protein niệu, cặn Addis, cấy nước tiểu tìm vi khuẩn.'
+
+MERGE (o1:treatment {id: 'thuốc_kháng_sinh_treatment'})
+MERGE (o2:disease {id: 'viêm_bể_thận_disease'})
+MERGE (o1)-[r127:treatedBy]->(o2)
+SET r127.text = 'Người bệnh viêm bể thận nếu bị rét run hay sử dụng thuốc kháng sinh ngoại trú 3 - 5 ngày không đáp ứng, bệnh không giảm sẽ được chuyển điều trị nội trú.'
+
+MERGE (o1:treatment {id: 'điều_trị_nội_trú_treatment'})
+MERGE (o2:disease {id: 'viêm_bể_thận_disease'})
+MERGE (o1)-[r128:treatedBy]->(o2)
+SET r128.text = 'Người bệnh viêm bể thận nếu bị rét run hay sử dụng thuốc kháng sinh ngoại trú 3 - 5 ngày không đáp ứng, bệnh không giảm sẽ được chuyển điều trị nội trú.'
+
+MERGE (o1:treatment {id: 'theo_dõi_ngoại_trú_treatment'})
+MERGE (o2:disease {id: 'viêm_bể_thận_disease'})
+MERGE (o1)-[r129:treatedBy]->(o2)
+SET r129.text = 'Nếu triệu chứng nhẹ sẽ được theo dõi ngoại trú và sử dụng kháng sinh.'
+
+MERGE (o1:treatment {id: 'kháng_sinh_treatment'})
+MERGE (o2:disease {id: 'viêm_bể_thận_disease'})
+MERGE (o1)-[r130:treatedBy]->(o2)
+SET r130.text = 'Nếu triệu chứng nhẹ sẽ được theo dõi ngoại trú và sử dụng kháng sinh.'
+
+MERGE (o1:test {id: 'cấy_nước_tiểu_tìm_vi_khuẩn_niệu_test'})
+MERGE (o2:disease {id: 'viêm_bể_thận_disease'})
+MERGE (o1)-[r131:diagnosedBy]->(o2)
+SET r131.text = 'Khi người bệnh chuẩn bị sử dụng kháng sinh, bác sĩ thường chỉ định cấy nước tiểu tìm vi khuẩn niệu, máu.'
+
+MERGE (o1:test {id: 'cấy_máu_test'})
+MERGE (o2:disease {id: 'viêm_bể_thận_disease'})
+MERGE (o1)-[r132:diagnosedBy]->(o2)
+SET r132.text = 'Khi người bệnh chuẩn bị sử dụng kháng sinh, bác sĩ thường chỉ định cấy nước tiểu tìm vi khuẩn niệu, máu.'
+
+MERGE (o1:treatment {id: 'kháng_sinh_treatment'})
+MERGE (o2:disease {id: 'viêm_bể_thận_disease'})
+MERGE (o1)-[r133:treatedBy]->(o2)
+SET r133.text = 'Trong khi chờ kết quả cấy vi khuẩn, người bệnh được dùng kháng sinh và theo dõi đánh giá lại sau 3 - 5 ngày tình trạng đáp ứng kháng sinh và tiếp tục điều chỉnh hoặc chỉ định nhập viện điều trị khi cần.'
+
+MERGE (o1:treatment {id: 'nhập_viện_điều_trị_treatment'})
+MERGE (o2:disease {id: 'viêm_bể_thận_disease'})
+MERGE (o1)-[r134:treatedBy]->(o2)
+SET r134.text = 'Trong khi chờ kết quả cấy vi khuẩn, người bệnh được dùng kháng sinh và theo dõi đánh giá lại sau 3 - 5 ngày tình trạng đáp ứng kháng sinh và tiếp tục điều chỉnh hoặc chỉ định nhập viện điều trị khi cần.'
+
+MERGE (o1:treatment {id: 'kháng_sinh_treatment'})
+MERGE (o2:disease {id: 'viêm_bể_thận_disease'})
+MERGE (o1)-[r135:treatedBy]->(o2)
+SET r135.text = 'Đối với các trường hợp không có triệu chứng nặng sẽ được chỉ định dùng kháng sinh trong 1 - 14 ngày bằng đường uống.'
+
+MERGE (o1:treatment {id: 'điều_trị_nội_trú_treatment'})
+MERGE (o2:disease {id: 'viêm_bể_thận_disease'})
+MERGE (o1)-[r136:treatedBy]->(o2)
+SET r136.text = 'Nếu tình trạng lâm sàng không tiến triển tốt, người bệnh có tình trạng nhiễm trùng rõ, vẫn sốt, tiểu đục, đau, mất nước… cần được chuyển vào điều trị nội trú.'
+
+MERGE (o1:treatment {id: 'aminopenicillins_treatment'})
+MERGE (o2:disease {id: 'viêm_bể_thận_disease'})
+MERGE (o1)-[r137:treatedBy]->(o2)
+SET r137.text = 'Những loại kháng sinh thường được chỉ định điều trị như:  Aminopenicillins: Dùng đơn độc hoặc phối hợp Acid clavulanic. Aminoglycosides: Dùng đơn độc hoặc phối hợp Aminopenicillins. Aztreonam, Cephalosporines thế hệ 2 hay thế hệ 3. Cotrimoxazol và Fluoroquinolones.'
+
+MERGE (o1:treatment {id: 'acid_clavulanic_treatment'})
+MERGE (o2:disease {id: 'viêm_bể_thận_disease'})
+MERGE (o1)-[r138:treatedBy]->(o2)
+SET r138.text = 'Những loại kháng sinh thường được chỉ định điều trị như:  Aminopenicillins: Dùng đơn độc hoặc phối hợp Acid clavulanic. Aminoglycosides: Dùng đơn độc hoặc phối hợp Aminopenicillins. Aztreonam, Cephalosporines thế hệ 2 hay thế hệ 3. Cotrimoxazol và Fluoroquinolones.'
+
+MERGE (o1:treatment {id: 'aminoglycosides_treatment'})
+MERGE (o2:disease {id: 'viêm_bể_thận_disease'})
+MERGE (o1)-[r139:treatedBy]->(o2)
+SET r139.text = 'Những loại kháng sinh thường được chỉ định điều trị như:  Aminopenicillins: Dùng đơn độc hoặc phối hợp Acid clavulanic. Aminoglycosides: Dùng đơn độc hoặc phối hợp Aminopenicillins. Aztreonam, Cephalosporines thế hệ 2 hay thế hệ 3. Cotrimoxazol và Fluoroquinolones.'
+
+MERGE (o1:treatment {id: 'aztreonam_treatment'})
+MERGE (o2:disease {id: 'viêm_bể_thận_disease'})
+MERGE (o1)-[r140:treatedBy]->(o2)
+SET r140.text = 'Những loại kháng sinh thường được chỉ định điều trị như:  Aminopenicillins: Dùng đơn độc hoặc phối hợp Acid clavulanic. Aminoglycosides: Dùng đơn độc hoặc phối hợp Aminopenicillins. Aztreonam, Cephalosporines thế hệ 2 hay thế hệ 3. Cotrimoxazol và Fluoroquinolones.'
+
+MERGE (o1:treatment {id: 'cephalosporines_treatment'})
+MERGE (o2:disease {id: 'viêm_bể_thận_disease'})
+MERGE (o1)-[r141:treatedBy]->(o2)
+SET r141.text = 'Những loại kháng sinh thường được chỉ định điều trị như:  Aminopenicillins: Dùng đơn độc hoặc phối hợp Acid clavulanic. Aminoglycosides: Dùng đơn độc hoặc phối hợp Aminopenicillins. Aztreonam, Cephalosporines thế hệ 2 hay thế hệ 3. Cotrimoxazol và Fluoroquinolones.'
+
+MERGE (o1:treatment {id: 'cotrimoxazol_treatment'})
+MERGE (o2:disease {id: 'viêm_bể_thận_disease'})
+MERGE (o1)-[r142:treatedBy]->(o2)
+SET r142.text = 'Những loại kháng sinh thường được chỉ định điều trị như:  Aminopenicillins: Dùng đơn độc hoặc phối hợp Acid clavulanic. Aminoglycosides: Dùng đơn độc hoặc phối hợp Aminopenicillins. Aztreonam, Cephalosporines thế hệ 2 hay thế hệ 3. Cotrimoxazol và Fluoroquinolones.'
+
+MERGE (o1:treatment {id: 'fluoroquinolones_treatment'})
+MERGE (o2:disease {id: 'viêm_bể_thận_disease'})
+MERGE (o1)-[r143:treatedBy]->(o2)
+SET r143.text = 'Những loại kháng sinh thường được chỉ định điều trị như:  Aminopenicillins: Dùng đơn độc hoặc phối hợp Acid clavulanic. Aminoglycosides: Dùng đơn độc hoặc phối hợp Aminopenicillins. Aztreonam, Cephalosporines thế hệ 2 hay thế hệ 3. Cotrimoxazol và Fluoroquinolones.'
+
+MERGE (o1:treatment {id: 'điều_trị_tại_bệnh_viện_treatment'})
+MERGE (o2:disease {id: 'viêm_bể_thận_disease'})
+MERGE (o1)-[r144:treatedBy]->(o2)
+SET r144.text = 'Các trường hợp được chỉ định điều trị tại bệnh viện khi có triệu chứng nặng, thai phụ, người có bệnh lý nền cần nhập viện để theo dõi điều trị.'
+
+MERGE (o1:treatment {id: 'điều_trị_treatment'})
+MERGE (o2:disease {id: 'viêm_bể_thận_disease'})
+MERGE (o1)-[r145:treatedBy]->(o2)
+SET r145.text = 'Việc điều trị đối với phụ nữ có thai thường khó khăn hơn do hạn chế trong quá trình điều trị.'
+
+MERGE (o1:treatment {id: 'nhập_viện_treatment'})
+MERGE (o2:disease {id: 'viêm_bể_thận_disease'})
+MERGE (o1)-[r146:treatedBy]->(o2)
+SET r146.text = 'Viêm thận bể thận ở phụ nữ mang thai thường phải nhập viện.'
+
+MERGE (o1:disease {id: 'viêm_bể_thận_disease'})
+MERGE (o2:organ {id: 'mẹ_và_bé_organ'})
+MERGE (o1)-[r147:affects]->(o2)
+SET r147.text = 'Nó có thể đe dọa đến tính mạng của cả mẹ và bé.'
+
+MERGE (o1:disease {id: 'viêm_bể_thận_disease'})
+MERGE (o2:symptom {id: 'sinh_non_symptom'})
+MERGE (o1)-[r148:affects]->(o2)
+SET r148.text = 'Nó cũng có thể làm tăng nguy cơ sinh non.'
+
+MERGE (o1:treatment {id: 'kháng_sinh_beta-lactam_treatment'})
+MERGE (o2:disease {id: 'viêm_bể_thận_disease'})
+MERGE (o1)-[r149:treatedBy]->(o2)
+SET r149.text = 'Phụ nữ mang thai được điều trị bằng kháng sinh beta-lactam ít nhất 24 giờ cho đến khi các triệu chứng của họ được cải thiện.'
+
+MERGE (o1:test {id: 'cấy_nước_tiểu_test'})
+MERGE (o2:disease {id: 'viêm_bể_thận_disease'})
+MERGE (o1)-[r150:preventedBy]->(o2)
+SET r150.text = 'Để phòng ngừa viêm thận bể thận ở phụ nữ có thai, nên cấy nước tiểu vào giữa tuần thứ 12 và 16 của thai kỳ.'
+
+MERGE (o1:disease {id: 'nhiễm_trùng_tiểu_disease'})
+MERGE (o2:disease {id: 'viêm_bể_thận_disease'})
+MERGE (o1)-[r151:causedBy]->(o2)
+SET r151.text = 'Nhiễm trùng tiểu không có triệu chứng có thể dẫn đến sự phát triển của viêm thận bể thận.'
+
+MERGE (o1:treatment {id: 'phát_hiện_sớm_nhiễm_trùng_tiểu_treatment'})
+MERGE (o2:disease {id: 'viêm_bể_thận_disease'})
+MERGE (o1)-[r152:preventedBy]->(o2)
+SET r152.text = 'Phát hiện sớm nhiễm trùng tiểu có thể ngăn ngừa nhiễm trùng thận.'
+
+MERGE (o1:disease {id: 'viêm_bể_thận_disease'})
+MERGE (o2:disease {id: 'tắc_nghẽn_ở_thận_disease'})
+MERGE (o1)-[r153:affects]->(o2)
+SET r153.text = 'Viêm bể thận có thể dẫn tới tình trạng tắc nghẽn ở thận hoặc gây sốc nhiễm khuẩn.'
+
+MERGE (o1:disease {id: 'viêm_bể_thận_disease'})
+MERGE (o2:disease {id: 'sốc_nhiễm_khuẩn_disease'})
+MERGE (o1)-[r154:affects]->(o2)
+SET r154.text = 'Viêm bể thận có thể dẫn tới tình trạng tắc nghẽn ở thận hoặc gây sốc nhiễm khuẩn.'
+
+MERGE (o1:disease {id: 'tắc_nghẽn_ở_thận_disease'})
+MERGE (o2:symptom {id: 'tử_vong_symptom'})
+MERGE (o1)-[r155:relatedTo]->(o2)
+SET r155.text = 'Cả hai biến chứng này đều rất nguy hiểm, có tiên lượng tử vong cao.'
+
+MERGE (o1:disease {id: 'sốc_nhiễm_khuẩn_disease'})
+MERGE (o2:symptom {id: 'tử_vong_symptom'})
+MERGE (o1)-[r156:relatedTo]->(o2)
+SET r156.text = 'Cả hai biến chứng này đều rất nguy hiểm, có tiên lượng tử vong cao.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_treatment'})
+MERGE (o2:disease {id: 'tắc_nghẽn_ở_thận_disease'})
+MERGE (o1)-[r157:treatedBy]->(o2)
+SET r157.text = 'Khi đó, người bệnh thường được chỉ định phẫu thuật để giải quyết tình trạng tắc nghẽn để loại bỏ bất kỳ vật cản nào hoặc để sửa chữa bất kỳ vấn đề cấu trúc nào trong thận.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_treatment'})
+MERGE (o2:disease {id: 'áp_xe_disease'})
+MERGE (o1)-[r158:treatedBy]->(o2)
+SET r158.text = 'Phẫu thuật cũng có thể cần thiết để dẫn lưu ổ áp xe không đáp ứng với thuốc kháng sinh.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_cắt_bỏ_thận_treatment'})
+MERGE (o2:disease {id: 'nhiễm_trùng_nặng_disease'})
+MERGE (o1)-[r159:treatedBy]->(o2)
+SET r159.text = 'Trong trường hợp nhiễm trùng nặng, phẫu thuật cắt bỏ thận có thể là cần thiết.'
+
+MERGE (o1:disease {id: 'viêm_thận_bể_thận_disease'})
+MERGE (o2:symptom {id: 'nguy_hiểm_symptom'})
+MERGE (o1)-[r160:relatedTo]->(o2)
+SET r160.text = 'Viêm thận bể thận là bệnh lý nguy hiểm.'
+
+MERGE (o1:disease {id: 'viêm_thận_bể_thận_disease'})
+MERGE (o2:symptom {id: 'tử_vong_symptom'})
+MERGE (o1)-[r161:relatedTo]->(o2)
+SET r161.text = 'Khi không được phát hiện sớm và điều trị kịp thời có thể gây tử vong.'
+
+MERGE (o1:disease {id: 'viêm_thận_bể_thận_disease'})
+MERGE (o2:lifestyle {id: 'quan_tâm_đến_sức_khỏe_lifestyle'})
+MERGE (o1)-[r162:preventedBy]->(o2)
+SET r162.text = 'Tuy nhiên, bệnh có thể được phòng ngừa nếu chúng ta quan tâm đến sức khỏe, giữ gìn vệ sinh, theo dõi các diễn biến bất thường trong cơ thể và thường xuyên khám sức khỏe tổng quát (6 tháng/lần).'
+
+MERGE (o1:disease {id: 'viêm_thận_bể_thận_disease'})
+MERGE (o2:lifestyle {id: 'giữ_gìn_vệ_sinh_lifestyle'})
+MERGE (o1)-[r163:preventedBy]->(o2)
+SET r163.text = 'Tuy nhiên, bệnh có thể được phòng ngừa nếu chúng ta quan tâm đến sức khỏe, giữ gìn vệ sinh, theo dõi các diễn biến bất thường trong cơ thể và thường xuyên khám sức khỏe tổng quát (6 tháng/lần).'
+
+MERGE (o1:disease {id: 'viêm_thận_bể_thận_disease'})
+MERGE (o2:lifestyle {id: 'theo_dõi_các_diễn_biến_bất_thường_trong_cơ_thể_lifestyle'})
+MERGE (o1)-[r164:preventedBy]->(o2)
+SET r164.text = 'Tuy nhiên, bệnh có thể được phòng ngừa nếu chúng ta quan tâm đến sức khỏe, giữ gìn vệ sinh, theo dõi các diễn biến bất thường trong cơ thể và thường xuyên khám sức khỏe tổng quát (6 tháng/lần).'
+
+MERGE (o1:disease {id: 'viêm_thận_bể_thận_disease'})
+MERGE (o2:lifestyle {id: 'khám_sức_khỏe_tổng_quát_lifestyle'})
+MERGE (o1)-[r165:preventedBy]->(o2)
+SET r165.text = 'Tuy nhiên, bệnh có thể được phòng ngừa nếu chúng ta quan tâm đến sức khỏe, giữ gìn vệ sinh, theo dõi các diễn biến bất thường trong cơ thể và thường xuyên khám sức khỏe tổng quát (6 tháng/lần).'
+
+MERGE (o1:lifestyle {id: 'giữ_vệ_sinh_cơ_quan_sinh_dục_-_tiết_niệu_lifestyle'})
+MERGE (o2:disease {id: 'viêm_bể_thận_disease'})
+MERGE (o1)-[r166:preventedBy]->(o2)
+SET r166.text = 'Để phòng bệnh cần lưu ý:  Giữ vệ sinh cơ quan sinh dục - tiết niệu: Đặc biệt là nữ giới cần vệ sinh kỹ trong thời kỳ kinh nguyệt, sau quan hệ tình dục…'
+
+MERGE (o1:disease {id: 'nhiễm_khuẩn_tiết_niệu_disease'})
+MERGE (o2:disease {id: 'viêm_bể_thận_disease'})
+MERGE (o1)-[r167:causedBy]->(o2)
+SET r167.text = 'Người nhiễm khuẩn tiết niệu do tắc nghẽn đường tiết niệu cần điều trị sớm nhằm phòng ngừa biến chứng viêm thận bể thận.'
+
+MERGE (o1:cause {id: 'tắc_nghẽn_đường_tiết_niệu_cause'})
+MERGE (o2:disease {id: 'viêm_bể_thận_disease'})
+MERGE (o1)-[r168:causedBy]->(o2)
+SET r168.text = 'Người nhiễm khuẩn tiết niệu do tắc nghẽn đường tiết niệu cần điều trị sớm nhằm phòng ngừa biến chứng viêm thận bể thận.'

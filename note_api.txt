@@ -1,0 +1,21 @@
+thêm sửa xóa file
+từ file -> văn bản -> gọi model -> văn bản có cấu trúc -> chuyển sang cypher --> vẽ ra cây
+bảng folder
+bảng file
+bảng dữ liệu có cấu trúc
+1 folder có nhiều file
+hoặc lưu trữ json
+đưa file đầu vào -> fetch code --> tạo file merge ( cypher ) 
+dùng cypher đưa vào neo4j
+cập nhật file thì sinh lại 
+folders : 
+- id
+- name
+files :
+- id
+- name file : tên file chứa nội dung thô
+- dữ liệu có cấu trúc( tạo bảng sau) or (json)
+clean_data ( dữ liệu có câu trúc)
+- id
+- id file
+- 

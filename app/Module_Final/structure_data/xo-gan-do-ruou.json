@@ -1,0 +1,970 @@
+[
+    {
+        "text": "Xơ gan do rượu là biến chứng nặng nhất của các bệnh lý về gan do rượu.",
+        "head": "Xơ gan do rượu",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "các bệnh lý về gan do rượu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu không được điều trị kịp thời, bệnh có thể phát triển thành suy gan.",
+        "head": "bệnh",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "suy gan",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi đó, ghép gan là phương pháp duy nhất để điều trị.",
+        "head": "ghép gan",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "suy gan",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bác sĩ Vũ Trường Khanh, Trưởng khoa Tiêu hóa - Gan mật - Tụy BVĐK Tâm Anh Hà Nội cho biết, xơ gan do rượu là tình trạng tổn thương gan mạn tính kéo dài do uống bia rượu.",
+        "head": "xơ gan do rượu",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "uống bia rượu",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Đây là bệnh lý về gan liên quan đến cồn nguy hiểm nhất, xảy ra sau một thời gian dài uống quá nhiều rượu.",
+        "head": "xơ gan do rượu",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "uống quá nhiều rượu",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Các mô sẹo hình thành từ những tổn thương do rượu và âm thầm phát triển, chúng dần dần chiếm hết không gian sống của các tế bào khỏe mạnh trong gan.",
+        "head": "mô sẹo",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "xơ gan do rượu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các mô sẹo hình thành từ những tổn thương do rượu và âm thầm phát triển, chúng dần dần chiếm hết không gian sống của các tế bào khỏe mạnh trong gan.",
+        "head": "tổn thương do rượu",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "xơ gan do rượu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Theo thời gian, gan mất đi chức năng tự tái tạo, thải độc, cũng như không tạo đủ protein cho cơ thể.",
+        "head": "gan",
+        "head_type": "organ",
+        "relation": "affects",
+        "tail": "xơ gan do rượu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tuy nhiên, nếu người bệnh phát hiện sớm và dừng bia rượu chức năng gan vẫn có thể duy trì tốt.",
+        "head": "dừng bia rượu",
+        "head_type": "lifestyle",
+        "relation": "treatedBy",
+        "tail": "xơ gan do rượu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ethanol có trong bia rượu bản chất là chất không độc nhưng khi vào gan chất này chuyển hóa thành Acetaldehyde, đây là chất gây độc, chính vì vậy nếu uống nhiều bia rượu dù là loại nào thì cũng sẽ gây độc với gan.",
+        "head": "Ethanol",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "xơ gan do rượu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ethanol có trong bia rượu bản chất là chất không độc nhưng khi vào gan chất này chuyển hóa thành Acetaldehyde, đây là chất gây độc, chính vì vậy nếu uống nhiều bia rượu dù là loại nào thì cũng sẽ gây độc với gan.",
+        "head": "Acetaldehyde",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "xơ gan do rượu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Hậu quả từ viêm gan đến xơ gan là xuất hiện các vết sẹo ở mô gan, dẫn đến suy giảm chức năng gan.",
+        "head": "viêm gan",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "xơ gan do rượu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Hậu quả từ viêm gan đến xơ gan là xuất hiện các vết sẹo ở mô gan, dẫn đến suy giảm chức năng gan.",
+        "head": "các vết sẹo ở mô gan",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "xơ gan do rượu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Theo thống kê, khoảng 10 - 20% người bệnh xơ gan là do nghiện rượu nặng.",
+        "head": "nghiện rượu nặng",
+        "head_type": "lifestyle",
+        "relation": "causedBy",
+        "tail": "xơ gan",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tiến trình phát triển bệnh qua 3 giai đoạn:  Gan nhiễm mỡ: Hiện tượng tích tụ chất béo trong tế bào gan, làm phình gan. Đây là tình trạng về gan phổ biến nhất do rượu gây ra.",
+        "head": "rượu",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Gan nhiễm mỡ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tiến trình phát triển bệnh qua 3 giai đoạn:  Gan nhiễm mỡ: Hiện tượng tích tụ chất béo trong tế bào gan, làm phình gan. Đây là tình trạng về gan phổ biến nhất do rượu gây ra.",
+        "head": "Gan nhiễm mỡ",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "xơ gan",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tiến trình phát triển bệnh qua 3 giai đoạn:  Gan nhiễm mỡ: Hiện tượng tích tụ chất béo trong tế bào gan, làm phình gan. Đây là tình trạng về gan phổ biến nhất do rượu gây ra. Viêm gan do rượu: Là tình trạng viêm cấp tính hoặc mạn tính, tế bào gan chết đi, để lại sẹo vĩnh viễn.",
+        "head": "Viêm gan do rượu",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "xơ gan",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tiến trình phát triển bệnh qua 3 giai đoạn:  Gan nhiễm mỡ: Hiện tượng tích tụ chất béo trong tế bào gan, làm phình gan. Đây là tình trạng về gan phổ biến nhất do rượu gây ra. Viêm gan do rượu: Là tình trạng viêm cấp tính hoặc mạn tính, tế bào gan chết đi, để lại sẹo vĩnh viễn. Xơ gan do rượu: Các mô gan bình thường bị phá hủy, gan trở nên cứng, sưng và suy giảm chức năng.",
+        "head": "Xơ gan do rượu",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "xơ gan",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tiến trình phát triển bệnh qua 3 giai đoạn:  Gan nhiễm mỡ: Hiện tượng tích tụ chất béo trong tế bào gan, làm phình gan. Đây là tình trạng về gan phổ biến nhất do rượu gây ra. Viêm gan do rượu: Là tình trạng viêm cấp tính hoặc mạn tính, tế bào gan chết đi, để lại sẹo vĩnh viễn. Xơ gan do rượu: Các mô gan bình thường bị phá hủy, gan trở nên cứng, sưng và suy giảm chức năng.",
+        "head": "gan",
+        "head_type": "organ",
+        "relation": "locatedIn",
+        "tail": "cơ thể",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Tiến trình phát triển bệnh qua 3 giai đoạn:  Gan nhiễm mỡ: Hiện tượng tích tụ chất béo trong tế bào gan, làm phình gan. Đây là tình trạng về gan phổ biến nhất do rượu gây ra. Viêm gan do rượu: Là tình trạng viêm cấp tính hoặc mạn tính, tế bào gan chết đi, để lại sẹo vĩnh viễn. Xơ gan do rượu: Các mô gan bình thường bị phá hủy, gan trở nên cứng, sưng và suy giảm chức năng.",
+        "head": "gan",
+        "head_type": "organ",
+        "relation": "affects",
+        "tail": "xơ gan",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Trước khi xuất hiện các triệu chứng đầu tiên, có thể gan đã hoạt động bất thường trong một thời gian dài.",
+        "head": "gan",
+        "head_type": "organ",
+        "relation": "affects",
+        "tail": "xơ gan",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các biểu hiện xơ gan do rượu thường phát triển ở những người trong độ tuổi từ 50 tuổi và phụ thuộc vào thời gian bắt đầu uống rượu và mức độ uống nhiều hay ít.",
+        "head": "xơ gan do rượu",
+        "head_type": "disease",
+        "relation": "associatedWith",
+        "tail": "tuổi",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Các biểu hiện xơ gan do rượu thường phát triển ở những người trong độ tuổi từ 50 tuổi và phụ thuộc vào thời gian bắt đầu uống rượu và mức độ uống nhiều hay ít.",
+        "head": "xơ gan do rượu",
+        "head_type": "disease",
+        "relation": "associatedWith",
+        "tail": "uống rượu",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Đây là giai đoạn đầu tiên của xơ gan do rượu, bệnh thường chưa có các triệu chứng chính vì thế người bệnh thấy chủ quan và tiếp tục uống bia rượu.",
+        "head": "xơ gan do rượu",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "uống bia rượu",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Đây là giai đoạn đầu tiên của xơ gan do rượu, bệnh thường chưa có các triệu chứng chính vì thế người bệnh thấy chủ quan và tiếp tục uống bia rượu. Lúc này, sự tích tụ chất béo bên trong tế bào gan sẽ làm gan phình ra, cũng có thể gây tức nhẹ vùng hạ sườn bên phải.",
+        "head": "tức nhẹ vùng hạ sườn bên phải",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "xơ gan do rượu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đây là giai đoạn đầu tiên của xơ gan do rượu, bệnh thường chưa có các triệu chứng chính vì thế người bệnh thấy chủ quan và tiếp tục uống bia rượu. Lúc này, sự tích tụ chất béo bên trong tế bào gan sẽ làm gan phình ra, cũng có thể gây tức nhẹ vùng hạ sườn bên phải. Người bệnh cũng có thể thấy mệt mỏi, chán ăn…",
+        "head": "mệt mỏi",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "xơ gan do rượu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đây là giai đoạn đầu tiên của xơ gan do rượu, bệnh thường chưa có các triệu chứng chính vì thế người bệnh thấy chủ quan và tiếp tục uống bia rượu. Lúc này, sự tích tụ chất béo bên trong tế bào gan sẽ làm gan phình ra, cũng có thể gây tức nhẹ vùng hạ sườn bên phải. Người bệnh cũng có thể thấy mệt mỏi, chán ăn…",
+        "head": "chán ăn",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "xơ gan do rượu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi việc lạm dụng rượu đã gây viêm (sưng) gan, sẽ dẫn đến các triệu chứng như: Đau tức nặng vùng gan Đôi khi có sốt nhẹ Mệt mỏi Buồn nôn và nôn ói Mất cảm giác ăn ngon miệng Nước tiểu vàng, có thể có vàng da và củng mạc mắt vàng",
+        "head": "Đau tức nặng vùng gan",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "xơ gan do rượu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi việc lạm dụng rượu đã gây viêm (sưng) gan, sẽ dẫn đến các triệu chứng như: Đau tức nặng vùng gan Đôi khi có sốt nhẹ Mệt mỏi Buồn nôn và nôn ói Mất cảm giác ăn ngon miệng Nước tiểu vàng, có thể có vàng da và củng mạc mắt vàng",
+        "head": "sốt nhẹ",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "xơ gan do rượu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi việc lạm dụng rượu đã gây viêm (sưng) gan, sẽ dẫn đến các triệu chứng như: Đau tức nặng vùng gan Đôi khi có sốt nhẹ Mệt mỏi Buồn nôn và nôn ói Mất cảm giác ăn ngon miệng Nước tiểu vàng, có thể có vàng da và củng mạc mắt vàng",
+        "head": "Mệt mỏi",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "xơ gan do rượu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi việc lạm dụng rượu đã gây viêm (sưng) gan, sẽ dẫn đến các triệu chứng như: Đau tức nặng vùng gan Đôi khi có sốt nhẹ Mệt mỏi Buồn nôn và nôn ói Mất cảm giác ăn ngon miệng Nước tiểu vàng, có thể có vàng da và củng mạc mắt vàng",
+        "head": "Buồn nôn và nôn ói",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "xơ gan do rượu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi việc lạm dụng rượu đã gây viêm (sưng) gan, sẽ dẫn đến các triệu chứng như: Đau tức nặng vùng gan Đôi khi có sốt nhẹ Mệt mỏi Buồn nôn và nôn ói Mất cảm giác ăn ngon miệng Nước tiểu vàng, có thể có vàng da và củng mạc mắt vàng",
+        "head": "Mất cảm giác ăn ngon miệng",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "xơ gan do rượu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi việc lạm dụng rượu đã gây viêm (sưng) gan, sẽ dẫn đến các triệu chứng như: Đau tức nặng vùng gan Đôi khi có sốt nhẹ Mệt mỏi Buồn nôn và nôn ói Mất cảm giác ăn ngon miệng Nước tiểu vàng, có thể có vàng da và củng mạc mắt vàng",
+        "head": "Nước tiểu vàng",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "xơ gan do rượu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi việc lạm dụng rượu đã gây viêm (sưng) gan, sẽ dẫn đến các triệu chứng như: Đau tức nặng vùng gan Đôi khi có sốt nhẹ Mệt mỏi Buồn nôn và nôn ói Mất cảm giác ăn ngon miệng Nước tiểu vàng, có thể có vàng da và củng mạc mắt vàng",
+        "head": "vàng da",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "xơ gan do rượu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi việc lạm dụng rượu đã gây viêm (sưng) gan, sẽ dẫn đến các triệu chứng như: Đau tức nặng vùng gan Đôi khi có sốt nhẹ Mệt mỏi Buồn nôn và nôn ói Mất cảm giác ăn ngon miệng Nước tiểu vàng, có thể có vàng da và củng mạc mắt vàng",
+        "head": "củng mạc mắt vàng",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "xơ gan do rượu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đây là giai đoạn nặng nhất, gan đã bị tổn thương và không thể phục hồi.",
+        "head": "gan",
+        "head_type": "organ",
+        "relation": "affects",
+        "tail": "xơ gan do rượu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Triệu chứng xơ gan do rượu lúc này bao gồm:  Tăng áp lực tĩnh mạch cửa Lá lách to có thể gây tức ở hạ sườn bên trái Suy dinh dưỡng Chảy máu tiêu hóa như nôn ra máu, đại tiện phân đen Cổ trướng Suy thận Lú lẫn (bệnh não do gan) Ung thư gan",
+        "head": "Tăng áp lực tĩnh mạch cửa",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "xơ gan do rượu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Triệu chứng xơ gan do rượu lúc này bao gồm:  Tăng áp lực tĩnh mạch cửa Lá lách to có thể gây tức ở hạ sườn bên trái Suy dinh dưỡng Chảy máu tiêu hóa như nôn ra máu, đại tiện phân đen Cổ trướng Suy thận Lú lẫn (bệnh não do gan) Ung thư gan",
+        "head": "Lá lách to",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "xơ gan do rượu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Triệu chứng xơ gan do rượu lúc này bao gồm:  Tăng áp lực tĩnh mạch cửa Lá lách to có thể gây tức ở hạ sườn bên trái Suy dinh dưỡng Chảy máu tiêu hóa như nôn ra máu, đại tiện phân đen Cổ trướng Suy thận Lú lẫn (bệnh não do gan) Ung thư gan",
+        "head": "tức ở hạ sườn bên trái",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "xơ gan do rượu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Triệu chứng xơ gan do rượu lúc này bao gồm:  Tăng áp lực tĩnh mạch cửa Lá lách to có thể gây tức ở hạ sườn bên trái Suy dinh dưỡng Chảy máu tiêu hóa như nôn ra máu, đại tiện phân đen Cổ trướng Suy thận Lú lẫn (bệnh não do gan) Ung thư gan",
+        "head": "Suy dinh dưỡng",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "xơ gan do rượu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Triệu chứng xơ gan do rượu lúc này bao gồm:  Tăng áp lực tĩnh mạch cửa Lá lách to có thể gây tức ở hạ sườn bên trái Suy dinh dưỡng Chảy máu tiêu hóa như nôn ra máu, đại tiện phân đen Cổ trướng Suy thận Lú lẫn (bệnh não do gan) Ung thư gan",
+        "head": "Chảy máu tiêu hóa",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "xơ gan do rượu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Triệu chứng xơ gan do rượu lúc này bao gồm:  Tăng áp lực tĩnh mạch cửa Lá lách to có thể gây tức ở hạ sườn bên trái Suy dinh dưỡng Chảy máu tiêu hóa như nôn ra máu, đại tiện phân đen Cổ trướng Suy thận Lú lẫn (bệnh não do gan) Ung thư gan",
+        "head": "nôn ra máu",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "xơ gan do rượu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Triệu chứng xơ gan do rượu lúc này bao gồm:  Tăng áp lực tĩnh mạch cửa Lá lách to có thể gây tức ở hạ sườn bên trái Suy dinh dưỡng Chảy máu tiêu hóa như nôn ra máu, đại tiện phân đen Cổ trướng Suy thận Lú lẫn (bệnh não do gan) Ung thư gan",
+        "head": "đại tiện phân đen",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "xơ gan do rượu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Triệu chứng xơ gan do rượu lúc này bao gồm:  Tăng áp lực tĩnh mạch cửa Lá lách to có thể gây tức ở hạ sườn bên trái Suy dinh dưỡng Chảy máu tiêu hóa như nôn ra máu, đại tiện phân đen Cổ trướng Suy thận Lú lẫn (bệnh não do gan) Ung thư gan",
+        "head": "Cổ trướng",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "xơ gan do rượu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Triệu chứng xơ gan do rượu lúc này bao gồm:  Tăng áp lực tĩnh mạch cửa Lá lách to có thể gây tức ở hạ sườn bên trái Suy dinh dưỡng Chảy máu tiêu hóa như nôn ra máu, đại tiện phân đen Cổ trướng Suy thận Lú lẫn (bệnh não do gan) Ung thư gan",
+        "head": "Suy thận",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "xơ gan do rượu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Triệu chứng xơ gan do rượu lúc này bao gồm:  Tăng áp lực tĩnh mạch cửa Lá lách to có thể gây tức ở hạ sườn bên trái Suy dinh dưỡng Chảy máu tiêu hóa như nôn ra máu, đại tiện phân đen Cổ trướng Suy thận Lú lẫn (bệnh não do gan) Ung thư gan",
+        "head": "Lú lẫn",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "xơ gan do rượu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Triệu chứng xơ gan do rượu lúc này bao gồm:  Tăng áp lực tĩnh mạch cửa Lá lách to có thể gây tức ở hạ sườn bên trái Suy dinh dưỡng Chảy máu tiêu hóa như nôn ra máu, đại tiện phân đen Cổ trướng Suy thận Lú lẫn (bệnh não do gan) Ung thư gan",
+        "head": "Ung thư gan",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "xơ gan do rượu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ngoài ra, xơ gan do rượu còn có thể làm xuất hiện các dấu hiệu như: Dễ bị bầm tím, nổi các đốm đỏ trong lòng bàn tay, kém tập trung…",
+        "head": "Dễ bị bầm tím",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "xơ gan do rượu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ngoài ra, xơ gan do rượu còn có thể làm xuất hiện các dấu hiệu như: Dễ bị bầm tím, nổi các đốm đỏ trong lòng bàn tay, kém tập trung…",
+        "head": "nổi các đốm đỏ trong lòng bàn tay",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "xơ gan do rượu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ngoài ra, xơ gan do rượu còn có thể làm xuất hiện các dấu hiệu như: Dễ bị bầm tím, nổi các đốm đỏ trong lòng bàn tay, kém tập trung…",
+        "head": "kém tập trung",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "xơ gan do rượu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bác sĩ Khanh khuyến cáo, xơ gan do rượu không chỉ làm suy giảm các chức năng quan trọng của gan (thải độc, chuyển hóa các chất, đông máu..) mà còn dẫn đến rất nhiều biến chứng nguy hiểm như:",
+        "head": "xơ gan do rượu",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "gan",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Bác sĩ Khanh khuyến cáo, xơ gan do rượu không chỉ làm suy giảm các chức năng quan trọng của gan (thải độc, chuyển hóa các chất, đông máu..) mà còn dẫn đến rất nhiều biến chứng nguy hiểm như:",
+        "head": "xơ gan do rượu",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "thải độc",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Bác sĩ Khanh khuyến cáo, xơ gan do rượu không chỉ làm suy giảm các chức năng quan trọng của gan (thải độc, chuyển hóa các chất, đông máu..) mà còn dẫn đến rất nhiều biến chứng nguy hiểm như:",
+        "head": "xơ gan do rượu",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "chuyển hóa các chất",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Bác sĩ Khanh khuyến cáo, xơ gan do rượu không chỉ làm suy giảm các chức năng quan trọng của gan (thải độc, chuyển hóa các chất, đông máu..) mà còn dẫn đến rất nhiều biến chứng nguy hiểm như:",
+        "head": "xơ gan do rượu",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "đông máu",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Vàng da, một trong những biến chứng có thể gặp phải ở người mắc bệnh xơ gan do rượu.",
+        "head": "Vàng da",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "xơ gan do rượu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Vàng da, vàng mắt Mất trương lực cơ (teo cơ) Xuất huyết tiêu hóa: Do vỡ giãn tĩnh mạch thực quản hoặc dạ dày. Biến chứng này là hậu quả của tình trạng tăng áp lực tĩnh mạch cửa do xơ gan rượu Nhiễm trùng dịch cổ trướng: Xảy ra khi dịch ổ bụng bị nhiễm khuẩn Tràn dịch đa màng: màng phổi, màng tim Bệnh não gan (nặng là hôn mê gan): Khi chức năng gan suy giảm, gây tích tụ chất độc và các chất trung gian chuyển hóa khác trong máu, não bộ và hệ thống thần kinh trung ương sẽ bị tổn thương Hội chứng gan thận, ung thư gan…",
+        "head": "Vàng mắt",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "xơ gan do rượu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Vàng da, vàng mắt Mất trương lực cơ (teo cơ) Xuất huyết tiêu hóa: Do vỡ giãn tĩnh mạch thực quản hoặc dạ dày. Biến chứng này là hậu quả của tình trạng tăng áp lực tĩnh mạch cửa do xơ gan rượu Nhiễm trùng dịch cổ trướng: Xảy ra khi dịch ổ bụng bị nhiễm khuẩn Tràn dịch đa màng: màng phổi, màng tim Bệnh não gan (nặng là hôn mê gan): Khi chức năng gan suy giảm, gây tích tụ chất độc và các chất trung gian chuyển hóa khác trong máu, não bộ và hệ thống thần kinh trung ương sẽ bị tổn thương Hội chứng gan thận, ung thư gan…",
+        "head": "Mất trương lực cơ",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "xơ gan do rượu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Vàng da, vàng mắt Mất trương lực cơ (teo cơ) Xuất huyết tiêu hóa: Do vỡ giãn tĩnh mạch thực quản hoặc dạ dày. Biến chứng này là hậu quả của tình trạng tăng áp lực tĩnh mạch cửa do xơ gan rượu Nhiễm trùng dịch cổ trướng: Xảy ra khi dịch ổ bụng bị nhiễm khuẩn Tràn dịch đa màng: màng phổi, màng tim Bệnh não gan (nặng là hôn mê gan): Khi chức năng gan suy giảm, gây tích tụ chất độc và các chất trung gian chuyển hóa khác trong máu, não bộ và hệ thống thần kinh trung ương sẽ bị tổn thương Hội chứng gan thận, ung thư gan…",
+        "head": "Xuất huyết tiêu hóa",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "xơ gan do rượu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Vàng da, vàng mắt Mất trương lực cơ (teo cơ) Xuất huyết tiêu hóa: Do vỡ giãn tĩnh mạch thực quản hoặc dạ dày. Biến chứng này là hậu quả của tình trạng tăng áp lực tĩnh mạch cửa do xơ gan rượu Nhiễm trùng dịch cổ trướng: Xảy ra khi dịch ổ bụng bị nhiễm khuẩn Tràn dịch đa màng: màng phổi, màng tim Bệnh não gan (nặng là hôn mê gan): Khi chức năng gan suy giảm, gây tích tụ chất độc và các chất trung gian chuyển hóa khác trong máu, não bộ và hệ thống thần kinh trung ương sẽ bị tổn thương Hội chứng gan thận, ung thư gan…",
+        "head": "vỡ giãn tĩnh mạch thực quản",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "xơ gan do rượu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Vàng da, vàng mắt Mất trương lực cơ (teo cơ) Xuất huyết tiêu hóa: Do vỡ giãn tĩnh mạch thực quản hoặc dạ dày. Biến chứng này là hậu quả của tình trạng tăng áp lực tĩnh mạch cửa do xơ gan rượu Nhiễm trùng dịch cổ trướng: Xảy ra khi dịch ổ bụng bị nhiễm khuẩn Tràn dịch đa màng: màng phổi, màng tim Bệnh não gan (nặng là hôn mê gan): Khi chức năng gan suy giảm, gây tích tụ chất độc và các chất trung gian chuyển hóa khác trong máu, não bộ và hệ thống thần kinh trung ương sẽ bị tổn thương Hội chứng gan thận, ung thư gan…",
+        "head": "vỡ giãn tĩnh mạch dạ dày",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "xơ gan do rượu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Vàng da, vàng mắt Mất trương lực cơ (teo cơ) Xuất huyết tiêu hóa: Do vỡ giãn tĩnh mạch thực quản hoặc dạ dày. Biến chứng này là hậu quả của tình trạng tăng áp lực tĩnh mạch cửa do xơ gan rượu Nhiễm trùng dịch cổ trướng: Xảy ra khi dịch ổ bụng bị nhiễm khuẩn Tràn dịch đa màng: màng phổi, màng tim Bệnh não gan (nặng là hôn mê gan): Khi chức năng gan suy giảm, gây tích tụ chất độc và các chất trung gian chuyển hóa khác trong máu, não bộ và hệ thống thần kinh trung ương sẽ bị tổn thương Hội chứng gan thận, ung thư gan…",
+        "head": "tăng áp lực tĩnh mạch cửa",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "xơ gan do rượu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Vàng da, vàng mắt Mất trương lực cơ (teo cơ) Xuất huyết tiêu hóa: Do vỡ giãn tĩnh mạch thực quản hoặc dạ dày. Biến chứng này là hậu quả của tình trạng tăng áp lực tĩnh mạch cửa do xơ gan rượu Nhiễm trùng dịch cổ trướng: Xảy ra khi dịch ổ bụng bị nhiễm khuẩn Tràn dịch đa màng: màng phổi, màng tim Bệnh não gan (nặng là hôn mê gan): Khi chức năng gan suy giảm, gây tích tụ chất độc và các chất trung gian chuyển hóa khác trong máu, não bộ và hệ thống thần kinh trung ương sẽ bị tổn thương Hội chứng gan thận, ung thư gan…",
+        "head": "Nhiễm trùng dịch cổ trướng",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "xơ gan do rượu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Vàng da, vàng mắt Mất trương lực cơ (teo cơ) Xuất huyết tiêu hóa: Do vỡ giãn tĩnh mạch thực quản hoặc dạ dày. Biến chứng này là hậu quả của tình trạng tăng áp lực tĩnh mạch cửa do xơ gan rượu Nhiễm trùng dịch cổ trướng: Xảy ra khi dịch ổ bụng bị nhiễm khuẩn Tràn dịch đa màng: màng phổi, màng tim Bệnh não gan (nặng là hôn mê gan): Khi chức năng gan suy giảm, gây tích tụ chất độc và các chất trung gian chuyển hóa khác trong máu, não bộ và hệ thống thần kinh trung ương sẽ bị tổn thương Hội chứng gan thận, ung thư gan…",
+        "head": "dịch ổ bụng",
+        "head_type": "organ",
+        "relation": "locatedIn",
+        "tail": "cơ thể",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Vàng da, vàng mắt Mất trương lực cơ (teo cơ) Xuất huyết tiêu hóa: Do vỡ giãn tĩnh mạch thực quản hoặc dạ dày. Biến chứng này là hậu quả của tình trạng tăng áp lực tĩnh mạch cửa do xơ gan rượu Nhiễm trùng dịch cổ trướng: Xảy ra khi dịch ổ bụng bị nhiễm khuẩn Tràn dịch đa màng: màng phổi, màng tim Bệnh não gan (nặng là hôn mê gan): Khi chức năng gan suy giảm, gây tích tụ chất độc và các chất trung gian chuyển hóa khác trong máu, não bộ và hệ thống thần kinh trung ương sẽ bị tổn thương Hội chứng gan thận, ung thư gan…",
+        "head": "Tràn dịch đa màng",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "xơ gan do rượu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Vàng da, vàng mắt Mất trương lực cơ (teo cơ) Xuất huyết tiêu hóa: Do vỡ giãn tĩnh mạch thực quản hoặc dạ dày. Biến chứng này là hậu quả của tình trạng tăng áp lực tĩnh mạch cửa do xơ gan rượu Nhiễm trùng dịch cổ trướng: Xảy ra khi dịch ổ bụng bị nhiễm khuẩn Tràn dịch đa màng: màng phổi, màng tim Bệnh não gan (nặng là hôn mê gan): Khi chức năng gan suy giảm, gây tích tụ chất độc và các chất trung gian chuyển hóa khác trong máu, não bộ và hệ thống thần kinh trung ương sẽ bị tổn thương Hội chứng gan thận, ung thư gan…",
+        "head": "màng phổi",
+        "head_type": "organ",
+        "relation": "locatedIn",
+        "tail": "cơ thể",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Vàng da, vàng mắt Mất trương lực cơ (teo cơ) Xuất huyết tiêu hóa: Do vỡ giãn tĩnh mạch thực quản hoặc dạ dày. Biến chứng này là hậu quả của tình trạng tăng áp lực tĩnh mạch cửa do xơ gan rượu Nhiễm trùng dịch cổ trướng: Xảy ra khi dịch ổ bụng bị nhiễm khuẩn Tràn dịch đa màng: màng phổi, màng tim Bệnh não gan (nặng là hôn mê gan): Khi chức năng gan suy giảm, gây tích tụ chất độc và các chất trung gian chuyển hóa khác trong máu, não bộ và hệ thống thần kinh trung ương sẽ bị tổn thương Hội chứng gan thận, ung thư gan…",
+        "head": "màng tim",
+        "head_type": "organ",
+        "relation": "locatedIn",
+        "tail": "cơ thể",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Vàng da, vàng mắt Mất trương lực cơ (teo cơ) Xuất huyết tiêu hóa: Do vỡ giãn tĩnh mạch thực quản hoặc dạ dày. Biến chứng này là hậu quả của tình trạng tăng áp lực tĩnh mạch cửa do xơ gan rượu Nhiễm trùng dịch cổ trướng: Xảy ra khi dịch ổ bụng bị nhiễm khuẩn Tràn dịch đa màng: màng phổi, màng tim Bệnh não gan (nặng là hôn mê gan): Khi chức năng gan suy giảm, gây tích tụ chất độc và các chất trung gian chuyển hóa khác trong máu, não bộ và hệ thống thần kinh trung ương sẽ bị tổn thương Hội chứng gan thận, ung thư gan…",
+        "head": "Bệnh não gan",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "xơ gan do rượu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Vàng da, vàng mắt Mất trương lực cơ (teo cơ) Xuất huyết tiêu hóa: Do vỡ giãn tĩnh mạch thực quản hoặc dạ dày. Biến chứng này là hậu quả của tình trạng tăng áp lực tĩnh mạch cửa do xơ gan rượu Nhiễm trùng dịch cổ trướng: Xảy ra khi dịch ổ bụng bị nhiễm khuẩn Tràn dịch đa màng: màng phổi, màng tim Bệnh não gan (nặng là hôn mê gan): Khi chức năng gan suy giảm, gây tích tụ chất độc và các chất trung gian chuyển hóa khác trong máu, não bộ và hệ thống thần kinh trung ương sẽ bị tổn thương Hội chứng gan thận, ung thư gan…",
+        "head": "hôn mê gan",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "xơ gan do rượu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bước đầu tiên trong chẩn đoán xơ gan do rượu là thăm khám lâm sàng, tìm hiểu bệnh sử và thói quen sống của người bệnh…",
+        "head": "thăm khám lâm sàng",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "xơ gan do rượu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bước đầu tiên trong chẩn đoán xơ gan do rượu là thăm khám lâm sàng, tìm hiểu bệnh sử và thói quen sống của người bệnh…",
+        "head": "tìm hiểu bệnh sử",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "xơ gan do rượu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bước đầu tiên trong chẩn đoán xơ gan do rượu là thăm khám lâm sàng, tìm hiểu bệnh sử và thói quen sống của người bệnh…",
+        "head": "thói quen sống",
+        "head_type": "lifestyle",
+        "relation": "relatedTo",
+        "tail": "xơ gan do rượu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Sau đó, người bệnh sẽ được chỉ định tiến hành các chẩn đoán xơ gan rượu thông qua các xét nghiệm cận lâm sàng khác như:    Xét nghiệm máu: Bao gồm xét nghiệm công thức máu, xét nghiệm điện giải, đánh giá mức độ đông máu, thăm dò chức năng gan,&#8230;",
+        "head": "Xét nghiệm máu",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "xơ gan do rượu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Xét nghiệm máu: Bao gồm xét nghiệm công thức máu, xét nghiệm điện giải, đánh giá mức độ đông máu, thăm dò chức năng gan,&#8230;",
+        "head": "xét nghiệm công thức máu",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "xơ gan do rượu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Xét nghiệm máu: Bao gồm xét nghiệm công thức máu, xét nghiệm điện giải, đánh giá mức độ đông máu, thăm dò chức năng gan,&#8230;",
+        "head": "xét nghiệm điện giải",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "xơ gan do rượu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Xét nghiệm máu: Bao gồm xét nghiệm công thức máu, xét nghiệm điện giải, đánh giá mức độ đông máu, thăm dò chức năng gan,&#8230;",
+        "head": "đánh giá mức độ đông máu",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "xơ gan do rượu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Xét nghiệm máu: Bao gồm xét nghiệm công thức máu, xét nghiệm điện giải, đánh giá mức độ đông máu, thăm dò chức năng gan,&#8230;",
+        "head": "thăm dò chức năng gan",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "xơ gan do rượu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Xét nghiệm men gan: Nhằm xác định nồng độ ba loại men gan gamma - glutamyltransferase (GGT), aspartate aminotransferase (AST) và alanin aminotransferase (ALT).",
+        "head": "Xét nghiệm men gan",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "xơ gan do rượu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Xét nghiệm men gan: Nhằm xác định nồng độ ba loại men gan gamma - glutamyltransferase (GGT), aspartate aminotransferase (AST) và alanin aminotransferase (ALT).",
+        "head": "gamma - glutamyltransferase (GGT)",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "xơ gan do rượu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Xét nghiệm men gan: Nhằm xác định nồng độ ba loại men gan gamma - glutamyltransferase (GGT), aspartate aminotransferase (AST) và alanin aminotransferase (ALT).",
+        "head": "aspartate aminotransferase (AST)",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "xơ gan do rượu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Xét nghiệm men gan: Nhằm xác định nồng độ ba loại men gan gamma - glutamyltransferase (GGT), aspartate aminotransferase (AST) và alanin aminotransferase (ALT).",
+        "head": "alanin aminotransferase (ALT)",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "xơ gan do rượu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ở những người mắc bệnh xơ gan do rượu, AST cao gấp hai lần ALT",
+        "head": "AST cao gấp hai lần ALT",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "xơ gan do rượu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Siêu âm gan, đo độ đàn hồi của gan giúp đánh giá mức độ xơ hóa của gan và ổ bụng",
+        "head": "Siêu âm gan",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "xơ gan do rượu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Siêu âm gan, đo độ đàn hồi của gan giúp đánh giá mức độ xơ hóa của gan và ổ bụng",
+        "head": "đo độ đàn hồi của gan",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "xơ gan do rượu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Chụp CT cắt lớp, chụp cộng hưởng từ MRI: Là những kỹ thuật chẩn đoán hình ảnh, cung cấp hình ảnh chi tiết về tình trạng gan, từ đó đánh giá mức độ tổn thương gan",
+        "head": "Chụp CT cắt lớp",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "xơ gan do rượu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Chụp CT cắt lớp, chụp cộng hưởng từ MRI: Là những kỹ thuật chẩn đoán hình ảnh, cung cấp hình ảnh chi tiết về tình trạng gan, từ đó đánh giá mức độ tổn thương gan",
+        "head": "chụp cộng hưởng từ MRI",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "xơ gan do rượu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Sinh thiết gan ngày nay ít được sử dụng (3)",
+        "head": "Sinh thiết gan",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "xơ gan do rượu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nội soi tiêu hóa trên nhằm phát hiện búi giãn tĩnh mạch thực quản, dạ dày",
+        "head": "Nội soi tiêu hóa trên",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "xơ gan do rượu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nội soi tiêu hóa trên nhằm phát hiện búi giãn tĩnh mạch thực quản, dạ dày",
+        "head": "búi giãn tĩnh mạch thực quản",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "xơ gan do rượu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nội soi tiêu hóa trên nhằm phát hiện búi giãn tĩnh mạch thực quản, dạ dày",
+        "head": "búi giãn tĩnh mạch dạ dày",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "xơ gan do rượu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Hai mục tiêu chính trong điều trị xơ gan do rượu là: giúp người bệnh cai rượu và cải thiện sức khỏe gan.",
+        "head": "cai rượu",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "xơ gan do rượu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Hai mục tiêu chính trong điều trị xơ gan do rượu là: giúp người bệnh cai rượu và cải thiện sức khỏe gan.",
+        "head": "cải thiện sức khỏe gan",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "xơ gan do rượu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Hạn chế rượu bia là yếu tố quan trọng trong điều trị xơ gan do rượu.",
+        "head": "Hạn chế rượu bia",
+        "head_type": "lifestyle",
+        "relation": "treatedBy",
+        "tail": "xơ gan do rượu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Hạn chế rượu bia là điều tiên quyết trong lộ trình điều trị xơ gan rượu.",
+        "head": "Hạn chế rượu bia",
+        "head_type": "lifestyle",
+        "relation": "treatedBy",
+        "tail": "xơ gan do rượu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Điều này có tác dụng hỗ trợ điều trị và ngăn ngừa bệnh tiến triển nặng.",
+        "head": "Hạn chế rượu bia",
+        "head_type": "lifestyle",
+        "relation": "preventedBy",
+        "tail": "xơ gan do rượu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đối với người nghiện rượu nặng, việc ngừng uống đột ngột sẽ dẫn đến các vấn đề như: lo lắng, mệt mỏi, đau đầu, buồn nôn, kích động…",
+        "head": "nghiện rượu nặng",
+        "head_type": "lifestyle",
+        "relation": "aggravatedBy",
+        "tail": "xơ gan do rượu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đối với người nghiện rượu nặng, việc ngừng uống đột ngột sẽ dẫn đến các vấn đề như: lo lắng, mệt mỏi, đau đầu, buồn nôn, kích động…",
+        "head": "lo lắng",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "xơ gan do rượu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đối với người nghiện rượu nặng, việc ngừng uống đột ngột sẽ dẫn đến các vấn đề như: lo lắng, mệt mỏi, đau đầu, buồn nôn, kích động…",
+        "head": "mệt mỏi",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "xơ gan do rượu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đối với người nghiện rượu nặng, việc ngừng uống đột ngột sẽ dẫn đến các vấn đề như: lo lắng, mệt mỏi, đau đầu, buồn nôn, kích động…",
+        "head": "đau đầu",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "xơ gan do rượu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đối với người nghiện rượu nặng, việc ngừng uống đột ngột sẽ dẫn đến các vấn đề như: lo lắng, mệt mỏi, đau đầu, buồn nôn, kích động…",
+        "head": "buồn nôn",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "xơ gan do rượu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đối với người nghiện rượu nặng, việc ngừng uống đột ngột sẽ dẫn đến các vấn đề như: lo lắng, mệt mỏi, đau đầu, buồn nôn, kích động…",
+        "head": "kích động",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "xơ gan do rượu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Lúc này, người bệnh sẽ được chỉ định dùng thuốc, dịch truyền tĩnh mạch hoặc thuốc an thần cho đến khi hoàn tất quá trình cai nghiện rượu.",
+        "head": "thuốc",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "xơ gan do rượu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Lúc này, người bệnh sẽ được chỉ định dùng thuốc, dịch truyền tĩnh mạch hoặc thuốc an thần cho đến khi hoàn tất quá trình cai nghiện rượu.",
+        "head": "dịch truyền tĩnh mạch",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "xơ gan do rượu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Lúc này, người bệnh sẽ được chỉ định dùng thuốc, dịch truyền tĩnh mạch hoặc thuốc an thần cho đến khi hoàn tất quá trình cai nghiện rượu.",
+        "head": "thuốc an thần",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "xơ gan do rượu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Thông thường, người bệnh sẽ cảm thấy những cải thiện tích cực sau khoảng 3 tháng giảm rượu bia.",
+        "head": "giảm rượu bia",
+        "head_type": "lifestyle",
+        "relation": "treatedBy",
+        "tail": "xơ gan do rượu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Người nghiện rượu lâu dài thường có suy dinh dưỡng do thiếu calo, thiếu chất đạm và vitamin cùng khoáng chất, vì thế cần bổ sung các nguồn dinh dưỡng này qua con đường ăn uống.",
+        "head": "suy dinh dưỡng",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "xơ gan do rượu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Người nghiện rượu lâu dài thường có suy dinh dưỡng do thiếu calo, thiếu chất đạm và vitamin cùng khoáng chất, vì thế cần bổ sung các nguồn dinh dưỡng này qua con đường ăn uống.",
+        "head": "thiếu calo",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "xơ gan do rượu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Người nghiện rượu lâu dài thường có suy dinh dưỡng do thiếu calo, thiếu chất đạm và vitamin cùng khoáng chất, vì thế cần bổ sung các nguồn dinh dưỡng này qua con đường ăn uống.",
+        "head": "thiếu chất đạm",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "xơ gan do rượu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Người nghiện rượu lâu dài thường có suy dinh dưỡng do thiếu calo, thiếu chất đạm và vitamin cùng khoáng chất, vì thế cần bổ sung các nguồn dinh dưỡng này qua con đường ăn uống.",
+        "head": "thiếu vitamin",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "xơ gan do rượu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Người nghiện rượu lâu dài thường có suy dinh dưỡng do thiếu calo, thiếu chất đạm và vitamin cùng khoáng chất, vì thế cần bổ sung các nguồn dinh dưỡng này qua con đường ăn uống.",
+        "head": "thiếu khoáng chất",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "xơ gan do rượu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi đã mắc xơ gan do rượu, các mô tế bào gan của người bệnh không thể khôi phục lại như ban đầu.",
+        "head": "xơ gan do rượu",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "các mô tế bào gan",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Khi đã mắc xơ gan do rượu, các mô tế bào gan của người bệnh không thể khôi phục lại như ban đầu.",
+        "head": "xơ gan do rượu",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "rượu",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Các phương pháp điều trị, thay đổi thói quen sống và sinh hoạt chỉ có tác dụng ngăn ngừa bệnh tiếp tục phát triển, giảm nguy cơ biến chứng.",
+        "head": "xơ gan do rượu",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "Các phương pháp điều trị",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Các phương pháp điều trị, thay đổi thói quen sống và sinh hoạt chỉ có tác dụng ngăn ngừa bệnh tiếp tục phát triển, giảm nguy cơ biến chứng.",
+        "head": "xơ gan do rượu",
+        "head_type": "disease",
+        "relation": "preventedBy",
+        "tail": "thay đổi thói quen sống và sinh hoạt",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Ở những trường hợp nhẹ, nếu được kiểm soát tốt, người bệnh xơ gan do rượu có thể tận hưởng cuộc sống như người bình thường.",
+        "head": "xơ gan do rượu",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "cuộc sống bình thường",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Khoa Tiêu hóa - Gan mật - Tụy (BVĐK Tâm Anh Hà Nội) và Khoa Tiêu hóa (BVĐK Tâm Anh TP.HCM) và là những trung tâm y tế chuyên khoa Tiêu hóa uy tín, cung cấp dịch vụ thăm khám và điều trị cao cấp, hiệu quả cho các bệnh nhân mắc các vấn đề về gan từ nhẹ đến nặng (gan nhiễm mỡ, viêm gan cấp tính, mạn tính, xơ gan, ung thư gan…).",
+        "head": "Khoa Tiêu hóa - Gan mật - Tụy (BVĐK Tâm Anh Hà Nội) và Khoa Tiêu hóa (BVĐK Tâm Anh TP.HCM)",
+        "head_type": "organ",
+        "relation": "locatedIn",
+        "tail": "BVĐK Tâm Anh Hà Nội và BVĐK Tâm Anh TP.HCM",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Khoa Tiêu hóa - Gan mật - Tụy (BVĐK Tâm Anh Hà Nội) và Khoa Tiêu hóa (BVĐK Tâm Anh TP.HCM) và là những trung tâm y tế chuyên khoa Tiêu hóa uy tín, cung cấp dịch vụ thăm khám và điều trị cao cấp, hiệu quả cho các bệnh nhân mắc các vấn đề về gan từ nhẹ đến nặng (gan nhiễm mỡ, viêm gan cấp tính, mạn tính, xơ gan, ung thư gan…).",
+        "head": "Khoa Tiêu hóa - Gan mật - Tụy (BVĐK Tâm Anh Hà Nội) và Khoa Tiêu hóa (BVĐK Tâm Anh TP.HCM)",
+        "head_type": "organ",
+        "relation": "treatedBy",
+        "tail": "dịch vụ thăm khám và điều trị",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Khoa Tiêu hóa - Gan mật - Tụy (BVĐK Tâm Anh Hà Nội) và Khoa Tiêu hóa (BVĐK Tâm Anh TP.HCM) và là những trung tâm y tế chuyên khoa Tiêu hóa uy tín, cung cấp dịch vụ thăm khám và điều trị cao cấp, hiệu quả cho các bệnh nhân mắc các vấn đề về gan từ nhẹ đến nặng (gan nhiễm mỡ, viêm gan cấp tính, mạn tính, xơ gan, ung thư gan…).",
+        "head": "gan nhiễm mỡ, viêm gan cấp tính, mạn tính, xơ gan, ung thư gan",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "dịch vụ thăm khám và điều trị",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Hệ thống BVĐK Tâm Anh quy tụ đội ngũ bác sĩ Tiêu hóa - Gan mật, Nội khoa – Ngoại khoa – Nội soi tiêu hóa chuyên môn cao, giàu kinh nghiệm, bên cạnh đó là sự hỗ trợ của hệ thống thiết bị y tế hiện đại, nhập khẩu từ nước ngoài, phục vụ tối đa nhu cầu thăm khám và điều trị của khách hàng.",
+        "head": "BVĐK Tâm Anh",
+        "head_type": "organ",
+        "relation": "treatedBy",
+        "tail": "đội ngũ bác sĩ Tiêu hóa - Gan mật, Nội khoa – Ngoại khoa – Nội soi tiêu hóa chuyên môn cao, giàu kinh nghiệm",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Hệ thống BVĐK Tâm Anh quy tụ đội ngũ bác sĩ Tiêu hóa - Gan mật, Nội khoa – Ngoại khoa – Nội soi tiêu hóa chuyên môn cao, giàu kinh nghiệm, bên cạnh đó là sự hỗ trợ của hệ thống thiết bị y tế hiện đại, nhập khẩu từ nước ngoài, phục vụ tối đa nhu cầu thăm khám và điều trị của khách hàng.",
+        "head": "BVĐK Tâm Anh",
+        "head_type": "organ",
+        "relation": "treatedBy",
+        "tail": "hệ thống thiết bị y tế hiện đại, nhập khẩu từ nước ngoài",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Thông qua các trang thiết bị y tế hiện đại như máy nội soi dạ dày và đại tràng EVIS X1 GIF-EZ1500, CV 190 hoặc máy nội soi siêu âm EU-ME 2, hệ thống C-Arm model Cios Fit dùng cho kỹ thuật nội soi mật tụy ngược dòng, máy siêu âm có đàn hồi mô Aixplorer Mach 30…, người bệnh có thể được phát hiện ung thư đường tiêu hóa giai đoạn sớm như ung thư thực quản, dạ dày và phát hiện polyp đại tràng; quản lý và điều trị bệnh gan mạn tính trong đó có viêm gan virus B nhằm phát hiện ung thư gan ở giai đoạn sớm.",
+        "head": "máy nội soi dạ dày và đại tràng EVIS X1 GIF-EZ1500, CV 190 hoặc máy nội soi siêu âm EU-ME 2, hệ thống C-Arm model Cios Fit dùng cho kỹ thuật nội soi mật tụy ngược dòng, máy siêu âm có đàn hồi mô Aixplorer Mach 30",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "ung thư đường tiêu hóa giai đoạn sớm như ung thư thực quản, dạ dày và phát hiện polyp đại tràng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Thông qua các trang thiết bị y tế hiện đại như máy nội soi dạ dày và đại tràng EVIS X1 GIF-EZ1500, CV 190 hoặc máy nội soi siêu âm EU-ME 2, hệ thống C-Arm model Cios Fit dùng cho kỹ thuật nội soi mật tụy ngược dòng, máy siêu âm có đàn hồi mô Aixplorer Mach 30…, người bệnh có thể được phát hiện ung thư đường tiêu hóa giai đoạn sớm như ung thư thực quản, dạ dày và phát hiện polyp đại tràng; quản lý và điều trị bệnh gan mạn tính trong đó có viêm gan virus B nhằm phát hiện ung thư gan ở giai đoạn sớm.",
+        "head": "máy nội soi dạ dày và đại tràng EVIS X1 GIF-EZ1500, CV 190 hoặc máy nội soi siêu âm EU-ME 2, hệ thống C-Arm model Cios Fit dùng cho kỹ thuật nội soi mật tụy ngược dòng, máy siêu âm có đàn hồi mô Aixplorer Mach 30",
+        "head_type": "test",
+        "relation": "treatedBy",
+        "tail": "bệnh gan mạn tính trong đó có viêm gan virus B",
+        "tail_type": "disease"
+    }
+]

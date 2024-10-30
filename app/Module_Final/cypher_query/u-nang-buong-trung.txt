@@ -1,0 +1,738 @@
+
+MERGE (o1:disease {id: 'u_nang_buồng_trứng_disease'})
+MERGE (o2:cause {id: 'thai_kỳ_cause'})
+MERGE (o1)-[r0:causedBy]->(o2)
+SET r0.text = 'BS.CKI Hồ Thị Khánh Quyên, Bác sĩ Trung tâm Sản Phụ khoa Bệnh viện Đa khoa Tâm Anh TP.HCM chia sẻ một số yếu tố làm tăng nguy cơ u nang buồng trứng như:'
+
+MERGE (o1:disease {id: 'u_nang_disease'})
+MERGE (o2:cause {id: 'rụng_trứng_tồn_tại_trên_buồng_trứng_trong_suốt_thai_kỳ_cause'})
+MERGE (o1)-[r1:causedBy]->(o2)
+SET r1.text = 'Một số trường hợp ghi nhận u nang có thể hình thành khi rụng trứng tồn tại trên buồng trứng trong suốt thai kỳ.'
+
+MERGE (o1:disease {id: 'lạc_nội_mạc_tử_cung_disease'})
+MERGE (o2:cause {id: 'các_tế_bào_nội_mạc_tử_cung_phát_triển_bên_ngoài_tử_cung_cause'})
+MERGE (o1)-[r2:causedBy]->(o2)
+SET r2.text = 'Lạc nội mạc tử cung: Các tế bào nội mạc tử cung phát triển bên ngoài tử cung, một số mô có thể gắn ở buồng trứng.'
+
+MERGE (o1:disease {id: 'lạc_nội_mạc_tử_cung_disease'})
+MERGE (o2:organ {id: 'buồng_trứng_organ'})
+MERGE (o1)-[r3:affects]->(o2)
+SET r3.text = 'Lạc nội mạc tử cung: Các tế bào nội mạc tử cung phát triển bên ngoài tử cung, một số mô có thể gắn ở buồng trứng.'
+
+MERGE (o1:cause {id: 'nhiễm_trùng_vùng_chậu_cause'})
+MERGE (o2:disease {id: 'u_nang_disease'})
+MERGE (o1)-[r4:causedBy]->(o2)
+SET r4.text = 'Nhiễm trùng vùng chậu: Khi nhiễm trùng lan đến buồng trứng có thể hình thành u nang.'
+
+MERGE (o1:cause {id: 'nhiễm_trùng_vùng_chậu_cause'})
+MERGE (o2:organ {id: 'buồng_trứng_organ'})
+MERGE (o1)-[r5:affects]->(o2)
+SET r5.text = 'Nhiễm trùng vùng chậu: Khi nhiễm trùng lan đến buồng trứng có thể hình thành u nang.'
+
+MERGE (o1:disease {id: 'u_nang_disease'})
+MERGE (o2:symptom {id: 'tái_phát_symptom'})
+MERGE (o1)-[r6:relatedTo]->(o2)
+SET r6.text = 'Trường hợp đã từng xuất hiện u nang trước đó, người bệnh có thể tái phát lại.'
+
+MERGE (o1:disease {id: 'u_buồng_trứng_disease'})
+MERGE (o2:cause {id: 'tiền_sử_gia_đình_cause'})
+MERGE (o1)-[r7:relatedTo]->(o2)
+SET r7.text = 'Tiền sử gia đình có mẹ hoặc chị gái bị u buồng trứng.'
+
+MERGE (o1:disease {id: 'u_nang_buồng_trứng_disease'})
+MERGE (o2:test {id: 'khám_phụ_khoa_định_kỳ_test'})
+MERGE (o1)-[r8:diagnosedBy]->(o2)
+SET r8.text = 'U nang buồng trứng đa số xuất hiện và diễn tiến âm thầm, không có triệu chứng, hầu hết các trường hợp được phát hiện khi khám phụ khoa định kỳ hay khi siêu âm kiểm tra sức khỏe.'
+
+MERGE (o1:disease {id: 'u_nang_buồng_trứng_disease'})
+MERGE (o2:test {id: 'siêu_âm_kiểm_tra_sức_khỏe_test'})
+MERGE (o1)-[r9:diagnosedBy]->(o2)
+SET r9.text = 'U nang buồng trứng đa số xuất hiện và diễn tiến âm thầm, không có triệu chứng, hầu hết các trường hợp được phát hiện khi khám phụ khoa định kỳ hay khi siêu âm kiểm tra sức khỏe.'
+
+MERGE (o1:symptom {id: 'đau_ở_vùng_chậu__vùng_thắt_lưng_symptom'})
+MERGE (o2:disease {id: 'u_nang_buồng_trứng_disease'})
+MERGE (o1)-[r10:isSymptomOf]->(o2)
+SET r10.text = 'Các triệu chứng sau có thể có khi u đã lớn:  Đau ở vùng chậu, vùng thắt lưng : Đây là triệu chứng phổ biến nhất, người bệnh gặp những cơn đau âm ỉ quanh vùng bụng dưới, vùng thắt lưng do các khối u chèn ép các cơ quan hoặc dây thần kinh chạy dọc ở vùng sau xương chậu.'
+
+MERGE (o1:symptom {id: 'đau_ở_vùng_chậu__vùng_thắt_lưng_symptom'})
+MERGE (o2:cause {id: 'các_khối_u_chèn_ép_các_cơ_quan_hoặc_dây_thần_kinh_chạy_dọc_ở_vùng_sau_xương_chậu_cause'})
+MERGE (o1)-[r11:causedBy]->(o2)
+SET r11.text = 'Các triệu chứng sau có thể có khi u đã lớn:  Đau ở vùng chậu, vùng thắt lưng : Đây là triệu chứng phổ biến nhất, người bệnh gặp những cơn đau âm ỉ quanh vùng bụng dưới, vùng thắt lưng do các khối u chèn ép các cơ quan hoặc dây thần kinh chạy dọc ở vùng sau xương chậu.'
+
+MERGE (o1:symptom {id: 'tiểu_khó_symptom'})
+MERGE (o2:cause {id: 'khối_u_to_chèn_ép_các_cơ_quan_lân_cận_cause'})
+MERGE (o1)-[r12:causedBy]->(o2)
+SET r12.text = 'Gây cảm giác khó chịu do khối u to chèn ép các cơ quan lân cận gây tiểu khó, táo bón…'
+
+MERGE (o1:symptom {id: 'táo_bón_symptom'})
+MERGE (o2:cause {id: 'khối_u_to_chèn_ép_các_cơ_quan_lân_cận_cause'})
+MERGE (o1)-[r13:causedBy]->(o2)
+SET r13.text = 'Gây cảm giác khó chịu do khối u to chèn ép các cơ quan lân cận gây tiểu khó, táo bón…'
+
+MERGE (o1:symptom {id: 'bụng_chướng_symptom'})
+MERGE (o2:disease {id: 'u_nang_buồng_trứng_disease'})
+MERGE (o1)-[r14:isSymptomOf]->(o2)
+SET r14.text = 'Bụng chướng.'
+
+MERGE (o1:symptom {id: 'đau_khi_quan_hệ_tình_dục_symptom'})
+MERGE (o2:disease {id: 'u_buồng_trứng_disease'})
+MERGE (o1)-[r15:isSymptomOf]->(o2)
+SET r15.text = 'Đau khi quan hệ tình dục: Khi giao hợp, nếu cảm thấy đau ở một bên so với bên còn lại, có thể đây là triệu chứng của u buồng trứng.'
+
+MERGE (o1:symptom {id: 'đau_khi_quan_hệ_tình_dục_symptom'})
+MERGE (o2:cause {id: 'khối_u_phát_triển_lớn_dần__nằm_ngay_vị_trí_gần_cổ_tử_cung_cause'})
+MERGE (o1)-[r16:causedBy]->(o2)
+SET r16.text = 'Một số trường hợp khối u phát triển lớn dần, nằm ngay vị trí gần cổ tử cung gây đau khi quan hệ tình dục.'
+
+MERGE (o1:symptom {id: 'kinh_nguyệt_thất_thường_symptom'})
+MERGE (o2:disease {id: 'u_buồng_trứng_disease'})
+MERGE (o1)-[r17:isSymptomOf]->(o2)
+SET r17.text = 'Kinh nguyệt thất thường: Rối loạn kinh nguyệt ở nữ giới là một trong những dấu hiệu liên quan đến bệnh lý phụ khoa, trong đó có u buồng trứng buồng trứng.'
+
+MERGE (o1:symptom {id: 'u_to_nhanh_symptom'})
+MERGE (o2:disease {id: 'u_nang_buồng_trứng_disease'})
+MERGE (o1)-[r18:isSymptomOf]->(o2)
+SET r18.text = 'Các trường hợp u to nhanh , bụng chướng to kèm sụt cân, chán ăn, mệt mỏi là các dấu hiệu gợi ý ác tính cần đi khám ngay.'
+
+MERGE (o1:symptom {id: 'bụng_chướng_to_symptom'})
+MERGE (o2:disease {id: 'u_nang_buồng_trứng_disease'})
+MERGE (o1)-[r19:isSymptomOf]->(o2)
+SET r19.text = 'Các trường hợp u to nhanh , bụng chướng to kèm sụt cân, chán ăn, mệt mỏi là các dấu hiệu gợi ý ác tính cần đi khám ngay.'
+
+MERGE (o1:symptom {id: 'sụt_cân_symptom'})
+MERGE (o2:disease {id: 'u_nang_buồng_trứng_disease'})
+MERGE (o1)-[r20:isSymptomOf]->(o2)
+SET r20.text = 'Các trường hợp u to nhanh , bụng chướng to kèm sụt cân, chán ăn, mệt mỏi là các dấu hiệu gợi ý ác tính cần đi khám ngay.'
+
+MERGE (o1:symptom {id: 'chán_ăn_symptom'})
+MERGE (o2:disease {id: 'u_nang_buồng_trứng_disease'})
+MERGE (o1)-[r21:isSymptomOf]->(o2)
+SET r21.text = 'Các trường hợp u to nhanh , bụng chướng to kèm sụt cân, chán ăn, mệt mỏi là các dấu hiệu gợi ý ác tính cần đi khám ngay.'
+
+MERGE (o1:symptom {id: 'mệt_mỏi_symptom'})
+MERGE (o2:disease {id: 'u_nang_buồng_trứng_disease'})
+MERGE (o1)-[r22:isSymptomOf]->(o2)
+SET r22.text = 'Các trường hợp u to nhanh , bụng chướng to kèm sụt cân, chán ăn, mệt mỏi là các dấu hiệu gợi ý ác tính cần đi khám ngay.'
+
+MERGE (o1:symptom {id: 'đau_bụng_dưới_symptom'})
+MERGE (o2:disease {id: 'u_nang_buồng_trứng_disease'})
+MERGE (o1)-[r23:isSymptomOf]->(o2)
+SET r23.text = 'Đau bụng dưới là một trong những dấu hiệu u nang buồng trứng'
+
+MERGE (o1:disease {id: 'u_nang_buồng_trứng_disease'})
+MERGE (o2:symptom {id: 'lành_tính_symptom'})
+MERGE (o1)-[r24:relatedTo]->(o2)
+SET r24.text = 'Thông thường, u nang buồng trứng trái, phải hoặc cả 2 bên là lành tính và có thể tự biến mất, không gây hại cho sức khỏe và tính mạng.'
+
+MERGE (o1:disease {id: 'u_nang_disease'})
+MERGE (o2:symptom {id: 'tiến_triển_chậm_symptom'})
+MERGE (o1)-[r25:relatedTo]->(o2)
+SET r25.text = 'Tuy nhiên, trong một số trường hợp u nang tiến triển chậm và âm thầm kéo dài nhiều năm, chèn ép các cơ quan nội tạng có thể gây ra các biến chứng nguy hiểm như:'
+
+MERGE (o1:disease {id: 'u_nang_disease'})
+MERGE (o2:symptom {id: 'chèn_ép_các_cơ_quan_nội_tạng_symptom'})
+MERGE (o1)-[r26:relatedTo]->(o2)
+SET r26.text = 'Tuy nhiên, trong một số trường hợp u nang tiến triển chậm và âm thầm kéo dài nhiều năm, chèn ép các cơ quan nội tạng có thể gây ra các biến chứng nguy hiểm như:'
+
+MERGE (o1:disease {id: 'xoắn_u_nang_disease'})
+MERGE (o2:disease {id: 'u_nang_buồng_trứng_disease'})
+MERGE (o1)-[r27:isSymptomOf]->(o2)
+SET r27.text = 'Xoắn u nang: Biến chứng này có thể xảy ra ở mọi khối u, nhất là những khối u nhỏ, cuống dài, không dính rất dễ bị xoắn.'
+
+MERGE (o1:disease {id: 'xoắn_u_nang_disease'})
+MERGE (o2:cause {id: 'khối_u_nhỏ__cuống_dài__không_dính_cause'})
+MERGE (o1)-[r28:causedBy]->(o2)
+SET r28.text = 'Xoắn u nang: Biến chứng này có thể xảy ra ở mọi khối u, nhất là những khối u nhỏ, cuống dài, không dính rất dễ bị xoắn.'
+
+MERGE (o1:symptom {id: 'đau_bụng_dữ_dội_symptom'})
+MERGE (o2:disease {id: 'xoắn_u_nang_disease'})
+MERGE (o1)-[r29:isSymptomOf]->(o2)
+SET r29.text = 'Khi u bị xoắn người bệnh đau bụng dữ dội, liên tục, buồn nôn, nôn, đôi khi sẽ choáng vì đau.'
+
+MERGE (o1:symptom {id: 'liên_tục_symptom'})
+MERGE (o2:disease {id: 'xoắn_u_nang_disease'})
+MERGE (o1)-[r30:isSymptomOf]->(o2)
+SET r30.text = 'Khi u bị xoắn người bệnh đau bụng dữ dội, liên tục, buồn nôn, nôn, đôi khi sẽ choáng vì đau.'
+
+MERGE (o1:symptom {id: 'buồn_nôn_symptom'})
+MERGE (o2:disease {id: 'xoắn_u_nang_disease'})
+MERGE (o1)-[r31:isSymptomOf]->(o2)
+SET r31.text = 'Khi u bị xoắn người bệnh đau bụng dữ dội, liên tục, buồn nôn, nôn, đôi khi sẽ choáng vì đau.'
+
+MERGE (o1:symptom {id: 'nôn_symptom'})
+MERGE (o2:disease {id: 'xoắn_u_nang_disease'})
+MERGE (o1)-[r32:isSymptomOf]->(o2)
+SET r32.text = 'Khi u bị xoắn người bệnh đau bụng dữ dội, liên tục, buồn nôn, nôn, đôi khi sẽ choáng vì đau.'
+
+MERGE (o1:symptom {id: 'choáng_symptom'})
+MERGE (o2:disease {id: 'xoắn_u_nang_disease'})
+MERGE (o1)-[r33:isSymptomOf]->(o2)
+SET r33.text = 'Khi u bị xoắn người bệnh đau bụng dữ dội, liên tục, buồn nôn, nôn, đôi khi sẽ choáng vì đau.'
+
+MERGE (o1:symptom {id: 'bụng_chướng_symptom'})
+MERGE (o2:disease {id: 'xoắn_u_nang_disease'})
+MERGE (o1)-[r34:isSymptomOf]->(o2)
+SET r34.text = 'Khám thấy bụng chướng ấn đau hạ vị, có phản ứng thành bụng.'
+
+MERGE (o1:symptom {id: 'ấn_đau_hạ_vị_symptom'})
+MERGE (o2:disease {id: 'xoắn_u_nang_disease'})
+MERGE (o1)-[r35:isSymptomOf]->(o2)
+SET r35.text = 'Khám thấy bụng chướng ấn đau hạ vị, có phản ứng thành bụng.'
+
+MERGE (o1:symptom {id: 'phản_ứng_thành_bụng_symptom'})
+MERGE (o2:disease {id: 'xoắn_u_nang_disease'})
+MERGE (o1)-[r36:isSymptomOf]->(o2)
+SET r36.text = 'Khám thấy bụng chướng ấn đau hạ vị, có phản ứng thành bụng.'
+
+MERGE (o1:symptom {id: 'khối_u_căng_to_symptom'})
+MERGE (o2:disease {id: 'xoắn_u_nang_disease'})
+MERGE (o1)-[r37:isSymptomOf]->(o2)
+SET r37.text = 'Thăm âm đạo thấy khối u căng to, ấn đau nhói.'
+
+MERGE (o1:symptom {id: 'ấn_đau_nhói_symptom'})
+MERGE (o2:disease {id: 'xoắn_u_nang_disease'})
+MERGE (o1)-[r38:isSymptomOf]->(o2)
+SET r38.text = 'Thăm âm đạo thấy khối u căng to, ấn đau nhói.'
+
+MERGE (o1:disease {id: 'vỡ_u_nang_buồng_trứng_disease'})
+MERGE (o2:disease {id: 'u_nang_buồng_trứng_disease'})
+MERGE (o1)-[r39:isSymptomOf]->(o2)
+SET r39.text = 'Vỡ u nang buồng trứng: Khi áp lực dịch bên trong khối u quá lớn có thể gây vỡ u nang.'
+
+MERGE (o1:disease {id: 'vỡ_u_nang_buồng_trứng_disease'})
+MERGE (o2:cause {id: 'áp_lực_dịch_bên_trong_khối_u_quá_lớn_cause'})
+MERGE (o1)-[r40:causedBy]->(o2)
+SET r40.text = 'Vỡ u nang buồng trứng: Khi áp lực dịch bên trong khối u quá lớn có thể gây vỡ u nang.'
+
+MERGE (o1:symptom {id: 'đau_bụng_đột_ngột_symptom'})
+MERGE (o2:disease {id: 'vỡ_u_nang_buồng_trứng_disease'})
+MERGE (o1)-[r41:isSymptomOf]->(o2)
+SET r41.text = 'Lúc này, người bệnh có thể đau bụng đột ngột và liên tục.'
+
+MERGE (o1:symptom {id: 'liên_tục_symptom'})
+MERGE (o2:disease {id: 'vỡ_u_nang_buồng_trứng_disease'})
+MERGE (o1)-[r42:isSymptomOf]->(o2)
+SET r42.text = 'Lúc này, người bệnh có thể đau bụng đột ngột và liên tục.'
+
+MERGE (o1:symptom {id: 'chảy_máu_trong_ổ_bụng_symptom'})
+MERGE (o2:disease {id: 'vỡ_u_nang_buồng_trứng_disease'})
+MERGE (o1)-[r43:isSymptomOf]->(o2)
+SET r43.text = 'Một số trường hợp vỡ nang có thể gây chảy máu trong ổ bụng, người bệnh choáng và ngất xỉu.'
+
+MERGE (o1:symptom {id: 'choáng_symptom'})
+MERGE (o2:disease {id: 'vỡ_u_nang_buồng_trứng_disease'})
+MERGE (o1)-[r44:isSymptomOf]->(o2)
+SET r44.text = 'Một số trường hợp vỡ nang có thể gây chảy máu trong ổ bụng, người bệnh choáng và ngất xỉu.'
+
+MERGE (o1:symptom {id: 'ngất_xỉu_symptom'})
+MERGE (o2:disease {id: 'vỡ_u_nang_buồng_trứng_disease'})
+MERGE (o1)-[r45:isSymptomOf]->(o2)
+SET r45.text = 'Một số trường hợp vỡ nang có thể gây chảy máu trong ổ bụng, người bệnh choáng và ngất xỉu.'
+
+MERGE (o1:symptom {id: 'hội_chứng_nhiễm_khuẩn_symptom'})
+MERGE (o2:disease {id: 'vỡ_u_nang_buồng_trứng_disease'})
+MERGE (o1)-[r46:isSymptomOf]->(o2)
+SET r46.text = 'Sau khi nang vỡ, người bệnh có thể có hội chứng nhiễm khuẩn, có phản ứng ở phúc mạc, khám âm đạo chạm u dính, ấn thấy đau.'
+
+MERGE (o1:symptom {id: 'phản_ứng_ở_phúc_mạc_symptom'})
+MERGE (o2:disease {id: 'vỡ_u_nang_buồng_trứng_disease'})
+MERGE (o1)-[r47:isSymptomOf]->(o2)
+SET r47.text = 'Sau khi nang vỡ, người bệnh có thể có hội chứng nhiễm khuẩn, có phản ứng ở phúc mạc, khám âm đạo chạm u dính, ấn thấy đau.'
+
+MERGE (o1:symptom {id: 'khám_âm_đạo_chạm_u_dính_symptom'})
+MERGE (o2:disease {id: 'vỡ_u_nang_buồng_trứng_disease'})
+MERGE (o1)-[r48:isSymptomOf]->(o2)
+SET r48.text = 'Sau khi nang vỡ, người bệnh có thể có hội chứng nhiễm khuẩn, có phản ứng ở phúc mạc, khám âm đạo chạm u dính, ấn thấy đau.'
+
+MERGE (o1:symptom {id: 'ấn_thấy_đau_symptom'})
+MERGE (o2:disease {id: 'vỡ_u_nang_buồng_trứng_disease'})
+MERGE (o1)-[r49:isSymptomOf]->(o2)
+SET r49.text = 'Sau khi nang vỡ, người bệnh có thể có hội chứng nhiễm khuẩn, có phản ứng ở phúc mạc, khám âm đạo chạm u dính, ấn thấy đau.'
+
+MERGE (o1:symptom {id: 'đe_dọa_đến_tính_mạng_symptom'})
+MERGE (o2:disease {id: 'vỡ_u_nang_buồng_trứng_disease'})
+MERGE (o1)-[r50:isSymptomOf]->(o2)
+SET r50.text = 'Nếu không được phát hiện sớm và điều trị kịp thời, người bệnh có thể bị đe dọa đến tính mạng.'
+
+MERGE (o1:disease {id: 'chèn_ép_nội_tạng_disease'})
+MERGE (o2:disease {id: 'u_nang_buồng_trứng_disease'})
+MERGE (o1)-[r51:isSymptomOf]->(o2)
+SET r51.text = 'Chèn ép nội tạng: Đây là biến chứng xuất hiện muộn khi khối u lâu ngày đã phát triển lớn.'
+
+MERGE (o1:disease {id: 'chèn_ép_nội_tạng_disease'})
+MERGE (o2:cause {id: 'khối_u_lâu_ngày_đã_phát_triển_lớn_cause'})
+MERGE (o1)-[r52:causedBy]->(o2)
+SET r52.text = 'Chèn ép nội tạng: Đây là biến chứng xuất hiện muộn khi khối u lâu ngày đã phát triển lớn.'
+
+MERGE (o1:symptom {id: 'đau_buốt_khi_tiểu_tiện_symptom'})
+MERGE (o2:disease {id: 'chèn_ép_nội_tạng_disease'})
+MERGE (o1)-[r53:isSymptomOf]->(o2)
+SET r53.text = 'Các khối u chèn ép bàng quang gây đau buốt khi tiểu tiện, chèn ép trực tràng dẫn đến táo bón, chèn ép niệu quản làm ứ nước bể thận, thậm chí chèn ép tĩnh mạch chủ dưới dẫn đến tuần hoàn bàng hệ, phù hai chi dưới, cổ trướng.'
+
+MERGE (o1:symptom {id: 'táo_bón_symptom'})
+MERGE (o2:disease {id: 'chèn_ép_nội_tạng_disease'})
+MERGE (o1)-[r54:isSymptomOf]->(o2)
+SET r54.text = 'Các khối u chèn ép bàng quang gây đau buốt khi tiểu tiện, chèn ép trực tràng dẫn đến táo bón, chèn ép niệu quản làm ứ nước bể thận, thậm chí chèn ép tĩnh mạch chủ dưới dẫn đến tuần hoàn bàng hệ, phù hai chi dưới, cổ trướng.'
+
+MERGE (o1:symptom {id: 'ứ_nước_bể_thận_symptom'})
+MERGE (o2:disease {id: 'chèn_ép_nội_tạng_disease'})
+MERGE (o1)-[r55:isSymptomOf]->(o2)
+SET r55.text = 'Các khối u chèn ép bàng quang gây đau buốt khi tiểu tiện, chèn ép trực tràng dẫn đến táo bón, chèn ép niệu quản làm ứ nước bể thận, thậm chí chèn ép tĩnh mạch chủ dưới dẫn đến tuần hoàn bàng hệ, phù hai chi dưới, cổ trướng.'
+
+MERGE (o1:symptom {id: 'tuần_hoàn_bàng_hệ_symptom'})
+MERGE (o2:disease {id: 'chèn_ép_nội_tạng_disease'})
+MERGE (o1)-[r56:isSymptomOf]->(o2)
+SET r56.text = 'Các khối u chèn ép bàng quang gây đau buốt khi tiểu tiện, chèn ép trực tràng dẫn đến táo bón, chèn ép niệu quản làm ứ nước bể thận, thậm chí chèn ép tĩnh mạch chủ dưới dẫn đến tuần hoàn bàng hệ, phù hai chi dưới, cổ trướng.'
+
+MERGE (o1:symptom {id: 'phù_hai_chi_dưới_symptom'})
+MERGE (o2:disease {id: 'chèn_ép_nội_tạng_disease'})
+MERGE (o1)-[r57:isSymptomOf]->(o2)
+SET r57.text = 'Các khối u chèn ép bàng quang gây đau buốt khi tiểu tiện, chèn ép trực tràng dẫn đến táo bón, chèn ép niệu quản làm ứ nước bể thận, thậm chí chèn ép tĩnh mạch chủ dưới dẫn đến tuần hoàn bàng hệ, phù hai chi dưới, cổ trướng.'
+
+MERGE (o1:symptom {id: 'cổ_trướng_symptom'})
+MERGE (o2:disease {id: 'chèn_ép_nội_tạng_disease'})
+MERGE (o1)-[r58:isSymptomOf]->(o2)
+SET r58.text = 'Các khối u chèn ép bàng quang gây đau buốt khi tiểu tiện, chèn ép trực tràng dẫn đến táo bón, chèn ép niệu quản làm ứ nước bể thận, thậm chí chèn ép tĩnh mạch chủ dưới dẫn đến tuần hoàn bàng hệ, phù hai chi dưới, cổ trướng.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:organ {id: 'bàng_quang_organ'})
+MERGE (o1)-[r59:affects]->(o2)
+SET r59.text = 'Các khối u chèn ép bàng quang gây đau buốt khi tiểu tiện, chèn ép trực tràng dẫn đến táo bón, chèn ép niệu quản làm ứ nước bể thận, thậm chí chèn ép tĩnh mạch chủ dưới dẫn đến tuần hoàn bàng hệ, phù hai chi dưới, cổ trướng.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:organ {id: 'trực_tràng_organ'})
+MERGE (o1)-[r60:affects]->(o2)
+SET r60.text = 'Các khối u chèn ép bàng quang gây đau buốt khi tiểu tiện, chèn ép trực tràng dẫn đến táo bón, chèn ép niệu quản làm ứ nước bể thận, thậm chí chèn ép tĩnh mạch chủ dưới dẫn đến tuần hoàn bàng hệ, phù hai chi dưới, cổ trướng.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:organ {id: 'niệu_quản_organ'})
+MERGE (o1)-[r61:affects]->(o2)
+SET r61.text = 'Các khối u chèn ép bàng quang gây đau buốt khi tiểu tiện, chèn ép trực tràng dẫn đến táo bón, chèn ép niệu quản làm ứ nước bể thận, thậm chí chèn ép tĩnh mạch chủ dưới dẫn đến tuần hoàn bàng hệ, phù hai chi dưới, cổ trướng.'
+
+MERGE (o1:disease {id: 'chẩn_đoán_u_nang_buồng_trứng_disease'})
+MERGE (o2:test {id: 'kiểm_tra_lâm_sàng_và_cận_lâm_sàng_test'})
+MERGE (o1)-[r62:diagnosedBy]->(o2)
+SET r62.text = 'Bác sĩ Hồ Thị Khánh Quyên cho biết, việc chẩn đoán u nang buồng trứng luôn kết hợp đồng thời kiểm tra lâm sàng và cận lâm sàng để có chẩn đoán chính xác nhất, tránh bỏ sót các dấu hiệu nhỏ ảnh hưởng đến kết quả.'
+
+MERGE (o1:disease {id: 'chẩn_đoán_u_nang_buồng_trứng_disease'})
+MERGE (o2:symptom {id: 'dấu_hiệu_nhỏ_symptom'})
+MERGE (o1)-[r63:relatedTo]->(o2)
+SET r63.text = 'Bác sĩ Hồ Thị Khánh Quyên cho biết, việc chẩn đoán u nang buồng trứng luôn kết hợp đồng thời kiểm tra lâm sàng và cận lâm sàng để có chẩn đoán chính xác nhất, tránh bỏ sót các dấu hiệu nhỏ ảnh hưởng đến kết quả.'
+
+MERGE (o1:symptom {id: 'rối_loạn_chu_kỳ_kinh_nguyệt_symptom'})
+MERGE (o2:disease {id: 'u_nang_buồng_trứng_disease'})
+MERGE (o1)-[r64:isSymptomOf]->(o2)
+SET r64.text = 'Bác sĩ có thể khai thác một số thông tin của người bệnh làm cơ sở chẩn đoán như:  Rối loạn chu kỳ kinh nguyệt; Triệu chứng đau nhức, khó chịu ở vùng chậu; Đau khi quan hệ tình dục; Tiểu khó, bí tiểu, táo bón.'
+
+MERGE (o1:symptom {id: 'triệu_chứng_đau_nhức__khó_chịu_ở_vùng_chậu_symptom'})
+MERGE (o2:disease {id: 'u_nang_buồng_trứng_disease'})
+MERGE (o1)-[r65:isSymptomOf]->(o2)
+SET r65.text = 'Bác sĩ có thể khai thác một số thông tin của người bệnh làm cơ sở chẩn đoán như:  Rối loạn chu kỳ kinh nguyệt; Triệu chứng đau nhức, khó chịu ở vùng chậu; Đau khi quan hệ tình dục; Tiểu khó, bí tiểu, táo bón.'
+
+MERGE (o1:symptom {id: 'đau_khi_quan_hệ_tình_dục_symptom'})
+MERGE (o2:disease {id: 'u_nang_buồng_trứng_disease'})
+MERGE (o1)-[r66:isSymptomOf]->(o2)
+SET r66.text = 'Bác sĩ có thể khai thác một số thông tin của người bệnh làm cơ sở chẩn đoán như:  Rối loạn chu kỳ kinh nguyệt; Triệu chứng đau nhức, khó chịu ở vùng chậu; Đau khi quan hệ tình dục; Tiểu khó, bí tiểu, táo bón.'
+
+MERGE (o1:symptom {id: 'tiểu_khó__bí_tiểu__táo_bón_symptom'})
+MERGE (o2:disease {id: 'u_nang_buồng_trứng_disease'})
+MERGE (o1)-[r67:isSymptomOf]->(o2)
+SET r67.text = 'Bác sĩ có thể khai thác một số thông tin của người bệnh làm cơ sở chẩn đoán như:  Rối loạn chu kỳ kinh nguyệt; Triệu chứng đau nhức, khó chịu ở vùng chậu; Đau khi quan hệ tình dục; Tiểu khó, bí tiểu, táo bón.'
+
+MERGE (o1:test {id: 'kiểm_tra_triệu_chứng_đau_ở_vùng_bụng_dưới__vùng_chậu_test'})
+MERGE (o2:disease {id: 'u_nang_buồng_trứng_disease'})
+MERGE (o1)-[r68:diagnosedBy]->(o2)
+SET r68.text = 'Kiểm tra triệu chứng đau ở vùng bụng dưới, vùng chậu'
+
+MERGE (o1:test {id: 'siêu_âm_test'})
+MERGE (o2:disease {id: 'u_nang_buồng_trứng_disease'})
+MERGE (o1)-[r69:diagnosedBy]->(o2)
+SET r69.text = 'Các phương pháp chẩn đoán cận lâm sàng gồm:  Siêu âm: Đây là phương pháp chẩn đoán hình ảnh không xâm lấn, giá thành rẻ, cho biết được vị trí u, hình dạng, kích thước khối u, tính chất bên trong u. Hình ảnh trong siêu âm có thể gợi ý u lành hay u ác.'
+
+MERGE (o1:test {id: 'siêu_âm_test'})
+MERGE (o2:symptom {id: 'vị_trí_u__hình_dạng__kích_thước_khối_u__tính_chất_bên_trong_u_symptom'})
+MERGE (o1)-[r70:relatedTo]->(o2)
+SET r70.text = 'Các phương pháp chẩn đoán cận lâm sàng gồm:  Siêu âm: Đây là phương pháp chẩn đoán hình ảnh không xâm lấn, giá thành rẻ, cho biết được vị trí u, hình dạng, kích thước khối u, tính chất bên trong u. Hình ảnh trong siêu âm có thể gợi ý u lành hay u ác.'
+
+MERGE (o1:test {id: 'siêu_âm_test'})
+MERGE (o2:disease {id: 'u_lành_hay_u_ác_disease'})
+MERGE (o1)-[r71:relatedTo]->(o2)
+SET r71.text = 'Các phương pháp chẩn đoán cận lâm sàng gồm:  Siêu âm: Đây là phương pháp chẩn đoán hình ảnh không xâm lấn, giá thành rẻ, cho biết được vị trí u, hình dạng, kích thước khối u, tính chất bên trong u. Hình ảnh trong siêu âm có thể gợi ý u lành hay u ác.'
+
+MERGE (o1:test {id: 'chụp_ct_scan_hoặc_mri_test'})
+MERGE (o2:disease {id: 'u_nang_buồng_trứng_disease'})
+MERGE (o1)-[r72:diagnosedBy]->(o2)
+SET r72.text = 'Chụp CT scan hoặc MRI: Nếu u to nghi ngờ chụp MRI giúp thấy rõ hơn kết quả siêu âm, còn kết quả CT scan hỗ trợ chẩn đoán chính xác sự lan rộng hay di căn của khối u.'
+
+MERGE (o1:test {id: 'chụp_mri_test'})
+MERGE (o2:test {id: 'kết_quả_siêu_âm_test'})
+MERGE (o1)-[r73:relatedTo]->(o2)
+SET r73.text = 'Chụp CT scan hoặc MRI: Nếu u to nghi ngờ chụp MRI giúp thấy rõ hơn kết quả siêu âm, còn kết quả CT scan hỗ trợ chẩn đoán chính xác sự lan rộng hay di căn của khối u.'
+
+MERGE (o1:test {id: 'chụp_ct_scan_test'})
+MERGE (o2:symptom {id: 'sự_lan_rộng_hay_di_căn_của_khối_u_symptom'})
+MERGE (o1)-[r74:relatedTo]->(o2)
+SET r74.text = 'Chụp CT scan hoặc MRI: Nếu u to nghi ngờ chụp MRI giúp thấy rõ hơn kết quả siêu âm, còn kết quả CT scan hỗ trợ chẩn đoán chính xác sự lan rộng hay di căn của khối u.'
+
+MERGE (o1:test {id: 'xét_nghiệm_tìm_các_dấu_ấn_bướu_test'})
+MERGE (o2:disease {id: 'u_nang_buồng_trứng_disease'})
+MERGE (o1)-[r75:diagnosedBy]->(o2)
+SET r75.text = 'Xét nghiệm tìm các dấu ấn bướu có thể gợi ý tính ác tính của u như: CA 125, AFP, beta HCG, HE4…'
+
+MERGE (o1:test {id: 'xét_nghiệm_tìm_các_dấu_ấn_bướu_test'})
+MERGE (o2:symptom {id: 'tính_ác_tính_của_u_symptom'})
+MERGE (o1)-[r76:relatedTo]->(o2)
+SET r76.text = 'Xét nghiệm tìm các dấu ấn bướu có thể gợi ý tính ác tính của u như: CA 125, AFP, beta HCG, HE4…'
+
+MERGE (o1:disease {id: 'u_nang_cơ_năng_disease'})
+MERGE (o2:test {id: 'siêu_âm_lặp_lại_sau_hành_kinh_xong_test'})
+MERGE (o1)-[r77:treatedBy]->(o2)
+SET r77.text = 'Đối với u nang cơ năng: Không cần điều trị, khối u thường biến mất sau vài chu kỳ kinh nguyệt. Người bệnh được theo dõi bằng cách siêu âm lặp lại sau hành kinh xong. Người bệnh có thể kết hợp dùng thuốc tránh thai và các biện pháp được hướng dẫn để điều trị u nang buồng trứng cơ năng.'
+
+MERGE (o1:disease {id: 'u_nang_cơ_năng_disease'})
+MERGE (o2:treatment {id: 'thuốc_tránh_thai_treatment'})
+MERGE (o1)-[r78:treatedBy]->(o2)
+SET r78.text = 'Đối với u nang cơ năng: Không cần điều trị, khối u thường biến mất sau vài chu kỳ kinh nguyệt. Người bệnh được theo dõi bằng cách siêu âm lặp lại sau hành kinh xong. Người bệnh có thể kết hợp dùng thuốc tránh thai và các biện pháp được hướng dẫn để điều trị u nang buồng trứng cơ năng.'
+
+MERGE (o1:disease {id: 'u_nang_cơ_năng_disease'})
+MERGE (o2:symptom {id: 'biến_mất_sau_vài_chu_kỳ_kinh_nguyệt_symptom'})
+MERGE (o1)-[r79:relatedTo]->(o2)
+SET r79.text = 'Đối với u nang cơ năng: Không cần điều trị, khối u thường biến mất sau vài chu kỳ kinh nguyệt. Người bệnh được theo dõi bằng cách siêu âm lặp lại sau hành kinh xong. Người bệnh có thể kết hợp dùng thuốc tránh thai và các biện pháp được hướng dẫn để điều trị u nang buồng trứng cơ năng.'
+
+MERGE (o1:disease {id: 'u_nang_cơ_năng_disease'})
+MERGE (o2:symptom {id: 'xoắn_nang__vỡ_nang_gây_mất_máu_symptom'})
+MERGE (o1)-[r80:relatedTo]->(o2)
+SET r80.text = 'Tuy nhiên, một số trường hợp u nang cơ năng gây biến chứng nguy hiểm như xoắn nang, vỡ nang gây mất máu, cần phải cấp cứu và xử trí kịp thời.'
+
+MERGE (o1:disease {id: 'u_thực_thể_disease'})
+MERGE (o2:test {id: 'phát_hiện_sớm_test'})
+MERGE (o1)-[r81:treatedBy]->(o2)
+SET r81.text = 'Đối với u thực thể: Cần được phát hiện sớm và điều trị kịp thời để tránh các biến chứng nguy hiểm.'
+
+MERGE (o1:disease {id: 'u_thực_thể_disease'})
+MERGE (o2:treatment {id: 'điều_trị_kịp_thời_treatment'})
+MERGE (o1)-[r82:treatedBy]->(o2)
+SET r82.text = 'Đối với u thực thể: Cần được phát hiện sớm và điều trị kịp thời để tránh các biến chứng nguy hiểm.'
+
+MERGE (o1:disease {id: 'u_thực_thể_disease'})
+MERGE (o2:symptom {id: 'biến_chứng_nguy_hiểm_symptom'})
+MERGE (o1)-[r83:relatedTo]->(o2)
+SET r83.text = 'Đối với u thực thể: Cần được phát hiện sớm và điều trị kịp thời để tránh các biến chứng nguy hiểm.'
+
+MERGE (o1:disease {id: 'u_thực_thể_disease'})
+MERGE (o2:treatment {id: 'phẫu_thuật_cắt_bỏ_toàn_bộ_khối_u_và_buồng_trứng_treatment'})
+MERGE (o1)-[r84:treatedBy]->(o2)
+SET r84.text = 'Có nhiều phương pháp điều trị khác nhau, tùy theo tuổi và kích thước khối u, nguyện vọng mang thai và sinh con của người phụ nữ, bác sĩ sẽ tư vấn phương pháp phù hợp, có thể phẫu thuật cắt bỏ toàn bộ khối u và buồng trứng, hoặc chỉ bóc tách khối u lành khỏi buồng trứng.'
+
+MERGE (o1:disease {id: 'u_thực_thể_disease'})
+MERGE (o2:treatment {id: 'bóc_tách_khối_u_lành_khỏi_buồng_trứng_treatment'})
+MERGE (o1)-[r85:treatedBy]->(o2)
+SET r85.text = 'Có nhiều phương pháp điều trị khác nhau, tùy theo tuổi và kích thước khối u, nguyện vọng mang thai và sinh con của người phụ nữ, bác sĩ sẽ tư vấn phương pháp phù hợp, có thể phẫu thuật cắt bỏ toàn bộ khối u và buồng trứng, hoặc chỉ bóc tách khối u lành khỏi buồng trứng.'
+
+MERGE (o1:treatment {id: 'bóc_tách_khối_u_lành_khỏi_buồng_trứng_treatment'})
+MERGE (o2:disease {id: 'tái_phát_bệnh_u_nang_buồng_trứng_disease'})
+MERGE (o1)-[r86:relatedTo]->(o2)
+SET r86.text = 'Tuy nhiên, phương pháp bóc tách này vẫn có nguy cơ tái phát bệnh u nang buồng trứng trong tương lai đặc biệt là nang lạc nội mạc.'
+
+MERGE (o1:disease {id: 'u_nang_buồng_trứng_disease'})
+MERGE (o2:treatment {id: 'mổ_u_nang_buồng_trứng_treatment'})
+MERGE (o1)-[r87:treatedBy]->(o2)
+SET r87.text = 'Tùy theo kích thước u nang và mong muốn sinh con của phụ nữ mà có chỉ định điều trị phù hợp Bác sĩ Hồ Thị Khánh Quyên chia sẻ một số phương pháp mổ u nang buồng trứng hiện được áp dụng tại Trung tâm Sản Phụ khoa, Bệnh viện Đa khoa Tâm Anh gồm:'
+
+MERGE (o1:treatment {id: 'mổ_u_nang_buồng_trứng_treatment'})
+MERGE (o2:symptom {id: 'ít_gây_đau_và_thời_gian_nằm_viện_ít__thời_gian_phục_hồi_nhanh_symptom'})
+MERGE (o1)-[r88:relatedTo]->(o2)
+SET r88.text = 'Đây là phương pháp được tin dùng hiện nay trong phẫu thuật điều trị u nang buồng trứng bởi ít gây đau và thời gian nằm viện ít, thời gian phục hồi nhanh.'
+
+MERGE (o1:treatment {id: 'mổ_u_nang_buồng_trứng_treatment'})
+MERGE (o2:disease {id: 'u_buồng_trứng_không_nghi_ngờ_ác_tính_disease'})
+MERGE (o1)-[r89:relatedTo]->(o2)
+SET r89.text = 'Phương pháp này được chỉ định trong các trường hợp:  U buồng trứng không nghi ngờ ác tính. U buồng trứng không quá to, không quá dính. Ung thư vú có chỉ định cắt buồng trứng.'
+
+MERGE (o1:treatment {id: 'mổ_u_nang_buồng_trứng_treatment'})
+MERGE (o2:symptom {id: 'u_buồng_trứng_không_quá_to__không_quá_dính_symptom'})
+MERGE (o1)-[r90:relatedTo]->(o2)
+SET r90.text = 'Phương pháp này được chỉ định trong các trường hợp:  U buồng trứng không nghi ngờ ác tính. U buồng trứng không quá to, không quá dính. Ung thư vú có chỉ định cắt buồng trứng.'
+
+MERGE (o1:treatment {id: 'mổ_u_nang_buồng_trứng_treatment'})
+MERGE (o2:disease {id: 'ung_thư_vú_có_chỉ_định_cắt_buồng_trứng_disease'})
+MERGE (o1)-[r91:relatedTo]->(o2)
+SET r91.text = 'Phương pháp này được chỉ định trong các trường hợp:  U buồng trứng không nghi ngờ ác tính. U buồng trứng không quá to, không quá dính. Ung thư vú có chỉ định cắt buồng trứng.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_mở_bụng_treatment'})
+MERGE (o2:disease {id: 'u_nang_buồng_trứng_disease'})
+MERGE (o1)-[r92:treatedBy]->(o2)
+SET r92.text = 'Với những khối u nang có kích thước lớn, nghi ngờ ung thư sẽ được chỉ định thực hiện cắt bỏ thông qua phương pháp phẫu thuật mở bụng.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_mở_bụng_treatment'})
+MERGE (o2:symptom {id: 'khối_u_nang_có_kích_thước_lớn__nghi_ngờ_ung_thư_symptom'})
+MERGE (o1)-[r93:relatedTo]->(o2)
+SET r93.text = 'Với những khối u nang có kích thước lớn, nghi ngờ ung thư sẽ được chỉ định thực hiện cắt bỏ thông qua phương pháp phẫu thuật mở bụng.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_treatment'})
+MERGE (o2:test {id: 'kiểm_tra_mô_bệnh_học_của_u_test'})
+MERGE (o1)-[r94:relatedTo]->(o2)
+SET r94.text = 'Sau khi phẫu thuật, khối u buồng trứng sẽ được đem đi giải phẫu nhằm kiểm tra mô bệnh học của u.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_treatment'})
+MERGE (o2:disease {id: 'khối_u_buồng_trứng_disease'})
+MERGE (o1)-[r95:relatedTo]->(o2)
+SET r95.text = 'Sau khi phẫu thuật, khối u buồng trứng sẽ được đem đi giải phẫu nhằm kiểm tra mô bệnh học của u.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_mở_bụng_treatment'})
+MERGE (o2:symptom {id: 'mất_nhiều_thời_gian_để_hồi_phục_symptom'})
+MERGE (o1)-[r96:relatedTo]->(o2)
+SET r96.text = 'Tuy nhiên, với phương pháp này người bệnh sẽ mất nhiều thời gian để hồi phục.'
+
+MERGE (o1:disease {id: 'khối_u_buồng_trứng_disease'})
+MERGE (o2:lifestyle {id: 'không_thể_dự_phòng_lifestyle'})
+MERGE (o1)-[r97:preventedBy]->(o2)
+SET r97.text = 'Không thể dự phòng được khối u buồng trứng.'
+
+MERGE (o1:treatment {id: 'thuốc_ngừa_thai_treatment'})
+MERGE (o2:disease {id: 'ung_thư_buồng_trứng_disease'})
+MERGE (o1)-[r98:preventedBy]->(o2)
+SET r98.text = 'Sử dụng thuốc ngừa thai, cho con bú trên 6 tháng được ghi nhận có thể giảm nguy cơ ung thư buồng trứng.'
+
+MERGE (o1:lifestyle {id: 'cho_con_bú_trên_6_tháng_lifestyle'})
+MERGE (o2:disease {id: 'ung_thư_buồng_trứng_disease'})
+MERGE (o1)-[r99:preventedBy]->(o2)
+SET r99.text = 'Sử dụng thuốc ngừa thai, cho con bú trên 6 tháng được ghi nhận có thể giảm nguy cơ ung thư buồng trứng.'
+
+MERGE (o1:test {id: 'thăm_khám_phụ_khoa_định_kỳ_test'})
+MERGE (o2:disease {id: 'u_nang_buồng_trứng_disease'})
+MERGE (o1)-[r100:diagnosedBy]->(o2)
+SET r100.text = 'Thăm khám phụ khoa định kỳ: Việc theo dõi, thăm khám sức khỏe phụ khoa định kỳ 6 tháng/lần chính là giải pháp tối ưu giúp phát hiện sớm các dấu hiệu bất thường, từ đó có chẩn đoán chính xác và can thiệp điều trị ngay từ đầu, mang lại hiệu quả điều trị cao, cũng như tránh được những biến chứng nguy hiểm xảy ra.'
+
+MERGE (o1:test {id: 'thăm_khám_phụ_khoa_định_kỳ_test'})
+MERGE (o2:symptom {id: 'dấu_hiệu_bất_thường_symptom'})
+MERGE (o1)-[r101:relatedTo]->(o2)
+SET r101.text = 'Thăm khám phụ khoa định kỳ: Việc theo dõi, thăm khám sức khỏe phụ khoa định kỳ 6 tháng/lần chính là giải pháp tối ưu giúp phát hiện sớm các dấu hiệu bất thường, từ đó có chẩn đoán chính xác và can thiệp điều trị ngay từ đầu, mang lại hiệu quả điều trị cao, cũng như tránh được những biến chứng nguy hiểm xảy ra.'
+
+MERGE (o1:test {id: 'thăm_khám_phụ_khoa_định_kỳ_test'})
+MERGE (o2:symptom {id: 'biến_chứng_nguy_hiểm_symptom'})
+MERGE (o1)-[r102:relatedTo]->(o2)
+SET r102.text = 'Thăm khám phụ khoa định kỳ: Việc theo dõi, thăm khám sức khỏe phụ khoa định kỳ 6 tháng/lần chính là giải pháp tối ưu giúp phát hiện sớm các dấu hiệu bất thường, từ đó có chẩn đoán chính xác và can thiệp điều trị ngay từ đầu, mang lại hiệu quả điều trị cao, cũng như tránh được những biến chứng nguy hiểm xảy ra.'
+
+MERGE (o1:organ {id: 'trung_tâm_sản_phụ_khoa__bệnh_viện_đa_khoa_tâm_anh_organ'})
+MERGE (o2:organ {id: 'bệnh_viện_đa_khoa_tâm_anh_organ'})
+MERGE (o1)-[r103:locatedIn]->(o2)
+SET r103.text = 'Được đầu tư xây dựng cơ sở vật chất khang trang; quy tụ đội ngũ chuyên gia, bác sĩ đầu ngành giỏi chuyên môn, giàu kinh nghiệm; trang bị hệ thống máy móc tối tân như máy siêu âm 2D, 3D, 4D, siêu âm màu Doppler, siêu âm Voluson E10 thế hệ mới nhất… Trung tâm Sản Phụ khoa, Bệnh viện Đa khoa Tâm Anh triển khai đa dạng các gói thăm khám và chăm sóc sức khỏe toàn diện cho phụ nữ.'
+
+MERGE (o1:organ {id: 'trung_tâm_sản_phụ_khoa__bệnh_viện_đa_khoa_tâm_anh_organ'})
+MERGE (o2:test {id: 'máy_siêu_âm_2d__3d__4d__siêu_âm_màu_doppler__siêu_âm_voluson_e10_thế_hệ_mới_nhất_test'})
+MERGE (o1)-[r104:relatedTo]->(o2)
+SET r104.text = 'Được đầu tư xây dựng cơ sở vật chất khang trang; quy tụ đội ngũ chuyên gia, bác sĩ đầu ngành giỏi chuyên môn, giàu kinh nghiệm; trang bị hệ thống máy móc tối tân như máy siêu âm 2D, 3D, 4D, siêu âm màu Doppler, siêu âm Voluson E10 thế hệ mới nhất… Trung tâm Sản Phụ khoa, Bệnh viện Đa khoa Tâm Anh triển khai đa dạng các gói thăm khám và chăm sóc sức khỏe toàn diện cho phụ nữ.'
+
+MERGE (o1:disease {id: 'u_nang_buồng_trứng_disease'})
+MERGE (o2:disease {id: 'bệnh_lý_phổ_biến_disease'})
+MERGE (o1)-[r105:isSymptomOf]->(o2)
+SET r105.text = 'U nang buồng trứng
+là bệnh lý phổ biến, lành tính nhưng cũng tiềm ẩn nhiều nguy cơ.'
+
+MERGE (o1:disease {id: 'u_nang_buồng_trứng_disease'})
+MERGE (o2:disease {id: 'bệnh_lý_lành_tính_disease'})
+MERGE (o1)-[r106:isSymptomOf]->(o2)
+SET r106.text = 'U nang buồng trứng
+là bệnh lý phổ biến, lành tính nhưng cũng tiềm ẩn nhiều nguy cơ.'
+
+MERGE (o1:disease {id: 'u_nang_buồng_trứng_disease'})
+MERGE (o2:cause {id: 'nguy_cơ_cause'})
+MERGE (o1)-[r107:associatedWith]->(o2)
+SET r107.text = 'U nang buồng trứng
+là bệnh lý phổ biến, lành tính nhưng cũng tiềm ẩn nhiều nguy cơ.'
+
+MERGE (o1:disease {id: 'u_nang_buồng_trứng_disease'})
+MERGE (o2:organ {id: 'nữ_giới_organ'})
+MERGE (o1)-[r108:relatedTo]->(o2)
+SET r108.text = 'Đây là bệnh lý phụ khoa thường gặp ở nữ giới, có thể xảy ra ở mọi đối tượng và độ tuổi, từ bé gái trước dậy thì, phụ nữ mang thai đến phụ nữ mãn kinh… đều có nguy cơ mắc bệnh.'
+
+MERGE (o1:disease {id: 'u_nang_buồng_trứng_disease'})
+MERGE (o2:organ {id: 'bé_gái_trước_dậy_thì_organ'})
+MERGE (o1)-[r109:relatedTo]->(o2)
+SET r109.text = 'Đây là bệnh lý phụ khoa thường gặp ở nữ giới, có thể xảy ra ở mọi đối tượng và độ tuổi, từ bé gái trước dậy thì, phụ nữ mang thai đến phụ nữ mãn kinh… đều có nguy cơ mắc bệnh.'
+
+MERGE (o1:disease {id: 'u_nang_buồng_trứng_disease'})
+MERGE (o2:organ {id: 'phụ_nữ_mang_thai_organ'})
+MERGE (o1)-[r110:relatedTo]->(o2)
+SET r110.text = 'Đây là bệnh lý phụ khoa thường gặp ở nữ giới, có thể xảy ra ở mọi đối tượng và độ tuổi, từ bé gái trước dậy thì, phụ nữ mang thai đến phụ nữ mãn kinh… đều có nguy cơ mắc bệnh.'
+
+MERGE (o1:disease {id: 'u_nang_buồng_trứng_disease'})
+MERGE (o2:organ {id: 'phụ_nữ_mãn_kinh_organ'})
+MERGE (o1)-[r111:relatedTo]->(o2)
+SET r111.text = 'Đây là bệnh lý phụ khoa thường gặp ở nữ giới, có thể xảy ra ở mọi đối tượng và độ tuổi, từ bé gái trước dậy thì, phụ nữ mang thai đến phụ nữ mãn kinh… đều có nguy cơ mắc bệnh.'
+
+MERGE (o1:disease {id: 'u_nang_buồng_trứng_disease'})
+MERGE (o2:organ {id: 'phụ_nữ_mang_thai_organ'})
+MERGE (o1)-[r112:relatedTo]->(o2)
+SET r112.text = 'Đặc biệt, u nang ở phụ nữ mang thai thường bắt đầu với kích thước nhỏ khoảng dưới 3 - 4cm, không có triệu chứng hoặc triệu chứng không rõ ràng nên gây nhầm lẫn, chủ quan không thăm khám.'
+
+MERGE (o1:disease {id: 'u_nang_buồng_trứng_disease'})
+MERGE (o2:symptom {id: 'kích_thước_nhỏ_symptom'})
+MERGE (o1)-[r113:isSymptomOf]->(o2)
+SET r113.text = 'Đặc biệt, u nang ở phụ nữ mang thai thường bắt đầu với kích thước nhỏ khoảng dưới 3 - 4cm, không có triệu chứng hoặc triệu chứng không rõ ràng nên gây nhầm lẫn, chủ quan không thăm khám.'
+
+MERGE (o1:disease {id: 'u_nang_buồng_trứng_disease'})
+MERGE (o2:symptom {id: 'không_có_triệu_chứng_symptom'})
+MERGE (o1)-[r114:isSymptomOf]->(o2)
+SET r114.text = 'Đặc biệt, u nang ở phụ nữ mang thai thường bắt đầu với kích thước nhỏ khoảng dưới 3 - 4cm, không có triệu chứng hoặc triệu chứng không rõ ràng nên gây nhầm lẫn, chủ quan không thăm khám.'
+
+MERGE (o1:disease {id: 'u_nang_buồng_trứng_disease'})
+MERGE (o2:symptom {id: 'triệu_chứng_không_rõ_ràng_symptom'})
+MERGE (o1)-[r115:isSymptomOf]->(o2)
+SET r115.text = 'Đặc biệt, u nang ở phụ nữ mang thai thường bắt đầu với kích thước nhỏ khoảng dưới 3 - 4cm, không có triệu chứng hoặc triệu chứng không rõ ràng nên gây nhầm lẫn, chủ quan không thăm khám.'
+
+MERGE (o1:disease {id: 'u_nang_buồng_trứng_disease'})
+MERGE (o2:symptom {id: 'khối_u_phát_triển_bất_thường_symptom'})
+MERGE (o1)-[r116:isSymptomOf]->(o2)
+SET r116.text = 'Bệnh này đặc trưng với khối u phát triển bất thường ở buồng trứng.'
+
+MERGE (o1:disease {id: 'u_nang_buồng_trứng_disease'})
+MERGE (o2:organ {id: 'buồng_trứng_organ'})
+MERGE (o1)-[r117:locatedIn]->(o2)
+SET r117.text = 'Bệnh này đặc trưng với khối u phát triển bất thường ở buồng trứng.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:organ {id: 'buồng_trứng_organ'})
+MERGE (o1)-[r118:locatedIn]->(o2)
+SET r118.text = 'Khối u này có thể là một tổ chức mới xuất hiện trên buồng trứng (hay còn gọi là tổ chức tân binh), hoặc có thể là sự tích tụ dịch tạo thành một nang chứa dịch ở buồng trứng.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:disease {id: 'tổ_chức_tân_binh_disease'})
+MERGE (o1)-[r119:isSymptomOf]->(o2)
+SET r119.text = 'Khối u này có thể là một tổ chức mới xuất hiện trên buồng trứng (hay còn gọi là tổ chức tân binh), hoặc có thể là sự tích tụ dịch tạo thành một nang chứa dịch ở buồng trứng.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:symptom {id: 'sự_tích_tụ_dịch_symptom'})
+MERGE (o1)-[r120:isSymptomOf]->(o2)
+SET r120.text = 'Khối u này có thể là một tổ chức mới xuất hiện trên buồng trứng (hay còn gọi là tổ chức tân binh), hoặc có thể là sự tích tụ dịch tạo thành một nang chứa dịch ở buồng trứng.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:symptom {id: 'nang_chứa_dịch_symptom'})
+MERGE (o1)-[r121:isSymptomOf]->(o2)
+SET r121.text = 'Khối u này có thể là một tổ chức mới xuất hiện trên buồng trứng (hay còn gọi là tổ chức tân binh), hoặc có thể là sự tích tụ dịch tạo thành một nang chứa dịch ở buồng trứng.'
+
+MERGE (o1:disease {id: 'khối_u_nang_disease'})
+MERGE (o2:test {id: 'siêu_âm_test'})
+MERGE (o1)-[r122:diagnosedBy]->(o2)
+SET r122.text = 'Có rất nhiều cách để phân loại khối u nang này như: theo kích thước, tính chất hoặc hình dạng nhìn thấy trên siêu âm… nhưng quan trọng nhất là cần xem xét u nang buồng trứng lành tính hay ác tính.'
+
+MERGE (o1:disease {id: 'khối_u_nang_disease'})
+MERGE (o2:symptom {id: 'kích_thước_symptom'})
+MERGE (o1)-[r123:isSymptomOf]->(o2)
+SET r123.text = 'Có rất nhiều cách để phân loại khối u nang này như: theo kích thước, tính chất hoặc hình dạng nhìn thấy trên siêu âm… nhưng quan trọng nhất là cần xem xét u nang buồng trứng lành tính hay ác tính.'
+
+MERGE (o1:disease {id: 'khối_u_nang_disease'})
+MERGE (o2:symptom {id: 'tính_chất_symptom'})
+MERGE (o1)-[r124:isSymptomOf]->(o2)
+SET r124.text = 'Có rất nhiều cách để phân loại khối u nang này như: theo kích thước, tính chất hoặc hình dạng nhìn thấy trên siêu âm… nhưng quan trọng nhất là cần xem xét u nang buồng trứng lành tính hay ác tính.'
+
+MERGE (o1:disease {id: 'khối_u_nang_disease'})
+MERGE (o2:symptom {id: 'hình_dạng_symptom'})
+MERGE (o1)-[r125:isSymptomOf]->(o2)
+SET r125.text = 'Có rất nhiều cách để phân loại khối u nang này như: theo kích thước, tính chất hoặc hình dạng nhìn thấy trên siêu âm… nhưng quan trọng nhất là cần xem xét u nang buồng trứng lành tính hay ác tính.'
+
+MERGE (o1:disease {id: 'u_nang_buồng_trứng_disease'})
+MERGE (o2:symptom {id: 'lành_tính_symptom'})
+MERGE (o1)-[r126:isSymptomOf]->(o2)
+SET r126.text = 'Có rất nhiều cách để phân loại khối u nang này như: theo kích thước, tính chất hoặc hình dạng nhìn thấy trên siêu âm… nhưng quan trọng nhất là cần xem xét u nang buồng trứng lành tính hay ác tính.'
+
+MERGE (o1:disease {id: 'u_nang_buồng_trứng_disease'})
+MERGE (o2:symptom {id: 'ác_tính_symptom'})
+MERGE (o1)-[r127:isSymptomOf]->(o2)
+SET r127.text = 'Có rất nhiều cách để phân loại khối u nang này như: theo kích thước, tính chất hoặc hình dạng nhìn thấy trên siêu âm… nhưng quan trọng nhất là cần xem xét u nang buồng trứng lành tính hay ác tính.'
+
+MERGE (o1:disease {id: 'u_ác_tính_disease'})
+MERGE (o2:test {id: 'giải_phẫu_bệnh_test'})
+MERGE (o1)-[r128:diagnosedBy]->(o2)
+SET r128.text = 'Để phân biệt giữa u ác tính và lành tính, khối u sẽ được lấy ra khỏi cơ thể và tiến hành giải phẫu bệnh.'
+
+MERGE (o1:disease {id: 'u_lành_tính_disease'})
+MERGE (o2:test {id: 'giải_phẫu_bệnh_test'})
+MERGE (o1)-[r129:diagnosedBy]->(o2)
+SET r129.text = 'Để phân biệt giữa u ác tính và lành tính, khối u sẽ được lấy ra khỏi cơ thể và tiến hành giải phẫu bệnh.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:symptom {id: 'không_thay_đổi_kích_thước_symptom'})
+MERGE (o1)-[r130:isSymptomOf]->(o2)
+SET r130.text = 'Quá trình diễn biến của một khối u có thể là không thay đổi kích thước (trường hợp này hiếm gặp); khối u biến mất (thường gặp ở khối u cơ năng); khối u to dần và kèm theo các biến chứng chèn ép như đau, bí tiểu, rối loạn tiểu tiện,&#8230;; khối u bị xoắn làm ngưng trệ tuần hoàn máu đến buồng trứng, lâu ngày dẫn đến thiếu máu nuôi gây hoại tử, vỡ u nang cần phải phẫu thuật ngay.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:symptom {id: 'biến_mất_symptom'})
+MERGE (o1)-[r131:isSymptomOf]->(o2)
+SET r131.text = 'Quá trình diễn biến của một khối u có thể là không thay đổi kích thước (trường hợp này hiếm gặp); khối u biến mất (thường gặp ở khối u cơ năng); khối u to dần và kèm theo các biến chứng chèn ép như đau, bí tiểu, rối loạn tiểu tiện,&#8230;; khối u bị xoắn làm ngưng trệ tuần hoàn máu đến buồng trứng, lâu ngày dẫn đến thiếu máu nuôi gây hoại tử, vỡ u nang cần phải phẫu thuật ngay.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:symptom {id: 'to_dần_symptom'})
+MERGE (o1)-[r132:isSymptomOf]->(o2)
+SET r132.text = 'Quá trình diễn biến của một khối u có thể là không thay đổi kích thước (trường hợp này hiếm gặp); khối u biến mất (thường gặp ở khối u cơ năng); khối u to dần và kèm theo các biến chứng chèn ép như đau, bí tiểu, rối loạn tiểu tiện,&#8230;; khối u bị xoắn làm ngưng trệ tuần hoàn máu đến buồng trứng, lâu ngày dẫn đến thiếu máu nuôi gây hoại tử, vỡ u nang cần phải phẫu thuật ngay.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:symptom {id: 'biến_chứng_chèn_ép_symptom'})
+MERGE (o1)-[r133:isSymptomOf]->(o2)
+SET r133.text = 'Quá trình diễn biến của một khối u có thể là không thay đổi kích thước (trường hợp này hiếm gặp); khối u biến mất (thường gặp ở khối u cơ năng); khối u to dần và kèm theo các biến chứng chèn ép như đau, bí tiểu, rối loạn tiểu tiện,&#8230;; khối u bị xoắn làm ngưng trệ tuần hoàn máu đến buồng trứng, lâu ngày dẫn đến thiếu máu nuôi gây hoại tử, vỡ u nang cần phải phẫu thuật ngay.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:symptom {id: 'đau_symptom'})
+MERGE (o1)-[r134:isSymptomOf]->(o2)
+SET r134.text = 'Quá trình diễn biến của một khối u có thể là không thay đổi kích thước (trường hợp này hiếm gặp); khối u biến mất (thường gặp ở khối u cơ năng); khối u to dần và kèm theo các biến chứng chèn ép như đau, bí tiểu, rối loạn tiểu tiện,&#8230;; khối u bị xoắn làm ngưng trệ tuần hoàn máu đến buồng trứng, lâu ngày dẫn đến thiếu máu nuôi gây hoại tử, vỡ u nang cần phải phẫu thuật ngay.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:symptom {id: 'bí_tiểu_symptom'})
+MERGE (o1)-[r135:isSymptomOf]->(o2)
+SET r135.text = 'Quá trình diễn biến của một khối u có thể là không thay đổi kích thước (trường hợp này hiếm gặp); khối u biến mất (thường gặp ở khối u cơ năng); khối u to dần và kèm theo các biến chứng chèn ép như đau, bí tiểu, rối loạn tiểu tiện,&#8230;; khối u bị xoắn làm ngưng trệ tuần hoàn máu đến buồng trứng, lâu ngày dẫn đến thiếu máu nuôi gây hoại tử, vỡ u nang cần phải phẫu thuật ngay.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:symptom {id: 'rối_loạn_tiểu_tiện_symptom'})
+MERGE (o1)-[r136:isSymptomOf]->(o2)
+SET r136.text = 'Quá trình diễn biến của một khối u có thể là không thay đổi kích thước (trường hợp này hiếm gặp); khối u biến mất (thường gặp ở khối u cơ năng); khối u to dần và kèm theo các biến chứng chèn ép như đau, bí tiểu, rối loạn tiểu tiện,&#8230;; khối u bị xoắn làm ngưng trệ tuần hoàn máu đến buồng trứng, lâu ngày dẫn đến thiếu máu nuôi gây hoại tử, vỡ u nang cần phải phẫu thuật ngay.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:symptom {id: 'xoắn_symptom'})
+MERGE (o1)-[r137:isSymptomOf]->(o2)
+SET r137.text = 'Quá trình diễn biến của một khối u có thể là không thay đổi kích thước (trường hợp này hiếm gặp); khối u biến mất (thường gặp ở khối u cơ năng); khối u to dần và kèm theo các biến chứng chèn ép như đau, bí tiểu, rối loạn tiểu tiện,&#8230;; khối u bị xoắn làm ngưng trệ tuần hoàn máu đến buồng trứng, lâu ngày dẫn đến thiếu máu nuôi gây hoại tử, vỡ u nang cần phải phẫu thuật ngay.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:symptom {id: 'ngưng_trệ_tuần_hoàn_máu_symptom'})
+MERGE (o1)-[r138:isSymptomOf]->(o2)
+SET r138.text = 'Quá trình diễn biến của một khối u có thể là không thay đổi kích thước (trường hợp này hiếm gặp); khối u biến mất (thường gặp ở khối u cơ năng); khối u to dần và kèm theo các biến chứng chèn ép như đau, bí tiểu, rối loạn tiểu tiện,&#8230;; khối u bị xoắn làm ngưng trệ tuần hoàn máu đến buồng trứng, lâu ngày dẫn đến thiếu máu nuôi gây hoại tử, vỡ u nang cần phải phẫu thuật ngay.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:symptom {id: 'thiếu_máu_nuôi_symptom'})
+MERGE (o1)-[r139:isSymptomOf]->(o2)
+SET r139.text = 'Quá trình diễn biến của một khối u có thể là không thay đổi kích thước (trường hợp này hiếm gặp); khối u biến mất (thường gặp ở khối u cơ năng); khối u to dần và kèm theo các biến chứng chèn ép như đau, bí tiểu, rối loạn tiểu tiện,&#8230;; khối u bị xoắn làm ngưng trệ tuần hoàn máu đến buồng trứng, lâu ngày dẫn đến thiếu máu nuôi gây hoại tử, vỡ u nang cần phải phẫu thuật ngay.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:symptom {id: 'hoại_tử_symptom'})
+MERGE (o1)-[r140:isSymptomOf]->(o2)
+SET r140.text = 'Quá trình diễn biến của một khối u có thể là không thay đổi kích thước (trường hợp này hiếm gặp); khối u biến mất (thường gặp ở khối u cơ năng); khối u to dần và kèm theo các biến chứng chèn ép như đau, bí tiểu, rối loạn tiểu tiện,&#8230;; khối u bị xoắn làm ngưng trệ tuần hoàn máu đến buồng trứng, lâu ngày dẫn đến thiếu máu nuôi gây hoại tử, vỡ u nang cần phải phẫu thuật ngay.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:symptom {id: 'vỡ_u_nang_symptom'})
+MERGE (o1)-[r141:isSymptomOf]->(o2)
+SET r141.text = 'Quá trình diễn biến của một khối u có thể là không thay đổi kích thước (trường hợp này hiếm gặp); khối u biến mất (thường gặp ở khối u cơ năng); khối u to dần và kèm theo các biến chứng chèn ép như đau, bí tiểu, rối loạn tiểu tiện,&#8230;; khối u bị xoắn làm ngưng trệ tuần hoàn máu đến buồng trứng, lâu ngày dẫn đến thiếu máu nuôi gây hoại tử, vỡ u nang cần phải phẫu thuật ngay.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:treatment {id: 'phẫu_thuật_treatment'})
+MERGE (o1)-[r142:treatedBy]->(o2)
+SET r142.text = 'Quá trình diễn biến của một khối u có thể là không thay đổi kích thước (trường hợp này hiếm gặp); khối u biến mất (thường gặp ở khối u cơ năng); khối u to dần và kèm theo các biến chứng chèn ép như đau, bí tiểu, rối loạn tiểu tiện,&#8230;; khối u bị xoắn làm ngưng trệ tuần hoàn máu đến buồng trứng, lâu ngày dẫn đến thiếu máu nuôi gây hoại tử, vỡ u nang cần phải phẫu thuật ngay.'
+
+MERGE (o1:symptom {id: 'cảm_giác_tê_buốt_bàn_chân_symptom'})
+MERGE (o2:disease {id: 'biến_chứng_bàn_chân_đái_tháo_đường_disease'})
+MERGE (o1)-[r143:isSymptomOf]->(o2)
+SET r143.text = 'Cảm giác tê buốt bàn chân là triệu chứng của biến chứng bàn chân đái tháo đường.'
+
+MERGE (o1:cause {id: 'xơ_vữa_mạch_máu_cause'})
+MERGE (o2:disease {id: 'biến_chứng_bàn_chân_đái_tháo_đường_disease'})
+MERGE (o1)-[r144:causedBy]->(o2)
+SET r144.text = 'Xơ vữa mạch máu là một trong những nguyên nhân chính gây ra biến chứng bàn chân đái tháo đường.'
+
+MERGE (o1:disease {id: 'loét_bàn_chân_đái_tháo_đường_disease'})
+MERGE (o2:disease {id: 'bệnh_đái_tháo_đường_disease'})
+MERGE (o1)-[r145:isSymptomOf]->(o2)
+SET r145.text = 'Loét bàn chân đái tháo đường là biến chứng phức tạp của bệnh đái tháo đường.'
+
+MERGE (o1:disease {id: 'biến_chứng_bàn_chân_disease'})
+MERGE (o2:treatment {id: 'chăm_sóc_bàn_chân_treatment'})
+MERGE (o1)-[r146:treatedBy]->(o2)
+SET r146.text = 'Bệnh nhân đái tháo đường có thể kiểm soát được biến chứng bàn chân thông qua các biện pháp chăm sóc bàn chân.'

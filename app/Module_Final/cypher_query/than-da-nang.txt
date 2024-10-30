@@ -1,0 +1,740 @@
+
+MERGE (o1:disease {id: 'thận_đa_nang_disease'})
+MERGE (o2:symptom {id: 'xuất_hiện_nhiều_nang_ở_hai_bên_thận_symptom'})
+MERGE (o1)-[r0:isSymptomOf]->(o2)
+SET r0.text = 'Thận đa nang thường xuất hiện ở độ tuổi sau 30-40, rất ít gặp khi còn nhỏ, được đặc trưng bởi tình trạng xuất hiện nhiều nang ở hai bên thận.'
+
+MERGE (o1:disease {id: 'thận_đa_nang_disease'})
+MERGE (o2:lifestyle {id: 'tuổi_sau_30-40_lifestyle'})
+MERGE (o1)-[r1:associatedWith]->(o2)
+SET r1.text = 'Thận đa nang thường xuất hiện ở độ tuổi sau 30-40, rất ít gặp khi còn nhỏ, được đặc trưng bởi tình trạng xuất hiện nhiều nang ở hai bên thận.'
+
+MERGE (o1:disease {id: 'thận_đa_nang_disease'})
+MERGE (o2:symptom {id: 'nang_gan_symptom'})
+MERGE (o1)-[r2:associatedWith]->(o2)
+SET r2.text = 'Bệnh có thể kết hợp cùng các nang gan và các bất thường ở tim mạch.'
+
+MERGE (o1:disease {id: 'thận_đa_nang_disease'})
+MERGE (o2:symptom {id: 'bất_thường_ở_tim_mạch_symptom'})
+MERGE (o1)-[r3:associatedWith]->(o2)
+SET r3.text = 'Bệnh có thể kết hợp cùng các nang gan và các bất thường ở tim mạch.'
+
+MERGE (o1:disease {id: 'thận_đa_nang_disease'})
+MERGE (o2:test {id: 'thăm_khám_test'})
+MERGE (o1)-[r4:diagnosedBy]->(o2)
+SET r4.text = 'Bệnh nguy hiểm ở chỗ không có dấu hiệu đặc trưng mà chỉ được phát hiện qua thăm khám.'
+
+MERGE (o1:disease {id: 'bệnh_thận_đa_nang_disease'})
+MERGE (o2:cause {id: 'rối_loạn_di_truyền_cause'})
+MERGE (o1)-[r5:causedBy]->(o2)
+SET r5.text = 'Bệnh thận đa nang (Polycystic kidney disease - PKD) là một rối loạn di truyền, trong đó các cụm u nang phát triển bên trong thận, khiến thận tăng dần kích thước và suy giảm chức năng theo thời gian.'
+
+MERGE (o1:disease {id: 'bệnh_thận_đa_nang_disease'})
+MERGE (o2:symptom {id: 'các_cụm_u_nang_phát_triển_bên_trong_thận_symptom'})
+MERGE (o1)-[r6:isSymptomOf]->(o2)
+SET r6.text = 'Bệnh thận đa nang (Polycystic kidney disease - PKD) là một rối loạn di truyền, trong đó các cụm u nang phát triển bên trong thận, khiến thận tăng dần kích thước và suy giảm chức năng theo thời gian.'
+
+MERGE (o1:disease {id: 'bệnh_thận_đa_nang_disease'})
+MERGE (o2:organ {id: 'thận_organ'})
+MERGE (o1)-[r7:affects]->(o2)
+SET r7.text = 'Bệnh thận đa nang (Polycystic kidney disease - PKD) là một rối loạn di truyền, trong đó các cụm u nang phát triển bên trong thận, khiến thận tăng dần kích thước và suy giảm chức năng theo thời gian.'
+
+MERGE (o1:symptom {id: 'u_nang_symptom'})
+MERGE (o2:disease {id: 'bệnh_thận_đa_nang_disease'})
+MERGE (o1)-[r8:isSymptomOf]->(o2)
+SET r8.text = 'U nang là những túi tròn không ung thư, có chứa chất lỏng.'
+
+MERGE (o1:symptom {id: 'u_nang_symptom'})
+MERGE (o2:disease {id: 'bệnh_thận_đa_nang_disease'})
+MERGE (o1)-[r9:isSymptomOf]->(o2)
+SET r9.text = 'Các u nang có kích thước khác nhau và chúng có thể phát triển rất lớn.'
+
+MERGE (o1:symptom {id: 'u_nang_symptom'})
+MERGE (o2:organ {id: 'thận_organ'})
+MERGE (o1)-[r10:affects]->(o2)
+SET r10.text = 'Sự xuất hiện của nhiều u nang hoặc u nang lớn có thể gây hỏng thận.'
+
+MERGE (o1:disease {id: 'bệnh_thận_đa_nang_disease'})
+MERGE (o2:organ {id: 'gan_organ'})
+MERGE (o1)-[r11:affects]->(o2)
+SET r11.text = 'Bệnh cũng có thể gây ra u nang phát triển tại gan và các bộ phận khác trong cơ thể.'
+
+MERGE (o1:disease {id: 'bệnh_thận_đa_nang_disease'})
+MERGE (o2:organ {id: 'các_bộ_phận_khác_trong_cơ_thể_organ'})
+MERGE (o1)-[r12:affects]->(o2)
+SET r12.text = 'Bệnh cũng có thể gây ra u nang phát triển tại gan và các bộ phận khác trong cơ thể.'
+
+MERGE (o1:disease {id: 'thận_đa_nang_disease'})
+MERGE (o2:symptom {id: 'huyết_áp_cao_symptom'})
+MERGE (o1)-[r13:isSymptomOf]->(o2)
+SET r13.text = 'Thận đa nang có thể gây ra các biến chứng nghiêm trọng, bao gồm huyết áp cao và suy thận.'
+
+MERGE (o1:disease {id: 'thận_đa_nang_disease'})
+MERGE (o2:symptom {id: 'suy_thận_symptom'})
+MERGE (o1)-[r14:isSymptomOf]->(o2)
+SET r14.text = 'Thận đa nang có thể gây ra các biến chứng nghiêm trọng, bao gồm huyết áp cao và suy thận.'
+
+MERGE (o1:symptom {id: 'nang_thận_symptom'})
+MERGE (o2:cause {id: 'gen_cause'})
+MERGE (o1)-[r15:causedBy]->(o2)
+SET r15.text = 'Sự phát sinh và phát triển nang thận phụ thuộc vào hai yếu tố gen và môi trường.'
+
+MERGE (o1:symptom {id: 'nang_thận_symptom'})
+MERGE (o2:cause {id: 'môi_trường_cause'})
+MERGE (o1)-[r16:causedBy]->(o2)
+SET r16.text = 'Sự phát sinh và phát triển nang thận phụ thuộc vào hai yếu tố gen và môi trường.'
+
+MERGE (o1:cause {id: 'chất_hóa_học_hoặc_thuốc_cause'})
+MERGE (o2:disease {id: 'bệnh_thận_đa_nang_disease'})
+MERGE (o1)-[r17:causes]->(o2)
+SET r17.text = 'Theo đó, nguyên nhân gây bệnh có thể đến từ: Chất hóa học hoặc thuốc, bao gồm các chất chống oxy hóa (như diphenyl-thiazole và nordihydro guaiaretic acid), alloxan và steptozotoxin, lithium cloride và cis-platinium.'
+
+MERGE (o1:cause {id: 'gen_bất_thường_cause'})
+MERGE (o2:disease {id: 'bệnh_thận_đa_nang_disease'})
+MERGE (o1)-[r18:causes]->(o2)
+SET r18.text = 'Các gen bất thường gây ra bệnh thận đa nang, nghĩa là trong hầu hết các trường hợp, bệnh có yếu tố di truyền.'
+
+MERGE (o1:cause {id: 'đột_biến_di_truyền_cause'})
+MERGE (o2:disease {id: 'bệnh_thận_đa_nang_disease'})
+MERGE (o1)-[r19:causes]->(o2)
+SET r19.text = 'Đôi khi, một đột biến di truyền xảy ra tự phát, do đó cả cha và mẹ đều không có bản sao của gen đột biến.'
+
+MERGE (o1:disease {id: 'bệnh_thận_đa_nang_disease'})
+MERGE (o2:cause {id: 'khiếm_khuyết_di_truyền_cause'})
+MERGE (o1)-[r20:causedBy]->(o2)
+SET r20.text = 'Bệnh thận đa nang gây ra bởi các khiếm khuyết di truyền khác nhau được chia thành hai loại:'
+
+MERGE (o1:disease {id: 'bệnh_thận_đa_nang_trội_trên_nhiễm_sắc_thể_thường_(adpkd)_disease'})
+MERGE (o2:lifestyle {id: 'tuổi_từ_30_đến_40_lifestyle'})
+MERGE (o1)-[r21:associatedWith]->(o2)
+SET r21.text = 'Bệnh thận đa nang trội trên nhiễm sắc thể thường (ADPKD). Các dấu hiệu và triệu chứng của ADPKD thường phát triển ở độ tuổi từ 30 đến 40.'
+
+MERGE (o1:disease {id: 'bệnh_thận_đa_nang_trội_trên_nhiễm_sắc_thể_thường_(adpkd)_disease'})
+MERGE (o2:symptom {id: 'các_dấu_hiệu_và_triệu_chứng_symptom'})
+MERGE (o1)-[r22:isSymptomOf]->(o2)
+SET r22.text = 'Bệnh thận đa nang trội trên nhiễm sắc thể thường (ADPKD). Các dấu hiệu và triệu chứng của ADPKD thường phát triển ở độ tuổi từ 30 đến 40.'
+
+MERGE (o1:disease {id: 'bệnh_thận_đa_nang_trội_trên_nhiễm_sắc_thể_thường_(adpkd)_disease'})
+MERGE (o2:lifestyle {id: 'người_lớn_lifestyle'})
+MERGE (o1)-[r23:associatedWith]->(o2)
+SET r23.text = 'Bệnh thường xảy ra ở người lớn, nhưng trẻ em cũng có thể phát triển chứng rối loạn này.'
+
+MERGE (o1:disease {id: 'bệnh_thận_đa_nang_trội_trên_nhiễm_sắc_thể_thường_(adpkd)_disease'})
+MERGE (o2:lifestyle {id: 'trẻ_em_lifestyle'})
+MERGE (o1)-[r24:associatedWith]->(o2)
+SET r24.text = 'Bệnh thường xảy ra ở người lớn, nhưng trẻ em cũng có thể phát triển chứng rối loạn này.'
+
+MERGE (o1:disease {id: 'bệnh_thận_đa_nang_trội_trên_nhiễm_sắc_thể_thường_(adpkd)_disease'})
+MERGE (o2:cause {id: 'di_truyền_cause'})
+MERGE (o1)-[r25:causedBy]->(o2)
+SET r25.text = 'Bố/mẹ mắc bệnh thì bệnh mới truyền cho con cái.'
+
+MERGE (o1:disease {id: 'bệnh_thận_đa_nang_trội_trên_nhiễm_sắc_thể_thường_(adpkd)_disease'})
+MERGE (o2:cause {id: 'di_truyền_cause'})
+MERGE (o1)-[r26:causedBy]->(o2)
+SET r26.text = 'Nếu bố/ mẹ mắc ADPKD, mỗi đứa trẻ có 50% nguy cơ mắc bệnh.'
+
+MERGE (o1:disease {id: 'bệnh_thận_đa_nang_trội_trên_nhiễm_sắc_thể_thường_(adpkd)_disease'})
+MERGE (o2:disease {id: 'bệnh_thận_đa_nang_disease'})
+MERGE (o1)-[r27:relatedTo]->(o2)
+SET r27.text = 'Dạng này chiếm hầu hết các trường hợp bệnh thận đa nang.'
+
+MERGE (o1:disease {id: 'thận_đa_nang_lặn_trên_nhiễm_sắc_thể_thường_(arpkd)_disease'})
+MERGE (o2:symptom {id: 'các_dấu_hiệu_và_triệu_chứng_symptom'})
+MERGE (o1)-[r28:isSymptomOf]->(o2)
+SET r28.text = 'Thận đa nang lặn trên nhiễm sắc thể thường (ARPKD): Ít phổ biến hơn so với ADPKD, các dấu hiệu và triệu chứng thường xuất hiện ngay sau khi sinh.'
+
+MERGE (o1:disease {id: 'thận_đa_nang_lặn_trên_nhiễm_sắc_thể_thường_(arpkd)_disease'})
+MERGE (o2:lifestyle {id: 'sinh_lifestyle'})
+MERGE (o1)-[r29:associatedWith]->(o2)
+SET r29.text = 'Thận đa nang lặn trên nhiễm sắc thể thường (ARPKD): Ít phổ biến hơn so với ADPKD, các dấu hiệu và triệu chứng thường xuất hiện ngay sau khi sinh.'
+
+MERGE (o1:disease {id: 'thận_đa_nang_lặn_trên_nhiễm_sắc_thể_thường_(arpkd)_disease'})
+MERGE (o2:disease {id: 'adpkd_disease'})
+MERGE (o1)-[r30:relatedTo]->(o2)
+SET r30.text = 'Thận đa nang lặn trên nhiễm sắc thể thường (ARPKD): Ít phổ biến hơn so với ADPKD, các dấu hiệu và triệu chứng thường xuất hiện ngay sau khi sinh.'
+
+MERGE (o1:disease {id: 'thận_đa_nang_lặn_trên_nhiễm_sắc_thể_thường_(arpkd)_disease'})
+MERGE (o2:lifestyle {id: 'niên_thiếu_lifestyle'})
+MERGE (o1)-[r31:associatedWith]->(o2)
+SET r31.text = 'Đôi khi, các triệu chứng lại xuất hiện khi còn nhỏ hoặc niên thiếu.'
+
+MERGE (o1:disease {id: 'thận_đa_nang_lặn_trên_nhiễm_sắc_thể_thường_(arpkd)_disease'})
+MERGE (o2:cause {id: 'di_truyền_cause'})
+MERGE (o1)-[r32:causedBy]->(o2)
+SET r32.text = 'Cả bố và mẹ đều có gen bất thường mới có thể di truyền chứng rối loạn này, khi ấy mỗi đứa trẻ có 25% khả năng mắc bệnh.'
+
+MERGE (o1:symptom {id: 'nang_thận_symptom'})
+MERGE (o2:cause {id: 'tắc_nghẽn_trong_lòng_ống_thận_cause'})
+MERGE (o1)-[r33:causedBy]->(o2)
+SET r33.text = 'Có ba cơ chế chính hình thành nang thận: Tắc nghẽn trong lòng ống thận, Tăng sinh tế bào biểu mô ống thận, Biến đổi màng đáy của ống thận'
+
+MERGE (o1:symptom {id: 'nang_thận_symptom'})
+MERGE (o2:cause {id: 'tăng_sinh_tế_bào_biểu_mô_ống_thận_cause'})
+MERGE (o1)-[r34:causedBy]->(o2)
+SET r34.text = 'Có ba cơ chế chính hình thành nang thận: Tắc nghẽn trong lòng ống thận, Tăng sinh tế bào biểu mô ống thận, Biến đổi màng đáy của ống thận'
+
+MERGE (o1:disease {id: 'adpkd_disease'})
+MERGE (o2:symptom {id: 'các_dấu_hiệu_và_triệu_chứng_symptom'})
+MERGE (o1)-[r35:isSymptomOf]->(o2)
+SET r35.text = 'Nếu các dấu hiệu và triệu chứng của ADPKD thường phát triển ở độ tuổi 30-40 thì ARPKD lại xuất hiện ngay sau khi sinh.'
+
+MERGE (o1:disease {id: 'arpkd_disease'})
+MERGE (o2:symptom {id: 'các_dấu_hiệu_và_triệu_chứng_symptom'})
+MERGE (o1)-[r36:isSymptomOf]->(o2)
+SET r36.text = 'Nếu các dấu hiệu và triệu chứng của ADPKD thường phát triển ở độ tuổi 30-40 thì ARPKD lại xuất hiện ngay sau khi sinh.'
+
+MERGE (o1:disease {id: 'adpkd_disease'})
+MERGE (o2:lifestyle {id: 'tuổi_30-40_lifestyle'})
+MERGE (o1)-[r37:relatedTo]->(o2)
+SET r37.text = 'Nếu các dấu hiệu và triệu chứng của ADPKD thường phát triển ở độ tuổi 30-40 thì ARPKD lại xuất hiện ngay sau khi sinh.'
+
+MERGE (o1:disease {id: 'arpkd_disease'})
+MERGE (o2:lifestyle {id: 'ngay_sau_khi_sinh_lifestyle'})
+MERGE (o1)-[r38:relatedTo]->(o2)
+SET r38.text = 'Nếu các dấu hiệu và triệu chứng của ADPKD thường phát triển ở độ tuổi 30-40 thì ARPKD lại xuất hiện ngay sau khi sinh.'
+
+MERGE (o1:disease {id: 'arpkd_disease'})
+MERGE (o2:disease {id: 'adpkd_disease'})
+MERGE (o1)-[r39:relatedTo]->(o2)
+SET r39.text = 'So với ADPKD thì ARPKD lại ít phổ biến hơn'
+
+MERGE (o1:disease {id: 'adpkd_disease'})
+MERGE (o2:cause {id: 'bố/mẹ_mắc_bệnh_cause'})
+MERGE (o1)-[r40:causedBy]->(o2)
+SET r40.text = 'Đối với ADPKD, bố/mẹ mắc bệnh thì bệnh mới truyền cho con cái. Còn ARPKD, cả bố và mẹ đều phải có gen bất thường mới di truyền bệnh.'
+
+MERGE (o1:disease {id: 'arpkd_disease'})
+MERGE (o2:cause {id: 'cả_bố_và_mẹ_đều_phải_có_gen_bất_thường_cause'})
+MERGE (o1)-[r41:causedBy]->(o2)
+SET r41.text = 'Đối với ADPKD, bố/mẹ mắc bệnh thì bệnh mới truyền cho con cái. Còn ARPKD, cả bố và mẹ đều phải có gen bất thường mới di truyền bệnh.'
+
+MERGE (o1:disease {id: 'adpkd_disease'})
+MERGE (o2:cause {id: 'tỷ_lệ_di_truyền_bệnh_cause'})
+MERGE (o1)-[r42:relatedTo]->(o2)
+SET r42.text = 'Tỷ lệ di truyền bệnh của ADPKD cao hơn ARPKD'
+
+MERGE (o1:disease {id: 'arpkd_disease'})
+MERGE (o2:cause {id: 'tỷ_lệ_di_truyền_bệnh_cause'})
+MERGE (o1)-[r43:relatedTo]->(o2)
+SET r43.text = 'Tỷ lệ di truyền bệnh của ADPKD cao hơn ARPKD'
+
+MERGE (o1:symptom {id: 'huyết_áp_cao_symptom'})
+MERGE (o2:disease {id: 'bệnh_thận_đa_nang_disease'})
+MERGE (o1)-[r44:isSymptomOf]->(o2)
+SET r44.text = 'Các triệu chứng bệnh thận đa nang có thể bao gồm: Huyết áp cao'
+
+MERGE (o1:symptom {id: 'đau_lưng_hoặc_bên_hông_symptom'})
+MERGE (o2:disease {id: 'bệnh_thận_đa_nang_disease'})
+MERGE (o1)-[r45:isSymptomOf]->(o2)
+SET r45.text = 'Các triệu chứng bệnh thận đa nang có thể bao gồm: Đau lưng hoặc bên hông'
+
+MERGE (o1:symptom {id: 'có_máu_trong_nước_tiểu_symptom'})
+MERGE (o2:disease {id: 'bệnh_thận_đa_nang_disease'})
+MERGE (o1)-[r46:isSymptomOf]->(o2)
+SET r46.text = 'Các triệu chứng bệnh thận đa nang có thể bao gồm: Có máu trong nước tiểu'
+
+MERGE (o1:symptom {id: 'cảm_giác_đầy_bụng_symptom'})
+MERGE (o2:disease {id: 'bệnh_thận_đa_nang_disease'})
+MERGE (o1)-[r47:isSymptomOf]->(o2)
+SET r47.text = 'Các triệu chứng bệnh thận đa nang có thể bao gồm: Cảm giác đầy bụng'
+
+MERGE (o1:symptom {id: 'tăng_kích_thước_bụng_symptom'})
+MERGE (o2:disease {id: 'bệnh_thận_đa_nang_disease'})
+MERGE (o1)-[r48:isSymptomOf]->(o2)
+SET r48.text = 'Các triệu chứng bệnh thận đa nang có thể bao gồm: Tăng kích thước bụng do thận to'
+
+MERGE (o1:symptom {id: 'thận_to_symptom'})
+MERGE (o2:disease {id: 'bệnh_thận_đa_nang_disease'})
+MERGE (o1)-[r49:isSymptomOf]->(o2)
+SET r49.text = 'Các triệu chứng bệnh thận đa nang có thể bao gồm: Tăng kích thước bụng do thận to'
+
+MERGE (o1:symptom {id: 'nhức_đầu_symptom'})
+MERGE (o2:disease {id: 'bệnh_thận_đa_nang_disease'})
+MERGE (o1)-[r50:isSymptomOf]->(o2)
+SET r50.text = 'Các triệu chứng bệnh thận đa nang có thể bao gồm: Nhức đầu'
+
+MERGE (o1:symptom {id: 'sỏi_thận_symptom'})
+MERGE (o2:disease {id: 'bệnh_thận_đa_nang_disease'})
+MERGE (o1)-[r51:isSymptomOf]->(o2)
+SET r51.text = 'Các triệu chứng bệnh thận đa nang có thể bao gồm: Sỏi thận'
+
+MERGE (o1:symptom {id: 'suy_thận_symptom'})
+MERGE (o2:disease {id: 'bệnh_thận_đa_nang_disease'})
+MERGE (o1)-[r52:isSymptomOf]->(o2)
+SET r52.text = 'Các triệu chứng bệnh thận đa nang có thể bao gồm: Suy thận'
+
+MERGE (o1:symptom {id: 'nhiễm_trùng_đường_tiết_niệu_symptom'})
+MERGE (o2:disease {id: 'bệnh_thận_đa_nang_disease'})
+MERGE (o1)-[r53:isSymptomOf]->(o2)
+SET r53.text = 'Các triệu chứng bệnh thận đa nang có thể bao gồm: Nhiễm trùng đường tiết niệu hoặc thận'
+
+MERGE (o1:symptom {id: 'nhiễm_trùng_thận_symptom'})
+MERGE (o2:disease {id: 'bệnh_thận_đa_nang_disease'})
+MERGE (o1)-[r54:isSymptomOf]->(o2)
+SET r54.text = 'Các triệu chứng bệnh thận đa nang có thể bao gồm: Nhiễm trùng đường tiết niệu hoặc thận'
+
+MERGE (o1:symptom {id: 'huyết_áp_cao_symptom'})
+MERGE (o2:disease {id: 'bệnh_thận_đa_nang_disease'})
+MERGE (o1)-[r55:isSymptomOf]->(o2)
+SET r55.text = 'Các biến chứng liên quan đến bệnh thận đa nang gồm: Huyết áp cao'
+
+MERGE (o1:disease {id: 'bệnh_thận_đa_nang_disease'})
+MERGE (o2:symptom {id: 'biến_chứng_phổ_biến_symptom'})
+MERGE (o1)-[r56:relatedTo]->(o2)
+SET r56.text = 'Được xem là một biến chứng phổ biến của bệnh thận đa nang.'
+
+MERGE (o1:symptom {id: 'huyết_áp_cao_symptom'})
+MERGE (o2:organ {id: 'thận_organ'})
+MERGE (o1)-[r57:affects]->(o2)
+SET r57.text = 'Nếu không được điều trị, huyết áp cao có thể gây tổn thương thêm cho thận và làm tăng nguy cơ mắc bệnh tim và đột quỵ.'
+
+MERGE (o1:symptom {id: 'huyết_áp_cao_symptom'})
+MERGE (o2:disease {id: 'bệnh_tim_disease'})
+MERGE (o1)-[r58:affects]->(o2)
+SET r58.text = 'Nếu không được điều trị, huyết áp cao có thể gây tổn thương thêm cho thận và làm tăng nguy cơ mắc bệnh tim và đột quỵ.'
+
+MERGE (o1:symptom {id: 'huyết_áp_cao_symptom'})
+MERGE (o2:disease {id: 'đột_quỵ_disease'})
+MERGE (o1)-[r59:affects]->(o2)
+SET r59.text = 'Nếu không được điều trị, huyết áp cao có thể gây tổn thương thêm cho thận và làm tăng nguy cơ mắc bệnh tim và đột quỵ.'
+
+MERGE (o1:symptom {id: 'tăng_huyết_áp_symptom'})
+MERGE (o2:symptom {id: 'suy_thận_symptom'})
+MERGE (o1)-[r60:relatedTo]->(o2)
+SET r60.text = 'Tăng huyết áp có thể xảy ra sớm, gặp với tỉ lệ 13-20% số bệnh nhân ngay cả khi chưa có suy thận.'
+
+MERGE (o1:symptom {id: 'mất_chức_năng_thận_symptom'})
+MERGE (o2:disease {id: 'bệnh_thận_đa_nang_disease'})
+MERGE (o1)-[r61:isSymptomOf]->(o2)
+SET r61.text = 'Mất chức năng thận; Là một trong những biến chứng nghiêm trọng nhất của bệnh thận đa nang.'
+
+MERGE (o1:symptom {id: 'suy_thận_symptom'})
+MERGE (o2:lifestyle {id: 'tuổi_60_lifestyle'})
+MERGE (o1)-[r62:relatedTo]->(o2)
+SET r62.text = 'Gần một nửa số người mắc bệnh bị suy thận ở độ tuổi 60.'
+
+MERGE (o1:disease {id: 'thận_đa_nang_disease'})
+MERGE (o2:organ {id: 'thận_organ'})
+MERGE (o1)-[r63:affects]->(o2)
+SET r63.text = 'Thận đa nang có thể cản trở chức năng của thận vốn giữ cho chất thải không bị tích tụ đến mức gây hại (nhiễm độc niệu).'
+
+MERGE (o1:organ {id: 'thận_organ'})
+MERGE (o2:cause {id: 'chất_thải_cause'})
+MERGE (o1)-[r64:relatedTo]->(o2)
+SET r64.text = 'Thận đa nang có thể cản trở chức năng của thận vốn giữ cho chất thải không bị tích tụ đến mức gây hại (nhiễm độc niệu).'
+
+MERGE (o1:disease {id: 'bệnh_thận_giai_đoạn_cuối_disease'})
+MERGE (o2:symptom {id: 'bệnh_nặng_hơn_symptom'})
+MERGE (o1)-[r65:relatedTo]->(o2)
+SET r65.text = 'Khi bệnh nặng hơn, có thể dẫn đến bệnh thận giai đoạn cuối.'
+
+MERGE (o1:treatment {id: 'lọc_thận_liên_tục_treatment'})
+MERGE (o2:disease {id: 'bệnh_thận_giai_đoạn_cuối_disease'})
+MERGE (o1)-[r66:treatedBy]->(o2)
+SET r66.text = 'Khi ấy cần phải lọc thận liên tục hoặc cấy ghép để kéo dài tuổi thọ.'
+
+MERGE (o1:treatment {id: 'cấy_ghép_treatment'})
+MERGE (o2:disease {id: 'bệnh_thận_giai_đoạn_cuối_disease'})
+MERGE (o1)-[r67:treatedBy]->(o2)
+SET r67.text = 'Khi ấy cần phải lọc thận liên tục hoặc cấy ghép để kéo dài tuổi thọ.'
+
+MERGE (o1:symptom {id: 'đau_symptom'})
+MERGE (o2:disease {id: 'bệnh_thận_đa_nang_disease'})
+MERGE (o1)-[r68:isSymptomOf]->(o2)
+SET r68.text = 'Đau là một triệu chứng phổ biến đối với những người bị bệnh thận đa nang.'
+
+MERGE (o1:symptom {id: 'đau_symptom'})
+MERGE (o2:organ {id: 'hông_hoặc_lưng_organ'})
+MERGE (o1)-[r69:locatedIn]->(o2)
+SET r69.text = 'Đau thường xảy ra ở hông hoặc lưng.'
+
+MERGE (o1:symptom {id: 'cơn_đau_symptom'})
+MERGE (o2:symptom {id: 'nhiễm_trùng_đường_tiết_niệu_symptom'})
+MERGE (o1)-[r70:relatedTo]->(o2)
+SET r70.text = 'Cơn đau cũng có thể liên quan đến nhiễm trùng đường tiết niệu, sỏi thận hoặc bệnh ác tính.'
+
+MERGE (o1:symptom {id: 'cơn_đau_symptom'})
+MERGE (o2:symptom {id: 'sỏi_thận_symptom'})
+MERGE (o1)-[r71:relatedTo]->(o2)
+SET r71.text = 'Cơn đau cũng có thể liên quan đến nhiễm trùng đường tiết niệu, sỏi thận hoặc bệnh ác tính.'
+
+MERGE (o1:symptom {id: 'cơn_đau_symptom'})
+MERGE (o2:disease {id: 'bệnh_ác_tính_disease'})
+MERGE (o1)-[r72:relatedTo]->(o2)
+SET r72.text = 'Cơn đau cũng có thể liên quan đến nhiễm trùng đường tiết niệu, sỏi thận hoặc bệnh ác tính.'
+
+MERGE (o1:symptom {id: 'sự_phát_triển_của_u_nang_trong_gan_symptom'})
+MERGE (o2:disease {id: 'bệnh_thận_đa_nang_disease'})
+MERGE (o1)-[r73:isSymptomOf]->(o2)
+SET r73.text = 'Sự phát triển của u nang trong gan: Khả năng phát triển nang gan đối với những người bị bệnh thận đa nang tăng lên theo tuổi tác.'
+
+MERGE (o1:symptom {id: 'nang_gan_symptom'})
+MERGE (o2:disease {id: 'bệnh_thận_đa_nang_disease'})
+MERGE (o1)-[r74:isSymptomOf]->(o2)
+SET r74.text = 'Sự phát triển của u nang trong gan: Khả năng phát triển nang gan đối với những người bị bệnh thận đa nang tăng lên theo tuổi tác.'
+
+MERGE (o1:symptom {id: 'u_nang_symptom'})
+MERGE (o2:lifestyle {id: 'nam_và_nữ_lifestyle'})
+MERGE (o1)-[r75:relatedTo]->(o2)
+SET r75.text = 'Trong khi cả nam và nữ đều phát triển u nang thì phụ nữ thường phát triển u nang lớn hơn.'
+
+MERGE (o1:cause {id: 'nội_tiết_tố_nữ_cause'})
+MERGE (o2:symptom {id: 'nang_gan_symptom'})
+MERGE (o1)-[r76:causes]->(o2)
+SET r76.text = 'Nội tiết tố nữ và đa thai có thể góp phần vào sự phát triển của nang gan.'
+
+MERGE (o1:cause {id: 'đa_thai_cause'})
+MERGE (o2:symptom {id: 'nang_gan_symptom'})
+MERGE (o1)-[r77:causes]->(o2)
+SET r77.text = 'Nội tiết tố nữ và đa thai có thể góp phần vào sự phát triển của nang gan.'
+
+MERGE (o1:symptom {id: 'phát_triển_chứng_phình_động_mạch_trong_não_symptom'})
+MERGE (o2:disease {id: 'bệnh_thận_đa_nang_disease'})
+MERGE (o1)-[r78:isSymptomOf]->(o2)
+SET r78.text = 'Phát triển chứng phình động mạch trong não: Một khối phồng giống như quả bóng trong mạch máu trong não có thể gây chảy máu (xuất huyết) nếu bị vỡ.'
+
+MERGE (o1:symptom {id: 'chứng_phình_động_mạch_symptom'})
+MERGE (o2:disease {id: 'bệnh_thận_đa_nang_disease'})
+MERGE (o1)-[r79:isSymptomOf]->(o2)
+SET r79.text = 'Phát triển chứng phình động mạch trong não: Một khối phồng giống như quả bóng trong mạch máu trong não có thể gây chảy máu (xuất huyết) nếu bị vỡ.'
+
+MERGE (o1:disease {id: 'bệnh_thận_đa_nang_disease'})
+MERGE (o2:symptom {id: 'chứng_phình_động_mạch_symptom'})
+MERGE (o1)-[r80:relatedTo]->(o2)
+SET r80.text = 'Người bị bệnh thận đa nang có nguy cơ cao bị chứng phình động mạch và ngược lại, người có tiền sử gia đình bị chứng phình động mạch có nguy cơ cao bị thận đa nang.'
+
+MERGE (o1:symptom {id: 'chứng_phình_động_mạch_symptom'})
+MERGE (o2:disease {id: 'bệnh_thận_đa_nang_disease'})
+MERGE (o1)-[r81:relatedTo]->(o2)
+SET r81.text = 'Người bị bệnh thận đa nang có nguy cơ cao bị chứng phình động mạch và ngược lại, người có tiền sử gia đình bị chứng phình động mạch có nguy cơ cao bị thận đa nang.'
+
+MERGE (o1:lifestyle {id: 'mang_thai_lifestyle'})
+MERGE (o2:disease {id: 'bệnh_thận_đa_nang_disease'})
+MERGE (o1)-[r82:relatedTo]->(o2)
+SET r82.text = 'Mang thai thành công đối với hầu hết phụ nữ mắc bệnh thận đa nang.'
+
+MERGE (o1:symptom {id: 'cao_huyết_áp_symptom'})
+MERGE (o2:lifestyle {id: 'mang_thai_lifestyle'})
+MERGE (o1)-[r83:relatedTo]->(o2)
+SET r83.text = 'Tuy nhiên, trong một vài trường hợp, những người có nguy cơ bị cao huyết áp hoặc suy giảm chức năng thận trước khi mang thai, có thể phát triển một chứng rối loạn đe dọa tính mạng được gọi là tiền sản giật.'
+
+MERGE (o1:symptom {id: 'suy_giảm_chức_năng_thận_symptom'})
+MERGE (o2:lifestyle {id: 'mang_thai_lifestyle'})
+MERGE (o1)-[r84:relatedTo]->(o2)
+SET r84.text = 'Tuy nhiên, trong một vài trường hợp, những người có nguy cơ bị cao huyết áp hoặc suy giảm chức năng thận trước khi mang thai, có thể phát triển một chứng rối loạn đe dọa tính mạng được gọi là tiền sản giật.'
+
+MERGE (o1:disease {id: 'tiền_sản_giật_disease'})
+MERGE (o2:lifestyle {id: 'mang_thai_lifestyle'})
+MERGE (o1)-[r85:relatedTo]->(o2)
+SET r85.text = 'Tuy nhiên, trong một vài trường hợp, những người có nguy cơ bị cao huyết áp hoặc suy giảm chức năng thận trước khi mang thai, có thể phát triển một chứng rối loạn đe dọa tính mạng được gọi là tiền sản giật.'
+
+MERGE (o1:symptom {id: 'sa_van_hai_lá_symptom'})
+MERGE (o2:disease {id: 'bệnh_thận_đa_nang_disease'})
+MERGE (o1)-[r86:isSymptomOf]->(o2)
+SET r86.text = 'Cứ 4 người trưởng thành thì có 1 người mắc bệnh thận đa nang bị sa van hai lá.'
+
+MERGE (o1:organ {id: 'van_tim_organ'})
+MERGE (o2:symptom {id: 'sa_van_hai_lá_symptom'})
+MERGE (o1)-[r87:relatedTo]->(o2)
+SET r87.text = 'Khi điều này xảy ra, van tim không còn đóng đúng cách, điều này cho phép máu bị rò rỉ ngược lại.'
+
+MERGE (o1:disease {id: 'bệnh_túi_thừa_disease'})
+MERGE (o2:disease {id: 'bệnh_thận_đa_nang_disease'})
+MERGE (o1)-[r88:isSymptomOf]->(o2)
+SET r88.text = 'Sự suy yếu và các túi hoặc túi trong thành ruột kết (bệnh túi thừa) có thể phát triển ở những người bị bệnh thận đa nang.'
+
+MERGE (o1:symptom {id: 'chảy_máu_trong_nang_symptom'})
+MERGE (o2:disease {id: 'bệnh_thận_đa_nang_disease'})
+MERGE (o1)-[r89:isSymptomOf]->(o2)
+SET r89.text = 'Chảy máu trong nang gây tiểu máu đại thể: gặp 15-20% số bệnh nhân.'
+
+MERGE (o1:symptom {id: 'tiểu_máu_đại_thể_symptom'})
+MERGE (o2:disease {id: 'bệnh_thận_đa_nang_disease'})
+MERGE (o1)-[r90:isSymptomOf]->(o2)
+SET r90.text = 'Chảy máu trong nang gây tiểu máu đại thể: gặp 15-20% số bệnh nhân.'
+
+MERGE (o1:symptom {id: 'tiểu_máu_đại_thể_symptom'})
+MERGE (o2:cause {id: 'chấn_thương_cause'})
+MERGE (o1)-[r91:relatedTo]->(o2)
+SET r91.text = 'Tiểu máu đại thể thường xảy ra sau các chấn thương.'
+
+MERGE (o1:symptom {id: 'chảy_máu_quanh_thận_symptom'})
+MERGE (o2:disease {id: 'bệnh_thận_đa_nang_disease'})
+MERGE (o1)-[r92:isSymptomOf]->(o2)
+SET r92.text = 'Chảy máu quanh thận hiếm khi xảy ra, nếu có thường do chấn thương làm vỡ nang.'
+
+MERGE (o1:cause {id: 'chấn_thương_cause'})
+MERGE (o2:symptom {id: 'chảy_máu_quanh_thận_symptom'})
+MERGE (o1)-[r93:causes]->(o2)
+SET r93.text = 'Chảy máu quanh thận hiếm khi xảy ra, nếu có thường do chấn thương làm vỡ nang.'
+
+MERGE (o1:symptom {id: 'vỡ_nang_symptom'})
+MERGE (o2:cause {id: 'chấn_thương_cause'})
+MERGE (o1)-[r94:relatedTo]->(o2)
+SET r94.text = 'Chảy máu quanh thận hiếm khi xảy ra, nếu có thường do chấn thương làm vỡ nang.'
+
+MERGE (o1:symptom {id: 'nhiễm_khuẩn_symptom'})
+MERGE (o2:disease {id: 'bệnh_thận_đa_nang_disease'})
+MERGE (o1)-[r95:isSymptomOf]->(o2)
+SET r95.text = 'Đây là lý do chính khiến người bệnh phải nhập viện.'
+
+MERGE (o1:cause {id: 'vi_khuẩn_cause'})
+MERGE (o2:symptom {id: 'nhiễm_khuẩn_symptom'})
+MERGE (o1)-[r96:causes]->(o2)
+SET r96.text = 'Vi khuẩn tới thận theo đường ngược dòng.'
+
+MERGE (o1:organ {id: 'thận_organ'})
+MERGE (o2:symptom {id: 'nhiễm_khuẩn_symptom'})
+MERGE (o1)-[r97:relatedTo]->(o2)
+SET r97.text = 'Vi khuẩn tới thận theo đường ngược dòng.'
+
+MERGE (o1:symptom {id: 'nhiễm_khuẩn_nang_symptom'})
+MERGE (o2:organ {id: 'nang_organ'})
+MERGE (o1)-[r98:affects]->(o2)
+SET r98.text = 'Nếu nhiễm khuẩn nang, nang sẽ tăng kích thước và gây đau.'
+
+MERGE (o1:organ {id: 'nang_organ'})
+MERGE (o2:symptom {id: 'nhiễm_khuẩn_nang_symptom'})
+MERGE (o1)-[r99:relatedTo]->(o2)
+SET r99.text = 'Nếu nhiễm khuẩn nang, nang sẽ tăng kích thước và gây đau.'
+
+MERGE (o1:organ {id: 'nang_organ'})
+MERGE (o2:symptom {id: 'tăng_kích_thước_symptom'})
+MERGE (o1)-[r100:relatedTo]->(o2)
+SET r100.text = 'Nếu nhiễm khuẩn nang, nang sẽ tăng kích thước và gây đau.'
+
+MERGE (o1:organ {id: 'nang_organ'})
+MERGE (o2:symptom {id: 'gây_đau_symptom'})
+MERGE (o1)-[r101:relatedTo]->(o2)
+SET r101.text = 'Nếu nhiễm khuẩn nang, nang sẽ tăng kích thước và gây đau.'
+
+MERGE (o1:symptom {id: 'thận_to_symptom'})
+MERGE (o2:disease {id: 'bệnh_thận_đa_nang_disease'})
+MERGE (o1)-[r102:isSymptomOf]->(o2)
+SET r102.text = 'Khám có thận to, ấn vào cảm thấy đau'
+
+MERGE (o1:symptom {id: 'ấn_vào_cảm_thấy_đau_symptom'})
+MERGE (o2:disease {id: 'bệnh_thận_đa_nang_disease'})
+MERGE (o1)-[r103:isSymptomOf]->(o2)
+SET r103.text = 'Khám có thận to, ấn vào cảm thấy đau'
+
+MERGE (o1:symptom {id: 'sỏi_thận_symptom'})
+MERGE (o2:disease {id: 'bệnh_thận_đa_nang_disease'})
+MERGE (o1)-[r104:isSymptomOf]->(o2)
+SET r104.text = 'Có khoảng 11-34% số bệnh nhân mắc thận đa nang bị sỏi thận.'
+
+MERGE (o1:symptom {id: 'sỏi_nhỏ_symptom'})
+MERGE (o2:organ {id: 'thận_organ'})
+MERGE (o1)-[r105:relatedTo]->(o2)
+SET r105.text = 'Những trường hợp sỏi nhỏ trong thận thường khó chẩn đoán và dễ bị bỏ qua.'
+
+MERGE (o1:disease {id: 'ung_thư_thận_disease'})
+MERGE (o2:disease {id: 'bệnh_thận_đa_nang_disease'})
+MERGE (o1)-[r106:relatedTo]->(o2)
+SET r106.text = 'Gần 50% số ca ung thư thận xảy ra ở bệnh nhân mắc bệnh này (như ung thư tế bào thận, một số ít ung thư nhú thận).'
+
+MERGE (o1:disease {id: 'ung_thư_tế_bào_thận_disease'})
+MERGE (o2:disease {id: 'bệnh_thận_đa_nang_disease'})
+MERGE (o1)-[r107:relatedTo]->(o2)
+SET r107.text = 'Gần 50% số ca ung thư thận xảy ra ở bệnh nhân mắc bệnh này (như ung thư tế bào thận, một số ít ung thư nhú thận).'
+
+MERGE (o1:disease {id: 'ung_thư_nhú_thận_disease'})
+MERGE (o2:disease {id: 'bệnh_thận_đa_nang_disease'})
+MERGE (o1)-[r108:relatedTo]->(o2)
+SET r108.text = 'Gần 50% số ca ung thư thận xảy ra ở bệnh nhân mắc bệnh này (như ung thư tế bào thận, một số ít ung thư nhú thận).'
+
+MERGE (o1:symptom {id: 'hồng_cầu_niệu_symptom'})
+MERGE (o2:disease {id: 'ung_thư_thận_disease'})
+MERGE (o1)-[r109:isSymptomOf]->(o2)
+SET r109.text = 'Các triệu chứng được xem xét khi chẩn đoán, bao gồm hồng cầu niệu, đau thắt lưng, thận to, chảy máu trong nang.'
+
+MERGE (o1:symptom {id: 'đau_thắt_lưng_symptom'})
+MERGE (o2:disease {id: 'ung_thư_thận_disease'})
+MERGE (o1)-[r110:isSymptomOf]->(o2)
+SET r110.text = 'Các triệu chứng được xem xét khi chẩn đoán, bao gồm hồng cầu niệu, đau thắt lưng, thận to, chảy máu trong nang.'
+
+MERGE (o1:symptom {id: 'thận_to_symptom'})
+MERGE (o2:disease {id: 'ung_thư_thận_disease'})
+MERGE (o1)-[r111:isSymptomOf]->(o2)
+SET r111.text = 'Các triệu chứng được xem xét khi chẩn đoán, bao gồm hồng cầu niệu, đau thắt lưng, thận to, chảy máu trong nang.'
+
+MERGE (o1:symptom {id: 'chảy_máu_trong_nang_symptom'})
+MERGE (o2:disease {id: 'ung_thư_thận_disease'})
+MERGE (o1)-[r112:isSymptomOf]->(o2)
+SET r112.text = 'Các triệu chứng được xem xét khi chẩn đoán, bao gồm hồng cầu niệu, đau thắt lưng, thận to, chảy máu trong nang.'
+
+MERGE (o1:symptom {id: 'suy_thận_symptom'})
+MERGE (o2:disease {id: 'bệnh_thận_đa_nang_disease'})
+MERGE (o1)-[r113:isSymptomOf]->(o2)
+SET r113.text = 'Đây là biến chứng thường gặp nhất ở bệnh nhân bị bệnh thận đa nang.'
+
+MERGE (o1:symptom {id: 'giảm_khả_năng_cô_đặc_nước_tiểu_symptom'})
+MERGE (o2:disease {id: 'bệnh_thận_đa_nang_disease'})
+MERGE (o1)-[r114:isSymptomOf]->(o2)
+SET r114.text = 'Giảm khả năng cô đặc nước tiểu: Mức độ phụ thuộc vào thể tích nang và số lượng nang.'
+
+MERGE (o1:symptom {id: 'thể_tích_nang_symptom'})
+MERGE (o2:symptom {id: 'giảm_khả_năng_cô_đặc_nước_tiểu_symptom'})
+MERGE (o1)-[r115:relatedTo]->(o2)
+SET r115.text = 'Giảm khả năng cô đặc nước tiểu: Mức độ phụ thuộc vào thể tích nang và số lượng nang.'
+
+MERGE (o1:symptom {id: 'số_lượng_nang_symptom'})
+MERGE (o2:symptom {id: 'giảm_khả_năng_cô_đặc_nước_tiểu_symptom'})
+MERGE (o1)-[r116:relatedTo]->(o2)
+SET r116.text = 'Giảm khả năng cô đặc nước tiểu: Mức độ phụ thuộc vào thể tích nang và số lượng nang.'
+
+MERGE (o1:symptom {id: 'nồng_độ_natri_máu_symptom'})
+MERGE (o2:disease {id: 'bệnh_thận_đa_nang_disease'})
+MERGE (o1)-[r117:isSymptomOf]->(o2)
+SET r117.text = 'Nồng độ natri máu thường giảm nhẹ.'
+
+MERGE (o1:symptom {id: 'thiếu_máu_symptom'})
+MERGE (o2:disease {id: 'bệnh_thận_đa_nang_disease'})
+MERGE (o1)-[r118:isSymptomOf]->(o2)
+SET r118.text = 'Thiếu máu: hay gặp ở bệnh nhân suy thận giai đoạn nặng.'
+
+MERGE (o1:symptom {id: 'suy_thận_giai_đoạn_nặng_symptom'})
+MERGE (o2:symptom {id: 'thiếu_máu_symptom'})
+MERGE (o1)-[r119:relatedTo]->(o2)
+SET r119.text = 'Thiếu máu: hay gặp ở bệnh nhân suy thận giai đoạn nặng.'
+
+MERGE (o1:symptom {id: 'tăng_acid_uric_máu_symptom'})
+MERGE (o2:disease {id: 'bệnh_thận_đa_nang_disease'})
+MERGE (o1)-[r120:isSymptomOf]->(o2)
+SET r120.text = 'Tăng acid uric máu: do rối loạn tái hấp thu và bài tiết acid uric của ống thận.'
+
+MERGE (o1:cause {id: 'rối_loạn_tái_hấp_thu_cause'})
+MERGE (o2:symptom {id: 'tăng_acid_uric_máu_symptom'})
+MERGE (o1)-[r121:causes]->(o2)
+SET r121.text = 'Tăng acid uric máu: do rối loạn tái hấp thu và bài tiết acid uric của ống thận.'
+
+MERGE (o1:cause {id: 'bài_tiết_acid_uric_cause'})
+MERGE (o2:symptom {id: 'tăng_acid_uric_máu_symptom'})
+MERGE (o1)-[r122:causes]->(o2)
+SET r122.text = 'Tăng acid uric máu: do rối loạn tái hấp thu và bài tiết acid uric của ống thận.'
+
+MERGE (o1:disease {id: 'bệnh_thận_đa_nang_disease'})
+MERGE (o2:test {id: 'các_yếu_tố_thăm_khám_test'})
+MERGE (o1)-[r123:diagnosedBy]->(o2)
+SET r123.text = 'Để chẩn đoán chính xác bệnh thận đa nang, bác sĩ sẽ dựa vào các yếu tố thăm khám sau:'
+
+MERGE (o1:test {id: 'tiền_sử_gia_đình_test'})
+MERGE (o2:disease {id: 'bệnh_thận_đa_nang_disease'})
+MERGE (o1)-[r124:diagnosedBy]->(o2)
+SET r124.text = 'Tiền sử gia đình'
+
+MERGE (o1:test {id: 'kết_quả_siêu_âm_test'})
+MERGE (o2:disease {id: 'bệnh_thận_đa_nang_disease'})
+MERGE (o1)-[r125:diagnosedBy]->(o2)
+SET r125.text = 'Kết quả siêu âm cho thấy hai thận to, có nhiều nang kích cỡ khác nhau ở cả vùng vỏ và vùng tủy thận'
+
+MERGE (o1:symptom {id: 'hai_thận_to_symptom'})
+MERGE (o2:disease {id: 'bệnh_thận_đa_nang_disease'})
+MERGE (o1)-[r126:isSymptomOf]->(o2)
+SET r126.text = 'Kết quả siêu âm cho thấy hai thận to, có nhiều nang kích cỡ khác nhau ở cả vùng vỏ và vùng tủy thận'
+
+MERGE (o1:symptom {id: 'nhiều_nang_kích_cỡ_khác_nhau_ở_cả_vùng_vỏ_và_vùng_tủy_thận_symptom'})
+MERGE (o2:disease {id: 'bệnh_thận_đa_nang_disease'})
+MERGE (o1)-[r127:isSymptomOf]->(o2)
+SET r127.text = 'Kết quả siêu âm cho thấy hai thận to, có nhiều nang kích cỡ khác nhau ở cả vùng vỏ và vùng tủy thận'
+
+MERGE (o1:symptom {id: 'có_nang_ở_gan_symptom'})
+MERGE (o2:disease {id: 'bệnh_thận_đa_nang_disease'})
+MERGE (o1)-[r128:isSymptomOf]->(o2)
+SET r128.text = 'Có nang ở gan'
+
+MERGE (o1:test {id: 'chụp_cắt_lớp_thận_ct_scan_test'})
+MERGE (o2:disease {id: 'bệnh_thận_đa_nang_disease'})
+MERGE (o1)-[r129:diagnosedBy]->(o2)
+SET r129.text = 'Chụp cắt lớp thận CT scan'
+
+MERGE (o1:test {id: 'kỹ_thuật_gen_test'})
+MERGE (o2:disease {id: 'bệnh_thận_đa_nang_disease'})
+MERGE (o1)-[r130:diagnosedBy]->(o2)
+SET r130.text = 'Kỹ thuật gen xác định bất thường ở đầu xa nhánh ngắn của nhiễm sắc thể 16'
+
+MERGE (o1:cause {id: 'bất_thường_ở_đầu_xa_nhánh_ngắn_của_nhiễm_sắc_thể_16_cause'})
+MERGE (o2:disease {id: 'bệnh_thận_đa_nang_disease'})
+MERGE (o1)-[r131:causedBy]->(o2)
+SET r131.text = 'Kỹ thuật gen xác định bất thường ở đầu xa nhánh ngắn của nhiễm sắc thể 16'
+
+MERGE (o1:disease {id: 'bệnh_thận_đa_nang_disease'})
+MERGE (o2:treatment {id: 'điều_trị_triệu_chứng_và_biến_chứng_treatment'})
+MERGE (o1)-[r132:treatedBy]->(o2)
+SET r132.text = 'Nguyên tắc chung là điều trị triệu chứng và biến chứng'
+
+MERGE (o1:disease {id: 'nhiễm_khuẩn_thận_disease'})
+MERGE (o2:treatment {id: 'kháng_sinh_phù_hợp_treatment'})
+MERGE (o1)-[r133:treatedBy]->(o2)
+SET r133.text = 'Nhiễm khuẩn thận điều trị bằng kháng sinh phù hợp'
+
+MERGE (o1:disease {id: 'nhiễm_khuẩn_thận_disease'})
+MERGE (o2:disease {id: 'bệnh_thận_đa_nang_disease'})
+MERGE (o1)-[r134:isSymptomOf]->(o2)
+SET r134.text = 'Nhiễm khuẩn thận điều trị bằng kháng sinh phù hợp'
+
+MERGE (o1:disease {id: 'tăng_huyết_áp_disease'})
+MERGE (o2:treatment {id: 'các_nhóm_thuốc_hạ_huyết_áp_treatment'})
+MERGE (o1)-[r135:treatedBy]->(o2)
+SET r135.text = 'Tăng huyết áp điều trị bằng các nhóm thuốc hạ huyết áp'
+
+MERGE (o1:disease {id: 'tăng_huyết_áp_disease'})
+MERGE (o2:disease {id: 'bệnh_thận_đa_nang_disease'})
+MERGE (o1)-[r136:isSymptomOf]->(o2)
+SET r136.text = 'Tăng huyết áp điều trị bằng các nhóm thuốc hạ huyết áp'
+
+MERGE (o1:treatment {id: 'cắt_thận_treatment'})
+MERGE (o2:disease {id: 'bệnh_thận_đa_nang_disease'})
+MERGE (o1)-[r137:treatedBy]->(o2)
+SET r137.text = 'Cắt thận nếu nang thận quá to, biến chứng tiểu máu, nhiễm trùng tái phát (3)'
+
+MERGE (o1:symptom {id: 'nang_thận_quá_to_symptom'})
+MERGE (o2:disease {id: 'bệnh_thận_đa_nang_disease'})
+MERGE (o1)-[r138:isSymptomOf]->(o2)
+SET r138.text = 'Cắt thận nếu nang thận quá to, biến chứng tiểu máu, nhiễm trùng tái phát (3)'
+
+MERGE (o1:symptom {id: 'biến_chứng_tiểu_máu_symptom'})
+MERGE (o2:disease {id: 'bệnh_thận_đa_nang_disease'})
+MERGE (o1)-[r139:isSymptomOf]->(o2)
+SET r139.text = 'Cắt thận nếu nang thận quá to, biến chứng tiểu máu, nhiễm trùng tái phát (3)'
+
+MERGE (o1:symptom {id: 'nhiễm_trùng_tái_phát_symptom'})
+MERGE (o2:disease {id: 'bệnh_thận_đa_nang_disease'})
+MERGE (o1)-[r140:isSymptomOf]->(o2)
+SET r140.text = 'Cắt thận nếu nang thận quá to, biến chứng tiểu máu, nhiễm trùng tái phát (3)'
+
+MERGE (o1:disease {id: 'suy_thận_disease'})
+MERGE (o2:treatment {id: 'điều_trị_bảo_tồn_và_thay_thế_treatment'})
+MERGE (o1)-[r141:treatedBy]->(o2)
+SET r141.text = 'Suy thận, điều trị bảo tồn và thay thế khi suy thận giai đoạn cuối bằng lọc máu và ghép thận.'
+
+MERGE (o1:disease {id: 'suy_thận_disease'})
+MERGE (o2:disease {id: 'bệnh_thận_đa_nang_disease'})
+MERGE (o1)-[r142:isSymptomOf]->(o2)
+SET r142.text = 'Suy thận, điều trị bảo tồn và thay thế khi suy thận giai đoạn cuối bằng lọc máu và ghép thận.'
+
+MERGE (o1:treatment {id: 'lọc_máu_treatment'})
+MERGE (o2:disease {id: 'suy_thận_disease'})
+MERGE (o1)-[r143:treatedBy]->(o2)
+SET r143.text = 'Suy thận, điều trị bảo tồn và thay thế khi suy thận giai đoạn cuối bằng lọc máu và ghép thận.'
+
+MERGE (o1:treatment {id: 'ghép_thận_treatment'})
+MERGE (o2:disease {id: 'suy_thận_disease'})
+MERGE (o1)-[r144:treatedBy]->(o2)
+SET r144.text = 'Suy thận, điều trị bảo tồn và thay thế khi suy thận giai đoạn cuối bằng lọc máu và ghép thận.'
+
+MERGE (o1:treatment {id: 'lọc_màng_bụng_treatment'})
+MERGE (o2:disease {id: 'bệnh_thận_đa_nang_disease'})
+MERGE (o1)-[r145:treatedBy]->(o2)
+SET r145.text = 'Với những trường hợp nang không quá lớn, có thể lọc màng bụng,…'
+
+MERGE (o1:symptom {id: 'nang_không_quá_lớn_symptom'})
+MERGE (o2:disease {id: 'bệnh_thận_đa_nang_disease'})
+MERGE (o1)-[r146:isSymptomOf]->(o2)
+SET r146.text = 'Với những trường hợp nang không quá lớn, có thể lọc màng bụng,…'
+
+MERGE (o1:disease {id: 'bệnh_thận_đa_nang_disease'})
+MERGE (o2:treatment {id: 'bác_sĩ_di_truyền_treatment'})
+MERGE (o1)-[r147:relatedTo]->(o2)
+SET r147.text = 'Nếu mắc bệnh thận đa nang và đang cân nhắc có con, bạn nên tìm đến bác sĩ di truyền để được tư vấn và đánh giá nguy cơ truyền bệnh cho con cái.'

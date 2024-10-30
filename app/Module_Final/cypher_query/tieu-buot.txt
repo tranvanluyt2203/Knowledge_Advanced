@@ -1,0 +1,770 @@
+
+MERGE (o1:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o2:disease {id: 'nhiễm_khuẩn_đường_tiết_niệu_disease'})
+MERGE (o1)-[r0:isSymptomOf]->(o2)
+SET r0.text = 'Tình trạng tiểu buốt (đái buốt) là triệu chứng thường xuất hiện ít nhất 1 lần trong đời của mỗi người, nhất là ở nữ giới trong độ tuổi từ 20-50.'
+
+MERGE (o1:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o2:lifestyle {id: 'nữ_giới_lifestyle'})
+MERGE (o1)-[r1:associatedWith]->(o2)
+SET r1.text = 'Tình trạng tiểu buốt (đái buốt) là triệu chứng thường xuất hiện ít nhất 1 lần trong đời của mỗi người, nhất là ở nữ giới trong độ tuổi từ 20-50.'
+
+MERGE (o1:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o2:lifestyle {id: 'độ_tuổi_20-50_lifestyle'})
+MERGE (o1)-[r2:associatedWith]->(o2)
+SET r2.text = 'Tình trạng tiểu buốt (đái buốt) là triệu chứng thường xuất hiện ít nhất 1 lần trong đời của mỗi người, nhất là ở nữ giới trong độ tuổi từ 20-50.'
+
+MERGE (o1:disease {id: 'nhiễm_khuẩn_đường_tiết_niệu_disease'})
+MERGE (o2:organ {id: 'sức_khỏe_organ'})
+MERGE (o1)-[r3:affects]->(o2)
+SET r3.text = 'Đây là biểu hiện thường gặp của nhiễm khuẩn đường tiết niệu, khiến cho người bệnh đối diện với nhiều nguy cơ về sức khỏe và ảnh hưởng đến chất lượng cuộc sống'
+
+MERGE (o1:disease {id: 'nhiễm_khuẩn_đường_tiết_niệu_disease'})
+MERGE (o2:lifestyle {id: 'chất_lượng_cuộc_sống_lifestyle'})
+MERGE (o1)-[r4:affects]->(o2)
+SET r4.text = 'Đây là biểu hiện thường gặp của nhiễm khuẩn đường tiết niệu, khiến cho người bệnh đối diện với nhiều nguy cơ về sức khỏe và ảnh hưởng đến chất lượng cuộc sống'
+
+MERGE (o1:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o2:organ {id: 'kích_thích_bàng_quang__niệu_đạo_organ'})
+MERGE (o1)-[r5:isSymptomOf]->(o2)
+SET r5.text = 'Tiểu buốt là một thuật ngữ khá rộng, dùng để mô tả cảm giác nóng rát, nhói đau mỗi khi đi tiểu, nó gây nhiều phiền toái cho người bệnh.'
+
+MERGE (o1:cause {id: 'kích_thích_bàng_quang__niệu_đạo_cause'})
+MERGE (o2:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o1)-[r6:causes]->(o2)
+SET r6.text = 'Đây là kết quả của sự kích thích bàng quang, niệu đạo.'
+
+MERGE (o1:disease {id: 'nhiễm_trùng_đường_tiết_niệu_dưới_disease'})
+MERGE (o2:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o1)-[r7:causes]->(o2)
+SET r7.text = 'Nguyên nhân hay gặp nhất gây tiểu buốt là do nhiễm trùng đường tiết niệu dưới (viêm bàng quang, niệu đạo, tuyến tiền liệt), nhưng cũng có thể là nhiễm trùng đường tiết niệu trên (viêm thận, niệu quản).'
+
+MERGE (o1:disease {id: 'nhiễm_trùng_đường_tiết_niệu_trên_disease'})
+MERGE (o2:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o1)-[r8:causes]->(o2)
+SET r8.text = 'Nguyên nhân hay gặp nhất gây tiểu buốt là do nhiễm trùng đường tiết niệu dưới (viêm bàng quang, niệu đạo, tuyến tiền liệt), nhưng cũng có thể là nhiễm trùng đường tiết niệu trên (viêm thận, niệu quản).'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_disease'})
+MERGE (o2:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o1)-[r9:causes]->(o2)
+SET r9.text = 'Nguyên nhân hay gặp nhất gây tiểu buốt là do nhiễm trùng đường tiết niệu dưới (viêm bàng quang, niệu đạo, tuyến tiền liệt), nhưng cũng có thể là nhiễm trùng đường tiết niệu trên (viêm thận, niệu quản).'
+
+MERGE (o1:disease {id: 'viêm_niệu_đạo_disease'})
+MERGE (o2:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o1)-[r10:causes]->(o2)
+SET r10.text = 'Nguyên nhân hay gặp nhất gây tiểu buốt là do nhiễm trùng đường tiết niệu dưới (viêm bàng quang, niệu đạo, tuyến tiền liệt), nhưng cũng có thể là nhiễm trùng đường tiết niệu trên (viêm thận, niệu quản).'
+
+MERGE (o1:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o2:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o1)-[r11:causes]->(o2)
+SET r11.text = 'Nguyên nhân hay gặp nhất gây tiểu buốt là do nhiễm trùng đường tiết niệu dưới (viêm bàng quang, niệu đạo, tuyến tiền liệt), nhưng cũng có thể là nhiễm trùng đường tiết niệu trên (viêm thận, niệu quản).'
+
+MERGE (o1:disease {id: 'viêm_thận_disease'})
+MERGE (o2:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o1)-[r12:causes]->(o2)
+SET r12.text = 'Nguyên nhân hay gặp nhất gây tiểu buốt là do nhiễm trùng đường tiết niệu dưới (viêm bàng quang, niệu đạo, tuyến tiền liệt), nhưng cũng có thể là nhiễm trùng đường tiết niệu trên (viêm thận, niệu quản).'
+
+MERGE (o1:disease {id: 'viêm_niệu_quản_disease'})
+MERGE (o2:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o1)-[r13:causes]->(o2)
+SET r13.text = 'Nguyên nhân hay gặp nhất gây tiểu buốt là do nhiễm trùng đường tiết niệu dưới (viêm bàng quang, niệu đạo, tuyến tiền liệt), nhưng cũng có thể là nhiễm trùng đường tiết niệu trên (viêm thận, niệu quản).'
+
+MERGE (o1:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o2:lifestyle {id: 'nữ_giới_lifestyle'})
+MERGE (o1)-[r14:associatedWith]->(o2)
+SET r14.text = 'Tình trạng tiểu buốt thường xuất hiện ở nữ giới trong độ tuổi từ 20-50 và nam giới tuổi cao, ít gặp ở nam giới trẻ tuổi do liên quan tới bệnh lý tăng sản tuyến tiền liệt.'
+
+MERGE (o1:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o2:lifestyle {id: 'nam_giới_tuổi_cao_lifestyle'})
+MERGE (o1)-[r15:associatedWith]->(o2)
+SET r15.text = 'Tình trạng tiểu buốt thường xuất hiện ở nữ giới trong độ tuổi từ 20-50 và nam giới tuổi cao, ít gặp ở nam giới trẻ tuổi do liên quan tới bệnh lý tăng sản tuyến tiền liệt.'
+
+MERGE (o1:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o2:lifestyle {id: 'nam_giới_trẻ_tuổi_lifestyle'})
+MERGE (o1)-[r16:associatedWith]->(o2)
+SET r16.text = 'Tình trạng tiểu buốt thường xuất hiện ở nữ giới trong độ tuổi từ 20-50 và nam giới tuổi cao, ít gặp ở nam giới trẻ tuổi do liên quan tới bệnh lý tăng sản tuyến tiền liệt.'
+
+MERGE (o1:disease {id: 'tăng_sản_tuyến_tiền_liệt_disease'})
+MERGE (o2:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o1)-[r17:causes]->(o2)
+SET r17.text = 'Tình trạng tiểu buốt thường xuất hiện ở nữ giới trong độ tuổi từ 20-50 và nam giới tuổi cao, ít gặp ở nam giới trẻ tuổi do liên quan tới bệnh lý tăng sản tuyến tiền liệt.'
+
+MERGE (o1:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o2:cause {id: 'nhiều_nguyên_nhân_cause'})
+MERGE (o1)-[r18:causedBy]->(o2)
+SET r18.text = 'Theo các chuyên gia tiết niệu, Trung tâm Tiết niệu Thận học, Hệ thống BVĐK Tâm Anh, tình trạng tiểu buốt xuất phát từ nhiều nguyên nhân và rất dễ gây nhầm lẫn như:'
+
+MERGE (o1:symptom {id: 'đi_tiểu_đau_rát_symptom'})
+MERGE (o2:disease {id: 'nhiễm_trùng_đường_tiết_niệu_disease'})
+MERGE (o1)-[r19:isSymptomOf]->(o2)
+SET r19.text = 'Đi tiểu đau rát là một dấu hiệu phổ biến của tình trạng nhiễm trùng đường tiết niệu (Urinary Tract Infection - UTI).'
+
+MERGE (o1:cause {id: 'vi_khuẩn_e.coli_cause'})
+MERGE (o2:disease {id: 'nhiễm_trùng_đường_tiết_niệu_disease'})
+MERGE (o1)-[r20:causes]->(o2)
+SET r20.text = 'Nguyên nhân gây bệnh thường do vi khuẩn sống ở vùng đại tràng, hậu môn như E.Coli (chiếm 80% nguyên nhân gây bệnh) bội nhiễm ngược dòng vào đường tiểu của người bệnh qua quá trình sinh hoạt, quan hệ tình dục&#8230;'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_disease'})
+MERGE (o2:symptom {id: 'đau_khi_đi_tiểu_symptom'})
+MERGE (o1)-[r21:causes]->(o2)
+SET r21.text = 'Tình trạng viêm ở bất kỳ cơ quan nào trong đường tiết niệu như: bàng quang, niệu quản, niệu đạo, thận&#8230; đều có thể gây đau khi đi tiểu.'
+
+MERGE (o1:disease {id: 'viêm_niệu_quản_disease'})
+MERGE (o2:symptom {id: 'đau_khi_đi_tiểu_symptom'})
+MERGE (o1)-[r22:causes]->(o2)
+SET r22.text = 'Tình trạng viêm ở bất kỳ cơ quan nào trong đường tiết niệu như: bàng quang, niệu quản, niệu đạo, thận&#8230; đều có thể gây đau khi đi tiểu.'
+
+MERGE (o1:disease {id: 'viêm_niệu_đạo_disease'})
+MERGE (o2:symptom {id: 'đau_khi_đi_tiểu_symptom'})
+MERGE (o1)-[r23:causes]->(o2)
+SET r23.text = 'Tình trạng viêm ở bất kỳ cơ quan nào trong đường tiết niệu như: bàng quang, niệu quản, niệu đạo, thận&#8230; đều có thể gây đau khi đi tiểu.'
+
+MERGE (o1:disease {id: 'viêm_thận_disease'})
+MERGE (o2:symptom {id: 'đau_khi_đi_tiểu_symptom'})
+MERGE (o1)-[r24:causes]->(o2)
+SET r24.text = 'Tình trạng viêm ở bất kỳ cơ quan nào trong đường tiết niệu như: bàng quang, niệu quản, niệu đạo, thận&#8230; đều có thể gây đau khi đi tiểu.'
+
+MERGE (o1:cause {id: 'niệu_đạo_ngắn_cause'})
+MERGE (o2:disease {id: 'nhiễm_trùng_tiểu_disease'})
+MERGE (o1)-[r25:causes]->(o2)
+SET r25.text = 'Do cấu tạo niệu đạo ngắn nên nữ giới có nhiều nguy cơ nhiễm trùng tiểu hơn nam giới.'
+
+MERGE (o1:lifestyle {id: 'nữ_giới_lifestyle'})
+MERGE (o2:disease {id: 'nhiễm_trùng_tiểu_disease'})
+MERGE (o1)-[r26:associatedWith]->(o2)
+SET r26.text = 'Do cấu tạo niệu đạo ngắn nên nữ giới có nhiều nguy cơ nhiễm trùng tiểu hơn nam giới.'
+
+MERGE (o1:lifestyle {id: 'mang_thai_lifestyle'})
+MERGE (o2:disease {id: 'nhiễm_trùng_đường_tiết_niệu_disease'})
+MERGE (o1)-[r27:associatedWith]->(o2)
+SET r27.text = 'Những người đang mang thai hoặc mãn kinh thường bị xáo trộn các tuyến nội tiết cũng dễ mắc bệnh nhiễm trùng đường tiết niệu.'
+
+MERGE (o1:lifestyle {id: 'mãn_kinh_lifestyle'})
+MERGE (o2:disease {id: 'nhiễm_trùng_đường_tiết_niệu_disease'})
+MERGE (o1)-[r28:associatedWith]->(o2)
+SET r28.text = 'Những người đang mang thai hoặc mãn kinh thường bị xáo trộn các tuyến nội tiết cũng dễ mắc bệnh nhiễm trùng đường tiết niệu.'
+
+MERGE (o1:cause {id: 'xáo_trộn_các_tuyến_nội_tiết_cause'})
+MERGE (o2:disease {id: 'nhiễm_trùng_đường_tiết_niệu_disease'})
+MERGE (o1)-[r29:causes]->(o2)
+SET r29.text = 'Những người đang mang thai hoặc mãn kinh thường bị xáo trộn các tuyến nội tiết cũng dễ mắc bệnh nhiễm trùng đường tiết niệu.'
+
+MERGE (o1:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o2:disease {id: 'bệnh_lây_truyền_qua_đường_tình_dục_disease'})
+MERGE (o1)-[r30:isSymptomOf]->(o2)
+SET r30.text = 'Tiểu buốt cũng có thể là dấu hiệu của tình trạng nhiễm các bệnh lây truyền qua đường tình dục (STIs) bao gồm mụn rộp sinh dục, bệnh lậu và nấm chlamydia.'
+
+MERGE (o1:disease {id: 'mụn_rộp_sinh_dục_disease'})
+MERGE (o2:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o1)-[r31:causes]->(o2)
+SET r31.text = 'Tiểu buốt cũng có thể là dấu hiệu của tình trạng nhiễm các bệnh lây truyền qua đường tình dục (STIs) bao gồm mụn rộp sinh dục, bệnh lậu và nấm chlamydia.'
+
+MERGE (o1:disease {id: 'bệnh_lậu_disease'})
+MERGE (o2:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o1)-[r32:causes]->(o2)
+SET r32.text = 'Tiểu buốt cũng có thể là dấu hiệu của tình trạng nhiễm các bệnh lây truyền qua đường tình dục (STIs) bao gồm mụn rộp sinh dục, bệnh lậu và nấm chlamydia.'
+
+MERGE (o1:disease {id: 'nấm_chlamydia_disease'})
+MERGE (o2:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o1)-[r33:causes]->(o2)
+SET r33.text = 'Tiểu buốt cũng có thể là dấu hiệu của tình trạng nhiễm các bệnh lây truyền qua đường tình dục (STIs) bao gồm mụn rộp sinh dục, bệnh lậu và nấm chlamydia.'
+
+MERGE (o1:disease {id: 'bệnh_lây_truyền_qua_đường_tình_dục_disease'})
+MERGE (o2:organ {id: 'đường_tiết_niệu_organ'})
+MERGE (o1)-[r34:affects]->(o2)
+SET r34.text = 'Các bệnh lây truyền qua đường tình dục đôi khi không có triệu chứng, nhưng vẫn có khả năng lây lan vào đường tiết niệu, khiến cho người bệnh bị tiểu buốt.'
+
+MERGE (o1:disease {id: 'bệnh_lây_truyền_qua_đường_tình_dục_disease'})
+MERGE (o2:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o1)-[r35:causes]->(o2)
+SET r35.text = 'Các bệnh lây truyền qua đường tình dục đôi khi không có triệu chứng, nhưng vẫn có khả năng lây lan vào đường tiết niệu, khiến cho người bệnh bị tiểu buốt.'
+
+MERGE (o1:lifestyle {id: 'hoạt_động_tình_dục_lifestyle'})
+MERGE (o2:disease {id: 'bệnh_lây_truyền_qua_đường_tình_dục_disease'})
+MERGE (o1)-[r36:associatedWith]->(o2)
+SET r36.text = 'Do đó, người có hoạt động tình dục nên đi xét nghiệm để kiểm soát bệnh tốt hơn.'
+
+MERGE (o1:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o2:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o1)-[r37:isSymptomOf]->(o2)
+SET r37.text = 'Đây là tình trạng đặc thù của nam giới. Khi bị viêm tuyến tiền liệt, người bệnh có biểu hiện tiểu buốt, tiểu lắt nhắt, đau tức vùng bụng dưới, khám hậu môn ghi nhận tuyến tiền liệt căng đau nhiều.'
+
+MERGE (o1:symptom {id: 'tiểu_lắt_nhắt_symptom'})
+MERGE (o2:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o1)-[r38:isSymptomOf]->(o2)
+SET r38.text = 'Đây là tình trạng đặc thù của nam giới. Khi bị viêm tuyến tiền liệt, người bệnh có biểu hiện tiểu buốt, tiểu lắt nhắt, đau tức vùng bụng dưới, khám hậu môn ghi nhận tuyến tiền liệt căng đau nhiều.'
+
+MERGE (o1:symptom {id: 'đau_tức_vùng_bụng_dưới_symptom'})
+MERGE (o2:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o1)-[r39:isSymptomOf]->(o2)
+SET r39.text = 'Đây là tình trạng đặc thù của nam giới. Khi bị viêm tuyến tiền liệt, người bệnh có biểu hiện tiểu buốt, tiểu lắt nhắt, đau tức vùng bụng dưới, khám hậu môn ghi nhận tuyến tiền liệt căng đau nhiều.'
+
+MERGE (o1:symptom {id: 'tuyến_tiền_liệt_căng_đau_symptom'})
+MERGE (o2:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o1)-[r40:isSymptomOf]->(o2)
+SET r40.text = 'Đây là tình trạng đặc thù của nam giới. Khi bị viêm tuyến tiền liệt, người bệnh có biểu hiện tiểu buốt, tiểu lắt nhắt, đau tức vùng bụng dưới, khám hậu môn ghi nhận tuyến tiền liệt căng đau nhiều.'
+
+MERGE (o1:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_disease'})
+MERGE (o1)-[r41:causedBy]->(o2)
+SET r41.text = 'Một nguyên nhân khác gây ra tiểu buốt là viêm bàng quang, viêm niêm mạc bàng quang, viêm bàng quang kẽ...'
+
+MERGE (o1:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o2:disease {id: 'viêm_niêm_mạc_bàng_quang_disease'})
+MERGE (o1)-[r42:causedBy]->(o2)
+SET r42.text = 'Một nguyên nhân khác gây ra tiểu buốt là viêm bàng quang, viêm niêm mạc bàng quang, viêm bàng quang kẽ...'
+
+MERGE (o1:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o1)-[r43:causedBy]->(o2)
+SET r43.text = 'Một nguyên nhân khác gây ra tiểu buốt là viêm bàng quang, viêm niêm mạc bàng quang, viêm bàng quang kẽ...'
+
+MERGE (o1:symptom {id: 'đau_symptom'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_disease'})
+MERGE (o1)-[r44:isSymptomOf]->(o2)
+SET r44.text = 'Các triệu chứng này còn bao gồm đau và căng ở vùng bàng quang và vùng chậu.'
+
+MERGE (o1:symptom {id: 'căng_symptom'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_disease'})
+MERGE (o1)-[r45:isSymptomOf]->(o2)
+SET r45.text = 'Các triệu chứng này còn bao gồm đau và căng ở vùng bàng quang và vùng chậu.'
+
+MERGE (o1:treatment {id: 'xạ_trị_treatment'})
+MERGE (o2:symptom {id: 'đau_bàng_quang_symptom'})
+MERGE (o1)-[r46:causes]->(o2)
+SET r46.text = 'Trong một số trường hợp, xạ trị có thể gây đau bàng quang và ảnh hưởng đến các cơ quan khác của đường tiết niệu.'
+
+MERGE (o1:treatment {id: 'xạ_trị_treatment'})
+MERGE (o2:organ {id: 'cơ_quan_của_đường_tiết_niệu_organ'})
+MERGE (o1)-[r47:affects]->(o2)
+SET r47.text = 'Trong một số trường hợp, xạ trị có thể gây đau bàng quang và ảnh hưởng đến các cơ quan khác của đường tiết niệu.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_do_bức_xạ_disease'})
+MERGE (o2:treatment {id: 'xạ_trị_treatment'})
+MERGE (o1)-[r48:causedBy]->(o2)
+SET r48.text = 'Tình trạng này được gọi là viêm bàng quang do bức xạ.'
+
+MERGE (o1:disease {id: 'viêm_niệu_đạo_disease'})
+MERGE (o2:cause {id: 'vi_khuẩn_cause'})
+MERGE (o1)-[r49:causedBy]->(o2)
+SET r49.text = 'Viêm niệu đạo thường là do vi khuẩn tấn công.'
+
+MERGE (o1:symptom {id: 'đau_buốt_khi_đi_tiểu_symptom'})
+MERGE (o2:disease {id: 'viêm_niệu_đạo_disease'})
+MERGE (o1)-[r50:isSymptomOf]->(o2)
+SET r50.text = 'Tình trạng này không chỉ khiến cho người bệnh đau buốt khi đi tiểu mà còn có thể làm tăng cảm giác muốn đi tiểu thường xuyên.'
+
+MERGE (o1:symptom {id: 'tăng_cảm_giác_muốn_đi_tiểu_thường_xuyên_symptom'})
+MERGE (o2:disease {id: 'viêm_niệu_đạo_disease'})
+MERGE (o1)-[r51:isSymptomOf]->(o2)
+SET r51.text = 'Tình trạng này không chỉ khiến cho người bệnh đau buốt khi đi tiểu mà còn có thể làm tăng cảm giác muốn đi tiểu thường xuyên.'
+
+MERGE (o1:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o2:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o1)-[r52:causedBy]->(o2)
+SET r52.text = 'Đi tiểu buốt cũng có thể do bị viêm mào tinh hoàn ở nam giới.'
+
+MERGE (o1:organ {id: 'mào_tinh_hoàn_organ'})
+MERGE (o2:organ {id: 'phía_sau_tinh_hoàn_organ'})
+MERGE (o1)-[r53:locatedIn]->(o2)
+SET r53.text = 'Mào tinh hoàn nằm ở phía sau của tinh hoàn, có chức năng lưu trữ và vận chuyển tinh trùng từ tinh hoàn.'
+
+MERGE (o1:disease {id: 'viêm_vùng_chậu_disease'})
+MERGE (o2:cause {id: 'vi_khuẩn_cause'})
+MERGE (o1)-[r54:causedBy]->(o2)
+SET r54.text = 'Viêm vùng chậu là tình trạng nhiễm trùng nghiêm trọng, thường do nguyên nhân vi khuẩn, có thể ảnh hưởng đến ống dẫn trứng, buồng trứng, cổ tử cung và tử cung… gây đau bụng, đau khi quan hệ tình dục, tiểu buốt và một số các triệu chứng khác.'
+
+MERGE (o1:disease {id: 'viêm_vùng_chậu_disease'})
+MERGE (o2:organ {id: 'ống_dẫn_trứng_organ'})
+MERGE (o1)-[r55:affects]->(o2)
+SET r55.text = 'Viêm vùng chậu là tình trạng nhiễm trùng nghiêm trọng, thường do nguyên nhân vi khuẩn, có thể ảnh hưởng đến ống dẫn trứng, buồng trứng, cổ tử cung và tử cung… gây đau bụng, đau khi quan hệ tình dục, tiểu buốt và một số các triệu chứng khác.'
+
+MERGE (o1:disease {id: 'viêm_vùng_chậu_disease'})
+MERGE (o2:organ {id: 'buồng_trứng_organ'})
+MERGE (o1)-[r56:affects]->(o2)
+SET r56.text = 'Viêm vùng chậu là tình trạng nhiễm trùng nghiêm trọng, thường do nguyên nhân vi khuẩn, có thể ảnh hưởng đến ống dẫn trứng, buồng trứng, cổ tử cung và tử cung… gây đau bụng, đau khi quan hệ tình dục, tiểu buốt và một số các triệu chứng khác.'
+
+MERGE (o1:disease {id: 'viêm_vùng_chậu_disease'})
+MERGE (o2:organ {id: 'cổ_tử_cung_organ'})
+MERGE (o1)-[r57:affects]->(o2)
+SET r57.text = 'Viêm vùng chậu là tình trạng nhiễm trùng nghiêm trọng, thường do nguyên nhân vi khuẩn, có thể ảnh hưởng đến ống dẫn trứng, buồng trứng, cổ tử cung và tử cung… gây đau bụng, đau khi quan hệ tình dục, tiểu buốt và một số các triệu chứng khác.'
+
+MERGE (o1:disease {id: 'viêm_vùng_chậu_disease'})
+MERGE (o2:organ {id: 'tử_cung_organ'})
+MERGE (o1)-[r58:affects]->(o2)
+SET r58.text = 'Viêm vùng chậu là tình trạng nhiễm trùng nghiêm trọng, thường do nguyên nhân vi khuẩn, có thể ảnh hưởng đến ống dẫn trứng, buồng trứng, cổ tử cung và tử cung… gây đau bụng, đau khi quan hệ tình dục, tiểu buốt và một số các triệu chứng khác.'
+
+MERGE (o1:disease {id: 'viêm_vùng_chậu_disease'})
+MERGE (o2:symptom {id: 'đau_bụng_symptom'})
+MERGE (o1)-[r59:isSymptomOf]->(o2)
+SET r59.text = 'Viêm vùng chậu là tình trạng nhiễm trùng nghiêm trọng, thường do nguyên nhân vi khuẩn, có thể ảnh hưởng đến ống dẫn trứng, buồng trứng, cổ tử cung và tử cung… gây đau bụng, đau khi quan hệ tình dục, tiểu buốt và một số các triệu chứng khác.'
+
+MERGE (o1:disease {id: 'viêm_vùng_chậu_disease'})
+MERGE (o2:symptom {id: 'đau_khi_quan_hệ_tình_dục_symptom'})
+MERGE (o1)-[r60:isSymptomOf]->(o2)
+SET r60.text = 'Viêm vùng chậu là tình trạng nhiễm trùng nghiêm trọng, thường do nguyên nhân vi khuẩn, có thể ảnh hưởng đến ống dẫn trứng, buồng trứng, cổ tử cung và tử cung… gây đau bụng, đau khi quan hệ tình dục, tiểu buốt và một số các triệu chứng khác.'
+
+MERGE (o1:disease {id: 'viêm_vùng_chậu_disease'})
+MERGE (o2:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o1)-[r61:isSymptomOf]->(o2)
+SET r61.text = 'Viêm vùng chậu là tình trạng nhiễm trùng nghiêm trọng, thường do nguyên nhân vi khuẩn, có thể ảnh hưởng đến ống dẫn trứng, buồng trứng, cổ tử cung và tử cung… gây đau bụng, đau khi quan hệ tình dục, tiểu buốt và một số các triệu chứng khác.'
+
+MERGE (o1:disease {id: 'tắc_nghẽn_niệu_quản_disease'})
+MERGE (o2:disease {id: 'viêm_nhiễm_đường_tiết_niệu_disease'})
+MERGE (o1)-[r62:causes]->(o2)
+SET r62.text = 'Tình trạng tắc nghẽn niệu quản khiến cho nước tiểu không thoát được ra ngoài được, chảy ngược vào thận, gây viêm nhiễm đường tiết niệu.'
+
+MERGE (o1:disease {id: 'tắc_nghẽn_niệu_quản_disease'})
+MERGE (o2:organ {id: 'thận_organ'})
+MERGE (o1)-[r63:affects]->(o2)
+SET r63.text = 'Tình trạng tắc nghẽn niệu quản khiến cho nước tiểu không thoát được ra ngoài được, chảy ngược vào thận, gây viêm nhiễm đường tiết niệu.'
+
+MERGE (o1:disease {id: 'tắc_nghẽn_niệu_quản_disease'})
+MERGE (o2:symptom {id: 'tiểu_ít_symptom'})
+MERGE (o1)-[r64:isSymptomOf]->(o2)
+SET r64.text = 'Đây cũng là một trong những nguyên nhân gây tiểu ít, tiểu buốt, tiểu không sạch…'
+
+MERGE (o1:disease {id: 'tắc_nghẽn_niệu_quản_disease'})
+MERGE (o2:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o1)-[r65:isSymptomOf]->(o2)
+SET r65.text = 'Đây cũng là một trong những nguyên nhân gây tiểu ít, tiểu buốt, tiểu không sạch…'
+
+MERGE (o1:disease {id: 'tắc_nghẽn_niệu_quản_disease'})
+MERGE (o2:symptom {id: 'tiểu_không_sạch_symptom'})
+MERGE (o1)-[r66:isSymptomOf]->(o2)
+SET r66.text = 'Đây cũng là một trong những nguyên nhân gây tiểu ít, tiểu buốt, tiểu không sạch…'
+
+MERGE (o1:disease {id: 'sỏi_đường_tiết_niệu_disease'})
+MERGE (o2:cause {id: 'tinh_thể_lắng_đọng_cause'})
+MERGE (o1)-[r67:causedBy]->(o2)
+SET r67.text = 'Sỏi đường tiết niệu hình thành do các tinh thể lắng đọng, là nguyên nhân khiến cho dòng nước tiểu bị cản trở hay đường tiết niệu bị viêm nhiễm.'
+
+MERGE (o1:disease {id: 'sỏi_đường_tiết_niệu_disease'})
+MERGE (o2:disease {id: 'viêm_nhiễm_đường_tiết_niệu_disease'})
+MERGE (o1)-[r68:causes]->(o2)
+SET r68.text = 'Sỏi đường tiết niệu hình thành do các tinh thể lắng đọng, là nguyên nhân khiến cho dòng nước tiểu bị cản trở hay đường tiết niệu bị viêm nhiễm.'
+
+MERGE (o1:disease {id: 'sỏi_đường_tiết_niệu_disease'})
+MERGE (o2:symptom {id: 'không_thoải_mái_khi_đi_tiểu_symptom'})
+MERGE (o1)-[r69:isSymptomOf]->(o2)
+SET r69.text = 'Người bị sỏi đường tiết niệu sẽ có cảm giác không thoải mái khi đi tiểu và đau nhói.'
+
+MERGE (o1:disease {id: 'sỏi_đường_tiết_niệu_disease'})
+MERGE (o2:symptom {id: 'đau_nhói_symptom'})
+MERGE (o1)-[r70:isSymptomOf]->(o2)
+SET r70.text = 'Người bị sỏi đường tiết niệu sẽ có cảm giác không thoải mái khi đi tiểu và đau nhói.'
+
+MERGE (o1:treatment {id: 'thuốc_điều_trị_ung_thư_treatment'})
+MERGE (o2:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o1)-[r71:causes]->(o2)
+SET r71.text = 'Một số loại thuốc như thuốc điều trị ung thư và một số loại thuốc kháng sinh có thể gây ra tác dụng phụ là đi tiểu buốt.'
+
+MERGE (o1:treatment {id: 'thuốc_kháng_sinh_treatment'})
+MERGE (o2:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o1)-[r72:causes]->(o2)
+SET r72.text = 'Một số loại thuốc như thuốc điều trị ung thư và một số loại thuốc kháng sinh có thể gây ra tác dụng phụ là đi tiểu buốt.'
+
+MERGE (o1:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o2:lifestyle {id: 'sản_phẩm_tẩy_rửa_mạnh_lifestyle'})
+MERGE (o1)-[r73:causedBy]->(o2)
+SET r73.text = 'Đôi khi tiểu buốt không phải do nguyên nhân nhiễm trùng, mà do các sản phẩm người bệnh sử dụng hàng ngày ở vùng sinh dục có tính tẩy rửa mạnh, gây kích ứng cho các mô ở âm đạo, dương vật.'
+
+MERGE (o1:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o2:cause {id: 'kích_ứng_mô_cause'})
+MERGE (o1)-[r74:causedBy]->(o2)
+SET r74.text = 'Đôi khi tiểu buốt không phải do nguyên nhân nhiễm trùng, mà do các sản phẩm người bệnh sử dụng hàng ngày ở vùng sinh dục có tính tẩy rửa mạnh, gây kích ứng cho các mô ở âm đạo, dương vật.'
+
+MERGE (o1:cause {id: 'hóa_chất_trong_bột_giặt_cause'})
+MERGE (o2:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o1)-[r75:causes]->(o2)
+SET r75.text = 'Hóa chất có trong bột giặt và các sản phẩm vệ sinh khác cũng có thể gây kích ứng và dẫn đến tiểu buốt.'
+
+MERGE (o1:cause {id: 'hóa_chất_trong_sản_phẩm_vệ_sinh_cause'})
+MERGE (o2:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o1)-[r76:causes]->(o2)
+SET r76.text = 'Hóa chất có trong bột giặt và các sản phẩm vệ sinh khác cũng có thể gây kích ứng và dẫn đến tiểu buốt.'
+
+MERGE (o1:lifestyle {id: 'nữ_giới_lifestyle'})
+MERGE (o2:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o1)-[r77:associatedWith]->(o2)
+SET r77.text = 'Ngoài ra, các yếu tố sau đây cũng có thể làm tăng nguy cơ tiểu buốt:  Nữ giới Người mắc đái tháo đường Người cao tuổi Người mắc các bệnh về tuyến tiền liệt Phụ nữ mang thai Người có đặt ống thông tiểu'
+
+MERGE (o1:disease {id: 'đái_tháo_đường_disease'})
+MERGE (o2:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o1)-[r78:associatedWith]->(o2)
+SET r78.text = 'Ngoài ra, các yếu tố sau đây cũng có thể làm tăng nguy cơ tiểu buốt:  Nữ giới Người mắc đái tháo đường Người cao tuổi Người mắc các bệnh về tuyến tiền liệt Phụ nữ mang thai Người có đặt ống thông tiểu'
+
+MERGE (o1:lifestyle {id: 'người_cao_tuổi_lifestyle'})
+MERGE (o2:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o1)-[r79:associatedWith]->(o2)
+SET r79.text = 'Ngoài ra, các yếu tố sau đây cũng có thể làm tăng nguy cơ tiểu buốt:  Nữ giới Người mắc đái tháo đường Người cao tuổi Người mắc các bệnh về tuyến tiền liệt Phụ nữ mang thai Người có đặt ống thông tiểu'
+
+MERGE (o1:disease {id: 'bệnh_về_tuyến_tiền_liệt_disease'})
+MERGE (o2:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o1)-[r80:associatedWith]->(o2)
+SET r80.text = 'Ngoài ra, các yếu tố sau đây cũng có thể làm tăng nguy cơ tiểu buốt:  Nữ giới Người mắc đái tháo đường Người cao tuổi Người mắc các bệnh về tuyến tiền liệt Phụ nữ mang thai Người có đặt ống thông tiểu'
+
+MERGE (o1:lifestyle {id: 'phụ_nữ_mang_thai_lifestyle'})
+MERGE (o2:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o1)-[r81:associatedWith]->(o2)
+SET r81.text = 'Ngoài ra, các yếu tố sau đây cũng có thể làm tăng nguy cơ tiểu buốt:  Nữ giới Người mắc đái tháo đường Người cao tuổi Người mắc các bệnh về tuyến tiền liệt Phụ nữ mang thai Người có đặt ống thông tiểu'
+
+MERGE (o1:treatment {id: 'đặt_ống_thông_tiểu_treatment'})
+MERGE (o2:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o1)-[r82:associatedWith]->(o2)
+SET r82.text = 'Ngoài ra, các yếu tố sau đây cũng có thể làm tăng nguy cơ tiểu buốt:  Nữ giới Người mắc đái tháo đường Người cao tuổi Người mắc các bệnh về tuyến tiền liệt Phụ nữ mang thai Người có đặt ống thông tiểu'
+
+MERGE (o1:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o2:symptom {id: 'cảm_giác_nóng_rát_symptom'})
+MERGE (o1)-[r83:isSymptomOf]->(o2)
+SET r83.text = 'Tình trạng tiểu buốt có những biểu hiện điển hình là cảm giác nóng rát, khó chịu khi đi vệ sinh.'
+
+MERGE (o1:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o2:symptom {id: 'khó_chịu_khi_đi_vệ_sinh_symptom'})
+MERGE (o1)-[r84:isSymptomOf]->(o2)
+SET r84.text = 'Tình trạng tiểu buốt có những biểu hiện điển hình là cảm giác nóng rát, khó chịu khi đi vệ sinh.'
+
+MERGE (o1:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o2:symptom {id: 'cơn_đau_buốt_kéo_dài_hơn_24_giờ_symptom'})
+MERGE (o1)-[r85:isSymptomOf]->(o2)
+SET r85.text = 'Nếu người bệnh đi tiểu buốt và có thêm các triệu chứng sau đây, hãy đến ngay các cơ sở y tế:  Cơn đau buốt kéo dài hơn 24 giờ Cơn đau kèm theo sốt Vùng kín tiết dịch Nước tiểu có mùi lạ, lẫn máu hoặc đục Tiểu buốt có kèm theo đau bụng Có các bệnh về bàng quang hoặc sỏi thận Đau ở hông hoặc lưng'
+
+MERGE (o1:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o2:symptom {id: 'cơn_đau_kèm_theo_sốt_symptom'})
+MERGE (o1)-[r86:isSymptomOf]->(o2)
+SET r86.text = 'Nếu người bệnh đi tiểu buốt và có thêm các triệu chứng sau đây, hãy đến ngay các cơ sở y tế:  Cơn đau buốt kéo dài hơn 24 giờ Cơn đau kèm theo sốt Vùng kín tiết dịch Nước tiểu có mùi lạ, lẫn máu hoặc đục Tiểu buốt có kèm theo đau bụng Có các bệnh về bàng quang hoặc sỏi thận Đau ở hông hoặc lưng'
+
+MERGE (o1:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o2:symptom {id: 'vùng_kín_tiết_dịch_symptom'})
+MERGE (o1)-[r87:isSymptomOf]->(o2)
+SET r87.text = 'Nếu người bệnh đi tiểu buốt và có thêm các triệu chứng sau đây, hãy đến ngay các cơ sở y tế:  Cơn đau buốt kéo dài hơn 24 giờ Cơn đau kèm theo sốt Vùng kín tiết dịch Nước tiểu có mùi lạ, lẫn máu hoặc đục Tiểu buốt có kèm theo đau bụng Có các bệnh về bàng quang hoặc sỏi thận Đau ở hông hoặc lưng'
+
+MERGE (o1:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o2:symptom {id: 'nước_tiểu_có_mùi_lạ_symptom'})
+MERGE (o1)-[r88:isSymptomOf]->(o2)
+SET r88.text = 'Nếu người bệnh đi tiểu buốt và có thêm các triệu chứng sau đây, hãy đến ngay các cơ sở y tế:  Cơn đau buốt kéo dài hơn 24 giờ Cơn đau kèm theo sốt Vùng kín tiết dịch Nước tiểu có mùi lạ, lẫn máu hoặc đục Tiểu buốt có kèm theo đau bụng Có các bệnh về bàng quang hoặc sỏi thận Đau ở hông hoặc lưng'
+
+MERGE (o1:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o2:symptom {id: 'nước_tiểu_lẫn_máu_symptom'})
+MERGE (o1)-[r89:isSymptomOf]->(o2)
+SET r89.text = 'Nếu người bệnh đi tiểu buốt và có thêm các triệu chứng sau đây, hãy đến ngay các cơ sở y tế:  Cơn đau buốt kéo dài hơn 24 giờ Cơn đau kèm theo sốt Vùng kín tiết dịch Nước tiểu có mùi lạ, lẫn máu hoặc đục Tiểu buốt có kèm theo đau bụng Có các bệnh về bàng quang hoặc sỏi thận Đau ở hông hoặc lưng'
+
+MERGE (o1:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o2:symptom {id: 'nước_tiểu_đục_symptom'})
+MERGE (o1)-[r90:isSymptomOf]->(o2)
+SET r90.text = 'Nếu người bệnh đi tiểu buốt và có thêm các triệu chứng sau đây, hãy đến ngay các cơ sở y tế:  Cơn đau buốt kéo dài hơn 24 giờ Cơn đau kèm theo sốt Vùng kín tiết dịch Nước tiểu có mùi lạ, lẫn máu hoặc đục Tiểu buốt có kèm theo đau bụng Có các bệnh về bàng quang hoặc sỏi thận Đau ở hông hoặc lưng'
+
+MERGE (o1:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o2:symptom {id: 'tiểu_buốt_có_kèm_theo_đau_bụng_symptom'})
+MERGE (o1)-[r91:isSymptomOf]->(o2)
+SET r91.text = 'Nếu người bệnh đi tiểu buốt và có thêm các triệu chứng sau đây, hãy đến ngay các cơ sở y tế:  Cơn đau buốt kéo dài hơn 24 giờ Cơn đau kèm theo sốt Vùng kín tiết dịch Nước tiểu có mùi lạ, lẫn máu hoặc đục Tiểu buốt có kèm theo đau bụng Có các bệnh về bàng quang hoặc sỏi thận Đau ở hông hoặc lưng'
+
+MERGE (o1:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o2:disease {id: 'bệnh_về_bàng_quang_disease'})
+MERGE (o1)-[r92:isSymptomOf]->(o2)
+SET r92.text = 'Nếu người bệnh đi tiểu buốt và có thêm các triệu chứng sau đây, hãy đến ngay các cơ sở y tế:  Cơn đau buốt kéo dài hơn 24 giờ Cơn đau kèm theo sốt Vùng kín tiết dịch Nước tiểu có mùi lạ, lẫn máu hoặc đục Tiểu buốt có kèm theo đau bụng Có các bệnh về bàng quang hoặc sỏi thận Đau ở hông hoặc lưng'
+
+MERGE (o1:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o2:disease {id: 'sỏi_thận_disease'})
+MERGE (o1)-[r93:isSymptomOf]->(o2)
+SET r93.text = 'Nếu người bệnh đi tiểu buốt và có thêm các triệu chứng sau đây, hãy đến ngay các cơ sở y tế:  Cơn đau buốt kéo dài hơn 24 giờ Cơn đau kèm theo sốt Vùng kín tiết dịch Nước tiểu có mùi lạ, lẫn máu hoặc đục Tiểu buốt có kèm theo đau bụng Có các bệnh về bàng quang hoặc sỏi thận Đau ở hông hoặc lưng'
+
+MERGE (o1:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o2:symptom {id: 'đau_ở_hông_symptom'})
+MERGE (o1)-[r94:isSymptomOf]->(o2)
+SET r94.text = 'Nếu người bệnh đi tiểu buốt và có thêm các triệu chứng sau đây, hãy đến ngay các cơ sở y tế:  Cơn đau buốt kéo dài hơn 24 giờ Cơn đau kèm theo sốt Vùng kín tiết dịch Nước tiểu có mùi lạ, lẫn máu hoặc đục Tiểu buốt có kèm theo đau bụng Có các bệnh về bàng quang hoặc sỏi thận Đau ở hông hoặc lưng'
+
+MERGE (o1:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o2:symptom {id: 'đau_ở_lưng_symptom'})
+MERGE (o1)-[r95:isSymptomOf]->(o2)
+SET r95.text = 'Nếu người bệnh đi tiểu buốt và có thêm các triệu chứng sau đây, hãy đến ngay các cơ sở y tế:  Cơn đau buốt kéo dài hơn 24 giờ Cơn đau kèm theo sốt Vùng kín tiết dịch Nước tiểu có mùi lạ, lẫn máu hoặc đục Tiểu buốt có kèm theo đau bụng Có các bệnh về bàng quang hoặc sỏi thận Đau ở hông hoặc lưng'
+
+MERGE (o1:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o2:disease {id: 'bệnh_lý_đường_tiết_niệu_disease'})
+MERGE (o1)-[r96:isSymptomOf]->(o2)
+SET r96.text = 'Đi tiểu buốt là dấu hiệu của một số bệnh lý đường tiết niệu.'
+
+MERGE (o1:cause {id: 'vi_khuẩn_cause'})
+MERGE (o2:disease {id: 'viêm_nhiễm_disease'})
+MERGE (o1)-[r97:causes]->(o2)
+SET r97.text = 'Vi khuẩn làm người bệnh tiểu buốt, tiểu gắt có thể theo niệu quản tấn công vào bàng quang gây viêm nhiễm hoặc do vi khuẩn có trong máu hoặc hệ thống bạch huyết.'
+
+MERGE (o1:cause {id: 'vi_khuẩn_cause'})
+MERGE (o2:organ {id: 'bàng_quang_organ'})
+MERGE (o1)-[r98:affects]->(o2)
+SET r98.text = 'Vi khuẩn làm người bệnh tiểu buốt, tiểu gắt có thể theo niệu quản tấn công vào bàng quang gây viêm nhiễm hoặc do vi khuẩn có trong máu hoặc hệ thống bạch huyết.'
+
+MERGE (o1:cause {id: 'vi_khuẩn_cause'})
+MERGE (o2:organ {id: 'máu_organ'})
+MERGE (o1)-[r99:affects]->(o2)
+SET r99.text = 'Vi khuẩn làm người bệnh tiểu buốt, tiểu gắt có thể theo niệu quản tấn công vào bàng quang gây viêm nhiễm hoặc do vi khuẩn có trong máu hoặc hệ thống bạch huyết.'
+
+MERGE (o1:cause {id: 'vi_khuẩn_cause'})
+MERGE (o2:organ {id: 'hệ_thống_bạch_huyết_organ'})
+MERGE (o1)-[r100:affects]->(o2)
+SET r100.text = 'Vi khuẩn làm người bệnh tiểu buốt, tiểu gắt có thể theo niệu quản tấn công vào bàng quang gây viêm nhiễm hoặc do vi khuẩn có trong máu hoặc hệ thống bạch huyết.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_disease'})
+MERGE (o2:disease {id: 'nhiễm_trùng_tiểu_disease'})
+MERGE (o1)-[r101:causedBy]->(o2)
+SET r101.text = 'Thông thường, viêm bàng quang do nhiễm trùng tiểu thấp phổ biến hơn.'
+
+MERGE (o1:cause {id: 'vi_khuẩn_cause'})
+MERGE (o2:organ {id: 'bể_thận_organ'})
+MERGE (o1)-[r102:affects]->(o2)
+SET r102.text = 'Ngoài tấn công bàng quang, vi khuẩn còn có thể tấn công bể thận làm cho thận bị sưng tấy và có nguy cơ tổn thương không phục hồi.'
+
+MERGE (o1:cause {id: 'vi_khuẩn_cause'})
+MERGE (o2:symptom {id: 'thận_bị_sưng_tấy_symptom'})
+MERGE (o1)-[r103:causes]->(o2)
+SET r103.text = 'Ngoài tấn công bàng quang, vi khuẩn còn có thể tấn công bể thận làm cho thận bị sưng tấy và có nguy cơ tổn thương không phục hồi.'
+
+MERGE (o1:cause {id: 'vi_khuẩn_cause'})
+MERGE (o2:symptom {id: 'tổn_thương_thận_symptom'})
+MERGE (o1)-[r104:causes]->(o2)
+SET r104.text = 'Ngoài tấn công bàng quang, vi khuẩn còn có thể tấn công bể thận làm cho thận bị sưng tấy và có nguy cơ tổn thương không phục hồi.'
+
+MERGE (o1:disease {id: 'viêm_bể_thận_disease'})
+MERGE (o2:symptom {id: 'đe_dọa_đến_tính_mạng_symptom'})
+MERGE (o1)-[r105:isSymptomOf]->(o2)
+SET r105.text = 'Người bị viêm bể thận dễ chuyển thành mạn tính, đe dọa đến tính mạng.'
+
+MERGE (o1:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o2:cause {id: 'nguyên_nhân_gây_bệnh_cause'})
+MERGE (o1)-[r106:causedBy]->(o2)
+SET r106.text = 'Để điều trị hiệu quả tình trạng tiểu buốt, các bác sĩ cần tìm ra nguyên nhân gây bệnh để có các biện pháp phù hợp.'
+
+MERGE (o1:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o2:disease {id: 'bàng_quang_bị_kích_ứng_disease'})
+MERGE (o1)-[r107:isSymptomOf]->(o2)
+SET r107.text = 'Theo đó, người bệnh sẽ được: Việc đầu tiên, các bác sĩ sẽ trao đổi với người bệnh về các triệu chứng, thời điểm xuất hiện triệu chứng và những biểu hiện kèm theo như: sốt, đau lưng, tiết dịch vùng kín, các triệu chứng chứng tỏ tình trạng bàng quang bị kích ứng hay tắc nghẽn… Người bệnh cũng được hỏi về việc quan hệ tình dục không an toàn, sử dụng các phương pháp can thiệp đường tiết niệu hay tiền sử mắc các bệnh gây suy giảm miễn dịch… để xác định các yếu tố nguy cơ.'
+
+MERGE (o1:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o2:disease {id: 'bàng_quang_bị_tắc_nghẽn_disease'})
+MERGE (o1)-[r108:isSymptomOf]->(o2)
+SET r108.text = 'Theo đó, người bệnh sẽ được: Việc đầu tiên, các bác sĩ sẽ trao đổi với người bệnh về các triệu chứng, thời điểm xuất hiện triệu chứng và những biểu hiện kèm theo như: sốt, đau lưng, tiết dịch vùng kín, các triệu chứng chứng tỏ tình trạng bàng quang bị kích ứng hay tắc nghẽn… Người bệnh cũng được hỏi về việc quan hệ tình dục không an toàn, sử dụng các phương pháp can thiệp đường tiết niệu hay tiền sử mắc các bệnh gây suy giảm miễn dịch… để xác định các yếu tố nguy cơ.'
+
+MERGE (o1:lifestyle {id: 'quan_hệ_tình_dục_không_an_toàn_lifestyle'})
+MERGE (o2:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o1)-[r109:causedBy]->(o2)
+SET r109.text = 'Theo đó, người bệnh sẽ được: Việc đầu tiên, các bác sĩ sẽ trao đổi với người bệnh về các triệu chứng, thời điểm xuất hiện triệu chứng và những biểu hiện kèm theo như: sốt, đau lưng, tiết dịch vùng kín, các triệu chứng chứng tỏ tình trạng bàng quang bị kích ứng hay tắc nghẽn… Người bệnh cũng được hỏi về việc quan hệ tình dục không an toàn, sử dụng các phương pháp can thiệp đường tiết niệu hay tiền sử mắc các bệnh gây suy giảm miễn dịch… để xác định các yếu tố nguy cơ.'
+
+MERGE (o1:treatment {id: 'các_phương_pháp_can_thiệp_đường_tiết_niệu_treatment'})
+MERGE (o2:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o1)-[r110:causedBy]->(o2)
+SET r110.text = 'Theo đó, người bệnh sẽ được: Việc đầu tiên, các bác sĩ sẽ trao đổi với người bệnh về các triệu chứng, thời điểm xuất hiện triệu chứng và những biểu hiện kèm theo như: sốt, đau lưng, tiết dịch vùng kín, các triệu chứng chứng tỏ tình trạng bàng quang bị kích ứng hay tắc nghẽn… Người bệnh cũng được hỏi về việc quan hệ tình dục không an toàn, sử dụng các phương pháp can thiệp đường tiết niệu hay tiền sử mắc các bệnh gây suy giảm miễn dịch… để xác định các yếu tố nguy cơ.'
+
+MERGE (o1:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o2:disease {id: 'bệnh_gây_suy_giảm_miễn_dịch_disease'})
+MERGE (o1)-[r111:causedBy]->(o2)
+SET r111.text = 'Theo đó, người bệnh sẽ được: Việc đầu tiên, các bác sĩ sẽ trao đổi với người bệnh về các triệu chứng, thời điểm xuất hiện triệu chứng và những biểu hiện kèm theo như: sốt, đau lưng, tiết dịch vùng kín, các triệu chứng chứng tỏ tình trạng bàng quang bị kích ứng hay tắc nghẽn… Người bệnh cũng được hỏi về việc quan hệ tình dục không an toàn, sử dụng các phương pháp can thiệp đường tiết niệu hay tiền sử mắc các bệnh gây suy giảm miễn dịch… để xác định các yếu tố nguy cơ.'
+
+MERGE (o1:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o2:disease {id: 'viêm_khớp_disease'})
+MERGE (o1)-[r112:isSymptomOf]->(o2)
+SET r112.text = 'Ngoài hỏi bệnh sử, người bị tiểu buốt còn được bác sĩ khám da, niêm mạc, khớp tay chân, khám khung chậu… để tìm kiếm dấu hiệu của các bệnh viêm khớp, viêm nhiễm phụ khoa.'
+
+MERGE (o1:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o2:disease {id: 'viêm_nhiễm_phụ_khoa_disease'})
+MERGE (o1)-[r113:isSymptomOf]->(o2)
+SET r113.text = 'Ngoài hỏi bệnh sử, người bị tiểu buốt còn được bác sĩ khám da, niêm mạc, khớp tay chân, khám khung chậu… để tìm kiếm dấu hiệu của các bệnh viêm khớp, viêm nhiễm phụ khoa.'
+
+MERGE (o1:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o2:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o1)-[r114:isSymptomOf]->(o2)
+SET r114.text = 'Với nam giới, bác sĩ có thể thăm trực tràng để đánh giá kích thước, độ đồng nhất, độ mềm của tuyến tiền liệt.'
+
+MERGE (o1:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o2:test {id: 'xét_nghiệm_nước_tiểu_test'})
+MERGE (o1)-[r115:diagnosedBy]->(o2)
+SET r115.text = 'Ngoài các biện pháp thăm khám lâm sàng, người bệnh còn có thể được chỉ định thực hiện một số xét nghiệm nước tiểu, cấy nước tiểu trong phòng thí nghiệm…'
+
+MERGE (o1:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o2:test {id: 'cấy_nước_tiểu_test'})
+MERGE (o1)-[r116:diagnosedBy]->(o2)
+SET r116.text = 'Ngoài các biện pháp thăm khám lâm sàng, người bệnh còn có thể được chỉ định thực hiện một số xét nghiệm nước tiểu, cấy nước tiểu trong phòng thí nghiệm…'
+
+MERGE (o1:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o2:test {id: 'siêu_âm_test'})
+MERGE (o1)-[r117:diagnosedBy]->(o2)
+SET r117.text = 'Bác sĩ cũng có thể yêu cầu người bệnh siêu âm, nội soi bàng quang để loại bỏ các yếu tố có liên quan đến u bướu đường tiết niệu.'
+
+MERGE (o1:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o2:test {id: 'nội_soi_bàng_quang_test'})
+MERGE (o1)-[r118:diagnosedBy]->(o2)
+SET r118.text = 'Bác sĩ cũng có thể yêu cầu người bệnh siêu âm, nội soi bàng quang để loại bỏ các yếu tố có liên quan đến u bướu đường tiết niệu.'
+
+MERGE (o1:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o2:disease {id: 'u_bướu_đường_tiết_niệu_disease'})
+MERGE (o1)-[r119:isSymptomOf]->(o2)
+SET r119.text = 'Bác sĩ cũng có thể yêu cầu người bệnh siêu âm, nội soi bàng quang để loại bỏ các yếu tố có liên quan đến u bướu đường tiết niệu.'
+
+MERGE (o1:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o2:treatment {id: 'thuốc_kháng_sinh_treatment'})
+MERGE (o1)-[r120:treatedBy]->(o2)
+SET r120.text = 'Nếu người bệnh đi tiểu buốt do nhiễm khuẩn, thuốc kháng sinh sẽ giúp cải thiện hiệu quả tình trạng này.'
+
+MERGE (o1:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o2:cause {id: 'nhiễm_khuẩn_cause'})
+MERGE (o1)-[r121:causedBy]->(o2)
+SET r121.text = 'Nếu người bệnh đi tiểu buốt do nhiễm khuẩn, thuốc kháng sinh sẽ giúp cải thiện hiệu quả tình trạng này.'
+
+MERGE (o1:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o2:disease {id: 'bàng_quang_kích_thích_disease'})
+MERGE (o1)-[r122:isSymptomOf]->(o2)
+SET r122.text = 'Trường hợp người bệnh bị bàng quang kích thích, bác sĩ sẽ chỉ định một số loại thuốc làm dịu bàng quang để người bệnh cảm thấy thoải mái hơn.'
+
+MERGE (o1:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o2:treatment {id: 'thuốc_làm_dịu_bàng_quang_treatment'})
+MERGE (o1)-[r123:treatedBy]->(o2)
+SET r123.text = 'Trường hợp người bệnh bị bàng quang kích thích, bác sĩ sẽ chỉ định một số loại thuốc làm dịu bàng quang để người bệnh cảm thấy thoải mái hơn.'
+
+MERGE (o1:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o1)-[r124:isSymptomOf]->(o2)
+SET r124.text = 'Với triệu chứng đau buốt khi đi tiểu do các bệnh nhiễm trùng phức tạp như viêm bàng quang kẽ, bác sĩ cũng cho dùng thuốc theo đường uống.'
+
+MERGE (o1:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o2:treatment {id: 'thuốc_theo_đường_uống_treatment'})
+MERGE (o1)-[r125:treatedBy]->(o2)
+SET r125.text = 'Với triệu chứng đau buốt khi đi tiểu do các bệnh nhiễm trùng phức tạp như viêm bàng quang kẽ, bác sĩ cũng cho dùng thuốc theo đường uống.'
+
+MERGE (o1:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o2:treatment {id: 'thuốc_treatment'})
+MERGE (o1)-[r126:treatedBy]->(o2)
+SET r126.text = 'Tuy nhiên, kết quả điều trị bằng thuốc có thể chậm hơn. Người bệnh có thể phải dùng thuốc đến 4 tháng mới cải thiện tình trạng tiểu buốt.'
+
+MERGE (o1:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o2:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o1)-[r127:isSymptomOf]->(o2)
+SET r127.text = 'Trong trường hợp người bệnh bị viêm tuyến tiền liệt, thuốc kháng sinh được chỉ định dùng trong khoảng 12 tuần.'
+
+MERGE (o1:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o2:treatment {id: 'thuốc_kháng_sinh_treatment'})
+MERGE (o1)-[r128:treatedBy]->(o2)
+SET r128.text = 'Trong trường hợp người bệnh bị viêm tuyến tiền liệt, thuốc kháng sinh được chỉ định dùng trong khoảng 12 tuần.'
+
+MERGE (o1:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o2:treatment {id: 'thuốc_chống_viêm_không_kê_đơn_treatment'})
+MERGE (o1)-[r129:treatedBy]->(o2)
+SET r129.text = 'Ngoài ra, một số loại thuốc khác cũng được chỉ định kèm theo như bao gồm thuốc chống viêm không kê đơn (Ibuprofen), các loại thuốc chẹn alpha… để giúp thư giãn các cơ quanh tuyến tiền liệt.'
+
+MERGE (o1:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o2:treatment {id: 'thuốc_chẹn_alpha_treatment'})
+MERGE (o1)-[r130:treatedBy]->(o2)
+SET r130.text = 'Ngoài ra, một số loại thuốc khác cũng được chỉ định kèm theo như bao gồm thuốc chống viêm không kê đơn (Ibuprofen), các loại thuốc chẹn alpha… để giúp thư giãn các cơ quanh tuyến tiền liệt.'
+
+MERGE (o1:lifestyle {id: 'xà_phòng_lifestyle'})
+MERGE (o2:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o1)-[r131:causedBy]->(o2)
+SET r131.text = 'Xà phòng và các sản phẩm hóa học có thể dẫn đến kích ứng, gây đi tiểu buốt.'
+
+MERGE (o1:lifestyle {id: 'các_sản_phẩm_hóa_học_lifestyle'})
+MERGE (o2:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o1)-[r132:causedBy]->(o2)
+SET r132.text = 'Xà phòng và các sản phẩm hóa học có thể dẫn đến kích ứng, gây đi tiểu buốt.'
+
+MERGE (o1:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o2:lifestyle {id: 'thay_đổi_thói_quen_sinh_hoạt_lifestyle'})
+MERGE (o1)-[r133:preventedBy]->(o2)
+SET r133.text = 'Do đó, bác sĩ có thể hướng dẫn người bệnh thay đổi thói quen sinh hoạt, tránh thụt rửa vùng kín quá sâu…'
+
+MERGE (o1:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o2:lifestyle {id: 'tránh_thụt_rửa_vùng_kín_quá_sâu_lifestyle'})
+MERGE (o1)-[r134:preventedBy]->(o2)
+SET r134.text = 'Do đó, bác sĩ có thể hướng dẫn người bệnh thay đổi thói quen sinh hoạt, tránh thụt rửa vùng kín quá sâu…'
+
+MERGE (o1:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o2:treatment {id: 'xoa_bóp_tuyến_tiền_liệt_treatment'})
+MERGE (o1)-[r135:treatedBy]->(o2)
+SET r135.text = 'Đồng thời, người bệnh cũng được khuyên nên xoa bóp tuyến tiền liệt, tắm nước ấm để làm giãn các cơ, giúp đường tiểu thông thoáng và không còn tiểu buốt.'
+
+MERGE (o1:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o2:treatment {id: 'tắm_nước_ấm_treatment'})
+MERGE (o1)-[r136:treatedBy]->(o2)
+SET r136.text = 'Đồng thời, người bệnh cũng được khuyên nên xoa bóp tuyến tiền liệt, tắm nước ấm để làm giãn các cơ, giúp đường tiểu thông thoáng và không còn tiểu buốt.'
+
+MERGE (o1:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o2:lifestyle {id: 'uống_nhiều_nước_lifestyle'})
+MERGE (o1)-[r137:treatedBy]->(o2)
+SET r137.text = 'Tương tự như các bệnh đường tiết niệu khác, khi bị tiểu buốt, bác sĩ cũng khuyến khích người bệnh uống nhiều nước hơn để làm loãng nước tiểu, giúp bớt đau khi tiểu.'
+
+MERGE (o1:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o2:lifestyle {id: 'đi_tiểu_thường_xuyên_lifestyle'})
+MERGE (o1)-[r138:treatedBy]->(o2)
+SET r138.text = 'Tương tự như các bệnh đường tiết niệu khác, khi bị tiểu buốt, bác sĩ cũng khuyến khích người bệnh uống nhiều nước hơn để làm loãng nước tiểu, giúp bớt đau khi tiểu.'
+
+MERGE (o1:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o2:lifestyle {id: 'bột_giặt_lifestyle'})
+MERGE (o1)-[r139:preventedBy]->(o2)
+SET r139.text = 'Tránh xa các loại bột giặt và dung dịch vệ sinh cá nhân có mùi thơm, chất tẩy rửa mạnh để giảm nguy cơ niêm mạc vùng kín bị kích ứng.'
+
+MERGE (o1:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o2:lifestyle {id: 'dung_dịch_vệ_sinh_cá_nhân_có_mùi_thơm_lifestyle'})
+MERGE (o1)-[r140:preventedBy]->(o2)
+SET r140.text = 'Tránh xa các loại bột giặt và dung dịch vệ sinh cá nhân có mùi thơm, chất tẩy rửa mạnh để giảm nguy cơ niêm mạc vùng kín bị kích ứng.'
+
+MERGE (o1:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o2:lifestyle {id: 'chất_tẩy_rửa_mạnh_lifestyle'})
+MERGE (o1)-[r141:preventedBy]->(o2)
+SET r141.text = 'Tránh xa các loại bột giặt và dung dịch vệ sinh cá nhân có mùi thơm, chất tẩy rửa mạnh để giảm nguy cơ niêm mạc vùng kín bị kích ứng.'
+
+MERGE (o1:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o2:treatment {id: 'bao_cao_su_treatment'})
+MERGE (o1)-[r142:preventedBy]->(o2)
+SET r142.text = 'Sử dụng bao cao su hoặc các biện pháp bảo vệ để ngăn ngừa trường hợp bị lây nhiễm các bệnh lây qua đường tình dục.'
+
+MERGE (o1:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o2:treatment {id: 'các_biện_pháp_bảo_vệ_treatment'})
+MERGE (o1)-[r143:preventedBy]->(o2)
+SET r143.text = 'Sử dụng bao cao su hoặc các biện pháp bảo vệ để ngăn ngừa trường hợp bị lây nhiễm các bệnh lây qua đường tình dục.'
+
+MERGE (o1:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o2:lifestyle {id: 'vệ_sinh_vùng_kín_nhẹ_nhàng_lifestyle'})
+MERGE (o1)-[r144:preventedBy]->(o2)
+SET r144.text = 'Vệ sinh vùng kín nhẹ nhàng, phụ nữ nên không thụt rửa sâu, lau khô bằng khăn sạch sau khi rửa'
+
+MERGE (o1:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o2:lifestyle {id: 'không_thụt_rửa_sâu_lifestyle'})
+MERGE (o1)-[r145:preventedBy]->(o2)
+SET r145.text = 'Vệ sinh vùng kín nhẹ nhàng, phụ nữ nên không thụt rửa sâu, lau khô bằng khăn sạch sau khi rửa'
+
+MERGE (o1:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o2:lifestyle {id: 'uống_đủ_nước_lifestyle'})
+MERGE (o1)-[r146:preventedBy]->(o2)
+SET r146.text = 'Uống đủ nước, đi tiểu thường xuyên, tránh nhịn tiểu để tống đẩy vi khuẩn ra ngoài qua đường bài tiết'
+
+MERGE (o1:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o2:lifestyle {id: 'đi_tiểu_thường_xuyên_lifestyle'})
+MERGE (o1)-[r147:preventedBy]->(o2)
+SET r147.text = 'Uống đủ nước, đi tiểu thường xuyên, tránh nhịn tiểu để tống đẩy vi khuẩn ra ngoài qua đường bài tiết'
+
+MERGE (o1:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o2:lifestyle {id: 'tránh_nhịn_tiểu_lifestyle'})
+MERGE (o1)-[r148:preventedBy]->(o2)
+SET r148.text = 'Uống đủ nước, đi tiểu thường xuyên, tránh nhịn tiểu để tống đẩy vi khuẩn ra ngoài qua đường bài tiết'
+
+MERGE (o1:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o2:lifestyle {id: 'chế_độ_dinh_dưỡng_khoa_học_lifestyle'})
+MERGE (o1)-[r149:preventedBy]->(o2)
+SET r149.text = 'Xây dựng chế độ dinh dưỡng khoa học, tránh thực phẩm và đồ uống có thể gây kích thích bàng quang như thực phẩm có tính axit cao, caffeine, rượu…'
+
+MERGE (o1:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o2:food {id: 'thực_phẩm_có_tính_axit_cao_food'})
+MERGE (o1)-[r150:aggravatedBy]->(o2)
+SET r150.text = 'Xây dựng chế độ dinh dưỡng khoa học, tránh thực phẩm và đồ uống có thể gây kích thích bàng quang như thực phẩm có tính axit cao, caffeine, rượu…'
+
+MERGE (o1:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o2:food {id: 'caffeine_food'})
+MERGE (o1)-[r151:aggravatedBy]->(o2)
+SET r151.text = 'Xây dựng chế độ dinh dưỡng khoa học, tránh thực phẩm và đồ uống có thể gây kích thích bàng quang như thực phẩm có tính axit cao, caffeine, rượu…'
+
+MERGE (o1:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o2:food {id: 'rượu_food'})
+MERGE (o1)-[r152:aggravatedBy]->(o2)
+SET r152.text = 'Xây dựng chế độ dinh dưỡng khoa học, tránh thực phẩm và đồ uống có thể gây kích thích bàng quang như thực phẩm có tính axit cao, caffeine, rượu…'
+
+MERGE (o1:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o2:disease {id: 'bệnh_đường_tiết_niệu_disease'})
+MERGE (o1)-[r153:isSymptomOf]->(o2)
+SET r153.text = 'Khi có bệnh đường tiết niệu, bệnh phụ khoa nên điều trị càng sớm càng tốt để không khó chịu vì tiểu buốt'

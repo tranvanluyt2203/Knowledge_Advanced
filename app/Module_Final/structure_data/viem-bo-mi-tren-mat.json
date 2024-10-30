@@ -1,0 +1,1186 @@
+[
+    {
+        "text": "Viêm bờ mi là bệnh phổ biến ở mắt gây kích ứng và sưng tấy, dễ tái phát.",
+        "head": "Viêm bờ mi",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Kích ứng và sưng tấy",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Viêm bờ mi là bệnh phổ biến ở mắt gây kích ứng và sưng tấy, dễ tái phát.",
+        "head": "Viêm bờ mi",
+        "head_type": "disease",
+        "relation": "locatedIn",
+        "tail": "Mắt",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Viêm bờ mi là bệnh phổ biến ở mắt gây kích ứng và sưng tấy, dễ tái phát.",
+        "head": "Viêm bờ mi",
+        "head_type": "disease",
+        "relation": "associatedWith",
+        "tail": "Tái phát",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Viêm bờ mi mắt gồm viêm bờ mi dưới mắt và viêm bờ mi trên mắt.",
+        "head": "Viêm bờ mi mắt",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "Viêm bờ mi dưới mắt",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Viêm bờ mi mắt gồm viêm bờ mi dưới mắt và viêm bờ mi trên mắt.",
+        "head": "Viêm bờ mi mắt",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "Viêm bờ mi trên mắt",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Viêm bờ mi trên là tình trạng viêm mí mắt dọc theo cạnh trên của mí.",
+        "head": "Viêm bờ mi trên",
+        "head_type": "disease",
+        "relation": "locatedIn",
+        "tail": "Mí mắt",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Viêm bờ mi trên là tình trạng viêm mí mắt dọc theo cạnh trên của mí.",
+        "head": "Viêm bờ mi trên",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Viêm mí mắt",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Bệnh xảy ra khi nhiễm khuẩn hoặc tuyến dầu bị tắc làm mắt sưng, mẩn đỏ.",
+        "head": "Bệnh",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Nhiễm khuẩn",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Bệnh xảy ra khi nhiễm khuẩn hoặc tuyến dầu bị tắc làm mắt sưng, mẩn đỏ.",
+        "head": "Bệnh",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Tuyến dầu bị tắc",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Bệnh xảy ra khi nhiễm khuẩn hoặc tuyến dầu bị tắc làm mắt sưng, mẩn đỏ.",
+        "head": "Mắt sưng",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Bệnh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bệnh xảy ra khi nhiễm khuẩn hoặc tuyến dầu bị tắc làm mắt sưng, mẩn đỏ.",
+        "head": "Mẩn đỏ",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Bệnh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Viêm bờ mi trên không lây nhiễm và không dẫn đến mù lòa nhưng khó điều trị dứt điểm.",
+        "head": "Viêm bờ mi trên",
+        "head_type": "disease",
+        "relation": "associatedWith",
+        "tail": "Không lây nhiễm",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Viêm bờ mi trên không lây nhiễm và không dẫn đến mù lòa nhưng khó điều trị dứt điểm.",
+        "head": "Viêm bờ mi trên",
+        "head_type": "disease",
+        "relation": "associatedWith",
+        "tail": "Không dẫn đến mù lòa",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Viêm bờ mi trên không lây nhiễm và không dẫn đến mù lòa nhưng khó điều trị dứt điểm.",
+        "head": "Viêm bờ mi trên",
+        "head_type": "disease",
+        "relation": "associatedWith",
+        "tail": "Khó điều trị dứt điểm",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Tùy thuộc vào vị trí, viêm bờ mi trên được phân thành 2 loại:",
+        "head": "Viêm bờ mi trên",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "Vị trí",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Viêm bờ mi trước: Ảnh hưởng đến mặt trước của mí mắt, nơi lông mi tiếp xúc trực tiếp với mí mắt.",
+        "head": "Viêm bờ mi trước",
+        "head_type": "disease",
+        "relation": "locatedIn",
+        "tail": "Mí mắt",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Viêm bờ mi trước: Ảnh hưởng đến mặt trước của mí mắt, nơi lông mi tiếp xúc trực tiếp với mí mắt.",
+        "head": "Viêm bờ mi trước",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Lông mi tiếp xúc trực tiếp với mí mắt",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Viêm bờ mi trước xảy ra do vi khuẩn hoặc gàu trên lông mi gây sưng mắt, mẩn đỏ.",
+        "head": "Viêm bờ mi trước",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Vi khuẩn",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Viêm bờ mi trước xảy ra do vi khuẩn hoặc gàu trên lông mi gây sưng mắt, mẩn đỏ.",
+        "head": "Viêm bờ mi trước",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Gàu",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Viêm bờ mi trước xảy ra do vi khuẩn hoặc gàu trên lông mi gây sưng mắt, mẩn đỏ.",
+        "head": "Sưng mắt",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm bờ mi trước",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Viêm bờ mi trước xảy ra do vi khuẩn hoặc gàu trên lông mi gây sưng mắt, mẩn đỏ.",
+        "head": "Mẩn đỏ",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm bờ mi trước",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Viêm bờ mi sau: Là phần nằm bên trong mí mắt nơi tiếp xúc trực tiếp với mắt.",
+        "head": "Viêm bờ mi sau",
+        "head_type": "disease",
+        "relation": "locatedIn",
+        "tail": "Mí mắt",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Viêm bờ mi sau: Là phần nằm bên trong mí mắt nơi tiếp xúc trực tiếp với mắt.",
+        "head": "Viêm bờ mi sau",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Tiếp xúc trực tiếp với mắt",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Bệnh xảy ra khi tuyến meibomian sản xuất dầu trong mí mắt bị tắc.",
+        "head": "Bệnh",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Tuyến meibomian bị tắc",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Viêm bờ mi trên ảnh hướng ở phía trước mí mắt",
+        "head": "Viêm bờ mi trên",
+        "head_type": "disease",
+        "relation": "locatedIn",
+        "tail": "Mí mắt",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Nhiễm trùng tụ cầu   Bệnh do vi khuẩn Staphylococcus gây ra,",
+        "head": "Nhiễm trùng tụ cầu",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Vi khuẩn Staphylococcus",
+        "tail_type": "cause"
+    },
+    {
+        "text": "với các triệu chứng như viền mí mắt dày hơn, lông mi mọc lệch.",
+        "head": "Viền mí mắt dày hơn",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Nhiễm trùng tụ cầu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "với các triệu chứng như viền mí mắt dày hơn, lông mi mọc lệch.",
+        "head": "Lông mi mọc lệch",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Nhiễm trùng tụ cầu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Vi khuẩn Staphylococcus có ở da, mũi, mông và nách nhưng có thể xâm nhập vào cơ thể người qua vết đứt, vết côn trùng cắn trên da, thiết bị y tế (chẳng hạn như ống thông tiểu).",
+        "head": "Vi khuẩn Staphylococcus",
+        "head_type": "cause",
+        "relation": "locatedIn",
+        "tail": "Da",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Vi khuẩn Staphylococcus có ở da, mũi, mông và nách nhưng có thể xâm nhập vào cơ thể người qua vết đứt, vết côn trùng cắn trên da, thiết bị y tế (chẳng hạn như ống thông tiểu).",
+        "head": "Vi khuẩn Staphylococcus",
+        "head_type": "cause",
+        "relation": "locatedIn",
+        "tail": "Mũi",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Vi khuẩn Staphylococcus có ở da, mũi, mông và nách nhưng có thể xâm nhập vào cơ thể người qua vết đứt, vết côn trùng cắn trên da, thiết bị y tế (chẳng hạn như ống thông tiểu).",
+        "head": "Vi khuẩn Staphylococcus",
+        "head_type": "cause",
+        "relation": "locatedIn",
+        "tail": "Mông",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Vi khuẩn Staphylococcus có ở da, mũi, mông và nách nhưng có thể xâm nhập vào cơ thể người qua vết đứt, vết côn trùng cắn trên da, thiết bị y tế (chẳng hạn như ống thông tiểu).",
+        "head": "Vi khuẩn Staphylococcus",
+        "head_type": "cause",
+        "relation": "locatedIn",
+        "tail": "Nách",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Vi khuẩn Staphylococcus có ở da, mũi, mông và nách nhưng có thể xâm nhập vào cơ thể người qua vết đứt, vết côn trùng cắn trên da, thiết bị y tế (chẳng hạn như ống thông tiểu).",
+        "head": "Vi khuẩn Staphylococcus",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Vết đứt",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Vi khuẩn Staphylococcus có ở da, mũi, mông và nách nhưng có thể xâm nhập vào cơ thể người qua vết đứt, vết côn trùng cắn trên da, thiết bị y tế (chẳng hạn như ống thông tiểu).",
+        "head": "Vi khuẩn Staphylococcus",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Vết côn trùng cắn",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Vi khuẩn Staphylococcus có ở da, mũi, mông và nách nhưng có thể xâm nhập vào cơ thể người qua vết đứt, vết côn trùng cắn trên da, thiết bị y tế (chẳng hạn như ống thông tiểu).",
+        "head": "Vi khuẩn Staphylococcus",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Thiết bị y tế",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Staphylococcus gây ra nhóm bệnh nhiễm trùng, từ nhiễm trùng da và mô mềm đến nhiễm trùng xâm lấn được gọi là nhiễm trùng tụ cầu khuẩn.",
+        "head": "Staphylococcus",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Nhiễm trùng da",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Staphylococcus gây ra nhóm bệnh nhiễm trùng, từ nhiễm trùng da và mô mềm đến nhiễm trùng xâm lấn được gọi là nhiễm trùng tụ cầu khuẩn.",
+        "head": "Staphylococcus",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Nhiễm trùng mô mềm",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Staphylococcus gây ra nhóm bệnh nhiễm trùng, từ nhiễm trùng da và mô mềm đến nhiễm trùng xâm lấn được gọi là nhiễm trùng tụ cầu khuẩn.",
+        "head": "Staphylococcus",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Nhiễm trùng xâm lấn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Staphylococcus gây ra nhóm bệnh nhiễm trùng, từ nhiễm trùng da và mô mềm đến nhiễm trùng xâm lấn được gọi là nhiễm trùng tụ cầu khuẩn.",
+        "head": "Staphylococcus",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Nhiễm trùng tụ cầu khuẩn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Trong số nhiều loại Staphylococci, vi khuẩn Staphylococcus aureus kháng methicillin (MRSA) và lại một số loại kháng sinh như flucloxacillin.",
+        "head": "Staphylococcus aureus",
+        "head_type": "cause",
+        "relation": "associatedWith",
+        "tail": "Kháng methicillin (MRSA)",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Trong số nhiều loại Staphylococci, vi khuẩn Staphylococcus aureus kháng methicillin (MRSA) và lại một số loại kháng sinh như flucloxacillin.",
+        "head": "Staphylococcus aureus",
+        "head_type": "cause",
+        "relation": "associatedWith",
+        "tail": "Kháng sinh",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Bên cạnh đó, vi khuẩn Staphylococcus tạo ra độc tố Panton -Valentine leukocidin (PVL) giết chết tế bào bạch cầu nên khi nhiễm trùng da dễ tái phát.",
+        "head": "Vi khuẩn Staphylococcus",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Độc tố Panton -Valentine leukocidin (PVL)",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Bên cạnh đó, vi khuẩn Staphylococcus tạo ra độc tố Panton -Valentine leukocidin (PVL) giết chết tế bào bạch cầu nên khi nhiễm trùng da dễ tái phát.",
+        "head": "Độc tố Panton -Valentine leukocidin (PVL)",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Giết chết tế bào bạch cầu",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Bên cạnh đó, vi khuẩn Staphylococcus tạo ra độc tố Panton -Valentine leukocidin (PVL) giết chết tế bào bạch cầu nên khi nhiễm trùng da dễ tái phát.",
+        "head": "Nhiễm trùng da",
+        "head_type": "disease",
+        "relation": "associatedWith",
+        "tail": "Tái phát",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Người có hệ thống miễn dịch suy yếu dễ nhiễm trùng tụ cầu hơn người bình thường.",
+        "head": "Hệ thống miễn dịch suy yếu",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Nhiễm trùng tụ cầu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Mụn trứng cá đỏ: Vi khuẩn Rosacea gây viêm da mặt và mí mắt.",
+        "head": "Mụn trứng cá đỏ",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Vi khuẩn Rosacea",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Mụn trứng cá đỏ: Vi khuẩn Rosacea gây viêm da mặt và mí mắt.",
+        "head": "Vi khuẩn Rosacea",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Viêm da mặt",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Mụn trứng cá đỏ: Vi khuẩn Rosacea gây viêm da mặt và mí mắt.",
+        "head": "Vi khuẩn Rosacea",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Viêm mí mắt",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Dị ứng: Các thành phần trong dung dịch kính áp tròng, thuốc nhỏ mắt, phấn trang điểm có thể gây kích ứng mắt.",
+        "head": "Dị ứng",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Dung dịch kính áp tròng",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Dị ứng: Các thành phần trong dung dịch kính áp tròng, thuốc nhỏ mắt, phấn trang điểm có thể gây kích ứng mắt.",
+        "head": "Dị ứng",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Thuốc nhỏ mắt",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Dị ứng: Các thành phần trong dung dịch kính áp tròng, thuốc nhỏ mắt, phấn trang điểm có thể gây kích ứng mắt.",
+        "head": "Dị ứng",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Phấn trang điểm",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Dị ứng: Các thành phần trong dung dịch kính áp tròng, thuốc nhỏ mắt, phấn trang điểm có thể gây kích ứng mắt.",
+        "head": "Dị ứng",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Kích ứng mắt",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Viêm da tiết bã (gàu): Gàu bong ra dính vào mắt gây kích ứng và viêm bờ mi mắt.",
+        "head": "Viêm da tiết bã (gàu)",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Gàu",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Viêm da tiết bã (gàu): Gàu bong ra dính vào mắt gây kích ứng và viêm bờ mi mắt.",
+        "head": "Gàu",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Kích ứng",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Viêm da tiết bã (gàu): Gàu bong ra dính vào mắt gây kích ứng và viêm bờ mi mắt.",
+        "head": "Gàu",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Viêm bờ mi mắt",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khô mắt: Ống dẫn nước mắt khô làm suy giảm sức đề kháng, vi khuẩn dễ tấn công và gây nhiễm trùng.",
+        "head": "Khô mắt",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Ống dẫn nước mắt khô",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Khô mắt: Ống dẫn nước mắt khô làm suy giảm sức đề kháng, vi khuẩn dễ tấn công và gây nhiễm trùng.",
+        "head": "Khô mắt",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Suy giảm sức đề kháng",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Khô mắt: Ống dẫn nước mắt khô làm suy giảm sức đề kháng, vi khuẩn dễ tấn công và gây nhiễm trùng.",
+        "head": "Khô mắt",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Vi khuẩn dễ tấn công",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Khô mắt: Ống dẫn nước mắt khô làm suy giảm sức đề kháng, vi khuẩn dễ tấn công và gây nhiễm trùng.",
+        "head": "Khô mắt",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Nhiễm trùng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Rận hoặc ve ở lông mi (bệnh demodicosis): Rận hoặc ve Demodex chặn các nang, tuyến lông mi gây tắc nghẽn và viêm bờ mi trên mắt.",
+        "head": "Rận hoặc ve ở lông mi (bệnh demodicosis)",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Rận hoặc ve Demodex",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Rận hoặc ve ở lông mi (bệnh demodicosis): Rận hoặc ve Demodex chặn các nang, tuyến lông mi gây tắc nghẽn và viêm bờ mi trên mắt.",
+        "head": "Rận hoặc ve Demodex",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Tắc nghẽn",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Rận hoặc ve ở lông mi (bệnh demodicosis): Rận hoặc ve Demodex chặn các nang, tuyến lông mi gây tắc nghẽn và viêm bờ mi trên mắt.",
+        "head": "Rận hoặc ve Demodex",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Viêm bờ mi trên mắt",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tuyến dầu bị tắc: Dầu trong tuyến meibomian bị tắc dẫn đến khô mắt, nhiễm trùng và viêm bờ mi trên mắt.",
+        "head": "Tuyến dầu bị tắc",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Khô mắt",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tuyến dầu bị tắc: Dầu trong tuyến meibomian bị tắc dẫn đến khô mắt, nhiễm trùng và viêm bờ mi trên mắt.",
+        "head": "Tuyến dầu bị tắc",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Nhiễm trùng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi bị viêm bờ mi trên sẽ có các triệu chứng sau đây:\nChảy nước mắt.",
+        "head": "Chảy nước mắt",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm bờ mi trên",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi bị viêm bờ mi trên sẽ có các triệu chứng sau đây:\nCảm giác cộm, nóng",
+        "head": "Cảm giác cộm, nóng",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm bờ mi trên",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi bị viêm bờ mi trên sẽ có các triệu chứng sau đây:\nNhờn ở mí mắt",
+        "head": "Nhờn ở mí mắt",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm bờ mi trên",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi bị viêm bờ mi trên sẽ có các triệu chứng sau đây:\nĐau, ngứa mí mắt",
+        "head": "Đau, ngứa mí mắt",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm bờ mi trên",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi bị viêm bờ mi trên sẽ có các triệu chứng sau đây:\nMí mắt đỏ, sưng",
+        "head": "Mí mắt đỏ, sưng",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm bờ mi trên",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi bị viêm bờ mi trên sẽ có các triệu chứng sau đây:\nBong da quanh mắt, quanh gốc lông mi",
+        "head": "Bong da quanh mắt, quanh gốc lông mi",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm bờ mi trên",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi bị viêm bờ mi trên sẽ có các triệu chứng sau đây:\nDính mí mắt sau khi ngủ dậy",
+        "head": "Dính mí mắt sau khi ngủ dậy",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm bờ mi trên",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi bị viêm bờ mi trên sẽ có các triệu chứng sau đây:\nNhạy cảm với ánh sáng",
+        "head": "Nhạy cảm với ánh sáng",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm bờ mi trên",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi bị viêm bờ mi trên sẽ có các triệu chứng sau đây:\nMờ mắt",
+        "head": "Mờ mắt",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm bờ mi trên",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi bị viêm bờ mi trên sẽ có các triệu chứng sau đây:\nChớp mắt quá mức",
+        "head": "Chớp mắt quá mức",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm bờ mi trên",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi bị viêm bờ mi trên sẽ có các triệu chứng sau đây:\nLông mi mọc lệch",
+        "head": "Lông mi mọc lệch",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm bờ mi trên",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các triệu chứng viêm bờ mi mắt trên thường rõ rệt vào buổi sáng.",
+        "head": "Các triệu chứng viêm bờ mi mắt trên",
+        "head_type": "symptom",
+        "relation": "aggravatedBy",
+        "tail": "Buổi sáng",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Viêm bờ mi trên không ảnh đến thị giác nhưng làm giảm thị lực tạm thời.",
+        "head": "Viêm bờ mi trên",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Thị lực",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Viêm bờ mi mạn tính có xu hướng tái phát theo từng giai đoạn và ảnh hưởng đến cả hai mắt.",
+        "head": "Viêm bờ mi mạn tính",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Cả hai mắt",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Viêm bờ mi trên không phải bệnh nguy hiểm nhưng nếu không phát hiện và điều trị kịp thời sẽ gây ra nhiều biến chứng và ảnh hưởng đến cuộc sống hàng ngày.",
+        "head": "Viêm bờ mi trên",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Không phát hiện và điều trị kịp thời",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Rụng lông mi   Viêm bờ mi trên khiến lông mi rụng, mất màu hoặc mọc bất thường (lông mi mọc lệch).",
+        "head": "Rụng lông mi",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm bờ mi trên",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Rụng lông mi   Viêm bờ mi trên khiến lông mi rụng, mất màu hoặc mọc bất thường (lông mi mọc lệch).",
+        "head": "Lông mi mọc lệch",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm bờ mi trên",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Sẹo mắt   Viêm bờ mi trên nếu để lâu ngày sẽ tạo thành sẹo trên mí mắt hoặc cạnh mí mắt.",
+        "head": "Sẹo mắt",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm bờ mi trên",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Chảy nhiều nước mắt hoặc khô mắt   Nước mắt chảy bất thường cản trở việc giữ ẩm cho mắt dẫn đến khô mắt.",
+        "head": "Chảy nhiều nước mắt",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm bờ mi trên",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Chảy nhiều nước mắt hoặc khô mắt   Nước mắt chảy bất thường cản trở việc giữ ẩm cho mắt dẫn đến khô mắt.",
+        "head": "Khô mắt",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm bờ mi trên",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Lẹo mắt   Lẹo là bệnh nhiễm trùng phát triển gần gốc lông mi hay trên mí mắt, hình thành u nhú gây đau và khó chịu.",
+        "head": "Lẹo mắt",
+        "head_type": "disease",
+        "relation": "associatedWith",
+        "tail": "Viêm bờ mi trên",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Chắp mắt   Viêm bờ mi trên làm tuyến dầu nhỏ ở rìa mí mắt tắc nghẽn gây viêm lộ tuyến với biểu hiện sưng tấy và đỏ.",
+        "head": "Chắp mắt",
+        "head_type": "disease",
+        "relation": "associatedWith",
+        "tail": "Viêm bờ mi trên",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Viêm kết mạc   Viêm bờ mi trên có thể dẫn đến các cơn đau mắt đỏ tái phát hay còn gọi là viêm kết mạc.",
+        "head": "Viêm kết mạc",
+        "head_type": "disease",
+        "relation": "associatedWith",
+        "tail": "Viêm bờ mi trên",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nhiễm trùng giác mạc\nViêm bờ mi trên gây kích ứng mắt, lông mi mọc lệch hoặc khô mắt từ đó tăng nguy cơ nhiễm trùng giác mạc.",
+        "head": "Nhiễm trùng giác mạc",
+        "head_type": "disease",
+        "relation": "associatedWith",
+        "tail": "Viêm bờ mi trên",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ngoài bệnh đau mắt đỏ và viêm da tiết bã, có nhiều nguy cơ khác gây viêm bờ mi trên như:\nBệnh tiểu đường.",
+        "head": "Bệnh tiểu đường",
+        "head_type": "disease",
+        "relation": "causes",
+        "tail": "Viêm bờ mi trên",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ngoài bệnh đau mắt đỏ và viêm da tiết bã, có nhiều nguy cơ khác gây viêm bờ mi trên như:\nĐeo kính áp tròng.",
+        "head": "Đeo kính áp tròng",
+        "head_type": "lifestyle",
+        "relation": "causes",
+        "tail": "Viêm bờ mi trên",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ngoài bệnh đau mắt đỏ và viêm da tiết bã, có nhiều nguy cơ khác gây viêm bờ mi trên như:\nTiếp xúc với các chất kích thích như bụi, hóa chất.",
+        "head": "Tiếp xúc với các chất kích thích như bụi, hóa chất",
+        "head_type": "lifestyle",
+        "relation": "causes",
+        "tail": "Viêm bờ mi trên",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ngoài bệnh đau mắt đỏ và viêm da tiết bã, có nhiều nguy cơ khác gây viêm bờ mi trên như:\nKhông tẩy trang kỹ.",
+        "head": "Không tẩy trang kỹ",
+        "head_type": "lifestyle",
+        "relation": "causes",
+        "tail": "Viêm bờ mi trên",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ngoài bệnh đau mắt đỏ và viêm da tiết bã, có nhiều nguy cơ khác gây viêm bờ mi trên như:\nCó làn da nhờn.",
+        "head": "Có làn da nhờn",
+        "head_type": "lifestyle",
+        "relation": "causes",
+        "tail": "Viêm bờ mi trên",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ngoài bệnh đau mắt đỏ và viêm da tiết bã, có nhiều nguy cơ khác gây viêm bờ mi trên như:\nĐang điều trị với một số loại thuốc (chẳng hạn như thuốc chữa ung thư).",
+        "head": "Đang điều trị với một số loại thuốc (chẳng hạn như thuốc chữa ung thư)",
+        "head_type": "treatment",
+        "relation": "causes",
+        "tail": "Viêm bờ mi trên",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi người bệnh có các dấu hiệu bất thường ở mí mắt trên, bác sĩ sẽ chẩn đoán viêm bờ mi trên các phương pháp:",
+        "head": "viêm bờ mi trên",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "các phương pháp",
+        "tail_type": "test"
+    },
+    {
+        "text": "Hỏi tiền sử bệnh: Bác sĩ sẽ hỏi về các triệu chứng và tình trạng sức khỏe để xác định các yếu tố rủi ro gây bệnh viêm bờ mi trên.",
+        "head": "viêm bờ mi trên",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "các yếu tố rủi ro",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Hỏi tiền sử bệnh: Bác sĩ sẽ hỏi về các triệu chứng và tình trạng sức khỏe để xác định các yếu tố rủi ro gây bệnh viêm bờ mi trên.",
+        "head": "các triệu chứng",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "viêm bờ mi trên",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Kiểm tra mí mắt bên ngoài: Dựa vào hình dạng của mí mắt, độ đỏ, tiết dịch và sưng tấy giúp xác định mức độ nghiêm trọng của viêm bờ mi trên.",
+        "head": "hình dạng của mí mắt",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "viêm bờ mi trên",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Kiểm tra mí mắt bên ngoài: Dựa vào hình dạng của mí mắt, độ đỏ, tiết dịch và sưng tấy giúp xác định mức độ nghiêm trọng của viêm bờ mi trên.",
+        "head": "độ đỏ",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "viêm bờ mi trên",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Kiểm tra mí mắt bên ngoài: Dựa vào hình dạng của mí mắt, độ đỏ, tiết dịch và sưng tấy giúp xác định mức độ nghiêm trọng của viêm bờ mi trên.",
+        "head": "tiết dịch",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "viêm bờ mi trên",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Kiểm tra mí mắt bên ngoài: Dựa vào hình dạng của mí mắt, độ đỏ, tiết dịch và sưng tấy giúp xác định mức độ nghiêm trọng của viêm bờ mi trên.",
+        "head": "sưng tấy",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "viêm bờ mi trên",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Kiểm tra tiết dịch: Dịch tiết mí mắt đem đi xét nghiệm giúp xác định loại vi khuẩn gây nên tình trạng viêm bờ mi trên.",
+        "head": "viêm bờ mi trên",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "vi khuẩn",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Kiểm tra tiết dịch: Dịch tiết mí mắt đem đi xét nghiệm giúp xác định loại vi khuẩn gây nên tình trạng viêm bờ mi trên.",
+        "head": "xét nghiệm",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "viêm bờ mi trên",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Xét nghiệm nước mắt: Lấy mẫu nước mắt để phân tích xem khô mắt có phải là có yếu tố gây bệnh viêm bờ trên.",
+        "head": "khô mắt",
+        "head_type": "symptom",
+        "relation": "causedBy",
+        "tail": "viêm bờ mi trên",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Xét nghiệm nước mắt: Lấy mẫu nước mắt để phân tích xem khô mắt có phải là có yếu tố gây bệnh viêm bờ trên.",
+        "head": "xét nghiệm nước mắt",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "viêm bờ mi trên",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Kiểm tra lông mi: Lông mi được soi dưới kính hiển vi nhằm phát hiện rận, ve có trú ngụ không.",
+        "head": "rận, ve",
+        "head_type": "cause",
+        "relation": "causes",
+        "tail": "viêm bờ mi trên",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Kiểm tra lông mi: Lông mi được soi dưới kính hiển vi nhằm phát hiện rận, ve có trú ngụ không.",
+        "head": "kiểm tra lông mi",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "viêm bờ mi trên",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Sinh thiết mí mắt: Ít khi bác sĩ đề nghị sinh thiết mắt trừ trường hợp nghi ngờ ung thư da hoặc có các tế bào bất thường.",
+        "head": "sinh thiết mí mắt",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "ung thư da",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Sinh thiết mí mắt: Ít khi bác sĩ đề nghị sinh thiết mắt trừ trường hợp nghi ngờ ung thư da hoặc có các tế bào bất thường.",
+        "head": "sinh thiết mí mắt",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "các tế bào bất thường",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Vệ sinh mí mắt giúp rửa sạch dịch bẩn, mủ tích tụ gây bệnh và tránh vi khuẩn xâm nhập gây nhiễm trùng nặng hơn.",
+        "head": "vệ sinh mí mắt",
+        "head_type": "lifestyle",
+        "relation": "preventedBy",
+        "tail": "viêm bờ mi trên",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Vệ sinh mí mắt giúp rửa sạch dịch bẩn, mủ tích tụ gây bệnh và tránh vi khuẩn xâm nhập gây nhiễm trùng nặng hơn.",
+        "head": "dịch bẩn, mủ tích tụ",
+        "head_type": "cause",
+        "relation": "causes",
+        "tail": "viêm bờ mi trên",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Vệ sinh mí mắt giúp rửa sạch dịch bẩn, mủ tích tụ gây bệnh và tránh vi khuẩn xâm nhập gây nhiễm trùng nặng hơn.",
+        "head": "vi khuẩn xâm nhập",
+        "head_type": "cause",
+        "relation": "causes",
+        "tail": "nhiễm trùng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tại nhà, người bệnh dùng gạc làm ẩm bằng nước ấm và chườm lên mắt trong 10 phút hoặc rửa bằng nước muối sinh lý.",
+        "head": "chườm ấm",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "viêm bờ mi trên",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tại nhà, người bệnh dùng gạc làm ẩm bằng nước ấm và chườm lên mắt trong 10 phút hoặc rửa bằng nước muối sinh lý.",
+        "head": "rửa bằng nước muối sinh lý",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "viêm bờ mi trên",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Sau đó, làm sạch các lớp vảy bám trên mí mắt, lông mi và rửa lại bằng nước sạch.",
+        "head": "làm sạch các lớp vảy bám",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "viêm bờ mi trên",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Một số loại thuốc mỡ kháng sinh phổ biến điều trị viêm bờ mi trên như Erythromycin, Bacitracin và Polysporin giúp tiêu diệt vi khuẩn và giảm kích ứng.",
+        "head": "thuốc mỡ kháng sinh",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "viêm bờ mi trên",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Một số loại thuốc mỡ kháng sinh phổ biến điều trị viêm bờ mi trên như Erythromycin, Bacitracin và Polysporin giúp tiêu diệt vi khuẩn và giảm kích ứng.",
+        "head": "Erythromycin, Bacitracin và Polysporin",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "viêm bờ mi trên",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Thuốc nhỏ mắt Cyclosporine (Restoration) được bác sĩ chỉ định điều trị viêm bờ mi sau.",
+        "head": "Cyclosporine (Restoration)",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "viêm bờ mi",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Loại thuốc này có tác dụng giảm viêm, ngăn chặn phản ứng miễn dịch tự nhiên của cơ thể.",
+        "head": "giảm viêm",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "viêm bờ mi",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Trong quá trình điều trị viêm bờ mi trên tại nhà, cần lưu ý những điều sau đây:",
+        "head": "viêm bờ mi trên",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "các điều sau đây",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Tránh trang điểm mắt: Để giảm kích ứng, không nên trang điểm mắt cho đến khi kiểm soát được viêm nhiễm.",
+        "head": "trang điểm mắt",
+        "head_type": "lifestyle",
+        "relation": "aggravatedBy",
+        "tail": "viêm nhiễm",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Chườm ấm: Lấy một chiếc khăn sạch, làm ướt bằng nước ấm, vắt khô rồi đặt lên mí mắt đến khi nhiệt độ hạ xuống.",
+        "head": "chườm ấm",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "viêm bờ mi trên",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Sau cùng, dùng khăn sạch lau bụi bẩn, dịch bám trên mí mắt.",
+        "head": "lau bụi bẩn, dịch bám",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "viêm bờ mi trên",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bổ sung omega-3: Một số nghiên cứu chỉ ra rằng omega-3 giúp các tuyến trong mắt hoạt động tốt hơn.",
+        "head": "omega-3",
+        "head_type": "food",
+        "relation": "treatedBy",
+        "tail": "viêm bờ mi trên",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Omega-3 có trong các thực phẩm:cá hồi, cá thu, các trích, hàu, hạt lanh,&#8230;",
+        "head": "cá hồi, cá thu, các trích, hàu, hạt lanh",
+        "head_type": "food",
+        "relation": "relatedTo",
+        "tail": "omega-3",
+        "tail_type": "food"
+    },
+    {
+        "text": "Tẩy tế bào chết cho mắt: Giúp giảm gàu trên lông mi và số lượng vi khuẩn trên da mí mắt.",
+        "head": "tẩy tế bào chết cho mắt",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "viêm bờ mi trên",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tẩy tế bào chết cho mắt: Giúp giảm gàu trên lông mi và số lượng vi khuẩn trên da mí mắt.",
+        "head": "gàu trên lông mi",
+        "head_type": "cause",
+        "relation": "causes",
+        "tail": "viêm bờ mi trên",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tẩy tế bào chết cho mắt: Giúp giảm gàu trên lông mi và số lượng vi khuẩn trên da mí mắt.",
+        "head": "vi khuẩn trên da mí mắt",
+        "head_type": "cause",
+        "relation": "causes",
+        "tail": "viêm bờ mi trên",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Để phòng ngừa viêm bờ mi trên, giữ vệ sinh mắt là điều ưu tiên hàng đầu.",
+        "head": "vệ sinh mắt",
+        "head_type": "lifestyle",
+        "relation": "preventedBy",
+        "tail": "viêm bờ mi trên",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Mắt được vệ sinh sạch sẽ giúp phòng ngừa tắc nghẽn tuyến mebomian, loại bỏ bã nhờn, da chết.",
+        "head": "tắc nghẽn tuyến mebomian",
+        "head_type": "cause",
+        "relation": "causes",
+        "tail": "viêm bờ mi trên",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Mắt được vệ sinh sạch sẽ giúp phòng ngừa tắc nghẽn tuyến mebomian, loại bỏ bã nhờn, da chết.",
+        "head": "bã nhờn, da chết",
+        "head_type": "cause",
+        "relation": "causes",
+        "tail": "viêm bờ mi trên",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Mỗi khi trang điểm thường lấy mắt làm điểm nhấn nên cần sử dụng nhiều loại phấn, chì kẻ mắt, mascara,&#8230; Do đó, phải tẩy trang sạch sẽ và tránh phấn trang điểm rơi vào mắt.",
+        "head": "tẩy trang sạch sẽ",
+        "head_type": "lifestyle",
+        "relation": "preventedBy",
+        "tail": "viêm bờ mi trên",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Mỗi khi trang điểm thường lấy mắt làm điểm nhấn nên cần sử dụng nhiều loại phấn, chì kẻ mắt, mascara,&#8230; Do đó, phải tẩy trang sạch sẽ và tránh phấn trang điểm rơi vào mắt.",
+        "head": "phấn trang điểm rơi vào mắt",
+        "head_type": "cause",
+        "relation": "causes",
+        "tail": "viêm bờ mi trên",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ngoài ra, người bệnh viêm bờ mi trên không nên trang điểm tại vùng mắt cho dù các triệu chứng đã thuyên giảm.",
+        "head": "trang điểm tại vùng mắt",
+        "head_type": "lifestyle",
+        "relation": "aggravatedBy",
+        "tail": "viêm bờ mi trên",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ngay cả khi điều trị thành công, viêm bờ mi trên vẫn có thể tái phát, do đó cần duy trì thói quen vệ sinh mắt mỗi ngày.",
+        "head": "vệ sinh mắt mỗi ngày",
+        "head_type": "lifestyle",
+        "relation": "preventedBy",
+        "tail": "viêm bờ mi trên",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Giữ cho mí mắt, da và tóc sạch sẽ, giúp kiểm soát các triệu chứng viêm bờ mi trên.",
+        "head": "giữ cho mí mắt, da và tóc sạch sẽ",
+        "head_type": "lifestyle",
+        "relation": "preventedBy",
+        "tail": "viêm bờ mi trên",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Người dân nên vệ sinh mắt mỗi ngày với nước nước sạch và gội đầu bằng dầu gội kháng khuẩn.",
+        "head": "vệ sinh mắt mỗi ngày",
+        "head_type": "lifestyle",
+        "relation": "preventedBy",
+        "tail": "viêm bờ mi trên",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Người dân nên vệ sinh mắt mỗi ngày với nước nước sạch và gội đầu bằng dầu gội kháng khuẩn.",
+        "head": "gội đầu bằng dầu gội kháng khuẩn",
+        "head_type": "lifestyle",
+        "relation": "preventedBy",
+        "tail": "viêm bờ mi trên",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ngoài ra, kết hợp thêm một số loại thuốc xịt khử trùng trên da để ngăn vi khuẩn phát triển.",
+        "head": "thuốc xịt khử trùng trên da",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "viêm bờ mi trên",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đôi bàn tay thực hiện nhiều hoạt động trong ngày như cầm, nắm,&#8230; dễ tích tụ vi khuẩn, do đó không nên dụi mắt.",
+        "head": "dụi mắt",
+        "head_type": "lifestyle",
+        "relation": "aggravatedBy",
+        "tail": "viêm bờ mi trên",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi mắt cảm thấy ngứa, khó chịu cần rửa tay sạch sẽ với xà phòng sau đó mới tiếp xúc lên mắt.",
+        "head": "rửa tay sạch sẽ",
+        "head_type": "lifestyle",
+        "relation": "preventedBy",
+        "tail": "viêm bờ mi trên",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Sau khi rửa tay, cẩn thận rửa sạch mí mắt và lông mi, đồng thời dùng khăn khô lau mắt.",
+        "head": "rửa sạch mí mắt và lông mi",
+        "head_type": "lifestyle",
+        "relation": "preventedBy",
+        "tail": "viêm bờ mi trên",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Với người đã bị viêm bờ mi mắt, nên giữ cho tay sạch sẽ và hạn chế dụi lên mắt để không tiến triển nặng hơn.",
+        "head": "giữ cho tay sạch sẽ",
+        "head_type": "lifestyle",
+        "relation": "preventedBy",
+        "tail": "viêm bờ mi trên",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Với người đã bị viêm bờ mi mắt, nên giữ cho tay sạch sẽ và hạn chế dụi lên mắt để không tiến triển nặng hơn.",
+        "head": "dụi lên mắt",
+        "head_type": "lifestyle",
+        "relation": "aggravatedBy",
+        "tail": "viêm bờ mi trên",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Trong thời gian điều trị viêm bờ mi trên, bệnh nhân có thể sử dụng nước mắt nhân tạo để hỗ trợ giảm các triệu chứng khô mắt.",
+        "head": "nước mắt nhân tạo",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "viêm bờ mi trên",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nước mắt nhân tạo có thành phần natri hyaluronate 0,18%, được chứng minh có hiệu quả trong điều trị khô mắt.",
+        "head": "natri hyaluronate 0,18%",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "khô mắt",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đeo kính áp tròng làm ảnh hưởng đến việc luân chuyển, trao đổi lớp phim nước mắt ở giữa kính và bề mặt giác mạc.",
+        "head": "đeo kính áp tròng",
+        "head_type": "lifestyle",
+        "relation": "aggravatedBy",
+        "tail": "khô mắt",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đặc biệt, với kính áp tròng mềm, do có tỷ lệ ngậm nước nhất định nên nếu đeo thường xuyên sẽ gây khô mắt.",
+        "head": "kính áp tròng mềm",
+        "head_type": "treatment",
+        "relation": "aggravatedBy",
+        "tail": "khô mắt",
+        "tail_type": "disease"
+    }
+]

@@ -1,0 +1,430 @@
+
+MERGE (o1:disease {id: 'viêm_bao_gân_ngón_tay_disease'})
+MERGE (o2:lifestyle {id: 'sinh_hoạt_hàng_ngày_lifestyle'})
+MERGE (o1)-[r0:affects]->(o2)
+SET r0.text = 'Viêm bao gân ngón tay hay viêm gân gấp ngón tay, là bệnh lý thường gặp, gây ảnh hưởng trực tiếp đến sinh hoạt hàng ngày.'
+
+MERGE (o1:disease {id: 'viêm_gân_gấp_ngón_tay_disease'})
+MERGE (o2:disease {id: 'viêm_bao_gân_ngón_tay_disease'})
+MERGE (o1)-[r1:relatedTo]->(o2)
+SET r1.text = 'Viêm bao gân ngón tay hay viêm gân gấp ngón tay, là bệnh lý thường gặp, gây ảnh hưởng trực tiếp đến sinh hoạt hàng ngày.'
+
+MERGE (o1:disease {id: 'viêm_bao_gân_ngón_tay_disease'})
+MERGE (o2:symptom {id: 'cơn_đau_symptom'})
+MERGE (o1)-[r2:isSymptomOf]->(o2)
+SET r2.text = 'Tình trạng biểu hiện với nhiều mức độ cơn đau và triệu chứng khác nhau.'
+
+MERGE (o1:disease {id: 'viêm_bao_gân_ngón_tay_disease'})
+MERGE (o2:symptom {id: 'triệu_chứng_symptom'})
+MERGE (o1)-[r3:isSymptomOf]->(o2)
+SET r3.text = 'Tình trạng biểu hiện với nhiều mức độ cơn đau và triệu chứng khác nhau.'
+
+MERGE (o1:disease {id: 'viêm_bao_gân_ngón_tay_disease'})
+MERGE (o2:treatment {id: 'phương_pháp_điều_trị_treatment'})
+MERGE (o1)-[r4:treatedBy]->(o2)
+SET r4.text = 'Từ đó, các phương pháp điều trị tương ứng cũng có nhiều khác biệt.'
+
+MERGE (o1:disease {id: 'viêm_bao_gân_ngón_tay_disease'})
+MERGE (o2:symptom {id: 'viêm_bao_gân_symptom'})
+MERGE (o1)-[r5:isSymptomOf]->(o2)
+SET r5.text = 'Viêm bao gân ngón tay là tình trạng viêm bao gân của các gân gấp ngón tay, dẫn đến hiện tượng chít hẹp bao gân.'
+
+MERGE (o1:disease {id: 'viêm_bao_gân_ngón_tay_disease'})
+MERGE (o2:symptom {id: 'chít_hẹp_bao_gân_symptom'})
+MERGE (o1)-[r6:isSymptomOf]->(o2)
+SET r6.text = 'Viêm bao gân ngón tay là tình trạng viêm bao gân của các gân gấp ngón tay, dẫn đến hiện tượng chít hẹp bao gân.'
+
+MERGE (o1:disease {id: 'viêm_bao_gân_ngón_tay_disease'})
+MERGE (o2:symptom {id: 'đau_nhức_symptom'})
+MERGE (o1)-[r7:isSymptomOf]->(o2)
+SET r7.text = 'Lúc này, ngón tay sẽ gặp khó khăn, cảm giác đau nhức, cứng khi thực hiện cử động gập hay duỗi, đặc biệt là ngón cái và ngón đeo nhẫn.'
+
+MERGE (o1:disease {id: 'viêm_bao_gân_ngón_tay_disease'})
+MERGE (o2:symptom {id: 'cứng_symptom'})
+MERGE (o1)-[r8:isSymptomOf]->(o2)
+SET r8.text = 'Lúc này, ngón tay sẽ gặp khó khăn, cảm giác đau nhức, cứng khi thực hiện cử động gập hay duỗi, đặc biệt là ngón cái và ngón đeo nhẫn.'
+
+MERGE (o1:disease {id: 'viêm_bao_gân_ngón_tay_disease'})
+MERGE (o2:organ {id: 'ngón_tay_organ'})
+MERGE (o1)-[r9:affects]->(o2)
+SET r9.text = 'Lúc này, ngón tay sẽ gặp khó khăn, cảm giác đau nhức, cứng khi thực hiện cử động gập hay duỗi, đặc biệt là ngón cái và ngón đeo nhẫn.'
+
+MERGE (o1:organ {id: 'ngón_cái_organ'})
+MERGE (o2:disease {id: 'viêm_bao_gân_ngón_tay_disease'})
+MERGE (o1)-[r10:relatedTo]->(o2)
+SET r10.text = 'Lúc này, ngón tay sẽ gặp khó khăn, cảm giác đau nhức, cứng khi thực hiện cử động gập hay duỗi, đặc biệt là ngón cái và ngón đeo nhẫn.'
+
+MERGE (o1:organ {id: 'ngón_đeo_nhẫn_organ'})
+MERGE (o2:disease {id: 'viêm_bao_gân_ngón_tay_disease'})
+MERGE (o1)-[r11:relatedTo]->(o2)
+SET r11.text = 'Lúc này, ngón tay sẽ gặp khó khăn, cảm giác đau nhức, cứng khi thực hiện cử động gập hay duỗi, đặc biệt là ngón cái và ngón đeo nhẫn.'
+
+MERGE (o1:disease {id: 'viêm_bao_gân_ngón_tay_disease'})
+MERGE (o2:organ {id: 'ngón_tay_organ'})
+MERGE (o1)-[r12:affects]->(o2)
+SET r12.text = 'Tình trạng có thể xảy ra ở một hoặc nhiều ngón cùng lúc, đôi khi gây cản trở nghiêm trọng đến sinh hoạt hàng ngày.'
+
+MERGE (o1:disease {id: 'viêm_bao_gân_ngón_tay_disease'})
+MERGE (o2:lifestyle {id: 'sinh_hoạt_hàng_ngày_lifestyle'})
+MERGE (o1)-[r13:affects]->(o2)
+SET r13.text = 'Tình trạng có thể xảy ra ở một hoặc nhiều ngón cùng lúc, đôi khi gây cản trở nghiêm trọng đến sinh hoạt hàng ngày.'
+
+MERGE (o1:disease {id: 'viêm_bao_gân_ngón_tay_disease'})
+MERGE (o2:symptom {id: 'ngón_tay_bị_cố_định_ở_tư_thế_gấp_symptom'})
+MERGE (o1)-[r14:isSymptomOf]->(o2)
+SET r14.text = 'Nhiều trường hợp viêm tiến triển nặng, ngón tay thậm chí bị cố định ở tư thế gấp.'
+
+MERGE (o1:disease {id: 'viêm_bao_gân_ngón_tay_disease'})
+MERGE (o2:lifestyle {id: 'thực_hiện_lặp_đi_lặp_lại_cử_động_nắm_chặt_lifestyle'})
+MERGE (o1)-[r15:causedBy]->(o2)
+SET r15.text = 'Tình trạng này thường xuất hiện ở những người có công việc hoặc sở thích đòi hỏi phải thực hiện lặp đi lặp lại cử động nắm chặt.'
+
+MERGE (o1:disease {id: 'viêm_bao_gân_gấp_ngón_tay_disease'})
+MERGE (o2:lifestyle {id: 'phụ_nữ_lifestyle'})
+MERGE (o1)-[r16:associatedWith]->(o2)
+SET r16.text = 'Ngoài ra, viêm bao gân gấp ngón tay cũng phổ biến hơn ở phụ nữ và người mắc bệnh tiểu đường.'
+
+MERGE (o1:disease {id: 'viêm_bao_gân_gấp_ngón_tay_disease'})
+MERGE (o2:disease {id: 'bệnh_tiểu_đường_disease'})
+MERGE (o1)-[r17:associatedWith]->(o2)
+SET r17.text = 'Ngoài ra, viêm bao gân gấp ngón tay cũng phổ biến hơn ở phụ nữ và người mắc bệnh tiểu đường.'
+
+MERGE (o1:organ {id: 'gân_organ'})
+MERGE (o2:organ {id: 'tay_organ'})
+MERGE (o1)-[r18:locatedIn]->(o2)
+SET r18.text = 'Cụ thể, các gân trên tay làm nhiệm vụ kết nối cơ với xương.'
+
+MERGE (o1:organ {id: 'gân_organ'})
+MERGE (o2:organ {id: 'ngón_tay_organ'})
+MERGE (o1)-[r19:affects]->(o2)
+SET r19.text = 'Gân co lại sẽ tạo ra chuyển động bình thường cho ngón tay, trong đó:  Gân ở cẳng tay: Nhiệm vụ là giúp các ngón tay cử động, đặc biệt là ngón cái.'
+
+MERGE (o1:organ {id: 'gân_ở_cẳng_tay_organ'})
+MERGE (o2:organ {id: 'ngón_cái_organ'})
+MERGE (o1)-[r20:affects]->(o2)
+SET r20.text = 'Gân co lại sẽ tạo ra chuyển động bình thường cho ngón tay, trong đó:  Gân ở cẳng tay: Nhiệm vụ là giúp các ngón tay cử động, đặc biệt là ngón cái.'
+
+MERGE (o1:organ {id: 'gân_ở_đầu_bàn_tay_organ'})
+MERGE (o2:organ {id: 'ngón_tay_organ'})
+MERGE (o1)-[r21:affects]->(o2)
+SET r21.text = 'Gân ở đầu bàn tay (gân duỗi): Nhiệm vụ là giúp các ngón tay thực hiện cử động duỗi.'
+
+MERGE (o1:organ {id: 'gân_duỗi_organ'})
+MERGE (o2:organ {id: 'gân_ở_đầu_bàn_tay_organ'})
+MERGE (o1)-[r22:relatedTo]->(o2)
+SET r22.text = 'Gân ở đầu bàn tay (gân duỗi): Nhiệm vụ là giúp các ngón tay thực hiện cử động duỗi.'
+
+MERGE (o1:organ {id: 'gân_gấp_trên_lòng_bàn_tay_organ'})
+MERGE (o2:organ {id: 'ngón_tay_organ'})
+MERGE (o1)-[r23:affects]->(o2)
+SET r23.text = 'Gân gấp trên lòng bàn tay: Nhiệm vụ là giúp các ngón tay thực hiện cử động uốn cong.'
+
+MERGE (o1:organ {id: 'gân_organ'})
+MERGE (o2:organ {id: 'bao_gân_organ'})
+MERGE (o1)-[r24:locatedIn]->(o2)
+SET r24.text = 'Khi duỗi thẳng hoặc gấp ngón tay, gân sẽ di chuyển qua các ống nhỏ, gọi là bao gân.'
+
+MERGE (o1:organ {id: 'ròng_rọc_organ'})
+MERGE (o2:organ {id: 'gân_gấp_organ'})
+MERGE (o1)-[r25:locatedIn]->(o2)
+SET r25.text = 'Dọc theo bộ phận này, những dải mô được gọi là ròng rọc sẽ thực hiện chức năng giữ cho các gân gấp ở gần xương ngón tay.'
+
+MERGE (o1:organ {id: 'ròng_rọc_organ'})
+MERGE (o2:organ {id: 'xương_ngón_tay_organ'})
+MERGE (o1)-[r26:locatedIn]->(o2)
+SET r26.text = 'Dọc theo bộ phận này, những dải mô được gọi là ròng rọc sẽ thực hiện chức năng giữ cho các gân gấp ở gần xương ngón tay.'
+
+MERGE (o1:organ {id: 'ròng_rọc_a1_organ'})
+MERGE (o2:disease {id: 'viêm_bao_gân_ngón_tay_disease'})
+MERGE (o1)-[r27:relatedTo]->(o2)
+SET r27.text = 'Trong đó, ròng rọc A1 (ròng rọc ở gốc ngón tay) thường liên quan nhiều nhất đến tình trạng này.'
+
+MERGE (o1:disease {id: 'viêm_bao_gân_gấp_ngón_tay_disease'})
+MERGE (o2:symptom {id: 'mức_độ_bệnh_symptom'})
+MERGE (o1)-[r28:isSymptomOf]->(o2)
+SET r28.text = 'Viêm bao gân gấp ngón tay được phân loại thành 3 mức độ bệnh.'
+
+MERGE (o1:disease {id: 'viêm_gân_disease'})
+MERGE (o2:symptom {id: 'đau_tại_chỗ_symptom'})
+MERGE (o1)-[r29:isSymptomOf]->(o2)
+SET r29.text = 'Mức độ 1: Viêm gân, gây đau tại chỗ'
+
+MERGE (o1:disease {id: 'viêm_bao_gân_gấp_ngón_tay_disease'})
+MERGE (o2:symptom {id: 'đau_nặng_hơn_symptom'})
+MERGE (o1)-[r30:isSymptomOf]->(o2)
+SET r30.text = 'Mức độ 2: Cảm giác đau nặng hơn nhưng vẫn vận động gấp duỗi được ngón tay'
+
+MERGE (o1:disease {id: 'viêm_bao_gân_gấp_ngón_tay_disease'})
+MERGE (o2:symptom {id: 'vận_động_gấp_duỗi_được_ngón_tay_symptom'})
+MERGE (o1)-[r31:isSymptomOf]->(o2)
+SET r31.text = 'Mức độ 2: Cảm giác đau nặng hơn nhưng vẫn vận động gấp duỗi được ngón tay'
+
+MERGE (o1:disease {id: 'viêm_bao_gân_gấp_ngón_tay_disease'})
+MERGE (o2:symptom {id: 'ngón_tay_bị_kẹt_ở_tư_thế_uốn_cong_symptom'})
+MERGE (o1)-[r32:isSymptomOf]->(o2)
+SET r32.text = 'Mức độ 3: Ngón tay bị kẹt ở tư thế uốn cong, người bệnh phải dùng tay đối diện để đưa trở lại vị trí ban đầu.'
+
+MERGE (o1:disease {id: 'viêm_bao_gân_gấp_ngón_tay_disease'})
+MERGE (o2:symptom {id: 'ngón_tay_bị_cứng_ở_tư_thế_thẳng_symptom'})
+MERGE (o1)-[r33:isSymptomOf]->(o2)
+SET r33.text = 'Mức độ 3: Ngón tay bị kẹt ở tư thế uốn cong, người bệnh phải dùng tay đối diện để đưa trở lại vị trí ban đầu.'
+
+MERGE (o1:lifestyle {id: 'chuyển_động_lặp_đi_lặp_lại_hoặc_vận_động_ngón_tay_quá_mức_lifestyle'})
+MERGE (o2:disease {id: 'viêm_bao_gân_disease'})
+MERGE (o1)-[r34:causedBy]->(o2)
+SET r34.text = 'Trong hầu hết các trường hợp, viêm bao gân xuất hiện do chuyển động lặp đi lặp lại hoặc vận động ngón tay quá mức dẫn đến căng thẳng.'
+
+MERGE (o1:symptom {id: 'gân_bị_viêm_symptom'})
+MERGE (o2:disease {id: 'viêm_bao_gân_disease'})
+MERGE (o1)-[r35:isSymptomOf]->(o2)
+SET r35.text = 'Ngoài ra, tình trạng này cũng có thể xảy ra khi gân (dải mô cứng kết nối cơ và xương ngón tay) bị viêm.'
+
+MERGE (o1:organ {id: 'gân_organ'})
+MERGE (o2:organ {id: 'bàn_tay__cánh_tay_organ'})
+MERGE (o1)-[r36:locatedIn]->(o2)
+SET r36.text = 'Cụ thể, gân cùng các cơ bàn tay, cánh tay phối hợp với nhau, giúp những ngón tay có thể thực hiện hoạt động uốn cong và duỗi thẳng.'
+
+MERGE (o1:organ {id: 'màng_hoạt_dịch_organ'})
+MERGE (o2:organ {id: 'khớp_organ'})
+MERGE (o1)-[r37:locatedIn]->(o2)
+SET r37.text = 'Gân thường dễ dàng lướt qua mô bao bọc nhờ màng hoạt dịch (màng bao quanh khớp, có tác dụng bôi trơn).'
+
+MERGE (o1:symptom {id: 'gân_bị_viêm_symptom'})
+MERGE (o2:disease {id: 'viêm_bao_gân_disease'})
+MERGE (o1)-[r38:isSymptomOf]->(o2)
+SET r38.text = 'Đôi khi, gân bị viêm và sưng lên.'
+
+MERGE (o1:symptom {id: 'bao_gân_bị_kích_ứng_symptom'})
+MERGE (o2:disease {id: 'viêm_bao_gân_disease'})
+MERGE (o1)-[r39:isSymptomOf]->(o2)
+SET r39.text = 'Bao gân lúc này bị kích ứng, về lâu dài dẫn đến hình thành sẹo, dày lên, từ đó ảnh hưởng đến khả năng vận động của gân.'
+
+MERGE (o1:symptom {id: 'hình_thành_sẹo__dày_lên_symptom'})
+MERGE (o2:disease {id: 'viêm_bao_gân_disease'})
+MERGE (o1)-[r40:isSymptomOf]->(o2)
+SET r40.text = 'Bao gân lúc này bị kích ứng, về lâu dài dẫn đến hình thành sẹo, dày lên, từ đó ảnh hưởng đến khả năng vận động của gân.'
+
+MERGE (o1:symptom {id: 'uốn_cong_ngón_tay_symptom'})
+MERGE (o2:disease {id: 'viêm_bao_gân_disease'})
+MERGE (o1)-[r41:isSymptomOf]->(o2)
+SET r41.text = 'Khi tình trạng này xảy ra, việc uốn cong ngón tay, đặc biệt là ngón tay cái sẽ kéo gân bị viêm qua một lớp vỏ bọc, dẫn đến hiện tượng gãy hoặc bật ra.'
+
+MERGE (o1:cause {id: 'tuổi_tác_cause'})
+MERGE (o2:disease {id: 'viêm_bao_gân_ngón_tay_disease'})
+MERGE (o1)-[r42:causedBy]->(o2)
+SET r42.text = 'Tuổi tác: Viêm bao gân ngón tay thường xuất hiện phổ biến trong độ tuổi từ 40 - 60 tuổi.'
+
+MERGE (o1:disease {id: 'tiểu_đường__gút__viêm_khớp_dạng_thấp_disease'})
+MERGE (o2:disease {id: 'viêm_bao_gân_ngón_tay_disease'})
+MERGE (o1)-[r43:causedBy]->(o2)
+SET r43.text = 'Bệnh lý: Tiểu đường, gút, viêm khớp dạng thấp…'
+
+MERGE (o1:lifestyle {id: 'nông_dân__công_nhân__nhạc_sĩ_lifestyle'})
+MERGE (o2:disease {id: 'viêm_bao_gân_ngón_tay_disease'})
+MERGE (o1)-[r44:causedBy]->(o2)
+SET r44.text = 'Nghề nghiệp: Nông dân, công nhân, nhạc sĩ… (những người thường xuyên phải thực hiện các động tác lặp đi lặp lại trên ngón tay).'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_hội_chứng_ống_cổ_tay_treatment'})
+MERGE (o2:disease {id: 'viêm_bao_gân_disease'})
+MERGE (o1)-[r45:causedBy]->(o2)
+SET r45.text = 'Phẫu thuật hội chứng ống cổ tay: Tình trạng viêm bao gân xuất hiện phổ biến nhất trong 6 tháng đầu sau phẫu thuật'
+
+MERGE (o1:disease {id: 'viêm_bao_gân_disease'})
+MERGE (o2:lifestyle {id: 'trẻ_em_lifestyle'})
+MERGE (o1)-[r46:affects]->(o2)
+SET r46.text = 'Tình trạng này thường không phổ biến ở trẻ em nhưng cũng có một vài trường hợp gặp phải.'
+
+MERGE (o1:symptom {id: 'viêm_symptom'})
+MERGE (o2:disease {id: 'viêm_bao_gân_disease'})
+MERGE (o1)-[r47:isSymptomOf]->(o2)
+SET r47.text = 'Viêm gây ảnh hưởng đến khả năng duỗi thẳng ngón tay, tuy nhiên hiếm khi gây đau đớn.'
+
+MERGE (o1:symptom {id: 'duỗi_thẳng_ngón_tay_symptom'})
+MERGE (o2:disease {id: 'viêm_bao_gân_disease'})
+MERGE (o1)-[r48:isSymptomOf]->(o2)
+SET r48.text = 'Viêm gây ảnh hưởng đến khả năng duỗi thẳng ngón tay, tuy nhiên hiếm khi gây đau đớn.'
+
+MERGE (o1:symptom {id: 'đau_symptom'})
+MERGE (o2:disease {id: 'viêm_bao_gân_disease'})
+MERGE (o1)-[r49:isSymptomOf]->(o2)
+SET r49.text = 'Đau: Tình trạng bắt đầu với cảm giác khó chịu ở gốc ngón tay, ngón cái hoặc vị trí tiếp xúc giữa ngón tay với lòng bàn tay.'
+
+MERGE (o1:symptom {id: 'cảm_giác_khó_chịu_ở_gốc_ngón_tay__ngón_cái_hoặc_vị_trí_tiếp_xúc_giữa_ngón_tay_với_lòng_bàn_tay_symptom'})
+MERGE (o2:disease {id: 'viêm_bao_gân_disease'})
+MERGE (o1)-[r50:isSymptomOf]->(o2)
+SET r50.text = 'Đau: Tình trạng bắt đầu với cảm giác khó chịu ở gốc ngón tay, ngón cái hoặc vị trí tiếp xúc giữa ngón tay với lòng bàn tay.'
+
+MERGE (o1:symptom {id: 'sưng_symptom'})
+MERGE (o2:disease {id: 'viêm_bao_gân_disease'})
+MERGE (o1)-[r51:isSymptomOf]->(o2)
+SET r51.text = 'Sưng: Tại vị trí đau khớp có thể gây sưng do viêm bao hoạt dịch tại khớ'
+
+MERGE (o1:symptom {id: 'viêm_bao_hoạt_dịch_symptom'})
+MERGE (o2:disease {id: 'viêm_bao_gân_disease'})
+MERGE (o1)-[r52:isSymptomOf]->(o2)
+SET r52.text = 'Sưng: Tại vị trí đau khớp có thể gây sưng do viêm bao hoạt dịch tại khớ'
+
+MERGE (o1:symptom {id: 'ngón_tay_bị_cứng_hoặc_không_thể_cử_động_symptom'})
+MERGE (o2:disease {id: 'viêm_bao_gân_disease'})
+MERGE (o1)-[r53:isSymptomOf]->(o2)
+SET r53.text = 'Ngón tay bị cứng hoặc không thể cử động: Viêm bao gân có thể làm mất khả năng gấp duỗi của ngón tay.'
+
+MERGE (o1:symptom {id: 'mất_khả_năng_gấp_duỗi_của_ngón_tay_symptom'})
+MERGE (o2:disease {id: 'viêm_bao_gân_disease'})
+MERGE (o1)-[r54:isSymptomOf]->(o2)
+SET r54.text = 'Ngón tay bị cứng hoặc không thể cử động: Viêm bao gân có thể làm mất khả năng gấp duỗi của ngón tay.'
+
+MERGE (o1:disease {id: 'nhiễm_trùng_disease'})
+MERGE (o2:disease {id: 'viêm_bao_gân_disease'})
+MERGE (o1)-[r55:isSymptomOf]->(o2)
+SET r55.text = 'Nhiễm trùng: Dấu hiệu dễ nhận biết là các khớp ngón tay bị nóng và viêm.'
+
+MERGE (o1:symptom {id: 'các_khớp_ngón_tay_bị_nóng_và_viêm_symptom'})
+MERGE (o2:disease {id: 'nhiễm_trùng_disease'})
+MERGE (o1)-[r56:isSymptomOf]->(o2)
+SET r56.text = 'Nhiễm trùng: Dấu hiệu dễ nhận biết là các khớp ngón tay bị nóng và viêm.'
+
+MERGE (o1:symptom {id: 'ngón_tay_bị_kẹt_vĩnh_viễn_ở_tư_thế_gấp_symptom'})
+MERGE (o2:disease {id: 'viêm_bao_gân_disease'})
+MERGE (o1)-[r57:isSymptomOf]->(o2)
+SET r57.text = 'Ngón tay sẽ bị kẹt vĩnh viễn ở tư thế gấp: Điều này khiến sinh hoạt, vận động hàng ngày gặp phải rất nhiều khó khăn và bất tiện.'
+
+MERGE (o1:symptom {id: 'nhiều_ngón_tay_có_thể_bị_cứng__tê_cùng_lúc_symptom'})
+MERGE (o2:disease {id: 'viêm_bao_gân_disease'})
+MERGE (o1)-[r58:isSymptomOf]->(o2)
+SET r58.text = 'Nhiều ngón tay có thể bị cứng, tê cùng lúc, gây cảm giác đau đớn và khó khăn trong sinh hoạt.'
+
+MERGE (o1:treatment {id: 'quá_trình_chẩn_đoán_viêm_bao_gân_gấp_ngón_tay_treatment'})
+MERGE (o2:disease {id: 'viêm_bao_gân_gấp_ngón_tay_disease'})
+MERGE (o1)-[r59:diagnosedBy]->(o2)
+SET r59.text = 'Quá trình chẩn đoán viêm bao gân gấp ngón tay không phức tạp.'
+
+MERGE (o1:treatment {id: 'bác_sĩ_treatment'})
+MERGE (o2:disease {id: 'viêm_bao_gân_gấp_ngón_tay_disease'})
+MERGE (o1)-[r60:diagnosedBy]->(o2)
+SET r60.text = 'Thông thường, bác sĩ chỉ đưa ra kết luận dựa trên tiền sử và kết quả khám sức khỏe.'
+
+MERGE (o1:test {id: 'nắm__thả_bàn_tay__kiểm_tra_vị_trí_đau__khả_năng_cử_động_test'})
+MERGE (o2:disease {id: 'viêm_bao_gân_gấp_ngón_tay_disease'})
+MERGE (o1)-[r61:diagnosedBy]->(o2)
+SET r61.text = 'Trong đó, người bệnh sẽ thực hiện các động tác nắm, thả bàn tay, kiểm tra vị trí đau, khả năng cử động…'
+
+MERGE (o1:test {id: 'sờ_vào_lòng_bàn_tay_test'})
+MERGE (o2:disease {id: 'viêm_bao_gân_gấp_ngón_tay_disease'})
+MERGE (o1)-[r62:diagnosedBy]->(o2)
+SET r62.text = 'Bác sĩ cũng có thể sờ vào lòng bàn tay để kiểm tra sự xuất hiện của các khối u.'
+
+MERGE (o1:symptom {id: 'vùng_sưng_di_chuyển_theo_cử_động_của_ngón_tay_symptom'})
+MERGE (o2:disease {id: 'viêm_bao_gân_disease'})
+MERGE (o1)-[r63:isSymptomOf]->(o2)
+SET r63.text = 'Nếu liên quan đến viêm bao gân, vùng sưng sẽ di chuyển theo cử động của ngón tay.'
+
+MERGE (o1:test {id: 'xét_nghiệm_test'})
+MERGE (o2:disease {id: 'viêm_bao_gân_gấp_ngón_tay_disease'})
+MERGE (o1)-[r64:diagnosedBy]->(o2)
+SET r64.text = 'Ngoài ra, người bệnh có thể sẽ được tiến hành một số xét nghiệm sau để kiểm tra tổn thương liên quan:'
+
+MERGE (o1:test {id: 'siêu_âm_test'})
+MERGE (o2:disease {id: 'viêm_bao_gân_gấp_ngón_tay_disease'})
+MERGE (o1)-[r65:diagnosedBy]->(o2)
+SET r65.text = 'Siêu âm với đầu dò tần số &gt; 7.5 – 20MHz: Mục đích là kiểm tra gân, tình trạng dày lên của bao gân, dịch bao quanh, hạt xơ trong bao gân.'
+
+MERGE (o1:test {id: 'x_-_quang_test'})
+MERGE (o2:disease {id: 'viêm_bao_gân_gấp_ngón_tay_disease'})
+MERGE (o1)-[r66:diagnosedBy]->(o2)
+SET r66.text = 'X - quang: Mục đích là kiểm tra tổn thương xương (nếu có).'
+
+MERGE (o1:test {id: 'chụp_mri_test'})
+MERGE (o2:disease {id: 'viêm_bao_gân_gấp_ngón_tay_disease'})
+MERGE (o1)-[r67:diagnosedBy]->(o2)
+SET r67.text = 'Chụp MRI (cộng hưởng từ): Mục đích nhằm đánh giá tình trạng tràn dịch hoặc sưng tấy của bao gân, sự thay đổi về cấu trúc, chất lượng gân…'
+
+MERGE (o1:test {id: 'xét_nghiệm_máu_test'})
+MERGE (o2:disease {id: 'viêm_bao_gân_gấp_ngón_tay_disease'})
+MERGE (o1)-[r68:diagnosedBy]->(o2)
+SET r68.text = 'Xét nghiệm máu: Mục đích là kiểm tra bạch cầu và tốc độ máu lắng đánh giá bilan viêm'
+
+MERGE (o1:treatment {id: 'cử_động_ngón_tay_nhẹ_nhàng_treatment'})
+MERGE (o2:disease {id: 'viêm_bao_gân_gấp_ngón_tay_disease'})
+MERGE (o1)-[r69:treatedBy]->(o2)
+SET r69.text = 'Sau phẫu thuật, hầu hết người bệnh đều được khuyến khích cử động ngón tay nhẹ nhàng.'
+
+MERGE (o1:symptom {id: 'đau_nhức_lòng_bàn_tay_symptom'})
+MERGE (o2:disease {id: 'viêm_bao_gân_gấp_ngón_tay_disease'})
+MERGE (o1)-[r70:isSymptomOf]->(o2)
+SET r70.text = 'Thông thường, triệu chứng đau nhức lòng bàn tay cũng có thể xuất hiện.'
+
+MERGE (o1:symptom {id: 'sưng__đau__cứng_bàn_tay__ngón_tay_symptom'})
+MERGE (o2:disease {id: 'viêm_bao_gân_gấp_ngón_tay_disease'})
+MERGE (o1)-[r71:isSymptomOf]->(o2)
+SET r71.text = 'Mặc dù vết mổ sẽ lành trong khoảng vài tuần nhưng hiện tượng sưng, đau, cứng bàn tay, ngón tay có khả năng cần từ 4 - 6 tháng để biến mất hoàn toàn.'
+
+MERGE (o1:treatment {id: 'chuyên_gia_trị_liệu_riêng_về_tay_treatment'})
+MERGE (o2:disease {id: 'viêm_bao_gân_gấp_ngón_tay_disease'})
+MERGE (o1)-[r72:treatedBy]->(o2)
+SET r72.text = 'Nếu thời gian kéo dài hơn, người bệnh có thể được khuyên đến gặp chuyên gia trị liệu riêng về tay.'
+
+MERGE (o1:symptom {id: 'giảm_đau_symptom'})
+MERGE (o2:treatment {id: 'phẫu_thuật_treatment'})
+MERGE (o1)-[r73:treatedBy]->(o2)
+SET r73.text = 'Thực tế, hầu hết các trường hợp đều nhận thấy hiệu quả giảm đau đáng kể cũng như những cải thiện tích cực về chức năng sau phẫu thuật.'
+
+MERGE (o1:symptom {id: 'co_cứng_hoặc_mất_cử_động_symptom'})
+MERGE (o2:disease {id: 'viêm_bao_gân_gấp_ngón_tay_disease'})
+MERGE (o1)-[r74:aggravatedBy]->(o2)
+SET r74.text = 'Tuy nhiên, nếu tình trạng co cứng hoặc mất cử động xảy ra trước khi tiến hành mổ, khả năng vận động có thể không được phục hồi.'
+
+MERGE (o1:symptom {id: 'đau_nhức__khó_chịu_symptom'})
+MERGE (o2:disease {id: 'viêm_bao_gân_ngón_tay_disease'})
+MERGE (o1)-[r75:isSymptomOf]->(o2)
+SET r75.text = 'Viêm bao gân ngón tay xuất hiện với những cơn đau nhức, khó chịu, gây cản trở trực tiếp đến vận động, sinh hoạt hàng ngày.'
+
+MERGE (o1:treatment {id: 'phòng_ngừa_treatment'})
+MERGE (o2:disease {id: 'viêm_bao_gân_ngón_tay_disease'})
+MERGE (o1)-[r76:preventedBy]->(o2)
+SET r76.text = 'Do đó, việc chủ động phòng ngừa ngay từ sớm là thực sự cần thiết.'
+
+MERGE (o1:lifestyle {id: 'cầm_nắm_hoặc_nắm_chặt_lặp_đi_lặp_lại_lifestyle'})
+MERGE (o2:disease {id: 'viêm_bao_gân_ngón_tay_disease'})
+MERGE (o1)-[r77:aggravatedBy]->(o2)
+SET r77.text = 'Tránh thực hiện các động tác cầm nắm hoặc nắm chặt lặp đi lặp lại.'
+
+MERGE (o1:lifestyle {id: 'thiết_bị__máy_móc_tạo_độ_rung_lifestyle'})
+MERGE (o2:disease {id: 'viêm_bao_gân_ngón_tay_disease'})
+MERGE (o1)-[r78:aggravatedBy]->(o2)
+SET r78.text = 'Tránh sử dụng các loại thiết bị, máy móc tạo độ rung.'
+
+MERGE (o1:lifestyle {id: 'nghỉ_ngơi_đầy_đủ_và_hợp_lý_lifestyle'})
+MERGE (o2:disease {id: 'viêm_bao_gân_ngón_tay_disease'})
+MERGE (o1)-[r79:preventedBy]->(o2)
+SET r79.text = 'Xây dựng chế độ nghỉ ngơi đầy đủ và hợp lý'
+
+MERGE (o1:food {id: 'thực_phẩm_giàu_dinh_dưỡng__canxi__vitamin_c_food'})
+MERGE (o2:disease {id: 'viêm_bao_gân_ngón_tay_disease'})
+MERGE (o1)-[r80:preventedBy]->(o2)
+SET r80.text = 'Bổ sung các thực phẩm giàu dinh dưỡng vào chế độ ăn hàng ngày, Canxi, Vitamin C.'
+
+MERGE (o1:lifestyle {id: 'dụng_cụ_thể_thao_có_kích_thước_vừa_vặn_lifestyle'})
+MERGE (o2:disease {id: 'viêm_bao_gân_ngón_tay_disease'})
+MERGE (o1)-[r81:preventedBy]->(o2)
+SET r81.text = 'Cầm nắm các dụng cụ thể thao có kích thước vừa vặn.'
+
+MERGE (o1:treatment {id: 'bài_tập_kéo_giãn_nhẹ_nhàng_treatment'})
+MERGE (o2:disease {id: 'viêm_bao_gân_ngón_tay_disease'})
+MERGE (o1)-[r82:treatedBy]->(o2)
+SET r82.text = 'Thực hiện các bài tập kéo giãn nhẹ nhàng để tăng cường sức mạnh cho cổ tay và ngón tay.'
+
+MERGE (o1:treatment {id: 'trung_tâm_chấn_thương_chỉnh_hình__hệ_thống_bvđk_tâm_anh_treatment'})
+MERGE (o2:disease {id: 'viêm_bao_gân_gấp_ngón_tay_disease'})
+MERGE (o1)-[r83:treatedBy]->(o2)
+SET r83.text = 'Trung tâm Chấn thương chỉnh hình, Hệ thống BVĐK Tâm Anh, là nơi quy tụ đội ngũ chuyên gia đầu ngành, bác sĩ ngoại khoa giàu kinh nghiệm, tận tâm, nhiệt tình như: TTND.GS.TS.BS Nguyễn Việt Tiến; PGS.TS.BS Đặng Hồng Hoa; TS.BS Tăng Hà Nam Anh; ThS.BS.CKII Trần Anh Vũ; BS.CKI Trần Xuân Anh, ThS.BS.CKI Lê Đình Khoa, TS.BS Đỗ Tiến Dũng; TS.BS.CKII Vũ Hữu Dũng…'
+
+MERGE (o1:treatment {id: 'chẩn_đoán_và_điều_trị_các_bệnh_về_cơ_xương_khớp_treatment'})
+MERGE (o2:disease {id: 'viêm_bao_gân_gấp_ngón_tay_disease'})
+MERGE (o1)-[r84:treatedBy]->(o2)
+SET r84.text = 'Đây cũng là một trong những đơn vị tiên phong trong việc chẩn đoán và điều trị các bệnh về cơ xương khớp với kỹ thuật hiện đại theo phác đồ cập nhật quốc tế.'
+
+MERGE (o1:test {id: 'máy_chụp_ct_768_lát_cắt_somatom_drive__máy_cộng_hưởng_từ_thế_hệ_mới_magnetom_amira_biomatrix__robot_artis_pheno__máy_đo_mật_độ_xương__máy_siêu_âm…;_hệ_thống_kính_vi_phẫu_thuật_opmi_vario_700_zeiss__bàn_mổ_meera-maquet…_test'})
+MERGE (o2:disease {id: 'viêm_bao_gân_gấp_ngón_tay_disease'})
+MERGE (o1)-[r85:diagnosedBy]->(o2)
+SET r85.text = 'Bệnh viện còn được trang bị hệ thống máy móc, trang thiết bị chẩn đoán hình ảnh hiện đại như: máy chụp CT 768 lát cắt Somatom Drive, máy cộng hưởng từ thế hệ mới Magnetom Amira BioMatrix, robot Artis Pheno, máy đo mật độ xương, máy siêu âm…; hệ thống kính vi phẫu thuật Opmi Vario 700 Zeiss, bàn mổ Meera-Maquet… để có thể phát hiện sớm các tổn thương và điều trị hiệu quả các bệnh lý về cơ xương khớp…'

@@ -1,0 +1,860 @@
+
+MERGE (o1:disease {id: 'u_tuyến_mang_tai_disease'})
+MERGE (o2:disease {id: 'u_tuyến_đa_dạng_disease'})
+MERGE (o1)-[r0:relatedTo]->(o2)
+SET r0.text = 'U tuyến mang tai thường là tổn thương lành tính, nhưng nếu nó thuộc loại u tuyến đa dạng thì có khả năng biến đổi ác tính sau nhiều năm.'
+
+MERGE (o1:disease {id: 'u_tuyến_mang_tai_disease'})
+MERGE (o2:disease {id: 'biến_đổi_ác_tính_disease'})
+MERGE (o1)-[r1:relatedTo]->(o2)
+SET r1.text = 'U tuyến mang tai thường là tổn thương lành tính, nhưng nếu nó thuộc loại u tuyến đa dạng thì có khả năng biến đổi ác tính sau nhiều năm.'
+
+MERGE (o1:disease {id: 'u_tuyến_nước_bọt_mang_tai_disease'})
+MERGE (o2:disease {id: 'lành_tính_disease'})
+MERGE (o1)-[r2:relatedTo]->(o2)
+SET r2.text = 'Theo BSNT.CKII Trần Thị Thúy Hằng, Trưởng khoa Tai Mũi Họng, Bệnh viện Đa khoa Tâm Anh TP.HCM, hầu hết các khối u tuyến nước bọt mang tai là lành tính.'
+
+MERGE (o1:disease {id: 'khối_u_tuyến_mang_tai_disease'})
+MERGE (o2:test {id: 'sinh_thiết_chọc_hút_bằng_kim_nhỏ_test'})
+MERGE (o1)-[r3:diagnosedBy]->(o2)
+SET r3.text = 'Một khối u tuyến mang tai được đánh giá sinh thiết chọc hút bằng kim nhỏ, bằng hình ảnh chụp CT và MRI.'
+
+MERGE (o1:disease {id: 'khối_u_tuyến_mang_tai_disease'})
+MERGE (o2:test {id: 'chụp_ct_test'})
+MERGE (o1)-[r4:diagnosedBy]->(o2)
+SET r4.text = 'Một khối u tuyến mang tai được đánh giá sinh thiết chọc hút bằng kim nhỏ, bằng hình ảnh chụp CT và MRI.'
+
+MERGE (o1:disease {id: 'khối_u_tuyến_mang_tai_disease'})
+MERGE (o2:test {id: 'chụp_mri_test'})
+MERGE (o1)-[r5:diagnosedBy]->(o2)
+SET r5.text = 'Một khối u tuyến mang tai được đánh giá sinh thiết chọc hút bằng kim nhỏ, bằng hình ảnh chụp CT và MRI.'
+
+MERGE (o1:disease {id: 'khối_u_ác_tính_disease'})
+MERGE (o2:treatment {id: 'cắt_bỏ_treatment'})
+MERGE (o1)-[r6:treatedBy]->(o2)
+SET r6.text = 'Đối với các khối u ác tính, phương pháp điều trị phổ biến là cắt bỏ hoặc kết hợp với tia xạ.'
+
+MERGE (o1:disease {id: 'khối_u_ác_tính_disease'})
+MERGE (o2:treatment {id: 'tia_xạ_treatment'})
+MERGE (o1)-[r7:treatedBy]->(o2)
+SET r7.text = 'Đối với các khối u ác tính, phương pháp điều trị phổ biến là cắt bỏ hoặc kết hợp với tia xạ.'
+
+MERGE (o1:disease {id: 'u_tuyến_nước_bọt_mang_tai_disease'})
+MERGE (o2:disease {id: 'lành_tính_disease'})
+MERGE (o1)-[r8:relatedTo]->(o2)
+SET r8.text = 'U tuyến nước bọt mang tai không hiếm gặp, thường lành tính nhưng có khả năng biến đổi ác tính sau nhiều năm.'
+
+MERGE (o1:disease {id: 'u_tuyến_nước_bọt_mang_tai_disease'})
+MERGE (o2:disease {id: 'biến_đổi_ác_tính_disease'})
+MERGE (o1)-[r9:relatedTo]->(o2)
+SET r9.text = 'U tuyến nước bọt mang tai không hiếm gặp, thường lành tính nhưng có khả năng biến đổi ác tính sau nhiều năm.'
+
+MERGE (o1:disease {id: 'u_tuyến_mang_tai_disease'})
+MERGE (o2:disease {id: 'u_tuyến_nước_bọt_disease'})
+MERGE (o1)-[r10:isSymptomOf]->(o2)
+SET r10.text = 'Theo bác sĩ Thúy Hằng, u tuyến mang tai hay u tuyến nước bọt mang tai là một dạng của u tuyến nước bọt.'
+
+MERGE (o1:disease {id: 'u_tuyến_nước_bọt_mang_tai_disease'})
+MERGE (o2:disease {id: 'u_tuyến_nước_bọt_disease'})
+MERGE (o1)-[r11:isSymptomOf]->(o2)
+SET r11.text = 'Theo bác sĩ Thúy Hằng, u tuyến mang tai hay u tuyến nước bọt mang tai là một dạng của u tuyến nước bọt.'
+
+MERGE (o1:organ {id: 'tuyến_mang_tai_organ'})
+MERGE (o2:organ {id: 'vùng_ngoài_của_mặt_organ'})
+MERGE (o1)-[r12:locatedIn]->(o2)
+SET r12.text = 'Tuyến mang tai là tuyến nước bọt lớn nhất trong cơ thể nằm ở vùng ngoài của mặt, gần góc hàm mỗi bên.'
+
+MERGE (o1:organ {id: 'tuyến_mang_tai_organ'})
+MERGE (o2:organ {id: 'góc_hàm_organ'})
+MERGE (o1)-[r13:locatedIn]->(o2)
+SET r13.text = 'Tuyến mang tai là tuyến nước bọt lớn nhất trong cơ thể nằm ở vùng ngoài của mặt, gần góc hàm mỗi bên.'
+
+MERGE (o1:organ {id: 'tuyến_nước_bọt_dưới_hàm_organ'})
+MERGE (o2:organ {id: 'khoang_miệng_organ'})
+MERGE (o1)-[r14:locatedIn]->(o2)
+SET r14.text = 'Ngoài ra còn có tuyến nước bọt dưới hàm, dưới lưỡi và các tuyến nước bọt phụ rải rác trong khoang miệng.'
+
+MERGE (o1:organ {id: 'tuyến_nước_bọt_dưới_lưỡi_organ'})
+MERGE (o2:organ {id: 'khoang_miệng_organ'})
+MERGE (o1)-[r15:locatedIn]->(o2)
+SET r15.text = 'Ngoài ra còn có tuyến nước bọt dưới hàm, dưới lưỡi và các tuyến nước bọt phụ rải rác trong khoang miệng.'
+
+MERGE (o1:organ {id: 'tuyến_nước_bọt_phụ_organ'})
+MERGE (o2:organ {id: 'khoang_miệng_organ'})
+MERGE (o1)-[r16:locatedIn]->(o2)
+SET r16.text = 'Ngoài ra còn có tuyến nước bọt dưới hàm, dưới lưỡi và các tuyến nước bọt phụ rải rác trong khoang miệng.'
+
+MERGE (o1:disease {id: 'u_tuyến_nước_bọt_disease'})
+MERGE (o2:disease {id: 'lành_tính_disease'})
+MERGE (o1)-[r17:relatedTo]->(o2)
+SET r17.text = 'U tuyến nước bọt không hiếm gặp, 80% là lành tính và có thể xảy ra ở mọi lứa tuổi.'
+
+MERGE (o1:disease {id: 'u_tuyến_nước_bọt_disease'})
+MERGE (o2:lifestyle {id: 'mọi_lứa_tuổi_lifestyle'})
+MERGE (o1)-[r18:relatedTo]->(o2)
+SET r18.text = 'U tuyến nước bọt không hiếm gặp, 80% là lành tính và có thể xảy ra ở mọi lứa tuổi.'
+
+MERGE (o1:disease {id: 'nguy_cơ_ác_tính_disease'})
+MERGE (o2:lifestyle {id: 'trẻ_em_lifestyle'})
+MERGE (o1)-[r19:relatedTo]->(o2)
+SET r19.text = 'Nguy cơ ác tính chỉ chiếm 20%, chủ yếu gặp ở trẻ em và người từ 60 tuổi trở lên.'
+
+MERGE (o1:disease {id: 'nguy_cơ_ác_tính_disease'})
+MERGE (o2:lifestyle {id: 'người_từ_60_tuổi_trở_lên_lifestyle'})
+MERGE (o1)-[r20:relatedTo]->(o2)
+SET r20.text = 'Nguy cơ ác tính chỉ chiếm 20%, chủ yếu gặp ở trẻ em và người từ 60 tuổi trở lên.'
+
+MERGE (o1:disease {id: 'u_tuyến_mang_tai_disease'})
+MERGE (o2:disease {id: 'ác_tính_disease'})
+MERGE (o1)-[r21:relatedTo]->(o2)
+SET r21.text = 'U tuyến mang tai hiếm khi ác tính, ước tính tỷ lệ ác tính toàn cầu chỉ 0,5-3/100.000 người mỗi năm, chiếm khoảng 5% tổng số các khối u ác tính ở đầu và cổ.'
+
+MERGE (o1:disease {id: 'u_tuyến_mang_tai_disease'})
+MERGE (o2:disease {id: 'khối_u_ác_tính_ở_đầu_và_cổ_disease'})
+MERGE (o1)-[r22:relatedTo]->(o2)
+SET r22.text = 'U tuyến mang tai hiếm khi ác tính, ước tính tỷ lệ ác tính toàn cầu chỉ 0,5-3/100.000 người mỗi năm, chiếm khoảng 5% tổng số các khối u ác tính ở đầu và cổ.'
+
+MERGE (o1:disease {id: 'khối_u_tuyến_nước_bọt_disease'})
+MERGE (o2:disease {id: 'u_nang_tuyến_nước_bọt_disease'})
+MERGE (o1)-[r23:relatedTo]->(o2)
+SET r23.text = 'Theo phân loại mô học của Tổ chức Y tế Thế giới (WHO) (1), khối u tuyến nước bọt hiện nay bao gồm hơn 40 biến thể cũng như các tổn thương giống khối u như u nang tuyến nước bọt.'
+
+MERGE (o1:disease {id: 'u_đa_dạng_tuyến_nước_bọt_lành_tính_disease'})
+MERGE (o2:disease {id: 'u_warthin_disease'})
+MERGE (o1)-[r24:relatedTo]->(o2)
+SET r24.text = 'Bao gồm u đa dạng tuyến nước bọt lành tính (Pleomorphic adenoma), u Warthin (adenolymphoma), u myoepithelioma, u tuyến tế bào đáy&#8230;'
+
+MERGE (o1:disease {id: 'u_đa_dạng_tuyến_nước_bọt_lành_tính_disease'})
+MERGE (o2:disease {id: 'u_myoepithelioma_disease'})
+MERGE (o1)-[r25:relatedTo]->(o2)
+SET r25.text = 'Bao gồm u đa dạng tuyến nước bọt lành tính (Pleomorphic adenoma), u Warthin (adenolymphoma), u myoepithelioma, u tuyến tế bào đáy&#8230;'
+
+MERGE (o1:disease {id: 'u_đa_dạng_tuyến_nước_bọt_lành_tính_disease'})
+MERGE (o2:disease {id: 'u_tuyến_tế_bào_đáy_disease'})
+MERGE (o1)-[r26:relatedTo]->(o2)
+SET r26.text = 'Bao gồm u đa dạng tuyến nước bọt lành tính (Pleomorphic adenoma), u Warthin (adenolymphoma), u myoepithelioma, u tuyến tế bào đáy&#8230;'
+
+MERGE (o1:disease {id: 'khối_u_tuyến_mang_tai_lành_tính_disease'})
+MERGE (o2:disease {id: 'ác_tính_disease'})
+MERGE (o1)-[r27:relatedTo]->(o2)
+SET r27.text = 'Trong số các khối u tuyến mang tai lành tính, vẫn có loại có tiềm năng chuyển thành ác tính.'
+
+MERGE (o1:disease {id: 'ung_thư_biểu_mô_tuyến_nhầy_disease'})
+MERGE (o2:disease {id: 'ung_thư_biểu_mô_nang_tuyến_disease'})
+MERGE (o1)-[r28:relatedTo]->(o2)
+SET r28.text = 'Bao gồm ung thư biểu mô tuyến nhầy, ung thư biểu mô nang tuyến, ung thư biểu mô tế bào acinic, ung thư biểu mô tuyến, ung thư biểu mô tế bào vảy (SCC), ung thư biểu mô không biệt hóa, ung thư biểu mô tuyến đa hình…'
+
+MERGE (o1:disease {id: 'ung_thư_biểu_mô_tuyến_nhầy_disease'})
+MERGE (o2:disease {id: 'ung_thư_biểu_mô_tế_bào_acinic_disease'})
+MERGE (o1)-[r29:relatedTo]->(o2)
+SET r29.text = 'Bao gồm ung thư biểu mô tuyến nhầy, ung thư biểu mô nang tuyến, ung thư biểu mô tế bào acinic, ung thư biểu mô tuyến, ung thư biểu mô tế bào vảy (SCC), ung thư biểu mô không biệt hóa, ung thư biểu mô tuyến đa hình…'
+
+MERGE (o1:disease {id: 'ung_thư_biểu_mô_tuyến_nhầy_disease'})
+MERGE (o2:disease {id: 'ung_thư_biểu_mô_tuyến_disease'})
+MERGE (o1)-[r30:relatedTo]->(o2)
+SET r30.text = 'Bao gồm ung thư biểu mô tuyến nhầy, ung thư biểu mô nang tuyến, ung thư biểu mô tế bào acinic, ung thư biểu mô tuyến, ung thư biểu mô tế bào vảy (SCC), ung thư biểu mô không biệt hóa, ung thư biểu mô tuyến đa hình…'
+
+MERGE (o1:disease {id: 'ung_thư_biểu_mô_tuyến_nhầy_disease'})
+MERGE (o2:disease {id: 'ung_thư_biểu_mô_tế_bào_vảy_disease'})
+MERGE (o1)-[r31:relatedTo]->(o2)
+SET r31.text = 'Bao gồm ung thư biểu mô tuyến nhầy, ung thư biểu mô nang tuyến, ung thư biểu mô tế bào acinic, ung thư biểu mô tuyến, ung thư biểu mô tế bào vảy (SCC), ung thư biểu mô không biệt hóa, ung thư biểu mô tuyến đa hình…'
+
+MERGE (o1:disease {id: 'ung_thư_biểu_mô_tuyến_nhầy_disease'})
+MERGE (o2:disease {id: 'ung_thư_biểu_mô_không_biệt_hóa_disease'})
+MERGE (o1)-[r32:relatedTo]->(o2)
+SET r32.text = 'Bao gồm ung thư biểu mô tuyến nhầy, ung thư biểu mô nang tuyến, ung thư biểu mô tế bào acinic, ung thư biểu mô tuyến, ung thư biểu mô tế bào vảy (SCC), ung thư biểu mô không biệt hóa, ung thư biểu mô tuyến đa hình…'
+
+MERGE (o1:disease {id: 'ung_thư_biểu_mô_tuyến_nhầy_disease'})
+MERGE (o2:disease {id: 'ung_thư_biểu_mô_tuyến_đa_hình_disease'})
+MERGE (o1)-[r33:relatedTo]->(o2)
+SET r33.text = 'Bao gồm ung thư biểu mô tuyến nhầy, ung thư biểu mô nang tuyến, ung thư biểu mô tế bào acinic, ung thư biểu mô tuyến, ung thư biểu mô tế bào vảy (SCC), ung thư biểu mô không biệt hóa, ung thư biểu mô tuyến đa hình…'
+
+MERGE (o1:disease {id: 'u_tuyến_nước_bọt_disease'})
+MERGE (o2:organ {id: 'tuyến_mang_tai_organ'})
+MERGE (o1)-[r34:locatedIn]->(o2)
+SET r34.text = 'Một quy tắc ngón tay cái giúp ghi nhớ về u tuyến nước bọt: 80% các khối u tuyến nước bọt là ở tuyến mang tai, 80% các khối u tuyến mang tai là lành tính và 80% các khối u lành tính phát sinh trong tuyến mang tai là u đa dạng tuyến nước bọt lành tính (Pleomorphic adenoma), khối u Warthin là tổn thương lành tính phổ biến thứ hai.'
+
+MERGE (o1:disease {id: 'u_tuyến_mang_tai_disease'})
+MERGE (o2:disease {id: 'lành_tính_disease'})
+MERGE (o1)-[r35:relatedTo]->(o2)
+SET r35.text = 'Một quy tắc ngón tay cái giúp ghi nhớ về u tuyến nước bọt: 80% các khối u tuyến nước bọt là ở tuyến mang tai, 80% các khối u tuyến mang tai là lành tính và 80% các khối u lành tính phát sinh trong tuyến mang tai là u đa dạng tuyến nước bọt lành tính (Pleomorphic adenoma), khối u Warthin là tổn thương lành tính phổ biến thứ hai.'
+
+MERGE (o1:disease {id: 'u_đa_dạng_tuyến_nước_bọt_lành_tính_disease'})
+MERGE (o2:disease {id: 'lành_tính_disease'})
+MERGE (o1)-[r36:relatedTo]->(o2)
+SET r36.text = 'Một quy tắc ngón tay cái giúp ghi nhớ về u tuyến nước bọt: 80% các khối u tuyến nước bọt là ở tuyến mang tai, 80% các khối u tuyến mang tai là lành tính và 80% các khối u lành tính phát sinh trong tuyến mang tai là u đa dạng tuyến nước bọt lành tính (Pleomorphic adenoma), khối u Warthin là tổn thương lành tính phổ biến thứ hai.'
+
+MERGE (o1:disease {id: 'khối_u_warthin_disease'})
+MERGE (o2:disease {id: 'lành_tính_disease'})
+MERGE (o1)-[r37:relatedTo]->(o2)
+SET r37.text = 'Một quy tắc ngón tay cái giúp ghi nhớ về u tuyến nước bọt: 80% các khối u tuyến nước bọt là ở tuyến mang tai, 80% các khối u tuyến mang tai là lành tính và 80% các khối u lành tính phát sinh trong tuyến mang tai là u đa dạng tuyến nước bọt lành tính (Pleomorphic adenoma), khối u Warthin là tổn thương lành tính phổ biến thứ hai.'
+
+MERGE (o1:disease {id: 'ung_thư_biểu_mô_mucoepidermoid_disease'})
+MERGE (o2:disease {id: 'ung_thư_biểu_mô_tế_bào_acinic_disease'})
+MERGE (o1)-[r38:relatedTo]->(o2)
+SET r38.text = 'Các khối u ác tính phổ biến nhất là ung thư biểu mô mucoepidermoid, tiếp theo là ung thư biểu mô tế bào acinic và ung thư biểu mô nang tuyến adenoid.'
+
+MERGE (o1:disease {id: 'ung_thư_biểu_mô_mucoepidermoid_disease'})
+MERGE (o2:disease {id: 'ung_thư_biểu_mô_nang_tuyến_adenoid_disease'})
+MERGE (o1)-[r39:relatedTo]->(o2)
+SET r39.text = 'Các khối u ác tính phổ biến nhất là ung thư biểu mô mucoepidermoid, tiếp theo là ung thư biểu mô tế bào acinic và ung thư biểu mô nang tuyến adenoid.'
+
+MERGE (o1:organ {id: 'tuyến_mang_tai_organ'})
+MERGE (o2:disease {id: 'ung_thư_biểu_mô_tế_bào_vảy_disease'})
+MERGE (o1)-[r40:relatedTo]->(o2)
+SET r40.text = 'Lưu ý, tuyến mang tai là vị trí thường xuyên di căn do ung thư biểu mô tế bào vảy phát sinh ở da đầu và cổ.'
+
+MERGE (o1:disease {id: 'ung_thư_biểu_mô_tế_bào_vảy_disease'})
+MERGE (o2:organ {id: 'da_đầu_organ'})
+MERGE (o1)-[r41:locatedIn]->(o2)
+SET r41.text = 'Lưu ý, tuyến mang tai là vị trí thường xuyên di căn do ung thư biểu mô tế bào vảy phát sinh ở da đầu và cổ.'
+
+MERGE (o1:disease {id: 'ung_thư_biểu_mô_tế_bào_vảy_disease'})
+MERGE (o2:organ {id: 'cổ_organ'})
+MERGE (o1)-[r42:locatedIn]->(o2)
+SET r42.text = 'Lưu ý, tuyến mang tai là vị trí thường xuyên di căn do ung thư biểu mô tế bào vảy phát sinh ở da đầu và cổ.'
+
+MERGE (o1:cause {id: 'thay_đổi_gen_cause'})
+MERGE (o2:disease {id: 'u_tuyến_mang_tai_disease'})
+MERGE (o1)-[r43:causedBy]->(o2)
+SET r43.text = 'Theo bác sĩ Thúy Hằng, nguyên nhân hình thành u tuyến mang tai hiện tại vẫn chưa rõ, tuy nhiên có những yếu tố nguy cơ xuất hiện u tuyến mang tai nói riêng hay u tuyến nước bọt nói chung là thay đổi gen, tiếp xúc với tia xạ, hút thuốc lá.'
+
+MERGE (o1:cause {id: 'tiếp_xúc_với_tia_xạ_cause'})
+MERGE (o2:disease {id: 'u_tuyến_mang_tai_disease'})
+MERGE (o1)-[r44:causedBy]->(o2)
+SET r44.text = 'Theo bác sĩ Thúy Hằng, nguyên nhân hình thành u tuyến mang tai hiện tại vẫn chưa rõ, tuy nhiên có những yếu tố nguy cơ xuất hiện u tuyến mang tai nói riêng hay u tuyến nước bọt nói chung là thay đổi gen, tiếp xúc với tia xạ, hút thuốc lá.'
+
+MERGE (o1:lifestyle {id: 'hút_thuốc_lá_lifestyle'})
+MERGE (o2:disease {id: 'u_tuyến_mang_tai_disease'})
+MERGE (o1)-[r45:causedBy]->(o2)
+SET r45.text = 'Theo bác sĩ Thúy Hằng, nguyên nhân hình thành u tuyến mang tai hiện tại vẫn chưa rõ, tuy nhiên có những yếu tố nguy cơ xuất hiện u tuyến mang tai nói riêng hay u tuyến nước bọt nói chung là thay đổi gen, tiếp xúc với tia xạ, hút thuốc lá.'
+
+MERGE (o1:lifestyle {id: 'hút_thuốc_lá_lifestyle'})
+MERGE (o2:disease {id: 'u_tuyến_mang_tai_disease'})
+MERGE (o1)-[r46:causedBy]->(o2)
+SET r46.text = 'Hút thuốc lá được cho là một trong những yếu tố chính gây ra u tuyến mang tai'
+
+MERGE (o1:symptom {id: 'khối_sưng_vùng_góc_hàm_symptom'})
+MERGE (o2:disease {id: 'u_tuyến_mang_tai_disease'})
+MERGE (o1)-[r47:isSymptomOf]->(o2)
+SET r47.text = 'Bác sĩ Thúy Hằng cho biết, những triệu chứng phổ biến của u tuyến mang tai gồm: khối sưng vùng góc hàm; dấu hiệu liệt mặt, khó nhai.'
+
+MERGE (o1:symptom {id: 'dấu_hiệu_liệt_mặt_symptom'})
+MERGE (o2:disease {id: 'u_tuyến_mang_tai_disease'})
+MERGE (o1)-[r48:isSymptomOf]->(o2)
+SET r48.text = 'Bác sĩ Thúy Hằng cho biết, những triệu chứng phổ biến của u tuyến mang tai gồm: khối sưng vùng góc hàm; dấu hiệu liệt mặt, khó nhai.'
+
+MERGE (o1:symptom {id: 'khó_nhai_symptom'})
+MERGE (o2:disease {id: 'u_tuyến_mang_tai_disease'})
+MERGE (o1)-[r49:isSymptomOf]->(o2)
+SET r49.text = 'Bác sĩ Thúy Hằng cho biết, những triệu chứng phổ biến của u tuyến mang tai gồm: khối sưng vùng góc hàm; dấu hiệu liệt mặt, khó nhai.'
+
+MERGE (o1:test {id: 'chụp_phim_ct-scan_test'})
+MERGE (o2:disease {id: 'u_tuyến_mang_tai_disease'})
+MERGE (o1)-[r50:diagnosedBy]->(o2)
+SET r50.text = 'Nhưng đôi khi u tuyến mang tai cũng có thể không bộc lộ triệu chứng, người bệnh chỉ tình cờ phát hiện khi chụp phim CT-scan hoặc siêu âm vùng mặt cổ.(3) Ngoài ra, triệu chứng u tuyến mang tai thể lành tính và ác tính cũng có thể khác nhau.'
+
+MERGE (o1:test {id: 'siêu_âm_vùng_mặt_cổ_test'})
+MERGE (o2:disease {id: 'u_tuyến_mang_tai_disease'})
+MERGE (o1)-[r51:diagnosedBy]->(o2)
+SET r51.text = 'Nhưng đôi khi u tuyến mang tai cũng có thể không bộc lộ triệu chứng, người bệnh chỉ tình cờ phát hiện khi chụp phim CT-scan hoặc siêu âm vùng mặt cổ.(3) Ngoài ra, triệu chứng u tuyến mang tai thể lành tính và ác tính cũng có thể khác nhau.'
+
+MERGE (o1:symptom {id: 'khối_u_xuất_hiện_nhiều_năm_symptom'})
+MERGE (o2:disease {id: 'u_tuyến_mang_tai_lành_tính_disease'})
+MERGE (o1)-[r52:isSymptomOf]->(o2)
+SET r52.text = 'Một khối u xuất hiện nhiều năm, phát triển chậm và không đau là triệu chứng thường thấy ở dạng u tuyến mang tai lành tính.'
+
+MERGE (o1:symptom {id: 'phát_triển_chậm_symptom'})
+MERGE (o2:disease {id: 'u_tuyến_mang_tai_lành_tính_disease'})
+MERGE (o1)-[r53:isSymptomOf]->(o2)
+SET r53.text = 'Một khối u xuất hiện nhiều năm, phát triển chậm và không đau là triệu chứng thường thấy ở dạng u tuyến mang tai lành tính.'
+
+MERGE (o1:symptom {id: 'không_đau_symptom'})
+MERGE (o2:disease {id: 'u_tuyến_mang_tai_lành_tính_disease'})
+MERGE (o1)-[r54:isSymptomOf]->(o2)
+SET r54.text = 'Một khối u xuất hiện nhiều năm, phát triển chậm và không đau là triệu chứng thường thấy ở dạng u tuyến mang tai lành tính.'
+
+MERGE (o1:symptom {id: 'tăng_kích_thước_nhanh_chóng_symptom'})
+MERGE (o2:disease {id: 'u_tuyến_mang_tai_lành_tính_disease'})
+MERGE (o1)-[r55:isSymptomOf]->(o2)
+SET r55.text = 'Thông thường, khối u này chỉ tắng kích thước nhanh chóng khi bị nhiễm trùng, chảy máu trong khối u hoặc bắt đầu tạo nang.'
+
+MERGE (o1:cause {id: 'nhiễm_trùng_cause'})
+MERGE (o2:symptom {id: 'tăng_kích_thước_nhanh_chóng_symptom'})
+MERGE (o1)-[r56:causedBy]->(o2)
+SET r56.text = 'Thông thường, khối u này chỉ tắng kích thước nhanh chóng khi bị nhiễm trùng, chảy máu trong khối u hoặc bắt đầu tạo nang.'
+
+MERGE (o1:cause {id: 'chảy_máu_trong_khối_u_cause'})
+MERGE (o2:symptom {id: 'tăng_kích_thước_nhanh_chóng_symptom'})
+MERGE (o1)-[r57:causedBy]->(o2)
+SET r57.text = 'Thông thường, khối u này chỉ tắng kích thước nhanh chóng khi bị nhiễm trùng, chảy máu trong khối u hoặc bắt đầu tạo nang.'
+
+MERGE (o1:cause {id: 'tạo_nang_cause'})
+MERGE (o2:symptom {id: 'tăng_kích_thước_nhanh_chóng_symptom'})
+MERGE (o1)-[r58:causedBy]->(o2)
+SET r58.text = 'Thông thường, khối u này chỉ tắng kích thước nhanh chóng khi bị nhiễm trùng, chảy máu trong khối u hoặc bắt đầu tạo nang.'
+
+MERGE (o1:symptom {id: 'căng_tức_vùng_mang_tai_symptom'})
+MERGE (o2:disease {id: 'u_tuyến_mang_tai_lành_tính_disease'})
+MERGE (o1)-[r59:isSymptomOf]->(o2)
+SET r59.text = 'Tình trạng này thường có biểu hiện căng tức vùng mang tai.'
+
+MERGE (o1:symptom {id: 'phát_triển_nhanh_symptom'})
+MERGE (o2:disease {id: 'u_tuyến_mang_tai_ác_tính_disease'})
+MERGE (o1)-[r60:isSymptomOf]->(o2)
+SET r60.text = 'Ở dạng ác tính, khối u này thường phát triển nhanh, gây đau và liệt không hoàn toàn hoặc liệt hoàn toàn dây thần kinh mặt.'
+
+MERGE (o1:symptom {id: 'gây_đau_symptom'})
+MERGE (o2:disease {id: 'u_tuyến_mang_tai_ác_tính_disease'})
+MERGE (o1)-[r61:isSymptomOf]->(o2)
+SET r61.text = 'Ở dạng ác tính, khối u này thường phát triển nhanh, gây đau và liệt không hoàn toàn hoặc liệt hoàn toàn dây thần kinh mặt.'
+
+MERGE (o1:symptom {id: 'liệt_không_hoàn_toàn_symptom'})
+MERGE (o2:disease {id: 'u_tuyến_mang_tai_ác_tính_disease'})
+MERGE (o1)-[r62:isSymptomOf]->(o2)
+SET r62.text = 'Ở dạng ác tính, khối u này thường phát triển nhanh, gây đau và liệt không hoàn toàn hoặc liệt hoàn toàn dây thần kinh mặt.'
+
+MERGE (o1:symptom {id: 'liệt_hoàn_toàn_dây_thần_kinh_mặt_symptom'})
+MERGE (o2:disease {id: 'u_tuyến_mang_tai_ác_tính_disease'})
+MERGE (o1)-[r63:isSymptomOf]->(o2)
+SET r63.text = 'Ở dạng ác tính, khối u này thường phát triển nhanh, gây đau và liệt không hoàn toàn hoặc liệt hoàn toàn dây thần kinh mặt.'
+
+MERGE (o1:disease {id: 'u_tuyến_mang_tai_ác_tính_disease'})
+MERGE (o2:organ {id: 'dây_thần_kinh_mặt_organ'})
+MERGE (o1)-[r64:affects]->(o2)
+SET r64.text = 'U tuyến mang tai ác tính có thể gây ra nhiều biến chứng nguy hiểm bao gồm:  Chèn ép dây thần kinh mặt gây liệt mặt.'
+
+MERGE (o1:symptom {id: 'chèn_ép_dây_thần_kinh_mặt_symptom'})
+MERGE (o2:disease {id: 'u_tuyến_mang_tai_ác_tính_disease'})
+MERGE (o1)-[r65:isSymptomOf]->(o2)
+SET r65.text = 'U tuyến mang tai ác tính có thể gây ra nhiều biến chứng nguy hiểm bao gồm:  Chèn ép dây thần kinh mặt gây liệt mặt.'
+
+MERGE (o1:symptom {id: 'liệt_mặt_symptom'})
+MERGE (o2:disease {id: 'u_tuyến_mang_tai_ác_tính_disease'})
+MERGE (o1)-[r66:isSymptomOf]->(o2)
+SET r66.text = 'U tuyến mang tai ác tính có thể gây ra nhiều biến chứng nguy hiểm bao gồm:  Chèn ép dây thần kinh mặt gây liệt mặt.'
+
+MERGE (o1:symptom {id: 'suy_giảm_thính_lực_symptom'})
+MERGE (o2:disease {id: 'u_tuyến_mang_tai_ác_tính_disease'})
+MERGE (o1)-[r67:isSymptomOf]->(o2)
+SET r67.text = 'Suy giảm thính lực và nguy cơ mù lòa.'
+
+MERGE (o1:symptom {id: 'mù_lòa_symptom'})
+MERGE (o2:disease {id: 'u_tuyến_mang_tai_ác_tính_disease'})
+MERGE (o1)-[r68:isSymptomOf]->(o2)
+SET r68.text = 'Suy giảm thính lực và nguy cơ mù lòa.'
+
+MERGE (o1:symptom {id: 'khối_u_di_ăn_symptom'})
+MERGE (o2:disease {id: 'u_tuyến_mang_tai_ác_tính_disease'})
+MERGE (o1)-[r69:isSymptomOf]->(o2)
+SET r69.text = 'Khi khối u di ăn có thể gây ra các biến chứng ở đầu, cổ, phổi và cuối cùng dẫn đến tử vong.'
+
+MERGE (o1:symptom {id: 'biến_chứng_ở_đầu_symptom'})
+MERGE (o2:disease {id: 'u_tuyến_mang_tai_ác_tính_disease'})
+MERGE (o1)-[r70:isSymptomOf]->(o2)
+SET r70.text = 'Khi khối u di ăn có thể gây ra các biến chứng ở đầu, cổ, phổi và cuối cùng dẫn đến tử vong.'
+
+MERGE (o1:symptom {id: 'biến_chứng_ở_cổ_symptom'})
+MERGE (o2:disease {id: 'u_tuyến_mang_tai_ác_tính_disease'})
+MERGE (o1)-[r71:isSymptomOf]->(o2)
+SET r71.text = 'Khi khối u di ăn có thể gây ra các biến chứng ở đầu, cổ, phổi và cuối cùng dẫn đến tử vong.'
+
+MERGE (o1:symptom {id: 'biến_chứng_ở_phổi_symptom'})
+MERGE (o2:disease {id: 'u_tuyến_mang_tai_ác_tính_disease'})
+MERGE (o1)-[r72:isSymptomOf]->(o2)
+SET r72.text = 'Khi khối u di ăn có thể gây ra các biến chứng ở đầu, cổ, phổi và cuối cùng dẫn đến tử vong.'
+
+MERGE (o1:symptom {id: 'tử_vong_symptom'})
+MERGE (o2:disease {id: 'u_tuyến_mang_tai_ác_tính_disease'})
+MERGE (o1)-[r73:isSymptomOf]->(o2)
+SET r73.text = 'Khi khối u di ăn có thể gây ra các biến chứng ở đầu, cổ, phổi và cuối cùng dẫn đến tử vong.'
+
+MERGE (o1:disease {id: 'u_tuyến_mang_tai_lành_tính_disease'})
+MERGE (o2:disease {id: 'u_tuyến_mang_tai_ác_tính_disease'})
+MERGE (o1)-[r74:relatedTo]->(o2)
+SET r74.text = 'Nguy cơ lớn nhất ở u tuyến mang tai lành tính là khả năng biến đổi ác tính của loại u tuyến đa dạng sau nhiều năm xuất hiện.'
+
+MERGE (o1:test {id: 'kiểm_tra_và_sờ_nắn_khối_u_test'})
+MERGE (o2:disease {id: 'u_tuyến_mang_tai_disease'})
+MERGE (o1)-[r75:diagnosedBy]->(o2)
+SET r75.text = 'Theo bác sĩ Thúy Hằng, kiểm tra và sờ nắn khối u là phương pháp chẩn đoán ban đầu đối với u tuyến mang tai.'
+
+MERGE (o1:disease {id: 'u_tuyến_mang_tai_disease'})
+MERGE (o2:test {id: 'kiểm_tra_và_sờ_nắn_khối_u_test'})
+MERGE (o1)-[r76:diagnosedBy]->(o2)
+SET r76.text = 'Theo bác sĩ Thúy Hằng, kiểm tra và sờ nắn khối u là phương pháp chẩn đoán ban đầu đối với u tuyến mang tai.'
+
+MERGE (o1:test {id: 'kiểm_tra_miệng_test'})
+MERGE (o2:test {id: 'kiểm_tra_ống_tuyến_nước_bọt_test'})
+MERGE (o1)-[r77:relatedTo]->(o2)
+SET r77.text = 'Việc kiểm tra miệng phải đồng thời với việc kiểm tra ống tuyến nước bọt có liên quan.'
+
+MERGE (o1:test {id: 'kiểm_tra_ống_tuyến_nước_bọt_test'})
+MERGE (o2:test {id: 'kiểm_tra_miệng_test'})
+MERGE (o1)-[r78:relatedTo]->(o2)
+SET r78.text = 'Việc kiểm tra miệng phải đồng thời với việc kiểm tra ống tuyến nước bọt có liên quan.'
+
+MERGE (o1:test {id: 'đánh_giá_dây_thần_kinh_mặt_test'})
+MERGE (o2:test {id: 'sờ_nắn_hạch_cổ_test'})
+MERGE (o1)-[r79:relatedTo]->(o2)
+SET r79.text = 'Tiếp đó, việc đánh giá dây thần kinh mặt và sờ nắn hạch cổ là bước bắt buộc.'
+
+MERGE (o1:test {id: 'sờ_nắn_hạch_cổ_test'})
+MERGE (o2:test {id: 'đánh_giá_dây_thần_kinh_mặt_test'})
+MERGE (o1)-[r80:relatedTo]->(o2)
+SET r80.text = 'Tiếp đó, việc đánh giá dây thần kinh mặt và sờ nắn hạch cổ là bước bắt buộc.'
+
+MERGE (o1:symptom {id: 'liệt_dây_thần_kinh_mặt_symptom'})
+MERGE (o2:disease {id: 'tổn_thương_ác_tính_disease'})
+MERGE (o1)-[r81:isSymptomOf]->(o2)
+SET r81.text = 'Nếu có tình trạng liệt dây thần kinh mặt, có thể là dấu hiệu của một tổn thương ác tính với sự xâm lấn vào dây thần kinh.'
+
+MERGE (o1:disease {id: 'tổn_thương_ác_tính_disease'})
+MERGE (o2:organ {id: 'dây_thần_kinh_organ'})
+MERGE (o1)-[r82:affects]->(o2)
+SET r82.text = 'Nếu có tình trạng liệt dây thần kinh mặt, có thể là dấu hiệu của một tổn thương ác tính với sự xâm lấn vào dây thần kinh.'
+
+MERGE (o1:test {id: 'kiểm_tra_test'})
+MERGE (o2:disease {id: 'tổn_thương_nghi_ngờ_ung_thư_disease'})
+MERGE (o1)-[r83:diagnosedBy]->(o2)
+SET r83.text = 'Da đầu và cổ cũng cần được kiểm tra xem có tổn thương nghi ngờ ung thư hay không.'
+
+MERGE (o1:disease {id: 'tổn_thương_nghi_ngờ_ung_thư_disease'})
+MERGE (o2:test {id: 'kiểm_tra_test'})
+MERGE (o1)-[r84:diagnosedBy]->(o2)
+SET r84.text = 'Da đầu và cổ cũng cần được kiểm tra xem có tổn thương nghi ngờ ung thư hay không.'
+
+MERGE (o1:disease {id: 'u_tuyến_mang_tai_ác_tính_disease'})
+MERGE (o2:test {id: 'xét_nghiệm_test'})
+MERGE (o1)-[r85:diagnosedBy]->(o2)
+SET r85.text = 'Ở những bệnh nhân nghi ngờ u tuyến mang tai ác tính, cần thực hiện các xét nghiệm sau để chẩn đoán:(5)'
+
+MERGE (o1:test {id: 'xét_nghiệm_test'})
+MERGE (o2:disease {id: 'u_tuyến_mang_tai_ác_tính_disease'})
+MERGE (o1)-[r86:diagnosedBy]->(o2)
+SET r86.text = 'Ở những bệnh nhân nghi ngờ u tuyến mang tai ác tính, cần thực hiện các xét nghiệm sau để chẩn đoán:(5)'
+
+MERGE (o1:test {id: 'sinh_thiết_chọc_hút_bằng_kim_nhỏ_(fna)_test'})
+MERGE (o2:disease {id: 'tổn_thương_tuyến_nước_bọt_disease'})
+MERGE (o1)-[r87:diagnosedBy]->(o2)
+SET r87.text = 'Sinh thiết chọc hút bằng kim nhỏ (FNA) là công cụ chẩn đoán chính cho các tổn thương tuyến nước bọt.'
+
+MERGE (o1:disease {id: 'tổn_thương_tuyến_nước_bọt_disease'})
+MERGE (o2:test {id: 'sinh_thiết_chọc_hút_bằng_kim_nhỏ_(fna)_test'})
+MERGE (o1)-[r88:diagnosedBy]->(o2)
+SET r88.text = 'Sinh thiết chọc hút bằng kim nhỏ (FNA) là công cụ chẩn đoán chính cho các tổn thương tuyến nước bọt.'
+
+MERGE (o1:test {id: 'sinh_thiết_chọc_hút_bằng_kim_nhỏ_(fna)_test'})
+MERGE (o2:treatment {id: 'phẫu_thuật_treatment'})
+MERGE (o1)-[r89:treatedBy]->(o2)
+SET r89.text = 'Đây là một thủ thuật không đau, ít biến chứng, có thể giúp ngăn ngừa chỉ định phẫu thuật hoặc sinh thiết chuyên khoa không chính xác.'
+
+MERGE (o1:test {id: 'sinh_thiết_chọc_hút_bằng_kim_nhỏ_(fna)_test'})
+MERGE (o2:treatment {id: 'sinh_thiết_chuyên_khoa_treatment'})
+MERGE (o1)-[r90:treatedBy]->(o2)
+SET r90.text = 'Đây là một thủ thuật không đau, ít biến chứng, có thể giúp ngăn ngừa chỉ định phẫu thuật hoặc sinh thiết chuyên khoa không chính xác.'
+
+MERGE (o1:test {id: 'fna_test'})
+MERGE (o2:test {id: 'đánh_giá_lâm_sàng_test'})
+MERGE (o1)-[r91:relatedTo]->(o2)
+SET r91.text = 'Nếu kết quả của FNA không giống với các phát hiện khác thì nên đánh giá lâm sàng.'
+
+MERGE (o1:test {id: 'đánh_giá_lâm_sàng_test'})
+MERGE (o2:test {id: 'fna_test'})
+MERGE (o1)-[r92:relatedTo]->(o2)
+SET r92.text = 'Nếu kết quả của FNA không giống với các phát hiện khác thì nên đánh giá lâm sàng.'
+
+MERGE (o1:test {id: 'fna_test'})
+MERGE (o2:disease {id: 'tổn_thương_ác_tính_disease'})
+MERGE (o1)-[r93:diagnosedBy]->(o2)
+SET r93.text = 'Đôi khi, kết quả của FNA có thể là âm tính giả dẫn đến chẩn đoán nhầm các tổn thương ác tính.'
+
+MERGE (o1:disease {id: 'tổn_thương_ác_tính_disease'})
+MERGE (o2:test {id: 'fna_test'})
+MERGE (o1)-[r94:diagnosedBy]->(o2)
+SET r94.text = 'Đôi khi, kết quả của FNA có thể là âm tính giả dẫn đến chẩn đoán nhầm các tổn thương ác tính.'
+
+MERGE (o1:disease {id: 'khối_u_tuyến_nước_bọt_disease'})
+MERGE (o2:symptom {id: 'hạch_cổ_phì_đại_symptom'})
+MERGE (o1)-[r95:relatedTo]->(o2)
+SET r95.text = 'Phương pháp này giúp cung cấp thông tin quan trọng về vị trí, kích thước và bản chất của khối u tuyến nước bọt cũng như sự hiện diện của hạch cổ phì đại liên quan khối u.'
+
+MERGE (o1:symptom {id: 'hạch_cổ_phì_đại_symptom'})
+MERGE (o2:disease {id: 'khối_u_tuyến_nước_bọt_disease'})
+MERGE (o1)-[r96:relatedTo]->(o2)
+SET r96.text = 'Phương pháp này giúp cung cấp thông tin quan trọng về vị trí, kích thước và bản chất của khối u tuyến nước bọt cũng như sự hiện diện của hạch cổ phì đại liên quan khối u.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:organ {id: 'tuyến_mang_tai_organ'})
+MERGE (o1)-[r97:locatedIn]->(o2)
+SET r97.text = 'Vị trí của khối u ở bề ngoài hoặc bề sâu của tuyến mang tai được xác định bằng cách xác định mối liên hệ của khối u với tĩnh mạch dưới hàm.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:organ {id: 'tĩnh_mạch_dưới_hàm_organ'})
+MERGE (o1)-[r98:relatedTo]->(o2)
+SET r98.text = 'Vị trí của khối u ở bề ngoài hoặc bề sâu của tuyến mang tai được xác định bằng cách xác định mối liên hệ của khối u với tĩnh mạch dưới hàm.'
+
+MERGE (o1:test {id: 'siêu_âm_test'})
+MERGE (o2:disease {id: 'khối_u_disease'})
+MERGE (o1)-[r99:diagnosedBy]->(o2)
+SET r99.text = 'Siêu âm thường được kết hợp với FNA có thể giúp phân biệt ác tính và lành tính từ 80-90% trường hợp.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:test {id: 'siêu_âm_test'})
+MERGE (o1)-[r100:diagnosedBy]->(o2)
+SET r100.text = 'Siêu âm thường được kết hợp với FNA có thể giúp phân biệt ác tính và lành tính từ 80-90% trường hợp.'
+
+MERGE (o1:test {id: 'chụp_mri_test'})
+MERGE (o2:disease {id: 'khối_u_tuyến_mang_tai_disease'})
+MERGE (o1)-[r101:diagnosedBy]->(o2)
+SET r101.text = 'Chụp MRI khối u tuyến mang tai rất hữu ích trong việc đánh giá và xác định cấu trúc giải phẫu, phần mở rộng vào thùy sâu và liên quan đến dây thần kinh mặt.'
+
+MERGE (o1:disease {id: 'khối_u_tuyến_mang_tai_disease'})
+MERGE (o2:test {id: 'chụp_mri_test'})
+MERGE (o1)-[r102:diagnosedBy]->(o2)
+SET r102.text = 'Chụp MRI khối u tuyến mang tai rất hữu ích trong việc đánh giá và xác định cấu trúc giải phẫu, phần mở rộng vào thùy sâu và liên quan đến dây thần kinh mặt.'
+
+MERGE (o1:disease {id: 'khối_u_tuyến_mang_tai_disease'})
+MERGE (o2:organ {id: 'dây_thần_kinh_mặt_organ'})
+MERGE (o1)-[r103:affects]->(o2)
+SET r103.text = 'Chụp MRI khối u tuyến mang tai rất hữu ích trong việc đánh giá và xác định cấu trúc giải phẫu, phần mở rộng vào thùy sâu và liên quan đến dây thần kinh mặt.'
+
+MERGE (o1:disease {id: 'u_disease'})
+MERGE (o2:organ {id: 'tuyến_mang_tai_organ'})
+MERGE (o1)-[r104:locatedIn]->(o2)
+SET r104.text = 'Bác sĩ Thúy Hằng cho biết: “Thông thường, nếu u xuất phát từ tuyến mang tai (tuyến nước bọt lớn) thì 80% sẽ là lành tính, 20% là ác tính.'
+
+MERGE (o1:disease {id: 'u_disease'})
+MERGE (o2:organ {id: 'tuyến_nước_bọt_lớn_organ'})
+MERGE (o1)-[r105:locatedIn]->(o2)
+SET r105.text = 'Bác sĩ Thúy Hằng cho biết: “Thông thường, nếu u xuất phát từ tuyến mang tai (tuyến nước bọt lớn) thì 80% sẽ là lành tính, 20% là ác tính.'
+
+MERGE (o1:disease {id: 'u_disease'})
+MERGE (o2:disease {id: 'lành_tính_disease'})
+MERGE (o1)-[r106:relatedTo]->(o2)
+SET r106.text = 'Bác sĩ Thúy Hằng cho biết: “Thông thường, nếu u xuất phát từ tuyến mang tai (tuyến nước bọt lớn) thì 80% sẽ là lành tính, 20% là ác tính.'
+
+MERGE (o1:disease {id: 'u_disease'})
+MERGE (o2:disease {id: 'ác_tính_disease'})
+MERGE (o1)-[r107:relatedTo]->(o2)
+SET r107.text = 'Bác sĩ Thúy Hằng cho biết: “Thông thường, nếu u xuất phát từ tuyến mang tai (tuyến nước bọt lớn) thì 80% sẽ là lành tính, 20% là ác tính.'
+
+MERGE (o1:disease {id: 'u_disease'})
+MERGE (o2:organ {id: 'tuyến_nước_bọt_nhỏ_organ'})
+MERGE (o1)-[r108:locatedIn]->(o2)
+SET r108.text = 'Ngược lại với u xuất phát từ tuyến nước bọt nhỏ (tuyến dưới hàm, dưới lưỡi) thì 80% là ác tính, 20% là lành tính.'
+
+MERGE (o1:disease {id: 'u_disease'})
+MERGE (o2:organ {id: 'tuyến_dưới_hàm_organ'})
+MERGE (o1)-[r109:locatedIn]->(o2)
+SET r109.text = 'Ngược lại với u xuất phát từ tuyến nước bọt nhỏ (tuyến dưới hàm, dưới lưỡi) thì 80% là ác tính, 20% là lành tính.'
+
+MERGE (o1:disease {id: 'u_disease'})
+MERGE (o2:organ {id: 'tuyến_dưới_lưỡi_organ'})
+MERGE (o1)-[r110:locatedIn]->(o2)
+SET r110.text = 'Ngược lại với u xuất phát từ tuyến nước bọt nhỏ (tuyến dưới hàm, dưới lưỡi) thì 80% là ác tính, 20% là lành tính.'
+
+MERGE (o1:disease {id: 'u_disease'})
+MERGE (o2:disease {id: 'ác_tính_disease'})
+MERGE (o1)-[r111:relatedTo]->(o2)
+SET r111.text = 'Ngược lại với u xuất phát từ tuyến nước bọt nhỏ (tuyến dưới hàm, dưới lưỡi) thì 80% là ác tính, 20% là lành tính.'
+
+MERGE (o1:disease {id: 'u_disease'})
+MERGE (o2:disease {id: 'lành_tính_disease'})
+MERGE (o1)-[r112:relatedTo]->(o2)
+SET r112.text = 'Ngược lại với u xuất phát từ tuyến nước bọt nhỏ (tuyến dưới hàm, dưới lưỡi) thì 80% là ác tính, 20% là lành tính.'
+
+MERGE (o1:disease {id: 'u_ác_tuyến_nước_bọt_phụ_disease'})
+MERGE (o2:disease {id: 'u_ác_tuyến_mang_tai_disease'})
+MERGE (o1)-[r113:relatedTo]->(o2)
+SET r113.text = 'Tuy nhiên, u ác tuyến nước bọt phụ thường di căn sớm hơn u ác tuyến mang tai.'
+
+MERGE (o1:disease {id: 'u_ác_tính_tuyến_mang_tai_disease'})
+MERGE (o2:disease {id: 'u_ác_tính_tuyến_nước_bọt_disease'})
+MERGE (o1)-[r114:relatedTo]->(o2)
+SET r114.text = 'Nếu đã là u ác tính tuyến mang tai nói riêng hay tuyến nước bọt nói chung việc tiên lượng sẽ phụ vào các yếu tố sau:  Đặc điểm khối u: Kích thước càng lớn, xâm lấn vỏ bao hay mô xung quanh như da, thần kinh, mạch máu thì tiên lượng càng xấu.'
+
+MERGE (o1:disease {id: 'u_ác_tính_tuyến_mang_tai_disease'})
+MERGE (o2:organ {id: 'da_organ'})
+MERGE (o1)-[r115:affects]->(o2)
+SET r115.text = 'Nếu đã là u ác tính tuyến mang tai nói riêng hay tuyến nước bọt nói chung việc tiên lượng sẽ phụ vào các yếu tố sau:  Đặc điểm khối u: Kích thước càng lớn, xâm lấn vỏ bao hay mô xung quanh như da, thần kinh, mạch máu thì tiên lượng càng xấu.'
+
+MERGE (o1:disease {id: 'u_ác_tính_tuyến_mang_tai_disease'})
+MERGE (o2:organ {id: 'thần_kinh_organ'})
+MERGE (o1)-[r116:affects]->(o2)
+SET r116.text = 'Nếu đã là u ác tính tuyến mang tai nói riêng hay tuyến nước bọt nói chung việc tiên lượng sẽ phụ vào các yếu tố sau:  Đặc điểm khối u: Kích thước càng lớn, xâm lấn vỏ bao hay mô xung quanh như da, thần kinh, mạch máu thì tiên lượng càng xấu.'
+
+MERGE (o1:disease {id: 'u_ác_tính_tuyến_mang_tai_disease'})
+MERGE (o2:organ {id: 'mạch_máu_organ'})
+MERGE (o1)-[r117:affects]->(o2)
+SET r117.text = 'Nếu đã là u ác tính tuyến mang tai nói riêng hay tuyến nước bọt nói chung việc tiên lượng sẽ phụ vào các yếu tố sau:  Đặc điểm khối u: Kích thước càng lớn, xâm lấn vỏ bao hay mô xung quanh như da, thần kinh, mạch máu thì tiên lượng càng xấu.'
+
+MERGE (o1:symptom {id: 'di_căn_nhiều_hạch_symptom'})
+MERGE (o2:disease {id: 'u_ác_tính_tuyến_mang_tai_disease'})
+MERGE (o1)-[r118:isSymptomOf]->(o2)
+SET r118.text = 'Đặc điểm tế bào trên giải phẫu bệnh: Có di căn nhiều hạch hay không.'
+
+MERGE (o1:disease {id: 'u_ác_tuyến_nước_bọt_disease'})
+MERGE (o2:symptom {id: 'tỷ_lệ_sống_sót_symptom'})
+MERGE (o1)-[r119:relatedTo]->(o2)
+SET r119.text = 'Tỷ lệ sống sót sau 5 năm của u ác tuyến nước bọt từ 50-75%.'
+
+MERGE (o1:disease {id: 'u_tuyến_nước_bọt_disease'})
+MERGE (o2:treatment {id: 'phương_pháp_điều_trị_treatment'})
+MERGE (o1)-[r120:treatedBy]->(o2)
+SET r120.text = 'Theo bác sĩ Thúy Hằng, tùy vào tính chất của u tuyến nước bọt mà có thể lựa chọn phương pháp điều trị phù hợp.'
+
+MERGE (o1:treatment {id: 'phương_pháp_điều_trị_treatment'})
+MERGE (o2:disease {id: 'u_tuyến_nước_bọt_disease'})
+MERGE (o1)-[r121:treatedBy]->(o2)
+SET r121.text = 'Theo bác sĩ Thúy Hằng, tùy vào tính chất của u tuyến nước bọt mà có thể lựa chọn phương pháp điều trị phù hợp.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_treatment'})
+MERGE (o2:disease {id: 'khối_u_lành_tính_disease'})
+MERGE (o1)-[r122:treatedBy]->(o2)
+SET r122.text = 'Điều trị các khối u lành tính bằng phẫu thuật là chỉ định phổ biến.'
+
+MERGE (o1:disease {id: 'khối_u_lành_tính_disease'})
+MERGE (o2:treatment {id: 'phẫu_thuật_treatment'})
+MERGE (o1)-[r123:treatedBy]->(o2)
+SET r123.text = 'Điều trị các khối u lành tính bằng phẫu thuật là chỉ định phổ biến.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_cắt_bỏ_khối_u_treatment'})
+MERGE (o2:symptom {id: 'tái_phát_symptom'})
+MERGE (o1)-[r124:relatedTo]->(o2)
+SET r124.text = 'Tuy nhiên, nếu phẫu thuật cắt bỏ khối u không triệt để có thể dẫn đến tái phát.'
+
+MERGE (o1:symptom {id: 'tái_phát_symptom'})
+MERGE (o2:treatment {id: 'phẫu_thuật_cắt_bỏ_khối_u_treatment'})
+MERGE (o1)-[r125:relatedTo]->(o2)
+SET r125.text = 'Tuy nhiên, nếu phẫu thuật cắt bỏ khối u không triệt để có thể dẫn đến tái phát.'
+
+MERGE (o1:disease {id: 'khối_u_tuyến_nước_bọt_ác_tính_disease'})
+MERGE (o2:treatment {id: 'phẫu_thuật_treatment'})
+MERGE (o1)-[r126:treatedBy]->(o2)
+SET r126.text = 'Đối với các khối u tuyến nước bọt ác tính, phương pháp điều trị được lựa chọn là phẫu thuật, đôi khi kết hợp với xạ trị.'
+
+MERGE (o1:disease {id: 'khối_u_tuyến_nước_bọt_ác_tính_disease'})
+MERGE (o2:treatment {id: 'xạ_trị_treatment'})
+MERGE (o1)-[r127:treatedBy]->(o2)
+SET r127.text = 'Đối với các khối u tuyến nước bọt ác tính, phương pháp điều trị được lựa chọn là phẫu thuật, đôi khi kết hợp với xạ trị.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_treatment'})
+MERGE (o2:disease {id: 'khối_u_tuyến_nước_bọt_ác_tính_disease'})
+MERGE (o1)-[r128:treatedBy]->(o2)
+SET r128.text = 'Đối với các khối u tuyến nước bọt ác tính, phương pháp điều trị được lựa chọn là phẫu thuật, đôi khi kết hợp với xạ trị.'
+
+MERGE (o1:treatment {id: 'xạ_trị_treatment'})
+MERGE (o2:disease {id: 'khối_u_tuyến_nước_bọt_ác_tính_disease'})
+MERGE (o1)-[r129:treatedBy]->(o2)
+SET r129.text = 'Đối với các khối u tuyến nước bọt ác tính, phương pháp điều trị được lựa chọn là phẫu thuật, đôi khi kết hợp với xạ trị.'
+
+MERGE (o1:treatment {id: 'hóa_trị_treatment'})
+MERGE (o2:disease {id: 'bệnh_ung_thư_tuyến_nước_bọt_disease'})
+MERGE (o1)-[r130:treatedBy]->(o2)
+SET r130.text = 'Hiện tại, không có phương pháp hóa trị hiệu quả nào cho bệnh ung thư tuyến nước bọt.'
+
+MERGE (o1:disease {id: 'bệnh_ung_thư_tuyến_nước_bọt_disease'})
+MERGE (o2:treatment {id: 'hóa_trị_treatment'})
+MERGE (o1)-[r131:treatedBy]->(o2)
+SET r131.text = 'Hiện tại, không có phương pháp hóa trị hiệu quả nào cho bệnh ung thư tuyến nước bọt.'
+
+MERGE (o1:disease {id: 'ung_thư_biểu_mô_mucoepidermoid_disease'})
+MERGE (o2:treatment {id: 'cắt_bỏ_rộng_treatment'})
+MERGE (o1)-[r132:treatedBy]->(o2)
+SET r132.text = 'Điều trị ung thư biểu mô mucoepidermoid bao gồm: Cắt bỏ rộng và xạ trị sau phẫu thuật cho các tổn thương mức độ cao.'
+
+MERGE (o1:disease {id: 'ung_thư_biểu_mô_mucoepidermoid_disease'})
+MERGE (o2:treatment {id: 'xạ_trị_sau_phẫu_thuật_treatment'})
+MERGE (o1)-[r133:treatedBy]->(o2)
+SET r133.text = 'Điều trị ung thư biểu mô mucoepidermoid bao gồm: Cắt bỏ rộng và xạ trị sau phẫu thuật cho các tổn thương mức độ cao.'
+
+MERGE (o1:treatment {id: 'cắt_bỏ_rộng_treatment'})
+MERGE (o2:disease {id: 'ung_thư_biểu_mô_mucoepidermoid_disease'})
+MERGE (o1)-[r134:treatedBy]->(o2)
+SET r134.text = 'Điều trị ung thư biểu mô mucoepidermoid bao gồm: Cắt bỏ rộng và xạ trị sau phẫu thuật cho các tổn thương mức độ cao.'
+
+MERGE (o1:treatment {id: 'xạ_trị_sau_phẫu_thuật_treatment'})
+MERGE (o2:disease {id: 'ung_thư_biểu_mô_mucoepidermoid_disease'})
+MERGE (o1)-[r135:treatedBy]->(o2)
+SET r135.text = 'Điều trị ung thư biểu mô mucoepidermoid bao gồm: Cắt bỏ rộng và xạ trị sau phẫu thuật cho các tổn thương mức độ cao.'
+
+MERGE (o1:disease {id: 'ung_thư_biểu_mô_mucoepidermoid_disease'})
+MERGE (o2:symptom {id: 'tỷ_lệ_sống_sót_symptom'})
+MERGE (o1)-[r136:relatedTo]->(o2)
+SET r136.text = 'Tỷ lệ sống sót sau 5 năm là 95% với loại cấp thấp, chủ yếu ảnh hưởng đến tế bào chất nhầy và 50% với loại cấp cao, ảnh hưởng chủ yếu đến tế bào biểu bì.'
+
+MERGE (o1:disease {id: 'ung_thư_biểu_mô_mucoepidermoid_disease'})
+MERGE (o2:organ {id: 'tế_bào_chất_nhầy_organ'})
+MERGE (o1)-[r137:affects]->(o2)
+SET r137.text = 'Tỷ lệ sống sót sau 5 năm là 95% với loại cấp thấp, chủ yếu ảnh hưởng đến tế bào chất nhầy và 50% với loại cấp cao, ảnh hưởng chủ yếu đến tế bào biểu bì.'
+
+MERGE (o1:disease {id: 'ung_thư_biểu_mô_mucoepidermoid_disease'})
+MERGE (o2:organ {id: 'tế_bào_biểu_bì_organ'})
+MERGE (o1)-[r138:affects]->(o2)
+SET r138.text = 'Tỷ lệ sống sót sau 5 năm là 95% với loại cấp thấp, chủ yếu ảnh hưởng đến tế bào chất nhầy và 50% với loại cấp cao, ảnh hưởng chủ yếu đến tế bào biểu bì.'
+
+MERGE (o1:symptom {id: 'di_căn_đến_bạch_huyết_khu_vực_symptom'})
+MERGE (o2:disease {id: 'ung_thư_biểu_mô_mucoepidermoid_disease'})
+MERGE (o1)-[r139:isSymptomOf]->(o2)
+SET r139.text = 'Nếu có di căn đến bạch huyết khu vực, cần phẫu thuật cắt bỏ và xạ trị sau phẫu thuật.'
+
+MERGE (o1:disease {id: 'ung_thư_biểu_mô_mucoepidermoid_disease'})
+MERGE (o2:treatment {id: 'phẫu_thuật_cắt_bỏ_treatment'})
+MERGE (o1)-[r140:treatedBy]->(o2)
+SET r140.text = 'Nếu có di căn đến bạch huyết khu vực, cần phẫu thuật cắt bỏ và xạ trị sau phẫu thuật.'
+
+MERGE (o1:disease {id: 'ung_thư_biểu_mô_mucoepidermoid_disease'})
+MERGE (o2:treatment {id: 'xạ_trị_sau_phẫu_thuật_treatment'})
+MERGE (o1)-[r141:treatedBy]->(o2)
+SET r141.text = 'Nếu có di căn đến bạch huyết khu vực, cần phẫu thuật cắt bỏ và xạ trị sau phẫu thuật.'
+
+MERGE (o1:disease {id: 'ung_thư_biểu_mô_nang_tuyến_adenoid_disease'})
+MERGE (o2:treatment {id: 'phẫu_thuật_cắt_bỏ_khối_u_diện_rộng_treatment'})
+MERGE (o1)-[r142:treatedBy]->(o2)
+SET r142.text = 'Điều trị ung thư biểu mô nang tuyến adenoid: Thường phẫu thuật cắt bỏ khối u diện rộng nhưng dễ gây tái phát cục bộ do xu hướng lan rộng quanh màng cứng của khối u.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_cắt_bỏ_khối_u_diện_rộng_treatment'})
+MERGE (o2:disease {id: 'ung_thư_biểu_mô_nang_tuyến_adenoid_disease'})
+MERGE (o1)-[r143:treatedBy]->(o2)
+SET r143.text = 'Điều trị ung thư biểu mô nang tuyến adenoid: Thường phẫu thuật cắt bỏ khối u diện rộng nhưng dễ gây tái phát cục bộ do xu hướng lan rộng quanh màng cứng của khối u.'
+
+MERGE (o1:symptom {id: 'tái_phát_cục_bộ_symptom'})
+MERGE (o2:disease {id: 'ung_thư_biểu_mô_nang_tuyến_adenoid_disease'})
+MERGE (o1)-[r144:isSymptomOf]->(o2)
+SET r144.text = 'Điều trị ung thư biểu mô nang tuyến adenoid: Thường phẫu thuật cắt bỏ khối u diện rộng nhưng dễ gây tái phát cục bộ do xu hướng lan rộng quanh màng cứng của khối u.'
+
+MERGE (o1:disease {id: 'ung_thư_biểu_mô_nang_tuyến_adenoid_disease'})
+MERGE (o2:symptom {id: 'tỷ_lệ_sống_sót_symptom'})
+MERGE (o1)-[r145:relatedTo]->(o2)
+SET r145.text = 'Mặc dù tỷ lệ sống sót sau 5 năm là khá tốt, nhưng tỷ lệ sau 10 năm kém hơn với nhiều bệnh nhân phát triển di căn xa.'
+
+MERGE (o1:symptom {id: 'di_căn_xa_symptom'})
+MERGE (o2:disease {id: 'ung_thư_biểu_mô_nang_tuyến_adenoid_disease'})
+MERGE (o1)-[r146:isSymptomOf]->(o2)
+SET r146.text = 'Mặc dù tỷ lệ sống sót sau 5 năm là khá tốt, nhưng tỷ lệ sau 10 năm kém hơn với nhiều bệnh nhân phát triển di căn xa.'
+
+MERGE (o1:symptom {id: 'di_căn_phổi_symptom'})
+MERGE (o2:disease {id: 'ung_thư_biểu_mô_nang_tuyến_adenoid_disease'})
+MERGE (o1)-[r147:isSymptomOf]->(o2)
+SET r147.text = 'Tình trạng di căn phổi và tử vong cũng phổ biến ở các bệnh nhân đã sống sót sau phẫu thuật, thường là sau 5-10 năm.'
+
+MERGE (o1:symptom {id: 'tử_vong_symptom'})
+MERGE (o2:disease {id: 'ung_thư_biểu_mô_nang_tuyến_adenoid_disease'})
+MERGE (o1)-[r148:isSymptomOf]->(o2)
+SET r148.text = 'Tình trạng di căn phổi và tử vong cũng phổ biến ở các bệnh nhân đã sống sót sau phẫu thuật, thường là sau 5-10 năm.'
+
+MERGE (o1:disease {id: 'ung_thư_biểu_mô_tế_bào_acinic_disease'})
+MERGE (o2:treatment {id: 'phẫu_thuật_cắt_bỏ_rộng_treatment'})
+MERGE (o1)-[r149:treatedBy]->(o2)
+SET r149.text = 'Điều trị ung thư biểu mô tế bào acinic: Phẫu thuật cắt bỏ rộng thường có tiên lượng tốt.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_cắt_bỏ_rộng_treatment'})
+MERGE (o2:disease {id: 'ung_thư_biểu_mô_tế_bào_acinic_disease'})
+MERGE (o1)-[r150:treatedBy]->(o2)
+SET r150.text = 'Điều trị ung thư biểu mô tế bào acinic: Phẫu thuật cắt bỏ rộng thường có tiên lượng tốt.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_treatment'})
+MERGE (o2:disease {id: 'khối_u_disease'})
+MERGE (o1)-[r151:treatedBy]->(o2)
+SET r151.text = 'Bác sĩ Thúy Hằng lưu ý, tất cả các cuộc phẫu thuật nhằm giải phóng dây thần kinh mặt, chỉ nên được chỉ định trong những trường hợp khối u liên quan trực tiếp đến dây thần kinh.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:treatment {id: 'phẫu_thuật_treatment'})
+MERGE (o1)-[r152:treatedBy]->(o2)
+SET r152.text = 'Bác sĩ Thúy Hằng lưu ý, tất cả các cuộc phẫu thuật nhằm giải phóng dây thần kinh mặt, chỉ nên được chỉ định trong những trường hợp khối u liên quan trực tiếp đến dây thần kinh.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:organ {id: 'dây_thần_kinh_organ'})
+MERGE (o1)-[r153:affects]->(o2)
+SET r153.text = 'Bác sĩ Thúy Hằng lưu ý, tất cả các cuộc phẫu thuật nhằm giải phóng dây thần kinh mặt, chỉ nên được chỉ định trong những trường hợp khối u liên quan trực tiếp đến dây thần kinh.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_treatment'})
+MERGE (o2:disease {id: 'u_tuyến_mang_tai_disease'})
+MERGE (o1)-[r154:treatedBy]->(o2)
+SET r154.text = 'Phẫu thuật là phương pháp điều trị phổ biến nhất đối với u tuyến mang tai.'
+
+MERGE (o1:lifestyle {id: 'không_sử_dụng_thuốc_lá_lifestyle'})
+MERGE (o2:disease {id: 'bệnh_disease'})
+MERGE (o1)-[r155:preventedBy]->(o2)
+SET r155.text = 'Theo bác sĩ Thúy Hằng, không sử dụng thuốc lá và hạn chế tiếp xúc với tia xạ tối đa là những việc có thể thực hiện để phòng ngừa bệnh.'
+
+MERGE (o1:lifestyle {id: 'hạn_chế_tiếp_xúc_với_tia_xạ_lifestyle'})
+MERGE (o2:disease {id: 'bệnh_disease'})
+MERGE (o1)-[r156:preventedBy]->(o2)
+SET r156.text = 'Theo bác sĩ Thúy Hằng, không sử dụng thuốc lá và hạn chế tiếp xúc với tia xạ tối đa là những việc có thể thực hiện để phòng ngừa bệnh.'
+
+MERGE (o1:test {id: 'tầm_soát_u_tuyến_nước_bọt_test'})
+MERGE (o2:disease {id: 'u_tuyến_nước_bọt_disease'})
+MERGE (o1)-[r157:diagnosedBy]->(o2)
+SET r157.text = 'Hiện tại vẫn chưa có phác đồ cũng như xét nghiệm cụ thể nào cho việc tầm soát u tuyến nước bọt cho dân số chung.'
+
+MERGE (o1:test {id: 'khám_sức_khỏe_tổng_quát_test'})
+MERGE (o2:disease {id: 'u_tuyến_nước_bọt_disease'})
+MERGE (o1)-[r158:diagnosedBy]->(o2)
+SET r158.text = 'Tuy nhiên, người dân cần khám sức khỏe tổng quát hàng năm để bác sĩ chuyên khoa (thường là bác sĩ tai mũi họng hoặc răng hàm mặt) nếu nghi ngờ bất thường sẽ đề nghị làm xét nghiệm chuyên sâu hơn để đánh giá chính xác khối u.'
+
+MERGE (o1:organ {id: 'bác_sĩ_tai_mũi_họng_organ'})
+MERGE (o2:disease {id: 'u_tuyến_nước_bọt_disease'})
+MERGE (o1)-[r159:diagnosedBy]->(o2)
+SET r159.text = 'Tuy nhiên, người dân cần khám sức khỏe tổng quát hàng năm để bác sĩ chuyên khoa (thường là bác sĩ tai mũi họng hoặc răng hàm mặt) nếu nghi ngờ bất thường sẽ đề nghị làm xét nghiệm chuyên sâu hơn để đánh giá chính xác khối u.'
+
+MERGE (o1:organ {id: 'bác_sĩ_răng_hàm_mặt_organ'})
+MERGE (o2:disease {id: 'u_tuyến_nước_bọt_disease'})
+MERGE (o1)-[r160:diagnosedBy]->(o2)
+SET r160.text = 'Tuy nhiên, người dân cần khám sức khỏe tổng quát hàng năm để bác sĩ chuyên khoa (thường là bác sĩ tai mũi họng hoặc răng hàm mặt) nếu nghi ngờ bất thường sẽ đề nghị làm xét nghiệm chuyên sâu hơn để đánh giá chính xác khối u.'
+
+MERGE (o1:disease {id: 'u_tuyến_nước_bọt_mang_tai_disease'})
+MERGE (o2:symptom {id: 'lành_tính_symptom'})
+MERGE (o1)-[r161:relatedTo]->(o2)
+SET r161.text = 'U tuyến nước bọt mang tai phần lớn là lành tính, hiếm khi là ác tính.'
+
+MERGE (o1:disease {id: 'u_tuyến_nước_bọt_mang_tai_disease'})
+MERGE (o2:symptom {id: 'ác_tính_symptom'})
+MERGE (o1)-[r162:relatedTo]->(o2)
+SET r162.text = 'U tuyến nước bọt mang tai phần lớn là lành tính, hiếm khi là ác tính.'
+
+MERGE (o1:disease {id: 'u_tuyến_mang_tai_thể_đa_dạng_disease'})
+MERGE (o2:symptom {id: 'ác_tính_symptom'})
+MERGE (o1)-[r163:relatedTo]->(o2)
+SET r163.text = 'Nhưng nếu u tuyến mang tai thể đa dạng thì có tiềm năng phát triển ác tính sau nhiều năm.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_cắt_bỏ_khối_u_lành_tính_treatment'})
+MERGE (o2:disease {id: 'u_tuyến_nước_bọt_mang_tai_disease'})
+MERGE (o1)-[r164:treatedBy]->(o2)
+SET r164.text = 'Do đó, người bệnh nên phẫu thuật cắt bỏ khối u lành tính càng sớm càng tốt.'
+
+MERGE (o1:symptom {id: 'khối_phồng_symptom'})
+MERGE (o2:disease {id: 'u_tuyến_nước_bọt_mang_tai_disease'})
+MERGE (o1)-[r165:isSymptomOf]->(o2)
+SET r165.text = 'Khi vùng mang tai xuất hiện các khối phồng có thể có triệu chứng hoặc không có triệu chứng, người bệnh nên đến các bệnh viện uy tín để được bác sĩ chuyên khoa Tai Mũi Họng thăm khám.'
+
+MERGE (o1:organ {id: 'vùng_mang_tai_organ'})
+MERGE (o2:disease {id: 'u_tuyến_nước_bọt_mang_tai_disease'})
+MERGE (o1)-[r166:locatedIn]->(o2)
+SET r166.text = 'Khi vùng mang tai xuất hiện các khối phồng có thể có triệu chứng hoặc không có triệu chứng, người bệnh nên đến các bệnh viện uy tín để được bác sĩ chuyên khoa Tai Mũi Họng thăm khám.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_u_tuyến_mang_tai_treatment'})
+MERGE (o2:disease {id: 'u_tuyến_nước_bọt_mang_tai_disease'})
+MERGE (o1)-[r167:treatedBy]->(o2)
+SET r167.text = 'Phẫu thuật u tuyến mang tai là một phẫu thuật tương đối phức tạp vì thường liên quan đến dây thần kinh mặt.'
+
+MERGE (o1:organ {id: 'dây_thần_kinh_mặt_organ'})
+MERGE (o2:disease {id: 'u_tuyến_nước_bọt_mang_tai_disease'})
+MERGE (o1)-[r168:relatedTo]->(o2)
+SET r168.text = 'Phẫu thuật u tuyến mang tai là một phẫu thuật tương đối phức tạp vì thường liên quan đến dây thần kinh mặt.'
+
+MERGE (o1:treatment {id: 'tay_nghề_giỏi_treatment'})
+MERGE (o2:disease {id: 'u_tuyến_nước_bọt_mang_tai_disease'})
+MERGE (o1)-[r169:treatedBy]->(o2)
+SET r169.text = 'Do đó, đòi hỏi bác sĩ phải có tay nghề giỏi, giàu kinh nghiệm.'
+
+MERGE (o1:treatment {id: 'giàu_kinh_nghiệm_treatment'})
+MERGE (o2:disease {id: 'u_tuyến_nước_bọt_mang_tai_disease'})
+MERGE (o1)-[r170:treatedBy]->(o2)
+SET r170.text = 'Do đó, đòi hỏi bác sĩ phải có tay nghề giỏi, giàu kinh nghiệm.'
+
+MERGE (o1:treatment {id: 'chi_phí_phẫu_thuật_treatment'})
+MERGE (o2:disease {id: 'u_tuyến_nước_bọt_mang_tai_disease'})
+MERGE (o1)-[r171:treatedBy]->(o2)
+SET r171.text = 'Nói về chi phí phẫu thuật, điều này còn tùy thuộc vào loại phẫu thuật cũng như giá dịch vụ ở mỗi bệnh viện.'

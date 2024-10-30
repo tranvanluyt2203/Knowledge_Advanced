@@ -1,0 +1,705 @@
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:disease {id: 'bệnh_lý_tự_miễn_disease'})
+MERGE (o1)-[r0:causedBy]->(o2)
+SET r0.text = 'Viêm gan tự miễn là bệnh lý tự miễn, khoảng 100.000 người thì có 1 người mắc phải;(2) được phát hiện lần đầu tiên vào năm 1950 bởi Waldenstrom và Henry George Kunkel.'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:test {id: 'waldenstrom_và_henry_george_kunkel_test'})
+MERGE (o1)-[r1:diagnosedBy]->(o2)
+SET r1.text = 'Viêm gan tự miễn là bệnh lý tự miễn, khoảng 100.000 người thì có 1 người mắc phải;(2) được phát hiện lần đầu tiên vào năm 1950 bởi Waldenstrom và Henry George Kunkel.'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:disease {id: 'viêm_gan_mạn_tính_disease'})
+MERGE (o1)-[r2:isSymptomOf]->(o2)
+SET r2.text = 'Viêm gan tự miễn là bệnh lý tự miễn, khoảng 100.000 người thì có 1 người mắc phải;(2) được phát hiện lần đầu tiên vào năm 1950 bởi Waldenstrom và Henry George Kunkel. Đây là nguyên nhân của 20% các trường hợp viêm gan mạn tính.'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:disease {id: 'aih_(autoimmune_hepatitis)_disease'})
+MERGE (o1)-[r3:relatedTo]->(o2)
+SET r3.text = 'Viêm gan tự miễn hay còn gọi là AIH (Autoimmune Hepatitis). Đây là một tình trạng rối loạn tự miễn dịch, xảy ra khi hệ thống miễn dịch của cơ thể tấn công các tế bào gan khiến gan bị viêm và tổn thương.(1)'
+
+MERGE (o1:disease {id: 'aih_(autoimmune_hepatitis)_disease'})
+MERGE (o2:cause {id: 'hệ_thống_miễn_dịch_của_cơ_thể_tấn_công_các_tế_bào_gan_cause'})
+MERGE (o1)-[r4:causedBy]->(o2)
+SET r4.text = 'Viêm gan tự miễn hay còn gọi là AIH (Autoimmune Hepatitis). Đây là một tình trạng rối loạn tự miễn dịch, xảy ra khi hệ thống miễn dịch của cơ thể tấn công các tế bào gan khiến gan bị viêm và tổn thương.(1)'
+
+MERGE (o1:cause {id: 'hệ_thống_miễn_dịch_của_cơ_thể_tấn_công_các_tế_bào_gan_cause'})
+MERGE (o2:organ {id: 'gan_organ'})
+MERGE (o1)-[r5:affects]->(o2)
+SET r5.text = 'Viêm gan tự miễn hay còn gọi là AIH (Autoimmune Hepatitis). Đây là một tình trạng rối loạn tự miễn dịch, xảy ra khi hệ thống miễn dịch của cơ thể tấn công các tế bào gan khiến gan bị viêm và tổn thương.(1)'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:lifestyle {id: 'phụ_nữ_lifestyle'})
+MERGE (o1)-[r6:affects]->(o2)
+SET r6.text = 'Viêm gan tự miễn hay còn gọi là AIH (Autoimmune Hepatitis). Đây là một tình trạng rối loạn tự miễn dịch, xảy ra khi hệ thống miễn dịch của cơ thể tấn công các tế bào gan khiến gan bị viêm và tổn thương.(1) Bệnh viêm gan tự miễn có thể gặp phải ở mọi lứa tuổi, có xu hướng ảnh hưởng tới phụ nữ nhiều hơn nam giới - tỷ lệ phổ biến ở nữ gấp 4 lần so với nam.'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:lifestyle {id: 'nam_giới_lifestyle'})
+MERGE (o1)-[r7:affects]->(o2)
+SET r7.text = 'Viêm gan tự miễn hay còn gọi là AIH (Autoimmune Hepatitis). Đây là một tình trạng rối loạn tự miễn dịch, xảy ra khi hệ thống miễn dịch của cơ thể tấn công các tế bào gan khiến gan bị viêm và tổn thương.(1) Bệnh viêm gan tự miễn có thể gặp phải ở mọi lứa tuổi, có xu hướng ảnh hưởng tới phụ nữ nhiều hơn nam giới - tỷ lệ phổ biến ở nữ gấp 4 lần so với nam.'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:cause {id: 'tiền_sử_gia_đình_mắc_bệnh_viêm_gan_tự_miễn_cause'})
+MERGE (o1)-[r8:associatedWith]->(o2)
+SET r8.text = 'Người có tiền sử gia đình mắc bệnh viêm gan tự miễn cũng có nguy cơ mắc bệnh cao hơn.'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:disease {id: 'viêm_gan_mạn_tính_disease'})
+MERGE (o1)-[r9:isSymptomOf]->(o2)
+SET r9.text = 'Đây là một loại bệnh viêm gan mạn tính và cần theo dõi cả đời; tuy chưa có thể điều trị nhưng có nhiều phương pháp giúp người bệnh kiểm soát triệu chứng và ngăn ngừa sự phát triển tổn thương đến gan.'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:treatment {id: 'kiểm_soát_triệu_chứng_treatment'})
+MERGE (o1)-[r10:treatedBy]->(o2)
+SET r10.text = 'Đây là một loại bệnh viêm gan mạn tính và cần theo dõi cả đời; tuy chưa có thể điều trị nhưng có nhiều phương pháp giúp người bệnh kiểm soát triệu chứng và ngăn ngừa sự phát triển tổn thương đến gan.'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:treatment {id: 'ngăn_ngừa_sự_phát_triển_tổn_thương_đến_gan_treatment'})
+MERGE (o1)-[r11:treatedBy]->(o2)
+SET r11.text = 'Đây là một loại bệnh viêm gan mạn tính và cần theo dõi cả đời; tuy chưa có thể điều trị nhưng có nhiều phương pháp giúp người bệnh kiểm soát triệu chứng và ngăn ngừa sự phát triển tổn thương đến gan.'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:disease {id: 'tuyến_giáp_disease'})
+MERGE (o1)-[r12:associatedWith]->(o2)
+SET r12.text = 'Nếu bị viêm gan tự miễn, người bệnh cũng có nguy cơ mắc kèm một/nhiều các bệnh tự miễn khác như tuyến giáp, viêm khớp dạng thấp, viêm loét đại tràng, tiểu đường tuýp 1 hoặc hội chứng Sjogren (còn gọi là bệnh tự miễn Sjogren - một rối loạn tự miễn dịch liên quan tới các tuyến ngoại tiết của cơ thể)'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:disease {id: 'viêm_khớp_dạng_thấp_disease'})
+MERGE (o1)-[r13:associatedWith]->(o2)
+SET r13.text = 'Nếu bị viêm gan tự miễn, người bệnh cũng có nguy cơ mắc kèm một/nhiều các bệnh tự miễn khác như tuyến giáp, viêm khớp dạng thấp, viêm loét đại tràng, tiểu đường tuýp 1 hoặc hội chứng Sjogren (còn gọi là bệnh tự miễn Sjogren - một rối loạn tự miễn dịch liên quan tới các tuyến ngoại tiết của cơ thể)'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:disease {id: 'viêm_loét_đại_tràng_disease'})
+MERGE (o1)-[r14:associatedWith]->(o2)
+SET r14.text = 'Nếu bị viêm gan tự miễn, người bệnh cũng có nguy cơ mắc kèm một/nhiều các bệnh tự miễn khác như tuyến giáp, viêm khớp dạng thấp, viêm loét đại tràng, tiểu đường tuýp 1 hoặc hội chứng Sjogren (còn gọi là bệnh tự miễn Sjogren - một rối loạn tự miễn dịch liên quan tới các tuyến ngoại tiết của cơ thể)'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:disease {id: 'tiểu_đường_tuýp_1_disease'})
+MERGE (o1)-[r15:associatedWith]->(o2)
+SET r15.text = 'Nếu bị viêm gan tự miễn, người bệnh cũng có nguy cơ mắc kèm một/nhiều các bệnh tự miễn khác như tuyến giáp, viêm khớp dạng thấp, viêm loét đại tràng, tiểu đường tuýp 1 hoặc hội chứng Sjogren (còn gọi là bệnh tự miễn Sjogren - một rối loạn tự miễn dịch liên quan tới các tuyến ngoại tiết của cơ thể)'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:disease {id: 'hội_chứng_sjogren_disease'})
+MERGE (o1)-[r16:associatedWith]->(o2)
+SET r16.text = 'Nếu bị viêm gan tự miễn, người bệnh cũng có nguy cơ mắc kèm một/nhiều các bệnh tự miễn khác như tuyến giáp, viêm khớp dạng thấp, viêm loét đại tràng, tiểu đường tuýp 1 hoặc hội chứng Sjogren (còn gọi là bệnh tự miễn Sjogren - một rối loạn tự miễn dịch liên quan tới các tuyến ngoại tiết của cơ thể)'
+
+MERGE (o1:disease {id: 'hội_chứng_sjogren_disease'})
+MERGE (o2:disease {id: 'bệnh_tự_miễn_sjogren_disease'})
+MERGE (o1)-[r17:relatedTo]->(o2)
+SET r17.text = 'Nếu bị viêm gan tự miễn, người bệnh cũng có nguy cơ mắc kèm một/nhiều các bệnh tự miễn khác như tuyến giáp, viêm khớp dạng thấp, viêm loét đại tràng, tiểu đường tuýp 1 hoặc hội chứng Sjogren (còn gọi là bệnh tự miễn Sjogren - một rối loạn tự miễn dịch liên quan tới các tuyến ngoại tiết của cơ thể)'
+
+MERGE (o1:organ {id: 'hệ_miễn_dịch_organ'})
+MERGE (o2:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o1)-[r18:affects]->(o2)
+SET r18.text = 'Dựa vào tình trạng hệ miễn dịch tạo ra các kháng thể khác nhau, các chuyên gia đã phân chia thành 2 loại viêm gan tự miễn chính.'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:lifestyle {id: 'châu_u_lifestyle'})
+MERGE (o1)-[r19:affects]->(o2)
+SET r19.text = 'Dựa vào tình trạng hệ miễn dịch tạo ra các kháng thể khác nhau, các chuyên gia đã phân chia thành 2 loại viêm gan tự miễn chính. Cả 2 đều không phổ biến. Ở châu u, ước tính bệnh chỉ xuất hiện ở 10 - 17 người trên 100.000 người.'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_loại_1_disease'})
+MERGE (o2:lifestyle {id: 'người_lớn_lifestyle'})
+MERGE (o1)-[r20:affects]->(o2)
+SET r20.text = 'Loại 1: Đây là loại thường gặp, có thể xảy ra ở mọi lứa tuổi và phần lớn được chẩn đoán ở người lớn.'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_loại_2_disease'})
+MERGE (o2:lifestyle {id: 'bé_gái_từ_2-14_tuổi_lifestyle'})
+MERGE (o1)-[r21:affects]->(o2)
+SET r21.text = 'Loại 2: Ít gặp hơn, các bé gái từ 2-14 tuổi là đối tượng chịu ảnh hưởng chủ yếu của loại viêm gan tự miễn này.'
+
+MERGE (o1:disease {id: 'aih_loại_2_disease'})
+MERGE (o2:symptom {id: 'nghiêm_trọng_symptom'})
+MERGE (o1)-[r22:isSymptomOf]->(o2)
+SET r22.text = 'AIH loại 2 có thể nghiêm trọng và khó kiểm soát hơn.(5)'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:lifestyle {id: 'phụ_nữ_lifestyle'})
+MERGE (o1)-[r23:associatedWith]->(o2)
+SET r23.text = 'Viêm gan tự miễn có thể xảy ra ở bất cứ ai, tuy nhiên có một số đối tượng có nguy cơ mắc bệnh cao hơn, bao gồm:  Phụ nữ: Mặc dù bệnh có thể tiến triển ở cả nam và nữ nhưng nữ giới là bộ phận mắc bệnh nhiều hơn.'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:lifestyle {id: 'nam_giới_lifestyle'})
+MERGE (o1)-[r24:associatedWith]->(o2)
+SET r24.text = 'Viêm gan tự miễn có thể xảy ra ở bất cứ ai, tuy nhiên có một số đối tượng có nguy cơ mắc bệnh cao hơn, bao gồm:  Phụ nữ: Mặc dù bệnh có thể tiến triển ở cả nam và nữ nhưng nữ giới là bộ phận mắc bệnh nhiều hơn.'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:disease {id: 'sởi_disease'})
+MERGE (o1)-[r25:causedBy]->(o2)
+SET r25.text = 'Người có tiền sử mắc các bệnh nhiễm trùng: Người từng nhiễm các loại virus như sởi, herpes simplex, Epstein-Barr hoặc liên quan tới viêm gan A, B, C có nguy cơ gặp phải viêm gan tự miễn cao hơn bình thường.'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:disease {id: 'herpes_simplex_disease'})
+MERGE (o1)-[r26:causedBy]->(o2)
+SET r26.text = 'Người có tiền sử mắc các bệnh nhiễm trùng: Người từng nhiễm các loại virus như sởi, herpes simplex, Epstein-Barr hoặc liên quan tới viêm gan A, B, C có nguy cơ gặp phải viêm gan tự miễn cao hơn bình thường.'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:disease {id: 'epstein-barr_disease'})
+MERGE (o1)-[r27:causedBy]->(o2)
+SET r27.text = 'Người có tiền sử mắc các bệnh nhiễm trùng: Người từng nhiễm các loại virus như sởi, herpes simplex, Epstein-Barr hoặc liên quan tới viêm gan A, B, C có nguy cơ gặp phải viêm gan tự miễn cao hơn bình thường.'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:disease {id: 'viêm_gan_a_disease'})
+MERGE (o1)-[r28:causedBy]->(o2)
+SET r28.text = 'Người có tiền sử mắc các bệnh nhiễm trùng: Người từng nhiễm các loại virus như sởi, herpes simplex, Epstein-Barr hoặc liên quan tới viêm gan A, B, C có nguy cơ gặp phải viêm gan tự miễn cao hơn bình thường.'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:disease {id: 'viêm_gan_b_disease'})
+MERGE (o1)-[r29:causedBy]->(o2)
+SET r29.text = 'Người có tiền sử mắc các bệnh nhiễm trùng: Người từng nhiễm các loại virus như sởi, herpes simplex, Epstein-Barr hoặc liên quan tới viêm gan A, B, C có nguy cơ gặp phải viêm gan tự miễn cao hơn bình thường.'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:disease {id: 'viêm_gan_c_disease'})
+MERGE (o1)-[r30:causedBy]->(o2)
+SET r30.text = 'Người có tiền sử mắc các bệnh nhiễm trùng: Người từng nhiễm các loại virus như sởi, herpes simplex, Epstein-Barr hoặc liên quan tới viêm gan A, B, C có nguy cơ gặp phải viêm gan tự miễn cao hơn bình thường.'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:cause {id: 'di_truyền_cause'})
+MERGE (o1)-[r31:associatedWith]->(o2)
+SET r31.text = 'Có người thân mắc bệnh: Bệnh có thể mang tính di truyền; do đó nếu trong gia đình có người từng bị bệnh thì bạn cũng có nguy cơ.'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:disease {id: 'cường_giáp_disease'})
+MERGE (o1)-[r32:associatedWith]->(o2)
+SET r32.text = 'Người mắc các loại bệnh tự miễn: Người mắc các bệnh như cường giáp, viêm khớp dạng thấp, bệnh celia, lupus ban đỏ hệ thống&#8230; cũng có thể dễ bị viêm gan tự miễn.'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:disease {id: 'viêm_khớp_dạng_thấp_disease'})
+MERGE (o1)-[r33:associatedWith]->(o2)
+SET r33.text = 'Người mắc các loại bệnh tự miễn: Người mắc các bệnh như cường giáp, viêm khớp dạng thấp, bệnh celia, lupus ban đỏ hệ thống&#8230; cũng có thể dễ bị viêm gan tự miễn.'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:disease {id: 'bệnh_celia_disease'})
+MERGE (o1)-[r34:associatedWith]->(o2)
+SET r34.text = 'Người mắc các loại bệnh tự miễn: Người mắc các bệnh như cường giáp, viêm khớp dạng thấp, bệnh celia, lupus ban đỏ hệ thống&#8230; cũng có thể dễ bị viêm gan tự miễn.'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:disease {id: 'lupus_ban_đỏ_hệ_thống_disease'})
+MERGE (o1)-[r35:associatedWith]->(o2)
+SET r35.text = 'Người mắc các loại bệnh tự miễn: Người mắc các bệnh như cường giáp, viêm khớp dạng thấp, bệnh celia, lupus ban đỏ hệ thống&#8230; cũng có thể dễ bị viêm gan tự miễn.'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:lifestyle {id: 'phụ_nữ_lifestyle'})
+MERGE (o1)-[r36:associatedWith]->(o2)
+SET r36.text = 'Phụ nữ có tỷ lệ mắc phải viêm gan tự miễn cao hơn nam giới'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:lifestyle {id: 'nam_giới_lifestyle'})
+MERGE (o1)-[r37:associatedWith]->(o2)
+SET r37.text = 'Phụ nữ có tỷ lệ mắc phải viêm gan tự miễn cao hơn nam giới'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:organ {id: 'gan_organ'})
+MERGE (o1)-[r38:affects]->(o2)
+SET r38.text = 'Cho đến nay nguyên nhân viêm gan tự miễn vẫn chưa được xác định rõ ràng. Các nhà nghiên cứu vẫn chưa biết tại sao hệ miễn dịch lại &#8220;nhầm lẫn&#8221; các tế bào gan thành mối đe dọa, từ đó sản sinh ra kháng thể để gây tổn thương gan.'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:organ {id: 'hệ_miễn_dịch_organ'})
+MERGE (o1)-[r39:causedBy]->(o2)
+SET r39.text = 'Cho đến nay nguyên nhân viêm gan tự miễn vẫn chưa được xác định rõ ràng. Các nhà nghiên cứu vẫn chưa biết tại sao hệ miễn dịch lại &#8220;nhầm lẫn&#8221; các tế bào gan thành mối đe dọa, từ đó sản sinh ra kháng thể để gây tổn thương gan.'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:cause {id: 'nhiễm_khuẩn_cause'})
+MERGE (o1)-[r40:causedBy]->(o2)
+SET r40.text = 'Nhiễm khuẩn hoặc virus là nguyên nhân gây ra các triệu chứng viêm gan tự miễn.'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:cause {id: 'virus_cause'})
+MERGE (o1)-[r41:causedBy]->(o2)
+SET r41.text = 'Nhiễm khuẩn hoặc virus là nguyên nhân gây ra các triệu chứng viêm gan tự miễn.'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:disease {id: 'viêm_gan_siêu_vi_disease'})
+MERGE (o1)-[r42:causedBy]->(o2)
+SET r42.text = 'Các bệnh nhiễm trùng như viêm gan siêu vi (viêm gan A, B, C và D), virus herpes simplex và cytomegalovirus cũng có liên quan đến việc khởi phát bệnh.'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:disease {id: 'viêm_gan_a_disease'})
+MERGE (o1)-[r43:causedBy]->(o2)
+SET r43.text = 'Các bệnh nhiễm trùng như viêm gan siêu vi (viêm gan A, B, C và D), virus herpes simplex và cytomegalovirus cũng có liên quan đến việc khởi phát bệnh.'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:disease {id: 'viêm_gan_b_disease'})
+MERGE (o1)-[r44:causedBy]->(o2)
+SET r44.text = 'Các bệnh nhiễm trùng như viêm gan siêu vi (viêm gan A, B, C và D), virus herpes simplex và cytomegalovirus cũng có liên quan đến việc khởi phát bệnh.'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:disease {id: 'viêm_gan_c_disease'})
+MERGE (o1)-[r45:causedBy]->(o2)
+SET r45.text = 'Các bệnh nhiễm trùng như viêm gan siêu vi (viêm gan A, B, C và D), virus herpes simplex và cytomegalovirus cũng có liên quan đến việc khởi phát bệnh.'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:disease {id: 'viêm_gan_d_disease'})
+MERGE (o1)-[r46:causedBy]->(o2)
+SET r46.text = 'Các bệnh nhiễm trùng như viêm gan siêu vi (viêm gan A, B, C và D), virus herpes simplex và cytomegalovirus cũng có liên quan đến việc khởi phát bệnh.'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:disease {id: 'virus_herpes_simplex_disease'})
+MERGE (o1)-[r47:causedBy]->(o2)
+SET r47.text = 'Các bệnh nhiễm trùng như viêm gan siêu vi (viêm gan A, B, C và D), virus herpes simplex và cytomegalovirus cũng có liên quan đến việc khởi phát bệnh.'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:disease {id: 'cytomegalovirus_disease'})
+MERGE (o1)-[r48:causedBy]->(o2)
+SET r48.text = 'Các bệnh nhiễm trùng như viêm gan siêu vi (viêm gan A, B, C và D), virus herpes simplex và cytomegalovirus cũng có liên quan đến việc khởi phát bệnh.'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:treatment {id: 'thuốc_treatment'})
+MERGE (o1)-[r49:causedBy]->(o2)
+SET r49.text = 'Một số loại thuốc có thể gây tổn thương gan dưới hình thức viêm gan tự miễn.'
+
+MERGE (o1:symptom {id: 'tổn_thương_gan_symptom'})
+MERGE (o2:treatment {id: 'ngưng_dùng_thuốc_treatment'})
+MERGE (o1)-[r50:treatedBy]->(o2)
+SET r50.text = 'Trong hầu hết trường hợp như thế này, tổn thương gan sẽ biến mất khi người bệnh ngưng dùng thuốc.'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:treatment {id: 'minocycline_treatment'})
+MERGE (o1)-[r51:causedBy]->(o2)
+SET r51.text = 'Minocycline (kháng sinh dùng trong điều trị mụn) hay nitrofurantoin (kháng sinh dùng điều trị nhiễm trùng tiết niệu) là 2 trong số các loại thuốc phổ biến hàng đầu gây ra tình trạng này.'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:treatment {id: 'nitrofurantoin_treatment'})
+MERGE (o1)-[r52:causedBy]->(o2)
+SET r52.text = 'Minocycline (kháng sinh dùng trong điều trị mụn) hay nitrofurantoin (kháng sinh dùng điều trị nhiễm trùng tiết niệu) là 2 trong số các loại thuốc phổ biến hàng đầu gây ra tình trạng này.'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:disease {id: 'bệnh_grave_disease'})
+MERGE (o1)-[r53:associatedWith]->(o2)
+SET r53.text = 'Nếu mắc các bệnh tự miễn như bệnh Grave, bệnh viêm ruột, xơ cứng bì, viêm tuyến giáp, đái tháo đường tuýp 1, bệnh viêm loét đại tràng hay hội chứng Hội chứng Sjögren,&#8230; thì bạn cũng có nguy cơ liên quan đến việc hình thành AIH.'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:disease {id: 'bệnh_viêm_ruột_disease'})
+MERGE (o1)-[r54:associatedWith]->(o2)
+SET r54.text = 'Nếu mắc các bệnh tự miễn như bệnh Grave, bệnh viêm ruột, xơ cứng bì, viêm tuyến giáp, đái tháo đường tuýp 1, bệnh viêm loét đại tràng hay hội chứng Hội chứng Sjögren,&#8230; thì bạn cũng có nguy cơ liên quan đến việc hình thành AIH.'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:disease {id: 'xơ_cứng_bì_disease'})
+MERGE (o1)-[r55:associatedWith]->(o2)
+SET r55.text = 'Nếu mắc các bệnh tự miễn như bệnh Grave, bệnh viêm ruột, xơ cứng bì, viêm tuyến giáp, đái tháo đường tuýp 1, bệnh viêm loét đại tràng hay hội chứng Hội chứng Sjögren,&#8230; thì bạn cũng có nguy cơ liên quan đến việc hình thành AIH.'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:disease {id: 'viêm_tuyến_giáp_disease'})
+MERGE (o1)-[r56:associatedWith]->(o2)
+SET r56.text = 'Nếu mắc các bệnh tự miễn như bệnh Grave, bệnh viêm ruột, xơ cứng bì, viêm tuyến giáp, đái tháo đường tuýp 1, bệnh viêm loét đại tràng hay hội chứng Hội chứng Sjögren,&#8230; thì bạn cũng có nguy cơ liên quan đến việc hình thành AIH.'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:disease {id: 'đái_tháo_đường_tuýp_1_disease'})
+MERGE (o1)-[r57:associatedWith]->(o2)
+SET r57.text = 'Nếu mắc các bệnh tự miễn như bệnh Grave, bệnh viêm ruột, xơ cứng bì, viêm tuyến giáp, đái tháo đường tuýp 1, bệnh viêm loét đại tràng hay hội chứng Hội chứng Sjögren,&#8230; thì bạn cũng có nguy cơ liên quan đến việc hình thành AIH.'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:disease {id: 'bệnh_viêm_loét_đại_tràng_disease'})
+MERGE (o1)-[r58:associatedWith]->(o2)
+SET r58.text = 'Nếu mắc các bệnh tự miễn như bệnh Grave, bệnh viêm ruột, xơ cứng bì, viêm tuyến giáp, đái tháo đường tuýp 1, bệnh viêm loét đại tràng hay hội chứng Hội chứng Sjögren,&#8230; thì bạn cũng có nguy cơ liên quan đến việc hình thành AIH.'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:disease {id: 'hội_chứng_sjögren_disease'})
+MERGE (o1)-[r59:associatedWith]->(o2)
+SET r59.text = 'Nếu mắc các bệnh tự miễn như bệnh Grave, bệnh viêm ruột, xơ cứng bì, viêm tuyến giáp, đái tháo đường tuýp 1, bệnh viêm loét đại tràng hay hội chứng Hội chứng Sjögren,&#8230; thì bạn cũng có nguy cơ liên quan đến việc hình thành AIH.'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:cause {id: 'di_truyền_cause'})
+MERGE (o1)-[r60:associatedWith]->(o2)
+SET r60.text = 'Viêm gan tự miễn có thể ảnh hưởng tới bạn theo tính di truyền.'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:lifestyle {id: 'tinh_thần_căng_thẳng_lifestyle'})
+MERGE (o1)-[r61:causedBy]->(o2)
+SET r61.text = 'Mặc dù chưa có giải thích cụ thể về yếu tố nào đã tác động tới hệ gene để hình thành bệnh nhưng có một số vấn đề được nghi ngờ nhiều bao gồm tinh thần căng thẳng hoặc do việc dùng các loại thuốc như statin và hydralazine hay thuống kháng sinh nitrofurantoin và minocycline.'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:treatment {id: 'statin_treatment'})
+MERGE (o1)-[r62:causedBy]->(o2)
+SET r62.text = 'Mặc dù chưa có giải thích cụ thể về yếu tố nào đã tác động tới hệ gene để hình thành bệnh nhưng có một số vấn đề được nghi ngờ nhiều bao gồm tinh thần căng thẳng hoặc do việc dùng các loại thuốc như statin và hydralazine hay thuống kháng sinh nitrofurantoin và minocycline.'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:treatment {id: 'hydralazine_treatment'})
+MERGE (o1)-[r63:causedBy]->(o2)
+SET r63.text = 'Mặc dù chưa có giải thích cụ thể về yếu tố nào đã tác động tới hệ gene để hình thành bệnh nhưng có một số vấn đề được nghi ngờ nhiều bao gồm tinh thần căng thẳng hoặc do việc dùng các loại thuốc như statin và hydralazine hay thuống kháng sinh nitrofurantoin và minocycline.'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:treatment {id: 'nitrofurantoin_treatment'})
+MERGE (o1)-[r64:causedBy]->(o2)
+SET r64.text = 'Mặc dù chưa có giải thích cụ thể về yếu tố nào đã tác động tới hệ gene để hình thành bệnh nhưng có một số vấn đề được nghi ngờ nhiều bao gồm tinh thần căng thẳng hoặc do việc dùng các loại thuốc như statin và hydralazine hay thuống kháng sinh nitrofurantoin và minocycline.'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:treatment {id: 'minocycline_treatment'})
+MERGE (o1)-[r65:causedBy]->(o2)
+SET r65.text = 'Mặc dù chưa có giải thích cụ thể về yếu tố nào đã tác động tới hệ gene để hình thành bệnh nhưng có một số vấn đề được nghi ngờ nhiều bao gồm tinh thần căng thẳng hoặc do việc dùng các loại thuốc như statin và hydralazine hay thuống kháng sinh nitrofurantoin và minocycline.'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:symptom {id: 'dấu_hiệu_symptom'})
+MERGE (o1)-[r66:isSymptomOf]->(o2)
+SET r66.text = 'Dấu hiệu viêm gan tự miễn ở mỗi người và theo từng giai đoạn có sự khác biệt.'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:symptom {id: 'tiến_triển_symptom'})
+MERGE (o1)-[r67:isSymptomOf]->(o2)
+SET r67.text = 'Phần lớn người bệnh chủ yếu phát hiện mình bị viêm gan khi bệnh đã bước vào giai đoạn tiến triển.'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:symptom {id: 'triệu_chứng_symptom'})
+MERGE (o1)-[r68:isSymptomOf]->(o2)
+SET r68.text = 'Các triệu chứng viêm gan tự miễn diễn biến từ nhẹ tới nặng.'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:symptom {id: 'thay_đổi_sức_khỏe_symptom'})
+MERGE (o1)-[r69:isSymptomOf]->(o2)
+SET r69.text = 'Ở giai đoạn đầu, người bệnh có thể không cảm thấy bất cứ thay đổi sức khỏe nào.'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:symptom {id: 'mệt_mỏi_uể_oải_symptom'})
+MERGE (o1)-[r70:isSymptomOf]->(o2)
+SET r70.text = 'Khi gan bắt đầu bị tổn thương nặng hơn, các triệu chứng sẽ dần xuất hiện (cũng có trường hợp xuất hiện đột ngột) - phổ biến nhất là mệt mỏi uể oải.'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:symptom {id: 'tổn_thương_gan_symptom'})
+MERGE (o1)-[r71:isSymptomOf]->(o2)
+SET r71.text = 'Khi gan bắt đầu bị tổn thương nặng hơn, các triệu chứng sẽ dần xuất hiện (cũng có trường hợp xuất hiện đột ngột) - phổ biến nhất là mệt mỏi uể oải.'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:symptom {id: 'bụng_cảm_thấy_khó_chịu_symptom'})
+MERGE (o1)-[r72:isSymptomOf]->(o2)
+SET r72.text = 'Đi kèm theo đó là các biểu hiện như:(4)  Bụng cảm thấy khó chịu Bị viêm hoặc kích ứng da, ngứa da, vàng da Vàng lòng trắng mắt Đau nhức xương khớp Hay buồn nôn hoặc nôn ói Nước tiểu sẫm màu hơn, phân bạc màu Chán ăn Giảm cân không lý do Cơ thể suy nhược Bị tiêu chảy Rối loạn hoặc mất kinh Bụng sưng to, tụ dịch, đau vị trí gan (còn gọi là cổ trướng) Các vấn đề về não gan (lơ mơ, kém tập trung, mất ý thức,&#8230;)'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:symptom {id: 'bị_viêm_hoặc_kích_ứng_da_symptom'})
+MERGE (o1)-[r73:isSymptomOf]->(o2)
+SET r73.text = 'Đi kèm theo đó là các biểu hiện như:(4)  Bụng cảm thấy khó chịu Bị viêm hoặc kích ứng da, ngứa da, vàng da Vàng lòng trắng mắt Đau nhức xương khớp Hay buồn nôn hoặc nôn ói Nước tiểu sẫm màu hơn, phân bạc màu Chán ăn Giảm cân không lý do Cơ thể suy nhược Bị tiêu chảy Rối loạn hoặc mất kinh Bụng sưng to, tụ dịch, đau vị trí gan (còn gọi là cổ trướng) Các vấn đề về não gan (lơ mơ, kém tập trung, mất ý thức,&#8230;)'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:symptom {id: 'ngứa_da_symptom'})
+MERGE (o1)-[r74:isSymptomOf]->(o2)
+SET r74.text = 'Đi kèm theo đó là các biểu hiện như:(4)  Bụng cảm thấy khó chịu Bị viêm hoặc kích ứng da, ngứa da, vàng da Vàng lòng trắng mắt Đau nhức xương khớp Hay buồn nôn hoặc nôn ói Nước tiểu sẫm màu hơn, phân bạc màu Chán ăn Giảm cân không lý do Cơ thể suy nhược Bị tiêu chảy Rối loạn hoặc mất kinh Bụng sưng to, tụ dịch, đau vị trí gan (còn gọi là cổ trướng) Các vấn đề về não gan (lơ mơ, kém tập trung, mất ý thức,&#8230;)'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:symptom {id: 'vàng_da_symptom'})
+MERGE (o1)-[r75:isSymptomOf]->(o2)
+SET r75.text = 'Đi kèm theo đó là các biểu hiện như:(4)  Bụng cảm thấy khó chịu Bị viêm hoặc kích ứng da, ngứa da, vàng da Vàng lòng trắng mắt Đau nhức xương khớp Hay buồn nôn hoặc nôn ói Nước tiểu sẫm màu hơn, phân bạc màu Chán ăn Giảm cân không lý do Cơ thể suy nhược Bị tiêu chảy Rối loạn hoặc mất kinh Bụng sưng to, tụ dịch, đau vị trí gan (còn gọi là cổ trướng) Các vấn đề về não gan (lơ mơ, kém tập trung, mất ý thức,&#8230;)'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:symptom {id: 'vàng_lòng_trắng_mắt_symptom'})
+MERGE (o1)-[r76:isSymptomOf]->(o2)
+SET r76.text = 'Đi kèm theo đó là các biểu hiện như:(4)  Bụng cảm thấy khó chịu Bị viêm hoặc kích ứng da, ngứa da, vàng da Vàng lòng trắng mắt Đau nhức xương khớp Hay buồn nôn hoặc nôn ói Nước tiểu sẫm màu hơn, phân bạc màu Chán ăn Giảm cân không lý do Cơ thể suy nhược Bị tiêu chảy Rối loạn hoặc mất kinh Bụng sưng to, tụ dịch, đau vị trí gan (còn gọi là cổ trướng) Các vấn đề về não gan (lơ mơ, kém tập trung, mất ý thức,&#8230;)'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:symptom {id: 'đau_nhức_xương_khớp_symptom'})
+MERGE (o1)-[r77:isSymptomOf]->(o2)
+SET r77.text = 'Đi kèm theo đó là các biểu hiện như:(4)  Bụng cảm thấy khó chịu Bị viêm hoặc kích ứng da, ngứa da, vàng da Vàng lòng trắng mắt Đau nhức xương khớp Hay buồn nôn hoặc nôn ói Nước tiểu sẫm màu hơn, phân bạc màu Chán ăn Giảm cân không lý do Cơ thể suy nhược Bị tiêu chảy Rối loạn hoặc mất kinh Bụng sưng to, tụ dịch, đau vị trí gan (còn gọi là cổ trướng) Các vấn đề về não gan (lơ mơ, kém tập trung, mất ý thức,&#8230;)'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:symptom {id: 'hay_buồn_nôn_hoặc_nôn_ói_symptom'})
+MERGE (o1)-[r78:isSymptomOf]->(o2)
+SET r78.text = 'Đi kèm theo đó là các biểu hiện như:(4)  Bụng cảm thấy khó chịu Bị viêm hoặc kích ứng da, ngứa da, vàng da Vàng lòng trắng mắt Đau nhức xương khớp Hay buồn nôn hoặc nôn ói Nước tiểu sẫm màu hơn, phân bạc màu Chán ăn Giảm cân không lý do Cơ thể suy nhược Bị tiêu chảy Rối loạn hoặc mất kinh Bụng sưng to, tụ dịch, đau vị trí gan (còn gọi là cổ trướng) Các vấn đề về não gan (lơ mơ, kém tập trung, mất ý thức,&#8230;)'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:symptom {id: 'nước_tiểu_sẫm_màu_hơn_symptom'})
+MERGE (o1)-[r79:isSymptomOf]->(o2)
+SET r79.text = 'Đi kèm theo đó là các biểu hiện như:(4)  Bụng cảm thấy khó chịu Bị viêm hoặc kích ứng da, ngứa da, vàng da Vàng lòng trắng mắt Đau nhức xương khớp Hay buồn nôn hoặc nôn ói Nước tiểu sẫm màu hơn, phân bạc màu Chán ăn Giảm cân không lý do Cơ thể suy nhược Bị tiêu chảy Rối loạn hoặc mất kinh Bụng sưng to, tụ dịch, đau vị trí gan (còn gọi là cổ trướng) Các vấn đề về não gan (lơ mơ, kém tập trung, mất ý thức,&#8230;)'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:symptom {id: 'phân_bạc_màu_symptom'})
+MERGE (o1)-[r80:isSymptomOf]->(o2)
+SET r80.text = 'Đi kèm theo đó là các biểu hiện như:(4)  Bụng cảm thấy khó chịu Bị viêm hoặc kích ứng da, ngứa da, vàng da Vàng lòng trắng mắt Đau nhức xương khớp Hay buồn nôn hoặc nôn ói Nước tiểu sẫm màu hơn, phân bạc màu Chán ăn Giảm cân không lý do Cơ thể suy nhược Bị tiêu chảy Rối loạn hoặc mất kinh Bụng sưng to, tụ dịch, đau vị trí gan (còn gọi là cổ trướng) Các vấn đề về não gan (lơ mơ, kém tập trung, mất ý thức,&#8230;)'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:symptom {id: 'chán_ăn_symptom'})
+MERGE (o1)-[r81:isSymptomOf]->(o2)
+SET r81.text = 'Đi kèm theo đó là các biểu hiện như:(4)  Bụng cảm thấy khó chịu Bị viêm hoặc kích ứng da, ngứa da, vàng da Vàng lòng trắng mắt Đau nhức xương khớp Hay buồn nôn hoặc nôn ói Nước tiểu sẫm màu hơn, phân bạc màu Chán ăn Giảm cân không lý do Cơ thể suy nhược Bị tiêu chảy Rối loạn hoặc mất kinh Bụng sưng to, tụ dịch, đau vị trí gan (còn gọi là cổ trướng) Các vấn đề về não gan (lơ mơ, kém tập trung, mất ý thức,&#8230;)'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:symptom {id: 'giảm_cân_không_lý_do_symptom'})
+MERGE (o1)-[r82:isSymptomOf]->(o2)
+SET r82.text = 'Đi kèm theo đó là các biểu hiện như:(4)  Bụng cảm thấy khó chịu Bị viêm hoặc kích ứng da, ngứa da, vàng da Vàng lòng trắng mắt Đau nhức xương khớp Hay buồn nôn hoặc nôn ói Nước tiểu sẫm màu hơn, phân bạc màu Chán ăn Giảm cân không lý do Cơ thể suy nhược Bị tiêu chảy Rối loạn hoặc mất kinh Bụng sưng to, tụ dịch, đau vị trí gan (còn gọi là cổ trướng) Các vấn đề về não gan (lơ mơ, kém tập trung, mất ý thức,&#8230;)'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:symptom {id: 'cơ_thể_suy_nhược_symptom'})
+MERGE (o1)-[r83:isSymptomOf]->(o2)
+SET r83.text = 'Đi kèm theo đó là các biểu hiện như:(4)  Bụng cảm thấy khó chịu Bị viêm hoặc kích ứng da, ngứa da, vàng da Vàng lòng trắng mắt Đau nhức xương khớp Hay buồn nôn hoặc nôn ói Nước tiểu sẫm màu hơn, phân bạc màu Chán ăn Giảm cân không lý do Cơ thể suy nhược Bị tiêu chảy Rối loạn hoặc mất kinh Bụng sưng to, tụ dịch, đau vị trí gan (còn gọi là cổ trướng) Các vấn đề về não gan (lơ mơ, kém tập trung, mất ý thức,&#8230;)'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:symptom {id: 'bị_tiêu_chảy_symptom'})
+MERGE (o1)-[r84:isSymptomOf]->(o2)
+SET r84.text = 'Đi kèm theo đó là các biểu hiện như:(4)  Bụng cảm thấy khó chịu Bị viêm hoặc kích ứng da, ngứa da, vàng da Vàng lòng trắng mắt Đau nhức xương khớp Hay buồn nôn hoặc nôn ói Nước tiểu sẫm màu hơn, phân bạc màu Chán ăn Giảm cân không lý do Cơ thể suy nhược Bị tiêu chảy Rối loạn hoặc mất kinh Bụng sưng to, tụ dịch, đau vị trí gan (còn gọi là cổ trướng) Các vấn đề về não gan (lơ mơ, kém tập trung, mất ý thức,&#8230;)'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:test {id: 'tiền_sử_bệnh_gia_đình__các_triệu_chứng_hiện_tại__thực_hiện_các_xét_nghiệm_máu_hoặc_sinh_thiết_gan_test'})
+MERGE (o1)-[r85:diagnosedBy]->(o2)
+SET r85.text = 'Việc chẩn đoán viêm gan tự miễn cần được xem xét trên nhiều yếu tố từ tiền sử bệnh gia đình, các triệu chứng hiện tại, thực hiện các xét nghiệm máu hoặc sinh thiết gan.'
+
+MERGE (o1:symptom {id: 'các_triệu_chứng_symptom'})
+MERGE (o2:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o1)-[r86:isSymptomOf]->(o2)
+SET r86.text = 'Các triệu chứng của viêm gan tự miễn rất giống với bệnh viêm gan siêu vi.'
+
+MERGE (o1:disease {id: 'viêm_gan_siêu_vi_disease'})
+MERGE (o2:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o1)-[r87:relatedTo]->(o2)
+SET r87.text = 'Các triệu chứng của viêm gan tự miễn rất giống với bệnh viêm gan siêu vi.'
+
+MERGE (o1:test {id: 'xét_nghiệm_máu_test'})
+MERGE (o2:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o1)-[r88:diagnosedBy]->(o2)
+SET r88.text = 'Xét nghiệm máu giúp loại trừ tình trạng viêm gan do vi rút, xác định loại viêm gan tự miễn đang có, kiểm tra chức năng gan cũng như xem xét mức độ kháng thể trong máu.'
+
+MERGE (o1:disease {id: 'viêm_gan_do_vi_rút_disease'})
+MERGE (o2:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o1)-[r89:relatedTo]->(o2)
+SET r89.text = 'Xét nghiệm máu giúp loại trừ tình trạng viêm gan do vi rút, xác định loại viêm gan tự miễn đang có, kiểm tra chức năng gan cũng như xem xét mức độ kháng thể trong máu.'
+
+MERGE (o1:test {id: 'sinh_thiết_gan_test'})
+MERGE (o2:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o1)-[r90:diagnosedBy]->(o2)
+SET r90.text = 'Sinh thiết gan: Thực hiện sinh thiết cho biết loại và mức độ tổn thương và bị viêm của gan.'
+
+MERGE (o1:organ {id: 'gan_organ'})
+MERGE (o2:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o1)-[r91:affectedBy]->(o2)
+SET r91.text = 'Sinh thiết gan: Thực hiện sinh thiết cho biết loại và mức độ tổn thương và bị viêm của gan.'
+
+MERGE (o1:test {id: 'chụp_x-quang__chụp_cắt_lớp_(ct)_hoặc_chụp_cộng_hưởng_từ_(mri)_test'})
+MERGE (o2:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o1)-[r92:diagnosedBy]->(o2)
+SET r92.text = 'Chụp X-quang, chụp cắt lớp (CT) hoặc chụp cộng hưởng từ (MRI) có thể được chỉ định thực hiện giữa các lần sinh thiết gan nhằm định lượng mức độ xơ hóa và chất béo trong gan.'
+
+MERGE (o1:symptom {id: 'xơ_hóa_symptom'})
+MERGE (o2:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o1)-[r93:isSymptomOf]->(o2)
+SET r93.text = 'Chụp X-quang, chụp cắt lớp (CT) hoặc chụp cộng hưởng từ (MRI) có thể được chỉ định thực hiện giữa các lần sinh thiết gan nhằm định lượng mức độ xơ hóa và chất béo trong gan.'
+
+MERGE (o1:symptom {id: 'chất_béo_symptom'})
+MERGE (o2:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o1)-[r94:isSymptomOf]->(o2)
+SET r94.text = 'Chụp X-quang, chụp cắt lớp (CT) hoặc chụp cộng hưởng từ (MRI) có thể được chỉ định thực hiện giữa các lần sinh thiết gan nhằm định lượng mức độ xơ hóa và chất béo trong gan.'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:treatment {id: 'chưa_có_phương_pháp_điều_trị_dứt_điểm_treatment'})
+MERGE (o1)-[r95:treatedBy]->(o2)
+SET r95.text = 'Là một bệnh tự miễn, viêm gan tự miễn chưa có phương pháp điều trị dứt điểm.'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:treatment {id: 'làm_chậm_hoặc_ngăn_ngừa_sự_tấn_công_của_hệ_miễn_dịch_tới_gan_treatment'})
+MERGE (o1)-[r96:treatedBy]->(o2)
+SET r96.text = 'Cho nên dù nhiễm bệnh loại 1 hay 2 thì mục đích chính trong chữa trị viêm gan tự miễn chỉ dừng ở việc làm chậm hoặc ngăn ngừa sự tấn công của hệ miễn dịch tới gan.'
+
+MERGE (o1:treatment {id: 'corticosteroid_treatment'})
+MERGE (o2:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o1)-[r97:treatedBy]->(o2)
+SET r97.text = 'Người bệnh AIH thường dùng corticosteroid trong thời gian đầu khi bắt đầu xuất hiện các triệu chứng; sau đó có kết hợp thêm các thuốc ức chế miễn dịch khác như prednisone, azathioprine, mercaptopurine,&#8230; để làm dịu tình trạng viêm ở gan.'
+
+MERGE (o1:treatment {id: 'prednisone__azathioprine__mercaptopurine_treatment'})
+MERGE (o2:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o1)-[r98:treatedBy]->(o2)
+SET r98.text = 'Người bệnh AIH thường dùng corticosteroid trong thời gian đầu khi bắt đầu xuất hiện các triệu chứng; sau đó có kết hợp thêm các thuốc ức chế miễn dịch khác như prednisone, azathioprine, mercaptopurine,&#8230; để làm dịu tình trạng viêm ở gan.'
+
+MERGE (o1:symptom {id: 'viêm_symptom'})
+MERGE (o2:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o1)-[r99:isSymptomOf]->(o2)
+SET r99.text = 'Người bệnh AIH thường dùng corticosteroid trong thời gian đầu khi bắt đầu xuất hiện các triệu chứng; sau đó có kết hợp thêm các thuốc ức chế miễn dịch khác như prednisone, azathioprine, mercaptopurine,&#8230; để làm dịu tình trạng viêm ở gan.'
+
+MERGE (o1:treatment {id: 'prednisone_treatment'})
+MERGE (o2:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o1)-[r100:treatedBy]->(o2)
+SET r100.text = 'Prednisone thường được kê đơn liều cao trong tháng đầu dùng thuốc; về sau giảm dần liều uống để giảm nguy cơ tác dụng phụ (loãng xương, tăng đường huyết, mất ngủ, đau cơ, trầm cảm,&#8230;).'
+
+MERGE (o1:symptom {id: 'loãng_xương__tăng_đường_huyết__mất_ngủ__đau_cơ__trầm_cảm_symptom'})
+MERGE (o2:treatment {id: 'prednisone_treatment'})
+MERGE (o1)-[r101:causedBy]->(o2)
+SET r101.text = 'Prednisone thường được kê đơn liều cao trong tháng đầu dùng thuốc; về sau giảm dần liều uống để giảm nguy cơ tác dụng phụ (loãng xương, tăng đường huyết, mất ngủ, đau cơ, trầm cảm,&#8230;).'
+
+MERGE (o1:treatment {id: 'azathioprine_treatment'})
+MERGE (o2:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o1)-[r102:treatedBy]->(o2)
+SET r102.text = 'Đối với Azathioprine, thuốc có thể gây ra tình trạng buồn nôn hoặc nôn ói trong 10-15% người dùng.'
+
+MERGE (o1:symptom {id: 'buồn_nôn_hoặc_nôn_ói_symptom'})
+MERGE (o2:treatment {id: 'azathioprine_treatment'})
+MERGE (o1)-[r103:causedBy]->(o2)
+SET r103.text = 'Đối với Azathioprine, thuốc có thể gây ra tình trạng buồn nôn hoặc nôn ói trong 10-15% người dùng.'
+
+MERGE (o1:treatment {id: 'azathioprine_treatment'})
+MERGE (o2:disease {id: 'ung_thư_hạch_disease'})
+MERGE (o1)-[r104:causedBy]->(o2)
+SET r104.text = 'Ngoài ra Azathioprine cũng làm tăng nguy cơ ung thư hạch.'
+
+MERGE (o1:treatment {id: 'cyclosporine__sirolimus_(rapamune)_và_tacrolimus_(prograf)_treatment'})
+MERGE (o2:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o1)-[r105:treatedBy]->(o2)
+SET r105.text = 'Nếu người bệnh không dung nạp Azathioprine, một số loại thuốc khác có thể được dùng thay thế như Cyclosporine, sirolimus (Rapamune) và tacrolimus (Prograf)'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:treatment {id: 'thuốc_treatment'})
+MERGE (o1)-[r106:treatedBy]->(o2)
+SET r106.text = 'Khi dùng thuốc, bệnh có thể thuyên giảm dần sau vài năm điều trị - sau 3 năm có đến khoảng 80% người bị viêm gan tự miễn nhận thấy bệnh được kiểm soát tốt.'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:treatment {id: 'ngừng_thuốc_treatment'})
+MERGE (o1)-[r107:aggravatedBy]->(o2)
+SET r107.text = 'Tuy nhiên bệnh lại thường tái phát nếu người bệnh ngừng thuốc.'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:treatment {id: 'điều_trị_cả_đời_treatment'})
+MERGE (o1)-[r108:treatedBy]->(o2)
+SET r108.text = 'Tùy thuộc vào tình trạng viêm mà người bệnh có khả năng phải điều trị cả đời.'
+
+MERGE (o1:treatment {id: 'ghép_gan_treatment'})
+MERGE (o2:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o1)-[r109:treatedBy]->(o2)
+SET r109.text = 'Ghép gan là phương án điều trị viêm gan tự miễn được chỉ định trong trường hợp người bệnh bị xơ gan hoặc suy gan.'
+
+MERGE (o1:disease {id: 'xơ_gan_disease'})
+MERGE (o2:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o1)-[r110:isSymptomOf]->(o2)
+SET r110.text = 'Ghép gan là phương án điều trị viêm gan tự miễn được chỉ định trong trường hợp người bệnh bị xơ gan hoặc suy gan.'
+
+MERGE (o1:disease {id: 'suy_gan_disease'})
+MERGE (o2:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o1)-[r111:isSymptomOf]->(o2)
+SET r111.text = 'Ghép gan là phương án điều trị viêm gan tự miễn được chỉ định trong trường hợp người bệnh bị xơ gan hoặc suy gan.'
+
+MERGE (o1:organ {id: 'gan_organ'})
+MERGE (o2:treatment {id: 'ghép_gan_treatment'})
+MERGE (o1)-[r112:affectedBy]->(o2)
+SET r112.text = 'Việc ghép gan có thể thực hiện nhờ vào sự hiến tặng từ người còn sống - lúc này người bệnh chỉ nhận một phần gan khỏe mạnh để gan có thể tiếp tục tái tạo tế bào mới.'
+
+MERGE (o1:treatment {id: 'ghép_gan_treatment'})
+MERGE (o2:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o1)-[r113:treatedBy]->(o2)
+SET r113.text = 'Tuy ghép gan là cách điều trị tối ưu nhưng viêm gan tự miễn vẫn có nguy cơ tái phát ngay cả khi ghép tạng thành công.'
+
+MERGE (o1:lifestyle {id: 'chế_độ_ăn_uống_lành_mạnh_lifestyle'})
+MERGE (o2:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o1)-[r114:treatedBy]->(o2)
+SET r114.text = 'Trong thời gian trị bệnh, một điểm quan trọng mà bệnh nhân cần quan tâm là xây dựng chế độ ăn uống lành mạnh và thói quen tập thể dục đều đặn.'
+
+MERGE (o1:lifestyle {id: 'thói_quen_tập_thể_dục_đều_đặn_lifestyle'})
+MERGE (o2:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o1)-[r115:treatedBy]->(o2)
+SET r115.text = 'Trong thời gian trị bệnh, một điểm quan trọng mà bệnh nhân cần quan tâm là xây dựng chế độ ăn uống lành mạnh và thói quen tập thể dục đều đặn.'
+
+MERGE (o1:disease {id: 'gan_nhiễm_mỡ_disease'})
+MERGE (o2:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o1)-[r116:associatedWith]->(o2)
+SET r116.text = 'Điều này vừa giúp tăng cường sức khỏe, tăng hiệu quả điều trị mà còn giảm nguy cơ hình thành gan nhiễm mỡ ở những người viêm gan tự miễn.'
+
+MERGE (o1:treatment {id: 'thuốc_corticosteroid_treatment'})
+MERGE (o2:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o1)-[r117:treatedBy]->(o2)
+SET r117.text = 'Thuốc corticosteroid thường được chỉ định cho người bị viêm gan tự miễn trong thời gian đầu điều trị'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:disease {id: 'xơ_gan_disease'})
+MERGE (o1)-[r118:causedBy]->(o2)
+SET r118.text = 'Nếu không điều trị viêm gan tự miễn có thể gây ra một số vấn đề nguy hiểm; trong đó phổ biến hàng đầu là xơ gan.'
+
+MERGE (o1:disease {id: 'giãn_tĩnh_mạch_thực_quản_disease'})
+MERGE (o2:disease {id: 'xơ_gan_disease'})
+MERGE (o1)-[r119:isSymptomOf]->(o2)
+SET r119.text = 'Các biến chứng xơ gan kéo theo có thể bao gồm:  Giãn tĩnh mạch thực quản: có nguy cơ gây chảy máu trong thực quản hoặc dạ dày gây nguy hiểm tới tính mạng người bệnh'
+
+MERGE (o1:symptom {id: 'chảy_máu_trong_thực_quản_hoặc_dạ_dày_symptom'})
+MERGE (o2:disease {id: 'giãn_tĩnh_mạch_thực_quản_disease'})
+MERGE (o1)-[r120:isSymptomOf]->(o2)
+SET r120.text = 'Các biến chứng xơ gan kéo theo có thể bao gồm:  Giãn tĩnh mạch thực quản: có nguy cơ gây chảy máu trong thực quản hoặc dạ dày gây nguy hiểm tới tính mạng người bệnh'
+
+MERGE (o1:disease {id: 'giãn_tĩnh_mạch_thực_quản_disease'})
+MERGE (o2:disease {id: 'xơ_gan_disease'})
+MERGE (o1)-[r121:causedBy]->(o2)
+SET r121.text = 'Các biến chứng xơ gan kéo theo có thể bao gồm:  Giãn tĩnh mạch thực quản: có nguy cơ gây chảy máu trong thực quản hoặc dạ dày gây nguy hiểm tới tính mạng người bệnh'
+
+MERGE (o1:disease {id: 'tụ_dịch_ổ_bụng_disease'})
+MERGE (o2:disease {id: 'xơ_gan_disease'})
+MERGE (o1)-[r122:isSymptomOf]->(o2)
+SET r122.text = 'Tụ dịch ổ bụng: gây khó chịu và cản trở hô hấp, thường là dấu hiệu xơ gan giai đoạn cuối'
+
+MERGE (o1:symptom {id: 'khó_chịu_symptom'})
+MERGE (o2:disease {id: 'tụ_dịch_ổ_bụng_disease'})
+MERGE (o1)-[r123:isSymptomOf]->(o2)
+SET r123.text = 'Tụ dịch ổ bụng: gây khó chịu và cản trở hô hấp, thường là dấu hiệu xơ gan giai đoạn cuối'
+
+MERGE (o1:symptom {id: 'cản_trở_hô_hấp_symptom'})
+MERGE (o2:disease {id: 'tụ_dịch_ổ_bụng_disease'})
+MERGE (o1)-[r124:isSymptomOf]->(o2)
+SET r124.text = 'Tụ dịch ổ bụng: gây khó chịu và cản trở hô hấp, thường là dấu hiệu xơ gan giai đoạn cuối'
+
+MERGE (o1:disease {id: 'suy_gan_disease'})
+MERGE (o2:disease {id: 'xơ_gan_disease'})
+MERGE (o1)-[r125:isSymptomOf]->(o2)
+SET r125.text = 'Suy gan: tế bào gan bị tổn thương nặng không thể phục hồi; ghép gan là phương án điều trị hầu như là duy nhất'
+
+MERGE (o1:organ {id: 'tế_bào_gan_organ'})
+MERGE (o2:disease {id: 'suy_gan_disease'})
+MERGE (o1)-[r126:affectedBy]->(o2)
+SET r126.text = 'Suy gan: tế bào gan bị tổn thương nặng không thể phục hồi; ghép gan là phương án điều trị hầu như là duy nhất'
+
+MERGE (o1:treatment {id: 'ghép_gan_treatment'})
+MERGE (o2:disease {id: 'suy_gan_disease'})
+MERGE (o1)-[r127:treatedBy]->(o2)
+SET r127.text = 'Suy gan: tế bào gan bị tổn thương nặng không thể phục hồi; ghép gan là phương án điều trị hầu như là duy nhất'
+
+MERGE (o1:disease {id: 'ung_thư_gan_disease'})
+MERGE (o2:disease {id: 'xơ_gan_disease'})
+MERGE (o1)-[r128:isSymptomOf]->(o2)
+SET r128.text = 'Ung thư gan: các khối u ác tính phá hủy và cản trở khả năng hoạt động của gan'
+
+MERGE (o1:symptom {id: 'khối_u_ác_tính_symptom'})
+MERGE (o2:disease {id: 'ung_thư_gan_disease'})
+MERGE (o1)-[r129:isSymptomOf]->(o2)
+SET r129.text = 'Ung thư gan: các khối u ác tính phá hủy và cản trở khả năng hoạt động của gan'
+
+MERGE (o1:organ {id: 'gan_organ'})
+MERGE (o2:disease {id: 'ung_thư_gan_disease'})
+MERGE (o1)-[r130:affectedBy]->(o2)
+SET r130.text = 'Ung thư gan: các khối u ác tính phá hủy và cản trở khả năng hoạt động của gan'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:cause {id: 'bất_ổn_trong_kích_hoạt_hệ_miễn_dịch_phản_ứng_chống_lại_tế_bào_gan_cause'})
+MERGE (o1)-[r131:causedBy]->(o2)
+SET r131.text = 'Do liên quan tới bất ổn trong kích hoạt hệ miễn dịch phản ứng chống lại tế bào gan; nguyên nhân gây bệnh không bắt nguồn từ vi rút như viêm gan B/C nên viêm gan tự miễn không phải là một bệnh lây nhiễm.'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:disease {id: 'viêm_gan_b/c_disease'})
+MERGE (o1)-[r132:relatedTo]->(o2)
+SET r132.text = 'Do liên quan tới bất ổn trong kích hoạt hệ miễn dịch phản ứng chống lại tế bào gan; nguyên nhân gây bệnh không bắt nguồn từ vi rút như viêm gan B/C nên viêm gan tự miễn không phải là một bệnh lây nhiễm.'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:cause {id: 'vi_rút_cause'})
+MERGE (o1)-[r133:causedBy]->(o2)
+SET r133.text = 'Do liên quan tới bất ổn trong kích hoạt hệ miễn dịch phản ứng chống lại tế bào gan; nguyên nhân gây bệnh không bắt nguồn từ vi rút như viêm gan B/C nên viêm gan tự miễn không phải là một bệnh lây nhiễm.'
+
+MERGE (o1:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o2:treatment {id: 'chưa_có_cách_nào_treatment'})
+MERGE (o1)-[r134:preventedBy]->(o2)
+SET r134.text = 'Cho tới nay vẫn chưa có cách nào phòng ngừa viêm gan tự miễn.'
+
+MERGE (o1:lifestyle {id: 'sinh_hoạt__ăn_uống__nghỉ_ngơi_lifestyle'})
+MERGE (o2:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o1)-[r135:preventedBy]->(o2)
+SET r135.text = 'Việc tốt nhất mà chúng ta có thể làm là tăng cường sức khỏe thông qua sinh hoạt, ăn uống, nghỉ ngơi.'
+
+MERGE (o1:lifestyle {id: 'khám_sức_khỏe_định_kỳ_lifestyle'})
+MERGE (o2:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o1)-[r136:preventedBy]->(o2)
+SET r136.text = 'Ngoài ra nên khám sức khỏe định kỳ cũng như đừng bỏ qua bất cứ biểu hiện bất thường nào để có thể phát hiện và điều trị sớm nếu mắc bệnh.'
+
+MERGE (o1:symptom {id: 'biểu_hiện_bất_thường_symptom'})
+MERGE (o2:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o1)-[r137:isSymptomOf]->(o2)
+SET r137.text = 'Ngoài ra nên khám sức khỏe định kỳ cũng như đừng bỏ qua bất cứ biểu hiện bất thường nào để có thể phát hiện và điều trị sớm nếu mắc bệnh.'
+
+MERGE (o1:treatment {id: 'trung_tâm_nội_soi_và_phẫu_thuật_nội_soi_tiêu_hóa__bệnh_viện_đa_khoa_tâm_anh_treatment'})
+MERGE (o2:disease {id: 'các_vấn_đề_về_gan_từ_nhẹ_đến_nặng_(gan_nhiễm_mỡ__viêm_gan_cấp_tính__viêm_gan_mạn_tính__xơ_gan__ung_thư_gan__bệnh_gan_do_ký_sinh_trùng…)_disease'})
+MERGE (o1)-[r138:treatedBy]->(o2)
+SET r138.text = 'Trung tâm Nội soi và Phẫu thuật nội soi tiêu hóa, Bệnh viện Đa khoa Tâm Anh là đơn vị y tế uy tín, cung cấp dịch vụ thăm khám và điều trị cao cấp, hiệu quả cho các bệnh nhân mắc các vấn đề về gan từ nhẹ đến nặng (Gan nhiễm mỡ, viêm gan cấp tính, viêm gan mạn tính, xơ gan, ung thư gan, bệnh gan do ký sinh trùng…).'
+
+MERGE (o1:disease {id: 'gan_nhiễm_mỡ__viêm_gan_cấp_tính__viêm_gan_mạn_tính__xơ_gan__ung_thư_gan__bệnh_gan_do_ký_sinh_trùng_disease'})
+MERGE (o2:disease {id: 'viêm_gan_tự_miễn_disease'})
+MERGE (o1)-[r139:relatedTo]->(o2)
+SET r139.text = 'Trung tâm Nội soi và Phẫu thuật nội soi tiêu hóa, Bệnh viện Đa khoa Tâm Anh là đơn vị y tế uy tín, cung cấp dịch vụ thăm khám và điều trị cao cấp, hiệu quả cho các bệnh nhân mắc các vấn đề về gan từ nhẹ đến nặng (Gan nhiễm mỡ, viêm gan cấp tính, viêm gan mạn tính, xơ gan, ung thư gan, bệnh gan do ký sinh trùng…).'
+
+MERGE (o1:treatment {id: 'bác_sĩ_nội_–_ngoại_–_nội_soi_tiêu_hóa_treatment'})
+MERGE (o2:disease {id: 'các_vấn_đề_về_gan_từ_nhẹ_đến_nặng_(gan_nhiễm_mỡ__viêm_gan_cấp_tính__viêm_gan_mạn_tính__xơ_gan__ung_thư_gan__bệnh_gan_do_ký_sinh_trùng…)_disease'})
+MERGE (o1)-[r140:treatedBy]->(o2)
+SET r140.text = 'Trung tâm quy tụ đội ngũ bác sĩ Nội – Ngoại – Nội soi tiêu hóa chuyên môn cao, giàu kinh nghiệm, bên cạnh đó là sự hỗ trợ của hệ thống thiết bị y tế hiện đại, nhập khẩu từ nước ngoài, phục vụ tối đa nhu cầu thăm khám và điều trị của khách hàng.'

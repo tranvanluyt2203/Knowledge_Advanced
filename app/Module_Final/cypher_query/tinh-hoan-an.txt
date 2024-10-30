@@ -1,0 +1,605 @@
+
+MERGE (o1:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o2:symptom {id: 'bé_trai_khi_vừa_chào_đời_symptom'})
+MERGE (o1)-[r0:isSymptomOf]->(o2)
+SET r0.text = 'Tinh hoàn ẩn thường được phát hiện ở những bé trai khi vừa chào đời và một số ít nam giới trưởng thành mắc phải tình trạng này.'
+
+MERGE (o1:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o2:symptom {id: 'nam_giới_trưởng_thành_symptom'})
+MERGE (o1)-[r1:isSymptomOf]->(o2)
+SET r1.text = 'Tinh hoàn ẩn thường được phát hiện ở những bé trai khi vừa chào đời và một số ít nam giới trưởng thành mắc phải tình trạng này.'
+
+MERGE (o1:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o2:treatment {id: 'phát_hiện_và_điều_trị_sớm_treatment'})
+MERGE (o1)-[r2:treatedBy]->(o2)
+SET r2.text = 'Việc phát hiện và điều trị sớm là cần thiết để tránh ảnh hưởng tới sức khỏe và khả năng sinh sản của người bệnh sau này.'
+
+MERGE (o1:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o2:symptom {id: 'tinh_hoàn_không_di_chuyển_xuống_bìu_symptom'})
+MERGE (o1)-[r3:isSymptomOf]->(o2)
+SET r3.text = 'Tinh hoàn ẩn là tình trạng trẻ sinh ra mà một hay cả hai tinh hoàn không di chuyển xuống bìu hay nằm ở vị trí khác ngoài bìu.'
+
+MERGE (o1:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o2:symptom {id: 'tinh_hoàn_nằm_ở_vị_trí_khác_ngoài_bìu_symptom'})
+MERGE (o1)-[r4:isSymptomOf]->(o2)
+SET r4.text = 'Tinh hoàn ẩn là tình trạng trẻ sinh ra mà một hay cả hai tinh hoàn không di chuyển xuống bìu hay nằm ở vị trí khác ngoài bìu.'
+
+MERGE (o1:organ {id: 'tinh_hoàn_organ'})
+MERGE (o2:organ {id: 'phía_sau_sát_hai_thận_organ'})
+MERGE (o1)-[r5:locatedIn]->(o2)
+SET r5.text = 'Trong thời kỳ bào thai, hai tinh hoàn của thai nhi nằm tại vị trí phía sau sát hai thận.'
+
+MERGE (o1:organ {id: 'tinh_hoàn_organ'})
+MERGE (o2:organ {id: 'bụng_organ'})
+MERGE (o1)-[r6:locatedIn]->(o2)
+SET r6.text = 'Khi thai nhi khoảng 8 tuần tuổi, hai tinh hoàn đã di chuyển từ bụng qua bẹn, xuống bìu trước khi trẻ sinh ra.'
+
+MERGE (o1:organ {id: 'tinh_hoàn_organ'})
+MERGE (o2:organ {id: 'bẹn_organ'})
+MERGE (o1)-[r7:locatedIn]->(o2)
+SET r7.text = 'Khi thai nhi khoảng 8 tuần tuổi, hai tinh hoàn đã di chuyển từ bụng qua bẹn, xuống bìu trước khi trẻ sinh ra.'
+
+MERGE (o1:organ {id: 'tinh_hoàn_organ'})
+MERGE (o2:organ {id: 'bìu_organ'})
+MERGE (o1)-[r8:locatedIn]->(o2)
+SET r8.text = 'Khi thai nhi khoảng 8 tuần tuổi, hai tinh hoàn đã di chuyển từ bụng qua bẹn, xuống bìu trước khi trẻ sinh ra.'
+
+MERGE (o1:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o2:symptom {id: 'bé_trai_symptom'})
+MERGE (o1)-[r9:isSymptomOf]->(o2)
+SET r9.text = 'Có khoảng 10% bé trai xuất hiện tình trạng ẩn ở cả hai tinh hoàn.'
+
+MERGE (o1:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o2:symptom {id: 'bé_trai_khi_sinh_symptom'})
+MERGE (o1)-[r10:isSymptomOf]->(o2)
+SET r10.text = 'Ở bé trai khi sinh, tỷ lệ mắc bệnh là khoảng 3 - 4%.'
+
+MERGE (o1:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o2:cause {id: 'trẻ_sơ_sinh_bị_nhẹ_cân_cause'})
+MERGE (o1)-[r11:causedBy]->(o2)
+SET r11.text = 'Tỷ lệ này tăng cao khi trẻ sơ sinh bị nhẹ cân, sinh đôi, sinh non.'
+
+MERGE (o1:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o2:cause {id: 'sinh_đôi_cause'})
+MERGE (o1)-[r12:causedBy]->(o2)
+SET r12.text = 'Tỷ lệ này tăng cao khi trẻ sơ sinh bị nhẹ cân, sinh đôi, sinh non.'
+
+MERGE (o1:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o2:cause {id: 'sinh_non_cause'})
+MERGE (o1)-[r13:causedBy]->(o2)
+SET r13.text = 'Tỷ lệ này tăng cao khi trẻ sơ sinh bị nhẹ cân, sinh đôi, sinh non.'
+
+MERGE (o1:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o2:symptom {id: 'tinh_hoàn_tự_di_chuyển_xuống_bìu_symptom'})
+MERGE (o1)-[r14:isSymptomOf]->(o2)
+SET r14.text = 'Nhiều trường hợp tinh hoàn ẩn sau khi sinh sẽ tiếp tục tự di chuyển xuống bìu trước khi trẻ được 3 tháng tuổi.'
+
+MERGE (o1:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o2:symptom {id: 'tinh_hoàn_không_nằm_trong_bìu_symptom'})
+MERGE (o1)-[r15:isSymptomOf]->(o2)
+SET r15.text = 'Tuy nhiên, khi trẻ 6 tháng tuổi, nếu tinh hoàn vẫn không nằm trong bìu, khi đó sẽ rất khó để tinh hoàn tự di chuyển xuống và cần có phương pháp điều trị thích hợp.'
+
+MERGE (o1:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o2:treatment {id: 'phương_pháp_điều_trị_thích_hợp_treatment'})
+MERGE (o1)-[r16:treatedBy]->(o2)
+SET r16.text = 'Tuy nhiên, khi trẻ 6 tháng tuổi, nếu tinh hoàn vẫn không nằm trong bìu, khi đó sẽ rất khó để tinh hoàn tự di chuyển xuống và cần có phương pháp điều trị thích hợp.'
+
+MERGE (o1:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o2:cause {id: 'rối_loạn_nội_tiết_tố_cause'})
+MERGE (o1)-[r17:causedBy]->(o2)
+SET r17.text = 'Bệnh thường được phát hiện ở trẻ bị rối loạn nội tiết tố, dị tật bẩm sinh hay có sự bất thường về di truyền.'
+
+MERGE (o1:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o2:cause {id: 'dị_tật_bẩm_sinh_cause'})
+MERGE (o1)-[r18:causedBy]->(o2)
+SET r18.text = 'Bệnh thường được phát hiện ở trẻ bị rối loạn nội tiết tố, dị tật bẩm sinh hay có sự bất thường về di truyền.'
+
+MERGE (o1:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o2:cause {id: 'bất_thường_về_di_truyền_cause'})
+MERGE (o1)-[r19:causedBy]->(o2)
+SET r19.text = 'Bệnh thường được phát hiện ở trẻ bị rối loạn nội tiết tố, dị tật bẩm sinh hay có sự bất thường về di truyền.'
+
+MERGE (o1:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o2:cause {id: 'nguyên_nhân_không_xác_định_cause'})
+MERGE (o1)-[r20:causedBy]->(o2)
+SET r20.text = 'Một số trường hợp trẻ sinh ra với tinh hoàn ẩn nhưng lại không xác định được nguyên nhân.'
+
+MERGE (o1:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o2:symptom {id: 'kích_thường_nhỏ_hơn_bình_thường_symptom'})
+MERGE (o1)-[r21:isSymptomOf]->(o2)
+SET r21.text = 'Tinh hoàn ẩn có kích thường nhỏ hơn bình thường và nhu mô mềm nhão.'
+
+MERGE (o1:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o2:symptom {id: 'nhu_mô_mềm_nhão_symptom'})
+MERGE (o1)-[r22:isSymptomOf]->(o2)
+SET r22.text = 'Tinh hoàn ẩn có kích thường nhỏ hơn bình thường và nhu mô mềm nhão.'
+
+MERGE (o1:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o2:symptom {id: 'đường_kính_của_ống_sinh_tinh_nhỏ_hơn_symptom'})
+MERGE (o1)-[r23:isSymptomOf]->(o2)
+SET r23.text = 'Theo nghiên cứu được thực hiện ở Mỹ của Anne Suskind và cộng sự, những bé trai có tinh hoàn bị ẩn thường có đường kính của ống sinh tinh nhỏ hơn, mức độ xơ hóa tinh hoàn cao hơn.'
+
+MERGE (o1:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o2:symptom {id: 'mức_độ_xơ_hóa_tinh_hoàn_cao_hơn_symptom'})
+MERGE (o1)-[r24:isSymptomOf]->(o2)
+SET r24.text = 'Theo nghiên cứu được thực hiện ở Mỹ của Anne Suskind và cộng sự, những bé trai có tinh hoàn bị ẩn thường có đường kính của ống sinh tinh nhỏ hơn, mức độ xơ hóa tinh hoàn cao hơn.'
+
+MERGE (o1:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o2:organ {id: 'tinh_trùng_organ'})
+MERGE (o1)-[r25:affects]->(o2)
+SET r25.text = 'Sự thay đổi về mô học này có khả năng ảnh hưởng đến tinh trùng, gây vô sinh nam.'
+
+MERGE (o1:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o2:disease {id: 'vô_sinh_nam_disease'})
+MERGE (o1)-[r26:causedBy]->(o2)
+SET r26.text = 'Sự thay đổi về mô học này có khả năng ảnh hưởng đến tinh trùng, gây vô sinh nam.'
+
+MERGE (o1:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o2:symptom {id: 'khả_năng_có_con_symptom'})
+MERGE (o1)-[r27:isSymptomOf]->(o2)
+SET r27.text = 'Khi chỉ bị ẩn tinh hoàn một bên, người bệnh vẫn có khả năng có con.'
+
+MERGE (o1:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o2:disease {id: 'ung_thư_ở_tinh_hoàn_disease'})
+MERGE (o1)-[r28:causedBy]->(o2)
+SET r28.text = 'Tuy nhiên, người bệnh có thể phải đối mặt với nhiều rủi ro sức khỏe do nguy cơ bị ung thư ở tinh hoàn và một số nguy cơ khác.'
+
+MERGE (o1:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o2:disease {id: 'vô_sinh_disease'})
+MERGE (o1)-[r29:causedBy]->(o2)
+SET r29.text = 'Nếu nam giới bị tinh hoàn ẩn ở cả hai bên, nguy cơ vô sinh sẽ rất cao.'
+
+MERGE (o1:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o2:test {id: 'xét_nghiệm_dịch_tinh_đồ_test'})
+MERGE (o1)-[r30:diagnosedBy]->(o2)
+SET r30.text = 'Kết quả xét nghiệm dịch tinh đồ của họ thường không có tinh trùng.'
+
+MERGE (o1:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o2:symptom {id: 'không_có_tinh_trùng_symptom'})
+MERGE (o1)-[r31:isSymptomOf]->(o2)
+SET r31.text = 'Kết quả xét nghiệm dịch tinh đồ của họ thường không có tinh trùng.'
+
+MERGE (o1:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o2:symptom {id: 'không_thể_quan_hệ_tình_dục_symptom'})
+MERGE (o1)-[r32:isSymptomOf]->(o2)
+SET r32.text = 'Một số người bệnh còn không thể quan hệ tình dục được do nội tiết tố bị thiếu hụt trầm trọng.'
+
+MERGE (o1:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o2:cause {id: 'nội_tiết_tố_bị_thiếu_hụt_trầm_trọng_cause'})
+MERGE (o1)-[r33:causedBy]->(o2)
+SET r33.text = 'Một số người bệnh còn không thể quan hệ tình dục được do nội tiết tố bị thiếu hụt trầm trọng.'
+
+MERGE (o1:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o2:disease {id: 'dị_tật_bẩm_sinh_disease'})
+MERGE (o1)-[r34:associatedWith]->(o2)
+SET r34.text = 'Nam giới bị tinh hoàn ẩn thường phối hợp với những dị tật bẩm sinh khác.'
+
+MERGE (o1:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o2:disease {id: 'ung_thư_hóa_tinh_hoàn_disease'})
+MERGE (o1)-[r35:causedBy]->(o2)
+SET r35.text = 'Nếu không được điều trị kịp thời và đúng cách, người bị tinh hoàn ẩn có khả năng đối mặt với những nguy cơ sức khỏe như ung thư hóa tinh hoàn, xoắn tinh hoàn, chấn thương tinh hoàn hay tổn thương tâm sinh lý vì không có hoặc chỉ có một tinh hoàn dưới bìu.'
+
+MERGE (o1:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o2:disease {id: 'xoắn_tinh_hoàn_disease'})
+MERGE (o1)-[r36:causedBy]->(o2)
+SET r36.text = 'Nếu không được điều trị kịp thời và đúng cách, người bị tinh hoàn ẩn có khả năng đối mặt với những nguy cơ sức khỏe như ung thư hóa tinh hoàn, xoắn tinh hoàn, chấn thương tinh hoàn hay tổn thương tâm sinh lý vì không có hoặc chỉ có một tinh hoàn dưới bìu.'
+
+MERGE (o1:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o2:disease {id: 'chấn_thương_tinh_hoàn_disease'})
+MERGE (o1)-[r37:causedBy]->(o2)
+SET r37.text = 'Nếu không được điều trị kịp thời và đúng cách, người bị tinh hoàn ẩn có khả năng đối mặt với những nguy cơ sức khỏe như ung thư hóa tinh hoàn, xoắn tinh hoàn, chấn thương tinh hoàn hay tổn thương tâm sinh lý vì không có hoặc chỉ có một tinh hoàn dưới bìu.'
+
+MERGE (o1:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o2:disease {id: 'tổn_thương_tâm_sinh_lý_disease'})
+MERGE (o1)-[r38:causedBy]->(o2)
+SET r38.text = 'Nếu không được điều trị kịp thời và đúng cách, người bị tinh hoàn ẩn có khả năng đối mặt với những nguy cơ sức khỏe như ung thư hóa tinh hoàn, xoắn tinh hoàn, chấn thương tinh hoàn hay tổn thương tâm sinh lý vì không có hoặc chỉ có một tinh hoàn dưới bìu.'
+
+MERGE (o1:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o2:symptom {id: 'hai_dạng_symptom'})
+MERGE (o1)-[r39:isSymptomOf]->(o2)
+SET r39.text = 'Tinh hoàn ẩn có hai dạng, cụ thể:'
+
+MERGE (o1:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o2:symptom {id: 'sờ_được_tinh_hoàn_symptom'})
+MERGE (o1)-[r40:isSymptomOf]->(o2)
+SET r40.text = 'Dạng sờ được: Khi sờ, cảm thấy được tinh hoàn tại ống bẹn, tinh hoàn lò xo.'
+
+MERGE (o1:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o2:symptom {id: 'tinh_hoàn_lò_xo_symptom'})
+MERGE (o1)-[r41:isSymptomOf]->(o2)
+SET r41.text = 'Dạng sờ được: Khi sờ, cảm thấy được tinh hoàn tại ống bẹn, tinh hoàn lò xo.'
+
+MERGE (o1:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o2:symptom {id: 'không_sờ_được_tinh_hoàn_symptom'})
+MERGE (o1)-[r42:isSymptomOf]->(o2)
+SET r42.text = 'Dạng không sờ được: Tinh hoàn nằm tại lỗ bẹn sâu, trong ổ bụng.'
+
+MERGE (o1:organ {id: 'tinh_hoàn_organ'})
+MERGE (o2:organ {id: 'lỗ_bẹn_sâu_organ'})
+MERGE (o1)-[r43:locatedIn]->(o2)
+SET r43.text = 'Dạng không sờ được: Tinh hoàn nằm tại lỗ bẹn sâu, trong ổ bụng.'
+
+MERGE (o1:organ {id: 'tinh_hoàn_organ'})
+MERGE (o2:organ {id: 'ổ_bụng_organ'})
+MERGE (o1)-[r44:locatedIn]->(o2)
+SET r44.text = 'Dạng không sờ được: Tinh hoàn nằm tại lỗ bẹn sâu, trong ổ bụng.'
+
+MERGE (o1:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o2:cause {id: 'nguyên_nhân_thường_gặp_cause'})
+MERGE (o1)-[r45:causedBy]->(o2)
+SET r45.text = 'Các nguyên nhân gây ra tình trạng tinh hoàn ẩn thường gặp là:'
+
+MERGE (o1:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o2:cause {id: 'rối_loạn_trục_hạ_đồi_-_tuyến_yên_-_tuyến_sinh_dục_cause'})
+MERGE (o1)-[r46:causedBy]->(o2)
+SET r46.text = 'Rối loạn trục hạ đồi - tuyến yên - tuyến sinh dục: Tình trạng suy tuyến yên làm thiếu gonadotropin, gây ra tình trạng tinh hoàn ẩn và chứng dương vật nhỏ.'
+
+MERGE (o1:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o2:cause {id: 'suy_tuyến_yên_cause'})
+MERGE (o1)-[r47:causedBy]->(o2)
+SET r47.text = 'Rối loạn trục hạ đồi - tuyến yên - tuyến sinh dục: Tình trạng suy tuyến yên làm thiếu gonadotropin, gây ra tình trạng tinh hoàn ẩn và chứng dương vật nhỏ.'
+
+MERGE (o1:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o2:cause {id: 'thiếu_gonadotropin_cause'})
+MERGE (o1)-[r48:causedBy]->(o2)
+SET r48.text = 'Rối loạn trục hạ đồi - tuyến yên - tuyến sinh dục: Tình trạng suy tuyến yên làm thiếu gonadotropin, gây ra tình trạng tinh hoàn ẩn và chứng dương vật nhỏ.'
+
+MERGE (o1:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o2:disease {id: 'chứng_dương_vật_nhỏ_disease'})
+MERGE (o1)-[r49:associatedWith]->(o2)
+SET r49.text = 'Rối loạn trục hạ đồi - tuyến yên - tuyến sinh dục: Tình trạng suy tuyến yên làm thiếu gonadotropin, gây ra tình trạng tinh hoàn ẩn và chứng dương vật nhỏ.'
+
+MERGE (o1:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o2:cause {id: 'sai_lệch_tổng_hợp_testosterone_cause'})
+MERGE (o1)-[r50:causedBy]->(o2)
+SET r50.text = 'Sự sai lệch tổng hợp testosterone do thiếu men 17α-hydroxylase, 5α-reductase… Điều này khiến cho tinh hoàn không phát triển bình thường.'
+
+MERGE (o1:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o2:cause {id: 'thiếu_men_17α-hydroxylase_cause'})
+MERGE (o1)-[r51:causedBy]->(o2)
+SET r51.text = 'Sự sai lệch tổng hợp testosterone do thiếu men 17α-hydroxylase, 5α-reductase… Điều này khiến cho tinh hoàn không phát triển bình thường.'
+
+MERGE (o1:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o2:cause {id: 'thiếu_men_5α-reductase_cause'})
+MERGE (o1)-[r52:causedBy]->(o2)
+SET r52.text = 'Sự sai lệch tổng hợp testosterone do thiếu men 17α-hydroxylase, 5α-reductase… Điều này khiến cho tinh hoàn không phát triển bình thường.'
+
+MERGE (o1:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o2:symptom {id: 'tinh_hoàn_không_phát_triển_bình_thường_symptom'})
+MERGE (o1)-[r53:isSymptomOf]->(o2)
+SET r53.text = 'Sự sai lệch tổng hợp testosterone do thiếu men 17α-hydroxylase, 5α-reductase… Điều này khiến cho tinh hoàn không phát triển bình thường.'
+
+MERGE (o1:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o2:cause {id: 'hội_chứng_giảm_khả_năng_cảm_nhận_của_những_thụ_thể_androgen_cause'})
+MERGE (o1)-[r54:causedBy]->(o2)
+SET r54.text = 'Hội chứng giảm khả năng cảm nhận của những thụ thể androgen: Vì giảm khả năng cảm nhận của những thụ thể androgen nên dù là bé trai nhưng sự phát triển của chức năng sinh dục nam sẽ bị ảnh hưởng, trong đó bao gồm cả sự di chuyển của tinh hoàn.'
+
+MERGE (o1:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o2:symptom {id: 'sự_di_chuyển_của_tinh_hoàn_symptom'})
+MERGE (o1)-[r55:isSymptomOf]->(o2)
+SET r55.text = 'Hội chứng giảm khả năng cảm nhận của những thụ thể androgen: Vì giảm khả năng cảm nhận của những thụ thể androgen nên dù là bé trai nhưng sự phát triển của chức năng sinh dục nam sẽ bị ảnh hưởng, trong đó bao gồm cả sự di chuyển của tinh hoàn.'
+
+MERGE (o1:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o2:cause {id: 'estrogen_ảnh_hưởng_tới_sự_di_chuyển_của_tinh_hoàn_xuống_bìu_cause'})
+MERGE (o1)-[r56:causedBy]->(o2)
+SET r56.text = 'Estrogen ảnh hưởng tới sự di chuyển của tinh hoàn xuống bìu: Thai phụ mang thai nhi nam nếu sử dụng diethylstilbestrol nhiều hoặc thuốc kháng androgen, thai nhi có nguy cơ cao mắc bệnh.'
+
+MERGE (o1:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o2:cause {id: 'sử_dụng_diethylstilbestrol_cause'})
+MERGE (o1)-[r57:causedBy]->(o2)
+SET r57.text = 'Estrogen ảnh hưởng tới sự di chuyển của tinh hoàn xuống bìu: Thai phụ mang thai nhi nam nếu sử dụng diethylstilbestrol nhiều hoặc thuốc kháng androgen, thai nhi có nguy cơ cao mắc bệnh.'
+
+MERGE (o1:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o2:cause {id: 'thuốc_kháng_androgen_cause'})
+MERGE (o1)-[r58:causedBy]->(o2)
+SET r58.text = 'Estrogen ảnh hưởng tới sự di chuyển của tinh hoàn xuống bìu: Thai phụ mang thai nhi nam nếu sử dụng diethylstilbestrol nhiều hoặc thuốc kháng androgen, thai nhi có nguy cơ cao mắc bệnh.'
+
+MERGE (o1:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o2:cause {id: 'sự_bất_thường_trong_quá_trình_phát_triển_của_dây_chằng_tinh_hoàn-bìu_cause'})
+MERGE (o1)-[r59:causedBy]->(o2)
+SET r59.text = 'Sự bất thường trong quá trình phát triển của dây chằng tinh hoàn-bìu: Tình trạng này khiến tinh hoàn nằm lơ lửng trên đường di chuyển, không xuống đến bìu.'
+
+MERGE (o1:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o2:symptom {id: 'tinh_hoàn_nằm_lơ_lửng_trên_đường_di_chuyển_symptom'})
+MERGE (o1)-[r60:isSymptomOf]->(o2)
+SET r60.text = 'Sự bất thường trong quá trình phát triển của dây chằng tinh hoàn-bìu: Tình trạng này khiến tinh hoàn nằm lơ lửng trên đường di chuyển, không xuống đến bìu.'
+
+MERGE (o1:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o2:symptom {id: 'tinh_hoàn_không_xuống_đến_bìu_symptom'})
+MERGE (o1)-[r61:isSymptomOf]->(o2)
+SET r61.text = 'Sự bất thường trong quá trình phát triển của dây chằng tinh hoàn-bìu: Tình trạng này khiến tinh hoàn nằm lơ lửng trên đường di chuyển, không xuống đến bìu.'
+
+MERGE (o1:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o2:cause {id: 'yếu_tố_cơ_học_gây_cản_trở_trong_quá_trình_di_chuyển_của_tinh_hoàn_cause'})
+MERGE (o1)-[r62:causedBy]->(o2)
+SET r62.text = 'Những yếu tố cơ học gây cản trở trong quá trình di chuyển của tinh hoàn như cuống mạch tinh hoàn ngắn, xơ hóa vùng ống bẹn&#8230;'
+
+MERGE (o1:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o2:cause {id: 'cuống_mạch_tinh_hoàn_ngắn_cause'})
+MERGE (o1)-[r63:causedBy]->(o2)
+SET r63.text = 'Những yếu tố cơ học gây cản trở trong quá trình di chuyển của tinh hoàn như cuống mạch tinh hoàn ngắn, xơ hóa vùng ống bẹn&#8230;'
+
+MERGE (o1:disease {id: 'tình_trạng_tinh_hoàn_ẩn_disease'})
+MERGE (o2:disease {id: 'dạng_sờ_được_disease'})
+MERGE (o1)-[r64:relatedTo]->(o2)
+SET r64.text = 'Tình trạng tinh hoàn ẩn được phân thành hai dạng: Dạng sờ được và dạng không sờ được.'
+
+MERGE (o1:disease {id: 'tình_trạng_tinh_hoàn_ẩn_disease'})
+MERGE (o2:disease {id: 'dạng_không_sờ_được_disease'})
+MERGE (o1)-[r65:relatedTo]->(o2)
+SET r65.text = 'Tình trạng tinh hoàn ẩn được phân thành hai dạng: Dạng sờ được và dạng không sờ được.'
+
+MERGE (o1:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o2:symptom {id: 'không_thể_sờ_thấy_symptom'})
+MERGE (o1)-[r66:relatedTo]->(o2)
+SET r66.text = 'Khoảng 80% tinh hoàn ẩn không thể sờ thấy được.'
+
+MERGE (o1:symptom {id: 'túi_bìu_không_cân_đối_symptom'})
+MERGE (o2:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o1)-[r67:isSymptomOf]->(o2)
+SET r67.text = 'Thông thường, có thể phát hiện khi quan sát thấy túi bìu ở người bệnh không cân đối.'
+
+MERGE (o1:symptom {id: 'bị_nhỏ_hay_xẹp_lép_symptom'})
+MERGE (o2:disease {id: 'tinh_hoàn_ẩn_một_bên_disease'})
+MERGE (o1)-[r68:isSymptomOf]->(o2)
+SET r68.text = 'Chẳng hạn như một bên bình thường, trong khi bên còn lại bị nhỏ hay xẹp lép, nếu trường hợp bị ẩn một bên.'
+
+MERGE (o1:symptom {id: 'túi_bìu_nhỏ_và_xẹp_symptom'})
+MERGE (o2:disease {id: 'tinh_hoàn_ẩn_cả_bên_disease'})
+MERGE (o1)-[r69:isSymptomOf]->(o2)
+SET r69.text = 'Trường hợp bị ẩn cả bên, sẽ thấy túi bìu nhỏ và xẹp.'
+
+MERGE (o1:symptom {id: 'trong_bìu_không_có_tinh_hoàn_symptom'})
+MERGE (o2:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o1)-[r70:isSymptomOf]->(o2)
+SET r70.text = 'Trong bìu không có tinh hoàn hay sờ thấy tại ống bẹn có khối u nổi lên.'
+
+MERGE (o1:symptom {id: 'sờ_thấy_tại_ống_bẹn_có_khối_u_nổi_lên_symptom'})
+MERGE (o2:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o1)-[r71:isSymptomOf]->(o2)
+SET r71.text = 'Trong bìu không có tinh hoàn hay sờ thấy tại ống bẹn có khối u nổi lên.'
+
+MERGE (o1:symptom {id: 'bìu_kém_phát_triển_symptom'})
+MERGE (o2:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o1)-[r72:isSymptomOf]->(o2)
+SET r72.text = 'Bìu kém phát triển: Nếu tinh hoàn ẩn càng cao, bìu sẽ càng kém phát triển.'
+
+MERGE (o1:symptom {id: 'chỉ_sờ_thấy_một_bên_tinh_hoàn_symptom'})
+MERGE (o2:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o1)-[r73:isSymptomOf]->(o2)
+SET r73.text = 'Chỉ sờ thấy một bên tinh hoàn.'
+
+MERGE (o1:symptom {id: 'tinh_hoàn_co_rút_symptom'})
+MERGE (o2:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o1)-[r74:isSymptomOf]->(o2)
+SET r74.text = 'Tinh hoàn co rút: Tinh hoàn di chuyển lên xuống giữa bìu và bẹn, khi thăm khám có thể dễ dàng xuống bìu trở lại.'
+
+MERGE (o1:symptom {id: 'tinh_hoàn_di_chuyển_lên_xuống_giữa_bìu_và_bẹn_symptom'})
+MERGE (o2:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o1)-[r75:isSymptomOf]->(o2)
+SET r75.text = 'Tinh hoàn di chuyển lên xuống giữa bìu và bẹn, khi thăm khám có thể dễ dàng xuống bìu trở lại.'
+
+MERGE (o1:symptom {id: 'tinh_hoàn_di_chuyển_lên_hoặc_mắc_phải_symptom'})
+MERGE (o2:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o1)-[r76:isSymptomOf]->(o2)
+SET r76.text = 'Tinh hoàn di chuyển lên hoặc mắc phải: Tinh hoàn quay trở lại bẹn, không thể sử dụng tay để xuống bìu lại được.'
+
+MERGE (o1:symptom {id: 'tinh_hoàn_quay_trở_lại_bẹn_symptom'})
+MERGE (o2:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o1)-[r77:isSymptomOf]->(o2)
+SET r77.text = 'Tinh hoàn quay trở lại bẹn, không thể sử dụng tay để xuống bìu lại được.'
+
+MERGE (o1:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o2:organ {id: 'bụng_organ'})
+MERGE (o1)-[r78:locatedIn]->(o2)
+SET r78.text = 'Tinh hoàn ẩn: Tinh hoàn không nằm trong bìu mà nằm dọc theo đường đi của tinh hoàn như trong bụng, lỗ bẹn sâu, ống bẹn và lỗ bẹn nông.'
+
+MERGE (o1:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o2:organ {id: 'lỗ_bẹn_sâu_organ'})
+MERGE (o1)-[r79:locatedIn]->(o2)
+SET r79.text = 'Tinh hoàn ẩn: Tinh hoàn không nằm trong bìu mà nằm dọc theo đường đi của tinh hoàn như trong bụng, lỗ bẹn sâu, ống bẹn và lỗ bẹn nông.'
+
+MERGE (o1:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o2:organ {id: 'ống_bẹn_organ'})
+MERGE (o1)-[r80:locatedIn]->(o2)
+SET r80.text = 'Tinh hoàn ẩn: Tinh hoàn không nằm trong bìu mà nằm dọc theo đường đi của tinh hoàn như trong bụng, lỗ bẹn sâu, ống bẹn và lỗ bẹn nông.'
+
+MERGE (o1:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o2:organ {id: 'lỗ_bẹn_nông_organ'})
+MERGE (o1)-[r81:locatedIn]->(o2)
+SET r81.text = 'Tinh hoàn ẩn: Tinh hoàn không nằm trong bìu mà nằm dọc theo đường đi của tinh hoàn như trong bụng, lỗ bẹn sâu, ống bẹn và lỗ bẹn nông.'
+
+MERGE (o1:disease {id: 'tinh_hoàn_lạc_chỗ_disease'})
+MERGE (o2:organ {id: 'tầng_sinh_môn_organ'})
+MERGE (o1)-[r82:locatedIn]->(o2)
+SET r82.text = 'Tinh hoàn lạc chỗ: Tinh hoàn nằm ở vị trí khác (không nằm trên đường di chuyển của tinh hoàn từ bụng xuống bìu) như: tầng sinh môn, cân đùi&#8230;'
+
+MERGE (o1:disease {id: 'tinh_hoàn_lạc_chỗ_disease'})
+MERGE (o2:organ {id: 'cân_đùi_organ'})
+MERGE (o1)-[r83:locatedIn]->(o2)
+SET r83.text = 'Tinh hoàn lạc chỗ: Tinh hoàn nằm ở vị trí khác (không nằm trên đường di chuyển của tinh hoàn từ bụng xuống bìu) như: tầng sinh môn, cân đùi&#8230;'
+
+MERGE (o1:cause {id: 'cân_nặng_quá_thấp_cause'})
+MERGE (o2:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o1)-[r84:causedBy]->(o2)
+SET r84.text = 'Trẻ mới sinh có cân nặng quá thấp (dưới 0,9kg) có nguy cơ mắc bệnh rất cao.'
+
+MERGE (o1:cause {id: 'sinh_non_cause'})
+MERGE (o2:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o1)-[r85:causedBy]->(o2)
+SET r85.text = 'Tinh hoàn ẩn xảy ra ở trẻ sinh đủ tháng khoảng 3% và khoảng 30% đối với trẻ sinh non.'
+
+MERGE (o1:cause {id: 'tiền_sử_gia_đình_có_người_bị_bệnh_này_cause'})
+MERGE (o2:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o1)-[r86:causedBy]->(o2)
+SET r86.text = 'Tiền sử gia đình có người bị bệnh này hay những vấn đề về phát triển hệ sinh dục khác.'
+
+MERGE (o1:cause {id: 'vấn_đề_về_phát_triển_hệ_sinh_dục_cause'})
+MERGE (o2:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o1)-[r87:causedBy]->(o2)
+SET r87.text = 'Tiền sử gia đình có người bị bệnh này hay những vấn đề về phát triển hệ sinh dục khác.'
+
+MERGE (o1:cause {id: 'hội_chứng_down_cause'})
+MERGE (o2:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o1)-[r88:causedBy]->(o2)
+SET r88.text = 'Mắc các bệnh lý thai nhi ngăn cản tăng trưởng như hội chứng Down hay khiếm khuyết thành bụng.'
+
+MERGE (o1:cause {id: 'khiếm_khuyết_thành_bụng_cause'})
+MERGE (o2:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o1)-[r89:causedBy]->(o2)
+SET r89.text = 'Mắc các bệnh lý thai nhi ngăn cản tăng trưởng như hội chứng Down hay khiếm khuyết thành bụng.'
+
+MERGE (o1:lifestyle {id: 'lạm_dụng_rượu_bia_lifestyle'})
+MERGE (o2:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o1)-[r90:causedBy]->(o2)
+SET r90.text = 'Thai phụ lạm dụng rượu bia, thuốc lá hay hít phải khói thuốc, bị béo phì, tiểu đường loại 1, loại 2 hay tiểu đường thai kỳ… là những nguy cơ khiến tình trạng của bệnh có khả năng xuất hiện ở trẻ sơ sinh.'
+
+MERGE (o1:lifestyle {id: 'thuốc_lá_lifestyle'})
+MERGE (o2:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o1)-[r91:causedBy]->(o2)
+SET r91.text = 'Thai phụ lạm dụng rượu bia, thuốc lá hay hít phải khói thuốc, bị béo phì, tiểu đường loại 1, loại 2 hay tiểu đường thai kỳ… là những nguy cơ khiến tình trạng của bệnh có khả năng xuất hiện ở trẻ sơ sinh.'
+
+MERGE (o1:lifestyle {id: 'hít_phải_khói_thuốc_lifestyle'})
+MERGE (o2:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o1)-[r92:causedBy]->(o2)
+SET r92.text = 'Thai phụ lạm dụng rượu bia, thuốc lá hay hít phải khói thuốc, bị béo phì, tiểu đường loại 1, loại 2 hay tiểu đường thai kỳ… là những nguy cơ khiến tình trạng của bệnh có khả năng xuất hiện ở trẻ sơ sinh.'
+
+MERGE (o1:lifestyle {id: 'béo_phì_lifestyle'})
+MERGE (o2:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o1)-[r93:causedBy]->(o2)
+SET r93.text = 'Thai phụ lạm dụng rượu bia, thuốc lá hay hít phải khói thuốc, bị béo phì, tiểu đường loại 1, loại 2 hay tiểu đường thai kỳ… là những nguy cơ khiến tình trạng của bệnh có khả năng xuất hiện ở trẻ sơ sinh.'
+
+MERGE (o1:disease {id: 'tiểu_đường_loại_1_disease'})
+MERGE (o2:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o1)-[r94:causedBy]->(o2)
+SET r94.text = 'Thai phụ lạm dụng rượu bia, thuốc lá hay hít phải khói thuốc, bị béo phì, tiểu đường loại 1, loại 2 hay tiểu đường thai kỳ… là những nguy cơ khiến tình trạng của bệnh có khả năng xuất hiện ở trẻ sơ sinh.'
+
+MERGE (o1:disease {id: 'tiểu_đường_loại_2_disease'})
+MERGE (o2:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o1)-[r95:causedBy]->(o2)
+SET r95.text = 'Thai phụ lạm dụng rượu bia, thuốc lá hay hít phải khói thuốc, bị béo phì, tiểu đường loại 1, loại 2 hay tiểu đường thai kỳ… là những nguy cơ khiến tình trạng của bệnh có khả năng xuất hiện ở trẻ sơ sinh.'
+
+MERGE (o1:disease {id: 'tiểu_đường_thai_kỳ_disease'})
+MERGE (o2:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o1)-[r96:causedBy]->(o2)
+SET r96.text = 'Thai phụ lạm dụng rượu bia, thuốc lá hay hít phải khói thuốc, bị béo phì, tiểu đường loại 1, loại 2 hay tiểu đường thai kỳ… là những nguy cơ khiến tình trạng của bệnh có khả năng xuất hiện ở trẻ sơ sinh.'
+
+MERGE (o1:lifestyle {id: 'tiếp_xúc_với_thuốc_trừ_sâu_lifestyle'})
+MERGE (o2:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o1)-[r97:causedBy]->(o2)
+SET r97.text = 'Bố mẹ thường xuyên tiếp xúc với thuốc trừ sâu.'
+
+MERGE (o1:symptom {id: 'nhiệt_độ_bìu_symptom'})
+MERGE (o2:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o1)-[r98:relatedTo]->(o2)
+SET r98.text = 'Nhiệt độ bình thường ở bìu là thấp hơn so với cơ thể.'
+
+MERGE (o1:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o2:organ {id: 'phát_triển_tinh_hoàn_organ'})
+MERGE (o1)-[r99:affects]->(o2)
+SET r99.text = 'Khi bị ẩn nằm tại vùng bụng, tinh hoàn chịu nhiệt độ cao của thể sẽ rất khó phát triển và giảm số lượng tế bào mầm trong tinh trùng.'
+
+MERGE (o1:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o2:organ {id: 'số_lượng_tế_bào_mầm_trong_tinh_trùng_organ'})
+MERGE (o1)-[r100:affects]->(o2)
+SET r100.text = 'Khi bị ẩn nằm tại vùng bụng, tinh hoàn chịu nhiệt độ cao của thể sẽ rất khó phát triển và giảm số lượng tế bào mầm trong tinh trùng.'
+
+MERGE (o1:disease {id: 'tinh_hoàn_ẩn_một_bên_disease'})
+MERGE (o2:symptom {id: 'số_lượng_tinh_trùng_bình_thường_symptom'})
+MERGE (o1)-[r101:relatedTo]->(o2)
+SET r101.text = 'Nếu bé trai bị tinh hoàn ẩn một bên, vị trí ở ống bẹn, trẻ có thể có số lượng tinh trùng bình thường.'
+
+MERGE (o1:disease {id: 'tinh_hoàn_ẩn_cả_hai_tại_ống_bẹn_disease'})
+MERGE (o2:disease {id: 'vô_sinh_disease'})
+MERGE (o1)-[r102:causedBy]->(o2)
+SET r102.text = 'Trong khi, bé trai bị tinh hoàn ẩn cả hai tại ống bẹn, có thể gây vô sinh.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_treatment'})
+MERGE (o2:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o1)-[r103:treatedBy]->(o2)
+SET r103.text = 'Người bệnh sau 5 tuổi nếu không được phẫu thuật, tỷ lệ vô sinh lên đến 75%.'
+
+MERGE (o1:disease {id: 'vô_sinh_disease'})
+MERGE (o2:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o1)-[r104:causedBy]->(o2)
+SET r104.text = 'Người bệnh sau 5 tuổi nếu không được phẫu thuật, tỷ lệ vô sinh lên đến 75%.'
+
+MERGE (o1:disease {id: 'xoắn_tinh_hoàn_disease'})
+MERGE (o2:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o1)-[r105:causedBy]->(o2)
+SET r105.text = 'Xoắn tinh hoàn: Vì không được cố định tại bìu tốt, tinh hoàn có thể bị xoắn.'
+
+MERGE (o1:symptom {id: 'sưng_đau_vùng_bẹn_đột_ngột_symptom'})
+MERGE (o2:disease {id: 'xoắn_tinh_hoàn_disease'})
+MERGE (o1)-[r106:isSymptomOf]->(o2)
+SET r106.text = 'Người bệnh có triệu chứng sưng đau vùng bẹn đột ngột tại bên tinh hoàn ẩn.'
+
+MERGE (o1:symptom {id: 'da_ở_bìu_bị_sẫm_đỏ_symptom'})
+MERGE (o2:disease {id: 'xoắn_tinh_hoàn_disease'})
+MERGE (o1)-[r107:isSymptomOf]->(o2)
+SET r107.text = 'Da ở bìu bị sẫm đỏ hay nhạt, mất nếp nhăn.'
+
+MERGE (o1:symptom {id: 'da_ở_bìu_bị_nhạt_symptom'})
+MERGE (o2:disease {id: 'xoắn_tinh_hoàn_disease'})
+MERGE (o1)-[r108:isSymptomOf]->(o2)
+SET r108.text = 'Da ở bìu bị sẫm đỏ hay nhạt, mất nếp nhăn.'
+
+MERGE (o1:symptom {id: 'da_ở_bìu_mất_nếp_nhăn_symptom'})
+MERGE (o2:disease {id: 'xoắn_tinh_hoàn_disease'})
+MERGE (o1)-[r109:isSymptomOf]->(o2)
+SET r109.text = 'Da ở bìu bị sẫm đỏ hay nhạt, mất nếp nhăn.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_cấp_cứu_treatment'})
+MERGE (o2:disease {id: 'xoắn_tinh_hoàn_disease'})
+MERGE (o1)-[r110:treatedBy]->(o2)
+SET r110.text = 'Khi không được thăm khám và phẫu thuật cấp cứu trong 3 giờ, tinh hoàn có nguy cơ bị hoại tử rất cao.'
+
+MERGE (o1:disease {id: 'hoại_tử_tinh_hoàn_disease'})
+MERGE (o2:disease {id: 'xoắn_tinh_hoàn_disease'})
+MERGE (o1)-[r111:causedBy]->(o2)
+SET r111.text = 'Khi không được thăm khám và phẫu thuật cấp cứu trong 3 giờ, tinh hoàn có nguy cơ bị hoại tử rất cao.'
+
+MERGE (o1:disease {id: 'u_ác_tính_disease'})
+MERGE (o2:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o1)-[r112:causedBy]->(o2)
+SET r112.text = 'U ác tính: Khi tinh hoàn ẩn trong ổ bụng bị phát hiện muộn, có thể phát triển thành u ác tính.'
+
+MERGE (o1:disease {id: 'chấn_thương_tinh_hoàn_disease'})
+MERGE (o2:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o1)-[r113:causedBy]->(o2)
+SET r113.text = 'Chấn thương tinh hoàn: Khi không nằm trong da bìu, tinh hoàn có khả năng bị tổn thương do áp lực từ xương mu.'
+
+MERGE (o1:test {id: 'siêu_âm_bụng_hoặc_nội_soi_ổ_bụng_test'})
+MERGE (o2:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o1)-[r114:diagnosedBy]->(o2)
+SET r114.text = 'Siêu âm bụng hoặc nội soi ổ bụng: Đây là những phương pháp thăm dò từ thấp tới cao để xác định vị trí chính xác của tinh hoàn ẩn.'
+
+MERGE (o1:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o2:organ {id: 'bụng_organ'})
+MERGE (o1)-[r115:locatedIn]->(o2)
+SET r115.text = 'Siêu âm bụng hoặc nội soi ổ bụng: Đây là những phương pháp thăm dò từ thấp tới cao để xác định vị trí chính xác của tinh hoàn ẩn.'
+
+MERGE (o1:disease {id: 'vôi_hóa_nhu_mô_tinh_hoàn_disease'})
+MERGE (o2:organ {id: 'tinh_hoàn_organ'})
+MERGE (o1)-[r116:relatedTo]->(o2)
+SET r116.text = 'Ngoài ra, các phương pháp này còn giúp bác sĩ phát hiện sự bất thường khác của tinh hoàn như vôi hóa nhu mô tinh hoàn, u tinh hoàn…'
+
+MERGE (o1:disease {id: 'u_tinh_hoàn_disease'})
+MERGE (o2:organ {id: 'tinh_hoàn_organ'})
+MERGE (o1)-[r117:relatedTo]->(o2)
+SET r117.text = 'Ngoài ra, các phương pháp này còn giúp bác sĩ phát hiện sự bất thường khác của tinh hoàn như vôi hóa nhu mô tinh hoàn, u tinh hoàn…'
+
+MERGE (o1:test {id: 'xét_nghiệm_nhiễm_sắc_thể_test'})
+MERGE (o2:disease {id: 'giới_tính_không_xác_định_disease'})
+MERGE (o1)-[r118:diagnosedBy]->(o2)
+SET r118.text = 'Xét nghiệm nhiễm sắc thể: Xét nghiệm này tùy trường hợp, nhằm phát hiện những trường hợp giới tính không xác định.'
+
+MERGE (o1:test {id: 'αfp__β-hcg__ldh_test'})
+MERGE (o2:disease {id: 'u_ác_tính_disease'})
+MERGE (o1)-[r119:diagnosedBy]->(o2)
+SET r119.text = 'Những xét nghiệm chỉ điểm khối u: αFP, β-HCG, LDH nên được tiến hành để phát hiện trường hợp u ác tính.'
+
+MERGE (o1:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o2:treatment {id: 'phẫu_thuật_đưa_tinh_hoàn_xuống_bìu_treatment'})
+MERGE (o1)-[r120:treatedBy]->(o2)
+SET r120.text = 'Tình trạng tinh hoàn ẩn cần được phát hiện sớm và điều trị cho trẻ trước 18 tháng tuổi.'

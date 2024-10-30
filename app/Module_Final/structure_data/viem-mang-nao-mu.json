@@ -1,0 +1,1738 @@
+[
+    {
+        "text": "Viêm màng não mủ là bệnh vô cùng nguy hiểm, bệnh thường gặp ở trẻ em, đặc biệt ở lứa tuổi dưới 5 tuổi.",
+        "head": "Viêm màng não mủ",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Nguy hiểm",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Viêm màng não mủ là bệnh vô cùng nguy hiểm, bệnh thường gặp ở trẻ em, đặc biệt ở lứa tuổi dưới 5 tuổi.",
+        "head": "Viêm màng não mủ",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Trẻ em",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Viêm màng não mủ là bệnh vô cùng nguy hiểm, bệnh thường gặp ở trẻ em, đặc biệt ở lứa tuổi dưới 5 tuổi.",
+        "head": "Viêm màng não mủ",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Lứa tuổi dưới 5 tuổi",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Ngay cả khi được cấp cứu kịp thời và điều trị tích cực bệnh vẫn có thể để lại di chứng nặng nề về thần kinh, vận động thậm chí là tử vong.",
+        "head": "Cấp cứu kịp thời",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ngay cả khi được cấp cứu kịp thời và điều trị tích cực bệnh vẫn có thể để lại di chứng nặng nề về thần kinh, vận động thậm chí là tử vong.",
+        "head": "Điều trị tích cực",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ngay cả khi được cấp cứu kịp thời và điều trị tích cực bệnh vẫn có thể để lại di chứng nặng nề về thần kinh, vận động thậm chí là tử vong.",
+        "head": "Di chứng nặng nề về thần kinh",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ngay cả khi được cấp cứu kịp thời và điều trị tích cực bệnh vẫn có thể để lại di chứng nặng nề về thần kinh, vận động thậm chí là tử vong.",
+        "head": "Di chứng nặng nề về vận động",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ngay cả khi được cấp cứu kịp thời và điều trị tích cực bệnh vẫn có thể để lại di chứng nặng nề về thần kinh, vận động thậm chí là tử vong.",
+        "head": "Tử vong",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Viêm màng não mủ là tình trạng viêm của màng não khi có sự xâm lấn và tăng sinh của các yếu tố gây bệnh trong dịch não tủy.",
+        "head": "Viêm màng não mủ",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Màng não",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Viêm màng não mủ là tình trạng viêm của màng não khi có sự xâm lấn và tăng sinh của các yếu tố gây bệnh trong dịch não tủy.",
+        "head": "Viêm màng não mủ",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Sự xâm lấn và tăng sinh của các yếu tố gây bệnh trong dịch não tủy",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Đây là một trong những bệnh thường gặp ở trẻ dưới 5 tuổi với tỷ lệ tử vong cao.",
+        "head": "Viêm màng não mủ",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Trẻ dưới 5 tuổi",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Đây là một trong những bệnh thường gặp ở trẻ dưới 5 tuổi với tỷ lệ tử vong cao.",
+        "head": "Viêm màng não mủ",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Tỷ lệ tử vong cao",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Nếu may mắn sống sốt, trẻ có thể chịu những di chứng nặng nề về thần kinh và vận động.",
+        "head": "Sống sốt",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu may mắn sống sốt, trẻ có thể chịu những di chứng nặng nề về thần kinh và vận động.",
+        "head": "Di chứng nặng nề về thần kinh",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu may mắn sống sốt, trẻ có thể chịu những di chứng nặng nề về thần kinh và vận động.",
+        "head": "Di chứng nặng nề về vận động",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Có 3 loại vi khuẩn gây bệnh viêm màng não mủ phổ biến nhất là H. influenza (Haemophilus influenza); phế cầu (Streptococcus pneumonia); não mô cầu (Neisseria meningitidis).",
+        "head": "H. influenza (Haemophilus influenza)",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Có 3 loại vi khuẩn gây bệnh viêm màng não mủ phổ biến nhất là H. influenza (Haemophilus influenza); phế cầu (Streptococcus pneumonia); não mô cầu (Neisseria meningitidis).",
+        "head": "Phế cầu (Streptococcus pneumonia)",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Có 3 loại vi khuẩn gây bệnh viêm màng não mủ phổ biến nhất là H. influenza (Haemophilus influenza); phế cầu (Streptococcus pneumonia); não mô cầu (Neisseria meningitidis).",
+        "head": "Não mô cầu (Neisseria meningitidis)",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đối với trẻ sơ sinh, vi khuẩn gây bệnh viêm màng não mủ phổ biến là Escherichia coli, Listeria monocytogenes, B.streptococcus.",
+        "head": "Escherichia coli",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đối với trẻ sơ sinh, vi khuẩn gây bệnh viêm màng não mủ phổ biến là Escherichia coli, Listeria monocytogenes, B.streptococcus.",
+        "head": "Listeria monocytogenes",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đối với trẻ sơ sinh, vi khuẩn gây bệnh viêm màng não mủ phổ biến là Escherichia coli, Listeria monocytogenes, B.streptococcus.",
+        "head": "B.streptococcus",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ngoài ra, nhiều loại vi khuẩn và nấm khác cũng có thể là căn nguyên dẫn đến bệnh viêm màng não mủ nhưng ít gặp hơn và thường xảy ra trên những người bệnh có tình trạng suy giảm miễn dịch, nhiễm khuẩn huyết… (1)",
+        "head": "Vi khuẩn và nấm",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ngoài ra, nhiều loại vi khuẩn và nấm khác cũng có thể là căn nguyên dẫn đến bệnh viêm màng não mủ nhưng ít gặp hơn và thường xảy ra trên những người bệnh có tình trạng suy giảm miễn dịch, nhiễm khuẩn huyết… (1)",
+        "head": "Suy giảm miễn dịch",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ngoài ra, nhiều loại vi khuẩn và nấm khác cũng có thể là căn nguyên dẫn đến bệnh viêm màng não mủ nhưng ít gặp hơn và thường xảy ra trên những người bệnh có tình trạng suy giảm miễn dịch, nhiễm khuẩn huyết… (1)",
+        "head": "Nhiễm khuẩn huyết",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Haemophilus influenzae type B (Hib) nguyên nhân hàng đầu gây viêm màng não cấp ở trẻ.",
+        "head": "Haemophilus influenzae type B (Hib)",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Viêm màng não cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bệnh nhân bị viêm màng não mủ có triệu chứng lâm sàng thường là sốt, li bì, mệt mỏi, trẻ bỏ ăn, quấy khóc và có thể kèm theo viêm long đường hô hấp trên, với những bệnh nhi lớn trên 18 tháng có thể có dấu hiệu hiệu cứng cổ.",
+        "head": "Sốt",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bệnh nhân bị viêm màng não mủ có triệu chứng lâm sàng thường là sốt, li bì, mệt mỏi, trẻ bỏ ăn, quấy khóc và có thể kèm theo viêm long đường hô hấp trên, với những bệnh nhi lớn trên 18 tháng có thể có dấu hiệu hiệu cứng cổ.",
+        "head": "Li bì",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bệnh nhân bị viêm màng não mủ có triệu chứng lâm sàng thường là sốt, li bì, mệt mỏi, trẻ bỏ ăn, quấy khóc và có thể kèm theo viêm long đường hô hấp trên, với những bệnh nhi lớn trên 18 tháng có thể có dấu hiệu hiệu cứng cổ.",
+        "head": "Mệt mỏi",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bệnh nhân bị viêm màng não mủ có triệu chứng lâm sàng thường là sốt, li bì, mệt mỏi, trẻ bỏ ăn, quấy khóc và có thể kèm theo viêm long đường hô hấp trên, với những bệnh nhi lớn trên 18 tháng có thể có dấu hiệu hiệu cứng cổ.",
+        "head": "Trẻ bỏ ăn",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bệnh nhân bị viêm màng não mủ có triệu chứng lâm sàng thường là sốt, li bì, mệt mỏi, trẻ bỏ ăn, quấy khóc và có thể kèm theo viêm long đường hô hấp trên, với những bệnh nhi lớn trên 18 tháng có thể có dấu hiệu hiệu cứng cổ.",
+        "head": "Quấy khóc",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bệnh nhân bị viêm màng não mủ có triệu chứng lâm sàng thường là sốt, li bì, mệt mỏi, trẻ bỏ ăn, quấy khóc và có thể kèm theo viêm long đường hô hấp trên, với những bệnh nhi lớn trên 18 tháng có thể có dấu hiệu hiệu cứng cổ.",
+        "head": "Viêm long đường hô hấp trên",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bệnh nhân bị viêm màng não mủ có triệu chứng lâm sàng thường là sốt, li bì, mệt mỏi, trẻ bỏ ăn, quấy khóc và có thể kèm theo viêm long đường hô hấp trên, với những bệnh nhi lớn trên 18 tháng có thể có dấu hiệu hiệu cứng cổ.",
+        "head": "Cứng cổ",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Với những trẻ sơ sinh và trẻ dưới 3 tháng tuổi bệnh viêm màng não mủ thường xảy ra ở những trẻ sinh non, bị nhiễm khuẩn ối và ngạt sau đẻ.",
+        "head": "Viêm màng não mủ",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Trẻ sơ sinh",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Với những trẻ sơ sinh và trẻ dưới 3 tháng tuổi bệnh viêm màng não mủ thường xảy ra ở những trẻ sinh non, bị nhiễm khuẩn ối và ngạt sau đẻ.",
+        "head": "Viêm màng não mủ",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Trẻ dưới 3 tháng tuổi",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Với những trẻ sơ sinh và trẻ dưới 3 tháng tuổi bệnh viêm màng não mủ thường xảy ra ở những trẻ sinh non, bị nhiễm khuẩn ối và ngạt sau đẻ.",
+        "head": "Sinh non",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Với những trẻ sơ sinh và trẻ dưới 3 tháng tuổi bệnh viêm màng não mủ thường xảy ra ở những trẻ sinh non, bị nhiễm khuẩn ối và ngạt sau đẻ.",
+        "head": "Nhiễm khuẩn ối",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Với những trẻ sơ sinh và trẻ dưới 3 tháng tuổi bệnh viêm màng não mủ thường xảy ra ở những trẻ sinh non, bị nhiễm khuẩn ối và ngạt sau đẻ.",
+        "head": "Ngạt sau đẻ",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi mắc bệnh, các hội chứng nhiễm khuẩn thường không rõ rệt, trẻ có thể không xuất hiện triệu chứng sốt, thậm chí có trẻ bị hạ thân nhiệt, hội chứng màng não cũng không quá rõ ràng.",
+        "head": "Hội chứng nhiễm khuẩn",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi mắc bệnh, các hội chứng nhiễm khuẩn thường không rõ rệt, trẻ có thể không xuất hiện triệu chứng sốt, thậm chí có trẻ bị hạ thân nhiệt, hội chứng màng não cũng không quá rõ ràng.",
+        "head": "Sốt",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi mắc bệnh, các hội chứng nhiễm khuẩn thường không rõ rệt, trẻ có thể không xuất hiện triệu chứng sốt, thậm chí có trẻ bị hạ thân nhiệt, hội chứng màng não cũng không quá rõ ràng.",
+        "head": "Hạ thân nhiệt",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi mắc bệnh, các hội chứng nhiễm khuẩn thường không rõ rệt, trẻ có thể không xuất hiện triệu chứng sốt, thậm chí có trẻ bị hạ thân nhiệt, hội chứng màng não cũng không quá rõ ràng.",
+        "head": "Hội chứng màng não",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Trẻ sơ sinh thường bỏ bú, nôn trớ, thở không đều và có những cơn ngưng thở.",
+        "head": "Bỏ bú",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Trẻ sơ sinh thường bỏ bú, nôn trớ, thở không đều và có những cơn ngưng thở.",
+        "head": "Nôn trớ",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Trẻ sơ sinh thường bỏ bú, nôn trớ, thở không đều và có những cơn ngưng thở.",
+        "head": "Thở không đều",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Trẻ sơ sinh thường bỏ bú, nôn trớ, thở không đều và có những cơn ngưng thở.",
+        "head": "Ngưng thở",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Mẹ quan sát có thể thấy thóp bé phồng hoặc căng nhẹ thóp, bụng trướng, tiêu chảy và giảm trương cơ lực, bé giảm hoặc mất các phản xạ sinh lý, một số trường hợp có kèm theo co giật.",
+        "head": "Thóp bé phồng",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Mẹ quan sát có thể thấy thóp bé phồng hoặc căng nhẹ thóp, bụng trướng, tiêu chảy và giảm trương cơ lực, bé giảm hoặc mất các phản xạ sinh lý, một số trường hợp có kèm theo co giật.",
+        "head": "Căng nhẹ thóp",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Mẹ quan sát có thể thấy thóp bé phồng hoặc căng nhẹ thóp, bụng trướng, tiêu chảy và giảm trương cơ lực, bé giảm hoặc mất các phản xạ sinh lý, một số trường hợp có kèm theo co giật.",
+        "head": "Bụng trướng",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Mẹ quan sát có thể thấy thóp bé phồng hoặc căng nhẹ thóp, bụng trướng, tiêu chảy và giảm trương cơ lực, bé giảm hoặc mất các phản xạ sinh lý, một số trường hợp có kèm theo co giật.",
+        "head": "Tiêu chảy",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Mẹ quan sát có thể thấy thóp bé phồng hoặc căng nhẹ thóp, bụng trướng, tiêu chảy và giảm trương cơ lực, bé giảm hoặc mất các phản xạ sinh lý, một số trường hợp có kèm theo co giật.",
+        "head": "Giảm trương cơ lực",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Mẹ quan sát có thể thấy thóp bé phồng hoặc căng nhẹ thóp, bụng trướng, tiêu chảy và giảm trương cơ lực, bé giảm hoặc mất các phản xạ sinh lý, một số trường hợp có kèm theo co giật.",
+        "head": "Giảm phản xạ sinh lý",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Mẹ quan sát có thể thấy thóp bé phồng hoặc căng nhẹ thóp, bụng trướng, tiêu chảy và giảm trương cơ lực, bé giảm hoặc mất các phản xạ sinh lý, một số trường hợp có kèm theo co giật.",
+        "head": "Mất phản xạ sinh lý",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Mẹ quan sát có thể thấy thóp bé phồng hoặc căng nhẹ thóp, bụng trướng, tiêu chảy và giảm trương cơ lực, bé giảm hoặc mất các phản xạ sinh lý, một số trường hợp có kèm theo co giật.",
+        "head": "Co giật",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đối với trẻ em, các triệu chứng rõ ràng hơn, bé bị sốt và có thể kèm theo long đường hô hấp trên.",
+        "head": "Viêm màng não mủ",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Trẻ em",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Đối với trẻ em, các triệu chứng rõ ràng hơn, bé bị sốt và có thể kèm theo long đường hô hấp trên.",
+        "head": "Sốt",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đối với trẻ em, các triệu chứng rõ ràng hơn, bé bị sốt và có thể kèm theo long đường hô hấp trên.",
+        "head": "Viêm long đường hô hấp trên",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Trẻ hay quấy khóc, khó chịu và li bì, nhiều trẻ mệt mỏi, bỏ ăn kèm da tái xanh.",
+        "head": "Quấy khóc",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Trẻ hay quấy khóc, khó chịu và li bì, nhiều trẻ mệt mỏi, bỏ ăn kèm da tái xanh.",
+        "head": "Khó chịu",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Trẻ hay quấy khóc, khó chịu và li bì, nhiều trẻ mệt mỏi, bỏ ăn kèm da tái xanh.",
+        "head": "Li bì",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Trẻ hay quấy khóc, khó chịu và li bì, nhiều trẻ mệt mỏi, bỏ ăn kèm da tái xanh.",
+        "head": "Mệt mỏi",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Trẻ hay quấy khóc, khó chịu và li bì, nhiều trẻ mệt mỏi, bỏ ăn kèm da tái xanh.",
+        "head": "Bỏ ăn",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Trẻ hay quấy khóc, khó chịu và li bì, nhiều trẻ mệt mỏi, bỏ ăn kèm da tái xanh.",
+        "head": "Da tái xanh",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Trẻ có hội chứng màng não, thường nôn và buồn nôn, đau đầu, có các rối loạn về tiêu hóa, trẻ có dấu hiệu sợ ánh sáng, thường nằm ở tư thế cò súng.",
+        "head": "Hội chứng màng não",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Trẻ có hội chứng màng não, thường nôn và buồn nôn, đau đầu, có các rối loạn về tiêu hóa, trẻ có dấu hiệu sợ ánh sáng, thường nằm ở tư thế cò súng.",
+        "head": "Nôn",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Trẻ có hội chứng màng não, thường nôn và buồn nôn, đau đầu, có các rối loạn về tiêu hóa, trẻ có dấu hiệu sợ ánh sáng, thường nằm ở tư thế cò súng.",
+        "head": "Buồn nôn",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Trẻ có hội chứng màng não, thường nôn và buồn nôn, đau đầu, có các rối loạn về tiêu hóa, trẻ có dấu hiệu sợ ánh sáng, thường nằm ở tư thế cò súng.",
+        "head": "Đau đầu",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Trẻ có hội chứng màng não, thường nôn và buồn nôn, đau đầu, có các rối loạn về tiêu hóa, trẻ có dấu hiệu sợ ánh sáng, thường nằm ở tư thế cò súng.",
+        "head": "Rối loạn tiêu hóa",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Trẻ có hội chứng màng não, thường nôn và buồn nôn, đau đầu, có các rối loạn về tiêu hóa, trẻ có dấu hiệu sợ ánh sáng, thường nằm ở tư thế cò súng.",
+        "head": "Sợ ánh sáng",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Trẻ có hội chứng màng não, thường nôn và buồn nôn, đau đầu, có các rối loạn về tiêu hóa, trẻ có dấu hiệu sợ ánh sáng, thường nằm ở tư thế cò súng.",
+        "head": "Tư thế cò súng",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các dấu hiệu thực thể khác có thể gồm gáy cứng, có dấu hiệu Kernig, vạch màng não, co giật, liệt khu trú và rối loạn tri giác hoặc hôn mê, ban xuất huyết hoại tử hình sao.",
+        "head": "Gáy cứng",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các dấu hiệu thực thể khác có thể gồm gáy cứng, có dấu hiệu Kernig, vạch màng não, co giật, liệt khu trú và rối loạn tri giác hoặc hôn mê, ban xuất huyết hoại tử hình sao.",
+        "head": "Dấu hiệu Kernig",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các dấu hiệu thực thể khác có thể gồm gáy cứng, có dấu hiệu Kernig, vạch màng não, co giật, liệt khu trú và rối loạn tri giác hoặc hôn mê, ban xuất huyết hoại tử hình sao.",
+        "head": "Vạch màng não",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các dấu hiệu thực thể khác có thể gồm gáy cứng, có dấu hiệu Kernig, vạch màng não, co giật, liệt khu trú và rối loạn tri giác hoặc hôn mê, ban xuất huyết hoại tử hình sao.",
+        "head": "Co giật",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các dấu hiệu thực thể khác có thể gồm gáy cứng, có dấu hiệu Kernig, vạch màng não, co giật, liệt khu trú và rối loạn tri giác hoặc hôn mê, ban xuất huyết hoại tử hình sao.",
+        "head": "Liệt khu trú",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các dấu hiệu thực thể khác có thể gồm gáy cứng, có dấu hiệu Kernig, vạch màng não, co giật, liệt khu trú và rối loạn tri giác hoặc hôn mê, ban xuất huyết hoại tử hình sao.",
+        "head": "Rối loạn tri giác",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Có nhiều loại vi khuẩn có thể gây nên bệnh viêm màng não mủ như Hemophilus influenza type b (Hib), vi khuẩn phế cầu, não mô cầu, tụ cầu khuẩn và các loại vi khuẩn gram âm.",
+        "head": "Hemophilus influenza type b (Hib)",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Có nhiều loại vi khuẩn có thể gây nên bệnh viêm màng não mủ như Hemophilus influenza type b (Hib), vi khuẩn phế cầu, não mô cầu, tụ cầu khuẩn và các loại vi khuẩn gram âm.",
+        "head": "vi khuẩn phế cầu",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Có nhiều loại vi khuẩn có thể gây nên bệnh viêm màng não mủ như Hemophilus influenza type b (Hib), vi khuẩn phế cầu, não mô cầu, tụ cầu khuẩn và các loại vi khuẩn gram âm.",
+        "head": "não mô cầu",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Có nhiều loại vi khuẩn có thể gây nên bệnh viêm màng não mủ như Hemophilus influenza type b (Hib), vi khuẩn phế cầu, não mô cầu, tụ cầu khuẩn và các loại vi khuẩn gram âm.",
+        "head": "tụ cầu khuẩn",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Có nhiều loại vi khuẩn có thể gây nên bệnh viêm màng não mủ như Hemophilus influenza type b (Hib), vi khuẩn phế cầu, não mô cầu, tụ cầu khuẩn và các loại vi khuẩn gram âm.",
+        "head": "các loại vi khuẩn gram âm",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tần suất mắc của từng chủng vi khuẩn có liên quan đến tuổi cũng như một số yếu tố về đề kháng của cơ thể.",
+        "head": "tuổi",
+        "head_type": "lifestyle",
+        "relation": "associatedWith",
+        "tail": "viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tần suất mắc của từng chủng vi khuẩn có liên quan đến tuổi cũng như một số yếu tố về đề kháng của cơ thể.",
+        "head": "đề kháng của cơ thể",
+        "head_type": "lifestyle",
+        "relation": "associatedWith",
+        "tail": "viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Do mắc vi khuẩn Hib: Vi khuẩn Haemophilus influenzae type B (Hib) được biết đến là nguyên nhân gây ra viêm màng não mủ ở người, vi khuẩn này khu trú ở mũi họng và dễ dàng lây truyền từ người này qua người khác thông qua đường hô hấp hay dịch mũi họng.",
+        "head": "Haemophilus influenzae type B (Hib)",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Do mắc vi khuẩn Hib: Vi khuẩn Haemophilus influenzae type B (Hib) được biết đến là nguyên nhân gây ra viêm màng não mủ ở người, vi khuẩn này khu trú ở mũi họng và dễ dàng lây truyền từ người này qua người khác thông qua đường hô hấp hay dịch mũi họng.",
+        "head": "vi khuẩn này",
+        "head_type": "cause",
+        "relation": "locatedIn",
+        "tail": "mũi họng",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Do mắc vi khuẩn Hib: Vi khuẩn Haemophilus influenzae type B (Hib) được biết đến là nguyên nhân gây ra viêm màng não mủ ở người, vi khuẩn này khu trú ở mũi họng và dễ dàng lây truyền từ người này qua người khác thông qua đường hô hấp hay dịch mũi họng.",
+        "head": "vi khuẩn này",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Do mắc vi khuẩn Hib: Vi khuẩn Haemophilus influenzae type B (Hib) được biết đến là nguyên nhân gây ra viêm màng não mủ ở người, vi khuẩn này khu trú ở mũi họng và dễ dàng lây truyền từ người này qua người khác thông qua đường hô hấp hay dịch mũi họng.",
+        "head": "vi khuẩn này",
+        "head_type": "cause",
+        "relation": "spreadsThrough",
+        "tail": "đường hô hấp",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Do mắc vi khuẩn Hib: Vi khuẩn Haemophilus influenzae type B (Hib) được biết đến là nguyên nhân gây ra viêm màng não mủ ở người, vi khuẩn này khu trú ở mũi họng và dễ dàng lây truyền từ người này qua người khác thông qua đường hô hấp hay dịch mũi họng.",
+        "head": "vi khuẩn này",
+        "head_type": "cause",
+        "relation": "spreadsThrough",
+        "tail": "dịch mũi họng",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Từ năm 1930, các nhà khoa học tìm ra 2 dạng của vi khuẩn Hib là loại có vỏ và không có vỏ, gần như các bệnh nhiễm trùng có xâm lấn do Hib đều do vi khuẩn Hib dạng có vỏ với chủng huyết thanh B mang độc lực cao nhất gây ra (H. influenzae B).",
+        "head": "vi khuẩn Hib dạng có vỏ",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "bệnh nhiễm trùng có xâm lấn do Hib",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Từ năm 1930, các nhà khoa học tìm ra 2 dạng của vi khuẩn Hib là loại có vỏ và không có vỏ, gần như các bệnh nhiễm trùng có xâm lấn do Hib đều do vi khuẩn Hib dạng có vỏ với chủng huyết thanh B mang độc lực cao nhất gây ra (H. influenzae B).",
+        "head": "chủng huyết thanh B",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "bệnh nhiễm trùng có xâm lấn do Hib",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Vi khuẩn này có khả năng lây lan nhanh và gây bệnh ở người. Khi xâm nhập vào cơ thể người chưa có miễn dịch, lớp vỏ này giúp vi khuẩn Hib tránh không bị tiêu diệt bởi các bạch huyết cầu và hệ thống complement.",
+        "head": "vi khuẩn Hib",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "bệnh ở người",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Vi khuẩn này có khả năng lây lan nhanh và gây bệnh ở người. Khi xâm nhập vào cơ thể người chưa có miễn dịch, lớp vỏ này giúp vi khuẩn Hib tránh không bị tiêu diệt bởi các bạch huyết cầu và hệ thống complement.",
+        "head": "lớp vỏ",
+        "head_type": "cause",
+        "relation": "preventedBy",
+        "tail": "tiêu diệt bởi các bạch huyết cầu",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Vi khuẩn này có khả năng lây lan nhanh và gây bệnh ở người. Khi xâm nhập vào cơ thể người chưa có miễn dịch, lớp vỏ này giúp vi khuẩn Hib tránh không bị tiêu diệt bởi các bạch huyết cầu và hệ thống complement.",
+        "head": "lớp vỏ",
+        "head_type": "cause",
+        "relation": "preventedBy",
+        "tail": "tiêu diệt bởi hệ thống complement",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Viêm màng não mủ do Hib thường xảy ra ở trẻ nhũ nhi và trẻ nhỏ từ 1 đến 36 tháng, lúc này bộ não của trẻ còn non nớt và nếu trẻ chưa được tiêm phòng và chưa có kháng thể.",
+        "head": "viêm màng não mủ do Hib",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "bộ não của trẻ",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Viêm màng não mủ do Hib thường xảy ra ở trẻ nhũ nhi và trẻ nhỏ từ 1 đến 36 tháng, lúc này bộ não của trẻ còn non nớt và nếu trẻ chưa được tiêm phòng và chưa có kháng thể.",
+        "head": "viêm màng não mủ do Hib",
+        "head_type": "disease",
+        "relation": "preventedBy",
+        "tail": "tiêm phòng",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Viêm màng não mủ do Hib thường xảy ra ở trẻ nhũ nhi và trẻ nhỏ từ 1 đến 36 tháng, lúc này bộ não của trẻ còn non nớt và nếu trẻ chưa được tiêm phòng và chưa có kháng thể.",
+        "head": "viêm màng não mủ do Hib",
+        "head_type": "disease",
+        "relation": "preventedBy",
+        "tail": "kháng thể",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Nếu trẻ không may nhiễm vi khuẩn Hib có thể dẫn tới những biến chứng nặng, thậm chí là tử vong nhanh chóng.",
+        "head": "nhiễm vi khuẩn Hib",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "biến chứng nặng",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Nếu trẻ không may nhiễm vi khuẩn Hib có thể dẫn tới những biến chứng nặng, thậm chí là tử vong nhanh chóng.",
+        "head": "nhiễm vi khuẩn Hib",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "tử vong nhanh chóng",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Do mắc vi khuẩn E.Coli: Vi khuẩn E.coli thường cư trú trong hệ tiêu hóa, có thể gây nên viêm màng não mủ cho trẻ, đặc biệt là ở trẻ sơ sinh và trẻ nhỏ.",
+        "head": "vi khuẩn E.coli",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Do mắc vi khuẩn E.Coli: Vi khuẩn E.coli thường cư trú trong hệ tiêu hóa, có thể gây nên viêm màng não mủ cho trẻ, đặc biệt là ở trẻ sơ sinh và trẻ nhỏ.",
+        "head": "vi khuẩn E.coli",
+        "head_type": "cause",
+        "relation": "locatedIn",
+        "tail": "hệ tiêu hóa",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Do mắc vi khuẩn E.Coli: Vi khuẩn E.coli thường cư trú trong hệ tiêu hóa, có thể gây nên viêm màng não mủ cho trẻ, đặc biệt là ở trẻ sơ sinh và trẻ nhỏ.",
+        "head": "vi khuẩn E.coli",
+        "head_type": "cause",
+        "relation": "affects",
+        "tail": "trẻ sơ sinh",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Do mắc vi khuẩn E.Coli: Vi khuẩn E.coli thường cư trú trong hệ tiêu hóa, có thể gây nên viêm màng não mủ cho trẻ, đặc biệt là ở trẻ sơ sinh và trẻ nhỏ.",
+        "head": "vi khuẩn E.coli",
+        "head_type": "cause",
+        "relation": "affects",
+        "tail": "trẻ nhỏ",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Trẻ mắc viêm màng não mủ do E.coli thường nằm trong bệnh cảnh nặng, nhiễm trùng huyết gây tử vong cao.",
+        "head": "viêm màng não mủ do E.coli",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "bệnh cảnh nặng",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Trẻ mắc viêm màng não mủ do E.coli thường nằm trong bệnh cảnh nặng, nhiễm trùng huyết gây tử vong cao.",
+        "head": "viêm màng não mủ do E.coli",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "nhiễm trùng huyết",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Trẻ mắc viêm màng não mủ do E.coli thường nằm trong bệnh cảnh nặng, nhiễm trùng huyết gây tử vong cao.",
+        "head": "nhiễm trùng huyết",
+        "head_type": "symptom",
+        "relation": "causedBy",
+        "tail": "tử vong cao",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Vi khuẩn E.Coli thường có trong thực phẩm tươi sống, thịt và sữa.",
+        "head": "vi khuẩn E.Coli",
+        "head_type": "cause",
+        "relation": "locatedIn",
+        "tail": "thực phẩm tươi sống",
+        "tail_type": "food"
+    },
+    {
+        "text": "Vi khuẩn E.Coli thường có trong thực phẩm tươi sống, thịt và sữa.",
+        "head": "vi khuẩn E.Coli",
+        "head_type": "cause",
+        "relation": "locatedIn",
+        "tail": "thịt",
+        "tail_type": "food"
+    },
+    {
+        "text": "Vi khuẩn E.Coli thường có trong thực phẩm tươi sống, thịt và sữa.",
+        "head": "vi khuẩn E.Coli",
+        "head_type": "cause",
+        "relation": "locatedIn",
+        "tail": "sữa",
+        "tail_type": "food"
+    },
+    {
+        "text": "Những bệnh nhân bị suy giảm miễn dịch hay đang điều trị với các thuốc ức chế miễn dịch, người có sức đề kháng yếu thường là đối tượng có nguy cơ cao mắc bệnh.",
+        "head": "suy giảm miễn dịch",
+        "head_type": "lifestyle",
+        "relation": "associatedWith",
+        "tail": "viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Những bệnh nhân bị suy giảm miễn dịch hay đang điều trị với các thuốc ức chế miễn dịch, người có sức đề kháng yếu thường là đối tượng có nguy cơ cao mắc bệnh.",
+        "head": "điều trị với các thuốc ức chế miễn dịch",
+        "head_type": "treatment",
+        "relation": "associatedWith",
+        "tail": "viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Những bệnh nhân bị suy giảm miễn dịch hay đang điều trị với các thuốc ức chế miễn dịch, người có sức đề kháng yếu thường là đối tượng có nguy cơ cao mắc bệnh.",
+        "head": "sức đề kháng yếu",
+        "head_type": "lifestyle",
+        "relation": "associatedWith",
+        "tail": "viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Do mắc vi khuẩn Listeria Monocytogenes: Listeria là một loại vi khuẩn nhỏ hiếu khí, không có vỏ bọc, kháng acid, không hình thành bào tử, chúng thường tồn tại trong ruột người hoặc ở động vật có vú, chim, hươu và các loại giáp xác, có một số loài listeria nhưng Listeria Monocytogenes là vi khuẩn gây bệnh chính ở người.",
+        "head": "Listeria Monocytogenes",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "viêm màng não",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Do mắc vi khuẩn Listeria Monocytogenes: Listeria là một loại vi khuẩn nhỏ hiếu khí, không có vỏ bọc, kháng acid, không hình thành bào tử, chúng thường tồn tại trong ruột người hoặc ở động vật có vú, chim, hươu và các loại giáp xác, có một số loài listeria nhưng Listeria Monocytogenes là vi khuẩn gây bệnh chính ở người.",
+        "head": "Listeria Monocytogenes",
+        "head_type": "cause",
+        "relation": "locatedIn",
+        "tail": "ruột người",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Do mắc vi khuẩn Listeria Monocytogenes: Listeria là một loại vi khuẩn nhỏ hiếu khí, không có vỏ bọc, kháng acid, không hình thành bào tử, chúng thường tồn tại trong ruột người hoặc ở động vật có vú, chim, hươu và các loại giáp xác, có một số loài listeria nhưng Listeria Monocytogenes là vi khuẩn gây bệnh chính ở người.",
+        "head": "Listeria Monocytogenes",
+        "head_type": "cause",
+        "relation": "locatedIn",
+        "tail": "động vật có vú",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Do mắc vi khuẩn Listeria Monocytogenes: Listeria là một loại vi khuẩn nhỏ hiếu khí, không có vỏ bọc, kháng acid, không hình thành bào tử, chúng thường tồn tại trong ruột người hoặc ở động vật có vú, chim, hươu và các loại giáp xác, có một số loài listeria nhưng Listeria Monocytogenes là vi khuẩn gây bệnh chính ở người.",
+        "head": "Listeria Monocytogenes",
+        "head_type": "cause",
+        "relation": "locatedIn",
+        "tail": "chim",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Do mắc vi khuẩn Listeria Monocytogenes: Listeria là một loại vi khuẩn nhỏ hiếu khí, không có vỏ bọc, kháng acid, không hình thành bào tử, chúng thường tồn tại trong ruột người hoặc ở động vật có vú, chim, hươu và các loại giáp xác, có một số loài listeria nhưng Listeria Monocytogenes là vi khuẩn gây bệnh chính ở người.",
+        "head": "Listeria Monocytogenes",
+        "head_type": "cause",
+        "relation": "locatedIn",
+        "tail": "hươu",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Do mắc vi khuẩn Listeria Monocytogenes: Listeria là một loại vi khuẩn nhỏ hiếu khí, không có vỏ bọc, kháng acid, không hình thành bào tử, chúng thường tồn tại trong ruột người hoặc ở động vật có vú, chim, hươu và các loại giáp xác, có một số loài listeria nhưng Listeria Monocytogenes là vi khuẩn gây bệnh chính ở người.",
+        "head": "Listeria Monocytogenes",
+        "head_type": "cause",
+        "relation": "locatedIn",
+        "tail": "các loại giáp xác",
+        "tail_type": "food"
+    },
+    {
+        "text": "Vi khuẩn này rất phổ biến trong môi trường, khả năng lây nhiễm nhiều trong quá trình chế biến và sản xuất thực phẩm, đặc biệt các thực phẩm lạnh mà không cần qua nấu trước khi ăn.",
+        "head": "vi khuẩn này",
+        "head_type": "cause",
+        "relation": "locatedIn",
+        "tail": "môi trường",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Vi khuẩn này rất phổ biến trong môi trường, khả năng lây nhiễm nhiều trong quá trình chế biến và sản xuất thực phẩm, đặc biệt các thực phẩm lạnh mà không cần qua nấu trước khi ăn.",
+        "head": "vi khuẩn này",
+        "head_type": "cause",
+        "relation": "spreadsThrough",
+        "tail": "quá trình chế biến và sản xuất thực phẩm",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Vi khuẩn này rất phổ biến trong môi trường, khả năng lây nhiễm nhiều trong quá trình chế biến và sản xuất thực phẩm, đặc biệt các thực phẩm lạnh mà không cần qua nấu trước khi ăn.",
+        "head": "vi khuẩn này",
+        "head_type": "cause",
+        "relation": "locatedIn",
+        "tail": "thực phẩm lạnh",
+        "tail_type": "food"
+    },
+    {
+        "text": "Vi khuẩn này gây lên đến 20% trường hợp viêm màng não ở trẻ và ở bệnh nhân trên 60 tuổi.",
+        "head": "vi khuẩn này",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "viêm màng não",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Vi khuẩn này gây lên đến 20% trường hợp viêm màng não ở trẻ và ở bệnh nhân trên 60 tuổi.",
+        "head": "vi khuẩn này",
+        "head_type": "cause",
+        "relation": "affects",
+        "tail": "trẻ",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Vi khuẩn này gây lên đến 20% trường hợp viêm màng não ở trẻ và ở bệnh nhân trên 60 tuổi.",
+        "head": "vi khuẩn này",
+        "head_type": "cause",
+        "relation": "affects",
+        "tail": "bệnh nhân trên 60 tuổi",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Người bệnh có những biểu hiện về thay đổi ý thức, liệt dây thần kinh sọ, mất vận động hoặc cảm giác…",
+        "head": "thay đổi ý thức",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "viêm màng não",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Người bệnh có những biểu hiện về thay đổi ý thức, liệt dây thần kinh sọ, mất vận động hoặc cảm giác…",
+        "head": "liệt dây thần kinh sọ",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "viêm màng não",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Người bệnh có những biểu hiện về thay đổi ý thức, liệt dây thần kinh sọ, mất vận động hoặc cảm giác…",
+        "head": "mất vận động",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "viêm màng não",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Người bệnh có những biểu hiện về thay đổi ý thức, liệt dây thần kinh sọ, mất vận động hoặc cảm giác…",
+        "head": "mất cảm giác",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "viêm màng não",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Do mắc phế cầu khuẩn: Phế cầu khuẩn (Streptococcus pneumonia) được xem là nguyên nhân hàng đầu gây viêm màng não mủ tại các quốc gia đã chủng ngừa Haemophilus influenzae tuýp b.",
+        "head": "Phế cầu khuẩn (Streptococcus pneumonia)",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tỷ lệ người bị viêm màng não mủ do phế cầu khoảng 1-3/1.000 dân.",
+        "head": "viêm màng não mủ do phế cầu",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "1-3/1.000 dân",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Vi khuẩn phế cầu thường cư trú ở niêm mạc họng gây viêm xoang và viêm tai giữa, từ đó tấn công lên dịch não tủy và gây nên bệnh viêm màng não mủ",
+        "head": "vi khuẩn phế cầu",
+        "head_type": "cause",
+        "relation": "locatedIn",
+        "tail": "niêm mạc họng",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Vi khuẩn phế cầu thường cư trú ở niêm mạc họng gây viêm xoang và viêm tai giữa, từ đó tấn công lên dịch não tủy và gây nên bệnh viêm màng não mủ",
+        "head": "vi khuẩn phế cầu",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "viêm xoang",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Vi khuẩn phế cầu thường cư trú ở niêm mạc họng gây viêm xoang và viêm tai giữa, từ đó tấn công lên dịch não tủy và gây nên bệnh viêm màng não mủ",
+        "head": "vi khuẩn phế cầu",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "viêm tai giữa",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Vi khuẩn phế cầu thường cư trú ở niêm mạc họng gây viêm xoang và viêm tai giữa, từ đó tấn công lên dịch não tủy và gây nên bệnh viêm màng não mủ",
+        "head": "vi khuẩn phế cầu",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Do não mô cầu khuẩn: Viêm màng não mủ do não mô cầu khuẩn thường xảy ra ở trẻ từ 6 đến 12 tháng tuổi.",
+        "head": "viêm màng não mủ do não mô cầu khuẩn",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "trẻ từ 6 đến 12 tháng tuổi",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Với những trẻ trên 1 tuổi có mắc nhưng ở tỷ lệ thấp hơn.",
+        "head": "viêm màng não mủ do não mô cầu khuẩn",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "trẻ trên 1 tuổi",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Bệnh lây trực tiếp từ người qua người thông qua giọt bắn.",
+        "head": "viêm màng não mủ do não mô cầu khuẩn",
+        "head_type": "disease",
+        "relation": "spreadsThrough",
+        "tail": "giọt bắn",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Người bị viêm màng não mủ do não mô cầu thường có dấu hiệu đặc trưng là có ban xuất huyết hình sao.",
+        "head": "ban xuất huyết hình sao",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "viêm màng não mủ do não mô cầu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tỷ lệ tử vong cao, đặc biệt có thể tử vong trong vòng 24h sau khi nhập viện.",
+        "head": "viêm màng não mủ do não mô cầu",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "tử vong cao",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Tỷ lệ tử vong cao, đặc biệt có thể tử vong trong vòng 24h sau khi nhập viện.",
+        "head": "viêm màng não mủ do não mô cầu",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "tử vong trong vòng 24h sau khi nhập viện",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Viêm màng não mủ là bệnh nguy hiểm với nhiều tác nhân gây bệnh.",
+        "head": "viêm màng não mủ",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "bệnh nguy hiểm",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Các loại vi khuẩn gây bệnh có thể đi từ tai, mũi, họng, phổi hoặc theo đường máu vào não hoặc theo các đường kế cận từ các ổ nhiễm khuẩn cạnh màng não hoặc đi trực tiếp vào não thông qua các chấn thương sọ não hoặc nứt sọ não.",
+        "head": "vi khuẩn gây bệnh",
+        "head_type": "cause",
+        "relation": "locatedIn",
+        "tail": "tai",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Các loại vi khuẩn gây bệnh có thể đi từ tai, mũi, họng, phổi hoặc theo đường máu vào não hoặc theo các đường kế cận từ các ổ nhiễm khuẩn cạnh màng não hoặc đi trực tiếp vào não thông qua các chấn thương sọ não hoặc nứt sọ não.",
+        "head": "vi khuẩn gây bệnh",
+        "head_type": "cause",
+        "relation": "locatedIn",
+        "tail": "mũi",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Các loại vi khuẩn gây bệnh có thể đi từ tai, mũi, họng, phổi hoặc theo đường máu vào não hoặc theo các đường kế cận từ các ổ nhiễm khuẩn cạnh màng não hoặc đi trực tiếp vào não thông qua các chấn thương sọ não hoặc nứt sọ não.",
+        "head": "vi khuẩn gây bệnh",
+        "head_type": "cause",
+        "relation": "locatedIn",
+        "tail": "họng",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Các loại vi khuẩn gây bệnh có thể đi từ tai, mũi, họng, phổi hoặc theo đường máu vào não hoặc theo các đường kế cận từ các ổ nhiễm khuẩn cạnh màng não hoặc đi trực tiếp vào não thông qua các chấn thương sọ não hoặc nứt sọ não.",
+        "head": "vi khuẩn gây bệnh",
+        "head_type": "cause",
+        "relation": "locatedIn",
+        "tail": "phổi",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Các loại vi khuẩn gây bệnh có thể đi từ tai, mũi, họng, phổi hoặc theo đường máu vào não hoặc theo các đường kế cận từ các ổ nhiễm khuẩn cạnh màng não hoặc đi trực tiếp vào não thông qua các chấn thương sọ não hoặc nứt sọ não.",
+        "head": "vi khuẩn gây bệnh",
+        "head_type": "cause",
+        "relation": "spreadsThrough",
+        "tail": "đường máu",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Các loại vi khuẩn gây bệnh có thể đi từ tai, mũi, họng, phổi hoặc theo đường máu vào não hoặc theo các đường kế cận từ các ổ nhiễm khuẩn cạnh màng não hoặc đi trực tiếp vào não thông qua các chấn thương sọ não hoặc nứt sọ não.",
+        "head": "vi khuẩn gây bệnh",
+        "head_type": "cause",
+        "relation": "locatedIn",
+        "tail": "não",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Các loại vi khuẩn gây bệnh có thể đi từ tai, mũi, họng, phổi hoặc theo đường máu vào não hoặc theo các đường kế cận từ các ổ nhiễm khuẩn cạnh màng não hoặc đi trực tiếp vào não thông qua các chấn thương sọ não hoặc nứt sọ não.",
+        "head": "vi khuẩn gây bệnh",
+        "head_type": "cause",
+        "relation": "spreadsThrough",
+        "tail": "các đường kế cận từ các ổ nhiễm khuẩn cạnh màng não",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Các loại vi khuẩn gây bệnh có thể đi từ tai, mũi, họng, phổi hoặc theo đường máu vào não hoặc theo các đường kế cận từ các ổ nhiễm khuẩn cạnh màng não hoặc đi trực tiếp vào não thông qua các chấn thương sọ não hoặc nứt sọ não.",
+        "head": "vi khuẩn gây bệnh",
+        "head_type": "cause",
+        "relation": "spreadsThrough",
+        "tail": "chấn thương sọ não",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Các loại vi khuẩn gây bệnh có thể đi từ tai, mũi, họng, phổi hoặc theo đường máu vào não hoặc theo các đường kế cận từ các ổ nhiễm khuẩn cạnh màng não hoặc đi trực tiếp vào não thông qua các chấn thương sọ não hoặc nứt sọ não.",
+        "head": "vi khuẩn gây bệnh",
+        "head_type": "cause",
+        "relation": "spreadsThrough",
+        "tail": "nứt sọ não",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Để chẩn đoán viêm màng não mủ cần dựa trên các biểu hiện lâm sàng kết hợp kết quả xét nghiệm dịch não tủy.",
+        "head": "Viêm màng não mủ",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "biểu hiện lâm sàng kết hợp kết quả xét nghiệm dịch não tủy",
+        "tail_type": "test"
+    },
+    {
+        "text": "Viêm màng não mủ có diễn tiến cấp tính với các triệu chứng như sốt, thường sốt cao đột ngột, trẻ li bì, mệt mỏi, bỏ ăn và da tái xanh.",
+        "head": "Viêm màng não mủ",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "sốt",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Viêm màng não mủ có diễn tiến cấp tính với các triệu chứng như sốt, thường sốt cao đột ngột, trẻ li bì, mệt mỏi, bỏ ăn và da tái xanh.",
+        "head": "Viêm màng não mủ",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "sốt cao đột ngột",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Viêm màng não mủ có diễn tiến cấp tính với các triệu chứng như sốt, thường sốt cao đột ngột, trẻ li bì, mệt mỏi, bỏ ăn và da tái xanh.",
+        "head": "Viêm màng não mủ",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "li bì",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Viêm màng não mủ có diễn tiến cấp tính với các triệu chứng như sốt, thường sốt cao đột ngột, trẻ li bì, mệt mỏi, bỏ ăn và da tái xanh.",
+        "head": "Viêm màng não mủ",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "mệt mỏi",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Viêm màng não mủ có diễn tiến cấp tính với các triệu chứng như sốt, thường sốt cao đột ngột, trẻ li bì, mệt mỏi, bỏ ăn và da tái xanh.",
+        "head": "Viêm màng não mủ",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "bỏ ăn",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Viêm màng não mủ có diễn tiến cấp tính với các triệu chứng như sốt, thường sốt cao đột ngột, trẻ li bì, mệt mỏi, bỏ ăn và da tái xanh.",
+        "head": "Viêm màng não mủ",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "da tái xanh",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Xuất hiện hội chứng màng não với các dấu hiệu cơ bản như nôn, buồn nôn, đau đầu, táo bón có thể có biểu hiện sợ ánh sáng và nằm ở tư thế cò súng.",
+        "head": "Hội chứng màng não",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "nôn",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Xuất hiện hội chứng màng não với các dấu hiệu cơ bản như nôn, buồn nôn, đau đầu, táo bón có thể có biểu hiện sợ ánh sáng và nằm ở tư thế cò súng.",
+        "head": "Hội chứng màng não",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "buồn nôn",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Xuất hiện hội chứng màng não với các dấu hiệu cơ bản như nôn, buồn nôn, đau đầu, táo bón có thể có biểu hiện sợ ánh sáng và nằm ở tư thế cò súng.",
+        "head": "Hội chứng màng não",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "đau đầu",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Xuất hiện hội chứng màng não với các dấu hiệu cơ bản như nôn, buồn nôn, đau đầu, táo bón có thể có biểu hiện sợ ánh sáng và nằm ở tư thế cò súng.",
+        "head": "Hội chứng màng não",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "táo bón",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Xuất hiện hội chứng màng não với các dấu hiệu cơ bản như nôn, buồn nôn, đau đầu, táo bón có thể có biểu hiện sợ ánh sáng và nằm ở tư thế cò súng.",
+        "head": "Hội chứng màng não",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "sợ ánh sáng",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Xuất hiện hội chứng màng não với các dấu hiệu cơ bản như nôn, buồn nôn, đau đầu, táo bón có thể có biểu hiện sợ ánh sáng và nằm ở tư thế cò súng.",
+        "head": "Hội chứng màng não",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "nằm ở tư thế cò súng",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Các dấu hiệu thực thể như gáy cứng, hoặc cổ mềm ở trẻ nhỏ, dấu hiệu Kernig, Brudzinsky, thóp phồng, căng, li bì, mắt nhìn vô cảm.",
+        "head": "gáy cứng",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các dấu hiệu thực thể như gáy cứng, hoặc cổ mềm ở trẻ nhỏ, dấu hiệu Kernig, Brudzinsky, thóp phồng, căng, li bì, mắt nhìn vô cảm.",
+        "head": "cổ mềm",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các dấu hiệu thực thể như gáy cứng, hoặc cổ mềm ở trẻ nhỏ, dấu hiệu Kernig, Brudzinsky, thóp phồng, căng, li bì, mắt nhìn vô cảm.",
+        "head": "dấu hiệu Kernig",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các dấu hiệu thực thể như gáy cứng, hoặc cổ mềm ở trẻ nhỏ, dấu hiệu Kernig, Brudzinsky, thóp phồng, căng, li bì, mắt nhìn vô cảm.",
+        "head": "dấu hiệu Brudzinsky",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các dấu hiệu thực thể như gáy cứng, hoặc cổ mềm ở trẻ nhỏ, dấu hiệu Kernig, Brudzinsky, thóp phồng, căng, li bì, mắt nhìn vô cảm.",
+        "head": "thóp phồng",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các dấu hiệu thực thể như gáy cứng, hoặc cổ mềm ở trẻ nhỏ, dấu hiệu Kernig, Brudzinsky, thóp phồng, căng, li bì, mắt nhìn vô cảm.",
+        "head": "thóp căng",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các dấu hiệu thực thể như gáy cứng, hoặc cổ mềm ở trẻ nhỏ, dấu hiệu Kernig, Brudzinsky, thóp phồng, căng, li bì, mắt nhìn vô cảm.",
+        "head": "li bì",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các dấu hiệu thực thể như gáy cứng, hoặc cổ mềm ở trẻ nhỏ, dấu hiệu Kernig, Brudzinsky, thóp phồng, căng, li bì, mắt nhìn vô cảm.",
+        "head": "mắt nhìn vô cảm",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Một số biểu hiện khác như co giật, liệt khu trú, shock nhiễm khuẩn hay rối loạn tri giác, trẻ rơi vào hôn mê.",
+        "head": "co giật",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Một số biểu hiện khác như co giật, liệt khu trú, shock nhiễm khuẩn hay rối loạn tri giác, trẻ rơi vào hôn mê.",
+        "head": "liệt khu trú",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Một số biểu hiện khác như co giật, liệt khu trú, shock nhiễm khuẩn hay rối loạn tri giác, trẻ rơi vào hôn mê.",
+        "head": "shock nhiễm khuẩn",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Một số biểu hiện khác như co giật, liệt khu trú, shock nhiễm khuẩn hay rối loạn tri giác, trẻ rơi vào hôn mê.",
+        "head": "rối loạn tri giác",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Một số biểu hiện khác như co giật, liệt khu trú, shock nhiễm khuẩn hay rối loạn tri giác, trẻ rơi vào hôn mê.",
+        "head": "hôn mê",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đối với trẻ sơ sinh, viêm màng não mủ thường xảy ra với trẻ sinh non, bị nhiễm trùng ối hoặc ngạt sau đẻ.",
+        "head": "Viêm màng não mủ",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "trẻ sinh non",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Đối với trẻ sơ sinh, viêm màng não mủ thường xảy ra với trẻ sinh non, bị nhiễm trùng ối hoặc ngạt sau đẻ.",
+        "head": "Viêm màng não mủ",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "nhiễm trùng ối",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Đối với trẻ sơ sinh, viêm màng não mủ thường xảy ra với trẻ sinh non, bị nhiễm trùng ối hoặc ngạt sau đẻ.",
+        "head": "Viêm màng não mủ",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "ngạt sau đẻ",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Với trẻ sơ sinh, các biểu hiện nhiễm trùng không rõ rệt, trẻ có thể không sốt, nhiều trẻ còn hạ thân nhiệt, trẻ thường bỏ bú, tiêu chảy, mất phản xạ sinh lý và giảm trương cơ lực.",
+        "head": "Viêm màng não mủ",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "không sốt",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Với trẻ sơ sinh, các biểu hiện nhiễm trùng không rõ rệt, trẻ có thể không sốt, nhiều trẻ còn hạ thân nhiệt, trẻ thường bỏ bú, tiêu chảy, mất phản xạ sinh lý và giảm trương cơ lực.",
+        "head": "Viêm màng não mủ",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "hạ thân nhiệt",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Với trẻ sơ sinh, các biểu hiện nhiễm trùng không rõ rệt, trẻ có thể không sốt, nhiều trẻ còn hạ thân nhiệt, trẻ thường bỏ bú, tiêu chảy, mất phản xạ sinh lý và giảm trương cơ lực.",
+        "head": "Viêm màng não mủ",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "bỏ bú",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Với trẻ sơ sinh, các biểu hiện nhiễm trùng không rõ rệt, trẻ có thể không sốt, nhiều trẻ còn hạ thân nhiệt, trẻ thường bỏ bú, tiêu chảy, mất phản xạ sinh lý và giảm trương cơ lực.",
+        "head": "Viêm màng não mủ",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "tiêu chảy",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Với trẻ sơ sinh, các biểu hiện nhiễm trùng không rõ rệt, trẻ có thể không sốt, nhiều trẻ còn hạ thân nhiệt, trẻ thường bỏ bú, tiêu chảy, mất phản xạ sinh lý và giảm trương cơ lực.",
+        "head": "Viêm màng não mủ",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "mất phản xạ sinh lý",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Với trẻ sơ sinh, các biểu hiện nhiễm trùng không rõ rệt, trẻ có thể không sốt, nhiều trẻ còn hạ thân nhiệt, trẻ thường bỏ bú, tiêu chảy, mất phản xạ sinh lý và giảm trương cơ lực.",
+        "head": "Viêm màng não mủ",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "giảm trương cơ lực",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Xét nghiệm dịch não tủy: Đây là xét nghiệm quan trọng mang tính chất quyết định để chẩn đoán viêm màng não mủ.",
+        "head": "Viêm màng não mủ",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "Xét nghiệm dịch não tủy",
+        "tail_type": "test"
+    },
+    {
+        "text": "Xét nghiệm dịch não tủy: Đây là xét nghiệm quan trọng mang tính chất quyết định để chẩn đoán viêm màng não mủ.",
+        "head": "Xét nghiệm dịch não tủy",
+        "head_type": "test",
+        "relation": "relatedTo",
+        "tail": "Viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu dịch não tủy có màu lờ đục hoặc màu trong như nước vo gạo cần phải điều trị ngay.",
+        "head": "dịch não tủy",
+        "head_type": "test",
+        "relation": "relatedTo",
+        "tail": "Viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Công thức máu: Nếu công thức máu cho thấy bạch cầu tăng cao, tỷ lệ bạch cầu đa nhân trung tính chiếm ưu thế và ở trẻ sơ sinh, trẻ nhỏ có giảm nồng độ huyết sắc tố.",
+        "head": "Viêm màng não mủ",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "Công thức máu",
+        "tail_type": "test"
+    },
+    {
+        "text": "Công thức máu: Nếu công thức máu cho thấy bạch cầu tăng cao, tỷ lệ bạch cầu đa nhân trung tính chiếm ưu thế và ở trẻ sơ sinh, trẻ nhỏ có giảm nồng độ huyết sắc tố.",
+        "head": "Công thức máu",
+        "head_type": "test",
+        "relation": "relatedTo",
+        "tail": "Viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Cấy máu và dịch tỵ hầu việc cấy máu và mẫu bệnh phẩm có thể xác định được vi khuẩn gây ra bệnh.",
+        "head": "Viêm màng não mủ",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "Cấy máu và dịch tỵ hầu",
+        "tail_type": "test"
+    },
+    {
+        "text": "Cấy máu và dịch tỵ hầu việc cấy máu và mẫu bệnh phẩm có thể xác định được vi khuẩn gây ra bệnh.",
+        "head": "Cấy máu và dịch tỵ hầu",
+        "head_type": "test",
+        "relation": "relatedTo",
+        "tail": "Viêm màng não mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bên cạnh đó, có một số phương pháp như siêu âm qua thóp hay chụp CT sọ não có thể xác định được các biến chứng có thể gặp.",
+        "head": "Viêm màng não mủ",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "siêu âm qua thóp",
+        "tail_type": "test"
+    },
+    {
+        "text": "Bên cạnh đó, có một số phương pháp như siêu âm qua thóp hay chụp CT sọ não có thể xác định được các biến chứng có thể gặp.",
+        "head": "Viêm màng não mủ",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "chụp CT sọ não",
+        "tail_type": "test"
+    },
+    {
+        "text": "Ngoài ra một số xét nghiệm DNT có thể chẩn đoán phân biệt trong một số trường hợp viêm màng não mủ không điển hình.",
+        "head": "Viêm màng não mủ",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "xét nghiệm DNT",
+        "tail_type": "test"
+    },
+    {
+        "text": "Viêm màng não mủ là bệnh vô cùng nguy hiểm nhưng tỷ lệ trẻ được phát hiện và nhập viện kịp thời lại thấp, không ít trẻ nhập viện trong tình trạng bệnh đã trở nặng.",
+        "head": "Viêm màng não mủ",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "nguy hiểm",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Với biểu hiện lâm sàng đa dạng như sốt, quấy khóc, chảy mũi… nên bố mẹ dễ nhầm lẫn với các triệu chứng cảm cúm thông thường và tự ý mua thuốc về nhà điều trị.",
+        "head": "Viêm màng não mủ",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "sốt",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Với biểu hiện lâm sàng đa dạng như sốt, quấy khóc, chảy mũi… nên bố mẹ dễ nhầm lẫn với các triệu chứng cảm cúm thông thường và tự ý mua thuốc về nhà điều trị.",
+        "head": "Viêm màng não mủ",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "quấy khóc",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Với biểu hiện lâm sàng đa dạng như sốt, quấy khóc, chảy mũi… nên bố mẹ dễ nhầm lẫn với các triệu chứng cảm cúm thông thường và tự ý mua thuốc về nhà điều trị.",
+        "head": "Viêm màng não mủ",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "chảy mũi",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Chỉ đến khi trẻ có những biểu hiện tăng nặng như co giật, mất ý thức, hô mê thì mới đưa đến viện điều trị.",
+        "head": "Viêm màng não mủ",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "co giật",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Chỉ đến khi trẻ có những biểu hiện tăng nặng như co giật, mất ý thức, hô mê thì mới đưa đến viện điều trị.",
+        "head": "Viêm màng não mủ",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "mất ý thức",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Chỉ đến khi trẻ có những biểu hiện tăng nặng như co giật, mất ý thức, hô mê thì mới đưa đến viện điều trị.",
+        "head": "Viêm màng não mủ",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "hô mê",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Bác sĩ Trọng Tuấn khuyến cáo, nếu phụ huynh thấy trẻ có những dấu hiệu như quấy khóc, li bì, sốt cao, thóp phồng, co giật… cần nghĩ ngay đến viêm màng não mủ và đưa trẻ đến ngay trung tâm y tế gần nhất để được điều trị.",
+        "head": "Viêm màng não mủ",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "quấy khóc",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Bác sĩ Trọng Tuấn khuyến cáo, nếu phụ huynh thấy trẻ có những dấu hiệu như quấy khóc, li bì, sốt cao, thóp phồng, co giật… cần nghĩ ngay đến viêm màng não mủ và đưa trẻ đến ngay trung tâm y tế gần nhất để được điều trị.",
+        "head": "Viêm màng não mủ",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "li bì",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Bác sĩ Trọng Tuấn khuyến cáo, nếu phụ huynh thấy trẻ có những dấu hiệu như quấy khóc, li bì, sốt cao, thóp phồng, co giật… cần nghĩ ngay đến viêm màng não mủ và đưa trẻ đến ngay trung tâm y tế gần nhất để được điều trị.",
+        "head": "Viêm màng não mủ",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "sốt cao",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Bác sĩ Trọng Tuấn khuyến cáo, nếu phụ huynh thấy trẻ có những dấu hiệu như quấy khóc, li bì, sốt cao, thóp phồng, co giật… cần nghĩ ngay đến viêm màng não mủ và đưa trẻ đến ngay trung tâm y tế gần nhất để được điều trị.",
+        "head": "Viêm màng não mủ",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "thóp phồng",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Bác sĩ Trọng Tuấn khuyến cáo, nếu phụ huynh thấy trẻ có những dấu hiệu như quấy khóc, li bì, sốt cao, thóp phồng, co giật… cần nghĩ ngay đến viêm màng não mủ và đưa trẻ đến ngay trung tâm y tế gần nhất để được điều trị.",
+        "head": "Viêm màng não mủ",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "co giật",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Đặc biệt, bố mẹ không nên tự ý điều trị cho bé tại nhà trong khi chưa rõ bệnh lý bé mắc phải và chưa có chỉ định của bác sĩ.",
+        "head": "Viêm màng não mủ",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "điều trị của bác sĩ",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Nguyên tắc chung trong điều trị viêm màng não mủ là cần nhanh chóng được chẩn đoán, điều trị và theo dõi chặt chẽ tình trạng tiến triển của bệnh.",
+        "head": "Viêm màng não mủ",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "chẩn đoán",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Nguyên tắc chung trong điều trị viêm màng não mủ là cần nhanh chóng được chẩn đoán, điều trị và theo dõi chặt chẽ tình trạng tiến triển của bệnh.",
+        "head": "Viêm màng não mủ",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "điều trị",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Nguyên tắc chung trong điều trị viêm màng não mủ là cần nhanh chóng được chẩn đoán, điều trị và theo dõi chặt chẽ tình trạng tiến triển của bệnh.",
+        "head": "Viêm màng não mủ",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "theo dõi chặt chẽ tình trạng tiến triển của bệnh",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Trong điều trị viêm màng não mủ, liệu pháp sử dụng kháng sinh cần phải được chỉ định đúng và càng sớm càng tốt.",
+        "head": "Viêm màng não mủ",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "kháng sinh",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Trong trường hợp bệnh tiến triển nặng, cần tập trung các biện pháp điều trị tích cực để cứu sống được người bệnh và giảm thiểu tối đa các di chứng.",
+        "head": "Viêm màng não mủ",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "điều trị tích cực",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Trong trường hợp bệnh nhân hôn mê hoặc bệnh nhân có dấu hiệu nhiễm khuẩn nặng, đe dọa sốc nhiễm khuẩn thì cần được điều trị và chăm sóc tại phòng cấp cứu hoặc phòng điều trị tích cực.",
+        "head": "Viêm màng não mủ",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "điều trị và chăm sóc tại phòng cấp cứu",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Trong trường hợp bệnh nhân hôn mê hoặc bệnh nhân có dấu hiệu nhiễm khuẩn nặng, đe dọa sốc nhiễm khuẩn thì cần được điều trị và chăm sóc tại phòng cấp cứu hoặc phòng điều trị tích cực.",
+        "head": "Viêm màng não mủ",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "điều trị và chăm sóc tại phòng điều trị tích cực",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Với trường hợp suy hô hấp cần được thở oxy hoặc hỗ trợ hô hấp, trong trường hợp đặc biệt có thể thở máy nếu có chỉ định.",
+        "head": "Viêm màng não mủ",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "thở oxy",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Với trường hợp suy hô hấp cần được thở oxy hoặc hỗ trợ hô hấp, trong trường hợp đặc biệt có thể thở máy nếu có chỉ định.",
+        "head": "Viêm màng não mủ",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "hỗ trợ hô hấp",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Với trường hợp suy hô hấp cần được thở oxy hoặc hỗ trợ hô hấp, trong trường hợp đặc biệt có thể thở máy nếu có chỉ định.",
+        "head": "Viêm màng não mủ",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "thở máy",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Người bệnh cần được đảm bảo về thông khí, chống ứ đọng đàm dãi… trong trường hợp bệnh nhân không ăn được cần truyền dinh dưỡng qua đường tĩnh mạch hoặc cho ăn qua sonde.",
+        "head": "Viêm màng não mủ",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "truyền dinh dưỡng qua đường tĩnh mạch",
+        "tail_type": "treatment"
+    }
+]

@@ -1,0 +1,775 @@
+
+MERGE (o1:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o2:disease {id: 'ung_thư_tuyến_tiền_liệt_disease'})
+MERGE (o1)-[r0:relatedTo]->(o2)
+SET r0.text = 'Viêm tuyến tiền liệt thường không làm tăng nguy cơ ung thư tuyến tiền liệt.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o2:symptom {id: 'sức_khỏe_tinh_thần_symptom'})
+MERGE (o1)-[r1:affects]->(o2)
+SET r1.text = 'Tuy nhiên, tình trạng này có thể tái phát nhiều lần, ảnh hưởng đến sức khỏe tinh thần và gây ra các biến chứng rối loạn chức năng sinh dục, vô sinh, nhiễm trùng huyết…'
+
+MERGE (o1:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o2:symptom {id: 'rối_loạn_chức_năng_sinh_dục_symptom'})
+MERGE (o1)-[r2:affects]->(o2)
+SET r2.text = 'Tuy nhiên, tình trạng này có thể tái phát nhiều lần, ảnh hưởng đến sức khỏe tinh thần và gây ra các biến chứng rối loạn chức năng sinh dục, vô sinh, nhiễm trùng huyết…'
+
+MERGE (o1:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o2:symptom {id: 'vô_sinh_symptom'})
+MERGE (o1)-[r3:affects]->(o2)
+SET r3.text = 'Tuy nhiên, tình trạng này có thể tái phát nhiều lần, ảnh hưởng đến sức khỏe tinh thần và gây ra các biến chứng rối loạn chức năng sinh dục, vô sinh, nhiễm trùng huyết…'
+
+MERGE (o1:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o2:symptom {id: 'nhiễm_trùng_huyết_symptom'})
+MERGE (o1)-[r4:affects]->(o2)
+SET r4.text = 'Tuy nhiên, tình trạng này có thể tái phát nhiều lần, ảnh hưởng đến sức khỏe tinh thần và gây ra các biến chứng rối loạn chức năng sinh dục, vô sinh, nhiễm trùng huyết…'
+
+MERGE (o1:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o2:symptom {id: 'nhiễm_trùng_tại_tuyến_tiền_liệt_symptom'})
+MERGE (o1)-[r5:isSymptomOf]->(o2)
+SET r5.text = 'Viêm tuyến tiền liệt là thuật ngữ y khoa được dùng để chỉ tình trạng nhiễm trùng tại tuyến tiền liệt.'
+
+MERGE (o1:organ {id: 'tuyến_tiền_liệt_organ'})
+MERGE (o2:organ {id: 'hệ_tiết_niệu_-sinh_dục_organ'})
+MERGE (o1)-[r6:locatedIn]->(o2)
+SET r6.text = 'Tuyến tiền liệt là một cấu trúc thuộc hệ tiết niệu -sinh dục, chỉ có ở nam giới.'
+
+MERGE (o1:organ {id: 'tuyến_tiền_liệt_organ'})
+MERGE (o2:lifestyle {id: 'nam_giới_lifestyle'})
+MERGE (o1)-[r7:relatedTo]->(o2)
+SET r7.text = 'Tuyến tiền liệt là một cấu trúc thuộc hệ tiết niệu -sinh dục, chỉ có ở nam giới.'
+
+MERGE (o1:organ {id: 'tuyến_tiền_liệt_organ'})
+MERGE (o2:organ {id: 'bàng_quang_organ'})
+MERGE (o1)-[r8:locatedIn]->(o2)
+SET r8.text = 'Tuyến này nằm dưới bàng quang, bao bọc quanh niệu đạo sau, trọng lượng khoảng 20gram, có vai trò tiết ra dịch trong tinh dịch và hỗ trợ phóng tinh ở nam giới.'
+
+MERGE (o1:organ {id: 'tuyến_tiền_liệt_organ'})
+MERGE (o2:organ {id: 'niệu_đạo_organ'})
+MERGE (o1)-[r9:locatedIn]->(o2)
+SET r9.text = 'Tuyến này nằm dưới bàng quang, bao bọc quanh niệu đạo sau, trọng lượng khoảng 20gram, có vai trò tiết ra dịch trong tinh dịch và hỗ trợ phóng tinh ở nam giới.'
+
+MERGE (o1:organ {id: 'tuyến_tiền_liệt_organ'})
+MERGE (o2:symptom {id: 'tinh_dịch_symptom'})
+MERGE (o1)-[r10:affects]->(o2)
+SET r10.text = 'Tuyến này nằm dưới bàng quang, bao bọc quanh niệu đạo sau, trọng lượng khoảng 20gram, có vai trò tiết ra dịch trong tinh dịch và hỗ trợ phóng tinh ở nam giới.'
+
+MERGE (o1:organ {id: 'tuyến_tiền_liệt_organ'})
+MERGE (o2:symptom {id: 'phóng_tinh_symptom'})
+MERGE (o1)-[r11:affects]->(o2)
+SET r11.text = 'Tuyến này nằm dưới bàng quang, bao bọc quanh niệu đạo sau, trọng lượng khoảng 20gram, có vai trò tiết ra dịch trong tinh dịch và hỗ trợ phóng tinh ở nam giới.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o2:symptom {id: 'cấp_tính_symptom'})
+MERGE (o1)-[r12:isSymptomOf]->(o2)
+SET r12.text = 'Bệnh biểu hiện ở dạng cấp tính hay mạn tính.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o2:symptom {id: 'mạn_tính_symptom'})
+MERGE (o1)-[r13:isSymptomOf]->(o2)
+SET r13.text = 'Bệnh biểu hiện ở dạng cấp tính hay mạn tính.'
+
+MERGE (o1:cause {id: 'vi_khuẩn_cause'})
+MERGE (o2:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o1)-[r14:causes]->(o2)
+SET r14.text = 'Tác nhân gây bệnh có thể là vi khuẩn hoặc không phải vi khuẩn.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o2:lifestyle {id: 'nam_giới_trung_niên_lifestyle'})
+MERGE (o1)-[r15:associatedWith]->(o2)
+SET r15.text = 'Độ tuổi thường bị viêm tuyến tiền liệt là nam giới trung niên khoảng 50 tuổi hoặc trẻ tuổi hơn (dưới 40 tuổi).'
+
+MERGE (o1:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o2:lifestyle {id: 'nam_giới_trẻ_tuổi_lifestyle'})
+MERGE (o1)-[r16:associatedWith]->(o2)
+SET r16.text = 'Độ tuổi thường bị viêm tuyến tiền liệt là nam giới trung niên khoảng 50 tuổi hoặc trẻ tuổi hơn (dưới 40 tuổi).'
+
+MERGE (o1:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o2:symptom {id: 'sức_khỏe_symptom'})
+MERGE (o1)-[r17:affects]->(o2)
+SET r17.text = 'Nếu không được phát hiện và điều trị kịp thời, bệnh có thể gây ra các biến chứng nghiêm trọng cho sức khỏe, tinh thần và ảnh hưởng đến khả năng sinh sản của nam giới.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o2:symptom {id: 'tinh_thần_symptom'})
+MERGE (o1)-[r18:affects]->(o2)
+SET r18.text = 'Nếu không được phát hiện và điều trị kịp thời, bệnh có thể gây ra các biến chứng nghiêm trọng cho sức khỏe, tinh thần và ảnh hưởng đến khả năng sinh sản của nam giới.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o2:symptom {id: 'khả_năng_sinh_sản_symptom'})
+MERGE (o1)-[r19:affects]->(o2)
+SET r19.text = 'Nếu không được phát hiện và điều trị kịp thời, bệnh có thể gây ra các biến chứng nghiêm trọng cho sức khỏe, tinh thần và ảnh hưởng đến khả năng sinh sản của nam giới.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o2:cause {id: 'nhiễm_trùng_đường_tiểu_cause'})
+MERGE (o1)-[r20:causedBy]->(o2)
+SET r20.text = 'Theo các chuyên gia tiết niệu, Trung tâm Tiết niệu thận học, BVĐK Tâm Anh, có nhiều nguyên nhân gây viêm tuyến tiền liệt.'
+
+MERGE (o1:cause {id: 'vi_khuẩn_cause'})
+MERGE (o2:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o1)-[r21:causes]->(o2)
+SET r21.text = 'Đường tiết niệu là một trong những cơ quan chứa rất nhiều vi khuẩn như E.coli, phẩy khuẩn tả Proteus, nấm Mycoplasma, Enterobacter… Các vi khuẩn này có thể xâm nhập vào tuyến tiền liệt qua niệu đạo gây viêm tuyến tiền liệt cấp tính và mạn tính.'
+
+MERGE (o1:cause {id: 'vi_khuẩn_cause'})
+MERGE (o2:organ {id: 'đường_tiết_niệu_organ'})
+MERGE (o1)-[r22:locatedIn]->(o2)
+SET r22.text = 'Đường tiết niệu là một trong những cơ quan chứa rất nhiều vi khuẩn như E.coli, phẩy khuẩn tả Proteus, nấm Mycoplasma, Enterobacter… Các vi khuẩn này có thể xâm nhập vào tuyến tiền liệt qua niệu đạo gây viêm tuyến tiền liệt cấp tính và mạn tính.'
+
+MERGE (o1:cause {id: 'vi_khuẩn_cause'})
+MERGE (o2:disease {id: 'viêm_tuyến_tiền_liệt_cấp_tính_disease'})
+MERGE (o1)-[r23:causes]->(o2)
+SET r23.text = 'Đường tiết niệu là một trong những cơ quan chứa rất nhiều vi khuẩn như E.coli, phẩy khuẩn tả Proteus, nấm Mycoplasma, Enterobacter… Các vi khuẩn này có thể xâm nhập vào tuyến tiền liệt qua niệu đạo gây viêm tuyến tiền liệt cấp tính và mạn tính.'
+
+MERGE (o1:cause {id: 'vi_khuẩn_cause'})
+MERGE (o2:disease {id: 'viêm_tuyến_tiền_liệt_mạn_tính_disease'})
+MERGE (o1)-[r24:causes]->(o2)
+SET r24.text = 'Đường tiết niệu là một trong những cơ quan chứa rất nhiều vi khuẩn như E.coli, phẩy khuẩn tả Proteus, nấm Mycoplasma, Enterobacter… Các vi khuẩn này có thể xâm nhập vào tuyến tiền liệt qua niệu đạo gây viêm tuyến tiền liệt cấp tính và mạn tính.'
+
+MERGE (o1:cause {id: 'vi_khuẩn_cause'})
+MERGE (o2:organ {id: 'tuyến_tiền_liệt_organ'})
+MERGE (o1)-[r25:locatedIn]->(o2)
+SET r25.text = 'Đường tiết niệu là một trong những cơ quan chứa rất nhiều vi khuẩn như E.coli, phẩy khuẩn tả Proteus, nấm Mycoplasma, Enterobacter… Các vi khuẩn này có thể xâm nhập vào tuyến tiền liệt qua niệu đạo gây viêm tuyến tiền liệt cấp tính và mạn tính.'
+
+MERGE (o1:cause {id: 'vi_khuẩn_cause'})
+MERGE (o2:organ {id: 'niệu_đạo_organ'})
+MERGE (o1)-[r26:locatedIn]->(o2)
+SET r26.text = 'Đường tiết niệu là một trong những cơ quan chứa rất nhiều vi khuẩn như E.coli, phẩy khuẩn tả Proteus, nấm Mycoplasma, Enterobacter… Các vi khuẩn này có thể xâm nhập vào tuyến tiền liệt qua niệu đạo gây viêm tuyến tiền liệt cấp tính và mạn tính.'
+
+MERGE (o1:cause {id: 'vi_khuẩn_cause'})
+MERGE (o2:disease {id: 'viêm_tinh_hoàn_disease'})
+MERGE (o1)-[r27:causes]->(o2)
+SET r27.text = 'Đôi khi, vi khuẩn còn có thể ngược theo đường dẫn tinh gây viêm tinh hoàn, viêm mào tinh…'
+
+MERGE (o1:cause {id: 'vi_khuẩn_cause'})
+MERGE (o2:disease {id: 'viêm_mào_tinh_disease'})
+MERGE (o1)-[r28:causes]->(o2)
+SET r28.text = 'Đôi khi, vi khuẩn còn có thể ngược theo đường dẫn tinh gây viêm tinh hoàn, viêm mào tinh…'
+
+MERGE (o1:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o2:organ {id: 'hệ_thống_miễn_dịch_organ'})
+MERGE (o1)-[r29:causedBy]->(o2)
+SET r29.text = 'Tình trạng viêm tuyến tiền liệt cũng có thể là phản ứng của hệ thống miễn dịch với tình trạng nhiễm trùng đường tiểu.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o2:cause {id: 'nhiễm_trùng_đường_tiểu_cause'})
+MERGE (o1)-[r30:causedBy]->(o2)
+SET r30.text = 'Tình trạng viêm tuyến tiền liệt cũng có thể là phản ứng của hệ thống miễn dịch với tình trạng nhiễm trùng đường tiểu.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o2:treatment {id: 'thủ_thuật_có_liên_quan_đến_niệu_đạo_treatment'})
+MERGE (o1)-[r31:causedBy]->(o2)
+SET r31.text = 'Một số trường hợp viêm tuyến tiền liệt không liên quan đến nguyên nhân vi khuẩn.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o2:treatment {id: 'sinh_thiết_tuyến_tiền_liệt_treatment'})
+MERGE (o1)-[r32:causedBy]->(o2)
+SET r32.text = 'Một số trường hợp viêm tuyến tiền liệt không liên quan đến nguyên nhân vi khuẩn.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o2:cause {id: 'chấn_thương_cause'})
+MERGE (o1)-[r33:causedBy]->(o2)
+SET r33.text = 'Một số trường hợp viêm tuyến tiền liệt không liên quan đến nguyên nhân vi khuẩn.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o2:cause {id: 'sang_chấn_khi_chơi_thể_thao_cause'})
+MERGE (o1)-[r34:causedBy]->(o2)
+SET r34.text = 'Một số trường hợp viêm tuyến tiền liệt không liên quan đến nguyên nhân vi khuẩn.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o2:cause {id: 'vận_động_mạnh_cause'})
+MERGE (o1)-[r35:causedBy]->(o2)
+SET r35.text = 'Một số trường hợp viêm tuyến tiền liệt không liên quan đến nguyên nhân vi khuẩn.'
+
+MERGE (o1:symptom {id: 'triệu_chứng_viêm_tuyến_tiền_liệt_symptom'})
+MERGE (o2:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o1)-[r36:isSymptomOf]->(o2)
+SET r36.text = 'Triệu chứng viêm tuyến tiền liệt khác nhau tùy theo tình trạng bệnh, nguyên nhân gây viêm.'
+
+MERGE (o1:symptom {id: 'đau_rát_khi_đi_tiểu_symptom'})
+MERGE (o2:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o1)-[r37:isSymptomOf]->(o2)
+SET r37.text = 'Nhìn chung, khi bị viêm tuyến tiền liệt ở nam giới, người bệnh sẽ có các dấu hiệu:  Đau rát khi đi tiểu Tiểu khó, tiểu nhỏ giọt, tiểu ngập ngừng Tiểu nhiều, tiểu đêm Cảm giác muốn đi tiểu liên tục Nước tiểu đục và/hoặc có máu Đau bụng, đau bẹn, đau lưng dưới Đau khu vực đáy chậu như ở giữa bìu, trực tràng Đau dương vật, tinh hoàn Đau khi xuất tinh Đau nhức cơ, ớn lạnh, sốt'
+
+MERGE (o1:symptom {id: 'tiểu_khó__tiểu_nhỏ_giọt__tiểu_ngập_ngừng_symptom'})
+MERGE (o2:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o1)-[r38:isSymptomOf]->(o2)
+SET r38.text = 'Nhìn chung, khi bị viêm tuyến tiền liệt ở nam giới, người bệnh sẽ có các dấu hiệu:  Đau rát khi đi tiểu Tiểu khó, tiểu nhỏ giọt, tiểu ngập ngừng Tiểu nhiều, tiểu đêm Cảm giác muốn đi tiểu liên tục Nước tiểu đục và/hoặc có máu Đau bụng, đau bẹn, đau lưng dưới Đau khu vực đáy chậu như ở giữa bìu, trực tràng Đau dương vật, tinh hoàn Đau khi xuất tinh Đau nhức cơ, ớn lạnh, sốt'
+
+MERGE (o1:symptom {id: 'tiểu_nhiều__tiểu_đêm_symptom'})
+MERGE (o2:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o1)-[r39:isSymptomOf]->(o2)
+SET r39.text = 'Nhìn chung, khi bị viêm tuyến tiền liệt ở nam giới, người bệnh sẽ có các dấu hiệu:  Đau rát khi đi tiểu Tiểu khó, tiểu nhỏ giọt, tiểu ngập ngừng Tiểu nhiều, tiểu đêm Cảm giác muốn đi tiểu liên tục Nước tiểu đục và/hoặc có máu Đau bụng, đau bẹn, đau lưng dưới Đau khu vực đáy chậu như ở giữa bìu, trực tràng Đau dương vật, tinh hoàn Đau khi xuất tinh Đau nhức cơ, ớn lạnh, sốt'
+
+MERGE (o1:symptom {id: 'cảm_giác_muốn_đi_tiểu_liên_tục_symptom'})
+MERGE (o2:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o1)-[r40:isSymptomOf]->(o2)
+SET r40.text = 'Nhìn chung, khi bị viêm tuyến tiền liệt ở nam giới, người bệnh sẽ có các dấu hiệu:  Đau rát khi đi tiểu Tiểu khó, tiểu nhỏ giọt, tiểu ngập ngừng Tiểu nhiều, tiểu đêm Cảm giác muốn đi tiểu liên tục Nước tiểu đục và/hoặc có máu Đau bụng, đau bẹn, đau lưng dưới Đau khu vực đáy chậu như ở giữa bìu, trực tràng Đau dương vật, tinh hoàn Đau khi xuất tinh Đau nhức cơ, ớn lạnh, sốt'
+
+MERGE (o1:symptom {id: 'nước_tiểu_đục_và/hoặc_có_máu_symptom'})
+MERGE (o2:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o1)-[r41:isSymptomOf]->(o2)
+SET r41.text = 'Nhìn chung, khi bị viêm tuyến tiền liệt ở nam giới, người bệnh sẽ có các dấu hiệu:  Đau rát khi đi tiểu Tiểu khó, tiểu nhỏ giọt, tiểu ngập ngừng Tiểu nhiều, tiểu đêm Cảm giác muốn đi tiểu liên tục Nước tiểu đục và/hoặc có máu Đau bụng, đau bẹn, đau lưng dưới Đau khu vực đáy chậu như ở giữa bìu, trực tràng Đau dương vật, tinh hoàn Đau khi xuất tinh Đau nhức cơ, ớn lạnh, sốt'
+
+MERGE (o1:symptom {id: 'đau_bụng__đau_bẹn__đau_lưng_dưới_symptom'})
+MERGE (o2:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o1)-[r42:isSymptomOf]->(o2)
+SET r42.text = 'Nhìn chung, khi bị viêm tuyến tiền liệt ở nam giới, người bệnh sẽ có các dấu hiệu:  Đau rát khi đi tiểu Tiểu khó, tiểu nhỏ giọt, tiểu ngập ngừng Tiểu nhiều, tiểu đêm Cảm giác muốn đi tiểu liên tục Nước tiểu đục và/hoặc có máu Đau bụng, đau bẹn, đau lưng dưới Đau khu vực đáy chậu như ở giữa bìu, trực tràng Đau dương vật, tinh hoàn Đau khi xuất tinh Đau nhức cơ, ớn lạnh, sốt'
+
+MERGE (o1:symptom {id: 'đau_khu_vực_đáy_chậu_như_ở_giữa_bìu__trực_tràng_symptom'})
+MERGE (o2:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o1)-[r43:isSymptomOf]->(o2)
+SET r43.text = 'Nhìn chung, khi bị viêm tuyến tiền liệt ở nam giới, người bệnh sẽ có các dấu hiệu:  Đau rát khi đi tiểu Tiểu khó, tiểu nhỏ giọt, tiểu ngập ngừng Tiểu nhiều, tiểu đêm Cảm giác muốn đi tiểu liên tục Nước tiểu đục và/hoặc có máu Đau bụng, đau bẹn, đau lưng dưới Đau khu vực đáy chậu như ở giữa bìu, trực tràng Đau dương vật, tinh hoàn Đau khi xuất tinh Đau nhức cơ, ớn lạnh, sốt'
+
+MERGE (o1:symptom {id: 'đau_dương_vật__tinh_hoàn_symptom'})
+MERGE (o2:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o1)-[r44:isSymptomOf]->(o2)
+SET r44.text = 'Nhìn chung, khi bị viêm tuyến tiền liệt ở nam giới, người bệnh sẽ có các dấu hiệu:  Đau rát khi đi tiểu Tiểu khó, tiểu nhỏ giọt, tiểu ngập ngừng Tiểu nhiều, tiểu đêm Cảm giác muốn đi tiểu liên tục Nước tiểu đục và/hoặc có máu Đau bụng, đau bẹn, đau lưng dưới Đau khu vực đáy chậu như ở giữa bìu, trực tràng Đau dương vật, tinh hoàn Đau khi xuất tinh Đau nhức cơ, ớn lạnh, sốt'
+
+MERGE (o1:symptom {id: 'đau_khi_xuất_tinh_symptom'})
+MERGE (o2:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o1)-[r45:isSymptomOf]->(o2)
+SET r45.text = 'Nhìn chung, khi bị viêm tuyến tiền liệt ở nam giới, người bệnh sẽ có các dấu hiệu:  Đau rát khi đi tiểu Tiểu khó, tiểu nhỏ giọt, tiểu ngập ngừng Tiểu nhiều, tiểu đêm Cảm giác muốn đi tiểu liên tục Nước tiểu đục và/hoặc có máu Đau bụng, đau bẹn, đau lưng dưới Đau khu vực đáy chậu như ở giữa bìu, trực tràng Đau dương vật, tinh hoàn Đau khi xuất tinh Đau nhức cơ, ớn lạnh, sốt'
+
+MERGE (o1:symptom {id: 'đau_nhức_cơ__ớn_lạnh__sốt_symptom'})
+MERGE (o2:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o1)-[r46:isSymptomOf]->(o2)
+SET r46.text = 'Nhìn chung, khi bị viêm tuyến tiền liệt ở nam giới, người bệnh sẽ có các dấu hiệu:  Đau rát khi đi tiểu Tiểu khó, tiểu nhỏ giọt, tiểu ngập ngừng Tiểu nhiều, tiểu đêm Cảm giác muốn đi tiểu liên tục Nước tiểu đục và/hoặc có máu Đau bụng, đau bẹn, đau lưng dưới Đau khu vực đáy chậu như ở giữa bìu, trực tràng Đau dương vật, tinh hoàn Đau khi xuất tinh Đau nhức cơ, ớn lạnh, sốt'
+
+MERGE (o1:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o2:cause {id: 'nguyên_nhân_gây_bệnh_cause'})
+MERGE (o1)-[r47:causedBy]->(o2)
+SET r47.text = 'Dựa trên nguyên nhân gây bệnh, các chuyên gia phân loại viêm tuyến tiền liệt thành 4 dạng:'
+
+MERGE (o1:disease {id: 'viêm_tuyến_tiền_liệt_cấp_tính_disease'})
+MERGE (o2:cause {id: 'nguyên_nhân_vi_khuẩn_cause'})
+MERGE (o1)-[r48:causedBy]->(o2)
+SET r48.text = 'Nam giới bị viêm tuyến tiền liệt cấp tính do nguyên nhân vi khuẩn thường có các triệu chứng đột ngột, nghiêm trọng.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_tiền_liệt_cấp_tính_disease'})
+MERGE (o2:symptom {id: 'triệu_chứng_đột_ngột__nghiêm_trọng_symptom'})
+MERGE (o1)-[r49:isSymptomOf]->(o2)
+SET r49.text = 'Nam giới bị viêm tuyến tiền liệt cấp tính do nguyên nhân vi khuẩn thường có các triệu chứng đột ngột, nghiêm trọng.'
+
+MERGE (o1:symptom {id: 'nóng_rát__đau_buốt_khi_đi_tiểu_symptom'})
+MERGE (o2:disease {id: 'viêm_tuyến_tiền_liệt_cấp_tính_disease'})
+MERGE (o1)-[r50:isSymptomOf]->(o2)
+SET r50.text = 'Người bệnh có biểu hiện nóng rát, đau buốt khi đi tiểu, đau bụng, buồn nôn, ói mửa, nhức người, mỏi cơ, ớn lạnh, sốt…'
+
+MERGE (o1:symptom {id: 'đau_bụng_symptom'})
+MERGE (o2:disease {id: 'viêm_tuyến_tiền_liệt_cấp_tính_disease'})
+MERGE (o1)-[r51:isSymptomOf]->(o2)
+SET r51.text = 'Người bệnh có biểu hiện nóng rát, đau buốt khi đi tiểu, đau bụng, buồn nôn, ói mửa, nhức người, mỏi cơ, ớn lạnh, sốt…'
+
+MERGE (o1:symptom {id: 'buồn_nôn__ói_mửa_symptom'})
+MERGE (o2:disease {id: 'viêm_tuyến_tiền_liệt_cấp_tính_disease'})
+MERGE (o1)-[r52:isSymptomOf]->(o2)
+SET r52.text = 'Người bệnh có biểu hiện nóng rát, đau buốt khi đi tiểu, đau bụng, buồn nôn, ói mửa, nhức người, mỏi cơ, ớn lạnh, sốt…'
+
+MERGE (o1:symptom {id: 'nhức_người__mỏi_cơ_symptom'})
+MERGE (o2:disease {id: 'viêm_tuyến_tiền_liệt_cấp_tính_disease'})
+MERGE (o1)-[r53:isSymptomOf]->(o2)
+SET r53.text = 'Người bệnh có biểu hiện nóng rát, đau buốt khi đi tiểu, đau bụng, buồn nôn, ói mửa, nhức người, mỏi cơ, ớn lạnh, sốt…'
+
+MERGE (o1:symptom {id: 'ớn_lạnh__sốt_symptom'})
+MERGE (o2:disease {id: 'viêm_tuyến_tiền_liệt_cấp_tính_disease'})
+MERGE (o1)-[r54:isSymptomOf]->(o2)
+SET r54.text = 'Người bệnh có biểu hiện nóng rát, đau buốt khi đi tiểu, đau bụng, buồn nôn, ói mửa, nhức người, mỏi cơ, ớn lạnh, sốt…'
+
+MERGE (o1:symptom {id: 'máu_trong_nước_tiểu__tinh_dịch_symptom'})
+MERGE (o2:disease {id: 'viêm_tuyến_tiền_liệt_cấp_tính_disease'})
+MERGE (o1)-[r55:isSymptomOf]->(o2)
+SET r55.text = 'Người bệnh có thể ngửi thấy mùi khó chịu hoặc thấy máu trong nước tiểu, tinh dịch.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_tiền_liệt_mạn_tính_disease'})
+MERGE (o2:cause {id: 'vi_khuẩn_cause'})
+MERGE (o1)-[r56:causedBy]->(o2)
+SET r56.text = 'Với viêm tuyến tiền liệt mạn tính do vi khuẩn, các triệu chứng nhiễm trùng diễn ra, tái phát nhiều lần.'
+
+MERGE (o1:symptom {id: 'triệu_chứng_không_nghiêm_trọng_symptom'})
+MERGE (o2:disease {id: 'viêm_tuyến_tiền_liệt_mạn_tính_disease'})
+MERGE (o1)-[r57:isSymptomOf]->(o2)
+SET r57.text = 'Triệu chứng không nghiêm trọng như nhiễm trùng cấp tính, phát triển và duy trì ở mức độ nhẹ.'
+
+MERGE (o1:symptom {id: 'tiểu_rát__tiểu_buốt_symptom'})
+MERGE (o2:disease {id: 'viêm_tuyến_tiền_liệt_mạn_tính_disease'})
+MERGE (o1)-[r58:isSymptomOf]->(o2)
+SET r58.text = 'Các triệu chứng của loại viêm tuyến tiền liệt này thường kéo dài hơn 3 tháng, bao gồm: tiểu rát, tiểu buốt, tiểu đêm, tiểu gấp, đau bụng dưới, đau lưng dưới, đau tinh hoàn hoặc dương vật, đau bàng quang, đau khi xuất tinh…'
+
+MERGE (o1:symptom {id: 'tiểu_đêm_symptom'})
+MERGE (o2:disease {id: 'viêm_tuyến_tiền_liệt_mạn_tính_disease'})
+MERGE (o1)-[r59:isSymptomOf]->(o2)
+SET r59.text = 'Các triệu chứng của loại viêm tuyến tiền liệt này thường kéo dài hơn 3 tháng, bao gồm: tiểu rát, tiểu buốt, tiểu đêm, tiểu gấp, đau bụng dưới, đau lưng dưới, đau tinh hoàn hoặc dương vật, đau bàng quang, đau khi xuất tinh…'
+
+MERGE (o1:symptom {id: 'tiểu_gấp_symptom'})
+MERGE (o2:disease {id: 'viêm_tuyến_tiền_liệt_mạn_tính_disease'})
+MERGE (o1)-[r60:isSymptomOf]->(o2)
+SET r60.text = 'Các triệu chứng của loại viêm tuyến tiền liệt này thường kéo dài hơn 3 tháng, bao gồm: tiểu rát, tiểu buốt, tiểu đêm, tiểu gấp, đau bụng dưới, đau lưng dưới, đau tinh hoàn hoặc dương vật, đau bàng quang, đau khi xuất tinh…'
+
+MERGE (o1:symptom {id: 'đau_bụng_dưới_symptom'})
+MERGE (o2:disease {id: 'viêm_tuyến_tiền_liệt_mạn_tính_disease'})
+MERGE (o1)-[r61:isSymptomOf]->(o2)
+SET r61.text = 'Các triệu chứng của loại viêm tuyến tiền liệt này thường kéo dài hơn 3 tháng, bao gồm: tiểu rát, tiểu buốt, tiểu đêm, tiểu gấp, đau bụng dưới, đau lưng dưới, đau tinh hoàn hoặc dương vật, đau bàng quang, đau khi xuất tinh…'
+
+MERGE (o1:symptom {id: 'đau_lưng_dưới_symptom'})
+MERGE (o2:disease {id: 'viêm_tuyến_tiền_liệt_mạn_tính_disease'})
+MERGE (o1)-[r62:isSymptomOf]->(o2)
+SET r62.text = 'Các triệu chứng của loại viêm tuyến tiền liệt này thường kéo dài hơn 3 tháng, bao gồm: tiểu rát, tiểu buốt, tiểu đêm, tiểu gấp, đau bụng dưới, đau lưng dưới, đau tinh hoàn hoặc dương vật, đau bàng quang, đau khi xuất tinh…'
+
+MERGE (o1:symptom {id: 'đau_tinh_hoàn_hoặc_dương_vật_symptom'})
+MERGE (o2:disease {id: 'viêm_tuyến_tiền_liệt_mạn_tính_disease'})
+MERGE (o1)-[r63:isSymptomOf]->(o2)
+SET r63.text = 'Các triệu chứng của loại viêm tuyến tiền liệt này thường kéo dài hơn 3 tháng, bao gồm: tiểu rát, tiểu buốt, tiểu đêm, tiểu gấp, đau bụng dưới, đau lưng dưới, đau tinh hoàn hoặc dương vật, đau bàng quang, đau khi xuất tinh…'
+
+MERGE (o1:symptom {id: 'đau_bàng_quang_symptom'})
+MERGE (o2:disease {id: 'viêm_tuyến_tiền_liệt_mạn_tính_disease'})
+MERGE (o1)-[r64:isSymptomOf]->(o2)
+SET r64.text = 'Các triệu chứng của loại viêm tuyến tiền liệt này thường kéo dài hơn 3 tháng, bao gồm: tiểu rát, tiểu buốt, tiểu đêm, tiểu gấp, đau bụng dưới, đau lưng dưới, đau tinh hoàn hoặc dương vật, đau bàng quang, đau khi xuất tinh…'
+
+MERGE (o1:symptom {id: 'đau_khi_xuất_tinh_symptom'})
+MERGE (o2:disease {id: 'viêm_tuyến_tiền_liệt_mạn_tính_disease'})
+MERGE (o1)-[r65:isSymptomOf]->(o2)
+SET r65.text = 'Các triệu chứng của loại viêm tuyến tiền liệt này thường kéo dài hơn 3 tháng, bao gồm: tiểu rát, tiểu buốt, tiểu đêm, tiểu gấp, đau bụng dưới, đau lưng dưới, đau tinh hoàn hoặc dương vật, đau bàng quang, đau khi xuất tinh…'
+
+MERGE (o1:disease {id: 'viêm_tuyến_tiền_liệt_không_do_vi_khuẩn_disease'})
+MERGE (o2:disease {id: 'hội_chứng_đau_vùng_chậu_mạn_tính__đau_vùng_chậu_tái_phát_disease'})
+MERGE (o1)-[r66:associatedWith]->(o2)
+SET r66.text = 'Nam giới bị viêm tuyến tiền liệt không do vi khuẩn thường có liên quan đến hội chứng đau vùng chậu mạn tính, đau vùng chậu tái phát…'
+
+MERGE (o1:disease {id: 'viêm_tuyến_tiền_liệt_không_do_vi_khuẩn_disease'})
+MERGE (o2:symptom {id: 'triệu_chứng_đường_tiết_niệu_symptom'})
+MERGE (o1)-[r67:isSymptomOf]->(o2)
+SET r67.text = 'Bệnh có các triệu chứng đường tiết niệu, nhưng không liên quan đến yếu tố vi khuẩn.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_tiền_liệt_không_do_vi_khuẩn_disease'})
+MERGE (o2:test {id: 'xét_nghiệm_test'})
+MERGE (o1)-[r68:diagnosedBy]->(o2)
+SET r68.text = 'Khi xét nghiệm không tìm ra vi khuẩn.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_tiền_liệt_mạn_tính_không_do_vi_khuẩn_disease'})
+MERGE (o2:symptom {id: 'triệu_chứng_tương_tự_như_viêm_tuyến_tiền_liệt_mạn_tính_do_vi_khuẩn_symptom'})
+MERGE (o1)-[r69:isSymptomOf]->(o2)
+SET r69.text = 'Người bị viêm tuyến tiền liệt mạn tính không do vi khuẩn có triệu chứng tương tự như viêm tuyến tiền liệt mạn tính do vi khuẩn.'
+
+MERGE (o1:symptom {id: 'tiểu_buốt_symptom'})
+MERGE (o2:disease {id: 'viêm_tuyến_tiền_liệt_mạn_tính_không_do_vi_khuẩn_disease'})
+MERGE (o1)-[r70:isSymptomOf]->(o2)
+SET r70.text = 'Người bệnh bị tiểu buốt, tiểu nhiều, có tế bào mủ trong nước tiểu.'
+
+MERGE (o1:symptom {id: 'tiểu_nhiều_symptom'})
+MERGE (o2:disease {id: 'viêm_tuyến_tiền_liệt_mạn_tính_không_do_vi_khuẩn_disease'})
+MERGE (o1)-[r71:isSymptomOf]->(o2)
+SET r71.text = 'Người bệnh bị tiểu buốt, tiểu nhiều, có tế bào mủ trong nước tiểu.'
+
+MERGE (o1:symptom {id: 'tế_bào_mủ_trong_nước_tiểu_symptom'})
+MERGE (o2:disease {id: 'viêm_tuyến_tiền_liệt_mạn_tính_không_do_vi_khuẩn_disease'})
+MERGE (o1)-[r72:isSymptomOf]->(o2)
+SET r72.text = 'Người bệnh bị tiểu buốt, tiểu nhiều, có tế bào mủ trong nước tiểu.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o2:symptom {id: 'không_có_triệu_chứng_symptom'})
+MERGE (o1)-[r73:isSymptomOf]->(o2)
+SET r73.text = 'Một dạng viêm tuyến tiền liệt khác không có triệu chứng.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o2:test {id: 'thăm_khám_các_bệnh_khác_test'})
+MERGE (o1)-[r74:diagnosedBy]->(o2)
+SET r74.text = 'Người bệnh thường không nhận ra mình có bệnh cho đến khi tình cờ phát hiện khi thăm khám các bệnh khác.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o2:lifestyle {id: 'chăm_sóc_sức_khỏe_lifestyle'})
+MERGE (o1)-[r75:treatedBy]->(o2)
+SET r75.text = 'Với trường hợp này, người bệnh thường không cần điều trị, chỉ chú ý chăm sóc sức khỏe và đến bệnh viện khi có triệu chứng rõ rệt hơn.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o2:treatment {id: 'đến_bệnh_viện_treatment'})
+MERGE (o1)-[r76:treatedBy]->(o2)
+SET r76.text = 'Với trường hợp này, người bệnh thường không cần điều trị, chỉ chú ý chăm sóc sức khỏe và đến bệnh viện khi có triệu chứng rõ rệt hơn.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o2:cause {id: 'yếu_tố_rủi_ro_cause'})
+MERGE (o1)-[r77:aggravatedBy]->(o2)
+SET r77.text = 'Các yếu tố rủi ro của bệnh lý viêm tuyến tiền liệt ở nam được các chuyên gia tiết niệu khuyến cáo bao gồm:'
+
+MERGE (o1:cause {id: 'tuổi_tác_cause'})
+MERGE (o2:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o1)-[r78:aggravatedBy]->(o2)
+SET r78.text = 'Tuổi tác: Nam thanh niên hoặc trung niên tuổi trên 50'
+
+MERGE (o1:cause {id: 'tiền_sử_bị_viêm_tuyến_tiền_liệt_cause'})
+MERGE (o2:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o1)-[r79:aggravatedBy]->(o2)
+SET r79.text = 'Tiền sử bị viêm tuyến tiền liệt'
+
+MERGE (o1:cause {id: 'nhiễm_trùng_đường_tiết_niệu_hoặc_cơ_quan_sinh_dục_cause'})
+MERGE (o2:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o1)-[r80:aggravatedBy]->(o2)
+SET r80.text = 'Người từng bị nhiễm trùng đường tiết niệu hoặc cơ quan sinh dục'
+
+MERGE (o1:disease {id: 'hội_chứng_suy_giảm_miễn_dịch_(hiv/aids)_disease'})
+MERGE (o2:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o1)-[r81:aggravatedBy]->(o2)
+SET r81.text = 'Người mắc Hội chứng suy giảm miễn dịch (HIV/AIDS)'
+
+MERGE (o1:treatment {id: 'đặt_ống_thông_tiểu_treatment'})
+MERGE (o2:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o1)-[r82:aggravatedBy]->(o2)
+SET r82.text = 'Người đặt ống thông tiểu để chẩn đoán và điều trị các bệnh đường tiết niệu'
+
+MERGE (o1:test {id: 'sinh_thiết_test'})
+MERGE (o2:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o1)-[r83:aggravatedBy]->(o2)
+SET r83.text = 'Người từng được sinh thiết để chẩn đoán nguy cơ ung thư'
+
+MERGE (o1:lifestyle {id: 'uống_ít_nước_lifestyle'})
+MERGE (o2:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o1)-[r84:aggravatedBy]->(o2)
+SET r84.text = 'Người uống ít nước khiến cho nước tiểu ít được tống xuất, tồn đọng vi khuẩn'
+
+MERGE (o1:cause {id: 'mất_nước_cause'})
+MERGE (o2:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o1)-[r85:aggravatedBy]->(o2)
+SET r85.text = 'Người thường bị mất nước do đặc thù công việc, bệnh lý…'
+
+MERGE (o1:cause {id: 'rung_lắc__chấn_động_cause'})
+MERGE (o2:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o1)-[r86:aggravatedBy]->(o2)
+SET r86.text = 'Người làm các công việc thường bị rung lắc, chấn động'
+
+MERGE (o1:cause {id: 'áp_lực_tâm_lý_cause'})
+MERGE (o2:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o1)-[r87:aggravatedBy]->(o2)
+SET r87.text = 'Các yếu tố nguy cơ bổ sung của viêm tuyến tiền liệt có thể bao gồm: áp lực tâm lý, người từng bị tổn thương dây thần kinh ở vùng chậu do phẫu thuật hoặc chấn thương do tập luyện thể dục thể thao…'
+
+MERGE (o1:cause {id: 'tổn_thương_dây_thần_kinh_ở_vùng_chậu_cause'})
+MERGE (o2:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o1)-[r88:aggravatedBy]->(o2)
+SET r88.text = 'Các yếu tố nguy cơ bổ sung của viêm tuyến tiền liệt có thể bao gồm: áp lực tâm lý, người từng bị tổn thương dây thần kinh ở vùng chậu do phẫu thuật hoặc chấn thương do tập luyện thể dục thể thao…'
+
+MERGE (o1:cause {id: 'hẹp_bao_quy_đầu_cause'})
+MERGE (o2:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o1)-[r89:aggravatedBy]->(o2)
+SET r89.text = 'Ngoài ra, người bị hẹp bao quy đầu hay có nguy cơ nhiễm trùng đường tiết niệu cũng dễ bị viêm tuyến tiền liệt hơn người khác.'
+
+MERGE (o1:symptom {id: 'nhiễm_trùng_máu_symptom'})
+MERGE (o2:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o1)-[r90:isSymptomOf]->(o2)
+SET r90.text = 'Tình trạng viêm tuyến tiền liệt cấp tính hoặc mạn tính có thể gây nên nhiều biến chứng (2) liên quan đến sức khỏe thể chất và sức khỏe tinh thần của người bệnh như:  Nhiễm trùng máu Viêm mào tinh hoàn Áp xe tuyến tiền liệt Nhiễm trùng lan đến các vùng lân cận như xương chậu, xương sống Rối loạn chức năng tình dục, điển hình như rối loạn cương dương Những thay đổi trong tinh trùng và tinh dịch có thể gây vô sinh Lo lắng, trầm cảm Tử vong, trong những trường hợp nghiêm trọng'
+
+MERGE (o1:symptom {id: 'viêm_mào_tinh_hoàn_symptom'})
+MERGE (o2:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o1)-[r91:isSymptomOf]->(o2)
+SET r91.text = 'Tình trạng viêm tuyến tiền liệt cấp tính hoặc mạn tính có thể gây nên nhiều biến chứng (2) liên quan đến sức khỏe thể chất và sức khỏe tinh thần của người bệnh như:  Nhiễm trùng máu Viêm mào tinh hoàn Áp xe tuyến tiền liệt Nhiễm trùng lan đến các vùng lân cận như xương chậu, xương sống Rối loạn chức năng tình dục, điển hình như rối loạn cương dương Những thay đổi trong tinh trùng và tinh dịch có thể gây vô sinh Lo lắng, trầm cảm Tử vong, trong những trường hợp nghiêm trọng'
+
+MERGE (o1:symptom {id: 'áp_xe_tuyến_tiền_liệt_symptom'})
+MERGE (o2:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o1)-[r92:isSymptomOf]->(o2)
+SET r92.text = 'Tình trạng viêm tuyến tiền liệt cấp tính hoặc mạn tính có thể gây nên nhiều biến chứng (2) liên quan đến sức khỏe thể chất và sức khỏe tinh thần của người bệnh như:  Nhiễm trùng máu Viêm mào tinh hoàn Áp xe tuyến tiền liệt Nhiễm trùng lan đến các vùng lân cận như xương chậu, xương sống Rối loạn chức năng tình dục, điển hình như rối loạn cương dương Những thay đổi trong tinh trùng và tinh dịch có thể gây vô sinh Lo lắng, trầm cảm Tử vong, trong những trường hợp nghiêm trọng'
+
+MERGE (o1:symptom {id: 'nhiễm_trùng_lan_đến_các_vùng_lân_cận_như_xương_chậu__xương_sống_symptom'})
+MERGE (o2:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o1)-[r93:isSymptomOf]->(o2)
+SET r93.text = 'Tình trạng viêm tuyến tiền liệt cấp tính hoặc mạn tính có thể gây nên nhiều biến chứng (2) liên quan đến sức khỏe thể chất và sức khỏe tinh thần của người bệnh như:  Nhiễm trùng máu Viêm mào tinh hoàn Áp xe tuyến tiền liệt Nhiễm trùng lan đến các vùng lân cận như xương chậu, xương sống Rối loạn chức năng tình dục, điển hình như rối loạn cương dương Những thay đổi trong tinh trùng và tinh dịch có thể gây vô sinh Lo lắng, trầm cảm Tử vong, trong những trường hợp nghiêm trọng'
+
+MERGE (o1:symptom {id: 'rối_loạn_chức_năng_tình_dục__điển_hình_như_rối_loạn_cương_dương_symptom'})
+MERGE (o2:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o1)-[r94:isSymptomOf]->(o2)
+SET r94.text = 'Tình trạng viêm tuyến tiền liệt cấp tính hoặc mạn tính có thể gây nên nhiều biến chứng (2) liên quan đến sức khỏe thể chất và sức khỏe tinh thần của người bệnh như:  Nhiễm trùng máu Viêm mào tinh hoàn Áp xe tuyến tiền liệt Nhiễm trùng lan đến các vùng lân cận như xương chậu, xương sống Rối loạn chức năng tình dục, điển hình như rối loạn cương dương Những thay đổi trong tinh trùng và tinh dịch có thể gây vô sinh Lo lắng, trầm cảm Tử vong, trong những trường hợp nghiêm trọng'
+
+MERGE (o1:symptom {id: 'những_thay_đổi_trong_tinh_trùng_và_tinh_dịch_có_thể_gây_vô_sinh_symptom'})
+MERGE (o2:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o1)-[r95:isSymptomOf]->(o2)
+SET r95.text = 'Tình trạng viêm tuyến tiền liệt cấp tính hoặc mạn tính có thể gây nên nhiều biến chứng (2) liên quan đến sức khỏe thể chất và sức khỏe tinh thần của người bệnh như:  Nhiễm trùng máu Viêm mào tinh hoàn Áp xe tuyến tiền liệt Nhiễm trùng lan đến các vùng lân cận như xương chậu, xương sống Rối loạn chức năng tình dục, điển hình như rối loạn cương dương Những thay đổi trong tinh trùng và tinh dịch có thể gây vô sinh Lo lắng, trầm cảm Tử vong, trong những trường hợp nghiêm trọng'
+
+MERGE (o1:symptom {id: 'lo_lắng__trầm_cảm_symptom'})
+MERGE (o2:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o1)-[r96:isSymptomOf]->(o2)
+SET r96.text = 'Tình trạng viêm tuyến tiền liệt cấp tính hoặc mạn tính có thể gây nên nhiều biến chứng (2) liên quan đến sức khỏe thể chất và sức khỏe tinh thần của người bệnh như:  Nhiễm trùng máu Viêm mào tinh hoàn Áp xe tuyến tiền liệt Nhiễm trùng lan đến các vùng lân cận như xương chậu, xương sống Rối loạn chức năng tình dục, điển hình như rối loạn cương dương Những thay đổi trong tinh trùng và tinh dịch có thể gây vô sinh Lo lắng, trầm cảm Tử vong, trong những trường hợp nghiêm trọng'
+
+MERGE (o1:symptom {id: 'tử_vong_symptom'})
+MERGE (o2:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o1)-[r97:isSymptomOf]->(o2)
+SET r97.text = 'Tình trạng viêm tuyến tiền liệt cấp tính hoặc mạn tính có thể gây nên nhiều biến chứng (2) liên quan đến sức khỏe thể chất và sức khỏe tinh thần của người bệnh như:  Nhiễm trùng máu Viêm mào tinh hoàn Áp xe tuyến tiền liệt Nhiễm trùng lan đến các vùng lân cận như xương chậu, xương sống Rối loạn chức năng tình dục, điển hình như rối loạn cương dương Những thay đổi trong tinh trùng và tinh dịch có thể gây vô sinh Lo lắng, trầm cảm Tử vong, trong những trường hợp nghiêm trọng'
+
+MERGE (o1:symptom {id: 'chảy_máu__nhất_là_sau_khi_quan_hệ_tình_dục_symptom'})
+MERGE (o2:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o1)-[r98:isSymptomOf]->(o2)
+SET r98.text = 'Khi bị viêm tuyến tiền liệt, người bệnh có thể có triệu chứng hoặc không. Tuy nhiên, nếu nhận thấy những biểu hiện sau đây thì nên đến ngay các cơ quan y tế:  Chảy máu, nhất là sau khi quan hệ tình dục Xuất tinh bất thường, xuất tinh có lẫn máu Xuất hiện các cơn đau nặng ở vùng chậu, lưng dưới'
+
+MERGE (o1:symptom {id: 'xuất_tinh_bất_thường__xuất_tinh_có_lẫn_máu_symptom'})
+MERGE (o2:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o1)-[r99:isSymptomOf]->(o2)
+SET r99.text = 'Khi bị viêm tuyến tiền liệt, người bệnh có thể có triệu chứng hoặc không. Tuy nhiên, nếu nhận thấy những biểu hiện sau đây thì nên đến ngay các cơ quan y tế:  Chảy máu, nhất là sau khi quan hệ tình dục Xuất tinh bất thường, xuất tinh có lẫn máu Xuất hiện các cơn đau nặng ở vùng chậu, lưng dưới'
+
+MERGE (o1:symptom {id: 'xuất_hiện_các_cơn_đau_nặng_ở_vùng_chậu__lưng_dưới_symptom'})
+MERGE (o2:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o1)-[r100:isSymptomOf]->(o2)
+SET r100.text = 'Khi bị viêm tuyến tiền liệt, người bệnh có thể có triệu chứng hoặc không. Tuy nhiên, nếu nhận thấy những biểu hiện sau đây thì nên đến ngay các cơ quan y tế:  Chảy máu, nhất là sau khi quan hệ tình dục Xuất tinh bất thường, xuất tinh có lẫn máu Xuất hiện các cơn đau nặng ở vùng chậu, lưng dưới'
+
+MERGE (o1:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o2:test {id: 'thăm_khám_tuyến_tiền_liệt_bằng_ngón_tay_qua_ngả_trực_tràng_test'})
+MERGE (o1)-[r101:diagnosedBy]->(o2)
+SET r101.text = 'Bác sĩ chuyên khoa chẩn đoán viêm tuyến tiền liệt dựa trên tiền sử bệnh, tình trạng sức khỏe, đặc biệt bác sĩ sẽ thăm khám tuyến tiền liệt bằng ngón tay qua ngả trực tràng để đánh giá các đặc điểm của viêm tuyến tiền liệt hoặc phát hiện các tổn thương có nguy cơ ác tính, và các xét nghiệm cận lâm sàng.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o2:test {id: 'xét_nghiệm_cận_lâm_sàng_test'})
+MERGE (o1)-[r102:diagnosedBy]->(o2)
+SET r102.text = 'Bác sĩ chuyên khoa chẩn đoán viêm tuyến tiền liệt dựa trên tiền sử bệnh, tình trạng sức khỏe, đặc biệt bác sĩ sẽ thăm khám tuyến tiền liệt bằng ngón tay qua ngả trực tràng để đánh giá các đặc điểm của viêm tuyến tiền liệt hoặc phát hiện các tổn thương có nguy cơ ác tính, và các xét nghiệm cận lâm sàng.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o2:test {id: 'phân_tích_nước_tiểu_test'})
+MERGE (o1)-[r103:diagnosedBy]->(o2)
+SET r103.text = 'Việc phân tích nước tiểu để tìm kiếm vi khuẩn, máu và các yếu tố khác có nguy cơ gây viêm tuyến tiền liệt hoặc do viêm tuyến tiền liệt gây ra.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o2:test {id: 'nuôi_cấy_nước_tiểu_test'})
+MERGE (o1)-[r104:diagnosedBy]->(o2)
+SET r104.text = 'Nuôi cấy nước tiểu trong phòng thí nghiệm giúp tìm ra loại vi khuẩn đã tấn công vào tuyến tiền liệt và dự kiến loại kháng sinh phù hợp để điều trị.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o2:test {id: 'chọc_hút_lấy_mủ_từ_tuyến_tiền_liệt_test'})
+MERGE (o1)-[r105:diagnosedBy]->(o2)
+SET r105.text = 'Động tác thăm khám này được bác sĩ chuyên khoa thực hiện, nhằm đánh giá kích thước, mật độ, tính đàn hồi của tuyến tiền liệt. Một số trường hợp, bác sĩ có thể chọc hút lấy mủ từ tuyến tiền liệt đem đi cấy và làm kháng sinh đồ.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o2:test {id: 'cấy_dịch_niệu_đạo_test'})
+MERGE (o1)-[r106:diagnosedBy]->(o2)
+SET r106.text = 'Tương tự như cấy nước tiểu, việc cấy dịch niệu đạo trong phòng thí nghiệm cũng giúp xác định chủng vi khuẩn và xây dựng phác đồ điều trị phù hợp.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o2:test {id: 'nội_soi_bàng_quang_test'})
+MERGE (o1)-[r107:diagnosedBy]->(o2)
+SET r107.text = 'Nội soi bàng quang giúp bác sĩ khảo sát đường tiểu dưới để tầm soát, chẩn đoán, theo dõi tình hình và đánh giá kết quả điều trị. Hoặc có thể cắt đốt phá ổ áp xe nếu viêm tuyến tiền liệt bị áp xe hóa.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o2:test {id: 'siêu_âm_test'})
+MERGE (o1)-[r108:diagnosedBy]->(o2)
+SET r108.text = 'Đây là một trong những biện pháp chẩn đoán hình ảnh phổ biến, giúp xác định kích thước tuyến tiền liệt, tình trạng các mô nhu, khối u, ổ viêm… Ngoài giúp xác định nguy cơ viêm tuyến tiền liệt, siêu âm còn có thể giúp phát hiện những dấu hiệu ban đầu của ung thư ở bộ phận này.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o2:test {id: 'chụp_cộng_hưởng_từ_test'})
+MERGE (o1)-[r109:diagnosedBy]->(o2)
+SET r109.text = 'Phương pháp chụp cộng hưởng từ cho phép khảo sát tuyến tiền liệt một cách toàn diện, nhằm đánh giá nguy cơ nhiễm trùng để có biện pháp can thiệp phù hợp. Trong một số trường hợp, bác sĩ có thể chỉ định người bệnh thực hiện đo niệu động học, xét nghiệm máu nhằm tìm ra kháng nguyên đặc hiệu tuyến tiền liệt (PSA)… phục vụ cho công tác chẩn đoán viêm tuyến tiền liệt.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o2:test {id: 'đo_niệu_động_học_test'})
+MERGE (o1)-[r110:diagnosedBy]->(o2)
+SET r110.text = 'Phương pháp chụp cộng hưởng từ cho phép khảo sát tuyến tiền liệt một cách toàn diện, nhằm đánh giá nguy cơ nhiễm trùng để có biện pháp can thiệp phù hợp. Trong một số trường hợp, bác sĩ có thể chỉ định người bệnh thực hiện đo niệu động học, xét nghiệm máu nhằm tìm ra kháng nguyên đặc hiệu tuyến tiền liệt (PSA)… phục vụ cho công tác chẩn đoán viêm tuyến tiền liệt.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o2:test {id: 'xét_nghiệm_máu_test'})
+MERGE (o1)-[r111:diagnosedBy]->(o2)
+SET r111.text = 'Phương pháp chụp cộng hưởng từ cho phép khảo sát tuyến tiền liệt một cách toàn diện, nhằm đánh giá nguy cơ nhiễm trùng để có biện pháp can thiệp phù hợp. Trong một số trường hợp, bác sĩ có thể chỉ định người bệnh thực hiện đo niệu động học, xét nghiệm máu nhằm tìm ra kháng nguyên đặc hiệu tuyến tiền liệt (PSA)… phục vụ cho công tác chẩn đoán viêm tuyến tiền liệt.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o2:treatment {id: 'thuốc_kháng_sinh_treatment'})
+MERGE (o1)-[r112:treatedBy]->(o2)
+SET r112.text = 'Thuốc kháng sinh: Các loại thuốc kháng sinh như Levofloxacin, Ciprofloxacin… thường được bác sĩ chỉ định cho bệnh nhân bị viêm tuyến tiền liệt do nguyên nhân vi khuẩn.'
+
+MERGE (o1:cause {id: 'vi_khuẩn_cause'})
+MERGE (o2:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o1)-[r113:causes]->(o2)
+SET r113.text = 'Thuốc kháng sinh: Các loại thuốc kháng sinh như Levofloxacin, Ciprofloxacin… thường được bác sĩ chỉ định cho bệnh nhân bị viêm tuyến tiền liệt do nguyên nhân vi khuẩn. Người dùng thuốc kháng sinh phải tuân thủ nghiêm túc phác đồ điều trị để diệt sạch vi khuẩn, tránh nguy cơ tái phát và vi khuẩn kháng thuốc.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o2:treatment {id: 'thuốc_chẹn_alpha_treatment'})
+MERGE (o1)-[r114:treatedBy]->(o2)
+SET r114.text = 'Thuốc chẹn alpha: Nhóm thuốc này giúp giãn các cơ tuyến tiền liệt, cổ bàng quang để giải quyết các triệu chứng tiểu rát, tiểu buốt, tiểu nhiều lần…'
+
+MERGE (o1:treatment {id: 'thuốc_chẹn_alpha_treatment'})
+MERGE (o2:symptom {id: 'huyết_áp_symptom'})
+MERGE (o1)-[r115:affects]->(o2)
+SET r115.text = 'Thuốc chẹn alpha: Nhóm thuốc này giúp giãn các cơ tuyến tiền liệt, cổ bàng quang để giải quyết các triệu chứng tiểu rát, tiểu buốt, tiểu nhiều lần… Tác dụng phụ của thuốc chẹn alpha là hạ huyết áp, nên bác sĩ sẽ cân nhắc dùng thuốc này cho người có huyết áp thấp hay đang dùng thuốc hạ huyết áp.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o2:treatment {id: 'thuốc_chống_viêm__giảm_đau_treatment'})
+MERGE (o1)-[r116:treatedBy]->(o2)
+SET r116.text = 'Thuốc chống viêm, giảm đau: Các thuốc Ibuprofen, Piroxicam, Diclofenac, Paracetamol… hỗ trợ làm giảm các triệu chứng khó chịu khi bị viêm tuyến tiền liệt như đau nhức, sốt…'
+
+MERGE (o1:symptom {id: 'đau_nhức__sốt_symptom'})
+MERGE (o2:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o1)-[r117:isSymptomOf]->(o2)
+SET r117.text = 'Thuốc chống viêm, giảm đau: Các thuốc Ibuprofen, Piroxicam, Diclofenac, Paracetamol… hỗ trợ làm giảm các triệu chứng khó chịu khi bị viêm tuyến tiền liệt như đau nhức, sốt…'
+
+MERGE (o1:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o2:treatment {id: 'kháng_sinh_treatment'})
+MERGE (o1)-[r118:treatedBy]->(o2)
+SET r118.text = 'Khi bị viêm tuyến tiền liệt, người bệnh được chỉ định dùng kháng sinh trong khoảng 6 tuần cho đến 6 tháng để tiêu diệt hoàn toàn vi khuẩn gây bệnh.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o2:treatment {id: 'phẫu_thuật_treatment'})
+MERGE (o1)-[r119:treatedBy]->(o2)
+SET r119.text = 'Bác sĩ cũng có thể phải chỉ định phẫu thuật để giải phóng bàng quang tắc nghẽn, loại bỏ mô sẹo để cải thiện lưu lượng nước tiểu.'
+
+MERGE (o1:symptom {id: 'bàng_quang_tắc_nghẽn_symptom'})
+MERGE (o2:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o1)-[r120:isSymptomOf]->(o2)
+SET r120.text = 'Bác sĩ cũng có thể phải chỉ định phẫu thuật để giải phóng bàng quang tắc nghẽn, loại bỏ mô sẹo để cải thiện lưu lượng nước tiểu.'
+
+MERGE (o1:symptom {id: 'lưu_lượng_nước_tiểu_symptom'})
+MERGE (o2:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o1)-[r121:affectedBy]->(o2)
+SET r121.text = 'Bác sĩ cũng có thể phải chỉ định phẫu thuật để giải phóng bàng quang tắc nghẽn, loại bỏ mô sẹo để cải thiện lưu lượng nước tiểu.'
+
+MERGE (o1:cause {id: 'mô_sẹo_cause'})
+MERGE (o2:symptom {id: 'bàng_quang_tắc_nghẽn_symptom'})
+MERGE (o1)-[r122:causes]->(o2)
+SET r122.text = 'Bác sĩ cũng có thể phải chỉ định phẫu thuật để giải phóng bàng quang tắc nghẽn, loại bỏ mô sẹo để cải thiện lưu lượng nước tiểu.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_treatment'})
+MERGE (o2:symptom {id: 'bàng_quang_tắc_nghẽn_symptom'})
+MERGE (o1)-[r123:treats]->(o2)
+SET r123.text = 'Bác sĩ cũng có thể phải chỉ định phẫu thuật để giải phóng bàng quang tắc nghẽn, loại bỏ mô sẹo để cải thiện lưu lượng nước tiểu.'
+
+MERGE (o1:lifestyle {id: 'quan_hệ_tình_dục_an_toàn_lifestyle'})
+MERGE (o2:disease {id: 'nhiễm_trùng_disease'})
+MERGE (o1)-[r124:preventedBy]->(o2)
+SET r124.text = 'Các chuyên gia tiết niệu, có một số biện pháp hạn chế nguy cơ nhiễm trùng được khuyến khích như: Quan hệ tình dục an toàn Vệ sinh vùng kín sạch sẽ trước và sau khi quan hệ tình dục Uống nhiều nước (từ 2-3 lít mỗi ngày) Đi tiểu ngay khi cảm thấy buồn tiểu Tránh thức ăn cay nóng, rượu bia, chất kích thích… Xây dựng lối sống lành mạnh, vận động phù hợp, ăn nhiều rau xanh Hạn chế ngồi lâu, tránh chơi các môn thể thao gây áp lực lên tuyến tiền liệt'
+
+MERGE (o1:lifestyle {id: 'vệ_sinh_vùng_kín_sạch_sẽ_trước_và_sau_khi_quan_hệ_tình_dục_lifestyle'})
+MERGE (o2:disease {id: 'nhiễm_trùng_disease'})
+MERGE (o1)-[r125:preventedBy]->(o2)
+SET r125.text = 'Các chuyên gia tiết niệu, có một số biện pháp hạn chế nguy cơ nhiễm trùng được khuyến khích như: Quan hệ tình dục an toàn Vệ sinh vùng kín sạch sẽ trước và sau khi quan hệ tình dục Uống nhiều nước (từ 2-3 lít mỗi ngày) Đi tiểu ngay khi cảm thấy buồn tiểu Tránh thức ăn cay nóng, rượu bia, chất kích thích… Xây dựng lối sống lành mạnh, vận động phù hợp, ăn nhiều rau xanh Hạn chế ngồi lâu, tránh chơi các môn thể thao gây áp lực lên tuyến tiền liệt'
+
+MERGE (o1:lifestyle {id: 'uống_nhiều_nước_(từ_2-3_lít_mỗi_ngày)_lifestyle'})
+MERGE (o2:disease {id: 'nhiễm_trùng_disease'})
+MERGE (o1)-[r126:preventedBy]->(o2)
+SET r126.text = 'Các chuyên gia tiết niệu, có một số biện pháp hạn chế nguy cơ nhiễm trùng được khuyến khích như: Quan hệ tình dục an toàn Vệ sinh vùng kín sạch sẽ trước và sau khi quan hệ tình dục Uống nhiều nước (từ 2-3 lít mỗi ngày) Đi tiểu ngay khi cảm thấy buồn tiểu Tránh thức ăn cay nóng, rượu bia, chất kích thích… Xây dựng lối sống lành mạnh, vận động phù hợp, ăn nhiều rau xanh Hạn chế ngồi lâu, tránh chơi các môn thể thao gây áp lực lên tuyến tiền liệt'
+
+MERGE (o1:lifestyle {id: 'đi_tiểu_ngay_khi_cảm_thấy_buồn_tiểu_lifestyle'})
+MERGE (o2:disease {id: 'nhiễm_trùng_disease'})
+MERGE (o1)-[r127:preventedBy]->(o2)
+SET r127.text = 'Các chuyên gia tiết niệu, có một số biện pháp hạn chế nguy cơ nhiễm trùng được khuyến khích như: Quan hệ tình dục an toàn Vệ sinh vùng kín sạch sẽ trước và sau khi quan hệ tình dục Uống nhiều nước (từ 2-3 lít mỗi ngày) Đi tiểu ngay khi cảm thấy buồn tiểu Tránh thức ăn cay nóng, rượu bia, chất kích thích… Xây dựng lối sống lành mạnh, vận động phù hợp, ăn nhiều rau xanh Hạn chế ngồi lâu, tránh chơi các môn thể thao gây áp lực lên tuyến tiền liệt'
+
+MERGE (o1:food {id: 'tránh_thức_ăn_cay_nóng__rượu_bia__chất_kích_thích_food'})
+MERGE (o2:disease {id: 'nhiễm_trùng_disease'})
+MERGE (o1)-[r128:aggravatedBy]->(o2)
+SET r128.text = 'Các chuyên gia tiết niệu, có một số biện pháp hạn chế nguy cơ nhiễm trùng được khuyến khích như: Quan hệ tình dục an toàn Vệ sinh vùng kín sạch sẽ trước và sau khi quan hệ tình dục Uống nhiều nước (từ 2-3 lít mỗi ngày) Đi tiểu ngay khi cảm thấy buồn tiểu Tránh thức ăn cay nóng, rượu bia, chất kích thích… Xây dựng lối sống lành mạnh, vận động phù hợp, ăn nhiều rau xanh Hạn chế ngồi lâu, tránh chơi các môn thể thao gây áp lực lên tuyến tiền liệt'
+
+MERGE (o1:lifestyle {id: 'xây_dựng_lối_sống_lành_mạnh__vận_động_phù_hợp__ăn_nhiều_rau_xanh_lifestyle'})
+MERGE (o2:disease {id: 'nhiễm_trùng_disease'})
+MERGE (o1)-[r129:preventedBy]->(o2)
+SET r129.text = 'Các chuyên gia tiết niệu, có một số biện pháp hạn chế nguy cơ nhiễm trùng được khuyến khích như: Quan hệ tình dục an toàn Vệ sinh vùng kín sạch sẽ trước và sau khi quan hệ tình dục Uống nhiều nước (từ 2-3 lít mỗi ngày) Đi tiểu ngay khi cảm thấy buồn tiểu Tránh thức ăn cay nóng, rượu bia, chất kích thích… Xây dựng lối sống lành mạnh, vận động phù hợp, ăn nhiều rau xanh Hạn chế ngồi lâu, tránh chơi các môn thể thao gây áp lực lên tuyến tiền liệt'
+
+MERGE (o1:lifestyle {id: 'hạn_chế_ngồi_lâu__tránh_chơi_các_môn_thể_thao_gây_áp_lực_lên_tuyến_tiền_liệt_lifestyle'})
+MERGE (o2:disease {id: 'nhiễm_trùng_disease'})
+MERGE (o1)-[r130:preventedBy]->(o2)
+SET r130.text = 'Các chuyên gia tiết niệu, có một số biện pháp hạn chế nguy cơ nhiễm trùng được khuyến khích như: Quan hệ tình dục an toàn Vệ sinh vùng kín sạch sẽ trước và sau khi quan hệ tình dục Uống nhiều nước (từ 2-3 lít mỗi ngày) Đi tiểu ngay khi cảm thấy buồn tiểu Tránh thức ăn cay nóng, rượu bia, chất kích thích… Xây dựng lối sống lành mạnh, vận động phù hợp, ăn nhiều rau xanh Hạn chế ngồi lâu, tránh chơi các môn thể thao gây áp lực lên tuyến tiền liệt'
+
+MERGE (o1:disease {id: 'nhiễm_trùng_disease'})
+MERGE (o2:organ {id: 'tuyến_tiền_liệt_organ'})
+MERGE (o1)-[r131:affects]->(o2)
+SET r131.text = 'Các chuyên gia tiết niệu, có một số biện pháp hạn chế nguy cơ nhiễm trùng được khuyến khích như: Quan hệ tình dục an toàn Vệ sinh vùng kín sạch sẽ trước và sau khi quan hệ tình dục Uống nhiều nước (từ 2-3 lít mỗi ngày) Đi tiểu ngay khi cảm thấy buồn tiểu Tránh thức ăn cay nóng, rượu bia, chất kích thích… Xây dựng lối sống lành mạnh, vận động phù hợp, ăn nhiều rau xanh Hạn chế ngồi lâu, tránh chơi các môn thể thao gây áp lực lên tuyến tiền liệt'
+
+MERGE (o1:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o2:disease {id: 'nhiễm_trùng_disease'})
+MERGE (o1)-[r132:relatedTo]->(o2)
+SET r132.text = 'Bài viết liên quan:Viêm tuyến tiền liệt nên ăn gì, kiêng gì cho mau khỏi bệnh?'
+
+MERGE (o1:organ {id: 'trung_tâm_tiết_niệu_thận_học_organ'})
+MERGE (o2:organ {id: 'hệ_thống_bvđk_tâm_anh_organ'})
+MERGE (o1)-[r133:locatedIn]->(o2)
+SET r133.text = 'Trung tâm Tiết niệu Thận học, hệ thống BVĐK Tâm Anh quy tụ đội ngũ các chuyên gia đầu ngành, Nội khoa và Ngoại khoa, giỏi chuyên môn, tận tâm.'
+
+MERGE (o1:treatment {id: 'pgs.ts.bs_vũ_lê_chuyên_treatment'})
+MERGE (o2:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o1)-[r134:treatedBy]->(o2)
+SET r134.text = 'Giám đốc Trung tâm - Thầy thuốc ưu tú PGS.TS.BS Vũ Lê Chuyên, Phó giám đốc - Thầy thuốc ưu tú BS.CKII Tạ Phương Dung, Trưởng khoa Tiết niệu - TS.BS Nguyễn Hoàng Đức… là những cây đại thụ trong ngành Tiết niệu Thận học Việt Nam.'
+
+MERGE (o1:treatment {id: 'bs.ckii_tạ_phương_dung_treatment'})
+MERGE (o2:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o1)-[r135:treatedBy]->(o2)
+SET r135.text = 'Giám đốc Trung tâm - Thầy thuốc ưu tú PGS.TS.BS Vũ Lê Chuyên, Phó giám đốc - Thầy thuốc ưu tú BS.CKII Tạ Phương Dung, Trưởng khoa Tiết niệu - TS.BS Nguyễn Hoàng Đức… là những cây đại thụ trong ngành Tiết niệu Thận học Việt Nam.'
+
+MERGE (o1:treatment {id: 'ts.bs_nguyễn_hoàng_đức_treatment'})
+MERGE (o2:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o1)-[r136:treatedBy]->(o2)
+SET r136.text = 'Giám đốc Trung tâm - Thầy thuốc ưu tú PGS.TS.BS Vũ Lê Chuyên, Phó giám đốc - Thầy thuốc ưu tú BS.CKII Tạ Phương Dung, Trưởng khoa Tiết niệu - TS.BS Nguyễn Hoàng Đức… là những cây đại thụ trong ngành Tiết niệu Thận học Việt Nam.'
+
+MERGE (o1:treatment {id: 'các_chuyên_gia__bác_sĩ_của_trung_tâm_treatment'})
+MERGE (o2:disease {id: 'bệnh_lý_về_thận_và_đường_tiết_niệu_disease'})
+MERGE (o1)-[r137:treatedBy]->(o2)
+SET r137.text = 'Các chuyên gia, bác sĩ của Trung tâm luôn tự tin làm chủ những kỹ thuật mới nhất, phát hiện sớm và điều trị hiệu quả các bệnh lý về thận và đường tiết niệu, giúp người bệnh rút ngắn thời gian nằm viện, hạn chế nguy cơ tái phát, nâng cao chất lượng cuộc sống.'
+
+MERGE (o1:organ {id: 'trung_tâm_tiết_niệu_thận_học_organ'})
+MERGE (o2:disease {id: 'bệnh_lý_đường_tiết_niệu_disease'})
+MERGE (o1)-[r138:diagnosedBy]->(o2)
+SET r138.text = 'Được trang bị hệ thống máy móc, trang thiết bị hiện đại hàng đầu trong nước và khu vực; Phòng mổ đạt tiêu chuẩn quốc tế; Cùng với khu nội trú và dịch vụ cao cấp 5 sao… Trung tâm Tiết niệu Thận học nổi bật với các dịch vụ thăm khám, tầm soát và điều trị tất cả các bệnh lý đường tiết niệu.'
+
+MERGE (o1:treatment {id: 'đại_phẫu_thuật_kỹ_thuật_cao_treatment'})
+MERGE (o2:disease {id: 'bệnh_lý_đường_tiết_niệu_disease'})
+MERGE (o1)-[r139:treatedBy]->(o2)
+SET r139.text = 'Từ các thường gặp cho đến các cuộc đại phẫu thuật kỹ thuật cao.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_nội_soi_sỏi_thận_treatment'})
+MERGE (o2:disease {id: 'bệnh_lý_đường_tiết_niệu_disease'})
+MERGE (o1)-[r140:treatedBy]->(o2)
+SET r140.text = 'Có thể kể đến phẫu thuật nội soi sỏi thận, ghép thận, cắt bướu bảo tồn nhu mô thận; cắt thận tận gốc; cắt tuyến tiền liệt tận gốc; cắt toàn bộ bàng quang tạo hình bàng quang bằng ruột non; cắt tuyến thượng thận; tạo hình các dị tật đường tiết niệu…'
+
+MERGE (o1:treatment {id: 'ghép_thận_treatment'})
+MERGE (o2:disease {id: 'bệnh_lý_đường_tiết_niệu_disease'})
+MERGE (o1)-[r141:treatedBy]->(o2)
+SET r141.text = 'Có thể kể đến phẫu thuật nội soi sỏi thận, ghép thận, cắt bướu bảo tồn nhu mô thận; cắt thận tận gốc; cắt tuyến tiền liệt tận gốc; cắt toàn bộ bàng quang tạo hình bàng quang bằng ruột non; cắt tuyến thượng thận; tạo hình các dị tật đường tiết niệu…'
+
+MERGE (o1:treatment {id: 'cắt_bướu_bảo_tồn_nhu_mô_thận_treatment'})
+MERGE (o2:disease {id: 'bệnh_lý_đường_tiết_niệu_disease'})
+MERGE (o1)-[r142:treatedBy]->(o2)
+SET r142.text = 'Có thể kể đến phẫu thuật nội soi sỏi thận, ghép thận, cắt bướu bảo tồn nhu mô thận; cắt thận tận gốc; cắt tuyến tiền liệt tận gốc; cắt toàn bộ bàng quang tạo hình bàng quang bằng ruột non; cắt tuyến thượng thận; tạo hình các dị tật đường tiết niệu…'
+
+MERGE (o1:treatment {id: 'cắt_thận_tận_gốc_treatment'})
+MERGE (o2:disease {id: 'bệnh_lý_đường_tiết_niệu_disease'})
+MERGE (o1)-[r143:treatedBy]->(o2)
+SET r143.text = 'Có thể kể đến phẫu thuật nội soi sỏi thận, ghép thận, cắt bướu bảo tồn nhu mô thận; cắt thận tận gốc; cắt tuyến tiền liệt tận gốc; cắt toàn bộ bàng quang tạo hình bàng quang bằng ruột non; cắt tuyến thượng thận; tạo hình các dị tật đường tiết niệu…'
+
+MERGE (o1:treatment {id: 'cắt_tuyến_tiền_liệt_tận_gốc_treatment'})
+MERGE (o2:disease {id: 'bệnh_lý_đường_tiết_niệu_disease'})
+MERGE (o1)-[r144:treatedBy]->(o2)
+SET r144.text = 'Có thể kể đến phẫu thuật nội soi sỏi thận, ghép thận, cắt bướu bảo tồn nhu mô thận; cắt thận tận gốc; cắt tuyến tiền liệt tận gốc; cắt toàn bộ bàng quang tạo hình bàng quang bằng ruột non; cắt tuyến thượng thận; tạo hình các dị tật đường tiết niệu…'
+
+MERGE (o1:treatment {id: 'cắt_toàn_bộ_bàng_quang_tạo_hình_bàng_quang_bằng_ruột_non_treatment'})
+MERGE (o2:disease {id: 'bệnh_lý_đường_tiết_niệu_disease'})
+MERGE (o1)-[r145:treatedBy]->(o2)
+SET r145.text = 'Có thể kể đến phẫu thuật nội soi sỏi thận, ghép thận, cắt bướu bảo tồn nhu mô thận; cắt thận tận gốc; cắt tuyến tiền liệt tận gốc; cắt toàn bộ bàng quang tạo hình bàng quang bằng ruột non; cắt tuyến thượng thận; tạo hình các dị tật đường tiết niệu…'
+
+MERGE (o1:treatment {id: 'cắt_tuyến_thượng_thận_treatment'})
+MERGE (o2:disease {id: 'bệnh_lý_đường_tiết_niệu_disease'})
+MERGE (o1)-[r146:treatedBy]->(o2)
+SET r146.text = 'Có thể kể đến phẫu thuật nội soi sỏi thận, ghép thận, cắt bướu bảo tồn nhu mô thận; cắt thận tận gốc; cắt tuyến tiền liệt tận gốc; cắt toàn bộ bàng quang tạo hình bàng quang bằng ruột non; cắt tuyến thượng thận; tạo hình các dị tật đường tiết niệu…'
+
+MERGE (o1:treatment {id: 'tạo_hình_các_dị_tật_đường_tiết_niệu_treatment'})
+MERGE (o2:disease {id: 'bệnh_lý_đường_tiết_niệu_disease'})
+MERGE (o1)-[r147:treatedBy]->(o2)
+SET r147.text = 'Có thể kể đến phẫu thuật nội soi sỏi thận, ghép thận, cắt bướu bảo tồn nhu mô thận; cắt thận tận gốc; cắt tuyến tiền liệt tận gốc; cắt toàn bộ bàng quang tạo hình bàng quang bằng ruột non; cắt tuyến thượng thận; tạo hình các dị tật đường tiết niệu…'
+
+MERGE (o1:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o2:treatment {id: 'các_chuyên_gia_đầu_ngành_tại_trung_tâm_tiết_niệu_thận_học_treatment'})
+MERGE (o1)-[r148:diagnosedBy]->(o2)
+SET r148.text = 'Để đặt lịch khám viêm tuyến tiền liệt với các chuyên gia đầu ngành tại Trung tâm Tiết niệu Thận học, Hệ thống Bệnh viện Đa khoa Tâm Anh, quý khách có thể đặt hẹn trực tuyến qua các cách sau đây:'
+
+MERGE (o1:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o2:organ {id: 'hệ_thống_bệnh_viện_đa_khoa_tâm_anh_organ'})
+MERGE (o1)-[r149:locatedIn]->(o2)
+SET r149.text = 'Để đặt lịch khám viêm tuyến tiền liệt với các chuyên gia đầu ngành tại Trung tâm Tiết niệu Thận học, Hệ thống Bệnh viện Đa khoa Tâm Anh, quý khách có thể đặt hẹn trực tuyến qua các cách sau đây:'
+
+MERGE (o1:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o2:test {id: 'tổng_đài_0287_102_6789_(tp_hcm)_hoặc_024_3872_3872_(hà_nội)_test'})
+MERGE (o1)-[r150:diagnosedBy]->(o2)
+SET r150.text = '+ Gọi tổng đài 0287 102 6789 (TP HCM) hoặc 024 3872 3872 (Hà Nội) để đăng ký lịch hẹn khám bệnh riêng với chuyên gia, thông qua nhân viên chăm sóc khách hàng.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o2:treatment {id: 'nhân_viên_chăm_sóc_khách_hàng_treatment'})
+MERGE (o1)-[r151:diagnosedBy]->(o2)
+SET r151.text = '+ Gọi tổng đài 0287 102 6789 (TP HCM) hoặc 024 3872 3872 (Hà Nội) để đăng ký lịch hẹn khám bệnh riêng với chuyên gia, thông qua nhân viên chăm sóc khách hàng.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o2:treatment {id: 'bác_sĩ_treatment'})
+MERGE (o1)-[r152:diagnosedBy]->(o2)
+SET r152.text = '+ Đăng ký hẹn khám bệnh với bất kỳ bác sĩ nào mà mình tin tưởng tại đường link: https://tamanhhospital.vn/danh-cho-khach-hang/dat-lich-kham/'
+
+MERGE (o1:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o2:test {id: 'https://tamanhhospital.vn/danh-cho-khach-hang/dat-lich-kham/_test'})
+MERGE (o1)-[r153:diagnosedBy]->(o2)
+SET r153.text = '+ Đăng ký hẹn khám bệnh với bất kỳ bác sĩ nào mà mình tin tưởng tại đường link: https://tamanhhospital.vn/danh-cho-khach-hang/dat-lich-kham/'
+
+MERGE (o1:disease {id: 'viêm_tuyến_tiền_liệt_disease'})
+MERGE (o2:test {id: 'fanpage_bệnh_viện_đa_khoa_tâm_anh_hoặc_fanpage_tiết_niệu_-_nam_học_bvđk_tâm_anh_test'})
+MERGE (o1)-[r154:diagnosedBy]->(o2)
+SET r154.text = '+ Gửi tin nhắn trên Fanpage Bệnh viện Đa khoa Tâm Anh hoặc Fanpage Tiết niệu - Nam học BVĐK Tâm Anh'

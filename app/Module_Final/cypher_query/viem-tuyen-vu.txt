@@ -1,0 +1,670 @@
+
+MERGE (o1:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o2:symptom {id: 'viêm_mô_tuyến_vú_symptom'})
+MERGE (o1)-[r0:isSymptomOf]->(o2)
+SET r0.text = 'Viêm tuyến vú là tình trạng viêm của mô tuyến vú đôi khi có liên quan đến nhiễm trùng.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o2:cause {id: 'nhiễm_trùng_cause'})
+MERGE (o1)-[r1:associatedWith]->(o2)
+SET r1.text = 'Viêm tuyến vú là tình trạng viêm của mô tuyến vú đôi khi có liên quan đến nhiễm trùng.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o2:symptom {id: 'vú_sưng_symptom'})
+MERGE (o1)-[r2:isSymptomOf]->(o2)
+SET r2.text = 'Tình trạng viêm này làm cho vú sưng, nóng, đỏ và đau, đôi khi có thể bị sốt và ớn lạnh.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o2:symptom {id: 'vú_nóng_symptom'})
+MERGE (o1)-[r3:isSymptomOf]->(o2)
+SET r3.text = 'Tình trạng viêm này làm cho vú sưng, nóng, đỏ và đau, đôi khi có thể bị sốt và ớn lạnh.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o2:symptom {id: 'vú_đỏ_symptom'})
+MERGE (o1)-[r4:isSymptomOf]->(o2)
+SET r4.text = 'Tình trạng viêm này làm cho vú sưng, nóng, đỏ và đau, đôi khi có thể bị sốt và ớn lạnh.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o2:symptom {id: 'vú_đau_symptom'})
+MERGE (o1)-[r5:isSymptomOf]->(o2)
+SET r5.text = 'Tình trạng viêm này làm cho vú sưng, nóng, đỏ và đau, đôi khi có thể bị sốt và ớn lạnh.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o2:symptom {id: 'sốt_symptom'})
+MERGE (o1)-[r6:isSymptomOf]->(o2)
+SET r6.text = 'Tình trạng viêm này làm cho vú sưng, nóng, đỏ và đau, đôi khi có thể bị sốt và ớn lạnh.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o2:symptom {id: 'ớn_lạnh_symptom'})
+MERGE (o1)-[r7:isSymptomOf]->(o2)
+SET r7.text = 'Tình trạng viêm này làm cho vú sưng, nóng, đỏ và đau, đôi khi có thể bị sốt và ớn lạnh.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o2:lifestyle {id: 'phụ_nữ_đang_cho_con_bú_lifestyle'})
+MERGE (o1)-[r8:affects]->(o2)
+SET r8.text = 'Viêm tuyến vú thường xảy ra nhất ở phụ nữ đang cho con bú (viêm tuyến vú do tiết sữa), nhưng cũng có thể xảy ra ở phụ nữ không cho con bú và ở nam giới.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o2:lifestyle {id: 'phụ_nữ_không_cho_con_bú_lifestyle'})
+MERGE (o1)-[r9:affects]->(o2)
+SET r9.text = 'Viêm tuyến vú thường xảy ra nhất ở phụ nữ đang cho con bú (viêm tuyến vú do tiết sữa), nhưng cũng có thể xảy ra ở phụ nữ không cho con bú và ở nam giới.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o2:lifestyle {id: 'nam_giới_lifestyle'})
+MERGE (o1)-[r10:affects]->(o2)
+SET r10.text = 'Viêm tuyến vú thường xảy ra nhất ở phụ nữ đang cho con bú (viêm tuyến vú do tiết sữa), nhưng cũng có thể xảy ra ở phụ nữ không cho con bú và ở nam giới.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_vú_do_cho_con_bú_disease'})
+MERGE (o2:symptom {id: 'mệt_mỏi_symptom'})
+MERGE (o1)-[r11:isSymptomOf]->(o2)
+SET r11.text = 'Viêm tuyến vú do cho con bú có thể khiến bạn cảm thấy mệt mỏi, kiệt sức, gây khó khăn cho việc chăm sóc em bé.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_vú_do_cho_con_bú_disease'})
+MERGE (o2:symptom {id: 'kiệt_sức_symptom'})
+MERGE (o1)-[r12:isSymptomOf]->(o2)
+SET r12.text = 'Viêm tuyến vú do cho con bú có thể khiến bạn cảm thấy mệt mỏi, kiệt sức, gây khó khăn cho việc chăm sóc em bé.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_vú_do_cho_con_bú_disease'})
+MERGE (o2:symptom {id: 'khó_khăn_cho_việc_chăm_sóc_em_bé_symptom'})
+MERGE (o1)-[r13:isSymptomOf]->(o2)
+SET r13.text = 'Viêm tuyến vú do cho con bú có thể khiến bạn cảm thấy mệt mỏi, kiệt sức, gây khó khăn cho việc chăm sóc em bé.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o2:symptom {id: 'cai_sữa_symptom'})
+MERGE (o1)-[r14:isSymptomOf]->(o2)
+SET r14.text = 'Đôi khi bệnh viêm tuyến vú khiến người mẹ phải cai sữa cho con trước dự định.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o2:treatment {id: 'thuốc_kháng_sinh_treatment'})
+MERGE (o1)-[r15:treatedBy]->(o2)
+SET r15.text = 'Việc tiếp tục cho con bú ngay cả khi đang dùng thuốc kháng sinh điều trị viêm tuyến vú có thể lại tốt hơn cho cả mẹ và bé.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o2:symptom {id: 'mô_vú_dày_lên_symptom'})
+MERGE (o1)-[r16:isSymptomOf]->(o2)
+SET r16.text = 'Các dấu hiệu và triệu chứng của bệnh viêm tuyến vú có thể xuất hiện đột ngột, bao gồm [2]:  Mô vú dày lên hoặc có khối u ở vú'
+
+MERGE (o1:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o2:symptom {id: 'khối_u_ở_vú_symptom'})
+MERGE (o1)-[r17:isSymptomOf]->(o2)
+SET r17.text = 'Các dấu hiệu và triệu chứng của bệnh viêm tuyến vú có thể xuất hiện đột ngột, bao gồm [2]:  Mô vú dày lên hoặc có khối u ở vú'
+
+MERGE (o1:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o2:symptom {id: 'vú_sưng_tấy_symptom'})
+MERGE (o1)-[r18:isSymptomOf]->(o2)
+SET r18.text = 'Các dấu hiệu và triệu chứng của bệnh viêm tuyến vú có thể xuất hiện đột ngột, bao gồm [2]:  Vú sưng tấy lên'
+
+MERGE (o1:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o2:symptom {id: 'vú_ấm_symptom'})
+MERGE (o1)-[r19:isSymptomOf]->(o2)
+SET r19.text = 'Các dấu hiệu và triệu chứng của bệnh viêm tuyến vú có thể xuất hiện đột ngột, bao gồm [2]:  Sờ vào vú cảm thấy ấm, nóng'
+
+MERGE (o1:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o2:symptom {id: 'vú_nóng_symptom'})
+MERGE (o1)-[r20:isSymptomOf]->(o2)
+SET r20.text = 'Các dấu hiệu và triệu chứng của bệnh viêm tuyến vú có thể xuất hiện đột ngột, bao gồm [2]:  Sờ vào vú cảm thấy ấm, nóng'
+
+MERGE (o1:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o2:symptom {id: 'mảng_đỏ_da_symptom'})
+MERGE (o1)-[r21:isSymptomOf]->(o2)
+SET r21.text = 'Các dấu hiệu và triệu chứng của bệnh viêm tuyến vú có thể xuất hiện đột ngột, bao gồm [2]:  Một mảng đỏ da, thường có dạng hình nêm'
+
+MERGE (o1:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o2:symptom {id: 'đau_vú_symptom'})
+MERGE (o1)-[r22:isSymptomOf]->(o2)
+SET r22.text = 'Các dấu hiệu và triệu chứng của bệnh viêm tuyến vú có thể xuất hiện đột ngột, bao gồm [2]:  Cảm giác đau hoặc nóng rát xuất hiện liên tục hoặc khi cho con bú'
+
+MERGE (o1:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o2:symptom {id: 'nóng_rát_vú_symptom'})
+MERGE (o1)-[r23:isSymptomOf]->(o2)
+SET r23.text = 'Các dấu hiệu và triệu chứng của bệnh viêm tuyến vú có thể xuất hiện đột ngột, bao gồm [2]:  Cảm giác đau hoặc nóng rát xuất hiện liên tục hoặc khi cho con bú'
+
+MERGE (o1:symptom {id: 'tắc_ống_dẫn_sữa_symptom'})
+MERGE (o2:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o1)-[r24:isSymptomOf]->(o2)
+SET r24.text = 'Tắc ống dẫn sữa. Nếu vú không hết sữa hoàn toàn sau khi cho bú, sữa tồn dư vón cục lại có thể làm một trong các ống dẫn sữa bị tắc nghẽn.'
+
+MERGE (o1:cause {id: 'sữa_tồn_dư_vón_cục_cause'})
+MERGE (o2:symptom {id: 'tắc_ống_dẫn_sữa_symptom'})
+MERGE (o1)-[r25:causedBy]->(o2)
+SET r25.text = 'Nếu vú không hết sữa hoàn toàn sau khi cho bú, sữa tồn dư vón cục lại có thể làm một trong các ống dẫn sữa bị tắc nghẽn. Sự tắc nghẽn này lại càng khiến sữa bị ứ đọng, dẫn đến viêm tuyến vú.'
+
+MERGE (o1:cause {id: 'sự_tắc_nghẽn_cause'})
+MERGE (o2:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o1)-[r26:causedBy]->(o2)
+SET r26.text = 'Sự tắc nghẽn này lại càng khiến sữa bị ứ đọng, dẫn đến viêm tuyến vú.'
+
+MERGE (o1:symptom {id: 'sữa_bị_ứ_đọng_symptom'})
+MERGE (o2:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o1)-[r27:isSymptomOf]->(o2)
+SET r27.text = 'Sự tắc nghẽn này lại càng khiến sữa bị ứ đọng, dẫn đến viêm tuyến vú.'
+
+MERGE (o1:cause {id: 'vi_khuẩn_xâm_nhập_vào_tuyến_vú_cause'})
+MERGE (o2:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o1)-[r28:causedBy]->(o2)
+SET r28.text = 'Do vi khuẩn xâm nhập vào tuyến vú. Vi khuẩn từ bề mặt da của bạn và miệng của em bé có thể xâm nhập vào ống dẫn sữa qua vết nứt trên núm vú hoặc qua lỗ mở ống dẫn sữa.'
+
+MERGE (o1:cause {id: 'vi_khuẩn_cause'})
+MERGE (o2:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o1)-[r29:causedBy]->(o2)
+SET r29.text = 'Vi khuẩn từ bề mặt da của bạn và miệng của em bé có thể xâm nhập vào ống dẫn sữa qua vết nứt trên núm vú hoặc qua lỗ mở ống dẫn sữa.'
+
+MERGE (o1:symptom {id: 'vết_nứt_trên_núm_vú_symptom'})
+MERGE (o2:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o1)-[r30:isSymptomOf]->(o2)
+SET r30.text = 'Vi khuẩn từ bề mặt da của bạn và miệng của em bé có thể xâm nhập vào ống dẫn sữa qua vết nứt trên núm vú hoặc qua lỗ mở ống dẫn sữa. Sữa ứ đọng trong vú không được vắt sạch sẽ tạo điều kiện cho vi khuẩn sinh sôi.'
+
+MERGE (o1:organ {id: 'lỗ_mở_ống_dẫn_sữa_organ'})
+MERGE (o2:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o1)-[r31:affectedBy]->(o2)
+SET r31.text = 'Vi khuẩn từ bề mặt da của bạn và miệng của em bé có thể xâm nhập vào ống dẫn sữa qua vết nứt trên núm vú hoặc qua lỗ mở ống dẫn sữa. Sữa ứ đọng trong vú không được vắt sạch sẽ tạo điều kiện cho vi khuẩn sinh sôi.'
+
+MERGE (o1:cause {id: 'sữa_ứ_đọng_cause'})
+MERGE (o2:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o1)-[r32:causedBy]->(o2)
+SET r32.text = 'Sữa ứ đọng trong vú không được vắt sạch sẽ tạo điều kiện cho vi khuẩn sinh sôi.'
+
+MERGE (o1:cause {id: 'từng_bị_viêm_tuyến_vú_trước_đó_cause'})
+MERGE (o2:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o1)-[r33:causedBy]->(o2)
+SET r33.text = 'Từng bị viêm tuyến vú trước đó khi đang cho con bú.'
+
+MERGE (o1:symptom {id: 'núm_vú_bị_đau_symptom'})
+MERGE (o2:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o1)-[r34:isSymptomOf]->(o2)
+SET r34.text = 'Núm vú bị đau hoặc nứt - viêm tuyến vú thậm chí có thể phát triển mà không thông qua một vết nứt trên núm vú hoặc da'
+
+MERGE (o1:symptom {id: 'núm_vú_bị_nứt_symptom'})
+MERGE (o2:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o1)-[r35:isSymptomOf]->(o2)
+SET r35.text = 'Núm vú bị đau hoặc nứt - viêm tuyến vú thậm chí có thể phát triển mà không thông qua một vết nứt trên núm vú hoặc da'
+
+MERGE (o1:lifestyle {id: 'mặc_áo_ngực_chật_lifestyle'})
+MERGE (o2:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o1)-[r36:aggravatedBy]->(o2)
+SET r36.text = 'Mặc áo ngực chật hoặc tạo áp lực lên ngực khi sử dụng đai an toàn (trên xe ôtô) hay khi đeo túi nặng, có thể hạn chế dòng sữa.'
+
+MERGE (o1:cause {id: 'tạo_áp_lực_lên_ngực_cause'})
+MERGE (o2:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o1)-[r37:causedBy]->(o2)
+SET r37.text = 'Mặc áo ngực chật hoặc tạo áp lực lên ngực khi sử dụng đai an toàn (trên xe ôtô) hay khi đeo túi nặng, có thể hạn chế dòng sữa.'
+
+MERGE (o1:lifestyle {id: 'sử_dụng_đai_an_toàn_lifestyle'})
+MERGE (o2:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o1)-[r38:aggravatedBy]->(o2)
+SET r38.text = 'Mặc áo ngực chật hoặc tạo áp lực lên ngực khi sử dụng đai an toàn (trên xe ôtô) hay khi đeo túi nặng, có thể hạn chế dòng sữa.'
+
+MERGE (o1:lifestyle {id: 'đeo_túi_nặng_lifestyle'})
+MERGE (o2:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o1)-[r39:aggravatedBy]->(o2)
+SET r39.text = 'Mặc áo ngực chật hoặc tạo áp lực lên ngực khi sử dụng đai an toàn (trên xe ôtô) hay khi đeo túi nặng, có thể hạn chế dòng sữa.'
+
+MERGE (o1:cause {id: 'kỹ_thuật_chăm_sóc_không_đúng_cách_cause'})
+MERGE (o2:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o1)-[r40:causedBy]->(o2)
+SET r40.text = 'Kỹ thuật chăm sóc không đúng cách.'
+
+MERGE (o1:lifestyle {id: 'quá_căng_thẳng_lifestyle'})
+MERGE (o2:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o1)-[r41:aggravatedBy]->(o2)
+SET r41.text = 'Quá căng thẳng hoặc mệt mỏi.'
+
+MERGE (o1:lifestyle {id: 'mệt_mỏi_lifestyle'})
+MERGE (o2:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o1)-[r42:aggravatedBy]->(o2)
+SET r42.text = 'Quá căng thẳng hoặc mệt mỏi.'
+
+MERGE (o1:lifestyle {id: 'dinh_dưỡng_kém_lifestyle'})
+MERGE (o2:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o1)-[r43:aggravatedBy]->(o2)
+SET r43.text = 'Dinh dưỡng kém.'
+
+MERGE (o1:lifestyle {id: 'hút_thuốc_lá_lifestyle'})
+MERGE (o2:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o1)-[r44:aggravatedBy]->(o2)
+SET r44.text = 'Hút thuốc lá.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o2:disease {id: 'ung_thư_vú_disease'})
+MERGE (o1)-[r45:relatedTo]->(o2)
+SET r45.text = 'Viêm tuyến vú không làm tăng nguy cơ ung thư vú.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o2:disease {id: 'ung_thư_vú_dạng_viêm_disease'})
+MERGE (o1)-[r46:associatedWith]->(o2)
+SET r46.text = 'Tuy nhiên, các triệu chứng viêm tuyến vú tương tự như các triệu chứng của ung thư vú dạng viêm (IBC - Inflammatory Breast Cancer).'
+
+MERGE (o1:disease {id: 'ung_thư_vú_dạng_viêm_disease'})
+MERGE (o2:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o1)-[r47:associatedWith]->(o2)
+SET r47.text = 'Tuy nhiên, các triệu chứng viêm tuyến vú tương tự như các triệu chứng của ung thư vú dạng viêm (IBC - Inflammatory Breast Cancer).'
+
+MERGE (o1:symptom {id: 'phát_ban_ở_ngực_symptom'})
+MERGE (o2:disease {id: 'ung_thư_vú_dạng_viêm_disease'})
+MERGE (o1)-[r48:isSymptomOf]->(o2)
+SET r48.text = 'Đây là loại ung thư hiếm gặp và nguy hiểm, có phát ban ở ngực.'
+
+MERGE (o1:symptom {id: 'vú_đỏ_symptom'})
+MERGE (o2:disease {id: 'ung_thư_vú_dạng_viêm_disease'})
+MERGE (o1)-[r49:isSymptomOf]->(o2)
+SET r49.text = 'Giống như viêm tuyến vú, một hoặc cả hai vú có thể đỏ, sưng lên.'
+
+MERGE (o1:symptom {id: 'vú_sưng_symptom'})
+MERGE (o2:disease {id: 'ung_thư_vú_dạng_viêm_disease'})
+MERGE (o1)-[r50:isSymptomOf]->(o2)
+SET r50.text = 'Giống như viêm tuyến vú, một hoặc cả hai vú có thể đỏ, sưng lên.'
+
+MERGE (o1:symptom {id: 'khối_u_ở_vú_symptom'})
+MERGE (o2:disease {id: 'ung_thư_vú_dạng_viêm_disease'})
+MERGE (o1)-[r51:isSymptomOf]->(o2)
+SET r51.text = 'Ung thư vú dạng viêm thường không gây ra khối u ở vú.'
+
+MERGE (o1:test {id: 'siêu_âm_test'})
+MERGE (o2:disease {id: 'ung_thư_vú_dạng_viêm_disease'})
+MERGE (o1)-[r52:diagnosedBy]->(o2)
+SET r52.text = 'Bác sĩ có thể đề nghị siêu âm hoặc chụp quang tuyến vú hoặc cả hai.'
+
+MERGE (o1:test {id: 'chụp_quang_tuyến_vú_test'})
+MERGE (o2:disease {id: 'ung_thư_vú_dạng_viêm_disease'})
+MERGE (o1)-[r53:diagnosedBy]->(o2)
+SET r53.text = 'Bác sĩ có thể đề nghị siêu âm hoặc chụp quang tuyến vú hoặc cả hai.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o2:symptom {id: 'tắc_ống_dẫn_sữa_symptom'})
+MERGE (o1)-[r54:causedBy]->(o2)
+SET r54.text = 'Viêm tuyến vú không được điều trị đầy đủ hoặc do tắc ống dẫn sữa có thể gây ra một khối mủ (áp xe) phát triển trong tuyến vú của bạn.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o2:symptom {id: 'khối_mủ_(áp_xe)_symptom'})
+MERGE (o1)-[r55:isSymptomOf]->(o2)
+SET r55.text = 'Viêm tuyến vú không được điều trị đầy đủ hoặc do tắc ống dẫn sữa có thể gây ra một khối mủ (áp xe) phát triển trong tuyến vú của bạn.'
+
+MERGE (o1:symptom {id: 'khối_mủ_(áp_xe)_symptom'})
+MERGE (o2:organ {id: 'tuyến_vú_organ'})
+MERGE (o1)-[r56:locatedIn]->(o2)
+SET r56.text = 'Viêm tuyến vú không được điều trị đầy đủ hoặc do tắc ống dẫn sữa có thể gây ra một khối mủ (áp xe) phát triển trong tuyến vú của bạn.'
+
+MERGE (o1:symptom {id: 'áp_xe_symptom'})
+MERGE (o2:treatment {id: 'phẫu_thuật_dẫn_lưu_treatment'})
+MERGE (o1)-[r57:treatedBy]->(o2)
+SET r57.text = 'Áp xe thường cần phẫu thuật dẫn lưu.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o2:symptom {id: 'biến_chứng_symptom'})
+MERGE (o1)-[r58:isSymptomOf]->(o2)
+SET r58.text = 'Để tránh biến chứng này, hãy nói chuyện với bác sĩ ngay khi bạn xuất hiện các dấu hiệu hoặc triệu chứng của bệnh viêm tuyến vú.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o2:symptom {id: 'dấu_hiệu_và_triệu_chứng_symptom'})
+MERGE (o1)-[r59:isSymptomOf]->(o2)
+SET r59.text = 'Bác sĩ sẽ khám sức khỏe toàn diện cũng như hỏi về các dấu hiệu và triệu chứng của bạn.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o2:symptom {id: 'nhiễm_trùng_symptom'})
+MERGE (o1)-[r60:causedBy]->(o2)
+SET r60.text = 'Cấy vi khuẩn sữa mẹ có thể giúp bác sĩ xác định loại kháng sinh tốt nhất cho bạn, đặc biệt nếu bạn bị nhiễm trùng nặng.'
+
+MERGE (o1:symptom {id: 'nhiễm_trùng_symptom'})
+MERGE (o2:treatment {id: 'kháng_sinh_treatment'})
+MERGE (o1)-[r61:treatedBy]->(o2)
+SET r61.text = 'Cấy vi khuẩn sữa mẹ có thể giúp bác sĩ xác định loại kháng sinh tốt nhất cho bạn, đặc biệt nếu bạn bị nhiễm trùng nặng.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o2:symptom {id: 'vú_sưng__nóng__đỏ_và_đau_symptom'})
+MERGE (o1)-[r62:isSymptomOf]->(o2)
+SET r62.text = 'Khi bị viêm tuyến vú, vú sưng, nóng, đỏ và đau, đôi khi có thể bị sốt và ớn lạnh.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o2:symptom {id: 'sốt_và_ớn_lạnh_symptom'})
+MERGE (o1)-[r63:isSymptomOf]->(o2)
+SET r63.text = 'Khi bị viêm tuyến vú, vú sưng, nóng, đỏ và đau, đôi khi có thể bị sốt và ớn lạnh.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o2:treatment {id: 'thuốc_kháng_sinh_treatment'})
+MERGE (o1)-[r64:treatedBy]->(o2)
+SET r64.text = 'Điều trị viêm tuyến vú có thể bao gồm Thuốc kháng sinh.'
+
+MERGE (o1:symptom {id: 'nhiễm_trùng_symptom'})
+MERGE (o2:treatment {id: 'kháng_sinh_treatment'})
+MERGE (o1)-[r65:treatedBy]->(o2)
+SET r65.text = 'Nếu có nhiễm trùng, có thể bạn cần dùng một đợt kháng sinh dài ngày.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o2:symptom {id: 'tái_phát_symptom'})
+MERGE (o1)-[r66:aggravatedBy]->(o2)
+SET r66.text = 'Quan trọng là phải dùng đủ liều thuốc để giảm thiểu khả năng tái phát.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o2:treatment {id: 'thuốc_kháng_sinh_treatment'})
+MERGE (o1)-[r67:treatedBy]->(o2)
+SET r67.text = 'Nếu viêm tuyến vú không khỏi sau khi dùng thuốc kháng sinh, hãy liên hệ lại với bác sĩ.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o2:treatment {id: 'thuốc_giảm_đau_treatment'})
+MERGE (o1)-[r68:treatedBy]->(o2)
+SET r68.text = 'Bác sĩ có thể khuyên dùng thuốc giảm đau như acetaminophen (Tylenol hay những loại khác) hoặc ibuprofen (Advil hay Motrin IB hay những loại khác).'
+
+MERGE (o1:treatment {id: 'thuốc_giảm_đau_treatment'})
+MERGE (o2:treatment {id: 'acetaminophen_(tylenol_hay_những_loại_khác)_treatment'})
+MERGE (o1)-[r69:relatedTo]->(o2)
+SET r69.text = 'Bác sĩ có thể khuyên dùng thuốc giảm đau như acetaminophen (Tylenol hay những loại khác) hoặc ibuprofen (Advil hay Motrin IB hay những loại khác).'
+
+MERGE (o1:treatment {id: 'thuốc_giảm_đau_treatment'})
+MERGE (o2:treatment {id: 'ibuprofen_(advil_hay_motrin_ib_hay_những_loại_khác)_treatment'})
+MERGE (o1)-[r70:relatedTo]->(o2)
+SET r70.text = 'Bác sĩ có thể khuyên dùng thuốc giảm đau như acetaminophen (Tylenol hay những loại khác) hoặc ibuprofen (Advil hay Motrin IB hay những loại khác).'
+
+MERGE (o1:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o2:lifestyle {id: 'cho_con_bú_lifestyle'})
+MERGE (o1)-[r71:relatedTo]->(o2)
+SET r71.text = 'Bạn có thể tiếp tục cho con bú nếu bị viêm tuyến vú.'
+
+MERGE (o1:lifestyle {id: 'cho_con_bú_lifestyle'})
+MERGE (o2:symptom {id: 'nhiễm_trùng_symptom'})
+MERGE (o1)-[r72:treatedBy]->(o2)
+SET r72.text = 'Cho con bú thực sự giúp loại bỏ nhiễm trùng.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o2:lifestyle {id: 'cai_sữa_lifestyle'})
+MERGE (o1)-[r73:aggravatedBy]->(o2)
+SET r73.text = 'Cai sữa cho bé đột ngột có khả năng làm trầm trọng thêm các dấu hiệu và triệu chứng của bạn.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o2:treatment {id: 'chuyên_gia_tư_vấn_cho_con_bú_treatment'})
+MERGE (o1)-[r74:treatedBy]->(o2)
+SET r74.text = 'Bác sĩ có thể giới thiệu bạn đến một chuyên gia tư vấn cho con bú để được giúp đỡ và hỗ trợ liên tục.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o2:symptom {id: 'vú_đầy_sữa_symptom'})
+MERGE (o1)-[r75:aggravatedBy]->(o2)
+SET r75.text = 'Các đề xuất để điều chỉnh kỹ thuật cho con bú có thể bao gồm: Tránh để vú của mẹ đầy sữa trong thời gian dài trước khi cho con bú.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o2:symptom {id: 'vú_căng_sữa_symptom'})
+MERGE (o1)-[r76:isSymptomOf]->(o2)
+SET r76.text = 'Cố gắng đảm bảo rằng em bé ngậm vú đúng cách - điều này có thể hơi khó khi vú đang bị căng sữa.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o2:lifestyle {id: 'vắt_sữa_lifestyle'})
+MERGE (o1)-[r77:treatedBy]->(o2)
+SET r77.text = 'Vắt một lượng nhỏ sữa bằng tay trước khi cho con bú có thể hữu ích.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o2:lifestyle {id: 'xoa_bóp_vú_lifestyle'})
+MERGE (o1)-[r78:treatedBy]->(o2)
+SET r78.text = 'Xoa bóp vú trong khi cho con bú hoặc vắt sữa, bắt đầu từ vùng bầu vú bị ảnh hưởng xoa bóp hướng dẫn đến núm vú.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o2:symptom {id: 'sữa_thừa_symptom'})
+MERGE (o1)-[r79:aggravatedBy]->(o2)
+SET r79.text = 'Đảm bảo bầu vú không còn sữa thừa sau khi cho con bú.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o2:treatment {id: 'chườm_ấm_treatment'})
+MERGE (o1)-[r80:treatedBy]->(o2)
+SET r80.text = 'Nếu bạn gặp khó khăn khi vắt hết một phần vú, hãy chườm ấm lên bầu vú trước khi cho con bú hoặc vắt sữa.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o2:symptom {id: 'tắc_tia_sữa_symptom'})
+MERGE (o1)-[r81:isSymptomOf]->(o2)
+SET r81.text = 'Nên cho con bú ở ngực bị tắc tia sữa trước bởi lúc này khi trẻ đói sẽ bú mạnh hơn để hút sữa mẹ, nhờ đó khai thông các ống dẫn sữa bị tắc.'
+
+MERGE (o1:symptom {id: 'tắc_tia_sữa_symptom'})
+MERGE (o2:lifestyle {id: 'cho_con_bú_lifestyle'})
+MERGE (o1)-[r82:treatedBy]->(o2)
+SET r82.text = 'Nên cho con bú ở ngực bị tắc tia sữa trước bởi lúc này khi trẻ đói sẽ bú mạnh hơn để hút sữa mẹ, nhờ đó khai thông các ống dẫn sữa bị tắc.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o2:lifestyle {id: 'thay_đổi_tư_thế_cho_con_bú_lifestyle'})
+MERGE (o1)-[r83:treatedBy]->(o2)
+SET r83.text = 'Thay đổi tư thế cho con bú.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o2:symptom {id: 'vú_đầy_sữa_symptom'})
+MERGE (o1)-[r84:aggravatedBy]->(o2)
+SET r84.text = 'Để giảm bớt sự khó chịu của bạn: Tránh để vú đầy sữa quá lâu trước khi cho con bú'
+
+MERGE (o1:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o2:treatment {id: 'chườm_lạnh_treatment'})
+MERGE (o1)-[r85:treatedBy]->(o2)
+SET r85.text = 'Chườm lạnh hoặc túi nước đá lên ngực sau khi cho con bú'
+
+MERGE (o1:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o2:treatment {id: 'túi_nước_đá_treatment'})
+MERGE (o1)-[r86:treatedBy]->(o2)
+SET r86.text = 'Chườm lạnh hoặc túi nước đá lên ngực sau khi cho con bú'
+
+MERGE (o1:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o2:treatment {id: 'áo_ngực_hỗ_trợ_treatment'})
+MERGE (o1)-[r87:treatedBy]->(o2)
+SET r87.text = 'Mặc áo ngực hỗ trợ'
+
+MERGE (o1:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o2:treatment {id: 'gặp_chuyên_gia_tư_vấn_cho_con_bú_treatment'})
+MERGE (o1)-[r88:preventedBy]->(o2)
+SET r88.text = 'Để quá trình nuôi con bằng sữa mẹ có khởi đầu tốt nhất với bé và để tránh các biến chứng như viêm tuyến vú thì hãy cân nhắc gặp chuyên gia tư vấn cho con bú để có những lời khuyên về kỹ thuật cho con bú đúng cách.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o2:treatment {id: 'kỹ_thuật_cho_con_bú_đúng_cách_treatment'})
+MERGE (o1)-[r89:preventedBy]->(o2)
+SET r89.text = 'Để quá trình nuôi con bằng sữa mẹ có khởi đầu tốt nhất với bé và để tránh các biến chứng như viêm tuyến vú thì hãy cân nhắc gặp chuyên gia tư vấn cho con bú để có những lời khuyên về kỹ thuật cho con bú đúng cách.'
+
+MERGE (o1:treatment {id: 'cho_con_bú_đúng_cách_treatment'})
+MERGE (o2:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o1)-[r90:preventedBy]->(o2)
+SET r90.text = 'Cho con bú đúng cách giúp ngăn ngừa viêm tuyến vú.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o2:treatment {id: 'hút_hết_sữa_ra_khỏi_tuyến_vú_mỗi_khi_cho_con_bú_xong_treatment'})
+MERGE (o1)-[r91:preventedBy]->(o2)
+SET r91.text = 'Có thể giảm thiểu khả năng bị viêm tuyến vú bằng cách làm theo các lưu ý sau:  Hút hết sữa ra khỏi tuyến vú mỗi khi cho con bú xong.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o2:treatment {id: 'cho_bé_bú_hết_một_bên_vú_trước_khi_chuyển_sang_vú_bên_kia_treatment'})
+MERGE (o1)-[r92:preventedBy]->(o2)
+SET r92.text = 'Có thể giảm thiểu khả năng bị viêm tuyến vú bằng cách làm theo các lưu ý sau:  Trong khi bú, cho bé bú hết một bên vú trước khi chuyển sang vú bên kia.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o2:treatment {id: 'thay_đổi_tư_thế_bạn_dùng_để_cho_con_bú_từ_lần_bú_này_sang_lần_bú_tiếp_theo_treatment'})
+MERGE (o1)-[r93:preventedBy]->(o2)
+SET r93.text = 'Có thể giảm thiểu khả năng bị viêm tuyến vú bằng cách làm theo các lưu ý sau:  Thay đổi tư thế bạn dùng để cho con bú từ lần bú này sang lần bú tiếp theo.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o2:treatment {id: 'em_bé_ngậm_vú_đúng_cách_trong_khi_bú_treatment'})
+MERGE (o1)-[r94:preventedBy]->(o2)
+SET r94.text = 'Có thể giảm thiểu khả năng bị viêm tuyến vú bằng cách làm theo các lưu ý sau:  Hãy chắc chắn rằng em bé ngậm vú đúng cách trong khi bú.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o2:lifestyle {id: 'hút_thuốc_lifestyle'})
+MERGE (o1)-[r95:aggravatedBy]->(o2)
+SET r95.text = 'Có thể giảm thiểu khả năng bị viêm tuyến vú bằng cách làm theo các lưu ý sau:  Nếu bạn hút thuốc, hãy hỏi bác sĩ về việc cai thuốc lá'
+
+MERGE (o1:symptom {id: 'đau_vú_symptom'})
+MERGE (o2:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o1)-[r96:isSymptomOf]->(o2)
+SET r96.text = 'Khi xuất hiện các triệu chứng: đau vú, tiết dịch núm vú, cảm giác xấu đi sau 24 giờ dùng kháng sinh hoặc vài ngày tự điều trị tại nhà, bạn nên đi khám bác sĩ.'
+
+MERGE (o1:symptom {id: 'tiết_dịch_núm_vú_symptom'})
+MERGE (o2:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o1)-[r97:isSymptomOf]->(o2)
+SET r97.text = 'Khi xuất hiện các triệu chứng: đau vú, tiết dịch núm vú, cảm giác xấu đi sau 24 giờ dùng kháng sinh hoặc vài ngày tự điều trị tại nhà, bạn nên đi khám bác sĩ.'
+
+MERGE (o1:symptom {id: 'cảm_giác_xấu_đi_sau_24_giờ_dùng_kháng_sinh_hoặc_vài_ngày_tự_điều_trị_tại_nhà_symptom'})
+MERGE (o2:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o1)-[r98:isSymptomOf]->(o2)
+SET r98.text = 'Khi xuất hiện các triệu chứng: đau vú, tiết dịch núm vú, cảm giác xấu đi sau 24 giờ dùng kháng sinh hoặc vài ngày tự điều trị tại nhà, bạn nên đi khám bác sĩ.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o2:treatment {id: 'điều_trị_treatment'})
+MERGE (o1)-[r99:treatedBy]->(o2)
+SET r99.text = 'Bệnh viêm tuyến vú của tôi sẽ tự khỏi hay tôi cần phải điều trị?'
+
+MERGE (o1:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o2:symptom {id: 'triệu_chứng_symptom'})
+MERGE (o1)-[r100:isSymptomOf]->(o2)
+SET r100.text = 'Tôi có thể làm gì ở nhà để giảm các triệu chứng của mình?'
+
+MERGE (o1:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o2:organ {id: 'con_tôi_organ'})
+MERGE (o1)-[r101:affects]->(o2)
+SET r101.text = 'Tình trạng của tôi có thể ảnh hưởng đến con tôi như thế nào?'
+
+MERGE (o1:treatment {id: 'thuốc_treatment'})
+MERGE (o2:organ {id: 'con_tôi_organ'})
+MERGE (o1)-[r102:affects]->(o2)
+SET r102.text = 'Nếu tôi tiếp tục cho con bú, thuốc mà bác sĩ kê đơn có an toàn cho con tôi không?'
+
+MERGE (o1:treatment {id: 'thuốc_treatment'})
+MERGE (o2:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o1)-[r103:treatedBy]->(o2)
+SET r103.text = 'Tôi sẽ phải dùng thuốc trong bao lâu?'
+
+MERGE (o1:disease {id: 'nhiễm_trùng_tái_phát_disease'})
+MERGE (o2:cause {id: 'yếu_tố_nguy_cơ_cause'})
+MERGE (o1)-[r104:causedBy]->(o2)
+SET r104.text = 'Yếu tố nguy cơ nào có thể làm nhiễm trùng tái phát?'
+
+MERGE (o1:disease {id: 'tái_phát_disease'})
+MERGE (o2:treatment {id: 'giảm_thiểu_nguy_cơ_treatment'})
+MERGE (o1)-[r105:preventedBy]->(o2)
+SET r105.text = 'Làm cách nào để giảm thiểu nguy cơ tái phát?'
+
+MERGE (o1:symptom {id: 'dấu_hiệu_và_triệu_chứng_symptom'})
+MERGE (o2:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o1)-[r106:isSymptomOf]->(o2)
+SET r106.text = 'Chị đã có các dấu hiệu và triệu chứng bao lâu rồi?'
+
+MERGE (o1:organ {id: 'vú_organ'})
+MERGE (o2:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o1)-[r107:locatedIn]->(o2)
+SET r107.text = 'Chúng ở một hay cả hai vú?'
+
+MERGE (o1:symptom {id: 'đau_symptom'})
+MERGE (o2:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o1)-[r108:isSymptomOf]->(o2)
+SET r108.text = 'Mức độ đau của chị nghiêm trọng như thế nào?'
+
+MERGE (o1:treatment {id: 'cho_con_bú_treatment'})
+MERGE (o2:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o1)-[r109:treatedBy]->(o2)
+SET r109.text = 'Chị cho con bú bằng tư thế nào?'
+
+MERGE (o1:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o2:lifestyle {id: 'trước_giờ_lifestyle'})
+MERGE (o1)-[r110:relatedTo]->(o2)
+SET r110.text = 'Trước giờ chị từng bị viêm tuyến vú chưa?'
+
+MERGE (o1:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o2:disease {id: 'ung_thư_vú_disease'})
+MERGE (o1)-[r111:relatedTo]->(o2)
+SET r111.text = 'Tóm lại, viêm tuyến vú không phải nguyên nhân gây ung thư vú nhưng khiến người mẹ đang cho con bú đau nhức, kiệt sức.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o2:symptom {id: 'đau_nhức_symptom'})
+MERGE (o1)-[r112:isSymptomOf]->(o2)
+SET r112.text = 'Tóm lại, viêm tuyến vú không phải nguyên nhân gây ung thư vú nhưng khiến người mẹ đang cho con bú đau nhức, kiệt sức.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o2:symptom {id: 'kiệt_sức_symptom'})
+MERGE (o1)-[r113:isSymptomOf]->(o2)
+SET r113.text = 'Tóm lại, viêm tuyến vú không phải nguyên nhân gây ung thư vú nhưng khiến người mẹ đang cho con bú đau nhức, kiệt sức.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o2:disease {id: 'ung_thư_vú_dạng_viêm_disease'})
+MERGE (o1)-[r114:relatedTo]->(o2)
+SET r114.text = 'Tình trạng này cũng dễ nhầm lần với ung thư vú dạng viêm.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o2:test {id: 'kiểm_tra_test'})
+MERGE (o1)-[r115:diagnosedBy]->(o2)
+SET r115.text = 'Do đó, khi bị viêm tuyến vú, người bệnh nên đi khám để bác sĩ kiểm tra, điều trị, xác định có phải ung thư vú không.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o2:treatment {id: 'điều_trị_treatment'})
+MERGE (o1)-[r116:treatedBy]->(o2)
+SET r116.text = 'Do đó, khi bị viêm tuyến vú, người bệnh nên đi khám để bác sĩ kiểm tra, điều trị, xác định có phải ung thư vú không.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_vú_disease'})
+MERGE (o2:test {id: 'xác_định_có_phải_ung_thư_vú_không_test'})
+MERGE (o1)-[r117:diagnosedBy]->(o2)
+SET r117.text = 'Do đó, khi bị viêm tuyến vú, người bệnh nên đi khám để bác sĩ kiểm tra, điều trị, xác định có phải ung thư vú không.'
+
+MERGE (o1:organ {id: 'bệnh_viện_đa_khoa_tâm_anh_organ'})
+MERGE (o2:treatment {id: 'đội_ngũ_các_chuyên_gia__bác_sĩ_giỏi_chuyên_môn__tận_tâm__nhiệt_tình_treatment'})
+MERGE (o1)-[r118:locatedIn]->(o2)
+SET r118.text = 'Hệ thống Bệnh viện Đa khoa Tâm Anh với đội ngũ các chuyên gia, bác sĩ giỏi chuyên môn, tận tâm, nhiệt tình.'
+
+MERGE (o1:disease {id: 'ung_thư_vú_disease'})
+MERGE (o2:treatment {id: 'chẩn_đoán_và_điều_trị_đa_mô_thức_treatment'})
+MERGE (o1)-[r119:treatedBy]->(o2)
+SET r119.text = 'Đặc biệt với việc chẩn đoán và điều trị đa mô thức các bệnh về vú, đặc biệt là ung thư vú đòi hỏi phải có sự liên kết đa chuyên khoa.'
+
+MERGE (o1:disease {id: 'ung_thư_vú_disease'})
+MERGE (o2:test {id: 'hệ_thống_máy_nhũ_ảnh_kỹ_thuật_số_3d_(dbt)_mammomat_inspiration_test'})
+MERGE (o1)-[r120:diagnosedBy]->(o2)
+SET r120.text = 'Khoa Ngoại vú làm chủ những kỹ thuật tiến bộ nhất cùng sự hỗ trợ của hệ thống máy móc, trang thiết bị chẩn đoán hình ảnh hiện đại như: hệ thống máy nhũ ảnh kỹ thuật số 3D (DBT) Mammomat Inspiration; Máy siêu âm GE Logiq E10S, với đầu dò có hỗ trợ siêu âm đàn hồi vú, khảo sát vi mạch và hỗ trợ định hướng sinh thiết dưới siêu âm; Máy MRI 3 tesla thế hệ mới Magnetom Amira BioMatrix… sẽ giúp phát hiện sớm và có phương án điều trị một cách an toàn, hiệu quả với các bệnh lý liên quan đến tuyến vú.'
+
+MERGE (o1:disease {id: 'ung_thư_vú_disease'})
+MERGE (o2:test {id: 'máy_siêu_âm_ge_logiq_e10s_test'})
+MERGE (o1)-[r121:diagnosedBy]->(o2)
+SET r121.text = 'Khoa Ngoại vú làm chủ những kỹ thuật tiến bộ nhất cùng sự hỗ trợ của hệ thống máy móc, trang thiết bị chẩn đoán hình ảnh hiện đại như: hệ thống máy nhũ ảnh kỹ thuật số 3D (DBT) Mammomat Inspiration; Máy siêu âm GE Logiq E10S, với đầu dò có hỗ trợ siêu âm đàn hồi vú, khảo sát vi mạch và hỗ trợ định hướng sinh thiết dưới siêu âm; Máy MRI 3 tesla thế hệ mới Magnetom Amira BioMatrix… sẽ giúp phát hiện sớm và có phương án điều trị một cách an toàn, hiệu quả với các bệnh lý liên quan đến tuyến vú.'
+
+MERGE (o1:disease {id: 'ung_thư_vú_disease'})
+MERGE (o2:test {id: 'máy_mri_3_tesla_thế_hệ_mới_magnetom_amira_biomatrix_test'})
+MERGE (o1)-[r122:diagnosedBy]->(o2)
+SET r122.text = 'Khoa Ngoại vú làm chủ những kỹ thuật tiến bộ nhất cùng sự hỗ trợ của hệ thống máy móc, trang thiết bị chẩn đoán hình ảnh hiện đại như: hệ thống máy nhũ ảnh kỹ thuật số 3D (DBT) Mammomat Inspiration; Máy siêu âm GE Logiq E10S, với đầu dò có hỗ trợ siêu âm đàn hồi vú, khảo sát vi mạch và hỗ trợ định hướng sinh thiết dưới siêu âm; Máy MRI 3 tesla thế hệ mới Magnetom Amira BioMatrix… sẽ giúp phát hiện sớm và có phương án điều trị một cách an toàn, hiệu quả với các bệnh lý liên quan đến tuyến vú.'
+
+MERGE (o1:disease {id: 'ung_thư_vú_disease'})
+MERGE (o2:treatment {id: 'phát_hiện_sớm_treatment'})
+MERGE (o1)-[r123:treatedBy]->(o2)
+SET r123.text = 'Khoa Ngoại vú làm chủ những kỹ thuật tiến bộ nhất cùng sự hỗ trợ của hệ thống máy móc, trang thiết bị chẩn đoán hình ảnh hiện đại như: hệ thống máy nhũ ảnh kỹ thuật số 3D (DBT) Mammomat Inspiration; Máy siêu âm GE Logiq E10S, với đầu dò có hỗ trợ siêu âm đàn hồi vú, khảo sát vi mạch và hỗ trợ định hướng sinh thiết dưới siêu âm; Máy MRI 3 tesla thế hệ mới Magnetom Amira BioMatrix… sẽ giúp phát hiện sớm và có phương án điều trị một cách an toàn, hiệu quả với các bệnh lý liên quan đến tuyến vú.'
+
+MERGE (o1:disease {id: 'ung_thư_vú_disease'})
+MERGE (o2:treatment {id: 'điều_trị_một_cách_an_toàn__hiệu_quả_treatment'})
+MERGE (o1)-[r124:treatedBy]->(o2)
+SET r124.text = 'Khoa Ngoại vú làm chủ những kỹ thuật tiến bộ nhất cùng sự hỗ trợ của hệ thống máy móc, trang thiết bị chẩn đoán hình ảnh hiện đại như: hệ thống máy nhũ ảnh kỹ thuật số 3D (DBT) Mammomat Inspiration; Máy siêu âm GE Logiq E10S, với đầu dò có hỗ trợ siêu âm đàn hồi vú, khảo sát vi mạch và hỗ trợ định hướng sinh thiết dưới siêu âm; Máy MRI 3 tesla thế hệ mới Magnetom Amira BioMatrix… sẽ giúp phát hiện sớm và có phương án điều trị một cách an toàn, hiệu quả với các bệnh lý liên quan đến tuyến vú.'
+
+MERGE (o1:organ {id: 'bvđk_tâm_anh_organ'})
+MERGE (o2:treatment {id: 'sự_phối_hợp_chặt_chẽ_giữa_các_chuyên_khoa_với_nhau_treatment'})
+MERGE (o1)-[r125:locatedIn]->(o2)
+SET r125.text = 'Ngoài ra, tại BVĐK Tâm Anh còn có sự phối hợp chặt chẽ giữa các chuyên khoa với nhau như: Chẩn đoán hình ảnh, Xét nghiệm, Sản phụ khoa, Nội tiết, Gây mê hồi sức, Dinh dưỡng, Tâm lý, Vật lý trị liệu… giúp cho việc lập kế hoạch điều trị cho bệnh nhân được toàn diện, đa mô thức và cá thể hóa nhằm rút ngắn thời gian và tăng hiệu quả điều trị.'
+
+MERGE (o1:organ {id: 'bvđk_tâm_anh_organ'})
+MERGE (o2:test {id: 'chẩn_đoán_hình_ảnh_test'})
+MERGE (o1)-[r126:locatedIn]->(o2)
+SET r126.text = 'Ngoài ra, tại BVĐK Tâm Anh còn có sự phối hợp chặt chẽ giữa các chuyên khoa với nhau như: Chẩn đoán hình ảnh, Xét nghiệm, Sản phụ khoa, Nội tiết, Gây mê hồi sức, Dinh dưỡng, Tâm lý, Vật lý trị liệu… giúp cho việc lập kế hoạch điều trị cho bệnh nhân được toàn diện, đa mô thức và cá thể hóa nhằm rút ngắn thời gian và tăng hiệu quả điều trị.'
+
+MERGE (o1:organ {id: 'bvđk_tâm_anh_organ'})
+MERGE (o2:test {id: 'xét_nghiệm_test'})
+MERGE (o1)-[r127:locatedIn]->(o2)
+SET r127.text = 'Ngoài ra, tại BVĐK Tâm Anh còn có sự phối hợp chặt chẽ giữa các chuyên khoa với nhau như: Chẩn đoán hình ảnh, Xét nghiệm, Sản phụ khoa, Nội tiết, Gây mê hồi sức, Dinh dưỡng, Tâm lý, Vật lý trị liệu… giúp cho việc lập kế hoạch điều trị cho bệnh nhân được toàn diện, đa mô thức và cá thể hóa nhằm rút ngắn thời gian và tăng hiệu quả điều trị.'
+
+MERGE (o1:organ {id: 'bvđk_tâm_anh_organ'})
+MERGE (o2:organ {id: 'sản_phụ_khoa_organ'})
+MERGE (o1)-[r128:locatedIn]->(o2)
+SET r128.text = 'Ngoài ra, tại BVĐK Tâm Anh còn có sự phối hợp chặt chẽ giữa các chuyên khoa với nhau như: Chẩn đoán hình ảnh, Xét nghiệm, Sản phụ khoa, Nội tiết, Gây mê hồi sức, Dinh dưỡng, Tâm lý, Vật lý trị liệu… giúp cho việc lập kế hoạch điều trị cho bệnh nhân được toàn diện, đa mô thức và cá thể hóa nhằm rút ngắn thời gian và tăng hiệu quả điều trị.'
+
+MERGE (o1:organ {id: 'bvđk_tâm_anh_organ'})
+MERGE (o2:organ {id: 'nội_tiết_organ'})
+MERGE (o1)-[r129:locatedIn]->(o2)
+SET r129.text = 'Ngoài ra, tại BVĐK Tâm Anh còn có sự phối hợp chặt chẽ giữa các chuyên khoa với nhau như: Chẩn đoán hình ảnh, Xét nghiệm, Sản phụ khoa, Nội tiết, Gây mê hồi sức, Dinh dưỡng, Tâm lý, Vật lý trị liệu… giúp cho việc lập kế hoạch điều trị cho bệnh nhân được toàn diện, đa mô thức và cá thể hóa nhằm rút ngắn thời gian và tăng hiệu quả điều trị.'
+
+MERGE (o1:organ {id: 'bvđk_tâm_anh_organ'})
+MERGE (o2:treatment {id: 'gây_mê_hồi_sức_treatment'})
+MERGE (o1)-[r130:locatedIn]->(o2)
+SET r130.text = 'Ngoài ra, tại BVĐK Tâm Anh còn có sự phối hợp chặt chẽ giữa các chuyên khoa với nhau như: Chẩn đoán hình ảnh, Xét nghiệm, Sản phụ khoa, Nội tiết, Gây mê hồi sức, Dinh dưỡng, Tâm lý, Vật lý trị liệu… giúp cho việc lập kế hoạch điều trị cho bệnh nhân được toàn diện, đa mô thức và cá thể hóa nhằm rút ngắn thời gian và tăng hiệu quả điều trị.'
+
+MERGE (o1:organ {id: 'bvđk_tâm_anh_organ'})
+MERGE (o2:treatment {id: 'dinh_dưỡng_treatment'})
+MERGE (o1)-[r131:locatedIn]->(o2)
+SET r131.text = 'Ngoài ra, tại BVĐK Tâm Anh còn có sự phối hợp chặt chẽ giữa các chuyên khoa với nhau như: Chẩn đoán hình ảnh, Xét nghiệm, Sản phụ khoa, Nội tiết, Gây mê hồi sức, Dinh dưỡng, Tâm lý, Vật lý trị liệu… giúp cho việc lập kế hoạch điều trị cho bệnh nhân được toàn diện, đa mô thức và cá thể hóa nhằm rút ngắn thời gian và tăng hiệu quả điều trị.'
+
+MERGE (o1:organ {id: 'bvđk_tâm_anh_organ'})
+MERGE (o2:treatment {id: 'tâm_lý_treatment'})
+MERGE (o1)-[r132:locatedIn]->(o2)
+SET r132.text = 'Ngoài ra, tại BVĐK Tâm Anh còn có sự phối hợp chặt chẽ giữa các chuyên khoa với nhau như: Chẩn đoán hình ảnh, Xét nghiệm, Sản phụ khoa, Nội tiết, Gây mê hồi sức, Dinh dưỡng, Tâm lý, Vật lý trị liệu… giúp cho việc lập kế hoạch điều trị cho bệnh nhân được toàn diện, đa mô thức và cá thể hóa nhằm rút ngắn thời gian và tăng hiệu quả điều trị.'
+
+MERGE (o1:organ {id: 'bvđk_tâm_anh_organ'})
+MERGE (o2:treatment {id: 'vật_lý_trị_liệu_treatment'})
+MERGE (o1)-[r133:locatedIn]->(o2)
+SET r133.text = 'Ngoài ra, tại BVĐK Tâm Anh còn có sự phối hợp chặt chẽ giữa các chuyên khoa với nhau như: Chẩn đoán hình ảnh, Xét nghiệm, Sản phụ khoa, Nội tiết, Gây mê hồi sức, Dinh dưỡng, Tâm lý, Vật lý trị liệu… giúp cho việc lập kế hoạch điều trị cho bệnh nhân được toàn diện, đa mô thức và cá thể hóa nhằm rút ngắn thời gian và tăng hiệu quả điều trị.'

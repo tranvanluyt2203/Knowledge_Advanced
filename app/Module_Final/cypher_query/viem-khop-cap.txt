@@ -1,0 +1,751 @@
+
+MERGE (o1:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o2:symptom {id: 'nhiều_vấn_đề_nghiêm_trọng_symptom'})
+MERGE (o1)-[r0:isSymptomOf]->(o2)
+SET r0.text = 'Viêm khớp cấplà bệnh lý ít phổ biến nhưng dễ dẫn đến nhiều vấn đề nghiêm trọng nếu không điều trị sớm.'
+
+MERGE (o1:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o2:treatment {id: 'điều_trị_sớm_treatment'})
+MERGE (o1)-[r1:treatedBy]->(o2)
+SET r1.text = 'Viêm khớp cấplà bệnh lý ít phổ biến nhưng dễ dẫn đến nhiều vấn đề nghiêm trọng nếu không điều trị sớm.'
+
+MERGE (o1:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o2:cause {id: 'nhiều_nguyên_nhân_khác_nhau_cause'})
+MERGE (o1)-[r2:causedBy]->(o2)
+SET r2.text = 'Tình trạng này xuất phát từ nhiều nguyên nhân khác nhau với các triệu chứng vô cùng điển hình như sưng đau khớp, giảm phạm vi hoạt động, sốt,&#8230;'
+
+MERGE (o1:symptom {id: 'sưng_đau_khớp_symptom'})
+MERGE (o2:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o1)-[r3:isSymptomOf]->(o2)
+SET r3.text = 'Tình trạng này xuất phát từ nhiều nguyên nhân khác nhau với các triệu chứng vô cùng điển hình như sưng đau khớp, giảm phạm vi hoạt động, sốt,&#8230;'
+
+MERGE (o1:symptom {id: 'giảm_phạm_vi_hoạt_động_symptom'})
+MERGE (o2:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o1)-[r4:isSymptomOf]->(o2)
+SET r4.text = 'Tình trạng này xuất phát từ nhiều nguyên nhân khác nhau với các triệu chứng vô cùng điển hình như sưng đau khớp, giảm phạm vi hoạt động, sốt,&#8230;'
+
+MERGE (o1:symptom {id: 'sốt_symptom'})
+MERGE (o2:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o1)-[r5:isSymptomOf]->(o2)
+SET r5.text = 'Tình trạng này xuất phát từ nhiều nguyên nhân khác nhau với các triệu chứng vô cùng điển hình như sưng đau khớp, giảm phạm vi hoạt động, sốt,&#8230;'
+
+MERGE (o1:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o2:test {id: 'chẩn_đoán_test'})
+MERGE (o1)-[r6:diagnosedBy]->(o2)
+SET r6.text = 'Bệnh cần được chẩn đoán và điều trị kịp thời nhằm hạn chế tối đa các biến chứng nguy hiểm cho sức khỏe.'
+
+MERGE (o1:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o2:treatment {id: 'điều_trị_treatment'})
+MERGE (o1)-[r7:treatedBy]->(o2)
+SET r7.text = 'Bệnh cần được chẩn đoán và điều trị kịp thời nhằm hạn chế tối đa các biến chứng nguy hiểm cho sức khỏe.'
+
+MERGE (o1:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o2:organ {id: 'sức_khỏe_organ'})
+MERGE (o1)-[r8:affects]->(o2)
+SET r8.text = 'Bệnh cần được chẩn đoán và điều trị kịp thời nhằm hạn chế tối đa các biến chứng nguy hiểm cho sức khỏe.'
+
+MERGE (o1:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o2:cause {id: 'hệ_thống_miễn_dịch_hoạt_động_quá_mức_cause'})
+MERGE (o1)-[r9:causedBy]->(o2)
+SET r9.text = 'Viêm khớp cấp là tình trạng viêm, đau khởi phát nhanh chóng hoặc đột ngột, do hệ thống miễn dịch hoạt động quá mức, dẫn đến nhiều khớp bị tân công cùng lúc.'
+
+MERGE (o1:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o2:organ {id: 'nhiều_khớp_organ'})
+MERGE (o1)-[r10:affects]->(o2)
+SET r10.text = 'Viêm khớp cấp là tình trạng viêm, đau khởi phát nhanh chóng hoặc đột ngột, do hệ thống miễn dịch hoạt động quá mức, dẫn đến nhiều khớp bị tân công cùng lúc.'
+
+MERGE (o1:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o2:symptom {id: 'viêm_symptom'})
+MERGE (o1)-[r11:isSymptomOf]->(o2)
+SET r11.text = 'Viêm khớp cấp là tình trạng viêm, đau khởi phát nhanh chóng hoặc đột ngột, do hệ thống miễn dịch hoạt động quá mức, dẫn đến nhiều khớp bị tân công cùng lúc.'
+
+MERGE (o1:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o2:symptom {id: 'đau_symptom'})
+MERGE (o1)-[r12:isSymptomOf]->(o2)
+SET r12.text = 'Viêm khớp cấp là tình trạng viêm, đau khởi phát nhanh chóng hoặc đột ngột, do hệ thống miễn dịch hoạt động quá mức, dẫn đến nhiều khớp bị tân công cùng lúc.'
+
+MERGE (o1:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o2:disease {id: 'mãn_tính_disease'})
+MERGE (o1)-[r13:relatedTo]->(o2)
+SET r13.text = 'Vấn đề bệnh lý này ít phổ biến nhưng cũng có nguy cơ tiến triển thành mãn tính nếu không được chẩn đoán và điều trị sớm.'
+
+MERGE (o1:disease {id: 'viêm_khớp_cấp_tính_disease'})
+MERGE (o2:disease {id: 'viêm_khớp_thông_thường_disease'})
+MERGE (o1)-[r14:relatedTo]->(o2)
+SET r14.text = 'Khác với viêm khớp thông thường, viêm khớp cấp tính xảy ra đột ngột và không phải do tổn thương.'
+
+MERGE (o1:disease {id: 'viêm_khớp_cấp_tính_disease'})
+MERGE (o2:symptom {id: 'xảy_ra_đột_ngột_symptom'})
+MERGE (o1)-[r15:isSymptomOf]->(o2)
+SET r15.text = 'Khác với viêm khớp thông thường, viêm khớp cấp tính xảy ra đột ngột và không phải do tổn thương.'
+
+MERGE (o1:symptom {id: 'đau_khớp_cấp_tính_symptom'})
+MERGE (o2:disease {id: 'viêm_bao_hoạt_dịch_disease'})
+MERGE (o1)-[r16:causedBy]->(o2)
+SET r16.text = 'Một số nguyên nhân có thể gây đau khớp cấp tính ngoài viêm khớp bao gồm: viêm bao hoạt dịch, bong gân, bệnh gút, viêm cho chấn thương, vận động quá mức…'
+
+MERGE (o1:symptom {id: 'đau_khớp_cấp_tính_symptom'})
+MERGE (o2:cause {id: 'bong_gân_cause'})
+MERGE (o1)-[r17:causedBy]->(o2)
+SET r17.text = 'Một số nguyên nhân có thể gây đau khớp cấp tính ngoài viêm khớp bao gồm: viêm bao hoạt dịch, bong gân, bệnh gút, viêm cho chấn thương, vận động quá mức…'
+
+MERGE (o1:symptom {id: 'đau_khớp_cấp_tính_symptom'})
+MERGE (o2:disease {id: 'bệnh_gút_disease'})
+MERGE (o1)-[r18:causedBy]->(o2)
+SET r18.text = 'Một số nguyên nhân có thể gây đau khớp cấp tính ngoài viêm khớp bao gồm: viêm bao hoạt dịch, bong gân, bệnh gút, viêm cho chấn thương, vận động quá mức…'
+
+MERGE (o1:symptom {id: 'đau_khớp_cấp_tính_symptom'})
+MERGE (o2:cause {id: 'viêm_do_chấn_thương_cause'})
+MERGE (o1)-[r19:causedBy]->(o2)
+SET r19.text = 'Một số nguyên nhân có thể gây đau khớp cấp tính ngoài viêm khớp bao gồm: viêm bao hoạt dịch, bong gân, bệnh gút, viêm cho chấn thương, vận động quá mức…'
+
+MERGE (o1:symptom {id: 'đau_khớp_cấp_tính_symptom'})
+MERGE (o2:lifestyle {id: 'vận_động_quá_mức_lifestyle'})
+MERGE (o1)-[r20:causedBy]->(o2)
+SET r20.text = 'Một số nguyên nhân có thể gây đau khớp cấp tính ngoài viêm khớp bao gồm: viêm bao hoạt dịch, bong gân, bệnh gút, viêm cho chấn thương, vận động quá mức…'
+
+MERGE (o1:symptom {id: 'đau_khớp_cấp_tính_symptom'})
+MERGE (o2:treatment {id: 'tự_chăm_sóc_treatment'})
+MERGE (o1)-[r21:treatedBy]->(o2)
+SET r21.text = 'Tùy vào mức độ nghiêm trọng, tình trạng này thường khỏi trong vài tuần bằng cách tự chăm sóc và điều trị bảo tồn.'
+
+MERGE (o1:symptom {id: 'sưng__đỏ_và_nóng_ở_các_khớp_bị_ảnh_hưởng_symptom'})
+MERGE (o2:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o1)-[r22:isSymptomOf]->(o2)
+SET r22.text = 'Tình trạng viêm khớp cấp thường xuất hiện với các dấu hiệu như sau:  Sưng, đỏ và nóng ở các khớp bị ảnh hưởng.'
+
+MERGE (o1:symptom {id: 'phạm_vi_chuyển_động_bị_hạn_chế_symptom'})
+MERGE (o2:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o1)-[r23:isSymptomOf]->(o2)
+SET r23.text = 'Tình trạng viêm khớp cấp thường xuất hiện với các dấu hiệu như sau:  Sưng, đỏ và nóng ở các khớp bị ảnh hưởng. Phạm vi chuyển động bị hạn chế.'
+
+MERGE (o1:symptom {id: 'đau_các_khớp_xuất_hiện_đột_ngột__sau_một_bữa_ăn_thịnh_soạn_hoặc_khi_thời_tiết_thay_đổi_symptom'})
+MERGE (o2:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o1)-[r24:isSymptomOf]->(o2)
+SET r24.text = 'Tình trạng viêm khớp cấp thường xuất hiện với các dấu hiệu như sau:  Sưng, đỏ và nóng ở các khớp bị ảnh hưởng. Phạm vi chuyển động bị hạn chế. Đau các khớp xuất hiện đột ngột, sau một bữa ăn thịnh soạn hoặc khi thời tiết thay đổi'
+
+MERGE (o1:disease {id: 'viêm_khớp_thông_thường_disease'})
+MERGE (o2:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o1)-[r25:relatedTo]->(o2)
+SET r25.text = 'Người bệnh rất khó để phân biệt giữa viêm khớp thông thường và viêm khớp cấp.'
+
+MERGE (o1:test {id: 'theo_dõi_các_triệu_chứng_test'})
+MERGE (o2:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o1)-[r26:diagnosedBy]->(o2)
+SET r26.text = 'Theo đó, bác sĩ khuyên nên theo dõi các triệu chứng, khả năng tiến triển của cơn đau vào một thời điểm nhất định trong ngày, sau khi hoạt động thể chất hoặc nghỉ ngơi để hỗ trợ chẩn đoán chính xác.'
+
+MERGE (o1:symptom {id: 'khả_năng_tiến_triển_của_cơn_đau_vào_một_thời_điểm_nhất_định_trong_ngày_symptom'})
+MERGE (o2:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o1)-[r27:isSymptomOf]->(o2)
+SET r27.text = 'Theo đó, bác sĩ khuyên nên theo dõi các triệu chứng, khả năng tiến triển của cơn đau vào một thời điểm nhất định trong ngày, sau khi hoạt động thể chất hoặc nghỉ ngơi để hỗ trợ chẩn đoán chính xác.'
+
+MERGE (o1:lifestyle {id: 'hoạt_động_thể_chất_lifestyle'})
+MERGE (o2:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o1)-[r28:aggravatedBy]->(o2)
+SET r28.text = 'Theo đó, bác sĩ khuyên nên theo dõi các triệu chứng, khả năng tiến triển của cơn đau vào một thời điểm nhất định trong ngày, sau khi hoạt động thể chất hoặc nghỉ ngơi để hỗ trợ chẩn đoán chính xác.'
+
+MERGE (o1:lifestyle {id: 'nghỉ_ngơi_lifestyle'})
+MERGE (o2:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o1)-[r29:aggravatedBy]->(o2)
+SET r29.text = 'Theo đó, bác sĩ khuyên nên theo dõi các triệu chứng, khả năng tiến triển của cơn đau vào một thời điểm nhất định trong ngày, sau khi hoạt động thể chất hoặc nghỉ ngơi để hỗ trợ chẩn đoán chính xác.'
+
+MERGE (o1:symptom {id: 'sưng_đau_symptom'})
+MERGE (o2:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o1)-[r30:isSymptomOf]->(o2)
+SET r30.text = 'Nếu các dấu hiệu sưng đau vẫn tiếp tục kéo dài hơn một vài tuần, trở nên nghiêm trọng hơn hoặc xuất hiện một số triệu chứng như sốt, phát ban… người bệnh nên liên hệ ngay với bác sĩ.'
+
+MERGE (o1:symptom {id: 'sốt_symptom'})
+MERGE (o2:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o1)-[r31:isSymptomOf]->(o2)
+SET r31.text = 'Nếu các dấu hiệu sưng đau vẫn tiếp tục kéo dài hơn một vài tuần, trở nên nghiêm trọng hơn hoặc xuất hiện một số triệu chứng như sốt, phát ban… người bệnh nên liên hệ ngay với bác sĩ.'
+
+MERGE (o1:symptom {id: 'phát_ban_symptom'})
+MERGE (o2:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o1)-[r32:isSymptomOf]->(o2)
+SET r32.text = 'Nếu các dấu hiệu sưng đau vẫn tiếp tục kéo dài hơn một vài tuần, trở nên nghiêm trọng hơn hoặc xuất hiện một số triệu chứng như sốt, phát ban… người bệnh nên liên hệ ngay với bác sĩ.'
+
+MERGE (o1:test {id: 'chẩn_đoán_test'})
+MERGE (o2:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o1)-[r33:diagnosedBy]->(o2)
+SET r33.text = 'Việc chẩn đoán và điều trị kịp thời sẽ giúp hạn chế tối đa các biến chứng không mong muốn.'
+
+MERGE (o1:treatment {id: 'điều_trị_treatment'})
+MERGE (o2:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o1)-[r34:treatedBy]->(o2)
+SET r34.text = 'Việc chẩn đoán và điều trị kịp thời sẽ giúp hạn chế tối đa các biến chứng không mong muốn.'
+
+MERGE (o1:cause {id: 'nhiễm_virus_cause'})
+MERGE (o2:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o1)-[r35:causedBy]->(o2)
+SET r35.text = 'Tình trạng viêm khớp cấp có thể xuất hiện do một số nguyên nhân điển hình sau đây: (2)  Nhiễm virus.'
+
+MERGE (o1:disease {id: 'viêm_cột_sống_dính_khớp_disease'})
+MERGE (o2:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o1)-[r36:causedBy]->(o2)
+SET r36.text = 'Tình trạng viêm khớp cấp có thể xuất hiện do một số nguyên nhân điển hình sau đây: (2)  Nhiễm virus. Viêm cột sống dính khớp.'
+
+MERGE (o1:disease {id: 'hoại_tử_vô_mạch_disease'})
+MERGE (o2:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o1)-[r37:causedBy]->(o2)
+SET r37.text = 'Tình trạng viêm khớp cấp có thể xuất hiện do một số nguyên nhân điển hình sau đây: (2)  Nhiễm virus. Viêm cột sống dính khớp. Hoại tử vô mạch (hoại tử xương - mô xương chết do lưu lượng máu hạn chế).'
+
+MERGE (o1:disease {id: 'ung_thư_xương_disease'})
+MERGE (o2:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o1)-[r38:causedBy]->(o2)
+SET r38.text = 'Tình trạng viêm khớp cấp có thể xuất hiện do một số nguyên nhân điển hình sau đây: (2)  Nhiễm virus. Viêm cột sống dính khớp. Hoại tử vô mạch (hoại tử xương - mô xương chết do lưu lượng máu hạn chế). Ung thư xương.'
+
+MERGE (o1:cause {id: 'xương_gãy_cause'})
+MERGE (o2:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o1)-[r39:causedBy]->(o2)
+SET r39.text = 'Tình trạng viêm khớp cấp có thể xuất hiện do một số nguyên nhân điển hình sau đây: (2)  Nhiễm virus. Viêm cột sống dính khớp. Hoại tử vô mạch (hoại tử xương - mô xương chết do lưu lượng máu hạn chế). Ung thư xương. Xương gãy.'
+
+MERGE (o1:disease {id: 'viêm_bao_hoạt_dịch_disease'})
+MERGE (o2:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o1)-[r40:causedBy]->(o2)
+SET r40.text = 'Tình trạng viêm khớp cấp có thể xuất hiện do một số nguyên nhân điển hình sau đây: (2)  Nhiễm virus. Viêm cột sống dính khớp. Hoại tử vô mạch (hoại tử xương - mô xương chết do lưu lượng máu hạn chế). Ung thư xương. Xương gãy. Viêm bao hoạt dịch.'
+
+MERGE (o1:disease {id: 'hội_chứng_đau_phức_hợp_khu_vực_disease'})
+MERGE (o2:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o1)-[r41:causedBy]->(o2)
+SET r41.text = 'Tình trạng viêm khớp cấp có thể xuất hiện do một số nguyên nhân điển hình sau đây: (2)  Nhiễm virus. Viêm cột sống dính khớp. Hoại tử vô mạch (hoại tử xương - mô xương chết do lưu lượng máu hạn chế). Ung thư xương. Xương gãy. Viêm bao hoạt dịch. Hội chứng đau phức hợp khu vực (đau mãn tính do rối loạn chức năng hệ thần kinh).'
+
+MERGE (o1:disease {id: 'đau_cơ_xơ_hóa_disease'})
+MERGE (o2:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o1)-[r42:causedBy]->(o2)
+SET r42.text = 'Tình trạng viêm khớp cấp có thể xuất hiện do một số nguyên nhân điển hình sau đây: (2)  Nhiễm virus. Viêm cột sống dính khớp. Hoại tử vô mạch (hoại tử xương - mô xương chết do lưu lượng máu hạn chế). Ung thư xương. Xương gãy. Viêm bao hoạt dịch. Hội chứng đau phức hợp khu vực (đau mãn tính do rối loạn chức năng hệ thần kinh). Đau cơ xơ hóa.'
+
+MERGE (o1:disease {id: 'viêm_khớp_do_lậu_cầu_disease'})
+MERGE (o2:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o1)-[r43:causedBy]->(o2)
+SET r43.text = 'Tình trạng viêm khớp cấp có thể xuất hiện do một số nguyên nhân điển hình sau đây: (2)  Nhiễm virus. Viêm cột sống dính khớp. Hoại tử vô mạch (hoại tử xương - mô xương chết do lưu lượng máu hạn chế). Ung thư xương. Xương gãy. Viêm bao hoạt dịch. Hội chứng đau phức hợp khu vực (đau mãn tính do rối loạn chức năng hệ thần kinh). Đau cơ xơ hóa. Viêm khớp do lậu cầu.'
+
+MERGE (o1:disease {id: 'bệnh_gút_disease'})
+MERGE (o2:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o1)-[r44:causedBy]->(o2)
+SET r44.text = 'Tình trạng viêm khớp cấp có thể xuất hiện do một số nguyên nhân điển hình sau đây: (2)  Nhiễm virus. Viêm cột sống dính khớp. Hoại tử vô mạch (hoại tử xương - mô xương chết do lưu lượng máu hạn chế). Ung thư xương. Xương gãy. Viêm bao hoạt dịch. Hội chứng đau phức hợp khu vực (đau mãn tính do rối loạn chức năng hệ thần kinh). Đau cơ xơ hóa. Viêm khớp do lậu cầu. Bệnh gút (viêm khớp liên quan đến hàm lượng acid uric dư thừa).'
+
+MERGE (o1:disease {id: 'suy_giáp_disease'})
+MERGE (o2:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o1)-[r45:causedBy]->(o2)
+SET r45.text = 'Tình trạng viêm khớp cấp có thể xuất hiện do một số nguyên nhân điển hình sau đây: (2)  Nhiễm virus. Viêm cột sống dính khớp. Hoại tử vô mạch (hoại tử xương - mô xương chết do lưu lượng máu hạn chế). Ung thư xương. Xương gãy. Viêm bao hoạt dịch. Hội chứng đau phức hợp khu vực (đau mãn tính do rối loạn chức năng hệ thần kinh). Đau cơ xơ hóa. Viêm khớp do lậu cầu. Bệnh gút (viêm khớp liên quan đến hàm lượng acid uric dư thừa). Suy giáp (tuyến giáp hoạt động kém).'
+
+MERGE (o1:disease {id: 'bệnh_bạch_cầu_disease'})
+MERGE (o2:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o1)-[r46:causedBy]->(o2)
+SET r46.text = 'Tình trạng viêm khớp cấp có thể xuất hiện do một số nguyên nhân điển hình sau đây: (2)  Nhiễm virus. Viêm cột sống dính khớp. Hoại tử vô mạch (hoại tử xương - mô xương chết do lưu lượng máu hạn chế). Ung thư xương. Xương gãy. Viêm bao hoạt dịch. Hội chứng đau phức hợp khu vực (đau mãn tính do rối loạn chức năng hệ thần kinh). Đau cơ xơ hóa. Viêm khớp do lậu cầu. Bệnh gút (viêm khớp liên quan đến hàm lượng acid uric dư thừa). Suy giáp (tuyến giáp hoạt động kém). Bệnh bạch cầu.'
+
+MERGE (o1:disease {id: 'lupus_disease'})
+MERGE (o2:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o1)-[r47:causedBy]->(o2)
+SET r47.text = 'Tình trạng viêm khớp cấp có thể xuất hiện do một số nguyên nhân điển hình sau đây: (2)  Nhiễm virus. Viêm cột sống dính khớp. Hoại tử vô mạch (hoại tử xương - mô xương chết do lưu lượng máu hạn chế). Ung thư xương. Xương gãy. Viêm bao hoạt dịch. Hội chứng đau phức hợp khu vực (đau mãn tính do rối loạn chức năng hệ thần kinh). Đau cơ xơ hóa. Viêm khớp do lậu cầu. Bệnh gút (viêm khớp liên quan đến hàm lượng acid uric dư thừa). Suy giáp (tuyến giáp hoạt động kém). Bệnh bạch cầu. Lupus.'
+
+MERGE (o1:disease {id: 'viêm_xương_khớp_disease'})
+MERGE (o2:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o1)-[r48:causedBy]->(o2)
+SET r48.text = 'Tình trạng viêm khớp cấp có thể xuất hiện do một số nguyên nhân điển hình sau đây: (2)  Nhiễm virus. Viêm cột sống dính khớp. Hoại tử vô mạch (hoại tử xương - mô xương chết do lưu lượng máu hạn chế). Ung thư xương. Xương gãy. Viêm bao hoạt dịch. Hội chứng đau phức hợp khu vực (đau mãn tính do rối loạn chức năng hệ thần kinh). Đau cơ xơ hóa. Viêm khớp do lậu cầu. Bệnh gút (viêm khớp liên quan đến hàm lượng acid uric dư thừa). Suy giáp (tuyến giáp hoạt động kém). Bệnh bạch cầu. Lupus. Viêm xương khớp.'
+
+MERGE (o1:disease {id: 'viêm_tủy_xương_disease'})
+MERGE (o2:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o1)-[r49:causedBy]->(o2)
+SET r49.text = 'Tình trạng viêm khớp cấp có thể xuất hiện do một số nguyên nhân điển hình sau đây: (2)  Nhiễm virus. Viêm cột sống dính khớp. Hoại tử vô mạch (hoại tử xương - mô xương chết do lưu lượng máu hạn chế). Ung thư xương. Xương gãy. Viêm bao hoạt dịch. Hội chứng đau phức hợp khu vực (đau mãn tính do rối loạn chức năng hệ thần kinh). Đau cơ xơ hóa. Viêm khớp do lậu cầu. Bệnh gút (viêm khớp liên quan đến hàm lượng acid uric dư thừa). Suy giáp (tuyến giáp hoạt động kém). Bệnh bạch cầu. Lupus. Viêm xương khớp. Viêm tủy xương (nhiễm trùng xương).'
+
+MERGE (o1:disease {id: 'viêm_đa_khớp_dạng_thấp_disease'})
+MERGE (o2:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o1)-[r50:causedBy]->(o2)
+SET r50.text = 'Tình trạng viêm khớp cấp có thể xuất hiện do một số nguyên nhân điển hình sau đây: (2)  Nhiễm virus. Viêm cột sống dính khớp. Hoại tử vô mạch (hoại tử xương - mô xương chết do lưu lượng máu hạn chế). Ung thư xương. Xương gãy. Viêm bao hoạt dịch. Hội chứng đau phức hợp khu vực (đau mãn tính do rối loạn chức năng hệ thần kinh). Đau cơ xơ hóa. Viêm khớp do lậu cầu. Bệnh gút (viêm khớp liên quan đến hàm lượng acid uric dư thừa). Suy giáp (tuyến giáp hoạt động kém). Bệnh bạch cầu. Lupus. Viêm xương khớp. Viêm tủy xương (nhiễm trùng xương). Viêm đa khớp dạng thấp.'
+
+MERGE (o1:disease {id: 'bệnh_giả_gút_disease'})
+MERGE (o2:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o1)-[r51:causedBy]->(o2)
+SET r51.text = 'Tình trạng viêm khớp cấp có thể xuất hiện do một số nguyên nhân điển hình sau đây: (2)  Nhiễm virus. Viêm cột sống dính khớp. Hoại tử vô mạch (hoại tử xương - mô xương chết do lưu lượng máu hạn chế). Ung thư xương. Xương gãy. Viêm bao hoạt dịch. Hội chứng đau phức hợp khu vực (đau mãn tính do rối loạn chức năng hệ thần kinh). Đau cơ xơ hóa. Viêm khớp do lậu cầu. Bệnh gút (viêm khớp liên quan đến hàm lượng acid uric dư thừa). Suy giáp (tuyến giáp hoạt động kém). Bệnh bạch cầu. Lupus. Viêm xương khớp. Viêm tủy xương (nhiễm trùng xương). Viêm đa khớp dạng thấp. Bệnh giả gút.'
+
+MERGE (o1:disease {id: 'viêm_khớp_vảy_nến_disease'})
+MERGE (o2:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o1)-[r52:causedBy]->(o2)
+SET r52.text = 'Tình trạng viêm khớp cấp có thể xuất hiện do một số nguyên nhân điển hình sau đây: (2)  Nhiễm virus. Viêm cột sống dính khớp. Hoại tử vô mạch (hoại tử xương - mô xương chết do lưu lượng máu hạn chế). Ung thư xương. Xương gãy. Viêm bao hoạt dịch. Hội chứng đau phức hợp khu vực (đau mãn tính do rối loạn chức năng hệ thần kinh). Đau cơ xơ hóa. Viêm khớp do lậu cầu. Bệnh gút (viêm khớp liên quan đến hàm lượng acid uric dư thừa). Suy giáp (tuyến giáp hoạt động kém). Bệnh bạch cầu. Lupus. Viêm xương khớp. Viêm tủy xương (nhiễm trùng xương). Viêm đa khớp dạng thấp. Bệnh giả gút. Viêm khớp vảy nến.'
+
+MERGE (o1:disease {id: 'viêm_khớp_phản_ứng_disease'})
+MERGE (o2:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o1)-[r53:causedBy]->(o2)
+SET r53.text = 'Tình trạng viêm khớp cấp có thể xuất hiện do một số nguyên nhân điển hình sau đây: (2)  Nhiễm virus. Viêm cột sống dính khớp. Hoại tử vô mạch (hoại tử xương - mô xương chết do lưu lượng máu hạn chế). Ung thư xương. Xương gãy. Viêm bao hoạt dịch. Hội chứng đau phức hợp khu vực (đau mãn tính do rối loạn chức năng hệ thần kinh). Đau cơ xơ hóa. Viêm khớp do lậu cầu. Bệnh gút (viêm khớp liên quan đến hàm lượng acid uric dư thừa). Suy giáp (tuyến giáp hoạt động kém). Bệnh bạch cầu. Lupus. Viêm xương khớp. Viêm tủy xương (nhiễm trùng xương). Viêm đa khớp dạng thấp. Bệnh giả gút. Viêm khớp vảy nến. Viêm khớp phản ứng.'
+
+MERGE (o1:disease {id: 'thấp_khớp_disease'})
+MERGE (o2:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o1)-[r54:causedBy]->(o2)
+SET r54.text = 'Tình trạng viêm khớp cấp có thể xuất hiện do một số nguyên nhân điển hình sau đây: (2)  Nhiễm virus. Viêm cột sống dính khớp. Hoại tử vô mạch (hoại tử xương - mô xương chết do lưu lượng máu hạn chế). Ung thư xương. Xương gãy. Viêm bao hoạt dịch. Hội chứng đau phức hợp khu vực (đau mãn tính do rối loạn chức năng hệ thần kinh). Đau cơ xơ hóa. Viêm khớp do lậu cầu. Bệnh gút (viêm khớp liên quan đến hàm lượng acid uric dư thừa). Suy giáp (tuyến giáp hoạt động kém). Bệnh bạch cầu. Lupus. Viêm xương khớp. Viêm tủy xương (nhiễm trùng xương). Viêm đa khớp dạng thấp. Bệnh giả gút. Viêm khớp vảy nến. Viêm khớp phản ứng. Thấp khớp.'
+
+MERGE (o1:disease {id: 'bệnh_còi_xương_disease'})
+MERGE (o2:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o1)-[r55:causedBy]->(o2)
+SET r55.text = 'Tình trạng viêm khớp cấp có thể xuất hiện do một số nguyên nhân điển hình sau đây: (2)  Nhiễm virus. Viêm cột sống dính khớp. Hoại tử vô mạch (hoại tử xương - mô xương chết do lưu lượng máu hạn chế). Ung thư xương. Xương gãy. Viêm bao hoạt dịch. Hội chứng đau phức hợp khu vực (đau mãn tính do rối loạn chức năng hệ thần kinh). Đau cơ xơ hóa. Viêm khớp do lậu cầu. Bệnh gút (viêm khớp liên quan đến hàm lượng acid uric dư thừa). Suy giáp (tuyến giáp hoạt động kém). Bệnh bạch cầu. Lupus. Viêm xương khớp. Viêm tủy xương (nhiễm trùng xương). Viêm đa khớp dạng thấp. Bệnh giả gút. Viêm khớp vảy nến. Viêm khớp phản ứng. Thấp khớp. Bệnh còi xương'
+
+MERGE (o1:disease {id: 'viêm_khớp_nhiễm_trùng_disease'})
+MERGE (o2:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o1)-[r56:causedBy]->(o2)
+SET r56.text = 'Tình trạng viêm khớp cấp có thể xuất hiện do một số nguyên nhân điển hình sau đây: (2)  Nhiễm virus. Viêm cột sống dính khớp. Hoại tử vô mạch (hoại tử xương - mô xương chết do lưu lượng máu hạn chế). Ung thư xương. Xương gãy. Viêm bao hoạt dịch. Hội chứng đau phức hợp khu vực (đau mãn tính do rối loạn chức năng hệ thần kinh). Đau cơ xơ hóa. Viêm khớp do lậu cầu. Bệnh gút (viêm khớp liên quan đến hàm lượng acid uric dư thừa). Suy giáp (tuyến giáp hoạt động kém). Bệnh bạch cầu. Lupus. Viêm xương khớp. Viêm tủy xương (nhiễm trùng xương). Viêm đa khớp dạng thấp. Bệnh giả gút. Viêm khớp vảy nến. Viêm khớp phản ứng. Thấp khớp. Bệnh còi xương Viêm khớp nhiễm trùng'
+
+MERGE (o1:cause {id: 'bong_gân_cause'})
+MERGE (o2:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o1)-[r57:causedBy]->(o2)
+SET r57.text = 'Tình trạng viêm khớp cấp có thể xuất hiện do một số nguyên nhân điển hình sau đây: (2)  Nhiễm virus. Viêm cột sống dính khớp. Hoại tử vô mạch (hoại tử xương - mô xương chết do lưu lượng máu hạn chế). Ung thư xương. Xương gãy. Viêm bao hoạt dịch. Hội chứng đau phức hợp khu vực (đau mãn tính do rối loạn chức năng hệ thần kinh). Đau cơ xơ hóa. Viêm khớp do lậu cầu. Bệnh gút (viêm khớp liên quan đến hàm lượng acid uric dư thừa). Suy giáp (tuyến giáp hoạt động kém). Bệnh bạch cầu. Lupus. Viêm xương khớp. Viêm tủy xương (nhiễm trùng xương). Viêm đa khớp dạng thấp. Bệnh giả gút. Viêm khớp vảy nến. Viêm khớp phản ứng. Thấp khớp. Bệnh còi xương Viêm khớp nhiễm trùng Bong gân.'
+
+MERGE (o1:cause {id: 'viêm_gân_cause'})
+MERGE (o2:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o1)-[r58:causedBy]->(o2)
+SET r58.text = 'Tình trạng viêm khớp cấp có thể xuất hiện do một số nguyên nhân điển hình sau đây: (2)  Nhiễm virus. Viêm cột sống dính khớp. Hoại tử vô mạch (hoại tử xương - mô xương chết do lưu lượng máu hạn chế). Ung thư xương. Xương gãy. Viêm bao hoạt dịch. Hội chứng đau phức hợp khu vực (đau mãn tính do rối loạn chức năng hệ thần kinh). Đau cơ xơ hóa. Viêm khớp do lậu cầu. Bệnh gút (viêm khớp liên quan đến hàm lượng acid uric dư thừa). Suy giáp (tuyến giáp hoạt động kém). Bệnh bạch cầu. Lupus. Viêm xương khớp. Viêm tủy xương (nhiễm trùng xương). Viêm đa khớp dạng thấp. Bệnh giả gút. Viêm khớp vảy nến. Viêm khớp phản ứng. Thấp khớp. Bệnh còi xương Viêm khớp nhiễm trùng Bong gân. Viêm gân.'
+
+MERGE (o1:lifestyle {id: 'tuổi_tác_lifestyle'})
+MERGE (o2:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o1)-[r59:associatedWith]->(o2)
+SET r59.text = 'Bất cứ ai cũng có thể bị viêm khớp cấp, nhưng một số người có thể có nguy cơ cao hơn do các yếu tố sau:  Tuổi tác.'
+
+MERGE (o1:lifestyle {id: 'tiền_sử_gia_đình_có_người_mắc_bệnh_lifestyle'})
+MERGE (o2:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o1)-[r60:associatedWith]->(o2)
+SET r60.text = 'Bất cứ ai cũng có thể bị viêm khớp cấp, nhưng một số người có thể có nguy cơ cao hơn do các yếu tố sau:  Tuổi tác. Tiền sử gia đình có người mắc bệnh.'
+
+MERGE (o1:cause {id: 'tổn_thương_hoặc_chấn_thương_khớp_trước_đó_cause'})
+MERGE (o2:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o1)-[r61:causedBy]->(o2)
+SET r61.text = 'Bất cứ ai cũng có thể bị viêm khớp cấp, nhưng một số người có thể có nguy cơ cao hơn do các yếu tố sau:  Tuổi tác. Tiền sử gia đình có người mắc bệnh. Tổn thương hoặc chấn thương khớp trước đó.'
+
+MERGE (o1:lifestyle {id: 'béo_phì_lifestyle'})
+MERGE (o2:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o1)-[r62:associatedWith]->(o2)
+SET r62.text = 'Bất cứ ai cũng có thể bị viêm khớp cấp, nhưng một số người có thể có nguy cơ cao hơn do các yếu tố sau:  Tuổi tác. Tiền sử gia đình có người mắc bệnh. Tổn thương hoặc chấn thương khớp trước đó. Gặp phải các vấn đề sức khỏe tiềm ẩn, điển hình như béo phì.'
+
+MERGE (o1:disease {id: 'bệnh_nền_điều_trị_không_ổn_định_disease'})
+MERGE (o2:disease {id: 'viêm_khớp_phản_ứng_disease'})
+MERGE (o1)-[r63:associatedWith]->(o2)
+SET r63.text = 'Bất cứ ai cũng có thể bị viêm khớp cấp, nhưng một số người có thể có nguy cơ cao hơn do các yếu tố sau:  Tuổi tác. Tiền sử gia đình có người mắc bệnh. Tổn thương hoặc chấn thương khớp trước đó. Gặp phải các vấn đề sức khỏe tiềm ẩn, điển hình như béo phì. Có các bệnh nền điều trị không ổn định, dễ gặp trường hợp viêm khớp phản ứng.'
+
+MERGE (o1:disease {id: 'viêm_khớp_phản_ứng_disease'})
+MERGE (o2:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o1)-[r64:associatedWith]->(o2)
+SET r64.text = 'Bất cứ ai cũng có thể bị viêm khớp cấp, nhưng một số người có thể có nguy cơ cao hơn do các yếu tố sau:  Tuổi tác. Tiền sử gia đình có người mắc bệnh. Tổn thương hoặc chấn thương khớp trước đó. Gặp phải các vấn đề sức khỏe tiềm ẩn, điển hình như béo phì. Có các bệnh nền điều trị không ổn định, dễ gặp trường hợp viêm khớp phản ứng.'
+
+MERGE (o1:symptom {id: 'sưng__đỏ__nóng_khớp_nghiêm_trọng_symptom'})
+MERGE (o2:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o1)-[r65:isSymptomOf]->(o2)
+SET r65.text = 'Nếu các dấu hiệu sưng đau khớp vẫn không cải thiện trong một vài tuần, thậm chí trở nên năng hơn hoặc xuất hiện thêm một vài triệu chứng đáng lo ngại dưới đây, người bệnh nên liên hệ ngay với bác sĩ:  Sưng, đỏ, nóng khớp nghiêm trọng.'
+
+MERGE (o1:symptom {id: 'phát_ban_với_các_đốm_màu_tím_symptom'})
+MERGE (o2:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o1)-[r66:isSymptomOf]->(o2)
+SET r66.text = 'Nếu các dấu hiệu sưng đau khớp vẫn không cải thiện trong một vài tuần, thậm chí trở nên năng hơn hoặc xuất hiện thêm một vài triệu chứng đáng lo ngại dưới đây, người bệnh nên liên hệ ngay với bác sĩ:  Sưng, đỏ, nóng khớp nghiêm trọng. Phát ban với các đốm màu tím.'
+
+MERGE (o1:symptom {id: 'xuất_hiện_vết_loét_trong_miệng__mũi_hoặc_bộ_phận_sinh_dục_symptom'})
+MERGE (o2:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o1)-[r67:isSymptomOf]->(o2)
+SET r67.text = 'Nếu các dấu hiệu sưng đau khớp vẫn không cải thiện trong một vài tuần, thậm chí trở nên năng hơn hoặc xuất hiện thêm một vài triệu chứng đáng lo ngại dưới đây, người bệnh nên liên hệ ngay với bác sĩ:  Sưng, đỏ, nóng khớp nghiêm trọng. Phát ban với các đốm màu tím. Xuất hiện vết loét trong miệng, mũi hoặc bộ phận sinh dục.'
+
+MERGE (o1:symptom {id: 'đau_ngực__khó_thở_symptom'})
+MERGE (o2:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o1)-[r68:isSymptomOf]->(o2)
+SET r68.text = 'Nếu các dấu hiệu sưng đau khớp vẫn không cải thiện trong một vài tuần, thậm chí trở nên năng hơn hoặc xuất hiện thêm một vài triệu chứng đáng lo ngại dưới đây, người bệnh nên liên hệ ngay với bác sĩ:  Sưng, đỏ, nóng khớp nghiêm trọng. Phát ban với các đốm màu tím. Xuất hiện vết loét trong miệng, mũi hoặc bộ phận sinh dục. Đau ngực, khó thở.'
+
+MERGE (o1:symptom {id: 'ho_dữ_dội_symptom'})
+MERGE (o2:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o1)-[r69:isSymptomOf]->(o2)
+SET r69.text = 'Nếu các dấu hiệu sưng đau khớp vẫn không cải thiện trong một vài tuần, thậm chí trở nên năng hơn hoặc xuất hiện thêm một vài triệu chứng đáng lo ngại dưới đây, người bệnh nên liên hệ ngay với bác sĩ:  Sưng, đỏ, nóng khớp nghiêm trọng. Phát ban với các đốm màu tím. Xuất hiện vết loét trong miệng, mũi hoặc bộ phận sinh dục. Đau ngực, khó thở. Ho dữ dội.'
+
+MERGE (o1:symptom {id: 'đau_bụng_symptom'})
+MERGE (o2:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o1)-[r70:isSymptomOf]->(o2)
+SET r70.text = 'Nếu các dấu hiệu sưng đau khớp vẫn không cải thiện trong một vài tuần, thậm chí trở nên năng hơn hoặc xuất hiện thêm một vài triệu chứng đáng lo ngại dưới đây, người bệnh nên liên hệ ngay với bác sĩ:  Sưng, đỏ, nóng khớp nghiêm trọng. Phát ban với các đốm màu tím. Xuất hiện vết loét trong miệng, mũi hoặc bộ phận sinh dục. Đau ngực, khó thở. Ho dữ dội. Đau bụng.'
+
+MERGE (o1:symptom {id: 'sốt_symptom'})
+MERGE (o2:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o1)-[r71:isSymptomOf]->(o2)
+SET r71.text = 'Nếu các dấu hiệu sưng đau khớp vẫn không cải thiện trong một vài tuần, thậm chí trở nên năng hơn hoặc xuất hiện thêm một vài triệu chứng đáng lo ngại dưới đây, người bệnh nên liên hệ ngay với bác sĩ:  Sưng, đỏ, nóng khớp nghiêm trọng. Phát ban với các đốm màu tím. Xuất hiện vết loét trong miệng, mũi hoặc bộ phận sinh dục. Đau ngực, khó thở. Ho dữ dội. Đau bụng. Sốt.'
+
+MERGE (o1:symptom {id: 'mức_độ_nghiêm_trọng_của_cơn_đau_symptom'})
+MERGE (o2:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o1)-[r72:isSymptomOf]->(o2)
+SET r72.text = 'Đối với tình trạng viêm khớp cấp, ban đầu, bác sĩ sẽ đặt một số câu hỏi về tiền sử triệu chứng bệnh, bao gồm: (4)
+Mức độ nghiêm trọng của cơn đau. Dạng khởi phát cơn đau (đột ngột, từ từ…). Sự thay đổi triệu chứng theo thời gian, những yếu tố làm tăng hoặc giảm cơn đau (nghỉ ngơi, vận động…). Tình trạng sưng khớp, cứng khớp hoặc các rối loạn khác đã được chẩn đoán trước đó. Nguy cơ tiếp xúc với các bệnh lây truyền qua đường tình dục.'
+
+MERGE (o1:symptom {id: 'dạng_khởi_phát_cơn_đau_symptom'})
+MERGE (o2:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o1)-[r73:isSymptomOf]->(o2)
+SET r73.text = 'Đối với tình trạng viêm khớp cấp, ban đầu, bác sĩ sẽ đặt một số câu hỏi về tiền sử triệu chứng bệnh, bao gồm: (4)
+Mức độ nghiêm trọng của cơn đau. Dạng khởi phát cơn đau (đột ngột, từ từ…). Sự thay đổi triệu chứng theo thời gian, những yếu tố làm tăng hoặc giảm cơn đau (nghỉ ngơi, vận động…). Tình trạng sưng khớp, cứng khớp hoặc các rối loạn khác đã được chẩn đoán trước đó. Nguy cơ tiếp xúc với các bệnh lây truyền qua đường tình dục.'
+
+MERGE (o1:symptom {id: 'sự_thay_đổi_triệu_chứng_theo_thời_gian_symptom'})
+MERGE (o2:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o1)-[r74:isSymptomOf]->(o2)
+SET r74.text = 'Đối với tình trạng viêm khớp cấp, ban đầu, bác sĩ sẽ đặt một số câu hỏi về tiền sử triệu chứng bệnh, bao gồm: (4)
+Mức độ nghiêm trọng của cơn đau. Dạng khởi phát cơn đau (đột ngột, từ từ…). Sự thay đổi triệu chứng theo thời gian, những yếu tố làm tăng hoặc giảm cơn đau (nghỉ ngơi, vận động…). Tình trạng sưng khớp, cứng khớp hoặc các rối loạn khác đã được chẩn đoán trước đó. Nguy cơ tiếp xúc với các bệnh lây truyền qua đường tình dục.'
+
+MERGE (o1:symptom {id: 'tình_trạng_sưng_khớp_symptom'})
+MERGE (o2:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o1)-[r75:isSymptomOf]->(o2)
+SET r75.text = 'Đối với tình trạng viêm khớp cấp, ban đầu, bác sĩ sẽ đặt một số câu hỏi về tiền sử triệu chứng bệnh, bao gồm: (4)
+Mức độ nghiêm trọng của cơn đau. Dạng khởi phát cơn đau (đột ngột, từ từ…). Sự thay đổi triệu chứng theo thời gian, những yếu tố làm tăng hoặc giảm cơn đau (nghỉ ngơi, vận động…). Tình trạng sưng khớp, cứng khớp hoặc các rối loạn khác đã được chẩn đoán trước đó. Nguy cơ tiếp xúc với các bệnh lây truyền qua đường tình dục.'
+
+MERGE (o1:symptom {id: 'cứng_khớp_symptom'})
+MERGE (o2:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o1)-[r76:isSymptomOf]->(o2)
+SET r76.text = 'Đối với tình trạng viêm khớp cấp, ban đầu, bác sĩ sẽ đặt một số câu hỏi về tiền sử triệu chứng bệnh, bao gồm: (4)
+Mức độ nghiêm trọng của cơn đau. Dạng khởi phát cơn đau (đột ngột, từ từ…). Sự thay đổi triệu chứng theo thời gian, những yếu tố làm tăng hoặc giảm cơn đau (nghỉ ngơi, vận động…). Tình trạng sưng khớp, cứng khớp hoặc các rối loạn khác đã được chẩn đoán trước đó. Nguy cơ tiếp xúc với các bệnh lây truyền qua đường tình dục.'
+
+MERGE (o1:cause {id: 'nguy_cơ_tiếp_xúc_với_các_bệnh_lây_truyền_qua_đường_tình_dục_cause'})
+MERGE (o2:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o1)-[r77:causedBy]->(o2)
+SET r77.text = 'Đối với tình trạng viêm khớp cấp, ban đầu, bác sĩ sẽ đặt một số câu hỏi về tiền sử triệu chứng bệnh, bao gồm: (4)
+Mức độ nghiêm trọng của cơn đau. Dạng khởi phát cơn đau (đột ngột, từ từ…). Sự thay đổi triệu chứng theo thời gian, những yếu tố làm tăng hoặc giảm cơn đau (nghỉ ngơi, vận động…). Tình trạng sưng khớp, cứng khớp hoặc các rối loạn khác đã được chẩn đoán trước đó. Nguy cơ tiếp xúc với các bệnh lây truyền qua đường tình dục.'
+
+MERGE (o1:test {id: 'kiểm_tra_tình_trạng_sưng_đỏ__nóng__đau_của_khớp_test'})
+MERGE (o2:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o1)-[r78:diagnosedBy]->(o2)
+SET r78.text = 'Sau đó, bác sẽ sĩ tiếp tục chỉ định kiểm tra thể chất hoàn chỉnh, bao gồm:  Kiểm tra tình trạng sưng đỏ, nóng, đau của khớp (bao gồm cả khớp cột sống). Kiểm tra tình phát ra tiếng động khi khớp cử động. Phạm vi chuyển động của các khớp. Kiểm tra mắt, miệng, mũi và vùng sinh dục để phát hiện vết loét hoặc các dấu hiệu viêm nhiễm khác. Kiểm tra chức năng hệ thần kinh để phát hiện các rối loạn cơ hoặc dây thần kinh.'
+
+MERGE (o1:test {id: 'kiểm_tra_tình_phát_ra_tiếng_động_khi_khớp_cử_động_test'})
+MERGE (o2:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o1)-[r79:diagnosedBy]->(o2)
+SET r79.text = 'Sau đó, bác sẽ sĩ tiếp tục chỉ định kiểm tra thể chất hoàn chỉnh, bao gồm:  Kiểm tra tình trạng sưng đỏ, nóng, đau của khớp (bao gồm cả khớp cột sống). Kiểm tra tình phát ra tiếng động khi khớp cử động. Phạm vi chuyển động của các khớp. Kiểm tra mắt, miệng, mũi và vùng sinh dục để phát hiện vết loét hoặc các dấu hiệu viêm nhiễm khác. Kiểm tra chức năng hệ thần kinh để phát hiện các rối loạn cơ hoặc dây thần kinh.'
+
+MERGE (o1:test {id: 'phạm_vi_chuyển_động_của_các_khớp_test'})
+MERGE (o2:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o1)-[r80:diagnosedBy]->(o2)
+SET r80.text = 'Sau đó, bác sẽ sĩ tiếp tục chỉ định kiểm tra thể chất hoàn chỉnh, bao gồm:  Kiểm tra tình trạng sưng đỏ, nóng, đau của khớp (bao gồm cả khớp cột sống). Kiểm tra tình phát ra tiếng động khi khớp cử động. Phạm vi chuyển động của các khớp. Kiểm tra mắt, miệng, mũi và vùng sinh dục để phát hiện vết loét hoặc các dấu hiệu viêm nhiễm khác. Kiểm tra chức năng hệ thần kinh để phát hiện các rối loạn cơ hoặc dây thần kinh.'
+
+MERGE (o1:test {id: 'kiểm_tra_mắt__miệng__mũi_và_vùng_sinh_dục_test'})
+MERGE (o2:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o1)-[r81:diagnosedBy]->(o2)
+SET r81.text = 'Sau đó, bác sẽ sĩ tiếp tục chỉ định kiểm tra thể chất hoàn chỉnh, bao gồm:  Kiểm tra tình trạng sưng đỏ, nóng, đau của khớp (bao gồm cả khớp cột sống). Kiểm tra tình phát ra tiếng động khi khớp cử động. Phạm vi chuyển động của các khớp. Kiểm tra mắt, miệng, mũi và vùng sinh dục để phát hiện vết loét hoặc các dấu hiệu viêm nhiễm khác. Kiểm tra chức năng hệ thần kinh để phát hiện các rối loạn cơ hoặc dây thần kinh.'
+
+MERGE (o1:test {id: 'kiểm_tra_chức_năng_hệ_thần_kinh_test'})
+MERGE (o2:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o1)-[r82:diagnosedBy]->(o2)
+SET r82.text = 'Sau đó, bác sẽ sĩ tiếp tục chỉ định kiểm tra thể chất hoàn chỉnh, bao gồm:  Kiểm tra tình trạng sưng đỏ, nóng, đau của khớp (bao gồm cả khớp cột sống). Kiểm tra tình phát ra tiếng động khi khớp cử động. Phạm vi chuyển động của các khớp. Kiểm tra mắt, miệng, mũi và vùng sinh dục để phát hiện vết loét hoặc các dấu hiệu viêm nhiễm khác. Kiểm tra chức năng hệ thần kinh để phát hiện các rối loạn cơ hoặc dây thần kinh.'
+
+MERGE (o1:test {id: 'xét_nghiệm_dịch_khớp_test'})
+MERGE (o2:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o1)-[r83:diagnosedBy]->(o2)
+SET r83.text = 'Tiếp theo đó, bác sĩ có thể sẽ chỉ định thực hiện các xét nghiệm sau đây:  Xét nghiệm dịch khớp: Nếu khớp bị sưng, bác sĩ sẽ tiến hành lấy dịch khớp để xét nghiệm (thủ thuật gọi là chọc hút khớp hoặc chọc dò khớp. Theo đó, vị trí lấy mẫu sẽ được gây tê để hạn chế cảm giác đau cho người bệnh. Bác sĩ sẽ mang dịch khớp đi kiểm tra dấu hiệu nhiễm trùng, gút hoặc một số rối loạn liên quan dựa trên số lượng bạch cầu. Xét nghiệm kháng thể: Xét nghiệm này có thể giúp phát hiện được một số rối loạn tự miễn như viêm khớp dạng thấp hoặc lupus ban đỏ. Xét nghiệm tốc độ máu lắng (ESR) và CRP: ESR là xét nghiệm đo tốc độ lắng xuống đáy ống nghiệm chứa mẫu máu của bạch cầu. Tốc độ càng cao thì tỷ lệ bị viêm toàn thân càng lớn. Tuy nhiên, xét nghiệm dễ chịu ảnh hưởng bởi tuổi tác, thiếu máu nên kết quả đôi khi không chính xác. Lúc này, CRP sẽ tiếp tục được chỉ định thực hiện. Xét nghiệm hình ảnh: Các xét nghiệm hình ảnh giúp phát hiện các khối u xương hoặc khớp (nếu có). Theo đó, bác sĩ thường chỉ định chụp X-quang, chụp cắt lớp vi tính (CT) hoặc cộng hưởng từ (MRI).'
+
+MERGE (o1:test {id: 'xét_nghiệm_kháng_thể_test'})
+MERGE (o2:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o1)-[r84:diagnosedBy]->(o2)
+SET r84.text = 'Tiếp theo đó, bác sĩ có thể sẽ chỉ định thực hiện các xét nghiệm sau đây:  Xét nghiệm dịch khớp: Nếu khớp bị sưng, bác sĩ sẽ tiến hành lấy dịch khớp để xét nghiệm (thủ thuật gọi là chọc hút khớp hoặc chọc dò khớp. Theo đó, vị trí lấy mẫu sẽ được gây tê để hạn chế cảm giác đau cho người bệnh. Bác sĩ sẽ mang dịch khớp đi kiểm tra dấu hiệu nhiễm trùng, gút hoặc một số rối loạn liên quan dựa trên số lượng bạch cầu. Xét nghiệm kháng thể: Xét nghiệm này có thể giúp phát hiện được một số rối loạn tự miễn như viêm khớp dạng thấp hoặc lupus ban đỏ. Xét nghiệm tốc độ máu lắng (ESR) và CRP: ESR là xét nghiệm đo tốc độ lắng xuống đáy ống nghiệm chứa mẫu máu của bạch cầu. Tốc độ càng cao thì tỷ lệ bị viêm toàn thân càng lớn. Tuy nhiên, xét nghiệm dễ chịu ảnh hưởng bởi tuổi tác, thiếu máu nên kết quả đôi khi không chính xác. Lúc này, CRP sẽ tiếp tục được chỉ định thực hiện. Xét nghiệm hình ảnh: Các xét nghiệm hình ảnh giúp phát hiện các khối u xương hoặc khớp (nếu có). Theo đó, bác sĩ thường chỉ định chụp X-quang, chụp cắt lớp vi tính (CT) hoặc cộng hưởng từ (MRI).'
+
+MERGE (o1:test {id: 'xét_nghiệm_tốc_độ_máu_lắng_(esr)_test'})
+MERGE (o2:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o1)-[r85:diagnosedBy]->(o2)
+SET r85.text = 'Tiếp theo đó, bác sĩ có thể sẽ chỉ định thực hiện các xét nghiệm sau đây:  Xét nghiệm dịch khớp: Nếu khớp bị sưng, bác sĩ sẽ tiến hành lấy dịch khớp để xét nghiệm (thủ thuật gọi là chọc hút khớp hoặc chọc dò khớp. Theo đó, vị trí lấy mẫu sẽ được gây tê để hạn chế cảm giác đau cho người bệnh. Bác sĩ sẽ mang dịch khớp đi kiểm tra dấu hiệu nhiễm trùng, gút hoặc một số rối loạn liên quan dựa trên số lượng bạch cầu. Xét nghiệm kháng thể: Xét nghiệm này có thể giúp phát hiện được một số rối loạn tự miễn như viêm khớp dạng thấp hoặc lupus ban đỏ. Xét nghiệm tốc độ máu lắng (ESR) và CRP: ESR là xét nghiệm đo tốc độ lắng xuống đáy ống nghiệm chứa mẫu máu của bạch cầu. Tốc độ càng cao thì tỷ lệ bị viêm toàn thân càng lớn. Tuy nhiên, xét nghiệm dễ chịu ảnh hưởng bởi tuổi tác, thiếu máu nên kết quả đôi khi không chính xác. Lúc này, CRP sẽ tiếp tục được chỉ định thực hiện. Xét nghiệm hình ảnh: Các xét nghiệm hình ảnh giúp phát hiện các khối u xương hoặc khớp (nếu có). Theo đó, bác sĩ thường chỉ định chụp X-quang, chụp cắt lớp vi tính (CT) hoặc cộng hưởng từ (MRI).'
+
+MERGE (o1:test {id: 'crp_test'})
+MERGE (o2:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o1)-[r86:diagnosedBy]->(o2)
+SET r86.text = 'Tiếp theo đó, bác sĩ có thể sẽ chỉ định thực hiện các xét nghiệm sau đây:  Xét nghiệm dịch khớp: Nếu khớp bị sưng, bác sĩ sẽ tiến hành lấy dịch khớp để xét nghiệm (thủ thuật gọi là chọc hút khớp hoặc chọc dò khớp. Theo đó, vị trí lấy mẫu sẽ được gây tê để hạn chế cảm giác đau cho người bệnh. Bác sĩ sẽ mang dịch khớp đi kiểm tra dấu hiệu nhiễm trùng, gút hoặc một số rối loạn liên quan dựa trên số lượng bạch cầu. Xét nghiệm kháng thể: Xét nghiệm này có thể giúp phát hiện được một số rối loạn tự miễn như viêm khớp dạng thấp hoặc lupus ban đỏ. Xét nghiệm tốc độ máu lắng (ESR) và CRP: ESR là xét nghiệm đo tốc độ lắng xuống đáy ống nghiệm chứa mẫu máu của bạch cầu. Tốc độ càng cao thì tỷ lệ bị viêm toàn thân càng lớn. Tuy nhiên, xét nghiệm dễ chịu ảnh hưởng bởi tuổi tác, thiếu máu nên kết quả đôi khi không chính xác. Lúc này, CRP sẽ tiếp tục được chỉ định thực hiện. Xét nghiệm hình ảnh: Các xét nghiệm hình ảnh giúp phát hiện các khối u xương hoặc khớp (nếu có). Theo đó, bác sĩ thường chỉ định chụp X-quang, chụp cắt lớp vi tính (CT) hoặc cộng hưởng từ (MRI).'
+
+MERGE (o1:test {id: 'xét_nghiệm_hình_ảnh_test'})
+MERGE (o2:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o1)-[r87:diagnosedBy]->(o2)
+SET r87.text = 'Tiếp theo đó, bác sĩ có thể sẽ chỉ định thực hiện các xét nghiệm sau đây:  Xét nghiệm dịch khớp: Nếu khớp bị sưng, bác sĩ sẽ tiến hành lấy dịch khớp để xét nghiệm (thủ thuật gọi là chọc hút khớp hoặc chọc dò khớp. Theo đó, vị trí lấy mẫu sẽ được gây tê để hạn chế cảm giác đau cho người bệnh. Bác sĩ sẽ mang dịch khớp đi kiểm tra dấu hiệu nhiễm trùng, gút hoặc một số rối loạn liên quan dựa trên số lượng bạch cầu. Xét nghiệm kháng thể: Xét nghiệm này có thể giúp phát hiện được một số rối loạn tự miễn như viêm khớp dạng thấp hoặc lupus ban đỏ. Xét nghiệm tốc độ máu lắng (ESR) và CRP: ESR là xét nghiệm đo tốc độ lắng xuống đáy ống nghiệm chứa mẫu máu của bạch cầu. Tốc độ càng cao thì tỷ lệ bị viêm toàn thân càng lớn. Tuy nhiên, xét nghiệm dễ chịu ảnh hưởng bởi tuổi tác, thiếu máu nên kết quả đôi khi không chính xác. Lúc này, CRP sẽ tiếp tục được chỉ định thực hiện. Xét nghiệm hình ảnh: Các xét nghiệm hình ảnh giúp phát hiện các khối u xương hoặc khớp (nếu có). Theo đó, bác sĩ thường chỉ định chụp X-quang, chụp cắt lớp vi tính (CT) hoặc cộng hưởng từ (MRI).'
+
+MERGE (o1:test {id: 'chụp_x-quang_test'})
+MERGE (o2:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o1)-[r88:diagnosedBy]->(o2)
+SET r88.text = 'Tiếp theo đó, bác sĩ có thể sẽ chỉ định thực hiện các xét nghiệm sau đây:  Xét nghiệm dịch khớp: Nếu khớp bị sưng, bác sĩ sẽ tiến hành lấy dịch khớp để xét nghiệm (thủ thuật gọi là chọc hút khớp hoặc chọc dò khớp. Theo đó, vị trí lấy mẫu sẽ được gây tê để hạn chế cảm giác đau cho người bệnh. Bác sĩ sẽ mang dịch khớp đi kiểm tra dấu hiệu nhiễm trùng, gút hoặc một số rối loạn liên quan dựa trên số lượng bạch cầu. Xét nghiệm kháng thể: Xét nghiệm này có thể giúp phát hiện được một số rối loạn tự miễn như viêm khớp dạng thấp hoặc lupus ban đỏ. Xét nghiệm tốc độ máu lắng (ESR) và CRP: ESR là xét nghiệm đo tốc độ lắng xuống đáy ống nghiệm chứa mẫu máu của bạch cầu. Tốc độ càng cao thì tỷ lệ bị viêm toàn thân càng lớn. Tuy nhiên, xét nghiệm dễ chịu ảnh hưởng bởi tuổi tác, thiếu máu nên kết quả đôi khi không chính xác. Lúc này, CRP sẽ tiếp tục được chỉ định thực hiện. Xét nghiệm hình ảnh: Các xét nghiệm hình ảnh giúp phát hiện các khối u xương hoặc khớp (nếu có). Theo đó, bác sĩ thường chỉ định chụp X-quang, chụp cắt lớp vi tính (CT) hoặc cộng hưởng từ (MRI).'
+
+MERGE (o1:test {id: 'chụp_cắt_lớp_vi_tính_(ct)_test'})
+MERGE (o2:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o1)-[r89:diagnosedBy]->(o2)
+SET r89.text = 'Tiếp theo đó, bác sĩ có thể sẽ chỉ định thực hiện các xét nghiệm sau đây:  Xét nghiệm dịch khớp: Nếu khớp bị sưng, bác sĩ sẽ tiến hành lấy dịch khớp để xét nghiệm (thủ thuật gọi là chọc hút khớp hoặc chọc dò khớp. Theo đó, vị trí lấy mẫu sẽ được gây tê để hạn chế cảm giác đau cho người bệnh. Bác sĩ sẽ mang dịch khớp đi kiểm tra dấu hiệu nhiễm trùng, gút hoặc một số rối loạn liên quan dựa trên số lượng bạch cầu. Xét nghiệm kháng thể: Xét nghiệm này có thể giúp phát hiện được một số rối loạn tự miễn như viêm khớp dạng thấp hoặc lupus ban đỏ. Xét nghiệm tốc độ máu lắng (ESR) và CRP: ESR là xét nghiệm đo tốc độ lắng xuống đáy ống nghiệm chứa mẫu máu của bạch cầu. Tốc độ càng cao thì tỷ lệ bị viêm toàn thân càng lớn. Tuy nhiên, xét nghiệm dễ chịu ảnh hưởng bởi tuổi tác, thiếu máu nên kết quả đôi khi không chính xác. Lúc này, CRP sẽ tiếp tục được chỉ định thực hiện. Xét nghiệm hình ảnh: Các xét nghiệm hình ảnh giúp phát hiện các khối u xương hoặc khớp (nếu có). Theo đó, bác sĩ thường chỉ định chụp X-quang, chụp cắt lớp vi tính (CT) hoặc cộng hưởng từ (MRI).'
+
+MERGE (o1:test {id: 'cộng_hưởng_từ_(mri)_test'})
+MERGE (o2:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o1)-[r90:diagnosedBy]->(o2)
+SET r90.text = 'Tiếp theo đó, bác sĩ có thể sẽ chỉ định thực hiện các xét nghiệm sau đây:  Xét nghiệm dịch khớp: Nếu khớp bị sưng, bác sĩ sẽ tiến hành lấy dịch khớp để xét nghiệm (thủ thuật gọi là chọc hút khớp hoặc chọc dò khớp. Theo đó, vị trí lấy mẫu sẽ được gây tê để hạn chế cảm giác đau cho người bệnh. Bác sĩ sẽ mang dịch khớp đi kiểm tra dấu hiệu nhiễm trùng, gút hoặc một số rối loạn liên quan dựa trên số lượng bạch cầu. Xét nghiệm kháng thể: Xét nghiệm này có thể giúp phát hiện được một số rối loạn tự miễn như viêm khớp dạng thấp hoặc lupus ban đỏ. Xét nghiệm tốc độ máu lắng (ESR) và CRP: ESR là xét nghiệm đo tốc độ lắng xuống đáy ống nghiệm chứa mẫu máu của bạch cầu. Tốc độ càng cao thì tỷ lệ bị viêm toàn thân càng lớn. Tuy nhiên, xét nghiệm dễ chịu ảnh hưởng bởi tuổi tác, thiếu máu nên kết quả đôi khi không chính xác. Lúc này, CRP sẽ tiếp tục được chỉ định thực hiện. Xét nghiệm hình ảnh: Các xét nghiệm hình ảnh giúp phát hiện các khối u xương hoặc khớp (nếu có). Theo đó, bác sĩ thường chỉ định chụp X-quang, chụp cắt lớp vi tính (CT) hoặc cộng hưởng từ (MRI).'
+
+MERGE (o1:symptom {id: 'phá_hủy_xương_và_sụn_khớp_symptom'})
+MERGE (o2:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o1)-[r91:isSymptomOf]->(o2)
+SET r91.text = 'Viêm khớp cấp thường có thể cải thiện sau vài tuần hoặc vài tháng. Tuy nhiên, một số trường hợp không được điều trị kịp thời có nguy cơ tiến triển nghiêm trọng theo thời gian, dẫn đến mạn tính với nhiều biến chứng nguy hiểm như sau:  Phá hủy xương và sụn khớp: Khớp bị viêm có thể gây ảnh hưởng đến cơ, gân, dây chằng khiến cho xương khớp yếu đi. Đặc biệt, bệnh còn có khả năng gây viêm bao khớp, làm giảm chất lượng dịch khớp. Điều này khiến sụn khớp bị thiếu dưỡng chất nuôi dưỡng, dần trở nên khô ráp và bong tróc. Phần xương dưới sụn cũng xuất hiện các vùng đặc, rỗng khác nhau, dẫn đến hiện tượng đau nhức liên tục. Làm biến dạng khớp: Bệnh tiến triển nặng sẽ xuất hiện các khối u tại vùng khớp bị viêm. Khớp không giữ được hình dạng ban đầu, trở nên gồ ghề, thậm chí lệch sang một bên gây ảnh hưởng đến khả năng vận động.'
+
+MERGE (o1:symptom {id: 'làm_biến_dạng_khớp_symptom'})
+MERGE (o2:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o1)-[r92:isSymptomOf]->(o2)
+SET r92.text = 'Viêm khớp cấp thường có thể cải thiện sau vài tuần hoặc vài tháng. Tuy nhiên, một số trường hợp không được điều trị kịp thời có nguy cơ tiến triển nghiêm trọng theo thời gian, dẫn đến mạn tính với nhiều biến chứng nguy hiểm như sau:  Phá hủy xương và sụn khớp: Khớp bị viêm có thể gây ảnh hưởng đến cơ, gân, dây chằng khiến cho xương khớp yếu đi. Đặc biệt, bệnh còn có khả năng gây viêm bao khớp, làm giảm chất lượng dịch khớp. Điều này khiến sụn khớp bị thiếu dưỡng chất nuôi dưỡng, dần trở nên khô ráp và bong tróc. Phần xương dưới sụn cũng xuất hiện các vùng đặc, rỗng khác nhau, dẫn đến hiện tượng đau nhức liên tục. Làm biến dạng khớp: Bệnh tiến triển nặng sẽ xuất hiện các khối u tại vùng khớp bị viêm. Khớp không giữ được hình dạng ban đầu, trở nên gồ ghề, thậm chí lệch sang một bên gây ảnh hưởng đến khả năng vận động.'
+
+MERGE (o1:disease {id: 'viêm_bao_khớp_disease'})
+MERGE (o2:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o1)-[r93:isSymptomOf]->(o2)
+SET r93.text = 'Viêm khớp cấp thường có thể cải thiện sau vài tuần hoặc vài tháng. Tuy nhiên, một số trường hợp không được điều trị kịp thời có nguy cơ tiến triển nghiêm trọng theo thời gian, dẫn đến mạn tính với nhiều biến chứng nguy hiểm như sau:  Phá hủy xương và sụn khớp: Khớp bị viêm có thể gây ảnh hưởng đến cơ, gân, dây chằng khiến cho xương khớp yếu đi. Đặc biệt, bệnh còn có khả năng gây viêm bao khớp, làm giảm chất lượng dịch khớp. Điều này khiến sụn khớp bị thiếu dưỡng chất nuôi dưỡng, dần trở nên khô ráp và bong tróc. Phần xương dưới sụn cũng xuất hiện các vùng đặc, rỗng khác nhau, dẫn đến hiện tượng đau nhức liên tục. Làm biến dạng khớp: Bệnh tiến triển nặng sẽ xuất hiện các khối u tại vùng khớp bị viêm. Khớp không giữ được hình dạng ban đầu, trở nên gồ ghề, thậm chí lệch sang một bên gây ảnh hưởng đến khả năng vận động.'
+
+MERGE (o1:symptom {id: 'giảm_chất_lượng_dịch_khớp_symptom'})
+MERGE (o2:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o1)-[r94:isSymptomOf]->(o2)
+SET r94.text = 'Viêm khớp cấp thường có thể cải thiện sau vài tuần hoặc vài tháng. Tuy nhiên, một số trường hợp không được điều trị kịp thời có nguy cơ tiến triển nghiêm trọng theo thời gian, dẫn đến mạn tính với nhiều biến chứng nguy hiểm như sau:  Phá hủy xương và sụn khớp: Khớp bị viêm có thể gây ảnh hưởng đến cơ, gân, dây chằng khiến cho xương khớp yếu đi. Đặc biệt, bệnh còn có khả năng gây viêm bao khớp, làm giảm chất lượng dịch khớp. Điều này khiến sụn khớp bị thiếu dưỡng chất nuôi dưỡng, dần trở nên khô ráp và bong tróc. Phần xương dưới sụn cũng xuất hiện các vùng đặc, rỗng khác nhau, dẫn đến hiện tượng đau nhức liên tục. Làm biến dạng khớp: Bệnh tiến triển nặng sẽ xuất hiện các khối u tại vùng khớp bị viêm. Khớp không giữ được hình dạng ban đầu, trở nên gồ ghề, thậm chí lệch sang một bên gây ảnh hưởng đến khả năng vận động.'
+
+MERGE (o1:symptom {id: 'sụn_khớp_bị_thiếu_dưỡng_chất_nuôi_dưỡng_symptom'})
+MERGE (o2:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o1)-[r95:isSymptomOf]->(o2)
+SET r95.text = 'Viêm khớp cấp thường có thể cải thiện sau vài tuần hoặc vài tháng. Tuy nhiên, một số trường hợp không được điều trị kịp thời có nguy cơ tiến triển nghiêm trọng theo thời gian, dẫn đến mạn tính với nhiều biến chứng nguy hiểm như sau:  Phá hủy xương và sụn khớp: Khớp bị viêm có thể gây ảnh hưởng đến cơ, gân, dây chằng khiến cho xương khớp yếu đi. Đặc biệt, bệnh còn có khả năng gây viêm bao khớp, làm giảm chất lượng dịch khớp. Điều này khiến sụn khớp bị thiếu dưỡng chất nuôi dưỡng, dần trở nên khô ráp và bong tróc. Phần xương dưới sụn cũng xuất hiện các vùng đặc, rỗng khác nhau, dẫn đến hiện tượng đau nhức liên tục. Làm biến dạng khớp: Bệnh tiến triển nặng sẽ xuất hiện các khối u tại vùng khớp bị viêm. Khớp không giữ được hình dạng ban đầu, trở nên gồ ghề, thậm chí lệch sang một bên gây ảnh hưởng đến khả năng vận động.'
+
+MERGE (o1:symptom {id: 'sụn_khớp_bị_khô_ráp_và_bong_tróc_symptom'})
+MERGE (o2:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o1)-[r96:isSymptomOf]->(o2)
+SET r96.text = 'Viêm khớp cấp thường có thể cải thiện sau vài tuần hoặc vài tháng. Tuy nhiên, một số trường hợp không được điều trị kịp thời có nguy cơ tiến triển nghiêm trọng theo thời gian, dẫn đến mạn tính với nhiều biến chứng nguy hiểm như sau:  Phá hủy xương và sụn khớp: Khớp bị viêm có thể gây ảnh hưởng đến cơ, gân, dây chằng khiến cho xương khớp yếu đi. Đặc biệt, bệnh còn có khả năng gây viêm bao khớp, làm giảm chất lượng dịch khớp. Điều này khiến sụn khớp bị thiếu dưỡng chất nuôi dưỡng, dần trở nên khô ráp và bong tróc. Phần xương dưới sụn cũng xuất hiện các vùng đặc, rỗng khác nhau, dẫn đến hiện tượng đau nhức liên tục. Làm biến dạng khớp: Bệnh tiến triển nặng sẽ xuất hiện các khối u tại vùng khớp bị viêm. Khớp không giữ được hình dạng ban đầu, trở nên gồ ghề, thậm chí lệch sang một bên gây ảnh hưởng đến khả năng vận động.'
+
+MERGE (o1:symptom {id: 'xương_dưới_sụn_xuất_hiện_các_vùng_đặc__rỗng_symptom'})
+MERGE (o2:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o1)-[r97:isSymptomOf]->(o2)
+SET r97.text = 'Viêm khớp cấp thường có thể cải thiện sau vài tuần hoặc vài tháng. Tuy nhiên, một số trường hợp không được điều trị kịp thời có nguy cơ tiến triển nghiêm trọng theo thời gian, dẫn đến mạn tính với nhiều biến chứng nguy hiểm như sau:  Phá hủy xương và sụn khớp: Khớp bị viêm có thể gây ảnh hưởng đến cơ, gân, dây chằng khiến cho xương khớp yếu đi. Đặc biệt, bệnh còn có khả năng gây viêm bao khớp, làm giảm chất lượng dịch khớp. Điều này khiến sụn khớp bị thiếu dưỡng chất nuôi dưỡng, dần trở nên khô ráp và bong tróc. Phần xương dưới sụn cũng xuất hiện các vùng đặc, rỗng khác nhau, dẫn đến hiện tượng đau nhức liên tục. Làm biến dạng khớp: Bệnh tiến triển nặng sẽ xuất hiện các khối u tại vùng khớp bị viêm. Khớp không giữ được hình dạng ban đầu, trở nên gồ ghề, thậm chí lệch sang một bên gây ảnh hưởng đến khả năng vận động.'
+
+MERGE (o1:symptom {id: 'đau_nhức_liên_tục_symptom'})
+MERGE (o2:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o1)-[r98:isSymptomOf]->(o2)
+SET r98.text = 'Viêm khớp cấp thường có thể cải thiện sau vài tuần hoặc vài tháng. Tuy nhiên, một số trường hợp không được điều trị kịp thời có nguy cơ tiến triển nghiêm trọng theo thời gian, dẫn đến mạn tính với nhiều biến chứng nguy hiểm như sau:  Phá hủy xương và sụn khớp: Khớp bị viêm có thể gây ảnh hưởng đến cơ, gân, dây chằng khiến cho xương khớp yếu đi. Đặc biệt, bệnh còn có khả năng gây viêm bao khớp, làm giảm chất lượng dịch khớp. Điều này khiến sụn khớp bị thiếu dưỡng chất nuôi dưỡng, dần trở nên khô ráp và bong tróc. Phần xương dưới sụn cũng xuất hiện các vùng đặc, rỗng khác nhau, dẫn đến hiện tượng đau nhức liên tục. Làm biến dạng khớp: Bệnh tiến triển nặng sẽ xuất hiện các khối u tại vùng khớp bị viêm. Khớp không giữ được hình dạng ban đầu, trở nên gồ ghề, thậm chí lệch sang một bên gây ảnh hưởng đến khả năng vận động.'
+
+MERGE (o1:symptom {id: 'khối_u_tại_vùng_khớp_bị_viêm_symptom'})
+MERGE (o2:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o1)-[r99:isSymptomOf]->(o2)
+SET r99.text = 'Viêm khớp cấp thường có thể cải thiện sau vài tuần hoặc vài tháng. Tuy nhiên, một số trường hợp không được điều trị kịp thời có nguy cơ tiến triển nghiêm trọng theo thời gian, dẫn đến mạn tính với nhiều biến chứng nguy hiểm như sau:  Phá hủy xương và sụn khớp: Khớp bị viêm có thể gây ảnh hưởng đến cơ, gân, dây chằng khiến cho xương khớp yếu đi. Đặc biệt, bệnh còn có khả năng gây viêm bao khớp, làm giảm chất lượng dịch khớp. Điều này khiến sụn khớp bị thiếu dưỡng chất nuôi dưỡng, dần trở nên khô ráp và bong tróc. Phần xương dưới sụn cũng xuất hiện các vùng đặc, rỗng khác nhau, dẫn đến hiện tượng đau nhức liên tục. Làm biến dạng khớp: Bệnh tiến triển nặng sẽ xuất hiện các khối u tại vùng khớp bị viêm. Khớp không giữ được hình dạng ban đầu, trở nên gồ ghề, thậm chí lệch sang một bên gây ảnh hưởng đến khả năng vận động.'
+
+MERGE (o1:symptom {id: 'khớp_không_giữ_được_hình_dạng_ban_đầu_symptom'})
+MERGE (o2:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o1)-[r100:isSymptomOf]->(o2)
+SET r100.text = 'Viêm khớp cấp thường có thể cải thiện sau vài tuần hoặc vài tháng. Tuy nhiên, một số trường hợp không được điều trị kịp thời có nguy cơ tiến triển nghiêm trọng theo thời gian, dẫn đến mạn tính với nhiều biến chứng nguy hiểm như sau:  Phá hủy xương và sụn khớp: Khớp bị viêm có thể gây ảnh hưởng đến cơ, gân, dây chằng khiến cho xương khớp yếu đi. Đặc biệt, bệnh còn có khả năng gây viêm bao khớp, làm giảm chất lượng dịch khớp. Điều này khiến sụn khớp bị thiếu dưỡng chất nuôi dưỡng, dần trở nên khô ráp và bong tróc. Phần xương dưới sụn cũng xuất hiện các vùng đặc, rỗng khác nhau, dẫn đến hiện tượng đau nhức liên tục. Làm biến dạng khớp: Bệnh tiến triển nặng sẽ xuất hiện các khối u tại vùng khớp bị viêm. Khớp không giữ được hình dạng ban đầu, trở nên gồ ghề, thậm chí lệch sang một bên gây ảnh hưởng đến khả năng vận động.'
+
+MERGE (o1:symptom {id: 'khớp_trở_nên_gồ_ghề_symptom'})
+MERGE (o2:disease {id: 'viêm_khớp_cấp_disease'})
+MERGE (o1)-[r101:isSymptomOf]->(o2)
+SET r101.text = 'Viêm khớp cấp thường có thể cải thiện sau vài tuần hoặc vài tháng. Tuy nhiên, một số trường hợp không được điều trị kịp thời có nguy cơ tiến triển nghiêm trọng theo thời gian, dẫn đến mạn tính với nhiều biến chứng nguy hiểm như sau:  Phá hủy xương và sụn khớp: Khớp bị viêm có thể gây ảnh hưởng đến cơ, gân, dây chằng khiến cho xương khớp yếu đi. Đặc biệt, bệnh còn có khả năng gây viêm bao khớp, làm giảm chất lượng dịch khớp. Điều này khiến sụn khớp bị thiếu dưỡng chất nuôi dưỡng, dần trở nên khô ráp và bong tróc. Phần xương dưới sụn cũng xuất hiện các vùng đặc, rỗng khác nhau, dẫn đến hiện tượng đau nhức liên tục. Làm biến dạng khớp: Bệnh tiến triển nặng sẽ xuất hiện các khối u tại vùng khớp bị viêm. Khớp không giữ được hình dạng ban đầu, trở nên gồ ghề, thậm chí lệch sang một bên gây ảnh hưởng đến khả năng vận động.'
+
+MERGE (o1:disease {id: 'viêm_khớp_cấp_tính_disease'})
+MERGE (o2:lifestyle {id: 'thay_đổi_chế_độ_ăn_uống__sinh_hoạt_khoa_học_lifestyle'})
+MERGE (o1)-[r102:preventedBy]->(o2)
+SET r102.text = 'Tình trạng viêm khớp cấp tính có thể được phòng tránh hiệu quả thông qua một số giải pháp thay đổi chế độ ăn uống, sinh hoạt khoa học.'
+
+MERGE (o1:lifestyle {id: 'chế_độ_ăn_giàu_omega-3_lifestyle'})
+MERGE (o2:disease {id: 'viêm_khớp_cấp_tính_disease'})
+MERGE (o1)-[r103:preventedBy]->(o2)
+SET r103.text = 'Xây dựng chế độ ăn giàu Omega-3, bao gồm: các loại cá (cá hồi, cá ngừ, cá mòi…), các loại hạt (hạt lanh, hạt chia, quả óc chó…), dầu thực vật (dầu hạt cải, dầu đậu tương…), sữa chua, trứng…'
+
+MERGE (o1:food {id: 'cá_hồi_food'})
+MERGE (o2:lifestyle {id: 'chế_độ_ăn_giàu_omega-3_lifestyle'})
+MERGE (o1)-[r104:relatedTo]->(o2)
+SET r104.text = 'Xây dựng chế độ ăn giàu Omega-3, bao gồm: các loại cá (cá hồi, cá ngừ, cá mòi…), các loại hạt (hạt lanh, hạt chia, quả óc chó…), dầu thực vật (dầu hạt cải, dầu đậu tương…), sữa chua, trứng…'
+
+MERGE (o1:food {id: 'cá_ngừ_food'})
+MERGE (o2:lifestyle {id: 'chế_độ_ăn_giàu_omega-3_lifestyle'})
+MERGE (o1)-[r105:relatedTo]->(o2)
+SET r105.text = 'Xây dựng chế độ ăn giàu Omega-3, bao gồm: các loại cá (cá hồi, cá ngừ, cá mòi…), các loại hạt (hạt lanh, hạt chia, quả óc chó…), dầu thực vật (dầu hạt cải, dầu đậu tương…), sữa chua, trứng…'
+
+MERGE (o1:food {id: 'cá_mòi_food'})
+MERGE (o2:lifestyle {id: 'chế_độ_ăn_giàu_omega-3_lifestyle'})
+MERGE (o1)-[r106:relatedTo]->(o2)
+SET r106.text = 'Xây dựng chế độ ăn giàu Omega-3, bao gồm: các loại cá (cá hồi, cá ngừ, cá mòi…), các loại hạt (hạt lanh, hạt chia, quả óc chó…), dầu thực vật (dầu hạt cải, dầu đậu tương…), sữa chua, trứng…'
+
+MERGE (o1:food {id: 'hạt_lanh_food'})
+MERGE (o2:lifestyle {id: 'chế_độ_ăn_giàu_omega-3_lifestyle'})
+MERGE (o1)-[r107:relatedTo]->(o2)
+SET r107.text = 'Xây dựng chế độ ăn giàu Omega-3, bao gồm: các loại cá (cá hồi, cá ngừ, cá mòi…), các loại hạt (hạt lanh, hạt chia, quả óc chó…), dầu thực vật (dầu hạt cải, dầu đậu tương…), sữa chua, trứng…'
+
+MERGE (o1:food {id: 'hạt_chia_food'})
+MERGE (o2:lifestyle {id: 'chế_độ_ăn_giàu_omega-3_lifestyle'})
+MERGE (o1)-[r108:relatedTo]->(o2)
+SET r108.text = 'Xây dựng chế độ ăn giàu Omega-3, bao gồm: các loại cá (cá hồi, cá ngừ, cá mòi…), các loại hạt (hạt lanh, hạt chia, quả óc chó…), dầu thực vật (dầu hạt cải, dầu đậu tương…), sữa chua, trứng…'
+
+MERGE (o1:food {id: 'quả_óc_chó_food'})
+MERGE (o2:lifestyle {id: 'chế_độ_ăn_giàu_omega-3_lifestyle'})
+MERGE (o1)-[r109:relatedTo]->(o2)
+SET r109.text = 'Xây dựng chế độ ăn giàu Omega-3, bao gồm: các loại cá (cá hồi, cá ngừ, cá mòi…), các loại hạt (hạt lanh, hạt chia, quả óc chó…), dầu thực vật (dầu hạt cải, dầu đậu tương…), sữa chua, trứng…'
+
+MERGE (o1:food {id: 'dầu_hạt_cải_food'})
+MERGE (o2:lifestyle {id: 'chế_độ_ăn_giàu_omega-3_lifestyle'})
+MERGE (o1)-[r110:relatedTo]->(o2)
+SET r110.text = 'Xây dựng chế độ ăn giàu Omega-3, bao gồm: các loại cá (cá hồi, cá ngừ, cá mòi…), các loại hạt (hạt lanh, hạt chia, quả óc chó…), dầu thực vật (dầu hạt cải, dầu đậu tương…), sữa chua, trứng…'
+
+MERGE (o1:food {id: 'dầu_đậu_tương_food'})
+MERGE (o2:lifestyle {id: 'chế_độ_ăn_giàu_omega-3_lifestyle'})
+MERGE (o1)-[r111:relatedTo]->(o2)
+SET r111.text = 'Xây dựng chế độ ăn giàu Omega-3, bao gồm: các loại cá (cá hồi, cá ngừ, cá mòi…), các loại hạt (hạt lanh, hạt chia, quả óc chó…), dầu thực vật (dầu hạt cải, dầu đậu tương…), sữa chua, trứng…'
+
+MERGE (o1:food {id: 'sữa_chua_food'})
+MERGE (o2:lifestyle {id: 'chế_độ_ăn_giàu_omega-3_lifestyle'})
+MERGE (o1)-[r112:relatedTo]->(o2)
+SET r112.text = 'Xây dựng chế độ ăn giàu Omega-3, bao gồm: các loại cá (cá hồi, cá ngừ, cá mòi…), các loại hạt (hạt lanh, hạt chia, quả óc chó…), dầu thực vật (dầu hạt cải, dầu đậu tương…), sữa chua, trứng…'
+
+MERGE (o1:food {id: 'trứng_food'})
+MERGE (o2:lifestyle {id: 'chế_độ_ăn_giàu_omega-3_lifestyle'})
+MERGE (o1)-[r113:relatedTo]->(o2)
+SET r113.text = 'Xây dựng chế độ ăn giàu Omega-3, bao gồm: các loại cá (cá hồi, cá ngừ, cá mòi…), các loại hạt (hạt lanh, hạt chia, quả óc chó…), dầu thực vật (dầu hạt cải, dầu đậu tương…), sữa chua, trứng…'
+
+MERGE (o1:food {id: 'sữa_ít_béo_food'})
+MERGE (o2:food {id: 'thực_phẩm_tốt_cho_xương_food'})
+MERGE (o1)-[r114:relatedTo]->(o2)
+SET r114.text = 'Bổ sung nhóm thực phẩm tốt cho xương, giúp tạo xương, tăng cường sức mạnh cho xương, tăng mật độ xương, bao gồm: sữa ít béo, bông cải xanh, trà xanh, cam quýt…'
+
+MERGE (o1:food {id: 'bông_cải_xanh_food'})
+MERGE (o2:food {id: 'thực_phẩm_tốt_cho_xương_food'})
+MERGE (o1)-[r115:relatedTo]->(o2)
+SET r115.text = 'Bổ sung nhóm thực phẩm tốt cho xương, giúp tạo xương, tăng cường sức mạnh cho xương, tăng mật độ xương, bao gồm: sữa ít béo, bông cải xanh, trà xanh, cam quýt…'
+
+MERGE (o1:food {id: 'trà_xanh_food'})
+MERGE (o2:food {id: 'thực_phẩm_tốt_cho_xương_food'})
+MERGE (o1)-[r116:relatedTo]->(o2)
+SET r116.text = 'Bổ sung nhóm thực phẩm tốt cho xương, giúp tạo xương, tăng cường sức mạnh cho xương, tăng mật độ xương, bao gồm: sữa ít béo, bông cải xanh, trà xanh, cam quýt…'
+
+MERGE (o1:food {id: 'cam_quýt_food'})
+MERGE (o2:food {id: 'thực_phẩm_tốt_cho_xương_food'})
+MERGE (o1)-[r117:relatedTo]->(o2)
+SET r117.text = 'Bổ sung nhóm thực phẩm tốt cho xương, giúp tạo xương, tăng cường sức mạnh cho xương, tăng mật độ xương, bao gồm: sữa ít béo, bông cải xanh, trà xanh, cam quýt…'
+
+MERGE (o1:food {id: 'thực_phẩm_tốt_cho_xương_food'})
+MERGE (o2:disease {id: 'viêm_khớp_cấp_tính_disease'})
+MERGE (o1)-[r118:preventedBy]->(o2)
+SET r118.text = 'Bổ sung nhóm thực phẩm tốt cho xương, giúp tạo xương, tăng cường sức mạnh cho xương, tăng mật độ xương, bao gồm: sữa ít béo, bông cải xanh, trà xanh, cam quýt…'
+
+MERGE (o1:lifestyle {id: 'hoạt_động_thể_chất_đều_đặn_lifestyle'})
+MERGE (o2:disease {id: 'viêm_khớp_disease'})
+MERGE (o1)-[r119:preventedBy]->(o2)
+SET r119.text = 'Hoạt động thể chất đều đặn là một trong những biện pháp hữu ích để ngăn ngừa chứng viêm khớp.'
+
+MERGE (o1:lifestyle {id: 'vận_động_vừa_phải_lifestyle'})
+MERGE (o2:lifestyle {id: 'hoạt_động_thể_chất_đều_đặn_lifestyle'})
+MERGE (o1)-[r120:relatedTo]->(o2)
+SET r120.text = 'Theo đó, các chuyên gia khuyến nghị nên vận động vừa phải 30 phút mỗi ngày, một tuần 5 lần để tăng cường sức mạnh cho cơ, xương, khớp.'
+
+MERGE (o1:lifestyle {id: 'thừa_cân_lifestyle'})
+MERGE (o2:disease {id: 'viêm_khớp_disease'})
+MERGE (o1)-[r121:aggravatedBy]->(o2)
+SET r121.text = 'Tình trạng thừa cân sẽ gây áp lực lên vùng hông và đầu gối, góp phần phá huỷ sụn ở đệm khớp.'
+
+MERGE (o1:symptom {id: 'áp_lực_lên_vùng_hông_và_đầu_gối_symptom'})
+MERGE (o2:lifestyle {id: 'thừa_cân_lifestyle'})
+MERGE (o1)-[r122:causedBy]->(o2)
+SET r122.text = 'Tình trạng thừa cân sẽ gây áp lực lên vùng hông và đầu gối, góp phần phá huỷ sụn ở đệm khớp.'
+
+MERGE (o1:symptom {id: 'phá_huỷ_sụn_ở_đệm_khớp_symptom'})
+MERGE (o2:disease {id: 'viêm_khớp_disease'})
+MERGE (o1)-[r123:causedBy]->(o2)
+SET r123.text = 'Tình trạng thừa cân sẽ gây áp lực lên vùng hông và đầu gối, góp phần phá huỷ sụn ở đệm khớp.'
+
+MERGE (o1:lifestyle {id: 'duy_trì_mức_cân_nặng_hợp_lý_lifestyle'})
+MERGE (o2:disease {id: 'viêm_khớp_disease'})
+MERGE (o1)-[r124:preventedBy]->(o2)
+SET r124.text = 'Do đó, việc duy trì mức cân nặng hợp lý là thực sự cần thiết để ngăn ngừa hiệu quả chứng viêm khớp thường gặp.'
+
+MERGE (o1:lifestyle {id: 'kiểm_soát_đường_huyết_ở_mức_ổn_định_lifestyle'})
+MERGE (o2:disease {id: 'viêm_khớp_disease'})
+MERGE (o1)-[r125:preventedBy]->(o2)
+SET r125.text = 'Ngoài ra, việc kiểm soát đường huyết ở mức ổn định và từ bỏ thói quen hút thuốc cũng là giải pháp hữu ích nên ưu tiên.'
+
+MERGE (o1:lifestyle {id: 'từ_bỏ_thói_quen_hút_thuốc_lifestyle'})
+MERGE (o2:disease {id: 'viêm_khớp_disease'})
+MERGE (o1)-[r126:preventedBy]->(o2)
+SET r126.text = 'Ngoài ra, việc kiểm soát đường huyết ở mức ổn định và từ bỏ thói quen hút thuốc cũng là giải pháp hữu ích nên ưu tiên.'
+
+MERGE (o1:disease {id: 'bệnh_lý_mạn_tính_disease'})
+MERGE (o2:disease {id: 'viêm_khớp_phản_ứng_disease'})
+MERGE (o1)-[r127:associatedWith]->(o2)
+SET r127.text = 'Nếu người bệnh có các bệnh lý mạn tính như tim mạch, nội tiết, ung thư cần được kiểm tra theo dõi định kỳ, kiểm soát tốt tình trạng bệnh để phòng tránh các viêm khớp phản ứng'
+
+MERGE (o1:disease {id: 'viêm_khớp_phản_ứng_disease'})
+MERGE (o2:test {id: 'kiểm_tra_theo_dõi_định_kỳ_test'})
+MERGE (o1)-[r128:preventedBy]->(o2)
+SET r128.text = 'Nếu người bệnh có các bệnh lý mạn tính như tim mạch, nội tiết, ung thư cần được kiểm tra theo dõi định kỳ, kiểm soát tốt tình trạng bệnh để phòng tránh các viêm khớp phản ứng'
+
+MERGE (o1:organ {id: 'trung_tâm_chấn_thương_chỉnh_hình_organ'})
+MERGE (o2:organ {id: 'hệ_thống_bvđk_tâm_anh_organ'})
+MERGE (o1)-[r129:locatedIn]->(o2)
+SET r129.text = 'Trung tâm Chấn thương chỉnh hình, Hệ thống BVĐK Tâm Anh, là nơi quy tụ đội ngũ chuyên gia đầu ngành, bác sĩ ngoại khoa giàu kinh nghiệm, tận tâm, nhiệt tình như: TTND.GS.TS.BS Nguyễn Việt Tiến; PGS.TS.BS Đặng Hồng Hoa; TS.BS Tăng Hà Nam Anh; ThS.BS.CKII Trần Anh Vũ; BS.CKI Trần Xuân Anh, ThS.BS.CKI Lê Đình Khoa, TS.BS Đỗ Tiến Dũng; TS.BS.CKII Vũ Hữu Dũng…'
+
+MERGE (o1:treatment {id: 'ttnd.gs.ts.bs_nguyễn_việt_tiến_treatment'})
+MERGE (o2:disease {id: 'viêm_khớp_disease'})
+MERGE (o1)-[r130:treatedBy]->(o2)
+SET r130.text = 'Trung tâm Chấn thương chỉnh hình, Hệ thống BVĐK Tâm Anh, là nơi quy tụ đội ngũ chuyên gia đầu ngành, bác sĩ ngoại khoa giàu kinh nghiệm, tận tâm, nhiệt tình như: TTND.GS.TS.BS Nguyễn Việt Tiến; PGS.TS.BS Đặng Hồng Hoa; TS.BS Tăng Hà Nam Anh; ThS.BS.CKII Trần Anh Vũ; BS.CKI Trần Xuân Anh, ThS.BS.CKI Lê Đình Khoa, TS.BS Đỗ Tiến Dũng; TS.BS.CKII Vũ Hữu Dũng…'
+
+MERGE (o1:treatment {id: 'pgs.ts.bs_đặng_hồng_hoa_treatment'})
+MERGE (o2:disease {id: 'viêm_khớp_disease'})
+MERGE (o1)-[r131:treatedBy]->(o2)
+SET r131.text = 'Trung tâm Chấn thương chỉnh hình, Hệ thống BVĐK Tâm Anh, là nơi quy tụ đội ngũ chuyên gia đầu ngành, bác sĩ ngoại khoa giàu kinh nghiệm, tận tâm, nhiệt tình như: TTND.GS.TS.BS Nguyễn Việt Tiến; PGS.TS.BS Đặng Hồng Hoa; TS.BS Tăng Hà Nam Anh; ThS.BS.CKII Trần Anh Vũ; BS.CKI Trần Xuân Anh, ThS.BS.CKI Lê Đình Khoa, TS.BS Đỗ Tiến Dũng; TS.BS.CKII Vũ Hữu Dũng…'
+
+MERGE (o1:treatment {id: 'ts.bs_tăng_hà_nam_anh_treatment'})
+MERGE (o2:disease {id: 'viêm_khớp_disease'})
+MERGE (o1)-[r132:treatedBy]->(o2)
+SET r132.text = 'Trung tâm Chấn thương chỉnh hình, Hệ thống BVĐK Tâm Anh, là nơi quy tụ đội ngũ chuyên gia đầu ngành, bác sĩ ngoại khoa giàu kinh nghiệm, tận tâm, nhiệt tình như: TTND.GS.TS.BS Nguyễn Việt Tiến; PGS.TS.BS Đặng Hồng Hoa; TS.BS Tăng Hà Nam Anh; ThS.BS.CKII Trần Anh Vũ; BS.CKI Trần Xuân Anh, ThS.BS.CKI Lê Đình Khoa, TS.BS Đỗ Tiến Dũng; TS.BS.CKII Vũ Hữu Dũng…'
+
+MERGE (o1:treatment {id: 'ths.bs.ckii_trần_anh_vũ_treatment'})
+MERGE (o2:disease {id: 'viêm_khớp_disease'})
+MERGE (o1)-[r133:treatedBy]->(o2)
+SET r133.text = 'Trung tâm Chấn thương chỉnh hình, Hệ thống BVĐK Tâm Anh, là nơi quy tụ đội ngũ chuyên gia đầu ngành, bác sĩ ngoại khoa giàu kinh nghiệm, tận tâm, nhiệt tình như: TTND.GS.TS.BS Nguyễn Việt Tiến; PGS.TS.BS Đặng Hồng Hoa; TS.BS Tăng Hà Nam Anh; ThS.BS.CKII Trần Anh Vũ; BS.CKI Trần Xuân Anh, ThS.BS.CKI Lê Đình Khoa, TS.BS Đỗ Tiến Dũng; TS.BS.CKII Vũ Hữu Dũng…'
+
+MERGE (o1:treatment {id: 'bs.cki_trần_xuân_anh_treatment'})
+MERGE (o2:disease {id: 'viêm_khớp_disease'})
+MERGE (o1)-[r134:treatedBy]->(o2)
+SET r134.text = 'Trung tâm Chấn thương chỉnh hình, Hệ thống BVĐK Tâm Anh, là nơi quy tụ đội ngũ chuyên gia đầu ngành, bác sĩ ngoại khoa giàu kinh nghiệm, tận tâm, nhiệt tình như: TTND.GS.TS.BS Nguyễn Việt Tiến; PGS.TS.BS Đặng Hồng Hoa; TS.BS Tăng Hà Nam Anh; ThS.BS.CKII Trần Anh Vũ; BS.CKI Trần Xuân Anh, ThS.BS.CKI Lê Đình Khoa, TS.BS Đỗ Tiến Dũng; TS.BS.CKII Vũ Hữu Dũng…'
+
+MERGE (o1:treatment {id: 'ths.bs.cki_lê_đình_khoa_treatment'})
+MERGE (o2:disease {id: 'viêm_khớp_disease'})
+MERGE (o1)-[r135:treatedBy]->(o2)
+SET r135.text = 'Trung tâm Chấn thương chỉnh hình, Hệ thống BVĐK Tâm Anh, là nơi quy tụ đội ngũ chuyên gia đầu ngành, bác sĩ ngoại khoa giàu kinh nghiệm, tận tâm, nhiệt tình như: TTND.GS.TS.BS Nguyễn Việt Tiến; PGS.TS.BS Đặng Hồng Hoa; TS.BS Tăng Hà Nam Anh; ThS.BS.CKII Trần Anh Vũ; BS.CKI Trần Xuân Anh, ThS.BS.CKI Lê Đình Khoa, TS.BS Đỗ Tiến Dũng; TS.BS.CKII Vũ Hữu Dũng…'
+
+MERGE (o1:treatment {id: 'ts.bs_đỗ_tiến_dũng_treatment'})
+MERGE (o2:disease {id: 'viêm_khớp_disease'})
+MERGE (o1)-[r136:treatedBy]->(o2)
+SET r136.text = 'Trung tâm Chấn thương chỉnh hình, Hệ thống BVĐK Tâm Anh, là nơi quy tụ đội ngũ chuyên gia đầu ngành, bác sĩ ngoại khoa giàu kinh nghiệm, tận tâm, nhiệt tình như: TTND.GS.TS.BS Nguyễn Việt Tiến; PGS.TS.BS Đặng Hồng Hoa; TS.BS Tăng Hà Nam Anh; ThS.BS.CKII Trần Anh Vũ; BS.CKI Trần Xuân Anh, ThS.BS.CKI Lê Đình Khoa, TS.BS Đỗ Tiến Dũng; TS.BS.CKII Vũ Hữu Dũng…'
+
+MERGE (o1:treatment {id: 'ts.bs.ckii_vũ_hữu_dũng_treatment'})
+MERGE (o2:disease {id: 'viêm_khớp_disease'})
+MERGE (o1)-[r137:treatedBy]->(o2)
+SET r137.text = 'Trung tâm Chấn thương chỉnh hình, Hệ thống BVĐK Tâm Anh, là nơi quy tụ đội ngũ chuyên gia đầu ngành, bác sĩ ngoại khoa giàu kinh nghiệm, tận tâm, nhiệt tình như: TTND.GS.TS.BS Nguyễn Việt Tiến; PGS.TS.BS Đặng Hồng Hoa; TS.BS Tăng Hà Nam Anh; ThS.BS.CKII Trần Anh Vũ; BS.CKI Trần Xuân Anh, ThS.BS.CKI Lê Đình Khoa, TS.BS Đỗ Tiến Dũng; TS.BS.CKII Vũ Hữu Dũng…'
+
+MERGE (o1:treatment {id: 'chẩn_đoán_và_điều_trị_các_bệnh_về_cơ_xương_khớp_treatment'})
+MERGE (o2:disease {id: 'viêm_khớp_disease'})
+MERGE (o1)-[r138:treatedBy]->(o2)
+SET r138.text = 'Đây cũng là một trong những đơn vị tiên phong trong việc chẩn đoán và điều trị các bệnh về cơ xương khớp với kỹ thuật hiện đại theo phác đồ cập nhật quốc tế.'
+
+MERGE (o1:test {id: 'máy_chụp_ct_768_lát_cắt_somatom_drive_test'})
+MERGE (o2:disease {id: 'viêm_khớp_disease'})
+MERGE (o1)-[r139:diagnosedBy]->(o2)
+SET r139.text = 'Bệnh viện còn được trang bị hệ thống máy móc, trang thiết bị chẩn đoán hình ảnh hiện đại như: máy chụp CT 768 lát cắt Somatom Drive, máy cộng hưởng từ thế hệ mới Magnetom Amira BioMatrix, robot Artis Pheno, máy đo mật độ xương, máy siêu âm…; hệ thống kính vi phẫu thuật Opmi Vario 700 Zeiss, bàn mổ Meera-Maquet… để có thể phát hiện sớm các tổn thương và điều trị hiệu quả các bệnh lý về cơ xương khớp…'
+
+MERGE (o1:test {id: 'máy_cộng_hưởng_từ_thế_hệ_mới_magnetom_amira_biomatrix_test'})
+MERGE (o2:disease {id: 'viêm_khớp_disease'})
+MERGE (o1)-[r140:diagnosedBy]->(o2)
+SET r140.text = 'Bệnh viện còn được trang bị hệ thống máy móc, trang thiết bị chẩn đoán hình ảnh hiện đại như: máy chụp CT 768 lát cắt Somatom Drive, máy cộng hưởng từ thế hệ mới Magnetom Amira BioMatrix, robot Artis Pheno, máy đo mật độ xương, máy siêu âm…; hệ thống kính vi phẫu thuật Opmi Vario 700 Zeiss, bàn mổ Meera-Maquet… để có thể phát hiện sớm các tổn thương và điều trị hiệu quả các bệnh lý về cơ xương khớp…'
+
+MERGE (o1:test {id: 'robot_artis_pheno_test'})
+MERGE (o2:disease {id: 'viêm_khớp_disease'})
+MERGE (o1)-[r141:diagnosedBy]->(o2)
+SET r141.text = 'Bệnh viện còn được trang bị hệ thống máy móc, trang thiết bị chẩn đoán hình ảnh hiện đại như: máy chụp CT 768 lát cắt Somatom Drive, máy cộng hưởng từ thế hệ mới Magnetom Amira BioMatrix, robot Artis Pheno, máy đo mật độ xương, máy siêu âm…; hệ thống kính vi phẫu thuật Opmi Vario 700 Zeiss, bàn mổ Meera-Maquet… để có thể phát hiện sớm các tổn thương và điều trị hiệu quả các bệnh lý về cơ xương khớp…'
+
+MERGE (o1:test {id: 'máy_đo_mật_độ_xương_test'})
+MERGE (o2:disease {id: 'viêm_khớp_disease'})
+MERGE (o1)-[r142:diagnosedBy]->(o2)
+SET r142.text = 'Bệnh viện còn được trang bị hệ thống máy móc, trang thiết bị chẩn đoán hình ảnh hiện đại như: máy chụp CT 768 lát cắt Somatom Drive, máy cộng hưởng từ thế hệ mới Magnetom Amira BioMatrix, robot Artis Pheno, máy đo mật độ xương, máy siêu âm…; hệ thống kính vi phẫu thuật Opmi Vario 700 Zeiss, bàn mổ Meera-Maquet… để có thể phát hiện sớm các tổn thương và điều trị hiệu quả các bệnh lý về cơ xương khớp…'
+
+MERGE (o1:test {id: 'máy_siêu_âm_test'})
+MERGE (o2:disease {id: 'viêm_khớp_disease'})
+MERGE (o1)-[r143:diagnosedBy]->(o2)
+SET r143.text = 'Bệnh viện còn được trang bị hệ thống máy móc, trang thiết bị chẩn đoán hình ảnh hiện đại như: máy chụp CT 768 lát cắt Somatom Drive, máy cộng hưởng từ thế hệ mới Magnetom Amira BioMatrix, robot Artis Pheno, máy đo mật độ xương, máy siêu âm…; hệ thống kính vi phẫu thuật Opmi Vario 700 Zeiss, bàn mổ Meera-Maquet… để có thể phát hiện sớm các tổn thương và điều trị hiệu quả các bệnh lý về cơ xương khớp…'
+
+MERGE (o1:test {id: 'kính_vi_phẫu_thuật_opmi_vario_700_zeiss_test'})
+MERGE (o2:disease {id: 'viêm_khớp_disease'})
+MERGE (o1)-[r144:diagnosedBy]->(o2)
+SET r144.text = 'Bệnh viện còn được trang bị hệ thống máy móc, trang thiết bị chẩn đoán hình ảnh hiện đại như: máy chụp CT 768 lát cắt Somatom Drive, máy cộng hưởng từ thế hệ mới Magnetom Amira BioMatrix, robot Artis Pheno, máy đo mật độ xương, máy siêu âm…; hệ thống kính vi phẫu thuật Opmi Vario 700 Zeiss, bàn mổ Meera-Maquet… để có thể phát hiện sớm các tổn thương và điều trị hiệu quả các bệnh lý về cơ xương khớp…'
+
+MERGE (o1:test {id: 'bàn_mổ_meera-maquet_test'})
+MERGE (o2:disease {id: 'viêm_khớp_disease'})
+MERGE (o1)-[r145:diagnosedBy]->(o2)
+SET r145.text = 'Bệnh viện còn được trang bị hệ thống máy móc, trang thiết bị chẩn đoán hình ảnh hiện đại như: máy chụp CT 768 lát cắt Somatom Drive, máy cộng hưởng từ thế hệ mới Magnetom Amira BioMatrix, robot Artis Pheno, máy đo mật độ xương, máy siêu âm…; hệ thống kính vi phẫu thuật Opmi Vario 700 Zeiss, bàn mổ Meera-Maquet… để có thể phát hiện sớm các tổn thương và điều trị hiệu quả các bệnh lý về cơ xương khớp…'
+
+MERGE (o1:organ {id: 'phòng_khám_khang_trang_organ'})
+MERGE (o2:organ {id: 'bvđk_tâm_anh_organ'})
+MERGE (o1)-[r146:locatedIn]->(o2)
+SET r146.text = 'BVĐK Tâm Anh còn sở hữu hệ thống phòng khám khang trang, khu nội trú cao cấp; khu vực phục hồi chức năng hiện đại; quy trình chăm sóc hậu phẫu toàn diện giúp bệnh nhân nhanh chóng hồi phục và ổn định sức khỏe sau phẫu thuật.'
+
+MERGE (o1:organ {id: 'khu_nội_trú_cao_cấp_organ'})
+MERGE (o2:organ {id: 'bvđk_tâm_anh_organ'})
+MERGE (o1)-[r147:locatedIn]->(o2)
+SET r147.text = 'BVĐK Tâm Anh còn sở hữu hệ thống phòng khám khang trang, khu nội trú cao cấp; khu vực phục hồi chức năng hiện đại; quy trình chăm sóc hậu phẫu toàn diện giúp bệnh nhân nhanh chóng hồi phục và ổn định sức khỏe sau phẫu thuật.'
+
+MERGE (o1:organ {id: 'khu_vực_phục_hồi_chức_năng_hiện_đại_organ'})
+MERGE (o2:organ {id: 'bvđk_tâm_anh_organ'})
+MERGE (o1)-[r148:locatedIn]->(o2)
+SET r148.text = 'BVĐK Tâm Anh còn sở hữu hệ thống phòng khám khang trang, khu nội trú cao cấp; khu vực phục hồi chức năng hiện đại; quy trình chăm sóc hậu phẫu toàn diện giúp bệnh nhân nhanh chóng hồi phục và ổn định sức khỏe sau phẫu thuật.'

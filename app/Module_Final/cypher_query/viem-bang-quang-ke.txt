@@ -1,0 +1,880 @@
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o2:symptom {id: 'đau_vùng_chậu_mạn_tính_symptom'})
+MERGE (o1)-[r0:isSymptomOf]->(o2)
+SET r0.text = 'Viêm bàng quang kẽ là những cơn đau vùng chậu mạn tính kèm theo tình trạng tăng số lần đi tiểu.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o2:symptom {id: 'tăng_số_lần_đi_tiểu_symptom'})
+MERGE (o1)-[r1:isSymptomOf]->(o2)
+SET r1.text = 'Viêm bàng quang kẽ là những cơn đau vùng chậu mạn tính kèm theo tình trạng tăng số lần đi tiểu.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o2:cause {id: 'vi_khuẩn_cause'})
+MERGE (o1)-[r2:causedBy]->(o2)
+SET r2.text = 'Tuy nhiên, viêm bàng quang kẽ không phải là bệnh do vi khuẩn gây ra và phổ biến với phụ nữ hơn nam giới vì sự khác ở cấu trúc sinh học.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o2:lifestyle {id: 'phụ_nữ_lifestyle'})
+MERGE (o1)-[r3:associatedWith]->(o2)
+SET r3.text = 'Tuy nhiên, viêm bàng quang kẽ không phải là bệnh do vi khuẩn gây ra và phổ biến với phụ nữ hơn nam giới vì sự khác ở cấu trúc sinh học.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o2:lifestyle {id: 'nam_giới_lifestyle'})
+MERGE (o1)-[r4:associatedWith]->(o2)
+SET r4.text = 'Tuy nhiên, viêm bàng quang kẽ không phải là bệnh do vi khuẩn gây ra và phổ biến với phụ nữ hơn nam giới vì sự khác ở cấu trúc sinh học.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_disease'})
+MERGE (o2:cause {id: 'nguyên_nhân_cụ_thể_cause'})
+MERGE (o1)-[r5:causedBy]->(o2)
+SET r5.text = 'Hiện nay, vẫn chưa xác định được nguyên nhân cụ thể dẫn đến viêm bàng quang nhưng bạn vẫn có thể chủ động phòng tránh bệnh bằng cách hạn chế tối đa những nguy cơ mắc bệnh.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o2:disease {id: 'bệnh_tiết_niệu_disease'})
+MERGE (o1)-[r6:relatedTo]->(o2)
+SET r6.text = 'Viêm bàng quang kẽ là một loại bệnh tiết niệu không do vi khuẩn gây ra.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o2:symptom {id: 'đau_vùng_chậu_symptom'})
+MERGE (o1)-[r7:isSymptomOf]->(o2)
+SET r7.text = 'Bệnh gây ra những cơn đau ở vùng chậu, trên xương mu hoặc đau bụng do sự tổn thương của bàng quang gây nên.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o2:symptom {id: 'đau_trên_xương_mu_symptom'})
+MERGE (o1)-[r8:isSymptomOf]->(o2)
+SET r8.text = 'Bệnh gây ra những cơn đau ở vùng chậu, trên xương mu hoặc đau bụng do sự tổn thương của bàng quang gây nên.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o2:symptom {id: 'đau_bụng_symptom'})
+MERGE (o1)-[r9:isSymptomOf]->(o2)
+SET r9.text = 'Bệnh gây ra những cơn đau ở vùng chậu, trên xương mu hoặc đau bụng do sự tổn thương của bàng quang gây nên.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o2:organ {id: 'bàng_quang_organ'})
+MERGE (o1)-[r10:affects]->(o2)
+SET r10.text = 'Bệnh gây ra những cơn đau ở vùng chậu, trên xương mu hoặc đau bụng do sự tổn thương của bàng quang gây nên.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o2:symptom {id: 'châm_chích_khi_đi_tiểu_symptom'})
+MERGE (o1)-[r11:isSymptomOf]->(o2)
+SET r11.text = 'Đồng thời, xuất hiện những triệu chứng châm chích hoặc nóng rát khi đi tiểu, tiểu rắt, tiểu gấp.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o2:symptom {id: 'nóng_rát_khi_đi_tiểu_symptom'})
+MERGE (o1)-[r12:isSymptomOf]->(o2)
+SET r12.text = 'Đồng thời, xuất hiện những triệu chứng châm chích hoặc nóng rát khi đi tiểu, tiểu rắt, tiểu gấp.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o2:symptom {id: 'tiểu_rắt_symptom'})
+MERGE (o1)-[r13:isSymptomOf]->(o2)
+SET r13.text = 'Đồng thời, xuất hiện những triệu chứng châm chích hoặc nóng rát khi đi tiểu, tiểu rắt, tiểu gấp.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o2:symptom {id: 'tiểu_gấp_symptom'})
+MERGE (o1)-[r14:isSymptomOf]->(o2)
+SET r14.text = 'Đồng thời, xuất hiện những triệu chứng châm chích hoặc nóng rát khi đi tiểu, tiểu rắt, tiểu gấp.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o2:treatment {id: 'kiểm_soát_treatment'})
+MERGE (o1)-[r15:treatedBy]->(o2)
+SET r15.text = 'Đây là những triệu chứng lâm sàng mạn tính, người bệnh có thể kiểm soát và cải thiện chúng, tuy nhiên vẫn chưa có phương pháp điều trị dứt điểm.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o2:treatment {id: 'cải_thiện_treatment'})
+MERGE (o1)-[r16:treatedBy]->(o2)
+SET r16.text = 'Đây là những triệu chứng lâm sàng mạn tính, người bệnh có thể kiểm soát và cải thiện chúng, tuy nhiên vẫn chưa có phương pháp điều trị dứt điểm.'
+
+MERGE (o1:organ {id: 'bàng_quang_organ'})
+MERGE (o2:organ {id: 'hệ_thống_tiết_niệu_organ'})
+MERGE (o1)-[r17:locatedIn]->(o2)
+SET r17.text = '(1) Bàng quang là cơ quan thuộc hệ thống tiết niệu có chức năng chứa nước tiểu trước khi chúng được thải ra khỏi cơ thể.'
+
+MERGE (o1:organ {id: 'bàng_quang_organ'})
+MERGE (o2:symptom {id: 'chứa_nước_tiểu_symptom'})
+MERGE (o1)-[r18:affects]->(o2)
+SET r18.text = '(1) Bàng quang là cơ quan thuộc hệ thống tiết niệu có chức năng chứa nước tiểu trước khi chúng được thải ra khỏi cơ thể.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o2:organ {id: 'bàng_quang_organ'})
+MERGE (o1)-[r19:affects]->(o2)
+SET r19.text = 'Viêm bàng quang kẽ gây cho bàng quang bị viêm.'
+
+MERGE (o1:organ {id: 'bàng_quang_organ'})
+MERGE (o2:organ {id: 'niêm_mạc_organ'})
+MERGE (o1)-[r20:affects]->(o2)
+SET r20.text = 'Khi các lớp niêm mạc và dưới niêm mạc bị bào mòn khiến bàng quang không nhận được sự bảo vệ tối ưu, dễ bị tổn thương bởi những tác động xấu.'
+
+MERGE (o1:organ {id: 'bàng_quang_organ'})
+MERGE (o2:organ {id: 'dưới_niêm_mạc_organ'})
+MERGE (o1)-[r21:affects]->(o2)
+SET r21.text = 'Khi các lớp niêm mạc và dưới niêm mạc bị bào mòn khiến bàng quang không nhận được sự bảo vệ tối ưu, dễ bị tổn thương bởi những tác động xấu.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o2:symptom {id: 'sức_khỏe_tiết_niệu_symptom'})
+MERGE (o1)-[r22:affects]->(o2)
+SET r22.text = 'Từ đó, làm suy giảm đi sức khỏe tiết niệu của người bệnh.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o2:lifestyle {id: 'nữ_giới_lifestyle'})
+MERGE (o1)-[r23:associatedWith]->(o2)
+SET r23.text = 'Viêm bàng quang kẽ phổ biến ở nữ giới hơn nam giới với 90% ca nhiễm viêm bàng quang kẽ là nữ.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o2:lifestyle {id: 'nam_giới_lifestyle'})
+MERGE (o1)-[r24:associatedWith]->(o2)
+SET r24.text = 'Viêm bàng quang kẽ phổ biến ở nữ giới hơn nam giới với 90% ca nhiễm viêm bàng quang kẽ là nữ.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o2:lifestyle {id: 'người_da_trắng_lifestyle'})
+MERGE (o1)-[r25:associatedWith]->(o2)
+SET r25.text = 'Một thống kê từ MSD cho biết, người da trắng có khả năng mắc bệnh cao hơn các nhóm người khác.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o2:lifestyle {id: 'đời_sống_hằng_ngày_lifestyle'})
+MERGE (o1)-[r26:affects]->(o2)
+SET r26.text = 'Bệnh viêm bàng quang kẽ không phải là một bệnh nguy hiểm, tuy nhiên những triệu chứng của bệnh có thể gây bất tiện cho người bệnh trong đời sống hằng ngày.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o2:symptom {id: 'sức_khỏe_tiết_niệu_symptom'})
+MERGE (o1)-[r27:affects]->(o2)
+SET r27.text = 'Hơn nữa, các biến chứng của bệnh có liên quan không chỉ đến sức khỏe tiết niệu mà còn bao gồm sức khỏe tâm thần và cũng là một vấn đề mà người bệnh cần phải cẩn trọng.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o2:symptom {id: 'sức_khỏe_tâm_thần_symptom'})
+MERGE (o1)-[r28:affects]->(o2)
+SET r28.text = 'Hơn nữa, các biến chứng của bệnh có liên quan không chỉ đến sức khỏe tiết niệu mà còn bao gồm sức khỏe tâm thần và cũng là một vấn đề mà người bệnh cần phải cẩn trọng.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o2:cause {id: 'nguyên_nhân_cụ_thể_cause'})
+MERGE (o1)-[r29:causedBy]->(o2)
+SET r29.text = 'Hiện nay, chưa có công bố chính thức nào khẳng định về nguyên nhân cụ thể gây ra bệnh viêm bàng quang kẽ.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_cấp_tính_disease'})
+MERGE (o1)-[r30:relatedTo]->(o2)
+SET r30.text = 'Dù những triệu chứng của viêm bàng quang kẽ tương đồng với viêm bàng quang cấp tính, tuy nhiên bệnh không do vi khuẩn gây ra nên các vấn đề liên quan đến nhiễm trùng đường tiết niệu không phải là nguyên nhân chính gây ra bệnh.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o2:cause {id: 'nhiễm_trùng_đường_tiết_niệu_cause'})
+MERGE (o1)-[r31:causedBy]->(o2)
+SET r31.text = 'Dù những triệu chứng của viêm bàng quang kẽ tương đồng với viêm bàng quang cấp tính, tuy nhiên bệnh không do vi khuẩn gây ra nên các vấn đề liên quan đến nhiễm trùng đường tiết niệu không phải là nguyên nhân chính gây ra bệnh.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o2:organ {id: 'niệu_quản_organ'})
+MERGE (o1)-[r32:affects]->(o2)
+SET r32.text = 'Dựa trên kết quả của những cuộc thí nghiệm, có thể thấy được rằng sinh lý của viêm bàng quang kẽ có liên quan đến việc niệu quản bị suy giảm chất nhầy bảo vệ.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o2:cause {id: 'chất_nhầy_bảo_vệ_cause'})
+MERGE (o1)-[r33:affects]->(o2)
+SET r33.text = 'Dựa trên kết quả của những cuộc thí nghiệm, có thể thấy được rằng sinh lý của viêm bàng quang kẽ có liên quan đến việc niệu quản bị suy giảm chất nhầy bảo vệ.'
+
+MERGE (o1:cause {id: 'kali_niệu_cause'})
+MERGE (o2:organ {id: 'bàng_quang_organ'})
+MERGE (o1)-[r34:affects]->(o2)
+SET r34.text = 'Hơn nữa, chất kali niệu được xác nhận là tác nhân gây ảnh hưởng xấu đến bàng quang.'
+
+MERGE (o1:cause {id: 'kali_niệu_cause'})
+MERGE (o2:organ {id: 'dây_thần_kinh_cảm_giác_organ'})
+MERGE (o1)-[r35:affects]->(o2)
+SET r35.text = 'Kali niệu có thể gây ra sự kích thích dây thần kinh cảm giác và làm tổn thương cơ trơn ở bàng quang.'
+
+MERGE (o1:cause {id: 'kali_niệu_cause'})
+MERGE (o2:organ {id: 'cơ_trơn_organ'})
+MERGE (o1)-[r36:affects]->(o2)
+SET r36.text = 'Kali niệu có thể gây ra sự kích thích dây thần kinh cảm giác và làm tổn thương cơ trơn ở bàng quang.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_disease'})
+MERGE (o2:food {id: 'thực_phẩm_chứa_kali_food'})
+MERGE (o1)-[r37:aggravatedBy]->(o2)
+SET r37.text = 'Vì thế, người bị viêm bàng quang hoặc viêm bàng quang kẽ thường được chỉ định hạn chế các thực phẩm chứa kali.'
+
+MERGE (o1:symptom {id: 'đau_tức_ở_vùng_chậu__xương_mu__áp_lực_bàng_quang_symptom'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o1)-[r38:isSymptomOf]->(o2)
+SET r38.text = 'Người bị viêm bàng quang kẽ sẽ có những dấu hiệu lâm sàng rõ ràng với những cơn đau tức ở vùng chậu, xương mu, áp lực bàng quang cùng với tình trạng tiểu gấp.'
+
+MERGE (o1:symptom {id: 'tiểu_gấp_symptom'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o1)-[r39:isSymptomOf]->(o2)
+SET r39.text = 'Người bị viêm bàng quang kẽ sẽ có những dấu hiệu lâm sàng rõ ràng với những cơn đau tức ở vùng chậu, xương mu, áp lực bàng quang cùng với tình trạng tiểu gấp.'
+
+MERGE (o1:symptom {id: 'cường_độ_của_các_cơn_đau_symptom'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o1)-[r40:isSymptomOf]->(o2)
+SET r40.text = 'Tùy vào tình trạng bệnh và sức khỏe của mỗi người mà cường độ của các cơn đau sẽ khác nhau.'
+
+MERGE (o1:symptom {id: 'các_triệu_chứng_symptom'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o1)-[r41:isSymptomOf]->(o2)
+SET r41.text = 'Đa số các triệu chứng không xuất hiện ngay từ ban đầu, nhưng chúng sẽ khiến bệnh trở nên trầm trọng hơn vì thành bàng quang liên tục bị tổn thương và không được điều trị.'
+
+MERGE (o1:symptom {id: 'tiểu_gấp_symptom'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o1)-[r42:isSymptomOf]->(o2)
+SET r42.text = 'Tiểu gấp là một trong những dấu hiệu lâm sàng phổ biến của viêm bàng quang kẽ.'
+
+MERGE (o1:symptom {id: 'cảm_giác_cần_đi_tiểu_ngay_khi_có_nhu_cầu_symptom'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o1)-[r43:isSymptomOf]->(o2)
+SET r43.text = 'Người bệnh sẽ có cảm giác cần đi tiểu ngay khi có nhu cầu.'
+
+MERGE (o1:symptom {id: 'khó_kiểm_soát_được_phản_xạ_đi_tiểu_symptom'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o1)-[r44:isSymptomOf]->(o2)
+SET r44.text = 'Nói cách khác, người bệnh bị tiểu gấp rất khó để kiểm soát được phản xạ đi tiểu.'
+
+MERGE (o1:symptom {id: 'tiểu_són_hoặc_tiểu_không_tự_chủ_symptom'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o1)-[r45:isSymptomOf]->(o2)
+SET r45.text = 'Đối với những người lớn tuổi hoặc trẻ con bị viêm bàng quang kẻ, tiểu gấp có thể dẫn đến tiểu són hoặc tiểu không tự chủ.'
+
+MERGE (o1:symptom {id: 'nhu_cầu_đi_tiểu_cao_hơn_bình_thường_symptom'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o1)-[r46:isSymptomOf]->(o2)
+SET r46.text = 'Khi mắc bệnh viêm bàng quang kẽ, người bệnh có nhu cầu đi tiểu cao hơn bình thường dù rằng người bệnh không hề uống nhiều nước.'
+
+MERGE (o1:symptom {id: 'tần_suất_đi_tiểu_hơn_10-20_lần_trong_một_ngày_symptom'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o1)-[r47:isSymptomOf]->(o2)
+SET r47.text = 'Tần suất đi tiểu trong một ngày của người bị viêm bàng quang kẽ có thể hơn 10-20 lần trong một ngày, trong khi số lần đi tiểu của người khỏe mạnh rơi vào tầm 4-7 lần một ngày.'
+
+MERGE (o1:symptom {id: 'căng_tức_bàng_quang_symptom'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o1)-[r48:isSymptomOf]->(o2)
+SET r48.text = 'Bên cạnh đó, người bị viêm bàng quang kẽ cũng sẽ luôn cảm thấy căng tức bàng quang.'
+
+MERGE (o1:symptom {id: 'cảm_giác_như_bàng_quang_đang_chứa_một_lượng_trước_tiểu_lớn_và_cần_đào_thải_ra_ngoài_mặc_dù_mới_tiểu_xong_symptom'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o1)-[r49:isSymptomOf]->(o2)
+SET r49.text = 'Thường xuyên có cảm giác như bàng quang đang chứa một lượng trước tiểu lớn và cần đào thải ra ngoài mặc dù mới tiểu xong.'
+
+MERGE (o1:symptom {id: 'cơn_co_thắt__cảm_giác_tức_nặng_ở_vùng_chậu__xương_mu_symptom'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o1)-[r50:isSymptomOf]->(o2)
+SET r50.text = 'Thành bàng quang bị viêm sưng là nguyên nhân gây ra những cơn co thắt, cảm giác tức nặng ở vùng chậu, xương mu.'
+
+MERGE (o1:symptom {id: 'cơn_đau_nghiêm_trọng_hơn_khi_người_bệnh_nhịn_tiểu_hoặc_bàng_quang_đang_đầy_symptom'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o1)-[r51:isSymptomOf]->(o2)
+SET r51.text = 'Cơn đau sẽ nghiêm trọng hơn khi người bệnh nhịn tiểu hoặc bàng quang đang đầy và giảm dần khi người bệnh đã đi tiểu hết nước trong bàng quang.'
+
+MERGE (o1:symptom {id: 'cơn_đau_giảm_dần_khi_người_bệnh_đã_đi_tiểu_hết_nước_trong_bàng_quang_symptom'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o1)-[r52:isSymptomOf]->(o2)
+SET r52.text = 'Cơn đau sẽ nghiêm trọng hơn khi người bệnh nhịn tiểu hoặc bàng quang đang đầy và giảm dần khi người bệnh đã đi tiểu hết nước trong bàng quang.'
+
+MERGE (o1:symptom {id: 'đau__nóng_rát_hoặc_châm_chích_khi_đi_tiểu_symptom'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o1)-[r53:isSymptomOf]->(o2)
+SET r53.text = 'Bên cạnh đó, người bệnh cũng sẽ có cảm giác đau, nóng rát hoặc châm chích khi đi tiểu.'
+
+MERGE (o1:symptom {id: 'cường_độ_của_những_cơn_đau_sẽ_tăng_khi_người_bệnh_quan_hệ_tình_dục__căng_thẳng_hoặc_gặp_các_vấn_đề_về_sức_khỏe_tâm_thần__trong_thời_kỳ_kinh_nguyệt_với_đối_tượng_là_phụ_nữ_symptom'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o1)-[r54:isSymptomOf]->(o2)
+SET r54.text = 'Cường độ của những cơn đau sẽ tăng khi người bệnh quan hệ tình dục, căng thẳng hoặc gặp các vấn đề về sức khỏe tâm thần, trong thời kỳ kinh nguyệt với đối tượng là phụ nữ.'
+
+MERGE (o1:symptom {id: 'những_cơn_đau_này_sẽ_không_kéo_dài_liên_tục_mà_sẽ_bùng_phát_ở_một_số_thời_điểm_nhất_định_symptom'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o1)-[r55:isSymptomOf]->(o2)
+SET r55.text = 'Thông thường, những cơn đau này sẽ không kéo dài liên tục mà sẽ bùng phát ở một số thời điểm nhất định.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o2:lifestyle {id: 'mọi_đối_tượng_thuộc_mọi_độ_tuổi_lifestyle'})
+MERGE (o1)-[r56:associatedWith]->(o2)
+SET r56.text = 'Theo thông tin của Trung tâm kiểm soát và phòng ngừa dịch bệnh CDC, viêm bàng quang kẽ là bệnh có thể xảy ra ở mọi đối tượng thuộc mọi độ tuổi.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o2:lifestyle {id: '5_1_người_mắc_bệnh_lifestyle'})
+MERGE (o1)-[r57:associatedWith]->(o2)
+SET r57.text = 'cũng cho biết, có cứ 100.000 người thì sẽ có 5,1 người mắc bệnh viêm bàng quang kẽ.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o2:lifestyle {id: 'độ_tuổi_20-40_tuổi_lifestyle'})
+MERGE (o1)-[r58:associatedWith]->(o2)
+SET r58.text = 'Bệnh xảy ra phổ biến nhất ở độ tuổi 20-40 tuổi.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o2:lifestyle {id: 'người_da_trắng_và_phụ_nữ_lifestyle'})
+MERGE (o1)-[r59:associatedWith]->(o2)
+SET r59.text = 'Người da trắng và phụ nữ được cho là nhóm dễ mắc viêm bàng quang kẽ hơn những người khác.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o2:organ {id: 'cấu_trúc_sinh_học_niệu_đạo_organ'})
+MERGE (o1)-[r60:associatedWith]->(o2)
+SET r60.text = 'Với phụ nữ, do cấu trúc sinh học niệu đạo khiến họ có nguy cơ mắc bệnh nhiều hơn nam giới với tỷ lệ là 9/1.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o2:symptom {id: 'dấu_hiệu_lâm_sàng_sớm_symptom'})
+MERGE (o1)-[r61:associatedWith]->(o2)
+SET r61.text = 'Tuy nhiên, bệnh viêm bàng quang kẽ ở phụ nữ cũng thường để lại những dấu hiệu lâm sàng sớm giúp họ có thể phát hiện và điều trị bệnh kịp thời.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o2:disease {id: 'biến_chứng_disease'})
+MERGE (o1)-[r62:associatedWith]->(o2)
+SET r62.text = 'Hạn chế được việc gặp biến chứng của bệnh.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o2:lifestyle {id: 'một_số_lưu_ý_lifestyle'})
+MERGE (o1)-[r63:preventedBy]->(o2)
+SET r63.text = 'Viện Y tế Quốc gia Hoa Kỳ NIDDK cũng đưa ra một số lưu ý giúp bạn hạn chế được nguy cơ mắc bệnh viêm bàng quang kẽ:'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o2:lifestyle {id: 'vệ_sinh_bộ_phận_sinh_dục_lifestyle'})
+MERGE (o1)-[r64:preventedBy]->(o2)
+SET r64.text = 'Chú ý vệ sinh bộ phận sinh dục để phòng ngừa nhiễm trùng đường tiết niệu'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o2:lifestyle {id: 'nhịn_tiểu_lifestyle'})
+MERGE (o1)-[r65:preventedBy]->(o2)
+SET r65.text = 'Hạn chế nhịn tiểu hoặc nhịn tiểu quá lâu'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o2:lifestyle {id: 'mặc_những_trang_phục__đồ_lót_quá_bó_lifestyle'})
+MERGE (o1)-[r66:preventedBy]->(o2)
+SET r66.text = 'Hạn chế mặc những trang phục, đồ lót quá bó'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o2:lifestyle {id: 'dung_dịch_vệ_sinh_và_nước_giặt_quần_áo_không_gây_hại_cho_sức_khỏe_lifestyle'})
+MERGE (o1)-[r67:preventedBy]->(o2)
+SET r67.text = 'Đảm bảo những thành phần có trong dung dịch vệ sinh và nước giặt quần áo không gây hại cho sức khỏe'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o2:lifestyle {id: 'uống_thuốc_tự_phát_lifestyle'})
+MERGE (o1)-[r68:preventedBy]->(o2)
+SET r68.text = 'Hạn chế uống thuốc tự phát, không theo chỉ định của bác sĩ.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o2:treatment {id: 'thuốc_giảm_đau__chống_trầm_cảm_và_tránh_thai_treatment'})
+MERGE (o1)-[r69:preventedBy]->(o2)
+SET r69.text = 'Đặc biệt là những thuốc giảm đau, chống trầm cảm và tránh thai'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o2:disease {id: 'biến_chứng_disease'})
+MERGE (o1)-[r70:associatedWith]->(o2)
+SET r70.text = 'Người bệnh viêm bàng quang kẽ nếu không phát hiện bệnh sớm và có những can thiệp điều trị kịp thời sẽ phải đối mặt với một số biến chứng của bệnh.'
+
+MERGE (o1:disease {id: 'biến_chứng_disease'})
+MERGE (o2:lifestyle {id: 'cuộc_sống_người_bệnh_lifestyle'})
+MERGE (o1)-[r71:affects]->(o2)
+SET r71.text = 'Các biến chứng tuy không trực tiếp ảnh hưởng đến tính mạng hay được xếp vào những loại bệnh nguy hiểm nhưng cũng gây ra những bất tiện đáng kể đối với cuộc sống người bệnh và làm suy giảm sức khỏe người bệnh.'
+
+MERGE (o1:disease {id: 'biến_chứng_disease'})
+MERGE (o2:lifestyle {id: 'sức_khỏe_người_bệnh_lifestyle'})
+MERGE (o1)-[r72:affects]->(o2)
+SET r72.text = 'Các biến chứng tuy không trực tiếp ảnh hưởng đến tính mạng hay được xếp vào những loại bệnh nguy hiểm nhưng cũng gây ra những bất tiện đáng kể đối với cuộc sống người bệnh và làm suy giảm sức khỏe người bệnh.'
+
+MERGE (o1:disease {id: 'biến_chứng_disease'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o1)-[r73:isSymptomOf]->(o2)
+SET r73.text = 'Những biến chứng tiềm ẩn của bệnh viêm bàng quang kẽ mà bạn cần lưu ý:'
+
+MERGE (o1:symptom {id: 'giảm_dung_tích_bàng_quang_symptom'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o1)-[r74:isSymptomOf]->(o2)
+SET r74.text = 'Giảm dung tích bàng quang: Viêm bàng quang kẽ có thể làm thành bàng quang dày và cứng hơn.'
+
+MERGE (o1:symptom {id: 'thành_bàng_quang_dày_và_cứng_hơn_symptom'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o1)-[r75:isSymptomOf]->(o2)
+SET r75.text = 'Giảm dung tích bàng quang: Viêm bàng quang kẽ có thể làm thành bàng quang dày và cứng hơn.'
+
+MERGE (o1:symptom {id: 'hạn_chế_số_lượng_nước_có_thể_chứa_trong_bàng_quang_symptom'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o1)-[r76:isSymptomOf]->(o2)
+SET r76.text = 'Dẫn đến việc hạn chế số lượng nước có thể chứa trong bàng quang.'
+
+MERGE (o1:symptom {id: 'giảm_chất_lượng_cuộc_sống_symptom'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o1)-[r77:isSymptomOf]->(o2)
+SET r77.text = 'Giảm chất lượng cuộc sống: Các cơn đau và tình trạng đi tiểu thường xuyên trở thành những tác nhân gây ra những cản trở trong sinh hoạt ngày thường, công việc của bạn.'
+
+MERGE (o1:symptom {id: 'cơn_đau_symptom'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o1)-[r78:isSymptomOf]->(o2)
+SET r78.text = 'Giảm chất lượng cuộc sống: Các cơn đau và tình trạng đi tiểu thường xuyên trở thành những tác nhân gây ra những cản trở trong sinh hoạt ngày thường, công việc của bạn.'
+
+MERGE (o1:symptom {id: 'tình_trạng_đi_tiểu_thường_xuyên_symptom'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o1)-[r79:isSymptomOf]->(o2)
+SET r79.text = 'Giảm chất lượng cuộc sống: Các cơn đau và tình trạng đi tiểu thường xuyên trở thành những tác nhân gây ra những cản trở trong sinh hoạt ngày thường, công việc của bạn.'
+
+MERGE (o1:symptom {id: 'cản_trở_trong_sinh_hoạt_ngày_thường__công_việc_symptom'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o1)-[r80:isSymptomOf]->(o2)
+SET r80.text = 'Giảm chất lượng cuộc sống: Các cơn đau và tình trạng đi tiểu thường xuyên trở thành những tác nhân gây ra những cản trở trong sinh hoạt ngày thường, công việc của bạn.'
+
+MERGE (o1:symptom {id: 'bất_tiện_trong_quan_hệ_tình_dục_symptom'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o1)-[r81:isSymptomOf]->(o2)
+SET r81.text = 'Bất tiện trong quan hệ tình dục: Những cơn đau ở vùng chậu, xương mu sẽ trầm trọng hơn khi quan hệ tình dục.'
+
+MERGE (o1:symptom {id: 'cơn_đau_ở_vùng_chậu__xương_mu_symptom'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o1)-[r82:isSymptomOf]->(o2)
+SET r82.text = 'Bất tiện trong quan hệ tình dục: Những cơn đau ở vùng chậu, xương mu sẽ trầm trọng hơn khi quan hệ tình dục.'
+
+MERGE (o1:symptom {id: 'ngại_quan_hệ_tình_dục__thậm_chí_giảm_nhu_cầu_về_việc_quan_hệ_tình_dục_symptom'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o1)-[r83:isSymptomOf]->(o2)
+SET r83.text = 'Điều này trở thành nguyên nhân khiến người bệnh ngại quan hệ tình dục, thậm chí giảm nhu cầu về việc quan hệ tình dục.'
+
+MERGE (o1:symptom {id: 'những_vấn_đề_về_sức_khỏe_tâm_thần_symptom'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o1)-[r84:isSymptomOf]->(o2)
+SET r84.text = 'Những vấn đề về sức khỏe tâm thần: Người bệnh có thể gặp tình trạng căng thẳng, khó kiểm soát được cảm xúc vì những cơn đau mạn tính và tình trạng mất ngủ do viêm bàng quang kẽ gây ra.'
+
+MERGE (o1:symptom {id: 'căng_thẳng__khó_kiểm_soát_được_cảm_xúc_symptom'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o1)-[r85:isSymptomOf]->(o2)
+SET r85.text = 'Những vấn đề về sức khỏe tâm thần: Người bệnh có thể gặp tình trạng căng thẳng, khó kiểm soát được cảm xúc vì những cơn đau mạn tính và tình trạng mất ngủ do viêm bàng quang kẽ gây ra.'
+
+MERGE (o1:symptom {id: 'mất_ngủ_symptom'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o1)-[r86:isSymptomOf]->(o2)
+SET r86.text = 'Những vấn đề về sức khỏe tâm thần: Người bệnh có thể gặp tình trạng căng thẳng, khó kiểm soát được cảm xúc vì những cơn đau mạn tính và tình trạng mất ngủ do viêm bàng quang kẽ gây ra.'
+
+MERGE (o1:disease {id: 'bệnh_trầm_cảm_disease'})
+MERGE (o2:symptom {id: 'căng_thẳng_và_rối_loạn_cảm_xúc_kéo_dài_symptom'})
+MERGE (o1)-[r87:associatedWith]->(o2)
+SET r87.text = 'Một số trường hợp, người có khả năng đối mặt với bệnh trầm cảm nếu tình trạng căng thẳng và rối loạn cảm xúc kéo dài.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o2:organ {id: 'thành_bàng_quang_organ'})
+MERGE (o1)-[r88:affects]->(o2)
+SET r88.text = 'Giảm dung tích bàng quang: Viêm bàng quang kẽ có thể làm thành bàng quang dày và cứng hơn.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o2:organ {id: 'dung_tích_bàng_quang_organ'})
+MERGE (o1)-[r89:affects]->(o2)
+SET r89.text = 'Giảm dung tích bàng quang: Viêm bàng quang kẽ có thể làm thành bàng quang dày và cứng hơn.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o2:organ {id: 'bàng_quang_organ'})
+MERGE (o1)-[r90:affects]->(o2)
+SET r90.text = 'Dẫn đến việc hạn chế số lượng nước có thể chứa trong bàng quang.'
+
+MERGE (o1:lifestyle {id: 'quan_hệ_tình_dục_lifestyle'})
+MERGE (o2:symptom {id: 'cơn_đau_ở_vùng_chậu__xương_mu_symptom'})
+MERGE (o1)-[r91:aggravatedBy]->(o2)
+SET r91.text = 'Bất tiện trong quan hệ tình dục: Những cơn đau ở vùng chậu, xương mu sẽ trầm trọng hơn khi quan hệ tình dục.'
+
+MERGE (o1:lifestyle {id: 'quan_hệ_tình_dục_lifestyle'})
+MERGE (o2:symptom {id: 'cường_độ_của_những_cơn_đau_symptom'})
+MERGE (o1)-[r92:aggravatedBy]->(o2)
+SET r92.text = 'Cường độ của những cơn đau sẽ tăng khi người bệnh quan hệ tình dục, căng thẳng hoặc gặp các vấn đề về sức khỏe tâm thần, trong thời kỳ kinh nguyệt với đối tượng là phụ nữ.'
+
+MERGE (o1:lifestyle {id: 'căng_thẳng_lifestyle'})
+MERGE (o2:symptom {id: 'cường_độ_của_những_cơn_đau_symptom'})
+MERGE (o1)-[r93:aggravatedBy]->(o2)
+SET r93.text = 'Cường độ của những cơn đau sẽ tăng khi người bệnh quan hệ tình dục, căng thẳng hoặc gặp các vấn đề về sức khỏe tâm thần, trong thời kỳ kinh nguyệt với đối tượng là phụ nữ.'
+
+MERGE (o1:lifestyle {id: 'các_vấn_đề_về_sức_khỏe_tâm_thần_lifestyle'})
+MERGE (o2:symptom {id: 'cường_độ_của_những_cơn_đau_symptom'})
+MERGE (o1)-[r94:aggravatedBy]->(o2)
+SET r94.text = 'Cường độ của những cơn đau sẽ tăng khi người bệnh quan hệ tình dục, căng thẳng hoặc gặp các vấn đề về sức khỏe tâm thần, trong thời kỳ kinh nguyệt với đối tượng là phụ nữ.'
+
+MERGE (o1:lifestyle {id: 'thời_kỳ_kinh_nguyệt_lifestyle'})
+MERGE (o2:symptom {id: 'cường_độ_của_những_cơn_đau_symptom'})
+MERGE (o1)-[r95:aggravatedBy]->(o2)
+SET r95.text = 'Cường độ của những cơn đau sẽ tăng khi người bệnh quan hệ tình dục, căng thẳng hoặc gặp các vấn đề về sức khỏe tâm thần, trong thời kỳ kinh nguyệt với đối tượng là phụ nữ.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o2:symptom {id: 'căng_thẳng__khó_kiểm_soát_được_cảm_xúc_symptom'})
+MERGE (o1)-[r96:causes]->(o2)
+SET r96.text = 'Những vấn đề về sức khỏe tâm thần: Người bệnh có thể gặp tình trạng căng thẳng, khó kiểm soát được cảm xúc vì những cơn đau mạn tính và tình trạng mất ngủ do viêm bàng quang kẽ gây ra.'
+
+MERGE (o1:disease {id: 'chẩn_đoán_viêm_bàng_quang_kẽ_disease'})
+MERGE (o2:test {id: 'đánh_giá_lâm_sàng_và_chẩn_đoán_cận_lâm_sàng_test'})
+MERGE (o1)-[r97:diagnosedBy]->(o2)
+SET r97.text = 'Chẩn đoán viêm bàng quang kẽ thông thường gồm hai bước chính gồm đánh giá lâm sàng và chẩn đoán cận lâm sàng.'
+
+MERGE (o1:test {id: 'đánh_giá_lâm_sàng_test'})
+MERGE (o2:symptom {id: 'tình_trạng_sức_khỏe_symptom'})
+MERGE (o1)-[r98:relatedTo]->(o2)
+SET r98.text = 'Đánh giá lâm sàng là hoạt động bác sĩ sẽ thu thập và xem tình trạng sức khỏe cũng như bệnh sử của người bệnh.'
+
+MERGE (o1:test {id: 'đánh_giá_lâm_sàng_test'})
+MERGE (o2:symptom {id: 'bệnh_sử_symptom'})
+MERGE (o1)-[r99:relatedTo]->(o2)
+SET r99.text = 'Đánh giá lâm sàng là hoạt động bác sĩ sẽ thu thập và xem tình trạng sức khỏe cũng như bệnh sử của người bệnh.'
+
+MERGE (o1:symptom {id: 'triệu_chứng_symptom'})
+MERGE (o2:disease {id: 'vấn_đề_sức_khỏe_tiết_niệu_disease'})
+MERGE (o1)-[r100:isSymptomOf]->(o2)
+SET r100.text = 'Kết hợp với những triệu chứng mà người bệnh đang có hiện tại có một đánh giá tổng cũng như tiên lượng về những vấn đề sức khỏe tiết niệu có thể mắc phải.'
+
+MERGE (o1:test {id: 'phương_pháp_chẩn_đoán_cận_lâm_sàng_test'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o1)-[r101:diagnosedBy]->(o2)
+SET r101.text = 'Từ đó đưa ra phương pháp chẩn đoán cận lâm sàng phù hợp.'
+
+MERGE (o1:test {id: 'phương_pháp_chẩn_đoán_cận_lâm_sàng_test'})
+MERGE (o2:organ {id: 'niệu_đạo_organ'})
+MERGE (o1)-[r102:affects]->(o2)
+SET r102.text = 'Phương pháp chẩn đoán cận lâm sàng giúp bác sĩ xem xét được trạng thái bên trong niệu đạo và bàng quang của người bệnh.'
+
+MERGE (o1:test {id: 'phương_pháp_chẩn_đoán_cận_lâm_sàng_test'})
+MERGE (o2:organ {id: 'bàng_quang_organ'})
+MERGE (o1)-[r103:affects]->(o2)
+SET r103.text = 'Phương pháp chẩn đoán cận lâm sàng giúp bác sĩ xem xét được trạng thái bên trong niệu đạo và bàng quang của người bệnh.'
+
+MERGE (o1:test {id: 'sinh_thiết_mẫu_mô_test'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o1)-[r104:diagnosedBy]->(o2)
+SET r104.text = 'Trong trường hợp cần thiết, bác sĩ cũng có thể sinh thiết mẫu mô bên trong bàng quang để có được kết quả chẩn đoán chính xác.'
+
+MERGE (o1:test {id: 'xét_nghiệm_test'})
+MERGE (o2:disease {id: 'nhiễm_trùng_đường_tiết_niệu_disease'})
+MERGE (o1)-[r105:diagnosedBy]->(o2)
+SET r105.text = 'Đầu tiên, bác sĩ sẽ xét nghiệm và loại trừ những bệnh liên quan đến nhiễm trùng đường tiết niệu và ung thư bàng quang.'
+
+MERGE (o1:test {id: 'xét_nghiệm_test'})
+MERGE (o2:disease {id: 'ung_thư_bàng_quang_disease'})
+MERGE (o1)-[r106:diagnosedBy]->(o2)
+SET r106.text = 'Đầu tiên, bác sĩ sẽ xét nghiệm và loại trừ những bệnh liên quan đến nhiễm trùng đường tiết niệu và ung thư bàng quang.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o2:test {id: 'xét_nghiệm_test'})
+MERGE (o1)-[r107:diagnosedBy]->(o2)
+SET r107.text = 'Trường hợp các kết quả đều bình thường, bác sĩ mới tiến hành thực hiện chẩn đoán viêm bàng quang kẽ.'
+
+MERGE (o1:test {id: 'xét_nghiệm_nước_tiểu_test'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o1)-[r108:diagnosedBy]->(o2)
+SET r108.text = 'Hai phương pháp chẩn đoán cận lâm sàng với bệnh viêm bàng quang kẽ gồm:  Xét nghiệm nước tiểu: Bác sĩ sẽ kiểm tra chỉ số tế bào máu trắng, hồng cầu và vi khuẩn có trong nước tiểu của người bệnh.'
+
+MERGE (o1:test {id: 'mẫu_nước_tiểu_sạch_test'})
+MERGE (o2:test {id: 'xét_nghiệm_nước_tiểu_test'})
+MERGE (o1)-[r109:relatedTo]->(o2)
+SET r109.text = 'Để kết quả xét nghiệm được chính xác, người bệnh cần lấy được mẫu nước tiểu sạch, giữa dòng để đạt chuẩn xét nghiệm.'
+
+MERGE (o1:test {id: 'nội_soi_bàng_quang_test'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o1)-[r110:diagnosedBy]->(o2)
+SET r110.text = 'Nội soi bàng quang: Bác sĩ đánh giá tình trạng tổn thương và viêm nhiễm của bàng quang thông qua hình ảnh khi thực hiện nội soi bàng quang.'
+
+MERGE (o1:test {id: 'nội_soi_bàng_quang_test'})
+MERGE (o2:organ {id: 'bàng_quang_organ'})
+MERGE (o1)-[r111:affects]->(o2)
+SET r111.text = 'Ở phương pháp này, người bệnh được đặt một ống soi chuyên dụng có gắn máy ảnh vào trong ngã niệu đạo, từ đó đi đến vị trí bàng quang và thăm dò tình trạng của bàng quang gồm các vết loét, độ dày của thành bàng quang, dấu hiệu ung thư, nhiễm trùng.'
+
+MERGE (o1:test {id: 'nội_soi_bàng_quang_test'})
+MERGE (o2:organ {id: 'niệu_đạo_organ'})
+MERGE (o1)-[r112:affects]->(o2)
+SET r112.text = 'Ở phương pháp này, người bệnh được đặt một ống soi chuyên dụng có gắn máy ảnh vào trong ngã niệu đạo, từ đó đi đến vị trí bàng quang và thăm dò tình trạng của bàng quang gồm các vết loét, độ dày của thành bàng quang, dấu hiệu ung thư, nhiễm trùng.'
+
+MERGE (o1:test {id: 'nội_soi_bàng_quang_test'})
+MERGE (o2:symptom {id: 'vết_loét_symptom'})
+MERGE (o1)-[r113:relatedTo]->(o2)
+SET r113.text = 'Ở phương pháp này, người bệnh được đặt một ống soi chuyên dụng có gắn máy ảnh vào trong ngã niệu đạo, từ đó đi đến vị trí bàng quang và thăm dò tình trạng của bàng quang gồm các vết loét, độ dày của thành bàng quang, dấu hiệu ung thư, nhiễm trùng.'
+
+MERGE (o1:test {id: 'nội_soi_bàng_quang_test'})
+MERGE (o2:symptom {id: 'độ_dày_của_thành_bàng_quang_symptom'})
+MERGE (o1)-[r114:relatedTo]->(o2)
+SET r114.text = 'Ở phương pháp này, người bệnh được đặt một ống soi chuyên dụng có gắn máy ảnh vào trong ngã niệu đạo, từ đó đi đến vị trí bàng quang và thăm dò tình trạng của bàng quang gồm các vết loét, độ dày của thành bàng quang, dấu hiệu ung thư, nhiễm trùng.'
+
+MERGE (o1:test {id: 'nội_soi_bàng_quang_test'})
+MERGE (o2:symptom {id: 'dấu_hiệu_ung_thư_symptom'})
+MERGE (o1)-[r115:relatedTo]->(o2)
+SET r115.text = 'Ở phương pháp này, người bệnh được đặt một ống soi chuyên dụng có gắn máy ảnh vào trong ngã niệu đạo, từ đó đi đến vị trí bàng quang và thăm dò tình trạng của bàng quang gồm các vết loét, độ dày của thành bàng quang, dấu hiệu ung thư, nhiễm trùng.'
+
+MERGE (o1:test {id: 'nội_soi_bàng_quang_test'})
+MERGE (o2:symptom {id: 'nhiễm_trùng_symptom'})
+MERGE (o1)-[r116:relatedTo]->(o2)
+SET r116.text = 'Ở phương pháp này, người bệnh được đặt một ống soi chuyên dụng có gắn máy ảnh vào trong ngã niệu đạo, từ đó đi đến vị trí bàng quang và thăm dò tình trạng của bàng quang gồm các vết loét, độ dày của thành bàng quang, dấu hiệu ung thư, nhiễm trùng.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o2:treatment {id: 'thuốc_tây_y_treatment'})
+MERGE (o1)-[r117:treatedBy]->(o2)
+SET r117.text = 'Phương pháp điều trị viêm bàng quang kẽ bằng thuốc tây y nhằm mục đích cải thiện lớp bảo vệ bàng quang và giảm đau cho người bệnh.'
+
+MERGE (o1:treatment {id: 'thuốc_tây_y_treatment'})
+MERGE (o2:organ {id: 'lớp_bảo_vệ_bàng_quang_organ'})
+MERGE (o1)-[r118:affects]->(o2)
+SET r118.text = 'Phương pháp điều trị viêm bàng quang kẽ bằng thuốc tây y nhằm mục đích cải thiện lớp bảo vệ bàng quang và giảm đau cho người bệnh.'
+
+MERGE (o1:treatment {id: 'thuốc_tây_y_treatment'})
+MERGE (o2:symptom {id: 'đau_symptom'})
+MERGE (o1)-[r119:affects]->(o2)
+SET r119.text = 'Phương pháp điều trị viêm bàng quang kẽ bằng thuốc tây y nhằm mục đích cải thiện lớp bảo vệ bàng quang và giảm đau cho người bệnh.'
+
+MERGE (o1:symptom {id: 'triệu_chứng_symptom'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o1)-[r120:relatedTo]->(o2)
+SET r120.text = 'Tùy theo triệu chứng và cường độ cơn đau của từng người mà bác sĩ sẽ chỉ định những loại thuốc điều trị phù hợp.'
+
+MERGE (o1:symptom {id: 'cơn_đau_symptom'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o1)-[r121:relatedTo]->(o2)
+SET r121.text = 'Tùy theo triệu chứng và cường độ cơn đau của từng người mà bác sĩ sẽ chỉ định những loại thuốc điều trị phù hợp.'
+
+MERGE (o1:treatment {id: 'pentosan_polysulfate_natri_treatment'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o1)-[r122:treatedBy]->(o2)
+SET r122.text = 'Một số loại thuốc điều trị viêm bàng quang kẽ phổ biến gồm:  Pentosan polysulfate natri: Giúp khôi phục lớp bảo vệ bàng quang.'
+
+MERGE (o1:treatment {id: 'pentosan_polysulfate_natri_treatment'})
+MERGE (o2:organ {id: 'lớp_bảo_vệ_bàng_quang_organ'})
+MERGE (o1)-[r123:affects]->(o2)
+SET r123.text = 'Pentosan polysulfate natri: Giúp khôi phục lớp bảo vệ bàng quang.'
+
+MERGE (o1:treatment {id: 'thuốc_chống_trầm_cảm_ba_vòng_treatment'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o1)-[r124:treatedBy]->(o2)
+SET r124.text = 'Thuốc chống trầm cảm ba vòng: Giúp làm giảm các cơn đau khi bùng phát'
+
+MERGE (o1:treatment {id: 'thuốc_chống_trầm_cảm_ba_vòng_treatment'})
+MERGE (o2:symptom {id: 'cơn_đau_symptom'})
+MERGE (o1)-[r125:affects]->(o2)
+SET r125.text = 'Thuốc chống trầm cảm ba vòng: Giúp làm giảm các cơn đau khi bùng phát'
+
+MERGE (o1:treatment {id: 'thuốc_nsaids_treatment'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o1)-[r126:treatedBy]->(o2)
+SET r126.text = 'Thuốc NSAIDs: Giúp làm giảm các cơn đau.'
+
+MERGE (o1:treatment {id: 'thuốc_nsaids_treatment'})
+MERGE (o2:symptom {id: 'cơn_đau_symptom'})
+MERGE (o1)-[r127:affects]->(o2)
+SET r127.text = 'Thuốc NSAIDs: Giúp làm giảm các cơn đau.'
+
+MERGE (o1:organ {id: 'dạ_dày_organ'})
+MERGE (o2:symptom {id: 'tác_dụng_phụ_của_thuốc_symptom'})
+MERGE (o1)-[r128:affectedBy]->(o2)
+SET r128.text = 'Tuy nhiên, bạn cần sử dụng thuốc theo đúng chỉ định của bác sĩ để tránh cho dạ dày bị ảnh hưởng xấu bởi tác dụng phụ của thuốc'
+
+MERGE (o1:treatment {id: 'thuốc_kháng_histamine_treatment'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o1)-[r129:treatedBy]->(o2)
+SET r129.text = 'Thuốc kháng Histamine: Dùng để ức chế trực tiếp tế bào bạch cầu ưa kiềm hoặc ngăn ngừa các phản ứng dị ứng'
+
+MERGE (o1:treatment {id: 'thuốc_kháng_histamine_treatment'})
+MERGE (o2:organ {id: 'tế_bào_bạch_cầu_ưa_kiềm_organ'})
+MERGE (o1)-[r130:affects]->(o2)
+SET r130.text = 'Thuốc kháng Histamine: Dùng để ức chế trực tiếp tế bào bạch cầu ưa kiềm hoặc ngăn ngừa các phản ứng dị ứng'
+
+MERGE (o1:treatment {id: 'thuốc_kháng_histamine_treatment'})
+MERGE (o2:symptom {id: 'phản_ứng_dị_ứng_symptom'})
+MERGE (o1)-[r131:affects]->(o2)
+SET r131.text = 'Thuốc kháng Histamine: Dùng để ức chế trực tiếp tế bào bạch cầu ưa kiềm hoặc ngăn ngừa các phản ứng dị ứng'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o2:treatment {id: 'phương_pháp_điều_trị_ngoại_khoa_treatment'})
+MERGE (o1)-[r132:treatedBy]->(o2)
+SET r132.text = 'Ở một số trường hợp cần thiết, bác sĩ sẽ chỉ định người bệnh điều trị viêm bàng quang kẽ bằng phương pháp điều trị ngoại khoa.'
+
+MERGE (o1:symptom {id: 'cơn_đau_cường_độ_lớn_symptom'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o1)-[r133:relatedTo]->(o2)
+SET r133.text = 'Thường được áp dụng cho những người có cơn đau cường độ lớn và người bệnh không dung nạp được các phương pháp điều trị khác.'
+
+MERGE (o1:symptom {id: 'không_dung_nạp_được_các_phương_pháp_điều_trị_khác_symptom'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o1)-[r134:relatedTo]->(o2)
+SET r134.text = 'Thường được áp dụng cho những người có cơn đau cường độ lớn và người bệnh không dung nạp được các phương pháp điều trị khác.'
+
+MERGE (o1:treatment {id: 'phương_pháp_điều_trị_ngoại_khoa_treatment'})
+MERGE (o2:symptom {id: 'thể_trạng_symptom'})
+MERGE (o1)-[r135:relatedTo]->(o2)
+SET r135.text = 'Sự thành công của phương pháp điều trị ngoại khoa phụ thuộc lớn vào thể trạng và tình trạng bàng quang của người bệnh.'
+
+MERGE (o1:treatment {id: 'phương_pháp_điều_trị_ngoại_khoa_treatment'})
+MERGE (o2:symptom {id: 'tình_trạng_bàng_quang_symptom'})
+MERGE (o1)-[r136:relatedTo]->(o2)
+SET r136.text = 'Sự thành công của phương pháp điều trị ngoại khoa phụ thuộc lớn vào thể trạng và tình trạng bàng quang của người bệnh.'
+
+MERGE (o1:symptom {id: 'triệu_chứng_bệnh_symptom'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o1)-[r137:relatedTo]->(o2)
+SET r137.text = 'Có một số ca sau phẫu thuật vẫn còn xuất hiện triệu chứng bệnh, nhưng vẫn có trường hợp người bệnh có sự cải thiện tích cực rõ rệt sau phẫu thuật.'
+
+MERGE (o1:symptom {id: 'cải_thiện_tích_cực_symptom'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o1)-[r138:relatedTo]->(o2)
+SET r138.text = 'Có một số ca sau phẫu thuật vẫn còn xuất hiện triệu chứng bệnh, nhưng vẫn có trường hợp người bệnh có sự cải thiện tích cực rõ rệt sau phẫu thuật.'
+
+MERGE (o1:treatment {id: 'giãn_bàng_quang_bằng_nước_muối_sinh_lý_treatment'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o1)-[r139:treatedBy]->(o2)
+SET r139.text = 'Một số phương thức điều trị ngoại khoa với người viêm bàng quang kẽ gồm:  Giãn bàng quang bằng nước muối sinh lý'
+
+MERGE (o1:treatment {id: 'cắt_bàng_quang_bán_phần_treatment'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o1)-[r140:treatedBy]->(o2)
+SET r140.text = 'Cắt bàng quang bán phần'
+
+MERGE (o1:treatment {id: 'mở_rộng_thể_tích_bàng_quang_treatment'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o1)-[r141:treatedBy]->(o2)
+SET r141.text = 'Mở rộng thể tích bàng quang'
+
+MERGE (o1:treatment {id: 'tạo_hình_bàng_quang_treatment'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o1)-[r142:treatedBy]->(o2)
+SET r142.text = 'Tạo hình bàng quang'
+
+MERGE (o1:treatment {id: 'chuyển_dòng_nước_tiểu_treatment'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o1)-[r143:treatedBy]->(o2)
+SET r143.text = 'Chuyển dòng nước tiểu'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o2:disease {id: 'bệnh_mạn_tính_disease'})
+MERGE (o1)-[r144:relatedTo]->(o2)
+SET r144.text = 'Viêm bàng quang kẽ được xem là một loại bệnh mạn tính, người bệnh tuy rất khó có thể khỏi bệnh hoàn toàn nhưng vẫn có thể kiểm soát và cải thiện bệnh để làm nhẹ đi những triệu chứng, ổn định sức khỏe tiết niệu.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o2:symptom {id: 'triệu_chứng_symptom'})
+MERGE (o1)-[r145:relatedTo]->(o2)
+SET r145.text = 'Viêm bàng quang kẽ được xem là một loại bệnh mạn tính, người bệnh tuy rất khó có thể khỏi bệnh hoàn toàn nhưng vẫn có thể kiểm soát và cải thiện bệnh để làm nhẹ đi những triệu chứng, ổn định sức khỏe tiết niệu.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o2:symptom {id: 'sức_khỏe_tiết_niệu_symptom'})
+MERGE (o1)-[r146:relatedTo]->(o2)
+SET r146.text = 'Viêm bàng quang kẽ được xem là một loại bệnh mạn tính, người bệnh tuy rất khó có thể khỏi bệnh hoàn toàn nhưng vẫn có thể kiểm soát và cải thiện bệnh để làm nhẹ đi những triệu chứng, ổn định sức khỏe tiết niệu.'
+
+MERGE (o1:lifestyle {id: 'lối_sống_lành_mạnh_lifestyle'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o1)-[r147:treatedBy]->(o2)
+SET r147.text = 'Thay đổi lối sống lành mạnh là một phương pháp hàng đầu giúp bạn kiểm soát và cải thiện bệnh tốt sau khi tiếp nhận điều trị.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o2:treatment {id: 'phương_pháp_này_treatment'})
+MERGE (o1)-[r148:treatedBy]->(o2)
+SET r148.text = 'Bên cạnh đó, đối với những người bệnh đang điều trị viêm bàng quang kẽ, bạn cũng cần kết hợp phương pháp này để tối ưu hóa kết quả sau khi điều trị bệnh.'
+
+MERGE (o1:lifestyle {id: 'uống_đủ_nước_lifestyle'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o1)-[r149:treatedBy]->(o2)
+SET r149.text = 'Một số hoạt động thường thức mà bạn cần lưu ý để cải thiện bệnh viêm bàng quang kẽ:  Uống đủ nước'
+
+MERGE (o1:food {id: 'thực_phẩm_có_kali_cao_food'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o1)-[r150:aggravatedBy]->(o2)
+SET r150.text = 'Hạn chế ăn những thực phẩm có kali cao như caffeine, sô cô la, cà chua'
+
+MERGE (o1:food {id: 'caffeine_food'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o1)-[r151:aggravatedBy]->(o2)
+SET r151.text = 'Hạn chế ăn những thực phẩm có kali cao như caffeine, sô cô la, cà chua'
+
+MERGE (o1:food {id: 'sô_cô_la_food'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o1)-[r152:aggravatedBy]->(o2)
+SET r152.text = 'Hạn chế ăn những thực phẩm có kali cao như caffeine, sô cô la, cà chua'
+
+MERGE (o1:food {id: 'cà_chua_food'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o1)-[r153:aggravatedBy]->(o2)
+SET r153.text = 'Hạn chế ăn những thực phẩm có kali cao như caffeine, sô cô la, cà chua'
+
+MERGE (o1:lifestyle {id: 'hút_thuốc_lifestyle'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o1)-[r154:aggravatedBy]->(o2)
+SET r154.text = 'Hạn chế hoặc ngưng hút thuốc'
+
+MERGE (o1:lifestyle {id: 'tập_thể_dục_lifestyle'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o1)-[r155:treatedBy]->(o2)
+SET r155.text = 'Tập thể dục hoặc vật lý trị liệu dành riêng cho người viêm bàng quang kẽ'
+
+MERGE (o1:treatment {id: 'vật_lý_trị_liệu_treatment'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o1)-[r156:treatedBy]->(o2)
+SET r156.text = 'Tập thể dục hoặc vật lý trị liệu dành riêng cho người viêm bàng quang kẽ'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o2:symptom {id: 'cơn_đau_ở_vùng_chậu_symptom'})
+MERGE (o1)-[r157:isSymptomOf]->(o2)
+SET r157.text = 'Viêm bàng quang kẽ là bệnh mạn tính gây ra những cơn đau ở vùng chậu, căng tức bàng quang.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o2:symptom {id: 'căng_tức_bàng_quang_symptom'})
+MERGE (o1)-[r158:isSymptomOf]->(o2)
+SET r158.text = 'Viêm bàng quang kẽ là bệnh mạn tính gây ra những cơn đau ở vùng chậu, căng tức bàng quang.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_disease'})
+MERGE (o2:symptom {id: 'tiểu_gấp_symptom'})
+MERGE (o1)-[r159:isSymptomOf]->(o2)
+SET r159.text = 'Không chỉ những cơn đau vật lý, Bệnh còn gây bất tiện trong sinh hoạt hằng ngày khi người bị viêm bàng quang có các triệu chứng tiểu gấp, tiểu dắt, són tiểu.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_disease'})
+MERGE (o2:symptom {id: 'tiểu_dắt_symptom'})
+MERGE (o1)-[r160:isSymptomOf]->(o2)
+SET r160.text = 'Không chỉ những cơn đau vật lý, Bệnh còn gây bất tiện trong sinh hoạt hằng ngày khi người bị viêm bàng quang có các triệu chứng tiểu gấp, tiểu dắt, són tiểu.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_disease'})
+MERGE (o2:symptom {id: 'són_tiểu_symptom'})
+MERGE (o1)-[r161:isSymptomOf]->(o2)
+SET r161.text = 'Không chỉ những cơn đau vật lý, Bệnh còn gây bất tiện trong sinh hoạt hằng ngày khi người bị viêm bàng quang có các triệu chứng tiểu gấp, tiểu dắt, són tiểu.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o2:lifestyle {id: 'hiểu_rõ_viêm_bàng_quang_kẽ_là_gì_lifestyle'})
+MERGE (o1)-[r162:preventedBy]->(o2)
+SET r162.text = 'Để phòng ngừa hiệu quả viêm bàng quang kẽ, bạn cần hiểu rõ viêm bàng quang kẽ là gì, nguyên nhân gây bệnh cũng như phương pháp điều trị.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o2:cause {id: 'nguyên_nhân_gây_bệnh_cause'})
+MERGE (o1)-[r163:preventedBy]->(o2)
+SET r163.text = 'Để phòng ngừa hiệu quả viêm bàng quang kẽ, bạn cần hiểu rõ viêm bàng quang kẽ là gì, nguyên nhân gây bệnh cũng như phương pháp điều trị.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_kẽ_disease'})
+MERGE (o2:treatment {id: 'phương_pháp_điều_trị_treatment'})
+MERGE (o1)-[r164:preventedBy]->(o2)
+SET r164.text = 'Để phòng ngừa hiệu quả viêm bàng quang kẽ, bạn cần hiểu rõ viêm bàng quang kẽ là gì, nguyên nhân gây bệnh cũng như phương pháp điều trị.'
+
+MERGE (o1:organ {id: 'trung_tâm_tiết_niệu_thận_học_organ'})
+MERGE (o2:organ {id: 'hệ_thống_bvđk_tâm_anh_organ'})
+MERGE (o1)-[r165:locatedIn]->(o2)
+SET r165.text = 'Trung tâm Tiết niệu Thận học, Khoa Nam học của Hệ thống BVĐK Tâm Anh quy tụ đội ngũ các chuyên gia đầu ngành, Nội khoa và Ngoại khoa, giỏi chuyên môn, tận tâm.'
+
+MERGE (o1:organ {id: 'khoa_nam_học_organ'})
+MERGE (o2:organ {id: 'hệ_thống_bvđk_tâm_anh_organ'})
+MERGE (o1)-[r166:locatedIn]->(o2)
+SET r166.text = 'Trung tâm Tiết niệu Thận học, Khoa Nam học của Hệ thống BVĐK Tâm Anh quy tụ đội ngũ các chuyên gia đầu ngành, Nội khoa và Ngoại khoa, giỏi chuyên môn, tận tâm.'
+
+MERGE (o1:organ {id: 'chuyên_gia_organ'})
+MERGE (o2:organ {id: 'trung_tâm_tiết_niệu_thận_học_organ'})
+MERGE (o1)-[r167:relatedTo]->(o2)
+SET r167.text = 'Các chuyên gia, bác sĩ của Trung tâm luôn tự tin làm chủ những kỹ thuật mới nhất, phát hiện sớm và điều trị hiệu quả các bệnh lý về thận và đường tiết niệu, giúp người bệnh rút ngắn thời gian nằm viện, hạn chế nguy cơ tái phát, nâng cao chất lượng cuộc sống.'
+
+MERGE (o1:organ {id: 'bác_sĩ_organ'})
+MERGE (o2:organ {id: 'trung_tâm_tiết_niệu_thận_học_organ'})
+MERGE (o1)-[r168:relatedTo]->(o2)
+SET r168.text = 'Các chuyên gia, bác sĩ của Trung tâm luôn tự tin làm chủ những kỹ thuật mới nhất, phát hiện sớm và điều trị hiệu quả các bệnh lý về thận và đường tiết niệu, giúp người bệnh rút ngắn thời gian nằm viện, hạn chế nguy cơ tái phát, nâng cao chất lượng cuộc sống.'
+
+MERGE (o1:treatment {id: 'kỹ_thuật_mới_nhất_treatment'})
+MERGE (o2:disease {id: 'bệnh_lý_về_thận_và_đường_tiết_niệu_disease'})
+MERGE (o1)-[r169:treatedBy]->(o2)
+SET r169.text = 'Các chuyên gia, bác sĩ của Trung tâm luôn tự tin làm chủ những kỹ thuật mới nhất, phát hiện sớm và điều trị hiệu quả các bệnh lý về thận và đường tiết niệu, giúp người bệnh rút ngắn thời gian nằm viện, hạn chế nguy cơ tái phát, nâng cao chất lượng cuộc sống.'
+
+MERGE (o1:disease {id: 'bệnh_lý_về_thận_và_đường_tiết_niệu_disease'})
+MERGE (o2:treatment {id: 'kỹ_thuật_mới_nhất_treatment'})
+MERGE (o1)-[r170:treatedBy]->(o2)
+SET r170.text = 'Các chuyên gia, bác sĩ của Trung tâm luôn tự tin làm chủ những kỹ thuật mới nhất, phát hiện sớm và điều trị hiệu quả các bệnh lý về thận và đường tiết niệu, giúp người bệnh rút ngắn thời gian nằm viện, hạn chế nguy cơ tái phát, nâng cao chất lượng cuộc sống.'
+
+MERGE (o1:organ {id: 'trung_tâm_tiết_niệu_thận_học_organ'})
+MERGE (o2:treatment {id: 'dịch_vụ_thăm_khám_treatment'})
+MERGE (o1)-[r171:relatedTo]->(o2)
+SET r171.text = 'Với hệ thống máy móc, trang thiết bị hiện đại hàng đầu trong nước và khu vực; Phòng mổ đạt tiêu chuẩn quốc tế; Cùng với khu nội trú và dịch vụ cao cấp 5 sao… Trung tâm Tiết niệu Thận học nổi bật với các dịch vụ thăm khám, tầm soát và điều trị tất cả các bệnh lý đường tiết niệu.'
+
+MERGE (o1:organ {id: 'trung_tâm_tiết_niệu_thận_học_organ'})
+MERGE (o2:treatment {id: 'tầm_soát_treatment'})
+MERGE (o1)-[r172:relatedTo]->(o2)
+SET r172.text = 'Với hệ thống máy móc, trang thiết bị hiện đại hàng đầu trong nước và khu vực; Phòng mổ đạt tiêu chuẩn quốc tế; Cùng với khu nội trú và dịch vụ cao cấp 5 sao… Trung tâm Tiết niệu Thận học nổi bật với các dịch vụ thăm khám, tầm soát và điều trị tất cả các bệnh lý đường tiết niệu.'
+
+MERGE (o1:organ {id: 'trung_tâm_tiết_niệu_thận_học_organ'})
+MERGE (o2:treatment {id: 'điều_trị_treatment'})
+MERGE (o1)-[r173:relatedTo]->(o2)
+SET r173.text = 'Với hệ thống máy móc, trang thiết bị hiện đại hàng đầu trong nước và khu vực; Phòng mổ đạt tiêu chuẩn quốc tế; Cùng với khu nội trú và dịch vụ cao cấp 5 sao… Trung tâm Tiết niệu Thận học nổi bật với các dịch vụ thăm khám, tầm soát và điều trị tất cả các bệnh lý đường tiết niệu.'
+
+MERGE (o1:organ {id: 'trung_tâm_tiết_niệu_thận_học_organ'})
+MERGE (o2:disease {id: 'bệnh_lý_đường_tiết_niệu_disease'})
+MERGE (o1)-[r174:relatedTo]->(o2)
+SET r174.text = 'Với hệ thống máy móc, trang thiết bị hiện đại hàng đầu trong nước và khu vực; Phòng mổ đạt tiêu chuẩn quốc tế; Cùng với khu nội trú và dịch vụ cao cấp 5 sao… Trung tâm Tiết niệu Thận học nổi bật với các dịch vụ thăm khám, tầm soát và điều trị tất cả các bệnh lý đường tiết niệu.'
+
+MERGE (o1:treatment {id: 'đại_phẫu_thuật_kỹ_thuật_cao_treatment'})
+MERGE (o2:disease {id: 'bệnh_lý_đường_tiết_niệu_disease'})
+MERGE (o1)-[r175:relatedTo]->(o2)
+SET r175.text = 'Từ các thường gặp cho đến các cuộc đại phẫu thuật kỹ thuật cao.'

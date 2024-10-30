@@ -1,0 +1,565 @@
+
+MERGE (o1:disease {id: 'ung_thư_vòm_họng_giai_đoạn_đầu_disease'})
+MERGE (o2:treatment {id: 'điều_trị_treatment'})
+MERGE (o1)-[r0:treatedBy]->(o2)
+SET r0.text = 'Ung thư vòm họng giai đoạn đầu có tiên lượng sống sau 5 năm tốt, việc điều trị dễ dàng, đỡ tốn kém và hiệu quả cao hơn so với giai đoạn muộn.'
+
+MERGE (o1:disease {id: 'ung_thư_vòm_họng_giai_đoạn_đầu_disease'})
+MERGE (o2:symptom {id: 'tiên_lượng_sống_sau_5_năm_symptom'})
+MERGE (o1)-[r1:relatedTo]->(o2)
+SET r1.text = 'Ung thư vòm họng giai đoạn đầu có tiên lượng sống sau 5 năm tốt, việc điều trị dễ dàng, đỡ tốn kém và hiệu quả cao hơn so với giai đoạn muộn.'
+
+MERGE (o1:disease {id: 'ung_thư_vòm_họng_giai_đoạn_muộn_disease'})
+MERGE (o2:symptom {id: 'tiên_lượng_sống_sau_5_năm_symptom'})
+MERGE (o1)-[r2:relatedTo]->(o2)
+SET r2.text = 'Ung thư vòm họng giai đoạn đầu có tiên lượng sống sau 5 năm tốt, việc điều trị dễ dàng, đỡ tốn kém và hiệu quả cao hơn so với giai đoạn muộn.'
+
+MERGE (o1:treatment {id: 'điều_trị_treatment'})
+MERGE (o2:symptom {id: 'hiệu_quả_symptom'})
+MERGE (o1)-[r3:relatedTo]->(o2)
+SET r3.text = 'Ung thư vòm họng giai đoạn đầu có tiên lượng sống sau 5 năm tốt, việc điều trị dễ dàng, đỡ tốn kém và hiệu quả cao hơn so với giai đoạn muộn.'
+
+MERGE (o1:treatment {id: 'điều_trị_treatment'})
+MERGE (o2:symptom {id: 'tốn_kém_symptom'})
+MERGE (o1)-[r4:relatedTo]->(o2)
+SET r4.text = 'Ung thư vòm họng giai đoạn đầu có tiên lượng sống sau 5 năm tốt, việc điều trị dễ dàng, đỡ tốn kém và hiệu quả cao hơn so với giai đoạn muộn.'
+
+MERGE (o1:treatment {id: 'điều_trị_treatment'})
+MERGE (o2:symptom {id: 'dễ_dàng_symptom'})
+MERGE (o1)-[r5:relatedTo]->(o2)
+SET r5.text = 'Ung thư vòm họng giai đoạn đầu có tiên lượng sống sau 5 năm tốt, việc điều trị dễ dàng, đỡ tốn kém và hiệu quả cao hơn so với giai đoạn muộn.'
+
+MERGE (o1:disease {id: 'ung_thư_vòm_họng_disease'})
+MERGE (o2:symptom {id: 'mối_đe_dọa_tiềm_ẩn_symptom'})
+MERGE (o1)-[r6:relatedTo]->(o2)
+SET r6.text = 'Theo Bác sĩ Trần Vương Thảo Nghi, Trưởng khoa Ung bướu BVĐK Tâm Anh TP.HCM, mặc dù không phổ biến như các loại ung thư gan - phổi - đường tiêu hóa, nhưng ung thư vòm họng vẫn là mối đe dọa tiềm ẩn, đặc biệt đối với người Trung Quốc và Đông Nam Á, trong đó có Việt Nam.'
+
+MERGE (o1:disease {id: 'ung_thư_vòm_họng_disease'})
+MERGE (o2:lifestyle {id: 'người_trung_quốc_và_đông_nam_á_lifestyle'})
+MERGE (o1)-[r7:relatedTo]->(o2)
+SET r7.text = 'Theo Bác sĩ Trần Vương Thảo Nghi, Trưởng khoa Ung bướu BVĐK Tâm Anh TP.HCM, mặc dù không phổ biến như các loại ung thư gan - phổi - đường tiêu hóa, nhưng ung thư vòm họng vẫn là mối đe dọa tiềm ẩn, đặc biệt đối với người Trung Quốc và Đông Nam Á, trong đó có Việt Nam.'
+
+MERGE (o1:disease {id: 'ung_thư_gan_-_phổi_-_đường_tiêu_hóa_disease'})
+MERGE (o2:disease {id: 'ung_thư_vòm_họng_disease'})
+MERGE (o1)-[r8:relatedTo]->(o2)
+SET r8.text = 'Theo Bác sĩ Trần Vương Thảo Nghi, Trưởng khoa Ung bướu BVĐK Tâm Anh TP.HCM, mặc dù không phổ biến như các loại ung thư gan - phổi - đường tiêu hóa, nhưng ung thư vòm họng vẫn là mối đe dọa tiềm ẩn, đặc biệt đối với người Trung Quốc và Đông Nam Á, trong đó có Việt Nam.'
+
+MERGE (o1:disease {id: 'ung_thư_vòm_họng_giai_đoạn_đầu_disease'})
+MERGE (o2:test {id: 'tầm_soát_test'})
+MERGE (o1)-[r9:diagnosedBy]->(o2)
+SET r9.text = 'Do đó, bên cạnh phòng ngừa, việc tầm soát để giúp chẩn đoán sớm và điều trị ung thư vòm họng giai đoạn đầu có ý nghĩa quyết định đối với tiên lượng sống sau 5 năm của người bệnh.'
+
+MERGE (o1:disease {id: 'ung_thư_vòm_họng_giai_đoạn_đầu_disease'})
+MERGE (o2:treatment {id: 'điều_trị_treatment'})
+MERGE (o1)-[r10:treatedBy]->(o2)
+SET r10.text = 'Do đó, bên cạnh phòng ngừa, việc tầm soát để giúp chẩn đoán sớm và điều trị ung thư vòm họng giai đoạn đầu có ý nghĩa quyết định đối với tiên lượng sống sau 5 năm của người bệnh.'
+
+MERGE (o1:disease {id: 'ung_thư_vòm_họng_giai_đoạn_đầu_disease'})
+MERGE (o2:symptom {id: 'tiên_lượng_sống_sau_5_năm_symptom'})
+MERGE (o1)-[r11:relatedTo]->(o2)
+SET r11.text = 'Do đó, bên cạnh phòng ngừa, việc tầm soát để giúp chẩn đoán sớm và điều trị ung thư vòm họng giai đoạn đầu có ý nghĩa quyết định đối với tiên lượng sống sau 5 năm của người bệnh.'
+
+MERGE (o1:disease {id: 'ung_thư_vùng_đầu_cổ_disease'})
+MERGE (o2:disease {id: 'ung_thư_vòm_họng_disease'})
+MERGE (o1)-[r12:relatedTo]->(o2)
+SET r12.text = 'Bệnh ung thư vùng đầu cổ (có thể được hiểu một cách đơn giản là bao gồm ung thư vòm họng, ung thư thanh quản, ung thư mũi, ung thư xoang và ung thư miệng) có số lượng các trường hợp mới được chẩn đoán trên toàn thế giới mỗi năm ước tính là hơn 550.000 với khoảng 380.000 trường hợp tử vong.'
+
+MERGE (o1:disease {id: 'ung_thư_vùng_đầu_cổ_disease'})
+MERGE (o2:disease {id: 'ung_thư_thanh_quản_disease'})
+MERGE (o1)-[r13:relatedTo]->(o2)
+SET r13.text = 'Bệnh ung thư vùng đầu cổ (có thể được hiểu một cách đơn giản là bao gồm ung thư vòm họng, ung thư thanh quản, ung thư mũi, ung thư xoang và ung thư miệng) có số lượng các trường hợp mới được chẩn đoán trên toàn thế giới mỗi năm ước tính là hơn 550.000 với khoảng 380.000 trường hợp tử vong.'
+
+MERGE (o1:disease {id: 'ung_thư_vùng_đầu_cổ_disease'})
+MERGE (o2:disease {id: 'ung_thư_mũi_disease'})
+MERGE (o1)-[r14:relatedTo]->(o2)
+SET r14.text = 'Bệnh ung thư vùng đầu cổ (có thể được hiểu một cách đơn giản là bao gồm ung thư vòm họng, ung thư thanh quản, ung thư mũi, ung thư xoang và ung thư miệng) có số lượng các trường hợp mới được chẩn đoán trên toàn thế giới mỗi năm ước tính là hơn 550.000 với khoảng 380.000 trường hợp tử vong.'
+
+MERGE (o1:disease {id: 'ung_thư_vùng_đầu_cổ_disease'})
+MERGE (o2:disease {id: 'ung_thư_xoang_disease'})
+MERGE (o1)-[r15:relatedTo]->(o2)
+SET r15.text = 'Bệnh ung thư vùng đầu cổ (có thể được hiểu một cách đơn giản là bao gồm ung thư vòm họng, ung thư thanh quản, ung thư mũi, ung thư xoang và ung thư miệng) có số lượng các trường hợp mới được chẩn đoán trên toàn thế giới mỗi năm ước tính là hơn 550.000 với khoảng 380.000 trường hợp tử vong.'
+
+MERGE (o1:disease {id: 'ung_thư_vùng_đầu_cổ_disease'})
+MERGE (o2:disease {id: 'ung_thư_miệng_disease'})
+MERGE (o1)-[r16:relatedTo]->(o2)
+SET r16.text = 'Bệnh ung thư vùng đầu cổ (có thể được hiểu một cách đơn giản là bao gồm ung thư vòm họng, ung thư thanh quản, ung thư mũi, ung thư xoang và ung thư miệng) có số lượng các trường hợp mới được chẩn đoán trên toàn thế giới mỗi năm ước tính là hơn 550.000 với khoảng 380.000 trường hợp tử vong.'
+
+MERGE (o1:disease {id: 'ung_thư_vùng_đầu_cổ_disease'})
+MERGE (o2:symptom {id: 'tử_vong_symptom'})
+MERGE (o1)-[r17:relatedTo]->(o2)
+SET r17.text = 'Bệnh ung thư vùng đầu cổ (có thể được hiểu một cách đơn giản là bao gồm ung thư vòm họng, ung thư thanh quản, ung thư mũi, ung thư xoang và ung thư miệng) có số lượng các trường hợp mới được chẩn đoán trên toàn thế giới mỗi năm ước tính là hơn 550.000 với khoảng 380.000 trường hợp tử vong.'
+
+MERGE (o1:disease {id: 'ung_thư_vùng_đầu_cổ_disease'})
+MERGE (o2:test {id: 'chẩn_đoán_test'})
+MERGE (o1)-[r18:relatedTo]->(o2)
+SET r18.text = 'Bệnh ung thư vùng đầu cổ (có thể được hiểu một cách đơn giản là bao gồm ung thư vòm họng, ung thư thanh quản, ung thư mũi, ung thư xoang và ung thư miệng) có số lượng các trường hợp mới được chẩn đoán trên toàn thế giới mỗi năm ước tính là hơn 550.000 với khoảng 380.000 trường hợp tử vong.'
+
+MERGE (o1:disease {id: 'ung_thư_vòm_họng_disease'})
+MERGE (o2:symptom {id: 'chất_lượng_cuộc_sống_symptom'})
+MERGE (o1)-[r19:relatedTo]->(o2)
+SET r19.text = 'Một trong những bệnh ung thư vùng đầu cổ gây ảnh hưởng khá nhiều đến chất lượng cuộc sống của bệnh nhân là ung thư vòm họng.'
+
+MERGE (o1:disease {id: 'ung_thư_vòm_họng_disease'})
+MERGE (o2:lifestyle {id: 'nam_giới_lifestyle'})
+MERGE (o1)-[r20:relatedTo]->(o2)
+SET r20.text = 'Theo số liệu từ Globocan, năm 2012 trên thế giới có 86.691 trường hợp mắc ung thư vòm họng, trong đó 60.896 trường hợp mắc mới ở nam và 25.795 trường hợp mắc mới ở nữ.'
+
+MERGE (o1:disease {id: 'ung_thư_vòm_họng_disease'})
+MERGE (o2:lifestyle {id: 'nữ_giới_lifestyle'})
+MERGE (o1)-[r21:relatedTo]->(o2)
+SET r21.text = 'Theo số liệu từ Globocan, năm 2012 trên thế giới có 86.691 trường hợp mắc ung thư vòm họng, trong đó 60.896 trường hợp mắc mới ở nam và 25.795 trường hợp mắc mới ở nữ.'
+
+MERGE (o1:disease {id: 'ung_thư_vòm_họng_disease'})
+MERGE (o2:symptom {id: 'mắc_mới_symptom'})
+MERGE (o1)-[r22:relatedTo]->(o2)
+SET r22.text = 'Theo số liệu từ Globocan, năm 2012 trên thế giới có 86.691 trường hợp mắc ung thư vòm họng, trong đó 60.896 trường hợp mắc mới ở nam và 25.795 trường hợp mắc mới ở nữ.'
+
+MERGE (o1:disease {id: 'ung_thư_vòm_họng_disease'})
+MERGE (o2:symptom {id: 'tử_vong_symptom'})
+MERGE (o1)-[r23:relatedTo]->(o2)
+SET r23.text = 'Đã có 50.831 trường hợp tử vong do căn bệnh này, trong đó 35.756 trường hợp xảy ra ở nam giới và 15.075 trường hợp ở nữ giới.'
+
+MERGE (o1:disease {id: 'ung_thư_vòm_họng_disease'})
+MERGE (o2:lifestyle {id: 'nam_giới_lifestyle'})
+MERGE (o1)-[r24:relatedTo]->(o2)
+SET r24.text = 'Đã có 50.831 trường hợp tử vong do căn bệnh này, trong đó 35.756 trường hợp xảy ra ở nam giới và 15.075 trường hợp ở nữ giới.'
+
+MERGE (o1:disease {id: 'ung_thư_vòm_họng_disease'})
+MERGE (o2:lifestyle {id: 'nữ_giới_lifestyle'})
+MERGE (o1)-[r25:relatedTo]->(o2)
+SET r25.text = 'Đã có 50.831 trường hợp tử vong do căn bệnh này, trong đó 35.756 trường hợp xảy ra ở nam giới và 15.075 trường hợp ở nữ giới.'
+
+MERGE (o1:disease {id: 'ung_thư_vòm_họng_disease'})
+MERGE (o2:symptom {id: 'giai_đoạn_symptom'})
+MERGE (o1)-[r26:relatedTo]->(o2)
+SET r26.text = 'Ung thư vòm họng được chia thành 5 giai đoạn, từ giai đoạn 0 đến IV.'
+
+MERGE (o1:disease {id: 'ung_thư_vòm_họng_giai_đoạn_đầu_disease'})
+MERGE (o2:symptom {id: 'giai_đoạn_symptom'})
+MERGE (o1)-[r27:relatedTo]->(o2)
+SET r27.text = 'Ung thư vòm họng giai đoạn đầu hay còn gọi là ung thư vòm họng giai đoạn sớm được xác định từ giai đoạn 0 - III (T1N2), là giai đoạn ung thư tại chỗ tại vùng, chứ chưa di căn sang các vị trí khác.'
+
+MERGE (o1:disease {id: 'ung_thư_vòm_họng_giai_đoạn_đầu_disease'})
+MERGE (o2:symptom {id: 'di_căn_symptom'})
+MERGE (o1)-[r28:relatedTo]->(o2)
+SET r28.text = 'Ung thư vòm họng giai đoạn đầu hay còn gọi là ung thư vòm họng giai đoạn sớm được xác định từ giai đoạn 0 - III (T1N2), là giai đoạn ung thư tại chỗ tại vùng, chứ chưa di căn sang các vị trí khác.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:organ {id: 'vòm_họng_organ'})
+MERGE (o1)-[r29:locatedIn]->(o2)
+SET r29.text = 'Giai đoạn 0 (Tis, N0, M0): Khối u chỉ nằm ở lớp tế bào trên cùng bên trong vòm họng và chưa phát triển sâu hơn (Tis).'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:symptom {id: 'phát_triển_symptom'})
+MERGE (o1)-[r30:relatedTo]->(o2)
+SET r30.text = 'Giai đoạn 0 (Tis, N0, M0): Khối u chỉ nằm ở lớp tế bào trên cùng bên trong vòm họng và chưa phát triển sâu hơn (Tis).'
+
+MERGE (o1:disease {id: 'ung_thư_disease'})
+MERGE (o2:symptom {id: 'di_căn_symptom'})
+MERGE (o1)-[r31:relatedTo]->(o2)
+SET r31.text = 'Giai đoạn 0 (Tis, N0, M0): Khối u chỉ nằm ở lớp tế bào trên cùng bên trong vòm họng và chưa phát triển sâu hơn (Tis). Ung thư chưa lan đến các hạch (N0), cũng chưa di căn đến các bộ phận xa của cơ thể (M0).'
+
+MERGE (o1:disease {id: 'ung_thư_disease'})
+MERGE (o2:organ {id: 'hạch_organ'})
+MERGE (o1)-[r32:relatedTo]->(o2)
+SET r32.text = 'Giai đoạn 0 (Tis, N0, M0): Khối u chỉ nằm ở lớp tế bào trên cùng bên trong vòm họng và chưa phát triển sâu hơn (Tis). Ung thư chưa lan đến các hạch (N0), cũng chưa di căn đến các bộ phận xa của cơ thể (M0).'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:organ {id: 'vòm_họng_organ'})
+MERGE (o1)-[r33:locatedIn]->(o2)
+SET r33.text = 'Giai đoạn I (T1 N0 M0): Khối u nằm giới hạn trong vòm họng.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:symptom {id: 'lan_ra_symptom'})
+MERGE (o1)-[r34:relatedTo]->(o2)
+SET r34.text = 'Giai đoạn I (T1 N0 M0): Khối u nằm giới hạn trong vòm họng. Khối u có thể đã lan ra hầu họng (một phần của cổ họng ở phía sau miệng) và/hoặc khoang mũi nhưng không xa hơn vùng họng (T1).'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:organ {id: 'hầu_họng_organ'})
+MERGE (o1)-[r35:locatedIn]->(o2)
+SET r35.text = 'Giai đoạn I (T1 N0 M0): Khối u nằm giới hạn trong vòm họng. Khối u có thể đã lan ra hầu họng (một phần của cổ họng ở phía sau miệng) và/hoặc khoang mũi nhưng không xa hơn vùng họng (T1).'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:organ {id: 'khoang_mũi_organ'})
+MERGE (o1)-[r36:locatedIn]->(o2)
+SET r36.text = 'Giai đoạn I (T1 N0 M0): Khối u nằm giới hạn trong vòm họng. Khối u có thể đã lan ra hầu họng (một phần của cổ họng ở phía sau miệng) và/hoặc khoang mũi nhưng không xa hơn vùng họng (T1).'
+
+MERGE (o1:disease {id: 'ung_thư_disease'})
+MERGE (o2:symptom {id: 'di_căn_symptom'})
+MERGE (o1)-[r37:relatedTo]->(o2)
+SET r37.text = 'Giai đoạn I (T1 N0 M0): Khối u nằm giới hạn trong vòm họng. Khối u có thể đã lan ra hầu họng (một phần của cổ họng ở phía sau miệng) và/hoặc khoang mũi nhưng không xa hơn vùng họng (T1). Ung thư chưa lan đến các hạch (N0), cũng chưa di căn đến các bộ phận xa của cơ thể (M0).'
+
+MERGE (o1:disease {id: 'ung_thư_disease'})
+MERGE (o2:organ {id: 'hạch_organ'})
+MERGE (o1)-[r38:relatedTo]->(o2)
+SET r38.text = 'Giai đoạn I (T1 N0 M0): Khối u nằm giới hạn trong vòm họng. Khối u có thể đã lan ra hầu họng (một phần của cổ họng ở phía sau miệng) và/hoặc khoang mũi nhưng không xa hơn vùng họng (T1). Ung thư chưa lan đến các hạch (N0), cũng chưa di căn đến các bộ phận xa của cơ thể (M0).'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:organ {id: 'vòm_họng_organ'})
+MERGE (o1)-[r39:locatedIn]->(o2)
+SET r39.text = 'Giai đoạn II (T0 N1 M0, hoặc T1 N1 M0, hoặc T2 N0 M0 hoặc N1 M0): Khối u nằm trong vòm họng.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:symptom {id: 'phát_triển_symptom'})
+MERGE (o1)-[r40:relatedTo]->(o2)
+SET r40.text = 'Giai đoạn II (T0 N1 M0, hoặc T1 N1 M0, hoặc T2 N0 M0 hoặc N1 M0): Khối u nằm trong vòm họng. Khối u có thể đã phát triển thành hầu họng (một phần của cổ họng phía sau miệng) và/hoặc khoang mũi (T1); hoặc đã lan đến vùng họng nhưng không xa hơn (T2).'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:organ {id: 'hầu_họng_organ'})
+MERGE (o1)-[r41:locatedIn]->(o2)
+SET r41.text = 'Giai đoạn II (T0 N1 M0, hoặc T1 N1 M0, hoặc T2 N0 M0 hoặc N1 M0): Khối u nằm trong vòm họng. Khối u có thể đã phát triển thành hầu họng (một phần của cổ họng phía sau miệng) và/hoặc khoang mũi (T1); hoặc đã lan đến vùng họng nhưng không xa hơn (T2).'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:organ {id: 'khoang_mũi_organ'})
+MERGE (o1)-[r42:locatedIn]->(o2)
+SET r42.text = 'Giai đoạn II (T0 N1 M0, hoặc T1 N1 M0, hoặc T2 N0 M0 hoặc N1 M0): Khối u nằm trong vòm họng. Khối u có thể đã phát triển thành hầu họng (một phần của cổ họng phía sau miệng) và/hoặc khoang mũi (T1); hoặc đã lan đến vùng họng nhưng không xa hơn (T2).'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:organ {id: 'vòm_họng_organ'})
+MERGE (o1)-[r43:locatedIn]->(o2)
+SET r43.text = 'Giai đoạn II (T0 N1 M0, hoặc T1 N1 M0, hoặc T2 N0 M0 hoặc N1 M0): Khối u nằm trong vòm họng. Khối u có thể đã phát triển thành hầu họng (một phần của cổ họng phía sau miệng) và/hoặc khoang mũi (T1); hoặc đã lan đến vùng họng nhưng không xa hơn (T2). Hoặc không thấy khối u trong vòm họng (T0), nhưng ung thư được tìm thấy trong các hạch ở cổ.'
+
+MERGE (o1:disease {id: 'ung_thư_disease'})
+MERGE (o2:organ {id: 'hạch_organ'})
+MERGE (o1)-[r44:locatedIn]->(o2)
+SET r44.text = 'Giai đoạn II (T0 N1 M0, hoặc T1 N1 M0, hoặc T2 N0 M0 hoặc N1 M0): Khối u nằm trong vòm họng. Khối u có thể đã phát triển thành hầu họng (một phần của cổ họng phía sau miệng) và/hoặc khoang mũi (T1); hoặc đã lan đến vùng họng nhưng không xa hơn (T2). Hoặc không thấy khối u trong vòm họng (T0), nhưng ung thư được tìm thấy trong các hạch ở cổ.'
+
+MERGE (o1:disease {id: 'ung_thư_disease'})
+MERGE (o2:symptom {id: 'di_căn_symptom'})
+MERGE (o1)-[r45:relatedTo]->(o2)
+SET r45.text = 'Giai đoạn II (T0 N1 M0, hoặc T1 N1 M0, hoặc T2 N0 M0 hoặc N1 M0): Khối u nằm trong vòm họng. Khối u có thể đã phát triển thành hầu họng (một phần của cổ họng phía sau miệng) và/hoặc khoang mũi (T1); hoặc đã lan đến vùng họng nhưng không xa hơn (T2). Hoặc không thấy khối u trong vòm họng (T0), nhưng ung thư được tìm thấy trong các hạch ở cổ. Ung thư đã lan đến một hoặc nhiều hạch ở một bên cổ, hoặc di căn đến các hạch một bên/hoặc hai bên ở phía sau họng.'
+
+MERGE (o1:organ {id: 'hạch_organ'})
+MERGE (o2:symptom {id: 'kích_thước_symptom'})
+MERGE (o1)-[r46:relatedTo]->(o2)
+SET r46.text = 'Giai đoạn II (T0 N1 M0, hoặc T1 N1 M0, hoặc T2 N0 M0 hoặc N1 M0): Khối u nằm trong vòm họng. Khối u có thể đã phát triển thành hầu họng (một phần của cổ họng phía sau miệng) và/hoặc khoang mũi (T1); hoặc đã lan đến vùng họng nhưng không xa hơn (T2). Hoặc không thấy khối u trong vòm họng (T0), nhưng ung thư được tìm thấy trong các hạch ở cổ. Ung thư đã lan đến một hoặc nhiều hạch ở một bên cổ, hoặc di căn đến các hạch một bên/hoặc hai bên ở phía sau họng. Trong cả hai trường hợp, không có hạch nào lớn hơn 6cm theo chiều ngang (N1).'
+
+MERGE (o1:disease {id: 'ung_thư_disease'})
+MERGE (o2:symptom {id: 'di_căn_symptom'})
+MERGE (o1)-[r47:relatedTo]->(o2)
+SET r47.text = 'Giai đoạn II (T0 N1 M0, hoặc T1 N1 M0, hoặc T2 N0 M0 hoặc N1 M0): Khối u nằm trong vòm họng. Khối u có thể đã phát triển thành hầu họng (một phần của cổ họng phía sau miệng) và/hoặc khoang mũi (T1); hoặc đã lan đến vùng họng nhưng không xa hơn (T2). Hoặc không thấy khối u trong vòm họng (T0), nhưng ung thư được tìm thấy trong các hạch ở cổ. Ung thư đã lan đến một hoặc nhiều hạch ở một bên cổ, hoặc di căn đến các hạch một bên/hoặc hai bên ở phía sau họng. Trong cả hai trường hợp, không có hạch nào lớn hơn 6cm theo chiều ngang (N1). Ung thư chưa di căn đến các bộ phận xa của cơ thể (M0).'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:symptom {id: 'phát_triển_symptom'})
+MERGE (o1)-[r48:relatedTo]->(o2)
+SET r48.text = 'Giai đoạn II (T2, N0 hoặc N1, M0): Khối u đã phát triển vào vùng quanh họng và các cấu trúc xung quanh, nhưng không vào xương (T2).'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:organ {id: 'vùng_quanh_họng_organ'})
+MERGE (o1)-[r49:locatedIn]->(o2)
+SET r49.text = 'Giai đoạn II (T2, N0 hoặc N1, M0): Khối u đã phát triển vào vùng quanh họng và các cấu trúc xung quanh, nhưng không vào xương (T2).'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:organ {id: 'xương_organ'})
+MERGE (o1)-[r50:locatedIn]->(o2)
+SET r50.text = 'Giai đoạn II (T2, N0 hoặc N1, M0): Khối u đã phát triển vào vùng quanh họng và các cấu trúc xung quanh, nhưng không vào xương (T2).'
+
+MERGE (o1:disease {id: 'ung_thư_disease'})
+MERGE (o2:symptom {id: 'di_căn_symptom'})
+MERGE (o1)-[r51:relatedTo]->(o2)
+SET r51.text = 'Giai đoạn II (T2, N0 hoặc N1, M0): Khối u đã phát triển vào vùng quanh họng và các cấu trúc xung quanh, nhưng không vào xương (T2). Ung thư chưa lan đến các hạch lân cận (N0); hoặc đã lan đến một hoặc nhiều hạch ở một bên cổ, hoặc di căn đến các hạch một bên/hoặc hai bên ở phía sau họng.'
+
+MERGE (o1:disease {id: 'ung_thư_disease'})
+MERGE (o2:organ {id: 'hạch_organ'})
+MERGE (o1)-[r52:relatedTo]->(o2)
+SET r52.text = 'Giai đoạn II (T2, N0 hoặc N1, M0): Khối u đã phát triển vào vùng quanh họng và các cấu trúc xung quanh, nhưng không vào xương (T2). Ung thư chưa lan đến các hạch lân cận (N0); hoặc đã lan đến một hoặc nhiều hạch ở một bên cổ, hoặc di căn đến các hạch một bên/hoặc hai bên ở phía sau họng.'
+
+MERGE (o1:organ {id: 'hạch_organ'})
+MERGE (o2:symptom {id: 'kích_thước_symptom'})
+MERGE (o1)-[r53:relatedTo]->(o2)
+SET r53.text = 'Giai đoạn II (T2, N0 hoặc N1, M0): Khối u đã phát triển vào vùng quanh họng và các cấu trúc xung quanh, nhưng không vào xương (T2). Ung thư chưa lan đến các hạch lân cận (N0); hoặc đã lan đến một hoặc nhiều hạch ở một bên cổ, hoặc di căn đến các hạch một bên/hoặc hai bên ở phía sau họng. Trong cả hai trường hợp, không có hạch nào lớn hơn 6cm theo chiều ngang (N1).'
+
+MERGE (o1:disease {id: 'ung_thư_disease'})
+MERGE (o2:symptom {id: 'di_căn_symptom'})
+MERGE (o1)-[r54:relatedTo]->(o2)
+SET r54.text = 'Giai đoạn II (T2, N0 hoặc N1, M0): Khối u đã phát triển vào vùng quanh họng và các cấu trúc xung quanh, nhưng không vào xương (T2). Ung thư chưa lan đến các hạch lân cận (N0); hoặc đã lan đến một hoặc nhiều hạch ở một bên cổ, hoặc di căn đến các hạch một bên/hoặc hai bên ở phía sau họng. Trong cả hai trường hợp, không có hạch nào lớn hơn 6cm theo chiều ngang (N1). Ung thư chưa di căn đến các bộ phận xa của cơ thể (M0).'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:organ {id: 'vòm_họng_organ'})
+MERGE (o1)-[r55:locatedIn]->(o2)
+SET r55.text = 'Giai đoạn III (T0 hoặc T1, N2, M0): Khối u nằm trong vòm họng.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:symptom {id: 'phát_triển_symptom'})
+MERGE (o1)-[r56:relatedTo]->(o2)
+SET r56.text = 'Giai đoạn III (T0 hoặc T1, N2, M0): Khối u nằm trong vòm họng. Khối u có thể đã phát triển thành hầu họng (một phần của cổ họng phía sau miệng) và/hoặc khoang mũi (T1).'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:organ {id: 'hầu_họng_organ'})
+MERGE (o1)-[r57:locatedIn]->(o2)
+SET r57.text = 'Giai đoạn III (T0 hoặc T1, N2, M0): Khối u nằm trong vòm họng. Khối u có thể đã phát triển thành hầu họng (một phần của cổ họng phía sau miệng) và/hoặc khoang mũi (T1).'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:organ {id: 'khoang_mũi_organ'})
+MERGE (o1)-[r58:locatedIn]->(o2)
+SET r58.text = 'Giai đoạn III (T0 hoặc T1, N2, M0): Khối u nằm trong vòm họng. Khối u có thể đã phát triển thành hầu họng (một phần của cổ họng phía sau miệng) và/hoặc khoang mũi (T1).'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:organ {id: 'vòm_họng_organ'})
+MERGE (o1)-[r59:locatedIn]->(o2)
+SET r59.text = 'Giai đoạn III (T0 hoặc T1, N2, M0): Khối u nằm trong vòm họng. Khối u có thể đã phát triển thành hầu họng (một phần của cổ họng phía sau miệng) và/hoặc khoang mũi (T1). Hoặc không thấy khối u trong vòm họng (T0), nhưng ung thư được tìm thấy trong các hạch ở cổ.'
+
+MERGE (o1:treatment {id: 'tỷ_lệ_sống_còn_treatment'})
+MERGE (o2:disease {id: 'bệnh_ung_thư_disease'})
+MERGE (o1)-[r60:relatedTo]->(o2)
+SET r60.text = 'Tỷ lệ sống còn của một loại bệnh ung thư, có thể được hiểu theo một cách đơn giản, là tỷ lệ phần trăm những người mắc loại bệnh ung thư đó vẫn còn sống trong một khoảng thời gian nhất định (thông thường là 5 năm) sau khi được chẩn đoán và điều trị.'
+
+MERGE (o1:treatment {id: 'tỷ_lệ_sống_còn_treatment'})
+MERGE (o2:treatment {id: 'điều_trị_treatment'})
+MERGE (o1)-[r61:relatedTo]->(o2)
+SET r61.text = 'Tỷ lệ này không cho biết cụ thể một người mắc bệnh sẽ sống được bao lâu, nhưng có thể giúp hiểu rõ hơn về khả năng thành công của việc điều trị.'
+
+MERGE (o1:disease {id: 'bệnh_ung_thư_disease'})
+MERGE (o2:treatment {id: 'điều_trị_treatment'})
+MERGE (o1)-[r62:treatedBy]->(o2)
+SET r62.text = 'Bệnh ung thư được chẩn đoán ở giai đoạn càng sớm, khả năng điều trị thành công khỏi hẳn bệnh càng cao, đồng nghĩa với tỷ lệ sống sót càng cao.'
+
+MERGE (o1:treatment {id: 'giai_đoạn_sớm_treatment'})
+MERGE (o2:treatment {id: 'khả_năng_điều_trị_thành_công_treatment'})
+MERGE (o1)-[r63:relatedTo]->(o2)
+SET r63.text = 'Bệnh ung thư được chẩn đoán ở giai đoạn càng sớm, khả năng điều trị thành công khỏi hẳn bệnh càng cao, đồng nghĩa với tỷ lệ sống sót càng cao.'
+
+MERGE (o1:treatment {id: 'giai_đoạn_sớm_treatment'})
+MERGE (o2:treatment {id: 'tỷ_lệ_sống_sót_treatment'})
+MERGE (o1)-[r64:relatedTo]->(o2)
+SET r64.text = 'Bệnh ung thư được chẩn đoán ở giai đoạn càng sớm, khả năng điều trị thành công khỏi hẳn bệnh càng cao, đồng nghĩa với tỷ lệ sống sót càng cao.'
+
+MERGE (o1:disease {id: 'bệnh_nhân_ung_thư_vòm_họng_giai_đoạn_đầu_disease'})
+MERGE (o2:treatment {id: 'tỷ_lệ_sống_trong_5_năm_là_60-75%_treatment'})
+MERGE (o1)-[r65:relatedTo]->(o2)
+SET r65.text = 'Bệnh nhân ung thư vòm họng giai đoạn đầu thường có kết quả tốt, tỷ lệ sống trong 5 năm là 60-75%.'
+
+MERGE (o1:disease {id: 'bệnh_nhân_mắc_ung_thư_vòm_họng_giai_đoạn_iv_disease'})
+MERGE (o2:treatment {id: 'tỷ_lệ_sống_trong_5_năm_là_<40%_treatment'})
+MERGE (o1)-[r66:relatedTo]->(o2)
+SET r66.text = 'Trong khi bệnh nhân mắc ung thư vòm họng giai đoạn IV có kết quả kém, tỷ lệ sống trong 5 năm là <40%.'
+
+MERGE (o1:disease {id: 'bệnh_ung_thư_vòm_họng_disease'})
+MERGE (o2:test {id: 'tầm_soát_và_chẩn_đoán_test'})
+MERGE (o1)-[r67:diagnosedBy]->(o2)
+SET r67.text = 'Bác sĩ có thể sử dụng một số phương pháp để tầm soát và chẩn đoán, nếu nghi ngờ bệnh ung thư vòm họng, như:'
+
+MERGE (o1:test {id: 'tiền_sử_bệnh_test'})
+MERGE (o2:disease {id: 'bệnh_ung_thư_vòm_họng_disease'})
+MERGE (o1)-[r68:diagnosedBy]->(o2)
+SET r68.text = 'Hỏi tiền sử bệnh của bản thân bệnh nhân và gia đình, về lối sống, về dinh dưỡng cũng như các yếu tố khác có thể làm tăng nguy cơ phát triển ung thư vòm họng;'
+
+MERGE (o1:lifestyle {id: 'lối_sống_lifestyle'})
+MERGE (o2:disease {id: 'bệnh_ung_thư_vòm_họng_disease'})
+MERGE (o1)-[r69:relatedTo]->(o2)
+SET r69.text = 'Hỏi tiền sử bệnh của bản thân bệnh nhân và gia đình, về lối sống, về dinh dưỡng cũng như các yếu tố khác có thể làm tăng nguy cơ phát triển ung thư vòm họng;'
+
+MERGE (o1:lifestyle {id: 'dinh_dưỡng_lifestyle'})
+MERGE (o2:disease {id: 'bệnh_ung_thư_vòm_họng_disease'})
+MERGE (o1)-[r70:relatedTo]->(o2)
+SET r70.text = 'Hỏi tiền sử bệnh của bản thân bệnh nhân và gia đình, về lối sống, về dinh dưỡng cũng như các yếu tố khác có thể làm tăng nguy cơ phát triển ung thư vòm họng;'
+
+MERGE (o1:test {id: 'nội_soi_tai_mũi_họng_test'})
+MERGE (o2:disease {id: 'bệnh_ung_thư_vòm_họng_disease'})
+MERGE (o1)-[r71:diagnosedBy]->(o2)
+SET r71.text = 'Nội soi tai mũi họng;'
+
+MERGE (o1:test {id: 'chụp_cắt_lớp_vi_tính_(ct)_test'})
+MERGE (o2:disease {id: 'bệnh_ung_thư_vòm_họng_disease'})
+MERGE (o1)-[r72:diagnosedBy]->(o2)
+SET r72.text = 'Chụp cắt lớp vi tính (CT) hoặc PET/CT;'
+
+MERGE (o1:test {id: 'pet/ct_test'})
+MERGE (o2:disease {id: 'bệnh_ung_thư_vòm_họng_disease'})
+MERGE (o1)-[r73:diagnosedBy]->(o2)
+SET r73.text = 'Chụp cắt lớp vi tính (CT) hoặc PET/CT;'
+
+MERGE (o1:test {id: 'chụp_cộng_hưởng_từ_(mri)_test'})
+MERGE (o2:disease {id: 'bệnh_ung_thư_vòm_họng_disease'})
+MERGE (o1)-[r74:diagnosedBy]->(o2)
+SET r74.text = 'Chụp cộng hưởng từ (MRI);'
+
+MERGE (o1:test {id: 'sinh_thiết_qua_nội_soi_tai_mũi_họng_test'})
+MERGE (o2:disease {id: 'bệnh_ung_thư_disease'})
+MERGE (o1)-[r75:diagnosedBy]->(o2)
+SET r75.text = 'Sinh thiết qua nội soi tai mũi họng: một mẫu u hoặc tổn thương bất thường được bấm trong quá trình nội soi tai mũi họng, sau đó làm xét nghiệm tế bào mô học để giúp xác định bản chất lành hay ác tính, để chẩn đoán ung thư.'
+
+MERGE (o1:disease {id: 'ung_thư_vòm_họng_giai_đoạn_đầu_disease'})
+MERGE (o2:treatment {id: 'xạ_trị_và_hóa_trị_treatment'})
+MERGE (o1)-[r76:treatedBy]->(o2)
+SET r76.text = 'Bác sĩ Trần Vương Thảo Nghi cho biết, ung thư vòm họng giai đoạn đầu thường được điều trị theo phác đồ kết hợp xạ trị và hóa trị.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_treatment'})
+MERGE (o2:disease {id: 'ung_thư_vòm_họng_giai_đoạn_đầu_disease'})
+MERGE (o1)-[r77:treatedBy]->(o2)
+SET r77.text = 'Phẫu thuật gần như không có vai trò điều trị triệt để cho ung thư vòm họng giai đoạn đầu.'
+
+MERGE (o1:disease {id: 'giai_đoạn_bệnh_disease'})
+MERGE (o2:treatment {id: 'phác_đồ_phối_hợp_xạ_trị_với_hóa_trị_treatment'})
+MERGE (o1)-[r78:relatedTo]->(o2)
+SET r78.text = 'Tùy vào giai đoạn bệnh, tùy vào tình trạng khối u cũng như tình trạng di căn hạch, bác sĩ sẽ đưa ra phác đồ phối hợp xạ trị với hóa trị khác nhau.'
+
+MERGE (o1:disease {id: 'tình_trạng_khối_u_disease'})
+MERGE (o2:treatment {id: 'phác_đồ_phối_hợp_xạ_trị_với_hóa_trị_treatment'})
+MERGE (o1)-[r79:relatedTo]->(o2)
+SET r79.text = 'Tùy vào giai đoạn bệnh, tùy vào tình trạng khối u cũng như tình trạng di căn hạch, bác sĩ sẽ đưa ra phác đồ phối hợp xạ trị với hóa trị khác nhau.'
+
+MERGE (o1:disease {id: 'tình_trạng_di_căn_hạch_disease'})
+MERGE (o2:treatment {id: 'phác_đồ_phối_hợp_xạ_trị_với_hóa_trị_treatment'})
+MERGE (o1)-[r80:relatedTo]->(o2)
+SET r80.text = 'Tùy vào giai đoạn bệnh, tùy vào tình trạng khối u cũng như tình trạng di căn hạch, bác sĩ sẽ đưa ra phác đồ phối hợp xạ trị với hóa trị khác nhau.'
+
+MERGE (o1:disease {id: 'di_căn_hạch_cổ_2_bên_với_kích_thước_lớn_disease'})
+MERGE (o2:treatment {id: 'hóa_trị_treatment'})
+MERGE (o1)-[r81:treatedBy]->(o2)
+SET r81.text = 'Ví dụ: Nếu bệnh nhân có di căn hạch cổ 2 bên với kích thước lớn, có thể hóa trị trước một vài đợt để làm giảm kích thước hạch, sau đó xạ trị đồng thời với hóa trị; tùy theo kết quả đáp ứng với hóa xạ trị đồng thời mà quyết định có cần hóa trị thêm hay không.'
+
+MERGE (o1:treatment {id: 'hóa_trị_treatment'})
+MERGE (o2:treatment {id: 'xạ_trị_đồng_thời_treatment'})
+MERGE (o1)-[r82:relatedTo]->(o2)
+SET r82.text = 'Ví dụ: Nếu bệnh nhân có di căn hạch cổ 2 bên với kích thước lớn, có thể hóa trị trước một vài đợt để làm giảm kích thước hạch, sau đó xạ trị đồng thời với hóa trị; tùy theo kết quả đáp ứng với hóa xạ trị đồng thời mà quyết định có cần hóa trị thêm hay không.'
+
+MERGE (o1:treatment {id: 'cisplatin_treatment'})
+MERGE (o2:treatment {id: 'hóa_trị_treatment'})
+MERGE (o1)-[r83:relatedTo]->(o2)
+SET r83.text = 'Thuốc hóa trị thường được sử dụng có thể bao gồm Cisplatin, Carboplatin, 5-FU, Docetaxel, Gemcitabine, Capecitabine.'
+
+MERGE (o1:treatment {id: 'carboplatin_treatment'})
+MERGE (o2:treatment {id: 'hóa_trị_treatment'})
+MERGE (o1)-[r84:relatedTo]->(o2)
+SET r84.text = 'Thuốc hóa trị thường được sử dụng có thể bao gồm Cisplatin, Carboplatin, 5-FU, Docetaxel, Gemcitabine, Capecitabine.'
+
+MERGE (o1:treatment {id: '5-fu_treatment'})
+MERGE (o2:treatment {id: 'hóa_trị_treatment'})
+MERGE (o1)-[r85:relatedTo]->(o2)
+SET r85.text = 'Thuốc hóa trị thường được sử dụng có thể bao gồm Cisplatin, Carboplatin, 5-FU, Docetaxel, Gemcitabine, Capecitabine.'
+
+MERGE (o1:treatment {id: 'docetaxel_treatment'})
+MERGE (o2:treatment {id: 'hóa_trị_treatment'})
+MERGE (o1)-[r86:relatedTo]->(o2)
+SET r86.text = 'Thuốc hóa trị thường được sử dụng có thể bao gồm Cisplatin, Carboplatin, 5-FU, Docetaxel, Gemcitabine, Capecitabine.'
+
+MERGE (o1:treatment {id: 'gemcitabine_treatment'})
+MERGE (o2:treatment {id: 'hóa_trị_treatment'})
+MERGE (o1)-[r87:relatedTo]->(o2)
+SET r87.text = 'Thuốc hóa trị thường được sử dụng có thể bao gồm Cisplatin, Carboplatin, 5-FU, Docetaxel, Gemcitabine, Capecitabine.'
+
+MERGE (o1:treatment {id: 'capecitabine_treatment'})
+MERGE (o2:treatment {id: 'hóa_trị_treatment'})
+MERGE (o1)-[r88:relatedTo]->(o2)
+SET r88.text = 'Thuốc hóa trị thường được sử dụng có thể bao gồm Cisplatin, Carboplatin, 5-FU, Docetaxel, Gemcitabine, Capecitabine.'
+
+MERGE (o1:treatment {id: 'hóa_xạ_trị_đồng_thời_treatment'})
+MERGE (o2:treatment {id: 'kết_quả_điều_trị_tốt_hơn_treatment'})
+MERGE (o1)-[r89:relatedTo]->(o2)
+SET r89.text = 'Hầu hết các nghiên cứu đều cho thấy hóa xạ trị đồng thời giúp mang lại kết quả điều trị tốt hơn, giúp bệnh nhân sống lâu hơn so với chỉ xạ trị đơn thuần.'
+
+MERGE (o1:treatment {id: 'hóa_xạ_trị_đồng_thời_treatment'})
+MERGE (o2:treatment {id: 'bệnh_nhân_sống_lâu_hơn_treatment'})
+MERGE (o1)-[r90:relatedTo]->(o2)
+SET r90.text = 'Hầu hết các nghiên cứu đều cho thấy hóa xạ trị đồng thời giúp mang lại kết quả điều trị tốt hơn, giúp bệnh nhân sống lâu hơn so với chỉ xạ trị đơn thuần.'
+
+MERGE (o1:treatment {id: 'xạ_trị_đơn_thuần_treatment'})
+MERGE (o2:treatment {id: 'kết_quả_điều_trị_kém_hơn_treatment'})
+MERGE (o1)-[r91:relatedTo]->(o2)
+SET r91.text = 'Hầu hết các nghiên cứu đều cho thấy hóa xạ trị đồng thời giúp mang lại kết quả điều trị tốt hơn, giúp bệnh nhân sống lâu hơn so với chỉ xạ trị đơn thuần.'
+
+MERGE (o1:treatment {id: 'hóa_trị_treatment'})
+MERGE (o2:symptom {id: 'tác_dụng_phụ_symptom'})
+MERGE (o1)-[r92:relatedTo]->(o2)
+SET r92.text = 'Nhưng việc kết hợp thêm hóa trị có thể sẽ dẫn đến nhiều tác dụng phụ hơn, gây ảnh hưởng đến chất lượng sống của người bệnh.'
+
+MERGE (o1:organ {id: 'hạch_cổ_organ'})
+MERGE (o2:treatment {id: 'hóa_xạ_trị_treatment'})
+MERGE (o1)-[r93:relatedTo]->(o2)
+SET r93.text = 'Trong những trường hợp vẫn còn hạch cổ sau khi kết thúc hóa xạ trị, có thể xét chỉ định phẫu thuật nhằm mục đích lấy bỏ hạch cổ, giúp kiểm soát bệnh tốt hơn.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_treatment'})
+MERGE (o2:organ {id: 'hạch_cổ_organ'})
+MERGE (o1)-[r94:relatedTo]->(o2)
+SET r94.text = 'Trong những trường hợp vẫn còn hạch cổ sau khi kết thúc hóa xạ trị, có thể xét chỉ định phẫu thuật nhằm mục đích lấy bỏ hạch cổ, giúp kiểm soát bệnh tốt hơn.'
+
+MERGE (o1:treatment {id: 'hóa_xạ_trị_treatment'})
+MERGE (o2:disease {id: 'ung_thư_vòm_họng_giai_đoạn_đầu_disease'})
+MERGE (o1)-[r95:treatedBy]->(o2)
+SET r95.text = 'Hóa xạ trị đồng thời giúp mang lại kết quả điều trị tốt cho ung thư vòm họng giai đoạn đầu Ung thư vòm họng tái phát - di căn Ung thư tái phát là khi bệnh xuất hiện lại sau khi kết thúc điều trị.'
+
+MERGE (o1:disease {id: 'ung_thư_vòm_họng_giai_đoạn_đầu_disease'})
+MERGE (o2:treatment {id: 'hóa_xạ_trị_treatment'})
+MERGE (o1)-[r96:treatedBy]->(o2)
+SET r96.text = 'Hóa xạ trị đồng thời giúp mang lại kết quả điều trị tốt cho ung thư vòm họng giai đoạn đầu Ung thư vòm họng tái phát - di căn Ung thư tái phát là khi bệnh xuất hiện lại sau khi kết thúc điều trị.'
+
+MERGE (o1:disease {id: 'ung_thư_vòm_họng_tái_phát_disease'})
+MERGE (o2:disease {id: 'ung_thư_tái_phát_disease'})
+MERGE (o1)-[r97:isSymptomOf]->(o2)
+SET r97.text = 'Ung thư vòm họng tái phát - di căn Ung thư tái phát là khi bệnh xuất hiện lại sau khi kết thúc điều trị.'
+
+MERGE (o1:disease {id: 'ung_thư_tái_phát_disease'})
+MERGE (o2:organ {id: 'vị_trí_u_trước_đây__hoặc_vùng_gần_đó__hoặc_tại_hạch_trước_đó_organ'})
+MERGE (o1)-[r98:locatedIn]->(o2)
+SET r98.text = 'Ung thư vòm họng tái phát - di căn Ung thư tái phát là khi bệnh xuất hiện lại sau khi kết thúc điều trị. Bệnh có thể tái phát cục bộ tại chỗ (tại vị trí u trước đây, hoặc vùng gần đó, hoặc tại hạch trước đó).'
+
+MERGE (o1:disease {id: 'ung_thư_vòm_họng_tái_phát_disease'})
+MERGE (o2:organ {id: 'phổi__xương__gan__hạch__não_organ'})
+MERGE (o1)-[r99:affects]->(o2)
+SET r99.text = 'Ung thư vòm họng tái phát - di căn là khi bệnh tái phát kèm theo lan xa đến các cơ quan khác trong cơ thể như phổi, xương, gan, hạch, não….'
+
+MERGE (o1:disease {id: 'ung_thư_vòm_họng_tái_phát_disease'})
+MERGE (o2:treatment {id: 'phương_pháp_điều_trị_treatment'})
+MERGE (o1)-[r100:treatedBy]->(o2)
+SET r100.text = 'Việc lựa chọn phương pháp điều trị cho ung thư vòm họng tái phát - di căn phụ thuộc vào nhiều yếu tố như: Vị trí và mức độ lan rộng của bệnh, sức khỏe tổng thể của người bệnh, thời gian tái phát sau khi kết thúc điều trị trước đó là bao lâu, và phương pháp điều trị trước đó là gì.'
+
+MERGE (o1:treatment {id: 'điều_trị_treatment'})
+MERGE (o2:disease {id: 'ung_thư_vòm_họng_tái_phát_disease'})
+MERGE (o1)-[r101:treatedBy]->(o2)
+SET r101.text = 'Mục đích điều trị lúc này nhằm làm chậm sự phát triển của bệnh, giảm nhẹ triệu chứng và giúp đảm bảo chất lượng cuộc sống tốt nhất có thể.'
+
+MERGE (o1:treatment {id: 'điều_trị_treatment'})
+MERGE (o2:symptom {id: 'lợi_ích_và_rủi_ro__hiệu_quả_và_nguy_cơ_symptom'})
+MERGE (o1)-[r102:relatedTo]->(o2)
+SET r102.text = 'Bác sĩ sẽ cân nhắc thật thận trọng giữa lợi ích và rủi ro, giữa hiệu quả và nguy cơ trước khi đưa ra quyết định điều trị cho bệnh nhân.'
+
+MERGE (o1:organ {id: 'bệnh_viện_đa_khoa_tâm_anh_organ'})
+MERGE (o2:organ {id: 'đội_ngũ_chuyên_gia__bác_sĩ_giỏi_nghề__giàu_kinh_nghiệm;_các_trang_thiết_bị_hiện_đại_hàng_đầu_hiện_nay_organ'})
+MERGE (o1)-[r103:locatedIn]->(o2)
+SET r103.text = 'Bệnh viện Đa khoa Tâm Anh có đội ngũ chuyên gia, bác sĩ giỏi nghề, giàu kinh nghiệm; các trang thiết bị hiện đại hàng đầu hiện nay.'
+
+MERGE (o1:treatment {id: 'hội_chẩn_treatment'})
+MERGE (o2:disease {id: 'ung_thư_vòm_họng_disease'})
+MERGE (o1)-[r104:treatedBy]->(o2)
+SET r104.text = 'Đặc biệt, sự phối hợp giữa các chuyên khoa Ung bướu, Tai Mũi Họng, Ngoại thần kinh trong hội chẩn giúp chẩn đoán chính xác, xây dựng phác đồ phù hợp, mang lại hiệu quả điều trị cao, tăng tỷ lệ chữa khỏi và tiên lượng sống sau 5 năm tốt hơn cho bệnh nhân.'
+
+MERGE (o1:disease {id: 'ung_thư_vòm_họng_disease'})
+MERGE (o2:lifestyle {id: 'tránh_một_số_yếu_tố_nguy_cơ_lifestyle'})
+MERGE (o1)-[r105:preventedBy]->(o2)
+SET r105.text = 'Theo bác sĩ Trần Vương Thảo Nghi, không phải tất cả các bệnh ung thư vòm họng đều có thể ngăn ngừa được, nhưng có thể làm giảm nguy cơ mắc bệnh bằng cách tránh một số yếu tố nguy cơ sau: (3)'
+
+MERGE (o1:lifestyle {id: 'sử_dụng_thuốc_lá_lifestyle'})
+MERGE (o2:disease {id: 'ung_thư_vòm_họng_disease'})
+MERGE (o1)-[r106:causedBy]->(o2)
+SET r106.text = 'Sử dụng thuốc lá là yếu tố của các bệnh ung thư vòm họng.'
+
+MERGE (o1:lifestyle {id: 'tiếp_xúc_với_thuốc_lá_lifestyle'})
+MERGE (o2:disease {id: 'ung_thư_vòm_họng_disease'})
+MERGE (o1)-[r107:preventedBy]->(o2)
+SET r107.text = 'Mỗi người nên tránh tiếp xúc với thuốc lá (bằng cách không hút thuốc và tránh khói thuốc).'
+
+MERGE (o1:lifestyle {id: 'sử_dụng_rượu_bia_không_kiểm_soát_lifestyle'})
+MERGE (o2:disease {id: 'ung_thư_disease'})
+MERGE (o1)-[r108:causedBy]->(o2)
+SET r108.text = 'Sử dụng rượu bia không kiểm soát cũng là một yếu tố nguy cơ của các bệnh ung thư.'
+
+MERGE (o1:lifestyle {id: 'hút_thuốc_lá_và_uống_rượu_bia_lifestyle'})
+MERGE (o2:disease {id: 'ung_thư_vòm_họng_disease'})
+MERGE (o1)-[r109:aggravatedBy]->(o2)
+SET r109.text = 'Ngoài ra, khi kết hợp hút thuốc lá và uống rượu bia có thể làm tăng đáng kể tác dụng gây ung thư của khói thuốc lên vùng vòm họng.'
+
+MERGE (o1:lifestyle {id: 'tiếp_xúc_với_các_hóa_chất_lifestyle'})
+MERGE (o2:disease {id: 'ung_thư_vòm_họng_disease'})
+MERGE (o1)-[r110:causedBy]->(o2)
+SET r110.text = 'Môi trường làm việc có nguy cơ tiếp xúc với các hóa chất cần bố trí tốt hệ thống thông gió, sử dụng các phương tiện phòng hộ cần thiết (mặt nạ, quần áo, mũ,…) là các biện pháp bảo vệ quan trọng.'
+
+MERGE (o1:lifestyle {id: 'chế_độ_ăn_uống_lành_mạnh_lifestyle'})
+MERGE (o2:disease {id: 'ung_thư_disease'})
+MERGE (o1)-[r111:preventedBy]->(o2)
+SET r111.text = 'Hiệp hội Ung thư Hoa Kỳ khuyến nghị, tuân thủ chế độ ăn uống lành mạnh với đầy đủ các nhóm dinh dưỡng (đạm, tinh bột, chất béo, chất xơ, vitamin và chất khoáng, các sản phẩm từ sữa) bao gồm nhiều trái cây, rau và ngũ cốc nguyên hạt, cân bằng giữa các loại đạm, hạn chế việc tiêu thụ quá nhiều các loại thịt đỏ và thực phẩm chế biến sẵn cũng như đồ uống có cồn.'
+
+MERGE (o1:disease {id: 'nhiễm_hpv_disease'})
+MERGE (o2:organ {id: 'vùng_hầu_họng_organ'})
+MERGE (o1)-[r112:locatedIn]->(o2)
+SET r112.text = 'Nguy cơ nhiễm HPV ở vùng hầu họng tăng lên ở những người có quan hệ tình dục qua đường miệng và nhiều bạn tình.'

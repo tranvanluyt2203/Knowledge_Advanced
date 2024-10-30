@@ -1,0 +1,645 @@
+
+MERGE (o1:cause {id: 'nguyên_nhân_gây_viêm_đường_ruột_cause'})
+MERGE (o2:disease {id: 'viêm_đường_ruột_disease'})
+MERGE (o1)-[r0:causedBy]->(o2)
+SET r0.text = 'Đến thời điểm hiện tại, nguyên nhân gây viêm đường ruột vẫn chưa được xác định chính xác.'
+
+MERGE (o1:lifestyle {id: 'chế_độ_ăn_uống_lifestyle'})
+MERGE (o2:disease {id: 'viêm_đường_ruột_disease'})
+MERGE (o1)-[r1:aggravatedBy]->(o2)
+SET r1.text = 'Trước đây, chế độ ăn uống và tâm lý căng thẳng được nghi ngờ nhưng bác sĩ kết luận đây không phải là nguyên nhân gây bệnh mà chỉ là những yếu tố làm bệnh nặng hơn.'
+
+MERGE (o1:lifestyle {id: 'tâm_lý_căng_thẳng_lifestyle'})
+MERGE (o2:disease {id: 'viêm_đường_ruột_disease'})
+MERGE (o1)-[r2:aggravatedBy]->(o2)
+SET r2.text = 'Trước đây, chế độ ăn uống và tâm lý căng thẳng được nghi ngờ nhưng bác sĩ kết luận đây không phải là nguyên nhân gây bệnh mà chỉ là những yếu tố làm bệnh nặng hơn.'
+
+MERGE (o1:cause {id: 'rối_loạn_chức_năng_hệ_thống_miễn_dịch_cause'})
+MERGE (o2:disease {id: 'viêm_đường_ruột_disease'})
+MERGE (o1)-[r3:causedBy]->(o2)
+SET r3.text = 'Nhiều nghiên cứu cho thấy có thể do rối loạn chức năng hệ thống miễn dịch.'
+
+MERGE (o1:organ {id: 'hệ_thống_miễn_dịch_organ'})
+MERGE (o2:organ {id: 'các_tế_bào_trong_đường_tiêu_hóa_organ'})
+MERGE (o1)-[r4:affects]->(o2)
+SET r4.text = 'Khi hệ thống miễn dịch chống lại sự xâm nhập của virus, vi khuẩn, phản ứng miễn dịch bất thường làm hệ thống miễn dịch tấn công nhầm vào các tế bào trong đường tiêu hóa.'
+
+MERGE (o1:cause {id: 'đột_biến_gen_cause'})
+MERGE (o2:disease {id: 'viêm_ruột_disease'})
+MERGE (o1)-[r5:causedBy]->(o2)
+SET r5.text = 'Ngoài ra, một số đột biến gen cũng liên quan đến tình trạng viêm ruột.'
+
+MERGE (o1:cause {id: 'tuổi_tác_cause'})
+MERGE (o2:disease {id: 'viêm_ruột_disease'})
+MERGE (o1)-[r6:associatedWith]->(o2)
+SET r6.text = 'Các yếu tố nguy cơ:  Tuổi tác: Viêm ruột thường xảy ra phổ biến ở những người dưới 30 tuổi, một số trường hợp xuất hiện trong giai đoạn 50 - 60 tuổi.'
+
+MERGE (o1:cause {id: 'chủng_tộc_cause'})
+MERGE (o2:disease {id: 'viêm_đường_ruột_disease'})
+MERGE (o1)-[r7:associatedWith]->(o2)
+SET r7.text = 'Chủng tộc: Viêm đường ruột xảy ra phổ biến ở người da trắng.'
+
+MERGE (o1:cause {id: 'tiền_sử_gia_đình_có_người_mắc_bệnh_cause'})
+MERGE (o2:disease {id: 'viêm_đường_ruột_disease'})
+MERGE (o1)-[r8:associatedWith]->(o2)
+SET r8.text = 'Tiền sử gia đình có người mắc bệnh'
+
+MERGE (o1:lifestyle {id: 'thói_quen_hút_thuốc_lá_lifestyle'})
+MERGE (o2:disease {id: 'viêm_đường_ruột_disease'})
+MERGE (o1)-[r9:aggravatedBy]->(o2)
+SET r9.text = 'Thói quen hút thuốc lá'
+
+MERGE (o1:treatment {id: 'thuốc_chống_viêm_không_steroid_treatment'})
+MERGE (o2:disease {id: 'viêm_đường_ruột_disease'})
+MERGE (o1)-[r10:aggravatedBy]->(o2)
+SET r10.text = 'Sử dụng thuốc chống viêm không steroid, gồm: Ibuprofen, Naproxen natri, Diclofenac natri…'
+
+MERGE (o1:test {id: 'xét_nghiệm_đánh_giá_thiếu_máu_hoặc_nhiễm_trùng_test'})
+MERGE (o2:disease {id: 'viêm_đường_ruột_disease'})
+MERGE (o1)-[r11:diagnosedBy]->(o2)
+SET r11.text = 'Xét nghiệm đánh giá thiếu máu hoặc nhiễm trùng: Mục đích là để kiểm tra tình trạng thiếu máu (thiếu hồng cầu, gây giảm vận chuyển oxy đến các mô) hoặc dấu hiệu nhiễm trùng do vi khuẩn hoặc virus.'
+
+MERGE (o1:test {id: 'xét_nghiệm_phân_test'})
+MERGE (o2:disease {id: 'viêm_đường_ruột_disease'})
+MERGE (o1)-[r12:diagnosedBy]->(o2)
+SET r12.text = 'Xét nghiệm phân: Bác sĩ tiến hành xét nghiệm phân tích mẫu phân để phát hiện máu ẩn và ký sinh trùng.'
+
+MERGE (o1:test {id: 'nội_soi_đại_tràng_test'})
+MERGE (o2:disease {id: 'viêm_đường_ruột_disease'})
+MERGE (o1)-[r13:diagnosedBy]->(o2)
+SET r13.text = 'Nội soi đại tràng: Bác sĩ sử dụng một ống nội soi nhỏ được gắn máy ảnh để xem xét toàn bộ đại tràng bên trong.'
+
+MERGE (o1:test {id: 'nội_soi_đại_tràng_sigma_test'})
+MERGE (o2:disease {id: 'viêm_đường_ruột_disease'})
+MERGE (o1)-[r14:diagnosedBy]->(o2)
+SET r14.text = 'Nội soi đại tràng sigma: Bác sĩ sử dụng một ống soi nhỏ để kiểm tra trực tràng và đại tràng sigma.'
+
+MERGE (o1:test {id: 'nội_soi_viên_nang_test'})
+MERGE (o2:disease {id: 'viêm_đường_ruột_disease'})
+MERGE (o1)-[r15:diagnosedBy]->(o2)
+SET r15.text = 'Nội soi viên nang: Người bệnh nuốt một viên nang có chứa camera bên trong.'
+
+MERGE (o1:test {id: 'nội_soi_ruột_non_dùng_bóng_hỗ_trợ_test'})
+MERGE (o2:disease {id: 'viêm_đường_ruột_disease'})
+MERGE (o1)-[r16:diagnosedBy]->(o2)
+SET r16.text = 'Nội soi ruột non dùng bóng hỗ trợ: Xét nghiệm này cho phép nhìn sâu hơn vào bên trong ruột non - vị trí mà máy nội soi tiêu chuẩn không thể di chuyển tới.'
+
+MERGE (o1:test {id: 'nội_soi_tiêu_hóa_trên_test'})
+MERGE (o2:disease {id: 'viêm_đường_ruột_disease'})
+MERGE (o1)-[r17:diagnosedBy]->(o2)
+SET r17.text = 'Nội soi tiêu hóa trên: bác sĩ dùng ống soi để kiểm tra thực quản, dạ dày và tá tràng.'
+
+MERGE (o1:symptom {id: 'buồn_nôn_symptom'})
+MERGE (o2:disease {id: 'bệnh_crohn_disease'})
+MERGE (o1)-[r18:isSymptomOf]->(o2)
+SET r18.text = 'Những vùng này ít khi bị tổn thương trong bệnh Crohn nên xét nghiệm này thường được thực hiện chỉ khi bệnh nhân có triệu chứng buồn nôn, nôn, nuốt khó hoặc đau vùng bụng trên.'
+
+MERGE (o1:symptom {id: 'nôn_symptom'})
+MERGE (o2:disease {id: 'bệnh_crohn_disease'})
+MERGE (o1)-[r19:isSymptomOf]->(o2)
+SET r19.text = 'Những vùng này ít khi bị tổn thương trong bệnh Crohn nên xét nghiệm này thường được thực hiện chỉ khi bệnh nhân có triệu chứng buồn nôn, nôn, nuốt khó hoặc đau vùng bụng trên.'
+
+MERGE (o1:symptom {id: 'nuốt_khó_symptom'})
+MERGE (o2:disease {id: 'bệnh_crohn_disease'})
+MERGE (o1)-[r20:isSymptomOf]->(o2)
+SET r20.text = 'Những vùng này ít khi bị tổn thương trong bệnh Crohn nên xét nghiệm này thường được thực hiện chỉ khi bệnh nhân có triệu chứng buồn nôn, nôn, nuốt khó hoặc đau vùng bụng trên.'
+
+MERGE (o1:test {id: 'chụp_x-quang_test'})
+MERGE (o2:disease {id: 'phình_đại_tràng_disease'})
+MERGE (o1)-[r21:diagnosedBy]->(o2)
+SET r21.text = 'Chụp X-quang: Nếu người bệnh có các triệu chứng nghiêm trọng, bác sĩ có thể chỉ định chụp X-quang vùng bụng để kiểm tra tình trạng phình đại tràng hoặc thủng đại tràng.'
+
+MERGE (o1:test {id: 'chụp_x-quang_test'})
+MERGE (o2:disease {id: 'thủng_đại_tràng_disease'})
+MERGE (o1)-[r22:diagnosedBy]->(o2)
+SET r22.text = 'Chụp X-quang: Nếu người bệnh có các triệu chứng nghiêm trọng, bác sĩ có thể chỉ định chụp X-quang vùng bụng để kiểm tra tình trạng phình đại tràng hoặc thủng đại tràng.'
+
+MERGE (o1:test {id: 'chụp_cắt_lớp_vi_tính_(ct)_test'})
+MERGE (o2:disease {id: 'viêm_đường_ruột_disease'})
+MERGE (o1)-[r23:diagnosedBy]->(o2)
+SET r23.text = 'Chụp cắt lớp vi tính (CT): Phương pháp chụp cắt lớp vi tính (CT) giúp thu được hình ảnh chi tiết về toàn bộ ruột cũng như các mô bên ngoài ruột.'
+
+MERGE (o1:test {id: 'chụp_cắt_lớp_vi_tính_(ct)_test'})
+MERGE (o2:organ {id: 'ruột_organ'})
+MERGE (o1)-[r24:affects]->(o2)
+SET r24.text = 'Chụp cắt lớp vi tính (CT): Phương pháp chụp cắt lớp vi tính (CT) giúp thu được hình ảnh chi tiết về toàn bộ ruột cũng như các mô bên ngoài ruột.'
+
+MERGE (o1:test {id: 'chụp_cộng_hưởng_từ_(mri)_test'})
+MERGE (o2:disease {id: 'lỗ_rò_xung_quanh_hậu_môn_disease'})
+MERGE (o1)-[r25:diagnosedBy]->(o2)
+SET r25.text = 'Chụp cộng hưởng từ (MRI): Máy quét MRI sử dụng từ trường để tạo ra hình ảnh chi tiết về các mô, cơ quan, từ đó giúp phát hiện lỗ rò xung quanh hậu môn hoặc ruột non.'
+
+MERGE (o1:test {id: 'chụp_cộng_hưởng_từ_(mri)_test'})
+MERGE (o2:disease {id: 'lỗ_rò_xung_quanh_ruột_non_disease'})
+MERGE (o1)-[r26:diagnosedBy]->(o2)
+SET r26.text = 'Chụp cộng hưởng từ (MRI): Máy quét MRI sử dụng từ trường để tạo ra hình ảnh chi tiết về các mô, cơ quan, từ đó giúp phát hiện lỗ rò xung quanh hậu môn hoặc ruột non.'
+
+MERGE (o1:test {id: 'xét_nghiệm_hình_ảnh_test'})
+MERGE (o2:disease {id: 'viêm_đường_ruột_disease'})
+MERGE (o1)-[r27:diagnosedBy]->(o2)
+SET r27.text = 'Xét nghiệm hình ảnh có thể được chỉ định trong chẩn đoán bệnh viêm đường ruột'
+
+MERGE (o1:disease {id: 'viêm_đường_ruột_disease'})
+MERGE (o2:treatment {id: 'phương_pháp_điều_trị_treatment'})
+MERGE (o1)-[r28:treatedBy]->(o2)
+SET r28.text = 'Tùy theo mức độ nghiêm trọng của bệnh viêm đường ruột, bác sĩ sẽ chỉ định phương pháp điều trị phù hợp:'
+
+MERGE (o1:disease {id: 'viêm_đường_ruột_disease'})
+MERGE (o2:treatment {id: 'thuốc_điều_trị_treatment'})
+MERGE (o1)-[r29:treatedBy]->(o2)
+SET r29.text = 'Đối với hầu hết các trường hợp bệnh viêm đường ruột, bác sĩ sẽ chỉ định sử dụng một số loại thuốc điều trị như sau:'
+
+MERGE (o1:treatment {id: 'thuốc_chống_viêm_nhóm_aminosalicylate_treatment'})
+MERGE (o2:disease {id: 'viêm_loét_đại_tràng_disease'})
+MERGE (o1)-[r30:treatedBy]->(o2)
+SET r30.text = 'Nhóm thuốc chống viêm:  Thuốc chống viêm nhóm aminosalicylate như mesalamine, balsalazide, olsalazine thường là giải pháp đầu tiên trong điều trị viêm loét đại tràng từ nhẹ đến trung bình.'
+
+MERGE (o1:treatment {id: 'mesalamine_treatment'})
+MERGE (o2:disease {id: 'viêm_loét_đại_tràng_disease'})
+MERGE (o1)-[r31:treatedBy]->(o2)
+SET r31.text = 'Nhóm thuốc chống viêm:  Thuốc chống viêm nhóm aminosalicylate như mesalamine, balsalazide, olsalazine thường là giải pháp đầu tiên trong điều trị viêm loét đại tràng từ nhẹ đến trung bình.'
+
+MERGE (o1:treatment {id: 'balsalazide_treatment'})
+MERGE (o2:disease {id: 'viêm_loét_đại_tràng_disease'})
+MERGE (o1)-[r32:treatedBy]->(o2)
+SET r32.text = 'Nhóm thuốc chống viêm:  Thuốc chống viêm nhóm aminosalicylate như mesalamine, balsalazide, olsalazine thường là giải pháp đầu tiên trong điều trị viêm loét đại tràng từ nhẹ đến trung bình.'
+
+MERGE (o1:treatment {id: 'olsalazine_treatment'})
+MERGE (o2:disease {id: 'viêm_loét_đại_tràng_disease'})
+MERGE (o1)-[r33:treatedBy]->(o2)
+SET r33.text = 'Nhóm thuốc chống viêm:  Thuốc chống viêm nhóm aminosalicylate như mesalamine, balsalazide, olsalazine thường là giải pháp đầu tiên trong điều trị viêm loét đại tràng từ nhẹ đến trung bình.'
+
+MERGE (o1:treatment {id: 'thuốc_ức_chế_miễn_dịch_treatment'})
+MERGE (o2:disease {id: 'viêm_đường_ruột_disease'})
+MERGE (o1)-[r34:treatedBy]->(o2)
+SET r34.text = 'Thuốc ức chế miễn dịch: Những loại thuốc này hoạt động với cơ chế ngăn chặn phản ứng miễn dịch giải phóng các hóa chất gây viêm trong cơ thể, từ đó tránh tình trạng tổn thương niêm mạc ruột.'
+
+MERGE (o1:treatment {id: 'thuốc_ức_chế_miễn_dịch_treatment'})
+MERGE (o2:organ {id: 'phản_ứng_miễn_dịch_organ'})
+MERGE (o1)-[r35:affects]->(o2)
+SET r35.text = 'Thuốc ức chế miễn dịch: Những loại thuốc này hoạt động với cơ chế ngăn chặn phản ứng miễn dịch giải phóng các hóa chất gây viêm trong cơ thể, từ đó tránh tình trạng tổn thương niêm mạc ruột.'
+
+MERGE (o1:treatment {id: 'thuốc_ức_chế_miễn_dịch_treatment'})
+MERGE (o2:cause {id: 'hóa_chất_gây_viêm_cause'})
+MERGE (o1)-[r36:affects]->(o2)
+SET r36.text = 'Thuốc ức chế miễn dịch: Những loại thuốc này hoạt động với cơ chế ngăn chặn phản ứng miễn dịch giải phóng các hóa chất gây viêm trong cơ thể, từ đó tránh tình trạng tổn thương niêm mạc ruột.'
+
+MERGE (o1:treatment {id: 'thuốc_ức_chế_miễn_dịch_treatment'})
+MERGE (o2:symptom {id: 'tổn_thương_niêm_mạc_ruột_symptom'})
+MERGE (o1)-[r37:affects]->(o2)
+SET r37.text = 'Thuốc ức chế miễn dịch: Những loại thuốc này hoạt động với cơ chế ngăn chặn phản ứng miễn dịch giải phóng các hóa chất gây viêm trong cơ thể, từ đó tránh tình trạng tổn thương niêm mạc ruột.'
+
+MERGE (o1:treatment {id: 'azathioprine__mercaptopurine__methotrexate_treatment'})
+MERGE (o2:treatment {id: 'thuốc_ức_chế_miễn_dịch_treatment'})
+MERGE (o1)-[r38:isSymptomOf]->(o2)
+SET r38.text = 'Một số loại thường được chỉ định gồm: azathioprine, mercaptopurine, methotrexate.'
+
+MERGE (o1:treatment {id: 'thuốc_sinh_học_treatment'})
+MERGE (o2:disease {id: 'viêm_đường_ruột_disease'})
+MERGE (o1)-[r39:treatedBy]->(o2)
+SET r39.text = 'Thuốc sinh học: thuốc sinh học là nhóm thuốc mới được dùng để ức chế những protein gây ra phản ứng viêm trong cơ thể.'
+
+MERGE (o1:treatment {id: 'thuốc_sinh_học_treatment'})
+MERGE (o2:cause {id: 'protein_gây_ra_phản_ứng_viêm_cause'})
+MERGE (o1)-[r40:affects]->(o2)
+SET r40.text = 'Thuốc sinh học: thuốc sinh học là nhóm thuốc mới được dùng để ức chế những protein gây ra phản ứng viêm trong cơ thể.'
+
+MERGE (o1:treatment {id: 'infliximab__adalimumab__certolizumab__vedolizumab__ustekinumab_treatment'})
+MERGE (o2:treatment {id: 'thuốc_sinh_học_treatment'})
+MERGE (o1)-[r41:isSymptomOf]->(o2)
+SET r41.text = 'Một số thuốc thường dùng là infliximab, adalimumab, certolizumab, vedolizumab, ustekinumab.'
+
+MERGE (o1:treatment {id: 'thuốc_kháng_sinh_treatment'})
+MERGE (o2:disease {id: 'nhiễm_trùng_disease'})
+MERGE (o1)-[r42:treatedBy]->(o2)
+SET r42.text = 'Thuốc kháng sinh thường dùng khi nghi ngờ có tình trạng nhiễm trùng, như trong trường hợp bệnh Crohn quanh hậu môn.'
+
+MERGE (o1:treatment {id: 'thuốc_kháng_sinh_treatment'})
+MERGE (o2:disease {id: 'bệnh_crohn_quanh_hậu_môn_disease'})
+MERGE (o1)-[r43:treatedBy]->(o2)
+SET r43.text = 'Thuốc kháng sinh thường dùng khi nghi ngờ có tình trạng nhiễm trùng, như trong trường hợp bệnh Crohn quanh hậu môn.'
+
+MERGE (o1:treatment {id: 'thuốc_chống_tiêu_chảy_treatment'})
+MERGE (o2:symptom {id: 'tiêu_chảy_symptom'})
+MERGE (o1)-[r44:treatedBy]->(o2)
+SET r44.text = 'Thuốc chống tiêu chảy: Thuốc bổ sung chất xơ như bột psyllium, methylcellulose.'
+
+MERGE (o1:treatment {id: 'bột_psyllium__methylcellulose_treatment'})
+MERGE (o2:treatment {id: 'thuốc_chống_tiêu_chảy_treatment'})
+MERGE (o1)-[r45:isSymptomOf]->(o2)
+SET r45.text = 'Thuốc chống tiêu chảy: Thuốc bổ sung chất xơ như bột psyllium, methylcellulose.'
+
+MERGE (o1:treatment {id: 'loperamid_treatment'})
+MERGE (o2:symptom {id: 'tiêu_chảy_nặng_symptom'})
+MERGE (o1)-[r46:treatedBy]->(o2)
+SET r46.text = 'Loperamid được dùng trong trường hợp tiêu chảy nặng.'
+
+MERGE (o1:treatment {id: 'acetaminophen_treatment'})
+MERGE (o2:symptom {id: 'đau_nhẹ_symptom'})
+MERGE (o1)-[r47:treatedBy]->(o2)
+SET r47.text = 'Thuốc giảm đau: Acetaminophen trong trường hợp đau nhẹ.'
+
+MERGE (o1:treatment {id: 'ibuprofen__naproxen__diclofenac_treatment'})
+MERGE (o2:disease {id: 'viêm_đường_ruột_disease'})
+MERGE (o1)-[r48:aggravatedBy]->(o2)
+SET r48.text = 'Nhóm thuốc giảm đau không steroid như ibuprofen, naproxen, diclofenac… có thể làm cho bệnh nặng hơn và nên tránh sử dụng.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_đường_ruột_disease'})
+MERGE (o2:treatment {id: 'thuốc_treatment'})
+MERGE (o1)-[r49:treatedBy]->(o2)
+SET r49.text = 'Những người bị bệnh viêm đường ruột phải tham khảo ý kiến bác sĩ trước khi sử dụng thuốc.'
+
+MERGE (o1:treatment {id: 'thuốc_ức_chế_miễn_dịch_treatment'})
+MERGE (o2:disease {id: 'nhiễm_trùng_nặng_disease'})
+MERGE (o1)-[r50:aggravatedBy]->(o2)
+SET r50.text = 'Một số loại thuốc ức chế miễn dịch có thể làm tăng nguy cơ nhiễm trùng nặng.'
+
+MERGE (o1:test {id: 'xét_nghiệm_tầm_soát_lao__viêm_gan_siêu_vi_b__c_test'})
+MERGE (o2:disease {id: 'viêm_đường_ruột_disease'})
+MERGE (o1)-[r51:diagnosedBy]->(o2)
+SET r51.text = 'Do đó, người bệnh nên làm xét nghiệm tầm soát lao, viêm gan siêu vi B, C… và tiêm tất cả các loại vacxin được khuyến nghị trước khi bắt đầu điều trị các thuốc có khả năng ức chế miễn dịch.'
+
+MERGE (o1:treatment {id: 'vacxin_treatment'})
+MERGE (o2:disease {id: 'viêm_đường_ruột_disease'})
+MERGE (o1)-[r52:preventedBy]->(o2)
+SET r52.text = 'Do đó, người bệnh nên làm xét nghiệm tầm soát lao, viêm gan siêu vi B, C… và tiêm tất cả các loại vacxin được khuyến nghị trước khi bắt đầu điều trị các thuốc có khả năng ức chế miễn dịch.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_viêm_loét_đại_tràng_treatment'})
+MERGE (o2:disease {id: 'viêm_đường_ruột_disease'})
+MERGE (o1)-[r53:treatedBy]->(o2)
+SET r53.text = 'Với các trường hợp nghiêm trọng không thể điều trị hiệu quả bằng thuốc, bác sĩ có thể đề nghị phẫu thuật, cụ thể như sau:  Phẫu thuật viêm loét đại tràng (cắt bỏ toàn bộ đại tràng và trực tràng).'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_viêm_loét_đại_tràng_treatment'})
+MERGE (o2:organ {id: 'đại_tràng_và_trực_tràng_organ'})
+MERGE (o1)-[r54:affects]->(o2)
+SET r54.text = 'Với các trường hợp nghiêm trọng không thể điều trị hiệu quả bằng thuốc, bác sĩ có thể đề nghị phẫu thuật, cụ thể như sau:  Phẫu thuật viêm loét đại tràng (cắt bỏ toàn bộ đại tràng và trực tràng).'
+
+MERGE (o1:treatment {id: 'cắt_bỏ_một_phần_đường_tiêu_hóa_treatment'})
+MERGE (o2:disease {id: 'viêm_đường_ruột_disease'})
+MERGE (o1)-[r55:treatedBy]->(o2)
+SET r55.text = 'Cắt bỏ một phần đường tiêu hóa bị tổn thương và nối các phần khỏe mạnh lại với nhau.'
+
+MERGE (o1:treatment {id: 'cắt_bỏ_một_phần_đường_tiêu_hóa_treatment'})
+MERGE (o2:organ {id: 'đường_tiêu_hóa_organ'})
+MERGE (o1)-[r56:affects]->(o2)
+SET r56.text = 'Cắt bỏ một phần đường tiêu hóa bị tổn thương và nối các phần khỏe mạnh lại với nhau.'
+
+MERGE (o1:food {id: 'thực_phẩm__đồ_uống_từ_sữa_food'})
+MERGE (o2:disease {id: 'viêm_đường_ruột_disease'})
+MERGE (o1)-[r57:aggravatedBy]->(o2)
+SET r57.text = 'Dưới đây là một số giải pháp điều trị tại nhà thường được chỉ định áp dụng cho tình trạng viêm đường ruột:  Hạn chế ăn các loại thực phẩm, đồ uống từ sữa để tránh làm trầm trọng hơn triệu chứng đau bụng, đầy hơi, tiêu chảy…'
+
+MERGE (o1:symptom {id: 'đau_bụng__đầy_hơi__tiêu_chảy_symptom'})
+MERGE (o2:disease {id: 'viêm_đường_ruột_disease'})
+MERGE (o1)-[r58:isSymptomOf]->(o2)
+SET r58.text = 'Dưới đây là một số giải pháp điều trị tại nhà thường được chỉ định áp dụng cho tình trạng viêm đường ruột:  Hạn chế ăn các loại thực phẩm, đồ uống từ sữa để tránh làm trầm trọng hơn triệu chứng đau bụng, đầy hơi, tiêu chảy…'
+
+MERGE (o1:lifestyle {id: 'ăn_nhiều_bữa_nhỏ_trong_ngày_lifestyle'})
+MERGE (o2:disease {id: 'viêm_đường_ruột_disease'})
+MERGE (o1)-[r59:treatedBy]->(o2)
+SET r59.text = 'Ăn nhiều bữa nhỏ trong ngày (5 - 6 bữa nhỏ thay vì 2 - 3 bữa lớn).'
+
+MERGE (o1:lifestyle {id: 'uống_nhiều_nước_mỗi_ngày_lifestyle'})
+MERGE (o2:disease {id: 'viêm_đường_ruột_disease'})
+MERGE (o1)-[r60:treatedBy]->(o2)
+SET r60.text = 'Uống nhiều nước mỗi ngày, tránh sử dụng rượu, trà, cà phê, đồ uống cáo gas.'
+
+MERGE (o1:food {id: 'rượu__trà__cà_phê__đồ_uống_cáo_gas_food'})
+MERGE (o2:disease {id: 'viêm_đường_ruột_disease'})
+MERGE (o1)-[r61:aggravatedBy]->(o2)
+SET r61.text = 'Uống nhiều nước mỗi ngày, tránh sử dụng rượu, trà, cà phê, đồ uống cáo gas.'
+
+MERGE (o1:treatment {id: 'vitamin_tổng_hợp_treatment'})
+MERGE (o2:disease {id: 'viêm_đường_ruột_disease'})
+MERGE (o1)-[r62:treatedBy]->(o2)
+SET r62.text = 'Xem xét bổ sung Vitamin tổng hợp.'
+
+MERGE (o1:symptom {id: 'chán_ăn__tiêu_chảy__hấp_thu_kém_symptom'})
+MERGE (o2:disease {id: 'viêm_đường_ruột_disease'})
+MERGE (o1)-[r63:isSymptomOf]->(o2)
+SET r63.text = 'Tình trạng chán ăn, tiêu chảy và hấp thu kém do viêm có thể khiến cơ thể người bệnh khó nhận được lượng calo và chất dinh dưỡng cần thiết.'
+
+MERGE (o1:food {id: 'sữa__cà_phê_food'})
+MERGE (o2:disease {id: 'viêm_đường_ruột_disease'})
+MERGE (o1)-[r64:aggravatedBy]->(o2)
+SET r64.text = 'Theo đó, trẻ em bị viêm đường ruột nên ăn nhiều loại thực phẩm có lợi, uống nhiều nước và tránh một số loại đồ ăn (sữa, cà phê…) dễ làm các triệu chứng trở nên tồi tệ hơn.'
+
+MERGE (o1:treatment {id: 'canxi_và_vitamin_d_treatment'})
+MERGE (o2:disease {id: 'viêm_đường_ruột_disease'})
+MERGE (o1)-[r65:treatedBy]->(o2)
+SET r65.text = 'Một số trường hợp có thể cần bổ sung Vitamin, khoáng chất, đặc biệt là Canxi và Vitamin D.'
+
+MERGE (o1:treatment {id: 'công_thức_đặc_biệt_treatment'})
+MERGE (o2:disease {id: 'viêm_đường_ruột_disease'})
+MERGE (o1)-[r66:treatedBy]->(o2)
+SET r66.text = 'Trẻ em không phát triển tốt đôi khi phải tham khảo các công thức đặc biệt khác để tăng cường lượng calo và dinh dưỡng.'
+
+MERGE (o1:disease {id: 'viêm_đường_ruột_disease'})
+MERGE (o2:symptom {id: 'đau_đớn__khó_chịu_symptom'})
+MERGE (o1)-[r67:isSymptomOf]->(o2)
+SET r67.text = 'Viêm đường ruột gây ra nhiều triệu chứng đau đớn, khó chịu, thậm chí có thể dẫn đến vô vàn biến chứng nghiêm trọng nếu không được điều trị hiệu quả.'
+
+MERGE (o1:disease {id: 'viêm_đường_ruột_disease'})
+MERGE (o2:disease {id: 'biến_chứng_nghiêm_trọng_disease'})
+MERGE (o1)-[r68:isSymptomOf]->(o2)
+SET r68.text = 'Viêm đường ruột gây ra nhiều triệu chứng đau đớn, khó chịu, thậm chí có thể dẫn đến vô vàn biến chứng nghiêm trọng nếu không được điều trị hiệu quả.'
+
+MERGE (o1:disease {id: 'viêm_ruột_disease'})
+MERGE (o2:treatment {id: 'phương_pháp_phòng_ngừa_treatment'})
+MERGE (o1)-[r69:preventedBy]->(o2)
+SET r69.text = 'Hiện nay, chưa có phương pháp phòng ngừa bệnh viêm ruột.'
+
+MERGE (o1:lifestyle {id: 'ăn_các_bữa_nhỏ_cách_nhau_2_-_4_giờ_lifestyle'})
+MERGE (o2:disease {id: 'viêm_đường_ruột_disease'})
+MERGE (o1)-[r70:treatedBy]->(o2)
+SET r70.text = 'Dưới đây là một số giải pháp hữu ích có thể giúp kiểm soát triệu chứng mà người bệnh nên thực hiện:(2)  Ăn các bữa nhỏ cách nhau 2 - 4 giờ.'
+
+MERGE (o1:lifestyle {id: 'thiền__tập_thái_cực_quyền__yoga__nghe_nhạc_lifestyle'})
+MERGE (o2:disease {id: 'viêm_đường_ruột_disease'})
+MERGE (o1)-[r71:treatedBy]->(o2)
+SET r71.text = 'Kiểm soát căng thẳng bằng cách thiền, tập thái cực quyền, yoga, nghe nhạc…'
+
+MERGE (o1:lifestyle {id: 'ngủ_đủ_giấc__hoạt_động_thể_chất_đều_đặn_lifestyle'})
+MERGE (o2:disease {id: 'viêm_đường_ruột_disease'})
+MERGE (o1)-[r72:treatedBy]->(o2)
+SET r72.text = 'Duy trì ngủ đủ giấc và hoạt động thể chất đều đặn.'
+
+MERGE (o1:food {id: 'sữa__thức_ăn_nhiều_gia_vị__thức_ăn_nhiều_dầu_mỡ_food'})
+MERGE (o2:disease {id: 'viêm_đường_ruột_disease'})
+MERGE (o1)-[r73:aggravatedBy]->(o2)
+SET r73.text = 'Tránh tiêu thụ các loại thực phẩm có thể gây kích thích đường ruột điển hình là sữa, thức ăn nhiều gia vị, thức ăn nhiều dầu mỡ…'
+
+MERGE (o1:food {id: 'thức_uống_chứa_cồn__caffeine__gas_food'})
+MERGE (o2:disease {id: 'viêm_đường_ruột_disease'})
+MERGE (o1)-[r74:aggravatedBy]->(o2)
+SET r74.text = 'Hạn chế tiêu thụ thức uống chứa cồn, caffeine, gas…'
+
+MERGE (o1:lifestyle {id: 'uống_nhiều_nước_mỗi_ngày_lifestyle'})
+MERGE (o2:disease {id: 'viêm_đường_ruột_disease'})
+MERGE (o1)-[r75:treatedBy]->(o2)
+SET r75.text = 'Luôn uống nhiều nước mỗi ngày.'
+
+MERGE (o1:lifestyle {id: 'hút_thuốc_lá_lifestyle'})
+MERGE (o2:disease {id: 'viêm_đường_ruột_disease'})
+MERGE (o1)-[r76:aggravatedBy]->(o2)
+SET r76.text = 'Từ bỏ thói quen hút thuốc lá.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_ruột_disease'})
+MERGE (o2:symptom {id: 'biến_chứng_nghiêm_trọng_symptom'})
+MERGE (o1)-[r77:isSymptomOf]->(o2)
+SET r77.text = 'Bệnh viêm ruột có thể dẫn đến nhiều biến chứng nghiêm trọng cho sức khỏe, thậm chí đe dọa đến tính mạng nếu không điều trị hiệu quả.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_ruột_disease'})
+MERGE (o2:treatment {id: 'thiếu_điều_trị_hiệu_quả_treatment'})
+MERGE (o1)-[r78:causedBy]->(o2)
+SET r78.text = 'Bệnh viêm ruột có thể dẫn đến nhiều biến chứng nghiêm trọng cho sức khỏe, thậm chí đe dọa đến tính mạng nếu không điều trị hiệu quả.'
+
+MERGE (o1:symptom {id: 'biến_chứng_nghiêm_trọng_symptom'})
+MERGE (o2:symptom {id: 'đe_dọa_đến_tính_mạng_symptom'})
+MERGE (o1)-[r79:relatedTo]->(o2)
+SET r79.text = 'Bệnh viêm ruột có thể dẫn đến nhiều biến chứng nghiêm trọng cho sức khỏe, thậm chí đe dọa đến tính mạng nếu không điều trị hiệu quả.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_ruột_disease'})
+MERGE (o2:disease {id: 'ung_thư_đại_tràng_disease'})
+MERGE (o1)-[r80:affects]->(o2)
+SET r80.text = 'Một trong số đó là làm tăng nguy cơ mắc ung thư đại tràng.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_ruột_disease'})
+MERGE (o2:treatment {id: 'tầm_soát__thăm_khám_định_kỳ_treatment'})
+MERGE (o1)-[r81:treatedBy]->(o2)
+SET r81.text = 'Vì vậy, người bệnh nên tầm soát, thăm khám định kỳ để theo dõi tình trạng một cách sát sao, tránh bệnh triển trầm trọng.'
+
+MERGE (o1:lifestyle {id: 'chế_độ_ăn_uống_lifestyle'})
+MERGE (o2:symptom {id: 'triệu_chứng_viêm_ruột_symptom'})
+MERGE (o1)-[r82:affects]->(o2)
+SET r82.text = 'Chế độ ăn uống hằng ngày có thể ảnh hưởng đến hiệu quả cải thiện triệu chứng viêm ruột.'
+
+MERGE (o1:food {id: 'thực_phẩm_giàu_axit_béo_omega-3_food'})
+MERGE (o2:disease {id: 'bệnh_viêm_ruột_disease'})
+MERGE (o1)-[r83:relatedTo]->(o2)
+SET r83.text = 'Thực phẩm nên ăn: Thực phẩm giàu axit béo Omega-3 (hạt lanh, dầu cá…), thực phẩm dễ tiêu hóa (bánh mì, bột yến mạch…).'
+
+MERGE (o1:food {id: 'thực_phẩm_dễ_tiêu_hóa_food'})
+MERGE (o2:disease {id: 'bệnh_viêm_ruột_disease'})
+MERGE (o1)-[r84:relatedTo]->(o2)
+SET r84.text = 'Thực phẩm nên ăn: Thực phẩm giàu axit béo Omega-3 (hạt lanh, dầu cá…), thực phẩm dễ tiêu hóa (bánh mì, bột yến mạch…).'
+
+MERGE (o1:food {id: 'thực_phẩm_giàu_omega-6_food'})
+MERGE (o2:disease {id: 'bệnh_viêm_ruột_disease'})
+MERGE (o1)-[r85:aggravatedBy]->(o2)
+SET r85.text = 'Thực phẩm nên kiêng: Thực phẩm giàu Omega-6 (thịt đỏ, đồ chiên…), sữa, các sản phẩm từ sữa (phô mai, sữa chua…), thức ăn nhiều đường, đồ uống có cồn, caffeine…'
+
+MERGE (o1:food {id: 'sữa_food'})
+MERGE (o2:disease {id: 'bệnh_viêm_ruột_disease'})
+MERGE (o1)-[r86:aggravatedBy]->(o2)
+SET r86.text = 'Thực phẩm nên kiêng: Thực phẩm giàu Omega-6 (thịt đỏ, đồ chiên…), sữa, các sản phẩm từ sữa (phô mai, sữa chua…), thức ăn nhiều đường, đồ uống có cồn, caffeine…'
+
+MERGE (o1:food {id: 'các_sản_phẩm_từ_sữa_food'})
+MERGE (o2:disease {id: 'bệnh_viêm_ruột_disease'})
+MERGE (o1)-[r87:aggravatedBy]->(o2)
+SET r87.text = 'Thực phẩm nên kiêng: Thực phẩm giàu Omega-6 (thịt đỏ, đồ chiên…), sữa, các sản phẩm từ sữa (phô mai, sữa chua…), thức ăn nhiều đường, đồ uống có cồn, caffeine…'
+
+MERGE (o1:food {id: 'thức_ăn_nhiều_đường_food'})
+MERGE (o2:disease {id: 'bệnh_viêm_ruột_disease'})
+MERGE (o1)-[r88:aggravatedBy]->(o2)
+SET r88.text = 'Thực phẩm nên kiêng: Thực phẩm giàu Omega-6 (thịt đỏ, đồ chiên…), sữa, các sản phẩm từ sữa (phô mai, sữa chua…), thức ăn nhiều đường, đồ uống có cồn, caffeine…'
+
+MERGE (o1:food {id: 'đồ_uống_có_cồn_food'})
+MERGE (o2:disease {id: 'bệnh_viêm_ruột_disease'})
+MERGE (o1)-[r89:aggravatedBy]->(o2)
+SET r89.text = 'Thực phẩm nên kiêng: Thực phẩm giàu Omega-6 (thịt đỏ, đồ chiên…), sữa, các sản phẩm từ sữa (phô mai, sữa chua…), thức ăn nhiều đường, đồ uống có cồn, caffeine…'
+
+MERGE (o1:food {id: 'caffeine_food'})
+MERGE (o2:disease {id: 'bệnh_viêm_ruột_disease'})
+MERGE (o1)-[r90:aggravatedBy]->(o2)
+SET r90.text = 'Thực phẩm nên kiêng: Thực phẩm giàu Omega-6 (thịt đỏ, đồ chiên…), sữa, các sản phẩm từ sữa (phô mai, sữa chua…), thức ăn nhiều đường, đồ uống có cồn, caffeine…'
+
+MERGE (o1:disease {id: 'viêm_đường_ruột_disease'})
+MERGE (o2:treatment {id: 'thiếu_điều_trị_kịp_thời_treatment'})
+MERGE (o1)-[r91:causedBy]->(o2)
+SET r91.text = 'Viêm đường ruột nếu không được điều trị kịp thời về lâu dài có thể dẫn đến nhiều biến chứng nghiêm trọng như sau:(3)'
+
+MERGE (o1:disease {id: 'viêm_đường_ruột_disease'})
+MERGE (o2:symptom {id: 'biến_chứng_nghiêm_trọng_symptom'})
+MERGE (o1)-[r92:isSymptomOf]->(o2)
+SET r92.text = 'Viêm đường ruột nếu không được điều trị kịp thời về lâu dài có thể dẫn đến nhiều biến chứng nghiêm trọng như sau:(3)'
+
+MERGE (o1:disease {id: 'ung_thư_đại_tràng_disease'})
+MERGE (o2:disease {id: 'viêm_loét_đại_tràng_disease'})
+MERGE (o1)-[r93:isSymptomOf]->(o2)
+SET r93.text = 'Ung thư đại tràng: Viêm loét đại tràng hoặc bệnh Crohn ảnh hưởng đến phần lớn ruột kết, có thể làm tăng nguy cơ ung thư cho cơ quan này.'
+
+MERGE (o1:disease {id: 'ung_thư_đại_tràng_disease'})
+MERGE (o2:disease {id: 'bệnh_crohn_disease'})
+MERGE (o1)-[r94:isSymptomOf]->(o2)
+SET r94.text = 'Ung thư đại tràng: Viêm loét đại tràng hoặc bệnh Crohn ảnh hưởng đến phần lớn ruột kết, có thể làm tăng nguy cơ ung thư cho cơ quan này.'
+
+MERGE (o1:disease {id: 'viêm_loét_đại_tràng_disease'})
+MERGE (o2:organ {id: 'ruột_kết_organ'})
+MERGE (o1)-[r95:affects]->(o2)
+SET r95.text = 'Ung thư đại tràng: Viêm loét đại tràng hoặc bệnh Crohn ảnh hưởng đến phần lớn ruột kết, có thể làm tăng nguy cơ ung thư cho cơ quan này.'
+
+MERGE (o1:disease {id: 'bệnh_crohn_disease'})
+MERGE (o2:organ {id: 'ruột_kết_organ'})
+MERGE (o1)-[r96:affects]->(o2)
+SET r96.text = 'Ung thư đại tràng: Viêm loét đại tràng hoặc bệnh Crohn ảnh hưởng đến phần lớn ruột kết, có thể làm tăng nguy cơ ung thư cho cơ quan này.'
+
+MERGE (o1:disease {id: 'viêm_loét_đại_tràng_disease'})
+MERGE (o2:disease {id: 'ung_thư_đại_tràng_disease'})
+MERGE (o1)-[r97:affects]->(o2)
+SET r97.text = 'Ung thư đại tràng: Viêm loét đại tràng hoặc bệnh Crohn ảnh hưởng đến phần lớn ruột kết, có thể làm tăng nguy cơ ung thư cho cơ quan này.'
+
+MERGE (o1:disease {id: 'bệnh_crohn_disease'})
+MERGE (o2:disease {id: 'ung_thư_đại_tràng_disease'})
+MERGE (o1)-[r98:affects]->(o2)
+SET r98.text = 'Ung thư đại tràng: Viêm loét đại tràng hoặc bệnh Crohn ảnh hưởng đến phần lớn ruột kết, có thể làm tăng nguy cơ ung thư cho cơ quan này.'
+
+MERGE (o1:disease {id: 'ung_thư_đại_tràng_disease'})
+MERGE (o2:test {id: 'nội_soi_đại_tràng_định_kỳ_test'})
+MERGE (o1)-[r99:diagnosedBy]->(o2)
+SET r99.text = 'Theo đó, sàng lọc ung thư bằng nội soi đại tràng định kỳ thường chỉ định thực hiện từ khoảng 8 - 10 năm sau khi được chẩn đoán.'
+
+MERGE (o1:disease {id: 'thiếu_máu_disease'})
+MERGE (o2:symptom {id: 'số_lượng_tế_bào_hồng_cầu_khỏe_mạnh_không_đủ_symptom'})
+MERGE (o1)-[r100:causedBy]->(o2)
+SET r100.text = 'Thiếu máu: Tình trạng này xảy ra khi số lượng tế bào hồng cầu khỏe mạnh không đủ để vận chuyển oxy để tất cả các bộ phận trong cơ thể.'
+
+MERGE (o1:disease {id: 'thiếu_máu_disease'})
+MERGE (o2:symptom {id: 'vận_chuyển_oxy_symptom'})
+MERGE (o1)-[r101:affects]->(o2)
+SET r101.text = 'Thiếu máu: Tình trạng này xảy ra khi số lượng tế bào hồng cầu khỏe mạnh không đủ để vận chuyển oxy để tất cả các bộ phận trong cơ thể.'
+
+MERGE (o1:symptom {id: 'mất_nước_symptom'})
+MERGE (o2:disease {id: 'viêm_đường_ruột_disease'})
+MERGE (o1)-[r102:isSymptomOf]->(o2)
+SET r102.text = 'Mất nước hoặc suy dinh dưỡng: Tiêu chảy, đau bụng kéo dài khiến cơ thể bị mất nước và khó hấp thụ dinh dưỡng.'
+
+MERGE (o1:symptom {id: 'suy_dinh_dưỡng_symptom'})
+MERGE (o2:disease {id: 'viêm_đường_ruột_disease'})
+MERGE (o1)-[r103:isSymptomOf]->(o2)
+SET r103.text = 'Mất nước hoặc suy dinh dưỡng: Tiêu chảy, đau bụng kéo dài khiến cơ thể bị mất nước và khó hấp thụ dinh dưỡng.'
+
+MERGE (o1:symptom {id: 'tiêu_chảy_symptom'})
+MERGE (o2:disease {id: 'viêm_đường_ruột_disease'})
+MERGE (o1)-[r104:isSymptomOf]->(o2)
+SET r104.text = 'Mất nước hoặc suy dinh dưỡng: Tiêu chảy, đau bụng kéo dài khiến cơ thể bị mất nước và khó hấp thụ dinh dưỡng.'
+
+MERGE (o1:symptom {id: 'đau_bụng_symptom'})
+MERGE (o2:disease {id: 'viêm_đường_ruột_disease'})
+MERGE (o1)-[r105:isSymptomOf]->(o2)
+SET r105.text = 'Mất nước hoặc suy dinh dưỡng: Tiêu chảy, đau bụng kéo dài khiến cơ thể bị mất nước và khó hấp thụ dinh dưỡng.'
+
+MERGE (o1:disease {id: 'phình_đại_tràng_disease'})
+MERGE (o2:disease {id: 'viêm_ruột_disease'})
+MERGE (o1)-[r106:isSymptomOf]->(o2)
+SET r106.text = 'Phình đại tràng: Viêm ruột có thể khiến đại tràng giãn nở bất thường, ngừng hoạt động, gây đau dữ dội và thậm chí là tử vong.'
+
+MERGE (o1:disease {id: 'viêm_ruột_disease'})
+MERGE (o2:organ {id: 'đại_tràng_organ'})
+MERGE (o1)-[r107:affects]->(o2)
+SET r107.text = 'Phình đại tràng: Viêm ruột có thể khiến đại tràng giãn nở bất thường, ngừng hoạt động, gây đau dữ dội và thậm chí là tử vong.'
+
+MERGE (o1:symptom {id: 'đau_dữ_dội_symptom'})
+MERGE (o2:disease {id: 'phình_đại_tràng_disease'})
+MERGE (o1)-[r108:isSymptomOf]->(o2)
+SET r108.text = 'Phình đại tràng: Viêm ruột có thể khiến đại tràng giãn nở bất thường, ngừng hoạt động, gây đau dữ dội và thậm chí là tử vong.'
+
+MERGE (o1:symptom {id: 'tử_vong_symptom'})
+MERGE (o2:disease {id: 'phình_đại_tràng_disease'})
+MERGE (o1)-[r109:isSymptomOf]->(o2)
+SET r109.text = 'Phình đại tràng: Viêm ruột có thể khiến đại tràng giãn nở bất thường, ngừng hoạt động, gây đau dữ dội và thậm chí là tử vong.'
+
+MERGE (o1:symptom {id: 'yếu_xương_symptom'})
+MERGE (o2:disease {id: 'bệnh_crohn_disease'})
+MERGE (o1)-[r110:isSymptomOf]->(o2)
+SET r110.text = 'Yếu xương: Bệnh Crohn có thể gây loãng xương và mất xương.'
+
+MERGE (o1:disease {id: 'bệnh_crohn_disease'})
+MERGE (o2:organ {id: 'xương_organ'})
+MERGE (o1)-[r111:affects]->(o2)
+SET r111.text = 'Yếu xương: Bệnh Crohn có thể gây loãng xương và mất xương.'
+
+MERGE (o1:disease {id: 'viêm_gan_disease'})
+MERGE (o2:disease {id: 'viêm_đường_ruột_disease'})
+MERGE (o1)-[r112:isSymptomOf]->(o2)
+SET r112.text = 'Viêm ở cơ quan khác: Viêm gan, sỏi mật, viêm tuyến tụy.'
+
+MERGE (o1:disease {id: 'sỏi_mật_disease'})
+MERGE (o2:disease {id: 'viêm_đường_ruột_disease'})
+MERGE (o1)-[r113:isSymptomOf]->(o2)
+SET r113.text = 'Viêm ở cơ quan khác: Viêm gan, sỏi mật, viêm tuyến tụy.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_tụy_disease'})
+MERGE (o2:disease {id: 'viêm_đường_ruột_disease'})
+MERGE (o1)-[r114:isSymptomOf]->(o2)
+SET r114.text = 'Viêm ở cơ quan khác: Viêm gan, sỏi mật, viêm tuyến tụy.'
+
+MERGE (o1:disease {id: 'lỗ_rò_disease'})
+MERGE (o2:disease {id: 'viêm_đường_ruột_disease'})
+MERGE (o1)-[r115:isSymptomOf]->(o2)
+SET r115.text = 'Lỗ rò: Đôi khi tình trạng viêm có thể lan rộng hoàn toàn qua thành ruột, tạo ra lỗ rò gần hoặc xung quanh vùng hậu môn (loại phổ biến nhất) hoặc vùng bên trong, hướng vào thành bụng.'
+
+MERGE (o1:disease {id: 'lỗ_rò_disease'})
+MERGE (o2:organ {id: 'vùng_hậu_môn_organ'})
+MERGE (o1)-[r116:locatedIn]->(o2)
+SET r116.text = 'Lỗ rò: Đôi khi tình trạng viêm có thể lan rộng hoàn toàn qua thành ruột, tạo ra lỗ rò gần hoặc xung quanh vùng hậu môn (loại phổ biến nhất) hoặc vùng bên trong, hướng vào thành bụng.'
+
+MERGE (o1:disease {id: 'lỗ_rò_disease'})
+MERGE (o2:organ {id: 'thành_bụng_organ'})
+MERGE (o1)-[r117:locatedIn]->(o2)
+SET r117.text = 'Lỗ rò: Đôi khi tình trạng viêm có thể lan rộng hoàn toàn qua thành ruột, tạo ra lỗ rò gần hoặc xung quanh vùng hậu môn (loại phổ biến nhất) hoặc vùng bên trong, hướng vào thành bụng.'
+
+MERGE (o1:disease {id: 'lỗ_rò_disease'})
+MERGE (o2:symptom {id: 'nhiễm_trùng_symptom'})
+MERGE (o1)-[r118:causedBy]->(o2)
+SET r118.text = 'Trong một số trường hợp, lỗ rò có thể bị nhiễm trùng, từ đó tạo thành một túi mủ gọi là áp xe.'
+
+MERGE (o1:disease {id: 'áp_xe_disease'})
+MERGE (o2:symptom {id: 'nhiễm_trùng_symptom'})
+MERGE (o1)-[r119:isSymptomOf]->(o2)
+SET r119.text = 'Trong một số trường hợp, lỗ rò có thể bị nhiễm trùng, từ đó tạo thành một túi mủ gọi là áp xe.'
+
+MERGE (o1:disease {id: 'nứt_hậu_môn_disease'})
+MERGE (o2:organ {id: 'vùng_hậu_môn_organ'})
+MERGE (o1)-[r120:locatedIn]->(o2)
+SET r120.text = 'Nứt hậu môn: Đây là một vết rách nhỏ ở mô lót hoặc vùng da xung quanh hậu môn - nơi nhiễm trùng có thể xảy ra.'
+
+MERGE (o1:disease {id: 'nứt_hậu_môn_disease'})
+MERGE (o2:symptom {id: 'nhiễm_trùng_symptom'})
+MERGE (o1)-[r121:causedBy]->(o2)
+SET r121.text = 'Nứt hậu môn: Đây là một vết rách nhỏ ở mô lót hoặc vùng da xung quanh hậu môn - nơi nhiễm trùng có thể xảy ra.'
+
+MERGE (o1:symptom {id: 'đau_đơn_khi_đi_đại_tiện_symptom'})
+MERGE (o2:disease {id: 'nứt_hậu_môn_disease'})
+MERGE (o1)-[r122:isSymptomOf]->(o2)
+SET r122.text = 'Tình trạng này thường gây ra triệu chứng điển hình là đau đơn khi đi đại tiện và có thể dẫn đến rò quanh hậu môn.'
+
+MERGE (o1:disease {id: 'rò_quanh_hậu_môn_disease'})
+MERGE (o2:disease {id: 'nứt_hậu_môn_disease'})
+MERGE (o1)-[r123:isSymptomOf]->(o2)
+SET r123.text = 'Tình trạng này thường gây ra triệu chứng điển hình là đau đơn khi đi đại tiện và có thể dẫn đến rò quanh hậu môn.'
+
+MERGE (o1:treatment {id: 'trung_tâm_nội_soi_và_phẫu_thuật_nội_soi_tiêu_hóa_treatment'})
+MERGE (o2:disease {id: 'bệnh_viêm_ruột_disease'})
+MERGE (o1)-[r124:treatedBy]->(o2)
+SET r124.text = 'Trung tâm Nội soi và Phẫu thuật nội soi tiêu hóa (BVĐK Tâm Anh TP.HCM) và Khoa Ngoại Tổng hợp (BVĐK Tâm Anh Hà Nội) là những trung tâm y tế chuyên khoa Tiêu hóa uy tín, cung cấp dịch vụ thăm khám và điều trị cao cấp, hiệu quả cho các bệnh nhân mắc các vấn đề về gan từ nhẹ đến nặng (gan nhiễm mỡ, viêm gan cấp tính, mạn tính, xơ gan, ung thư gan…).'
+
+MERGE (o1:treatment {id: 'khoa_ngoại_tổng_hợp_treatment'})
+MERGE (o2:disease {id: 'bệnh_viêm_ruột_disease'})
+MERGE (o1)-[r125:treatedBy]->(o2)
+SET r125.text = 'Trung tâm Nội soi và Phẫu thuật nội soi tiêu hóa (BVĐK Tâm Anh TP.HCM) và Khoa Ngoại Tổng hợp (BVĐK Tâm Anh Hà Nội) là những trung tâm y tế chuyên khoa Tiêu hóa uy tín, cung cấp dịch vụ thăm khám và điều trị cao cấp, hiệu quả cho các bệnh nhân mắc các vấn đề về gan từ nhẹ đến nặng (gan nhiễm mỡ, viêm gan cấp tính, mạn tính, xơ gan, ung thư gan…).'
+
+MERGE (o1:treatment {id: 'bác_sĩ_nội_khoa_treatment'})
+MERGE (o2:disease {id: 'bệnh_viêm_ruột_disease'})
+MERGE (o1)-[r126:treatedBy]->(o2)
+SET r126.text = 'Hệ thống BVĐK Tâm Anh quy tụ đội ngũ bác sĩ Nội khoa - Ngoại khoa - Nội soi tiêu hóa chuyên môn cao, giàu kinh nghiệm, bên cạnh đó là sự hỗ trợ của hệ thống thiết bị y tế hiện đại, nhập khẩu từ nước ngoài, phục vụ tối đa nhu cầu thăm khám và điều trị của khách hàng.'
+
+MERGE (o1:treatment {id: 'bác_sĩ_ngoại_khoa_treatment'})
+MERGE (o2:disease {id: 'bệnh_viêm_ruột_disease'})
+MERGE (o1)-[r127:treatedBy]->(o2)
+SET r127.text = 'Hệ thống BVĐK Tâm Anh quy tụ đội ngũ bác sĩ Nội khoa - Ngoại khoa - Nội soi tiêu hóa chuyên môn cao, giàu kinh nghiệm, bên cạnh đó là sự hỗ trợ của hệ thống thiết bị y tế hiện đại, nhập khẩu từ nước ngoài, phục vụ tối đa nhu cầu thăm khám và điều trị của khách hàng.'
+
+MERGE (o1:treatment {id: 'bác_sĩ_nội_soi_tiêu_hóa_treatment'})
+MERGE (o2:disease {id: 'bệnh_viêm_ruột_disease'})
+MERGE (o1)-[r128:treatedBy]->(o2)
+SET r128.text = 'Hệ thống BVĐK Tâm Anh quy tụ đội ngũ bác sĩ Nội khoa - Ngoại khoa - Nội soi tiêu hóa chuyên môn cao, giàu kinh nghiệm, bên cạnh đó là sự hỗ trợ của hệ thống thiết bị y tế hiện đại, nhập khẩu từ nước ngoài, phục vụ tối đa nhu cầu thăm khám và điều trị của khách hàng.'

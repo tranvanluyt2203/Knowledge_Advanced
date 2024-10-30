@@ -1,0 +1,1040 @@
+
+MERGE (o1:symptom {id: 'tê_bì_chân_tay_symptom'})
+MERGE (o2:disease {id: 'hội_chứng_bệnh_thần_kinh_disease'})
+MERGE (o1)-[r0:isSymptomOf]->(o2)
+SET r0.text = 'Tê bì chân tay (Numbness of Limb) là hội chứng bệnh thần kinh phổ biến nhất, có thể bắt gặp ở bất kì ai dù là từ thanh thiếu niên hay những người cao tuổi và gây ảnh hưởng không nhỏ đến đời sống sinh hoạt hàng ngày của người bệnh.'
+
+MERGE (o1:symptom {id: 'tê_bì_chân_tay_symptom'})
+MERGE (o2:lifestyle {id: 'đời_sống_sinh_hoạt_hàng_ngày_lifestyle'})
+MERGE (o1)-[r1:affects]->(o2)
+SET r1.text = 'Tê bì chân tay (Numbness of Limb) là hội chứng bệnh thần kinh phổ biến nhất, có thể bắt gặp ở bất kì ai dù là từ thanh thiếu niên hay những người cao tuổi và gây ảnh hưởng không nhỏ đến đời sống sinh hoạt hàng ngày của người bệnh.'
+
+MERGE (o1:lifestyle {id: 'người_già_lifestyle'})
+MERGE (o2:organ {id: 'xương_khớp_lão_hóa_organ'})
+MERGE (o1)-[r2:associatedWith]->(o2)
+SET r2.text = 'Đối tượng có nguy cơ cao nhất là những người già, vì ở người lớn tuổi, xương khớp sẽ lão hóa theo thời gian, dễ bị tổn thương.'
+
+MERGE (o1:cause {id: 'xương_khớp_lão_hóa_cause'})
+MERGE (o2:symptom {id: 'tê_bì_chân_tay_symptom'})
+MERGE (o1)-[r3:causes]->(o2)
+SET r3.text = 'Đối tượng có nguy cơ cao nhất là những người già, vì ở người lớn tuổi, xương khớp sẽ lão hóa theo thời gian, dễ bị tổn thương.'
+
+MERGE (o1:lifestyle {id: 'lái_xe_đường_dài_lifestyle'})
+MERGE (o2:symptom {id: 'tê_bì_chân_tay_symptom'})
+MERGE (o1)-[r4:associatedWith]->(o2)
+SET r4.text = 'Bên cạnh đó, do tính chất của công việc, những người làm nghề lái xe đường dài, làm việc văn phòng có tiếp xúc với máy tính trong nhiều giờ liên tục, hay những người thường xuyên phải lao động động chân tay nặng, người bị chấn thương trong lúc làm việc, luyện tập thể thao hay bị tai nạn giao thông… cũng là những đối tượng dễ bị tê tay chân.'
+
+MERGE (o1:lifestyle {id: 'làm_việc_văn_phòng_lifestyle'})
+MERGE (o2:symptom {id: 'tê_bì_chân_tay_symptom'})
+MERGE (o1)-[r5:associatedWith]->(o2)
+SET r5.text = 'Bên cạnh đó, do tính chất của công việc, những người làm nghề lái xe đường dài, làm việc văn phòng có tiếp xúc với máy tính trong nhiều giờ liên tục, hay những người thường xuyên phải lao động động chân tay nặng, người bị chấn thương trong lúc làm việc, luyện tập thể thao hay bị tai nạn giao thông… cũng là những đối tượng dễ bị tê tay chân.'
+
+MERGE (o1:lifestyle {id: 'lao_động_động_chân_tay_nặng_lifestyle'})
+MERGE (o2:symptom {id: 'tê_bì_chân_tay_symptom'})
+MERGE (o1)-[r6:associatedWith]->(o2)
+SET r6.text = 'Bên cạnh đó, do tính chất của công việc, những người làm nghề lái xe đường dài, làm việc văn phòng có tiếp xúc với máy tính trong nhiều giờ liên tục, hay những người thường xuyên phải lao động động chân tay nặng, người bị chấn thương trong lúc làm việc, luyện tập thể thao hay bị tai nạn giao thông… cũng là những đối tượng dễ bị tê tay chân.'
+
+MERGE (o1:cause {id: 'chấn_thương_cause'})
+MERGE (o2:symptom {id: 'tê_bì_chân_tay_symptom'})
+MERGE (o1)-[r7:causes]->(o2)
+SET r7.text = 'Bên cạnh đó, do tính chất của công việc, những người làm nghề lái xe đường dài, làm việc văn phòng có tiếp xúc với máy tính trong nhiều giờ liên tục, hay những người thường xuyên phải lao động động chân tay nặng, người bị chấn thương trong lúc làm việc, luyện tập thể thao hay bị tai nạn giao thông… cũng là những đối tượng dễ bị tê tay chân.'
+
+MERGE (o1:lifestyle {id: 'luyện_tập_thể_thao_lifestyle'})
+MERGE (o2:symptom {id: 'tê_bì_chân_tay_symptom'})
+MERGE (o1)-[r8:associatedWith]->(o2)
+SET r8.text = 'Bên cạnh đó, do tính chất của công việc, những người làm nghề lái xe đường dài, làm việc văn phòng có tiếp xúc với máy tính trong nhiều giờ liên tục, hay những người thường xuyên phải lao động động chân tay nặng, người bị chấn thương trong lúc làm việc, luyện tập thể thao hay bị tai nạn giao thông… cũng là những đối tượng dễ bị tê tay chân.'
+
+MERGE (o1:cause {id: 'tai_nạn_giao_thông_cause'})
+MERGE (o2:symptom {id: 'tê_bì_chân_tay_symptom'})
+MERGE (o1)-[r9:causes]->(o2)
+SET r9.text = 'Bên cạnh đó, do tính chất của công việc, những người làm nghề lái xe đường dài, làm việc văn phòng có tiếp xúc với máy tính trong nhiều giờ liên tục, hay những người thường xuyên phải lao động động chân tay nặng, người bị chấn thương trong lúc làm việc, luyện tập thể thao hay bị tai nạn giao thông… cũng là những đối tượng dễ bị tê tay chân.'
+
+MERGE (o1:disease {id: 'rối_loạn_chuyển_hóa_disease'})
+MERGE (o2:symptom {id: 'tê_bì_chân_tay_symptom'})
+MERGE (o1)-[r10:causes]->(o2)
+SET r10.text = 'Không chỉ vậy, các bệnh rối loạn chuyển hóa như: đái tháo đường, mỡ máu cao cũng là những nguyên nhân thường gặp gây nên chứng tê bì chân tay.'
+
+MERGE (o1:disease {id: 'đái_tháo_đường_disease'})
+MERGE (o2:symptom {id: 'tê_bì_chân_tay_symptom'})
+MERGE (o1)-[r11:causes]->(o2)
+SET r11.text = 'Không chỉ vậy, các bệnh rối loạn chuyển hóa như: đái tháo đường, mỡ máu cao cũng là những nguyên nhân thường gặp gây nên chứng tê bì chân tay.'
+
+MERGE (o1:disease {id: 'mỡ_máu_cao_disease'})
+MERGE (o2:symptom {id: 'tê_bì_chân_tay_symptom'})
+MERGE (o1)-[r12:causes]->(o2)
+SET r12.text = 'Không chỉ vậy, các bệnh rối loạn chuyển hóa như: đái tháo đường, mỡ máu cao cũng là những nguyên nhân thường gặp gây nên chứng tê bì chân tay.'
+
+MERGE (o1:cause {id: 'tổn_thương_vi_mạch_cause'})
+MERGE (o2:symptom {id: 'thiếu_hụt_máu_cung_cấp_nuôi_dưỡng_dây_thần_kinh_symptom'})
+MERGE (o1)-[r13:causes]->(o2)
+SET r13.text = 'Nguyên nhân là do ở nhóm bệnh này có sự tổn thương vi mạch dẫn tới tình trạng thiếu hụt máu cung cấp nuôi dưỡng dây thần kinh.'
+
+MERGE (o1:cause {id: 'thiếu_hụt_máu_cung_cấp_nuôi_dưỡng_dây_thần_kinh_cause'})
+MERGE (o2:symptom {id: 'tê_bì_chân_tay_symptom'})
+MERGE (o1)-[r14:causes]->(o2)
+SET r14.text = 'Nguyên nhân là do ở nhóm bệnh này có sự tổn thương vi mạch dẫn tới tình trạng thiếu hụt máu cung cấp nuôi dưỡng dây thần kinh.'
+
+MERGE (o1:symptom {id: 'rối_loạn_co_thắt_mạch_máu_symptom'})
+MERGE (o2:cause {id: 'thiếu_máu_cause'})
+MERGE (o1)-[r15:isSymptomOf]->(o2)
+SET r15.text = 'Biểu hiện lúc đầu có thể chỉ đơn giản là rối loạn co thắt mạch máu, khi co thắt dẫn tới thiếu máu gây tê tay chân.'
+
+MERGE (o1:cause {id: 'thiếu_máu_cause'})
+MERGE (o2:symptom {id: 'tê_bì_chân_tay_symptom'})
+MERGE (o1)-[r16:causes]->(o2)
+SET r16.text = 'Biểu hiện lúc đầu có thể chỉ đơn giản là rối loạn co thắt mạch máu, khi co thắt dẫn tới thiếu máu gây tê tay chân.'
+
+MERGE (o1:symptom {id: 'tê_bì_symptom'})
+MERGE (o2:treatment {id: 'phát_hiện_sớm_treatment'})
+MERGE (o1)-[r17:treatedBy]->(o2)
+SET r17.text = 'Các triệu chứng này hoàn toàn có thể khắc phục nếu được phát hiện sớm và sẽ giúp giảm, thậm chí hết tê bì nhưng nếu không chữa trị sớm mà để bệnh trở nặng hơn sẽ khiến mạch máu chít hẹp, tắc mạch sẽ dẫn tới tình trạng teo cơ, trợt loét.'
+
+MERGE (o1:cause {id: 'mạch_máu_chít_hẹp_cause'})
+MERGE (o2:symptom {id: 'teo_cơ_symptom'})
+MERGE (o1)-[r18:causes]->(o2)
+SET r18.text = 'Các triệu chứng này hoàn toàn có thể khắc phục nếu được phát hiện sớm và sẽ giúp giảm, thậm chí hết tê bì nhưng nếu không chữa trị sớm mà để bệnh trở nặng hơn sẽ khiến mạch máu chít hẹp, tắc mạch sẽ dẫn tới tình trạng teo cơ, trợt loét.'
+
+MERGE (o1:cause {id: 'tắc_mạch_cause'})
+MERGE (o2:symptom {id: 'trợt_loét_symptom'})
+MERGE (o1)-[r19:causes]->(o2)
+SET r19.text = 'Các triệu chứng này hoàn toàn có thể khắc phục nếu được phát hiện sớm và sẽ giúp giảm, thậm chí hết tê bì nhưng nếu không chữa trị sớm mà để bệnh trở nặng hơn sẽ khiến mạch máu chít hẹp, tắc mạch sẽ dẫn tới tình trạng teo cơ, trợt loét.'
+
+MERGE (o1:symptom {id: 'tê_tay_sau_sinh_symptom'})
+MERGE (o2:lifestyle {id: 'phụ_nữ_sau_khi_sinh_lifestyle'})
+MERGE (o1)-[r20:associatedWith]->(o2)
+SET r20.text = 'Tê tay sau sinh cũng là hiện tượng phổ biến ở phụ nữ sau khi sinh với biểu hiện là các ngón tay thi thoảng bị tê cứng, có thể kèm theo tê buốt, châm chích hoặc chuột rút.'
+
+MERGE (o1:symptom {id: 'tê_cứng_symptom'})
+MERGE (o2:symptom {id: 'tê_tay_sau_sinh_symptom'})
+MERGE (o1)-[r21:isSymptomOf]->(o2)
+SET r21.text = 'Tê tay sau sinh cũng là hiện tượng phổ biến ở phụ nữ sau khi sinh với biểu hiện là các ngón tay thi thoảng bị tê cứng, có thể kèm theo tê buốt, châm chích hoặc chuột rút.'
+
+MERGE (o1:symptom {id: 'tê_buốt_symptom'})
+MERGE (o2:symptom {id: 'tê_tay_sau_sinh_symptom'})
+MERGE (o1)-[r22:isSymptomOf]->(o2)
+SET r22.text = 'Tê tay sau sinh cũng là hiện tượng phổ biến ở phụ nữ sau khi sinh với biểu hiện là các ngón tay thi thoảng bị tê cứng, có thể kèm theo tê buốt, châm chích hoặc chuột rút.'
+
+MERGE (o1:symptom {id: 'châm_chích_symptom'})
+MERGE (o2:symptom {id: 'tê_tay_sau_sinh_symptom'})
+MERGE (o1)-[r23:isSymptomOf]->(o2)
+SET r23.text = 'Tê tay sau sinh cũng là hiện tượng phổ biến ở phụ nữ sau khi sinh với biểu hiện là các ngón tay thi thoảng bị tê cứng, có thể kèm theo tê buốt, châm chích hoặc chuột rút.'
+
+MERGE (o1:symptom {id: 'chuột_rút_symptom'})
+MERGE (o2:symptom {id: 'tê_tay_sau_sinh_symptom'})
+MERGE (o1)-[r24:isSymptomOf]->(o2)
+SET r24.text = 'Tê tay sau sinh cũng là hiện tượng phổ biến ở phụ nữ sau khi sinh với biểu hiện là các ngón tay thi thoảng bị tê cứng, có thể kèm theo tê buốt, châm chích hoặc chuột rút.'
+
+MERGE (o1:symptom {id: 'cơn_đau_symptom'})
+MERGE (o2:lifestyle {id: 'khả_năng_di_chuyển_lifestyle'})
+MERGE (o1)-[r25:affects]->(o2)
+SET r25.text = 'Cơn đau có thể bị lan sang các vùng như cẳng chân, mông, đùi,&#8230; thậm chí có thể hạn chế khả năng di chuyển nêu không được điều trị sớm.'
+
+MERGE (o1:symptom {id: 'cơn_đau_symptom'})
+MERGE (o2:treatment {id: 'điều_trị_sớm_treatment'})
+MERGE (o1)-[r26:treatedBy]->(o2)
+SET r26.text = 'Cơn đau có thể bị lan sang các vùng như cẳng chân, mông, đùi,&#8230; thậm chí có thể hạn chế khả năng di chuyển nêu không được điều trị sớm.'
+
+MERGE (o1:symptom {id: 'tê_bì_chân_tay_symptom'})
+MERGE (o2:symptom {id: 'đau_nhức_xương_khớp_symptom'})
+MERGE (o1)-[r27:associatedWith]->(o2)
+SET r27.text = 'Viện Rối loạn thần kinh và đột quỵ Quốc gia (NINDS) cho biết: Có nhiều nguyên nhân dẫn đến tê bì chân tay trái, phải kèm theođau nhức xương khớp, trong đó có hơn 75% trường hợp tê tay chân là do bệnh lý sau:'
+
+MERGE (o1:disease {id: 'thoái_hóa_cột_sống_disease'})
+MERGE (o2:symptom {id: 'tê_bì_vùng_cổ_symptom'})
+MERGE (o1)-[r28:causes]->(o2)
+SET r28.text = 'Thường xảy ra về đêm hoặc khi thay đổi thời tiết, thoái hóa cột sống khiến sụn khớp, đốt sống bị bào mòn, cọ xát với rễ thần kinh gây đau nhức, tê bì vùng cổ lan xuống hai tay hoặc đau từ thắt lưng xuống hai chân.'
+
+MERGE (o1:disease {id: 'thoái_hóa_cột_sống_disease'})
+MERGE (o2:symptom {id: 'đau_từ_thắt_lưng_xuống_hai_chân_symptom'})
+MERGE (o1)-[r29:causes]->(o2)
+SET r29.text = 'Thường xảy ra về đêm hoặc khi thay đổi thời tiết, thoái hóa cột sống khiến sụn khớp, đốt sống bị bào mòn, cọ xát với rễ thần kinh gây đau nhức, tê bì vùng cổ lan xuống hai tay hoặc đau từ thắt lưng xuống hai chân.'
+
+MERGE (o1:organ {id: 'sụn_khớp_organ'})
+MERGE (o2:disease {id: 'thoái_hóa_cột_sống_disease'})
+MERGE (o1)-[r30:affectedBy]->(o2)
+SET r30.text = 'Thường xảy ra về đêm hoặc khi thay đổi thời tiết, thoái hóa cột sống khiến sụn khớp, đốt sống bị bào mòn, cọ xát với rễ thần kinh gây đau nhức, tê bì vùng cổ lan xuống hai tay hoặc đau từ thắt lưng xuống hai chân.'
+
+MERGE (o1:organ {id: 'đốt_sống_organ'})
+MERGE (o2:disease {id: 'thoái_hóa_cột_sống_disease'})
+MERGE (o1)-[r31:affectedBy]->(o2)
+SET r31.text = 'Thường xảy ra về đêm hoặc khi thay đổi thời tiết, thoái hóa cột sống khiến sụn khớp, đốt sống bị bào mòn, cọ xát với rễ thần kinh gây đau nhức, tê bì vùng cổ lan xuống hai tay hoặc đau từ thắt lưng xuống hai chân.'
+
+MERGE (o1:organ {id: 'rễ_thần_kinh_organ'})
+MERGE (o2:disease {id: 'thoái_hóa_cột_sống_disease'})
+MERGE (o1)-[r32:affectedBy]->(o2)
+SET r32.text = 'Thường xảy ra về đêm hoặc khi thay đổi thời tiết, thoái hóa cột sống khiến sụn khớp, đốt sống bị bào mòn, cọ xát với rễ thần kinh gây đau nhức, tê bì vùng cổ lan xuống hai tay hoặc đau từ thắt lưng xuống hai chân.'
+
+MERGE (o1:symptom {id: 'tê_bì_vùng_cổ_symptom'})
+MERGE (o2:organ {id: 'vùng_cổ_organ'})
+MERGE (o1)-[r33:locatedIn]->(o2)
+SET r33.text = 'Thường xảy ra về đêm hoặc khi thay đổi thời tiết, thoái hóa cột sống khiến sụn khớp, đốt sống bị bào mòn, cọ xát với rễ thần kinh gây đau nhức, tê bì vùng cổ lan xuống hai tay hoặc đau từ thắt lưng xuống hai chân.'
+
+MERGE (o1:symptom {id: 'tê_bì_vùng_cổ_symptom'})
+MERGE (o2:organ {id: 'hai_tay_organ'})
+MERGE (o1)-[r34:affects]->(o2)
+SET r34.text = 'Thường xảy ra về đêm hoặc khi thay đổi thời tiết, thoái hóa cột sống khiến sụn khớp, đốt sống bị bào mòn, cọ xát với rễ thần kinh gây đau nhức, tê bì vùng cổ lan xuống hai tay hoặc đau từ thắt lưng xuống hai chân.'
+
+MERGE (o1:symptom {id: 'đau_từ_thắt_lưng_xuống_hai_chân_symptom'})
+MERGE (o2:organ {id: 'thắt_lưng_organ'})
+MERGE (o1)-[r35:locatedIn]->(o2)
+SET r35.text = 'Thường xảy ra về đêm hoặc khi thay đổi thời tiết, thoái hóa cột sống khiến sụn khớp, đốt sống bị bào mòn, cọ xát với rễ thần kinh gây đau nhức, tê bì vùng cổ lan xuống hai tay hoặc đau từ thắt lưng xuống hai chân.'
+
+MERGE (o1:symptom {id: 'đau_từ_thắt_lưng_xuống_hai_chân_symptom'})
+MERGE (o2:organ {id: 'hai_chân_organ'})
+MERGE (o1)-[r36:affects]->(o2)
+SET r36.text = 'Thường xảy ra về đêm hoặc khi thay đổi thời tiết, thoái hóa cột sống khiến sụn khớp, đốt sống bị bào mòn, cọ xát với rễ thần kinh gây đau nhức, tê bì vùng cổ lan xuống hai tay hoặc đau từ thắt lưng xuống hai chân.'
+
+MERGE (o1:disease {id: 'thoát_vị_đĩa_đệm_disease'})
+MERGE (o2:symptom {id: 'tê_tay_chân_symptom'})
+MERGE (o1)-[r37:causes]->(o2)
+SET r37.text = 'Thoát vị đĩa đệm là nguyên nhân gây tê tay chân phổ biến, thường gặp ở đĩa đệm cột sống cổ và thắt lưng.'
+
+MERGE (o1:disease {id: 'thoát_vị_đĩa_đệm_disease'})
+MERGE (o2:organ {id: 'cột_sống_cổ_organ'})
+MERGE (o1)-[r38:locatedIn]->(o2)
+SET r38.text = 'Thoát vị đĩa đệm là nguyên nhân gây tê tay chân phổ biến, thường gặp ở đĩa đệm cột sống cổ và thắt lưng.'
+
+MERGE (o1:disease {id: 'thoát_vị_đĩa_đệm_disease'})
+MERGE (o2:organ {id: 'cột_sống_thắt_lưng_organ'})
+MERGE (o1)-[r39:locatedIn]->(o2)
+SET r39.text = 'Thoát vị đĩa đệm là nguyên nhân gây tê tay chân phổ biến, thường gặp ở đĩa đệm cột sống cổ và thắt lưng.'
+
+MERGE (o1:cause {id: 'nhân_nhầy_tràn_ra_khỏi_bao_xơ_đĩa_đệm_cause'})
+MERGE (o2:symptom {id: 'chèn_ép_dây_thần_kinh_cột_sống_symptom'})
+MERGE (o1)-[r40:causes]->(o2)
+SET r40.text = 'Tình trạng này xảy ra khi nhân nhầy tràn ra khỏi bao xơ đĩa đệm sẽ chèn ép dây thần kinh cột sống, từ đó dẫn đến tê bì cánh tay cùng hai chân khiến vận động của cơ thể bị hạn chế.'
+
+MERGE (o1:cause {id: 'chèn_ép_dây_thần_kinh_cột_sống_cause'})
+MERGE (o2:symptom {id: 'tê_bì_cánh_tay_symptom'})
+MERGE (o1)-[r41:causes]->(o2)
+SET r41.text = 'Tình trạng này xảy ra khi nhân nhầy tràn ra khỏi bao xơ đĩa đệm sẽ chèn ép dây thần kinh cột sống, từ đó dẫn đến tê bì cánh tay cùng hai chân khiến vận động của cơ thể bị hạn chế.'
+
+MERGE (o1:cause {id: 'chèn_ép_dây_thần_kinh_cột_sống_cause'})
+MERGE (o2:symptom {id: 'tê_bì_hai_chân_symptom'})
+MERGE (o1)-[r42:causes]->(o2)
+SET r42.text = 'Tình trạng này xảy ra khi nhân nhầy tràn ra khỏi bao xơ đĩa đệm sẽ chèn ép dây thần kinh cột sống, từ đó dẫn đến tê bì cánh tay cùng hai chân khiến vận động của cơ thể bị hạn chế.'
+
+MERGE (o1:cause {id: 'chèn_ép_dây_thần_kinh_cột_sống_cause'})
+MERGE (o2:lifestyle {id: 'vận_động_của_cơ_thể_lifestyle'})
+MERGE (o1)-[r43:affects]->(o2)
+SET r43.text = 'Tình trạng này xảy ra khi nhân nhầy tràn ra khỏi bao xơ đĩa đệm sẽ chèn ép dây thần kinh cột sống, từ đó dẫn đến tê bì cánh tay cùng hai chân khiến vận động của cơ thể bị hạn chế.'
+
+MERGE (o1:organ {id: 'khớp_tay_organ'})
+MERGE (o2:cause {id: 'bào_mòn_cause'})
+MERGE (o1)-[r44:affectedBy]->(o2)
+SET r44.text = 'Khi khớp tay, khớp đầu gối hoặc khớp háng bị bào mòn, tổn thương do các yếu tố tiêu cực sẽ làm tay, chân vận động khó khăn và dẫn đến tê bì cánh tay, bàn chân.'
+
+MERGE (o1:organ {id: 'khớp_đầu_gối_organ'})
+MERGE (o2:cause {id: 'bào_mòn_cause'})
+MERGE (o1)-[r45:affectedBy]->(o2)
+SET r45.text = 'Khi khớp tay, khớp đầu gối hoặc khớp háng bị bào mòn, tổn thương do các yếu tố tiêu cực sẽ làm tay, chân vận động khó khăn và dẫn đến tê bì cánh tay, bàn chân.'
+
+MERGE (o1:organ {id: 'khớp_háng_organ'})
+MERGE (o2:cause {id: 'bào_mòn_cause'})
+MERGE (o1)-[r46:affectedBy]->(o2)
+SET r46.text = 'Khi khớp tay, khớp đầu gối hoặc khớp háng bị bào mòn, tổn thương do các yếu tố tiêu cực sẽ làm tay, chân vận động khó khăn và dẫn đến tê bì cánh tay, bàn chân.'
+
+MERGE (o1:cause {id: 'bào_mòn_cause'})
+MERGE (o2:symptom {id: 'tê_bì_cánh_tay_symptom'})
+MERGE (o1)-[r47:causes]->(o2)
+SET r47.text = 'Khi khớp tay, khớp đầu gối hoặc khớp háng bị bào mòn, tổn thương do các yếu tố tiêu cực sẽ làm tay, chân vận động khó khăn và dẫn đến tê bì cánh tay, bàn chân.'
+
+MERGE (o1:cause {id: 'bào_mòn_cause'})
+MERGE (o2:symptom {id: 'tê_bì_bàn_chân_symptom'})
+MERGE (o1)-[r48:causes]->(o2)
+SET r48.text = 'Khi khớp tay, khớp đầu gối hoặc khớp háng bị bào mòn, tổn thương do các yếu tố tiêu cực sẽ làm tay, chân vận động khó khăn và dẫn đến tê bì cánh tay, bàn chân.'
+
+MERGE (o1:disease {id: 'viêm_nhiễm_khớp_tay_disease'})
+MERGE (o2:symptom {id: 'tê_bì_tay_chân_symptom'})
+MERGE (o1)-[r49:causes]->(o2)
+SET r49.text = 'Tình trạng khớp tay, khớp chân bị viêm nhiễm, tổn thương cũng sẽ gây tê bì tay chân và thường xảy ra sau khi nằm hoặc ngồi quá lâu tại một vị trí và đi kèm cơ cứng khớp.'
+
+MERGE (o1:disease {id: 'viêm_nhiễm_khớp_chân_disease'})
+MERGE (o2:symptom {id: 'tê_bì_tay_chân_symptom'})
+MERGE (o1)-[r50:causes]->(o2)
+SET r50.text = 'Tình trạng khớp tay, khớp chân bị viêm nhiễm, tổn thương cũng sẽ gây tê bì tay chân và thường xảy ra sau khi nằm hoặc ngồi quá lâu tại một vị trí và đi kèm cơ cứng khớp.'
+
+MERGE (o1:lifestyle {id: 'nằm_hoặc_ngồi_quá_lâu_lifestyle'})
+MERGE (o2:symptom {id: 'tê_bì_tay_chân_symptom'})
+MERGE (o1)-[r51:associatedWith]->(o2)
+SET r51.text = 'Tình trạng khớp tay, khớp chân bị viêm nhiễm, tổn thương cũng sẽ gây tê bì tay chân và thường xảy ra sau khi nằm hoặc ngồi quá lâu tại một vị trí và đi kèm cơ cứng khớp.'
+
+MERGE (o1:symptom {id: 'cơ_cứng_khớp_symptom'})
+MERGE (o2:symptom {id: 'tê_bì_tay_chân_symptom'})
+MERGE (o1)-[r52:associatedWith]->(o2)
+SET r52.text = 'Tình trạng khớp tay, khớp chân bị viêm nhiễm, tổn thương cũng sẽ gây tê bì tay chân và thường xảy ra sau khi nằm hoặc ngồi quá lâu tại một vị trí và đi kèm cơ cứng khớp.'
+
+MERGE (o1:disease {id: 'bệnh_bẩm_sinh_disease'})
+MERGE (o2:symptom {id: 'tê_bì_tay_chân_symptom'})
+MERGE (o1)-[r53:causes]->(o2)
+SET r53.text = 'Đây là một loại bệnh bẩm sinh với tình trạng cột sống bị biến dạng, thu nhỏ lại, làm các rễ thần kinh chạy qua bị chèn ép, gây ra gâytê tay chân liên tục kéo dài.'
+
+MERGE (o1:cause {id: 'cột_sống_bị_biến_dạng_cause'})
+MERGE (o2:symptom {id: 'tê_bì_tay_chân_symptom'})
+MERGE (o1)-[r54:causes]->(o2)
+SET r54.text = 'Đây là một loại bệnh bẩm sinh với tình trạng cột sống bị biến dạng, thu nhỏ lại, làm các rễ thần kinh chạy qua bị chèn ép, gây ra gâytê tay chân liên tục kéo dài.'
+
+MERGE (o1:cause {id: 'chèn_ép_rễ_thần_kinh_cause'})
+MERGE (o2:symptom {id: 'tê_bì_tay_chân_symptom'})
+MERGE (o1)-[r55:causes]->(o2)
+SET r55.text = 'Đây là một loại bệnh bẩm sinh với tình trạng cột sống bị biến dạng, thu nhỏ lại, làm các rễ thần kinh chạy qua bị chèn ép, gây ra gâytê tay chân liên tục kéo dài.'
+
+MERGE (o1:cause {id: 'tắc_nghẽn_lưu_thông_máu_cause'})
+MERGE (o2:symptom {id: 'vận_động_khó_khăn_symptom'})
+MERGE (o1)-[r56:causes]->(o2)
+SET r56.text = 'Tình trạng này nếu để lâu sẽ gây tắc nghẽn lưu thông máu, vận động khó khăn.'
+
+MERGE (o1:symptom {id: 'tê_symptom'})
+MERGE (o2:disease {id: 'đa_xơ_cứng_disease'})
+MERGE (o1)-[r57:isSymptomOf]->(o2)
+SET r57.text = 'Các vấn đề liên quan đến thị lực, tê, ngứa, yếu cơ… là biểu hiện của đa xơ cứng.'
+
+MERGE (o1:symptom {id: 'ngứa_symptom'})
+MERGE (o2:disease {id: 'đa_xơ_cứng_disease'})
+MERGE (o1)-[r58:isSymptomOf]->(o2)
+SET r58.text = 'Các vấn đề liên quan đến thị lực, tê, ngứa, yếu cơ… là biểu hiện của đa xơ cứng.'
+
+MERGE (o1:symptom {id: 'yếu_cơ_symptom'})
+MERGE (o2:disease {id: 'đa_xơ_cứng_disease'})
+MERGE (o1)-[r59:isSymptomOf]->(o2)
+SET r59.text = 'Các vấn đề liên quan đến thị lực, tê, ngứa, yếu cơ… là biểu hiện của đa xơ cứng.'
+
+MERGE (o1:disease {id: 'đa_xơ_cứng_disease'})
+MERGE (o2:organ {id: 'hệ_thần_kinh_trung_ương_organ'})
+MERGE (o1)-[r60:affects]->(o2)
+SET r60.text = 'Bệnh này có tác động trực tiếp đến hệ thần kinh trung ương, gây tổn thương màng bọc Myelin và dẫn đến triệu chứng tê bì chân tay.'
+
+MERGE (o1:cause {id: 'tổn_thương_màng_bọc_myelin_cause'})
+MERGE (o2:symptom {id: 'tê_bì_chân_tay_symptom'})
+MERGE (o1)-[r61:causes]->(o2)
+SET r61.text = 'Bệnh này có tác động trực tiếp đến hệ thần kinh trung ương, gây tổn thương màng bọc Myelin và dẫn đến triệu chứng tê bì chân tay.'
+
+MERGE (o1:cause {id: 'hệ_thần_kinh_ngoại_biên_bị_tổn_thương_cause'})
+MERGE (o2:symptom {id: 'tê_tay_chân_symptom'})
+MERGE (o1)-[r62:causes]->(o2)
+SET r62.text = 'Tình trạng này xảy ra khi hệ thần kinh ngoại biên bị tổn thương làm rối loạn cảm giác, dẫn đến tê tay chân.'
+
+MERGE (o1:symptom {id: 'tê_tay_chân_symptom'})
+MERGE (o2:treatment {id: 'điều_trị_kịp_thời_treatment'})
+MERGE (o1)-[r63:treatedBy]->(o2)
+SET r63.text = 'Nếu không phát hiện và điều trị kịp thời, bệnh nhân có thể tử vong do suy hô hấp, sặc phổi.'
+
+MERGE (o1:symptom {id: 'suy_hô_hấp_symptom'})
+MERGE (o2:symptom {id: 'tử_vong_symptom'})
+MERGE (o1)-[r64:causes]->(o2)
+SET r64.text = 'Nếu không phát hiện và điều trị kịp thời, bệnh nhân có thể tử vong do suy hô hấp, sặc phổi.'
+
+MERGE (o1:symptom {id: 'sặc_phổi_symptom'})
+MERGE (o2:symptom {id: 'tử_vong_symptom'})
+MERGE (o1)-[r65:causes]->(o2)
+SET r65.text = 'Nếu không phát hiện và điều trị kịp thời, bệnh nhân có thể tử vong do suy hô hấp, sặc phổi.'
+
+MERGE (o1:disease {id: 'nhồi_máu_cơ_tim_disease'})
+MERGE (o2:symptom {id: 'tê_bì_chân_tay_symptom'})
+MERGE (o1)-[r66:causes]->(o2)
+SET r66.text = 'Đây là là nguyên nhân hàng đầu gây nên các cơn nhồi máu cơ tim, đột quỵ, tai biến mạch máu não.'
+
+MERGE (o1:disease {id: 'đột_quỵ_disease'})
+MERGE (o2:symptom {id: 'tê_bì_chân_tay_symptom'})
+MERGE (o1)-[r67:causes]->(o2)
+SET r67.text = 'Đây là là nguyên nhân hàng đầu gây nên các cơn nhồi máu cơ tim, đột quỵ, tai biến mạch máu não.'
+
+MERGE (o1:disease {id: 'tai_biến_mạch_máu_não_disease'})
+MERGE (o2:symptom {id: 'tê_bì_chân_tay_symptom'})
+MERGE (o1)-[r68:causes]->(o2)
+SET r68.text = 'Đây là là nguyên nhân hàng đầu gây nên các cơn nhồi máu cơ tim, đột quỵ, tai biến mạch máu não.'
+
+MERGE (o1:symptom {id: 'tê_tay_chân_symptom'})
+MERGE (o2:cause {id: 'xơ_cứng_cause'})
+MERGE (o1)-[r69:causedBy]->(o2)
+SET r69.text = 'Dấu hiệu tê tay chân là do các khối vật chất bất thường bám lên thành mạch gây xơ cứng, hẹp lòng mạch, chèn ép dây thần kinh.'
+
+MERGE (o1:symptom {id: 'tê_tay_chân_symptom'})
+MERGE (o2:cause {id: 'hẹp_lòng_mạch_cause'})
+MERGE (o1)-[r70:causedBy]->(o2)
+SET r70.text = 'Dấu hiệu tê tay chân là do các khối vật chất bất thường bám lên thành mạch gây xơ cứng, hẹp lòng mạch, chèn ép dây thần kinh.'
+
+MERGE (o1:cause {id: 'dây_thần_kinh_ngoại_biên_bị_tổn_thương_cause'})
+MERGE (o2:disease {id: 'hội_chứng_ống_cổ_tay_disease'})
+MERGE (o1)-[r71:causedBy]->(o2)
+SET r71.text = 'Dây thần kinh ngoại biên bị tổn thương là nguyên nhân chủ yếu dẫn đến hội chứng ống cổ tay và hội chứng ống cổ chân'
+
+MERGE (o1:cause {id: 'dây_thần_kinh_ngoại_biên_bị_tổn_thương_cause'})
+MERGE (o2:disease {id: 'hội_chứng_ống_cổ_chân_disease'})
+MERGE (o1)-[r72:causedBy]->(o2)
+SET r72.text = 'Dây thần kinh ngoại biên bị tổn thương là nguyên nhân chủ yếu dẫn đến hội chứng ống cổ tay và hội chứng ống cổ chân'
+
+MERGE (o1:symptom {id: 'tê_các_đầu_ngón_tay_symptom'})
+MERGE (o2:symptom {id: 'tê_chân_tay_symptom'})
+MERGE (o1)-[r73:isSymptomOf]->(o2)
+SET r73.text = 'Các dấu hiệu khởi phát ban đầu của tê chân tay thường rất nhẹ: tê các đầu ngón tay, châm chích, dị cảm, kiến bò, chuột rút,nhức mỏi…'
+
+MERGE (o1:symptom {id: 'châm_chích_symptom'})
+MERGE (o2:symptom {id: 'tê_chân_tay_symptom'})
+MERGE (o1)-[r74:isSymptomOf]->(o2)
+SET r74.text = 'Các dấu hiệu khởi phát ban đầu của tê chân tay thường rất nhẹ: tê các đầu ngón tay, châm chích, dị cảm, kiến bò, chuột rút,nhức mỏi…'
+
+MERGE (o1:symptom {id: 'dị_cảm_symptom'})
+MERGE (o2:symptom {id: 'tê_chân_tay_symptom'})
+MERGE (o1)-[r75:isSymptomOf]->(o2)
+SET r75.text = 'Các dấu hiệu khởi phát ban đầu của tê chân tay thường rất nhẹ: tê các đầu ngón tay, châm chích, dị cảm, kiến bò, chuột rút,nhức mỏi…'
+
+MERGE (o1:symptom {id: 'kiến_bò_symptom'})
+MERGE (o2:symptom {id: 'tê_chân_tay_symptom'})
+MERGE (o1)-[r76:isSymptomOf]->(o2)
+SET r76.text = 'Các dấu hiệu khởi phát ban đầu của tê chân tay thường rất nhẹ: tê các đầu ngón tay, châm chích, dị cảm, kiến bò, chuột rút,nhức mỏi…'
+
+MERGE (o1:symptom {id: 'chuột_rút_symptom'})
+MERGE (o2:symptom {id: 'tê_chân_tay_symptom'})
+MERGE (o1)-[r77:isSymptomOf]->(o2)
+SET r77.text = 'Các dấu hiệu khởi phát ban đầu của tê chân tay thường rất nhẹ: tê các đầu ngón tay, châm chích, dị cảm, kiến bò, chuột rút,nhức mỏi…'
+
+MERGE (o1:symptom {id: 'nhức_mỏi_symptom'})
+MERGE (o2:symptom {id: 'tê_chân_tay_symptom'})
+MERGE (o1)-[r78:isSymptomOf]->(o2)
+SET r78.text = 'Các dấu hiệu khởi phát ban đầu của tê chân tay thường rất nhẹ: tê các đầu ngón tay, châm chích, dị cảm, kiến bò, chuột rút,nhức mỏi…'
+
+MERGE (o1:symptom {id: 'tê_chân_tay_symptom'})
+MERGE (o2:lifestyle {id: 'chủ_quan_lifestyle'})
+MERGE (o1)-[r79:relatedTo]->(o2)
+SET r79.text = 'Do đó mà người bệnh rất dễ chủ quan, không thăm khám sớm.'
+
+MERGE (o1:symptom {id: 'tê_nhức_symptom'})
+MERGE (o2:symptom {id: 'tê_chân_tay_symptom'})
+MERGE (o1)-[r80:isSymptomOf]->(o2)
+SET r80.text = 'Khi bệnh càng để lâu thì mức độ tê đau sẽ càng tăng, lúc này, các ngón tay bị tê nhức, tê buốt nhiều hơn, nhanh chóng lan cơn đau nhức xuống dọc cánh tay, cẳng tay gây khó cử động và cầm nắm.'
+
+MERGE (o1:symptom {id: 'tê_buốt_symptom'})
+MERGE (o2:symptom {id: 'tê_chân_tay_symptom'})
+MERGE (o1)-[r81:isSymptomOf]->(o2)
+SET r81.text = 'Khi bệnh càng để lâu thì mức độ tê đau sẽ càng tăng, lúc này, các ngón tay bị tê nhức, tê buốt nhiều hơn, nhanh chóng lan cơn đau nhức xuống dọc cánh tay, cẳng tay gây khó cử động và cầm nắm.'
+
+MERGE (o1:symptom {id: 'đau_nhức_symptom'})
+MERGE (o2:symptom {id: 'tê_chân_tay_symptom'})
+MERGE (o1)-[r82:isSymptomOf]->(o2)
+SET r82.text = 'Khi bệnh càng để lâu thì mức độ tê đau sẽ càng tăng, lúc này, các ngón tay bị tê nhức, tê buốt nhiều hơn, nhanh chóng lan cơn đau nhức xuống dọc cánh tay, cẳng tay gây khó cử động và cầm nắm.'
+
+MERGE (o1:symptom {id: 'khó_cử_động_symptom'})
+MERGE (o2:symptom {id: 'tê_chân_tay_symptom'})
+MERGE (o1)-[r83:isSymptomOf]->(o2)
+SET r83.text = 'Khi bệnh càng để lâu thì mức độ tê đau sẽ càng tăng, lúc này, các ngón tay bị tê nhức, tê buốt nhiều hơn, nhanh chóng lan cơn đau nhức xuống dọc cánh tay, cẳng tay gây khó cử động và cầm nắm.'
+
+MERGE (o1:symptom {id: 'cầm_nắm_symptom'})
+MERGE (o2:symptom {id: 'tê_chân_tay_symptom'})
+MERGE (o1)-[r84:isSymptomOf]->(o2)
+SET r84.text = 'Khi bệnh càng để lâu thì mức độ tê đau sẽ càng tăng, lúc này, các ngón tay bị tê nhức, tê buốt nhiều hơn, nhanh chóng lan cơn đau nhức xuống dọc cánh tay, cẳng tay gây khó cử động và cầm nắm.'
+
+MERGE (o1:symptom {id: 'tê_chân_tay_symptom'})
+MERGE (o2:organ {id: 'ngón_chân_organ'})
+MERGE (o1)-[r85:affects]->(o2)
+SET r85.text = 'Đồng thời, ở các ngón chân, bàn chân, cổ chân, cẳng chân, đùi, mông, vùng thắt lưng… cũng có thể xuất hiện tình trạng tương tự.'
+
+MERGE (o1:symptom {id: 'tê_chân_tay_symptom'})
+MERGE (o2:organ {id: 'bàn_chân_organ'})
+MERGE (o1)-[r86:affects]->(o2)
+SET r86.text = 'Đồng thời, ở các ngón chân, bàn chân, cổ chân, cẳng chân, đùi, mông, vùng thắt lưng… cũng có thể xuất hiện tình trạng tương tự.'
+
+MERGE (o1:symptom {id: 'tê_chân_tay_symptom'})
+MERGE (o2:organ {id: 'cổ_chân_organ'})
+MERGE (o1)-[r87:affects]->(o2)
+SET r87.text = 'Đồng thời, ở các ngón chân, bàn chân, cổ chân, cẳng chân, đùi, mông, vùng thắt lưng… cũng có thể xuất hiện tình trạng tương tự.'
+
+MERGE (o1:symptom {id: 'tê_chân_tay_symptom'})
+MERGE (o2:organ {id: 'cẳng_chân_organ'})
+MERGE (o1)-[r88:affects]->(o2)
+SET r88.text = 'Đồng thời, ở các ngón chân, bàn chân, cổ chân, cẳng chân, đùi, mông, vùng thắt lưng… cũng có thể xuất hiện tình trạng tương tự.'
+
+MERGE (o1:symptom {id: 'tê_chân_tay_symptom'})
+MERGE (o2:organ {id: 'đùi_organ'})
+MERGE (o1)-[r89:affects]->(o2)
+SET r89.text = 'Đồng thời, ở các ngón chân, bàn chân, cổ chân, cẳng chân, đùi, mông, vùng thắt lưng… cũng có thể xuất hiện tình trạng tương tự.'
+
+MERGE (o1:symptom {id: 'tê_chân_tay_symptom'})
+MERGE (o2:organ {id: 'mông_organ'})
+MERGE (o1)-[r90:affects]->(o2)
+SET r90.text = 'Đồng thời, ở các ngón chân, bàn chân, cổ chân, cẳng chân, đùi, mông, vùng thắt lưng… cũng có thể xuất hiện tình trạng tương tự.'
+
+MERGE (o1:symptom {id: 'tê_chân_tay_symptom'})
+MERGE (o2:organ {id: 'vùng_thắt_lưng_organ'})
+MERGE (o1)-[r91:affects]->(o2)
+SET r91.text = 'Đồng thời, ở các ngón chân, bàn chân, cổ chân, cẳng chân, đùi, mông, vùng thắt lưng… cũng có thể xuất hiện tình trạng tương tự.'
+
+MERGE (o1:symptom {id: 'đau_vai_gáy_symptom'})
+MERGE (o2:disease {id: 'thoái_hóa_cột_sống_disease'})
+MERGE (o1)-[r92:isSymptomOf]->(o2)
+SET r92.text = 'Ngoài ra, một số triệu chứng bệnh có thể xảy ra tùy vào các nguyên nhân như đau vai gáy, đau thắt lưng do thoái hóa cột sống; đau dọc theo đường đi của dây thần kinh tọa do thoát vị đĩa đệm cột sống thắt lưng; biểu hiện ăn nhiều, uống nhiều trong đái tháo đường; liệt vận động trong viêm đa dây thần kinh;…'
+
+MERGE (o1:symptom {id: 'đau_thắt_lưng_symptom'})
+MERGE (o2:disease {id: 'thoái_hóa_cột_sống_disease'})
+MERGE (o1)-[r93:isSymptomOf]->(o2)
+SET r93.text = 'Ngoài ra, một số triệu chứng bệnh có thể xảy ra tùy vào các nguyên nhân như đau vai gáy, đau thắt lưng do thoái hóa cột sống; đau dọc theo đường đi của dây thần kinh tọa do thoát vị đĩa đệm cột sống thắt lưng; biểu hiện ăn nhiều, uống nhiều trong đái tháo đường; liệt vận động trong viêm đa dây thần kinh;…'
+
+MERGE (o1:symptom {id: 'đau_dọc_theo_đường_đi_của_dây_thần_kinh_tọa_symptom'})
+MERGE (o2:disease {id: 'thoát_vị_đĩa_đệm_cột_sống_thắt_lưng_disease'})
+MERGE (o1)-[r94:isSymptomOf]->(o2)
+SET r94.text = 'Ngoài ra, một số triệu chứng bệnh có thể xảy ra tùy vào các nguyên nhân như đau vai gáy, đau thắt lưng do thoái hóa cột sống; đau dọc theo đường đi của dây thần kinh tọa do thoát vị đĩa đệm cột sống thắt lưng; biểu hiện ăn nhiều, uống nhiều trong đái tháo đường; liệt vận động trong viêm đa dây thần kinh;…'
+
+MERGE (o1:symptom {id: 'ăn_nhiều_symptom'})
+MERGE (o2:disease {id: 'đái_tháo_đường_disease'})
+MERGE (o1)-[r95:isSymptomOf]->(o2)
+SET r95.text = 'Ngoài ra, một số triệu chứng bệnh có thể xảy ra tùy vào các nguyên nhân như đau vai gáy, đau thắt lưng do thoái hóa cột sống; đau dọc theo đường đi của dây thần kinh tọa do thoát vị đĩa đệm cột sống thắt lưng; biểu hiện ăn nhiều, uống nhiều trong đái tháo đường; liệt vận động trong viêm đa dây thần kinh;…'
+
+MERGE (o1:symptom {id: 'uống_nhiều_symptom'})
+MERGE (o2:disease {id: 'đái_tháo_đường_disease'})
+MERGE (o1)-[r96:isSymptomOf]->(o2)
+SET r96.text = 'Ngoài ra, một số triệu chứng bệnh có thể xảy ra tùy vào các nguyên nhân như đau vai gáy, đau thắt lưng do thoái hóa cột sống; đau dọc theo đường đi của dây thần kinh tọa do thoát vị đĩa đệm cột sống thắt lưng; biểu hiện ăn nhiều, uống nhiều trong đái tháo đường; liệt vận động trong viêm đa dây thần kinh;…'
+
+MERGE (o1:symptom {id: 'liệt_vận_động_symptom'})
+MERGE (o2:disease {id: 'viêm_đa_dây_thần_kinh_disease'})
+MERGE (o1)-[r97:isSymptomOf]->(o2)
+SET r97.text = 'Ngoài ra, một số triệu chứng bệnh có thể xảy ra tùy vào các nguyên nhân như đau vai gáy, đau thắt lưng do thoái hóa cột sống; đau dọc theo đường đi của dây thần kinh tọa do thoát vị đĩa đệm cột sống thắt lưng; biểu hiện ăn nhiều, uống nhiều trong đái tháo đường; liệt vận động trong viêm đa dây thần kinh;…'
+
+MERGE (o1:symptom {id: 'triệu_chứng_symptom'})
+MERGE (o2:treatment {id: 'thăm_khám_sớm_treatment'})
+MERGE (o1)-[r98:relatedTo]->(o2)
+SET r98.text = 'Nếu triệu chứng xuất hiện liên tục khoảng trên 6 tuần thì cần đến ngay các cơ sở y tế thăm khám sớm.'
+
+MERGE (o1:symptom {id: 'tê_tay_chân_symptom'})
+MERGE (o2:disease {id: 'biến_chứng_nghiêm_trọng_disease'})
+MERGE (o1)-[r99:isSymptomOf]->(o2)
+SET r99.text = 'Nhiều người thường có xu hướng coi thường, xem nhẹ, thậm chí bỏ qua việc điều trị tê tay chân, mà không biết rằng điều này có thể dẫn đến những biến chứng nghiêm trọng cho sức khỏe cũng như cuộc sống.'
+
+MERGE (o1:disease {id: 'biến_chứng_nghiêm_trọng_disease'})
+MERGE (o2:organ {id: 'sức_khỏe_organ'})
+MERGE (o1)-[r100:affects]->(o2)
+SET r100.text = 'Nhiều người thường có xu hướng coi thường, xem nhẹ, thậm chí bỏ qua việc điều trị tê tay chân, mà không biết rằng điều này có thể dẫn đến những biến chứng nghiêm trọng cho sức khỏe cũng như cuộc sống.'
+
+MERGE (o1:disease {id: 'biến_chứng_nghiêm_trọng_disease'})
+MERGE (o2:lifestyle {id: 'cuộc_sống_lifestyle'})
+MERGE (o1)-[r101:affects]->(o2)
+SET r101.text = 'Nhiều người thường có xu hướng coi thường, xem nhẹ, thậm chí bỏ qua việc điều trị tê tay chân, mà không biết rằng điều này có thể dẫn đến những biến chứng nghiêm trọng cho sức khỏe cũng như cuộc sống.'
+
+MERGE (o1:symptom {id: 'đau_nhức_symptom'})
+MERGE (o2:disease {id: 'biến_chứng_nghiêm_trọng_disease'})
+MERGE (o1)-[r102:isSymptomOf]->(o2)
+SET r102.text = 'Thường xuyên gây đau nhức, tê buốt khiến người bệnh mất ăn, mất ngủ, sức khỏe suy giảm nghiêm trọng;'
+
+MERGE (o1:symptom {id: 'tê_buốt_symptom'})
+MERGE (o2:disease {id: 'biến_chứng_nghiêm_trọng_disease'})
+MERGE (o1)-[r103:isSymptomOf]->(o2)
+SET r103.text = 'Thường xuyên gây đau nhức, tê buốt khiến người bệnh mất ăn, mất ngủ, sức khỏe suy giảm nghiêm trọng;'
+
+MERGE (o1:symptom {id: 'mất_ăn_symptom'})
+MERGE (o2:disease {id: 'biến_chứng_nghiêm_trọng_disease'})
+MERGE (o1)-[r104:isSymptomOf]->(o2)
+SET r104.text = 'Thường xuyên gây đau nhức, tê buốt khiến người bệnh mất ăn, mất ngủ, sức khỏe suy giảm nghiêm trọng;'
+
+MERGE (o1:symptom {id: 'mất_ngủ_symptom'})
+MERGE (o2:disease {id: 'biến_chứng_nghiêm_trọng_disease'})
+MERGE (o1)-[r105:isSymptomOf]->(o2)
+SET r105.text = 'Thường xuyên gây đau nhức, tê buốt khiến người bệnh mất ăn, mất ngủ, sức khỏe suy giảm nghiêm trọng;'
+
+MERGE (o1:symptom {id: 'sức_khỏe_suy_giảm_nghiêm_trọng_symptom'})
+MERGE (o2:disease {id: 'biến_chứng_nghiêm_trọng_disease'})
+MERGE (o1)-[r106:isSymptomOf]->(o2)
+SET r106.text = 'Thường xuyên gây đau nhức, tê buốt khiến người bệnh mất ăn, mất ngủ, sức khỏe suy giảm nghiêm trọng;'
+
+MERGE (o1:organ {id: 'chức_năng_vận_động_organ'})
+MERGE (o2:disease {id: 'biến_chứng_nghiêm_trọng_disease'})
+MERGE (o1)-[r107:affects]->(o2)
+SET r107.text = 'Ảnh hưởng đến chức năng vận động, đi lại, khó khăn trong sinh hoạt và làm việc;'
+
+MERGE (o1:lifestyle {id: 'đi_lại_lifestyle'})
+MERGE (o2:disease {id: 'biến_chứng_nghiêm_trọng_disease'})
+MERGE (o1)-[r108:affects]->(o2)
+SET r108.text = 'Ảnh hưởng đến chức năng vận động, đi lại, khó khăn trong sinh hoạt và làm việc;'
+
+MERGE (o1:lifestyle {id: 'khó_khăn_trong_sinh_hoạt_lifestyle'})
+MERGE (o2:disease {id: 'biến_chứng_nghiêm_trọng_disease'})
+MERGE (o1)-[r109:isSymptomOf]->(o2)
+SET r109.text = 'Ảnh hưởng đến chức năng vận động, đi lại, khó khăn trong sinh hoạt và làm việc;'
+
+MERGE (o1:lifestyle {id: 'làm_việc_lifestyle'})
+MERGE (o2:disease {id: 'biến_chứng_nghiêm_trọng_disease'})
+MERGE (o1)-[r110:affects]->(o2)
+SET r110.text = 'Ảnh hưởng đến chức năng vận động, đi lại, khó khăn trong sinh hoạt và làm việc;'
+
+MERGE (o1:symptom {id: 'đại_tiểu_tiện_không_tự_chủ_symptom'})
+MERGE (o2:disease {id: 'biến_chứng_nặng_nề_disease'})
+MERGE (o1)-[r111:isSymptomOf]->(o2)
+SET r111.text = 'Nếu không được điều trị kịp thời có thể dẫn đến những biến chứng nặng nề như: đại tiểu tiện không tự chủ, teo cơ, liệt chi…'
+
+MERGE (o1:symptom {id: 'teo_cơ_symptom'})
+MERGE (o2:disease {id: 'biến_chứng_nặng_nề_disease'})
+MERGE (o1)-[r112:isSymptomOf]->(o2)
+SET r112.text = 'Nếu không được điều trị kịp thời có thể dẫn đến những biến chứng nặng nề như: đại tiểu tiện không tự chủ, teo cơ, liệt chi…'
+
+MERGE (o1:symptom {id: 'liệt_chi_symptom'})
+MERGE (o2:disease {id: 'biến_chứng_nặng_nề_disease'})
+MERGE (o1)-[r113:isSymptomOf]->(o2)
+SET r113.text = 'Nếu không được điều trị kịp thời có thể dẫn đến những biến chứng nặng nề như: đại tiểu tiện không tự chủ, teo cơ, liệt chi…'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:organ {id: 'chèn_ép_vào_hệ_thống_dây_thần_kinh_organ'})
+MERGE (o1)-[r114:causedBy]->(o2)
+SET r114.text = 'Nếu không được phát hiện và điều trị sớm có thể dẫn đếncác khối u, ung thư chèn ép vào hệ thống dây thần kinh, nguy hiểm đến tính mạng.'
+
+MERGE (o1:disease {id: 'ung_thư_disease'})
+MERGE (o2:organ {id: 'chèn_ép_vào_hệ_thống_dây_thần_kinh_organ'})
+MERGE (o1)-[r115:causedBy]->(o2)
+SET r115.text = 'Nếu không được phát hiện và điều trị sớm có thể dẫn đếncác khối u, ung thư chèn ép vào hệ thống dây thần kinh, nguy hiểm đến tính mạng.'
+
+MERGE (o1:symptom {id: 'chèn_ép_vào_hệ_thống_dây_thần_kinh_symptom'})
+MERGE (o2:disease {id: 'biến_chứng_nghiêm_trọng_disease'})
+MERGE (o1)-[r116:isSymptomOf]->(o2)
+SET r116.text = 'Nếu không được phát hiện và điều trị sớm có thể dẫn đếncác khối u, ung thư chèn ép vào hệ thống dây thần kinh, nguy hiểm đến tính mạng.'
+
+MERGE (o1:symptom {id: 'nguy_hiểm_đến_tính_mạng_symptom'})
+MERGE (o2:disease {id: 'biến_chứng_nghiêm_trọng_disease'})
+MERGE (o1)-[r117:isSymptomOf]->(o2)
+SET r117.text = 'Nếu không được phát hiện và điều trị sớm có thể dẫn đếncác khối u, ung thư chèn ép vào hệ thống dây thần kinh, nguy hiểm đến tính mạng.'
+
+MERGE (o1:test {id: 'chẩn_đoán_test'})
+MERGE (o2:symptom {id: 'triệu_chứng_lâm_sàng_symptom'})
+MERGE (o1)-[r118:diagnosedBy]->(o2)
+SET r118.text = 'Thông thường, bác sĩ sẽ tiến hành chẩn đoán dựa trên các triệu chứng lâm sàng và chẩn đoán hình ảnh để tìm ra các dấu hiệu bất thường.'
+
+MERGE (o1:test {id: 'chẩn_đoán_test'})
+MERGE (o2:test {id: 'chẩn_đoán_hình_ảnh_test'})
+MERGE (o1)-[r119:diagnosedBy]->(o2)
+SET r119.text = 'Thông thường, bác sĩ sẽ tiến hành chẩn đoán dựa trên các triệu chứng lâm sàng và chẩn đoán hình ảnh để tìm ra các dấu hiệu bất thường.'
+
+MERGE (o1:test {id: 'chụp_x-quang_test'})
+MERGE (o2:disease {id: 'biến_chứng_nghiêm_trọng_disease'})
+MERGE (o1)-[r120:diagnosedBy]->(o2)
+SET r120.text = 'Một số phương pháp thường được chỉ định thực hiện gồm:  Chụp x-quang Chụp cắt lớp vi tính CT Chụp cộng hưởng MRI Điện cơ đo lường mức độ của cơ bắp'
+
+MERGE (o1:test {id: 'chụp_cắt_lớp_vi_tính_ct_test'})
+MERGE (o2:disease {id: 'biến_chứng_nghiêm_trọng_disease'})
+MERGE (o1)-[r121:diagnosedBy]->(o2)
+SET r121.text = 'Một số phương pháp thường được chỉ định thực hiện gồm:  Chụp x-quang Chụp cắt lớp vi tính CT Chụp cộng hưởng MRI Điện cơ đo lường mức độ của cơ bắp'
+
+MERGE (o1:test {id: 'chụp_cộng_hưởng_mri_test'})
+MERGE (o2:disease {id: 'biến_chứng_nghiêm_trọng_disease'})
+MERGE (o1)-[r122:diagnosedBy]->(o2)
+SET r122.text = 'Một số phương pháp thường được chỉ định thực hiện gồm:  Chụp x-quang Chụp cắt lớp vi tính CT Chụp cộng hưởng MRI Điện cơ đo lường mức độ của cơ bắp'
+
+MERGE (o1:test {id: 'điện_cơ_test'})
+MERGE (o2:disease {id: 'biến_chứng_nghiêm_trọng_disease'})
+MERGE (o1)-[r123:diagnosedBy]->(o2)
+SET r123.text = 'Một số phương pháp thường được chỉ định thực hiện gồm:  Chụp x-quang Chụp cắt lớp vi tính CT Chụp cộng hưởng MRI Điện cơ đo lường mức độ của cơ bắp'
+
+MERGE (o1:test {id: 'kiểm_tra_cận_lâm_sàng_test'})
+MERGE (o2:disease {id: 'biến_chứng_nghiêm_trọng_disease'})
+MERGE (o1)-[r124:diagnosedBy]->(o2)
+SET r124.text = 'Kết quả kiểm tra cận lâm sàng kết hợp triệu chứng lâm sàng sẽ là cơ sở để bác sĩ chẩn đoán chính xác nguyên nhân và mức độ bệnh, từ đó đưa ra phương pháp điều trị phù hợp nhất.'
+
+MERGE (o1:symptom {id: 'triệu_chứng_lâm_sàng_symptom'})
+MERGE (o2:disease {id: 'biến_chứng_nghiêm_trọng_disease'})
+MERGE (o1)-[r125:diagnosedBy]->(o2)
+SET r125.text = 'Kết quả kiểm tra cận lâm sàng kết hợp triệu chứng lâm sàng sẽ là cơ sở để bác sĩ chẩn đoán chính xác nguyên nhân và mức độ bệnh, từ đó đưa ra phương pháp điều trị phù hợp nhất.'
+
+MERGE (o1:treatment {id: 'điều_trị_nội_khoa_treatment'})
+MERGE (o2:disease {id: 'biến_chứng_nghiêm_trọng_disease'})
+MERGE (o1)-[r126:treatedBy]->(o2)
+SET r126.text = 'Tùy theo tình trạng bệnh lý của người bệnh, bác sĩ có thể chỉ định điều trị nội khoa, sử dụng các loại thuốc giảm đau chống viêm không steroid (NSAIDs), phối hợp với paracetamol, các vitamin nhóm B đường uống hoặc đường tiêm,&#8230;'
+
+MERGE (o1:treatment {id: 'thuốc_giảm_đau_chống_viêm_không_steroid_(nsaids)_treatment'})
+MERGE (o2:disease {id: 'biến_chứng_nghiêm_trọng_disease'})
+MERGE (o1)-[r127:treatedBy]->(o2)
+SET r127.text = 'Tùy theo tình trạng bệnh lý của người bệnh, bác sĩ có thể chỉ định điều trị nội khoa, sử dụng các loại thuốc giảm đau chống viêm không steroid (NSAIDs), phối hợp với paracetamol, các vitamin nhóm B đường uống hoặc đường tiêm,&#8230;'
+
+MERGE (o1:treatment {id: 'paracetamol_treatment'})
+MERGE (o2:disease {id: 'biến_chứng_nghiêm_trọng_disease'})
+MERGE (o1)-[r128:treatedBy]->(o2)
+SET r128.text = 'Tùy theo tình trạng bệnh lý của người bệnh, bác sĩ có thể chỉ định điều trị nội khoa, sử dụng các loại thuốc giảm đau chống viêm không steroid (NSAIDs), phối hợp với paracetamol, các vitamin nhóm B đường uống hoặc đường tiêm,&#8230;'
+
+MERGE (o1:treatment {id: 'vitamin_nhóm_b_treatment'})
+MERGE (o2:disease {id: 'biến_chứng_nghiêm_trọng_disease'})
+MERGE (o1)-[r129:treatedBy]->(o2)
+SET r129.text = 'Tùy theo tình trạng bệnh lý của người bệnh, bác sĩ có thể chỉ định điều trị nội khoa, sử dụng các loại thuốc giảm đau chống viêm không steroid (NSAIDs), phối hợp với paracetamol, các vitamin nhóm B đường uống hoặc đường tiêm,&#8230;'
+
+MERGE (o1:disease {id: 'đái_tháo_đường_disease'})
+MERGE (o2:disease {id: 'biến_chứng_nghiêm_trọng_disease'})
+MERGE (o1)-[r130:causedBy]->(o2)
+SET r130.text = 'Bên cạnh đó, dựa vào căn nguyên gây bệnh mà bác sĩ lựa chọn phương pháp điều trị kết hợp:  Đái tháo đường: Kiểm soát đường huyết tốt Rối loạn chuyển hóa Lipid máu: Kiểm soát lipid máu ở ngưỡng an toàn Thiếu vitamin: Bổ sung vitamin Thoái hóa cột sống: Điều trị thoái hóa Viêm khớp: Điều trị viêm khớp Nhiễm độc: Điều trị nhiễm độc'
+
+MERGE (o1:treatment {id: 'kiểm_soát_đường_huyết_tốt_treatment'})
+MERGE (o2:disease {id: 'đái_tháo_đường_disease'})
+MERGE (o1)-[r131:treatedBy]->(o2)
+SET r131.text = 'Bên cạnh đó, dựa vào căn nguyên gây bệnh mà bác sĩ lựa chọn phương pháp điều trị kết hợp:  Đái tháo đường: Kiểm soát đường huyết tốt Rối loạn chuyển hóa Lipid máu: Kiểm soát lipid máu ở ngưỡng an toàn Thiếu vitamin: Bổ sung vitamin Thoái hóa cột sống: Điều trị thoái hóa Viêm khớp: Điều trị viêm khớp Nhiễm độc: Điều trị nhiễm độc'
+
+MERGE (o1:disease {id: 'rối_loạn_chuyển_hóa_lipid_máu_disease'})
+MERGE (o2:disease {id: 'biến_chứng_nghiêm_trọng_disease'})
+MERGE (o1)-[r132:causedBy]->(o2)
+SET r132.text = 'Bên cạnh đó, dựa vào căn nguyên gây bệnh mà bác sĩ lựa chọn phương pháp điều trị kết hợp:  Đái tháo đường: Kiểm soát đường huyết tốt Rối loạn chuyển hóa Lipid máu: Kiểm soát lipid máu ở ngưỡng an toàn Thiếu vitamin: Bổ sung vitamin Thoái hóa cột sống: Điều trị thoái hóa Viêm khớp: Điều trị viêm khớp Nhiễm độc: Điều trị nhiễm độc'
+
+MERGE (o1:treatment {id: 'kiểm_soát_lipid_máu_ở_ngưỡng_an_toàn_treatment'})
+MERGE (o2:disease {id: 'rối_loạn_chuyển_hóa_lipid_máu_disease'})
+MERGE (o1)-[r133:treatedBy]->(o2)
+SET r133.text = 'Bên cạnh đó, dựa vào căn nguyên gây bệnh mà bác sĩ lựa chọn phương pháp điều trị kết hợp:  Đái tháo đường: Kiểm soát đường huyết tốt Rối loạn chuyển hóa Lipid máu: Kiểm soát lipid máu ở ngưỡng an toàn Thiếu vitamin: Bổ sung vitamin Thoái hóa cột sống: Điều trị thoái hóa Viêm khớp: Điều trị viêm khớp Nhiễm độc: Điều trị nhiễm độc'
+
+MERGE (o1:disease {id: 'thiếu_vitamin_disease'})
+MERGE (o2:disease {id: 'biến_chứng_nghiêm_trọng_disease'})
+MERGE (o1)-[r134:causedBy]->(o2)
+SET r134.text = 'Bên cạnh đó, dựa vào căn nguyên gây bệnh mà bác sĩ lựa chọn phương pháp điều trị kết hợp:  Đái tháo đường: Kiểm soát đường huyết tốt Rối loạn chuyển hóa Lipid máu: Kiểm soát lipid máu ở ngưỡng an toàn Thiếu vitamin: Bổ sung vitamin Thoái hóa cột sống: Điều trị thoái hóa Viêm khớp: Điều trị viêm khớp Nhiễm độc: Điều trị nhiễm độc'
+
+MERGE (o1:treatment {id: 'bổ_sung_vitamin_treatment'})
+MERGE (o2:disease {id: 'thiếu_vitamin_disease'})
+MERGE (o1)-[r135:treatedBy]->(o2)
+SET r135.text = 'Bên cạnh đó, dựa vào căn nguyên gây bệnh mà bác sĩ lựa chọn phương pháp điều trị kết hợp:  Đái tháo đường: Kiểm soát đường huyết tốt Rối loạn chuyển hóa Lipid máu: Kiểm soát lipid máu ở ngưỡng an toàn Thiếu vitamin: Bổ sung vitamin Thoái hóa cột sống: Điều trị thoái hóa Viêm khớp: Điều trị viêm khớp Nhiễm độc: Điều trị nhiễm độc'
+
+MERGE (o1:disease {id: 'thoái_hóa_cột_sống_disease'})
+MERGE (o2:disease {id: 'biến_chứng_nghiêm_trọng_disease'})
+MERGE (o1)-[r136:causedBy]->(o2)
+SET r136.text = 'Bên cạnh đó, dựa vào căn nguyên gây bệnh mà bác sĩ lựa chọn phương pháp điều trị kết hợp:  Đái tháo đường: Kiểm soát đường huyết tốt Rối loạn chuyển hóa Lipid máu: Kiểm soát lipid máu ở ngưỡng an toàn Thiếu vitamin: Bổ sung vitamin Thoái hóa cột sống: Điều trị thoái hóa Viêm khớp: Điều trị viêm khớp Nhiễm độc: Điều trị nhiễm độc'
+
+MERGE (o1:treatment {id: 'điều_trị_thoái_hóa_treatment'})
+MERGE (o2:disease {id: 'thoái_hóa_cột_sống_disease'})
+MERGE (o1)-[r137:treatedBy]->(o2)
+SET r137.text = 'Bên cạnh đó, dựa vào căn nguyên gây bệnh mà bác sĩ lựa chọn phương pháp điều trị kết hợp:  Đái tháo đường: Kiểm soát đường huyết tốt Rối loạn chuyển hóa Lipid máu: Kiểm soát lipid máu ở ngưỡng an toàn Thiếu vitamin: Bổ sung vitamin Thoái hóa cột sống: Điều trị thoái hóa Viêm khớp: Điều trị viêm khớp Nhiễm độc: Điều trị nhiễm độc'
+
+MERGE (o1:disease {id: 'viêm_khớp_disease'})
+MERGE (o2:disease {id: 'biến_chứng_nghiêm_trọng_disease'})
+MERGE (o1)-[r138:causedBy]->(o2)
+SET r138.text = 'Bên cạnh đó, dựa vào căn nguyên gây bệnh mà bác sĩ lựa chọn phương pháp điều trị kết hợp:  Đái tháo đường: Kiểm soát đường huyết tốt Rối loạn chuyển hóa Lipid máu: Kiểm soát lipid máu ở ngưỡng an toàn Thiếu vitamin: Bổ sung vitamin Thoái hóa cột sống: Điều trị thoái hóa Viêm khớp: Điều trị viêm khớp Nhiễm độc: Điều trị nhiễm độc'
+
+MERGE (o1:treatment {id: 'điều_trị_viêm_khớp_treatment'})
+MERGE (o2:disease {id: 'viêm_khớp_disease'})
+MERGE (o1)-[r139:treatedBy]->(o2)
+SET r139.text = 'Bên cạnh đó, dựa vào căn nguyên gây bệnh mà bác sĩ lựa chọn phương pháp điều trị kết hợp:  Đái tháo đường: Kiểm soát đường huyết tốt Rối loạn chuyển hóa Lipid máu: Kiểm soát lipid máu ở ngưỡng an toàn Thiếu vitamin: Bổ sung vitamin Thoái hóa cột sống: Điều trị thoái hóa Viêm khớp: Điều trị viêm khớp Nhiễm độc: Điều trị nhiễm độc'
+
+MERGE (o1:disease {id: 'nhiễm_độc_disease'})
+MERGE (o2:disease {id: 'biến_chứng_nghiêm_trọng_disease'})
+MERGE (o1)-[r140:causedBy]->(o2)
+SET r140.text = 'Bên cạnh đó, dựa vào căn nguyên gây bệnh mà bác sĩ lựa chọn phương pháp điều trị kết hợp:  Đái tháo đường: Kiểm soát đường huyết tốt Rối loạn chuyển hóa Lipid máu: Kiểm soát lipid máu ở ngưỡng an toàn Thiếu vitamin: Bổ sung vitamin Thoái hóa cột sống: Điều trị thoái hóa Viêm khớp: Điều trị viêm khớp Nhiễm độc: Điều trị nhiễm độc'
+
+MERGE (o1:disease {id: 'bệnh_tê_chân_tay_disease'})
+MERGE (o2:lifestyle {id: 'chất_lượng_cuộc_sống_lifestyle'})
+MERGE (o1)-[r141:affects]->(o2)
+SET r141.text = 'Bệnh tê chân tay sẽ ảnh hưởng rất nhiều đến chất lượng cuộc sống của người bệnh.'
+
+MERGE (o1:disease {id: 'bệnh_tê_chân_tay_disease'})
+MERGE (o2:organ {id: 'người_bệnh_organ'})
+MERGE (o1)-[r142:affects]->(o2)
+SET r142.text = 'Bệnh tê chân tay sẽ ảnh hưởng rất nhiều đến chất lượng cuộc sống của người bệnh.'
+
+MERGE (o1:disease {id: 'bệnh_tê_chân_tay_disease'})
+MERGE (o2:treatment {id: 'thăm_khám_treatment'})
+MERGE (o1)-[r143:treatedBy]->(o2)
+SET r143.text = 'Không chỉ thăm khám, điều trị theo chỉ định của bác sĩ chuyên môn, mỗi người cũng có thể thực hiện một số bài tập nhằm giúp máu lưu thông, tăng cường sức khỏe...'
+
+MERGE (o1:disease {id: 'bệnh_tê_chân_tay_disease'})
+MERGE (o2:treatment {id: 'điều_trị_treatment'})
+MERGE (o1)-[r144:treatedBy]->(o2)
+SET r144.text = 'Không chỉ thăm khám, điều trị theo chỉ định của bác sĩ chuyên môn, mỗi người cũng có thể thực hiện một số bài tập nhằm giúp máu lưu thông, tăng cường sức khỏe...'
+
+MERGE (o1:disease {id: 'bệnh_tê_chân_tay_disease'})
+MERGE (o2:treatment {id: 'bài_tập_treatment'})
+MERGE (o1)-[r145:treatedBy]->(o2)
+SET r145.text = 'Không chỉ thăm khám, điều trị theo chỉ định của bác sĩ chuyên môn, mỗi người cũng có thể thực hiện một số bài tập nhằm giúp máu lưu thông, tăng cường sức khỏe...'
+
+MERGE (o1:treatment {id: 'yoga_treatment'})
+MERGE (o2:disease {id: 'bệnh_tê_chân_tay_disease'})
+MERGE (o1)-[r146:treatedBy]->(o2)
+SET r146.text = 'Yoga từ lâu đã trở thành hình thức rèn luyện sức khỏe phổ biến với các bài tập rất nhẹ nhàng nhưng đem lại hiệu quả cao, đặc biệt là đối với người mắc bệnh tê chân tay.'
+
+MERGE (o1:treatment {id: 'yoga_treatment'})
+MERGE (o2:lifestyle {id: 'sức_khỏe_lifestyle'})
+MERGE (o1)-[r147:relatedTo]->(o2)
+SET r147.text = 'Yoga từ lâu đã trở thành hình thức rèn luyện sức khỏe phổ biến với các bài tập rất nhẹ nhàng nhưng đem lại hiệu quả cao, đặc biệt là đối với người mắc bệnh tê chân tay.'
+
+MERGE (o1:disease {id: 'bệnh_tê_chân_tay_disease'})
+MERGE (o2:treatment {id: 'lớp_yoga_uy_tín__chuyên_nghiệp_treatment'})
+MERGE (o1)-[r148:treatedBy]->(o2)
+SET r148.text = 'Tuy nhiên, để có hiệu quả chữa bệnh tốt nhất, người bệnh nên tìm học các lớp yoga uy tín, chuyên nghiệp để được hướng dẫn tập luyện đúng cách.'
+
+MERGE (o1:disease {id: 'bệnh_cơ_xương_khớp_disease'})
+MERGE (o2:lifestyle {id: 'vận_động_lifestyle'})
+MERGE (o1)-[r149:affects]->(o2)
+SET r149.text = 'Các bệnh cơ xương khớp sẽ gây hạn chế vận động rất lớn cho người bệnh, vì vậy đi bộ là phương pháp đơn giản và hiệu quả nhất.'
+
+MERGE (o1:disease {id: 'bệnh_cơ_xương_khớp_disease'})
+MERGE (o2:organ {id: 'người_bệnh_organ'})
+MERGE (o1)-[r150:affects]->(o2)
+SET r150.text = 'Các bệnh cơ xương khớp sẽ gây hạn chế vận động rất lớn cho người bệnh, vì vậy đi bộ là phương pháp đơn giản và hiệu quả nhất.'
+
+MERGE (o1:treatment {id: 'đi_bộ_treatment'})
+MERGE (o2:disease {id: 'bệnh_cơ_xương_khớp_disease'})
+MERGE (o1)-[r151:treatedBy]->(o2)
+SET r151.text = 'Các bệnh cơ xương khớp sẽ gây hạn chế vận động rất lớn cho người bệnh, vì vậy đi bộ là phương pháp đơn giản và hiệu quả nhất.'
+
+MERGE (o1:treatment {id: 'đi_bộ_treatment'})
+MERGE (o2:lifestyle {id: 'vận_động_mạnh_lifestyle'})
+MERGE (o1)-[r152:aggravatedBy]->(o2)
+SET r152.text = 'Cần lưu ý trong khi đi bộ, hãy cố gắng duy trì tốc độ vừa phải, tránh đi quá nhanh, vận động mạnh gây mất sức, tình trạng bệnh nặng hơn, ảnh hưởng đến sức khỏe.'
+
+MERGE (o1:treatment {id: 'đi_bộ_treatment'})
+MERGE (o2:symptom {id: 'mất_sức_symptom'})
+MERGE (o1)-[r153:aggravatedBy]->(o2)
+SET r153.text = 'Cần lưu ý trong khi đi bộ, hãy cố gắng duy trì tốc độ vừa phải, tránh đi quá nhanh, vận động mạnh gây mất sức, tình trạng bệnh nặng hơn, ảnh hưởng đến sức khỏe.'
+
+MERGE (o1:treatment {id: 'đi_bộ_treatment'})
+MERGE (o2:lifestyle {id: 'sức_khỏe_lifestyle'})
+MERGE (o1)-[r154:affects]->(o2)
+SET r154.text = 'Cần lưu ý trong khi đi bộ, hãy cố gắng duy trì tốc độ vừa phải, tránh đi quá nhanh, vận động mạnh gây mất sức, tình trạng bệnh nặng hơn, ảnh hưởng đến sức khỏe.'
+
+MERGE (o1:treatment {id: 'massage_treatment'})
+MERGE (o2:lifestyle {id: 'giấc_ngủ_lifestyle'})
+MERGE (o1)-[r155:relatedTo]->(o2)
+SET r155.text = 'Thời điểm phù hợp nhất để thực hiện massage là trước giờ đi ngủ và thực hiện trong khoảng từ 20 - 30 phút, từ cổ chân lên đùi và ngược lại, từ cổ tay đến vai và ngược lại.'
+
+MERGE (o1:treatment {id: 'massage_tay_chân_treatment'})
+MERGE (o2:symptom {id: 'tê_bì_tay_chân_symptom'})
+MERGE (o1)-[r156:treatedBy]->(o2)
+SET r156.text = 'Massage tay chân thường xuyên sẽ giúp kích thích lưu thông máu trong cơ thể, không những giảm tình trạng tê bì tay chân mà còn giúp đem lại giấc ngủ thoải mái hơn.'
+
+MERGE (o1:treatment {id: 'massage_tay_chân_treatment'})
+MERGE (o2:organ {id: 'lưu_thông_máu_organ'})
+MERGE (o1)-[r157:affects]->(o2)
+SET r157.text = 'Massage tay chân thường xuyên sẽ giúp kích thích lưu thông máu trong cơ thể, không những giảm tình trạng tê bì tay chân mà còn giúp đem lại giấc ngủ thoải mái hơn.'
+
+MERGE (o1:symptom {id: 'tê_tay_symptom'})
+MERGE (o2:lifestyle {id: 'thói_quen_sinh_hoạt_lifestyle'})
+MERGE (o1)-[r158:preventedBy]->(o2)
+SET r158.text = 'Để phòng ngừa tình trạng tê tay nói riêng và cả các bệnh lý nguy hiểm khác, mỗi người nên xây dựng cho mình những thói quen sinh hoạt, ăn uống cùng chế độ tập luyện khoa học, lành mạnh.'
+
+MERGE (o1:symptom {id: 'tê_tay_symptom'})
+MERGE (o2:lifestyle {id: 'ăn_uống_lifestyle'})
+MERGE (o1)-[r159:preventedBy]->(o2)
+SET r159.text = 'Để phòng ngừa tình trạng tê tay nói riêng và cả các bệnh lý nguy hiểm khác, mỗi người nên xây dựng cho mình những thói quen sinh hoạt, ăn uống cùng chế độ tập luyện khoa học, lành mạnh.'
+
+MERGE (o1:symptom {id: 'tê_tay_symptom'})
+MERGE (o2:lifestyle {id: 'chế_độ_tập_luyện_khoa_học__lành_mạnh_lifestyle'})
+MERGE (o1)-[r160:preventedBy]->(o2)
+SET r160.text = 'Để phòng ngừa tình trạng tê tay nói riêng và cả các bệnh lý nguy hiểm khác, mỗi người nên xây dựng cho mình những thói quen sinh hoạt, ăn uống cùng chế độ tập luyện khoa học, lành mạnh.'
+
+MERGE (o1:lifestyle {id: 'chế_độ_ăn_uống_lifestyle'})
+MERGE (o2:organ {id: 'cơ_thể_organ'})
+MERGE (o1)-[r161:affects]->(o2)
+SET r161.text = 'Chế độ ăn uống cần bổ sung nhiều thực phẩm lành mạnh, chứa nhiều chất dinh dưỡng, vi chất tốt cho cơ thể, hệ xương khớp, hệ thần kinh, máu như vitamin D, canxi, vitamin K...'
+
+MERGE (o1:lifestyle {id: 'chế_độ_ăn_uống_lifestyle'})
+MERGE (o2:organ {id: 'hệ_xương_khớp_organ'})
+MERGE (o1)-[r162:affects]->(o2)
+SET r162.text = 'Chế độ ăn uống cần bổ sung nhiều thực phẩm lành mạnh, chứa nhiều chất dinh dưỡng, vi chất tốt cho cơ thể, hệ xương khớp, hệ thần kinh, máu như vitamin D, canxi, vitamin K...'
+
+MERGE (o1:lifestyle {id: 'chế_độ_ăn_uống_lifestyle'})
+MERGE (o2:organ {id: 'hệ_thần_kinh_organ'})
+MERGE (o1)-[r163:affects]->(o2)
+SET r163.text = 'Chế độ ăn uống cần bổ sung nhiều thực phẩm lành mạnh, chứa nhiều chất dinh dưỡng, vi chất tốt cho cơ thể, hệ xương khớp, hệ thần kinh, máu như vitamin D, canxi, vitamin K...'
+
+MERGE (o1:lifestyle {id: 'chế_độ_ăn_uống_lifestyle'})
+MERGE (o2:organ {id: 'máu_organ'})
+MERGE (o1)-[r164:affects]->(o2)
+SET r164.text = 'Chế độ ăn uống cần bổ sung nhiều thực phẩm lành mạnh, chứa nhiều chất dinh dưỡng, vi chất tốt cho cơ thể, hệ xương khớp, hệ thần kinh, máu như vitamin D, canxi, vitamin K...'
+
+MERGE (o1:food {id: 'vitamin_d_food'})
+MERGE (o2:organ {id: 'hệ_xương_khớp_organ'})
+MERGE (o1)-[r165:relatedTo]->(o2)
+SET r165.text = 'Chế độ ăn uống cần bổ sung nhiều thực phẩm lành mạnh, chứa nhiều chất dinh dưỡng, vi chất tốt cho cơ thể, hệ xương khớp, hệ thần kinh, máu như vitamin D, canxi, vitamin K...'
+
+MERGE (o1:food {id: 'canxi_food'})
+MERGE (o2:organ {id: 'hệ_xương_khớp_organ'})
+MERGE (o1)-[r166:relatedTo]->(o2)
+SET r166.text = 'Chế độ ăn uống cần bổ sung nhiều thực phẩm lành mạnh, chứa nhiều chất dinh dưỡng, vi chất tốt cho cơ thể, hệ xương khớp, hệ thần kinh, máu như vitamin D, canxi, vitamin K...'
+
+MERGE (o1:food {id: 'vitamin_k_food'})
+MERGE (o2:organ {id: 'hệ_xương_khớp_organ'})
+MERGE (o1)-[r167:relatedTo]->(o2)
+SET r167.text = 'Chế độ ăn uống cần bổ sung nhiều thực phẩm lành mạnh, chứa nhiều chất dinh dưỡng, vi chất tốt cho cơ thể, hệ xương khớp, hệ thần kinh, máu như vitamin D, canxi, vitamin K...'
+
+MERGE (o1:lifestyle {id: 'tập_luyện_thể_dục_thể_thao_lifestyle'})
+MERGE (o2:organ {id: 'xương_khớp_organ'})
+MERGE (o1)-[r168:affects]->(o2)
+SET r168.text = 'Có kế hoạch tập luyện thể dục thể thao hàng ngày, phù hợp với thể trạng để xương khớp chắc khỏe, dẻo dai, máu huyết được lưu thông ổn định...'
+
+MERGE (o1:lifestyle {id: 'tập_luyện_thể_dục_thể_thao_lifestyle'})
+MERGE (o2:organ {id: 'máu_huyết_organ'})
+MERGE (o1)-[r169:affects]->(o2)
+SET r169.text = 'Có kế hoạch tập luyện thể dục thể thao hàng ngày, phù hợp với thể trạng để xương khớp chắc khỏe, dẻo dai, máu huyết được lưu thông ổn định...'
+
+MERGE (o1:lifestyle {id: 'ngồi_lâu_lifestyle'})
+MERGE (o2:symptom {id: 'tê_tay_chân_symptom'})
+MERGE (o1)-[r170:aggravatedBy]->(o2)
+SET r170.text = 'Sắp xếp hợp lý thời gian làm việc và nghỉ ngơi, tránh ngồi lâu một vị trí, có thể đi lại khoảng 5-10 phút sau khi làm việc liên tục trong 1 - 2 giờ.'
+
+MERGE (o1:lifestyle {id: 'áp_lực_công_việc_lifestyle'})
+MERGE (o2:symptom {id: 'tê_tay_chân_symptom'})
+MERGE (o1)-[r171:aggravatedBy]->(o2)
+SET r171.text = 'bên cạnh đó, cũng cần tránh làm việc trong nhiều giờ liền, giữ tinh thần thoải mái, tránh áp lực quá nhiều vì công việc.'
+
+MERGE (o1:food {id: 'rượu_bia_food'})
+MERGE (o2:symptom {id: 'tê_tay_chân_symptom'})
+MERGE (o1)-[r172:aggravatedBy]->(o2)
+SET r172.text = 'Các thực phẩm, đồ uống, chất kích thích như rượu bia, thuốc lá, đồ ăn nhanh, đồ ăn chiên rán… cần được hạn chế tối đa vì những loại thực phẩm này không chỉ có những hoạt chất gây hại làm cho tình trạng tê tay chân ngày càng nghiêm trọng hơn mà còn lấy đi những chất dinh dưỡng cần thiết cho xương khớp, hệ thần kinh và máu.'
+
+MERGE (o1:food {id: 'thuốc_lá_food'})
+MERGE (o2:symptom {id: 'tê_tay_chân_symptom'})
+MERGE (o1)-[r173:aggravatedBy]->(o2)
+SET r173.text = 'Các thực phẩm, đồ uống, chất kích thích như rượu bia, thuốc lá, đồ ăn nhanh, đồ ăn chiên rán… cần được hạn chế tối đa vì những loại thực phẩm này không chỉ có những hoạt chất gây hại làm cho tình trạng tê tay chân ngày càng nghiêm trọng hơn mà còn lấy đi những chất dinh dưỡng cần thiết cho xương khớp, hệ thần kinh và máu.'
+
+MERGE (o1:food {id: 'đồ_ăn_nhanh_food'})
+MERGE (o2:symptom {id: 'tê_tay_chân_symptom'})
+MERGE (o1)-[r174:aggravatedBy]->(o2)
+SET r174.text = 'Các thực phẩm, đồ uống, chất kích thích như rượu bia, thuốc lá, đồ ăn nhanh, đồ ăn chiên rán… cần được hạn chế tối đa vì những loại thực phẩm này không chỉ có những hoạt chất gây hại làm cho tình trạng tê tay chân ngày càng nghiêm trọng hơn mà còn lấy đi những chất dinh dưỡng cần thiết cho xương khớp, hệ thần kinh và máu.'
+
+MERGE (o1:food {id: 'đồ_ăn_chiên_rán_food'})
+MERGE (o2:symptom {id: 'tê_tay_chân_symptom'})
+MERGE (o1)-[r175:aggravatedBy]->(o2)
+SET r175.text = 'Các thực phẩm, đồ uống, chất kích thích như rượu bia, thuốc lá, đồ ăn nhanh, đồ ăn chiên rán… cần được hạn chế tối đa vì những loại thực phẩm này không chỉ có những hoạt chất gây hại làm cho tình trạng tê tay chân ngày càng nghiêm trọng hơn mà còn lấy đi những chất dinh dưỡng cần thiết cho xương khớp, hệ thần kinh và máu.'
+
+MERGE (o1:food {id: 'rượu_bia__thuốc_lá__đồ_ăn_nhanh__đồ_ăn_chiên_rán_food'})
+MERGE (o2:organ {id: 'xương_khớp_organ'})
+MERGE (o1)-[r176:affects]->(o2)
+SET r176.text = 'Các thực phẩm, đồ uống, chất kích thích như rượu bia, thuốc lá, đồ ăn nhanh, đồ ăn chiên rán… cần được hạn chế tối đa vì những loại thực phẩm này không chỉ có những hoạt chất gây hại làm cho tình trạng tê tay chân ngày càng nghiêm trọng hơn mà còn lấy đi những chất dinh dưỡng cần thiết cho xương khớp, hệ thần kinh và máu.'
+
+MERGE (o1:food {id: 'rượu_bia__thuốc_lá__đồ_ăn_nhanh__đồ_ăn_chiên_rán_food'})
+MERGE (o2:organ {id: 'hệ_thần_kinh_organ'})
+MERGE (o1)-[r177:affects]->(o2)
+SET r177.text = 'Các thực phẩm, đồ uống, chất kích thích như rượu bia, thuốc lá, đồ ăn nhanh, đồ ăn chiên rán… cần được hạn chế tối đa vì những loại thực phẩm này không chỉ có những hoạt chất gây hại làm cho tình trạng tê tay chân ngày càng nghiêm trọng hơn mà còn lấy đi những chất dinh dưỡng cần thiết cho xương khớp, hệ thần kinh và máu.'
+
+MERGE (o1:food {id: 'rượu_bia__thuốc_lá__đồ_ăn_nhanh__đồ_ăn_chiên_rán_food'})
+MERGE (o2:organ {id: 'máu_organ'})
+MERGE (o1)-[r178:affects]->(o2)
+SET r178.text = 'Các thực phẩm, đồ uống, chất kích thích như rượu bia, thuốc lá, đồ ăn nhanh, đồ ăn chiên rán… cần được hạn chế tối đa vì những loại thực phẩm này không chỉ có những hoạt chất gây hại làm cho tình trạng tê tay chân ngày càng nghiêm trọng hơn mà còn lấy đi những chất dinh dưỡng cần thiết cho xương khớp, hệ thần kinh và máu.'
+
+MERGE (o1:lifestyle {id: 'tăng_cân_quá_mức_lifestyle'})
+MERGE (o2:symptom {id: 'tê_tay_chân_symptom'})
+MERGE (o1)-[r179:aggravatedBy]->(o2)
+SET r179.text = 'Luôn giữ cân nặng ở mức cân bằng, việc tăng cân quá mức có thể tạo áp lực lên cột sống dẫn đến thoái hóa cột sống, thoát vị đĩa đệm… chèn ép lên rễ thần kinh gây tê tay chân.'
+
+MERGE (o1:lifestyle {id: 'tăng_cân_quá_mức_lifestyle'})
+MERGE (o2:organ {id: 'cột_sống_organ'})
+MERGE (o1)-[r180:affects]->(o2)
+SET r180.text = 'Luôn giữ cân nặng ở mức cân bằng, việc tăng cân quá mức có thể tạo áp lực lên cột sống dẫn đến thoái hóa cột sống, thoát vị đĩa đệm… chèn ép lên rễ thần kinh gây tê tay chân.'
+
+MERGE (o1:disease {id: 'thoái_hóa_cột_sống_disease'})
+MERGE (o2:lifestyle {id: 'tăng_cân_quá_mức_lifestyle'})
+MERGE (o1)-[r181:causedBy]->(o2)
+SET r181.text = 'Luôn giữ cân nặng ở mức cân bằng, việc tăng cân quá mức có thể tạo áp lực lên cột sống dẫn đến thoái hóa cột sống, thoát vị đĩa đệm… chèn ép lên rễ thần kinh gây tê tay chân.'
+
+MERGE (o1:disease {id: 'thoát_vị_đĩa_đệm_disease'})
+MERGE (o2:lifestyle {id: 'tăng_cân_quá_mức_lifestyle'})
+MERGE (o1)-[r182:causedBy]->(o2)
+SET r182.text = 'Luôn giữ cân nặng ở mức cân bằng, việc tăng cân quá mức có thể tạo áp lực lên cột sống dẫn đến thoái hóa cột sống, thoát vị đĩa đệm… chèn ép lên rễ thần kinh gây tê tay chân.'
+
+MERGE (o1:disease {id: 'thoái_hóa_cột_sống__thoát_vị_đĩa_đệm_disease'})
+MERGE (o2:organ {id: 'rễ_thần_kinh_organ'})
+MERGE (o1)-[r183:affects]->(o2)
+SET r183.text = 'Luôn giữ cân nặng ở mức cân bằng, việc tăng cân quá mức có thể tạo áp lực lên cột sống dẫn đến thoái hóa cột sống, thoát vị đĩa đệm… chèn ép lên rễ thần kinh gây tê tay chân.'
+
+MERGE (o1:cause {id: 'thiếu_chất_dinh_dưỡng_thiết_yếu_cause'})
+MERGE (o2:symptom {id: 'tê_tay_chân_symptom'})
+MERGE (o1)-[r184:causes]->(o2)
+SET r184.text = 'Tình trạng cũng có thể là do thiếu chất dinh dưỡng thiết yếu nên người bệnh cần xây dựng chế độ ăn uống hợp lý kết hợp với việc điều trị.'
+
+MERGE (o1:symptom {id: 'tê_tay_chân_symptom'})
+MERGE (o2:lifestyle {id: 'chế_độ_ăn_uống_hợp_lý_lifestyle'})
+MERGE (o1)-[r185:treatedBy]->(o2)
+SET r185.text = 'Tình trạng cũng có thể là do thiếu chất dinh dưỡng thiết yếu nên người bệnh cần xây dựng chế độ ăn uống hợp lý kết hợp với việc điều trị.'
+
+MERGE (o1:symptom {id: 'tê_tay_chân_symptom'})
+MERGE (o2:treatment {id: 'điều_trị_treatment'})
+MERGE (o1)-[r186:treatedBy]->(o2)
+SET r186.text = 'Tình trạng cũng có thể là do thiếu chất dinh dưỡng thiết yếu nên người bệnh cần xây dựng chế độ ăn uống hợp lý kết hợp với việc điều trị.'
+
+MERGE (o1:food {id: 'vitamin_d_food'})
+MERGE (o2:disease {id: 'bệnh_tê_chân_tay_disease'})
+MERGE (o1)-[r187:relatedTo]->(o2)
+SET r187.text = 'Vitamin D và vitamin K đặc biệt quan trọng đối với các bệnh nhân mắc bệnh tê chân tay, thường có trong các thực phẩm như: trứng, cá, đậu nành hoặc rau cải xoăn,…'
+
+MERGE (o1:food {id: 'vitamin_k_food'})
+MERGE (o2:disease {id: 'bệnh_tê_chân_tay_disease'})
+MERGE (o1)-[r188:relatedTo]->(o2)
+SET r188.text = 'Vitamin D và vitamin K đặc biệt quan trọng đối với các bệnh nhân mắc bệnh tê chân tay, thường có trong các thực phẩm như: trứng, cá, đậu nành hoặc rau cải xoăn,…'
+
+MERGE (o1:food {id: 'trứng_food'})
+MERGE (o2:food {id: 'vitamin_d_food'})
+MERGE (o1)-[r189:relatedTo]->(o2)
+SET r189.text = 'Vitamin D và vitamin K đặc biệt quan trọng đối với các bệnh nhân mắc bệnh tê chân tay, thường có trong các thực phẩm như: trứng, cá, đậu nành hoặc rau cải xoăn,…'
+
+MERGE (o1:food {id: 'cá_food'})
+MERGE (o2:food {id: 'vitamin_d_food'})
+MERGE (o1)-[r190:relatedTo]->(o2)
+SET r190.text = 'Vitamin D và vitamin K đặc biệt quan trọng đối với các bệnh nhân mắc bệnh tê chân tay, thường có trong các thực phẩm như: trứng, cá, đậu nành hoặc rau cải xoăn,…'
+
+MERGE (o1:food {id: 'đậu_nành_food'})
+MERGE (o2:food {id: 'vitamin_d_food'})
+MERGE (o1)-[r191:relatedTo]->(o2)
+SET r191.text = 'Vitamin D và vitamin K đặc biệt quan trọng đối với các bệnh nhân mắc bệnh tê chân tay, thường có trong các thực phẩm như: trứng, cá, đậu nành hoặc rau cải xoăn,…'
+
+MERGE (o1:food {id: 'rau_cải_xoăn_food'})
+MERGE (o2:food {id: 'vitamin_d_food'})
+MERGE (o1)-[r192:relatedTo]->(o2)
+SET r192.text = 'Vitamin D và vitamin K đặc biệt quan trọng đối với các bệnh nhân mắc bệnh tê chân tay, thường có trong các thực phẩm như: trứng, cá, đậu nành hoặc rau cải xoăn,…'
+
+MERGE (o1:food {id: 'vitamin_d_food'})
+MERGE (o2:organ {id: 'xương_khớp_organ'})
+MERGE (o1)-[r193:affects]->(o2)
+SET r193.text = 'Theo nghiên cứu, việc bổ sung đầy đủ vitamin D sẽ giúp người bệnh tăng cường sự dẻo dai cho xương khớp (3), còn vitamin K có tác dụng giúp giảm đau và bảo vệ, duy trì sức khỏe của xương khớp, làm chậm quá trình thoái hóa, tăng đề kháng của cơ thể và tăng cường hấp thu canxi cho xương chắc khỏe (4).'
+
+MERGE (o1:food {id: 'vitamin_k_food'})
+MERGE (o2:organ {id: 'xương_khớp_organ'})
+MERGE (o1)-[r194:affects]->(o2)
+SET r194.text = 'Theo nghiên cứu, việc bổ sung đầy đủ vitamin D sẽ giúp người bệnh tăng cường sự dẻo dai cho xương khớp (3), còn vitamin K có tác dụng giúp giảm đau và bảo vệ, duy trì sức khỏe của xương khớp, làm chậm quá trình thoái hóa, tăng đề kháng của cơ thể và tăng cường hấp thu canxi cho xương chắc khỏe (4).'
+
+MERGE (o1:food {id: 'vitamin_k_food'})
+MERGE (o2:disease {id: 'thoái_hóa_disease'})
+MERGE (o1)-[r195:affects]->(o2)
+SET r195.text = 'Theo nghiên cứu, việc bổ sung đầy đủ vitamin D sẽ giúp người bệnh tăng cường sự dẻo dai cho xương khớp (3), còn vitamin K có tác dụng giúp giảm đau và bảo vệ, duy trì sức khỏe của xương khớp, làm chậm quá trình thoái hóa, tăng đề kháng của cơ thể và tăng cường hấp thu canxi cho xương chắc khỏe (4).'
+
+MERGE (o1:food {id: 'canxi_food'})
+MERGE (o2:organ {id: 'cơ_xương_khớp_organ'})
+MERGE (o1)-[r196:affects]->(o2)
+SET r196.text = 'Dinh dưỡng có vai trò vô cùng quan trọng trong hỗ trợ điều trị và phòng ngừa Bên cạnh đó, việc bổ sung thêm canxi cho cơ thể bằng thực phẩm giàu canxi bao gồm: hải sản, chuối, sữa… giúp làm chậm lão hóa cơ xương khớp.'
+
+MERGE (o1:food {id: 'hải_sản_food'})
+MERGE (o2:food {id: 'canxi_food'})
+MERGE (o1)-[r197:relatedTo]->(o2)
+SET r197.text = 'Dinh dưỡng có vai trò vô cùng quan trọng trong hỗ trợ điều trị và phòng ngừa Bên cạnh đó, việc bổ sung thêm canxi cho cơ thể bằng thực phẩm giàu canxi bao gồm: hải sản, chuối, sữa… giúp làm chậm lão hóa cơ xương khớp.'
+
+MERGE (o1:food {id: 'chuối_food'})
+MERGE (o2:food {id: 'canxi_food'})
+MERGE (o1)-[r198:relatedTo]->(o2)
+SET r198.text = 'Dinh dưỡng có vai trò vô cùng quan trọng trong hỗ trợ điều trị và phòng ngừa Bên cạnh đó, việc bổ sung thêm canxi cho cơ thể bằng thực phẩm giàu canxi bao gồm: hải sản, chuối, sữa… giúp làm chậm lão hóa cơ xương khớp.'
+
+MERGE (o1:food {id: 'sữa_food'})
+MERGE (o2:food {id: 'canxi_food'})
+MERGE (o1)-[r199:relatedTo]->(o2)
+SET r199.text = 'Dinh dưỡng có vai trò vô cùng quan trọng trong hỗ trợ điều trị và phòng ngừa Bên cạnh đó, việc bổ sung thêm canxi cho cơ thể bằng thực phẩm giàu canxi bao gồm: hải sản, chuối, sữa… giúp làm chậm lão hóa cơ xương khớp.'
+
+MERGE (o1:symptom {id: 'cảm_giác_bị_tê_bì_chân_tay__ngứa_ran__thậm_chí_là_tê_liệt__mất_cảm_giác_ở_chân_tay_khi_ngủ_symptom'})
+MERGE (o2:lifestyle {id: 'nằm_sai_tư_thế__gối_quá_cao__khiến_dây_thần_kinh_chịu_áp_lực_lifestyle'})
+MERGE (o1)-[r200:causedBy]->(o2)
+SET r200.text = 'Cảm giác bị tê bì chân tay, ngứa ran, thậm chí là tê liệt, mất cảm giác ở chân tay khi ngủ là do nằm sai tư thế, gối quá cao, khiến dây thần kinh chịu áp lực.'
+
+MERGE (o1:symptom {id: 'cảm_giác_bị_tê_bì_chân_tay__ngứa_ran__thậm_chí_là_tê_liệt__mất_cảm_giác_ở_chân_tay_khi_ngủ_symptom'})
+MERGE (o2:disease {id: 'thoái_hóa_đốt_sống_cổ__viêm_dây_thần_kinh_ngoại_biên__tiểu_đường__các_bệnh_lý_về_tim_mạch__thiếu_máu_não_cục_bộ__thiếu_vitamin_b12_disease'})
+MERGE (o1)-[r201:isSymptomOf]->(o2)
+SET r201.text = 'Cảm giác bị tê bì chân tay, ngứa ran, thậm chí là tê liệt, mất cảm giác ở chân tay khi ngủ là do nằm sai tư thế, gối quá cao, khiến dây thần kinh chịu áp lực. Nhưng ở một số trường hợp thì cũng có thể là triệu chứng cảnh báo nhiều căn bệnh nguy hiểm như thoái hóa đốt sống cổ, viêm dây thần kinh ngoại biên, tiểu đường, các bệnh lý về tim mạch, thiếu máu não cục bộ, thiếu vitamin B12…(5)'
+
+MERGE (o1:symptom {id: 'cảm_giác_tê_bì_ở_tay_và_chân_symptom'})
+MERGE (o2:lifestyle {id: 'giữ_một_tư_thế_trong_một_thời_gian_dài_như_ngồi__đứng_hay_khi_ngủ_dậy_lifestyle'})
+MERGE (o1)-[r202:causedBy]->(o2)
+SET r202.text = 'Cảm giác tê bì ở tay và chân là triệu chứng rất phổ biến, đặc biệt là thường xảy ra khi giữ một tư thế trong một thời gian dài như ngồi, đứng hay khi ngủ dậy.'
+
+MERGE (o1:symptom {id: 'cảm_giác_tê_bì_ở_tay_và_chân_symptom'})
+MERGE (o2:disease {id: 'thoát_vị_đĩa_đệm__đau_thần_kinh_tọa__viêm_khớp_dạng_thấp__hẹp_ống_sống__thiếu_máu_não_do_thoát_vị_chèn_ép__bệnh_đa_xơ_cứng_disease'})
+MERGE (o1)-[r203:isSymptomOf]->(o2)
+SET r203.text = 'Cảm giác tê bì ở tay và chân là triệu chứng rất phổ biến, đặc biệt là thường xảy ra khi giữ một tư thế trong một thời gian dài như ngồi, đứng hay khi ngủ dậy. Tình trạng này không gây ảnh hưởng nghiêm trọng đến tính mạng, nhưng nếu các triệu chứng xuất hiện với tần suất liên tục thì người bệnh cần thăm khám ngay để kiểm tra xem có mắc bệnh lý bên trong nguy hiểm như Thoát vị đĩa đệm, đau thần kinh tọa, viêm khớp dạng thấp, hẹp ống sống, thiếu máu não do thoát vị chèn ép, bệnh đa xơ cứng… hay không.'
+
+MERGE (o1:symptom {id: 'cảm_giác_tê_bì_ở_tay_và_chân_symptom'})
+MERGE (o2:test {id: 'thăm_khám_test'})
+MERGE (o1)-[r204:diagnosedBy]->(o2)
+SET r204.text = 'Tình trạng này không gây ảnh hưởng nghiêm trọng đến tính mạng, nhưng nếu các triệu chứng xuất hiện với tần suất liên tục thì người bệnh cần thăm khám ngay để kiểm tra xem có mắc bệnh lý bên trong nguy hiểm như Thoát vị đĩa đệm, đau thần kinh tọa, viêm khớp dạng thấp, hẹp ống sống, thiếu máu não do thoát vị chèn ép, bệnh đa xơ cứng… hay không.'
+
+MERGE (o1:symptom {id: 'tê_bì_chân_tay_symptom'})
+MERGE (o2:test {id: 'chẩn_đoán_và_đánh_giá_test'})
+MERGE (o1)-[r205:diagnosedBy]->(o2)
+SET r205.text = 'Như vậy, việc chẩn đoán và đánh giá chính xác tình trạng tê bì chân tay rất quan trọng để định hướng điều trị đúng và hiệu quả, đặc biệt đối với người cao tuổi dễ mắc phải các bệnh xương khớp, người bệnh tiểu đường&#8230;'
+
+MERGE (o1:symptom {id: 'tê_bì_chân_tay_symptom'})
+MERGE (o2:treatment {id: 'điều_trị_treatment'})
+MERGE (o1)-[r206:treatedBy]->(o2)
+SET r206.text = 'Như vậy, việc chẩn đoán và đánh giá chính xác tình trạng tê bì chân tay rất quan trọng để định hướng điều trị đúng và hiệu quả, đặc biệt đối với người cao tuổi dễ mắc phải các bệnh xương khớp, người bệnh tiểu đường&#8230;'
+
+MERGE (o1:symptom {id: 'tê_bì_chân_tay_symptom'})
+MERGE (o2:disease {id: 'bệnh_xương_khớp_disease'})
+MERGE (o1)-[r207:associatedWith]->(o2)
+SET r207.text = 'Như vậy, việc chẩn đoán và đánh giá chính xác tình trạng tê bì chân tay rất quan trọng để định hướng điều trị đúng và hiệu quả, đặc biệt đối với người cao tuổi dễ mắc phải các bệnh xương khớp, người bệnh tiểu đường&#8230;'

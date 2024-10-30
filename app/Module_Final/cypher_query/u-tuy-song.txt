@@ -1,0 +1,1012 @@
+
+MERGE (o1:disease {id: 'u_tủy_sống_disease'})
+MERGE (o2:disease {id: 'u_não_disease'})
+MERGE (o1)-[r0:isSymptomOf]->(o2)
+SET r0.text = 'U tủy sống có tỷ lệ người bệnh thấp hơn u não nhưng đây vẫn là một căn bệnh nguy hiểm, có thể đe dọa tính mạng người bệnh.'
+
+MERGE (o1:disease {id: 'u_tủy_sống_disease'})
+MERGE (o2:symptom {id: 'nguy_hiểm_symptom'})
+MERGE (o1)-[r1:relatedTo]->(o2)
+SET r1.text = 'U tủy sống có tỷ lệ người bệnh thấp hơn u não nhưng đây vẫn là một căn bệnh nguy hiểm, có thể đe dọa tính mạng người bệnh.'
+
+MERGE (o1:disease {id: 'u_tủy_sống_disease'})
+MERGE (o2:symptom {id: 'đe_dọa_tính_mạng_symptom'})
+MERGE (o1)-[r2:relatedTo]->(o2)
+SET r2.text = 'U tủy sống có tỷ lệ người bệnh thấp hơn u não nhưng đây vẫn là một căn bệnh nguy hiểm, có thể đe dọa tính mạng người bệnh.'
+
+MERGE (o1:disease {id: 'u_tủy_sống_disease'})
+MERGE (o2:treatment {id: 'chẩn_đoán_và_điều_trị_treatment'})
+MERGE (o1)-[r3:treatedBy]->(o2)
+SET r3.text = 'Nếu không được chẩn đoán và điều trị sớm, người bị u tủy sống có nguy cơ gặp các biến chứng nghiêm trọng hoặc thậm chí tử vong.'
+
+MERGE (o1:disease {id: 'u_tủy_sống_disease'})
+MERGE (o2:symptom {id: 'biến_chứng_nghiêm_trọng_symptom'})
+MERGE (o1)-[r4:relatedTo]->(o2)
+SET r4.text = 'Nếu không được chẩn đoán và điều trị sớm, người bị u tủy sống có nguy cơ gặp các biến chứng nghiêm trọng hoặc thậm chí tử vong.'
+
+MERGE (o1:disease {id: 'u_tủy_sống_disease'})
+MERGE (o2:symptom {id: 'tử_vong_symptom'})
+MERGE (o1)-[r5:relatedTo]->(o2)
+SET r5.text = 'Nếu không được chẩn đoán và điều trị sớm, người bị u tủy sống có nguy cơ gặp các biến chứng nghiêm trọng hoặc thậm chí tử vong.'
+
+MERGE (o1:disease {id: 'khối_u_tủy_sống_disease'})
+MERGE (o2:disease {id: 'u_lành_tính_disease'})
+MERGE (o1)-[r6:relatedTo]->(o2)
+SET r6.text = 'Khối u tủy sống có thể là u lành tính hoặc u ác tính.'
+
+MERGE (o1:disease {id: 'khối_u_tủy_sống_disease'})
+MERGE (o2:disease {id: 'u_ác_tính_disease'})
+MERGE (o1)-[r7:relatedTo]->(o2)
+SET r7.text = 'Khối u tủy sống có thể là u lành tính hoặc u ác tính.'
+
+MERGE (o1:disease {id: 'khối_u_tủy_sống_disease'})
+MERGE (o2:organ {id: 'tủy_sống_organ'})
+MERGE (o1)-[r8:affects]->(o2)
+SET r8.text = 'Khi các khối u tủy sống phát triển lớn hơn, chúng có thể gây áp lực lên tủy sống, dẫn đến các biến chứng thần kinh nghiêm trọng.'
+
+MERGE (o1:disease {id: 'khối_u_tủy_sống_disease'})
+MERGE (o2:symptom {id: 'biến_chứng_thần_kinh_nghiêm_trọng_symptom'})
+MERGE (o1)-[r9:relatedTo]->(o2)
+SET r9.text = 'Khi các khối u tủy sống phát triển lớn hơn, chúng có thể gây áp lực lên tủy sống, dẫn đến các biến chứng thần kinh nghiêm trọng.'
+
+MERGE (o1:symptom {id: 'triệu_chứng_u_tủy_sống_symptom'})
+MERGE (o2:disease {id: 'u_tủy_sống_disease'})
+MERGE (o1)-[r10:isSymptomOf]->(o2)
+SET r10.text = 'Việc nhận biết sớm các triệu chứng u tủy sống và can thiệp điều trị bệnh u tuỷ sống từ sớm sẽ giúp ngăn ngừa tổn thương dây thần kinh tủy sống vĩnh viễn.'
+
+MERGE (o1:disease {id: 'bệnh_u_tuỷ_sống_disease'})
+MERGE (o2:treatment {id: 'can_thiệp_điều_trị_treatment'})
+MERGE (o1)-[r11:treatedBy]->(o2)
+SET r11.text = 'Việc nhận biết sớm các triệu chứng u tủy sống và can thiệp điều trị bệnh u tuỷ sống từ sớm sẽ giúp ngăn ngừa tổn thương dây thần kinh tủy sống vĩnh viễn.'
+
+MERGE (o1:disease {id: 'bệnh_u_tuỷ_sống_disease'})
+MERGE (o2:symptom {id: 'tổn_thương_dây_thần_kinh_tủy_sống_vĩnh_viễn_symptom'})
+MERGE (o1)-[r12:relatedTo]->(o2)
+SET r12.text = 'Việc nhận biết sớm các triệu chứng u tủy sống và can thiệp điều trị bệnh u tuỷ sống từ sớm sẽ giúp ngăn ngừa tổn thương dây thần kinh tủy sống vĩnh viễn.'
+
+MERGE (o1:disease {id: 'u_tủy_sống_disease'})
+MERGE (o2:organ {id: 'tủy_sống_organ'})
+MERGE (o1)-[r13:locatedIn]->(o2)
+SET r13.text = 'U tủy sống là tình trạng có những khối u phát triển trong tủy sống hoặc ở màng cứng (lớp phủ bên ngoài tủy sống).'
+
+MERGE (o1:disease {id: 'u_tủy_sống_disease'})
+MERGE (o2:organ {id: 'màng_cứng_organ'})
+MERGE (o1)-[r14:locatedIn]->(o2)
+SET r14.text = 'U tủy sống là tình trạng có những khối u phát triển trong tủy sống hoặc ở màng cứng (lớp phủ bên ngoài tủy sống).'
+
+MERGE (o1:disease {id: 'khối_u_tủy_sống_disease'})
+MERGE (o2:organ {id: 'tủy_sống_organ'})
+MERGE (o1)-[r15:locatedIn]->(o2)
+SET r15.text = 'Các khối u tủy sống có thể bao gồm: Khối u nội tủy, xuất phát từ các tế bào nằm bên trong tủy sống.'
+
+MERGE (o1:disease {id: 'khối_u_nội_tủy_disease'})
+MERGE (o2:disease {id: 'u_tế_bào_hình_sao_disease'})
+MERGE (o1)-[r16:relatedTo]->(o2)
+SET r16.text = 'Các khối u tủy sống có thể bao gồm: Khối u nội tủy, xuất phát từ các tế bào nằm bên trong tủy sống. Ví dụ như u tế bào hình sao, u thần kinh đệm,&#8230;'
+
+MERGE (o1:disease {id: 'khối_u_nội_tủy_disease'})
+MERGE (o2:disease {id: 'u_thần_kinh_đệm_disease'})
+MERGE (o1)-[r17:relatedTo]->(o2)
+SET r17.text = 'Các khối u tủy sống có thể bao gồm: Khối u nội tủy, xuất phát từ các tế bào nằm bên trong tủy sống. Ví dụ như u tế bào hình sao, u thần kinh đệm,&#8230;'
+
+MERGE (o1:disease {id: 'khối_u_ngoài_tủy_disease'})
+MERGE (o2:organ {id: 'màng_cứng_organ'})
+MERGE (o1)-[r18:locatedIn]->(o2)
+SET r18.text = 'Các khối u tủy sống có thể bao gồm: Khối u ngoài tủy, dưới màng cứng phủ bên ngoài tủy hoặc nằm tại các rễ thần kinh vươn ra khỏi tủy sống.'
+
+MERGE (o1:disease {id: 'khối_u_ngoài_tủy_disease'})
+MERGE (o2:organ {id: 'rễ_thần_kinh_organ'})
+MERGE (o1)-[r19:locatedIn]->(o2)
+SET r19.text = 'Các khối u tủy sống có thể bao gồm: Khối u ngoài tủy, dưới màng cứng phủ bên ngoài tủy hoặc nằm tại các rễ thần kinh vươn ra khỏi tủy sống.'
+
+MERGE (o1:disease {id: 'khối_u_ngoài_tủy_disease'})
+MERGE (o2:organ {id: 'tủy_sống_organ'})
+MERGE (o1)-[r20:affects]->(o2)
+SET r20.text = 'Các khối u tủy sống có thể bao gồm: Khối u ngoài tủy, dưới màng cứng phủ bên ngoài tủy hoặc nằm tại các rễ thần kinh vươn ra khỏi tủy sống. Các khối u này tuy nằm bên ngoài tủy nhưng vẫn có thể tạo áp lực chèn lên tủy và ảnh hưởng đến chức năng của tủy sống.'
+
+MERGE (o1:disease {id: 'khối_u_ngoài_tủy_disease'})
+MERGE (o2:disease {id: 'u_vỏ_bọc_thần_kinh_disease'})
+MERGE (o1)-[r21:relatedTo]->(o2)
+SET r21.text = 'Các khối u tủy sống có thể bao gồm: Khối u ngoài tủy, dưới màng cứng phủ bên ngoài tủy hoặc nằm tại các rễ thần kinh vươn ra khỏi tủy sống. Các khối u này tuy nằm bên ngoài tủy nhưng vẫn có thể tạo áp lực chèn lên tủy và ảnh hưởng đến chức năng của tủy sống. Ví dụ như u vỏ bọc thần kinh, u sợi thần kinh, u màng não,&#8230;'
+
+MERGE (o1:disease {id: 'khối_u_ngoài_tủy_disease'})
+MERGE (o2:disease {id: 'u_sợi_thần_kinh_disease'})
+MERGE (o1)-[r22:relatedTo]->(o2)
+SET r22.text = 'Các khối u tủy sống có thể bao gồm: Khối u ngoài tủy, dưới màng cứng phủ bên ngoài tủy hoặc nằm tại các rễ thần kinh vươn ra khỏi tủy sống. Các khối u này tuy nằm bên ngoài tủy nhưng vẫn có thể tạo áp lực chèn lên tủy và ảnh hưởng đến chức năng của tủy sống. Ví dụ như u vỏ bọc thần kinh, u sợi thần kinh, u màng não,&#8230;'
+
+MERGE (o1:disease {id: 'khối_u_ngoài_tủy_disease'})
+MERGE (o2:disease {id: 'u_màng_não_disease'})
+MERGE (o1)-[r23:relatedTo]->(o2)
+SET r23.text = 'Các khối u tủy sống có thể bao gồm: Khối u ngoài tủy, dưới màng cứng phủ bên ngoài tủy hoặc nằm tại các rễ thần kinh vươn ra khỏi tủy sống. Các khối u này tuy nằm bên ngoài tủy nhưng vẫn có thể tạo áp lực chèn lên tủy và ảnh hưởng đến chức năng của tủy sống. Ví dụ như u vỏ bọc thần kinh, u sợi thần kinh, u màng não,&#8230;'
+
+MERGE (o1:disease {id: 'khối_u_ngoài_tủy_disease'})
+MERGE (o2:organ {id: 'màng_cứng_organ'})
+MERGE (o1)-[r24:locatedIn]->(o2)
+SET r24.text = 'Các khối u tủy sống có thể bao gồm: Khối u ngoài tủy, ngoài màng cứng: thường gặp do u di căn, thứ phát..'
+
+MERGE (o1:disease {id: 'khối_u_ngoài_tủy_disease'})
+MERGE (o2:disease {id: 'u_di_căn_disease'})
+MERGE (o1)-[r25:relatedTo]->(o2)
+SET r25.text = 'Các khối u tủy sống có thể bao gồm: Khối u ngoài tủy, ngoài màng cứng: thường gặp do u di căn, thứ phát..'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:organ {id: 'thần_kinh_organ'})
+MERGE (o1)-[r26:affects]->(o2)
+SET r26.text = 'Và cho dù khối u nằm bên trong tủy hay nằm ngoài tủy, khối u vừa mới phát triển hay khối u di căn từ các khối u khác thì cũng có thể dẫn đến các vấn đề về thần kinh, gây tàn tật vĩnh viễn hoặc thậm chí đe dọa tính mạng người bệnh.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:symptom {id: 'tàn_tật_vĩnh_viễn_symptom'})
+MERGE (o1)-[r27:relatedTo]->(o2)
+SET r27.text = 'Và cho dù khối u nằm bên trong tủy hay nằm ngoài tủy, khối u vừa mới phát triển hay khối u di căn từ các khối u khác thì cũng có thể dẫn đến các vấn đề về thần kinh, gây tàn tật vĩnh viễn hoặc thậm chí đe dọa tính mạng người bệnh.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:symptom {id: 'đe_dọa_tính_mạng_symptom'})
+MERGE (o1)-[r28:relatedTo]->(o2)
+SET r28.text = 'Và cho dù khối u nằm bên trong tủy hay nằm ngoài tủy, khối u vừa mới phát triển hay khối u di căn từ các khối u khác thì cũng có thể dẫn đến các vấn đề về thần kinh, gây tàn tật vĩnh viễn hoặc thậm chí đe dọa tính mạng người bệnh.'
+
+MERGE (o1:disease {id: 'u_tủy_sống_disease'})
+MERGE (o2:organ {id: 'tủy_sống_organ'})
+MERGE (o1)-[r29:locatedIn]->(o2)
+SET r29.text = 'U tủy sống là tình trạng có những khối u phát triển trong tủy sống hoặc ở màng cứng tủy sống'
+
+MERGE (o1:disease {id: 'u_tủy_sống_disease'})
+MERGE (o2:organ {id: 'màng_cứng_tủy_sống_organ'})
+MERGE (o1)-[r30:locatedIn]->(o2)
+SET r30.text = 'U tủy sống là tình trạng có những khối u phát triển trong tủy sống hoặc ở màng cứng tủy sống'
+
+MERGE (o1:disease {id: 'khối_u_tủy_sống_disease'})
+MERGE (o2:symptom {id: 'triệu_chứng_symptom'})
+MERGE (o1)-[r31:relatedTo]->(o2)
+SET r31.text = 'Các khối u tủy sống thường phát triển chậm nên các triệu chứng ở giai đoạn đầu cũng ít rõ rệt.'
+
+MERGE (o1:symptom {id: 'triệu_chứng_u_tủy_sống_symptom'})
+MERGE (o2:disease {id: 'u_tủy_sống_disease'})
+MERGE (o1)-[r32:isSymptomOf]->(o2)
+SET r32.text = 'Các triệu chứng u tủy sống thường kéo dài trong nhiều tháng và có thể nhầm lẫn với các cơn đau bình thường khác.'
+
+MERGE (o1:symptom {id: 'triệu_chứng_u_tủy_sống_symptom'})
+MERGE (o2:symptom {id: 'cơn_đau_bình_thường_symptom'})
+MERGE (o1)-[r33:relatedTo]->(o2)
+SET r33.text = 'Các triệu chứng u tủy sống thường kéo dài trong nhiều tháng và có thể nhầm lẫn với các cơn đau bình thường khác.'
+
+MERGE (o1:disease {id: 'khối_u_trong_tủy_sống_disease'})
+MERGE (o2:organ {id: 'tủy_sống_organ'})
+MERGE (o1)-[r34:locatedIn]->(o2)
+SET r34.text = 'Dấu hiệu có khối u trong tủy sống cũng thường khác nhau ở mỗi người.'
+
+MERGE (o1:disease {id: 'khối_u_trong_tủy_sống_disease'})
+MERGE (o2:symptom {id: 'dấu_hiệu_symptom'})
+MERGE (o1)-[r35:relatedTo]->(o2)
+SET r35.text = 'Dấu hiệu có khối u trong tủy sống cũng thường khác nhau ở mỗi người.'
+
+MERGE (o1:symptom {id: 'đau_cổ_hoặc_đau_lưng_kéo_dài_symptom'})
+MERGE (o2:disease {id: 'khối_u_ở_tủy_sống_disease'})
+MERGE (o1)-[r36:isSymptomOf]->(o2)
+SET r36.text = 'Nhìn chung, cơ thể có thể sẽ có các dấu hiệu cảnh báo sau nếu có khối u ở tủy sống: (1) Đau cổ hoặc đau lưng kéo dài.'
+
+MERGE (o1:symptom {id: 'đau_cổ_hoặc_đau_lưng_kéo_dài_symptom'})
+MERGE (o2:disease {id: 'đau_tủy_sống_disease'})
+MERGE (o1)-[r37:isSymptomOf]->(o2)
+SET r37.text = 'Đây là triệu chứng phổ biến nhất ở người bị đau tủy sống.'
+
+MERGE (o1:symptom {id: 'cơn_đau_symptom'})
+MERGE (o2:symptom {id: 'khu_trú_symptom'})
+MERGE (o1)-[r38:relatedTo]->(o2)
+SET r38.text = 'Cơn đau có thể khu trú (chỉ đau ở một vị trí nhất định) hoặc có thể lan rộng ra một vùng rộng hơn.'
+
+MERGE (o1:symptom {id: 'cơn_đau_symptom'})
+MERGE (o2:symptom {id: 'lan_rộng_symptom'})
+MERGE (o1)-[r39:relatedTo]->(o2)
+SET r39.text = 'Cơn đau có thể khu trú (chỉ đau ở một vị trí nhất định) hoặc có thể lan rộng ra một vùng rộng hơn.'
+
+MERGE (o1:symptom {id: 'cơn_đau_symptom'})
+MERGE (o2:disease {id: 'bệnh_u_tủy_sống_disease'})
+MERGE (o1)-[r40:isSymptomOf]->(o2)
+SET r40.text = 'Cơn đau do bệnh u tủy sống có thể trở nên rõ ràng hơn sau một chấn thương nhỏ, chẳng hạn như một tai nạn thể thao.'
+
+MERGE (o1:symptom {id: 'cơn_đau_symptom'})
+MERGE (o2:cause {id: 'chấn_thương_nhỏ_cause'})
+MERGE (o1)-[r41:aggravatedBy]->(o2)
+SET r41.text = 'Cơn đau do bệnh u tủy sống có thể trở nên rõ ràng hơn sau một chấn thương nhỏ, chẳng hạn như một tai nạn thể thao.'
+
+MERGE (o1:symptom {id: 'cơn_đau_symptom'})
+MERGE (o2:cause {id: 'tai_nạn_thể_thao_cause'})
+MERGE (o1)-[r42:aggravatedBy]->(o2)
+SET r42.text = 'Cơn đau do bệnh u tủy sống có thể trở nên rõ ràng hơn sau một chấn thương nhỏ, chẳng hạn như một tai nạn thể thao.'
+
+MERGE (o1:symptom {id: 'cơn_đau_symptom'})
+MERGE (o2:symptom {id: 'mất_ngủ_symptom'})
+MERGE (o1)-[r43:relatedTo]->(o2)
+SET r43.text = 'Ngoài ra, cơn đau thường sẽ nghiêm trọng hơn vào buổi tối, khiến bạn mất ngủ.'
+
+MERGE (o1:symptom {id: 'hội_chứng_tại_nơi_tổn_thương_symptom'})
+MERGE (o2:disease {id: 'u_tủy_sống_disease'})
+MERGE (o1)-[r44:isSymptomOf]->(o2)
+SET r44.text = 'Còn được gọi là hội chứng tại nơi tổn thương.'
+
+MERGE (o1:symptom {id: 'giảm_kỹ_năng_vận_động_symptom'})
+MERGE (o2:disease {id: 'u_tủy_sống_disease'})
+MERGE (o1)-[r45:isSymptomOf]->(o2)
+SET r45.text = 'Giảm kỹ năng vận động.'
+
+MERGE (o1:symptom {id: 'đi_lại_khó_khăn_symptom'})
+MERGE (o2:disease {id: 'u_tủy_sống_disease'})
+MERGE (o1)-[r46:isSymptomOf]->(o2)
+SET r46.text = 'Người bị u tủy sống thường đi lại khó khăn, nguy cơ té ngã cao.'
+
+MERGE (o1:symptom {id: 'nguy_cơ_té_ngã_cao_symptom'})
+MERGE (o2:disease {id: 'u_tủy_sống_disease'})
+MERGE (o1)-[r47:isSymptomOf]->(o2)
+SET r47.text = 'Người bị u tủy sống thường đi lại khó khăn, nguy cơ té ngã cao.'
+
+MERGE (o1:symptom {id: 'yếu_cơ_symptom'})
+MERGE (o2:disease {id: 'u_tủy_sống_disease'})
+MERGE (o1)-[r48:isSymptomOf]->(o2)
+SET r48.text = 'Yếu cơ, có thể tiến triển thành liệt nếu không được điều trị kịp thời'
+
+MERGE (o1:symptom {id: 'liệt_symptom'})
+MERGE (o2:disease {id: 'u_tủy_sống_disease'})
+MERGE (o1)-[r49:isSymptomOf]->(o2)
+SET r49.text = 'Yếu cơ, có thể tiến triển thành liệt nếu không được điều trị kịp thời'
+
+MERGE (o1:symptom {id: 'rối_loạn_cảm_giác_symptom'})
+MERGE (o2:disease {id: 'u_tủy_sống_disease'})
+MERGE (o1)-[r50:isSymptomOf]->(o2)
+SET r50.text = 'Rối loạn cảm giác hoặc có cảm giác tê ở vị trí cột sống, ít nhạy cảm hơn với nhiệt độ nóng - lạnh hoặc thậm chí không cảm thấy đau khi bị lực tác động vào vùng lưng, cổ.'
+
+MERGE (o1:symptom {id: 'cảm_giác_tê_symptom'})
+MERGE (o2:disease {id: 'u_tủy_sống_disease'})
+MERGE (o1)-[r51:isSymptomOf]->(o2)
+SET r51.text = 'Rối loạn cảm giác hoặc có cảm giác tê ở vị trí cột sống, ít nhạy cảm hơn với nhiệt độ nóng - lạnh hoặc thậm chí không cảm thấy đau khi bị lực tác động vào vùng lưng, cổ.'
+
+MERGE (o1:symptom {id: 'ít_nhạy_cảm_với_nhiệt_độ_nóng_-_lạnh_symptom'})
+MERGE (o2:disease {id: 'u_tủy_sống_disease'})
+MERGE (o1)-[r52:isSymptomOf]->(o2)
+SET r52.text = 'Rối loạn cảm giác hoặc có cảm giác tê ở vị trí cột sống, ít nhạy cảm hơn với nhiệt độ nóng - lạnh hoặc thậm chí không cảm thấy đau khi bị lực tác động vào vùng lưng, cổ.'
+
+MERGE (o1:symptom {id: 'không_cảm_thấy_đau_symptom'})
+MERGE (o2:disease {id: 'u_tủy_sống_disease'})
+MERGE (o1)-[r53:isSymptomOf]->(o2)
+SET r53.text = 'Rối loạn cảm giác hoặc có cảm giác tê ở vị trí cột sống, ít nhạy cảm hơn với nhiệt độ nóng - lạnh hoặc thậm chí không cảm thấy đau khi bị lực tác động vào vùng lưng, cổ.'
+
+MERGE (o1:symptom {id: 'mất_kiểm_soát_cơ_vòng_symptom'})
+MERGE (o2:disease {id: 'u_tủy_sống_disease'})
+MERGE (o1)-[r54:isSymptomOf]->(o2)
+SET r54.text = 'Mất kiểm soát cơ vòng , gây bí tiểu,&#8230;'
+
+MERGE (o1:symptom {id: 'bí_tiểu_symptom'})
+MERGE (o2:disease {id: 'u_tủy_sống_disease'})
+MERGE (o1)-[r55:isSymptomOf]->(o2)
+SET r55.text = 'Mất kiểm soát cơ vòng , gây bí tiểu,&#8230;'
+
+MERGE (o1:symptom {id: 'biến_dạng_cột_sống_symptom'})
+MERGE (o2:disease {id: 'u_tủy_sống_disease'})
+MERGE (o1)-[r56:isSymptomOf]->(o2)
+SET r56.text = 'Biến dạng cột sống.'
+
+MERGE (o1:disease {id: 'các_khối_u_disease'})
+MERGE (o2:organ {id: 'tủy_sống_organ'})
+MERGE (o1)-[r57:locatedIn]->(o2)
+SET r57.text = 'Hiện nay, vẫn chưa thể tìm ra chính xác nguyên nhân vì sao các khối u lại phát triển ở tủy sống.'
+
+MERGE (o1:disease {id: 'bệnh
+u_tủy_sống_disease'})
+MERGE (o2:cause {id: 'các_gen_khiếm_khuyết_cause'})
+MERGE (o1)-[r58:causedBy]->(o2)
+SET r58.text = 'Nhiều giả thuyết cho rằng bệnh
+u tủy sống
+xuất phát do các gen khiếm khuyết gây nên.'
+
+MERGE (o1:cause {id: 'các_khiếm_khuyết_gen_cause'})
+MERGE (o2:cause {id: 'di_truyền_cause'})
+MERGE (o1)-[r59:causedBy]->(o2)
+SET r59.text = 'Tuy nhiên, vẫn còn nhiều vấn đề cần được giải đáp xung quanh giả thuyết này, chẳng hạn như các khiếm khuyết gen là do di truyền hay chỉ được hình thành do môi trường sống, khi tiếp xúc với hóa chất,&#8230;'
+
+MERGE (o1:cause {id: 'các_khiếm_khuyết_gen_cause'})
+MERGE (o2:cause {id: 'môi_trường_sống_cause'})
+MERGE (o1)-[r60:causedBy]->(o2)
+SET r60.text = 'Tuy nhiên, vẫn còn nhiều vấn đề cần được giải đáp xung quanh giả thuyết này, chẳng hạn như các khiếm khuyết gen là do di truyền hay chỉ được hình thành do môi trường sống, khi tiếp xúc với hóa chất,&#8230;'
+
+MERGE (o1:cause {id: 'các_khiếm_khuyết_gen_cause'})
+MERGE (o2:cause {id: 'tiếp_xúc_với_hóa_chất_cause'})
+MERGE (o1)-[r61:causedBy]->(o2)
+SET r61.text = 'Tuy nhiên, vẫn còn nhiều vấn đề cần được giải đáp xung quanh giả thuyết này, chẳng hạn như các khiếm khuyết gen là do di truyền hay chỉ được hình thành do môi trường sống, khi tiếp xúc với hóa chất,&#8230;'
+
+MERGE (o1:disease {id: 'u_tủy_sống_disease'})
+MERGE (o2:cause {id: 'nguyên_nhân_chính_xác_cause'})
+MERGE (o1)-[r62:causedBy]->(o2)
+SET r62.text = 'Chưa tìm ra nguyên nhân chính xác gây u tủy sống'
+
+MERGE (o1:disease {id: 'u_tủy_sống_disease'})
+MERGE (o2:cause {id: 'nguy_cơ_cao_cause'})
+MERGE (o1)-[r63:associatedWith]->(o2)
+SET r63.text = 'Một số trường hợp có nguy cơ bị
+u tủy sống
+cao hơn bao gồm:'
+
+MERGE (o1:disease {id: 'u_sợi_thần_kinh_type_2_disease'})
+MERGE (o2:cause {id: 'rối_loạn_di_truyền_cause'})
+MERGE (o1)-[r64:causedBy]->(o2)
+SET r64.text = 'U sợi thần kinh type 2: Bệnh lý rối loạn di truyền này gây nên các khối u tại mô thần kinh, chủ yếu là u thần kinh thính giác bẩm sinh (u tế bào tiền đình).'
+
+MERGE (o1:disease {id: 'u_sợi_thần_kinh_type_2_disease'})
+MERGE (o2:organ {id: 'mô_thần_kinh_organ'})
+MERGE (o1)-[r65:affects]->(o2)
+SET r65.text = 'U sợi thần kinh type 2: Bệnh lý rối loạn di truyền này gây nên các khối u tại mô thần kinh, chủ yếu là u thần kinh thính giác bẩm sinh (u tế bào tiền đình).'
+
+MERGE (o1:disease {id: 'u_sợi_thần_kinh_type_2_disease'})
+MERGE (o2:disease {id: 'u_thần_kinh_thính_giác_bẩm_sinh_disease'})
+MERGE (o1)-[r66:isSymptomOf]->(o2)
+SET r66.text = 'U sợi thần kinh type 2: Bệnh lý rối loạn di truyền này gây nên các khối u tại mô thần kinh, chủ yếu là u thần kinh thính giác bẩm sinh (u tế bào tiền đình).'
+
+MERGE (o1:disease {id: 'u_sợi_thần_kinh_type_2_disease'})
+MERGE (o2:disease {id: 'u_tế_bào_tiền_đình_disease'})
+MERGE (o1)-[r67:isSymptomOf]->(o2)
+SET r67.text = 'U sợi thần kinh type 2: Bệnh lý rối loạn di truyền này gây nên các khối u tại mô thần kinh, chủ yếu là u thần kinh thính giác bẩm sinh (u tế bào tiền đình).'
+
+MERGE (o1:disease {id: 'u_sợi_thần_kinh_type_2_disease'})
+MERGE (o2:cause {id: 'di_truyền_cause'})
+MERGE (o1)-[r68:causedBy]->(o2)
+SET r68.text = 'U sợi thần kinh type 2 thường di truyền từ bố mẹ sang con cái.'
+
+MERGE (o1:disease {id: 'bệnh_von_hippel-lindau_disease'})
+MERGE (o2:cause {id: 'rối_loạn_thần_kinh_di_truyền_cause'})
+MERGE (o1)-[r69:causedBy]->(o2)
+SET r69.text = 'Bệnh Von Hippel-Lindau: Rối loạn thần kinh di truyền này có thể ảnh hưởng đến nhiều cơ quan của cơ thể và làm tăng nguy cơ bị
+u tủy sống.'
+
+MERGE (o1:disease {id: 'bệnh_von_hippel-lindau_disease'})
+MERGE (o2:organ {id: 'nhiều_cơ_quan_của_cơ_thể_organ'})
+MERGE (o1)-[r70:affects]->(o2)
+SET r70.text = 'Bệnh Von Hippel-Lindau: Rối loạn thần kinh di truyền này có thể ảnh hưởng đến nhiều cơ quan của cơ thể và làm tăng nguy cơ bị
+u tủy sống.'
+
+MERGE (o1:disease {id: 'bệnh_von_hippel-lindau_disease'})
+MERGE (o2:disease {id: 'u_tủy_sống_disease'})
+MERGE (o1)-[r71:associatedWith]->(o2)
+SET r71.text = 'Bệnh Von Hippel-Lindau: Rối loạn thần kinh di truyền này có thể ảnh hưởng đến nhiều cơ quan của cơ thể và làm tăng nguy cơ bị
+u tủy sống.'
+
+MERGE (o1:disease {id: 'bệnh_von_hippel-lindau_disease'})
+MERGE (o2:symptom {id: 'mù_lòa_symptom'})
+MERGE (o1)-[r72:isSymptomOf]->(o2)
+SET r72.text = 'Người mắc bệnh có thể bị mù lòa, tổn thương não hoặc tử vong.'
+
+MERGE (o1:disease {id: 'bệnh_von_hippel-lindau_disease'})
+MERGE (o2:symptom {id: 'tổn_thương_não_symptom'})
+MERGE (o1)-[r73:isSymptomOf]->(o2)
+SET r73.text = 'Người mắc bệnh có thể bị mù lòa, tổn thương não hoặc tử vong.'
+
+MERGE (o1:disease {id: 'bệnh_von_hippel-lindau_disease'})
+MERGE (o2:symptom {id: 'tử_vong_symptom'})
+MERGE (o1)-[r74:isSymptomOf]->(o2)
+SET r74.text = 'Người mắc bệnh có thể bị mù lòa, tổn thương não hoặc tử vong.'
+
+MERGE (o1:disease {id: 'các_khối
+u_tủy_sống_disease'})
+MERGE (o2:test {id: 'phân_loại_test'})
+MERGE (o1)-[r75:diagnosedBy]->(o2)
+SET r75.text = 'Có nhiều cách để phân loại các khối
+u tủy sống.'
+
+MERGE (o1:test {id: 'phân_nhóm_test'})
+MERGE (o2:test {id: 'phân_loại_test'})
+MERGE (o1)-[r76:relatedTo]->(o2)
+SET r76.text = 'Theo đó, một số cách phân nhóm thường được áp dụng bao gồm: (2)'
+
+MERGE (o1:test {id: 'phân_loại_khối
+u_tủy_sống
+theo_định_khu_test'})
+MERGE (o2:test {id: 'chẩn_đoán_test'})
+MERGE (o1)-[r77:relatedTo]->(o2)
+SET r77.text = 'Phân loại khối
+u tủy sống
+theo định khu hường được áp dụng trong lâm sàng để hỗ trợ cho việc chẩn đoán và điều trị phẫu thuật.'
+
+MERGE (o1:test {id: 'phân_loại_khối
+u_tủy_sống
+theo_định_khu_test'})
+MERGE (o2:treatment {id: 'điều_trị_phẫu_thuật_treatment'})
+MERGE (o1)-[r78:relatedTo]->(o2)
+SET r78.text = 'Phân loại khối
+u tủy sống
+theo định khu hường được áp dụng trong lâm sàng để hỗ trợ cho việc chẩn đoán và điều trị phẫu thuật.'
+
+MERGE (o1:disease {id: 'u_tủy_sống_disease'})
+MERGE (o2:test {id: 'định_khu_test'})
+MERGE (o1)-[r79:diagnosedBy]->(o2)
+SET r79.text = 'Các loại
+u tủy sống
+theo định khu bao gồm:'
+
+MERGE (o1:disease {id: 'u_vùng_cột_sống_cổ_disease'})
+MERGE (o2:organ {id: 'cột_sống_cổ_organ'})
+MERGE (o1)-[r80:locatedIn]->(o2)
+SET r80.text = 'U vùng cột sống cổ chiếm tỷ lệ thấp'
+
+MERGE (o1:disease {id: 'u_vùng_cột_sống_cổ_disease'})
+MERGE (o2:cause {id: 'tỷ_lệ_thấp_cause'})
+MERGE (o1)-[r81:associatedWith]->(o2)
+SET r81.text = 'U vùng cột sống cổ chiếm tỷ lệ thấp'
+
+MERGE (o1:disease {id: 'u_vùng_cột_sống_ngực_disease'})
+MERGE (o2:organ {id: 'cột_sống_ngực_organ'})
+MERGE (o1)-[r82:locatedIn]->(o2)
+SET r82.text = 'U vùng cột sống ngực'
+
+MERGE (o1:disease {id: 'u_vùng_cột_sống_thắt_lưng_disease'})
+MERGE (o2:organ {id: 'cột_sống_thắt_lưng_organ'})
+MERGE (o1)-[r83:locatedIn]->(o2)
+SET r83.text = 'U vùng cột sống thắt lưng'
+
+MERGE (o1:disease {id: 'u_vùng_cột_sống_thắt_lưng_disease'})
+MERGE (o2:cause {id: 'tỷ_lệ_thấp_nhất_cause'})
+MERGE (o1)-[r84:associatedWith]->(o2)
+SET r84.text = 'Trong đó, u vùng cột sống thắt lưng chiếm tỷ lệ thấp nhất, chỉ khoảng 15-25% với tình trạng khối u hay gặp nhất là tại vị trí rễ thần kinh.'
+
+MERGE (o1:disease {id: 'u_vùng_cột_sống_thắt_lưng_disease'})
+MERGE (o2:organ {id: 'rễ_thần_kinh_organ'})
+MERGE (o1)-[r85:locatedIn]->(o2)
+SET r85.text = 'Trong đó, u vùng cột sống thắt lưng chiếm tỷ lệ thấp nhất, chỉ khoảng 15-25% với tình trạng khối u hay gặp nhất là tại vị trí rễ thần kinh.'
+
+MERGE (o1:disease {id: 'u_vùng_cột_sống_cổ_disease'})
+MERGE (o2:cause {id: 'tỷ_lệ_thấp_cause'})
+MERGE (o1)-[r86:associatedWith]->(o2)
+SET r86.text = 'U vùng cột sống cổ cũng chiếm một tỷ lệ thấp, khoảng xấp xỉ 25% còn u vùng cột sống ngực chiếm tỷ lệ cao nhất, khoảng trên 60%.'
+
+MERGE (o1:disease {id: 'u_vùng_cột_sống_ngực_disease'})
+MERGE (o2:cause {id: 'tỷ_lệ_cao_nhất_cause'})
+MERGE (o1)-[r87:associatedWith]->(o2)
+SET r87.text = 'U vùng cột sống cổ cũng chiếm một tỷ lệ thấp, khoảng xấp xỉ 25% còn u vùng cột sống ngực chiếm tỷ lệ cao nhất, khoảng trên 60%.'
+
+MERGE (o1:disease {id: 'u_tủy_sống_disease'})
+MERGE (o2:test {id: 'tổ_chức_học_test'})
+MERGE (o1)-[r88:diagnosedBy]->(o2)
+SET r88.text = 'Trong trường hợp cần nghiên cứu, điều trị hoặc tiên lượng bệnh sau phẫu thuật thì các bác sĩ sẽ tiến hành phân loại
+u tủy sống
+theo tổ chức học, có 2 nhóm:'
+
+MERGE (o1:disease {id: 'u_nguyên_phát_disease'})
+MERGE (o2:disease {id: 'u_nguyên_bào_tủy_disease'})
+MERGE (o1)-[r89:isSymptomOf]->(o2)
+SET r89.text = 'U nguyên phát. Gồm có các bệnh như u nguyên bào tủy, u màng ống nội tủy, u nguyên bào thần kinh đệm, u mạch máu,&#8230;'
+
+MERGE (o1:disease {id: 'u_nguyên_phát_disease'})
+MERGE (o2:disease {id: 'u_màng_ống_nội_tủy_disease'})
+MERGE (o1)-[r90:isSymptomOf]->(o2)
+SET r90.text = 'U nguyên phát. Gồm có các bệnh như u nguyên bào tủy, u màng ống nội tủy, u nguyên bào thần kinh đệm, u mạch máu,&#8230;'
+
+MERGE (o1:disease {id: 'u_nguyên_phát_disease'})
+MERGE (o2:disease {id: 'u_nguyên_bào_thần_kinh_đệm_disease'})
+MERGE (o1)-[r91:isSymptomOf]->(o2)
+SET r91.text = 'U nguyên phát. Gồm có các bệnh như u nguyên bào tủy, u màng ống nội tủy, u nguyên bào thần kinh đệm, u mạch máu,&#8230;'
+
+MERGE (o1:disease {id: 'u_nguyên_phát_disease'})
+MERGE (o2:disease {id: 'u_mạch_máu_disease'})
+MERGE (o1)-[r92:isSymptomOf]->(o2)
+SET r92.text = 'U nguyên phát. Gồm có các bệnh như u nguyên bào tủy, u màng ống nội tủy, u nguyên bào thần kinh đệm, u mạch máu,&#8230;'
+
+MERGE (o1:disease {id: 'u_di_căn_disease'})
+MERGE (o2:disease {id: 'ung_thư_disease'})
+MERGE (o1)-[r93:causedBy]->(o2)
+SET r93.text = 'U di căn. Đây là khối
+u tủy sống
+do ung thư từ các cơ quan khác di căn đến tủy, thường gặp sau ung thư phổi, ống tiêu hóa, tuyến tiền liệt, vú hoặc phần phụ,…'
+
+MERGE (o1:disease {id: 'u_di_căn_disease'})
+MERGE (o2:organ {id: 'tủy_organ'})
+MERGE (o1)-[r94:locatedIn]->(o2)
+SET r94.text = 'U di căn. Đây là khối
+u tủy sống
+do ung thư từ các cơ quan khác di căn đến tủy, thường gặp sau ung thư phổi, ống tiêu hóa, tuyến tiền liệt, vú hoặc phần phụ,…'
+
+MERGE (o1:disease {id: 'u_di_căn_disease'})
+MERGE (o2:disease {id: 'ung_thư_phổi_disease'})
+MERGE (o1)-[r95:isSymptomOf]->(o2)
+SET r95.text = 'U di căn. Đây là khối
+u tủy sống
+do ung thư từ các cơ quan khác di căn đến tủy, thường gặp sau ung thư phổi, ống tiêu hóa, tuyến tiền liệt, vú hoặc phần phụ,…'
+
+MERGE (o1:disease {id: 'u_di_căn_disease'})
+MERGE (o2:disease {id: 'ung_thư_ống_tiêu_hóa_disease'})
+MERGE (o1)-[r96:isSymptomOf]->(o2)
+SET r96.text = 'U di căn. Đây là khối
+u tủy sống
+do ung thư từ các cơ quan khác di căn đến tủy, thường gặp sau ung thư phổi, ống tiêu hóa, tuyến tiền liệt, vú hoặc phần phụ,…'
+
+MERGE (o1:disease {id: 'u_di_căn_disease'})
+MERGE (o2:disease {id: 'ung_thư_tuyến_tiền_liệt_disease'})
+MERGE (o1)-[r97:isSymptomOf]->(o2)
+SET r97.text = 'U di căn. Đây là khối
+u tủy sống
+do ung thư từ các cơ quan khác di căn đến tủy, thường gặp sau ung thư phổi, ống tiêu hóa, tuyến tiền liệt, vú hoặc phần phụ,…'
+
+MERGE (o1:disease {id: 'u_di_căn_disease'})
+MERGE (o2:disease {id: 'ung_thư_vú_disease'})
+MERGE (o1)-[r98:isSymptomOf]->(o2)
+SET r98.text = 'U di căn. Đây là khối
+u tủy sống
+do ung thư từ các cơ quan khác di căn đến tủy, thường gặp sau ung thư phổi, ống tiêu hóa, tuyến tiền liệt, vú hoặc phần phụ,…'
+
+MERGE (o1:disease {id: 'u_di_căn_disease'})
+MERGE (o2:disease {id: 'ung_thư_phần_phụ_disease'})
+MERGE (o1)-[r99:isSymptomOf]->(o2)
+SET r99.text = 'U di căn. Đây là khối
+u tủy sống
+do ung thư từ các cơ quan khác di căn đến tủy, thường gặp sau ung thư phổi, ống tiêu hóa, tuyến tiền liệt, vú hoặc phần phụ,…'
+
+MERGE (o1:disease {id: 'các_khối_u_disease'})
+MERGE (o2:disease {id: 'u_tủy_sống_disease'})
+MERGE (o1)-[r100:causedBy]->(o2)
+SET r100.text = 'Các khối u từ cơ quan khác có thể di căn và gây nên u tủy sống'
+
+MERGE (o1:test {id: 'phân_loại_test'})
+MERGE (o2:cause {id: 'phổ_biến_nhất_cause'})
+MERGE (o1)-[r101:relatedTo]->(o2)
+SET r101.text = 'Hiện nay, cách phân loại này được xem là phổ biến nhất.'
+
+MERGE (o1:disease {id: 'u_tủy_sống_disease'})
+MERGE (o2:test {id: 'phân_loại_test'})
+MERGE (o1)-[r102:diagnosedBy]->(o2)
+SET r102.text = 'Theo đó, các loại
+u tủy sống
+bao gồm:'
+
+MERGE (o1:disease {id: 'u_màng_tủy_(meningioma)_disease'})
+MERGE (o2:cause {id: 'tỷ_lệ_cao_cause'})
+MERGE (o1)-[r103:associatedWith]->(o2)
+SET r103.text = 'U màng tủy (Meningioma) - chiếm tỷ lệ cao khoảng 15-25%'
+
+MERGE (o1:disease {id: 'u_màng_tủy_(meningioma)_disease'})
+MERGE (o2:organ {id: 'màng_tủy_organ'})
+MERGE (o1)-[r104:locatedIn]->(o2)
+SET r104.text = 'U màng tủy (Meningioma) - chiếm tỷ lệ cao khoảng 15-25%'
+
+MERGE (o1:disease {id: 'u_rễ_thần_kinh_(neurinoma)_disease'})
+MERGE (o2:cause {id: 'tỷ_lệ_cause'})
+MERGE (o1)-[r105:associatedWith]->(o2)
+SET r105.text = 'U rễ thần kinh (Neurinoma) - có tỷ lệ từ 30 - 50%'
+
+MERGE (o1:disease {id: 'u_rễ_thần_kinh_(neurinoma)_disease'})
+MERGE (o2:organ {id: 'rễ_thần_kinh_organ'})
+MERGE (o1)-[r106:locatedIn]->(o2)
+SET r106.text = 'U rễ thần kinh (Neurinoma) - có tỷ lệ từ 30 - 50%'
+
+MERGE (o1:disease {id: 'u_màng_ống_nội_tủy_(ependymoma_)_disease'})
+MERGE (o2:organ {id: 'màng_ống_nội_tủy_organ'})
+MERGE (o1)-[r107:locatedIn]->(o2)
+SET r107.text = 'U màng ống nội tủy (Ependymoma )'
+
+MERGE (o1:disease {id: 'u_tế_bào_hình_sao_(astrocytoma)_disease'})
+MERGE (o2:organ {id: 'tế_bào_hình_sao_organ'})
+MERGE (o1)-[r108:locatedIn]->(o2)
+SET r108.text = 'U tế bào hình sao (Astrocytoma)'
+
+MERGE (o1:disease {id: 'u_nang_bì_(dermoid_cyst)_disease'})
+MERGE (o2:organ {id: 'nang_bì_organ'})
+MERGE (o1)-[r109:locatedIn]->(o2)
+SET r109.text = 'U nang bì (Dermoid cyst)'
+
+MERGE (o1:disease {id: 'u_mỡ_(lipoma)_disease'})
+MERGE (o2:organ {id: 'mỡ_organ'})
+MERGE (o1)-[r110:locatedIn]->(o2)
+SET r110.text = 'U mỡ (Lipoma)'
+
+MERGE (o1:disease {id: 'u_hạch_bạch_huyết_(lymphoma)_disease'})
+MERGE (o2:organ {id: 'hạch_bạch_huyết_organ'})
+MERGE (o1)-[r111:locatedIn]->(o2)
+SET r111.text = 'U hạch bạch huyết (Lymphoma)'
+
+MERGE (o1:disease {id: 'u_máu_(haemangioma)_disease'})
+MERGE (o2:organ {id: 'máu_organ'})
+MERGE (o1)-[r112:locatedIn]->(o2)
+SET r112.text = 'U máu (Haemangioma).'
+
+MERGE (o1:disease {id: 'u_tủy_sống_disease'})
+MERGE (o2:disease {id: 'u_sụn_disease'})
+MERGE (o1)-[r113:isSymptomOf]->(o2)
+SET r113.text = 'Bên cạnh đó còn có một số loại
+u tủy sống
+khác ít phổ biến hơn như u sụn, u di căn, u hỗn hợp,&#8230;'
+
+MERGE (o1:disease {id: 'u_tủy_sống_disease'})
+MERGE (o2:disease {id: 'u_di_căn_disease'})
+MERGE (o1)-[r114:isSymptomOf]->(o2)
+SET r114.text = 'Bên cạnh đó còn có một số loại
+u tủy sống
+khác ít phổ biến hơn như u sụn, u di căn, u hỗn hợp,&#8230;'
+
+MERGE (o1:disease {id: 'u_tủy_sống_disease'})
+MERGE (o2:disease {id: 'u_hỗn_hợp_disease'})
+MERGE (o1)-[r115:isSymptomOf]->(o2)
+SET r115.text = 'Bên cạnh đó còn có một số loại
+u tủy sống
+khác ít phổ biến hơn như u sụn, u di căn, u hỗn hợp,&#8230;'
+
+MERGE (o1:disease {id: 'u_tủy_sống_disease'})
+MERGE (o2:test {id: 'phân_loại_test'})
+MERGE (o1)-[r116:diagnosedBy]->(o2)
+SET r116.text = 'Có thể phân loại
+u tủy sống
+thành u nội tủy (intra-medullar tumor) và u ngoài tủy (extra-medullar tumor).'
+
+MERGE (o1:disease {id: 'u_tủy_sống_disease'})
+MERGE (o2:disease {id: 'u_nội_tủy_(intra-medullar_tumor)_disease'})
+MERGE (o1)-[r117:isSymptomOf]->(o2)
+SET r117.text = 'Có thể phân loại
+u tủy sống
+thành u nội tủy (intra-medullar tumor) và u ngoài tủy (extra-medullar tumor).'
+
+MERGE (o1:disease {id: 'u_tủy_sống_disease'})
+MERGE (o2:disease {id: 'u_ngoài_tủy_(extra-medullar_tumor)_disease'})
+MERGE (o1)-[r118:isSymptomOf]->(o2)
+SET r118.text = 'Có thể phân loại
+u tủy sống
+thành u nội tủy (intra-medullar tumor) và u ngoài tủy (extra-medullar tumor).'
+
+MERGE (o1:disease {id: 'u_nội_tủy_disease'})
+MERGE (o2:organ {id: 'ống_nội_tủy_organ'})
+MERGE (o1)-[r119:locatedIn]->(o2)
+SET r119.text = 'Trong đó: U nội tủy, tức khối u nằm trong ống nội tủy, u nang, u nguyên bào xốp hoặc u mỡ,&#8230; chỉ chiếm tỷ lệ khoảng 5-10%.'
+
+MERGE (o1:disease {id: 'u_nội_tủy_disease'})
+MERGE (o2:disease {id: 'u_nang_disease'})
+MERGE (o1)-[r120:isSymptomOf]->(o2)
+SET r120.text = 'Trong đó: U nội tủy, tức khối u nằm trong ống nội tủy, u nang, u nguyên bào xốp hoặc u mỡ,&#8230; chỉ chiếm tỷ lệ khoảng 5-10%.'
+
+MERGE (o1:disease {id: 'u_nội_tủy_disease'})
+MERGE (o2:disease {id: 'u_nguyên_bào_xốp_disease'})
+MERGE (o1)-[r121:isSymptomOf]->(o2)
+SET r121.text = 'Trong đó: U nội tủy, tức khối u nằm trong ống nội tủy, u nang, u nguyên bào xốp hoặc u mỡ,&#8230; chỉ chiếm tỷ lệ khoảng 5-10%.'
+
+MERGE (o1:disease {id: 'u_nội_tủy_disease'})
+MERGE (o2:disease {id: 'u_mỡ_disease'})
+MERGE (o1)-[r122:isSymptomOf]->(o2)
+SET r122.text = 'Trong đó: U nội tủy, tức khối u nằm trong ống nội tủy, u nang, u nguyên bào xốp hoặc u mỡ,&#8230; chỉ chiếm tỷ lệ khoảng 5-10%.'
+
+MERGE (o1:disease {id: 'u_nội_tủy_disease'})
+MERGE (o2:cause {id: 'tỷ_lệ_cause'})
+MERGE (o1)-[r123:associatedWith]->(o2)
+SET r123.text = 'Trong đó: U nội tủy, tức khối u nằm trong ống nội tủy, u nang, u nguyên bào xốp hoặc u mỡ,&#8230; chỉ chiếm tỷ lệ khoảng 5-10%.'
+
+MERGE (o1:disease {id: 'u_ngoài_tuỷ_-_dưới_màng_cứng_disease'})
+MERGE (o2:organ {id: 'màng_tủy_organ'})
+MERGE (o1)-[r124:locatedIn]->(o2)
+SET r124.text = 'U ngoài tuỷ - dưới màng cứng : Đây là những u lành tính, thường nằm ở màng tủy và vô cùng phổ biến, chiếm tỷ lệ lên đến khoảng hơn 65%.'
+
+MERGE (o1:disease {id: 'u_ngoài_tuỷ_-_dưới_màng_cứng_disease'})
+MERGE (o2:cause {id: 'tỷ_lệ_cause'})
+MERGE (o1)-[r125:associatedWith]->(o2)
+SET r125.text = 'U ngoài tuỷ - dưới màng cứng : Đây là những u lành tính, thường nằm ở màng tủy và vô cùng phổ biến, chiếm tỷ lệ lên đến khoảng hơn 65%.'
+
+MERGE (o1:disease {id: 'u_ngoài_tuỷ_-_dưới_màng_cứng_disease'})
+MERGE (o2:organ {id: 'tủy_-_rễ_thần_kinh_organ'})
+MERGE (o1)-[r126:affects]->(o2)
+SET r126.text = 'Các trường hợp khối
+u tủy sống
+nằm dưới màng cứng từng ít gây tổn thương đến tủy - rễ thần kinh.'
+
+MERGE (o1:disease {id: 'u_ngoài_tuỷ_-_ngoài_màng_cứng_(extradural_-_extramedulle_tumor)_disease'})
+MERGE (o2:cause {id: 'tỷ_lệ_thấp_hơn_cause'})
+MERGE (o1)-[r127:associatedWith]->(o2)
+SET r127.text = 'U ngoài tuỷ - ngoài màng cứng (extradural - extramedulle tumor): Dạng
+u tủy sống
+này thường chiếm tỷ lệ thấp hơn, chỉ khoảng từ 15-25% với các trường hợp u di căn, u máu, u xương,&#8230;'
+
+MERGE (o1:disease {id: 'u_ngoài_tuỷ_-_ngoài_màng_cứng_(extradural_-_extramedulle_tumor)_disease'})
+MERGE (o2:disease {id: 'u_di_căn_disease'})
+MERGE (o1)-[r128:isSymptomOf]->(o2)
+SET r128.text = 'U ngoài tuỷ - ngoài màng cứng (extradural - extramedulle tumor): Dạng
+u tủy sống
+này thường chiếm tỷ lệ thấp hơn, chỉ khoảng từ 15-25% với các trường hợp u di căn, u máu, u xương,&#8230;'
+
+MERGE (o1:disease {id: 'u_ngoài_tuỷ_-_ngoài_màng_cứng_(extradural_-_extramedulle_tumor)_disease'})
+MERGE (o2:disease {id: 'u_máu_disease'})
+MERGE (o1)-[r129:isSymptomOf]->(o2)
+SET r129.text = 'U ngoài tuỷ - ngoài màng cứng (extradural - extramedulle tumor): Dạng
+u tủy sống
+này thường chiếm tỷ lệ thấp hơn, chỉ khoảng từ 15-25% với các trường hợp u di căn, u máu, u xương,&#8230;'
+
+MERGE (o1:disease {id: 'u_ngoài_tuỷ_-_ngoài_màng_cứng_(extradural_-_extramedulle_tumor)_disease'})
+MERGE (o2:disease {id: 'u_xương_disease'})
+MERGE (o1)-[r130:isSymptomOf]->(o2)
+SET r130.text = 'U ngoài tuỷ - ngoài màng cứng (extradural - extramedulle tumor): Dạng
+u tủy sống
+này thường chiếm tỷ lệ thấp hơn, chỉ khoảng từ 15-25% với các trường hợp u di căn, u máu, u xương,&#8230;'
+
+MERGE (o1:disease {id: 'u_hỗn_hợp_disease'})
+MERGE (o2:organ {id: 'màng_cứng_organ'})
+MERGE (o1)-[r131:locatedIn]->(o2)
+SET r131.text = 'U hỗn hợp: Các khối u hỗn hợp là khối u nằm ở cả bên trong và bên ngoài màng cứng.'
+
+MERGE (o1:disease {id: 'u_hỗn_hợp_disease'})
+MERGE (o2:disease {id: 'u_dạng_đồng_hồ_cát_disease'})
+MERGE (o1)-[r132:isSymptomOf]->(o2)
+SET r132.text = 'Thông thường, loại
+u tủy sống
+này sẽ có dạng đồng hồ cát hoặc là u dạng hai túi.'
+
+MERGE (o1:disease {id: 'u_hỗn_hợp_disease'})
+MERGE (o2:disease {id: 'u_dạng_hai_túi_disease'})
+MERGE (o1)-[r133:isSymptomOf]->(o2)
+SET r133.text = 'Thông thường, loại
+u tủy sống
+này sẽ có dạng đồng hồ cát hoặc là u dạng hai túi.'
+
+MERGE (o1:disease {id: 'u_dạng_đồng_hồ_cát_disease'})
+MERGE (o2:organ {id: 'ống_sống_organ'})
+MERGE (o1)-[r134:locatedIn]->(o2)
+SET r134.text = 'Trong đó, u dạng đồng hồ cát sẽ có một phần u nằm trực tiếp bên trong ống sống còn một phần u sẽ nằm ngoài ống sống.'
+
+MERGE (o1:disease {id: 'u_tủy_sống_disease'})
+MERGE (o2:symptom {id: 'biến_chứng_nguy_hiểm_symptom'})
+MERGE (o1)-[r135:causedBy]->(o2)
+SET r135.text = 'U tủy sống
+nếu không được điều trị kịp thời sẽ gây nên nhiều biến chứng nguy hiểm đối với người bệnh.'
+
+MERGE (o1:disease {id: 'u_tủy_sống_disease'})
+MERGE (o2:symptom {id: 'di_chứng_symptom'})
+MERGE (o1)-[r136:isSymptomOf]->(o2)
+SET r136.text = 'Cụ thể, các di chứng mà người bị
+u tủy sống
+phải đối mặt bao gồm:'
+
+MERGE (o1:disease {id: 'u_tủy_sống_disease'})
+MERGE (o2:symptom {id: 'rối_loạn_vận_động_symptom'})
+MERGE (o1)-[r137:isSymptomOf]->(o2)
+SET r137.text = 'Rối loạn vận động'
+
+MERGE (o1:disease {id: 'u_tủy_sống_disease'})
+MERGE (o2:symptom {id: 'liệt_chi_symptom'})
+MERGE (o1)-[r138:isSymptomOf]->(o2)
+SET r138.text = 'Liệt chi hoặc liệt cơ thắt'
+
+MERGE (o1:disease {id: 'u_tủy_sống_disease'})
+MERGE (o2:symptom {id: 'liệt_cơ_thắt_symptom'})
+MERGE (o1)-[r139:isSymptomOf]->(o2)
+SET r139.text = 'Liệt chi hoặc liệt cơ thắt'
+
+MERGE (o1:disease {id: 'u_tủy_sống_disease'})
+MERGE (o2:cause {id: 'nguy_cơ_cause'})
+MERGE (o1)-[r140:relatedTo]->(o2)
+SET r140.text = 'Bất kỳ ai cũng có nguy cơ bị bệnh u tủy sống.'
+
+MERGE (o1:disease {id: 'u_tủy_sống_disease'})
+MERGE (o2:cause {id: 'tỷ_lệ_người_mắc_cause'})
+MERGE (o1)-[r141:relatedTo]->(o2)
+SET r141.text = 'Tuy nhiên, tỷ lệ người mắc u tủy sống thường rất ít, chỉ chiếm khoảng 2% so với tỷ lệ người có các khối u khác trong cơ thể.'
+
+MERGE (o1:disease {id: 'u_tủy_sống_disease'})
+MERGE (o2:organ {id: 'hệ_thống_thần_kinh_trung_ương_organ'})
+MERGE (o1)-[r142:locatedIn]->(o2)
+SET r142.text = 'So với tỷ lệ người bệnh có khối u ở hệ thống thần kinh trung ương thì tỷ lệ người bị u tủy sống chiếm khoảng 15%.'
+
+MERGE (o1:disease {id: 'u_tủy_disease'})
+MERGE (o2:disease {id: 'u_não_disease'})
+MERGE (o1)-[r143:relatedTo]->(o2)
+SET r143.text = 'Giữa u tủy và u não thì số người bị u não cao gấp 4-6 lần so với người bị u tủy.'
+
+MERGE (o1:disease {id: 'u_tủy_sống_disease'})
+MERGE (o2:cause {id: 'người_lớn_cause'})
+MERGE (o1)-[r144:relatedTo]->(o2)
+SET r144.text = 'Tình trạng u tủy sống cũng thường gặp ở người lớn, rất ít trường hợp trẻ em u tủy.'
+
+MERGE (o1:symptom {id: 'dấu_hiệu_u_tủy_sống_symptom'})
+MERGE (o2:disease {id: 'u_tủy_sống_disease'})
+MERGE (o1)-[r145:isSymptomOf]->(o2)
+SET r145.text = 'Nếu bạn có các dấu hiệu u tủy sống, bác sĩ có thể chỉ định một số xét nghiệm và chẩn đoán hình ảnh để có thể xác định chính xác tình trạng bệnh:'
+
+MERGE (o1:test {id: 'chụp_mri_test'})
+MERGE (o2:disease {id: 'u_tủy_sống_disease'})
+MERGE (o1)-[r146:diagnosedBy]->(o2)
+SET r146.text = 'Chụp MRI: Chụp MRI là cách tốt nhất để tìm các khối u trong não và tủy sống, kiểm tra mạch máu, lưu lượng máu và hoạt động trong não.'
+
+MERGE (o1:test {id: 'chụp_mri_test'})
+MERGE (o2:disease {id: 'khối_u_disease'})
+MERGE (o1)-[r147:diagnosedBy]->(o2)
+SET r147.text = 'Chụp MRI: Chụp MRI là cách tốt nhất để tìm các khối u trong não và tủy sống, kiểm tra mạch máu, lưu lượng máu và hoạt động trong não.'
+
+MERGE (o1:test {id: 'chụp_mri_test'})
+MERGE (o2:organ {id: 'não_organ'})
+MERGE (o1)-[r148:diagnosedBy]->(o2)
+SET r148.text = 'Chụp MRI: Chụp MRI là cách tốt nhất để tìm các khối u trong não và tủy sống, kiểm tra mạch máu, lưu lượng máu và hoạt động trong não.'
+
+MERGE (o1:test {id: 'chụp_mri_test'})
+MERGE (o2:organ {id: 'tủy_sống_organ'})
+MERGE (o1)-[r149:diagnosedBy]->(o2)
+SET r149.text = 'Chụp MRI: Chụp MRI là cách tốt nhất để tìm các khối u trong não và tủy sống, kiểm tra mạch máu, lưu lượng máu và hoạt động trong não.'
+
+MERGE (o1:test {id: 'chụp_mri_test'})
+MERGE (o2:organ {id: 'mạch_máu_organ'})
+MERGE (o1)-[r150:diagnosedBy]->(o2)
+SET r150.text = 'Chụp MRI: Chụp MRI là cách tốt nhất để tìm các khối u trong não và tủy sống, kiểm tra mạch máu, lưu lượng máu và hoạt động trong não.'
+
+MERGE (o1:test {id: 'chụp_ct_test'})
+MERGE (o2:disease {id: 'khối_u_ở_tủy_sống_disease'})
+MERGE (o1)-[r151:diagnosedBy]->(o2)
+SET r151.text = 'Chụp CT: Chụp CT giúp tạo ra hình ảnh chi tiết bên trong cơ thể của bạn, giúp bác sĩ có thể xem xét và đánh giá các xương xung quanh khối u ở tủy sống.'
+
+MERGE (o1:test {id: 'chụp_ct_test'})
+MERGE (o2:organ {id: 'xương_organ'})
+MERGE (o1)-[r152:diagnosedBy]->(o2)
+SET r152.text = 'Chụp CT: Chụp CT giúp tạo ra hình ảnh chi tiết bên trong cơ thể của bạn, giúp bác sĩ có thể xem xét và đánh giá các xương xung quanh khối u ở tủy sống.'
+
+MERGE (o1:test {id: 'chụp_pet_test'})
+MERGE (o2:disease {id: 'khối_u_disease'})
+MERGE (o1)-[r153:diagnosedBy]->(o2)
+SET r153.text = 'Chụp PET: Chụp PET hay còn gọi là chụp cắt lớp phát xạ positron giúp ghi lại hình ảnh chuyển hóa của khối u.'
+
+MERGE (o1:test {id: 'kết_quả_chụp_pet_test'})
+MERGE (o2:disease {id: 'giai_đoạn_bệnh_disease'})
+MERGE (o1)-[r154:diagnosedBy]->(o2)
+SET r154.text = 'Kết quả chụp PET giúp bác sĩ có thể đánh giá giai đoạn bệnh, xác định vị trí cần thực hiện sinh thiết và cân nhắc phương án điều trị phù hợp.'
+
+MERGE (o1:test {id: 'sinh_thiết_test'})
+MERGE (o2:disease {id: 'khối_u_disease'})
+MERGE (o1)-[r155:diagnosedBy]->(o2)
+SET r155.text = 'Sinh thiết: Bác sĩ sẽ lấy ra các mảnh nhỏ của mô não hoặc tủy sống để kiểm tra các tế bào khối u.'
+
+MERGE (o1:test {id: 'sinh_thiết_test'})
+MERGE (o2:disease {id: 'tế_bào_khối_u_disease'})
+MERGE (o1)-[r156:diagnosedBy]->(o2)
+SET r156.text = 'Sinh thiết: Bác sĩ sẽ lấy ra các mảnh nhỏ của mô não hoặc tủy sống để kiểm tra các tế bào khối u.'
+
+MERGE (o1:test {id: 'sinh_thiết_test'})
+MERGE (o2:organ {id: 'não_organ'})
+MERGE (o1)-[r157:diagnosedBy]->(o2)
+SET r157.text = 'Sinh thiết: Bác sĩ sẽ lấy ra các mảnh nhỏ của mô não hoặc tủy sống để kiểm tra các tế bào khối u.'
+
+MERGE (o1:test {id: 'sinh_thiết_test'})
+MERGE (o2:organ {id: 'tủy_sống_organ'})
+MERGE (o1)-[r158:diagnosedBy]->(o2)
+SET r158.text = 'Sinh thiết: Bác sĩ sẽ lấy ra các mảnh nhỏ của mô não hoặc tủy sống để kiểm tra các tế bào khối u.'
+
+MERGE (o1:test {id: 'sinh_thiết_test'})
+MERGE (o2:disease {id: 'khối_u_tủy_sống_disease'})
+MERGE (o1)-[r159:diagnosedBy]->(o2)
+SET r159.text = 'Sinh thiết thường là cách duy nhất để biết chính xác loại khối u tủy sống bên trong cơ thể người bệnh.'
+
+MERGE (o1:disease {id: 'khối_u_tủy_sống_disease'})
+MERGE (o2:treatment {id: 'điều_trị_treatment'})
+MERGE (o1)-[r160:treatedBy]->(o2)
+SET r160.text = 'Việc điều trị các khối u tủy sống phụ thuộc vào những yếu tố như loại khối u, vị trí của khối u và sức khỏe tổng thể của người bệnh.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_treatment'})
+MERGE (o2:disease {id: 'khối_u_tủy_sống_disease'})
+MERGE (o1)-[r161:treatedBy]->(o2)
+SET r161.text = 'Phẫu thuật là phương pháp điều trị đầu tiên được cân nhắc cho hầu hết mọi người.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_treatment'})
+MERGE (o2:disease {id: 'khối_u_tủy_sống_disease'})
+MERGE (o1)-[r162:treatedBy]->(o2)
+SET r162.text = 'Phẫu thuật có thể được sử dụng để:'
+
+MERGE (o1:treatment {id: 'lấy_mẫu_sinh_thiết_treatment'})
+MERGE (o2:disease {id: 'khối_u_tủy_sống_disease'})
+MERGE (o1)-[r163:treatedBy]->(o2)
+SET r163.text = 'Lấy mẫu sinh thiết'
+
+MERGE (o1:treatment {id: 'loại_bỏ_khối_u_treatment'})
+MERGE (o2:disease {id: 'khối_u_tủy_sống_disease'})
+MERGE (o1)-[r164:treatedBy]->(o2)
+SET r164.text = 'Loại bỏ khối u'
+
+MERGE (o1:treatment {id: 'giảm_kích_thước_khối_u_treatment'})
+MERGE (o2:disease {id: 'khối_u_tủy_sống_disease'})
+MERGE (o1)-[r165:treatedBy]->(o2)
+SET r165.text = 'Giảm kích thước khối u để có thể điều trị tốt hơn bằng xạ trị hoặc hóa trị'
+
+MERGE (o1:treatment {id: 'giúp_ngăn_ngừa_hoặc_điều_trị_các_biến_chứng_treatment'})
+MERGE (o2:disease {id: 'khối_u_tủy_sống_disease'})
+MERGE (o1)-[r166:treatedBy]->(o2)
+SET r166.text = 'Giúp ngăn ngừa hoặc điều trị các biến chứng từ khối u tủy sống'
+
+MERGE (o1:treatment {id: 'kỹ_thuật_phẫu_thuật_treatment'})
+MERGE (o2:disease {id: 'khối_u_tủy_sống_disease'})
+MERGE (o1)-[r167:treatedBy]->(o2)
+SET r167.text = 'Tùy theo vị trí của khối u và độ lớn của nó mà bác sĩ có thể lựa chọn kỹ thuật phẫu thuật phù hợp nhất.'
+
+MERGE (o1:treatment {id: 'xạ_trị_treatment'})
+MERGE (o2:disease {id: 'khối_u_tủy_sống_disease'})
+MERGE (o1)-[r168:treatedBy]->(o2)
+SET r168.text = 'Trong một số trường hợp, bác sĩ có thể tiến hành xạ trị trong cùng lúc phẫu thuật để tăng hiệu quả điều trị.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_treatment'})
+MERGE (o2:cause {id: 'rủi_ro_và_tác_dụng_phụ_cause'})
+MERGE (o1)-[r169:relatedTo]->(o2)
+SET r169.text = 'Bất kỳ loại phẫu thuật nào cũng có thể có rủi ro và tác dụng phụ, như chảy máu hoặc nhiễm trùng.'
+
+MERGE (o1:cause {id: 'rủi_ro_cause'})
+MERGE (o2:treatment {id: 'phẫu_thuật_treatment'})
+MERGE (o1)-[r170:relatedTo]->(o2)
+SET r170.text = 'Vì thế, người bệnh có thể trao đổi với bác sĩ cụ thể hơn về những rủi ro mà bạn có thể gặp phải trước khi tiến hành phẫu thuật.'
+
+MERGE (o1:treatment {id: 'xạ_trị_treatment'})
+MERGE (o2:disease {id: 'tế_bào_ung_thư_disease'})
+MERGE (o1)-[r171:treatedBy]->(o2)
+SET r171.text = 'Xạ trị hay trị liệu bằng bức xạ sử dụng các tia năng lượng cao (như tia X) để tiêu diệt các tế bào ung thư.'
+
+MERGE (o1:treatment {id: 'xạ_trị_treatment'})
+MERGE (o2:disease {id: 'tế_bào_khối_u_disease'})
+MERGE (o1)-[r172:treatedBy]->(o2)
+SET r172.text = 'Phương pháp này thường được thực hiện sau khi phẫu thuật để diệt bất kỳ tế bào khối u nào còn sót lại.'
+
+MERGE (o1:treatment {id: 'xạ_trị_treatment'})
+MERGE (o2:disease {id: 'biến_chứng_u_tủy_sống_disease'})
+MERGE (o1)-[r173:treatedBy]->(o2)
+SET r173.text = 'Ngoài ra, các bác sĩ cũng cân nhắc xạ trị như một phương pháp điều trị chính nếu không thể phẫu thuật hoặc cần phòng ngừa, điều trị các biến chứng u tủy sống.'
+
+MERGE (o1:treatment {id: 'xạ_trị_treatment'})
+MERGE (o2:symptom {id: 'mệt_mỏi__buồn_nôn_symptom'})
+MERGE (o1)-[r174:relatedTo]->(o2)
+SET r174.text = 'Tác dụng phụ của phương pháp xạ trị chính là khiến người bệnh cảm thấy mệt mỏi, buồn nôn,&#8230;'
+
+MERGE (o1:cause {id: 'tác_dụng_phụ_cause'})
+MERGE (o2:treatment {id: 'xạ_trị_treatment'})
+MERGE (o1)-[r175:relatedTo]->(o2)
+SET r175.text = 'Hầu hết các tác dụng phụ sẽ thuyên giảm sau khi điều trị kết thúc.'
+
+MERGE (o1:treatment {id: 'xạ_trị_treatment'})
+MERGE (o2:disease {id: 'u_tủy_sống_disease'})
+MERGE (o1)-[r176:treatedBy]->(o2)
+SET r176.text = 'Xạ trị là một phương pháp để điều trị u tủy sống'
+
+MERGE (o1:treatment {id: 'hóa_trị_treatment'})
+MERGE (o2:disease {id: 'tế_bào_ung_thư_disease'})
+MERGE (o1)-[r177:treatedBy]->(o2)
+SET r177.text = 'Hóa trị là phương pháp sử dụng thuốc để phá hủy các tế bào ung thư.'
+
+MERGE (o1:treatment {id: 'thuốc_treatment'})
+MERGE (o2:treatment {id: 'hóa_trị_treatment'})
+MERGE (o1)-[r178:treatedBy]->(o2)
+SET r178.text = 'Thuốc có thể được tiêm vào tĩnh mạch hoặc uống.'
+
+MERGE (o1:treatment {id: 'thuốc_treatment'})
+MERGE (o2:disease {id: 'khối_u_tủy_sống_disease'})
+MERGE (o1)-[r179:treatedBy]->(o2)
+SET r179.text = 'Các loại thuốc này sẽ đi vào máu và tiêu diệt, làm chậm quá trình phát triển của khối u tủy sống.'
+
+MERGE (o1:treatment {id: 'hóa_trị_treatment'})
+MERGE (o2:symptom {id: 'mệt_mỏi__đau_bụng__rụng_tóc_symptom'})
+MERGE (o1)-[r180:relatedTo]->(o2)
+SET r180.text = 'Mệt mỏi, đau bụng, rụng tóc,&#8230; là các tác dụng phụ của hóa trị'
+
+MERGE (o1:treatment {id: 'thuốc_treatment'})
+MERGE (o2:disease {id: 'tế_bào_khỏe_mạnh_disease'})
+MERGE (o1)-[r181:relatedTo]->(o2)
+SET r181.text = 'Ngoài ra, một nhược điểm của phương pháp điều trị u tủy sống này chính là thuốc khi được đưa vào cơ thể có thể phá hủy cả những tế bào đang khỏe mạnh.'
+
+MERGE (o1:treatment {id: 'điều_trị_treatment'})
+MERGE (o2:cause {id: 'hiệu_quả_tối_ưu_cause'})
+MERGE (o1)-[r182:relatedTo]->(o2)
+SET r182.text = 'Cần lưu ý rằng, một số biện pháp điều trị có thể không đạt hiệu quả tối ưu ngay lần điều trị đầu tiên.'
+
+MERGE (o1:treatment {id: 'điều_trị_treatment'})
+MERGE (o2:disease {id: 'khối_u_tại_tủy_sống_disease'})
+MERGE (o1)-[r183:treatedBy]->(o2)
+SET r183.text = 'Cần nhiều lần điều trị mới loại bỏ được các khối u tại tủy sống.'
+
+MERGE (o1:treatment {id: 'tái_khám_treatment'})
+MERGE (o2:treatment {id: 'điều_trị_treatment'})
+MERGE (o1)-[r184:treatedBy]->(o2)
+SET r184.text = 'Sau khi điều trị, dù là phẫu thuật hay hóa trị, xạ trị thì người bệnh cũng cần tái khám thường xuyên để kiểm tra tiến triển trong các phương pháp trị liệu.'
+
+MERGE (o1:treatment {id: 'tái_khám_treatment'})
+MERGE (o2:disease {id: 'khối_u_tủy_sống_disease'})
+MERGE (o1)-[r185:diagnosedBy]->(o2)
+SET r185.text = 'Trong các lần tái khám, bác sĩ sẽ hỏi về các triệu chứng người bệnh đang gặp phải và có thể chỉ định chụp MRI để xem xét các khối u tủy sống có tái phát hay không.'
+
+MERGE (o1:cause {id: 'tiếp_xúc_với_bức_xạ_cause'})
+MERGE (o2:disease {id: 'khối_u_não_và_tủy_sống_disease'})
+MERGE (o1)-[r186:causes]->(o2)
+SET r186.text = 'Ngoài việc tiếp xúc với bức xạ, thường không có nguyên nhân cụ thể nào (liên quan đến lối sống hoặc môi trường) có thể gây ra các khối u não và tủy sống.'
+
+MERGE (o1:lifestyle {id: 'lối_sống_lifestyle'})
+MERGE (o2:disease {id: 'khối_u_não_và_tủy_sống_disease'})
+MERGE (o1)-[r187:relatedTo]->(o2)
+SET r187.text = 'Ngoài việc tiếp xúc với bức xạ, thường không có nguyên nhân cụ thể nào (liên quan đến lối sống hoặc môi trường) có thể gây ra các khối u não và tủy sống.'
+
+MERGE (o1:lifestyle {id: 'môi_trường_lifestyle'})
+MERGE (o2:disease {id: 'khối_u_não_và_tủy_sống_disease'})
+MERGE (o1)-[r188:relatedTo]->(o2)
+SET r188.text = 'Ngoài việc tiếp xúc với bức xạ, thường không có nguyên nhân cụ thể nào (liên quan đến lối sống hoặc môi trường) có thể gây ra các khối u não và tủy sống.'

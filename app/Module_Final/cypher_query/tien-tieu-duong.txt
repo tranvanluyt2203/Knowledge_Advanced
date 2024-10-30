@@ -1,0 +1,651 @@
+
+MERGE (o1:disease {id: 'tiền_tiểu_đường_disease'})
+MERGE (o2:disease {id: 'đái_tháo_đường_tuýp_2_disease'})
+MERGE (o1)-[r0:relatedTo]->(o2)
+SET r0.text = 'Tiền tiểu đường có thể tiến triển thành đái tháo đường tuýp 2 nếu không điều chỉnh chế độ ăn uống, sinh hoạt lành mạnh.'
+
+MERGE (o1:lifestyle {id: 'chế_độ_ăn_uống_lifestyle'})
+MERGE (o2:disease {id: 'đái_tháo_đường_tuýp_2_disease'})
+MERGE (o1)-[r1:preventedBy]->(o2)
+SET r1.text = 'Tiền tiểu đường có thể tiến triển thành đái tháo đường tuýp 2 nếu không điều chỉnh chế độ ăn uống, sinh hoạt lành mạnh.'
+
+MERGE (o1:lifestyle {id: 'sinh_hoạt_lành_mạnh_lifestyle'})
+MERGE (o2:disease {id: 'đái_tháo_đường_tuýp_2_disease'})
+MERGE (o1)-[r2:preventedBy]->(o2)
+SET r2.text = 'Tiền tiểu đường có thể tiến triển thành đái tháo đường tuýp 2 nếu không điều chỉnh chế độ ăn uống, sinh hoạt lành mạnh.'
+
+MERGE (o1:test {id: 'khám_sức_khỏe_định_kỳ_test'})
+MERGE (o2:disease {id: 'tiền_tiểu_đường_disease'})
+MERGE (o1)-[r3:diagnosedBy]->(o2)
+SET r3.text = 'Người dân cần đi khám sức khỏe định kỳ để phát hiện bệnh sớm và đẩy lùi tiền tiểu đường cũng như đái tháo đường tuýp 2.'
+
+MERGE (o1:test {id: 'khám_sức_khỏe_định_kỳ_test'})
+MERGE (o2:disease {id: 'đái_tháo_đường_tuýp_2_disease'})
+MERGE (o1)-[r4:diagnosedBy]->(o2)
+SET r4.text = 'Người dân cần đi khám sức khỏe định kỳ để phát hiện bệnh sớm và đẩy lùi tiền tiểu đường cũng như đái tháo đường tuýp 2.'
+
+MERGE (o1:disease {id: 'tiền_tiểu_đường_disease'})
+MERGE (o2:symptom {id: 'đường_huyết_cao_symptom'})
+MERGE (o1)-[r5:isSymptomOf]->(o2)
+SET r5.text = 'Tiền tiểu đường là tình trạng đường trong máu cao hơn bình thường (ở người bình thường, mức đường huyết trước khi ăn dao động 90-130mg/dl và sau khi ăn dưới 180 mg/dl) nhưng chưa đủ cao để bác sĩ chẩn đoán bệnh đái tháo đường tuýp 2.'
+
+MERGE (o1:symptom {id: 'đường_huyết_symptom'})
+MERGE (o2:disease {id: 'tiền_tiểu_đường_disease'})
+MERGE (o1)-[r6:relatedTo]->(o2)
+SET r6.text = 'Tiền tiểu đường là tình trạng đường trong máu cao hơn bình thường (ở người bình thường, mức đường huyết trước khi ăn dao động 90-130mg/dl và sau khi ăn dưới 180 mg/dl) nhưng chưa đủ cao để bác sĩ chẩn đoán bệnh đái tháo đường tuýp 2.'
+
+MERGE (o1:symptom {id: 'đường_huyết_symptom'})
+MERGE (o2:disease {id: 'đái_tháo_đường_tuýp_2_disease'})
+MERGE (o1)-[r7:relatedTo]->(o2)
+SET r7.text = 'Tiền tiểu đường là tình trạng đường trong máu cao hơn bình thường (ở người bình thường, mức đường huyết trước khi ăn dao động 90-130mg/dl và sau khi ăn dưới 180 mg/dl) nhưng chưa đủ cao để bác sĩ chẩn đoán bệnh đái tháo đường tuýp 2.'
+
+MERGE (o1:disease {id: 'tiền_đái_tháo_đường_disease'})
+MERGE (o2:disease {id: 'đái_tháo_đường_disease'})
+MERGE (o1)-[r8:relatedTo]->(o2)
+SET r8.text = 'Hiện Việt Nam có khoảng 5,3 triệu người bị tiền đái tháo đường và dự kiến 2/3 số này (chiếm 70%) sẽ chuyển thành đái tháo đường vào năm 2045.'
+
+MERGE (o1:disease {id: 'tiền_tiểu_đường_disease'})
+MERGE (o2:disease {id: 'đái_tháo_đường_tuýp_2_disease'})
+MERGE (o1)-[r9:relatedTo]->(o2)
+SET r9.text = 'Tiền tiểu đường không ảnh hưởng lớn đến sức khỏe; tuy nhiên, nếu không thay đổi lối sống, người lớn và trẻ em bị tiền tiểu đường có nguy cơ cao bị bệnh đái tháo đường tuýp 2.'
+
+MERGE (o1:lifestyle {id: 'thay_đổi_lối_sống_lifestyle'})
+MERGE (o2:disease {id: 'đái_tháo_đường_tuýp_2_disease'})
+MERGE (o1)-[r10:preventedBy]->(o2)
+SET r10.text = 'Tiền tiểu đường không ảnh hưởng lớn đến sức khỏe; tuy nhiên, nếu không thay đổi lối sống, người lớn và trẻ em bị tiền tiểu đường có nguy cơ cao bị bệnh đái tháo đường tuýp 2.'
+
+MERGE (o1:disease {id: 'đái_tháo_đường_tuýp_2_disease'})
+MERGE (o2:organ {id: 'tim_organ'})
+MERGE (o1)-[r11:affects]->(o2)
+SET r11.text = 'Lúc đó, bệnh ảnh hưởng nặng nề đến tim, mạch máu, mắt, thận.'
+
+MERGE (o1:disease {id: 'đái_tháo_đường_tuýp_2_disease'})
+MERGE (o2:organ {id: 'mạch_máu_organ'})
+MERGE (o1)-[r12:affects]->(o2)
+SET r12.text = 'Lúc đó, bệnh ảnh hưởng nặng nề đến tim, mạch máu, mắt, thận.'
+
+MERGE (o1:disease {id: 'đái_tháo_đường_tuýp_2_disease'})
+MERGE (o2:organ {id: 'mắt_organ'})
+MERGE (o1)-[r13:affects]->(o2)
+SET r13.text = 'Lúc đó, bệnh ảnh hưởng nặng nề đến tim, mạch máu, mắt, thận.'
+
+MERGE (o1:disease {id: 'đái_tháo_đường_tuýp_2_disease'})
+MERGE (o2:organ {id: 'thận_organ'})
+MERGE (o1)-[r14:affects]->(o2)
+SET r14.text = 'Lúc đó, bệnh ảnh hưởng nặng nề đến tim, mạch máu, mắt, thận.'
+
+MERGE (o1:disease {id: 'tiền_tiểu_đường_disease'})
+MERGE (o2:disease {id: 'đái_tháo_đường_disease'})
+MERGE (o1)-[r15:relatedTo]->(o2)
+SET r15.text = 'Phát hiện ra giai đoạn tiền tiểu đường cũng là cơ hội giúp bạn điều chỉnh lối sống, cải thiện sức khỏe kịp thời để ngăn chặn bệnh tiến triển thành đái tháo đường.'
+
+MERGE (o1:lifestyle {id: 'thay_đổi_lối_sống_lifestyle'})
+MERGE (o2:disease {id: 'đái_tháo_đường_disease'})
+MERGE (o1)-[r16:preventedBy]->(o2)
+SET r16.text = 'Phát hiện ra giai đoạn tiền tiểu đường cũng là cơ hội giúp bạn điều chỉnh lối sống, cải thiện sức khỏe kịp thời để ngăn chặn bệnh tiến triển thành đái tháo đường.'
+
+MERGE (o1:disease {id: 'tiền_đái_tháo_đường_disease'})
+MERGE (o2:symptom {id: 'không_có_triệu_chứng_symptom'})
+MERGE (o1)-[r17:isSymptomOf]->(o2)
+SET r17.text = 'Tiền đái tháo đường thường không có triệu chứng.'
+
+MERGE (o1:symptom {id: 'da_sẫm_màu_symptom'})
+MERGE (o2:disease {id: 'tiền_đái_tháo_đường_disease'})
+MERGE (o1)-[r18:isSymptomOf]->(o2)
+SET r18.text = 'Ở một số người, tiền đái tháo đường thể hiện qua các dấu hiệu:
+Vùng da ở một số bộ phận trên cơ thể như: cổ, nách, bẹn bị sẫm màu.'
+
+MERGE (o1:symptom {id: 'uống_nhiều_nước_symptom'})
+MERGE (o2:disease {id: 'tiền_đái_tháo_đường_disease'})
+MERGE (o1)-[r19:isSymptomOf]->(o2)
+SET r19.text = 'Ở một số người, tiền đái tháo đường thể hiện qua các dấu hiệu:
+Uống nhiều nước, đi tiểu nhiều lần trong ngày.'
+
+MERGE (o1:symptom {id: 'đi_tiểu_nhiều_lần_symptom'})
+MERGE (o2:disease {id: 'tiền_đái_tháo_đường_disease'})
+MERGE (o1)-[r20:isSymptomOf]->(o2)
+SET r20.text = 'Ở một số người, tiền đái tháo đường thể hiện qua các dấu hiệu:
+Uống nhiều nước, đi tiểu nhiều lần trong ngày.'
+
+MERGE (o1:symptom {id: 'tầm_nhìn_mờ_symptom'})
+MERGE (o2:disease {id: 'tiền_đái_tháo_đường_disease'})
+MERGE (o1)-[r21:isSymptomOf]->(o2)
+SET r21.text = 'Ở một số người, tiền đái tháo đường thể hiện qua các dấu hiệu:
+Tầm nhìn mờ dần hoặc hạn chế.'
+
+MERGE (o1:symptom {id: 'mệt_mỏi_symptom'})
+MERGE (o2:disease {id: 'tiền_đái_tháo_đường_disease'})
+MERGE (o1)-[r22:isSymptomOf]->(o2)
+SET r22.text = 'Ở một số người, tiền đái tháo đường thể hiện qua các dấu hiệu:
+Cơ thể thường xuyên mệt mỏi, khó tập trung nhưng không rõ nguyên nhân.'
+
+MERGE (o1:symptom {id: 'khó_tập_trung_symptom'})
+MERGE (o2:disease {id: 'tiền_đái_tháo_đường_disease'})
+MERGE (o1)-[r23:isSymptomOf]->(o2)
+SET r23.text = 'Ở một số người, tiền đái tháo đường thể hiện qua các dấu hiệu:
+Cơ thể thường xuyên mệt mỏi, khó tập trung nhưng không rõ nguyên nhân.'
+
+MERGE (o1:test {id: 'khám_sức_khỏe_định_kỳ_test'})
+MERGE (o2:disease {id: 'tiền_đái_tháo_đường_disease'})
+MERGE (o1)-[r24:diagnosedBy]->(o2)
+SET r24.text = 'Các dấu hiệu của tiền đái tháo đường thường dễ nhầm lẫn với một số tình trạng sức khỏe khác, do đó, người dân nên khám sức khỏe định kỳ để tầm soát, phát hiện sớm bệnh, từ đó điều chỉnh chế độ sinh hoạt, ăn uống, vận động phù hợp.'
+
+MERGE (o1:lifestyle {id: 'chế_độ_sinh_hoạt_lifestyle'})
+MERGE (o2:disease {id: 'tiền_đái_tháo_đường_disease'})
+MERGE (o1)-[r25:treatedBy]->(o2)
+SET r25.text = 'Các dấu hiệu của tiền đái tháo đường thường dễ nhầm lẫn với một số tình trạng sức khỏe khác, do đó, người dân nên khám sức khỏe định kỳ để tầm soát, phát hiện sớm bệnh, từ đó điều chỉnh chế độ sinh hoạt, ăn uống, vận động phù hợp.'
+
+MERGE (o1:lifestyle {id: 'chế_độ_ăn_uống_lifestyle'})
+MERGE (o2:disease {id: 'tiền_đái_tháo_đường_disease'})
+MERGE (o1)-[r26:treatedBy]->(o2)
+SET r26.text = 'Các dấu hiệu của tiền đái tháo đường thường dễ nhầm lẫn với một số tình trạng sức khỏe khác, do đó, người dân nên khám sức khỏe định kỳ để tầm soát, phát hiện sớm bệnh, từ đó điều chỉnh chế độ sinh hoạt, ăn uống, vận động phù hợp.'
+
+MERGE (o1:cause {id: 'yếu_tố_di_truyền_cause'})
+MERGE (o2:disease {id: 'tiền_đái_tháo_đường_disease'})
+MERGE (o1)-[r27:causedBy]->(o2)
+SET r27.text = 'Y học hiện đại chưa tìm ra nguyên nhân chính xác của tiền đái tháo đường, tuy nhiên, yếu tố di truyền đóng vai trò quan trọng.'
+
+MERGE (o1:disease {id: 'tiền_đái_tháo_đường_disease'})
+MERGE (o2:cause {id: 'yếu_tố_di_truyền_cause'})
+MERGE (o1)-[r28:causedBy]->(o2)
+SET r28.text = 'Y học hiện đại chưa tìm ra nguyên nhân chính xác của tiền đái tháo đường, tuy nhiên, yếu tố di truyền đóng vai trò quan trọng.'
+
+MERGE (o1:cause {id: 'rối_loạn_chuyển_hóa_cause'})
+MERGE (o2:disease {id: 'tiền_đái_tháo_đường_disease'})
+MERGE (o1)-[r29:causedBy]->(o2)
+SET r29.text = 'Một nguyên nhân nữa là do rối loạn chuyển hóa trong cơ thể khiến đường glucose bị “tồn đọng”, không được xử lý đúng cách.'
+
+MERGE (o1:disease {id: 'tiền_đái_tháo_đường_disease'})
+MERGE (o2:cause {id: 'rối_loạn_chuyển_hóa_cause'})
+MERGE (o1)-[r30:causedBy]->(o2)
+SET r30.text = 'Một nguyên nhân nữa là do rối loạn chuyển hóa trong cơ thể khiến đường glucose bị “tồn đọng”, không được xử lý đúng cách.'
+
+MERGE (o1:food {id: 'glucose_food'})
+MERGE (o2:organ {id: 'cơ_thể_organ'})
+MERGE (o1)-[r31:relatedTo]->(o2)
+SET r31.text = 'Y học có thể lý giải như sau, glucose là nguồn năng lượng chính của cơ thể, được tạo ra từ các thực phẩm mà chúng ta ăn hàng ngày.'
+
+MERGE (o1:food {id: 'glucose_food'})
+MERGE (o2:symptom {id: 'năng_lượng_symptom'})
+MERGE (o1)-[r32:relatedTo]->(o2)
+SET r32.text = 'Y học có thể lý giải như sau, glucose là nguồn năng lượng chính của cơ thể, được tạo ra từ các thực phẩm mà chúng ta ăn hàng ngày.'
+
+MERGE (o1:organ {id: 'insulin_organ'})
+MERGE (o2:organ {id: 'tuyến_tụy_organ'})
+MERGE (o1)-[r33:locatedIn]->(o2)
+SET r33.text = 'Trong quá trình đó, insulin (do tuyến tụy sản xuất) đóng vai trò vận chuyển, giải phóng glucose đến các tế bào.'
+
+MERGE (o1:organ {id: 'insulin_organ'})
+MERGE (o2:food {id: 'glucose_food'})
+MERGE (o1)-[r34:relatedTo]->(o2)
+SET r34.text = 'Trong quá trình đó, insulin (do tuyến tụy sản xuất) đóng vai trò vận chuyển, giải phóng glucose đến các tế bào.'
+
+MERGE (o1:organ {id: 'insulin_organ'})
+MERGE (o2:organ {id: 'tế_bào_organ'})
+MERGE (o1)-[r35:relatedTo]->(o2)
+SET r35.text = 'Trong quá trình đó, insulin (do tuyến tụy sản xuất) đóng vai trò vận chuyển, giải phóng glucose đến các tế bào.'
+
+MERGE (o1:food {id: 'glucose_food'})
+MERGE (o2:food {id: 'glycogen_food'})
+MERGE (o1)-[r36:relatedTo]->(o2)
+SET r36.text = 'Glucose dư thừa được lưu trữ dưới dạng glycogen ở gan.'
+
+MERGE (o1:food {id: 'glycogen_food'})
+MERGE (o2:organ {id: 'gan_organ'})
+MERGE (o1)-[r37:locatedIn]->(o2)
+SET r37.text = 'Glucose dư thừa được lưu trữ dưới dạng glycogen ở gan.'
+
+MERGE (o1:organ {id: 'gan_organ'})
+MERGE (o2:food {id: 'glycogen_food'})
+MERGE (o1)-[r38:relatedTo]->(o2)
+SET r38.text = 'Giữa các bữa ăn hoặc khi đang ngủ, gan chuyển đổi glycogen thành glucose thông qua một quá trình gọi là glycogenesis, giúp cơ thể duy trì lượng đường trong máu lưu thông đều đặn để cung cấp năng lượng cho các tế bào.'
+
+MERGE (o1:organ {id: 'gan_organ'})
+MERGE (o2:food {id: 'glucose_food'})
+MERGE (o1)-[r39:relatedTo]->(o2)
+SET r39.text = 'Giữa các bữa ăn hoặc khi đang ngủ, gan chuyển đổi glycogen thành glucose thông qua một quá trình gọi là glycogenesis, giúp cơ thể duy trì lượng đường trong máu lưu thông đều đặn để cung cấp năng lượng cho các tế bào.'
+
+MERGE (o1:treatment {id: 'glycogenesis_treatment'})
+MERGE (o2:food {id: 'glucose_food'})
+MERGE (o1)-[r40:relatedTo]->(o2)
+SET r40.text = 'Giữa các bữa ăn hoặc khi đang ngủ, gan chuyển đổi glycogen thành glucose thông qua một quá trình gọi là glycogenesis, giúp cơ thể duy trì lượng đường trong máu lưu thông đều đặn để cung cấp năng lượng cho các tế bào.'
+
+MERGE (o1:treatment {id: 'glycogenesis_treatment'})
+MERGE (o2:organ {id: 'gan_organ'})
+MERGE (o1)-[r41:relatedTo]->(o2)
+SET r41.text = 'Giữa các bữa ăn hoặc khi đang ngủ, gan chuyển đổi glycogen thành glucose thông qua một quá trình gọi là glycogenesis, giúp cơ thể duy trì lượng đường trong máu lưu thông đều đặn để cung cấp năng lượng cho các tế bào.'
+
+MERGE (o1:symptom {id: 'lượng_đường_trong_máu_symptom'})
+MERGE (o2:organ {id: 'cơ_thể_organ'})
+MERGE (o1)-[r42:relatedTo]->(o2)
+SET r42.text = 'Giữa các bữa ăn hoặc khi đang ngủ, gan chuyển đổi glycogen thành glucose thông qua một quá trình gọi là glycogenesis, giúp cơ thể duy trì lượng đường trong máu lưu thông đều đặn để cung cấp năng lượng cho các tế bào.'
+
+MERGE (o1:symptom {id: 'lượng_đường_trong_máu_symptom'})
+MERGE (o2:symptom {id: 'năng_lượng_symptom'})
+MERGE (o1)-[r43:relatedTo]->(o2)
+SET r43.text = 'Giữa các bữa ăn hoặc khi đang ngủ, gan chuyển đổi glycogen thành glucose thông qua một quá trình gọi là glycogenesis, giúp cơ thể duy trì lượng đường trong máu lưu thông đều đặn để cung cấp năng lượng cho các tế bào.'
+
+MERGE (o1:symptom {id: 'lượng_đường_trong_máu_symptom'})
+MERGE (o2:organ {id: 'tế_bào_organ'})
+MERGE (o1)-[r44:relatedTo]->(o2)
+SET r44.text = 'Giữa các bữa ăn hoặc khi đang ngủ, gan chuyển đổi glycogen thành glucose thông qua một quá trình gọi là glycogenesis, giúp cơ thể duy trì lượng đường trong máu lưu thông đều đặn để cung cấp năng lượng cho các tế bào.'
+
+MERGE (o1:organ {id: 'tuyến_tụy_organ'})
+MERGE (o2:organ {id: 'insulin_organ'})
+MERGE (o1)-[r45:relatedTo]->(o2)
+SET r45.text = 'Nếu tuyến tụy không sản xuất đủ insulin, tế bào sử dụng insuline không hiệu quả, việc đưa glucose vào tế bào sẽ bị gián đoạn.'
+
+MERGE (o1:organ {id: 'tế_bào_organ'})
+MERGE (o2:organ {id: 'insulin_organ'})
+MERGE (o1)-[r46:relatedTo]->(o2)
+SET r46.text = 'Nếu tuyến tụy không sản xuất đủ insulin, tế bào sử dụng insuline không hiệu quả, việc đưa glucose vào tế bào sẽ bị gián đoạn.'
+
+MERGE (o1:food {id: 'glucose_food'})
+MERGE (o2:organ {id: 'tế_bào_organ'})
+MERGE (o1)-[r47:relatedTo]->(o2)
+SET r47.text = 'Nếu tuyến tụy không sản xuất đủ insulin, tế bào sử dụng insuline không hiệu quả, việc đưa glucose vào tế bào sẽ bị gián đoạn.'
+
+MERGE (o1:symptom {id: 'đói_symptom'})
+MERGE (o2:disease {id: 'tiền_đái_tháo_đường_disease'})
+MERGE (o1)-[r48:isSymptomOf]->(o2)
+SET r48.text = 'Lúc này bạn liên tục đói, khát nước, ăn uống liên tục nhưng cơ thể không có năng lượng cho các hoạt động sống.'
+
+MERGE (o1:symptom {id: 'khát_nước_symptom'})
+MERGE (o2:disease {id: 'tiền_đái_tháo_đường_disease'})
+MERGE (o1)-[r49:isSymptomOf]->(o2)
+SET r49.text = 'Lúc này bạn liên tục đói, khát nước, ăn uống liên tục nhưng cơ thể không có năng lượng cho các hoạt động sống.'
+
+MERGE (o1:lifestyle {id: 'ăn_uống_liên_tục_lifestyle'})
+MERGE (o2:disease {id: 'tiền_đái_tháo_đường_disease'})
+MERGE (o1)-[r50:isSymptomOf]->(o2)
+SET r50.text = 'Lúc này bạn liên tục đói, khát nước, ăn uống liên tục nhưng cơ thể không có năng lượng cho các hoạt động sống.'
+
+MERGE (o1:symptom {id: 'năng_lượng_symptom'})
+MERGE (o2:organ {id: 'cơ_thể_organ'})
+MERGE (o1)-[r51:relatedTo]->(o2)
+SET r51.text = 'Lúc này bạn liên tục đói, khát nước, ăn uống liên tục nhưng cơ thể không có năng lượng cho các hoạt động sống.'
+
+MERGE (o1:food {id: 'thức_ăn_ngọt_food'})
+MERGE (o2:disease {id: 'tiền_tiểu_đường_disease'})
+MERGE (o1)-[r52:aggravatedBy]->(o2)
+SET r52.text = 'Ăn nhiều thức ăn ngọt, tinh bột,… dễ bị tiền tiểu đường.'
+
+MERGE (o1:food {id: 'tinh_bột_food'})
+MERGE (o2:disease {id: 'tiền_tiểu_đường_disease'})
+MERGE (o1)-[r53:aggravatedBy]->(o2)
+SET r53.text = 'Ăn nhiều thức ăn ngọt, tinh bột,… dễ bị tiền tiểu đường.'
+
+MERGE (o1:disease {id: 'tiền_tiểu_đường_disease'})
+MERGE (o2:food {id: 'thức_ăn_ngọt_food'})
+MERGE (o1)-[r54:aggravatedBy]->(o2)
+SET r54.text = 'Ăn nhiều thức ăn ngọt, tinh bột,… dễ bị tiền tiểu đường.'
+
+MERGE (o1:disease {id: 'tiền_tiểu_đường_disease'})
+MERGE (o2:food {id: 'tinh_bột_food'})
+MERGE (o1)-[r55:aggravatedBy]->(o2)
+SET r55.text = 'Ăn nhiều thức ăn ngọt, tinh bột,… dễ bị tiền tiểu đường.'
+
+MERGE (o1:disease {id: 'tiền_tiểu_đường_disease'})
+MERGE (o2:cause {id: 'yếu_tố_cause'})
+MERGE (o1)-[r56:associatedWith]->(o2)
+SET r56.text = 'Ngoài ra, người có các yếu tố dưới dây cũng có nguy cơ bị tiền tiểu đường:'
+
+MERGE (o1:cause {id: 'tuổi_cause'})
+MERGE (o2:disease {id: 'tiền_tiểu_đường_disease'})
+MERGE (o1)-[r57:associatedWith]->(o2)
+SET r57.text = 'Sau 45 tuổi.'
+
+MERGE (o1:disease {id: 'bệnh_đái_tháo_đường_tuýp_2_disease'})
+MERGE (o2:disease {id: 'tiền_tiểu_đường_disease'})
+MERGE (o1)-[r58:associatedWith]->(o2)
+SET r58.text = 'Trong gia đình có cha/mẹ hoặc anh/chị/em ruột bị bệnh đái tháo đường tuýp 2.'
+
+MERGE (o1:symptom {id: 'vòng_eo_symptom'})
+MERGE (o2:disease {id: 'tiền_tiểu_đường_disease'})
+MERGE (o1)-[r59:associatedWith]->(o2)
+SET r59.text = 'Nam giới có vòng eo lớn hơn 101.6 cm và với nữ có vòng eo lớn hơn 88.9 cm.'
+
+MERGE (o1:symptom {id: 'vòng_eo_symptom'})
+MERGE (o2:cause {id: 'kháng_insulin_cause'})
+MERGE (o1)-[r60:associatedWith]->(o2)
+SET r60.text = 'Khi vòng eo lớn hơn mức bình thường thì cơ thể đối diện nguy cơ kháng insulin.'
+
+MERGE (o1:food {id: 'thịt_đỏ_food'})
+MERGE (o2:disease {id: 'tiền_tiểu_đường_disease'})
+MERGE (o1)-[r61:aggravatedBy]->(o2)
+SET r61.text = 'Sử dụng nhiều thịt đỏ (thịt bò, thịt trâu, thịt bò, thịt cừu, thịt dê, thịt nai…), thức ăn chế biến sẵn, đồ uống có đường.'
+
+MERGE (o1:food {id: 'thức_ăn_chế_biến_sẵn_food'})
+MERGE (o2:disease {id: 'tiền_tiểu_đường_disease'})
+MERGE (o1)-[r62:aggravatedBy]->(o2)
+SET r62.text = 'Sử dụng nhiều thịt đỏ (thịt bò, thịt trâu, thịt bò, thịt cừu, thịt dê, thịt nai…), thức ăn chế biến sẵn, đồ uống có đường.'
+
+MERGE (o1:food {id: 'đồ_uống_có_đường_food'})
+MERGE (o2:disease {id: 'tiền_tiểu_đường_disease'})
+MERGE (o1)-[r63:aggravatedBy]->(o2)
+SET r63.text = 'Sử dụng nhiều thịt đỏ (thịt bò, thịt trâu, thịt bò, thịt cừu, thịt dê, thịt nai…), thức ăn chế biến sẵn, đồ uống có đường.'
+
+MERGE (o1:food {id: 'trái_cây_food'})
+MERGE (o2:disease {id: 'tiền_tiểu_đường_disease'})
+MERGE (o1)-[r64:preventedBy]->(o2)
+SET r64.text = 'Ít ăn trái cây, rau xanh, các loại đậu và lười tập thể dục.'
+
+MERGE (o1:food {id: 'rau_xanh_food'})
+MERGE (o2:disease {id: 'tiền_tiểu_đường_disease'})
+MERGE (o1)-[r65:preventedBy]->(o2)
+SET r65.text = 'Ít ăn trái cây, rau xanh, các loại đậu và lười tập thể dục.'
+
+MERGE (o1:food {id: 'các_loại_đậu_food'})
+MERGE (o2:disease {id: 'tiền_tiểu_đường_disease'})
+MERGE (o1)-[r66:preventedBy]->(o2)
+SET r66.text = 'Ít ăn trái cây, rau xanh, các loại đậu và lười tập thể dục.'
+
+MERGE (o1:lifestyle {id: 'lười_tập_thể_dục_lifestyle'})
+MERGE (o2:disease {id: 'tiền_tiểu_đường_disease'})
+MERGE (o1)-[r67:aggravatedBy]->(o2)
+SET r67.text = 'Ít ăn trái cây, rau xanh, các loại đậu và lười tập thể dục.'
+
+MERGE (o1:cause {id: 'thừa_cân_béo_phì_cause'})
+MERGE (o2:disease {id: 'tiền_tiểu_đường_disease'})
+MERGE (o1)-[r68:causedBy]->(o2)
+SET r68.text = 'Thừa cân béo phì, đặc biệt bụng mỡ là yếu tố nguy cơ chính của tiền tiểu đường.'
+
+MERGE (o1:cause {id: 'bụng_mỡ_cause'})
+MERGE (o2:disease {id: 'tiền_tiểu_đường_disease'})
+MERGE (o1)-[r69:causedBy]->(o2)
+SET r69.text = 'Thừa cân béo phì, đặc biệt bụng mỡ là yếu tố nguy cơ chính của tiền tiểu đường.'
+
+MERGE (o1:disease {id: 'tiền_tiểu_đường_disease'})
+MERGE (o2:cause {id: 'thừa_cân_béo_phì_cause'})
+MERGE (o1)-[r70:causedBy]->(o2)
+SET r70.text = 'Thừa cân béo phì, đặc biệt bụng mỡ là yếu tố nguy cơ chính của tiền tiểu đường.'
+
+MERGE (o1:disease {id: 'tiền_tiểu_đường_disease'})
+MERGE (o2:cause {id: 'bụng_mỡ_cause'})
+MERGE (o1)-[r71:causedBy]->(o2)
+SET r71.text = 'Thừa cân béo phì, đặc biệt bụng mỡ là yếu tố nguy cơ chính của tiền tiểu đường.'
+
+MERGE (o1:cause {id: 'mô_mỡ_cause'})
+MERGE (o2:cause {id: 'kháng_insulin_cause'})
+MERGE (o1)-[r72:causedBy]->(o2)
+SET r72.text = 'Nếu vùng giữa cơ và xung quanh bụng có nhiều mô mỡ càng dễ đề kháng insulin.'
+
+MERGE (o1:symptom {id: 'cholesterol_cao_symptom'})
+MERGE (o2:disease {id: 'tiền_tiểu_đường_disease'})
+MERGE (o1)-[r73:isSymptomOf]->(o2)
+SET r73.text = 'Cơ thể có cholesterol cao, chất béo trung tính cao, cholesterol HDL thấp và cholesterol LDL cao.'
+
+MERGE (o1:symptom {id: 'chất_béo_trung_tính_cao_symptom'})
+MERGE (o2:disease {id: 'tiền_tiểu_đường_disease'})
+MERGE (o1)-[r74:isSymptomOf]->(o2)
+SET r74.text = 'Cơ thể có cholesterol cao, chất béo trung tính cao, cholesterol HDL thấp và cholesterol LDL cao.'
+
+MERGE (o1:symptom {id: 'cholesterol_hdl_thấp_symptom'})
+MERGE (o2:disease {id: 'tiền_tiểu_đường_disease'})
+MERGE (o1)-[r75:isSymptomOf]->(o2)
+SET r75.text = 'Cơ thể có cholesterol cao, chất béo trung tính cao, cholesterol HDL thấp và cholesterol LDL cao.'
+
+MERGE (o1:symptom {id: 'cholesterol_ldl_cao_symptom'})
+MERGE (o2:disease {id: 'tiền_tiểu_đường_disease'})
+MERGE (o1)-[r76:isSymptomOf]->(o2)
+SET r76.text = 'Cơ thể có cholesterol cao, chất béo trung tính cao, cholesterol HDL thấp và cholesterol LDL cao.'
+
+MERGE (o1:disease {id: 'tiểu_đường_thai_kỳ_disease'})
+MERGE (o2:disease {id: 'tiền_tiểu_đường_disease'})
+MERGE (o1)-[r77:associatedWith]->(o2)
+SET r77.text = 'Nếu bị tiểu đường khi đang mang thai (tiểu đường thai kỳ), thai phụ và em bé có nguy cơ bị tiền tiểu đường cao hơn.'
+
+MERGE (o1:disease {id: 'hội_chứng_buồng_trứng_đa_nang_disease'})
+MERGE (o2:disease {id: 'tiền_tiểu_đường_disease'})
+MERGE (o1)-[r78:associatedWith]->(o2)
+SET r78.text = 'Phụ nữ bị hội chứng buồng trứng đa nang thường gặp các vấn đề kinh nguyệt không đều, tóc mọc nhiều và béo phì, các rối loạn chuyển hóa trong cơ thể.'
+
+MERGE (o1:symptom {id: 'kinh_nguyệt_không_đều_symptom'})
+MERGE (o2:disease {id: 'hội_chứng_buồng_trứng_đa_nang_disease'})
+MERGE (o1)-[r79:isSymptomOf]->(o2)
+SET r79.text = 'Phụ nữ bị hội chứng buồng trứng đa nang thường gặp các vấn đề kinh nguyệt không đều, tóc mọc nhiều và béo phì, các rối loạn chuyển hóa trong cơ thể.'
+
+MERGE (o1:symptom {id: 'tóc_mọc_nhiều_symptom'})
+MERGE (o2:disease {id: 'hội_chứng_buồng_trứng_đa_nang_disease'})
+MERGE (o1)-[r80:isSymptomOf]->(o2)
+SET r80.text = 'Phụ nữ bị hội chứng buồng trứng đa nang thường gặp các vấn đề kinh nguyệt không đều, tóc mọc nhiều và béo phì, các rối loạn chuyển hóa trong cơ thể.'
+
+MERGE (o1:cause {id: 'béo_phì_cause'})
+MERGE (o2:disease {id: 'hội_chứng_buồng_trứng_đa_nang_disease'})
+MERGE (o1)-[r81:isSymptomOf]->(o2)
+SET r81.text = 'Phụ nữ bị hội chứng buồng trứng đa nang thường gặp các vấn đề kinh nguyệt không đều, tóc mọc nhiều và béo phì, các rối loạn chuyển hóa trong cơ thể.'
+
+MERGE (o1:cause {id: 'các_rối_loạn_chuyển_hóa_cause'})
+MERGE (o2:disease {id: 'hội_chứng_buồng_trứng_đa_nang_disease'})
+MERGE (o1)-[r82:isSymptomOf]->(o2)
+SET r82.text = 'Phụ nữ bị hội chứng buồng trứng đa nang thường gặp các vấn đề kinh nguyệt không đều, tóc mọc nhiều và béo phì, các rối loạn chuyển hóa trong cơ thể.'
+
+MERGE (o1:symptom {id: 'ngưng_thở_khi_ngủ_symptom'})
+MERGE (o2:disease {id: 'tiền_đái_tháo_đường_disease'})
+MERGE (o1)-[r83:associatedWith]->(o2)
+SET r83.text = 'Người mắc chứng ngưng thở khi ngủ có nguy cơ kháng insulin nên dễ dẫn đến tiền đái tháo đường.'
+
+MERGE (o1:cause {id: 'kháng_insulin_cause'})
+MERGE (o2:disease {id: 'tiền_đái_tháo_đường_disease'})
+MERGE (o1)-[r84:causedBy]->(o2)
+SET r84.text = 'Người mắc chứng ngưng thở khi ngủ có nguy cơ kháng insulin nên dễ dẫn đến tiền đái tháo đường.'
+
+MERGE (o1:lifestyle {id: 'hút_thuốc_lifestyle'})
+MERGE (o2:disease {id: 'tiền_tiểu_đường_disease'})
+MERGE (o1)-[r85:aggravatedBy]->(o2)
+SET r85.text = 'Hút thuốc có thể làm tăng đề kháng insulin, riêng người đã bị tiền tiểu đường nếu không bỏ thuốc thì tiếp tục đối diện nguy cơ bị bệnh tiểu đường loại 2.'
+
+MERGE (o1:lifestyle {id: 'hút_thuốc_lifestyle'})
+MERGE (o2:disease {id: 'bệnh_tiểu_đường_loại_2_disease'})
+MERGE (o1)-[r86:aggravatedBy]->(o2)
+SET r86.text = 'Hút thuốc có thể làm tăng đề kháng insulin, riêng người đã bị tiền tiểu đường nếu không bỏ thuốc thì tiếp tục đối diện nguy cơ bị bệnh tiểu đường loại 2.'
+
+MERGE (o1:cause {id: 'kháng_insulin_cause'})
+MERGE (o2:lifestyle {id: 'hút_thuốc_lifestyle'})
+MERGE (o1)-[r87:causedBy]->(o2)
+SET r87.text = 'Hút thuốc có thể làm tăng đề kháng insulin, riêng người đã bị tiền tiểu đường nếu không bỏ thuốc thì tiếp tục đối diện nguy cơ bị bệnh tiểu đường loại 2.'
+
+MERGE (o1:lifestyle {id: 'hút_thuốc_lá_lifestyle'})
+MERGE (o2:disease {id: 'viêm_phổi_disease'})
+MERGE (o1)-[r88:aggravatedBy]->(o2)
+SET r88.text = 'Hút thuốc lá cũng tăng nguy cơ các biến chứng tiểu đường khác như: viêm phổi, lao, suy thận,…'
+
+MERGE (o1:lifestyle {id: 'hút_thuốc_lá_lifestyle'})
+MERGE (o2:disease {id: 'lao_disease'})
+MERGE (o1)-[r89:aggravatedBy]->(o2)
+SET r89.text = 'Hút thuốc lá cũng tăng nguy cơ các biến chứng tiểu đường khác như: viêm phổi, lao, suy thận,…'
+
+MERGE (o1:lifestyle {id: 'hút_thuốc_lá_lifestyle'})
+MERGE (o2:disease {id: 'suy_thận_disease'})
+MERGE (o1)-[r90:aggravatedBy]->(o2)
+SET r90.text = 'Hút thuốc lá cũng tăng nguy cơ các biến chứng tiểu đường khác như: viêm phổi, lao, suy thận,…'
+
+MERGE (o1:test {id: 'xét_nghiệm_kiểm_tra_test'})
+MERGE (o2:disease {id: 'tiền_đái_tháo_đường_disease'})
+MERGE (o1)-[r91:diagnosedBy]->(o2)
+SET r91.text = 'Khi có các dấu hiệu trên, người dân nên đi khám định kỳ với bác sĩ khoa Nội tiết - Đái tháo đường để được thực hiện các xét nghiệm kiểm tra, từ đó theo dõi sức khỏe, thực hiện các biện pháp phòng ngừa.'
+
+MERGE (o1:disease {id: 'tiền_đái_tháo_đường_disease'})
+MERGE (o2:treatment {id: 'bác_sĩ_khoa_nội_tiết_-_đái_tháo_đường_treatment'})
+MERGE (o1)-[r92:diagnosedBy]->(o2)
+SET r92.text = 'Các bác sĩ khoa Nội tiết - Đái tháo đường, BVĐK Tâm Anh TP.HCM có kiến thức chuyên môn sâu rộng, nhiều kinh nghiệm giúp người bệnh phát hiện tiền đái tháo đường và ngăn ngừa ở giai đoạn sớm.'
+
+MERGE (o1:disease {id: 'bệnh_đái_tháo_đường_tuýp_2_disease'})
+MERGE (o2:disease {id: 'tiền_đái_tháo_đường_disease'})
+MERGE (o1)-[r93:relatedTo]->(o2)
+SET r93.text = 'Nhờ đó, tránh tình trạng tiến triển thành bệnh đái tháo đường tuýp 2.'
+
+MERGE (o1:disease {id: 'tiền_đái_tháo_đường_disease'})
+MERGE (o2:disease {id: 'đái_tháo_đường_tuýp_2_disease'})
+MERGE (o1)-[r94:relatedTo]->(o2)
+SET r94.text = 'Tiền đái tháo đường có thể tiến triển thành đái tháo đường tuýp 2 nếu người bệnh không điều chỉnh chế độ ăn uống khoa học, sống lành lạnh, tập thể dục thường xuyên.'
+
+MERGE (o1:lifestyle {id: 'chế_độ_ăn_uống_khoa_học_lifestyle'})
+MERGE (o2:disease {id: 'tiền_đái_tháo_đường_disease'})
+MERGE (o1)-[r95:preventedBy]->(o2)
+SET r95.text = 'Tiền đái tháo đường có thể tiến triển thành đái tháo đường tuýp 2 nếu người bệnh không điều chỉnh chế độ ăn uống khoa học, sống lành lạnh, tập thể dục thường xuyên.'
+
+MERGE (o1:lifestyle {id: 'sống_lành_mạnh_lifestyle'})
+MERGE (o2:disease {id: 'tiền_đái_tháo_đường_disease'})
+MERGE (o1)-[r96:preventedBy]->(o2)
+SET r96.text = 'Tiền đái tháo đường có thể tiến triển thành đái tháo đường tuýp 2 nếu người bệnh không điều chỉnh chế độ ăn uống khoa học, sống lành lạnh, tập thể dục thường xuyên.'
+
+MERGE (o1:disease {id: 'nội_tiết_-_đái_tháo_đường_disease'})
+MERGE (o2:treatment {id: 'bác_sĩ_chuyên_ngành_nội_tiết_-_đái_tháo_đường_treatment'})
+MERGE (o1)-[r97:treatedBy]->(o2)
+SET r97.text = 'BVĐK Tâm Anh TP.HCM quy tụ những bác sĩ chuyên ngành Nội tiết - Đái tháo đường giàu kinh nghiệm, giỏi chuyên môn, tận tâm chăm sóc từng ca bệnh.'
+
+MERGE (o1:treatment {id: 'bác_sĩ_treatment'})
+MERGE (o2:organ {id: 'bệnh_viện_hàng_đầu_tại_việt_nam_organ'})
+MERGE (o1)-[r98:locatedIn]->(o2)
+SET r98.text = 'Đặc biệt, các bác sĩ từng công tác tại các bệnh viện hàng đầu tại Việt Nam.'
+
+MERGE (o1:treatment {id: 'bác_sĩ_treatment'})
+MERGE (o2:test {id: 'xét_nghiệm_chẩn_đoán_test'})
+MERGE (o1)-[r99:diagnosedBy]->(o2)
+SET r99.text = 'Với kiến thức y học chuyên sâu cùng kinh nghiệm thực tiễn dày dặn, bác sĩ sẽ nhận ra các dấu hiệu nghi ngờ, chỉ định người bệnh thực hiện các xét nghiệm chẩn đoán.'
+
+MERGE (o1:test {id: 'xét_nghiệm_glucose_huyết_tương_lúc_đói_test'})
+MERGE (o2:disease {id: 'đái_tháo_đường_disease'})
+MERGE (o1)-[r100:diagnosedBy]->(o2)
+SET r100.text = 'Đơn cử như, người bệnh được lấy máu làm xét nghiệm glucose huyết tương lúc đói, nhịn ăn ít nhất 8 giờ trước khi xét nghiệm.'
+
+MERGE (o1:test {id: 'khám_sức_khỏe_định_kỳ_test'})
+MERGE (o2:disease {id: 'tiền_tiểu_đường_disease'})
+MERGE (o1)-[r101:diagnosedBy]->(o2)
+SET r101.text = 'Khám sức khỏe định kỳ giúp phát hiện sớm tiền tiểu đường, để điều trị kịp thời.'
+
+MERGE (o1:test {id: 'kết_quả_xét_nghiệm_đường_huyết_dưới_100_mg/dl_test'})
+MERGE (o2:lifestyle {id: 'bình_thường_lifestyle'})
+MERGE (o1)-[r102:relatedTo]->(o2)
+SET r102.text = 'Nếu kết quả xét nghiệm đường huyết dưới 100 mg/dL thì bình thường.'
+
+MERGE (o1:test {id: 'đường_huyết_từ_126_mg/dl_trở_lên_test'})
+MERGE (o2:disease {id: 'đái_tháo_đường_disease'})
+MERGE (o1)-[r103:diagnosedBy]->(o2)
+SET r103.text = 'Nếu đường huyết từ 126 mg/dL trở lên, bạn bị đái tháo đường.'
+
+MERGE (o1:test {id: 'thử_nghiệm_dung_nạp_glucose_qua_đường_uống_test'})
+MERGE (o2:disease {id: 'đái_tháo_đường_disease'})
+MERGE (o1)-[r104:diagnosedBy]->(o2)
+SET r104.text = 'Lúc này, bạn sẽ được tiếp tục kiểm tra đường huyết bằng thử nghiệm dung nạp glucose qua đường uống.'
+
+MERGE (o1:food {id: 'dung_dịch_đường_food'})
+MERGE (o2:test {id: 'kiểm_tra_đường_huyết_lúc_đói_test'})
+MERGE (o1)-[r105:relatedTo]->(o2)
+SET r105.text = 'Sau khi kiểm tra đường huyết lúc đói, bạn được uống dung dịch đường.'
+
+MERGE (o1:test {id: 'xét_nghiệm_đường_huyết_bất_kỳ_test'})
+MERGE (o2:disease {id: 'đái_tháo_đường_disease'})
+MERGE (o1)-[r106:diagnosedBy]->(o2)
+SET r106.text = 'Sau 2 giờ, nhân viên y tế sẽ lấy máu để xét nghiệm tiếp (còn gọi là xét nghiệm đường huyết bất kỳ, xét nghiệm đường huyết sau khi ăn).'
+
+MERGE (o1:test {id: 'đường_huyết_dưới_140_mg/dl_test'})
+MERGE (o2:lifestyle {id: 'bình_thường_lifestyle'})
+MERGE (o1)-[r107:relatedTo]->(o2)
+SET r107.text = 'Nếu đường huyết dưới 140 mg/dL thì bình thường.'
+
+MERGE (o1:test {id: 'đường_huyết_từ_140_đến_199mg/dl_test'})
+MERGE (o2:disease {id: 'tiền_tiểu_đường_disease'})
+MERGE (o1)-[r108:diagnosedBy]->(o2)
+SET r108.text = 'Nếu đường huyết từ 140 đến 199mg/dL, bạn bị tiền tiểu đường.'
+
+MERGE (o1:test {id: 'đường_huyết_từ_200_mg/dl_trở_lên_test'})
+MERGE (o2:disease {id: 'đái_tháo_đường_disease'})
+MERGE (o1)-[r109:diagnosedBy]->(o2)
+SET r109.text = 'Nếu đường huyết từ 200 mg/dL trở lên, bạn bị đái tháo đường.'
+
+MERGE (o1:test {id: 'xét_nghiệm_hba1c_test'})
+MERGE (o2:disease {id: 'đái_tháo_đường_disease'})
+MERGE (o1)-[r110:diagnosedBy]->(o2)
+SET r110.text = 'Ngoài ra, bạn sẽ được làm xét nghiệm HbA1C.'
+
+MERGE (o1:test {id: 'xét_nghiệm_hba1c_test'})
+MERGE (o2:lifestyle {id: 'kiểm_soát_đường_huyết_lifestyle'})
+MERGE (o1)-[r111:relatedTo]->(o2)
+SET r111.text = 'Đây là xét nghiệm máu cho biết mức đường huyết trung bình trong 3 tháng qua, thường được dùng để kiểm tra một người bệnh có kiểm soát tốt đường huyết hay không.'
+
+MERGE (o1:test {id: 'xét_nghiệm_hba1c_test'})
+MERGE (o2:disease {id: 'tiền_tiểu_đường_disease'})
+MERGE (o1)-[r112:diagnosedBy]->(o2)
+SET r112.text = 'HbA1C cũng được dùng để chẩn đoán tiền tiểu đường.'
+
+MERGE (o1:test {id: 'hba1c_dưới_5.6%_test'})
+MERGE (o2:lifestyle {id: 'bình_thường_lifestyle'})
+MERGE (o1)-[r113:relatedTo]->(o2)
+SET r113.text = 'Nếu HbA1C dưới 5.6% thì bình thường.'
+
+MERGE (o1:test {id: 'hba1c_từ_5.7_đến_6.4%_test'})
+MERGE (o2:disease {id: 'tiền_tiểu_đường_disease'})
+MERGE (o1)-[r114:diagnosedBy]->(o2)
+SET r114.text = 'Nếu HbA1C từ 5.7 đến 6.4% thì tiền tiểu đường.'
+
+MERGE (o1:test {id: 'hba1c_từ_6.5%_trở_lên_test'})
+MERGE (o2:disease {id: 'đái_tháo_đường_disease'})
+MERGE (o1)-[r115:diagnosedBy]->(o2)
+SET r115.text = 'Nếu HbA1C từ 6.5% trở lên đã bị đái tháo đường.'
+
+MERGE (o1:treatment {id: 'bác_sĩ_treatment'})
+MERGE (o2:test {id: 'kiểm_tra_đường_huyết_test'})
+MERGE (o1)-[r116:diagnosedBy]->(o2)
+SET r116.text = 'Bác sĩ có thể chỉ định bạn kiểm tra đường huyết một lần nữa để khẳng định.'
+
+MERGE (o1:organ {id: 'trẻ_em_organ'})
+MERGE (o2:disease {id: 'tiền_đái_tháo_đường_disease'})
+MERGE (o1)-[r117:isSymptomOf]->(o2)
+SET r117.text = 'Trẻ em cũng có nguy cơ bị tiền đái tháo đường.'
+
+MERGE (o1:test {id: 'kiểm_tra_đường_huyết_định_kỳ_test'})
+MERGE (o2:disease {id: 'tiền_đái_tháo_đường_disease'})
+MERGE (o1)-[r118:preventedBy]->(o2)
+SET r118.text = 'Theo Hiệp hội Đái tháo đường Hoa Kỳ, trẻ em từ 10 tuổi trở lên nếu thuộc các trường hợp dưới đây nên kiểm tra đường huyết định kỳ để sớm phát hiện tiền đái tháo đường và ngăn chặn kịp thời.'
+
+MERGE (o1:lifestyle {id: 'thừa_cân__béo_phì_lifestyle'})
+MERGE (o2:disease {id: 'tiền_đái_tháo_đường_disease'})
+MERGE (o1)-[r119:isSymptomOf]->(o2)
+SET r119.text = 'Cụ thể: Thừa cân, béo phì.'
+
+MERGE (o1:disease {id: 'đái_tháo_đường_tuýp_2_disease'})
+MERGE (o2:disease {id: 'tiền_đái_tháo_đường_disease'})
+MERGE (o1)-[r120:associatedWith]->(o2)
+SET r120.text = 'Có người thân trong gia đình bị đái tháo đường tuýp 2.'
+
+MERGE (o1:disease {id: 'đái_tháo_đường_thai_kỳ_disease'})
+MERGE (o2:disease {id: 'tiền_đái_tháo_đường_disease'})
+MERGE (o1)-[r121:associatedWith]->(o2)
+SET r121.text = 'Mẹ của trẻ bị đái tháo đường thai kỳ khi mang thai.'
+
+MERGE (o1:test {id: 'xét_nghiệm_lại_test'})
+MERGE (o2:disease {id: 'tiền_đái_tháo_đường_disease'})
+MERGE (o1)-[r122:relatedTo]->(o2)
+SET r122.text = 'Nếu trẻ có nguy cơ cao bị tiền đái tháo đường có kết quả đường huyết bình thường, Hiệp hội Đái tháo đường Hoa Kỳ khuyên vẫn nên xét nghiệm lại ít nhất 3 năm 1 lần.'
+
+MERGE (o1:disease {id: 'đái_tháo_đường_disease'})
+MERGE (o2:symptom {id: 'tử_vong_symptom'})
+MERGE (o1)-[r123:causedBy]->(o2)
+SET r123.text = 'Đái tháo đường là một trong những bệnh gây nhiều ca tử vong hàng đầu thế giới.'
+
+MERGE (o1:disease {id: 'đái_tháo_đường_disease'})
+MERGE (o2:organ {id: '537_triệu_người_organ'})
+MERGE (o1)-[r124:associatedWith]->(o2)
+SET r124.text = 'Năm 2021, thế giới có 537 triệu người đái tháo đường.'
+
+MERGE (o1:disease {id: 'đái_tháo_đường_disease'})
+MERGE (o2:symptom {id: 'tử_vong_symptom'})
+MERGE (o1)-[r125:causedBy]->(o2)
+SET r125.text = 'Mỗi 5 giây có một người đái tháo đường tử vong.'
+
+MERGE (o1:disease {id: 'đái_tháo_đường_disease'})
+MERGE (o2:organ {id: '3_5_triệu_người_bệnh_organ'})
+MERGE (o1)-[r126:associatedWith]->(o2)
+SET r126.text = 'Riêng Việt Nam có hơn 3,5 triệu người bệnh, dự kiến tăng lên 6,5 triệu ca vào năm 2045.'
+
+MERGE (o1:disease {id: 'tiền_đái_tháo_đường_disease'})
+MERGE (o2:treatment {id: 'bác_sĩ_nội_tiết_-_đái_tháo_đường_treatment'})
+MERGE (o1)-[r127:treatedBy]->(o2)
+SET r127.text = 'Do đó, khi phát hiện tiền đái tháo đường, bạn nên khám với bác sĩ Nội tiết - Đái tháo đường cũng như lựa chọn bệnh viện có trang thiết bị, máy móc hiện đại để được đánh giá chính xác tình trạng sức khỏe và điều chỉnh chế độ ăn uống.'
+
+MERGE (o1:disease {id: 'tiền_đái_tháo_đường_disease'})
+MERGE (o2:disease {id: 'đái_tháo_đường_disease'})
+MERGE (o1)-[r128:isSymptomOf]->(o2)
+SET r128.text = 'Đây là cơ hội thay đổi cuối cùng trước khi tiền đái tháo đường tiến triển thành bệnh đái tháo đường.'

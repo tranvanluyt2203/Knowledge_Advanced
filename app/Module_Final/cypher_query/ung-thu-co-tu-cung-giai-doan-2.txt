@@ -1,0 +1,367 @@
+
+MERGE (o1:disease {id: 'ung_thư_cổ_tử_cung_giai_đoạn_ii_disease'})
+MERGE (o2:symptom {id: 'tiên_lượng_tương_đối_tốt_symptom'})
+MERGE (o1)-[r0:relatedTo]->(o2)
+SET r0.text = 'Ung thư cổ tử cung giai đoạn II có tiên lượng tương đối tốt.'
+
+MERGE (o1:disease {id: 'ung_thư_cổ_tử_cung_giai_đoạn_ii_disease'})
+MERGE (o2:treatment {id: 'phẫu_thuật_treatment'})
+MERGE (o1)-[r1:treatedBy]->(o2)
+SET r1.text = 'Điều trị bao gồm phẫu thuật, xạ trị, hóa trị hoặc kết hợp giữa các phương pháp với nhau.'
+
+MERGE (o1:disease {id: 'ung_thư_cổ_tử_cung_giai_đoạn_ii_disease'})
+MERGE (o2:treatment {id: 'xạ_trị_treatment'})
+MERGE (o1)-[r2:treatedBy]->(o2)
+SET r2.text = 'Điều trị bao gồm phẫu thuật, xạ trị, hóa trị hoặc kết hợp giữa các phương pháp với nhau.'
+
+MERGE (o1:disease {id: 'ung_thư_cổ_tử_cung_giai_đoạn_ii_disease'})
+MERGE (o2:treatment {id: 'hóa_trị_treatment'})
+MERGE (o1)-[r3:treatedBy]->(o2)
+SET r3.text = 'Điều trị bao gồm phẫu thuật, xạ trị, hóa trị hoặc kết hợp giữa các phương pháp với nhau.'
+
+MERGE (o1:disease {id: 'ung_thư_cổ_tử_cung_giai_đoạn_ii_disease'})
+MERGE (o2:organ {id: 'cổ_tử_cung_organ'})
+MERGE (o1)-[r4:affects]->(o2)
+SET r4.text = 'Ung thư cổ tử cung giai đoạn II là ung thư đã bắt đầu lan ra bên ngoài cổ tử cung và xâm lấn các mô xung quanh, nhưng chưa xâm lấn tới 1/3 dưới âm đạo và thành chậu.'
+
+MERGE (o1:disease {id: 'ung_thư_cổ_tử_cung_giai_đoạn_ii_disease'})
+MERGE (o2:organ {id: 'âm_đạo_organ'})
+MERGE (o1)-[r5:affects]->(o2)
+SET r5.text = 'Ung thư cổ tử cung giai đoạn II là ung thư đã bắt đầu lan ra bên ngoài cổ tử cung và xâm lấn các mô xung quanh, nhưng chưa xâm lấn tới 1/3 dưới âm đạo và thành chậu.'
+
+MERGE (o1:disease {id: 'ung_thư_cổ_tử_cung_giai_đoạn_ii_disease'})
+MERGE (o2:organ {id: 'thành_chậu_organ'})
+MERGE (o1)-[r6:affects]->(o2)
+SET r6.text = 'Ung thư cổ tử cung giai đoạn II là ung thư đã bắt đầu lan ra bên ngoài cổ tử cung và xâm lấn các mô xung quanh, nhưng chưa xâm lấn tới 1/3 dưới âm đạo và thành chậu.'
+
+MERGE (o1:disease {id: 'giai_đoạn_bệnh_disease'})
+MERGE (o2:disease {id: 'khối_u_disease'})
+MERGE (o1)-[r7:relatedTo]->(o2)
+SET r7.text = 'Giai đoạn bệnh phản ánh mức độ phát triển của khối u và tình trạng di căn.'
+
+MERGE (o1:disease {id: 'giai_đoạn_bệnh_disease'})
+MERGE (o2:disease {id: 'di_căn_disease'})
+MERGE (o1)-[r8:relatedTo]->(o2)
+SET r8.text = 'Giai đoạn bệnh phản ánh mức độ phát triển của khối u và tình trạng di căn.'
+
+MERGE (o1:test {id: 'phân_loại_giai_đoạn_test'})
+MERGE (o2:treatment {id: 'bác_sĩ_treatment'})
+MERGE (o1)-[r9:diagnosedBy]->(o2)
+SET r9.text = 'Phân loại giai đoạn giúp cho các bác sĩ đưa ra chỉ định điều trị phù hợp với từng người bệnh.'
+
+MERGE (o1:test {id: 'hệ_thống_phân_loại_của_liên_đoàn_sản_phụ_khoa_quốc_tế_(figo)_test'})
+MERGE (o2:disease {id: 'ung_thư_cổ_tử_cung_disease'})
+MERGE (o1)-[r10:diagnosedBy]->(o2)
+SET r10.text = 'Hệ thống phân loại của Liên đoàn Sản Phụ khoa Quốc tế (FIGO) phân chia ung thư cổ tử cung thành 4 giai đoạn được ký hiệu từ I đến IV.'
+
+MERGE (o1:disease {id: 'giai_đoạn_ii_disease'})
+MERGE (o2:disease {id: 'iia_disease'})
+MERGE (o1)-[r11:relatedTo]->(o2)
+SET r11.text = 'Trong đó, giai đoạn II được chia thành IIA và IIB.'
+
+MERGE (o1:disease {id: 'giai_đoạn_ii_disease'})
+MERGE (o2:disease {id: 'iib_disease'})
+MERGE (o1)-[r12:relatedTo]->(o2)
+SET r12.text = 'Trong đó, giai đoạn II được chia thành IIA và IIB.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:organ {id: 'âm_đạo_organ'})
+MERGE (o1)-[r13:affects]->(o2)
+SET r13.text = 'Ở giai đoạn này, khối u đã lan xuống 2/3 trên của âm đạo nhưng chưa xâm lấn mô xung quanh cổ tử cung (còn gọi là chu cung), gồm có:'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:organ {id: 'cổ_tử_cung_organ'})
+MERGE (o1)-[r14:affects]->(o2)
+SET r14.text = 'Ở giai đoạn này, khối u đã lan xuống 2/3 trên của âm đạo nhưng chưa xâm lấn mô xung quanh cổ tử cung (còn gọi là chu cung), gồm có:'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:organ {id: 'chu_cung_organ'})
+MERGE (o1)-[r15:affects]->(o2)
+SET r15.text = 'Ở giai đoạn này, khối u đã lan xuống 2/3 trên của âm đạo nhưng chưa xâm lấn mô xung quanh cổ tử cung (còn gọi là chu cung), gồm có:'
+
+MERGE (o1:disease {id: 'giai_đoạn_iia1_disease'})
+MERGE (o2:symptom {id: 'kích_thước_u_≤_4cm_symptom'})
+MERGE (o1)-[r16:relatedTo]->(o2)
+SET r16.text = 'Giai đoạn IIA1: Kích thước u ≤ 4cm.'
+
+MERGE (o1:disease {id: 'giai_đoạn_iia2_disease'})
+MERGE (o2:symptom {id: 'kích_thước_u_&gt;_4cm_symptom'})
+MERGE (o1)-[r17:relatedTo]->(o2)
+SET r17.text = 'Giai đoạn IIA2: Kích thước u &gt; 4cm.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:organ {id: 'chu_cung_organ'})
+MERGE (o1)-[r18:affects]->(o2)
+SET r18.text = 'Ở giai đoạn này, khối u đã xâm lấn chu cung nhưng chưa lan tới thành chậu.'
+
+MERGE (o1:disease {id: 'ung_thư_cổ_tử_cung_giai_đoạn_ii_disease'})
+MERGE (o2:symptom {id: 'ra_máu_âm_đạo_bất_thường__giữa_các_kỳ_kinh__sau_khi_mãn_kinh_symptom'})
+MERGE (o1)-[r19:isSymptomOf]->(o2)
+SET r19.text = 'TS.BS Vũ Hữu Khiêm - Trưởng khoa Ung bướu, BVĐK Tâm Anh Hà Nội, cho biết, các dấu hiệu nhận biết ung thư cổ tử cung giai đoạn II gồm:'
+
+MERGE (o1:disease {id: 'ung_thư_cổ_tử_cung_giai_đoạn_ii_disease'})
+MERGE (o2:symptom {id: 'kinh_nguyệt_kéo_dài_hơn_hoặc_nhiều_hơn_bình_thường_symptom'})
+MERGE (o1)-[r20:isSymptomOf]->(o2)
+SET r20.text = 'TS.BS Vũ Hữu Khiêm - Trưởng khoa Ung bướu, BVĐK Tâm Anh Hà Nội, cho biết, các dấu hiệu nhận biết ung thư cổ tử cung giai đoạn II gồm:'
+
+MERGE (o1:disease {id: 'ung_thư_cổ_tử_cung_giai_đoạn_ii_disease'})
+MERGE (o2:symptom {id: 'đau/chảy_máu_sau_khi_quan_hệ_tình_dục_symptom'})
+MERGE (o1)-[r21:isSymptomOf]->(o2)
+SET r21.text = 'TS.BS Vũ Hữu Khiêm - Trưởng khoa Ung bướu, BVĐK Tâm Anh Hà Nội, cho biết, các dấu hiệu nhận biết ung thư cổ tử cung giai đoạn II gồm:'
+
+MERGE (o1:disease {id: 'ung_thư_cổ_tử_cung_giai_đoạn_ii_disease'})
+MERGE (o2:symptom {id: 'đau_tức_vùng_chậu_symptom'})
+MERGE (o1)-[r22:isSymptomOf]->(o2)
+SET r22.text = 'TS.BS Vũ Hữu Khiêm - Trưởng khoa Ung bướu, BVĐK Tâm Anh Hà Nội, cho biết, các dấu hiệu nhận biết ung thư cổ tử cung giai đoạn II gồm:'
+
+MERGE (o1:disease {id: 'ung_thư_cổ_tử_cung_giai_đoạn_ii_disease'})
+MERGE (o2:symptom {id: 'sự_thay_đổi_trong_dịch_tiết_âm_đạo__chẳng_hạn_như_tiết_dịch_nhiều_hơn_hoặc_dịch_tiết_có_màu_mùi_bất_thường_symptom'})
+MERGE (o1)-[r23:isSymptomOf]->(o2)
+SET r23.text = 'TS.BS Vũ Hữu Khiêm - Trưởng khoa Ung bướu, BVĐK Tâm Anh Hà Nội, cho biết, các dấu hiệu nhận biết ung thư cổ tử cung giai đoạn II gồm:'
+
+MERGE (o1:disease {id: 'ung_thư_cổ_tử_cung_giai_đoạn_ii_disease'})
+MERGE (o2:disease {id: 'giai_đoạn_bệnh_disease'})
+MERGE (o1)-[r24:relatedTo]->(o2)
+SET r24.text = 'Theo bác sĩ Khiêm, ung thư cổ tử cung giai đoạn II có tỷ lệ sống còn 5 năm là trên 60%. Ở mỗi cá nhân, tỷ lệ sống còn có thể khác nhau, điều này tùy thuộc vào nhiều yếu tố như: (2)
+Giai đoạn bệnh.'
+
+MERGE (o1:disease {id: 'ung_thư_cổ_tử_cung_giai_đoạn_ii_disease'})
+MERGE (o2:disease {id: 'loại_giải_phẫu_bệnh_(ung_thư_biểu_mô_tuyến__ung_thư_biểu_mô_vảy_&#8230;)_disease'})
+MERGE (o1)-[r25:relatedTo]->(o2)
+SET r25.text = 'Theo bác sĩ Khiêm, ung thư cổ tử cung giai đoạn II có tỷ lệ sống còn 5 năm là trên 60%. Ở mỗi cá nhân, tỷ lệ sống còn có thể khác nhau, điều này tùy thuộc vào nhiều yếu tố như: (2)
+Loại giải phẫu bệnh (ung thư biểu mô tuyến, ung thư biểu mô vảy,&#8230;).'
+
+MERGE (o1:disease {id: 'ung_thư_cổ_tử_cung_giai_đoạn_ii_disease'})
+MERGE (o2:cause {id: 'tuổi_cause'})
+MERGE (o1)-[r26:relatedTo]->(o2)
+SET r26.text = 'Theo bác sĩ Khiêm, ung thư cổ tử cung giai đoạn II có tỷ lệ sống còn 5 năm là trên 60%. Ở mỗi cá nhân, tỷ lệ sống còn có thể khác nhau, điều này tùy thuộc vào nhiều yếu tố như: (2)
+Tuổi, tình trạng sức khỏe chung.'
+
+MERGE (o1:disease {id: 'ung_thư_cổ_tử_cung_giai_đoạn_ii_disease'})
+MERGE (o2:cause {id: 'tình_trạng_sức_khỏe_chung_cause'})
+MERGE (o1)-[r27:relatedTo]->(o2)
+SET r27.text = 'Theo bác sĩ Khiêm, ung thư cổ tử cung giai đoạn II có tỷ lệ sống còn 5 năm là trên 60%. Ở mỗi cá nhân, tỷ lệ sống còn có thể khác nhau, điều này tùy thuộc vào nhiều yếu tố như: (2)
+Tuổi, tình trạng sức khỏe chung.'
+
+MERGE (o1:disease {id: 'ung_thư_cổ_tử_cung_giai_đoạn_ii_disease'})
+MERGE (o2:disease {id: 'các_vấn_đề_sức_khỏe_hoặc_các_bệnh_đi_kèm_disease'})
+MERGE (o1)-[r28:relatedTo]->(o2)
+SET r28.text = 'Theo bác sĩ Khiêm, ung thư cổ tử cung giai đoạn II có tỷ lệ sống còn 5 năm là trên 60%. Ở mỗi cá nhân, tỷ lệ sống còn có thể khác nhau, điều này tùy thuộc vào nhiều yếu tố như: (2)
+Các vấn đề sức khỏe hoặc các bệnh đi kèm, đặc biệt là tình trạng suy giảm miễn dịch hay nhiễm HIV.'
+
+MERGE (o1:disease {id: 'ung_thư_cổ_tử_cung_giai_đoạn_ii_disease'})
+MERGE (o2:disease {id: 'tình_trạng_suy_giảm_miễn_dịch_disease'})
+MERGE (o1)-[r29:relatedTo]->(o2)
+SET r29.text = 'Theo bác sĩ Khiêm, ung thư cổ tử cung giai đoạn II có tỷ lệ sống còn 5 năm là trên 60%. Ở mỗi cá nhân, tỷ lệ sống còn có thể khác nhau, điều này tùy thuộc vào nhiều yếu tố như: (2)
+Các vấn đề sức khỏe hoặc các bệnh đi kèm, đặc biệt là tình trạng suy giảm miễn dịch hay nhiễm HIV.'
+
+MERGE (o1:disease {id: 'ung_thư_cổ_tử_cung_giai_đoạn_ii_disease'})
+MERGE (o2:disease {id: 'nhiễm_hiv_disease'})
+MERGE (o1)-[r30:relatedTo]->(o2)
+SET r30.text = 'Theo bác sĩ Khiêm, ung thư cổ tử cung giai đoạn II có tỷ lệ sống còn 5 năm là trên 60%. Ở mỗi cá nhân, tỷ lệ sống còn có thể khác nhau, điều này tùy thuộc vào nhiều yếu tố như: (2)
+Các vấn đề sức khỏe hoặc các bệnh đi kèm, đặc biệt là tình trạng suy giảm miễn dịch hay nhiễm HIV.'
+
+MERGE (o1:disease {id: 'ung_thư_cổ_tử_cung_giai_đoạn_ii_disease'})
+MERGE (o2:disease {id: 'bệnh_mới_được_chẩn_đoán_disease'})
+MERGE (o1)-[r31:relatedTo]->(o2)
+SET r31.text = 'Theo bác sĩ Khiêm, ung thư cổ tử cung giai đoạn II có tỷ lệ sống còn 5 năm là trên 60%. Ở mỗi cá nhân, tỷ lệ sống còn có thể khác nhau, điều này tùy thuộc vào nhiều yếu tố như: (2)
+Bệnh mới được chẩn đoán hay bệnh tái phát.'
+
+MERGE (o1:disease {id: 'ung_thư_cổ_tử_cung_giai_đoạn_ii_disease'})
+MERGE (o2:disease {id: 'bệnh_tái_phát_disease'})
+MERGE (o1)-[r32:relatedTo]->(o2)
+SET r32.text = 'Theo bác sĩ Khiêm, ung thư cổ tử cung giai đoạn II có tỷ lệ sống còn 5 năm là trên 60%. Ở mỗi cá nhân, tỷ lệ sống còn có thể khác nhau, điều này tùy thuộc vào nhiều yếu tố như: (2)
+Bệnh mới được chẩn đoán hay bệnh tái phát.'
+
+MERGE (o1:disease {id: 'ung_thư_cổ_tử_cung_giai_đoạn_ii_disease'})
+MERGE (o2:treatment {id: 'phương_pháp_điều_trị_treatment'})
+MERGE (o1)-[r33:treatedBy]->(o2)
+SET r33.text = 'Theo bác sĩ Khiêm, ung thư cổ tử cung giai đoạn II có tỷ lệ sống còn 5 năm là trên 60%. Ở mỗi cá nhân, tỷ lệ sống còn có thể khác nhau, điều này tùy thuộc vào nhiều yếu tố như: (2)
+Phương pháp điều trị.'
+
+MERGE (o1:disease {id: 'ung_thư_cổ_tử_cung_giai_đoạn_ii_disease'})
+MERGE (o2:cause {id: 'sự_đáp_ứng_của_cơ_thể_với_các_phương_pháp_điều_trị_cause'})
+MERGE (o1)-[r34:relatedTo]->(o2)
+SET r34.text = 'Theo bác sĩ Khiêm, ung thư cổ tử cung giai đoạn II có tỷ lệ sống còn 5 năm là trên 60%. Ở mỗi cá nhân, tỷ lệ sống còn có thể khác nhau, điều này tùy thuộc vào nhiều yếu tố như: (2)
+Sự đáp ứng của cơ thể với các phương pháp điều trị.'
+
+MERGE (o1:disease {id: 'ung_thư_cổ_tử_cung_giai_đoạn_ii_disease'})
+MERGE (o2:test {id: 'thăm_khám_test'})
+MERGE (o1)-[r35:diagnosedBy]->(o2)
+SET r35.text = 'Để xác định ung thư cổ tử cung giai đoạn II, khi thăm khám, bác sĩ sẽ hỏi về tiền sử bệnh, khám lâm sàng và đề nghị làm kiểm tra cận lâm sàng.'
+
+MERGE (o1:disease {id: 'ung_thư_cổ_tử_cung_giai_đoạn_ii_disease'})
+MERGE (o2:test {id: 'kiểm_tra_cận_lâm_sàng_test'})
+MERGE (o1)-[r36:diagnosedBy]->(o2)
+SET r36.text = 'Để xác định ung thư cổ tử cung giai đoạn II, khi thăm khám, bác sĩ sẽ hỏi về tiền sử bệnh, khám lâm sàng và đề nghị làm kiểm tra cận lâm sàng.'
+
+MERGE (o1:disease {id: 'ung_thư_cổ_tử_cung_disease'})
+MERGE (o2:test {id: 'soi_cổ_tử_cung_test'})
+MERGE (o1)-[r37:diagnosedBy]->(o2)
+SET r37.text = 'Khám, tầm soát ung thư cổ tử cung giúp phát hiện sớm và điều trị kịp thời Các phương pháp được sử dụng trong chẩn đoán ung thư cổ tử cung bao gồm: (3)
+Soi cổ tử cung là phương pháp giúp quan sát hình ảnh tổn thương tại cổ tử cung.'
+
+MERGE (o1:disease {id: 'ung_thư_cổ_tử_cung_disease'})
+MERGE (o2:test {id: 'sinh_thiết_cổ_tử_cung_test'})
+MERGE (o1)-[r38:diagnosedBy]->(o2)
+SET r38.text = 'Khám, tầm soát ung thư cổ tử cung giúp phát hiện sớm và điều trị kịp thời Các phương pháp được sử dụng trong chẩn đoán ung thư cổ tử cung bao gồm: (3)
+Sinh thiết cổ tử cung là lấy một mẫu mô nghi ngờ tổn thương ác tính sau đó gửi xét nghiệm mô bệnh học.'
+
+MERGE (o1:disease {id: 'ung_thư_cổ_tử_cung_disease'})
+MERGE (o2:test {id: 'chụp_cộng_hưởng_từ_(mri)_vùng_tiểu_khung_test'})
+MERGE (o1)-[r39:diagnosedBy]->(o2)
+SET r39.text = 'Khám, tầm soát ung thư cổ tử cung giúp phát hiện sớm và điều trị kịp thời Các phương pháp được sử dụng trong chẩn đoán ung thư cổ tử cung bao gồm: (3)
+Chụp cộng hưởng từ (MRI) vùng tiểu khung Trong ung thư cổ tử cung, chụp MRI giúp quan sát hình ảnh khối u và đánh giá tình trạng xâm lấn.'
+
+MERGE (o1:disease {id: 'ung_thư_cổ_tử_cung_disease'})
+MERGE (o2:test {id: 'nội_soi_bàng_quang_test'})
+MERGE (o1)-[r40:diagnosedBy]->(o2)
+SET r40.text = 'Khám, tầm soát ung thư cổ tử cung giúp phát hiện sớm và điều trị kịp thời Các phương pháp được sử dụng trong chẩn đoán ung thư cổ tử cung bao gồm: (3)
+Nội soi bàng quang, nội soi trực tràng Kỹ thuật này giúp quan sát bên trong bàng quang, trực tràng tìm các bất thường, đánh giá tình trạng xâm lấn của khối u.'
+
+MERGE (o1:disease {id: 'ung_thư_cổ_tử_cung_disease'})
+MERGE (o2:test {id: 'nội_soi_trực_tràng_test'})
+MERGE (o1)-[r41:diagnosedBy]->(o2)
+SET r41.text = 'Khám, tầm soát ung thư cổ tử cung giúp phát hiện sớm và điều trị kịp thời Các phương pháp được sử dụng trong chẩn đoán ung thư cổ tử cung bao gồm: (3)
+Nội soi bàng quang, nội soi trực tràng Kỹ thuật này giúp quan sát bên trong bàng quang, trực tràng tìm các bất thường, đánh giá tình trạng xâm lấn của khối u.'
+
+MERGE (o1:disease {id: 'ung_thư_cổ_tử_cung_disease'})
+MERGE (o2:test {id: 'chụp_cắt_lớp_vi_tính_ngực-bụng-chậu_test'})
+MERGE (o1)-[r42:diagnosedBy]->(o2)
+SET r42.text = 'Khám, tầm soát ung thư cổ tử cung giúp phát hiện sớm và điều trị kịp thời Các phương pháp được sử dụng trong chẩn đoán ung thư cổ tử cung bao gồm: (3)
+Chụp cắt lớp vi tính ngực-bụng-chậu hoặc PET/CT:
+Phương pháp này
+được sử dụng trong đánh giá tình trạng di căn xa của bệnh (như di căn phổi, di căn xương,..).'
+
+MERGE (o1:disease {id: 'ung_thư_cổ_tử_cung_disease'})
+MERGE (o2:test {id: 'pet/ct_test'})
+MERGE (o1)-[r43:diagnosedBy]->(o2)
+SET r43.text = 'Khám, tầm soát ung thư cổ tử cung giúp phát hiện sớm và điều trị kịp thời Các phương pháp được sử dụng trong chẩn đoán ung thư cổ tử cung bao gồm: (3)
+Chụp cắt lớp vi tính ngực-bụng-chậu hoặc PET/CT:
+Phương pháp này
+được sử dụng trong đánh giá tình trạng di căn xa của bệnh (như di căn phổi, di căn xương,..).'
+
+MERGE (o1:disease {id: 'ung_thư_cổ_tử_cung_disease'})
+MERGE (o2:disease {id: 'di_căn_phổi_disease'})
+MERGE (o1)-[r44:relatedTo]->(o2)
+SET r44.text = 'Khám, tầm soát ung thư cổ tử cung giúp phát hiện sớm và điều trị kịp thời Các phương pháp được sử dụng trong chẩn đoán ung thư cổ tử cung bao gồm: (3)
+Chụp cắt lớp vi tính ngực-bụng-chậu hoặc PET/CT:
+Phương pháp này
+được sử dụng trong đánh giá tình trạng di căn xa của bệnh (như di căn phổi, di căn xương,..).'
+
+MERGE (o1:disease {id: 'ung_thư_cổ_tử_cung_disease'})
+MERGE (o2:disease {id: 'di_căn_xương_disease'})
+MERGE (o1)-[r45:relatedTo]->(o2)
+SET r45.text = 'Khám, tầm soát ung thư cổ tử cung giúp phát hiện sớm và điều trị kịp thời Các phương pháp được sử dụng trong chẩn đoán ung thư cổ tử cung bao gồm: (3)
+Chụp cắt lớp vi tính ngực-bụng-chậu hoặc PET/CT:
+Phương pháp này
+được sử dụng trong đánh giá tình trạng di căn xa của bệnh (như di căn phổi, di căn xương,..).'
+
+MERGE (o1:disease {id: 'ung_thư_cổ_tử_cung_disease'})
+MERGE (o2:test {id: 'tổng_phân_tích_tế_bào_máu_test'})
+MERGE (o1)-[r46:diagnosedBy]->(o2)
+SET r46.text = 'Khám, tầm soát ung thư cổ tử cung giúp phát hiện sớm và điều trị kịp thời Các phương pháp được sử dụng trong chẩn đoán ung thư cổ tử cung bao gồm: (3)
+Tổng phân tích tế bào máu đánh giá các thành phần như số lượng hồng cầu, bạch cầu, tiểu cầu.'
+
+MERGE (o1:test {id: 'tổng_phân_tích_tế_bào_máu_test'})
+MERGE (o2:cause {id: 'số_lượng_hồng_cầu_cause'})
+MERGE (o1)-[r47:relatedTo]->(o2)
+SET r47.text = 'Khám, tầm soát ung thư cổ tử cung giúp phát hiện sớm và điều trị kịp thời Các phương pháp được sử dụng trong chẩn đoán ung thư cổ tử cung bao gồm: (3)
+Tổng phân tích tế bào máu đánh giá các thành phần như số lượng hồng cầu, bạch cầu, tiểu cầu.'
+
+MERGE (o1:test {id: 'tổng_phân_tích_tế_bào_máu_test'})
+MERGE (o2:cause {id: 'bạch_cầu_cause'})
+MERGE (o1)-[r48:relatedTo]->(o2)
+SET r48.text = 'Khám, tầm soát ung thư cổ tử cung giúp phát hiện sớm và điều trị kịp thời Các phương pháp được sử dụng trong chẩn đoán ung thư cổ tử cung bao gồm: (3)
+Tổng phân tích tế bào máu đánh giá các thành phần như số lượng hồng cầu, bạch cầu, tiểu cầu.'
+
+MERGE (o1:test {id: 'tổng_phân_tích_tế_bào_máu_test'})
+MERGE (o2:cause {id: 'tiểu_cầu_cause'})
+MERGE (o1)-[r49:relatedTo]->(o2)
+SET r49.text = 'Khám, tầm soát ung thư cổ tử cung giúp phát hiện sớm và điều trị kịp thời Các phương pháp được sử dụng trong chẩn đoán ung thư cổ tử cung bao gồm: (3)
+Tổng phân tích tế bào máu đánh giá các thành phần như số lượng hồng cầu, bạch cầu, tiểu cầu.'
+
+MERGE (o1:disease {id: 'ung_thư_cổ_tử_cung_disease'})
+MERGE (o2:test {id: 'xét_nghiệm_sinh_hóa_máu_test'})
+MERGE (o1)-[r50:diagnosedBy]->(o2)
+SET r50.text = 'Khám, tầm soát ung thư cổ tử cung giúp phát hiện sớm và điều trị kịp thời Các phương pháp được sử dụng trong chẩn đoán ung thư cổ tử cung bao gồm: (3)
+Xét nghiệm sinh hóa máu đánh giá tình trạng cơ thể, chức năng cơ quan (như urê, creatinin đánh giá chức năng của thận; chức năng của gan như AST, ALT, bilirubin,&#8230;).'
+
+MERGE (o1:test {id: 'xét_nghiệm_sinh_hóa_máu_test'})
+MERGE (o2:organ {id: 'chức_năng_của_thận_organ'})
+MERGE (o1)-[r51:relatedTo]->(o2)
+SET r51.text = 'Khám, tầm soát ung thư cổ tử cung giúp phát hiện sớm và điều trị kịp thời Các phương pháp được sử dụng trong chẩn đoán ung thư cổ tử cung bao gồm: (3)
+Xét nghiệm sinh hóa máu đánh giá tình trạng cơ thể, chức năng cơ quan (như urê, creatinin đánh giá chức năng của thận; chức năng của gan như AST, ALT, bilirubin,&#8230;).'
+
+MERGE (o1:test {id: 'xét_nghiệm_sinh_hóa_máu_test'})
+MERGE (o2:organ {id: 'chức_năng_của_gan_organ'})
+MERGE (o1)-[r52:relatedTo]->(o2)
+SET r52.text = 'Khám, tầm soát ung thư cổ tử cung giúp phát hiện sớm và điều trị kịp thời Các phương pháp được sử dụng trong chẩn đoán ung thư cổ tử cung bao gồm: (3)
+Xét nghiệm sinh hóa máu đánh giá tình trạng cơ thể, chức năng cơ quan (như urê, creatinin đánh giá chức năng của thận; chức năng của gan như AST, ALT, bilirubin,&#8230;).'
+
+MERGE (o1:test {id: 'xét_nghiệm_sinh_hóa_máu_test'})
+MERGE (o2:cause {id: 'urê_cause'})
+MERGE (o1)-[r53:relatedTo]->(o2)
+SET r53.text = 'Khám, tầm soát ung thư cổ tử cung giúp phát hiện sớm và điều trị kịp thời Các phương pháp được sử dụng trong chẩn đoán ung thư cổ tử cung bao gồm: (3)
+Xét nghiệm sinh hóa máu đánh giá tình trạng cơ thể, chức năng cơ quan (như urê, creatinin đánh giá chức năng của thận; chức năng của gan như AST, ALT, bilirubin,&#8230;).'
+
+MERGE (o1:test {id: 'xét_nghiệm_sinh_hóa_máu_test'})
+MERGE (o2:cause {id: 'creatinin_cause'})
+MERGE (o1)-[r54:relatedTo]->(o2)
+SET r54.text = 'Khám, tầm soát ung thư cổ tử cung giúp phát hiện sớm và điều trị kịp thời Các phương pháp được sử dụng trong chẩn đoán ung thư cổ tử cung bao gồm: (3)
+Xét nghiệm sinh hóa máu đánh giá tình trạng cơ thể, chức năng cơ quan (như urê, creatinin đánh giá chức năng của thận; chức năng của gan như AST, ALT, bilirubin,&#8230;).'
+
+MERGE (o1:test {id: 'xét_nghiệm_sinh_hóa_máu_test'})
+MERGE (o2:cause {id: 'ast_cause'})
+MERGE (o1)-[r55:relatedTo]->(o2)
+SET r55.text = 'Khám, tầm soát ung thư cổ tử cung giúp phát hiện sớm và điều trị kịp thời Các phương pháp được sử dụng trong chẩn đoán ung thư cổ tử cung bao gồm: (3)
+Xét nghiệm sinh hóa máu đánh giá tình trạng cơ thể, chức năng cơ quan (như urê, creatinin đánh giá chức năng của thận; chức năng của gan như AST, ALT, bilirubin,&#8230;).'
+
+MERGE (o1:test {id: 'xét_nghiệm_sinh_hóa_máu_test'})
+MERGE (o2:cause {id: 'alt_cause'})
+MERGE (o1)-[r56:relatedTo]->(o2)
+SET r56.text = 'Khám, tầm soát ung thư cổ tử cung giúp phát hiện sớm và điều trị kịp thời Các phương pháp được sử dụng trong chẩn đoán ung thư cổ tử cung bao gồm: (3)
+Xét nghiệm sinh hóa máu đánh giá tình trạng cơ thể, chức năng cơ quan (như urê, creatinin đánh giá chức năng của thận; chức năng của gan như AST, ALT, bilirubin,&#8230;).'
+
+MERGE (o1:treatment {id: 'hóa_-_xạ_trị_đồng_thời_treatment'})
+MERGE (o2:disease {id: 'ung_thư_cổ_tử_cung_giai_đoạn_ii_disease'})
+MERGE (o1)-[r57:treatedBy]->(o2)
+SET r57.text = 'Bác sĩ Khiêm cho biết, phương pháp điều trị ung thư cổ tử cung giai đoạn II thường được lựa chọn bao gồm: (4)
+Hóa - xạ trị đồng thời (ưu tiên).'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_treatment'})
+MERGE (o2:disease {id: 'ung_thư_cổ_tử_cung_giai_đoạn_ii_disease'})
+MERGE (o1)-[r58:treatedBy]->(o2)
+SET r58.text = 'Bác sĩ Khiêm cho biết, phương pháp điều trị ung thư cổ tử cung giai đoạn II thường được lựa chọn bao gồm: (4)
+Hóa - xạ trị đồng thời (ưu tiên).
+Phẫu thuật.'
+
+MERGE (o1:treatment {id: 'xạ_trị_chiếu_ngoài_treatment'})
+MERGE (o2:disease {id: 'ung_thư_cổ_tử_cung_disease'})
+MERGE (o1)-[r59:treatedBy]->(o2)
+SET r59.text = 'Đây là phương pháp thường được ưu tiên lựa chọn trong điều trị ung thư cổ tử cung giai đoạn II. Xạ trị trong ung thư cổ tử cung gồm có xạ trị chiếu ngoài (EBRT) và xạ trị áp sát (Brachytherapy). Bác sĩ thường phối hợp 2 phương pháp này với nhau:'
+
+MERGE (o1:treatment {id: 'xạ_trị_áp_sát_treatment'})
+MERGE (o2:disease {id: 'ung_thư_cổ_tử_cung_disease'})
+MERGE (o1)-[r60:treatedBy]->(o2)
+SET r60.text = 'Đây là phương pháp thường được ưu tiên lựa chọn trong điều trị ung thư cổ tử cung giai đoạn II. Xạ trị trong ung thư cổ tử cung gồm có xạ trị chiếu ngoài (EBRT) và xạ trị áp sát (Brachytherapy). Bác sĩ thường phối hợp 2 phương pháp này với nhau:'
+
+MERGE (o1:treatment {id: 'xạ_trị_điều_biến_liều_(imrt)_treatment'})
+MERGE (o2:disease {id: 'ung_thư_cổ_tử_cung_disease'})
+MERGE (o1)-[r61:treatedBy]->(o2)
+SET r61.text = 'Xạ trị chiếu ngoài: Là phương pháp phát ra chùm tia phóng xạ từ nguồn bên ngoài cơ thể (máy phát tia xạ) đi đến khối bướu. Xạ trị điều biến liều (IMRT) là một kỹ thuật trong xạ trị chiếu ngoài thường được sử dụng cho điều trị ung thư cổ tử cung đem hiệu quả điều trị tốt cũng như làm giảm các tác dụng không mong muốn.'
+
+MERGE (o1:treatment {id: 'xạ_trị_áp_sát_treatment'})
+MERGE (o2:disease {id: 'ung_thư_cổ_tử_cung_disease'})
+MERGE (o1)-[r62:treatedBy]->(o2)
+SET r62.text = 'Xạ trị áp sát: Còn gọi là “xạ trị chiếu trong”, xạ trị sử dụng 1 nguồn phóng xạ đặt trực tiếp vào hoặc gần khối u.'
+
+MERGE (o1:treatment {id: 'cisplatin_(hoặc_carboplatin)_treatment'})
+MERGE (o2:disease {id: 'ung_thư_cổ_tử_cung_disease'})
+MERGE (o1)-[r63:treatedBy]->(o2)
+SET r63.text = 'Các thuốc hóa chất được dùng kết hợp với xạ trị nhằm làm tăng hiệu quả điều trị bệnh. Cisplatin (hoặc carboplatin) thường được lựa chọn.'
+
+MERGE (o1:treatment {id: 'thuốc_hóa_chất_treatment'})
+MERGE (o2:disease {id: 'ung_thư_cổ_tử_cung_disease'})
+MERGE (o1)-[r64:treatedBy]->(o2)
+SET r64.text = 'Các thuốc hóa chất được dùng kết hợp với xạ trị nhằm làm tăng hiệu quả điều trị bệnh. Cisplatin (hoặc carboplatin) thường được lựa chọn.'

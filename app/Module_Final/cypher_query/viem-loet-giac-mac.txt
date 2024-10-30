@@ -1,0 +1,430 @@
+
+MERGE (o1:organ {id: 'giác_mạc_organ'})
+MERGE (o2:organ {id: 'mắt_organ'})
+MERGE (o1)-[r0:locatedIn]->(o2)
+SET r0.text = 'Giác mạc là lớp trong suốt bên ngoài, phía trước mắt và cũng là phần dễ bị tổn thương nhất ở vùng mắt.'
+
+MERGE (o1:organ {id: 'giác_mạc_organ'})
+MERGE (o2:organ {id: 'vùng_mắt_organ'})
+MERGE (o1)-[r1:relatedTo]->(o2)
+SET r1.text = 'Giác mạc là lớp trong suốt bên ngoài, phía trước mắt và cũng là phần dễ bị tổn thương nhất ở vùng mắt.'
+
+MERGE (o1:disease {id: 'viêm_loét_giác_mạc_disease'})
+MERGE (o2:symptom {id: 'vết_xước_hay_rách_ở_giác_mạc_symptom'})
+MERGE (o1)-[r2:causedBy]->(o2)
+SET r2.text = 'Viêm loét giác mạc xảy ra khi có những tổn thương như vết xước hay rách ở giác mạc do tiếp xúc với bụi, đất, cát…'
+
+MERGE (o1:disease {id: 'viêm_loét_giác_mạc_disease'})
+MERGE (o2:cause {id: 'tiếp_xúc_với_bụi__đất__cát_cause'})
+MERGE (o1)-[r3:causedBy]->(o2)
+SET r3.text = 'Viêm loét giác mạc xảy ra khi có những tổn thương như vết xước hay rách ở giác mạc do tiếp xúc với bụi, đất, cát…'
+
+MERGE (o1:disease {id: 'viêm_loét_giác_mạc_disease'})
+MERGE (o2:organ {id: 'mắt_organ'})
+MERGE (o1)-[r4:affects]->(o2)
+SET r4.text = 'Tình trạng viêm loét giác mạc xảy ra lâu ngày sẽ gây những biến chứng nặng nề cho mắt.'
+
+MERGE (o1:disease {id: 'loét_giác_mạc_disease'})
+MERGE (o2:disease {id: 'bệnh_nhiễm_trùng_mắt_disease'})
+MERGE (o1)-[r5:isSymptomOf]->(o2)
+SET r5.text = 'Loét giác mạc là một bệnh nhiễm trùng mắt gây ra vết loét hở trên giác mạc.'
+
+MERGE (o1:disease {id: 'loét_giác_mạc_disease'})
+MERGE (o2:organ {id: 'giác_mạc_organ'})
+MERGE (o1)-[r6:affects]->(o2)
+SET r6.text = 'Loét giác mạc là một bệnh nhiễm trùng mắt gây ra vết loét hở trên giác mạc.'
+
+MERGE (o1:symptom {id: 'biến_chứng_symptom'})
+MERGE (o2:disease {id: 'trường_hợp_bệnh_disease'})
+MERGE (o1)-[r7:relatedTo]->(o2)
+SET r7.text = 'Các biểu hiện và biến chứng thay đổi tùy trường hợp bệnh và tác nhân gây bệnh.'
+
+MERGE (o1:symptom {id: 'biến_chứng_symptom'})
+MERGE (o2:cause {id: 'tác_nhân_gây_bệnh_cause'})
+MERGE (o1)-[r8:relatedTo]->(o2)
+SET r8.text = 'Các biểu hiện và biến chứng thay đổi tùy trường hợp bệnh và tác nhân gây bệnh.'
+
+MERGE (o1:cause {id: 'tiếp_xúc_tưởng_nhẹ_từ_bụi__đất__dụi_mắt_cause'})
+MERGE (o2:disease {id: 'viêm_loét_giác_mạc_disease'})
+MERGE (o1)-[r9:causes]->(o2)
+SET r9.text = 'Những tiếp xúc tưởng nhẹ từ bụi, đất, dụi mắt… lại là nguyên nhân gây ra tình trạng viêm loét giác mạc'
+
+MERGE (o1:disease {id: 'viêm_loét_giác_mạc_disease'})
+MERGE (o2:cause {id: 'nhiễm_vi_khuẩn__nấm__vi_rút_hoặc_ký_sinh_trùng_cause'})
+MERGE (o1)-[r10:causedBy]->(o2)
+SET r10.text = 'Viêm loét giác mạc có thể do nhiễm vi khuẩn, nấm, vi rút hoặc ký sinh trùng như Acanthamoeba (sống trong nước bị ô nhiễm).'
+
+MERGE (o1:cause {id: 'acanthamoeba_cause'})
+MERGE (o2:cause {id: 'nước_bị_ô_nhiễm_cause'})
+MERGE (o1)-[r11:relatedTo]->(o2)
+SET r11.text = 'Viêm loét giác mạc có thể do nhiễm vi khuẩn, nấm, vi rút hoặc ký sinh trùng như Acanthamoeba (sống trong nước bị ô nhiễm).'
+
+MERGE (o1:disease {id: 'loét_disease'})
+MERGE (o2:cause {id: 'chấn_thương_giác_mạc_cause'})
+MERGE (o1)-[r12:causedBy]->(o2)
+SET r12.text = 'Loét có thể bắt đầu với chấn thương giác mạc, chẳng hạn như khô mắt nghiêm trọng, vật lạ làm trầy xước, xâm nhập/ đọng lại trong mắt hoặc nếu mắt bị kích ứng bởi kính áp tròng, đặc biệt là đeo kính áp tròng trong lúc ngủ hoặc không được khử trùng đầy đủ.'
+
+MERGE (o1:symptom {id: 'khô_mắt_nghiêm_trọng_symptom'})
+MERGE (o2:cause {id: 'chấn_thương_giác_mạc_cause'})
+MERGE (o1)-[r13:causedBy]->(o2)
+SET r13.text = 'Loét có thể bắt đầu với chấn thương giác mạc, chẳng hạn như khô mắt nghiêm trọng, vật lạ làm trầy xước, xâm nhập/ đọng lại trong mắt hoặc nếu mắt bị kích ứng bởi kính áp tròng, đặc biệt là đeo kính áp tròng trong lúc ngủ hoặc không được khử trùng đầy đủ.'
+
+MERGE (o1:cause {id: 'vật_lạ_làm_trầy_xước__xâm_nhập/_đọng_lại_trong_mắt_cause'})
+MERGE (o2:cause {id: 'chấn_thương_giác_mạc_cause'})
+MERGE (o1)-[r14:causedBy]->(o2)
+SET r14.text = 'Loét có thể bắt đầu với chấn thương giác mạc, chẳng hạn như khô mắt nghiêm trọng, vật lạ làm trầy xước, xâm nhập/ đọng lại trong mắt hoặc nếu mắt bị kích ứng bởi kính áp tròng, đặc biệt là đeo kính áp tròng trong lúc ngủ hoặc không được khử trùng đầy đủ.'
+
+MERGE (o1:treatment {id: 'kính_áp_tròng_treatment'})
+MERGE (o2:symptom {id: 'kích_ứng_mắt_symptom'})
+MERGE (o1)-[r15:aggravatedBy]->(o2)
+SET r15.text = 'Loét có thể bắt đầu với chấn thương giác mạc, chẳng hạn như khô mắt nghiêm trọng, vật lạ làm trầy xước, xâm nhập/ đọng lại trong mắt hoặc nếu mắt bị kích ứng bởi kính áp tròng, đặc biệt là đeo kính áp tròng trong lúc ngủ hoặc không được khử trùng đầy đủ.'
+
+MERGE (o1:lifestyle {id: 'đeo_kính_áp_tròng_trong_lúc_ngủ_lifestyle'})
+MERGE (o2:symptom {id: 'kích_ứng_mắt_symptom'})
+MERGE (o1)-[r16:aggravatedBy]->(o2)
+SET r16.text = 'Loét có thể bắt đầu với chấn thương giác mạc, chẳng hạn như khô mắt nghiêm trọng, vật lạ làm trầy xước, xâm nhập/ đọng lại trong mắt hoặc nếu mắt bị kích ứng bởi kính áp tròng, đặc biệt là đeo kính áp tròng trong lúc ngủ hoặc không được khử trùng đầy đủ.'
+
+MERGE (o1:lifestyle {id: 'không_được_khử_trùng_đầy_đủ_lifestyle'})
+MERGE (o2:symptom {id: 'kích_ứng_mắt_symptom'})
+MERGE (o1)-[r17:aggravatedBy]->(o2)
+SET r17.text = 'Loét có thể bắt đầu với chấn thương giác mạc, chẳng hạn như khô mắt nghiêm trọng, vật lạ làm trầy xước, xâm nhập/ đọng lại trong mắt hoặc nếu mắt bị kích ứng bởi kính áp tròng, đặc biệt là đeo kính áp tròng trong lúc ngủ hoặc không được khử trùng đầy đủ.'
+
+MERGE (o1:disease {id: 'loét_giác_mạc_do_virus_disease'})
+MERGE (o2:cause {id: 'herpesvirus_cause'})
+MERGE (o1)-[r18:causedBy]->(o2)
+SET r18.text = 'Loét giác mạc do virus (thường do herpesvirus) có thể tái phát do căng thẳng về thể chất hoặc có thể tái phát tự phát.'
+
+MERGE (o1:disease {id: 'loét_giác_mạc_do_virus_disease'})
+MERGE (o2:cause {id: 'căng_thẳng_về_thể_chất_cause'})
+MERGE (o1)-[r19:aggravatedBy]->(o2)
+SET r19.text = 'Loét giác mạc do virus (thường do herpesvirus) có thể tái phát do căng thẳng về thể chất hoặc có thể tái phát tự phát.'
+
+MERGE (o1:cause {id: 'sự_thiếu_hụt_vitamin_a_và_protein_cause'})
+MERGE (o2:disease {id: 'vết_loét_giác_mạc_disease'})
+MERGE (o1)-[r20:causes]->(o2)
+SET r20.text = 'Sự thiếu hụt vitamin A và protein có thể dẫn đến hình thành vết loét giác mạc.'
+
+MERGE (o1:cause {id: 'mí_mắt_không_khép_lại_đúng_cách_cause'})
+MERGE (o2:symptom {id: 'giác_mạc_bị_khô_và_kích_ứng_symptom'})
+MERGE (o1)-[r21:causes]->(o2)
+SET r21.text = 'Khi mí mắt không khép lại đúng cách, giác mạc có thể bị khô và kích ứng. Loại kích ứng này có thể dẫn đến thương tích và phát triển thành vết loét giác mạc.'
+
+MERGE (o1:symptom {id: 'giác_mạc_bị_khô_và_kích_ứng_symptom'})
+MERGE (o2:cause {id: 'thương_tích_cause'})
+MERGE (o1)-[r22:causes]->(o2)
+SET r22.text = 'Khi mí mắt không khép lại đúng cách, giác mạc có thể bị khô và kích ứng. Loại kích ứng này có thể dẫn đến thương tích và phát triển thành vết loét giác mạc.'
+
+MERGE (o1:cause {id: 'thương_tích_cause'})
+MERGE (o2:disease {id: 'vết_loét_giác_mạc_disease'})
+MERGE (o1)-[r23:causes]->(o2)
+SET r23.text = 'Khi mí mắt không khép lại đúng cách, giác mạc có thể bị khô và kích ứng. Loại kích ứng này có thể dẫn đến thương tích và phát triển thành vết loét giác mạc.'
+
+MERGE (o1:symptom {id: 'loại_kích_ứng_này_symptom'})
+MERGE (o2:disease {id: 'vết_loét_giác_mạc_disease'})
+MERGE (o1)-[r24:causes]->(o2)
+SET r24.text = 'Loại kích ứng này có thể dẫn đến thương tích và phát triển thành vết loét giác mạc.'
+
+MERGE (o1:disease {id: 'loét_giác_mạc_disease'})
+MERGE (o2:cause {id: 'lông_mi_mọc_vào_trong__mi_mắt_lật_vào_trong_(quặm__lông_xiêu)_hoặc_viêm_bờ_mi_cause'})
+MERGE (o1)-[r25:causedBy]->(o2)
+SET r25.text = 'Loét giác mạc cũng có thể là do lông mi mọc vào trong, mi mắt lật vào trong (quặm, lông xiêu) hoặc viêm bờ mi.'
+
+MERGE (o1:symptom {id: 'đỏ_symptom'})
+MERGE (o2:disease {id: 'viêm_loét_giác_mạc_disease'})
+MERGE (o1)-[r26:isSymptomOf]->(o2)
+SET r26.text = 'Viêm loét giác mạc gây đỏ, đau, cảm giác như có dị vật trong mắt, đau nhức, nhạy cảm với ánh sáng chói và tăng tiết nước mắt.'
+
+MERGE (o1:symptom {id: 'đau_symptom'})
+MERGE (o2:disease {id: 'viêm_loét_giác_mạc_disease'})
+MERGE (o1)-[r27:isSymptomOf]->(o2)
+SET r27.text = 'Viêm loét giác mạc gây đỏ, đau, cảm giác như có dị vật trong mắt, đau nhức, nhạy cảm với ánh sáng chói và tăng tiết nước mắt.'
+
+MERGE (o1:symptom {id: 'cảm_giác_như_có_dị_vật_trong_mắt_symptom'})
+MERGE (o2:disease {id: 'viêm_loét_giác_mạc_disease'})
+MERGE (o1)-[r28:isSymptomOf]->(o2)
+SET r28.text = 'Viêm loét giác mạc gây đỏ, đau, cảm giác như có dị vật trong mắt, đau nhức, nhạy cảm với ánh sáng chói và tăng tiết nước mắt.'
+
+MERGE (o1:symptom {id: 'đau_nhức_symptom'})
+MERGE (o2:disease {id: 'viêm_loét_giác_mạc_disease'})
+MERGE (o1)-[r29:isSymptomOf]->(o2)
+SET r29.text = 'Viêm loét giác mạc gây đỏ, đau, cảm giác như có dị vật trong mắt, đau nhức, nhạy cảm với ánh sáng chói và tăng tiết nước mắt.'
+
+MERGE (o1:symptom {id: 'nhạy_cảm_với_ánh_sáng_chói_symptom'})
+MERGE (o2:disease {id: 'viêm_loét_giác_mạc_disease'})
+MERGE (o1)-[r30:isSymptomOf]->(o2)
+SET r30.text = 'Viêm loét giác mạc gây đỏ, đau, cảm giác như có dị vật trong mắt, đau nhức, nhạy cảm với ánh sáng chói và tăng tiết nước mắt.'
+
+MERGE (o1:symptom {id: 'tăng_tiết_nước_mắt_symptom'})
+MERGE (o2:disease {id: 'viêm_loét_giác_mạc_disease'})
+MERGE (o1)-[r31:isSymptomOf]->(o2)
+SET r31.text = 'Viêm loét giác mạc gây đỏ, đau, cảm giác như có dị vật trong mắt, đau nhức, nhạy cảm với ánh sáng chói và tăng tiết nước mắt.'
+
+MERGE (o1:symptom {id: 'vết_loét_symptom'})
+MERGE (o2:disease {id: 'viêm_loét_giác_mạc_disease'})
+MERGE (o1)-[r32:isSymptomOf]->(o2)
+SET r32.text = 'Vết loét thường xuất hiện dưới dạng một đốm trắng hoặc mờ và xám trên giác mạc.'
+
+MERGE (o1:symptom {id: 'đốm_trắng_symptom'})
+MERGE (o2:disease {id: 'viêm_loét_giác_mạc_disease'})
+MERGE (o1)-[r33:isSymptomOf]->(o2)
+SET r33.text = 'Vết loét thường xuất hiện dưới dạng một đốm trắng hoặc mờ và xám trên giác mạc.'
+
+MERGE (o1:symptom {id: 'mờ_symptom'})
+MERGE (o2:disease {id: 'viêm_loét_giác_mạc_disease'})
+MERGE (o1)-[r34:isSymptomOf]->(o2)
+SET r34.text = 'Vết loét thường xuất hiện dưới dạng một đốm trắng hoặc mờ và xám trên giác mạc.'
+
+MERGE (o1:symptom {id: 'xám_symptom'})
+MERGE (o2:disease {id: 'viêm_loét_giác_mạc_disease'})
+MERGE (o1)-[r35:isSymptomOf]->(o2)
+SET r35.text = 'Vết loét thường xuất hiện dưới dạng một đốm trắng hoặc mờ và xám trên giác mạc.'
+
+MERGE (o1:symptom {id: 'vết_loét_symptom'})
+MERGE (o2:organ {id: 'giác_mạc_organ'})
+MERGE (o1)-[r36:locatedIn]->(o2)
+SET r36.text = 'Vết loét thường xuất hiện dưới dạng một đốm trắng hoặc mờ và xám trên giác mạc. Đôi khi, vết loét phát triển trên toàn bộ giác mạc và có thể ăn sâu.'
+
+MERGE (o1:symptom {id: 'vết_loét_symptom'})
+MERGE (o2:organ {id: 'giác_mạc_organ'})
+MERGE (o1)-[r37:affects]->(o2)
+SET r37.text = 'Vết loét thường xuất hiện dưới dạng một đốm trắng hoặc mờ và xám trên giác mạc. Đôi khi, vết loét phát triển trên toàn bộ giác mạc và có thể ăn sâu.'
+
+MERGE (o1:symptom {id: 'mủ_symptom'})
+MERGE (o2:organ {id: 'giác_mạc_organ'})
+MERGE (o1)-[r38:locatedIn]->(o2)
+SET r38.text = 'Mủ có thể tích tụ phía sau giác mạc, đôi khi tạo thành một lớp trắng ở đáy giác mạc (gọi là mủ tiền phòng).'
+
+MERGE (o1:symptom {id: 'mủ_symptom'})
+MERGE (o2:disease {id: 'viêm_loét_giác_mạc_disease'})
+MERGE (o1)-[r39:isSymptomOf]->(o2)
+SET r39.text = 'Mủ có thể tích tụ phía sau giác mạc, đôi khi tạo thành một lớp trắng ở đáy giác mạc (gọi là mủ tiền phòng).'
+
+MERGE (o1:symptom {id: 'lớp_trắng_symptom'})
+MERGE (o2:disease {id: 'viêm_loét_giác_mạc_disease'})
+MERGE (o1)-[r40:isSymptomOf]->(o2)
+SET r40.text = 'Mủ có thể tích tụ phía sau giác mạc, đôi khi tạo thành một lớp trắng ở đáy giác mạc (gọi là mủ tiền phòng).'
+
+MERGE (o1:organ {id: 'kết_mạc_organ'})
+MERGE (o2:disease {id: 'viêm_loét_giác_mạc_disease'})
+MERGE (o1)-[r41:isSymptomOf]->(o2)
+SET r41.text = 'Kết mạc thường đỏ ngầu.'
+
+MERGE (o1:symptom {id: 'đỏ_ngầu_symptom'})
+MERGE (o2:disease {id: 'viêm_loét_giác_mạc_disease'})
+MERGE (o1)-[r42:isSymptomOf]->(o2)
+SET r42.text = 'Kết mạc thường đỏ ngầu.'
+
+MERGE (o1:symptom {id: 'vết_loét_symptom'})
+MERGE (o2:disease {id: 'biến_chứng_disease'})
+MERGE (o1)-[r43:affects]->(o2)
+SET r43.text = 'Vết loét càng sâu thì các triệu chứng và biến chứng càng nặng.'
+
+MERGE (o1:disease {id: 'viêm_giác_mạc_disease'})
+MERGE (o2:treatment {id: 'điều_trị_treatment'})
+MERGE (o1)-[r44:treatedBy]->(o2)
+SET r44.text = 'Viêm giác mạc nếu không được điều trị sớm và đúng cách có thể xảy ra những biến chứng:'
+
+MERGE (o1:disease {id: 'viêm_giác_mạc_disease'})
+MERGE (o2:disease {id: 'biến_chứng_disease'})
+MERGE (o1)-[r45:affects]->(o2)
+SET r45.text = 'Viêm giác mạc nếu không được điều trị sớm và đúng cách có thể xảy ra những biến chứng:'
+
+MERGE (o1:disease {id: 'loét_giác_mạc_disease'})
+MERGE (o2:treatment {id: 'điều_trị_treatment'})
+MERGE (o1)-[r46:treatedBy]->(o2)
+SET r46.text = 'Loét giác mạc có thể lành lại sau khi điều trị, nhưng chúng có thể để lại sẹo đục làm giảm thị lực.'
+
+MERGE (o1:disease {id: 'loét_giác_mạc_disease'})
+MERGE (o2:organ {id: 'thị_lực_organ'})
+MERGE (o1)-[r47:affects]->(o2)
+SET r47.text = 'Loét giác mạc có thể lành lại sau khi điều trị, nhưng chúng có thể để lại sẹo đục làm giảm thị lực.'
+
+MERGE (o1:symptom {id: 'sẹo_đục_symptom'})
+MERGE (o2:disease {id: 'loét_giác_mạc_disease'})
+MERGE (o1)-[r48:isSymptomOf]->(o2)
+SET r48.text = 'Loét giác mạc có thể lành lại sau khi điều trị, nhưng chúng có thể để lại sẹo đục làm giảm thị lực.'
+
+MERGE (o1:disease {id: 'nhiễm_trùng_sâu_disease'})
+MERGE (o2:disease {id: 'viêm_loét_giác_mạc_disease'})
+MERGE (o1)-[r49:isSymptomOf]->(o2)
+SET r49.text = 'Các biến chứng khác có thể bao gồm nhiễm trùng sâu, thủng giác mạc, di lệch mống mắt'
+
+MERGE (o1:disease {id: 'thủng_giác_mạc_disease'})
+MERGE (o2:disease {id: 'viêm_loét_giác_mạc_disease'})
+MERGE (o1)-[r50:isSymptomOf]->(o2)
+SET r50.text = 'Các biến chứng khác có thể bao gồm nhiễm trùng sâu, thủng giác mạc, di lệch mống mắt'
+
+MERGE (o1:disease {id: 'di_lệch_mống_mắt_disease'})
+MERGE (o2:disease {id: 'viêm_loét_giác_mạc_disease'})
+MERGE (o1)-[r51:isSymptomOf]->(o2)
+SET r51.text = 'Các biến chứng khác có thể bao gồm nhiễm trùng sâu, thủng giác mạc, di lệch mống mắt'
+
+MERGE (o1:organ {id: 'giác_mạc_organ'})
+MERGE (o2:treatment {id: 'thủ_thuật_cấy_ghép_giác_mạc_treatment'})
+MERGE (o1)-[r52:affects]->(o2)
+SET r52.text = 'Trường hợp giác mạc bị tổn thương nghiêm trọng, thủ thuật cấy ghép giác mạc có thể được áp dụng.'
+
+MERGE (o1:treatment {id: 'thủ_thuật_cấy_ghép_giác_mạc_treatment'})
+MERGE (o2:disease {id: 'viêm_loét_giác_mạc_disease'})
+MERGE (o1)-[r53:treatedBy]->(o2)
+SET r53.text = 'Trường hợp giác mạc bị tổn thương nghiêm trọng, thủ thuật cấy ghép giác mạc có thể được áp dụng.'
+
+MERGE (o1:treatment {id: 'cấy_ghép_giác_mạc_treatment'})
+MERGE (o2:lifestyle {id: 'chi_phí_lifestyle'})
+MERGE (o1)-[r54:relatedTo]->(o2)
+SET r54.text = 'Tuy nhiên, cần phải tìm người hiến giác mạc và chi phí cho 1 ca ghép giác mạc khá cao.'
+
+MERGE (o1:symptom {id: 'vết_loét_symptom'})
+MERGE (o2:test {id: 'đèn_khe_test'})
+MERGE (o1)-[r55:diagnosedBy]->(o2)
+SET r55.text = 'Các bác sĩ đánh giá vết loét bằng cách sử dụng đèn khe (một dụng cụ cho phép bác sĩ kiểm tra mắt dưới độ phóng đại cao).'
+
+MERGE (o1:symptom {id: 'vết_loét_symptom'})
+MERGE (o2:test {id: 'kiểm_tra_mắt_test'})
+MERGE (o1)-[r56:diagnosedBy]->(o2)
+SET r56.text = 'Các bác sĩ đánh giá vết loét bằng cách sử dụng đèn khe (một dụng cụ cho phép bác sĩ kiểm tra mắt dưới độ phóng đại cao).'
+
+MERGE (o1:symptom {id: 'vết_loét_symptom'})
+MERGE (o2:test {id: 'fluorescein_test'})
+MERGE (o1)-[r57:diagnosedBy]->(o2)
+SET r57.text = 'Để nhìn rõ vết loét, bác sĩ có thể nhỏ thuốc nhỏ mắt có chứa chất nhuộm màu gọi là fluorescein.'
+
+MERGE (o1:test {id: 'chất_huỳnh_quang_test'})
+MERGE (o2:organ {id: 'giác_mạc_organ'})
+MERGE (o1)-[r58:affects]->(o2)
+SET r58.text = 'Chất huỳnh quang tạm thời nhuộm các vùng bị tổn thương của giác mạc, giúp bác sĩ có thể nhìn thấy các vùng giác mạc bị tổn thương mà không thể nhìn thấy được.'
+
+MERGE (o1:symptom {id: 'vết_loét_symptom'})
+MERGE (o2:test {id: 'cạo_bề_mặt_test'})
+MERGE (o1)-[r59:diagnosedBy]->(o2)
+SET r59.text = 'Trong một số tình huống, bác sĩ sẽ cạo bề mặt của các vết loét lớn để lấy mẫu.'
+
+MERGE (o1:test {id: 'mẫu_test'})
+MERGE (o2:disease {id: 'nhiễm_trùng_disease'})
+MERGE (o1)-[r60:diagnosedBy]->(o2)
+SET r60.text = 'Sau đó, mẫu được nuôi cấy để xác định vi khuẩn, nấm, vi rút hoặc kí sinh gây nhiễm trùng.'
+
+MERGE (o1:disease {id: 'loét_giác_mạc_disease'})
+MERGE (o2:symptom {id: 'trường_hợp_khẩn_cấp_symptom'})
+MERGE (o1)-[r61:isSymptomOf]->(o2)
+SET r61.text = 'Loét giác mạc là một trường hợp khẩn cấp cần được điều trị ngay lập tức.'
+
+MERGE (o1:disease {id: 'loét_giác_mạc_disease'})
+MERGE (o2:treatment {id: 'điều_trị_ngay_lập_tức_treatment'})
+MERGE (o1)-[r62:treatedBy]->(o2)
+SET r62.text = 'Loét giác mạc là một trường hợp khẩn cấp cần được điều trị ngay lập tức.'
+
+MERGE (o1:treatment {id: 'thuốc_nhỏ_mắt_kháng_sinh__kháng_vi_rút_hoặc_kháng_nấm_treatment'})
+MERGE (o2:disease {id: 'loét_giác_mạc_disease'})
+MERGE (o1)-[r63:treatedBy]->(o2)
+SET r63.text = 'Thuốc nhỏ mắt kháng sinh, kháng vi rút hoặc kháng nấm thường cần thiết ngay lập tức và phải được dùng thường xuyên, đôi khi hàng giờ liên tục trong vài ngày.'
+
+MERGE (o1:treatment {id: 'thuốc_nhỏ_mắt_kháng_sinh__kháng_vi_rút_hoặc_kháng_nấm_treatment'})
+MERGE (o2:disease {id: 'loét_giác_mạc_disease'})
+MERGE (o1)-[r64:relatedTo]->(o2)
+SET r64.text = 'Thuốc nhỏ mắt kháng sinh, kháng vi rút hoặc kháng nấm thường cần thiết ngay lập tức và phải được dùng thường xuyên, đôi khi hàng giờ liên tục trong vài ngày.'
+
+MERGE (o1:treatment {id: 'thuốc_nhỏ_làm_giãn_mắt_treatment'})
+MERGE (o2:disease {id: 'loét_giác_mạc_disease'})
+MERGE (o1)-[r65:treatedBy]->(o2)
+SET r65.text = 'Thuốc nhỏ làm giãn mắt, chẳng hạn như atropine hoặc scopolamine, có thể giúp giảm đau và giảm nguy cơ biến chứng.'
+
+MERGE (o1:treatment {id: 'thuốc_nhỏ_làm_giãn_mắt_treatment'})
+MERGE (o2:disease {id: 'loét_giác_mạc_disease'})
+MERGE (o1)-[r66:relatedTo]->(o2)
+SET r66.text = 'Thuốc nhỏ làm giãn mắt, chẳng hạn như atropine hoặc scopolamine, có thể giúp giảm đau và giảm nguy cơ biến chứng.'
+
+MERGE (o1:treatment {id: 'ghép_giác_mạc_treatment'})
+MERGE (o2:disease {id: 'loét_giác_mạc_disease'})
+MERGE (o1)-[r67:treatedBy]->(o2)
+SET r67.text = 'Ghép giác mạc'
+
+MERGE (o1:treatment {id: 'ghép_giác_mạc_treatment'})
+MERGE (o2:disease {id: 'loét_giác_mạc_disease'})
+MERGE (o1)-[r68:relatedTo]->(o2)
+SET r68.text = 'Ghép giác mạc'
+
+MERGE (o1:disease {id: 'viêm_giác_mạc_disease'})
+MERGE (o2:lifestyle {id: 'thay_kính_áp_theo_đúng_thời_hạn_lifestyle'})
+MERGE (o1)-[r69:preventedBy]->(o2)
+SET r69.text = 'Để ngăn ngừa hoặc hạn chế nguy cơ viêm giác mạc, đặc biệt với những người thường xuyên đeo kính áp tròng, bạn nên:'
+
+MERGE (o1:disease {id: 'viêm_giác_mạc_disease'})
+MERGE (o2:lifestyle {id: 'không_nên_tiếp_xúc_trực_tiếp_với_ánh_nắng_mặt_trời_bằng_cách_đeo_kính_bảo_vệ_mắt_khi_ra_ngoài_lifestyle'})
+MERGE (o1)-[r70:preventedBy]->(o2)
+SET r70.text = 'Để ngăn ngừa hoặc hạn chế nguy cơ viêm giác mạc, đặc biệt với những người thường xuyên đeo kính áp tròng, bạn nên:'
+
+MERGE (o1:disease {id: 'viêm_giác_mạc_disease'})
+MERGE (o2:lifestyle {id: 'không_nằm_ngủ_khi_còn_đeo_kính_áp_tròng_lifestyle'})
+MERGE (o1)-[r71:preventedBy]->(o2)
+SET r71.text = 'Để ngăn ngừa hoặc hạn chế nguy cơ viêm giác mạc, đặc biệt với những người thường xuyên đeo kính áp tròng, bạn nên:'
+
+MERGE (o1:disease {id: 'viêm_giác_mạc_disease'})
+MERGE (o2:lifestyle {id: 'nên_tháo_kính_áp_tròng_khi_bơi_lifestyle'})
+MERGE (o1)-[r72:preventedBy]->(o2)
+SET r72.text = 'Để ngăn ngừa hoặc hạn chế nguy cơ viêm giác mạc, đặc biệt với những người thường xuyên đeo kính áp tròng, bạn nên:'
+
+MERGE (o1:disease {id: 'viêm_giác_mạc_disease'})
+MERGE (o2:lifestyle {id: 'trước_khi_đeo__tháo_kính_áp_tròng_cần_rửa_tay_sạch_sạch_sẽ_lifestyle'})
+MERGE (o1)-[r73:preventedBy]->(o2)
+SET r73.text = 'Để ngăn ngừa hoặc hạn chế nguy cơ viêm giác mạc, đặc biệt với những người thường xuyên đeo kính áp tròng, bạn nên:'
+
+MERGE (o1:disease {id: 'viêm_giác_mạc_disease'})
+MERGE (o2:lifestyle {id: 'sử_dụng_dung_dịch_vệ_sinh_kính__không_thay_thế_bằng_nước_hoặc_pha_loãng_dung_dịch_lifestyle'})
+MERGE (o1)-[r74:preventedBy]->(o2)
+SET r74.text = 'Để ngăn ngừa hoặc hạn chế nguy cơ viêm giác mạc, đặc biệt với những người thường xuyên đeo kính áp tròng, bạn nên:'
+
+MERGE (o1:disease {id: 'viêm_loét_giác_mạc_disease'})
+MERGE (o2:symptom {id: 'sẹo_giác_mạc_symptom'})
+MERGE (o1)-[r75:isSymptomOf]->(o2)
+SET r75.text = 'Tình trạng viêm loét giác mạc nếu không được điều trị sớm và đúng cách có thể xảy ra những biến chứng như sẹo giác mạc, viêm mãn tính, thủng giác mạc&#8230;'
+
+MERGE (o1:disease {id: 'viêm_loét_giác_mạc_disease'})
+MERGE (o2:symptom {id: 'viêm_mãn_tính_symptom'})
+MERGE (o1)-[r76:isSymptomOf]->(o2)
+SET r76.text = 'Tình trạng viêm loét giác mạc nếu không được điều trị sớm và đúng cách có thể xảy ra những biến chứng như sẹo giác mạc, viêm mãn tính, thủng giác mạc&#8230;'
+
+MERGE (o1:disease {id: 'viêm_loét_giác_mạc_disease'})
+MERGE (o2:symptom {id: 'thủng_giác_mạc_symptom'})
+MERGE (o1)-[r77:isSymptomOf]->(o2)
+SET r77.text = 'Tình trạng viêm loét giác mạc nếu không được điều trị sớm và đúng cách có thể xảy ra những biến chứng như sẹo giác mạc, viêm mãn tính, thủng giác mạc&#8230;'
+
+MERGE (o1:disease {id: 'viêm_loét_giác_mạc_disease'})
+MERGE (o2:treatment {id: 'điều_trị_sớm_và_đúng_cách_treatment'})
+MERGE (o1)-[r78:treatedBy]->(o2)
+SET r78.text = 'Tình trạng viêm loét giác mạc nếu không được điều trị sớm và đúng cách có thể xảy ra những biến chứng như sẹo giác mạc, viêm mãn tính, thủng giác mạc&#8230;'
+
+MERGE (o1:treatment {id: 'bác_sĩ_treatment'})
+MERGE (o2:disease {id: 'loét_giác_mạc_disease'})
+MERGE (o1)-[r79:diagnosedBy]->(o2)
+SET r79.text = 'Thông qua những hình ảnh thu được, bác sĩ sẽ tư vấn cách thức khắc phục, điều trị phù hợp tình trạng bệnh Do đó, bạn không nên bỏ qua các triệu chứng, hãy đến chuyên khoa mắt để được chẩn đoán chính xác và điều trị kịp thời trước khi phát sinh các biến chứng.'
+
+MERGE (o1:treatment {id: 'chuyên_khoa_mắt_treatment'})
+MERGE (o2:disease {id: 'loét_giác_mạc_disease'})
+MERGE (o1)-[r80:diagnosedBy]->(o2)
+SET r80.text = 'Thông qua những hình ảnh thu được, bác sĩ sẽ tư vấn cách thức khắc phục, điều trị phù hợp tình trạng bệnh Do đó, bạn không nên bỏ qua các triệu chứng, hãy đến chuyên khoa mắt để được chẩn đoán chính xác và điều trị kịp thời trước khi phát sinh các biến chứng.'
+
+MERGE (o1:disease {id: 'loét_viêm_giác_mạc_disease'})
+MERGE (o2:cause {id: 'nguyên_nhân_cause'})
+MERGE (o1)-[r81:causedBy]->(o2)
+SET r81.text = 'Việc sử dụng thuốc nhỏ mắt khi bị loét viêm giác mạc cần xác định rõ nguyên nhân.'
+
+MERGE (o1:cause {id: 'nhiễm_trùng_cause'})
+MERGE (o2:disease {id: 'loét_viêm_giác_mạc_disease'})
+MERGE (o1)-[r82:causedBy]->(o2)
+SET r82.text = 'Nếu nguyên nhân do nhiễm trùng, bác sĩ sẽ chỉ định dùng các loại thuốc nhỏ mắt như thuốc nhỏ mắt kháng sinh, kháng nấm, kháng virus và có thể kèm thêm thuốc nhỏ mắt kháng viêm.'
+
+MERGE (o1:treatment {id: 'thuốc_nhỏ_mắt_kháng_sinh_treatment'})
+MERGE (o2:disease {id: 'loét_viêm_giác_mạc_disease'})
+MERGE (o1)-[r83:treatedBy]->(o2)
+SET r83.text = 'Nếu nguyên nhân do nhiễm trùng, bác sĩ sẽ chỉ định dùng các loại thuốc nhỏ mắt như thuốc nhỏ mắt kháng sinh, kháng nấm, kháng virus và có thể kèm thêm thuốc nhỏ mắt kháng viêm.'
+
+MERGE (o1:treatment {id: 'thuốc_nhỏ_mắt_kháng_nấm_treatment'})
+MERGE (o2:disease {id: 'loét_viêm_giác_mạc_disease'})
+MERGE (o1)-[r84:treatedBy]->(o2)
+SET r84.text = 'Nếu nguyên nhân do nhiễm trùng, bác sĩ sẽ chỉ định dùng các loại thuốc nhỏ mắt như thuốc nhỏ mắt kháng sinh, kháng nấm, kháng virus và có thể kèm thêm thuốc nhỏ mắt kháng viêm.'
+
+MERGE (o1:treatment {id: 'thuốc_nhỏ_mắt_kháng_virus_treatment'})
+MERGE (o2:disease {id: 'loét_viêm_giác_mạc_disease'})
+MERGE (o1)-[r85:treatedBy]->(o2)
+SET r85.text = 'Nếu nguyên nhân do nhiễm trùng, bác sĩ sẽ chỉ định dùng các loại thuốc nhỏ mắt như thuốc nhỏ mắt kháng sinh, kháng nấm, kháng virus và có thể kèm thêm thuốc nhỏ mắt kháng viêm.'

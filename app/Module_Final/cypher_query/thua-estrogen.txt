@@ -1,0 +1,670 @@
+
+MERGE (o1:organ {id: 'estrogen_organ'})
+MERGE (o2:organ {id: 'nam_và_nữ_organ'})
+MERGE (o1)-[r0:relatedTo]->(o2)
+SET r0.text = 'Ở cả nam và nữ, estrogen là hormone vô cùng quan trọng.'
+
+MERGE (o1:cause {id: 'dư_thừa_estrogen_cause'})
+MERGE (o2:symptom {id: 'bất_thường_về_sinh_lý_và_tâm_lý_symptom'})
+MERGE (o1)-[r1:causes]->(o2)
+SET r1.text = 'Khi cơ thể bị dư thừa estrogen, bạn có thể đối mặt với nhiều bất thường về cả sinh lý và tâm lý.'
+
+MERGE (o1:cause {id: 'dư_thừa_estrogen_cause'})
+MERGE (o2:lifestyle {id: 'đời_sống_của_người_bệnh_lifestyle'})
+MERGE (o1)-[r2:affects]->(o2)
+SET r2.text = 'Theo thời gian, tình trạng này sẽ gây nhiều tác động tiêu cực đến đời sống của người bệnh.'
+
+MERGE (o1:disease {id: 'thừa_estrogen_disease'})
+MERGE (o2:symptom {id: 'nồng_độ_estrogen_tăng_cao_symptom'})
+MERGE (o1)-[r3:causedBy]->(o2)
+SET r3.text = 'Thừa estrogen là tình trạng nồng độ estrogen tăng cao khi cơ thể hấp thụ quá nhiều loại hormone này hay khi nồng độ progesterone, testosterone giảm xuống.'
+
+MERGE (o1:disease {id: 'thừa_estrogen_disease'})
+MERGE (o2:symptom {id: 'nồng_độ_progesterone__testosterone_giảm_xuống_symptom'})
+MERGE (o1)-[r4:causedBy]->(o2)
+SET r4.text = 'Thừa estrogen là tình trạng nồng độ estrogen tăng cao khi cơ thể hấp thụ quá nhiều loại hormone này hay khi nồng độ progesterone, testosterone giảm xuống.'
+
+MERGE (o1:cause {id: 'dư_thừa_estrogen_cause'})
+MERGE (o2:symptom {id: 'triệu_chứng_về_sinh_lý_và_tâm_lý_symptom'})
+MERGE (o1)-[r5:causes]->(o2)
+SET r5.text = 'Tình trạng dư thừa estrogen dẫn tới nhiều triệu chứng về sinh lý và tâm lý.'
+
+MERGE (o1:cause {id: 'dư_thừa_estrogen_cause'})
+MERGE (o2:disease {id: 'đau_tim__đột_quỵ__bệnh_tuyến_giáp__ung_thư_vú__ung_thư_buồng_trứng_disease'})
+MERGE (o1)-[r6:causes]->(o2)
+SET r6.text = 'Đây cũng là tiền đề làm tăng nguy cơ phát triển những bệnh lý nguy hiểm như đau tim, đột quỵ, bệnh tuyến giáp, ung thư vú, ung thư buồng trứng…(1)'
+
+MERGE (o1:organ {id: 'estrogen_organ'})
+MERGE (o2:organ {id: 'cơ_thể_của_nam_giới_organ'})
+MERGE (o1)-[r7:locatedIn]->(o2)
+SET r7.text = 'Estrogen là hormone sinh dục nữ nhưng vẫn có mặt trong cơ thể của nam giới.'
+
+MERGE (o1:organ {id: 'estrogen_organ'})
+MERGE (o2:organ {id: 'phụ_nữ_organ'})
+MERGE (o1)-[r8:relatedTo]->(o2)
+SET r8.text = 'Phụ nữ có lượng estrogen cao hơn, trong khi đàn ông lại có nhiều testosterone hơn.'
+
+MERGE (o1:organ {id: 'testosterone_organ'})
+MERGE (o2:organ {id: 'đàn_ông_organ'})
+MERGE (o1)-[r9:relatedTo]->(o2)
+SET r9.text = 'Phụ nữ có lượng estrogen cao hơn, trong khi đàn ông lại có nhiều testosterone hơn.'
+
+MERGE (o1:organ {id: 'estrogen_organ'})
+MERGE (o2:organ {id: 'chu_kỳ_kinh_nguyệt_và_chức_năng_sinh_sản_organ'})
+MERGE (o1)-[r10:affects]->(o2)
+SET r10.text = 'Với nữ giới, estrogen đóng vai trò quan trọng trong chu kỳ kinh nguyệt và chức năng sinh sản.'
+
+MERGE (o1:organ {id: 'estrogen_organ'})
+MERGE (o2:organ {id: 'chức_năng_sinh_dục_organ'})
+MERGE (o1)-[r11:affects]->(o2)
+SET r11.text = 'Ở nam giới, hormone này cũng rất quan trọng đối với chức năng sinh dục.'
+
+MERGE (o1:organ {id: 'cơ_thể_organ'})
+MERGE (o2:organ {id: 'estrogen_organ'})
+MERGE (o1)-[r12:affects]->(o2)
+SET r12.text = 'Cơ thể tăng cường sản sinh estrogen hay giảm sản sinh một loại hormone khác như testosterone hay progesterone.'
+
+MERGE (o1:organ {id: 'cơ_thể_organ'})
+MERGE (o2:organ {id: 'testosterone_organ'})
+MERGE (o1)-[r13:affects]->(o2)
+SET r13.text = 'Cơ thể tăng cường sản sinh estrogen hay giảm sản sinh một loại hormone khác như testosterone hay progesterone.'
+
+MERGE (o1:organ {id: 'cơ_thể_organ'})
+MERGE (o2:organ {id: 'progesterone_organ'})
+MERGE (o1)-[r14:affects]->(o2)
+SET r14.text = 'Cơ thể tăng cường sản sinh estrogen hay giảm sản sinh một loại hormone khác như testosterone hay progesterone.'
+
+MERGE (o1:cause {id: 'mất_cân_bằng_hormone_sinh_dục_cause'})
+MERGE (o2:cause {id: 'tăng_cường_sản_sinh_estrogen_hay_giảm_sản_sinh_một_loại_hormone_khác_như_testosterone_hay_progesterone_cause'})
+MERGE (o1)-[r15:causes]->(o2)
+SET r15.text = 'Tình trạng này dẫn đến sự mất cân bằng giữa các hormone sinh dục.'
+
+MERGE (o1:symptom {id: 'nồng_độ_estrogen_tăng_lên_symptom'})
+MERGE (o2:treatment {id: 'thuốc_treatment'})
+MERGE (o1)-[r16:causedBy]->(o2)
+SET r16.text = 'Nồng độ estrogen có thể tăng lên vì tác dụng của thuốc.'
+
+MERGE (o1:treatment {id: 'liệu_pháp_thay_thế_estrogen_treatment'})
+MERGE (o2:symptom {id: 'triệu_chứng_mãn_kinh_symptom'})
+MERGE (o1)-[r17:treatedBy]->(o2)
+SET r17.text = 'Người bệnh sử dụng liệu pháp thay thế estrogen, một phương pháp chữa trị những triệu chứng mãn kinh, có khả năng đối mặt với những tác dụng phụ của estrogen cao.'
+
+MERGE (o1:treatment {id: 'liệu_pháp_thay_thế_estrogen_treatment'})
+MERGE (o2:symptom {id: 'tác_dụng_phụ_của_estrogen_cao_symptom'})
+MERGE (o1)-[r18:causes]->(o2)
+SET r18.text = 'Người bệnh sử dụng liệu pháp thay thế estrogen, một phương pháp chữa trị những triệu chứng mãn kinh, có khả năng đối mặt với những tác dụng phụ của estrogen cao.'
+
+MERGE (o1:treatment {id: 'biện_pháp_tránh_thai_nội_tiết__một_số_thuốc_kháng_sinh__thuốc_thảo_dược__phenothiazin_treatment'})
+MERGE (o2:symptom {id: 'nồng_độ_estrogen_tăng_lên_symptom'})
+MERGE (o1)-[r19:causes]->(o2)
+SET r19.text = 'Những loại thuốc khác cũng có khả năng làm tăng nồng độ estrogen gồm biện pháp tránh thai nội tiết, một số thuốc kháng sinh, thuốc thảo dược, phenothiazin.'
+
+MERGE (o1:cause {id: 'tiền_sử_gia_đình_mắc_phải_tình_trạng_estrogen_cao_cause'})
+MERGE (o2:symptom {id: 'nồng_độ_estrogen_tăng_lên_symptom'})
+MERGE (o1)-[r20:causes]->(o2)
+SET r20.text = 'Có tiền sử gia đình mắc phải tình trạng estrogen cao.'
+
+MERGE (o1:symptom {id: 'sưng__đau_ở_ngực__có_khối_u_xơ_trong_vú_symptom'})
+MERGE (o2:cause {id: 'nồng_độ_estrogen_tăng_cause'})
+MERGE (o1)-[r21:isSymptomOf]->(o2)
+SET r21.text = 'Khi nồng độ estrogen tăng lên, cơ thể của nữ giới sẽ xuất hiện các triệu chứng như:  Sưng, đau ở ngực, có khối u xơ trong vú.'
+
+MERGE (o1:cause {id: 'nồng_độ_estrogen_tăng_cause'})
+MERGE (o2:organ {id: 'cơ_thể_của_nữ_giới_organ'})
+MERGE (o1)-[r22:affects]->(o2)
+SET r22.text = 'Khi nồng độ estrogen tăng lên, cơ thể của nữ giới sẽ xuất hiện các triệu chứng như:  Sưng, đau ở ngực, có khối u xơ trong vú.'
+
+MERGE (o1:symptom {id: 'đầy_hơi_symptom'})
+MERGE (o2:cause {id: 'nồng_độ_estrogen_tăng_cause'})
+MERGE (o1)-[r23:isSymptomOf]->(o2)
+SET r23.text = 'Khi nồng độ estrogen tăng lên, cơ thể của nữ giới sẽ xuất hiện các triệu chứng như:  Sưng, đau ở ngực, có khối u xơ trong vú. Đầy hơi.'
+
+MERGE (o1:symptom {id: 'giảm_ham_muốn_tình_dục_symptom'})
+MERGE (o2:cause {id: 'nồng_độ_estrogen_tăng_cause'})
+MERGE (o1)-[r24:isSymptomOf]->(o2)
+SET r24.text = 'Khi nồng độ estrogen tăng lên, cơ thể của nữ giới sẽ xuất hiện các triệu chứng như:  Sưng, đau ở ngực, có khối u xơ trong vú. Đầy hơi. Giảm ham muốn tình dục.'
+
+MERGE (o1:symptom {id: 'kinh_nguyệt_không_đều_symptom'})
+MERGE (o2:cause {id: 'nồng_độ_estrogen_tăng_cause'})
+MERGE (o1)-[r25:isSymptomOf]->(o2)
+SET r25.text = 'Khi nồng độ estrogen tăng lên, cơ thể của nữ giới sẽ xuất hiện các triệu chứng như:  Sưng, đau ở ngực, có khối u xơ trong vú. Đầy hơi. Giảm ham muốn tình dục. Kinh nguyệt không đều, tăng những triệu chứng của hội chứng tiền kinh nguyệt.'
+
+MERGE (o1:disease {id: 'hội_chứng_tiền_kinh_nguyệt_disease'})
+MERGE (o2:cause {id: 'nồng_độ_estrogen_tăng_cause'})
+MERGE (o1)-[r26:associatedWith]->(o2)
+SET r26.text = 'Khi nồng độ estrogen tăng lên, cơ thể của nữ giới sẽ xuất hiện các triệu chứng như:  Sưng, đau ở ngực, có khối u xơ trong vú. Đầy hơi. Giảm ham muốn tình dục. Kinh nguyệt không đều, tăng những triệu chứng của hội chứng tiền kinh nguyệt.'
+
+MERGE (o1:symptom {id: 'tăng_cân_symptom'})
+MERGE (o2:cause {id: 'nồng_độ_estrogen_tăng_cause'})
+MERGE (o1)-[r27:isSymptomOf]->(o2)
+SET r27.text = 'Khi nồng độ estrogen tăng lên, cơ thể của nữ giới sẽ xuất hiện các triệu chứng như:  Sưng, đau ở ngực, có khối u xơ trong vú. Đầy hơi. Giảm ham muốn tình dục. Kinh nguyệt không đều, tăng những triệu chứng của hội chứng tiền kinh nguyệt. Tăng cân, nhất là vùng quanh hông và eo.'
+
+MERGE (o1:symptom {id: 'tâm_trạng_thay_đổi__lo_lắng_và_hoảng_loạn_symptom'})
+MERGE (o2:cause {id: 'nồng_độ_estrogen_tăng_cause'})
+MERGE (o1)-[r28:isSymptomOf]->(o2)
+SET r28.text = 'Khi nồng độ estrogen tăng lên, cơ thể của nữ giới sẽ xuất hiện các triệu chứng như:  Sưng, đau ở ngực, có khối u xơ trong vú. Đầy hơi. Giảm ham muốn tình dục. Kinh nguyệt không đều, tăng những triệu chứng của hội chứng tiền kinh nguyệt. Tăng cân, nhất là vùng quanh hông và eo. Tâm trạng thay đổi, lo lắng và hoảng loạn.'
+
+MERGE (o1:symptom {id: 'rụng_tóc_symptom'})
+MERGE (o2:cause {id: 'nồng_độ_estrogen_tăng_cause'})
+MERGE (o1)-[r29:isSymptomOf]->(o2)
+SET r29.text = 'Khi nồng độ estrogen tăng lên, cơ thể của nữ giới sẽ xuất hiện các triệu chứng như:  Sưng, đau ở ngực, có khối u xơ trong vú. Đầy hơi. Giảm ham muốn tình dục. Kinh nguyệt không đều, tăng những triệu chứng của hội chứng tiền kinh nguyệt. Tăng cân, nhất là vùng quanh hông và eo. Tâm trạng thay đổi, lo lắng và hoảng loạn. Rụng tóc.'
+
+MERGE (o1:symptom {id: 'bàn_tay_hay_bàn_chân_lạnh_symptom'})
+MERGE (o2:cause {id: 'nồng_độ_estrogen_tăng_cause'})
+MERGE (o1)-[r30:isSymptomOf]->(o2)
+SET r30.text = 'Khi nồng độ estrogen tăng lên, cơ thể của nữ giới sẽ xuất hiện các triệu chứng như:  Sưng, đau ở ngực, có khối u xơ trong vú. Đầy hơi. Giảm ham muốn tình dục. Kinh nguyệt không đều, tăng những triệu chứng của hội chứng tiền kinh nguyệt. Tăng cân, nhất là vùng quanh hông và eo. Tâm trạng thay đổi, lo lắng và hoảng loạn. Rụng tóc. Bàn tay hay bàn chân lạnh.'
+
+MERGE (o1:symptom {id: 'suy_giảm_trí_nhớ_symptom'})
+MERGE (o2:cause {id: 'nồng_độ_estrogen_tăng_cause'})
+MERGE (o1)-[r31:isSymptomOf]->(o2)
+SET r31.text = 'Khi nồng độ estrogen tăng lên, cơ thể của nữ giới sẽ xuất hiện các triệu chứng như:  Sưng, đau ở ngực, có khối u xơ trong vú. Đầy hơi. Giảm ham muốn tình dục. Kinh nguyệt không đều, tăng những triệu chứng của hội chứng tiền kinh nguyệt. Tăng cân, nhất là vùng quanh hông và eo. Tâm trạng thay đổi, lo lắng và hoảng loạn. Rụng tóc. Bàn tay hay bàn chân lạnh. Suy giảm trí nhớ'
+
+MERGE (o1:disease {id: 'u_xơ_tử_cung_disease'})
+MERGE (o2:cause {id: 'nồng_độ_estrogen_tăng_cause'})
+MERGE (o1)-[r32:isSymptomOf]->(o2)
+SET r32.text = 'Khi nồng độ estrogen tăng lên, cơ thể của nữ giới sẽ xuất hiện các triệu chứng như:  Sưng, đau ở ngực, có khối u xơ trong vú. Đầy hơi. Giảm ham muốn tình dục. Kinh nguyệt không đều, tăng những triệu chứng của hội chứng tiền kinh nguyệt. Tăng cân, nhất là vùng quanh hông và eo. Tâm trạng thay đổi, lo lắng và hoảng loạn. Rụng tóc. Bàn tay hay bàn chân lạnh. Suy giảm trí nhớ U xơ tử cung'
+
+MERGE (o1:symptom {id: 'khó_ngủ_hay_buồn_ngủ__mệt_mỏi_symptom'})
+MERGE (o2:cause {id: 'nồng_độ_estrogen_tăng_cause'})
+MERGE (o1)-[r33:isSymptomOf]->(o2)
+SET r33.text = 'Khi nồng độ estrogen tăng lên, cơ thể của nữ giới sẽ xuất hiện các triệu chứng như:  Sưng, đau ở ngực, có khối u xơ trong vú. Đầy hơi. Giảm ham muốn tình dục. Kinh nguyệt không đều, tăng những triệu chứng của hội chứng tiền kinh nguyệt. Tăng cân, nhất là vùng quanh hông và eo. Tâm trạng thay đổi, lo lắng và hoảng loạn. Rụng tóc. Bàn tay hay bàn chân lạnh. Suy giảm trí nhớ U xơ tử cung Khó ngủ hay buồn ngủ, mệt mỏi'
+
+MERGE (o1:cause {id: 'estrogen_cause'})
+MERGE (o2:organ {id: 'cơ_thể_của_nam_giới_organ'})
+MERGE (o1)-[r34:affects]->(o2)
+SET r34.text = 'Dù estrogen được gọi là nội tiết tố nữ nhưng cơ thể của nam giới cũng tạo ra estrogen.'
+
+MERGE (o1:cause {id: 'estrogen_và_testosterone_cause'})
+MERGE (o2:organ {id: 'chức_năng_sinh_dục_organ'})
+MERGE (o1)-[r35:affects]->(o2)
+SET r35.text = 'Sự cân bằng giữa estrogen và testosterone là rất quan trọng đối với sự tăng trưởng và duy trì những chức năng sinh dục.'
+
+MERGE (o1:cause {id: 'mất_cân_bằng_hormone_cause'})
+MERGE (o2:organ {id: 'chức_năng_tình_dục_organ'})
+MERGE (o1)-[r36:affects]->(o2)
+SET r36.text = 'Khi những hormone này bị mất cân bằng, chức năng tình dục có khả năng bị ảnh hưởng.'
+
+MERGE (o1:disease {id: 'vô_sinh_nam_disease'})
+MERGE (o2:cause {id: 'dư_thừa_estrogen_cause'})
+MERGE (o1)-[r37:isSymptomOf]->(o2)
+SET r37.text = 'Những triệu chứng dư thừa estrogen ở nam giới gồm:  Vô sinh nam: Estrogen chịu trách nhiệm một phần trong việc sản xuất ra những tinh trùng khỏe mạnh.'
+
+MERGE (o1:cause {id: 'nồng_độ_estrogen_tăng_cao_cause'})
+MERGE (o2:organ {id: 'mức_tinh_trùng_organ'})
+MERGE (o1)-[r38:affects]->(o2)
+SET r38.text = 'Những triệu chứng dư thừa estrogen ở nam giới gồm:  Vô sinh nam: Estrogen chịu trách nhiệm một phần trong việc sản xuất ra những tinh trùng khỏe mạnh. Nếu nồng độ estrogen tăng cao, mức tinh trùng có khả năng bị giảm, dẫn tới các vấn đề về khả năng sinh sản.'
+
+MERGE (o1:cause {id: 'nồng_độ_estrogen_tăng_cao_cause'})
+MERGE (o2:organ {id: 'khả_năng_sinh_sản_organ'})
+MERGE (o1)-[r39:affects]->(o2)
+SET r39.text = 'Những triệu chứng dư thừa estrogen ở nam giới gồm:  Vô sinh nam: Estrogen chịu trách nhiệm một phần trong việc sản xuất ra những tinh trùng khỏe mạnh. Nếu nồng độ estrogen tăng cao, mức tinh trùng có khả năng bị giảm, dẫn tới các vấn đề về khả năng sinh sản.'
+
+MERGE (o1:symptom {id: 'vú_to_symptom'})
+MERGE (o2:cause {id: 'dư_thừa_estrogen_cause'})
+MERGE (o1)-[r40:isSymptomOf]->(o2)
+SET r40.text = 'Những triệu chứng dư thừa estrogen ở nam giới gồm:  Vô sinh nam: Estrogen chịu trách nhiệm một phần trong việc sản xuất ra những tinh trùng khỏe mạnh. Nếu nồng độ estrogen tăng cao, mức tinh trùng có khả năng bị giảm, dẫn tới các vấn đề về khả năng sinh sản. Vú to: Estrogen có thể kích thích tăng trưởng các mô ở vú.'
+
+MERGE (o1:cause {id: 'estrogen_cause'})
+MERGE (o2:organ {id: 'mô_ở_vú_organ'})
+MERGE (o1)-[r41:affects]->(o2)
+SET r41.text = 'Những triệu chứng dư thừa estrogen ở nam giới gồm:  Vô sinh nam: Estrogen chịu trách nhiệm một phần trong việc sản xuất ra những tinh trùng khỏe mạnh. Nếu nồng độ estrogen tăng cao, mức tinh trùng có khả năng bị giảm, dẫn tới các vấn đề về khả năng sinh sản. Vú to: Estrogen có thể kích thích tăng trưởng các mô ở vú. Vì thế, nam giới khi có quá nhiều estrogen sẽ dẫn tới tình trạng ngực lớn hơn.'
+
+MERGE (o1:disease {id: 'rối_loạn_cương_dương_disease'})
+MERGE (o2:cause {id: 'dư_thừa_estrogen_cause'})
+MERGE (o1)-[r42:isSymptomOf]->(o2)
+SET r42.text = 'Những triệu chứng dư thừa estrogen ở nam giới gồm:  Vô sinh nam: Estrogen chịu trách nhiệm một phần trong việc sản xuất ra những tinh trùng khỏe mạnh. Nếu nồng độ estrogen tăng cao, mức tinh trùng có khả năng bị giảm, dẫn tới các vấn đề về khả năng sinh sản. Vú to: Estrogen có thể kích thích tăng trưởng các mô ở vú. Vì thế, nam giới khi có quá nhiều estrogen sẽ dẫn tới tình trạng ngực lớn hơn. Rối loạn cương dương: Nam giới có lượng estrogen cao có thể gặp nhiều khó khăn trong việc cương cứng dương vật.'
+
+MERGE (o1:cause {id: 'dư_thừa_estrogen_cause'})
+MERGE (o2:organ {id: 'sức_khỏe_sinh_sản_organ'})
+MERGE (o1)-[r43:affects]->(o2)
+SET r43.text = 'Dư thừa estrogen không những ảnh hưởng tới sức khỏe sinh sản của người bệnh mà còn là tiền đề phát sinh các bệnh lý như:  Làm xuất hiện cục máu đông'
+
+MERGE (o1:cause {id: 'dư_thừa_estrogen_cause'})
+MERGE (o2:disease {id: 'làm_xuất_hiện_cục_máu_đông_disease'})
+MERGE (o1)-[r44:causes]->(o2)
+SET r44.text = 'Dư thừa estrogen không những ảnh hưởng tới sức khỏe sinh sản của người bệnh mà còn là tiền đề phát sinh các bệnh lý như:  Làm xuất hiện cục máu đông'
+
+MERGE (o1:cause {id: 'dư_thừa_estrogen_cause'})
+MERGE (o2:disease {id: 'bệnh_về_tuyến_giáp_disease'})
+MERGE (o1)-[r45:causes]->(o2)
+SET r45.text = 'Dư thừa estrogen không những ảnh hưởng tới sức khỏe sinh sản của người bệnh mà còn là tiền đề phát sinh các bệnh lý như:  Làm xuất hiện cục máu đông Bệnh về tuyến giáp'
+
+MERGE (o1:cause {id: 'dư_thừa_estrogen_cause'})
+MERGE (o2:disease {id: 'bệnh_u_vú_lành_tính_disease'})
+MERGE (o1)-[r46:causes]->(o2)
+SET r46.text = 'Dư thừa estrogen không những ảnh hưởng tới sức khỏe sinh sản của người bệnh mà còn là tiền đề phát sinh các bệnh lý như:  Làm xuất hiện cục máu đông Bệnh về tuyến giáp Bệnh u vú lành tính'
+
+MERGE (o1:cause {id: 'dư_thừa_estrogen_cause'})
+MERGE (o2:disease {id: 'ung_thư_buồng_trứng_disease'})
+MERGE (o1)-[r47:causes]->(o2)
+SET r47.text = 'Dư thừa estrogen không những ảnh hưởng tới sức khỏe sinh sản của người bệnh mà còn là tiền đề phát sinh các bệnh lý như:  Làm xuất hiện cục máu đông Bệnh về tuyến giáp Bệnh u vú lành tính Ung thư buồng trứng'
+
+MERGE (o1:cause {id: 'dư_thừa_estrogen_cause'})
+MERGE (o2:disease {id: 'bệnh_ung_thư_vú_disease'})
+MERGE (o1)-[r48:causes]->(o2)
+SET r48.text = 'Dư thừa estrogen không những ảnh hưởng tới sức khỏe sinh sản của người bệnh mà còn là tiền đề phát sinh các bệnh lý như:  Làm xuất hiện cục máu đông Bệnh về tuyến giáp Bệnh u vú lành tính Ung thư buồng trứng Bệnh ung thư vú'
+
+MERGE (o1:cause {id: 'dư_thừa_estrogen_cause'})
+MERGE (o2:disease {id: 'đột_quỵ_disease'})
+MERGE (o1)-[r49:causes]->(o2)
+SET r49.text = 'Dư thừa estrogen không những ảnh hưởng tới sức khỏe sinh sản của người bệnh mà còn là tiền đề phát sinh các bệnh lý như:  Làm xuất hiện cục máu đông Bệnh về tuyến giáp Bệnh u vú lành tính Ung thư buồng trứng Bệnh ung thư vú Đột quỵ'
+
+MERGE (o1:cause {id: 'dư_thừa_estrogen_cause'})
+MERGE (o2:disease {id: 'đau_tim_disease'})
+MERGE (o1)-[r50:causes]->(o2)
+SET r50.text = 'Dư thừa estrogen không những ảnh hưởng tới sức khỏe sinh sản của người bệnh mà còn là tiền đề phát sinh các bệnh lý như:  Làm xuất hiện cục máu đông Bệnh về tuyến giáp Bệnh u vú lành tính Ung thư buồng trứng Bệnh ung thư vú Đột quỵ Đau tim'
+
+MERGE (o1:cause {id: 'dư_thừa_estrogen_cause'})
+MERGE (o2:disease {id: 'trầm_cảm_disease'})
+MERGE (o1)-[r51:causes]->(o2)
+SET r51.text = 'Dư thừa estrogen không những ảnh hưởng tới sức khỏe sinh sản của người bệnh mà còn là tiền đề phát sinh các bệnh lý như:  Làm xuất hiện cục máu đông Bệnh về tuyến giáp Bệnh u vú lành tính Ung thư buồng trứng Bệnh ung thư vú Đột quỵ Đau tim Trầm cảm (phổ biến ở nam giới)'
+
+MERGE (o1:cause {id: 'nồng_độ_estrogen_cause'})
+MERGE (o2:lifestyle {id: 'độ_tuổi__giới_tính_lifestyle'})
+MERGE (o1)-[r52:relatedTo]->(o2)
+SET r52.text = 'Nồng độ estrogen có thể ở mức bình thường hay cao - thấp khác nhau tùy thuộc vào độ tuổi, giới tính của từng người.'
+
+MERGE (o1:cause {id: 'dư_thừa_estrogen_cause'})
+MERGE (o2:test {id: 'xét_nghiệm_định_lượng_estradiol_(e2)_trong_máu_test'})
+MERGE (o1)-[r53:diagnosedBy]->(o2)
+SET r53.text = 'Vì thế, ngoài những biểu hiện bên ngoài cơ thể, muốn biết chính xác cơ thể có đang bị dư thừa estrogen hay không, bạn cần tiến hành xét nghiệm định lượng estradiol (E2) trong máu.'
+
+MERGE (o1:cause {id: 'dư_thừa_estrogen_cause'})
+MERGE (o2:test {id: 'chỉ_số_nội_tiết_tố_vượt_ngưỡng_bình_thường_test'})
+MERGE (o1)-[r54:diagnosedBy]->(o2)
+SET r54.text = 'Nếu những các chỉ số nội tiết tố đều vượt ngưỡng bình thường, người bệnh có nguy cơ mắc phải tình trạng dư thừa estrogen.'
+
+MERGE (o1:cause {id: 'dư_thừa_estrogen_cause'})
+MERGE (o2:test {id: 'xét_nghiệm_máu_hay_nước_tiểu_test'})
+MERGE (o1)-[r55:diagnosedBy]->(o2)
+SET r55.text = 'Bác sĩ có thể yêu cầu lấy máu hay nước tiểu của bạn để mang đi xét nghiệm.'
+
+MERGE (o1:test {id: 'xét_nghiệm_máu_test'})
+MERGE (o2:organ {id: 'huyết_thanh_và_huyết_tương_organ'})
+MERGE (o1)-[r56:relatedTo]->(o2)
+SET r56.text = 'Khi sử dụng máu, xét nghiệm thực hiện nhờ huyết thanh và huyết tương.'
+
+MERGE (o1:test {id: 'xét_nghiệm_máu_test'})
+MERGE (o2:lifestyle {id: 'nhịn_ăn_lifestyle'})
+MERGE (o1)-[r57:relatedTo]->(o2)
+SET r57.text = 'Người bệnh sẽ không cần phải nhịn ăn.'
+
+MERGE (o1:test {id: 'xét_nghiệm_máu_test'})
+MERGE (o2:treatment {id: 'thuốc_treatment'})
+MERGE (o1)-[r58:aggravatedBy]->(o2)
+SET r58.text = 'Một số trường hợp bác sĩ có thể yêu cầu người bệnh ngưng sử dụng những loại thuốc làm thay đổi kết quả.'
+
+MERGE (o1:treatment {id: 'cắt_bỏ_buồng_trứng_treatment'})
+MERGE (o2:disease {id: 'ung_thư_buồng_trứng_disease'})
+MERGE (o1)-[r59:treatedBy]->(o2)
+SET r59.text = 'Phẫu thuật trường hợp người bệnh ung thư buồng trứng, bác sĩ có thể đề xuất cắt bỏ buồng trứng.'
+
+MERGE (o1:organ {id: 'buồng_trứng_organ'})
+MERGE (o2:food {id: 'estrogen_food'})
+MERGE (o1)-[r60:produces]->(o2)
+SET r60.text = 'Phẫu thuật trường hợp người bệnh ung thư buồng trứng, bác sĩ có thể đề xuất cắt bỏ buồng trứng. Vì buồng trứng sản xuất phần lớn estrogen trong cơ thể của nữ giới.'
+
+MERGE (o1:treatment {id: 'cắt_bỏ_buồng_trứng_treatment'})
+MERGE (o2:disease {id: 'ung_thư_vú_disease'})
+MERGE (o1)-[r61:preventedBy]->(o2)
+SET r61.text = 'Bác sĩ cũng có thể đề nghị phẫu thuật cắt bỏ buồng trứng khi người bệnh có nguy cơ mắc ung thư vú hay ung thư buồng trứng.'
+
+MERGE (o1:treatment {id: 'cắt_bỏ_buồng_trứng_treatment'})
+MERGE (o2:disease {id: 'ung_thư_buồng_trứng_disease'})
+MERGE (o1)-[r62:preventedBy]->(o2)
+SET r62.text = 'Bác sĩ cũng có thể đề nghị phẫu thuật cắt bỏ buồng trứng khi người bệnh có nguy cơ mắc ung thư vú hay ung thư buồng trứng.'
+
+MERGE (o1:treatment {id: 'thuốc_treatment'})
+MERGE (o2:symptom {id: 'nồng_độ_estrogen_symptom'})
+MERGE (o1)-[r63:treatedBy]->(o2)
+SET r63.text = 'Dùng những loại thuốc giúp giảm nồng độ estrogen.'
+
+MERGE (o1:lifestyle {id: 'thay_đổi_chế_độ_ăn_uống_lifestyle'})
+MERGE (o2:symptom {id: 'nồng_độ_estrogen_symptom'})
+MERGE (o1)-[r64:treatedBy]->(o2)
+SET r64.text = 'Thay đổi chế độ ăn uống: Người bệnh có giảm mức estrogen thông qua việc thay đổi chế độ ăn uống.'
+
+MERGE (o1:food {id: 'chất_béo_food'})
+MERGE (o2:symptom {id: 'nồng_độ_estrogen_symptom'})
+MERGE (o1)-[r65:aggravatedBy]->(o2)
+SET r65.text = 'Bạn nên ăn các món ít chất béo và giàu chất xơ.'
+
+MERGE (o1:food {id: 'chất_xơ_food'})
+MERGE (o2:symptom {id: 'nồng_độ_estrogen_symptom'})
+MERGE (o1)-[r66:preventedBy]->(o2)
+SET r66.text = 'Bạn nên ăn các món ít chất béo và giàu chất xơ.'
+
+MERGE (o1:lifestyle {id: 'giảm_cân_lifestyle'})
+MERGE (o2:symptom {id: 'nồng_độ_estrogen_symptom'})
+MERGE (o1)-[r67:treatedBy]->(o2)
+SET r67.text = 'Giảm cân có thể làm giảm nồng độ estrogen ở người bệnh thừa cân hay béo phì.'
+
+MERGE (o1:organ {id: 'tế_bào_mỡ_organ'})
+MERGE (o2:food {id: 'estrogen_food'})
+MERGE (o1)-[r68:produces]->(o2)
+SET r68.text = 'Giảm cân có thể làm giảm nồng độ estrogen ở người bệnh thừa cân hay béo phì. Điều này là do những tế bào mỡ sản xuất thêm estrogen.'
+
+MERGE (o1:treatment {id: 'thuốc_treatment'})
+MERGE (o2:symptom {id: 'nồng_độ_estrogen_symptom'})
+MERGE (o1)-[r69:aggravatedBy]->(o2)
+SET r69.text = 'Nếu thuốc khiến nồng độ estrogen tăng cao, bác sĩ có thể chỉ định người bệnh người dùng liều thấp hơn hay áp dụng phương pháp điều trị thay thế.'
+
+MERGE (o1:food {id: 'ngũ_cốc_food'})
+MERGE (o2:symptom {id: 'nồng_độ_estrogen_symptom'})
+MERGE (o1)-[r70:treatedBy]->(o2)
+SET r70.text = 'Chế độ ăn nhiều ngũ cốc có thể làm giảm nồng độ estrogen trong cơ thể và ngăn ngừa một số bệnh ung thư liên quan tới tình trạng dư thừa estrogen.'
+
+MERGE (o1:food {id: 'ngũ_cốc_food'})
+MERGE (o2:disease {id: 'ung_thư_disease'})
+MERGE (o1)-[r71:preventedBy]->(o2)
+SET r71.text = 'Chế độ ăn nhiều ngũ cốc có thể làm giảm nồng độ estrogen trong cơ thể và ngăn ngừa một số bệnh ung thư liên quan tới tình trạng dư thừa estrogen.'
+
+MERGE (o1:food {id: 'chất_xơ_food'})
+MERGE (o2:food {id: 'cholesterol_food'})
+MERGE (o1)-[r72:relatedTo]->(o2)
+SET r72.text = 'Những loại ngũ cốc nguyên hạt chứa lượng chất xơ dồi dào, giúp cơ thể hấp thu cholesterol (tiền thân của estrogen).'
+
+MERGE (o1:food {id: 'cholesterol_food'})
+MERGE (o2:food {id: 'estrogen_food'})
+MERGE (o1)-[r73:relatedTo]->(o2)
+SET r73.text = 'Những loại ngũ cốc nguyên hạt chứa lượng chất xơ dồi dào, giúp cơ thể hấp thu cholesterol (tiền thân của estrogen).'
+
+MERGE (o1:organ {id: 'mô_mỡ_organ'})
+MERGE (o2:food {id: 'estrogen_food'})
+MERGE (o1)-[r74:produces]->(o2)
+SET r74.text = 'Điều này sẽ giúp hạn chế tác động chuyển hóa sản sinh estrogen từ những mô mỡ dư thừa trong thể, giúp cân bằng estrogen.'
+
+MERGE (o1:food {id: 'rau__hoa_quả_tươi_food'})
+MERGE (o2:food {id: 'estrogen_food'})
+MERGE (o1)-[r75:treatedBy]->(o2)
+SET r75.text = 'Những loại rau, hoa quả tươi tự nhiên giúp thúc đẩy cân bằng estrogen tự nhiên trong cơ thể, làm giảm hàm lượng estrogen dư thừa.'
+
+MERGE (o1:food {id: 'thịt_đỏ_food'})
+MERGE (o2:symptom {id: 'nồng_độ_estrogen_symptom'})
+MERGE (o1)-[r76:aggravatedBy]->(o2)
+SET r76.text = 'Những loại thịt đỏ chứa rất nhiều protein. Khi ăn quá nhiều loại thịt này, nồng độ estrogen trong máu của bạn có nguy cơ tăng cao, làm trầm trọng thêm tình trạng mất cân bằng nội tiết tố.'
+
+MERGE (o1:food {id: 'thịt_bò_food'})
+MERGE (o2:symptom {id: 'nồng_độ_estrogen_symptom'})
+MERGE (o1)-[r77:aggravatedBy]->(o2)
+SET r77.text = 'Bạn cần tránh xa các loại thực phẩm có hại cho sức khỏe như:  Thịt đỏ: Thịt bò, thịt dê, thịt cừu, thịt chó, thịt ngựa…'
+
+MERGE (o1:food {id: 'thịt_dê_food'})
+MERGE (o2:symptom {id: 'nồng_độ_estrogen_symptom'})
+MERGE (o1)-[r78:aggravatedBy]->(o2)
+SET r78.text = 'Bạn cần tránh xa các loại thực phẩm có hại cho sức khỏe như:  Thịt đỏ: Thịt bò, thịt dê, thịt cừu, thịt chó, thịt ngựa…'
+
+MERGE (o1:food {id: 'thịt_cừu_food'})
+MERGE (o2:symptom {id: 'nồng_độ_estrogen_symptom'})
+MERGE (o1)-[r79:aggravatedBy]->(o2)
+SET r79.text = 'Bạn cần tránh xa các loại thực phẩm có hại cho sức khỏe như:  Thịt đỏ: Thịt bò, thịt dê, thịt cừu, thịt chó, thịt ngựa…'
+
+MERGE (o1:food {id: 'thịt_chó_food'})
+MERGE (o2:symptom {id: 'nồng_độ_estrogen_symptom'})
+MERGE (o1)-[r80:aggravatedBy]->(o2)
+SET r80.text = 'Bạn cần tránh xa các loại thực phẩm có hại cho sức khỏe như:  Thịt đỏ: Thịt bò, thịt dê, thịt cừu, thịt chó, thịt ngựa…'
+
+MERGE (o1:food {id: 'thịt_ngựa_food'})
+MERGE (o2:symptom {id: 'nồng_độ_estrogen_symptom'})
+MERGE (o1)-[r81:aggravatedBy]->(o2)
+SET r81.text = 'Bạn cần tránh xa các loại thực phẩm có hại cho sức khỏe như:  Thịt đỏ: Thịt bò, thịt dê, thịt cừu, thịt chó, thịt ngựa…'
+
+MERGE (o1:food {id: 'xúc_xích_food'})
+MERGE (o2:symptom {id: 'nồng_độ_estrogen_symptom'})
+MERGE (o1)-[r82:aggravatedBy]->(o2)
+SET r82.text = 'Bạn cần tránh xa các loại thực phẩm có hại cho sức khỏe như:  Thực phẩm chế biến sẵn: Xúc xích, thịt xông khói, thịt đông lạnh…'
+
+MERGE (o1:food {id: 'thịt_xông_khói_food'})
+MERGE (o2:symptom {id: 'nồng_độ_estrogen_symptom'})
+MERGE (o1)-[r83:aggravatedBy]->(o2)
+SET r83.text = 'Bạn cần tránh xa các loại thực phẩm có hại cho sức khỏe như:  Thực phẩm chế biến sẵn: Xúc xích, thịt xông khói, thịt đông lạnh…'
+
+MERGE (o1:food {id: 'thịt_đông_lạnh_food'})
+MERGE (o2:symptom {id: 'nồng_độ_estrogen_symptom'})
+MERGE (o1)-[r84:aggravatedBy]->(o2)
+SET r84.text = 'Bạn cần tránh xa các loại thực phẩm có hại cho sức khỏe như:  Thực phẩm chế biến sẵn: Xúc xích, thịt xông khói, thịt đông lạnh…'
+
+MERGE (o1:food {id: 'bột_mì_trắng_food'})
+MERGE (o2:symptom {id: 'nồng_độ_estrogen_symptom'})
+MERGE (o1)-[r85:aggravatedBy]->(o2)
+SET r85.text = 'Bạn cần tránh xa các loại thực phẩm có hại cho sức khỏe như:  Bột ngũ cốc tinh chế: Bột mì trắng, gạo trắng, bánh mì trắng…'
+
+MERGE (o1:food {id: 'gạo_trắng_food'})
+MERGE (o2:symptom {id: 'nồng_độ_estrogen_symptom'})
+MERGE (o1)-[r86:aggravatedBy]->(o2)
+SET r86.text = 'Bạn cần tránh xa các loại thực phẩm có hại cho sức khỏe như:  Bột ngũ cốc tinh chế: Bột mì trắng, gạo trắng, bánh mì trắng…'
+
+MERGE (o1:food {id: 'bánh_mì_trắng_food'})
+MERGE (o2:symptom {id: 'nồng_độ_estrogen_symptom'})
+MERGE (o1)-[r87:aggravatedBy]->(o2)
+SET r87.text = 'Bạn cần tránh xa các loại thực phẩm có hại cho sức khỏe như:  Bột ngũ cốc tinh chế: Bột mì trắng, gạo trắng, bánh mì trắng…'
+
+MERGE (o1:food {id: 'bánh_gato_food'})
+MERGE (o2:symptom {id: 'nồng_độ_estrogen_symptom'})
+MERGE (o1)-[r88:aggravatedBy]->(o2)
+SET r88.text = 'Bạn cần tránh xa các loại thực phẩm có hại cho sức khỏe như:  Đồ ngọt nhân tạo: Những loại bánh gato, bánh ngọt, thức uống có gas…'
+
+MERGE (o1:food {id: 'bánh_ngọt_food'})
+MERGE (o2:symptom {id: 'nồng_độ_estrogen_symptom'})
+MERGE (o1)-[r89:aggravatedBy]->(o2)
+SET r89.text = 'Bạn cần tránh xa các loại thực phẩm có hại cho sức khỏe như:  Đồ ngọt nhân tạo: Những loại bánh gato, bánh ngọt, thức uống có gas…'
+
+MERGE (o1:food {id: 'thức_uống_có_gas_food'})
+MERGE (o2:symptom {id: 'nồng_độ_estrogen_symptom'})
+MERGE (o1)-[r90:aggravatedBy]->(o2)
+SET r90.text = 'Bạn cần tránh xa các loại thực phẩm có hại cho sức khỏe như:  Đồ ngọt nhân tạo: Những loại bánh gato, bánh ngọt, thức uống có gas…'
+
+MERGE (o1:lifestyle {id: 'chế_độ_sinh_hoạt_khoa_học_lifestyle'})
+MERGE (o2:symptom {id: 'nồng_độ_estrogen_symptom'})
+MERGE (o1)-[r91:treatedBy]->(o2)
+SET r91.text = 'Bạn nên tái thiết lập chế độ sinh hoạt khoa học.'
+
+MERGE (o1:lifestyle {id: 'làm_việc_lifestyle'})
+MERGE (o2:symptom {id: 'nồng_độ_estrogen_symptom'})
+MERGE (o1)-[r92:treatedBy]->(o2)
+SET r92.text = 'Người bệnh cần làm việc, ăn uống, nghỉ ngơi, vận động cơ thể với tần suất hợp lý.'
+
+MERGE (o1:lifestyle {id: 'ăn_uống_lifestyle'})
+MERGE (o2:symptom {id: 'nồng_độ_estrogen_symptom'})
+MERGE (o1)-[r93:treatedBy]->(o2)
+SET r93.text = 'Người bệnh cần làm việc, ăn uống, nghỉ ngơi, vận động cơ thể với tần suất hợp lý.'
+
+MERGE (o1:lifestyle {id: 'nghỉ_ngơi_lifestyle'})
+MERGE (o2:symptom {id: 'nồng_độ_estrogen_symptom'})
+MERGE (o1)-[r94:treatedBy]->(o2)
+SET r94.text = 'Người bệnh cần làm việc, ăn uống, nghỉ ngơi, vận động cơ thể với tần suất hợp lý.'
+
+MERGE (o1:lifestyle {id: 'vận_động_cơ_thể_lifestyle'})
+MERGE (o2:symptom {id: 'nồng_độ_estrogen_symptom'})
+MERGE (o1)-[r95:treatedBy]->(o2)
+SET r95.text = 'Người bệnh cần làm việc, ăn uống, nghỉ ngơi, vận động cơ thể với tần suất hợp lý.'
+
+MERGE (o1:lifestyle {id: 'kiểm_soát_cân_nặng_lifestyle'})
+MERGE (o2:symptom {id: 'nồng_độ_estrogen_symptom'})
+MERGE (o1)-[r96:treatedBy]->(o2)
+SET r96.text = 'Điều này sẽ giúp bạn kiểm soát tốt cân nặng, cân bằng nội tiết tố và duy trì vóc dáng săn chắc.'
+
+MERGE (o1:lifestyle {id: 'cân_bằng_nội_tiết_tố_lifestyle'})
+MERGE (o2:symptom {id: 'nồng_độ_estrogen_symptom'})
+MERGE (o1)-[r97:treatedBy]->(o2)
+SET r97.text = 'Điều này sẽ giúp bạn kiểm soát tốt cân nặng, cân bằng nội tiết tố và duy trì vóc dáng săn chắc.'
+
+MERGE (o1:lifestyle {id: 'ngủ_đủ_giấc_lifestyle'})
+MERGE (o2:symptom {id: 'nồng_độ_estrogen_symptom'})
+MERGE (o1)-[r98:treatedBy]->(o2)
+SET r98.text = 'Bạn cần lưu ý:  Ngủ đủ giấc, khoảng 6 - 8 tiếng mỗi ngày.'
+
+MERGE (o1:lifestyle {id: 'cung_cấp_đủ_nước_lifestyle'})
+MERGE (o2:symptom {id: 'nồng_độ_estrogen_symptom'})
+MERGE (o1)-[r99:treatedBy]->(o2)
+SET r99.text = 'Cung cấp đủ nước cho cơ thể, ít nhất là 2 lít/ngày.'
+
+MERGE (o1:lifestyle {id: 'vận_động_lifestyle'})
+MERGE (o2:symptom {id: 'nồng_độ_estrogen_symptom'})
+MERGE (o1)-[r100:treatedBy]->(o2)
+SET r100.text = 'Dành thời gian vận động, ít nhất là 30 phút/ngày.'
+
+MERGE (o1:lifestyle {id: 'đi_bộ_lifestyle'})
+MERGE (o2:symptom {id: 'nồng_độ_estrogen_symptom'})
+MERGE (o1)-[r101:treatedBy]->(o2)
+SET r101.text = 'Bạn có thể bắt đầu với các bài tập đơn giản như đi bộ, chạy bộ, yoga, thiền định, đạp xe…'
+
+MERGE (o1:lifestyle {id: 'chạy_bộ_lifestyle'})
+MERGE (o2:symptom {id: 'nồng_độ_estrogen_symptom'})
+MERGE (o1)-[r102:treatedBy]->(o2)
+SET r102.text = 'Bạn có thể bắt đầu với các bài tập đơn giản như đi bộ, chạy bộ, yoga, thiền định, đạp xe…'
+
+MERGE (o1:lifestyle {id: 'yoga_lifestyle'})
+MERGE (o2:symptom {id: 'nồng_độ_estrogen_symptom'})
+MERGE (o1)-[r103:treatedBy]->(o2)
+SET r103.text = 'Bạn có thể bắt đầu với các bài tập đơn giản như đi bộ, chạy bộ, yoga, thiền định, đạp xe…'
+
+MERGE (o1:lifestyle {id: 'thiền_định_lifestyle'})
+MERGE (o2:symptom {id: 'nồng_độ_estrogen_symptom'})
+MERGE (o1)-[r104:treatedBy]->(o2)
+SET r104.text = 'Bạn có thể bắt đầu với các bài tập đơn giản như đi bộ, chạy bộ, yoga, thiền định, đạp xe…'
+
+MERGE (o1:lifestyle {id: 'đạp_xe_lifestyle'})
+MERGE (o2:symptom {id: 'nồng_độ_estrogen_symptom'})
+MERGE (o1)-[r105:treatedBy]->(o2)
+SET r105.text = 'Bạn có thể bắt đầu với các bài tập đơn giản như đi bộ, chạy bộ, yoga, thiền định, đạp xe…'
+
+MERGE (o1:food {id: 'rượu_food'})
+MERGE (o2:symptom {id: 'nồng_độ_estrogen_symptom'})
+MERGE (o1)-[r106:aggravatedBy]->(o2)
+SET r106.text = 'Rượu, bia, thuốc lá… gây ra nhiều tác động xấu đến sức khỏe.'
+
+MERGE (o1:food {id: 'bia_food'})
+MERGE (o2:symptom {id: 'nồng_độ_estrogen_symptom'})
+MERGE (o1)-[r107:aggravatedBy]->(o2)
+SET r107.text = 'Rượu, bia, thuốc lá… gây ra nhiều tác động xấu đến sức khỏe.'
+
+MERGE (o1:food {id: 'thuốc_lá_food'})
+MERGE (o2:symptom {id: 'nồng_độ_estrogen_symptom'})
+MERGE (o1)-[r108:aggravatedBy]->(o2)
+SET r108.text = 'Rượu, bia, thuốc lá… gây ra nhiều tác động xấu đến sức khỏe.'
+
+MERGE (o1:lifestyle {id: 'lạm_dụng_rượu__bia__thuốc_lá_lifestyle'})
+MERGE (o2:symptom {id: 'nồng_độ_estrogen_symptom'})
+MERGE (o1)-[r109:aggravatedBy]->(o2)
+SET r109.text = 'Việc lạm dụng chúng còn khiến tình trạng mất cân bằng estrogen trở nên trầm trọng, khó kiểm soát hơn.'
+
+MERGE (o1:food {id: 'sữa_chua_food'})
+MERGE (o2:symptom {id: 'nồng_độ_estrogen_symptom'})
+MERGE (o1)-[r110:treatedBy]->(o2)
+SET r110.text = 'Thay vào đó, người bệnh nên bổ sung những thức uống có lợi như sữa chua, sữa tươi không đường, sinh tố, nước ép hoa quả…'
+
+MERGE (o1:food {id: 'sữa_tươi_không_đường_food'})
+MERGE (o2:symptom {id: 'nồng_độ_estrogen_symptom'})
+MERGE (o1)-[r111:treatedBy]->(o2)
+SET r111.text = 'Thay vào đó, người bệnh nên bổ sung những thức uống có lợi như sữa chua, sữa tươi không đường, sinh tố, nước ép hoa quả…'
+
+MERGE (o1:food {id: 'sinh_tố_food'})
+MERGE (o2:symptom {id: 'nồng_độ_estrogen_symptom'})
+MERGE (o1)-[r112:treatedBy]->(o2)
+SET r112.text = 'Thay vào đó, người bệnh nên bổ sung những thức uống có lợi như sữa chua, sữa tươi không đường, sinh tố, nước ép hoa quả…'
+
+MERGE (o1:food {id: 'nước_ép_hoa_quả_food'})
+MERGE (o2:symptom {id: 'nồng_độ_estrogen_symptom'})
+MERGE (o1)-[r113:treatedBy]->(o2)
+SET r113.text = 'Thay vào đó, người bệnh nên bổ sung những thức uống có lợi như sữa chua, sữa tươi không đường, sinh tố, nước ép hoa quả…'
+
+MERGE (o1:organ {id: 'trung_tâm_tiết_niệu_thận_học_organ'})
+MERGE (o2:organ {id: 'hệ_thống_bvđk_tâm_anh_organ'})
+MERGE (o1)-[r114:locatedIn]->(o2)
+SET r114.text = 'Trung tâm Tiết niệu Thận học, Khoa Nam học – Tiết niệu của Hệ thống BVĐK Tâm Anh quy tụ đội ngũ các chuyên gia đầu ngành, Nội khoa và Ngoại khoa, giỏi chuyên môn, tận tâm.'
+
+MERGE (o1:treatment {id: 'chuyên_gia_treatment'})
+MERGE (o2:disease {id: 'bệnh_lý_về_thận_và_đường_tiết_niệu_disease'})
+MERGE (o1)-[r115:treatedBy]->(o2)
+SET r115.text = 'Trung tâm Tiết niệu Thận học, Khoa Nam học – Tiết niệu của Hệ thống BVĐK Tâm Anh quy tụ đội ngũ các chuyên gia đầu ngành, Nội khoa và Ngoại khoa, giỏi chuyên môn, tận tâm.'
+
+MERGE (o1:treatment {id: 'gs.ts.bs_trần_quán_anh_treatment'})
+MERGE (o2:disease {id: 'bệnh_lý_về_thận_và_đường_tiết_niệu_disease'})
+MERGE (o1)-[r116:treatedBy]->(o2)
+SET r116.text = 'Nhà giáo nhân dân GS.TS.BS Trần Quán Anh, Thầy thuốc ưu tú PGS.TS.BS Vũ Lê Chuyên là những cây đại thụ trong ngành Tiết niệu Thận học Việt Nam.'
+
+MERGE (o1:treatment {id: 'pgs.ts.bs_vũ_lê_chuyên_treatment'})
+MERGE (o2:disease {id: 'bệnh_lý_về_thận_và_đường_tiết_niệu_disease'})
+MERGE (o1)-[r117:treatedBy]->(o2)
+SET r117.text = 'Nhà giáo nhân dân GS.TS.BS Trần Quán Anh, Thầy thuốc ưu tú PGS.TS.BS Vũ Lê Chuyên là những cây đại thụ trong ngành Tiết niệu Thận học Việt Nam.'
+
+MERGE (o1:treatment {id: 'ts.bs_nguyễn_thế_trường_treatment'})
+MERGE (o2:disease {id: 'bệnh_lý_về_thận_và_đường_tiết_niệu_disease'})
+MERGE (o1)-[r118:treatedBy]->(o2)
+SET r118.text = 'Cùng với các tên tuổi Thầy thuốc ưu tú TS.BS Nguyễn Thế Trường Thầy thuốc ưu tú BS.CKII Tạ Phương Dung, TS.BS Nguyễn Hoàng Đức, TS.BS Từ Thành Trí Dũng, ThS.BS.CKI Nguyễn Đức Nhuận, BS.CKII Nguyễn Lê Tuyên, ThS.BS Nguyễn Tân Cương, ThS.BS Tạ Ngọc Thạch, BS.CKI Phan Trường Nam…'
+
+MERGE (o1:treatment {id: 'bs.ckii_tạ_phương_dung_treatment'})
+MERGE (o2:disease {id: 'bệnh_lý_về_thận_và_đường_tiết_niệu_disease'})
+MERGE (o1)-[r119:treatedBy]->(o2)
+SET r119.text = 'Cùng với các tên tuổi Thầy thuốc ưu tú TS.BS Nguyễn Thế Trường Thầy thuốc ưu tú BS.CKII Tạ Phương Dung, TS.BS Nguyễn Hoàng Đức, TS.BS Từ Thành Trí Dũng, ThS.BS.CKI Nguyễn Đức Nhuận, BS.CKII Nguyễn Lê Tuyên, ThS.BS Nguyễn Tân Cương, ThS.BS Tạ Ngọc Thạch, BS.CKI Phan Trường Nam…'
+
+MERGE (o1:treatment {id: 'ts.bs_nguyễn_hoàng_đức_treatment'})
+MERGE (o2:disease {id: 'bệnh_lý_về_thận_và_đường_tiết_niệu_disease'})
+MERGE (o1)-[r120:treatedBy]->(o2)
+SET r120.text = 'Cùng với các tên tuổi Thầy thuốc ưu tú TS.BS Nguyễn Thế Trường Thầy thuốc ưu tú BS.CKII Tạ Phương Dung, TS.BS Nguyễn Hoàng Đức, TS.BS Từ Thành Trí Dũng, ThS.BS.CKI Nguyễn Đức Nhuận, BS.CKII Nguyễn Lê Tuyên, ThS.BS Nguyễn Tân Cương, ThS.BS Tạ Ngọc Thạch, BS.CKI Phan Trường Nam…'
+
+MERGE (o1:treatment {id: 'ts.bs_từ_thành_trí_dũng_treatment'})
+MERGE (o2:disease {id: 'bệnh_lý_về_thận_và_đường_tiết_niệu_disease'})
+MERGE (o1)-[r121:treatedBy]->(o2)
+SET r121.text = 'Cùng với các tên tuổi Thầy thuốc ưu tú TS.BS Nguyễn Thế Trường Thầy thuốc ưu tú BS.CKII Tạ Phương Dung, TS.BS Nguyễn Hoàng Đức, TS.BS Từ Thành Trí Dũng, ThS.BS.CKI Nguyễn Đức Nhuận, BS.CKII Nguyễn Lê Tuyên, ThS.BS Nguyễn Tân Cương, ThS.BS Tạ Ngọc Thạch, BS.CKI Phan Trường Nam…'
+
+MERGE (o1:treatment {id: 'ths.bs.cki_nguyễn_đức_nhuận_treatment'})
+MERGE (o2:disease {id: 'bệnh_lý_về_thận_và_đường_tiết_niệu_disease'})
+MERGE (o1)-[r122:treatedBy]->(o2)
+SET r122.text = 'Cùng với các tên tuổi Thầy thuốc ưu tú TS.BS Nguyễn Thế Trường Thầy thuốc ưu tú BS.CKII Tạ Phương Dung, TS.BS Nguyễn Hoàng Đức, TS.BS Từ Thành Trí Dũng, ThS.BS.CKI Nguyễn Đức Nhuận, BS.CKII Nguyễn Lê Tuyên, ThS.BS Nguyễn Tân Cương, ThS.BS Tạ Ngọc Thạch, BS.CKI Phan Trường Nam…'
+
+MERGE (o1:treatment {id: 'bs.ckii_nguyễn_lê_tuyên_treatment'})
+MERGE (o2:disease {id: 'bệnh_lý_về_thận_và_đường_tiết_niệu_disease'})
+MERGE (o1)-[r123:treatedBy]->(o2)
+SET r123.text = 'Cùng với các tên tuổi Thầy thuốc ưu tú TS.BS Nguyễn Thế Trường Thầy thuốc ưu tú BS.CKII Tạ Phương Dung, TS.BS Nguyễn Hoàng Đức, TS.BS Từ Thành Trí Dũng, ThS.BS.CKI Nguyễn Đức Nhuận, BS.CKII Nguyễn Lê Tuyên, ThS.BS Nguyễn Tân Cương, ThS.BS Tạ Ngọc Thạch, BS.CKI Phan Trường Nam…'
+
+MERGE (o1:treatment {id: 'ths.bs_nguyễn_tân_cương_treatment'})
+MERGE (o2:disease {id: 'bệnh_lý_về_thận_và_đường_tiết_niệu_disease'})
+MERGE (o1)-[r124:treatedBy]->(o2)
+SET r124.text = 'Cùng với các tên tuổi Thầy thuốc ưu tú TS.BS Nguyễn Thế Trường Thầy thuốc ưu tú BS.CKII Tạ Phương Dung, TS.BS Nguyễn Hoàng Đức, TS.BS Từ Thành Trí Dũng, ThS.BS.CKI Nguyễn Đức Nhuận, BS.CKII Nguyễn Lê Tuyên, ThS.BS Nguyễn Tân Cương, ThS.BS Tạ Ngọc Thạch, BS.CKI Phan Trường Nam…'
+
+MERGE (o1:treatment {id: 'ths.bs_tạ_ngọc_thạch_treatment'})
+MERGE (o2:disease {id: 'bệnh_lý_về_thận_và_đường_tiết_niệu_disease'})
+MERGE (o1)-[r125:treatedBy]->(o2)
+SET r125.text = 'Cùng với các tên tuổi Thầy thuốc ưu tú TS.BS Nguyễn Thế Trường Thầy thuốc ưu tú BS.CKII Tạ Phương Dung, TS.BS Nguyễn Hoàng Đức, TS.BS Từ Thành Trí Dũng, ThS.BS.CKI Nguyễn Đức Nhuận, BS.CKII Nguyễn Lê Tuyên, ThS.BS Nguyễn Tân Cương, ThS.BS Tạ Ngọc Thạch, BS.CKI Phan Trường Nam…'
+
+MERGE (o1:treatment {id: 'bs.cki_phan_trường_nam_treatment'})
+MERGE (o2:disease {id: 'bệnh_lý_về_thận_và_đường_tiết_niệu_disease'})
+MERGE (o1)-[r126:treatedBy]->(o2)
+SET r126.text = 'Cùng với các tên tuổi Thầy thuốc ưu tú TS.BS Nguyễn Thế Trường Thầy thuốc ưu tú BS.CKII Tạ Phương Dung, TS.BS Nguyễn Hoàng Đức, TS.BS Từ Thành Trí Dũng, ThS.BS.CKI Nguyễn Đức Nhuận, BS.CKII Nguyễn Lê Tuyên, ThS.BS Nguyễn Tân Cương, ThS.BS Tạ Ngọc Thạch, BS.CKI Phan Trường Nam…'
+
+MERGE (o1:treatment {id: 'kỹ_thuật_mới_nhất_treatment'})
+MERGE (o2:disease {id: 'bệnh_lý_về_thận_và_đường_tiết_niệu_disease'})
+MERGE (o1)-[r127:treatedBy]->(o2)
+SET r127.text = 'Các chuyên gia, bác sĩ của Trung tâm luôn tự tin làm chủ những kỹ thuật mới nhất, phát hiện sớm và điều trị hiệu quả các bệnh lý về thận và đường tiết niệu, giúp người bệnh rút ngắn thời gian nằm viện, hạn chế nguy cơ tái phát, nâng cao chất lượng cuộc sống.'
+
+MERGE (o1:organ {id: 'trung_tâm_tiết_niệu_thận_học_organ'})
+MERGE (o2:organ {id: 'hệ_thống_bvđk_tâm_anh_organ'})
+MERGE (o1)-[r128:locatedIn]->(o2)
+SET r128.text = 'Với hệ thống máy móc, trang thiết bị hiện đại hàng đầu trong nước và khu vực; Phòng mổ đạt tiêu chuẩn quốc tế; Cùng với khu nội trú và dịch vụ cao cấp 5 sao… Trung tâm Tiết niệu Thận học nổi bật với các dịch vụ thăm khám, tầm soát và điều trị tất cả các bệnh lý đường tiết niệu.'
+
+MERGE (o1:treatment {id: 'đại_phẫu_thuật_kỹ_thuật_cao_treatment'})
+MERGE (o2:disease {id: 'bệnh_lý_đường_tiết_niệu_disease'})
+MERGE (o1)-[r129:treatedBy]->(o2)
+SET r129.text = 'Từ các thường gặp cho đến các cuộc đại phẫu thuật kỹ thuật cao.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_nội_soi_sỏi_thận_treatment'})
+MERGE (o2:disease {id: 'bệnh_lý_đường_tiết_niệu_disease'})
+MERGE (o1)-[r130:treatedBy]->(o2)
+SET r130.text = 'Có thể kể đến phẫu thuật nội soi sỏi thận, ghép thận, cắt bướu bảo tồn nhu mô thận; cắt thận tận gốc; cắt tuyến tiền liệt tận gốc; cắt toàn bộ bàng quang tạo hình bàng quang bằng ruột non; cắt tuyến thượng thận; tạo hình các dị tật đường tiết niệu…'
+
+MERGE (o1:treatment {id: 'ghép_thận_treatment'})
+MERGE (o2:disease {id: 'bệnh_lý_đường_tiết_niệu_disease'})
+MERGE (o1)-[r131:treatedBy]->(o2)
+SET r131.text = 'Có thể kể đến phẫu thuật nội soi sỏi thận, ghép thận, cắt bướu bảo tồn nhu mô thận; cắt thận tận gốc; cắt tuyến tiền liệt tận gốc; cắt toàn bộ bàng quang tạo hình bàng quang bằng ruột non; cắt tuyến thượng thận; tạo hình các dị tật đường tiết niệu…'
+
+MERGE (o1:treatment {id: 'cắt_bướu_bảo_tồn_nhu_mô_thận_treatment'})
+MERGE (o2:disease {id: 'bệnh_lý_đường_tiết_niệu_disease'})
+MERGE (o1)-[r132:treatedBy]->(o2)
+SET r132.text = 'Có thể kể đến phẫu thuật nội soi sỏi thận, ghép thận, cắt bướu bảo tồn nhu mô thận; cắt thận tận gốc; cắt tuyến tiền liệt tận gốc; cắt toàn bộ bàng quang tạo hình bàng quang bằng ruột non; cắt tuyến thượng thận; tạo hình các dị tật đường tiết niệu…'
+
+MERGE (o1:treatment {id: 'cắt_thận_tận_gốc_treatment'})
+MERGE (o2:disease {id: 'bệnh_lý_đường_tiết_niệu_disease'})
+MERGE (o1)-[r133:treatedBy]->(o2)
+SET r133.text = 'Có thể kể đến phẫu thuật nội soi sỏi thận, ghép thận, cắt bướu bảo tồn nhu mô thận; cắt thận tận gốc; cắt tuyến tiền liệt tận gốc; cắt toàn bộ bàng quang tạo hình bàng quang bằng ruột non; cắt tuyến thượng thận; tạo hình các dị tật đường tiết niệu…'

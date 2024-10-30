@@ -1,0 +1,1034 @@
+[
+    {
+        "text": "Vô sinh hiếm muộn đang trở thành căn bệnh của thời đại.",
+        "head": "Vô sinh hiếm muộn",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Căn bệnh của thời đại",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đáng báo động khi tỷ lệ vô sinh hiện nay ở Việt Nam lên đến 7,7% trong đó hơn một nửa từ các cặp vợ chồng dưới 30 tuổi.",
+        "head": "Tỷ lệ vô sinh",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Vô sinh hiếm muộn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tình trạng này không chỉ cản trở giấc mơ làm cha mẹ mà xã hội đối mặt với sự thiếu hụt dân số khi tỷ lệ sinh giảm.",
+        "head": "Thiếu hụt dân số",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Vô sinh hiếm muộn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Vô sinh hiếm muộn theo định nghĩa của Tổ chức Y tế thế giới (WHO) là tình trạng một cặp vợ chồng chung sống, có quan hệ tình dục thường xuyên không sử dụng biện pháp tránh thai nào nhưng sau 1 năm (với người vợ dưới 35 tuổi) và sau 6 tháng (với người vợ trên 35 tuổi) mà vẫn chưa có thai một cách tự nhiên.",
+        "head": "Vô sinh hiếm muộn",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "Quan hệ tình dục thường xuyên không sử dụng biện pháp tránh thai",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Vô sinh hiếm muộn theo định nghĩa của Tổ chức Y tế thế giới (WHO) là tình trạng một cặp vợ chồng chung sống, có quan hệ tình dục thường xuyên không sử dụng biện pháp tránh thai nào nhưng sau 1 năm (với người vợ dưới 35 tuổi) và sau 6 tháng (với người vợ trên 35 tuổi) mà vẫn chưa có thai một cách tự nhiên.",
+        "head": "Vô sinh hiếm muộn",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "Không có thai tự nhiên",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Khu vực Châu Á-Thái Bình Dương là khu vực có tỉ lệ sinh thấp nhất và vô sinh cao nhất.",
+        "head": "Châu Á-Thái Bình Dương",
+        "head_type": "organ",
+        "relation": "associatedWith",
+        "tail": "Tỉ lệ sinh thấp",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Khu vực Châu Á-Thái Bình Dương là khu vực có tỉ lệ sinh thấp nhất và vô sinh cao nhất.",
+        "head": "Châu Á-Thái Bình Dương",
+        "head_type": "organ",
+        "relation": "associatedWith",
+        "tail": "Vô sinh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khuynh hướng này đang có xu hướng gia tăng khu phụ nữ ngày càng sinh ít con, trì hoãn tuổi sinh hoặc không có con.",
+        "head": "Phụ nữ sinh ít con",
+        "head_type": "lifestyle",
+        "relation": "causedBy",
+        "tail": "Vô sinh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khuynh hướng này đang có xu hướng gia tăng khu phụ nữ ngày càng sinh ít con, trì hoãn tuổi sinh hoặc không có con.",
+        "head": "Trì hoãn tuổi sinh",
+        "head_type": "lifestyle",
+        "relation": "causedBy",
+        "tail": "Vô sinh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khuynh hướng này đang có xu hướng gia tăng khu phụ nữ ngày càng sinh ít con, trì hoãn tuổi sinh hoặc không có con.",
+        "head": "Không có con",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Vô sinh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tại Việt Nam, tỷ lệ sinh giảm đều đặn trong 2 thập kỷ.",
+        "head": "Tỷ lệ sinh giảm",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Vô sinh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Theo một số nghiên cứu ở 8 tỉnh đại diện cho 8 vùng sinh thái của nước ta cho thấy có từ 700.000 đến 1 triệu cặp vợ chồng gặp tình trạng vô sinh hiếm muộn.",
+        "head": "Vô sinh hiếm muộn",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "Nghiên cứu",
+        "tail_type": "test"
+    },
+    {
+        "text": "Vô sinh hiếm muộn có thể diễn tiến âm thầm, bệnh thường được phát hiện khi vợ chồng mong con nhưng sau một thời gian vẫn chưa thể mang thai tự nhiên, họ đến thăm khám với các bác sĩ chuyên khoa và phát hiện vấn đề.",
+        "head": "Vô sinh hiếm muộn",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "Thăm khám với bác sĩ chuyên khoa",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Vô sinh hiếm muộn có thể diễn tiến âm thầm, bệnh thường được phát hiện khi vợ chồng mong con nhưng sau một thời gian vẫn chưa thể mang thai tự nhiên, họ đến thăm khám với các bác sĩ chuyên khoa và phát hiện vấn đề.",
+        "head": "Vô sinh hiếm muộn",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "Không mang thai tự nhiên",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Bên cạnh đó có một số dấu hiệu có thể cảnh báo tình trạng hiếm muộn ở nam giới và nữ giới như:",
+        "head": "Dấu hiệu",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Hiếm muộn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Giảm ham muốn tình dục, rối loạn cương, giảm hiện tượng dạ cương; Tinh hoàn sưng đau, xuất hiện cục hay búi ở tinh hoàn; Tinh hoàn teo hoặc nhỏ lại; Đạt cực khoái nhưng không xuất tinh…",
+        "head": "Giảm ham muốn tình dục",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Hiếm muộn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Giảm ham muốn tình dục, rối loạn cương, giảm hiện tượng dạ cương; Tinh hoàn sưng đau, xuất hiện cục hay búi ở tinh hoàn; Tinh hoàn teo hoặc nhỏ lại; Đạt cực khoái nhưng không xuất tinh…",
+        "head": "Rối loạn cương",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Hiếm muộn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Giảm ham muốn tình dục, rối loạn cương, giảm hiện tượng dạ cương; Tinh hoàn sưng đau, xuất hiện cục hay búi ở tinh hoàn; Tinh hoàn teo hoặc nhỏ lại; Đạt cực khoái nhưng không xuất tinh…",
+        "head": "Giảm hiện tượng dạ cương",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Hiếm muộn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Giảm ham muốn tình dục, rối loạn cương, giảm hiện tượng dạ cương; Tinh hoàn sưng đau, xuất hiện cục hay búi ở tinh hoàn; Tinh hoàn teo hoặc nhỏ lại; Đạt cực khoái nhưng không xuất tinh…",
+        "head": "Tinh hoàn sưng đau",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Hiếm muộn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Giảm ham muốn tình dục, rối loạn cương, giảm hiện tượng dạ cương; Tinh hoàn sưng đau, xuất hiện cục hay búi ở tinh hoàn; Tinh hoàn teo hoặc nhỏ lại; Đạt cực khoái nhưng không xuất tinh…",
+        "head": "Xuất hiện cục hay búi ở tinh hoàn",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Hiếm muộn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Giảm ham muốn tình dục, rối loạn cương, giảm hiện tượng dạ cương; Tinh hoàn sưng đau, xuất hiện cục hay búi ở tinh hoàn; Tinh hoàn teo hoặc nhỏ lại; Đạt cực khoái nhưng không xuất tinh…",
+        "head": "Tinh hoàn teo",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Hiếm muộn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Giảm ham muốn tình dục, rối loạn cương, giảm hiện tượng dạ cương; Tinh hoàn sưng đau, xuất hiện cục hay búi ở tinh hoàn; Tinh hoàn teo hoặc nhỏ lại; Đạt cực khoái nhưng không xuất tinh…",
+        "head": "Tinh hoàn nhỏ lại",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Hiếm muộn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Giảm ham muốn tình dục, rối loạn cương, giảm hiện tượng dạ cương; Tinh hoàn sưng đau, xuất hiện cục hay búi ở tinh hoàn; Tinh hoàn teo hoặc nhỏ lại; Đạt cực khoái nhưng không xuất tinh…",
+        "head": "Đạt cực khoái nhưng không xuất tinh",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Hiếm muộn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Kinh nguyệt bất thường về lượng kinh nguyệt và độ dài của chu kỳ (quá ít, quá nhiều, quá dài hoặc quá ngắn); Giảm ham muốn tình dục; Vô kinh; Có sự thay đổi về cân nặng như tăng, sụt cân mất kiểm soát; Thay đổi về nội tiết tố, da nổi mụn, rụng tóc; Đau vùng bụng dưới; Khí hư ra nhiều, có màu và mùi bất thường.",
+        "head": "Kinh nguyệt bất thường",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Hiếm muộn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Kinh nguyệt bất thường về lượng kinh nguyệt và độ dài của chu kỳ (quá ít, quá nhiều, quá dài hoặc quá ngắn); Giảm ham muốn tình dục; Vô kinh; Có sự thay đổi về cân nặng như tăng, sụt cân mất kiểm soát; Thay đổi về nội tiết tố, da nổi mụn, rụng tóc; Đau vùng bụng dưới; Khí hư ra nhiều, có màu và mùi bất thường.",
+        "head": "Giảm ham muốn tình dục",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Hiếm muộn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Kinh nguyệt bất thường về lượng kinh nguyệt và độ dài của chu kỳ (quá ít, quá nhiều, quá dài hoặc quá ngắn); Giảm ham muốn tình dục; Vô kinh; Có sự thay đổi về cân nặng như tăng, sụt cân mất kiểm soát; Thay đổi về nội tiết tố, da nổi mụn, rụng tóc; Đau vùng bụng dưới; Khí hư ra nhiều, có màu và mùi bất thường.",
+        "head": "Vô kinh",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Hiếm muộn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Kinh nguyệt bất thường về lượng kinh nguyệt và độ dài của chu kỳ (quá ít, quá nhiều, quá dài hoặc quá ngắn); Giảm ham muốn tình dục; Vô kinh; Có sự thay đổi về cân nặng như tăng, sụt cân mất kiểm soát; Thay đổi về nội tiết tố, da nổi mụn, rụng tóc; Đau vùng bụng dưới; Khí hư ra nhiều, có màu và mùi bất thường.",
+        "head": "Tăng cân",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Hiếm muộn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Kinh nguyệt bất thường về lượng kinh nguyệt và độ dài của chu kỳ (quá ít, quá nhiều, quá dài hoặc quá ngắn); Giảm ham muốn tình dục; Vô kinh; Có sự thay đổi về cân nặng như tăng, sụt cân mất kiểm soát; Thay đổi về nội tiết tố, da nổi mụn, rụng tóc; Đau vùng bụng dưới; Khí hư ra nhiều, có màu và mùi bất thường.",
+        "head": "Sụt cân",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Hiếm muộn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Kinh nguyệt bất thường về lượng kinh nguyệt và độ dài của chu kỳ (quá ít, quá nhiều, quá dài hoặc quá ngắn); Giảm ham muốn tình dục; Vô kinh; Có sự thay đổi về cân nặng như tăng, sụt cân mất kiểm soát; Thay đổi về nội tiết tố, da nổi mụn, rụng tóc; Đau vùng bụng dưới; Khí hư ra nhiều, có màu và mùi bất thường.",
+        "head": "Thay đổi về nội tiết tố",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Hiếm muộn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Kinh nguyệt bất thường về lượng kinh nguyệt và độ dài của chu kỳ (quá ít, quá nhiều, quá dài hoặc quá ngắn); Giảm ham muốn tình dục; Vô kinh; Có sự thay đổi về cân nặng như tăng, sụt cân mất kiểm soát; Thay đổi về nội tiết tố, da nổi mụn, rụng tóc; Đau vùng bụng dưới; Khí hư ra nhiều, có màu và mùi bất thường.",
+        "head": "Da nổi mụn",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Hiếm muộn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Kinh nguyệt bất thường về lượng kinh nguyệt và độ dài của chu kỳ (quá ít, quá nhiều, quá dài hoặc quá ngắn); Giảm ham muốn tình dục; Vô kinh; Có sự thay đổi về cân nặng như tăng, sụt cân mất kiểm soát; Thay đổi về nội tiết tố, da nổi mụn, rụng tóc; Đau vùng bụng dưới; Khí hư ra nhiều, có màu và mùi bất thường.",
+        "head": "Rụng tóc",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Hiếm muộn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Kinh nguyệt bất thường về lượng kinh nguyệt và độ dài của chu kỳ (quá ít, quá nhiều, quá dài hoặc quá ngắn); Giảm ham muốn tình dục; Vô kinh; Có sự thay đổi về cân nặng như tăng, sụt cân mất kiểm soát; Thay đổi về nội tiết tố, da nổi mụn, rụng tóc; Đau vùng bụng dưới; Khí hư ra nhiều, có màu và mùi bất thường.",
+        "head": "Đau vùng bụng dưới",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Hiếm muộn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Kinh nguyệt bất thường về lượng kinh nguyệt và độ dài của chu kỳ (quá ít, quá nhiều, quá dài hoặc quá ngắn); Giảm ham muốn tình dục; Vô kinh; Có sự thay đổi về cân nặng như tăng, sụt cân mất kiểm soát; Thay đổi về nội tiết tố, da nổi mụn, rụng tóc; Đau vùng bụng dưới; Khí hư ra nhiều, có màu và mùi bất thường.",
+        "head": "Khí hư ra nhiều",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Hiếm muộn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "40% nguyên nhân vô sinh hiếm muộn đến từ nam giới, 40% đến từ nữ giới và 20% còn lại đến từ cả hai phía hoặc không rõ nguyên nhân.",
+        "head": "Vô sinh hiếm muộn",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Nam giới",
+        "tail_type": "cause"
+    },
+    {
+        "text": "40% nguyên nhân vô sinh hiếm muộn đến từ nam giới, 40% đến từ nữ giới và 20% còn lại đến từ cả hai phía hoặc không rõ nguyên nhân.",
+        "head": "Vô sinh hiếm muộn",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Nữ giới",
+        "tail_type": "cause"
+    },
+    {
+        "text": "40% nguyên nhân vô sinh hiếm muộn đến từ nam giới, 40% đến từ nữ giới và 20% còn lại đến từ cả hai phía hoặc không rõ nguyên nhân.",
+        "head": "Vô sinh hiếm muộn",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Cả hai phía",
+        "tail_type": "cause"
+    },
+    {
+        "text": "40% nguyên nhân vô sinh hiếm muộn đến từ nam giới, 40% đến từ nữ giới và 20% còn lại đến từ cả hai phía hoặc không rõ nguyên nhân.",
+        "head": "Vô sinh hiếm muộn",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Không rõ nguyên nhân",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Nguyên nhân vô sinh hiếm muộn ở nam giới bao gồm:  Bất thường về tinh trùng: tinh trùng yếu, ít, không di động, dị dạng nhiều đều ảnh hưởng đến khả năng mang thai tự nhiên.",
+        "head": "Bất thường về tinh trùng",
+        "head_type": "cause",
+        "relation": "causes",
+        "tail": "Vô sinh hiếm muộn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nguyên nhân vô sinh hiếm muộn ở nam giới bao gồm:  Bất thường về tinh trùng: tinh trùng yếu, ít, không di động, dị dạng nhiều đều ảnh hưởng đến khả năng mang thai tự nhiên.",
+        "head": "Tinh trùng yếu",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Bất thường về tinh trùng",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Nguyên nhân vô sinh hiếm muộn ở nam giới bao gồm:  Bất thường về tinh trùng: tinh trùng yếu, ít, không di động, dị dạng nhiều đều ảnh hưởng đến khả năng mang thai tự nhiên.",
+        "head": "Tinh trùng ít",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Bất thường về tinh trùng",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Nguyên nhân vô sinh hiếm muộn ở nam giới bao gồm:  Bất thường về tinh trùng: tinh trùng yếu, ít, không di động, dị dạng nhiều đều ảnh hưởng đến khả năng mang thai tự nhiên.",
+        "head": "Tinh trùng không di động",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Bất thường về tinh trùng",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Nguyên nhân vô sinh hiếm muộn ở nam giới bao gồm:  Bất thường về tinh trùng: tinh trùng yếu, ít, không di động, dị dạng nhiều đều ảnh hưởng đến khả năng mang thai tự nhiên.",
+        "head": "Tinh trùng dị dạng",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Bất thường về tinh trùng",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Nguyên nhân vô sinh hiếm muộn ở nam giới bao gồm:  Bất thường về tinh trùng: tinh trùng yếu, ít, không di động, dị dạng nhiều đều ảnh hưởng đến khả năng mang thai tự nhiên.",
+        "head": "Bất thường về tinh trùng",
+        "head_type": "cause",
+        "relation": "affects",
+        "tail": "Khả năng mang thai tự nhiên",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Nguyên nhân vô sinh hiếm muộn ở nam giới bao gồm:  Bệnh ảnh hưởng đến sức khỏe sinh sản: giãn tĩnh mạch thừng tinh, teo tinh hoàn, tinh hoàn ẩn, có u bướu, viêm đường tiết niệu, ung thư, xuất tinh ngược dòng, bệnh celiac, có kháng thể kháng tinh trùng… Tiền sử từng phẫu thuật như thắt ống dẫn tinh, phẫu thuật ở vùng bẹn bìu… Làm việc ở môi trường tiếp xúc với hóa chất, chất phóng xạ, điện từ, nơi có nhiệt độ cao… Lối sống thường hút thuốc, uống rượu bia, sử dụng các chất kích thích, chất cấm và đồ ăn nhanh…",
+        "head": "Bệnh ảnh hưởng đến sức khỏe sinh sản",
+        "head_type": "cause",
+        "relation": "causes",
+        "tail": "Vô sinh hiếm muộn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nguyên nhân vô sinh hiếm muộn ở nam giới bao gồm:  Bệnh ảnh hưởng đến sức khỏe sinh sản: giãn tĩnh mạch thừng tinh, teo tinh hoàn, tinh hoàn ẩn, có u bướu, viêm đường tiết niệu, ung thư, xuất tinh ngược dòng, bệnh celiac, có kháng thể kháng tinh trùng… Tiền sử từng phẫu thuật như thắt ống dẫn tinh, phẫu thuật ở vùng bẹn bìu… Làm việc ở môi trường tiếp xúc với hóa chất, chất phóng xạ, điện từ, nơi có nhiệt độ cao… Lối sống thường hút thuốc, uống rượu bia, sử dụng các chất kích thích, chất cấm và đồ ăn nhanh…",
+        "head": "Giãn tĩnh mạch thừng tinh",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Bệnh ảnh hưởng đến sức khỏe sinh sản",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Nguyên nhân vô sinh hiếm muộn ở nam giới bao gồm:  Bệnh ảnh hưởng đến sức khỏe sinh sản: giãn tĩnh mạch thừng tinh, teo tinh hoàn, tinh hoàn ẩn, có u bướu, viêm đường tiết niệu, ung thư, xuất tinh ngược dòng, bệnh celiac, có kháng thể kháng tinh trùng… Tiền sử từng phẫu thuật như thắt ống dẫn tinh, phẫu thuật ở vùng bẹn bìu… Làm việc ở môi trường tiếp xúc với hóa chất, chất phóng xạ, điện từ, nơi có nhiệt độ cao… Lối sống thường hút thuốc, uống rượu bia, sử dụng các chất kích thích, chất cấm và đồ ăn nhanh…",
+        "head": "Teo tinh hoàn",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Bệnh ảnh hưởng đến sức khỏe sinh sản",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Nguyên nhân vô sinh hiếm muộn ở nam giới bao gồm:  Bệnh ảnh hưởng đến sức khỏe sinh sản: giãn tĩnh mạch thừng tinh, teo tinh hoàn, tinh hoàn ẩn, có u bướu, viêm đường tiết niệu, ung thư, xuất tinh ngược dòng, bệnh celiac, có kháng thể kháng tinh trùng… Tiền sử từng phẫu thuật như thắt ống dẫn tinh, phẫu thuật ở vùng bẹn bìu… Làm việc ở môi trường tiếp xúc với hóa chất, chất phóng xạ, điện từ, nơi có nhiệt độ cao… Lối sống thường hút thuốc, uống rượu bia, sử dụng các chất kích thích, chất cấm và đồ ăn nhanh…",
+        "head": "Tinh hoàn ẩn",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Bệnh ảnh hưởng đến sức khỏe sinh sản",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Nguyên nhân vô sinh hiếm muộn ở nam giới bao gồm:  Bệnh ảnh hưởng đến sức khỏe sinh sản: giãn tĩnh mạch thừng tinh, teo tinh hoàn, tinh hoàn ẩn, có u bướu, viêm đường tiết niệu, ung thư, xuất tinh ngược dòng, bệnh celiac, có kháng thể kháng tinh trùng… Tiền sử từng phẫu thuật như thắt ống dẫn tinh, phẫu thuật ở vùng bẹn bìu… Làm việc ở môi trường tiếp xúc với hóa chất, chất phóng xạ, điện từ, nơi có nhiệt độ cao… Lối sống thường hút thuốc, uống rượu bia, sử dụng các chất kích thích, chất cấm và đồ ăn nhanh…",
+        "head": "U bướu",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Bệnh ảnh hưởng đến sức khỏe sinh sản",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Nguyên nhân vô sinh hiếm muộn ở nam giới bao gồm:  Bệnh ảnh hưởng đến sức khỏe sinh sản: giãn tĩnh mạch thừng tinh, teo tinh hoàn, tinh hoàn ẩn, có u bướu, viêm đường tiết niệu, ung thư, xuất tinh ngược dòng, bệnh celiac, có kháng thể kháng tinh trùng… Tiền sử từng phẫu thuật như thắt ống dẫn tinh, phẫu thuật ở vùng bẹn bìu… Làm việc ở môi trường tiếp xúc với hóa chất, chất phóng xạ, điện từ, nơi có nhiệt độ cao… Lối sống thường hút thuốc, uống rượu bia, sử dụng các chất kích thích, chất cấm và đồ ăn nhanh…",
+        "head": "Viêm đường tiết niệu",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Bệnh ảnh hưởng đến sức khỏe sinh sản",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Nguyên nhân vô sinh hiếm muộn ở nam giới bao gồm:  Bệnh ảnh hưởng đến sức khỏe sinh sản: giãn tĩnh mạch thừng tinh, teo tinh hoàn, tinh hoàn ẩn, có u bướu, viêm đường tiết niệu, ung thư, xuất tinh ngược dòng, bệnh celiac, có kháng thể kháng tinh trùng… Tiền sử từng phẫu thuật như thắt ống dẫn tinh, phẫu thuật ở vùng bẹn bìu… Làm việc ở môi trường tiếp xúc với hóa chất, chất phóng xạ, điện từ, nơi có nhiệt độ cao… Lối sống thường hút thuốc, uống rượu bia, sử dụng các chất kích thích, chất cấm và đồ ăn nhanh…",
+        "head": "Ung thư",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Bệnh ảnh hưởng đến sức khỏe sinh sản",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Nguyên nhân vô sinh hiếm muộn ở nam giới bao gồm:  Bệnh ảnh hưởng đến sức khỏe sinh sản: giãn tĩnh mạch thừng tinh, teo tinh hoàn, tinh hoàn ẩn, có u bướu, viêm đường tiết niệu, ung thư, xuất tinh ngược dòng, bệnh celiac, có kháng thể kháng tinh trùng… Tiền sử từng phẫu thuật như thắt ống dẫn tinh, phẫu thuật ở vùng bẹn bìu… Làm việc ở môi trường tiếp xúc với hóa chất, chất phóng xạ, điện từ, nơi có nhiệt độ cao… Lối sống thường hút thuốc, uống rượu bia, sử dụng các chất kích thích, chất cấm và đồ ăn nhanh…",
+        "head": "Xuất tinh ngược dòng",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Bệnh ảnh hưởng đến sức khỏe sinh sản",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Nguyên nhân vô sinh hiếm muộn ở nam giới bao gồm:  Bệnh ảnh hưởng đến sức khỏe sinh sản: giãn tĩnh mạch thừng tinh, teo tinh hoàn, tinh hoàn ẩn, có u bướu, viêm đường tiết niệu, ung thư, xuất tinh ngược dòng, bệnh celiac, có kháng thể kháng tinh trùng… Tiền sử từng phẫu thuật như thắt ống dẫn tinh, phẫu thuật ở vùng bẹn bìu… Làm việc ở môi trường tiếp xúc với hóa chất, chất phóng xạ, điện từ, nơi có nhiệt độ cao… Lối sống thường hút thuốc, uống rượu bia, sử dụng các chất kích thích, chất cấm và đồ ăn nhanh…",
+        "head": "Bệnh celiac",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Bệnh ảnh hưởng đến sức khỏe sinh sản",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Nguyên nhân vô sinh hiếm muộn ở nam giới bao gồm:  Bệnh ảnh hưởng đến sức khỏe sinh sản: giãn tĩnh mạch thừng tinh, teo tinh hoàn, tinh hoàn ẩn, có u bướu, viêm đường tiết niệu, ung thư, xuất tinh ngược dòng, bệnh celiac, có kháng thể kháng tinh trùng… Tiền sử từng phẫu thuật như thắt ống dẫn tinh, phẫu thuật ở vùng bẹn bìu… Làm việc ở môi trường tiếp xúc với hóa chất, chất phóng xạ, điện từ, nơi có nhiệt độ cao… Lối sống thường hút thuốc, uống rượu bia, sử dụng các chất kích thích, chất cấm và đồ ăn nhanh…",
+        "head": "Kháng thể kháng tinh trùng",
+        "head_type": "cause",
+        "relation": "isSymptomOf",
+        "tail": "Bệnh ảnh hưởng đến sức khỏe sinh sản",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Nguyên nhân vô sinh hiếm muộn ở nam giới bao gồm:  Bệnh ảnh hưởng đến sức khỏe sinh sản: giãn tĩnh mạch thừng tinh, teo tinh hoàn, tinh hoàn ẩn, có u bướu, viêm đường tiết niệu, ung thư, xuất tinh ngược dòng, bệnh celiac, có kháng thể kháng tinh trùng… Tiền sử từng phẫu thuật như thắt ống dẫn tinh, phẫu thuật ở vùng bẹn bìu… Làm việc ở môi trường tiếp xúc với hóa chất, chất phóng xạ, điện từ, nơi có nhiệt độ cao… Lối sống thường hút thuốc, uống rượu bia, sử dụng các chất kích thích, chất cấm và đồ ăn nhanh…",
+        "head": "Thắt ống dẫn tinh",
+        "head_type": "treatment",
+        "relation": "causes",
+        "tail": "Vô sinh hiếm muộn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nguyên nhân vô sinh hiếm muộn ở nam giới bao gồm:  Bệnh ảnh hưởng đến sức khỏe sinh sản: giãn tĩnh mạch thừng tinh, teo tinh hoàn, tinh hoàn ẩn, có u bướu, viêm đường tiết niệu, ung thư, xuất tinh ngược dòng, bệnh celiac, có kháng thể kháng tinh trùng… Tiền sử từng phẫu thuật như thắt ống dẫn tinh, phẫu thuật ở vùng bẹn bìu… Làm việc ở môi trường tiếp xúc với hóa chất, chất phóng xạ, điện từ, nơi có nhiệt độ cao… Lối sống thường hút thuốc, uống rượu bia, sử dụng các chất kích thích, chất cấm và đồ ăn nhanh…",
+        "head": "Phẫu thuật ở vùng bẹn bìu",
+        "head_type": "treatment",
+        "relation": "causes",
+        "tail": "Vô sinh hiếm muộn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nguyên nhân vô sinh hiếm muộn ở nam giới bao gồm:  Bệnh ảnh hưởng đến sức khỏe sinh sản: giãn tĩnh mạch thừng tinh, teo tinh hoàn, tinh hoàn ẩn, có u bướu, viêm đường tiết niệu, ung thư, xuất tinh ngược dòng, bệnh celiac, có kháng thể kháng tinh trùng… Tiền sử từng phẫu thuật như thắt ống dẫn tinh, phẫu thuật ở vùng bẹn bìu… Làm việc ở môi trường tiếp xúc với hóa chất, chất phóng xạ, điện từ, nơi có nhiệt độ cao… Lối sống thường hút thuốc, uống rượu bia, sử dụng các chất kích thích, chất cấm và đồ ăn nhanh…",
+        "head": "Hóa chất",
+        "head_type": "cause",
+        "relation": "causes",
+        "tail": "Vô sinh hiếm muộn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nguyên nhân vô sinh hiếm muộn ở nam giới bao gồm:  Bệnh ảnh hưởng đến sức khỏe sinh sản: giãn tĩnh mạch thừng tinh, teo tinh hoàn, tinh hoàn ẩn, có u bướu, viêm đường tiết niệu, ung thư, xuất tinh ngược dòng, bệnh celiac, có kháng thể kháng tinh trùng… Tiền sử từng phẫu thuật như thắt ống dẫn tinh, phẫu thuật ở vùng bẹn bìu… Làm việc ở môi trường tiếp xúc với hóa chất, chất phóng xạ, điện từ, nơi có nhiệt độ cao… Lối sống thường hút thuốc, uống rượu bia, sử dụng các chất kích thích, chất cấm và đồ ăn nhanh…",
+        "head": "Chất phóng xạ",
+        "head_type": "cause",
+        "relation": "causes",
+        "tail": "Vô sinh hiếm muộn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nguyên nhân vô sinh hiếm muộn ở nam giới bao gồm:  Bệnh ảnh hưởng đến sức khỏe sinh sản: giãn tĩnh mạch thừng tinh, teo tinh hoàn, tinh hoàn ẩn, có u bướu, viêm đường tiết niệu, ung thư, xuất tinh ngược dòng, bệnh celiac, có kháng thể kháng tinh trùng… Tiền sử từng phẫu thuật như thắt ống dẫn tinh, phẫu thuật ở vùng bẹn bìu… Làm việc ở môi trường tiếp xúc với hóa chất, chất phóng xạ, điện từ, nơi có nhiệt độ cao… Lối sống thường hút thuốc, uống rượu bia, sử dụng các chất kích thích, chất cấm và đồ ăn nhanh…",
+        "head": "Điện từ",
+        "head_type": "cause",
+        "relation": "causes",
+        "tail": "Vô sinh hiếm muộn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nguyên nhân vô sinh hiếm muộn ở nam giới bao gồm:  Bệnh ảnh hưởng đến sức khỏe sinh sản: giãn tĩnh mạch thừng tinh, teo tinh hoàn, tinh hoàn ẩn, có u bướu, viêm đường tiết niệu, ung thư, xuất tinh ngược dòng, bệnh celiac, có kháng thể kháng tinh trùng… Tiền sử từng phẫu thuật như thắt ống dẫn tinh, phẫu thuật ở vùng bẹn bìu… Làm việc ở môi trường tiếp xúc với hóa chất, chất phóng xạ, điện từ, nơi có nhiệt độ cao… Lối sống thường hút thuốc, uống rượu bia, sử dụng các chất kích thích, chất cấm và đồ ăn nhanh…",
+        "head": "Nhiệt độ cao",
+        "head_type": "cause",
+        "relation": "causes",
+        "tail": "Vô sinh hiếm muộn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nguyên nhân vô sinh hiếm muộn ở nam giới bao gồm:  Bệnh ảnh hưởng đến sức khỏe sinh sản: giãn tĩnh mạch thừng tinh, teo tinh hoàn, tinh hoàn ẩn, có u bướu, viêm đường tiết niệu, ung thư, xuất tinh ngược dòng, bệnh celiac, có kháng thể kháng tinh trùng… Tiền sử từng phẫu thuật như thắt ống dẫn tinh, phẫu thuật ở vùng bẹn bìu… Làm việc ở môi trường tiếp xúc với hóa chất, chất phóng xạ, điện từ, nơi có nhiệt độ cao… Lối sống thường hút thuốc, uống rượu bia, sử dụng các chất kích thích, chất cấm và đồ ăn nhanh…",
+        "head": "Hút thuốc",
+        "head_type": "lifestyle",
+        "relation": "causes",
+        "tail": "Vô sinh hiếm muộn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nguyên nhân vô sinh hiếm muộn ở nam giới bao gồm:  Bệnh ảnh hưởng đến sức khỏe sinh sản: giãn tĩnh mạch thừng tinh, teo tinh hoàn, tinh hoàn ẩn, có u bướu, viêm đường tiết niệu, ung thư, xuất tinh ngược dòng, bệnh celiac, có kháng thể kháng tinh trùng… Tiền sử từng phẫu thuật như thắt ống dẫn tinh, phẫu thuật ở vùng bẹn bìu… Làm việc ở môi trường tiếp xúc với hóa chất, chất phóng xạ, điện từ, nơi có nhiệt độ cao… Lối sống thường hút thuốc, uống rượu bia, sử dụng các chất kích thích, chất cấm và đồ ăn nhanh…",
+        "head": "Uống rượu bia",
+        "head_type": "lifestyle",
+        "relation": "causes",
+        "tail": "Vô sinh hiếm muộn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nguyên nhân vô sinh hiếm muộn ở nam giới bao gồm:  Bệnh ảnh hưởng đến sức khỏe sinh sản: giãn tĩnh mạch thừng tinh, teo tinh hoàn, tinh hoàn ẩn, có u bướu, viêm đường tiết niệu, ung thư, xuất tinh ngược dòng, bệnh celiac, có kháng thể kháng tinh trùng… Tiền sử từng phẫu thuật như thắt ống dẫn tinh, phẫu thuật ở vùng bẹn bìu… Làm việc ở môi trường tiếp xúc với hóa chất, chất phóng xạ, điện từ, nơi có nhiệt độ cao… Lối sống thường hút thuốc, uống rượu bia, sử dụng các chất kích thích, chất cấm và đồ ăn nhanh…",
+        "head": "Chất kích thích",
+        "head_type": "lifestyle",
+        "relation": "causes",
+        "tail": "Vô sinh hiếm muộn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nguyên nhân vô sinh hiếm muộn ở nam giới bao gồm:  Bệnh ảnh hưởng đến sức khỏe sinh sản: giãn tĩnh mạch thừng tinh, teo tinh hoàn, tinh hoàn ẩn, có u bướu, viêm đường tiết niệu, ung thư, xuất tinh ngược dòng, bệnh celiac, có kháng thể kháng tinh trùng… Tiền sử từng phẫu thuật như thắt ống dẫn tinh, phẫu thuật ở vùng bẹn bìu… Làm việc ở môi trường tiếp xúc với hóa chất, chất phóng xạ, điện từ, nơi có nhiệt độ cao… Lối sống thường hút thuốc, uống rượu bia, sử dụng các chất kích thích, chất cấm và đồ ăn nhanh…",
+        "head": "Chất cấm",
+        "head_type": "lifestyle",
+        "relation": "causes",
+        "tail": "Vô sinh hiếm muộn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nguyên nhân vô sinh hiếm muộn ở nam giới bao gồm:  Bệnh ảnh hưởng đến sức khỏe sinh sản: giãn tĩnh mạch thừng tinh, teo tinh hoàn, tinh hoàn ẩn, có u bướu, viêm đường tiết niệu, ung thư, xuất tinh ngược dòng, bệnh celiac, có kháng thể kháng tinh trùng… Tiền sử từng phẫu thuật như thắt ống dẫn tinh, phẫu thuật ở vùng bẹn bìu… Làm việc ở môi trường tiếp xúc với hóa chất, chất phóng xạ, điện từ, nơi có nhiệt độ cao… Lối sống thường hút thuốc, uống rượu bia, sử dụng các chất kích thích, chất cấm và đồ ăn nhanh…",
+        "head": "Đồ ăn nhanh",
+        "head_type": "food",
+        "relation": "causes",
+        "tail": "Vô sinh hiếm muộn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nguyên nhân vô sinh hiếm muộn ở nữ giới bao gồm:  Các bệnh lý ở tử cung như: viêm nội mạc tử cung mãn tính, tử cung có vách ngăn, có lạc nội mạc, u xơ tử cung, polyp tử cung, tử cung dị dạng, niêm mạc tử cung mỏng… Suy buồng trứng sớm; Bất thường ở vòi tử cung như ứ dịch, viêm, chít hẹp, từng làm phẫu thuật cắt 2 vòi tử cung; Viêm vùng chậu, nhiễm nấm chlamydia, mắc các bệnh lây truyền qua đường tình dục như lậu, giang mai… Có tình trạng tăng prolactin máu.",
+        "head": "Bệnh lý ở tử cung",
+        "head_type": "cause",
+        "relation": "causes",
+        "tail": "Vô sinh hiếm muộn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nguyên nhân vô sinh hiếm muộn ở nữ giới bao gồm:  Các bệnh lý ở tử cung như: viêm nội mạc tử cung mãn tính, tử cung có vách ngăn, có lạc nội mạc, u xơ tử cung, polyp tử cung, tử cung dị dạng, niêm mạc tử cung mỏng… Suy buồng trứng sớm; Bất thường ở vòi tử cung như ứ dịch, viêm, chít hẹp, từng làm phẫu thuật cắt 2 vòi tử cung; Viêm vùng chậu, nhiễm nấm chlamydia, mắc các bệnh lây truyền qua đường tình dục như lậu, giang mai… Có tình trạng tăng prolactin máu.",
+        "head": "Viêm nội mạc tử cung mãn tính",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Bệnh lý ở tử cung",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Nguyên nhân vô sinh hiếm muộn ở nữ giới bao gồm:  Các bệnh lý ở tử cung như: viêm nội mạc tử cung mãn tính, tử cung có vách ngăn, có lạc nội mạc, u xơ tử cung, polyp tử cung, tử cung dị dạng, niêm mạc tử cung mỏng… Suy buồng trứng sớm; Bất thường ở vòi tử cung như ứ dịch, viêm, chít hẹp, từng làm phẫu thuật cắt 2 vòi tử cung; Viêm vùng chậu, nhiễm nấm chlamydia, mắc các bệnh lây truyền qua đường tình dục như lậu, giang mai… Có tình trạng tăng prolactin máu.",
+        "head": "Tử cung có vách ngăn",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Bệnh lý ở tử cung",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Nguyên nhân vô sinh hiếm muộn ở nữ giới bao gồm:  Các bệnh lý ở tử cung như: viêm nội mạc tử cung mãn tính, tử cung có vách ngăn, có lạc nội mạc, u xơ tử cung, polyp tử cung, tử cung dị dạng, niêm mạc tử cung mỏng… Suy buồng trứng sớm; Bất thường ở vòi tử cung như ứ dịch, viêm, chít hẹp, từng làm phẫu thuật cắt 2 vòi tử cung; Viêm vùng chậu, nhiễm nấm chlamydia, mắc các bệnh lây truyền qua đường tình dục như lậu, giang mai… Có tình trạng tăng prolactin máu.",
+        "head": "Lạc nội mạc",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Bệnh lý ở tử cung",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Nguyên nhân vô sinh hiếm muộn ở nữ giới bao gồm:  Các bệnh lý ở tử cung như: viêm nội mạc tử cung mãn tính, tử cung có vách ngăn, có lạc nội mạc, u xơ tử cung, polyp tử cung, tử cung dị dạng, niêm mạc tử cung mỏng… Suy buồng trứng sớm; Bất thường ở vòi tử cung như ứ dịch, viêm, chít hẹp, từng làm phẫu thuật cắt 2 vòi tử cung; Viêm vùng chậu, nhiễm nấm chlamydia, mắc các bệnh lây truyền qua đường tình dục như lậu, giang mai… Có tình trạng tăng prolactin máu.",
+        "head": "U xơ tử cung",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Bệnh lý ở tử cung",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Nguyên nhân vô sinh hiếm muộn ở nữ giới bao gồm:  Các bệnh lý ở tử cung như: viêm nội mạc tử cung mãn tính, tử cung có vách ngăn, có lạc nội mạc, u xơ tử cung, polyp tử cung, tử cung dị dạng, niêm mạc tử cung mỏng… Suy buồng trứng sớm; Bất thường ở vòi tử cung như ứ dịch, viêm, chít hẹp, từng làm phẫu thuật cắt 2 vòi tử cung; Viêm vùng chậu, nhiễm nấm chlamydia, mắc các bệnh lây truyền qua đường tình dục như lậu, giang mai… Có tình trạng tăng prolactin máu.",
+        "head": "Polyp tử cung",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Bệnh lý ở tử cung",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Nguyên nhân vô sinh hiếm muộn ở nữ giới bao gồm:  Các bệnh lý ở tử cung như: viêm nội mạc tử cung mãn tính, tử cung có vách ngăn, có lạc nội mạc, u xơ tử cung, polyp tử cung, tử cung dị dạng, niêm mạc tử cung mỏng… Suy buồng trứng sớm; Bất thường ở vòi tử cung như ứ dịch, viêm, chít hẹp, từng làm phẫu thuật cắt 2 vòi tử cung; Viêm vùng chậu, nhiễm nấm chlamydia, mắc các bệnh lây truyền qua đường tình dục như lậu, giang mai… Có tình trạng tăng prolactin máu.",
+        "head": "Tử cung dị dạng",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Bệnh lý ở tử cung",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Nguyên nhân vô sinh hiếm muộn ở nữ giới bao gồm:  Các bệnh lý ở tử cung như: viêm nội mạc tử cung mãn tính, tử cung có vách ngăn, có lạc nội mạc, u xơ tử cung, polyp tử cung, tử cung dị dạng, niêm mạc tử cung mỏng… Suy buồng trứng sớm; Bất thường ở vòi tử cung như ứ dịch, viêm, chít hẹp, từng làm phẫu thuật cắt 2 vòi tử cung; Viêm vùng chậu, nhiễm nấm chlamydia, mắc các bệnh lây truyền qua đường tình dục như lậu, giang mai… Có tình trạng tăng prolactin máu.",
+        "head": "Niêm mạc tử cung mỏng",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Bệnh lý ở tử cung",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Nguyên nhân vô sinh hiếm muộn ở nữ giới bao gồm:  Các bệnh lý ở tử cung như: viêm nội mạc tử cung mãn tính, tử cung có vách ngăn, có lạc nội mạc, u xơ tử cung, polyp tử cung, tử cung dị dạng, niêm mạc tử cung mỏng… Suy buồng trứng sớm; Bất thường ở vòi tử cung như ứ dịch, viêm, chít hẹp, từng làm phẫu thuật cắt 2 vòi tử cung; Viêm vùng chậu, nhiễm nấm chlamydia, mắc các bệnh lây truyền qua đường tình dục như lậu, giang mai… Có tình trạng tăng prolactin máu.",
+        "head": "Suy buồng trứng sớm",
+        "head_type": "disease",
+        "relation": "causes",
+        "tail": "Vô sinh hiếm muộn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nguyên nhân vô sinh hiếm muộn ở nữ giới bao gồm:  Các bệnh lý ở tử cung như: viêm nội mạc tử cung mãn tính, tử cung có vách ngăn, có lạc nội mạc, u xơ tử cung, polyp tử cung, tử cung dị dạng, niêm mạc tử cung mỏng… Suy buồng trứng sớm; Bất thường ở vòi tử cung như ứ dịch, viêm, chít hẹp, từng làm phẫu thuật cắt 2 vòi tử cung; Viêm vùng chậu, nhiễm nấm chlamydia, mắc các bệnh lây truyền qua đường tình dục như lậu, giang mai… Có tình trạng tăng prolactin máu.",
+        "head": "Bất thường ở vòi tử cung",
+        "head_type": "cause",
+        "relation": "causes",
+        "tail": "Vô sinh hiếm muộn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nguyên nhân vô sinh hiếm muộn ở nữ giới bao gồm:  Các bệnh lý ở tử cung như: viêm nội mạc tử cung mãn tính, tử cung có vách ngăn, có lạc nội mạc, u xơ tử cung, polyp tử cung, tử cung dị dạng, niêm mạc tử cung mỏng… Suy buồng trứng sớm; Bất thường ở vòi tử cung như ứ dịch, viêm, chít hẹp, từng làm phẫu thuật cắt 2 vòi tử cung; Viêm vùng chậu, nhiễm nấm chlamydia, mắc các bệnh lây truyền qua đường tình dục như lậu, giang mai… Có tình trạng tăng prolactin máu.",
+        "head": "Ứ dịch",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Bất thường ở vòi tử cung",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Nguyên nhân vô sinh hiếm muộn ở nữ giới bao gồm:  Các bệnh lý ở tử cung như: viêm nội mạc tử cung mãn tính, tử cung có vách ngăn, có lạc nội mạc, u xơ tử cung, polyp tử cung, tử cung dị dạng, niêm mạc tử cung mỏng… Suy buồng trứng sớm; Bất thường ở vòi tử cung như ứ dịch, viêm, chít hẹp, từng làm phẫu thuật cắt 2 vòi tử cung; Viêm vùng chậu, nhiễm nấm chlamydia, mắc các bệnh lây truyền qua đường tình dục như lậu, giang mai… Có tình trạng tăng prolactin máu.",
+        "head": "Viêm",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Bất thường ở vòi tử cung",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Được xem là căn bệnh của thời đại, làm sao để phòng ngừa vô sinh hiếm muộn là mối quan tâm của nhiều người.",
+        "head": "vô sinh hiếm muộn",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "thời đại",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Ngoài những bệnh lý di truyền không thể phòng ngừa có thể dẫn đến hiếm muộn, việc thay đổi lối sống, thói quen hằng ngày được cho là có tác dụng góp phần phòng tránh vô sinh như:  Thực hiện lối sống lành mạnh, không thuốc lá, hạn chế rượu bia, không sử dụng các chất kích thích, chất cấm.",
+        "head": "vô sinh",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "bệnh lý di truyền",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ngoài những bệnh lý di truyền không thể phòng ngừa có thể dẫn đến hiếm muộn, việc thay đổi lối sống, thói quen hằng ngày được cho là có tác dụng góp phần phòng tránh vô sinh như:  Thực hiện lối sống lành mạnh, không thuốc lá, hạn chế rượu bia, không sử dụng các chất kích thích, chất cấm.",
+        "head": "vô sinh",
+        "head_type": "disease",
+        "relation": "preventedBy",
+        "tail": "thay đổi lối sống",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Ngoài những bệnh lý di truyền không thể phòng ngừa có thể dẫn đến hiếm muộn, việc thay đổi lối sống, thói quen hằng ngày được cho là có tác dụng góp phần phòng tránh vô sinh như:  Thực hiện lối sống lành mạnh, không thuốc lá, hạn chế rượu bia, không sử dụng các chất kích thích, chất cấm.",
+        "head": "vô sinh",
+        "head_type": "disease",
+        "relation": "preventedBy",
+        "tail": "lối sống lành mạnh",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Ngoài những bệnh lý di truyền không thể phòng ngừa có thể dẫn đến hiếm muộn, việc thay đổi lối sống, thói quen hằng ngày được cho là có tác dụng góp phần phòng tránh vô sinh như:  Thực hiện lối sống lành mạnh, không thuốc lá, hạn chế rượu bia, không sử dụng các chất kích thích, chất cấm.",
+        "head": "vô sinh",
+        "head_type": "disease",
+        "relation": "preventedBy",
+        "tail": "không thuốc lá",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Ngoài những bệnh lý di truyền không thể phòng ngừa có thể dẫn đến hiếm muộn, việc thay đổi lối sống, thói quen hằng ngày được cho là có tác dụng góp phần phòng tránh vô sinh như:  Thực hiện lối sống lành mạnh, không thuốc lá, hạn chế rượu bia, không sử dụng các chất kích thích, chất cấm.",
+        "head": "vô sinh",
+        "head_type": "disease",
+        "relation": "preventedBy",
+        "tail": "hạn chế rượu bia",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Ngoài những bệnh lý di truyền không thể phòng ngừa có thể dẫn đến hiếm muộn, việc thay đổi lối sống, thói quen hằng ngày được cho là có tác dụng góp phần phòng tránh vô sinh như:  Thực hiện lối sống lành mạnh, không thuốc lá, hạn chế rượu bia, không sử dụng các chất kích thích, chất cấm.",
+        "head": "vô sinh",
+        "head_type": "disease",
+        "relation": "preventedBy",
+        "tail": "không sử dụng các chất kích thích",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Ngoài những bệnh lý di truyền không thể phòng ngừa có thể dẫn đến hiếm muộn, việc thay đổi lối sống, thói quen hằng ngày được cho là có tác dụng góp phần phòng tránh vô sinh như:  Thực hiện lối sống lành mạnh, không thuốc lá, hạn chế rượu bia, không sử dụng các chất kích thích, chất cấm.",
+        "head": "vô sinh",
+        "head_type": "disease",
+        "relation": "preventedBy",
+        "tail": "chất cấm",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Luyện tập thể dục thể thao như một thói quen để nâng cao sức khỏe, vợ chồng nên chọn những bài tập đơn giản, nhẹ nhàng như yoga, bơi lội, đi bộ… không nên quá lạm dụng việc tập thể thao.",
+        "head": "vô sinh",
+        "head_type": "disease",
+        "relation": "preventedBy",
+        "tail": "luyện tập thể dục thể thao",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Luyện tập thể dục thể thao như một thói quen để nâng cao sức khỏe, vợ chồng nên chọn những bài tập đơn giản, nhẹ nhàng như yoga, bơi lội, đi bộ… không nên quá lạm dụng việc tập thể thao.",
+        "head": "vô sinh",
+        "head_type": "disease",
+        "relation": "preventedBy",
+        "tail": "yoga",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Luyện tập thể dục thể thao như một thói quen để nâng cao sức khỏe, vợ chồng nên chọn những bài tập đơn giản, nhẹ nhàng như yoga, bơi lội, đi bộ… không nên quá lạm dụng việc tập thể thao.",
+        "head": "vô sinh",
+        "head_type": "disease",
+        "relation": "preventedBy",
+        "tail": "bơi lội",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Luyện tập thể dục thể thao như một thói quen để nâng cao sức khỏe, vợ chồng nên chọn những bài tập đơn giản, nhẹ nhàng như yoga, bơi lội, đi bộ… không nên quá lạm dụng việc tập thể thao.",
+        "head": "vô sinh",
+        "head_type": "disease",
+        "relation": "preventedBy",
+        "tail": "đi bộ",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Duy trì cân nặng hợp lý, chế độ ăn đầy đủ dinh dưỡng, ăn nhiều rau, củ, trái cây, bổ sung protein, đạm… hạn chế đồ chế biến sẵn, thực phẩm chiên, rán và chứa nhiều chất phụ gia.",
+        "head": "vô sinh",
+        "head_type": "disease",
+        "relation": "preventedBy",
+        "tail": "duy trì cân nặng hợp lý",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Duy trì cân nặng hợp lý, chế độ ăn đầy đủ dinh dưỡng, ăn nhiều rau, củ, trái cây, bổ sung protein, đạm… hạn chế đồ chế biến sẵn, thực phẩm chiên, rán và chứa nhiều chất phụ gia.",
+        "head": "vô sinh",
+        "head_type": "disease",
+        "relation": "preventedBy",
+        "tail": "chế độ ăn đầy đủ dinh dưỡng",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Duy trì cân nặng hợp lý, chế độ ăn đầy đủ dinh dưỡng, ăn nhiều rau, củ, trái cây, bổ sung protein, đạm… hạn chế đồ chế biến sẵn, thực phẩm chiên, rán và chứa nhiều chất phụ gia.",
+        "head": "vô sinh",
+        "head_type": "disease",
+        "relation": "preventedBy",
+        "tail": "ăn nhiều rau",
+        "tail_type": "food"
+    },
+    {
+        "text": "Duy trì cân nặng hợp lý, chế độ ăn đầy đủ dinh dưỡng, ăn nhiều rau, củ, trái cây, bổ sung protein, đạm… hạn chế đồ chế biến sẵn, thực phẩm chiên, rán và chứa nhiều chất phụ gia.",
+        "head": "vô sinh",
+        "head_type": "disease",
+        "relation": "preventedBy",
+        "tail": "củ",
+        "tail_type": "food"
+    },
+    {
+        "text": "Duy trì cân nặng hợp lý, chế độ ăn đầy đủ dinh dưỡng, ăn nhiều rau, củ, trái cây, bổ sung protein, đạm… hạn chế đồ chế biến sẵn, thực phẩm chiên, rán và chứa nhiều chất phụ gia.",
+        "head": "vô sinh",
+        "head_type": "disease",
+        "relation": "preventedBy",
+        "tail": "trái cây",
+        "tail_type": "food"
+    },
+    {
+        "text": "Duy trì cân nặng hợp lý, chế độ ăn đầy đủ dinh dưỡng, ăn nhiều rau, củ, trái cây, bổ sung protein, đạm… hạn chế đồ chế biến sẵn, thực phẩm chiên, rán và chứa nhiều chất phụ gia.",
+        "head": "vô sinh",
+        "head_type": "disease",
+        "relation": "preventedBy",
+        "tail": "protein",
+        "tail_type": "food"
+    },
+    {
+        "text": "Duy trì cân nặng hợp lý, chế độ ăn đầy đủ dinh dưỡng, ăn nhiều rau, củ, trái cây, bổ sung protein, đạm… hạn chế đồ chế biến sẵn, thực phẩm chiên, rán và chứa nhiều chất phụ gia.",
+        "head": "vô sinh",
+        "head_type": "disease",
+        "relation": "preventedBy",
+        "tail": "đạm",
+        "tail_type": "food"
+    },
+    {
+        "text": "Duy trì cân nặng hợp lý, chế độ ăn đầy đủ dinh dưỡng, ăn nhiều rau, củ, trái cây, bổ sung protein, đạm… hạn chế đồ chế biến sẵn, thực phẩm chiên, rán và chứa nhiều chất phụ gia.",
+        "head": "vô sinh",
+        "head_type": "disease",
+        "relation": "preventedBy",
+        "tail": "đồ chế biến sẵn",
+        "tail_type": "food"
+    },
+    {
+        "text": "Duy trì cân nặng hợp lý, chế độ ăn đầy đủ dinh dưỡng, ăn nhiều rau, củ, trái cây, bổ sung protein, đạm… hạn chế đồ chế biến sẵn, thực phẩm chiên, rán và chứa nhiều chất phụ gia.",
+        "head": "vô sinh",
+        "head_type": "disease",
+        "relation": "preventedBy",
+        "tail": "thực phẩm chiên",
+        "tail_type": "food"
+    },
+    {
+        "text": "Duy trì cân nặng hợp lý, chế độ ăn đầy đủ dinh dưỡng, ăn nhiều rau, củ, trái cây, bổ sung protein, đạm… hạn chế đồ chế biến sẵn, thực phẩm chiên, rán và chứa nhiều chất phụ gia.",
+        "head": "vô sinh",
+        "head_type": "disease",
+        "relation": "preventedBy",
+        "tail": "rán",
+        "tail_type": "food"
+    },
+    {
+        "text": "Duy trì cân nặng hợp lý, chế độ ăn đầy đủ dinh dưỡng, ăn nhiều rau, củ, trái cây, bổ sung protein, đạm… hạn chế đồ chế biến sẵn, thực phẩm chiên, rán và chứa nhiều chất phụ gia.",
+        "head": "vô sinh",
+        "head_type": "disease",
+        "relation": "preventedBy",
+        "tail": "chất phụ gia",
+        "tail_type": "food"
+    },
+    {
+        "text": "Quan hệ tình dục lành mạnh, chế độ một vợ một chồng.",
+        "head": "vô sinh",
+        "head_type": "disease",
+        "relation": "preventedBy",
+        "tail": "quan hệ tình dục lành mạnh",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Quan hệ tình dục lành mạnh, chế độ một vợ một chồng.",
+        "head": "vô sinh",
+        "head_type": "disease",
+        "relation": "preventedBy",
+        "tail": "chế độ một vợ một chồng",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Không lạm dụng việc nạo phá thai.",
+        "head": "vô sinh",
+        "head_type": "disease",
+        "relation": "preventedBy",
+        "tail": "nạo phá thai",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Đi khám vô sinh ngay khi gặp những vấn đề cảnh báo sức khỏe sinh sản.",
+        "head": "vô sinh",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "khám vô sinh",
+        "tail_type": "test"
+    },
+    {
+        "text": "Trung tâm Hỗ trợ sinh sản Bệnh viện Đa khoa Tâm Anh quy tụ đội ngũ y bác sĩ là những chuyên gia hàng đầu trong lĩnh vực điều trị vô sinh hiếm muộn, sở hữu hệ thống máy móc, trang thiết bị hiện đại, hệ thống phòng Lab siêu sạch đạt tiêu chuẩn ISO 5 nghiêm ngặt… triển khai đa dạng tất cả các kỹ thuật hỗ trợ sinh sản tiên tiến nhất hiện nay, hiện thực hóa ước mơ bồng bế con yêu “chính chủ” của hàng triệu cặp vợ chồng hiếm muộn.",
+        "head": "vô sinh hiếm muộn",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "Trung tâm Hỗ trợ sinh sản Bệnh viện Đa khoa Tâm Anh",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Trung tâm Hỗ trợ sinh sản Bệnh viện Đa khoa Tâm Anh quy tụ đội ngũ y bác sĩ là những chuyên gia hàng đầu trong lĩnh vực điều trị vô sinh hiếm muộn, sở hữu hệ thống máy móc, trang thiết bị hiện đại, hệ thống phòng Lab siêu sạch đạt tiêu chuẩn ISO 5 nghiêm ngặt… triển khai đa dạng tất cả các kỹ thuật hỗ trợ sinh sản tiên tiến nhất hiện nay, hiện thực hóa ước mơ bồng bế con yêu “chính chủ” của hàng triệu cặp vợ chồng hiếm muộn.",
+        "head": "vô sinh hiếm muộn",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "chuyên gia",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Trung tâm Hỗ trợ sinh sản Bệnh viện Đa khoa Tâm Anh quy tụ đội ngũ y bác sĩ là những chuyên gia hàng đầu trong lĩnh vực điều trị vô sinh hiếm muộn, sở hữu hệ thống máy móc, trang thiết bị hiện đại, hệ thống phòng Lab siêu sạch đạt tiêu chuẩn ISO 5 nghiêm ngặt… triển khai đa dạng tất cả các kỹ thuật hỗ trợ sinh sản tiên tiến nhất hiện nay, hiện thực hóa ước mơ bồng bế con yêu “chính chủ” của hàng triệu cặp vợ chồng hiếm muộn.",
+        "head": "vô sinh hiếm muộn",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "trang thiết bị hiện đại",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Trung tâm Hỗ trợ sinh sản Bệnh viện Đa khoa Tâm Anh quy tụ đội ngũ y bác sĩ là những chuyên gia hàng đầu trong lĩnh vực điều trị vô sinh hiếm muộn, sở hữu hệ thống máy móc, trang thiết bị hiện đại, hệ thống phòng Lab siêu sạch đạt tiêu chuẩn ISO 5 nghiêm ngặt… triển khai đa dạng tất cả các kỹ thuật hỗ trợ sinh sản tiên tiến nhất hiện nay, hiện thực hóa ước mơ bồng bế con yêu “chính chủ” của hàng triệu cặp vợ chồng hiếm muộn.",
+        "head": "vô sinh hiếm muộn",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "phòng Lab siêu sạch",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Trung tâm Hỗ trợ sinh sản Bệnh viện Đa khoa Tâm Anh quy tụ đội ngũ y bác sĩ là những chuyên gia hàng đầu trong lĩnh vực điều trị vô sinh hiếm muộn, sở hữu hệ thống máy móc, trang thiết bị hiện đại, hệ thống phòng Lab siêu sạch đạt tiêu chuẩn ISO 5 nghiêm ngặt… triển khai đa dạng tất cả các kỹ thuật hỗ trợ sinh sản tiên tiến nhất hiện nay, hiện thực hóa ước mơ bồng bế con yêu “chính chủ” của hàng triệu cặp vợ chồng hiếm muộn.",
+        "head": "vô sinh hiếm muộn",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "kỹ thuật hỗ trợ sinh sản tiên tiến",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Tại Trung tâm Hỗ trợ sinh sản BVĐK Tâm Anh có nhiều phương pháp hỗ trợ sinh sản như:  Bơm tinh trùng vào buồng tử cung (IUI); Thụ tinh trong ống nghiệm (IVF); Tiêm tinh trùng vào bào tương noãn (ICSI); Trưởng thành trứng non IVM; Trữ lạnh phôi, noãn và tinh trùng: Hỗ trợ phôi thoát màng (AH); Chuyển phôi giai đoạn Blastocyst (ngày 5); Xét nghiệm di truyền tiền làm tổ (PGT); Phẫu thuật nội soi, soi buồng tử cung trong vô sinh; Phẫu thuật nội soi trong vô sinh; Phẫu thuật tạo hình trong bất thường sinh dục - vô sinh;   ",
+        "head": "vô sinh",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "Bơm tinh trùng vào buồng tử cung (IUI)",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Tại Trung tâm Hỗ trợ sinh sản BVĐK Tâm Anh có nhiều phương pháp hỗ trợ sinh sản như:  Bơm tinh trùng vào buồng tử cung (IUI); Thụ tinh trong ống nghiệm (IVF); Tiêm tinh trùng vào bào tương noãn (ICSI); Trưởng thành trứng non IVM; Trữ lạnh phôi, noãn và tinh trùng: Hỗ trợ phôi thoát màng (AH); Chuyển phôi giai đoạn Blastocyst (ngày 5); Xét nghiệm di truyền tiền làm tổ (PGT); Phẫu thuật nội soi, soi buồng tử cung trong vô sinh; Phẫu thuật nội soi trong vô sinh; Phẫu thuật tạo hình trong bất thường sinh dục - vô sinh;   ",
+        "head": "vô sinh",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "Thụ tinh trong ống nghiệm (IVF)",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Tại Trung tâm Hỗ trợ sinh sản BVĐK Tâm Anh có nhiều phương pháp hỗ trợ sinh sản như:  Bơm tinh trùng vào buồng tử cung (IUI); Thụ tinh trong ống nghiệm (IVF); Tiêm tinh trùng vào bào tương noãn (ICSI); Trưởng thành trứng non IVM; Trữ lạnh phôi, noãn và tinh trùng: Hỗ trợ phôi thoát màng (AH); Chuyển phôi giai đoạn Blastocyst (ngày 5); Xét nghiệm di truyền tiền làm tổ (PGT); Phẫu thuật nội soi, soi buồng tử cung trong vô sinh; Phẫu thuật nội soi trong vô sinh; Phẫu thuật tạo hình trong bất thường sinh dục - vô sinh;   ",
+        "head": "vô sinh",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "Tiêm tinh trùng vào bào tương noãn (ICSI)",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Tại Trung tâm Hỗ trợ sinh sản BVĐK Tâm Anh có nhiều phương pháp hỗ trợ sinh sản như:  Bơm tinh trùng vào buồng tử cung (IUI); Thụ tinh trong ống nghiệm (IVF); Tiêm tinh trùng vào bào tương noãn (ICSI); Trưởng thành trứng non IVM; Trữ lạnh phôi, noãn và tinh trùng: Hỗ trợ phôi thoát màng (AH); Chuyển phôi giai đoạn Blastocyst (ngày 5); Xét nghiệm di truyền tiền làm tổ (PGT); Phẫu thuật nội soi, soi buồng tử cung trong vô sinh; Phẫu thuật nội soi trong vô sinh; Phẫu thuật tạo hình trong bất thường sinh dục - vô sinh;   ",
+        "head": "vô sinh",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "Trưởng thành trứng non IVM",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Tại Trung tâm Hỗ trợ sinh sản BVĐK Tâm Anh có nhiều phương pháp hỗ trợ sinh sản như:  Bơm tinh trùng vào buồng tử cung (IUI); Thụ tinh trong ống nghiệm (IVF); Tiêm tinh trùng vào bào tương noãn (ICSI); Trưởng thành trứng non IVM; Trữ lạnh phôi, noãn và tinh trùng: Hỗ trợ phôi thoát màng (AH); Chuyển phôi giai đoạn Blastocyst (ngày 5); Xét nghiệm di truyền tiền làm tổ (PGT); Phẫu thuật nội soi, soi buồng tử cung trong vô sinh; Phẫu thuật nội soi trong vô sinh; Phẫu thuật tạo hình trong bất thường sinh dục - vô sinh;   ",
+        "head": "vô sinh",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "Trữ lạnh phôi",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Tại Trung tâm Hỗ trợ sinh sản BVĐK Tâm Anh có nhiều phương pháp hỗ trợ sinh sản như:  Bơm tinh trùng vào buồng tử cung (IUI); Thụ tinh trong ống nghiệm (IVF); Tiêm tinh trùng vào bào tương noãn (ICSI); Trưởng thành trứng non IVM; Trữ lạnh phôi, noãn và tinh trùng: Hỗ trợ phôi thoát màng (AH); Chuyển phôi giai đoạn Blastocyst (ngày 5); Xét nghiệm di truyền tiền làm tổ (PGT); Phẫu thuật nội soi, soi buồng tử cung trong vô sinh; Phẫu thuật nội soi trong vô sinh; Phẫu thuật tạo hình trong bất thường sinh dục - vô sinh;   ",
+        "head": "vô sinh",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "noãn",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Tại Trung tâm Hỗ trợ sinh sản BVĐK Tâm Anh có nhiều phương pháp hỗ trợ sinh sản như:  Bơm tinh trùng vào buồng tử cung (IUI); Thụ tinh trong ống nghiệm (IVF); Tiêm tinh trùng vào bào tương noãn (ICSI); Trưởng thành trứng non IVM; Trữ lạnh phôi, noãn và tinh trùng: Hỗ trợ phôi thoát màng (AH); Chuyển phôi giai đoạn Blastocyst (ngày 5); Xét nghiệm di truyền tiền làm tổ (PGT); Phẫu thuật nội soi, soi buồng tử cung trong vô sinh; Phẫu thuật nội soi trong vô sinh; Phẫu thuật tạo hình trong bất thường sinh dục - vô sinh;   ",
+        "head": "vô sinh",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "tinh trùng",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Tại Trung tâm Hỗ trợ sinh sản BVĐK Tâm Anh có nhiều phương pháp hỗ trợ sinh sản như:  Bơm tinh trùng vào buồng tử cung (IUI); Thụ tinh trong ống nghiệm (IVF); Tiêm tinh trùng vào bào tương noãn (ICSI); Trưởng thành trứng non IVM; Trữ lạnh phôi, noãn và tinh trùng: Hỗ trợ phôi thoát màng (AH); Chuyển phôi giai đoạn Blastocyst (ngày 5); Xét nghiệm di truyền tiền làm tổ (PGT); Phẫu thuật nội soi, soi buồng tử cung trong vô sinh; Phẫu thuật nội soi trong vô sinh; Phẫu thuật tạo hình trong bất thường sinh dục - vô sinh;   ",
+        "head": "vô sinh",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "Hỗ trợ phôi thoát màng (AH)",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Tại Trung tâm Hỗ trợ sinh sản BVĐK Tâm Anh có nhiều phương pháp hỗ trợ sinh sản như:  Bơm tinh trùng vào buồng tử cung (IUI); Thụ tinh trong ống nghiệm (IVF); Tiêm tinh trùng vào bào tương noãn (ICSI); Trưởng thành trứng non IVM; Trữ lạnh phôi, noãn và tinh trùng: Hỗ trợ phôi thoát màng (AH); Chuyển phôi giai đoạn Blastocyst (ngày 5); Xét nghiệm di truyền tiền làm tổ (PGT); Phẫu thuật nội soi, soi buồng tử cung trong vô sinh; Phẫu thuật nội soi trong vô sinh; Phẫu thuật tạo hình trong bất thường sinh dục - vô sinh;   ",
+        "head": "vô sinh",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "Chuyển phôi giai đoạn Blastocyst (ngày 5)",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Tại Trung tâm Hỗ trợ sinh sản BVĐK Tâm Anh có nhiều phương pháp hỗ trợ sinh sản như:  Bơm tinh trùng vào buồng tử cung (IUI); Thụ tinh trong ống nghiệm (IVF); Tiêm tinh trùng vào bào tương noãn (ICSI); Trưởng thành trứng non IVM; Trữ lạnh phôi, noãn và tinh trùng: Hỗ trợ phôi thoát màng (AH); Chuyển phôi giai đoạn Blastocyst (ngày 5); Xét nghiệm di truyền tiền làm tổ (PGT); Phẫu thuật nội soi, soi buồng tử cung trong vô sinh; Phẫu thuật nội soi trong vô sinh; Phẫu thuật tạo hình trong bất thường sinh dục - vô sinh;   ",
+        "head": "vô sinh",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "Xét nghiệm di truyền tiền làm tổ (PGT)",
+        "tail_type": "test"
+    },
+    {
+        "text": "Tại Trung tâm Hỗ trợ sinh sản BVĐK Tâm Anh có nhiều phương pháp hỗ trợ sinh sản như:  Bơm tinh trùng vào buồng tử cung (IUI); Thụ tinh trong ống nghiệm (IVF); Tiêm tinh trùng vào bào tương noãn (ICSI); Trưởng thành trứng non IVM; Trữ lạnh phôi, noãn và tinh trùng: Hỗ trợ phôi thoát màng (AH); Chuyển phôi giai đoạn Blastocyst (ngày 5); Xét nghiệm di truyền tiền làm tổ (PGT); Phẫu thuật nội soi, soi buồng tử cung trong vô sinh; Phẫu thuật nội soi trong vô sinh; Phẫu thuật tạo hình trong bất thường sinh dục - vô sinh;   ",
+        "head": "vô sinh",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "Phẫu thuật nội soi",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Tại Trung tâm Hỗ trợ sinh sản BVĐK Tâm Anh có nhiều phương pháp hỗ trợ sinh sản như:  Bơm tinh trùng vào buồng tử cung (IUI); Thụ tinh trong ống nghiệm (IVF); Tiêm tinh trùng vào bào tương noãn (ICSI); Trưởng thành trứng non IVM; Trữ lạnh phôi, noãn và tinh trùng: Hỗ trợ phôi thoát màng (AH); Chuyển phôi giai đoạn Blastocyst (ngày 5); Xét nghiệm di truyền tiền làm tổ (PGT); Phẫu thuật nội soi, soi buồng tử cung trong vô sinh; Phẫu thuật nội soi trong vô sinh; Phẫu thuật tạo hình trong bất thường sinh dục - vô sinh;   ",
+        "head": "vô sinh",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "soi buồng tử cung",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Để nâng cao tỷ lệ thành công trong điều trị hiếm muộn, bên cạnh đội ngũ chuyên gia/bác sĩ giàu kinh nghiệm, phòng LAB đạt chuẩn quốc tế, trang thiết bị hiện đại, IVFTA cũng thường xuyên cập nhật kỹ thuật mới/ tiên tiến nhất trên thế giới.",
+        "head": "hiếm muộn",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "chuyên gia",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Để nâng cao tỷ lệ thành công trong điều trị hiếm muộn, bên cạnh đội ngũ chuyên gia/bác sĩ giàu kinh nghiệm, phòng LAB đạt chuẩn quốc tế, trang thiết bị hiện đại, IVFTA cũng thường xuyên cập nhật kỹ thuật mới/ tiên tiến nhất trên thế giới.",
+        "head": "hiếm muộn",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "phòng LAB đạt chuẩn quốc tế",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Để nâng cao tỷ lệ thành công trong điều trị hiếm muộn, bên cạnh đội ngũ chuyên gia/bác sĩ giàu kinh nghiệm, phòng LAB đạt chuẩn quốc tế, trang thiết bị hiện đại, IVFTA cũng thường xuyên cập nhật kỹ thuật mới/ tiên tiến nhất trên thế giới.",
+        "head": "hiếm muộn",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "trang thiết bị hiện đại",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Để nâng cao tỷ lệ thành công trong điều trị hiếm muộn, bên cạnh đội ngũ chuyên gia/bác sĩ giàu kinh nghiệm, phòng LAB đạt chuẩn quốc tế, trang thiết bị hiện đại, IVFTA cũng thường xuyên cập nhật kỹ thuật mới/ tiên tiến nhất trên thế giới.",
+        "head": "hiếm muộn",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "kỹ thuật mới",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Để nâng cao tỷ lệ thành công trong điều trị hiếm muộn, bên cạnh đội ngũ chuyên gia/bác sĩ giàu kinh nghiệm, phòng LAB đạt chuẩn quốc tế, trang thiết bị hiện đại, IVFTA cũng thường xuyên cập nhật kỹ thuật mới/ tiên tiến nhất trên thế giới.",
+        "head": "hiếm muộn",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "kỹ thuật tiên tiến",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Ứng dụng nghiên cứu huyết tương giàu tiểu cầu tự thân trong điều trị nội mạc tử cung mỏng",
+        "head": "nội mạc tử cung mỏng",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "huyết tương giàu tiểu cầu tự thân",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Ứng dụng phác đồ kích thích nhẹ buồng trứng (Mild Stimulation)",
+        "head": "vô sinh",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "phác đồ kích thích nhẹ buồng trứng (Mild Stimulation)",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Ứng dụng EmbryoGlue® – loại keo đặc biệt giúp gắn kết phôi thai vào lòng tử cung",
+        "head": "vô sinh",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "EmbryoGlue® ",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Áp dụng ERA (Endometrial receptivity array) test",
+        "head": "vô sinh",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "ERA (Endometrial receptivity array) test",
+        "tail_type": "test"
+    }
+]

@@ -1,0 +1,887 @@
+
+MERGE (o1:disease {id: 'viêm_amidan_hốc_mủ_disease'})
+MERGE (o2:cause {id: 'vi_khuẩn_cause'})
+MERGE (o1)-[r0:causedBy]->(o2)
+SET r0.text = 'Viêm amidan hốc mủ là tình trạng tổn thương viêm nhiễm cấp tính hoặc mãn tính tuyến amidan do vi khuẩn gây nên.'
+
+MERGE (o1:disease {id: 'viêm_amidan_hốc_mủ_disease'})
+MERGE (o2:organ {id: 'tuyến_amidan_organ'})
+MERGE (o1)-[r1:affects]->(o2)
+SET r1.text = 'Viêm amidan hốc mủ là tình trạng tổn thương viêm nhiễm cấp tính hoặc mãn tính tuyến amidan do vi khuẩn gây nên.'
+
+MERGE (o1:disease {id: 'viêm_amidan_hốc_mủ_disease'})
+MERGE (o2:disease {id: 'áp-xe_amidan_disease'})
+MERGE (o1)-[r2:isSymptomOf]->(o2)
+SET r2.text = 'Khi không được điều trị đúng cách, bệnh có thể dẫn đến nhiều biến chứng nguy hiểm như áp-xe amidan, viêm tấy quanh amidan, viêm phế quản, viêm xoang, áp-xe thành bên họng, viêm thận, viêm khớp, viêm tim và nhiễm khuẩn huyết.'
+
+MERGE (o1:disease {id: 'viêm_amidan_hốc_mủ_disease'})
+MERGE (o2:disease {id: 'viêm_tấy_quanh_amidan_disease'})
+MERGE (o1)-[r3:isSymptomOf]->(o2)
+SET r3.text = 'Khi không được điều trị đúng cách, bệnh có thể dẫn đến nhiều biến chứng nguy hiểm như áp-xe amidan, viêm tấy quanh amidan, viêm phế quản, viêm xoang, áp-xe thành bên họng, viêm thận, viêm khớp, viêm tim và nhiễm khuẩn huyết.'
+
+MERGE (o1:disease {id: 'viêm_amidan_hốc_mủ_disease'})
+MERGE (o2:disease {id: 'viêm_phế_quản_disease'})
+MERGE (o1)-[r4:isSymptomOf]->(o2)
+SET r4.text = 'Khi không được điều trị đúng cách, bệnh có thể dẫn đến nhiều biến chứng nguy hiểm như áp-xe amidan, viêm tấy quanh amidan, viêm phế quản, viêm xoang, áp-xe thành bên họng, viêm thận, viêm khớp, viêm tim và nhiễm khuẩn huyết.'
+
+MERGE (o1:disease {id: 'viêm_amidan_hốc_mủ_disease'})
+MERGE (o2:disease {id: 'viêm_xoang_disease'})
+MERGE (o1)-[r5:isSymptomOf]->(o2)
+SET r5.text = 'Khi không được điều trị đúng cách, bệnh có thể dẫn đến nhiều biến chứng nguy hiểm như áp-xe amidan, viêm tấy quanh amidan, viêm phế quản, viêm xoang, áp-xe thành bên họng, viêm thận, viêm khớp, viêm tim và nhiễm khuẩn huyết.'
+
+MERGE (o1:disease {id: 'viêm_amidan_hốc_mủ_disease'})
+MERGE (o2:disease {id: 'áp-xe_thành_bên_họng_disease'})
+MERGE (o1)-[r6:isSymptomOf]->(o2)
+SET r6.text = 'Khi không được điều trị đúng cách, bệnh có thể dẫn đến nhiều biến chứng nguy hiểm như áp-xe amidan, viêm tấy quanh amidan, viêm phế quản, viêm xoang, áp-xe thành bên họng, viêm thận, viêm khớp, viêm tim và nhiễm khuẩn huyết.'
+
+MERGE (o1:disease {id: 'viêm_amidan_hốc_mủ_disease'})
+MERGE (o2:disease {id: 'viêm_thận_disease'})
+MERGE (o1)-[r7:isSymptomOf]->(o2)
+SET r7.text = 'Khi không được điều trị đúng cách, bệnh có thể dẫn đến nhiều biến chứng nguy hiểm như áp-xe amidan, viêm tấy quanh amidan, viêm phế quản, viêm xoang, áp-xe thành bên họng, viêm thận, viêm khớp, viêm tim và nhiễm khuẩn huyết.'
+
+MERGE (o1:disease {id: 'viêm_amidan_hốc_mủ_disease'})
+MERGE (o2:disease {id: 'viêm_khớp_disease'})
+MERGE (o1)-[r8:isSymptomOf]->(o2)
+SET r8.text = 'Khi không được điều trị đúng cách, bệnh có thể dẫn đến nhiều biến chứng nguy hiểm như áp-xe amidan, viêm tấy quanh amidan, viêm phế quản, viêm xoang, áp-xe thành bên họng, viêm thận, viêm khớp, viêm tim và nhiễm khuẩn huyết.'
+
+MERGE (o1:disease {id: 'viêm_amidan_hốc_mủ_disease'})
+MERGE (o2:disease {id: 'viêm_tim_disease'})
+MERGE (o1)-[r9:isSymptomOf]->(o2)
+SET r9.text = 'Khi không được điều trị đúng cách, bệnh có thể dẫn đến nhiều biến chứng nguy hiểm như áp-xe amidan, viêm tấy quanh amidan, viêm phế quản, viêm xoang, áp-xe thành bên họng, viêm thận, viêm khớp, viêm tim và nhiễm khuẩn huyết.'
+
+MERGE (o1:disease {id: 'viêm_amidan_hốc_mủ_disease'})
+MERGE (o2:disease {id: 'nhiễm_khuẩn_huyết_disease'})
+MERGE (o1)-[r10:isSymptomOf]->(o2)
+SET r10.text = 'Khi không được điều trị đúng cách, bệnh có thể dẫn đến nhiều biến chứng nguy hiểm như áp-xe amidan, viêm tấy quanh amidan, viêm phế quản, viêm xoang, áp-xe thành bên họng, viêm thận, viêm khớp, viêm tim và nhiễm khuẩn huyết.'
+
+MERGE (o1:disease {id: 'viêm_amidan_hốc_mủ_disease'})
+MERGE (o2:treatment {id: 'phương_pháp_điều_trị_treatment'})
+MERGE (o1)-[r11:treatedBy]->(o2)
+SET r11.text = 'Vậy nguyên nhân gây bệnh là gì và phương pháp điều trị như thế nào?'
+
+MERGE (o1:organ {id: 'amidan_organ'})
+MERGE (o2:organ {id: 'đường_hô_hấp_và_đường_ăn_uống_organ'})
+MERGE (o1)-[r12:locatedIn]->(o2)
+SET r12.text = 'Amidan là hai khối màu hồng có kích thước to bằng đầu ngón tay cái, nằm giữa đường hô hấp và đường ăn uống nên thường xuyên tiếp xúc với bụi bẩn và thức ăn.'
+
+MERGE (o1:cause {id: 'bụi_bẩn_và_thức_ăn_cause'})
+MERGE (o2:disease {id: 'viêm_nhiễm_disease'})
+MERGE (o1)-[r13:causes]->(o2)
+SET r13.text = 'Cấu trúc của amidan gồm nhiều hốc, ngăn khiến bụi bẩn và thức ăn dễ bám vào, đọng lại và phát triển, lâu ngày gây viêm nhiễm và hình thành các khối mủ.'
+
+MERGE (o1:cause {id: 'bụi_bẩn_và_thức_ăn_cause'})
+MERGE (o2:symptom {id: 'hình_thành_các_khối_mủ_symptom'})
+MERGE (o1)-[r14:causes]->(o2)
+SET r14.text = 'Cấu trúc của amidan gồm nhiều hốc, ngăn khiến bụi bẩn và thức ăn dễ bám vào, đọng lại và phát triển, lâu ngày gây viêm nhiễm và hình thành các khối mủ.'
+
+MERGE (o1:disease {id: 'viêm_amidan_hốc_mủ_bã_đậu_disease'})
+MERGE (o2:disease {id: 'viêm_amidan_hốc_mủ_disease'})
+MERGE (o1)-[r15:relatedTo]->(o2)
+SET r15.text = 'Các kén mủ trong hốc amidan thường vón lại thành từng cục trong giống như bã đậu, có màu xanh lấm tấm nên bệnh còn được gọi là viêm amidan hốc mủ bã đậu.'
+
+MERGE (o1:disease {id: 'viêm_amidan_hốc_mủ_disease'})
+MERGE (o2:disease {id: 'viêm_amidan_kéo_dài_disease'})
+MERGE (o1)-[r16:isSymptomOf]->(o2)
+SET r16.text = 'Bệnh là biến chứng của tình trạng viêm amidan kéo dài.'
+
+MERGE (o1:disease {id: 'viêm_amidan_hốc_mủ_disease'})
+MERGE (o2:disease {id: 'viêm_amidan_mãn_tính_disease'})
+MERGE (o1)-[r17:relatedTo]->(o2)
+SET r17.text = 'Đây là một trong những thể viêm amidan mãn tính phổ biến nhất.'
+
+MERGE (o1:disease {id: 'viêm_amidan_hốc_mủ_disease'})
+MERGE (o2:lifestyle {id: 'trẻ_nhỏ_lifestyle'})
+MERGE (o1)-[r18:affects]->(o2)
+SET r18.text = 'Bệnh có thể xảy ra ở mọi lứa tuổi, đặc biệt là ở trẻ nhỏ.'
+
+MERGE (o1:disease {id: 'viêm_amidan_hốc_mủ_disease'})
+MERGE (o2:lifestyle {id: 'sức_khỏe_người_bệnh_lifestyle'})
+MERGE (o1)-[r19:affects]->(o2)
+SET r19.text = 'Nếu không được phát hiện sớm và điều trị kịp thời có thể dẫn đến nhiều biến chứng nguy hiểm, ảnh hưởng xấu đến sức khỏe người bệnh.'
+
+MERGE (o1:disease {id: 'viêm_amidan_hốc_mủ_disease'})
+MERGE (o2:cause {id: 'lây_nhiễm_cause'})
+MERGE (o1)-[r20:relatedTo]->(o2)
+SET r20.text = 'Rất nhiều người lo lắng, thắc mắc rằng: bệnh có lây không?'
+
+MERGE (o1:disease {id: 'viêm_amidan_hốc_mủ_disease'})
+MERGE (o2:cause {id: 'vi_khuẩn_hoặc_virus_cause'})
+MERGE (o1)-[r21:causedBy]->(o2)
+SET r21.text = 'Trên thực tế, mặc dù là bệnh về đường hô hấp do vi khuẩn hoặc virus gây nên nhưng các nghiên cứu cho thấy rằng viêm amidan hoặc viêm amidan hốc mủ không có khả năng lây nhiễm từ người này sang người khác.'
+
+MERGE (o1:symptom {id: 'khàn_tiếng_symptom'})
+MERGE (o2:disease {id: 'viêm_amidan_hốc_mủ_disease'})
+MERGE (o1)-[r22:isSymptomOf]->(o2)
+SET r22.text = 'Người bệnh có một số triệu chứng điển hình sau: Khàn tiếng hoặc mất tiếng; Ho khan hoặc ho có đờm; Đau họng, rát họng; Có thể có triệu chứng sốt hoặc không; Có đờm vướng trong cổ, rất khó khạc nhổ hoặc nuốt; Thỉnh thoảng ho, hắt hơi sẽ thấy những hạt nhỏ lấm tấm màu trắng, có mùi hôi.(2)'
+
+MERGE (o1:symptom {id: 'mất_tiếng_symptom'})
+MERGE (o2:disease {id: 'viêm_amidan_hốc_mủ_disease'})
+MERGE (o1)-[r23:isSymptomOf]->(o2)
+SET r23.text = 'Người bệnh có một số triệu chứng điển hình sau: Khàn tiếng hoặc mất tiếng; Ho khan hoặc ho có đờm; Đau họng, rát họng; Có thể có triệu chứng sốt hoặc không; Có đờm vướng trong cổ, rất khó khạc nhổ hoặc nuốt; Thỉnh thoảng ho, hắt hơi sẽ thấy những hạt nhỏ lấm tấm màu trắng, có mùi hôi.(2)'
+
+MERGE (o1:symptom {id: 'ho_khan_symptom'})
+MERGE (o2:disease {id: 'viêm_amidan_hốc_mủ_disease'})
+MERGE (o1)-[r24:isSymptomOf]->(o2)
+SET r24.text = 'Người bệnh có một số triệu chứng điển hình sau: Khàn tiếng hoặc mất tiếng; Ho khan hoặc ho có đờm; Đau họng, rát họng; Có thể có triệu chứng sốt hoặc không; Có đờm vướng trong cổ, rất khó khạc nhổ hoặc nuốt; Thỉnh thoảng ho, hắt hơi sẽ thấy những hạt nhỏ lấm tấm màu trắng, có mùi hôi.(2)'
+
+MERGE (o1:symptom {id: 'ho_có_đờm_symptom'})
+MERGE (o2:disease {id: 'viêm_amidan_hốc_mủ_disease'})
+MERGE (o1)-[r25:isSymptomOf]->(o2)
+SET r25.text = 'Người bệnh có một số triệu chứng điển hình sau: Khàn tiếng hoặc mất tiếng; Ho khan hoặc ho có đờm; Đau họng, rát họng; Có thể có triệu chứng sốt hoặc không; Có đờm vướng trong cổ, rất khó khạc nhổ hoặc nuốt; Thỉnh thoảng ho, hắt hơi sẽ thấy những hạt nhỏ lấm tấm màu trắng, có mùi hôi.(2)'
+
+MERGE (o1:symptom {id: 'đau_họng_symptom'})
+MERGE (o2:disease {id: 'viêm_amidan_hốc_mủ_disease'})
+MERGE (o1)-[r26:isSymptomOf]->(o2)
+SET r26.text = 'Người bệnh có một số triệu chứng điển hình sau: Khàn tiếng hoặc mất tiếng; Ho khan hoặc ho có đờm; Đau họng, rát họng; Có thể có triệu chứng sốt hoặc không; Có đờm vướng trong cổ, rất khó khạc nhổ hoặc nuốt; Thỉnh thoảng ho, hắt hơi sẽ thấy những hạt nhỏ lấm tấm màu trắng, có mùi hôi.(2)'
+
+MERGE (o1:symptom {id: 'rát_họng_symptom'})
+MERGE (o2:disease {id: 'viêm_amidan_hốc_mủ_disease'})
+MERGE (o1)-[r27:isSymptomOf]->(o2)
+SET r27.text = 'Người bệnh có một số triệu chứng điển hình sau: Khàn tiếng hoặc mất tiếng; Ho khan hoặc ho có đờm; Đau họng, rát họng; Có thể có triệu chứng sốt hoặc không; Có đờm vướng trong cổ, rất khó khạc nhổ hoặc nuốt; Thỉnh thoảng ho, hắt hơi sẽ thấy những hạt nhỏ lấm tấm màu trắng, có mùi hôi.(2)'
+
+MERGE (o1:symptom {id: 'sốt_symptom'})
+MERGE (o2:disease {id: 'viêm_amidan_hốc_mủ_disease'})
+MERGE (o1)-[r28:isSymptomOf]->(o2)
+SET r28.text = 'Người bệnh có một số triệu chứng điển hình sau: Khàn tiếng hoặc mất tiếng; Ho khan hoặc ho có đờm; Đau họng, rát họng; Có thể có triệu chứng sốt hoặc không; Có đờm vướng trong cổ, rất khó khạc nhổ hoặc nuốt; Thỉnh thoảng ho, hắt hơi sẽ thấy những hạt nhỏ lấm tấm màu trắng, có mùi hôi.(2)'
+
+MERGE (o1:symptom {id: 'đờm_vướng_trong_cổ_symptom'})
+MERGE (o2:disease {id: 'viêm_amidan_hốc_mủ_disease'})
+MERGE (o1)-[r29:isSymptomOf]->(o2)
+SET r29.text = 'Người bệnh có một số triệu chứng điển hình sau: Khàn tiếng hoặc mất tiếng; Ho khan hoặc ho có đờm; Đau họng, rát họng; Có thể có triệu chứng sốt hoặc không; Có đờm vướng trong cổ, rất khó khạc nhổ hoặc nuốt; Thỉnh thoảng ho, hắt hơi sẽ thấy những hạt nhỏ lấm tấm màu trắng, có mùi hôi.(2)'
+
+MERGE (o1:symptom {id: 'khó_khạc_nhổ_symptom'})
+MERGE (o2:disease {id: 'viêm_amidan_hốc_mủ_disease'})
+MERGE (o1)-[r30:isSymptomOf]->(o2)
+SET r30.text = 'Người bệnh có một số triệu chứng điển hình sau: Khàn tiếng hoặc mất tiếng; Ho khan hoặc ho có đờm; Đau họng, rát họng; Có thể có triệu chứng sốt hoặc không; Có đờm vướng trong cổ, rất khó khạc nhổ hoặc nuốt; Thỉnh thoảng ho, hắt hơi sẽ thấy những hạt nhỏ lấm tấm màu trắng, có mùi hôi.(2)'
+
+MERGE (o1:symptom {id: 'khó_nuốt_symptom'})
+MERGE (o2:disease {id: 'viêm_amidan_hốc_mủ_disease'})
+MERGE (o1)-[r31:isSymptomOf]->(o2)
+SET r31.text = 'Người bệnh có một số triệu chứng điển hình sau: Khàn tiếng hoặc mất tiếng; Ho khan hoặc ho có đờm; Đau họng, rát họng; Có thể có triệu chứng sốt hoặc không; Có đờm vướng trong cổ, rất khó khạc nhổ hoặc nuốt; Thỉnh thoảng ho, hắt hơi sẽ thấy những hạt nhỏ lấm tấm màu trắng, có mùi hôi.(2)'
+
+MERGE (o1:symptom {id: 'hạt_nhỏ_lấm_tấm_màu_trắng_symptom'})
+MERGE (o2:disease {id: 'viêm_amidan_hốc_mủ_disease'})
+MERGE (o1)-[r32:isSymptomOf]->(o2)
+SET r32.text = 'Người bệnh có một số triệu chứng điển hình sau: Khàn tiếng hoặc mất tiếng; Ho khan hoặc ho có đờm; Đau họng, rát họng; Có thể có triệu chứng sốt hoặc không; Có đờm vướng trong cổ, rất khó khạc nhổ hoặc nuốt; Thỉnh thoảng ho, hắt hơi sẽ thấy những hạt nhỏ lấm tấm màu trắng, có mùi hôi.(2)'
+
+MERGE (o1:symptom {id: 'mùi_hôi_symptom'})
+MERGE (o2:disease {id: 'viêm_amidan_hốc_mủ_disease'})
+MERGE (o1)-[r33:isSymptomOf]->(o2)
+SET r33.text = 'Người bệnh có một số triệu chứng điển hình sau: Khàn tiếng hoặc mất tiếng; Ho khan hoặc ho có đờm; Đau họng, rát họng; Có thể có triệu chứng sốt hoặc không; Có đờm vướng trong cổ, rất khó khạc nhổ hoặc nuốt; Thỉnh thoảng ho, hắt hơi sẽ thấy những hạt nhỏ lấm tấm màu trắng, có mùi hôi.(2)'
+
+MERGE (o1:symptom {id: 'ho_khan_symptom'})
+MERGE (o2:disease {id: 'viêm_amidan_hốc_mủ_disease'})
+MERGE (o1)-[r34:isSymptomOf]->(o2)
+SET r34.text = 'Ho khan, ho có đờm là triệu chứng thường gặp'
+
+MERGE (o1:symptom {id: 'ho_có_đờm_symptom'})
+MERGE (o2:disease {id: 'viêm_amidan_hốc_mủ_disease'})
+MERGE (o1)-[r35:isSymptomOf]->(o2)
+SET r35.text = 'Ho khan, ho có đờm là triệu chứng thường gặp'
+
+MERGE (o1:cause {id: 'vi_khuẩn_xâm_nhập_vào_đường_hô_hấp_cause'})
+MERGE (o2:disease {id: 'viêm_amidan_hốc_mủ_disease'})
+MERGE (o1)-[r36:causedBy]->(o2)
+SET r36.text = 'Theo PGS.TS.BS Lê Minh Kỳ, một số nguyên nhân gây viêm amidan hốc mủ thường gặp ở người bệnh gồm: Vi khuẩn xâm nhập vào đường hô hấp: Amidan nằm ngay vị trí giao thoa giữa đường ăn và đường thở, nơi tiếp xúc với nhiều bụi bẩn, thức ăn nên rất dễ bị tấn công bởi các yếu tố vi khuẩn gây hại.'
+
+MERGE (o1:cause {id: 'vi_khuẩn_cause'})
+MERGE (o2:disease {id: 'viêm_amidan_hốc_mủ_disease'})
+MERGE (o1)-[r37:causedBy]->(o2)
+SET r37.text = 'Theo PGS.TS.BS Lê Minh Kỳ, một số nguyên nhân gây viêm amidan hốc mủ thường gặp ở người bệnh gồm: Vi khuẩn xâm nhập vào đường hô hấp: Amidan nằm ngay vị trí giao thoa giữa đường ăn và đường thở, nơi tiếp xúc với nhiều bụi bẩn, thức ăn nên rất dễ bị tấn công bởi các yếu tố vi khuẩn gây hại.'
+
+MERGE (o1:cause {id: 'bụi_bẩn_cause'})
+MERGE (o2:disease {id: 'viêm_amidan_hốc_mủ_disease'})
+MERGE (o1)-[r38:causedBy]->(o2)
+SET r38.text = 'Theo PGS.TS.BS Lê Minh Kỳ, một số nguyên nhân gây viêm amidan hốc mủ thường gặp ở người bệnh gồm: Vi khuẩn xâm nhập vào đường hô hấp: Amidan nằm ngay vị trí giao thoa giữa đường ăn và đường thở, nơi tiếp xúc với nhiều bụi bẩn, thức ăn nên rất dễ bị tấn công bởi các yếu tố vi khuẩn gây hại.'
+
+MERGE (o1:cause {id: 'thức_ăn_cause'})
+MERGE (o2:disease {id: 'viêm_amidan_hốc_mủ_disease'})
+MERGE (o1)-[r39:causedBy]->(o2)
+SET r39.text = 'Theo PGS.TS.BS Lê Minh Kỳ, một số nguyên nhân gây viêm amidan hốc mủ thường gặp ở người bệnh gồm: Vi khuẩn xâm nhập vào đường hô hấp: Amidan nằm ngay vị trí giao thoa giữa đường ăn và đường thở, nơi tiếp xúc với nhiều bụi bẩn, thức ăn nên rất dễ bị tấn công bởi các yếu tố vi khuẩn gây hại.'
+
+MERGE (o1:organ {id: 'amidan_organ'})
+MERGE (o2:organ {id: 'đường_hô_hấp_organ'})
+MERGE (o1)-[r40:locatedIn]->(o2)
+SET r40.text = 'Theo PGS.TS.BS Lê Minh Kỳ, một số nguyên nhân gây viêm amidan hốc mủ thường gặp ở người bệnh gồm: Vi khuẩn xâm nhập vào đường hô hấp: Amidan nằm ngay vị trí giao thoa giữa đường ăn và đường thở, nơi tiếp xúc với nhiều bụi bẩn, thức ăn nên rất dễ bị tấn công bởi các yếu tố vi khuẩn gây hại.'
+
+MERGE (o1:organ {id: 'amidan_organ'})
+MERGE (o2:organ {id: 'đường_ăn_organ'})
+MERGE (o1)-[r41:locatedIn]->(o2)
+SET r41.text = 'Theo PGS.TS.BS Lê Minh Kỳ, một số nguyên nhân gây viêm amidan hốc mủ thường gặp ở người bệnh gồm: Vi khuẩn xâm nhập vào đường hô hấp: Amidan nằm ngay vị trí giao thoa giữa đường ăn và đường thở, nơi tiếp xúc với nhiều bụi bẩn, thức ăn nên rất dễ bị tấn công bởi các yếu tố vi khuẩn gây hại.'
+
+MERGE (o1:organ {id: 'amidan_organ'})
+MERGE (o2:organ {id: 'đường_thở_organ'})
+MERGE (o1)-[r42:locatedIn]->(o2)
+SET r42.text = 'Theo PGS.TS.BS Lê Minh Kỳ, một số nguyên nhân gây viêm amidan hốc mủ thường gặp ở người bệnh gồm: Vi khuẩn xâm nhập vào đường hô hấp: Amidan nằm ngay vị trí giao thoa giữa đường ăn và đường thở, nơi tiếp xúc với nhiều bụi bẩn, thức ăn nên rất dễ bị tấn công bởi các yếu tố vi khuẩn gây hại.'
+
+MERGE (o1:disease {id: 'viêm_amidan_cấp_tính_disease'})
+MERGE (o2:cause {id: 'vi_khuẩn_cause'})
+MERGE (o1)-[r43:causedBy]->(o2)
+SET r43.text = 'Không điều trị viêm amidan cấp tính triệt để: Cấu trúc của amidan gồm nhiều hốc, ngăn nên đây là “nơi cư trú” của nhiều loại vi khuẩn tấn công đường hô hấp và gây viêm. Tình trạng viêm amidan nếu kéo dài, không được điều trị dứt điểm, người bệnh có thể mắc bệnh, một thể của viêm amidan mãn tính.'
+
+MERGE (o1:disease {id: 'viêm_amidan_cấp_tính_disease'})
+MERGE (o2:organ {id: 'đường_hô_hấp_organ'})
+MERGE (o1)-[r44:affects]->(o2)
+SET r44.text = 'Không điều trị viêm amidan cấp tính triệt để: Cấu trúc của amidan gồm nhiều hốc, ngăn nên đây là “nơi cư trú” của nhiều loại vi khuẩn tấn công đường hô hấp và gây viêm. Tình trạng viêm amidan nếu kéo dài, không được điều trị dứt điểm, người bệnh có thể mắc bệnh, một thể của viêm amidan mãn tính.'
+
+MERGE (o1:disease {id: 'viêm_amidan_cấp_tính_disease'})
+MERGE (o2:disease {id: 'viêm_amidan_mãn_tính_disease'})
+MERGE (o1)-[r45:isSymptomOf]->(o2)
+SET r45.text = 'Không điều trị viêm amidan cấp tính triệt để: Cấu trúc của amidan gồm nhiều hốc, ngăn nên đây là “nơi cư trú” của nhiều loại vi khuẩn tấn công đường hô hấp và gây viêm. Tình trạng viêm amidan nếu kéo dài, không được điều trị dứt điểm, người bệnh có thể mắc bệnh, một thể của viêm amidan mãn tính.'
+
+MERGE (o1:disease {id: 'viêm_amidan_disease'})
+MERGE (o2:disease {id: 'viêm_amidan_mãn_tính_disease'})
+MERGE (o1)-[r46:isSymptomOf]->(o2)
+SET r46.text = 'Không điều trị viêm amidan cấp tính triệt để: Cấu trúc của amidan gồm nhiều hốc, ngăn nên đây là “nơi cư trú” của nhiều loại vi khuẩn tấn công đường hô hấp và gây viêm. Tình trạng viêm amidan nếu kéo dài, không được điều trị dứt điểm, người bệnh có thể mắc bệnh, một thể của viêm amidan mãn tính.'
+
+MERGE (o1:organ {id: 'amidan_organ'})
+MERGE (o2:organ {id: 'đường_hô_hấp_organ'})
+MERGE (o1)-[r47:locatedIn]->(o2)
+SET r47.text = 'Không điều trị viêm amidan cấp tính triệt để: Cấu trúc của amidan gồm nhiều hốc, ngăn nên đây là “nơi cư trú” của nhiều loại vi khuẩn tấn công đường hô hấp và gây viêm. Tình trạng viêm amidan nếu kéo dài, không được điều trị dứt điểm, người bệnh có thể mắc bệnh, một thể của viêm amidan mãn tính.'
+
+MERGE (o1:disease {id: 'viêm_amidan_disease'})
+MERGE (o2:cause {id: 'vi_khuẩn_cause'})
+MERGE (o1)-[r48:causedBy]->(o2)
+SET r48.text = 'Không điều trị viêm amidan cấp tính triệt để: Cấu trúc của amidan gồm nhiều hốc, ngăn nên đây là “nơi cư trú” của nhiều loại vi khuẩn tấn công đường hô hấp và gây viêm. Tình trạng viêm amidan nếu kéo dài, không được điều trị dứt điểm, người bệnh có thể mắc bệnh, một thể của viêm amidan mãn tính.'
+
+MERGE (o1:disease {id: 'viêm_amidan_disease'})
+MERGE (o2:treatment {id: 'điều_trị_treatment'})
+MERGE (o1)-[r49:treatedBy]->(o2)
+SET r49.text = 'Không điều trị viêm amidan cấp tính triệt để: Cấu trúc của amidan gồm nhiều hốc, ngăn nên đây là “nơi cư trú” của nhiều loại vi khuẩn tấn công đường hô hấp và gây viêm. Tình trạng viêm amidan nếu kéo dài, không được điều trị dứt điểm, người bệnh có thể mắc bệnh, một thể của viêm amidan mãn tính.'
+
+MERGE (o1:cause {id: 'thời_tiết_thất_thường_cause'})
+MERGE (o2:disease {id: 'viêm_amidan_hốc_mủ_disease'})
+MERGE (o1)-[r50:causedBy]->(o2)
+SET r50.text = 'Thời tiết thất thường, sự thay đổi đột ngột về nhiệt độ và độ ẩm tạo cơ hội cho virus, vi khuẩn tấn công những người có sức đề kháng yếu.'
+
+MERGE (o1:cause {id: 'sự_thay_đổi_đột_ngột_về_nhiệt_độ_và_độ_ẩm_cause'})
+MERGE (o2:disease {id: 'viêm_amidan_hốc_mủ_disease'})
+MERGE (o1)-[r51:causedBy]->(o2)
+SET r51.text = 'Thời tiết thất thường, sự thay đổi đột ngột về nhiệt độ và độ ẩm tạo cơ hội cho virus, vi khuẩn tấn công những người có sức đề kháng yếu.'
+
+MERGE (o1:cause {id: 'virus__vi_khuẩn_cause'})
+MERGE (o2:disease {id: 'viêm_amidan_hốc_mủ_disease'})
+MERGE (o1)-[r52:causedBy]->(o2)
+SET r52.text = 'Thời tiết thất thường, sự thay đổi đột ngột về nhiệt độ và độ ẩm tạo cơ hội cho virus, vi khuẩn tấn công những người có sức đề kháng yếu.'
+
+MERGE (o1:disease {id: 'viêm_amidan_thông_thường_disease'})
+MERGE (o2:disease {id: 'viêm_amidan_hốc_mủ_disease'})
+MERGE (o1)-[r53:relatedTo]->(o2)
+SET r53.text = 'Thời tiết thất thường, sự thay đổi đột ngột về nhiệt độ và độ ẩm tạo cơ hội cho virus, vi khuẩn tấn công những người có sức đề kháng yếu. Người bệnh viêm amidan thông thường cũng có thể trở thành viêm amidan hốc mủ.'
+
+MERGE (o1:cause {id: 'môi_trường_sống_ô_nhiễm_cause'})
+MERGE (o2:disease {id: 'viêm_amidan_disease'})
+MERGE (o1)-[r54:causedBy]->(o2)
+SET r54.text = 'Bên cạnh đó, môi trường sống ô nhiễm, chứa nhiều bụi bẩn, vi khuẩn và virus có hại được xem là yếu tố làm tăng nguy cơ mắc bệnh.'
+
+MERGE (o1:cause {id: 'bụi_bẩn_cause'})
+MERGE (o2:disease {id: 'viêm_amidan_disease'})
+MERGE (o1)-[r55:causedBy]->(o2)
+SET r55.text = 'Bên cạnh đó, môi trường sống ô nhiễm, chứa nhiều bụi bẩn, vi khuẩn và virus có hại được xem là yếu tố làm tăng nguy cơ mắc bệnh.'
+
+MERGE (o1:cause {id: 'vi_khuẩn_cause'})
+MERGE (o2:disease {id: 'viêm_amidan_disease'})
+MERGE (o1)-[r56:causedBy]->(o2)
+SET r56.text = 'Bên cạnh đó, môi trường sống ô nhiễm, chứa nhiều bụi bẩn, vi khuẩn và virus có hại được xem là yếu tố làm tăng nguy cơ mắc bệnh.'
+
+MERGE (o1:cause {id: 'virus_cause'})
+MERGE (o2:disease {id: 'viêm_amidan_disease'})
+MERGE (o1)-[r57:causedBy]->(o2)
+SET r57.text = 'Bên cạnh đó, môi trường sống ô nhiễm, chứa nhiều bụi bẩn, vi khuẩn và virus có hại được xem là yếu tố làm tăng nguy cơ mắc bệnh.'
+
+MERGE (o1:lifestyle {id: 'thức_khuya_lifestyle'})
+MERGE (o2:disease {id: 'viêm_amidan_disease'})
+MERGE (o1)-[r58:aggravatedBy]->(o2)
+SET r58.text = 'Những người có lối sống không lành mạnh như thường xuyên thức khuya, hút thuốc lá; ăn uống không khoa học, thói quen ăn đồ cay nóng, uống rượu bia, các chất kích thích,&#8230; hoặc vệ sinh răng miệng không sạch sẽ sẽ tạo điều kiện cho vi khuẩn tấn công vào răng miệng và tổ chức amidan.'
+
+MERGE (o1:lifestyle {id: 'hút_thuốc_lá_lifestyle'})
+MERGE (o2:disease {id: 'viêm_amidan_disease'})
+MERGE (o1)-[r59:aggravatedBy]->(o2)
+SET r59.text = 'Những người có lối sống không lành mạnh như thường xuyên thức khuya, hút thuốc lá; ăn uống không khoa học, thói quen ăn đồ cay nóng, uống rượu bia, các chất kích thích,&#8230; hoặc vệ sinh răng miệng không sạch sẽ sẽ tạo điều kiện cho vi khuẩn tấn công vào răng miệng và tổ chức amidan.'
+
+MERGE (o1:lifestyle {id: 'ăn_uống_không_khoa_học_lifestyle'})
+MERGE (o2:disease {id: 'viêm_amidan_disease'})
+MERGE (o1)-[r60:aggravatedBy]->(o2)
+SET r60.text = 'Những người có lối sống không lành mạnh như thường xuyên thức khuya, hút thuốc lá; ăn uống không khoa học, thói quen ăn đồ cay nóng, uống rượu bia, các chất kích thích,&#8230; hoặc vệ sinh răng miệng không sạch sẽ sẽ tạo điều kiện cho vi khuẩn tấn công vào răng miệng và tổ chức amidan.'
+
+MERGE (o1:food {id: 'ăn_đồ_cay_nóng_food'})
+MERGE (o2:disease {id: 'viêm_amidan_disease'})
+MERGE (o1)-[r61:aggravatedBy]->(o2)
+SET r61.text = 'Những người có lối sống không lành mạnh như thường xuyên thức khuya, hút thuốc lá; ăn uống không khoa học, thói quen ăn đồ cay nóng, uống rượu bia, các chất kích thích,&#8230; hoặc vệ sinh răng miệng không sạch sẽ sẽ tạo điều kiện cho vi khuẩn tấn công vào răng miệng và tổ chức amidan.'
+
+MERGE (o1:lifestyle {id: 'uống_rượu_bia_lifestyle'})
+MERGE (o2:disease {id: 'viêm_amidan_disease'})
+MERGE (o1)-[r62:aggravatedBy]->(o2)
+SET r62.text = 'Những người có lối sống không lành mạnh như thường xuyên thức khuya, hút thuốc lá; ăn uống không khoa học, thói quen ăn đồ cay nóng, uống rượu bia, các chất kích thích,&#8230; hoặc vệ sinh răng miệng không sạch sẽ sẽ tạo điều kiện cho vi khuẩn tấn công vào răng miệng và tổ chức amidan.'
+
+MERGE (o1:lifestyle {id: 'các_chất_kích_thích_lifestyle'})
+MERGE (o2:disease {id: 'viêm_amidan_disease'})
+MERGE (o1)-[r63:aggravatedBy]->(o2)
+SET r63.text = 'Những người có lối sống không lành mạnh như thường xuyên thức khuya, hút thuốc lá; ăn uống không khoa học, thói quen ăn đồ cay nóng, uống rượu bia, các chất kích thích,&#8230; hoặc vệ sinh răng miệng không sạch sẽ sẽ tạo điều kiện cho vi khuẩn tấn công vào răng miệng và tổ chức amidan.'
+
+MERGE (o1:lifestyle {id: 'vệ_sinh_răng_miệng_không_sạch_sẽ_lifestyle'})
+MERGE (o2:disease {id: 'viêm_amidan_disease'})
+MERGE (o1)-[r64:aggravatedBy]->(o2)
+SET r64.text = 'Những người có lối sống không lành mạnh như thường xuyên thức khuya, hút thuốc lá; ăn uống không khoa học, thói quen ăn đồ cay nóng, uống rượu bia, các chất kích thích,&#8230; hoặc vệ sinh răng miệng không sạch sẽ sẽ tạo điều kiện cho vi khuẩn tấn công vào răng miệng và tổ chức amidan.'
+
+MERGE (o1:cause {id: 'vi_khuẩn_cause'})
+MERGE (o2:disease {id: 'viêm_amidan_mãn_tính_disease'})
+MERGE (o1)-[r65:causedBy]->(o2)
+SET r65.text = 'Những người có lối sống không lành mạnh như thường xuyên thức khuya, hút thuốc lá; ăn uống không khoa học, thói quen ăn đồ cay nóng, uống rượu bia, các chất kích thích,&#8230; hoặc vệ sinh răng miệng không sạch sẽ sẽ tạo điều kiện cho vi khuẩn tấn công vào răng miệng và tổ chức amidan. Về lâu dài, vi khuẩn phát triển mạnh làm tăng nguy cơ mắc bệnh viêm amidan mãn tính.'
+
+MERGE (o1:lifestyle {id: 'rượu_bia_lifestyle'})
+MERGE (o2:disease {id: 'nhiễm_bệnh_disease'})
+MERGE (o1)-[r66:aggravatedBy]->(o2)
+SET r66.text = 'Thói quen rượu bia, thuốc lá làm tăng nguy cơ nhiễm bệnh'
+
+MERGE (o1:symptom {id: 'đau_rát_cổ_họng_symptom'})
+MERGE (o2:disease {id: 'bệnh
+mãn_tính_disease'})
+MERGE (o1)-[r67:isSymptomOf]->(o2)
+SET r67.text = 'PGS.TS.BS Lê Minh Kỳ cho biết, dấu hiệu
+của bệnh
+mãn tính phụ thuộc vào nguyên nhân và cơ địa của từng người. Do đó, mỗi người sẽ có triệu chứng khác nhau, có thể là:
+Đau rát cổ họng: Vi khuẩn trú ẩn trong cổ họng khiến người bệnh cảm thấy ngứa ngáy, vướng víu. Để giảm bớt sự khó chịu, người bệnh thường khạc nhổ, tuy nhiên, càng khạc nhổ thì tổ chức amidan càng tổn thương khiến người bệnh cảm thấy đau hơn;'
+
+MERGE (o1:cause {id: 'vi_khuẩn_cause'})
+MERGE (o2:symptom {id: 'đau_rát_cổ_họng_symptom'})
+MERGE (o1)-[r68:causedBy]->(o2)
+SET r68.text = 'PGS.TS.BS Lê Minh Kỳ cho biết, dấu hiệu
+của bệnh
+mãn tính phụ thuộc vào nguyên nhân và cơ địa của từng người. Do đó, mỗi người sẽ có triệu chứng khác nhau, có thể là:
+Đau rát cổ họng: Vi khuẩn trú ẩn trong cổ họng khiến người bệnh cảm thấy ngứa ngáy, vướng víu. Để giảm bớt sự khó chịu, người bệnh thường khạc nhổ, tuy nhiên, càng khạc nhổ thì tổ chức amidan càng tổn thương khiến người bệnh cảm thấy đau hơn;'
+
+MERGE (o1:cause {id: 'vi_khuẩn_cause'})
+MERGE (o2:organ {id: 'cổ_họng_organ'})
+MERGE (o1)-[r69:locatedIn]->(o2)
+SET r69.text = 'PGS.TS.BS Lê Minh Kỳ cho biết, dấu hiệu
+của bệnh
+mãn tính phụ thuộc vào nguyên nhân và cơ địa của từng người. Do đó, mỗi người sẽ có triệu chứng khác nhau, có thể là:
+Đau rát cổ họng: Vi khuẩn trú ẩn trong cổ họng khiến người bệnh cảm thấy ngứa ngáy, vướng víu. Để giảm bớt sự khó chịu, người bệnh thường khạc nhổ, tuy nhiên, càng khạc nhổ thì tổ chức amidan càng tổn thương khiến người bệnh cảm thấy đau hơn;'
+
+MERGE (o1:lifestyle {id: 'khạc_nhổ_lifestyle'})
+MERGE (o2:symptom {id: 'đau_rát_cổ_họng_symptom'})
+MERGE (o1)-[r70:aggravatedBy]->(o2)
+SET r70.text = 'PGS.TS.BS Lê Minh Kỳ cho biết, dấu hiệu
+của bệnh
+mãn tính phụ thuộc vào nguyên nhân và cơ địa của từng người. Do đó, mỗi người sẽ có triệu chứng khác nhau, có thể là:
+Đau rát cổ họng: Vi khuẩn trú ẩn trong cổ họng khiến người bệnh cảm thấy ngứa ngáy, vướng víu. Để giảm bớt sự khó chịu, người bệnh thường khạc nhổ, tuy nhiên, càng khạc nhổ thì tổ chức amidan càng tổn thương khiến người bệnh cảm thấy đau hơn;'
+
+MERGE (o1:lifestyle {id: 'khạc_nhổ_lifestyle'})
+MERGE (o2:organ {id: 'tổ_chức_amidan_organ'})
+MERGE (o1)-[r71:affects]->(o2)
+SET r71.text = 'PGS.TS.BS Lê Minh Kỳ cho biết, dấu hiệu
+của bệnh
+mãn tính phụ thuộc vào nguyên nhân và cơ địa của từng người. Do đó, mỗi người sẽ có triệu chứng khác nhau, có thể là:
+Đau rát cổ họng: Vi khuẩn trú ẩn trong cổ họng khiến người bệnh cảm thấy ngứa ngáy, vướng víu. Để giảm bớt sự khó chịu, người bệnh thường khạc nhổ, tuy nhiên, càng khạc nhổ thì tổ chức amidan càng tổn thương khiến người bệnh cảm thấy đau hơn;'
+
+MERGE (o1:symptom {id: 'biến_đổi_giọng_nói_symptom'})
+MERGE (o2:disease {id: 'bệnh
+mãn_tính_disease'})
+MERGE (o1)-[r72:isSymptomOf]->(o2)
+SET r72.text = 'PGS.TS.BS Lê Minh Kỳ cho biết, dấu hiệu
+của bệnh
+mãn tính phụ thuộc vào nguyên nhân và cơ địa của từng người. Do đó, mỗi người sẽ có triệu chứng khác nhau, có thể là:
+Biến đổi giọng nói: Người bệnh đột nhiên khàn tiếng hoặc mất tiếng cũng là một trong những dấu hiệu
+thường gặp;'
+
+MERGE (o1:symptom {id: 'ho_khan_hoặc_ho_có_đờm_symptom'})
+MERGE (o2:disease {id: 'bệnh
+mãn_tính_disease'})
+MERGE (o1)-[r73:isSymptomOf]->(o2)
+SET r73.text = 'PGS.TS.BS Lê Minh Kỳ cho biết, dấu hiệu
+của bệnh
+mãn tính phụ thuộc vào nguyên nhân và cơ địa của từng người. Do đó, mỗi người sẽ có triệu chứng khác nhau, có thể là:
+Ho khan hoặc ho có đờm: Đờm vướng trong cổ họng, cộng với các cặn bã tích tụ khiến người bệnh cảm thấy ngứa vùng cổ, ho và khạc nhổ liên tục, đôi khi khạc ra các hạt nhỏ lấm tấm có màu trắng hoặc xanh, có mùi hôi khó chịu;'
+
+MERGE (o1:disease {id: 'ổ_mủ_quanh_amidan_disease'})
+MERGE (o2:symptom {id: 'mủ_màu_trắng_hoặc_xanh_lấm_tấm_trong_khoang_miệng_symptom'})
+MERGE (o1)-[r74:isSymptomOf]->(o2)
+SET r74.text = 'Ổ mủ quanh amidan: Trong hốc amidan có mủ màu trắng hoặc xanh lấm tấm trong khoang miệng. Amidan có màu đỏ, phình to và có dịch màu trắng ở bề mặt.'
+
+MERGE (o1:organ {id: 'amidan_organ'})
+MERGE (o2:organ {id: 'hốc_amidan_organ'})
+MERGE (o1)-[r75:locatedIn]->(o2)
+SET r75.text = 'Ổ mủ quanh amidan: Trong hốc amidan có mủ màu trắng hoặc xanh lấm tấm trong khoang miệng. Amidan có màu đỏ, phình to và có dịch màu trắng ở bề mặt.'
+
+MERGE (o1:organ {id: 'amidan_organ'})
+MERGE (o2:symptom {id: 'màu_đỏ__phình_to_và_có_dịch_màu_trắng_ở_bề_mặt_symptom'})
+MERGE (o1)-[r76:isSymptomOf]->(o2)
+SET r76.text = 'Ổ mủ quanh amidan: Trong hốc amidan có mủ màu trắng hoặc xanh lấm tấm trong khoang miệng. Amidan có màu đỏ, phình to và có dịch màu trắng ở bề mặt.'
+
+MERGE (o1:symptom {id: 'hơi_thở_có_mùi_hôi_symptom'})
+MERGE (o2:disease {id: 'ổ_mủ_quanh_amidan_disease'})
+MERGE (o1)-[r77:isSymptomOf]->(o2)
+SET r77.text = 'Hơi thở có mùi hôi: Quá trình va chạm khiến các hạt mủ trên lưỡi và vòm họng người bệnh cọ xát, bong ra lẫn vào trong miệng dẫn đến có mùi hôi.'
+
+MERGE (o1:symptom {id: 'các_hạt_mủ_symptom'})
+MERGE (o2:organ {id: 'lưỡi_và_vòm_họng_organ'})
+MERGE (o1)-[r78:locatedIn]->(o2)
+SET r78.text = 'Hơi thở có mùi hôi: Quá trình va chạm khiến các hạt mủ trên lưỡi và vòm họng người bệnh cọ xát, bong ra lẫn vào trong miệng dẫn đến có mùi hôi.'
+
+MERGE (o1:symptom {id: 'amidan_sưng_to_symptom'})
+MERGE (o2:disease {id: 'ổ_mủ_quanh_amidan_disease'})
+MERGE (o1)-[r79:isSymptomOf]->(o2)
+SET r79.text = 'Ngoài ra, amidan sưng to khiến người bệnh mệt mỏi, khó khăn trong nhai và nuốt thức ăn.'
+
+MERGE (o1:symptom {id: 'amidan_sưng_to_symptom'})
+MERGE (o2:lifestyle {id: 'nhai_và_nuốt_thức_ăn_lifestyle'})
+MERGE (o1)-[r80:affects]->(o2)
+SET r80.text = 'Ngoài ra, amidan sưng to khiến người bệnh mệt mỏi, khó khăn trong nhai và nuốt thức ăn.'
+
+MERGE (o1:symptom {id: 'mệt_mỏi_symptom'})
+MERGE (o2:disease {id: 'ổ_mủ_quanh_amidan_disease'})
+MERGE (o1)-[r81:isSymptomOf]->(o2)
+SET r81.text = 'Ngoài ra, amidan sưng to khiến người bệnh mệt mỏi, khó khăn trong nhai và nuốt thức ăn. Bệnh nhân có thể bị sốt, thậm chí sốt cao lên đến 40 độ C cùng nhiều biểu hiện tương tự các bệnh liên quan đến đường hô hấp.'
+
+MERGE (o1:symptom {id: 'sốt_symptom'})
+MERGE (o2:disease {id: 'ổ_mủ_quanh_amidan_disease'})
+MERGE (o1)-[r82:isSymptomOf]->(o2)
+SET r82.text = 'Ngoài ra, amidan sưng to khiến người bệnh mệt mỏi, khó khăn trong nhai và nuốt thức ăn. Bệnh nhân có thể bị sốt, thậm chí sốt cao lên đến 40 độ C cùng nhiều biểu hiện tương tự các bệnh liên quan đến đường hô hấp.'
+
+MERGE (o1:disease {id: 'viêm_amidan_có_mủ_disease'})
+MERGE (o2:lifestyle {id: 'chủ_quan__không_điều_trị_triệt_để_lifestyle'})
+MERGE (o1)-[r83:causedBy]->(o2)
+SET r83.text = 'Nhiều người chủ quan, không điều trị triệt để khiến viêm amidan có mủ có thể gây ra biến chứng nguy hiểm như:'
+
+MERGE (o1:disease {id: 'viêm_amidan_có_mủ_disease'})
+MERGE (o2:disease {id: 'biến_chứng_nguy_hiểm_disease'})
+MERGE (o1)-[r84:isSymptomOf]->(o2)
+SET r84.text = 'Nhiều người chủ quan, không điều trị triệt để khiến viêm amidan có mủ có thể gây ra biến chứng nguy hiểm như:'
+
+MERGE (o1:symptom {id: 'amidan_sưng_to_symptom'})
+MERGE (o2:disease {id: 'viêm_amidan_disease'})
+MERGE (o1)-[r85:isSymptomOf]->(o2)
+SET r85.text = 'Biến chứng tại chỗ: Khi bị viêm, amidan sẽ sưng to khiến người bệnh gặp khó khăn khi nuốt, kể cả khi nuốt nước bọt.'
+
+MERGE (o1:symptom {id: 'khó_khăn_khi_nuốt_symptom'})
+MERGE (o2:disease {id: 'viêm_amidan_disease'})
+MERGE (o1)-[r86:isSymptomOf]->(o2)
+SET r86.text = 'Biến chứng tại chỗ: Khi bị viêm, amidan sẽ sưng to khiến người bệnh gặp khó khăn khi nuốt, kể cả khi nuốt nước bọt.'
+
+MERGE (o1:symptom {id: 'viêm_nhiễm_lan_rộng_symptom'})
+MERGE (o2:disease {id: 'viêm_amidan_disease'})
+MERGE (o1)-[r87:isSymptomOf]->(o2)
+SET r87.text = 'Biến chứng tại chỗ: Khi bị viêm, amidan sẽ sưng to khiến người bệnh gặp khó khăn khi nuốt, kể cả khi nuốt nước bọt. Sau khoảng 5 - 7 ngày, tình trạng viêm nhiễm lan rộng và bắt đầu xuất hiện các ổ mủ.'
+
+MERGE (o1:symptom {id: 'ổ_mủ_symptom'})
+MERGE (o2:disease {id: 'viêm_amidan_disease'})
+MERGE (o1)-[r88:isSymptomOf]->(o2)
+SET r88.text = 'Biến chứng tại chỗ: Khi bị viêm, amidan sẽ sưng to khiến người bệnh gặp khó khăn khi nuốt, kể cả khi nuốt nước bọt. Sau khoảng 5 - 7 ngày, tình trạng viêm nhiễm lan rộng và bắt đầu xuất hiện các ổ mủ.'
+
+MERGE (o1:symptom {id: 'mệt_mỏi_symptom'})
+MERGE (o2:disease {id: 'viêm_amidan_disease'})
+MERGE (o1)-[r89:isSymptomOf]->(o2)
+SET r89.text = 'Biến chứng tại chỗ: Khi bị viêm, amidan sẽ sưng to khiến người bệnh gặp khó khăn khi nuốt, kể cả khi nuốt nước bọt. Sau khoảng 5 - 7 ngày, tình trạng viêm nhiễm lan rộng và bắt đầu xuất hiện các ổ mủ. Lúc này, người bệnh cảm thấy mệt mỏi, đau họng và giọng nói thay đổi, giọng bị khàn đi hoặc mất giọng.'
+
+MERGE (o1:symptom {id: 'đau_họng_symptom'})
+MERGE (o2:disease {id: 'viêm_amidan_disease'})
+MERGE (o1)-[r90:isSymptomOf]->(o2)
+SET r90.text = 'Biến chứng tại chỗ: Khi bị viêm, amidan sẽ sưng to khiến người bệnh gặp khó khăn khi nuốt, kể cả khi nuốt nước bọt. Sau khoảng 5 - 7 ngày, tình trạng viêm nhiễm lan rộng và bắt đầu xuất hiện các ổ mủ. Lúc này, người bệnh cảm thấy mệt mỏi, đau họng và giọng nói thay đổi, giọng bị khàn đi hoặc mất giọng.'
+
+MERGE (o1:symptom {id: 'giọng_bị_khàn_đi_symptom'})
+MERGE (o2:disease {id: 'viêm_amidan_disease'})
+MERGE (o1)-[r91:isSymptomOf]->(o2)
+SET r91.text = 'Biến chứng tại chỗ: Khi bị viêm, amidan sẽ sưng to khiến người bệnh gặp khó khăn khi nuốt, kể cả khi nuốt nước bọt. Sau khoảng 5 - 7 ngày, tình trạng viêm nhiễm lan rộng và bắt đầu xuất hiện các ổ mủ. Lúc này, người bệnh cảm thấy mệt mỏi, đau họng và giọng nói thay đổi, giọng bị khàn đi hoặc mất giọng.'
+
+MERGE (o1:symptom {id: 'mất_giọng_symptom'})
+MERGE (o2:disease {id: 'viêm_amidan_disease'})
+MERGE (o1)-[r92:isSymptomOf]->(o2)
+SET r92.text = 'Biến chứng tại chỗ: Khi bị viêm, amidan sẽ sưng to khiến người bệnh gặp khó khăn khi nuốt, kể cả khi nuốt nước bọt. Sau khoảng 5 - 7 ngày, tình trạng viêm nhiễm lan rộng và bắt đầu xuất hiện các ổ mủ. Lúc này, người bệnh cảm thấy mệt mỏi, đau họng và giọng nói thay đổi, giọng bị khàn đi hoặc mất giọng.'
+
+MERGE (o1:disease {id: 'viêm_nhiễm_tại_amidan_disease'})
+MERGE (o2:organ {id: 'tai__mũi__họng_organ'})
+MERGE (o1)-[r93:affects]->(o2)
+SET r93.text = 'Biến chứng các vùng xung quanh: Tình trạng viêm nhiễm tại amidan có thể lan rộng sang các cơ quan lân cận như tai, mũi, họng,&#8230; từ đó gây ảnh hưởng đến các cơ quan hô hấp, dẫn đến các bệnh lý liên quan như viêm họng, viêm xoang, viêm tai giữa, viêm thanh khí quản.'
+
+MERGE (o1:disease {id: 'viêm_nhiễm_tại_amidan_disease'})
+MERGE (o2:organ {id: 'cơ_quan_hô_hấp_organ'})
+MERGE (o1)-[r94:affects]->(o2)
+SET r94.text = 'Biến chứng các vùng xung quanh: Tình trạng viêm nhiễm tại amidan có thể lan rộng sang các cơ quan lân cận như tai, mũi, họng,&#8230; từ đó gây ảnh hưởng đến các cơ quan hô hấp, dẫn đến các bệnh lý liên quan như viêm họng, viêm xoang, viêm tai giữa, viêm thanh khí quản.'
+
+MERGE (o1:disease {id: 'viêm_họng_disease'})
+MERGE (o2:disease {id: 'viêm_amidan_disease'})
+MERGE (o1)-[r95:relatedTo]->(o2)
+SET r95.text = 'Biến chứng các vùng xung quanh: Tình trạng viêm nhiễm tại amidan có thể lan rộng sang các cơ quan lân cận như tai, mũi, họng,&#8230; từ đó gây ảnh hưởng đến các cơ quan hô hấp, dẫn đến các bệnh lý liên quan như viêm họng, viêm xoang, viêm tai giữa, viêm thanh khí quản.'
+
+MERGE (o1:disease {id: 'viêm_xoang_disease'})
+MERGE (o2:disease {id: 'viêm_amidan_disease'})
+MERGE (o1)-[r96:relatedTo]->(o2)
+SET r96.text = 'Biến chứng các vùng xung quanh: Tình trạng viêm nhiễm tại amidan có thể lan rộng sang các cơ quan lân cận như tai, mũi, họng,&#8230; từ đó gây ảnh hưởng đến các cơ quan hô hấp, dẫn đến các bệnh lý liên quan như viêm họng, viêm xoang, viêm tai giữa, viêm thanh khí quản.'
+
+MERGE (o1:disease {id: 'viêm_tai_giữa_disease'})
+MERGE (o2:disease {id: 'viêm_amidan_disease'})
+MERGE (o1)-[r97:relatedTo]->(o2)
+SET r97.text = 'Biến chứng các vùng xung quanh: Tình trạng viêm nhiễm tại amidan có thể lan rộng sang các cơ quan lân cận như tai, mũi, họng,&#8230; từ đó gây ảnh hưởng đến các cơ quan hô hấp, dẫn đến các bệnh lý liên quan như viêm họng, viêm xoang, viêm tai giữa, viêm thanh khí quản.'
+
+MERGE (o1:disease {id: 'viêm_thanh_khí_quản_disease'})
+MERGE (o2:disease {id: 'viêm_amidan_disease'})
+MERGE (o1)-[r98:relatedTo]->(o2)
+SET r98.text = 'Biến chứng các vùng xung quanh: Tình trạng viêm nhiễm tại amidan có thể lan rộng sang các cơ quan lân cận như tai, mũi, họng,&#8230; từ đó gây ảnh hưởng đến các cơ quan hô hấp, dẫn đến các bệnh lý liên quan như viêm họng, viêm xoang, viêm tai giữa, viêm thanh khí quản.'
+
+MERGE (o1:disease {id: 'viêm_amidan_hốc_mủ_bã_đậu_disease'})
+MERGE (o2:symptom {id: 'phù_mặt__tay_chân_symptom'})
+MERGE (o1)-[r99:isSymptomOf]->(o2)
+SET r99.text = 'Một số trường hợp bệnh tiến triển nặng, người bệnh viêm amidan hốc mủ bã đậu có thể bị phù mặt, tay chân; nghiêm trọng hơn, người bệnh có thể gặp những biến chứng nguy hiểm như viêm cầu thận, nhiễm khuẩn máu, viêm khớp, suy tim,&#8230; Trường hợp amidan sưng quá to có thể chèn ép hệ hô hấp, gây áp lực cho phổi, người bệnh khó thở hoặc ngưng thở tạm thời.'
+
+MERGE (o1:disease {id: 'viêm_amidan_hốc_mủ_bã_đậu_disease'})
+MERGE (o2:disease {id: 'viêm_cầu_thận_disease'})
+MERGE (o1)-[r100:isSymptomOf]->(o2)
+SET r100.text = 'Một số trường hợp bệnh tiến triển nặng, người bệnh viêm amidan hốc mủ bã đậu có thể bị phù mặt, tay chân; nghiêm trọng hơn, người bệnh có thể gặp những biến chứng nguy hiểm như viêm cầu thận, nhiễm khuẩn máu, viêm khớp, suy tim,&#8230; Trường hợp amidan sưng quá to có thể chèn ép hệ hô hấp, gây áp lực cho phổi, người bệnh khó thở hoặc ngưng thở tạm thời.'
+
+MERGE (o1:disease {id: 'viêm_amidan_hốc_mủ_bã_đậu_disease'})
+MERGE (o2:disease {id: 'nhiễm_khuẩn_máu_disease'})
+MERGE (o1)-[r101:isSymptomOf]->(o2)
+SET r101.text = 'Một số trường hợp bệnh tiến triển nặng, người bệnh viêm amidan hốc mủ bã đậu có thể bị phù mặt, tay chân; nghiêm trọng hơn, người bệnh có thể gặp những biến chứng nguy hiểm như viêm cầu thận, nhiễm khuẩn máu, viêm khớp, suy tim,&#8230; Trường hợp amidan sưng quá to có thể chèn ép hệ hô hấp, gây áp lực cho phổi, người bệnh khó thở hoặc ngưng thở tạm thời.'
+
+MERGE (o1:disease {id: 'viêm_amidan_hốc_mủ_bã_đậu_disease'})
+MERGE (o2:disease {id: 'viêm_khớp_disease'})
+MERGE (o1)-[r102:isSymptomOf]->(o2)
+SET r102.text = 'Một số trường hợp bệnh tiến triển nặng, người bệnh viêm amidan hốc mủ bã đậu có thể bị phù mặt, tay chân; nghiêm trọng hơn, người bệnh có thể gặp những biến chứng nguy hiểm như viêm cầu thận, nhiễm khuẩn máu, viêm khớp, suy tim,&#8230; Trường hợp amidan sưng quá to có thể chèn ép hệ hô hấp, gây áp lực cho phổi, người bệnh khó thở hoặc ngưng thở tạm thời.'
+
+MERGE (o1:disease {id: 'viêm_amidan_hốc_mủ_bã_đậu_disease'})
+MERGE (o2:disease {id: 'suy_tim_disease'})
+MERGE (o1)-[r103:isSymptomOf]->(o2)
+SET r103.text = 'Một số trường hợp bệnh tiến triển nặng, người bệnh viêm amidan hốc mủ bã đậu có thể bị phù mặt, tay chân; nghiêm trọng hơn, người bệnh có thể gặp những biến chứng nguy hiểm như viêm cầu thận, nhiễm khuẩn máu, viêm khớp, suy tim,&#8230; Trường hợp amidan sưng quá to có thể chèn ép hệ hô hấp, gây áp lực cho phổi, người bệnh khó thở hoặc ngưng thở tạm thời.'
+
+MERGE (o1:symptom {id: 'amidan_sưng_quá_to_symptom'})
+MERGE (o2:disease {id: 'viêm_amidan_disease'})
+MERGE (o1)-[r104:isSymptomOf]->(o2)
+SET r104.text = 'Một số trường hợp bệnh tiến triển nặng, người bệnh viêm amidan hốc mủ bã đậu có thể bị phù mặt, tay chân; nghiêm trọng hơn, người bệnh có thể gặp những biến chứng nguy hiểm như viêm cầu thận, nhiễm khuẩn máu, viêm khớp, suy tim,&#8230; Trường hợp amidan sưng quá to có thể chèn ép hệ hô hấp, gây áp lực cho phổi, người bệnh khó thở hoặc ngưng thở tạm thời.'
+
+MERGE (o1:symptom {id: 'amidan_sưng_quá_to_symptom'})
+MERGE (o2:organ {id: 'hệ_hô_hấp_organ'})
+MERGE (o1)-[r105:affects]->(o2)
+SET r105.text = 'Một số trường hợp bệnh tiến triển nặng, người bệnh viêm amidan hốc mủ bã đậu có thể bị phù mặt, tay chân; nghiêm trọng hơn, người bệnh có thể gặp những biến chứng nguy hiểm như viêm cầu thận, nhiễm khuẩn máu, viêm khớp, suy tim,&#8230; Trường hợp amidan sưng quá to có thể chèn ép hệ hô hấp, gây áp lực cho phổi, người bệnh khó thở hoặc ngưng thở tạm thời.'
+
+MERGE (o1:symptom {id: 'amidan_sưng_quá_to_symptom'})
+MERGE (o2:organ {id: 'phổi_organ'})
+MERGE (o1)-[r106:affects]->(o2)
+SET r106.text = 'Một số trường hợp bệnh tiến triển nặng, người bệnh viêm amidan hốc mủ bã đậu có thể bị phù mặt, tay chân; nghiêm trọng hơn, người bệnh có thể gặp những biến chứng nguy hiểm như viêm cầu thận, nhiễm khuẩn máu, viêm khớp, suy tim,&#8230; Trường hợp amidan sưng quá to có thể chèn ép hệ hô hấp, gây áp lực cho phổi, người bệnh khó thở hoặc ngưng thở tạm thời.'
+
+MERGE (o1:symptom {id: 'khó_thở_symptom'})
+MERGE (o2:disease {id: 'viêm_amidan_disease'})
+MERGE (o1)-[r107:isSymptomOf]->(o2)
+SET r107.text = 'Một số trường hợp bệnh tiến triển nặng, người bệnh viêm amidan hốc mủ bã đậu có thể bị phù mặt, tay chân; nghiêm trọng hơn, người bệnh có thể gặp những biến chứng nguy hiểm như viêm cầu thận, nhiễm khuẩn máu, viêm khớp, suy tim,&#8230; Trường hợp amidan sưng quá to có thể chèn ép hệ hô hấp, gây áp lực cho phổi, người bệnh khó thở hoặc ngưng thở tạm thời.'
+
+MERGE (o1:disease {id: 'viêm_amidan_hốc_mủ_disease'})
+MERGE (o2:disease {id: 'biến_chứng_nguy_hiểm_disease'})
+MERGE (o1)-[r108:causes]->(o2)
+SET r108.text = 'Viêm amidan hốc mủ có thể dẫn đến biến chứng nguy hiểm'
+
+MERGE (o1:symptom {id: 'các_triệu_chứng_symptom'})
+MERGE (o2:disease {id: 'viêm_amidan_hốc_mủ_disease'})
+MERGE (o1)-[r109:isSymptomOf]->(o2)
+SET r109.text = '“Khi nhận thấy các triệu chứng kể trên, người bệnh nên đến ngay các cơ sở uy tín, có phương tiện hiện đại để chẩn đoán chính xác và có phương pháp điều trị sớm, tránh những biến chứng đáng tiếc.” - PGS.TS.BS Lê Minh Kỳ nhấn mạnh.'
+
+MERGE (o1:disease {id: 'viêm_amidan_hốc_mủ_disease'})
+MERGE (o2:test {id: 'chẩn_đoán_chính_xác_test'})
+MERGE (o1)-[r110:diagnosedBy]->(o2)
+SET r110.text = '“Khi nhận thấy các triệu chứng kể trên, người bệnh nên đến ngay các cơ sở uy tín, có phương tiện hiện đại để chẩn đoán chính xác và có phương pháp điều trị sớm, tránh những biến chứng đáng tiếc.” - PGS.TS.BS Lê Minh Kỳ nhấn mạnh.'
+
+MERGE (o1:disease {id: 'viêm_amidan_hốc_mủ_disease'})
+MERGE (o2:treatment {id: 'điều_trị_sớm_treatment'})
+MERGE (o1)-[r111:treatedBy]->(o2)
+SET r111.text = '“Khi nhận thấy các triệu chứng kể trên, người bệnh nên đến ngay các cơ sở uy tín, có phương tiện hiện đại để chẩn đoán chính xác và có phương pháp điều trị sớm, tránh những biến chứng đáng tiếc.” - PGS.TS.BS Lê Minh Kỳ nhấn mạnh.'
+
+MERGE (o1:disease {id: 'amidan_cấp_tính_disease'})
+MERGE (o2:treatment {id: 'thăm_khám_và_điều_trị_đúng_cách_treatment'})
+MERGE (o1)-[r112:treatedBy]->(o2)
+SET r112.text = 'Khi mắc amidan cấp tính, nếu người bệnh được thăm khám và điều trị đúng cách sẽ khỏi bệnh trong khoảng 10 ngày.'
+
+MERGE (o1:disease {id: 'amidan_cấp_tính_disease'})
+MERGE (o2:symptom {id: 'khỏi_bệnh_symptom'})
+MERGE (o1)-[r113:isSymptomOf]->(o2)
+SET r113.text = 'Khi mắc amidan cấp tính, nếu người bệnh được thăm khám và điều trị đúng cách sẽ khỏi bệnh trong khoảng 10 ngày.'
+
+MERGE (o1:treatment {id: 'bệnh_kéo_dài_không_điều_trị_hoặc_điều_trị_không_đúng_cách_treatment'})
+MERGE (o2:disease {id: 'bệnh_trở_nặng_disease'})
+MERGE (o1)-[r114:causes]->(o2)
+SET r114.text = 'Tuy nhiên, nếu bệnh kéo dài không điều trị hoặc điều trị không đúng cách, bệnh sẽ trở nặng và dẫn đến nhiều biến chứng nguy hiểm.'
+
+MERGE (o1:disease {id: 'bệnh_trở_nặng_disease'})
+MERGE (o2:disease {id: 'biến_chứng_nguy_hiểm_disease'})
+MERGE (o1)-[r115:causes]->(o2)
+SET r115.text = 'Tuy nhiên, nếu bệnh kéo dài không điều trị hoặc điều trị không đúng cách, bệnh sẽ trở nặng và dẫn đến nhiều biến chứng nguy hiểm.'
+
+MERGE (o1:disease {id: 'biến_chứng_nguy_hiểm_disease'})
+MERGE (o2:organ {id: 'sức_khỏe_người_bệnh_organ'})
+MERGE (o1)-[r116:affects]->(o2)
+SET r116.text = 'Để tránh những biến chứng nguy hiểm đe dọa sức khỏe người bệnh, khi nhận thấy các biểu hiện và triệu chứng, bệnh nhân cần có biện pháp điều trị kịp thời.'
+
+MERGE (o1:disease {id: 'biến_chứng_nguy_hiểm_disease'})
+MERGE (o2:treatment {id: 'điều_trị_kịp_thời_treatment'})
+MERGE (o1)-[r117:treatedBy]->(o2)
+SET r117.text = 'Để tránh những biến chứng nguy hiểm đe dọa sức khỏe người bệnh, khi nhận thấy các biểu hiện và triệu chứng, bệnh nhân cần có biện pháp điều trị kịp thời.'
+
+MERGE (o1:disease {id: 'tình_trạng_bệnh_disease'})
+MERGE (o2:treatment {id: 'các_phương_pháp_điều_trị_treatment'})
+MERGE (o1)-[r118:treatedBy]->(o2)
+SET r118.text = 'Tùy vào tình trạng bệnh, người bệnh có thể lựa chọn các phương pháp điều trị sau:'
+
+MERGE (o1:disease {id: 'viêm_amidan_hốc_mủ_disease'})
+MERGE (o2:treatment {id: 'mẹo_dân_gian_treatment'})
+MERGE (o1)-[r119:treatedBy]->(o2)
+SET r119.text = 'Một số mẹo dân gian thường được dùng để điều trị viêm amidan hốc mủ trong trường hợp bệnh chưa tiến triển nặng như:'
+
+MERGE (o1:treatment {id: 'súc_miệng_bằng_nước_muối_treatment'})
+MERGE (o2:disease {id: 'viêm_amidan_hốc_mủ_disease'})
+MERGE (o1)-[r120:treatedBy]->(o2)
+SET r120.text = 'Súc miệng bằng nước muối: Nước muối có công dụng sát trùng, diệt khuẩn rất tốt, do đó, bệnh nhân có thể súc miệng bằng nước muối mỗi ngày để tiêu diệt những vi khuẩn có hại trong khoang miệng, từ đó giảm thiểu được tình trạng viêm sưng, hôi miệng;'
+
+MERGE (o1:treatment {id: 'súc_miệng_bằng_nước_muối_treatment'})
+MERGE (o2:symptom {id: 'viêm_sưng__hôi_miệng_symptom'})
+MERGE (o1)-[r121:affects]->(o2)
+SET r121.text = 'Súc miệng bằng nước muối: Nước muối có công dụng sát trùng, diệt khuẩn rất tốt, do đó, bệnh nhân có thể súc miệng bằng nước muối mỗi ngày để tiêu diệt những vi khuẩn có hại trong khoang miệng, từ đó giảm thiểu được tình trạng viêm sưng, hôi miệng;'
+
+MERGE (o1:food {id: 'lá_húng_chanh_food'})
+MERGE (o2:disease {id: 'viêm_amidan_hốc_mủ_disease'})
+MERGE (o1)-[r122:treatedBy]->(o2)
+SET r122.text = 'Lá húng chanh: Lá húng chanh được biết đến với hiệu quả kháng khuẩn rất tốt. Người bệnh có thể đem lá húng chanh chưng cách thủy đường phèn khoảng 20 phút rồi uống, sau khoảng 5 - 7 ngày sẽ nhận thấy các triệu chứng sưng giảm đi rõ rệt;'
+
+MERGE (o1:food {id: 'mật_ong_food'})
+MERGE (o2:food {id: 'gừng_food'})
+MERGE (o1)-[r123:relatedTo]->(o2)
+SET r123.text = 'Mật ong và gừng: Mật ong và gừng là những thực phẩm có tác dụng diệt khuẩn, tiêu viêm rất hiệu quả.'
+
+MERGE (o1:food {id: 'mật_ong_food'})
+MERGE (o2:symptom {id: 'viêm_nhiễm_symptom'})
+MERGE (o1)-[r124:affects]->(o2)
+SET r124.text = 'Mật ong và gừng: Mật ong và gừng là những thực phẩm có tác dụng diệt khuẩn, tiêu viêm rất hiệu quả.'
+
+MERGE (o1:food {id: 'mật_ong_food'})
+MERGE (o2:symptom {id: 'sưng_tấy_symptom'})
+MERGE (o1)-[r125:affects]->(o2)
+SET r125.text = 'Mật ong và gừng: Mật ong và gừng là những thực phẩm có tác dụng diệt khuẩn, tiêu viêm rất hiệu quả.'
+
+MERGE (o1:food {id: 'gừng_food'})
+MERGE (o2:food {id: 'mật_ong_food'})
+MERGE (o1)-[r126:relatedTo]->(o2)
+SET r126.text = 'Mật ong và gừng: Mật ong và gừng là những thực phẩm có tác dụng diệt khuẩn, tiêu viêm rất hiệu quả.'
+
+MERGE (o1:food {id: 'gừng_food'})
+MERGE (o2:symptom {id: 'viêm_nhiễm_symptom'})
+MERGE (o1)-[r127:affects]->(o2)
+SET r127.text = 'Mật ong và gừng: Mật ong và gừng là những thực phẩm có tác dụng diệt khuẩn, tiêu viêm rất hiệu quả.'
+
+MERGE (o1:food {id: 'gừng_food'})
+MERGE (o2:symptom {id: 'sưng_tấy_symptom'})
+MERGE (o1)-[r128:affects]->(o2)
+SET r128.text = 'Mật ong và gừng: Mật ong và gừng là những thực phẩm có tác dụng diệt khuẩn, tiêu viêm rất hiệu quả.'
+
+MERGE (o1:food {id: 'mật_ong_food'})
+MERGE (o2:symptom {id: 'viêm_nhiễm_symptom'})
+MERGE (o1)-[r129:treatedBy]->(o2)
+SET r129.text = 'Người bệnh chưng cách thủy mật ong với vài lát gừng thái mỏng, uống hỗn hợp này khoảng 2-3 lần mỗi ngày giúp giảm bớt tình trạng viêm nhiễm, sưng tấy tại vùng amidan.'
+
+MERGE (o1:food {id: 'mật_ong_food'})
+MERGE (o2:symptom {id: 'sưng_tấy_symptom'})
+MERGE (o1)-[r130:treatedBy]->(o2)
+SET r130.text = 'Người bệnh chưng cách thủy mật ong với vài lát gừng thái mỏng, uống hỗn hợp này khoảng 2-3 lần mỗi ngày giúp giảm bớt tình trạng viêm nhiễm, sưng tấy tại vùng amidan.'
+
+MERGE (o1:food {id: 'gừng_food'})
+MERGE (o2:symptom {id: 'viêm_nhiễm_symptom'})
+MERGE (o1)-[r131:treatedBy]->(o2)
+SET r131.text = 'Người bệnh chưng cách thủy mật ong với vài lát gừng thái mỏng, uống hỗn hợp này khoảng 2-3 lần mỗi ngày giúp giảm bớt tình trạng viêm nhiễm, sưng tấy tại vùng amidan.'
+
+MERGE (o1:food {id: 'gừng_food'})
+MERGE (o2:symptom {id: 'sưng_tấy_symptom'})
+MERGE (o1)-[r132:treatedBy]->(o2)
+SET r132.text = 'Người bệnh chưng cách thủy mật ong với vài lát gừng thái mỏng, uống hỗn hợp này khoảng 2-3 lần mỗi ngày giúp giảm bớt tình trạng viêm nhiễm, sưng tấy tại vùng amidan.'
+
+MERGE (o1:symptom {id: 'viêm_nhiễm_symptom'})
+MERGE (o2:organ {id: 'vùng_amidan_organ'})
+MERGE (o1)-[r133:locatedIn]->(o2)
+SET r133.text = 'Người bệnh chưng cách thủy mật ong với vài lát gừng thái mỏng, uống hỗn hợp này khoảng 2-3 lần mỗi ngày giúp giảm bớt tình trạng viêm nhiễm, sưng tấy tại vùng amidan.'
+
+MERGE (o1:symptom {id: 'sưng_tấy_symptom'})
+MERGE (o2:organ {id: 'vùng_amidan_organ'})
+MERGE (o1)-[r134:locatedIn]->(o2)
+SET r134.text = 'Người bệnh chưng cách thủy mật ong với vài lát gừng thái mỏng, uống hỗn hợp này khoảng 2-3 lần mỗi ngày giúp giảm bớt tình trạng viêm nhiễm, sưng tấy tại vùng amidan.'
+
+MERGE (o1:food {id: 'mật_ong_food'})
+MERGE (o2:disease {id: 'viêm_amidan_hốc_mủ_disease'})
+MERGE (o1)-[r135:treatedBy]->(o2)
+SET r135.text = 'Mật ong kết hợp với gừng là một trong những mẹo dân gian điều trị viêm amidan hốc mủ'
+
+MERGE (o1:food {id: 'gừng_food'})
+MERGE (o2:disease {id: 'viêm_amidan_hốc_mủ_disease'})
+MERGE (o1)-[r136:treatedBy]->(o2)
+SET r136.text = 'Mật ong kết hợp với gừng là một trong những mẹo dân gian điều trị viêm amidan hốc mủ'
+
+MERGE (o1:treatment {id: 'thuốc_đặc_trị_treatment'})
+MERGE (o2:disease {id: 'viêm_amidan_hốc_mủ_disease'})
+MERGE (o1)-[r137:treatedBy]->(o2)
+SET r137.text = 'Trường hợp người bệnh mới bắt đầu xuất hiện các dấu hiệu bệnh, chưa xảy ra các biến chứng nguy hiểm, bác sĩ có thể cho thuốc đặc trị.'
+
+MERGE (o1:treatment {id: 'thuốc_giảm_đau_treatment'})
+MERGE (o2:symptom {id: 'đau_rát_ở_cổ_họng_symptom'})
+MERGE (o1)-[r138:treatedBy]->(o2)
+SET r138.text = 'Thuốc giảm đau giúp làm giảm các cơn đau rát ở cổ họng, kết hợp sử dụng thêm thuốc giảm viêm giúp giảm tình trạng viêm, sưng amidan;'
+
+MERGE (o1:treatment {id: 'thuốc_giảm_viêm_treatment'})
+MERGE (o2:symptom {id: 'viêm__sưng_amidan_symptom'})
+MERGE (o1)-[r139:treatedBy]->(o2)
+SET r139.text = 'Thuốc giảm đau giúp làm giảm các cơn đau rát ở cổ họng, kết hợp sử dụng thêm thuốc giảm viêm giúp giảm tình trạng viêm, sưng amidan;'
+
+MERGE (o1:symptom {id: 'sốt_symptom'})
+MERGE (o2:treatment {id: 'thuốc_hạ_sốt_treatment'})
+MERGE (o1)-[r140:treatedBy]->(o2)
+SET r140.text = 'Khi người bệnh có các biểu hiện sốt, ho, phù nề tay chân,&#8230; có thể sử dụng các loại thuốc hạ sốt, thuốc ho, thuốc giảm phù nề,&#8230;'
+
+MERGE (o1:symptom {id: 'ho_symptom'})
+MERGE (o2:treatment {id: 'thuốc_ho_treatment'})
+MERGE (o1)-[r141:treatedBy]->(o2)
+SET r141.text = 'Khi người bệnh có các biểu hiện sốt, ho, phù nề tay chân,&#8230; có thể sử dụng các loại thuốc hạ sốt, thuốc ho, thuốc giảm phù nề,&#8230;'
+
+MERGE (o1:symptom {id: 'phù_nề_tay_chân_symptom'})
+MERGE (o2:treatment {id: 'thuốc_giảm_phù_nề_treatment'})
+MERGE (o1)-[r142:treatedBy]->(o2)
+SET r142.text = 'Khi người bệnh có các biểu hiện sốt, ho, phù nề tay chân,&#8230; có thể sử dụng các loại thuốc hạ sốt, thuốc ho, thuốc giảm phù nề,&#8230;'
+
+MERGE (o1:symptom {id: 'tác_dụng_phụ_nguy_hiểm_symptom'})
+MERGE (o2:lifestyle {id: 'tự_ý_sử_dụng_thuốc_lifestyle'})
+MERGE (o1)-[r143:causedBy]->(o2)
+SET r143.text = 'Tuy nhiên, việc sử dụng
+các thuốc kể trên
+cần có sự chỉ định từ bác sĩ để tránh những tác dụng phụ nguy hiểm.'
+
+MERGE (o1:symptom {id: 'không_điều_trị_dứt_điểm_symptom'})
+MERGE (o2:lifestyle {id: 'tự_ý_sử_dụng_thuốc_lifestyle'})
+MERGE (o1)-[r144:causedBy]->(o2)
+SET r144.text = 'Người bệnh không nên tự ý sử dụng thuốc, hoặc dùng đơn thuốc của người khác vì có thể không điều trị dứt điểm mà còn gây nguy hiểm cho chính mình..'
+
+MERGE (o1:symptom {id: 'nguy_hiểm_symptom'})
+MERGE (o2:lifestyle {id: 'tự_ý_sử_dụng_thuốc_lifestyle'})
+MERGE (o1)-[r145:causedBy]->(o2)
+SET r145.text = 'Người bệnh không nên tự ý sử dụng thuốc, hoặc dùng đơn thuốc của người khác vì có thể không điều trị dứt điểm mà còn gây nguy hiểm cho chính mình..'
+
+MERGE (o1:disease {id: 'viêm_amidan_hốc_mủ_disease'})
+MERGE (o2:symptom {id: 'đau_đớn__khó_chịu_symptom'})
+MERGE (o1)-[r146:isSymptomOf]->(o2)
+SET r146.text = 'Viêm amidan hốc mủ
+gây đau đớn, khó chịu và ảnh hưởng nhiều đến sức khỏe và tâm lý người bệnh, do đó nhiều người bệnh nghĩ đến phương pháp cắt amidan.'
+
+MERGE (o1:disease {id: 'viêm_amidan_hốc_mủ_disease'})
+MERGE (o2:organ {id: 'sức_khỏe_organ'})
+MERGE (o1)-[r147:affects]->(o2)
+SET r147.text = 'Viêm amidan hốc mủ
+gây đau đớn, khó chịu và ảnh hưởng nhiều đến sức khỏe và tâm lý người bệnh, do đó nhiều người bệnh nghĩ đến phương pháp cắt amidan.'
+
+MERGE (o1:disease {id: 'viêm_amidan_hốc_mủ_disease'})
+MERGE (o2:organ {id: 'tâm_lý_organ'})
+MERGE (o1)-[r148:affects]->(o2)
+SET r148.text = 'Viêm amidan hốc mủ
+gây đau đớn, khó chịu và ảnh hưởng nhiều đến sức khỏe và tâm lý người bệnh, do đó nhiều người bệnh nghĩ đến phương pháp cắt amidan.'
+
+MERGE (o1:treatment {id: 'cắt_amidan_treatment'})
+MERGE (o2:disease {id: 'viêm_amidan_hốc_mủ_disease'})
+MERGE (o1)-[r149:treatedBy]->(o2)
+SET r149.text = 'Viêm amidan hốc mủ
+gây đau đớn, khó chịu và ảnh hưởng nhiều đến sức khỏe và tâm lý người bệnh, do đó nhiều người bệnh nghĩ đến phương pháp cắt amidan.'
+
+MERGE (o1:treatment {id: 'cắt_amidan_treatment'})
+MERGE (o2:treatment {id: 'phương_pháp_điều_trị_khác_treatment'})
+MERGE (o1)-[r150:relatedTo]->(o2)
+SET r150.text = 'Tuy nhiên, theo PGS.TS.BS Lê Minh Kỳ, cắt amidan là phương pháp điều trị cuối cùng khi các phương pháp điều trị khác không mang lại hiệu quả.'
+
+MERGE (o1:treatment {id: 'cắt_amidan_treatment'})
+MERGE (o2:disease {id: 'viêm_amidan_hốc_mủ_disease'})
+MERGE (o1)-[r151:treatedBy]->(o2)
+SET r151.text = 'Cắt amidan được chỉ định khi bệnh gây ảnh hưởng nhiều đến sức khỏe, cụ thể là:(4)
+Bệnh gây nên những biến chứng nguy hiểm như áp-xe quanh amidan, viêm tai giữa, viêm xoang, viêm khớp, viêm cầu thận;'
+
+MERGE (o1:disease {id: 'viêm_amidan_hốc_mủ_disease'})
+MERGE (o2:organ {id: 'sức_khỏe_organ'})
+MERGE (o1)-[r152:affects]->(o2)
+SET r152.text = 'Cắt amidan được chỉ định khi bệnh gây ảnh hưởng nhiều đến sức khỏe, cụ thể là:(4)
+Bệnh gây nên những biến chứng nguy hiểm như áp-xe quanh amidan, viêm tai giữa, viêm xoang, viêm khớp, viêm cầu thận;'
+
+MERGE (o1:disease {id: 'áp-xe_quanh_amidan_disease'})
+MERGE (o2:disease {id: 'viêm_amidan_hốc_mủ_disease'})
+MERGE (o1)-[r153:isSymptomOf]->(o2)
+SET r153.text = 'Cắt amidan được chỉ định khi bệnh gây ảnh hưởng nhiều đến sức khỏe, cụ thể là:(4)
+Bệnh gây nên những biến chứng nguy hiểm như áp-xe quanh amidan, viêm tai giữa, viêm xoang, viêm khớp, viêm cầu thận;'
+
+MERGE (o1:disease {id: 'viêm_tai_giữa_disease'})
+MERGE (o2:disease {id: 'viêm_amidan_hốc_mủ_disease'})
+MERGE (o1)-[r154:isSymptomOf]->(o2)
+SET r154.text = 'Cắt amidan được chỉ định khi bệnh gây ảnh hưởng nhiều đến sức khỏe, cụ thể là:(4)
+Bệnh gây nên những biến chứng nguy hiểm như áp-xe quanh amidan, viêm tai giữa, viêm xoang, viêm khớp, viêm cầu thận;'
+
+MERGE (o1:disease {id: 'viêm_xoang_disease'})
+MERGE (o2:disease {id: 'viêm_amidan_hốc_mủ_disease'})
+MERGE (o1)-[r155:isSymptomOf]->(o2)
+SET r155.text = 'Cắt amidan được chỉ định khi bệnh gây ảnh hưởng nhiều đến sức khỏe, cụ thể là:(4)
+Bệnh gây nên những biến chứng nguy hiểm như áp-xe quanh amidan, viêm tai giữa, viêm xoang, viêm khớp, viêm cầu thận;'
+
+MERGE (o1:disease {id: 'viêm_khớp_disease'})
+MERGE (o2:disease {id: 'viêm_amidan_hốc_mủ_disease'})
+MERGE (o1)-[r156:isSymptomOf]->(o2)
+SET r156.text = 'Cắt amidan được chỉ định khi bệnh gây ảnh hưởng nhiều đến sức khỏe, cụ thể là:(4)
+Bệnh gây nên những biến chứng nguy hiểm như áp-xe quanh amidan, viêm tai giữa, viêm xoang, viêm khớp, viêm cầu thận;'
+
+MERGE (o1:symptom {id: 'tiến_triển_nặng_symptom'})
+MERGE (o2:disease {id: 'bệnh_disease'})
+MERGE (o1)-[r157:isSymptomOf]->(o2)
+SET r157.text = 'Người bệnh có dấu hiệu bệnh tiến triển nặng, tắc nghẽn phổi hoặc khó thở, khó nuốt,&#8230;'
+
+MERGE (o1:symptom {id: 'tắc_nghẽn_phổi_symptom'})
+MERGE (o2:disease {id: 'bệnh_disease'})
+MERGE (o1)-[r158:isSymptomOf]->(o2)
+SET r158.text = 'Người bệnh có dấu hiệu bệnh tiến triển nặng, tắc nghẽn phổi hoặc khó thở, khó nuốt,&#8230;'
+
+MERGE (o1:symptom {id: 'khó_thở_symptom'})
+MERGE (o2:disease {id: 'bệnh_disease'})
+MERGE (o1)-[r159:isSymptomOf]->(o2)
+SET r159.text = 'Người bệnh có dấu hiệu bệnh tiến triển nặng, tắc nghẽn phổi hoặc khó thở, khó nuốt,&#8230;'
+
+MERGE (o1:symptom {id: 'khó_nuốt_symptom'})
+MERGE (o2:disease {id: 'bệnh_disease'})
+MERGE (o1)-[r160:isSymptomOf]->(o2)
+SET r160.text = 'Người bệnh có dấu hiệu bệnh tiến triển nặng, tắc nghẽn phổi hoặc khó thở, khó nuốt,&#8230;'
+
+MERGE (o1:symptom {id: 'amidan_có_kích_thước_quá_to_symptom'})
+MERGE (o2:disease {id: 'bệnh_disease'})
+MERGE (o1)-[r161:isSymptomOf]->(o2)
+SET r161.text = 'Amidan có kích thước quá to, cản trở việc ăn uống người bệnh; người bệnh ngưng thở hoặc nhiễm trùng tái phát nhiều lần, ảnh hưởng đến chất lượng cuộc sống;'
+
+MERGE (o1:symptom {id: 'cản_trở_việc_ăn_uống_symptom'})
+MERGE (o2:disease {id: 'bệnh_disease'})
+MERGE (o1)-[r162:isSymptomOf]->(o2)
+SET r162.text = 'Amidan có kích thước quá to, cản trở việc ăn uống người bệnh; người bệnh ngưng thở hoặc nhiễm trùng tái phát nhiều lần, ảnh hưởng đến chất lượng cuộc sống;'
+
+MERGE (o1:symptom {id: 'ngưng_thở_symptom'})
+MERGE (o2:disease {id: 'bệnh_disease'})
+MERGE (o1)-[r163:isSymptomOf]->(o2)
+SET r163.text = 'Amidan có kích thước quá to, cản trở việc ăn uống người bệnh; người bệnh ngưng thở hoặc nhiễm trùng tái phát nhiều lần, ảnh hưởng đến chất lượng cuộc sống;'
+
+MERGE (o1:symptom {id: 'nhiễm_trùng_tái_phát_symptom'})
+MERGE (o2:disease {id: 'bệnh_disease'})
+MERGE (o1)-[r164:isSymptomOf]->(o2)
+SET r164.text = 'Amidan có kích thước quá to, cản trở việc ăn uống người bệnh; người bệnh ngưng thở hoặc nhiễm trùng tái phát nhiều lần, ảnh hưởng đến chất lượng cuộc sống;'
+
+MERGE (o1:symptom {id: 'ảnh_hưởng_đến_chất_lượng_cuộc_sống_symptom'})
+MERGE (o2:disease {id: 'bệnh_disease'})
+MERGE (o1)-[r165:isSymptomOf]->(o2)
+SET r165.text = 'Amidan có kích thước quá to, cản trở việc ăn uống người bệnh; người bệnh ngưng thở hoặc nhiễm trùng tái phát nhiều lần, ảnh hưởng đến chất lượng cuộc sống;'
+
+MERGE (o1:organ {id: 'amidan_organ'})
+MERGE (o2:lifestyle {id: 'việc_ăn_uống_lifestyle'})
+MERGE (o1)-[r166:affects]->(o2)
+SET r166.text = 'Amidan có kích thước quá to, cản trở việc ăn uống người bệnh; người bệnh ngưng thở hoặc nhiễm trùng tái phát nhiều lần, ảnh hưởng đến chất lượng cuộc sống;'
+
+MERGE (o1:organ {id: 'amidan_organ'})
+MERGE (o2:symptom {id: 'hôi_miệng_symptom'})
+MERGE (o1)-[r167:associatedWith]->(o2)
+SET r167.text = 'Khi amidan có quá nhiều ngóc ngách chứa chất tiết gây hôi miệng, khó nuốt hoặc nghi ngờ ác tính thì phương án phẫu thuật cắt amidan cũng được xem xét.'
+
+MERGE (o1:organ {id: 'amidan_organ'})
+MERGE (o2:symptom {id: 'khó_nuốt_symptom'})
+MERGE (o1)-[r168:associatedWith]->(o2)
+SET r168.text = 'Khi amidan có quá nhiều ngóc ngách chứa chất tiết gây hôi miệng, khó nuốt hoặc nghi ngờ ác tính thì phương án phẫu thuật cắt amidan cũng được xem xét.'
+
+MERGE (o1:organ {id: 'amidan_organ'})
+MERGE (o2:symptom {id: 'nghi_ngờ_ác_tính_symptom'})
+MERGE (o1)-[r169:associatedWith]->(o2)
+SET r169.text = 'Khi amidan có quá nhiều ngóc ngách chứa chất tiết gây hôi miệng, khó nuốt hoặc nghi ngờ ác tính thì phương án phẫu thuật cắt amidan cũng được xem xét.'

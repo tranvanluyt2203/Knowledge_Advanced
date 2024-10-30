@@ -1,0 +1,380 @@
+
+MERGE (o1:symptom {id: 'những_nốt_u_mềm_treo_hay_thịt_dư_da_màu_đen__nâu…_symptom'})
+MERGE (o2:disease {id: 'u_mềm_treo_disease'})
+MERGE (o1)-[r0:isSymptomOf]->(o2)
+SET r0.text = 'Những nốt u mềm treo hay thịt dư da màu đen, nâu… theo thời gian dần tăng kích thước.'
+
+MERGE (o1:symptom {id: 'những_nốt_u_mềm_treo_hay_thịt_dư_da_màu_đen__nâu…_symptom'})
+MERGE (o2:organ {id: 'sức_khỏe_organ'})
+MERGE (o1)-[r1:affects]->(o2)
+SET r1.text = 'Những nốt u mềm treo hay thịt dư da màu đen, nâu… theo thời gian dần tăng kích thước. Mặc dù không ảnh hưởng nghiêm trọng đến sức khỏe nhưng lại gây mất thẩm mỹ, giảm tự tin nếu xuất hiện ở những vị trí dễ nhìn như mặt, cổ…'
+
+MERGE (o1:symptom {id: 'những_nốt_u_mềm_treo_hay_thịt_dư_da_màu_đen__nâu…_symptom'})
+MERGE (o2:organ {id: 'thẩm_mỹ_organ'})
+MERGE (o1)-[r2:affects]->(o2)
+SET r2.text = 'Những nốt u mềm treo hay thịt dư da màu đen, nâu… theo thời gian dần tăng kích thước. Mặc dù không ảnh hưởng nghiêm trọng đến sức khỏe nhưng lại gây mất thẩm mỹ, giảm tự tin nếu xuất hiện ở những vị trí dễ nhìn như mặt, cổ…'
+
+MERGE (o1:symptom {id: 'những_nốt_u_mềm_treo_hay_thịt_dư_da_màu_đen__nâu…_symptom'})
+MERGE (o2:organ {id: 'tự_tin_organ'})
+MERGE (o1)-[r3:affects]->(o2)
+SET r3.text = 'Những nốt u mềm treo hay thịt dư da màu đen, nâu… theo thời gian dần tăng kích thước. Mặc dù không ảnh hưởng nghiêm trọng đến sức khỏe nhưng lại gây mất thẩm mỹ, giảm tự tin nếu xuất hiện ở những vị trí dễ nhìn như mặt, cổ…'
+
+MERGE (o1:symptom {id: 'những_nốt_u_mềm_treo_hay_thịt_dư_da_màu_đen__nâu…_symptom'})
+MERGE (o2:organ {id: 'mặt__cổ_organ'})
+MERGE (o1)-[r4:locatedIn]->(o2)
+SET r4.text = 'Những nốt u mềm treo hay thịt dư da màu đen, nâu… theo thời gian dần tăng kích thước. Mặc dù không ảnh hưởng nghiêm trọng đến sức khỏe nhưng lại gây mất thẩm mỹ, giảm tự tin nếu xuất hiện ở những vị trí dễ nhìn như mặt, cổ…'
+
+MERGE (o1:disease {id: 'u_mềm_treo_disease'})
+MERGE (o2:symptom {id: 'tăng_sinh_lành_tính_của_da_symptom'})
+MERGE (o1)-[r5:isSymptomOf]->(o2)
+SET r5.text = 'U mềm treo hay còn gọi là thịt dư da, mụn thịt dư (skin tags) là tình trạng tăng sinh lành tính của da bình thường.'
+
+MERGE (o1:disease {id: 'u_mềm_treo_disease'})
+MERGE (o2:symptom {id: 'thịt_dư_da_symptom'})
+MERGE (o1)-[r6:relatedTo]->(o2)
+SET r6.text = 'U mềm treo hay còn gọi là thịt dư da, mụn thịt dư (skin tags) là tình trạng tăng sinh lành tính của da bình thường.'
+
+MERGE (o1:disease {id: 'u_mềm_treo_disease'})
+MERGE (o2:symptom {id: 'mụn_thịt_dư_symptom'})
+MERGE (o1)-[r7:relatedTo]->(o2)
+SET r7.text = 'U mềm treo hay còn gọi là thịt dư da, mụn thịt dư (skin tags) là tình trạng tăng sinh lành tính của da bình thường.'
+
+MERGE (o1:symptom {id: 'khối_u_mềm_symptom'})
+MERGE (o2:disease {id: 'u_mềm_treo_disease'})
+MERGE (o1)-[r8:isSymptomOf]->(o2)
+SET r8.text = 'Khối u mềm có bề mặt trơn láng, thường mọc ra từ một cái cuống hoặc nhú, trồi lên hẳn so với bề mặt da, có màu sắc đen, vàng, nâu hoặc trùng màu da.'
+
+MERGE (o1:symptom {id: 'khối_u_mềm_symptom'})
+MERGE (o2:organ {id: 'da_organ'})
+MERGE (o1)-[r9:locatedIn]->(o2)
+SET r9.text = 'Khối u mềm có bề mặt trơn láng, thường mọc ra từ một cái cuống hoặc nhú, trồi lên hẳn so với bề mặt da, có màu sắc đen, vàng, nâu hoặc trùng màu da.'
+
+MERGE (o1:symptom {id: 'những_cục_u_mềm_này_symptom'})
+MERGE (o2:organ {id: 'mặt__cổ__nách__dưới_vú__mi_mắt__bẹn__hậu_môn_organ'})
+MERGE (o1)-[r10:locatedIn]->(o2)
+SET r10.text = 'Những cục u mềm này thường hình thành ở những vị trí da tiếp xúc nhiều với ánh nắng như mặt, cổ…; hay vùng da cọ xát nhiều với nhau như cổ, nách, dưới vú, mi mắt, bẹn, hậu môn.'
+
+MERGE (o1:symptom {id: 'những_cục_u_mềm_này_symptom'})
+MERGE (o2:lifestyle {id: 'tiếp_xúc_nhiều_với_ánh_nắng_lifestyle'})
+MERGE (o1)-[r11:causedBy]->(o2)
+SET r11.text = 'Những cục u mềm này thường hình thành ở những vị trí da tiếp xúc nhiều với ánh nắng như mặt, cổ…; hay vùng da cọ xát nhiều với nhau như cổ, nách, dưới vú, mi mắt, bẹn, hậu môn.'
+
+MERGE (o1:symptom {id: 'những_cục_u_mềm_này_symptom'})
+MERGE (o2:lifestyle {id: 'cọ_xát_nhiều_với_nhau_lifestyle'})
+MERGE (o1)-[r12:causedBy]->(o2)
+SET r12.text = 'Những cục u mềm này thường hình thành ở những vị trí da tiếp xúc nhiều với ánh nắng như mặt, cổ…; hay vùng da cọ xát nhiều với nhau như cổ, nách, dưới vú, mi mắt, bẹn, hậu môn.'
+
+MERGE (o1:symptom {id: 'những_nốt_mụn_thịt_dư_này_symptom'})
+MERGE (o2:disease {id: 'u_mềm_treo_disease'})
+MERGE (o1)-[r13:isSymptomOf]->(o2)
+SET r13.text = 'Những nốt mụn thịt dư này thường có kích thước từ 1-10mm, tuy nhiên không ít trường hợp kích thước lên đến 3cm, thậm chí lớn hơn.'
+
+MERGE (o1:disease {id: 'u_mềm_treo_disease'})
+MERGE (o2:symptom {id: 'thịt_dư_da_symptom'})
+MERGE (o1)-[r14:relatedTo]->(o2)
+SET r14.text = 'Một người có thể xuất hiện nhiều u mềm treo vào cùng một thời điểm, có thể là 3 - 4 hoặc nhiều hơn 10 thịt dư da.'
+
+MERGE (o1:disease {id: 'bệnh_disease'})
+MERGE (o2:cause {id: 'tuổi_cao_cause'})
+MERGE (o1)-[r15:relatedTo]->(o2)
+SET r15.text = 'Bệnh thường xuất hiện ở người trên 50 tuổi.'
+
+MERGE (o1:treatment {id: 'nitơ_lỏng_treatment'})
+MERGE (o2:disease {id: 'thịt_dư_da_disease'})
+MERGE (o1)-[r16:treatedBy]->(o2)
+SET r16.text = 'Sau thăm khám, bác sĩ chỉ định bà H. điều trị thịt dư da bằng nitơ lỏng, phẫu thuật không “đụng dao kéo”.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_không_“đụng_dao_kéo”_treatment'})
+MERGE (o2:disease {id: 'thịt_dư_da_disease'})
+MERGE (o1)-[r17:treatedBy]->(o2)
+SET r17.text = 'Sau thăm khám, bác sĩ chỉ định bà H. điều trị thịt dư da bằng nitơ lỏng, phẫu thuật không “đụng dao kéo”.'
+
+MERGE (o1:symptom {id: 'cục_u_mềm_symptom'})
+MERGE (o2:organ {id: 'mắt__mũi_organ'})
+MERGE (o1)-[r18:locatedIn]->(o2)
+SET r18.text = 'Sau 2 tuần tái khám, cục u mềm ở mắt và ở mũi tiêu biến.'
+
+MERGE (o1:symptom {id: 'ngứa_ngáy__khó_chịu_symptom'})
+MERGE (o2:disease {id: 'u_mềm_treo_disease'})
+MERGE (o1)-[r19:isSymptomOf]->(o2)
+SET r19.text = 'Bà H. không còn cảm giác ngứa ngáy, khó chịu, đặc biệt bước chân đã vững chắc hơn vì tầm nhìn không còn hạn chế.'
+
+MERGE (o1:symptom {id: 'tầm_nhìn_hạn_chế_symptom'})
+MERGE (o2:disease {id: 'u_mềm_treo_disease'})
+MERGE (o1)-[r20:isSymptomOf]->(o2)
+SET r20.text = 'Bà H. không còn cảm giác ngứa ngáy, khó chịu, đặc biệt bước chân đã vững chắc hơn vì tầm nhìn không còn hạn chế.'
+
+MERGE (o1:disease {id: 'bệnh_u_mềm_treo_disease'})
+MERGE (o2:cause {id: 'yếu_tố_chủ_quan_cause'})
+MERGE (o1)-[r21:causedBy]->(o2)
+SET r21.text = 'Theo BS Bích, bệnh u mềm treo xảy ra gồm 2 yếu tố: chủ quan và khách quan:'
+
+MERGE (o1:disease {id: 'bệnh_u_mềm_treo_disease'})
+MERGE (o2:cause {id: 'yếu_tố_khách_quan_cause'})
+MERGE (o1)-[r22:causedBy]->(o2)
+SET r22.text = 'Theo BS Bích, bệnh u mềm treo xảy ra gồm 2 yếu tố: chủ quan và khách quan:'
+
+MERGE (o1:lifestyle {id: 'tiếp_xúc_quá_lâu_với_nắng_lifestyle'})
+MERGE (o2:disease {id: 'u_mềm_treo_disease'})
+MERGE (o1)-[r23:causedBy]->(o2)
+SET r23.text = 'Yếu tố chủ quan do da tiếp xúc quá lâu, trong thời gian dài với nắng mà không có các biện pháp chống nắng thích hợp.'
+
+MERGE (o1:lifestyle {id: 'thiếu_biện_pháp_chống_nắng_lifestyle'})
+MERGE (o2:disease {id: 'u_mềm_treo_disease'})
+MERGE (o1)-[r24:causedBy]->(o2)
+SET r24.text = 'Yếu tố chủ quan do da tiếp xúc quá lâu, trong thời gian dài với nắng mà không có các biện pháp chống nắng thích hợp.'
+
+MERGE (o1:lifestyle {id: 'phơi_nắng_nhiều_lifestyle'})
+MERGE (o2:disease {id: 'u_mềm_treo_disease'})
+MERGE (o1)-[r25:causedBy]->(o2)
+SET r25.text = 'Ở nữ, những phần da phơi ra ngoài ánh nắng nhiều như cổ, ngực…; còn nam giới là lưng, vai và nhiều chỗ khác do thói quen ở trần đi nắng, sẽ có nguy cơ xuất hiện mụn thịt dư nhiều hơn.'
+
+MERGE (o1:lifestyle {id: 'ở_trần_đi_nắng_lifestyle'})
+MERGE (o2:disease {id: 'u_mềm_treo_disease'})
+MERGE (o1)-[r26:causedBy]->(o2)
+SET r26.text = 'Ở nữ, những phần da phơi ra ngoài ánh nắng nhiều như cổ, ngực…; còn nam giới là lưng, vai và nhiều chỗ khác do thói quen ở trần đi nắng, sẽ có nguy cơ xuất hiện mụn thịt dư nhiều hơn.'
+
+MERGE (o1:lifestyle {id: 'tắm_nắng_lifestyle'})
+MERGE (o2:disease {id: 'u_mềm_treo_disease'})
+MERGE (o1)-[r27:causedBy]->(o2)
+SET r27.text = 'Những người hay tắm nắng, đi biển, làm việc ngoài trời quá nhiều như đánh cá, bán hàng rong… không sử dụng phụ kiện che nắng là nhóm có nguy cơ cao.'
+
+MERGE (o1:lifestyle {id: 'đi_biển_lifestyle'})
+MERGE (o2:disease {id: 'u_mềm_treo_disease'})
+MERGE (o1)-[r28:causedBy]->(o2)
+SET r28.text = 'Những người hay tắm nắng, đi biển, làm việc ngoài trời quá nhiều như đánh cá, bán hàng rong… không sử dụng phụ kiện che nắng là nhóm có nguy cơ cao.'
+
+MERGE (o1:lifestyle {id: 'làm_việc_ngoài_trời_lifestyle'})
+MERGE (o2:disease {id: 'u_mềm_treo_disease'})
+MERGE (o1)-[r29:causedBy]->(o2)
+SET r29.text = 'Những người hay tắm nắng, đi biển, làm việc ngoài trời quá nhiều như đánh cá, bán hàng rong… không sử dụng phụ kiện che nắng là nhóm có nguy cơ cao.'
+
+MERGE (o1:lifestyle {id: 'không_sử_dụng_phụ_kiện_che_nắng_lifestyle'})
+MERGE (o2:disease {id: 'u_mềm_treo_disease'})
+MERGE (o1)-[r30:causedBy]->(o2)
+SET r30.text = 'Những người hay tắm nắng, đi biển, làm việc ngoài trời quá nhiều như đánh cá, bán hàng rong… không sử dụng phụ kiện che nắng là nhóm có nguy cơ cao.'
+
+MERGE (o1:cause {id: 'khí_hậu_nhiệt_đới_gió_mùa_cause'})
+MERGE (o2:disease {id: 'u_mềm_treo_disease'})
+MERGE (o1)-[r31:causedBy]->(o2)
+SET r31.text = 'Yếu tố khách quan đến từ đặc điểm khí hậu nhiệt đới gió mùa, ánh nắng chói chang nhiều giờ trong ngày của nước ta.'
+
+MERGE (o1:cause {id: 'ánh_nắng_chói_chang_cause'})
+MERGE (o2:disease {id: 'u_mềm_treo_disease'})
+MERGE (o1)-[r32:causedBy]->(o2)
+SET r32.text = 'Yếu tố khách quan đến từ đặc điểm khí hậu nhiệt đới gió mùa, ánh nắng chói chang nhiều giờ trong ngày của nước ta.'
+
+MERGE (o1:disease {id: 'lão_hóa_da_disease'})
+MERGE (o2:cause {id: 'ánh_nắng_chói_chang_cause'})
+MERGE (o1)-[r33:causedBy]->(o2)
+SET r33.text = 'Đây là nguyên nhân chính gây tình trạng lão hóa da ở người lớn tuổi.'
+
+MERGE (o1:disease {id: 'tổn_thương_da_disease'})
+MERGE (o2:cause {id: 'ánh_nắng_cause'})
+MERGE (o1)-[r34:causedBy]->(o2)
+SET r34.text = 'Thống kê cho thấy khoảng 80%-90% người Việt bị các tổn thương da do nguyên nhân từ ánh nắng.'
+
+MERGE (o1:cause {id: 'tuổi_cao_cause'})
+MERGE (o2:disease {id: 'lão_hóa_da_disease'})
+MERGE (o1)-[r35:causedBy]->(o2)
+SET r35.text = 'Ngoài ra, tuổi cao cũng là yếu tố gây lão hóa da.'
+
+MERGE (o1:disease {id: 'lão_hóa_da_sớm_disease'})
+MERGE (o2:disease {id: 'lão_hóa_da_disease'})
+MERGE (o1)-[r36:relatedTo]->(o2)
+SET r36.text = 'Nếu người trẻ mắc phải tình trạng này thì gọi là lão hóa da sớm.'
+
+MERGE (o1:disease {id: 'bệnh_lành_tính_disease'})
+MERGE (o2:symptom {id: 'tính_thẩm_mỹ_symptom'})
+MERGE (o1)-[r37:affects]->(o2)
+SET r37.text = 'Dù bệnh lành tính nhưng lại ảnh hưởng lớn đến tính thẩm mỹ, nhất là khi người bệnh còn trẻ tuổi.'
+
+MERGE (o1:disease {id: 'bệnh_u_mềm_treo_disease'})
+MERGE (o2:symptom {id: 'những_nốt_sần_tròn__chắc__bề_mặt_nhẵn__gồ_cao_trên_da_symptom'})
+MERGE (o1)-[r38:isSymptomOf]->(o2)
+SET r38.text = 'Theo đó, các biểu hiện của bệnh u mềm treo:  Những nốt sần tròn, chắc, bề mặt nhẵn, gồ cao trên da.'
+
+MERGE (o1:symptom {id: 'nốt_sần_symptom'})
+MERGE (o2:disease {id: 'bệnh_u_mềm_treo_disease'})
+MERGE (o1)-[r39:isSymptomOf]->(o2)
+SET r39.text = 'Nốt sần có thể tập trung thành nhóm, khu trú hoặc lan rộng trên da/ bề mặt niêm mạc.'
+
+MERGE (o1:disease {id: 'nốt_u_mềm_treo_disease'})
+MERGE (o2:organ {id: 'mặt__ngực__cổ__tay__chân_organ'})
+MERGE (o1)-[r40:locatedIn]->(o2)
+SET r40.text = 'Với trẻ nhỏ, nốt u mềm treo thường xuất hiện ở mặt, ngực, cổ, tay, chân.'
+
+MERGE (o1:symptom {id: 'thịt_dư_da_symptom'})
+MERGE (o2:organ {id: 'mặt__cổ__tay__vùng_sinh_dục_organ'})
+MERGE (o1)-[r41:locatedIn]->(o2)
+SET r41.text = 'Với người lớn, thịt dư da có ở những vị trí tiếp xúc với nắng nhiều như mặt, cổ, tay… hay vùng sinh dục.'
+
+MERGE (o1:organ {id: 'vị_trí_u_organ'})
+MERGE (o2:organ {id: 'bộ_phận_organ'})
+MERGE (o1)-[r42:affects]->(o2)
+SET r42.text = 'Ngoài ra, tùy vào vị trí u xuất hiện sẽ gây ra những hệ lụy tại bộ phận đó.'
+
+MERGE (o1:symptom {id: 'mụn_thịt_dư_symptom'})
+MERGE (o2:organ {id: 'mi_mắt__dương_vật__hậu_môn_organ'})
+MERGE (o1)-[r43:locatedIn]->(o2)
+SET r43.text = 'Cụ thể, mụn thịt dư xuất hiện ở trên mi mắt thì làm sụp mi; ở dương vật thì ảnh hưởng nhu cầu sinh lý; ở hậu môn thì gây đau, ảnh hưởng đến nhu cầu đi tiêu…'
+
+MERGE (o1:symptom {id: 'mụn_thịt_dư_symptom'})
+MERGE (o2:lifestyle {id: 'nhu_cầu_sinh_lý_lifestyle'})
+MERGE (o1)-[r44:affects]->(o2)
+SET r44.text = 'Cụ thể, mụn thịt dư xuất hiện ở trên mi mắt thì làm sụp mi; ở dương vật thì ảnh hưởng nhu cầu sinh lý; ở hậu môn thì gây đau, ảnh hưởng đến nhu cầu đi tiêu…'
+
+MERGE (o1:symptom {id: 'mụn_thịt_dư_symptom'})
+MERGE (o2:lifestyle {id: 'nhu_cầu_đi_tiêu_lifestyle'})
+MERGE (o1)-[r45:affects]->(o2)
+SET r45.text = 'Cụ thể, mụn thịt dư xuất hiện ở trên mi mắt thì làm sụp mi; ở dương vật thì ảnh hưởng nhu cầu sinh lý; ở hậu môn thì gây đau, ảnh hưởng đến nhu cầu đi tiêu…'
+
+MERGE (o1:cause {id: 'tiếp_xúc_nắng_quá_lâu_cause'})
+MERGE (o2:disease {id: 'bệnh_u_mềm_treo_disease'})
+MERGE (o1)-[r46:causedBy]->(o2)
+SET r46.text = 'Tiếp xúc nắng quá lâu là nguyên nhân gây bệnh'
+
+MERGE (o1:disease {id: 'u_mềm_treo_disease'})
+MERGE (o2:symptom {id: 'nhiễm_trùng__chảy_máu__tạo_sẹo_xấu_symptom'})
+MERGE (o1)-[r47:isSymptomOf]->(o2)
+SET r47.text = 'U mềm treo sẽ gây biến chứng nếu người bệnh xem nhẹ và chữa bệnh kiểu truyền miệng dân gian như đốt, lấy chỉ cắt… sẽ gây nhiễm trùng, chảy máu, tạo sẹo xấu.'
+
+MERGE (o1:symptom {id: 'nốt_sần_trên_da_symptom'})
+MERGE (o2:disease {id: 'bệnh_u_mềm_treo_disease'})
+MERGE (o1)-[r48:isSymptomOf]->(o2)
+SET r48.text = 'Ước tính có khoảng 50 - 60% người trưởng thành sẽ phát triển ít nhất một nốt sần trên da trong cuộc đời.'
+
+MERGE (o1:symptom {id: 'nốt_sần_symptom'})
+MERGE (o2:lifestyle {id: 'độ_tuổi_40_lifestyle'})
+MERGE (o1)-[r49:associatedWith]->(o2)
+SET r49.text = 'Tần suất xuất hiện của những nốt sần này tăng lên sau độ tuổi 40.'
+
+MERGE (o1:disease {id: 'bệnh_u_mềm_treo_disease'})
+MERGE (o2:disease {id: 'béo_phì__tiểu_đường__hội_chứng_chuyển_hóa_disease'})
+MERGE (o1)-[r50:associatedWith]->(o2)
+SET r50.text = 'Bệnh xảy ra phổ biến hơn ở những người bị béo phì, tiểu đường, hội chứng chuyển hóa và ở những người có tiền sử gia đình mắc bệnh về da.'
+
+MERGE (o1:disease {id: 'bệnh_u_mềm_treo_disease'})
+MERGE (o2:lifestyle {id: 'tiền_sử_gia_đình_mắc_bệnh_về_da_lifestyle'})
+MERGE (o1)-[r51:associatedWith]->(o2)
+SET r51.text = 'Bệnh xảy ra phổ biến hơn ở những người bị béo phì, tiểu đường, hội chứng chuyển hóa và ở những người có tiền sử gia đình mắc bệnh về da.'
+
+MERGE (o1:disease {id: 'bệnh_u_mềm_treo_disease'})
+MERGE (o2:lifestyle {id: 'nam_và_nữ_lifestyle'})
+MERGE (o1)-[r52:affects]->(o2)
+SET r52.text = 'Mức độ ảnh hưởng của bệnh đến nam và nữ đều như nhau.'
+
+MERGE (o1:disease {id: 'béo_phì_disease'})
+MERGE (o2:symptom {id: 'xuất_hiện_sẹo_sau_khi_phẫu_thuật_u_mềm_treo_symptom'})
+MERGE (o1)-[r53:associatedWith]->(o2)
+SET r53.text = 'Trong nhiều trường hợp, những người béo phì có nguy cơ xảy ra biến chứng cao hơn:  Xuất hiện sẹo sau khi phẫu thuật u mềm treo.'
+
+MERGE (o1:symptom {id: 'xoắn_hoặc_nhồi_máu_tự_phát_symptom'})
+MERGE (o2:disease {id: 'bệnh_u_mềm_treo_disease'})
+MERGE (o1)-[r54:isSymptomOf]->(o2)
+SET r54.text = 'Gây xoắn hoặc nhồi máu tự phát ở những nốt mụn thịt dư có cuống gây thiếu máu mô, gây đau, thậm chí hoại tử/ nhiễm trùng thứ phát.'
+
+MERGE (o1:symptom {id: 'thiếu_máu_mô_symptom'})
+MERGE (o2:disease {id: 'bệnh_u_mềm_treo_disease'})
+MERGE (o1)-[r55:isSymptomOf]->(o2)
+SET r55.text = 'Gây xoắn hoặc nhồi máu tự phát ở những nốt mụn thịt dư có cuống gây thiếu máu mô, gây đau, thậm chí hoại tử/ nhiễm trùng thứ phát.'
+
+MERGE (o1:symptom {id: 'hoại_tử/_nhiễm_trùng_thứ_phát_symptom'})
+MERGE (o2:disease {id: 'bệnh_u_mềm_treo_disease'})
+MERGE (o1)-[r56:isSymptomOf]->(o2)
+SET r56.text = 'Gây xoắn hoặc nhồi máu tự phát ở những nốt mụn thịt dư có cuống gây thiếu máu mô, gây đau, thậm chí hoại tử/ nhiễm trùng thứ phát.'
+
+MERGE (o1:disease {id: 'bệnh_u_mềm_treo_disease'})
+MERGE (o2:treatment {id: 'bác_sĩ_lâm_sàng_treatment'})
+MERGE (o1)-[r57:treatedBy]->(o2)
+SET r57.text = 'Lúc này cần phải tìm kiếm sự hỗ trợ từ bác sĩ lâm sàng.'
+
+MERGE (o1:symptom {id: 'viêm_da_kích_ứng_symptom'})
+MERGE (o2:disease {id: 'bệnh_u_mềm_treo_disease'})
+MERGE (o1)-[r58:isSymptomOf]->(o2)
+SET r58.text = 'Kích ứng nhẹ, thậm chí xảy ra tình trạng viêm da kích ứng ở vùng da phẫu thuật.'
+
+MERGE (o1:disease {id: 'u_thần_kinh_disease'})
+MERGE (o2:disease {id: 'bệnh_u_mềm_treo_disease'})
+MERGE (o1)-[r59:isSymptomOf]->(o2)
+SET r59.text = 'Hiếm khi u thần kinh có thể xuất hiện nếu một dây thần kinh phát triển trong khối thịt dư da bị cắt, gây đau mãn tính trong vài tuần, thậm chí vài tháng.'
+
+MERGE (o1:symptom {id: 'đau_mãn_tính_symptom'})
+MERGE (o2:disease {id: 'bệnh_u_mềm_treo_disease'})
+MERGE (o1)-[r60:isSymptomOf]->(o2)
+SET r60.text = 'Hiếm khi u thần kinh có thể xuất hiện nếu một dây thần kinh phát triển trong khối thịt dư da bị cắt, gây đau mãn tính trong vài tuần, thậm chí vài tháng.'
+
+MERGE (o1:disease {id: 'bệnh_u_mềm_treo_disease'})
+MERGE (o2:treatment {id: 'chuyên_khoa_da_liễu_treatment'})
+MERGE (o1)-[r61:diagnosedBy]->(o2)
+SET r61.text = 'Người bệnh nên đi khám ngay tại các chuyên khoa Da liễu để có cách xử trí kịp thời khi thấy các triệu chứng sau:  Xuất hiện các khối u bất thường ở các vị trí khác nhau trên cơ thể và nghi ngờ những nốt đó là u mềm treo'
+
+MERGE (o1:symptom {id: 'khối_u_bất_thường_symptom'})
+MERGE (o2:disease {id: 'bệnh_u_mềm_treo_disease'})
+MERGE (o1)-[r62:isSymptomOf]->(o2)
+SET r62.text = 'Người bệnh nên đi khám ngay tại các chuyên khoa Da liễu để có cách xử trí kịp thời khi thấy các triệu chứng sau:  Xuất hiện các khối u bất thường ở các vị trí khác nhau trên cơ thể và nghi ngờ những nốt đó là u mềm treo'
+
+MERGE (o1:treatment {id: 'điều_trị_u_mềm_treo_treatment'})
+MERGE (o2:disease {id: 'u_mềm_treo_disease'})
+MERGE (o1)-[r63:isSymptomOf]->(o2)
+SET r63.text = 'Theo bác sĩ Bích, điều trị u mềm treo là một thủ thuật thẩm mỹ đơn giản.'
+
+MERGE (o1:treatment {id: 'dùng_nitơ_lạnh_để_đốt_treatment'})
+MERGE (o2:disease {id: 'u_mềm_treo_disease'})
+MERGE (o1)-[r64:treatedBy]->(o2)
+SET r64.text = 'Có nhiều phương pháp điều trị thẩm mỹ nhất là dùng nitơ lạnh để đốt bằng cách chấm, bắn hay kẹp nitơ vào sang thương.'
+
+MERGE (o1:treatment {id: 'không_cần_phải_gây_tê_hay_gây_mê_treatment'})
+MERGE (o2:disease {id: 'u_mềm_treo_disease'})
+MERGE (o1)-[r65:treatedBy]->(o2)
+SET r65.text = 'Ưu điểm của phương pháp này là không cần phải gây tê hay gây mê, không gây đau, không chảy máu và không để lại sẹo.'
+
+MERGE (o1:symptom {id: 'không_gây_đau_symptom'})
+MERGE (o2:disease {id: 'u_mềm_treo_disease'})
+MERGE (o1)-[r66:isSymptomOf]->(o2)
+SET r66.text = 'Ưu điểm của phương pháp này là không cần phải gây tê hay gây mê, không gây đau, không chảy máu và không để lại sẹo.'
+
+MERGE (o1:symptom {id: 'không_chảy_máu_symptom'})
+MERGE (o2:disease {id: 'u_mềm_treo_disease'})
+MERGE (o1)-[r67:isSymptomOf]->(o2)
+SET r67.text = 'Ưu điểm của phương pháp này là không cần phải gây tê hay gây mê, không gây đau, không chảy máu và không để lại sẹo.'
+
+MERGE (o1:symptom {id: 'không_để_lại_sẹo_symptom'})
+MERGE (o2:disease {id: 'u_mềm_treo_disease'})
+MERGE (o1)-[r68:isSymptomOf]->(o2)
+SET r68.text = 'Ưu điểm của phương pháp này là không cần phải gây tê hay gây mê, không gây đau, không chảy máu và không để lại sẹo.'
+
+MERGE (o1:disease {id: 'u_mềm_disease'})
+MERGE (o2:treatment {id: 'điều_trị_đúng_y_khoa_treatment'})
+MERGE (o1)-[r69:treatedBy]->(o2)
+SET r69.text = 'Sau điều trị đúng y khoa, u mềm không tái xuất hiện ở vị trí đã được xử lý.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_cắt_bỏ_treatment'})
+MERGE (o2:disease {id: 'u_mềm_treo_disease'})
+MERGE (o1)-[r70:treatedBy]->(o2)
+SET r70.text = 'Ngoài ra, phẫu thuật cắt bỏ, đốt điện tổn thương, đốt laser… cũng là những phương pháp được lựa chọn để điều trị căn bệnh này.'
+
+MERGE (o1:treatment {id: 'đốt_điện_tổn_thương_treatment'})
+MERGE (o2:disease {id: 'u_mềm_treo_disease'})
+MERGE (o1)-[r71:treatedBy]->(o2)
+SET r71.text = 'Ngoài ra, phẫu thuật cắt bỏ, đốt điện tổn thương, đốt laser… cũng là những phương pháp được lựa chọn để điều trị căn bệnh này.'
+
+MERGE (o1:treatment {id: 'đốt_laser_treatment'})
+MERGE (o2:disease {id: 'u_mềm_treo_disease'})
+MERGE (o1)-[r72:treatedBy]->(o2)
+SET r72.text = 'Ngoài ra, phẫu thuật cắt bỏ, đốt điện tổn thương, đốt laser… cũng là những phương pháp được lựa chọn để điều trị căn bệnh này.'
+
+MERGE (o1:disease {id: 'u_mềm_treo_disease'})
+MERGE (o2:lifestyle {id: 'đội_nón__che_nắng__đeo_kính__bôi_kem_chống_nắng_lifestyle'})
+MERGE (o1)-[r73:preventedBy]->(o2)
+SET r73.text = 'Phòng tránh u mềm treo bằng cách đội nón, che nắng, đeo kính, bôi kem chống nắng… khi đi ra ngoài nhất là khi đi biển vào mùa hè.'
+
+MERGE (o1:food {id: 'vitamin_e_food'})
+MERGE (o2:disease {id: 'u_mềm_treo_disease'})
+MERGE (o1)-[r74:preventedBy]->(o2)
+SET r74.text = 'Ngoài ra, bổ sung vitamin E để làm chậm quá trình lão hóa da, ngăn các vấn đề về da liễu phát sinh.'
+
+MERGE (o1:disease {id: 'u_mềm_treo_disease'})
+MERGE (o2:organ {id: 'mắt__khuôn_mặt__những_vùng_nhạy_cảm_organ'})
+MERGE (o1)-[r75:locatedIn]->(o2)
+SET r75.text = 'Đặc biệt, người bệnh nên đi khám khi u mềm treo xuất hiện ở những vị trí quan trọng như mắt, khuôn mặt, những vùng nhạy cảm hay khi sang thương có kích thước lớn hơn 2cm.'

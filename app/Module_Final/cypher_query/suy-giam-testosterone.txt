@@ -1,0 +1,705 @@
+
+MERGE (o1:organ {id: 'testosterone_organ'})
+MERGE (o2:symptom {id: 'sức_khỏe__thần_kinh__tâm_lý__khả_năng_sinh_lý_và_sinh_sản_symptom'})
+MERGE (o1)-[r0:affects]->(o2)
+SET r0.text = 'Testosterone được xem là hormone “quyền lực” của nam giới, chúng chi phối mọi mặt cả sức khỏe, thần kinh, tâm lý đến khả năng sinh lý và sinh sản của người đàn ông.'
+
+MERGE (o1:organ {id: 'testosterone_organ'})
+MERGE (o2:lifestyle {id: 'nam_giới_lifestyle'})
+MERGE (o1)-[r1:relatedTo]->(o2)
+SET r1.text = 'Testosterone được xem là hormone “quyền lực” của nam giới, chúng chi phối mọi mặt cả sức khỏe, thần kinh, tâm lý đến khả năng sinh lý và sinh sản của người đàn ông.'
+
+MERGE (o1:organ {id: 'testosterone_organ'})
+MERGE (o2:cause {id: 'thời_gian_và_nhiều_yếu_tố_tác_động_cause'})
+MERGE (o1)-[r2:causedBy]->(o2)
+SET r2.text = 'Tuy nhiên, theo thời gian và nhiều yếu tố tác động khiến Testosterone không ngừng bị suy giảm.'
+
+MERGE (o1:disease {id: 'suy_giảm_nội_tiết_tố_nam_disease'})
+MERGE (o2:lifestyle {id: 'nam_giới_lifestyle'})
+MERGE (o1)-[r3:affects]->(o2)
+SET r3.text = 'Khi nội tiết tố nam bị suy giảm, nam giới phải đối mặt với nhiều vấn đề không mong muốn.'
+
+MERGE (o1:disease {id: 'suy_giảm_testosterone_disease'})
+MERGE (o2:treatment {id: 'hiểu_rõ_nguyên_nhân_suy_giảm_testosterone__cũng_dấu_hiệu_nhận_biết_và_cách_điều_trị_hiệu_quả_từ_sớm_treatment'})
+MERGE (o1)-[r4:treatedBy]->(o2)
+SET r4.text = 'Để kiểm soát và duy trì lượng nội tiết tố ở mức ổn định, nam giới cần hiểu rõ nguyên nhân suy giảm testosterone, cũng dấu hiệu nhận biết và cách điều trị hiệu quả từ sớm.'
+
+MERGE (o1:disease {id: 'suy_giảm_testosterone_disease'})
+MERGE (o2:symptom {id: 'nồng_độ_testosterone_trong_máu_thấp_dưới_mức_trung_bình_10-35_nanomol/lít_symptom'})
+MERGE (o1)-[r5:isSymptomOf]->(o2)
+SET r5.text = 'Suy giảm testosterone hay suy giảm nội tiết tố nam là tình trạng nồng độ testosterone trong máu thấp dưới mức trung bình 10-35 nanomol/lít ở người trưởng thành.'
+
+MERGE (o1:disease {id: 'suy_giảm_testosterone_disease'})
+MERGE (o2:lifestyle {id: 'người_trưởng_thành_lifestyle'})
+MERGE (o1)-[r6:relatedTo]->(o2)
+SET r6.text = 'Suy giảm testosterone hay suy giảm nội tiết tố nam là tình trạng nồng độ testosterone trong máu thấp dưới mức trung bình 10-35 nanomol/lít ở người trưởng thành.'
+
+MERGE (o1:symptom {id: 'testosterone_thấp_symptom'})
+MERGE (o2:lifestyle {id: 'đàn_ông_trên_60_tuổi_lifestyle'})
+MERGE (o1)-[r7:associatedWith]->(o2)
+SET r7.text = 'Theo Hiệp hội Tiết niệu Hoa Kỳ (AUA), có khoảng 20% đàn ông trên 60 tuổi có mức Testosterone thấp, con số này tăng lên 30% nam giới ở độ tuổi 70-80.'
+
+MERGE (o1:symptom {id: 'testosterone_thấp_symptom'})
+MERGE (o2:lifestyle {id: 'nam_giới_ở_độ_tuổi_70-80_lifestyle'})
+MERGE (o1)-[r8:associatedWith]->(o2)
+SET r8.text = 'Theo Hiệp hội Tiết niệu Hoa Kỳ (AUA), có khoảng 20% đàn ông trên 60 tuổi có mức Testosterone thấp, con số này tăng lên 30% nam giới ở độ tuổi 70-80.'
+
+MERGE (o1:organ {id: 'testosterone_organ'})
+MERGE (o2:organ {id: 'tế_bào_leydig_ở_tinh_hoàn_organ'})
+MERGE (o1)-[r9:locatedIn]->(o2)
+SET r9.text = 'Testosterone là hormone sinh dục được sản sinh chủ yếu tại tế bào Leydig ở tinh hoàn và một lượng nhỏ của tuyến thượng thận từ tuần thứ 7 thai kỳ, tăng cao ở lứa tuổi dậy thì và độ tuổi 20-30 nam giới có lượng Testosterone đạt mức đỉnh điểm.'
+
+MERGE (o1:organ {id: 'testosterone_organ'})
+MERGE (o2:organ {id: 'tuyến_thượng_thận_organ'})
+MERGE (o1)-[r10:locatedIn]->(o2)
+SET r10.text = 'Testosterone là hormone sinh dục được sản sinh chủ yếu tại tế bào Leydig ở tinh hoàn và một lượng nhỏ của tuyến thượng thận từ tuần thứ 7 thai kỳ, tăng cao ở lứa tuổi dậy thì và độ tuổi 20-30 nam giới có lượng Testosterone đạt mức đỉnh điểm.'
+
+MERGE (o1:organ {id: 'testosterone_organ'})
+MERGE (o2:lifestyle {id: 'lứa_tuổi_dậy_thì_lifestyle'})
+MERGE (o1)-[r11:relatedTo]->(o2)
+SET r11.text = 'Testosterone là hormone sinh dục được sản sinh chủ yếu tại tế bào Leydig ở tinh hoàn và một lượng nhỏ của tuyến thượng thận từ tuần thứ 7 thai kỳ, tăng cao ở lứa tuổi dậy thì và độ tuổi 20-30 nam giới có lượng Testosterone đạt mức đỉnh điểm.'
+
+MERGE (o1:organ {id: 'testosterone_organ'})
+MERGE (o2:lifestyle {id: 'nam_giới_lifestyle'})
+MERGE (o1)-[r12:relatedTo]->(o2)
+SET r12.text = 'Testosterone là hormone sinh dục được sản sinh chủ yếu tại tế bào Leydig ở tinh hoàn và một lượng nhỏ của tuyến thượng thận từ tuần thứ 7 thai kỳ, tăng cao ở lứa tuổi dậy thì và độ tuổi 20-30 nam giới có lượng Testosterone đạt mức đỉnh điểm.'
+
+MERGE (o1:disease {id: 'suy_giảm_nội_tiết_tố_nam_disease'})
+MERGE (o2:lifestyle {id: 'tuổi_30_lifestyle'})
+MERGE (o1)-[r13:relatedTo]->(o2)
+SET r13.text = 'Sau tuổi 30, lượng nội tiết tố nam bắt đầu suy giảm, và có biểu hiện rõ ở tuổi 40.'
+
+MERGE (o1:disease {id: 'suy_giảm_nội_tiết_tố_nam_disease'})
+MERGE (o2:lifestyle {id: 'tuổi_40_lifestyle'})
+MERGE (o1)-[r14:relatedTo]->(o2)
+SET r14.text = 'Sau tuổi 30, lượng nội tiết tố nam bắt đầu suy giảm, và có biểu hiện rõ ở tuổi 40.'
+
+MERGE (o1:disease {id: 'suy_thoái_cơ_quan_disease'})
+MERGE (o2:disease {id: 'suy_giảm_testosterone_disease'})
+MERGE (o1)-[r15:causes]->(o2)
+SET r15.text = 'Theo thời gian, các cơ quan trong cơ thể dần suy thoái, nên không thể sản xuất đủ lượng Testosterone cần thiết để cơ thể hoạt động một cách bình thường.'
+
+MERGE (o1:disease {id: 'suy_giảm_testosterone_disease'})
+MERGE (o2:lifestyle {id: 'tuổi_50_lifestyle'})
+MERGE (o1)-[r16:relatedTo]->(o2)
+SET r16.text = 'Ước tính, lượng Testosterone giảm trung bình từ 1-2% mỗi năm và chỉ còn khoảng 70% ở tuổi 50 và 50% ở tuổi 70.'
+
+MERGE (o1:disease {id: 'suy_giảm_testosterone_disease'})
+MERGE (o2:lifestyle {id: 'tuổi_70_lifestyle'})
+MERGE (o1)-[r17:relatedTo]->(o2)
+SET r17.text = 'Ước tính, lượng Testosterone giảm trung bình từ 1-2% mỗi năm và chỉ còn khoảng 70% ở tuổi 50 và 50% ở tuổi 70.'
+
+MERGE (o1:lifestyle {id: 'tuổi_cao_lifestyle'})
+MERGE (o2:disease {id: 'suy_giảm_testosterone_disease'})
+MERGE (o1)-[r18:aggravatedBy]->(o2)
+SET r18.text = 'Tuổi càng cao thì tốc độ suy giảm Testosterone càng diễn ra nhanh hơn.'
+
+MERGE (o1:cause {id: 'stress__mệt_mỏi_cause'})
+MERGE (o2:symptom {id: 'testosterone_suy_giảm_symptom'})
+MERGE (o1)-[r19:causedBy]->(o2)
+SET r19.text = 'Ngoài yếu tố tuổi tác, sau tuổi 30, Testosterone bắt đầu suy giảm một cách tự nhiên, thì chúng còn chịu tác động bởi rất nhiều yếu tố tiềm ẩn sau đây: (2)  Stress, mệt mỏi: Tinh thần căng thẳng, chịu nhiều áp lực, thường xuyên mất ngủ là một trong những nguyên nhân khiến Testosterone suy giảm nhanh chóng.'
+
+MERGE (o1:lifestyle {id: 'tinh_thần_căng_thẳng__chịu_nhiều_áp_lực__thường_xuyên_mất_ngủ_lifestyle'})
+MERGE (o2:symptom {id: 'testosterone_suy_giảm_symptom'})
+MERGE (o1)-[r20:causedBy]->(o2)
+SET r20.text = 'Tinh thần căng thẳng, chịu nhiều áp lực, thường xuyên mất ngủ là một trong những nguyên nhân khiến Testosterone suy giảm nhanh chóng.'
+
+MERGE (o1:cause {id: 'stress_cause'})
+MERGE (o2:symptom {id: 'giải_phóng_các_hormone_như_cortisol_và_adrenalin_symptom'})
+MERGE (o1)-[r21:causedBy]->(o2)
+SET r21.text = 'Khi bị stress, cơ thể sẽ giải phóng các hormone như cortisol và adrenalin giúp bảo vệ cơ thể.'
+
+MERGE (o1:cause {id: 'cortisol_và_adrenalin_cause'})
+MERGE (o2:symptom {id: 'ức_chế_việc_sản_xuất_nội_tiết_tố_testosterone_symptom'})
+MERGE (o1)-[r22:causedBy]->(o2)
+SET r22.text = 'Tuy nhiên, những hormone này lại ức chế việc sản xuất nội tiết tố Testosterone.'
+
+MERGE (o1:cause {id: 'stress_cause'})
+MERGE (o2:symptom {id: 'giảm_ham_muốn_và_không_còn_hứng_thú_với_chuyện_tình_dục_symptom'})
+MERGE (o1)-[r23:causedBy]->(o2)
+SET r23.text = 'Điều này lý giải cho nam giới khi bị stress thường giảm ham muốn và không còn hứng thú với chuyện tình dục.'
+
+MERGE (o1:lifestyle {id: 'ngủ_ít_5_giờ_mỗi_đêm_trong_vòng_1_tuần_lifestyle'})
+MERGE (o2:symptom {id: 'mức_testosterone_của_một_người_già_hơn_15_tuổi_symptom'})
+MERGE (o1)-[r24:causedBy]->(o2)
+SET r24.text = 'Một nghiên cứu còn chỉ ra, những người ngủ ít 5 giờ mỗi đêm trong vòng 1 tuần sẽ có mức Testosterone của một người già hơn 15 tuổi.'
+
+MERGE (o1:cause {id: 'lạm_dụng_tình_dục_cause'})
+MERGE (o2:symptom {id: 'suy_giảm_testosterone_symptom'})
+MERGE (o1)-[r25:causedBy]->(o2)
+SET r25.text = 'Lạm dụng tình dục: Đây là một yếu tố dẫn tới tình trạng suy giảm Testosterone.'
+
+MERGE (o1:lifestyle {id: 'sinh_hoạt_tình_dục_hay_thủ_dâm_quá_độ_lifestyle'})
+MERGE (o2:symptom {id: 'suy_giảm_testosterone_symptom'})
+MERGE (o1)-[r26:causedBy]->(o2)
+SET r26.text = 'Việc sinh hoạt tình dục hay thủ dâm quá độ không những gây các bệnh viêm nhiễm bộ phận sinh dục như viêm tuyến tiền liệt, viêm tinh hoàn, mà chính tần suất quan hệ quá nhiều sẽ gia tăng ảnh hưởng lên các cơ quan thần kinh, khiến cơ quan sinh dục liên tục bị kích thích phải hoạt động và phóng tinh liên tục, lượng Testosterone trong cơ thể cũng bị suy giảm.'
+
+MERGE (o1:disease {id: 'viêm_tuyến_tiền_liệt__viêm_tinh_hoàn_disease'})
+MERGE (o2:lifestyle {id: 'sinh_hoạt_tình_dục_hay_thủ_dâm_quá_độ_lifestyle'})
+MERGE (o1)-[r27:causedBy]->(o2)
+SET r27.text = 'Việc sinh hoạt tình dục hay thủ dâm quá độ không những gây các bệnh viêm nhiễm bộ phận sinh dục như viêm tuyến tiền liệt, viêm tinh hoàn, mà chính tần suất quan hệ quá nhiều sẽ gia tăng ảnh hưởng lên các cơ quan thần kinh, khiến cơ quan sinh dục liên tục bị kích thích phải hoạt động và phóng tinh liên tục, lượng Testosterone trong cơ thể cũng bị suy giảm.'
+
+MERGE (o1:cause {id: 'hóa_chất_độc_hại__môi_trường_ô_nhiễm_cause'})
+MERGE (o2:symptom {id: 'suy_giảm_sức_khỏe_tình_dục_của_nam_giới_symptom'})
+MERGE (o1)-[r28:causedBy]->(o2)
+SET r28.text = 'Tiếp xúc với hóa chất độc hại, môi trường ô nhiễm: Hóa chất độc hại như: khói bụi, thuốc trừ sâu, hút thuốc lá…không chỉ ảnh hưởng tiêu cực lên sức khỏe toàn thân mà còn tác động lên sức khỏe tình dục của nam giới.'
+
+MERGE (o1:cause {id: 'chất_nicotin_và_các_thành_phần_độc_hại_có_trong_thuốc_lá_cause'})
+MERGE (o2:symptom {id: 'rối_loạn_cương__xuất_tinh_sớm_symptom'})
+MERGE (o1)-[r29:causedBy]->(o2)
+SET r29.text = 'Cụ thể, chất nicotin và các thành phần độc hại có trong thuốc lá gây ra tình trạng xơ hóa, làm lão hóa động mạch, gây cản trở máu đổ về dương vật gây ra tình trạng rối loạn cương, xuất tinh sớm.'
+
+MERGE (o1:cause {id: 'hóa_chất_độc_hại_cause'})
+MERGE (o2:symptom {id: 'suy_giảm_testosterone_symptom'})
+MERGE (o1)-[r30:causedBy]->(o2)
+SET r30.text = 'Ngoài ra, những hóa chất độc hại này cũng ảnh hưởng đến nồng độ Testosterone, đây là thành phần quan trọng tạo ra ham muốn tình dục, chỉ đạo quá trình cương và tham gia vào việc sản xuất tinh trùng.'
+
+MERGE (o1:lifestyle {id: 'hút_thuốc_lifestyle'})
+MERGE (o2:symptom {id: 'giảm_sản_xuất_tinh_trùng__ảnh_hưởng_đến_chất_lượng_tinh_trùng_symptom'})
+MERGE (o1)-[r31:causedBy]->(o2)
+SET r31.text = 'Theo tài liệu của chương trình phòng chống tác thuốc lá quốc gia đã chỉ rõ: Hút thuốc là làm giảm sản xuất tinh trùng, ảnh hưởng đến chất lượng tinh trùng (tinh trùng dị dạng, khả năng di chuyển kém).'
+
+MERGE (o1:treatment {id: 'thuốc_an_thần__thuốc_ngủ__thuốc_điều_trị_viêm_loét_dạ_dày__khớp__ung_thư_tuyến_tiền_liệt_treatment'})
+MERGE (o2:symptom {id: 'suy_giảm_testosterone_symptom'})
+MERGE (o1)-[r32:causedBy]->(o2)
+SET r32.text = 'Tác dụng phụ của thuốc: Một số thuốc điều trị có tác dụng không mong muốn làm suy giảm lượng Testosterone trong cơ thể như: thuốc an thần, thuốc ngủ, thuốc điều trị viêm loét dạ dày, khớp, ung thư tuyến tiền liệt… là một trong những yếu tố làm suy giảm hormone nam cũng như khả năng tình dục của nam giới.'
+
+MERGE (o1:disease {id: 'thừa_cân__béo_phì__huyết_áp_cao__tiểu_đường__cơ_gân__suy_thận_mãn_tính__suy_giáp_nguyên_phát_nặng__hiv_disease'})
+MERGE (o2:symptom {id: 'suy_giảm_testosterone_symptom'})
+MERGE (o1)-[r33:causedBy]->(o2)
+SET r33.text = 'Mắc một số bệnh lý: Thừa cân, béo phì, huyết áp cao, tiểu đường, cơ gân, suy thận mãn tính, suy giáp nguyên phát nặng, HIV… là những bệnh lý làm sụt giảm Testosterone trong cơ thể xuống mức thấp.'
+
+MERGE (o1:lifestyle {id: 'lối_sống__chế_độ_ăn_uống__vận_động_không_hợp_lý_lifestyle'})
+MERGE (o2:symptom {id: 'testosterone_thấp_symptom'})
+MERGE (o1)-[r34:causedBy]->(o2)
+SET r34.text = 'Ngoài ra, lối sống, chế độ ăn uống, vận động không hợp lý cũng ảnh hưởng đến quá trình sản xuất nội tiết tố nam, dẫn đến Testosterone thấp, giảm dưới mức bình thường, gây ra nhiều triệu chứng nghiêm trọng đối với cơ thể.'
+
+MERGE (o1:cause {id: 'testosterone_cause'})
+MERGE (o2:symptom {id: 'tạo_ra_sự_ham_muốn_tình_dục__chỉ_đạo_quá_trình_cương__chi_phối_việc_sản_xuất_và_nuôi_dưỡng_tinh_trùng_symptom'})
+MERGE (o1)-[r35:causedBy]->(o2)
+SET r35.text = 'Testosterone là hormone có vai trò quan trọng đối với chức năng sinh lý của nam giới như: tạo ra sự ham muốn tình dục, chỉ đạo quá trình cương, chi phối việc sản xuất và nuôi dưỡng tinh trùng.'
+
+MERGE (o1:symptom {id: 'suy_giảm_testosterone_symptom'})
+MERGE (o2:symptom {id: 'giảm_ham_muốn_tình_dục__không_còn_hứng_thú__ít_nghĩ_đến_tình_dục__thậm_chí_lảng_tránh_chuyện_ân_ái_symptom'})
+MERGE (o1)-[r36:causedBy]->(o2)
+SET r36.text = 'Vì vậy, khi lượng hormone này suy giảm kéo theo sự suy giảm ham muốn tình dục, nam giới “mất lửa”, không còn hứng thú, ít nghĩ đến tình dục, thậm chí lảng tránh chuyện ân ái.'
+
+MERGE (o1:cause {id: 'testosterone_cause'})
+MERGE (o2:symptom {id: 'chỉ_đạo__hỗ_trợ_đạt_được_và_duy_trì_sự_cương_cứng_symptom'})
+MERGE (o1)-[r37:causedBy]->(o2)
+SET r37.text = 'Testosterone ngoài vai trò tạo ra ham muốn tình dục của đàn ông, nó còn chỉ đạo, hỗ trợ đạt được và duy trì sự cương cứng.'
+
+MERGE (o1:cause {id: 'testosterone_cause'})
+MERGE (o2:symptom {id: 'kích_thích_các_thụ_thể_trong_não_sản_xuất_nitric_oxide_symptom'})
+MERGE (o1)-[r38:causedBy]->(o2)
+SET r38.text = 'Testosterone không tạo ra sự cương cứng, nhưng nó kích thích các thụ thể trong não sản xuất Nitric Oxide.'
+
+MERGE (o1:cause {id: 'nitric_oxide_cause'})
+MERGE (o2:symptom {id: 'các_cơ_trên_thành_mạch_máu_được_thư_giãn__giúp_máu_lưu_thông_và_quá_trình_cương_được_diễn_ra_dễ_dàng_symptom'})
+MERGE (o1)-[r39:causedBy]->(o2)
+SET r39.text = 'Nitric oxide là một phân tử giúp các cơ trên thành mạch máu được thư giãn, giúp máu lưu thông và quá trình cương được diễn ra dễ dàng.'
+
+MERGE (o1:symptom {id: 'suy_giảm_testosterone_symptom'})
+MERGE (o2:symptom {id: 'khó_đạt_được_sự_cương_cứng_cả_khi_quan_hệ_tình_dục_và_cương_cứng_tự_phát_symptom'})
+MERGE (o1)-[r40:causedBy]->(o2)
+SET r40.text = 'Vì thế, khi hormone này xuống thấp, người đàn ông có thể khó đạt được sự cương cứng cả khi quan hệ tình dục và cương cứng tự phát (trong khi ngủ).'
+
+MERGE (o1:cause {id: 'testosterone_cause'})
+MERGE (o2:disease {id: 'rối_loạn_cương_dương_disease'})
+MERGE (o1)-[r41:relatedTo]->(o2)
+SET r41.text = 'Tuy nhiên, Testosterone chỉ là một trong nhiều yếu tố giúp góp phần trong quá trình cương, vì vậy chưa có nghiên cứu nào kết luận về vai trò của Testosterone trong điều trị rối loạn cương dương.'
+
+MERGE (o1:disease {id: 'rối_loạn_cương_dương_disease'})
+MERGE (o2:disease {id: 'testosterone_suy_giảm__tiểu_đường__tăng_huyết_áp__rối_loạn_mỡ_máu__cholesterol_cao__các_vấn_đề_rối_loạn_về_tuyến_giáp__các_bệnh_về_tinh_thần_như_stress__trầm_cảm_disease'})
+MERGE (o1)-[r42:isSymptomOf]->(o2)
+SET r42.text = 'Thực tế, rối loạn cương dương là một dấu hiệu Testosterone suy giảm, nhưng đây cũng có thể là báo hiệu của rất nhiều bệnh lý khác như: tiểu đường, tăng huyết áp, rối loạn mỡ máu, cholesterol cao, các vấn đề rối loạn về tuyến giáp, các bệnh về tinh thần như stress, trầm cảm.'
+
+MERGE (o1:cause {id: 'testosterone_cause'})
+MERGE (o2:symptom {id: 'sản_xuất_tinh_dịch__quyết_định_số_lượng__chất_lượng__hình_dạng__khả_năng_di_chuyển_của_tinh_trùng_symptom'})
+MERGE (o1)-[r43:causedBy]->(o2)
+SET r43.text = 'Testosterone đóng một vai trò trong việc sản xuất tinh dịch, quyết định số lượng, chất lượng, hình dạng, khả năng di chuyển của tinh trùng.'
+
+MERGE (o1:symptom {id: 'suy_giảm_testosterone_symptom'})
+MERGE (o2:symptom {id: 'giảm_lượng_tinh_dịch__ít_xuất_tinh_symptom'})
+MERGE (o1)-[r44:causedBy]->(o2)
+SET r44.text = 'Nam giới có Testosterone thấp thường sẽ nhận thấy lượng tinh dịch của họ giảm trong khi xuất tinh, ít xuất tinh.'
+
+MERGE (o1:symptom {id: 'giảm_số_lượng_và_chất_lượng_tinh_trùng_symptom'})
+MERGE (o2:disease {id: 'vô_sinh_hiếm_muộn_disease'})
+MERGE (o1)-[r45:causedBy]->(o2)
+SET r45.text = 'Khi số lượng và chất lượng của tinh trùng thấp sẽ ảnh hưởng đến khả năng sinh sản của nam giới, vô sinh hiếm muộn là điều dễ gặp phải.'
+
+MERGE (o1:cause {id: 'testosterone_cause'})
+MERGE (o2:symptom {id: 'lông_và_râu_phát_triển_rậm_rạp_symptom'})
+MERGE (o1)-[r46:causedBy]->(o2)
+SET r46.text = 'Testosterone có vai trò trong một số chức năng của cơ thể, trong đó có sự tác động lên hệ mao da, giúp lông và râu phát triển rậm rạp.'
+
+MERGE (o1:symptom {id: 'hói_đầu_symptom'})
+MERGE (o2:cause {id: 'lão_hóa_cause'})
+MERGE (o1)-[r47:associatedWith]->(o2)
+SET r47.text = 'Hói đầu có thể là một phần tự nhiên của quá trình lão hóa đối với nhiều nam giới.'
+
+MERGE (o1:symptom {id: 'suy_giảm_testosterone_symptom'})
+MERGE (o2:symptom {id: 'rụng_toàn_thân_và_lông_mặt_symptom'})
+MERGE (o1)-[r48:causedBy]->(o2)
+SET r48.text = 'Mặc dù có một thành phần di truyền đối với chứng hói, những người đàn ông có Testosterone thấp cũng có thể bị rụng toàn thân và lông mặt.'
+
+MERGE (o1:symptom {id: 'suy_giảm_testosterone_symptom'})
+MERGE (o2:symptom {id: 'mệt_mỏi__năng_lượng_vơi_đi_ít_nhiều__không_còn_năng_nổ__hoạt_bát_trong_mọi_hoạt_động_symptom'})
+MERGE (o1)-[r49:causedBy]->(o2)
+SET r49.text = 'Nam giới có Testosterone thấp khiến nam giới cảm thấy rất mệt mỏi, năng lượng vơi đi ít nhiều, không còn năng nổ, hoạt bát trong mọi hoạt động.'
+
+MERGE (o1:symptom {id: 'suy_giảm_testosterone_symptom'})
+MERGE (o2:symptom {id: 'mệt_mỏi__uể_oải_symptom'})
+MERGE (o1)-[r50:causedBy]->(o2)
+SET r50.text = 'Họ lúc nào cũng trong trạng thái mệt mỏi, uể oải mặc dù đã ngủ đủ giấc và thậm chí không muốn vận động.'
+
+MERGE (o1:cause {id: 'testosterone_cause'})
+MERGE (o2:symptom {id: 'giảm_khối_lượng_cơ_symptom'})
+MERGE (o1)-[r51:causedBy]->(o2)
+SET r51.text = 'Bởi vì Testosterone đóng một vai trò trong việc xây dựng cơ bắp, những người đàn ông có Testosterone thấp có thể nhận thấy sự giảm khối lượng cơ.'
+
+MERGE (o1:cause {id: 'testosterone_cause'})
+MERGE (o2:symptom {id: 'làm_nở_to_các_sợi_cơ__duy_trì_độ_bền_vững_của_sức_cơ_symptom'})
+MERGE (o1)-[r52:causedBy]->(o2)
+SET r52.text = 'Các nghiên cứu đã chỉ ra rằng Testosterone ảnh hưởng đến khối lượng cơ bằng cách làm nở to các sợi cơ, duy trì độ bền vững của sức cơ.'
+
+MERGE (o1:cause {id: 'testosterone_cause'})
+MERGE (o2:symptom {id: 'sự_gắn_kết_chắc_chắn_giữa_thân_xương_và_màng_xương_để_phát_triển_đồng_bộ_độ_lớn_và_độ_dài_của_xương_symptom'})
+MERGE (o1)-[r53:causedBy]->(o2)
+SET r53.text = 'Ngoài ra, hormone này còn giúp cho sự gắn kết chắc chắn giữa thân xương và màng xương để phát triển đồng bộ độ lớn và độ dài của xương.'
+
+MERGE (o1:cause {id: 'testosterone_cause'})
+MERGE (o2:symptom {id: 'tăng_hấp_thụ_canxi_symptom'})
+MERGE (o1)-[r54:causedBy]->(o2)
+SET r54.text = 'Đồng thời, Testosterone cũng góp phần vào sự phát triển kết cấu của xương bằng cách tăng hấp thụ canxi.'
+
+MERGE (o1:symptom {id: 'suy_giảm_testosterone_symptom'})
+MERGE (o2:symptom {id: 'các_khối_cơ_trở_nên_lỏng_lẻo__kém_săn_chắc_symptom'})
+MERGE (o1)-[r55:causedBy]->(o2)
+SET r55.text = 'Vì vậy, một khi nồng độ nội tiết tố nam bị suy giảm, các khối cơ trở nên lỏng lẻo, kém săn chắc.'
+
+MERGE (o1:symptom {id: 'suy_giảm_testosterone_symptom'})
+MERGE (o2:symptom {id: 'các_khối_cơ_rắn_chắc_trên_cơ_thể_sụt_giảm_symptom'})
+MERGE (o1)-[r56:causedBy]->(o2)
+SET r56.text = 'Lượng hormone nam bị sụt giảm là yếu tố khiến các khối cơ rắn chắc trên cơ thể sụt giảm'
+
+MERGE (o1:symptom {id: 'suy_giảm_testosterone_symptom'})
+MERGE (o2:symptom {id: 'lượng_cơ_trên_cơ_thể_mất_đi_mà_thay_thế_bởi_lượng_mỡ_thừa_phát_triển_symptom'})
+MERGE (o1)-[r57:causedBy]->(o2)
+SET r57.text = 'Đàn ông có Testosterone thấp lượng cơ trên cơ thể mất đi mà thay thế bởi lượng mỡ thừa phát triển.'
+
+MERGE (o1:cause {id: 'testosterone_cause'})
+MERGE (o2:symptom {id: 'ức_chế_tế_bào_leptin_symptom'})
+MERGE (o1)-[r58:causedBy]->(o2)
+SET r58.text = 'Bởi Testosterone có vai trò ức chế tế bào Leptin (là hormone sản sinh tế bào mỡ), giữ lượng mỡ toàn thân và mỡ bụng của nam giới luôn ở mức thấp.'
+
+MERGE (o1:symptom {id: 'suy_giảm_testosterone_symptom'})
+MERGE (o2:symptom {id: 'mất_cân_đối__bụng_tích_tụ_nhiều_mỡ__hội_chứng_vú_to__hoặc_phì_đại_mô_vú_symptom'})
+MERGE (o1)-[r59:causedBy]->(o2)
+SET r59.text = 'Một khi lượng nội tiết tố nam ở mức thấp, chính là lúc cơ thể nam giới trở nên mất cân đối, bụng tích tụ nhiều mỡ, hội chứng vú to, hoặc phì đại mô vú.'
+
+MERGE (o1:cause {id: 'mất_cân_bằng_giữa_testosterone_và_estrogen_cause'})
+MERGE (o2:symptom {id: 'mất_cân_đối__bụng_tích_tụ_nhiều_mỡ__hội_chứng_vú_to__hoặc_phì_đại_mô_vú_symptom'})
+MERGE (o1)-[r60:causedBy]->(o2)
+SET r60.text = 'Và điều này được cho là do sự mất cân bằng giữa Testosterone và Estrogen ở nam giới.'
+
+MERGE (o1:disease {id: 'loãng_xương_disease'})
+MERGE (o2:cause {id: 'phụ_nữ_cause'})
+MERGE (o1)-[r61:associatedWith]->(o2)
+SET r61.text = 'Giảm khối lượng xương hay còn gọi là loãng xương là một tình trạng thường xảy ra với phụ nữ.'
+
+MERGE (o1:symptom {id: 'suy_giảm_testosterone_symptom'})
+MERGE (o2:symptom {id: 'mất_xương_symptom'})
+MERGE (o1)-[r62:causedBy]->(o2)
+SET r62.text = 'Tuy nhiên, nam giới có hormone nam thấp cũng có thể bị mất xương.'
+
+MERGE (o1:cause {id: 'testosterone_cause'})
+MERGE (o2:symptom {id: 'sản_sinh_và_củng_cố_xương_symptom'})
+MERGE (o1)-[r63:causedBy]->(o2)
+SET r63.text = 'Testosterone giúp sản sinh và củng cố xương.'
+
+MERGE (o1:symptom {id: 'suy_giảm_testosterone_symptom'})
+MERGE (o2:symptom {id: 'dễ_bị_gãy_xương_symptom'})
+MERGE (o1)-[r64:causedBy]->(o2)
+SET r64.text = 'Vì vậy nam giới có Testosterone thấp, đặc biệt là đàn ông lớn tuổi, mật độ xương thấp nên dễ bị gãy xương hơn.'
+
+MERGE (o1:symptom {id: 'suy_giảm_testosterone_symptom'})
+MERGE (o2:symptom {id: 'thay_đổi_tâm_trạng_symptom'})
+MERGE (o1)-[r65:causedBy]->(o2)
+SET r65.text = 'Nam giới có nội tiết tố nam thấp có thể trải qua những thay đổi trong tâm trạng.'
+
+MERGE (o1:cause {id: 'testosterone_cause'})
+MERGE (o2:symptom {id: 'điều_hòa_thần_kinh_và_tâm_thần_trong_cơ_thể_symptom'})
+MERGE (o1)-[r66:causedBy]->(o2)
+SET r66.text = 'Bởi vì đây là hormone có vai trò điều hòa thần kinh và tâm thần trong cơ thể, nó có tác động đến tâm trạng và năng lực tinh thần.'
+
+MERGE (o1:symptom {id: 'suy_giảm_testosterone_symptom'})
+MERGE (o2:symptom {id: 'trầm_cảm__cáu_kỉnh_hoặc_thiếu_tập_trung_symptom'})
+MERGE (o1)-[r67:causedBy]->(o2)
+SET r67.text = 'Nhiều nghiên cứu cho thấy, đàn ông có Testosterone thấp có nhiều khả năng đối mặt với chứng trầm cảm, cáu kỉnh hoặc thiếu tập trung.'
+
+MERGE (o1:disease {id: 'thiếu_máu__rối_loạn_giấc_ngủ__trầm_cảm_disease'})
+MERGE (o2:cause {id: 'các_vấn_đề_về_sức_khỏe_cause'})
+MERGE (o1)-[r68:causedBy]->(o2)
+SET r68.text = 'Cũng như các vấn đề về sức khỏe gây ra các bệnh lý như: thiếu máu, rối loạn giấc ngủ, trầm cảm…'
+
+MERGE (o1:cause {id: 'testosterone_cause'})
+MERGE (o2:symptom {id: 'suy_giảm_khả_năng_nhận_thức__đặc_biệt_là_trí_nhớ_symptom'})
+MERGE (o1)-[r69:causedBy]->(o2)
+SET r69.text = 'Theo thời gian, Testosterone và khả năng nhận thức, đặc biệt là trí nhớ của nam giới đều suy giảm.'
+
+MERGE (o1:cause {id: 'testosterone_cause'})
+MERGE (o2:symptom {id: 'bảo_vệ_các_neuron_thần_kinh_và_đưa_oxy_đến_não_nhiều_hơn_symptom'})
+MERGE (o1)-[r70:causedBy]->(o2)
+SET r70.text = 'Một nghiên cứu thuộc Đại học Monash (Australia) cho thấy, Testosterone giúp bảo vệ các neuron thần kinh và đưa oxy đến não nhiều hơn.'
+
+MERGE (o1:symptom {id: 'suy_giảm_testosterone_symptom'})
+MERGE (o2:symptom {id: 'suy_giảm_trí_nhớ_symptom'})
+MERGE (o1)-[r71:causedBy]->(o2)
+SET r71.text = 'Tuy nhiên, khi lớn tuổi nồng độ Testosterone trong não càng giảm là nguyên nhân gây ra chứng suy giảm trí nhớ.'
+
+MERGE (o1:symptom {id: 'suy_giảm_testosterone_symptom'})
+MERGE (o2:symptom {id: 'tinh_hoàn_có_kích_thước_nhỏ_hơn_trung_bình_symptom'})
+MERGE (o1)-[r72:causedBy]->(o2)
+SET r72.text = 'Mức testosterone thấp trong cơ thể còn là “thủ phạm” làm cho tinh hoàn có kích thước nhỏ hơn trung bình.'
+
+MERGE (o1:cause {id: 'testosterone_cause'})
+MERGE (o2:symptom {id: 'phát_triển_các_cơ_quan_sinh_dục_symptom'})
+MERGE (o1)-[r73:causedBy]->(o2)
+SET r73.text = 'Bởi vì cơ thể cần Testosterone để phát triển các cơ quan sinh dục, trong đó có dương vật và tinh hoàn.'
+
+MERGE (o1:symptom {id: 'suy_giảm_testosterone_symptom'})
+MERGE (o2:symptom {id: 'dương_vật_hoặc_tinh_hoàn_nhỏ__thậm_chí_không_cân_đối_symptom'})
+MERGE (o1)-[r74:causedBy]->(o2)
+SET r74.text = 'Khi Testosterone tồn tại ở mức độ thấp sẽ làm cho dương vật hoặc tinh hoàn nhỏ, thậm chí không cân đối.'
+
+MERGE (o1:symptom {id: 'tinh_hoàn_nhỏ_symptom'})
+MERGE (o2:cause {id: 'nhiều_nguyên_nhân_khác_cause'})
+MERGE (o1)-[r75:relatedTo]->(o2)
+SET r75.text = 'Tuy nhiên, tinh hoàn nhỏ còn có nhiều nguyên nhân khác nữa.'
+
+MERGE (o1:cause {id: 'testosterone_cause'})
+MERGE (o2:symptom {id: 'kích_thích_tủy_xương_tạo_máu__tăng_hồng_cầu_và_bạch_cầu_symptom'})
+MERGE (o1)-[r76:causedBy]->(o2)
+SET r76.text = 'Testosterone có vai trò kích thích tủy xương tạo máu, tăng hồng cầu và bạch cầu.'
+
+MERGE (o1:symptom {id: 'suy_giảm_testosterone_symptom'})
+MERGE (o2:symptom {id: 'nguy_cơ_thiếu_máu_tăng_lên_symptom'})
+MERGE (o1)-[r77:causedBy]->(o2)
+SET r77.text = 'Theo một bài báo nghiên cứu trên Tạp chí Hiệp hội Y khoa Hoa Kỳ, các bác sĩ chỉ ra mối liên hệ khi Testosterone thấp với nguy cơ thiếu máu tăng lên.'
+
+MERGE (o1:treatment {id: 'gel_testosterone_treatment'})
+MERGE (o2:disease {id: 'thiếu_máu_disease'})
+MERGE (o1)-[r78:treatedBy]->(o2)
+SET r78.text = 'Các nhà nghiên cứu sử dụng gel Testosterone cho những người đàn ông bị thiếu máu có Testosterone thấp, họ đã thấy sự cải thiện về công thức máu so với những người đàn ông sử dụng gel giả dược.'
+
+MERGE (o1:disease {id: 'thiếu_máu_disease'})
+MERGE (o2:symptom {id: 'khó_tập_trung__chuột_rút__khó_ngủ__chóng_mặt__và_nhịp_tim_nhanh_bất_thường_symptom'})
+MERGE (o1)-[r79:isSymptomOf]->(o2)
+SET r79.text = 'Một số triệu chứng mà bệnh thiếu máu có thể gây ra bao gồm khó tập trung, chuột rút, khó ngủ, chóng mặt, và nhịp tim nhanh bất thường.'
+
+MERGE (o1:symptom {id: 'suy_giảm_testosterone_symptom'})
+MERGE (o2:disease {id: 'tim_mạch__tiểu_đường__béo_phì_và_các_bệnh_liên_quan_đến_tuyến_giáp_disease'})
+MERGE (o1)-[r80:causedBy]->(o2)
+SET r80.text = 'Ngoài ra, lượng Testosterone thấp còn gây các bệnh lý khác như: tim mạch, tiểu đường, béo phì và các bệnh liên quan đến tuyến giáp.'
+
+MERGE (o1:test {id: 'xét_nghiệm_đo_lượng_testosterone_trong_máu_test'})
+MERGE (o2:symptom {id: 'testosterone_thấp_symptom'})
+MERGE (o1)-[r81:diagnosedBy]->(o2)
+SET r81.text = 'Để chẩn đoán testosterone thấp, bên cạnh viện đánh giá thể chất và xem xét các triệu chứng của người bệnh, bác sĩ có thể yêu cầu xét nghiệm đo lượng Testosterone trong máu của bệnh nhân.'
+
+MERGE (o1:test {id: 'xét_nghiệm_testosterone_test'})
+MERGE (o2:test {id: 'xét_nghiệm_máu_thông_thường_test'})
+MERGE (o1)-[r82:relatedTo]->(o2)
+SET r82.text = 'Xét nghiệm Testosterone được thực hiện như xét nghiệm máu thông thường và được làm vào buổi sáng khi hormone này có nồng độ cao nhất.'
+
+MERGE (o1:test {id: 'xét_nghiệm_testosterone_test'})
+MERGE (o2:symptom {id: 'nồng_độ_testosterone_symptom'})
+MERGE (o1)-[r83:diagnosedBy]->(o2)
+SET r83.text = 'Kết quả chỉ số xét nghiệm Testosterone cho biết nồng Testosterone ở mức nào.'
+
+MERGE (o1:symptom {id: 'testosterone_nằm_trong_khoảng_10-35_nanomol/lít_symptom'})
+MERGE (o2:symptom {id: 'mức_bình_thường_khỏe_mạnh_symptom'})
+MERGE (o1)-[r84:relatedTo]->(o2)
+SET r84.text = 'Nếu Testosterone nằm trong khoảng 10-35 nanomol/lít là mức bình thường khỏe mạnh.'
+
+MERGE (o1:symptom {id: 'testosterone_thấp_symptom'})
+MERGE (o2:lifestyle {id: 'cuộc_sống_lifestyle'})
+MERGE (o1)-[r85:affects]->(o2)
+SET r85.text = 'Testosterone thấp có ảnh hưởng rất lớn đến cuộc sống của các quý ông, vì vậy nếu gặp tình trạng này, nam giới bị suy giảm Testosterone cần đến cơ sở y tế, bệnh viện uy tín để được thăm khám, và can thiệp kịp thời.'
+
+MERGE (o1:symptom {id: 'suy_giảm_testosterone_symptom'})
+MERGE (o2:symptom {id: 'testosterone_thấp_symptom'})
+MERGE (o1)-[r86:isSymptomOf]->(o2)
+SET r86.text = 'Testosterone thấp có ảnh hưởng rất lớn đến cuộc sống của các quý ông, vì vậy nếu gặp tình trạng này, nam giới bị suy giảm Testosterone cần đến cơ sở y tế, bệnh viện uy tín để được thăm khám, và can thiệp kịp thời.'
+
+MERGE (o1:disease {id: 'nam_giới_bị_suy_giảm_testosterone_disease'})
+MERGE (o2:treatment {id: 'thăm_khám_treatment'})
+MERGE (o1)-[r87:treatedBy]->(o2)
+SET r87.text = 'Testosterone thấp có ảnh hưởng rất lớn đến cuộc sống của các quý ông, vì vậy nếu gặp tình trạng này, nam giới bị suy giảm Testosterone cần đến cơ sở y tế, bệnh viện uy tín để được thăm khám, và can thiệp kịp thời.'
+
+MERGE (o1:treatment {id: 'bác_sĩ_treatment'})
+MERGE (o2:disease {id: 'tình_trạng_bệnh_disease'})
+MERGE (o1)-[r88:diagnosedBy]->(o2)
+SET r88.text = 'Dựa vào tình trạng bệnh mà bác sĩ sẽ có chỉ định điều trị phù hợp.'
+
+MERGE (o1:symptom {id: 'testosterone_thấp_symptom'})
+MERGE (o2:treatment {id: 'điều_trị_testosterone_thấp_treatment'})
+MERGE (o1)-[r89:treatedBy]->(o2)
+SET r89.text = 'Thông thường, điều trị Testosterone thấp có những phương pháp sau:'
+
+MERGE (o1:treatment {id: 'liệu_pháp_thay_thế_testosterone_treatment'})
+MERGE (o2:symptom {id: 'testosterone_thấp_symptom'})
+MERGE (o1)-[r90:treatedBy]->(o2)
+SET r90.text = 'Liệu pháp thay thế Testosterone áp dụng cho những người có các triệu chứng Testosterone thấp làm ảnh hưởng nhiều đến cuộc sống.'
+
+MERGE (o1:treatment {id: 'liệu_pháp_thay_thế_testosterone_treatment'})
+MERGE (o2:lifestyle {id: 'cuộc_sống_lifestyle'})
+MERGE (o1)-[r91:affects]->(o2)
+SET r91.text = 'Liệu pháp thay thế Testosterone áp dụng cho những người có các triệu chứng Testosterone thấp làm ảnh hưởng nhiều đến cuộc sống.'
+
+MERGE (o1:treatment {id: 'tiêm_vào_bắp_tay_treatment'})
+MERGE (o2:treatment {id: 'liệu_pháp_thay_thế_testosterone_treatment'})
+MERGE (o1)-[r92:isSymptomOf]->(o2)
+SET r92.text = 'Phương pháp này được thực hiện nhiều cách như: tiêm vào bắp tay (10-14 ngày một liệu trình); Sử dụng miếng dán Testosterone (vào các bộ phận cơ thể như: bụng, mông, lưng, cánh tay); Gel lên những vùng da khô sạch hàng ngày ở lưng, cánh tay; Viên cấy dưới cánh tay 2 tháng một lần hoặc có thể sử dụng viên uống Testosterone.'
+
+MERGE (o1:treatment {id: 'sử_dụng_miếng_dán_testosterone_treatment'})
+MERGE (o2:treatment {id: 'liệu_pháp_thay_thế_testosterone_treatment'})
+MERGE (o1)-[r93:isSymptomOf]->(o2)
+SET r93.text = 'Phương pháp này được thực hiện nhiều cách như: tiêm vào bắp tay (10-14 ngày một liệu trình); Sử dụng miếng dán Testosterone (vào các bộ phận cơ thể như: bụng, mông, lưng, cánh tay); Gel lên những vùng da khô sạch hàng ngày ở lưng, cánh tay; Viên cấy dưới cánh tay 2 tháng một lần hoặc có thể sử dụng viên uống Testosterone.'
+
+MERGE (o1:treatment {id: 'gel_lên_những_vùng_da_khô_sạch_hàng_ngày_ở_lưng__cánh_tay_treatment'})
+MERGE (o2:treatment {id: 'liệu_pháp_thay_thế_testosterone_treatment'})
+MERGE (o1)-[r94:isSymptomOf]->(o2)
+SET r94.text = 'Phương pháp này được thực hiện nhiều cách như: tiêm vào bắp tay (10-14 ngày một liệu trình); Sử dụng miếng dán Testosterone (vào các bộ phận cơ thể như: bụng, mông, lưng, cánh tay); Gel lên những vùng da khô sạch hàng ngày ở lưng, cánh tay; Viên cấy dưới cánh tay 2 tháng một lần hoặc có thể sử dụng viên uống Testosterone.'
+
+MERGE (o1:treatment {id: 'viên_cấy_dưới_cánh_tay_treatment'})
+MERGE (o2:treatment {id: 'liệu_pháp_thay_thế_testosterone_treatment'})
+MERGE (o1)-[r95:isSymptomOf]->(o2)
+SET r95.text = 'Phương pháp này được thực hiện nhiều cách như: tiêm vào bắp tay (10-14 ngày một liệu trình); Sử dụng miếng dán Testosterone (vào các bộ phận cơ thể như: bụng, mông, lưng, cánh tay); Gel lên những vùng da khô sạch hàng ngày ở lưng, cánh tay; Viên cấy dưới cánh tay 2 tháng một lần hoặc có thể sử dụng viên uống Testosterone.'
+
+MERGE (o1:treatment {id: 'viên_uống_testosterone_treatment'})
+MERGE (o2:treatment {id: 'liệu_pháp_thay_thế_testosterone_treatment'})
+MERGE (o1)-[r96:isSymptomOf]->(o2)
+SET r96.text = 'Phương pháp này được thực hiện nhiều cách như: tiêm vào bắp tay (10-14 ngày một liệu trình); Sử dụng miếng dán Testosterone (vào các bộ phận cơ thể như: bụng, mông, lưng, cánh tay); Gel lên những vùng da khô sạch hàng ngày ở lưng, cánh tay; Viên cấy dưới cánh tay 2 tháng một lần hoặc có thể sử dụng viên uống Testosterone.'
+
+MERGE (o1:treatment {id: 'liệu_pháp_điều_trị_treatment'})
+MERGE (o2:symptom {id: 'triệu_chứng_symptom'})
+MERGE (o1)-[r97:affects]->(o2)
+SET r97.text = 'Hầu hết mọi người sẽ nhận thấy giảm các triệu chứng trong vòng 4–6 tuần kể từ khi áp dụng liệu pháp điều trị này.'
+
+MERGE (o1:treatment {id: 'liệu_pháp_thay_thế_testosterone_treatment'})
+MERGE (o2:symptom {id: 'ngưng_thở_khi_ngủ_symptom'})
+MERGE (o1)-[r98:causedBy]->(o2)
+SET r98.text = 'Tuy nhiên, đây là liệu pháp tiềm ẩn nhiều rủi ro như: tăng nguy cơ xảy ra ngưng thở khi ngủ, kích thích các tế bào ung thư tuyến tiền liệt tiềm ẩn trong cơ thể, ngực to, tăng nguy cơ hình thành các huyết khối tĩnh mạch sâu, thuyên tắc phổi, hạn chế việc sản xuất tinh trùng và làm co rút tinh hoàn.'
+
+MERGE (o1:treatment {id: 'liệu_pháp_thay_thế_testosterone_treatment'})
+MERGE (o2:disease {id: 'ung_thư_tuyến_tiền_liệt_disease'})
+MERGE (o1)-[r99:causedBy]->(o2)
+SET r99.text = 'Tuy nhiên, đây là liệu pháp tiềm ẩn nhiều rủi ro như: tăng nguy cơ xảy ra ngưng thở khi ngủ, kích thích các tế bào ung thư tuyến tiền liệt tiềm ẩn trong cơ thể, ngực to, tăng nguy cơ hình thành các huyết khối tĩnh mạch sâu, thuyên tắc phổi, hạn chế việc sản xuất tinh trùng và làm co rút tinh hoàn.'
+
+MERGE (o1:treatment {id: 'liệu_pháp_thay_thế_testosterone_treatment'})
+MERGE (o2:symptom {id: 'ngực_to_symptom'})
+MERGE (o1)-[r100:causedBy]->(o2)
+SET r100.text = 'Tuy nhiên, đây là liệu pháp tiềm ẩn nhiều rủi ro như: tăng nguy cơ xảy ra ngưng thở khi ngủ, kích thích các tế bào ung thư tuyến tiền liệt tiềm ẩn trong cơ thể, ngực to, tăng nguy cơ hình thành các huyết khối tĩnh mạch sâu, thuyên tắc phổi, hạn chế việc sản xuất tinh trùng và làm co rút tinh hoàn.'
+
+MERGE (o1:treatment {id: 'liệu_pháp_thay_thế_testosterone_treatment'})
+MERGE (o2:disease {id: 'huyết_khối_tĩnh_mạch_sâu_disease'})
+MERGE (o1)-[r101:causedBy]->(o2)
+SET r101.text = 'Tuy nhiên, đây là liệu pháp tiềm ẩn nhiều rủi ro như: tăng nguy cơ xảy ra ngưng thở khi ngủ, kích thích các tế bào ung thư tuyến tiền liệt tiềm ẩn trong cơ thể, ngực to, tăng nguy cơ hình thành các huyết khối tĩnh mạch sâu, thuyên tắc phổi, hạn chế việc sản xuất tinh trùng và làm co rút tinh hoàn.'
+
+MERGE (o1:treatment {id: 'liệu_pháp_thay_thế_testosterone_treatment'})
+MERGE (o2:disease {id: 'thuyên_tắc_phổi_disease'})
+MERGE (o1)-[r102:causedBy]->(o2)
+SET r102.text = 'Tuy nhiên, đây là liệu pháp tiềm ẩn nhiều rủi ro như: tăng nguy cơ xảy ra ngưng thở khi ngủ, kích thích các tế bào ung thư tuyến tiền liệt tiềm ẩn trong cơ thể, ngực to, tăng nguy cơ hình thành các huyết khối tĩnh mạch sâu, thuyên tắc phổi, hạn chế việc sản xuất tinh trùng và làm co rút tinh hoàn.'
+
+MERGE (o1:treatment {id: 'liệu_pháp_thay_thế_testosterone_treatment'})
+MERGE (o2:organ {id: 'tinh_hoàn_organ'})
+MERGE (o1)-[r103:causedBy]->(o2)
+SET r103.text = 'Tuy nhiên, đây là liệu pháp tiềm ẩn nhiều rủi ro như: tăng nguy cơ xảy ra ngưng thở khi ngủ, kích thích các tế bào ung thư tuyến tiền liệt tiềm ẩn trong cơ thể, ngực to, tăng nguy cơ hình thành các huyết khối tĩnh mạch sâu, thuyên tắc phổi, hạn chế việc sản xuất tinh trùng và làm co rút tinh hoàn.'
+
+MERGE (o1:treatment {id: 'liệu_pháp_testosterone_treatment'})
+MERGE (o2:disease {id: 'bệnh_tim_mạch_disease'})
+MERGE (o1)-[r104:causedBy]->(o2)
+SET r104.text = 'Đặc biệt, liệu pháp Testosterone còn có nguy cơ cao gây ra các bệnh tim mạch.'
+
+MERGE (o1:treatment {id: 'liệu_pháp_thay_thế_testosterone_treatment'})
+MERGE (o2:treatment {id: 'bác_sĩ_treatment'})
+MERGE (o1)-[r105:relatedTo]->(o2)
+SET r105.text = 'Vì vậy, khi lựa chọn liệu pháp này cần trao đổi kỹ với bác sĩ về những lợi ích và những rủi ro mà bạn phải đối mặt để có quyết định đúng đắn.'
+
+MERGE (o1:treatment {id: 'sản_phẩm_hỗ_trợ_treatment'})
+MERGE (o2:symptom {id: 'khả_năng_sinh_lý_symptom'})
+MERGE (o1)-[r106:affects]->(o2)
+SET r106.text = 'Hiện nay, trên thị trường có rất nhiều các sản phẩm hỗ trợ, cải thiện khả năng sinh lý cho nam giới.'
+
+MERGE (o1:treatment {id: 'sản_phẩm_hỗ_trợ_treatment'})
+MERGE (o2:treatment {id: 'cơ_quan_chức_năng_treatment'})
+MERGE (o1)-[r107:relatedTo]->(o2)
+SET r107.text = 'Tuy nhiên, khi chọn những sản phẩm này cần chú đến nguồn gốc sản phẩm, thành phần, cơ chế tác động, cũng như hiệu quả, độ an toàn, sản phẩm được cấp phép lưu hành của cơ quan chức năng.'
+
+MERGE (o1:treatment {id: 'tăng_cường_testosterone_treatment'})
+MERGE (o2:symptom {id: 'testosterone_symptom'})
+MERGE (o1)-[r108:relatedTo]->(o2)
+SET r108.text = 'Bên cạnh tăng cường Testosterone bằng các biện pháp điều trị bằng thuốc, sử dụng các sản phẩm có nguồn gốc từ thiên nhiên thì tăng Testosterone bằng phương pháp tự nhiên được nhiều người quan tâm.'
+
+MERGE (o1:lifestyle {id: 'tập_thể_dục_thể_thao_lifestyle'})
+MERGE (o2:symptom {id: 'testosterone_symptom'})
+MERGE (o1)-[r109:treatedBy]->(o2)
+SET r109.text = 'Sau đây là một số cách tăng Testosterone tự nhiên:  Thường xuyên tập thể dục thể thao: Nên dành 30-60 phút mỗi ngày để rèn luyện thể lực, và cần duy trì 5 lần mỗi tuần.'
+
+MERGE (o1:lifestyle {id: 'lối_sống_tích_cực_lifestyle'})
+MERGE (o2:symptom {id: 'testosterone_symptom'})
+MERGE (o1)-[r110:treatedBy]->(o2)
+SET r110.text = 'Thay đổi lối sống tích cực: Có chế độ làm việc và nghỉ ngơi điều độ, hạn chế và kiểm soát stress, tránh thức khuya, hạn chế rượu bia, thuốc lá&#8230; Có chế độ ăn uống đủ chất, tăng cường các thực phẩm tốt cho sinh lý nam như: hải sản, thịt bò, trứng, sữa, ngũ cốc, các loại hạt.'
+
+MERGE (o1:cause {id: 'stress_cause'})
+MERGE (o2:symptom {id: 'testosterone_symptom'})
+MERGE (o1)-[r111:aggravatedBy]->(o2)
+SET r111.text = 'Thay đổi lối sống tích cực: Có chế độ làm việc và nghỉ ngơi điều độ, hạn chế và kiểm soát stress, tránh thức khuya, hạn chế rượu bia, thuốc lá&#8230; Có chế độ ăn uống đủ chất, tăng cường các thực phẩm tốt cho sinh lý nam như: hải sản, thịt bò, trứng, sữa, ngũ cốc, các loại hạt.'
+
+MERGE (o1:lifestyle {id: 'thức_khuya_lifestyle'})
+MERGE (o2:symptom {id: 'testosterone_symptom'})
+MERGE (o1)-[r112:aggravatedBy]->(o2)
+SET r112.text = 'Thay đổi lối sống tích cực: Có chế độ làm việc và nghỉ ngơi điều độ, hạn chế và kiểm soát stress, tránh thức khuya, hạn chế rượu bia, thuốc lá&#8230; Có chế độ ăn uống đủ chất, tăng cường các thực phẩm tốt cho sinh lý nam như: hải sản, thịt bò, trứng, sữa, ngũ cốc, các loại hạt.'
+
+MERGE (o1:food {id: 'rượu_bia_food'})
+MERGE (o2:symptom {id: 'testosterone_symptom'})
+MERGE (o1)-[r113:aggravatedBy]->(o2)
+SET r113.text = 'Thay đổi lối sống tích cực: Có chế độ làm việc và nghỉ ngơi điều độ, hạn chế và kiểm soát stress, tránh thức khuya, hạn chế rượu bia, thuốc lá&#8230; Có chế độ ăn uống đủ chất, tăng cường các thực phẩm tốt cho sinh lý nam như: hải sản, thịt bò, trứng, sữa, ngũ cốc, các loại hạt.'
+
+MERGE (o1:food {id: 'thuốc_lá_food'})
+MERGE (o2:symptom {id: 'testosterone_symptom'})
+MERGE (o1)-[r114:aggravatedBy]->(o2)
+SET r114.text = 'Thay đổi lối sống tích cực: Có chế độ làm việc và nghỉ ngơi điều độ, hạn chế và kiểm soát stress, tránh thức khuya, hạn chế rượu bia, thuốc lá&#8230; Có chế độ ăn uống đủ chất, tăng cường các thực phẩm tốt cho sinh lý nam như: hải sản, thịt bò, trứng, sữa, ngũ cốc, các loại hạt.'
+
+MERGE (o1:food {id: 'hải_sản_food'})
+MERGE (o2:symptom {id: 'testosterone_symptom'})
+MERGE (o1)-[r115:treatedBy]->(o2)
+SET r115.text = 'Thay đổi lối sống tích cực: Có chế độ làm việc và nghỉ ngơi điều độ, hạn chế và kiểm soát stress, tránh thức khuya, hạn chế rượu bia, thuốc lá&#8230; Có chế độ ăn uống đủ chất, tăng cường các thực phẩm tốt cho sinh lý nam như: hải sản, thịt bò, trứng, sữa, ngũ cốc, các loại hạt.'
+
+MERGE (o1:food {id: 'thịt_bò_food'})
+MERGE (o2:symptom {id: 'testosterone_symptom'})
+MERGE (o1)-[r116:treatedBy]->(o2)
+SET r116.text = 'Thay đổi lối sống tích cực: Có chế độ làm việc và nghỉ ngơi điều độ, hạn chế và kiểm soát stress, tránh thức khuya, hạn chế rượu bia, thuốc lá&#8230; Có chế độ ăn uống đủ chất, tăng cường các thực phẩm tốt cho sinh lý nam như: hải sản, thịt bò, trứng, sữa, ngũ cốc, các loại hạt.'
+
+MERGE (o1:food {id: 'trứng_food'})
+MERGE (o2:symptom {id: 'testosterone_symptom'})
+MERGE (o1)-[r117:treatedBy]->(o2)
+SET r117.text = 'Thay đổi lối sống tích cực: Có chế độ làm việc và nghỉ ngơi điều độ, hạn chế và kiểm soát stress, tránh thức khuya, hạn chế rượu bia, thuốc lá&#8230; Có chế độ ăn uống đủ chất, tăng cường các thực phẩm tốt cho sinh lý nam như: hải sản, thịt bò, trứng, sữa, ngũ cốc, các loại hạt.'
+
+MERGE (o1:food {id: 'sữa_food'})
+MERGE (o2:symptom {id: 'testosterone_symptom'})
+MERGE (o1)-[r118:treatedBy]->(o2)
+SET r118.text = 'Thay đổi lối sống tích cực: Có chế độ làm việc và nghỉ ngơi điều độ, hạn chế và kiểm soát stress, tránh thức khuya, hạn chế rượu bia, thuốc lá&#8230; Có chế độ ăn uống đủ chất, tăng cường các thực phẩm tốt cho sinh lý nam như: hải sản, thịt bò, trứng, sữa, ngũ cốc, các loại hạt.'
+
+MERGE (o1:food {id: 'ngũ_cốc_food'})
+MERGE (o2:symptom {id: 'testosterone_symptom'})
+MERGE (o1)-[r119:treatedBy]->(o2)
+SET r119.text = 'Thay đổi lối sống tích cực: Có chế độ làm việc và nghỉ ngơi điều độ, hạn chế và kiểm soát stress, tránh thức khuya, hạn chế rượu bia, thuốc lá&#8230; Có chế độ ăn uống đủ chất, tăng cường các thực phẩm tốt cho sinh lý nam như: hải sản, thịt bò, trứng, sữa, ngũ cốc, các loại hạt.'
+
+MERGE (o1:food {id: 'các_loại_hạt_food'})
+MERGE (o2:symptom {id: 'testosterone_symptom'})
+MERGE (o1)-[r120:treatedBy]->(o2)
+SET r120.text = 'Thay đổi lối sống tích cực: Có chế độ làm việc và nghỉ ngơi điều độ, hạn chế và kiểm soát stress, tránh thức khuya, hạn chế rượu bia, thuốc lá&#8230; Có chế độ ăn uống đủ chất, tăng cường các thực phẩm tốt cho sinh lý nam như: hải sản, thịt bò, trứng, sữa, ngũ cốc, các loại hạt.'
+
+MERGE (o1:lifestyle {id: 'luyện_tập_thể_thao_lifestyle'})
+MERGE (o2:symptom {id: 'hormone_nam_symptom'})
+MERGE (o1)-[r121:treatedBy]->(o2)
+SET r121.text = 'Thường xuyên luyện tập thể thao ngoài rèn luyện sức khỏe, tăng cường sự dẻo dai, linh hoạt cho cơ xương khớp, kích thích quá trình lưu thông máu, có một thân hình săn chắc còn là phương pháp cải thiện hormone nam hiệu quả.'
+
+MERGE (o1:treatment {id: 'bơi_lội_treatment'})
+MERGE (o2:symptom {id: 'testosterone_symptom'})
+MERGE (o1)-[r122:treatedBy]->(o2)
+SET r122.text = 'Sau đây là những bài tập tăng cường Testosterone hiệu quả:  Bơi lội Đi bộ nhanh Yoga Kegel Cử tạ Squat'
+
+MERGE (o1:treatment {id: 'đi_bộ_nhanh_treatment'})
+MERGE (o2:symptom {id: 'testosterone_symptom'})
+MERGE (o1)-[r123:treatedBy]->(o2)
+SET r123.text = 'Sau đây là những bài tập tăng cường Testosterone hiệu quả:  Bơi lội Đi bộ nhanh Yoga Kegel Cử tạ Squat'
+
+MERGE (o1:treatment {id: 'yoga_treatment'})
+MERGE (o2:symptom {id: 'testosterone_symptom'})
+MERGE (o1)-[r124:treatedBy]->(o2)
+SET r124.text = 'Sau đây là những bài tập tăng cường Testosterone hiệu quả:  Bơi lội Đi bộ nhanh Yoga Kegel Cử tạ Squat'
+
+MERGE (o1:treatment {id: 'kegel_treatment'})
+MERGE (o2:symptom {id: 'testosterone_symptom'})
+MERGE (o1)-[r125:treatedBy]->(o2)
+SET r125.text = 'Sau đây là những bài tập tăng cường Testosterone hiệu quả:  Bơi lội Đi bộ nhanh Yoga Kegel Cử tạ Squat'
+
+MERGE (o1:treatment {id: 'cử_tạ_treatment'})
+MERGE (o2:symptom {id: 'testosterone_symptom'})
+MERGE (o1)-[r126:treatedBy]->(o2)
+SET r126.text = 'Sau đây là những bài tập tăng cường Testosterone hiệu quả:  Bơi lội Đi bộ nhanh Yoga Kegel Cử tạ Squat'
+
+MERGE (o1:treatment {id: 'squat_treatment'})
+MERGE (o2:symptom {id: 'testosterone_symptom'})
+MERGE (o1)-[r127:treatedBy]->(o2)
+SET r127.text = 'Sau đây là những bài tập tăng cường Testosterone hiệu quả:  Bơi lội Đi bộ nhanh Yoga Kegel Cử tạ Squat'
+
+MERGE (o1:symptom {id: 'testosterone_symptom'})
+MERGE (o2:disease {id: 'nam_giới_disease'})
+MERGE (o1)-[r128:relatedTo]->(o2)
+SET r128.text = 'Hormone Testosterone cực kỳ quan trọng đối với nam giới, cần có biện pháp phòng ngừa từ sớm bằng những cách sau đây: Giảm thiểu căng thẳng, kiểm soát stress: Đây được xem là nguyên nhân hàng đầu gây suy giảm hormone nam.'
+
+MERGE (o1:cause {id: 'stress_cause'})
+MERGE (o2:symptom {id: 'suy_giảm_hormone_nam_symptom'})
+MERGE (o1)-[r129:causedBy]->(o2)
+SET r129.text = 'Hormone Testosterone cực kỳ quan trọng đối với nam giới, cần có biện pháp phòng ngừa từ sớm bằng những cách sau đây: Giảm thiểu căng thẳng, kiểm soát stress: Đây được xem là nguyên nhân hàng đầu gây suy giảm hormone nam.'
+
+MERGE (o1:cause {id: 'căng_thẳng_cause'})
+MERGE (o2:lifestyle {id: 'sắp_xếp_công_việc_hợp_lý_lifestyle'})
+MERGE (o1)-[r130:preventedBy]->(o2)
+SET r130.text = 'Vì vậy, cần tìm cách loại bỏ, giảm thiểu những căng thẳng bằng cách:  Sắp xếp công việc hợp lý, không nên ôm đồm quá nhiều việc cùng một lúc.'
+
+MERGE (o1:cause {id: 'căng_thẳng_cause'})
+MERGE (o2:lifestyle {id: 'ôm_đồm_quá_nhiều_việc_lifestyle'})
+MERGE (o1)-[r131:preventedBy]->(o2)
+SET r131.text = 'Vì vậy, cần tìm cách loại bỏ, giảm thiểu những căng thẳng bằng cách:  Sắp xếp công việc hợp lý, không nên ôm đồm quá nhiều việc cùng một lúc.'
+
+MERGE (o1:cause {id: 'căng_thẳng_cause'})
+MERGE (o2:lifestyle {id: 'nghe_nhạc_lifestyle'})
+MERGE (o1)-[r132:preventedBy]->(o2)
+SET r132.text = 'Dành thời gian để nghe nhạc, đọc sách, thiền, trò chuyện cùng bạn bè hoặc người thân.'
+
+MERGE (o1:cause {id: 'căng_thẳng_cause'})
+MERGE (o2:lifestyle {id: 'đọc_sách_lifestyle'})
+MERGE (o1)-[r133:preventedBy]->(o2)
+SET r133.text = 'Dành thời gian để nghe nhạc, đọc sách, thiền, trò chuyện cùng bạn bè hoặc người thân.'
+
+MERGE (o1:cause {id: 'căng_thẳng_cause'})
+MERGE (o2:lifestyle {id: 'thiền_lifestyle'})
+MERGE (o1)-[r134:preventedBy]->(o2)
+SET r134.text = 'Dành thời gian để nghe nhạc, đọc sách, thiền, trò chuyện cùng bạn bè hoặc người thân.'
+
+MERGE (o1:cause {id: 'căng_thẳng_cause'})
+MERGE (o2:lifestyle {id: 'trò_chuyện_cùng_bạn_bè_lifestyle'})
+MERGE (o1)-[r135:preventedBy]->(o2)
+SET r135.text = 'Dành thời gian để nghe nhạc, đọc sách, thiền, trò chuyện cùng bạn bè hoặc người thân.'
+
+MERGE (o1:cause {id: 'căng_thẳng_cause'})
+MERGE (o2:lifestyle {id: 'trò_chuyện_cùng_người_thân_lifestyle'})
+MERGE (o1)-[r136:preventedBy]->(o2)
+SET r136.text = 'Dành thời gian để nghe nhạc, đọc sách, thiền, trò chuyện cùng bạn bè hoặc người thân.'
+
+MERGE (o1:cause {id: 'căng_thẳng_thần_kinh_cause'})
+MERGE (o2:lifestyle {id: 'tập_hít_thở_sâu_lifestyle'})
+MERGE (o1)-[r137:preventedBy]->(o2)
+SET r137.text = 'Tập hít thở sâu giúp giải tỏa những căng thẳng thần kinh.'
+
+MERGE (o1:cause {id: 'căng_thẳng_cause'})
+MERGE (o2:lifestyle {id: 'tập_thể_dục_lifestyle'})
+MERGE (o1)-[r138:preventedBy]->(o2)
+SET r138.text = 'Tập thể dục cũng là cách nâng cao sức khỏe, giúp tinh thần được sảng khoái.'
+
+MERGE (o1:cause {id: 'căng_thẳng_cause'})
+MERGE (o2:lifestyle {id: 'chơi_chim_lifestyle'})
+MERGE (o1)-[r139:preventedBy]->(o2)
+SET r139.text = 'Thư giãn với những thú vui như: chơi chim, cắt tỉa cây cảnh…'
+
+MERGE (o1:cause {id: 'căng_thẳng_cause'})
+MERGE (o2:lifestyle {id: 'cắt_tỉa_cây_cảnh_lifestyle'})
+MERGE (o1)-[r140:preventedBy]->(o2)
+SET r140.text = 'Thư giãn với những thú vui như: chơi chim, cắt tỉa cây cảnh…'

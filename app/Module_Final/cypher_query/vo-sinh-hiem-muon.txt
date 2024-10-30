@@ -1,0 +1,645 @@
+
+MERGE (o1:disease {id: 'vô_sinh_hiếm_muộn_disease'})
+MERGE (o2:disease {id: 'căn_bệnh_của_thời_đại_disease'})
+MERGE (o1)-[r0:isSymptomOf]->(o2)
+SET r0.text = 'Vô sinh hiếm muộn đang trở thành căn bệnh của thời đại.'
+
+MERGE (o1:symptom {id: 'tỷ_lệ_vô_sinh_symptom'})
+MERGE (o2:disease {id: 'vô_sinh_hiếm_muộn_disease'})
+MERGE (o1)-[r1:isSymptomOf]->(o2)
+SET r1.text = 'Đáng báo động khi tỷ lệ vô sinh hiện nay ở Việt Nam lên đến 7,7% trong đó hơn một nửa từ các cặp vợ chồng dưới 30 tuổi.'
+
+MERGE (o1:symptom {id: 'thiếu_hụt_dân_số_symptom'})
+MERGE (o2:disease {id: 'vô_sinh_hiếm_muộn_disease'})
+MERGE (o1)-[r2:isSymptomOf]->(o2)
+SET r2.text = 'Tình trạng này không chỉ cản trở giấc mơ làm cha mẹ mà xã hội đối mặt với sự thiếu hụt dân số khi tỷ lệ sinh giảm.'
+
+MERGE (o1:disease {id: 'vô_sinh_hiếm_muộn_disease'})
+MERGE (o2:lifestyle {id: 'quan_hệ_tình_dục_thường_xuyên_không_sử_dụng_biện_pháp_tránh_thai_lifestyle'})
+MERGE (o1)-[r3:diagnosedBy]->(o2)
+SET r3.text = 'Vô sinh hiếm muộn theo định nghĩa của Tổ chức Y tế thế giới (WHO) là tình trạng một cặp vợ chồng chung sống, có quan hệ tình dục thường xuyên không sử dụng biện pháp tránh thai nào nhưng sau 1 năm (với người vợ dưới 35 tuổi) và sau 6 tháng (với người vợ trên 35 tuổi) mà vẫn chưa có thai một cách tự nhiên.'
+
+MERGE (o1:disease {id: 'vô_sinh_hiếm_muộn_disease'})
+MERGE (o2:symptom {id: 'không_có_thai_tự_nhiên_symptom'})
+MERGE (o1)-[r4:diagnosedBy]->(o2)
+SET r4.text = 'Vô sinh hiếm muộn theo định nghĩa của Tổ chức Y tế thế giới (WHO) là tình trạng một cặp vợ chồng chung sống, có quan hệ tình dục thường xuyên không sử dụng biện pháp tránh thai nào nhưng sau 1 năm (với người vợ dưới 35 tuổi) và sau 6 tháng (với người vợ trên 35 tuổi) mà vẫn chưa có thai một cách tự nhiên.'
+
+MERGE (o1:organ {id: 'châu_á-thái_bình_dương_organ'})
+MERGE (o2:symptom {id: 'tỉ_lệ_sinh_thấp_symptom'})
+MERGE (o1)-[r5:associatedWith]->(o2)
+SET r5.text = 'Khu vực Châu Á-Thái Bình Dương là khu vực có tỉ lệ sinh thấp nhất và vô sinh cao nhất.'
+
+MERGE (o1:organ {id: 'châu_á-thái_bình_dương_organ'})
+MERGE (o2:disease {id: 'vô_sinh_disease'})
+MERGE (o1)-[r6:associatedWith]->(o2)
+SET r6.text = 'Khu vực Châu Á-Thái Bình Dương là khu vực có tỉ lệ sinh thấp nhất và vô sinh cao nhất.'
+
+MERGE (o1:lifestyle {id: 'phụ_nữ_sinh_ít_con_lifestyle'})
+MERGE (o2:disease {id: 'vô_sinh_disease'})
+MERGE (o1)-[r7:causedBy]->(o2)
+SET r7.text = 'Khuynh hướng này đang có xu hướng gia tăng khu phụ nữ ngày càng sinh ít con, trì hoãn tuổi sinh hoặc không có con.'
+
+MERGE (o1:lifestyle {id: 'trì_hoãn_tuổi_sinh_lifestyle'})
+MERGE (o2:disease {id: 'vô_sinh_disease'})
+MERGE (o1)-[r8:causedBy]->(o2)
+SET r8.text = 'Khuynh hướng này đang có xu hướng gia tăng khu phụ nữ ngày càng sinh ít con, trì hoãn tuổi sinh hoặc không có con.'
+
+MERGE (o1:symptom {id: 'không_có_con_symptom'})
+MERGE (o2:disease {id: 'vô_sinh_disease'})
+MERGE (o1)-[r9:isSymptomOf]->(o2)
+SET r9.text = 'Khuynh hướng này đang có xu hướng gia tăng khu phụ nữ ngày càng sinh ít con, trì hoãn tuổi sinh hoặc không có con.'
+
+MERGE (o1:symptom {id: 'tỷ_lệ_sinh_giảm_symptom'})
+MERGE (o2:disease {id: 'vô_sinh_disease'})
+MERGE (o1)-[r10:isSymptomOf]->(o2)
+SET r10.text = 'Tại Việt Nam, tỷ lệ sinh giảm đều đặn trong 2 thập kỷ.'
+
+MERGE (o1:disease {id: 'vô_sinh_hiếm_muộn_disease'})
+MERGE (o2:test {id: 'nghiên_cứu_test'})
+MERGE (o1)-[r11:diagnosedBy]->(o2)
+SET r11.text = 'Theo một số nghiên cứu ở 8 tỉnh đại diện cho 8 vùng sinh thái của nước ta cho thấy có từ 700.000 đến 1 triệu cặp vợ chồng gặp tình trạng vô sinh hiếm muộn.'
+
+MERGE (o1:disease {id: 'vô_sinh_hiếm_muộn_disease'})
+MERGE (o2:treatment {id: 'thăm_khám_với_bác_sĩ_chuyên_khoa_treatment'})
+MERGE (o1)-[r12:diagnosedBy]->(o2)
+SET r12.text = 'Vô sinh hiếm muộn có thể diễn tiến âm thầm, bệnh thường được phát hiện khi vợ chồng mong con nhưng sau một thời gian vẫn chưa thể mang thai tự nhiên, họ đến thăm khám với các bác sĩ chuyên khoa và phát hiện vấn đề.'
+
+MERGE (o1:disease {id: 'vô_sinh_hiếm_muộn_disease'})
+MERGE (o2:symptom {id: 'không_mang_thai_tự_nhiên_symptom'})
+MERGE (o1)-[r13:diagnosedBy]->(o2)
+SET r13.text = 'Vô sinh hiếm muộn có thể diễn tiến âm thầm, bệnh thường được phát hiện khi vợ chồng mong con nhưng sau một thời gian vẫn chưa thể mang thai tự nhiên, họ đến thăm khám với các bác sĩ chuyên khoa và phát hiện vấn đề.'
+
+MERGE (o1:symptom {id: 'dấu_hiệu_symptom'})
+MERGE (o2:disease {id: 'hiếm_muộn_disease'})
+MERGE (o1)-[r14:isSymptomOf]->(o2)
+SET r14.text = 'Bên cạnh đó có một số dấu hiệu có thể cảnh báo tình trạng hiếm muộn ở nam giới và nữ giới như:'
+
+MERGE (o1:symptom {id: 'giảm_ham_muốn_tình_dục_symptom'})
+MERGE (o2:disease {id: 'hiếm_muộn_disease'})
+MERGE (o1)-[r15:isSymptomOf]->(o2)
+SET r15.text = 'Giảm ham muốn tình dục, rối loạn cương, giảm hiện tượng dạ cương; Tinh hoàn sưng đau, xuất hiện cục hay búi ở tinh hoàn; Tinh hoàn teo hoặc nhỏ lại; Đạt cực khoái nhưng không xuất tinh…'
+
+MERGE (o1:symptom {id: 'rối_loạn_cương_symptom'})
+MERGE (o2:disease {id: 'hiếm_muộn_disease'})
+MERGE (o1)-[r16:isSymptomOf]->(o2)
+SET r16.text = 'Giảm ham muốn tình dục, rối loạn cương, giảm hiện tượng dạ cương; Tinh hoàn sưng đau, xuất hiện cục hay búi ở tinh hoàn; Tinh hoàn teo hoặc nhỏ lại; Đạt cực khoái nhưng không xuất tinh…'
+
+MERGE (o1:symptom {id: 'giảm_hiện_tượng_dạ_cương_symptom'})
+MERGE (o2:disease {id: 'hiếm_muộn_disease'})
+MERGE (o1)-[r17:isSymptomOf]->(o2)
+SET r17.text = 'Giảm ham muốn tình dục, rối loạn cương, giảm hiện tượng dạ cương; Tinh hoàn sưng đau, xuất hiện cục hay búi ở tinh hoàn; Tinh hoàn teo hoặc nhỏ lại; Đạt cực khoái nhưng không xuất tinh…'
+
+MERGE (o1:symptom {id: 'tinh_hoàn_sưng_đau_symptom'})
+MERGE (o2:disease {id: 'hiếm_muộn_disease'})
+MERGE (o1)-[r18:isSymptomOf]->(o2)
+SET r18.text = 'Giảm ham muốn tình dục, rối loạn cương, giảm hiện tượng dạ cương; Tinh hoàn sưng đau, xuất hiện cục hay búi ở tinh hoàn; Tinh hoàn teo hoặc nhỏ lại; Đạt cực khoái nhưng không xuất tinh…'
+
+MERGE (o1:symptom {id: 'xuất_hiện_cục_hay_búi_ở_tinh_hoàn_symptom'})
+MERGE (o2:disease {id: 'hiếm_muộn_disease'})
+MERGE (o1)-[r19:isSymptomOf]->(o2)
+SET r19.text = 'Giảm ham muốn tình dục, rối loạn cương, giảm hiện tượng dạ cương; Tinh hoàn sưng đau, xuất hiện cục hay búi ở tinh hoàn; Tinh hoàn teo hoặc nhỏ lại; Đạt cực khoái nhưng không xuất tinh…'
+
+MERGE (o1:symptom {id: 'tinh_hoàn_teo_symptom'})
+MERGE (o2:disease {id: 'hiếm_muộn_disease'})
+MERGE (o1)-[r20:isSymptomOf]->(o2)
+SET r20.text = 'Giảm ham muốn tình dục, rối loạn cương, giảm hiện tượng dạ cương; Tinh hoàn sưng đau, xuất hiện cục hay búi ở tinh hoàn; Tinh hoàn teo hoặc nhỏ lại; Đạt cực khoái nhưng không xuất tinh…'
+
+MERGE (o1:symptom {id: 'tinh_hoàn_nhỏ_lại_symptom'})
+MERGE (o2:disease {id: 'hiếm_muộn_disease'})
+MERGE (o1)-[r21:isSymptomOf]->(o2)
+SET r21.text = 'Giảm ham muốn tình dục, rối loạn cương, giảm hiện tượng dạ cương; Tinh hoàn sưng đau, xuất hiện cục hay búi ở tinh hoàn; Tinh hoàn teo hoặc nhỏ lại; Đạt cực khoái nhưng không xuất tinh…'
+
+MERGE (o1:symptom {id: 'đạt_cực_khoái_nhưng_không_xuất_tinh_symptom'})
+MERGE (o2:disease {id: 'hiếm_muộn_disease'})
+MERGE (o1)-[r22:isSymptomOf]->(o2)
+SET r22.text = 'Giảm ham muốn tình dục, rối loạn cương, giảm hiện tượng dạ cương; Tinh hoàn sưng đau, xuất hiện cục hay búi ở tinh hoàn; Tinh hoàn teo hoặc nhỏ lại; Đạt cực khoái nhưng không xuất tinh…'
+
+MERGE (o1:symptom {id: 'kinh_nguyệt_bất_thường_symptom'})
+MERGE (o2:disease {id: 'hiếm_muộn_disease'})
+MERGE (o1)-[r23:isSymptomOf]->(o2)
+SET r23.text = 'Kinh nguyệt bất thường về lượng kinh nguyệt và độ dài của chu kỳ (quá ít, quá nhiều, quá dài hoặc quá ngắn); Giảm ham muốn tình dục; Vô kinh; Có sự thay đổi về cân nặng như tăng, sụt cân mất kiểm soát; Thay đổi về nội tiết tố, da nổi mụn, rụng tóc; Đau vùng bụng dưới; Khí hư ra nhiều, có màu và mùi bất thường.'
+
+MERGE (o1:symptom {id: 'giảm_ham_muốn_tình_dục_symptom'})
+MERGE (o2:disease {id: 'hiếm_muộn_disease'})
+MERGE (o1)-[r24:isSymptomOf]->(o2)
+SET r24.text = 'Kinh nguyệt bất thường về lượng kinh nguyệt và độ dài của chu kỳ (quá ít, quá nhiều, quá dài hoặc quá ngắn); Giảm ham muốn tình dục; Vô kinh; Có sự thay đổi về cân nặng như tăng, sụt cân mất kiểm soát; Thay đổi về nội tiết tố, da nổi mụn, rụng tóc; Đau vùng bụng dưới; Khí hư ra nhiều, có màu và mùi bất thường.'
+
+MERGE (o1:symptom {id: 'vô_kinh_symptom'})
+MERGE (o2:disease {id: 'hiếm_muộn_disease'})
+MERGE (o1)-[r25:isSymptomOf]->(o2)
+SET r25.text = 'Kinh nguyệt bất thường về lượng kinh nguyệt và độ dài của chu kỳ (quá ít, quá nhiều, quá dài hoặc quá ngắn); Giảm ham muốn tình dục; Vô kinh; Có sự thay đổi về cân nặng như tăng, sụt cân mất kiểm soát; Thay đổi về nội tiết tố, da nổi mụn, rụng tóc; Đau vùng bụng dưới; Khí hư ra nhiều, có màu và mùi bất thường.'
+
+MERGE (o1:symptom {id: 'tăng_cân_symptom'})
+MERGE (o2:disease {id: 'hiếm_muộn_disease'})
+MERGE (o1)-[r26:isSymptomOf]->(o2)
+SET r26.text = 'Kinh nguyệt bất thường về lượng kinh nguyệt và độ dài của chu kỳ (quá ít, quá nhiều, quá dài hoặc quá ngắn); Giảm ham muốn tình dục; Vô kinh; Có sự thay đổi về cân nặng như tăng, sụt cân mất kiểm soát; Thay đổi về nội tiết tố, da nổi mụn, rụng tóc; Đau vùng bụng dưới; Khí hư ra nhiều, có màu và mùi bất thường.'
+
+MERGE (o1:symptom {id: 'sụt_cân_symptom'})
+MERGE (o2:disease {id: 'hiếm_muộn_disease'})
+MERGE (o1)-[r27:isSymptomOf]->(o2)
+SET r27.text = 'Kinh nguyệt bất thường về lượng kinh nguyệt và độ dài của chu kỳ (quá ít, quá nhiều, quá dài hoặc quá ngắn); Giảm ham muốn tình dục; Vô kinh; Có sự thay đổi về cân nặng như tăng, sụt cân mất kiểm soát; Thay đổi về nội tiết tố, da nổi mụn, rụng tóc; Đau vùng bụng dưới; Khí hư ra nhiều, có màu và mùi bất thường.'
+
+MERGE (o1:symptom {id: 'thay_đổi_về_nội_tiết_tố_symptom'})
+MERGE (o2:disease {id: 'hiếm_muộn_disease'})
+MERGE (o1)-[r28:isSymptomOf]->(o2)
+SET r28.text = 'Kinh nguyệt bất thường về lượng kinh nguyệt và độ dài của chu kỳ (quá ít, quá nhiều, quá dài hoặc quá ngắn); Giảm ham muốn tình dục; Vô kinh; Có sự thay đổi về cân nặng như tăng, sụt cân mất kiểm soát; Thay đổi về nội tiết tố, da nổi mụn, rụng tóc; Đau vùng bụng dưới; Khí hư ra nhiều, có màu và mùi bất thường.'
+
+MERGE (o1:symptom {id: 'da_nổi_mụn_symptom'})
+MERGE (o2:disease {id: 'hiếm_muộn_disease'})
+MERGE (o1)-[r29:isSymptomOf]->(o2)
+SET r29.text = 'Kinh nguyệt bất thường về lượng kinh nguyệt và độ dài của chu kỳ (quá ít, quá nhiều, quá dài hoặc quá ngắn); Giảm ham muốn tình dục; Vô kinh; Có sự thay đổi về cân nặng như tăng, sụt cân mất kiểm soát; Thay đổi về nội tiết tố, da nổi mụn, rụng tóc; Đau vùng bụng dưới; Khí hư ra nhiều, có màu và mùi bất thường.'
+
+MERGE (o1:symptom {id: 'rụng_tóc_symptom'})
+MERGE (o2:disease {id: 'hiếm_muộn_disease'})
+MERGE (o1)-[r30:isSymptomOf]->(o2)
+SET r30.text = 'Kinh nguyệt bất thường về lượng kinh nguyệt và độ dài của chu kỳ (quá ít, quá nhiều, quá dài hoặc quá ngắn); Giảm ham muốn tình dục; Vô kinh; Có sự thay đổi về cân nặng như tăng, sụt cân mất kiểm soát; Thay đổi về nội tiết tố, da nổi mụn, rụng tóc; Đau vùng bụng dưới; Khí hư ra nhiều, có màu và mùi bất thường.'
+
+MERGE (o1:symptom {id: 'đau_vùng_bụng_dưới_symptom'})
+MERGE (o2:disease {id: 'hiếm_muộn_disease'})
+MERGE (o1)-[r31:isSymptomOf]->(o2)
+SET r31.text = 'Kinh nguyệt bất thường về lượng kinh nguyệt và độ dài của chu kỳ (quá ít, quá nhiều, quá dài hoặc quá ngắn); Giảm ham muốn tình dục; Vô kinh; Có sự thay đổi về cân nặng như tăng, sụt cân mất kiểm soát; Thay đổi về nội tiết tố, da nổi mụn, rụng tóc; Đau vùng bụng dưới; Khí hư ra nhiều, có màu và mùi bất thường.'
+
+MERGE (o1:symptom {id: 'khí_hư_ra_nhiều_symptom'})
+MERGE (o2:disease {id: 'hiếm_muộn_disease'})
+MERGE (o1)-[r32:isSymptomOf]->(o2)
+SET r32.text = 'Kinh nguyệt bất thường về lượng kinh nguyệt và độ dài của chu kỳ (quá ít, quá nhiều, quá dài hoặc quá ngắn); Giảm ham muốn tình dục; Vô kinh; Có sự thay đổi về cân nặng như tăng, sụt cân mất kiểm soát; Thay đổi về nội tiết tố, da nổi mụn, rụng tóc; Đau vùng bụng dưới; Khí hư ra nhiều, có màu và mùi bất thường.'
+
+MERGE (o1:disease {id: 'vô_sinh_hiếm_muộn_disease'})
+MERGE (o2:cause {id: 'nam_giới_cause'})
+MERGE (o1)-[r33:causedBy]->(o2)
+SET r33.text = '40% nguyên nhân vô sinh hiếm muộn đến từ nam giới, 40% đến từ nữ giới và 20% còn lại đến từ cả hai phía hoặc không rõ nguyên nhân.'
+
+MERGE (o1:disease {id: 'vô_sinh_hiếm_muộn_disease'})
+MERGE (o2:cause {id: 'nữ_giới_cause'})
+MERGE (o1)-[r34:causedBy]->(o2)
+SET r34.text = '40% nguyên nhân vô sinh hiếm muộn đến từ nam giới, 40% đến từ nữ giới và 20% còn lại đến từ cả hai phía hoặc không rõ nguyên nhân.'
+
+MERGE (o1:disease {id: 'vô_sinh_hiếm_muộn_disease'})
+MERGE (o2:cause {id: 'cả_hai_phía_cause'})
+MERGE (o1)-[r35:causedBy]->(o2)
+SET r35.text = '40% nguyên nhân vô sinh hiếm muộn đến từ nam giới, 40% đến từ nữ giới và 20% còn lại đến từ cả hai phía hoặc không rõ nguyên nhân.'
+
+MERGE (o1:disease {id: 'vô_sinh_hiếm_muộn_disease'})
+MERGE (o2:cause {id: 'không_rõ_nguyên_nhân_cause'})
+MERGE (o1)-[r36:causedBy]->(o2)
+SET r36.text = '40% nguyên nhân vô sinh hiếm muộn đến từ nam giới, 40% đến từ nữ giới và 20% còn lại đến từ cả hai phía hoặc không rõ nguyên nhân.'
+
+MERGE (o1:cause {id: 'bất_thường_về_tinh_trùng_cause'})
+MERGE (o2:disease {id: 'vô_sinh_hiếm_muộn_disease'})
+MERGE (o1)-[r37:causes]->(o2)
+SET r37.text = 'Nguyên nhân vô sinh hiếm muộn ở nam giới bao gồm:  Bất thường về tinh trùng: tinh trùng yếu, ít, không di động, dị dạng nhiều đều ảnh hưởng đến khả năng mang thai tự nhiên.'
+
+MERGE (o1:symptom {id: 'tinh_trùng_yếu_symptom'})
+MERGE (o2:cause {id: 'bất_thường_về_tinh_trùng_cause'})
+MERGE (o1)-[r38:isSymptomOf]->(o2)
+SET r38.text = 'Nguyên nhân vô sinh hiếm muộn ở nam giới bao gồm:  Bất thường về tinh trùng: tinh trùng yếu, ít, không di động, dị dạng nhiều đều ảnh hưởng đến khả năng mang thai tự nhiên.'
+
+MERGE (o1:symptom {id: 'tinh_trùng_ít_symptom'})
+MERGE (o2:cause {id: 'bất_thường_về_tinh_trùng_cause'})
+MERGE (o1)-[r39:isSymptomOf]->(o2)
+SET r39.text = 'Nguyên nhân vô sinh hiếm muộn ở nam giới bao gồm:  Bất thường về tinh trùng: tinh trùng yếu, ít, không di động, dị dạng nhiều đều ảnh hưởng đến khả năng mang thai tự nhiên.'
+
+MERGE (o1:symptom {id: 'tinh_trùng_không_di_động_symptom'})
+MERGE (o2:cause {id: 'bất_thường_về_tinh_trùng_cause'})
+MERGE (o1)-[r40:isSymptomOf]->(o2)
+SET r40.text = 'Nguyên nhân vô sinh hiếm muộn ở nam giới bao gồm:  Bất thường về tinh trùng: tinh trùng yếu, ít, không di động, dị dạng nhiều đều ảnh hưởng đến khả năng mang thai tự nhiên.'
+
+MERGE (o1:symptom {id: 'tinh_trùng_dị_dạng_symptom'})
+MERGE (o2:cause {id: 'bất_thường_về_tinh_trùng_cause'})
+MERGE (o1)-[r41:isSymptomOf]->(o2)
+SET r41.text = 'Nguyên nhân vô sinh hiếm muộn ở nam giới bao gồm:  Bất thường về tinh trùng: tinh trùng yếu, ít, không di động, dị dạng nhiều đều ảnh hưởng đến khả năng mang thai tự nhiên.'
+
+MERGE (o1:cause {id: 'bất_thường_về_tinh_trùng_cause'})
+MERGE (o2:symptom {id: 'khả_năng_mang_thai_tự_nhiên_symptom'})
+MERGE (o1)-[r42:affects]->(o2)
+SET r42.text = 'Nguyên nhân vô sinh hiếm muộn ở nam giới bao gồm:  Bất thường về tinh trùng: tinh trùng yếu, ít, không di động, dị dạng nhiều đều ảnh hưởng đến khả năng mang thai tự nhiên.'
+
+MERGE (o1:cause {id: 'bệnh_ảnh_hưởng_đến_sức_khỏe_sinh_sản_cause'})
+MERGE (o2:disease {id: 'vô_sinh_hiếm_muộn_disease'})
+MERGE (o1)-[r43:causes]->(o2)
+SET r43.text = 'Nguyên nhân vô sinh hiếm muộn ở nam giới bao gồm:  Bệnh ảnh hưởng đến sức khỏe sinh sản: giãn tĩnh mạch thừng tinh, teo tinh hoàn, tinh hoàn ẩn, có u bướu, viêm đường tiết niệu, ung thư, xuất tinh ngược dòng, bệnh celiac, có kháng thể kháng tinh trùng… Tiền sử từng phẫu thuật như thắt ống dẫn tinh, phẫu thuật ở vùng bẹn bìu… Làm việc ở môi trường tiếp xúc với hóa chất, chất phóng xạ, điện từ, nơi có nhiệt độ cao… Lối sống thường hút thuốc, uống rượu bia, sử dụng các chất kích thích, chất cấm và đồ ăn nhanh…'
+
+MERGE (o1:disease {id: 'giãn_tĩnh_mạch_thừng_tinh_disease'})
+MERGE (o2:cause {id: 'bệnh_ảnh_hưởng_đến_sức_khỏe_sinh_sản_cause'})
+MERGE (o1)-[r44:isSymptomOf]->(o2)
+SET r44.text = 'Nguyên nhân vô sinh hiếm muộn ở nam giới bao gồm:  Bệnh ảnh hưởng đến sức khỏe sinh sản: giãn tĩnh mạch thừng tinh, teo tinh hoàn, tinh hoàn ẩn, có u bướu, viêm đường tiết niệu, ung thư, xuất tinh ngược dòng, bệnh celiac, có kháng thể kháng tinh trùng… Tiền sử từng phẫu thuật như thắt ống dẫn tinh, phẫu thuật ở vùng bẹn bìu… Làm việc ở môi trường tiếp xúc với hóa chất, chất phóng xạ, điện từ, nơi có nhiệt độ cao… Lối sống thường hút thuốc, uống rượu bia, sử dụng các chất kích thích, chất cấm và đồ ăn nhanh…'
+
+MERGE (o1:disease {id: 'teo_tinh_hoàn_disease'})
+MERGE (o2:cause {id: 'bệnh_ảnh_hưởng_đến_sức_khỏe_sinh_sản_cause'})
+MERGE (o1)-[r45:isSymptomOf]->(o2)
+SET r45.text = 'Nguyên nhân vô sinh hiếm muộn ở nam giới bao gồm:  Bệnh ảnh hưởng đến sức khỏe sinh sản: giãn tĩnh mạch thừng tinh, teo tinh hoàn, tinh hoàn ẩn, có u bướu, viêm đường tiết niệu, ung thư, xuất tinh ngược dòng, bệnh celiac, có kháng thể kháng tinh trùng… Tiền sử từng phẫu thuật như thắt ống dẫn tinh, phẫu thuật ở vùng bẹn bìu… Làm việc ở môi trường tiếp xúc với hóa chất, chất phóng xạ, điện từ, nơi có nhiệt độ cao… Lối sống thường hút thuốc, uống rượu bia, sử dụng các chất kích thích, chất cấm và đồ ăn nhanh…'
+
+MERGE (o1:disease {id: 'tinh_hoàn_ẩn_disease'})
+MERGE (o2:cause {id: 'bệnh_ảnh_hưởng_đến_sức_khỏe_sinh_sản_cause'})
+MERGE (o1)-[r46:isSymptomOf]->(o2)
+SET r46.text = 'Nguyên nhân vô sinh hiếm muộn ở nam giới bao gồm:  Bệnh ảnh hưởng đến sức khỏe sinh sản: giãn tĩnh mạch thừng tinh, teo tinh hoàn, tinh hoàn ẩn, có u bướu, viêm đường tiết niệu, ung thư, xuất tinh ngược dòng, bệnh celiac, có kháng thể kháng tinh trùng… Tiền sử từng phẫu thuật như thắt ống dẫn tinh, phẫu thuật ở vùng bẹn bìu… Làm việc ở môi trường tiếp xúc với hóa chất, chất phóng xạ, điện từ, nơi có nhiệt độ cao… Lối sống thường hút thuốc, uống rượu bia, sử dụng các chất kích thích, chất cấm và đồ ăn nhanh…'
+
+MERGE (o1:disease {id: 'u_bướu_disease'})
+MERGE (o2:cause {id: 'bệnh_ảnh_hưởng_đến_sức_khỏe_sinh_sản_cause'})
+MERGE (o1)-[r47:isSymptomOf]->(o2)
+SET r47.text = 'Nguyên nhân vô sinh hiếm muộn ở nam giới bao gồm:  Bệnh ảnh hưởng đến sức khỏe sinh sản: giãn tĩnh mạch thừng tinh, teo tinh hoàn, tinh hoàn ẩn, có u bướu, viêm đường tiết niệu, ung thư, xuất tinh ngược dòng, bệnh celiac, có kháng thể kháng tinh trùng… Tiền sử từng phẫu thuật như thắt ống dẫn tinh, phẫu thuật ở vùng bẹn bìu… Làm việc ở môi trường tiếp xúc với hóa chất, chất phóng xạ, điện từ, nơi có nhiệt độ cao… Lối sống thường hút thuốc, uống rượu bia, sử dụng các chất kích thích, chất cấm và đồ ăn nhanh…'
+
+MERGE (o1:disease {id: 'viêm_đường_tiết_niệu_disease'})
+MERGE (o2:cause {id: 'bệnh_ảnh_hưởng_đến_sức_khỏe_sinh_sản_cause'})
+MERGE (o1)-[r48:isSymptomOf]->(o2)
+SET r48.text = 'Nguyên nhân vô sinh hiếm muộn ở nam giới bao gồm:  Bệnh ảnh hưởng đến sức khỏe sinh sản: giãn tĩnh mạch thừng tinh, teo tinh hoàn, tinh hoàn ẩn, có u bướu, viêm đường tiết niệu, ung thư, xuất tinh ngược dòng, bệnh celiac, có kháng thể kháng tinh trùng… Tiền sử từng phẫu thuật như thắt ống dẫn tinh, phẫu thuật ở vùng bẹn bìu… Làm việc ở môi trường tiếp xúc với hóa chất, chất phóng xạ, điện từ, nơi có nhiệt độ cao… Lối sống thường hút thuốc, uống rượu bia, sử dụng các chất kích thích, chất cấm và đồ ăn nhanh…'
+
+MERGE (o1:disease {id: 'ung_thư_disease'})
+MERGE (o2:cause {id: 'bệnh_ảnh_hưởng_đến_sức_khỏe_sinh_sản_cause'})
+MERGE (o1)-[r49:isSymptomOf]->(o2)
+SET r49.text = 'Nguyên nhân vô sinh hiếm muộn ở nam giới bao gồm:  Bệnh ảnh hưởng đến sức khỏe sinh sản: giãn tĩnh mạch thừng tinh, teo tinh hoàn, tinh hoàn ẩn, có u bướu, viêm đường tiết niệu, ung thư, xuất tinh ngược dòng, bệnh celiac, có kháng thể kháng tinh trùng… Tiền sử từng phẫu thuật như thắt ống dẫn tinh, phẫu thuật ở vùng bẹn bìu… Làm việc ở môi trường tiếp xúc với hóa chất, chất phóng xạ, điện từ, nơi có nhiệt độ cao… Lối sống thường hút thuốc, uống rượu bia, sử dụng các chất kích thích, chất cấm và đồ ăn nhanh…'
+
+MERGE (o1:disease {id: 'xuất_tinh_ngược_dòng_disease'})
+MERGE (o2:cause {id: 'bệnh_ảnh_hưởng_đến_sức_khỏe_sinh_sản_cause'})
+MERGE (o1)-[r50:isSymptomOf]->(o2)
+SET r50.text = 'Nguyên nhân vô sinh hiếm muộn ở nam giới bao gồm:  Bệnh ảnh hưởng đến sức khỏe sinh sản: giãn tĩnh mạch thừng tinh, teo tinh hoàn, tinh hoàn ẩn, có u bướu, viêm đường tiết niệu, ung thư, xuất tinh ngược dòng, bệnh celiac, có kháng thể kháng tinh trùng… Tiền sử từng phẫu thuật như thắt ống dẫn tinh, phẫu thuật ở vùng bẹn bìu… Làm việc ở môi trường tiếp xúc với hóa chất, chất phóng xạ, điện từ, nơi có nhiệt độ cao… Lối sống thường hút thuốc, uống rượu bia, sử dụng các chất kích thích, chất cấm và đồ ăn nhanh…'
+
+MERGE (o1:disease {id: 'bệnh_celiac_disease'})
+MERGE (o2:cause {id: 'bệnh_ảnh_hưởng_đến_sức_khỏe_sinh_sản_cause'})
+MERGE (o1)-[r51:isSymptomOf]->(o2)
+SET r51.text = 'Nguyên nhân vô sinh hiếm muộn ở nam giới bao gồm:  Bệnh ảnh hưởng đến sức khỏe sinh sản: giãn tĩnh mạch thừng tinh, teo tinh hoàn, tinh hoàn ẩn, có u bướu, viêm đường tiết niệu, ung thư, xuất tinh ngược dòng, bệnh celiac, có kháng thể kháng tinh trùng… Tiền sử từng phẫu thuật như thắt ống dẫn tinh, phẫu thuật ở vùng bẹn bìu… Làm việc ở môi trường tiếp xúc với hóa chất, chất phóng xạ, điện từ, nơi có nhiệt độ cao… Lối sống thường hút thuốc, uống rượu bia, sử dụng các chất kích thích, chất cấm và đồ ăn nhanh…'
+
+MERGE (o1:cause {id: 'kháng_thể_kháng_tinh_trùng_cause'})
+MERGE (o2:cause {id: 'bệnh_ảnh_hưởng_đến_sức_khỏe_sinh_sản_cause'})
+MERGE (o1)-[r52:isSymptomOf]->(o2)
+SET r52.text = 'Nguyên nhân vô sinh hiếm muộn ở nam giới bao gồm:  Bệnh ảnh hưởng đến sức khỏe sinh sản: giãn tĩnh mạch thừng tinh, teo tinh hoàn, tinh hoàn ẩn, có u bướu, viêm đường tiết niệu, ung thư, xuất tinh ngược dòng, bệnh celiac, có kháng thể kháng tinh trùng… Tiền sử từng phẫu thuật như thắt ống dẫn tinh, phẫu thuật ở vùng bẹn bìu… Làm việc ở môi trường tiếp xúc với hóa chất, chất phóng xạ, điện từ, nơi có nhiệt độ cao… Lối sống thường hút thuốc, uống rượu bia, sử dụng các chất kích thích, chất cấm và đồ ăn nhanh…'
+
+MERGE (o1:treatment {id: 'thắt_ống_dẫn_tinh_treatment'})
+MERGE (o2:disease {id: 'vô_sinh_hiếm_muộn_disease'})
+MERGE (o1)-[r53:causes]->(o2)
+SET r53.text = 'Nguyên nhân vô sinh hiếm muộn ở nam giới bao gồm:  Bệnh ảnh hưởng đến sức khỏe sinh sản: giãn tĩnh mạch thừng tinh, teo tinh hoàn, tinh hoàn ẩn, có u bướu, viêm đường tiết niệu, ung thư, xuất tinh ngược dòng, bệnh celiac, có kháng thể kháng tinh trùng… Tiền sử từng phẫu thuật như thắt ống dẫn tinh, phẫu thuật ở vùng bẹn bìu… Làm việc ở môi trường tiếp xúc với hóa chất, chất phóng xạ, điện từ, nơi có nhiệt độ cao… Lối sống thường hút thuốc, uống rượu bia, sử dụng các chất kích thích, chất cấm và đồ ăn nhanh…'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_ở_vùng_bẹn_bìu_treatment'})
+MERGE (o2:disease {id: 'vô_sinh_hiếm_muộn_disease'})
+MERGE (o1)-[r54:causes]->(o2)
+SET r54.text = 'Nguyên nhân vô sinh hiếm muộn ở nam giới bao gồm:  Bệnh ảnh hưởng đến sức khỏe sinh sản: giãn tĩnh mạch thừng tinh, teo tinh hoàn, tinh hoàn ẩn, có u bướu, viêm đường tiết niệu, ung thư, xuất tinh ngược dòng, bệnh celiac, có kháng thể kháng tinh trùng… Tiền sử từng phẫu thuật như thắt ống dẫn tinh, phẫu thuật ở vùng bẹn bìu… Làm việc ở môi trường tiếp xúc với hóa chất, chất phóng xạ, điện từ, nơi có nhiệt độ cao… Lối sống thường hút thuốc, uống rượu bia, sử dụng các chất kích thích, chất cấm và đồ ăn nhanh…'
+
+MERGE (o1:cause {id: 'hóa_chất_cause'})
+MERGE (o2:disease {id: 'vô_sinh_hiếm_muộn_disease'})
+MERGE (o1)-[r55:causes]->(o2)
+SET r55.text = 'Nguyên nhân vô sinh hiếm muộn ở nam giới bao gồm:  Bệnh ảnh hưởng đến sức khỏe sinh sản: giãn tĩnh mạch thừng tinh, teo tinh hoàn, tinh hoàn ẩn, có u bướu, viêm đường tiết niệu, ung thư, xuất tinh ngược dòng, bệnh celiac, có kháng thể kháng tinh trùng… Tiền sử từng phẫu thuật như thắt ống dẫn tinh, phẫu thuật ở vùng bẹn bìu… Làm việc ở môi trường tiếp xúc với hóa chất, chất phóng xạ, điện từ, nơi có nhiệt độ cao… Lối sống thường hút thuốc, uống rượu bia, sử dụng các chất kích thích, chất cấm và đồ ăn nhanh…'
+
+MERGE (o1:cause {id: 'chất_phóng_xạ_cause'})
+MERGE (o2:disease {id: 'vô_sinh_hiếm_muộn_disease'})
+MERGE (o1)-[r56:causes]->(o2)
+SET r56.text = 'Nguyên nhân vô sinh hiếm muộn ở nam giới bao gồm:  Bệnh ảnh hưởng đến sức khỏe sinh sản: giãn tĩnh mạch thừng tinh, teo tinh hoàn, tinh hoàn ẩn, có u bướu, viêm đường tiết niệu, ung thư, xuất tinh ngược dòng, bệnh celiac, có kháng thể kháng tinh trùng… Tiền sử từng phẫu thuật như thắt ống dẫn tinh, phẫu thuật ở vùng bẹn bìu… Làm việc ở môi trường tiếp xúc với hóa chất, chất phóng xạ, điện từ, nơi có nhiệt độ cao… Lối sống thường hút thuốc, uống rượu bia, sử dụng các chất kích thích, chất cấm và đồ ăn nhanh…'
+
+MERGE (o1:cause {id: 'điện_từ_cause'})
+MERGE (o2:disease {id: 'vô_sinh_hiếm_muộn_disease'})
+MERGE (o1)-[r57:causes]->(o2)
+SET r57.text = 'Nguyên nhân vô sinh hiếm muộn ở nam giới bao gồm:  Bệnh ảnh hưởng đến sức khỏe sinh sản: giãn tĩnh mạch thừng tinh, teo tinh hoàn, tinh hoàn ẩn, có u bướu, viêm đường tiết niệu, ung thư, xuất tinh ngược dòng, bệnh celiac, có kháng thể kháng tinh trùng… Tiền sử từng phẫu thuật như thắt ống dẫn tinh, phẫu thuật ở vùng bẹn bìu… Làm việc ở môi trường tiếp xúc với hóa chất, chất phóng xạ, điện từ, nơi có nhiệt độ cao… Lối sống thường hút thuốc, uống rượu bia, sử dụng các chất kích thích, chất cấm và đồ ăn nhanh…'
+
+MERGE (o1:cause {id: 'nhiệt_độ_cao_cause'})
+MERGE (o2:disease {id: 'vô_sinh_hiếm_muộn_disease'})
+MERGE (o1)-[r58:causes]->(o2)
+SET r58.text = 'Nguyên nhân vô sinh hiếm muộn ở nam giới bao gồm:  Bệnh ảnh hưởng đến sức khỏe sinh sản: giãn tĩnh mạch thừng tinh, teo tinh hoàn, tinh hoàn ẩn, có u bướu, viêm đường tiết niệu, ung thư, xuất tinh ngược dòng, bệnh celiac, có kháng thể kháng tinh trùng… Tiền sử từng phẫu thuật như thắt ống dẫn tinh, phẫu thuật ở vùng bẹn bìu… Làm việc ở môi trường tiếp xúc với hóa chất, chất phóng xạ, điện từ, nơi có nhiệt độ cao… Lối sống thường hút thuốc, uống rượu bia, sử dụng các chất kích thích, chất cấm và đồ ăn nhanh…'
+
+MERGE (o1:lifestyle {id: 'hút_thuốc_lifestyle'})
+MERGE (o2:disease {id: 'vô_sinh_hiếm_muộn_disease'})
+MERGE (o1)-[r59:causes]->(o2)
+SET r59.text = 'Nguyên nhân vô sinh hiếm muộn ở nam giới bao gồm:  Bệnh ảnh hưởng đến sức khỏe sinh sản: giãn tĩnh mạch thừng tinh, teo tinh hoàn, tinh hoàn ẩn, có u bướu, viêm đường tiết niệu, ung thư, xuất tinh ngược dòng, bệnh celiac, có kháng thể kháng tinh trùng… Tiền sử từng phẫu thuật như thắt ống dẫn tinh, phẫu thuật ở vùng bẹn bìu… Làm việc ở môi trường tiếp xúc với hóa chất, chất phóng xạ, điện từ, nơi có nhiệt độ cao… Lối sống thường hút thuốc, uống rượu bia, sử dụng các chất kích thích, chất cấm và đồ ăn nhanh…'
+
+MERGE (o1:lifestyle {id: 'uống_rượu_bia_lifestyle'})
+MERGE (o2:disease {id: 'vô_sinh_hiếm_muộn_disease'})
+MERGE (o1)-[r60:causes]->(o2)
+SET r60.text = 'Nguyên nhân vô sinh hiếm muộn ở nam giới bao gồm:  Bệnh ảnh hưởng đến sức khỏe sinh sản: giãn tĩnh mạch thừng tinh, teo tinh hoàn, tinh hoàn ẩn, có u bướu, viêm đường tiết niệu, ung thư, xuất tinh ngược dòng, bệnh celiac, có kháng thể kháng tinh trùng… Tiền sử từng phẫu thuật như thắt ống dẫn tinh, phẫu thuật ở vùng bẹn bìu… Làm việc ở môi trường tiếp xúc với hóa chất, chất phóng xạ, điện từ, nơi có nhiệt độ cao… Lối sống thường hút thuốc, uống rượu bia, sử dụng các chất kích thích, chất cấm và đồ ăn nhanh…'
+
+MERGE (o1:lifestyle {id: 'chất_kích_thích_lifestyle'})
+MERGE (o2:disease {id: 'vô_sinh_hiếm_muộn_disease'})
+MERGE (o1)-[r61:causes]->(o2)
+SET r61.text = 'Nguyên nhân vô sinh hiếm muộn ở nam giới bao gồm:  Bệnh ảnh hưởng đến sức khỏe sinh sản: giãn tĩnh mạch thừng tinh, teo tinh hoàn, tinh hoàn ẩn, có u bướu, viêm đường tiết niệu, ung thư, xuất tinh ngược dòng, bệnh celiac, có kháng thể kháng tinh trùng… Tiền sử từng phẫu thuật như thắt ống dẫn tinh, phẫu thuật ở vùng bẹn bìu… Làm việc ở môi trường tiếp xúc với hóa chất, chất phóng xạ, điện từ, nơi có nhiệt độ cao… Lối sống thường hút thuốc, uống rượu bia, sử dụng các chất kích thích, chất cấm và đồ ăn nhanh…'
+
+MERGE (o1:lifestyle {id: 'chất_cấm_lifestyle'})
+MERGE (o2:disease {id: 'vô_sinh_hiếm_muộn_disease'})
+MERGE (o1)-[r62:causes]->(o2)
+SET r62.text = 'Nguyên nhân vô sinh hiếm muộn ở nam giới bao gồm:  Bệnh ảnh hưởng đến sức khỏe sinh sản: giãn tĩnh mạch thừng tinh, teo tinh hoàn, tinh hoàn ẩn, có u bướu, viêm đường tiết niệu, ung thư, xuất tinh ngược dòng, bệnh celiac, có kháng thể kháng tinh trùng… Tiền sử từng phẫu thuật như thắt ống dẫn tinh, phẫu thuật ở vùng bẹn bìu… Làm việc ở môi trường tiếp xúc với hóa chất, chất phóng xạ, điện từ, nơi có nhiệt độ cao… Lối sống thường hút thuốc, uống rượu bia, sử dụng các chất kích thích, chất cấm và đồ ăn nhanh…'
+
+MERGE (o1:food {id: 'đồ_ăn_nhanh_food'})
+MERGE (o2:disease {id: 'vô_sinh_hiếm_muộn_disease'})
+MERGE (o1)-[r63:causes]->(o2)
+SET r63.text = 'Nguyên nhân vô sinh hiếm muộn ở nam giới bao gồm:  Bệnh ảnh hưởng đến sức khỏe sinh sản: giãn tĩnh mạch thừng tinh, teo tinh hoàn, tinh hoàn ẩn, có u bướu, viêm đường tiết niệu, ung thư, xuất tinh ngược dòng, bệnh celiac, có kháng thể kháng tinh trùng… Tiền sử từng phẫu thuật như thắt ống dẫn tinh, phẫu thuật ở vùng bẹn bìu… Làm việc ở môi trường tiếp xúc với hóa chất, chất phóng xạ, điện từ, nơi có nhiệt độ cao… Lối sống thường hút thuốc, uống rượu bia, sử dụng các chất kích thích, chất cấm và đồ ăn nhanh…'
+
+MERGE (o1:cause {id: 'bệnh_lý_ở_tử_cung_cause'})
+MERGE (o2:disease {id: 'vô_sinh_hiếm_muộn_disease'})
+MERGE (o1)-[r64:causes]->(o2)
+SET r64.text = 'Nguyên nhân vô sinh hiếm muộn ở nữ giới bao gồm:  Các bệnh lý ở tử cung như: viêm nội mạc tử cung mãn tính, tử cung có vách ngăn, có lạc nội mạc, u xơ tử cung, polyp tử cung, tử cung dị dạng, niêm mạc tử cung mỏng… Suy buồng trứng sớm; Bất thường ở vòi tử cung như ứ dịch, viêm, chít hẹp, từng làm phẫu thuật cắt 2 vòi tử cung; Viêm vùng chậu, nhiễm nấm chlamydia, mắc các bệnh lây truyền qua đường tình dục như lậu, giang mai… Có tình trạng tăng prolactin máu.'
+
+MERGE (o1:disease {id: 'viêm_nội_mạc_tử_cung_mãn_tính_disease'})
+MERGE (o2:cause {id: 'bệnh_lý_ở_tử_cung_cause'})
+MERGE (o1)-[r65:isSymptomOf]->(o2)
+SET r65.text = 'Nguyên nhân vô sinh hiếm muộn ở nữ giới bao gồm:  Các bệnh lý ở tử cung như: viêm nội mạc tử cung mãn tính, tử cung có vách ngăn, có lạc nội mạc, u xơ tử cung, polyp tử cung, tử cung dị dạng, niêm mạc tử cung mỏng… Suy buồng trứng sớm; Bất thường ở vòi tử cung như ứ dịch, viêm, chít hẹp, từng làm phẫu thuật cắt 2 vòi tử cung; Viêm vùng chậu, nhiễm nấm chlamydia, mắc các bệnh lây truyền qua đường tình dục như lậu, giang mai… Có tình trạng tăng prolactin máu.'
+
+MERGE (o1:disease {id: 'tử_cung_có_vách_ngăn_disease'})
+MERGE (o2:cause {id: 'bệnh_lý_ở_tử_cung_cause'})
+MERGE (o1)-[r66:isSymptomOf]->(o2)
+SET r66.text = 'Nguyên nhân vô sinh hiếm muộn ở nữ giới bao gồm:  Các bệnh lý ở tử cung như: viêm nội mạc tử cung mãn tính, tử cung có vách ngăn, có lạc nội mạc, u xơ tử cung, polyp tử cung, tử cung dị dạng, niêm mạc tử cung mỏng… Suy buồng trứng sớm; Bất thường ở vòi tử cung như ứ dịch, viêm, chít hẹp, từng làm phẫu thuật cắt 2 vòi tử cung; Viêm vùng chậu, nhiễm nấm chlamydia, mắc các bệnh lây truyền qua đường tình dục như lậu, giang mai… Có tình trạng tăng prolactin máu.'
+
+MERGE (o1:disease {id: 'lạc_nội_mạc_disease'})
+MERGE (o2:cause {id: 'bệnh_lý_ở_tử_cung_cause'})
+MERGE (o1)-[r67:isSymptomOf]->(o2)
+SET r67.text = 'Nguyên nhân vô sinh hiếm muộn ở nữ giới bao gồm:  Các bệnh lý ở tử cung như: viêm nội mạc tử cung mãn tính, tử cung có vách ngăn, có lạc nội mạc, u xơ tử cung, polyp tử cung, tử cung dị dạng, niêm mạc tử cung mỏng… Suy buồng trứng sớm; Bất thường ở vòi tử cung như ứ dịch, viêm, chít hẹp, từng làm phẫu thuật cắt 2 vòi tử cung; Viêm vùng chậu, nhiễm nấm chlamydia, mắc các bệnh lây truyền qua đường tình dục như lậu, giang mai… Có tình trạng tăng prolactin máu.'
+
+MERGE (o1:disease {id: 'u_xơ_tử_cung_disease'})
+MERGE (o2:cause {id: 'bệnh_lý_ở_tử_cung_cause'})
+MERGE (o1)-[r68:isSymptomOf]->(o2)
+SET r68.text = 'Nguyên nhân vô sinh hiếm muộn ở nữ giới bao gồm:  Các bệnh lý ở tử cung như: viêm nội mạc tử cung mãn tính, tử cung có vách ngăn, có lạc nội mạc, u xơ tử cung, polyp tử cung, tử cung dị dạng, niêm mạc tử cung mỏng… Suy buồng trứng sớm; Bất thường ở vòi tử cung như ứ dịch, viêm, chít hẹp, từng làm phẫu thuật cắt 2 vòi tử cung; Viêm vùng chậu, nhiễm nấm chlamydia, mắc các bệnh lây truyền qua đường tình dục như lậu, giang mai… Có tình trạng tăng prolactin máu.'
+
+MERGE (o1:disease {id: 'polyp_tử_cung_disease'})
+MERGE (o2:cause {id: 'bệnh_lý_ở_tử_cung_cause'})
+MERGE (o1)-[r69:isSymptomOf]->(o2)
+SET r69.text = 'Nguyên nhân vô sinh hiếm muộn ở nữ giới bao gồm:  Các bệnh lý ở tử cung như: viêm nội mạc tử cung mãn tính, tử cung có vách ngăn, có lạc nội mạc, u xơ tử cung, polyp tử cung, tử cung dị dạng, niêm mạc tử cung mỏng… Suy buồng trứng sớm; Bất thường ở vòi tử cung như ứ dịch, viêm, chít hẹp, từng làm phẫu thuật cắt 2 vòi tử cung; Viêm vùng chậu, nhiễm nấm chlamydia, mắc các bệnh lây truyền qua đường tình dục như lậu, giang mai… Có tình trạng tăng prolactin máu.'
+
+MERGE (o1:disease {id: 'tử_cung_dị_dạng_disease'})
+MERGE (o2:cause {id: 'bệnh_lý_ở_tử_cung_cause'})
+MERGE (o1)-[r70:isSymptomOf]->(o2)
+SET r70.text = 'Nguyên nhân vô sinh hiếm muộn ở nữ giới bao gồm:  Các bệnh lý ở tử cung như: viêm nội mạc tử cung mãn tính, tử cung có vách ngăn, có lạc nội mạc, u xơ tử cung, polyp tử cung, tử cung dị dạng, niêm mạc tử cung mỏng… Suy buồng trứng sớm; Bất thường ở vòi tử cung như ứ dịch, viêm, chít hẹp, từng làm phẫu thuật cắt 2 vòi tử cung; Viêm vùng chậu, nhiễm nấm chlamydia, mắc các bệnh lây truyền qua đường tình dục như lậu, giang mai… Có tình trạng tăng prolactin máu.'
+
+MERGE (o1:disease {id: 'niêm_mạc_tử_cung_mỏng_disease'})
+MERGE (o2:cause {id: 'bệnh_lý_ở_tử_cung_cause'})
+MERGE (o1)-[r71:isSymptomOf]->(o2)
+SET r71.text = 'Nguyên nhân vô sinh hiếm muộn ở nữ giới bao gồm:  Các bệnh lý ở tử cung như: viêm nội mạc tử cung mãn tính, tử cung có vách ngăn, có lạc nội mạc, u xơ tử cung, polyp tử cung, tử cung dị dạng, niêm mạc tử cung mỏng… Suy buồng trứng sớm; Bất thường ở vòi tử cung như ứ dịch, viêm, chít hẹp, từng làm phẫu thuật cắt 2 vòi tử cung; Viêm vùng chậu, nhiễm nấm chlamydia, mắc các bệnh lây truyền qua đường tình dục như lậu, giang mai… Có tình trạng tăng prolactin máu.'
+
+MERGE (o1:disease {id: 'suy_buồng_trứng_sớm_disease'})
+MERGE (o2:disease {id: 'vô_sinh_hiếm_muộn_disease'})
+MERGE (o1)-[r72:causes]->(o2)
+SET r72.text = 'Nguyên nhân vô sinh hiếm muộn ở nữ giới bao gồm:  Các bệnh lý ở tử cung như: viêm nội mạc tử cung mãn tính, tử cung có vách ngăn, có lạc nội mạc, u xơ tử cung, polyp tử cung, tử cung dị dạng, niêm mạc tử cung mỏng… Suy buồng trứng sớm; Bất thường ở vòi tử cung như ứ dịch, viêm, chít hẹp, từng làm phẫu thuật cắt 2 vòi tử cung; Viêm vùng chậu, nhiễm nấm chlamydia, mắc các bệnh lây truyền qua đường tình dục như lậu, giang mai… Có tình trạng tăng prolactin máu.'
+
+MERGE (o1:cause {id: 'bất_thường_ở_vòi_tử_cung_cause'})
+MERGE (o2:disease {id: 'vô_sinh_hiếm_muộn_disease'})
+MERGE (o1)-[r73:causes]->(o2)
+SET r73.text = 'Nguyên nhân vô sinh hiếm muộn ở nữ giới bao gồm:  Các bệnh lý ở tử cung như: viêm nội mạc tử cung mãn tính, tử cung có vách ngăn, có lạc nội mạc, u xơ tử cung, polyp tử cung, tử cung dị dạng, niêm mạc tử cung mỏng… Suy buồng trứng sớm; Bất thường ở vòi tử cung như ứ dịch, viêm, chít hẹp, từng làm phẫu thuật cắt 2 vòi tử cung; Viêm vùng chậu, nhiễm nấm chlamydia, mắc các bệnh lây truyền qua đường tình dục như lậu, giang mai… Có tình trạng tăng prolactin máu.'
+
+MERGE (o1:symptom {id: 'ứ_dịch_symptom'})
+MERGE (o2:cause {id: 'bất_thường_ở_vòi_tử_cung_cause'})
+MERGE (o1)-[r74:isSymptomOf]->(o2)
+SET r74.text = 'Nguyên nhân vô sinh hiếm muộn ở nữ giới bao gồm:  Các bệnh lý ở tử cung như: viêm nội mạc tử cung mãn tính, tử cung có vách ngăn, có lạc nội mạc, u xơ tử cung, polyp tử cung, tử cung dị dạng, niêm mạc tử cung mỏng… Suy buồng trứng sớm; Bất thường ở vòi tử cung như ứ dịch, viêm, chít hẹp, từng làm phẫu thuật cắt 2 vòi tử cung; Viêm vùng chậu, nhiễm nấm chlamydia, mắc các bệnh lây truyền qua đường tình dục như lậu, giang mai… Có tình trạng tăng prolactin máu.'
+
+MERGE (o1:symptom {id: 'viêm_symptom'})
+MERGE (o2:cause {id: 'bất_thường_ở_vòi_tử_cung_cause'})
+MERGE (o1)-[r75:isSymptomOf]->(o2)
+SET r75.text = 'Nguyên nhân vô sinh hiếm muộn ở nữ giới bao gồm:  Các bệnh lý ở tử cung như: viêm nội mạc tử cung mãn tính, tử cung có vách ngăn, có lạc nội mạc, u xơ tử cung, polyp tử cung, tử cung dị dạng, niêm mạc tử cung mỏng… Suy buồng trứng sớm; Bất thường ở vòi tử cung như ứ dịch, viêm, chít hẹp, từng làm phẫu thuật cắt 2 vòi tử cung; Viêm vùng chậu, nhiễm nấm chlamydia, mắc các bệnh lây truyền qua đường tình dục như lậu, giang mai… Có tình trạng tăng prolactin máu.'
+
+MERGE (o1:disease {id: 'vô_sinh_hiếm_muộn_disease'})
+MERGE (o2:lifestyle {id: 'thời_đại_lifestyle'})
+MERGE (o1)-[r76:relatedTo]->(o2)
+SET r76.text = 'Được xem là căn bệnh của thời đại, làm sao để phòng ngừa vô sinh hiếm muộn là mối quan tâm của nhiều người.'
+
+MERGE (o1:disease {id: 'vô_sinh_disease'})
+MERGE (o2:disease {id: 'bệnh_lý_di_truyền_disease'})
+MERGE (o1)-[r77:causedBy]->(o2)
+SET r77.text = 'Ngoài những bệnh lý di truyền không thể phòng ngừa có thể dẫn đến hiếm muộn, việc thay đổi lối sống, thói quen hằng ngày được cho là có tác dụng góp phần phòng tránh vô sinh như:  Thực hiện lối sống lành mạnh, không thuốc lá, hạn chế rượu bia, không sử dụng các chất kích thích, chất cấm.'
+
+MERGE (o1:disease {id: 'vô_sinh_disease'})
+MERGE (o2:lifestyle {id: 'thay_đổi_lối_sống_lifestyle'})
+MERGE (o1)-[r78:preventedBy]->(o2)
+SET r78.text = 'Ngoài những bệnh lý di truyền không thể phòng ngừa có thể dẫn đến hiếm muộn, việc thay đổi lối sống, thói quen hằng ngày được cho là có tác dụng góp phần phòng tránh vô sinh như:  Thực hiện lối sống lành mạnh, không thuốc lá, hạn chế rượu bia, không sử dụng các chất kích thích, chất cấm.'
+
+MERGE (o1:disease {id: 'vô_sinh_disease'})
+MERGE (o2:lifestyle {id: 'lối_sống_lành_mạnh_lifestyle'})
+MERGE (o1)-[r79:preventedBy]->(o2)
+SET r79.text = 'Ngoài những bệnh lý di truyền không thể phòng ngừa có thể dẫn đến hiếm muộn, việc thay đổi lối sống, thói quen hằng ngày được cho là có tác dụng góp phần phòng tránh vô sinh như:  Thực hiện lối sống lành mạnh, không thuốc lá, hạn chế rượu bia, không sử dụng các chất kích thích, chất cấm.'
+
+MERGE (o1:disease {id: 'vô_sinh_disease'})
+MERGE (o2:lifestyle {id: 'không_thuốc_lá_lifestyle'})
+MERGE (o1)-[r80:preventedBy]->(o2)
+SET r80.text = 'Ngoài những bệnh lý di truyền không thể phòng ngừa có thể dẫn đến hiếm muộn, việc thay đổi lối sống, thói quen hằng ngày được cho là có tác dụng góp phần phòng tránh vô sinh như:  Thực hiện lối sống lành mạnh, không thuốc lá, hạn chế rượu bia, không sử dụng các chất kích thích, chất cấm.'
+
+MERGE (o1:disease {id: 'vô_sinh_disease'})
+MERGE (o2:lifestyle {id: 'hạn_chế_rượu_bia_lifestyle'})
+MERGE (o1)-[r81:preventedBy]->(o2)
+SET r81.text = 'Ngoài những bệnh lý di truyền không thể phòng ngừa có thể dẫn đến hiếm muộn, việc thay đổi lối sống, thói quen hằng ngày được cho là có tác dụng góp phần phòng tránh vô sinh như:  Thực hiện lối sống lành mạnh, không thuốc lá, hạn chế rượu bia, không sử dụng các chất kích thích, chất cấm.'
+
+MERGE (o1:disease {id: 'vô_sinh_disease'})
+MERGE (o2:lifestyle {id: 'không_sử_dụng_các_chất_kích_thích_lifestyle'})
+MERGE (o1)-[r82:preventedBy]->(o2)
+SET r82.text = 'Ngoài những bệnh lý di truyền không thể phòng ngừa có thể dẫn đến hiếm muộn, việc thay đổi lối sống, thói quen hằng ngày được cho là có tác dụng góp phần phòng tránh vô sinh như:  Thực hiện lối sống lành mạnh, không thuốc lá, hạn chế rượu bia, không sử dụng các chất kích thích, chất cấm.'
+
+MERGE (o1:disease {id: 'vô_sinh_disease'})
+MERGE (o2:lifestyle {id: 'chất_cấm_lifestyle'})
+MERGE (o1)-[r83:preventedBy]->(o2)
+SET r83.text = 'Ngoài những bệnh lý di truyền không thể phòng ngừa có thể dẫn đến hiếm muộn, việc thay đổi lối sống, thói quen hằng ngày được cho là có tác dụng góp phần phòng tránh vô sinh như:  Thực hiện lối sống lành mạnh, không thuốc lá, hạn chế rượu bia, không sử dụng các chất kích thích, chất cấm.'
+
+MERGE (o1:disease {id: 'vô_sinh_disease'})
+MERGE (o2:lifestyle {id: 'luyện_tập_thể_dục_thể_thao_lifestyle'})
+MERGE (o1)-[r84:preventedBy]->(o2)
+SET r84.text = 'Luyện tập thể dục thể thao như một thói quen để nâng cao sức khỏe, vợ chồng nên chọn những bài tập đơn giản, nhẹ nhàng như yoga, bơi lội, đi bộ… không nên quá lạm dụng việc tập thể thao.'
+
+MERGE (o1:disease {id: 'vô_sinh_disease'})
+MERGE (o2:treatment {id: 'yoga_treatment'})
+MERGE (o1)-[r85:preventedBy]->(o2)
+SET r85.text = 'Luyện tập thể dục thể thao như một thói quen để nâng cao sức khỏe, vợ chồng nên chọn những bài tập đơn giản, nhẹ nhàng như yoga, bơi lội, đi bộ… không nên quá lạm dụng việc tập thể thao.'
+
+MERGE (o1:disease {id: 'vô_sinh_disease'})
+MERGE (o2:treatment {id: 'bơi_lội_treatment'})
+MERGE (o1)-[r86:preventedBy]->(o2)
+SET r86.text = 'Luyện tập thể dục thể thao như một thói quen để nâng cao sức khỏe, vợ chồng nên chọn những bài tập đơn giản, nhẹ nhàng như yoga, bơi lội, đi bộ… không nên quá lạm dụng việc tập thể thao.'
+
+MERGE (o1:disease {id: 'vô_sinh_disease'})
+MERGE (o2:treatment {id: 'đi_bộ_treatment'})
+MERGE (o1)-[r87:preventedBy]->(o2)
+SET r87.text = 'Luyện tập thể dục thể thao như một thói quen để nâng cao sức khỏe, vợ chồng nên chọn những bài tập đơn giản, nhẹ nhàng như yoga, bơi lội, đi bộ… không nên quá lạm dụng việc tập thể thao.'
+
+MERGE (o1:disease {id: 'vô_sinh_disease'})
+MERGE (o2:lifestyle {id: 'duy_trì_cân_nặng_hợp_lý_lifestyle'})
+MERGE (o1)-[r88:preventedBy]->(o2)
+SET r88.text = 'Duy trì cân nặng hợp lý, chế độ ăn đầy đủ dinh dưỡng, ăn nhiều rau, củ, trái cây, bổ sung protein, đạm… hạn chế đồ chế biến sẵn, thực phẩm chiên, rán và chứa nhiều chất phụ gia.'
+
+MERGE (o1:disease {id: 'vô_sinh_disease'})
+MERGE (o2:lifestyle {id: 'chế_độ_ăn_đầy_đủ_dinh_dưỡng_lifestyle'})
+MERGE (o1)-[r89:preventedBy]->(o2)
+SET r89.text = 'Duy trì cân nặng hợp lý, chế độ ăn đầy đủ dinh dưỡng, ăn nhiều rau, củ, trái cây, bổ sung protein, đạm… hạn chế đồ chế biến sẵn, thực phẩm chiên, rán và chứa nhiều chất phụ gia.'
+
+MERGE (o1:disease {id: 'vô_sinh_disease'})
+MERGE (o2:food {id: 'ăn_nhiều_rau_food'})
+MERGE (o1)-[r90:preventedBy]->(o2)
+SET r90.text = 'Duy trì cân nặng hợp lý, chế độ ăn đầy đủ dinh dưỡng, ăn nhiều rau, củ, trái cây, bổ sung protein, đạm… hạn chế đồ chế biến sẵn, thực phẩm chiên, rán và chứa nhiều chất phụ gia.'
+
+MERGE (o1:disease {id: 'vô_sinh_disease'})
+MERGE (o2:food {id: 'củ_food'})
+MERGE (o1)-[r91:preventedBy]->(o2)
+SET r91.text = 'Duy trì cân nặng hợp lý, chế độ ăn đầy đủ dinh dưỡng, ăn nhiều rau, củ, trái cây, bổ sung protein, đạm… hạn chế đồ chế biến sẵn, thực phẩm chiên, rán và chứa nhiều chất phụ gia.'
+
+MERGE (o1:disease {id: 'vô_sinh_disease'})
+MERGE (o2:food {id: 'trái_cây_food'})
+MERGE (o1)-[r92:preventedBy]->(o2)
+SET r92.text = 'Duy trì cân nặng hợp lý, chế độ ăn đầy đủ dinh dưỡng, ăn nhiều rau, củ, trái cây, bổ sung protein, đạm… hạn chế đồ chế biến sẵn, thực phẩm chiên, rán và chứa nhiều chất phụ gia.'
+
+MERGE (o1:disease {id: 'vô_sinh_disease'})
+MERGE (o2:food {id: 'protein_food'})
+MERGE (o1)-[r93:preventedBy]->(o2)
+SET r93.text = 'Duy trì cân nặng hợp lý, chế độ ăn đầy đủ dinh dưỡng, ăn nhiều rau, củ, trái cây, bổ sung protein, đạm… hạn chế đồ chế biến sẵn, thực phẩm chiên, rán và chứa nhiều chất phụ gia.'
+
+MERGE (o1:disease {id: 'vô_sinh_disease'})
+MERGE (o2:food {id: 'đạm_food'})
+MERGE (o1)-[r94:preventedBy]->(o2)
+SET r94.text = 'Duy trì cân nặng hợp lý, chế độ ăn đầy đủ dinh dưỡng, ăn nhiều rau, củ, trái cây, bổ sung protein, đạm… hạn chế đồ chế biến sẵn, thực phẩm chiên, rán và chứa nhiều chất phụ gia.'
+
+MERGE (o1:disease {id: 'vô_sinh_disease'})
+MERGE (o2:food {id: 'đồ_chế_biến_sẵn_food'})
+MERGE (o1)-[r95:preventedBy]->(o2)
+SET r95.text = 'Duy trì cân nặng hợp lý, chế độ ăn đầy đủ dinh dưỡng, ăn nhiều rau, củ, trái cây, bổ sung protein, đạm… hạn chế đồ chế biến sẵn, thực phẩm chiên, rán và chứa nhiều chất phụ gia.'
+
+MERGE (o1:disease {id: 'vô_sinh_disease'})
+MERGE (o2:food {id: 'thực_phẩm_chiên_food'})
+MERGE (o1)-[r96:preventedBy]->(o2)
+SET r96.text = 'Duy trì cân nặng hợp lý, chế độ ăn đầy đủ dinh dưỡng, ăn nhiều rau, củ, trái cây, bổ sung protein, đạm… hạn chế đồ chế biến sẵn, thực phẩm chiên, rán và chứa nhiều chất phụ gia.'
+
+MERGE (o1:disease {id: 'vô_sinh_disease'})
+MERGE (o2:food {id: 'rán_food'})
+MERGE (o1)-[r97:preventedBy]->(o2)
+SET r97.text = 'Duy trì cân nặng hợp lý, chế độ ăn đầy đủ dinh dưỡng, ăn nhiều rau, củ, trái cây, bổ sung protein, đạm… hạn chế đồ chế biến sẵn, thực phẩm chiên, rán và chứa nhiều chất phụ gia.'
+
+MERGE (o1:disease {id: 'vô_sinh_disease'})
+MERGE (o2:food {id: 'chất_phụ_gia_food'})
+MERGE (o1)-[r98:preventedBy]->(o2)
+SET r98.text = 'Duy trì cân nặng hợp lý, chế độ ăn đầy đủ dinh dưỡng, ăn nhiều rau, củ, trái cây, bổ sung protein, đạm… hạn chế đồ chế biến sẵn, thực phẩm chiên, rán và chứa nhiều chất phụ gia.'
+
+MERGE (o1:disease {id: 'vô_sinh_disease'})
+MERGE (o2:lifestyle {id: 'quan_hệ_tình_dục_lành_mạnh_lifestyle'})
+MERGE (o1)-[r99:preventedBy]->(o2)
+SET r99.text = 'Quan hệ tình dục lành mạnh, chế độ một vợ một chồng.'
+
+MERGE (o1:disease {id: 'vô_sinh_disease'})
+MERGE (o2:lifestyle {id: 'chế_độ_một_vợ_một_chồng_lifestyle'})
+MERGE (o1)-[r100:preventedBy]->(o2)
+SET r100.text = 'Quan hệ tình dục lành mạnh, chế độ một vợ một chồng.'
+
+MERGE (o1:disease {id: 'vô_sinh_disease'})
+MERGE (o2:treatment {id: 'nạo_phá_thai_treatment'})
+MERGE (o1)-[r101:preventedBy]->(o2)
+SET r101.text = 'Không lạm dụng việc nạo phá thai.'
+
+MERGE (o1:disease {id: 'vô_sinh_disease'})
+MERGE (o2:test {id: 'khám_vô_sinh_test'})
+MERGE (o1)-[r102:diagnosedBy]->(o2)
+SET r102.text = 'Đi khám vô sinh ngay khi gặp những vấn đề cảnh báo sức khỏe sinh sản.'
+
+MERGE (o1:disease {id: 'vô_sinh_hiếm_muộn_disease'})
+MERGE (o2:treatment {id: 'trung_tâm_hỗ_trợ_sinh_sản_bệnh_viện_đa_khoa_tâm_anh_treatment'})
+MERGE (o1)-[r103:treatedBy]->(o2)
+SET r103.text = 'Trung tâm Hỗ trợ sinh sản Bệnh viện Đa khoa Tâm Anh quy tụ đội ngũ y bác sĩ là những chuyên gia hàng đầu trong lĩnh vực điều trị vô sinh hiếm muộn, sở hữu hệ thống máy móc, trang thiết bị hiện đại, hệ thống phòng Lab siêu sạch đạt tiêu chuẩn ISO 5 nghiêm ngặt… triển khai đa dạng tất cả các kỹ thuật hỗ trợ sinh sản tiên tiến nhất hiện nay, hiện thực hóa ước mơ bồng bế con yêu “chính chủ” của hàng triệu cặp vợ chồng hiếm muộn.'
+
+MERGE (o1:disease {id: 'vô_sinh_hiếm_muộn_disease'})
+MERGE (o2:treatment {id: 'chuyên_gia_treatment'})
+MERGE (o1)-[r104:treatedBy]->(o2)
+SET r104.text = 'Trung tâm Hỗ trợ sinh sản Bệnh viện Đa khoa Tâm Anh quy tụ đội ngũ y bác sĩ là những chuyên gia hàng đầu trong lĩnh vực điều trị vô sinh hiếm muộn, sở hữu hệ thống máy móc, trang thiết bị hiện đại, hệ thống phòng Lab siêu sạch đạt tiêu chuẩn ISO 5 nghiêm ngặt… triển khai đa dạng tất cả các kỹ thuật hỗ trợ sinh sản tiên tiến nhất hiện nay, hiện thực hóa ước mơ bồng bế con yêu “chính chủ” của hàng triệu cặp vợ chồng hiếm muộn.'
+
+MERGE (o1:disease {id: 'vô_sinh_hiếm_muộn_disease'})
+MERGE (o2:treatment {id: 'trang_thiết_bị_hiện_đại_treatment'})
+MERGE (o1)-[r105:treatedBy]->(o2)
+SET r105.text = 'Trung tâm Hỗ trợ sinh sản Bệnh viện Đa khoa Tâm Anh quy tụ đội ngũ y bác sĩ là những chuyên gia hàng đầu trong lĩnh vực điều trị vô sinh hiếm muộn, sở hữu hệ thống máy móc, trang thiết bị hiện đại, hệ thống phòng Lab siêu sạch đạt tiêu chuẩn ISO 5 nghiêm ngặt… triển khai đa dạng tất cả các kỹ thuật hỗ trợ sinh sản tiên tiến nhất hiện nay, hiện thực hóa ước mơ bồng bế con yêu “chính chủ” của hàng triệu cặp vợ chồng hiếm muộn.'
+
+MERGE (o1:disease {id: 'vô_sinh_hiếm_muộn_disease'})
+MERGE (o2:treatment {id: 'phòng_lab_siêu_sạch_treatment'})
+MERGE (o1)-[r106:treatedBy]->(o2)
+SET r106.text = 'Trung tâm Hỗ trợ sinh sản Bệnh viện Đa khoa Tâm Anh quy tụ đội ngũ y bác sĩ là những chuyên gia hàng đầu trong lĩnh vực điều trị vô sinh hiếm muộn, sở hữu hệ thống máy móc, trang thiết bị hiện đại, hệ thống phòng Lab siêu sạch đạt tiêu chuẩn ISO 5 nghiêm ngặt… triển khai đa dạng tất cả các kỹ thuật hỗ trợ sinh sản tiên tiến nhất hiện nay, hiện thực hóa ước mơ bồng bế con yêu “chính chủ” của hàng triệu cặp vợ chồng hiếm muộn.'
+
+MERGE (o1:disease {id: 'vô_sinh_hiếm_muộn_disease'})
+MERGE (o2:treatment {id: 'kỹ_thuật_hỗ_trợ_sinh_sản_tiên_tiến_treatment'})
+MERGE (o1)-[r107:treatedBy]->(o2)
+SET r107.text = 'Trung tâm Hỗ trợ sinh sản Bệnh viện Đa khoa Tâm Anh quy tụ đội ngũ y bác sĩ là những chuyên gia hàng đầu trong lĩnh vực điều trị vô sinh hiếm muộn, sở hữu hệ thống máy móc, trang thiết bị hiện đại, hệ thống phòng Lab siêu sạch đạt tiêu chuẩn ISO 5 nghiêm ngặt… triển khai đa dạng tất cả các kỹ thuật hỗ trợ sinh sản tiên tiến nhất hiện nay, hiện thực hóa ước mơ bồng bế con yêu “chính chủ” của hàng triệu cặp vợ chồng hiếm muộn.'
+
+MERGE (o1:disease {id: 'vô_sinh_disease'})
+MERGE (o2:treatment {id: 'bơm_tinh_trùng_vào_buồng_tử_cung_(iui)_treatment'})
+MERGE (o1)-[r108:treatedBy]->(o2)
+SET r108.text = 'Tại Trung tâm Hỗ trợ sinh sản BVĐK Tâm Anh có nhiều phương pháp hỗ trợ sinh sản như:  Bơm tinh trùng vào buồng tử cung (IUI); Thụ tinh trong ống nghiệm (IVF); Tiêm tinh trùng vào bào tương noãn (ICSI); Trưởng thành trứng non IVM; Trữ lạnh phôi, noãn và tinh trùng: Hỗ trợ phôi thoát màng (AH); Chuyển phôi giai đoạn Blastocyst (ngày 5); Xét nghiệm di truyền tiền làm tổ (PGT); Phẫu thuật nội soi, soi buồng tử cung trong vô sinh; Phẫu thuật nội soi trong vô sinh; Phẫu thuật tạo hình trong bất thường sinh dục - vô sinh;   '
+
+MERGE (o1:disease {id: 'vô_sinh_disease'})
+MERGE (o2:treatment {id: 'thụ_tinh_trong_ống_nghiệm_(ivf)_treatment'})
+MERGE (o1)-[r109:treatedBy]->(o2)
+SET r109.text = 'Tại Trung tâm Hỗ trợ sinh sản BVĐK Tâm Anh có nhiều phương pháp hỗ trợ sinh sản như:  Bơm tinh trùng vào buồng tử cung (IUI); Thụ tinh trong ống nghiệm (IVF); Tiêm tinh trùng vào bào tương noãn (ICSI); Trưởng thành trứng non IVM; Trữ lạnh phôi, noãn và tinh trùng: Hỗ trợ phôi thoát màng (AH); Chuyển phôi giai đoạn Blastocyst (ngày 5); Xét nghiệm di truyền tiền làm tổ (PGT); Phẫu thuật nội soi, soi buồng tử cung trong vô sinh; Phẫu thuật nội soi trong vô sinh; Phẫu thuật tạo hình trong bất thường sinh dục - vô sinh;   '
+
+MERGE (o1:disease {id: 'vô_sinh_disease'})
+MERGE (o2:treatment {id: 'tiêm_tinh_trùng_vào_bào_tương_noãn_(icsi)_treatment'})
+MERGE (o1)-[r110:treatedBy]->(o2)
+SET r110.text = 'Tại Trung tâm Hỗ trợ sinh sản BVĐK Tâm Anh có nhiều phương pháp hỗ trợ sinh sản như:  Bơm tinh trùng vào buồng tử cung (IUI); Thụ tinh trong ống nghiệm (IVF); Tiêm tinh trùng vào bào tương noãn (ICSI); Trưởng thành trứng non IVM; Trữ lạnh phôi, noãn và tinh trùng: Hỗ trợ phôi thoát màng (AH); Chuyển phôi giai đoạn Blastocyst (ngày 5); Xét nghiệm di truyền tiền làm tổ (PGT); Phẫu thuật nội soi, soi buồng tử cung trong vô sinh; Phẫu thuật nội soi trong vô sinh; Phẫu thuật tạo hình trong bất thường sinh dục - vô sinh;   '
+
+MERGE (o1:disease {id: 'vô_sinh_disease'})
+MERGE (o2:treatment {id: 'trưởng_thành_trứng_non_ivm_treatment'})
+MERGE (o1)-[r111:treatedBy]->(o2)
+SET r111.text = 'Tại Trung tâm Hỗ trợ sinh sản BVĐK Tâm Anh có nhiều phương pháp hỗ trợ sinh sản như:  Bơm tinh trùng vào buồng tử cung (IUI); Thụ tinh trong ống nghiệm (IVF); Tiêm tinh trùng vào bào tương noãn (ICSI); Trưởng thành trứng non IVM; Trữ lạnh phôi, noãn và tinh trùng: Hỗ trợ phôi thoát màng (AH); Chuyển phôi giai đoạn Blastocyst (ngày 5); Xét nghiệm di truyền tiền làm tổ (PGT); Phẫu thuật nội soi, soi buồng tử cung trong vô sinh; Phẫu thuật nội soi trong vô sinh; Phẫu thuật tạo hình trong bất thường sinh dục - vô sinh;   '
+
+MERGE (o1:disease {id: 'vô_sinh_disease'})
+MERGE (o2:treatment {id: 'trữ_lạnh_phôi_treatment'})
+MERGE (o1)-[r112:treatedBy]->(o2)
+SET r112.text = 'Tại Trung tâm Hỗ trợ sinh sản BVĐK Tâm Anh có nhiều phương pháp hỗ trợ sinh sản như:  Bơm tinh trùng vào buồng tử cung (IUI); Thụ tinh trong ống nghiệm (IVF); Tiêm tinh trùng vào bào tương noãn (ICSI); Trưởng thành trứng non IVM; Trữ lạnh phôi, noãn và tinh trùng: Hỗ trợ phôi thoát màng (AH); Chuyển phôi giai đoạn Blastocyst (ngày 5); Xét nghiệm di truyền tiền làm tổ (PGT); Phẫu thuật nội soi, soi buồng tử cung trong vô sinh; Phẫu thuật nội soi trong vô sinh; Phẫu thuật tạo hình trong bất thường sinh dục - vô sinh;   '
+
+MERGE (o1:disease {id: 'vô_sinh_disease'})
+MERGE (o2:treatment {id: 'noãn_treatment'})
+MERGE (o1)-[r113:treatedBy]->(o2)
+SET r113.text = 'Tại Trung tâm Hỗ trợ sinh sản BVĐK Tâm Anh có nhiều phương pháp hỗ trợ sinh sản như:  Bơm tinh trùng vào buồng tử cung (IUI); Thụ tinh trong ống nghiệm (IVF); Tiêm tinh trùng vào bào tương noãn (ICSI); Trưởng thành trứng non IVM; Trữ lạnh phôi, noãn và tinh trùng: Hỗ trợ phôi thoát màng (AH); Chuyển phôi giai đoạn Blastocyst (ngày 5); Xét nghiệm di truyền tiền làm tổ (PGT); Phẫu thuật nội soi, soi buồng tử cung trong vô sinh; Phẫu thuật nội soi trong vô sinh; Phẫu thuật tạo hình trong bất thường sinh dục - vô sinh;   '
+
+MERGE (o1:disease {id: 'vô_sinh_disease'})
+MERGE (o2:treatment {id: 'tinh_trùng_treatment'})
+MERGE (o1)-[r114:treatedBy]->(o2)
+SET r114.text = 'Tại Trung tâm Hỗ trợ sinh sản BVĐK Tâm Anh có nhiều phương pháp hỗ trợ sinh sản như:  Bơm tinh trùng vào buồng tử cung (IUI); Thụ tinh trong ống nghiệm (IVF); Tiêm tinh trùng vào bào tương noãn (ICSI); Trưởng thành trứng non IVM; Trữ lạnh phôi, noãn và tinh trùng: Hỗ trợ phôi thoát màng (AH); Chuyển phôi giai đoạn Blastocyst (ngày 5); Xét nghiệm di truyền tiền làm tổ (PGT); Phẫu thuật nội soi, soi buồng tử cung trong vô sinh; Phẫu thuật nội soi trong vô sinh; Phẫu thuật tạo hình trong bất thường sinh dục - vô sinh;   '
+
+MERGE (o1:disease {id: 'vô_sinh_disease'})
+MERGE (o2:treatment {id: 'hỗ_trợ_phôi_thoát_màng_(ah)_treatment'})
+MERGE (o1)-[r115:treatedBy]->(o2)
+SET r115.text = 'Tại Trung tâm Hỗ trợ sinh sản BVĐK Tâm Anh có nhiều phương pháp hỗ trợ sinh sản như:  Bơm tinh trùng vào buồng tử cung (IUI); Thụ tinh trong ống nghiệm (IVF); Tiêm tinh trùng vào bào tương noãn (ICSI); Trưởng thành trứng non IVM; Trữ lạnh phôi, noãn và tinh trùng: Hỗ trợ phôi thoát màng (AH); Chuyển phôi giai đoạn Blastocyst (ngày 5); Xét nghiệm di truyền tiền làm tổ (PGT); Phẫu thuật nội soi, soi buồng tử cung trong vô sinh; Phẫu thuật nội soi trong vô sinh; Phẫu thuật tạo hình trong bất thường sinh dục - vô sinh;   '
+
+MERGE (o1:disease {id: 'vô_sinh_disease'})
+MERGE (o2:treatment {id: 'chuyển_phôi_giai_đoạn_blastocyst_(ngày_5)_treatment'})
+MERGE (o1)-[r116:treatedBy]->(o2)
+SET r116.text = 'Tại Trung tâm Hỗ trợ sinh sản BVĐK Tâm Anh có nhiều phương pháp hỗ trợ sinh sản như:  Bơm tinh trùng vào buồng tử cung (IUI); Thụ tinh trong ống nghiệm (IVF); Tiêm tinh trùng vào bào tương noãn (ICSI); Trưởng thành trứng non IVM; Trữ lạnh phôi, noãn và tinh trùng: Hỗ trợ phôi thoát màng (AH); Chuyển phôi giai đoạn Blastocyst (ngày 5); Xét nghiệm di truyền tiền làm tổ (PGT); Phẫu thuật nội soi, soi buồng tử cung trong vô sinh; Phẫu thuật nội soi trong vô sinh; Phẫu thuật tạo hình trong bất thường sinh dục - vô sinh;   '
+
+MERGE (o1:disease {id: 'vô_sinh_disease'})
+MERGE (o2:test {id: 'xét_nghiệm_di_truyền_tiền_làm_tổ_(pgt)_test'})
+MERGE (o1)-[r117:treatedBy]->(o2)
+SET r117.text = 'Tại Trung tâm Hỗ trợ sinh sản BVĐK Tâm Anh có nhiều phương pháp hỗ trợ sinh sản như:  Bơm tinh trùng vào buồng tử cung (IUI); Thụ tinh trong ống nghiệm (IVF); Tiêm tinh trùng vào bào tương noãn (ICSI); Trưởng thành trứng non IVM; Trữ lạnh phôi, noãn và tinh trùng: Hỗ trợ phôi thoát màng (AH); Chuyển phôi giai đoạn Blastocyst (ngày 5); Xét nghiệm di truyền tiền làm tổ (PGT); Phẫu thuật nội soi, soi buồng tử cung trong vô sinh; Phẫu thuật nội soi trong vô sinh; Phẫu thuật tạo hình trong bất thường sinh dục - vô sinh;   '
+
+MERGE (o1:disease {id: 'vô_sinh_disease'})
+MERGE (o2:treatment {id: 'phẫu_thuật_nội_soi_treatment'})
+MERGE (o1)-[r118:treatedBy]->(o2)
+SET r118.text = 'Tại Trung tâm Hỗ trợ sinh sản BVĐK Tâm Anh có nhiều phương pháp hỗ trợ sinh sản như:  Bơm tinh trùng vào buồng tử cung (IUI); Thụ tinh trong ống nghiệm (IVF); Tiêm tinh trùng vào bào tương noãn (ICSI); Trưởng thành trứng non IVM; Trữ lạnh phôi, noãn và tinh trùng: Hỗ trợ phôi thoát màng (AH); Chuyển phôi giai đoạn Blastocyst (ngày 5); Xét nghiệm di truyền tiền làm tổ (PGT); Phẫu thuật nội soi, soi buồng tử cung trong vô sinh; Phẫu thuật nội soi trong vô sinh; Phẫu thuật tạo hình trong bất thường sinh dục - vô sinh;   '
+
+MERGE (o1:disease {id: 'vô_sinh_disease'})
+MERGE (o2:treatment {id: 'soi_buồng_tử_cung_treatment'})
+MERGE (o1)-[r119:treatedBy]->(o2)
+SET r119.text = 'Tại Trung tâm Hỗ trợ sinh sản BVĐK Tâm Anh có nhiều phương pháp hỗ trợ sinh sản như:  Bơm tinh trùng vào buồng tử cung (IUI); Thụ tinh trong ống nghiệm (IVF); Tiêm tinh trùng vào bào tương noãn (ICSI); Trưởng thành trứng non IVM; Trữ lạnh phôi, noãn và tinh trùng: Hỗ trợ phôi thoát màng (AH); Chuyển phôi giai đoạn Blastocyst (ngày 5); Xét nghiệm di truyền tiền làm tổ (PGT); Phẫu thuật nội soi, soi buồng tử cung trong vô sinh; Phẫu thuật nội soi trong vô sinh; Phẫu thuật tạo hình trong bất thường sinh dục - vô sinh;   '
+
+MERGE (o1:disease {id: 'hiếm_muộn_disease'})
+MERGE (o2:treatment {id: 'chuyên_gia_treatment'})
+MERGE (o1)-[r120:treatedBy]->(o2)
+SET r120.text = 'Để nâng cao tỷ lệ thành công trong điều trị hiếm muộn, bên cạnh đội ngũ chuyên gia/bác sĩ giàu kinh nghiệm, phòng LAB đạt chuẩn quốc tế, trang thiết bị hiện đại, IVFTA cũng thường xuyên cập nhật kỹ thuật mới/ tiên tiến nhất trên thế giới.'
+
+MERGE (o1:disease {id: 'hiếm_muộn_disease'})
+MERGE (o2:treatment {id: 'phòng_lab_đạt_chuẩn_quốc_tế_treatment'})
+MERGE (o1)-[r121:treatedBy]->(o2)
+SET r121.text = 'Để nâng cao tỷ lệ thành công trong điều trị hiếm muộn, bên cạnh đội ngũ chuyên gia/bác sĩ giàu kinh nghiệm, phòng LAB đạt chuẩn quốc tế, trang thiết bị hiện đại, IVFTA cũng thường xuyên cập nhật kỹ thuật mới/ tiên tiến nhất trên thế giới.'
+
+MERGE (o1:disease {id: 'hiếm_muộn_disease'})
+MERGE (o2:treatment {id: 'trang_thiết_bị_hiện_đại_treatment'})
+MERGE (o1)-[r122:treatedBy]->(o2)
+SET r122.text = 'Để nâng cao tỷ lệ thành công trong điều trị hiếm muộn, bên cạnh đội ngũ chuyên gia/bác sĩ giàu kinh nghiệm, phòng LAB đạt chuẩn quốc tế, trang thiết bị hiện đại, IVFTA cũng thường xuyên cập nhật kỹ thuật mới/ tiên tiến nhất trên thế giới.'
+
+MERGE (o1:disease {id: 'hiếm_muộn_disease'})
+MERGE (o2:treatment {id: 'kỹ_thuật_mới_treatment'})
+MERGE (o1)-[r123:treatedBy]->(o2)
+SET r123.text = 'Để nâng cao tỷ lệ thành công trong điều trị hiếm muộn, bên cạnh đội ngũ chuyên gia/bác sĩ giàu kinh nghiệm, phòng LAB đạt chuẩn quốc tế, trang thiết bị hiện đại, IVFTA cũng thường xuyên cập nhật kỹ thuật mới/ tiên tiến nhất trên thế giới.'
+
+MERGE (o1:disease {id: 'hiếm_muộn_disease'})
+MERGE (o2:treatment {id: 'kỹ_thuật_tiên_tiến_treatment'})
+MERGE (o1)-[r124:treatedBy]->(o2)
+SET r124.text = 'Để nâng cao tỷ lệ thành công trong điều trị hiếm muộn, bên cạnh đội ngũ chuyên gia/bác sĩ giàu kinh nghiệm, phòng LAB đạt chuẩn quốc tế, trang thiết bị hiện đại, IVFTA cũng thường xuyên cập nhật kỹ thuật mới/ tiên tiến nhất trên thế giới.'
+
+MERGE (o1:disease {id: 'nội_mạc_tử_cung_mỏng_disease'})
+MERGE (o2:treatment {id: 'huyết_tương_giàu_tiểu_cầu_tự_thân_treatment'})
+MERGE (o1)-[r125:treatedBy]->(o2)
+SET r125.text = 'Ứng dụng nghiên cứu huyết tương giàu tiểu cầu tự thân trong điều trị nội mạc tử cung mỏng'
+
+MERGE (o1:disease {id: 'vô_sinh_disease'})
+MERGE (o2:treatment {id: 'phác_đồ_kích_thích_nhẹ_buồng_trứng_(mild_stimulation)_treatment'})
+MERGE (o1)-[r126:treatedBy]->(o2)
+SET r126.text = 'Ứng dụng phác đồ kích thích nhẹ buồng trứng (Mild Stimulation)'
+
+MERGE (o1:disease {id: 'vô_sinh_disease'})
+MERGE (o2:treatment {id: 'embryoglue®__treatment'})
+MERGE (o1)-[r127:treatedBy]->(o2)
+SET r127.text = 'Ứng dụng EmbryoGlue® – loại keo đặc biệt giúp gắn kết phôi thai vào lòng tử cung'
+
+MERGE (o1:disease {id: 'vô_sinh_disease'})
+MERGE (o2:test {id: 'era_(endometrial_receptivity_array)_test_test'})
+MERGE (o1)-[r128:diagnosedBy]->(o2)
+SET r128.text = 'Áp dụng ERA (Endometrial receptivity array) test'

@@ -1,0 +1,715 @@
+
+MERGE (o1:disease {id: 'bệnh_suy_giãn_tĩnh_mạch_chi_dưới_disease'})
+MERGE (o2:disease {id: 'huyết_khối_tĩnh_mạch_nông_và_sâu_disease'})
+MERGE (o1)-[r0:isSymptomOf]->(o2)
+SET r0.text = 'Bệnh suy giãn tĩnh mạch chi dưới diễn tiến âm thầm, có thể gây các biến chứng huyết khối tĩnh mạch nông và sâu gây đau, phù nề hai chi dưới.'
+
+MERGE (o1:disease {id: 'huyết_khối_tĩnh_mạch_nông_và_sâu_disease'})
+MERGE (o2:symptom {id: 'đau_symptom'})
+MERGE (o1)-[r1:isSymptomOf]->(o2)
+SET r1.text = 'Bệnh suy giãn tĩnh mạch chi dưới diễn tiến âm thầm, có thể gây các biến chứng huyết khối tĩnh mạch nông và sâu gây đau, phù nề hai chi dưới.'
+
+MERGE (o1:disease {id: 'huyết_khối_tĩnh_mạch_nông_và_sâu_disease'})
+MERGE (o2:symptom {id: 'phù_nề_hai_chi_dưới_symptom'})
+MERGE (o1)-[r2:isSymptomOf]->(o2)
+SET r2.text = 'Bệnh suy giãn tĩnh mạch chi dưới diễn tiến âm thầm, có thể gây các biến chứng huyết khối tĩnh mạch nông và sâu gây đau, phù nề hai chi dưới.'
+
+MERGE (o1:disease {id: 'bệnh_suy_giãn_tĩnh_mạch_chi_dưới_disease'})
+MERGE (o2:symptom {id: 'chảy_máu_symptom'})
+MERGE (o1)-[r3:isSymptomOf]->(o2)
+SET r3.text = 'Nếu không được điều trị sớm, bệnh có thể gây chảy máu, loét chân không lành&#8230;, ảnh hưởng đến chất lượng sống người bệnh.'
+
+MERGE (o1:disease {id: 'bệnh_suy_giãn_tĩnh_mạch_chi_dưới_disease'})
+MERGE (o2:symptom {id: 'loét_chân_không_lành_symptom'})
+MERGE (o1)-[r4:isSymptomOf]->(o2)
+SET r4.text = 'Nếu không được điều trị sớm, bệnh có thể gây chảy máu, loét chân không lành&#8230;, ảnh hưởng đến chất lượng sống người bệnh.'
+
+MERGE (o1:disease {id: 'giãn_tĩnh_mạch_chi_dưới_disease'})
+MERGE (o2:lifestyle {id: 'làm_việc_lifestyle'})
+MERGE (o1)-[r5:associatedWith]->(o2)
+SET r5.text = 'Thống kê của Tổ chức Y tế Thế giới (WHO) cho thấy, giãn tĩnh mạch chi dưới thường gặp ở khoảng 35% người đang làm việc, khoảng 50% người đã nghỉ hưu, tỷ lệ mắc bệnh ở nữ giới cao gấp 3 lần nam giới.'
+
+MERGE (o1:disease {id: 'giãn_tĩnh_mạch_chi_dưới_disease'})
+MERGE (o2:lifestyle {id: 'nghỉ_hưu_lifestyle'})
+MERGE (o1)-[r6:associatedWith]->(o2)
+SET r6.text = 'Thống kê của Tổ chức Y tế Thế giới (WHO) cho thấy, giãn tĩnh mạch chi dưới thường gặp ở khoảng 35% người đang làm việc, khoảng 50% người đã nghỉ hưu, tỷ lệ mắc bệnh ở nữ giới cao gấp 3 lần nam giới.'
+
+MERGE (o1:disease {id: 'giãn_tĩnh_mạch_chi_dưới_disease'})
+MERGE (o2:lifestyle {id: 'nữ_giới_lifestyle'})
+MERGE (o1)-[r7:associatedWith]->(o2)
+SET r7.text = 'Thống kê của Tổ chức Y tế Thế giới (WHO) cho thấy, giãn tĩnh mạch chi dưới thường gặp ở khoảng 35% người đang làm việc, khoảng 50% người đã nghỉ hưu, tỷ lệ mắc bệnh ở nữ giới cao gấp 3 lần nam giới.'
+
+MERGE (o1:disease {id: 'giãn_tĩnh_mạch_chi_dưới_disease'})
+MERGE (o2:lifestyle {id: 'nam_giới_lifestyle'})
+MERGE (o1)-[r8:associatedWith]->(o2)
+SET r8.text = 'Thống kê của Tổ chức Y tế Thế giới (WHO) cho thấy, giãn tĩnh mạch chi dưới thường gặp ở khoảng 35% người đang làm việc, khoảng 50% người đã nghỉ hưu, tỷ lệ mắc bệnh ở nữ giới cao gấp 3 lần nam giới.'
+
+MERGE (o1:disease {id: 'bệnh_suy_giãn_tĩnh_mạch_chi_dưới_disease'})
+MERGE (o2:symptom {id: 'triệu_chứng_âm_thầm_symptom'})
+MERGE (o1)-[r9:isSymptomOf]->(o2)
+SET r9.text = 'Các triệu chứng của bệnh thường âm thầm, không rõ ràng nên không được quan tâm chăm sóc đúng mức.'
+
+MERGE (o1:disease {id: 'suy_giãn_tĩnh_mạch_chi_dưới_disease'})
+MERGE (o2:symptom {id: 'máu_ứ_lại_ở_chân_symptom'})
+MERGE (o1)-[r10:isSymptomOf]->(o2)
+SET r10.text = 'Suy giãn tĩnh mạch chi dưới hay còn gọi giãn tĩnh mạch chânlà tình trạng máu ở hệ thống tĩnh mạch bị ứ lại ở chân, không đi lên tĩnh mạch chủ để trở về tim như bình thường.'
+
+MERGE (o1:disease {id: 'suy_giãn_tĩnh_mạch_chi_dưới_disease'})
+MERGE (o2:organ {id: 'hệ_thống_tĩnh_mạch_organ'})
+MERGE (o1)-[r11:affects]->(o2)
+SET r11.text = 'Suy giãn tĩnh mạch chi dưới hay còn gọi giãn tĩnh mạch chânlà tình trạng máu ở hệ thống tĩnh mạch bị ứ lại ở chân, không đi lên tĩnh mạch chủ để trở về tim như bình thường.'
+
+MERGE (o1:disease {id: 'suy_giãn_tĩnh_mạch_chi_dưới_disease'})
+MERGE (o2:organ {id: 'tĩnh_mạch_chủ_organ'})
+MERGE (o1)-[r12:affects]->(o2)
+SET r12.text = 'Suy giãn tĩnh mạch chi dưới hay còn gọi giãn tĩnh mạch chânlà tình trạng máu ở hệ thống tĩnh mạch bị ứ lại ở chân, không đi lên tĩnh mạch chủ để trở về tim như bình thường.'
+
+MERGE (o1:symptom {id: 'tăng_áp_lực_thủy_tĩnh_symptom'})
+MERGE (o2:disease {id: 'suy_giãn_tĩnh_mạch_chi_dưới_disease'})
+MERGE (o1)-[r13:isSymptomOf]->(o2)
+SET r13.text = 'Tình trạng này làm tăng áp lực thủy tĩnh trong lòng tĩnh mạch khiến tĩnh mạch giãn ra.'
+
+MERGE (o1:symptom {id: 'tăng_áp_lực_thủy_tĩnh_symptom'})
+MERGE (o2:organ {id: 'tĩnh_mạch_organ'})
+MERGE (o1)-[r14:affects]->(o2)
+SET r14.text = 'Tình trạng này làm tăng áp lực thủy tĩnh trong lòng tĩnh mạch khiến tĩnh mạch giãn ra.'
+
+MERGE (o1:disease {id: 'suy_giãn_tĩnh_mạch_chi_dưới_disease'})
+MERGE (o2:treatment {id: 'điều_trị_kịp_thời_và_đúng_cách_treatment'})
+MERGE (o1)-[r15:treatedBy]->(o2)
+SET r15.text = 'Nếu không được can thiệp điều trị kịp thời và đúng cách, bệnh tiếp tục tiến triển sẽ làm dòng máu động mạch tới nuôi chân cũng bị giảm theo.'
+
+MERGE (o1:disease {id: 'suy_giãn_tĩnh_mạch_chi_dưới_disease'})
+MERGE (o2:organ {id: 'dòng_máu_động_mạch_organ'})
+MERGE (o1)-[r16:affects]->(o2)
+SET r16.text = 'Nếu không được can thiệp điều trị kịp thời và đúng cách, bệnh tiếp tục tiến triển sẽ làm dòng máu động mạch tới nuôi chân cũng bị giảm theo.'
+
+MERGE (o1:disease {id: 'suy_giãn_tĩnh_mạch_chi_dưới_disease'})
+MERGE (o2:symptom {id: 'cảm_giác_nặng_chân_symptom'})
+MERGE (o1)-[r17:isSymptomOf]->(o2)
+SET r17.text = 'Hậu quả là người bệnh sẽ gặp cảm giác nặng chân, nhức mỏi, phù chân, tê dị cảm, kiến bò, chuột rút về ban đêm…'
+
+MERGE (o1:disease {id: 'suy_giãn_tĩnh_mạch_chi_dưới_disease'})
+MERGE (o2:symptom {id: 'nhức_mỏi_symptom'})
+MERGE (o1)-[r18:isSymptomOf]->(o2)
+SET r18.text = 'Hậu quả là người bệnh sẽ gặp cảm giác nặng chân, nhức mỏi, phù chân, tê dị cảm, kiến bò, chuột rút về ban đêm…'
+
+MERGE (o1:disease {id: 'suy_giãn_tĩnh_mạch_chi_dưới_disease'})
+MERGE (o2:symptom {id: 'phù_chân_symptom'})
+MERGE (o1)-[r19:isSymptomOf]->(o2)
+SET r19.text = 'Hậu quả là người bệnh sẽ gặp cảm giác nặng chân, nhức mỏi, phù chân, tê dị cảm, kiến bò, chuột rút về ban đêm…'
+
+MERGE (o1:disease {id: 'suy_giãn_tĩnh_mạch_chi_dưới_disease'})
+MERGE (o2:symptom {id: 'tê_dị_cảm_symptom'})
+MERGE (o1)-[r20:isSymptomOf]->(o2)
+SET r20.text = 'Hậu quả là người bệnh sẽ gặp cảm giác nặng chân, nhức mỏi, phù chân, tê dị cảm, kiến bò, chuột rút về ban đêm…'
+
+MERGE (o1:disease {id: 'suy_giãn_tĩnh_mạch_chi_dưới_disease'})
+MERGE (o2:symptom {id: 'kiến_bò_symptom'})
+MERGE (o1)-[r21:isSymptomOf]->(o2)
+SET r21.text = 'Hậu quả là người bệnh sẽ gặp cảm giác nặng chân, nhức mỏi, phù chân, tê dị cảm, kiến bò, chuột rút về ban đêm…'
+
+MERGE (o1:disease {id: 'suy_giãn_tĩnh_mạch_chi_dưới_disease'})
+MERGE (o2:symptom {id: 'chuột_rút_về_ban_đêm_symptom'})
+MERGE (o1)-[r22:isSymptomOf]->(o2)
+SET r22.text = 'Hậu quả là người bệnh sẽ gặp cảm giác nặng chân, nhức mỏi, phù chân, tê dị cảm, kiến bò, chuột rút về ban đêm…'
+
+MERGE (o1:disease {id: 'suy_giãn_tĩnh_mạch_chi_dưới_disease'})
+MERGE (o2:symptom {id: 'rối_loạn_tưới_máu_nuôi_dưỡng_chân_symptom'})
+MERGE (o1)-[r23:isSymptomOf]->(o2)
+SET r23.text = 'Thậm chí, những trường hợp nặng hơn các rối loạn tưới máu nuôi dưỡng chân có thể dẫn đến các biến chứng như chàm da, loét chân không lành… khiến việc điều trị kéo dài và khó khăn hơn.'
+
+MERGE (o1:disease {id: 'suy_giãn_tĩnh_mạch_chi_dưới_disease'})
+MERGE (o2:symptom {id: 'chàm_da_symptom'})
+MERGE (o1)-[r24:isSymptomOf]->(o2)
+SET r24.text = 'Thậm chí, những trường hợp nặng hơn các rối loạn tưới máu nuôi dưỡng chân có thể dẫn đến các biến chứng như chàm da, loét chân không lành… khiến việc điều trị kéo dài và khó khăn hơn.'
+
+MERGE (o1:disease {id: 'suy_giãn_tĩnh_mạch_chi_dưới_disease'})
+MERGE (o2:symptom {id: 'loét_chân_không_lành_symptom'})
+MERGE (o1)-[r25:isSymptomOf]->(o2)
+SET r25.text = 'Thậm chí, những trường hợp nặng hơn các rối loạn tưới máu nuôi dưỡng chân có thể dẫn đến các biến chứng như chàm da, loét chân không lành… khiến việc điều trị kéo dài và khó khăn hơn.'
+
+MERGE (o1:disease {id: 'suy_giãn_tĩnh_mạch_disease'})
+MERGE (o2:lifestyle {id: 'người_trẻ_lifestyle'})
+MERGE (o1)-[r26:associatedWith]->(o2)
+SET r26.text = 'Suy giãn tĩnh mạch ở người trẻ có xu hướng tăng cao trong thời gian gần đây.'
+
+MERGE (o1:organ {id: 'dòng_máu_tĩnh_mạch_organ'})
+MERGE (o2:organ {id: 'chân_organ'})
+MERGE (o1)-[r27:locatedIn]->(o2)
+SET r27.text = 'Ở cơ chế bình thường, dòng máu tĩnh mạch từ chân trở về tim được duy trì theo một chiều từ dưới đi lên (ngược với chiều trọng lực khi ở tư thế đứng) là nhờ hệ thống van tĩnh mạch, lực hút được tạo ra do hoạt động của tim, cơ thành ngực và lực ép của khối cơ cẳng chân.'
+
+MERGE (o1:organ {id: 'dòng_máu_tĩnh_mạch_organ'})
+MERGE (o2:organ {id: 'tim_organ'})
+MERGE (o1)-[r28:locatedIn]->(o2)
+SET r28.text = 'Ở cơ chế bình thường, dòng máu tĩnh mạch từ chân trở về tim được duy trì theo một chiều từ dưới đi lên (ngược với chiều trọng lực khi ở tư thế đứng) là nhờ hệ thống van tĩnh mạch, lực hút được tạo ra do hoạt động của tim, cơ thành ngực và lực ép của khối cơ cẳng chân.'
+
+MERGE (o1:organ {id: 'hệ_thống_van_tĩnh_mạch_organ'})
+MERGE (o2:organ {id: 'dòng_máu_tĩnh_mạch_organ'})
+MERGE (o1)-[r29:affects]->(o2)
+SET r29.text = 'Ở cơ chế bình thường, dòng máu tĩnh mạch từ chân trở về tim được duy trì theo một chiều từ dưới đi lên (ngược với chiều trọng lực khi ở tư thế đứng) là nhờ hệ thống van tĩnh mạch, lực hút được tạo ra do hoạt động của tim, cơ thành ngực và lực ép của khối cơ cẳng chân.'
+
+MERGE (o1:organ {id: 'tim_organ'})
+MERGE (o2:organ {id: 'dòng_máu_tĩnh_mạch_organ'})
+MERGE (o1)-[r30:affects]->(o2)
+SET r30.text = 'Ở cơ chế bình thường, dòng máu tĩnh mạch từ chân trở về tim được duy trì theo một chiều từ dưới đi lên (ngược với chiều trọng lực khi ở tư thế đứng) là nhờ hệ thống van tĩnh mạch, lực hút được tạo ra do hoạt động của tim, cơ thành ngực và lực ép của khối cơ cẳng chân.'
+
+MERGE (o1:organ {id: 'cơ_thành_ngực_organ'})
+MERGE (o2:organ {id: 'dòng_máu_tĩnh_mạch_organ'})
+MERGE (o1)-[r31:affects]->(o2)
+SET r31.text = 'Ở cơ chế bình thường, dòng máu tĩnh mạch từ chân trở về tim được duy trì theo một chiều từ dưới đi lên (ngược với chiều trọng lực khi ở tư thế đứng) là nhờ hệ thống van tĩnh mạch, lực hút được tạo ra do hoạt động của tim, cơ thành ngực và lực ép của khối cơ cẳng chân.'
+
+MERGE (o1:organ {id: 'lực_ép_của_khối_cơ_cẳng_chân_organ'})
+MERGE (o2:organ {id: 'dòng_máu_tĩnh_mạch_organ'})
+MERGE (o1)-[r32:affects]->(o2)
+SET r32.text = 'Ở cơ chế bình thường, dòng máu tĩnh mạch từ chân trở về tim được duy trì theo một chiều từ dưới đi lên (ngược với chiều trọng lực khi ở tư thế đứng) là nhờ hệ thống van tĩnh mạch, lực hút được tạo ra do hoạt động của tim, cơ thành ngực và lực ép của khối cơ cẳng chân.'
+
+MERGE (o1:lifestyle {id: 'giữ_tư_thế_đứng_lâu_lifestyle'})
+MERGE (o2:disease {id: 'suy_giãn_tĩnh_mạch_chi_dưới_disease'})
+MERGE (o1)-[r33:aggravatedBy]->(o2)
+SET r33.text = 'Các tác động làm ảnh hưởng đến cơ chế duy trì dòng máu một chiều này như giữ tư thế đứng lâu, chèn ép tĩnh mạch vùng chậu, ít vận động cơ cẳng chân… lâu ngày sẽ làm cho van một chiều không còn giữ được chức năng, khiến thành tĩnh giãn ra, yếu đi và tạo ra dòng máu trào ngược qua van theo trục các tĩnh mạch hiển lớn, hiển bé hay tĩnh mạch sâu theo chiều ngược xuống chân.'
+
+MERGE (o1:lifestyle {id: 'chèn_ép_tĩnh_mạch_vùng_chậu_lifestyle'})
+MERGE (o2:disease {id: 'suy_giãn_tĩnh_mạch_chi_dưới_disease'})
+MERGE (o1)-[r34:aggravatedBy]->(o2)
+SET r34.text = 'Các tác động làm ảnh hưởng đến cơ chế duy trì dòng máu một chiều này như giữ tư thế đứng lâu, chèn ép tĩnh mạch vùng chậu, ít vận động cơ cẳng chân… lâu ngày sẽ làm cho van một chiều không còn giữ được chức năng, khiến thành tĩnh giãn ra, yếu đi và tạo ra dòng máu trào ngược qua van theo trục các tĩnh mạch hiển lớn, hiển bé hay tĩnh mạch sâu theo chiều ngược xuống chân.'
+
+MERGE (o1:lifestyle {id: 'ít_vận_động_cơ_cẳng_chân_lifestyle'})
+MERGE (o2:disease {id: 'suy_giãn_tĩnh_mạch_chi_dưới_disease'})
+MERGE (o1)-[r35:aggravatedBy]->(o2)
+SET r35.text = 'Các tác động làm ảnh hưởng đến cơ chế duy trì dòng máu một chiều này như giữ tư thế đứng lâu, chèn ép tĩnh mạch vùng chậu, ít vận động cơ cẳng chân… lâu ngày sẽ làm cho van một chiều không còn giữ được chức năng, khiến thành tĩnh giãn ra, yếu đi và tạo ra dòng máu trào ngược qua van theo trục các tĩnh mạch hiển lớn, hiển bé hay tĩnh mạch sâu theo chiều ngược xuống chân.'
+
+MERGE (o1:organ {id: 'van_một_chiều_organ'})
+MERGE (o2:organ {id: 'dòng_máu_tĩnh_mạch_organ'})
+MERGE (o1)-[r36:affects]->(o2)
+SET r36.text = 'Các tác động làm ảnh hưởng đến cơ chế duy trì dòng máu một chiều này như giữ tư thế đứng lâu, chèn ép tĩnh mạch vùng chậu, ít vận động cơ cẳng chân… lâu ngày sẽ làm cho van một chiều không còn giữ được chức năng, khiến thành tĩnh giãn ra, yếu đi và tạo ra dòng máu trào ngược qua van theo trục các tĩnh mạch hiển lớn, hiển bé hay tĩnh mạch sâu theo chiều ngược xuống chân.'
+
+MERGE (o1:organ {id: 'thành_tĩnh_organ'})
+MERGE (o2:organ {id: 'dòng_máu_tĩnh_mạch_organ'})
+MERGE (o1)-[r37:affects]->(o2)
+SET r37.text = 'Các tác động làm ảnh hưởng đến cơ chế duy trì dòng máu một chiều này như giữ tư thế đứng lâu, chèn ép tĩnh mạch vùng chậu, ít vận động cơ cẳng chân… lâu ngày sẽ làm cho van một chiều không còn giữ được chức năng, khiến thành tĩnh giãn ra, yếu đi và tạo ra dòng máu trào ngược qua van theo trục các tĩnh mạch hiển lớn, hiển bé hay tĩnh mạch sâu theo chiều ngược xuống chân.'
+
+MERGE (o1:symptom {id: 'dòng_máu_trào_ngược_symptom'})
+MERGE (o2:disease {id: 'suy_giãn_tĩnh_mạch_chi_dưới_disease'})
+MERGE (o1)-[r38:isSymptomOf]->(o2)
+SET r38.text = 'Các tác động làm ảnh hưởng đến cơ chế duy trì dòng máu một chiều này như giữ tư thế đứng lâu, chèn ép tĩnh mạch vùng chậu, ít vận động cơ cẳng chân… lâu ngày sẽ làm cho van một chiều không còn giữ được chức năng, khiến thành tĩnh giãn ra, yếu đi và tạo ra dòng máu trào ngược qua van theo trục các tĩnh mạch hiển lớn, hiển bé hay tĩnh mạch sâu theo chiều ngược xuống chân.'
+
+MERGE (o1:symptom {id: 'dòng_máu_trào_ngược_symptom'})
+MERGE (o2:organ {id: 'tĩnh_mạch_hiển_lớn_organ'})
+MERGE (o1)-[r39:affects]->(o2)
+SET r39.text = 'Các tác động làm ảnh hưởng đến cơ chế duy trì dòng máu một chiều này như giữ tư thế đứng lâu, chèn ép tĩnh mạch vùng chậu, ít vận động cơ cẳng chân… lâu ngày sẽ làm cho van một chiều không còn giữ được chức năng, khiến thành tĩnh giãn ra, yếu đi và tạo ra dòng máu trào ngược qua van theo trục các tĩnh mạch hiển lớn, hiển bé hay tĩnh mạch sâu theo chiều ngược xuống chân.'
+
+MERGE (o1:symptom {id: 'dòng_máu_trào_ngược_symptom'})
+MERGE (o2:organ {id: 'tĩnh_mạch_hiển_bé_organ'})
+MERGE (o1)-[r40:affects]->(o2)
+SET r40.text = 'Các tác động làm ảnh hưởng đến cơ chế duy trì dòng máu một chiều này như giữ tư thế đứng lâu, chèn ép tĩnh mạch vùng chậu, ít vận động cơ cẳng chân… lâu ngày sẽ làm cho van một chiều không còn giữ được chức năng, khiến thành tĩnh giãn ra, yếu đi và tạo ra dòng máu trào ngược qua van theo trục các tĩnh mạch hiển lớn, hiển bé hay tĩnh mạch sâu theo chiều ngược xuống chân.'
+
+MERGE (o1:symptom {id: 'dòng_máu_trào_ngược_symptom'})
+MERGE (o2:organ {id: 'tĩnh_mạch_sâu_organ'})
+MERGE (o1)-[r41:affects]->(o2)
+SET r41.text = 'Các tác động làm ảnh hưởng đến cơ chế duy trì dòng máu một chiều này như giữ tư thế đứng lâu, chèn ép tĩnh mạch vùng chậu, ít vận động cơ cẳng chân… lâu ngày sẽ làm cho van một chiều không còn giữ được chức năng, khiến thành tĩnh giãn ra, yếu đi và tạo ra dòng máu trào ngược qua van theo trục các tĩnh mạch hiển lớn, hiển bé hay tĩnh mạch sâu theo chiều ngược xuống chân.'
+
+MERGE (o1:symptom {id: 'dòng_trào_ngược_symptom'})
+MERGE (o2:organ {id: 'tĩnh_mạch_lớn_organ'})
+MERGE (o1)-[r42:affects]->(o2)
+SET r42.text = 'Dòng trào ngược gây tăng áp lực trong lòng trục tĩnh mạch lớn, rồi truyền qua các tĩnh mạch nhỏ làm giãn cả tĩnh mạch lớn và nhỏ.'
+
+MERGE (o1:symptom {id: 'dòng_trào_ngược_symptom'})
+MERGE (o2:organ {id: 'tĩnh_mạch_nhỏ_organ'})
+MERGE (o1)-[r43:affects]->(o2)
+SET r43.text = 'Dòng trào ngược gây tăng áp lực trong lòng trục tĩnh mạch lớn, rồi truyền qua các tĩnh mạch nhỏ làm giãn cả tĩnh mạch lớn và nhỏ.'
+
+MERGE (o1:disease {id: 'suy_van_tĩnh_mạch_disease'})
+MERGE (o2:organ {id: 'chân_organ'})
+MERGE (o1)-[r44:affects]->(o2)
+SET r44.text = 'Suy van tĩnh mạch có thể xảy ra ở từng vùng hoặc toàn bộ chân.'
+
+MERGE (o1:disease {id: 'suy_giãn_tĩnh_mạch_chân_disease'})
+MERGE (o2:lifestyle {id: 'nữ_giới_lifestyle'})
+MERGE (o1)-[r45:associatedWith]->(o2)
+SET r45.text = 'Thống kê ở người trưởng thành, khoảng 73% nữ giới và 56% nam giới bị suy giãn tĩnh mạch chân.'
+
+MERGE (o1:disease {id: 'suy_giãn_tĩnh_mạch_chân_disease'})
+MERGE (o2:lifestyle {id: 'nam_giới_lifestyle'})
+MERGE (o1)-[r46:associatedWith]->(o2)
+SET r46.text = 'Thống kê ở người trưởng thành, khoảng 73% nữ giới và 56% nam giới bị suy giãn tĩnh mạch chân.'
+
+MERGE (o1:cause {id: 'nội_tiết_tố_nữ_cause'})
+MERGE (o2:disease {id: 'suy_giãn_tĩnh_mạch_chân_disease'})
+MERGE (o1)-[r47:causedBy]->(o2)
+SET r47.text = 'Nữ giới có tỷ lệ mắc cao hơn, nguyên nhân được xác định là do ảnh hưởng của nội tiết tố nữ, thai nghén gây chèn ép cản trở máu tĩnh mạch.'
+
+MERGE (o1:cause {id: 'thai_nghén_cause'})
+MERGE (o2:disease {id: 'suy_giãn_tĩnh_mạch_chân_disease'})
+MERGE (o1)-[r48:causedBy]->(o2)
+SET r48.text = 'Nữ giới có tỷ lệ mắc cao hơn, nguyên nhân được xác định là do ảnh hưởng của nội tiết tố nữ, thai nghén gây chèn ép cản trở máu tĩnh mạch.'
+
+MERGE (o1:lifestyle {id: 'bán_hàng_lifestyle'})
+MERGE (o2:disease {id: 'suy_giãn_tĩnh_mạch_chân_disease'})
+MERGE (o1)-[r49:aggravatedBy]->(o2)
+SET r49.text = 'Một số ngành nghề, công việc như bán hàng, thợ dệt, may, chế biến thủy, hải sản, giáo viên… đòi hỏi phải đứng lâu có tỷ lệ người mắc bệnh cao hơn.'
+
+MERGE (o1:lifestyle {id: 'thợ_dệt_lifestyle'})
+MERGE (o2:disease {id: 'suy_giãn_tĩnh_mạch_chân_disease'})
+MERGE (o1)-[r50:aggravatedBy]->(o2)
+SET r50.text = 'Một số ngành nghề, công việc như bán hàng, thợ dệt, may, chế biến thủy, hải sản, giáo viên… đòi hỏi phải đứng lâu có tỷ lệ người mắc bệnh cao hơn.'
+
+MERGE (o1:lifestyle {id: 'may_lifestyle'})
+MERGE (o2:disease {id: 'suy_giãn_tĩnh_mạch_chân_disease'})
+MERGE (o1)-[r51:aggravatedBy]->(o2)
+SET r51.text = 'Một số ngành nghề, công việc như bán hàng, thợ dệt, may, chế biến thủy, hải sản, giáo viên… đòi hỏi phải đứng lâu có tỷ lệ người mắc bệnh cao hơn.'
+
+MERGE (o1:lifestyle {id: 'chế_biến_thủy__hải_sản_lifestyle'})
+MERGE (o2:disease {id: 'suy_giãn_tĩnh_mạch_chân_disease'})
+MERGE (o1)-[r52:aggravatedBy]->(o2)
+SET r52.text = 'Một số ngành nghề, công việc như bán hàng, thợ dệt, may, chế biến thủy, hải sản, giáo viên… đòi hỏi phải đứng lâu có tỷ lệ người mắc bệnh cao hơn.'
+
+MERGE (o1:lifestyle {id: 'giáo_viên_lifestyle'})
+MERGE (o2:disease {id: 'suy_giãn_tĩnh_mạch_chân_disease'})
+MERGE (o1)-[r53:aggravatedBy]->(o2)
+SET r53.text = 'Một số ngành nghề, công việc như bán hàng, thợ dệt, may, chế biến thủy, hải sản, giáo viên… đòi hỏi phải đứng lâu có tỷ lệ người mắc bệnh cao hơn.'
+
+MERGE (o1:lifestyle {id: 'đứng_lâu_lifestyle'})
+MERGE (o2:disease {id: 'suy_giãn_tĩnh_mạch_chân_disease'})
+MERGE (o1)-[r54:aggravatedBy]->(o2)
+SET r54.text = 'Một số ngành nghề, công việc như bán hàng, thợ dệt, may, chế biến thủy, hải sản, giáo viên… đòi hỏi phải đứng lâu có tỷ lệ người mắc bệnh cao hơn.'
+
+MERGE (o1:lifestyle {id: 'béo_phì_lifestyle'})
+MERGE (o2:disease {id: 'giãn_tĩnh_mạch_disease'})
+MERGE (o1)-[r55:aggravatedBy]->(o2)
+SET r55.text = 'Người béo phì, ít vận động hoặc làm việc mang vác nặng… cũng dễ bị giãn tĩnh mạch.'
+
+MERGE (o1:lifestyle {id: 'ít_vận_động_lifestyle'})
+MERGE (o2:disease {id: 'giãn_tĩnh_mạch_disease'})
+MERGE (o1)-[r56:aggravatedBy]->(o2)
+SET r56.text = 'Người béo phì, ít vận động hoặc làm việc mang vác nặng… cũng dễ bị giãn tĩnh mạch.'
+
+MERGE (o1:symptom {id: 'biểu_hiện_bệnh_symptom'})
+MERGE (o2:disease {id: 'giãn_tĩnh_mạch_disease'})
+MERGE (o1)-[r57:isSymptomOf]->(o2)
+SET r57.text = 'Ở giai đoạn đầu, biểu hiện bệnh thường không rõ ràng và thoáng qua.'
+
+MERGE (o1:symptom {id: 'cảm_giác_nặng_chân_symptom'})
+MERGE (o2:disease {id: 'giãn_tĩnh_mạch_disease'})
+MERGE (o1)-[r58:isSymptomOf]->(o2)
+SET r58.text = 'Người bệnh có cảm giác nặng chân, có thể thấy giày dép chật hơn bình thường.'
+
+MERGE (o1:symptom {id: 'giày_dép_chật_symptom'})
+MERGE (o2:disease {id: 'giãn_tĩnh_mạch_disease'})
+MERGE (o1)-[r59:isSymptomOf]->(o2)
+SET r59.text = 'Người bệnh có cảm giác nặng chân, có thể thấy giày dép chật hơn bình thường.'
+
+MERGE (o1:symptom {id: 'chân_dễ_mỏi_symptom'})
+MERGE (o2:disease {id: 'giãn_tĩnh_mạch_disease'})
+MERGE (o1)-[r60:isSymptomOf]->(o2)
+SET r60.text = 'Trường hợp nặng hơn, người bệnh có thể thấy chân dễ mỏi, phù nhẹ khi đứng lâu ngồi nhiều, cảm giác như bị kim châm hay kiến bò vùng cẳng chân, chuột rút vào ban đêm…'
+
+MERGE (o1:symptom {id: 'phù_nhẹ_symptom'})
+MERGE (o2:disease {id: 'giãn_tĩnh_mạch_disease'})
+MERGE (o1)-[r61:isSymptomOf]->(o2)
+SET r61.text = 'Trường hợp nặng hơn, người bệnh có thể thấy chân dễ mỏi, phù nhẹ khi đứng lâu ngồi nhiều, cảm giác như bị kim châm hay kiến bò vùng cẳng chân, chuột rút vào ban đêm…'
+
+MERGE (o1:symptom {id: 'cảm_giác_như_bị_kim_châm_symptom'})
+MERGE (o2:disease {id: 'giãn_tĩnh_mạch_disease'})
+MERGE (o1)-[r62:isSymptomOf]->(o2)
+SET r62.text = 'Trường hợp nặng hơn, người bệnh có thể thấy chân dễ mỏi, phù nhẹ khi đứng lâu ngồi nhiều, cảm giác như bị kim châm hay kiến bò vùng cẳng chân, chuột rút vào ban đêm…'
+
+MERGE (o1:symptom {id: 'kiến_bò_vùng_cẳng_chân_symptom'})
+MERGE (o2:disease {id: 'giãn_tĩnh_mạch_disease'})
+MERGE (o1)-[r63:isSymptomOf]->(o2)
+SET r63.text = 'Trường hợp nặng hơn, người bệnh có thể thấy chân dễ mỏi, phù nhẹ khi đứng lâu ngồi nhiều, cảm giác như bị kim châm hay kiến bò vùng cẳng chân, chuột rút vào ban đêm…'
+
+MERGE (o1:symptom {id: 'chuột_rút_symptom'})
+MERGE (o2:disease {id: 'giãn_tĩnh_mạch_disease'})
+MERGE (o1)-[r64:isSymptomOf]->(o2)
+SET r64.text = 'Trường hợp nặng hơn, người bệnh có thể thấy chân dễ mỏi, phù nhẹ khi đứng lâu ngồi nhiều, cảm giác như bị kim châm hay kiến bò vùng cẳng chân, chuột rút vào ban đêm…'
+
+MERGE (o1:symptom {id: 'mạch_máu_nhỏ_li_ti_trên_bề_mặt_da_như_mạng_nhện_symptom'})
+MERGE (o2:disease {id: 'giãn_tĩnh_mạch_disease'})
+MERGE (o1)-[r65:isSymptomOf]->(o2)
+SET r65.text = 'Người bệnh cũng có thể nhìn thấy mạch máu nhỏ li ti trên bề mặt da như mạng nhện (spider vein) hay lớn hơn và sâu hơn như dạng lưới ở lớp dưới da.'
+
+MERGE (o1:symptom {id: 'mạch_máu_lớn_hơn_và_sâu_hơn_như_dạng_lưới_ở_lớp_dưới_da_symptom'})
+MERGE (o2:disease {id: 'giãn_tĩnh_mạch_disease'})
+MERGE (o1)-[r66:isSymptomOf]->(o2)
+SET r66.text = 'Người bệnh cũng có thể nhìn thấy mạch máu nhỏ li ti trên bề mặt da như mạng nhện (spider vein) hay lớn hơn và sâu hơn như dạng lưới ở lớp dưới da.'
+
+MERGE (o1:symptom {id: 'các_tĩnh_mạch_giãn_chưa_nhiều_symptom'})
+MERGE (o2:disease {id: 'giãn_tĩnh_mạch_disease'})
+MERGE (o1)-[r67:isSymptomOf]->(o2)
+SET r67.text = 'Các biểu hiện trên có thể mất đi khi người bệnh nghỉ ngơi, các tĩnh mạch giãn chưa nhiều, lúc giãn lúc không nên người bệnh ít chú ý và dễ bỏ qua.'
+
+MERGE (o1:symptom {id: 'lúc_giãn_lúc_không_symptom'})
+MERGE (o2:disease {id: 'giãn_tĩnh_mạch_disease'})
+MERGE (o1)-[r68:isSymptomOf]->(o2)
+SET r68.text = 'Các biểu hiện trên có thể mất đi khi người bệnh nghỉ ngơi, các tĩnh mạch giãn chưa nhiều, lúc giãn lúc không nên người bệnh ít chú ý và dễ bỏ qua.'
+
+MERGE (o1:symptom {id: 'phù_ở_mắt_cá_symptom'})
+MERGE (o2:disease {id: 'giãn_tĩnh_mạch_disease'})
+MERGE (o1)-[r69:isSymptomOf]->(o2)
+SET r69.text = 'Vào giai đoạn tiến triển, chân người bệnh bắt đầu có biểu hiện phù ở mắt cá hay bàn chân.'
+
+MERGE (o1:symptom {id: 'phù_ở_bàn_chân_symptom'})
+MERGE (o2:disease {id: 'giãn_tĩnh_mạch_disease'})
+MERGE (o1)-[r70:isSymptomOf]->(o2)
+SET r70.text = 'Vào giai đoạn tiến triển, chân người bệnh bắt đầu có biểu hiện phù ở mắt cá hay bàn chân.'
+
+MERGE (o1:symptom {id: 'thay_đổi_màu_sắc_da_symptom'})
+MERGE (o2:disease {id: 'giãn_tĩnh_mạch_disease'})
+MERGE (o1)-[r71:isSymptomOf]->(o2)
+SET r71.text = 'Vùng cẳng chân xuất hiện thay đổi màu sắc da, biểu hiện của loạn dưỡng do máu tĩnh mạch ứ lâu ngày.'
+
+MERGE (o1:symptom {id: 'loạn_dưỡng_symptom'})
+MERGE (o2:disease {id: 'giãn_tĩnh_mạch_disease'})
+MERGE (o1)-[r72:isSymptomOf]->(o2)
+SET r72.text = 'Vùng cẳng chân xuất hiện thay đổi màu sắc da, biểu hiện của loạn dưỡng do máu tĩnh mạch ứ lâu ngày.'
+
+MERGE (o1:symptom {id: 'cảm_giác_đau_tức_chân_symptom'})
+MERGE (o2:disease {id: 'giãn_tĩnh_mạch_disease'})
+MERGE (o1)-[r73:isSymptomOf]->(o2)
+SET r73.text = 'Các tĩnh mạch căng giãn gây cảm giác đau tức chân, máu thoát ra ngoài mạch gây phù chân.'
+
+MERGE (o1:symptom {id: 'phù_chân_symptom'})
+MERGE (o2:disease {id: 'giãn_tĩnh_mạch_disease'})
+MERGE (o1)-[r74:isSymptomOf]->(o2)
+SET r74.text = 'Các tĩnh mạch căng giãn gây cảm giác đau tức chân, máu thoát ra ngoài mạch gây phù chân.'
+
+MERGE (o1:symptom {id: 'các_búi_tĩnh_mạch_nổi_to_rõ_trên_da_symptom'})
+MERGE (o2:disease {id: 'giãn_tĩnh_mạch_disease'})
+MERGE (o1)-[r75:isSymptomOf]->(o2)
+SET r75.text = 'Hiện tượng này không mất đi khi nghỉ ngơi, trường hợp nặng hơn có thể thấy các búi tĩnh mạch nổi to rõ trên da thường xuyên, các mảng máu bầm trên da…'
+
+MERGE (o1:symptom {id: 'các_mảng_máu_bầm_trên_da_symptom'})
+MERGE (o2:disease {id: 'giãn_tĩnh_mạch_disease'})
+MERGE (o1)-[r76:isSymptomOf]->(o2)
+SET r76.text = 'Hiện tượng này không mất đi khi nghỉ ngơi, trường hợp nặng hơn có thể thấy các búi tĩnh mạch nổi to rõ trên da thường xuyên, các mảng máu bầm trên da…'
+
+MERGE (o1:symptom {id: 'tĩnh_mạch_nông_giãn_to_thành_búi_symptom'})
+MERGE (o2:disease {id: 'giãn_tĩnh_mạch_disease'})
+MERGE (o1)-[r77:isSymptomOf]->(o2)
+SET r77.text = 'Khi giãn tĩnh mạch bước vào giai đoạn biến chứng, tĩnh mạch nông giãn to thành búi, bị viêm tạo huyết khối trong lòng.'
+
+MERGE (o1:symptom {id: 'viêm_tạo_huyết_khối_symptom'})
+MERGE (o2:disease {id: 'giãn_tĩnh_mạch_disease'})
+MERGE (o1)-[r78:isSymptomOf]->(o2)
+SET r78.text = 'Khi giãn tĩnh mạch bước vào giai đoạn biến chứng, tĩnh mạch nông giãn to thành búi, bị viêm tạo huyết khối trong lòng.'
+
+MERGE (o1:symptom {id: 'loét_symptom'})
+MERGE (o2:disease {id: 'giãn_tĩnh_mạch_disease'})
+MERGE (o1)-[r79:isSymptomOf]->(o2)
+SET r79.text = 'Kết hợp với tình trạng loét do thiểu dưỡng có thể tạo nên những ổ loét, nhiễm trùng&#8230;'
+
+MERGE (o1:symptom {id: 'nhiễm_trùng_symptom'})
+MERGE (o2:disease {id: 'giãn_tĩnh_mạch_disease'})
+MERGE (o1)-[r80:isSymptomOf]->(o2)
+SET r80.text = 'Kết hợp với tình trạng loét do thiểu dưỡng có thể tạo nên những ổ loét, nhiễm trùng&#8230;'
+
+MERGE (o1:symptom {id: 'c1_symptom'})
+MERGE (o2:disease {id: 'giãn_tĩnh_mạch_disease'})
+MERGE (o1)-[r81:isSymptomOf]->(o2)
+SET r81.text = 'Hệ thống được áp dụng phân chia theo CAEP, trong đó giai đoạn tiến triển bệnh và mức độ nặng trên lâm sàng được phân thành C1-C6 như sau:  C1: Giãn tĩnh mạch mạng nhện hay dạng lưới C2: Giãn tĩnh mạch lớn dưới da &gt;3mm C3: Phù C4: Biến đổi cấu trúc da và mô dưới da (chàm) C5: Loét có thể lành C6: Loét không lành'
+
+MERGE (o1:symptom {id: 'giãn_tĩnh_mạch_mạng_nhện_symptom'})
+MERGE (o2:disease {id: 'giãn_tĩnh_mạch_disease'})
+MERGE (o1)-[r82:isSymptomOf]->(o2)
+SET r82.text = 'Hệ thống được áp dụng phân chia theo CAEP, trong đó giai đoạn tiến triển bệnh và mức độ nặng trên lâm sàng được phân thành C1-C6 như sau:  C1: Giãn tĩnh mạch mạng nhện hay dạng lưới C2: Giãn tĩnh mạch lớn dưới da &gt;3mm C3: Phù C4: Biến đổi cấu trúc da và mô dưới da (chàm) C5: Loét có thể lành C6: Loét không lành'
+
+MERGE (o1:symptom {id: 'giãn_tĩnh_mạch_dạng_lưới_symptom'})
+MERGE (o2:disease {id: 'giãn_tĩnh_mạch_disease'})
+MERGE (o1)-[r83:isSymptomOf]->(o2)
+SET r83.text = 'Hệ thống được áp dụng phân chia theo CAEP, trong đó giai đoạn tiến triển bệnh và mức độ nặng trên lâm sàng được phân thành C1-C6 như sau:  C1: Giãn tĩnh mạch mạng nhện hay dạng lưới C2: Giãn tĩnh mạch lớn dưới da &gt;3mm C3: Phù C4: Biến đổi cấu trúc da và mô dưới da (chàm) C5: Loét có thể lành C6: Loét không lành'
+
+MERGE (o1:symptom {id: 'c2_symptom'})
+MERGE (o2:disease {id: 'giãn_tĩnh_mạch_disease'})
+MERGE (o1)-[r84:isSymptomOf]->(o2)
+SET r84.text = 'Hệ thống được áp dụng phân chia theo CAEP, trong đó giai đoạn tiến triển bệnh và mức độ nặng trên lâm sàng được phân thành C1-C6 như sau:  C1: Giãn tĩnh mạch mạng nhện hay dạng lưới C2: Giãn tĩnh mạch lớn dưới da &gt;3mm C3: Phù C4: Biến đổi cấu trúc da và mô dưới da (chàm) C5: Loét có thể lành C6: Loét không lành'
+
+MERGE (o1:symptom {id: 'giãn_tĩnh_mạch_lớn_dưới_da_symptom'})
+MERGE (o2:disease {id: 'giãn_tĩnh_mạch_disease'})
+MERGE (o1)-[r85:isSymptomOf]->(o2)
+SET r85.text = 'Hệ thống được áp dụng phân chia theo CAEP, trong đó giai đoạn tiến triển bệnh và mức độ nặng trên lâm sàng được phân thành C1-C6 như sau:  C1: Giãn tĩnh mạch mạng nhện hay dạng lưới C2: Giãn tĩnh mạch lớn dưới da &gt;3mm C3: Phù C4: Biến đổi cấu trúc da và mô dưới da (chàm) C5: Loét có thể lành C6: Loét không lành'
+
+MERGE (o1:symptom {id: 'c3_symptom'})
+MERGE (o2:disease {id: 'giãn_tĩnh_mạch_disease'})
+MERGE (o1)-[r86:isSymptomOf]->(o2)
+SET r86.text = 'Hệ thống được áp dụng phân chia theo CAEP, trong đó giai đoạn tiến triển bệnh và mức độ nặng trên lâm sàng được phân thành C1-C6 như sau:  C1: Giãn tĩnh mạch mạng nhện hay dạng lưới C2: Giãn tĩnh mạch lớn dưới da &gt;3mm C3: Phù C4: Biến đổi cấu trúc da và mô dưới da (chàm) C5: Loét có thể lành C6: Loét không lành'
+
+MERGE (o1:symptom {id: 'phù_symptom'})
+MERGE (o2:disease {id: 'giãn_tĩnh_mạch_disease'})
+MERGE (o1)-[r87:isSymptomOf]->(o2)
+SET r87.text = 'Hệ thống được áp dụng phân chia theo CAEP, trong đó giai đoạn tiến triển bệnh và mức độ nặng trên lâm sàng được phân thành C1-C6 như sau:  C1: Giãn tĩnh mạch mạng nhện hay dạng lưới C2: Giãn tĩnh mạch lớn dưới da &gt;3mm C3: Phù C4: Biến đổi cấu trúc da và mô dưới da (chàm) C5: Loét có thể lành C6: Loét không lành'
+
+MERGE (o1:symptom {id: 'c4_symptom'})
+MERGE (o2:disease {id: 'giãn_tĩnh_mạch_disease'})
+MERGE (o1)-[r88:isSymptomOf]->(o2)
+SET r88.text = 'Hệ thống được áp dụng phân chia theo CAEP, trong đó giai đoạn tiến triển bệnh và mức độ nặng trên lâm sàng được phân thành C1-C6 như sau:  C1: Giãn tĩnh mạch mạng nhện hay dạng lưới C2: Giãn tĩnh mạch lớn dưới da &gt;3mm C3: Phù C4: Biến đổi cấu trúc da và mô dưới da (chàm) C5: Loét có thể lành C6: Loét không lành'
+
+MERGE (o1:symptom {id: 'biến_đổi_cấu_trúc_da_symptom'})
+MERGE (o2:disease {id: 'giãn_tĩnh_mạch_disease'})
+MERGE (o1)-[r89:isSymptomOf]->(o2)
+SET r89.text = 'Hệ thống được áp dụng phân chia theo CAEP, trong đó giai đoạn tiến triển bệnh và mức độ nặng trên lâm sàng được phân thành C1-C6 như sau:  C1: Giãn tĩnh mạch mạng nhện hay dạng lưới C2: Giãn tĩnh mạch lớn dưới da &gt;3mm C3: Phù C4: Biến đổi cấu trúc da và mô dưới da (chàm) C5: Loét có thể lành C6: Loét không lành'
+
+MERGE (o1:symptom {id: 'biến_đổi_cấu_trúc_mô_dưới_da_symptom'})
+MERGE (o2:disease {id: 'giãn_tĩnh_mạch_disease'})
+MERGE (o1)-[r90:isSymptomOf]->(o2)
+SET r90.text = 'Hệ thống được áp dụng phân chia theo CAEP, trong đó giai đoạn tiến triển bệnh và mức độ nặng trên lâm sàng được phân thành C1-C6 như sau:  C1: Giãn tĩnh mạch mạng nhện hay dạng lưới C2: Giãn tĩnh mạch lớn dưới da &gt;3mm C3: Phù C4: Biến đổi cấu trúc da và mô dưới da (chàm) C5: Loét có thể lành C6: Loét không lành'
+
+MERGE (o1:symptom {id: 'c5_symptom'})
+MERGE (o2:disease {id: 'giãn_tĩnh_mạch_disease'})
+MERGE (o1)-[r91:isSymptomOf]->(o2)
+SET r91.text = 'Hệ thống được áp dụng phân chia theo CAEP, trong đó giai đoạn tiến triển bệnh và mức độ nặng trên lâm sàng được phân thành C1-C6 như sau:  C1: Giãn tĩnh mạch mạng nhện hay dạng lưới C2: Giãn tĩnh mạch lớn dưới da &gt;3mm C3: Phù C4: Biến đổi cấu trúc da và mô dưới da (chàm) C5: Loét có thể lành C6: Loét không lành'
+
+MERGE (o1:symptom {id: 'loét_có_thể_lành_symptom'})
+MERGE (o2:disease {id: 'giãn_tĩnh_mạch_disease'})
+MERGE (o1)-[r92:isSymptomOf]->(o2)
+SET r92.text = 'Hệ thống được áp dụng phân chia theo CAEP, trong đó giai đoạn tiến triển bệnh và mức độ nặng trên lâm sàng được phân thành C1-C6 như sau:  C1: Giãn tĩnh mạch mạng nhện hay dạng lưới C2: Giãn tĩnh mạch lớn dưới da &gt;3mm C3: Phù C4: Biến đổi cấu trúc da và mô dưới da (chàm) C5: Loét có thể lành C6: Loét không lành'
+
+MERGE (o1:symptom {id: 'c6_symptom'})
+MERGE (o2:disease {id: 'giãn_tĩnh_mạch_disease'})
+MERGE (o1)-[r93:isSymptomOf]->(o2)
+SET r93.text = 'Hệ thống được áp dụng phân chia theo CAEP, trong đó giai đoạn tiến triển bệnh và mức độ nặng trên lâm sàng được phân thành C1-C6 như sau:  C1: Giãn tĩnh mạch mạng nhện hay dạng lưới C2: Giãn tĩnh mạch lớn dưới da &gt;3mm C3: Phù C4: Biến đổi cấu trúc da và mô dưới da (chàm) C5: Loét có thể lành C6: Loét không lành'
+
+MERGE (o1:symptom {id: 'loét_không_lành_symptom'})
+MERGE (o2:disease {id: 'giãn_tĩnh_mạch_disease'})
+MERGE (o1)-[r94:isSymptomOf]->(o2)
+SET r94.text = 'Hệ thống được áp dụng phân chia theo CAEP, trong đó giai đoạn tiến triển bệnh và mức độ nặng trên lâm sàng được phân thành C1-C6 như sau:  C1: Giãn tĩnh mạch mạng nhện hay dạng lưới C2: Giãn tĩnh mạch lớn dưới da &gt;3mm C3: Phù C4: Biến đổi cấu trúc da và mô dưới da (chàm) C5: Loét có thể lành C6: Loét không lành'
+
+MERGE (o1:disease {id: 'suy_giãn_tĩnh_mạch_disease'})
+MERGE (o2:test {id: 'khám_lâm_sàng_test'})
+MERGE (o1)-[r95:diagnosedBy]->(o2)
+SET r95.text = 'Khám lâm sàng: Suy giãn tĩnh mạch có thể được chẩn đoán qua khai thác yếu tố nguy cơ, các triệu chứng của người bệnh.'
+
+MERGE (o1:disease {id: 'suy_giãn_tĩnh_mạch_disease'})
+MERGE (o2:test {id: 'khai_thác_yếu_tố_nguy_cơ_test'})
+MERGE (o1)-[r96:diagnosedBy]->(o2)
+SET r96.text = 'Khám lâm sàng: Suy giãn tĩnh mạch có thể được chẩn đoán qua khai thác yếu tố nguy cơ, các triệu chứng của người bệnh.'
+
+MERGE (o1:disease {id: 'suy_giãn_tĩnh_mạch_disease'})
+MERGE (o2:symptom {id: 'các_triệu_chứng_symptom'})
+MERGE (o1)-[r97:diagnosedBy]->(o2)
+SET r97.text = 'Khám lâm sàng: Suy giãn tĩnh mạch có thể được chẩn đoán qua khai thác yếu tố nguy cơ, các triệu chứng của người bệnh.'
+
+MERGE (o1:symptom {id: 'tĩnh_mạch_giãn_ra_symptom'})
+MERGE (o2:disease {id: 'suy_giãn_tĩnh_mạch_disease'})
+MERGE (o1)-[r98:isSymptomOf]->(o2)
+SET r98.text = 'Ở người bệnh có mô dưới da mỏng, có thể nhìn và sờ thấy tĩnh mạch giãn ra và căng nhanh khi chuyển từ tư thế nằm sang đứng.'
+
+MERGE (o1:symptom {id: 'tĩnh_mạch_căng_nhanh_symptom'})
+MERGE (o2:disease {id: 'suy_giãn_tĩnh_mạch_disease'})
+MERGE (o1)-[r99:isSymptomOf]->(o2)
+SET r99.text = 'Ở người bệnh có mô dưới da mỏng, có thể nhìn và sờ thấy tĩnh mạch giãn ra và căng nhanh khi chuyển từ tư thế nằm sang đứng.'
+
+MERGE (o1:disease {id: 'suy_giãn_tĩnh_mạch_disease'})
+MERGE (o2:test {id: 'siêu_âm_doppler_mạch_máu_test'})
+MERGE (o1)-[r100:diagnosedBy]->(o2)
+SET r100.text = 'Siêu âm Doppler mạch máu: Siêu âm xác định chẩn đoán khi ghi nhận dòng trào ngược qua van tĩnh mạch với thời gian kéo dài &gt;0.5 giây ở tĩnh mạch hiển và tĩnh mạch sâu ở cẳng chân hoặc &gt;0.1 giây ở tĩnh mạch đùi khoeo.'
+
+MERGE (o1:symptom {id: 'dòng_trào_ngược_qua_van_tĩnh_mạch_symptom'})
+MERGE (o2:disease {id: 'suy_giãn_tĩnh_mạch_disease'})
+MERGE (o1)-[r101:isSymptomOf]->(o2)
+SET r101.text = 'Siêu âm Doppler mạch máu: Siêu âm xác định chẩn đoán khi ghi nhận dòng trào ngược qua van tĩnh mạch với thời gian kéo dài &gt;0.5 giây ở tĩnh mạch hiển và tĩnh mạch sâu ở cẳng chân hoặc &gt;0.1 giây ở tĩnh mạch đùi khoeo.'
+
+MERGE (o1:organ {id: 'tĩnh_mạch_hiển_organ'})
+MERGE (o2:organ {id: 'cẳng_chân_organ'})
+MERGE (o1)-[r102:locatedIn]->(o2)
+SET r102.text = 'Siêu âm Doppler mạch máu: Siêu âm xác định chẩn đoán khi ghi nhận dòng trào ngược qua van tĩnh mạch với thời gian kéo dài &gt;0.5 giây ở tĩnh mạch hiển và tĩnh mạch sâu ở cẳng chân hoặc &gt;0.1 giây ở tĩnh mạch đùi khoeo.'
+
+MERGE (o1:organ {id: 'tĩnh_mạch_sâu_organ'})
+MERGE (o2:organ {id: 'cẳng_chân_organ'})
+MERGE (o1)-[r103:locatedIn]->(o2)
+SET r103.text = 'Siêu âm Doppler mạch máu: Siêu âm xác định chẩn đoán khi ghi nhận dòng trào ngược qua van tĩnh mạch với thời gian kéo dài &gt;0.5 giây ở tĩnh mạch hiển và tĩnh mạch sâu ở cẳng chân hoặc &gt;0.1 giây ở tĩnh mạch đùi khoeo.'
+
+MERGE (o1:organ {id: 'tĩnh_mạch_đùi_khoeo_organ'})
+MERGE (o2:organ {id: 'đùi_organ'})
+MERGE (o1)-[r104:locatedIn]->(o2)
+SET r104.text = 'Siêu âm Doppler mạch máu: Siêu âm xác định chẩn đoán khi ghi nhận dòng trào ngược qua van tĩnh mạch với thời gian kéo dài &gt;0.5 giây ở tĩnh mạch hiển và tĩnh mạch sâu ở cẳng chân hoặc &gt;0.1 giây ở tĩnh mạch đùi khoeo.'
+
+MERGE (o1:disease {id: 'suy_giãn_tĩnh_mạch_disease'})
+MERGE (o2:test {id: 'siêu_âm_test'})
+MERGE (o1)-[r105:treatedBy]->(o2)
+SET r105.text = 'Siêu âm có thể xác định tổn thương của van tĩnh mạch hiển lớn, hiển bé, tĩnh mạch sâu và các van tĩnh mạch xuyên để giúp lựa chọn kỹ thuật điều trị phù hợp.'
+
+MERGE (o1:organ {id: 'van_tĩnh_mạch_hiển_lớn_organ'})
+MERGE (o2:organ {id: 'chân_organ'})
+MERGE (o1)-[r106:locatedIn]->(o2)
+SET r106.text = 'Siêu âm có thể xác định tổn thương của van tĩnh mạch hiển lớn, hiển bé, tĩnh mạch sâu và các van tĩnh mạch xuyên để giúp lựa chọn kỹ thuật điều trị phù hợp.'
+
+MERGE (o1:organ {id: 'van_tĩnh_mạch_hiển_bé_organ'})
+MERGE (o2:organ {id: 'chân_organ'})
+MERGE (o1)-[r107:locatedIn]->(o2)
+SET r107.text = 'Siêu âm có thể xác định tổn thương của van tĩnh mạch hiển lớn, hiển bé, tĩnh mạch sâu và các van tĩnh mạch xuyên để giúp lựa chọn kỹ thuật điều trị phù hợp.'
+
+MERGE (o1:organ {id: 'van_tĩnh_mạch_sâu_organ'})
+MERGE (o2:organ {id: 'chân_organ'})
+MERGE (o1)-[r108:locatedIn]->(o2)
+SET r108.text = 'Siêu âm có thể xác định tổn thương của van tĩnh mạch hiển lớn, hiển bé, tĩnh mạch sâu và các van tĩnh mạch xuyên để giúp lựa chọn kỹ thuật điều trị phù hợp.'
+
+MERGE (o1:disease {id: 'giãn_tĩnh_mạch_chân_disease'})
+MERGE (o2:treatment {id: 'điều_trị_nội_khoa__phẫu_thuật_hoặc_laser_hay_sóng_cao_tần_nội_mạch_treatment'})
+MERGE (o1)-[r109:treatedBy]->(o2)
+SET r109.text = 'Tại Trung tâm Tim mạch, BVĐK Tâm Anh, việc thăm khám, chẩn đoán giãn tĩnh mạch chân được thực hiện với trang thiết bị hiện đại, kết hợp phác đồ điều trị “cá thể hóa”, áp dụng nhiều kỹ thuật cao trong điều trị như: Điều trị nội khoa, phẫu thuật hoặc laser hay sóng cao tần nội mạch nhằm loại bỏ tĩnh mạch nông bị bệnh… giúp bệnh nhân thoát khỏi đau đớn và ngăn ngừa những biến chứng nguy hiểm.'
+
+MERGE (o1:disease {id: 'giãn_tĩnh_mạch_chân_disease'})
+MERGE (o2:symptom {id: 'đau_đớn_symptom'})
+MERGE (o1)-[r110:isSymptomOf]->(o2)
+SET r110.text = 'Tại Trung tâm Tim mạch, BVĐK Tâm Anh, việc thăm khám, chẩn đoán giãn tĩnh mạch chân được thực hiện với trang thiết bị hiện đại, kết hợp phác đồ điều trị “cá thể hóa”, áp dụng nhiều kỹ thuật cao trong điều trị như: Điều trị nội khoa, phẫu thuật hoặc laser hay sóng cao tần nội mạch nhằm loại bỏ tĩnh mạch nông bị bệnh… giúp bệnh nhân thoát khỏi đau đớn và ngăn ngừa những biến chứng nguy hiểm.'
+
+MERGE (o1:disease {id: 'giãn_tĩnh_mạch_chân_disease'})
+MERGE (o2:symptom {id: 'biến_chứng_nguy_hiểm_symptom'})
+MERGE (o1)-[r111:isSymptomOf]->(o2)
+SET r111.text = 'Tại Trung tâm Tim mạch, BVĐK Tâm Anh, việc thăm khám, chẩn đoán giãn tĩnh mạch chân được thực hiện với trang thiết bị hiện đại, kết hợp phác đồ điều trị “cá thể hóa”, áp dụng nhiều kỹ thuật cao trong điều trị như: Điều trị nội khoa, phẫu thuật hoặc laser hay sóng cao tần nội mạch nhằm loại bỏ tĩnh mạch nông bị bệnh… giúp bệnh nhân thoát khỏi đau đớn và ngăn ngừa những biến chứng nguy hiểm.'
+
+MERGE (o1:treatment {id: 'daflon__ginko_biloba__rutin_c_treatment'})
+MERGE (o2:disease {id: 'giãn_tĩnh_mạch_chân_disease'})
+MERGE (o1)-[r112:treatedBy]->(o2)
+SET r112.text = 'Các loại thuốc làm tăng độ vững bền thành tĩnh mạch như daflon, ginko biloba, rutin C giúp cải thiện triệu chứng và làm chậm quá trình tiến triển bệnh.'
+
+MERGE (o1:treatment {id: 'daflon__ginko_biloba__rutin_c_treatment'})
+MERGE (o2:symptom {id: 'cải_thiện_triệu_chứng_symptom'})
+MERGE (o1)-[r113:isSymptomOf]->(o2)
+SET r113.text = 'Các loại thuốc làm tăng độ vững bền thành tĩnh mạch như daflon, ginko biloba, rutin C giúp cải thiện triệu chứng và làm chậm quá trình tiến triển bệnh.'
+
+MERGE (o1:treatment {id: 'daflon__ginko_biloba__rutin_c_treatment'})
+MERGE (o2:symptom {id: 'làm_chậm_quá_trình_tiến_triển_bệnh_symptom'})
+MERGE (o1)-[r114:isSymptomOf]->(o2)
+SET r114.text = 'Các loại thuốc làm tăng độ vững bền thành tĩnh mạch như daflon, ginko biloba, rutin C giúp cải thiện triệu chứng và làm chậm quá trình tiến triển bệnh.'
+
+MERGE (o1:treatment {id: 'các_thuốc_này_treatment'})
+MERGE (o2:disease {id: 'giãn_tĩnh_mạch_chân_disease'})
+MERGE (o1)-[r115:treatedBy]->(o2)
+SET r115.text = 'Tuy nhiên, các thuốc này chỉ có tác dụng trong giai đoạn đầu của bệnh, hỗ trợ ổn định sau các điều trị laser hay sóng cao tần nội tĩnh mạch.'
+
+MERGE (o1:treatment {id: 'vật_lý_trị_liệu_treatment'})
+MERGE (o2:disease {id: 'giãn_tĩnh_mạch_chân_disease'})
+MERGE (o1)-[r116:treatedBy]->(o2)
+SET r116.text = 'Vật lý trị liệu với túi hơi tạo lực ép ngắt quãng theo tầng cùng với tập vận động cơ cẳng chân giúp tạo lưu thông tĩnh mạch tốt hơn, tăng cường vững bền thành mạch là những kỹ thuật cải thiện triệu chứng cũng như tình trạng bệnh.'
+
+MERGE (o1:treatment {id: 'vật_lý_trị_liệu_treatment'})
+MERGE (o2:symptom {id: 'cải_thiện_triệu_chứng_symptom'})
+MERGE (o1)-[r117:isSymptomOf]->(o2)
+SET r117.text = 'Vật lý trị liệu với túi hơi tạo lực ép ngắt quãng theo tầng cùng với tập vận động cơ cẳng chân giúp tạo lưu thông tĩnh mạch tốt hơn, tăng cường vững bền thành mạch là những kỹ thuật cải thiện triệu chứng cũng như tình trạng bệnh.'
+
+MERGE (o1:treatment {id: 'vật_lý_trị_liệu_treatment'})
+MERGE (o2:symptom {id: 'cải_thiện_tình_trạng_bệnh_symptom'})
+MERGE (o1)-[r118:isSymptomOf]->(o2)
+SET r118.text = 'Vật lý trị liệu với túi hơi tạo lực ép ngắt quãng theo tầng cùng với tập vận động cơ cẳng chân giúp tạo lưu thông tĩnh mạch tốt hơn, tăng cường vững bền thành mạch là những kỹ thuật cải thiện triệu chứng cũng như tình trạng bệnh.'
+
+MERGE (o1:disease {id: 'suy_giãn_tĩnh_mạch_nông_disease'})
+MERGE (o2:treatment {id: 'phẫu_thuật_hoặc_laser_hay_sóng_cao_tần_nội_mạch_treatment'})
+MERGE (o1)-[r119:treatedBy]->(o2)
+SET r119.text = 'Suy giãn tĩnh mạch nông mức độ từ C2 đến C6 theo phân độ mô tả ở trên có chỉ định phẫu thuật hoặc laser hay sóng cao tần nội mạch nhằm mục đích loại bỏ tĩnh mạch nông bị bệnh.'
+
+MERGE (o1:disease {id: 'suy_giãn_tĩnh_mạch_nông_disease'})
+MERGE (o2:organ {id: 'tĩnh_mạch_nông_bị_bệnh_organ'})
+MERGE (o1)-[r120:isSymptomOf]->(o2)
+SET r120.text = 'Suy giãn tĩnh mạch nông mức độ từ C2 đến C6 theo phân độ mô tả ở trên có chỉ định phẫu thuật hoặc laser hay sóng cao tần nội mạch nhằm mục đích loại bỏ tĩnh mạch nông bị bệnh.'
+
+MERGE (o1:treatment {id: 'stripping_treatment'})
+MERGE (o2:disease {id: 'suy_giãn_tĩnh_mạch_nông_disease'})
+MERGE (o1)-[r121:treatedBy]->(o2)
+SET r121.text = 'Stripping: Lột bỏ các tĩnh mạch nông bị giãn bằng một dụng cụ chuyên dùng luồn trong lòng mạch được gọi là phẫu thuật Stripping.'
+
+MERGE (o1:treatment {id: 'stripping_treatment'})
+MERGE (o2:organ {id: 'lột_bỏ_các_tĩnh_mạch_nông_bị_giãn_organ'})
+MERGE (o1)-[r122:isSymptomOf]->(o2)
+SET r122.text = 'Stripping: Lột bỏ các tĩnh mạch nông bị giãn bằng một dụng cụ chuyên dùng luồn trong lòng mạch được gọi là phẫu thuật Stripping.'
+
+MERGE (o1:treatment {id: 'stripping_treatment'})
+MERGE (o2:symptom {id: 'tỷ_lệ_tái_phát_thấp_nhất_symptom'})
+MERGE (o1)-[r123:isSymptomOf]->(o2)
+SET r123.text = 'Đây là phương pháp điều trị khá triệt để, có tỷ lệ tái phát thấp nhất.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_lột_bỏ_tĩnh_mạch_hiển_treatment'})
+MERGE (o2:disease {id: 'suy_giãn_tĩnh_mạch_chi_dưới_disease'})
+MERGE (o1)-[r124:treatedBy]->(o2)
+SET r124.text = 'Trước những năm 2000, phẫu thuật lột bỏ tĩnh mạch hiển là kỹ thuật chính điều trị suy giãn tĩnh mạch chi dưới.'
+
+MERGE (o1:treatment {id: 'laser_và_sóng_cao_tần_nội_tĩnh_mạch_treatment'})
+MERGE (o2:disease {id: 'suy_giãn_tĩnh_mạch_chi_dưới_disease'})
+MERGE (o1)-[r125:treatedBy]->(o2)
+SET r125.text = 'Từ hơn 10 năm gần đây, kỹ thuật laser và sóng cao tần nội tĩnh mạch được áp dụng đã mang lại những kết quả rất tốt.'
+
+MERGE (o1:treatment {id: 'laser_và_sóng_cao_tần_nội_tĩnh_mạch_treatment'})
+MERGE (o2:disease {id: 'suy_giãn_tĩnh_mạch_chi_dưới_disease'})
+MERGE (o1)-[r126:treatedBy]->(o2)
+SET r126.text = 'Ngày nay, với sự phát triển của kỹ thuật laser và sóng cao tần nội tĩnh mạch và đã thay thế gần như hoàn toàn phẫu thuật stripping.'
+
+MERGE (o1:treatment {id: 'chiva_treatment'})
+MERGE (o2:disease {id: 'suy_giãn_tĩnh_mạch_chi_dưới_disease'})
+MERGE (o1)-[r127:treatedBy]->(o2)
+SET r127.text = 'CHIVA: Đây là tên viết tắt của kỹ thuật “Cure conservatrice et Hemodynamique de L&#8217;Insuffisance Veineuse en Ambulatoire”, là một phẫu thuật nhỏ với gây tê tại chỗ, chỉ cắt bỏ van bị tổn thương và lấy bỏ tĩnh mạch bàng hệ.'
+
+MERGE (o1:treatment {id: 'chiva_treatment'})
+MERGE (o2:organ {id: 'cắt_bỏ_van_bị_tổn_thương_organ'})
+MERGE (o1)-[r128:isSymptomOf]->(o2)
+SET r128.text = 'CHIVA: Đây là tên viết tắt của kỹ thuật “Cure conservatrice et Hemodynamique de L&#8217;Insuffisance Veineuse en Ambulatoire”, là một phẫu thuật nhỏ với gây tê tại chỗ, chỉ cắt bỏ van bị tổn thương và lấy bỏ tĩnh mạch bàng hệ.'
+
+MERGE (o1:treatment {id: 'chiva_treatment'})
+MERGE (o2:organ {id: 'lấy_bỏ_tĩnh_mạch_bàng_hệ_organ'})
+MERGE (o1)-[r129:isSymptomOf]->(o2)
+SET r129.text = 'CHIVA: Đây là tên viết tắt của kỹ thuật “Cure conservatrice et Hemodynamique de L&#8217;Insuffisance Veineuse en Ambulatoire”, là một phẫu thuật nhỏ với gây tê tại chỗ, chỉ cắt bỏ van bị tổn thương và lấy bỏ tĩnh mạch bàng hệ.'
+
+MERGE (o1:organ {id: 'tĩnh_mạch_hiển_organ'})
+MERGE (o2:treatment {id: 'bắc_cầu_động_mạch_vành__bắc_cầu_động_mạch_chi_dưới_treatment'})
+MERGE (o1)-[r130:treatedBy]->(o2)
+SET r130.text = 'Mục tiêu là để bảo tồn tĩnh mạch hiển, giữ làm mạch máu ghép cho các phẫu thuật bắc cầu mạch máu như bắc cầu động mạch vành, bắc cầu động mạch chi dưới…'
+
+MERGE (o1:treatment {id: 'chiva_treatment'})
+MERGE (o2:test {id: 'siêu_âm_test'})
+MERGE (o1)-[r131:diagnosedBy]->(o2)
+SET r131.text = 'Để làm tốt kỹ thuật CHIVA, bác sĩ sẽ siêu âm đánh dấu chính xác vị trí van tĩnh mạch bị tổn thương và tĩnh mạch bàng hệ.'
+
+MERGE (o1:organ {id: 'tĩnh_mạch_hiển_lớn_hay_tĩnh_mạch_hiển_bé_organ'})
+MERGE (o2:test {id: 'siêu_âm_test'})
+MERGE (o1)-[r132:diagnosedBy]->(o2)
+SET r132.text = 'Các tĩnh mạch nông là tĩnh mạch hiển lớn hay tĩnh mạch hiển bé được chỉ định nếu có tổn thương được xác định trên siêu âm.'
+
+MERGE (o1:treatment {id: 'laser_hay_sóng_cao_tần_(radio_frequency)_treatment'})
+MERGE (o2:disease {id: 'suy_giãn_tĩnh_mạch_disease'})
+MERGE (o1)-[r133:treatedBy]->(o2)
+SET r133.text = 'Bác sĩ sẽ luồn dây dẫn năng lượng laser hay sóng cao tần (Radio Frequency) vào trong lòng tĩnh mạch bị suy giãn.'
+
+MERGE (o1:treatment {id: 'luồn_dây_dẫn_treatment'})
+MERGE (o2:test {id: 'siêu_âm_test'})
+MERGE (o1)-[r134:diagnosedBy]->(o2)
+SET r134.text = 'Quá trình luồn dây dẫn này được thực hiện dưới hướng dẫn của siêu âm.'
+
+MERGE (o1:treatment {id: 'năng_lượng_nhiệt_treatment'})
+MERGE (o2:disease {id: 'suy_giãn_tĩnh_mạch_disease'})
+MERGE (o1)-[r135:treatedBy]->(o2)
+SET r135.text = 'Sau khi xác định đầu của dây dẫn nằm đúng vị trí cần điều trị, năng lượng nhiệt tạo ra ở đầu của dây dẫn sẽ tạo phản ứng làm xơ nội mạc, thành mạch thu nhỏ lại, teo dính lòng tĩnh mạch.'
+
+MERGE (o1:treatment {id: 'kéo_lùi_dây_dẫn_treatment'})
+MERGE (o2:disease {id: 'suy_giãn_tĩnh_mạch_disease'})
+MERGE (o1)-[r136:treatedBy]->(o2)
+SET r136.text = 'Dây dẫn sẽ được kéo lùi từng khoảng 1cm trong quá trình dây dẫn phát năng lượng, cho đến khi kéo lùi hoàn toàn ra khỏi tĩnh mạch.'
+
+MERGE (o1:treatment {id: 'băng_thun_hoặc_vớ_(tất)_tĩnh_mạch_treatment'})
+MERGE (o2:disease {id: 'suy_giãn_tĩnh_mạch_disease'})
+MERGE (o1)-[r137:treatedBy]->(o2)
+SET r137.text = 'Băng thun hoặc vớ (tất) tĩnh mạch ngày đầu sau phẫu thuật, thủ thuật và khi đứng dậy, đi lại ở những ngày sau.'
+
+MERGE (o1:treatment {id: 'vớ_tĩnh_mạch_treatment'})
+MERGE (o2:symptom {id: 'phù_chân_symptom'})
+MERGE (o1)-[r138:preventedBy]->(o2)
+SET r138.text = 'Vớ tĩnh mạch được khuyên tiếp tục sử dụng 10 ngày đến 2 tuần để tránh tình trạng phù chân.'
+
+MERGE (o1:disease {id: 'suy_giãn_tĩnh_mạch_disease'})
+MERGE (o2:test {id: 'siêu_âm_test'})
+MERGE (o1)-[r139:diagnosedBy]->(o2)
+SET r139.text = 'Bệnh nhân cần được tái khám, kiểm tra siêu âm sau 1 tháng, 6 tháng và mỗi 1-2 năm.'
+
+MERGE (o1:disease {id: 'suy_giãn_tĩnh_mạch_disease'})
+MERGE (o2:lifestyle {id: 'không_ngồi__đứng_lâu_tại_chỗ__tập_vận_động_cơ_cẳng_chân__mang_vớ_(tất)_áp_lực_lifestyle'})
+MERGE (o1)-[r140:preventedBy]->(o2)
+SET r140.text = 'Các biện pháp phòng tránh bệnh như không ngồi, đứng lâu tại chỗ, tập vận động cơ cẳng chân, mang vớ (tất) áp lực… vẫn tiếp tục được bác sĩ khuyến cáo thực hiện.'
+
+MERGE (o1:symptom {id: 'trào_ngược_van_tĩnh_mạch_symptom'})
+MERGE (o2:disease {id: 'suy_giãn_tĩnh_mạch_disease'})
+MERGE (o1)-[r141:isSymptomOf]->(o2)
+SET r141.text = 'Áp dụng các biện pháp làm giảm tình trạng trào ngược van tĩnh mạch giúp phòng bệnh, cũng như cải thiện tình trạng bệnh.'
+
+MERGE (o1:disease {id: 'suy_giãn_tĩnh_mạch_disease'})
+MERGE (o2:lifestyle {id: 'tránh_đứng_hoặc_ngồi_lâu_tại_chỗ__thực_hiện_các_bài_tập_suy_giãn_tĩnh_mạch__để_chân_cao_khi_ngồi_hay_nằm_nghỉ__tập_hít_thở_chủ_động__chế_độ_ăn_có_nhiều_chất_xơ_tránh_táo_bón__béo_phì…__mang_vớ_(tất)_áp_lực_chuyên_dụng_lifestyle'})
+MERGE (o1)-[r142:preventedBy]->(o2)
+SET r142.text = 'Người bệnh được khuyên tránh đứng hoặc ngồi lâu tại chỗ, thực hiện các bài tập suy giãn tĩnh mạch, để chân cao khi ngồi hay nằm nghỉ, tập hít thở chủ động, chế độ ăn có nhiều chất xơ tránh táo bón, béo phì…, mang vớ (tất) áp lực chuyên dụng.'

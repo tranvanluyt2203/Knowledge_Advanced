@@ -1,0 +1,825 @@
+
+MERGE (o1:symptom {id: 'xuất_huyết_tiêu_hóa_symptom'})
+MERGE (o2:disease {id: 'ung_thư_dạ_dày_disease'})
+MERGE (o1)-[r0:isSymptomOf]->(o2)
+SET r0.text = 'Xuất huyết tiêu hóa có thể là dấu hiệu cảnh báo trước một tình trạng nguy hiểm tiềm ẩn, chẳng hạn như ung thư dạ dày, ung thư đại trực tràng…'
+
+MERGE (o1:symptom {id: 'xuất_huyết_tiêu_hóa_symptom'})
+MERGE (o2:disease {id: 'ung_thư_đại_trực_tràng_disease'})
+MERGE (o1)-[r1:isSymptomOf]->(o2)
+SET r1.text = 'Xuất huyết tiêu hóa có thể là dấu hiệu cảnh báo trước một tình trạng nguy hiểm tiềm ẩn, chẳng hạn như ung thư dạ dày, ung thư đại trực tràng…'
+
+MERGE (o1:symptom {id: 'xuất_huyết_đường_tiêu_hóa_symptom'})
+MERGE (o2:organ {id: 'đường_tiêu_hóa_organ'})
+MERGE (o1)-[r2:locatedIn]->(o2)
+SET r2.text = 'Xuất huyết đường tiêu hóa là một triệu chứng ở đường tiêu hóa bao gồm thực quản, dạ dày, ruột non, tá tràng, ruột già hoặc ruột kết, trực tràng, hậu môn bị chảy máu do một tổn thương nào đó.(1) Xuất huyết có thể xảy ra ở bất kỳ cơ quan nào trong đường tiêu hóa.'
+
+MERGE (o1:symptom {id: 'xuất_huyết_đường_tiêu_hóa_symptom'})
+MERGE (o2:organ {id: 'thực_quản_organ'})
+MERGE (o1)-[r3:locatedIn]->(o2)
+SET r3.text = 'Xuất huyết đường tiêu hóa là một triệu chứng ở đường tiêu hóa bao gồm thực quản, dạ dày, ruột non, tá tràng, ruột già hoặc ruột kết, trực tràng, hậu môn bị chảy máu do một tổn thương nào đó.(1) Xuất huyết có thể xảy ra ở bất kỳ cơ quan nào trong đường tiêu hóa.'
+
+MERGE (o1:symptom {id: 'xuất_huyết_đường_tiêu_hóa_symptom'})
+MERGE (o2:organ {id: 'dạ_dày_organ'})
+MERGE (o1)-[r4:locatedIn]->(o2)
+SET r4.text = 'Xuất huyết đường tiêu hóa là một triệu chứng ở đường tiêu hóa bao gồm thực quản, dạ dày, ruột non, tá tràng, ruột già hoặc ruột kết, trực tràng, hậu môn bị chảy máu do một tổn thương nào đó.(1) Xuất huyết có thể xảy ra ở bất kỳ cơ quan nào trong đường tiêu hóa.'
+
+MERGE (o1:symptom {id: 'xuất_huyết_đường_tiêu_hóa_symptom'})
+MERGE (o2:organ {id: 'ruột_non_organ'})
+MERGE (o1)-[r5:locatedIn]->(o2)
+SET r5.text = 'Xuất huyết đường tiêu hóa là một triệu chứng ở đường tiêu hóa bao gồm thực quản, dạ dày, ruột non, tá tràng, ruột già hoặc ruột kết, trực tràng, hậu môn bị chảy máu do một tổn thương nào đó.(1) Xuất huyết có thể xảy ra ở bất kỳ cơ quan nào trong đường tiêu hóa.'
+
+MERGE (o1:symptom {id: 'xuất_huyết_đường_tiêu_hóa_symptom'})
+MERGE (o2:organ {id: 'tá_tràng_organ'})
+MERGE (o1)-[r6:locatedIn]->(o2)
+SET r6.text = 'Xuất huyết đường tiêu hóa là một triệu chứng ở đường tiêu hóa bao gồm thực quản, dạ dày, ruột non, tá tràng, ruột già hoặc ruột kết, trực tràng, hậu môn bị chảy máu do một tổn thương nào đó.(1) Xuất huyết có thể xảy ra ở bất kỳ cơ quan nào trong đường tiêu hóa.'
+
+MERGE (o1:symptom {id: 'xuất_huyết_đường_tiêu_hóa_symptom'})
+MERGE (o2:organ {id: 'ruột_già_organ'})
+MERGE (o1)-[r7:locatedIn]->(o2)
+SET r7.text = 'Xuất huyết đường tiêu hóa là một triệu chứng ở đường tiêu hóa bao gồm thực quản, dạ dày, ruột non, tá tràng, ruột già hoặc ruột kết, trực tràng, hậu môn bị chảy máu do một tổn thương nào đó.(1) Xuất huyết có thể xảy ra ở bất kỳ cơ quan nào trong đường tiêu hóa.'
+
+MERGE (o1:symptom {id: 'xuất_huyết_đường_tiêu_hóa_symptom'})
+MERGE (o2:organ {id: 'ruột_kết_organ'})
+MERGE (o1)-[r8:locatedIn]->(o2)
+SET r8.text = 'Xuất huyết đường tiêu hóa là một triệu chứng ở đường tiêu hóa bao gồm thực quản, dạ dày, ruột non, tá tràng, ruột già hoặc ruột kết, trực tràng, hậu môn bị chảy máu do một tổn thương nào đó.(1) Xuất huyết có thể xảy ra ở bất kỳ cơ quan nào trong đường tiêu hóa.'
+
+MERGE (o1:symptom {id: 'xuất_huyết_đường_tiêu_hóa_symptom'})
+MERGE (o2:organ {id: 'trực_tràng_organ'})
+MERGE (o1)-[r9:locatedIn]->(o2)
+SET r9.text = 'Xuất huyết đường tiêu hóa là một triệu chứng ở đường tiêu hóa bao gồm thực quản, dạ dày, ruột non, tá tràng, ruột già hoặc ruột kết, trực tràng, hậu môn bị chảy máu do một tổn thương nào đó.(1) Xuất huyết có thể xảy ra ở bất kỳ cơ quan nào trong đường tiêu hóa.'
+
+MERGE (o1:symptom {id: 'xuất_huyết_đường_tiêu_hóa_symptom'})
+MERGE (o2:organ {id: 'hậu_môn_organ'})
+MERGE (o1)-[r10:locatedIn]->(o2)
+SET r10.text = 'Xuất huyết đường tiêu hóa là một triệu chứng ở đường tiêu hóa bao gồm thực quản, dạ dày, ruột non, tá tràng, ruột già hoặc ruột kết, trực tràng, hậu môn bị chảy máu do một tổn thương nào đó.(1) Xuất huyết có thể xảy ra ở bất kỳ cơ quan nào trong đường tiêu hóa.'
+
+MERGE (o1:symptom {id: 'xuất_huyết_tiêu_hóa_trên_symptom'})
+MERGE (o2:organ {id: 'thực_quản_organ'})
+MERGE (o1)-[r11:locatedIn]->(o2)
+SET r11.text = 'Nếu xuất huyết xảy ra trong thực quản, dạ dày hoặc phần đầu của ruột non (tá tràng) thì đó được gọi là xuất huyết tiêu hóa trên.'
+
+MERGE (o1:symptom {id: 'xuất_huyết_tiêu_hóa_trên_symptom'})
+MERGE (o2:organ {id: 'dạ_dày_organ'})
+MERGE (o1)-[r12:locatedIn]->(o2)
+SET r12.text = 'Nếu xuất huyết xảy ra trong thực quản, dạ dày hoặc phần đầu của ruột non (tá tràng) thì đó được gọi là xuất huyết tiêu hóa trên.'
+
+MERGE (o1:symptom {id: 'xuất_huyết_tiêu_hóa_trên_symptom'})
+MERGE (o2:organ {id: 'ruột_non_organ'})
+MERGE (o1)-[r13:locatedIn]->(o2)
+SET r13.text = 'Nếu xuất huyết xảy ra trong thực quản, dạ dày hoặc phần đầu của ruột non (tá tràng) thì đó được gọi là xuất huyết tiêu hóa trên.'
+
+MERGE (o1:symptom {id: 'xuất_huyết_tiêu_hóa_trên_symptom'})
+MERGE (o2:organ {id: 'tá_tràng_organ'})
+MERGE (o1)-[r14:locatedIn]->(o2)
+SET r14.text = 'Nếu xuất huyết xảy ra trong thực quản, dạ dày hoặc phần đầu của ruột non (tá tràng) thì đó được gọi là xuất huyết tiêu hóa trên.'
+
+MERGE (o1:symptom {id: 'xuất_huyết_tiêu_hóa_dưới_symptom'})
+MERGE (o2:organ {id: 'ruột_non_organ'})
+MERGE (o1)-[r15:locatedIn]->(o2)
+SET r15.text = 'Nếu xuất huyết ở phần dưới ruột non, ruột già, trực tràng hoặc hậu môn thì được gọi là xuất huyết tiêu hóa dưới.'
+
+MERGE (o1:symptom {id: 'xuất_huyết_tiêu_hóa_dưới_symptom'})
+MERGE (o2:organ {id: 'ruột_già_organ'})
+MERGE (o1)-[r16:locatedIn]->(o2)
+SET r16.text = 'Nếu xuất huyết ở phần dưới ruột non, ruột già, trực tràng hoặc hậu môn thì được gọi là xuất huyết tiêu hóa dưới.'
+
+MERGE (o1:symptom {id: 'xuất_huyết_tiêu_hóa_dưới_symptom'})
+MERGE (o2:organ {id: 'trực_tràng_organ'})
+MERGE (o1)-[r17:locatedIn]->(o2)
+SET r17.text = 'Nếu xuất huyết ở phần dưới ruột non, ruột già, trực tràng hoặc hậu môn thì được gọi là xuất huyết tiêu hóa dưới.'
+
+MERGE (o1:symptom {id: 'xuất_huyết_tiêu_hóa_dưới_symptom'})
+MERGE (o2:organ {id: 'hậu_môn_organ'})
+MERGE (o1)-[r18:locatedIn]->(o2)
+SET r18.text = 'Nếu xuất huyết ở phần dưới ruột non, ruột già, trực tràng hoặc hậu môn thì được gọi là xuất huyết tiêu hóa dưới.'
+
+MERGE (o1:symptom {id: 'xuất_huyết_đường_tiêu_hóa_symptom'})
+MERGE (o2:disease {id: 'ung_thư_tiêu_hóa_disease'})
+MERGE (o1)-[r19:relatedTo]->(o2)
+SET r19.text = 'Theo BS.CKI Hoàng Đình Thành, Trung tâm Nội soi và Phẫu thuật Nội soi tiêu hóa, BVĐK Tâm Anh, xuất huyết đường tiêu hóa cần được nhìn nhận là một bệnh lý nghiêm trọng vì nó có liên quan đến nhiều vấn đề tiềm ẩn đáng lo ngại, đặc biệt các loại ung thư tiêu hóa.'
+
+MERGE (o1:symptom {id: 'có_dính_máu_sau_khi_đi_tiêu_symptom'})
+MERGE (o2:symptom {id: 'xuất_huyết_đường_tiêu_hóa_symptom'})
+MERGE (o1)-[r20:isSymptomOf]->(o2)
+SET r20.text = 'Có dính máu sau khi đi tiêu có thể là một biểu hiện của xuất huyết đường tiêu hóa'
+
+MERGE (o1:symptom {id: 'phân_lẫn_máu_symptom'})
+MERGE (o2:symptom {id: 'xuất_huyết_đường_tiêu_hóa_symptom'})
+MERGE (o1)-[r21:isSymptomOf]->(o2)
+SET r21.text = 'Xuất huyết đường tiêu hóa thường có các biểu hiện bao gồm:    Phân lẫn máu, phân sẫm màu Lau giấy có dính máu Nôn ra máu Xanh xao Chóng mặt Mệt mỏi Đau ngực Đau bụng Vã mồ hôi, chân tay yếu Tụt huyết áp, ngất xỉu nếu xuất huyết trầm trọng'
+
+MERGE (o1:symptom {id: 'phân_sẫm_màu_symptom'})
+MERGE (o2:symptom {id: 'xuất_huyết_đường_tiêu_hóa_symptom'})
+MERGE (o1)-[r22:isSymptomOf]->(o2)
+SET r22.text = 'Xuất huyết đường tiêu hóa thường có các biểu hiện bao gồm:    Phân lẫn máu, phân sẫm màu Lau giấy có dính máu Nôn ra máu Xanh xao Chóng mặt Mệt mỏi Đau ngực Đau bụng Vã mồ hôi, chân tay yếu Tụt huyết áp, ngất xỉu nếu xuất huyết trầm trọng'
+
+MERGE (o1:symptom {id: 'lau_giấy_có_dính_máu_symptom'})
+MERGE (o2:symptom {id: 'xuất_huyết_đường_tiêu_hóa_symptom'})
+MERGE (o1)-[r23:isSymptomOf]->(o2)
+SET r23.text = 'Xuất huyết đường tiêu hóa thường có các biểu hiện bao gồm:    Phân lẫn máu, phân sẫm màu Lau giấy có dính máu Nôn ra máu Xanh xao Chóng mặt Mệt mỏi Đau ngực Đau bụng Vã mồ hôi, chân tay yếu Tụt huyết áp, ngất xỉu nếu xuất huyết trầm trọng'
+
+MERGE (o1:symptom {id: 'nôn_ra_máu_symptom'})
+MERGE (o2:symptom {id: 'xuất_huyết_đường_tiêu_hóa_symptom'})
+MERGE (o1)-[r24:isSymptomOf]->(o2)
+SET r24.text = 'Xuất huyết đường tiêu hóa thường có các biểu hiện bao gồm:    Phân lẫn máu, phân sẫm màu Lau giấy có dính máu Nôn ra máu Xanh xao Chóng mặt Mệt mỏi Đau ngực Đau bụng Vã mồ hôi, chân tay yếu Tụt huyết áp, ngất xỉu nếu xuất huyết trầm trọng'
+
+MERGE (o1:symptom {id: 'xanh_xao_symptom'})
+MERGE (o2:symptom {id: 'xuất_huyết_đường_tiêu_hóa_symptom'})
+MERGE (o1)-[r25:isSymptomOf]->(o2)
+SET r25.text = 'Xuất huyết đường tiêu hóa thường có các biểu hiện bao gồm:    Phân lẫn máu, phân sẫm màu Lau giấy có dính máu Nôn ra máu Xanh xao Chóng mặt Mệt mỏi Đau ngực Đau bụng Vã mồ hôi, chân tay yếu Tụt huyết áp, ngất xỉu nếu xuất huyết trầm trọng'
+
+MERGE (o1:symptom {id: 'chóng_mặt_symptom'})
+MERGE (o2:symptom {id: 'xuất_huyết_đường_tiêu_hóa_symptom'})
+MERGE (o1)-[r26:isSymptomOf]->(o2)
+SET r26.text = 'Xuất huyết đường tiêu hóa thường có các biểu hiện bao gồm:    Phân lẫn máu, phân sẫm màu Lau giấy có dính máu Nôn ra máu Xanh xao Chóng mặt Mệt mỏi Đau ngực Đau bụng Vã mồ hôi, chân tay yếu Tụt huyết áp, ngất xỉu nếu xuất huyết trầm trọng'
+
+MERGE (o1:symptom {id: 'mệt_mỏi_symptom'})
+MERGE (o2:symptom {id: 'xuất_huyết_đường_tiêu_hóa_symptom'})
+MERGE (o1)-[r27:isSymptomOf]->(o2)
+SET r27.text = 'Xuất huyết đường tiêu hóa thường có các biểu hiện bao gồm:    Phân lẫn máu, phân sẫm màu Lau giấy có dính máu Nôn ra máu Xanh xao Chóng mặt Mệt mỏi Đau ngực Đau bụng Vã mồ hôi, chân tay yếu Tụt huyết áp, ngất xỉu nếu xuất huyết trầm trọng'
+
+MERGE (o1:symptom {id: 'đau_ngực_symptom'})
+MERGE (o2:symptom {id: 'xuất_huyết_đường_tiêu_hóa_symptom'})
+MERGE (o1)-[r28:isSymptomOf]->(o2)
+SET r28.text = 'Xuất huyết đường tiêu hóa thường có các biểu hiện bao gồm:    Phân lẫn máu, phân sẫm màu Lau giấy có dính máu Nôn ra máu Xanh xao Chóng mặt Mệt mỏi Đau ngực Đau bụng Vã mồ hôi, chân tay yếu Tụt huyết áp, ngất xỉu nếu xuất huyết trầm trọng'
+
+MERGE (o1:symptom {id: 'đau_bụng_symptom'})
+MERGE (o2:symptom {id: 'xuất_huyết_đường_tiêu_hóa_symptom'})
+MERGE (o1)-[r29:isSymptomOf]->(o2)
+SET r29.text = 'Xuất huyết đường tiêu hóa thường có các biểu hiện bao gồm:    Phân lẫn máu, phân sẫm màu Lau giấy có dính máu Nôn ra máu Xanh xao Chóng mặt Mệt mỏi Đau ngực Đau bụng Vã mồ hôi, chân tay yếu Tụt huyết áp, ngất xỉu nếu xuất huyết trầm trọng'
+
+MERGE (o1:symptom {id: 'vã_mồ_hôi_symptom'})
+MERGE (o2:symptom {id: 'xuất_huyết_đường_tiêu_hóa_symptom'})
+MERGE (o1)-[r30:isSymptomOf]->(o2)
+SET r30.text = 'Xuất huyết đường tiêu hóa thường có các biểu hiện bao gồm:    Phân lẫn máu, phân sẫm màu Lau giấy có dính máu Nôn ra máu Xanh xao Chóng mặt Mệt mỏi Đau ngực Đau bụng Vã mồ hôi, chân tay yếu Tụt huyết áp, ngất xỉu nếu xuất huyết trầm trọng'
+
+MERGE (o1:symptom {id: 'chân_tay_yếu_symptom'})
+MERGE (o2:symptom {id: 'xuất_huyết_đường_tiêu_hóa_symptom'})
+MERGE (o1)-[r31:isSymptomOf]->(o2)
+SET r31.text = 'Xuất huyết đường tiêu hóa thường có các biểu hiện bao gồm:    Phân lẫn máu, phân sẫm màu Lau giấy có dính máu Nôn ra máu Xanh xao Chóng mặt Mệt mỏi Đau ngực Đau bụng Vã mồ hôi, chân tay yếu Tụt huyết áp, ngất xỉu nếu xuất huyết trầm trọng'
+
+MERGE (o1:symptom {id: 'tụt_huyết_áp_symptom'})
+MERGE (o2:symptom {id: 'xuất_huyết_đường_tiêu_hóa_symptom'})
+MERGE (o1)-[r32:isSymptomOf]->(o2)
+SET r32.text = 'Xuất huyết đường tiêu hóa thường có các biểu hiện bao gồm:    Phân lẫn máu, phân sẫm màu Lau giấy có dính máu Nôn ra máu Xanh xao Chóng mặt Mệt mỏi Đau ngực Đau bụng Vã mồ hôi, chân tay yếu Tụt huyết áp, ngất xỉu nếu xuất huyết trầm trọng'
+
+MERGE (o1:symptom {id: 'xuất_huyết_tiêu_hóa_symptom'})
+MERGE (o2:cause {id: 'nhiều_nguyên_nhân_cause'})
+MERGE (o1)-[r33:causedBy]->(o2)
+SET r33.text = 'Xuất huyết tiêu hóa có thể đến từ nhiều nguyên nhân.'
+
+MERGE (o1:disease {id: 'loét_dạ_dày_tá_tràng_disease'})
+MERGE (o2:symptom {id: 'xuất_huyết_tiêu_hóa_trên_symptom'})
+MERGE (o1)-[r34:isSymptomOf]->(o2)
+SET r34.text = 'Trong đó, nguyên nhân xuất huyết tiêu hóa trên thường bao gồm:(2)    Loét dạ dày tá tràng: Đây là nguyên nhân phổ biến nhất của xuất huyết tiêu hóa trên (cao). Loét dạ dày là tình trạng vết loét phát triển trên niêm mạc dạ dày và phần trên của ruột non. Chúng được hình thành do axit trong dạ dày, vi khuẩn hoặc do sử dụng thuốc chống viêm làm tổn thương lớp niêm mạc gây ra.'
+
+MERGE (o1:disease {id: 'loét_dạ_dày_tá_tràng_disease'})
+MERGE (o2:cause {id: 'axit_trong_dạ_dày__vi_khuẩn_hoặc_do_sử_dụng_thuốc_chống_viêm_làm_tổn_thương_lớp_niêm_mạc_cause'})
+MERGE (o1)-[r35:causedBy]->(o2)
+SET r35.text = 'Loét dạ dày tá tràng: Đây là nguyên nhân phổ biến nhất của xuất huyết tiêu hóa trên (cao). Loét dạ dày là tình trạng vết loét phát triển trên niêm mạc dạ dày và phần trên của ruột non. Chúng được hình thành do axit trong dạ dày, vi khuẩn hoặc do sử dụng thuốc chống viêm làm tổn thương lớp niêm mạc gây ra.'
+
+MERGE (o1:disease {id: 'loét_dạ_dày_disease'})
+MERGE (o2:organ {id: 'niêm_mạc_dạ_dày_và_phần_trên_của_ruột_non_organ'})
+MERGE (o1)-[r36:locatedIn]->(o2)
+SET r36.text = 'Loét dạ dày tá tràng: Đây là nguyên nhân phổ biến nhất của xuất huyết tiêu hóa trên (cao). Loét dạ dày là tình trạng vết loét phát triển trên niêm mạc dạ dày và phần trên của ruột non. Chúng được hình thành do axit trong dạ dày, vi khuẩn hoặc do sử dụng thuốc chống viêm làm tổn thương lớp niêm mạc gây ra.'
+
+MERGE (o1:disease {id: 'hội_chứng_mallory-weiss_disease'})
+MERGE (o2:symptom {id: 'xuất_huyết_do_rách_thực_quản_symptom'})
+MERGE (o1)-[r37:isSymptomOf]->(o2)
+SET r37.text = 'Hội chứng Mallory-Weiss: Đặc trưng bởi xuất huyết do rách thực quản vì ói oẹ nhiều và quá mạnh và hay gặp nhất ở những người uống bia rượu và bị ói liên tục.'
+
+MERGE (o1:disease {id: 'hội_chứng_mallory-weiss_disease'})
+MERGE (o2:cause {id: 'ói_oẹ_nhiều_và_quá_mạnh_cause'})
+MERGE (o1)-[r38:causedBy]->(o2)
+SET r38.text = 'Hội chứng Mallory-Weiss: Đặc trưng bởi xuất huyết do rách thực quản vì ói oẹ nhiều và quá mạnh và hay gặp nhất ở những người uống bia rượu và bị ói liên tục.'
+
+MERGE (o1:disease {id: 'hội_chứng_mallory-weiss_disease'})
+MERGE (o2:lifestyle {id: 'uống_bia_rượu_lifestyle'})
+MERGE (o1)-[r39:associatedWith]->(o2)
+SET r39.text = 'Hội chứng Mallory-Weiss: Đặc trưng bởi xuất huyết do rách thực quản vì ói oẹ nhiều và quá mạnh và hay gặp nhất ở những người uống bia rượu và bị ói liên tục.'
+
+MERGE (o1:disease {id: 'giãn_tĩnh_mạch_thực_quản_disease'})
+MERGE (o2:symptom {id: 'xuất_huyết_do_vỡ_các_tĩnh_mạch_trướng_giãn_symptom'})
+MERGE (o1)-[r40:isSymptomOf]->(o2)
+SET r40.text = 'Giãn tĩnh mạch thực quản: Giãn tĩnh mạch thực quản có thể gây xuất huyết do vỡ các tĩnh mạch trướng giãn. Tình trạng này thường xảy ra ở những người mắc bệnh xơ gan nặng, giai đoạn cuối.'
+
+MERGE (o1:disease {id: 'giãn_tĩnh_mạch_thực_quản_disease'})
+MERGE (o2:disease {id: 'bệnh_xơ_gan_nặng__giai_đoạn_cuối_disease'})
+MERGE (o1)-[r41:causedBy]->(o2)
+SET r41.text = 'Giãn tĩnh mạch thực quản: Giãn tĩnh mạch thực quản có thể gây xuất huyết do vỡ các tĩnh mạch trướng giãn. Tình trạng này thường xảy ra ở những người mắc bệnh xơ gan nặng, giai đoạn cuối.'
+
+MERGE (o1:disease {id: 'viêm_thực_quản_disease'})
+MERGE (o2:disease {id: 'bệnh_trào_ngược_dạ_dày_thực_quản_(gerd)_disease'})
+MERGE (o1)-[r42:causedBy]->(o2)
+SET r42.text = 'Viêm thực quản: Viêm thực quản thường do bệnh trào ngược dạ dày thực quản (GERD) gây ra. Những người bị viêm thực quản cũng có khả năng bị xuất huyết tiêu hóa.'
+
+MERGE (o1:disease {id: 'viêm_thực_quản_disease'})
+MERGE (o2:symptom {id: 'xuất_huyết_tiêu_hóa_symptom'})
+MERGE (o1)-[r43:isSymptomOf]->(o2)
+SET r43.text = 'Viêm thực quản: Viêm thực quản thường do bệnh trào ngược dạ dày thực quản (GERD) gây ra. Những người bị viêm thực quản cũng có khả năng bị xuất huyết tiêu hóa.'
+
+MERGE (o1:disease {id: 'bệnh_túi_thừa_disease'})
+MERGE (o2:symptom {id: 'xuất_huyết_đường_tiêu_hóa_dưới_symptom'})
+MERGE (o1)-[r44:isSymptomOf]->(o2)
+SET r44.text = 'Nguyên nhân xuất huyết tiêu hóa dưới (thấp) thường bao gồm:    Bệnh túi thừa: Sự phát triển của các túi nhỏ, phình ra trong đường tiêu hóa hình thành nên các túi thừa. Viêm túi thừa có thể gây xuất huyết đường tiêu hóa dưới.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_ruột_(ibd)_disease'})
+MERGE (o2:symptom {id: 'xuất_huyết_tiêu_hóa_symptom'})
+MERGE (o1)-[r45:isSymptomOf]->(o2)
+SET r45.text = 'Bệnh viêm ruột (IBD): Viêm loét đại tràng và bệnh Crohn… đều có thể gây xuất huyết tiêu hóa.'
+
+MERGE (o1:disease {id: 'viêm_loét_đại_tràng_disease'})
+MERGE (o2:disease {id: 'bệnh_viêm_ruột_(ibd)_disease'})
+MERGE (o1)-[r46:isSymptomOf]->(o2)
+SET r46.text = 'Bệnh viêm ruột (IBD): Viêm loét đại tràng và bệnh Crohn… đều có thể gây xuất huyết tiêu hóa.'
+
+MERGE (o1:disease {id: 'bệnh_crohn_disease'})
+MERGE (o2:disease {id: 'bệnh_viêm_ruột_(ibd)_disease'})
+MERGE (o1)-[r47:isSymptomOf]->(o2)
+SET r47.text = 'Bệnh viêm ruột (IBD): Viêm loét đại tràng và bệnh Crohn… đều có thể gây xuất huyết tiêu hóa.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:symptom {id: 'chảy_máu_symptom'})
+MERGE (o1)-[r48:isSymptomOf]->(o2)
+SET r48.text = 'Khối u: Các khối u ác tính hoặc lành tính hoặc ung thư thực quản, dạ dày, ruột kết hoặc trực tràng có thể làm suy yếu lớp niêm mạc của đường tiêu hóa và gây chảy máu.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:organ {id: 'thực_quản__dạ_dày__ruột_kết_hoặc_trực_tràng_organ'})
+MERGE (o1)-[r49:locatedIn]->(o2)
+SET r49.text = 'Khối u: Các khối u ác tính hoặc lành tính hoặc ung thư thực quản, dạ dày, ruột kết hoặc trực tràng có thể làm suy yếu lớp niêm mạc của đường tiêu hóa và gây chảy máu.'
+
+MERGE (o1:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o2:disease {id: 'khối_u_disease'})
+MERGE (o1)-[r50:isSymptomOf]->(o2)
+SET r50.text = 'Khối u: Các khối u ác tính hoặc lành tính hoặc ung thư thực quản, dạ dày, ruột kết hoặc trực tràng có thể làm suy yếu lớp niêm mạc của đường tiêu hóa và gây chảy máu.'
+
+MERGE (o1:disease {id: 'ung_thư_dạ_dày_disease'})
+MERGE (o2:disease {id: 'khối_u_disease'})
+MERGE (o1)-[r51:isSymptomOf]->(o2)
+SET r51.text = 'Khối u: Các khối u ác tính hoặc lành tính hoặc ung thư thực quản, dạ dày, ruột kết hoặc trực tràng có thể làm suy yếu lớp niêm mạc của đường tiêu hóa và gây chảy máu.'
+
+MERGE (o1:disease {id: 'ung_thư_ruột_kết_disease'})
+MERGE (o2:disease {id: 'khối_u_disease'})
+MERGE (o1)-[r52:isSymptomOf]->(o2)
+SET r52.text = 'Khối u: Các khối u ác tính hoặc lành tính hoặc ung thư thực quản, dạ dày, ruột kết hoặc trực tràng có thể làm suy yếu lớp niêm mạc của đường tiêu hóa và gây chảy máu.'
+
+MERGE (o1:disease {id: 'ung_thư_trực_tràng_disease'})
+MERGE (o2:disease {id: 'khối_u_disease'})
+MERGE (o1)-[r53:isSymptomOf]->(o2)
+SET r53.text = 'Khối u: Các khối u ác tính hoặc lành tính hoặc ung thư thực quản, dạ dày, ruột kết hoặc trực tràng có thể làm suy yếu lớp niêm mạc của đường tiêu hóa và gây chảy máu.'
+
+MERGE (o1:disease {id: 'loạn_sản_mạch_máu_disease'})
+MERGE (o2:symptom {id: 'chảy_máu_ồ_ạt_nhiều_symptom'})
+MERGE (o1)-[r54:isSymptomOf]->(o2)
+SET r54.text = 'Loạn sản mạch máu, các dị dạng mạch máu. Gây chảy máu ồ ạt nhiều khi khó tìm thấy nơi xuất phát.'
+
+MERGE (o1:disease {id: 'dị_dạng_mạch_máu_disease'})
+MERGE (o2:symptom {id: 'chảy_máu_ồ_ạt_nhiều_symptom'})
+MERGE (o1)-[r55:isSymptomOf]->(o2)
+SET r55.text = 'Loạn sản mạch máu, các dị dạng mạch máu. Gây chảy máu ồ ạt nhiều khi khó tìm thấy nơi xuất phát.'
+
+MERGE (o1:disease {id: 'bệnh_trĩ_disease'})
+MERGE (o2:symptom {id: 'xuất_huyết_tiêu_hóa_symptom'})
+MERGE (o1)-[r56:isSymptomOf]->(o2)
+SET r56.text = 'Bệnh trĩ: Đây là những tĩnh mạch sưng phồng ở hậu môn hoặc trực tràng dưới, tương tự như chứng giãn tĩnh mạch và có thể gây xuất huyết tiêu hóa.'
+
+MERGE (o1:disease {id: 'bệnh_trĩ_disease'})
+MERGE (o2:organ {id: 'hậu_môn_hoặc_trực_tràng_dưới_organ'})
+MERGE (o1)-[r57:locatedIn]->(o2)
+SET r57.text = 'Bệnh trĩ: Đây là những tĩnh mạch sưng phồng ở hậu môn hoặc trực tràng dưới, tương tự như chứng giãn tĩnh mạch và có thể gây xuất huyết tiêu hóa.'
+
+MERGE (o1:disease {id: 'nứt_ở_hậu_môn_disease'})
+MERGE (o2:symptom {id: 'xuất_huyết_tiêu_hóa_symptom'})
+MERGE (o1)-[r58:isSymptomOf]->(o2)
+SET r58.text = 'Nứt ở hậu môn: Nứt hậu môn cũng có thể gây xuất huyết tiêu hóa'
+
+MERGE (o1:disease {id: 'viêm_niêm_mạc_trực_tràng_(proctitis)_disease'})
+MERGE (o2:symptom {id: 'chảy_máu_trực_tràng_symptom'})
+MERGE (o1)-[r59:isSymptomOf]->(o2)
+SET r59.text = 'Viêm niêm mạc trực tràng (Proctitis): Viêm niêm mạc trực tràng có thể gây chảy máu trực tràng.'
+
+MERGE (o1:symptom {id: 'xuất_huyết_tiêu_hóa_symptom'})
+MERGE (o2:test {id: 'các_phương_pháp_sau_test'})
+MERGE (o1)-[r60:diagnosedBy]->(o2)
+SET r60.text = 'Để chẩn đoán xuất huyết tiêu hóa, các bác sĩ có thể áp dụng các phương pháp sau.'
+
+MERGE (o1:test {id: 'xét_nghiệm_máu_test'})
+MERGE (o2:symptom {id: 'xuất_huyết_tiêu_hóa_symptom'})
+MERGE (o1)-[r61:diagnosedBy]->(o2)
+SET r61.text = 'Xét nghiệm máu: Như công thức máu, chức năng gan, thận và một số xét nghiệm đánh giá tình trạng thiếu máu.'
+
+MERGE (o1:test {id: 'nội_soi_đường_tiêu_hóa_test'})
+MERGE (o2:symptom {id: 'xuất_huyết_tiêu_hóa_symptom'})
+MERGE (o1)-[r62:diagnosedBy]->(o2)
+SET r62.text = 'Nội soi đường tiêu hóa: Bác sĩ có thể chỉ định nội soi dạ dày hoặc nội soi toàn bộ đại tràng.'
+
+MERGE (o1:test {id: 'nội_soi_dạ_dày_test'})
+MERGE (o2:symptom {id: 'xuất_huyết_tiêu_hóa_symptom'})
+MERGE (o1)-[r63:diagnosedBy]->(o2)
+SET r63.text = 'Nội soi đường tiêu hóa: Bác sĩ có thể chỉ định nội soi dạ dày hoặc nội soi toàn bộ đại tràng.'
+
+MERGE (o1:test {id: 'nội_soi_toàn_bộ_đại_tràng_test'})
+MERGE (o2:symptom {id: 'xuất_huyết_tiêu_hóa_symptom'})
+MERGE (o1)-[r64:diagnosedBy]->(o2)
+SET r64.text = 'Nội soi đường tiêu hóa: Bác sĩ có thể chỉ định nội soi dạ dày hoặc nội soi toàn bộ đại tràng.'
+
+MERGE (o1:test {id: 'chụp_cắt_lớp_vi_tính_mạch_máu_test'})
+MERGE (o2:symptom {id: 'xuất_huyết_tiêu_hóa_symptom'})
+MERGE (o1)-[r65:diagnosedBy]->(o2)
+SET r65.text = 'Chụp cắt lớp vi tính mạch máu: Cho phép xác định một mạch đang bị chảy máu.'
+
+MERGE (o1:disease {id: 'xuất_huyết_tiêu_hóa_disease'})
+MERGE (o2:disease {id: 'biến_chứng_đáng_lo_ngại_disease'})
+MERGE (o1)-[r66:isSymptomOf]->(o2)
+SET r66.text = 'Xuất huyết tiêu hóa nếu không được điều trị sớm có thể dẫn đến rất nhiều biến chứng đáng lo ngại.'
+
+MERGE (o1:disease {id: 'thiếu_máu_mãn_tính_disease'})
+MERGE (o2:symptom {id: 'tình_trạng_chảy_máu_kéo_dài_symptom'})
+MERGE (o1)-[r67:causedBy]->(o2)
+SET r67.text = 'Thiếu máu mãn tính: Tình trạng chảy máu kéo dài có thể dẫn đến thiếu huyết sắc tố và hồng cầu, gây hội chứng thiếu máu mãn tính.'
+
+MERGE (o1:symptom {id: 'thiếu_huyết_sắc_tố_và_hồng_cầu_symptom'})
+MERGE (o2:disease {id: 'thiếu_máu_mãn_tính_disease'})
+MERGE (o1)-[r68:isSymptomOf]->(o2)
+SET r68.text = 'Thiếu máu mãn tính: Tình trạng chảy máu kéo dài có thể dẫn đến thiếu huyết sắc tố và hồng cầu, gây hội chứng thiếu máu mãn tính.'
+
+MERGE (o1:symptom {id: 'đau_ngực_symptom'})
+MERGE (o2:disease {id: 'thiếu_máu_mãn_tính_disease'})
+MERGE (o1)-[r69:isSymptomOf]->(o2)
+SET r69.text = 'Các triệu chứng của hội chứng thiếu máu bao gồm đau ngực, chóng mặt, mệt mỏi, suy nhược, nhức đầu, khó thở và tinh thần không minh mẫn, kém tập trung, giảm năng suất lao động và học tập.'
+
+MERGE (o1:symptom {id: 'chóng_mặt_symptom'})
+MERGE (o2:disease {id: 'thiếu_máu_mãn_tính_disease'})
+MERGE (o1)-[r70:isSymptomOf]->(o2)
+SET r70.text = 'Các triệu chứng của hội chứng thiếu máu bao gồm đau ngực, chóng mặt, mệt mỏi, suy nhược, nhức đầu, khó thở và tinh thần không minh mẫn, kém tập trung, giảm năng suất lao động và học tập.'
+
+MERGE (o1:symptom {id: 'mệt_mỏi_symptom'})
+MERGE (o2:disease {id: 'thiếu_máu_mãn_tính_disease'})
+MERGE (o1)-[r71:isSymptomOf]->(o2)
+SET r71.text = 'Các triệu chứng của hội chứng thiếu máu bao gồm đau ngực, chóng mặt, mệt mỏi, suy nhược, nhức đầu, khó thở và tinh thần không minh mẫn, kém tập trung, giảm năng suất lao động và học tập.'
+
+MERGE (o1:symptom {id: 'suy_nhược_symptom'})
+MERGE (o2:disease {id: 'thiếu_máu_mãn_tính_disease'})
+MERGE (o1)-[r72:isSymptomOf]->(o2)
+SET r72.text = 'Các triệu chứng của hội chứng thiếu máu bao gồm đau ngực, chóng mặt, mệt mỏi, suy nhược, nhức đầu, khó thở và tinh thần không minh mẫn, kém tập trung, giảm năng suất lao động và học tập.'
+
+MERGE (o1:symptom {id: 'nhức_đầu_symptom'})
+MERGE (o2:disease {id: 'thiếu_máu_mãn_tính_disease'})
+MERGE (o1)-[r73:isSymptomOf]->(o2)
+SET r73.text = 'Các triệu chứng của hội chứng thiếu máu bao gồm đau ngực, chóng mặt, mệt mỏi, suy nhược, nhức đầu, khó thở và tinh thần không minh mẫn, kém tập trung, giảm năng suất lao động và học tập.'
+
+MERGE (o1:symptom {id: 'khó_thở_symptom'})
+MERGE (o2:disease {id: 'thiếu_máu_mãn_tính_disease'})
+MERGE (o1)-[r74:isSymptomOf]->(o2)
+SET r74.text = 'Các triệu chứng của hội chứng thiếu máu bao gồm đau ngực, chóng mặt, mệt mỏi, suy nhược, nhức đầu, khó thở và tinh thần không minh mẫn, kém tập trung, giảm năng suất lao động và học tập.'
+
+MERGE (o1:symptom {id: 'tinh_thần_không_minh_mẫn_symptom'})
+MERGE (o2:disease {id: 'thiếu_máu_mãn_tính_disease'})
+MERGE (o1)-[r75:isSymptomOf]->(o2)
+SET r75.text = 'Các triệu chứng của hội chứng thiếu máu bao gồm đau ngực, chóng mặt, mệt mỏi, suy nhược, nhức đầu, khó thở và tinh thần không minh mẫn, kém tập trung, giảm năng suất lao động và học tập.'
+
+MERGE (o1:symptom {id: 'kém_tập_trung_symptom'})
+MERGE (o2:disease {id: 'thiếu_máu_mãn_tính_disease'})
+MERGE (o1)-[r76:isSymptomOf]->(o2)
+SET r76.text = 'Các triệu chứng của hội chứng thiếu máu bao gồm đau ngực, chóng mặt, mệt mỏi, suy nhược, nhức đầu, khó thở và tinh thần không minh mẫn, kém tập trung, giảm năng suất lao động và học tập.'
+
+MERGE (o1:symptom {id: 'giảm_năng_suất_lao_động_symptom'})
+MERGE (o2:disease {id: 'thiếu_máu_mãn_tính_disease'})
+MERGE (o1)-[r77:isSymptomOf]->(o2)
+SET r77.text = 'Các triệu chứng của hội chứng thiếu máu bao gồm đau ngực, chóng mặt, mệt mỏi, suy nhược, nhức đầu, khó thở và tinh thần không minh mẫn, kém tập trung, giảm năng suất lao động và học tập.'
+
+MERGE (o1:symptom {id: 'giảm_năng_suất_học_tập_symptom'})
+MERGE (o2:disease {id: 'thiếu_máu_mãn_tính_disease'})
+MERGE (o1)-[r78:isSymptomOf]->(o2)
+SET r78.text = 'Các triệu chứng của hội chứng thiếu máu bao gồm đau ngực, chóng mặt, mệt mỏi, suy nhược, nhức đầu, khó thở và tinh thần không minh mẫn, kém tập trung, giảm năng suất lao động và học tập.'
+
+MERGE (o1:disease {id: 'thiếu_máu_cấp_tính_disease'})
+MERGE (o2:symptom {id: 'mất_máu_nghiêm_trọng_symptom'})
+MERGE (o1)-[r79:causedBy]->(o2)
+SET r79.text = 'Thiếu máu cấp tính: Trong trường hợp mất máu nghiêm trọng có thể gây khó khăn cho việc bơm máu của tim.'
+
+MERGE (o1:symptom {id: 'da_lạnh_và_xanh_symptom'})
+MERGE (o2:disease {id: 'mất_máu_cấp_tính_disease'})
+MERGE (o1)-[r80:isSymptomOf]->(o2)
+SET r80.text = 'Các dấu hiệu mất máu cấp tính bao gồm da lạnh và xanh, vã mồ hôi; đầu óc lú lẫn hoặc bị kích động; giảm lượng nước tiểu; thở nhanh và mất ý thức.'
+
+MERGE (o1:symptom {id: 'vã_mồ_hôi_symptom'})
+MERGE (o2:disease {id: 'mất_máu_cấp_tính_disease'})
+MERGE (o1)-[r81:isSymptomOf]->(o2)
+SET r81.text = 'Các dấu hiệu mất máu cấp tính bao gồm da lạnh và xanh, vã mồ hôi; đầu óc lú lẫn hoặc bị kích động; giảm lượng nước tiểu; thở nhanh và mất ý thức.'
+
+MERGE (o1:symptom {id: 'đầu_óc_lú_lẫn_symptom'})
+MERGE (o2:disease {id: 'mất_máu_cấp_tính_disease'})
+MERGE (o1)-[r82:isSymptomOf]->(o2)
+SET r82.text = 'Các dấu hiệu mất máu cấp tính bao gồm da lạnh và xanh, vã mồ hôi; đầu óc lú lẫn hoặc bị kích động; giảm lượng nước tiểu; thở nhanh và mất ý thức.'
+
+MERGE (o1:symptom {id: 'bị_kích_động_symptom'})
+MERGE (o2:disease {id: 'mất_máu_cấp_tính_disease'})
+MERGE (o1)-[r83:isSymptomOf]->(o2)
+SET r83.text = 'Các dấu hiệu mất máu cấp tính bao gồm da lạnh và xanh, vã mồ hôi; đầu óc lú lẫn hoặc bị kích động; giảm lượng nước tiểu; thở nhanh và mất ý thức.'
+
+MERGE (o1:symptom {id: 'giảm_lượng_nước_tiểu_symptom'})
+MERGE (o2:disease {id: 'mất_máu_cấp_tính_disease'})
+MERGE (o1)-[r84:isSymptomOf]->(o2)
+SET r84.text = 'Các dấu hiệu mất máu cấp tính bao gồm da lạnh và xanh, vã mồ hôi; đầu óc lú lẫn hoặc bị kích động; giảm lượng nước tiểu; thở nhanh và mất ý thức.'
+
+MERGE (o1:symptom {id: 'thở_nhanh_symptom'})
+MERGE (o2:disease {id: 'mất_máu_cấp_tính_disease'})
+MERGE (o1)-[r85:isSymptomOf]->(o2)
+SET r85.text = 'Các dấu hiệu mất máu cấp tính bao gồm da lạnh và xanh, vã mồ hôi; đầu óc lú lẫn hoặc bị kích động; giảm lượng nước tiểu; thở nhanh và mất ý thức.'
+
+MERGE (o1:symptom {id: 'mất_ý_thức_symptom'})
+MERGE (o2:disease {id: 'mất_máu_cấp_tính_disease'})
+MERGE (o1)-[r86:isSymptomOf]->(o2)
+SET r86.text = 'Các dấu hiệu mất máu cấp tính bao gồm da lạnh và xanh, vã mồ hôi; đầu óc lú lẫn hoặc bị kích động; giảm lượng nước tiểu; thở nhanh và mất ý thức.'
+
+MERGE (o1:disease {id: 'sốc_disease'})
+MERGE (o2:symptom {id: 'chảy_máu_cấp_tính_symptom'})
+MERGE (o1)-[r87:causedBy]->(o2)
+SET r87.text = 'Sốc - Tử vong: Chảy máu cấp tính có thể làm tổn thương các cơ quan và gây suy nội tạng.'
+
+MERGE (o1:disease {id: 'suy_nội_tạng_disease'})
+MERGE (o2:symptom {id: 'chảy_máu_cấp_tính_symptom'})
+MERGE (o1)-[r88:causedBy]->(o2)
+SET r88.text = 'Sốc - Tử vong: Chảy máu cấp tính có thể làm tổn thương các cơ quan và gây suy nội tạng.'
+
+MERGE (o1:disease {id: 'tử_vong_disease'})
+MERGE (o2:disease {id: 'sốc_disease'})
+MERGE (o1)-[r89:causedBy]->(o2)
+SET r89.text = 'Nếu không được điều trị, tình trạng sốc có thể gây ra những tổn thương không thể phục hồi hoặc dẫn đến tử vong.'
+
+MERGE (o1:symptom {id: 'huyết_áp_thấp_symptom'})
+MERGE (o2:disease {id: 'sốc_disease'})
+MERGE (o1)-[r90:isSymptomOf]->(o2)
+SET r90.text = 'Các dấu hiệu và triệu chứng của sốc bao gồm huyết áp thấp, tụt, hoặc không đo được, môi và móng tay hơi xanh, đau ngực, lú lẫn, chóng mặt, lo lắng, da xanh xao, lượng nước tiểu giảm hoặc không có, mạch đập nhanh nhưng yếu, thở nông và bất tỉnh.'
+
+MERGE (o1:symptom {id: 'môi_và_móng_tay_hơi_xanh_symptom'})
+MERGE (o2:disease {id: 'sốc_disease'})
+MERGE (o1)-[r91:isSymptomOf]->(o2)
+SET r91.text = 'Các dấu hiệu và triệu chứng của sốc bao gồm huyết áp thấp, tụt, hoặc không đo được, môi và móng tay hơi xanh, đau ngực, lú lẫn, chóng mặt, lo lắng, da xanh xao, lượng nước tiểu giảm hoặc không có, mạch đập nhanh nhưng yếu, thở nông và bất tỉnh.'
+
+MERGE (o1:symptom {id: 'đau_ngực_symptom'})
+MERGE (o2:disease {id: 'sốc_disease'})
+MERGE (o1)-[r92:isSymptomOf]->(o2)
+SET r92.text = 'Các dấu hiệu và triệu chứng của sốc bao gồm huyết áp thấp, tụt, hoặc không đo được, môi và móng tay hơi xanh, đau ngực, lú lẫn, chóng mặt, lo lắng, da xanh xao, lượng nước tiểu giảm hoặc không có, mạch đập nhanh nhưng yếu, thở nông và bất tỉnh.'
+
+MERGE (o1:symptom {id: 'lú_lẫn_symptom'})
+MERGE (o2:disease {id: 'sốc_disease'})
+MERGE (o1)-[r93:isSymptomOf]->(o2)
+SET r93.text = 'Các dấu hiệu và triệu chứng của sốc bao gồm huyết áp thấp, tụt, hoặc không đo được, môi và móng tay hơi xanh, đau ngực, lú lẫn, chóng mặt, lo lắng, da xanh xao, lượng nước tiểu giảm hoặc không có, mạch đập nhanh nhưng yếu, thở nông và bất tỉnh.'
+
+MERGE (o1:symptom {id: 'chóng_mặt_symptom'})
+MERGE (o2:disease {id: 'sốc_disease'})
+MERGE (o1)-[r94:isSymptomOf]->(o2)
+SET r94.text = 'Các dấu hiệu và triệu chứng của sốc bao gồm huyết áp thấp, tụt, hoặc không đo được, môi và móng tay hơi xanh, đau ngực, lú lẫn, chóng mặt, lo lắng, da xanh xao, lượng nước tiểu giảm hoặc không có, mạch đập nhanh nhưng yếu, thở nông và bất tỉnh.'
+
+MERGE (o1:symptom {id: 'lo_lắng_symptom'})
+MERGE (o2:disease {id: 'sốc_disease'})
+MERGE (o1)-[r95:isSymptomOf]->(o2)
+SET r95.text = 'Các dấu hiệu và triệu chứng của sốc bao gồm huyết áp thấp, tụt, hoặc không đo được, môi và móng tay hơi xanh, đau ngực, lú lẫn, chóng mặt, lo lắng, da xanh xao, lượng nước tiểu giảm hoặc không có, mạch đập nhanh nhưng yếu, thở nông và bất tỉnh.'
+
+MERGE (o1:symptom {id: 'da_xanh_xao_symptom'})
+MERGE (o2:disease {id: 'sốc_disease'})
+MERGE (o1)-[r96:isSymptomOf]->(o2)
+SET r96.text = 'Các dấu hiệu và triệu chứng của sốc bao gồm huyết áp thấp, tụt, hoặc không đo được, môi và móng tay hơi xanh, đau ngực, lú lẫn, chóng mặt, lo lắng, da xanh xao, lượng nước tiểu giảm hoặc không có, mạch đập nhanh nhưng yếu, thở nông và bất tỉnh.'
+
+MERGE (o1:symptom {id: 'lượng_nước_tiểu_giảm_symptom'})
+MERGE (o2:disease {id: 'sốc_disease'})
+MERGE (o1)-[r97:isSymptomOf]->(o2)
+SET r97.text = 'Các dấu hiệu và triệu chứng của sốc bao gồm huyết áp thấp, tụt, hoặc không đo được, môi và móng tay hơi xanh, đau ngực, lú lẫn, chóng mặt, lo lắng, da xanh xao, lượng nước tiểu giảm hoặc không có, mạch đập nhanh nhưng yếu, thở nông và bất tỉnh.'
+
+MERGE (o1:symptom {id: 'mạch_đập_nhanh_nhưng_yếu_symptom'})
+MERGE (o2:disease {id: 'sốc_disease'})
+MERGE (o1)-[r98:isSymptomOf]->(o2)
+SET r98.text = 'Các dấu hiệu và triệu chứng của sốc bao gồm huyết áp thấp, tụt, hoặc không đo được, môi và móng tay hơi xanh, đau ngực, lú lẫn, chóng mặt, lo lắng, da xanh xao, lượng nước tiểu giảm hoặc không có, mạch đập nhanh nhưng yếu, thở nông và bất tỉnh.'
+
+MERGE (o1:symptom {id: 'thở_nông_symptom'})
+MERGE (o2:disease {id: 'sốc_disease'})
+MERGE (o1)-[r99:isSymptomOf]->(o2)
+SET r99.text = 'Các dấu hiệu và triệu chứng của sốc bao gồm huyết áp thấp, tụt, hoặc không đo được, môi và móng tay hơi xanh, đau ngực, lú lẫn, chóng mặt, lo lắng, da xanh xao, lượng nước tiểu giảm hoặc không có, mạch đập nhanh nhưng yếu, thở nông và bất tỉnh.'
+
+MERGE (o1:symptom {id: 'bất_tỉnh_symptom'})
+MERGE (o2:disease {id: 'sốc_disease'})
+MERGE (o1)-[r100:isSymptomOf]->(o2)
+SET r100.text = 'Các dấu hiệu và triệu chứng của sốc bao gồm huyết áp thấp, tụt, hoặc không đo được, môi và móng tay hơi xanh, đau ngực, lú lẫn, chóng mặt, lo lắng, da xanh xao, lượng nước tiểu giảm hoặc không có, mạch đập nhanh nhưng yếu, thở nông và bất tỉnh.'
+
+MERGE (o1:disease {id: 'xuất_huyết_tiêu_hóa_disease'})
+MERGE (o2:treatment {id: 'bảo_vệ_đường_hô_hấp_treatment'})
+MERGE (o1)-[r101:treatedBy]->(o2)
+SET r101.text = 'Trong điều trị xuất huyết tiêu hóa chủ yếu tuân theo nguyên tắc bảo vệ đường hô hấp, bù dịch, truyền máu (trong trường hợp mất máu nhiều); kết hợp dùng thuốc.'
+
+MERGE (o1:disease {id: 'xuất_huyết_tiêu_hóa_disease'})
+MERGE (o2:treatment {id: 'bù_dịch_treatment'})
+MERGE (o1)-[r102:treatedBy]->(o2)
+SET r102.text = 'Trong điều trị xuất huyết tiêu hóa chủ yếu tuân theo nguyên tắc bảo vệ đường hô hấp, bù dịch, truyền máu (trong trường hợp mất máu nhiều); kết hợp dùng thuốc.'
+
+MERGE (o1:disease {id: 'xuất_huyết_tiêu_hóa_disease'})
+MERGE (o2:treatment {id: 'truyền_máu_treatment'})
+MERGE (o1)-[r103:treatedBy]->(o2)
+SET r103.text = 'Trong điều trị xuất huyết tiêu hóa chủ yếu tuân theo nguyên tắc bảo vệ đường hô hấp, bù dịch, truyền máu (trong trường hợp mất máu nhiều); kết hợp dùng thuốc.'
+
+MERGE (o1:disease {id: 'xuất_huyết_tiêu_hóa_disease'})
+MERGE (o2:treatment {id: 'dùng_thuốc_treatment'})
+MERGE (o1)-[r104:treatedBy]->(o2)
+SET r104.text = 'Trong điều trị xuất huyết tiêu hóa chủ yếu tuân theo nguyên tắc bảo vệ đường hô hấp, bù dịch, truyền máu (trong trường hợp mất máu nhiều); kết hợp dùng thuốc.'
+
+MERGE (o1:disease {id: 'xuất_huyết_tiêu_hóa_disease'})
+MERGE (o2:treatment {id: 'nội_soi_treatment'})
+MERGE (o1)-[r105:treatedBy]->(o2)
+SET r105.text = 'Một số trường hợp cần nội soi hoặc nút mạch.'
+
+MERGE (o1:disease {id: 'xuất_huyết_tiêu_hóa_disease'})
+MERGE (o2:treatment {id: 'nút_mạch_treatment'})
+MERGE (o1)-[r106:treatedBy]->(o2)
+SET r106.text = 'Một số trường hợp cần nội soi hoặc nút mạch.'
+
+MERGE (o1:disease {id: 'xuất_huyết_tiêu_hóa_trên_disease'})
+MERGE (o2:symptom {id: 'hít_phải_máu_symptom'})
+MERGE (o1)-[r107:causedBy]->(o2)
+SET r107.text = 'Xuất huyết tiêu hóa trên có thể gây nguy cơ tàn phế hoặc tử vong nếu hít phải máu.'
+
+MERGE (o1:test {id: 'nội_soi_dạ_dày_test'})
+MERGE (o2:disease {id: 'xuất_huyết_tiêu_hóa_trên_disease'})
+MERGE (o1)-[r108:diagnosedBy]->(o2)
+SET r108.text = 'Để tránh rủi ro này, những bệnh nhân có phản xạ nôn kém, bị hôn mê hoặc mất ý thức hoặc nội soi dạ dày cần được xem xét áp dụng phương pháp đặt nội khí quản giúp thở.'
+
+MERGE (o1:treatment {id: 'đặt_nội_khí_quản_giúp_thở_treatment'})
+MERGE (o2:disease {id: 'xuất_huyết_tiêu_hóa_trên_disease'})
+MERGE (o1)-[r109:treatedBy]->(o2)
+SET r109.text = 'Để tránh rủi ro này, những bệnh nhân có phản xạ nôn kém, bị hôn mê hoặc mất ý thức hoặc nội soi dạ dày cần được xem xét áp dụng phương pháp đặt nội khí quản giúp thở.'
+
+MERGE (o1:disease {id: 'xuất_huyết_tiêu_hóa_disease'})
+MERGE (o2:treatment {id: 'bù_dịch_treatment'})
+MERGE (o1)-[r110:treatedBy]->(o2)
+SET r110.text = 'Người bệnh bị hạ huyết áp hoặc xuất huyết tiêu hóa nhiều cần được bù dịch thông qua đường tĩnh mạch càng sớm càng tốt.'
+
+MERGE (o1:treatment {id: 'truyền_dịch_treatment'})
+MERGE (o2:disease {id: 'xuất_huyết_tiêu_hóa_disease'})
+MERGE (o1)-[r111:treatedBy]->(o2)
+SET r111.text = 'Một kim lớn sẽ được cắm vào mạch máu nơi khuỷu tay để truyền dịch với dung lượng trung bình từ 500-1000ml nước muối sinh lý và ở trẻ em tối đa là 2 lít (20 ml / kg).'
+
+MERGE (o1:disease {id: 'thiếu_máu_nghiêm_trọng_disease'})
+MERGE (o2:treatment {id: 'truyền_máu_treatment'})
+MERGE (o1)-[r112:treatedBy]->(o2)
+SET r112.text = 'Ngoài ra, đối với các trường hợp thiếu máu nghiêm trọng, người bệnh cần được truyền máu..'
+
+MERGE (o1:treatment {id: 'truyền_máu_treatment'})
+MERGE (o2:disease {id: 'bệnh_mạch_vành_disease'})
+MERGE (o1)-[r113:aggravatedBy]->(o2)
+SET r113.text = 'Tuy nhiên, đối với các trường hợp mắc bệnh mạch vành, suy tim mãn, người cao tuổi, trẻ em, việc truyền máu nên được xem xét cẩn trọng để tránh các biến chứng.'
+
+MERGE (o1:treatment {id: 'truyền_máu_treatment'})
+MERGE (o2:disease {id: 'suy_tim_mãn_disease'})
+MERGE (o1)-[r114:aggravatedBy]->(o2)
+SET r114.text = 'Tuy nhiên, đối với các trường hợp mắc bệnh mạch vành, suy tim mãn, người cao tuổi, trẻ em, việc truyền máu nên được xem xét cẩn trọng để tránh các biến chứng.'
+
+MERGE (o1:treatment {id: 'truyền_máu_treatment'})
+MERGE (o2:lifestyle {id: 'người_cao_tuổi_lifestyle'})
+MERGE (o1)-[r115:aggravatedBy]->(o2)
+SET r115.text = 'Tuy nhiên, đối với các trường hợp mắc bệnh mạch vành, suy tim mãn, người cao tuổi, trẻ em, việc truyền máu nên được xem xét cẩn trọng để tránh các biến chứng.'
+
+MERGE (o1:treatment {id: 'truyền_máu_treatment'})
+MERGE (o2:lifestyle {id: 'trẻ_em_lifestyle'})
+MERGE (o1)-[r116:aggravatedBy]->(o2)
+SET r116.text = 'Tuy nhiên, đối với các trường hợp mắc bệnh mạch vành, suy tim mãn, người cao tuổi, trẻ em, việc truyền máu nên được xem xét cẩn trọng để tránh các biến chứng.'
+
+MERGE (o1:disease {id: 'xuất_huyết_tiêu_hóa_trên_disease'})
+MERGE (o2:treatment {id: 'thuốc_ức_chế_bơm_proton_đường_tĩnh_mạch_(ppi)_treatment'})
+MERGE (o1)-[r117:treatedBy]->(o2)
+SET r117.text = 'Đối với xuất huyết tiêu hóa trên, người bệnh được dùng thuốc ức chế bơm proton đường tĩnh mạch (PPI) để điều trị.'
+
+MERGE (o1:disease {id: 'xuất_huyết_tiêu_hóa_disease'})
+MERGE (o2:disease {id: 'giãn_tĩnh_mạch_disease'})
+MERGE (o1)-[r118:causedBy]->(o2)
+SET r118.text = 'Đối với các trường hợp xuất huyết tiêu hóa do giãn tĩnh mạch trong bệnh lý xơ gan, người bệnh nên được dùng thuốc co mạch tạng.'
+
+MERGE (o1:disease {id: 'xuất_huyết_tiêu_hóa_disease'})
+MERGE (o2:disease {id: 'xơ_gan_disease'})
+MERGE (o1)-[r119:causedBy]->(o2)
+SET r119.text = 'Đối với các trường hợp xuất huyết tiêu hóa do giãn tĩnh mạch trong bệnh lý xơ gan, người bệnh nên được dùng thuốc co mạch tạng.'
+
+MERGE (o1:disease {id: 'xuất_huyết_tiêu_hóa_disease'})
+MERGE (o2:treatment {id: 'thuốc_co_mạch_tạng_treatment'})
+MERGE (o1)-[r120:treatedBy]->(o2)
+SET r120.text = 'Đối với các trường hợp xuất huyết tiêu hóa do giãn tĩnh mạch trong bệnh lý xơ gan, người bệnh nên được dùng thuốc co mạch tạng.'
+
+MERGE (o1:disease {id: 'xuất_huyết_tiêu_hóa_disease'})
+MERGE (o2:treatment {id: 'cầm_máu_treatment'})
+MERGE (o1)-[r121:treatedBy]->(o2)
+SET r121.text = 'Khoảng 80% bệnh nhân xuất huyết tiêu hóa có thể tự cầm máu, song 20% trường hợp còn lại cần có biện pháp điều trị đặc hiệu.'
+
+MERGE (o1:disease {id: 'xuất_huyết_tiêu_hóa_disease'})
+MERGE (o2:lifestyle {id: 'người_cao_tuổi_lifestyle'})
+MERGE (o1)-[r122:aggravatedBy]->(o2)
+SET r122.text = 'Việc điều trị phụ thuộc vào vị trí bị chảy máu và cần được tiến hành từ sớm để giảm thiểu nguy cơ tử vong, đặc biệt ở người cao tuổi.'
+
+MERGE (o1:disease {id: 'loét_dạ_dày_disease'})
+MERGE (o2:treatment {id: 'nội_soi_cầm_máu_treatment'})
+MERGE (o1)-[r123:treatedBy]->(o2)
+SET r123.text = 'Loét dạ dày, đang chảy máu hoặc chảy máu tái phát: Điều trị bằng nội soi cầm máu tại chỗ bằng nhiều phương tiện khác nhau như dùng nhiệt điện, hoá chất gây tắc mạch, co mạch, kẹp clip.'
+
+MERGE (o1:disease {id: 'loét_dạ_dày_disease'})
+MERGE (o2:treatment {id: 'dùng_nhiệt_điện_treatment'})
+MERGE (o1)-[r124:treatedBy]->(o2)
+SET r124.text = 'Loét dạ dày, đang chảy máu hoặc chảy máu tái phát: Điều trị bằng nội soi cầm máu tại chỗ bằng nhiều phương tiện khác nhau như dùng nhiệt điện, hoá chất gây tắc mạch, co mạch, kẹp clip.'
+
+MERGE (o1:disease {id: 'loét_dạ_dày_disease'})
+MERGE (o2:treatment {id: 'hoá_chất_gây_tắc_mạch_treatment'})
+MERGE (o1)-[r125:treatedBy]->(o2)
+SET r125.text = 'Loét dạ dày, đang chảy máu hoặc chảy máu tái phát: Điều trị bằng nội soi cầm máu tại chỗ bằng nhiều phương tiện khác nhau như dùng nhiệt điện, hoá chất gây tắc mạch, co mạch, kẹp clip.'
+
+MERGE (o1:disease {id: 'loét_dạ_dày_disease'})
+MERGE (o2:treatment {id: 'co_mạch_treatment'})
+MERGE (o1)-[r126:treatedBy]->(o2)
+SET r126.text = 'Loét dạ dày, đang chảy máu hoặc chảy máu tái phát: Điều trị bằng nội soi cầm máu tại chỗ bằng nhiều phương tiện khác nhau như dùng nhiệt điện, hoá chất gây tắc mạch, co mạch, kẹp clip.'
+
+MERGE (o1:disease {id: 'loét_dạ_dày_disease'})
+MERGE (o2:treatment {id: 'kẹp_clip_treatment'})
+MERGE (o1)-[r127:treatedBy]->(o2)
+SET r127.text = 'Loét dạ dày, đang chảy máu hoặc chảy máu tái phát: Điều trị bằng nội soi cầm máu tại chỗ bằng nhiều phương tiện khác nhau như dùng nhiệt điện, hoá chất gây tắc mạch, co mạch, kẹp clip.'
+
+MERGE (o1:disease {id: 'loét_dạ_dày_disease'})
+MERGE (o2:treatment {id: 'nút_mạch_treatment'})
+MERGE (o1)-[r128:treatedBy]->(o2)
+SET r128.text = 'Trường hợp khó khăn hơn cần cầm máu bằng phương pháp nút mạch hoặc phẫu thuật.'
+
+MERGE (o1:disease {id: 'loét_dạ_dày_disease'})
+MERGE (o2:treatment {id: 'phẫu_thuật_treatment'})
+MERGE (o1)-[r129:treatedBy]->(o2)
+SET r129.text = 'Trường hợp khó khăn hơn cần cầm máu bằng phương pháp nút mạch hoặc phẫu thuật.'
+
+MERGE (o1:disease {id: 'xuất_huyết_tiêu_hóa_disease'})
+MERGE (o2:disease {id: 'giãn_vỡ_tĩnh_mạch_disease'})
+MERGE (o1)-[r130:causedBy]->(o2)
+SET r130.text = 'Xuất huyết tiêu hóa do giãn vỡ tĩnh mạch: Điều trị bằng thắt vòng, tiêm xơ hoặc phẫu thuật nối thông 2 hệ tĩnh mạch cửa chủ (TIPS).'
+
+MERGE (o1:disease {id: 'xuất_huyết_tiêu_hóa_disease'})
+MERGE (o2:treatment {id: 'thắt_vòng_treatment'})
+MERGE (o1)-[r131:treatedBy]->(o2)
+SET r131.text = 'Xuất huyết tiêu hóa do giãn vỡ tĩnh mạch: Điều trị bằng thắt vòng, tiêm xơ hoặc phẫu thuật nối thông 2 hệ tĩnh mạch cửa chủ (TIPS).'
+
+MERGE (o1:disease {id: 'xuất_huyết_tiêu_hóa_disease'})
+MERGE (o2:treatment {id: 'tiêm_xơ_treatment'})
+MERGE (o1)-[r132:treatedBy]->(o2)
+SET r132.text = 'Xuất huyết tiêu hóa do giãn vỡ tĩnh mạch: Điều trị bằng thắt vòng, tiêm xơ hoặc phẫu thuật nối thông 2 hệ tĩnh mạch cửa chủ (TIPS).'
+
+MERGE (o1:disease {id: 'xuất_huyết_tiêu_hóa_disease'})
+MERGE (o2:treatment {id: 'phẫu_thuật_nối_thông_2_hệ_tĩnh_mạch_cửa_chủ_(tips)_treatment'})
+MERGE (o1)-[r133:treatedBy]->(o2)
+SET r133.text = 'Xuất huyết tiêu hóa do giãn vỡ tĩnh mạch: Điều trị bằng thắt vòng, tiêm xơ hoặc phẫu thuật nối thông 2 hệ tĩnh mạch cửa chủ (TIPS).'
+
+MERGE (o1:disease {id: 'xuất_huyết_tiêu_hóa_thấp_disease'})
+MERGE (o2:disease {id: 'bệnh_lý_túi_thừa_disease'})
+MERGE (o1)-[r134:causedBy]->(o2)
+SET r134.text = 'Xuất huyết tiêu hóa thấp nặng, kéo dài do bệnh lý túi thừa hoặc giãn mạch: Nội soi bằng kẹp clips, cầm máu bằng nhiệt, đốt điện hoặc tiêm epinephrine pha loãng để cầm máu.'
+
+MERGE (o1:disease {id: 'xuất_huyết_tiêu_hóa_thấp_disease'})
+MERGE (o2:disease {id: 'giãn_mạch_disease'})
+MERGE (o1)-[r135:causedBy]->(o2)
+SET r135.text = 'Xuất huyết tiêu hóa thấp nặng, kéo dài do bệnh lý túi thừa hoặc giãn mạch: Nội soi bằng kẹp clips, cầm máu bằng nhiệt, đốt điện hoặc tiêm epinephrine pha loãng để cầm máu.'
+
+MERGE (o1:disease {id: 'xuất_huyết_tiêu_hóa_thấp_disease'})
+MERGE (o2:treatment {id: 'nội_soi_bằng_kẹp_clips_treatment'})
+MERGE (o1)-[r136:treatedBy]->(o2)
+SET r136.text = 'Xuất huyết tiêu hóa thấp nặng, kéo dài do bệnh lý túi thừa hoặc giãn mạch: Nội soi bằng kẹp clips, cầm máu bằng nhiệt, đốt điện hoặc tiêm epinephrine pha loãng để cầm máu.'
+
+MERGE (o1:disease {id: 'xuất_huyết_tiêu_hóa_thấp_disease'})
+MERGE (o2:treatment {id: 'cầm_máu_bằng_nhiệt_treatment'})
+MERGE (o1)-[r137:treatedBy]->(o2)
+SET r137.text = 'Xuất huyết tiêu hóa thấp nặng, kéo dài do bệnh lý túi thừa hoặc giãn mạch: Nội soi bằng kẹp clips, cầm máu bằng nhiệt, đốt điện hoặc tiêm epinephrine pha loãng để cầm máu.'
+
+MERGE (o1:disease {id: 'xuất_huyết_tiêu_hóa_thấp_disease'})
+MERGE (o2:treatment {id: 'đốt_điện_treatment'})
+MERGE (o1)-[r138:treatedBy]->(o2)
+SET r138.text = 'Xuất huyết tiêu hóa thấp nặng, kéo dài do bệnh lý túi thừa hoặc giãn mạch: Nội soi bằng kẹp clips, cầm máu bằng nhiệt, đốt điện hoặc tiêm epinephrine pha loãng để cầm máu.'
+
+MERGE (o1:disease {id: 'xuất_huyết_tiêu_hóa_thấp_disease'})
+MERGE (o2:treatment {id: 'tiêm_epinephrine_pha_loãng_treatment'})
+MERGE (o1)-[r139:treatedBy]->(o2)
+SET r139.text = 'Xuất huyết tiêu hóa thấp nặng, kéo dài do bệnh lý túi thừa hoặc giãn mạch: Nội soi bằng kẹp clips, cầm máu bằng nhiệt, đốt điện hoặc tiêm epinephrine pha loãng để cầm máu.'
+
+MERGE (o1:disease {id: 'polyp_disease'})
+MERGE (o2:treatment {id: 'cắt_bỏ_polyp_treatment'})
+MERGE (o1)-[r140:treatedBy]->(o2)
+SET r140.text = 'Nếu có Polyp thì có thể được cắt bỏ polyp.'
+
+MERGE (o1:disease {id: 'xuất_huyết_tiêu_hóa_thấp_disease'})
+MERGE (o2:treatment {id: 'phẫu_thuật_cắt_một_phần_đại_tràng_treatment'})
+MERGE (o1)-[r141:treatedBy]->(o2)
+SET r141.text = 'Phẫu thuật cắt một phần đại tràng có thể được áp dụng tuỳ trường hợp.'
+
+MERGE (o1:food {id: 'súp__cháo_loãng_food'})
+MERGE (o2:symptom {id: 'dễ_tiêu_hóa_symptom'})
+MERGE (o1)-[r142:relatedTo]->(o2)
+SET r142.text = 'Người bệnh nên ăn các món ăn dễ tiêu hóa như súp, cháo loãng… để dễ tiêu hóa'
+
+MERGE (o1:symptom {id: 'dễ_tiêu_hóa_symptom'})
+MERGE (o2:disease {id: 'xuất_huyết_tiêu_hóa_disease'})
+MERGE (o1)-[r143:isSymptomOf]->(o2)
+SET r143.text = 'Người bệnh nên ăn các món ăn dễ tiêu hóa như súp, cháo loãng… để dễ tiêu hóa'
+
+MERGE (o1:lifestyle {id: 'ăn_uống_khoa_học_lifestyle'})
+MERGE (o2:disease {id: 'xuất_huyết_tiêu_hóa_disease'})
+MERGE (o1)-[r144:preventedBy]->(o2)
+SET r144.text = 'Ăn uống khoa học, trong đó ưu tiên chế độ ăn nhiều rau xanh, chất xơ (tan và không tan).'
+
+MERGE (o1:food {id: 'rau_xanh__chất_xơ_(tan_và_không_tan)_food'})
+MERGE (o2:lifestyle {id: 'ăn_uống_khoa_học_lifestyle'})
+MERGE (o1)-[r145:relatedTo]->(o2)
+SET r145.text = 'Ăn uống khoa học, trong đó ưu tiên chế độ ăn nhiều rau xanh, chất xơ (tan và không tan).'
+
+MERGE (o1:food {id: 'rượu_bia__đồ_ăn_nhanh_(gà_rán__thịt_đông_lạnh…)_food'})
+MERGE (o2:disease {id: 'xuất_huyết_tiêu_hóa_disease'})
+MERGE (o1)-[r146:aggravatedBy]->(o2)
+SET r146.text = 'Hạn chế uống rượu bia, đồ ăn nhanh (gà rán, thịt đông lạnh…); hạn chế ăn cay, nóng, chua, mặn gây hại cho dạ dày, ruột hoặc các thực phẩm gây kích thích dạ dày khác.'
+
+MERGE (o1:food {id: 'ăn_cay__nóng__chua__mặn_food'})
+MERGE (o2:disease {id: 'xuất_huyết_tiêu_hóa_disease'})
+MERGE (o1)-[r147:aggravatedBy]->(o2)
+SET r147.text = 'Hạn chế uống rượu bia, đồ ăn nhanh (gà rán, thịt đông lạnh…); hạn chế ăn cay, nóng, chua, mặn gây hại cho dạ dày, ruột hoặc các thực phẩm gây kích thích dạ dày khác.'
+
+MERGE (o1:organ {id: 'dạ_dày__ruột_organ'})
+MERGE (o2:disease {id: 'xuất_huyết_tiêu_hóa_disease'})
+MERGE (o1)-[r148:affects]->(o2)
+SET r148.text = 'Hạn chế uống rượu bia, đồ ăn nhanh (gà rán, thịt đông lạnh…); hạn chế ăn cay, nóng, chua, mặn gây hại cho dạ dày, ruột hoặc các thực phẩm gây kích thích dạ dày khác.'
+
+MERGE (o1:lifestyle {id: 'duy_trì_chế_độ_vận_động_ít_nhất_30_phút_mỗi_ngày_lifestyle'})
+MERGE (o2:disease {id: 'xuất_huyết_tiêu_hóa_disease'})
+MERGE (o1)-[r149:preventedBy]->(o2)
+SET r149.text = 'Duy trì chế độ vận động ít nhất 30 phút mỗi ngày giúp nhu động ruột hoạt động thuận lợi.'
+
+MERGE (o1:organ {id: 'nhu_động_ruột_organ'})
+MERGE (o2:lifestyle {id: 'duy_trì_chế_độ_vận_động_ít_nhất_30_phút_mỗi_ngày_lifestyle'})
+MERGE (o1)-[r150:relatedTo]->(o2)
+SET r150.text = 'Duy trì chế độ vận động ít nhất 30 phút mỗi ngày giúp nhu động ruột hoạt động thuận lợi.'
+
+MERGE (o1:lifestyle {id: 'ăn_chín__uống_sôi_lifestyle'})
+MERGE (o2:disease {id: 'xuất_huyết_tiêu_hóa_disease'})
+MERGE (o1)-[r151:preventedBy]->(o2)
+SET r151.text = 'Thực hiện ăn chín, uống sôi để tránh bị ngộ độc và nhiễm ký sinh trùng dẫn đến các bệnh về đường tiêu hóa có thể gây xuất huyết.'
+
+MERGE (o1:cause {id: 'ngộ_độc_và_nhiễm_ký_sinh_trùng_cause'})
+MERGE (o2:disease {id: 'xuất_huyết_tiêu_hóa_disease'})
+MERGE (o1)-[r152:causes]->(o2)
+SET r152.text = 'Thực hiện ăn chín, uống sôi để tránh bị ngộ độc và nhiễm ký sinh trùng dẫn đến các bệnh về đường tiêu hóa có thể gây xuất huyết.'
+
+MERGE (o1:disease {id: 'các_bệnh_về_đường_tiêu_hóa_disease'})
+MERGE (o2:disease {id: 'xuất_huyết_tiêu_hóa_disease'})
+MERGE (o1)-[r153:relatedTo]->(o2)
+SET r153.text = 'Thực hiện ăn chín, uống sôi để tránh bị ngộ độc và nhiễm ký sinh trùng dẫn đến các bệnh về đường tiêu hóa có thể gây xuất huyết.'
+
+MERGE (o1:lifestyle {id: 'ăn_quá_no_hoặc_để_bụng_quá_đói_lifestyle'})
+MERGE (o2:disease {id: 'xuất_huyết_tiêu_hóa_disease'})
+MERGE (o1)-[r154:aggravatedBy]->(o2)
+SET r154.text = 'Không ăn quá no hoặc để bụng quá đói, không vận động mạnh hoặc nằm ngay sau khi ăn để tránh nguy cơ đau dạ dày, trào ngược dạ dày- thực quản.'
+
+MERGE (o1:lifestyle {id: 'vận_động_mạnh_hoặc_nằm_ngay_sau_khi_ăn_lifestyle'})
+MERGE (o2:disease {id: 'xuất_huyết_tiêu_hóa_disease'})
+MERGE (o1)-[r155:aggravatedBy]->(o2)
+SET r155.text = 'Không ăn quá no hoặc để bụng quá đói, không vận động mạnh hoặc nằm ngay sau khi ăn để tránh nguy cơ đau dạ dày, trào ngược dạ dày- thực quản.'
+
+MERGE (o1:symptom {id: 'đau_dạ_dày__trào_ngược_dạ_dày-_thực_quản_symptom'})
+MERGE (o2:disease {id: 'xuất_huyết_tiêu_hóa_disease'})
+MERGE (o1)-[r156:isSymptomOf]->(o2)
+SET r156.text = 'Không ăn quá no hoặc để bụng quá đói, không vận động mạnh hoặc nằm ngay sau khi ăn để tránh nguy cơ đau dạ dày, trào ngược dạ dày- thực quản.'
+
+MERGE (o1:lifestyle {id: 'giữ_thói_quen_chăm_sóc_hệ_tiêu_hóa_lifestyle'})
+MERGE (o2:disease {id: 'xuất_huyết_tiêu_hóa_disease'})
+MERGE (o1)-[r157:preventedBy]->(o2)
+SET r157.text = 'Giữ thói quen chăm sóc hệ tiêu hóa để nâng cao miễn dịch bằng cách tẩy giun theo định kỳ, bổ sung men tiêu hóa, collagen và các loại vitamin…'
+
+MERGE (o1:treatment {id: 'tẩy_giun_theo_định_kỳ__bổ_sung_men_tiêu_hóa__collagen_và_các_loại_vitamin_treatment'})
+MERGE (o2:disease {id: 'xuất_huyết_tiêu_hóa_disease'})
+MERGE (o1)-[r158:treatedBy]->(o2)
+SET r158.text = 'Giữ thói quen chăm sóc hệ tiêu hóa để nâng cao miễn dịch bằng cách tẩy giun theo định kỳ, bổ sung men tiêu hóa, collagen và các loại vitamin…'
+
+MERGE (o1:disease {id: 'xuất_huyết_tiêu_hóa_disease'})
+MERGE (o2:symptom {id: 'sặc_máu_symptom'})
+MERGE (o1)-[r159:isSymptomOf]->(o2)
+SET r159.text = 'Xuất huyết tiêu hóa là một tình trạng tiềm ẩn nhiều rủi ro như nguy cơ sặc máu (nếu xuất huyết nhiều) có thể gây chết não và tử vong nhanh chóng.'
+
+MERGE (o1:symptom {id: 'sặc_máu_symptom'})
+MERGE (o2:symptom {id: 'chết_não_và_tử_vong_nhanh_chóng_symptom'})
+MERGE (o1)-[r160:causes]->(o2)
+SET r160.text = 'Xuất huyết tiêu hóa là một tình trạng tiềm ẩn nhiều rủi ro như nguy cơ sặc máu (nếu xuất huyết nhiều) có thể gây chết não và tử vong nhanh chóng.'
+
+MERGE (o1:disease {id: 'xuất_huyết_tiêu_hóa_disease'})
+MERGE (o2:disease {id: 'ung_thư_tiêu_hóa_disease'})
+MERGE (o1)-[r161:isSymptomOf]->(o2)
+SET r161.text = 'Xuất huyết tiêu hóa cũng có thể là dấu hiệu của một loại ung thư tiêu hóa nào đó.'
+
+MERGE (o1:disease {id: 'xuất_huyết_tiêu_hóa_disease'})
+MERGE (o2:treatment {id: 'thăm_khám_và_điều_trị_treatment'})
+MERGE (o1)-[r162:treatedBy]->(o2)
+SET r162.text = 'Do vậy, đây là một tình trạng nguy hiểm, người bệnh cần được thăm khám và điều trị càng sớm, càng tốt.'
+
+MERGE (o1:disease {id: 'xuất_huyết_tiêu_hóa_disease'})
+MERGE (o2:symptom {id: 'tự_khỏi_symptom'})
+MERGE (o1)-[r163:relatedTo]->(o2)
+SET r163.text = 'Như đã nói ở trên bệnh nhân xuất huyết tiêu hóa trên (cao) tuỳ mức độ có thể tự khỏi trong vòng một đến hai tuần.'
+
+MERGE (o1:treatment {id: 'can_thiệp_điều_trị_bằng_các_phương_pháp_đặc_hiệu_treatment'})
+MERGE (o2:disease {id: 'xuất_huyết_tiêu_hóa_disease'})
+MERGE (o1)-[r164:treatedBy]->(o2)
+SET r164.text = 'Tuy nhiên, cần phải can thiệp điều trị bằng các phương pháp đặc hiệu để tránh biến chứng hoặc tái phát.'

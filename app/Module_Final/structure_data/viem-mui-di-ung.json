@@ -1,0 +1,1010 @@
+[
+    {
+        "text": "Các loại nấm mốc, phấn hoa đặc biệt phát triển khi giao mùa, là yếu tố gây bệnh viêm mũi dị ứng thời tiết thường gặp nhất.",
+        "head": "Các loại nấm mốc, phấn hoa",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "viêm mũi dị ứng thời tiết",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các loại nấm mốc, phấn hoa đặc biệt phát triển khi giao mùa, là yếu tố gây bệnh viêm mũi dị ứng thời tiết thường gặp nhất.",
+        "head": "viêm mũi dị ứng thời tiết",
+        "head_type": "disease",
+        "relation": "aggravatedBy",
+        "tail": "giao mùa",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Một người có thể dị ứng với một hoặc nhiều loại phấn hoa.",
+        "head": "Một người",
+        "head_type": "disease",
+        "relation": "aggravatedBy",
+        "tail": "phấn hoa",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Người bị viêm mũi dị ứng lâu năm chủ yếu do tiếp xúc bụi bẩn trong nhà hay ngoài trời, lông chó mèo, gián, mọt và các loài gặm nhấm trong nhà...",
+        "head": "viêm mũi dị ứng lâu năm",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "tiếp xúc bụi bẩn trong nhà hay ngoài trời, lông chó mèo, gián, mọt và các loài gặm nhấm trong nhà",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Bệnh lý này chỉ xuất hiện khi người bệnh có tiếp xúc với phấn hoa, bụi bẩn, nấm mốc.",
+        "head": "Bệnh lý này",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "tiếp xúc với phấn hoa, bụi bẩn, nấm mốc",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Khi hết tiếp xúc thì triệu chứng bệnh cũng biến mất.",
+        "head": "triệu chứng bệnh",
+        "head_type": "symptom",
+        "relation": "aggravatedBy",
+        "tail": "tiếp xúc",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Một số trường hợp có thể dị ứng với thức ăn, gây ra các biểu hiện như nổi mề đay, tiêu chảy, đau bụng...",
+        "head": "dị ứng với thức ăn",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "thức ăn",
+        "tail_type": "food"
+    },
+    {
+        "text": "Một số trường hợp có thể dị ứng với thức ăn, gây ra các biểu hiện như nổi mề đay, tiêu chảy, đau bụng...",
+        "head": "nổi mề đay, tiêu chảy, đau bụng",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "dị ứng với thức ăn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Một số người phải làm việc ở những nơi có chứa các tác nhân gây dị ứng như hóa chất, bụi gỗ, bụi phấn, lông thú, kim loại, lông thú… cũng có thể mắc bệnh viêm mũi dị ứng.",
+        "head": "hóa chất, bụi gỗ, bụi phấn, lông thú, kim loại, lông thú",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "viêm mũi dị ứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu các triệu chứng của viêm mũi dị ứng chỉ diễn ra ở một vài thời điểm trong ngày, không ảnh hưởng đến việc ăn, uống, sinh hoạt và giấc ngủ, người bệnh có thể tự vệ sinh mũi tại nhà.",
+        "head": "viêm mũi dị ứng",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "các triệu chứng",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Nếu các triệu chứng của viêm mũi dị ứng chỉ diễn ra ở một vài thời điểm trong ngày, không ảnh hưởng đến việc ăn, uống, sinh hoạt và giấc ngủ, người bệnh có thể tự vệ sinh mũi tại nhà.",
+        "head": "tự vệ sinh mũi tại nhà",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "viêm mũi dị ứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu các triệu chứng diễn ra lâu dài và lặp lại liên tục, ảnh hưởng đến sức khỏe, việc ăn, ngủ, sinh hoạt, người bệnh nên đến bệnh viện để được bác sĩ chẩn đoán và điều trị sớm, tránh việc bệnh kéo dài gây ra những biến chứng viêm mũi xoang nặng, đặc biệt là ở trẻ em.",
+        "head": "viêm mũi xoang nặng",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "viêm mũi dị ứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu các triệu chứng diễn ra lâu dài và lặp lại liên tục, ảnh hưởng đến sức khỏe, việc ăn, ngủ, sinh hoạt, người bệnh nên đến bệnh viện để được bác sĩ chẩn đoán và điều trị sớm, tránh việc bệnh kéo dài gây ra những biến chứng viêm mũi xoang nặng, đặc biệt là ở trẻ em.",
+        "head": "viêm mũi dị ứng",
+        "head_type": "disease",
+        "relation": "aggravatedBy",
+        "tail": "các triệu chứng diễn ra lâu dài và lặp lại liên tục",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Nếu các triệu chứng diễn ra lâu dài và lặp lại liên tục, ảnh hưởng đến sức khỏe, việc ăn, ngủ, sinh hoạt, người bệnh nên đến bệnh viện để được bác sĩ chẩn đoán và điều trị sớm, tránh việc bệnh kéo dài gây ra những biến chứng viêm mũi xoang nặng, đặc biệt là ở trẻ em.",
+        "head": "viêm mũi dị ứng",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "bác sĩ chẩn đoán và điều trị sớm",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Nếu xuất hiện các triệu chứng nghiêm trọng này thì cần đến bệnh viện khám ngay: Nghẹt mũi, sưng và đau nhức hốc mũi; ho nhiều và sốt; trẻ ăn uống kém hoặc bỏ ăn; sụt cân, mất ngủ; dị ứng nặng đến mức phù nề, thở khó...",
+        "head": "Nghẹt mũi, sưng và đau nhức hốc mũi; ho nhiều và sốt; trẻ ăn uống kém hoặc bỏ ăn; sụt cân, mất ngủ; dị ứng nặng đến mức phù nề, thở khó",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "viêm mũi dị ứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bất cứ ai cũng có thể bị viêm mũi dị ứng nhưng bạn sẽ có nguy cơ mắc bệnh cao hơn nếu người trong gia đình có tiền sử dị ứng.",
+        "head": "viêm mũi dị ứng",
+        "head_type": "disease",
+        "relation": "associatedWith",
+        "tail": "tiền sử dị ứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ngoài ra, nếu bạn bị bệnh chàm da hoặc hen suyễn thì bạn cũng thuộc nhóm nguy cơ này.",
+        "head": "bệnh chàm da hoặc hen suyễn",
+        "head_type": "disease",
+        "relation": "associatedWith",
+        "tail": "viêm mũi dị ứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nguyên nhân gây viêm mũi dị ứng là do cơ thể giải phóng histamin khi tiếp xúc với các tác nhân dị ứng.",
+        "head": "Histamin",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Viêm mũi dị ứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Histamin là một chất hóa học tự nhiên giúp bảo vệ cơ thể khỏi tác nhân bên ngoài xâm nhập vô cơ thể nhưng nó lại gây phản ứng quá mức, gây ra tình trạng viêm mũi dị ứng.",
+        "head": "Histamin",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Viêm mũi dị ứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các tác nhân gây dị ứng trong nhà bao gồm: bụi, lông chó mèo, lông vải từ quần áo, chăn mền, nước hoa, mỹ phẩm, sữa tắm, xà phòng, nước xả vải, mùi thức ăn, nấm mốc…",
+        "head": "Bụi",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Viêm mũi dị ứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các tác nhân gây dị ứng trong nhà bao gồm: bụi, lông chó mèo, lông vải từ quần áo, chăn mền, nước hoa, mỹ phẩm, sữa tắm, xà phòng, nước xả vải, mùi thức ăn, nấm mốc…",
+        "head": "Lông chó mèo",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Viêm mũi dị ứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các tác nhân gây dị ứng trong nhà bao gồm: bụi, lông chó mèo, lông vải từ quần áo, chăn mền, nước hoa, mỹ phẩm, sữa tắm, xà phòng, nước xả vải, mùi thức ăn, nấm mốc…",
+        "head": "Lông vải từ quần áo",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Viêm mũi dị ứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các tác nhân gây dị ứng trong nhà bao gồm: bụi, lông chó mèo, lông vải từ quần áo, chăn mền, nước hoa, mỹ phẩm, sữa tắm, xà phòng, nước xả vải, mùi thức ăn, nấm mốc…",
+        "head": "Nước hoa",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Viêm mũi dị ứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các tác nhân gây dị ứng trong nhà bao gồm: bụi, lông chó mèo, lông vải từ quần áo, chăn mền, nước hoa, mỹ phẩm, sữa tắm, xà phòng, nước xả vải, mùi thức ăn, nấm mốc…",
+        "head": "Mỹ phẩm",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Viêm mũi dị ứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các tác nhân gây dị ứng trong nhà bao gồm: bụi, lông chó mèo, lông vải từ quần áo, chăn mền, nước hoa, mỹ phẩm, sữa tắm, xà phòng, nước xả vải, mùi thức ăn, nấm mốc…",
+        "head": "Sữa tắm",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Viêm mũi dị ứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các tác nhân gây dị ứng trong nhà bao gồm: bụi, lông chó mèo, lông vải từ quần áo, chăn mền, nước hoa, mỹ phẩm, sữa tắm, xà phòng, nước xả vải, mùi thức ăn, nấm mốc…",
+        "head": "Xà phòng",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Viêm mũi dị ứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các tác nhân gây dị ứng trong nhà bao gồm: bụi, lông chó mèo, lông vải từ quần áo, chăn mền, nước hoa, mỹ phẩm, sữa tắm, xà phòng, nước xả vải, mùi thức ăn, nấm mốc…",
+        "head": "Nước xả vải",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Viêm mũi dị ứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các tác nhân gây dị ứng trong nhà bao gồm: bụi, lông chó mèo, lông vải từ quần áo, chăn mền, nước hoa, mỹ phẩm, sữa tắm, xà phòng, nước xả vải, mùi thức ăn, nấm mốc…",
+        "head": "Mùi thức ăn",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Viêm mũi dị ứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các tác nhân gây dị ứng trong nhà bao gồm: bụi, lông chó mèo, lông vải từ quần áo, chăn mền, nước hoa, mỹ phẩm, sữa tắm, xà phòng, nước xả vải, mùi thức ăn, nấm mốc…",
+        "head": "Nấm mốc",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Viêm mũi dị ứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các tác nhân gây dị ứng trong không khí bao gồm: phấn hoa, lông sâu, bướm, bụi lúa trong mùa gặt, khói, bụi, mùi rác thải, gió, không khí lạnh, mưa…",
+        "head": "Phấn hoa",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Viêm mũi dị ứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các tác nhân gây dị ứng trong không khí bao gồm: phấn hoa, lông sâu, bướm, bụi lúa trong mùa gặt, khói, bụi, mùi rác thải, gió, không khí lạnh, mưa…",
+        "head": "Lông sâu",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Viêm mũi dị ứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các tác nhân gây dị ứng trong không khí bao gồm: phấn hoa, lông sâu, bướm, bụi lúa trong mùa gặt, khói, bụi, mùi rác thải, gió, không khí lạnh, mưa…",
+        "head": "Bướm",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Viêm mũi dị ứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các tác nhân gây dị ứng trong không khí bao gồm: phấn hoa, lông sâu, bướm, bụi lúa trong mùa gặt, khói, bụi, mùi rác thải, gió, không khí lạnh, mưa…",
+        "head": "Bụi lúa trong mùa gặt",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Viêm mũi dị ứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các tác nhân gây dị ứng trong không khí bao gồm: phấn hoa, lông sâu, bướm, bụi lúa trong mùa gặt, khói, bụi, mùi rác thải, gió, không khí lạnh, mưa…",
+        "head": "Khói",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Viêm mũi dị ứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các tác nhân gây dị ứng trong không khí bao gồm: phấn hoa, lông sâu, bướm, bụi lúa trong mùa gặt, khói, bụi, mùi rác thải, gió, không khí lạnh, mưa…",
+        "head": "Bụi",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Viêm mũi dị ứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các tác nhân gây dị ứng trong không khí bao gồm: phấn hoa, lông sâu, bướm, bụi lúa trong mùa gặt, khói, bụi, mùi rác thải, gió, không khí lạnh, mưa…",
+        "head": "Mùi rác thải",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Viêm mũi dị ứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các tác nhân gây dị ứng trong không khí bao gồm: phấn hoa, lông sâu, bướm, bụi lúa trong mùa gặt, khói, bụi, mùi rác thải, gió, không khí lạnh, mưa…",
+        "head": "Gió",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Viêm mũi dị ứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các tác nhân gây dị ứng trong không khí bao gồm: phấn hoa, lông sâu, bướm, bụi lúa trong mùa gặt, khói, bụi, mùi rác thải, gió, không khí lạnh, mưa…",
+        "head": "Không khí lạnh",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Viêm mũi dị ứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các tác nhân gây dị ứng trong không khí bao gồm: phấn hoa, lông sâu, bướm, bụi lúa trong mùa gặt, khói, bụi, mùi rác thải, gió, không khí lạnh, mưa…",
+        "head": "Mưa",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Viêm mũi dị ứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các tác nhân gây dị ứng nghề nghiệp bao gồm: bụi phấn ở trường học, hóa chất trong các nhà máy, sợi vải trong các xưởng may, lông động vật trong các lò giết mổ, khói hương nhang trong các đền chùa, bụi xi măng trong các nhà máy vật liệu, bụi gỗ trong các xưởng mộc…",
+        "head": "Bụi phấn ở trường học",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Viêm mũi dị ứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các tác nhân gây dị ứng nghề nghiệp bao gồm: bụi phấn ở trường học, hóa chất trong các nhà máy, sợi vải trong các xưởng may, lông động vật trong các lò giết mổ, khói hương nhang trong các đền chùa, bụi xi măng trong các nhà máy vật liệu, bụi gỗ trong các xưởng mộc…",
+        "head": "Hóa chất trong các nhà máy",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Viêm mũi dị ứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các tác nhân gây dị ứng nghề nghiệp bao gồm: bụi phấn ở trường học, hóa chất trong các nhà máy, sợi vải trong các xưởng may, lông động vật trong các lò giết mổ, khói hương nhang trong các đền chùa, bụi xi măng trong các nhà máy vật liệu, bụi gỗ trong các xưởng mộc…",
+        "head": "Sợi vải trong các xưởng may",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Viêm mũi dị ứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các tác nhân gây dị ứng nghề nghiệp bao gồm: bụi phấn ở trường học, hóa chất trong các nhà máy, sợi vải trong các xưởng may, lông động vật trong các lò giết mổ, khói hương nhang trong các đền chùa, bụi xi măng trong các nhà máy vật liệu, bụi gỗ trong các xưởng mộc…",
+        "head": "Lông động vật trong các lò giết mổ",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Viêm mũi dị ứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các tác nhân gây dị ứng nghề nghiệp bao gồm: bụi phấn ở trường học, hóa chất trong các nhà máy, sợi vải trong các xưởng may, lông động vật trong các lò giết mổ, khói hương nhang trong các đền chùa, bụi xi măng trong các nhà máy vật liệu, bụi gỗ trong các xưởng mộc…",
+        "head": "Khói hương nhang trong các đền chùa",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Viêm mũi dị ứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các tác nhân gây dị ứng nghề nghiệp bao gồm: bụi phấn ở trường học, hóa chất trong các nhà máy, sợi vải trong các xưởng may, lông động vật trong các lò giết mổ, khói hương nhang trong các đền chùa, bụi xi măng trong các nhà máy vật liệu, bụi gỗ trong các xưởng mộc…",
+        "head": "Bụi xi măng trong các nhà máy vật liệu",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Viêm mũi dị ứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các tác nhân gây dị ứng nghề nghiệp bao gồm: bụi phấn ở trường học, hóa chất trong các nhà máy, sợi vải trong các xưởng may, lông động vật trong các lò giết mổ, khói hương nhang trong các đền chùa, bụi xi măng trong các nhà máy vật liệu, bụi gỗ trong các xưởng mộc…",
+        "head": "Bụi gỗ trong các xưởng mộc",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Viêm mũi dị ứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các yếu tố gây viêm mũi dị ứng tiềm ẩn ở mọi nơi nên chứng bệnh này rất dễ tái phát.",
+        "head": "Viêm mũi dị ứng",
+        "head_type": "disease",
+        "relation": "associatedWith",
+        "tail": "Tái phát",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Những người thường xuyên xịt rửa mũi thì các triệu chứng thường giảm nhẹ hơn.",
+        "head": "Xịt rửa mũi",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Viêm mũi dị ứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bác sĩ có thể dựa trên các triệu chứng lâm sàng người bệnh thường gặp phải, cộng với yếu tố nghề nghiệp, thời tiết, tiền sử bệnh của gia đình để chẩn đoán.",
+        "head": "Viêm mũi dị ứng",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "Triệu chứng lâm sàng",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Bác sĩ có thể dựa trên các triệu chứng lâm sàng người bệnh thường gặp phải, cộng với yếu tố nghề nghiệp, thời tiết, tiền sử bệnh của gia đình để chẩn đoán.",
+        "head": "Viêm mũi dị ứng",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "Yếu tố nghề nghiệp",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Bác sĩ có thể dựa trên các triệu chứng lâm sàng người bệnh thường gặp phải, cộng với yếu tố nghề nghiệp, thời tiết, tiền sử bệnh của gia đình để chẩn đoán.",
+        "head": "Viêm mũi dị ứng",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "Thời tiết",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Bác sĩ có thể dựa trên các triệu chứng lâm sàng người bệnh thường gặp phải, cộng với yếu tố nghề nghiệp, thời tiết, tiền sử bệnh của gia đình để chẩn đoán.",
+        "head": "Viêm mũi dị ứng",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "Tiền sử bệnh của gia đình",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Đối với các trường hợp cần xem xét kỹ hơn, bác sĩ có thể cho người bệnh làm xét nghiệm để kiểm tra độ châm chích da bằng cách bôi một số chất lên da để xem cơ thể người bệnh phản ứng với từng chất như thế nào.",
+        "head": "Viêm mũi dị ứng",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "Xét nghiệm châm chích da",
+        "tail_type": "test"
+    },
+    {
+        "text": "Nếu dị ứng với một chất nào đó, da của người bệnh sẽ xuất hiện dị ứng với một vết đỏ, có thể kèm sưng tấy.",
+        "head": "Dị ứng",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm mũi dị ứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Xét nghiệm máu hoặc xét nghiệm hấp thụ chất phóng xạ (RAST) phát hiện kháng thể IgE có thể được áp dụng để chẩn đoán viêm mũi dị ứng.",
+        "head": "Viêm mũi dị ứng",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "Xét nghiệm máu",
+        "tail_type": "test"
+    },
+    {
+        "text": "Xét nghiệm máu hoặc xét nghiệm hấp thụ chất phóng xạ (RAST) phát hiện kháng thể IgE có thể được áp dụng để chẩn đoán viêm mũi dị ứng.",
+        "head": "Viêm mũi dị ứng",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "Xét nghiệm hấp thụ chất phóng xạ (RAST)",
+        "tail_type": "test"
+    },
+    {
+        "text": "RAST đo lượng kháng thể immunoglobulin E đối với các chất gây dị ứng cụ thể trong máu của người bệnh.",
+        "head": "RAST",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "Viêm mũi dị ứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Viêm mũi dị ứng không được điều trị có thể gây ra các biến chứng như niêm mạc mũi thoái hóa, phù nề gây nghẹt mũi; các cuốn mũi bị quá phát xen kẽ thoái hóa polyp; viêm loét vùng tiền đình mũi; viêm họng, viêm phế quản; viêm xoang; viêm tai giữa.",
+        "head": "Viêm mũi dị ứng",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Niêm mạc mũi thoái hóa",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Viêm mũi dị ứng không được điều trị có thể gây ra các biến chứng như niêm mạc mũi thoái hóa, phù nề gây nghẹt mũi; các cuốn mũi bị quá phát xen kẽ thoái hóa polyp; viêm loét vùng tiền đình mũi; viêm họng, viêm phế quản; viêm xoang; viêm tai giữa.",
+        "head": "Viêm mũi dị ứng",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Phù nề gây nghẹt mũi",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Viêm mũi dị ứng không được điều trị có thể gây ra các biến chứng như niêm mạc mũi thoái hóa, phù nề gây nghẹt mũi; các cuốn mũi bị quá phát xen kẽ thoái hóa polyp; viêm loét vùng tiền đình mũi; viêm họng, viêm phế quản; viêm xoang; viêm tai giữa.",
+        "head": "Viêm mũi dị ứng",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Các cuốn mũi bị quá phát xen kẽ thoái hóa polyp",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Viêm mũi dị ứng không được điều trị có thể gây ra các biến chứng như niêm mạc mũi thoái hóa, phù nề gây nghẹt mũi; các cuốn mũi bị quá phát xen kẽ thoái hóa polyp; viêm loét vùng tiền đình mũi; viêm họng, viêm phế quản; viêm xoang; viêm tai giữa.",
+        "head": "Viêm mũi dị ứng",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Viêm loét vùng tiền đình mũi",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Viêm mũi dị ứng không được điều trị có thể gây ra các biến chứng như niêm mạc mũi thoái hóa, phù nề gây nghẹt mũi; các cuốn mũi bị quá phát xen kẽ thoái hóa polyp; viêm loét vùng tiền đình mũi; viêm họng, viêm phế quản; viêm xoang; viêm tai giữa.",
+        "head": "Viêm mũi dị ứng",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Viêm họng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Viêm mũi dị ứng không được điều trị có thể gây ra các biến chứng như niêm mạc mũi thoái hóa, phù nề gây nghẹt mũi; các cuốn mũi bị quá phát xen kẽ thoái hóa polyp; viêm loét vùng tiền đình mũi; viêm họng, viêm phế quản; viêm xoang; viêm tai giữa.",
+        "head": "Viêm mũi dị ứng",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Viêm phế quản",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Viêm mũi dị ứng không được điều trị có thể gây ra các biến chứng như niêm mạc mũi thoái hóa, phù nề gây nghẹt mũi; các cuốn mũi bị quá phát xen kẽ thoái hóa polyp; viêm loét vùng tiền đình mũi; viêm họng, viêm phế quản; viêm xoang; viêm tai giữa.",
+        "head": "Viêm mũi dị ứng",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Viêm xoang",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Viêm mũi dị ứng không được điều trị có thể gây ra các biến chứng như niêm mạc mũi thoái hóa, phù nề gây nghẹt mũi; các cuốn mũi bị quá phát xen kẽ thoái hóa polyp; viêm loét vùng tiền đình mũi; viêm họng, viêm phế quản; viêm xoang; viêm tai giữa.",
+        "head": "Viêm mũi dị ứng",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Viêm tai giữa",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đối với biến chứng viêm phế quản có thể gây nguy hiểm cho trẻ nhỏ nếu không được điều trị kịp thời.",
+        "head": "Viêm phế quản",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Trẻ nhỏ",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Viêm phế quản có thể lan xuống phổi gây viêm phổi, suy hô hấp, đe dọa tính mạng của trẻ.",
+        "head": "Viêm phế quản",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Phổi",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Viêm phế quản có thể lan xuống phổi gây viêm phổi, suy hô hấp, đe dọa tính mạng của trẻ.",
+        "head": "Viêm phế quản",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Viêm phổi",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Để chữa viêm mũi dị ứng, người bệnh có thể áp dụng nhiều cách như:(5)    Thuốc điều trị: Dùng các loại thuốc kháng histamin (theo chỉ định của bác sĩ).",
+        "head": "Thuốc kháng histamin",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Viêm mũi dị ứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Để chữa viêm mũi dị ứng, người bệnh có thể áp dụng nhiều cách như:(5)    Thuốc điều trị: Dùng các loại thuốc kháng histamin (theo chỉ định của bác sĩ).",
+        "head": "Viêm mũi dị ứng",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "Thuốc kháng histamin",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Để chữa viêm mũi dị ứng, người bệnh có thể áp dụng nhiều cách như:(5)    Thuốc điều trị: Dùng các loại thuốc kháng histamin (theo chỉ định của bác sĩ). Thuốc nhỏ mắt và thuốc xịt mũi: Dùng thuốc nhỏ mắt và thuốc xịt mũi có thể giúp giảm ngứa và các triệu chứng liên quan đến dị ứng khác trong thời gian ngắn (theo chỉ định của bác sĩ).",
+        "head": "Thuốc nhỏ mắt và thuốc xịt mũi",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Viêm mũi dị ứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Để chữa viêm mũi dị ứng, người bệnh có thể áp dụng nhiều cách như:(5)    Thuốc điều trị: Dùng các loại thuốc kháng histamin (theo chỉ định của bác sĩ). Thuốc nhỏ mắt và thuốc xịt mũi: Dùng thuốc nhỏ mắt và thuốc xịt mũi có thể giúp giảm ngứa và các triệu chứng liên quan đến dị ứng khác trong thời gian ngắn (theo chỉ định của bác sĩ).",
+        "head": "Viêm mũi dị ứng",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "Thuốc nhỏ mắt và thuốc xịt mũi",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Để chữa viêm mũi dị ứng, người bệnh có thể áp dụng nhiều cách như:(5)    Thuốc điều trị: Dùng các loại thuốc kháng histamin (theo chỉ định của bác sĩ). Thuốc nhỏ mắt và thuốc xịt mũi: Dùng thuốc nhỏ mắt và thuốc xịt mũi có thể giúp giảm ngứa và các triệu chứng liên quan đến dị ứng khác trong thời gian ngắn (theo chỉ định của bác sĩ). Các biện pháp khắc phục tại nhà: Phụ thuộc vào chất gây dị ứng. Nếu bị dị ứng theo mùa hoặc phấn hoa, người bệnh nên tránh xa những nơi có nhiều cây cối; dùng máy hút ẩm hoặc bộ lọc không khí dạng hạt giúp bạn kiểm soát dị ứng khi ở trong nhà.",
+        "head": "Ngứa",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm mũi dị ứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Để chữa viêm mũi dị ứng, người bệnh có thể áp dụng nhiều cách như:(5)    Thuốc điều trị: Dùng các loại thuốc kháng histamin (theo chỉ định của bác sĩ). Thuốc nhỏ mắt và thuốc xịt mũi: Dùng thuốc nhỏ mắt và thuốc xịt mũi có thể giúp giảm ngứa và các triệu chứng liên quan đến dị ứng khác trong thời gian ngắn (theo chỉ định của bác sĩ). Các biện pháp khắc phục tại nhà: Phụ thuộc vào chất gây dị ứng. Nếu bị dị ứng theo mùa hoặc phấn hoa, người bệnh nên tránh xa những nơi có nhiều cây cối; dùng máy hút ẩm hoặc bộ lọc không khí dạng hạt giúp bạn kiểm soát dị ứng khi ở trong nhà.",
+        "head": "Viêm mũi dị ứng",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Dị ứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Để chữa viêm mũi dị ứng, người bệnh có thể áp dụng nhiều cách như:(5)    Thuốc điều trị: Dùng các loại thuốc kháng histamin (theo chỉ định của bác sĩ). Thuốc nhỏ mắt và thuốc xịt mũi: Dùng thuốc nhỏ mắt và thuốc xịt mũi có thể giúp giảm ngứa và các triệu chứng liên quan đến dị ứng khác trong thời gian ngắn (theo chỉ định của bác sĩ). Các biện pháp khắc phục tại nhà: Phụ thuộc vào chất gây dị ứng. Nếu bị dị ứng theo mùa hoặc phấn hoa, người bệnh nên tránh xa những nơi có nhiều cây cối; dùng máy hút ẩm hoặc bộ lọc không khí dạng hạt giúp bạn kiểm soát dị ứng khi ở trong nhà.",
+        "head": "Phấn hoa",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Viêm mũi dị ứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Để chữa viêm mũi dị ứng, người bệnh có thể áp dụng nhiều cách như:(5)    Thuốc điều trị: Dùng các loại thuốc kháng histamin (theo chỉ định của bác sĩ). Thuốc nhỏ mắt và thuốc xịt mũi: Dùng thuốc nhỏ mắt và thuốc xịt mũi có thể giúp giảm ngứa và các triệu chứng liên quan đến dị ứng khác trong thời gian ngắn (theo chỉ định của bác sĩ). Các biện pháp khắc phục tại nhà: Phụ thuộc vào chất gây dị ứng. Nếu bị dị ứng theo mùa hoặc phấn hoa, người bệnh nên tránh xa những nơi có nhiều cây cối; dùng máy hút ẩm hoặc bộ lọc không khí dạng hạt giúp bạn kiểm soát dị ứng khi ở trong nhà.",
+        "head": "Viêm mũi dị ứng",
+        "head_type": "disease",
+        "relation": "aggravatedBy",
+        "tail": "Phấn hoa",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Để chữa viêm mũi dị ứng, người bệnh có thể áp dụng nhiều cách như:(5)    Thuốc điều trị: Dùng các loại thuốc kháng histamin (theo chỉ định của bác sĩ). Thuốc nhỏ mắt và thuốc xịt mũi: Dùng thuốc nhỏ mắt và thuốc xịt mũi có thể giúp giảm ngứa và các triệu chứng liên quan đến dị ứng khác trong thời gian ngắn (theo chỉ định của bác sĩ). Các biện pháp khắc phục tại nhà: Phụ thuộc vào chất gây dị ứng. Nếu bị dị ứng theo mùa hoặc phấn hoa, người bệnh nên tránh xa những nơi có nhiều cây cối; dùng máy hút ẩm hoặc bộ lọc không khí dạng hạt giúp bạn kiểm soát dị ứng khi ở trong nhà. Nếu bạn bị dị ứng với bụi, mạt nhà; hãy giặt tấm trải giường và chăn mền bằng nước nóng trên 55 độ C; đeo khẩu trang khi làm việc nếu bị dị ứng với các tác nhân ở nơi làm việc…",
+        "head": "Bụi",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Viêm mũi dị ứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Để chữa viêm mũi dị ứng, người bệnh có thể áp dụng nhiều cách như:(5)    Thuốc điều trị: Dùng các loại thuốc kháng histamin (theo chỉ định của bác sĩ). Thuốc nhỏ mắt và thuốc xịt mũi: Dùng thuốc nhỏ mắt và thuốc xịt mũi có thể giúp giảm ngứa và các triệu chứng liên quan đến dị ứng khác trong thời gian ngắn (theo chỉ định của bác sĩ). Các biện pháp khắc phục tại nhà: Phụ thuộc vào chất gây dị ứng. Nếu bị dị ứng theo mùa hoặc phấn hoa, người bệnh nên tránh xa những nơi có nhiều cây cối; dùng máy hút ẩm hoặc bộ lọc không khí dạng hạt giúp bạn kiểm soát dị ứng khi ở trong nhà. Nếu bạn bị dị ứng với bụi, mạt nhà; hãy giặt tấm trải giường và chăn mền bằng nước nóng trên 55 độ C; đeo khẩu trang khi làm việc nếu bị dị ứng với các tác nhân ở nơi làm việc…",
+        "head": "Mạt nhà",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Viêm mũi dị ứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Để chữa viêm mũi dị ứng, người bệnh có thể áp dụng nhiều cách như:(5)    Thuốc điều trị: Dùng các loại thuốc kháng histamin (theo chỉ định của bác sĩ). Thuốc nhỏ mắt và thuốc xịt mũi: Dùng thuốc nhỏ mắt và thuốc xịt mũi có thể giúp giảm ngứa và các triệu chứng liên quan đến dị ứng khác trong thời gian ngắn (theo chỉ định của bác sĩ). Các biện pháp khắc phục tại nhà: Phụ thuộc vào chất gây dị ứng. Nếu bị dị ứng theo mùa hoặc phấn hoa, người bệnh nên tránh xa những nơi có nhiều cây cối; dùng máy hút ẩm hoặc bộ lọc không khí dạng hạt giúp bạn kiểm soát dị ứng khi ở trong nhà. Nếu bạn bị dị ứng với bụi, mạt nhà; hãy giặt tấm trải giường và chăn mền bằng nước nóng trên 55 độ C; đeo khẩu trang khi làm việc nếu bị dị ứng với các tác nhân ở nơi làm việc…",
+        "head": "Viêm mũi dị ứng",
+        "head_type": "disease",
+        "relation": "aggravatedBy",
+        "tail": "Bụi",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Để chữa viêm mũi dị ứng, người bệnh có thể áp dụng nhiều cách như:(5)    Thuốc điều trị: Dùng các loại thuốc kháng histamin (theo chỉ định của bác sĩ). Thuốc nhỏ mắt và thuốc xịt mũi: Dùng thuốc nhỏ mắt và thuốc xịt mũi có thể giúp giảm ngứa và các triệu chứng liên quan đến dị ứng khác trong thời gian ngắn (theo chỉ định của bác sĩ). Các biện pháp khắc phục tại nhà: Phụ thuộc vào chất gây dị ứng. Nếu bị dị ứng theo mùa hoặc phấn hoa, người bệnh nên tránh xa những nơi có nhiều cây cối; dùng máy hút ẩm hoặc bộ lọc không khí dạng hạt giúp bạn kiểm soát dị ứng khi ở trong nhà. Nếu bạn bị dị ứng với bụi, mạt nhà; hãy giặt tấm trải giường và chăn mền bằng nước nóng trên 55 độ C; đeo khẩu trang khi làm việc nếu bị dị ứng với các tác nhân ở nơi làm việc…",
+        "head": "Viêm mũi dị ứng",
+        "head_type": "disease",
+        "relation": "aggravatedBy",
+        "tail": "Mạt nhà",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Để phòng ngừa viêm mũi dị ứng, bác sĩ Hằng khuyên người dân nên:    Tăng cường miễn dịch: Khi miễn dịch yếu, cơ thể rất dễ bị dị ứng. Do đó, tăng cường hệ miễn dịch là một trong những cách tốt nhất để bảo vệ cơ thể tránh khỏi viêm mũi dị ứng.",
+        "head": "Miễn dịch yếu",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Viêm mũi dị ứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Để phòng ngừa viêm mũi dị ứng, bác sĩ Hằng khuyên người dân nên:    Tăng cường miễn dịch: Khi miễn dịch yếu, cơ thể rất dễ bị dị ứng. Do đó, tăng cường hệ miễn dịch là một trong những cách tốt nhất để bảo vệ cơ thể tránh khỏi viêm mũi dị ứng.",
+        "head": "Viêm mũi dị ứng",
+        "head_type": "disease",
+        "relation": "aggravatedBy",
+        "tail": "Miễn dịch yếu",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Để phòng ngừa viêm mũi dị ứng, bác sĩ Hằng khuyên người dân nên:    Tăng cường miễn dịch: Khi miễn dịch yếu, cơ thể rất dễ bị dị ứng. Do đó, tăng cường hệ miễn dịch là một trong những cách tốt nhất để bảo vệ cơ thể tránh khỏi viêm mũi dị ứng. Tránh xa các tác nhân gây dị ứng: Khi biết bản thân bị dị ứng với chất gì, hãy cố gắng tránh tiếp xúc với chất đó.",
+        "head": "Viêm mũi dị ứng",
+        "head_type": "disease",
+        "relation": "preventedBy",
+        "tail": "Tăng cường hệ miễn dịch",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Để phòng ngừa viêm mũi dị ứng, bác sĩ Hằng khuyên người dân nên:    Tăng cường miễn dịch: Khi miễn dịch yếu, cơ thể rất dễ bị dị ứng. Do đó, tăng cường hệ miễn dịch là một trong những cách tốt nhất để bảo vệ cơ thể tránh khỏi viêm mũi dị ứng. Tránh xa các tác nhân gây dị ứng: Khi biết bản thân bị dị ứng với chất gì, hãy cố gắng tránh tiếp xúc với chất đó. Đeo khẩu trang trong vùng có nguy cơ xuất hiện các chất gây dị ứng là biện pháp phòng vệ tốt cho người bệnh.",
+        "head": "Viêm mũi dị ứng",
+        "head_type": "disease",
+        "relation": "preventedBy",
+        "tail": "Tránh xa các tác nhân gây dị ứng",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Để phòng ngừa viêm mũi dị ứng, bác sĩ Hằng khuyên người dân nên:    Tăng cường miễn dịch: Khi miễn dịch yếu, cơ thể rất dễ bị dị ứng. Do đó, tăng cường hệ miễn dịch là một trong những cách tốt nhất để bảo vệ cơ thể tránh khỏi viêm mũi dị ứng. Tránh xa các tác nhân gây dị ứng: Khi biết bản thân bị dị ứng với chất gì, hãy cố gắng tránh tiếp xúc với chất đó. Đeo khẩu trang trong vùng có nguy cơ xuất hiện các chất gây dị ứng là biện pháp phòng vệ tốt cho người bệnh. Bảo vệ tai mũi họng: Tai mũi họng là một hệ thống thông với nhau, nên bảo vệ vùng tai và họng tốt sẽ giúp mũi khỏe mạnh để giảm bớt nguy cơ bị viêm mũi dị ứng nặng hơn.",
+        "head": "Viêm mũi dị ứng",
+        "head_type": "disease",
+        "relation": "preventedBy",
+        "tail": "Bảo vệ tai mũi họng",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Để phòng ngừa viêm mũi dị ứng, bác sĩ Hằng khuyên người dân nên:    Tăng cường miễn dịch: Khi miễn dịch yếu, cơ thể rất dễ bị dị ứng. Do đó, tăng cường hệ miễn dịch là một trong những cách tốt nhất để bảo vệ cơ thể tránh khỏi viêm mũi dị ứng. Tránh xa các tác nhân gây dị ứng: Khi biết bản thân bị dị ứng với chất gì, hãy cố gắng tránh tiếp xúc với chất đó. Đeo khẩu trang trong vùng có nguy cơ xuất hiện các chất gây dị ứng là biện pháp phòng vệ tốt cho người bệnh. Bảo vệ tai mũi họng: Tai mũi họng là một hệ thống thông với nhau, nên bảo vệ vùng tai và họng tốt sẽ giúp mũi khỏe mạnh để giảm bớt nguy cơ bị viêm mũi dị ứng nặng hơn.",
+        "head": "Tai mũi họng",
+        "head_type": "organ",
+        "relation": "relatedTo",
+        "tail": "Viêm mũi dị ứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Việc kết hợp khéo léo giữa sử dụng thuốc và chế độ dinh dưỡng trong quá trình điều trị viêm mũi dị ứng sẽ mang lại hiệu quả cao.",
+        "head": "Việc kết hợp khéo léo giữa sử dụng thuốc và chế độ dinh dưỡng",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "viêm mũi dị ứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Dưới đây là một số thực phẩm mà các chuyên gia khuyên dùng:    Thực phẩm giàu vitamin C: giúp tăng cường sức đề kháng, chống lại các tác nhân gây bệnh một cách hiệu quả.",
+        "head": "Thực phẩm giàu vitamin C",
+        "head_type": "food",
+        "relation": "treatedBy",
+        "tail": "viêm mũi dị ứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Thực phẩm giàu vitamin C: giúp tăng cường sức đề kháng, chống lại các tác nhân gây bệnh một cách hiệu quả.",
+        "head": "tăng cường sức đề kháng",
+        "head_type": "lifestyle",
+        "relation": "treatedBy",
+        "tail": "viêm mũi dị ứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Thực phẩm làm ấm cơ thể: các triệu chứng của bệnh viêm mũi dị ứng thường xuất hiện khi gặp lạnh, do đó việc bổ sung các loại thực phẩm làm ấm cơ thể như hành, tỏi, gừng… sẽ giúp người bệnh ngăn ngừa hoặc giảm đáng kể các triệu chứng.",
+        "head": "Thực phẩm làm ấm cơ thể",
+        "head_type": "food",
+        "relation": "treatedBy",
+        "tail": "viêm mũi dị ứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Thực phẩm làm ấm cơ thể: các triệu chứng của bệnh viêm mũi dị ứng thường xuất hiện khi gặp lạnh, do đó việc bổ sung các loại thực phẩm làm ấm cơ thể như hành, tỏi, gừng… sẽ giúp người bệnh ngăn ngừa hoặc giảm đáng kể các triệu chứng.",
+        "head": "các triệu chứng của bệnh viêm mũi dị ứng",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "viêm mũi dị ứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Thực phẩm làm ấm cơ thể: các triệu chứng của bệnh viêm mũi dị ứng thường xuất hiện khi gặp lạnh, do đó việc bổ sung các loại thực phẩm làm ấm cơ thể như hành, tỏi, gừng… sẽ giúp người bệnh ngăn ngừa hoặc giảm đáng kể các triệu chứng.",
+        "head": "gặp lạnh",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "các triệu chứng của bệnh viêm mũi dị ứng",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Thực phẩm làm ấm cơ thể: các triệu chứng của bệnh viêm mũi dị ứng thường xuất hiện khi gặp lạnh, do đó việc bổ sung các loại thực phẩm làm ấm cơ thể như hành, tỏi, gừng… sẽ giúp người bệnh ngăn ngừa hoặc giảm đáng kể các triệu chứng.",
+        "head": "hành, tỏi, gừng",
+        "head_type": "food",
+        "relation": "treatedBy",
+        "tail": "viêm mũi dị ứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Viêm mũi dị ứng chỉ chữa khỏi hoàn toàn khi không tiếp xúc với các yếu tố gây dị ứng, do đó chỉ có thể điều trị làm giảm các triệu chứng dị ứng mũi khi bệnh nhân khởi phát bệnh.",
+        "head": "Viêm mũi dị ứng",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "không tiếp xúc với các yếu tố gây dị ứng",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Viêm mũi dị ứng chỉ chữa khỏi hoàn toàn khi không tiếp xúc với các yếu tố gây dị ứng, do đó chỉ có thể điều trị làm giảm các triệu chứng dị ứng mũi khi bệnh nhân khởi phát bệnh.",
+        "head": "các yếu tố gây dị ứng",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Viêm mũi dị ứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Viêm mũi dị ứng chỉ chữa khỏi hoàn toàn khi không tiếp xúc với các yếu tố gây dị ứng, do đó chỉ có thể điều trị làm giảm các triệu chứng dị ứng mũi khi bệnh nhân khởi phát bệnh.",
+        "head": "các triệu chứng dị ứng mũi",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm mũi dị ứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Phòng ngừa bằng cách xịt rửa mũi mỗi ngày và tránh tiếp xúc các yếu tố gây dị ứng.",
+        "head": "xịt rửa mũi mỗi ngày",
+        "head_type": "treatment",
+        "relation": "preventedBy",
+        "tail": "Viêm mũi dị ứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Phòng ngừa bằng cách xịt rửa mũi mỗi ngày và tránh tiếp xúc các yếu tố gây dị ứng.",
+        "head": "tránh tiếp xúc các yếu tố gây dị ứng",
+        "head_type": "lifestyle",
+        "relation": "preventedBy",
+        "tail": "Viêm mũi dị ứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Viêm mũi dị ứng không ảnh hưởng trực tiếp đến thai nhi nhưng có thể ảnh hưởng gián tiếp.",
+        "head": "Viêm mũi dị ứng",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "thai nhi",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Khi người mẹ nghẹt mũi, khó thở dẫn đến mất ngủ, cơ thể mệt mỏi, miễn dịch suy giảm, có thể làm tăng nguy cơ mắc bệnh.",
+        "head": "nghẹt mũi, khó thở",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm mũi dị ứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi người mẹ nghẹt mũi, khó thở dẫn đến mất ngủ, cơ thể mệt mỏi, miễn dịch suy giảm, có thể làm tăng nguy cơ mắc bệnh.",
+        "head": "mất ngủ",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm mũi dị ứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi người mẹ nghẹt mũi, khó thở dẫn đến mất ngủ, cơ thể mệt mỏi, miễn dịch suy giảm, có thể làm tăng nguy cơ mắc bệnh.",
+        "head": "cơ thể mệt mỏi",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm mũi dị ứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi người mẹ nghẹt mũi, khó thở dẫn đến mất ngủ, cơ thể mệt mỏi, miễn dịch suy giảm, có thể làm tăng nguy cơ mắc bệnh.",
+        "head": "miễn dịch suy giảm",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm mũi dị ứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Cơ thể người mẹ không khỏe chắc chắn sẽ ảnh hưởng đến sự phát triển của thai kỳ.",
+        "head": "Cơ thể người mẹ không khỏe",
+        "head_type": "symptom",
+        "relation": "affects",
+        "tail": "sự phát triển của thai kỳ",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Viêm mũi dị ứng là một bệnh tự phát do cơ thể quá nhạy cảm với một yếu tố gây dị ứng nào đó.",
+        "head": "Viêm mũi dị ứng",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "cơ thể quá nhạy cảm với một yếu tố gây dị ứng nào đó",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Do đó, đây không phải là bệnh lây nhiễm.",
+        "head": "Viêm mũi dị ứng",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "bệnh lây nhiễm",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Viêm mũi dị ứng là bệnh lý lành tính do các tác nhân gây dị ứng ngoài môi trường gây ra.",
+        "head": "Viêm mũi dị ứng",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "các tác nhân gây dị ứng ngoài môi trường",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Bệnh này không thể chữa khỏi mà chỉ có thể điều trị nhằm giảm bớt các triệu chứng của bệnh.",
+        "head": "Viêm mũi dị ứng",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "giảm bớt các triệu chứng của bệnh",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Bệnh này không thể chữa khỏi mà chỉ có thể điều trị nhằm giảm bớt các triệu chứng của bệnh.",
+        "head": "các triệu chứng của bệnh",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm mũi dị ứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Do đó, người dân nên chủ động tăng cường miễn dịch, bảo vệ cơ thể khỏi các yếu tố gây dị ứng, đặc biệt là người có cơ địa nhạy cảm - Bác sĩ Hằng khuyên.",
+        "head": "tăng cường miễn dịch",
+        "head_type": "lifestyle",
+        "relation": "preventedBy",
+        "tail": "Viêm mũi dị ứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Do đó, người dân nên chủ động tăng cường miễn dịch, bảo vệ cơ thể khỏi các yếu tố gây dị ứng, đặc biệt là người có cơ địa nhạy cảm - Bác sĩ Hằng khuyên.",
+        "head": "bảo vệ cơ thể khỏi các yếu tố gây dị ứng",
+        "head_type": "lifestyle",
+        "relation": "preventedBy",
+        "tail": "Viêm mũi dị ứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Do đó, người dân nên chủ động tăng cường miễn dịch, bảo vệ cơ thể khỏi các yếu tố gây dị ứng, đặc biệt là người có cơ địa nhạy cảm - Bác sĩ Hằng khuyên.",
+        "head": "người có cơ địa nhạy cảm",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Viêm mũi dị ứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Theo bác sĩ Hằng, người có tiền sử bị viêm mũi dị ứng, dị ứng nhẹ ngoài da do thức ăn hay thuốc, viêm kết mạc dị ứng… đều có thể tiêm vaccine như người không có tiền sử dị ứng.",
+        "head": "tiêm vaccine",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Viêm mũi dị ứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Theo bác sĩ Hằng, người có tiền sử bị viêm mũi dị ứng, dị ứng nhẹ ngoài da do thức ăn hay thuốc, viêm kết mạc dị ứng… đều có thể tiêm vaccine như người không có tiền sử dị ứng.",
+        "head": "dị ứng nhẹ ngoài da do thức ăn hay thuốc",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "Viêm mũi dị ứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Theo bác sĩ Hằng, người có tiền sử bị viêm mũi dị ứng, dị ứng nhẹ ngoài da do thức ăn hay thuốc, viêm kết mạc dị ứng… đều có thể tiêm vaccine như người không có tiền sử dị ứng.",
+        "head": "viêm kết mạc dị ứng",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "Viêm mũi dị ứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Một số trường hợp cần theo dõi kỹ khi tiêm vaccine bao gồm: tiền căn dị ứng nặng hoặc shock phản vệ với các loại thức ăn, một số loại thuốc.",
+        "head": "tiền căn dị ứng nặng hoặc shock phản vệ với các loại thức ăn, một số loại thuốc",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Viêm mũi dị ứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Trên thực tế, viêm mũi dị ứng không gây nguy hiểm đến tính mạng nhưng nếu không được điều trị đúng cách, bệnh có thể kéo dài và tiến triển nặng hơn, không chỉ gây ảnh hưởng đến chất lượng cuộc sống của người bệnh mà còn có nguy cơ gây ra các biến chứng đáng tiếc như viêm xoang cấp, mạn tính, polyp mũi xoang&#8230;",
+        "head": "Viêm mũi dị ứng",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "chất lượng cuộc sống của người bệnh",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Trên thực tế, viêm mũi dị ứng không gây nguy hiểm đến tính mạng nhưng nếu không được điều trị đúng cách, bệnh có thể kéo dài và tiến triển nặng hơn, không chỉ gây ảnh hưởng đến chất lượng cuộc sống của người bệnh mà còn có nguy cơ gây ra các biến chứng đáng tiếc như viêm xoang cấp, mạn tính, polyp mũi xoang&#8230;",
+        "head": "viêm xoang cấp, mạn tính, polyp mũi xoang",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Viêm mũi dị ứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Viêm mũi dị ứng có khả năng di truyền, cụ thể là nếu trong gia đình có người mắc bệnh lý này thì tỷ lệ di truyền là 60-70%.",
+        "head": "Viêm mũi dị ứng",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "di truyền",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Ngoài ra, bệnh cũng phụ thuộc vào nhiều yếu tố bên ngoài như ô nhiễm môi trường, thay đổi thời tiết, môi trường làm việc…",
+        "head": "Viêm mũi dị ứng",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "ô nhiễm môi trường, thay đổi thời tiết, môi trường làm việc",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Vì thế, ngay khi có những dấu hiệu của viêm mũi dị ứng, người bệnh cần đến ngay các cơ sở y tế để thăm khám và điều trị kịp thời.",
+        "head": "những dấu hiệu của viêm mũi dị ứng",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm mũi dị ứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các triệu chứng của viêm mũi dị ứng ở trẻ em và người lớn là hoàn toàn giống nhau, tuy nhiên, do trẻ em có hệ miễn dịch chưa hoàn chỉnh cũng như chưa ý thức được mức độ nghiêm trọng của bệnh, chưa biết cách bảo vệ và chăm sóc bản thân nên sẽ cảm thấy khó chịu hơn với các biểu hiện như quấy khóc, mệt mỏi, chán ăn&#8230;",
+        "head": "quấy khóc, mệt mỏi, chán ăn",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm mũi dị ứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ngoài ra, trẻ thường thích vui chơi với bạn bè cùng trang lứa nên rất dễ tiếp xúc với các mầm bệnh, khiến bệnh tiến triển nặng hoặc kéo dài hơn.",
+        "head": "tiếp xúc với các mầm bệnh",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Viêm mũi dị ứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bệnh viêm mũi dị ứng nếu không được điều trị kịp thời và đúng cách sẽ dễ tiến triển nặng và gây ra các biến chứng, trong đó viêm mũi dị ứng bội nhiễm là biến chứng bội nhiễm vi trùng.",
+        "head": "Bệnh viêm mũi dị ứng",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "không được điều trị kịp thời và đúng cách",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Bệnh viêm mũi dị ứng nếu không được điều trị kịp thời và đúng cách sẽ dễ tiến triển nặng và gây ra các biến chứng, trong đó viêm mũi dị ứng bội nhiễm là biến chứng bội nhiễm vi trùng.",
+        "head": "viêm mũi dị ứng bội nhiễm",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Bệnh viêm mũi dị ứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Lúc này, bệnh không chỉ ảnh hưởng nhiều đến cuộc sống hàng ngày mà còn gây khó khăn trong quá trình điều trị cũng như làm tăng khả năng mắc các bệnh lý đường hô hấp khác như viêm xoang, viêm phế quản, hen suyễn, viêm phổi...",
+        "head": "Bệnh viêm mũi dị ứng",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "cuộc sống hàng ngày",
+        "tail_type": "lifestyle"
+    }
+]

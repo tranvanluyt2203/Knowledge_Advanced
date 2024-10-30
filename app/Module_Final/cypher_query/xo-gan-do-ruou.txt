@@ -1,0 +1,605 @@
+
+MERGE (o1:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o2:disease {id: 'các_bệnh_lý_về_gan_do_rượu_disease'})
+MERGE (o1)-[r0:isSymptomOf]->(o2)
+SET r0.text = 'Xơ gan do rượu là biến chứng nặng nhất của các bệnh lý về gan do rượu.'
+
+MERGE (o1:disease {id: 'bệnh_disease'})
+MERGE (o2:disease {id: 'suy_gan_disease'})
+MERGE (o1)-[r1:isSymptomOf]->(o2)
+SET r1.text = 'Nếu không được điều trị kịp thời, bệnh có thể phát triển thành suy gan.'
+
+MERGE (o1:treatment {id: 'ghép_gan_treatment'})
+MERGE (o2:disease {id: 'suy_gan_disease'})
+MERGE (o1)-[r2:treatedBy]->(o2)
+SET r2.text = 'Khi đó, ghép gan là phương pháp duy nhất để điều trị.'
+
+MERGE (o1:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o2:lifestyle {id: 'uống_bia_rượu_lifestyle'})
+MERGE (o1)-[r3:causedBy]->(o2)
+SET r3.text = 'Bác sĩ Vũ Trường Khanh, Trưởng khoa Tiêu hóa - Gan mật - Tụy BVĐK Tâm Anh Hà Nội cho biết, xơ gan do rượu là tình trạng tổn thương gan mạn tính kéo dài do uống bia rượu.'
+
+MERGE (o1:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o2:lifestyle {id: 'uống_quá_nhiều_rượu_lifestyle'})
+MERGE (o1)-[r4:causedBy]->(o2)
+SET r4.text = 'Đây là bệnh lý về gan liên quan đến cồn nguy hiểm nhất, xảy ra sau một thời gian dài uống quá nhiều rượu.'
+
+MERGE (o1:symptom {id: 'mô_sẹo_symptom'})
+MERGE (o2:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o1)-[r5:isSymptomOf]->(o2)
+SET r5.text = 'Các mô sẹo hình thành từ những tổn thương do rượu và âm thầm phát triển, chúng dần dần chiếm hết không gian sống của các tế bào khỏe mạnh trong gan.'
+
+MERGE (o1:cause {id: 'tổn_thương_do_rượu_cause'})
+MERGE (o2:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o1)-[r6:causedBy]->(o2)
+SET r6.text = 'Các mô sẹo hình thành từ những tổn thương do rượu và âm thầm phát triển, chúng dần dần chiếm hết không gian sống của các tế bào khỏe mạnh trong gan.'
+
+MERGE (o1:organ {id: 'gan_organ'})
+MERGE (o2:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o1)-[r7:affects]->(o2)
+SET r7.text = 'Theo thời gian, gan mất đi chức năng tự tái tạo, thải độc, cũng như không tạo đủ protein cho cơ thể.'
+
+MERGE (o1:lifestyle {id: 'dừng_bia_rượu_lifestyle'})
+MERGE (o2:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o1)-[r8:treatedBy]->(o2)
+SET r8.text = 'Tuy nhiên, nếu người bệnh phát hiện sớm và dừng bia rượu chức năng gan vẫn có thể duy trì tốt.'
+
+MERGE (o1:cause {id: 'ethanol_cause'})
+MERGE (o2:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o1)-[r9:causedBy]->(o2)
+SET r9.text = 'Ethanol có trong bia rượu bản chất là chất không độc nhưng khi vào gan chất này chuyển hóa thành Acetaldehyde, đây là chất gây độc, chính vì vậy nếu uống nhiều bia rượu dù là loại nào thì cũng sẽ gây độc với gan.'
+
+MERGE (o1:cause {id: 'acetaldehyde_cause'})
+MERGE (o2:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o1)-[r10:causedBy]->(o2)
+SET r10.text = 'Ethanol có trong bia rượu bản chất là chất không độc nhưng khi vào gan chất này chuyển hóa thành Acetaldehyde, đây là chất gây độc, chính vì vậy nếu uống nhiều bia rượu dù là loại nào thì cũng sẽ gây độc với gan.'
+
+MERGE (o1:disease {id: 'viêm_gan_disease'})
+MERGE (o2:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o1)-[r11:isSymptomOf]->(o2)
+SET r11.text = 'Hậu quả từ viêm gan đến xơ gan là xuất hiện các vết sẹo ở mô gan, dẫn đến suy giảm chức năng gan.'
+
+MERGE (o1:symptom {id: 'các_vết_sẹo_ở_mô_gan_symptom'})
+MERGE (o2:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o1)-[r12:isSymptomOf]->(o2)
+SET r12.text = 'Hậu quả từ viêm gan đến xơ gan là xuất hiện các vết sẹo ở mô gan, dẫn đến suy giảm chức năng gan.'
+
+MERGE (o1:lifestyle {id: 'nghiện_rượu_nặng_lifestyle'})
+MERGE (o2:disease {id: 'xơ_gan_disease'})
+MERGE (o1)-[r13:causedBy]->(o2)
+SET r13.text = 'Theo thống kê, khoảng 10 - 20% người bệnh xơ gan là do nghiện rượu nặng.'
+
+MERGE (o1:cause {id: 'rượu_cause'})
+MERGE (o2:disease {id: 'gan_nhiễm_mỡ_disease'})
+MERGE (o1)-[r14:causedBy]->(o2)
+SET r14.text = 'Tiến trình phát triển bệnh qua 3 giai đoạn:  Gan nhiễm mỡ: Hiện tượng tích tụ chất béo trong tế bào gan, làm phình gan. Đây là tình trạng về gan phổ biến nhất do rượu gây ra.'
+
+MERGE (o1:disease {id: 'gan_nhiễm_mỡ_disease'})
+MERGE (o2:disease {id: 'xơ_gan_disease'})
+MERGE (o1)-[r15:isSymptomOf]->(o2)
+SET r15.text = 'Tiến trình phát triển bệnh qua 3 giai đoạn:  Gan nhiễm mỡ: Hiện tượng tích tụ chất béo trong tế bào gan, làm phình gan. Đây là tình trạng về gan phổ biến nhất do rượu gây ra.'
+
+MERGE (o1:disease {id: 'viêm_gan_do_rượu_disease'})
+MERGE (o2:disease {id: 'xơ_gan_disease'})
+MERGE (o1)-[r16:isSymptomOf]->(o2)
+SET r16.text = 'Tiến trình phát triển bệnh qua 3 giai đoạn:  Gan nhiễm mỡ: Hiện tượng tích tụ chất béo trong tế bào gan, làm phình gan. Đây là tình trạng về gan phổ biến nhất do rượu gây ra. Viêm gan do rượu: Là tình trạng viêm cấp tính hoặc mạn tính, tế bào gan chết đi, để lại sẹo vĩnh viễn.'
+
+MERGE (o1:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o2:disease {id: 'xơ_gan_disease'})
+MERGE (o1)-[r17:isSymptomOf]->(o2)
+SET r17.text = 'Tiến trình phát triển bệnh qua 3 giai đoạn:  Gan nhiễm mỡ: Hiện tượng tích tụ chất béo trong tế bào gan, làm phình gan. Đây là tình trạng về gan phổ biến nhất do rượu gây ra. Viêm gan do rượu: Là tình trạng viêm cấp tính hoặc mạn tính, tế bào gan chết đi, để lại sẹo vĩnh viễn. Xơ gan do rượu: Các mô gan bình thường bị phá hủy, gan trở nên cứng, sưng và suy giảm chức năng.'
+
+MERGE (o1:organ {id: 'gan_organ'})
+MERGE (o2:organ {id: 'cơ_thể_organ'})
+MERGE (o1)-[r18:locatedIn]->(o2)
+SET r18.text = 'Tiến trình phát triển bệnh qua 3 giai đoạn:  Gan nhiễm mỡ: Hiện tượng tích tụ chất béo trong tế bào gan, làm phình gan. Đây là tình trạng về gan phổ biến nhất do rượu gây ra. Viêm gan do rượu: Là tình trạng viêm cấp tính hoặc mạn tính, tế bào gan chết đi, để lại sẹo vĩnh viễn. Xơ gan do rượu: Các mô gan bình thường bị phá hủy, gan trở nên cứng, sưng và suy giảm chức năng.'
+
+MERGE (o1:organ {id: 'gan_organ'})
+MERGE (o2:disease {id: 'xơ_gan_disease'})
+MERGE (o1)-[r19:affects]->(o2)
+SET r19.text = 'Tiến trình phát triển bệnh qua 3 giai đoạn:  Gan nhiễm mỡ: Hiện tượng tích tụ chất béo trong tế bào gan, làm phình gan. Đây là tình trạng về gan phổ biến nhất do rượu gây ra. Viêm gan do rượu: Là tình trạng viêm cấp tính hoặc mạn tính, tế bào gan chết đi, để lại sẹo vĩnh viễn. Xơ gan do rượu: Các mô gan bình thường bị phá hủy, gan trở nên cứng, sưng và suy giảm chức năng.'
+
+MERGE (o1:organ {id: 'gan_organ'})
+MERGE (o2:disease {id: 'xơ_gan_disease'})
+MERGE (o1)-[r20:affects]->(o2)
+SET r20.text = 'Trước khi xuất hiện các triệu chứng đầu tiên, có thể gan đã hoạt động bất thường trong một thời gian dài.'
+
+MERGE (o1:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o2:lifestyle {id: 'tuổi_lifestyle'})
+MERGE (o1)-[r21:associatedWith]->(o2)
+SET r21.text = 'Các biểu hiện xơ gan do rượu thường phát triển ở những người trong độ tuổi từ 50 tuổi và phụ thuộc vào thời gian bắt đầu uống rượu và mức độ uống nhiều hay ít.'
+
+MERGE (o1:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o2:lifestyle {id: 'uống_rượu_lifestyle'})
+MERGE (o1)-[r22:associatedWith]->(o2)
+SET r22.text = 'Các biểu hiện xơ gan do rượu thường phát triển ở những người trong độ tuổi từ 50 tuổi và phụ thuộc vào thời gian bắt đầu uống rượu và mức độ uống nhiều hay ít.'
+
+MERGE (o1:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o2:lifestyle {id: 'uống_bia_rượu_lifestyle'})
+MERGE (o1)-[r23:isSymptomOf]->(o2)
+SET r23.text = 'Đây là giai đoạn đầu tiên của xơ gan do rượu, bệnh thường chưa có các triệu chứng chính vì thế người bệnh thấy chủ quan và tiếp tục uống bia rượu.'
+
+MERGE (o1:symptom {id: 'tức_nhẹ_vùng_hạ_sườn_bên_phải_symptom'})
+MERGE (o2:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o1)-[r24:isSymptomOf]->(o2)
+SET r24.text = 'Đây là giai đoạn đầu tiên của xơ gan do rượu, bệnh thường chưa có các triệu chứng chính vì thế người bệnh thấy chủ quan và tiếp tục uống bia rượu. Lúc này, sự tích tụ chất béo bên trong tế bào gan sẽ làm gan phình ra, cũng có thể gây tức nhẹ vùng hạ sườn bên phải.'
+
+MERGE (o1:symptom {id: 'mệt_mỏi_symptom'})
+MERGE (o2:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o1)-[r25:isSymptomOf]->(o2)
+SET r25.text = 'Đây là giai đoạn đầu tiên của xơ gan do rượu, bệnh thường chưa có các triệu chứng chính vì thế người bệnh thấy chủ quan và tiếp tục uống bia rượu. Lúc này, sự tích tụ chất béo bên trong tế bào gan sẽ làm gan phình ra, cũng có thể gây tức nhẹ vùng hạ sườn bên phải. Người bệnh cũng có thể thấy mệt mỏi, chán ăn…'
+
+MERGE (o1:symptom {id: 'chán_ăn_symptom'})
+MERGE (o2:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o1)-[r26:isSymptomOf]->(o2)
+SET r26.text = 'Đây là giai đoạn đầu tiên của xơ gan do rượu, bệnh thường chưa có các triệu chứng chính vì thế người bệnh thấy chủ quan và tiếp tục uống bia rượu. Lúc này, sự tích tụ chất béo bên trong tế bào gan sẽ làm gan phình ra, cũng có thể gây tức nhẹ vùng hạ sườn bên phải. Người bệnh cũng có thể thấy mệt mỏi, chán ăn…'
+
+MERGE (o1:symptom {id: 'đau_tức_nặng_vùng_gan_symptom'})
+MERGE (o2:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o1)-[r27:isSymptomOf]->(o2)
+SET r27.text = 'Khi việc lạm dụng rượu đã gây viêm (sưng) gan, sẽ dẫn đến các triệu chứng như: Đau tức nặng vùng gan Đôi khi có sốt nhẹ Mệt mỏi Buồn nôn và nôn ói Mất cảm giác ăn ngon miệng Nước tiểu vàng, có thể có vàng da và củng mạc mắt vàng'
+
+MERGE (o1:symptom {id: 'sốt_nhẹ_symptom'})
+MERGE (o2:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o1)-[r28:isSymptomOf]->(o2)
+SET r28.text = 'Khi việc lạm dụng rượu đã gây viêm (sưng) gan, sẽ dẫn đến các triệu chứng như: Đau tức nặng vùng gan Đôi khi có sốt nhẹ Mệt mỏi Buồn nôn và nôn ói Mất cảm giác ăn ngon miệng Nước tiểu vàng, có thể có vàng da và củng mạc mắt vàng'
+
+MERGE (o1:symptom {id: 'mệt_mỏi_symptom'})
+MERGE (o2:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o1)-[r29:isSymptomOf]->(o2)
+SET r29.text = 'Khi việc lạm dụng rượu đã gây viêm (sưng) gan, sẽ dẫn đến các triệu chứng như: Đau tức nặng vùng gan Đôi khi có sốt nhẹ Mệt mỏi Buồn nôn và nôn ói Mất cảm giác ăn ngon miệng Nước tiểu vàng, có thể có vàng da và củng mạc mắt vàng'
+
+MERGE (o1:symptom {id: 'buồn_nôn_và_nôn_ói_symptom'})
+MERGE (o2:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o1)-[r30:isSymptomOf]->(o2)
+SET r30.text = 'Khi việc lạm dụng rượu đã gây viêm (sưng) gan, sẽ dẫn đến các triệu chứng như: Đau tức nặng vùng gan Đôi khi có sốt nhẹ Mệt mỏi Buồn nôn và nôn ói Mất cảm giác ăn ngon miệng Nước tiểu vàng, có thể có vàng da và củng mạc mắt vàng'
+
+MERGE (o1:symptom {id: 'mất_cảm_giác_ăn_ngon_miệng_symptom'})
+MERGE (o2:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o1)-[r31:isSymptomOf]->(o2)
+SET r31.text = 'Khi việc lạm dụng rượu đã gây viêm (sưng) gan, sẽ dẫn đến các triệu chứng như: Đau tức nặng vùng gan Đôi khi có sốt nhẹ Mệt mỏi Buồn nôn và nôn ói Mất cảm giác ăn ngon miệng Nước tiểu vàng, có thể có vàng da và củng mạc mắt vàng'
+
+MERGE (o1:symptom {id: 'nước_tiểu_vàng_symptom'})
+MERGE (o2:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o1)-[r32:isSymptomOf]->(o2)
+SET r32.text = 'Khi việc lạm dụng rượu đã gây viêm (sưng) gan, sẽ dẫn đến các triệu chứng như: Đau tức nặng vùng gan Đôi khi có sốt nhẹ Mệt mỏi Buồn nôn và nôn ói Mất cảm giác ăn ngon miệng Nước tiểu vàng, có thể có vàng da và củng mạc mắt vàng'
+
+MERGE (o1:symptom {id: 'vàng_da_symptom'})
+MERGE (o2:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o1)-[r33:isSymptomOf]->(o2)
+SET r33.text = 'Khi việc lạm dụng rượu đã gây viêm (sưng) gan, sẽ dẫn đến các triệu chứng như: Đau tức nặng vùng gan Đôi khi có sốt nhẹ Mệt mỏi Buồn nôn và nôn ói Mất cảm giác ăn ngon miệng Nước tiểu vàng, có thể có vàng da và củng mạc mắt vàng'
+
+MERGE (o1:symptom {id: 'củng_mạc_mắt_vàng_symptom'})
+MERGE (o2:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o1)-[r34:isSymptomOf]->(o2)
+SET r34.text = 'Khi việc lạm dụng rượu đã gây viêm (sưng) gan, sẽ dẫn đến các triệu chứng như: Đau tức nặng vùng gan Đôi khi có sốt nhẹ Mệt mỏi Buồn nôn và nôn ói Mất cảm giác ăn ngon miệng Nước tiểu vàng, có thể có vàng da và củng mạc mắt vàng'
+
+MERGE (o1:organ {id: 'gan_organ'})
+MERGE (o2:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o1)-[r35:affects]->(o2)
+SET r35.text = 'Đây là giai đoạn nặng nhất, gan đã bị tổn thương và không thể phục hồi.'
+
+MERGE (o1:symptom {id: 'tăng_áp_lực_tĩnh_mạch_cửa_symptom'})
+MERGE (o2:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o1)-[r36:isSymptomOf]->(o2)
+SET r36.text = 'Triệu chứng xơ gan do rượu lúc này bao gồm:  Tăng áp lực tĩnh mạch cửa Lá lách to có thể gây tức ở hạ sườn bên trái Suy dinh dưỡng Chảy máu tiêu hóa như nôn ra máu, đại tiện phân đen Cổ trướng Suy thận Lú lẫn (bệnh não do gan) Ung thư gan'
+
+MERGE (o1:symptom {id: 'lá_lách_to_symptom'})
+MERGE (o2:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o1)-[r37:isSymptomOf]->(o2)
+SET r37.text = 'Triệu chứng xơ gan do rượu lúc này bao gồm:  Tăng áp lực tĩnh mạch cửa Lá lách to có thể gây tức ở hạ sườn bên trái Suy dinh dưỡng Chảy máu tiêu hóa như nôn ra máu, đại tiện phân đen Cổ trướng Suy thận Lú lẫn (bệnh não do gan) Ung thư gan'
+
+MERGE (o1:symptom {id: 'tức_ở_hạ_sườn_bên_trái_symptom'})
+MERGE (o2:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o1)-[r38:isSymptomOf]->(o2)
+SET r38.text = 'Triệu chứng xơ gan do rượu lúc này bao gồm:  Tăng áp lực tĩnh mạch cửa Lá lách to có thể gây tức ở hạ sườn bên trái Suy dinh dưỡng Chảy máu tiêu hóa như nôn ra máu, đại tiện phân đen Cổ trướng Suy thận Lú lẫn (bệnh não do gan) Ung thư gan'
+
+MERGE (o1:symptom {id: 'suy_dinh_dưỡng_symptom'})
+MERGE (o2:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o1)-[r39:isSymptomOf]->(o2)
+SET r39.text = 'Triệu chứng xơ gan do rượu lúc này bao gồm:  Tăng áp lực tĩnh mạch cửa Lá lách to có thể gây tức ở hạ sườn bên trái Suy dinh dưỡng Chảy máu tiêu hóa như nôn ra máu, đại tiện phân đen Cổ trướng Suy thận Lú lẫn (bệnh não do gan) Ung thư gan'
+
+MERGE (o1:symptom {id: 'chảy_máu_tiêu_hóa_symptom'})
+MERGE (o2:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o1)-[r40:isSymptomOf]->(o2)
+SET r40.text = 'Triệu chứng xơ gan do rượu lúc này bao gồm:  Tăng áp lực tĩnh mạch cửa Lá lách to có thể gây tức ở hạ sườn bên trái Suy dinh dưỡng Chảy máu tiêu hóa như nôn ra máu, đại tiện phân đen Cổ trướng Suy thận Lú lẫn (bệnh não do gan) Ung thư gan'
+
+MERGE (o1:symptom {id: 'nôn_ra_máu_symptom'})
+MERGE (o2:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o1)-[r41:isSymptomOf]->(o2)
+SET r41.text = 'Triệu chứng xơ gan do rượu lúc này bao gồm:  Tăng áp lực tĩnh mạch cửa Lá lách to có thể gây tức ở hạ sườn bên trái Suy dinh dưỡng Chảy máu tiêu hóa như nôn ra máu, đại tiện phân đen Cổ trướng Suy thận Lú lẫn (bệnh não do gan) Ung thư gan'
+
+MERGE (o1:symptom {id: 'đại_tiện_phân_đen_symptom'})
+MERGE (o2:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o1)-[r42:isSymptomOf]->(o2)
+SET r42.text = 'Triệu chứng xơ gan do rượu lúc này bao gồm:  Tăng áp lực tĩnh mạch cửa Lá lách to có thể gây tức ở hạ sườn bên trái Suy dinh dưỡng Chảy máu tiêu hóa như nôn ra máu, đại tiện phân đen Cổ trướng Suy thận Lú lẫn (bệnh não do gan) Ung thư gan'
+
+MERGE (o1:symptom {id: 'cổ_trướng_symptom'})
+MERGE (o2:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o1)-[r43:isSymptomOf]->(o2)
+SET r43.text = 'Triệu chứng xơ gan do rượu lúc này bao gồm:  Tăng áp lực tĩnh mạch cửa Lá lách to có thể gây tức ở hạ sườn bên trái Suy dinh dưỡng Chảy máu tiêu hóa như nôn ra máu, đại tiện phân đen Cổ trướng Suy thận Lú lẫn (bệnh não do gan) Ung thư gan'
+
+MERGE (o1:symptom {id: 'suy_thận_symptom'})
+MERGE (o2:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o1)-[r44:isSymptomOf]->(o2)
+SET r44.text = 'Triệu chứng xơ gan do rượu lúc này bao gồm:  Tăng áp lực tĩnh mạch cửa Lá lách to có thể gây tức ở hạ sườn bên trái Suy dinh dưỡng Chảy máu tiêu hóa như nôn ra máu, đại tiện phân đen Cổ trướng Suy thận Lú lẫn (bệnh não do gan) Ung thư gan'
+
+MERGE (o1:symptom {id: 'lú_lẫn_symptom'})
+MERGE (o2:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o1)-[r45:isSymptomOf]->(o2)
+SET r45.text = 'Triệu chứng xơ gan do rượu lúc này bao gồm:  Tăng áp lực tĩnh mạch cửa Lá lách to có thể gây tức ở hạ sườn bên trái Suy dinh dưỡng Chảy máu tiêu hóa như nôn ra máu, đại tiện phân đen Cổ trướng Suy thận Lú lẫn (bệnh não do gan) Ung thư gan'
+
+MERGE (o1:disease {id: 'ung_thư_gan_disease'})
+MERGE (o2:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o1)-[r46:isSymptomOf]->(o2)
+SET r46.text = 'Triệu chứng xơ gan do rượu lúc này bao gồm:  Tăng áp lực tĩnh mạch cửa Lá lách to có thể gây tức ở hạ sườn bên trái Suy dinh dưỡng Chảy máu tiêu hóa như nôn ra máu, đại tiện phân đen Cổ trướng Suy thận Lú lẫn (bệnh não do gan) Ung thư gan'
+
+MERGE (o1:symptom {id: 'dễ_bị_bầm_tím_symptom'})
+MERGE (o2:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o1)-[r47:isSymptomOf]->(o2)
+SET r47.text = 'Ngoài ra, xơ gan do rượu còn có thể làm xuất hiện các dấu hiệu như: Dễ bị bầm tím, nổi các đốm đỏ trong lòng bàn tay, kém tập trung…'
+
+MERGE (o1:symptom {id: 'nổi_các_đốm_đỏ_trong_lòng_bàn_tay_symptom'})
+MERGE (o2:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o1)-[r48:isSymptomOf]->(o2)
+SET r48.text = 'Ngoài ra, xơ gan do rượu còn có thể làm xuất hiện các dấu hiệu như: Dễ bị bầm tím, nổi các đốm đỏ trong lòng bàn tay, kém tập trung…'
+
+MERGE (o1:symptom {id: 'kém_tập_trung_symptom'})
+MERGE (o2:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o1)-[r49:isSymptomOf]->(o2)
+SET r49.text = 'Ngoài ra, xơ gan do rượu còn có thể làm xuất hiện các dấu hiệu như: Dễ bị bầm tím, nổi các đốm đỏ trong lòng bàn tay, kém tập trung…'
+
+MERGE (o1:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o2:organ {id: 'gan_organ'})
+MERGE (o1)-[r50:affects]->(o2)
+SET r50.text = 'Bác sĩ Khanh khuyến cáo, xơ gan do rượu không chỉ làm suy giảm các chức năng quan trọng của gan (thải độc, chuyển hóa các chất, đông máu..) mà còn dẫn đến rất nhiều biến chứng nguy hiểm như:'
+
+MERGE (o1:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o2:organ {id: 'thải_độc_organ'})
+MERGE (o1)-[r51:affects]->(o2)
+SET r51.text = 'Bác sĩ Khanh khuyến cáo, xơ gan do rượu không chỉ làm suy giảm các chức năng quan trọng của gan (thải độc, chuyển hóa các chất, đông máu..) mà còn dẫn đến rất nhiều biến chứng nguy hiểm như:'
+
+MERGE (o1:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o2:organ {id: 'chuyển_hóa_các_chất_organ'})
+MERGE (o1)-[r52:affects]->(o2)
+SET r52.text = 'Bác sĩ Khanh khuyến cáo, xơ gan do rượu không chỉ làm suy giảm các chức năng quan trọng của gan (thải độc, chuyển hóa các chất, đông máu..) mà còn dẫn đến rất nhiều biến chứng nguy hiểm như:'
+
+MERGE (o1:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o2:organ {id: 'đông_máu_organ'})
+MERGE (o1)-[r53:affects]->(o2)
+SET r53.text = 'Bác sĩ Khanh khuyến cáo, xơ gan do rượu không chỉ làm suy giảm các chức năng quan trọng của gan (thải độc, chuyển hóa các chất, đông máu..) mà còn dẫn đến rất nhiều biến chứng nguy hiểm như:'
+
+MERGE (o1:symptom {id: 'vàng_da_symptom'})
+MERGE (o2:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o1)-[r54:isSymptomOf]->(o2)
+SET r54.text = 'Vàng da, một trong những biến chứng có thể gặp phải ở người mắc bệnh xơ gan do rượu.'
+
+MERGE (o1:symptom {id: 'vàng_mắt_symptom'})
+MERGE (o2:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o1)-[r55:isSymptomOf]->(o2)
+SET r55.text = 'Vàng da, vàng mắt Mất trương lực cơ (teo cơ) Xuất huyết tiêu hóa: Do vỡ giãn tĩnh mạch thực quản hoặc dạ dày. Biến chứng này là hậu quả của tình trạng tăng áp lực tĩnh mạch cửa do xơ gan rượu Nhiễm trùng dịch cổ trướng: Xảy ra khi dịch ổ bụng bị nhiễm khuẩn Tràn dịch đa màng: màng phổi, màng tim Bệnh não gan (nặng là hôn mê gan): Khi chức năng gan suy giảm, gây tích tụ chất độc và các chất trung gian chuyển hóa khác trong máu, não bộ và hệ thống thần kinh trung ương sẽ bị tổn thương Hội chứng gan thận, ung thư gan…'
+
+MERGE (o1:symptom {id: 'mất_trương_lực_cơ_symptom'})
+MERGE (o2:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o1)-[r56:isSymptomOf]->(o2)
+SET r56.text = 'Vàng da, vàng mắt Mất trương lực cơ (teo cơ) Xuất huyết tiêu hóa: Do vỡ giãn tĩnh mạch thực quản hoặc dạ dày. Biến chứng này là hậu quả của tình trạng tăng áp lực tĩnh mạch cửa do xơ gan rượu Nhiễm trùng dịch cổ trướng: Xảy ra khi dịch ổ bụng bị nhiễm khuẩn Tràn dịch đa màng: màng phổi, màng tim Bệnh não gan (nặng là hôn mê gan): Khi chức năng gan suy giảm, gây tích tụ chất độc và các chất trung gian chuyển hóa khác trong máu, não bộ và hệ thống thần kinh trung ương sẽ bị tổn thương Hội chứng gan thận, ung thư gan…'
+
+MERGE (o1:symptom {id: 'xuất_huyết_tiêu_hóa_symptom'})
+MERGE (o2:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o1)-[r57:isSymptomOf]->(o2)
+SET r57.text = 'Vàng da, vàng mắt Mất trương lực cơ (teo cơ) Xuất huyết tiêu hóa: Do vỡ giãn tĩnh mạch thực quản hoặc dạ dày. Biến chứng này là hậu quả của tình trạng tăng áp lực tĩnh mạch cửa do xơ gan rượu Nhiễm trùng dịch cổ trướng: Xảy ra khi dịch ổ bụng bị nhiễm khuẩn Tràn dịch đa màng: màng phổi, màng tim Bệnh não gan (nặng là hôn mê gan): Khi chức năng gan suy giảm, gây tích tụ chất độc và các chất trung gian chuyển hóa khác trong máu, não bộ và hệ thống thần kinh trung ương sẽ bị tổn thương Hội chứng gan thận, ung thư gan…'
+
+MERGE (o1:symptom {id: 'vỡ_giãn_tĩnh_mạch_thực_quản_symptom'})
+MERGE (o2:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o1)-[r58:isSymptomOf]->(o2)
+SET r58.text = 'Vàng da, vàng mắt Mất trương lực cơ (teo cơ) Xuất huyết tiêu hóa: Do vỡ giãn tĩnh mạch thực quản hoặc dạ dày. Biến chứng này là hậu quả của tình trạng tăng áp lực tĩnh mạch cửa do xơ gan rượu Nhiễm trùng dịch cổ trướng: Xảy ra khi dịch ổ bụng bị nhiễm khuẩn Tràn dịch đa màng: màng phổi, màng tim Bệnh não gan (nặng là hôn mê gan): Khi chức năng gan suy giảm, gây tích tụ chất độc và các chất trung gian chuyển hóa khác trong máu, não bộ và hệ thống thần kinh trung ương sẽ bị tổn thương Hội chứng gan thận, ung thư gan…'
+
+MERGE (o1:symptom {id: 'vỡ_giãn_tĩnh_mạch_dạ_dày_symptom'})
+MERGE (o2:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o1)-[r59:isSymptomOf]->(o2)
+SET r59.text = 'Vàng da, vàng mắt Mất trương lực cơ (teo cơ) Xuất huyết tiêu hóa: Do vỡ giãn tĩnh mạch thực quản hoặc dạ dày. Biến chứng này là hậu quả của tình trạng tăng áp lực tĩnh mạch cửa do xơ gan rượu Nhiễm trùng dịch cổ trướng: Xảy ra khi dịch ổ bụng bị nhiễm khuẩn Tràn dịch đa màng: màng phổi, màng tim Bệnh não gan (nặng là hôn mê gan): Khi chức năng gan suy giảm, gây tích tụ chất độc và các chất trung gian chuyển hóa khác trong máu, não bộ và hệ thống thần kinh trung ương sẽ bị tổn thương Hội chứng gan thận, ung thư gan…'
+
+MERGE (o1:symptom {id: 'tăng_áp_lực_tĩnh_mạch_cửa_symptom'})
+MERGE (o2:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o1)-[r60:isSymptomOf]->(o2)
+SET r60.text = 'Vàng da, vàng mắt Mất trương lực cơ (teo cơ) Xuất huyết tiêu hóa: Do vỡ giãn tĩnh mạch thực quản hoặc dạ dày. Biến chứng này là hậu quả của tình trạng tăng áp lực tĩnh mạch cửa do xơ gan rượu Nhiễm trùng dịch cổ trướng: Xảy ra khi dịch ổ bụng bị nhiễm khuẩn Tràn dịch đa màng: màng phổi, màng tim Bệnh não gan (nặng là hôn mê gan): Khi chức năng gan suy giảm, gây tích tụ chất độc và các chất trung gian chuyển hóa khác trong máu, não bộ và hệ thống thần kinh trung ương sẽ bị tổn thương Hội chứng gan thận, ung thư gan…'
+
+MERGE (o1:symptom {id: 'nhiễm_trùng_dịch_cổ_trướng_symptom'})
+MERGE (o2:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o1)-[r61:isSymptomOf]->(o2)
+SET r61.text = 'Vàng da, vàng mắt Mất trương lực cơ (teo cơ) Xuất huyết tiêu hóa: Do vỡ giãn tĩnh mạch thực quản hoặc dạ dày. Biến chứng này là hậu quả của tình trạng tăng áp lực tĩnh mạch cửa do xơ gan rượu Nhiễm trùng dịch cổ trướng: Xảy ra khi dịch ổ bụng bị nhiễm khuẩn Tràn dịch đa màng: màng phổi, màng tim Bệnh não gan (nặng là hôn mê gan): Khi chức năng gan suy giảm, gây tích tụ chất độc và các chất trung gian chuyển hóa khác trong máu, não bộ và hệ thống thần kinh trung ương sẽ bị tổn thương Hội chứng gan thận, ung thư gan…'
+
+MERGE (o1:organ {id: 'dịch_ổ_bụng_organ'})
+MERGE (o2:organ {id: 'cơ_thể_organ'})
+MERGE (o1)-[r62:locatedIn]->(o2)
+SET r62.text = 'Vàng da, vàng mắt Mất trương lực cơ (teo cơ) Xuất huyết tiêu hóa: Do vỡ giãn tĩnh mạch thực quản hoặc dạ dày. Biến chứng này là hậu quả của tình trạng tăng áp lực tĩnh mạch cửa do xơ gan rượu Nhiễm trùng dịch cổ trướng: Xảy ra khi dịch ổ bụng bị nhiễm khuẩn Tràn dịch đa màng: màng phổi, màng tim Bệnh não gan (nặng là hôn mê gan): Khi chức năng gan suy giảm, gây tích tụ chất độc và các chất trung gian chuyển hóa khác trong máu, não bộ và hệ thống thần kinh trung ương sẽ bị tổn thương Hội chứng gan thận, ung thư gan…'
+
+MERGE (o1:symptom {id: 'tràn_dịch_đa_màng_symptom'})
+MERGE (o2:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o1)-[r63:isSymptomOf]->(o2)
+SET r63.text = 'Vàng da, vàng mắt Mất trương lực cơ (teo cơ) Xuất huyết tiêu hóa: Do vỡ giãn tĩnh mạch thực quản hoặc dạ dày. Biến chứng này là hậu quả của tình trạng tăng áp lực tĩnh mạch cửa do xơ gan rượu Nhiễm trùng dịch cổ trướng: Xảy ra khi dịch ổ bụng bị nhiễm khuẩn Tràn dịch đa màng: màng phổi, màng tim Bệnh não gan (nặng là hôn mê gan): Khi chức năng gan suy giảm, gây tích tụ chất độc và các chất trung gian chuyển hóa khác trong máu, não bộ và hệ thống thần kinh trung ương sẽ bị tổn thương Hội chứng gan thận, ung thư gan…'
+
+MERGE (o1:organ {id: 'màng_phổi_organ'})
+MERGE (o2:organ {id: 'cơ_thể_organ'})
+MERGE (o1)-[r64:locatedIn]->(o2)
+SET r64.text = 'Vàng da, vàng mắt Mất trương lực cơ (teo cơ) Xuất huyết tiêu hóa: Do vỡ giãn tĩnh mạch thực quản hoặc dạ dày. Biến chứng này là hậu quả của tình trạng tăng áp lực tĩnh mạch cửa do xơ gan rượu Nhiễm trùng dịch cổ trướng: Xảy ra khi dịch ổ bụng bị nhiễm khuẩn Tràn dịch đa màng: màng phổi, màng tim Bệnh não gan (nặng là hôn mê gan): Khi chức năng gan suy giảm, gây tích tụ chất độc và các chất trung gian chuyển hóa khác trong máu, não bộ và hệ thống thần kinh trung ương sẽ bị tổn thương Hội chứng gan thận, ung thư gan…'
+
+MERGE (o1:organ {id: 'màng_tim_organ'})
+MERGE (o2:organ {id: 'cơ_thể_organ'})
+MERGE (o1)-[r65:locatedIn]->(o2)
+SET r65.text = 'Vàng da, vàng mắt Mất trương lực cơ (teo cơ) Xuất huyết tiêu hóa: Do vỡ giãn tĩnh mạch thực quản hoặc dạ dày. Biến chứng này là hậu quả của tình trạng tăng áp lực tĩnh mạch cửa do xơ gan rượu Nhiễm trùng dịch cổ trướng: Xảy ra khi dịch ổ bụng bị nhiễm khuẩn Tràn dịch đa màng: màng phổi, màng tim Bệnh não gan (nặng là hôn mê gan): Khi chức năng gan suy giảm, gây tích tụ chất độc và các chất trung gian chuyển hóa khác trong máu, não bộ và hệ thống thần kinh trung ương sẽ bị tổn thương Hội chứng gan thận, ung thư gan…'
+
+MERGE (o1:disease {id: 'bệnh_não_gan_disease'})
+MERGE (o2:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o1)-[r66:isSymptomOf]->(o2)
+SET r66.text = 'Vàng da, vàng mắt Mất trương lực cơ (teo cơ) Xuất huyết tiêu hóa: Do vỡ giãn tĩnh mạch thực quản hoặc dạ dày. Biến chứng này là hậu quả của tình trạng tăng áp lực tĩnh mạch cửa do xơ gan rượu Nhiễm trùng dịch cổ trướng: Xảy ra khi dịch ổ bụng bị nhiễm khuẩn Tràn dịch đa màng: màng phổi, màng tim Bệnh não gan (nặng là hôn mê gan): Khi chức năng gan suy giảm, gây tích tụ chất độc và các chất trung gian chuyển hóa khác trong máu, não bộ và hệ thống thần kinh trung ương sẽ bị tổn thương Hội chứng gan thận, ung thư gan…'
+
+MERGE (o1:symptom {id: 'hôn_mê_gan_symptom'})
+MERGE (o2:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o1)-[r67:isSymptomOf]->(o2)
+SET r67.text = 'Vàng da, vàng mắt Mất trương lực cơ (teo cơ) Xuất huyết tiêu hóa: Do vỡ giãn tĩnh mạch thực quản hoặc dạ dày. Biến chứng này là hậu quả của tình trạng tăng áp lực tĩnh mạch cửa do xơ gan rượu Nhiễm trùng dịch cổ trướng: Xảy ra khi dịch ổ bụng bị nhiễm khuẩn Tràn dịch đa màng: màng phổi, màng tim Bệnh não gan (nặng là hôn mê gan): Khi chức năng gan suy giảm, gây tích tụ chất độc và các chất trung gian chuyển hóa khác trong máu, não bộ và hệ thống thần kinh trung ương sẽ bị tổn thương Hội chứng gan thận, ung thư gan…'
+
+MERGE (o1:test {id: 'thăm_khám_lâm_sàng_test'})
+MERGE (o2:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o1)-[r68:diagnosedBy]->(o2)
+SET r68.text = 'Bước đầu tiên trong chẩn đoán xơ gan do rượu là thăm khám lâm sàng, tìm hiểu bệnh sử và thói quen sống của người bệnh…'
+
+MERGE (o1:test {id: 'tìm_hiểu_bệnh_sử_test'})
+MERGE (o2:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o1)-[r69:diagnosedBy]->(o2)
+SET r69.text = 'Bước đầu tiên trong chẩn đoán xơ gan do rượu là thăm khám lâm sàng, tìm hiểu bệnh sử và thói quen sống của người bệnh…'
+
+MERGE (o1:lifestyle {id: 'thói_quen_sống_lifestyle'})
+MERGE (o2:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o1)-[r70:relatedTo]->(o2)
+SET r70.text = 'Bước đầu tiên trong chẩn đoán xơ gan do rượu là thăm khám lâm sàng, tìm hiểu bệnh sử và thói quen sống của người bệnh…'
+
+MERGE (o1:test {id: 'xét_nghiệm_máu_test'})
+MERGE (o2:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o1)-[r71:diagnosedBy]->(o2)
+SET r71.text = 'Sau đó, người bệnh sẽ được chỉ định tiến hành các chẩn đoán xơ gan rượu thông qua các xét nghiệm cận lâm sàng khác như:    Xét nghiệm máu: Bao gồm xét nghiệm công thức máu, xét nghiệm điện giải, đánh giá mức độ đông máu, thăm dò chức năng gan,&#8230;'
+
+MERGE (o1:test {id: 'xét_nghiệm_công_thức_máu_test'})
+MERGE (o2:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o1)-[r72:diagnosedBy]->(o2)
+SET r72.text = 'Xét nghiệm máu: Bao gồm xét nghiệm công thức máu, xét nghiệm điện giải, đánh giá mức độ đông máu, thăm dò chức năng gan,&#8230;'
+
+MERGE (o1:test {id: 'xét_nghiệm_điện_giải_test'})
+MERGE (o2:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o1)-[r73:diagnosedBy]->(o2)
+SET r73.text = 'Xét nghiệm máu: Bao gồm xét nghiệm công thức máu, xét nghiệm điện giải, đánh giá mức độ đông máu, thăm dò chức năng gan,&#8230;'
+
+MERGE (o1:test {id: 'đánh_giá_mức_độ_đông_máu_test'})
+MERGE (o2:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o1)-[r74:diagnosedBy]->(o2)
+SET r74.text = 'Xét nghiệm máu: Bao gồm xét nghiệm công thức máu, xét nghiệm điện giải, đánh giá mức độ đông máu, thăm dò chức năng gan,&#8230;'
+
+MERGE (o1:test {id: 'thăm_dò_chức_năng_gan_test'})
+MERGE (o2:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o1)-[r75:diagnosedBy]->(o2)
+SET r75.text = 'Xét nghiệm máu: Bao gồm xét nghiệm công thức máu, xét nghiệm điện giải, đánh giá mức độ đông máu, thăm dò chức năng gan,&#8230;'
+
+MERGE (o1:test {id: 'xét_nghiệm_men_gan_test'})
+MERGE (o2:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o1)-[r76:diagnosedBy]->(o2)
+SET r76.text = 'Xét nghiệm men gan: Nhằm xác định nồng độ ba loại men gan gamma - glutamyltransferase (GGT), aspartate aminotransferase (AST) và alanin aminotransferase (ALT).'
+
+MERGE (o1:test {id: 'gamma_-_glutamyltransferase_(ggt)_test'})
+MERGE (o2:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o1)-[r77:diagnosedBy]->(o2)
+SET r77.text = 'Xét nghiệm men gan: Nhằm xác định nồng độ ba loại men gan gamma - glutamyltransferase (GGT), aspartate aminotransferase (AST) và alanin aminotransferase (ALT).'
+
+MERGE (o1:test {id: 'aspartate_aminotransferase_(ast)_test'})
+MERGE (o2:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o1)-[r78:diagnosedBy]->(o2)
+SET r78.text = 'Xét nghiệm men gan: Nhằm xác định nồng độ ba loại men gan gamma - glutamyltransferase (GGT), aspartate aminotransferase (AST) và alanin aminotransferase (ALT).'
+
+MERGE (o1:test {id: 'alanin_aminotransferase_(alt)_test'})
+MERGE (o2:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o1)-[r79:diagnosedBy]->(o2)
+SET r79.text = 'Xét nghiệm men gan: Nhằm xác định nồng độ ba loại men gan gamma - glutamyltransferase (GGT), aspartate aminotransferase (AST) và alanin aminotransferase (ALT).'
+
+MERGE (o1:symptom {id: 'ast_cao_gấp_hai_lần_alt_symptom'})
+MERGE (o2:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o1)-[r80:isSymptomOf]->(o2)
+SET r80.text = 'Ở những người mắc bệnh xơ gan do rượu, AST cao gấp hai lần ALT'
+
+MERGE (o1:test {id: 'siêu_âm_gan_test'})
+MERGE (o2:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o1)-[r81:diagnosedBy]->(o2)
+SET r81.text = 'Siêu âm gan, đo độ đàn hồi của gan giúp đánh giá mức độ xơ hóa của gan và ổ bụng'
+
+MERGE (o1:test {id: 'đo_độ_đàn_hồi_của_gan_test'})
+MERGE (o2:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o1)-[r82:diagnosedBy]->(o2)
+SET r82.text = 'Siêu âm gan, đo độ đàn hồi của gan giúp đánh giá mức độ xơ hóa của gan và ổ bụng'
+
+MERGE (o1:test {id: 'chụp_ct_cắt_lớp_test'})
+MERGE (o2:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o1)-[r83:diagnosedBy]->(o2)
+SET r83.text = 'Chụp CT cắt lớp, chụp cộng hưởng từ MRI: Là những kỹ thuật chẩn đoán hình ảnh, cung cấp hình ảnh chi tiết về tình trạng gan, từ đó đánh giá mức độ tổn thương gan'
+
+MERGE (o1:test {id: 'chụp_cộng_hưởng_từ_mri_test'})
+MERGE (o2:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o1)-[r84:diagnosedBy]->(o2)
+SET r84.text = 'Chụp CT cắt lớp, chụp cộng hưởng từ MRI: Là những kỹ thuật chẩn đoán hình ảnh, cung cấp hình ảnh chi tiết về tình trạng gan, từ đó đánh giá mức độ tổn thương gan'
+
+MERGE (o1:test {id: 'sinh_thiết_gan_test'})
+MERGE (o2:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o1)-[r85:diagnosedBy]->(o2)
+SET r85.text = 'Sinh thiết gan ngày nay ít được sử dụng (3)'
+
+MERGE (o1:test {id: 'nội_soi_tiêu_hóa_trên_test'})
+MERGE (o2:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o1)-[r86:diagnosedBy]->(o2)
+SET r86.text = 'Nội soi tiêu hóa trên nhằm phát hiện búi giãn tĩnh mạch thực quản, dạ dày'
+
+MERGE (o1:symptom {id: 'búi_giãn_tĩnh_mạch_thực_quản_symptom'})
+MERGE (o2:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o1)-[r87:isSymptomOf]->(o2)
+SET r87.text = 'Nội soi tiêu hóa trên nhằm phát hiện búi giãn tĩnh mạch thực quản, dạ dày'
+
+MERGE (o1:symptom {id: 'búi_giãn_tĩnh_mạch_dạ_dày_symptom'})
+MERGE (o2:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o1)-[r88:isSymptomOf]->(o2)
+SET r88.text = 'Nội soi tiêu hóa trên nhằm phát hiện búi giãn tĩnh mạch thực quản, dạ dày'
+
+MERGE (o1:treatment {id: 'cai_rượu_treatment'})
+MERGE (o2:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o1)-[r89:treatedBy]->(o2)
+SET r89.text = 'Hai mục tiêu chính trong điều trị xơ gan do rượu là: giúp người bệnh cai rượu và cải thiện sức khỏe gan.'
+
+MERGE (o1:treatment {id: 'cải_thiện_sức_khỏe_gan_treatment'})
+MERGE (o2:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o1)-[r90:treatedBy]->(o2)
+SET r90.text = 'Hai mục tiêu chính trong điều trị xơ gan do rượu là: giúp người bệnh cai rượu và cải thiện sức khỏe gan.'
+
+MERGE (o1:lifestyle {id: 'hạn_chế_rượu_bia_lifestyle'})
+MERGE (o2:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o1)-[r91:treatedBy]->(o2)
+SET r91.text = 'Hạn chế rượu bia là yếu tố quan trọng trong điều trị xơ gan do rượu.'
+
+MERGE (o1:lifestyle {id: 'hạn_chế_rượu_bia_lifestyle'})
+MERGE (o2:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o1)-[r92:treatedBy]->(o2)
+SET r92.text = 'Hạn chế rượu bia là điều tiên quyết trong lộ trình điều trị xơ gan rượu.'
+
+MERGE (o1:lifestyle {id: 'hạn_chế_rượu_bia_lifestyle'})
+MERGE (o2:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o1)-[r93:preventedBy]->(o2)
+SET r93.text = 'Điều này có tác dụng hỗ trợ điều trị và ngăn ngừa bệnh tiến triển nặng.'
+
+MERGE (o1:lifestyle {id: 'nghiện_rượu_nặng_lifestyle'})
+MERGE (o2:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o1)-[r94:aggravatedBy]->(o2)
+SET r94.text = 'Đối với người nghiện rượu nặng, việc ngừng uống đột ngột sẽ dẫn đến các vấn đề như: lo lắng, mệt mỏi, đau đầu, buồn nôn, kích động…'
+
+MERGE (o1:symptom {id: 'lo_lắng_symptom'})
+MERGE (o2:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o1)-[r95:isSymptomOf]->(o2)
+SET r95.text = 'Đối với người nghiện rượu nặng, việc ngừng uống đột ngột sẽ dẫn đến các vấn đề như: lo lắng, mệt mỏi, đau đầu, buồn nôn, kích động…'
+
+MERGE (o1:symptom {id: 'mệt_mỏi_symptom'})
+MERGE (o2:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o1)-[r96:isSymptomOf]->(o2)
+SET r96.text = 'Đối với người nghiện rượu nặng, việc ngừng uống đột ngột sẽ dẫn đến các vấn đề như: lo lắng, mệt mỏi, đau đầu, buồn nôn, kích động…'
+
+MERGE (o1:symptom {id: 'đau_đầu_symptom'})
+MERGE (o2:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o1)-[r97:isSymptomOf]->(o2)
+SET r97.text = 'Đối với người nghiện rượu nặng, việc ngừng uống đột ngột sẽ dẫn đến các vấn đề như: lo lắng, mệt mỏi, đau đầu, buồn nôn, kích động…'
+
+MERGE (o1:symptom {id: 'buồn_nôn_symptom'})
+MERGE (o2:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o1)-[r98:isSymptomOf]->(o2)
+SET r98.text = 'Đối với người nghiện rượu nặng, việc ngừng uống đột ngột sẽ dẫn đến các vấn đề như: lo lắng, mệt mỏi, đau đầu, buồn nôn, kích động…'
+
+MERGE (o1:symptom {id: 'kích_động_symptom'})
+MERGE (o2:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o1)-[r99:isSymptomOf]->(o2)
+SET r99.text = 'Đối với người nghiện rượu nặng, việc ngừng uống đột ngột sẽ dẫn đến các vấn đề như: lo lắng, mệt mỏi, đau đầu, buồn nôn, kích động…'
+
+MERGE (o1:treatment {id: 'thuốc_treatment'})
+MERGE (o2:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o1)-[r100:treatedBy]->(o2)
+SET r100.text = 'Lúc này, người bệnh sẽ được chỉ định dùng thuốc, dịch truyền tĩnh mạch hoặc thuốc an thần cho đến khi hoàn tất quá trình cai nghiện rượu.'
+
+MERGE (o1:treatment {id: 'dịch_truyền_tĩnh_mạch_treatment'})
+MERGE (o2:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o1)-[r101:treatedBy]->(o2)
+SET r101.text = 'Lúc này, người bệnh sẽ được chỉ định dùng thuốc, dịch truyền tĩnh mạch hoặc thuốc an thần cho đến khi hoàn tất quá trình cai nghiện rượu.'
+
+MERGE (o1:treatment {id: 'thuốc_an_thần_treatment'})
+MERGE (o2:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o1)-[r102:treatedBy]->(o2)
+SET r102.text = 'Lúc này, người bệnh sẽ được chỉ định dùng thuốc, dịch truyền tĩnh mạch hoặc thuốc an thần cho đến khi hoàn tất quá trình cai nghiện rượu.'
+
+MERGE (o1:lifestyle {id: 'giảm_rượu_bia_lifestyle'})
+MERGE (o2:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o1)-[r103:treatedBy]->(o2)
+SET r103.text = 'Thông thường, người bệnh sẽ cảm thấy những cải thiện tích cực sau khoảng 3 tháng giảm rượu bia.'
+
+MERGE (o1:symptom {id: 'suy_dinh_dưỡng_symptom'})
+MERGE (o2:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o1)-[r104:isSymptomOf]->(o2)
+SET r104.text = 'Người nghiện rượu lâu dài thường có suy dinh dưỡng do thiếu calo, thiếu chất đạm và vitamin cùng khoáng chất, vì thế cần bổ sung các nguồn dinh dưỡng này qua con đường ăn uống.'
+
+MERGE (o1:symptom {id: 'thiếu_calo_symptom'})
+MERGE (o2:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o1)-[r105:isSymptomOf]->(o2)
+SET r105.text = 'Người nghiện rượu lâu dài thường có suy dinh dưỡng do thiếu calo, thiếu chất đạm và vitamin cùng khoáng chất, vì thế cần bổ sung các nguồn dinh dưỡng này qua con đường ăn uống.'
+
+MERGE (o1:symptom {id: 'thiếu_chất_đạm_symptom'})
+MERGE (o2:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o1)-[r106:isSymptomOf]->(o2)
+SET r106.text = 'Người nghiện rượu lâu dài thường có suy dinh dưỡng do thiếu calo, thiếu chất đạm và vitamin cùng khoáng chất, vì thế cần bổ sung các nguồn dinh dưỡng này qua con đường ăn uống.'
+
+MERGE (o1:symptom {id: 'thiếu_vitamin_symptom'})
+MERGE (o2:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o1)-[r107:isSymptomOf]->(o2)
+SET r107.text = 'Người nghiện rượu lâu dài thường có suy dinh dưỡng do thiếu calo, thiếu chất đạm và vitamin cùng khoáng chất, vì thế cần bổ sung các nguồn dinh dưỡng này qua con đường ăn uống.'
+
+MERGE (o1:symptom {id: 'thiếu_khoáng_chất_symptom'})
+MERGE (o2:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o1)-[r108:isSymptomOf]->(o2)
+SET r108.text = 'Người nghiện rượu lâu dài thường có suy dinh dưỡng do thiếu calo, thiếu chất đạm và vitamin cùng khoáng chất, vì thế cần bổ sung các nguồn dinh dưỡng này qua con đường ăn uống.'
+
+MERGE (o1:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o2:organ {id: 'các_mô_tế_bào_gan_organ'})
+MERGE (o1)-[r109:affects]->(o2)
+SET r109.text = 'Khi đã mắc xơ gan do rượu, các mô tế bào gan của người bệnh không thể khôi phục lại như ban đầu.'
+
+MERGE (o1:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o2:cause {id: 'rượu_cause'})
+MERGE (o1)-[r110:causedBy]->(o2)
+SET r110.text = 'Khi đã mắc xơ gan do rượu, các mô tế bào gan của người bệnh không thể khôi phục lại như ban đầu.'
+
+MERGE (o1:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o2:treatment {id: 'các_phương_pháp_điều_trị_treatment'})
+MERGE (o1)-[r111:treatedBy]->(o2)
+SET r111.text = 'Các phương pháp điều trị, thay đổi thói quen sống và sinh hoạt chỉ có tác dụng ngăn ngừa bệnh tiếp tục phát triển, giảm nguy cơ biến chứng.'
+
+MERGE (o1:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o2:lifestyle {id: 'thay_đổi_thói_quen_sống_và_sinh_hoạt_lifestyle'})
+MERGE (o1)-[r112:preventedBy]->(o2)
+SET r112.text = 'Các phương pháp điều trị, thay đổi thói quen sống và sinh hoạt chỉ có tác dụng ngăn ngừa bệnh tiếp tục phát triển, giảm nguy cơ biến chứng.'
+
+MERGE (o1:disease {id: 'xơ_gan_do_rượu_disease'})
+MERGE (o2:lifestyle {id: 'cuộc_sống_bình_thường_lifestyle'})
+MERGE (o1)-[r113:relatedTo]->(o2)
+SET r113.text = 'Ở những trường hợp nhẹ, nếu được kiểm soát tốt, người bệnh xơ gan do rượu có thể tận hưởng cuộc sống như người bình thường.'
+
+MERGE (o1:organ {id: 'khoa_tiêu_hóa_-_gan_mật_-_tụy_(bvđk_tâm_anh_hà_nội)_và_khoa_tiêu_hóa_(bvđk_tâm_anh_tp.hcm)_organ'})
+MERGE (o2:organ {id: 'bvđk_tâm_anh_hà_nội_và_bvđk_tâm_anh_tp.hcm_organ'})
+MERGE (o1)-[r114:locatedIn]->(o2)
+SET r114.text = 'Khoa Tiêu hóa - Gan mật - Tụy (BVĐK Tâm Anh Hà Nội) và Khoa Tiêu hóa (BVĐK Tâm Anh TP.HCM) và là những trung tâm y tế chuyên khoa Tiêu hóa uy tín, cung cấp dịch vụ thăm khám và điều trị cao cấp, hiệu quả cho các bệnh nhân mắc các vấn đề về gan từ nhẹ đến nặng (gan nhiễm mỡ, viêm gan cấp tính, mạn tính, xơ gan, ung thư gan…).'
+
+MERGE (o1:organ {id: 'khoa_tiêu_hóa_-_gan_mật_-_tụy_(bvđk_tâm_anh_hà_nội)_và_khoa_tiêu_hóa_(bvđk_tâm_anh_tp.hcm)_organ'})
+MERGE (o2:treatment {id: 'dịch_vụ_thăm_khám_và_điều_trị_treatment'})
+MERGE (o1)-[r115:treatedBy]->(o2)
+SET r115.text = 'Khoa Tiêu hóa - Gan mật - Tụy (BVĐK Tâm Anh Hà Nội) và Khoa Tiêu hóa (BVĐK Tâm Anh TP.HCM) và là những trung tâm y tế chuyên khoa Tiêu hóa uy tín, cung cấp dịch vụ thăm khám và điều trị cao cấp, hiệu quả cho các bệnh nhân mắc các vấn đề về gan từ nhẹ đến nặng (gan nhiễm mỡ, viêm gan cấp tính, mạn tính, xơ gan, ung thư gan…).'
+
+MERGE (o1:disease {id: 'gan_nhiễm_mỡ__viêm_gan_cấp_tính__mạn_tính__xơ_gan__ung_thư_gan_disease'})
+MERGE (o2:treatment {id: 'dịch_vụ_thăm_khám_và_điều_trị_treatment'})
+MERGE (o1)-[r116:treatedBy]->(o2)
+SET r116.text = 'Khoa Tiêu hóa - Gan mật - Tụy (BVĐK Tâm Anh Hà Nội) và Khoa Tiêu hóa (BVĐK Tâm Anh TP.HCM) và là những trung tâm y tế chuyên khoa Tiêu hóa uy tín, cung cấp dịch vụ thăm khám và điều trị cao cấp, hiệu quả cho các bệnh nhân mắc các vấn đề về gan từ nhẹ đến nặng (gan nhiễm mỡ, viêm gan cấp tính, mạn tính, xơ gan, ung thư gan…).'
+
+MERGE (o1:organ {id: 'bvđk_tâm_anh_organ'})
+MERGE (o2:treatment {id: 'đội_ngũ_bác_sĩ_tiêu_hóa_-_gan_mật__nội_khoa_–_ngoại_khoa_–_nội_soi_tiêu_hóa_chuyên_môn_cao__giàu_kinh_nghiệm_treatment'})
+MERGE (o1)-[r117:treatedBy]->(o2)
+SET r117.text = 'Hệ thống BVĐK Tâm Anh quy tụ đội ngũ bác sĩ Tiêu hóa - Gan mật, Nội khoa – Ngoại khoa – Nội soi tiêu hóa chuyên môn cao, giàu kinh nghiệm, bên cạnh đó là sự hỗ trợ của hệ thống thiết bị y tế hiện đại, nhập khẩu từ nước ngoài, phục vụ tối đa nhu cầu thăm khám và điều trị của khách hàng.'
+
+MERGE (o1:organ {id: 'bvđk_tâm_anh_organ'})
+MERGE (o2:treatment {id: 'hệ_thống_thiết_bị_y_tế_hiện_đại__nhập_khẩu_từ_nước_ngoài_treatment'})
+MERGE (o1)-[r118:treatedBy]->(o2)
+SET r118.text = 'Hệ thống BVĐK Tâm Anh quy tụ đội ngũ bác sĩ Tiêu hóa - Gan mật, Nội khoa – Ngoại khoa – Nội soi tiêu hóa chuyên môn cao, giàu kinh nghiệm, bên cạnh đó là sự hỗ trợ của hệ thống thiết bị y tế hiện đại, nhập khẩu từ nước ngoài, phục vụ tối đa nhu cầu thăm khám và điều trị của khách hàng.'
+
+MERGE (o1:test {id: 'máy_nội_soi_dạ_dày_và_đại_tràng_evis_x1_gif-ez1500__cv_190_hoặc_máy_nội_soi_siêu_âm_eu-me_2__hệ_thống_c-arm_model_cios_fit_dùng_cho_kỹ_thuật_nội_soi_mật_tụy_ngược_dòng__máy_siêu_âm_có_đàn_hồi_mô_aixplorer_mach_30_test'})
+MERGE (o2:disease {id: 'ung_thư_đường_tiêu_hóa_giai_đoạn_sớm_như_ung_thư_thực_quản__dạ_dày_và_phát_hiện_polyp_đại_tràng_disease'})
+MERGE (o1)-[r119:diagnosedBy]->(o2)
+SET r119.text = 'Thông qua các trang thiết bị y tế hiện đại như máy nội soi dạ dày và đại tràng EVIS X1 GIF-EZ1500, CV 190 hoặc máy nội soi siêu âm EU-ME 2, hệ thống C-Arm model Cios Fit dùng cho kỹ thuật nội soi mật tụy ngược dòng, máy siêu âm có đàn hồi mô Aixplorer Mach 30…, người bệnh có thể được phát hiện ung thư đường tiêu hóa giai đoạn sớm như ung thư thực quản, dạ dày và phát hiện polyp đại tràng; quản lý và điều trị bệnh gan mạn tính trong đó có viêm gan virus B nhằm phát hiện ung thư gan ở giai đoạn sớm.'
+
+MERGE (o1:test {id: 'máy_nội_soi_dạ_dày_và_đại_tràng_evis_x1_gif-ez1500__cv_190_hoặc_máy_nội_soi_siêu_âm_eu-me_2__hệ_thống_c-arm_model_cios_fit_dùng_cho_kỹ_thuật_nội_soi_mật_tụy_ngược_dòng__máy_siêu_âm_có_đàn_hồi_mô_aixplorer_mach_30_test'})
+MERGE (o2:disease {id: 'bệnh_gan_mạn_tính_trong_đó_có_viêm_gan_virus_b_disease'})
+MERGE (o1)-[r120:treatedBy]->(o2)
+SET r120.text = 'Thông qua các trang thiết bị y tế hiện đại như máy nội soi dạ dày và đại tràng EVIS X1 GIF-EZ1500, CV 190 hoặc máy nội soi siêu âm EU-ME 2, hệ thống C-Arm model Cios Fit dùng cho kỹ thuật nội soi mật tụy ngược dòng, máy siêu âm có đàn hồi mô Aixplorer Mach 30…, người bệnh có thể được phát hiện ung thư đường tiêu hóa giai đoạn sớm như ung thư thực quản, dạ dày và phát hiện polyp đại tràng; quản lý và điều trị bệnh gan mạn tính trong đó có viêm gan virus B nhằm phát hiện ung thư gan ở giai đoạn sớm.'

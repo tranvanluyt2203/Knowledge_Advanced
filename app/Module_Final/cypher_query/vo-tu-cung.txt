@@ -1,0 +1,970 @@
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:disease {id: 'tai_biến_sản_khoa_disease'})
+MERGE (o1)-[r0:isSymptomOf]->(o2)
+SET r0.text = 'Vỡ tử cung là một trong 5 tai biến sản khoa nguy hiểm thường gặp trong quá trình mang thai và chuyển dạ.'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:lifestyle {id: 'mang_thai_lifestyle'})
+MERGE (o1)-[r1:relatedTo]->(o2)
+SET r1.text = 'Vỡ tử cung là một trong 5 tai biến sản khoa nguy hiểm thường gặp trong quá trình mang thai và chuyển dạ.'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:lifestyle {id: 'chuyển_dạ_lifestyle'})
+MERGE (o1)-[r2:relatedTo]->(o2)
+SET r2.text = 'Vỡ tử cung là một trong 5 tai biến sản khoa nguy hiểm thường gặp trong quá trình mang thai và chuyển dạ.'
+
+MERGE (o1:treatment {id: 'quản_lý_thai_nghén_treatment'})
+MERGE (o2:disease {id: 'tai_biến_sản_khoa_disease'})
+MERGE (o1)-[r3:preventedBy]->(o2)
+SET r3.text = 'Hiện nay, việc quản lý thai nghén đang thực hiện tốt hơn, tai biến này đã có thể phòng ngừa nếu được phát hiện sớm và can thiệp kịp thời.'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:organ {id: 'tử_cung_organ'})
+MERGE (o1)-[r4:affects]->(o2)
+SET r4.text = 'Vỡ tử cung (Uterine Rupture) là tình trạng các lớp cơ ở tử cung bị nứt hoặc rách hoàn toàn tự nhiên mà không phải do phẫu thuật, làm cho các thành phần bên trong tử cung (bao gồm một phần hoặc toàn bộ thai nhi) bị tống xuất vào ổ bụng.'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:organ {id: 'thai_nhi_organ'})
+MERGE (o1)-[r5:affects]->(o2)
+SET r5.text = 'Vỡ tử cung (Uterine Rupture) là tình trạng các lớp cơ ở tử cung bị nứt hoặc rách hoàn toàn tự nhiên mà không phải do phẫu thuật, làm cho các thành phần bên trong tử cung (bao gồm một phần hoặc toàn bộ thai nhi) bị tống xuất vào ổ bụng.'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:organ {id: 'ổ_bụng_organ'})
+MERGE (o1)-[r6:affects]->(o2)
+SET r6.text = 'Vỡ tử cung (Uterine Rupture) là tình trạng các lớp cơ ở tử cung bị nứt hoặc rách hoàn toàn tự nhiên mà không phải do phẫu thuật, làm cho các thành phần bên trong tử cung (bao gồm một phần hoặc toàn bộ thai nhi) bị tống xuất vào ổ bụng.'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:organ {id: 'mẹ_bầu_organ'})
+MERGE (o1)-[r7:affects]->(o2)
+SET r7.text = 'Tình trạng này có thể đe dọa tính mạng mẹ bầu và thai nhi nếu không được chẩn đoán và điều trị kịp thời.'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:organ {id: 'thai_nhi_organ'})
+MERGE (o1)-[r8:affects]->(o2)
+SET r8.text = 'Tình trạng này có thể đe dọa tính mạng mẹ bầu và thai nhi nếu không được chẩn đoán và điều trị kịp thời.'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:test {id: 'chẩn_đoán_test'})
+MERGE (o1)-[r9:treatedBy]->(o2)
+SET r9.text = 'Tình trạng này có thể đe dọa tính mạng mẹ bầu và thai nhi nếu không được chẩn đoán và điều trị kịp thời.'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:treatment {id: 'điều_trị_treatment'})
+MERGE (o1)-[r10:treatedBy]->(o2)
+SET r10.text = 'Tình trạng này có thể đe dọa tính mạng mẹ bầu và thai nhi nếu không được chẩn đoán và điều trị kịp thời.'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:disease {id: 'tai_biến_sản_khoa_disease'})
+MERGE (o1)-[r11:isSymptomOf]->(o2)
+SET r11.text = 'ThS.BS Nguyễn Thị Quý Khoa, Bác sĩ Trung tâm Sản Phụ khoa Bệnh viện Đa khoa Tâm Anh TP.HCM cho biết, đây là một trong năm tai biến sản khoa nguy hiểm, gồm: vỡ tử cung, nhau bong non, băng huyết sau sinh, nhiễm trùng hậu sản và uốn ván rốn sơ sinh.'
+
+MERGE (o1:disease {id: 'nhau_bong_non_disease'})
+MERGE (o2:disease {id: 'tai_biến_sản_khoa_disease'})
+MERGE (o1)-[r12:isSymptomOf]->(o2)
+SET r12.text = 'ThS.BS Nguyễn Thị Quý Khoa, Bác sĩ Trung tâm Sản Phụ khoa Bệnh viện Đa khoa Tâm Anh TP.HCM cho biết, đây là một trong năm tai biến sản khoa nguy hiểm, gồm: vỡ tử cung, nhau bong non, băng huyết sau sinh, nhiễm trùng hậu sản và uốn ván rốn sơ sinh.'
+
+MERGE (o1:disease {id: 'băng_huyết_sau_sinh_disease'})
+MERGE (o2:disease {id: 'tai_biến_sản_khoa_disease'})
+MERGE (o1)-[r13:isSymptomOf]->(o2)
+SET r13.text = 'ThS.BS Nguyễn Thị Quý Khoa, Bác sĩ Trung tâm Sản Phụ khoa Bệnh viện Đa khoa Tâm Anh TP.HCM cho biết, đây là một trong năm tai biến sản khoa nguy hiểm, gồm: vỡ tử cung, nhau bong non, băng huyết sau sinh, nhiễm trùng hậu sản và uốn ván rốn sơ sinh.'
+
+MERGE (o1:disease {id: 'nhiễm_trùng_hậu_sản_disease'})
+MERGE (o2:disease {id: 'tai_biến_sản_khoa_disease'})
+MERGE (o1)-[r14:isSymptomOf]->(o2)
+SET r14.text = 'ThS.BS Nguyễn Thị Quý Khoa, Bác sĩ Trung tâm Sản Phụ khoa Bệnh viện Đa khoa Tâm Anh TP.HCM cho biết, đây là một trong năm tai biến sản khoa nguy hiểm, gồm: vỡ tử cung, nhau bong non, băng huyết sau sinh, nhiễm trùng hậu sản và uốn ván rốn sơ sinh.'
+
+MERGE (o1:disease {id: 'uốn_ván_rốn_sơ_sinh_disease'})
+MERGE (o2:disease {id: 'tai_biến_sản_khoa_disease'})
+MERGE (o1)-[r15:isSymptomOf]->(o2)
+SET r15.text = 'ThS.BS Nguyễn Thị Quý Khoa, Bác sĩ Trung tâm Sản Phụ khoa Bệnh viện Đa khoa Tâm Anh TP.HCM cho biết, đây là một trong năm tai biến sản khoa nguy hiểm, gồm: vỡ tử cung, nhau bong non, băng huyết sau sinh, nhiễm trùng hậu sản và uốn ván rốn sơ sinh.'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:lifestyle {id: 'mang_thai_lifestyle'})
+MERGE (o1)-[r16:relatedTo]->(o2)
+SET r16.text = 'Tình trạng này có thể xảy ra trong thời kỳ mang thai hoặc trong cuộc sinh, tuy nhiên trong thời kỳ mang thai hiếm gặp hơn.'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:lifestyle {id: 'cuộc_sinh_lifestyle'})
+MERGE (o1)-[r17:relatedTo]->(o2)
+SET r17.text = 'Tình trạng này có thể xảy ra trong thời kỳ mang thai hoặc trong cuộc sinh, tuy nhiên trong thời kỳ mang thai hiếm gặp hơn.'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:cause {id: 'sẹo_mổ_cũ_cause'})
+MERGE (o1)-[r18:causedBy]->(o2)
+SET r18.text = 'Tai biến này thường xảy ra ở mẹ bầu có sẹo mổ cũ ở tử cung hoặc có bất thường, dị dạng tử cung.'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:cause {id: 'bất_thường_cause'})
+MERGE (o1)-[r19:causedBy]->(o2)
+SET r19.text = 'Tai biến này thường xảy ra ở mẹ bầu có sẹo mổ cũ ở tử cung hoặc có bất thường, dị dạng tử cung.'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:cause {id: 'dị_dạng_tử_cung_cause'})
+MERGE (o1)-[r20:causedBy]->(o2)
+SET r20.text = 'Tai biến này thường xảy ra ở mẹ bầu có sẹo mổ cũ ở tử cung hoặc có bất thường, dị dạng tử cung.'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:treatment {id: 'mổ_lấy_thai_treatment'})
+MERGE (o1)-[r21:relatedTo]->(o2)
+SET r21.text = 'Vỡ tử cung tuy nguy hiểm nhưng khá hiếm gặp, chỉ chiếm khoảng 325 trên 100.000 ca sinh có tiền sử mổ lấy thai; hiếm hơn ở nhóm phụ nữ không có sẹo mổ lấy thai, là khoảng 1/5.700 - 1/20.000 ca.'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:cause {id: 'sẹo_mổ_lấy_thai_cause'})
+MERGE (o1)-[r22:relatedTo]->(o2)
+SET r22.text = 'Vỡ tử cung tuy nguy hiểm nhưng khá hiếm gặp, chỉ chiếm khoảng 325 trên 100.000 ca sinh có tiền sử mổ lấy thai; hiếm hơn ở nhóm phụ nữ không có sẹo mổ lấy thai, là khoảng 1/5.700 - 1/20.000 ca.'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:lifestyle {id: 'sinh_nở_lifestyle'})
+MERGE (o1)-[r23:relatedTo]->(o2)
+SET r23.text = 'Một nghiên cứu tại Hà Lan cho kết quả, tỷ lệ mẹ bầu mắc phải là 0,7-5,1/10.000 ca sinh nở.'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:treatment {id: 'sinh_mổ_treatment'})
+MERGE (o1)-[r24:relatedTo]->(o2)
+SET r24.text = 'Sau một lần sinh mổ, tỷ lệ này tăng lên 22-74/10.000 ca sinh, bao gồm các ca theo dõi sinh ngả âm đạo khi có sẹo mổ cũ.'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:treatment {id: 'sinh_ngả_âm_đạo_treatment'})
+MERGE (o1)-[r25:relatedTo]->(o2)
+SET r25.text = 'Sau một lần sinh mổ, tỷ lệ này tăng lên 22-74/10.000 ca sinh, bao gồm các ca theo dõi sinh ngả âm đạo khi có sẹo mổ cũ.'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:cause {id: 'sẹo_mổ_cũ_cause'})
+MERGE (o1)-[r26:causedBy]->(o2)
+SET r26.text = 'Sau một lần sinh mổ, tỷ lệ này tăng lên 22-74/10.000 ca sinh, bao gồm các ca theo dõi sinh ngả âm đạo khi có sẹo mổ cũ.'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:lifestyle {id: 'sinh_nở_lifestyle'})
+MERGE (o1)-[r27:relatedTo]->(o2)
+SET r27.text = 'Hay một đánh giá khác của Tổ chức Y tế Thế giới (WHO) cho thấy, tỷ lệ vỡ tử cung trên toàn thế giới trung bình là 5,3/10.000 ca sinh nở.'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:lifestyle {id: 'sinh_nở_lifestyle'})
+MERGE (o1)-[r28:relatedTo]->(o2)
+SET r28.text = 'Nếu chỉ xét ở quốc gia đang phát triển và phát triển, tỷ lệ này là khoảng 3/10.000 ca sinh nở, bao gồm có tiền sử mổ lấy thai.'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:treatment {id: 'mổ_lấy_thai_treatment'})
+MERGE (o1)-[r29:relatedTo]->(o2)
+SET r29.text = 'Nếu chỉ xét ở quốc gia đang phát triển và phát triển, tỷ lệ này là khoảng 3/10.000 ca sinh nở, bao gồm có tiền sử mổ lấy thai.'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:treatment {id: 'mổ_lấy_thai_treatment'})
+MERGE (o1)-[r30:relatedTo]->(o2)
+SET r30.text = 'Ở những quốc gia kém phát triển, tỷ lệ mắc phải tai biến này cao hơn, có thể do điều kiện mổ lấy thai hạn chế, cuộc sinh bị trì hoãn và kéo dài.'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:lifestyle {id: 'cuộc_sinh_lifestyle'})
+MERGE (o1)-[r31:relatedTo]->(o2)
+SET r31.text = 'Ở những quốc gia kém phát triển, tỷ lệ mắc phải tai biến này cao hơn, có thể do điều kiện mổ lấy thai hạn chế, cuộc sinh bị trì hoãn và kéo dài.'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:treatment {id: 'y_khoa_hiện_đại_treatment'})
+MERGE (o1)-[r32:preventedBy]->(o2)
+SET r32.text = 'Hiện nay, với sự phát triển của y khoa hiện đại, về kiến thức, về quản lý thai nghén cùng sự hỗ trợ của hệ thống máy móc tối tân, tiến bộ của lĩnh vực gây mê hồi sức… đã có thể hạn chế được các thủ thuật sinh thô bạo, có chỉ định mổ lấy thai kịp thời.'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:treatment {id: 'quản_lý_thai_nghén_treatment'})
+MERGE (o1)-[r33:preventedBy]->(o2)
+SET r33.text = 'Hiện nay, với sự phát triển của y khoa hiện đại, về kiến thức, về quản lý thai nghén cùng sự hỗ trợ của hệ thống máy móc tối tân, tiến bộ của lĩnh vực gây mê hồi sức… đã có thể hạn chế được các thủ thuật sinh thô bạo, có chỉ định mổ lấy thai kịp thời.'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:treatment {id: 'gây_mê_hồi_sức_treatment'})
+MERGE (o1)-[r34:preventedBy]->(o2)
+SET r34.text = 'Hiện nay, với sự phát triển của y khoa hiện đại, về kiến thức, về quản lý thai nghén cùng sự hỗ trợ của hệ thống máy móc tối tân, tiến bộ của lĩnh vực gây mê hồi sức… đã có thể hạn chế được các thủ thuật sinh thô bạo, có chỉ định mổ lấy thai kịp thời.'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:treatment {id: 'mổ_lấy_thai_treatment'})
+MERGE (o1)-[r35:preventedBy]->(o2)
+SET r35.text = 'Hiện nay, với sự phát triển của y khoa hiện đại, về kiến thức, về quản lý thai nghén cùng sự hỗ trợ của hệ thống máy móc tối tân, tiến bộ của lĩnh vực gây mê hồi sức… đã có thể hạn chế được các thủ thuật sinh thô bạo, có chỉ định mổ lấy thai kịp thời.'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:treatment {id: 'y_khoa_hiện_đại_treatment'})
+MERGE (o1)-[r36:preventedBy]->(o2)
+SET r36.text = 'Nhờ đó tỷ lệ được giảm nhiều so với trước đây”, bác sĩ Quý Khoa chia sẻ thêm.'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:lifestyle {id: 'thai_kỳ_lifestyle'})
+MERGE (o1)-[r37:relatedTo]->(o2)
+SET r37.text = 'Gồm vỡ tử cung trong thai kỳ và trong chuyển dạ.'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:lifestyle {id: 'chuyển_dạ_lifestyle'})
+MERGE (o1)-[r38:relatedTo]->(o2)
+SET r38.text = 'Gồm vỡ tử cung trong thai kỳ và trong chuyển dạ.'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:treatment {id: 'lâm_sàng_treatment'})
+MERGE (o1)-[r39:relatedTo]->(o2)
+SET r39.text = 'Trên lâm sàng, tình trạng này bao gồm:'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:organ {id: 'tử_cung_organ'})
+MERGE (o1)-[r40:affects]->(o2)
+SET r40.text = 'Vỡ hoàn toàn: Tử cung bị vỡ toàn bộ các lớp niêm mạc, cơ tử cung và phúc mạc, làm buồng tử cung thông với ổ bụng.'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:organ {id: 'niêm_mạc_organ'})
+MERGE (o1)-[r41:affects]->(o2)
+SET r41.text = 'Vỡ hoàn toàn: Tử cung bị vỡ toàn bộ các lớp niêm mạc, cơ tử cung và phúc mạc, làm buồng tử cung thông với ổ bụng.'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:organ {id: 'cơ_tử_cung_organ'})
+MERGE (o1)-[r42:affects]->(o2)
+SET r42.text = 'Vỡ hoàn toàn: Tử cung bị vỡ toàn bộ các lớp niêm mạc, cơ tử cung và phúc mạc, làm buồng tử cung thông với ổ bụng.'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:organ {id: 'phúc_mạc_organ'})
+MERGE (o1)-[r43:affects]->(o2)
+SET r43.text = 'Vỡ hoàn toàn: Tử cung bị vỡ toàn bộ các lớp niêm mạc, cơ tử cung và phúc mạc, làm buồng tử cung thông với ổ bụng.'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:organ {id: 'buồng_tử_cung_organ'})
+MERGE (o1)-[r44:affects]->(o2)
+SET r44.text = 'Vỡ hoàn toàn: Tử cung bị vỡ toàn bộ các lớp niêm mạc, cơ tử cung và phúc mạc, làm buồng tử cung thông với ổ bụng.'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:organ {id: 'ổ_bụng_organ'})
+MERGE (o1)-[r45:affects]->(o2)
+SET r45.text = 'Vỡ hoàn toàn: Tử cung bị vỡ toàn bộ các lớp niêm mạc, cơ tử cung và phúc mạc, làm buồng tử cung thông với ổ bụng.'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:organ {id: 'thai_nhi_organ'})
+MERGE (o1)-[r46:affects]->(o2)
+SET r46.text = 'Thai nhi và rau thai bị đẩy vào trong ổ bụng.'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:organ {id: 'rau_thai_organ'})
+MERGE (o1)-[r47:affects]->(o2)
+SET r47.text = 'Thai nhi và rau thai bị đẩy vào trong ổ bụng.'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:organ {id: 'ổ_bụng_organ'})
+MERGE (o1)-[r48:affects]->(o2)
+SET r48.text = 'Thai nhi và rau thai bị đẩy vào trong ổ bụng.'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:organ {id: 'tử_cung_organ'})
+MERGE (o1)-[r49:affects]->(o2)
+SET r49.text = 'Vỡ dưới phúc mạc: Tử cung bị tổn thương ở lớp niêm mạc và cơ tử cung, nhưng lớp phúc mạc còn nguyên vẹn.'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:organ {id: 'niêm_mạc_organ'})
+MERGE (o1)-[r50:affects]->(o2)
+SET r50.text = 'Vỡ dưới phúc mạc: Tử cung bị tổn thương ở lớp niêm mạc và cơ tử cung, nhưng lớp phúc mạc còn nguyên vẹn.'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:organ {id: 'cơ_tử_cung_organ'})
+MERGE (o1)-[r51:affects]->(o2)
+SET r51.text = 'Vỡ dưới phúc mạc: Tử cung bị tổn thương ở lớp niêm mạc và cơ tử cung, nhưng lớp phúc mạc còn nguyên vẹn.'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:organ {id: 'phúc_mạc_organ'})
+MERGE (o1)-[r52:affects]->(o2)
+SET r52.text = 'Vỡ dưới phúc mạc: Tử cung bị tổn thương ở lớp niêm mạc và cơ tử cung, nhưng lớp phúc mạc còn nguyên vẹn.'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:organ {id: 'thai_nhi_organ'})
+MERGE (o1)-[r53:affects]->(o2)
+SET r53.text = 'Trường hợp này thai nhi và bánh rau vẫn còn nằm trong buồng tử cung.'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:organ {id: 'bánh_rau_organ'})
+MERGE (o1)-[r54:affects]->(o2)
+SET r54.text = 'Trường hợp này thai nhi và bánh rau vẫn còn nằm trong buồng tử cung.'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:organ {id: 'buồng_tử_cung_organ'})
+MERGE (o1)-[r55:affects]->(o2)
+SET r55.text = 'Trường hợp này thai nhi và bánh rau vẫn còn nằm trong buồng tử cung.'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:organ {id: 'mạch_máu_organ'})
+MERGE (o1)-[r56:affects]->(o2)
+SET r56.text = 'Vỡ phức tạp: Tương tự như vỡ tử cung hoàn toàn nhưng kèm theo tổn thương ở các cơ quan lân cận như mạch máu, bàng quang, trực tràng, niệu quản…'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:organ {id: 'bàng_quang_organ'})
+MERGE (o1)-[r57:affects]->(o2)
+SET r57.text = 'Vỡ phức tạp: Tương tự như vỡ tử cung hoàn toàn nhưng kèm theo tổn thương ở các cơ quan lân cận như mạch máu, bàng quang, trực tràng, niệu quản…'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:organ {id: 'trực_tràng_organ'})
+MERGE (o1)-[r58:affects]->(o2)
+SET r58.text = 'Vỡ phức tạp: Tương tự như vỡ tử cung hoàn toàn nhưng kèm theo tổn thương ở các cơ quan lân cận như mạch máu, bàng quang, trực tràng, niệu quản…'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:organ {id: 'niệu_quản_organ'})
+MERGE (o1)-[r59:affects]->(o2)
+SET r59.text = 'Vỡ phức tạp: Tương tự như vỡ tử cung hoàn toàn nhưng kèm theo tổn thương ở các cơ quan lân cận như mạch máu, bàng quang, trực tràng, niệu quản…'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:cause {id: 'sẹo_mổ_cũ_cause'})
+MERGE (o1)-[r60:causedBy]->(o2)
+SET r60.text = 'Vỡ tử cung ở mẹ bầu có sẹo mổ cũ: Vết mổ cũ bị nứt một phần, chảy máu ít.'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:organ {id: 'mẹ_bầu_organ'})
+MERGE (o1)-[r61:affects]->(o2)
+SET r61.text = 'Vỡ tử cung ở mẹ bầu có sẹo mổ cũ: Vết mổ cũ bị nứt một phần, chảy máu ít.'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:symptom {id: 'chảy_máu_symptom'})
+MERGE (o1)-[r62:affects]->(o2)
+SET r62.text = 'Vỡ tử cung ở mẹ bầu có sẹo mổ cũ: Vết mổ cũ bị nứt một phần, chảy máu ít.'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:treatment {id: 'mổ_lấy_thai_treatment'})
+MERGE (o1)-[r63:diagnosedBy]->(o2)
+SET r63.text = 'Thông thường chỉ chẩn đoán khi có mổ lấy thai hoặc khi soát buồng tử cung sau sinh ngả âm đạo.'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:test {id: 'soát_buồng_tử_cung_test'})
+MERGE (o1)-[r64:diagnosedBy]->(o2)
+SET r64.text = 'Thông thường chỉ chẩn đoán khi có mổ lấy thai hoặc khi soát buồng tử cung sau sinh ngả âm đạo.'
+
+MERGE (o1:cause {id: 'các_yếu_tố_nguy_cơ_vỡ_tử_cung_cause'})
+MERGE (o2:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o1)-[r65:causedBy]->(o2)
+SET r65.text = 'Các yếu tố nguy cơ vỡ tử cung có thể từ mẹ bầu, từ thai nhi hay từ cuộc sinh.'
+
+MERGE (o1:cause {id: 'bất_tương_xứng_khung_chậu_-_thai_cause'})
+MERGE (o2:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o1)-[r66:causedBy]->(o2)
+SET r66.text = 'Bất tương xứng khung chậu - thai: Khung chậu không rộng rãi, không tương xứng với cân nặng của thai, có khối u xơ, u buồng trứng nghi ngờ là khối u tiền đạo;'
+
+MERGE (o1:cause {id: 'khung_chậu_không_rộng_rãi_cause'})
+MERGE (o2:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o1)-[r67:causedBy]->(o2)
+SET r67.text = 'Khung chậu không rộng rãi, không tương xứng với cân nặng của thai, có khối u xơ, u buồng trứng nghi ngờ là khối u tiền đạo;'
+
+MERGE (o1:cause {id: 'không_tương_xứng_với_cân_nặng_của_thai_cause'})
+MERGE (o2:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o1)-[r68:causedBy]->(o2)
+SET r68.text = 'Khung chậu không rộng rãi, không tương xứng với cân nặng của thai, có khối u xơ, u buồng trứng nghi ngờ là khối u tiền đạo;'
+
+MERGE (o1:cause {id: 'khối_u_xơ_cause'})
+MERGE (o2:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o1)-[r69:causedBy]->(o2)
+SET r69.text = 'Khung chậu không rộng rãi, không tương xứng với cân nặng của thai, có khối u xơ, u buồng trứng nghi ngờ là khối u tiền đạo;'
+
+MERGE (o1:cause {id: 'u_buồng_trứng_nghi_ngờ_là_khối_u_tiền_đạo_cause'})
+MERGE (o2:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o1)-[r70:causedBy]->(o2)
+SET r70.text = 'Khung chậu không rộng rãi, không tương xứng với cân nặng của thai, có khối u xơ, u buồng trứng nghi ngờ là khối u tiền đạo;'
+
+MERGE (o1:cause {id: 'sẹo_mổ_cũ_trên_tử_cung_cause'})
+MERGE (o2:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o1)-[r71:causedBy]->(o2)
+SET r71.text = 'Có sẹo mổ cũ trên tử cung như mổ lấy thai, mổ bóc nhân xơ, mổ khâu vỡ tử cung, sẹo mổ dọc thân tử cung;'
+
+MERGE (o1:cause {id: 'mổ_lấy_thai_cause'})
+MERGE (o2:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o1)-[r72:causedBy]->(o2)
+SET r72.text = 'Có sẹo mổ cũ trên tử cung như mổ lấy thai, mổ bóc nhân xơ, mổ khâu vỡ tử cung, sẹo mổ dọc thân tử cung;'
+
+MERGE (o1:cause {id: 'mổ_bóc_nhân_xơ_cause'})
+MERGE (o2:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o1)-[r73:causedBy]->(o2)
+SET r73.text = 'Có sẹo mổ cũ trên tử cung như mổ lấy thai, mổ bóc nhân xơ, mổ khâu vỡ tử cung, sẹo mổ dọc thân tử cung;'
+
+MERGE (o1:cause {id: 'mổ_khâu_vỡ_tử_cung_cause'})
+MERGE (o2:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o1)-[r74:causedBy]->(o2)
+SET r74.text = 'Có sẹo mổ cũ trên tử cung như mổ lấy thai, mổ bóc nhân xơ, mổ khâu vỡ tử cung, sẹo mổ dọc thân tử cung;'
+
+MERGE (o1:cause {id: 'sẹo_mổ_dọc_thân_tử_cung_cause'})
+MERGE (o2:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o1)-[r75:causedBy]->(o2)
+SET r75.text = 'Có sẹo mổ cũ trên tử cung như mổ lấy thai, mổ bóc nhân xơ, mổ khâu vỡ tử cung, sẹo mổ dọc thân tử cung;'
+
+MERGE (o1:cause {id: 'dị_dạng_tử_cung_cause'})
+MERGE (o2:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o1)-[r76:causedBy]->(o2)
+SET r76.text = 'Dị dạng tử cung như tử cung một sừng, tử cung hai sừng, tử cung đôi;'
+
+MERGE (o1:cause {id: 'tử_cung_một_sừng_cause'})
+MERGE (o2:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o1)-[r77:causedBy]->(o2)
+SET r77.text = 'Dị dạng tử cung như tử cung một sừng, tử cung hai sừng, tử cung đôi;'
+
+MERGE (o1:cause {id: 'tử_cung_hai_sừng_cause'})
+MERGE (o2:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o1)-[r78:causedBy]->(o2)
+SET r78.text = 'Dị dạng tử cung như tử cung một sừng, tử cung hai sừng, tử cung đôi;'
+
+MERGE (o1:cause {id: 'tử_cung_đôi_cause'})
+MERGE (o2:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o1)-[r79:causedBy]->(o2)
+SET r79.text = 'Dị dạng tử cung như tử cung một sừng, tử cung hai sừng, tử cung đôi;'
+
+MERGE (o1:cause {id: 'mang_thai_và_sinh_nở_nhiều_lần_cause'})
+MERGE (o2:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o1)-[r80:causedBy]->(o2)
+SET r80.text = 'Mang thai và sinh nở nhiều lần, tiền sử sinh song thai, đa thai;'
+
+MERGE (o1:cause {id: 'tiền_sử_sinh_song_thai_cause'})
+MERGE (o2:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o1)-[r81:causedBy]->(o2)
+SET r81.text = 'Mang thai và sinh nở nhiều lần, tiền sử sinh song thai, đa thai;'
+
+MERGE (o1:cause {id: 'đa_thai_cause'})
+MERGE (o2:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o1)-[r82:causedBy]->(o2)
+SET r82.text = 'Mang thai và sinh nở nhiều lần, tiền sử sinh song thai, đa thai;'
+
+MERGE (o1:cause {id: 'có_thai_sớm_sau_sinh_mổ_cause'})
+MERGE (o2:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o1)-[r83:causedBy]->(o2)
+SET r83.text = 'Có thai sớm sau sinh mổ;'
+
+MERGE (o1:cause {id: 'nạo_hút__phá_thai_nhiều_lần_cause'})
+MERGE (o2:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o1)-[r84:causedBy]->(o2)
+SET r84.text = 'Nạo hút, phá thai nhiều lần;'
+
+MERGE (o1:cause {id: 'chấn_thương_mạnh_ở_vùng_bụng_cause'})
+MERGE (o2:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o1)-[r85:causedBy]->(o2)
+SET r85.text = 'Mẹ bầu bị chấn thương mạnh ở vùng bụng.'
+
+MERGE (o1:cause {id: 'thai_nhi_to_bất_cân_xứng_cause'})
+MERGE (o2:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o1)-[r86:causedBy]->(o2)
+SET r86.text = 'Thai nhi to bất cân xứng giữa thai nhi và khung chậu;'
+
+MERGE (o1:cause {id: 'thai_não_úng_thủy_to_cause'})
+MERGE (o2:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o1)-[r87:causedBy]->(o2)
+SET r87.text = 'Thai não úng thủy to hoặc dính nhau;'
+
+MERGE (o1:cause {id: 'thai_dính_nhau_cause'})
+MERGE (o2:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o1)-[r88:causedBy]->(o2)
+SET r88.text = 'Thai não úng thủy to hoặc dính nhau;'
+
+MERGE (o1:cause {id: 'ngôi_thai_bất_thường_cause'})
+MERGE (o2:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o1)-[r89:causedBy]->(o2)
+SET r89.text = 'Ngôi thai bất thường như ngôi mông, ngôi ngang; kiểu thế bất thường.'
+
+MERGE (o1:cause {id: 'ngôi_mông_cause'})
+MERGE (o2:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o1)-[r90:causedBy]->(o2)
+SET r90.text = 'Ngôi thai bất thường như ngôi mông, ngôi ngang; kiểu thế bất thường.'
+
+MERGE (o1:cause {id: 'ngôi_ngang_cause'})
+MERGE (o2:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o1)-[r91:causedBy]->(o2)
+SET r91.text = 'Ngôi thai bất thường như ngôi mông, ngôi ngang; kiểu thế bất thường.'
+
+MERGE (o1:cause {id: 'kiểu_thế_bất_thường_cause'})
+MERGE (o2:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o1)-[r92:causedBy]->(o2)
+SET r92.text = 'Ngôi thai bất thường như ngôi mông, ngôi ngang; kiểu thế bất thường.'
+
+MERGE (o1:cause {id: 'ngôi_thai_bất_thường_cause'})
+MERGE (o2:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o1)-[r93:causedBy]->(o2)
+SET r93.text = 'Ngôi thai bất thường có thể dẫn đến vỡ tử cung ở mẹ bầu'
+
+MERGE (o1:cause {id: 'thực_hiện_các_thủ_thuật_khi_chưa_đủ_điều_kiện_cause'})
+MERGE (o2:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o1)-[r94:causedBy]->(o2)
+SET r94.text = 'Thực hiện các thủ thuật khi chưa đủ điều kiện hoặc thao tác kỹ thuật chưa phù hợp;'
+
+MERGE (o1:cause {id: 'thao_tác_kỹ_thuật_chưa_phù_hợp_cause'})
+MERGE (o2:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o1)-[r95:causedBy]->(o2)
+SET r95.text = 'Thực hiện các thủ thuật khi chưa đủ điều kiện hoặc thao tác kỹ thuật chưa phù hợp;'
+
+MERGE (o1:cause {id: 'cuộc_sinh_kéo_dài_cause'})
+MERGE (o2:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o1)-[r96:causedBy]->(o2)
+SET r96.text = 'Cuộc sinh kéo dài có bất thường của sự lọt xuống của thai khó khăn, khung chậu không rộng rãi.'
+
+MERGE (o1:cause {id: 'bất_thường_của_sự_lọt_xuống_của_thai_khó_khăn_cause'})
+MERGE (o2:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o1)-[r97:causedBy]->(o2)
+SET r97.text = 'Cuộc sinh kéo dài có bất thường của sự lọt xuống của thai khó khăn, khung chậu không rộng rãi.'
+
+MERGE (o1:cause {id: 'khung_chậu_không_rộng_rãi_cause'})
+MERGE (o2:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o1)-[r98:causedBy]->(o2)
+SET r98.text = 'Cuộc sinh kéo dài có bất thường của sự lọt xuống của thai khó khăn, khung chậu không rộng rãi.'
+
+MERGE (o1:cause {id: 'cơn_co_tử_cung_bất_thường_cause'})
+MERGE (o2:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o1)-[r99:causedBy]->(o2)
+SET r99.text = 'Cơn co tử cung bất thường, nhất là trong trường hợp có sử dụng thuốc tăng co.'
+
+MERGE (o1:cause {id: 'thuốc_tăng_co_cause'})
+MERGE (o2:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o1)-[r100:causedBy]->(o2)
+SET r100.text = 'Cơn co tử cung bất thường, nhất là trong trường hợp có sử dụng thuốc tăng co.'
+
+MERGE (o1:cause {id: 'tiền_sử_mổ_lấy_thai_trên_thân_tử_cung_cause'})
+MERGE (o2:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o1)-[r101:causedBy]->(o2)
+SET r101.text = 'Bác sĩ Quý Khoa khuyên rằng các mẹ bầu có các tiền sử sau đây, nên có trao đổi rõ - thường xuyên với bác sĩ, nên được thăm khám thai kỳ chặt chẽ:'
+
+MERGE (o1:cause {id: 'có_hai_lần_mổ_lấy_thai_trở_lên_cause'})
+MERGE (o2:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o1)-[r102:causedBy]->(o2)
+SET r102.text = 'Bác sĩ Quý Khoa khuyên rằng các mẹ bầu có các tiền sử sau đây, nên có trao đổi rõ - thường xuyên với bác sĩ, nên được thăm khám thai kỳ chặt chẽ:'
+
+MERGE (o1:cause {id: 'tiền_sử_mổ_cắt_góc_tử_cung_điều_trị_mang_thai_ngoài_tử_cung_cause'})
+MERGE (o2:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o1)-[r103:causedBy]->(o2)
+SET r103.text = 'Bác sĩ Quý Khoa khuyên rằng các mẹ bầu có các tiền sử sau đây, nên có trao đổi rõ - thường xuyên với bác sĩ, nên được thăm khám thai kỳ chặt chẽ:'
+
+MERGE (o1:cause {id: 'tiền_sử_mổ_bóc_nhân_xơ_tử_cung_cause'})
+MERGE (o2:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o1)-[r104:causedBy]->(o2)
+SET r104.text = 'Bác sĩ Quý Khoa khuyên rằng các mẹ bầu có các tiền sử sau đây, nên có trao đổi rõ - thường xuyên với bác sĩ, nên được thăm khám thai kỳ chặt chẽ:'
+
+MERGE (o1:cause {id: 'tiền_sử_khâu_lỗ_thủng_tử_cung_cause'})
+MERGE (o2:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o1)-[r105:causedBy]->(o2)
+SET r105.text = 'Bác sĩ Quý Khoa khuyên rằng các mẹ bầu có các tiền sử sau đây, nên có trao đổi rõ - thường xuyên với bác sĩ, nên được thăm khám thai kỳ chặt chẽ:'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:symptom {id: 'triệu_chứng_khác_nhau_symptom'})
+MERGE (o1)-[r106:isSymptomOf]->(o2)
+SET r106.text = 'Trong vỡ tử cung, mỗi mẹ bầu sẽ gặp phải những triệu chứng khác nhau với mức độ không giống nhau tùy thuộc vào vị trí, thời điểm vỡ cũng như mức độ vết nứt tử cung.'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:symptom {id: 'vết_nứt_tử_cung_symptom'})
+MERGE (o1)-[r107:isSymptomOf]->(o2)
+SET r107.text = 'Trong vỡ tử cung, mỗi mẹ bầu sẽ gặp phải những triệu chứng khác nhau với mức độ không giống nhau tùy thuộc vào vị trí, thời điểm vỡ cũng như mức độ vết nứt tử cung.'
+
+MERGE (o1:symptom {id: 'đau_nhói_vùng_hạ_vị_đột_ngột_symptom'})
+MERGE (o2:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o1)-[r108:isSymptomOf]->(o2)
+SET r108.text = 'Bác sĩ Quý Khoa chia sẻ một số dấu hiệu thường gặp giúp mẹ bầu sớm nhận biết tai biến sản khoa nguy hiểm này, gồm:'
+
+MERGE (o1:symptom {id: 'đau_tự_nhiên_symptom'})
+MERGE (o2:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o1)-[r109:isSymptomOf]->(o2)
+SET r109.text = 'Bác sĩ Quý Khoa chia sẻ một số dấu hiệu thường gặp giúp mẹ bầu sớm nhận biết tai biến sản khoa nguy hiểm này, gồm:'
+
+MERGE (o1:symptom {id: 'đau_sau_chấn_thương_trực_tiếp_ở_vùng_bụng_symptom'})
+MERGE (o2:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o1)-[r110:isSymptomOf]->(o2)
+SET r110.text = 'Bác sĩ Quý Khoa chia sẻ một số dấu hiệu thường gặp giúp mẹ bầu sớm nhận biết tai biến sản khoa nguy hiểm này, gồm:'
+
+MERGE (o1:symptom {id: 'đau_nhói_chỗ_sẹo_mổ_cũ_symptom'})
+MERGE (o2:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o1)-[r111:isSymptomOf]->(o2)
+SET r111.text = 'Bác sĩ Quý Khoa chia sẻ một số dấu hiệu thường gặp giúp mẹ bầu sớm nhận biết tai biến sản khoa nguy hiểm này, gồm:'
+
+MERGE (o1:symptom {id: 'ấn_vết_mổ_thấy_đau_symptom'})
+MERGE (o2:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o1)-[r112:isSymptomOf]->(o2)
+SET r112.text = 'Bác sĩ Quý Khoa chia sẻ một số dấu hiệu thường gặp giúp mẹ bầu sớm nhận biết tai biến sản khoa nguy hiểm này, gồm:'
+
+MERGE (o1:symptom {id: 'giảm_hoặc_không_nhận_thấy_cơn_co_tử_cung_symptom'})
+MERGE (o2:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o1)-[r113:isSymptomOf]->(o2)
+SET r113.text = 'Bác sĩ Quý Khoa chia sẻ một số dấu hiệu thường gặp giúp mẹ bầu sớm nhận biết tai biến sản khoa nguy hiểm này, gồm:'
+
+MERGE (o1:symptom {id: 'sốc_symptom'})
+MERGE (o2:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o1)-[r114:isSymptomOf]->(o2)
+SET r114.text = 'Bác sĩ Quý Khoa chia sẻ một số dấu hiệu thường gặp giúp mẹ bầu sớm nhận biết tai biến sản khoa nguy hiểm này, gồm:'
+
+MERGE (o1:symptom {id: 'huyết_áp_thấp_symptom'})
+MERGE (o2:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o1)-[r115:isSymptomOf]->(o2)
+SET r115.text = 'Bác sĩ Quý Khoa chia sẻ một số dấu hiệu thường gặp giúp mẹ bầu sớm nhận biết tai biến sản khoa nguy hiểm này, gồm:'
+
+MERGE (o1:symptom {id: 'mạch_đập_nhanh_symptom'})
+MERGE (o2:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o1)-[r116:isSymptomOf]->(o2)
+SET r116.text = 'Bác sĩ Quý Khoa chia sẻ một số dấu hiệu thường gặp giúp mẹ bầu sớm nhận biết tai biến sản khoa nguy hiểm này, gồm:'
+
+MERGE (o1:symptom {id: 'mạch_đập_chậm_bất_thường_symptom'})
+MERGE (o2:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o1)-[r117:isSymptomOf]->(o2)
+SET r117.text = 'Bác sĩ Quý Khoa chia sẻ một số dấu hiệu thường gặp giúp mẹ bầu sớm nhận biết tai biến sản khoa nguy hiểm này, gồm:'
+
+MERGE (o1:symptom {id: 'không_đo_được_mạch_symptom'})
+MERGE (o2:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o1)-[r118:isSymptomOf]->(o2)
+SET r118.text = 'Bác sĩ Quý Khoa chia sẻ một số dấu hiệu thường gặp giúp mẹ bầu sớm nhận biết tai biến sản khoa nguy hiểm này, gồm:'
+
+MERGE (o1:symptom {id: 'nhịp_tim_thai_nhi_chậm_symptom'})
+MERGE (o2:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o1)-[r119:isSymptomOf]->(o2)
+SET r119.text = 'Bác sĩ Quý Khoa chia sẻ một số dấu hiệu thường gặp giúp mẹ bầu sớm nhận biết tai biến sản khoa nguy hiểm này, gồm:'
+
+MERGE (o1:symptom {id: 'không_nghe_thấy_tim_thai_symptom'})
+MERGE (o2:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o1)-[r120:isSymptomOf]->(o2)
+SET r120.text = 'Bác sĩ Quý Khoa chia sẻ một số dấu hiệu thường gặp giúp mẹ bầu sớm nhận biết tai biến sản khoa nguy hiểm này, gồm:'
+
+MERGE (o1:symptom {id: 'xuất_huyết_âm_đạo_ít_symptom'})
+MERGE (o2:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o1)-[r121:isSymptomOf]->(o2)
+SET r121.text = 'Bác sĩ Quý Khoa chia sẻ một số dấu hiệu thường gặp giúp mẹ bầu sớm nhận biết tai biến sản khoa nguy hiểm này, gồm:'
+
+MERGE (o1:symptom {id: 'xuất_huyết_âm_đạo_nhiều_symptom'})
+MERGE (o2:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o1)-[r122:isSymptomOf]->(o2)
+SET r122.text = 'Bác sĩ Quý Khoa chia sẻ một số dấu hiệu thường gặp giúp mẹ bầu sớm nhận biết tai biến sản khoa nguy hiểm này, gồm:'
+
+MERGE (o1:symptom {id: 'nước_ối_có_màu_đỏ_symptom'})
+MERGE (o2:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o1)-[r123:isSymptomOf]->(o2)
+SET r123.text = 'Bác sĩ Quý Khoa chia sẻ một số dấu hiệu thường gặp giúp mẹ bầu sớm nhận biết tai biến sản khoa nguy hiểm này, gồm:'
+
+MERGE (o1:disease {id: 'dọa_vỡ_tử_cung_disease'})
+MERGE (o2:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o1)-[r124:relatedTo]->(o2)
+SET r124.text = 'Trước khi vỡ tử cung có một giai đoạn gọi là dọa vỡ tử cung, chỉ xảy ra trên tử cung không có sẹo mổ cũ.'
+
+MERGE (o1:disease {id: 'dọa_vỡ_tử_cung_disease'})
+MERGE (o2:organ {id: 'tử_cung_không_có_sẹo_mổ_cũ_organ'})
+MERGE (o1)-[r125:isSymptomOf]->(o2)
+SET r125.text = 'Trước khi vỡ tử cung có một giai đoạn gọi là dọa vỡ tử cung, chỉ xảy ra trên tử cung không có sẹo mổ cũ.'
+
+MERGE (o1:symptom {id: 'đau_bụng_nhiều_symptom'})
+MERGE (o2:disease {id: 'dọa_vỡ_tử_cung_disease'})
+MERGE (o1)-[r126:isSymptomOf]->(o2)
+SET r126.text = 'Các dấu hiệu nhận biết giai đoạn này gồm:'
+
+MERGE (o1:symptom {id: 'cơn_đau_kéo_dài_symptom'})
+MERGE (o2:disease {id: 'dọa_vỡ_tử_cung_disease'})
+MERGE (o1)-[r127:isSymptomOf]->(o2)
+SET r127.text = 'Các dấu hiệu nhận biết giai đoạn này gồm:'
+
+MERGE (o1:symptom {id: 'cường_độ_đau_càng_lúc_càng_tăng_symptom'})
+MERGE (o2:disease {id: 'dọa_vỡ_tử_cung_disease'})
+MERGE (o1)-[r128:isSymptomOf]->(o2)
+SET r128.text = 'Các dấu hiệu nhận biết giai đoạn này gồm:'
+
+MERGE (o1:symptom {id: 'tử_cung_bị_thắt_lại_tạo_thành_hình_quả_bầu_nậm_symptom'})
+MERGE (o2:disease {id: 'dọa_vỡ_tử_cung_disease'})
+MERGE (o1)-[r129:isSymptomOf]->(o2)
+SET r129.text = 'Các dấu hiệu nhận biết giai đoạn này gồm:'
+
+MERGE (o1:symptom {id: 'ấn_vào_thành_đoạn_dưới_tử_cung_thấy_mỏng_và_đau_symptom'})
+MERGE (o2:disease {id: 'dọa_vỡ_tử_cung_disease'})
+MERGE (o1)-[r130:isSymptomOf]->(o2)
+SET r130.text = 'Các dấu hiệu nhận biết giai đoạn này gồm:'
+
+MERGE (o1:symptom {id: 'có_thể_sờ_chạm_ngôi_thai_symptom'})
+MERGE (o2:disease {id: 'dọa_vỡ_tử_cung_disease'})
+MERGE (o1)-[r131:isSymptomOf]->(o2)
+SET r131.text = 'Các dấu hiệu nhận biết giai đoạn này gồm:'
+
+MERGE (o1:symptom {id: 'cơn_co_tử_cung_kéo_dài_symptom'})
+MERGE (o2:disease {id: 'dọa_vỡ_tử_cung_disease'})
+MERGE (o1)-[r132:isSymptomOf]->(o2)
+SET r132.text = 'Các dấu hiệu nhận biết giai đoạn này gồm:'
+
+MERGE (o1:symptom {id: 'khoảng_cách_giữa_các_cơn_co_ngắn_symptom'})
+MERGE (o2:disease {id: 'dọa_vỡ_tử_cung_disease'})
+MERGE (o1)-[r133:isSymptomOf]->(o2)
+SET r133.text = 'Các dấu hiệu nhận biết giai đoạn này gồm:'
+
+MERGE (o1:symptom {id: 'cường_độ_mạnh_symptom'})
+MERGE (o2:disease {id: 'dọa_vỡ_tử_cung_disease'})
+MERGE (o1)-[r134:isSymptomOf]->(o2)
+SET r134.text = 'Các dấu hiệu nhận biết giai đoạn này gồm:'
+
+MERGE (o1:symptom {id: 'tim_thai_bất_thường_symptom'})
+MERGE (o2:disease {id: 'dọa_vỡ_tử_cung_disease'})
+MERGE (o1)-[r135:isSymptomOf]->(o2)
+SET r135.text = 'Các dấu hiệu nhận biết giai đoạn này gồm:'
+
+MERGE (o1:symptom {id: 'lúc_nhanh_lúc_chậm_symptom'})
+MERGE (o2:disease {id: 'dọa_vỡ_tử_cung_disease'})
+MERGE (o1)-[r136:isSymptomOf]->(o2)
+SET r136.text = 'Các dấu hiệu nhận biết giai đoạn này gồm:'
+
+MERGE (o1:symptom {id: 'đau_nhói_symptom'})
+MERGE (o2:disease {id: 'dọa_vỡ_tử_cung_disease'})
+MERGE (o1)-[r137:isSymptomOf]->(o2)
+SET r137.text = 'Mẹ bầu đã có dấu doạ vỡ tử cung, đột ngột đau nhói.'
+
+MERGE (o1:symptom {id: 'tổng_trạng_xấu_dần_symptom'})
+MERGE (o2:disease {id: 'dọa_vỡ_tử_cung_disease'})
+MERGE (o1)-[r138:isSymptomOf]->(o2)
+SET r138.text = 'Mẹ bầu đã có dấu doạ vỡ tử cung, đột ngột đau nhói. Sau đó bớt đau hơn nhưng tổng trạng xấu dần.'
+
+MERGE (o1:symptom {id: 'da_xanh_xao_symptom'})
+MERGE (o2:disease {id: 'dọa_vỡ_tử_cung_disease'})
+MERGE (o1)-[r139:isSymptomOf]->(o2)
+SET r139.text = 'Da xanh xao, mạch đập nhẹ, tụt huyết áp, chân tay lạnh.'
+
+MERGE (o1:symptom {id: 'mạch_đập_nhẹ_symptom'})
+MERGE (o2:disease {id: 'dọa_vỡ_tử_cung_disease'})
+MERGE (o1)-[r140:isSymptomOf]->(o2)
+SET r140.text = 'Da xanh xao, mạch đập nhẹ, tụt huyết áp, chân tay lạnh.'
+
+MERGE (o1:symptom {id: 'tụt_huyết_áp_symptom'})
+MERGE (o2:disease {id: 'dọa_vỡ_tử_cung_disease'})
+MERGE (o1)-[r141:isSymptomOf]->(o2)
+SET r141.text = 'Da xanh xao, mạch đập nhẹ, tụt huyết áp, chân tay lạnh.'
+
+MERGE (o1:symptom {id: 'chân_tay_lạnh_symptom'})
+MERGE (o2:disease {id: 'dọa_vỡ_tử_cung_disease'})
+MERGE (o1)-[r142:isSymptomOf]->(o2)
+SET r142.text = 'Da xanh xao, mạch đập nhẹ, tụt huyết áp, chân tay lạnh.'
+
+MERGE (o1:symptom {id: 'chảy_máu_màu_đỏ_tươi_ở_âm_đạo_symptom'})
+MERGE (o2:disease {id: 'dọa_vỡ_tử_cung_disease'})
+MERGE (o1)-[r143:isSymptomOf]->(o2)
+SET r143.text = 'Chảy máu màu đỏ tươi ở âm đạo.'
+
+MERGE (o1:symptom {id: 'nước_tiểu_có_màu_đỏ_symptom'})
+MERGE (o2:disease {id: 'dọa_vỡ_tử_cung_disease'})
+MERGE (o1)-[r144:isSymptomOf]->(o2)
+SET r144.text = 'Nước tiểu có thể có màu đỏ'
+
+MERGE (o1:symptom {id: 'suy_thai_symptom'})
+MERGE (o2:disease {id: 'dọa_vỡ_tử_cung_disease'})
+MERGE (o1)-[r145:isSymptomOf]->(o2)
+SET r145.text = 'Có dấu hiệu suy thai, mất cơn co tử cung, thai không máy.'
+
+MERGE (o1:symptom {id: 'mất_cơn_co_tử_cung_symptom'})
+MERGE (o2:disease {id: 'dọa_vỡ_tử_cung_disease'})
+MERGE (o1)-[r146:isSymptomOf]->(o2)
+SET r146.text = 'Có dấu hiệu suy thai, mất cơn co tử cung, thai không máy.'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:organ {id: 'tính_mạng_cả_mẹ_bầu_lẫn_thai_nhi_organ'})
+MERGE (o1)-[r147:affects]->(o2)
+SET r147.text = 'Vỡ tử cung nếu không được phát hiện sớm và can thiệp xử trí kịp thời sẽ đe dọa tính mạng cả mẹ bầu lẫn thai nhi.'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:symptom {id: 'mất_máu_symptom'})
+MERGE (o1)-[r148:isSymptomOf]->(o2)
+SET r148.text = 'Ở mẹ bầu, tình trạng này làm mất máu, có thể gây ra tình trạng sốc do mất máu.'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:symptom {id: 'sốc_do_mất_máu_symptom'})
+MERGE (o1)-[r149:isSymptomOf]->(o2)
+SET r149.text = 'Ở mẹ bầu, tình trạng này làm mất máu, có thể gây ra tình trạng sốc do mất máu.'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:treatment {id: 'sinh_nở_tại_cơ_sở_y_tế_có_đơn_vị_sản_khoa_giỏi_treatment'})
+MERGE (o1)-[r150:treatedBy]->(o2)
+SET r150.text = 'Tình trạng này sẽ được kiểm soát tốt khi mẹ bầu sinh nở tại cơ sở y tế có đơn vị Sản khoa giỏi.'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:organ {id: 'sự_sống_của_thai_nhi_organ'})
+MERGE (o1)-[r151:affects]->(o2)
+SET r151.text = 'Bên cạnh đe dọa tính mạng mẹ bầu, vỡ tử cung còn đe dọa sự sống của thai nhi.'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:symptom {id: 'tử_vong_chu_sinh_symptom'})
+MERGE (o1)-[r152:associatedWith]->(o2)
+SET r152.text = 'Thống kê cho thấy, 6,2% trường hợp tử vong chu sinh có liên quan đến vỡ tử cung.'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:treatment {id: 'mổ_lấy_thai_tối_khẩn_treatment'})
+MERGE (o1)-[r153:treatedBy]->(o2)
+SET r153.text = 'Chính vì lý do đó, khi nghi ngờ mẹ bầu gặp phải tình trạng này, bác sĩ Sản khoa sẽ chỉ định mổ lấy thai tối khẩn để cấp cứu thai, đồng thời cầm máu kịp thời cho mẹ.'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:organ {id: 'tính_mạng_thai_nhi_organ'})
+MERGE (o1)-[r154:affects]->(o2)
+SET r154.text = 'Nếu không được đưa ra khỏi bụng mẹ nhanh chóng, tính mạng thai nhi sẽ bị đe dọa.'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:treatment {id: 'cắt_tử_cung_treatment'})
+MERGE (o1)-[r155:treatedBy]->(o2)
+SET r155.text = 'Nguy cơ mẹ bầu bị cắt tử cung cũng rất cao khi rơi vào trường hợp tử cung bị vỡ hoàn toàn hay phức tạp.'
+
+MERGE (o1:treatment {id: 'cắt_tử_cung_treatment'})
+MERGE (o2:lifestyle {id: 'khả_năng_mang_thai_và_thiên_chức_làm_mẹ_lifestyle'})
+MERGE (o1)-[r156:affects]->(o2)
+SET r156.text = 'Thống kê cho thấy, khoảng 14-33% trường hợp mẹ bầu có chỉ định cắt tử cung, sẽ ảnh hưởng đến khả năng mang thai và thiên chức làm mẹ trong tương lai.'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:organ {id: 'bàng_quang_organ'})
+MERGE (o1)-[r157:affects]->(o2)
+SET r157.text = 'Ngoài ra, khi đã vỡ tử cung, dễ xảy ra nguy cơ bị tổn thương bàng quang, trực tràng, các mạch máu hạ vị, niệu quản trong quá trình mổ cấp cứu xử trí.'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:organ {id: 'trực_tràng_organ'})
+MERGE (o1)-[r158:affects]->(o2)
+SET r158.text = 'Ngoài ra, khi đã vỡ tử cung, dễ xảy ra nguy cơ bị tổn thương bàng quang, trực tràng, các mạch máu hạ vị, niệu quản trong quá trình mổ cấp cứu xử trí.'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:organ {id: 'các_mạch_máu_hạ_vị_organ'})
+MERGE (o1)-[r159:affects]->(o2)
+SET r159.text = 'Ngoài ra, khi đã vỡ tử cung, dễ xảy ra nguy cơ bị tổn thương bàng quang, trực tràng, các mạch máu hạ vị, niệu quản trong quá trình mổ cấp cứu xử trí.'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:organ {id: 'niệu_quản_organ'})
+MERGE (o1)-[r160:affects]->(o2)
+SET r160.text = 'Ngoài ra, khi đã vỡ tử cung, dễ xảy ra nguy cơ bị tổn thương bàng quang, trực tràng, các mạch máu hạ vị, niệu quản trong quá trình mổ cấp cứu xử trí.'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:treatment {id: 'bảo_tồn_hoặc_cắt_tử_cung_treatment'})
+MERGE (o1)-[r161:treatedBy]->(o2)
+SET r161.text = 'Tùy vào từng trường hợp mà bác sĩ có chỉ định bảo tồn hoặc cắt tử cung phù hợp'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:test {id: 'theo_dõi_thai_kỳ_test'})
+MERGE (o1)-[r162:diagnosedBy]->(o2)
+SET r162.text = 'Bác sĩ Quý Khoa cho biết, trong quá trình theo dõi thai kỳ, bác sĩ sẽ tổng hợp tiền căn của mẹ bầu, các yếu tố nguy cơ, các thông tin của khám thai hiện tại để tiên lượng các yếu tố khó khăn có thể có khi thai kỳ đến thời điểm sinh.'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:test {id: 'chẩn_đoán_cận_lâm_sàng_test'})
+MERGE (o1)-[r163:diagnosedBy]->(o2)
+SET r163.text = 'Mẹ bầu có thể được thực hiện thêm các chẩn đoán cận lâm sàng vào cuối thai kỳ để mẹ bầu cùng với bác sĩ xem xét khả năng mổ lấy thai lập lại hay theo dõi nghiệm pháp sinh ngả âm đạo.'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:disease {id: 'bàng_quang_căng_do_nước_tiểu_disease'})
+MERGE (o1)-[r164:relatedTo]->(o2)
+SET r164.text = 'Cần phân biệt tình trạng vỡ tử cung với các tai biến sản khoa khác, chẳng hạn: Bàng quang căng do nước tiểu.'
+
+MERGE (o1:disease {id: 'nhau_tiền_đạo_disease'})
+MERGE (o2:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o1)-[r165:relatedTo]->(o2)
+SET r165.text = 'Nhau tiền đạo: Không có dấu hiệu dọa vỡ tử cung, chỉ có hiện tượng xuất huyết ngoài, các cơn co tử cung không mạnh.'
+
+MERGE (o1:disease {id: 'nhau_tiền_đạo_disease'})
+MERGE (o2:symptom {id: 'nhau_bám_mép_symptom'})
+MERGE (o1)-[r166:isSymptomOf]->(o2)
+SET r166.text = 'Thăm khám âm đạo thấy một phần bánh nhau (nhau bám mép, nhau bám bán trung tâm) hoặc sờ thấy toàn bộ bánh nhau khi cổ tử cung mở (nhau bám trung tâm hoàn toàn).'
+
+MERGE (o1:disease {id: 'nhau_tiền_đạo_disease'})
+MERGE (o2:symptom {id: 'nhau_bám_bán_trung_tâm_symptom'})
+MERGE (o1)-[r167:isSymptomOf]->(o2)
+SET r167.text = 'Thăm khám âm đạo thấy một phần bánh nhau (nhau bám mép, nhau bám bán trung tâm) hoặc sờ thấy toàn bộ bánh nhau khi cổ tử cung mở (nhau bám trung tâm hoàn toàn).'
+
+MERGE (o1:disease {id: 'nhau_tiền_đạo_disease'})
+MERGE (o2:symptom {id: 'nhau_bám_trung_tâm_hoàn_toàn_symptom'})
+MERGE (o1)-[r168:isSymptomOf]->(o2)
+SET r168.text = 'Thăm khám âm đạo thấy một phần bánh nhau (nhau bám mép, nhau bám bán trung tâm) hoặc sờ thấy toàn bộ bánh nhau khi cổ tử cung mở (nhau bám trung tâm hoàn toàn).'
+
+MERGE (o1:disease {id: 'nhau_bong_non_disease'})
+MERGE (o2:symptom {id: 'chảy_máu_âm_đạo_loãng_symptom'})
+MERGE (o1)-[r169:isSymptomOf]->(o2)
+SET r169.text = 'Nhau bong non: Có hiện tượng chảy máu âm đạo loãng, không đông.'
+
+MERGE (o1:disease {id: 'nhau_bong_non_disease'})
+MERGE (o2:symptom {id: 'chảy_máu_âm_đạo_không_đông_symptom'})
+MERGE (o1)-[r170:isSymptomOf]->(o2)
+SET r170.text = 'Nhau bong non: Có hiện tượng chảy máu âm đạo loãng, không đông.'
+
+MERGE (o1:disease {id: 'nhau_bong_non_disease'})
+MERGE (o2:symptom {id: 'tử_cung_cứng_symptom'})
+MERGE (o1)-[r171:isSymptomOf]->(o2)
+SET r171.text = 'Sờ tử cung thấy cứng, không có khoảng giãn mềm.'
+
+MERGE (o1:disease {id: 'nhau_bong_non_disease'})
+MERGE (o2:symptom {id: 'không_có_khoảng_giãn_mềm_symptom'})
+MERGE (o1)-[r172:isSymptomOf]->(o2)
+SET r172.text = 'Sờ tử cung thấy cứng, không có khoảng giãn mềm.'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:treatment {id: 'mổ_lấy_thai_cấp_cứu_tối_khẩn_treatment'})
+MERGE (o1)-[r173:treatedBy]->(o2)
+SET r173.text = 'Tất cả các trường hợp dọa vỡ tử cung hay vỡ tử cung cần mổ lấy thai cấp cứu tối khẩn, vừa hồi sức vừa mổ.'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:treatment {id: 'hồi_sức_treatment'})
+MERGE (o1)-[r174:treatedBy]->(o2)
+SET r174.text = 'Tiến hành hồi sức cho mẹ bầu bằng cách bồi hoàn thể tích tuần hoàn: bù lại khối lượng máu bị mất, truyền dịch trước, trong và sau phẫu thuật.'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:treatment {id: 'bù_lại_khối_lượng_máu_bị_mất_treatment'})
+MERGE (o1)-[r175:treatedBy]->(o2)
+SET r175.text = 'Tiến hành hồi sức cho mẹ bầu bằng cách bồi hoàn thể tích tuần hoàn: bù lại khối lượng máu bị mất, truyền dịch trước, trong và sau phẫu thuật.'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:treatment {id: 'truyền_dịch_treatment'})
+MERGE (o1)-[r176:treatedBy]->(o2)
+SET r176.text = 'Tiến hành hồi sức cho mẹ bầu bằng cách bồi hoàn thể tích tuần hoàn: bù lại khối lượng máu bị mất, truyền dịch trước, trong và sau phẫu thuật.'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:treatment {id: 'bảo_tồn_hoặc_cắt_tử_cung_treatment'})
+MERGE (o1)-[r177:treatedBy]->(o2)
+SET r177.text = 'Trong quá trình mổ, tùy theo tình trạng sức khỏe của mẹ bầu, vết vỡ tử cung đơn giản hay phức tạp, cũng như tương lai mang thai và sinh nở của mẹ bầu mà bác sĩ có chỉ định bảo tồn hoặc cắt tử cung.'
+
+MERGE (o1:treatment {id: 'bảo_tồn_tử_cung_treatment'})
+MERGE (o2:lifestyle {id: 'tuổi_mẹ_bầu_còn_trẻ_lifestyle'})
+MERGE (o1)-[r178:relatedTo]->(o2)
+SET r178.text = 'Khâu bảo tồn tử cung: Tuổi mẹ bầu còn trẻ, còn nguyện vọng mang thai và sinh nở trong tương lai, tử cung bị vỡ không phức tạp, không bị nhiễm khuẩn tử cung.'
+
+MERGE (o1:treatment {id: 'bảo_tồn_tử_cung_treatment'})
+MERGE (o2:lifestyle {id: 'còn_nguyện_vọng_mang_thai_và_sinh_nở_trong_tương_lai_lifestyle'})
+MERGE (o1)-[r179:relatedTo]->(o2)
+SET r179.text = 'Khâu bảo tồn tử cung: Tuổi mẹ bầu còn trẻ, còn nguyện vọng mang thai và sinh nở trong tương lai, tử cung bị vỡ không phức tạp, không bị nhiễm khuẩn tử cung.'
+
+MERGE (o1:treatment {id: 'bảo_tồn_tử_cung_treatment'})
+MERGE (o2:symptom {id: 'tử_cung_bị_vỡ_không_phức_tạp_symptom'})
+MERGE (o1)-[r180:relatedTo]->(o2)
+SET r180.text = 'Khâu bảo tồn tử cung: Tuổi mẹ bầu còn trẻ, còn nguyện vọng mang thai và sinh nở trong tương lai, tử cung bị vỡ không phức tạp, không bị nhiễm khuẩn tử cung.'
+
+MERGE (o1:treatment {id: 'bảo_tồn_tử_cung_treatment'})
+MERGE (o2:symptom {id: 'không_bị_nhiễm_khuẩn_tử_cung_symptom'})
+MERGE (o1)-[r181:relatedTo]->(o2)
+SET r181.text = 'Khâu bảo tồn tử cung: Tuổi mẹ bầu còn trẻ, còn nguyện vọng mang thai và sinh nở trong tương lai, tử cung bị vỡ không phức tạp, không bị nhiễm khuẩn tử cung.'
+
+MERGE (o1:treatment {id: 'cắt_tử_cung_treatment'})
+MERGE (o2:lifestyle {id: 'mẹ_bầu_lớn_tuổi_lifestyle'})
+MERGE (o1)-[r182:relatedTo]->(o2)
+SET r182.text = 'Cắt tử cung: Khi mẹ bầu lớn tuổi, đã sinh nở nhiều lần, đã đủ số con mong muốn, không còn nguyện vọng mang thai và sinh nở trong tương lai, có tình trạng nhiễm khuẩn nhiều, hoặc vết vỡ tử cung phức tạp, cần cắt tử cung để cầm máu và có nhiều cơ hội phục hồi tốt sức khoẻ cho mẹ bầu.'
+
+MERGE (o1:treatment {id: 'cắt_tử_cung_treatment'})
+MERGE (o2:lifestyle {id: 'đã_sinh_nở_nhiều_lần_lifestyle'})
+MERGE (o1)-[r183:relatedTo]->(o2)
+SET r183.text = 'Cắt tử cung: Khi mẹ bầu lớn tuổi, đã sinh nở nhiều lần, đã đủ số con mong muốn, không còn nguyện vọng mang thai và sinh nở trong tương lai, có tình trạng nhiễm khuẩn nhiều, hoặc vết vỡ tử cung phức tạp, cần cắt tử cung để cầm máu và có nhiều cơ hội phục hồi tốt sức khoẻ cho mẹ bầu.'
+
+MERGE (o1:treatment {id: 'cắt_tử_cung_treatment'})
+MERGE (o2:lifestyle {id: 'đã_đủ_số_con_mong_muốn_lifestyle'})
+MERGE (o1)-[r184:relatedTo]->(o2)
+SET r184.text = 'Cắt tử cung: Khi mẹ bầu lớn tuổi, đã sinh nở nhiều lần, đã đủ số con mong muốn, không còn nguyện vọng mang thai và sinh nở trong tương lai, có tình trạng nhiễm khuẩn nhiều, hoặc vết vỡ tử cung phức tạp, cần cắt tử cung để cầm máu và có nhiều cơ hội phục hồi tốt sức khoẻ cho mẹ bầu.'
+
+MERGE (o1:treatment {id: 'cắt_tử_cung_treatment'})
+MERGE (o2:lifestyle {id: 'không_còn_nguyện_vọng_mang_thai_và_sinh_nở_trong_tương_lai_lifestyle'})
+MERGE (o1)-[r185:relatedTo]->(o2)
+SET r185.text = 'Cắt tử cung: Khi mẹ bầu lớn tuổi, đã sinh nở nhiều lần, đã đủ số con mong muốn, không còn nguyện vọng mang thai và sinh nở trong tương lai, có tình trạng nhiễm khuẩn nhiều, hoặc vết vỡ tử cung phức tạp, cần cắt tử cung để cầm máu và có nhiều cơ hội phục hồi tốt sức khoẻ cho mẹ bầu.'
+
+MERGE (o1:treatment {id: 'cắt_tử_cung_treatment'})
+MERGE (o2:symptom {id: 'có_tình_trạng_nhiễm_khuẩn_nhiều_symptom'})
+MERGE (o1)-[r186:relatedTo]->(o2)
+SET r186.text = 'Cắt tử cung: Khi mẹ bầu lớn tuổi, đã sinh nở nhiều lần, đã đủ số con mong muốn, không còn nguyện vọng mang thai và sinh nở trong tương lai, có tình trạng nhiễm khuẩn nhiều, hoặc vết vỡ tử cung phức tạp, cần cắt tử cung để cầm máu và có nhiều cơ hội phục hồi tốt sức khoẻ cho mẹ bầu.'
+
+MERGE (o1:treatment {id: 'cắt_tử_cung_treatment'})
+MERGE (o2:symptom {id: 'vết_vỡ_tử_cung_phức_tạp_symptom'})
+MERGE (o1)-[r187:relatedTo]->(o2)
+SET r187.text = 'Cắt tử cung: Khi mẹ bầu lớn tuổi, đã sinh nở nhiều lần, đã đủ số con mong muốn, không còn nguyện vọng mang thai và sinh nở trong tương lai, có tình trạng nhiễm khuẩn nhiều, hoặc vết vỡ tử cung phức tạp, cần cắt tử cung để cầm máu và có nhiều cơ hội phục hồi tốt sức khoẻ cho mẹ bầu.'
+
+MERGE (o1:treatment {id: 'cắt_tử_cung_treatment'})
+MERGE (o2:symptom {id: 'cầm_máu_symptom'})
+MERGE (o1)-[r188:isSymptomOf]->(o2)
+SET r188.text = 'Cắt tử cung: Khi mẹ bầu lớn tuổi, đã sinh nở nhiều lần, đã đủ số con mong muốn, không còn nguyện vọng mang thai và sinh nở trong tương lai, có tình trạng nhiễm khuẩn nhiều, hoặc vết vỡ tử cung phức tạp, cần cắt tử cung để cầm máu và có nhiều cơ hội phục hồi tốt sức khoẻ cho mẹ bầu.'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:organ {id: 'bàng_quang_organ'})
+MERGE (o1)-[r189:affects]->(o2)
+SET r189.text = 'Khi vết vỡ tử cung phức tạp, cần kiểm tra các cơ quan lân cận như bàng quang, niệu quản 2 bên, ruột… có bị tổn thương không.'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:organ {id: 'niệu_quản_organ'})
+MERGE (o1)-[r190:affects]->(o2)
+SET r190.text = 'Khi vết vỡ tử cung phức tạp, cần kiểm tra các cơ quan lân cận như bàng quang, niệu quản 2 bên, ruột… có bị tổn thương không.'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:organ {id: 'ruột_organ'})
+MERGE (o1)-[r191:affects]->(o2)
+SET r191.text = 'Khi vết vỡ tử cung phức tạp, cần kiểm tra các cơ quan lân cận như bàng quang, niệu quản 2 bên, ruột… có bị tổn thương không.'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:treatment {id: 'xử_trí_theo_đúng_chuyên_khoa_treatment'})
+MERGE (o1)-[r192:treatedBy]->(o2)
+SET r192.text = 'Nếu các cơ quan lân cận bị tổn thương, sẽ tuỳ tình trạng mà xử trí theo đúng chuyên khoa.'
+
+MERGE (o1:disease {id: 'vỡ_tử_cung_disease'})
+MERGE (o2:treatment {id: 'kháng_sinh_liều_cao_treatment'})
+MERGE (o1)-[r193:treatedBy]->(o2)
+SET r193.text = 'Sau phẫu thuật, mẹ bầu được chỉ định dùng kháng sinh liều cao và chăm sóc hậu phẫu sát sao.'

@@ -1,0 +1,724 @@
+
+MERGE (o1:lifestyle {id: 'vệ_sinh_nhà_cửa_sạch_sẽ__tránh_xa_các_tác_nhân_gây_dị_ứng_và_tăng_cường_sức_đề_kháng_cho_cơ_thể_lifestyle'})
+MERGE (o2:disease {id: 'bệnh_viêm_mũi_dị_ứng_thời_tiết_disease'})
+MERGE (o1)-[r0:preventedBy]->(o2)
+SET r0.text = 'Vệ sinh nhà cửa sạch sẽ, tránh xa các tác nhân gây dị ứng và tăng cường sức đề kháng cho cơ thể giúp phòng ngừa và giảm nguy cơ tiến triển nặng của bệnh viêm mũi dị ứng thời tiết.'
+
+MERGE (o1:lifestyle {id: 'vệ_sinh_nhà_cửa_sạch_sẽ__tránh_xa_các_tác_nhân_gây_dị_ứng_và_tăng_cường_sức_đề_kháng_cho_cơ_thể_lifestyle'})
+MERGE (o2:disease {id: 'tiến_triển_nặng_của_bệnh_viêm_mũi_dị_ứng_thời_tiết_disease'})
+MERGE (o1)-[r1:aggravatedBy]->(o2)
+SET r1.text = 'Vệ sinh nhà cửa sạch sẽ, tránh xa các tác nhân gây dị ứng và tăng cường sức đề kháng cho cơ thể giúp phòng ngừa và giảm nguy cơ tiến triển nặng của bệnh viêm mũi dị ứng thời tiết.'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_thời_tiết_disease'})
+MERGE (o2:lifestyle {id: 'thời_thơ_ấu_lifestyle'})
+MERGE (o1)-[r2:associatedWith]->(o2)
+SET r2.text = 'Viêm mũi dị ứng thời tiết thường xảy ra từ thời thơ ấu và trong độ tuổi 30-40 tuổi'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_thời_tiết_disease'})
+MERGE (o2:lifestyle {id: 'độ_tuổi_30-40_lifestyle'})
+MERGE (o1)-[r3:associatedWith]->(o2)
+SET r3.text = 'Viêm mũi dị ứng thời tiết thường xảy ra từ thời thơ ấu và trong độ tuổi 30-40 tuổi'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_thời_tiết_disease'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_theo_mùa_disease'})
+MERGE (o1)-[r4:relatedTo]->(o2)
+SET r4.text = 'Viêm mũi dị ứng thời tiết hay còn gọi là viêm mũi dị ứng theo mùa.'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_thời_tiết_disease'})
+MERGE (o2:lifestyle {id: 'mùa_nở_hoa_lifestyle'})
+MERGE (o1)-[r5:associatedWith]->(o2)
+SET r5.text = 'Đây là bệnh viêm mũi dị ứng có tính chất kéo dài từ năm này qua năm khác và thời điểm khởi phát các triệu chứng sẽ phụ thuộc vào mùa xuất hiện của các tác nhân gây dị ứng như mùa nở hoa của một loại cây nào đó, mùa sâu bướm sinh sôi, mùa ẩm ướt nhiều nấm mốc phát triển, mùa khô lạnh…'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_thời_tiết_disease'})
+MERGE (o2:lifestyle {id: 'mùa_sâu_bướm_sinh_sôi_lifestyle'})
+MERGE (o1)-[r6:associatedWith]->(o2)
+SET r6.text = 'Đây là bệnh viêm mũi dị ứng có tính chất kéo dài từ năm này qua năm khác và thời điểm khởi phát các triệu chứng sẽ phụ thuộc vào mùa xuất hiện của các tác nhân gây dị ứng như mùa nở hoa của một loại cây nào đó, mùa sâu bướm sinh sôi, mùa ẩm ướt nhiều nấm mốc phát triển, mùa khô lạnh…'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_thời_tiết_disease'})
+MERGE (o2:lifestyle {id: 'mùa_ẩm_ướt_nhiều_nấm_mốc_phát_triển_lifestyle'})
+MERGE (o1)-[r7:associatedWith]->(o2)
+SET r7.text = 'Đây là bệnh viêm mũi dị ứng có tính chất kéo dài từ năm này qua năm khác và thời điểm khởi phát các triệu chứng sẽ phụ thuộc vào mùa xuất hiện của các tác nhân gây dị ứng như mùa nở hoa của một loại cây nào đó, mùa sâu bướm sinh sôi, mùa ẩm ướt nhiều nấm mốc phát triển, mùa khô lạnh…'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_thời_tiết_disease'})
+MERGE (o2:lifestyle {id: 'mùa_khô_lạnh_lifestyle'})
+MERGE (o1)-[r8:associatedWith]->(o2)
+SET r8.text = 'Đây là bệnh viêm mũi dị ứng có tính chất kéo dài từ năm này qua năm khác và thời điểm khởi phát các triệu chứng sẽ phụ thuộc vào mùa xuất hiện của các tác nhân gây dị ứng như mùa nở hoa của một loại cây nào đó, mùa sâu bướm sinh sôi, mùa ẩm ướt nhiều nấm mốc phát triển, mùa khô lạnh…'
+
+MERGE (o1:disease {id: 'viêm_mũi_thời_tiết_disease'})
+MERGE (o2:lifestyle {id: 'dân_số_lifestyle'})
+MERGE (o1)-[r9:affects]->(o2)
+SET r9.text = 'BSNT.CKII Trần Thị Thuý Hằng, Trưởng khoa Tai mũi họng, Bệnh viện Đa khoa Tâm Anh TP.HCM cho biết, viêm mũi thời tiết gây ảnh hưởng đến khoảng 20% dân số trên thế giới ở mọi lứa tuổi.'
+
+MERGE (o1:disease {id: 'hen_suyễn_disease'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_thời_tiết_disease'})
+MERGE (o1)-[r10:associatedWith]->(o2)
+SET r10.text = 'Song nguy cơ cao hơn nhiều ở những người bị hen suyễn hoặc eczema và ở những người có tiền sử gia đình bị hen suyễn hoặc viêm mũi dị ứng.'
+
+MERGE (o1:disease {id: 'eczema_disease'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_thời_tiết_disease'})
+MERGE (o1)-[r11:associatedWith]->(o2)
+SET r11.text = 'Song nguy cơ cao hơn nhiều ở những người bị hen suyễn hoặc eczema và ở những người có tiền sử gia đình bị hen suyễn hoặc viêm mũi dị ứng.'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_thời_tiết_disease'})
+MERGE (o2:lifestyle {id: 'thời_thơ_ấu_lifestyle'})
+MERGE (o1)-[r12:associatedWith]->(o2)
+SET r12.text = 'Các triệu chứng của bệnh thường xuất hiện từ thời thơ ấu hoặc ở tuổi trưởng thành và trở nên nghiêm trọng hơn lúc người bệnh còn nhỏ hoặc bước vào độ tuổi từ 30-40.'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_thời_tiết_disease'})
+MERGE (o2:lifestyle {id: 'tuổi_trưởng_thành_lifestyle'})
+MERGE (o1)-[r13:associatedWith]->(o2)
+SET r13.text = 'Các triệu chứng của bệnh thường xuất hiện từ thời thơ ấu hoặc ở tuổi trưởng thành và trở nên nghiêm trọng hơn lúc người bệnh còn nhỏ hoặc bước vào độ tuổi từ 30-40.'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_thời_tiết_disease'})
+MERGE (o2:lifestyle {id: 'độ_tuổi_từ_30-40_lifestyle'})
+MERGE (o1)-[r14:associatedWith]->(o2)
+SET r14.text = 'Các triệu chứng của bệnh thường xuất hiện từ thời thơ ấu hoặc ở tuổi trưởng thành và trở nên nghiêm trọng hơn lúc người bệnh còn nhỏ hoặc bước vào độ tuổi từ 30-40.'
+
+MERGE (o1:symptom {id: 'mức_độ_nghiêm_trọng_của_các_triệu_chứng_symptom'})
+MERGE (o2:lifestyle {id: 'thời_điểm_lifestyle'})
+MERGE (o1)-[r15:associatedWith]->(o2)
+SET r15.text = 'Tuy nhiên, mức độ nghiêm trọng của các triệu chứng có thể thay đổi ở mỗi thời điểm hoặc độ tuổi trong suốt cuộc đời.'
+
+MERGE (o1:symptom {id: 'mức_độ_nghiêm_trọng_của_các_triệu_chứng_symptom'})
+MERGE (o2:lifestyle {id: 'độ_tuổi_lifestyle'})
+MERGE (o1)-[r16:associatedWith]->(o2)
+SET r16.text = 'Tuy nhiên, mức độ nghiêm trọng của các triệu chứng có thể thay đổi ở mỗi thời điểm hoặc độ tuổi trong suốt cuộc đời.'
+
+MERGE (o1:symptom {id: 'mức_độ_nghiêm_trọng_của_các_triệu_chứng_symptom'})
+MERGE (o2:lifestyle {id: 'sự_thay_đổi_môi_trường_sống_lifestyle'})
+MERGE (o1)-[r17:associatedWith]->(o2)
+SET r17.text = 'Điều này phụ thuộc vào nhiều yếu tố chẳng hạn như sự thay đổi môi trường sống, sự thay đổi của hệ thống miễn dịch…'
+
+MERGE (o1:symptom {id: 'mức_độ_nghiêm_trọng_của_các_triệu_chứng_symptom'})
+MERGE (o2:lifestyle {id: 'sự_thay_đổi_của_hệ_thống_miễn_dịch_lifestyle'})
+MERGE (o1)-[r18:associatedWith]->(o2)
+SET r18.text = 'Điều này phụ thuộc vào nhiều yếu tố chẳng hạn như sự thay đổi môi trường sống, sự thay đổi của hệ thống miễn dịch…'
+
+MERGE (o1:cause {id: 'phấn_hoa_cause'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_thời_tiết_disease'})
+MERGE (o1)-[r19:causedBy]->(o2)
+SET r19.text = 'Nguyên nhân gây viêm mũi dị ứng thời tiết chủ yếu do phấn hoa từ một loài cây thường nở hoa vào mùa nào đó trong năm.'
+
+MERGE (o1:cause {id: 'hoa_của_cây_nhãn_cause'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_thời_tiết_disease'})
+MERGE (o1)-[r20:causedBy]->(o2)
+SET r20.text = 'Ví dụ:  Mùa Xuân: Hoa của cây nhãn, cây xoan, cây bưởi… Mùa Hè: Hoa của cây phượng, cây bằng lăng… Mùa Thu: Hoa của cây hoa sữa, ngọc lan… Mùa đông: Hoa của cây cúc hoạ mi, cải ngồng…'
+
+MERGE (o1:cause {id: 'hoa_của_cây_xoan_cause'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_thời_tiết_disease'})
+MERGE (o1)-[r21:causedBy]->(o2)
+SET r21.text = 'Ví dụ:  Mùa Xuân: Hoa của cây nhãn, cây xoan, cây bưởi… Mùa Hè: Hoa của cây phượng, cây bằng lăng… Mùa Thu: Hoa của cây hoa sữa, ngọc lan… Mùa đông: Hoa của cây cúc hoạ mi, cải ngồng…'
+
+MERGE (o1:cause {id: 'hoa_của_cây_bưởi_cause'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_thời_tiết_disease'})
+MERGE (o1)-[r22:causedBy]->(o2)
+SET r22.text = 'Ví dụ:  Mùa Xuân: Hoa của cây nhãn, cây xoan, cây bưởi… Mùa Hè: Hoa của cây phượng, cây bằng lăng… Mùa Thu: Hoa của cây hoa sữa, ngọc lan… Mùa đông: Hoa của cây cúc hoạ mi, cải ngồng…'
+
+MERGE (o1:cause {id: 'hoa_của_cây_phượng_cause'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_thời_tiết_disease'})
+MERGE (o1)-[r23:causedBy]->(o2)
+SET r23.text = 'Ví dụ:  Mùa Xuân: Hoa của cây nhãn, cây xoan, cây bưởi… Mùa Hè: Hoa của cây phượng, cây bằng lăng… Mùa Thu: Hoa của cây hoa sữa, ngọc lan… Mùa đông: Hoa của cây cúc hoạ mi, cải ngồng…'
+
+MERGE (o1:cause {id: 'hoa_của_cây_bằng_lăng_cause'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_thời_tiết_disease'})
+MERGE (o1)-[r24:causedBy]->(o2)
+SET r24.text = 'Ví dụ:  Mùa Xuân: Hoa của cây nhãn, cây xoan, cây bưởi… Mùa Hè: Hoa của cây phượng, cây bằng lăng… Mùa Thu: Hoa của cây hoa sữa, ngọc lan… Mùa đông: Hoa của cây cúc hoạ mi, cải ngồng…'
+
+MERGE (o1:cause {id: 'hoa_của_cây_hoa_sữa_cause'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_thời_tiết_disease'})
+MERGE (o1)-[r25:causedBy]->(o2)
+SET r25.text = 'Ví dụ:  Mùa Xuân: Hoa của cây nhãn, cây xoan, cây bưởi… Mùa Hè: Hoa của cây phượng, cây bằng lăng… Mùa Thu: Hoa của cây hoa sữa, ngọc lan… Mùa đông: Hoa của cây cúc hoạ mi, cải ngồng…'
+
+MERGE (o1:cause {id: 'hoa_của_cây_ngọc_lan_cause'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_thời_tiết_disease'})
+MERGE (o1)-[r26:causedBy]->(o2)
+SET r26.text = 'Ví dụ:  Mùa Xuân: Hoa của cây nhãn, cây xoan, cây bưởi… Mùa Hè: Hoa của cây phượng, cây bằng lăng… Mùa Thu: Hoa của cây hoa sữa, ngọc lan… Mùa đông: Hoa của cây cúc hoạ mi, cải ngồng…'
+
+MERGE (o1:cause {id: 'hoa_của_cây_cúc_hoạ_mi_cause'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_thời_tiết_disease'})
+MERGE (o1)-[r27:causedBy]->(o2)
+SET r27.text = 'Ví dụ:  Mùa Xuân: Hoa của cây nhãn, cây xoan, cây bưởi… Mùa Hè: Hoa của cây phượng, cây bằng lăng… Mùa Thu: Hoa của cây hoa sữa, ngọc lan… Mùa đông: Hoa của cây cúc hoạ mi, cải ngồng…'
+
+MERGE (o1:cause {id: 'hoa_của_cây_cải_ngồng_cause'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_thời_tiết_disease'})
+MERGE (o1)-[r28:causedBy]->(o2)
+SET r28.text = 'Ví dụ:  Mùa Xuân: Hoa của cây nhãn, cây xoan, cây bưởi… Mùa Hè: Hoa của cây phượng, cây bằng lăng… Mùa Thu: Hoa của cây hoa sữa, ngọc lan… Mùa đông: Hoa của cây cúc hoạ mi, cải ngồng…'
+
+MERGE (o1:cause {id: 'mạt_bụi_cause'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_thời_tiết_disease'})
+MERGE (o1)-[r29:causedBy]->(o2)
+SET r29.text = 'Nhưng ngoài ra, bị viêm mũi dị ứng thời tiết còn có thể do mạt bụi, nấm mốc, tiếp xúc với hóa chất, lông hoặc phân động vật.'
+
+MERGE (o1:cause {id: 'nấm_mốc_cause'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_thời_tiết_disease'})
+MERGE (o1)-[r30:causedBy]->(o2)
+SET r30.text = 'Nhưng ngoài ra, bị viêm mũi dị ứng thời tiết còn có thể do mạt bụi, nấm mốc, tiếp xúc với hóa chất, lông hoặc phân động vật.'
+
+MERGE (o1:cause {id: 'tiếp_xúc_với_hóa_chất_cause'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_thời_tiết_disease'})
+MERGE (o1)-[r31:causedBy]->(o2)
+SET r31.text = 'Nhưng ngoài ra, bị viêm mũi dị ứng thời tiết còn có thể do mạt bụi, nấm mốc, tiếp xúc với hóa chất, lông hoặc phân động vật.'
+
+MERGE (o1:cause {id: 'lông_cause'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_thời_tiết_disease'})
+MERGE (o1)-[r32:causedBy]->(o2)
+SET r32.text = 'Nhưng ngoài ra, bị viêm mũi dị ứng thời tiết còn có thể do mạt bụi, nấm mốc, tiếp xúc với hóa chất, lông hoặc phân động vật.'
+
+MERGE (o1:cause {id: 'phân_động_vật_cause'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_thời_tiết_disease'})
+MERGE (o1)-[r33:causedBy]->(o2)
+SET r33.text = 'Nhưng ngoài ra, bị viêm mũi dị ứng thời tiết còn có thể do mạt bụi, nấm mốc, tiếp xúc với hóa chất, lông hoặc phân động vật.'
+
+MERGE (o1:symptom {id: 'các_triệu_chứng_symptom'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_thời_tiết_disease'})
+MERGE (o1)-[r34:isSymptomOf]->(o2)
+SET r34.text = 'Bác sĩ Thuý Hằng cho biết, các triệu chứng của viêm mũi dị ứng thời tiết ở mỗi người khác nhau.'
+
+MERGE (o1:disease {id: 'viêm_mũi_disease'})
+MERGE (o2:organ {id: 'mũi_organ'})
+MERGE (o1)-[r35:affects]->(o2)
+SET r35.text = 'Mặc dù thuật ngữ &#8220;viêm mũi&#8221; chỉ đề cập đến các triệu chứng ở mũi, nhưng nhiều người cũng có các triệu chứng ảnh hưởng đến mắt, cổ họng và tai.'
+
+MERGE (o1:disease {id: 'viêm_mũi_disease'})
+MERGE (o2:organ {id: 'mắt_organ'})
+MERGE (o1)-[r36:affects]->(o2)
+SET r36.text = 'Mặc dù thuật ngữ &#8220;viêm mũi&#8221; chỉ đề cập đến các triệu chứng ở mũi, nhưng nhiều người cũng có các triệu chứng ảnh hưởng đến mắt, cổ họng và tai.'
+
+MERGE (o1:disease {id: 'viêm_mũi_disease'})
+MERGE (o2:organ {id: 'cổ_họng_organ'})
+MERGE (o1)-[r37:affects]->(o2)
+SET r37.text = 'Mặc dù thuật ngữ &#8220;viêm mũi&#8221; chỉ đề cập đến các triệu chứng ở mũi, nhưng nhiều người cũng có các triệu chứng ảnh hưởng đến mắt, cổ họng và tai.'
+
+MERGE (o1:disease {id: 'viêm_mũi_disease'})
+MERGE (o2:organ {id: 'tai_organ'})
+MERGE (o1)-[r38:affects]->(o2)
+SET r38.text = 'Mặc dù thuật ngữ &#8220;viêm mũi&#8221; chỉ đề cập đến các triệu chứng ở mũi, nhưng nhiều người cũng có các triệu chứng ảnh hưởng đến mắt, cổ họng và tai.'
+
+MERGE (o1:lifestyle {id: 'giấc_ngủ_lifestyle'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_thời_tiết_disease'})
+MERGE (o1)-[r39:affects]->(o2)
+SET r39.text = 'Giấc ngủ cũng có thể bị gián đoạn.'
+
+MERGE (o1:symptom {id: 'chảy_nước_mũi_symptom'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_thời_tiết_disease'})
+MERGE (o1)-[r40:isSymptomOf]->(o2)
+SET r40.text = 'Các triệu chứng viêm mũi dị ứng thời tiết có thể bao gồm:    Mũi: Chảy nước mũi, nghẹt mũi, hắt hơi, ngứa mũi, chảy dịch mũi sau, giảm khứu giác, đau mặt.'
+
+MERGE (o1:symptom {id: 'nghẹt_mũi_symptom'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_thời_tiết_disease'})
+MERGE (o1)-[r41:isSymptomOf]->(o2)
+SET r41.text = 'Các triệu chứng viêm mũi dị ứng thời tiết có thể bao gồm:    Mũi: Chảy nước mũi, nghẹt mũi, hắt hơi, ngứa mũi, chảy dịch mũi sau, giảm khứu giác, đau mặt.'
+
+MERGE (o1:symptom {id: 'hắt_hơi_symptom'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_thời_tiết_disease'})
+MERGE (o1)-[r42:isSymptomOf]->(o2)
+SET r42.text = 'Các triệu chứng viêm mũi dị ứng thời tiết có thể bao gồm:    Mũi: Chảy nước mũi, nghẹt mũi, hắt hơi, ngứa mũi, chảy dịch mũi sau, giảm khứu giác, đau mặt.'
+
+MERGE (o1:symptom {id: 'ngứa_mũi_symptom'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_thời_tiết_disease'})
+MERGE (o1)-[r43:isSymptomOf]->(o2)
+SET r43.text = 'Các triệu chứng viêm mũi dị ứng thời tiết có thể bao gồm:    Mũi: Chảy nước mũi, nghẹt mũi, hắt hơi, ngứa mũi, chảy dịch mũi sau, giảm khứu giác, đau mặt.'
+
+MERGE (o1:symptom {id: 'chảy_dịch_mũi_sau_symptom'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_thời_tiết_disease'})
+MERGE (o1)-[r44:isSymptomOf]->(o2)
+SET r44.text = 'Các triệu chứng viêm mũi dị ứng thời tiết có thể bao gồm:    Mũi: Chảy nước mũi, nghẹt mũi, hắt hơi, ngứa mũi, chảy dịch mũi sau, giảm khứu giác, đau mặt.'
+
+MERGE (o1:symptom {id: 'giảm_khứu_giác_symptom'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_thời_tiết_disease'})
+MERGE (o1)-[r45:isSymptomOf]->(o2)
+SET r45.text = 'Các triệu chứng viêm mũi dị ứng thời tiết có thể bao gồm:    Mũi: Chảy nước mũi, nghẹt mũi, hắt hơi, ngứa mũi, chảy dịch mũi sau, giảm khứu giác, đau mặt.'
+
+MERGE (o1:symptom {id: 'đau_mặt_symptom'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_thời_tiết_disease'})
+MERGE (o1)-[r46:isSymptomOf]->(o2)
+SET r46.text = 'Các triệu chứng viêm mũi dị ứng thời tiết có thể bao gồm:    Mũi: Chảy nước mũi, nghẹt mũi, hắt hơi, ngứa mũi, chảy dịch mũi sau, giảm khứu giác, đau mặt.'
+
+MERGE (o1:symptom {id: 'đỏ_ngứa_symptom'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_thời_tiết_disease'})
+MERGE (o1)-[r47:isSymptomOf]->(o2)
+SET r47.text = 'Các triệu chứng viêm mũi dị ứng thời tiết có thể bao gồm:    Mắt: Đỏ ngứa, cảm giác cộm ở mắt, sưng và mắt thâm quầng.'
+
+MERGE (o1:symptom {id: 'cảm_giác_cộm_ở_mắt_symptom'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_thời_tiết_disease'})
+MERGE (o1)-[r48:isSymptomOf]->(o2)
+SET r48.text = 'Các triệu chứng viêm mũi dị ứng thời tiết có thể bao gồm:    Mắt: Đỏ ngứa, cảm giác cộm ở mắt, sưng và mắt thâm quầng.'
+
+MERGE (o1:symptom {id: 'sưng_symptom'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_thời_tiết_disease'})
+MERGE (o1)-[r49:isSymptomOf]->(o2)
+SET r49.text = 'Các triệu chứng viêm mũi dị ứng thời tiết có thể bao gồm:    Mắt: Đỏ ngứa, cảm giác cộm ở mắt, sưng và mắt thâm quầng.'
+
+MERGE (o1:symptom {id: 'mắt_thâm_quầng_symptom'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_thời_tiết_disease'})
+MERGE (o1)-[r50:isSymptomOf]->(o2)
+SET r50.text = 'Các triệu chứng viêm mũi dị ứng thời tiết có thể bao gồm:    Mắt: Đỏ ngứa, cảm giác cộm ở mắt, sưng và mắt thâm quầng.'
+
+MERGE (o1:symptom {id: 'đau_họng_symptom'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_thời_tiết_disease'})
+MERGE (o1)-[r51:isSymptomOf]->(o2)
+SET r51.text = 'Các triệu chứng viêm mũi dị ứng thời tiết có thể bao gồm:    Cổ họng và tai: Đau họng, khàn giọng, tắc nghẽn hoặc ù tai, ngứa cổ họng hoặc tai.'
+
+MERGE (o1:symptom {id: 'khàn_giọng_symptom'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_thời_tiết_disease'})
+MERGE (o1)-[r52:isSymptomOf]->(o2)
+SET r52.text = 'Các triệu chứng viêm mũi dị ứng thời tiết có thể bao gồm:    Cổ họng và tai: Đau họng, khàn giọng, tắc nghẽn hoặc ù tai, ngứa cổ họng hoặc tai.'
+
+MERGE (o1:symptom {id: 'tắc_nghẽn_symptom'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_thời_tiết_disease'})
+MERGE (o1)-[r53:isSymptomOf]->(o2)
+SET r53.text = 'Các triệu chứng viêm mũi dị ứng thời tiết có thể bao gồm:    Cổ họng và tai: Đau họng, khàn giọng, tắc nghẽn hoặc ù tai, ngứa cổ họng hoặc tai.'
+
+MERGE (o1:symptom {id: 'ù_tai_symptom'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_thời_tiết_disease'})
+MERGE (o1)-[r54:isSymptomOf]->(o2)
+SET r54.text = 'Các triệu chứng viêm mũi dị ứng thời tiết có thể bao gồm:    Cổ họng và tai: Đau họng, khàn giọng, tắc nghẽn hoặc ù tai, ngứa cổ họng hoặc tai.'
+
+MERGE (o1:symptom {id: 'ngứa_cổ_họng_symptom'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_thời_tiết_disease'})
+MERGE (o1)-[r55:isSymptomOf]->(o2)
+SET r55.text = 'Các triệu chứng viêm mũi dị ứng thời tiết có thể bao gồm:    Cổ họng và tai: Đau họng, khàn giọng, tắc nghẽn hoặc ù tai, ngứa cổ họng hoặc tai.'
+
+MERGE (o1:symptom {id: 'ngứa_tai_symptom'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_thời_tiết_disease'})
+MERGE (o1)-[r56:isSymptomOf]->(o2)
+SET r56.text = 'Các triệu chứng viêm mũi dị ứng thời tiết có thể bao gồm:    Cổ họng và tai: Đau họng, khàn giọng, tắc nghẽn hoặc ù tai, ngứa cổ họng hoặc tai.'
+
+MERGE (o1:symptom {id: 'thở_bằng_miệng_symptom'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_thời_tiết_disease'})
+MERGE (o1)-[r57:isSymptomOf]->(o2)
+SET r57.text = 'Ngủ: Thở bằng miệng, thường xuyên thức giấc, mệt mỏi vào ban ngày, khó thực hiện các hoạt động bình thường như học, làm việc vì nghẹt mũi khó chịu.'
+
+MERGE (o1:symptom {id: 'thường_xuyên_thức_giấc_symptom'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_thời_tiết_disease'})
+MERGE (o1)-[r58:isSymptomOf]->(o2)
+SET r58.text = 'Ngủ: Thở bằng miệng, thường xuyên thức giấc, mệt mỏi vào ban ngày, khó thực hiện các hoạt động bình thường như học, làm việc vì nghẹt mũi khó chịu.'
+
+MERGE (o1:symptom {id: 'mệt_mỏi_vào_ban_ngày_symptom'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_thời_tiết_disease'})
+MERGE (o1)-[r59:isSymptomOf]->(o2)
+SET r59.text = 'Ngủ: Thở bằng miệng, thường xuyên thức giấc, mệt mỏi vào ban ngày, khó thực hiện các hoạt động bình thường như học, làm việc vì nghẹt mũi khó chịu.'
+
+MERGE (o1:symptom {id: 'khó_thực_hiện_các_hoạt_động_bình_thường_symptom'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_thời_tiết_disease'})
+MERGE (o1)-[r60:isSymptomOf]->(o2)
+SET r60.text = 'Ngủ: Thở bằng miệng, thường xuyên thức giấc, mệt mỏi vào ban ngày, khó thực hiện các hoạt động bình thường như học, làm việc vì nghẹt mũi khó chịu.'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_thời_tiết_disease'})
+MERGE (o2:test {id: 'chẩn_đoán_test'})
+MERGE (o1)-[r61:diagnosedBy]->(o2)
+SET r61.text = 'Để xác định một người có mắc viêm mũi dị ứng thời tiết hay không, bác sĩ cần kết hợp nhiều chẩn đoán.'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o2:treatment {id: 'thuốc_kháng_histamin_treatment'})
+MERGE (o1)-[r62:treatedBy]->(o2)
+SET r62.text = 'Chẩn đoán viêm mũi dị ứng thường được thực hiện trên lâm sàng dựa trên các triệu chứng đặc trưng và đáp ứng tốt với điều trị bằng thuốc kháng histamin hoặc corticoid xịt mũi.'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o2:treatment {id: 'corticoid_xịt_mũi_treatment'})
+MERGE (o1)-[r63:treatedBy]->(o2)
+SET r63.text = 'Chẩn đoán viêm mũi dị ứng thường được thực hiện trên lâm sàng dựa trên các triệu chứng đặc trưng và đáp ứng tốt với điều trị bằng thuốc kháng histamin hoặc corticoid xịt mũi.'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o2:symptom {id: 'các_triệu_chứng_theo_mùa_symptom'})
+MERGE (o1)-[r64:associatedWith]->(o2)
+SET r64.text = 'Theo bác sĩ Thuý Hằng việc chẩn đoán bệnh sẽ dễ dàng hơn nếu bệnh nhân có các triệu chứng theo mùa, hoặc xác định rõ một nguyên nhân khởi phát hay có nhiều hơn một tác nhân gây kích thích, bao gồm cả chất gây dị ứng và chất kích thích.'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o2:cause {id: 'nguyên_nhân_khởi_phát_cause'})
+MERGE (o1)-[r65:causedBy]->(o2)
+SET r65.text = 'Theo bác sĩ Thuý Hằng việc chẩn đoán bệnh sẽ dễ dàng hơn nếu bệnh nhân có các triệu chứng theo mùa, hoặc xác định rõ một nguyên nhân khởi phát hay có nhiều hơn một tác nhân gây kích thích, bao gồm cả chất gây dị ứng và chất kích thích.'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o2:cause {id: 'tác_nhân_gây_kích_thích_cause'})
+MERGE (o1)-[r66:causedBy]->(o2)
+SET r66.text = 'Theo bác sĩ Thuý Hằng việc chẩn đoán bệnh sẽ dễ dàng hơn nếu bệnh nhân có các triệu chứng theo mùa, hoặc xác định rõ một nguyên nhân khởi phát hay có nhiều hơn một tác nhân gây kích thích, bao gồm cả chất gây dị ứng và chất kích thích.'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o2:cause {id: 'chất_gây_dị_ứng_cause'})
+MERGE (o1)-[r67:causedBy]->(o2)
+SET r67.text = 'Theo bác sĩ Thuý Hằng việc chẩn đoán bệnh sẽ dễ dàng hơn nếu bệnh nhân có các triệu chứng theo mùa, hoặc xác định rõ một nguyên nhân khởi phát hay có nhiều hơn một tác nhân gây kích thích, bao gồm cả chất gây dị ứng và chất kích thích.'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o2:cause {id: 'chất_kích_thích_cause'})
+MERGE (o1)-[r68:causedBy]->(o2)
+SET r68.text = 'Theo bác sĩ Thuý Hằng việc chẩn đoán bệnh sẽ dễ dàng hơn nếu bệnh nhân có các triệu chứng theo mùa, hoặc xác định rõ một nguyên nhân khởi phát hay có nhiều hơn một tác nhân gây kích thích, bao gồm cả chất gây dị ứng và chất kích thích.'
+
+MERGE (o1:disease {id: 'viêm_mũi_disease'})
+MERGE (o2:lifestyle {id: 'vị_trí_lifestyle'})
+MERGE (o1)-[r69:associatedWith]->(o2)
+SET r69.text = 'Do đó, người bệnh cần:    Nhớ lại vị trí và những gì bạn làm trước khi các triệu chứng viêm mũi bắt đầu.'
+
+MERGE (o1:disease {id: 'viêm_mũi_disease'})
+MERGE (o2:lifestyle {id: 'những_gì_bạn_làm_lifestyle'})
+MERGE (o1)-[r70:associatedWith]->(o2)
+SET r70.text = 'Do đó, người bệnh cần:    Nhớ lại vị trí và những gì bạn làm trước khi các triệu chứng viêm mũi bắt đầu.'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o2:lifestyle {id: 'thời_gian_trong_năm_lifestyle'})
+MERGE (o1)-[r71:associatedWith]->(o2)
+SET r71.text = 'Ghi nhận thời gian trong năm thường thấy xuất hiện các triệu chứng viêm mũi dị ứng.'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o2:cause {id: 'chất_gây_dị_ứng_tiềm_ẩn_cause'})
+MERGE (o1)-[r72:causedBy]->(o2)
+SET r72.text = 'Xem xét kỹ môi trường gia đình, cơ quan và trường học để tìm các chất gây dị ứng tiềm ẩn.'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o2:test {id: 'xét_nghiệm_da_test'})
+MERGE (o1)-[r73:diagnosedBy]->(o2)
+SET r73.text = 'Bên cạnh chẩn đoán lâm sàng, bác sĩ có thể chỉ định thêm các xét nghiệm để kết hợp chẩn đoán chính xác hơn, bao gồm:    Xét nghiệm da: Để xác định phản ứng với chất gây dị ứng như phấn hoa, lông hoặc phân động vật.'
+
+MERGE (o1:test {id: 'xét_nghiệm_da_test'})
+MERGE (o2:cause {id: 'phấn_hoa_cause'})
+MERGE (o1)-[r74:relatedTo]->(o2)
+SET r74.text = 'Bên cạnh chẩn đoán lâm sàng, bác sĩ có thể chỉ định thêm các xét nghiệm để kết hợp chẩn đoán chính xác hơn, bao gồm:    Xét nghiệm da: Để xác định phản ứng với chất gây dị ứng như phấn hoa, lông hoặc phân động vật.'
+
+MERGE (o1:test {id: 'xét_nghiệm_da_test'})
+MERGE (o2:cause {id: 'lông_cause'})
+MERGE (o1)-[r75:relatedTo]->(o2)
+SET r75.text = 'Bên cạnh chẩn đoán lâm sàng, bác sĩ có thể chỉ định thêm các xét nghiệm để kết hợp chẩn đoán chính xác hơn, bao gồm:    Xét nghiệm da: Để xác định phản ứng với chất gây dị ứng như phấn hoa, lông hoặc phân động vật.'
+
+MERGE (o1:test {id: 'xét_nghiệm_da_test'})
+MERGE (o2:cause {id: 'phân_động_vật_cause'})
+MERGE (o1)-[r76:relatedTo]->(o2)
+SET r76.text = 'Bên cạnh chẩn đoán lâm sàng, bác sĩ có thể chỉ định thêm các xét nghiệm để kết hợp chẩn đoán chính xác hơn, bao gồm:    Xét nghiệm da: Để xác định phản ứng với chất gây dị ứng như phấn hoa, lông hoặc phân động vật.'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o2:test {id: 'xét_nghiệm_máu_test'})
+MERGE (o1)-[r77:diagnosedBy]->(o2)
+SET r77.text = 'Bên cạnh chẩn đoán lâm sàng, bác sĩ có thể chỉ định thêm các xét nghiệm để kết hợp chẩn đoán chính xác hơn, bao gồm:    Xét nghiệm máu: Để đánh giá IgE huyết thanh đặc hiệu dị ứng, được chỉ định khi khi xét nghiệm da không đạt hiệu quả.'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_thời_tiết_disease'})
+MERGE (o2:disease {id: 'viêm_mũi_vận_mạch_disease'})
+MERGE (o1)-[r78:isSymptomOf]->(o2)
+SET r78.text = 'Chẩn đoán phân biệt là phân biệt viêm mũi dị ứng thời tiết với các dạng viêm mũi có nguồn gốc không dị ứng (còn gọi là viêm mũi vận mạch), viêm mũi mạn tính không do dị ứng, viêm mũi hỗn hợp và viêm mũi do virus. “Cần nghi ngờ viêm mũi do nhiễm virus nếu bệnh nhân là trẻ em và thời điểm xuất hiện các triệu chứng là vào mùa xuân hoặc tháng 9. Bởi vì viêm mũi do virus rhinovirus (2) có tỷ lệ mắc bệnh cao nhất ở trẻ em trong tháng 9 và mùa xuân”, bác sĩ Thuý Hằng lưu ý.'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_thời_tiết_disease'})
+MERGE (o2:disease {id: 'viêm_mũi_mạn_tính_không_do_dị_ứng_disease'})
+MERGE (o1)-[r79:isSymptomOf]->(o2)
+SET r79.text = 'Chẩn đoán phân biệt là phân biệt viêm mũi dị ứng thời tiết với các dạng viêm mũi có nguồn gốc không dị ứng (còn gọi là viêm mũi vận mạch), viêm mũi mạn tính không do dị ứng, viêm mũi hỗn hợp và viêm mũi do virus. “Cần nghi ngờ viêm mũi do nhiễm virus nếu bệnh nhân là trẻ em và thời điểm xuất hiện các triệu chứng là vào mùa xuân hoặc tháng 9. Bởi vì viêm mũi do virus rhinovirus (2) có tỷ lệ mắc bệnh cao nhất ở trẻ em trong tháng 9 và mùa xuân”, bác sĩ Thuý Hằng lưu ý.'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_thời_tiết_disease'})
+MERGE (o2:disease {id: 'viêm_mũi_hỗn_hợp_disease'})
+MERGE (o1)-[r80:isSymptomOf]->(o2)
+SET r80.text = 'Chẩn đoán phân biệt là phân biệt viêm mũi dị ứng thời tiết với các dạng viêm mũi có nguồn gốc không dị ứng (còn gọi là viêm mũi vận mạch), viêm mũi mạn tính không do dị ứng, viêm mũi hỗn hợp và viêm mũi do virus. “Cần nghi ngờ viêm mũi do nhiễm virus nếu bệnh nhân là trẻ em và thời điểm xuất hiện các triệu chứng là vào mùa xuân hoặc tháng 9. Bởi vì viêm mũi do virus rhinovirus (2) có tỷ lệ mắc bệnh cao nhất ở trẻ em trong tháng 9 và mùa xuân”, bác sĩ Thuý Hằng lưu ý.'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_thời_tiết_disease'})
+MERGE (o2:disease {id: 'viêm_mũi_do_virus_disease'})
+MERGE (o1)-[r81:isSymptomOf]->(o2)
+SET r81.text = 'Chẩn đoán phân biệt là phân biệt viêm mũi dị ứng thời tiết với các dạng viêm mũi có nguồn gốc không dị ứng (còn gọi là viêm mũi vận mạch), viêm mũi mạn tính không do dị ứng, viêm mũi hỗn hợp và viêm mũi do virus. “Cần nghi ngờ viêm mũi do nhiễm virus nếu bệnh nhân là trẻ em và thời điểm xuất hiện các triệu chứng là vào mùa xuân hoặc tháng 9. Bởi vì viêm mũi do virus rhinovirus (2) có tỷ lệ mắc bệnh cao nhất ở trẻ em trong tháng 9 và mùa xuân”, bác sĩ Thuý Hằng lưu ý.'
+
+MERGE (o1:disease {id: 'viêm_mũi_do_nhiễm_virus_disease'})
+MERGE (o2:lifestyle {id: 'trẻ_em_lifestyle'})
+MERGE (o1)-[r82:associatedWith]->(o2)
+SET r82.text = '“Cần nghi ngờ viêm mũi do nhiễm virus nếu bệnh nhân là trẻ em và thời điểm xuất hiện các triệu chứng là vào mùa xuân hoặc tháng 9. Bởi vì viêm mũi do virus rhinovirus (2) có tỷ lệ mắc bệnh cao nhất ở trẻ em trong tháng 9 và mùa xuân”, bác sĩ Thuý Hằng lưu ý.'
+
+MERGE (o1:disease {id: 'viêm_mũi_do_nhiễm_virus_disease'})
+MERGE (o2:lifestyle {id: 'mùa_xuân_lifestyle'})
+MERGE (o1)-[r83:associatedWith]->(o2)
+SET r83.text = '“Cần nghi ngờ viêm mũi do nhiễm virus nếu bệnh nhân là trẻ em và thời điểm xuất hiện các triệu chứng là vào mùa xuân hoặc tháng 9. Bởi vì viêm mũi do virus rhinovirus (2) có tỷ lệ mắc bệnh cao nhất ở trẻ em trong tháng 9 và mùa xuân”, bác sĩ Thuý Hằng lưu ý.'
+
+MERGE (o1:disease {id: 'viêm_mũi_do_nhiễm_virus_disease'})
+MERGE (o2:lifestyle {id: 'tháng_9_lifestyle'})
+MERGE (o1)-[r84:associatedWith]->(o2)
+SET r84.text = '“Cần nghi ngờ viêm mũi do nhiễm virus nếu bệnh nhân là trẻ em và thời điểm xuất hiện các triệu chứng là vào mùa xuân hoặc tháng 9. Bởi vì viêm mũi do virus rhinovirus (2) có tỷ lệ mắc bệnh cao nhất ở trẻ em trong tháng 9 và mùa xuân”, bác sĩ Thuý Hằng lưu ý.'
+
+MERGE (o1:disease {id: 'viêm_mũi_do_virus_rhinovirus_(2)_disease'})
+MERGE (o2:lifestyle {id: 'trẻ_em_lifestyle'})
+MERGE (o1)-[r85:associatedWith]->(o2)
+SET r85.text = '“Cần nghi ngờ viêm mũi do nhiễm virus nếu bệnh nhân là trẻ em và thời điểm xuất hiện các triệu chứng là vào mùa xuân hoặc tháng 9. Bởi vì viêm mũi do virus rhinovirus (2) có tỷ lệ mắc bệnh cao nhất ở trẻ em trong tháng 9 và mùa xuân”, bác sĩ Thuý Hằng lưu ý.'
+
+MERGE (o1:disease {id: 'viêm_mũi_do_virus_rhinovirus_(2)_disease'})
+MERGE (o2:lifestyle {id: 'tháng_9_lifestyle'})
+MERGE (o1)-[r86:associatedWith]->(o2)
+SET r86.text = '“Cần nghi ngờ viêm mũi do nhiễm virus nếu bệnh nhân là trẻ em và thời điểm xuất hiện các triệu chứng là vào mùa xuân hoặc tháng 9. Bởi vì viêm mũi do virus rhinovirus (2) có tỷ lệ mắc bệnh cao nhất ở trẻ em trong tháng 9 và mùa xuân”, bác sĩ Thuý Hằng lưu ý.'
+
+MERGE (o1:disease {id: 'viêm_mũi_do_virus_rhinovirus_(2)_disease'})
+MERGE (o2:lifestyle {id: 'mùa_xuân_lifestyle'})
+MERGE (o1)-[r87:associatedWith]->(o2)
+SET r87.text = '“Cần nghi ngờ viêm mũi do nhiễm virus nếu bệnh nhân là trẻ em và thời điểm xuất hiện các triệu chứng là vào mùa xuân hoặc tháng 9. Bởi vì viêm mũi do virus rhinovirus (2) có tỷ lệ mắc bệnh cao nhất ở trẻ em trong tháng 9 và mùa xuân”, bác sĩ Thuý Hằng lưu ý.'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_thời_tiết_disease'})
+MERGE (o2:test {id: 'xét_nghiệm_máu_đánh_giá_ige_huyết_thanh_đặc_hiệu_dị_ứng_test'})
+MERGE (o1)-[r88:diagnosedBy]->(o2)
+SET r88.text = 'Xét nghiệm máu đánh giá IgE huyết thanh đặc hiệu dị ứng giúp chẩn đoán viêm mũi dị ứng thời tiết'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_thời_tiết_disease'})
+MERGE (o2:treatment {id: 'thuốc_kháng_histamin_h1_treatment'})
+MERGE (o1)-[r89:treatedBy]->(o2)
+SET r89.text = 'Viêm mũi dị ứng thời tiết có thể điều trị bằng các phương pháp như sau:
+Theo bác sĩ Thuý Hằng các lựa chọn điều trị bằng thuốc thường bao gồm thuốc kháng histamin H1, corticoid dùng xịt mũi và thuốc đối kháng thụ thể leukotriene. Ba loại thuốc này không chỉ đặc hiệu với chứng viêm mũi dị ứng theo mùa mà còn với cả viêm mũi dị ứng lâu năm.(3) Thuốc kháng histamin dạng uống thường có tác dụng nhanh chóng nên bất kỳ khi nào có các triệu chứng, người bệnh có thể dùng ngay. *Bác sĩ Thuý Hằng lưu ý, tác dụng của thuốc kháng histamin đối với các triệu chứng, đặc biệt là nghẹt mũi khá khiêm tốn nên kết quả điều trị sẽ tốt hơn nếu kết hợp với thuốc thông mũi. Tuy nhiên, người bệnh cần dùng thuốc kết hợp theo chỉ định của bác sĩ vì chúng có thể gây ra một số tác dụng phụ như viêm mũi do thuốc hoặc giảm hiệu quả khi điều trị đến ngày thứ 3. Người bệnh chỉ nên dùng các loại thuốc này trong thời gian ngắn, không nên dùng kéo dài để tránh nguy cơ lờn thuốc.    Corticoid xịt trong mũi: Được đánh giá là loại thuốc hiệu quả nhất đối với chứng viêm mũi dị ứng theo mùa. Không chỉ các triệu chứng ở mũi mà đối với các triệu chứng dị ứng ở mắt, glucocorticoid dùng qua đường mũi cũng có hiệu quả tương đương với thuốc kháng histamin đường uống. Thuốc đối kháng thụ thể leukotriene: Tác dụng của thuốc đối kháng thụ thể leukotriene đối với các triệu chứng của viêm mũi dị ứng cũng tương tự hoặc ít hơn một chút so với thuốc kháng histamine đường uống. Thuốc tiêm: Đây cũng là một liệu pháp miễn dịch dưới da giúp điều trị chứng viêm mũi dị ứng theo mùa. Tuy nhiên, bác sĩ Thuý Hằng khuyến cáo, liệu pháp này có nguy cơ gây phản ứng toàn thân, xảy ra ở 0,1% số lần tiêm. Trong một số trường hợp hiếm hoi có thể dẫn đến sốc phản vệ đe dọa tính mạng.'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_thời_tiết_disease'})
+MERGE (o2:treatment {id: 'corticoid_dùng_xịt_mũi_treatment'})
+MERGE (o1)-[r90:treatedBy]->(o2)
+SET r90.text = 'Viêm mũi dị ứng thời tiết có thể điều trị bằng các phương pháp như sau:
+Theo bác sĩ Thuý Hằng các lựa chọn điều trị bằng thuốc thường bao gồm thuốc kháng histamin H1, corticoid dùng xịt mũi và thuốc đối kháng thụ thể leukotriene. Ba loại thuốc này không chỉ đặc hiệu với chứng viêm mũi dị ứng theo mùa mà còn với cả viêm mũi dị ứng lâu năm.(3) Thuốc kháng histamin dạng uống thường có tác dụng nhanh chóng nên bất kỳ khi nào có các triệu chứng, người bệnh có thể dùng ngay. *Bác sĩ Thuý Hằng lưu ý, tác dụng của thuốc kháng histamin đối với các triệu chứng, đặc biệt là nghẹt mũi khá khiêm tốn nên kết quả điều trị sẽ tốt hơn nếu kết hợp với thuốc thông mũi. Tuy nhiên, người bệnh cần dùng thuốc kết hợp theo chỉ định của bác sĩ vì chúng có thể gây ra một số tác dụng phụ như viêm mũi do thuốc hoặc giảm hiệu quả khi điều trị đến ngày thứ 3. Người bệnh chỉ nên dùng các loại thuốc này trong thời gian ngắn, không nên dùng kéo dài để tránh nguy cơ lờn thuốc.    Corticoid xịt trong mũi: Được đánh giá là loại thuốc hiệu quả nhất đối với chứng viêm mũi dị ứng theo mùa. Không chỉ các triệu chứng ở mũi mà đối với các triệu chứng dị ứng ở mắt, glucocorticoid dùng qua đường mũi cũng có hiệu quả tương đương với thuốc kháng histamin đường uống. Thuốc đối kháng thụ thể leukotriene: Tác dụng của thuốc đối kháng thụ thể leukotriene đối với các triệu chứng của viêm mũi dị ứng cũng tương tự hoặc ít hơn một chút so với thuốc kháng histamine đường uống. Thuốc tiêm: Đây cũng là một liệu pháp miễn dịch dưới da giúp điều trị chứng viêm mũi dị ứng theo mùa. Tuy nhiên, bác sĩ Thuý Hằng khuyến cáo, liệu pháp này có nguy cơ gây phản ứng toàn thân, xảy ra ở 0,1% số lần tiêm. Trong một số trường hợp hiếm hoi có thể dẫn đến sốc phản vệ đe dọa tính mạng.'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_thời_tiết_disease'})
+MERGE (o2:treatment {id: 'thuốc_đối_kháng_thụ_thể_leukotriene_treatment'})
+MERGE (o1)-[r91:treatedBy]->(o2)
+SET r91.text = 'Viêm mũi dị ứng thời tiết có thể điều trị bằng các phương pháp như sau:
+Theo bác sĩ Thuý Hằng các lựa chọn điều trị bằng thuốc thường bao gồm thuốc kháng histamin H1, corticoid dùng xịt mũi và thuốc đối kháng thụ thể leukotriene. Ba loại thuốc này không chỉ đặc hiệu với chứng viêm mũi dị ứng theo mùa mà còn với cả viêm mũi dị ứng lâu năm.(3) Thuốc kháng histamin dạng uống thường có tác dụng nhanh chóng nên bất kỳ khi nào có các triệu chứng, người bệnh có thể dùng ngay. *Bác sĩ Thuý Hằng lưu ý, tác dụng của thuốc kháng histamin đối với các triệu chứng, đặc biệt là nghẹt mũi khá khiêm tốn nên kết quả điều trị sẽ tốt hơn nếu kết hợp với thuốc thông mũi. Tuy nhiên, người bệnh cần dùng thuốc kết hợp theo chỉ định của bác sĩ vì chúng có thể gây ra một số tác dụng phụ như viêm mũi do thuốc hoặc giảm hiệu quả khi điều trị đến ngày thứ 3. Người bệnh chỉ nên dùng các loại thuốc này trong thời gian ngắn, không nên dùng kéo dài để tránh nguy cơ lờn thuốc.    Corticoid xịt trong mũi: Được đánh giá là loại thuốc hiệu quả nhất đối với chứng viêm mũi dị ứng theo mùa. Không chỉ các triệu chứng ở mũi mà đối với các triệu chứng dị ứng ở mắt, glucocorticoid dùng qua đường mũi cũng có hiệu quả tương đương với thuốc kháng histamin đường uống. Thuốc đối kháng thụ thể leukotriene: Tác dụng của thuốc đối kháng thụ thể leukotriene đối với các triệu chứng của viêm mũi dị ứng cũng tương tự hoặc ít hơn một chút so với thuốc kháng histamine đường uống. Thuốc tiêm: Đây cũng là một liệu pháp miễn dịch dưới da giúp điều trị chứng viêm mũi dị ứng theo mùa. Tuy nhiên, bác sĩ Thuý Hằng khuyến cáo, liệu pháp này có nguy cơ gây phản ứng toàn thân, xảy ra ở 0,1% số lần tiêm. Trong một số trường hợp hiếm hoi có thể dẫn đến sốc phản vệ đe dọa tính mạng.'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_thời_tiết_disease'})
+MERGE (o2:treatment {id: 'thuốc_tiêm_treatment'})
+MERGE (o1)-[r92:treatedBy]->(o2)
+SET r92.text = 'Viêm mũi dị ứng thời tiết có thể điều trị bằng các phương pháp như sau:
+Theo bác sĩ Thuý Hằng các lựa chọn điều trị bằng thuốc thường bao gồm thuốc kháng histamin H1, corticoid dùng xịt mũi và thuốc đối kháng thụ thể leukotriene. Ba loại thuốc này không chỉ đặc hiệu với chứng viêm mũi dị ứng theo mùa mà còn với cả viêm mũi dị ứng lâu năm.(3) Thuốc kháng histamin dạng uống thường có tác dụng nhanh chóng nên bất kỳ khi nào có các triệu chứng, người bệnh có thể dùng ngay. *Bác sĩ Thuý Hằng lưu ý, tác dụng của thuốc kháng histamin đối với các triệu chứng, đặc biệt là nghẹt mũi khá khiêm tốn nên kết quả điều trị sẽ tốt hơn nếu kết hợp với thuốc thông mũi. Tuy nhiên, người bệnh cần dùng thuốc kết hợp theo chỉ định của bác sĩ vì chúng có thể gây ra một số tác dụng phụ như viêm mũi do thuốc hoặc giảm hiệu quả khi điều trị đến ngày thứ 3. Người bệnh chỉ nên dùng các loại thuốc này trong thời gian ngắn, không nên dùng kéo dài để tránh nguy cơ lờn thuốc.    Corticoid xịt trong mũi: Được đánh giá là loại thuốc hiệu quả nhất đối với chứng viêm mũi dị ứng theo mùa. Không chỉ các triệu chứng ở mũi mà đối với các triệu chứng dị ứng ở mắt, glucocorticoid dùng qua đường mũi cũng có hiệu quả tương đương với thuốc kháng histamin đường uống. Thuốc đối kháng thụ thể leukotriene: Tác dụng của thuốc đối kháng thụ thể leukotriene đối với các triệu chứng của viêm mũi dị ứng cũng tương tự hoặc ít hơn một chút so với thuốc kháng histamine đường uống. Thuốc tiêm: Đây cũng là một liệu pháp miễn dịch dưới da giúp điều trị chứng viêm mũi dị ứng theo mùa. Tuy nhiên, bác sĩ Thuý Hằng khuyến cáo, liệu pháp này có nguy cơ gây phản ứng toàn thân, xảy ra ở 0,1% số lần tiêm. Trong một số trường hợp hiếm hoi có thể dẫn đến sốc phản vệ đe dọa tính mạng.'
+
+MERGE (o1:treatment {id: 'thuốc_kháng_histamin_treatment'})
+MERGE (o2:symptom {id: 'nghẹt_mũi_symptom'})
+MERGE (o1)-[r93:affects]->(o2)
+SET r93.text = 'Thuốc kháng histamin dạng uống thường có tác dụng nhanh chóng nên bất kỳ khi nào có các triệu chứng, người bệnh có thể dùng ngay. *Bác sĩ Thuý Hằng lưu ý, tác dụng của thuốc kháng histamin đối với các triệu chứng, đặc biệt là nghẹt mũi khá khiêm tốn nên kết quả điều trị sẽ tốt hơn nếu kết hợp với thuốc thông mũi. Tuy nhiên, người bệnh cần dùng thuốc kết hợp theo chỉ định của bác sĩ vì chúng có thể gây ra một số tác dụng phụ như viêm mũi do thuốc hoặc giảm hiệu quả khi điều trị đến ngày thứ 3. Người bệnh chỉ nên dùng các loại thuốc này trong thời gian ngắn, không nên dùng kéo dài để tránh nguy cơ lờn thuốc.'
+
+MERGE (o1:treatment {id: 'thuốc_kháng_histamin_treatment'})
+MERGE (o2:disease {id: 'viêm_mũi_do_thuốc_disease'})
+MERGE (o1)-[r94:affects]->(o2)
+SET r94.text = 'Thuốc kháng histamin dạng uống thường có tác dụng nhanh chóng nên bất kỳ khi nào có các triệu chứng, người bệnh có thể dùng ngay. *Bác sĩ Thuý Hằng lưu ý, tác dụng của thuốc kháng histamin đối với các triệu chứng, đặc biệt là nghẹt mũi khá khiêm tốn nên kết quả điều trị sẽ tốt hơn nếu kết hợp với thuốc thông mũi. Tuy nhiên, người bệnh cần dùng thuốc kết hợp theo chỉ định của bác sĩ vì chúng có thể gây ra một số tác dụng phụ như viêm mũi do thuốc hoặc giảm hiệu quả khi điều trị đến ngày thứ 3. Người bệnh chỉ nên dùng các loại thuốc này trong thời gian ngắn, không nên dùng kéo dài để tránh nguy cơ lờn thuốc.'
+
+MERGE (o1:treatment {id: 'thuốc_kháng_histamin_treatment'})
+MERGE (o2:symptom {id: 'giảm_hiệu_quả_khi_điều_trị_symptom'})
+MERGE (o1)-[r95:affects]->(o2)
+SET r95.text = 'Thuốc kháng histamin dạng uống thường có tác dụng nhanh chóng nên bất kỳ khi nào có các triệu chứng, người bệnh có thể dùng ngay. *Bác sĩ Thuý Hằng lưu ý, tác dụng của thuốc kháng histamin đối với các triệu chứng, đặc biệt là nghẹt mũi khá khiêm tốn nên kết quả điều trị sẽ tốt hơn nếu kết hợp với thuốc thông mũi. Tuy nhiên, người bệnh cần dùng thuốc kết hợp theo chỉ định của bác sĩ vì chúng có thể gây ra một số tác dụng phụ như viêm mũi do thuốc hoặc giảm hiệu quả khi điều trị đến ngày thứ 3. Người bệnh chỉ nên dùng các loại thuốc này trong thời gian ngắn, không nên dùng kéo dài để tránh nguy cơ lờn thuốc.'
+
+MERGE (o1:treatment {id: 'thuốc_kháng_histamin_treatment'})
+MERGE (o2:symptom {id: 'lờn_thuốc_symptom'})
+MERGE (o1)-[r96:associatedWith]->(o2)
+SET r96.text = 'Thuốc kháng histamin dạng uống thường có tác dụng nhanh chóng nên bất kỳ khi nào có các triệu chứng, người bệnh có thể dùng ngay. *Bác sĩ Thuý Hằng lưu ý, tác dụng của thuốc kháng histamin đối với các triệu chứng, đặc biệt là nghẹt mũi khá khiêm tốn nên kết quả điều trị sẽ tốt hơn nếu kết hợp với thuốc thông mũi. Tuy nhiên, người bệnh cần dùng thuốc kết hợp theo chỉ định của bác sĩ vì chúng có thể gây ra một số tác dụng phụ như viêm mũi do thuốc hoặc giảm hiệu quả khi điều trị đến ngày thứ 3. Người bệnh chỉ nên dùng các loại thuốc này trong thời gian ngắn, không nên dùng kéo dài để tránh nguy cơ lờn thuốc.'
+
+MERGE (o1:treatment {id: 'corticoid_xịt_trong_mũi_treatment'})
+MERGE (o2:symptom {id: 'các_triệu_chứng_ở_mũi_symptom'})
+MERGE (o1)-[r97:affects]->(o2)
+SET r97.text = 'Corticoid xịt trong mũi: Được đánh giá là loại thuốc hiệu quả nhất đối với chứng viêm mũi dị ứng theo mùa. Không chỉ các triệu chứng ở mũi mà đối với các triệu chứng dị ứng ở mắt, glucocorticoid dùng qua đường mũi cũng có hiệu quả tương đương với thuốc kháng histamin đường uống.'
+
+MERGE (o1:treatment {id: 'corticoid_xịt_trong_mũi_treatment'})
+MERGE (o2:symptom {id: 'các_triệu_chứng_dị_ứng_ở_mắt_symptom'})
+MERGE (o1)-[r98:affects]->(o2)
+SET r98.text = 'Corticoid xịt trong mũi: Được đánh giá là loại thuốc hiệu quả nhất đối với chứng viêm mũi dị ứng theo mùa. Không chỉ các triệu chứng ở mũi mà đối với các triệu chứng dị ứng ở mắt, glucocorticoid dùng qua đường mũi cũng có hiệu quả tương đương với thuốc kháng histamin đường uống.'
+
+MERGE (o1:treatment {id: 'thuốc_đối_kháng_thụ_thể_leukotriene_treatment'})
+MERGE (o2:symptom {id: 'các_triệu_chứng_của_viêm_mũi_dị_ứng_symptom'})
+MERGE (o1)-[r99:affects]->(o2)
+SET r99.text = 'Thuốc đối kháng thụ thể leukotriene: Tác dụng của thuốc đối kháng thụ thể leukotriene đối với các triệu chứng của viêm mũi dị ứng cũng tương tự hoặc ít hơn một chút so với thuốc kháng histamine đường uống.'
+
+MERGE (o1:treatment {id: 'thuốc_kháng_histamin_xịt_mũi_treatment'})
+MERGE (o2:symptom {id: 'các_triệu_chứng_viêm_mũi_dị_ứng_thời_tiết_symptom'})
+MERGE (o1)-[r100:affects]->(o2)
+SET r100.text = 'Dùng thuốc kháng histamin xịt mũi có thể giúp giảm các triệu chứng viêm mũi dị ứng thời tiết'
+
+MERGE (o1:treatment {id: 'rửa_mũi_bằng_nước_muối_sinh_lý_treatment'})
+MERGE (o2:symptom {id: 'chảy_nước_mũi_symptom'})
+MERGE (o1)-[r101:affects]->(o2)
+SET r101.text = 'Bên cạnh việc điều trị bằng thuốc theo chỉ định của bác sĩ, người bệnh có thể kết hợp một số cách trị viêm mũi dị ứng thời tiết tại nhà sau đây để cải thiện các triệu chứng.    Rửa mũi bằng nước muối sinh lý: Phương pháp này giúp loại bỏ các chất gây dị ứng ra khỏi mũi, đặc biệt hữu ích để điều trị triệu chứng chảy nước mũi, hắt hơi, khô mũi và nghẹt mũi. Rửa mũi bằng nước muối cũng giúp làm sạch niêm mạc mũi. Người bệnh có thể sử dụng trước khi dùng thuốc dạng xịt để thuốc phát huy tác dụng tốt hơn. Xông hơi: Phương pháp xông hơi đơn giản với một nồi nước đun sôi mở vung để hơi nóng bốc lên mặt, hoặc mở vòi hoa sen ở chế độ nước nóng rồi xả khắp phòng tắm. Hơi nước nóng sẽ giúp thông đường thở và giảm nhẹ các triệu chứng.'
+
+MERGE (o1:treatment {id: 'rửa_mũi_bằng_nước_muối_sinh_lý_treatment'})
+MERGE (o2:symptom {id: 'hắt_hơi_symptom'})
+MERGE (o1)-[r102:affects]->(o2)
+SET r102.text = 'Bên cạnh việc điều trị bằng thuốc theo chỉ định của bác sĩ, người bệnh có thể kết hợp một số cách trị viêm mũi dị ứng thời tiết tại nhà sau đây để cải thiện các triệu chứng.    Rửa mũi bằng nước muối sinh lý: Phương pháp này giúp loại bỏ các chất gây dị ứng ra khỏi mũi, đặc biệt hữu ích để điều trị triệu chứng chảy nước mũi, hắt hơi, khô mũi và nghẹt mũi. Rửa mũi bằng nước muối cũng giúp làm sạch niêm mạc mũi. Người bệnh có thể sử dụng trước khi dùng thuốc dạng xịt để thuốc phát huy tác dụng tốt hơn. Xông hơi: Phương pháp xông hơi đơn giản với một nồi nước đun sôi mở vung để hơi nóng bốc lên mặt, hoặc mở vòi hoa sen ở chế độ nước nóng rồi xả khắp phòng tắm. Hơi nước nóng sẽ giúp thông đường thở và giảm nhẹ các triệu chứng.'
+
+MERGE (o1:treatment {id: 'rửa_mũi_bằng_nước_muối_sinh_lý_treatment'})
+MERGE (o2:symptom {id: 'khô_mũi_symptom'})
+MERGE (o1)-[r103:affects]->(o2)
+SET r103.text = 'Bên cạnh việc điều trị bằng thuốc theo chỉ định của bác sĩ, người bệnh có thể kết hợp một số cách trị viêm mũi dị ứng thời tiết tại nhà sau đây để cải thiện các triệu chứng.    Rửa mũi bằng nước muối sinh lý: Phương pháp này giúp loại bỏ các chất gây dị ứng ra khỏi mũi, đặc biệt hữu ích để điều trị triệu chứng chảy nước mũi, hắt hơi, khô mũi và nghẹt mũi. Rửa mũi bằng nước muối cũng giúp làm sạch niêm mạc mũi. Người bệnh có thể sử dụng trước khi dùng thuốc dạng xịt để thuốc phát huy tác dụng tốt hơn. Xông hơi: Phương pháp xông hơi đơn giản với một nồi nước đun sôi mở vung để hơi nóng bốc lên mặt, hoặc mở vòi hoa sen ở chế độ nước nóng rồi xả khắp phòng tắm. Hơi nước nóng sẽ giúp thông đường thở và giảm nhẹ các triệu chứng.'
+
+MERGE (o1:treatment {id: 'rửa_mũi_bằng_nước_muối_sinh_lý_treatment'})
+MERGE (o2:symptom {id: 'nghẹt_mũi_symptom'})
+MERGE (o1)-[r104:affects]->(o2)
+SET r104.text = 'Bên cạnh việc điều trị bằng thuốc theo chỉ định của bác sĩ, người bệnh có thể kết hợp một số cách trị viêm mũi dị ứng thời tiết tại nhà sau đây để cải thiện các triệu chứng.    Rửa mũi bằng nước muối sinh lý: Phương pháp này giúp loại bỏ các chất gây dị ứng ra khỏi mũi, đặc biệt hữu ích để điều trị triệu chứng chảy nước mũi, hắt hơi, khô mũi và nghẹt mũi. Rửa mũi bằng nước muối cũng giúp làm sạch niêm mạc mũi. Người bệnh có thể sử dụng trước khi dùng thuốc dạng xịt để thuốc phát huy tác dụng tốt hơn. Xông hơi: Phương pháp xông hơi đơn giản với một nồi nước đun sôi mở vung để hơi nóng bốc lên mặt, hoặc mở vòi hoa sen ở chế độ nước nóng rồi xả khắp phòng tắm. Hơi nước nóng sẽ giúp thông đường thở và giảm nhẹ các triệu chứng.'
+
+MERGE (o1:treatment {id: 'rửa_mũi_bằng_nước_muối_sinh_lý_treatment'})
+MERGE (o2:organ {id: 'niêm_mạc_mũi_organ'})
+MERGE (o1)-[r105:affects]->(o2)
+SET r105.text = 'Bên cạnh việc điều trị bằng thuốc theo chỉ định của bác sĩ, người bệnh có thể kết hợp một số cách trị viêm mũi dị ứng thời tiết tại nhà sau đây để cải thiện các triệu chứng.    Rửa mũi bằng nước muối sinh lý: Phương pháp này giúp loại bỏ các chất gây dị ứng ra khỏi mũi, đặc biệt hữu ích để điều trị triệu chứng chảy nước mũi, hắt hơi, khô mũi và nghẹt mũi. Rửa mũi bằng nước muối cũng giúp làm sạch niêm mạc mũi. Người bệnh có thể sử dụng trước khi dùng thuốc dạng xịt để thuốc phát huy tác dụng tốt hơn. Xông hơi: Phương pháp xông hơi đơn giản với một nồi nước đun sôi mở vung để hơi nóng bốc lên mặt, hoặc mở vòi hoa sen ở chế độ nước nóng rồi xả khắp phòng tắm. Hơi nước nóng sẽ giúp thông đường thở và giảm nhẹ các triệu chứng.'
+
+MERGE (o1:treatment {id: 'xông_hơi_treatment'})
+MERGE (o2:organ {id: 'đường_thở_organ'})
+MERGE (o1)-[r106:affects]->(o2)
+SET r106.text = 'Bên cạnh việc điều trị bằng thuốc theo chỉ định của bác sĩ, người bệnh có thể kết hợp một số cách trị viêm mũi dị ứng thời tiết tại nhà sau đây để cải thiện các triệu chứng.    Rửa mũi bằng nước muối sinh lý: Phương pháp này giúp loại bỏ các chất gây dị ứng ra khỏi mũi, đặc biệt hữu ích để điều trị triệu chứng chảy nước mũi, hắt hơi, khô mũi và nghẹt mũi. Rửa mũi bằng nước muối cũng giúp làm sạch niêm mạc mũi. Người bệnh có thể sử dụng trước khi dùng thuốc dạng xịt để thuốc phát huy tác dụng tốt hơn. Xông hơi: Phương pháp xông hơi đơn giản với một nồi nước đun sôi mở vung để hơi nóng bốc lên mặt, hoặc mở vòi hoa sen ở chế độ nước nóng rồi xả khắp phòng tắm. Hơi nước nóng sẽ giúp thông đường thở và giảm nhẹ các triệu chứng.'
+
+MERGE (o1:lifestyle {id: 'việc_phòng_ngừa_viêm_mũi_dị_ứng_theo_mùa_lifestyle'})
+MERGE (o2:cause {id: 'các_tác_nhân_gây_dị_ứng_cause'})
+MERGE (o1)-[r107:preventedBy]->(o2)
+SET r107.text = 'Theo bác sĩ Thuý Hằng, việc phòng ngừa viêm mũi dị ứng theo mùa quan trọng nhất là cần tránh xa các tác nhân gây dị ứng và tăng cường miễn dịch cho cơ thể.'
+
+MERGE (o1:lifestyle {id: 'việc_phòng_ngừa_viêm_mũi_dị_ứng_theo_mùa_lifestyle'})
+MERGE (o2:lifestyle {id: 'tăng_cường_miễn_dịch_cho_cơ_thể_lifestyle'})
+MERGE (o1)-[r108:preventedBy]->(o2)
+SET r108.text = 'Theo bác sĩ Thuý Hằng, việc phòng ngừa viêm mũi dị ứng theo mùa quan trọng nhất là cần tránh xa các tác nhân gây dị ứng và tăng cường miễn dịch cho cơ thể.'
+
+MERGE (o1:lifestyle {id: 'vệ_sinh_nhà_cửa_sạch_sẽ_hàng_ngày_lifestyle'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_theo_mùa_disease'})
+MERGE (o1)-[r109:preventedBy]->(o2)
+SET r109.text = 'Theo đó, người dân nên:    Vệ sinh nhà cửa sạch sẽ hàng ngày; giặt ga, gối, nệm, chăn, chiếu hàng tuần.'
+
+MERGE (o1:lifestyle {id: 'giặt_ga__gối__nệm__chăn__chiếu_hàng_tuần_lifestyle'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_theo_mùa_disease'})
+MERGE (o1)-[r110:preventedBy]->(o2)
+SET r110.text = 'Theo đó, người dân nên:    Vệ sinh nhà cửa sạch sẽ hàng ngày; giặt ga, gối, nệm, chăn, chiếu hàng tuần.'
+
+MERGE (o1:lifestyle {id: 'nuôi_thú_cưng_có_lông_như_chó_mèo_trong_nhà_lifestyle'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_theo_mùa_disease'})
+MERGE (o1)-[r111:aggravatedBy]->(o2)
+SET r111.text = 'Không nên nuôi thú cưng có lông như chó mèo trong nhà.'
+
+MERGE (o1:cause {id: 'loài_thực_vật_gây_dị_ứng_cause'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_theo_mùa_disease'})
+MERGE (o1)-[r112:causedBy]->(o2)
+SET r112.text = 'Nếu nghi ngờ một loài thực vật nào đó có thể gây dị ứng trong vườn, hãy loại bỏ nó.'
+
+MERGE (o1:cause {id: 'hóa_chất_như_nước_giặt__thuốc_xịt_côn_trùng_cause'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_theo_mùa_disease'})
+MERGE (o1)-[r113:causedBy]->(o2)
+SET r113.text = 'Hạn chế tiếp xúc với hóa chất như nước giặt, thuốc xịt côn trùng.'
+
+MERGE (o1:lifestyle {id: 'ánh_nắng_mặt_trời_lifestyle'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_theo_mùa_disease'})
+MERGE (o1)-[r114:preventedBy]->(o2)
+SET r114.text = 'Thường xuyên mở cửa các phòng trong nhà để đón ánh nắng mặt trời để khử nấm mốc.'
+
+MERGE (o1:cause {id: 'nấm_mốc_cause'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_theo_mùa_disease'})
+MERGE (o1)-[r115:causedBy]->(o2)
+SET r115.text = 'Thường xuyên mở cửa các phòng trong nhà để đón ánh nắng mặt trời để khử nấm mốc.'
+
+MERGE (o1:lifestyle {id: 'giữ_ấm_cơ_thể_lifestyle'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_theo_mùa_disease'})
+MERGE (o1)-[r116:preventedBy]->(o2)
+SET r116.text = 'Giữ ấm cơ thể, ăn uống đồ ấm, nhất là vào mùa lạnh.'
+
+MERGE (o1:lifestyle {id: 'ăn_uống_đồ_ấm_lifestyle'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_theo_mùa_disease'})
+MERGE (o1)-[r117:preventedBy]->(o2)
+SET r117.text = 'Giữ ấm cơ thể, ăn uống đồ ấm, nhất là vào mùa lạnh.'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_thời_tiết_disease'})
+MERGE (o2:symptom {id: 'các_thắc_mắc_thường_gặp_symptom'})
+MERGE (o1)-[r118:relatedTo]->(o2)
+SET r118.text = 'Bác sĩ Thuý Hằng giải đáp các thắc mắc thường gặp về bệnh viêm mũi dị ứng thời tiết.'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_thời_tiết_disease'})
+MERGE (o2:treatment {id: 'thuốc_treatment'})
+MERGE (o1)-[r119:treatedBy]->(o2)
+SET r119.text = 'Viêm mũi dị ứng thời tiết có thể điều trị được bằng thuốc và phòng ngừa bằng cách tránh xa các tác nhân gây dị ứng.'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_thời_tiết_disease'})
+MERGE (o2:lifestyle {id: 'tránh_xa_các_tác_nhân_gây_dị_ứng_lifestyle'})
+MERGE (o1)-[r120:preventedBy]->(o2)
+SET r120.text = 'Viêm mũi dị ứng thời tiết có thể điều trị được bằng thuốc và phòng ngừa bằng cách tránh xa các tác nhân gây dị ứng.'
+
+MERGE (o1:disease {id: 'trẻ_có_cơ_địa_nhạy_cảm__mắc_bệnh_hen_suyễn_disease'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o1)-[r121:aggravatedBy]->(o2)
+SET r121.text = 'Những trẻ có cơ địa nhạy cảm, mắc bệnh hen suyễn dễ bùng phát các triệu chứng viêm mũi dị ứng khi thời tiết giao mùa.'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_thời_tiết_lạnh_disease'})
+MERGE (o2:cause {id: 'thời_tiết_giao_mùa_cause'})
+MERGE (o1)-[r122:aggravatedBy]->(o2)
+SET r122.text = 'Chẳng hạn như trẻ sẽ bị viêm mũi dị ứng thời tiết lạnh ở những ngày cuối thu, đầu đông.'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o2:cause {id: 'các_tác_nhân_dị_ứng_cause'})
+MERGE (o1)-[r123:causedBy]->(o2)
+SET r123.text = 'Viêm mũi dị ứng là tình trạng viêm các niêm mạc phủ trong hốc mũi do các tác nhân dị ứng gây ra.'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o2:organ {id: 'niêm_mạc_phủ_trong_hốc_mũi_organ'})
+MERGE (o1)-[r124:affects]->(o2)
+SET r124.text = 'Viêm mũi dị ứng là tình trạng viêm các niêm mạc phủ trong hốc mũi do các tác nhân dị ứng gây ra.'
+
+MERGE (o1:organ {id: 'xoang_organ'})
+MERGE (o2:organ {id: 'mặt_organ'})
+MERGE (o1)-[r125:locatedIn]->(o2)
+SET r125.text = 'Trong đó, xoang là các xương rỗng, mỗi bên mặt bao gồm một xoang trán, một xoang hàm, một xoang bướm và 15-17 xoang sàng có liên quan đặc biệt tới hốc mũi.'
+
+MERGE (o1:organ {id: 'xoang_trán_organ'})
+MERGE (o2:organ {id: 'mặt_organ'})
+MERGE (o1)-[r126:locatedIn]->(o2)
+SET r126.text = 'Trong đó, xoang là các xương rỗng, mỗi bên mặt bao gồm một xoang trán, một xoang hàm, một xoang bướm và 15-17 xoang sàng có liên quan đặc biệt tới hốc mũi.'
+
+MERGE (o1:organ {id: 'xoang_hàm_organ'})
+MERGE (o2:organ {id: 'mặt_organ'})
+MERGE (o1)-[r127:locatedIn]->(o2)
+SET r127.text = 'Trong đó, xoang là các xương rỗng, mỗi bên mặt bao gồm một xoang trán, một xoang hàm, một xoang bướm và 15-17 xoang sàng có liên quan đặc biệt tới hốc mũi.'
+
+MERGE (o1:organ {id: 'xoang_bướm_organ'})
+MERGE (o2:organ {id: 'mặt_organ'})
+MERGE (o1)-[r128:locatedIn]->(o2)
+SET r128.text = 'Trong đó, xoang là các xương rỗng, mỗi bên mặt bao gồm một xoang trán, một xoang hàm, một xoang bướm và 15-17 xoang sàng có liên quan đặc biệt tới hốc mũi.'
+
+MERGE (o1:organ {id: 'xoang_sàng_organ'})
+MERGE (o2:organ {id: 'mặt_organ'})
+MERGE (o1)-[r129:locatedIn]->(o2)
+SET r129.text = 'Trong đó, xoang là các xương rỗng, mỗi bên mặt bao gồm một xoang trán, một xoang hàm, một xoang bướm và 15-17 xoang sàng có liên quan đặc biệt tới hốc mũi.'
+
+MERGE (o1:organ {id: 'xoang_organ'})
+MERGE (o2:organ {id: 'hốc_mũi_organ'})
+MERGE (o1)-[r130:relatedTo]->(o2)
+SET r130.text = 'Trong đó, xoang là các xương rỗng, mỗi bên mặt bao gồm một xoang trán, một xoang hàm, một xoang bướm và 15-17 xoang sàng có liên quan đặc biệt tới hốc mũi.'
+
+MERGE (o1:disease {id: 'viêm_xoang_dị_ứng_disease'})
+MERGE (o2:cause {id: 'các_tác_nhân_gây_dị_ứng_cause'})
+MERGE (o1)-[r131:causedBy]->(o2)
+SET r131.text = 'Viêm xoang dị ứng là tình trạng viêm lớp niêm mạc phủ trong xoang do các tác nhân gây dị ứng.'
+
+MERGE (o1:disease {id: 'viêm_xoang_dị_ứng_disease'})
+MERGE (o2:organ {id: 'niêm_mạc_phủ_trong_xoang_organ'})
+MERGE (o1)-[r132:affects]->(o2)
+SET r132.text = 'Viêm xoang dị ứng là tình trạng viêm lớp niêm mạc phủ trong xoang do các tác nhân gây dị ứng.'
+
+MERGE (o1:organ {id: 'niêm_mạc_các_xoang_cạnh_mũi_và_hốc_mũi_organ'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o1)-[r133:relatedTo]->(o2)
+SET r133.text = 'Niêm mạc các xoang cạnh mũi và hốc mũi là một thể thống nhất, các bệnh lý viêm mũi dị ứng và viêm xoang dị ứng được gọi chung là viêm mũi xoang dị ứng.'
+
+MERGE (o1:organ {id: 'niêm_mạc_các_xoang_cạnh_mũi_và_hốc_mũi_organ'})
+MERGE (o2:disease {id: 'viêm_xoang_dị_ứng_disease'})
+MERGE (o1)-[r134:relatedTo]->(o2)
+SET r134.text = 'Niêm mạc các xoang cạnh mũi và hốc mũi là một thể thống nhất, các bệnh lý viêm mũi dị ứng và viêm xoang dị ứng được gọi chung là viêm mũi xoang dị ứng.'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o2:disease {id: 'viêm_mũi_xoang_dị_ứng_disease'})
+MERGE (o1)-[r135:relatedTo]->(o2)
+SET r135.text = 'Niêm mạc các xoang cạnh mũi và hốc mũi là một thể thống nhất, các bệnh lý viêm mũi dị ứng và viêm xoang dị ứng được gọi chung là viêm mũi xoang dị ứng.'
+
+MERGE (o1:disease {id: 'viêm_xoang_dị_ứng_disease'})
+MERGE (o2:disease {id: 'viêm_mũi_xoang_dị_ứng_disease'})
+MERGE (o1)-[r136:relatedTo]->(o2)
+SET r136.text = 'Niêm mạc các xoang cạnh mũi và hốc mũi là một thể thống nhất, các bệnh lý viêm mũi dị ứng và viêm xoang dị ứng được gọi chung là viêm mũi xoang dị ứng.'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_thời_tiết_disease'})
+MERGE (o2:symptom {id: 'sức_khỏe_symptom'})
+MERGE (o1)-[r137:affects]->(o2)
+SET r137.text = 'Viêm mũi dị ứng thời tiết không phải là một bệnh lý cấp tính đe dọa tính mạng, nhưng có thể gây ảnh hưởng tới sức khỏe, tinh thần làm suy giảm khả năng học tập, lao động do chứng nghẹt mũi gây ra.'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_thời_tiết_disease'})
+MERGE (o2:symptom {id: 'tinh_thần_symptom'})
+MERGE (o1)-[r138:affects]->(o2)
+SET r138.text = 'Viêm mũi dị ứng thời tiết không phải là một bệnh lý cấp tính đe dọa tính mạng, nhưng có thể gây ảnh hưởng tới sức khỏe, tinh thần làm suy giảm khả năng học tập, lao động do chứng nghẹt mũi gây ra.'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_thời_tiết_disease'})
+MERGE (o2:symptom {id: 'khả_năng_học_tập_symptom'})
+MERGE (o1)-[r139:affects]->(o2)
+SET r139.text = 'Viêm mũi dị ứng thời tiết không phải là một bệnh lý cấp tính đe dọa tính mạng, nhưng có thể gây ảnh hưởng tới sức khỏe, tinh thần làm suy giảm khả năng học tập, lao động do chứng nghẹt mũi gây ra.'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_thời_tiết_disease'})
+MERGE (o2:symptom {id: 'lao_động_symptom'})
+MERGE (o1)-[r140:affects]->(o2)
+SET r140.text = 'Viêm mũi dị ứng thời tiết không phải là một bệnh lý cấp tính đe dọa tính mạng, nhưng có thể gây ảnh hưởng tới sức khỏe, tinh thần làm suy giảm khả năng học tập, lao động do chứng nghẹt mũi gây ra.'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_thời_tiết_disease'})
+MERGE (o2:symptom {id: 'chứng_nghẹt_mũi_symptom'})
+MERGE (o1)-[r141:isSymptomOf]->(o2)
+SET r141.text = 'Viêm mũi dị ứng thời tiết không phải là một bệnh lý cấp tính đe dọa tính mạng, nhưng có thể gây ảnh hưởng tới sức khỏe, tinh thần làm suy giảm khả năng học tập, lao động do chứng nghẹt mũi gây ra.'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_theo_mùa_disease'})
+MERGE (o2:disease {id: 'viêm_tai_giữa_disease'})
+MERGE (o1)-[r142:isSymptomOf]->(o2)
+SET r142.text = 'Thêm nữa, nếu không được điều trị sớm, các biến chứng của viêm mũi dị ứng theo mùa có thể bội nhiễm gây biến chứng viêm tai giữa, viêm màng não… đe dọa tính mạng.'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_theo_mùa_disease'})
+MERGE (o2:disease {id: 'viêm_màng_não_disease'})
+MERGE (o1)-[r143:isSymptomOf]->(o2)
+SET r143.text = 'Thêm nữa, nếu không được điều trị sớm, các biến chứng của viêm mũi dị ứng theo mùa có thể bội nhiễm gây biến chứng viêm tai giữa, viêm màng não… đe dọa tính mạng.'

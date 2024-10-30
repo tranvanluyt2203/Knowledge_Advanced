@@ -1,0 +1,995 @@
+
+MERGE (o1:symptom {id: 'cơn_nhịp_tim_nhanh_symptom'})
+MERGE (o2:disease {id: 'loạn_nhịp_nhanh_disease'})
+MERGE (o1)-[r0:isSymptomOf]->(o2)
+SET r0.text = 'Cơn nhịp tim nhanh (hay còn gọi là loạn nhịp nhanh) có thể xuất phát từ tâm thất hoặc tâm nhĩ.'
+
+MERGE (o1:disease {id: 'loạn_nhịp_nhanh_disease'})
+MERGE (o2:organ {id: 'tâm_thất_organ'})
+MERGE (o1)-[r1:relatedTo]->(o2)
+SET r1.text = 'Cơn nhịp tim nhanh (hay còn gọi là loạn nhịp nhanh) có thể xuất phát từ tâm thất hoặc tâm nhĩ.'
+
+MERGE (o1:disease {id: 'loạn_nhịp_nhanh_disease'})
+MERGE (o2:organ {id: 'tâm_nhĩ_organ'})
+MERGE (o1)-[r2:relatedTo]->(o2)
+SET r2.text = 'Cơn nhịp tim nhanh (hay còn gọi là loạn nhịp nhanh) có thể xuất phát từ tâm thất hoặc tâm nhĩ.'
+
+MERGE (o1:symptom {id: 'nhịp_tim_đập_nhanh_symptom'})
+MERGE (o2:organ {id: 'tim_organ'})
+MERGE (o1)-[r3:affects]->(o2)
+SET r3.text = 'Nhịp tim đập nhanh có thể khiến tim không thể thực hiện tốt nhiệm vụ bơm máu giàu oxy đến các cơ quan còn lại của cơ thể.'
+
+MERGE (o1:symptom {id: 'nhịp_tim_đập_nhanh_symptom'})
+MERGE (o2:organ {id: 'cơ_quan_organ'})
+MERGE (o1)-[r4:affects]->(o2)
+SET r4.text = 'Nhịp tim đập nhanh có thể khiến tim không thể thực hiện tốt nhiệm vụ bơm máu giàu oxy đến các cơ quan còn lại của cơ thể.'
+
+MERGE (o1:symptom {id: 'tim_đập_nhanh_symptom'})
+MERGE (o2:disease {id: 'nhịp_tim_nhanh_disease'})
+MERGE (o1)-[r5:isSymptomOf]->(o2)
+SET r5.text = 'Tim đập nhanh (nhịp tim nhanh) được xác định khi tim đập hơn 100 lần một phút khi nghỉ ngơi.'
+
+MERGE (o1:symptom {id: 'cơn_nhịp_tim_nhanh_symptom'})
+MERGE (o2:lifestyle {id: 'thời_gian_lifestyle'})
+MERGE (o1)-[r6:relatedTo]->(o2)
+SET r6.text = 'Cơn nhịp tim nhanh có thể kéo dài từ vài giây cho đến vài giờ.'
+
+MERGE (o1:symptom {id: 'nhịp_tim_tăng_lên_symptom'})
+MERGE (o2:lifestyle {id: 'tập_thể_dục_lifestyle'})
+MERGE (o1)-[r7:causedBy]->(o2)
+SET r7.text = 'Nhịp tim tăng lên khi tập thể dục hoặc căng thẳng thường là một phản ứng sinh lý bình thường, nhưng nhịp tim nhanh khi nghỉ ngơi có thể là dấu hiệu sớm của một bệnh lý nguy hiểm đáng lo ngại.'
+
+MERGE (o1:symptom {id: 'nhịp_tim_tăng_lên_symptom'})
+MERGE (o2:lifestyle {id: 'căng_thẳng_lifestyle'})
+MERGE (o1)-[r8:causedBy]->(o2)
+SET r8.text = 'Nhịp tim tăng lên khi tập thể dục hoặc căng thẳng thường là một phản ứng sinh lý bình thường, nhưng nhịp tim nhanh khi nghỉ ngơi có thể là dấu hiệu sớm của một bệnh lý nguy hiểm đáng lo ngại.'
+
+MERGE (o1:symptom {id: 'nhịp_tim_nhanh_khi_nghỉ_ngơi_symptom'})
+MERGE (o2:disease {id: 'bệnh_lý_nguy_hiểm_disease'})
+MERGE (o1)-[r9:isSymptomOf]->(o2)
+SET r9.text = 'Nhịp tim tăng lên khi tập thể dục hoặc căng thẳng thường là một phản ứng sinh lý bình thường, nhưng nhịp tim nhanh khi nghỉ ngơi có thể là dấu hiệu sớm của một bệnh lý nguy hiểm đáng lo ngại.'
+
+MERGE (o1:symptom {id: 'nhịp_tim_bình_thường_symptom'})
+MERGE (o2:lifestyle {id: 'tình_trạng_thể_chất_lifestyle'})
+MERGE (o1)-[r10:relatedTo]->(o2)
+SET r10.text = 'Nhịp tim bình thường khi nghỉ ngơi của người lớn là từ 60 đến 100, thay đổi tùy theo tình trạng thể chất hoặc do ảnh hưởng của các bệnh lý kèm theo.'
+
+MERGE (o1:symptom {id: 'nhịp_tim_bình_thường_symptom'})
+MERGE (o2:disease {id: 'bệnh_lý_kèm_theo_disease'})
+MERGE (o1)-[r11:relatedTo]->(o2)
+SET r11.text = 'Nhịp tim bình thường khi nghỉ ngơi của người lớn là từ 60 đến 100, thay đổi tùy theo tình trạng thể chất hoặc do ảnh hưởng của các bệnh lý kèm theo.'
+
+MERGE (o1:symptom {id: 'tim_đập_nhanh_symptom'})
+MERGE (o2:disease {id: 'vấn_đề_sức_khỏe_nghiêm_trọng_disease'})
+MERGE (o1)-[r12:isSymptomOf]->(o2)
+SET r12.text = 'Đôi khi tim đập nhanh lại báo hiệu một vấn đề sức khỏe nghiêm trọng, vì vậy cần phải chẩn đoán sớm nguyên nhân của nhịp tim nhanh và xác định xem có cần áp dụng các biện pháp xử trí khẩn cấp cũng như lên kế hoạch điều trị lâu dài hay không.'
+
+MERGE (o1:symptom {id: 'nhịp_tim_nhanh_symptom'})
+MERGE (o2:test {id: 'chẩn_đoán_test'})
+MERGE (o1)-[r13:diagnosedBy]->(o2)
+SET r13.text = 'Đôi khi tim đập nhanh lại báo hiệu một vấn đề sức khỏe nghiêm trọng, vì vậy cần phải chẩn đoán sớm nguyên nhân của nhịp tim nhanh và xác định xem có cần áp dụng các biện pháp xử trí khẩn cấp cũng như lên kế hoạch điều trị lâu dài hay không.'
+
+MERGE (o1:symptom {id: 'nhịp_tim_nhanh_symptom'})
+MERGE (o2:treatment {id: 'xử_trí_khẩn_cấp_treatment'})
+MERGE (o1)-[r14:treatedBy]->(o2)
+SET r14.text = 'Đôi khi tim đập nhanh lại báo hiệu một vấn đề sức khỏe nghiêm trọng, vì vậy cần phải chẩn đoán sớm nguyên nhân của nhịp tim nhanh và xác định xem có cần áp dụng các biện pháp xử trí khẩn cấp cũng như lên kế hoạch điều trị lâu dài hay không.'
+
+MERGE (o1:symptom {id: 'nhịp_tim_nhanh_symptom'})
+MERGE (o2:treatment {id: 'điều_trị_lâu_dài_treatment'})
+MERGE (o1)-[r15:treatedBy]->(o2)
+SET r15.text = 'Đôi khi tim đập nhanh lại báo hiệu một vấn đề sức khỏe nghiêm trọng, vì vậy cần phải chẩn đoán sớm nguyên nhân của nhịp tim nhanh và xác định xem có cần áp dụng các biện pháp xử trí khẩn cấp cũng như lên kế hoạch điều trị lâu dài hay không.'
+
+MERGE (o1:symptom {id: 'nhịp_tim_nhanh_symptom'})
+MERGE (o2:symptom {id: 'triệu_chứng_symptom'})
+MERGE (o1)-[r16:relatedTo]->(o2)
+SET r16.text = 'Trong một số trường hợp, nhịp tim nhanh không gây ra triệu chứng hay biến chứng nào.'
+
+MERGE (o1:symptom {id: 'nhịp_tim_nhanh_symptom'})
+MERGE (o2:disease {id: 'biến_chứng_disease'})
+MERGE (o1)-[r17:relatedTo]->(o2)
+SET r17.text = 'Trong một số trường hợp, nhịp tim nhanh không gây ra triệu chứng hay biến chứng nào.'
+
+MERGE (o1:disease {id: 'loạn_nhịp_nhanh_disease'})
+MERGE (o2:disease {id: 'suy_tim_disease'})
+MERGE (o1)-[r18:isSymptomOf]->(o2)
+SET r18.text = 'Tuy nhiên, ThS.BS.CKI Vũ Xuân Quang, Bác sĩ Trung tâm Tim mạch Bệnh viện Đa khoa Tâm Anh TP.HCM cho biết, một số loại loạn nhịp nhanh có thể dẫn đến các biến chứng nặng nề như suy tim, đột quỵ, ngất xỉu hay thậm chí đột tử nếu không được đánh giá đúng và điều trị kịp thời.'
+
+MERGE (o1:disease {id: 'loạn_nhịp_nhanh_disease'})
+MERGE (o2:disease {id: 'đột_quỵ_disease'})
+MERGE (o1)-[r19:isSymptomOf]->(o2)
+SET r19.text = 'Tuy nhiên, ThS.BS.CKI Vũ Xuân Quang, Bác sĩ Trung tâm Tim mạch Bệnh viện Đa khoa Tâm Anh TP.HCM cho biết, một số loại loạn nhịp nhanh có thể dẫn đến các biến chứng nặng nề như suy tim, đột quỵ, ngất xỉu hay thậm chí đột tử nếu không được đánh giá đúng và điều trị kịp thời.'
+
+MERGE (o1:disease {id: 'loạn_nhịp_nhanh_disease'})
+MERGE (o2:symptom {id: 'ngất_xỉu_symptom'})
+MERGE (o1)-[r20:isSymptomOf]->(o2)
+SET r20.text = 'Tuy nhiên, ThS.BS.CKI Vũ Xuân Quang, Bác sĩ Trung tâm Tim mạch Bệnh viện Đa khoa Tâm Anh TP.HCM cho biết, một số loại loạn nhịp nhanh có thể dẫn đến các biến chứng nặng nề như suy tim, đột quỵ, ngất xỉu hay thậm chí đột tử nếu không được đánh giá đúng và điều trị kịp thời.'
+
+MERGE (o1:disease {id: 'loạn_nhịp_nhanh_disease'})
+MERGE (o2:symptom {id: 'đột_tử_symptom'})
+MERGE (o1)-[r21:isSymptomOf]->(o2)
+SET r21.text = 'Tuy nhiên, ThS.BS.CKI Vũ Xuân Quang, Bác sĩ Trung tâm Tim mạch Bệnh viện Đa khoa Tâm Anh TP.HCM cho biết, một số loại loạn nhịp nhanh có thể dẫn đến các biến chứng nặng nề như suy tim, đột quỵ, ngất xỉu hay thậm chí đột tử nếu không được đánh giá đúng và điều trị kịp thời.'
+
+MERGE (o1:disease {id: 'loạn_nhịp_nhanh_disease'})
+MERGE (o2:treatment {id: 'điều_trị_treatment'})
+MERGE (o1)-[r22:treatedBy]->(o2)
+SET r22.text = 'Tuy nhiên, ThS.BS.CKI Vũ Xuân Quang, Bác sĩ Trung tâm Tim mạch Bệnh viện Đa khoa Tâm Anh TP.HCM cho biết, một số loại loạn nhịp nhanh có thể dẫn đến các biến chứng nặng nề như suy tim, đột quỵ, ngất xỉu hay thậm chí đột tử nếu không được đánh giá đúng và điều trị kịp thời.'
+
+MERGE (o1:disease {id: 'loạn_nhịp_nhanh_disease'})
+MERGE (o2:lifestyle {id: 'mức_độ_nghiêm_trọng_lifestyle'})
+MERGE (o1)-[r23:relatedTo]->(o2)
+SET r23.text = 'ThS.BS.CKI Vũ Xuân Quang cho biết, có nhiều loại loạn nhịp nhanh với mức độ nghiêm trọng khác nhau, từ ít hoặc không ảnh hưởng tới sức khỏe đến những loại loạn nhịp nặng đe dọa tính mạng, cần được chăm sóc y tế ngay lập tức.'
+
+MERGE (o1:disease {id: 'loạn_nhịp_nhanh_disease'})
+MERGE (o2:treatment {id: 'chăm_sóc_y_tế_treatment'})
+MERGE (o1)-[r24:treatedBy]->(o2)
+SET r24.text = 'ThS.BS.CKI Vũ Xuân Quang cho biết, có nhiều loại loạn nhịp nhanh với mức độ nghiêm trọng khác nhau, từ ít hoặc không ảnh hưởng tới sức khỏe đến những loại loạn nhịp nặng đe dọa tính mạng, cần được chăm sóc y tế ngay lập tức.'
+
+MERGE (o1:disease {id: 'loạn_nhịp_nhanh_disease'})
+MERGE (o2:disease {id: 'ổ_loạn_nhịp_disease'})
+MERGE (o1)-[r25:relatedTo]->(o2)
+SET r25.text = 'Loạn nhịp nhanh thường được phân loại dựa vào nơi xuất phát của ổ loạn nhịp.'
+
+MERGE (o1:organ {id: 'nút_xoang_organ'})
+MERGE (o2:organ {id: 'tim_organ'})
+MERGE (o1)-[r26:locatedIn]->(o2)
+SET r26.text = 'Nút xoang là “nhạc trưởng” của tim, từ đây phát ra các tín hiệu điện lan đến các phần khác của tim, giúp giữ nhịp tim đều đặn và thay đổi tùy theo nhu cầu của cơ thể.'
+
+MERGE (o1:organ {id: 'nút_xoang_organ'})
+MERGE (o2:symptom {id: 'nhịp_tim_symptom'})
+MERGE (o1)-[r27:affects]->(o2)
+SET r27.text = 'Nút xoang là “nhạc trưởng” của tim, từ đây phát ra các tín hiệu điện lan đến các phần khác của tim, giúp giữ nhịp tim đều đặn và thay đổi tùy theo nhu cầu của cơ thể.'
+
+MERGE (o1:disease {id: 'nhịp_nhanh_xoang_disease'})
+MERGE (o2:organ {id: 'nút_xoang_organ'})
+MERGE (o1)-[r28:relatedTo]->(o2)
+SET r28.text = 'Nhịp nhanh xoang xảy ra khi nút xoang hoạt động quá mức kể cả khi nghỉ ngơi.'
+
+MERGE (o1:disease {id: 'nhịp_nhanh_xoang_disease'})
+MERGE (o2:lifestyle {id: 'nghỉ_ngơi_lifestyle'})
+MERGE (o1)-[r29:relatedTo]->(o2)
+SET r29.text = 'Nhịp nhanh xoang xảy ra khi nút xoang hoạt động quá mức kể cả khi nghỉ ngơi.'
+
+MERGE (o1:lifestyle {id: 'căng_thẳng_lifestyle'})
+MERGE (o2:disease {id: 'nhịp_nhanh_xoang_disease'})
+MERGE (o1)-[r30:causes]->(o2)
+SET r30.text = 'Điều này có thể do tình trạng căng thẳng, hoặc là dấu hiệu của một số bệnh lý khác như thiếu máu, các vấn đề về tuyến giáp, nhiễm trùng hoặc tình trạng sức khỏe kém nói chung.'
+
+MERGE (o1:disease {id: 'thiếu_máu_disease'})
+MERGE (o2:disease {id: 'nhịp_nhanh_xoang_disease'})
+MERGE (o1)-[r31:causes]->(o2)
+SET r31.text = 'Điều này có thể do tình trạng căng thẳng, hoặc là dấu hiệu của một số bệnh lý khác như thiếu máu, các vấn đề về tuyến giáp, nhiễm trùng hoặc tình trạng sức khỏe kém nói chung.'
+
+MERGE (o1:disease {id: 'các_vấn_đề_về_tuyến_giáp_disease'})
+MERGE (o2:disease {id: 'nhịp_nhanh_xoang_disease'})
+MERGE (o1)-[r32:causes]->(o2)
+SET r32.text = 'Điều này có thể do tình trạng căng thẳng, hoặc là dấu hiệu của một số bệnh lý khác như thiếu máu, các vấn đề về tuyến giáp, nhiễm trùng hoặc tình trạng sức khỏe kém nói chung.'
+
+MERGE (o1:disease {id: 'nhiễm_trùng_disease'})
+MERGE (o2:disease {id: 'nhịp_nhanh_xoang_disease'})
+MERGE (o1)-[r33:causes]->(o2)
+SET r33.text = 'Điều này có thể do tình trạng căng thẳng, hoặc là dấu hiệu của một số bệnh lý khác như thiếu máu, các vấn đề về tuyến giáp, nhiễm trùng hoặc tình trạng sức khỏe kém nói chung.'
+
+MERGE (o1:disease {id: 'tình_trạng_sức_khỏe_kém_disease'})
+MERGE (o2:disease {id: 'nhịp_nhanh_xoang_disease'})
+MERGE (o1)-[r34:causes]->(o2)
+SET r34.text = 'Điều này có thể do tình trạng căng thẳng, hoặc là dấu hiệu của một số bệnh lý khác như thiếu máu, các vấn đề về tuyến giáp, nhiễm trùng hoặc tình trạng sức khỏe kém nói chung.'
+
+MERGE (o1:disease {id: 'rối_loạn_của_nút_xoang_disease'})
+MERGE (o2:disease {id: 'nhịp_nhanh_xoang_disease'})
+MERGE (o1)-[r35:causes]->(o2)
+SET r35.text = 'Đôi khi các rối loạn của bản thân nút xoang cũng là nguyên nhân gây ra nhịp nhanh xoang.'
+
+MERGE (o1:disease {id: 'loạn_nhịp_nhanh_disease'})
+MERGE (o2:disease {id: 'nhịp_nhanh_trên_thất_disease'})
+MERGE (o1)-[r36:relatedTo]->(o2)
+SET r36.text = 'Các loại loạn nhịp nhanh xuất phát từ vùng trên tâm thất thường được gọi chung là nhịp nhanh trên thất.'
+
+MERGE (o1:disease {id: 'nhịp_nhanh_trên_thất_disease'})
+MERGE (o2:organ {id: 'tâm_thất_organ'})
+MERGE (o1)-[r37:relatedTo]->(o2)
+SET r37.text = 'Các loại loạn nhịp nhanh xuất phát từ vùng trên tâm thất thường được gọi chung là nhịp nhanh trên thất.'
+
+MERGE (o1:disease {id: 'nhịp_nhanh_trên_thất_disease'})
+MERGE (o2:disease {id: 'nhịp_nhanh_thất_disease'})
+MERGE (o1)-[r38:relatedTo]->(o2)
+SET r38.text = 'Nhịp nhanh trên thất có vẻ ít gây đe dọa tính mạng hơn nhịp nhanh thất, tuy nhiên nếu nhịp tim quá nhanh có thể khiến tim co bóp không hiệu quả, làm giảm lưu lượng máu đến các cơ quan, gây tụt huyết áp và về lâu dài có thể dẫn đến suy tim.'
+
+MERGE (o1:symptom {id: 'nhịp_tim_quá_nhanh_symptom'})
+MERGE (o2:organ {id: 'tim_organ'})
+MERGE (o1)-[r39:affects]->(o2)
+SET r39.text = 'Nhịp nhanh trên thất có vẻ ít gây đe dọa tính mạng hơn nhịp nhanh thất, tuy nhiên nếu nhịp tim quá nhanh có thể khiến tim co bóp không hiệu quả, làm giảm lưu lượng máu đến các cơ quan, gây tụt huyết áp và về lâu dài có thể dẫn đến suy tim.'
+
+MERGE (o1:symptom {id: 'nhịp_tim_quá_nhanh_symptom'})
+MERGE (o2:symptom {id: 'lưu_lượng_máu_symptom'})
+MERGE (o1)-[r40:affects]->(o2)
+SET r40.text = 'Nhịp nhanh trên thất có vẻ ít gây đe dọa tính mạng hơn nhịp nhanh thất, tuy nhiên nếu nhịp tim quá nhanh có thể khiến tim co bóp không hiệu quả, làm giảm lưu lượng máu đến các cơ quan, gây tụt huyết áp và về lâu dài có thể dẫn đến suy tim.'
+
+MERGE (o1:symptom {id: 'nhịp_tim_quá_nhanh_symptom'})
+MERGE (o2:organ {id: 'cơ_quan_organ'})
+MERGE (o1)-[r41:affects]->(o2)
+SET r41.text = 'Nhịp nhanh trên thất có vẻ ít gây đe dọa tính mạng hơn nhịp nhanh thất, tuy nhiên nếu nhịp tim quá nhanh có thể khiến tim co bóp không hiệu quả, làm giảm lưu lượng máu đến các cơ quan, gây tụt huyết áp và về lâu dài có thể dẫn đến suy tim.'
+
+MERGE (o1:symptom {id: 'nhịp_tim_quá_nhanh_symptom'})
+MERGE (o2:symptom {id: 'tụt_huyết_áp_symptom'})
+MERGE (o1)-[r42:isSymptomOf]->(o2)
+SET r42.text = 'Nhịp nhanh trên thất có vẻ ít gây đe dọa tính mạng hơn nhịp nhanh thất, tuy nhiên nếu nhịp tim quá nhanh có thể khiến tim co bóp không hiệu quả, làm giảm lưu lượng máu đến các cơ quan, gây tụt huyết áp và về lâu dài có thể dẫn đến suy tim.'
+
+MERGE (o1:symptom {id: 'nhịp_tim_quá_nhanh_symptom'})
+MERGE (o2:disease {id: 'suy_tim_disease'})
+MERGE (o1)-[r43:isSymptomOf]->(o2)
+SET r43.text = 'Nhịp nhanh trên thất có vẻ ít gây đe dọa tính mạng hơn nhịp nhanh thất, tuy nhiên nếu nhịp tim quá nhanh có thể khiến tim co bóp không hiệu quả, làm giảm lưu lượng máu đến các cơ quan, gây tụt huyết áp và về lâu dài có thể dẫn đến suy tim.'
+
+MERGE (o1:disease {id: 'cuồng_nhĩ_disease'})
+MERGE (o2:disease {id: 'nhịp_tim_nhanh_trên_thất_disease'})
+MERGE (o1)-[r44:isSymptomOf]->(o2)
+SET r44.text = 'Hai loại nhịp tim nhanh trên thất đáng chú ý là cuồng nhĩ và rung nhĩ có thể tạo ra cục máu đông dẫn đến đột quỵ nếu không được phát hiện và điều trị kịp thời.'
+
+MERGE (o1:disease {id: 'rung_nhĩ_disease'})
+MERGE (o2:disease {id: 'nhịp_tim_nhanh_trên_thất_disease'})
+MERGE (o1)-[r45:isSymptomOf]->(o2)
+SET r45.text = 'Hai loại nhịp tim nhanh trên thất đáng chú ý là cuồng nhĩ và rung nhĩ có thể tạo ra cục máu đông dẫn đến đột quỵ nếu không được phát hiện và điều trị kịp thời.'
+
+MERGE (o1:disease {id: 'cuồng_nhĩ_disease'})
+MERGE (o2:disease {id: 'cục_máu_đông_disease'})
+MERGE (o1)-[r46:isSymptomOf]->(o2)
+SET r46.text = 'Hai loại nhịp tim nhanh trên thất đáng chú ý là cuồng nhĩ và rung nhĩ có thể tạo ra cục máu đông dẫn đến đột quỵ nếu không được phát hiện và điều trị kịp thời.'
+
+MERGE (o1:disease {id: 'rung_nhĩ_disease'})
+MERGE (o2:disease {id: 'cục_máu_đông_disease'})
+MERGE (o1)-[r47:isSymptomOf]->(o2)
+SET r47.text = 'Hai loại nhịp tim nhanh trên thất đáng chú ý là cuồng nhĩ và rung nhĩ có thể tạo ra cục máu đông dẫn đến đột quỵ nếu không được phát hiện và điều trị kịp thời.'
+
+MERGE (o1:disease {id: 'cục_máu_đông_disease'})
+MERGE (o2:disease {id: 'đột_quỵ_disease'})
+MERGE (o1)-[r48:isSymptomOf]->(o2)
+SET r48.text = 'Hai loại nhịp tim nhanh trên thất đáng chú ý là cuồng nhĩ và rung nhĩ có thể tạo ra cục máu đông dẫn đến đột quỵ nếu không được phát hiện và điều trị kịp thời.'
+
+MERGE (o1:disease {id: 'cuồng_nhĩ_disease'})
+MERGE (o2:treatment {id: 'điều_trị_treatment'})
+MERGE (o1)-[r49:treatedBy]->(o2)
+SET r49.text = 'Hai loại nhịp tim nhanh trên thất đáng chú ý là cuồng nhĩ và rung nhĩ có thể tạo ra cục máu đông dẫn đến đột quỵ nếu không được phát hiện và điều trị kịp thời.'
+
+MERGE (o1:disease {id: 'rung_nhĩ_disease'})
+MERGE (o2:treatment {id: 'điều_trị_treatment'})
+MERGE (o1)-[r50:treatedBy]->(o2)
+SET r50.text = 'Hai loại nhịp tim nhanh trên thất đáng chú ý là cuồng nhĩ và rung nhĩ có thể tạo ra cục máu đông dẫn đến đột quỵ nếu không được phát hiện và điều trị kịp thời.'
+
+MERGE (o1:organ {id: 'tâm_thất_organ'})
+MERGE (o2:organ {id: 'tim_organ'})
+MERGE (o1)-[r51:locatedIn]->(o2)
+SET r51.text = 'Tâm thất là nơi trực tiếp bơm máu từ tim đến các bộ phận khác trong cơ thể.'
+
+MERGE (o1:organ {id: 'tâm_thất_organ'})
+MERGE (o2:symptom {id: 'máu_symptom'})
+MERGE (o1)-[r52:affects]->(o2)
+SET r52.text = 'Tâm thất là nơi trực tiếp bơm máu từ tim đến các bộ phận khác trong cơ thể.'
+
+MERGE (o1:organ {id: 'tâm_thất_organ'})
+MERGE (o2:organ {id: 'cơ_thể_organ'})
+MERGE (o1)-[r53:affects]->(o2)
+SET r53.text = 'Tâm thất là nơi trực tiếp bơm máu từ tim đến các bộ phận khác trong cơ thể.'
+
+MERGE (o1:symptom {id: 'cơn_nhịp_nhanh_symptom'})
+MERGE (o2:organ {id: 'tâm_thất_organ'})
+MERGE (o1)-[r54:relatedTo]->(o2)
+SET r54.text = 'Cơn nhịp nhanh xuất phát từ tâm thất thường làm giảm nghiêm trọng khả năng co bóp của tim gây tụt huyết áp, ngất và thậm chí dẫn đến tử vong nếu cơn loạn nhịp kéo dài mà không được xử trí kịp thời.'
+
+MERGE (o1:symptom {id: 'cơn_nhịp_nhanh_symptom'})
+MERGE (o2:organ {id: 'tim_organ'})
+MERGE (o1)-[r55:affects]->(o2)
+SET r55.text = 'Cơn nhịp nhanh xuất phát từ tâm thất thường làm giảm nghiêm trọng khả năng co bóp của tim gây tụt huyết áp, ngất và thậm chí dẫn đến tử vong nếu cơn loạn nhịp kéo dài mà không được xử trí kịp thời.'
+
+MERGE (o1:symptom {id: 'cơn_nhịp_nhanh_symptom'})
+MERGE (o2:symptom {id: 'tụt_huyết_áp_symptom'})
+MERGE (o1)-[r56:isSymptomOf]->(o2)
+SET r56.text = 'Cơn nhịp nhanh xuất phát từ tâm thất thường làm giảm nghiêm trọng khả năng co bóp của tim gây tụt huyết áp, ngất và thậm chí dẫn đến tử vong nếu cơn loạn nhịp kéo dài mà không được xử trí kịp thời.'
+
+MERGE (o1:symptom {id: 'cơn_nhịp_nhanh_symptom'})
+MERGE (o2:symptom {id: 'ngất_symptom'})
+MERGE (o1)-[r57:isSymptomOf]->(o2)
+SET r57.text = 'Cơn nhịp nhanh xuất phát từ tâm thất thường làm giảm nghiêm trọng khả năng co bóp của tim gây tụt huyết áp, ngất và thậm chí dẫn đến tử vong nếu cơn loạn nhịp kéo dài mà không được xử trí kịp thời.'
+
+MERGE (o1:symptom {id: 'cơn_nhịp_nhanh_symptom'})
+MERGE (o2:symptom {id: 'tử_vong_symptom'})
+MERGE (o1)-[r58:isSymptomOf]->(o2)
+SET r58.text = 'Cơn nhịp nhanh xuất phát từ tâm thất thường làm giảm nghiêm trọng khả năng co bóp của tim gây tụt huyết áp, ngất và thậm chí dẫn đến tử vong nếu cơn loạn nhịp kéo dài mà không được xử trí kịp thời.'
+
+MERGE (o1:disease {id: 'cơn_loạn_nhịp_disease'})
+MERGE (o2:lifestyle {id: 'thời_gian_lifestyle'})
+MERGE (o1)-[r59:relatedTo]->(o2)
+SET r59.text = 'Cơn nhịp nhanh xuất phát từ tâm thất thường làm giảm nghiêm trọng khả năng co bóp của tim gây tụt huyết áp, ngất và thậm chí dẫn đến tử vong nếu cơn loạn nhịp kéo dài mà không được xử trí kịp thời.'
+
+MERGE (o1:symptom {id: 'các_triệu_chứng_symptom'})
+MERGE (o2:disease {id: 'nhịp_tim_nhanh_disease'})
+MERGE (o1)-[r60:isSymptomOf]->(o2)
+SET r60.text = 'Bệnh nhân có thể có các triệu chứng khác nhau từ nhẹ đến nặng, hoặc đôi khi không cảm nhận triệu chứng.'
+
+MERGE (o1:symptom {id: 'hụt_hơi_symptom'})
+MERGE (o2:disease {id: 'nhịp_tim_nhanh_disease'})
+MERGE (o1)-[r61:isSymptomOf]->(o2)
+SET r61.text = 'Các triệu chứng thường gặp bao gồm:  Hụt hơi Đau ngực Tim đập nhanh Chóng mặt Lâng lâng Ngất xỉu'
+
+MERGE (o1:symptom {id: 'đau_ngực_symptom'})
+MERGE (o2:disease {id: 'nhịp_tim_nhanh_disease'})
+MERGE (o1)-[r62:isSymptomOf]->(o2)
+SET r62.text = 'Các triệu chứng thường gặp bao gồm:  Hụt hơi Đau ngực Tim đập nhanh Chóng mặt Lâng lâng Ngất xỉu'
+
+MERGE (o1:symptom {id: 'tim_đập_nhanh_symptom'})
+MERGE (o2:disease {id: 'nhịp_tim_nhanh_disease'})
+MERGE (o1)-[r63:isSymptomOf]->(o2)
+SET r63.text = 'Các triệu chứng thường gặp bao gồm:  Hụt hơi Đau ngực Tim đập nhanh Chóng mặt Lâng lâng Ngất xỉu'
+
+MERGE (o1:symptom {id: 'chóng_mặt_symptom'})
+MERGE (o2:disease {id: 'nhịp_tim_nhanh_disease'})
+MERGE (o1)-[r64:isSymptomOf]->(o2)
+SET r64.text = 'Các triệu chứng thường gặp bao gồm:  Hụt hơi Đau ngực Tim đập nhanh Chóng mặt Lâng lâng Ngất xỉu'
+
+MERGE (o1:symptom {id: 'lâng_lâng_symptom'})
+MERGE (o2:disease {id: 'nhịp_tim_nhanh_disease'})
+MERGE (o1)-[r65:isSymptomOf]->(o2)
+SET r65.text = 'Các triệu chứng thường gặp bao gồm:  Hụt hơi Đau ngực Tim đập nhanh Chóng mặt Lâng lâng Ngất xỉu'
+
+MERGE (o1:symptom {id: 'ngất_xỉu_symptom'})
+MERGE (o2:disease {id: 'nhịp_tim_nhanh_disease'})
+MERGE (o1)-[r66:isSymptomOf]->(o2)
+SET r66.text = 'Các triệu chứng thường gặp bao gồm:  Hụt hơi Đau ngực Tim đập nhanh Chóng mặt Lâng lâng Ngất xỉu'
+
+MERGE (o1:disease {id: 'cục_máu_đông_disease'})
+MERGE (o2:disease {id: 'nhịp_tim_nhanh_disease'})
+MERGE (o1)-[r67:causedBy]->(o2)
+SET r67.text = 'Nếu không điều trị, một số loại nhịp tim nhanh có thể dẫn đến các cục máu đông, đột quỵ hay tim ngừng đập.'
+
+MERGE (o1:disease {id: 'đột_quỵ_disease'})
+MERGE (o2:disease {id: 'nhịp_tim_nhanh_disease'})
+MERGE (o1)-[r68:causedBy]->(o2)
+SET r68.text = 'Nếu không điều trị, một số loại nhịp tim nhanh có thể dẫn đến các cục máu đông, đột quỵ hay tim ngừng đập.'
+
+MERGE (o1:disease {id: 'tim_ngừng_đập_disease'})
+MERGE (o2:disease {id: 'nhịp_tim_nhanh_disease'})
+MERGE (o1)-[r69:causedBy]->(o2)
+SET r69.text = 'Nếu không điều trị, một số loại nhịp tim nhanh có thể dẫn đến các cục máu đông, đột quỵ hay tim ngừng đập.'
+
+MERGE (o1:symptom {id: 'chóng_mặt_symptom'})
+MERGE (o2:disease {id: 'nhịp_tim_nhanh_disease'})
+MERGE (o1)-[r70:isSymptomOf]->(o2)
+SET r70.text = 'Chóng mặt là triệu chứng thường gặp của chứng nhịp tim nhanh.'
+
+MERGE (o1:disease {id: 'nhịp_tim_nhanh_disease'})
+MERGE (o2:cause {id: 'nguyên_nhân_sinh_lý_cause'})
+MERGE (o1)-[r71:causedBy]->(o2)
+SET r71.text = 'Nhịp tim nhanh do nguyên nhân sinh lý hoặc bệnh lý.'
+
+MERGE (o1:disease {id: 'nhịp_tim_nhanh_disease'})
+MERGE (o2:cause {id: 'nguyên_nhân_bệnh_lý_cause'})
+MERGE (o1)-[r72:causedBy]->(o2)
+SET r72.text = 'Nhịp tim nhanh do nguyên nhân sinh lý hoặc bệnh lý.'
+
+MERGE (o1:symptom {id: 'tim_đập_nhanh_symptom'})
+MERGE (o2:cause {id: 'tăng_hoạt_động_hệ_thần_kinh_giao_cảm_cause'})
+MERGE (o1)-[r73:causedBy]->(o2)
+SET r73.text = 'Tim đập nhanh liên quan đến tăng hoạt động hệ thần kinh giao cảm, ví dụ như tập thể dục, căng thẳng, đau đớn hay lo lắng thường là đáp ứng sinh lý tự nhiên của cơ thể.'
+
+MERGE (o1:lifestyle {id: 'tập_thể_dục_lifestyle'})
+MERGE (o2:symptom {id: 'tim_đập_nhanh_symptom'})
+MERGE (o1)-[r74:causedBy]->(o2)
+SET r74.text = 'Tim đập nhanh liên quan đến tăng hoạt động hệ thần kinh giao cảm, ví dụ như tập thể dục, căng thẳng, đau đớn hay lo lắng thường là đáp ứng sinh lý tự nhiên của cơ thể.'
+
+MERGE (o1:lifestyle {id: 'căng_thẳng_lifestyle'})
+MERGE (o2:symptom {id: 'tim_đập_nhanh_symptom'})
+MERGE (o1)-[r75:causedBy]->(o2)
+SET r75.text = 'Tim đập nhanh liên quan đến tăng hoạt động hệ thần kinh giao cảm, ví dụ như tập thể dục, căng thẳng, đau đớn hay lo lắng thường là đáp ứng sinh lý tự nhiên của cơ thể.'
+
+MERGE (o1:symptom {id: 'đau_đớn_symptom'})
+MERGE (o2:symptom {id: 'tim_đập_nhanh_symptom'})
+MERGE (o1)-[r76:causedBy]->(o2)
+SET r76.text = 'Tim đập nhanh liên quan đến tăng hoạt động hệ thần kinh giao cảm, ví dụ như tập thể dục, căng thẳng, đau đớn hay lo lắng thường là đáp ứng sinh lý tự nhiên của cơ thể.'
+
+MERGE (o1:symptom {id: 'lo_lắng_symptom'})
+MERGE (o2:symptom {id: 'tim_đập_nhanh_symptom'})
+MERGE (o1)-[r77:causedBy]->(o2)
+SET r77.text = 'Tim đập nhanh liên quan đến tăng hoạt động hệ thần kinh giao cảm, ví dụ như tập thể dục, căng thẳng, đau đớn hay lo lắng thường là đáp ứng sinh lý tự nhiên của cơ thể.'
+
+MERGE (o1:symptom {id: 'tim_đập_nhanh_symptom'})
+MERGE (o2:cause {id: 'nguyên_nhân_bệnh_lý_cause'})
+MERGE (o1)-[r78:causedBy]->(o2)
+SET r78.text = 'Các nguyên nhân bệnh lý khiến tim đập nhanh có thể là do tim hoặc ngoài tim.'
+
+MERGE (o1:symptom {id: 'tim_đập_nhanh_symptom'})
+MERGE (o2:disease {id: 'bệnh_lý_tim_disease'})
+MERGE (o1)-[r79:causedBy]->(o2)
+SET r79.text = 'Các nguyên nhân bệnh lý khiến tim đập nhanh có thể là do tim hoặc ngoài tim.'
+
+MERGE (o1:symptom {id: 'tim_đập_nhanh_symptom'})
+MERGE (o2:disease {id: 'bệnh_lý_ngoài_tim_disease'})
+MERGE (o1)-[r80:causedBy]->(o2)
+SET r80.text = 'Các nguyên nhân bệnh lý khiến tim đập nhanh có thể là do tim hoặc ngoài tim.'
+
+MERGE (o1:disease {id: 'nhịp_nhanh_trên_thất_disease'})
+MERGE (o2:cause {id: 'các_ổ_tín_hiệu_điện_bất_thường_cause'})
+MERGE (o1)-[r81:causedBy]->(o2)
+SET r81.text = 'Nhịp nhanh trên thất: Đây là một nhóm gồm rất nhiều loại bệnh lý do các ổ tín hiệu điện bất thường xuất phát từ vùng trên tâm thất khiến tim đập nhanh và không thể bơm máu hiệu quả;'
+
+MERGE (o1:disease {id: 'nhịp_nhanh_trên_thất_disease'})
+MERGE (o2:organ {id: 'vùng_trên_tâm_thất_organ'})
+MERGE (o1)-[r82:locatedIn]->(o2)
+SET r82.text = 'Nhịp nhanh trên thất: Đây là một nhóm gồm rất nhiều loại bệnh lý do các ổ tín hiệu điện bất thường xuất phát từ vùng trên tâm thất khiến tim đập nhanh và không thể bơm máu hiệu quả;'
+
+MERGE (o1:disease {id: 'nhịp_nhanh_trên_thất_disease'})
+MERGE (o2:organ {id: 'tim_organ'})
+MERGE (o1)-[r83:affects]->(o2)
+SET r83.text = 'Nhịp nhanh trên thất: Đây là một nhóm gồm rất nhiều loại bệnh lý do các ổ tín hiệu điện bất thường xuất phát từ vùng trên tâm thất khiến tim đập nhanh và không thể bơm máu hiệu quả;'
+
+MERGE (o1:disease {id: 'nhịp_nhanh_thất_disease'})
+MERGE (o2:cause {id: 'các_tín_hiệu_điện_bất_thường_cause'})
+MERGE (o1)-[r84:causedBy]->(o2)
+SET r84.text = 'Nhịp nhanh thất: Các tín hiệu điện bất thường xuất phát từ tâm thất khiến tim đập nhanh hơn.'
+
+MERGE (o1:disease {id: 'nhịp_nhanh_thất_disease'})
+MERGE (o2:organ {id: 'tâm_thất_organ'})
+MERGE (o1)-[r85:locatedIn]->(o2)
+SET r85.text = 'Nhịp nhanh thất: Các tín hiệu điện bất thường xuất phát từ tâm thất khiến tim đập nhanh hơn.'
+
+MERGE (o1:organ {id: 'tâm_thất_organ'})
+MERGE (o2:organ {id: 'tim_organ'})
+MERGE (o1)-[r86:affects]->(o2)
+SET r86.text = 'Do tâm thất là nơi trực tiếp bơm máu từ tim đến các cơ quan khác nên nhịp nhanh thất thường gây ra triệu chứng nặng nề hơn, có thể gây ngất hay thậm chí dẫn đến tử vong;'
+
+MERGE (o1:disease {id: 'nhịp_nhanh_thất_disease'})
+MERGE (o2:organ {id: 'tâm_thất_organ'})
+MERGE (o1)-[r87:causedBy]->(o2)
+SET r87.text = 'Do tâm thất là nơi trực tiếp bơm máu từ tim đến các cơ quan khác nên nhịp nhanh thất thường gây ra triệu chứng nặng nề hơn, có thể gây ngất hay thậm chí dẫn đến tử vong;'
+
+MERGE (o1:disease {id: 'nhịp_nhanh_thất_disease'})
+MERGE (o2:symptom {id: 'ngất_symptom'})
+MERGE (o1)-[r88:isSymptomOf]->(o2)
+SET r88.text = 'Do tâm thất là nơi trực tiếp bơm máu từ tim đến các cơ quan khác nên nhịp nhanh thất thường gây ra triệu chứng nặng nề hơn, có thể gây ngất hay thậm chí dẫn đến tử vong;'
+
+MERGE (o1:disease {id: 'nhịp_nhanh_thất_disease'})
+MERGE (o2:symptom {id: 'tử_vong_symptom'})
+MERGE (o1)-[r89:isSymptomOf]->(o2)
+SET r89.text = 'Do tâm thất là nơi trực tiếp bơm máu từ tim đến các cơ quan khác nên nhịp nhanh thất thường gây ra triệu chứng nặng nề hơn, có thể gây ngất hay thậm chí dẫn đến tử vong;'
+
+MERGE (o1:disease {id: 'rung_thất_disease'})
+MERGE (o2:symptom {id: 'tử_vong_symptom'})
+MERGE (o1)-[r90:isSymptomOf]->(o2)
+SET r90.text = 'Rung thất: Đây là dạng rối loạn nhịp nhanh nguy hiểm nhất, thường dẫn đến tử vong nếu không được cấp cứu kịp thời;'
+
+MERGE (o1:disease {id: 'suy_tim_disease'})
+MERGE (o2:disease {id: 'nhịp_tim_nhanh_disease'})
+MERGE (o1)-[r91:causedBy]->(o2)
+SET r91.text = 'Suy tim;'
+
+MERGE (o1:disease {id: 'hội_chứng_mạch_vành_cấp_disease'})
+MERGE (o2:disease {id: 'nhịp_tim_nhanh_disease'})
+MERGE (o1)-[r92:causedBy]->(o2)
+SET r92.text = 'Hội chứng mạch vành cấp;'
+
+MERGE (o1:disease {id: 'viêm_cơ_tim_disease'})
+MERGE (o2:disease {id: 'nhịp_tim_nhanh_disease'})
+MERGE (o1)-[r93:causedBy]->(o2)
+SET r93.text = 'Viêm cơ tim;'
+
+MERGE (o1:disease {id: 'chèn_ép_tim_disease'})
+MERGE (o2:disease {id: 'nhịp_tim_nhanh_disease'})
+MERGE (o1)-[r94:causedBy]->(o2)
+SET r94.text = 'Chèn ép tim.'
+
+MERGE (o1:disease {id: 'thuyên_tắc_phổi_disease'})
+MERGE (o2:disease {id: 'nhịp_tim_nhanh_disease'})
+MERGE (o1)-[r95:causedBy]->(o2)
+SET r95.text = 'Hô hấp: Thuyên tắc phổi hoặc các tình trạng gây suy hô hấp, giảm oxy máu;'
+
+MERGE (o1:disease {id: 'suy_hô_hấp_disease'})
+MERGE (o2:disease {id: 'nhịp_tim_nhanh_disease'})
+MERGE (o1)-[r96:causedBy]->(o2)
+SET r96.text = 'Hô hấp: Thuyên tắc phổi hoặc các tình trạng gây suy hô hấp, giảm oxy máu;'
+
+MERGE (o1:symptom {id: 'giảm_oxy_máu_symptom'})
+MERGE (o2:disease {id: 'nhịp_tim_nhanh_disease'})
+MERGE (o1)-[r97:causedBy]->(o2)
+SET r97.text = 'Hô hấp: Thuyên tắc phổi hoặc các tình trạng gây suy hô hấp, giảm oxy máu;'
+
+MERGE (o1:disease {id: 'các_bệnh_lý_nhiễm_trùng_disease'})
+MERGE (o2:disease {id: 'nhịp_tim_nhanh_disease'})
+MERGE (o1)-[r98:causedBy]->(o2)
+SET r98.text = 'Các bệnh lý nhiễm trùng;'
+
+MERGE (o1:disease {id: 'cường_giáp_disease'})
+MERGE (o2:disease {id: 'nhịp_tim_nhanh_disease'})
+MERGE (o1)-[r99:causedBy]->(o2)
+SET r99.text = 'Cường giáp;'
+
+MERGE (o1:disease {id: 'thiếu_máu_cấp_tính_disease'})
+MERGE (o2:disease {id: 'nhịp_tim_nhanh_disease'})
+MERGE (o1)-[r100:causedBy]->(o2)
+SET r100.text = 'Thiếu máu cấp tính hoặc mạn tính;'
+
+MERGE (o1:disease {id: 'thiếu_máu_mạn_tính_disease'})
+MERGE (o2:disease {id: 'nhịp_tim_nhanh_disease'})
+MERGE (o1)-[r101:causedBy]->(o2)
+SET r101.text = 'Thiếu máu cấp tính hoặc mạn tính;'
+
+MERGE (o1:disease {id: 'ngộ_độc_disease'})
+MERGE (o2:disease {id: 'nhịp_tim_nhanh_disease'})
+MERGE (o1)-[r102:causedBy]->(o2)
+SET r102.text = 'Ngộ độc một số thuốc và độc chất;'
+
+MERGE (o1:disease {id: 'hạ_đường_huyết_disease'})
+MERGE (o2:disease {id: 'nhịp_tim_nhanh_disease'})
+MERGE (o1)-[r103:causedBy]->(o2)
+SET r103.text = 'Hạ đường huyết;'
+
+MERGE (o1:disease {id: 'mất_nước_disease'})
+MERGE (o2:disease {id: 'nhịp_tim_nhanh_disease'})
+MERGE (o1)-[r104:causedBy]->(o2)
+SET r104.text = 'mất nước;'
+
+MERGE (o1:disease {id: 'rối_loạn_điện_giải_disease'})
+MERGE (o2:disease {id: 'nhịp_tim_nhanh_disease'})
+MERGE (o1)-[r105:causedBy]->(o2)
+SET r105.text = 'rối loạn điện giải.'
+
+MERGE (o1:lifestyle {id: 'hút_thuốc_lá_lifestyle'})
+MERGE (o2:disease {id: 'nhịp_tim_nhanh_disease'})
+MERGE (o1)-[r106:causedBy]->(o2)
+SET r106.text = 'Hút thuốc lá, sử dụng các sản phẩm từ thuốc lá;'
+
+MERGE (o1:cause {id: 'tiền_sử_gia_đình_bị_nhịp_tim_nhanh_cause'})
+MERGE (o2:disease {id: 'nhịp_tim_nhanh_disease'})
+MERGE (o1)-[r107:causedBy]->(o2)
+SET r107.text = 'Có tiền sử gia đình bị nhịp tim nhanh;'
+
+MERGE (o1:lifestyle {id: 'stress_lifestyle'})
+MERGE (o2:disease {id: 'nhịp_tim_nhanh_disease'})
+MERGE (o1)-[r108:causedBy]->(o2)
+SET r108.text = 'Các stress về thể chất và tâm lý;'
+
+MERGE (o1:disease {id: 'tăng_huyết_áp_disease'})
+MERGE (o2:disease {id: 'nhịp_tim_nhanh_disease'})
+MERGE (o1)-[r109:causedBy]->(o2)
+SET r109.text = 'Tăng huyết áp;'
+
+MERGE (o1:lifestyle {id: 'thừa_cân_lifestyle'})
+MERGE (o2:disease {id: 'nhịp_tim_nhanh_disease'})
+MERGE (o1)-[r110:causedBy]->(o2)
+SET r110.text = 'Thừa cân/Béo phì;'
+
+MERGE (o1:lifestyle {id: 'béo_phì_lifestyle'})
+MERGE (o2:disease {id: 'nhịp_tim_nhanh_disease'})
+MERGE (o1)-[r111:causedBy]->(o2)
+SET r111.text = 'Thừa cân/Béo phì;'
+
+MERGE (o1:food {id: 'caffeine_food'})
+MERGE (o2:disease {id: 'nhịp_tim_nhanh_disease'})
+MERGE (o1)-[r112:causedBy]->(o2)
+SET r112.text = 'Uống nhiều caffeine hoặc rượu;'
+
+MERGE (o1:food {id: 'rượu_food'})
+MERGE (o2:disease {id: 'nhịp_tim_nhanh_disease'})
+MERGE (o1)-[r113:causedBy]->(o2)
+SET r113.text = 'Uống nhiều caffeine hoặc rượu;'
+
+MERGE (o1:disease {id: 'các_bệnh_lý_tim_mạch_disease'})
+MERGE (o2:disease {id: 'nhịp_tim_nhanh_disease'})
+MERGE (o1)-[r114:causedBy]->(o2)
+SET r114.text = 'Mắc các bệnh lý tim mạch.'
+
+MERGE (o1:treatment {id: 'bác_sĩ_treatment'})
+MERGE (o2:disease {id: 'nhịp_tim_nhanh_disease'})
+MERGE (o1)-[r115:diagnosedBy]->(o2)
+SET r115.text = 'Bác sĩ sẽ thăm khám và hỏi bệnh sử về các triệu chứng, thói quen và tiền sử bệnh để đánh giá người bệnh có nguy cơ bị nhịp tim nhanh hay không.'
+
+MERGE (o1:test {id: 'kiểm_tra_cận_lâm_sàng_test'})
+MERGE (o2:disease {id: 'nhịp_tim_nhanh_disease'})
+MERGE (o1)-[r116:diagnosedBy]->(o2)
+SET r116.text = 'Các kiểm tra cận lâm sàng được thực hiện để xác nhận nhịp tim nhanh bất thường và tìm kiếm các bệnh lý có thể gây ra loạn nhịp tim.'
+
+MERGE (o1:test {id: 'các_xét_nghiệm_test'})
+MERGE (o2:disease {id: 'nhịp_tim_nhanh_disease'})
+MERGE (o1)-[r117:diagnosedBy]->(o2)
+SET r117.text = 'Các xét nghiệm để chẩn đoán nhịp tim nhanh bao gồm:'
+
+MERGE (o1:test {id: 'đo_điện_tâm_đồ_test'})
+MERGE (o2:disease {id: 'nhịp_tim_nhanh_disease'})
+MERGE (o1)-[r118:diagnosedBy]->(o2)
+SET r118.text = 'Đo và ghi lại hình ảnh hoạt động điện của tim, cho phép bác sĩ phát hiện ra những bất thường.'
+
+MERGE (o1:test {id: 'theo_dõi_điện_tâm_đồ_test'})
+MERGE (o2:disease {id: 'nhịp_tim_nhanh_disease'})
+MERGE (o1)-[r119:diagnosedBy]->(o2)
+SET r119.text = 'Dùng để theo dõi liên tục điện tâm đồ người bệnh tại nhà, tùy theo đánh giá mà bác sĩ có thể chỉ định đeo trong 24h hoặc nhiều ngày hơn để ghi nhận hoạt động điện tim trong các sinh hoạt hàng ngày và ghi nhận các cơn loạn nhịp xuất hiện trong thời gian theo dõi.'
+
+MERGE (o1:test {id: 'siêu_âm_tim_test'})
+MERGE (o2:disease {id: 'nhịp_tim_nhanh_disease'})
+MERGE (o1)-[r120:diagnosedBy]->(o2)
+SET r120.text = 'Sử dụng sóng siêu âm để tạo ra hình ảnh của tim nhằm đánh giá chức năng tim, van tim và các bất thường cơ tim.'
+
+MERGE (o1:test {id: 'chụp_x-quang_ngực_test'})
+MERGE (o2:disease {id: 'nhịp_tim_nhanh_disease'})
+MERGE (o1)-[r121:diagnosedBy]->(o2)
+SET r121.text = 'Kỹ thuật này nhằm phát hiện các bất thường về tim, phổi và màng phổi.'
+
+MERGE (o1:test {id: 'chụp_cộng_hưởng_từ_tim_test'})
+MERGE (o2:disease {id: 'nhịp_tim_nhanh_disease'})
+MERGE (o1)-[r122:diagnosedBy]->(o2)
+SET r122.text = 'Cung cấp hình ảnh chi tiết về các buồng tim, cơ tim để đánh giá chuyên sâu các bệnh lý cơ tim và tình trạng sẹo hóa cơ tim.'
+
+MERGE (o1:test {id: 'chụp_cắt_lớp_vi_tính_test'})
+MERGE (o2:disease {id: 'nhịp_tim_nhanh_disease'})
+MERGE (o1)-[r123:diagnosedBy]->(o2)
+SET r123.text = 'Cung cấp hình ảnh chi tiết về tim, phổi và mạch máu của vùng được khảo sát. Tùy vào tình trạng bệnh lý mà bác sĩ có thể lựa chọn giữa chụp cắt lớp vi tính và chụp cộng hưởng từ tim, hoặc kết hợp cả hai để phục vụ công tác chẩn đoán và điều trị.'
+
+MERGE (o1:test {id: 'chụp_cộng_hưởng_từ_tim_test'})
+MERGE (o2:disease {id: 'nhịp_tim_nhanh_disease'})
+MERGE (o1)-[r124:diagnosedBy]->(o2)
+SET r124.text = 'Cung cấp hình ảnh chi tiết về tim, phổi và mạch máu của vùng được khảo sát. Tùy vào tình trạng bệnh lý mà bác sĩ có thể lựa chọn giữa chụp cắt lớp vi tính và chụp cộng hưởng từ tim, hoặc kết hợp cả hai để phục vụ công tác chẩn đoán và điều trị.'
+
+MERGE (o1:test {id: 'chụp_mạch_vành_test'})
+MERGE (o2:disease {id: 'nhịp_tim_nhanh_disease'})
+MERGE (o1)-[r125:diagnosedBy]->(o2)
+SET r125.text = 'Đưa dụng cụ đến các mạch máu nuôi tim để kiểm tra và can thiệp các mạch máu bị tắc hoặc hẹp trong tim, bằng cách sử dụng thuốc cản quang và tia X đặc biệt để hiển thị bên trong động mạch vành. Chụp mạch vành có thể được thực hiện để tìm nguyên nhân gây ra nhịp nhanh thất hoặc rung thất.'
+
+MERGE (o1:test {id: 'khảo_sát_điện_sinh_lý_test'})
+MERGE (o2:disease {id: 'nhịp_tim_nhanh_disease'})
+MERGE (o1)-[r126:diagnosedBy]->(o2)
+SET r126.text = 'Đưa các điện cực vào buồng tim để xác nhận chẩn đoán nhịp tim nhanh và xác định vị trí ổ loạn nhịp trong tim. Khảo sát điện sinh lý thường được thực hiện kết hợp với triệt đốt ổ loạn nhịp nếu có chỉ định.'
+
+MERGE (o1:test {id: 'nghiệm_pháp_nghiêng_bàn_test'})
+MERGE (o2:disease {id: 'nhịp_tim_nhanh_disease'})
+MERGE (o1)-[r127:diagnosedBy]->(o2)
+SET r127.text = 'Thường được dùng để đánh giá những bệnh nhân có triệu chứng ngất.'
+
+MERGE (o1:test {id: 'nghiệm_pháp_nghiêng_bàn_test'})
+MERGE (o2:disease {id: 'nhịp_tim_nhanh_disease'})
+MERGE (o1)-[r128:diagnosedBy]->(o2)
+SET r128.text = 'Trong quá trình thực hiện nghiệm pháp, nhịp tim và huyết áp của người bệnh sẽ được theo dõi liên tục.'
+
+MERGE (o1:test {id: 'nghiệm_pháp_nghiêng_bàn_test'})
+MERGE (o2:disease {id: 'nhịp_tim_nhanh_disease'})
+MERGE (o1)-[r129:diagnosedBy]->(o2)
+SET r129.text = 'Dưới sự giám sát cẩn thận của bác sĩ, chiếc bàn được nghiêng đến vị trí tương tự tư thế đứng, và sử dụng một loại thuốc để đánh giá tình trạng ngất cũng như những thay đổi về nhịp tim, huyết áp nếu cơn ngất xảy ra.'
+
+MERGE (o1:test {id: 'nghiệm_pháp_gắng_sức_test'})
+MERGE (o2:disease {id: 'nhịp_tim_nhanh_disease'})
+MERGE (o1)-[r130:diagnosedBy]->(o2)
+SET r130.text = 'Một số loại nhịp tim nhanh có thể được kích hoạt khi gắng sức.'
+
+MERGE (o1:test {id: 'nghiệm_pháp_gắng_sức_test'})
+MERGE (o2:disease {id: 'nhịp_tim_nhanh_disease'})
+MERGE (o1)-[r131:diagnosedBy]->(o2)
+SET r131.text = 'Trong nghiệm pháp gắng sức, bác sĩ sẽ theo dõi điện tâm đồ liên tục khi bệnh nhân gắng sức bằng cách đạp xe đạp hoặc đi bộ trên máy chạy bộ.'
+
+MERGE (o1:test {id: 'nghiệm_pháp_gắng_sức_test'})
+MERGE (o2:disease {id: 'hẹp_mạch_vành_tim_disease'})
+MERGE (o1)-[r132:diagnosedBy]->(o2)
+SET r132.text = 'Nghiệm pháp gắng sức còn được dùng để đánh giá tình trạng hẹp mạch vành tim.'
+
+MERGE (o1:disease {id: 'rung_tâm_thất_disease'})
+MERGE (o2:symptom {id: 'nhịp_tim_nhanh_symptom'})
+MERGE (o1)-[r133:isSymptomOf]->(o2)
+SET r133.text = 'Theo ThS.BS.CKI Vũ Xuân Quang, một số loại nhịp tim nhanh rất nguy hiểm, đặc biệt là rung tâm thất.'
+
+MERGE (o1:disease {id: 'rung_tâm_thất_disease'})
+MERGE (o2:symptom {id: 'tử_vong_symptom'})
+MERGE (o1)-[r134:causedBy]->(o2)
+SET r134.text = 'Theo ThS.BS.CKI Vũ Xuân Quang, một số loại nhịp tim nhanh rất nguy hiểm, đặc biệt là rung tâm thất. Rung thất có thể gây tử vong nếu không được điều trị ngay lập tức.'
+
+MERGE (o1:symptom {id: 'nhịp_tim_nhanh_nhẹ_symptom'})
+MERGE (o2:symptom {id: 'nhịp_tim_nhanh_symptom'})
+MERGE (o1)-[r135:isSymptomOf]->(o2)
+SET r135.text = 'Ngược lại, một số nhịp tim nhanh nhẹ hoặc gây ra các vấn đề nguy hiểm vừa phải.'
+
+MERGE (o1:disease {id: 'nhịp_nhanh_xoang_disease'})
+MERGE (o2:lifestyle {id: 'căng_thẳng_lifestyle'})
+MERGE (o1)-[r136:causedBy]->(o2)
+SET r136.text = 'Nếu người bệnh bị nhịp nhanh xoang do căng thẳng, các triệu chứng sẽ biến mất khi nỗi sợ hãi, lo lắng hoặc kích động chấm dứt.'
+
+MERGE (o1:disease {id: 'nhịp_nhanh_xoang_disease'})
+MERGE (o2:lifestyle {id: 'nỗi_sợ_hãi_lifestyle'})
+MERGE (o1)-[r137:causedBy]->(o2)
+SET r137.text = 'Nếu người bệnh bị nhịp nhanh xoang do căng thẳng, các triệu chứng sẽ biến mất khi nỗi sợ hãi, lo lắng hoặc kích động chấm dứt.'
+
+MERGE (o1:disease {id: 'nhịp_nhanh_xoang_disease'})
+MERGE (o2:lifestyle {id: 'lo_lắng_lifestyle'})
+MERGE (o1)-[r138:causedBy]->(o2)
+SET r138.text = 'Nếu người bệnh bị nhịp nhanh xoang do căng thẳng, các triệu chứng sẽ biến mất khi nỗi sợ hãi, lo lắng hoặc kích động chấm dứt.'
+
+MERGE (o1:disease {id: 'nhịp_nhanh_xoang_disease'})
+MERGE (o2:lifestyle {id: 'kích_động_lifestyle'})
+MERGE (o1)-[r139:causedBy]->(o2)
+SET r139.text = 'Nếu người bệnh bị nhịp nhanh xoang do căng thẳng, các triệu chứng sẽ biến mất khi nỗi sợ hãi, lo lắng hoặc kích động chấm dứt.'
+
+MERGE (o1:symptom {id: 'nhịp_tim_nhanh_symptom'})
+MERGE (o2:treatment {id: 'thuốc_treatment'})
+MERGE (o1)-[r140:treatedBy]->(o2)
+SET r140.text = 'Đối với hầu hết các loại nhịp tim nhanh khác, người bệnh sẽ cần dùng thuốc hoặc can thiệp thủ thuật để ngăn các triệu chứng quay trở lại.'
+
+MERGE (o1:symptom {id: 'nhịp_tim_nhanh_symptom'})
+MERGE (o2:treatment {id: 'can_thiệp_thủ_thuật_treatment'})
+MERGE (o1)-[r141:treatedBy]->(o2)
+SET r141.text = 'Đối với hầu hết các loại nhịp tim nhanh khác, người bệnh sẽ cần dùng thuốc hoặc can thiệp thủ thuật để ngăn các triệu chứng quay trở lại.'
+
+MERGE (o1:treatment {id: 'thuốc_treatment'})
+MERGE (o2:symptom {id: 'nhịp_tim_nhanh_symptom'})
+MERGE (o1)-[r142:treatedBy]->(o2)
+SET r142.text = 'Mặc dù thuốc không thể chữa khỏi chứng nhịp tim nhanh nhưng có thể giúp điều chỉnh nhịp tim nhanh.'
+
+MERGE (o1:treatment {id: 'can_thiệp_triệt_đốt_ổ_loạn_nhịp_treatment'})
+MERGE (o2:disease {id: 'loạn_nhịp_nhanh_disease'})
+MERGE (o1)-[r143:treatedBy]->(o2)
+SET r143.text = 'Bên cạnh đó, can thiệp triệt đốt ổ loạn nhịp là một giải pháp lâu dài cho rất nhiều loại loạn nhịp nhanh.'
+
+MERGE (o1:symptom {id: 'nhịp_tim_nhanh_symptom'})
+MERGE (o2:treatment {id: 'các_phương_pháp_điều_trị_treatment'})
+MERGE (o1)-[r144:treatedBy]->(o2)
+SET r144.text = 'Theo ThS.BS.CKI Vũ Xuân Quang, tùy thuộc vào loại nhịp tim nhanh, bác sĩ sẽ áp dụng các phương pháp điều trị khác nhau.'
+
+MERGE (o1:test {id: 'nghiệm_pháp_vagal_test'})
+MERGE (o2:symptom {id: 'nhịp_tim_nhanh_symptom'})
+MERGE (o1)-[r145:treatedBy]->(o2)
+SET r145.text = 'Thực hiện nghiệm pháp vagal như xoa xoang cảnh dưới sự hướng dẫn của bác sĩ; Tránh stress; Tránh sử dụng rượu bia, caffeine và các chất kích thích khác; Sử dụng thuốc; Sốc điện chuyển nhịp; Triệt đốt ổ loạn nhịp.'
+
+MERGE (o1:treatment {id: 'xoa_xoang_cảnh_treatment'})
+MERGE (o2:symptom {id: 'nhịp_tim_nhanh_symptom'})
+MERGE (o1)-[r146:treatedBy]->(o2)
+SET r146.text = 'Thực hiện nghiệm pháp vagal như xoa xoang cảnh dưới sự hướng dẫn của bác sĩ; Tránh stress; Tránh sử dụng rượu bia, caffeine và các chất kích thích khác; Sử dụng thuốc; Sốc điện chuyển nhịp; Triệt đốt ổ loạn nhịp.'
+
+MERGE (o1:lifestyle {id: 'stress_lifestyle'})
+MERGE (o2:symptom {id: 'nhịp_tim_nhanh_symptom'})
+MERGE (o1)-[r147:aggravatedBy]->(o2)
+SET r147.text = 'Thực hiện nghiệm pháp vagal như xoa xoang cảnh dưới sự hướng dẫn của bác sĩ; Tránh stress; Tránh sử dụng rượu bia, caffeine và các chất kích thích khác; Sử dụng thuốc; Sốc điện chuyển nhịp; Triệt đốt ổ loạn nhịp.'
+
+MERGE (o1:food {id: 'rượu_bia_food'})
+MERGE (o2:symptom {id: 'nhịp_tim_nhanh_symptom'})
+MERGE (o1)-[r148:aggravatedBy]->(o2)
+SET r148.text = 'Thực hiện nghiệm pháp vagal như xoa xoang cảnh dưới sự hướng dẫn của bác sĩ; Tránh stress; Tránh sử dụng rượu bia, caffeine và các chất kích thích khác; Sử dụng thuốc; Sốc điện chuyển nhịp; Triệt đốt ổ loạn nhịp.'
+
+MERGE (o1:food {id: 'caffeine_food'})
+MERGE (o2:symptom {id: 'nhịp_tim_nhanh_symptom'})
+MERGE (o1)-[r149:aggravatedBy]->(o2)
+SET r149.text = 'Thực hiện nghiệm pháp vagal như xoa xoang cảnh dưới sự hướng dẫn của bác sĩ; Tránh stress; Tránh sử dụng rượu bia, caffeine và các chất kích thích khác; Sử dụng thuốc; Sốc điện chuyển nhịp; Triệt đốt ổ loạn nhịp.'
+
+MERGE (o1:food {id: 'các_chất_kích_thích_food'})
+MERGE (o2:symptom {id: 'nhịp_tim_nhanh_symptom'})
+MERGE (o1)-[r150:aggravatedBy]->(o2)
+SET r150.text = 'Thực hiện nghiệm pháp vagal như xoa xoang cảnh dưới sự hướng dẫn của bác sĩ; Tránh stress; Tránh sử dụng rượu bia, caffeine và các chất kích thích khác; Sử dụng thuốc; Sốc điện chuyển nhịp; Triệt đốt ổ loạn nhịp.'
+
+MERGE (o1:treatment {id: 'thuốc_treatment'})
+MERGE (o2:symptom {id: 'nhịp_tim_nhanh_symptom'})
+MERGE (o1)-[r151:treatedBy]->(o2)
+SET r151.text = 'Thực hiện nghiệm pháp vagal như xoa xoang cảnh dưới sự hướng dẫn của bác sĩ; Tránh stress; Tránh sử dụng rượu bia, caffeine và các chất kích thích khác; Sử dụng thuốc; Sốc điện chuyển nhịp; Triệt đốt ổ loạn nhịp.'
+
+MERGE (o1:treatment {id: 'sốc_điện_chuyển_nhịp_treatment'})
+MERGE (o2:symptom {id: 'nhịp_tim_nhanh_symptom'})
+MERGE (o1)-[r152:treatedBy]->(o2)
+SET r152.text = 'Thực hiện nghiệm pháp vagal như xoa xoang cảnh dưới sự hướng dẫn của bác sĩ; Tránh stress; Tránh sử dụng rượu bia, caffeine và các chất kích thích khác; Sử dụng thuốc; Sốc điện chuyển nhịp; Triệt đốt ổ loạn nhịp.'
+
+MERGE (o1:treatment {id: 'triệt_đốt_ổ_loạn_nhịp_treatment'})
+MERGE (o2:symptom {id: 'nhịp_tim_nhanh_symptom'})
+MERGE (o1)-[r153:treatedBy]->(o2)
+SET r153.text = 'Thực hiện nghiệm pháp vagal như xoa xoang cảnh dưới sự hướng dẫn của bác sĩ; Tránh stress; Tránh sử dụng rượu bia, caffeine và các chất kích thích khác; Sử dụng thuốc; Sốc điện chuyển nhịp; Triệt đốt ổ loạn nhịp.'
+
+MERGE (o1:treatment {id: 'thuốc_treatment'})
+MERGE (o2:symptom {id: 'nhịp_tim_nhanh_symptom'})
+MERGE (o1)-[r154:treatedBy]->(o2)
+SET r154.text = 'Sử dụng thuốc; Sốc điện chuyển nhịp; Triệt đốt ổ loạn nhịp; Cấy máy khử rung tim (ICD).'
+
+MERGE (o1:treatment {id: 'sốc_điện_chuyển_nhịp_treatment'})
+MERGE (o2:symptom {id: 'nhịp_tim_nhanh_symptom'})
+MERGE (o1)-[r155:treatedBy]->(o2)
+SET r155.text = 'Sử dụng thuốc; Sốc điện chuyển nhịp; Triệt đốt ổ loạn nhịp; Cấy máy khử rung tim (ICD).'
+
+MERGE (o1:treatment {id: 'triệt_đốt_ổ_loạn_nhịp_treatment'})
+MERGE (o2:symptom {id: 'nhịp_tim_nhanh_symptom'})
+MERGE (o1)-[r156:treatedBy]->(o2)
+SET r156.text = 'Sử dụng thuốc; Sốc điện chuyển nhịp; Triệt đốt ổ loạn nhịp; Cấy máy khử rung tim (ICD).'
+
+MERGE (o1:treatment {id: 'cấy_máy_khử_rung_tim_(icd)_treatment'})
+MERGE (o2:symptom {id: 'nhịp_tim_nhanh_symptom'})
+MERGE (o1)-[r157:treatedBy]->(o2)
+SET r157.text = 'Sử dụng thuốc; Sốc điện chuyển nhịp; Triệt đốt ổ loạn nhịp; Cấy máy khử rung tim (ICD).'
+
+MERGE (o1:treatment {id: 'triệt_đốt_loạn_nhịp_tim_treatment'})
+MERGE (o2:symptom {id: 'nhịp_tim_nhanh_symptom'})
+MERGE (o1)-[r158:treatedBy]->(o2)
+SET r158.text = 'Các bác sĩ Trung tâm Tim mạch, BVĐK Tâm Anh can thiệp triệt đốt loạn nhịp tim cho bệnh nhân.'
+
+MERGE (o1:symptom {id: 'nhịp_tim_nhanh_symptom'})
+MERGE (o2:organ {id: 'trái_tim_khỏe_mạnh_organ'})
+MERGE (o1)-[r159:preventedBy]->(o2)
+SET r159.text = 'Cách tốt nhất để ngăn ngừa nhịp tim nhanh là duy trì một trái tim khỏe mạnh và ngăn ngừa bệnh tim.'
+
+MERGE (o1:symptom {id: 'nhịp_tim_nhanh_symptom'})
+MERGE (o2:disease {id: 'bệnh_tim_disease'})
+MERGE (o1)-[r160:preventedBy]->(o2)
+SET r160.text = 'Cách tốt nhất để ngăn ngừa nhịp tim nhanh là duy trì một trái tim khỏe mạnh và ngăn ngừa bệnh tim.'
+
+MERGE (o1:disease {id: 'bệnh_tim_disease'})
+MERGE (o2:treatment {id: 'phác_đồ_điều_trị_treatment'})
+MERGE (o1)-[r161:treatedBy]->(o2)
+SET r161.text = 'Trường hợp đã mắc bệnh tim, người bệnh tích cực theo dõi và tuân theo phác đồ điều trị của bác sĩ.'
+
+MERGE (o1:symptom {id: 'nhịp_tim_nhanh_symptom'})
+MERGE (o2:lifestyle {id: 'thay_đổi_lối_sống_lifestyle'})
+MERGE (o1)-[r162:preventedBy]->(o2)
+SET r162.text = 'Ngoài ra, thay đổi lối sống để giảm nguy cơ mắc bệnh tim giúp ngăn ngừa các rối loạn nhịp tim có thể gây nhịp tim nhanh.'
+
+MERGE (o1:lifestyle {id: 'chế_độ_ăn_uống_lành_mạnh_lifestyle'})
+MERGE (o2:symptom {id: 'nhịp_tim_nhanh_symptom'})
+MERGE (o1)-[r163:preventedBy]->(o2)
+SET r163.text = 'Chế độ ăn uống lành mạnh: Chọn chế độ ăn giàu ngũ cốc nguyên hạt, thịt nạc, sữa ít béo, trái cây và rau củ; đồng thời hạn chế muối, đường, rượu, chất béo bão hòa và chất béo chuyển hóa.'
+
+MERGE (o1:food {id: 'ngũ_cốc_nguyên_hạt_food'})
+MERGE (o2:symptom {id: 'nhịp_tim_nhanh_symptom'})
+MERGE (o1)-[r164:preventedBy]->(o2)
+SET r164.text = 'Chế độ ăn uống lành mạnh: Chọn chế độ ăn giàu ngũ cốc nguyên hạt, thịt nạc, sữa ít béo, trái cây và rau củ; đồng thời hạn chế muối, đường, rượu, chất béo bão hòa và chất béo chuyển hóa.'
+
+MERGE (o1:food {id: 'thịt_nạc_food'})
+MERGE (o2:symptom {id: 'nhịp_tim_nhanh_symptom'})
+MERGE (o1)-[r165:preventedBy]->(o2)
+SET r165.text = 'Chế độ ăn uống lành mạnh: Chọn chế độ ăn giàu ngũ cốc nguyên hạt, thịt nạc, sữa ít béo, trái cây và rau củ; đồng thời hạn chế muối, đường, rượu, chất béo bão hòa và chất béo chuyển hóa.'
+
+MERGE (o1:food {id: 'sữa_ít_béo_food'})
+MERGE (o2:symptom {id: 'nhịp_tim_nhanh_symptom'})
+MERGE (o1)-[r166:preventedBy]->(o2)
+SET r166.text = 'Chế độ ăn uống lành mạnh: Chọn chế độ ăn giàu ngũ cốc nguyên hạt, thịt nạc, sữa ít béo, trái cây và rau củ; đồng thời hạn chế muối, đường, rượu, chất béo bão hòa và chất béo chuyển hóa.'
+
+MERGE (o1:food {id: 'trái_cây_food'})
+MERGE (o2:symptom {id: 'nhịp_tim_nhanh_symptom'})
+MERGE (o1)-[r167:preventedBy]->(o2)
+SET r167.text = 'Chế độ ăn uống lành mạnh: Chọn chế độ ăn giàu ngũ cốc nguyên hạt, thịt nạc, sữa ít béo, trái cây và rau củ; đồng thời hạn chế muối, đường, rượu, chất béo bão hòa và chất béo chuyển hóa.'
+
+MERGE (o1:food {id: 'rau_củ_food'})
+MERGE (o2:symptom {id: 'nhịp_tim_nhanh_symptom'})
+MERGE (o1)-[r168:preventedBy]->(o2)
+SET r168.text = 'Chế độ ăn uống lành mạnh: Chọn chế độ ăn giàu ngũ cốc nguyên hạt, thịt nạc, sữa ít béo, trái cây và rau củ; đồng thời hạn chế muối, đường, rượu, chất béo bão hòa và chất béo chuyển hóa.'
+
+MERGE (o1:food {id: 'muối_food'})
+MERGE (o2:symptom {id: 'nhịp_tim_nhanh_symptom'})
+MERGE (o1)-[r169:aggravatedBy]->(o2)
+SET r169.text = 'Chế độ ăn uống lành mạnh: Chọn chế độ ăn giàu ngũ cốc nguyên hạt, thịt nạc, sữa ít béo, trái cây và rau củ; đồng thời hạn chế muối, đường, rượu, chất béo bão hòa và chất béo chuyển hóa.'
+
+MERGE (o1:food {id: 'đường_food'})
+MERGE (o2:symptom {id: 'nhịp_tim_nhanh_symptom'})
+MERGE (o1)-[r170:aggravatedBy]->(o2)
+SET r170.text = 'Chế độ ăn uống lành mạnh: Chọn chế độ ăn giàu ngũ cốc nguyên hạt, thịt nạc, sữa ít béo, trái cây và rau củ; đồng thời hạn chế muối, đường, rượu, chất béo bão hòa và chất béo chuyển hóa.'
+
+MERGE (o1:food {id: 'rượu_food'})
+MERGE (o2:symptom {id: 'nhịp_tim_nhanh_symptom'})
+MERGE (o1)-[r171:aggravatedBy]->(o2)
+SET r171.text = 'Chế độ ăn uống lành mạnh: Chọn chế độ ăn giàu ngũ cốc nguyên hạt, thịt nạc, sữa ít béo, trái cây và rau củ; đồng thời hạn chế muối, đường, rượu, chất béo bão hòa và chất béo chuyển hóa.'
+
+MERGE (o1:food {id: 'chất_béo_bão_hòa_food'})
+MERGE (o2:symptom {id: 'nhịp_tim_nhanh_symptom'})
+MERGE (o1)-[r172:aggravatedBy]->(o2)
+SET r172.text = 'Chế độ ăn uống lành mạnh: Chọn chế độ ăn giàu ngũ cốc nguyên hạt, thịt nạc, sữa ít béo, trái cây và rau củ; đồng thời hạn chế muối, đường, rượu, chất béo bão hòa và chất béo chuyển hóa.'
+
+MERGE (o1:food {id: 'chất_béo_chuyển_hóa_food'})
+MERGE (o2:symptom {id: 'nhịp_tim_nhanh_symptom'})
+MERGE (o1)-[r173:aggravatedBy]->(o2)
+SET r173.text = 'Chế độ ăn uống lành mạnh: Chọn chế độ ăn giàu ngũ cốc nguyên hạt, thịt nạc, sữa ít béo, trái cây và rau củ; đồng thời hạn chế muối, đường, rượu, chất béo bão hòa và chất béo chuyển hóa.'
+
+MERGE (o1:lifestyle {id: 'luyện_tập_thể_dục_đều_đặn_lifestyle'})
+MERGE (o2:symptom {id: 'nhịp_tim_nhanh_symptom'})
+MERGE (o1)-[r174:preventedBy]->(o2)
+SET r174.text = 'Luyện tập thể dục đều đặn: Cố gắng tập thể dục ít nhất 30 phút trong hầu hết các ngày.'
+
+MERGE (o1:lifestyle {id: 'thừa_cân_lifestyle'})
+MERGE (o2:disease {id: 'bệnh_tim_disease'})
+MERGE (o1)-[r175:aggravatedBy]->(o2)
+SET r175.text = 'Duy trì cân nặng vừa phải: Thừa cân làm tăng nguy cơ phát triển bệnh tim.'
+
+MERGE (o1:disease {id: 'bệnh_tim_disease'})
+MERGE (o2:lifestyle {id: 'thừa_cân_lifestyle'})
+MERGE (o1)-[r176:causedBy]->(o2)
+SET r176.text = 'Duy trì cân nặng vừa phải: Thừa cân làm tăng nguy cơ phát triển bệnh tim.'
+
+MERGE (o1:symptom {id: 'huyết_áp_symptom'})
+MERGE (o2:disease {id: 'bệnh_tim_disease'})
+MERGE (o1)-[r177:relatedTo]->(o2)
+SET r177.text = 'Giữ huyết áp và mức cholesterol trong tầm kiểm soát: Thay đổi lối sống và dùng thuốc khi có chỉ định để kiểm soát tăng huyết áp hoặc cholesterol cao.'
+
+MERGE (o1:symptom {id: 'cholesterol_symptom'})
+MERGE (o2:disease {id: 'bệnh_tim_disease'})
+MERGE (o1)-[r178:relatedTo]->(o2)
+SET r178.text = 'Giữ huyết áp và mức cholesterol trong tầm kiểm soát: Thay đổi lối sống và dùng thuốc khi có chỉ định để kiểm soát tăng huyết áp hoặc cholesterol cao.'
+
+MERGE (o1:disease {id: 'tăng_huyết_áp_disease'})
+MERGE (o2:lifestyle {id: 'thay_đổi_lối_sống_lifestyle'})
+MERGE (o1)-[r179:treatedBy]->(o2)
+SET r179.text = 'Giữ huyết áp và mức cholesterol trong tầm kiểm soát: Thay đổi lối sống và dùng thuốc khi có chỉ định để kiểm soát tăng huyết áp hoặc cholesterol cao.'
+
+MERGE (o1:disease {id: 'tăng_huyết_áp_disease'})
+MERGE (o2:treatment {id: 'thuốc_treatment'})
+MERGE (o1)-[r180:treatedBy]->(o2)
+SET r180.text = 'Giữ huyết áp và mức cholesterol trong tầm kiểm soát: Thay đổi lối sống và dùng thuốc khi có chỉ định để kiểm soát tăng huyết áp hoặc cholesterol cao.'
+
+MERGE (o1:disease {id: 'cholesterol_cao_disease'})
+MERGE (o2:lifestyle {id: 'thay_đổi_lối_sống_lifestyle'})
+MERGE (o1)-[r181:treatedBy]->(o2)
+SET r181.text = 'Giữ huyết áp và mức cholesterol trong tầm kiểm soát: Thay đổi lối sống và dùng thuốc khi có chỉ định để kiểm soát tăng huyết áp hoặc cholesterol cao.'
+
+MERGE (o1:disease {id: 'cholesterol_cao_disease'})
+MERGE (o2:treatment {id: 'thuốc_treatment'})
+MERGE (o1)-[r182:treatedBy]->(o2)
+SET r182.text = 'Giữ huyết áp và mức cholesterol trong tầm kiểm soát: Thay đổi lối sống và dùng thuốc khi có chỉ định để kiểm soát tăng huyết áp hoặc cholesterol cao.'
+
+MERGE (o1:lifestyle {id: 'thuốc_lá_lifestyle'})
+MERGE (o2:symptom {id: 'nhịp_tim_nhanh_symptom'})
+MERGE (o1)-[r183:aggravatedBy]->(o2)
+SET r183.text = 'Bỏ thuốc lá'
+
+MERGE (o1:food {id: 'caffeine_food'})
+MERGE (o2:symptom {id: 'nhịp_tim_nhanh_symptom'})
+MERGE (o1)-[r184:aggravatedBy]->(o2)
+SET r184.text = 'Hạn chế caffeine'
+
+MERGE (o1:lifestyle {id: 'căng_thẳng_lifestyle'})
+MERGE (o2:symptom {id: 'nhịp_tim_nhanh_symptom'})
+MERGE (o1)-[r185:aggravatedBy]->(o2)
+SET r185.text = 'Tránh căng thẳng'
+
+MERGE (o1:food {id: 'rượu_food'})
+MERGE (o2:symptom {id: 'nhịp_tim_nhanh_symptom'})
+MERGE (o1)-[r186:aggravatedBy]->(o2)
+SET r186.text = 'Hạn chế uống rượu, bia: Đối với người trưởng thành khỏe mạnh, uống tối đa một ly mỗi ngày đối với phụ nữ và tối đa hai ly mỗi ngày đối với nam giới.'
+
+MERGE (o1:food {id: 'bia_food'})
+MERGE (o2:symptom {id: 'nhịp_tim_nhanh_symptom'})
+MERGE (o1)-[r187:aggravatedBy]->(o2)
+SET r187.text = 'Hạn chế uống rượu, bia: Đối với người trưởng thành khỏe mạnh, uống tối đa một ly mỗi ngày đối với phụ nữ và tối đa hai ly mỗi ngày đối với nam giới.'
+
+MERGE (o1:food {id: 'rượu_food'})
+MERGE (o2:disease {id: 'bệnh_lý_disease'})
+MERGE (o1)-[r188:aggravatedBy]->(o2)
+SET r188.text = 'Một số bệnh lý cần tránh uống rượu hoàn toàn.'
+
+MERGE (o1:test {id: 'kiểm_tra_sức_khỏe_định_kỳ_test'})
+MERGE (o2:symptom {id: 'nhịp_tim_nhanh_symptom'})
+MERGE (o1)-[r189:diagnosedBy]->(o2)
+SET r189.text = 'Kiểm tra sức khỏe định kỳ: Khám sức khỏe định kỳ và trao đổi với bác sĩ nếu có bất kỳ thay đổi nào về nhịp tim.'
+
+MERGE (o1:test {id: 'máy_siêu_âm_tim_và_mạch_máu_4d_test'})
+MERGE (o2:disease {id: 'bệnh_tim_mạch_disease'})
+MERGE (o1)-[r190:diagnosedBy]->(o2)
+SET r190.text = 'Được đầu tư hệ thống máy móc hiện đại như máy siêu âm tim và mạch máu 4D hiện đại, máy chụp cộng hưởng từ 1,5 - 3 Tesla, máy chụp MSCT tim và động mạch vành 768 lát cắt, hệ thống máy DSA chụp mạch vành cánh tay robot xoay 360 độ, hệ thống chụp cắt lớp quang học mạch vành (OCT), hệ thống siêu âm tim gắng sức xe đạp lực kế, hệ thống bàn nghiêng…, Trung tâm Tim mạch BVĐK Tâm Anh chẩn đoán và điều trị hiệu quả bệnh tim mạch (rối loạn nhịp tim, suy tim, tăng huyết áp, bệnh mạch vành, bệnh van tim, thiếu máu cơ tim, tim bẩm sinh…) cho người lớn và trẻ em.'
+
+MERGE (o1:test {id: 'máy_chụp_cộng_hưởng_từ_1_5_-_3_tesla_test'})
+MERGE (o2:disease {id: 'bệnh_tim_mạch_disease'})
+MERGE (o1)-[r191:diagnosedBy]->(o2)
+SET r191.text = 'Được đầu tư hệ thống máy móc hiện đại như máy siêu âm tim và mạch máu 4D hiện đại, máy chụp cộng hưởng từ 1,5 - 3 Tesla, máy chụp MSCT tim và động mạch vành 768 lát cắt, hệ thống máy DSA chụp mạch vành cánh tay robot xoay 360 độ, hệ thống chụp cắt lớp quang học mạch vành (OCT), hệ thống siêu âm tim gắng sức xe đạp lực kế, hệ thống bàn nghiêng…, Trung tâm Tim mạch BVĐK Tâm Anh chẩn đoán và điều trị hiệu quả bệnh tim mạch (rối loạn nhịp tim, suy tim, tăng huyết áp, bệnh mạch vành, bệnh van tim, thiếu máu cơ tim, tim bẩm sinh…) cho người lớn và trẻ em.'
+
+MERGE (o1:test {id: 'máy_chụp_msct_tim_và_động_mạch_vành_768_lát_cắt_test'})
+MERGE (o2:disease {id: 'bệnh_tim_mạch_disease'})
+MERGE (o1)-[r192:diagnosedBy]->(o2)
+SET r192.text = 'Được đầu tư hệ thống máy móc hiện đại như máy siêu âm tim và mạch máu 4D hiện đại, máy chụp cộng hưởng từ 1,5 - 3 Tesla, máy chụp MSCT tim và động mạch vành 768 lát cắt, hệ thống máy DSA chụp mạch vành cánh tay robot xoay 360 độ, hệ thống chụp cắt lớp quang học mạch vành (OCT), hệ thống siêu âm tim gắng sức xe đạp lực kế, hệ thống bàn nghiêng…, Trung tâm Tim mạch BVĐK Tâm Anh chẩn đoán và điều trị hiệu quả bệnh tim mạch (rối loạn nhịp tim, suy tim, tăng huyết áp, bệnh mạch vành, bệnh van tim, thiếu máu cơ tim, tim bẩm sinh…) cho người lớn và trẻ em.'
+
+MERGE (o1:test {id: 'hệ_thống_máy_dsa_chụp_mạch_vành_cánh_tay_robot_xoay_360_độ_test'})
+MERGE (o2:disease {id: 'bệnh_tim_mạch_disease'})
+MERGE (o1)-[r193:diagnosedBy]->(o2)
+SET r193.text = 'Được đầu tư hệ thống máy móc hiện đại như máy siêu âm tim và mạch máu 4D hiện đại, máy chụp cộng hưởng từ 1,5 - 3 Tesla, máy chụp MSCT tim và động mạch vành 768 lát cắt, hệ thống máy DSA chụp mạch vành cánh tay robot xoay 360 độ, hệ thống chụp cắt lớp quang học mạch vành (OCT), hệ thống siêu âm tim gắng sức xe đạp lực kế, hệ thống bàn nghiêng…, Trung tâm Tim mạch BVĐK Tâm Anh chẩn đoán và điều trị hiệu quả bệnh tim mạch (rối loạn nhịp tim, suy tim, tăng huyết áp, bệnh mạch vành, bệnh van tim, thiếu máu cơ tim, tim bẩm sinh…) cho người lớn và trẻ em.'
+
+MERGE (o1:test {id: 'hệ_thống_chụp_cắt_lớp_quang_học_mạch_vành_(oct)_test'})
+MERGE (o2:disease {id: 'bệnh_tim_mạch_disease'})
+MERGE (o1)-[r194:diagnosedBy]->(o2)
+SET r194.text = 'Được đầu tư hệ thống máy móc hiện đại như máy siêu âm tim và mạch máu 4D hiện đại, máy chụp cộng hưởng từ 1,5 - 3 Tesla, máy chụp MSCT tim và động mạch vành 768 lát cắt, hệ thống máy DSA chụp mạch vành cánh tay robot xoay 360 độ, hệ thống chụp cắt lớp quang học mạch vành (OCT), hệ thống siêu âm tim gắng sức xe đạp lực kế, hệ thống bàn nghiêng…, Trung tâm Tim mạch BVĐK Tâm Anh chẩn đoán và điều trị hiệu quả bệnh tim mạch (rối loạn nhịp tim, suy tim, tăng huyết áp, bệnh mạch vành, bệnh van tim, thiếu máu cơ tim, tim bẩm sinh…) cho người lớn và trẻ em.'
+
+MERGE (o1:test {id: 'hệ_thống_siêu_âm_tim_gắng_sức_xe_đạp_lực_kế_test'})
+MERGE (o2:disease {id: 'bệnh_tim_mạch_disease'})
+MERGE (o1)-[r195:diagnosedBy]->(o2)
+SET r195.text = 'Được đầu tư hệ thống máy móc hiện đại như máy siêu âm tim và mạch máu 4D hiện đại, máy chụp cộng hưởng từ 1,5 - 3 Tesla, máy chụp MSCT tim và động mạch vành 768 lát cắt, hệ thống máy DSA chụp mạch vành cánh tay robot xoay 360 độ, hệ thống chụp cắt lớp quang học mạch vành (OCT), hệ thống siêu âm tim gắng sức xe đạp lực kế, hệ thống bàn nghiêng…, Trung tâm Tim mạch BVĐK Tâm Anh chẩn đoán và điều trị hiệu quả bệnh tim mạch (rối loạn nhịp tim, suy tim, tăng huyết áp, bệnh mạch vành, bệnh van tim, thiếu máu cơ tim, tim bẩm sinh…) cho người lớn và trẻ em.'
+
+MERGE (o1:test {id: 'hệ_thống_bàn_nghiêng_test'})
+MERGE (o2:disease {id: 'bệnh_tim_mạch_disease'})
+MERGE (o1)-[r196:diagnosedBy]->(o2)
+SET r196.text = 'Được đầu tư hệ thống máy móc hiện đại như máy siêu âm tim và mạch máu 4D hiện đại, máy chụp cộng hưởng từ 1,5 - 3 Tesla, máy chụp MSCT tim và động mạch vành 768 lát cắt, hệ thống máy DSA chụp mạch vành cánh tay robot xoay 360 độ, hệ thống chụp cắt lớp quang học mạch vành (OCT), hệ thống siêu âm tim gắng sức xe đạp lực kế, hệ thống bàn nghiêng…, Trung tâm Tim mạch BVĐK Tâm Anh chẩn đoán và điều trị hiệu quả bệnh tim mạch (rối loạn nhịp tim, suy tim, tăng huyết áp, bệnh mạch vành, bệnh van tim, thiếu máu cơ tim, tim bẩm sinh…) cho người lớn và trẻ em.'
+
+MERGE (o1:organ {id: 'trung_tâm_tim_mạch_bvđk_tâm_anh_organ'})
+MERGE (o2:organ {id: 'bvđk_tâm_anh_organ'})
+MERGE (o1)-[r197:locatedIn]->(o2)
+SET r197.text = 'Được đầu tư hệ thống máy móc hiện đại như máy siêu âm tim và mạch máu 4D hiện đại, máy chụp cộng hưởng từ 1,5 - 3 Tesla, máy chụp MSCT tim và động mạch vành 768 lát cắt, hệ thống máy DSA chụp mạch vành cánh tay robot xoay 360 độ, hệ thống chụp cắt lớp quang học mạch vành (OCT), hệ thống siêu âm tim gắng sức xe đạp lực kế, hệ thống bàn nghiêng…, Trung tâm Tim mạch BVĐK Tâm Anh chẩn đoán và điều trị hiệu quả bệnh tim mạch (rối loạn nhịp tim, suy tim, tăng huyết áp, bệnh mạch vành, bệnh van tim, thiếu máu cơ tim, tim bẩm sinh…) cho người lớn và trẻ em.'
+
+MERGE (o1:organ {id: 'trung_tâm_tim_mạch_bvđk_tâm_anh_organ'})
+MERGE (o2:disease {id: 'bệnh_tim_mạch_disease'})
+MERGE (o1)-[r198:treatedBy]->(o2)
+SET r198.text = 'Được đầu tư hệ thống máy móc hiện đại như máy siêu âm tim và mạch máu 4D hiện đại, máy chụp cộng hưởng từ 1,5 - 3 Tesla, máy chụp MSCT tim và động mạch vành 768 lát cắt, hệ thống máy DSA chụp mạch vành cánh tay robot xoay 360 độ, hệ thống chụp cắt lớp quang học mạch vành (OCT), hệ thống siêu âm tim gắng sức xe đạp lực kế, hệ thống bàn nghiêng…, Trung tâm Tim mạch BVĐK Tâm Anh chẩn đoán và điều trị hiệu quả bệnh tim mạch (rối loạn nhịp tim, suy tim, tăng huyết áp, bệnh mạch vành, bệnh van tim, thiếu máu cơ tim, tim bẩm sinh…) cho người lớn và trẻ em.'

@@ -1,0 +1,995 @@
+
+MERGE (o1:disease {id: 'viêm_đại_tràng_disease'})
+MERGE (o2:lifestyle {id: 'dân_số_việt_nam_lifestyle'})
+MERGE (o1)-[r0:affects]->(o2)
+SET r0.text = 'Khoảng 20% dân số Việt Nam mắc bệnh viêm đại tràng, trong số đó có 4 triệu người mắc viêm đại tràng mãn tính.'
+
+MERGE (o1:disease {id: 'viêm_đại_tràng_mãn_tính_disease'})
+MERGE (o2:disease {id: 'viêm_đại_tràng_disease'})
+MERGE (o1)-[r1:isSymptomOf]->(o2)
+SET r1.text = 'Khoảng 20% dân số Việt Nam mắc bệnh viêm đại tràng, trong số đó có 4 triệu người mắc viêm đại tràng mãn tính.'
+
+MERGE (o1:disease {id: 'viêm_đại_tràng_disease'})
+MERGE (o2:lifestyle {id: 'nhận_thức_hạn_chế_lifestyle'})
+MERGE (o1)-[r2:associatedWith]->(o2)
+SET r2.text = 'Đây là con số đáng lo ngại trong khi nhận thức về bệnh viêm đại tràng của người dân nước ta vẫn còn hạn chế - BS.CKI Huỳnh Văn Trung cho biết.'
+
+MERGE (o1:disease {id: 'viêm_đại_tràng_disease'})
+MERGE (o2:treatment {id: 'phòng_ngừa_treatment'})
+MERGE (o1)-[r3:preventedBy]->(o2)
+SET r3.text = 'Mặc dù đây là một bệnh phổ biến nhưng việc phòng ngừa và điều trị vẫn chưa được thực hiện đúng cách.'
+
+MERGE (o1:disease {id: 'viêm_đại_tràng_disease'})
+MERGE (o2:treatment {id: 'điều_trị_treatment'})
+MERGE (o1)-[r4:treatedBy]->(o2)
+SET r4.text = 'Mặc dù đây là một bệnh phổ biến nhưng việc phòng ngừa và điều trị vẫn chưa được thực hiện đúng cách.'
+
+MERGE (o1:disease {id: 'viêm_đại_tràng_disease'})
+MERGE (o2:treatment {id: 'thuốc_dân_gian_treatment'})
+MERGE (o1)-[r5:treatedBy]->(o2)
+SET r5.text = 'Rất nhiều bệnh nhân viêm đại tràng hiện nay không đến bệnh viện thăm khám, điều trị mà chọn chữa bệnh bằng các loại thuốc dân gian không rõ nguồn gốc, chưa được chứng minh tính hiệu quả.'
+
+MERGE (o1:disease {id: 'viêm_đại_tràng_disease'})
+MERGE (o2:treatment {id: 'thăm_khám_treatment'})
+MERGE (o1)-[r6:treatedBy]->(o2)
+SET r6.text = 'Rất nhiều bệnh nhân viêm đại tràng hiện nay không đến bệnh viện thăm khám, điều trị mà chọn chữa bệnh bằng các loại thuốc dân gian không rõ nguồn gốc, chưa được chứng minh tính hiệu quả.'
+
+MERGE (o1:disease {id: 'viêm_đại_tràng_disease'})
+MERGE (o2:treatment {id: 'điều_trị_treatment'})
+MERGE (o1)-[r7:treatedBy]->(o2)
+SET r7.text = 'Rất nhiều bệnh nhân viêm đại tràng hiện nay không đến bệnh viện thăm khám, điều trị mà chọn chữa bệnh bằng các loại thuốc dân gian không rõ nguồn gốc, chưa được chứng minh tính hiệu quả.'
+
+MERGE (o1:disease {id: 'viêm_đại_tràng_disease'})
+MERGE (o2:symptom {id: 'biến_chứng_symptom'})
+MERGE (o1)-[r8:causedBy]->(o2)
+SET r8.text = 'Hậu quả là bệnh không được chữa khỏi mà ngày càng trở nên nghiêm trọng, khiến người bệnh phải gánh chịu nhiều biến chứng nặng nề, Bác sĩ Trung chia sẻ.'
+
+MERGE (o1:disease {id: 'viêm_đại_tràng_disease'})
+MERGE (o2:lifestyle {id: 'việt_nam_lifestyle'})
+MERGE (o1)-[r9:affects]->(o2)
+SET r9.text = 'Viêm đại tràng rất phổ biến ở Việt Nam với khoảng 4 triệu người mắc phải căn bệnh này'
+
+MERGE (o1:disease {id: 'viêm_đại_tràng_disease'})
+MERGE (o2:organ {id: 'niêm_mạc_đại_tràng_organ'})
+MERGE (o1)-[r10:affects]->(o2)
+SET r10.text = 'Viêm đại tràng là tình trạng viêm niêm mạc đại tràng.'
+
+MERGE (o1:disease {id: 'viêm_đại_tràng_disease'})
+MERGE (o2:cause {id: 'nhiễm_trùng_cause'})
+MERGE (o1)-[r11:causedBy]->(o2)
+SET r11.text = 'Viêm đại tràng có thể do nhiễm trùng, bệnh viêm đường ruột (IBD), thiếu máu, phản ứng dị ứng hoặc viêm đại tràng vi thể.'
+
+MERGE (o1:disease {id: 'viêm_đại_tràng_disease'})
+MERGE (o2:disease {id: 'bệnh_viêm_đường_ruột_(ibd)_disease'})
+MERGE (o1)-[r12:causedBy]->(o2)
+SET r12.text = 'Viêm đại tràng có thể do nhiễm trùng, bệnh viêm đường ruột (IBD), thiếu máu, phản ứng dị ứng hoặc viêm đại tràng vi thể.'
+
+MERGE (o1:disease {id: 'viêm_đại_tràng_disease'})
+MERGE (o2:cause {id: 'thiếu_máu_cause'})
+MERGE (o1)-[r13:causedBy]->(o2)
+SET r13.text = 'Viêm đại tràng có thể do nhiễm trùng, bệnh viêm đường ruột (IBD), thiếu máu, phản ứng dị ứng hoặc viêm đại tràng vi thể.'
+
+MERGE (o1:disease {id: 'viêm_đại_tràng_disease'})
+MERGE (o2:cause {id: 'phản_ứng_dị_ứng_cause'})
+MERGE (o1)-[r14:causedBy]->(o2)
+SET r14.text = 'Viêm đại tràng có thể do nhiễm trùng, bệnh viêm đường ruột (IBD), thiếu máu, phản ứng dị ứng hoặc viêm đại tràng vi thể.'
+
+MERGE (o1:disease {id: 'viêm_đại_tràng_disease'})
+MERGE (o2:disease {id: 'viêm_đại_tràng_vi_thể_disease'})
+MERGE (o1)-[r15:causedBy]->(o2)
+SET r15.text = 'Viêm đại tràng có thể do nhiễm trùng, bệnh viêm đường ruột (IBD), thiếu máu, phản ứng dị ứng hoặc viêm đại tràng vi thể.'
+
+MERGE (o1:disease {id: 'viêm_đại_tràng_mạn_tính_disease'})
+MERGE (o2:treatment {id: 'điều_trị_treatment'})
+MERGE (o1)-[r16:treatedBy]->(o2)
+SET r16.text = 'Viêm đại tràng mạn tính thường là tình trạng kéo dài suốt đời và hiện nay vẫn chưa có cách chữa trị dứt điểm mà chỉ có các lựa chọn điều trị để giúp kiểm soát tình trạng bệnh.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_ruột_-_inflammatory_bowel_disease_(ibd)_disease'})
+MERGE (o2:organ {id: 'đường_tiêu_hóa_organ'})
+MERGE (o1)-[r17:affects]->(o2)
+SET r17.text = 'Bệnh viêm ruột - Inflammatory bowel disease (IBD): Là bệnh viêm mạn tính hoặc tái phát của đường tiêu hóa gồm viêm loét đại trực tràng (ulcerative colitis- UC) và bệnh Crohn.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_ruột_-_inflammatory_bowel_disease_(ibd)_disease'})
+MERGE (o2:disease {id: 'viêm_loét_đại_trực_tràng_(ulcerative_colitis-_uc)_disease'})
+MERGE (o1)-[r18:isSymptomOf]->(o2)
+SET r18.text = 'Bệnh viêm ruột - Inflammatory bowel disease (IBD): Là bệnh viêm mạn tính hoặc tái phát của đường tiêu hóa gồm viêm loét đại trực tràng (ulcerative colitis- UC) và bệnh Crohn.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_ruột_-_inflammatory_bowel_disease_(ibd)_disease'})
+MERGE (o2:disease {id: 'bệnh_crohn_disease'})
+MERGE (o1)-[r19:isSymptomOf]->(o2)
+SET r19.text = 'Bệnh viêm ruột - Inflammatory bowel disease (IBD): Là bệnh viêm mạn tính hoặc tái phát của đường tiêu hóa gồm viêm loét đại trực tràng (ulcerative colitis- UC) và bệnh Crohn.'
+
+MERGE (o1:disease {id: 'viêm_loét_đại_trực_tràng_(ulcerative_colitis-_uc)_disease'})
+MERGE (o2:organ {id: 'trực_tràng_organ'})
+MERGE (o1)-[r20:affects]->(o2)
+SET r20.text = 'Viêm loét đại trực tràng (ulcerative colitis- UC) là tình trạng viêm lan tỏa, không đặc hiệu, tổn thương không rõ nguồn gốc liên tiếp trực tràng đến đại tràng, gây viêm trợt và loét niêm mạc.'
+
+MERGE (o1:disease {id: 'viêm_loét_đại_trực_tràng_(ulcerative_colitis-_uc)_disease'})
+MERGE (o2:organ {id: 'đại_tràng_organ'})
+MERGE (o1)-[r21:affects]->(o2)
+SET r21.text = 'Viêm loét đại trực tràng (ulcerative colitis- UC) là tình trạng viêm lan tỏa, không đặc hiệu, tổn thương không rõ nguồn gốc liên tiếp trực tràng đến đại tràng, gây viêm trợt và loét niêm mạc.'
+
+MERGE (o1:disease {id: 'viêm_loét_đại_trực_tràng_(ulcerative_colitis-_uc)_disease'})
+MERGE (o2:symptom {id: 'viêm_trợt_symptom'})
+MERGE (o1)-[r22:causedBy]->(o2)
+SET r22.text = 'Viêm loét đại trực tràng (ulcerative colitis- UC) là tình trạng viêm lan tỏa, không đặc hiệu, tổn thương không rõ nguồn gốc liên tiếp trực tràng đến đại tràng, gây viêm trợt và loét niêm mạc.'
+
+MERGE (o1:disease {id: 'viêm_loét_đại_trực_tràng_(ulcerative_colitis-_uc)_disease'})
+MERGE (o2:symptom {id: 'loét_niêm_mạc_symptom'})
+MERGE (o1)-[r23:causedBy]->(o2)
+SET r23.text = 'Viêm loét đại trực tràng (ulcerative colitis- UC) là tình trạng viêm lan tỏa, không đặc hiệu, tổn thương không rõ nguồn gốc liên tiếp trực tràng đến đại tràng, gây viêm trợt và loét niêm mạc.'
+
+MERGE (o1:disease {id: 'bệnh_crohn_disease'})
+MERGE (o2:organ {id: 'đường_tiêu_hóa_organ'})
+MERGE (o1)-[r24:affects]->(o2)
+SET r24.text = 'Bệnh Crohn: là bệnh viêm mạn tính không rõ nguyên nhân, đặc trưng bởi tình trạng viêm hoặc dò tất cả các lớp của đường tiêu hóa và tổn thương phân bố không liên tục.'
+
+MERGE (o1:disease {id: 'viêm_đại_tràng_giả_mạc_(pc)_disease'})
+MERGE (o2:cause {id: 'vi_khuẩn_clostridium_difficile_cause'})
+MERGE (o1)-[r25:causedBy]->(o2)
+SET r25.text = 'Viêm đại tràng giả mạc (PC): Viêm đại tràng giả mạc (PC) xảy ra do sự phát triển quá mức của vi khuẩn Clostridium difficile.'
+
+MERGE (o1:cause {id: 'vi_khuẩn_clostridium_difficile_cause'})
+MERGE (o2:organ {id: 'ruột_organ'})
+MERGE (o1)-[r26:locatedIn]->(o2)
+SET r26.text = 'Loại vi khuẩn này thường sống trong ruột nhưng không gây ra vấn đề gì vì nó được cân bằng nhờ sự hiện diện của vi khuẩn có lợi.'
+
+MERGE (o1:treatment {id: 'thuốc_kháng_sinh_treatment'})
+MERGE (o2:cause {id: 'vi_khuẩn_có_lợi_cause'})
+MERGE (o1)-[r27:affects]->(o2)
+SET r27.text = 'Một số loại thuốc, đặc biệt là thuốc kháng sinh có thể tiêu diệt vi khuẩn có lợi gây loạn khuẩn đường ruột dẫn đến sự tăng sinh quá mức C.difficile gây viêm đại tràng giả mạc.'
+
+MERGE (o1:treatment {id: 'thuốc_kháng_sinh_treatment'})
+MERGE (o2:disease {id: 'viêm_đại_tràng_giả_mạc_disease'})
+MERGE (o1)-[r28:causedBy]->(o2)
+SET r28.text = 'Một số loại thuốc, đặc biệt là thuốc kháng sinh có thể tiêu diệt vi khuẩn có lợi gây loạn khuẩn đường ruột dẫn đến sự tăng sinh quá mức C.difficile gây viêm đại tràng giả mạc.'
+
+MERGE (o1:disease {id: 'viêm_đại_tràng_do_thiếu_máu_cục_bộ_(ic)_disease'})
+MERGE (o2:cause {id: 'lưu_lượng_máu_cause'})
+MERGE (o1)-[r29:affects]->(o2)
+SET r29.text = 'Viêm đại tràng do thiếu máu cục bộ (IC): Viêm đại tràng do thiếu máu cục bộ (IC) xảy ra khi lưu lượng máu đến đại tràng đột ngột bị cắt đứt hoặc hạn chế.'
+
+MERGE (o1:disease {id: 'viêm_đại_tràng_do_thiếu_máu_cục_bộ_(ic)_disease'})
+MERGE (o2:organ {id: 'đại_tràng_organ'})
+MERGE (o1)-[r30:affects]->(o2)
+SET r30.text = 'Viêm đại tràng do thiếu máu cục bộ (IC): Viêm đại tràng do thiếu máu cục bộ (IC) xảy ra khi lưu lượng máu đến đại tràng đột ngột bị cắt đứt hoặc hạn chế.'
+
+MERGE (o1:cause {id: 'cục_máu_đông_cause'})
+MERGE (o2:symptom {id: 'tắc_nghẽn_đột_ngột_symptom'})
+MERGE (o1)-[r31:causedBy]->(o2)
+SET r31.text = 'Cục máu đông là một trong số các lý do gây tắc nghẽn đột ngột thường gặp.'
+
+MERGE (o1:disease {id: 'viêm_mạch_disease'})
+MERGE (o2:disease {id: 'viêm_đại_tràng_do_thiếu_máu_disease'})
+MERGE (o1)-[r32:causedBy]->(o2)
+SET r32.text = 'Các bệnh lý và yếu tố làm tăng nguy cơ viêm đại tràng do thiếu máu như: Viêm mạch; bệnh đái tháo đường; ung thư ruột kết; mất nước; mất máu; suy tim; chấn thương; tác dụng phụ của thuốc, phẫu thuật vùng bụng hoặc động mạch lớn như động mạch chủ.'
+
+MERGE (o1:disease {id: 'bệnh_đái_tháo_đường_disease'})
+MERGE (o2:disease {id: 'viêm_đại_tràng_do_thiếu_máu_disease'})
+MERGE (o1)-[r33:causedBy]->(o2)
+SET r33.text = 'Các bệnh lý và yếu tố làm tăng nguy cơ viêm đại tràng do thiếu máu như: Viêm mạch; bệnh đái tháo đường; ung thư ruột kết; mất nước; mất máu; suy tim; chấn thương; tác dụng phụ của thuốc, phẫu thuật vùng bụng hoặc động mạch lớn như động mạch chủ.'
+
+MERGE (o1:disease {id: 'ung_thư_ruột_kết_disease'})
+MERGE (o2:disease {id: 'viêm_đại_tràng_do_thiếu_máu_disease'})
+MERGE (o1)-[r34:causedBy]->(o2)
+SET r34.text = 'Các bệnh lý và yếu tố làm tăng nguy cơ viêm đại tràng do thiếu máu như: Viêm mạch; bệnh đái tháo đường; ung thư ruột kết; mất nước; mất máu; suy tim; chấn thương; tác dụng phụ của thuốc, phẫu thuật vùng bụng hoặc động mạch lớn như động mạch chủ.'
+
+MERGE (o1:cause {id: 'mất_nước_cause'})
+MERGE (o2:disease {id: 'viêm_đại_tràng_do_thiếu_máu_disease'})
+MERGE (o1)-[r35:causedBy]->(o2)
+SET r35.text = 'Các bệnh lý và yếu tố làm tăng nguy cơ viêm đại tràng do thiếu máu như: Viêm mạch; bệnh đái tháo đường; ung thư ruột kết; mất nước; mất máu; suy tim; chấn thương; tác dụng phụ của thuốc, phẫu thuật vùng bụng hoặc động mạch lớn như động mạch chủ.'
+
+MERGE (o1:cause {id: 'mất_máu_cause'})
+MERGE (o2:disease {id: 'viêm_đại_tràng_do_thiếu_máu_disease'})
+MERGE (o1)-[r36:causedBy]->(o2)
+SET r36.text = 'Các bệnh lý và yếu tố làm tăng nguy cơ viêm đại tràng do thiếu máu như: Viêm mạch; bệnh đái tháo đường; ung thư ruột kết; mất nước; mất máu; suy tim; chấn thương; tác dụng phụ của thuốc, phẫu thuật vùng bụng hoặc động mạch lớn như động mạch chủ.'
+
+MERGE (o1:disease {id: 'suy_tim_disease'})
+MERGE (o2:disease {id: 'viêm_đại_tràng_do_thiếu_máu_disease'})
+MERGE (o1)-[r37:causedBy]->(o2)
+SET r37.text = 'Các bệnh lý và yếu tố làm tăng nguy cơ viêm đại tràng do thiếu máu như: Viêm mạch; bệnh đái tháo đường; ung thư ruột kết; mất nước; mất máu; suy tim; chấn thương; tác dụng phụ của thuốc, phẫu thuật vùng bụng hoặc động mạch lớn như động mạch chủ.'
+
+MERGE (o1:cause {id: 'chấn_thương_cause'})
+MERGE (o2:disease {id: 'viêm_đại_tràng_do_thiếu_máu_disease'})
+MERGE (o1)-[r38:causedBy]->(o2)
+SET r38.text = 'Các bệnh lý và yếu tố làm tăng nguy cơ viêm đại tràng do thiếu máu như: Viêm mạch; bệnh đái tháo đường; ung thư ruột kết; mất nước; mất máu; suy tim; chấn thương; tác dụng phụ của thuốc, phẫu thuật vùng bụng hoặc động mạch lớn như động mạch chủ.'
+
+MERGE (o1:cause {id: 'tác_dụng_phụ_của_thuốc_cause'})
+MERGE (o2:disease {id: 'viêm_đại_tràng_do_thiếu_máu_disease'})
+MERGE (o1)-[r39:causedBy]->(o2)
+SET r39.text = 'Các bệnh lý và yếu tố làm tăng nguy cơ viêm đại tràng do thiếu máu như: Viêm mạch; bệnh đái tháo đường; ung thư ruột kết; mất nước; mất máu; suy tim; chấn thương; tác dụng phụ của thuốc, phẫu thuật vùng bụng hoặc động mạch lớn như động mạch chủ.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_vùng_bụng_treatment'})
+MERGE (o2:disease {id: 'viêm_đại_tràng_do_thiếu_máu_disease'})
+MERGE (o1)-[r40:causedBy]->(o2)
+SET r40.text = 'Các bệnh lý và yếu tố làm tăng nguy cơ viêm đại tràng do thiếu máu như: Viêm mạch; bệnh đái tháo đường; ung thư ruột kết; mất nước; mất máu; suy tim; chấn thương; tác dụng phụ của thuốc, phẫu thuật vùng bụng hoặc động mạch lớn như động mạch chủ.'
+
+MERGE (o1:organ {id: 'động_mạch_chủ_organ'})
+MERGE (o2:disease {id: 'viêm_đại_tràng_do_thiếu_máu_disease'})
+MERGE (o1)-[r41:causedBy]->(o2)
+SET r41.text = 'Các bệnh lý và yếu tố làm tăng nguy cơ viêm đại tràng do thiếu máu như: Viêm mạch; bệnh đái tháo đường; ung thư ruột kết; mất nước; mất máu; suy tim; chấn thương; tác dụng phụ của thuốc, phẫu thuật vùng bụng hoặc động mạch lớn như động mạch chủ.'
+
+MERGE (o1:disease {id: 'viêm_đại_tràng_vi_thể_disease'})
+MERGE (o2:organ {id: 'đại_tràng_organ'})
+MERGE (o1)-[r42:affects]->(o2)
+SET r42.text = 'Viêm đại tràng vi thể: là tình trạng tổn thương đại tràng gây nên tiêu chảy nước kéo dài.'
+
+MERGE (o1:disease {id: 'viêm_đại_tràng_vi_thể_disease'})
+MERGE (o2:symptom {id: 'tiêu_chảy_nước_kéo_dài_symptom'})
+MERGE (o1)-[r43:causedBy]->(o2)
+SET r43.text = 'Viêm đại tràng vi thể: là tình trạng tổn thương đại tràng gây nên tiêu chảy nước kéo dài.'
+
+MERGE (o1:test {id: 'nội_soi_đại_trực_tràng_test'})
+MERGE (o2:disease {id: 'viêm_đại_tràng_vi_thể_disease'})
+MERGE (o1)-[r44:diagnosedBy]->(o2)
+SET r44.text = 'Khi nội soi đại trực tràng thì các kết quả đều nằm trong giới hạn bình thường, đại tràng tổn thương chỉ được xác định dựa trên kết quả mô học.'
+
+MERGE (o1:disease {id: 'viêm_đại_tràng_vi_thể_disease'})
+MERGE (o2:disease {id: 'viêm_đại_tràng_lympho_disease'})
+MERGE (o1)-[r45:isSymptomOf]->(o2)
+SET r45.text = 'Viêm đại tràng vi thể được phân loại thành hai dạng: Viêm đại tràng lympho và viêm đại tràng collagen.'
+
+MERGE (o1:disease {id: 'viêm_đại_tràng_vi_thể_disease'})
+MERGE (o2:disease {id: 'viêm_đại_tràng_collagen_disease'})
+MERGE (o1)-[r46:isSymptomOf]->(o2)
+SET r46.text = 'Viêm đại tràng vi thể được phân loại thành hai dạng: Viêm đại tràng lympho và viêm đại tràng collagen.'
+
+MERGE (o1:lifestyle {id: 'hút_thuốc_lá_lifestyle'})
+MERGE (o2:disease {id: 'viêm_đại_tràng_vi_thể_disease'})
+MERGE (o1)-[r47:causedBy]->(o2)
+SET r47.text = 'Các yếu tố nguy cơ gây ra viêm đại tràng vi thể như: hút thuốc lá, bệnh lý tự miễn, người trên 50 tuổi, giới tính nữ…'
+
+MERGE (o1:disease {id: 'bệnh_lý_tự_miễn_disease'})
+MERGE (o2:disease {id: 'viêm_đại_tràng_vi_thể_disease'})
+MERGE (o1)-[r48:causedBy]->(o2)
+SET r48.text = 'Các yếu tố nguy cơ gây ra viêm đại tràng vi thể như: hút thuốc lá, bệnh lý tự miễn, người trên 50 tuổi, giới tính nữ…'
+
+MERGE (o1:lifestyle {id: 'tuổi_trên_50_lifestyle'})
+MERGE (o2:disease {id: 'viêm_đại_tràng_vi_thể_disease'})
+MERGE (o1)-[r49:causedBy]->(o2)
+SET r49.text = 'Các yếu tố nguy cơ gây ra viêm đại tràng vi thể như: hút thuốc lá, bệnh lý tự miễn, người trên 50 tuổi, giới tính nữ…'
+
+MERGE (o1:lifestyle {id: 'giới_tính_nữ_lifestyle'})
+MERGE (o2:disease {id: 'viêm_đại_tràng_vi_thể_disease'})
+MERGE (o1)-[r50:causedBy]->(o2)
+SET r50.text = 'Các yếu tố nguy cơ gây ra viêm đại tràng vi thể như: hút thuốc lá, bệnh lý tự miễn, người trên 50 tuổi, giới tính nữ…'
+
+MERGE (o1:disease {id: 'viêm_đại_tràng_vi_thể_disease'})
+MERGE (o2:symptom {id: 'tiêu_chảy_mãn_tính_symptom'})
+MERGE (o1)-[r51:isSymptomOf]->(o2)
+SET r51.text = 'Các triệu chứng phổ biến nhất của viêm đại tràng vi thể là tiêu chảy mãn tính, đầy bụng đau bụng, sụt cân, nôn ói, mất nước.'
+
+MERGE (o1:disease {id: 'viêm_đại_tràng_vi_thể_disease'})
+MERGE (o2:symptom {id: 'đầy_bụng_đau_bụng_symptom'})
+MERGE (o1)-[r52:isSymptomOf]->(o2)
+SET r52.text = 'Các triệu chứng phổ biến nhất của viêm đại tràng vi thể là tiêu chảy mãn tính, đầy bụng đau bụng, sụt cân, nôn ói, mất nước.'
+
+MERGE (o1:disease {id: 'viêm_đại_tràng_vi_thể_disease'})
+MERGE (o2:symptom {id: 'sụt_cân_symptom'})
+MERGE (o1)-[r53:isSymptomOf]->(o2)
+SET r53.text = 'Các triệu chứng phổ biến nhất của viêm đại tràng vi thể là tiêu chảy mãn tính, đầy bụng đau bụng, sụt cân, nôn ói, mất nước.'
+
+MERGE (o1:disease {id: 'viêm_đại_tràng_vi_thể_disease'})
+MERGE (o2:symptom {id: 'nôn_ói_symptom'})
+MERGE (o1)-[r54:isSymptomOf]->(o2)
+SET r54.text = 'Các triệu chứng phổ biến nhất của viêm đại tràng vi thể là tiêu chảy mãn tính, đầy bụng đau bụng, sụt cân, nôn ói, mất nước.'
+
+MERGE (o1:disease {id: 'viêm_đại_tràng_vi_thể_disease'})
+MERGE (o2:symptom {id: 'mất_nước_symptom'})
+MERGE (o1)-[r55:isSymptomOf]->(o2)
+SET r55.text = 'Các triệu chứng phổ biến nhất của viêm đại tràng vi thể là tiêu chảy mãn tính, đầy bụng đau bụng, sụt cân, nôn ói, mất nước.'
+
+MERGE (o1:disease {id: 'viêm_đại_tràng_dị_ứng_disease'})
+MERGE (o2:lifestyle {id: 'trẻ_sơ_sinh_lifestyle'})
+MERGE (o1)-[r56:affects]->(o2)
+SET r56.text = 'Viêm đại tràng dị ứng ở trẻ sơ sinh: Viêm đại tràng dị ứng là một tình trạng xảy ra ở trẻ sơ sinh, thường trong vòng hai tháng đầu sau khi sinh.'
+
+MERGE (o1:symptom {id: 'trào_ngược_symptom'})
+MERGE (o2:disease {id: 'viêm_đại_tràng_dị_ứng_disease'})
+MERGE (o1)-[r57:isSymptomOf]->(o2)
+SET r57.text = 'Tình trạng này có thể gây ra các triệu chứng ở trẻ sơ sinh như trào ngược, nôn, quấy khóc và có thể có máu trong phân.'
+
+MERGE (o1:symptom {id: 'nôn_symptom'})
+MERGE (o2:disease {id: 'viêm_đại_tràng_dị_ứng_disease'})
+MERGE (o1)-[r58:isSymptomOf]->(o2)
+SET r58.text = 'Tình trạng này có thể gây ra các triệu chứng ở trẻ sơ sinh như trào ngược, nôn, quấy khóc và có thể có máu trong phân.'
+
+MERGE (o1:symptom {id: 'quấy_khóc_symptom'})
+MERGE (o2:disease {id: 'viêm_đại_tràng_dị_ứng_disease'})
+MERGE (o1)-[r59:isSymptomOf]->(o2)
+SET r59.text = 'Tình trạng này có thể gây ra các triệu chứng ở trẻ sơ sinh như trào ngược, nôn, quấy khóc và có thể có máu trong phân.'
+
+MERGE (o1:symptom {id: 'máu_trong_phân_symptom'})
+MERGE (o2:disease {id: 'viêm_đại_tràng_dị_ứng_disease'})
+MERGE (o1)-[r60:isSymptomOf]->(o2)
+SET r60.text = 'Tình trạng này có thể gây ra các triệu chứng ở trẻ sơ sinh như trào ngược, nôn, quấy khóc và có thể có máu trong phân.'
+
+MERGE (o1:disease {id: 'viêm_đại_tràng_dị_ứng_disease'})
+MERGE (o2:cause {id: 'phản_ứng_dị_ứng_cause'})
+MERGE (o1)-[r61:causedBy]->(o2)
+SET r61.text = 'Mặc dù các bác sĩ không biết chính xác nguyên nhân của bệnh viêm đại tràng dị ứng nhưng nhiều nghiên cứu chỉ ra rằng, có thể do trẻ sơ sinh có phản ứng dị ứng hoặc quá mẫn cảm với một số thành phần trong sữa mẹ.'
+
+MERGE (o1:disease {id: 'viêm_đại_tràng_dị_ứng_disease'})
+MERGE (o2:cause {id: 'quá_mẫn_cảm_cause'})
+MERGE (o1)-[r62:causedBy]->(o2)
+SET r62.text = 'Mặc dù các bác sĩ không biết chính xác nguyên nhân của bệnh viêm đại tràng dị ứng nhưng nhiều nghiên cứu chỉ ra rằng, có thể do trẻ sơ sinh có phản ứng dị ứng hoặc quá mẫn cảm với một số thành phần trong sữa mẹ.'
+
+MERGE (o1:disease {id: 'viêm_đại_tràng_dị_ứng_disease'})
+MERGE (o2:food {id: 'thành_phần_trong_sữa_mẹ_food'})
+MERGE (o1)-[r63:causedBy]->(o2)
+SET r63.text = 'Mặc dù các bác sĩ không biết chính xác nguyên nhân của bệnh viêm đại tràng dị ứng nhưng nhiều nghiên cứu chỉ ra rằng, có thể do trẻ sơ sinh có phản ứng dị ứng hoặc quá mẫn cảm với một số thành phần trong sữa mẹ.'
+
+MERGE (o1:disease {id: 'viêm_đại_tràng_dị_ứng_disease'})
+MERGE (o2:cause {id: 'ký_sinh_trùng_cause'})
+MERGE (o1)-[r64:causedBy]->(o2)
+SET r64.text = 'Ngoài ra, viêm đại tràng dị ứng ở trẻ sơ sinh còn có thể do ký sinh trùng, vi rút hoặc ngộ độc thực phẩm do vi khuẩn.(1)'
+
+MERGE (o1:disease {id: 'viêm_đại_tràng_dị_ứng_disease'})
+MERGE (o2:cause {id: 'vi_rút_cause'})
+MERGE (o1)-[r65:causedBy]->(o2)
+SET r65.text = 'Ngoài ra, viêm đại tràng dị ứng ở trẻ sơ sinh còn có thể do ký sinh trùng, vi rút hoặc ngộ độc thực phẩm do vi khuẩn.(1)'
+
+MERGE (o1:disease {id: 'viêm_đại_tràng_dị_ứng_disease'})
+MERGE (o2:cause {id: 'ngộ_độc_thực_phẩm_cause'})
+MERGE (o1)-[r66:causedBy]->(o2)
+SET r66.text = 'Ngoài ra, viêm đại tràng dị ứng ở trẻ sơ sinh còn có thể do ký sinh trùng, vi rút hoặc ngộ độc thực phẩm do vi khuẩn.(1)'
+
+MERGE (o1:disease {id: 'viêm_đại_tràng_disease'})
+MERGE (o2:lifestyle {id: 'chế_độ_ăn_uống_không_điều_độ_lifestyle'})
+MERGE (o1)-[r67:causedBy]->(o2)
+SET r67.text = 'Theo bác sĩ Trung, có nhiều nguyên nhân gây ra bệnh viêm đại tràng nhưng phần lớn là do chế độ ăn uống không điều độ, thiếu khoa học như đồ ăn thức uống mất vệ sinh, đồ ăn ôi thiu, khó tiêu, gây hại cho niêm mạc đại tràng; có giun sống ký sinh trong ruột; chế độ sinh hoạt không hợp lý như làm việc liên tục không được nghỉ ngơi, gây áp lực lên hệ tiêu hóa.'
+
+MERGE (o1:disease {id: 'viêm_đại_tràng_disease'})
+MERGE (o2:food {id: 'đồ_ăn_thức_uống_mất_vệ_sinh_food'})
+MERGE (o1)-[r68:causedBy]->(o2)
+SET r68.text = 'Theo bác sĩ Trung, có nhiều nguyên nhân gây ra bệnh viêm đại tràng nhưng phần lớn là do chế độ ăn uống không điều độ, thiếu khoa học như đồ ăn thức uống mất vệ sinh, đồ ăn ôi thiu, khó tiêu, gây hại cho niêm mạc đại tràng; có giun sống ký sinh trong ruột; chế độ sinh hoạt không hợp lý như làm việc liên tục không được nghỉ ngơi, gây áp lực lên hệ tiêu hóa.'
+
+MERGE (o1:disease {id: 'viêm_đại_tràng_disease'})
+MERGE (o2:food {id: 'đồ_ăn_ôi_thiu_food'})
+MERGE (o1)-[r69:causedBy]->(o2)
+SET r69.text = 'Theo bác sĩ Trung, có nhiều nguyên nhân gây ra bệnh viêm đại tràng nhưng phần lớn là do chế độ ăn uống không điều độ, thiếu khoa học như đồ ăn thức uống mất vệ sinh, đồ ăn ôi thiu, khó tiêu, gây hại cho niêm mạc đại tràng; có giun sống ký sinh trong ruột; chế độ sinh hoạt không hợp lý như làm việc liên tục không được nghỉ ngơi, gây áp lực lên hệ tiêu hóa.'
+
+MERGE (o1:disease {id: 'viêm_đại_tràng_disease'})
+MERGE (o2:food {id: 'đồ_ăn_khó_tiêu_food'})
+MERGE (o1)-[r70:causedBy]->(o2)
+SET r70.text = 'Theo bác sĩ Trung, có nhiều nguyên nhân gây ra bệnh viêm đại tràng nhưng phần lớn là do chế độ ăn uống không điều độ, thiếu khoa học như đồ ăn thức uống mất vệ sinh, đồ ăn ôi thiu, khó tiêu, gây hại cho niêm mạc đại tràng; có giun sống ký sinh trong ruột; chế độ sinh hoạt không hợp lý như làm việc liên tục không được nghỉ ngơi, gây áp lực lên hệ tiêu hóa.'
+
+MERGE (o1:cause {id: 'các_yếu_tố_nguy_cơ_cause'})
+MERGE (o2:disease {id: 'viêm_đại_tràng_disease'})
+MERGE (o1)-[r71:associatedWith]->(o2)
+SET r71.text = 'Các yếu tố nguy cơ khác nhau có liên quan đến từng loại viêm đại tràng.'
+
+MERGE (o1:cause {id: 'nguy_cơ_mắc_bệnh_crohn_và_viêm_loét_đại_tràng_(uc)_cause'})
+MERGE (o2:lifestyle {id: 'độ_tuổi_từ_15_-_30_hoặc_60_-_80_lifestyle'})
+MERGE (o1)-[r72:associatedWith]->(o2)
+SET r72.text = 'Ví dụ như nguy cơ mắc bệnh Crohn và viêm loét đại tràng (UC) cao hơn nếu ở độ tuổi từ 15 - 30 (phổ biến nhất) hoặc 60 - 80, là người gốc Do Thái hoặc da trắng, tiền sử gia đình có người bị UC, hút thuốc là, sử dụng thuốc ngừa thai hoặc giảm đau NSAID.'
+
+MERGE (o1:cause {id: 'nguy_cơ_mắc_bệnh_crohn_và_viêm_loét_đại_tràng_(uc)_cause'})
+MERGE (o2:lifestyle {id: 'người_gốc_do_thái_hoặc_da_trắng_lifestyle'})
+MERGE (o1)-[r73:associatedWith]->(o2)
+SET r73.text = 'Ví dụ như nguy cơ mắc bệnh Crohn và viêm loét đại tràng (UC) cao hơn nếu ở độ tuổi từ 15 - 30 (phổ biến nhất) hoặc 60 - 80, là người gốc Do Thái hoặc da trắng, tiền sử gia đình có người bị UC, hút thuốc là, sử dụng thuốc ngừa thai hoặc giảm đau NSAID.'
+
+MERGE (o1:cause {id: 'nguy_cơ_mắc_bệnh_crohn_và_viêm_loét_đại_tràng_(uc)_cause'})
+MERGE (o2:lifestyle {id: 'tiền_sử_gia_đình_có_người_bị_uc_lifestyle'})
+MERGE (o1)-[r74:associatedWith]->(o2)
+SET r74.text = 'Ví dụ như nguy cơ mắc bệnh Crohn và viêm loét đại tràng (UC) cao hơn nếu ở độ tuổi từ 15 - 30 (phổ biến nhất) hoặc 60 - 80, là người gốc Do Thái hoặc da trắng, tiền sử gia đình có người bị UC, hút thuốc là, sử dụng thuốc ngừa thai hoặc giảm đau NSAID.'
+
+MERGE (o1:cause {id: 'nguy_cơ_mắc_bệnh_crohn_và_viêm_loét_đại_tràng_(uc)_cause'})
+MERGE (o2:lifestyle {id: 'hút_thuốc_là_lifestyle'})
+MERGE (o1)-[r75:associatedWith]->(o2)
+SET r75.text = 'Ví dụ như nguy cơ mắc bệnh Crohn và viêm loét đại tràng (UC) cao hơn nếu ở độ tuổi từ 15 - 30 (phổ biến nhất) hoặc 60 - 80, là người gốc Do Thái hoặc da trắng, tiền sử gia đình có người bị UC, hút thuốc là, sử dụng thuốc ngừa thai hoặc giảm đau NSAID.'
+
+MERGE (o1:cause {id: 'nguy_cơ_mắc_bệnh_crohn_và_viêm_loét_đại_tràng_(uc)_cause'})
+MERGE (o2:treatment {id: 'sử_dụng_thuốc_ngừa_thai_treatment'})
+MERGE (o1)-[r76:associatedWith]->(o2)
+SET r76.text = 'Ví dụ như nguy cơ mắc bệnh Crohn và viêm loét đại tràng (UC) cao hơn nếu ở độ tuổi từ 15 - 30 (phổ biến nhất) hoặc 60 - 80, là người gốc Do Thái hoặc da trắng, tiền sử gia đình có người bị UC, hút thuốc là, sử dụng thuốc ngừa thai hoặc giảm đau NSAID.'
+
+MERGE (o1:cause {id: 'nguy_cơ_mắc_bệnh_crohn_và_viêm_loét_đại_tràng_(uc)_cause'})
+MERGE (o2:treatment {id: 'giảm_đau_nsaid_treatment'})
+MERGE (o1)-[r77:associatedWith]->(o2)
+SET r77.text = 'Ví dụ như nguy cơ mắc bệnh Crohn và viêm loét đại tràng (UC) cao hơn nếu ở độ tuổi từ 15 - 30 (phổ biến nhất) hoặc 60 - 80, là người gốc Do Thái hoặc da trắng, tiền sử gia đình có người bị UC, hút thuốc là, sử dụng thuốc ngừa thai hoặc giảm đau NSAID.'
+
+MERGE (o1:cause {id: 'nguy_cơ_mắc_viêm_đại_tràng_giả_mạc_(pc)_cause'})
+MERGE (o2:treatment {id: 'người_dùng_thuốc_kháng_sinh_dài_hạn_treatment'})
+MERGE (o1)-[r78:associatedWith]->(o2)
+SET r78.text = 'Nguy cơ mắc viêm đại tràng giả mạc (PC) cao hơn đối với người dùng thuốc kháng sinh dài hạn, đang nằm viện, đang được hóa trị, đang dùng thuốc ức chế miễn dịch, người cao tuổi, đã từng mắc PC trước đây.'
+
+MERGE (o1:cause {id: 'nguy_cơ_mắc_viêm_đại_tràng_giả_mạc_(pc)_cause'})
+MERGE (o2:lifestyle {id: 'đang_nằm_viện_lifestyle'})
+MERGE (o1)-[r79:associatedWith]->(o2)
+SET r79.text = 'Nguy cơ mắc viêm đại tràng giả mạc (PC) cao hơn đối với người dùng thuốc kháng sinh dài hạn, đang nằm viện, đang được hóa trị, đang dùng thuốc ức chế miễn dịch, người cao tuổi, đã từng mắc PC trước đây.'
+
+MERGE (o1:cause {id: 'nguy_cơ_mắc_viêm_đại_tràng_giả_mạc_(pc)_cause'})
+MERGE (o2:treatment {id: 'đang_được_hóa_trị_treatment'})
+MERGE (o1)-[r80:associatedWith]->(o2)
+SET r80.text = 'Nguy cơ mắc viêm đại tràng giả mạc (PC) cao hơn đối với người dùng thuốc kháng sinh dài hạn, đang nằm viện, đang được hóa trị, đang dùng thuốc ức chế miễn dịch, người cao tuổi, đã từng mắc PC trước đây.'
+
+MERGE (o1:cause {id: 'nguy_cơ_mắc_viêm_đại_tràng_giả_mạc_(pc)_cause'})
+MERGE (o2:treatment {id: 'đang_dùng_thuốc_ức_chế_miễn_dịch_treatment'})
+MERGE (o1)-[r81:associatedWith]->(o2)
+SET r81.text = 'Nguy cơ mắc viêm đại tràng giả mạc (PC) cao hơn đối với người dùng thuốc kháng sinh dài hạn, đang nằm viện, đang được hóa trị, đang dùng thuốc ức chế miễn dịch, người cao tuổi, đã từng mắc PC trước đây.'
+
+MERGE (o1:cause {id: 'nguy_cơ_mắc_viêm_đại_tràng_giả_mạc_(pc)_cause'})
+MERGE (o2:lifestyle {id: 'người_cao_tuổi_lifestyle'})
+MERGE (o1)-[r82:associatedWith]->(o2)
+SET r82.text = 'Nguy cơ mắc viêm đại tràng giả mạc (PC) cao hơn đối với người dùng thuốc kháng sinh dài hạn, đang nằm viện, đang được hóa trị, đang dùng thuốc ức chế miễn dịch, người cao tuổi, đã từng mắc PC trước đây.'
+
+MERGE (o1:cause {id: 'nguy_cơ_mắc_viêm_đại_tràng_giả_mạc_(pc)_cause'})
+MERGE (o2:disease {id: 'đã_từng_mắc_pc_trước_đây_disease'})
+MERGE (o1)-[r83:associatedWith]->(o2)
+SET r83.text = 'Nguy cơ mắc viêm đại tràng giả mạc (PC) cao hơn đối với người dùng thuốc kháng sinh dài hạn, đang nằm viện, đang được hóa trị, đang dùng thuốc ức chế miễn dịch, người cao tuổi, đã từng mắc PC trước đây.'
+
+MERGE (o1:cause {id: 'nguy_cơ_mắc_viêm_đại_tràng_do_thiếu_máu_cục_bộ_(ic)_cause'})
+MERGE (o2:lifestyle {id: 'người_trên_50_tuổi_lifestyle'})
+MERGE (o1)-[r84:associatedWith]->(o2)
+SET r84.text = 'Nguy cơ mắc viêm đại tràng do thiếu máu cục bộ (IC) cao hơn đối với người trên 50 tuổi, đang mắc bệnh tim hoặc có nguy cơ mắc bệnh suy tim, huyết áp thấp, đã được phẫu thuật bụng…'
+
+MERGE (o1:cause {id: 'nguy_cơ_mắc_viêm_đại_tràng_do_thiếu_máu_cục_bộ_(ic)_cause'})
+MERGE (o2:disease {id: 'đang_mắc_bệnh_tim_disease'})
+MERGE (o1)-[r85:associatedWith]->(o2)
+SET r85.text = 'Nguy cơ mắc viêm đại tràng do thiếu máu cục bộ (IC) cao hơn đối với người trên 50 tuổi, đang mắc bệnh tim hoặc có nguy cơ mắc bệnh suy tim, huyết áp thấp, đã được phẫu thuật bụng…'
+
+MERGE (o1:cause {id: 'nguy_cơ_mắc_viêm_đại_tràng_do_thiếu_máu_cục_bộ_(ic)_cause'})
+MERGE (o2:disease {id: 'có_nguy_cơ_mắc_bệnh_suy_tim_disease'})
+MERGE (o1)-[r86:associatedWith]->(o2)
+SET r86.text = 'Nguy cơ mắc viêm đại tràng do thiếu máu cục bộ (IC) cao hơn đối với người trên 50 tuổi, đang mắc bệnh tim hoặc có nguy cơ mắc bệnh suy tim, huyết áp thấp, đã được phẫu thuật bụng…'
+
+MERGE (o1:cause {id: 'nguy_cơ_mắc_viêm_đại_tràng_do_thiếu_máu_cục_bộ_(ic)_cause'})
+MERGE (o2:symptom {id: 'huyết_áp_thấp_symptom'})
+MERGE (o1)-[r87:associatedWith]->(o2)
+SET r87.text = 'Nguy cơ mắc viêm đại tràng do thiếu máu cục bộ (IC) cao hơn đối với người trên 50 tuổi, đang mắc bệnh tim hoặc có nguy cơ mắc bệnh suy tim, huyết áp thấp, đã được phẫu thuật bụng…'
+
+MERGE (o1:cause {id: 'nguy_cơ_mắc_viêm_đại_tràng_do_thiếu_máu_cục_bộ_(ic)_cause'})
+MERGE (o2:treatment {id: 'đã_được_phẫu_thuật_bụng_treatment'})
+MERGE (o1)-[r88:associatedWith]->(o2)
+SET r88.text = 'Nguy cơ mắc viêm đại tràng do thiếu máu cục bộ (IC) cao hơn đối với người trên 50 tuổi, đang mắc bệnh tim hoặc có nguy cơ mắc bệnh suy tim, huyết áp thấp, đã được phẫu thuật bụng…'
+
+MERGE (o1:cause {id: 'yếu_tố/nguy_cơ_mắc_bệnh_viêm_đại_tràng_cause'})
+MERGE (o2:disease {id: 'viêm_đại_tràng_disease'})
+MERGE (o1)-[r89:associatedWith]->(o2)
+SET r89.text = 'Bác sĩ Trung cho rằng, đối với những người có yếu tố/nguy cơ mắc bệnh viêm đại tràng càng nên chủ động tới bệnh viện khám sức khỏe định kỳ để tầm soát, phát hiện và điều trị kịp thời.'
+
+MERGE (o1:test {id: 'khám_sức_khỏe_định_kỳ_test'})
+MERGE (o2:disease {id: 'viêm_đại_tràng_disease'})
+MERGE (o1)-[r90:diagnosedBy]->(o2)
+SET r90.text = 'Bác sĩ Trung cho rằng, đối với những người có yếu tố/nguy cơ mắc bệnh viêm đại tràng càng nên chủ động tới bệnh viện khám sức khỏe định kỳ để tầm soát, phát hiện và điều trị kịp thời.'
+
+MERGE (o1:symptom {id: 'triệu_chứng_symptom'})
+MERGE (o2:disease {id: 'viêm_đại_tràng_disease'})
+MERGE (o1)-[r91:isSymptomOf]->(o2)
+SET r91.text = 'Triệu chứng tùy thuộc nguyên nhân gây viêm đại tràng.'
+
+MERGE (o1:symptom {id: 'đau_bụng_kéo_dài_ở_nửa_khung_đại_tràng_trái_và_hai_hố_chậu_symptom'})
+MERGE (o2:disease {id: 'viêm_đại_tràng_disease'})
+MERGE (o1)-[r92:isSymptomOf]->(o2)
+SET r92.text = 'Người bệnh thường có các biểu hiện như đau bụng kéo dài ở nửa khung đại tràng trái và hai hố chậu, cơn đau thường giảm khi đã đi đại tiện; Phân bất thường chủ yếu là phân lỏng và đi nhiều lần trong ngày.'
+
+MERGE (o1:symptom {id: 'phân_bất_thường_symptom'})
+MERGE (o2:disease {id: 'viêm_đại_tràng_disease'})
+MERGE (o1)-[r93:isSymptomOf]->(o2)
+SET r93.text = 'Người bệnh thường có các biểu hiện như đau bụng kéo dài ở nửa khung đại tràng trái và hai hố chậu, cơn đau thường giảm khi đã đi đại tiện; Phân bất thường chủ yếu là phân lỏng và đi nhiều lần trong ngày.'
+
+MERGE (o1:symptom {id: 'phân_lỏng_symptom'})
+MERGE (o2:disease {id: 'viêm_đại_tràng_disease'})
+MERGE (o1)-[r94:isSymptomOf]->(o2)
+SET r94.text = 'Người bệnh thường có các biểu hiện như đau bụng kéo dài ở nửa khung đại tràng trái và hai hố chậu, cơn đau thường giảm khi đã đi đại tiện; Phân bất thường chủ yếu là phân lỏng và đi nhiều lần trong ngày.'
+
+MERGE (o1:symptom {id: 'đi_nhiều_lần_trong_ngày_symptom'})
+MERGE (o2:disease {id: 'viêm_đại_tràng_disease'})
+MERGE (o1)-[r95:isSymptomOf]->(o2)
+SET r95.text = 'Người bệnh thường có các biểu hiện như đau bụng kéo dài ở nửa khung đại tràng trái và hai hố chậu, cơn đau thường giảm khi đã đi đại tiện; Phân bất thường chủ yếu là phân lỏng và đi nhiều lần trong ngày.'
+
+MERGE (o1:symptom {id: 'táo_bón_symptom'})
+MERGE (o2:disease {id: 'viêm_đại_tràng_disease'})
+MERGE (o1)-[r96:isSymptomOf]->(o2)
+SET r96.text = 'Tuy nhiên, cũng nhiều trường hợp táo bón, phân lẫn máu hoặc nhầy; cơ thể mệt mỏi, suy nhược, sụt cân.'
+
+MERGE (o1:symptom {id: 'phân_lẫn_máu_symptom'})
+MERGE (o2:disease {id: 'viêm_đại_tràng_disease'})
+MERGE (o1)-[r97:isSymptomOf]->(o2)
+SET r97.text = 'Tuy nhiên, cũng nhiều trường hợp táo bón, phân lẫn máu hoặc nhầy; cơ thể mệt mỏi, suy nhược, sụt cân.'
+
+MERGE (o1:symptom {id: 'phân_lẫn_nhầy_symptom'})
+MERGE (o2:disease {id: 'viêm_đại_tràng_disease'})
+MERGE (o1)-[r98:isSymptomOf]->(o2)
+SET r98.text = 'Tuy nhiên, cũng nhiều trường hợp táo bón, phân lẫn máu hoặc nhầy; cơ thể mệt mỏi, suy nhược, sụt cân.'
+
+MERGE (o1:symptom {id: 'cơ_thể_mệt_mỏi_symptom'})
+MERGE (o2:disease {id: 'viêm_đại_tràng_disease'})
+MERGE (o1)-[r99:isSymptomOf]->(o2)
+SET r99.text = 'Tuy nhiên, cũng nhiều trường hợp táo bón, phân lẫn máu hoặc nhầy; cơ thể mệt mỏi, suy nhược, sụt cân.'
+
+MERGE (o1:symptom {id: 'suy_nhược_symptom'})
+MERGE (o2:disease {id: 'viêm_đại_tràng_disease'})
+MERGE (o1)-[r100:isSymptomOf]->(o2)
+SET r100.text = 'Tuy nhiên, cũng nhiều trường hợp táo bón, phân lẫn máu hoặc nhầy; cơ thể mệt mỏi, suy nhược, sụt cân.'
+
+MERGE (o1:symptom {id: 'sụt_cân_symptom'})
+MERGE (o2:disease {id: 'viêm_đại_tràng_disease'})
+MERGE (o1)-[r101:isSymptomOf]->(o2)
+SET r101.text = 'Tuy nhiên, cũng nhiều trường hợp táo bón, phân lẫn máu hoặc nhầy; cơ thể mệt mỏi, suy nhược, sụt cân.'
+
+MERGE (o1:symptom {id: 'đau_quặn_thắt_bụng_dưới_symptom'})
+MERGE (o2:disease {id: 'viêm_đại_tràng_cấp_tính_disease'})
+MERGE (o1)-[r102:isSymptomOf]->(o2)
+SET r102.text = 'Triệu chứng viêm đại tràng cấp tính: Người bệnh bị đau quặn thắt bụng dưới, dọc theo khung đại tràng, có cảm giác đầy hơi, chướng bụng; rối loạn tiêu hóa phổ biến nhất là tiêu chảy, phân có thể kèm máu, đi nhiều lần trong ngày; chán ăn, mệt mỏi, có thể kèm sốt nhẹ.'
+
+MERGE (o1:symptom {id: 'đầy_hơi_symptom'})
+MERGE (o2:disease {id: 'viêm_đại_tràng_cấp_tính_disease'})
+MERGE (o1)-[r103:isSymptomOf]->(o2)
+SET r103.text = 'Triệu chứng viêm đại tràng cấp tính: Người bệnh bị đau quặn thắt bụng dưới, dọc theo khung đại tràng, có cảm giác đầy hơi, chướng bụng; rối loạn tiêu hóa phổ biến nhất là tiêu chảy, phân có thể kèm máu, đi nhiều lần trong ngày; chán ăn, mệt mỏi, có thể kèm sốt nhẹ.'
+
+MERGE (o1:symptom {id: 'chướng_bụng_symptom'})
+MERGE (o2:disease {id: 'viêm_đại_tràng_cấp_tính_disease'})
+MERGE (o1)-[r104:isSymptomOf]->(o2)
+SET r104.text = 'Triệu chứng viêm đại tràng cấp tính: Người bệnh bị đau quặn thắt bụng dưới, dọc theo khung đại tràng, có cảm giác đầy hơi, chướng bụng; rối loạn tiêu hóa phổ biến nhất là tiêu chảy, phân có thể kèm máu, đi nhiều lần trong ngày; chán ăn, mệt mỏi, có thể kèm sốt nhẹ.'
+
+MERGE (o1:symptom {id: 'tiêu_chảy_symptom'})
+MERGE (o2:disease {id: 'viêm_đại_tràng_cấp_tính_disease'})
+MERGE (o1)-[r105:isSymptomOf]->(o2)
+SET r105.text = 'Triệu chứng viêm đại tràng cấp tính: Người bệnh bị đau quặn thắt bụng dưới, dọc theo khung đại tràng, có cảm giác đầy hơi, chướng bụng; rối loạn tiêu hóa phổ biến nhất là tiêu chảy, phân có thể kèm máu, đi nhiều lần trong ngày; chán ăn, mệt mỏi, có thể kèm sốt nhẹ.'
+
+MERGE (o1:symptom {id: 'phân_kèm_máu_symptom'})
+MERGE (o2:disease {id: 'viêm_đại_tràng_cấp_tính_disease'})
+MERGE (o1)-[r106:isSymptomOf]->(o2)
+SET r106.text = 'Triệu chứng viêm đại tràng cấp tính: Người bệnh bị đau quặn thắt bụng dưới, dọc theo khung đại tràng, có cảm giác đầy hơi, chướng bụng; rối loạn tiêu hóa phổ biến nhất là tiêu chảy, phân có thể kèm máu, đi nhiều lần trong ngày; chán ăn, mệt mỏi, có thể kèm sốt nhẹ.'
+
+MERGE (o1:symptom {id: 'chán_ăn_symptom'})
+MERGE (o2:disease {id: 'viêm_đại_tràng_cấp_tính_disease'})
+MERGE (o1)-[r107:isSymptomOf]->(o2)
+SET r107.text = 'Triệu chứng viêm đại tràng cấp tính: Người bệnh bị đau quặn thắt bụng dưới, dọc theo khung đại tràng, có cảm giác đầy hơi, chướng bụng; rối loạn tiêu hóa phổ biến nhất là tiêu chảy, phân có thể kèm máu, đi nhiều lần trong ngày; chán ăn, mệt mỏi, có thể kèm sốt nhẹ.'
+
+MERGE (o1:symptom {id: 'mệt_mỏi_symptom'})
+MERGE (o2:disease {id: 'viêm_đại_tràng_cấp_tính_disease'})
+MERGE (o1)-[r108:isSymptomOf]->(o2)
+SET r108.text = 'Triệu chứng viêm đại tràng cấp tính: Người bệnh bị đau quặn thắt bụng dưới, dọc theo khung đại tràng, có cảm giác đầy hơi, chướng bụng; rối loạn tiêu hóa phổ biến nhất là tiêu chảy, phân có thể kèm máu, đi nhiều lần trong ngày; chán ăn, mệt mỏi, có thể kèm sốt nhẹ.'
+
+MERGE (o1:symptom {id: 'sốt_nhẹ_symptom'})
+MERGE (o2:disease {id: 'viêm_đại_tràng_cấp_tính_disease'})
+MERGE (o1)-[r109:isSymptomOf]->(o2)
+SET r109.text = 'Triệu chứng viêm đại tràng cấp tính: Người bệnh bị đau quặn thắt bụng dưới, dọc theo khung đại tràng, có cảm giác đầy hơi, chướng bụng; rối loạn tiêu hóa phổ biến nhất là tiêu chảy, phân có thể kèm máu, đi nhiều lần trong ngày; chán ăn, mệt mỏi, có thể kèm sốt nhẹ.'
+
+MERGE (o1:symptom {id: 'đau_bụng_kéo_dài_ở_nửa_khung_đại_tràng_trái_và_hai_hố_chậu_symptom'})
+MERGE (o2:disease {id: 'viêm_đại_tràng_disease'})
+MERGE (o1)-[r110:isSymptomOf]->(o2)
+SET r110.text = 'Người bệnh thường có triệu chứng đặc trưng là đau bụng kéo dài ở nửa khung đại tràng trái và hai hố chậu hoặc đau quặn thắt bụng dưới, dọc theo khung đại tràng.'
+
+MERGE (o1:symptom {id: 'đau_quặn_thắt_bụng_dưới_symptom'})
+MERGE (o2:disease {id: 'viêm_đại_tràng_disease'})
+MERGE (o1)-[r111:isSymptomOf]->(o2)
+SET r111.text = 'Người bệnh thường có triệu chứng đặc trưng là đau bụng kéo dài ở nửa khung đại tràng trái và hai hố chậu hoặc đau quặn thắt bụng dưới, dọc theo khung đại tràng.'
+
+MERGE (o1:treatment {id: 'việc_điều_trị_viêm_đại_tràng_treatment'})
+MERGE (o2:cause {id: 'nguyên_nhân_gây_bệnh_cause'})
+MERGE (o1)-[r112:relatedTo]->(o2)
+SET r112.text = 'Việc điều trị viêm đại tràng phụ thuộc vào nguyên nhân gây bệnh, mức độ bệnh, giai đoạn bệnh, tuổi tác, tình trạng thể chất của người bệnh&#8230;'
+
+MERGE (o1:treatment {id: 'việc_điều_trị_viêm_đại_tràng_treatment'})
+MERGE (o2:disease {id: 'mức_độ_bệnh_disease'})
+MERGE (o1)-[r113:relatedTo]->(o2)
+SET r113.text = 'Việc điều trị viêm đại tràng phụ thuộc vào nguyên nhân gây bệnh, mức độ bệnh, giai đoạn bệnh, tuổi tác, tình trạng thể chất của người bệnh&#8230;'
+
+MERGE (o1:treatment {id: 'việc_điều_trị_viêm_đại_tràng_treatment'})
+MERGE (o2:disease {id: 'giai_đoạn_bệnh_disease'})
+MERGE (o1)-[r114:relatedTo]->(o2)
+SET r114.text = 'Việc điều trị viêm đại tràng phụ thuộc vào nguyên nhân gây bệnh, mức độ bệnh, giai đoạn bệnh, tuổi tác, tình trạng thể chất của người bệnh&#8230;'
+
+MERGE (o1:treatment {id: 'việc_điều_trị_viêm_đại_tràng_treatment'})
+MERGE (o2:lifestyle {id: 'tuổi_tác_lifestyle'})
+MERGE (o1)-[r115:relatedTo]->(o2)
+SET r115.text = 'Việc điều trị viêm đại tràng phụ thuộc vào nguyên nhân gây bệnh, mức độ bệnh, giai đoạn bệnh, tuổi tác, tình trạng thể chất của người bệnh&#8230;'
+
+MERGE (o1:treatment {id: 'việc_điều_trị_viêm_đại_tràng_treatment'})
+MERGE (o2:lifestyle {id: 'tình_trạng_thể_chất_lifestyle'})
+MERGE (o1)-[r116:relatedTo]->(o2)
+SET r116.text = 'Việc điều trị viêm đại tràng phụ thuộc vào nguyên nhân gây bệnh, mức độ bệnh, giai đoạn bệnh, tuổi tác, tình trạng thể chất của người bệnh&#8230;'
+
+MERGE (o1:treatment {id: 'điều_trị_nội_khoa_treatment'})
+MERGE (o2:treatment {id: 'kháng_sinh_đường_ruột_treatment'})
+MERGE (o1)-[r117:treatedBy]->(o2)
+SET r117.text = 'Điều trị nội khoa: Các loại kháng sinh đường ruột thông thường hoặc các loại thuốc chống viêm như sulfasalazine (Azulfidine), mesalamine (Asacol HD, Delzicol), balsalazide (Colazal) và olsalazine (Dipentum).'
+
+MERGE (o1:treatment {id: 'điều_trị_nội_khoa_treatment'})
+MERGE (o2:treatment {id: 'thuốc_chống_viêm_treatment'})
+MERGE (o1)-[r118:treatedBy]->(o2)
+SET r118.text = 'Điều trị nội khoa: Các loại kháng sinh đường ruột thông thường hoặc các loại thuốc chống viêm như sulfasalazine (Azulfidine), mesalamine (Asacol HD, Delzicol), balsalazide (Colazal) và olsalazine (Dipentum).'
+
+MERGE (o1:treatment {id: 'corticoid_treatment'})
+MERGE (o2:disease {id: 'viêm_loét_đại_tràng_disease'})
+MERGE (o1)-[r119:treatedBy]->(o2)
+SET r119.text = 'Hoặc corticoid (prednisone và budesonide) dành cho tình trạng viêm loét đại tràng từ vừa đến nặng và không đáp ứng với các phương pháp điều trị khác.'
+
+MERGE (o1:treatment {id: 'thuốc_ức_chế_hệ_thống_miễn_dịch_treatment'})
+MERGE (o2:disease {id: 'viêm_loét_đại_tràng_disease'})
+MERGE (o1)-[r120:treatedBy]->(o2)
+SET r120.text = 'Hoặc thuốc ức chế hệ thống miễn dịch như Azathioprine (Azasan, Imuran) và mercaptopurine (Purinethol, Purixan); Cyclosporine (Gengraf, Neoral, Sandimmune); Tofacitinib (Xeljanz).'
+
+MERGE (o1:treatment {id: 'sinh_học_treatment'})
+MERGE (o2:disease {id: 'viêm_loét_đại_tràng_disease'})
+MERGE (o1)-[r121:treatedBy]->(o2)
+SET r121.text = 'Các loại sinh học được sử dụng để điều trị viêm loét đại tràng như Infliximab (Remicade), adalimumab (Humira) và golimumab (Simponi), Vedolizumab (Entyvio), Ustekinumab (Stelara).'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_treatment'})
+MERGE (o2:disease {id: 'viêm_đại_tràng_disease'})
+MERGE (o1)-[r122:treatedBy]->(o2)
+SET r122.text = 'Trường hợp điều trị nội khoa không hiệu quả hoặc bệnh trở nên nghiêm trọng, xuất hiện biến chứng như rò, thủng, áp xe&#8230; người bệnh cần được phẫu thuật cắt bỏ một phần hoặc toàn bộ ruột kết hoặc trực tràng.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_treatment'})
+MERGE (o2:symptom {id: 'rò_symptom'})
+MERGE (o1)-[r123:treatedBy]->(o2)
+SET r123.text = 'Trường hợp điều trị nội khoa không hiệu quả hoặc bệnh trở nên nghiêm trọng, xuất hiện biến chứng như rò, thủng, áp xe&#8230; người bệnh cần được phẫu thuật cắt bỏ một phần hoặc toàn bộ ruột kết hoặc trực tràng.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_treatment'})
+MERGE (o2:symptom {id: 'thủng_symptom'})
+MERGE (o1)-[r124:treatedBy]->(o2)
+SET r124.text = 'Trường hợp điều trị nội khoa không hiệu quả hoặc bệnh trở nên nghiêm trọng, xuất hiện biến chứng như rò, thủng, áp xe&#8230; người bệnh cần được phẫu thuật cắt bỏ một phần hoặc toàn bộ ruột kết hoặc trực tràng.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_treatment'})
+MERGE (o2:symptom {id: 'áp_xe_symptom'})
+MERGE (o1)-[r125:treatedBy]->(o2)
+SET r125.text = 'Trường hợp điều trị nội khoa không hiệu quả hoặc bệnh trở nên nghiêm trọng, xuất hiện biến chứng như rò, thủng, áp xe&#8230; người bệnh cần được phẫu thuật cắt bỏ một phần hoặc toàn bộ ruột kết hoặc trực tràng.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_treatment'})
+MERGE (o2:treatment {id: 'cắt_bỏ_một_phần_hoặc_toàn_bộ_ruột_kết_treatment'})
+MERGE (o1)-[r126:treatedBy]->(o2)
+SET r126.text = 'Trường hợp điều trị nội khoa không hiệu quả hoặc bệnh trở nên nghiêm trọng, xuất hiện biến chứng như rò, thủng, áp xe&#8230; người bệnh cần được phẫu thuật cắt bỏ một phần hoặc toàn bộ ruột kết hoặc trực tràng.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_treatment'})
+MERGE (o2:treatment {id: 'cắt_bỏ_trực_tràng_treatment'})
+MERGE (o1)-[r127:treatedBy]->(o2)
+SET r127.text = 'Trường hợp điều trị nội khoa không hiệu quả hoặc bệnh trở nên nghiêm trọng, xuất hiện biến chứng như rò, thủng, áp xe&#8230; người bệnh cần được phẫu thuật cắt bỏ một phần hoặc toàn bộ ruột kết hoặc trực tràng.'
+
+MERGE (o1:lifestyle {id: 'hạn_chế_các_sản_phẩm_từ_sữa_lifestyle'})
+MERGE (o2:disease {id: 'viêm_đại_tràng_disease'})
+MERGE (o1)-[r128:preventedBy]->(o2)
+SET r128.text = 'Ngoài ra, để khắc phục hay hạn chế bệnh viêm đại tràng, người bệnh cần có một chế độ ăn uống và sinh hoạt hợp lý như: Hạn chế các sản phẩm từ sữa; ăn nhiều bữa nhỏ; uống nhiều nước; không dùng rượu, thuốc lá và đồ uống có chứa caffeine gây kích thích đường ruột, có một chế độ nghỉ ngơi, sinh hoạt hợp lý, thận trọng trong việc sử dụng thuốc giảm đau xương khớp cũng như thuốc kháng sinh hoặc các loại thuốc không kê toa.'
+
+MERGE (o1:lifestyle {id: 'ăn_nhiều_bữa_nhỏ_lifestyle'})
+MERGE (o2:disease {id: 'viêm_đại_tràng_disease'})
+MERGE (o1)-[r129:preventedBy]->(o2)
+SET r129.text = 'Ngoài ra, để khắc phục hay hạn chế bệnh viêm đại tràng, người bệnh cần có một chế độ ăn uống và sinh hoạt hợp lý như: Hạn chế các sản phẩm từ sữa; ăn nhiều bữa nhỏ; uống nhiều nước; không dùng rượu, thuốc lá và đồ uống có chứa caffeine gây kích thích đường ruột, có một chế độ nghỉ ngơi, sinh hoạt hợp lý, thận trọng trong việc sử dụng thuốc giảm đau xương khớp cũng như thuốc kháng sinh hoặc các loại thuốc không kê toa.'
+
+MERGE (o1:lifestyle {id: 'uống_nhiều_nước_lifestyle'})
+MERGE (o2:disease {id: 'viêm_đại_tràng_disease'})
+MERGE (o1)-[r130:preventedBy]->(o2)
+SET r130.text = 'Ngoài ra, để khắc phục hay hạn chế bệnh viêm đại tràng, người bệnh cần có một chế độ ăn uống và sinh hoạt hợp lý như: Hạn chế các sản phẩm từ sữa; ăn nhiều bữa nhỏ; uống nhiều nước; không dùng rượu, thuốc lá và đồ uống có chứa caffeine gây kích thích đường ruột, có một chế độ nghỉ ngơi, sinh hoạt hợp lý, thận trọng trong việc sử dụng thuốc giảm đau xương khớp cũng như thuốc kháng sinh hoặc các loại thuốc không kê toa.'
+
+MERGE (o1:lifestyle {id: 'không_dùng_rượu_lifestyle'})
+MERGE (o2:disease {id: 'viêm_đại_tràng_disease'})
+MERGE (o1)-[r131:preventedBy]->(o2)
+SET r131.text = 'Ngoài ra, để khắc phục hay hạn chế bệnh viêm đại tràng, người bệnh cần có một chế độ ăn uống và sinh hoạt hợp lý như: Hạn chế các sản phẩm từ sữa; ăn nhiều bữa nhỏ; uống nhiều nước; không dùng rượu, thuốc lá và đồ uống có chứa caffeine gây kích thích đường ruột, có một chế độ nghỉ ngơi, sinh hoạt hợp lý, thận trọng trong việc sử dụng thuốc giảm đau xương khớp cũng như thuốc kháng sinh hoặc các loại thuốc không kê toa.'
+
+MERGE (o1:lifestyle {id: 'không_dùng_thuốc_lá_lifestyle'})
+MERGE (o2:disease {id: 'viêm_đại_tràng_disease'})
+MERGE (o1)-[r132:preventedBy]->(o2)
+SET r132.text = 'Ngoài ra, để khắc phục hay hạn chế bệnh viêm đại tràng, người bệnh cần có một chế độ ăn uống và sinh hoạt hợp lý như: Hạn chế các sản phẩm từ sữa; ăn nhiều bữa nhỏ; uống nhiều nước; không dùng rượu, thuốc lá và đồ uống có chứa caffeine gây kích thích đường ruột, có một chế độ nghỉ ngơi, sinh hoạt hợp lý, thận trọng trong việc sử dụng thuốc giảm đau xương khớp cũng như thuốc kháng sinh hoặc các loại thuốc không kê toa.'
+
+MERGE (o1:lifestyle {id: 'không_dùng_đồ_uống_có_chứa_caffeine_lifestyle'})
+MERGE (o2:disease {id: 'viêm_đại_tràng_disease'})
+MERGE (o1)-[r133:aggravatedBy]->(o2)
+SET r133.text = 'Ngoài ra, để khắc phục hay hạn chế bệnh viêm đại tràng, người bệnh cần có một chế độ ăn uống và sinh hoạt hợp lý như: Hạn chế các sản phẩm từ sữa; ăn nhiều bữa nhỏ; uống nhiều nước; không dùng rượu, thuốc lá và đồ uống có chứa caffeine gây kích thích đường ruột, có một chế độ nghỉ ngơi, sinh hoạt hợp lý, thận trọng trong việc sử dụng thuốc giảm đau xương khớp cũng như thuốc kháng sinh hoặc các loại thuốc không kê toa.'
+
+MERGE (o1:lifestyle {id: 'chế_độ_nghỉ_ngơi_lifestyle'})
+MERGE (o2:disease {id: 'viêm_đại_tràng_disease'})
+MERGE (o1)-[r134:preventedBy]->(o2)
+SET r134.text = 'Ngoài ra, để khắc phục hay hạn chế bệnh viêm đại tràng, người bệnh cần có một chế độ ăn uống và sinh hoạt hợp lý như: Hạn chế các sản phẩm từ sữa; ăn nhiều bữa nhỏ; uống nhiều nước; không dùng rượu, thuốc lá và đồ uống có chứa caffeine gây kích thích đường ruột, có một chế độ nghỉ ngơi, sinh hoạt hợp lý, thận trọng trong việc sử dụng thuốc giảm đau xương khớp cũng như thuốc kháng sinh hoặc các loại thuốc không kê toa.'
+
+MERGE (o1:treatment {id: 'thuốc_giảm_đau_xương_khớp_treatment'})
+MERGE (o2:disease {id: 'viêm_đại_tràng_disease'})
+MERGE (o1)-[r135:aggravatedBy]->(o2)
+SET r135.text = 'Ngoài ra, để khắc phục hay hạn chế bệnh viêm đại tràng, người bệnh cần có một chế độ ăn uống và sinh hoạt hợp lý như: Hạn chế các sản phẩm từ sữa; ăn nhiều bữa nhỏ; uống nhiều nước; không dùng rượu, thuốc lá và đồ uống có chứa caffeine gây kích thích đường ruột, có một chế độ nghỉ ngơi, sinh hoạt hợp lý, thận trọng trong việc sử dụng thuốc giảm đau xương khớp cũng như thuốc kháng sinh hoặc các loại thuốc không kê toa.'
+
+MERGE (o1:treatment {id: 'thuốc_kháng_sinh_treatment'})
+MERGE (o2:disease {id: 'viêm_đại_tràng_disease'})
+MERGE (o1)-[r136:aggravatedBy]->(o2)
+SET r136.text = 'Ngoài ra, để khắc phục hay hạn chế bệnh viêm đại tràng, người bệnh cần có một chế độ ăn uống và sinh hoạt hợp lý như: Hạn chế các sản phẩm từ sữa; ăn nhiều bữa nhỏ; uống nhiều nước; không dùng rượu, thuốc lá và đồ uống có chứa caffeine gây kích thích đường ruột, có một chế độ nghỉ ngơi, sinh hoạt hợp lý, thận trọng trong việc sử dụng thuốc giảm đau xương khớp cũng như thuốc kháng sinh hoặc các loại thuốc không kê toa.'
+
+MERGE (o1:treatment {id: 'thuốc_không_kê_toa_treatment'})
+MERGE (o2:disease {id: 'viêm_đại_tràng_disease'})
+MERGE (o1)-[r137:aggravatedBy]->(o2)
+SET r137.text = 'Ngoài ra, để khắc phục hay hạn chế bệnh viêm đại tràng, người bệnh cần có một chế độ ăn uống và sinh hoạt hợp lý như: Hạn chế các sản phẩm từ sữa; ăn nhiều bữa nhỏ; uống nhiều nước; không dùng rượu, thuốc lá và đồ uống có chứa caffeine gây kích thích đường ruột, có một chế độ nghỉ ngơi, sinh hoạt hợp lý, thận trọng trong việc sử dụng thuốc giảm đau xương khớp cũng như thuốc kháng sinh hoặc các loại thuốc không kê toa.'
+
+MERGE (o1:disease {id: 'viêm_đại_tràng_disease'})
+MERGE (o2:lifestyle {id: 'chất_lượng_cuộc_sống_lifestyle'})
+MERGE (o1)-[r138:affects]->(o2)
+SET r138.text = 'Viêm đại tràng có thể gây ra nhiều biến chứng ảnh hưởng chất lượng cuộc sống, làm tăng tỷ lệ bệnh tật và tử vong, thường gặp ở bệnh nhân viêm loét đại tràng và bệnh crohn.'
+
+MERGE (o1:disease {id: 'viêm_đại_tràng_disease'})
+MERGE (o2:disease {id: 'tỷ_lệ_bệnh_tật_disease'})
+MERGE (o1)-[r139:affects]->(o2)
+SET r139.text = 'Viêm đại tràng có thể gây ra nhiều biến chứng ảnh hưởng chất lượng cuộc sống, làm tăng tỷ lệ bệnh tật và tử vong, thường gặp ở bệnh nhân viêm loét đại tràng và bệnh crohn.'
+
+MERGE (o1:disease {id: 'viêm_đại_tràng_disease'})
+MERGE (o2:disease {id: 'tỷ_lệ_tử_vong_disease'})
+MERGE (o1)-[r140:affects]->(o2)
+SET r140.text = 'Viêm đại tràng có thể gây ra nhiều biến chứng ảnh hưởng chất lượng cuộc sống, làm tăng tỷ lệ bệnh tật và tử vong, thường gặp ở bệnh nhân viêm loét đại tràng và bệnh crohn.'
+
+MERGE (o1:disease {id: 'viêm_đại_tràng_disease'})
+MERGE (o2:disease {id: 'viêm_loét_đại_tràng_disease'})
+MERGE (o1)-[r141:associatedWith]->(o2)
+SET r141.text = 'Viêm đại tràng có thể gây ra nhiều biến chứng ảnh hưởng chất lượng cuộc sống, làm tăng tỷ lệ bệnh tật và tử vong, thường gặp ở bệnh nhân viêm loét đại tràng và bệnh crohn.'
+
+MERGE (o1:disease {id: 'viêm_đại_tràng_disease'})
+MERGE (o2:disease {id: 'bệnh_crohn_disease'})
+MERGE (o1)-[r142:associatedWith]->(o2)
+SET r142.text = 'Viêm đại tràng có thể gây ra nhiều biến chứng ảnh hưởng chất lượng cuộc sống, làm tăng tỷ lệ bệnh tật và tử vong, thường gặp ở bệnh nhân viêm loét đại tràng và bệnh crohn.'
+
+MERGE (o1:symptom {id: 'chít_hẹp_đại_tràng_symptom'})
+MERGE (o2:disease {id: 'viêm_đại_tràng_disease'})
+MERGE (o1)-[r143:isSymptomOf]->(o2)
+SET r143.text = 'Các biến chứng như: chít hẹp đại tràng, rò ruột, áp xe đại trực tràng, thủng ruột hoặc phình đại tràng nhiễm độc.'
+
+MERGE (o1:symptom {id: 'rò_ruột_symptom'})
+MERGE (o2:disease {id: 'viêm_đại_tràng_disease'})
+MERGE (o1)-[r144:isSymptomOf]->(o2)
+SET r144.text = 'Các biến chứng như: chít hẹp đại tràng, rò ruột, áp xe đại trực tràng, thủng ruột hoặc phình đại tràng nhiễm độc.'
+
+MERGE (o1:symptom {id: 'áp_xe_đại_trực_tràng_symptom'})
+MERGE (o2:disease {id: 'viêm_đại_tràng_disease'})
+MERGE (o1)-[r145:isSymptomOf]->(o2)
+SET r145.text = 'Các biến chứng như: chít hẹp đại tràng, rò ruột, áp xe đại trực tràng, thủng ruột hoặc phình đại tràng nhiễm độc.'
+
+MERGE (o1:symptom {id: 'thủng_ruột_symptom'})
+MERGE (o2:disease {id: 'viêm_đại_tràng_disease'})
+MERGE (o1)-[r146:isSymptomOf]->(o2)
+SET r146.text = 'Các biến chứng như: chít hẹp đại tràng, rò ruột, áp xe đại trực tràng, thủng ruột hoặc phình đại tràng nhiễm độc.'
+
+MERGE (o1:symptom {id: 'phình_đại_tràng_nhiễm_độc_symptom'})
+MERGE (o2:disease {id: 'viêm_đại_tràng_disease'})
+MERGE (o1)-[r147:isSymptomOf]->(o2)
+SET r147.text = 'Các biến chứng như: chít hẹp đại tràng, rò ruột, áp xe đại trực tràng, thủng ruột hoặc phình đại tràng nhiễm độc.'
+
+MERGE (o1:disease {id: 'viêm_loét_đại_tràng_disease'})
+MERGE (o2:disease {id: 'ung_thư_ruột_disease'})
+MERGE (o1)-[r148:affects]->(o2)
+SET r148.text = 'Viêm loét đại tràng lâu ngày còn tăng nguy cơ phát triển ung thư ruột làm tăng tỉ lệ tử vong.'
+
+MERGE (o1:disease {id: 'viêm_loét_đại_tràng_disease'})
+MERGE (o2:disease {id: 'tỉ_lệ_tử_vong_disease'})
+MERGE (o1)-[r149:affects]->(o2)
+SET r149.text = 'Viêm loét đại tràng lâu ngày còn tăng nguy cơ phát triển ung thư ruột làm tăng tỉ lệ tử vong.'
+
+MERGE (o1:symptom {id: 'loãng_xương_symptom'})
+MERGE (o2:disease {id: 'viêm_đại_tràng_disease'})
+MERGE (o1)-[r150:isSymptomOf]->(o2)
+SET r150.text = 'Ngoài ra, các biến chứng ngoài đường tiêu hóa có thể gặp như: loãng xương, tình trạng tăng đông, thiếu máu, sỏi mật, loét áp tơ, viêm đường mật xơ hóa nguyên phát, viêm khớp&#8230;'
+
+MERGE (o1:symptom {id: 'tình_trạng_tăng_đông_symptom'})
+MERGE (o2:disease {id: 'viêm_đại_tràng_disease'})
+MERGE (o1)-[r151:isSymptomOf]->(o2)
+SET r151.text = 'Ngoài ra, các biến chứng ngoài đường tiêu hóa có thể gặp như: loãng xương, tình trạng tăng đông, thiếu máu, sỏi mật, loét áp tơ, viêm đường mật xơ hóa nguyên phát, viêm khớp&#8230;'
+
+MERGE (o1:symptom {id: 'thiếu_máu_symptom'})
+MERGE (o2:disease {id: 'viêm_đại_tràng_disease'})
+MERGE (o1)-[r152:isSymptomOf]->(o2)
+SET r152.text = 'Ngoài ra, các biến chứng ngoài đường tiêu hóa có thể gặp như: loãng xương, tình trạng tăng đông, thiếu máu, sỏi mật, loét áp tơ, viêm đường mật xơ hóa nguyên phát, viêm khớp&#8230;'
+
+MERGE (o1:symptom {id: 'sỏi_mật_symptom'})
+MERGE (o2:disease {id: 'viêm_đại_tràng_disease'})
+MERGE (o1)-[r153:isSymptomOf]->(o2)
+SET r153.text = 'Ngoài ra, các biến chứng ngoài đường tiêu hóa có thể gặp như: loãng xương, tình trạng tăng đông, thiếu máu, sỏi mật, loét áp tơ, viêm đường mật xơ hóa nguyên phát, viêm khớp&#8230;'
+
+MERGE (o1:symptom {id: 'loét_áp_tơ_symptom'})
+MERGE (o2:disease {id: 'viêm_đại_tràng_disease'})
+MERGE (o1)-[r154:isSymptomOf]->(o2)
+SET r154.text = 'Ngoài ra, các biến chứng ngoài đường tiêu hóa có thể gặp như: loãng xương, tình trạng tăng đông, thiếu máu, sỏi mật, loét áp tơ, viêm đường mật xơ hóa nguyên phát, viêm khớp&#8230;'
+
+MERGE (o1:symptom {id: 'viêm_đường_mật_xơ_hóa_nguyên_phát_symptom'})
+MERGE (o2:disease {id: 'viêm_đại_tràng_disease'})
+MERGE (o1)-[r155:isSymptomOf]->(o2)
+SET r155.text = 'Ngoài ra, các biến chứng ngoài đường tiêu hóa có thể gặp như: loãng xương, tình trạng tăng đông, thiếu máu, sỏi mật, loét áp tơ, viêm đường mật xơ hóa nguyên phát, viêm khớp&#8230;'
+
+MERGE (o1:symptom {id: 'viêm_khớp_symptom'})
+MERGE (o2:disease {id: 'viêm_đại_tràng_disease'})
+MERGE (o1)-[r156:isSymptomOf]->(o2)
+SET r156.text = 'Ngoài ra, các biến chứng ngoài đường tiêu hóa có thể gặp như: loãng xương, tình trạng tăng đông, thiếu máu, sỏi mật, loét áp tơ, viêm đường mật xơ hóa nguyên phát, viêm khớp&#8230;'
+
+MERGE (o1:test {id: 'hỏi_bệnh_sử_test'})
+MERGE (o2:disease {id: 'viêm_đại_tràng_disease'})
+MERGE (o1)-[r157:diagnosedBy]->(o2)
+SET r157.text = 'Việc hỏi bệnh sử kết hợp thăm khám lâm sàng là bước đầu tiên quan trọng trong định hướng chẩn đoán các bệnh viêm đại tràng.'
+
+MERGE (o1:test {id: 'thăm_khám_lâm_sàng_test'})
+MERGE (o2:disease {id: 'viêm_đại_tràng_disease'})
+MERGE (o1)-[r158:diagnosedBy]->(o2)
+SET r158.text = 'Việc hỏi bệnh sử kết hợp thăm khám lâm sàng là bước đầu tiên quan trọng trong định hướng chẩn đoán các bệnh viêm đại tràng.'
+
+MERGE (o1:test {id: 'xét_nghiệm_máu_test'})
+MERGE (o2:disease {id: 'viêm_đại_tràng_disease'})
+MERGE (o1)-[r159:diagnosedBy]->(o2)
+SET r159.text = 'Sau đó bác sĩ có thể cho người bệnh thực hiện các xét nghiệm cần thiết để chẩn đoán như:  Xét nghiệm máu: Xét nghiệm máu có thể giúp bác sĩ kiểm tra tình trạng thiếu máu, tình trạng nhiễm trùng, hoặc các nguyên nhân miễn dịch khác.'
+
+MERGE (o1:test {id: 'xét_nghiệm_máu_test'})
+MERGE (o2:symptom {id: 'thiếu_máu_symptom'})
+MERGE (o1)-[r160:diagnosedBy]->(o2)
+SET r160.text = 'Xét nghiệm máu có thể giúp bác sĩ kiểm tra tình trạng thiếu máu, tình trạng nhiễm trùng, hoặc các nguyên nhân miễn dịch khác.'
+
+MERGE (o1:test {id: 'xét_nghiệm_máu_test'})
+MERGE (o2:cause {id: 'nhiễm_trùng_cause'})
+MERGE (o1)-[r161:diagnosedBy]->(o2)
+SET r161.text = 'Xét nghiệm máu có thể giúp bác sĩ kiểm tra tình trạng thiếu máu, tình trạng nhiễm trùng, hoặc các nguyên nhân miễn dịch khác.'
+
+MERGE (o1:test {id: 'xét_nghiệm_mẫu_phân_test'})
+MERGE (o2:disease {id: 'viêm_đại_tràng_disease'})
+MERGE (o1)-[r162:diagnosedBy]->(o2)
+SET r162.text = 'Xét nghiệm mẫu phân: Hồng cầu, bạch cầu hoặc ký sinh trùng trong phân có thể giúp chẩn đoán nguyên nhân viêm đại tràng chính xác hơn.'
+
+MERGE (o1:test {id: 'nội_soi_đại_tràng_test'})
+MERGE (o2:disease {id: 'viêm_đại_tràng_disease'})
+MERGE (o1)-[r163:diagnosedBy]->(o2)
+SET r163.text = 'Nội soi đại tràng: Phương pháp này cho phép bác sĩ xem toàn bộ ruột kết bằng một ống mỏng, linh hoạt, có ánh sáng và được gắn camera ở đầu.'
+
+MERGE (o1:test {id: 'nội_soi_đại_tràng_test'})
+MERGE (o2:organ {id: 'ruột_kết_organ'})
+MERGE (o1)-[r164:relatedTo]->(o2)
+SET r164.text = 'Nội soi đại tràng: Phương pháp này cho phép bác sĩ xem toàn bộ ruột kết bằng một ống mỏng, linh hoạt, có ánh sáng và được gắn camera ở đầu.'
+
+MERGE (o1:test {id: 'sinh_thiết_test'})
+MERGE (o2:disease {id: 'viêm_đại_tràng_disease'})
+MERGE (o1)-[r165:diagnosedBy]->(o2)
+SET r165.text = 'Trong quá trình nội soi, bác sĩ cũng có thể lấy các mẫu mô nhỏ (sinh thiết) nhằm khẳng định chẩn đoán chính xác hơn.'
+
+MERGE (o1:test {id: 'nội_soi_đại_tràng_sigma_test'})
+MERGE (o2:disease {id: 'viêm_đại_tràng_disease'})
+MERGE (o1)-[r166:diagnosedBy]->(o2)
+SET r166.text = 'Nội soi đại tràng sigma: Bác sĩ sử dụng một ống nội soi mảnh, linh hoạt, có ánh sáng để kiểm tra trực tràng và đại tràng xích ma - phần dưới của đại tràng.'
+
+MERGE (o1:test {id: 'nội_soi_đại_tràng_sigma_test'})
+MERGE (o2:organ {id: 'trực_tràng_organ'})
+MERGE (o1)-[r167:relatedTo]->(o2)
+SET r167.text = 'Nội soi đại tràng sigma: Bác sĩ sử dụng một ống nội soi mảnh, linh hoạt, có ánh sáng để kiểm tra trực tràng và đại tràng xích ma - phần dưới của đại tràng.'
+
+MERGE (o1:test {id: 'nội_soi_đại_tràng_sigma_test'})
+MERGE (o2:organ {id: 'đại_tràng_xích_ma_organ'})
+MERGE (o1)-[r168:relatedTo]->(o2)
+SET r168.text = 'Nội soi đại tràng sigma: Bác sĩ sử dụng một ống nội soi mảnh, linh hoạt, có ánh sáng để kiểm tra trực tràng và đại tràng xích ma - phần dưới của đại tràng.'
+
+MERGE (o1:test {id: 'chụp_x-quang_test'})
+MERGE (o2:disease {id: 'viêm_đại_tràng_disease'})
+MERGE (o1)-[r169:diagnosedBy]->(o2)
+SET r169.text = 'Nếu người bệnh có các triệu chứng nghiêm trọng, bác sĩ có thể chụp X-quang vùng bụng tiêu chuẩn để loại trừ các biến chứng nghiêm trọng, chẳng hạn như thủng ruột kết, tắc ruột.'
+
+MERGE (o1:test {id: 'chụp_x-quang_test'})
+MERGE (o2:symptom {id: 'thủng_ruột_kết_symptom'})
+MERGE (o1)-[r170:relatedTo]->(o2)
+SET r170.text = 'Nếu người bệnh có các triệu chứng nghiêm trọng, bác sĩ có thể chụp X-quang vùng bụng tiêu chuẩn để loại trừ các biến chứng nghiêm trọng, chẳng hạn như thủng ruột kết, tắc ruột.'
+
+MERGE (o1:test {id: 'chụp_x-quang_test'})
+MERGE (o2:symptom {id: 'tắc_ruột_symptom'})
+MERGE (o1)-[r171:relatedTo]->(o2)
+SET r171.text = 'Nếu người bệnh có các triệu chứng nghiêm trọng, bác sĩ có thể chụp X-quang vùng bụng tiêu chuẩn để loại trừ các biến chứng nghiêm trọng, chẳng hạn như thủng ruột kết, tắc ruột.'
+
+MERGE (o1:test {id: 'chụp_cắt_lớp_test'})
+MERGE (o2:disease {id: 'viêm_đại_tràng_disease'})
+MERGE (o1)-[r172:diagnosedBy]->(o2)
+SET r172.text = 'Chụp cắt lớp: Chụp CT vùng bụng hoặc xương chậu có thể được thực hiện nếu bác sĩ nghi ngờ biến chứng từ viêm đại tràng.'
+
+MERGE (o1:test {id: 'chụp_cắt_lớp_test'})
+MERGE (o2:organ {id: 'vùng_bụng_organ'})
+MERGE (o1)-[r173:relatedTo]->(o2)
+SET r173.text = 'Chụp cắt lớp: Chụp CT vùng bụng hoặc xương chậu có thể được thực hiện nếu bác sĩ nghi ngờ biến chứng từ viêm đại tràng.'
+
+MERGE (o1:test {id: 'chụp_cắt_lớp_test'})
+MERGE (o2:organ {id: 'xương_chậu_organ'})
+MERGE (o1)-[r174:relatedTo]->(o2)
+SET r174.text = 'Chụp cắt lớp: Chụp CT vùng bụng hoặc xương chậu có thể được thực hiện nếu bác sĩ nghi ngờ biến chứng từ viêm đại tràng.'
+
+MERGE (o1:test {id: 'chụp_ct_test'})
+MERGE (o2:symptom {id: 'viêm_symptom'})
+MERGE (o1)-[r175:relatedTo]->(o2)
+SET r175.text = 'Chụp CT cũng có thể tiết lộ mức độ viêm của ruột kết.'
+
+MERGE (o1:test {id: 'chụp_ct_test'})
+MERGE (o2:organ {id: 'ruột_kết_organ'})
+MERGE (o1)-[r176:relatedTo]->(o2)
+SET r176.text = 'Chụp CT cũng có thể tiết lộ mức độ viêm của ruột kết.'
+
+MERGE (o1:test {id: 'chụp_cắt_lớp_vi_tính_(ct)_ruột_non_test'})
+MERGE (o2:symptom {id: 'viêm_symptom'})
+MERGE (o1)-[r177:diagnosedBy]->(o2)
+SET r177.text = 'Chụp cắt lớp vi tính (CT) ruột non và cộng hưởng từ (MR) ruột: Bác sĩ có thể đề nghị một trong những xét nghiệm không xâm lấn này nếu họ muốn loại trừ bất kỳ chứng viêm nào trong ruột non.'
+
+MERGE (o1:test {id: 'chụp_cắt_lớp_vi_tính_(ct)_ruột_non_test'})
+MERGE (o2:organ {id: 'ruột_non_organ'})
+MERGE (o1)-[r178:relatedTo]->(o2)
+SET r178.text = 'Chụp cắt lớp vi tính (CT) ruột non và cộng hưởng từ (MR) ruột: Bác sĩ có thể đề nghị một trong những xét nghiệm không xâm lấn này nếu họ muốn loại trừ bất kỳ chứng viêm nào trong ruột non.'
+
+MERGE (o1:test {id: 'cộng_hưởng_từ_(mr)_ruột_test'})
+MERGE (o2:symptom {id: 'viêm_symptom'})
+MERGE (o1)-[r179:diagnosedBy]->(o2)
+SET r179.text = 'Chụp cắt lớp vi tính (CT) ruột non và cộng hưởng từ (MR) ruột: Bác sĩ có thể đề nghị một trong những xét nghiệm không xâm lấn này nếu họ muốn loại trừ bất kỳ chứng viêm nào trong ruột non.'
+
+MERGE (o1:disease {id: 'viêm_đại_tràng_disease'})
+MERGE (o2:symptom {id: 'viêm_trong_niêm_mạc_đại_tràng_symptom'})
+MERGE (o1)-[r180:isSymptomOf]->(o2)
+SET r180.text = 'Viêm đại tràng: Là tình trạng viêm trong niêm mạc đại tràng.'
+
+MERGE (o1:disease {id: 'viêm_đại_tràng_disease'})
+MERGE (o2:cause {id: 'vi_khuẩn__virus__ký_sinh_trùng__nấm__thiếu_máu_hoặc_tổn_thương_đại_tràng_miễn_dịch_không_rõ_nguyên_nhân_cause'})
+MERGE (o1)-[r181:causedBy]->(o2)
+SET r181.text = 'Viêm đại tràng: Là tình trạng viêm trong niêm mạc đại tràng. Điều này có thể xảy ra do vi khuẩn, virus, ký sinh trùng, nấm, thiếu máu hoặc tổn thương đại tràng miễn dịch không rõ nguyên nhân.'
+
+MERGE (o1:disease {id: 'hội_chứng_ruột_kích_thích_(ibs)_disease'})
+MERGE (o2:organ {id: 'đại_tràng_organ'})
+MERGE (o1)-[r182:affects]->(o2)
+SET r182.text = 'Hội chứng ruột kích thích (IBS): Là một rối loạn chức năng đại tràng. Không có tổn thương thực thể đại tràng.'
+
+MERGE (o1:disease {id: 'hội_chứng_ruột_kích_thích_(ibs)_disease'})
+MERGE (o2:symptom {id: 'tiêu_chảy__táo_bón_hoặc_xen_kẽ_symptom'})
+MERGE (o1)-[r183:isSymptomOf]->(o2)
+SET r183.text = 'Hội chứng ruột kích thích (IBS): Là một rối loạn chức năng đại tràng. Không có tổn thương thực thể đại tràng. Bệnh nhân có thể tiêu chảy, có thể táo bón hoặc xen kẽ, thường xảy ra sau ăn.'
+
+MERGE (o1:disease {id: 'hội_chứng_ruột_kích_thích_(ibs)_disease'})
+MERGE (o2:symptom {id: 'đau_bụng__chướng_bụng_khó_chịu_ở_bụng_symptom'})
+MERGE (o1)-[r184:isSymptomOf]->(o2)
+SET r184.text = 'Hội chứng ruột kích thích (IBS): Là một rối loạn chức năng đại tràng. Không có tổn thương thực thể đại tràng. Bệnh nhân có thể tiêu chảy, có thể táo bón hoặc xen kẽ, thường xảy ra sau ăn. Các triệu chứng đau bụng, chướng bụng khó chịu ở bụng thường giảm sau khi đi tiêu.'
+
+MERGE (o1:lifestyle {id: 'chế_độ_ăn_uống_lifestyle'})
+MERGE (o2:disease {id: 'bệnh_viêm_đại_tràng_disease'})
+MERGE (o1)-[r185:preventedBy]->(o2)
+SET r185.text = 'Chế độ ăn uống có vai trò quan trọng trong việc phòng ngừa bệnh viêm đại tràng.'
+
+MERGE (o1:food {id: 'đồ_ăn_chế_biến_sẵn_trong_siêu_thị__thức_ăn_nhanh__thức_ăn_nhiều_dầu_mỡ__chất_béo__thực_phẩm_chứa_cafein__rượu__bia_và_thuốc_lá_food'})
+MERGE (o2:disease {id: 'bệnh_viêm_đại_tràng_disease'})
+MERGE (o1)-[r186:aggravatedBy]->(o2)
+SET r186.text = 'Người bệnh nên hạn chế đồ ăn chế biến sẵn trong siêu thị, những thức ăn nhanh, thức ăn nhiều dầu mỡ, chất béo, thực phẩm chứa cafein, đồng thời tránh xa rượu, bia và thuốc lá.'
+
+MERGE (o1:lifestyle {id: 'uống_nhiều_nước__dùng_thực_phẩm_ít_chất_béo__tăng_cường_chất_xơ_trong_chế_độ_ăn__tránh_căng_thẳng__stress__vận_động_mỗi_ngày_lifestyle'})
+MERGE (o2:disease {id: 'bệnh_viêm_đại_tràng_disease'})
+MERGE (o1)-[r187:preventedBy]->(o2)
+SET r187.text = 'Thay vào đó, người dân nên uống nhiều nước, dùng thực phẩm ít chất béo; tăng cường chất xơ trong chế độ ăn, đồng thời tránh căng thẳng, stress; nên vận động mỗi ngày.'
+
+MERGE (o1:test {id: 'khám_sức_khỏe_định_kỳ_test'})
+MERGE (o2:disease {id: 'bệnh_viêm_đại_tràng_disease'})
+MERGE (o1)-[r188:diagnosedBy]->(o2)
+SET r188.text = 'Ngoài ra, người dân nên khám sức khỏe định kỳ để tầm soát bệnh tật, phát hiện và điều trị sớm bệnh viêm đại tràng.'
+
+MERGE (o1:disease {id: 'viêm_đại_tràng_disease'})
+MERGE (o2:disease {id: 'viêm_phúc_mạc__ung_thư_đại_tràng_disease'})
+MERGE (o1)-[r189:isSymptomOf]->(o2)
+SET r189.text = 'Viêm đại tràng là bệnh lý lành tính, song nếu không được điều trị sớm và đúng cách có thể xảy ra biến chứng ảnh hưởng nghiêm trọng tới sức khỏe và tính mạng của người bệnh, ví dụ như viêm phúc mạc, ung thư đại tràng…'
+
+MERGE (o1:disease {id: 'viêm_đại_tràng_mạn_disease'})
+MERGE (o2:treatment {id: 'điều_trị_nhằm_ngăn_chặn_sự_tiến_triển_và_làm_giảm_các_triệu_chứng_cũng_như_biến_chứng_và_ngăn_ngừa_bệnh_tái_phát_treatment'})
+MERGE (o1)-[r190:treatedBy]->(o2)
+SET r190.text = 'Viêm đại tràng mạn như viêm loét đại tràng và bệnh Crohn không thể chữa khỏi mà chỉ có thể điều trị nhằm ngăn chặn sự tiến triển và làm giảm các triệu chứng cũng như biến chứng và ngăn ngừa bệnh tái phát.'
+
+MERGE (o1:disease {id: 'viêm_đại_tràng_disease'})
+MERGE (o2:cause {id: 'vi_khuẩn__virus_ký_sinh_trùng_cause'})
+MERGE (o1)-[r191:causedBy]->(o2)
+SET r191.text = 'Viêm đại tràng do vi khuẩn, virus ký sinh trùng thường lây qua đường tiêu hóa như ăn phải thực phẩm, nước uống bị nhiễm khuẩn.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_ruột_(ibs)_disease'})
+MERGE (o2:disease {id: 'viêm_loét_đại_tràng_(uc)_và_bệnh_crohn_disease'})
+MERGE (o1)-[r192:relatedTo]->(o2)
+SET r192.text = 'Trong khi đó bệnh viêm ruột (IBS) như viêm loét đại tràng (UC) và bệnh Crohn là bệnh lý tự miễn và không rõ nguyên nhân.'
+
+MERGE (o1:disease {id: 'viêm_đại_tràng_disease'})
+MERGE (o2:disease {id: 'bệnh_về_tiêu_hóa_disease'})
+MERGE (o1)-[r193:relatedTo]->(o2)
+SET r193.text = 'Viêm đại tràng chiếm tỷ lệ cao trong số các bệnh về tiêu hóa ở Việt Nam.'
+
+MERGE (o1:lifestyle {id: 'sai_lầm_trong_chế_độ_ăn_uống_và_sinh_hoạt_lifestyle'})
+MERGE (o2:disease {id: 'bệnh_viêm_đại_tràng_disease'})
+MERGE (o1)-[r194:causedBy]->(o2)
+SET r194.text = 'Nguyên nhân chủ yếu của bệnh thường xuất phát từ các sai lầm trong chế độ ăn uống và sinh hoạt.'
+
+MERGE (o1:lifestyle {id: 'thiết_lập_một_chế_độ_ăn__uống_khoa_học;_sinh_hoạt_nghỉ_ngơi_hợp_lý__tránh_căng_thẳng_stress;_tẩy_giun_định_kỳ_lifestyle'})
+MERGE (o2:disease {id: 'bệnh_đại_tràng_disease'})
+MERGE (o1)-[r195:preventedBy]->(o2)
+SET r195.text = 'Để tránh mắc phải bệnh đại tràng, hoặc tránh để biến chứng nguy hiểm xảy ra, người dân nên nâng cao việc phòng ngừa bằng cách thiết lập một chế độ ăn, uống khoa học; sinh hoạt nghỉ ngơi hợp lý, tránh căng thẳng stress; tẩy giun định kỳ.'
+
+MERGE (o1:test {id: 'thăm_khám_sức_khỏe_thường_niên_test'})
+MERGE (o2:disease {id: 'bệnh_viêm_đại_tràng_disease'})
+MERGE (o1)-[r196:diagnosedBy]->(o2)
+SET r196.text = 'Ngoài ra, người dân cũng nên đi thăm khám sức khỏe thường niên nhằm tầm soát, phát hiện và điều trị sớm bệnh viêm đại tràng - Bác sĩ Huỳnh Văn Trung nhấn mạnh.'
+
+MERGE (o1:treatment {id: 'bệnh_viện_tâm_anh_treatment'})
+MERGE (o2:disease {id: 'viêm_đại_tràng_disease'})
+MERGE (o1)-[r197:treatedBy]->(o2)
+SET r197.text = 'Bệnh viện Tâm Anh là đơn vị thăm khám và điều trị các bệnh về tiêu hóa uy tín, trong đó có viêm đại tràng.'
+
+MERGE (o1:treatment {id: 'đội_ngũ_chuyên_gia_và_bác_sĩ_đầu_ngành__giỏi_nghề__giàu_kinh_nghiệm__hệ_thống_máy_móc__thiết_bị_y_tế_hiện_đại_hàng_đầu_treatment'})
+MERGE (o2:disease {id: 'viêm_đại_tràng_disease'})
+MERGE (o1)-[r198:treatedBy]->(o2)
+SET r198.text = 'Với đội ngũ chuyên gia và bác sĩ đầu ngành, giỏi nghề, giàu kinh nghiệm, lại được trang bị hệ thống máy móc, thiết bị y tế hiện đại hàng đầu.'

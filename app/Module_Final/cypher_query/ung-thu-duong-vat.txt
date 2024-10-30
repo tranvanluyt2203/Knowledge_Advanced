@@ -1,0 +1,725 @@
+
+MERGE (o1:disease {id: 'ung_thư_dương_vật_disease'})
+MERGE (o2:lifestyle {id: 'nam_giới_lifestyle'})
+MERGE (o1)-[r0:affects]->(o2)
+SET r0.text = 'Ung thư dương vật có thể xảy ra ở mọi nam giới nhưng người mắc bệnh thường rơi vào độ tuổi 60.'
+
+MERGE (o1:disease {id: 'ung_thư_dương_vật_disease'})
+MERGE (o2:lifestyle {id: 'độ_tuổi_60_lifestyle'})
+MERGE (o1)-[r1:associatedWith]->(o2)
+SET r1.text = 'Ung thư dương vật có thể xảy ra ở mọi nam giới nhưng người mắc bệnh thường rơi vào độ tuổi 60.'
+
+MERGE (o1:symptom {id: 'biểu_hiện_bất_thường_symptom'})
+MERGE (o2:disease {id: 'ung_thư_dương_vật_disease'})
+MERGE (o1)-[r2:isSymptomOf]->(o2)
+SET r2.text = 'Những biểu hiện bất thường xảy ra ở phần da dương vật, bìu, bao quy đầu (nếu chưa cắt bao quy đầu); nếu đi kèm nổi hạch, nam giới cần đến khám khoa Nam học - Tiết niệu càng sớm càng tốt.'
+
+MERGE (o1:symptom {id: 'biểu_hiện_bất_thường_symptom'})
+MERGE (o2:organ {id: 'dương_vật_organ'})
+MERGE (o1)-[r3:locatedIn]->(o2)
+SET r3.text = 'Những biểu hiện bất thường xảy ra ở phần da dương vật, bìu, bao quy đầu (nếu chưa cắt bao quy đầu); nếu đi kèm nổi hạch, nam giới cần đến khám khoa Nam học - Tiết niệu càng sớm càng tốt.'
+
+MERGE (o1:symptom {id: 'biểu_hiện_bất_thường_symptom'})
+MERGE (o2:organ {id: 'bìu_organ'})
+MERGE (o1)-[r4:locatedIn]->(o2)
+SET r4.text = 'Những biểu hiện bất thường xảy ra ở phần da dương vật, bìu, bao quy đầu (nếu chưa cắt bao quy đầu); nếu đi kèm nổi hạch, nam giới cần đến khám khoa Nam học - Tiết niệu càng sớm càng tốt.'
+
+MERGE (o1:symptom {id: 'biểu_hiện_bất_thường_symptom'})
+MERGE (o2:organ {id: 'bao_quy_đầu_organ'})
+MERGE (o1)-[r5:locatedIn]->(o2)
+SET r5.text = 'Những biểu hiện bất thường xảy ra ở phần da dương vật, bìu, bao quy đầu (nếu chưa cắt bao quy đầu); nếu đi kèm nổi hạch, nam giới cần đến khám khoa Nam học - Tiết niệu càng sớm càng tốt.'
+
+MERGE (o1:symptom {id: 'nổi_hạch_symptom'})
+MERGE (o2:disease {id: 'ung_thư_dương_vật_disease'})
+MERGE (o1)-[r6:isSymptomOf]->(o2)
+SET r6.text = 'Những biểu hiện bất thường xảy ra ở phần da dương vật, bìu, bao quy đầu (nếu chưa cắt bao quy đầu); nếu đi kèm nổi hạch, nam giới cần đến khám khoa Nam học - Tiết niệu càng sớm càng tốt.'
+
+MERGE (o1:test {id: 'khám_khoa_nam_học_-_tiết_niệu_test'})
+MERGE (o2:disease {id: 'ung_thư_dương_vật_disease'})
+MERGE (o1)-[r7:diagnosedBy]->(o2)
+SET r7.text = 'Những biểu hiện bất thường xảy ra ở phần da dương vật, bìu, bao quy đầu (nếu chưa cắt bao quy đầu); nếu đi kèm nổi hạch, nam giới cần đến khám khoa Nam học - Tiết niệu càng sớm càng tốt.'
+
+MERGE (o1:disease {id: 'ung_thư_dương_vật_disease'})
+MERGE (o2:organ {id: 'dương_vật_organ'})
+MERGE (o1)-[r8:locatedIn]->(o2)
+SET r8.text = 'Ung thư dương vật xảy ra khi các tế bào phát triển ngoài tầm kiểm soát bên ngoài hoặc trong dương vật của nam giới.'
+
+MERGE (o1:disease {id: 'ung_thư_dương_vật_disease'})
+MERGE (o2:cause {id: 'tế_bào_phát_triển_ngoài_tầm_kiểm_soát_cause'})
+MERGE (o1)-[r9:causedBy]->(o2)
+SET r9.text = 'Ung thư dương vật xảy ra khi các tế bào phát triển ngoài tầm kiểm soát bên ngoài hoặc trong dương vật của nam giới.'
+
+MERGE (o1:disease {id: 'ung_thư_dương_vật_disease'})
+MERGE (o2:cause {id: 'tế_bào_da_cause'})
+MERGE (o1)-[r10:causedBy]->(o2)
+SET r10.text = 'Bệnh thường bắt đầu từ các tế bào da, cũng có thể xuất hiện “mầm mống” bên trong trong dương vật.'
+
+MERGE (o1:disease {id: 'ung_thư_dương_vật_disease'})
+MERGE (o2:treatment {id: 'điều_trị_treatment'})
+MERGE (o1)-[r11:treatedBy]->(o2)
+SET r11.text = 'Ung thư dương vật hiếm khi xảy ra nhưng nếu phát hiện bệnh sớm, bệnh hoàn toàn có thể được điều trị.'
+
+MERGE (o1:treatment {id: 'phát_hiện_sớm_treatment'})
+MERGE (o2:treatment {id: 'điều_trị_hiệu_quả_treatment'})
+MERGE (o1)-[r12:relatedTo]->(o2)
+SET r12.text = 'Ung thư dương vật hiếm khi xảy ra nhưng nếu phát hiện bệnh sớm, bệnh hoàn toàn có thể được điều trị.'
+
+MERGE (o1:disease {id: 'ung_thư_dương_vật_disease'})
+MERGE (o2:cause {id: 'nguyên_nhân_chưa_rõ_ràng_cause'})
+MERGE (o1)-[r13:causedBy]->(o2)
+SET r13.text = 'Đến nay, nguyên nhân chính gây ra ung thư dương vật vẫn chưa rõ ràng.'
+
+MERGE (o1:cause {id: 'nguy_cơ_mắc_bệnh_cause'})
+MERGE (o2:disease {id: 'ung_thư_dương_vật_disease'})
+MERGE (o1)-[r14:associatedWith]->(o2)
+SET r14.text = 'Tuy nhiên, các nhà khoa học nhận thấy nam giới có các yếu tố sau đây thì nguy cơ mắc bệnh sẽ cao hơn.'
+
+MERGE (o1:cause {id: 'virus_u_nhú_ở_người_(hpv)_cause'})
+MERGE (o2:disease {id: 'ung_thư_dương_vật_disease'})
+MERGE (o1)-[r15:causedBy]->(o2)
+SET r15.text = 'Chúng bao gồm: Có virus u nhú ở người (HPV) Trên 60 tuổi Hút thuốc Có hệ thống miễn dịch suy yếu do mắc bệnh HIV/ AIDS Không cắt bao quy đầu, khi ấy chất lỏng và các chất khác có thể tích tụ dưới bao quy đầu, làm tăng khả năng phát triển ung thư Nam giới bị hẹp bao quy đầu khiến phần này bị bó chặt và khó rửa sạch, dẫn đến tình trạng tích tụ chất lỏng, cặn bã Đã điều trị bệnh vẩy nến bằng thuốc psoralen và tia cực tím (UV)'
+
+MERGE (o1:lifestyle {id: 'trên_60_tuổi_lifestyle'})
+MERGE (o2:disease {id: 'ung_thư_dương_vật_disease'})
+MERGE (o1)-[r16:causedBy]->(o2)
+SET r16.text = 'Chúng bao gồm: Có virus u nhú ở người (HPV) Trên 60 tuổi Hút thuốc Có hệ thống miễn dịch suy yếu do mắc bệnh HIV/ AIDS Không cắt bao quy đầu, khi ấy chất lỏng và các chất khác có thể tích tụ dưới bao quy đầu, làm tăng khả năng phát triển ung thư Nam giới bị hẹp bao quy đầu khiến phần này bị bó chặt và khó rửa sạch, dẫn đến tình trạng tích tụ chất lỏng, cặn bã Đã điều trị bệnh vẩy nến bằng thuốc psoralen và tia cực tím (UV)'
+
+MERGE (o1:lifestyle {id: 'hút_thuốc_lifestyle'})
+MERGE (o2:disease {id: 'ung_thư_dương_vật_disease'})
+MERGE (o1)-[r17:causedBy]->(o2)
+SET r17.text = 'Chúng bao gồm: Có virus u nhú ở người (HPV) Trên 60 tuổi Hút thuốc Có hệ thống miễn dịch suy yếu do mắc bệnh HIV/ AIDS Không cắt bao quy đầu, khi ấy chất lỏng và các chất khác có thể tích tụ dưới bao quy đầu, làm tăng khả năng phát triển ung thư Nam giới bị hẹp bao quy đầu khiến phần này bị bó chặt và khó rửa sạch, dẫn đến tình trạng tích tụ chất lỏng, cặn bã Đã điều trị bệnh vẩy nến bằng thuốc psoralen và tia cực tím (UV)'
+
+MERGE (o1:cause {id: 'hệ_thống_miễn_dịch_suy_yếu_cause'})
+MERGE (o2:disease {id: 'ung_thư_dương_vật_disease'})
+MERGE (o1)-[r18:causedBy]->(o2)
+SET r18.text = 'Chúng bao gồm: Có virus u nhú ở người (HPV) Trên 60 tuổi Hút thuốc Có hệ thống miễn dịch suy yếu do mắc bệnh HIV/ AIDS Không cắt bao quy đầu, khi ấy chất lỏng và các chất khác có thể tích tụ dưới bao quy đầu, làm tăng khả năng phát triển ung thư Nam giới bị hẹp bao quy đầu khiến phần này bị bó chặt và khó rửa sạch, dẫn đến tình trạng tích tụ chất lỏng, cặn bã Đã điều trị bệnh vẩy nến bằng thuốc psoralen và tia cực tím (UV)'
+
+MERGE (o1:disease {id: 'bệnh_hiv/_aids_disease'})
+MERGE (o2:cause {id: 'hệ_thống_miễn_dịch_suy_yếu_cause'})
+MERGE (o1)-[r19:associatedWith]->(o2)
+SET r19.text = 'Chúng bao gồm: Có virus u nhú ở người (HPV) Trên 60 tuổi Hút thuốc Có hệ thống miễn dịch suy yếu do mắc bệnh HIV/ AIDS Không cắt bao quy đầu, khi ấy chất lỏng và các chất khác có thể tích tụ dưới bao quy đầu, làm tăng khả năng phát triển ung thư Nam giới bị hẹp bao quy đầu khiến phần này bị bó chặt và khó rửa sạch, dẫn đến tình trạng tích tụ chất lỏng, cặn bã Đã điều trị bệnh vẩy nến bằng thuốc psoralen và tia cực tím (UV)'
+
+MERGE (o1:lifestyle {id: 'không_cắt_bao_quy_đầu_lifestyle'})
+MERGE (o2:disease {id: 'ung_thư_dương_vật_disease'})
+MERGE (o1)-[r20:causedBy]->(o2)
+SET r20.text = 'Chúng bao gồm: Có virus u nhú ở người (HPV) Trên 60 tuổi Hút thuốc Có hệ thống miễn dịch suy yếu do mắc bệnh HIV/ AIDS Không cắt bao quy đầu, khi ấy chất lỏng và các chất khác có thể tích tụ dưới bao quy đầu, làm tăng khả năng phát triển ung thư Nam giới bị hẹp bao quy đầu khiến phần này bị bó chặt và khó rửa sạch, dẫn đến tình trạng tích tụ chất lỏng, cặn bã Đã điều trị bệnh vẩy nến bằng thuốc psoralen và tia cực tím (UV)'
+
+MERGE (o1:cause {id: 'chất_lỏng_và_các_chất_khác_tích_tụ_cause'})
+MERGE (o2:disease {id: 'ung_thư_dương_vật_disease'})
+MERGE (o1)-[r21:causedBy]->(o2)
+SET r21.text = 'Chúng bao gồm: Có virus u nhú ở người (HPV) Trên 60 tuổi Hút thuốc Có hệ thống miễn dịch suy yếu do mắc bệnh HIV/ AIDS Không cắt bao quy đầu, khi ấy chất lỏng và các chất khác có thể tích tụ dưới bao quy đầu, làm tăng khả năng phát triển ung thư Nam giới bị hẹp bao quy đầu khiến phần này bị bó chặt và khó rửa sạch, dẫn đến tình trạng tích tụ chất lỏng, cặn bã Đã điều trị bệnh vẩy nến bằng thuốc psoralen và tia cực tím (UV)'
+
+MERGE (o1:cause {id: 'hẹp_bao_quy_đầu_cause'})
+MERGE (o2:disease {id: 'ung_thư_dương_vật_disease'})
+MERGE (o1)-[r22:causedBy]->(o2)
+SET r22.text = 'Chúng bao gồm: Có virus u nhú ở người (HPV) Trên 60 tuổi Hút thuốc Có hệ thống miễn dịch suy yếu do mắc bệnh HIV/ AIDS Không cắt bao quy đầu, khi ấy chất lỏng và các chất khác có thể tích tụ dưới bao quy đầu, làm tăng khả năng phát triển ung thư Nam giới bị hẹp bao quy đầu khiến phần này bị bó chặt và khó rửa sạch, dẫn đến tình trạng tích tụ chất lỏng, cặn bã Đã điều trị bệnh vẩy nến bằng thuốc psoralen và tia cực tím (UV)'
+
+MERGE (o1:symptom {id: 'những_thay_đổi_trên_da_dương_vật_symptom'})
+MERGE (o2:disease {id: 'ung_thư_dương_vật_disease'})
+MERGE (o1)-[r23:isSymptomOf]->(o2)
+SET r23.text = 'Những thay đổi trên da dương vật là triệu chứng phổ biến nhất của ung thư dương vật.'
+
+MERGE (o1:symptom {id: 'dấu_hiệu_symptom'})
+MERGE (o2:disease {id: 'ung_thư_dương_vật_disease'})
+MERGE (o1)-[r24:isSymptomOf]->(o2)
+SET r24.text = 'Dấu hiệu có thể xuất hiện trên bao quy đầu (nam giới chưa cắt bao quy đầu), trên đầu dương vật hoặc thân dương vật.'
+
+MERGE (o1:symptom {id: 'thay_đổi_độ_dày_hoặc_màu_sắc_da_dương_vật_symptom'})
+MERGE (o2:disease {id: 'ung_thư_dương_vật_disease'})
+MERGE (o1)-[r25:isSymptomOf]->(o2)
+SET r25.text = 'Các triệu chứng của ung thư dương vật bao gồm:  Thay đổi độ dày hoặc màu sắc da dương vật Phát ban hoặc các nốt sần nhỏ đóng vảy trên dương vật Nổi cục u trên dương vật Dịch tiết có mùi hôi dưới bao quy đầu Cảm thấy đau, có thể chảy máu khi cương cứng hoặc khi quan hệ tình dục Sưng dương vật Nổi cục phía dưới lớp da vùng háng'
+
+MERGE (o1:symptom {id: 'phát_ban_hoặc_các_nốt_sần_nhỏ_đóng_vảy_trên_dương_vật_symptom'})
+MERGE (o2:disease {id: 'ung_thư_dương_vật_disease'})
+MERGE (o1)-[r26:isSymptomOf]->(o2)
+SET r26.text = 'Các triệu chứng của ung thư dương vật bao gồm:  Thay đổi độ dày hoặc màu sắc da dương vật Phát ban hoặc các nốt sần nhỏ đóng vảy trên dương vật Nổi cục u trên dương vật Dịch tiết có mùi hôi dưới bao quy đầu Cảm thấy đau, có thể chảy máu khi cương cứng hoặc khi quan hệ tình dục Sưng dương vật Nổi cục phía dưới lớp da vùng háng'
+
+MERGE (o1:symptom {id: 'nổi_cục_u_trên_dương_vật_symptom'})
+MERGE (o2:disease {id: 'ung_thư_dương_vật_disease'})
+MERGE (o1)-[r27:isSymptomOf]->(o2)
+SET r27.text = 'Các triệu chứng của ung thư dương vật bao gồm:  Thay đổi độ dày hoặc màu sắc da dương vật Phát ban hoặc các nốt sần nhỏ đóng vảy trên dương vật Nổi cục u trên dương vật Dịch tiết có mùi hôi dưới bao quy đầu Cảm thấy đau, có thể chảy máu khi cương cứng hoặc khi quan hệ tình dục Sưng dương vật Nổi cục phía dưới lớp da vùng háng'
+
+MERGE (o1:symptom {id: 'dịch_tiết_có_mùi_hôi_dưới_bao_quy_đầu_symptom'})
+MERGE (o2:disease {id: 'ung_thư_dương_vật_disease'})
+MERGE (o1)-[r28:isSymptomOf]->(o2)
+SET r28.text = 'Các triệu chứng của ung thư dương vật bao gồm:  Thay đổi độ dày hoặc màu sắc da dương vật Phát ban hoặc các nốt sần nhỏ đóng vảy trên dương vật Nổi cục u trên dương vật Dịch tiết có mùi hôi dưới bao quy đầu Cảm thấy đau, có thể chảy máu khi cương cứng hoặc khi quan hệ tình dục Sưng dương vật Nổi cục phía dưới lớp da vùng háng'
+
+MERGE (o1:symptom {id: 'cảm_thấy_đau__có_thể_chảy_máu_khi_cương_cứng_hoặc_khi_quan_hệ_tình_dục_symptom'})
+MERGE (o2:disease {id: 'ung_thư_dương_vật_disease'})
+MERGE (o1)-[r29:isSymptomOf]->(o2)
+SET r29.text = 'Các triệu chứng của ung thư dương vật bao gồm:  Thay đổi độ dày hoặc màu sắc da dương vật Phát ban hoặc các nốt sần nhỏ đóng vảy trên dương vật Nổi cục u trên dương vật Dịch tiết có mùi hôi dưới bao quy đầu Cảm thấy đau, có thể chảy máu khi cương cứng hoặc khi quan hệ tình dục Sưng dương vật Nổi cục phía dưới lớp da vùng háng'
+
+MERGE (o1:symptom {id: 'sưng_dương_vật_symptom'})
+MERGE (o2:disease {id: 'ung_thư_dương_vật_disease'})
+MERGE (o1)-[r30:isSymptomOf]->(o2)
+SET r30.text = 'Các triệu chứng của ung thư dương vật bao gồm:  Thay đổi độ dày hoặc màu sắc da dương vật Phát ban hoặc các nốt sần nhỏ đóng vảy trên dương vật Nổi cục u trên dương vật Dịch tiết có mùi hôi dưới bao quy đầu Cảm thấy đau, có thể chảy máu khi cương cứng hoặc khi quan hệ tình dục Sưng dương vật Nổi cục phía dưới lớp da vùng háng'
+
+MERGE (o1:symptom {id: 'nổi_cục_phía_dưới_lớp_da_vùng_háng_symptom'})
+MERGE (o2:disease {id: 'ung_thư_dương_vật_disease'})
+MERGE (o1)-[r31:isSymptomOf]->(o2)
+SET r31.text = 'Các triệu chứng của ung thư dương vật bao gồm:  Thay đổi độ dày hoặc màu sắc da dương vật Phát ban hoặc các nốt sần nhỏ đóng vảy trên dương vật Nổi cục u trên dương vật Dịch tiết có mùi hôi dưới bao quy đầu Cảm thấy đau, có thể chảy máu khi cương cứng hoặc khi quan hệ tình dục Sưng dương vật Nổi cục phía dưới lớp da vùng háng'
+
+MERGE (o1:symptom {id: 'những_biểu_hiện_symptom'})
+MERGE (o2:disease {id: 'ung_thư_dương_vật_disease'})
+MERGE (o1)-[r32:isSymptomOf]->(o2)
+SET r32.text = 'Tuy nhiên, không phải lúc nào những biểu hiện này cũng được xem là cảnh báo của ung thư dương vật.'
+
+MERGE (o1:cause {id: 'nhiễm_trùng_cause'})
+MERGE (o2:symptom {id: 'những_biểu_hiện_symptom'})
+MERGE (o1)-[r33:causes]->(o2)
+SET r33.text = 'Những vấn để về nhiễm trùng hoặc phản ứng dị ứng cũng có thể gây ra những biểu hiện trên.'
+
+MERGE (o1:cause {id: 'phản_ứng_dị_ứng_cause'})
+MERGE (o2:symptom {id: 'những_biểu_hiện_symptom'})
+MERGE (o1)-[r34:causes]->(o2)
+SET r34.text = 'Những vấn để về nhiễm trùng hoặc phản ứng dị ứng cũng có thể gây ra những biểu hiện trên.'
+
+MERGE (o1:treatment {id: 'khám_chuyên_khoa_nam_học_-_tiết_niệu_treatment'})
+MERGE (o2:disease {id: 'ung_thư_dương_vật_disease'})
+MERGE (o1)-[r35:treatedBy]->(o2)
+SET r35.text = 'Do đó, cần đi khám chuyên khoa Nam học - Tiết niệu để bác sĩ xem xét và đưa hướng điều trị phù hợp.'
+
+MERGE (o1:disease {id: 'ung_thư_dương_vật_disease'})
+MERGE (o2:test {id: 'xét_nghiệm_test'})
+MERGE (o1)-[r36:diagnosedBy]->(o2)
+SET r36.text = 'Ung thư dương vật được chia thành 4 giai đoạn, tuân theo kết quả xét nghiệm.'
+
+MERGE (o1:disease {id: 'giai_đoạn_0_disease'})
+MERGE (o2:disease {id: 'ung_thư_dương_vật_disease'})
+MERGE (o1)-[r37:isSymptomOf]->(o2)
+SET r37.text = 'Giai đoạn 0: Ban đầu chỉ xuất hiện ở lớp trên cùng của da với những biểu hiện thay đổi nhẹ màu da ở vùng kín; đau nhói/ đau âm ỉ ở dương vật (đau hơn khi cương cứng hay va chạm); vết loét nhỏ giống hình súp lơ; cảm giác đau, nóng rát; dịch tiết ra có mùi hôi.'
+
+MERGE (o1:symptom {id: 'thay_đổi_nhẹ_màu_da_ở_vùng_kín_symptom'})
+MERGE (o2:disease {id: 'giai_đoạn_0_disease'})
+MERGE (o1)-[r38:isSymptomOf]->(o2)
+SET r38.text = 'Giai đoạn 0: Ban đầu chỉ xuất hiện ở lớp trên cùng của da với những biểu hiện thay đổi nhẹ màu da ở vùng kín; đau nhói/ đau âm ỉ ở dương vật (đau hơn khi cương cứng hay va chạm); vết loét nhỏ giống hình súp lơ; cảm giác đau, nóng rát; dịch tiết ra có mùi hôi.'
+
+MERGE (o1:symptom {id: 'đau_nhói/_đau_âm_ỉ_ở_dương_vật_symptom'})
+MERGE (o2:disease {id: 'giai_đoạn_0_disease'})
+MERGE (o1)-[r39:isSymptomOf]->(o2)
+SET r39.text = 'Giai đoạn 0: Ban đầu chỉ xuất hiện ở lớp trên cùng của da với những biểu hiện thay đổi nhẹ màu da ở vùng kín; đau nhói/ đau âm ỉ ở dương vật (đau hơn khi cương cứng hay va chạm); vết loét nhỏ giống hình súp lơ; cảm giác đau, nóng rát; dịch tiết ra có mùi hôi.'
+
+MERGE (o1:symptom {id: 'vết_loét_nhỏ_giống_hình_súp_lơ_symptom'})
+MERGE (o2:disease {id: 'giai_đoạn_0_disease'})
+MERGE (o1)-[r40:isSymptomOf]->(o2)
+SET r40.text = 'Giai đoạn 0: Ban đầu chỉ xuất hiện ở lớp trên cùng của da với những biểu hiện thay đổi nhẹ màu da ở vùng kín; đau nhói/ đau âm ỉ ở dương vật (đau hơn khi cương cứng hay va chạm); vết loét nhỏ giống hình súp lơ; cảm giác đau, nóng rát; dịch tiết ra có mùi hôi.'
+
+MERGE (o1:symptom {id: 'cảm_giác_đau__nóng_rát_symptom'})
+MERGE (o2:disease {id: 'giai_đoạn_0_disease'})
+MERGE (o1)-[r41:isSymptomOf]->(o2)
+SET r41.text = 'Giai đoạn 0: Ban đầu chỉ xuất hiện ở lớp trên cùng của da với những biểu hiện thay đổi nhẹ màu da ở vùng kín; đau nhói/ đau âm ỉ ở dương vật (đau hơn khi cương cứng hay va chạm); vết loét nhỏ giống hình súp lơ; cảm giác đau, nóng rát; dịch tiết ra có mùi hôi.'
+
+MERGE (o1:symptom {id: 'dịch_tiết_ra_có_mùi_hôi_symptom'})
+MERGE (o2:disease {id: 'giai_đoạn_0_disease'})
+MERGE (o1)-[r42:isSymptomOf]->(o2)
+SET r42.text = 'Giai đoạn 0: Ban đầu chỉ xuất hiện ở lớp trên cùng của da với những biểu hiện thay đổi nhẹ màu da ở vùng kín; đau nhói/ đau âm ỉ ở dương vật (đau hơn khi cương cứng hay va chạm); vết loét nhỏ giống hình súp lơ; cảm giác đau, nóng rát; dịch tiết ra có mùi hôi.'
+
+MERGE (o1:disease {id: 'giai_đoạn_0_disease'})
+MERGE (o2:organ {id: 'hạch_bạch_huyết_organ'})
+MERGE (o1)-[r43:affects]->(o2)
+SET r43.text = 'Ở giai đoạn này, ung thư dương vật có thể lây lan đến hạch bạch huyết hoặc các bộ phận khác của cơ thể.'
+
+MERGE (o1:disease {id: 'giai_đoạn_0_disease'})
+MERGE (o2:organ {id: 'các_bộ_phận_khác_của_cơ_thể_organ'})
+MERGE (o1)-[r44:affects]->(o2)
+SET r44.text = 'Ở giai đoạn này, ung thư dương vật có thể lây lan đến hạch bạch huyết hoặc các bộ phận khác của cơ thể.'
+
+MERGE (o1:disease {id: 'giai_đoạn_1_disease'})
+MERGE (o2:disease {id: 'ung_thư_dương_vật_disease'})
+MERGE (o1)-[r45:isSymptomOf]->(o2)
+SET r45.text = 'Giai đoạn 1: Biểu hiện bên ngoài, các vết loét đã tăng kích thước và ăn sâu vào trong.'
+
+MERGE (o1:symptom {id: 'các_vết_loét_đã_tăng_kích_thước_và_ăn_sâu_vào_trong_symptom'})
+MERGE (o2:disease {id: 'giai_đoạn_1_disease'})
+MERGE (o1)-[r46:isSymptomOf]->(o2)
+SET r46.text = 'Giai đoạn 1: Biểu hiện bên ngoài, các vết loét đã tăng kích thước và ăn sâu vào trong.'
+
+MERGE (o1:symptom {id: 'da_có_dấu_hiệu_hoại_tử_symptom'})
+MERGE (o2:disease {id: 'giai_đoạn_1_disease'})
+MERGE (o1)-[r47:isSymptomOf]->(o2)
+SET r47.text = 'Giai đoạn 1: Biểu hiện bên ngoài, các vết loét đã tăng kích thước và ăn sâu vào trong. Da có dấu hiệu hoại tử; tiết chất nhờn, đục, có mùi hôi.'
+
+MERGE (o1:symptom {id: 'tiết_chất_nhờn__đục__có_mùi_hôi_symptom'})
+MERGE (o2:disease {id: 'giai_đoạn_1_disease'})
+MERGE (o1)-[r48:isSymptomOf]->(o2)
+SET r48.text = 'Giai đoạn 1: Biểu hiện bên ngoài, các vết loét đã tăng kích thước và ăn sâu vào trong. Da có dấu hiệu hoại tử; tiết chất nhờn, đục, có mùi hôi.'
+
+MERGE (o1:disease {id: 'giai_đoạn_1_disease'})
+MERGE (o2:organ {id: 'các_mô_liên_kết_dưới_da_organ'})
+MERGE (o1)-[r49:affects]->(o2)
+SET r49.text = 'Lúc này, ung thư đã lan đến các mô liên kết dưới da, có thể lan rộng đến tuyến, hạch bạch huyết hoặc các bộ phận khác trên cơ thể.'
+
+MERGE (o1:disease {id: 'giai_đoạn_1_disease'})
+MERGE (o2:organ {id: 'tuyến_organ'})
+MERGE (o1)-[r50:affects]->(o2)
+SET r50.text = 'Lúc này, ung thư đã lan đến các mô liên kết dưới da, có thể lan rộng đến tuyến, hạch bạch huyết hoặc các bộ phận khác trên cơ thể.'
+
+MERGE (o1:disease {id: 'giai_đoạn_1_disease'})
+MERGE (o2:organ {id: 'hạch_bạch_huyết_organ'})
+MERGE (o1)-[r51:affects]->(o2)
+SET r51.text = 'Lúc này, ung thư đã lan đến các mô liên kết dưới da, có thể lan rộng đến tuyến, hạch bạch huyết hoặc các bộ phận khác trên cơ thể.'
+
+MERGE (o1:disease {id: 'giai_đoạn_1_disease'})
+MERGE (o2:organ {id: 'các_bộ_phận_khác_trên_cơ_thể_organ'})
+MERGE (o1)-[r52:affects]->(o2)
+SET r52.text = 'Lúc này, ung thư đã lan đến các mô liên kết dưới da, có thể lan rộng đến tuyến, hạch bạch huyết hoặc các bộ phận khác trên cơ thể.'
+
+MERGE (o1:disease {id: 'giai_đoạn_2_disease'})
+MERGE (o2:disease {id: 'ung_thư_dương_vật_disease'})
+MERGE (o1)-[r53:isSymptomOf]->(o2)
+SET r53.text = 'Giai đoạn 2: Ngoài triệu chứng giống ở giai đoạn 1, bước sang giai đoạn này, tế bào ung thư có thể đã lan đến các mô cương cứng hoặc niệu đạo; các bộ phận khác trên cơ thể.'
+
+MERGE (o1:disease {id: 'tế_bào_ung_thư_disease'})
+MERGE (o2:organ {id: 'các_mô_cương_cứng_organ'})
+MERGE (o1)-[r54:affects]->(o2)
+SET r54.text = 'Giai đoạn 2: Ngoài triệu chứng giống ở giai đoạn 1, bước sang giai đoạn này, tế bào ung thư có thể đã lan đến các mô cương cứng hoặc niệu đạo; các bộ phận khác trên cơ thể.'
+
+MERGE (o1:disease {id: 'tế_bào_ung_thư_disease'})
+MERGE (o2:organ {id: 'niệu_đạo_organ'})
+MERGE (o1)-[r55:affects]->(o2)
+SET r55.text = 'Giai đoạn 2: Ngoài triệu chứng giống ở giai đoạn 1, bước sang giai đoạn này, tế bào ung thư có thể đã lan đến các mô cương cứng hoặc niệu đạo; các bộ phận khác trên cơ thể.'
+
+MERGE (o1:disease {id: 'tế_bào_ung_thư_disease'})
+MERGE (o2:organ {id: 'các_bộ_phận_khác_trên_cơ_thể_organ'})
+MERGE (o1)-[r56:affects]->(o2)
+SET r56.text = 'Giai đoạn 2: Ngoài triệu chứng giống ở giai đoạn 1, bước sang giai đoạn này, tế bào ung thư có thể đã lan đến các mô cương cứng hoặc niệu đạo; các bộ phận khác trên cơ thể.'
+
+MERGE (o1:disease {id: 'giai_đoạn_3_disease'})
+MERGE (o2:disease {id: 'ung_thư_dương_vật_disease'})
+MERGE (o1)-[r57:isSymptomOf]->(o2)
+SET r57.text = 'Giai đoạn 3: Ung thư đã lan đến các mô liên kết dưới da, các mạch bạch huyết, mạch máu.'
+
+MERGE (o1:disease {id: 'ung_thư_disease'})
+MERGE (o2:organ {id: 'các_mô_liên_kết_dưới_da_organ'})
+MERGE (o1)-[r58:affects]->(o2)
+SET r58.text = 'Giai đoạn 3: Ung thư đã lan đến các mô liên kết dưới da, các mạch bạch huyết, mạch máu.'
+
+MERGE (o1:disease {id: 'ung_thư_disease'})
+MERGE (o2:organ {id: 'các_mạch_bạch_huyết_organ'})
+MERGE (o1)-[r59:affects]->(o2)
+SET r59.text = 'Giai đoạn 3: Ung thư đã lan đến các mô liên kết dưới da, các mạch bạch huyết, mạch máu.'
+
+MERGE (o1:disease {id: 'ung_thư_disease'})
+MERGE (o2:organ {id: 'mạch_máu_organ'})
+MERGE (o1)-[r60:affects]->(o2)
+SET r60.text = 'Giai đoạn 3: Ung thư đã lan đến các mô liên kết dưới da, các mạch bạch huyết, mạch máu.'
+
+MERGE (o1:disease {id: 'tế_bào_ung_thư_disease'})
+MERGE (o2:organ {id: 'các_mô_cương_cứng_organ'})
+MERGE (o1)-[r61:affects]->(o2)
+SET r61.text = 'Thậm chí, tế bào ung thư có thể đã lan đến các mô cương cứng, niệu đạo, hạch bạch huyết ở háng (hạch bẹn to cứng) và bộ phận khác trên cơ thể.'
+
+MERGE (o1:disease {id: 'tế_bào_ung_thư_disease'})
+MERGE (o2:organ {id: 'niệu_đạo_organ'})
+MERGE (o1)-[r62:affects]->(o2)
+SET r62.text = 'Thậm chí, tế bào ung thư có thể đã lan đến các mô cương cứng, niệu đạo, hạch bạch huyết ở háng (hạch bẹn to cứng) và bộ phận khác trên cơ thể.'
+
+MERGE (o1:disease {id: 'tế_bào_ung_thư_disease'})
+MERGE (o2:organ {id: 'hạch_bạch_huyết_ở_háng_organ'})
+MERGE (o1)-[r63:affects]->(o2)
+SET r63.text = 'Thậm chí, tế bào ung thư có thể đã lan đến các mô cương cứng, niệu đạo, hạch bạch huyết ở háng (hạch bẹn to cứng) và bộ phận khác trên cơ thể.'
+
+MERGE (o1:disease {id: 'tế_bào_ung_thư_disease'})
+MERGE (o2:organ {id: 'bộ_phận_khác_trên_cơ_thể_organ'})
+MERGE (o1)-[r64:affects]->(o2)
+SET r64.text = 'Thậm chí, tế bào ung thư có thể đã lan đến các mô cương cứng, niệu đạo, hạch bạch huyết ở háng (hạch bẹn to cứng) và bộ phận khác trên cơ thể.'
+
+MERGE (o1:disease {id: 'giai_đoạn_4_disease'})
+MERGE (o2:disease {id: 'ung_thư_dương_vật_disease'})
+MERGE (o1)-[r65:isSymptomOf]->(o2)
+SET r65.text = 'Giai đoạn 4 (giai đoạn cuối): Người bệnh lúc này gầy sút, suy kiệt, chán ăn, nôn ra máu… Các tế bào ung thư cũng đã lan đến các khu vực gần dương vật như xương mu, bìu dưới dương vật, thậm chí lan sang các khu vực và cơ quan khác của cơ thể.'
+
+MERGE (o1:symptom {id: 'gầy_sút_symptom'})
+MERGE (o2:disease {id: 'giai_đoạn_4_disease'})
+MERGE (o1)-[r66:isSymptomOf]->(o2)
+SET r66.text = 'Giai đoạn 4 (giai đoạn cuối): Người bệnh lúc này gầy sút, suy kiệt, chán ăn, nôn ra máu… Các tế bào ung thư cũng đã lan đến các khu vực gần dương vật như xương mu, bìu dưới dương vật, thậm chí lan sang các khu vực và cơ quan khác của cơ thể.'
+
+MERGE (o1:symptom {id: 'suy_kiệt_symptom'})
+MERGE (o2:disease {id: 'giai_đoạn_4_disease'})
+MERGE (o1)-[r67:isSymptomOf]->(o2)
+SET r67.text = 'Giai đoạn 4 (giai đoạn cuối): Người bệnh lúc này gầy sút, suy kiệt, chán ăn, nôn ra máu… Các tế bào ung thư cũng đã lan đến các khu vực gần dương vật như xương mu, bìu dưới dương vật, thậm chí lan sang các khu vực và cơ quan khác của cơ thể.'
+
+MERGE (o1:symptom {id: 'chán_ăn_symptom'})
+MERGE (o2:disease {id: 'giai_đoạn_4_disease'})
+MERGE (o1)-[r68:isSymptomOf]->(o2)
+SET r68.text = 'Giai đoạn 4 (giai đoạn cuối): Người bệnh lúc này gầy sút, suy kiệt, chán ăn, nôn ra máu… Các tế bào ung thư cũng đã lan đến các khu vực gần dương vật như xương mu, bìu dưới dương vật, thậm chí lan sang các khu vực và cơ quan khác của cơ thể.'
+
+MERGE (o1:symptom {id: 'nôn_ra_máu_symptom'})
+MERGE (o2:disease {id: 'giai_đoạn_4_disease'})
+MERGE (o1)-[r69:isSymptomOf]->(o2)
+SET r69.text = 'Giai đoạn 4 (giai đoạn cuối): Người bệnh lúc này gầy sút, suy kiệt, chán ăn, nôn ra máu… Các tế bào ung thư cũng đã lan đến các khu vực gần dương vật như xương mu, bìu dưới dương vật, thậm chí lan sang các khu vực và cơ quan khác của cơ thể.'
+
+MERGE (o1:disease {id: 'tế_bào_ung_thư_disease'})
+MERGE (o2:organ {id: 'xương_mu_organ'})
+MERGE (o1)-[r70:affects]->(o2)
+SET r70.text = 'Giai đoạn 4 (giai đoạn cuối): Người bệnh lúc này gầy sút, suy kiệt, chán ăn, nôn ra máu… Các tế bào ung thư cũng đã lan đến các khu vực gần dương vật như xương mu, bìu dưới dương vật, thậm chí lan sang các khu vực và cơ quan khác của cơ thể.'
+
+MERGE (o1:disease {id: 'tế_bào_ung_thư_disease'})
+MERGE (o2:organ {id: 'bìu_dưới_dương_vật_organ'})
+MERGE (o1)-[r71:affects]->(o2)
+SET r71.text = 'Giai đoạn 4 (giai đoạn cuối): Người bệnh lúc này gầy sút, suy kiệt, chán ăn, nôn ra máu… Các tế bào ung thư cũng đã lan đến các khu vực gần dương vật như xương mu, bìu dưới dương vật, thậm chí lan sang các khu vực và cơ quan khác của cơ thể.'
+
+MERGE (o1:disease {id: 'tế_bào_ung_thư_disease'})
+MERGE (o2:organ {id: 'các_khu_vực_và_cơ_quan_khác_của_cơ_thể_organ'})
+MERGE (o1)-[r72:affects]->(o2)
+SET r72.text = 'Giai đoạn 4 (giai đoạn cuối): Người bệnh lúc này gầy sút, suy kiệt, chán ăn, nôn ra máu… Các tế bào ung thư cũng đã lan đến các khu vực gần dương vật như xương mu, bìu dưới dương vật, thậm chí lan sang các khu vực và cơ quan khác của cơ thể.'
+
+MERGE (o1:disease {id: 'ung_thư_dương_vật_disease'})
+MERGE (o2:treatment {id: 'chữa_trị_treatment'})
+MERGE (o1)-[r73:treatedBy]->(o2)
+SET r73.text = 'Ung thư dương vật nguy hiểm nhưng có thể chữa trị.'
+
+MERGE (o1:disease {id: 'ung_thư_dương_vật_giai_đoạn_0_hoặc_1_disease'})
+MERGE (o2:treatment {id: 'phẫu_thuật_treatment'})
+MERGE (o1)-[r74:treatedBy]->(o2)
+SET r74.text = 'Nếu phát hiện ung thư dương vật giai đoạn 0 hoặc 1, vẫn còn giới hạn ở dương vật, tính từ thời điểm chẩn đoán có tỷ lệ sống thêm sau 5 năm khoảng 85% sau phẫu thuật.'
+
+MERGE (o1:disease {id: 'giai_đoạn_3_và_4_disease'})
+MERGE (o2:symptom {id: 'tỷ_lệ_sống_thêm_sau_5_năm_symptom'})
+MERGE (o1)-[r75:relatedTo]->(o2)
+SET r75.text = 'Ở giai đoạn 3 và 4 có tỷ lệ sống thêm sau 5 năm khoảng 59%.'
+
+MERGE (o1:disease {id: 'ung_thư_di_căn_disease'})
+MERGE (o2:symptom {id: 'tỷ_lệ_sống_thêm_sau_5_năm_symptom'})
+MERGE (o1)-[r76:relatedTo]->(o2)
+SET r76.text = 'Nếu ung thư di căn đến các bộ phận xa của cơ thể, tỷ lệ sống thêm sau 5 năm là 11%.'
+
+MERGE (o1:test {id: 'phát_hiện_ung_thư_test'})
+MERGE (o2:disease {id: 'ung_thư_disease'})
+MERGE (o1)-[r77:diagnosedBy]->(o2)
+SET r77.text = 'Do đó, tùy từng thời điểm phát hiện ung thư, phát hiện càng sớm khả năng chữa khỏi càng cao và bảo tồn được “cậu nhỏ”.'
+
+MERGE (o1:cause {id: 'chấn_thương_dương_vật_cause'})
+MERGE (o2:disease {id: 'ung_thư_dương_vật_disease'})
+MERGE (o1)-[r78:causedBy]->(o2)
+SET r78.text = 'Nam giới khi thấy bất cứ dấu hiệu ung thư dương vật nào (nêu trên) hoặc có các yếu tố sau cũng nên đi khám bác sĩ Nam khoa thường xuyên:  Từng bị chấn thương dương vật, nhiễm trùng đường tiết niệu hoặc bị mụn cóc sinh dục'
+
+MERGE (o1:cause {id: 'nhiễm_trùng_đường_tiết_niệu_cause'})
+MERGE (o2:disease {id: 'ung_thư_dương_vật_disease'})
+MERGE (o1)-[r79:causedBy]->(o2)
+SET r79.text = 'Nam giới khi thấy bất cứ dấu hiệu ung thư dương vật nào (nêu trên) hoặc có các yếu tố sau cũng nên đi khám bác sĩ Nam khoa thường xuyên:  Từng bị chấn thương dương vật, nhiễm trùng đường tiết niệu hoặc bị mụn cóc sinh dục'
+
+MERGE (o1:cause {id: 'mụn_cóc_sinh_dục_cause'})
+MERGE (o2:disease {id: 'ung_thư_dương_vật_disease'})
+MERGE (o1)-[r80:causedBy]->(o2)
+SET r80.text = 'Nam giới khi thấy bất cứ dấu hiệu ung thư dương vật nào (nêu trên) hoặc có các yếu tố sau cũng nên đi khám bác sĩ Nam khoa thường xuyên:  Từng bị chấn thương dương vật, nhiễm trùng đường tiết niệu hoặc bị mụn cóc sinh dục'
+
+MERGE (o1:cause {id: 'hẹp_bao_quy_đầu_cause'})
+MERGE (o2:disease {id: 'ung_thư_dương_vật_disease'})
+MERGE (o1)-[r81:causedBy]->(o2)
+SET r81.text = 'Nam giới khi thấy bất cứ dấu hiệu ung thư dương vật nào (nêu trên) hoặc có các yếu tố sau cũng nên đi khám bác sĩ Nam khoa thường xuyên:  Từng bị chấn thương dương vật, nhiễm trùng đường tiết niệu hoặc bị mụn cóc sinh dục Bị hẹp bao quy đầu nhưng chưa cắt Được chẩn đoán niệu đạo hẹp'
+
+MERGE (o1:cause {id: 'niệu_đạo_hẹp_cause'})
+MERGE (o2:disease {id: 'ung_thư_dương_vật_disease'})
+MERGE (o1)-[r82:causedBy]->(o2)
+SET r82.text = 'Nam giới khi thấy bất cứ dấu hiệu ung thư dương vật nào (nêu trên) hoặc có các yếu tố sau cũng nên đi khám bác sĩ Nam khoa thường xuyên:  Từng bị chấn thương dương vật, nhiễm trùng đường tiết niệu hoặc bị mụn cóc sinh dục Bị hẹp bao quy đầu nhưng chưa cắt Được chẩn đoán niệu đạo hẹp'
+
+MERGE (o1:test {id: 'sinh_thiết_test'})
+MERGE (o2:disease {id: 'ung_thư_dương_vật_disease'})
+MERGE (o1)-[r83:diagnosedBy]->(o2)
+SET r83.text = 'Bác sĩ sẽ khám sức khỏe và hỏi về các triệu chứng. Cần thiết, bác sĩ sẽ chỉ định người bệnh thực hiện các xét nghiệm như:  Sinh thiết: Bác sĩ sẽ lấy một mẫu mô nhỏ từ khu vực tổn thương trên da dương vật để kiểm tra tế bào ung thư.'
+
+MERGE (o1:test {id: 'chụp_x-quang_test'})
+MERGE (o2:disease {id: 'ung_thư_dương_vật_disease'})
+MERGE (o1)-[r84:diagnosedBy]->(o2)
+SET r84.text = 'Bác sĩ sẽ khám sức khỏe và hỏi về các triệu chứng. Cần thiết, bác sĩ sẽ chỉ định người bệnh thực hiện các xét nghiệm như:  Sinh thiết: Bác sĩ sẽ lấy một mẫu mô nhỏ từ khu vực tổn thương trên da dương vật để kiểm tra tế bào ung thư. Các xét nghiệm hình ảnh như chụp X-quang, chụp CT, siêu âm và chụp cộng hưởng từ (MRI) để tìm các khối u hoặc các dấu hiệu khác cho thấy ung thư đã di căn đến các bộ phận khác trong cơ thể.'
+
+MERGE (o1:test {id: 'chụp_ct_test'})
+MERGE (o2:disease {id: 'ung_thư_dương_vật_disease'})
+MERGE (o1)-[r85:diagnosedBy]->(o2)
+SET r85.text = 'Bác sĩ sẽ khám sức khỏe và hỏi về các triệu chứng. Cần thiết, bác sĩ sẽ chỉ định người bệnh thực hiện các xét nghiệm như:  Sinh thiết: Bác sĩ sẽ lấy một mẫu mô nhỏ từ khu vực tổn thương trên da dương vật để kiểm tra tế bào ung thư. Các xét nghiệm hình ảnh như chụp X-quang, chụp CT, siêu âm và chụp cộng hưởng từ (MRI) để tìm các khối u hoặc các dấu hiệu khác cho thấy ung thư đã di căn đến các bộ phận khác trong cơ thể.'
+
+MERGE (o1:test {id: 'siêu_âm_test'})
+MERGE (o2:disease {id: 'ung_thư_dương_vật_disease'})
+MERGE (o1)-[r86:diagnosedBy]->(o2)
+SET r86.text = 'Bác sĩ sẽ khám sức khỏe và hỏi về các triệu chứng. Cần thiết, bác sĩ sẽ chỉ định người bệnh thực hiện các xét nghiệm như:  Sinh thiết: Bác sĩ sẽ lấy một mẫu mô nhỏ từ khu vực tổn thương trên da dương vật để kiểm tra tế bào ung thư. Các xét nghiệm hình ảnh như chụp X-quang, chụp CT, siêu âm và chụp cộng hưởng từ (MRI) để tìm các khối u hoặc các dấu hiệu khác cho thấy ung thư đã di căn đến các bộ phận khác trong cơ thể.'
+
+MERGE (o1:test {id: 'chụp_cộng_hưởng_từ_(mri)_test'})
+MERGE (o2:disease {id: 'ung_thư_dương_vật_disease'})
+MERGE (o1)-[r87:diagnosedBy]->(o2)
+SET r87.text = 'Bác sĩ sẽ khám sức khỏe và hỏi về các triệu chứng. Cần thiết, bác sĩ sẽ chỉ định người bệnh thực hiện các xét nghiệm như:  Sinh thiết: Bác sĩ sẽ lấy một mẫu mô nhỏ từ khu vực tổn thương trên da dương vật để kiểm tra tế bào ung thư. Các xét nghiệm hình ảnh như chụp X-quang, chụp CT, siêu âm và chụp cộng hưởng từ (MRI) để tìm các khối u hoặc các dấu hiệu khác cho thấy ung thư đã di căn đến các bộ phận khác trong cơ thể.'
+
+MERGE (o1:treatment {id: 'thuốc_ở_dạng_kem_bôi_da_treatment'})
+MERGE (o2:disease {id: 'ung_thư_dương_vật_disease'})
+MERGE (o1)-[r88:treatedBy]->(o2)
+SET r88.text = 'Nếu ung thư ở giai đoạn đầu, việc điều trị có thể bao gồm:  Thuốc ở dạng kem bôi da'
+
+MERGE (o1:treatment {id: 'phương_pháp_áp_lạnh_treatment'})
+MERGE (o2:disease {id: 'ung_thư_dương_vật_disease'})
+MERGE (o1)-[r89:treatedBy]->(o2)
+SET r89.text = 'Nếu ung thư ở giai đoạn đầu, việc điều trị có thể bao gồm:  Thuốc ở dạng kem bôi da Phương pháp áp lạnh, một thủ thuật sử dụng chất lỏng cực lạnh hoặc một thiết bị để đóng băng và phá hủy mô ung thư'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_mohs_treatment'})
+MERGE (o2:disease {id: 'ung_thư_dương_vật_disease'})
+MERGE (o1)-[r90:treatedBy]->(o2)
+SET r90.text = 'Nếu ung thư ở giai đoạn đầu, việc điều trị có thể bao gồm:  Thuốc ở dạng kem bôi da Phương pháp áp lạnh, một thủ thuật sử dụng chất lỏng cực lạnh hoặc một thiết bị để đóng băng và phá hủy mô ung thư Phẫu thuật Mohs bằng cách loại bỏ từng lớp da bị ảnh hưởng từng cho đến khi chạm đến mô khỏe mạnh'
+
+MERGE (o1:treatment {id: 'laser_treatment'})
+MERGE (o2:disease {id: 'ung_thư_dương_vật_disease'})
+MERGE (o1)-[r91:treatedBy]->(o2)
+SET r91.text = 'Nếu ung thư ở giai đoạn đầu, việc điều trị có thể bao gồm:  Thuốc ở dạng kem bôi da Phương pháp áp lạnh, một thủ thuật sử dụng chất lỏng cực lạnh hoặc một thiết bị để đóng băng và phá hủy mô ung thư Phẫu thuật Mohs bằng cách loại bỏ từng lớp da bị ảnh hưởng từng cho đến khi chạm đến mô khỏe mạnh Laser để cắt và tiêu diệt các khu vực có ung thư'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_cắt_bao_quy_đầu_treatment'})
+MERGE (o2:disease {id: 'ung_thư_dương_vật_disease'})
+MERGE (o1)-[r92:treatedBy]->(o2)
+SET r92.text = 'Nếu ung thư ở giai đoạn đầu, việc điều trị có thể bao gồm:  Thuốc ở dạng kem bôi da Phương pháp áp lạnh, một thủ thuật sử dụng chất lỏng cực lạnh hoặc một thiết bị để đóng băng và phá hủy mô ung thư Phẫu thuật Mohs bằng cách loại bỏ từng lớp da bị ảnh hưởng từng cho đến khi chạm đến mô khỏe mạnh Laser để cắt và tiêu diệt các khu vực có ung thư Phẫu thuật cắt bao quy đầu nếu chỉ bị ung thư ở phần bao quy đầu'
+
+MERGE (o1:organ {id: 'nam_giới_organ'})
+MERGE (o2:organ {id: 'dương_vật_organ'})
+MERGE (o1)-[r93:locatedIn]->(o2)
+SET r93.text = 'Nam giới khi thấy bất cứ dấu hiệu ung thư dương vật nào (nêu trên) hoặc có các yếu tố sau cũng nên đi khám bác sĩ Nam khoa thường xuyên:  Từng bị chấn thương dương vật, nhiễm trùng đường tiết niệu hoặc bị mụn cóc sinh dục Bị hẹp bao quy đầu nhưng chưa cắt Được chẩn đoán niệu đạo hẹp'
+
+MERGE (o1:organ {id: 'dương_vật_organ'})
+MERGE (o2:disease {id: 'ung_thư_dương_vật_disease'})
+MERGE (o1)-[r94:affectedBy]->(o2)
+SET r94.text = 'Nam giới khi thấy bất cứ dấu hiệu ung thư dương vật nào (nêu trên) hoặc có các yếu tố sau cũng nên đi khám bác sĩ Nam khoa thường xuyên:  Từng bị chấn thương dương vật, nhiễm trùng đường tiết niệu hoặc bị mụn cóc sinh dục Bị hẹp bao quy đầu nhưng chưa cắt Được chẩn đoán niệu đạo hẹp'
+
+MERGE (o1:organ {id: 'da_dương_vật_organ'})
+MERGE (o2:disease {id: 'ung_thư_dương_vật_disease'})
+MERGE (o1)-[r95:affectedBy]->(o2)
+SET r95.text = 'Bác sĩ sẽ khám sức khỏe và hỏi về các triệu chứng. Cần thiết, bác sĩ sẽ chỉ định người bệnh thực hiện các xét nghiệm như:  Sinh thiết: Bác sĩ sẽ lấy một mẫu mô nhỏ từ khu vực tổn thương trên da dương vật để kiểm tra tế bào ung thư.'
+
+MERGE (o1:symptom {id: 'khối_u_symptom'})
+MERGE (o2:disease {id: 'ung_thư_dương_vật_disease'})
+MERGE (o1)-[r96:isSymptomOf]->(o2)
+SET r96.text = 'Bác sĩ sẽ khám sức khỏe và hỏi về các triệu chứng. Cần thiết, bác sĩ sẽ chỉ định người bệnh thực hiện các xét nghiệm như:  Sinh thiết: Bác sĩ sẽ lấy một mẫu mô nhỏ từ khu vực tổn thương trên da dương vật để kiểm tra tế bào ung thư. Các xét nghiệm hình ảnh như chụp X-quang, chụp CT, siêu âm và chụp cộng hưởng từ (MRI) để tìm các khối u hoặc các dấu hiệu khác cho thấy ung thư đã di căn đến các bộ phận khác trong cơ thể.'
+
+MERGE (o1:disease {id: 'ung_thư_disease'})
+MERGE (o2:disease {id: 'di_căn_disease'})
+MERGE (o1)-[r97:relatedTo]->(o2)
+SET r97.text = 'Bác sĩ sẽ khám sức khỏe và hỏi về các triệu chứng. Cần thiết, bác sĩ sẽ chỉ định người bệnh thực hiện các xét nghiệm như:  Sinh thiết: Bác sĩ sẽ lấy một mẫu mô nhỏ từ khu vực tổn thương trên da dương vật để kiểm tra tế bào ung thư. Các xét nghiệm hình ảnh như chụp X-quang, chụp CT, siêu âm và chụp cộng hưởng từ (MRI) để tìm các khối u hoặc các dấu hiệu khác cho thấy ung thư đã di căn đến các bộ phận khác trong cơ thể.'
+
+MERGE (o1:lifestyle {id: 'nam_giới_từ_độ_tuổi_60_lifestyle'})
+MERGE (o2:test {id: 'tự_kiểm_tra_những_thay_đổi_trên_vùng_kín_test'})
+MERGE (o1)-[r98:relatedTo]->(o2)
+SET r98.text = 'Theo lời khuyên của bác sĩ Nam khoa, nam giới nên tuân theo những biện pháp phòng ngừa sau:  Nam giới từ độ tuổi 60 nên thường xuyên tự kiểm tra những thay đổi trên vùng kín (nhất là da).'
+
+MERGE (o1:test {id: 'tự_kiểm_tra_những_thay_đổi_trên_vùng_kín_test'})
+MERGE (o2:organ {id: 'vùng_kín_organ'})
+MERGE (o1)-[r99:relatedTo]->(o2)
+SET r99.text = 'Theo lời khuyên của bác sĩ Nam khoa, nam giới nên tuân theo những biện pháp phòng ngừa sau:  Nam giới từ độ tuổi 60 nên thường xuyên tự kiểm tra những thay đổi trên vùng kín (nhất là da).'
+
+MERGE (o1:test {id: 'tự_kiểm_tra_những_thay_đổi_trên_vùng_kín_test'})
+MERGE (o2:organ {id: 'da_organ'})
+MERGE (o1)-[r100:relatedTo]->(o2)
+SET r100.text = 'Theo lời khuyên của bác sĩ Nam khoa, nam giới nên tuân theo những biện pháp phòng ngừa sau:  Nam giới từ độ tuổi 60 nên thường xuyên tự kiểm tra những thay đổi trên vùng kín (nhất là da).'
+
+MERGE (o1:test {id: 'thăm_khám_sức_khỏe_định_kỳ_test'})
+MERGE (o2:disease {id: 'ung_thư_dương_vật_disease'})
+MERGE (o1)-[r101:relatedTo]->(o2)
+SET r101.text = 'Theo lời khuyên của bác sĩ Nam khoa, nam giới nên tuân theo những biện pháp phòng ngừa sau:  Nam giới từ độ tuổi 60 nên thường xuyên tự kiểm tra những thay đổi trên vùng kín (nhất là da). Thăm khám sức khỏe định kỳ mỗi 6 tháng một lần tại các cơ sở y tế có chuyên khoa nam học, ung bướu để tầm soát ung thư dương vật khi có các yếu tố nguy cơ,… nhằm phát hiện sớm dấu ấn ung thư và can thiệp kịp thời.'
+
+MERGE (o1:test {id: 'thăm_khám_sức_khỏe_định_kỳ_test'})
+MERGE (o2:cause {id: 'yếu_tố_nguy_cơ_cause'})
+MERGE (o1)-[r102:relatedTo]->(o2)
+SET r102.text = 'Theo lời khuyên của bác sĩ Nam khoa, nam giới nên tuân theo những biện pháp phòng ngừa sau:  Nam giới từ độ tuổi 60 nên thường xuyên tự kiểm tra những thay đổi trên vùng kín (nhất là da). Thăm khám sức khỏe định kỳ mỗi 6 tháng một lần tại các cơ sở y tế có chuyên khoa nam học, ung bướu để tầm soát ung thư dương vật khi có các yếu tố nguy cơ,… nhằm phát hiện sớm dấu ấn ung thư và can thiệp kịp thời.'
+
+MERGE (o1:test {id: 'thăm_khám_sức_khỏe_định_kỳ_test'})
+MERGE (o2:disease {id: 'ung_thư_dương_vật_disease'})
+MERGE (o1)-[r103:diagnosedBy]->(o2)
+SET r103.text = 'Theo lời khuyên của bác sĩ Nam khoa, nam giới nên tuân theo những biện pháp phòng ngừa sau:  Nam giới từ độ tuổi 60 nên thường xuyên tự kiểm tra những thay đổi trên vùng kín (nhất là da). Thăm khám sức khỏe định kỳ mỗi 6 tháng một lần tại các cơ sở y tế có chuyên khoa nam học, ung bướu để tầm soát ung thư dương vật khi có các yếu tố nguy cơ,… nhằm phát hiện sớm dấu ấn ung thư và can thiệp kịp thời.'
+
+MERGE (o1:symptom {id: 'dấu_ấn_ung_thư_symptom'})
+MERGE (o2:disease {id: 'ung_thư_dương_vật_disease'})
+MERGE (o1)-[r104:isSymptomOf]->(o2)
+SET r104.text = 'Theo lời khuyên của bác sĩ Nam khoa, nam giới nên tuân theo những biện pháp phòng ngừa sau:  Nam giới từ độ tuổi 60 nên thường xuyên tự kiểm tra những thay đổi trên vùng kín (nhất là da). Thăm khám sức khỏe định kỳ mỗi 6 tháng một lần tại các cơ sở y tế có chuyên khoa nam học, ung bướu để tầm soát ung thư dương vật khi có các yếu tố nguy cơ,… nhằm phát hiện sớm dấu ấn ung thư và can thiệp kịp thời.'
+
+MERGE (o1:lifestyle {id: 'đời_sống_tình_dục_lành_mạnh_lifestyle'})
+MERGE (o2:disease {id: 'nhiễm_hpv_disease'})
+MERGE (o1)-[r105:preventedBy]->(o2)
+SET r105.text = 'Duy trì đời sống tình dục lành mạnh, sử dụng bao cao su để tránh nhiễm HPV, HIV hay các loại vi khuẩn, virus khác gây viêm bao quy đầu'
+
+MERGE (o1:lifestyle {id: 'đời_sống_tình_dục_lành_mạnh_lifestyle'})
+MERGE (o2:disease {id: 'nhiễm_hiv_disease'})
+MERGE (o1)-[r106:preventedBy]->(o2)
+SET r106.text = 'Duy trì đời sống tình dục lành mạnh, sử dụng bao cao su để tránh nhiễm HPV, HIV hay các loại vi khuẩn, virus khác gây viêm bao quy đầu'
+
+MERGE (o1:lifestyle {id: 'đời_sống_tình_dục_lành_mạnh_lifestyle'})
+MERGE (o2:disease {id: 'viêm_bao_quy_đầu_disease'})
+MERGE (o1)-[r107:preventedBy]->(o2)
+SET r107.text = 'Duy trì đời sống tình dục lành mạnh, sử dụng bao cao su để tránh nhiễm HPV, HIV hay các loại vi khuẩn, virus khác gây viêm bao quy đầu'
+
+MERGE (o1:treatment {id: 'bao_cao_su_treatment'})
+MERGE (o2:disease {id: 'nhiễm_hpv_disease'})
+MERGE (o1)-[r108:preventedBy]->(o2)
+SET r108.text = 'Duy trì đời sống tình dục lành mạnh, sử dụng bao cao su để tránh nhiễm HPV, HIV hay các loại vi khuẩn, virus khác gây viêm bao quy đầu'
+
+MERGE (o1:treatment {id: 'bao_cao_su_treatment'})
+MERGE (o2:disease {id: 'nhiễm_hiv_disease'})
+MERGE (o1)-[r109:preventedBy]->(o2)
+SET r109.text = 'Duy trì đời sống tình dục lành mạnh, sử dụng bao cao su để tránh nhiễm HPV, HIV hay các loại vi khuẩn, virus khác gây viêm bao quy đầu'
+
+MERGE (o1:treatment {id: 'bao_cao_su_treatment'})
+MERGE (o2:disease {id: 'viêm_bao_quy_đầu_disease'})
+MERGE (o1)-[r110:preventedBy]->(o2)
+SET r110.text = 'Duy trì đời sống tình dục lành mạnh, sử dụng bao cao su để tránh nhiễm HPV, HIV hay các loại vi khuẩn, virus khác gây viêm bao quy đầu'
+
+MERGE (o1:cause {id: 'vi_khuẩn_cause'})
+MERGE (o2:disease {id: 'viêm_bao_quy_đầu_disease'})
+MERGE (o1)-[r111:causes]->(o2)
+SET r111.text = 'Duy trì đời sống tình dục lành mạnh, sử dụng bao cao su để tránh nhiễm HPV, HIV hay các loại vi khuẩn, virus khác gây viêm bao quy đầu'
+
+MERGE (o1:cause {id: 'virus_cause'})
+MERGE (o2:disease {id: 'viêm_bao_quy_đầu_disease'})
+MERGE (o1)-[r112:causes]->(o2)
+SET r112.text = 'Duy trì đời sống tình dục lành mạnh, sử dụng bao cao su để tránh nhiễm HPV, HIV hay các loại vi khuẩn, virus khác gây viêm bao quy đầu'
+
+MERGE (o1:lifestyle {id: 'hút_thuốc_lá_lifestyle'})
+MERGE (o2:disease {id: 'ung_thư_dương_vật_disease'})
+MERGE (o1)-[r113:aggravatedBy]->(o2)
+SET r113.text = 'Không hút thuốc lá, lạm dụng rượu bia'
+
+MERGE (o1:lifestyle {id: 'lạm_dụng_rượu_bia_lifestyle'})
+MERGE (o2:disease {id: 'ung_thư_dương_vật_disease'})
+MERGE (o1)-[r114:aggravatedBy]->(o2)
+SET r114.text = 'Không hút thuốc lá, lạm dụng rượu bia'
+
+MERGE (o1:lifestyle {id: 'tập_thể_dục_hàng_ngày_lifestyle'})
+MERGE (o2:disease {id: 'ung_thư_dương_vật_disease'})
+MERGE (o1)-[r115:preventedBy]->(o2)
+SET r115.text = 'Tập thể dục hàng ngày'
+
+MERGE (o1:lifestyle {id: 'ăn_uống_khoa_học_lifestyle'})
+MERGE (o2:disease {id: 'ung_thư_dương_vật_disease'})
+MERGE (o1)-[r116:preventedBy]->(o2)
+SET r116.text = 'Ăn uống khoa học'
+
+MERGE (o1:lifestyle {id: 'căng_thẳng_stress_lifestyle'})
+MERGE (o2:disease {id: 'ung_thư_dương_vật_disease'})
+MERGE (o1)-[r117:aggravatedBy]->(o2)
+SET r117.text = 'Tránh căng thẳng stress và tiếp xúc với hóa chất độc hại'
+
+MERGE (o1:lifestyle {id: 'tiếp_xúc_với_hóa_chất_độc_hại_lifestyle'})
+MERGE (o2:disease {id: 'ung_thư_dương_vật_disease'})
+MERGE (o1)-[r118:aggravatedBy]->(o2)
+SET r118.text = 'Tránh căng thẳng stress và tiếp xúc với hóa chất độc hại'
+
+MERGE (o1:treatment {id: 'cắt_bao_quy_đầu_treatment'})
+MERGE (o2:disease {id: 'ung_thư_dương_vật_disease'})
+MERGE (o1)-[r119:preventedBy]->(o2)
+SET r119.text = 'Ngoài ra, cắt bao quy đầu ngay từ khi mới chào đời đã được chứng minh và công nhận là một biện pháp có thể giúp phòng ngừa ung thư dương vật hiệu quả cho nam giới.'
+
+MERGE (o1:organ {id: 'trung_tâm_tiết_niệu_thận_học_organ'})
+MERGE (o2:organ {id: 'hệ_thống_bvđk_tâm_anh_organ'})
+MERGE (o1)-[r120:locatedIn]->(o2)
+SET r120.text = 'Trung tâm Tiết niệu Thận học, Khoa Nam học – Tiết niệu của Hệ thống BVĐK Tâm Anh quy tụ đội ngũ các chuyên gia đầu ngành, Nội khoa và Ngoại khoa, giỏi chuyên môn, tận tâm.'
+
+MERGE (o1:organ {id: 'khoa_nam_học_–_tiết_niệu_organ'})
+MERGE (o2:organ {id: 'hệ_thống_bvđk_tâm_anh_organ'})
+MERGE (o1)-[r121:locatedIn]->(o2)
+SET r121.text = 'Trung tâm Tiết niệu Thận học, Khoa Nam học – Tiết niệu của Hệ thống BVĐK Tâm Anh quy tụ đội ngũ các chuyên gia đầu ngành, Nội khoa và Ngoại khoa, giỏi chuyên môn, tận tâm.'
+
+MERGE (o1:treatment {id: 'chuyên_gia_đầu_ngành_treatment'})
+MERGE (o2:treatment {id: 'nội_khoa_treatment'})
+MERGE (o1)-[r122:relatedTo]->(o2)
+SET r122.text = 'Trung tâm Tiết niệu Thận học, Khoa Nam học – Tiết niệu của Hệ thống BVĐK Tâm Anh quy tụ đội ngũ các chuyên gia đầu ngành, Nội khoa và Ngoại khoa, giỏi chuyên môn, tận tâm.'
+
+MERGE (o1:treatment {id: 'chuyên_gia_đầu_ngành_treatment'})
+MERGE (o2:treatment {id: 'ngoại_khoa_treatment'})
+MERGE (o1)-[r123:relatedTo]->(o2)
+SET r123.text = 'Trung tâm Tiết niệu Thận học, Khoa Nam học – Tiết niệu của Hệ thống BVĐK Tâm Anh quy tụ đội ngũ các chuyên gia đầu ngành, Nội khoa và Ngoại khoa, giỏi chuyên môn, tận tâm.'
+
+MERGE (o1:treatment {id: 'nhà_giáo_nhân_dân_gs.ts.bs_trần_quán_anh_treatment'})
+MERGE (o2:treatment {id: 'ngành_tiết_niệu_thận_học_việt_nam_treatment'})
+MERGE (o1)-[r124:relatedTo]->(o2)
+SET r124.text = 'Nhà giáo nhân dân GS.TS.BS Trần Quán Anh, Thầy thuốc ưu tú PGS.TS.BS Vũ Lê Chuyên là những cây đại thụ trong ngành Tiết niệu Thận học Việt Nam.'
+
+MERGE (o1:treatment {id: 'thầy_thuốc_ưu_tú_pgs.ts.bs_vũ_lê_chuyên_treatment'})
+MERGE (o2:treatment {id: 'ngành_tiết_niệu_thận_học_việt_nam_treatment'})
+MERGE (o1)-[r125:relatedTo]->(o2)
+SET r125.text = 'Nhà giáo nhân dân GS.TS.BS Trần Quán Anh, Thầy thuốc ưu tú PGS.TS.BS Vũ Lê Chuyên là những cây đại thụ trong ngành Tiết niệu Thận học Việt Nam.'
+
+MERGE (o1:treatment {id: 'thầy_thuốc_ưu_tú_ts.bs_nguyễn_thế_trường_treatment'})
+MERGE (o2:disease {id: 'bệnh_lý_về_thận_disease'})
+MERGE (o1)-[r126:relatedTo]->(o2)
+SET r126.text = 'Cùng với các tên tuổi Thầy thuốc ưu tú TS.BS Nguyễn Thế Trường Thầy thuốc ưu tú BS.CKII Tạ Phương Dung, TS.BS Nguyễn Hoàng Đức, TS.BS Từ Thành Trí Dũng, ThS.BS.CKI Nguyễn Đức Nhuận, BS.CKII Nguyễn Lê Tuyên, ThS.BS Nguyễn Tân Cương, BS.CKII Đinh Cẩm Tú, BS.CKII Ngô Đồng Dũng, BS.CKII Võ Thị Kim Thanh ThS.BS Tạ Ngọc Thạch, BS.CKI Phan Trường Nam… Các chuyên gia, bác sĩ của Trung tâm luôn tự tin làm chủ những kỹ thuật mới nhất, phát hiện sớm và điều trị hiệu quả các bệnh lý về thận, đường tiết niệu, giúp người bệnh rút ngắn thời gian nằm viện, hạn chế nguy cơ tái phát, nâng cao chất lượng cuộc sống.'
+
+MERGE (o1:treatment {id: 'thầy_thuốc_ưu_tú_bs.ckii_tạ_phương_dung_treatment'})
+MERGE (o2:disease {id: 'bệnh_lý_về_thận_disease'})
+MERGE (o1)-[r127:relatedTo]->(o2)
+SET r127.text = 'Cùng với các tên tuổi Thầy thuốc ưu tú TS.BS Nguyễn Thế Trường Thầy thuốc ưu tú BS.CKII Tạ Phương Dung, TS.BS Nguyễn Hoàng Đức, TS.BS Từ Thành Trí Dũng, ThS.BS.CKI Nguyễn Đức Nhuận, BS.CKII Nguyễn Lê Tuyên, ThS.BS Nguyễn Tân Cương, BS.CKII Đinh Cẩm Tú, BS.CKII Ngô Đồng Dũng, BS.CKII Võ Thị Kim Thanh ThS.BS Tạ Ngọc Thạch, BS.CKI Phan Trường Nam… Các chuyên gia, bác sĩ của Trung tâm luôn tự tin làm chủ những kỹ thuật mới nhất, phát hiện sớm và điều trị hiệu quả các bệnh lý về thận, đường tiết niệu, giúp người bệnh rút ngắn thời gian nằm viện, hạn chế nguy cơ tái phát, nâng cao chất lượng cuộc sống.'
+
+MERGE (o1:treatment {id: 'ts.bs_nguyễn_hoàng_đức_treatment'})
+MERGE (o2:disease {id: 'bệnh_lý_về_thận_disease'})
+MERGE (o1)-[r128:relatedTo]->(o2)
+SET r128.text = 'Cùng với các tên tuổi Thầy thuốc ưu tú TS.BS Nguyễn Thế Trường Thầy thuốc ưu tú BS.CKII Tạ Phương Dung, TS.BS Nguyễn Hoàng Đức, TS.BS Từ Thành Trí Dũng, ThS.BS.CKI Nguyễn Đức Nhuận, BS.CKII Nguyễn Lê Tuyên, ThS.BS Nguyễn Tân Cương, BS.CKII Đinh Cẩm Tú, BS.CKII Ngô Đồng Dũng, BS.CKII Võ Thị Kim Thanh ThS.BS Tạ Ngọc Thạch, BS.CKI Phan Trường Nam… Các chuyên gia, bác sĩ của Trung tâm luôn tự tin làm chủ những kỹ thuật mới nhất, phát hiện sớm và điều trị hiệu quả các bệnh lý về thận, đường tiết niệu, giúp người bệnh rút ngắn thời gian nằm viện, hạn chế nguy cơ tái phát, nâng cao chất lượng cuộc sống.'
+
+MERGE (o1:treatment {id: 'ts.bs_từ_thành_trí_dũng_treatment'})
+MERGE (o2:disease {id: 'bệnh_lý_về_thận_disease'})
+MERGE (o1)-[r129:relatedTo]->(o2)
+SET r129.text = 'Cùng với các tên tuổi Thầy thuốc ưu tú TS.BS Nguyễn Thế Trường Thầy thuốc ưu tú BS.CKII Tạ Phương Dung, TS.BS Nguyễn Hoàng Đức, TS.BS Từ Thành Trí Dũng, ThS.BS.CKI Nguyễn Đức Nhuận, BS.CKII Nguyễn Lê Tuyên, ThS.BS Nguyễn Tân Cương, BS.CKII Đinh Cẩm Tú, BS.CKII Ngô Đồng Dũng, BS.CKII Võ Thị Kim Thanh ThS.BS Tạ Ngọc Thạch, BS.CKI Phan Trường Nam… Các chuyên gia, bác sĩ của Trung tâm luôn tự tin làm chủ những kỹ thuật mới nhất, phát hiện sớm và điều trị hiệu quả các bệnh lý về thận, đường tiết niệu, giúp người bệnh rút ngắn thời gian nằm viện, hạn chế nguy cơ tái phát, nâng cao chất lượng cuộc sống.'
+
+MERGE (o1:treatment {id: 'ths.bs.cki_nguyễn_đức_nhuận_treatment'})
+MERGE (o2:disease {id: 'bệnh_lý_về_thận_disease'})
+MERGE (o1)-[r130:relatedTo]->(o2)
+SET r130.text = 'Cùng với các tên tuổi Thầy thuốc ưu tú TS.BS Nguyễn Thế Trường Thầy thuốc ưu tú BS.CKII Tạ Phương Dung, TS.BS Nguyễn Hoàng Đức, TS.BS Từ Thành Trí Dũng, ThS.BS.CKI Nguyễn Đức Nhuận, BS.CKII Nguyễn Lê Tuyên, ThS.BS Nguyễn Tân Cương, BS.CKII Đinh Cẩm Tú, BS.CKII Ngô Đồng Dũng, BS.CKII Võ Thị Kim Thanh ThS.BS Tạ Ngọc Thạch, BS.CKI Phan Trường Nam… Các chuyên gia, bác sĩ của Trung tâm luôn tự tin làm chủ những kỹ thuật mới nhất, phát hiện sớm và điều trị hiệu quả các bệnh lý về thận, đường tiết niệu, giúp người bệnh rút ngắn thời gian nằm viện, hạn chế nguy cơ tái phát, nâng cao chất lượng cuộc sống.'
+
+MERGE (o1:treatment {id: 'bs.ckii_nguyễn_lê_tuyên_treatment'})
+MERGE (o2:disease {id: 'bệnh_lý_về_thận_disease'})
+MERGE (o1)-[r131:relatedTo]->(o2)
+SET r131.text = 'Cùng với các tên tuổi Thầy thuốc ưu tú TS.BS Nguyễn Thế Trường Thầy thuốc ưu tú BS.CKII Tạ Phương Dung, TS.BS Nguyễn Hoàng Đức, TS.BS Từ Thành Trí Dũng, ThS.BS.CKI Nguyễn Đức Nhuận, BS.CKII Nguyễn Lê Tuyên, ThS.BS Nguyễn Tân Cương, BS.CKII Đinh Cẩm Tú, BS.CKII Ngô Đồng Dũng, BS.CKII Võ Thị Kim Thanh ThS.BS Tạ Ngọc Thạch, BS.CKI Phan Trường Nam… Các chuyên gia, bác sĩ của Trung tâm luôn tự tin làm chủ những kỹ thuật mới nhất, phát hiện sớm và điều trị hiệu quả các bệnh lý về thận, đường tiết niệu, giúp người bệnh rút ngắn thời gian nằm viện, hạn chế nguy cơ tái phát, nâng cao chất lượng cuộc sống.'
+
+MERGE (o1:treatment {id: 'ths.bs_nguyễn_tân_cương_treatment'})
+MERGE (o2:disease {id: 'bệnh_lý_về_thận_disease'})
+MERGE (o1)-[r132:relatedTo]->(o2)
+SET r132.text = 'Cùng với các tên tuổi Thầy thuốc ưu tú TS.BS Nguyễn Thế Trường Thầy thuốc ưu tú BS.CKII Tạ Phương Dung, TS.BS Nguyễn Hoàng Đức, TS.BS Từ Thành Trí Dũng, ThS.BS.CKI Nguyễn Đức Nhuận, BS.CKII Nguyễn Lê Tuyên, ThS.BS Nguyễn Tân Cương, BS.CKII Đinh Cẩm Tú, BS.CKII Ngô Đồng Dũng, BS.CKII Võ Thị Kim Thanh ThS.BS Tạ Ngọc Thạch, BS.CKI Phan Trường Nam… Các chuyên gia, bác sĩ của Trung tâm luôn tự tin làm chủ những kỹ thuật mới nhất, phát hiện sớm và điều trị hiệu quả các bệnh lý về thận, đường tiết niệu, giúp người bệnh rút ngắn thời gian nằm viện, hạn chế nguy cơ tái phát, nâng cao chất lượng cuộc sống.'
+
+MERGE (o1:treatment {id: 'bs.ckii_đinh_cẩm_tú_treatment'})
+MERGE (o2:disease {id: 'bệnh_lý_về_thận_disease'})
+MERGE (o1)-[r133:relatedTo]->(o2)
+SET r133.text = 'Cùng với các tên tuổi Thầy thuốc ưu tú TS.BS Nguyễn Thế Trường Thầy thuốc ưu tú BS.CKII Tạ Phương Dung, TS.BS Nguyễn Hoàng Đức, TS.BS Từ Thành Trí Dũng, ThS.BS.CKI Nguyễn Đức Nhuận, BS.CKII Nguyễn Lê Tuyên, ThS.BS Nguyễn Tân Cương, BS.CKII Đinh Cẩm Tú, BS.CKII Ngô Đồng Dũng, BS.CKII Võ Thị Kim Thanh ThS.BS Tạ Ngọc Thạch, BS.CKI Phan Trường Nam… Các chuyên gia, bác sĩ của Trung tâm luôn tự tin làm chủ những kỹ thuật mới nhất, phát hiện sớm và điều trị hiệu quả các bệnh lý về thận, đường tiết niệu, giúp người bệnh rút ngắn thời gian nằm viện, hạn chế nguy cơ tái phát, nâng cao chất lượng cuộc sống.'
+
+MERGE (o1:treatment {id: 'bs.ckii_ngô_đồng_dũng_treatment'})
+MERGE (o2:disease {id: 'bệnh_lý_về_thận_disease'})
+MERGE (o1)-[r134:relatedTo]->(o2)
+SET r134.text = 'Cùng với các tên tuổi Thầy thuốc ưu tú TS.BS Nguyễn Thế Trường Thầy thuốc ưu tú BS.CKII Tạ Phương Dung, TS.BS Nguyễn Hoàng Đức, TS.BS Từ Thành Trí Dũng, ThS.BS.CKI Nguyễn Đức Nhuận, BS.CKII Nguyễn Lê Tuyên, ThS.BS Nguyễn Tân Cương, BS.CKII Đinh Cẩm Tú, BS.CKII Ngô Đồng Dũng, BS.CKII Võ Thị Kim Thanh ThS.BS Tạ Ngọc Thạch, BS.CKI Phan Trường Nam… Các chuyên gia, bác sĩ của Trung tâm luôn tự tin làm chủ những kỹ thuật mới nhất, phát hiện sớm và điều trị hiệu quả các bệnh lý về thận, đường tiết niệu, giúp người bệnh rút ngắn thời gian nằm viện, hạn chế nguy cơ tái phát, nâng cao chất lượng cuộc sống.'
+
+MERGE (o1:treatment {id: 'bs.ckii_võ_thị_kim_thanh_treatment'})
+MERGE (o2:disease {id: 'bệnh_lý_về_thận_disease'})
+MERGE (o1)-[r135:relatedTo]->(o2)
+SET r135.text = 'Cùng với các tên tuổi Thầy thuốc ưu tú TS.BS Nguyễn Thế Trường Thầy thuốc ưu tú BS.CKII Tạ Phương Dung, TS.BS Nguyễn Hoàng Đức, TS.BS Từ Thành Trí Dũng, ThS.BS.CKI Nguyễn Đức Nhuận, BS.CKII Nguyễn Lê Tuyên, ThS.BS Nguyễn Tân Cương, BS.CKII Đinh Cẩm Tú, BS.CKII Ngô Đồng Dũng, BS.CKII Võ Thị Kim Thanh ThS.BS Tạ Ngọc Thạch, BS.CKI Phan Trường Nam… Các chuyên gia, bác sĩ của Trung tâm luôn tự tin làm chủ những kỹ thuật mới nhất, phát hiện sớm và điều trị hiệu quả các bệnh lý về thận, đường tiết niệu, giúp người bệnh rút ngắn thời gian nằm viện, hạn chế nguy cơ tái phát, nâng cao chất lượng cuộc sống.'
+
+MERGE (o1:treatment {id: 'ths.bs_tạ_ngọc_thạch_treatment'})
+MERGE (o2:disease {id: 'bệnh_lý_về_thận_disease'})
+MERGE (o1)-[r136:relatedTo]->(o2)
+SET r136.text = 'Cùng với các tên tuổi Thầy thuốc ưu tú TS.BS Nguyễn Thế Trường Thầy thuốc ưu tú BS.CKII Tạ Phương Dung, TS.BS Nguyễn Hoàng Đức, TS.BS Từ Thành Trí Dũng, ThS.BS.CKI Nguyễn Đức Nhuận, BS.CKII Nguyễn Lê Tuyên, ThS.BS Nguyễn Tân Cương, BS.CKII Đinh Cẩm Tú, BS.CKII Ngô Đồng Dũng, BS.CKII Võ Thị Kim Thanh ThS.BS Tạ Ngọc Thạch, BS.CKI Phan Trường Nam… Các chuyên gia, bác sĩ của Trung tâm luôn tự tin làm chủ những kỹ thuật mới nhất, phát hiện sớm và điều trị hiệu quả các bệnh lý về thận, đường tiết niệu, giúp người bệnh rút ngắn thời gian nằm viện, hạn chế nguy cơ tái phát, nâng cao chất lượng cuộc sống.'
+
+MERGE (o1:treatment {id: 'bs.cki_phan_trường_nam_treatment'})
+MERGE (o2:disease {id: 'bệnh_lý_về_thận_disease'})
+MERGE (o1)-[r137:relatedTo]->(o2)
+SET r137.text = 'Cùng với các tên tuổi Thầy thuốc ưu tú TS.BS Nguyễn Thế Trường Thầy thuốc ưu tú BS.CKII Tạ Phương Dung, TS.BS Nguyễn Hoàng Đức, TS.BS Từ Thành Trí Dũng, ThS.BS.CKI Nguyễn Đức Nhuận, BS.CKII Nguyễn Lê Tuyên, ThS.BS Nguyễn Tân Cương, BS.CKII Đinh Cẩm Tú, BS.CKII Ngô Đồng Dũng, BS.CKII Võ Thị Kim Thanh ThS.BS Tạ Ngọc Thạch, BS.CKI Phan Trường Nam… Các chuyên gia, bác sĩ của Trung tâm luôn tự tin làm chủ những kỹ thuật mới nhất, phát hiện sớm và điều trị hiệu quả các bệnh lý về thận, đường tiết niệu, giúp người bệnh rút ngắn thời gian nằm viện, hạn chế nguy cơ tái phát, nâng cao chất lượng cuộc sống.'
+
+MERGE (o1:treatment {id: 'các_chuyên_gia__bác_sĩ_treatment'})
+MERGE (o2:disease {id: 'bệnh_lý_về_thận_disease'})
+MERGE (o1)-[r138:relatedTo]->(o2)
+SET r138.text = 'Cùng với các tên tuổi Thầy thuốc ưu tú TS.BS Nguyễn Thế Trường Thầy thuốc ưu tú BS.CKII Tạ Phương Dung, TS.BS Nguyễn Hoàng Đức, TS.BS Từ Thành Trí Dũng, ThS.BS.CKI Nguyễn Đức Nhuận, BS.CKII Nguyễn Lê Tuyên, ThS.BS Nguyễn Tân Cương, BS.CKII Đinh Cẩm Tú, BS.CKII Ngô Đồng Dũng, BS.CKII Võ Thị Kim Thanh ThS.BS Tạ Ngọc Thạch, BS.CKI Phan Trường Nam… Các chuyên gia, bác sĩ của Trung tâm luôn tự tin làm chủ những kỹ thuật mới nhất, phát hiện sớm và điều trị hiệu quả các bệnh lý về thận, đường tiết niệu, giúp người bệnh rút ngắn thời gian nằm viện, hạn chế nguy cơ tái phát, nâng cao chất lượng cuộc sống.'
+
+MERGE (o1:treatment {id: 'các_chuyên_gia__bác_sĩ_treatment'})
+MERGE (o2:disease {id: 'bệnh_lý_về_đường_tiết_niệu_disease'})
+MERGE (o1)-[r139:relatedTo]->(o2)
+SET r139.text = 'Cùng với các tên tuổi Thầy thuốc ưu tú TS.BS Nguyễn Thế Trường Thầy thuốc ưu tú BS.CKII Tạ Phương Dung, TS.BS Nguyễn Hoàng Đức, TS.BS Từ Thành Trí Dũng, ThS.BS.CKI Nguyễn Đức Nhuận, BS.CKII Nguyễn Lê Tuyên, ThS.BS Nguyễn Tân Cương, BS.CKII Đinh Cẩm Tú, BS.CKII Ngô Đồng Dũng, BS.CKII Võ Thị Kim Thanh ThS.BS Tạ Ngọc Thạch, BS.CKI Phan Trường Nam… Các chuyên gia, bác sĩ của Trung tâm luôn tự tin làm chủ những kỹ thuật mới nhất, phát hiện sớm và điều trị hiệu quả các bệnh lý về thận, đường tiết niệu, giúp người bệnh rút ngắn thời gian nằm viện, hạn chế nguy cơ tái phát, nâng cao chất lượng cuộc sống.'
+
+MERGE (o1:treatment {id: 'kỹ_thuật_mới_nhất_treatment'})
+MERGE (o2:disease {id: 'bệnh_lý_về_thận_disease'})
+MERGE (o1)-[r140:treatedBy]->(o2)
+SET r140.text = 'Cùng với các tên tuổi Thầy thuốc ưu tú TS.BS Nguyễn Thế Trường Thầy thuốc ưu tú BS.CKII Tạ Phương Dung, TS.BS Nguyễn Hoàng Đức, TS.BS Từ Thành Trí Dũng, ThS.BS.CKI Nguyễn Đức Nhuận, BS.CKII Nguyễn Lê Tuyên, ThS.BS Nguyễn Tân Cương, BS.CKII Đinh Cẩm Tú, BS.CKII Ngô Đồng Dũng, BS.CKII Võ Thị Kim Thanh ThS.BS Tạ Ngọc Thạch, BS.CKI Phan Trường Nam… Các chuyên gia, bác sĩ của Trung tâm luôn tự tin làm chủ những kỹ thuật mới nhất, phát hiện sớm và điều trị hiệu quả các bệnh lý về thận, đường tiết niệu, giúp người bệnh rút ngắn thời gian nằm viện, hạn chế nguy cơ tái phát, nâng cao chất lượng cuộc sống.'
+
+MERGE (o1:treatment {id: 'kỹ_thuật_mới_nhất_treatment'})
+MERGE (o2:disease {id: 'bệnh_lý_về_đường_tiết_niệu_disease'})
+MERGE (o1)-[r141:treatedBy]->(o2)
+SET r141.text = 'Cùng với các tên tuổi Thầy thuốc ưu tú TS.BS Nguyễn Thế Trường Thầy thuốc ưu tú BS.CKII Tạ Phương Dung, TS.BS Nguyễn Hoàng Đức, TS.BS Từ Thành Trí Dũng, ThS.BS.CKI Nguyễn Đức Nhuận, BS.CKII Nguyễn Lê Tuyên, ThS.BS Nguyễn Tân Cương, BS.CKII Đinh Cẩm Tú, BS.CKII Ngô Đồng Dũng, BS.CKII Võ Thị Kim Thanh ThS.BS Tạ Ngọc Thạch, BS.CKI Phan Trường Nam… Các chuyên gia, bác sĩ của Trung tâm luôn tự tin làm chủ những kỹ thuật mới nhất, phát hiện sớm và điều trị hiệu quả các bệnh lý về thận, đường tiết niệu, giúp người bệnh rút ngắn thời gian nằm viện, hạn chế nguy cơ tái phát, nâng cao chất lượng cuộc sống.'
+
+MERGE (o1:treatment {id: 'điều_trị_hiệu_quả_treatment'})
+MERGE (o2:disease {id: 'bệnh_lý_về_thận_disease'})
+MERGE (o1)-[r142:treatedBy]->(o2)
+SET r142.text = 'Cùng với các tên tuổi Thầy thuốc ưu tú TS.BS Nguyễn Thế Trường Thầy thuốc ưu tú BS.CKII Tạ Phương Dung, TS.BS Nguyễn Hoàng Đức, TS.BS Từ Thành Trí Dũng, ThS.BS.CKI Nguyễn Đức Nhuận, BS.CKII Nguyễn Lê Tuyên, ThS.BS Nguyễn Tân Cương, BS.CKII Đinh Cẩm Tú, BS.CKII Ngô Đồng Dũng, BS.CKII Võ Thị Kim Thanh ThS.BS Tạ Ngọc Thạch, BS.CKI Phan Trường Nam… Các chuyên gia, bác sĩ của Trung tâm luôn tự tin làm chủ những kỹ thuật mới nhất, phát hiện sớm và điều trị hiệu quả các bệnh lý về thận, đường tiết niệu, giúp người bệnh rút ngắn thời gian nằm viện, hạn chế nguy cơ tái phát, nâng cao chất lượng cuộc sống.'
+
+MERGE (o1:treatment {id: 'điều_trị_hiệu_quả_treatment'})
+MERGE (o2:disease {id: 'bệnh_lý_về_đường_tiết_niệu_disease'})
+MERGE (o1)-[r143:treatedBy]->(o2)
+SET r143.text = 'Cùng với các tên tuổi Thầy thuốc ưu tú TS.BS Nguyễn Thế Trường Thầy thuốc ưu tú BS.CKII Tạ Phương Dung, TS.BS Nguyễn Hoàng Đức, TS.BS Từ Thành Trí Dũng, ThS.BS.CKI Nguyễn Đức Nhuận, BS.CKII Nguyễn Lê Tuyên, ThS.BS Nguyễn Tân Cương, BS.CKII Đinh Cẩm Tú, BS.CKII Ngô Đồng Dũng, BS.CKII Võ Thị Kim Thanh ThS.BS Tạ Ngọc Thạch, BS.CKI Phan Trường Nam… Các chuyên gia, bác sĩ của Trung tâm luôn tự tin làm chủ những kỹ thuật mới nhất, phát hiện sớm và điều trị hiệu quả các bệnh lý về thận, đường tiết niệu, giúp người bệnh rút ngắn thời gian nằm viện, hạn chế nguy cơ tái phát, nâng cao chất lượng cuộc sống.'
+
+MERGE (o1:treatment {id: 'rút_ngắn_thời_gian_nằm_viện_treatment'})
+MERGE (o2:disease {id: 'bệnh_lý_về_thận_disease'})
+MERGE (o1)-[r144:treatedBy]->(o2)
+SET r144.text = 'Cùng với các tên tuổi Thầy thuốc ưu tú TS.BS Nguyễn Thế Trường Thầy thuốc ưu tú BS.CKII Tạ Phương Dung, TS.BS Nguyễn Hoàng Đức, TS.BS Từ Thành Trí Dũng, ThS.BS.CKI Nguyễn Đức Nhuận, BS.CKII Nguyễn Lê Tuyên, ThS.BS Nguyễn Tân Cương, BS.CKII Đinh Cẩm Tú, BS.CKII Ngô Đồng Dũng, BS.CKII Võ Thị Kim Thanh ThS.BS Tạ Ngọc Thạch, BS.CKI Phan Trường Nam… Các chuyên gia, bác sĩ của Trung tâm luôn tự tin làm chủ những kỹ thuật mới nhất, phát hiện sớm và điều trị hiệu quả các bệnh lý về thận, đường tiết niệu, giúp người bệnh rút ngắn thời gian nằm viện, hạn chế nguy cơ tái phát, nâng cao chất lượng cuộc sống.'

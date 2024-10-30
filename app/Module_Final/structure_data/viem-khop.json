@@ -1,0 +1,1936 @@
+[
+    {
+        "text": "Cứ 5 người trưởng thành thì có 1 người bị viêm khớp.",
+        "head": "viêm khớp",
+        "head_type": "disease",
+        "relation": "associatedWith",
+        "tail": "người trưởng thành",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Căn bệnh tưởng chừng “dễ trị” này lại gây ra nhiều triệu chứng và biến chứng nghiêm trọng.",
+        "head": "viêm khớp",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "triệu chứng và biến chứng nghiêm trọng",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "May mắn thay, nếu được điều trị kịp thời, bệnh nhân viêm khớp sẽ sớm cải thiện được tình trạng bệnh, trở lại với cuộc sống vui - khỏe - có ích.",
+        "head": "viêm khớp",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "điều trị kịp thời",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Viêm khớp là thuật ngữ nói về một nhóm gồm hơn 100 bệnh.",
+        "head": "viêm khớp",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "nhóm gồm hơn 100 bệnh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các bệnh lý này đều liên quan đến khớp ở mọi vị trí trên cơ thể, chẳng hạn như khớp cổ tay, đầu gối, hông, ngón tay, vai...",
+        "head": "bệnh lý",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "khớp",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Các bệnh lý này đều liên quan đến khớp ở mọi vị trí trên cơ thể, chẳng hạn như khớp cổ tay, đầu gối, hông, ngón tay, vai...",
+        "head": "khớp",
+        "head_type": "organ",
+        "relation": "locatedIn",
+        "tail": "cơ thể",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Đặc biệt, một số loại còn ảnh hưởng đến các mô và cơ quan liên kết khác như da, mắt, tim, phổi…",
+        "head": "bệnh lý",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "da, mắt, tim, phổi",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Viêm ở khớp có thể xảy ra ở mọi lứa tuổi, kể cả trẻ em, nhưng bệnh trở nên phổ biến hơn khi bạn già đi.",
+        "head": "viêm ở khớp",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "viêm khớp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Viêm ở khớp có thể xảy ra ở mọi lứa tuổi, kể cả trẻ em, nhưng bệnh trở nên phổ biến hơn khi bạn già đi.",
+        "head": "tuổi tác",
+        "head_type": "lifestyle",
+        "relation": "aggravatedBy",
+        "tail": "viêm ở khớp",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Khi mắc bệnh này, người bệnh sẽ bị sưng, đau của một hoặc nhiều khớp trên cơ thể.",
+        "head": "sưng, đau",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "viêm khớp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các triệu chứng chính của bệnh là đau và cứng khớp, thường nặng dần theo thời gian.",
+        "head": "đau và cứng khớp",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "viêm khớp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Những vị trí khớp thường bị viêm nhất là: Viêm khớp gối Viêm khớp háng Viêm khớp cổ tay Viêm khớp cổ chân...",
+        "head": "viêm khớp gối",
+        "head_type": "disease",
+        "relation": "locatedIn",
+        "tail": "khớp gối",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Những vị trí khớp thường bị viêm nhất là: Viêm khớp gối Viêm khớp háng Viêm khớp cổ tay Viêm khớp cổ chân...",
+        "head": "viêm khớp háng",
+        "head_type": "disease",
+        "relation": "locatedIn",
+        "tail": "khớp háng",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Những vị trí khớp thường bị viêm nhất là: Viêm khớp gối Viêm khớp háng Viêm khớp cổ tay Viêm khớp cổ chân...",
+        "head": "viêm khớp cổ tay",
+        "head_type": "disease",
+        "relation": "locatedIn",
+        "tail": "khớp cổ tay",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Những vị trí khớp thường bị viêm nhất là: Viêm khớp gối Viêm khớp háng Viêm khớp cổ tay Viêm khớp cổ chân...",
+        "head": "viêm khớp cổ chân",
+        "head_type": "disease",
+        "relation": "locatedIn",
+        "tail": "khớp cổ chân",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Tùy vào loại viêm, bác sĩ sẽ chỉ định các phương pháp điều trị khác nhau.",
+        "head": "viêm",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "các phương pháp điều trị",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Dù là phương pháp nào thì mục tiêu cũng là làm giảm các triệu chứng và cải thiện chất lượng cuộc sống cho người bệnh.",
+        "head": "các phương pháp điều trị",
+        "head_type": "treatment",
+        "relation": "affects",
+        "tail": "triệu chứng",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Dù là phương pháp nào thì mục tiêu cũng là làm giảm các triệu chứng và cải thiện chất lượng cuộc sống cho người bệnh.",
+        "head": "các phương pháp điều trị",
+        "head_type": "treatment",
+        "relation": "affects",
+        "tail": "chất lượng cuộc sống",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Trong số hơn 100 bệnh lý viêm khớp, các bệnh dưới đây là phổ biến nhất (1):",
+        "head": "viêm khớp",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "các bệnh dưới đây",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đây là một trong những bệnh tự miễn gây phiền toái cho nhiều người nhất.",
+        "head": "bệnh tự miễn",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "phiền toái",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Bệnh xảy ra khi hệ thống miễn dịch tấn công các mô của cơ thể, đặc biệt là mô liên kết.",
+        "head": "hệ thống miễn dịch",
+        "head_type": "organ",
+        "relation": "affects",
+        "tail": "các mô của cơ thể",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Bệnh xảy ra khi hệ thống miễn dịch tấn công các mô của cơ thể, đặc biệt là mô liên kết.",
+        "head": "bệnh tự miễn",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "hệ thống miễn dịch tấn công các mô của cơ thể",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Hệ quả là khớp bị tổn thương dẫn tới viêm, gây ra tình trạng đau và thoái hóa mô khớp.",
+        "head": "khớp bị tổn thương",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "viêm khớp dạng thấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Hệ quả là khớp bị tổn thương dẫn tới viêm, gây ra tình trạng đau và thoái hóa mô khớp.",
+        "head": "viêm",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "viêm khớp dạng thấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Hệ quả là khớp bị tổn thương dẫn tới viêm, gây ra tình trạng đau và thoái hóa mô khớp.",
+        "head": "đau",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "viêm khớp dạng thấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Hệ quả là khớp bị tổn thương dẫn tới viêm, gây ra tình trạng đau và thoái hóa mô khớp.",
+        "head": "thoái hóa mô khớp",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "viêm khớp dạng thấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Không giống như tổn thương do thoái hóa khớp gây ra, viêm khớp dạng thấp ảnh hưởng đến niêm mạc khớp, gây sưng đau, cuối cùng dẫn đến xói mòn xương và biến dạng khớp.",
+        "head": "viêm khớp dạng thấp",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "niêm mạc khớp",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Không giống như tổn thương do thoái hóa khớp gây ra, viêm khớp dạng thấp ảnh hưởng đến niêm mạc khớp, gây sưng đau, cuối cùng dẫn đến xói mòn xương và biến dạng khớp.",
+        "head": "sưng đau",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "viêm khớp dạng thấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Không giống như tổn thương do thoái hóa khớp gây ra, viêm khớp dạng thấp ảnh hưởng đến niêm mạc khớp, gây sưng đau, cuối cùng dẫn đến xói mòn xương và biến dạng khớp.",
+        "head": "xói mòn xương",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "viêm khớp dạng thấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Không giống như tổn thương do thoái hóa khớp gây ra, viêm khớp dạng thấp ảnh hưởng đến niêm mạc khớp, gây sưng đau, cuối cùng dẫn đến xói mòn xương và biến dạng khớp.",
+        "head": "biến dạng khớp",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "viêm khớp dạng thấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Không chỉ tác động lên khớp, bệnh còn kéo theo một loạt cơ quan bị tổn thương, chẳng hạn như mắt, da, phổi, mạch máu.",
+        "head": "viêm khớp dạng thấp",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "mắt, da, phổi, mạch máu",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Có một số yếu tố được cho là góp phần gây ra căn bệnh này.",
+        "head": "viêm khớp dạng thấp",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "yếu tố",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Phụ nữ là những đối tượng có nguy cơ mắc bệnh hơn nam giới",
+        "head": "viêm khớp dạng thấp",
+        "head_type": "disease",
+        "relation": "aggravatedBy",
+        "tail": "giới tính nữ",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Tuổi tác: Bệnh tấn công mọi người ở mọi lứa tuổi, nhưng bệnh có xu hướng khởi phát ở tuổi trung niên",
+        "head": "viêm khớp dạng thấp",
+        "head_type": "disease",
+        "relation": "aggravatedBy",
+        "tail": "tuổi trung niên",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Tiền sử gia đình: Nếu một thành viên trong gia đình bạn bị viêm khớp dạng thấp, bạn sẽ tăng nguy cơ mắc bệnh.",
+        "head": "viêm khớp dạng thấp",
+        "head_type": "disease",
+        "relation": "aggravatedBy",
+        "tail": "tiền sử gia đình",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Hút thuốc lá: Không chỉ làm tăng khả năng phát triển bệnh, hút thuốc lá còn khiến các triệu chứng bệnh trở nên trầm trọng hơn.",
+        "head": "viêm khớp dạng thấp",
+        "head_type": "disease",
+        "relation": "aggravatedBy",
+        "tail": "hút thuốc lá",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Tiếp xúc với môi trường chứa hóa chất: Một số chất phơi nhiễm như amiăng, silica là tác nhân khiến bệnh RA phát triển.",
+        "head": "viêm khớp dạng thấp",
+        "head_type": "disease",
+        "relation": "aggravatedBy",
+        "tail": "tiếp xúc với môi trường chứa hóa chất",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Thừa cân - béo phì: Người có chỉ số BMI > 23 (đặc biệt là phụ nữ trên 55 tuổi)",
+        "head": "viêm khớp dạng thấp",
+        "head_type": "disease",
+        "relation": "aggravatedBy",
+        "tail": "thừa cân - béo phì",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Thoái hóa khớp là bệnh lý xương khớp phổ biến, ảnh hưởng đến sụn, niêm mạc khớp, dây chằng và xương bên dưới của khớp.",
+        "head": "thoái hóa khớp",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "sụn, niêm mạc khớp, dây chằng và xương bên dưới của khớp",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Bệnh xảy ra khi lớp sụn bảo vệ các đầu xương bị mòn theo thời gian, cuối cùng dẫn đến đau và cứng khớp.",
+        "head": "thoái hóa khớp",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "lớp sụn bảo vệ các đầu xương bị mòn theo thời gian",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Bệnh xảy ra khi lớp sụn bảo vệ các đầu xương bị mòn theo thời gian, cuối cùng dẫn đến đau và cứng khớp.",
+        "head": "đau và cứng khớp",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "thoái hóa khớp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các khớp thường bị ảnh hưởng bởi bệnh thoái hóa khớp là những khớp phải hoạt động nhiều như hông, đầu gối, bàn tay, cột sống, khớp ngón cái và ngón chân cái.",
+        "head": "thoái hóa khớp",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "hông, đầu gối, bàn tay, cột sống, khớp ngón cái và ngón chân cái",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Yếu tố nguy cơ của bệnh thoái hóa khớp bao gồm:",
+        "head": "thoái hóa khớp",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "yếu tố nguy cơ",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Tuổi tác: Nguy cơ mắc bệnh tăng lên theo tuổi tác.",
+        "head": "thoái hóa khớp",
+        "head_type": "disease",
+        "relation": "aggravatedBy",
+        "tail": "tuổi tác",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Giới tính: Nam giới ít có nguy cơ bị thoái hóa khớp hơn so với phụ nữ.",
+        "head": "thoái hóa khớp",
+        "head_type": "disease",
+        "relation": "aggravatedBy",
+        "tail": "giới tính nam",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Thừa cân - béo phì: Chỉ số BMI của bạn càng cao, bạn càng tăng thêm nguy cơ thoái hóa khớp.",
+        "head": "thoái hóa khớp",
+        "head_type": "disease",
+        "relation": "aggravatedBy",
+        "tail": "thừa cân - béo phì",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Tổn thương khớp: Những chấn thương xảy ra khi chơi thể thao hoặc do tai nạn là tác nhân làm tăng khả năng bị thoái hóa khớp.",
+        "head": "thoái hóa khớp",
+        "head_type": "disease",
+        "relation": "aggravatedBy",
+        "tail": "tổn thương khớp",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Di truyền: Một số người bị thoái hóa khớp là do có tiền sử gia đình mắc bệnh này.",
+        "head": "thoái hóa khớp",
+        "head_type": "disease",
+        "relation": "aggravatedBy",
+        "tail": "di truyền",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Dị dạng xương: Những người có khớp dị dạng hoặc sụn khiếm khuyết dễ bị thoái hóa khớp hơn.",
+        "head": "thoái hóa khớp",
+        "head_type": "disease",
+        "relation": "aggravatedBy",
+        "tail": "dị dạng xương",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Cân nặng dư thừa sẽ tăng thêm áp lực cho khớp, khiến khớp của bạn dễ có nguy cơ bị thoái hóa hơn",
+        "head": "thoái hóa khớp",
+        "head_type": "disease",
+        "relation": "aggravatedBy",
+        "tail": "cân nặng dư thừa",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Viêm khớp nhiễm khuẩn là tình trạng khớp bị viêm do nhiễm vi khuẩn hoặc nấm.",
+        "head": "viêm khớp nhiễm khuẩn",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "nhiễm vi khuẩn hoặc nấm",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Các khớp thường bị ảnh hưởng nhất là khớp đầu gối và hông.",
+        "head": "viêm khớp nhiễm khuẩn",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "khớp đầu gối và hông",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Bệnh có thể phát triển khi vi khuẩn hoặc các vi sinh vật gây bệnh lây lan qua máu đến khớp.",
+        "head": "viêm khớp nhiễm khuẩn",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "vi khuẩn hoặc các vi sinh vật gây bệnh lây lan qua máu đến khớp",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Cũng có khi khớp bị nhiễm trực tiếp vi sinh vật do chấn thương hoặc phẫu thuật.",
+        "head": "viêm khớp nhiễm khuẩn",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "chấn thương hoặc phẫu thuật",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Những loại vi khuẩn như Staphylococcus, Streptococcus, Neisseria gonorrhoeae… là tác nhân của hầu hết các trường hợp viêm ở khớp do nhiễm khuẩn cấp tính.",
+        "head": "viêm ở khớp",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "viêm khớp nhiễm khuẩn cấp tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Trong khi đó, vi khuẩn Mycobacterium tuberculosis, Candida albicans gây nên bệnh viêm khớp nhiễm khuẩn mạn tính.",
+        "head": "viêm khớp nhiễm khuẩn mạn tính",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "vi khuẩn Mycobacterium tuberculosis, Candida albicans",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Các yếu tố sau đây làm tăng nguy cơ gây bệnh:",
+        "head": "viêm khớp nhiễm khuẩn",
+        "head_type": "disease",
+        "relation": "aggravatedBy",
+        "tail": "các yếu tố sau đây",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Một bệnh lý hoặc tổn thương khác ở khớp",
+        "head": "viêm khớp nhiễm khuẩn",
+        "head_type": "disease",
+        "relation": "aggravatedBy",
+        "tail": "bệnh lý hoặc tổn thương khác ở khớp",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Cấy ghép khớp nhân tạo",
+        "head": "viêm khớp nhiễm khuẩn",
+        "head_type": "disease",
+        "relation": "aggravatedBy",
+        "tail": "cấy ghép khớp nhân tạo",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Nhiễm vi khuẩn ở những nơi khác trong cơ thể",
+        "head": "viêm khớp nhiễm khuẩn",
+        "head_type": "disease",
+        "relation": "aggravatedBy",
+        "tail": "nhiễm vi khuẩn ở những nơi khác trong cơ thể",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Sự hiện diện của vi khuẩn trong máu",
+        "head": "viêm khớp nhiễm khuẩn",
+        "head_type": "disease",
+        "relation": "aggravatedBy",
+        "tail": "sự hiện diện của vi khuẩn trong máu",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Bệnh mạn tính (chẳng hạn như đái tháo đường, viêm khớp dạng thấp, bệnh hồng cầu hình liềm…)",
+        "head": "viêm khớp nhiễm khuẩn",
+        "head_type": "disease",
+        "relation": "aggravatedBy",
+        "tail": "bệnh mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tiêm tĩnh mạch (IV) hoặc tiêm chích ma túy",
+        "head": "viêm khớp nhiễm khuẩn",
+        "head_type": "disease",
+        "relation": "aggravatedBy",
+        "tail": "tiêm tĩnh mạch (IV) hoặc tiêm chích ma túy",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Sử dụng thuốc ức chế hệ thống miễn dịch",
+        "head": "viêm khớp nhiễm khuẩn",
+        "head_type": "disease",
+        "relation": "aggravatedBy",
+        "tail": "thuốc ức chế hệ thống miễn dịch",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Các tình trạng như HIV, làm suy yếu khả năng miễn dịch",
+        "head": "viêm khớp nhiễm khuẩn",
+        "head_type": "disease",
+        "relation": "aggravatedBy",
+        "tail": "HIV",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đây là bệnh lý không quá nguy hiểm, khiến người bệnh bị sưng và đau khớp do nhiễm trùng ở một bộ phận khác của cơ thể.",
+        "head": "viêm khớp phản ứng",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "nhiễm trùng ở một bộ phận khác của cơ thể",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Các bộ phận này thường là ruột, bộ phận sinh dục hoặc đường tiết niệu.",
+        "head": "nhiễm trùng",
+        "head_type": "cause",
+        "relation": "affects",
+        "tail": "ruột, bộ phận sinh dục hoặc đường tiết niệu",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Khi bị viêm khớp phản ứng, bạn sẽ bị ảnh hưởng nhiều nhất ở vùng đầu gối, khớp cổ chân và bàn chân.",
+        "head": "viêm khớp phản ứng",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "đầu gối, khớp cổ chân và bàn chân",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Ngoài ra, tình trạng viêm còn ảnh hưởng đến mắt, da và niệu đạo.",
+        "head": "viêm",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "viêm khớp phản ứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "So với những loại viêm khớp khác, căn bệnh này có tiên lượng rất khả quan.",
+        "head": "viêm khớp phản ứng",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "những loại viêm khớp khác",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu được điều trị đúng phác đồ, các dấu hiệu và triệu chứng bệnh sẽ biến mất trong vòng 12 tháng.",
+        "head": "viêm khớp phản ứng",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "điều trị đúng phác đồ",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Nếu có một trong các yếu tố rủi ro dưới đây, bạn rất dễ bị viêm khớp phản ứng:",
+        "head": "viêm khớp phản ứng",
+        "head_type": "disease",
+        "relation": "aggravatedBy",
+        "tail": "yếu tố rủi ro",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Tuổi tác: Bệnh xảy ra phổ biến nhất ở các đối tượng trong độ tuổi từ 20 - 40.",
+        "head": "viêm khớp phản ứng",
+        "head_type": "disease",
+        "relation": "aggravatedBy",
+        "tail": "tuổi tác",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Giới tính: Phụ nữ và nam giới có khả năng bị viêm khớp phản ứng như nhau nếu tình trạng nhiễm trùng là do thực phẩm.",
+        "head": "viêm khớp phản ứng",
+        "head_type": "disease",
+        "relation": "aggravatedBy",
+        "tail": "giới tính",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Tuy nhiên, nam giới bị mắc bệnh do vi khuẩn lây truyền qua đường tình dục nhiều hơn phụ nữ.",
+        "head": "viêm khớp phản ứng",
+        "head_type": "disease",
+        "relation": "aggravatedBy",
+        "tail": "vi khuẩn lây truyền qua đường tình dục",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Di truyền.",
+        "head": "viêm khớp phản ứng",
+        "head_type": "disease",
+        "relation": "aggravatedBy",
+        "tail": "di truyền",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Viêm cột sống dính khớp là một bệnh viêm, khiến một số xương nhỏ trong cột sống hợp nhất lại với nhau.",
+        "head": "viêm cột sống dính khớp",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "bệnh viêm",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Viêm cột sống dính khớp là một bệnh viêm, khiến một số xương nhỏ trong cột sống hợp nhất lại với nhau.",
+        "head": "viêm cột sống dính khớp",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "xương nhỏ trong cột sống",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Quá trình này làm cho cột sống kém linh hoạt, dẫn đến tư thế gập người về phía trước.",
+        "head": "viêm cột sống dính khớp",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "cột sống kém linh hoạt",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Quá trình này làm cho cột sống kém linh hoạt, dẫn đến tư thế gập người về phía trước.",
+        "head": "viêm cột sống dính khớp",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "tư thế gập người về phía trước",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Không chỉ vậy, các cơ quan khác (chẳng hạn như mắt) cũng dễ bị viêm theo.",
+        "head": "viêm cột sống dính khớp",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "mắt",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Các yếu tố nguy cơ của bệnh là:",
+        "head": "viêm cột sống dính khớp",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "yếu tố nguy cơ",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Giới tính: Nam giới có nguy cơ mắc bệnh viêm cột sống dính khớp cao hơn nữ giới.",
+        "head": "viêm cột sống dính khớp",
+        "head_type": "disease",
+        "relation": "aggravatedBy",
+        "tail": "giới tính nam",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Tuổi tác: Các dấu hiệu khởi phát bệnh thường xảy ra ở cuối tuổi vị thành niên hoặc đầu tuổi trưởng thành.",
+        "head": "viêm cột sống dính khớp",
+        "head_type": "disease",
+        "relation": "aggravatedBy",
+        "tail": "tuổi vị thành niên hoặc đầu tuổi trưởng thành",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Di truyền: Các cuộc xét nghiệm cho thấy đa số các trường hợp viêm cột sống dính khớp đều mang trong mình gen HLA-B27.",
+        "head": "viêm cột sống dính khớp",
+        "head_type": "disease",
+        "relation": "aggravatedBy",
+        "tail": "gen HLA-B27",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Tuy nhiên, nhiều trường hợp mang gen này lại không phát triển bệnh viêm cột sống dính khớp.",
+        "head": "viêm cột sống dính khớp",
+        "head_type": "disease",
+        "relation": "aggravatedBy",
+        "tail": "gen HLA-B27",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Không có phương pháp chữa khỏi hoàn toàn cho bệnh viêm cột sống dính khớp, nhưng các phương pháp điều trị đúng đắn sẽ làm giảm triệu chứng cũng như làm chậm sự tiến triển của bệnh.",
+        "head": "viêm cột sống dính khớp",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "các phương pháp điều trị đúng đắn",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Gout là một bệnh về khớp xảy ra khi các tinh thể axit uric, hoặc urat monosodium, hình thành trong các mô và chất lỏng của cơ thể.",
+        "head": "gout",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "các tinh thể axit uric, hoặc urat monosodium, hình thành trong các mô và chất lỏng của cơ thể",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Các dấu hiệu và triệu chứng sau cho thấy các khớp của bạn có khả năng bị viêm:",
+        "head": "Đau khớp",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm khớp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các dấu hiệu và triệu chứng sau cho thấy các khớp của bạn có khả năng bị viêm:",
+        "head": "Khớp cứng và sưng",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm khớp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các dấu hiệu và triệu chứng sau cho thấy các khớp của bạn có khả năng bị viêm:",
+        "head": "Phạm vi chuyển động hạn chế ở các khớp bị ảnh hưởng",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm khớp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các dấu hiệu và triệu chứng sau cho thấy các khớp của bạn có khả năng bị viêm:",
+        "head": "Đỏ và ấm khu vực xung quanh khớp bị ảnh hưởng",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm khớp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các dấu hiệu và triệu chứng sau cho thấy các khớp của bạn có khả năng bị viêm:",
+        "head": "Sốt",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm khớp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các dấu hiệu và triệu chứng sau cho thấy các khớp của bạn có khả năng bị viêm:",
+        "head": "Mệt mỏi",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm khớp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các dấu hiệu và triệu chứng sau cho thấy các khớp của bạn có khả năng bị viêm:",
+        "head": "Khó chịu",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm khớp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các dấu hiệu và triệu chứng sau cho thấy các khớp của bạn có khả năng bị viêm:",
+        "head": "Xuất hiện các khối u và bướu",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm khớp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi xuất hiện các triệu chứng viêm khớp, bạn cần đến gặp bác sĩ để được thăm khám càng sớm càng tốt.",
+        "head": "Viêm khớp",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "Thăm khám",
+        "tail_type": "test"
+    },
+    {
+        "text": "Bác sĩ sẽ khám sức khỏe tổng thể để kiểm tra chất lỏng xung quanh khớp, tình trạng khớp sưng, nóng hoặc đỏ cũng như phạm vi cử động của khớp.",
+        "head": "Thăm khám",
+        "head_type": "test",
+        "relation": "relatedTo",
+        "tail": "Kiểm tra chất lỏng xung quanh khớp",
+        "tail_type": "test"
+    },
+    {
+        "text": "Bác sĩ sẽ khám sức khỏe tổng thể để kiểm tra chất lỏng xung quanh khớp, tình trạng khớp sưng, nóng hoặc đỏ cũng như phạm vi cử động của khớp.",
+        "head": "Thăm khám",
+        "head_type": "test",
+        "relation": "relatedTo",
+        "tail": "Kiểm tra tình trạng khớp sưng",
+        "tail_type": "test"
+    },
+    {
+        "text": "Bác sĩ sẽ khám sức khỏe tổng thể để kiểm tra chất lỏng xung quanh khớp, tình trạng khớp sưng, nóng hoặc đỏ cũng như phạm vi cử động của khớp.",
+        "head": "Thăm khám",
+        "head_type": "test",
+        "relation": "relatedTo",
+        "tail": "Kiểm tra tình trạng khớp nóng",
+        "tail_type": "test"
+    },
+    {
+        "text": "Bác sĩ sẽ khám sức khỏe tổng thể để kiểm tra chất lỏng xung quanh khớp, tình trạng khớp sưng, nóng hoặc đỏ cũng như phạm vi cử động của khớp.",
+        "head": "Thăm khám",
+        "head_type": "test",
+        "relation": "relatedTo",
+        "tail": "Kiểm tra tình trạng khớp đỏ",
+        "tail_type": "test"
+    },
+    {
+        "text": "Bác sĩ sẽ khám sức khỏe tổng thể để kiểm tra chất lỏng xung quanh khớp, tình trạng khớp sưng, nóng hoặc đỏ cũng như phạm vi cử động của khớp.",
+        "head": "Thăm khám",
+        "head_type": "test",
+        "relation": "relatedTo",
+        "tail": "Kiểm tra phạm vi cử động của khớp",
+        "tail_type": "test"
+    },
+    {
+        "text": "Tiếp theo, có thể bạn sẽ được chỉ định thực hiện một số chẩn đoán lâm sàng để tìm ra bệnh.",
+        "head": "Chẩn đoán lâm sàng",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "Viêm khớp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Những chẩn đoán này bao gồm: Xét nghiệm máu: để kiểm tra các loại kháng thể như anti-CCP, RF và ANA.",
+        "head": "Xét nghiệm máu",
+        "head_type": "test",
+        "relation": "relatedTo",
+        "tail": "Kiểm tra kháng thể anti-CCP",
+        "tail_type": "test"
+    },
+    {
+        "text": "Những chẩn đoán này bao gồm: Xét nghiệm máu: để kiểm tra các loại kháng thể như anti-CCP, RF và ANA.",
+        "head": "Xét nghiệm máu",
+        "head_type": "test",
+        "relation": "relatedTo",
+        "tail": "Kiểm tra kháng thể RF",
+        "tail_type": "test"
+    },
+    {
+        "text": "Những chẩn đoán này bao gồm: Xét nghiệm máu: để kiểm tra các loại kháng thể như anti-CCP, RF và ANA.",
+        "head": "Xét nghiệm máu",
+        "head_type": "test",
+        "relation": "relatedTo",
+        "tail": "Kiểm tra kháng thể ANA",
+        "tail_type": "test"
+    },
+    {
+        "text": "Những chẩn đoán này bao gồm: Chụp X-quang, MRI và CT: để thấy rõ hình ảnh về hệ cơ xương khớp.",
+        "head": "Chụp X-quang",
+        "head_type": "test",
+        "relation": "relatedTo",
+        "tail": "Hệ cơ xương khớp",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Những chẩn đoán này bao gồm: Chụp X-quang, MRI và CT: để thấy rõ hình ảnh về hệ cơ xương khớp.",
+        "head": "MRI",
+        "head_type": "test",
+        "relation": "relatedTo",
+        "tail": "Hệ cơ xương khớp",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Những chẩn đoán này bao gồm: Chụp X-quang, MRI và CT: để thấy rõ hình ảnh về hệ cơ xương khớp.",
+        "head": "CT",
+        "head_type": "test",
+        "relation": "relatedTo",
+        "tail": "Hệ cơ xương khớp",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Mỗi bệnh lý sẽ để lại những biến chứng khác nhau:",
+        "head": "Thoái hóa khớp",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Rối loạn giấc ngủ",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Mỗi bệnh lý sẽ để lại những biến chứng khác nhau:",
+        "head": "Thoái hóa khớp",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Vôi hóa sụn khớp",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Mỗi bệnh lý sẽ để lại những biến chứng khác nhau:",
+        "head": "Thoái hóa khớp",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Biến dạng khớp",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Mỗi bệnh lý sẽ để lại những biến chứng khác nhau:",
+        "head": "Thoái hóa khớp",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Gout",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Mỗi bệnh lý sẽ để lại những biến chứng khác nhau:",
+        "head": "Thoái hóa khớp",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Liệt",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Viêm khớp dạng thấp: Bệnh tiến triển sẽ phá hủy các khớp, làm biến dạng các ngón tay, cổ tay.",
+        "head": "Viêm khớp dạng thấp",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Khớp",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Viêm khớp dạng thấp: Bệnh tiến triển sẽ phá hủy các khớp, làm biến dạng các ngón tay, cổ tay.",
+        "head": "Viêm khớp dạng thấp",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Ngón tay",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Viêm khớp dạng thấp: Bệnh tiến triển sẽ phá hủy các khớp, làm biến dạng các ngón tay, cổ tay.",
+        "head": "Viêm khớp dạng thấp",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Cổ tay",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Bên cạnh đó, biến chứng nghiêm trọng có thể phát sinh trong các hệ cơ quan trên khắp cơ thể như: Các nốt thấp",
+        "head": "Viêm khớp dạng thấp",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Các nốt thấp",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Bên cạnh đó, biến chứng nghiêm trọng có thể phát sinh trong các hệ cơ quan trên khắp cơ thể như: Hội chứng Sjogren",
+        "head": "Viêm khớp dạng thấp",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Hội chứng Sjogren",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bên cạnh đó, biến chứng nghiêm trọng có thể phát sinh trong các hệ cơ quan trên khắp cơ thể như: Viêm màng ngoài tim",
+        "head": "Viêm khớp dạng thấp",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Viêm màng ngoài tim",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bên cạnh đó, biến chứng nghiêm trọng có thể phát sinh trong các hệ cơ quan trên khắp cơ thể như: Viêm mạch máu",
+        "head": "Viêm khớp dạng thấp",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Viêm mạch máu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bên cạnh đó, biến chứng nghiêm trọng có thể phát sinh trong các hệ cơ quan trên khắp cơ thể như: Viêm màng phổi",
+        "head": "Viêm khớp dạng thấp",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Viêm màng phổi",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bên cạnh đó, biến chứng nghiêm trọng có thể phát sinh trong các hệ cơ quan trên khắp cơ thể như: Bệnh phổi tắc nghẽn mãn tính (COPD)",
+        "head": "Viêm khớp dạng thấp",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Bệnh phổi tắc nghẽn mãn tính (COPD)",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bên cạnh đó, biến chứng nghiêm trọng có thể phát sinh trong các hệ cơ quan trên khắp cơ thể như: Viêm xơ cứng",
+        "head": "Viêm khớp dạng thấp",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Viêm xơ cứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Lupus: Các biến chứng do bệnh lupus ban đỏ gây ra có thể làm tổn thương bất kỳ khu vực nào trong cơ thể, chẳng hạn như da, tim, phổi, thận, máu và não.",
+        "head": "Lupus",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Da",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Lupus: Các biến chứng do bệnh lupus ban đỏ gây ra có thể làm tổn thương bất kỳ khu vực nào trong cơ thể, chẳng hạn như da, tim, phổi, thận, máu và não.",
+        "head": "Lupus",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Tim",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Lupus: Các biến chứng do bệnh lupus ban đỏ gây ra có thể làm tổn thương bất kỳ khu vực nào trong cơ thể, chẳng hạn như da, tim, phổi, thận, máu và não.",
+        "head": "Lupus",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Phổi",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Lupus: Các biến chứng do bệnh lupus ban đỏ gây ra có thể làm tổn thương bất kỳ khu vực nào trong cơ thể, chẳng hạn như da, tim, phổi, thận, máu và não.",
+        "head": "Lupus",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Thận",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Lupus: Các biến chứng do bệnh lupus ban đỏ gây ra có thể làm tổn thương bất kỳ khu vực nào trong cơ thể, chẳng hạn như da, tim, phổi, thận, máu và não.",
+        "head": "Lupus",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Máu",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Lupus: Các biến chứng do bệnh lupus ban đỏ gây ra có thể làm tổn thương bất kỳ khu vực nào trong cơ thể, chẳng hạn như da, tim, phổi, thận, máu và não.",
+        "head": "Lupus",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Não",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Trường hợp bạn mang thai trong lúc bị lupus, bạn có nhiều khả năng bị sảy thai, cao huyết áp trong thai kỳ và sinh non.",
+        "head": "Lupus",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Sảy thai",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Trường hợp bạn mang thai trong lúc bị lupus, bạn có nhiều khả năng bị sảy thai, cao huyết áp trong thai kỳ và sinh non.",
+        "head": "Lupus",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Cao huyết áp trong thai kỳ",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Trường hợp bạn mang thai trong lúc bị lupus, bạn có nhiều khả năng bị sảy thai, cao huyết áp trong thai kỳ và sinh non.",
+        "head": "Lupus",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Sinh non",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Gout: Nồng độ axit uric cao là nguyên nhân dẫn đến sỏi thận ở bệnh nhân gout.",
+        "head": "Gout",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Sỏi thận",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Nếu có chức năng thận kém, bạn còn có nguy cơ mắc bệnh thận cấp tính do axit uric (AUAN), khiến chức năng thận suy giảm nhanh chóng.",
+        "head": "Gout",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Bệnh thận cấp tính do axit uric (AUAN)",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Viêm cột sống dính khớp: Khi khoảng cách giữa các đốt sống dần thu hẹp khiến đốt sống bị hợp nhất, cột sống sẽ trở nên cứng và không linh hoạt.",
+        "head": "Viêm cột sống dính khớp",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Cột sống",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Ngoài ra, bệnh còn ảnh hưởng đến các khớp khác như khớp háng, khớp vai, khớp hàm, khớp cùng chậu… cũng như gây ra các vấn đề về mắt, tim, phổi, hệ tiêu hóa… và khiến người bệnh đối diện với nguy cơ tàn phế.",
+        "head": "Viêm cột sống dính khớp",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Khớp háng",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Ngoài ra, bệnh còn ảnh hưởng đến các khớp khác như khớp háng, khớp vai, khớp hàm, khớp cùng chậu… cũng như gây ra các vấn đề về mắt, tim, phổi, hệ tiêu hóa… và khiến người bệnh đối diện với nguy cơ tàn phế.",
+        "head": "Viêm cột sống dính khớp",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Khớp vai",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Ngoài ra, bệnh còn ảnh hưởng đến các khớp khác như khớp háng, khớp vai, khớp hàm, khớp cùng chậu… cũng như gây ra các vấn đề về mắt, tim, phổi, hệ tiêu hóa… và khiến người bệnh đối diện với nguy cơ tàn phế.",
+        "head": "Viêm cột sống dính khớp",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Khớp hàm",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Ngoài ra, bệnh còn ảnh hưởng đến các khớp khác như khớp háng, khớp vai, khớp hàm, khớp cùng chậu… cũng như gây ra các vấn đề về mắt, tim, phổi, hệ tiêu hóa… và khiến người bệnh đối diện với nguy cơ tàn phế.",
+        "head": "Viêm cột sống dính khớp",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Khớp cùng chậu",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Ngoài ra, bệnh còn ảnh hưởng đến các khớp khác như khớp háng, khớp vai, khớp hàm, khớp cùng chậu… cũng như gây ra các vấn đề về mắt, tim, phổi, hệ tiêu hóa… và khiến người bệnh đối diện với nguy cơ tàn phế.",
+        "head": "Viêm cột sống dính khớp",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Mắt",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Ngoài ra, bệnh còn ảnh hưởng đến các khớp khác như khớp háng, khớp vai, khớp hàm, khớp cùng chậu… cũng như gây ra các vấn đề về mắt, tim, phổi, hệ tiêu hóa… và khiến người bệnh đối diện với nguy cơ tàn phế.",
+        "head": "Viêm cột sống dính khớp",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Tim",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Ngoài ra, bệnh còn ảnh hưởng đến các khớp khác như khớp háng, khớp vai, khớp hàm, khớp cùng chậu… cũng như gây ra các vấn đề về mắt, tim, phổi, hệ tiêu hóa… và khiến người bệnh đối diện với nguy cơ tàn phế.",
+        "head": "Viêm cột sống dính khớp",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Phổi",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Ngoài ra, bệnh còn ảnh hưởng đến các khớp khác như khớp háng, khớp vai, khớp hàm, khớp cùng chậu… cũng như gây ra các vấn đề về mắt, tim, phổi, hệ tiêu hóa… và khiến người bệnh đối diện với nguy cơ tàn phế.",
+        "head": "Viêm cột sống dính khớp",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Hệ tiêu hóa",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Viêm khớp nhiễm khuẩn: gây biến chứng viêm từ khớp sang sụn khớp và đầu xương, nếu không điều trị kịp thời sẽ gây trật khớp, mất chức năng vận động.",
+        "head": "Viêm khớp nhiễm khuẩn",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Khớp",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Viêm khớp nhiễm khuẩn: gây biến chứng viêm từ khớp sang sụn khớp và đầu xương, nếu không điều trị kịp thời sẽ gây trật khớp, mất chức năng vận động.",
+        "head": "Viêm khớp nhiễm khuẩn",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Sụn khớp",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Viêm khớp nhiễm khuẩn: gây biến chứng viêm từ khớp sang sụn khớp và đầu xương, nếu không điều trị kịp thời sẽ gây trật khớp, mất chức năng vận động.",
+        "head": "Viêm khớp nhiễm khuẩn",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Đầu xương",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Viêm khớp nhiễm khuẩn: gây biến chứng viêm từ khớp sang sụn khớp và đầu xương, nếu không điều trị kịp thời sẽ gây trật khớp, mất chức năng vận động.",
+        "head": "Viêm khớp nhiễm khuẩn",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Trật khớp",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Viêm khớp nhiễm khuẩn: gây biến chứng viêm từ khớp sang sụn khớp và đầu xương, nếu không điều trị kịp thời sẽ gây trật khớp, mất chức năng vận động.",
+        "head": "Viêm khớp nhiễm khuẩn",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Mất chức năng vận động",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Chưa hết, viêm ở vùng cột sống còn gây chèn ép tủy sống, vẹo cột sống; nếu vi khuẩn lan sang các bộ phận khác như gan, phổi, thận sẽ gây viêm và áp xe.",
+        "head": "Viêm khớp nhiễm khuẩn",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Cột sống",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Chưa hết, viêm ở vùng cột sống còn gây chèn ép tủy sống, vẹo cột sống; nếu vi khuẩn lan sang các bộ phận khác như gan, phổi, thận sẽ gây viêm và áp xe.",
+        "head": "Viêm khớp nhiễm khuẩn",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Tủy sống",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Chưa hết, viêm ở vùng cột sống còn gây chèn ép tủy sống, vẹo cột sống; nếu vi khuẩn lan sang các bộ phận khác như gan, phổi, thận sẽ gây viêm và áp xe.",
+        "head": "Viêm khớp nhiễm khuẩn",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Gan",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Chưa hết, viêm ở vùng cột sống còn gây chèn ép tủy sống, vẹo cột sống; nếu vi khuẩn lan sang các bộ phận khác như gan, phổi, thận sẽ gây viêm và áp xe.",
+        "head": "Viêm khớp nhiễm khuẩn",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Phổi",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Chưa hết, viêm ở vùng cột sống còn gây chèn ép tủy sống, vẹo cột sống; nếu vi khuẩn lan sang các bộ phận khác như gan, phổi, thận sẽ gây viêm và áp xe.",
+        "head": "Viêm khớp nhiễm khuẩn",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Thận",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Viêm khớp phản ứng: Không chỉ làm giảm chất lượng cuộc sống của người bệnh, viêm khớp phản ứng còn ảnh hưởng tới các cơ quan khác, gây ra biến chứng như hóa sừng trong lòng bàn tay, bàn chân và đầu; viêm kết mạc, viêm giác mạc, đau nhức hốc mắt; viêm tuyến tiền liệt, bàng quang, bao quy đầu; tiểu mủ vô khuẩn, tiểu máu vi thể…",
+        "head": "Viêm khớp phản ứng",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Bàn tay",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Viêm khớp phản ứng: Không chỉ làm giảm chất lượng cuộc sống của người bệnh, viêm khớp phản ứng còn ảnh hưởng tới các cơ quan khác, gây ra biến chứng như hóa sừng trong lòng bàn tay, bàn chân và đầu; viêm kết mạc, viêm giác mạc, đau nhức hốc mắt; viêm tuyến tiền liệt, bàng quang, bao quy đầu; tiểu mủ vô khuẩn, tiểu máu vi thể…",
+        "head": "Viêm khớp phản ứng",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Bàn chân",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Viêm khớp phản ứng: Không chỉ làm giảm chất lượng cuộc sống của người bệnh, viêm khớp phản ứng còn ảnh hưởng tới các cơ quan khác, gây ra biến chứng như hóa sừng trong lòng bàn tay, bàn chân và đầu; viêm kết mạc, viêm giác mạc, đau nhức hốc mắt; viêm tuyến tiền liệt, bàng quang, bao quy đầu; tiểu mủ vô khuẩn, tiểu máu vi thể…",
+        "head": "Viêm khớp phản ứng",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Đầu",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Viêm khớp phản ứng: Không chỉ làm giảm chất lượng cuộc sống của người bệnh, viêm khớp phản ứng còn ảnh hưởng tới các cơ quan khác, gây ra biến chứng như hóa sừng trong lòng bàn tay, bàn chân và đầu; viêm kết mạc, viêm giác mạc, đau nhức hốc mắt; viêm tuyến tiền liệt, bàng quang, bao quy đầu; tiểu mủ vô khuẩn, tiểu máu vi thể…",
+        "head": "Viêm khớp phản ứng",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Kết mạc",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Viêm khớp phản ứng: Không chỉ làm giảm chất lượng cuộc sống của người bệnh, viêm khớp phản ứng còn ảnh hưởng tới các cơ quan khác, gây ra biến chứng như hóa sừng trong lòng bàn tay, bàn chân và đầu; viêm kết mạc, viêm giác mạc, đau nhức hốc mắt; viêm tuyến tiền liệt, bàng quang, bao quy đầu; tiểu mủ vô khuẩn, tiểu máu vi thể…",
+        "head": "Viêm khớp phản ứng",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Giác mạc",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Viêm khớp phản ứng: Không chỉ làm giảm chất lượng cuộc sống của người bệnh, viêm khớp phản ứng còn ảnh hưởng tới các cơ quan khác, gây ra biến chứng như hóa sừng trong lòng bàn tay, bàn chân và đầu; viêm kết mạc, viêm giác mạc, đau nhức hốc mắt; viêm tuyến tiền liệt, bàng quang, bao quy đầu; tiểu mủ vô khuẩn, tiểu máu vi thể…",
+        "head": "Viêm khớp phản ứng",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Hốc mắt",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Viêm khớp phản ứng: Không chỉ làm giảm chất lượng cuộc sống của người bệnh, viêm khớp phản ứng còn ảnh hưởng tới các cơ quan khác, gây ra biến chứng như hóa sừng trong lòng bàn tay, bàn chân và đầu; viêm kết mạc, viêm giác mạc, đau nhức hốc mắt; viêm tuyến tiền liệt, bàng quang, bao quy đầu; tiểu mủ vô khuẩn, tiểu máu vi thể…",
+        "head": "Viêm khớp phản ứng",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Tuyến tiền liệt",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Viêm khớp phản ứng: Không chỉ làm giảm chất lượng cuộc sống của người bệnh, viêm khớp phản ứng còn ảnh hưởng tới các cơ quan khác, gây ra biến chứng như hóa sừng trong lòng bàn tay, bàn chân và đầu; viêm kết mạc, viêm giác mạc, đau nhức hốc mắt; viêm tuyến tiền liệt, bàng quang, bao quy đầu; tiểu mủ vô khuẩn, tiểu máu vi thể…",
+        "head": "Viêm khớp phản ứng",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Bàng quang",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Viêm khớp phản ứng: Không chỉ làm giảm chất lượng cuộc sống của người bệnh, viêm khớp phản ứng còn ảnh hưởng tới các cơ quan khác, gây ra biến chứng như hóa sừng trong lòng bàn tay, bàn chân và đầu; viêm kết mạc, viêm giác mạc, đau nhức hốc mắt; viêm tuyến tiền liệt, bàng quang, bao quy đầu; tiểu mủ vô khuẩn, tiểu máu vi thể…",
+        "head": "Viêm khớp phản ứng",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Bao quy đầu",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Đau cơ xơ hóa: Những cơn đau kéo dài và lan rộng của bệnh đau cơ xơ hóa sẽ khiến người bệnh luôn trong trạng thái mệt mỏi, thậm chí trầm cảm và mất ngủ thường xuyên.",
+        "head": "Đau cơ xơ hóa",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Mệt mỏi",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Đau cơ xơ hóa: Những cơn đau kéo dài và lan rộng của bệnh đau cơ xơ hóa sẽ khiến người bệnh luôn trong trạng thái mệt mỏi, thậm chí trầm cảm và mất ngủ thường xuyên.",
+        "head": "Đau cơ xơ hóa",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Trầm cảm",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Mục tiêu chính của việc điều trị các bệnh lý viêm khớp là giảm thiểu cơn đau và ngăn ngừa khớp bị tổn thương thêm.",
+        "head": "giảm thiểu cơn đau",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "bệnh lý viêm khớp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Mục tiêu chính của việc điều trị các bệnh lý viêm khớp là giảm thiểu cơn đau và ngăn ngừa khớp bị tổn thương thêm.",
+        "head": "ngăn ngừa khớp bị tổn thương thêm",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "bệnh lý viêm khớp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bạn sẽ được bác sĩ tư vấn cách kiểm soát cơn đau phù hợp nhất với mình.",
+        "head": "kiểm soát cơn đau",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "bệnh lý viêm khớp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Một số người nhận thấy biện pháp chườm đá và sử dụng miếng dán có tác dụng làm dịu cơn đau hiệu quả.",
+        "head": "chườm đá",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "cơn đau",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Một số người nhận thấy biện pháp chườm đá và sử dụng miếng dán có tác dụng làm dịu cơn đau hiệu quả.",
+        "head": "sử dụng miếng dán",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "cơn đau",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Những người khác sử dụng các thiết bị hỗ trợ di chuyển, như gậy hoặc khung tập đi, để giảm áp lực cho các khớp bị đau.",
+        "head": "các thiết bị hỗ trợ di chuyển",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "khớp bị đau",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Những người khác sử dụng các thiết bị hỗ trợ di chuyển, như gậy hoặc khung tập đi, để giảm áp lực cho các khớp bị đau.",
+        "head": "gậy",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "khớp bị đau",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Những người khác sử dụng các thiết bị hỗ trợ di chuyển, như gậy hoặc khung tập đi, để giảm áp lực cho các khớp bị đau.",
+        "head": "khung tập đi",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "khớp bị đau",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Cùng với các biện pháp cải thiện cơn đau, bác sĩ sẽ chỉ định bạn một số phương pháp khác nhằm kiểm soát triệu chứng, chẳng hạn như:",
+        "head": "kiểm soát triệu chứng",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "bệnh lý viêm khớp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Thuốc giảm đau: hydrocodone (Vicodin) hoặc acetaminophen (Tylenol) có hiệu quả trong việc kiểm soát cơn đau, nhưng không giúp giảm viêm.",
+        "head": "hydrocodone (Vicodin)",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "cơn đau",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Thuốc giảm đau: hydrocodone (Vicodin) hoặc acetaminophen (Tylenol) có hiệu quả trong việc kiểm soát cơn đau, nhưng không giúp giảm viêm.",
+        "head": "acetaminophen (Tylenol)",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "cơn đau",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Thuốc chống viêm không steroid (NSAID): ibuprofen (Advil) và salicylat, giúp kiểm soát đau và viêm.",
+        "head": "ibuprofen (Advil)",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "đau",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Thuốc chống viêm không steroid (NSAID): ibuprofen (Advil) và salicylat, giúp kiểm soát đau và viêm.",
+        "head": "ibuprofen (Advil)",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "viêm",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Thuốc chống viêm không steroid (NSAID): ibuprofen (Advil) và salicylat, giúp kiểm soát đau và viêm.",
+        "head": "salicylat",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "đau",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Thuốc chống viêm không steroid (NSAID): ibuprofen (Advil) và salicylat, giúp kiểm soát đau và viêm.",
+        "head": "salicylat",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "viêm",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Menthol hoặc kem capsaicin: ngăn chặn việc truyền tín hiệu đau từ các khớp lên não.",
+        "head": "Menthol",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "tín hiệu đau",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Menthol hoặc kem capsaicin: ngăn chặn việc truyền tín hiệu đau từ các khớp lên não.",
+        "head": "kem capsaicin",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "tín hiệu đau",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Thuốc ức chế miễn dịch (prednisone hoặc cortisone) giúp giảm viêm.",
+        "head": "prednisone",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "viêm",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Thuốc ức chế miễn dịch (prednisone hoặc cortisone) giúp giảm viêm.",
+        "head": "cortisone",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "viêm",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Phẫu thuật để thay khớp nhân tạo được chỉ định cho các bệnh nhân viêm khớp mức độ nặng và mọi biện pháp chữa trị đều không đem lại hiệu quả.",
+        "head": "Phẫu thuật để thay khớp nhân tạo",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "bệnh nhân viêm khớp mức độ nặng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Phương pháp phẫu thuật này được thực hiện phổ biến nhất đối với khớp hông và đầu gối.",
+        "head": "Phẫu thuật để thay khớp nhân tạo",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "khớp hông",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Phương pháp phẫu thuật này được thực hiện phổ biến nhất đối với khớp hông và đầu gối.",
+        "head": "Phẫu thuật để thay khớp nhân tạo",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "đầu gối",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Nếu tình trạng viêm của bạn nghiêm trọng nhất ở khớp ngón tay hoặc cổ tay, bác sĩ có thể tiến hành ghép khớp.",
+        "head": "ghép khớp",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "viêm khớp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu tình trạng viêm của bạn nghiêm trọng nhất ở khớp ngón tay hoặc cổ tay, bác sĩ có thể tiến hành ghép khớp.",
+        "head": "ghép khớp",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "khớp ngón tay",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Nếu tình trạng viêm của bạn nghiêm trọng nhất ở khớp ngón tay hoặc cổ tay, bác sĩ có thể tiến hành ghép khớp.",
+        "head": "ghép khớp",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "cổ tay",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Vật lý trị liệu là liệu pháp điều trị sử dụng các bài tập giúp tăng cường các cơ xung quanh khớp bị ảnh hưởng.",
+        "head": "Vật lý trị liệu",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "bệnh lý viêm khớp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Vật lý trị liệu là liệu pháp điều trị sử dụng các bài tập giúp tăng cường các cơ xung quanh khớp bị ảnh hưởng.",
+        "head": "các bài tập",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "bệnh lý viêm khớp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Dựa trên thể trạng và mức độ viêm khớp của người bệnh, bác sĩ sẽ thiết lập cho họ những bài tập phù hợp nhằm giảm đau, tăng sự linh hoạt cho khớp và tăng phạm vi cử động của khớp.",
+        "head": "giảm đau",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "bệnh lý viêm khớp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Dựa trên thể trạng và mức độ viêm khớp của người bệnh, bác sĩ sẽ thiết lập cho họ những bài tập phù hợp nhằm giảm đau, tăng sự linh hoạt cho khớp và tăng phạm vi cử động của khớp.",
+        "head": "tăng sự linh hoạt cho khớp",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "bệnh lý viêm khớp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Dựa trên thể trạng và mức độ viêm khớp của người bệnh, bác sĩ sẽ thiết lập cho họ những bài tập phù hợp nhằm giảm đau, tăng sự linh hoạt cho khớp và tăng phạm vi cử động của khớp.",
+        "head": "tăng phạm vi cử động của khớp",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "bệnh lý viêm khớp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Một số bệnh viêm khớp ở mức độ nhẹ và trung bình có thể được chữa khỏi sau một thời gian tập vật lý trị liệu.",
+        "head": "tập vật lý trị liệu",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "bệnh lý viêm khớp ở mức độ nhẹ và trung bình",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các bài tập vật lý trị liệu phù hợp là liều thuốc hữu hiệu đối với bệnh nhân viêm khớp",
+        "head": "Các bài tập vật lý trị liệu phù hợp",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "bệnh nhân viêm khớp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tập thể dục thường xuyên: Vận động nhẹ nhàng rất có lợi cho việc cải thiện triệu chứng cũng như tăng cường sức khỏe tổng thể.",
+        "head": "Tập thể dục thường xuyên",
+        "head_type": "lifestyle",
+        "relation": "treatedBy",
+        "tail": "triệu chứng",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Tập thể dục thường xuyên: Vận động nhẹ nhàng rất có lợi cho việc cải thiện triệu chứng cũng như tăng cường sức khỏe tổng thể.",
+        "head": "Tập thể dục thường xuyên",
+        "head_type": "lifestyle",
+        "relation": "treatedBy",
+        "tail": "sức khỏe tổng thể",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Hãy hỏi ý kiến bác sĩ về bộ môn thể thao phù hợp với tình trạng của bạn: bơi lội, đi bộ, chạy bộ hay đạp xe…",
+        "head": "bơi lội",
+        "head_type": "lifestyle",
+        "relation": "treatedBy",
+        "tail": "bệnh lý viêm khớp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Hãy hỏi ý kiến bác sĩ về bộ môn thể thao phù hợp với tình trạng của bạn: bơi lội, đi bộ, chạy bộ hay đạp xe…",
+        "head": "đi bộ",
+        "head_type": "lifestyle",
+        "relation": "treatedBy",
+        "tail": "bệnh lý viêm khớp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Hãy hỏi ý kiến bác sĩ về bộ môn thể thao phù hợp với tình trạng của bạn: bơi lội, đi bộ, chạy bộ hay đạp xe…",
+        "head": "chạy bộ",
+        "head_type": "lifestyle",
+        "relation": "treatedBy",
+        "tail": "bệnh lý viêm khớp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Hãy hỏi ý kiến bác sĩ về bộ môn thể thao phù hợp với tình trạng của bạn: bơi lội, đi bộ, chạy bộ hay đạp xe…",
+        "head": "đạp xe",
+        "head_type": "lifestyle",
+        "relation": "treatedBy",
+        "tail": "bệnh lý viêm khớp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bạn cần vận động tối thiểu 30 phút/ngày, 5 ngày/tuần.",
+        "head": "vận động",
+        "head_type": "lifestyle",
+        "relation": "treatedBy",
+        "tail": "bệnh lý viêm khớp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Cân bằng hoạt động với nghỉ ngơi: Ngoài việc duy trì hoạt động, chế độ nghỉ ngơi hợp lý cũng quan trọng không kém đối với người bệnh viêm khớp.",
+        "head": "chế độ nghỉ ngơi hợp lý",
+        "head_type": "lifestyle",
+        "relation": "treatedBy",
+        "tail": "bệnh lý viêm khớp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Hãy thả lỏng cơ thể khi các cơ có dấu hiệu mệt mỏi, và chỉ tập luyện trở lại khi mọi cơ quan đều đã sẵn sàng.",
+        "head": "thả lỏng cơ thể",
+        "head_type": "lifestyle",
+        "relation": "treatedBy",
+        "tail": "bệnh lý viêm khớp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Có chế độ dinh dưỡng lành mạnh: Một thực đơn ăn uống cân bằng sẽ giúp bạn duy trì cân nặng ổn định và kiểm soát chứng viêm.",
+        "head": "chế độ dinh dưỡng lành mạnh",
+        "head_type": "lifestyle",
+        "relation": "treatedBy",
+        "tail": "bệnh lý viêm khớp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Người bệnh viêm khớp nên hạn chế ăn các loại thực phẩm tinh chế, thực phẩm chế biến sẵn và thực phẩm có nguồn gốc từ động vật.",
+        "head": "thực phẩm tinh chế",
+        "head_type": "food",
+        "relation": "aggravatedBy",
+        "tail": "bệnh lý viêm khớp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Người bệnh viêm khớp nên hạn chế ăn các loại thực phẩm tinh chế, thực phẩm chế biến sẵn và thực phẩm có nguồn gốc từ động vật.",
+        "head": "thực phẩm chế biến sẵn",
+        "head_type": "food",
+        "relation": "aggravatedBy",
+        "tail": "bệnh lý viêm khớp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Người bệnh viêm khớp nên hạn chế ăn các loại thực phẩm tinh chế, thực phẩm chế biến sẵn và thực phẩm có nguồn gốc từ động vật.",
+        "head": "thực phẩm có nguồn gốc từ động vật",
+        "head_type": "food",
+        "relation": "aggravatedBy",
+        "tail": "bệnh lý viêm khớp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Thay vào đó, hãy chọn thực phẩm giàu chất chống oxy hóa và có đặc tính chống viêm, đồng thời tăng cường thực phẩm chứa nhiều canxi và vitamin D để củng cố sức khỏe cơ xương khớp.",
+        "head": "thực phẩm giàu chất chống oxy hóa",
+        "head_type": "food",
+        "relation": "treatedBy",
+        "tail": "bệnh lý viêm khớp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Thay vào đó, hãy chọn thực phẩm giàu chất chống oxy hóa và có đặc tính chống viêm, đồng thời tăng cường thực phẩm chứa nhiều canxi và vitamin D để củng cố sức khỏe cơ xương khớp.",
+        "head": "thực phẩm có đặc tính chống viêm",
+        "head_type": "food",
+        "relation": "treatedBy",
+        "tail": "bệnh lý viêm khớp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Thay vào đó, hãy chọn thực phẩm giàu chất chống oxy hóa và có đặc tính chống viêm, đồng thời tăng cường thực phẩm chứa nhiều canxi và vitamin D để củng cố sức khỏe cơ xương khớp.",
+        "head": "thực phẩm chứa nhiều canxi",
+        "head_type": "food",
+        "relation": "treatedBy",
+        "tail": "bệnh lý viêm khớp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Thay vào đó, hãy chọn thực phẩm giàu chất chống oxy hóa và có đặc tính chống viêm, đồng thời tăng cường thực phẩm chứa nhiều canxi và vitamin D để củng cố sức khỏe cơ xương khớp.",
+        "head": "thực phẩm chứa nhiều vitamin D",
+        "head_type": "food",
+        "relation": "treatedBy",
+        "tail": "bệnh lý viêm khớp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Cải thiện giấc ngủ: Giấc ngủ kém chất lượng và thiếu số lượng có thể làm trầm trọng thêm tình trạng đau nhức do viêm khớp.",
+        "head": "Giấc ngủ kém chất lượng",
+        "head_type": "lifestyle",
+        "relation": "aggravatedBy",
+        "tail": "đau nhức do viêm khớp",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Cải thiện giấc ngủ: Giấc ngủ kém chất lượng và thiếu số lượng có thể làm trầm trọng thêm tình trạng đau nhức do viêm khớp.",
+        "head": "thiếu số lượng giấc ngủ",
+        "head_type": "lifestyle",
+        "relation": "aggravatedBy",
+        "tail": "đau nhức do viêm khớp",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Vì thế, bạn hãy cố gắng để có một giấc ngủ ngon, sâu và đủ giấc.",
+        "head": "giấc ngủ ngon",
+        "head_type": "lifestyle",
+        "relation": "treatedBy",
+        "tail": "đau nhức do viêm khớp",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "giấc ngủ sâu",
+        "head_type": "lifestyle",
+        "relation": "treatedBy",
+        "tail": "đau nhức do viêm khớp",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "giấc ngủ đủ giấc",
+        "head_type": "lifestyle",
+        "relation": "treatedBy",
+        "tail": "đau nhức do viêm khớp",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Không phải ai cũng có thể ngăn ngừa bệnh viêm khớp.",
+        "head": "bệnh viêm khớp",
+        "head_type": "disease",
+        "relation": "preventedBy",
+        "tail": "không có yếu tố nguy cơ",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Một số yếu tố nguy cơ như tuổi tác, tiền sử gia đình và giới tính nằm ngoài tầm kiểm soát của bạn.",
+        "head": "tuổi tác",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "bệnh viêm khớp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Một số yếu tố nguy cơ như tuổi tác, tiền sử gia đình và giới tính nằm ngoài tầm kiểm soát của bạn.",
+        "head": "tiền sử gia đình",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "bệnh viêm khớp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Một số yếu tố nguy cơ như tuổi tác, tiền sử gia đình và giới tính nằm ngoài tầm kiểm soát của bạn.",
+        "head": "giới tính",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "bệnh viêm khớp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tuy nhiên, có một số thói quen lành mạnh mà bạn có thể thực hiện để giảm nguy cơ phát triển bệnh.",
+        "head": "thói quen lành mạnh",
+        "head_type": "lifestyle",
+        "relation": "preventedBy",
+        "tail": "bệnh viêm khớp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các loại cá béo rất giàu axit béo omega-3 - một chất béo không bão hòa đa tốt cho sức khỏe có tác làm giảm chứng viêm.",
+        "head": "cá béo",
+        "head_type": "food",
+        "relation": "treatedBy",
+        "tail": "viêm",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Các loại cá béo rất giàu axit béo omega-3 - một chất béo không bão hòa đa tốt cho sức khỏe có tác làm giảm chứng viêm.",
+        "head": "axit béo omega-3",
+        "head_type": "food",
+        "relation": "treatedBy",
+        "tail": "viêm",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Một nghiên cứu trên tạp chí Annals of the Rheumatic Diseases cho thấy, phụ nữ ăn cá thường xuyên ít có nguy cơ mắc bệnh viêm khớp dạng thấp.",
+        "head": "ăn cá thường xuyên",
+        "head_type": "lifestyle",
+        "relation": "preventedBy",
+        "tail": "bệnh viêm khớp dạng thấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bộ Nông nghiệp Hoa Kỳ (USDA) khuyến nghị người bệnh viêm khớp nên ăn cá có nhiều omega-3 như cá hồi, cá hồi, cá thu, cá mòi… ít nhất 2 lần/tuần.",
+        "head": "cá hồi",
+        "head_type": "food",
+        "relation": "treatedBy",
+        "tail": "bệnh lý viêm khớp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bộ Nông nghiệp Hoa Kỳ (USDA) khuyến nghị người bệnh viêm khớp nên ăn cá có nhiều omega-3 như cá hồi, cá hồi, cá thu, cá mòi… ít nhất 2 lần/tuần.",
+        "head": "cá thu",
+        "head_type": "food",
+        "relation": "treatedBy",
+        "tail": "bệnh lý viêm khớp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bộ Nông nghiệp Hoa Kỳ (USDA) khuyến nghị người bệnh viêm khớp nên ăn cá có nhiều omega-3 như cá hồi, cá hồi, cá thu, cá mòi… ít nhất 2 lần/tuần.",
+        "head": "cá mòi",
+        "head_type": "food",
+        "relation": "treatedBy",
+        "tail": "bệnh lý viêm khớp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tập thể dục không chỉ giúp giảm căng thẳng do trọng lượng dư thừa gây ra cho khớp, mà còn tăng cường sức mạnh cho các cơ xung quanh khớp.",
+        "head": "Tập thể dục",
+        "head_type": "lifestyle",
+        "relation": "treatedBy",
+        "tail": "căng thẳng do trọng lượng dư thừa gây ra cho khớp",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Tập thể dục không chỉ giúp giảm căng thẳng do trọng lượng dư thừa gây ra cho khớp, mà còn tăng cường sức mạnh cho các cơ xung quanh khớp.",
+        "head": "Tập thể dục",
+        "head_type": "lifestyle",
+        "relation": "treatedBy",
+        "tail": "hao mòn khớp",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Để tối đa hóa lợi ích của chương trình tập thể dục, bạn hãy xen kẽ các hoạt động nhẹ nhàng như aerobic, đi bộ hoặc bơi lội với các bài tập tăng cường sức mạnh.",
+        "head": "aerobic",
+        "head_type": "lifestyle",
+        "relation": "treatedBy",
+        "tail": "bệnh lý viêm khớp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Để tối đa hóa lợi ích của chương trình tập thể dục, bạn hãy xen kẽ các hoạt động nhẹ nhàng như aerobic, đi bộ hoặc bơi lội với các bài tập tăng cường sức mạnh.",
+        "head": "đi bộ",
+        "head_type": "lifestyle",
+        "relation": "treatedBy",
+        "tail": "bệnh lý viêm khớp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Để tối đa hóa lợi ích của chương trình tập thể dục, bạn hãy xen kẽ các hoạt động nhẹ nhàng như aerobic, đi bộ hoặc bơi lội với các bài tập tăng cường sức mạnh.",
+        "head": "bơi lội",
+        "head_type": "lifestyle",
+        "relation": "treatedBy",
+        "tail": "bệnh lý viêm khớp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Để tối đa hóa lợi ích của chương trình tập thể dục, bạn hãy xen kẽ các hoạt động nhẹ nhàng như aerobic, đi bộ hoặc bơi lội với các bài tập tăng cường sức mạnh.",
+        "head": "các bài tập tăng cường sức mạnh",
+        "head_type": "lifestyle",
+        "relation": "treatedBy",
+        "tail": "bệnh lý viêm khớp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bên cạnh đó, cần thêm một số động tác kéo giãn để duy trì sự linh hoạt và phạm vi chuyển động của khớp.",
+        "head": "kéo giãn",
+        "head_type": "lifestyle",
+        "relation": "treatedBy",
+        "tail": "bệnh lý viêm khớp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đầu gối chịu phần lớn trọng lượng của cơ thể.",
+        "head": "Đầu gối",
+        "head_type": "organ",
+        "relation": "locatedIn",
+        "tail": "cơ thể",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Nếu bạn thừa 4,5kg, lực lên đầu gối khi bạn thực hiện mỗi bước chân sẽ tăng từ 13,5 - 27kg.",
+        "head": "thừa cân",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "lực lên đầu gối",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "So với phụ nữ có cân nặng bình thường, phụ nữ thừa cân - béo phì có nguy cơ bị thoái hóa khớp gối cao hơn gần 4 lần.",
+        "head": "thừa cân - béo phì",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "thoái hóa khớp gối",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Do đó, hãy duy trì cân nặng ổn định bằng cách tuân thủ chế độ dinh dưỡng khoa học và tập thể dục đều đặn.",
+        "head": "duy trì cân nặng ổn định",
+        "head_type": "lifestyle",
+        "relation": "treatedBy",
+        "tail": "thoái hóa khớp gối",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Theo thời gian, các sụn khớp bắt đầu bị mòn.",
+        "head": "sụn khớp bị mòn",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "thoái hóa khớp",
+        "tail_type": "disease"
+    }
+]

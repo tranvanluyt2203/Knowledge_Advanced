@@ -1,0 +1,106 @@
+[
+    {
+        "text": "Theo ThS.BS Nguyễn Tiến Sỹ, điều trị ung thư vòm họng giai đoạn 0 thường có kết quả tốt, với tỷ lệ sống sau 5 năm trên 82%.",
+        "head": "điều trị ung thư vòm họng giai đoạn 0",
+        "head_type": "treatment",
+        "relation": "relatedTo",
+        "tail": "tỷ lệ sống sau 5 năm trên 82%",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Theo ThS.BS Nguyễn Tiến Sỹ, điều trị ung thư vòm họng giai đoạn 0 thường có kết quả tốt, với tỷ lệ sống sau 5 năm trên 82%.",
+        "head": "ung thư vòm họng giai đoạn 0",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "điều trị ung thư vòm họng giai đoạn 0",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Nói chung đã mắc ung thư là rơi vào tình trạng nguy hiểm, vì vậy người bệnh không được lơ là trong việc điều trị, tái khám nhằm kiểm soát ung thư.",
+        "head": "ung thư",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "tình trạng nguy hiểm",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Nói chung đã mắc ung thư là rơi vào tình trạng nguy hiểm, vì vậy người bệnh không được lơ là trong việc điều trị, tái khám nhằm kiểm soát ung thư.",
+        "head": "tái khám",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "ung thư",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Những phương pháp tầm soát và chẩn đoán ung thư vòm họng thường được sử dụng bao gồm:",
+        "head": "ung thư vòm họng",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "tầm soát và chẩn đoán ung thư vòm họng",
+        "tail_type": "test"
+    },
+    {
+        "text": "Bác sĩ sẽ hỏi tiền sử của bệnh nhân và gia đình, bao gồm các vấn đề về lối sống, chế độ dinh dưỡng và các yếu tố khác có thể làm tăng nguy cơ phát triển ung thư vòm họng.",
+        "head": "ung thư vòm họng",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "lối sống, chế độ dinh dưỡng",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Bác sĩ sẽ sờ xem có hạch cổ nghi ngờ hay không để phát hiện những vị trí có bất thường.",
+        "head": "hạch cổ",
+        "head_type": "organ",
+        "relation": "locatedIn",
+        "tail": "cổ",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Nếu phát hiện có tổn thương nghi ngờ, bác sĩ có thể bấm sinh thiết để lấy một mẫu mô.",
+        "head": "tổn thương nghi ngờ",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "ung thư vòm họng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Mẫu mô này sẽ được các bác sĩ giải phẫu bệnh đánh giá nhằm phát hiện các tế bào ung thư.",
+        "head": "tế bào ung thư",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "ung thư vòm họng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Phương pháp này được chỉ định để đánh giá các đặc điểm bướu tại chỗ và tình trạng di căn hạch vùng.",
+        "head": "di căn hạch vùng",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "ung thư vòm họng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Kỹ thuật này có thể được dùng để đánh giá bướu đã di căn đến các cơ quan khác hay chưa.",
+        "head": "di căn",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "ung thư vòm họng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "ThS.BS Nguyễn Tiến Sỹ cho biết, bệnh ung thư vòm họng giai đoạn 0 có cơ hội điều trị khỏi bệnh rất cao.",
+        "head": "ung thư vòm họng giai đoạn 0",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "điều trị khỏi bệnh",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Việc chủ động đi khám bệnh khi thấy có dấu hiệu bất thường, hoặc chủ động tầm soát trên nhóm bệnh nhân có nguy cơ cao có thể giúp phát hiện bệnh ở giai đoạn sớm.",
+        "head": "dấu hiệu bất thường",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "ung thư vòm họng",
+        "tail_type": "disease"
+    }
+]

@@ -1,0 +1,1010 @@
+[
+    {
+        "text": "Suy tĩnh mạch mạn tính là bệnh lý khá phổ biến, cứ khoảng 20 người trưởng thành thì có 1 người mắc bệnh.",
+        "head": "Suy tĩnh mạch mạn tính",
+        "head_type": "disease",
+        "relation": "associatedWith",
+        "tail": "người trưởng thành",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Bệnh thường gặp ở những người trên 50 tuổi, nguy cơ mắc bệnh tăng lên khi tuổi càng cao.",
+        "head": "Suy tĩnh mạch mạn tính",
+        "head_type": "disease",
+        "relation": "associatedWith",
+        "tail": "người trên 50 tuổi",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Bệnh thường gặp ở những người trên 50 tuổi, nguy cơ mắc bệnh tăng lên khi tuổi càng cao.",
+        "head": "Suy tĩnh mạch mạn tính",
+        "head_type": "disease",
+        "relation": "aggravatedBy",
+        "tail": "tuổi cao",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Mặc dù vậy, nhiều bạn trẻ có thể mắc bệnh tĩnh mạch nhưng không biết và không được điều trị thích hợp.",
+        "head": "Suy tĩnh mạch mạn tính",
+        "head_type": "disease",
+        "relation": "associatedWith",
+        "tail": "bạn trẻ",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Suy tĩnh mạch mạn tính là tình trạng các van tĩnh mạch sẽ “đóng không kín”, khiến một phần máu nghèo oxy có thể “chảy ngược” xuống chân và ứ đọng ở đó theo mỗi chu kỳ tim.",
+        "head": "Suy tĩnh mạch mạn tính",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "van tĩnh mạch “đóng không kín”",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Suy tĩnh mạch mạn tính là tình trạng các van tĩnh mạch sẽ “đóng không kín”, khiến một phần máu nghèo oxy có thể “chảy ngược” xuống chân và ứ đọng ở đó theo mỗi chu kỳ tim.",
+        "head": "Suy tĩnh mạch mạn tính",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "máu nghèo oxy “chảy ngược” xuống chân",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Suy tĩnh mạch mạn tính là tình trạng các van tĩnh mạch sẽ “đóng không kín”, khiến một phần máu nghèo oxy có thể “chảy ngược” xuống chân và ứ đọng ở đó theo mỗi chu kỳ tim.",
+        "head": "Suy tĩnh mạch mạn tính",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "máu ứ đọng ở chân",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Trong cơ thể, tim giữ vai trò đưa máu “giàu oxy” đến nuôi các cơ quan bằng động mạch, còn tĩnh mạch sẽ đưa máu “nghèo oxy” trở về tim để tiếp tục vòng tuần hoàn vô hạn của cơ thể.",
+        "head": "tim",
+        "head_type": "organ",
+        "relation": "affects",
+        "tail": "máu “giàu oxy”",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Trong cơ thể, tim giữ vai trò đưa máu “giàu oxy” đến nuôi các cơ quan bằng động mạch, còn tĩnh mạch sẽ đưa máu “nghèo oxy” trở về tim để tiếp tục vòng tuần hoàn vô hạn của cơ thể.",
+        "head": "tĩnh mạch",
+        "head_type": "organ",
+        "relation": "affects",
+        "tail": "máu “nghèo oxy”",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Tĩnh mạch càng ở xa thì máu về tim càng chậm, nhất là hệ tĩnh mạch ở chân.",
+        "head": "tĩnh mạch",
+        "head_type": "organ",
+        "relation": "locatedIn",
+        "tail": "chân",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Máu tĩnh mạch chân sẽ dễ &#8220;ứ đọng&#8221; hơn do hầu hết thời gian trong ngày chúng ta đều ở tư thế sinh hoạt ngồi hoặc đứng.",
+        "head": "máu tĩnh mạch chân",
+        "head_type": "symptom",
+        "relation": "causedBy",
+        "tail": "ngồi hoặc đứng",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Tĩnh mạch có nhiều van một chiều phân bố dọc theo đường đi của nó.",
+        "head": "van tĩnh mạch",
+        "head_type": "organ",
+        "relation": "locatedIn",
+        "tail": "tĩnh mạch",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Các van tĩnh mạch giúp máu “leo lên từng nấc” theo một chiều để về tim, các van cũng giúp ngăn chặn sự ứ máu ở phần xa cơ thể.",
+        "head": "van tĩnh mạch",
+        "head_type": "organ",
+        "relation": "affects",
+        "tail": "máu “leo lên từng nấc”",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Các van tĩnh mạch giúp máu “leo lên từng nấc” theo một chiều để về tim, các van cũng giúp ngăn chặn sự ứ máu ở phần xa cơ thể.",
+        "head": "van tĩnh mạch",
+        "head_type": "organ",
+        "relation": "affects",
+        "tail": "ngăn chặn sự ứ máu",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Theo thời gian, có khi mất hàng năm đến hàng chục năm, tình trạng suy tĩnh mạch mạn tính diễn tiến thầm lặng và dần gây ra triệu chứng đau, chuột rút, tê bì, phù và làm thay đổi màu sắc ở chân.",
+        "head": "Suy tĩnh mạch mạn tính",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "đau",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Theo thời gian, có khi mất hàng năm đến hàng chục năm, tình trạng suy tĩnh mạch mạn tính diễn tiến thầm lặng và dần gây ra triệu chứng đau, chuột rút, tê bì, phù và làm thay đổi màu sắc ở chân.",
+        "head": "Suy tĩnh mạch mạn tính",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "chuột rút",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Theo thời gian, có khi mất hàng năm đến hàng chục năm, tình trạng suy tĩnh mạch mạn tính diễn tiến thầm lặng và dần gây ra triệu chứng đau, chuột rút, tê bì, phù và làm thay đổi màu sắc ở chân.",
+        "head": "Suy tĩnh mạch mạn tính",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "tê bì",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Theo thời gian, có khi mất hàng năm đến hàng chục năm, tình trạng suy tĩnh mạch mạn tính diễn tiến thầm lặng và dần gây ra triệu chứng đau, chuột rút, tê bì, phù và làm thay đổi màu sắc ở chân.",
+        "head": "Suy tĩnh mạch mạn tính",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "phù",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Theo thời gian, có khi mất hàng năm đến hàng chục năm, tình trạng suy tĩnh mạch mạn tính diễn tiến thầm lặng và dần gây ra triệu chứng đau, chuột rút, tê bì, phù và làm thay đổi màu sắc ở chân.",
+        "head": "Suy tĩnh mạch mạn tính",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "thay đổi màu sắc ở chân",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Lâu ngày nếu không được điều trị đúng cách, có khả năng diễn tiến đến loét chân lâu lành.",
+        "head": "Suy tĩnh mạch mạn tính",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "loét chân lâu lành",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Nếu không tập thể dục thường xuyên, cùng với đặc thù công việc phải ngồi hoặc đứng trong thời gian dài sẽ làm tăng áp lực trong tĩnh mạch và &#8220;giãn không hồi phục&#8221; tĩnh mạch do ứ máu.",
+        "head": "tập thể dục thường xuyên",
+        "head_type": "lifestyle",
+        "relation": "affects",
+        "tail": "áp lực trong tĩnh mạch",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Nếu không tập thể dục thường xuyên, cùng với đặc thù công việc phải ngồi hoặc đứng trong thời gian dài sẽ làm tăng áp lực trong tĩnh mạch và &#8220;giãn không hồi phục&#8221; tĩnh mạch do ứ máu.",
+        "head": "ngồi hoặc đứng trong thời gian dài",
+        "head_type": "lifestyle",
+        "relation": "affects",
+        "tail": "áp lực trong tĩnh mạch",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Nếu không tập thể dục thường xuyên, cùng với đặc thù công việc phải ngồi hoặc đứng trong thời gian dài sẽ làm tăng áp lực trong tĩnh mạch và &#8220;giãn không hồi phục&#8221; tĩnh mạch do ứ máu.",
+        "head": "tập thể dục thường xuyên",
+        "head_type": "lifestyle",
+        "relation": "affects",
+        "tail": "giãn không hồi phục tĩnh mạch",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Nếu không tập thể dục thường xuyên, cùng với đặc thù công việc phải ngồi hoặc đứng trong thời gian dài sẽ làm tăng áp lực trong tĩnh mạch và &#8220;giãn không hồi phục&#8221; tĩnh mạch do ứ máu.",
+        "head": "ngồi hoặc đứng trong thời gian dài",
+        "head_type": "lifestyle",
+        "relation": "affects",
+        "tail": "giãn không hồi phục tĩnh mạch",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Dần dần, tình trạng này gây suy yếu các van tĩnh mạch, khiến bạn có nguy cơ bị suy tĩnh mạch.",
+        "head": "Suy yếu các van tĩnh mạch",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Suy tĩnh mạch",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bên cạnh đó, hiện tượng cục máu đông trong hệ tĩnh mạch sâu ở chân (huyết khối tĩnh mạch sâu) cũng là nguyên nhân gây suy van tĩnh mạch mạn tính.",
+        "head": "huyết khối tĩnh mạch sâu",
+        "head_type": "disease",
+        "relation": "causes",
+        "tail": "Suy van tĩnh mạch mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Phụ nữ sẽ dễ mắc bệnh suy tĩnh mạch mạn tính hơn nam giới.",
+        "head": "Suy tĩnh mạch mạn tính",
+        "head_type": "disease",
+        "relation": "associatedWith",
+        "tail": "Phụ nữ",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Phụ nữ sẽ dễ mắc bệnh suy tĩnh mạch mạn tính hơn nam giới.",
+        "head": "Suy tĩnh mạch mạn tính",
+        "head_type": "disease",
+        "relation": "associatedWith",
+        "tail": "Nam giới",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Ngoài ra, một số đối tượng sau cũng có nguy cơ cao hơn:  Trên 50 tuổi Thừa cân - béo phì Hút thuốc lá Đang có thai hoặc đã mang thai nhiều lần Cha mẹ/anh chị ruột có tiền sử suy tĩnh mạch mạn tính Tiền sử huyết khối tĩnh mạch sâu",
+        "head": "Suy tĩnh mạch mạn tính",
+        "head_type": "disease",
+        "relation": "associatedWith",
+        "tail": "Trên 50 tuổi",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Ngoài ra, một số đối tượng sau cũng có nguy cơ cao hơn:  Trên 50 tuổi Thừa cân - béo phì Hút thuốc lá Đang có thai hoặc đã mang thai nhiều lần Cha mẹ/anh chị ruột có tiền sử suy tĩnh mạch mạn tính Tiền sử huyết khối tĩnh mạch sâu",
+        "head": "Suy tĩnh mạch mạn tính",
+        "head_type": "disease",
+        "relation": "associatedWith",
+        "tail": "Thừa cân - béo phì",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Ngoài ra, một số đối tượng sau cũng có nguy cơ cao hơn:  Trên 50 tuổi Thừa cân - béo phì Hút thuốc lá Đang có thai hoặc đã mang thai nhiều lần Cha mẹ/anh chị ruột có tiền sử suy tĩnh mạch mạn tính Tiền sử huyết khối tĩnh mạch sâu",
+        "head": "Suy tĩnh mạch mạn tính",
+        "head_type": "disease",
+        "relation": "associatedWith",
+        "tail": "Hút thuốc lá",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Ngoài ra, một số đối tượng sau cũng có nguy cơ cao hơn:  Trên 50 tuổi Thừa cân - béo phì Hút thuốc lá Đang có thai hoặc đã mang thai nhiều lần Cha mẹ/anh chị ruột có tiền sử suy tĩnh mạch mạn tính Tiền sử huyết khối tĩnh mạch sâu",
+        "head": "Suy tĩnh mạch mạn tính",
+        "head_type": "disease",
+        "relation": "associatedWith",
+        "tail": "Đang có thai",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Ngoài ra, một số đối tượng sau cũng có nguy cơ cao hơn:  Trên 50 tuổi Thừa cân - béo phì Hút thuốc lá Đang có thai hoặc đã mang thai nhiều lần Cha mẹ/anh chị ruột có tiền sử suy tĩnh mạch mạn tính Tiền sử huyết khối tĩnh mạch sâu",
+        "head": "Suy tĩnh mạch mạn tính",
+        "head_type": "disease",
+        "relation": "associatedWith",
+        "tail": "mang thai nhiều lần",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Ngoài ra, một số đối tượng sau cũng có nguy cơ cao hơn:  Trên 50 tuổi Thừa cân - béo phì Hút thuốc lá Đang có thai hoặc đã mang thai nhiều lần Cha mẹ/anh chị ruột có tiền sử suy tĩnh mạch mạn tính Tiền sử huyết khối tĩnh mạch sâu",
+        "head": "Suy tĩnh mạch mạn tính",
+        "head_type": "disease",
+        "relation": "associatedWith",
+        "tail": "Cha mẹ/anh chị ruột có tiền sử suy tĩnh mạch mạn tính",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Các triệu chứng suy tĩnh mạch mạn tính thường khu trú ở chân, từ bàn chân đến bắp chân ở giai đoạn đầu hoặc đùi ở giai đoạn sau: (3)  Sưng hoặc nặng chân, đặc biệt ở vùng cẳng chân và mắt cá chân Đau Ngứa Tê bì Giãn tĩnh mạch (tĩnh mạch mạng nhện li ti ở bề mặt da, hay tĩnh mạch giãn ngoằn ngoèo) Da sậm màu, chai cứng   Các triệu chứng của bệnh tĩnh mạch thường sẽ &#8220;rầm rộ&#8221; hơn về chiều hoặc khi đi ngủ.",
+        "head": "Sưng hoặc nặng chân",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Suy tĩnh mạch mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các triệu chứng suy tĩnh mạch mạn tính thường khu trú ở chân, từ bàn chân đến bắp chân ở giai đoạn đầu hoặc đùi ở giai đoạn sau: (3)  Sưng hoặc nặng chân, đặc biệt ở vùng cẳng chân và mắt cá chân Đau Ngứa Tê bì Giãn tĩnh mạch (tĩnh mạch mạng nhện li ti ở bề mặt da, hay tĩnh mạch giãn ngoằn ngoèo) Da sậm màu, chai cứng   Các triệu chứng của bệnh tĩnh mạch thường sẽ &#8220;rầm rộ&#8221; hơn về chiều hoặc khi đi ngủ.",
+        "head": "Đau",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Suy tĩnh mạch mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các triệu chứng suy tĩnh mạch mạn tính thường khu trú ở chân, từ bàn chân đến bắp chân ở giai đoạn đầu hoặc đùi ở giai đoạn sau: (3)  Sưng hoặc nặng chân, đặc biệt ở vùng cẳng chân và mắt cá chân Đau Ngứa Tê bì Giãn tĩnh mạch (tĩnh mạch mạng nhện li ti ở bề mặt da, hay tĩnh mạch giãn ngoằn ngoèo) Da sậm màu, chai cứng   Các triệu chứng của bệnh tĩnh mạch thường sẽ &#8220;rầm rộ&#8221; hơn về chiều hoặc khi đi ngủ.",
+        "head": "Ngứa",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Suy tĩnh mạch mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các triệu chứng suy tĩnh mạch mạn tính thường khu trú ở chân, từ bàn chân đến bắp chân ở giai đoạn đầu hoặc đùi ở giai đoạn sau: (3)  Sưng hoặc nặng chân, đặc biệt ở vùng cẳng chân và mắt cá chân Đau Ngứa Tê bì Giãn tĩnh mạch (tĩnh mạch mạng nhện li ti ở bề mặt da, hay tĩnh mạch giãn ngoằn ngoèo) Da sậm màu, chai cứng   Các triệu chứng của bệnh tĩnh mạch thường sẽ &#8220;rầm rộ&#8221; hơn về chiều hoặc khi đi ngủ.",
+        "head": "Tê bì",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Suy tĩnh mạch mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các triệu chứng suy tĩnh mạch mạn tính thường khu trú ở chân, từ bàn chân đến bắp chân ở giai đoạn đầu hoặc đùi ở giai đoạn sau: (3)  Sưng hoặc nặng chân, đặc biệt ở vùng cẳng chân và mắt cá chân Đau Ngứa Tê bì Giãn tĩnh mạch (tĩnh mạch mạng nhện li ti ở bề mặt da, hay tĩnh mạch giãn ngoằn ngoèo) Da sậm màu, chai cứng   Các triệu chứng của bệnh tĩnh mạch thường sẽ &#8220;rầm rộ&#8221; hơn về chiều hoặc khi đi ngủ.",
+        "head": "Giãn tĩnh mạch",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Suy tĩnh mạch mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các triệu chứng suy tĩnh mạch mạn tính thường khu trú ở chân, từ bàn chân đến bắp chân ở giai đoạn đầu hoặc đùi ở giai đoạn sau: (3)  Sưng hoặc nặng chân, đặc biệt ở vùng cẳng chân và mắt cá chân Đau Ngứa Tê bì Giãn tĩnh mạch (tĩnh mạch mạng nhện li ti ở bề mặt da, hay tĩnh mạch giãn ngoằn ngoèo) Da sậm màu, chai cứng   Các triệu chứng của bệnh tĩnh mạch thường sẽ &#8220;rầm rộ&#8221; hơn về chiều hoặc khi đi ngủ.",
+        "head": "Da sậm màu, chai cứng",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Suy tĩnh mạch mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các triệu chứng của bệnh tĩnh mạch thường sẽ &#8220;rầm rộ&#8221; hơn về chiều hoặc khi đi ngủ. Triệu chứng sẽ giảm khi kê cao chân hoặc một số bệnh nhân còn muốn &#8220;treo chân&#8221; lên cao để ngủ vì sẽ &#8220;ngủ ngon&#8221; hơn. Đó là do khi chân cao hơn tim thì máu ở chân sẽ &#8220;đổ&#8221; về tim tốt hơn, giúp giải phóng các triệu chứng căng tức do ứ đọng máu ở tĩnh mạch chân gây ra.",
+        "head": "Kê cao chân",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Suy tĩnh mạch mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các triệu chứng của bệnh tĩnh mạch thường sẽ &#8220;rầm rộ&#8221; hơn về chiều hoặc khi đi ngủ. Triệu chứng sẽ giảm khi kê cao chân hoặc một số bệnh nhân còn muốn &#8220;treo chân&#8221; lên cao để ngủ vì sẽ &#8220;ngủ ngon&#8221; hơn. Đó là do khi chân cao hơn tim thì máu ở chân sẽ &#8220;đổ&#8221; về tim tốt hơn, giúp giải phóng các triệu chứng căng tức do ứ đọng máu ở tĩnh mạch chân gây ra.",
+        "head": "Treo chân lên cao để ngủ",
+        "head_type": "lifestyle",
+        "relation": "treatedBy",
+        "tail": "Suy tĩnh mạch mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu không điều trị sớm, áp lực tạo ra do ứ đọng máu ở tĩnh mạch lâu ngày sẽ làm vỡ các mạch máu nhỏ ở chân, khiến da chuyển sang màu nâu sậm, đặc biệt là vùng da cẳng chân gần mắt cá.",
+        "head": "Ứ đọng máu ở tĩnh mạch",
+        "head_type": "cause",
+        "relation": "causes",
+        "tail": "Da chuyển sang màu nâu sậm",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Nếu không điều trị sớm, áp lực tạo ra do ứ đọng máu ở tĩnh mạch lâu ngày sẽ làm vỡ các mạch máu nhỏ ở chân, khiến da chuyển sang màu nâu sậm, đặc biệt là vùng da cẳng chân gần mắt cá. Nghiêm trọng hơn là sưng và loét chân lâu lành, dễ nhiễm trùng và khó khăn trong điều trị.",
+        "head": "Ứ đọng máu ở tĩnh mạch",
+        "head_type": "cause",
+        "relation": "causes",
+        "tail": "Sưng và loét chân lâu lành",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Nếu không điều trị sớm, áp lực tạo ra do ứ đọng máu ở tĩnh mạch lâu ngày sẽ làm vỡ các mạch máu nhỏ ở chân, khiến da chuyển sang màu nâu sậm, đặc biệt là vùng da cẳng chân gần mắt cá. Nghiêm trọng hơn là sưng và loét chân lâu lành, dễ nhiễm trùng và khó khăn trong điều trị.",
+        "head": "Ứ đọng máu ở tĩnh mạch",
+        "head_type": "cause",
+        "relation": "causes",
+        "tail": "Nhiễm trùng",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Suy tĩnh mạch mạn tính có thể dẫn tới những biến chứng nghiêm trọng như: Tình trạng lưu thông máu về tim ở chân kém là căn nguyên gây hình thành các vết loét ở chân.",
+        "head": "Suy tĩnh mạch mạn tính",
+        "head_type": "disease",
+        "relation": "causes",
+        "tail": "Loét ở chân",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Tình trạng lưu thông máu về tim ở chân kém là căn nguyên gây hình thành các vết loét ở chân. Những vết loét này không chỉ làm mất thẩm mỹ mà còn gây đau đớn và chậm lành.",
+        "head": "Lưu thông máu về tim ở chân kém",
+        "head_type": "cause",
+        "relation": "causes",
+        "tail": "Loét ở chân",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Tình trạng lưu thông máu về tim ở chân kém là căn nguyên gây hình thành các vết loét ở chân. Những vết loét này không chỉ làm mất thẩm mỹ mà còn gây đau đớn và chậm lành.",
+        "head": "Loét ở chân",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Suy tĩnh mạch mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tình trạng lưu thông máu về tim ở chân kém là căn nguyên gây hình thành các vết loét ở chân. Những vết loét này không chỉ làm mất thẩm mỹ mà còn gây đau đớn và chậm lành. Ngay cả khi được điều trị đúng cách, cũng phải mất vài tháng chúng mới biến mất hoàn toàn.",
+        "head": "Loét ở chân",
+        "head_type": "symptom",
+        "relation": "relatedTo",
+        "tail": "Suy tĩnh mạch mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tình trạng lưu thông máu về tim ở chân kém là căn nguyên gây hình thành các vết loét ở chân. Những vết loét này không chỉ làm mất thẩm mỹ mà còn gây đau đớn và chậm lành. Ngay cả khi được điều trị đúng cách, cũng phải mất vài tháng chúng mới biến mất hoàn toàn. Ngược lại, nếu người bệnh không giữ vệ sinh vùng da bị loét trong quá trình chữa trị, những vết loét sẽ nhanh chóng bị nhiễm trùng.",
+        "head": "Loét ở chân",
+        "head_type": "symptom",
+        "relation": "aggravatedBy",
+        "tail": "Thiếu vệ sinh",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Tình trạng lưu thông máu về tim ở chân kém là căn nguyên gây hình thành các vết loét ở chân. Những vết loét này không chỉ làm mất thẩm mỹ mà còn gây đau đớn và chậm lành. Ngay cả khi được điều trị đúng cách, cũng phải mất vài tháng chúng mới biến mất hoàn toàn. Ngược lại, nếu người bệnh không giữ vệ sinh vùng da bị loét trong quá trình chữa trị, những vết loét sẽ nhanh chóng bị nhiễm trùng. Khi đó, bác sĩ phải cắt lọc rộng vết thương để loại bỏ các mô bị nhiễm trùng, ngăn ngừa các biến chứng nghiêm trọng hơn.",
+        "head": "Loét ở chân",
+        "head_type": "symptom",
+        "relation": "treatedBy",
+        "tail": "Cắt lọc rộng vết thương",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Khi tĩnh mạch chi dưới bị suy, dòng máu về tim sẽ đi rất chậm, tạo cơ hội hình thành các cục máu đông.",
+        "head": "Suy tĩnh mạch chi dưới",
+        "head_type": "disease",
+        "relation": "causes",
+        "tail": "Cục máu đông",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Khi tĩnh mạch chi dưới bị suy, dòng máu về tim sẽ đi rất chậm, tạo cơ hội hình thành các cục máu đông. Đó là lý do suy tĩnh mạch mạn tính đôi khi có liên quan đến huyết khối tĩnh mạch sâu.",
+        "head": "Suy tĩnh mạch mạn tính",
+        "head_type": "disease",
+        "relation": "associatedWith",
+        "tail": "Huyết khối tĩnh mạch sâu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi tĩnh mạch chi dưới bị suy, dòng máu về tim sẽ đi rất chậm, tạo cơ hội hình thành các cục máu đông. Đó là lý do suy tĩnh mạch mạn tính đôi khi có liên quan đến huyết khối tĩnh mạch sâu. Tình trạng này phát triển khi cục máu đông hình thành ở một trong các tĩnh mạch sâu ở chân.",
+        "head": "Huyết khối tĩnh mạch sâu",
+        "head_type": "disease",
+        "relation": "locatedIn",
+        "tail": "Tĩnh mạch sâu ở chân",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Khi tĩnh mạch chi dưới bị suy, dòng máu về tim sẽ đi rất chậm, tạo cơ hội hình thành các cục máu đông. Đó là lý do suy tĩnh mạch mạn tính đôi khi có liên quan đến huyết khối tĩnh mạch sâu. Tình trạng này phát triển khi cục máu đông hình thành ở một trong các tĩnh mạch sâu ở chân. Những cục máu đông này có thể chặn dòng máu đến chân, thậm chí làm tắc mạch phổi gây thuyên tắc phổi (khi một phần của cục máu đông ở chân bị vỡ ra và di chuyển đến phổi).",
+        "head": "Cục máu đông",
+        "head_type": "cause",
+        "relation": "causes",
+        "tail": "Thuyên tắc phổi",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi tĩnh mạch chi dưới bị suy, dòng máu về tim sẽ đi rất chậm, tạo cơ hội hình thành các cục máu đông. Đó là lý do suy tĩnh mạch mạn tính đôi khi có liên quan đến huyết khối tĩnh mạch sâu. Tình trạng này phát triển khi cục máu đông hình thành ở một trong các tĩnh mạch sâu ở chân. Những cục máu đông này có thể chặn dòng máu đến chân, thậm chí làm tắc mạch phổi gây thuyên tắc phổi (khi một phần của cục máu đông ở chân bị vỡ ra và di chuyển đến phổi). Nếu không được xử lý sớm, cục máu đông sẽ làm tắc nghẽn các động mạch trong phổi, làm giảm trao đổi oxy dẫn tới tử vong.",
+        "head": "Thuyên tắc phổi",
+        "head_type": "disease",
+        "relation": "causes",
+        "tail": "Tử vong",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Khi tĩnh mạch chi dưới bị suy, dòng máu về tim sẽ đi rất chậm, tạo cơ hội hình thành các cục máu đông. Đó là lý do suy tĩnh mạch mạn tính đôi khi có liên quan đến huyết khối tĩnh mạch sâu. Tình trạng này phát triển khi cục máu đông hình thành ở một trong các tĩnh mạch sâu ở chân. Những cục máu đông này có thể chặn dòng máu đến chân, thậm chí làm tắc mạch phổi gây thuyên tắc phổi (khi một phần của cục máu đông ở chân bị vỡ ra và di chuyển đến phổi). Nếu không được xử lý sớm, cục máu đông sẽ làm tắc nghẽn các động mạch trong phổi, làm giảm trao đổi oxy dẫn tới tử vong. Các triệu chứng của thuyên tắc phổi bao gồm ho ra máu, đau hoặc khó chịu ở ngực, khó thở, huyết áp thấp, nhịp tim nhanh.",
+        "head": "Thuyên tắc phổi",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Ho ra máu",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Khi tĩnh mạch chi dưới bị suy, dòng máu về tim sẽ đi rất chậm, tạo cơ hội hình thành các cục máu đông. Đó là lý do suy tĩnh mạch mạn tính đôi khi có liên quan đến huyết khối tĩnh mạch sâu. Tình trạng này phát triển khi cục máu đông hình thành ở một trong các tĩnh mạch sâu ở chân. Những cục máu đông này có thể chặn dòng máu đến chân, thậm chí làm tắc mạch phổi gây thuyên tắc phổi (khi một phần của cục máu đông ở chân bị vỡ ra và di chuyển đến phổi). Nếu không được xử lý sớm, cục máu đông sẽ làm tắc nghẽn các động mạch trong phổi, làm giảm trao đổi oxy dẫn tới tử vong. Các triệu chứng của thuyên tắc phổi bao gồm ho ra máu, đau hoặc khó chịu ở ngực, khó thở, huyết áp thấp, nhịp tim nhanh.",
+        "head": "Thuyên tắc phổi",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Đau hoặc khó chịu ở ngực",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Khi tĩnh mạch chi dưới bị suy, dòng máu về tim sẽ đi rất chậm, tạo cơ hội hình thành các cục máu đông. Đó là lý do suy tĩnh mạch mạn tính đôi khi có liên quan đến huyết khối tĩnh mạch sâu. Tình trạng này phát triển khi cục máu đông hình thành ở một trong các tĩnh mạch sâu ở chân. Những cục máu đông này có thể chặn dòng máu đến chân, thậm chí làm tắc mạch phổi gây thuyên tắc phổi (khi một phần của cục máu đông ở chân bị vỡ ra và di chuyển đến phổi). Nếu không được xử lý sớm, cục máu đông sẽ làm tắc nghẽn các động mạch trong phổi, làm giảm trao đổi oxy dẫn tới tử vong. Các triệu chứng của thuyên tắc phổi bao gồm ho ra máu, đau hoặc khó chịu ở ngực, khó thở, huyết áp thấp, nhịp tim nhanh.",
+        "head": "Thuyên tắc phổi",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Khó thở",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Khi tĩnh mạch chi dưới bị suy, dòng máu về tim sẽ đi rất chậm, tạo cơ hội hình thành các cục máu đông. Đó là lý do suy tĩnh mạch mạn tính đôi khi có liên quan đến huyết khối tĩnh mạch sâu. Tình trạng này phát triển khi cục máu đông hình thành ở một trong các tĩnh mạch sâu ở chân. Những cục máu đông này có thể chặn dòng máu đến chân, thậm chí làm tắc mạch phổi gây thuyên tắc phổi (khi một phần của cục máu đông ở chân bị vỡ ra và di chuyển đến phổi). Nếu không được xử lý sớm, cục máu đông sẽ làm tắc nghẽn các động mạch trong phổi, làm giảm trao đổi oxy dẫn tới tử vong. Các triệu chứng của thuyên tắc phổi bao gồm ho ra máu, đau hoặc khó chịu ở ngực, khó thở, huyết áp thấp, nhịp tim nhanh.",
+        "head": "Thuyên tắc phổi",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Huyết áp thấp",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Khi tĩnh mạch chi dưới bị suy, dòng máu về tim sẽ đi rất chậm, tạo cơ hội hình thành các cục máu đông. Đó là lý do suy tĩnh mạch mạn tính đôi khi có liên quan đến huyết khối tĩnh mạch sâu. Tình trạng này phát triển khi cục máu đông hình thành ở một trong các tĩnh mạch sâu ở chân. Những cục máu đông này có thể chặn dòng máu đến chân, thậm chí làm tắc mạch phổi gây thuyên tắc phổi (khi một phần của cục máu đông ở chân bị vỡ ra và di chuyển đến phổi). Nếu không được xử lý sớm, cục máu đông sẽ làm tắc nghẽn các động mạch trong phổi, làm giảm trao đổi oxy dẫn tới tử vong. Các triệu chứng của thuyên tắc phổi bao gồm ho ra máu, đau hoặc khó chịu ở ngực, khó thở, huyết áp thấp, nhịp tim nhanh.",
+        "head": "Thuyên tắc phổi",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Nhịp tim nhanh",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Các vấn đề về tuần hoàn có thể ảnh hưởng đến khả năng chữa lành vết thương của cơ thể.",
+        "head": "Vấn đề về tuần hoàn",
+        "head_type": "cause",
+        "relation": "affects",
+        "tail": "Khả năng chữa lành vết thương",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Điều đó đồng nghĩa với nếu bạn bị suy tĩnh mạch mạn tính và có vết thương hở ở chân, bạn có nguy cơ chảy nhiều máu, phải chăm sóc tích cực để cầm máu.",
+        "head": "Suy tĩnh mạch mạn tính",
+        "head_type": "disease",
+        "relation": "causes",
+        "tail": "Chảy nhiều máu",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Điều đó đồng nghĩa với nếu bạn bị suy tĩnh mạch mạn tính và có vết thương hở ở chân, bạn có nguy cơ chảy nhiều máu, phải chăm sóc tích cực để cầm máu.",
+        "head": "Suy tĩnh mạch mạn tính",
+        "head_type": "disease",
+        "relation": "causes",
+        "tail": "Chăm sóc tích cực để cầm máu",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Điều đó đồng nghĩa với nếu bạn bị suy tĩnh mạch mạn tính và có vết thương hở ở chân, bạn có nguy cơ chảy nhiều máu, phải chăm sóc tích cực để cầm máu. Nếu không, tình trạng mất máu không kiểm soát sẽ nguy hiểm đến tính mạng.",
+        "head": "Mất máu không kiểm soát",
+        "head_type": "symptom",
+        "relation": "causes",
+        "tail": "Nguy hiểm đến tính mạng",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Ngoài ra, một số người bị suy tĩnh mạch mạn tính còn đối mặt với hiện tượng chảy máu một cách tự nhiên.",
+        "head": "Suy tĩnh mạch mạn tính",
+        "head_type": "disease",
+        "relation": "causes",
+        "tail": "Chảy máu một cách tự nhiên",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Ngoài ra, một số người bị suy tĩnh mạch mạn tính còn đối mặt với hiện tượng chảy máu một cách tự nhiên. Nguyên nhân là do loét tĩnh mạch hoặc tĩnh mạch xuất huyết.",
+        "head": "Loét tĩnh mạch",
+        "head_type": "symptom",
+        "relation": "causes",
+        "tail": "Chảy máu một cách tự nhiên",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Ngoài ra, một số người bị suy tĩnh mạch mạn tính còn đối mặt với hiện tượng chảy máu một cách tự nhiên. Nguyên nhân là do loét tĩnh mạch hoặc tĩnh mạch xuất huyết.",
+        "head": "Tĩnh mạch xuất huyết",
+        "head_type": "symptom",
+        "relation": "causes",
+        "tail": "Chảy máu một cách tự nhiên",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Để chẩn đoán bạn có bị suy tĩnh mạch mạn tính hay không, bệnh đang ở giai đoạn nào, trước tiên, bác sĩ sẽ thăm khám triệu chứng và khai thác tiền sử bệnh của bạn.",
+        "head": "Suy tĩnh mạch mạn tính",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "Thăm khám triệu chứng",
+        "tail_type": "test"
+    },
+    {
+        "text": "Để chẩn đoán bạn có bị suy tĩnh mạch mạn tính hay không, bệnh đang ở giai đoạn nào, trước tiên, bác sĩ sẽ thăm khám triệu chứng và khai thác tiền sử bệnh của bạn.",
+        "head": "Suy tĩnh mạch mạn tính",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "Khai thác tiền sử bệnh",
+        "tail_type": "test"
+    },
+    {
+        "text": "Sau đó, bác sĩ kiểm tra tĩnh mạch chân bằng siêu âm doppler.",
+        "head": "Suy tĩnh mạch mạn tính",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "Siêu âm doppler",
+        "tail_type": "test"
+    },
+    {
+        "text": "Kỹ thuật này sử dụng sóng âm để quan sát mạch máu, kiểm tra tốc độ và hướng dòng máu, từ đó xác định vị trí suy van và các bệnh kèm theo ở chân để giúp bác sĩ đưa ra chẩn đoán chính xác.",
+        "head": "Siêu âm doppler",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "Suy tĩnh mạch mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Kỹ thuật này sử dụng sóng âm để quan sát mạch máu, kiểm tra tốc độ và hướng dòng máu, từ đó xác định vị trí suy van và các bệnh kèm theo ở chân để giúp bác sĩ đưa ra chẩn đoán chính xác.",
+        "head": "Siêu âm doppler",
+        "head_type": "test",
+        "relation": "relatedTo",
+        "tail": "Suy van",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Kỹ thuật này sử dụng sóng âm để quan sát mạch máu, kiểm tra tốc độ và hướng dòng máu, từ đó xác định vị trí suy van và các bệnh kèm theo ở chân để giúp bác sĩ đưa ra chẩn đoán chính xác.",
+        "head": "Siêu âm doppler",
+        "head_type": "test",
+        "relation": "relatedTo",
+        "tail": "Bệnh kèm theo",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Kỹ thuật này sử dụng sóng âm để quan sát mạch máu, kiểm tra tốc độ và hướng dòng máu, từ đó xác định vị trí suy van và các bệnh kèm theo ở chân để giúp bác sĩ đưa ra chẩn đoán chính xác.",
+        "head": "Siêu âm doppler",
+        "head_type": "test",
+        "relation": "locatedIn",
+        "tail": "Chân",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Đôi khi, bạn có thể cần làm thêm xét nghiệm máu, chụp X-quang, đo điện cơ, chụp cắt lớp vi tính hay cộng hưởng từ để kiểm tra các nguyên nhân khác gây đau, sưng, tê chân…",
+        "head": "Suy tĩnh mạch mạn tính",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "Xét nghiệm máu",
+        "tail_type": "test"
+    },
+    {
+        "text": "Đôi khi, bạn có thể cần làm thêm xét nghiệm máu, chụp X-quang, đo điện cơ, chụp cắt lớp vi tính hay cộng hưởng từ để kiểm tra các nguyên nhân khác gây đau, sưng, tê chân…",
+        "head": "Suy tĩnh mạch mạn tính",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "Chụp X-quang",
+        "tail_type": "test"
+    },
+    {
+        "text": "Đôi khi, bạn có thể cần làm thêm xét nghiệm máu, chụp X-quang, đo điện cơ, chụp cắt lớp vi tính hay cộng hưởng từ để kiểm tra các nguyên nhân khác gây đau, sưng, tê chân…",
+        "head": "Suy tĩnh mạch mạn tính",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "Đo điện cơ",
+        "tail_type": "test"
+    },
+    {
+        "text": "Đôi khi, bạn có thể cần làm thêm xét nghiệm máu, chụp X-quang, đo điện cơ, chụp cắt lớp vi tính hay cộng hưởng từ để kiểm tra các nguyên nhân khác gây đau, sưng, tê chân…",
+        "head": "Suy tĩnh mạch mạn tính",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "Chụp cắt lớp vi tính",
+        "tail_type": "test"
+    },
+    {
+        "text": "Đôi khi, bạn có thể cần làm thêm xét nghiệm máu, chụp X-quang, đo điện cơ, chụp cắt lớp vi tính hay cộng hưởng từ để kiểm tra các nguyên nhân khác gây đau, sưng, tê chân…",
+        "head": "Suy tĩnh mạch mạn tính",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "Cộng hưởng từ",
+        "tail_type": "test"
+    },
+    {
+        "text": "Đôi khi, bạn có thể cần làm thêm xét nghiệm máu, chụp X-quang, đo điện cơ, chụp cắt lớp vi tính hay cộng hưởng từ để kiểm tra các nguyên nhân khác gây đau, sưng, tê chân…",
+        "head": "Suy tĩnh mạch mạn tính",
+        "head_type": "disease",
+        "relation": "causes",
+        "tail": "Đau",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Đôi khi, bạn có thể cần làm thêm xét nghiệm máu, chụp X-quang, đo điện cơ, chụp cắt lớp vi tính hay cộng hưởng từ để kiểm tra các nguyên nhân khác gây đau, sưng, tê chân…",
+        "head": "Suy tĩnh mạch mạn tính",
+        "head_type": "disease",
+        "relation": "causes",
+        "tail": "Sưng",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Đôi khi, bạn có thể cần làm thêm xét nghiệm máu, chụp X-quang, đo điện cơ, chụp cắt lớp vi tính hay cộng hưởng từ để kiểm tra các nguyên nhân khác gây đau, sưng, tê chân…",
+        "head": "Suy tĩnh mạch mạn tính",
+        "head_type": "disease",
+        "relation": "causes",
+        "tail": "Tê chân",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Mục đích chính khi điều trị suy tĩnh mạch mạn tính là giải quyết các triệu chứng hiện tại, phòng ngừa loét chân cũng như ngăn chặn tiến triển của bệnh theo thời gian.",
+        "head": "giải quyết các triệu chứng hiện tại",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "suy tĩnh mạch mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Mục đích chính khi điều trị suy tĩnh mạch mạn tính là giải quyết các triệu chứng hiện tại, phòng ngừa loét chân cũng như ngăn chặn tiến triển của bệnh theo thời gian.",
+        "head": "phòng ngừa loét chân",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "suy tĩnh mạch mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Mục đích chính khi điều trị suy tĩnh mạch mạn tính là giải quyết các triệu chứng hiện tại, phòng ngừa loét chân cũng như ngăn chặn tiến triển của bệnh theo thời gian.",
+        "head": "ngăn chặn tiến triển của bệnh theo thời gian",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "suy tĩnh mạch mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các biện pháp phối hợp bao gồm:",
+        "head": "Các biện pháp phối hợp",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "suy tĩnh mạch mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Mang vớ áp lực tĩnh mạch: Vớ tĩnh mạch có thể co giãn và tạo lực ép ở chân, giúp máu di chuyển và không ứ đọng ở tĩnh mạch.",
+        "head": "Mang vớ áp lực tĩnh mạch",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "suy tĩnh mạch mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Mang vớ áp lực tĩnh mạch: Vớ tĩnh mạch có thể co giãn và tạo lực ép ở chân, giúp máu di chuyển và không ứ đọng ở tĩnh mạch.",
+        "head": "Vớ tĩnh mạch",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "suy tĩnh mạch mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Vớ tĩnh mạch có nhiều độ chặt, độ dài và kiểu dáng khác nhau.",
+        "head": "Vớ tĩnh mạch",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "suy tĩnh mạch mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tùy vào tình trạng bệnh và mục đích điều trị, bác sĩ sẽ chỉ định bạn mua loại vớ phù hợp với chân mình.",
+        "head": "Tùy vào tình trạng bệnh và mục đích điều trị",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "suy tĩnh mạch mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Di chuyển thường xuyên: bạn cần cố gắng không ngồi hoặc đứng lâu.",
+        "head": "Di chuyển thường xuyên",
+        "head_type": "lifestyle",
+        "relation": "treatedBy",
+        "tail": "suy tĩnh mạch mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu phải ngồi, hãy thường xuyên duỗi thẳng hoặc lắc lư bàn chân để giúp máu lưu thông về tim dễ dàng.",
+        "head": "duỗi thẳng hoặc lắc lư bàn chân",
+        "head_type": "lifestyle",
+        "relation": "treatedBy",
+        "tail": "suy tĩnh mạch mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu bạn đứng nhiều, nên tranh thủ ngồi sau mỗi 60 phút và gác chân lên cao.",
+        "head": "ngồi sau mỗi 60 phút và gác chân lên cao",
+        "head_type": "lifestyle",
+        "relation": "treatedBy",
+        "tail": "suy tĩnh mạch mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Mục tiêu chính là giúp máu về tim, giảm áp lực trong tĩnh mạch chân của bạn.",
+        "head": "giúp máu về tim",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "suy tĩnh mạch mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Mục tiêu chính là giúp máu về tim, giảm áp lực trong tĩnh mạch chân của bạn.",
+        "head": "giảm áp lực trong tĩnh mạch chân",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "suy tĩnh mạch mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tập thể dục: Tập thể dục cũng giúp đưa máu về tim tốt hơn.",
+        "head": "Tập thể dục",
+        "head_type": "lifestyle",
+        "relation": "treatedBy",
+        "tail": "suy tĩnh mạch mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Trong các bộ môn tập luyện, đi bộ nhanh là bài tập giãn tĩnh mạch chân được bác sĩ khuyến cáo vì dễ tập, giúp cơ chân khỏe hơn và tăng cường lưu thông máu ở hệ tĩnh mạch sâu tốt hơn.",
+        "head": "đi bộ nhanh",
+        "head_type": "lifestyle",
+        "relation": "treatedBy",
+        "tail": "suy tĩnh mạch mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tùy vào tình trạng bệnh, bác sĩ sẽ kê cho bạn các loại thuốc phù hợp, như thuốc tăng cường trương lực tĩnh mạch, thuốc chống đông để ngăn ngừa hình thành cục máu đông, kháng sinh nếu có nhiễm trùng loét chân…",
+        "head": "thuốc tăng cường trương lực tĩnh mạch",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "suy tĩnh mạch mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tùy vào tình trạng bệnh, bác sĩ sẽ kê cho bạn các loại thuốc phù hợp, như thuốc tăng cường trương lực tĩnh mạch, thuốc chống đông để ngăn ngừa hình thành cục máu đông, kháng sinh nếu có nhiễm trùng loét chân…",
+        "head": "thuốc chống đông",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "suy tĩnh mạch mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tùy vào tình trạng bệnh, bác sĩ sẽ kê cho bạn các loại thuốc phù hợp, như thuốc tăng cường trương lực tĩnh mạch, thuốc chống đông để ngăn ngừa hình thành cục máu đông, kháng sinh nếu có nhiễm trùng loét chân…",
+        "head": "kháng sinh",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "suy tĩnh mạch mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu bạn bị suy tĩnh mạch mạn tính ở mức độ nặng, bác sĩ sẽ cân nhắc lựa chọn một số thủ thuật để loại bỏ tĩnh mạch bệnh nhằm định hướng dòng máu đi lại theo các tĩnh mạch khỏe mạnh khác.",
+        "head": "loại bỏ tĩnh mạch bệnh",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "suy tĩnh mạch mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Một số biện pháp điều trị đang được thực hiện thường quy tại khoa Ngoại Tim mạch - Lồng ngực, Trung tâm Tim mạch Bệnh viện Đa khoa Tâm Anh là:",
+        "head": "Một số biện pháp điều trị",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "suy tĩnh mạch mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Chích xơ tĩnh mạch: bác sĩ sẽ chích thuốc vào các tĩnh mạch mạng nhện dưới da.",
+        "head": "Chích xơ tĩnh mạch",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "suy tĩnh mạch mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nhờ đó, máu không đi theo các tĩnh mạch bệnh nữa.",
+        "head": "máu không đi theo các tĩnh mạch bệnh",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "suy tĩnh mạch mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Theo thời gian, tĩnh mạch sẽ trở nên xơ, biến thành sẹo và không hiện hữu trên da nữa.",
+        "head": "tĩnh mạch sẽ trở nên xơ, biến thành sẹo và không hiện hữu trên da",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "suy tĩnh mạch mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đốt laser nội mạch: bác sĩ sẽ luồn một dây đốt (laser hoặc dây sóng cao tần) vào tĩnh mạch và tiến hành đốt nóng bằng sóng nhiệt để phá hủy tĩnh mạch bị bệnh.",
+        "head": "Đốt laser nội mạch",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "suy tĩnh mạch mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đây là phương pháp mới đang được áp dụng rộng rãi ở các trung tâm lớn trên thế giới với tính thẩm mỹ và hiệu quả điều trị cao, tỷ lệ tái phát thấp, chi phí vừa phải.",
+        "head": "Đốt laser nội mạch",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "suy tĩnh mạch mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bơm keo tĩnh mạch Venaseal: Đây là phương pháp hiện đại được đánh giá cao vì sự tiện lợi và nhanh chóng.",
+        "head": "Bơm keo tĩnh mạch Venaseal",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "suy tĩnh mạch mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Thủ thuật được thực hiện với thuốc tê nên bệnh nhân sẽ tỉnh táo hoàn toàn trong suốt quá trình điều trị.",
+        "head": "Bơm keo tĩnh mạch Venaseal",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "suy tĩnh mạch mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bác sĩ tiến hành luồn dụng cụ vào tĩnh mạch bệnh để bơm keo “dán dính chặt” lòng tĩnh mạch lại.",
+        "head": "Bơm keo tĩnh mạch Venaseal",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "suy tĩnh mạch mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Máu sẽ không đi theo tĩnh mạch đó nữa mà định hướng sang tĩnh mạch khỏe khác.",
+        "head": "Bơm keo tĩnh mạch Venaseal",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "suy tĩnh mạch mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Mặc dù, không thể phòng ngừa tuyệt đối bệnh lý suy tĩnh mạch mạn tính nhưng bạn có thể giảm nguy cơ mắc bệnh bằng cách:",
+        "head": "suy tĩnh mạch mạn tính",
+        "head_type": "disease",
+        "relation": "preventedBy",
+        "tail": "Không hút thuốc lá và tránh xa khói thuốc lá",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Mặc dù, không thể phòng ngừa tuyệt đối bệnh lý suy tĩnh mạch mạn tính nhưng bạn có thể giảm nguy cơ mắc bệnh bằng cách:",
+        "head": "suy tĩnh mạch mạn tính",
+        "head_type": "disease",
+        "relation": "preventedBy",
+        "tail": "Tránh mặc các loại quần áo bó sát hay đeo thắt lưng quá chặt",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Mặc dù, không thể phòng ngừa tuyệt đối bệnh lý suy tĩnh mạch mạn tính nhưng bạn có thể giảm nguy cơ mắc bệnh bằng cách:",
+        "head": "suy tĩnh mạch mạn tính",
+        "head_type": "disease",
+        "relation": "preventedBy",
+        "tail": "Không ngồi hoặc đứng quá lâu",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Mặc dù, không thể phòng ngừa tuyệt đối bệnh lý suy tĩnh mạch mạn tính nhưng bạn có thể giảm nguy cơ mắc bệnh bằng cách:",
+        "head": "suy tĩnh mạch mạn tính",
+        "head_type": "disease",
+        "relation": "preventedBy",
+        "tail": "Hãy cố gắng đứng dậy và đi lại thường xuyên",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Mặc dù, không thể phòng ngừa tuyệt đối bệnh lý suy tĩnh mạch mạn tính nhưng bạn có thể giảm nguy cơ mắc bệnh bằng cách:",
+        "head": "suy tĩnh mạch mạn tính",
+        "head_type": "disease",
+        "relation": "preventedBy",
+        "tail": "Có chế độ ăn uống lành mạnh cho tim mạch",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Mặc dù, không thể phòng ngừa tuyệt đối bệnh lý suy tĩnh mạch mạn tính nhưng bạn có thể giảm nguy cơ mắc bệnh bằng cách:",
+        "head": "suy tĩnh mạch mạn tính",
+        "head_type": "disease",
+        "relation": "preventedBy",
+        "tail": "Tập thể dục thường xuyên",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Mặc dù, không thể phòng ngừa tuyệt đối bệnh lý suy tĩnh mạch mạn tính nhưng bạn có thể giảm nguy cơ mắc bệnh bằng cách:",
+        "head": "suy tĩnh mạch mạn tính",
+        "head_type": "disease",
+        "relation": "preventedBy",
+        "tail": "Giữ cân nặng hợp lý",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Có chế độ ăn uống lành mạnh cho tim mạch: giảm lượng natri (muối) nạp vào, hạn chế thức ăn chiên rán và các loại thực phẩm chế biến sẵn, tăng cường trái cây, rau củ, chất béo tốt, các loại hạt… trong khẩu phần ăn.",
+        "head": "giảm lượng natri (muối) nạp vào",
+        "head_type": "lifestyle",
+        "relation": "preventedBy",
+        "tail": "suy tĩnh mạch mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Có chế độ ăn uống lành mạnh cho tim mạch: giảm lượng natri (muối) nạp vào, hạn chế thức ăn chiên rán và các loại thực phẩm chế biến sẵn, tăng cường trái cây, rau củ, chất béo tốt, các loại hạt… trong khẩu phần ăn.",
+        "head": "hạn chế thức ăn chiên rán",
+        "head_type": "lifestyle",
+        "relation": "preventedBy",
+        "tail": "suy tĩnh mạch mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Có chế độ ăn uống lành mạnh cho tim mạch: giảm lượng natri (muối) nạp vào, hạn chế thức ăn chiên rán và các loại thực phẩm chế biến sẵn, tăng cường trái cây, rau củ, chất béo tốt, các loại hạt… trong khẩu phần ăn.",
+        "head": "tăng cường trái cây",
+        "head_type": "lifestyle",
+        "relation": "preventedBy",
+        "tail": "suy tĩnh mạch mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Có chế độ ăn uống lành mạnh cho tim mạch: giảm lượng natri (muối) nạp vào, hạn chế thức ăn chiên rán và các loại thực phẩm chế biến sẵn, tăng cường trái cây, rau củ, chất béo tốt, các loại hạt… trong khẩu phần ăn.",
+        "head": "tăng cường rau củ",
+        "head_type": "lifestyle",
+        "relation": "preventedBy",
+        "tail": "suy tĩnh mạch mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Có chế độ ăn uống lành mạnh cho tim mạch: giảm lượng natri (muối) nạp vào, hạn chế thức ăn chiên rán và các loại thực phẩm chế biến sẵn, tăng cường trái cây, rau củ, chất béo tốt, các loại hạt… trong khẩu phần ăn.",
+        "head": "tăng cường chất béo tốt",
+        "head_type": "lifestyle",
+        "relation": "preventedBy",
+        "tail": "suy tĩnh mạch mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Có chế độ ăn uống lành mạnh cho tim mạch: giảm lượng natri (muối) nạp vào, hạn chế thức ăn chiên rán và các loại thực phẩm chế biến sẵn, tăng cường trái cây, rau củ, chất béo tốt, các loại hạt… trong khẩu phần ăn.",
+        "head": "tăng cường các loại hạt",
+        "head_type": "lifestyle",
+        "relation": "preventedBy",
+        "tail": "suy tĩnh mạch mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tập thể dục thường xuyên.",
+        "head": "Tập thể dục thường xuyên",
+        "head_type": "lifestyle",
+        "relation": "preventedBy",
+        "tail": "suy tĩnh mạch mạn tính",
+        "tail_type": "disease"
+    }
+]

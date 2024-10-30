@@ -1,0 +1,810 @@
+[
+    {
+        "text": "Viêm xoang mạn tính là một trong những bệnh mạn tính phổ biến, gây nhiều phiền toái và đứng thứ 5 trong trong số các loại bệnh sử dụng kháng sinh nhiều nhất.",
+        "head": "Viêm xoang mạn tính",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Bệnh mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Viêm xoang mạn tính là một trong những bệnh mạn tính phổ biến, gây nhiều phiền toái và đứng thứ 5 trong trong số các loại bệnh sử dụng kháng sinh nhiều nhất.",
+        "head": "Viêm xoang mạn tính",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "Kháng sinh",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Có các cặp xoang thông nối với hốc mũi: xoang sàng, xoang bướm, xoang trán và xoang hàm.",
+        "head": "Xoang sàng",
+        "head_type": "organ",
+        "relation": "locatedIn",
+        "tail": "Hốc mũi",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Có các cặp xoang thông nối với hốc mũi: xoang sàng, xoang bướm, xoang trán và xoang hàm.",
+        "head": "Xoang bướm",
+        "head_type": "organ",
+        "relation": "locatedIn",
+        "tail": "Hốc mũi",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Có các cặp xoang thông nối với hốc mũi: xoang sàng, xoang bướm, xoang trán và xoang hàm.",
+        "head": "Xoang trán",
+        "head_type": "organ",
+        "relation": "locatedIn",
+        "tail": "Hốc mũi",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Có các cặp xoang thông nối với hốc mũi: xoang sàng, xoang bướm, xoang trán và xoang hàm.",
+        "head": "Xoang hàm",
+        "head_type": "organ",
+        "relation": "locatedIn",
+        "tail": "Hốc mũi",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Những xoang này cho phép không khí được lọc và làm ẩm trong quá trình hít vào.",
+        "head": "Xoang",
+        "head_type": "organ",
+        "relation": "affects",
+        "tail": "Không khí",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Để các mầm bệnh được lọc và loại bỏ, dịch trong các xoang cần được dẫn lưu.",
+        "head": "Dịch xoang",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm xoang",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Có nhiều tác nhân cản trở dẫn lưu dịch mũi, tạo ra điều kiện cho vi khuẩn tích tụ.",
+        "head": "Vi khuẩn",
+        "head_type": "cause",
+        "relation": "causes",
+        "tail": "Viêm xoang",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Rối loạn chức năng lông chuyển hoặc bất thường về cấu trúc mũi có thể làm trầm trọng thêm quá trình này.",
+        "head": "Rối loạn chức năng lông chuyển",
+        "head_type": "cause",
+        "relation": "causes",
+        "tail": "Viêm xoang",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Rối loạn chức năng lông chuyển hoặc bất thường về cấu trúc mũi có thể làm trầm trọng thêm quá trình này.",
+        "head": "Bất thường về cấu trúc mũi",
+        "head_type": "cause",
+        "relation": "causes",
+        "tail": "Viêm xoang",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Viêm xoang mạn tính là một trong những bệnh mạn tính phổ biến nhất và sử dụng kháng sinh nhiều thứ 5 trong số các bệnh về nhiễm trùng.",
+        "head": "Viêm xoang mạn tính",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "Kháng sinh",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Viêm xoang mạn tính là tình trạng viêm xoang hoặc viêm mũi xảy ra trong hơn 12 tuần.",
+        "head": "Viêm xoang mạn tính",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Viêm xoang",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Viêm xoang mạn tính là tình trạng viêm xoang hoặc viêm mũi xảy ra trong hơn 12 tuần.",
+        "head": "Viêm xoang mạn tính",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Viêm mũi",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Viêm xoang mạn tính có thể biểu hiện dưới dạng viêm xoang mạn tính không có polyp mũi, viêm xoang mạn tính có polyp mũi và viêm mũi xoang do nấm dị ứng.",
+        "head": "Viêm xoang mạn tính không có polyp mũi",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Viêm xoang mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Viêm xoang mạn tính có thể biểu hiện dưới dạng viêm xoang mạn tính không có polyp mũi, viêm xoang mạn tính có polyp mũi và viêm mũi xoang do nấm dị ứng.",
+        "head": "Viêm xoang mạn tính có polyp mũi",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Viêm xoang mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Viêm xoang mạn tính có thể biểu hiện dưới dạng viêm xoang mạn tính không có polyp mũi, viêm xoang mạn tính có polyp mũi và viêm mũi xoang do nấm dị ứng.",
+        "head": "Viêm mũi xoang do nấm dị ứng",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Viêm xoang mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Người bệnh viêm xoang mạn tính thường có các triệu chứng chính của viêm xoang bao gồm:  Chảy mũi đục: Chảy nước mũi màu xanh lá cây hoặc vàng.",
+        "head": "Chảy mũi đục",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm xoang mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Người bệnh viêm xoang mạn tính thường có các triệu chứng chính của viêm xoang bao gồm:  Chảy mũi đục: Chảy nước mũi màu xanh lá cây hoặc vàng.",
+        "head": "Chảy nước mũi màu xanh lá cây",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm xoang mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Người bệnh viêm xoang mạn tính thường có các triệu chứng chính của viêm xoang bao gồm:  Chảy mũi đục: Chảy nước mũi màu xanh lá cây hoặc vàng.",
+        "head": "Chảy nước mũi màu vàng",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm xoang mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Người bệnh viêm xoang mạn tính thường có các triệu chứng chính của viêm xoang bao gồm:  Đau nhức hàm mặt: Nhức hoặc đau vùng hàm mặt giống như bị đè ép.",
+        "head": "Đau nhức hàm mặt",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm xoang mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Người bệnh viêm xoang mạn tính thường có các triệu chứng chính của viêm xoang bao gồm:  Nghẹt mũi: Có thể cảm thấy khó thở một hoặc cả hai bên mũi khiến người bệnh phải thở bằng miệng.",
+        "head": "Nghẹt mũi",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm xoang mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ngoài ra, dấu hiệu viêm xoang mạn tính còn có thể bao gồm:(1)  Giảm khứu giác, nhức đầu, đau tai, hôi miệng, ho hoặc mệt mỏi.",
+        "head": "Giảm khứu giác",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm xoang mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ngoài ra, dấu hiệu viêm xoang mạn tính còn có thể bao gồm:(1)  Giảm khứu giác, nhức đầu, đau tai, hôi miệng, ho hoặc mệt mỏi.",
+        "head": "Nhức đầu",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm xoang mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ngoài ra, dấu hiệu viêm xoang mạn tính còn có thể bao gồm:(1)  Giảm khứu giác, nhức đầu, đau tai, hôi miệng, ho hoặc mệt mỏi.",
+        "head": "Đau tai",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm xoang mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ngoài ra, dấu hiệu viêm xoang mạn tính còn có thể bao gồm:(1)  Giảm khứu giác, nhức đầu, đau tai, hôi miệng, ho hoặc mệt mỏi.",
+        "head": "Hôi miệng",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm xoang mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ngoài ra, dấu hiệu viêm xoang mạn tính còn có thể bao gồm:(1)  Giảm khứu giác, nhức đầu, đau tai, hôi miệng, ho hoặc mệt mỏi.",
+        "head": "Ho",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm xoang mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ngoài ra, dấu hiệu viêm xoang mạn tính còn có thể bao gồm:(1)  Giảm khứu giác, nhức đầu, đau tai, hôi miệng, ho hoặc mệt mỏi.",
+        "head": "Mệt mỏi",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm xoang mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Sốt chỉ có độ nhạy 50% nhưng lại là yếu tố quan trọng quyết định mức độ nặng nhẹ của viêm xoang.",
+        "head": "Sốt",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm xoang",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các triệu chứng xảy ra trong hơn 12 tuần không tự khỏi.",
+        "head": "Các triệu chứng",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm xoang mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Virus và vi khuẩn là căn nguyên phổ biến nhất gây viêm xoang.",
+        "head": "Virus và vi khuẩn",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Viêm xoang",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Trong đó, Streptococcus, phế cầu, Hemophilus và Moraxella là những vi khuẩn phổ biến nhất.",
+        "head": "Streptococcus, phế cầu, Hemophilus và Moraxella",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Viêm xoang",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Viêm xoang mạn tính có nhiều yếu tố khởi phát và có thể bao gồm các yếu tố nhiễm trùng, viêm hoặc bất thường cấu trúc xoang.",
+        "head": "Viêm xoang mạn tính",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Nhiễm trùng, viêm hoặc bất thường cấu trúc xoang",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Các nguyên nhân khác như viêm mũi dị ứng (bụi, nấm mốc), phơi nhiễm (chất kích thích trong không khí, khói thuốc lá hoặc các chất độc khác), bất thường cấu trúc (polyp mũi, vẹo vách ngăn mũi), suy giảm miễn dịch và nhiễm nấm cũng có thể được xem xét.",
+        "head": "Viêm mũi dị ứng",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Bụi, nấm mốc",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Các nguyên nhân khác như viêm mũi dị ứng (bụi, nấm mốc), phơi nhiễm (chất kích thích trong không khí, khói thuốc lá hoặc các chất độc khác), bất thường cấu trúc (polyp mũi, vẹo vách ngăn mũi), suy giảm miễn dịch và nhiễm nấm cũng có thể được xem xét.",
+        "head": "Phơi nhiễm",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Viêm xoang mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các nguyên nhân khác như viêm mũi dị ứng (bụi, nấm mốc), phơi nhiễm (chất kích thích trong không khí, khói thuốc lá hoặc các chất độc khác), bất thường cấu trúc (polyp mũi, vẹo vách ngăn mũi), suy giảm miễn dịch và nhiễm nấm cũng có thể được xem xét.",
+        "head": "Bất thường cấu trúc",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Viêm xoang mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các nguyên nhân khác như viêm mũi dị ứng (bụi, nấm mốc), phơi nhiễm (chất kích thích trong không khí, khói thuốc lá hoặc các chất độc khác), bất thường cấu trúc (polyp mũi, vẹo vách ngăn mũi), suy giảm miễn dịch và nhiễm nấm cũng có thể được xem xét.",
+        "head": "Suy giảm miễn dịch",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Viêm xoang mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các nguyên nhân khác như viêm mũi dị ứng (bụi, nấm mốc), phơi nhiễm (chất kích thích trong không khí, khói thuốc lá hoặc các chất độc khác), bất thường cấu trúc (polyp mũi, vẹo vách ngăn mũi), suy giảm miễn dịch và nhiễm nấm cũng có thể được xem xét.",
+        "head": "Nhiễm nấm",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Viêm xoang mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Viêm tai giữa, hen suyễn, AIDS là những tình trạng bệnh lý khác có thể liên quan đến viêm mũi xoang mãn tính.",
+        "head": "Viêm tai giữa, hen suyễn, AIDS",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "Viêm mũi xoang mãn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Streptococcus là nguyên nhân gây viêm xoang phổ biến nhất được biết đến.",
+        "head": "Streptococcus",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Viêm xoang",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Viêm xoang mạn tính có thể là một bệnh lý lành tính, nhưng có tỷ lệ mắc bệnh khá lớn.",
+        "head": "Viêm xoang mạn tính",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Bệnh lý lành tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu không được điều trị, chất lượng cuộc sống sẽ bị ảnh hưởng.",
+        "head": "Chất lượng cuộc sống",
+        "head_type": "lifestyle",
+        "relation": "affects",
+        "tail": "Viêm xoang mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bệnh lý này có thể làm trầm trọng thêm bệnh hen suyễn và thậm chí có thể dẫn đến viêm màng não và hình thành áp xe não, làm tăng tỷ lệ mắc bệnh và tử vong.",
+        "head": "Viêm xoang mạn tính",
+        "head_type": "disease",
+        "relation": "aggravatedBy",
+        "tail": "Bệnh hen suyễn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bệnh lý này có thể làm trầm trọng thêm bệnh hen suyễn và thậm chí có thể dẫn đến viêm màng não và hình thành áp xe não, làm tăng tỷ lệ mắc bệnh và tử vong.",
+        "head": "Viêm xoang mạn tính",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Viêm màng não",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bệnh lý này có thể làm trầm trọng thêm bệnh hen suyễn và thậm chí có thể dẫn đến viêm màng não và hình thành áp xe não, làm tăng tỷ lệ mắc bệnh và tử vong.",
+        "head": "Viêm xoang mạn tính",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Áp xe não",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Trong một số ít trường hợp, viêm xoang mạn tính có thể gây biến chứng nhiễm trùng ổ mắt, dẫn đến suy giảm thị lực và thần kinh thị giác.",
+        "head": "Viêm xoang mạn tính",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Nhiễm trùng ổ mắt",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Trong một số ít trường hợp, viêm xoang mạn tính có thể gây biến chứng nhiễm trùng ổ mắt, dẫn đến suy giảm thị lực và thần kinh thị giác.",
+        "head": "Nhiễm trùng ổ mắt",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Suy giảm thị lực",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Trong một số ít trường hợp, viêm xoang mạn tính có thể gây biến chứng nhiễm trùng ổ mắt, dẫn đến suy giảm thị lực và thần kinh thị giác.",
+        "head": "Nhiễm trùng ổ mắt",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Thần kinh thị giác",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Viêm xoang mạn tính được chẩn đoán khi có ít nhất hai trong số bốn triệu chứng sau đây và xảy ra trong hơn 12 tuần: bao gồm chảy mũi đục, đau nhức vùng hàm mặt, nghẹt mũi, giảm khứu giác.",
+        "head": "Viêm xoang mạn tính",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "Chảy mũi đục, đau nhức vùng hàm mặt, nghẹt mũi, giảm khứu giác",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Viêm xoang mạn tính ít phổ biến hơn viêm xoang cấp tính.",
+        "head": "Viêm xoang mạn tính",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "Viêm xoang cấp tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Viêm xoang cấp tính có thể kéo dài đến 4 tuần.",
+        "head": "Viêm xoang cấp tính",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Kéo dài đến 4 tuần",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Tuy nhiên, viêm xoang mạn tính kéo dài 12 tuần hoặc lâu hơn.",
+        "head": "Viêm xoang mạn tính",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Kéo dài 12 tuần hoặc lâu hơn",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Vì vậy, các nguyên nhân khác cũng cần khảo sát như trào ngược dạ dày thực quản, các biến thể giải phẫu hoặc các vấn đề về cấu trúc của khoang mũi.",
+        "head": "Trào ngược dạ dày thực quản",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Viêm xoang mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Vì vậy, các nguyên nhân khác cũng cần khảo sát như trào ngược dạ dày thực quản, các biến thể giải phẫu hoặc các vấn đề về cấu trúc của khoang mũi.",
+        "head": "Biến thể giải phẫu",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Viêm xoang mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Vì vậy, các nguyên nhân khác cũng cần khảo sát như trào ngược dạ dày thực quản, các biến thể giải phẫu hoặc các vấn đề về cấu trúc của khoang mũi.",
+        "head": "Vấn đề về cấu trúc của khoang mũi",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Viêm xoang mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tiền sử suy giảm miễn dịch và tiền sử nhiễm nấm cũng là các yếu tố được xem xét tiếp theo.",
+        "head": "Suy giảm miễn dịch",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Viêm xoang mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tiền sử suy giảm miễn dịch và tiền sử nhiễm nấm cũng là các yếu tố được xem xét tiếp theo.",
+        "head": "Nhiễm nấm",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Viêm xoang mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Trong chẩn đoán viêm xoang mạn tính, các kiểm tra cận lâm sàng thường được chỉ định bao gồm.  CT scan hoặc nội soi mũi: Nhằm xác định sự hiện diện của tình trạng viêm.",
+        "head": "Viêm xoang mạn tính",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "CT scan hoặc nội soi mũi",
+        "tail_type": "test"
+    },
+    {
+        "text": "CT scan hoặc nội soi mũi: Nhằm xác định sự hiện diện của tình trạng viêm.",
+        "head": "CT scan",
+        "head_type": "test",
+        "relation": "isSymptomOf",
+        "tail": "Tình trạng viêm",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "CT scan hoặc nội soi mũi: Nhằm xác định sự hiện diện của tình trạng viêm.",
+        "head": "Nội soi mũi",
+        "head_type": "test",
+        "relation": "isSymptomOf",
+        "tail": "Tình trạng viêm",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "CT nhạy hơn nhưng cũng đắt hơn nội soi mũi.",
+        "head": "CT scan",
+        "head_type": "test",
+        "relation": "relatedTo",
+        "tail": "Nội soi mũi",
+        "tail_type": "test"
+    },
+    {
+        "text": "Nội soi mũi có độ nhạy thấp hơn và không đủ sử dụng để xác định viêm xoang mạn tính.",
+        "head": "Nội soi mũi",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "Viêm xoang mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nuôi cấy vi khuẩn: Có thể hữu ích trong quá điều trị, hỗ trợ trong việc cung cấp liệu pháp kháng sinh phù hợp.",
+        "head": "Nuôi cấy vi khuẩn",
+        "head_type": "test",
+        "relation": "treatedBy",
+        "tail": "Liệu pháp kháng sinh",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Theo bác sĩ Nguyễn Thị Hương, việc điều trị viêm xoang sẽ tập trung điều chỉnh các yếu tố kích hoạt, giảm quá trình viêm và loại bỏ sự nhiễm trùng.",
+        "head": "viêm xoang",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "điều chỉnh các yếu tố kích hoạt, giảm quá trình viêm và loại bỏ sự nhiễm trùng",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Theo bác sĩ Nguyễn Thị Hương, việc điều trị viêm xoang sẽ tập trung điều chỉnh các yếu tố kích hoạt, giảm quá trình viêm và loại bỏ sự nhiễm trùng.",
+        "head": "điều chỉnh các yếu tố kích hoạt, giảm quá trình viêm và loại bỏ sự nhiễm trùng",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "viêm xoang",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tùy theo tình trạng của người bệnh, bác sĩ sẽ chỉ định phương pháp điều trị nội khoa hay phẫu thuật.",
+        "head": "viêm xoang",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "phương pháp điều trị nội khoa hay phẫu thuật",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Tùy theo tình trạng của người bệnh, bác sĩ sẽ chỉ định phương pháp điều trị nội khoa hay phẫu thuật.",
+        "head": "phương pháp điều trị nội khoa hay phẫu thuật",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "viêm xoang",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các test dị ứng có thể giúp xác định các yếu tố kích thích mà bệnh nhân nên tránh.",
+        "head": "test dị ứng",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "các yếu tố kích thích",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Các test dị ứng có thể giúp xác định các yếu tố kích thích mà bệnh nhân nên tránh.",
+        "head": "các yếu tố kích thích",
+        "head_type": "cause",
+        "relation": "aggravatedBy",
+        "tail": "viêm xoang",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Steroid xịt mũi: Nên được sử dụng có hoặc không có nước muối rửa mũi.",
+        "head": "Steroid xịt mũi",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "viêm xoang",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Việc điều trị chỉ kéo dài ít nhất 8-12 tuần theo hướng dẫn của bác sĩ.",
+        "head": "viêm xoang",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "Steroid xịt mũi",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Rửa mũi bằng nước muối: Mặc dù có kém hơn so với steroid xịt mũi, tuy nhiên, rửa mũi bằng nước muối có thể giúp hỗ trợ điều trị.",
+        "head": "Rửa mũi bằng nước muối",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "viêm xoang",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Rửa mũi bằng nước muối với thể tích lớn được cho là hiệu quả hơn xịt mũi.",
+        "head": "Rửa mũi bằng nước muối với thể tích lớn",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "viêm xoang",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Thuốc kháng histamin: Bác sĩ có thể cho dùng thuốc kháng histamin nếu nghi ngờ có viêm mũi dị ứng.",
+        "head": "Thuốc kháng histamin",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "viêm mũi dị ứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Thuốc thông mũi: Có thể được sử dụng để giảm triệu chứng.",
+        "head": "Thuốc thông mũi",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "viêm xoang",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Thuốc kháng sinh: Có thể được dùng trong thời gian phù hợp.",
+        "head": "Thuốc kháng sinh",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "viêm xoang",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Thuốc kháng viêm đường uống: Có thể được sử dụng, tuy nhiên không nên sử dụng thường xuyên.",
+        "head": "Thuốc kháng viêm đường uống",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "viêm xoang",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Thuốc corticoid xịt mũi chỉ dùng từ 8-12 tuần theo hướng dẫn của bác sĩ.",
+        "head": "Thuốc corticoid xịt mũi",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "viêm xoang",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Thuốc xịt mũi: Viêm xoang mạn tính có polyp được điều trị bằng thuốc xịt mũi chứa corticoid.",
+        "head": "Thuốc xịt mũi chứa corticoid",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "viêm xoang mạn tính có polyp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Thuốc kháng viêm đường uống: Nếu nghiêm trọng hoặc không đáp ứng với điều trị sau 12 tuần, bác sĩ có thể cân nhắc sử dụng một đợt ngắn steroid đường uống.",
+        "head": "steroid đường uống",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "viêm xoang",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Thuốc đối kháng leukotriene: Có thể được xem xét để điều trị.",
+        "head": "Thuốc đối kháng leukotriene",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "viêm xoang",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Phẫu thuật nội soi mũi xoang có thể được xem xét cho những bệnh nhân không đáp ứng điều trị nội khoa.",
+        "head": "Phẫu thuật nội soi mũi xoang",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "viêm xoang",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Mục tiêu của phẫu thuật này là loại bỏ các cấu trúc bất thường, khôi phục hệ thống dẫn lưu và thanh thải chất nhầy, đồng thời mở rộng, làm thông thoáng các lỗ thông xoang.",
+        "head": "Phẫu thuật nội soi mũi xoang",
+        "head_type": "treatment",
+        "relation": "affects",
+        "tail": "các cấu trúc bất thường, hệ thống dẫn lưu, chất nhầy, các lỗ thông xoang",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Nếu bệnh nhân có bệnh nền kèm theo như các bệnh lý suy giảm miễn dịch, đái tháo đường…, việc điều trị bệnh nền được ưu tiên thực hiện trước.",
+        "head": "bệnh nền",
+        "head_type": "disease",
+        "relation": "associatedWith",
+        "tail": "viêm xoang",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Phẫu thuật nội soi xoang giúp điều trị viêm xoang mãn tính hiệu quả tại BVĐK Tâm Anh TP.HCM",
+        "head": "Phẫu thuật nội soi xoang",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "viêm xoang mãn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Xông tinh dầu: Liệu pháp xông tinh dầu hữu ích đối với bệnh nhân viêm xoang.",
+        "head": "Xông tinh dầu",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "viêm xoang",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tuy nhiên, đối với bệnh nhân viêm xoang do viêm mũi dị ứng thì nên cẩn trọng khi sử dụng liệu pháp.",
+        "head": "viêm mũi dị ứng",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "viêm xoang",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Xông tinh dầu cũng cần chú ý vệ sinh, thay nước xông hàng ngày để tránh nguy cơ nhiễm khuẩn và nấm mốc.",
+        "head": "nhiễm khuẩn và nấm mốc",
+        "head_type": "cause",
+        "relation": "aggravatedBy",
+        "tail": "viêm xoang",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Chườm ấm: Chườm ấm giúp giảm đau nhức xoang, thông thoáng đường thở và giúp tan chất nhầy, thoát ra ngoài dễ hơn.",
+        "head": "Chườm ấm",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "viêm xoang",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Yoga: Một vài liệu pháp yoga cũng giúp ích trong việc hỗ trợ điều trị bệnh viêm xoang mạn tính.",
+        "head": "Yoga",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "viêm xoang mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bhramari pranayama là một bài tập thở đã được chứng minh tính hiệu quả trong hỗ trợ điều trị viêm xoang, người bệnh có thể áp dụng.",
+        "head": "Bhramari pranayama",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "viêm xoang",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Để phòng ngừa viêm xoang mạn tính cần chủ động phòng ngừa các yếu tố căn nguyên dẫn đến bệnh này, chẳng hạn như:  Tránh bị viêm mũi xoang hoặc tránh để tình trạng viêm mũi xoang kéo dài.",
+        "head": "viêm mũi xoang",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "viêm xoang mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tránh bị nhiễm các loại virus, vi khuẩn như Streptococcus, phế cầu, Hemophilus và Moraxella.",
+        "head": "virus, vi khuẩn như Streptococcus, phế cầu, Hemophilus và Moraxella",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "viêm xoang mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tránh nhiễm cảm cúm kéo dài.",
+        "head": "nhiễm cảm cúm kéo dài",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "viêm xoang mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Luôn đeo khẩu trang và giữ ấm cơ thể khi ra khỏi nhà.",
+        "head": "đeo khẩu trang và giữ ấm cơ thể",
+        "head_type": "lifestyle",
+        "relation": "preventedBy",
+        "tail": "viêm xoang mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tránh tiếp xúc với các tác nhân gây dị ứng như khói bụi, phấn hoa, lông và phân động vật.",
+        "head": "khói bụi, phấn hoa, lông và phân động vật",
+        "head_type": "cause",
+        "relation": "aggravatedBy",
+        "tail": "viêm xoang mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tránh ăn các thực phẩm nghi ngờ khả năng gây dị ứng như hải sản, các loại ấu trùng, một số loại hạt…",
+        "head": "hải sản, các loại ấu trùng, một số loại hạt",
+        "head_type": "food",
+        "relation": "aggravatedBy",
+        "tail": "viêm xoang mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Viêm xoang mạn tính là bệnh lành tính nhưng các biến chứng của bệnh có thể diễn tiến nghiêm trọng, đôi khi đe dọa tính mạng nếu không được điều trị kịp thời.",
+        "head": "viêm xoang mạn tính",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "các biến chứng",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Các biến chứng nhiễm trùng ổ mắt và nội sọ có thể dẫn đến mù lòa, hoặc tử vong ở số ít trường hợp.",
+        "head": "nhiễm trùng ổ mắt và nội sọ",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "viêm xoang mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bệnh nhân viêm xoang mạn tính được điều trị thường có kết quả khả quan.",
+        "head": "viêm xoang mạn tính",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "điều trị",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Có thể giảm triệu chứng sau phẫu thuật xoang nội soi chức năng ở khoảng 75% bệnh nhân không đáp ứng với điều trị nội khoa.",
+        "head": "phẫu thuật xoang nội soi chức năng",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "viêm xoang",
+        "tail_type": "disease"
+    }
+]

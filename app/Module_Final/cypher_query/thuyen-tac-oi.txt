@@ -1,0 +1,555 @@
+
+MERGE (o1:disease {id: 'thuyên_tắc_ối_disease'})
+MERGE (o2:disease {id: 'tai_biến_sản_khoa_disease'})
+MERGE (o1)-[r0:isSymptomOf]->(o2)
+SET r0.text = 'Thuyên tắc ối (tiếng Anh là Amniotic Fluid Embolism Syndrome) là một trong những tai biến sản khoa hiếm gặp nhưng vô cùng nguy hiểm, tỷ lệ tử vong lên đến 90% các trường hợp mắc bệnh.'
+
+MERGE (o1:disease {id: 'thuyên_tắc_ối_disease'})
+MERGE (o2:symptom {id: 'tỷ_lệ_tử_vong_symptom'})
+MERGE (o1)-[r1:associatedWith]->(o2)
+SET r1.text = 'Thuyên tắc ối (tiếng Anh là Amniotic Fluid Embolism Syndrome) là một trong những tai biến sản khoa hiếm gặp nhưng vô cùng nguy hiểm, tỷ lệ tử vong lên đến 90% các trường hợp mắc bệnh.'
+
+MERGE (o1:disease {id: 'thuyên_tắc_ối_disease'})
+MERGE (o2:lifestyle {id: 'thai_kỳ_lifestyle'})
+MERGE (o1)-[r2:associatedWith]->(o2)
+SET r2.text = 'Hiện tượng này có thể xảy ra ở bất kỳ thời điểm nào trong thai kỳ, hiện chưa có biện pháp điều trị hữu hiệu.'
+
+MERGE (o1:disease {id: 'thuyên_tắc_ối_disease'})
+MERGE (o2:treatment {id: 'biện_pháp_điều_trị_treatment'})
+MERGE (o1)-[r3:treatedBy]->(o2)
+SET r3.text = 'Hiện tượng này có thể xảy ra ở bất kỳ thời điểm nào trong thai kỳ, hiện chưa có biện pháp điều trị hữu hiệu.'
+
+MERGE (o1:disease {id: 'tắc_mạch_ối_disease'})
+MERGE (o2:disease {id: 'tai_biến_sản_khoa_disease'})
+MERGE (o1)-[r4:isSymptomOf]->(o2)
+SET r4.text = 'Kết quả cuộc điều tra tử vong mẹ và trẻ sơ sinh Việt Nam được tiến hành ở tất cả phụ nữ từ 15-55 tuổi, tất cả các xã của 30 quận/huyện thuộc 10 tỉnh/thành, tỷ lệ miền núi/nông thôn đồng bằng/thành thị của Bộ Y tế cho thấy, 71,5% các trường hợp mẹ tử vong là do các tai biến sản khoa, trong đó tỷ lệ tử vong do tắc mạch ối lên đến 34,7%.'
+
+MERGE (o1:disease {id: 'tắc_mạch_ối_disease'})
+MERGE (o2:symptom {id: 'tỷ_lệ_tử_vong_symptom'})
+MERGE (o1)-[r5:associatedWith]->(o2)
+SET r5.text = 'Kết quả cuộc điều tra tử vong mẹ và trẻ sơ sinh Việt Nam được tiến hành ở tất cả phụ nữ từ 15-55 tuổi, tất cả các xã của 30 quận/huyện thuộc 10 tỉnh/thành, tỷ lệ miền núi/nông thôn đồng bằng/thành thị của Bộ Y tế cho thấy, 71,5% các trường hợp mẹ tử vong là do các tai biến sản khoa, trong đó tỷ lệ tử vong do tắc mạch ối lên đến 34,7%.'
+
+MERGE (o1:symptom {id: 'vỡ_ối_symptom'})
+MERGE (o2:disease {id: 'thuyên_tắc_ối_disease'})
+MERGE (o1)-[r6:isSymptomOf]->(o2)
+SET r6.text = 'Sản phụ N.T.H (Yên Bái) mang thai lần 3, trong thời gian nằm viện chờ sinh, sản phụ đột nhiên có dấu hiệu vỡ ối, được chuyển đến bàn sinh.'
+
+MERGE (o1:symptom {id: 'vỡ_ối_symptom'})
+MERGE (o2:disease {id: 'tắc_mạch_ối_disease'})
+MERGE (o1)-[r7:isSymptomOf]->(o2)
+SET r7.text = 'Sản phụ N.T.H (Yên Bái) mang thai lần 3, trong thời gian nằm viện chờ sinh, sản phụ đột nhiên có dấu hiệu vỡ ối, được chuyển đến bàn sinh.'
+
+MERGE (o1:symptom {id: 'tái_nhợt_symptom'})
+MERGE (o2:disease {id: 'thuyên_tắc_ối_disease'})
+MERGE (o1)-[r8:isSymptomOf]->(o2)
+SET r8.text = 'Chỉ ít phút sau, sản phụ gọi không trả lời, tái nhợt, ngưng thở, mất mạch, huyết áp không đo được.'
+
+MERGE (o1:symptom {id: 'ngưng_thở_symptom'})
+MERGE (o2:disease {id: 'thuyên_tắc_ối_disease'})
+MERGE (o1)-[r9:isSymptomOf]->(o2)
+SET r9.text = 'Chỉ ít phút sau, sản phụ gọi không trả lời, tái nhợt, ngưng thở, mất mạch, huyết áp không đo được.'
+
+MERGE (o1:symptom {id: 'mất_mạch_symptom'})
+MERGE (o2:disease {id: 'thuyên_tắc_ối_disease'})
+MERGE (o1)-[r10:isSymptomOf]->(o2)
+SET r10.text = 'Chỉ ít phút sau, sản phụ gọi không trả lời, tái nhợt, ngưng thở, mất mạch, huyết áp không đo được.'
+
+MERGE (o1:symptom {id: 'huyết_áp_không_đo_được_symptom'})
+MERGE (o2:disease {id: 'thuyên_tắc_ối_disease'})
+MERGE (o1)-[r11:isSymptomOf]->(o2)
+SET r11.text = 'Chỉ ít phút sau, sản phụ gọi không trả lời, tái nhợt, ngưng thở, mất mạch, huyết áp không đo được.'
+
+MERGE (o1:symptom {id: 'ngừng_tuần_hoàn_symptom'})
+MERGE (o2:disease {id: 'thuyên_tắc_ối_disease'})
+MERGE (o1)-[r12:isSymptomOf]->(o2)
+SET r12.text = 'Chẩn đoán sản phụ bị ngừng tuần hoàn trong tình trạng thai 39 tuần chuyển dạ, nghi do thuyên tắc nghẽn mạch ối.'
+
+MERGE (o1:lifestyle {id: 'thai_39_tuần_chuyển_dạ_lifestyle'})
+MERGE (o2:disease {id: 'thuyên_tắc_ối_disease'})
+MERGE (o1)-[r13:associatedWith]->(o2)
+SET r13.text = 'Chẩn đoán sản phụ bị ngừng tuần hoàn trong tình trạng thai 39 tuần chuyển dạ, nghi do thuyên tắc nghẽn mạch ối.'
+
+MERGE (o1:disease {id: 'thuyên_tắc_nghẽn_mạch_ối_disease'})
+MERGE (o2:symptom {id: 'ngừng_tuần_hoàn_symptom'})
+MERGE (o1)-[r14:causedBy]->(o2)
+SET r14.text = 'Chẩn đoán sản phụ bị ngừng tuần hoàn trong tình trạng thai 39 tuần chuyển dạ, nghi do thuyên tắc nghẽn mạch ối.'
+
+MERGE (o1:symptom {id: 'chuyển_dạ_symptom'})
+MERGE (o2:disease {id: 'thuyên_tắc_ối_disease'})
+MERGE (o1)-[r15:isSymptomOf]->(o2)
+SET r15.text = 'Hay trường hợp sản phụ N.T.S (Khánh Hòa), mang thai lần 2 được 37,5 tuần, chuyển dạ nhập viện chờ sinh.'
+
+MERGE (o1:symptom {id: 'chuyển_dạ_symptom'})
+MERGE (o2:disease {id: 'tắc_mạch_ối_disease'})
+MERGE (o1)-[r16:isSymptomOf]->(o2)
+SET r16.text = 'Hay trường hợp sản phụ N.T.S (Khánh Hòa), mang thai lần 2 được 37,5 tuần, chuyển dạ nhập viện chờ sinh.'
+
+MERGE (o1:symptom {id: 'tím_tái_symptom'})
+MERGE (o2:disease {id: 'thuyên_tắc_ối_disease'})
+MERGE (o1)-[r17:isSymptomOf]->(o2)
+SET r17.text = 'Sau vỡ ối vài phút, sản phụ đột ngột tím tái, bất tỉnh, rồi khó thở, trụy tim, không bắt được mạch, lúc này tim thai yếu dần.'
+
+MERGE (o1:symptom {id: 'bất_tỉnh_symptom'})
+MERGE (o2:disease {id: 'thuyên_tắc_ối_disease'})
+MERGE (o1)-[r18:isSymptomOf]->(o2)
+SET r18.text = 'Sau vỡ ối vài phút, sản phụ đột ngột tím tái, bất tỉnh, rồi khó thở, trụy tim, không bắt được mạch, lúc này tim thai yếu dần.'
+
+MERGE (o1:symptom {id: 'khó_thở_symptom'})
+MERGE (o2:disease {id: 'thuyên_tắc_ối_disease'})
+MERGE (o1)-[r19:isSymptomOf]->(o2)
+SET r19.text = 'Sau vỡ ối vài phút, sản phụ đột ngột tím tái, bất tỉnh, rồi khó thở, trụy tim, không bắt được mạch, lúc này tim thai yếu dần.'
+
+MERGE (o1:symptom {id: 'trụy_tim_symptom'})
+MERGE (o2:disease {id: 'thuyên_tắc_ối_disease'})
+MERGE (o1)-[r20:isSymptomOf]->(o2)
+SET r20.text = 'Sau vỡ ối vài phút, sản phụ đột ngột tím tái, bất tỉnh, rồi khó thở, trụy tim, không bắt được mạch, lúc này tim thai yếu dần.'
+
+MERGE (o1:symptom {id: 'không_bắt_được_mạch_symptom'})
+MERGE (o2:disease {id: 'thuyên_tắc_ối_disease'})
+MERGE (o1)-[r21:isSymptomOf]->(o2)
+SET r21.text = 'Sau vỡ ối vài phút, sản phụ đột ngột tím tái, bất tỉnh, rồi khó thở, trụy tim, không bắt được mạch, lúc này tim thai yếu dần.'
+
+MERGE (o1:symptom {id: 'tim_thai_yếu_dần_symptom'})
+MERGE (o2:disease {id: 'thuyên_tắc_ối_disease'})
+MERGE (o1)-[r22:isSymptomOf]->(o2)
+SET r22.text = 'Sau vỡ ối vài phút, sản phụ đột ngột tím tái, bất tỉnh, rồi khó thở, trụy tim, không bắt được mạch, lúc này tim thai yếu dần.'
+
+MERGE (o1:disease {id: 'tắc_nghẽn_mạch_ối_disease'})
+MERGE (o2:lifestyle {id: 'đẻ_lifestyle'})
+MERGE (o1)-[r23:associatedWith]->(o2)
+SET r23.text = 'Chẩn đoán sản phụ bị tắc nghẽn mạch ối sau khi sinh đẻ đe dọa tính mạng cả mẹ lẫn thai nhi, báo động đỏ cấp cứu, huy động lực lượng bác sĩ dốc sức cứu sản phụ.'
+
+MERGE (o1:disease {id: 'tắc_nghẽn_mạch_ối_disease'})
+MERGE (o2:treatment {id: 'cấp_cứu_treatment'})
+MERGE (o1)-[r24:associatedWith]->(o2)
+SET r24.text = 'Chẩn đoán sản phụ bị tắc nghẽn mạch ối sau khi sinh đẻ đe dọa tính mạng cả mẹ lẫn thai nhi, báo động đỏ cấp cứu, huy động lực lượng bác sĩ dốc sức cứu sản phụ.'
+
+MERGE (o1:disease {id: 'thuyên_tắc_mạch_ối_disease'})
+MERGE (o2:disease {id: 'biến_chứng_sản_khoa_disease'})
+MERGE (o1)-[r25:isSymptomOf]->(o2)
+SET r25.text = '“Thuyên tắc mạch ối là một biến chứng vô cùng nguy hiểm trong sản khoa.'
+
+MERGE (o1:disease {id: 'thuyên_tắc_mạch_ối_disease'})
+MERGE (o2:symptom {id: 'tỷ_lệ_cứu_sống_symptom'})
+MERGE (o1)-[r26:associatedWith]->(o2)
+SET r26.text = 'Biến chứng này xảy ra đột ngột, diễn tiến cực kỳ nhanh, tỷ lệ cứu sống rất thấp mà lại không hề có bất cứ dấu hiệu cảnh báo nào”, PGS.TS.BS Lưu Thị Hồng cho biết.'
+
+MERGE (o1:disease {id: 'thuyên_tắc_ối_disease'})
+MERGE (o2:cause {id: 'nước_ối__tế_bào_thai_nhi__tóc__lông_tơ_hoặc_các_mảnh_vụn_khác_xâm_nhập_vào_máu_của_thai_phụ_cause'})
+MERGE (o1)-[r27:causedBy]->(o2)
+SET r27.text = 'Thuyên tắc ối (còn gọi là tắc mạch ối) là tình trạng nước ối, tế bào thai nhi, tóc, lông tơ hoặc các mảnh vụn khác xâm nhập vào máu của thai phụ, thông qua hệ thống tĩnh mạch nơi nhau thai bám gây ra một số phản ứng giống dị ứng.'
+
+MERGE (o1:disease {id: 'thuyên_tắc_ối_disease'})
+MERGE (o2:cause {id: 'phản_ứng_giống_dị_ứng_cause'})
+MERGE (o1)-[r28:causedBy]->(o2)
+SET r28.text = 'Thuyên tắc ối (còn gọi là tắc mạch ối) là tình trạng nước ối, tế bào thai nhi, tóc, lông tơ hoặc các mảnh vụn khác xâm nhập vào máu của thai phụ, thông qua hệ thống tĩnh mạch nơi nhau thai bám gây ra một số phản ứng giống dị ứng.'
+
+MERGE (o1:cause {id: 'phản_ứng_giống_dị_ứng_cause'})
+MERGE (o2:symptom {id: 'suy_tim_phổi_cấp_symptom'})
+MERGE (o1)-[r29:causes]->(o2)
+SET r29.text = 'Phản ứng này làm suy tim phổi cấp và xuất huyết nghiêm trọng.'
+
+MERGE (o1:cause {id: 'phản_ứng_giống_dị_ứng_cause'})
+MERGE (o2:symptom {id: 'xuất_huyết_nghiêm_trọng_symptom'})
+MERGE (o1)-[r30:causes]->(o2)
+SET r30.text = 'Phản ứng này làm suy tim phổi cấp và xuất huyết nghiêm trọng.'
+
+MERGE (o1:disease {id: 'thuyên_tắc_ối_disease'})
+MERGE (o2:lifestyle {id: 'chuyển_dạ_lifestyle'})
+MERGE (o1)-[r31:associatedWith]->(o2)
+SET r31.text = 'Bệnh thường xảy ra trong lúc chuyển dạ, cũng có thể xảy ra khi mổ lấy thai, sảy thai, chấn thương bụng, chọc nước ối, sau sinh hoặc sau mổ lấy thai.'
+
+MERGE (o1:disease {id: 'thuyên_tắc_ối_disease'})
+MERGE (o2:treatment {id: 'mổ_lấy_thai_treatment'})
+MERGE (o1)-[r32:associatedWith]->(o2)
+SET r32.text = 'Bệnh thường xảy ra trong lúc chuyển dạ, cũng có thể xảy ra khi mổ lấy thai, sảy thai, chấn thương bụng, chọc nước ối, sau sinh hoặc sau mổ lấy thai.'
+
+MERGE (o1:disease {id: 'thuyên_tắc_ối_disease'})
+MERGE (o2:disease {id: 'sảy_thai_disease'})
+MERGE (o1)-[r33:associatedWith]->(o2)
+SET r33.text = 'Bệnh thường xảy ra trong lúc chuyển dạ, cũng có thể xảy ra khi mổ lấy thai, sảy thai, chấn thương bụng, chọc nước ối, sau sinh hoặc sau mổ lấy thai.'
+
+MERGE (o1:disease {id: 'thuyên_tắc_ối_disease'})
+MERGE (o2:cause {id: 'chấn_thương_bụng_cause'})
+MERGE (o1)-[r34:associatedWith]->(o2)
+SET r34.text = 'Bệnh thường xảy ra trong lúc chuyển dạ, cũng có thể xảy ra khi mổ lấy thai, sảy thai, chấn thương bụng, chọc nước ối, sau sinh hoặc sau mổ lấy thai.'
+
+MERGE (o1:disease {id: 'thuyên_tắc_ối_disease'})
+MERGE (o2:test {id: 'chọc_nước_ối_test'})
+MERGE (o1)-[r35:associatedWith]->(o2)
+SET r35.text = 'Bệnh thường xảy ra trong lúc chuyển dạ, cũng có thể xảy ra khi mổ lấy thai, sảy thai, chấn thương bụng, chọc nước ối, sau sinh hoặc sau mổ lấy thai.'
+
+MERGE (o1:disease {id: 'thuyên_tắc_ối_disease'})
+MERGE (o2:lifestyle {id: 'sau_sinh_lifestyle'})
+MERGE (o1)-[r36:associatedWith]->(o2)
+SET r36.text = 'Bệnh thường xảy ra trong lúc chuyển dạ, cũng có thể xảy ra khi mổ lấy thai, sảy thai, chấn thương bụng, chọc nước ối, sau sinh hoặc sau mổ lấy thai.'
+
+MERGE (o1:disease {id: 'mạch_ối_bị_tắc_nghẽn_disease'})
+MERGE (o2:organ {id: 'màng_ối_còn_nguyên_organ'})
+MERGE (o1)-[r37:associatedWith]->(o2)
+SET r37.text = 'Thời điểm mạch ối bị tắc nghẽn xảy ra khác nhau tùy trường hợp, thống kê cho thấy: 12% trường hợp xảy ra khi màng ối còn nguyên; 70% trường hợp xảy ra trong chuyển dạ; 11% trường hợp xảy ra sau sinh qua đường âm đạo; 19% trường hợp xảy ra khi mổ lấy thai đã chuyển dạ hoặc chưa chuyển dạ.'
+
+MERGE (o1:disease {id: 'mạch_ối_bị_tắc_nghẽn_disease'})
+MERGE (o2:lifestyle {id: 'chuyển_dạ_lifestyle'})
+MERGE (o1)-[r38:associatedWith]->(o2)
+SET r38.text = 'Thời điểm mạch ối bị tắc nghẽn xảy ra khác nhau tùy trường hợp, thống kê cho thấy: 12% trường hợp xảy ra khi màng ối còn nguyên; 70% trường hợp xảy ra trong chuyển dạ; 11% trường hợp xảy ra sau sinh qua đường âm đạo; 19% trường hợp xảy ra khi mổ lấy thai đã chuyển dạ hoặc chưa chuyển dạ.'
+
+MERGE (o1:disease {id: 'mạch_ối_bị_tắc_nghẽn_disease'})
+MERGE (o2:lifestyle {id: 'sau_sinh_qua_đường_âm_đạo_lifestyle'})
+MERGE (o1)-[r39:associatedWith]->(o2)
+SET r39.text = 'Thời điểm mạch ối bị tắc nghẽn xảy ra khác nhau tùy trường hợp, thống kê cho thấy: 12% trường hợp xảy ra khi màng ối còn nguyên; 70% trường hợp xảy ra trong chuyển dạ; 11% trường hợp xảy ra sau sinh qua đường âm đạo; 19% trường hợp xảy ra khi mổ lấy thai đã chuyển dạ hoặc chưa chuyển dạ.'
+
+MERGE (o1:disease {id: 'mạch_ối_bị_tắc_nghẽn_disease'})
+MERGE (o2:treatment {id: 'mổ_lấy_thai_treatment'})
+MERGE (o1)-[r40:associatedWith]->(o2)
+SET r40.text = 'Thời điểm mạch ối bị tắc nghẽn xảy ra khác nhau tùy trường hợp, thống kê cho thấy: 12% trường hợp xảy ra khi màng ối còn nguyên; 70% trường hợp xảy ra trong chuyển dạ; 11% trường hợp xảy ra sau sinh qua đường âm đạo; 19% trường hợp xảy ra khi mổ lấy thai đã chuyển dạ hoặc chưa chuyển dạ.'
+
+MERGE (o1:disease {id: 'tắc_nghẽn_mạch_ối_disease'})
+MERGE (o2:disease {id: 'tai_biến_sản_khoa_disease'})
+MERGE (o1)-[r41:isSymptomOf]->(o2)
+SET r41.text = 'Thống kê số liệu các trường hợp mắc bệnh cho thấy, mặc dù bệnh lý tắc nghẽn mạch ối là tai biến sản khoa hiếm gặp nhưng vô cùng nguy hiểm, nguy cơ tử vong lên đến 90% ở mẹ và khoảng 20 - 60% ở trẻ.'
+
+MERGE (o1:disease {id: 'tắc_nghẽn_mạch_ối_disease'})
+MERGE (o2:symptom {id: 'nguy_cơ_tử_vong_symptom'})
+MERGE (o1)-[r42:associatedWith]->(o2)
+SET r42.text = 'Thống kê số liệu các trường hợp mắc bệnh cho thấy, mặc dù bệnh lý tắc nghẽn mạch ối là tai biến sản khoa hiếm gặp nhưng vô cùng nguy hiểm, nguy cơ tử vong lên đến 90% ở mẹ và khoảng 20 - 60% ở trẻ.'
+
+MERGE (o1:disease {id: 'thuyên_tắc_ối_disease'})
+MERGE (o2:test {id: 'chẩn_đoán_test'})
+MERGE (o1)-[r43:treatedBy]->(o2)
+SET r43.text = 'Những trường hợp nếu được chẩn đoán và xử trí kịp thời vẫn có thể cứu sống cả mẹ và thai nhi, do đó việc cập nhật chẩn đoán và đưa ra hướng xử trí đúng đắn, nhanh chóng là điều vô cùng cần thiết cho các trường hợp tai biến sản khoa.'
+
+MERGE (o1:disease {id: 'thuyên_tắc_ối_disease'})
+MERGE (o2:treatment {id: 'xử_trí_treatment'})
+MERGE (o1)-[r44:treatedBy]->(o2)
+SET r44.text = 'Những trường hợp nếu được chẩn đoán và xử trí kịp thời vẫn có thể cứu sống cả mẹ và thai nhi, do đó việc cập nhật chẩn đoán và đưa ra hướng xử trí đúng đắn, nhanh chóng là điều vô cùng cần thiết cho các trường hợp tai biến sản khoa.'
+
+MERGE (o1:cause {id: 'nước_ối_cause'})
+MERGE (o2:disease {id: 'thuyên_tắc_ối_disease'})
+MERGE (o1)-[r45:causes]->(o2)
+SET r45.text = 'Ở trạng thái bình thường, nước ối sẽ hoàn toàn nằm trong buồng ối, không đi vào hệ tuần hoàn của thai phụ.'
+
+MERGE (o1:cause {id: 'nước_ối_cause'})
+MERGE (o2:disease {id: 'tắc_mạch_ối_disease'})
+MERGE (o1)-[r46:causes]->(o2)
+SET r46.text = 'Khi hàng rào giữa khoang ối và tuần hoàn của thai phụ bị phá vỡ, nước ối sẽ đi vào máu của thai phụ thông qua các tĩnh mạch ống cổ tử cung, qua vị trí rau bám đã bong, qua nội mạc tử cung hoặc tử cung bị chấn thương dẫn đến tắc mạch ối.'
+
+MERGE (o1:cause {id: 'nước_ối_đi_vào_tuần_hoàn_của_thai_phụ_cause'})
+MERGE (o2:symptom {id: 'tắc_nghẽn_symptom'})
+MERGE (o1)-[r47:causes]->(o2)
+SET r47.text = 'Tuy nhiên, không phải trường hợp nước ối đi vào tuần hoàn của thai phụ nào cũng gây tắc nghẽn.'
+
+MERGE (o1:disease {id: 'mạch_ối_bị_tắc_nghẽn_disease'})
+MERGE (o2:lifestyle {id: 'sinh_lifestyle'})
+MERGE (o1)-[r48:associatedWith]->(o2)
+SET r48.text = 'PGS.TS.BS Lưu Thị Hồng cho biết, tất cả các độ tuổi đều có thể mắc chứng mạch ối bị tắc nghẽn xảy ra trước, trong hoặc ngay sau khi sinh.'
+
+MERGE (o1:disease {id: 'tắc_mạch_ối_disease'})
+MERGE (o2:cause {id: 'thai_nhi_lớn_cause'})
+MERGE (o1)-[r49:associatedWith]->(o2)
+SET r49.text = 'Y khoa ghi nhận các trường hợp tắc mạch ối ở thai phụ có chung đặc điểm như thai nhi lớn, thai quá ngày, thai phụ lo lắng, hốt hoảng, khó thở và nôn mửa.'
+
+MERGE (o1:disease {id: 'tắc_mạch_ối_disease'})
+MERGE (o2:cause {id: 'thai_quá_ngày_cause'})
+MERGE (o1)-[r50:associatedWith]->(o2)
+SET r50.text = 'Y khoa ghi nhận các trường hợp tắc mạch ối ở thai phụ có chung đặc điểm như thai nhi lớn, thai quá ngày, thai phụ lo lắng, hốt hoảng, khó thở và nôn mửa.'
+
+MERGE (o1:disease {id: 'tắc_mạch_ối_disease'})
+MERGE (o2:cause {id: 'thai_phụ_lo_lắng_cause'})
+MERGE (o1)-[r51:associatedWith]->(o2)
+SET r51.text = 'Y khoa ghi nhận các trường hợp tắc mạch ối ở thai phụ có chung đặc điểm như thai nhi lớn, thai quá ngày, thai phụ lo lắng, hốt hoảng, khó thở và nôn mửa.'
+
+MERGE (o1:disease {id: 'tắc_mạch_ối_disease'})
+MERGE (o2:cause {id: 'hốt_hoảng_cause'})
+MERGE (o1)-[r52:associatedWith]->(o2)
+SET r52.text = 'Y khoa ghi nhận các trường hợp tắc mạch ối ở thai phụ có chung đặc điểm như thai nhi lớn, thai quá ngày, thai phụ lo lắng, hốt hoảng, khó thở và nôn mửa.'
+
+MERGE (o1:disease {id: 'tắc_mạch_ối_disease'})
+MERGE (o2:symptom {id: 'khó_thở_symptom'})
+MERGE (o1)-[r53:associatedWith]->(o2)
+SET r53.text = 'Y khoa ghi nhận các trường hợp tắc mạch ối ở thai phụ có chung đặc điểm như thai nhi lớn, thai quá ngày, thai phụ lo lắng, hốt hoảng, khó thở và nôn mửa.'
+
+MERGE (o1:disease {id: 'tắc_mạch_ối_disease'})
+MERGE (o2:symptom {id: 'nôn_mửa_symptom'})
+MERGE (o1)-[r54:associatedWith]->(o2)
+SET r54.text = 'Y khoa ghi nhận các trường hợp tắc mạch ối ở thai phụ có chung đặc điểm như thai nhi lớn, thai quá ngày, thai phụ lo lắng, hốt hoảng, khó thở và nôn mửa.'
+
+MERGE (o1:cause {id: 'thai_phụ_tuổi_cao_cause'})
+MERGE (o2:disease {id: 'thuyên_tắc_ối_disease'})
+MERGE (o1)-[r55:causes]->(o2)
+SET r55.text = 'Thêm vào đó, một số yếu tố làm tăng nguy cơ mắc bệnh gồm: Thai phụ tuổi cao: Những thai phụ trên 35 tuổi; Thai phụ mang đa thai hoặc sinh con nhiều lần; Nhau thai bất thường: Khi mang thai nếu cấu trúc trong tử cung phát triển bất thường; Thai phụ mắc chứng tiền sản giật: Những thai phụ mắc chứng tiền sản giật, huyết áp tăng cao và protein niệu sau tuần 20 của thai kỳ; Mổ lấy thai, hoặc đẻ đường dưới có sự can thiệp của thủ thuật Forceps, giác kéo, chọc hút nước ối: Việc dùng kẹp hoặc các thủ thuật giác hút lấy thai có thể phá vỡ hàng rào vật lý giữa thai phụ và thai nhi.'
+
+MERGE (o1:cause {id: 'thai_phụ_tuổi_cao_cause'})
+MERGE (o2:lifestyle {id: 'thai_phụ_trên_35_tuổi_lifestyle'})
+MERGE (o1)-[r56:associatedWith]->(o2)
+SET r56.text = 'Thêm vào đó, một số yếu tố làm tăng nguy cơ mắc bệnh gồm: Thai phụ tuổi cao: Những thai phụ trên 35 tuổi; Thai phụ mang đa thai hoặc sinh con nhiều lần; Nhau thai bất thường: Khi mang thai nếu cấu trúc trong tử cung phát triển bất thường; Thai phụ mắc chứng tiền sản giật: Những thai phụ mắc chứng tiền sản giật, huyết áp tăng cao và protein niệu sau tuần 20 của thai kỳ; Mổ lấy thai, hoặc đẻ đường dưới có sự can thiệp của thủ thuật Forceps, giác kéo, chọc hút nước ối: Việc dùng kẹp hoặc các thủ thuật giác hút lấy thai có thể phá vỡ hàng rào vật lý giữa thai phụ và thai nhi.'
+
+MERGE (o1:cause {id: 'thai_phụ_mang_đa_thai_cause'})
+MERGE (o2:disease {id: 'thuyên_tắc_ối_disease'})
+MERGE (o1)-[r57:causes]->(o2)
+SET r57.text = 'Thêm vào đó, một số yếu tố làm tăng nguy cơ mắc bệnh gồm: Thai phụ tuổi cao: Những thai phụ trên 35 tuổi; Thai phụ mang đa thai hoặc sinh con nhiều lần; Nhau thai bất thường: Khi mang thai nếu cấu trúc trong tử cung phát triển bất thường; Thai phụ mắc chứng tiền sản giật: Những thai phụ mắc chứng tiền sản giật, huyết áp tăng cao và protein niệu sau tuần 20 của thai kỳ; Mổ lấy thai, hoặc đẻ đường dưới có sự can thiệp của thủ thuật Forceps, giác kéo, chọc hút nước ối: Việc dùng kẹp hoặc các thủ thuật giác hút lấy thai có thể phá vỡ hàng rào vật lý giữa thai phụ và thai nhi.'
+
+MERGE (o1:cause {id: 'nhau_thai_bất_thường_cause'})
+MERGE (o2:disease {id: 'thuyên_tắc_ối_disease'})
+MERGE (o1)-[r58:causes]->(o2)
+SET r58.text = 'Thêm vào đó, một số yếu tố làm tăng nguy cơ mắc bệnh gồm: Thai phụ tuổi cao: Những thai phụ trên 35 tuổi; Thai phụ mang đa thai hoặc sinh con nhiều lần; Nhau thai bất thường: Khi mang thai nếu cấu trúc trong tử cung phát triển bất thường; Thai phụ mắc chứng tiền sản giật: Những thai phụ mắc chứng tiền sản giật, huyết áp tăng cao và protein niệu sau tuần 20 của thai kỳ; Mổ lấy thai, hoặc đẻ đường dưới có sự can thiệp của thủ thuật Forceps, giác kéo, chọc hút nước ối: Việc dùng kẹp hoặc các thủ thuật giác hút lấy thai có thể phá vỡ hàng rào vật lý giữa thai phụ và thai nhi.'
+
+MERGE (o1:cause {id: 'nhau_thai_bất_thường_cause'})
+MERGE (o2:cause {id: 'cấu_trúc_trong_tử_cung_phát_triển_bất_thường_cause'})
+MERGE (o1)-[r59:associatedWith]->(o2)
+SET r59.text = 'Thêm vào đó, một số yếu tố làm tăng nguy cơ mắc bệnh gồm: Thai phụ tuổi cao: Những thai phụ trên 35 tuổi; Thai phụ mang đa thai hoặc sinh con nhiều lần; Nhau thai bất thường: Khi mang thai nếu cấu trúc trong tử cung phát triển bất thường; Thai phụ mắc chứng tiền sản giật: Những thai phụ mắc chứng tiền sản giật, huyết áp tăng cao và protein niệu sau tuần 20 của thai kỳ; Mổ lấy thai, hoặc đẻ đường dưới có sự can thiệp của thủ thuật Forceps, giác kéo, chọc hút nước ối: Việc dùng kẹp hoặc các thủ thuật giác hút lấy thai có thể phá vỡ hàng rào vật lý giữa thai phụ và thai nhi.'
+
+MERGE (o1:cause {id: 'thai_phụ_mắc_chứng_tiền_sản_giật_cause'})
+MERGE (o2:disease {id: 'thuyên_tắc_ối_disease'})
+MERGE (o1)-[r60:causes]->(o2)
+SET r60.text = 'Thêm vào đó, một số yếu tố làm tăng nguy cơ mắc bệnh gồm: Thai phụ tuổi cao: Những thai phụ trên 35 tuổi; Thai phụ mang đa thai hoặc sinh con nhiều lần; Nhau thai bất thường: Khi mang thai nếu cấu trúc trong tử cung phát triển bất thường; Thai phụ mắc chứng tiền sản giật: Những thai phụ mắc chứng tiền sản giật, huyết áp tăng cao và protein niệu sau tuần 20 của thai kỳ; Mổ lấy thai, hoặc đẻ đường dưới có sự can thiệp của thủ thuật Forceps, giác kéo, chọc hút nước ối: Việc dùng kẹp hoặc các thủ thuật giác hút lấy thai có thể phá vỡ hàng rào vật lý giữa thai phụ và thai nhi.'
+
+MERGE (o1:cause {id: 'thai_phụ_mắc_chứng_tiền_sản_giật_cause'})
+MERGE (o2:symptom {id: 'huyết_áp_tăng_cao_symptom'})
+MERGE (o1)-[r61:associatedWith]->(o2)
+SET r61.text = 'Thêm vào đó, một số yếu tố làm tăng nguy cơ mắc bệnh gồm: Thai phụ tuổi cao: Những thai phụ trên 35 tuổi; Thai phụ mang đa thai hoặc sinh con nhiều lần; Nhau thai bất thường: Khi mang thai nếu cấu trúc trong tử cung phát triển bất thường; Thai phụ mắc chứng tiền sản giật: Những thai phụ mắc chứng tiền sản giật, huyết áp tăng cao và protein niệu sau tuần 20 của thai kỳ; Mổ lấy thai, hoặc đẻ đường dưới có sự can thiệp của thủ thuật Forceps, giác kéo, chọc hút nước ối: Việc dùng kẹp hoặc các thủ thuật giác hút lấy thai có thể phá vỡ hàng rào vật lý giữa thai phụ và thai nhi.'
+
+MERGE (o1:cause {id: 'thai_phụ_mắc_chứng_tiền_sản_giật_cause'})
+MERGE (o2:symptom {id: 'protein_niệu_symptom'})
+MERGE (o1)-[r62:associatedWith]->(o2)
+SET r62.text = 'Thêm vào đó, một số yếu tố làm tăng nguy cơ mắc bệnh gồm: Thai phụ tuổi cao: Những thai phụ trên 35 tuổi; Thai phụ mang đa thai hoặc sinh con nhiều lần; Nhau thai bất thường: Khi mang thai nếu cấu trúc trong tử cung phát triển bất thường; Thai phụ mắc chứng tiền sản giật: Những thai phụ mắc chứng tiền sản giật, huyết áp tăng cao và protein niệu sau tuần 20 của thai kỳ; Mổ lấy thai, hoặc đẻ đường dưới có sự can thiệp của thủ thuật Forceps, giác kéo, chọc hút nước ối: Việc dùng kẹp hoặc các thủ thuật giác hút lấy thai có thể phá vỡ hàng rào vật lý giữa thai phụ và thai nhi.'
+
+MERGE (o1:symptom {id: 'suy_hô_hấp_symptom'})
+MERGE (o2:disease {id: 'thuyên_tắc_mạch_ối_disease'})
+MERGE (o1)-[r63:isSymptomOf]->(o2)
+SET r63.text = 'Thai phụ được chẩn đoán mắc chứng thuyên tắc mạch ối có triệu chứng khởi đầu là suy hô hấp, sau đó tím tái đột ngột trong vòng vài phút, kèm theo tình trạng tụt huyết áp, phù phổi, lú lẫn và co giật.'
+
+MERGE (o1:symptom {id: 'tím_tái_đột_ngột_symptom'})
+MERGE (o2:disease {id: 'thuyên_tắc_mạch_ối_disease'})
+MERGE (o1)-[r64:isSymptomOf]->(o2)
+SET r64.text = 'Thai phụ được chẩn đoán mắc chứng thuyên tắc mạch ối có triệu chứng khởi đầu là suy hô hấp, sau đó tím tái đột ngột trong vòng vài phút, kèm theo tình trạng tụt huyết áp, phù phổi, lú lẫn và co giật.'
+
+MERGE (o1:symptom {id: 'tụt_huyết_áp_symptom'})
+MERGE (o2:disease {id: 'thuyên_tắc_mạch_ối_disease'})
+MERGE (o1)-[r65:isSymptomOf]->(o2)
+SET r65.text = 'Thai phụ được chẩn đoán mắc chứng thuyên tắc mạch ối có triệu chứng khởi đầu là suy hô hấp, sau đó tím tái đột ngột trong vòng vài phút, kèm theo tình trạng tụt huyết áp, phù phổi, lú lẫn và co giật.'
+
+MERGE (o1:symptom {id: 'phù_phổi_symptom'})
+MERGE (o2:disease {id: 'thuyên_tắc_mạch_ối_disease'})
+MERGE (o1)-[r66:isSymptomOf]->(o2)
+SET r66.text = 'Thai phụ được chẩn đoán mắc chứng thuyên tắc mạch ối có triệu chứng khởi đầu là suy hô hấp, sau đó tím tái đột ngột trong vòng vài phút, kèm theo tình trạng tụt huyết áp, phù phổi, lú lẫn và co giật.'
+
+MERGE (o1:symptom {id: 'lú_lẫn_symptom'})
+MERGE (o2:disease {id: 'thuyên_tắc_mạch_ối_disease'})
+MERGE (o1)-[r67:isSymptomOf]->(o2)
+SET r67.text = 'Thai phụ được chẩn đoán mắc chứng thuyên tắc mạch ối có triệu chứng khởi đầu là suy hô hấp, sau đó tím tái đột ngột trong vòng vài phút, kèm theo tình trạng tụt huyết áp, phù phổi, lú lẫn và co giật.'
+
+MERGE (o1:symptom {id: 'co_giật_symptom'})
+MERGE (o2:disease {id: 'thuyên_tắc_mạch_ối_disease'})
+MERGE (o1)-[r68:isSymptomOf]->(o2)
+SET r68.text = 'Thai phụ được chẩn đoán mắc chứng thuyên tắc mạch ối có triệu chứng khởi đầu là suy hô hấp, sau đó tím tái đột ngột trong vòng vài phút, kèm theo tình trạng tụt huyết áp, phù phổi, lú lẫn và co giật.'
+
+MERGE (o1:treatment {id: 'ấn_tim_treatment'})
+MERGE (o2:disease {id: 'thuyên_tắc_mạch_ối_disease'})
+MERGE (o1)-[r69:treatedBy]->(o2)
+SET r69.text = 'Khi đó các bác sĩ sẽ ấn tim, xoa bóp tim ngoài lồng ngực giúp tim đẩy máu nhanh hơn, cung cấp oxy nuôi các cơ quan quan trọng như não, tim, thận, phổi, gan,&#8230; Bên cạnh đó, thai phụ được bổ sung thuốc duy trì và nâng đỡ tình trạng tim mạch, truyền máu cùng nhiều biện pháp khác nhằm nhanh chóng đưa thai nhi ra khỏi cơ thể mẹ.'
+
+MERGE (o1:treatment {id: 'xoa_bóp_tim_ngoài_lồng_ngực_treatment'})
+MERGE (o2:disease {id: 'thuyên_tắc_mạch_ối_disease'})
+MERGE (o1)-[r70:treatedBy]->(o2)
+SET r70.text = 'Khi đó các bác sĩ sẽ ấn tim, xoa bóp tim ngoài lồng ngực giúp tim đẩy máu nhanh hơn, cung cấp oxy nuôi các cơ quan quan trọng như não, tim, thận, phổi, gan,&#8230; Bên cạnh đó, thai phụ được bổ sung thuốc duy trì và nâng đỡ tình trạng tim mạch, truyền máu cùng nhiều biện pháp khác nhằm nhanh chóng đưa thai nhi ra khỏi cơ thể mẹ.'
+
+MERGE (o1:treatment {id: 'thuốc_duy_trì_và_nâng_đỡ_tình_trạng_tim_mạch_treatment'})
+MERGE (o2:disease {id: 'thuyên_tắc_mạch_ối_disease'})
+MERGE (o1)-[r71:treatedBy]->(o2)
+SET r71.text = 'Khi đó các bác sĩ sẽ ấn tim, xoa bóp tim ngoài lồng ngực giúp tim đẩy máu nhanh hơn, cung cấp oxy nuôi các cơ quan quan trọng như não, tim, thận, phổi, gan,&#8230; Bên cạnh đó, thai phụ được bổ sung thuốc duy trì và nâng đỡ tình trạng tim mạch, truyền máu cùng nhiều biện pháp khác nhằm nhanh chóng đưa thai nhi ra khỏi cơ thể mẹ.'
+
+MERGE (o1:treatment {id: 'truyền_máu_treatment'})
+MERGE (o2:disease {id: 'thuyên_tắc_mạch_ối_disease'})
+MERGE (o1)-[r72:treatedBy]->(o2)
+SET r72.text = 'Khi đó các bác sĩ sẽ ấn tim, xoa bóp tim ngoài lồng ngực giúp tim đẩy máu nhanh hơn, cung cấp oxy nuôi các cơ quan quan trọng như não, tim, thận, phổi, gan,&#8230; Bên cạnh đó, thai phụ được bổ sung thuốc duy trì và nâng đỡ tình trạng tim mạch, truyền máu cùng nhiều biện pháp khác nhằm nhanh chóng đưa thai nhi ra khỏi cơ thể mẹ.'
+
+MERGE (o1:symptom {id: 'chảy_máu_symptom'})
+MERGE (o2:disease {id: 'thuyên_tắc_mạch_ối_disease'})
+MERGE (o1)-[r73:isSymptomOf]->(o2)
+SET r73.text = 'Khoảng 40% thai phụ khi vượt qua các triệu chứng ban đầu thì lại bắt đầu có dấu hiệu chảy máu ở nhiều nơi, đờ tử cung và đông máu rải rác trong lòng mạch.'
+
+MERGE (o1:symptom {id: 'đờ_tử_cung_symptom'})
+MERGE (o2:disease {id: 'thuyên_tắc_mạch_ối_disease'})
+MERGE (o1)-[r74:isSymptomOf]->(o2)
+SET r74.text = 'Khoảng 40% thai phụ khi vượt qua các triệu chứng ban đầu thì lại bắt đầu có dấu hiệu chảy máu ở nhiều nơi, đờ tử cung và đông máu rải rác trong lòng mạch.'
+
+MERGE (o1:symptom {id: 'đông_máu_rải_rác_trong_lòng_mạch_symptom'})
+MERGE (o2:disease {id: 'thuyên_tắc_mạch_ối_disease'})
+MERGE (o1)-[r75:isSymptomOf]->(o2)
+SET r75.text = 'Khoảng 40% thai phụ khi vượt qua các triệu chứng ban đầu thì lại bắt đầu có dấu hiệu chảy máu ở nhiều nơi, đờ tử cung và đông máu rải rác trong lòng mạch.'
+
+MERGE (o1:symptom {id: 'tim_ngừng_đập_symptom'})
+MERGE (o2:disease {id: 'thuyên_tắc_mạch_ối_disease'})
+MERGE (o1)-[r76:isSymptomOf]->(o2)
+SET r76.text = 'Thậm chí, có những thai phụ có biểu hiện tim ngừng đập, ngừng thở trong vài phút đầu tiên và tử vong trong vòng 2 - 3 giờ sau đó.'
+
+MERGE (o1:symptom {id: 'ngừng_thở_symptom'})
+MERGE (o2:disease {id: 'thuyên_tắc_mạch_ối_disease'})
+MERGE (o1)-[r77:isSymptomOf]->(o2)
+SET r77.text = 'Thậm chí, có những thai phụ có biểu hiện tim ngừng đập, ngừng thở trong vài phút đầu tiên và tử vong trong vòng 2 - 3 giờ sau đó.'
+
+MERGE (o1:symptom {id: 'tử_vong_symptom'})
+MERGE (o2:disease {id: 'thuyên_tắc_mạch_ối_disease'})
+MERGE (o1)-[r78:isSymptomOf]->(o2)
+SET r78.text = 'Thậm chí, có những thai phụ có biểu hiện tim ngừng đập, ngừng thở trong vài phút đầu tiên và tử vong trong vòng 2 - 3 giờ sau đó.'
+
+MERGE (o1:disease {id: 'thuyên_tắc_ối_disease'})
+MERGE (o2:cause {id: 'nước_ối_chảy_vào_tĩnh_mạch__vào_tim__phổi_rồi_lên_não_gây_suy_hô_hấp_cấp_cause'})
+MERGE (o1)-[r79:causedBy]->(o2)
+SET r79.text = 'Theo PGS.TS.BS Lưu Thị Hồng, “Bệnh thuyên tắc ối là một trong những tai biến sản khoa hiếm gặp nhưng vô cùng nguy hiểm do nước ối chảy vào tĩnh mạch, vào tim, phổi rồi lên não gây suy hô hấp cấp.'
+
+MERGE (o1:symptom {id: 'tím_tái_đột_ngột_symptom'})
+MERGE (o2:disease {id: 'thuyên_tắc_ối_disease'})
+MERGE (o1)-[r80:isSymptomOf]->(o2)
+SET r80.text = 'Theo PGS.TS.BS Lưu Thị Hồng, “Bệnh thuyên tắc ối là một trong những tai biến sản khoa hiếm gặp nhưng vô cùng nguy hiểm do nước ối chảy vào tĩnh mạch, vào tim, phổi rồi lên não gây suy hô hấp cấp. Thai phụ sẽ chuyển tím tái đột ngột, trụy tim mạch, rối loạn đông máu,&#8230; Đặc biệt, tình trạng sẽ càng trở nên nguy hiểm hơn ở những thai phụ mắc bệnh đái tháo đường.'
+
+MERGE (o1:symptom {id: 'trụy_tim_mạch_symptom'})
+MERGE (o2:disease {id: 'thuyên_tắc_ối_disease'})
+MERGE (o1)-[r81:isSymptomOf]->(o2)
+SET r81.text = 'Theo PGS.TS.BS Lưu Thị Hồng, “Bệnh thuyên tắc ối là một trong những tai biến sản khoa hiếm gặp nhưng vô cùng nguy hiểm do nước ối chảy vào tĩnh mạch, vào tim, phổi rồi lên não gây suy hô hấp cấp. Thai phụ sẽ chuyển tím tái đột ngột, trụy tim mạch, rối loạn đông máu,&#8230; Đặc biệt, tình trạng sẽ càng trở nên nguy hiểm hơn ở những thai phụ mắc bệnh đái tháo đường.'
+
+MERGE (o1:symptom {id: 'rối_loạn_đông_máu_symptom'})
+MERGE (o2:disease {id: 'thuyên_tắc_ối_disease'})
+MERGE (o1)-[r82:isSymptomOf]->(o2)
+SET r82.text = 'Theo PGS.TS.BS Lưu Thị Hồng, “Bệnh thuyên tắc ối là một trong những tai biến sản khoa hiếm gặp nhưng vô cùng nguy hiểm do nước ối chảy vào tĩnh mạch, vào tim, phổi rồi lên não gây suy hô hấp cấp. Thai phụ sẽ chuyển tím tái đột ngột, trụy tim mạch, rối loạn đông máu,&#8230; Đặc biệt, tình trạng sẽ càng trở nên nguy hiểm hơn ở những thai phụ mắc bệnh đái tháo đường.'
+
+MERGE (o1:disease {id: 'thuyên_tắc_ối_disease'})
+MERGE (o2:disease {id: 'bệnh_đái_tháo_đường_disease'})
+MERGE (o1)-[r83:aggravatedBy]->(o2)
+SET r83.text = 'Tình trạng thuyên tắc ối sẽ nguy hiểm hơn nếu thai phụ mắc bệnh đái tháo đường PGS.TS.BS Lưu Thị Hồng chia sẻ thêm, khi thai phụ mắc chứng tắc mạch ối không được nhận định đúng thời điểm, hoặc việc cấp cứu không thực hiện nhanh chóng, kịp thời có thể dẫn đến những hệ quả đáng tiếc, như:'
+
+MERGE (o1:symptom {id: 'tim_phổi_ngừng_hoạt_động_symptom'})
+MERGE (o2:disease {id: 'thuyên_tắc_mạch_ối_disease'})
+MERGE (o1)-[r84:isSymptomOf]->(o2)
+SET r84.text = 'Tình trạng thuyên tắc ối sẽ nguy hiểm hơn nếu thai phụ mắc bệnh đái tháo đường PGS.TS.BS Lưu Thị Hồng chia sẻ thêm, khi thai phụ mắc chứng tắc mạch ối không được nhận định đúng thời điểm, hoặc việc cấp cứu không thực hiện nhanh chóng, kịp thời có thể dẫn đến những hệ quả đáng tiếc, như: Tim phổi ngừng hoạt động, kèm theo đó là rối loạn đông máu hoặc mất máu ồ ạt dẫn đến thai phụ bị thiếu oxy toàn thân, đặc biệt nguy hiểm khi thiếu oxy lên não.'
+
+MERGE (o1:symptom {id: 'rối_loạn_đông_máu_symptom'})
+MERGE (o2:disease {id: 'thuyên_tắc_mạch_ối_disease'})
+MERGE (o1)-[r85:isSymptomOf]->(o2)
+SET r85.text = 'Tình trạng thuyên tắc ối sẽ nguy hiểm hơn nếu thai phụ mắc bệnh đái tháo đường PGS.TS.BS Lưu Thị Hồng chia sẻ thêm, khi thai phụ mắc chứng tắc mạch ối không được nhận định đúng thời điểm, hoặc việc cấp cứu không thực hiện nhanh chóng, kịp thời có thể dẫn đến những hệ quả đáng tiếc, như: Tim phổi ngừng hoạt động, kèm theo đó là rối loạn đông máu hoặc mất máu ồ ạt dẫn đến thai phụ bị thiếu oxy toàn thân, đặc biệt nguy hiểm khi thiếu oxy lên não.'
+
+MERGE (o1:symptom {id: 'mất_máu_ồ_ạt_symptom'})
+MERGE (o2:disease {id: 'thuyên_tắc_mạch_ối_disease'})
+MERGE (o1)-[r86:isSymptomOf]->(o2)
+SET r86.text = 'Tình trạng thuyên tắc ối sẽ nguy hiểm hơn nếu thai phụ mắc bệnh đái tháo đường PGS.TS.BS Lưu Thị Hồng chia sẻ thêm, khi thai phụ mắc chứng tắc mạch ối không được nhận định đúng thời điểm, hoặc việc cấp cứu không thực hiện nhanh chóng, kịp thời có thể dẫn đến những hệ quả đáng tiếc, như: Tim phổi ngừng hoạt động, kèm theo đó là rối loạn đông máu hoặc mất máu ồ ạt dẫn đến thai phụ bị thiếu oxy toàn thân, đặc biệt nguy hiểm khi thiếu oxy lên não.'
+
+MERGE (o1:symptom {id: 'thiếu_oxy_toàn_thân_symptom'})
+MERGE (o2:disease {id: 'thuyên_tắc_mạch_ối_disease'})
+MERGE (o1)-[r87:isSymptomOf]->(o2)
+SET r87.text = 'Tình trạng thuyên tắc ối sẽ nguy hiểm hơn nếu thai phụ mắc bệnh đái tháo đường PGS.TS.BS Lưu Thị Hồng chia sẻ thêm, khi thai phụ mắc chứng tắc mạch ối không được nhận định đúng thời điểm, hoặc việc cấp cứu không thực hiện nhanh chóng, kịp thời có thể dẫn đến những hệ quả đáng tiếc, như: Tim phổi ngừng hoạt động, kèm theo đó là rối loạn đông máu hoặc mất máu ồ ạt dẫn đến thai phụ bị thiếu oxy toàn thân, đặc biệt nguy hiểm khi thiếu oxy lên não.'
+
+MERGE (o1:symptom {id: 'thiếu_oxy_lên_não_symptom'})
+MERGE (o2:disease {id: 'thuyên_tắc_mạch_ối_disease'})
+MERGE (o1)-[r88:isSymptomOf]->(o2)
+SET r88.text = 'Tình trạng thuyên tắc ối sẽ nguy hiểm hơn nếu thai phụ mắc bệnh đái tháo đường PGS.TS.BS Lưu Thị Hồng chia sẻ thêm, khi thai phụ mắc chứng tắc mạch ối không được nhận định đúng thời điểm, hoặc việc cấp cứu không thực hiện nhanh chóng, kịp thời có thể dẫn đến những hệ quả đáng tiếc, như: Tim phổi ngừng hoạt động, kèm theo đó là rối loạn đông máu hoặc mất máu ồ ạt dẫn đến thai phụ bị thiếu oxy toàn thân, đặc biệt nguy hiểm khi thiếu oxy lên não.'
+
+MERGE (o1:symptom {id: 'sốc_giảm_thể_tích_tuần_hoàn_symptom'})
+MERGE (o2:disease {id: 'thuyên_tắc_mạch_ối_disease'})
+MERGE (o1)-[r89:isSymptomOf]->(o2)
+SET r89.text = 'Tình trạng thuyên tắc ối sẽ nguy hiểm hơn nếu thai phụ mắc bệnh đái tháo đường PGS.TS.BS Lưu Thị Hồng chia sẻ thêm, khi thai phụ mắc chứng tắc mạch ối không được nhận định đúng thời điểm, hoặc việc cấp cứu không thực hiện nhanh chóng, kịp thời có thể dẫn đến những hệ quả đáng tiếc, như: Sốc giảm thể tích tuần hoàn, suy gan, suy thận,&#8230; do rối loạn đông máu, mất máu quá nhiều mà không được bù máu kịp thời.'
+
+MERGE (o1:symptom {id: 'suy_gan_symptom'})
+MERGE (o2:disease {id: 'thuyên_tắc_mạch_ối_disease'})
+MERGE (o1)-[r90:isSymptomOf]->(o2)
+SET r90.text = 'Tình trạng thuyên tắc ối sẽ nguy hiểm hơn nếu thai phụ mắc bệnh đái tháo đường PGS.TS.BS Lưu Thị Hồng chia sẻ thêm, khi thai phụ mắc chứng tắc mạch ối không được nhận định đúng thời điểm, hoặc việc cấp cứu không thực hiện nhanh chóng, kịp thời có thể dẫn đến những hệ quả đáng tiếc, như: Sốc giảm thể tích tuần hoàn, suy gan, suy thận,&#8230; do rối loạn đông máu, mất máu quá nhiều mà không được bù máu kịp thời.'
+
+MERGE (o1:symptom {id: 'suy_thận_symptom'})
+MERGE (o2:disease {id: 'thuyên_tắc_mạch_ối_disease'})
+MERGE (o1)-[r91:isSymptomOf]->(o2)
+SET r91.text = 'Tình trạng thuyên tắc ối sẽ nguy hiểm hơn nếu thai phụ mắc bệnh đái tháo đường PGS.TS.BS Lưu Thị Hồng chia sẻ thêm, khi thai phụ mắc chứng tắc mạch ối không được nhận định đúng thời điểm, hoặc việc cấp cứu không thực hiện nhanh chóng, kịp thời có thể dẫn đến những hệ quả đáng tiếc, như: Sốc giảm thể tích tuần hoàn, suy gan, suy thận,&#8230; do rối loạn đông máu, mất máu quá nhiều mà không được bù máu kịp thời.'
+
+MERGE (o1:treatment {id: 'lọc_thận_treatment'})
+MERGE (o2:disease {id: 'thuyên_tắc_mạch_ối_disease'})
+MERGE (o1)-[r92:treatedBy]->(o2)
+SET r92.text = 'Tình trạng thuyên tắc ối sẽ nguy hiểm hơn nếu thai phụ mắc bệnh đái tháo đường PGS.TS.BS Lưu Thị Hồng chia sẻ thêm, khi thai phụ mắc chứng tắc mạch ối không được nhận định đúng thời điểm, hoặc việc cấp cứu không thực hiện nhanh chóng, kịp thời có thể dẫn đến những hệ quả đáng tiếc, như: Sốc giảm thể tích tuần hoàn, suy gan, suy thận,&#8230; do rối loạn đông máu, mất máu quá nhiều mà không được bù máu kịp thời. Thai phụ sẽ phải lọc thận, lọc máu và chạy tuần hoàn ngoài cơ thể.'
+
+MERGE (o1:treatment {id: 'lọc_máu_treatment'})
+MERGE (o2:disease {id: 'thuyên_tắc_mạch_ối_disease'})
+MERGE (o1)-[r93:treatedBy]->(o2)
+SET r93.text = 'Tình trạng thuyên tắc ối sẽ nguy hiểm hơn nếu thai phụ mắc bệnh đái tháo đường PGS.TS.BS Lưu Thị Hồng chia sẻ thêm, khi thai phụ mắc chứng tắc mạch ối không được nhận định đúng thời điểm, hoặc việc cấp cứu không thực hiện nhanh chóng, kịp thời có thể dẫn đến những hệ quả đáng tiếc, như: Sốc giảm thể tích tuần hoàn, suy gan, suy thận,&#8230; do rối loạn đông máu, mất máu quá nhiều mà không được bù máu kịp thời. Thai phụ sẽ phải lọc thận, lọc máu và chạy tuần hoàn ngoài cơ thể.'
+
+MERGE (o1:treatment {id: 'chạy_tuần_hoàn_ngoài_cơ_thể_treatment'})
+MERGE (o2:disease {id: 'thuyên_tắc_mạch_ối_disease'})
+MERGE (o1)-[r94:treatedBy]->(o2)
+SET r94.text = 'Tình trạng thuyên tắc ối sẽ nguy hiểm hơn nếu thai phụ mắc bệnh đái tháo đường PGS.TS.BS Lưu Thị Hồng chia sẻ thêm, khi thai phụ mắc chứng tắc mạch ối không được nhận định đúng thời điểm, hoặc việc cấp cứu không thực hiện nhanh chóng, kịp thời có thể dẫn đến những hệ quả đáng tiếc, như: Sốc giảm thể tích tuần hoàn, suy gan, suy thận,&#8230; do rối loạn đông máu, mất máu quá nhiều mà không được bù máu kịp thời. Thai phụ sẽ phải lọc thận, lọc máu và chạy tuần hoàn ngoài cơ thể.'
+
+MERGE (o1:symptom {id: 'trụy_tim_mạch_symptom'})
+MERGE (o2:disease {id: 'thuyên_tắc_mạch_ối_disease'})
+MERGE (o1)-[r95:isSymptomOf]->(o2)
+SET r95.text = 'Tình trạng thuyên tắc ối sẽ nguy hiểm hơn nếu thai phụ mắc bệnh đái tháo đường PGS.TS.BS Lưu Thị Hồng chia sẻ thêm, khi thai phụ mắc chứng tắc mạch ối không được nhận định đúng thời điểm, hoặc việc cấp cứu không thực hiện nhanh chóng, kịp thời có thể dẫn đến những hệ quả đáng tiếc, như: Trụy tim mạch, dẫn đến tình trạng phù phổi cấp do truyền bù máu và dịch với khối lượng lớn để duy trì thể tích tuần hoàn, bảo vệ các cơ quan trong cơ thể.'
+
+MERGE (o1:symptom {id: 'phù_phổi_cấp_symptom'})
+MERGE (o2:disease {id: 'thuyên_tắc_mạch_ối_disease'})
+MERGE (o1)-[r96:isSymptomOf]->(o2)
+SET r96.text = 'Tình trạng thuyên tắc ối sẽ nguy hiểm hơn nếu thai phụ mắc bệnh đái tháo đường PGS.TS.BS Lưu Thị Hồng chia sẻ thêm, khi thai phụ mắc chứng tắc mạch ối không được nhận định đúng thời điểm, hoặc việc cấp cứu không thực hiện nhanh chóng, kịp thời có thể dẫn đến những hệ quả đáng tiếc, như: Trụy tim mạch, dẫn đến tình trạng phù phổi cấp do truyền bù máu và dịch với khối lượng lớn để duy trì thể tích tuần hoàn, bảo vệ các cơ quan trong cơ thể.'
+
+MERGE (o1:treatment {id: 'truyền_bù_máu_treatment'})
+MERGE (o2:disease {id: 'thuyên_tắc_mạch_ối_disease'})
+MERGE (o1)-[r97:treatedBy]->(o2)
+SET r97.text = 'Tình trạng thuyên tắc ối sẽ nguy hiểm hơn nếu thai phụ mắc bệnh đái tháo đường PGS.TS.BS Lưu Thị Hồng chia sẻ thêm, khi thai phụ mắc chứng tắc mạch ối không được nhận định đúng thời điểm, hoặc việc cấp cứu không thực hiện nhanh chóng, kịp thời có thể dẫn đến những hệ quả đáng tiếc, như: Trụy tim mạch, dẫn đến tình trạng phù phổi cấp do truyền bù máu và dịch với khối lượng lớn để duy trì thể tích tuần hoàn, bảo vệ các cơ quan trong cơ thể.'
+
+MERGE (o1:treatment {id: 'truyền_dịch_treatment'})
+MERGE (o2:disease {id: 'thuyên_tắc_mạch_ối_disease'})
+MERGE (o1)-[r98:treatedBy]->(o2)
+SET r98.text = 'Tình trạng thuyên tắc ối sẽ nguy hiểm hơn nếu thai phụ mắc bệnh đái tháo đường PGS.TS.BS Lưu Thị Hồng chia sẻ thêm, khi thai phụ mắc chứng tắc mạch ối không được nhận định đúng thời điểm, hoặc việc cấp cứu không thực hiện nhanh chóng, kịp thời có thể dẫn đến những hệ quả đáng tiếc, như: Trụy tim mạch, dẫn đến tình trạng phù phổi cấp do truyền bù máu và dịch với khối lượng lớn để duy trì thể tích tuần hoàn, bảo vệ các cơ quan trong cơ thể.'
+
+MERGE (o1:disease {id: 'thuyên_tắc_ối_khi_sinh_disease'})
+MERGE (o2:symptom {id: 'tử_vong_symptom'})
+MERGE (o1)-[r99:relatedTo]->(o2)
+SET r99.text = 'Mặc dù thuyên tắc ối khi sinh là tai biến sản khoa nguy hiểm, tỷ lệ tử vong cao nhưng nếu được chẩn đoán và cấp cứu kịp thời, cả thai phụ và thai nhi có thể vượt qua “cửa tử”.'
+
+MERGE (o1:treatment {id: 'đặt_catheter_treatment'})
+MERGE (o2:disease {id: 'thuyên_tắc_mạch_ối_disease'})
+MERGE (o1)-[r100:treatedBy]->(o2)
+SET r100.text = 'Các phương pháp điều trị bệnh khẩn cấp gồm: Đặt catheter: Đặt ống catheter vào một trong các động mạch để theo dõi huyết áp thai phụ.'
+
+MERGE (o1:treatment {id: 'đặt_ống_vào_tĩnh_mạch_ở_ngực_treatment'})
+MERGE (o2:disease {id: 'thuyên_tắc_mạch_ối_disease'})
+MERGE (o1)-[r101:treatedBy]->(o2)
+SET r101.text = 'Các phương pháp điều trị bệnh khẩn cấp gồm: Đặt catheter: Đặt ống catheter vào một trong các động mạch để theo dõi huyết áp thai phụ. Đồng thời, đặt ống vào tĩnh mạch ở ngực, cung cấp dịch truyền, máu hoặc thuốc cần thiết cho thai phụ.'
+
+MERGE (o1:treatment {id: 'cung_cấp_dịch_truyền_treatment'})
+MERGE (o2:disease {id: 'thuyên_tắc_mạch_ối_disease'})
+MERGE (o1)-[r102:treatedBy]->(o2)
+SET r102.text = 'Các phương pháp điều trị bệnh khẩn cấp gồm: Đặt catheter: Đặt ống catheter vào một trong các động mạch để theo dõi huyết áp thai phụ. Đồng thời, đặt ống vào tĩnh mạch ở ngực, cung cấp dịch truyền, máu hoặc thuốc cần thiết cho thai phụ.'
+
+MERGE (o1:treatment {id: 'truyền_máu_treatment'})
+MERGE (o2:disease {id: 'thuyên_tắc_mạch_ối_disease'})
+MERGE (o1)-[r103:treatedBy]->(o2)
+SET r103.text = 'Các phương pháp điều trị bệnh khẩn cấp gồm: Đặt catheter: Đặt ống catheter vào một trong các động mạch để theo dõi huyết áp thai phụ. Đồng thời, đặt ống vào tĩnh mạch ở ngực, cung cấp dịch truyền, máu hoặc thuốc cần thiết cho thai phụ.'
+
+MERGE (o1:treatment {id: 'thuốc_treatment'})
+MERGE (o2:disease {id: 'thuyên_tắc_mạch_ối_disease'})
+MERGE (o1)-[r104:treatedBy]->(o2)
+SET r104.text = 'Các phương pháp điều trị bệnh khẩn cấp gồm: Đặt catheter: Đặt ống catheter vào một trong các động mạch để theo dõi huyết áp thai phụ. Đồng thời, đặt ống vào tĩnh mạch ở ngực, cung cấp dịch truyền, máu hoặc thuốc cần thiết cho thai phụ.'
+
+MERGE (o1:treatment {id: 'cung_cấp_oxy_treatment'})
+MERGE (o2:disease {id: 'thuyên_tắc_mạch_ối_disease'})
+MERGE (o1)-[r105:treatedBy]->(o2)
+SET r105.text = 'Các phương pháp điều trị bệnh khẩn cấp gồm: Cung cấp oxy: Đặt ống thở vào khí quản, cung cấp oxy giúp thai phụ thở dễ dàng hơn.'
+
+MERGE (o1:treatment {id: 'đặt_ống_thở_vào_khí_quản_treatment'})
+MERGE (o2:disease {id: 'thuyên_tắc_mạch_ối_disease'})
+MERGE (o1)-[r106:treatedBy]->(o2)
+SET r106.text = 'Các phương pháp điều trị bệnh khẩn cấp gồm: Cung cấp oxy: Đặt ống thở vào khí quản, cung cấp oxy giúp thai phụ thở dễ dàng hơn.'
+
+MERGE (o1:treatment {id: 'truyền_máu_treatment'})
+MERGE (o2:disease {id: 'thuyên_tắc_mạch_ối_disease'})
+MERGE (o1)-[r107:treatedBy]->(o2)
+SET r107.text = 'Các phương pháp điều trị bệnh khẩn cấp gồm: Truyền máu: Nếu thai phụ mất nhiều máu, thai phụ cần được truyền máu và dịch thay thế.'
+
+MERGE (o1:treatment {id: 'truyền_dịch_treatment'})
+MERGE (o2:disease {id: 'thuyên_tắc_mạch_ối_disease'})
+MERGE (o1)-[r108:treatedBy]->(o2)
+SET r108.text = 'Các phương pháp điều trị bệnh khẩn cấp gồm: Truyền máu: Nếu thai phụ mất nhiều máu, thai phụ cần được truyền máu và dịch thay thế.'
+
+MERGE (o1:treatment {id: 'thuốc_treatment'})
+MERGE (o2:disease {id: 'thuyên_tắc_mạch_ối_disease'})
+MERGE (o1)-[r109:treatedBy]->(o2)
+SET r109.text = 'Các phương pháp điều trị bệnh khẩn cấp gồm: Sử dụng thuốc: Thai phụ có thể được chỉ định dùng các loại thuốc để cải thiện và hỗ trợ chức năng tim.'
+
+MERGE (o1:test {id: 'chẩn_đoán_test'})
+MERGE (o2:disease {id: 'thuyên_tắc_mạch_ối_disease'})
+MERGE (o1)-[r110:diagnosedBy]->(o2)
+SET r110.text = 'Thai phụ cần được chẩn đoán và cấp cứu kịp thời để tránh những biến chứng nguy hiểm'

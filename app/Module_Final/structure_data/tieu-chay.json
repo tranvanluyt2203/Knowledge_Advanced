@@ -1,0 +1,1482 @@
+[
+    {
+        "text": "Tiêu chảy là tình trạng rối loạn tiêu hóa thường gặp ở hầu hết các đối tượng, đặc biệt là trẻ em.",
+        "head": "Tiêu chảy",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Rối loạn tiêu hóa",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bệnh xuất phát từ nhiều nhóm nguyên nhân khác nhau, nếu không được khắc phục sớm sẽ dẫn đến các biến chứng nguy hiểm, đe dọa trực tiếp đến sức khỏe.",
+        "head": "Tiêu chảy",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Nhiều nhóm nguyên nhân khác nhau",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Bệnh xuất phát từ nhiều nhóm nguyên nhân khác nhau, nếu không được khắc phục sớm sẽ dẫn đến các biến chứng nguy hiểm, đe dọa trực tiếp đến sức khỏe.",
+        "head": "Tiêu chảy",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Sức khỏe",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Vậy nên, bên cạnh việc phòng ngừa, quá trình theo dõi, phát hiện để điều trị kịp thời là thực sự cần thiết.",
+        "head": "Tiêu chảy",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "Theo dõi, phát hiện để điều trị kịp thời",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Tiêu chảy (ỉa chảy)là một trong những bệnh lý tiêu hóa phổ biến nhất, xuất hiện ở cả người lớn và trẻ em.",
+        "head": "Tiêu chảy",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Bệnh lý tiêu hóa",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tình trạng được nhận biết dễ dàng bởi dấu hiệu đi ngoài nhiều lần, phân lỏng kèm nước bất thường.",
+        "head": "Đi ngoài nhiều lần, phân lỏng kèm nước bất thường",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Tiêu chảy",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tuy nhiên, người bệnh cần phân biệt rõ với hiện tượng đại tiện nhiều nhưng phân đặc hoặc phân lỏng, dính ở em bé bú mẹ.",
+        "head": "Đại tiện nhiều nhưng phân đặc hoặc phân lỏng, dính",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Tiêu chảy",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Cả hai trường hợp này đều không phải là tiêu chảy.",
+        "head": "Đại tiện nhiều nhưng phân đặc hoặc phân lỏng, dính",
+        "head_type": "symptom",
+        "relation": "relatedTo",
+        "tail": "Tiêu chảy",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Thông thường, tình trạng có thể phát triển từ nhẹ đến nghiêm trọng và đe dọa đến tính mạng nếu không được kiểm soát kịp thời.",
+        "head": "Tiêu chảy",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Tính mạng",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Vì vậy, ngay khi nhận biết dấu hiệu rối loạn, người bệnh nên chủ động thăm khám để điều trị sớm, tránh ảnh hưởng tiêu cực đến sức khỏe.",
+        "head": "Tiêu chảy",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "Thăm khám để điều trị sớm",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Dựa trên các yếu tố về cơ chế, thời gian mắc bệnh, mức độ nghiêm trọng cũng như đặc điểm phân (nhiều nước, sủi bọt, có chất béo, nhầy máu,&#8230;), tiêu chảy có thể được phân loại khác nhau, dựa theo thời gian thì có tiêu chảy cấp và mạn, ,dựa theo cơ chế bệnh học thì có tiêu chảy thẩm thấu và tiêu chảy xuất tiết, dựa vào nguyên nhân thì có tiêu chảy nhiễm trùng hoặc tiêu chảy không nhiễm trùng…",
+        "head": "Tiêu chảy",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "Cơ chế, thời gian mắc bệnh, mức độ nghiêm trọng, đặc điểm phân",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Dựa trên các yếu tố về cơ chế, thời gian mắc bệnh, mức độ nghiêm trọng cũng như đặc điểm phân (nhiều nước, sủi bọt, có chất béo, nhầy máu,&#8230;), tiêu chảy có thể được phân loại khác nhau, dựa theo thời gian thì có tiêu chảy cấp và mạn, ,dựa theo cơ chế bệnh học thì có tiêu chảy thẩm thấu và tiêu chảy xuất tiết, dựa vào nguyên nhân thì có tiêu chảy nhiễm trùng hoặc tiêu chảy không nhiễm trùng…",
+        "head": "Tiêu chảy",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "Tiêu chảy cấp và mạn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Dựa trên các yếu tố về cơ chế, thời gian mắc bệnh, mức độ nghiêm trọng cũng như đặc điểm phân (nhiều nước, sủi bọt, có chất béo, nhầy máu,&#8230;), tiêu chảy có thể được phân loại khác nhau, dựa theo thời gian thì có tiêu chảy cấp và mạn, ,dựa theo cơ chế bệnh học thì có tiêu chảy thẩm thấu và tiêu chảy xuất tiết, dựa vào nguyên nhân thì có tiêu chảy nhiễm trùng hoặc tiêu chảy không nhiễm trùng…",
+        "head": "Tiêu chảy",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "Tiêu chảy thẩm thấu và tiêu chảy xuất tiết",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Dựa trên các yếu tố về cơ chế, thời gian mắc bệnh, mức độ nghiêm trọng cũng như đặc điểm phân (nhiều nước, sủi bọt, có chất béo, nhầy máu,&#8230;), tiêu chảy có thể được phân loại khác nhau, dựa theo thời gian thì có tiêu chảy cấp và mạn, ,dựa theo cơ chế bệnh học thì có tiêu chảy thẩm thấu và tiêu chảy xuất tiết, dựa vào nguyên nhân thì có tiêu chảy nhiễm trùng hoặc tiêu chảy không nhiễm trùng…",
+        "head": "Tiêu chảy",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "Tiêu chảy nhiễm trùng hoặc tiêu chảy không nhiễm trùng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tình trạng này thường gặp ở trẻ em trong độ tuổi mầm non và những năm đầu tiểu học.",
+        "head": "Tiêu chảy",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Trẻ em trong độ tuổi mầm non và những năm đầu tiểu học",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Bệnh xuất hiện đột ngột, kéo dài khoảng một tuần với triệu chứng đi ngoài phân lỏng nhiều nước, số lần đại tiện nhiều hơn 3 lần/ngày.",
+        "head": "Tiêu chảy",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Đi ngoài phân lỏng nhiều nước, số lần đại tiện nhiều hơn 3 lần/ngày",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Tiêu chảy cấp tính xuất hiện do cơ thể tiêu thụ thức ăn không phù hợp hoặc nhiễm khuẩn thực phẩm.",
+        "head": "Tiêu chảy cấp tính",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Tiêu thụ thức ăn không phù hợp hoặc nhiễm khuẩn thực phẩm",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Trong đó, Rotavirus là tác nhân chính khiến tình trạng trở nặng và có nguy cơ đe dọa đến tính mạng của trẻ.(4)",
+        "head": "Rotavirus",
+        "head_type": "cause",
+        "relation": "causes",
+        "tail": "Tiêu chảy cấp tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Trong đó, Rotavirus là tác nhân chính khiến tình trạng trở nặng và có nguy cơ đe dọa đến tính mạng của trẻ.(4)",
+        "head": "Tiêu chảy cấp tính",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Tính mạng của trẻ",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Ở cấp độ mãn tính, bệnh kéo dài hơn 2 - 4 tuần.",
+        "head": "Tiêu chảy mãn tính",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Tiêu chảy",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Với cơ thể của một người khỏe mạnh, tình trạng này có thể gây bất tiện đối với sinh hoạt và trở thành vấn đề nghiêm trọng cho sức khỏe.",
+        "head": "Tiêu chảy mãn tính",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Sức khỏe",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Tuy nhiên, nếu hệ miễn dịch yếu hoặc suy giảm, tiêu chảy mãn tính sẽ trở thành nguy cơ đe dọa đến tính mạng người bệnh.",
+        "head": "Tiêu chảy mãn tính",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Hệ miễn dịch",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Tuy nhiên, nếu hệ miễn dịch yếu hoặc suy giảm, tiêu chảy mãn tính sẽ trở thành nguy cơ đe dọa đến tính mạng người bệnh.",
+        "head": "Tiêu chảy mãn tính",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Tính mạng người bệnh",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Đây là tình trạng xảy ra do giảm hấp thu chất điện giải, dịch và dinh dưỡng.",
+        "head": "Tiêu chảy thẩm thấu",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Giảm hấp thu chất điện giải, dịch và dinh dưỡng",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Ở mức độ từ nhẹ đến vừa, khối lượng phân sẽ dao động từ khoảng 250ml đến 1 lít/ngày.",
+        "head": "Tiêu chảy thẩm thấu",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Khối lượng phân dao động từ khoảng 250ml đến 1 lít/ngày",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Ngoài ra, việc không hấp thu một chất dinh dưỡng đơn thuần như Lactose thương dẫn đến triệu chứng trướng bụng hơn là ỉa chảy, ngoại trừ trường hợp nặng.",
+        "head": "Tiêu chảy thẩm thấu",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Trướng bụng",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Ngoài ra, việc không hấp thu một chất dinh dưỡng đơn thuần như Lactose thương dẫn đến triệu chứng trướng bụng hơn là ỉa chảy, ngoại trừ trường hợp nặng.",
+        "head": "Tiêu chảy thẩm thấu",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Không hấp thu Lactose",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Hiện tượng tiêu chảy thẩm thấu sẽ dừng lại khi người bệnh ngừng tiêu thụ những loại thực phẩm đó.",
+        "head": "Tiêu chảy thẩm thấu",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "Ngừng tiêu thụ những loại thực phẩm đó",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Đây là tình trạng rối loạn chuyển tải ion trong các tế bào biểu mô ruột, làm tăng bài tiết và giảm hấp thu hoặc cả hai trường hợp.",
+        "head": "Tiêu chảy xuất tiết",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Rối loạn chuyển tải ion trong các tế bào biểu mô ruột",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Theo Trung tâm kiểm soát và phòng ngừa dịch bệnh Hoa Kỳ, khoảng đến 88% các trường hợp tử vong liên quan đến tiêu chảy là do vệ sinh không đầy đủ, nguồn nước không an toàn, không đủ vệ sinh.",
+        "head": "Vệ sinh không đầy đủ, nguồn nước không an toàn, không đủ vệ sinh",
+        "head_type": "lifestyle",
+        "relation": "causedBy",
+        "tail": "Tiêu chảy",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Theo Trung tâm kiểm soát và phòng ngừa dịch bệnh Hoa Kỳ, khoảng đến 88% các trường hợp tử vong liên quan đến tiêu chảy là do vệ sinh không đầy đủ, nguồn nước không an toàn, không đủ vệ sinh.",
+        "head": "Tiêu chảy",
+        "head_type": "disease",
+        "relation": "associatedWith",
+        "tail": "Tử vong",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Trong đó, Rotavirus chính là tác nhân hàng đầu dẫn đến ỉa chảy cấp.",
+        "head": "Rotavirus",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Ỉa chảy cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Cụ thể, loại vi sinh vật này đã gây ra khoảng 40% trường hợp nhập viện ở đối tượng trẻ em dưới 5 tuổi.",
+        "head": "Rotavirus",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Nhập viện",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Cụ thể, loại vi sinh vật này đã gây ra khoảng 40% trường hợp nhập viện ở đối tượng trẻ em dưới 5 tuổi.",
+        "head": "Nhập viện",
+        "head_type": "symptom",
+        "relation": "associatedWith",
+        "tail": "Trẻ em dưới 5 tuổi",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Có thể chia ra 2 nhóm nguyên nhân: (1) Nhóm tiêu chảy do nhiễm vi sinh vật (hay còn gọi là nhiễm trùng, nhiễm vi rút, nhiễm ký sinh trùng); (2) Nhóm tiêu chảy KHÔNG do nhiễm trùng.",
+        "head": "Tiêu chảy",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Nhiễm vi sinh vật",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Có thể chia ra 2 nhóm nguyên nhân: (1) Nhóm tiêu chảy do nhiễm vi sinh vật (hay còn gọi là nhiễm trùng, nhiễm vi rút, nhiễm ký sinh trùng); (2) Nhóm tiêu chảy KHÔNG do nhiễm trùng.",
+        "head": "Tiêu chảy",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Nhiễm trùng",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Có thể chia ra 2 nhóm nguyên nhân: (1) Nhóm tiêu chảy do nhiễm vi sinh vật (hay còn gọi là nhiễm trùng, nhiễm vi rút, nhiễm ký sinh trùng); (2) Nhóm tiêu chảy KHÔNG do nhiễm trùng.",
+        "head": "Tiêu chảy",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Nhiễm vi rút",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Có thể chia ra 2 nhóm nguyên nhân: (1) Nhóm tiêu chảy do nhiễm vi sinh vật (hay còn gọi là nhiễm trùng, nhiễm vi rút, nhiễm ký sinh trùng); (2) Nhóm tiêu chảy KHÔNG do nhiễm trùng.",
+        "head": "Tiêu chảy",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Nhiễm ký sinh trùng",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Mầm bệnh từ bên ngoài đi vào cơ thể sẽ gây ra kích thích lên các mô trong đường tiêu hóa, dẫn đến viêm nhiễm.",
+        "head": "Mầm bệnh",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Viêm nhiễm",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Mầm bệnh từ bên ngoài đi vào cơ thể sẽ gây ra kích thích lên các mô trong đường tiêu hóa, dẫn đến viêm nhiễm.",
+        "head": "Viêm nhiễm",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Đường tiêu hóa",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Đây chính là nguyên nhân chính gây ra tình trạng ỉa chảy, thường gặp nhất là khi cơ thể tiêu thụ phải thực phẩm không đảm bảo vệ sinh.",
+        "head": "Viêm nhiễm",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Ỉa chảy",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Đây chính là nguyên nhân chính gây ra tình trạng ỉa chảy, thường gặp nhất là khi cơ thể tiêu thụ phải thực phẩm không đảm bảo vệ sinh.",
+        "head": "Thực phẩm không đảm bảo vệ sinh",
+        "head_type": "food",
+        "relation": "causedBy",
+        "tail": "Ỉa chảy",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Nguồn thức ăn chứa vi khuẩn Salmonella, Clostridium, khuẩn tụ cầu,… sẽ dẫn đến ngộ độc.",
+        "head": "Vi khuẩn Salmonella, Clostridium, khuẩn tụ cầu",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Ngộ độc",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nguồn thức ăn chứa vi khuẩn Salmonella, Clostridium, khuẩn tụ cầu,… sẽ dẫn đến ngộ độc.",
+        "head": "Ngộ độc",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Thức ăn",
+        "tail_type": "food"
+    },
+    {
+        "text": "Chưa kể, việc tiếp xúc với nguồn nước ô nhiễm, ăn rau sống, gỏi, đồ tái,&#8230; rau củ quả bị tưới bằng nước bẩn, phân tươi sẽ làm tăng nguy cơ lây truyền ký sinh trùng và vi khuẩn.",
+        "head": "Nước ô nhiễm",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Lây truyền ký sinh trùng và vi khuẩn",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Chưa kể, việc tiếp xúc với nguồn nước ô nhiễm, ăn rau sống, gỏi, đồ tái,&#8230; rau củ quả bị tưới bằng nước bẩn, phân tươi sẽ làm tăng nguy cơ lây truyền ký sinh trùng và vi khuẩn.",
+        "head": "Rau sống, gỏi, đồ tái",
+        "head_type": "food",
+        "relation": "causedBy",
+        "tail": "Lây truyền ký sinh trùng và vi khuẩn",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Chưa kể, việc tiếp xúc với nguồn nước ô nhiễm, ăn rau sống, gỏi, đồ tái,&#8230; rau củ quả bị tưới bằng nước bẩn, phân tươi sẽ làm tăng nguy cơ lây truyền ký sinh trùng và vi khuẩn.",
+        "head": "Rau củ quả bị tưới bằng nước bẩn",
+        "head_type": "food",
+        "relation": "causedBy",
+        "tail": "Lây truyền ký sinh trùng và vi khuẩn",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Chưa kể, việc tiếp xúc với nguồn nước ô nhiễm, ăn rau sống, gỏi, đồ tái,&#8230; rau củ quả bị tưới bằng nước bẩn, phân tươi sẽ làm tăng nguy cơ lây truyền ký sinh trùng và vi khuẩn.",
+        "head": "Phân tươi",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Lây truyền ký sinh trùng và vi khuẩn",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Điều kiện vệ sinh kém cũng là một trong những nguyên nhân hàng đầu làm tăng nguy cơ lây lan vi khuẩn gây tiêu chảy nhiễm trùng.",
+        "head": "Điều kiện vệ sinh kém",
+        "head_type": "lifestyle",
+        "relation": "causedBy",
+        "tail": "Tiêu chảy nhiễm trùng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Do đó, việc giữ gìn không gian sống, đồ dùng cá nhân, cơ thể, thức ăn,&#8230; sạch sẽ cũng là biện pháp cần thiết để tránh vi sinh vật gây hại xâm nhập vào đường tiêu hóa.",
+        "head": "Giữ gìn không gian sống, đồ dùng cá nhân, cơ thể, thức ăn,&#8230; sạch sẽ",
+        "head_type": "lifestyle",
+        "relation": "preventedBy",
+        "tail": "Vi sinh vật gây hại xâm nhập vào đường tiêu hóa",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Thói quen lạm dụng thuốc kháng sinh sẽ vô tình tiêu diệt các loại vi khuẩn có lợi, dẫn đến mất cân bằng hệ vi sinh đường ruột.",
+        "head": "Lạm dụng thuốc kháng sinh",
+        "head_type": "lifestyle",
+        "relation": "causedBy",
+        "tail": "Mất cân bằng hệ vi sinh đường ruột",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Từ đó khả năng hấp thu dinh dưỡng kém, nhu động ruột tăng, gây ra hiện tượng đi ngoài nhiều lần, phân sống, lỏng hoặc không thành khuôn.",
+        "head": "Mất cân bằng hệ vi sinh đường ruột",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Đi ngoài nhiều lần, phân sống, lỏng hoặc không thành khuôn",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Nhiều người thường gặp tình trạng cơ thể không có khả năng dung nạp các loại đường như: Lactose, Glucose-Galactose, Fructose,&#8230; từ sữa, chế phẩm từ sữa, mật ong, trái cây,&#8230;",
+        "head": "Không dung nạp đường",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Tiêu chảy kéo dài",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nhiều người thường gặp tình trạng cơ thể không có khả năng dung nạp các loại đường như: Lactose, Glucose-Galactose, Fructose,&#8230; từ sữa, chế phẩm từ sữa, mật ong, trái cây,&#8230;",
+        "head": "Sữa, chế phẩm từ sữa, mật ong, trái cây",
+        "head_type": "food",
+        "relation": "aggravatedBy",
+        "tail": "Tiêu chảy kéo dài",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Điều đó dẫn đến hiện tượng bị tiêu chảy kéo dài nếu ăn phải những thực phẩm này.",
+        "head": "Tiêu chảy kéo dài",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Ăn phải những thực phẩm này",
+        "tail_type": "food"
+    },
+    {
+        "text": "Ngoài ra, cơ thể bị thiếu men Sucrase-isomaltase, Lactase… cũng là nguyên nhân gây ra bệnh ỉa chảy thường gặp.",
+        "head": "Thiếu men Sucrase-isomaltase, Lactase",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Ỉa chảy",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đây là hậu quả do sử dụng thức ăn ôi thiu, nhiễm độc hoặc chứa phụ gia độc hại.",
+        "head": "Thức ăn ôi thiu, nhiễm độc hoặc chứa phụ gia độc hại",
+        "head_type": "food",
+        "relation": "causedBy",
+        "tail": "Ngộ độc thực phẩm",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ngộ độc thực phẩm có thể xuất hiện các triệu chứng rõ rệt như: đau bụng, đi ngoài dữ dội sau khi ăn, sốt cao, ỉa chảy, nôn mửa,&#8230;",
+        "head": "Ngộ độc thực phẩm",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Đau bụng, đi ngoài dữ dội sau khi ăn, sốt cao, ỉa chảy, nôn mửa",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Thậm chí, nhiều trường hợp còn gặp phải hiện tượng co giật dẫn đến tử vong nếu không được cấp cứu kịp thời.",
+        "head": "Co giật",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Ngộ độc thực phẩm",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Thậm chí, nhiều trường hợp còn gặp phải hiện tượng co giật dẫn đến tử vong nếu không được cấp cứu kịp thời.",
+        "head": "Tử vong",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Ngộ độc thực phẩm",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Hội chứng ruột kích thích xuất hiện do thay đổi thói quen ăn uống, sau khi dùng một số thuốc điều trị hoặc ăn đồ lạ.",
+        "head": "Hội chứng ruột kích thích",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Thay đổi thói quen ăn uống",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Hội chứng ruột kích thích xuất hiện do thay đổi thói quen ăn uống, sau khi dùng một số thuốc điều trị hoặc ăn đồ lạ.",
+        "head": "Hội chứng ruột kích thích",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Dùng thuốc điều trị",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Hội chứng ruột kích thích xuất hiện do thay đổi thói quen ăn uống, sau khi dùng một số thuốc điều trị hoặc ăn đồ lạ.",
+        "head": "Hội chứng ruột kích thích",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Ăn đồ lạ",
+        "tail_type": "food"
+    },
+    {
+        "text": "Nguyên nhân bởi nhu động ruột bị co thắt quá mức và kéo dài khiến thức ăn trong đường tiêu hóa di chuyển nhanh hơn.",
+        "head": "Nhu động ruột bị co thắt quá mức và kéo dài",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Hội chứng ruột kích thích",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Lúc này, nước sẽ không được tái hấp thu hoặc tiết ra quá mức từ niêm mạc ruột dẫn đến hiện tượng tiêu chảy đột ngột.",
+        "head": "Tiêu chảy đột ngột",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Hội chứng ruột kích thích",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bệnh nhân viêm đại tràng thường phải đối mặt với tình trạng rối loạn tiêu hóa, trong đó có ỉa chảy.",
+        "head": "Viêm đại tràng",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Ỉa chảy",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Bệnh xuất phát từ sự xâm nhập và gây hại của các tác nhân như: vi khuẩn (Shigella, Samonella,…), ký sinh trùng, nấm,&#8230;",
+        "head": "Viêm đại tràng",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Vi khuẩn (Shigella, Samonella,…), ký sinh trùng, nấm",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Ngoài ra, rối loạn thần kinh thực vật, ngộ độc hóa chất, tâm lý căng thẳng, áp lực,&#8230; cũng là những nhóm nguyên nhân quan trọng không thể bỏ qua.",
+        "head": "Rối loạn thần kinh thực vật, ngộ độc hóa chất, tâm lý căng thẳng, áp lực",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Viêm đại tràng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Triệu chứng phổ biến và dễ nhận biết nhất của bệnh tiêu chảy là đi ngoài nhiều lần (trên 3 lần mỗi ngày), phân lỏng và kèm nước.",
+        "head": "Tiêu chảy",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Đi ngoài nhiều lần (trên 3 lần mỗi ngày), phân lỏng và kèm nước",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Ngoài ra, tình trạng cũng xuất hiện với nhiều triệu chứng đi kèm khác, cụ thể như sau:  Đầy bụng, sôi bụng.",
+        "head": "Tiêu chảy",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Đầy bụng, sôi bụng",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Ngoài ra, tình trạng cũng xuất hiện với nhiều triệu chứng đi kèm khác, cụ thể như sau:  Ỉa chảy liên tục, nhiều lần, ban đầu phân lỏng sau toàn là nước.",
+        "head": "Tiêu chảy",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Ỉa chảy liên tục, nhiều lần, ban đầu phân lỏng sau toàn là nước",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Ngoài ra, tình trạng cũng xuất hiện với nhiều triệu chứng đi kèm khác, cụ thể như sau:  Nôn thức ăn, nước trong hoặc màu vàng nhạt.",
+        "head": "Tiêu chảy",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Nôn thức ăn, nước trong hoặc màu vàng nhạt",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Ngoài ra, tình trạng cũng xuất hiện với nhiều triệu chứng đi kèm khác, cụ thể như sau:  Người luôn trong tình trạng mệt lả.",
+        "head": "Tiêu chảy",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Mệt lả",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Ngoài ra, tình trạng cũng xuất hiện với nhiều triệu chứng đi kèm khác, cụ thể như sau:  Chuột rút.",
+        "head": "Tiêu chảy",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Chuột rút",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Ngoài ra, tình trạng cũng xuất hiện với nhiều triệu chứng đi kèm khác, cụ thể như sau:  Biểu hiện mất nước từ nhẹ đến nặng: khát nước, da nhăn nheo, khô, cơ thể hốc hác, mắt trũng, mạch đập nhanh, hạ huyết áp, tiểu tiện ít hoặc vô niệu, chân tay lạnh,&#8230;",
+        "head": "Tiêu chảy",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Mất nước",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Ngoài ra, tình trạng cũng xuất hiện với nhiều triệu chứng đi kèm khác, cụ thể như sau:  Biểu hiện mất nước từ nhẹ đến nặng: khát nước, da nhăn nheo, khô, cơ thể hốc hác, mắt trũng, mạch đập nhanh, hạ huyết áp, tiểu tiện ít hoặc vô niệu, chân tay lạnh,&#8230;",
+        "head": "Mất nước",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Khát nước, da nhăn nheo, khô, cơ thể hốc hác, mắt trũng, mạch đập nhanh, hạ huyết áp, tiểu tiện ít hoặc vô niệu, chân tay lạnh",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Hầu hết các trường hợp tiêu chảy cấp đều có khả năng tự khỏi và triệu chứng sẽ cải thiện trong vài ngày.",
+        "head": "Tiêu chảy cấp",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "Tự khỏi",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Tuy nhiên, nếu tình trạng kéo dài hơn 2 ngày, người bệnh tốt nhất nên đến gặp bác sĩ để được chăm sóc cũng như điều trị y tế kịp thời.",
+        "head": "Tiêu chảy kéo dài hơn 2 ngày",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "Chăm sóc y tế",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Thực tế, ỉa chảy cũng là triệu chứng của một số trường hợp cấp cứu nghiêm trọng.",
+        "head": "Ỉa chảy",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Cấp cứu nghiêm trọng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Vì vậy, ngay khi nhận thấy phân lỏng, nhiều nước kèm các dấu hiệu nguy hiểm sau, người bệnh nên tìm kiếm sự giúp đỡ khẩn cấp:  Đi ngoài ra máu.",
+        "head": "Đi ngoài ra máu",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Cấp cứu nghiêm trọng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Vì vậy, ngay khi nhận thấy phân lỏng, nhiều nước kèm các dấu hiệu nguy hiểm sau, người bệnh nên tìm kiếm sự giúp đỡ khẩn cấp:  Đi ngoài phân đen, hắc ín.",
+        "head": "Đi ngoài phân đen, hắc ín",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Cấp cứu nghiêm trọng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Vì vậy, ngay khi nhận thấy phân lỏng, nhiều nước kèm các dấu hiệu nguy hiểm sau, người bệnh nên tìm kiếm sự giúp đỡ khẩn cấp:  Sốt cao trên 38,3 độ C hoặc kéo dài hơn 24 giờ.",
+        "head": "Sốt cao trên 38,3 độ C hoặc kéo dài hơn 24 giờ",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Cấp cứu nghiêm trọng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Vì vậy, ngay khi nhận thấy phân lỏng, nhiều nước kèm các dấu hiệu nguy hiểm sau, người bệnh nên tìm kiếm sự giúp đỡ khẩn cấp:  Ỉa chảy kéo dài hơn 2 ngày.",
+        "head": "Ỉa chảy kéo dài hơn 2 ngày",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Cấp cứu nghiêm trọng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Vì vậy, ngay khi nhận thấy phân lỏng, nhiều nước kèm các dấu hiệu nguy hiểm sau, người bệnh nên tìm kiếm sự giúp đỡ khẩn cấp:  Buồn nôn và không thể uống chất lỏng thay thế.",
+        "head": "Buồn nôn và không thể uống chất lỏng thay thế",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Cấp cứu nghiêm trọng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Vì vậy, ngay khi nhận thấy phân lỏng, nhiều nước kèm các dấu hiệu nguy hiểm sau, người bệnh nên tìm kiếm sự giúp đỡ khẩn cấp:  Đau dữ dội ở phần bụng (đặc biệt là vùng hạ sườn bên phải hoặc phần sau).",
+        "head": "Đau dữ dội ở phần bụng (đặc biệt là vùng hạ sườn bên phải hoặc phần sau)",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Cấp cứu nghiêm trọng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Vì vậy, ngay khi nhận thấy phân lỏng, nhiều nước kèm các dấu hiệu nguy hiểm sau, người bệnh nên tìm kiếm sự giúp đỡ khẩn cấp:  Tiêu chảy sau khi đi từ nước ngoài trở về.",
+        "head": "Tiêu chảy sau khi đi từ nước ngoài trở về",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Cấp cứu nghiêm trọng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Vì vậy, ngay khi nhận thấy phân lỏng, nhiều nước kèm các dấu hiệu nguy hiểm sau, người bệnh nên tìm kiếm sự giúp đỡ khẩn cấp:  Nước tiểu màu đậm.",
+        "head": "Nước tiểu màu đậm",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Cấp cứu nghiêm trọng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Vì vậy, ngay khi nhận thấy phân lỏng, nhiều nước kèm các dấu hiệu nguy hiểm sau, người bệnh nên tìm kiếm sự giúp đỡ khẩn cấp:  Lượng nước tiểu ít hơn bình thường.",
+        "head": "Lượng nước tiểu ít hơn bình thường",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Cấp cứu nghiêm trọng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Vì vậy, ngay khi nhận thấy phân lỏng, nhiều nước kèm các dấu hiệu nguy hiểm sau, người bệnh nên tìm kiếm sự giúp đỡ khẩn cấp:  Nhịp tim nhanh.",
+        "head": "Nhịp tim nhanh",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Cấp cứu nghiêm trọng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Vì vậy, ngay khi nhận thấy phân lỏng, nhiều nước kèm các dấu hiệu nguy hiểm sau, người bệnh nên tìm kiếm sự giúp đỡ khẩn cấp:  Nhức đầu.",
+        "head": "Nhức đầu",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Cấp cứu nghiêm trọng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bệnh tiêu chảy xảy ra phổ biến mỗi năm, dễ lây nhiễm và bùng phát thành dịch.",
+        "head": "Bệnh tiêu chảy",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Lây nhiễm",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Bệnh tiêu chảy xảy ra phổ biến mỗi năm, dễ lây nhiễm và bùng phát thành dịch.",
+        "head": "Bệnh tiêu chảy",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Bùng phát thành dịch",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Theo đó, Bộ Y tế khuyến cáo những đối tượng nằm trong nhóm nguy cơ cao gồm:  Những người thường xuyên ăn uống, sinh hoạt gần với bệnh nhân ỉa chảy nhưng không áp dụng biện pháp phòng ngừa.",
+        "head": "Bệnh tiêu chảy",
+        "head_type": "disease",
+        "relation": "aggravatedBy",
+        "tail": "Ăn uống, sinh hoạt gần với bệnh nhân ỉa chảy",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Theo đó, Bộ Y tế khuyến cáo những đối tượng nằm trong nhóm nguy cơ cao gồm:  Những người thường xuyên ăn uống, sinh hoạt gần với bệnh nhân ỉa chảy nhưng không áp dụng biện pháp phòng ngừa.",
+        "head": "Bệnh tiêu chảy",
+        "head_type": "disease",
+        "relation": "preventedBy",
+        "tail": "Áp dụng biện pháp phòng ngừa",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Dân cư sống trong khu vực sử dụng nhà tiêu không hợp vệ sinh, phân đi thẳng ra cống, ao, hồ, sông, suối, mương,&#8230;",
+        "head": "Bệnh tiêu chảy",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Sử dụng nhà tiêu không hợp vệ sinh",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Dân cư sống trong khu vực sử dụng nhà tiêu không hợp vệ sinh, phân đi thẳng ra cống, ao, hồ, sông, suối, mương,&#8230;",
+        "head": "Bệnh tiêu chảy",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Phân đi thẳng ra cống, ao, hồ, sông, suối, mương",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Sử dụng nguồn nước ô nhiễm, không đảm bảo vệ sinh.",
+        "head": "Bệnh tiêu chảy",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Sử dụng nguồn nước ô nhiễm",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Sử dụng nguồn nước ô nhiễm, không đảm bảo vệ sinh.",
+        "head": "Bệnh tiêu chảy",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Nguồn nước không đảm bảo vệ sinh",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Có thói quen ăn uống thiếu vệ sinh, thường xuyên ăn rau sống, thủy hải sản chưa chín kỹ.",
+        "head": "Bệnh tiêu chảy",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Ăn uống thiếu vệ sinh",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Có thói quen ăn uống thiếu vệ sinh, thường xuyên ăn rau sống, thủy hải sản chưa chín kỹ.",
+        "head": "Bệnh tiêu chảy",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Ăn rau sống",
+        "tail_type": "food"
+    },
+    {
+        "text": "Có thói quen ăn uống thiếu vệ sinh, thường xuyên ăn rau sống, thủy hải sản chưa chín kỹ.",
+        "head": "Bệnh tiêu chảy",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Thủy hải sản chưa chín kỹ",
+        "tail_type": "food"
+    },
+    {
+        "text": "Sử dụng phân tươi, phân chưa được xử lý trong trồng trọt.",
+        "head": "Bệnh tiêu chảy",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Sử dụng phân tươi",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Sử dụng phân tươi, phân chưa được xử lý trong trồng trọt.",
+        "head": "Bệnh tiêu chảy",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Phân chưa được xử lý",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Dân cư sống tại khu vực bị ngập lụt hoặc sau ngập lụt.",
+        "head": "Bệnh tiêu chảy",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Ngập lụt",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Khi có dấu hiệu của tiêu chảy, người bệnh cần liên hệ với bác sĩ để được xem xét, tiến hành một số xét nghiệm cần thiết nhằm xác định nguyên nhân chính xác.",
+        "head": "Tiêu chảy",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Bệnh tiêu chảy",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi có dấu hiệu của tiêu chảy, người bệnh cần liên hệ với bác sĩ để được xem xét, tiến hành một số xét nghiệm cần thiết nhằm xác định nguyên nhân chính xác.",
+        "head": "Tiêu chảy",
+        "head_type": "symptom",
+        "relation": "diagnosedBy",
+        "tail": "Xét nghiệm",
+        "tail_type": "test"
+    },
+    {
+        "text": "Đây là nền tảng cơ bản để thực hiện các phương pháp điều trị phù hợp và hiệu quả về sau.",
+        "head": "Bệnh tiêu chảy",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "Phương pháp điều trị",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "xét nghiệm công thức máu toàn phần (CBC), yếu tố viêm, điện giải máu, chức năng gan, thận sẽ giúp bác sĩ có hướng chẩn đoán nguyên nhân và cách điều trị thích hợp",
+        "head": "Bệnh tiêu chảy",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "Xét nghiệm công thức máu toàn phần (CBC)",
+        "tail_type": "test"
+    },
+    {
+        "text": "xét nghiệm công thức máu toàn phần (CBC), yếu tố viêm, điện giải máu, chức năng gan, thận sẽ giúp bác sĩ có hướng chẩn đoán nguyên nhân và cách điều trị thích hợp",
+        "head": "Bệnh tiêu chảy",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "Xét nghiệm yếu tố viêm",
+        "tail_type": "test"
+    },
+    {
+        "text": "xét nghiệm công thức máu toàn phần (CBC), yếu tố viêm, điện giải máu, chức năng gan, thận sẽ giúp bác sĩ có hướng chẩn đoán nguyên nhân và cách điều trị thích hợp",
+        "head": "Bệnh tiêu chảy",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "Xét nghiệm điện giải máu",
+        "tail_type": "test"
+    },
+    {
+        "text": "xét nghiệm công thức máu toàn phần (CBC), yếu tố viêm, điện giải máu, chức năng gan, thận sẽ giúp bác sĩ có hướng chẩn đoán nguyên nhân và cách điều trị thích hợp",
+        "head": "Bệnh tiêu chảy",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "Xét nghiệm chức năng gan",
+        "tail_type": "test"
+    },
+    {
+        "text": "xét nghiệm công thức máu toàn phần (CBC), yếu tố viêm, điện giải máu, chức năng gan, thận sẽ giúp bác sĩ có hướng chẩn đoán nguyên nhân và cách điều trị thích hợp",
+        "head": "Bệnh tiêu chảy",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "Xét nghiệm chức năng thận",
+        "tail_type": "test"
+    },
+    {
+        "text": "Các bác sĩ có thể xác định ký sinh trùng, vi khuẩn và một vài loại vi rút trong dịch cấy phân.",
+        "head": "Bệnh tiêu chảy",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "Dịch cấy phân",
+        "tail_type": "test"
+    },
+    {
+        "text": "Xét nghiệm phân cũng có thể phát hiện máu vi thể (hồng cầu), bạch cầu và các manh mối khác để chẩn đoán.",
+        "head": "Bệnh tiêu chảy",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "Xét nghiệm phân",
+        "tail_type": "test"
+    },
+    {
+        "text": "Thông qua quá trình nội soi đại tràng, bác sĩ sẽ quan sát được toàn bộ khung đại tràng, một phần ruột non để xác định chính xác các tổn thương tại đây và tìm ra nguyên nhân ỉa chảy.",
+        "head": "Bệnh tiêu chảy",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "Nội soi đại tràng",
+        "tail_type": "test"
+    },
+    {
+        "text": "Thông qua quá trình nội soi đại tràng, bác sĩ sẽ quan sát được toàn bộ khung đại tràng, một phần ruột non để xác định chính xác các tổn thương tại đây và tìm ra nguyên nhân ỉa chảy.",
+        "head": "Bệnh tiêu chảy",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Đại tràng",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Thông qua quá trình nội soi đại tràng, bác sĩ sẽ quan sát được toàn bộ khung đại tràng, một phần ruột non để xác định chính xác các tổn thương tại đây và tìm ra nguyên nhân ỉa chảy.",
+        "head": "Bệnh tiêu chảy",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Ruột non",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Ngoài ra, ống nội soi cũng được trang bị dụng cụ hỗ trợ, giúp lấy sinh thiết (một mẫu mô nhỏ) từ đại tràng để thực hiện kiểm tra trong phòng thí nghiệm.",
+        "head": "Bệnh tiêu chảy",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "Sinh thiết",
+        "tail_type": "test"
+    },
+    {
+        "text": "Các trường hợp ỉa chảy mức độ nhẹ đều có thể tự khỏi trong một thời gian ngắn mà không cần đến thuốc điều trị.",
+        "head": "Tiêu chảy",
+        "head_type": "symptom",
+        "relation": "treatedBy",
+        "tail": "Tự khỏi",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Tuy nhiên, nếu tình trạng kéo dài nhiều ngày, mức độ nặng, tăng dần kèm các triệu chứng nghiêm trọng, người bệnh cần liên hệ sớm với bác sĩ để được kiểm tra và xử lý kịp thời.",
+        "head": "Tiêu chảy",
+        "head_type": "symptom",
+        "relation": "aggravatedBy",
+        "tail": "Kéo dài nhiều ngày",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Tuy nhiên, nếu tình trạng kéo dài nhiều ngày, mức độ nặng, tăng dần kèm các triệu chứng nghiêm trọng, người bệnh cần liên hệ sớm với bác sĩ để được kiểm tra và xử lý kịp thời.",
+        "head": "Tiêu chảy",
+        "head_type": "symptom",
+        "relation": "aggravatedBy",
+        "tail": "Mức độ nặng",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Tuy nhiên, nếu tình trạng kéo dài nhiều ngày, mức độ nặng, tăng dần kèm các triệu chứng nghiêm trọng, người bệnh cần liên hệ sớm với bác sĩ để được kiểm tra và xử lý kịp thời.",
+        "head": "Tiêu chảy",
+        "head_type": "symptom",
+        "relation": "aggravatedBy",
+        "tail": "Tăng dần",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Tuy nhiên, nếu tình trạng kéo dài nhiều ngày, mức độ nặng, tăng dần kèm các triệu chứng nghiêm trọng, người bệnh cần liên hệ sớm với bác sĩ để được kiểm tra và xử lý kịp thời.",
+        "head": "Tiêu chảy",
+        "head_type": "symptom",
+        "relation": "aggravatedBy",
+        "tail": "Triệu chứng nghiêm trọng",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Một số phương pháp điều trị tiêu chảy thường được áp dụng gồm:",
+        "head": "Bệnh tiêu chảy",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "Phương pháp điều trị",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Đây là việc đầu tiên cần thực hiện ngay khi bị tiêu chảy.",
+        "head": "Tiêu chảy",
+        "head_type": "symptom",
+        "relation": "treatedBy",
+        "tail": "Dung dịch Oresol (ORS - Oral rehydration salts)",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Đây là một dạng hỗn hợp gồm nước sạch, đường, muối, được hấp thụ tại ruột non để bù lượng nước và điện giải đã mất.",
+        "head": "Dung dịch Oresol (ORS - Oral rehydration salts)",
+        "head_type": "treatment",
+        "relation": "affects",
+        "tail": "Ruột non",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Trong trường hợp không thể uống do buồn nôn hoặc đau dạ dày, phương án truyền dịch qua tĩnh mạch là cần thiết.",
+        "head": "Tiêu chảy",
+        "head_type": "symptom",
+        "relation": "aggravatedBy",
+        "tail": "Buồn nôn",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Trong trường hợp không thể uống do buồn nôn hoặc đau dạ dày, phương án truyền dịch qua tĩnh mạch là cần thiết.",
+        "head": "Tiêu chảy",
+        "head_type": "symptom",
+        "relation": "aggravatedBy",
+        "tail": "Đau dạ dày",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Trong trường hợp không thể uống do buồn nôn hoặc đau dạ dày, phương án truyền dịch qua tĩnh mạch là cần thiết.",
+        "head": "Tiêu chảy",
+        "head_type": "symptom",
+        "relation": "treatedBy",
+        "tail": "Truyền dịch qua tĩnh mạch",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Thuốc kháng sinh sẽ đem lại hiệu quả điều trị tích cực trong trường hợp ỉa chảy do vi khuẩn hoặc ký sinh trùng.",
+        "head": "Bệnh tiêu chảy",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "Thuốc kháng sinh",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Thuốc kháng sinh sẽ đem lại hiệu quả điều trị tích cực trong trường hợp ỉa chảy do vi khuẩn hoặc ký sinh trùng.",
+        "head": "Bệnh tiêu chảy",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Vi khuẩn",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Thuốc kháng sinh sẽ đem lại hiệu quả điều trị tích cực trong trường hợp ỉa chảy do vi khuẩn hoặc ký sinh trùng.",
+        "head": "Bệnh tiêu chảy",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Ký sinh trùng",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Tuy nhiên, nếu nguyên nhân xuất phát từ virus thì phương pháp này hoàn toàn không có tác dụng.",
+        "head": "Bệnh tiêu chảy",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Virus",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Nhiều trường hợp tiêu chảy xuất hiện là triệu chứng của một bệnh lý khác.",
+        "head": "Tiêu chảy",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Bệnh lý",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đối với tình trạng này, bác sĩ sẽ chỉ định điều trị vấn đề đó trước tiên.",
+        "head": "Bệnh lý",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "Điều trị",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Nếu thuốc kháng sinh là nguyên nhân chính gây ỉa chảy, việc giảm liều dùng hoặc đổi loại khác là biện pháp nhanh nhất để chấm dứt tác dụng phụ.",
+        "head": "Bệnh tiêu chảy",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Thuốc kháng sinh",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Nếu thuốc kháng sinh là nguyên nhân chính gây ỉa chảy, việc giảm liều dùng hoặc đổi loại khác là biện pháp nhanh nhất để chấm dứt tác dụng phụ.",
+        "head": "Bệnh tiêu chảy",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "Giảm liều dùng",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Nếu thuốc kháng sinh là nguyên nhân chính gây ỉa chảy, việc giảm liều dùng hoặc đổi loại khác là biện pháp nhanh nhất để chấm dứt tác dụng phụ.",
+        "head": "Bệnh tiêu chảy",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "Đổi loại thuốc",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Mức độ nghiêm trọng và mối nguy hiểm tiềm ẩn của tiêu chảy đã được Trung tâm kiểm soát bệnh tật Hoa Kỳ (CDC) khuyến cáo: “Tiêu chảy ở trẻ gây tử vong cao hơn cả sốt rét, sởi và AIDS kết hợp.”",
+        "head": "Tiêu chảy",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Tử vong",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Cụ thể, bệnh lý này có thể kéo dài từ vài ngày đến một tuần và không gây ảnh hưởng lớn cho sức khỏe nếu được xử lý đúng cách.",
+        "head": "Tiêu chảy",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Xử lý đúng cách",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Tuy nhiên, trong trường hợp ngược lại, cơ thể có nguy cơ sẽ phải đối mặt với nhiều vấn đề nghiêm trọng như: hôn mê, trụy mạch, suy kiệt, suy dinh dưỡng, mất nước, thậm chí là tử vong.",
+        "head": "Tiêu chảy",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Hôn mê",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Tuy nhiên, trong trường hợp ngược lại, cơ thể có nguy cơ sẽ phải đối mặt với nhiều vấn đề nghiêm trọng như: hôn mê, trụy mạch, suy kiệt, suy dinh dưỡng, mất nước, thậm chí là tử vong.",
+        "head": "Tiêu chảy",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Trụy mạch",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Tuy nhiên, trong trường hợp ngược lại, cơ thể có nguy cơ sẽ phải đối mặt với nhiều vấn đề nghiêm trọng như: hôn mê, trụy mạch, suy kiệt, suy dinh dưỡng, mất nước, thậm chí là tử vong.",
+        "head": "Tiêu chảy",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Suy kiệt",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Tuy nhiên, trong trường hợp ngược lại, cơ thể có nguy cơ sẽ phải đối mặt với nhiều vấn đề nghiêm trọng như: hôn mê, trụy mạch, suy kiệt, suy dinh dưỡng, mất nước, thậm chí là tử vong.",
+        "head": "Tiêu chảy",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Suy dinh dưỡng",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Tuy nhiên, trong trường hợp ngược lại, cơ thể có nguy cơ sẽ phải đối mặt với nhiều vấn đề nghiêm trọng như: hôn mê, trụy mạch, suy kiệt, suy dinh dưỡng, mất nước, thậm chí là tử vong.",
+        "head": "Tiêu chảy",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Mất nước",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Tuy nhiên, trong trường hợp ngược lại, cơ thể có nguy cơ sẽ phải đối mặt với nhiều vấn đề nghiêm trọng như: hôn mê, trụy mạch, suy kiệt, suy dinh dưỡng, mất nước, thậm chí là tử vong.",
+        "head": "Tiêu chảy",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Tử vong",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Một số biến chứng nguy hiểm phải kể đến gồm:  Vùng quanh hậu môn bị hăm loét đỏ do đi ngoài quá nhiều lần.",
+        "head": "Tiêu chảy",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Vùng quanh hậu môn bị hăm loét đỏ",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Suy dinh dưỡng: Bệnh ỉa chảy là một trong những nguyên nhân hàng đầu dẫn đến suy dinh dưỡng ở trẻ em dưới 5 tuổi bởi tác động trực tiếp đến quá trình tăng trưởng và phát triển nhận thức.",
+        "head": "Tiêu chảy",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Suy dinh dưỡng",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Mất nước: Đây là mối đe dọa nghiêm trọng của tiêu chảy.",
+        "head": "Tiêu chảy",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Mất nước",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Trong giai đoạn đầu của bệnh, nước và các chất điện giải như: Natri, Clorua, Kali, Bicarbonate,&#8230; sẽ bị mất qua nôn mửa, mồ hôi, nước tiểu, phân, thở.",
+        "head": "Tiêu chảy",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Nôn mửa",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Trong giai đoạn đầu của bệnh, nước và các chất điện giải như: Natri, Clorua, Kali, Bicarbonate,&#8230; sẽ bị mất qua nôn mửa, mồ hôi, nước tiểu, phân, thở.",
+        "head": "Tiêu chảy",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Mồ hôi",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Trong giai đoạn đầu của bệnh, nước và các chất điện giải như: Natri, Clorua, Kali, Bicarbonate,&#8230; sẽ bị mất qua nôn mửa, mồ hôi, nước tiểu, phân, thở.",
+        "head": "Tiêu chảy",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Nước tiểu",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Trong giai đoạn đầu của bệnh, nước và các chất điện giải như: Natri, Clorua, Kali, Bicarbonate,&#8230; sẽ bị mất qua nôn mửa, mồ hôi, nước tiểu, phân, thở.",
+        "head": "Tiêu chảy",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Phân",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Trong giai đoạn đầu của bệnh, nước và các chất điện giải như: Natri, Clorua, Kali, Bicarbonate,&#8230; sẽ bị mất qua nôn mửa, mồ hôi, nước tiểu, phân, thở.",
+        "head": "Tiêu chảy",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Thở",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Nếu việc thay thế không được thực hiện, cơ thể sẽ dễ xuất hiện co giật, tổn thương não, thậm chí tử vong.",
+        "head": "Tiêu chảy",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Co giật",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Nếu việc thay thế không được thực hiện, cơ thể sẽ dễ xuất hiện co giật, tổn thương não, thậm chí tử vong.",
+        "head": "Tiêu chảy",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Tổn thương não",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Bệnh tiêu chảy dễ lây lan, biến chứng nguy hiểm nhưng hoàn toàn có thể phòng ngừa ngay từ ban đầu.",
+        "head": "Tiêu chảy",
+        "head_type": "disease",
+        "relation": "preventedBy",
+        "tail": "Phòng ngừa",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Một số biện pháp hữu ích có thể áp dụng như:(7)  Tăng cường vệ sinh cá nhân, môi trường, không gian sống,&#8230;",
+        "head": "Tiêu chảy",
+        "head_type": "disease",
+        "relation": "preventedBy",
+        "tail": "Vệ sinh cá nhân",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Một số biện pháp hữu ích có thể áp dụng như:(7)  Tăng cường vệ sinh cá nhân, môi trường, không gian sống,&#8230;",
+        "head": "Tiêu chảy",
+        "head_type": "disease",
+        "relation": "preventedBy",
+        "tail": "Vệ sinh môi trường",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Bảo đảm an toàn vệ sinh thực phẩm, ăn chín, uống sôi.",
+        "head": "Tiêu chảy",
+        "head_type": "disease",
+        "relation": "preventedBy",
+        "tail": "An toàn vệ sinh thực phẩm",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Bảo đảm an toàn vệ sinh thực phẩm, ăn chín, uống sôi.",
+        "head": "Tiêu chảy",
+        "head_type": "disease",
+        "relation": "preventedBy",
+        "tail": "Ăn chín",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Bảo đảm an toàn vệ sinh thực phẩm, ăn chín, uống sôi.",
+        "head": "Tiêu chảy",
+        "head_type": "disease",
+        "relation": "preventedBy",
+        "tail": "Uống sôi",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Đảm bảo sử dụng nguồn nước sạch cho sinh hoạt.",
+        "head": "Tiêu chảy",
+        "head_type": "disease",
+        "relation": "preventedBy",
+        "tail": "Nguồn nước sạch",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Bảo vệ nguồn nước.",
+        "head": "Tiêu chảy",
+        "head_type": "disease",
+        "relation": "preventedBy",
+        "tail": "Bảo vệ nguồn nước",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Thực hiện các biện pháp xử lý đúng cách khi có người bị ỉa chảy cấp.",
+        "head": "Tiêu chảy",
+        "head_type": "disease",
+        "relation": "preventedBy",
+        "tail": "Xử lý đúng cách",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Cập nhật kiến thức về sự lây lan của vi khuẩn gây bệnh ỉa chảy.",
+        "head": "Tiêu chảy",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Vi khuẩn",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Khi bị tiêu chảy, vùng trực tràng sẽ bị đau kèm triệu chứng ngứa, rát, đau, khó chịu sau khi đi vệ sinh.",
+        "head": "Tiêu chảy",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Đau vùng trực tràng",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Khi bị tiêu chảy, vùng trực tràng sẽ bị đau kèm triệu chứng ngứa, rát, đau, khó chịu sau khi đi vệ sinh.",
+        "head": "Tiêu chảy",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Ngứa vùng trực tràng",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Khi bị tiêu chảy, vùng trực tràng sẽ bị đau kèm triệu chứng ngứa, rát, đau, khó chịu sau khi đi vệ sinh.",
+        "head": "Tiêu chảy",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Rát vùng trực tràng",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Khi bị tiêu chảy, vùng trực tràng sẽ bị đau kèm triệu chứng ngứa, rát, đau, khó chịu sau khi đi vệ sinh.",
+        "head": "Tiêu chảy",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Khó chịu vùng trực tràng",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Trong trường hợp này, người bệnh hãy tắm nước ấm hoặc ngâm mình trong tắm sau đó lau khô những khu vực này bằng khăn mềm và sạch.",
+        "head": "Tiêu chảy",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "Tắm nước ấm",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Ngoài ra, người lớn cũng có thể sử dụng một số thuốc không kê đơn cho tình trạng nhẹ như Bismuth Subsalicylate, Loperamide dạng lỏng hoặc viên nén.",
+        "head": "Tiêu chảy",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "Bismuth Subsalicylate",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Ngoài ra, người lớn cũng có thể sử dụng một số thuốc không kê đơn cho tình trạng nhẹ như Bismuth Subsalicylate, Loperamide dạng lỏng hoặc viên nén.",
+        "head": "Tiêu chảy",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "Loperamide",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Đặc biệt, việc cung cấp đủ nước cho cơ thể là rất cần thiết.",
+        "head": "Tiêu chảy",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "Cung cấp đủ nước",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Người bệnh cần uống ít nhất 6 cốc nước mỗi ngày.",
+        "head": "Tiêu chảy",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "Uống nước",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Bên cạnh đó có thể chọn thêm đồ uống thay thế chất điện giải, soda không chứa caffein, nước luộc gà (không chất béo), trà với mật ong,&#8230;",
+        "head": "Tiêu chảy",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "Đồ uống thay thế chất điện giải",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Bên cạnh đó có thể chọn thêm đồ uống thay thế chất điện giải, soda không chứa caffein, nước luộc gà (không chất béo), trà với mật ong,&#8230;",
+        "head": "Tiêu chảy",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "Soda không chứa caffein",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Bên cạnh đó có thể chọn thêm đồ uống thay thế chất điện giải, soda không chứa caffein, nước luộc gà (không chất béo), trà với mật ong,&#8230;",
+        "head": "Tiêu chảy",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "Nước luộc gà",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Bên cạnh đó có thể chọn thêm đồ uống thay thế chất điện giải, soda không chứa caffein, nước luộc gà (không chất béo), trà với mật ong,&#8230;",
+        "head": "Tiêu chảy",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "Trà với mật ong",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Thay vì uống trong bữa ăn, người bệnh nên uống giữa bữa để đem lại hiệu quả tốt hơn.",
+        "head": "Tiêu chảy",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "Uống giữa bữa",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Trung tâm Nội soi và Phẫu thuật nội soi tiêu hóa (BVĐK Tâm Anh TP.HCM) và Khoa Tiêu hóa - Gan mật - Tụy (BVĐK Tâm Anh Hà Nội) là những trung tâm y tế chuyên khoa Tiêu hóa uy tín, cung cấp dịch vụ thăm khám và điều trị cao cấp, hiệu quả cho các bệnh nhân mắc các vấn đề về gan từ nhẹ đến nặng (gan nhiễm mỡ, viêm gan cấp tính, mãn tính, xơ gan, ung thư gan…).",
+        "head": "Tiêu chảy",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "Trung tâm Nội soi và Phẫu thuật nội soi tiêu hóa",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Trung tâm Nội soi và Phẫu thuật nội soi tiêu hóa (BVĐK Tâm Anh TP.HCM) và Khoa Tiêu hóa - Gan mật - Tụy (BVĐK Tâm Anh Hà Nội) là những trung tâm y tế chuyên khoa Tiêu hóa uy tín, cung cấp dịch vụ thăm khám và điều trị cao cấp, hiệu quả cho các bệnh nhân mắc các vấn đề về gan từ nhẹ đến nặng (gan nhiễm mỡ, viêm gan cấp tính, mãn tính, xơ gan, ung thư gan…).",
+        "head": "Tiêu chảy",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "Khoa Tiêu hóa - Gan mật - Tụy",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Hệ thống BVĐK Tâm Anh quy tụ đội ngũ bác sĩ Nội khoa – Ngoại khoa – Nội soi tiêu hóa chuyên môn cao, giàu kinh nghiệm, bên cạnh đó là sự hỗ trợ của hệ thống thiết bị y tế hiện đại, nhập khẩu từ nước ngoài, phục vụ tối đa nhu cầu thăm khám và điều trị của khách hàng.",
+        "head": "Tiêu chảy",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "Bác sĩ Nội khoa",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Hệ thống BVĐK Tâm Anh quy tụ đội ngũ bác sĩ Nội khoa – Ngoại khoa – Nội soi tiêu hóa chuyên môn cao, giàu kinh nghiệm, bên cạnh đó là sự hỗ trợ của hệ thống thiết bị y tế hiện đại, nhập khẩu từ nước ngoài, phục vụ tối đa nhu cầu thăm khám và điều trị của khách hàng.",
+        "head": "Tiêu chảy",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "Bác sĩ Ngoại khoa",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Hệ thống BVĐK Tâm Anh quy tụ đội ngũ bác sĩ Nội khoa – Ngoại khoa – Nội soi tiêu hóa chuyên môn cao, giàu kinh nghiệm, bên cạnh đó là sự hỗ trợ của hệ thống thiết bị y tế hiện đại, nhập khẩu từ nước ngoài, phục vụ tối đa nhu cầu thăm khám và điều trị của khách hàng.",
+        "head": "Tiêu chảy",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "Bác sĩ Nội soi tiêu hóa",
+        "tail_type": "treatment"
+    }
+]

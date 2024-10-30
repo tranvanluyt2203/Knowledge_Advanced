@@ -1,0 +1,578 @@
+[
+    {
+        "text": "Ung thư vòm họng giai đoạn 1 thường bị nhầm lẫn với các bệnh lý lành tính khác như cảm cúm, viêm họng, viêm đường hô hấp nên không điều trị kịp thời khiến bệnh tiến triển.",
+        "head": "Ung thư vòm họng giai đoạn 1",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "cảm cúm, viêm họng, viêm đường hô hấp",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Ung thư vòm họng giai đoạn 1 thường bị nhầm lẫn với các bệnh lý lành tính khác như cảm cúm, viêm họng, viêm đường hô hấp nên không điều trị kịp thời khiến bệnh tiến triển.",
+        "head": "Ung thư vòm họng giai đoạn 1",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "tiến triển",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi bệnh được phát hiện ở giai đoạn sớm, tỷ lệ điều trị khỏi cao và tăng thời gian sống còn, ước tính trên 80% bệnh nhân được kỳ vọng sống trên 5 năm.",
+        "head": "Ung thư vòm họng giai đoạn 1",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "điều trị",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Khi bệnh được phát hiện ở giai đoạn sớm, tỷ lệ điều trị khỏi cao và tăng thời gian sống còn, ước tính trên 80% bệnh nhân được kỳ vọng sống trên 5 năm.",
+        "head": "Ung thư vòm họng giai đoạn 1",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "sống còn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ung thư vòm họng giai đoạn 1 là bệnh lý mà khối u được giới hạn sự phát triển chỉ ở vị trí vòm họng.",
+        "head": "Ung thư vòm họng giai đoạn 1",
+        "head_type": "disease",
+        "relation": "locatedIn",
+        "tail": "vòm họng",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Theo Tổ chức Y tế Thế giới (WHO), mỗi năm có khoảng 133.000 ca mắc mới và hơn 80.000 ca tử vong do ung thư vòm họng.",
+        "head": "Ung thư vòm họng",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "tử vong",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các khu vực ghi nhận số ca bệnh mắc ung thư vòm họng trung bình và cao gồm các nước trong khu vực Đông Nam Á, Trung Đông và Bắc Phi, với tỷ lệ 25/100.000 dân.",
+        "head": "Ung thư vòm họng",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "Đông Nam Á, Trung Đông và Bắc Phi",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Nhìn chung, nam giới có nguy cơ mắc ung thư vòm họng cao gấp 2-3 lần so với nữ giới.",
+        "head": "Ung thư vòm họng",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "nam giới",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Nhìn chung, nam giới có nguy cơ mắc ung thư vòm họng cao gấp 2-3 lần so với nữ giới.",
+        "head": "Ung thư vòm họng",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "nữ giới",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Tỷ lệ ung thư vòm họng trên nam giới cao gấp 2-3 lần nữ giới.",
+        "head": "Ung thư vòm họng",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "nam giới",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Tỷ lệ ung thư vòm họng trên nam giới cao gấp 2-3 lần nữ giới.",
+        "head": "Ung thư vòm họng",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "nữ giới",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Theo ThS.BS Lưu Thảo Ngọc, khoa Ung bướu, BVĐK Tâm Anh Hà Nội, nguyên nhân bệnh sinh được cho là có liên quan tới sự phát triển của ung thư vòm họng gồm:",
+        "head": "Ung thư vòm họng",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "nguyên nhân bệnh sinh",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Nhiễm virus Epstein-Barr (EBV): Virus EBV là yếu tố nguy cơ chiếm đến 90% các ca bệnh, là tác nhân căn nguyên chính trong cơ chế bệnh sinh của ung thư vòm họng.",
+        "head": "Ung thư vòm họng",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Virus EBV",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Nhiễm virus u nhú HPV: Đây là tác nhân bệnh sinh được nhắc tới trong ung thư vòm họng sau EBV, chiếm tỷ lệ khoảng 10% so với các ca bệnh do nhiễm virus Epstein-Barr.",
+        "head": "Ung thư vòm họng",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Virus u nhú HPV",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Sử dụng thuốc lá, rượu bia: Lạm dụng rượu bia và hút thuốc lá nhiều có thể là nguyên nhân gây ra ung thư vòm họng cũng như kích thích sự tái hoạt động EBV.",
+        "head": "Ung thư vòm họng",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "thuốc lá, rượu bia",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Yếu tố di truyền: Nếu trong gia đình ghi nhận có người thân bậc 1 được chẩn đoán ung thư vòm họng thì nguy cơ mắc ung thư vòm họng sẽ cao gấp 7 lần so với người không có tiền sử gia đình mắc bệnh.",
+        "head": "Ung thư vòm họng",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Yếu tố di truyền",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Chế độ dinh dưỡng không hợp lý: Chế độ ăn ít chất xơ, lạm dụng các thực phẩm ủ chua, lên men (như cá muối, thịt muối, trứng muối, dưa cải muối…) có hàm lượng nitrosamine cao cũng như các chất gây đột biến, độc tố gen trực tiếp và các chất gây tái hoạt EBV.",
+        "head": "Ung thư vòm họng",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Chế độ dinh dưỡng không hợp lý",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Làm việc trong môi trường thiếu an toàn: Người lao động thường xuyên làm việc trong khu vực có nhiều khói bụi độc hại, bụi gỗ, hóa chất formaldehyde, phơi nhiễm phóng xạ…",
+        "head": "Ung thư vòm họng",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Làm việc trong môi trường thiếu an toàn",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Theo hệ thống TNM của Ủy ban liên hợp về Ung thư Hoa Kỳ (AJCC) sử dụng trong đánh giá giai đoạn bệnh ung thư vòm họng, ý nghĩa của phân loại T, N, M trong ung thư vòm họng giai đoạn 1 được hiểu như sau: (1)",
+        "head": "Ung thư vòm họng giai đoạn 1",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "hệ thống TNM",
+        "tail_type": "test"
+    },
+    {
+        "text": "T (Tumor) = khối u: Mô tả kích thước và tính xâm lấn của khối u.",
+        "head": "khối u",
+        "head_type": "organ",
+        "relation": "relatedTo",
+        "tail": "T",
+        "tail_type": "test"
+    },
+    {
+        "text": "N (Node) = hạch: Mô tả tình trạng di căn của bệnh ung thư đến các hạch vùng.",
+        "head": "hạch",
+        "head_type": "organ",
+        "relation": "relatedTo",
+        "tail": "N",
+        "tail_type": "test"
+    },
+    {
+        "text": "M (Metastasis) = di căn xa: Mô tả tình trạng di căn của bệnh ung thư đến các bộ phận khác trong cơ thể.",
+        "head": "di căn xa",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "M",
+        "tail_type": "test"
+    },
+    {
+        "text": "Đối với ung thư vòm họng giai đoạn 1, nhóm bệnh nhân có khối u nguyên phát T1 (khối u giới hạn ở vị trí vòm họng, có thể phát triển tới vùng họng miệng, hoặc khoang mũi mà chưa xâm lấn vùng quanh hầu họng, bệnh chưa di căn hạch bạch huyết (N0) và không ghi nhận di căn xa (M0). (2)",
+        "head": "Ung thư vòm họng giai đoạn 1",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "T1",
+        "tail_type": "test"
+    },
+    {
+        "text": "Đối với ung thư vòm họng giai đoạn 1, nhóm bệnh nhân có khối u nguyên phát T1 (khối u giới hạn ở vị trí vòm họng, có thể phát triển tới vùng họng miệng, hoặc khoang mũi mà chưa xâm lấn vùng quanh hầu họng, bệnh chưa di căn hạch bạch huyết (N0) và không ghi nhận di căn xa (M0). (2)",
+        "head": "Ung thư vòm họng giai đoạn 1",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "N0",
+        "tail_type": "test"
+    },
+    {
+        "text": "Đối với ung thư vòm họng giai đoạn 1, nhóm bệnh nhân có khối u nguyên phát T1 (khối u giới hạn ở vị trí vòm họng, có thể phát triển tới vùng họng miệng, hoặc khoang mũi mà chưa xâm lấn vùng quanh hầu họng, bệnh chưa di căn hạch bạch huyết (N0) và không ghi nhận di căn xa (M0). (2)",
+        "head": "Ung thư vòm họng giai đoạn 1",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "M0",
+        "tail_type": "test"
+    },
+    {
+        "text": "Ung thư vòm họng giai đoạn 0 Ung thư vòm họng giai đoạn 2 Ung thư vòm họng giai đoạn 3 Ung thư vòm họng giai đoạn 4",
+        "head": "Ung thư vòm họng giai đoạn 0",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "Ung thư vòm họng giai đoạn 2",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ung thư vòm họng giai đoạn 0 Ung thư vòm họng giai đoạn 2 Ung thư vòm họng giai đoạn 3 Ung thư vòm họng giai đoạn 4",
+        "head": "Ung thư vòm họng giai đoạn 0",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "Ung thư vòm họng giai đoạn 3",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ung thư vòm họng giai đoạn 0 Ung thư vòm họng giai đoạn 2 Ung thư vòm họng giai đoạn 3 Ung thư vòm họng giai đoạn 4",
+        "head": "Ung thư vòm họng giai đoạn 0",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "Ung thư vòm họng giai đoạn 4",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ung thư vòm họng giai đoạn 0 Ung thư vòm họng giai đoạn 2 Ung thư vòm họng giai đoạn 3 Ung thư vòm họng giai đoạn 4",
+        "head": "Ung thư vòm họng giai đoạn 2",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "Ung thư vòm họng giai đoạn 3",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ung thư vòm họng giai đoạn 0 Ung thư vòm họng giai đoạn 2 Ung thư vòm họng giai đoạn 3 Ung thư vòm họng giai đoạn 4",
+        "head": "Ung thư vòm họng giai đoạn 2",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "Ung thư vòm họng giai đoạn 4",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ung thư vòm họng giai đoạn 0 Ung thư vòm họng giai đoạn 2 Ung thư vòm họng giai đoạn 3 Ung thư vòm họng giai đoạn 4",
+        "head": "Ung thư vòm họng giai đoạn 3",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "Ung thư vòm họng giai đoạn 4",
+        "tail_type": "disease"
+    },
+    {
+        "text": "ThS.BS Lưu Thảo Ngọc cho biết, dấu hiệu ung thư vòm họng giai đoạn 1 thường thấy ở vùng hố Rosenmüller.",
+        "head": "dấu hiệu ung thư vòm họng giai đoạn 1",
+        "head_type": "symptom",
+        "relation": "locatedIn",
+        "tail": "vùng hố Rosenmüller",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Bệnh thường bị nhầm lẫn với các triệu chứng của các bệnh lý hô hấp thông thường, thậm chí không có triệu chứng hoặc chẩn đoán thiếu chuẩn xác dẫn đến sự chủ quan của người bệnh.",
+        "head": "ung thư vòm họng",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "các triệu chứng của các bệnh lý hô hấp thông thường",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Hệ quả, bệnh chỉ được phát hiện khi ung thư vòm họng chuyển sang giai đoạn tiến xa và di căn, gây khó khăn trong việc điều trị cũng như gây đau đớn cho người bệnh.",
+        "head": "ung thư vòm họng",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "chuyển sang giai đoạn tiến xa và di căn",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Triệu chứng ung thư vòm họng giai đoạn 1 thường không đặc hiệu hoặc các triệu chứng thường nhẹ như triệu chứng tại mũi (như nghẹt mũi, chảy máu mũi, tắc nghẽn mũi,&#8230;), hay triệu chứng vùng miệng họng như đau rát họng,&#8230;",
+        "head": "Triệu chứng ung thư vòm họng giai đoạn 1",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "ung thư vòm họng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Triệu chứng ung thư vòm họng giai đoạn 1 thường không đặc hiệu hoặc các triệu chứng thường nhẹ như triệu chứng tại mũi (như nghẹt mũi, chảy máu mũi, tắc nghẽn mũi,&#8230;), hay triệu chứng vùng miệng họng như đau rát họng,&#8230;",
+        "head": "nghẹt mũi",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "ung thư vòm họng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Triệu chứng ung thư vòm họng giai đoạn 1 thường không đặc hiệu hoặc các triệu chứng thường nhẹ như triệu chứng tại mũi (như nghẹt mũi, chảy máu mũi, tắc nghẽn mũi,&#8230;), hay triệu chứng vùng miệng họng như đau rát họng,&#8230;",
+        "head": "chảy máu mũi",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "ung thư vòm họng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Triệu chứng ung thư vòm họng giai đoạn 1 thường không đặc hiệu hoặc các triệu chứng thường nhẹ như triệu chứng tại mũi (như nghẹt mũi, chảy máu mũi, tắc nghẽn mũi,&#8230;), hay triệu chứng vùng miệng họng như đau rát họng,&#8230;",
+        "head": "tắc nghẽn mũi",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "ung thư vòm họng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Triệu chứng ung thư vòm họng giai đoạn 1 thường không đặc hiệu hoặc các triệu chứng thường nhẹ như triệu chứng tại mũi (như nghẹt mũi, chảy máu mũi, tắc nghẽn mũi,&#8230;), hay triệu chứng vùng miệng họng như đau rát họng,&#8230;",
+        "head": "đau rát họng",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "ung thư vòm họng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi không được chẩn đoán sớm, bệnh tiến triển gây ra các triệu chứng của bệnh giai đoạn tiến xa như: Mất thính giác, ù tai, cảm giác đầy tai, viêm tai giữa thanh dịch xảy ra không thường xuyên; Đau đầu, nhìn đôi hoặc nhìn mờ; Tê mặt do khối u ảnh hưởng đến dây thần kinh số V; Nổi hạch ở cổ, có thể sưng đau hoặc không; Khạc đờm có lẫn máu, mủ.",
+        "head": "Mất thính giác",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "ung thư vòm họng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi không được chẩn đoán sớm, bệnh tiến triển gây ra các triệu chứng của bệnh giai đoạn tiến xa như: Mất thính giác, ù tai, cảm giác đầy tai, viêm tai giữa thanh dịch xảy ra không thường xuyên; Đau đầu, nhìn đôi hoặc nhìn mờ; Tê mặt do khối u ảnh hưởng đến dây thần kinh số V; Nổi hạch ở cổ, có thể sưng đau hoặc không; Khạc đờm có lẫn máu, mủ.",
+        "head": "ù tai",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "ung thư vòm họng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi không được chẩn đoán sớm, bệnh tiến triển gây ra các triệu chứng của bệnh giai đoạn tiến xa như: Mất thính giác, ù tai, cảm giác đầy tai, viêm tai giữa thanh dịch xảy ra không thường xuyên; Đau đầu, nhìn đôi hoặc nhìn mờ; Tê mặt do khối u ảnh hưởng đến dây thần kinh số V; Nổi hạch ở cổ, có thể sưng đau hoặc không; Khạc đờm có lẫn máu, mủ.",
+        "head": "cảm giác đầy tai",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "ung thư vòm họng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi không được chẩn đoán sớm, bệnh tiến triển gây ra các triệu chứng của bệnh giai đoạn tiến xa như: Mất thính giác, ù tai, cảm giác đầy tai, viêm tai giữa thanh dịch xảy ra không thường xuyên; Đau đầu, nhìn đôi hoặc nhìn mờ; Tê mặt do khối u ảnh hưởng đến dây thần kinh số V; Nổi hạch ở cổ, có thể sưng đau hoặc không; Khạc đờm có lẫn máu, mủ.",
+        "head": "viêm tai giữa thanh dịch",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "ung thư vòm họng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi không được chẩn đoán sớm, bệnh tiến triển gây ra các triệu chứng của bệnh giai đoạn tiến xa như: Mất thính giác, ù tai, cảm giác đầy tai, viêm tai giữa thanh dịch xảy ra không thường xuyên; Đau đầu, nhìn đôi hoặc nhìn mờ; Tê mặt do khối u ảnh hưởng đến dây thần kinh số V; Nổi hạch ở cổ, có thể sưng đau hoặc không; Khạc đờm có lẫn máu, mủ.",
+        "head": "Đau đầu",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "ung thư vòm họng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi không được chẩn đoán sớm, bệnh tiến triển gây ra các triệu chứng của bệnh giai đoạn tiến xa như: Mất thính giác, ù tai, cảm giác đầy tai, viêm tai giữa thanh dịch xảy ra không thường xuyên; Đau đầu, nhìn đôi hoặc nhìn mờ; Tê mặt do khối u ảnh hưởng đến dây thần kinh số V; Nổi hạch ở cổ, có thể sưng đau hoặc không; Khạc đờm có lẫn máu, mủ.",
+        "head": "nhìn đôi",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "ung thư vòm họng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi không được chẩn đoán sớm, bệnh tiến triển gây ra các triệu chứng của bệnh giai đoạn tiến xa như: Mất thính giác, ù tai, cảm giác đầy tai, viêm tai giữa thanh dịch xảy ra không thường xuyên; Đau đầu, nhìn đôi hoặc nhìn mờ; Tê mặt do khối u ảnh hưởng đến dây thần kinh số V; Nổi hạch ở cổ, có thể sưng đau hoặc không; Khạc đờm có lẫn máu, mủ.",
+        "head": "nhìn mờ",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "ung thư vòm họng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi không được chẩn đoán sớm, bệnh tiến triển gây ra các triệu chứng của bệnh giai đoạn tiến xa như: Mất thính giác, ù tai, cảm giác đầy tai, viêm tai giữa thanh dịch xảy ra không thường xuyên; Đau đầu, nhìn đôi hoặc nhìn mờ; Tê mặt do khối u ảnh hưởng đến dây thần kinh số V; Nổi hạch ở cổ, có thể sưng đau hoặc không; Khạc đờm có lẫn máu, mủ.",
+        "head": "Tê mặt",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "ung thư vòm họng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi không được chẩn đoán sớm, bệnh tiến triển gây ra các triệu chứng của bệnh giai đoạn tiến xa như: Mất thính giác, ù tai, cảm giác đầy tai, viêm tai giữa thanh dịch xảy ra không thường xuyên; Đau đầu, nhìn đôi hoặc nhìn mờ; Tê mặt do khối u ảnh hưởng đến dây thần kinh số V; Nổi hạch ở cổ, có thể sưng đau hoặc không; Khạc đờm có lẫn máu, mủ.",
+        "head": "Nổi hạch ở cổ",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "ung thư vòm họng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi không được chẩn đoán sớm, bệnh tiến triển gây ra các triệu chứng của bệnh giai đoạn tiến xa như: Mất thính giác, ù tai, cảm giác đầy tai, viêm tai giữa thanh dịch xảy ra không thường xuyên; Đau đầu, nhìn đôi hoặc nhìn mờ; Tê mặt do khối u ảnh hưởng đến dây thần kinh số V; Nổi hạch ở cổ, có thể sưng đau hoặc không; Khạc đờm có lẫn máu, mủ.",
+        "head": "Khạc đờm có lẫn máu",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "ung thư vòm họng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi không được chẩn đoán sớm, bệnh tiến triển gây ra các triệu chứng của bệnh giai đoạn tiến xa như: Mất thính giác, ù tai, cảm giác đầy tai, viêm tai giữa thanh dịch xảy ra không thường xuyên; Đau đầu, nhìn đôi hoặc nhìn mờ; Tê mặt do khối u ảnh hưởng đến dây thần kinh số V; Nổi hạch ở cổ, có thể sưng đau hoặc không; Khạc đờm có lẫn máu, mủ.",
+        "head": "Khạc đờm có lẫn mủ",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "ung thư vòm họng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "ThS.BS Lưu Thảo Ngọc cho biết, từ thực tiễn lâm sàng, tỷ lệ cao các ca bệnh ung thư vòm họng giai đoạn 1 đã được điều trị khỏi sau khi xạ trị triệt để đơn thuần (trên 90%), đặc biệt sử dụng các kỹ thuật xạ trị tân tiến như xạ trị điều biến liều (IMRT) đã mang lại sự kiểm soát bệnh tốt, giảm các biến chứng cấp và mạn tính liên quan tới điều trị, và nâng cao chất lượng sống cho người bệnh.",
+        "head": "ung thư vòm họng giai đoạn 1",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "xạ trị triệt để đơn thuần",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "ThS.BS Lưu Thảo Ngọc cho biết, từ thực tiễn lâm sàng, tỷ lệ cao các ca bệnh ung thư vòm họng giai đoạn 1 đã được điều trị khỏi sau khi xạ trị triệt để đơn thuần (trên 90%), đặc biệt sử dụng các kỹ thuật xạ trị tân tiến như xạ trị điều biến liều (IMRT) đã mang lại sự kiểm soát bệnh tốt, giảm các biến chứng cấp và mạn tính liên quan tới điều trị, và nâng cao chất lượng sống cho người bệnh.",
+        "head": "xạ trị điều biến liều (IMRT)",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "ung thư vòm họng giai đoạn 1",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Sau khi khám lâm sàng và khai thác về tiền sử bệnh, một số chỉ định sẽ được bác sĩ tiến hành để đánh giá một bệnh nhân có triệu chứng về tai mũi họng: Nội soi tai mũi họng: sử dụng các dụng cụ chuyên dụng hiện đại để phát hiện các bất thường vùng vòm họng.",
+        "head": "Nội soi tai mũi họng",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "ung thư vòm họng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nội soi giúp hỗ trợ quan sát vùng niêm mạc vòm họng để tìm các bất thường.",
+        "head": "Nội soi",
+        "head_type": "test",
+        "relation": "affects",
+        "tail": "vùng niêm mạc vòm họng",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Qua nội soi, bác sĩ có thể chỉ định sinh thiết mẫu nhỏ u làm xét nghiệm giải phẫu bệnh khi nghi ngờ ác tính.",
+        "head": "sinh thiết mẫu nhỏ u",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "ung thư vòm họng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Chụp cộng hưởng từ (MRI): So với CT, MRI giúp đánh giá tình trạng khối u, xâm lấn các mô mềm xung quanh tốt hơn, giúp hỗ trợ chẩn đoán giai đoạn bệnh cũng như trong lập kế hoạch xạ trị khối u khi có chỉ định.",
+        "head": "Chụp cộng hưởng từ (MRI)",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "ung thư vòm họng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Chụp cộng hưởng từ (MRI): So với CT, MRI giúp đánh giá tình trạng khối u, xâm lấn các mô mềm xung quanh tốt hơn, giúp hỗ trợ chẩn đoán giai đoạn bệnh cũng như trong lập kế hoạch xạ trị khối u khi có chỉ định.",
+        "head": "MRI",
+        "head_type": "test",
+        "relation": "affects",
+        "tail": "khối u",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Chụp cộng hưởng từ (MRI): So với CT, MRI giúp đánh giá tình trạng khối u, xâm lấn các mô mềm xung quanh tốt hơn, giúp hỗ trợ chẩn đoán giai đoạn bệnh cũng như trong lập kế hoạch xạ trị khối u khi có chỉ định.",
+        "head": "MRI",
+        "head_type": "test",
+        "relation": "affects",
+        "tail": "các mô mềm xung quanh",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Chụp cắt lớp vi tính (CT) hoặc PET/CT: Kỹ thuật này nhằm xác định chính xác kích thước, hình dạng, mức độ xâm lấn của khối u đối với các vùng mô xung quanh, tình trạng di căn xa tới các cơ quan khác như xương, phổi,&#8230;",
+        "head": "Chụp cắt lớp vi tính (CT)",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "ung thư vòm họng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Chụp cắt lớp vi tính (CT) hoặc PET/CT: Kỹ thuật này nhằm xác định chính xác kích thước, hình dạng, mức độ xâm lấn của khối u đối với các vùng mô xung quanh, tình trạng di căn xa tới các cơ quan khác như xương, phổi,&#8230;",
+        "head": "PET/CT",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "ung thư vòm họng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Chụp cắt lớp vi tính (CT) hoặc PET/CT: Kỹ thuật này nhằm xác định chính xác kích thước, hình dạng, mức độ xâm lấn của khối u đối với các vùng mô xung quanh, tình trạng di căn xa tới các cơ quan khác như xương, phổi,&#8230;",
+        "head": "CT",
+        "head_type": "test",
+        "relation": "affects",
+        "tail": "khối u",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Chụp cắt lớp vi tính (CT) hoặc PET/CT: Kỹ thuật này nhằm xác định chính xác kích thước, hình dạng, mức độ xâm lấn của khối u đối với các vùng mô xung quanh, tình trạng di căn xa tới các cơ quan khác như xương, phổi,&#8230;",
+        "head": "CT",
+        "head_type": "test",
+        "relation": "affects",
+        "tail": "các vùng mô xung quanh",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Chụp cắt lớp vi tính (CT) hoặc PET/CT: Kỹ thuật này nhằm xác định chính xác kích thước, hình dạng, mức độ xâm lấn của khối u đối với các vùng mô xung quanh, tình trạng di căn xa tới các cơ quan khác như xương, phổi,&#8230;",
+        "head": "CT",
+        "head_type": "test",
+        "relation": "affects",
+        "tail": "xương",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Chụp cắt lớp vi tính (CT) hoặc PET/CT: Kỹ thuật này nhằm xác định chính xác kích thước, hình dạng, mức độ xâm lấn của khối u đối với các vùng mô xung quanh, tình trạng di căn xa tới các cơ quan khác như xương, phổi,&#8230;",
+        "head": "CT",
+        "head_type": "test",
+        "relation": "affects",
+        "tail": "phổi",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Phân tích DNA EBV trong huyết tương: DNA EBV trong huyết tương có vai trò như một marker đánh giá hiệu quả của hóa trị và xạ trị trong ung thư vòm họng.",
+        "head": "Phân tích DNA EBV trong huyết tương",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "ung thư vòm họng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Phân tích DNA EBV trong huyết tương: DNA EBV trong huyết tương có vai trò như một marker đánh giá hiệu quả của hóa trị và xạ trị trong ung thư vòm họng.",
+        "head": "DNA EBV trong huyết tương",
+        "head_type": "test",
+        "relation": "affects",
+        "tail": "ung thư vòm họng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đánh giá DNA EBV trước và sau điều trị có giá trị tiên lượng cho các bệnh nhân mắc ung thư vòm họng, đặc biệt khi nồng độ EBV DNA trong máu còn cao sau điều trị chỉ ra nguy cơ cao tái phát bệnh và di căn xa, từ đó định hướng chọn lựa điều trị hóa trị bổ trợ sau đó.",
+        "head": "EBV DNA trong máu",
+        "head_type": "test",
+        "relation": "affects",
+        "tail": "ung thư vòm họng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đánh giá DNA EBV trước và sau điều trị có giá trị tiên lượng cho các bệnh nhân mắc ung thư vòm họng, đặc biệt khi nồng độ EBV DNA trong máu còn cao sau điều trị chỉ ra nguy cơ cao tái phát bệnh và di căn xa, từ đó định hướng chọn lựa điều trị hóa trị bổ trợ sau đó.",
+        "head": "hóa trị bổ trợ",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "ung thư vòm họng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Chụp cộng hưởng từ giúp đánh giá tình trạng khối u để lên kế hoạch điều trị ung thư vòm họng",
+        "head": "Chụp cộng hưởng từ",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "ung thư vòm họng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Sau khi thăm khám và phân loại giai đoạn ung thư vòm họng, tùy thuộc vào giai đoạn tiến triển bệnh cũng như tình trạng sức khỏe của bệnh nhân, các bác sĩ tiến hành hội chẩn và áp dụng các phương pháp điều trị hiệu quả, an toàn, phù hợp với điều kiện của bệnh nhân.",
+        "head": "ung thư vòm họng",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "thăm khám",
+        "tail_type": "test"
+    },
+    {
+        "text": "Sau khi thăm khám và phân loại giai đoạn ung thư vòm họng, tùy thuộc vào giai đoạn tiến triển bệnh cũng như tình trạng sức khỏe của bệnh nhân, các bác sĩ tiến hành hội chẩn và áp dụng các phương pháp điều trị hiệu quả, an toàn, phù hợp với điều kiện của bệnh nhân.",
+        "head": "ung thư vòm họng",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "giai đoạn tiến triển bệnh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Sau khi thăm khám và phân loại giai đoạn ung thư vòm họng, tùy thuộc vào giai đoạn tiến triển bệnh cũng như tình trạng sức khỏe của bệnh nhân, các bác sĩ tiến hành hội chẩn và áp dụng các phương pháp điều trị hiệu quả, an toàn, phù hợp với điều kiện của bệnh nhân.",
+        "head": "ung thư vòm họng",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "các phương pháp điều trị",
+        "tail_type": "treatment"
+    }
+]

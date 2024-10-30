@@ -1,0 +1,910 @@
+
+MERGE (o1:disease {id: 'viêm_khớp_vảy_nến_disease'})
+MERGE (o2:organ {id: 'hệ_miễn_dịch_organ'})
+MERGE (o1)-[r0:affects]->(o2)
+SET r0.text = 'Viêm khớp vảy nến là bệnh lý viêm khớp tự miễn nằm trong nhóm bệnh lý khớp cột sống huyết thanh âm tính, ảnh hưởng đến nhiều cơ quan trong cơ thể, từ hệ miễn dịch, hệ tiêu hóa đến các khớp lớn ở các chi dưới, các khớp ngón tay, ngón chân và cột sống.'
+
+MERGE (o1:disease {id: 'viêm_khớp_vảy_nến_disease'})
+MERGE (o2:organ {id: 'hệ_tiêu_hóa_organ'})
+MERGE (o1)-[r1:affects]->(o2)
+SET r1.text = 'Viêm khớp vảy nến là bệnh lý viêm khớp tự miễn nằm trong nhóm bệnh lý khớp cột sống huyết thanh âm tính, ảnh hưởng đến nhiều cơ quan trong cơ thể, từ hệ miễn dịch, hệ tiêu hóa đến các khớp lớn ở các chi dưới, các khớp ngón tay, ngón chân và cột sống.'
+
+MERGE (o1:disease {id: 'viêm_khớp_vảy_nến_disease'})
+MERGE (o2:organ {id: 'các_khớp_lớn_ở_các_chi_dưới_organ'})
+MERGE (o1)-[r2:affects]->(o2)
+SET r2.text = 'Viêm khớp vảy nến là bệnh lý viêm khớp tự miễn nằm trong nhóm bệnh lý khớp cột sống huyết thanh âm tính, ảnh hưởng đến nhiều cơ quan trong cơ thể, từ hệ miễn dịch, hệ tiêu hóa đến các khớp lớn ở các chi dưới, các khớp ngón tay, ngón chân và cột sống.'
+
+MERGE (o1:disease {id: 'viêm_khớp_vảy_nến_disease'})
+MERGE (o2:organ {id: 'các_khớp_ngón_tay_organ'})
+MERGE (o1)-[r3:affects]->(o2)
+SET r3.text = 'Viêm khớp vảy nến là bệnh lý viêm khớp tự miễn nằm trong nhóm bệnh lý khớp cột sống huyết thanh âm tính, ảnh hưởng đến nhiều cơ quan trong cơ thể, từ hệ miễn dịch, hệ tiêu hóa đến các khớp lớn ở các chi dưới, các khớp ngón tay, ngón chân và cột sống.'
+
+MERGE (o1:disease {id: 'viêm_khớp_vảy_nến_disease'})
+MERGE (o2:organ {id: 'các_khớp_ngón_chân_organ'})
+MERGE (o1)-[r4:affects]->(o2)
+SET r4.text = 'Viêm khớp vảy nến là bệnh lý viêm khớp tự miễn nằm trong nhóm bệnh lý khớp cột sống huyết thanh âm tính, ảnh hưởng đến nhiều cơ quan trong cơ thể, từ hệ miễn dịch, hệ tiêu hóa đến các khớp lớn ở các chi dưới, các khớp ngón tay, ngón chân và cột sống.'
+
+MERGE (o1:disease {id: 'viêm_khớp_vảy_nến_disease'})
+MERGE (o2:organ {id: 'cột_sống_organ'})
+MERGE (o1)-[r5:affects]->(o2)
+SET r5.text = 'Viêm khớp vảy nến là bệnh lý viêm khớp tự miễn nằm trong nhóm bệnh lý khớp cột sống huyết thanh âm tính, ảnh hưởng đến nhiều cơ quan trong cơ thể, từ hệ miễn dịch, hệ tiêu hóa đến các khớp lớn ở các chi dưới, các khớp ngón tay, ngón chân và cột sống.'
+
+MERGE (o1:disease {id: 'viêm_khớp_vảy_nến_disease'})
+MERGE (o2:symptom {id: 'tàn_phế_symptom'})
+MERGE (o1)-[r6:isSymptomOf]->(o2)
+SET r6.text = 'Nếu không được can thiệp kịp thời và đúng cách, bệnh nhân có nguy cơ tàn phế.'
+
+MERGE (o1:disease {id: 'viêm_khớp_vảy_nến_disease'})
+MERGE (o2:symptom {id: 'tần_suất_ca_mắc_mới_symptom'})
+MERGE (o1)-[r7:relatedTo]->(o2)
+SET r7.text = 'Theo các nghiên cứu, có khoảng 0,3 - 1% dân số mắc bệnh, tần suất ca mắc mới khoảng 3,4 - 8 trường hợp trong số 100.000 người.'
+
+MERGE (o1:disease {id: 'viêm_khớp_vảy_nến_disease'})
+MERGE (o2:disease {id: 'bệnh_vảy_nến_disease'})
+MERGE (o1)-[r8:causedBy]->(o2)
+SET r8.text = 'Thêm vào đó, khoảng 6 - 42% bệnh này do biến chứng của bệnh vảy nến.'
+
+MERGE (o1:disease {id: 'viêm_khớp_vảy_nến_disease'})
+MERGE (o2:symptom {id: 'tổn_thương_ở_da_symptom'})
+MERGE (o1)-[r9:relatedTo]->(o2)
+SET r9.text = 'Bệnh viêm khớp do vảy nến có thể khởi phát sau 10 - 12 năm từ lúc có tổn thương ở da, hoặc có thể xảy ra cùng lúc.'
+
+MERGE (o1:disease {id: 'viêm_khớp_vảy_nến_disease'})
+MERGE (o2:disease {id: 'bệnh_vảy_nến_disease'})
+MERGE (o1)-[r10:relatedTo]->(o2)
+SET r10.text = 'Viêm khớp vảy nến (tiếng Anh là Psoriatic Arthritis - PsA) là một bệnh lý viêm khớp xảy ra ở một số bệnh nhân mắc bệnh vảy nến.'
+
+MERGE (o1:disease {id: 'viêm_khớp_vảy_nến_disease'})
+MERGE (o2:symptom {id: 'phát_ban_đỏ_symptom'})
+MERGE (o1)-[r11:isSymptomOf]->(o2)
+SET r11.text = 'Các triệu chứng ban đầu của bệnh vảy nến thường bắt đầu từ tổn thương da như hiện tượng phát ban đỏ, có vảy, thường xuất hiện nhiều ở khuỷu tay, đầu gối, mắt cá chân, bàn tay và bàn chân người bệnh.'
+
+MERGE (o1:disease {id: 'viêm_khớp_vảy_nến_disease'})
+MERGE (o2:symptom {id: 'có_vảy_symptom'})
+MERGE (o1)-[r12:isSymptomOf]->(o2)
+SET r12.text = 'Các triệu chứng ban đầu của bệnh vảy nến thường bắt đầu từ tổn thương da như hiện tượng phát ban đỏ, có vảy, thường xuất hiện nhiều ở khuỷu tay, đầu gối, mắt cá chân, bàn tay và bàn chân người bệnh.'
+
+MERGE (o1:disease {id: 'viêm_khớp_vảy_nến_disease'})
+MERGE (o2:symptom {id: 'xuất_hiện_nhiều_ở_khuỷu_tay_symptom'})
+MERGE (o1)-[r13:isSymptomOf]->(o2)
+SET r13.text = 'Các triệu chứng ban đầu của bệnh vảy nến thường bắt đầu từ tổn thương da như hiện tượng phát ban đỏ, có vảy, thường xuất hiện nhiều ở khuỷu tay, đầu gối, mắt cá chân, bàn tay và bàn chân người bệnh.'
+
+MERGE (o1:disease {id: 'viêm_khớp_vảy_nến_disease'})
+MERGE (o2:symptom {id: 'xuất_hiện_nhiều_ở_đầu_gối_symptom'})
+MERGE (o1)-[r14:isSymptomOf]->(o2)
+SET r14.text = 'Các triệu chứng ban đầu của bệnh vảy nến thường bắt đầu từ tổn thương da như hiện tượng phát ban đỏ, có vảy, thường xuất hiện nhiều ở khuỷu tay, đầu gối, mắt cá chân, bàn tay và bàn chân người bệnh.'
+
+MERGE (o1:disease {id: 'viêm_khớp_vảy_nến_disease'})
+MERGE (o2:symptom {id: 'xuất_hiện_nhiều_ở_mắt_cá_chân_symptom'})
+MERGE (o1)-[r15:isSymptomOf]->(o2)
+SET r15.text = 'Các triệu chứng ban đầu của bệnh vảy nến thường bắt đầu từ tổn thương da như hiện tượng phát ban đỏ, có vảy, thường xuất hiện nhiều ở khuỷu tay, đầu gối, mắt cá chân, bàn tay và bàn chân người bệnh.'
+
+MERGE (o1:disease {id: 'viêm_khớp_vảy_nến_disease'})
+MERGE (o2:symptom {id: 'xuất_hiện_nhiều_ở_bàn_tay_symptom'})
+MERGE (o1)-[r16:isSymptomOf]->(o2)
+SET r16.text = 'Các triệu chứng ban đầu của bệnh vảy nến thường bắt đầu từ tổn thương da như hiện tượng phát ban đỏ, có vảy, thường xuất hiện nhiều ở khuỷu tay, đầu gối, mắt cá chân, bàn tay và bàn chân người bệnh.'
+
+MERGE (o1:disease {id: 'viêm_khớp_vảy_nến_disease'})
+MERGE (o2:symptom {id: 'xuất_hiện_nhiều_ở_bàn_chân_symptom'})
+MERGE (o1)-[r17:isSymptomOf]->(o2)
+SET r17.text = 'Các triệu chứng ban đầu của bệnh vảy nến thường bắt đầu từ tổn thương da như hiện tượng phát ban đỏ, có vảy, thường xuất hiện nhiều ở khuỷu tay, đầu gối, mắt cá chân, bàn tay và bàn chân người bệnh.'
+
+MERGE (o1:disease {id: 'viêm_khớp_vảy_nến_disease'})
+MERGE (o2:disease {id: 'bệnh_vảy_nến_disease'})
+MERGE (o1)-[r18:relatedTo]->(o2)
+SET r18.text = 'Hầu hết các trường hợp viêm khớp vảy nến tiến triển từ bệnh vảy nến'
+
+MERGE (o1:disease {id: 'viêm_khớp_vảy_nến_disease'})
+MERGE (o2:symptom {id: 'đau_khớp_symptom'})
+MERGE (o1)-[r19:isSymptomOf]->(o2)
+SET r19.text = 'Đau khớp, cứng khớp và sưng ở các khớp chính là những triệu chứng điển hình của bệnh.'
+
+MERGE (o1:disease {id: 'viêm_khớp_vảy_nến_disease'})
+MERGE (o2:symptom {id: 'cứng_khớp_symptom'})
+MERGE (o1)-[r20:isSymptomOf]->(o2)
+SET r20.text = 'Đau khớp, cứng khớp và sưng ở các khớp chính là những triệu chứng điển hình của bệnh.'
+
+MERGE (o1:disease {id: 'viêm_khớp_vảy_nến_disease'})
+MERGE (o2:symptom {id: 'sưng_ở_các_khớp_symptom'})
+MERGE (o1)-[r21:isSymptomOf]->(o2)
+SET r21.text = 'Đau khớp, cứng khớp và sưng ở các khớp chính là những triệu chứng điển hình của bệnh.'
+
+MERGE (o1:disease {id: 'viêm_khớp_vảy_nến_disease'})
+MERGE (o2:organ {id: 'ngón_tay_organ'})
+MERGE (o1)-[r22:affects]->(o2)
+SET r22.text = 'Bệnh có thể ảnh hưởng đến bất kỳ cơ quan nào trong cơ thể, từ ngón tay, cột sống đến hệ tiêu hóa, mức độ ảnh hưởng từ nhẹ đến nặng.'
+
+MERGE (o1:disease {id: 'viêm_khớp_vảy_nến_disease'})
+MERGE (o2:organ {id: 'cột_sống_organ'})
+MERGE (o1)-[r23:affects]->(o2)
+SET r23.text = 'Bệnh có thể ảnh hưởng đến bất kỳ cơ quan nào trong cơ thể, từ ngón tay, cột sống đến hệ tiêu hóa, mức độ ảnh hưởng từ nhẹ đến nặng.'
+
+MERGE (o1:disease {id: 'viêm_khớp_vảy_nến_disease'})
+MERGE (o2:organ {id: 'hệ_tiêu_hóa_organ'})
+MERGE (o1)-[r24:affects]->(o2)
+SET r24.text = 'Bệnh có thể ảnh hưởng đến bất kỳ cơ quan nào trong cơ thể, từ ngón tay, cột sống đến hệ tiêu hóa, mức độ ảnh hưởng từ nhẹ đến nặng.'
+
+MERGE (o1:disease {id: 'viêm_khớp_vảy_nến_disease'})
+MERGE (o2:treatment {id: 'kiểm_soát_các_triệu_chứng_treatment'})
+MERGE (o1)-[r25:treatedBy]->(o2)
+SET r25.text = 'Hiện chưa có phương pháp điều trị dứt điểm bệnh viêm khớp vảy nến, các biện pháp can thiệp chủ yếu nhằm kiểm soát các triệu chứng, ngăn ngừa tổn thương cấu trúc, ngăn ngừa biến chứng nguy hiểm đến hệ cơ xương khớp.'
+
+MERGE (o1:disease {id: 'viêm_khớp_vảy_nến_disease'})
+MERGE (o2:treatment {id: 'ngăn_ngừa_tổn_thương_cấu_trúc_treatment'})
+MERGE (o1)-[r26:treatedBy]->(o2)
+SET r26.text = 'Hiện chưa có phương pháp điều trị dứt điểm bệnh viêm khớp vảy nến, các biện pháp can thiệp chủ yếu nhằm kiểm soát các triệu chứng, ngăn ngừa tổn thương cấu trúc, ngăn ngừa biến chứng nguy hiểm đến hệ cơ xương khớp.'
+
+MERGE (o1:disease {id: 'viêm_khớp_vảy_nến_disease'})
+MERGE (o2:treatment {id: 'ngăn_ngừa_biến_chứng_nguy_hiểm_đến_hệ_cơ_xương_khớp_treatment'})
+MERGE (o1)-[r27:treatedBy]->(o2)
+SET r27.text = 'Hiện chưa có phương pháp điều trị dứt điểm bệnh viêm khớp vảy nến, các biện pháp can thiệp chủ yếu nhằm kiểm soát các triệu chứng, ngăn ngừa tổn thương cấu trúc, ngăn ngừa biến chứng nguy hiểm đến hệ cơ xương khớp.'
+
+MERGE (o1:disease {id: 'viêm_khớp_vảy_nến_disease'})
+MERGE (o2:symptom {id: 'vô_hiệu_hóa_toàn_bộ_hệ_khớp_symptom'})
+MERGE (o1)-[r28:isSymptomOf]->(o2)
+SET r28.text = 'Trong trường hợp bệnh phát hiện muộn, không được can thiệp điều trị đúng cách có thể gây “vô hiệu hóa” toàn bộ hệ khớp của bệnh nhân.'
+
+MERGE (o1:disease {id: 'viêm_khớp_vảy_nến_disease'})
+MERGE (o2:symptom {id: 'vị_trí_khớp_bị_viêm_symptom'})
+MERGE (o1)-[r29:relatedTo]->(o2)
+SET r29.text = 'Dựa theo vị trí khớp bị viêm và tổn thương, viêm khớp vảy nến được chia thành 5 thể (2), gồm:'
+
+MERGE (o1:disease {id: 'viêm_khớp_vảy_nến_disease'})
+MERGE (o2:symptom {id: 'tổn_thương_symptom'})
+MERGE (o1)-[r30:relatedTo]->(o2)
+SET r30.text = 'Dựa theo vị trí khớp bị viêm và tổn thương, viêm khớp vảy nến được chia thành 5 thể (2), gồm:'
+
+MERGE (o1:disease {id: 'viêm_khớp_vảy_nến_disease'})
+MERGE (o2:test {id: 'thống_kê_test'})
+MERGE (o1)-[r31:relatedTo]->(o2)
+SET r31.text = 'Thống kê cho thấy khoảng 50% trường hợp bệnh nhân ở thể này.'
+
+MERGE (o1:disease {id: 'viêm_khớp_vảy_nến_disease'})
+MERGE (o2:organ {id: 'khớp_gối_trái_và_phải_organ'})
+MERGE (o1)-[r32:affects]->(o2)
+SET r32.text = 'Đây là thể viêm khớp ảnh hưởng đến các khớp đối xứng 2 bên, như khớp gối trái và phải của bệnh nhân.'
+
+MERGE (o1:disease {id: 'viêm_khớp_vảy_nến_disease'})
+MERGE (o2:disease {id: 'bệnh_viêm_khớp_dạng_thấp_disease'})
+MERGE (o1)-[r33:relatedTo]->(o2)
+SET r33.text = 'Người bệnh có thể xuất hiện triệu chứng tương tự như bệnh viêm khớp dạng thấp, nhưng thường có xu hướng nhẹ hơn và ít bị biến dạng khớp hơn.'
+
+MERGE (o1:disease {id: 'viêm_khớp_vảy_nến_disease'})
+MERGE (o2:symptom {id: 'vô_hiệu_hóa_toàn_bộ_các_khớp_symptom'})
+MERGE (o1)-[r34:isSymptomOf]->(o2)
+SET r34.text = 'Tuy nhiên, người bệnh không nên chủ quan vì thể này có thể gây vô hiệu hóa toàn bộ các khớp.'
+
+MERGE (o1:disease {id: 'viêm_khớp_vảy_nến_disease'})
+MERGE (o2:organ {id: 'khớp_ở_một_bên_cơ_thể_organ'})
+MERGE (o1)-[r35:affects]->(o2)
+SET r35.text = 'Thể này gây ảnh hưởng khớp ở một bên cơ thể, hầu hết là từ 4 khớp trở xuống.'
+
+MERGE (o1:disease {id: 'viêm_khớp_vảy_nến_disease'})
+MERGE (o2:test {id: 'thống_kê_test'})
+MERGE (o1)-[r36:relatedTo]->(o2)
+SET r36.text = 'Khoảng 35% trường hợp người bệnh ở thể này.'
+
+MERGE (o1:disease {id: 'viêm_khớp_vảy_nến_disease'})
+MERGE (o2:organ {id: 'các_khớp_gần_nhất_với_móng_tay_organ'})
+MERGE (o1)-[r37:affects]->(o2)
+SET r37.text = 'Thể này liên quan đến các khớp gần nhất với móng tay, được gọi là khớp xa.'
+
+MERGE (o1:disease {id: 'viêm_khớp_vảy_nến_disease'})
+MERGE (o2:test {id: 'thống_kê_test'})
+MERGE (o1)-[r38:relatedTo]->(o2)
+SET r38.text = 'Thống kê cho thấy khoảng 10% bệnh nhân viêm khớp vảy nến ở thể này.'
+
+MERGE (o1:disease {id: 'viêm_khớp_vảy_nến_disease'})
+MERGE (o2:organ {id: 'các_khớp_xa_ngón_chân_và_tay_organ'})
+MERGE (o1)-[r39:affects]->(o2)
+SET r39.text = 'Thể viêm khớp vảy nến các khớp xa ngón chân và tay'
+
+MERGE (o1:disease {id: 'viêm_khớp_vảy_nến_disease'})
+MERGE (o2:organ {id: 'cột_sống_organ'})
+MERGE (o1)-[r40:affects]->(o2)
+SET r40.text = 'Thể này liên quan đến cột sống của bệnh nhân, toàn bộ cột sống từ cổ đến thắt lưng dưới có thể bị ảnh hưởng, gây cảm giác đau nhức mỗi khi cử động, triệu chứng tương tự như viêm cột sống dính khớp.'
+
+MERGE (o1:disease {id: 'viêm_khớp_vảy_nến_disease'})
+MERGE (o2:symptom {id: 'đau_nhức_mỗi_khi_cử_động_symptom'})
+MERGE (o1)-[r41:isSymptomOf]->(o2)
+SET r41.text = 'Thể này liên quan đến cột sống của bệnh nhân, toàn bộ cột sống từ cổ đến thắt lưng dưới có thể bị ảnh hưởng, gây cảm giác đau nhức mỗi khi cử động, triệu chứng tương tự như viêm cột sống dính khớp.'
+
+MERGE (o1:disease {id: 'viêm_khớp_vảy_nến_disease'})
+MERGE (o2:disease {id: 'viêm_cột_sống_dính_khớp_disease'})
+MERGE (o1)-[r42:relatedTo]->(o2)
+SET r42.text = 'Thể này liên quan đến cột sống của bệnh nhân, toàn bộ cột sống từ cổ đến thắt lưng dưới có thể bị ảnh hưởng, gây cảm giác đau nhức mỗi khi cử động, triệu chứng tương tự như viêm cột sống dính khớp.'
+
+MERGE (o1:disease {id: 'viêm_khớp_vảy_nến_disease'})
+MERGE (o2:organ {id: 'bàn_tay_organ'})
+MERGE (o1)-[r43:affects]->(o2)
+SET r43.text = 'Các bộ phận xung quanh như bàn tay, bàn chân, cánh tay, cẳng chân, hông cũng có thể bị ảnh hưởng.'
+
+MERGE (o1:disease {id: 'viêm_khớp_vảy_nến_disease'})
+MERGE (o2:organ {id: 'bàn_chân_organ'})
+MERGE (o1)-[r44:affects]->(o2)
+SET r44.text = 'Các bộ phận xung quanh như bàn tay, bàn chân, cánh tay, cẳng chân, hông cũng có thể bị ảnh hưởng.'
+
+MERGE (o1:disease {id: 'viêm_khớp_vảy_nến_disease'})
+MERGE (o2:organ {id: 'cánh_tay_organ'})
+MERGE (o1)-[r45:affects]->(o2)
+SET r45.text = 'Các bộ phận xung quanh như bàn tay, bàn chân, cánh tay, cẳng chân, hông cũng có thể bị ảnh hưởng.'
+
+MERGE (o1:disease {id: 'viêm_khớp_vảy_nảy_disease'})
+MERGE (o2:organ {id: 'cẳng_chân_organ'})
+MERGE (o1)-[r46:affects]->(o2)
+SET r46.text = 'Các bộ phận xung quanh như bàn tay, bàn chân, cánh tay, cẳng chân, hông cũng có thể bị ảnh hưởng.'
+
+MERGE (o1:disease {id: 'viêm_khớp_vảy_nến_disease'})
+MERGE (o2:organ {id: 'hông_organ'})
+MERGE (o1)-[r47:affects]->(o2)
+SET r47.text = 'Các bộ phận xung quanh như bàn tay, bàn chân, cánh tay, cẳng chân, hông cũng có thể bị ảnh hưởng.'
+
+MERGE (o1:disease {id: 'viêm_khớp_vảy_nến_disease'})
+MERGE (o2:symptom {id: 'phá_hủy_sụn_khớp_symptom'})
+MERGE (o1)-[r48:isSymptomOf]->(o2)
+SET r48.text = 'Đây là thể bệnh viêm khớp vảy nến nghiêm trọng nhất, có thể phá hủy sụn khớp, gây biến dạng các khớp.'
+
+MERGE (o1:disease {id: 'viêm_khớp_vảy_nến_disease'})
+MERGE (o2:symptom {id: 'biến_dạng_các_khớp_symptom'})
+MERGE (o1)-[r49:isSymptomOf]->(o2)
+SET r49.text = 'Đây là thể bệnh viêm khớp vảy nến nghiêm trọng nhất, có thể phá hủy sụn khớp, gây biến dạng các khớp.'
+
+MERGE (o1:disease {id: 'bệnh_vảy_nến_disease'})
+MERGE (o2:disease {id: 'viêm_khớp_do_vảy_nến_disease'})
+MERGE (o1)-[r50:causedBy]->(o2)
+SET r50.text = 'Bệnh vảy nến: Đây được xem là yếu tố nguy cơ lớn nhất tiến triển thành bệnh.'
+
+MERGE (o1:symptom {id: 'tổn_thương_trên_móng_tay_symptom'})
+MERGE (o2:disease {id: 'viêm_khớp_do_vảy_nến_disease'})
+MERGE (o1)-[r51:isSymptomOf]->(o2)
+SET r51.text = 'Bệnh nhân vảy nến bị tổn thương trên móng tay có khả năng tiến triển thành bệnh rất cao.'
+
+MERGE (o1:cause {id: 'tiền_sử_gia_đình_cause'})
+MERGE (o2:disease {id: 'viêm_khớp_do_vảy_nến_disease'})
+MERGE (o1)-[r52:causedBy]->(o2)
+SET r52.text = 'Thăm hỏi bệnh sử bản thân và gia đình người bệnh cho thấy rằng, nhiều bệnh nhân có cha mẹ, anh, chị và em ruột mắc căn bệnh này.'
+
+MERGE (o1:cause {id: 'tuổi_tác_cause'})
+MERGE (o2:disease {id: 'viêm_khớp_do_vảy_nến_disease'})
+MERGE (o1)-[r53:causedBy]->(o2)
+SET r53.text = 'Bệnh có thể xảy ra ở mọi đối tượng và độ tuổi nhưng phổ biến nhất trong khoảng từ 30 - 50 tuổi.'
+
+MERGE (o1:disease {id: 'viêm_khớp_do_vảy_nến_disease'})
+MERGE (o2:disease {id: 'bệnh_lý_mạn_tính_disease'})
+MERGE (o1)-[r54:isSymptomOf]->(o2)
+SET r54.text = 'Đây là bệnh lý mạn tính, có thể tiến triển tồi tệ hơn theo thời gian, tuy nhiên có những thời điểm các triệu chứng bệnh được cải thiện, bệnh thuyên giảm xen kẽ những đợt cấp.'
+
+MERGE (o1:disease {id: 'viêm_khớp_do_vảy_nến_disease'})
+MERGE (o2:organ {id: 'cơ_xương_khớp_organ'})
+MERGE (o1)-[r55:affects]->(o2)
+SET r55.text = 'Viêm khớp do bệnh vảy nến có thể ảnh hưởng đến toàn bộ các cơ xương khớp ở hai bên cơ thể hoặc chỉ một bên.'
+
+MERGE (o1:symptom {id: 'đau_đớn_symptom'})
+MERGE (o2:disease {id: 'viêm_khớp_do_vảy_nến_disease'})
+MERGE (o1)-[r56:isSymptomOf]->(o2)
+SET r56.text = 'Giống như bệnh viêm khớp dạng thấp, bệnh này cũng gây cảm giác đau đớn, sưng phồng và ấm khớp khi chạm tay vào.'
+
+MERGE (o1:symptom {id: 'sưng_phồng_symptom'})
+MERGE (o2:disease {id: 'viêm_khớp_do_vảy_nến_disease'})
+MERGE (o1)-[r57:isSymptomOf]->(o2)
+SET r57.text = 'Giống như bệnh viêm khớp dạng thấp, bệnh này cũng gây cảm giác đau đớn, sưng phồng và ấm khớp khi chạm tay vào.'
+
+MERGE (o1:symptom {id: 'ấm_khớp_symptom'})
+MERGE (o2:disease {id: 'viêm_khớp_do_vảy_nến_disease'})
+MERGE (o1)-[r58:isSymptomOf]->(o2)
+SET r58.text = 'Giống như bệnh viêm khớp dạng thấp, bệnh này cũng gây cảm giác đau đớn, sưng phồng và ấm khớp khi chạm tay vào.'
+
+MERGE (o1:symptom {id: 'sưng_phồng_các_ngón_tay__ngón_chân_symptom'})
+MERGE (o2:disease {id: 'viêm_khớp_do_vảy_nến_disease'})
+MERGE (o1)-[r59:isSymptomOf]->(o2)
+SET r59.text = 'Sưng phồng các ngón tay, ngón chân: Người bệnh có thể gặp tình trạng đau nhức, sưng ở ngón tay, ngón chân hoặc cũng có thể dẫn đến các dị tật ở tay chân.'
+
+MERGE (o1:symptom {id: 'đau_nhức_symptom'})
+MERGE (o2:disease {id: 'viêm_khớp_do_vảy_nến_disease'})
+MERGE (o1)-[r60:isSymptomOf]->(o2)
+SET r60.text = 'Sưng phồng các ngón tay, ngón chân: Người bệnh có thể gặp tình trạng đau nhức, sưng ở ngón tay, ngón chân hoặc cũng có thể dẫn đến các dị tật ở tay chân.'
+
+MERGE (o1:symptom {id: 'dị_tật_ở_tay_chân_symptom'})
+MERGE (o2:disease {id: 'viêm_khớp_do_vảy_nến_disease'})
+MERGE (o1)-[r61:isSymptomOf]->(o2)
+SET r61.text = 'Sưng phồng các ngón tay, ngón chân: Người bệnh có thể gặp tình trạng đau nhức, sưng ở ngón tay, ngón chân hoặc cũng có thể dẫn đến các dị tật ở tay chân.'
+
+MERGE (o1:symptom {id: 'đau_nhức_symptom'})
+MERGE (o2:disease {id: 'viêm_khớp_do_vảy_nến_disease'})
+MERGE (o1)-[r62:isSymptomOf]->(o2)
+SET r62.text = 'Đau nhức khắp các điểm mà gân và dây chằng bám vào xương, đặc biệt là phần lòng trong bàn chân hoặc mặt sau của gót chân (viêm gân Achilles).'
+
+MERGE (o1:symptom {id: 'viêm_gân_achilles_symptom'})
+MERGE (o2:disease {id: 'viêm_khớp_do_vảy_nến_disease'})
+MERGE (o1)-[r63:isSymptomOf]->(o2)
+SET r63.text = 'Đau nhức khắp các điểm mà gân và dây chằng bám vào xương, đặc biệt là phần lòng trong bàn chân hoặc mặt sau của gót chân (viêm gân Achilles).'
+
+MERGE (o1:symptom {id: 'đau_lưng_symptom'})
+MERGE (o2:disease {id: 'viêm_khớp_do_vảy_nến_disease'})
+MERGE (o1)-[r64:isSymptomOf]->(o2)
+SET r64.text = 'Đau lưng: Một số trường hợp bệnh tiến triển gây triệu chứng viêm cột sống, hay còn gọi là viêm cột sống dính khớp các khớp đốt sống giữa cột sống và ở trong các khớp nằm giữa cột sống và xương chậu.'
+
+MERGE (o1:symptom {id: 'viêm_cột_sống_symptom'})
+MERGE (o2:disease {id: 'viêm_khớp_do_vảy_nến_disease'})
+MERGE (o1)-[r65:isSymptomOf]->(o2)
+SET r65.text = 'Đau lưng: Một số trường hợp bệnh tiến triển gây triệu chứng viêm cột sống, hay còn gọi là viêm cột sống dính khớp các khớp đốt sống giữa cột sống và ở trong các khớp nằm giữa cột sống và xương chậu.'
+
+MERGE (o1:symptom {id: 'viêm_cột_sống_dính_khớp_symptom'})
+MERGE (o2:disease {id: 'viêm_khớp_do_vảy_nến_disease'})
+MERGE (o1)-[r66:isSymptomOf]->(o2)
+SET r66.text = 'Đau lưng: Một số trường hợp bệnh tiến triển gây triệu chứng viêm cột sống, hay còn gọi là viêm cột sống dính khớp các khớp đốt sống giữa cột sống và ở trong các khớp nằm giữa cột sống và xương chậu.'
+
+MERGE (o1:disease {id: 'viêm_khớp_vảy_nến_disease'})
+MERGE (o2:disease {id: 'viêm_cột_sống_dính_khớp_disease'})
+MERGE (o1)-[r67:isSymptomOf]->(o2)
+SET r67.text = 'Một số trường hợp viêm khớp vảy nến tiến triển thành viêm cột sống dính khớp gây đau vùng lưng dưới PGS.TS.BS Đặng Hồng Hoa, Trưởng khoa Nội Cơ Xương Khớp, Bệnh viện Đa khoa Tâm Anh, Hà Nội khuyến cáo: “Các triệu chứng của viêm khớp vảy nến có thể tiến triển chậm hoặc xuất hiện đột ngột, ngay khi phát hiện các triệu chứng bệnh, vì thế người bệnh nên đến ngay cơ sở y tế uy tín để được khám, chẩn đoán chính xác và can thiệp điều trị kịp thời, tránh trường hợp bệnh tiến triển nghiêm trọng gây hư hại toàn bộ khớp, ảnh hưởng đến khả năng vận động.”'
+
+MERGE (o1:symptom {id: 'đau_vùng_lưng_dưới_symptom'})
+MERGE (o2:disease {id: 'viêm_cột_sống_dính_khớp_disease'})
+MERGE (o1)-[r68:isSymptomOf]->(o2)
+SET r68.text = 'Một số trường hợp viêm khớp vảy nến tiến triển thành viêm cột sống dính khớp gây đau vùng lưng dưới PGS.TS.BS Đặng Hồng Hoa, Trưởng khoa Nội Cơ Xương Khớp, Bệnh viện Đa khoa Tâm Anh, Hà Nội khuyến cáo: “Các triệu chứng của viêm khớp vảy nến có thể tiến triển chậm hoặc xuất hiện đột ngột, ngay khi phát hiện các triệu chứng bệnh, vì thế người bệnh nên đến ngay cơ sở y tế uy tín để được khám, chẩn đoán chính xác và can thiệp điều trị kịp thời, tránh trường hợp bệnh tiến triển nghiêm trọng gây hư hại toàn bộ khớp, ảnh hưởng đến khả năng vận động.”'
+
+MERGE (o1:symptom {id: 'hư_hại_toàn_bộ_khớp_symptom'})
+MERGE (o2:disease {id: 'viêm_khớp_do_vảy_nến_disease'})
+MERGE (o1)-[r69:isSymptomOf]->(o2)
+SET r69.text = 'Một số trường hợp viêm khớp vảy nến tiến triển thành viêm cột sống dính khớp gây đau vùng lưng dưới PGS.TS.BS Đặng Hồng Hoa, Trưởng khoa Nội Cơ Xương Khớp, Bệnh viện Đa khoa Tâm Anh, Hà Nội khuyến cáo: “Các triệu chứng của viêm khớp vảy nến có thể tiến triển chậm hoặc xuất hiện đột ngột, ngay khi phát hiện các triệu chứng bệnh, vì thế người bệnh nên đến ngay cơ sở y tế uy tín để được khám, chẩn đoán chính xác và can thiệp điều trị kịp thời, tránh trường hợp bệnh tiến triển nghiêm trọng gây hư hại toàn bộ khớp, ảnh hưởng đến khả năng vận động.”'
+
+MERGE (o1:symptom {id: 'ảnh_hưởng_đến_khả_năng_vận_động_symptom'})
+MERGE (o2:disease {id: 'viêm_khớp_do_vảy_nến_disease'})
+MERGE (o1)-[r70:isSymptomOf]->(o2)
+SET r70.text = 'Một số trường hợp viêm khớp vảy nến tiến triển thành viêm cột sống dính khớp gây đau vùng lưng dưới PGS.TS.BS Đặng Hồng Hoa, Trưởng khoa Nội Cơ Xương Khớp, Bệnh viện Đa khoa Tâm Anh, Hà Nội khuyến cáo: “Các triệu chứng của viêm khớp vảy nến có thể tiến triển chậm hoặc xuất hiện đột ngột, ngay khi phát hiện các triệu chứng bệnh, vì thế người bệnh nên đến ngay cơ sở y tế uy tín để được khám, chẩn đoán chính xác và can thiệp điều trị kịp thời, tránh trường hợp bệnh tiến triển nghiêm trọng gây hư hại toàn bộ khớp, ảnh hưởng đến khả năng vận động.”'
+
+MERGE (o1:disease {id: 'viêm_khớp_vảy_nến_disease'})
+MERGE (o2:disease {id: 'bệnh_lý_tự_miễn_disease'})
+MERGE (o1)-[r71:causedBy]->(o2)
+SET r71.text = 'Viêm khớp vảy nến là một trong những bệnh viêm khớp do bệnh lý tự miễn, xảy ra khi hệ miễn dịch của cơ thể nhầm lẫn và tấn công các mô và tế bào khỏe mạnh bên trong cơ thể.'
+
+MERGE (o1:organ {id: 'hệ_miễn_dịch_organ'})
+MERGE (o2:disease {id: 'viêm_khớp_vảy_nến_disease'})
+MERGE (o1)-[r72:affects]->(o2)
+SET r72.text = 'Viêm khớp vảy nến là một trong những bệnh viêm khớp do bệnh lý tự miễn, xảy ra khi hệ miễn dịch của cơ thể nhầm lẫn và tấn công các mô và tế bào khỏe mạnh bên trong cơ thể.'
+
+MERGE (o1:symptom {id: 'viêm_ở_khớp_xương_symptom'})
+MERGE (o2:disease {id: 'viêm_khớp_do_vảy_nến_disease'})
+MERGE (o1)-[r73:isSymptomOf]->(o2)
+SET r73.text = 'Chính các phản ứng bất thường này của hệ miễn dịch gây ra hiện tượng viêm ở khớp xương, cùng như việc sản xuất quá mức của các tế bào ở da.'
+
+MERGE (o1:symptom {id: 'sản_xuất_quá_mức_của_các_tế_bào_ở_da_symptom'})
+MERGE (o2:disease {id: 'viêm_khớp_do_vảy_nến_disease'})
+MERGE (o1)-[r74:isSymptomOf]->(o2)
+SET r74.text = 'Chính các phản ứng bất thường này của hệ miễn dịch gây ra hiện tượng viêm ở khớp xương, cùng như việc sản xuất quá mức của các tế bào ở da.'
+
+MERGE (o1:cause {id: 'hệ_miễn_dịch_tự_tấn_công_các_mô_và_tế_bào_khỏe_mạnh_cause'})
+MERGE (o2:disease {id: 'viêm_khớp_do_vảy_nến_disease'})
+MERGE (o1)-[r75:causedBy]->(o2)
+SET r75.text = 'Hiện nay vẫn chưa rõ lý do khiến hệ miễn dịch tự tấn công các mô và tế bào khỏe mạnh, nhưng một số yếu tố được cho là căn nguyên gây bệnh gồm:'
+
+MERGE (o1:cause {id: 'tiền_sử_gia_đình_cause'})
+MERGE (o2:disease {id: 'viêm_khớp_do_vảy_nến_disease'})
+MERGE (o1)-[r76:causedBy]->(o2)
+SET r76.text = 'Thống kê cho thấy nhiều người bệnh có tiền sử gia đình mắc một trong hai bệnh vảy nến và viêm khớp do vảy nến.'
+
+MERGE (o1:disease {id: 'bệnh_vảy_nến_disease'})
+MERGE (o2:disease {id: 'viêm_khớp_do_vảy_nến_disease'})
+MERGE (o1)-[r77:associatedWith]->(o2)
+SET r77.text = 'Thống kê cho thấy nhiều người bệnh có tiền sử gia đình mắc một trong hai bệnh vảy nến và viêm khớp do vảy nến.'
+
+MERGE (o1:cause {id: 'yếu_tố_di_truyền_cause'})
+MERGE (o2:disease {id: 'viêm_khớp_do_vảy_nến_disease'})
+MERGE (o1)-[r78:causedBy]->(o2)
+SET r78.text = 'Các nghiên cứu cũng chứng minh rằng yếu tố di truyền có liên quan đến bệnh.'
+
+MERGE (o1:cause {id: 'hóa_chất_cause'})
+MERGE (o2:disease {id: 'viêm_khớp_do_vảy_nến_disease'})
+MERGE (o1)-[r79:causedBy]->(o2)
+SET r79.text = 'Người bệnh có thể tiếp xúc với hóa chất, các chất phóng xạ, nhiễm vi khuẩn, virus…'
+
+MERGE (o1:cause {id: 'chất_phóng_xạ_cause'})
+MERGE (o2:disease {id: 'viêm_khớp_do_vảy_nến_disease'})
+MERGE (o1)-[r80:causedBy]->(o2)
+SET r80.text = 'Người bệnh có thể tiếp xúc với hóa chất, các chất phóng xạ, nhiễm vi khuẩn, virus…'
+
+MERGE (o1:cause {id: 'nhiễm_vi_khuẩn_cause'})
+MERGE (o2:disease {id: 'viêm_khớp_do_vảy_nến_disease'})
+MERGE (o1)-[r81:causedBy]->(o2)
+SET r81.text = 'Người bệnh có thể tiếp xúc với hóa chất, các chất phóng xạ, nhiễm vi khuẩn, virus…'
+
+MERGE (o1:disease {id: 'bệnh_viêm_khớp_vảy_nến_disease'})
+MERGE (o2:organ {id: 'nhiều_cơ_quan_trong_cơ_thể_organ'})
+MERGE (o1)-[r82:affects]->(o2)
+SET r82.text = 'Bệnh viêm khớp vảy nến
+có thể gây ảnh hưởng đến nhiều cơ quan trong cơ thể, cụ thể là:'
+
+MERGE (o1:disease {id: 'bệnh_viêm_khớp_vảy_nến_disease'})
+MERGE (o2:symptom {id: 'mảng_sần_sùi__có_màu_đỏ_trên_da_và_móng_symptom'})
+MERGE (o1)-[r83:isSymptomOf]->(o2)
+SET r83.text = 'Bệnh thường gặp ở người bệnh vảy nến với các triệu chứng mảng sần sùi, có màu đỏ trên da và móng, thường gặp nhất là các vị trí khớp gần móng ở ngón tay, ngón chân.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_khớp_vảy_nến_disease'})
+MERGE (o2:symptom {id: 'các_vị_trí_khớp_gần_móng_ở_ngón_tay__ngón_chân_symptom'})
+MERGE (o1)-[r84:isSymptomOf]->(o2)
+SET r84.text = 'Bệnh thường gặp ở người bệnh vảy nến với các triệu chứng mảng sần sùi, có màu đỏ trên da và móng, thường gặp nhất là các vị trí khớp gần móng ở ngón tay, ngón chân.'
+
+MERGE (o1:organ {id: 'móng_tay_organ'})
+MERGE (o2:disease {id: 'bệnh_viêm_khớp_vảy_nến_disease'})
+MERGE (o1)-[r85:isSymptomOf]->(o2)
+SET r85.text = 'Lúc này, móng tay có thể trở nên dày, cứng và thô, màu móng cũng thay đổi theo và có dấu hiệu bong tróc.'
+
+MERGE (o1:organ {id: 'móng_tay_organ'})
+MERGE (o2:symptom {id: 'dày__cứng_và_thô_symptom'})
+MERGE (o1)-[r86:isSymptomOf]->(o2)
+SET r86.text = 'Lúc này, móng tay có thể trở nên dày, cứng và thô, màu móng cũng thay đổi theo và có dấu hiệu bong tróc.'
+
+MERGE (o1:organ {id: 'móng_tay_organ'})
+MERGE (o2:symptom {id: 'thay_đổi_màu_symptom'})
+MERGE (o1)-[r87:isSymptomOf]->(o2)
+SET r87.text = 'Lúc này, móng tay có thể trở nên dày, cứng và thô, màu móng cũng thay đổi theo và có dấu hiệu bong tróc.'
+
+MERGE (o1:organ {id: 'móng_tay_organ'})
+MERGE (o2:symptom {id: 'bong_tróc_symptom'})
+MERGE (o1)-[r88:isSymptomOf]->(o2)
+SET r88.text = 'Lúc này, móng tay có thể trở nên dày, cứng và thô, màu móng cũng thay đổi theo và có dấu hiệu bong tróc.'
+
+MERGE (o1:organ {id: 'móng_organ'})
+MERGE (o2:symptom {id: 'ly_móng_symptom'})
+MERGE (o1)-[r89:isSymptomOf]->(o2)
+SET r89.text = 'Một số trường hợp khác móng có thể tách khỏi giường móng, gọi là ly móng.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_khớp_vảy_nến_disease'})
+MERGE (o2:organ {id: 'da_organ'})
+MERGE (o1)-[r90:affects]->(o2)
+SET r90.text = 'Cùng với sự tác động lên da, bệnh vảy nến gây viêm đau, cứng và sưng ở một khớp hoặc nhiều khớp (viêm đa khớp) khiến người bệnh di chuyển khó khăn.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_khớp_vảy_nến_disease'})
+MERGE (o2:symptom {id: 'viêm_đau__cứng_và_sưng_ở_một_khớp_hoặc_nhiều_khớp_symptom'})
+MERGE (o1)-[r91:isSymptomOf]->(o2)
+SET r91.text = 'Cùng với sự tác động lên da, bệnh vảy nến gây viêm đau, cứng và sưng ở một khớp hoặc nhiều khớp (viêm đa khớp) khiến người bệnh di chuyển khó khăn.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_khớp_vảy_nến_disease'})
+MERGE (o2:symptom {id: 'di_chuyển_khó_khăn_symptom'})
+MERGE (o1)-[r92:isSymptomOf]->(o2)
+SET r92.text = 'Cùng với sự tác động lên da, bệnh vảy nến gây viêm đau, cứng và sưng ở một khớp hoặc nhiều khớp (viêm đa khớp) khiến người bệnh di chuyển khó khăn.'
+
+MERGE (o1:organ {id: 'ngón_tay__ngón_chân_organ'})
+MERGE (o2:symptom {id: 'viêm_dactyl_symptom'})
+MERGE (o1)-[r93:isSymptomOf]->(o2)
+SET r93.text = 'Trường hợp ngón tay, ngón chân sưng phù và có hình dạng giống xúc xích gọi là viêm Dactyl.'
+
+MERGE (o1:organ {id: 'ngón_tay__ngón_chân_organ'})
+MERGE (o2:symptom {id: 'sưng_phù_symptom'})
+MERGE (o1)-[r94:isSymptomOf]->(o2)
+SET r94.text = 'Trường hợp ngón tay, ngón chân sưng phù và có hình dạng giống xúc xích gọi là viêm Dactyl.'
+
+MERGE (o1:organ {id: 'ngón_tay__ngón_chân_organ'})
+MERGE (o2:symptom {id: 'hình_dạng_giống_xúc_xích_symptom'})
+MERGE (o1)-[r95:isSymptomOf]->(o2)
+SET r95.text = 'Trường hợp ngón tay, ngón chân sưng phù và có hình dạng giống xúc xích gọi là viêm Dactyl.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_khớp_vảy_nến_disease'})
+MERGE (o2:symptom {id: 'đau_ở_cổ__lưng__khó_gập_duỗi_cột_sống_symptom'})
+MERGE (o1)-[r96:isSymptomOf]->(o2)
+SET r96.text = 'Viêm khớp vảy nến gây sưng phù các khớp ngón tay có hình dạng giống xúc xích còn gọi là viêm Dactyl Ngoài ra, một số bệnh nhân có triệu chứng đau ở cổ, lưng, khó gập duỗi cột sống.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_khớp_vảy_nến_disease'})
+MERGE (o2:organ {id: 'hệ_thống_dây_chằng_và_gân_xung_quanh_organ'})
+MERGE (o1)-[r97:affects]->(o2)
+SET r97.text = 'Bệnh có thể ảnh hưởng đến hệ thống dây chằng và gân xung quanh, làm mòn xương, gia tăng các bệnh lý ở hệ cơ xương khớp.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_khớp_vảy_nến_disease'})
+MERGE (o2:symptom {id: 'mòn_xương_symptom'})
+MERGE (o1)-[r98:isSymptomOf]->(o2)
+SET r98.text = 'Bệnh có thể ảnh hưởng đến hệ thống dây chằng và gân xung quanh, làm mòn xương, gia tăng các bệnh lý ở hệ cơ xương khớp.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_khớp_vảy_nến_disease'})
+MERGE (o2:organ {id: 'hệ_cơ_xương_khớp_organ'})
+MERGE (o1)-[r99:affects]->(o2)
+SET r99.text = 'Bệnh có thể ảnh hưởng đến hệ thống dây chằng và gân xung quanh, làm mòn xương, gia tăng các bệnh lý ở hệ cơ xương khớp.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_khớp_vảy_nến_disease'})
+MERGE (o2:cause {id: 'hệ_thống_miễn_dịch_cơ_thể_nhầm_lẫn_và_tấn_công_chính_các_tế_bào_có_lợi_trong_cấu_trúc_của_mình_cause'})
+MERGE (o1)-[r100:causedBy]->(o2)
+SET r100.text = 'Viêm khớp vảy nến
+là một trong những bệnh lý tự miễn của hệ cơ xương khớp, tức là hệ thống miễn dịch cơ thể nhầm lẫn và tấn công chính các tế bào có lợi trong cấu trúc của mình.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_khớp_vảy_nến_disease'})
+MERGE (o2:organ {id: 'hệ_cơ_xương_khớp_organ'})
+MERGE (o1)-[r101:affects]->(o2)
+SET r101.text = 'Viêm khớp vảy nến
+là một trong những bệnh lý tự miễn của hệ cơ xương khớp, tức là hệ thống miễn dịch cơ thể nhầm lẫn và tấn công chính các tế bào có lợi trong cấu trúc của mình.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_khớp_vảy_nến_disease'})
+MERGE (o2:disease {id: 'viêm_họng_liên_cầu_khuẩn__viêm_da_disease'})
+MERGE (o1)-[r102:isSymptomOf]->(o2)
+SET r102.text = 'Kết quả là có thể dẫn đến một số bệnh nhiễm trùng như viêm họng liên cầu khuẩn, viêm da…'
+
+MERGE (o1:disease {id: 'bệnh_viêm_khớp_vảy_nến_disease'})
+MERGE (o2:disease {id: 'viêm_màng_bồ_đào_disease'})
+MERGE (o1)-[r103:isSymptomOf]->(o2)
+SET r103.text = 'Thống kê có khoảng 7% trường hợp bệnh nhân gặp biến chứng viêm màng bồ đào - một bệnh lý liên quan đến viêm mắt.'
+
+MERGE (o1:disease {id: 'viêm_màng_bồ_đào_disease'})
+MERGE (o2:disease {id: 'viêm_mắt_disease'})
+MERGE (o1)-[r104:relatedTo]->(o2)
+SET r104.text = 'Thống kê có khoảng 7% trường hợp bệnh nhân gặp biến chứng viêm màng bồ đào - một bệnh lý liên quan đến viêm mắt.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_khớp_vảy_nến_disease'})
+MERGE (o2:symptom {id: 'mất_thị_lực_vĩnh_viễn_symptom'})
+MERGE (o1)-[r105:isSymptomOf]->(o2)
+SET r105.text = 'Bên cạnh đó, một số ít trường hợp không được phát hiện sớm và can thiệp kịp thời gây mất thị lực vĩnh viễn.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_khớp_vảy_nến_disease'})
+MERGE (o2:disease {id: 'bệnh_crohn_disease'})
+MERGE (o1)-[r106:associatedWith]->(o2)
+SET r106.text = 'Bệnh nhân
+viêm khớp vảy nến
+có nguy cơ mắc bệnh Crohn (một loại bệnh viêm ruột gây nên triệu chứng tiêu chảy và các vấn đề khác ở hệ tiêu hóa) gấp 8 lần so với người bình thường.'
+
+MERGE (o1:disease {id: 'bệnh_crohn_disease'})
+MERGE (o2:symptom {id: 'tiêu_chảy_symptom'})
+MERGE (o1)-[r107:isSymptomOf]->(o2)
+SET r107.text = 'Bệnh nhân
+viêm khớp vảy nến
+có nguy cơ mắc bệnh Crohn (một loại bệnh viêm ruột gây nên triệu chứng tiêu chảy và các vấn đề khác ở hệ tiêu hóa) gấp 8 lần so với người bình thường.'
+
+MERGE (o1:disease {id: 'bệnh_crohn_disease'})
+MERGE (o2:organ {id: 'hệ_tiêu_hóa_organ'})
+MERGE (o1)-[r108:affects]->(o2)
+SET r108.text = 'Bệnh nhân
+viêm khớp vảy nến
+có nguy cơ mắc bệnh Crohn (một loại bệnh viêm ruột gây nên triệu chứng tiêu chảy và các vấn đề khác ở hệ tiêu hóa) gấp 8 lần so với người bình thường.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_khớp_vảy_nến_disease'})
+MERGE (o2:organ {id: 'phổi_organ'})
+MERGE (o1)-[r109:affects]->(o2)
+SET r109.text = 'Khi tình trạng viêm khớp lan rộng đến phổi có thể dẫn đến bệnh viêm phổi mô kẽ, bệnh nhân có thể ho nhiều, cảm thấy mệt mỏi và có thể khó thở.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_khớp_vảy_nến_disease'})
+MERGE (o2:disease {id: 'viêm_phổi_mô_kẽ_disease'})
+MERGE (o1)-[r110:isSymptomOf]->(o2)
+SET r110.text = 'Khi tình trạng viêm khớp lan rộng đến phổi có thể dẫn đến bệnh viêm phổi mô kẽ, bệnh nhân có thể ho nhiều, cảm thấy mệt mỏi và có thể khó thở.'
+
+MERGE (o1:disease {id: 'viêm_phổi_mô_kẽ_disease'})
+MERGE (o2:symptom {id: 'ho_nhiều_symptom'})
+MERGE (o1)-[r111:isSymptomOf]->(o2)
+SET r111.text = 'Khi tình trạng viêm khớp lan rộng đến phổi có thể dẫn đến bệnh viêm phổi mô kẽ, bệnh nhân có thể ho nhiều, cảm thấy mệt mỏi và có thể khó thở.'
+
+MERGE (o1:disease {id: 'viêm_phổi_mô_kẽ_disease'})
+MERGE (o2:symptom {id: 'mệt_mỏi_symptom'})
+MERGE (o1)-[r112:isSymptomOf]->(o2)
+SET r112.text = 'Khi tình trạng viêm khớp lan rộng đến phổi có thể dẫn đến bệnh viêm phổi mô kẽ, bệnh nhân có thể ho nhiều, cảm thấy mệt mỏi và có thể khó thở.'
+
+MERGE (o1:disease {id: 'viêm_phổi_mô_kẽ_disease'})
+MERGE (o2:symptom {id: 'khó_thở_symptom'})
+MERGE (o1)-[r113:isSymptomOf]->(o2)
+SET r113.text = 'Khi tình trạng viêm khớp lan rộng đến phổi có thể dẫn đến bệnh viêm phổi mô kẽ, bệnh nhân có thể ho nhiều, cảm thấy mệt mỏi và có thể khó thở.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_khớp_vảy_nến_disease'})
+MERGE (o2:disease {id: 'tăng_huyết_áp_disease'})
+MERGE (o1)-[r114:associatedWith]->(o2)
+SET r114.text = 'Thống kê cho thấy bệnh nhân có nhiều nguy cơ mắc phải những tổn thương ở tim mạch và hệ thống mạch máu như tăng huyết áp, tiểu đường, béo phì, cholesterol cao…'
+
+MERGE (o1:disease {id: 'bệnh_viêm_khớp_vảy_nến_disease'})
+MERGE (o2:disease {id: 'tiểu_đường_disease'})
+MERGE (o1)-[r115:associatedWith]->(o2)
+SET r115.text = 'Thống kê cho thấy bệnh nhân có nhiều nguy cơ mắc phải những tổn thương ở tim mạch và hệ thống mạch máu như tăng huyết áp, tiểu đường, béo phì, cholesterol cao…'
+
+MERGE (o1:disease {id: 'bệnh_viêm_khớp_vảy_nến_disease'})
+MERGE (o2:disease {id: 'béo_phì_disease'})
+MERGE (o1)-[r116:associatedWith]->(o2)
+SET r116.text = 'Thống kê cho thấy bệnh nhân có nhiều nguy cơ mắc phải những tổn thương ở tim mạch và hệ thống mạch máu như tăng huyết áp, tiểu đường, béo phì, cholesterol cao…'
+
+MERGE (o1:disease {id: 'bệnh_viêm_khớp_vảy_nến_disease'})
+MERGE (o2:disease {id: 'cholesterol_cao_disease'})
+MERGE (o1)-[r117:associatedWith]->(o2)
+SET r117.text = 'Thống kê cho thấy bệnh nhân có nhiều nguy cơ mắc phải những tổn thương ở tim mạch và hệ thống mạch máu như tăng huyết áp, tiểu đường, béo phì, cholesterol cao…'
+
+MERGE (o1:disease {id: 'bệnh_viêm_khớp_vảy_nến_disease'})
+MERGE (o2:organ {id: 'tim_mạch_organ'})
+MERGE (o1)-[r118:affects]->(o2)
+SET r118.text = 'Thống kê cho thấy bệnh nhân có nhiều nguy cơ mắc phải những tổn thương ở tim mạch và hệ thống mạch máu như tăng huyết áp, tiểu đường, béo phì, cholesterol cao…'
+
+MERGE (o1:disease {id: 'bệnh_viêm_khớp_vảy_nến_disease'})
+MERGE (o2:organ {id: 'hệ_thống_mạch_máu_organ'})
+MERGE (o1)-[r119:affects]->(o2)
+SET r119.text = 'Thống kê cho thấy bệnh nhân có nhiều nguy cơ mắc phải những tổn thương ở tim mạch và hệ thống mạch máu như tăng huyết áp, tiểu đường, béo phì, cholesterol cao…'
+
+MERGE (o1:disease {id: 'bệnh_viêm_khớp_vảy_nến_disease'})
+MERGE (o2:disease {id: 'đột_quỵ_disease'})
+MERGE (o1)-[r120:isSymptomOf]->(o2)
+SET r120.text = 'Khi tình trạng viêm làm tổn thương các mạch máu khiến thành mạch cứng và dày hơn, có thể để lại sẹo, lâu dài làm tăng nguy cơ đột quỵ.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_khớp_vảy_nến_disease'})
+MERGE (o2:symptom {id: 'trầm_cảm_kéo_dài_symptom'})
+MERGE (o1)-[r121:isSymptomOf]->(o2)
+SET r121.text = 'Bệnh nhân
+có nguy cơ trầm cảm kéo dài, thường xuyên lo lắng, mất đi sự tự tin, lạc quan… khi sống cùng các triệu chứng khó chịu và dai dẳng của bệnh.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_khớp_vảy_nến_disease'})
+MERGE (o2:symptom {id: 'lo_lắng_symptom'})
+MERGE (o1)-[r122:isSymptomOf]->(o2)
+SET r122.text = 'Bệnh nhân
+có nguy cơ trầm cảm kéo dài, thường xuyên lo lắng, mất đi sự tự tin, lạc quan… khi sống cùng các triệu chứng khó chịu và dai dẳng của bệnh.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_khớp_vảy_nến_disease'})
+MERGE (o2:symptom {id: 'mất_đi_sự_tự_tin_symptom'})
+MERGE (o1)-[r123:isSymptomOf]->(o2)
+SET r123.text = 'Bệnh nhân
+có nguy cơ trầm cảm kéo dài, thường xuyên lo lắng, mất đi sự tự tin, lạc quan… khi sống cùng các triệu chứng khó chịu và dai dẳng của bệnh.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_khớp_vảy_nến_disease'})
+MERGE (o2:symptom {id: 'mất_đi_sự_lạc_quan_symptom'})
+MERGE (o1)-[r124:isSymptomOf]->(o2)
+SET r124.text = 'Bệnh nhân
+có nguy cơ trầm cảm kéo dài, thường xuyên lo lắng, mất đi sự tự tin, lạc quan… khi sống cùng các triệu chứng khó chịu và dai dẳng của bệnh.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_khớp_vảy_nến_disease'})
+MERGE (o2:test {id: 'thử_nghiệm_test'})
+MERGE (o1)-[r125:diagnosedBy]->(o2)
+SET r125.text = 'Bác sĩ Đặng Hồng Hoa cho biết, không có một thử nghiệm nào là duy nhất để phát hiện
+bệnh viêm khớp vảy nến
+.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_khớp_vảy_nến_disease'})
+MERGE (o2:test {id: 'xét_nghiệm_test'})
+MERGE (o1)-[r126:diagnosedBy]->(o2)
+SET r126.text = 'Thông thường, người bệnh sẽ được chỉ định nhiều xét nghiệm và kiểm tra cận lâm sàng khác nhau để loại trừ các nguyên nhân gây đau khớp.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_khớp_vảy_nến_disease'})
+MERGE (o2:test {id: 'kiểm_tra_cận_lâm_sàng_test'})
+MERGE (o1)-[r127:diagnosedBy]->(o2)
+SET r127.text = 'Thông thường, người bệnh sẽ được chỉ định nhiều xét nghiệm và kiểm tra cận lâm sàng khác nhau để loại trừ các nguyên nhân gây đau khớp.'
+
+MERGE (o1:symptom {id: 'đau_mắt_đỏ_symptom'})
+MERGE (o2:disease {id: 'bệnh_viêm_khớp_vảy_nến_disease'})
+MERGE (o1)-[r128:isSymptomOf]->(o2)
+SET r128.text = 'Đau mắt đỏ;'
+
+MERGE (o1:symptom {id: 'đau_khớp__sưng_khớp_symptom'})
+MERGE (o2:disease {id: 'bệnh_viêm_khớp_vảy_nến_disease'})
+MERGE (o1)-[r129:isSymptomOf]->(o2)
+SET r129.text = 'Đau khớp, sưng khớp trong một thời gian ngắn;'
+
+MERGE (o1:symptom {id: 'nổi_mẩn_đỏ_symptom'})
+MERGE (o2:disease {id: 'bệnh_viêm_khớp_vảy_nến_disease'})
+MERGE (o1)-[r130:isSymptomOf]->(o2)
+SET r130.text = 'Nổi mẩn đỏ, có kèm theo cảm giác nóng tại chỗ sưng và đau khớp;'
+
+MERGE (o1:symptom {id: 'cảm_giác_nóng_symptom'})
+MERGE (o2:disease {id: 'bệnh_viêm_khớp_vảy_nến_disease'})
+MERGE (o1)-[r131:isSymptomOf]->(o2)
+SET r131.text = 'Nổi mẩn đỏ, có kèm theo cảm giác nóng tại chỗ sưng và đau khớp;'
+
+MERGE (o1:symptom {id: 'sưng_symptom'})
+MERGE (o2:disease {id: 'bệnh_viêm_khớp_vảy_nến_disease'})
+MERGE (o1)-[r132:isSymptomOf]->(o2)
+SET r132.text = 'Nổi mẩn đỏ, có kèm theo cảm giác nóng tại chỗ sưng và đau khớp;'
+
+MERGE (o1:symptom {id: 'đau_khớp_symptom'})
+MERGE (o2:disease {id: 'bệnh_viêm_khớp_vảy_nến_disease'})
+MERGE (o1)-[r133:isSymptomOf]->(o2)
+SET r133.text = 'Nổi mẩn đỏ, có kèm theo cảm giác nóng tại chỗ sưng và đau khớp;'
+
+MERGE (o1:symptom {id: 'đau_nhức_ở_dây_chằng_và_mặt_sau_gót_chân_symptom'})
+MERGE (o2:disease {id: 'bệnh_viêm_khớp_vảy_nến_disease'})
+MERGE (o1)-[r134:isSymptomOf]->(o2)
+SET r134.text = 'Đau nhức ở dây chằng và mặt sau gót chân.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_khớp_vảy_nến_disease'})
+MERGE (o2:test {id: 'x-quang_test'})
+MERGE (o1)-[r135:diagnosedBy]->(o2)
+SET r135.text = 'X-quang: Hình ảnh chụp X-quang cho thấy rõ nét những thay đổi ở khớp, chỉ xảy ra trong
+viêm khớp vảy nến
+mà không có ở những bệnh viêm khớp khác.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_khớp_vảy_nến_disease'})
+MERGE (o2:test {id: 'mri_test'})
+MERGE (o1)-[r136:diagnosedBy]->(o2)
+SET r136.text = 'Cộng hưởng từ (MRI): Phương pháp chụp MRI sẽ sử dụng sóng radio và từ trường mạnh để tạo ra những hình ảnh chi tiết nhất của cả mô cứng, mô mềm bên trong cơ thể.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_khớp_vảy_nến_disease'})
+MERGE (o2:test {id: 'mri_test'})
+MERGE (o1)-[r137:diagnosedBy]->(o2)
+SET r137.text = 'Đây chính là phương pháp chẩn đoán được sử dụng nhiều nhất trong các trường hợp kiểm tra chấn thương ở gân, khớp và dây chằng.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_khớp_vảy_nến_disease'})
+MERGE (o2:test {id: 'mri_test'})
+MERGE (o1)-[r138:diagnosedBy]->(o2)
+SET r138.text = 'Hệ thống máy cộng hưởng từ thế hệ mới tại BVĐK Tâm Anh giúp phát hiện chính xác những bất thường ở khớp'
+
+MERGE (o1:disease {id: 'bệnh_viêm_khớp_vảy_nến_disease'})
+MERGE (o2:test {id: 'rf_test'})
+MERGE (o1)-[r139:diagnosedBy]->(o2)
+SET r139.text = 'Yếu tố dạng thấp (RF): Yếu tố dạng thấp là một kháng thể có ở trong máu của những bệnh nhân viêm khớp dạng thấp, nhưng không có trong máu của bệnh nhân
+viêm khớp vảy nến
+.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_khớp_vảy_nến_disease'})
+MERGE (o2:test {id: 'rf_test'})
+MERGE (o1)-[r140:diagnosedBy]->(o2)
+SET r140.text = 'Do đó, việc phát hiện yếu tố này giúp các bác sĩ phân biệt chính xác hai bệnh, tránh sự nhầm lẫn khiến việc điều trị kéo dài, không trúng đích.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_khớp_vảy_nến_disease'})
+MERGE (o2:test {id: 'dịch_tiết_test'})
+MERGE (o1)-[r141:diagnosedBy]->(o2)
+SET r141.text = 'Dịch tiết: Sử dụng một cây kim dài để thu mẫu dịch ở những khớp bị viêm, thường là khớp gối để xác định các tinh thể bệnh lý.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_khớp_vảy_nến_disease'})
+MERGE (o2:test {id: 'dịch_tiết_test'})
+MERGE (o1)-[r142:diagnosedBy]->(o2)
+SET r142.text = 'Ví dụ, nếu dịch khớp bệnh nhân có tinh thể acid uric, thì xác suất bệnh nhân mắc bệnh gout cao hơn
+bệnh viêm khớp vảy nến
+.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_khớp_vảy_nến_disease'})
+MERGE (o2:treatment {id: 'phương_pháp_điều_trị_treatment'})
+MERGE (o1)-[r143:treatedBy]->(o2)
+SET r143.text = 'Hiện chưa có phương pháp điều trị triệt để
+bệnh viêm khớp vảy nến
+.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_khớp_vảy_nến_disease'})
+MERGE (o2:treatment {id: 'kiểm_soát_tình_trạng_viêm_khớp_treatment'})
+MERGE (o1)-[r144:treatedBy]->(o2)
+SET r144.text = 'Các phương pháp hiện tại chủ yếu tập trung kiểm soát tình trạng viêm khớp, tránh làm ảnh hưởng nặng nề đến khớp và các cơ quan xung quanh, ngăn ngừa các cơn đau và nguy cơ tàn tật vĩnh viễn.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_khớp_vảy_nến_disease'})
+MERGE (o2:treatment {id: 'ngăn_ngừa_các_cơn_đau_treatment'})
+MERGE (o1)-[r145:treatedBy]->(o2)
+SET r145.text = 'Các phương pháp hiện tại chủ yếu tập trung kiểm soát tình trạng viêm khớp, tránh làm ảnh hưởng nặng nề đến khớp và các cơ quan xung quanh, ngăn ngừa các cơn đau và nguy cơ tàn tật vĩnh viễn.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_khớp_vảy_nến_disease'})
+MERGE (o2:treatment {id: 'ngăn_ngừa_nguy_cơ_tàn_tật_vĩnh_viễn_treatment'})
+MERGE (o1)-[r146:treatedBy]->(o2)
+SET r146.text = 'Các phương pháp hiện tại chủ yếu tập trung kiểm soát tình trạng viêm khớp, tránh làm ảnh hưởng nặng nề đến khớp và các cơ quan xung quanh, ngăn ngừa các cơn đau và nguy cơ tàn tật vĩnh viễn.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_khớp_vảy_nến_disease'})
+MERGE (o2:treatment {id: 'phác_đồ_điều_trị_treatment'})
+MERGE (o1)-[r147:treatedBy]->(o2)
+SET r147.text = 'Phác đồ điều trị
+viêm khớp vảy nến
+là sự kết hợp điều trị các triệu chứng bệnh ngay khi xuất hiện, song song đó kết hợp chữa lành các tổn thương ở da và khớp.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_khớp_vảy_nến_disease'})
+MERGE (o2:treatment {id: 'điều_trị_bằng_thuốc_treatment'})
+MERGE (o1)-[r148:treatedBy]->(o2)
+SET r148.text = 'Cụ thể: Kết hợp điều trị bằng thuốc và hướng dẫn các biện pháp khắc phục cho người bệnh; tập vật lý trị liệu, phục hồi chức năng các cơ quan vận động.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_khớp_vảy_nến_disease'})
+MERGE (o2:treatment {id: 'tập_vật_lý_trị_liệu_treatment'})
+MERGE (o1)-[r149:treatedBy]->(o2)
+SET r149.text = 'Cụ thể: Kết hợp điều trị bằng thuốc và hướng dẫn các biện pháp khắc phục cho người bệnh; tập vật lý trị liệu, phục hồi chức năng các cơ quan vận động.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_khớp_vảy_nến_disease'})
+MERGE (o2:treatment {id: 'phục_hồi_chức_năng_các_cơ_quan_vận_động_treatment'})
+MERGE (o1)-[r150:treatedBy]->(o2)
+SET r150.text = 'Cụ thể: Kết hợp điều trị bằng thuốc và hướng dẫn các biện pháp khắc phục cho người bệnh; tập vật lý trị liệu, phục hồi chức năng các cơ quan vận động.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_khớp_vảy_nến_disease'})
+MERGE (o2:treatment {id: 'thuốc_kháng_viêm_không_steroid_(nsaids)_treatment'})
+MERGE (o1)-[r151:treatedBy]->(o2)
+SET r151.text = 'Đối với các tổn thương khớp nhẹ: Sử dụng thuốc kháng viêm không steroid (NSAIDs) đơn hoặc phối hợp cùng tiêm corticosteroid tại vị trí viêm.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_khớp_vảy_nến_disease'})
+MERGE (o2:treatment {id: 'tiêm_corticosteroid_treatment'})
+MERGE (o1)-[r152:treatedBy]->(o2)
+SET r152.text = 'Đối với các tổn thương khớp nhẹ: Sử dụng thuốc kháng viêm không steroid (NSAIDs) đơn hoặc phối hợp cùng tiêm corticosteroid tại vị trí viêm.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_khớp_vảy_nến_disease'})
+MERGE (o2:treatment {id: 'methotrexate_treatment'})
+MERGE (o1)-[r153:treatedBy]->(o2)
+SET r153.text = 'Đối với tổn thương thể trung bình và nặng: Sử dụng các loại thuốc điều trị cơ bản như methotrexate hoặc các chế phẩm sinh học.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_khớp_vảy_nến_disease'})
+MERGE (o2:treatment {id: 'chế_phẩm_sinh_học_treatment'})
+MERGE (o1)-[r154:treatedBy]->(o2)
+SET r154.text = 'Đối với tổn thương thể trung bình và nặng: Sử dụng các loại thuốc điều trị cơ bản như methotrexate hoặc các chế phẩm sinh học.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_khớp_vảy_nến_disease'})
+MERGE (o2:treatment {id: 'thuốc_treatment'})
+MERGE (o1)-[r155:treatedBy]->(o2)
+SET r155.text = 'Hầu hết các loại thuốc dùng trong điều trị bệnh đều phát huy tác dụng trên những tổn thương ở da, cụ thể các nhóm thuốc gồm:'
+
+MERGE (o1:disease {id: 'bệnh_viêm_khớp_vảy_nến_disease'})
+MERGE (o2:treatment {id: 'thuốc_chống_viêm_không_steroid_(nsaids)_treatment'})
+MERGE (o1)-[r156:treatedBy]->(o2)
+SET r156.text = 'Thuốc chống viêm không steroid (NSAIDs) giúp giảm tình trạng đau nhức, sưng tấy và cứng khớp mỗi buổi sáng, được dùng trong những liệu trình đầu tiên cho bệnh nhân viêm khớp.'
+
+MERGE (o1:treatment {id: 'thuốc_chống_viêm_không_steroid_(nsaids)_treatment'})
+MERGE (o2:organ {id: 'dạ_dày__ruột_organ'})
+MERGE (o1)-[r157:affects]->(o2)
+SET r157.text = 'Tuy nhiên, khuyến cáo bệnh nhân chỉ nên sử dụng những thuốc này đúng liều lượng theo chỉ định của bác sĩ, tránh việc quá liều gây kích ứng dạ dày, ruột, lâu ngày dẫn đến xuất huyết tiêu hóa.'
+
+MERGE (o1:treatment {id: 'thuốc_chống_viêm_không_steroid_(nsaids)_treatment'})
+MERGE (o2:symptom {id: 'xuất_huyết_tiêu_hóa_symptom'})
+MERGE (o1)-[r158:isSymptomOf]->(o2)
+SET r158.text = 'Tuy nhiên, khuyến cáo bệnh nhân chỉ nên sử dụng những thuốc này đúng liều lượng theo chỉ định của bác sĩ, tránh việc quá liều gây kích ứng dạ dày, ruột, lâu ngày dẫn đến xuất huyết tiêu hóa.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_khớp_vảy_nến_disease'})
+MERGE (o2:treatment {id: 'phương_pháp_điều_trị_dứt_điểm_treatment'})
+MERGE (o1)-[r159:treatedBy]->(o2)
+SET r159.text = 'Hiện chưa có phương pháp điều trị dứt điểm bệnh viêm khớp vảy nến, do đó khuyến cáo người bệnh cần thay đổi lối sống để có thể phòng ngừa được các nguy cơ mắc bệnh, cũng như làm giảm thiểu các triệu chứng khó chịu và biến chứng nguy hiểm do bệnh gây ra:'
+
+MERGE (o1:disease {id: 'bệnh_viêm_khớp_vảy_nến_disease'})
+MERGE (o2:lifestyle {id: 'thay_đổi_lối_sống_lifestyle'})
+MERGE (o1)-[r160:preventedBy]->(o2)
+SET r160.text = 'Hiện chưa có phương pháp điều trị dứt điểm bệnh viêm khớp vảy nến, do đó khuyến cáo người bệnh cần thay đổi lối sống để có thể phòng ngừa được các nguy cơ mắc bệnh, cũng như làm giảm thiểu các triệu chứng khó chịu và biến chứng nguy hiểm do bệnh gây ra:'
+
+MERGE (o1:disease {id: 'bệnh_viêm_khớp_vảy_nến_disease'})
+MERGE (o2:symptom {id: 'triệu_chứng_khó_chịu_symptom'})
+MERGE (o1)-[r161:isSymptomOf]->(o2)
+SET r161.text = 'Hiện chưa có phương pháp điều trị dứt điểm bệnh viêm khớp vảy nến, do đó khuyến cáo người bệnh cần thay đổi lối sống để có thể phòng ngừa được các nguy cơ mắc bệnh, cũng như làm giảm thiểu các triệu chứng khó chịu và biến chứng nguy hiểm do bệnh gây ra:'
+
+MERGE (o1:disease {id: 'bệnh_viêm_khớp_vảy_nến_disease'})
+MERGE (o2:symptom {id: 'biến_chứng_nguy_hiểm_symptom'})
+MERGE (o1)-[r162:isSymptomOf]->(o2)
+SET r162.text = 'Hiện chưa có phương pháp điều trị dứt điểm bệnh viêm khớp vảy nến, do đó khuyến cáo người bệnh cần thay đổi lối sống để có thể phòng ngừa được các nguy cơ mắc bệnh, cũng như làm giảm thiểu các triệu chứng khó chịu và biến chứng nguy hiểm do bệnh gây ra:'
+
+MERGE (o1:lifestyle {id: 'tập_thể_dục__thể_thao_đều_đặn_lifestyle'})
+MERGE (o2:symptom {id: 'cứng_khớp_symptom'})
+MERGE (o1)-[r163:preventedBy]->(o2)
+SET r163.text = 'Thiết lập thói quen tập thể dục, thể thao đều đặn mỗi ngày nhằm giữ các khớp được linh hoạt, tránh tình trạng cứng khớp.'
+
+MERGE (o1:lifestyle {id: 'tập_thể_dục__thể_thao_đều_đặn_lifestyle'})
+MERGE (o2:lifestyle {id: 'giảm_cân_lifestyle'})
+MERGE (o1)-[r164:relatedTo]->(o2)
+SET r164.text = 'Thiết lập thói quen tập thể dục, thể thao đều đặn mỗi ngày nhằm giữ các khớp được linh hoạt, tránh tình trạng cứng khớp. Vận động thường xuyên cũng góp phần giúp giảm cân, cung cấp năng lượng cho cơ thể khỏe mạnh.'
+
+MERGE (o1:lifestyle {id: 'tập_thể_dục__thể_thao_đều_đặn_lifestyle'})
+MERGE (o2:lifestyle {id: 'cung_cấp_năng_lượng_lifestyle'})
+MERGE (o1)-[r165:relatedTo]->(o2)
+SET r165.text = 'Thiết lập thói quen tập thể dục, thể thao đều đặn mỗi ngày nhằm giữ các khớp được linh hoạt, tránh tình trạng cứng khớp. Vận động thường xuyên cũng góp phần giúp giảm cân, cung cấp năng lượng cho cơ thể khỏe mạnh.'
+
+MERGE (o1:lifestyle {id: 'uống_rượu_bia_lifestyle'})
+MERGE (o2:lifestyle {id: 'sức_khỏe_cơ_thể_lifestyle'})
+MERGE (o1)-[r166:aggravatedBy]->(o2)
+SET r166.text = 'Loại bỏ những thói quen xấu gây hại đến sức khỏe cơ thể cũng như có hại cho khớp như hạn chế uống rượu bia, không hút thuốc lá…'
+
+MERGE (o1:lifestyle {id: 'uống_rượu_bia_lifestyle'})
+MERGE (o2:organ {id: 'khớp_organ'})
+MERGE (o1)-[r167:aggravatedBy]->(o2)
+SET r167.text = 'Loại bỏ những thói quen xấu gây hại đến sức khỏe cơ thể cũng như có hại cho khớp như hạn chế uống rượu bia, không hút thuốc lá…'
+
+MERGE (o1:lifestyle {id: 'hút_thuốc_lá_lifestyle'})
+MERGE (o2:lifestyle {id: 'sức_khỏe_cơ_thể_lifestyle'})
+MERGE (o1)-[r168:aggravatedBy]->(o2)
+SET r168.text = 'Loại bỏ những thói quen xấu gây hại đến sức khỏe cơ thể cũng như có hại cho khớp như hạn chế uống rượu bia, không hút thuốc lá…'
+
+MERGE (o1:lifestyle {id: 'hút_thuốc_lá_lifestyle'})
+MERGE (o2:organ {id: 'khớp_organ'})
+MERGE (o1)-[r169:aggravatedBy]->(o2)
+SET r169.text = 'Loại bỏ những thói quen xấu gây hại đến sức khỏe cơ thể cũng như có hại cho khớp như hạn chế uống rượu bia, không hút thuốc lá…'
+
+MERGE (o1:lifestyle {id: 'căng_thẳng__stress_lifestyle'})
+MERGE (o2:symptom {id: 'đau_khớp_symptom'})
+MERGE (o1)-[r170:aggravatedBy]->(o2)
+SET r170.text = 'Tránh những căng thẳng, stress kéo dài làm các cơn đau khớp bùng phát mạnh và tồi tệ hơn.'
+
+MERGE (o1:lifestyle {id: 'yoga__ngồi_thiền_lifestyle'})
+MERGE (o2:symptom {id: 'đau_nhức_symptom'})
+MERGE (o1)-[r171:treatedBy]->(o2)
+SET r171.text = 'Những bài tập yoga, ngồi thiền có thể làm dịu tâm trí, xoa dịu cơn đau nhức.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_khớp_vảy_nến_disease'})
+MERGE (o2:test {id: 'khám__chẩn_đoán_test'})
+MERGE (o1)-[r172:diagnosedBy]->(o2)
+SET r172.text = 'Đặc biệt, đến nay cơ sở uy tín để được khám, chẩn đoán chính xác và can thiệp kịp thời để ngăn bệnh tiến triển nặng.'
+
+MERGE (o1:treatment {id: 'pgs.ts.bs_đặng_hồng_hoa_treatment'})
+MERGE (o2:disease {id: 'bệnh_viêm_khớp_vảy_nến_disease'})
+MERGE (o1)-[r173:treatedBy]->(o2)
+SET r173.text = 'PGS.TS.BS Đặng Hồng Hoa trực tiếp thăm khám, chẩn đoán và tư vấn hướng điều trị cho bệnh nhân'
+
+MERGE (o1:lifestyle {id: 'thay_đổi_tư_thế__cách_thức_làm_việc_và_sinh_hoạt_hàng_ngày_lifestyle'})
+MERGE (o2:organ {id: 'xương_khớp_organ'})
+MERGE (o1)-[r174:affects]->(o2)
+SET r174.text = 'Các biện pháp chăm sóc bệnh nhân tại nhà bao gồm: Thay đổi tư thế, cách thức làm việc và sinh hoạt hàng ngày làm ảnh hưởng đến xương khớp.'
+
+MERGE (o1:lifestyle {id: 'duy_trì_mức_cân_nặng_cân_đối__hợp_lý_lifestyle'})
+MERGE (o2:disease {id: 'bệnh_viêm_khớp_vảy_nến_disease'})
+MERGE (o1)-[r175:preventedBy]->(o2)
+SET r175.text = 'Các biện pháp chăm sóc bệnh nhân tại nhà bao gồm: Duy trì mức cân nặng cân đối, hợp lý.'
+
+MERGE (o1:lifestyle {id: 'nghỉ_ngơi_hợp_lý_lifestyle'})
+MERGE (o2:disease {id: 'bệnh_viêm_khớp_vảy_nến_disease'})
+MERGE (o1)-[r176:preventedBy]->(o2)
+SET r176.text = 'Các biện pháp chăm sóc bệnh nhân tại nhà bao gồm: Nghỉ ngơi hợp lý, tránh căng thẳng kéo dài.'

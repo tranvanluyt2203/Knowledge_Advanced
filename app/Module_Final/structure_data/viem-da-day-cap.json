@@ -1,0 +1,1106 @@
+[
+    {
+        "text": "Viêm dạ dày cấp là tình trạng bệnh lý phổ biến, có thể xảy ra với mọi đối tượng, giới tính và độ tuổi.",
+        "head": "Viêm dạ dày cấp",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Tình trạng bệnh lý",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Triệu chứng bệnh xuất hiện đột ngột, gây đau đớn, khó chịu, ảnh hưởng trực tiếp đến sinh hoạt hàng ngày.",
+        "head": "Triệu chứng bệnh",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm dạ dày cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Triệu chứng bệnh xuất hiện đột ngột, gây đau đớn, khó chịu, ảnh hưởng trực tiếp đến sinh hoạt hàng ngày.",
+        "head": "Đau đớn",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm dạ dày cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Triệu chứng bệnh xuất hiện đột ngột, gây đau đớn, khó chịu, ảnh hưởng trực tiếp đến sinh hoạt hàng ngày.",
+        "head": "Khó chịu",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm dạ dày cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Về lâu dài, nếu tình trạng viêm không được chẩn đoán, điều trị sớm có thể dẫn đến nhiều biến chứng nguy hiểm, đe dọa nghiêm trọng đến sức khỏe.",
+        "head": "Biến chứng nguy hiểm",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Viêm dạ dày cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Viêm dạ dày cấp là tình trạng niêm mạc bao tử bị viêm hoặc kích ứng đột ngột, gây đau dữ dội và dai dẳng.",
+        "head": "Viêm dạ dày cấp",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Niêm mạc bao tử",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Viêm dạ dày cấp là tình trạng niêm mạc bao tử bị viêm hoặc kích ứng đột ngột, gây đau dữ dội và dai dẳng.",
+        "head": "Viêm dạ dày cấp",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Đau dữ dội",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Viêm dạ dày cấp là tình trạng niêm mạc bao tử bị viêm hoặc kích ứng đột ngột, gây đau dữ dội và dai dẳng.",
+        "head": "Viêm dạ dày cấp",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Đau dai dẳng",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Cụ thể, trong trường hợp này, cơ quan đã kích hoạt phản ứng miễn dịch, thu hút các tế bào bạch cầu đến vị trí tổn thương, gây viêm.",
+        "head": "Phản ứng miễn dịch",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Viêm dạ dày cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Cụ thể, trong trường hợp này, cơ quan đã kích hoạt phản ứng miễn dịch, thu hút các tế bào bạch cầu đến vị trí tổn thương, gây viêm.",
+        "head": "Tế bào bạch cầu",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Viêm dạ dày cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Mức độ nghiêm trọng càng cao, viêm dạ dày cấp tính càng có nguy cơ sẽ tiến triển thành tình trạng ăn mòn, tạo nên vết loét cùng những vùng xuất huyết nhỏ bên trong niêm mạc.",
+        "head": "Viêm dạ dày cấp tính",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Ăn mòn",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Mức độ nghiêm trọng càng cao, viêm dạ dày cấp tính càng có nguy cơ sẽ tiến triển thành tình trạng ăn mòn, tạo nên vết loét cùng những vùng xuất huyết nhỏ bên trong niêm mạc.",
+        "head": "Viêm dạ dày cấp tính",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Vết loét",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Mức độ nghiêm trọng càng cao, viêm dạ dày cấp tính càng có nguy cơ sẽ tiến triển thành tình trạng ăn mòn, tạo nên vết loét cùng những vùng xuất huyết nhỏ bên trong niêm mạc.",
+        "head": "Viêm dạ dày cấp tính",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Xuất huyết",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Bệnh có thể xuất hiện ở mọi lứa tuổi, nhưng phổ biến nhất là trung niên và người già.",
+        "head": "Viêm dạ dày cấp",
+        "head_type": "disease",
+        "relation": "associatedWith",
+        "tail": "Trung niên",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Bệnh có thể xuất hiện ở mọi lứa tuổi, nhưng phổ biến nhất là trung niên và người già.",
+        "head": "Viêm dạ dày cấp",
+        "head_type": "disease",
+        "relation": "associatedWith",
+        "tail": "Người già",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Viêm xuất phát từ nhiều nguyên nhân khác nhau, có thể do chấn thương, vi khuẩn, virus xâm nhập, căng thẳng hoặc chế độ ăn uống…(1)",
+        "head": "Viêm dạ dày cấp",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Chấn thương",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Viêm xuất phát từ nhiều nguyên nhân khác nhau, có thể do chấn thương, vi khuẩn, virus xâm nhập, căng thẳng hoặc chế độ ăn uống…(1)",
+        "head": "Viêm dạ dày cấp",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Vi khuẩn",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Viêm xuất phát từ nhiều nguyên nhân khác nhau, có thể do chấn thương, vi khuẩn, virus xâm nhập, căng thẳng hoặc chế độ ăn uống…(1)",
+        "head": "Viêm dạ dày cấp",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Virus",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Viêm xuất phát từ nhiều nguyên nhân khác nhau, có thể do chấn thương, vi khuẩn, virus xâm nhập, căng thẳng hoặc chế độ ăn uống…(1)",
+        "head": "Viêm dạ dày cấp",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Căng thẳng",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Viêm xuất phát từ nhiều nguyên nhân khác nhau, có thể do chấn thương, vi khuẩn, virus xâm nhập, căng thẳng hoặc chế độ ăn uống…(1)",
+        "head": "Viêm dạ dày cấp",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Chế độ ăn uống",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Một số trường hợp viêm dạ dày cấp không biểu hiện bằng triệu chứng rõ rệt.",
+        "head": "Viêm dạ dày cấp",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Triệu chứng rõ rệt",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Dạ dày đau hoặc khó chịu.",
+        "head": "Dạ dày đau",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm dạ dày cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Dạ dày đau hoặc khó chịu.",
+        "head": "Khó chịu",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm dạ dày cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ợ nóng.",
+        "head": "Ợ nóng",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm dạ dày cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ăn mất ngon.",
+        "head": "Ăn mất ngon",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm dạ dày cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Buồn nôn, ói mửa.",
+        "head": "Buồn nôn",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm dạ dày cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Buồn nôn, ói mửa.",
+        "head": "Ói mửa",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm dạ dày cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nôn ra máu (xảy ra khi viêm dẫn đến rách hoặc hình thành vết loét sâu trong niêm mạc dạ dày).",
+        "head": "Nôn ra máu",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm dạ dày cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nôn ra máu (xảy ra khi viêm dẫn đến rách hoặc hình thành vết loét sâu trong niêm mạc dạ dày).",
+        "head": "Rách niêm mạc dạ dày",
+        "head_type": "symptom",
+        "relation": "causedBy",
+        "tail": "Viêm dạ dày cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nôn ra máu (xảy ra khi viêm dẫn đến rách hoặc hình thành vết loét sâu trong niêm mạc dạ dày).",
+        "head": "Vết loét dạ dày",
+        "head_type": "symptom",
+        "relation": "causedBy",
+        "tail": "Viêm dạ dày cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Giảm cân bất thường.",
+        "head": "Giảm cân bất thường",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm dạ dày cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Sốt.",
+        "head": "Sốt",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm dạ dày cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Cảm giác đầy bụng bất thường",
+        "head": "Cảm giác đầy bụng",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm dạ dày cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Cảm thấy no quá nhanh sau khi ăn.",
+        "head": "Cảm thấy no quá nhanh",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm dạ dày cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bệnh viêm dạ dày cấp xuất phát từ nhiều nguyên nhân khác nhau, điển hình phải kể đến như:",
+        "head": "Bệnh viêm dạ dày cấp",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "nhiều nguyên nhân khác nhau",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Sự xâm nhập và phát triển của vi khuẩn Helicobacter Pylori là một trong những nguyên nhân phổ biến gây nên viêm bao tử cấp, cụ thể chiếm đến ⅔ dân số thế giới.",
+        "head": "Sự xâm nhập và phát triển của vi khuẩn Helicobacter Pylori",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "viêm bao tử cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Sự xâm nhập và phát triển của vi khuẩn Helicobacter Pylori là một trong những nguyên nhân phổ biến gây nên viêm bao tử cấp, cụ thể chiếm đến ⅔ dân số thế giới.",
+        "head": "vi khuẩn Helicobacter Pylori",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "viêm bao tử cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ngoài ra, các loại vi khuẩn, virus, nấm… khác cũng là tác nhân nhưng không chiếm tỉ lệ cao.",
+        "head": "các loại vi khuẩn, virus, nấm… khác",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "viêm bao tử cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Trào ngược mật: Mật được đào thải tự nhiên vào ruột non để hỗ trợ tiêu hóa, nếu vô tình di chuyển đến dạ dày sẽ gây tổn thương niêm mạc.",
+        "head": "Trào ngược mật",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "viêm bao tử cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Trào ngược mật: Mật được đào thải tự nhiên vào ruột non để hỗ trợ tiêu hóa, nếu vô tình di chuyển đến dạ dày sẽ gây tổn thương niêm mạc.",
+        "head": "Mật",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "viêm bao tử cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tiêu thụ rượu bia: Đồ uống có cồn gây tổn hại đến niêm mạc dạ dày, dẫn đến viêm.",
+        "head": "Tiêu thụ rượu bia",
+        "head_type": "lifestyle",
+        "relation": "causedBy",
+        "tail": "viêm bao tử cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tiêu thụ rượu bia: Đồ uống có cồn gây tổn hại đến niêm mạc dạ dày, dẫn đến viêm.",
+        "head": "Đồ uống có cồn",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "viêm bao tử cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Lạm dụng thuốc chống viêm không Steroid (NSAID): Thuốc giảm đau, chẳng hạn như Aspirin, Ibuprofen… có thể làm tăng nồng độ axit trong dạ dày do ức chế các chất bảo vệ được gọi là Prostaglandin.",
+        "head": "Lạm dụng thuốc chống viêm không Steroid (NSAID)",
+        "head_type": "lifestyle",
+        "relation": "causedBy",
+        "tail": "viêm bao tử cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Lạm dụng thuốc chống viêm không Steroid (NSAID): Thuốc giảm đau, chẳng hạn như Aspirin, Ibuprofen… có thể làm tăng nồng độ axit trong dạ dày do ức chế các chất bảo vệ được gọi là Prostaglandin.",
+        "head": "Thuốc giảm đau",
+        "head_type": "treatment",
+        "relation": "causedBy",
+        "tail": "viêm bao tử cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Lạm dụng thuốc chống viêm không Steroid (NSAID): Thuốc giảm đau, chẳng hạn như Aspirin, Ibuprofen… có thể làm tăng nồng độ axit trong dạ dày do ức chế các chất bảo vệ được gọi là Prostaglandin.",
+        "head": "Aspirin, Ibuprofen",
+        "head_type": "treatment",
+        "relation": "causedBy",
+        "tail": "viêm bao tử cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Việc lạm dụng uống thường xuyên với liều lượng cao sẽ dẫn đến viêm.",
+        "head": "Việc lạm dụng uống thường xuyên với liều lượng cao",
+        "head_type": "lifestyle",
+        "relation": "causedBy",
+        "tail": "viêm bao tử cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Chất sắt: Sắt có khả năng gây tổn hại cho niêm mạc bao tử nếu uống lúc bụng đói.",
+        "head": "Chất sắt",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "viêm bao tử cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Chất sắt: Sắt có khả năng gây tổn hại cho niêm mạc bao tử nếu uống lúc bụng đói.",
+        "head": "Sắt",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "viêm bao tử cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đây là một sự cố của hệ thống miễn dịch, gây ảnh hưởng đến các tế bào niêm mạc dạ dày.",
+        "head": "Sự cố của hệ thống miễn dịch",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "viêm bao tử cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Về lâu dài, phản ứng này sẽ khiến hàng rào bảo vệ bao tử bị bào mòn.",
+        "head": "phản ứng này",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "viêm bao tử cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Theo đó, viêm dạ dày cấp do rối loạn hệ miễn dịch thường xảy ra phổ biến ở những người mắc tiểu đường loại 1, bệnh Hashimoto, cơ thể thiếu hụt Vitamin B12…",
+        "head": "viêm dạ dày cấp do rối loạn hệ miễn dịch",
+        "head_type": "disease",
+        "relation": "associatedWith",
+        "tail": "tiểu đường loại 1",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Theo đó, viêm dạ dày cấp do rối loạn hệ miễn dịch thường xảy ra phổ biến ở những người mắc tiểu đường loại 1, bệnh Hashimoto, cơ thể thiếu hụt Vitamin B12…",
+        "head": "viêm dạ dày cấp do rối loạn hệ miễn dịch",
+        "head_type": "disease",
+        "relation": "associatedWith",
+        "tail": "bệnh Hashimoto",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Theo đó, viêm dạ dày cấp do rối loạn hệ miễn dịch thường xảy ra phổ biến ở những người mắc tiểu đường loại 1, bệnh Hashimoto, cơ thể thiếu hụt Vitamin B12…",
+        "head": "viêm dạ dày cấp do rối loạn hệ miễn dịch",
+        "head_type": "disease",
+        "relation": "associatedWith",
+        "tail": "thiếu hụt Vitamin B12",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Các dị dạng hiếm gặp của mạch máu hay biến chứng từ suy tim mãn tính cũng có thể ảnh hưởng đến lưu lượng máu vận chuyển đến dạ dày.",
+        "head": "Các dị dạng hiếm gặp của mạch máu",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "viêm bao tử cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các dị dạng hiếm gặp của mạch máu hay biến chứng từ suy tim mãn tính cũng có thể ảnh hưởng đến lưu lượng máu vận chuyển đến dạ dày.",
+        "head": "biến chứng từ suy tim mãn tính",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "viêm bao tử cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Trong một số trường hợp, đây là nguyên nhân dẫn đến tình trạng viêm bao tử cấp tính.",
+        "head": "biến chứng từ suy tim mãn tính",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "viêm bao tử cấp tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi lượng máu cung cấp cho dạ dày không đủ, tình trạng viêm có thể xảy ra.",
+        "head": "lượng máu cung cấp cho dạ dày không đủ",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "viêm bao tử cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Một số nguyên nhân phổ biến phải kể đến gồm:  Lạm dụng thuốc Cocaine.",
+        "head": "Lạm dụng thuốc Cocaine",
+        "head_type": "lifestyle",
+        "relation": "causedBy",
+        "tail": "viêm bao tử cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Một số nguyên nhân phổ biến phải kể đến gồm:  Mất nước nghiêm trọng.",
+        "head": "Mất nước nghiêm trọng",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "viêm bao tử cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Một số nguyên nhân phổ biến phải kể đến gồm:  Nhiễm trùng huyết.",
+        "head": "Nhiễm trùng huyết",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "viêm bao tử cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Một số nguyên nhân phổ biến phải kể đến gồm:  Chấn thương hoặc bỏng nặng.",
+        "head": "Chấn thương hoặc bỏng nặng",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "viêm bao tử cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tình trạng dị ứng thực phẩm trong bao tử sẽ khiến cho lượng bạch cầu tăng cao, gây kích ứng, tổn thương niêm mạc.",
+        "head": "Dị ứng thực phẩm",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "viêm bao tử cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đây cũng là một trong những nguyên nhân thường gặp của viêm dạ dày cấp.",
+        "head": "Dị ứng thực phẩm",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "viêm dạ dày cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Viêm bao tử cấp có thể là biến chứng của bệnh u hạt.",
+        "head": "Viêm bao tử cấp",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "bệnh u hạt",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tình trạng bệnh lý này ảnh hưởng đến hệ thống miễn dịch của cơ thể, làm tổn thương dạ dày.",
+        "head": "bệnh lý này",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "hệ thống miễn dịch",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Tình trạng bệnh lý này ảnh hưởng đến hệ thống miễn dịch của cơ thể, làm tổn thương dạ dày.",
+        "head": "bệnh lý này",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "dạ dày",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Viêm bao tử cấp có thể xảy ra với bất kỳ ai, ở mọi lứa tuổi, giới tính… Tuy nhiên những người nằm trong nhóm đối tượng nguy cơ có xu hướng dễ mắc phải hơn, bao gồm:",
+        "head": "Viêm bao tử cấp",
+        "head_type": "disease",
+        "relation": "associatedWith",
+        "tail": "nhóm đối tượng nguy cơ",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Sử dụng thuốc chống viêm không Steroid (NSAID).",
+        "head": "Sử dụng thuốc chống viêm không Steroid (NSAID)",
+        "head_type": "lifestyle",
+        "relation": "causedBy",
+        "tail": "Viêm bao tử cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Sử dụng Corticosteroid.",
+        "head": "Sử dụng Corticosteroid",
+        "head_type": "lifestyle",
+        "relation": "causedBy",
+        "tail": "Viêm bao tử cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Uống nhiều rượu.",
+        "head": "Uống nhiều rượu",
+        "head_type": "lifestyle",
+        "relation": "causedBy",
+        "tail": "Viêm bao tử cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Trải qua cuộc phẫu thuật lớn.",
+        "head": "Trải qua cuộc phẫu thuật lớn",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Viêm bao tử cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Người bệnh bị suy thận, suy gan, suy hô hấp.",
+        "head": "suy thận",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Viêm bao tử cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Người bệnh bị suy thận, suy gan, suy hô hấp.",
+        "head": "suy gan",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Viêm bao tử cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Người bệnh bị suy thận, suy gan, suy hô hấp.",
+        "head": "suy hô hấp",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Viêm bao tử cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đối với tình trạng viêm dạ dày cấp, trước tiên, bác sĩ có thể đặt một số câu hỏi liên quan đến triệu chứng, mức độ cơn đau, tiền sử bệnh… để tìm hiểu chi tiết.",
+        "head": "viêm dạ dày cấp",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "bác sĩ đặt một số câu hỏi liên quan đến triệu chứng, mức độ cơn đau, tiền sử bệnh",
+        "tail_type": "test"
+    },
+    {
+        "text": "Sau đó các phương pháp chẩn đoán sẽ được tiến hành thực hiện nhằm đưa ra kết luận chính xác nhất, bao gồm:",
+        "head": "viêm dạ dày cấp",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "các phương pháp chẩn đoán",
+        "tail_type": "test"
+    },
+    {
+        "text": "Xét nghiệm công thức máu toàn bộ (CBC): Xét nghiệm được thực hiện để kiểm tra sức khỏe tổng thể.",
+        "head": "Xét nghiệm công thức máu toàn bộ (CBC)",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "viêm dạ dày cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Xét nghiệm hơi thở, nước bọt: Mục đích để kiểm tra sự tồn tại của vi khuẩn Helicobacter Pylori.",
+        "head": "Xét nghiệm hơi thở, nước bọt",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "viêm dạ dày cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Xét nghiệm phân: Mục đích để kiểm tra máu trong phân.",
+        "head": "Xét nghiệm phân",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "viêm dạ dày cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nội soi dạ dày thực quản: Mục đích để kiểm tra niêm mạc dạ dày.",
+        "head": "Nội soi dạ dày thực quản",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "viêm dạ dày cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Sinh thiết mô dạ dày: Một mẫu mô nhỏ của dạ dày được lấy ra để mang đi giải phẫu bệnh (kiểm tra dưới kính hiển vi).",
+        "head": "Sinh thiết mô dạ dày",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "viêm dạ dày cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Viêm dạ dày cấp nếu không được điều trị kịp thời có thể dẫn đến tình trạng loét hoặc xuất huyết.",
+        "head": "Viêm dạ dày cấp",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "loét hoặc xuất huyết",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Viêm dạ dày cấp nếu không được điều trị kịp thời có thể dẫn đến tình trạng loét hoặc xuất huyết.",
+        "head": "Viêm dạ dày cấp",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "điều trị kịp thời",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Ngoài ra, trong một số ít trường hợp, bệnh còn làm tăng nguy cơ gây ung thư bao tử, đặc biệt là khi lớp niêm mạc bị mỏng.",
+        "head": "Viêm dạ dày cấp",
+        "head_type": "disease",
+        "relation": "associatedWith",
+        "tail": "ung thư bao tử",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ngoài ra, trong một số ít trường hợp, bệnh còn làm tăng nguy cơ gây ung thư bao tử, đặc biệt là khi lớp niêm mạc bị mỏng.",
+        "head": "Viêm dạ dày cấp",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "lớp niêm mạc",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Tùy theo mức độ nghiêm trọng của bệnh, bác sĩ sẽ chỉ định các phương pháp điều trị viêm bao tử cấp khác nhau.",
+        "head": "Viêm dạ dày cấp",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "các phương pháp điều trị",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Thuốc điều trị viêm dạ dày cấp bao gồm cả loại kê đơn và không kê đơn.",
+        "head": "Viêm dạ dày cấp",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "Thuốc",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Thuốc kháng axit (aluminum phosphalugel hoặc magnesium hydroxide): Loại này được sử dụng để trung hòa axit dạ dày, trong trường hợp cần thiết, bác sĩ có thể chỉ định liều dùng nhiều lần trong ngày.",
+        "head": "Thuốc kháng axit",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Viêm dạ dày cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Thuốc kháng axit (aluminum phosphalugel hoặc magnesium hydroxide): Loại này được sử dụng để trung hòa axit dạ dày, trong trường hợp cần thiết, bác sĩ có thể chỉ định liều dùng nhiều lần trong ngày.",
+        "head": "Thuốc kháng axit",
+        "head_type": "treatment",
+        "relation": "affects",
+        "tail": "axit dạ dày",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Thuốc kháng H2 (Famotidine (Pepcid ), Cimetidine (Tagamet )&#8230;): Loại này được sử dụng để giảm tiết axit dạ dày, có thể uống từ 10 - 60 phút trước khi ăn hoặc trước khi đi ngủ.",
+        "head": "Thuốc kháng H2",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Viêm dạ dày cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Thuốc kháng H2 (Famotidine (Pepcid ), Cimetidine (Tagamet )&#8230;): Loại này được sử dụng để giảm tiết axit dạ dày, có thể uống từ 10 - 60 phút trước khi ăn hoặc trước khi đi ngủ.",
+        "head": "Thuốc kháng H2",
+        "head_type": "treatment",
+        "relation": "affects",
+        "tail": "axit dạ dày",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Thuốc ức chế bơm Proton (Omeprazole (Prilosec ), Esomeprazole (Nexium)&#8230;): Thuốc có tác dụng ức chế sản xuất axit dạ dày, chỉ nên được sử dụng mỗi 24 giờ và thường uống trước ăn 30 - 60 phút.",
+        "head": "Thuốc ức chế bơm Proton",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Viêm dạ dày cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Thuốc ức chế bơm Proton (Omeprazole (Prilosec ), Esomeprazole (Nexium)&#8230;): Thuốc có tác dụng ức chế sản xuất axit dạ dày, chỉ nên được sử dụng mỗi 24 giờ và thường uống trước ăn 30 - 60 phút.",
+        "head": "Thuốc ức chế bơm Proton",
+        "head_type": "treatment",
+        "relation": "affects",
+        "tail": "axit dạ dày",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Thuốc kháng sinh đối với tình trạng nhiễm trùng do vi khuẩn Helicobacter Pylori: Amoxicillin, Tetracycline (không nên dùng cho trẻ em dưới 12 tuổi) và Clarithromycin.",
+        "head": "Thuốc kháng sinh",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Viêm dạ dày cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Thuốc kháng sinh đối với tình trạng nhiễm trùng do vi khuẩn Helicobacter Pylori: Amoxicillin, Tetracycline (không nên dùng cho trẻ em dưới 12 tuổi) và Clarithromycin.",
+        "head": "Thuốc kháng sinh",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "nhiễm trùng do vi khuẩn Helicobacter Pylori",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Thuốc kháng sinh có thể sử dụng cùng lúc với thuốc kháng Axit, kháng H2, thuốc ức chế bơm Proton.",
+        "head": "Thuốc kháng sinh",
+        "head_type": "treatment",
+        "relation": "relatedTo",
+        "tail": "Thuốc kháng Axit, kháng H2, thuốc ức chế bơm Proton",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Quá trình điều trị thường kéo dài từ 10 - 28 ngày.",
+        "head": "Quá trình điều trị",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Viêm dạ dày cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Thay đổi thói quen sinh hoạt hàng ngày một cách lành mạnh, cân bằng cũng có thể góp phần cải thiện tình trạng viêm dạ dày cấp.",
+        "head": "Thay đổi thói quen sinh hoạt hàng ngày",
+        "head_type": "lifestyle",
+        "relation": "treatedBy",
+        "tail": "Viêm dạ dày cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Hạn chế tối đa uống rượu bia.",
+        "head": "Uống rượu bia",
+        "head_type": "lifestyle",
+        "relation": "aggravatedBy",
+        "tail": "Viêm dạ dày cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bỏ hút thuốc lá.",
+        "head": "Hút thuốc lá",
+        "head_type": "lifestyle",
+        "relation": "aggravatedBy",
+        "tail": "Viêm dạ dày cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Kiểm soát cảm xúc, tránh căng thẳng.",
+        "head": "Căng thẳng",
+        "head_type": "lifestyle",
+        "relation": "aggravatedBy",
+        "tail": "Viêm dạ dày cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Giảm cân nếu cơ thể đang bị thừa cân.",
+        "head": "Thừa cân",
+        "head_type": "lifestyle",
+        "relation": "aggravatedBy",
+        "tail": "Viêm dạ dày cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tránh thức ăn chứa nhiều gia vị, dầu mỡ, chua, cay nóng vì dễ gây kích ứng bao tử.",
+        "head": "Thức ăn chứa nhiều gia vị, dầu mỡ, chua, cay nóng",
+        "head_type": "food",
+        "relation": "aggravatedBy",
+        "tail": "Viêm dạ dày cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tránh thức ăn chứa nhiều gia vị, dầu mỡ, chua, cay nóng vì dễ gây kích ứng bao tử.",
+        "head": "Thức ăn chứa nhiều gia vị, dầu mỡ, chua, cay nóng",
+        "head_type": "food",
+        "relation": "affects",
+        "tail": "bao tử",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Chia nhỏ các bữa ăn trong ngày.",
+        "head": "Chia nhỏ các bữa ăn",
+        "head_type": "lifestyle",
+        "relation": "treatedBy",
+        "tail": "Viêm dạ dày cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tích cực bổ sung các thực phẩm có lợi cho dạ dày: chuối, nước dừa, sữa chua, rau củ, gừng, ngũ cốc…",
+        "head": "Chuối, nước dừa, sữa chua, rau củ, gừng, ngũ cốc",
+        "head_type": "food",
+        "relation": "treatedBy",
+        "tail": "Viêm dạ dày cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Luôn luôn rửa tay bằng xà phòng diệt khuẩn trước khi ăn để làm giảm nguy cơ nhiễm vi khuẩn Helicobacter Pylori.",
+        "head": "Rửa tay bằng xà phòng diệt khuẩn",
+        "head_type": "lifestyle",
+        "relation": "preventedBy",
+        "tail": "nhiễm vi khuẩn Helicobacter Pylori",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Ăn chín uống sôi để tránh nguy cơ bị nhiễm trùng.",
+        "head": "Ăn chín uống sôi",
+        "head_type": "lifestyle",
+        "relation": "preventedBy",
+        "tail": "nhiễm trùng",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Tránh hoặc hạn chế tối đa uống rượu bia.",
+        "head": "Uống rượu bia",
+        "head_type": "lifestyle",
+        "relation": "aggravatedBy",
+        "tail": "Viêm dạ dày cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Thường xuyên rửa tay bằng xà phòng và nước trước bữa ăn.",
+        "head": "Rửa tay bằng xà phòng và nước",
+        "head_type": "lifestyle",
+        "relation": "preventedBy",
+        "tail": "nhiễm H. pylori",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Nấu chín kỹ thức ăn.",
+        "head": "Nấu chín kỹ thức ăn",
+        "head_type": "lifestyle",
+        "relation": "preventedBy",
+        "tail": "nhiễm trùng",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Tránh uống rượu hoặc hạn chế uống rượu.",
+        "head": "Uống rượu",
+        "head_type": "lifestyle",
+        "relation": "aggravatedBy",
+        "tail": "Viêm dạ dày cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Thời gian kéo dài của bệnh viêm dạ dày cấp phụ thuộc vào nguyên nhân gây bệnh, thời gian bắt đầu điều trị và liệu pháp điều trị.",
+        "head": "Thời gian kéo dài của bệnh viêm dạ dày cấp",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "nguyên nhân gây bệnh",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Thời gian kéo dài của bệnh viêm dạ dày cấp phụ thuộc vào nguyên nhân gây bệnh, thời gian bắt đầu điều trị và liệu pháp điều trị.",
+        "head": "Thời gian kéo dài của bệnh viêm dạ dày cấp",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "thời gian bắt đầu điều trị",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Thời gian kéo dài của bệnh viêm dạ dày cấp phụ thuộc vào nguyên nhân gây bệnh, thời gian bắt đầu điều trị và liệu pháp điều trị.",
+        "head": "Thời gian kéo dài của bệnh viêm dạ dày cấp",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "liệu pháp điều trị",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Thông thường, các triệu chứng sẽ có dấu hiệu thuyên giảm từ vài ngày đến vài tuần nếu tình trạng chưa tiến triển đến mức nghiêm trọng.",
+        "head": "các triệu chứng",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "bệnh viêm dạ dày cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Thông thường, các triệu chứng sẽ có dấu hiệu thuyên giảm từ vài ngày đến vài tuần nếu tình trạng chưa tiến triển đến mức nghiêm trọng.",
+        "head": "các triệu chứng",
+        "head_type": "symptom",
+        "relation": "treatedBy",
+        "tail": "thuyên giảm",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Nhóm thực phẩm giàu chất xơ: ngũ cốc nguyên hạt, trái cây, rau, đậu…",
+        "head": "ngũ cốc nguyên hạt",
+        "head_type": "food",
+        "relation": "relatedTo",
+        "tail": "chất xơ",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Nhóm thực phẩm giàu chất xơ: ngũ cốc nguyên hạt, trái cây, rau, đậu…",
+        "head": "trái cây",
+        "head_type": "food",
+        "relation": "relatedTo",
+        "tail": "chất xơ",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Nhóm thực phẩm giàu chất xơ: ngũ cốc nguyên hạt, trái cây, rau, đậu…",
+        "head": "rau",
+        "head_type": "food",
+        "relation": "relatedTo",
+        "tail": "chất xơ",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Nhóm thực phẩm giàu chất xơ: ngũ cốc nguyên hạt, trái cây, rau, đậu…",
+        "head": "đậu",
+        "head_type": "food",
+        "relation": "relatedTo",
+        "tail": "chất xơ",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Nhóm thực phẩm ít chất béo: Rau, thịt nạc, cá…",
+        "head": "Rau",
+        "head_type": "food",
+        "relation": "relatedTo",
+        "tail": "chất béo",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Nhóm thực phẩm ít chất béo: Rau, thịt nạc, cá…",
+        "head": "thịt nạc",
+        "head_type": "food",
+        "relation": "relatedTo",
+        "tail": "chất béo",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Nhóm thực phẩm ít chất béo: Rau, thịt nạc, cá…",
+        "head": "cá",
+        "head_type": "food",
+        "relation": "relatedTo",
+        "tail": "chất béo",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Nhóm thực phẩm có độ axit thấp: Rau, đậu.",
+        "head": "Rau",
+        "head_type": "food",
+        "relation": "relatedTo",
+        "tail": "độ axit thấp",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Nhóm thực phẩm có độ axit thấp: Rau, đậu.",
+        "head": "đậu",
+        "head_type": "food",
+        "relation": "relatedTo",
+        "tail": "độ axit thấp",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Đồ uống không chứa gas, caffeine, cồn.",
+        "head": "gas",
+        "head_type": "lifestyle",
+        "relation": "aggravatedBy",
+        "tail": "bệnh viêm dạ dày cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đồ uống không chứa gas, caffeine, cồn.",
+        "head": "caffeine",
+        "head_type": "lifestyle",
+        "relation": "aggravatedBy",
+        "tail": "bệnh viêm dạ dày cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đồ uống không chứa gas, caffeine, cồn.",
+        "head": "cồn",
+        "head_type": "lifestyle",
+        "relation": "aggravatedBy",
+        "tail": "bệnh viêm dạ dày cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nhóm thực phẩm chứa Probiotic có lợi cho sức khỏe: kim chi, sữa chua, trà nấm thủy sâm (kombucha)&#8230;",
+        "head": "kim chi",
+        "head_type": "food",
+        "relation": "relatedTo",
+        "tail": "Probiotic",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Nhóm thực phẩm chứa Probiotic có lợi cho sức khỏe: kim chi, sữa chua, trà nấm thủy sâm (kombucha)&#8230;",
+        "head": "sữa chua",
+        "head_type": "food",
+        "relation": "relatedTo",
+        "tail": "Probiotic",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Nhóm thực phẩm chứa Probiotic có lợi cho sức khỏe: kim chi, sữa chua, trà nấm thủy sâm (kombucha)&#8230;",
+        "head": "trà nấm thủy sâm (kombucha)",
+        "head_type": "food",
+        "relation": "relatedTo",
+        "tail": "Probiotic",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Viêm dạ dày cấp có khả năng lây nhiễm nếu nguyên nhân gây bệnh do vi khuẩn Helicobacter Pylori.",
+        "head": "Viêm dạ dày cấp",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "vi khuẩn Helicobacter Pylori",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Các cách lây truyền phổ biến gồm:  Bơi ở sông, suối, hồ bơi.",
+        "head": "Bơi ở sông, suối, hồ bơi",
+        "head_type": "lifestyle",
+        "relation": "causedBy",
+        "tail": "Viêm dạ dày cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các cách lây truyền phổ biến gồm:  Ăn uống các loại thực phẩm chưa qua nấu chín.",
+        "head": "Ăn uống các loại thực phẩm chưa qua nấu chín",
+        "head_type": "lifestyle",
+        "relation": "causedBy",
+        "tail": "Viêm dạ dày cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các cách lây truyền phổ biến gồm:  Gia đình có người thân bị mắc bệnh và sống chung.",
+        "head": "Gia đình có người thân bị mắc bệnh và sống chung",
+        "head_type": "lifestyle",
+        "relation": "causedBy",
+        "tail": "Viêm dạ dày cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Trường hợp tiếp xúc với nước bọt của người bệnh vẫn chưa được chứng minh là một con đường lây truyền.",
+        "head": "tiếp xúc với nước bọt của người bệnh",
+        "head_type": "lifestyle",
+        "relation": "causedBy",
+        "tail": "Viêm dạ dày cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Trung tâm Nội soi và Phẫu thuật nội soi tiêu hóa (BVĐK Tâm Anh TP.HCM) và Khoa Tiêu hóa - Gan mật - Tụy (BVĐK Tâm Anh Hà Nội) là những trung tâm y tế chuyên khoa Tiêu hóa uy tín, cung cấp dịch vụ thăm khám và điều trị cao cấp, hiệu quả cho các bệnh nhân mắc các vấn đề về gan từ nhẹ đến nặng (gan nhiễm mỡ, viêm gan cấp tính, mạn tính, xơ gan, ung thư gan…).",
+        "head": "Trung tâm Nội soi và Phẫu thuật nội soi tiêu hóa (BVĐK Tâm Anh TP.HCM) và Khoa Tiêu hóa - Gan mật - Tụy (BVĐK Tâm Anh Hà Nội)",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "các vấn đề về gan",
+        "tail_type": "disease"
+    }
+]

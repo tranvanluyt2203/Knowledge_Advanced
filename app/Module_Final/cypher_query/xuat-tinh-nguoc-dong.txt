@@ -1,0 +1,334 @@
+
+MERGE (o1:symptom {id: 'xuất_tinh_ngược_dòng_symptom'})
+MERGE (o2:organ {id: 'khả_năng_cương_dương_organ'})
+MERGE (o1)-[r0:affects]->(o2)
+SET r0.text = 'Xuất tinh ngược dòng
+không ảnh hưởng đến khả năng cương dương hay đạt cực khoái của nam giới.'
+
+MERGE (o1:symptom {id: 'xuất_tinh_ngược_dòng_symptom'})
+MERGE (o2:symptom {id: 'đạt_cực_khoái_symptom'})
+MERGE (o1)-[r1:affects]->(o2)
+SET r1.text = 'Xuất tinh ngược dòng
+không ảnh hưởng đến khả năng cương dương hay đạt cực khoái của nam giới.'
+
+MERGE (o1:symptom {id: 'xuất_tinh_ngược_dòng_symptom'})
+MERGE (o2:disease {id: 'vô_sinh_disease'})
+MERGE (o1)-[r2:isSymptomOf]->(o2)
+SET r2.text = 'Tình trạng này là một trong những nguyên nhân gây vô sinh, hiếm muộn, ảnh hưởng đến chất lượng cuộc sống và hạnh phúc gia đình.'
+
+MERGE (o1:symptom {id: 'xuất_tinh_ngược_dòng_symptom'})
+MERGE (o2:disease {id: 'hiếm_muộn_disease'})
+MERGE (o1)-[r3:isSymptomOf]->(o2)
+SET r3.text = 'Tình trạng này là một trong những nguyên nhân gây vô sinh, hiếm muộn, ảnh hưởng đến chất lượng cuộc sống và hạnh phúc gia đình.'
+
+MERGE (o1:symptom {id: 'xuất_tinh_ngược_dòng_symptom'})
+MERGE (o2:lifestyle {id: 'chất_lượng_cuộc_sống_lifestyle'})
+MERGE (o1)-[r4:affects]->(o2)
+SET r4.text = 'Tình trạng này là một trong những nguyên nhân gây vô sinh, hiếm muộn, ảnh hưởng đến chất lượng cuộc sống và hạnh phúc gia đình.'
+
+MERGE (o1:symptom {id: 'xuất_tinh_ngược_dòng_symptom'})
+MERGE (o2:lifestyle {id: 'hạnh_phúc_gia_đình_lifestyle'})
+MERGE (o1)-[r5:affects]->(o2)
+SET r5.text = 'Tình trạng này là một trong những nguyên nhân gây vô sinh, hiếm muộn, ảnh hưởng đến chất lượng cuộc sống và hạnh phúc gia đình.'
+
+MERGE (o1:symptom {id: 'xuất_tinh_ngược_dòng_symptom'})
+MERGE (o2:cause {id: 'tinh_dịch_di_chuyển_ngược_vào_trong_qua_cổ_bàng_quang_vào_bàng_quang_cause'})
+MERGE (o1)-[r6:causedBy]->(o2)
+SET r6.text = 'Xuất tinh ngược dòng (retrograde ejaculation) là không xuất tinh xuôi dòng ra ngoài toàn phần hoặc thỉnh thoảng một phần do tinh dịch di chuyển ngược vào trong qua cổ bàng quang vào bàng quang.'
+
+MERGE (o1:symptom {id: 'xuất_tinh_ngược_dòng_symptom'})
+MERGE (o2:symptom {id: 'cảm_giác_đạt_cực_khoái_symptom'})
+MERGE (o1)-[r7:affects]->(o2)
+SET r7.text = 'Bệnh nhân có cảm giác đạt cực khoái bình thường hay giảm.'
+
+MERGE (o1:symptom {id: 'xuất_tinh_ngược_dòng_symptom'})
+MERGE (o2:organ {id: 'thần_kinh_organ'})
+MERGE (o1)-[r8:causedBy]->(o2)
+SET r8.text = 'Nguyên nhân của xuất tinh ngược có thể bao gồm do: thần kinh, thuốc, niệu đạo hay mất trương lực của cổ bàng quang… khi tinh dịch không được xuất ra bên ngoài qua dương vật hoặc có xuất ra nhưng rất ít mà đi ngược vào trong bàng quang.'
+
+MERGE (o1:symptom {id: 'xuất_tinh_ngược_dòng_symptom'})
+MERGE (o2:treatment {id: 'thuốc_treatment'})
+MERGE (o1)-[r9:causedBy]->(o2)
+SET r9.text = 'Nguyên nhân của xuất tinh ngược có thể bao gồm do: thần kinh, thuốc, niệu đạo hay mất trương lực của cổ bàng quang… khi tinh dịch không được xuất ra bên ngoài qua dương vật hoặc có xuất ra nhưng rất ít mà đi ngược vào trong bàng quang.'
+
+MERGE (o1:symptom {id: 'xuất_tinh_ngược_dòng_symptom'})
+MERGE (o2:organ {id: 'niệu_đạo_organ'})
+MERGE (o1)-[r10:causedBy]->(o2)
+SET r10.text = 'Nguyên nhân của xuất tinh ngược có thể bao gồm do: thần kinh, thuốc, niệu đạo hay mất trương lực của cổ bàng quang… khi tinh dịch không được xuất ra bên ngoài qua dương vật hoặc có xuất ra nhưng rất ít mà đi ngược vào trong bàng quang.'
+
+MERGE (o1:symptom {id: 'xuất_tinh_ngược_dòng_symptom'})
+MERGE (o2:cause {id: 'mất_trương_lực_của_cổ_bàng_quang_cause'})
+MERGE (o1)-[r11:causedBy]->(o2)
+SET r11.text = 'Nguyên nhân của xuất tinh ngược có thể bao gồm do: thần kinh, thuốc, niệu đạo hay mất trương lực của cổ bàng quang… khi tinh dịch không được xuất ra bên ngoài qua dương vật hoặc có xuất ra nhưng rất ít mà đi ngược vào trong bàng quang.'
+
+MERGE (o1:symptom {id: 'xuất_tinh_ngược_dòng_symptom'})
+MERGE (o2:cause {id: 'hệ_lụy_cause'})
+MERGE (o1)-[r12:affects]->(o2)
+SET r12.text = 'Tuy xuất tinh ngược dòng không ảnh hưởng đến khả năng cương dương và cảm giác tình dục, không gây nguy hiểm đến tính mạng, nhưng nếu tình trạng này kéo dài có thể gây ra nhiều hệ lụy.'
+
+MERGE (o1:symptom {id: 'xuất_tinh_ngược_dòng_symptom'})
+MERGE (o2:disease {id: 'vô_sinh_nam_disease'})
+MERGE (o1)-[r13:isSymptomOf]->(o2)
+SET r13.text = 'Bệnh có thể gây vô sinh nam, đồng thời có thể ảnh hưởng đến tâm lý, chất lượng cuộc sống không những của họ mà cả người bạn tình'
+
+MERGE (o1:symptom {id: 'xuất_tinh_ngược_dòng_symptom'})
+MERGE (o2:organ {id: 'tâm_lý_organ'})
+MERGE (o1)-[r14:affects]->(o2)
+SET r14.text = 'Bệnh có thể gây vô sinh nam, đồng thời có thể ảnh hưởng đến tâm lý, chất lượng cuộc sống không những của họ mà cả người bạn tình'
+
+MERGE (o1:symptom {id: 'xuất_tinh_ngược_dòng_symptom'})
+MERGE (o2:lifestyle {id: 'chất_lượng_cuộc_sống_lifestyle'})
+MERGE (o1)-[r15:affects]->(o2)
+SET r15.text = 'Bệnh có thể gây vô sinh nam, đồng thời có thể ảnh hưởng đến tâm lý, chất lượng cuộc sống không những của họ mà cả người bạn tình'
+
+MERGE (o1:organ {id: 'cơ_vòng_gần_cổ_bàng_quang_organ'})
+MERGE (o2:organ {id: 'cổ_bàng_quang_organ'})
+MERGE (o1)-[r16:locatedIn]->(o2)
+SET r16.text = 'Bình thường, cơ vòng gần cổ bàng quang và cơ niệu đạo sẽ có nhiệm vụ đóng và mở nhịp nhàng, khi người đàn ông đi vệ sinh hay quan hệ tình dục.'
+
+MERGE (o1:organ {id: 'cơ_niệu_đạo_organ'})
+MERGE (o2:organ {id: 'niệu_đạo_organ'})
+MERGE (o1)-[r17:locatedIn]->(o2)
+SET r17.text = 'Bình thường, cơ vòng gần cổ bàng quang và cơ niệu đạo sẽ có nhiệm vụ đóng và mở nhịp nhàng, khi người đàn ông đi vệ sinh hay quan hệ tình dục.'
+
+MERGE (o1:organ {id: 'cơ_vòng_gần_cổ_bàng_quang_organ'})
+MERGE (o2:cause {id: 'hoạt_động_kém_hiệu_quả_cause'})
+MERGE (o1)-[r18:causedBy]->(o2)
+SET r18.text = 'Trong một số trường hợp các cơ này hoạt động kém hiệu quả khiến cho đường niệu đạo bị bít chặt, tinh dịch không thoát ra ngoài được sẽ theo nhánh còn lại chảy vào trong bàng quang.'
+
+MERGE (o1:organ {id: 'cơ_niệu_đạo_organ'})
+MERGE (o2:cause {id: 'hoạt_động_kém_hiệu_quả_cause'})
+MERGE (o1)-[r19:causedBy]->(o2)
+SET r19.text = 'Trong một số trường hợp các cơ này hoạt động kém hiệu quả khiến cho đường niệu đạo bị bít chặt, tinh dịch không thoát ra ngoài được sẽ theo nhánh còn lại chảy vào trong bàng quang.'
+
+MERGE (o1:organ {id: 'đường_niệu_đạo_organ'})
+MERGE (o2:cause {id: 'bị_bít_chặt_cause'})
+MERGE (o1)-[r20:causedBy]->(o2)
+SET r20.text = 'Trong một số trường hợp các cơ này hoạt động kém hiệu quả khiến cho đường niệu đạo bị bít chặt, tinh dịch không thoát ra ngoài được sẽ theo nhánh còn lại chảy vào trong bàng quang.'
+
+MERGE (o1:cause {id: 'tinh_dịch_cause'})
+MERGE (o2:cause {id: 'không_thoát_ra_ngoài_cause'})
+MERGE (o1)-[r21:causedBy]->(o2)
+SET r21.text = 'Trong một số trường hợp các cơ này hoạt động kém hiệu quả khiến cho đường niệu đạo bị bít chặt, tinh dịch không thoát ra ngoài được sẽ theo nhánh còn lại chảy vào trong bàng quang.'
+
+MERGE (o1:cause {id: 'tinh_dịch_cause'})
+MERGE (o2:cause {id: 'chảy_vào_trong_bàng_quang_cause'})
+MERGE (o1)-[r22:causedBy]->(o2)
+SET r22.text = 'Trong một số trường hợp các cơ này hoạt động kém hiệu quả khiến cho đường niệu đạo bị bít chặt, tinh dịch không thoát ra ngoài được sẽ theo nhánh còn lại chảy vào trong bàng quang.'
+
+MERGE (o1:disease {id: 'bệnh_lý_disease'})
+MERGE (o2:organ {id: 'thần_kinh_organ'})
+MERGE (o1)-[r23:affects]->(o2)
+SET r23.text = 'Một số bệnh lý làm tổn thương thần kinh, khiến cho cơ vùng cổ bàng quang không thể đóng lại, gồm:'
+
+MERGE (o1:disease {id: 'bệnh_lý_disease'})
+MERGE (o2:organ {id: 'cơ_vùng_cổ_bàng_quang_organ'})
+MERGE (o1)-[r24:affects]->(o2)
+SET r24.text = 'Một số bệnh lý làm tổn thương thần kinh, khiến cho cơ vùng cổ bàng quang không thể đóng lại, gồm:'
+
+MERGE (o1:disease {id: 'bệnh_tiểu_đường_disease'})
+MERGE (o2:cause {id: 'tổn_thương_thần_kinh_cause'})
+MERGE (o1)-[r25:causedBy]->(o2)
+SET r25.text = 'Bệnh tiểu đường, bệnh đa xơ cứng, bệnh Parkinson'
+
+MERGE (o1:disease {id: 'bệnh_đa_xơ_cứng_disease'})
+MERGE (o2:cause {id: 'tổn_thương_thần_kinh_cause'})
+MERGE (o1)-[r26:causedBy]->(o2)
+SET r26.text = 'Bệnh tiểu đường, bệnh đa xơ cứng, bệnh Parkinson'
+
+MERGE (o1:disease {id: 'bệnh_parkinson_disease'})
+MERGE (o2:cause {id: 'tổn_thương_thần_kinh_cause'})
+MERGE (o1)-[r27:causedBy]->(o2)
+SET r27.text = 'Bệnh tiểu đường, bệnh đa xơ cứng, bệnh Parkinson'
+
+MERGE (o1:disease {id: 'biến_chứng_của_bệnh_lý_thoái_hóa_cột_sống_disease'})
+MERGE (o2:cause {id: 'tổn_thương_thần_kinh_cause'})
+MERGE (o1)-[r28:causedBy]->(o2)
+SET r28.text = 'Các biến chứng của bệnh lý thoái hóa cột sống, dị dạng cột sống'
+
+MERGE (o1:disease {id: 'dị_dạng_cột_sống_disease'})
+MERGE (o2:cause {id: 'tổn_thương_thần_kinh_cause'})
+MERGE (o1)-[r29:causedBy]->(o2)
+SET r29.text = 'Các biến chứng của bệnh lý thoái hóa cột sống, dị dạng cột sống'
+
+MERGE (o1:disease {id: 'dị_tật_disease'})
+MERGE (o2:organ {id: 'cơ_organ'})
+MERGE (o1)-[r30:affects]->(o2)
+SET r30.text = 'Người có những dị tật ở vùng niệu đạo và bàng quang cũng khiến cho các cơ khó hoạt động hiệu quả, khiến cho tinh dịch không xuất ra đúng hướng.'
+
+MERGE (o1:disease {id: 'dị_tật_disease'})
+MERGE (o2:cause {id: 'tinh_dịch_cause'})
+MERGE (o1)-[r31:affects]->(o2)
+SET r31.text = 'Người có những dị tật ở vùng niệu đạo và bàng quang cũng khiến cho các cơ khó hoạt động hiệu quả, khiến cho tinh dịch không xuất ra đúng hướng.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_vùng_tiểu_khung_treatment'})
+MERGE (o2:cause {id: 'tổn_thương_thần_kinh_cause'})
+MERGE (o1)-[r32:causedBy]->(o2)
+SET r32.text = 'Các phẫu thuật vùng tiểu khung, tăng sinh lành tính tuyến tiền liệt, u đại tràng'
+
+MERGE (o1:disease {id: 'tăng_sinh_lành_tính_tuyến_tiền_liệt_disease'})
+MERGE (o2:cause {id: 'tổn_thương_thần_kinh_cause'})
+MERGE (o1)-[r33:causedBy]->(o2)
+SET r33.text = 'Các phẫu thuật vùng tiểu khung, tăng sinh lành tính tuyến tiền liệt, u đại tràng'
+
+MERGE (o1:disease {id: 'u_đại_tràng_disease'})
+MERGE (o2:cause {id: 'tổn_thương_thần_kinh_cause'})
+MERGE (o1)-[r34:causedBy]->(o2)
+SET r34.text = 'Các phẫu thuật vùng tiểu khung, tăng sinh lành tính tuyến tiền liệt, u đại tràng'
+
+MERGE (o1:treatment {id: 'thuốc_chữa_huyết_áp_treatment'})
+MERGE (o2:cause {id: 'tổn_thương_thần_kinh_cause'})
+MERGE (o1)-[r35:causedBy]->(o2)
+SET r35.text = 'Tác dụng phụ của việc dùng thuốc chữa huyết áp, tăng sinh lành tính tuyến tiền liệt'
+
+MERGE (o1:symptom {id: 'có_rất_ít_hoặc_không_có_tinh_dịch_khi_nam_giới_xuất_tinh_symptom'})
+MERGE (o2:disease {id: 'xuất_tinh_ngược_dòng_disease'})
+MERGE (o1)-[r36:isSymptomOf]->(o2)
+SET r36.text = 'Triệu chứng chính của
+xuất tinh ngược dòng
+là có rất ít hoặc không có tinh dịch khi nam giới xuất tinh.'
+
+MERGE (o1:disease {id: 'xuất_tinh_ngược_dòng_disease'})
+MERGE (o2:test {id: 'hỏi_bệnh_sử_test'})
+MERGE (o1)-[r37:diagnosedBy]->(o2)
+SET r37.text = 'Để có được những kết luận chính xác về tình trạng xuất tinh ngược dòng, các chuyên gia Nam học sẽ thực hiện một số phương pháp chẩn đoán, chỉ định xét nghiệm dưới đây:
+Hỏi bệnh sử: Bác sĩ sẽ tiến hành hỏi về các triệu chứng, thời gian xuất hiện tình trạng hiện tại. Bạn cũng có thể được hỏi về tình trạng sức khỏe nói chung như: bệnh tật, các phẫu thuật từng thực hiện và những loại thuốc đang dùng để điều trị bệnh…'
+
+MERGE (o1:disease {id: 'xuất_tinh_ngược_dòng_disease'})
+MERGE (o2:test {id: 'khám_sức_khỏe_tổng_thể_test'})
+MERGE (o1)-[r38:diagnosedBy]->(o2)
+SET r38.text = 'Để có được những kết luận chính xác về tình trạng xuất tinh ngược dòng, các chuyên gia Nam học sẽ thực hiện một số phương pháp chẩn đoán, chỉ định xét nghiệm dưới đây:
+Hỏi bệnh sử: Bác sĩ sẽ tiến hành hỏi về các triệu chứng, thời gian xuất hiện tình trạng hiện tại. Bạn cũng có thể được hỏi về tình trạng sức khỏe nói chung như: bệnh tật, các phẫu thuật từng thực hiện và những loại thuốc đang dùng để điều trị bệnh…'
+
+MERGE (o1:disease {id: 'xuất_tinh_ngược_dòng_disease'})
+MERGE (o2:test {id: 'khám_cơ_quan_sinh_sản__bao_gồm_khám_dương_vật__tinh_hoàn_và_khám_trực_tràng._test'})
+MERGE (o1)-[r39:diagnosedBy]->(o2)
+SET r39.text = 'Để có được những kết luận chính xác về tình trạng xuất tinh ngược dòng, các chuyên gia Nam học sẽ thực hiện một số phương pháp chẩn đoán, chỉ định xét nghiệm dưới đây:
+Hỏi bệnh sử: Bác sĩ sẽ tiến hành hỏi về các triệu chứng, thời gian xuất hiện tình trạng hiện tại. Bạn cũng có thể được hỏi về tình trạng sức khỏe nói chung như: bệnh tật, các phẫu thuật từng thực hiện và những loại thuốc đang dùng để điều trị bệnh…'
+
+MERGE (o1:disease {id: 'xuất_tinh_ngược_disease'})
+MERGE (o2:test {id: 'thủ_dâm_trước_khi_cung_cấp_mẫu_nước_tiểu_test'})
+MERGE (o1)-[r40:diagnosedBy]->(o2)
+SET r40.text = 'Đây là cách tốt nhất giúp bác sĩ xác định chính xác tình trạng xuất tinh ngược, khi có tinh dịch tồn tại trong nước tiểu. Người bệnh có thể được yêu cầu thủ dâm trước khi cung cấp mẫu nước tiểu. Nếu nước tiểu có chứa tinh trùng, chẩn đoán có thể sẽ là xuất tinh ngược.'
+
+MERGE (o1:disease {id: 'xuất_tinh_ngược_disease'})
+MERGE (o2:test {id: 'kiểm_tra_nước_tiểu_test'})
+MERGE (o1)-[r41:diagnosedBy]->(o2)
+SET r41.text = 'Đây là cách tốt nhất giúp bác sĩ xác định chính xác tình trạng xuất tinh ngược, khi có tinh dịch tồn tại trong nước tiểu. Người bệnh có thể được yêu cầu thủ dâm trước khi cung cấp mẫu nước tiểu. Nếu nước tiểu có chứa tinh trùng, chẩn đoán có thể sẽ là xuất tinh ngược.'
+
+MERGE (o1:disease {id: 'xuất_tinh_ngược_dòng_disease'})
+MERGE (o2:treatment {id: 'không_cần_điều_trị_treatment'})
+MERGE (o1)-[r42:treatedBy]->(o2)
+SET r42.text = 'Thông thường,
+xuất tinh ngược dòng
+không cần phải điều trị, nếu bệnh không ảnh hưởng đến khả năng sinh sản.'
+
+MERGE (o1:disease {id: 'xuất_tinh_ngược_dòng_disease'})
+MERGE (o2:cause {id: 'nguyên_nhân_gây_bệnh_cause'})
+MERGE (o1)-[r43:causedBy]->(o2)
+SET r43.text = 'Trong trường hợp cần phải điều trị, phương pháp như thế nào, có hiệu quả hay không phụ thuộc vào nguyên nhân gây bệnh.'
+
+MERGE (o1:disease {id: 'xuất_tinh_ngược_disease'})
+MERGE (o2:cause {id: 'tổn_thương_dây_thần_kinh_cause'})
+MERGE (o1)-[r44:causedBy]->(o2)
+SET r44.text = 'Dùng thuốc có thể mang đến hiệu quả nếu nguyên nhân gây xuất tinh ngược là do tổn thương dây thần kinh, ảnh hưởng từ các bệnh lý tiểu đường, bệnh đa xơ cứng, một số cuộc phẫu thuật vùng bàng quang…'
+
+MERGE (o1:disease {id: 'xuất_tinh_ngược_disease'})
+MERGE (o2:disease {id: 'tiểu_đường_disease'})
+MERGE (o1)-[r45:causedBy]->(o2)
+SET r45.text = 'Dùng thuốc có thể mang đến hiệu quả nếu nguyên nhân gây xuất tinh ngược là do tổn thương dây thần kinh, ảnh hưởng từ các bệnh lý tiểu đường, bệnh đa xơ cứng, một số cuộc phẫu thuật vùng bàng quang…'
+
+MERGE (o1:disease {id: 'xuất_tinh_ngược_disease'})
+MERGE (o2:disease {id: 'bệnh_đa_xơ_cứng_disease'})
+MERGE (o1)-[r46:causedBy]->(o2)
+SET r46.text = 'Dùng thuốc có thể mang đến hiệu quả nếu nguyên nhân gây xuất tinh ngược là do tổn thương dây thần kinh, ảnh hưởng từ các bệnh lý tiểu đường, bệnh đa xơ cứng, một số cuộc phẫu thuật vùng bàng quang…'
+
+MERGE (o1:disease {id: 'xuất_tinh_ngược_disease'})
+MERGE (o2:treatment {id: 'phẫu_thuật_vùng_bàng_quang_treatment'})
+MERGE (o1)-[r47:causedBy]->(o2)
+SET r47.text = 'Dùng thuốc có thể mang đến hiệu quả nếu nguyên nhân gây xuất tinh ngược là do tổn thương dây thần kinh, ảnh hưởng từ các bệnh lý tiểu đường, bệnh đa xơ cứng, một số cuộc phẫu thuật vùng bàng quang…'
+
+MERGE (o1:treatment {id: 'thuốc_treatment'})
+MERGE (o2:organ {id: 'cổ_bàng_quang_organ'})
+MERGE (o1)-[r48:affects]->(o2)
+SET r48.text = 'Những loại thuốc này có vai trò giữ cho cổ bàng quang đóng lại trong quá trình xuất tinh, nhưng có thể gây ra tác dụng phụ hoặc phản ứng bất lợi với các loại thuốc khác. Người bệnh nên báo với bác sĩ. Đặc biệt là khi bị cao huyết áp hay bệnh tim mạch.'
+
+MERGE (o1:treatment {id: 'thuốc_treatment'})
+MERGE (o2:disease {id: 'cao_huyết_áp_disease'})
+MERGE (o1)-[r49:affects]->(o2)
+SET r49.text = 'Những loại thuốc này có vai trò giữ cho cổ bàng quang đóng lại trong quá trình xuất tinh, nhưng có thể gây ra tác dụng phụ hoặc phản ứng bất lợi với các loại thuốc khác. Người bệnh nên báo với bác sĩ. Đặc biệt là khi bị cao huyết áp hay bệnh tim mạch.'
+
+MERGE (o1:treatment {id: 'thuốc_treatment'})
+MERGE (o2:disease {id: 'bệnh_tim_mạch_disease'})
+MERGE (o1)-[r50:affects]->(o2)
+SET r50.text = 'Những loại thuốc này có vai trò giữ cho cổ bàng quang đóng lại trong quá trình xuất tinh, nhưng có thể gây ra tác dụng phụ hoặc phản ứng bất lợi với các loại thuốc khác. Người bệnh nên báo với bác sĩ. Đặc biệt là khi bị cao huyết áp hay bệnh tim mạch.'
+
+MERGE (o1:treatment {id: 'thuốc_treatment'})
+MERGE (o2:symptom {id: 'xuất_tinh_symptom'})
+MERGE (o1)-[r51:affects]->(o2)
+SET r51.text = 'Nếu người bệnh đang dùng các loại thuốc khác ảnh hưởng đến việc xuất tinh, việc này sẽ cần được trao đổi với bác sĩ để điều chỉnh sao cho phù hợp, tránh tác dụng phụ.'
+
+MERGE (o1:disease {id: 'xuất_tinh_ngược_dòng_disease'})
+MERGE (o2:treatment {id: 'hỗ_trợ_sinh_sản_treatment'})
+MERGE (o1)-[r52:treatedBy]->(o2)
+SET r52.text = 'Nếu điều trị nội thất bại và cặp đôi muốn có con, trong trường hợp này, người bệnh sẽ được chỉ định các biện pháp hỗ trợ sinh sản để đảm bảo khả năng mang thai cho người bạn đời. Cùng với sự tiến bộ của các công nghệ hỗ trợ sinh sản hiện nay, người bệnh hoàn toàn có thể làm cha, dù bị xuất tinh ngược dòng.'
+
+MERGE (o1:disease {id: 'xuất_tinh_ngược_dòng_disease'})
+MERGE (o2:treatment {id: 'lấy_tinh_trùng_từ_trong_tinh_hoàn__mào_tinh_hay_thậm_chí_là_trong_nước_tiểu_treatment'})
+MERGE (o1)-[r53:treatedBy]->(o2)
+SET r53.text = 'Các bác sĩ sẽ tiến hành nhiều biện pháp bao gồm lấy tinh trùng từ trong tinh hoàn, mào tinh hay thậm chí là trong nước tiểu, xử lý trong phòng thí nghiệm để phục vụ cho việc thụ tinh ống nghiệm và đã được chứng minh là rất hiệu quả cho những trường hợp vô sinh do xuất tinh ngược dòng.'
+
+MERGE (o1:disease {id: 'xuất_tinh_ngược_dòng_disease'})
+MERGE (o2:treatment {id: 'thụ_tinh_ống_nghiệm_treatment'})
+MERGE (o1)-[r54:treatedBy]->(o2)
+SET r54.text = 'Các bác sĩ sẽ tiến hành nhiều biện pháp bao gồm lấy tinh trùng từ trong tinh hoàn, mào tinh hay thậm chí là trong nước tiểu, xử lý trong phòng thí nghiệm để phục vụ cho việc thụ tinh ống nghiệm và đã được chứng minh là rất hiệu quả cho những trường hợp vô sinh do xuất tinh ngược dòng.'
+
+MERGE (o1:disease {id: 'biến_chứng_bàn_chân_đái_tháo_đường_disease'})
+MERGE (o2:lifestyle {id: 'kiểm_soát_tốt_đường_huyết_lifestyle'})
+MERGE (o1)-[r55:preventedBy]->(o2)
+SET r55.text = 'Để phòng ngừa nguy cơ bị biến chứng bàn chân đái tháo đường, người bệnh cần kiểm soát tốt đường huyết.'
+
+MERGE (o1:lifestyle {id: 'kiểm_soát_tốt_đường_huyết_lifestyle'})
+MERGE (o2:disease {id: 'biến_chứng_bàn_chân_đái_tháo_đường_disease'})
+MERGE (o1)-[r56:preventedBy]->(o2)
+SET r56.text = 'Để phòng ngừa nguy cơ bị biến chứng bàn chân đái tháo đường, người bệnh cần kiểm soát tốt đường huyết.'
+
+MERGE (o1:lifestyle {id: 'kiểm_soát_tốt_đường_huyết_lifestyle'})
+MERGE (o2:disease {id: 'biến_chứng_bàn_chân_disease'})
+MERGE (o1)-[r57:preventedBy]->(o2)
+SET r57.text = 'Kiểm soát tốt đường huyết giúp giảm nguy cơ tổn thương thần kinh và mạch máu, nguyên nhân chính gây ra biến chứng bàn chân.'
+
+MERGE (o1:cause {id: 'tổn_thương_thần_kinh_và_mạch_máu_cause'})
+MERGE (o2:disease {id: 'biến_chứng_bàn_chân_disease'})
+MERGE (o1)-[r58:causes]->(o2)
+SET r58.text = 'Kiểm soát tốt đường huyết giúp giảm nguy cơ tổn thương thần kinh và mạch máu, nguyên nhân chính gây ra biến chứng bàn chân.'
+
+MERGE (o1:disease {id: 'biến_chứng_bàn_chân_disease'})
+MERGE (o2:cause {id: 'tổn_thương_thần_kinh_và_mạch_máu_cause'})
+MERGE (o1)-[r59:causedBy]->(o2)
+SET r59.text = 'Kiểm soát tốt đường huyết giúp giảm nguy cơ tổn thương thần kinh và mạch máu, nguyên nhân chính gây ra biến chứng bàn chân.'
+
+MERGE (o1:test {id: 'kiểm_tra_bàn_chân_test'})
+MERGE (o2:symptom {id: 'dấu_hiệu_bất_thường_symptom'})
+MERGE (o1)-[r60:diagnosedBy]->(o2)
+SET r60.text = 'Ngoài ra, người bệnh cần thường xuyên kiểm tra bàn chân để phát hiện sớm các dấu hiệu bất thường.'
+
+MERGE (o1:symptom {id: 'sưng__đỏ__nóng__đau__tê_bì__loét__nhiễm_trùng_symptom'})
+MERGE (o2:disease {id: 'biến_chứng_bàn_chân_disease'})
+MERGE (o1)-[r61:isSymptomOf]->(o2)
+SET r61.text = 'Dấu hiệu bất thường như: sưng, đỏ, nóng, đau, tê bì, loét, nhiễm trùng.'
+
+MERGE (o1:lifestyle {id: 'giữ_vệ_sinh_bàn_chân_sạch_sẽ_lifestyle'})
+MERGE (o2:disease {id: 'biến_chứng_bàn_chân_disease'})
+MERGE (o1)-[r62:preventedBy]->(o2)
+SET r62.text = 'Bên cạnh đó, người bệnh cần giữ vệ sinh bàn chân sạch sẽ, tránh đi chân trần, mang giày dép vừa chân, không sử dụng thuốc lá.'
+
+MERGE (o1:lifestyle {id: 'tránh_đi_chân_trần_lifestyle'})
+MERGE (o2:disease {id: 'biến_chứng_bàn_chân_disease'})
+MERGE (o1)-[r63:preventedBy]->(o2)
+SET r63.text = 'Bên cạnh đó, người bệnh cần giữ vệ sinh bàn chân sạch sẽ, tránh đi chân trần, mang giày dép vừa chân, không sử dụng thuốc lá.'
+
+MERGE (o1:lifestyle {id: 'mang_giày_dép_vừa_chân_lifestyle'})
+MERGE (o2:disease {id: 'biến_chứng_bàn_chân_disease'})
+MERGE (o1)-[r64:preventedBy]->(o2)
+SET r64.text = 'Bên cạnh đó, người bệnh cần giữ vệ sinh bàn chân sạch sẽ, tránh đi chân trần, mang giày dép vừa chân, không sử dụng thuốc lá.'

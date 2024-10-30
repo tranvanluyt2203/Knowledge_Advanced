@@ -1,0 +1,770 @@
+
+MERGE (o1:disease {id: 'viêm_âm_hộ_disease'})
+MERGE (o2:symptom {id: 'viêm_phần_da_mềm_ở_bên_ngoài_cơ_quan_sinh_dục_nữ_symptom'})
+MERGE (o1)-[r0:isSymptomOf]->(o2)
+SET r0.text = 'Viêm âm hộ là tình trạng viêm phần da mềm ở bên ngoài cơ quan sinh dục nữ.'
+
+MERGE (o1:cause {id: 'đặc_tính_ẩm_ướt_và_ấm_áp_của_âm_hộ_cause'})
+MERGE (o2:disease {id: 'viêm_nhiễm_disease'})
+MERGE (o1)-[r1:causes]->(o2)
+SET r1.text = 'Chính đặc tính ẩm ướt và ấm áp của âm hộ là điều kiện lý tưởng cho vi khuẩn xâm nhập, khiến vùng này dễ bị viêm nhiễm.'
+
+MERGE (o1:disease {id: 'viêm_âm_hộ_disease'})
+MERGE (o2:organ {id: 'phụ_nữ_organ'})
+MERGE (o1)-[r2:affects]->(o2)
+SET r2.text = 'Bất kỳ phụ nữ nào cũng có khả năng bị viêm âm hộ.'
+
+MERGE (o1:cause {id: 'dị_ứng__nhạy_cảm__nhiễm_trùng_cause'})
+MERGE (o2:disease {id: 'viêm_nhiễm_disease'})
+MERGE (o1)-[r3:causes]->(o2)
+SET r3.text = 'Tuy nhiên, những người có cơ địa dễ bị dị ứng, nhạy cảm, nhiễm trùng có nguy cơ viêm nhiễm cao hơn.'
+
+MERGE (o1:cause {id: 'trẻ_em_gái_tuổi_dậy_thì_và_phụ_nữ_sau_mãn_kinh_có_mức_estrogen_thấp_cause'})
+MERGE (o2:disease {id: 'viêm_âm_hộ_disease'})
+MERGE (o1)-[r4:causes]->(o2)
+SET r4.text = 'Ngoài ra, trẻ em gái tuổi dậy thì và phụ nữ sau mãn kinh có mức estrogen thấp nên cũng thuộc nhóm đối tượng dễ mắc viêm âm hộ.'
+
+MERGE (o1:symptom {id: 'ngứa__đỏ__rát__sưng__đau_nhức__tiết_dịch_âm_đạo_bất_thường_symptom'})
+MERGE (o2:disease {id: 'viêm_âm_hộ_disease'})
+MERGE (o1)-[r5:isSymptomOf]->(o2)
+SET r5.text = 'Khi thấy xuất hiện các triệu chứng bệnh như ngứa, đỏ, rát, sưng, đau nhức, tiết dịch âm đạo bất thường… bạn nên thăm khám bác sĩ ngay.'
+
+MERGE (o1:symptom {id: 'tiết_dịch_âm_đạo_symptom'})
+MERGE (o2:organ {id: 'âm_đạo_organ'})
+MERGE (o1)-[r6:isSymptomOf]->(o2)
+SET r6.text = 'Âm đạo của phụ nữ thường tiết dịch có màu trắng trong hoặc hơi đục.'
+
+MERGE (o1:symptom {id: 'tiết_dịch_âm_đạo_symptom'})
+MERGE (o2:symptom {id: 'làm_sạch_các_tế_bào_chết__ngăn_ngừa_nhiễm_trùng_và_các_vi_khuẩn_có_hại_xâm_nhập_vào_âm_đạo_symptom'})
+MERGE (o1)-[r7:isSymptomOf]->(o2)
+SET r7.text = 'Đây là cách âm đạo tự làm sạch các tế bào chết, cũng như ngăn ngừa nhiễm trùng và các vi khuẩn có hại xâm nhập vào âm đạo.'
+
+MERGE (o1:symptom {id: 'tiết_dịch_âm_đạo_symptom'})
+MERGE (o2:symptom {id: 'cơ_chế_làm_sạch_cơ_thể_tự_nhiên_symptom'})
+MERGE (o1)-[r8:isSymptomOf]->(o2)
+SET r8.text = 'Có thể nói, tiết dịch âm đạo là cơ chế làm sạch cơ thể tự nhiên mà ai cũng phải có.'
+
+MERGE (o1:symptom {id: 'dịch_tiết_âm_đạo_bình_thường_symptom'})
+MERGE (o2:symptom {id: 'không_gây_cảm_giác_đau_hay_ngứa_ngáy_symptom'})
+MERGE (o1)-[r9:isSymptomOf]->(o2)
+SET r9.text = 'Dịch tiết âm đạo bình thường (không phải bệnh lý) sẽ không gây cảm giác đau hay ngứa ngáy.'
+
+MERGE (o1:symptom {id: 'lượng_dịch_tiết_ra_symptom'})
+MERGE (o2:symptom {id: 'thay_đổi_theo_thời_điểm_symptom'})
+MERGE (o1)-[r10:isSymptomOf]->(o2)
+SET r10.text = 'Lượng dịch tiết ra cũng khác nhau ở từng thời điểm.'
+
+MERGE (o1:symptom {id: 'lượng_dịch_tiết_ra_symptom'})
+MERGE (o2:symptom {id: 'thay_đổi_theo_thời_điểm_symptom'})
+MERGE (o1)-[r11:isSymptomOf]->(o2)
+SET r11.text = 'Có khi nó chỉ là một lượng nhỏ rất loãng, có lúc tiết nhiều và đặc hơn.'
+
+MERGE (o1:symptom {id: 'các_triệu_chứng_dưới_đây_symptom'})
+MERGE (o2:disease {id: 'viêm_nhiễm_vùng_kín_disease'})
+MERGE (o1)-[r12:isSymptomOf]->(o2)
+SET r12.text = 'Tuy nhiên, sẽ là bất thường khi âm đạo của bạn có các triệu chứng dưới đây, bởi đó là dấu hiệu cho thấy bạn đang bị viêm nhiễm vùng kín:'
+
+MERGE (o1:symptom {id: 'thay_đổi_màu_sắc__mùi_hoặc_lượng_dịch_tiết_ra_từ_âm_đạo:_dịch_màu_vàng_hoặc_trắng_đục__có_mùi_hôi__ra_rất_nhiều_symptom'})
+MERGE (o2:disease {id: 'viêm_nhiễm_vùng_kín_disease'})
+MERGE (o1)-[r13:isSymptomOf]->(o2)
+SET r13.text = 'Thay đổi màu sắc, mùi hoặc lượng dịch tiết ra từ âm đạo: dịch màu vàng hoặc trắng đục, có mùi hôi, ra rất nhiều;'
+
+MERGE (o1:symptom {id: 'ngứa_hoặc_kích_ứng_âm_đạo_symptom'})
+MERGE (o2:disease {id: 'viêm_nhiễm_vùng_kín_disease'})
+MERGE (o1)-[r14:isSymptomOf]->(o2)
+SET r14.text = 'Ngứa hoặc kích ứng âm đạo;'
+
+MERGE (o1:symptom {id: 'đau_khi_giao_hợp_symptom'})
+MERGE (o2:disease {id: 'viêm_nhiễm_vùng_kín_disease'})
+MERGE (o1)-[r15:isSymptomOf]->(o2)
+SET r15.text = 'Đau khi giao hợp;'
+
+MERGE (o1:symptom {id: 'rát__buốt_mỗi_lần_đi_tiểu_symptom'})
+MERGE (o2:disease {id: 'viêm_nhiễm_vùng_kín_disease'})
+MERGE (o1)-[r16:isSymptomOf]->(o2)
+SET r16.text = 'Rát, buốt mỗi lần đi tiểu;'
+
+MERGE (o1:symptom {id: 'chảy_máu_âm_đạo_nhẹ_symptom'})
+MERGE (o2:disease {id: 'viêm_nhiễm_vùng_kín_disease'})
+MERGE (o1)-[r17:isSymptomOf]->(o2)
+SET r17.text = 'Chảy máu âm đạo nhẹ.'
+
+MERGE (o1:symptom {id: 'những_triệu_chứng_trên_symptom'})
+MERGE (o2:disease {id: 'viêm_nhiễm_vùng_kín_disease'})
+MERGE (o1)-[r18:isSymptomOf]->(o2)
+SET r18.text = 'Hãy đi khám bác sĩ ngay nếu bạn xuất hiện những triệu chứng trên, nhất là khi:'
+
+MERGE (o1:disease {id: 'nhiễm_trùng_âm_đạo_disease'})
+MERGE (o2:disease {id: 'viêm_nhiễm_vùng_kín_disease'})
+MERGE (o1)-[r19:causedBy]->(o2)
+SET r19.text = 'Bạn từng bị nhiễm trùng âm đạo;'
+
+MERGE (o1:lifestyle {id: 'quan_hệ_tình_dục_không_an_toàn_lifestyle'})
+MERGE (o2:disease {id: 'viêm_nhiễm_vùng_kín_disease'})
+MERGE (o1)-[r20:causes]->(o2)
+SET r20.text = 'Bạn đã hoặc đang quan hệ tình dục không an toàn: quan hệ với nhiều bạn tình, không dùng biện pháp bảo vệ STD khi quan hệ, quan hệ đường miệng hoặc hậu môn…'
+
+MERGE (o1:treatment {id: 'thuốc_chống_nấm_men_không_kê_đơn_treatment'})
+MERGE (o2:disease {id: 'viêm_âm_đạo_disease'})
+MERGE (o1)-[r21:treatedBy]->(o2)
+SET r21.text = 'Bạn đã hoàn thành một đợt điều trị viêm âm đạo bằng thuốc chống nấm men không kê đơn, nhưng các triệu chứng viêm không hết hẳn;'
+
+MERGE (o1:symptom {id: 'sốt__ớn_lạnh_hoặc_đau_vùng_chậu_symptom'})
+MERGE (o2:disease {id: 'viêm_nhiễm_vùng_kín_disease'})
+MERGE (o1)-[r22:isSymptomOf]->(o2)
+SET r22.text = 'Bạn đang bị sốt, ớn lạnh hoặc đau vùng chậu.'
+
+MERGE (o1:symptom {id: 'tiết_dịch_âm_đạo_bất_thường_cùng_với_biểu_hiện_đau_vùng_chậu__sốt_symptom'})
+MERGE (o2:disease {id: 'bệnh_phụ_khoa_disease'})
+MERGE (o1)-[r23:isSymptomOf]->(o2)
+SET r23.text = 'Tiết dịch âm đạo bất thường cùng với biểu hiện đau vùng chậu, sốt… cho thấy bạn có khả năng bị bệnh phụ khoa'
+
+MERGE (o1:disease {id: 'nhiễm_trùng_âm_đạo_do_nấm_men_disease'})
+MERGE (o2:cause {id: 'loài_nấm_có_tên_candida_cause'})
+MERGE (o1)-[r24:causedBy]->(o2)
+SET r24.text = 'Nhiễm trùng âm đạo do nấm men là bệnh lý gây ra bởi một loài nấm có tên candida.'
+
+MERGE (o1:cause {id: 'candida_cause'})
+MERGE (o2:organ {id: 'miệng_và_đường_tiêu_hóa_của_cả_nam_và_nữ_organ'})
+MERGE (o1)-[r25:locatedIn]->(o2)
+SET r25.text = 'Không chỉ có môi trường âm đạo, candida còn sống trong miệng và đường tiêu hóa của cả nam và nữ.'
+
+MERGE (o1:cause {id: 'nấm_men_cause'})
+MERGE (o2:organ {id: 'môi_trường_âm_đạo_organ'})
+MERGE (o1)-[r26:locatedIn]->(o2)
+SET r26.text = 'Việc nấm men hiện diện trong môi trường âm đạo là hết sức bình thường.'
+
+MERGE (o1:cause {id: 'yếu_tố_tác_động_cause'})
+MERGE (o2:disease {id: 'nhiễm_trùng_disease'})
+MERGE (o1)-[r27:causes]->(o2)
+SET r27.text = 'Vậy, yếu tố nào tác động khiến chúng gây ra hiện tượng nhiễm trùng?'
+
+MERGE (o1:cause {id: 'số_lượng_nấm_candida_tăng_lên_đáng_kể_cause'})
+MERGE (o2:disease {id: 'nhiễm_trùng_disease'})
+MERGE (o1)-[r28:causes]->(o2)
+SET r28.text = 'Câu trả lời là: hiện tượng nhiễm trùng xảy ra khi số lượng nấm candida tăng lên đáng kể sau một tác động từ bên ngoài.'
+
+MERGE (o1:disease {id: 'nhiễm_khuẩn_đường_tiết_niệu_disease'})
+MERGE (o2:treatment {id: 'thuốc_kháng_sinh_treatment'})
+MERGE (o1)-[r29:causedBy]->(o2)
+SET r29.text = 'Ví dụ, một phụ nữ bị nhiễm khuẩn đường tiết niệu và phải sử dụng thuốc kháng sinh để điều trị.'
+
+MERGE (o1:treatment {id: 'thuốc_kháng_sinh_treatment'})
+MERGE (o2:cause {id: 'vi_khuẩn_“thân_thiện”_với_âm_đạo_cause'})
+MERGE (o1)-[r30:affects]->(o2)
+SET r30.text = 'Những loại thuốc này là thủ phạm tiêu diệt các vi khuẩn “thân thiện” với âm đạo, có nhiệm vụ giữ cho nấm men ở trạng thái cân bằng.'
+
+MERGE (o1:cause {id: 'nấm_men_phát_triển_vượt_mức_bình_thường_cause'})
+MERGE (o2:disease {id: 'nhiễm_trùng_disease'})
+MERGE (o1)-[r31:causes]->(o2)
+SET r31.text = 'Kết quả là, nấm men phát triển vượt mức bình thường và gây ra hiện tượng nhiễm trùng.'
+
+MERGE (o1:cause {id: 'mang_thai__sự_thay_đổi_nồng_độ_hormone_và_bệnh_đái_tháo_đường_cause'})
+MERGE (o2:disease {id: 'nhiễm_trùng_disease'})
+MERGE (o1)-[r32:causes]->(o2)
+SET r32.text = 'Ngoài kháng sinh, những yếu tố có thể làm đảo lộn sự cân bằng này bao gồm mang thai, sự thay đổi nồng độ hormone và bệnh đái tháo đường.'
+
+MERGE (o1:symptom {id: 'âm_đạo_tiết_dịch_đặc__màu_trắng_ngà_và_không_có_mùi_symptom'})
+MERGE (o2:disease {id: 'viêm_âm_đạo_do_nấm_men_disease'})
+MERGE (o1)-[r33:isSymptomOf]->(o2)
+SET r33.text = 'Triệu chứng dễ nhận biết của viêm âm đạo do nấm men là âm đạo tiết dịch đặc, màu trắng ngà và không có mùi.'
+
+MERGE (o1:symptom {id: 'âm_đạo_cũng_như_âm_hộ_ngứa_và_đỏ__đôi_khi_sưng_tấy_symptom'})
+MERGE (o2:disease {id: 'viêm_âm_đạo_do_nấm_men_disease'})
+MERGE (o1)-[r34:isSymptomOf]->(o2)
+SET r34.text = 'Ngoài ra, bệnh còn khiến âm đạo cũng như âm hộ ngứa và đỏ, đôi khi sưng tấy cả trước khi bắt đầu tiết dịch.'
+
+MERGE (o1:symptom {id: 'vùng_da_trên_âm_hộ_khô_rát__khiến_cả_khu_vực_âm_đạo_bị_nóng__buốt_mỗi_khi_đi_tiểu_symptom'})
+MERGE (o2:disease {id: 'viêm_âm_đạo_do_nấm_men_disease'})
+MERGE (o1)-[r35:isSymptomOf]->(o2)
+SET r35.text = 'Vùng da trên âm hộ cũng trở nên khô rát, khiến cả khu vực âm đạo bị nóng, buốt mỗi khi đi tiểu.'
+
+MERGE (o1:disease {id: 'viêm_do_vi_khuẩn_(bv)_disease'})
+MERGE (o2:disease {id: 'nhiễm_trùng_âm_đạo_disease'})
+MERGE (o1)-[r36:isSymptomOf]->(o2)
+SET r36.text = 'Viêm do vi khuẩn (BV) là bệnh nhiễm trùng âm đạo phổ biến nhất ở phụ nữ trong độ tuổi sinh sản (3).'
+
+MERGE (o1:cause {id: 'sự_kết_hợp_của_một_số_vi_khuẩn_thường_sống_trong_âm_đạo_cause'})
+MERGE (o2:disease {id: 'viêm_do_vi_khuẩn_(bv)_disease'})
+MERGE (o1)-[r37:causes]->(o2)
+SET r37.text = 'Đây là căn bệnh gây ra bởi sự kết hợp của một số vi khuẩn thường sống trong âm đạo.'
+
+MERGE (o1:cause {id: 'vi_khuẩn_phát_triển_quá_mức__làm_cho_sự_cân_bằng_ph_âm_đạo_bị_rối_loạn_cause'})
+MERGE (o2:disease {id: 'viêm_nhiễm_disease'})
+MERGE (o1)-[r38:causes]->(o2)
+SET r38.text = 'Tương tự như nấm candida, những vi khuẩn này phát triển quá mức, làm cho sự cân bằng pH âm đạo bị rối loạn và khiến toàn bộ khu vực này viêm nhiễm.'
+
+MERGE (o1:symptom {id: 'dịch_âm_đạo_có_mùi_bất_thường_(thường_là_mùi_tanh)__loãng_và_có_màu_trắng_đục_symptom'})
+MERGE (o2:disease {id: 'viêm_do_vi_khuẩn_(bv)_disease'})
+MERGE (o1)-[r39:isSymptomOf]->(o2)
+SET r39.text = 'Khi bị âm đạo bị viêm do vi khuẩn, bạn sẽ cảm nhận được dịch âm đạo có mùi bất thường (thường là mùi tanh), loãng và có màu trắng đục.'
+
+MERGE (o1:lifestyle {id: 'giao_hợp_lifestyle'})
+MERGE (o2:symptom {id: 'mùi_dịch_âm_đạo_symptom'})
+MERGE (o1)-[r40:aggravatedBy]->(o2)
+SET r40.text = 'Mùi này càng trở nên rõ ràng hơn sau khi giao hợp.'
+
+MERGE (o1:symptom {id: 'đỏ_hoặc_ngứa_âm_đạo_symptom'})
+MERGE (o2:disease {id: 'viêm_nhiễm_âm_đạo_do_vi_khuẩn_disease'})
+MERGE (o1)-[r41:isSymptomOf]->(o2)
+SET r41.text = 'Đỏ hoặc ngứa âm đạo không phải là triệu chứng thường gặp nhất của bệnh viêm nhiễm âm đạo do vi khuẩn, trừ khi người bệnh bị đồng nhiễm BV và nấm men.'
+
+MERGE (o1:symptom {id: 'không_có_triệu_chứng_symptom'})
+MERGE (o2:disease {id: 'viêm_nhiễm_âm_đạo_do_vi_khuẩn_disease'})
+MERGE (o1)-[r42:isSymptomOf]->(o2)
+SET r42.text = 'Thậm chí, một số bệnh nhân còn không có triệu chứng gì cho đến khi đi khám phụ khoa định kỳ.'
+
+MERGE (o1:lifestyle {id: 'hoạt_động_tình_dục_đều_đặn_lifestyle'})
+MERGE (o2:disease {id: 'viêm_do_vi_khuẩn_(bv)_disease'})
+MERGE (o1)-[r43:associatedWith]->(o2)
+SET r43.text = 'BV không phải bệnh nhiễm trùng lây truyền qua đường tình dục, nhưng nó thường gặp ở những người có hoạt động tình dục đều đặn.'
+
+MERGE (o1:cause {id: 'các_yếu_tố_nguy_cơ_cause'})
+MERGE (o2:disease {id: 'viêm_do_vi_khuẩn_(bv)_disease'})
+MERGE (o1)-[r44:causes]->(o2)
+SET r44.text = 'Các yếu tố nguy cơ khiến tình trạng viêm do vi khuẩn bùng phát thường là:'
+
+MERGE (o1:lifestyle {id: 'giao_hợp_với_nhiều_bạn_tình_lifestyle'})
+MERGE (o2:disease {id: 'viêm_do_vi_khuẩn_(bv)_disease'})
+MERGE (o1)-[r45:causes]->(o2)
+SET r45.text = 'Giao hợp với nhiều bạn tình'
+
+MERGE (o1:lifestyle {id: 'thường_xuyên_thụt_rửa_âm_đạo_lifestyle'})
+MERGE (o2:disease {id: 'viêm_do_vi_khuẩn_(bv)_disease'})
+MERGE (o1)-[r46:causes]->(o2)
+SET r46.text = 'Thường xuyên thụt rửa âm đạo'
+
+MERGE (o1:lifestyle {id: 'hút_thuốc_lá_lifestyle'})
+MERGE (o2:disease {id: 'viêm_do_vi_khuẩn_(bv)_disease'})
+MERGE (o1)-[r47:causes]->(o2)
+SET r47.text = 'Hút thuốc lá'
+
+MERGE (o1:treatment {id: 'thuốc_để_điều_trị_viêm_âm_đạo_do_nấm_men_treatment'})
+MERGE (o2:disease {id: 'viêm_do_vi_khuẩn_(bv)_disease'})
+MERGE (o1)-[r48:treatedBy]->(o2)
+SET r48.text = 'Vì BV là bệnh lý gây ra bởi vi khuẩn chứ không phải nấm men, cho nên, các loại thuốc để điều trị viêm âm đạo do nấm men hoàn toàn vô tác dụng với BV.'
+
+MERGE (o1:disease {id: 'mụn_cóc_do_hpv_disease'})
+MERGE (o2:test {id: 'xét_nghiệm_pap_test'})
+MERGE (o1)-[r49:diagnosedBy]->(o2)
+SET r49.text = 'Không phải lúc nào cũng có thể nhìn thấy mụn cóc do HPV bằng mắt thường, và virus HPV chỉ được phát hiện khi thực hiện xét nghiệm Pap (một xét nghiệm để tầm soát và chẩn đoán ung thư cổ tử cung).'
+
+MERGE (o1:test {id: 'xét_nghiệm_pap_test'})
+MERGE (o2:disease {id: 'ung_thư_cổ_tử_cung_disease'})
+MERGE (o1)-[r50:diagnosedBy]->(o2)
+SET r50.text = 'Không phải lúc nào cũng có thể nhìn thấy mụn cóc do HPV bằng mắt thường, và virus HPV chỉ được phát hiện khi thực hiện xét nghiệm Pap (một xét nghiệm để tầm soát và chẩn đoán ung thư cổ tử cung).'
+
+MERGE (o1:symptom {id: 'ngứa_symptom'})
+MERGE (o2:disease {id: 'viêm_nhiễm_vùng_kín_disease'})
+MERGE (o1)-[r51:isSymptomOf]->(o2)
+SET r51.text = 'Hiện tượng này không hiếm gặp: một phụ nữ có thể bị ngứa, rát, thậm chí tiết dịch âm đạo nhiều nhưng khi thăm khám thì không phát hiện viêm nhiễm vùng kín. Nguyên nhân dẫn tới tình trạng trên là do cơ thể người bệnh phản ứng, dị ứng hoặc kích ứng bởi thuốc xịt, dung dịch thụt rửa âm đạo hoặc tampon, cốc nguyệt san, sản phẩm diệt tinh trùng&#8230; Vùng da xung quanh âm đạo cũng có thể nhạy cảm với xà phòng thơm, kem dưỡng da, chất bôi trơn, bột giặt, nước xả vải&#8230; Cuối cùng, việc sử dụng các sản phẩm khử mùi, ngăn ngứa bôi ngoài da trong thời gian dài cũng khiến tình trạng viêm âm đạo bùng phát.'
+
+MERGE (o1:symptom {id: 'rát_symptom'})
+MERGE (o2:disease {id: 'viêm_nhiễm_vùng_kín_disease'})
+MERGE (o1)-[r52:isSymptomOf]->(o2)
+SET r52.text = 'Hiện tượng này không hiếm gặp: một phụ nữ có thể bị ngứa, rát, thậm chí tiết dịch âm đạo nhiều nhưng khi thăm khám thì không phát hiện viêm nhiễm vùng kín. Nguyên nhân dẫn tới tình trạng trên là do cơ thể người bệnh phản ứng, dị ứng hoặc kích ứng bởi thuốc xịt, dung dịch thụt rửa âm đạo hoặc tampon, cốc nguyệt san, sản phẩm diệt tinh trùng&#8230; Vùng da xung quanh âm đạo cũng có thể nhạy cảm với xà phòng thơm, kem dưỡng da, chất bôi trơn, bột giặt, nước xả vải&#8230; Cuối cùng, việc sử dụng các sản phẩm khử mùi, ngăn ngứa bôi ngoài da trong thời gian dài cũng khiến tình trạng viêm âm đạo bùng phát.'
+
+MERGE (o1:symptom {id: 'tiết_dịch_âm_đạo_nhiều_symptom'})
+MERGE (o2:disease {id: 'viêm_nhiễm_vùng_kín_disease'})
+MERGE (o1)-[r53:isSymptomOf]->(o2)
+SET r53.text = 'Hiện tượng này không hiếm gặp: một phụ nữ có thể bị ngứa, rát, thậm chí tiết dịch âm đạo nhiều nhưng khi thăm khám thì không phát hiện viêm nhiễm vùng kín. Nguyên nhân dẫn tới tình trạng trên là do cơ thể người bệnh phản ứng, dị ứng hoặc kích ứng bởi thuốc xịt, dung dịch thụt rửa âm đạo hoặc tampon, cốc nguyệt san, sản phẩm diệt tinh trùng&#8230; Vùng da xung quanh âm đạo cũng có thể nhạy cảm với xà phòng thơm, kem dưỡng da, chất bôi trơn, bột giặt, nước xả vải&#8230; Cuối cùng, việc sử dụng các sản phẩm khử mùi, ngăn ngứa bôi ngoài da trong thời gian dài cũng khiến tình trạng viêm âm đạo bùng phát.'
+
+MERGE (o1:treatment {id: 'thuốc_xịt_treatment'})
+MERGE (o2:disease {id: 'viêm_nhiễm_vùng_kín_disease'})
+MERGE (o1)-[r54:causedBy]->(o2)
+SET r54.text = 'Hiện tượng này không hiếm gặp: một phụ nữ có thể bị ngứa, rát, thậm chí tiết dịch âm đạo nhiều nhưng khi thăm khám thì không phát hiện viêm nhiễm vùng kín. Nguyên nhân dẫn tới tình trạng trên là do cơ thể người bệnh phản ứng, dị ứng hoặc kích ứng bởi thuốc xịt, dung dịch thụt rửa âm đạo hoặc tampon, cốc nguyệt san, sản phẩm diệt tinh trùng&#8230; Vùng da xung quanh âm đạo cũng có thể nhạy cảm với xà phòng thơm, kem dưỡng da, chất bôi trơn, bột giặt, nước xả vải&#8230; Cuối cùng, việc sử dụng các sản phẩm khử mùi, ngăn ngứa bôi ngoài da trong thời gian dài cũng khiến tình trạng viêm âm đạo bùng phát.'
+
+MERGE (o1:treatment {id: 'dung_dịch_thụt_rửa_âm_đạo_treatment'})
+MERGE (o2:disease {id: 'viêm_nhiễm_vùng_kín_disease'})
+MERGE (o1)-[r55:causedBy]->(o2)
+SET r55.text = 'Hiện tượng này không hiếm gặp: một phụ nữ có thể bị ngứa, rát, thậm chí tiết dịch âm đạo nhiều nhưng khi thăm khám thì không phát hiện viêm nhiễm vùng kín. Nguyên nhân dẫn tới tình trạng trên là do cơ thể người bệnh phản ứng, dị ứng hoặc kích ứng bởi thuốc xịt, dung dịch thụt rửa âm đạo hoặc tampon, cốc nguyệt san, sản phẩm diệt tinh trùng&#8230; Vùng da xung quanh âm đạo cũng có thể nhạy cảm với xà phòng thơm, kem dưỡng da, chất bôi trơn, bột giặt, nước xả vải&#8230; Cuối cùng, việc sử dụng các sản phẩm khử mùi, ngăn ngứa bôi ngoài da trong thời gian dài cũng khiến tình trạng viêm âm đạo bùng phát.'
+
+MERGE (o1:treatment {id: 'tampon_treatment'})
+MERGE (o2:disease {id: 'viêm_nhiễm_vùng_kín_disease'})
+MERGE (o1)-[r56:causedBy]->(o2)
+SET r56.text = 'Hiện tượng này không hiếm gặp: một phụ nữ có thể bị ngứa, rát, thậm chí tiết dịch âm đạo nhiều nhưng khi thăm khám thì không phát hiện viêm nhiễm vùng kín. Nguyên nhân dẫn tới tình trạng trên là do cơ thể người bệnh phản ứng, dị ứng hoặc kích ứng bởi thuốc xịt, dung dịch thụt rửa âm đạo hoặc tampon, cốc nguyệt san, sản phẩm diệt tinh trùng&#8230; Vùng da xung quanh âm đạo cũng có thể nhạy cảm với xà phòng thơm, kem dưỡng da, chất bôi trơn, bột giặt, nước xả vải&#8230; Cuối cùng, việc sử dụng các sản phẩm khử mùi, ngăn ngứa bôi ngoài da trong thời gian dài cũng khiến tình trạng viêm âm đạo bùng phát.'
+
+MERGE (o1:treatment {id: 'cốc_nguyệt_san_treatment'})
+MERGE (o2:disease {id: 'viêm_nhiễm_vùng_kín_disease'})
+MERGE (o1)-[r57:causedBy]->(o2)
+SET r57.text = 'Hiện tượng này không hiếm gặp: một phụ nữ có thể bị ngứa, rát, thậm chí tiết dịch âm đạo nhiều nhưng khi thăm khám thì không phát hiện viêm nhiễm vùng kín. Nguyên nhân dẫn tới tình trạng trên là do cơ thể người bệnh phản ứng, dị ứng hoặc kích ứng bởi thuốc xịt, dung dịch thụt rửa âm đạo hoặc tampon, cốc nguyệt san, sản phẩm diệt tinh trùng&#8230; Vùng da xung quanh âm đạo cũng có thể nhạy cảm với xà phòng thơm, kem dưỡng da, chất bôi trơn, bột giặt, nước xả vải&#8230; Cuối cùng, việc sử dụng các sản phẩm khử mùi, ngăn ngứa bôi ngoài da trong thời gian dài cũng khiến tình trạng viêm âm đạo bùng phát.'
+
+MERGE (o1:treatment {id: 'sản_phẩm_diệt_tinh_trùng_treatment'})
+MERGE (o2:disease {id: 'viêm_nhiễm_vùng_kín_disease'})
+MERGE (o1)-[r58:causedBy]->(o2)
+SET r58.text = 'Hiện tượng này không hiếm gặp: một phụ nữ có thể bị ngứa, rát, thậm chí tiết dịch âm đạo nhiều nhưng khi thăm khám thì không phát hiện viêm nhiễm vùng kín. Nguyên nhân dẫn tới tình trạng trên là do cơ thể người bệnh phản ứng, dị ứng hoặc kích ứng bởi thuốc xịt, dung dịch thụt rửa âm đạo hoặc tampon, cốc nguyệt san, sản phẩm diệt tinh trùng&#8230; Vùng da xung quanh âm đạo cũng có thể nhạy cảm với xà phòng thơm, kem dưỡng da, chất bôi trơn, bột giặt, nước xả vải&#8230; Cuối cùng, việc sử dụng các sản phẩm khử mùi, ngăn ngứa bôi ngoài da trong thời gian dài cũng khiến tình trạng viêm âm đạo bùng phát.'
+
+MERGE (o1:treatment {id: 'xà_phòng_thơm_treatment'})
+MERGE (o2:disease {id: 'viêm_nhiễm_vùng_kín_disease'})
+MERGE (o1)-[r59:causedBy]->(o2)
+SET r59.text = 'Hiện tượng này không hiếm gặp: một phụ nữ có thể bị ngứa, rát, thậm chí tiết dịch âm đạo nhiều nhưng khi thăm khám thì không phát hiện viêm nhiễm vùng kín. Nguyên nhân dẫn tới tình trạng trên là do cơ thể người bệnh phản ứng, dị ứng hoặc kích ứng bởi thuốc xịt, dung dịch thụt rửa âm đạo hoặc tampon, cốc nguyệt san, sản phẩm diệt tinh trùng&#8230; Vùng da xung quanh âm đạo cũng có thể nhạy cảm với xà phòng thơm, kem dưỡng da, chất bôi trơn, bột giặt, nước xả vải&#8230; Cuối cùng, việc sử dụng các sản phẩm khử mùi, ngăn ngứa bôi ngoài da trong thời gian dài cũng khiến tình trạng viêm âm đạo bùng phát.'
+
+MERGE (o1:treatment {id: 'kem_dưỡng_da_treatment'})
+MERGE (o2:disease {id: 'viêm_nhiễm_vùng_kín_disease'})
+MERGE (o1)-[r60:causedBy]->(o2)
+SET r60.text = 'Hiện tượng này không hiếm gặp: một phụ nữ có thể bị ngứa, rát, thậm chí tiết dịch âm đạo nhiều nhưng khi thăm khám thì không phát hiện viêm nhiễm vùng kín. Nguyên nhân dẫn tới tình trạng trên là do cơ thể người bệnh phản ứng, dị ứng hoặc kích ứng bởi thuốc xịt, dung dịch thụt rửa âm đạo hoặc tampon, cốc nguyệt san, sản phẩm diệt tinh trùng&#8230; Vùng da xung quanh âm đạo cũng có thể nhạy cảm với xà phòng thơm, kem dưỡng da, chất bôi trơn, bột giặt, nước xả vải&#8230; Cuối cùng, việc sử dụng các sản phẩm khử mùi, ngăn ngứa bôi ngoài da trong thời gian dài cũng khiến tình trạng viêm âm đạo bùng phát.'
+
+MERGE (o1:treatment {id: 'chất_bôi_trơn_treatment'})
+MERGE (o2:disease {id: 'viêm_nhiễm_vùng_kín_disease'})
+MERGE (o1)-[r61:causedBy]->(o2)
+SET r61.text = 'Hiện tượng này không hiếm gặp: một phụ nữ có thể bị ngứa, rát, thậm chí tiết dịch âm đạo nhiều nhưng khi thăm khám thì không phát hiện viêm nhiễm vùng kín. Nguyên nhân dẫn tới tình trạng trên là do cơ thể người bệnh phản ứng, dị ứng hoặc kích ứng bởi thuốc xịt, dung dịch thụt rửa âm đạo hoặc tampon, cốc nguyệt san, sản phẩm diệt tinh trùng&#8230; Vùng da xung quanh âm đạo cũng có thể nhạy cảm với xà phòng thơm, kem dưỡng da, chất bôi trơn, bột giặt, nước xả vải&#8230; Cuối cùng, việc sử dụng các sản phẩm khử mùi, ngăn ngứa bôi ngoài da trong thời gian dài cũng khiến tình trạng viêm âm đạo bùng phát.'
+
+MERGE (o1:treatment {id: 'bột_giặt_treatment'})
+MERGE (o2:disease {id: 'viêm_nhiễm_vùng_kín_disease'})
+MERGE (o1)-[r62:causedBy]->(o2)
+SET r62.text = 'Hiện tượng này không hiếm gặp: một phụ nữ có thể bị ngứa, rát, thậm chí tiết dịch âm đạo nhiều nhưng khi thăm khám thì không phát hiện viêm nhiễm vùng kín. Nguyên nhân dẫn tới tình trạng trên là do cơ thể người bệnh phản ứng, dị ứng hoặc kích ứng bởi thuốc xịt, dung dịch thụt rửa âm đạo hoặc tampon, cốc nguyệt san, sản phẩm diệt tinh trùng&#8230; Vùng da xung quanh âm đạo cũng có thể nhạy cảm với xà phòng thơm, kem dưỡng da, chất bôi trơn, bột giặt, nước xả vải&#8230; Cuối cùng, việc sử dụng các sản phẩm khử mùi, ngăn ngứa bôi ngoài da trong thời gian dài cũng khiến tình trạng viêm âm đạo bùng phát.'
+
+MERGE (o1:treatment {id: 'nước_xả_vải_treatment'})
+MERGE (o2:disease {id: 'viêm_nhiễm_vùng_kín_disease'})
+MERGE (o1)-[r63:causedBy]->(o2)
+SET r63.text = 'Hiện tượng này không hiếm gặp: một phụ nữ có thể bị ngứa, rát, thậm chí tiết dịch âm đạo nhiều nhưng khi thăm khám thì không phát hiện viêm nhiễm vùng kín. Nguyên nhân dẫn tới tình trạng trên là do cơ thể người bệnh phản ứng, dị ứng hoặc kích ứng bởi thuốc xịt, dung dịch thụt rửa âm đạo hoặc tampon, cốc nguyệt san, sản phẩm diệt tinh trùng&#8230; Vùng da xung quanh âm đạo cũng có thể nhạy cảm với xà phòng thơm, kem dưỡng da, chất bôi trơn, bột giặt, nước xả vải&#8230; Cuối cùng, việc sử dụng các sản phẩm khử mùi, ngăn ngứa bôi ngoài da trong thời gian dài cũng khiến tình trạng viêm âm đạo bùng phát.'
+
+MERGE (o1:treatment {id: 'sản_phẩm_khử_mùi_treatment'})
+MERGE (o2:disease {id: 'viêm_nhiễm_vùng_kín_disease'})
+MERGE (o1)-[r64:causedBy]->(o2)
+SET r64.text = 'Hiện tượng này không hiếm gặp: một phụ nữ có thể bị ngứa, rát, thậm chí tiết dịch âm đạo nhiều nhưng khi thăm khám thì không phát hiện viêm nhiễm vùng kín. Nguyên nhân dẫn tới tình trạng trên là do cơ thể người bệnh phản ứng, dị ứng hoặc kích ứng bởi thuốc xịt, dung dịch thụt rửa âm đạo hoặc tampon, cốc nguyệt san, sản phẩm diệt tinh trùng&#8230; Vùng da xung quanh âm đạo cũng có thể nhạy cảm với xà phòng thơm, kem dưỡng da, chất bôi trơn, bột giặt, nước xả vải&#8230; Cuối cùng, việc sử dụng các sản phẩm khử mùi, ngăn ngứa bôi ngoài da trong thời gian dài cũng khiến tình trạng viêm âm đạo bùng phát.'
+
+MERGE (o1:treatment {id: 'sản_phẩm_ngăn_ngứa_treatment'})
+MERGE (o2:disease {id: 'viêm_nhiễm_vùng_kín_disease'})
+MERGE (o1)-[r65:causedBy]->(o2)
+SET r65.text = 'Hiện tượng này không hiếm gặp: một phụ nữ có thể bị ngứa, rát, thậm chí tiết dịch âm đạo nhiều nhưng khi thăm khám thì không phát hiện viêm nhiễm vùng kín. Nguyên nhân dẫn tới tình trạng trên là do cơ thể người bệnh phản ứng, dị ứng hoặc kích ứng bởi thuốc xịt, dung dịch thụt rửa âm đạo hoặc tampon, cốc nguyệt san, sản phẩm diệt tinh trùng&#8230; Vùng da xung quanh âm đạo cũng có thể nhạy cảm với xà phòng thơm, kem dưỡng da, chất bôi trơn, bột giặt, nước xả vải&#8230; Cuối cùng, việc sử dụng các sản phẩm khử mùi, ngăn ngứa bôi ngoài da trong thời gian dài cũng khiến tình trạng viêm âm đạo bùng phát.'
+
+MERGE (o1:symptom {id: 'âm_đạo_tiết_dịch_nhiều_symptom'})
+MERGE (o2:disease {id: 'viêm_âm_đạo_disease'})
+MERGE (o1)-[r66:isSymptomOf]->(o2)
+SET r66.text = 'Các triệu chứng của bệnh lý này là âm đạo tiết dịch nhiều, nhầy, có màu từ vàng đến xanh. Bệnh gặp nhiều nhất ở phụ nữ mãn kinh.'
+
+MERGE (o1:symptom {id: 'tiết_dịch_âm_đạo_nhầy_symptom'})
+MERGE (o2:disease {id: 'viêm_âm_đạo_disease'})
+MERGE (o1)-[r67:isSymptomOf]->(o2)
+SET r67.text = 'Các triệu chứng của bệnh lý này là âm đạo tiết dịch nhiều, nhầy, có màu từ vàng đến xanh. Bệnh gặp nhiều nhất ở phụ nữ mãn kinh.'
+
+MERGE (o1:symptom {id: 'tiết_dịch_âm_đạo_có_màu_từ_vàng_đến_xanh_symptom'})
+MERGE (o2:disease {id: 'viêm_âm_đạo_disease'})
+MERGE (o1)-[r68:isSymptomOf]->(o2)
+SET r68.text = 'Các triệu chứng của bệnh lý này là âm đạo tiết dịch nhiều, nhầy, có màu từ vàng đến xanh. Bệnh gặp nhiều nhất ở phụ nữ mãn kinh.'
+
+MERGE (o1:disease {id: 'viêm_âm_đạo_disease'})
+MERGE (o2:lifestyle {id: 'phụ_nữ_mãn_kinh_lifestyle'})
+MERGE (o1)-[r69:associatedWith]->(o2)
+SET r69.text = 'Các triệu chứng của bệnh lý này là âm đạo tiết dịch nhiều, nhầy, có màu từ vàng đến xanh. Bệnh gặp nhiều nhất ở phụ nữ mãn kinh.'
+
+MERGE (o1:treatment {id: 'tampon_treatment'})
+MERGE (o2:disease {id: 'viêm_không_lây_nhiễm_disease'})
+MERGE (o1)-[r70:causedBy]->(o2)
+SET r70.text = 'Tampon và cốc nguyệt san có thể là thủ phạm giấu mặt gây ra hiện tượng viêm không lây nhiễm'
+
+MERGE (o1:treatment {id: 'cốc_nguyệt_san_treatment'})
+MERGE (o2:disease {id: 'viêm_không_lây_nhiễm_disease'})
+MERGE (o1)-[r71:causedBy]->(o2)
+SET r71.text = 'Tampon và cốc nguyệt san có thể là thủ phạm giấu mặt gây ra hiện tượng viêm không lây nhiễm'
+
+MERGE (o1:disease {id: 'viêm_teo_âm_đạo_disease'})
+MERGE (o2:lifestyle {id: 'tiền_mãn_kinh_lifestyle'})
+MERGE (o1)-[r72:associatedWith]->(o2)
+SET r72.text = 'Viêm teo âm đạo được xem là chứng bệnh của thời kỳ tiền mãn kinh và mãn kinh. Đây là một dạng viêm không lây nhiễm do giảm nội tiết tố, với biểu hiện âm đạo trở nên khô hoặc teo.'
+
+MERGE (o1:disease {id: 'viêm_teo_âm_đạo_disease'})
+MERGE (o2:lifestyle {id: 'mãn_kinh_lifestyle'})
+MERGE (o1)-[r73:associatedWith]->(o2)
+SET r73.text = 'Viêm teo âm đạo được xem là chứng bệnh của thời kỳ tiền mãn kinh và mãn kinh. Đây là một dạng viêm không lây nhiễm do giảm nội tiết tố, với biểu hiện âm đạo trở nên khô hoặc teo.'
+
+MERGE (o1:disease {id: 'viêm_teo_âm_đạo_disease'})
+MERGE (o2:cause {id: 'giảm_nội_tiết_tố_cause'})
+MERGE (o1)-[r74:causedBy]->(o2)
+SET r74.text = 'Viêm teo âm đạo được xem là chứng bệnh của thời kỳ tiền mãn kinh và mãn kinh. Đây là một dạng viêm không lây nhiễm do giảm nội tiết tố, với biểu hiện âm đạo trở nên khô hoặc teo.'
+
+MERGE (o1:symptom {id: 'âm_đạo_khô_symptom'})
+MERGE (o2:disease {id: 'viêm_teo_âm_đạo_disease'})
+MERGE (o1)-[r75:isSymptomOf]->(o2)
+SET r75.text = 'Viêm teo âm đạo được xem là chứng bệnh của thời kỳ tiền mãn kinh và mãn kinh. Đây là một dạng viêm không lây nhiễm do giảm nội tiết tố, với biểu hiện âm đạo trở nên khô hoặc teo.'
+
+MERGE (o1:symptom {id: 'âm_đạo_teo_symptom'})
+MERGE (o2:disease {id: 'viêm_teo_âm_đạo_disease'})
+MERGE (o1)-[r76:isSymptomOf]->(o2)
+SET r76.text = 'Viêm teo âm đạo được xem là chứng bệnh của thời kỳ tiền mãn kinh và mãn kinh. Đây là một dạng viêm không lây nhiễm do giảm nội tiết tố, với biểu hiện âm đạo trở nên khô hoặc teo.'
+
+MERGE (o1:treatment {id: 'cắt_bỏ_buồng_trứng_treatment'})
+MERGE (o2:disease {id: 'teo_âm_đạo_disease'})
+MERGE (o1)-[r77:causedBy]->(o2)
+SET r77.text = 'Thủ thuật cắt bỏ buồng trứng, trạng thái cho con bú và sau khi sinh, các loại thuốc như chất ức chế aromatase (sử dụng trong điều trị ung thư vú) hoặc Lupron Depot® (sử dụng trong điều trị lạc nội mạc tử cung) cũng là tác nhân làm sụt giảm đáng kể mức estrogen, gây ra tình trạng teo âm đạo/âm hộ.'
+
+MERGE (o1:lifestyle {id: 'cho_con_bú_lifestyle'})
+MERGE (o2:disease {id: 'teo_âm_đạo_disease'})
+MERGE (o1)-[r78:causedBy]->(o2)
+SET r78.text = 'Thủ thuật cắt bỏ buồng trứng, trạng thái cho con bú và sau khi sinh, các loại thuốc như chất ức chế aromatase (sử dụng trong điều trị ung thư vú) hoặc Lupron Depot® (sử dụng trong điều trị lạc nội mạc tử cung) cũng là tác nhân làm sụt giảm đáng kể mức estrogen, gây ra tình trạng teo âm đạo/âm hộ.'
+
+MERGE (o1:lifestyle {id: 'sau_khi_sinh_lifestyle'})
+MERGE (o2:disease {id: 'teo_âm_đạo_disease'})
+MERGE (o1)-[r79:causedBy]->(o2)
+SET r79.text = 'Thủ thuật cắt bỏ buồng trứng, trạng thái cho con bú và sau khi sinh, các loại thuốc như chất ức chế aromatase (sử dụng trong điều trị ung thư vú) hoặc Lupron Depot® (sử dụng trong điều trị lạc nội mạc tử cung) cũng là tác nhân làm sụt giảm đáng kể mức estrogen, gây ra tình trạng teo âm đạo/âm hộ.'
+
+MERGE (o1:treatment {id: 'chất_ức_chế_aromatase_treatment'})
+MERGE (o2:disease {id: 'teo_âm_đạo_disease'})
+MERGE (o1)-[r80:causedBy]->(o2)
+SET r80.text = 'Thủ thuật cắt bỏ buồng trứng, trạng thái cho con bú và sau khi sinh, các loại thuốc như chất ức chế aromatase (sử dụng trong điều trị ung thư vú) hoặc Lupron Depot® (sử dụng trong điều trị lạc nội mạc tử cung) cũng là tác nhân làm sụt giảm đáng kể mức estrogen, gây ra tình trạng teo âm đạo/âm hộ.'
+
+MERGE (o1:treatment {id: 'lupron_depot®_treatment'})
+MERGE (o2:disease {id: 'teo_âm_đạo_disease'})
+MERGE (o1)-[r81:causedBy]->(o2)
+SET r81.text = 'Thủ thuật cắt bỏ buồng trứng, trạng thái cho con bú và sau khi sinh, các loại thuốc như chất ức chế aromatase (sử dụng trong điều trị ung thư vú) hoặc Lupron Depot® (sử dụng trong điều trị lạc nội mạc tử cung) cũng là tác nhân làm sụt giảm đáng kể mức estrogen, gây ra tình trạng teo âm đạo/âm hộ.'
+
+MERGE (o1:cause {id: 'giảm_estrogen_cause'})
+MERGE (o2:disease {id: 'teo_âm_đạo_disease'})
+MERGE (o1)-[r82:causedBy]->(o2)
+SET r82.text = 'Thủ thuật cắt bỏ buồng trứng, trạng thái cho con bú và sau khi sinh, các loại thuốc như chất ức chế aromatase (sử dụng trong điều trị ung thư vú) hoặc Lupron Depot® (sử dụng trong điều trị lạc nội mạc tử cung) cũng là tác nhân làm sụt giảm đáng kể mức estrogen, gây ra tình trạng teo âm đạo/âm hộ.'
+
+MERGE (o1:symptom {id: 'đau_symptom'})
+MERGE (o2:disease {id: 'viêm_teo_âm_đạo_disease'})
+MERGE (o1)-[r83:isSymptomOf]->(o2)
+SET r83.text = 'Khi bị viêm teo âm đạo, bạn sẽ cảm thấy đau (nhất là khi quan hệ tình dục), ngứa và nóng rát âm đạo, đôi lúc tiểu rắt và thường xuyên.'
+
+MERGE (o1:symptom {id: 'ngứa_symptom'})
+MERGE (o2:disease {id: 'viêm_teo_âm_đạo_disease'})
+MERGE (o1)-[r84:isSymptomOf]->(o2)
+SET r84.text = 'Khi bị viêm teo âm đạo, bạn sẽ cảm thấy đau (nhất là khi quan hệ tình dục), ngứa và nóng rát âm đạo, đôi lúc tiểu rắt và thường xuyên.'
+
+MERGE (o1:symptom {id: 'nóng_rát_âm_đạo_symptom'})
+MERGE (o2:disease {id: 'viêm_teo_âm_đạo_disease'})
+MERGE (o1)-[r85:isSymptomOf]->(o2)
+SET r85.text = 'Khi bị viêm teo âm đạo, bạn sẽ cảm thấy đau (nhất là khi quan hệ tình dục), ngứa và nóng rát âm đạo, đôi lúc tiểu rắt và thường xuyên.'
+
+MERGE (o1:symptom {id: 'tiểu_rắt_symptom'})
+MERGE (o2:disease {id: 'viêm_teo_âm_đạo_disease'})
+MERGE (o1)-[r86:isSymptomOf]->(o2)
+SET r86.text = 'Khi bị viêm teo âm đạo, bạn sẽ cảm thấy đau (nhất là khi quan hệ tình dục), ngứa và nóng rát âm đạo, đôi lúc tiểu rắt và thường xuyên.'
+
+MERGE (o1:symptom {id: 'tiểu_thường_xuyên_symptom'})
+MERGE (o2:disease {id: 'viêm_teo_âm_đạo_disease'})
+MERGE (o1)-[r87:isSymptomOf]->(o2)
+SET r87.text = 'Khi bị viêm teo âm đạo, bạn sẽ cảm thấy đau (nhất là khi quan hệ tình dục), ngứa và nóng rát âm đạo, đôi lúc tiểu rắt và thường xuyên.'
+
+MERGE (o1:disease {id: 'viêm_teo_âm_đạo_disease'})
+MERGE (o2:treatment {id: 'thuốc_uống_treatment'})
+MERGE (o1)-[r88:treatedBy]->(o2)
+SET r88.text = 'Bệnh có thể điều trị bằng các loại thuốc uống cũng như thuốc đặt âm đạo.'
+
+MERGE (o1:disease {id: 'viêm_teo_âm_đạo_disease'})
+MERGE (o2:treatment {id: 'thuốc_đặt_âm_đạo_treatment'})
+MERGE (o1)-[r89:treatedBy]->(o2)
+SET r89.text = 'Bệnh có thể điều trị bằng các loại thuốc uống cũng như thuốc đặt âm đạo.'
+
+MERGE (o1:disease {id: 'viêm_nhiễm_âm_đạo_disease'})
+MERGE (o2:cause {id: 'thay_đổi_nội_tiết_tố_cause'})
+MERGE (o1)-[r90:aggravatedBy]->(o2)
+SET r90.text = 'Có những yếu tố làm tăng nguy cơ tiến triển bệnh viêm nhiễm âm đạo, gồm:'
+
+MERGE (o1:cause {id: 'thay_đổi_nội_tiết_tố_cause'})
+MERGE (o2:lifestyle {id: 'mang_thai_lifestyle'})
+MERGE (o1)-[r91:associatedWith]->(o2)
+SET r91.text = 'Thay đổi nội tiết tố, thường diễn ra khi người phụ nữ mang thai, sử dụng thuốc tránh thai, bước vào giai đoạn tiền mãn kinh/mãn kinh, trải qua cuộc phẫu thuật cắt bỏ buồng trứng…'
+
+MERGE (o1:cause {id: 'thay_đổi_nội_tiết_tố_cause'})
+MERGE (o2:treatment {id: 'thuốc_tránh_thai_treatment'})
+MERGE (o1)-[r92:associatedWith]->(o2)
+SET r92.text = 'Thay đổi nội tiết tố, thường diễn ra khi người phụ nữ mang thai, sử dụng thuốc tránh thai, bước vào giai đoạn tiền mãn kinh/mãn kinh, trải qua cuộc phẫu thuật cắt bỏ buồng trứng…'
+
+MERGE (o1:cause {id: 'thay_đổi_nội_tiết_tố_cause'})
+MERGE (o2:lifestyle {id: 'tiền_mãn_kinh_lifestyle'})
+MERGE (o1)-[r93:associatedWith]->(o2)
+SET r93.text = 'Thay đổi nội tiết tố, thường diễn ra khi người phụ nữ mang thai, sử dụng thuốc tránh thai, bước vào giai đoạn tiền mãn kinh/mãn kinh, trải qua cuộc phẫu thuật cắt bỏ buồng trứng…'
+
+MERGE (o1:cause {id: 'thay_đổi_nội_tiết_tố_cause'})
+MERGE (o2:lifestyle {id: 'mãn_kinh_lifestyle'})
+MERGE (o1)-[r94:associatedWith]->(o2)
+SET r94.text = 'Thay đổi nội tiết tố, thường diễn ra khi người phụ nữ mang thai, sử dụng thuốc tránh thai, bước vào giai đoạn tiền mãn kinh/mãn kinh, trải qua cuộc phẫu thuật cắt bỏ buồng trứng…'
+
+MERGE (o1:cause {id: 'thay_đổi_nội_tiết_tố_cause'})
+MERGE (o2:treatment {id: 'cắt_bỏ_buồng_trứng_treatment'})
+MERGE (o1)-[r95:associatedWith]->(o2)
+SET r95.text = 'Thay đổi nội tiết tố, thường diễn ra khi người phụ nữ mang thai, sử dụng thuốc tránh thai, bước vào giai đoạn tiền mãn kinh/mãn kinh, trải qua cuộc phẫu thuật cắt bỏ buồng trứng…'
+
+MERGE (o1:disease {id: 'viêm_nhiễm_âm_đạo_disease'})
+MERGE (o2:lifestyle {id: 'sinh_hoạt_tình_dục_thường_xuyên_lifestyle'})
+MERGE (o1)-[r96:aggravatedBy]->(o2)
+SET r96.text = 'Có những yếu tố làm tăng nguy cơ tiến triển bệnh viêm nhiễm âm đạo, gồm:'
+
+MERGE (o1:lifestyle {id: 'sinh_hoạt_tình_dục_thường_xuyên_lifestyle'})
+MERGE (o2:lifestyle {id: 'giao_hợp_với_nhiều_bạn_tình_lifestyle'})
+MERGE (o1)-[r97:associatedWith]->(o2)
+SET r97.text = 'Sinh hoạt tình dục thường xuyên, đặc biệt là giao hợp với nhiều bạn tình, giao hợp không dùng bao cao su bảo vệ.'
+
+MERGE (o1:lifestyle {id: 'sinh_hoạt_tình_dục_thường_xuyên_lifestyle'})
+MERGE (o2:lifestyle {id: 'giao_hợp_không_dùng_bao_cao_su_lifestyle'})
+MERGE (o1)-[r98:associatedWith]->(o2)
+SET r98.text = 'Sinh hoạt tình dục thường xuyên, đặc biệt là giao hợp với nhiều bạn tình, giao hợp không dùng bao cao su bảo vệ.'
+
+MERGE (o1:disease {id: 'viêm_nhiễm_âm_đạo_disease'})
+MERGE (o2:disease {id: 'nhiễm_trùng_lây_truyền_qua_đường_tình_dục_disease'})
+MERGE (o1)-[r99:aggravatedBy]->(o2)
+SET r99.text = 'Có những yếu tố làm tăng nguy cơ tiến triển bệnh viêm nhiễm âm đạo, gồm:'
+
+MERGE (o1:disease {id: 'viêm_nhiễm_âm_đạo_disease'})
+MERGE (o2:treatment {id: 'thuốc_kháng_sinh_treatment'})
+MERGE (o1)-[r100:aggravatedBy]->(o2)
+SET r100.text = 'Có những yếu tố làm tăng nguy cơ tiến triển bệnh viêm nhiễm âm đạo, gồm:'
+
+MERGE (o1:disease {id: 'viêm_nhiễm_âm_đạo_disease'})
+MERGE (o2:treatment {id: 'steroid_treatment'})
+MERGE (o1)-[r101:aggravatedBy]->(o2)
+SET r101.text = 'Có những yếu tố làm tăng nguy cơ tiến triển bệnh viêm nhiễm âm đạo, gồm:'
+
+MERGE (o1:disease {id: 'viêm_nhiễm_âm_đạo_disease'})
+MERGE (o2:treatment {id: 'chất_diệt_tinh_trùng_treatment'})
+MERGE (o1)-[r102:aggravatedBy]->(o2)
+SET r102.text = 'Có những yếu tố làm tăng nguy cơ tiến triển bệnh viêm nhiễm âm đạo, gồm:'
+
+MERGE (o1:disease {id: 'viêm_nhiễm_âm_đạo_disease'})
+MERGE (o2:disease {id: 'bệnh_đái_tháo_đường_disease'})
+MERGE (o1)-[r103:aggravatedBy]->(o2)
+SET r103.text = 'Có những yếu tố làm tăng nguy cơ tiến triển bệnh viêm nhiễm âm đạo, gồm:'
+
+MERGE (o1:disease {id: 'viêm_nhiễm_âm_đạo_disease'})
+MERGE (o2:treatment {id: 'dung_dịch_vệ_sinh_phụ_nữ_treatment'})
+MERGE (o1)-[r104:aggravatedBy]->(o2)
+SET r104.text = 'Có những yếu tố làm tăng nguy cơ tiến triển bệnh viêm nhiễm âm đạo, gồm:'
+
+MERGE (o1:disease {id: 'viêm_nhiễm_âm_đạo_disease'})
+MERGE (o2:treatment {id: 'xịt_âm_đạo_treatment'})
+MERGE (o1)-[r105:aggravatedBy]->(o2)
+SET r105.text = 'Có những yếu tố làm tăng nguy cơ tiến triển bệnh viêm nhiễm âm đạo, gồm:'
+
+MERGE (o1:disease {id: 'viêm_nhiễm_âm_đạo_disease'})
+MERGE (o2:treatment {id: 'chất_khử_mùi_âm_đạo_treatment'})
+MERGE (o1)-[r106:aggravatedBy]->(o2)
+SET r106.text = 'Có những yếu tố làm tăng nguy cơ tiến triển bệnh viêm nhiễm âm đạo, gồm:'
+
+MERGE (o1:disease {id: 'viêm_nhiễm_âm_đạo_disease'})
+MERGE (o2:lifestyle {id: 'thụt_rửa_âm_đạo_thường_xuyên_lifestyle'})
+MERGE (o1)-[r107:aggravatedBy]->(o2)
+SET r107.text = 'Có những yếu tố làm tăng nguy cơ tiến triển bệnh viêm nhiễm âm đạo, gồm:'
+
+MERGE (o1:disease {id: 'viêm_nhiễm_âm_đạo_disease'})
+MERGE (o2:cause {id: 'nhiều_loại_sinh_vật_và_điều_kiện_khách_quan_cause'})
+MERGE (o1)-[r108:causedBy]->(o2)
+SET r108.text = 'Viêm nhiễm âm đạo là bệnh lý do nhiều loại sinh vật và điều kiện khách quan gây ra.'
+
+MERGE (o1:disease {id: 'viêm_âm_đạo_disease'})
+MERGE (o2:treatment {id: 'phương_pháp_điều_trị_khác_nhau_treatment'})
+MERGE (o1)-[r109:treatedBy]->(o2)
+SET r109.text = 'Vì thế, mỗi loại viêm âm đạo sẽ có phương pháp điều trị khác nhau:'
+
+MERGE (o1:disease {id: 'viêm_âm_đạo_disease'})
+MERGE (o2:treatment {id: 'thuốc_viên_metronidazole_dùng_đường_uống__gel_metronidazole_hoặc_kem_bôi_clindamycin_treatment'})
+MERGE (o1)-[r110:treatedBy]->(o2)
+SET r110.text = 'Đối với loại viêm âm đạo này, bác sĩ sẽ kê đơn thuốc viên metronidazole dùng đường uống, gel metronidazole hoặc kem bôi clindamycin.'
+
+MERGE (o1:disease {id: 'viêm_do_vi_khuẩn_disease'})
+MERGE (o2:treatment {id: 'thuốc_viên_metronidazole_dùng_đường_uống__gel_metronidazole_hoặc_kem_bôi_clindamycin_treatment'})
+MERGE (o1)-[r111:treatedBy]->(o2)
+SET r111.text = 'Viêm do vi khuẩn: Đối với loại viêm âm đạo này, bác sĩ sẽ kê đơn thuốc viên metronidazole dùng đường uống, gel metronidazole hoặc kem bôi clindamycin.'
+
+MERGE (o1:disease {id: 'nhiễm_trùng_nấm_men_disease'})
+MERGE (o2:treatment {id: 'thuốc_bôi_hoặc_kem_chống_nấm_không_kê_đơn__chẳng_hạn_như_miconazole__clotrimazole__butoconazole_hoặc_tioconazole_treatment'})
+MERGE (o1)-[r112:treatedBy]->(o2)
+SET r112.text = 'Nhiễm trùng nấm men: Bệnh thường được điều trị bằng thuốc bôi hoặc kem chống nấm không kê đơn, chẳng hạn như miconazole, clotrimazole, butoconazole hoặc tioconazole.'
+
+MERGE (o1:disease {id: 'nhiễm_trùng_nấm_men_disease'})
+MERGE (o2:treatment {id: 'thuốc_kháng_nấm__chẳng_hạn_như_fluconazole_treatment'})
+MERGE (o1)-[r113:treatedBy]->(o2)
+SET r113.text = 'Bác sĩ cũng có thể kê toa thuốc kháng nấm, chẳng hạn như fluconazole.'
+
+MERGE (o1:disease {id: 'nhiễm_trùng_trichomonas_disease'})
+MERGE (o2:treatment {id: 'metronidazole_hoặc_tinidazole_treatment'})
+MERGE (o1)-[r114:treatedBy]->(o2)
+SET r114.text = 'Nhiễm trùng trichomonas: Thuốc được chỉ định là metronidazole hoặc tinidazole.'
+
+MERGE (o1:disease {id: 'viêm_teo_âm_đạo_disease'})
+MERGE (o2:treatment {id: 'estrogen_-_ở_dạng_kem__viên_hoặc_vòng_đặt_âm_đạo_treatment'})
+MERGE (o1)-[r115:treatedBy]->(o2)
+SET r115.text = 'Viêm teo âm đạo: Estrogen - ở dạng kem, viên hoặc vòng đặt âm đạo - sẽ giúp cải thiện hiệu quả tình trạng này.'
+
+MERGE (o1:disease {id: 'viêm_không_do_nhiễm_trùng_disease'})
+MERGE (o2:cause {id: 'tác_nhân_gây_kích_ứng_cause'})
+MERGE (o1)-[r116:causedBy]->(o2)
+SET r116.text = 'Viêm không do nhiễm trùng: Để điều trị bạn cần xác định chính xác tác nhân gây kích ứng để tránh xa nó.'
+
+MERGE (o1:disease {id: 'viêm_không_do_nhiễm_trùng_disease'})
+MERGE (o2:cause {id: 'dung_dịch_vệ_sinh__bột_giặt__nước_xả_vải__băng_vệ_sinh__tampon_cause'})
+MERGE (o1)-[r117:causedBy]->(o2)
+SET r117.text = 'Những tác nhân này có thể là dung dịch vệ sinh, bột giặt, nước xả vải, băng vệ sinh, tampon…'
+
+MERGE (o1:disease {id: 'viêm_âm_đạo_disease'})
+MERGE (o2:lifestyle {id: 'thực_hiện_các_biện_pháp_phòng_ngừa_lifestyle'})
+MERGE (o1)-[r118:preventedBy]->(o2)
+SET r118.text = 'Để phòng ngừa viêm âm đạo nói riêng và viêm nhiễm vùng kín nói chung, bạn cần thực hiện:'
+
+MERGE (o1:disease {id: 'viêm_âm_đạo_disease'})
+MERGE (o2:lifestyle {id: 'tắm_bồn__nhất_là_bồn_nước_nóng_và_bồn_tạo_sóng_lifestyle'})
+MERGE (o1)-[r119:preventedBy]->(o2)
+SET r119.text = 'Tránh tắm bồn, nhất là bồn nước nóng và bồn tạo sóng.'
+
+MERGE (o1:disease {id: 'viêm_âm_đạo_disease'})
+MERGE (o2:lifestyle {id: 'tắm_bằng_vòi_hoa_sen_lifestyle'})
+MERGE (o1)-[r120:preventedBy]->(o2)
+SET r120.text = 'Thay vì vậy, hãy tắm bằng vòi hoa sen.'
+
+MERGE (o1:disease {id: 'viêm_âm_đạo_disease'})
+MERGE (o2:lifestyle {id: 'xả_sạch_xà_phòng/sữa_tắm_khỏi_vùng_kín_sau_khi_tắm_lifestyle'})
+MERGE (o1)-[r121:preventedBy]->(o2)
+SET r121.text = 'Xả sạch xà phòng/sữa tắm khỏi vùng kín sau khi tắm.'
+
+MERGE (o1:disease {id: 'viêm_âm_đạo_disease'})
+MERGE (o2:lifestyle {id: 'sử_dụng_xà_phòng_có_tính_tẩy_rửa_mạnh__chẳng_hạn_như_xà_phòng_có_tác_dụng_khử_mùi_hoặc_kháng_khuẩn__gel_tắm_tẩy_tế_bào_chết_dạng_hạt_lifestyle'})
+MERGE (o1)-[r122:preventedBy]->(o2)
+SET r122.text = 'Không sử dụng xà phòng có tính tẩy rửa mạnh, chẳng hạn như xà phòng có tác dụng khử mùi hoặc kháng khuẩn, gel tắm tẩy tế bào chết dạng hạt…'
+
+MERGE (o1:disease {id: 'viêm_âm_đạo_disease'})
+MERGE (o2:lifestyle {id: 'giữ_vùng_kín_khô_ráo_lifestyle'})
+MERGE (o1)-[r123:preventedBy]->(o2)
+SET r123.text = 'Luôn giữ vùng kín khô ráo để tránh kích ứng.'
+
+MERGE (o1:disease {id: 'viêm_âm_đạo_disease'})
+MERGE (o2:lifestyle {id: 'lau_từ_trước_ra_sau_sau_khi_đi_vệ_sinh_lifestyle'})
+MERGE (o1)-[r124:preventedBy]->(o2)
+SET r124.text = 'Lau từ trước ra sau sau khi đi vệ sinh: Việc làm này nhằm tránh lây lan vi khuẩn từ hậu môn vào âm đạo.'
+
+MERGE (o1:disease {id: 'viêm_âm_đạo_disease'})
+MERGE (o2:lifestyle {id: 'thụt_rửa_lifestyle'})
+MERGE (o1)-[r125:preventedBy]->(o2)
+SET r125.text = 'Đừng thụt rửa: Vùng kín của phụ nữ không cần biện pháp làm sạch ngoài việc tắm rửa hàng ngày.'
+
+MERGE (o1:disease {id: 'viêm_âm_đạo_disease'})
+MERGE (o2:lifestyle {id: 'thụt_rửa_lifestyle'})
+MERGE (o1)-[r126:aggravatedBy]->(o2)
+SET r126.text = 'Việc thụt rửa nhiều lần chẳng những không có ích gì cho tình trạng nhiễm trùng âm đạo mà còn tiêu diệt các sinh vật có lợi cư trú trong âm đạo, đồng thời làm tăng nguy cơ viêm nhiễm vùng kín.'
+
+MERGE (o1:disease {id: 'viêm_âm_đạo_disease'})
+MERGE (o2:lifestyle {id: 'sử_dụng_bao_cao_su_lifestyle'})
+MERGE (o1)-[r127:preventedBy]->(o2)
+SET r127.text = 'Sử dụng bao cao su: Cả bao cao su dành cho nam và nữ đều giúp bạn tránh bị nhiễm trùng lây lan khi quan hệ tình dục.'
+
+MERGE (o1:disease {id: 'viêm_âm_đạo_disease'})
+MERGE (o2:lifestyle {id: 'mặc_đồ_lót_bằng_vải_cotton_lifestyle'})
+MERGE (o1)-[r128:preventedBy]->(o2)
+SET r128.text = 'Mặc đồ lót bằng vải cotton: Nấm men phát triển rất mạnh trong môi trường ẩm ướt.'
+
+MERGE (o1:disease {id: 'viêm_âm_đạo_disease'})
+MERGE (o2:lifestyle {id: 'mặc_đồ_lót_bằng_vải_cotton_lifestyle'})
+MERGE (o1)-[r129:preventedBy]->(o2)
+SET r129.text = 'Vải cotton thoáng mát, thấm hút tốt nên sẽ tạo ra môi trường thông thoáng cho vùng kín, hạn chế sự phát triển của nấm và vi khuẩn gây bệnh.'
+
+MERGE (o1:disease {id: 'viêm_âm_đạo_disease'})
+MERGE (o2:lifestyle {id: 'sử_dụng_bao_cao_su_lifestyle'})
+MERGE (o1)-[r130:preventedBy]->(o2)
+SET r130.text = 'Sử dụng bao cao su là biện pháp phòng tránh viêm âm đạo lây qua đường tình dục hữu hiệu'
+
+MERGE (o1:disease {id: 'viêm_âm_đạo_disease'})
+MERGE (o2:treatment {id: 'điều_trị_đúng_cách_treatment'})
+MERGE (o1)-[r131:treatedBy]->(o2)
+SET r131.text = 'Hầu hết các trường hợp mắc bệnh không gây ra vấn đề nghiêm trọng cho sức khỏe khi được điều trị đúng cách.'
+
+MERGE (o1:disease {id: 'viêm_âm_đạo_disease'})
+MERGE (o2:organ {id: 'các_cơ_quan_vùng_chậu_organ'})
+MERGE (o1)-[r132:affects]->(o2)
+SET r132.text = 'Ngược lại, nếu không chữa trị dứt điểm, nhiễm trùng âm đạo có thể lây lan sang các cơ quan vùng chậu khác, gây nên tình trạng viêm vùng chậu (PID).'
+
+MERGE (o1:disease {id: 'viêm_âm_đạo_disease'})
+MERGE (o2:disease {id: 'các_bệnh_std__chẳng_hạn_như_chlamydia_và_bệnh_lậu_disease'})
+MERGE (o1)-[r133:associatedWith]->(o2)
+SET r133.text = 'Ngoài ra, phụ nữ có âm đạo bị viêm nhiễm quá lâu sẽ tăng khả năng mắc các bệnh STD, chẳng hạn như chlamydia và bệnh lậu.'
+
+MERGE (o1:disease {id: 'viêm_âm_đạo_do_vi_khuẩn_disease'})
+MERGE (o2:symptom {id: 'sinh_con_thiếu_tháng_symptom'})
+MERGE (o1)-[r134:affects]->(o2)
+SET r134.text = 'Cuối cùng, có nhiều khả năng bạn sẽ sinh con thiếu tháng nếu nhiễm BV (viêm âm đạo do vi khuẩn) khi đang mang thai.'
+
+MERGE (o1:symptom {id: 'sinh_non_symptom'})
+MERGE (o2:symptom {id: 'sự_phát_triển_thể_chất_và_trí_não_symptom'})
+MERGE (o1)-[r135:affects]->(o2)
+SET r135.text = 'Em bé sinh non thường nhẹ cân, dễ gặp phải các vấn đề sức khỏe về hô hấp, tuần hoàn, tiêu hóa, thần kinh… ảnh hưởng đến sự phát triển thể chất và trí não sau này.'
+
+MERGE (o1:disease {id: 'viêm_vùng_kín_disease'})
+MERGE (o2:organ {id: 'ống_dẫn_trứng_organ'})
+MERGE (o1)-[r136:affects]->(o2)
+SET r136.text = 'Viêm vùng kín kéo dài, khí hư ra nhiều sẽ làm tắc nghẽn ống dẫn trứng, cản trở trứng gặp tinh trùng.'
+
+MERGE (o1:disease {id: 'viêm_vùng_kín_disease'})
+MERGE (o2:organ {id: 'môi_trường_âm_đạo_organ'})
+MERGE (o1)-[r137:affects]->(o2)
+SET r137.text = 'Thêm vào đó, môi trường âm đạo bị “phá hủy” sẽ trở nên mất cân bằng.'
+
+MERGE (o1:disease {id: 'viêm_vùng_kín_disease'})
+MERGE (o2:cause {id: 'tinh_trùng_cause'})
+MERGE (o1)-[r138:affects]->(o2)
+SET r138.text = 'Dù tinh trùng có bơi vào được cũng không thể sống ở đây.'
+
+MERGE (o1:disease {id: 'viêm_vùng_kín_disease'})
+MERGE (o2:symptom {id: 'khả_năng_mang_thai_symptom'})
+MERGE (o1)-[r139:affects]->(o2)
+SET r139.text = 'Do vậy, khả năng mang thai sẽ bị suy giảm nghiêm trọng ở những phụ nữ bị viêm nhiễm phụ khoa.'
+
+MERGE (o1:disease {id: 'viêm_nhiễm_âm_đạo_disease'})
+MERGE (o2:lifestyle {id: 'quan_hệ_tình_dục_lifestyle'})
+MERGE (o1)-[r140:relatedTo]->(o2)
+SET r140.text = 'Nếu bạn có suy nghĩ bệnh viêm nhiễm âm đạo chỉ tìm đến những phụ nữ đã quan hệ tình dục, hãy thay đổi ngay.'
+
+MERGE (o1:disease {id: 'viêm_âm_đạo_disease'})
+MERGE (o2:cause {id: 'trẻ_em_nữ_ở_độ_tuổi_dậy_thì_cause'})
+MERGE (o1)-[r141:relatedTo]->(o2)
+SET r141.text = 'Bởi lẽ, ngay cả trẻ em nữ ở độ tuổi dậy thì, chưa từng sinh hoạt tình dục cũng có nguy cơ bị các bệnh phụ khoa, trong đó có viêm âm đạo.'
+
+MERGE (o1:disease {id: 'viêm_âm_đạo_disease'})
+MERGE (o2:cause {id: 'thói_quen_vệ_sinh_vùng_kín_không_đúng_cách__mặc_đồ_lót_quá_chật__sử_dụng_băng_vệ_sinh_kém_chất_lượng__tự_ý_dùng_các_loại_thuốc_đặt_âm_đạo_mà_không_hỏi_ý_kiến_bác_sĩ_cause'})
+MERGE (o1)-[r142:causedBy]->(o2)
+SET r142.text = 'Nguyên nhân là do thói quen vệ sinh vùng kín không đúng cách, mặc đồ lót quá chật, sử dụng băng vệ sinh kém chất lượng, tự ý dùng các loại thuốc đặt âm đạo mà không hỏi ý kiến bác sĩ…'
+
+MERGE (o1:disease {id: 'viêm_nhiễm_vùng_kín_disease'})
+MERGE (o2:cause {id: 'các_tác_nhân_lây_truyền_qua_đường_tình_dục_cause'})
+MERGE (o1)-[r143:causedBy]->(o2)
+SET r143.text = 'Nếu bệnh viêm nhiễm vùng kín của bạn là do các tác nhân lây truyền qua đường tình dục gây ra, cần tuyệt đối kiêng giao hợp trong giai đoạn điều trị bệnh.'
+
+MERGE (o1:disease {id: 'viêm_nhiễm_vùng_kín_disease'})
+MERGE (o2:lifestyle {id: 'quan_hệ_tình_dục_lifestyle'})
+MERGE (o1)-[r144:aggravatedBy]->(o2)
+SET r144.text = 'Quan hệ tình dục trong lúc này chẳng những khiến bạn không thoải mái mà còn làm cho các triệu chứng bệnh trầm trọng hơn.'
+
+MERGE (o1:disease {id: 'viêm_nhiễm_vùng_kín_disease'})
+MERGE (o2:symptom {id: 'lây_bệnh_cho_bạn_tình_symptom'})
+MERGE (o1)-[r145:relatedTo]->(o2)
+SET r145.text = 'Ngoài ra, bạn còn có thể lây bệnh cho bạn tình của mình.'
+
+MERGE (o1:disease {id: 'viêm_không_lây_truyền_qua_đường_tình_dục_disease'})
+MERGE (o2:lifestyle {id: 'giao_hợp_lifestyle'})
+MERGE (o1)-[r146:relatedTo]->(o2)
+SET r146.text = 'Đối với những trường hợp viêm không lây truyền qua đường tình dục, chẳng hạn như nhiễm trùng nấm men mãn tính (nhiễm nấm candida) hay viêm do vi khuẩn, việc giao hợp không khiến triệu chứng bệnh xấu đi.'
+
+MERGE (o1:organ {id: 'trung_tâm_sản_phụ_khoa_bvđk_tâm_anh_organ'})
+MERGE (o2:organ {id: 'bvđk_tâm_anh_organ'})
+MERGE (o1)-[r147:locatedIn]->(o2)
+SET r147.text = 'Quy tụ chuyên gia giàu kinh nghiệm và được đầu tư hệ thống máy móc hiện đại, Trung tâm Sản Phụ khoa BVĐK Tâm Anh ra đời với mục tiêu chăm sóc sức khỏe phụ khoa toàn diện cho chị em phụ nữ.'
+
+MERGE (o1:organ {id: 'trung_tâm_sản_phụ_khoa_bvđk_tâm_anh_organ'})
+MERGE (o2:treatment {id: 'chăm_sóc_sức_khỏe_phụ_khoa_treatment'})
+MERGE (o1)-[r148:relatedTo]->(o2)
+SET r148.text = 'Quy tụ chuyên gia giàu kinh nghiệm và được đầu tư hệ thống máy móc hiện đại, Trung tâm Sản Phụ khoa BVĐK Tâm Anh ra đời với mục tiêu chăm sóc sức khỏe phụ khoa toàn diện cho chị em phụ nữ.'
+
+MERGE (o1:organ {id: 'trung_tâm_sản_phụ_khoa_bvđk_tâm_anh_organ'})
+MERGE (o2:treatment {id: 'chuyên_gia_giàu_kinh_nghiệm_treatment'})
+MERGE (o1)-[r149:treatedBy]->(o2)
+SET r149.text = 'Quy tụ chuyên gia giàu kinh nghiệm và được đầu tư hệ thống máy móc hiện đại, Trung tâm Sản Phụ khoa BVĐK Tâm Anh ra đời với mục tiêu chăm sóc sức khỏe phụ khoa toàn diện cho chị em phụ nữ.'
+
+MERGE (o1:organ {id: 'trung_tâm_sản_phụ_khoa_bvđk_tâm_anh_organ'})
+MERGE (o2:treatment {id: 'hệ_thống_máy_móc_hiện_đại_treatment'})
+MERGE (o1)-[r150:treatedBy]->(o2)
+SET r150.text = 'Quy tụ chuyên gia giàu kinh nghiệm và được đầu tư hệ thống máy móc hiện đại, Trung tâm Sản Phụ khoa BVĐK Tâm Anh ra đời với mục tiêu chăm sóc sức khỏe phụ khoa toàn diện cho chị em phụ nữ.'
+
+MERGE (o1:organ {id: 'trung_tâm_sản_phụ_khoa_bvđk_tâm_anh_organ'})
+MERGE (o2:treatment {id: 'dịch_vụ_khám_treatment'})
+MERGE (o1)-[r151:treatedBy]->(o2)
+SET r151.text = 'Nơi đây cung cấp dịch vụ khám, tư vấn và điều trị các bệnh phụ khoa, ngoài'
+
+MERGE (o1:organ {id: 'trung_tâm_sản_phụ_khoa_bvđk_tâm_anh_organ'})
+MERGE (o2:treatment {id: 'dịch_vụ_tư_vấn_treatment'})
+MERGE (o1)-[r152:treatedBy]->(o2)
+SET r152.text = 'Nơi đây cung cấp dịch vụ khám, tư vấn và điều trị các bệnh phụ khoa, ngoài'
+
+MERGE (o1:organ {id: 'trung_tâm_sản_phụ_khoa_bvđk_tâm_anh_organ'})
+MERGE (o2:treatment {id: 'dịch_vụ_điều_trị_treatment'})
+MERGE (o1)-[r153:treatedBy]->(o2)
+SET r153.text = 'Nơi đây cung cấp dịch vụ khám, tư vấn và điều trị các bệnh phụ khoa, ngoài'

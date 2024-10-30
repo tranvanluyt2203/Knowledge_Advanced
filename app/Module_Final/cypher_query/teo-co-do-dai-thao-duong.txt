@@ -1,0 +1,605 @@
+
+MERGE (o1:disease {id: 'đái_tháo_đường_disease'})
+MERGE (o2:organ {id: 'thận_organ'})
+MERGE (o1)-[r0:affects]->(o2)
+SET r0.text = 'Đái tháo đường không chỉ gây ra nhiều biến chứng nguy hiểm đối với thận, tim mạch, thần kinh… mà còn có khả năng gây teo cơ.'
+
+MERGE (o1:disease {id: 'đái_tháo_đường_disease'})
+MERGE (o2:organ {id: 'tim_mạch_organ'})
+MERGE (o1)-[r1:affects]->(o2)
+SET r1.text = 'Đái tháo đường không chỉ gây ra nhiều biến chứng nguy hiểm đối với thận, tim mạch, thần kinh… mà còn có khả năng gây teo cơ.'
+
+MERGE (o1:disease {id: 'đái_tháo_đường_disease'})
+MERGE (o2:organ {id: 'thần_kinh_organ'})
+MERGE (o1)-[r2:affects]->(o2)
+SET r2.text = 'Đái tháo đường không chỉ gây ra nhiều biến chứng nguy hiểm đối với thận, tim mạch, thần kinh… mà còn có khả năng gây teo cơ.'
+
+MERGE (o1:disease {id: 'đái_tháo_đường_disease'})
+MERGE (o2:symptom {id: 'teo_cơ_symptom'})
+MERGE (o1)-[r3:isSymptomOf]->(o2)
+SET r3.text = 'Đái tháo đường không chỉ gây ra nhiều biến chứng nguy hiểm đối với thận, tim mạch, thần kinh… mà còn có khả năng gây teo cơ.'
+
+MERGE (o1:disease {id: 'bệnh_teo_cơ_do_đái_tháo_đường_disease'})
+MERGE (o2:disease {id: 'diabetic_lumbosacral_radiculoplexus_neuropathy_(dlrpn)_disease'})
+MERGE (o1)-[r4:relatedTo]->(o2)
+SET r4.text = 'Bệnh teo cơ do đái tháo đường (Diabetic lumbosacral radiculoplexus neuropathy (DLRPN), diabetic amyotrophy) còn gọi là bệnh rễ - đám rối thắt lưng cùng do đái tháo đường hoặc hội chứng Bruns-Garland.'
+
+MERGE (o1:disease {id: 'bệnh_teo_cơ_do_đái_tháo_đường_disease'})
+MERGE (o2:disease {id: 'diabetic_amyotrophy_disease'})
+MERGE (o1)-[r5:relatedTo]->(o2)
+SET r5.text = 'Bệnh teo cơ do đái tháo đường (Diabetic lumbosacral radiculoplexus neuropathy (DLRPN), diabetic amyotrophy) còn gọi là bệnh rễ - đám rối thắt lưng cùng do đái tháo đường hoặc hội chứng Bruns-Garland.'
+
+MERGE (o1:disease {id: 'bệnh_teo_cơ_do_đái_tháo_đường_disease'})
+MERGE (o2:disease {id: 'bệnh_rễ_-_đám_rối_thắt_lưng_cùng_do_đái_tháo_đường_disease'})
+MERGE (o1)-[r6:relatedTo]->(o2)
+SET r6.text = 'Bệnh teo cơ do đái tháo đường (Diabetic lumbosacral radiculoplexus neuropathy (DLRPN), diabetic amyotrophy) còn gọi là bệnh rễ - đám rối thắt lưng cùng do đái tháo đường hoặc hội chứng Bruns-Garland.'
+
+MERGE (o1:disease {id: 'bệnh_teo_cơ_do_đái_tháo_đường_disease'})
+MERGE (o2:disease {id: 'hội_chứng_bruns-garland_disease'})
+MERGE (o1)-[r7:relatedTo]->(o2)
+SET r7.text = 'Bệnh teo cơ do đái tháo đường (Diabetic lumbosacral radiculoplexus neuropathy (DLRPN), diabetic amyotrophy) còn gọi là bệnh rễ - đám rối thắt lưng cùng do đái tháo đường hoặc hội chứng Bruns-Garland.'
+
+MERGE (o1:disease {id: 'bệnh_teo_cơ_do_đái_tháo_đường_disease'})
+MERGE (o2:lifestyle {id: 'tuổi_trung_niên_lifestyle'})
+MERGE (o1)-[r8:associatedWith]->(o2)
+SET r8.text = 'Bệnh thường gặp ở tuổi trung niên, ở bệnh nhân đái tháo đường típ 2 nhiều hơn tuýp 1, nam nhiều hơn nữ.'
+
+MERGE (o1:disease {id: 'bệnh_teo_cơ_do_đái_tháo_đường_disease'})
+MERGE (o2:disease {id: 'đái_tháo_đường_típ_2_disease'})
+MERGE (o1)-[r9:associatedWith]->(o2)
+SET r9.text = 'Bệnh thường gặp ở tuổi trung niên, ở bệnh nhân đái tháo đường típ 2 nhiều hơn tuýp 1, nam nhiều hơn nữ.'
+
+MERGE (o1:disease {id: 'bệnh_teo_cơ_do_đái_tháo_đường_disease'})
+MERGE (o2:disease {id: 'đái_tháo_đường_tuýp_1_disease'})
+MERGE (o1)-[r10:associatedWith]->(o2)
+SET r10.text = 'Bệnh thường gặp ở tuổi trung niên, ở bệnh nhân đái tháo đường típ 2 nhiều hơn tuýp 1, nam nhiều hơn nữ.'
+
+MERGE (o1:disease {id: 'bệnh_teo_cơ_do_đái_tháo_đường_disease'})
+MERGE (o2:lifestyle {id: 'nam_giới_lifestyle'})
+MERGE (o1)-[r11:associatedWith]->(o2)
+SET r11.text = 'Bệnh thường gặp ở tuổi trung niên, ở bệnh nhân đái tháo đường típ 2 nhiều hơn tuýp 1, nam nhiều hơn nữ.'
+
+MERGE (o1:disease {id: 'bệnh_teo_cơ_do_đái_tháo_đường_disease'})
+MERGE (o2:lifestyle {id: 'nữ_giới_lifestyle'})
+MERGE (o1)-[r12:associatedWith]->(o2)
+SET r12.text = 'Bệnh thường gặp ở tuổi trung niên, ở bệnh nhân đái tháo đường típ 2 nhiều hơn tuýp 1, nam nhiều hơn nữ.'
+
+MERGE (o1:disease {id: 'bệnh_teo_cơ_do_đái_tháo_đường_disease'})
+MERGE (o2:symptom {id: 'chẩn_đoán_trễ_symptom'})
+MERGE (o1)-[r13:associatedWith]->(o2)
+SET r13.text = 'Tỉ lệ mới mắc khoảng 4,2 ca trên 100 ngàn người trong một năm và thường được chẩn đoán trễ.'
+
+MERGE (o1:disease {id: 'bệnh_teo_cơ_do_đái_tháo_đường_disease'})
+MERGE (o2:cause {id: 'sự_thay_đổi_bất_thường_của_hệ_thống_miễn_dịch_cause'})
+MERGE (o1)-[r14:causedBy]->(o2)
+SET r14.text = 'Nguyên nhân của bệnh teo cơ do đái tháo đường chủ yếu do sự thay đổi bất thường của hệ thống miễn dịch gây tổn thương các mạch máu nhỏ nuôi dây thần kinh chi phối chi dưới.'
+
+MERGE (o1:disease {id: 'bệnh_teo_cơ_do_đái_tháo_đường_disease'})
+MERGE (o2:cause {id: 'tổn_thương_các_mạch_máu_nhỏ_nuôi_dây_thần_kinh_chi_phối_chi_dưới_cause'})
+MERGE (o1)-[r15:causedBy]->(o2)
+SET r15.text = 'Nguyên nhân của bệnh teo cơ do đái tháo đường chủ yếu do sự thay đổi bất thường của hệ thống miễn dịch gây tổn thương các mạch máu nhỏ nuôi dây thần kinh chi phối chi dưới.'
+
+MERGE (o1:disease {id: 'viêm_vi_mạch_máu_disease'})
+MERGE (o2:cause {id: 'tổn_thương_các_mạch_máu_nhỏ_nuôi_dây_thần_kinh_chi_phối_chi_dưới_cause'})
+MERGE (o1)-[r16:causedBy]->(o2)
+SET r16.text = 'Quá trình này được gọi là viêm vi mạch máu.'
+
+MERGE (o1:symptom {id: 'teo_cơ_symptom'})
+MERGE (o2:lifestyle {id: 'thời_gian_mắc_bệnh_tiểu_đường_lifestyle'})
+MERGE (o1)-[r17:relatedTo]->(o2)
+SET r17.text = 'Teo cơ không liên quan đến thời gian mắc bệnh tiểu đường hoặc mức độ nghiêm trọng của bệnh.'
+
+MERGE (o1:symptom {id: 'teo_cơ_symptom'})
+MERGE (o2:lifestyle {id: 'mức_độ_nghiêm_trọng_của_bệnh_lifestyle'})
+MERGE (o1)-[r18:relatedTo]->(o2)
+SET r18.text = 'Teo cơ không liên quan đến thời gian mắc bệnh tiểu đường hoặc mức độ nghiêm trọng của bệnh.'
+
+MERGE (o1:disease {id: 'bệnh_teo_cơ_do_đái_tháo_đường_disease'})
+MERGE (o2:organ {id: 'cơ_vùng_đùi_organ'})
+MERGE (o1)-[r19:affects]->(o2)
+SET r19.text = 'Bệnh teo cơ do đái tháo đường thường ảnh hưởng đến cơ vùng đùi, hông, mông, chân, gây đau, teo cơ.'
+
+MERGE (o1:disease {id: 'bệnh_teo_cơ_do_đái_tháo_đường_disease'})
+MERGE (o2:organ {id: 'cơ_vùng_hông_organ'})
+MERGE (o1)-[r20:affects]->(o2)
+SET r20.text = 'Bệnh teo cơ do đái tháo đường thường ảnh hưởng đến cơ vùng đùi, hông, mông, chân, gây đau, teo cơ.'
+
+MERGE (o1:disease {id: 'bệnh_teo_cơ_do_đái_tháo_đường_disease'})
+MERGE (o2:organ {id: 'cơ_vùng_mông_organ'})
+MERGE (o1)-[r21:affects]->(o2)
+SET r21.text = 'Bệnh teo cơ do đái tháo đường thường ảnh hưởng đến cơ vùng đùi, hông, mông, chân, gây đau, teo cơ.'
+
+MERGE (o1:disease {id: 'bệnh_teo_cơ_do_đái_tháo_đường_disease'})
+MERGE (o2:organ {id: 'cơ_vùng_chân_organ'})
+MERGE (o1)-[r22:affects]->(o2)
+SET r22.text = 'Bệnh teo cơ do đái tháo đường thường ảnh hưởng đến cơ vùng đùi, hông, mông, chân, gây đau, teo cơ.'
+
+MERGE (o1:disease {id: 'bệnh_teo_cơ_do_đái_tháo_đường_disease'})
+MERGE (o2:symptom {id: 'đau_symptom'})
+MERGE (o1)-[r23:isSymptomOf]->(o2)
+SET r23.text = 'Bệnh teo cơ do đái tháo đường thường ảnh hưởng đến cơ vùng đùi, hông, mông, chân, gây đau, teo cơ.'
+
+MERGE (o1:disease {id: 'bệnh_teo_cơ_do_đái_tháo_đường_disease'})
+MERGE (o2:symptom {id: 'teo_cơ_symptom'})
+MERGE (o1)-[r24:isSymptomOf]->(o2)
+SET r24.text = 'Bệnh teo cơ do đái tháo đường thường ảnh hưởng đến cơ vùng đùi, hông, mông, chân, gây đau, teo cơ.'
+
+MERGE (o1:disease {id: 'bệnh_teo_cơ_do_tiểu_đường_disease'})
+MERGE (o2:symptom {id: 'yếu_chi_dưới_symptom'})
+MERGE (o1)-[r25:isSymptomOf]->(o2)
+SET r25.text = 'Các đặc điểm chính của bệnh teo cơ do tiểu đường:'
+
+MERGE (o1:disease {id: 'bệnh_teo_cơ_do_tiểu_đường_disease'})
+MERGE (o2:symptom {id: 'yếu_mông_symptom'})
+MERGE (o1)-[r26:isSymptomOf]->(o2)
+SET r26.text = 'Các đặc điểm chính của bệnh teo cơ do tiểu đường:'
+
+MERGE (o1:disease {id: 'bệnh_teo_cơ_do_tiểu_đường_disease'})
+MERGE (o2:symptom {id: 'yếu_hông_symptom'})
+MERGE (o1)-[r27:isSymptomOf]->(o2)
+SET r27.text = 'Các đặc điểm chính của bệnh teo cơ do tiểu đường:'
+
+MERGE (o1:disease {id: 'bệnh_teo_cơ_do_tiểu_đường_disease'})
+MERGE (o2:symptom {id: 'teo_cơ_symptom'})
+MERGE (o1)-[r28:isSymptomOf]->(o2)
+SET r28.text = 'Các đặc điểm chính của bệnh teo cơ do tiểu đường:'
+
+MERGE (o1:disease {id: 'bệnh_teo_cơ_do_tiểu_đường_disease'})
+MERGE (o2:symptom {id: 'đau_ở_đùi_symptom'})
+MERGE (o1)-[r29:isSymptomOf]->(o2)
+SET r29.text = 'Các đặc điểm chính của bệnh teo cơ do tiểu đường:'
+
+MERGE (o1:disease {id: 'bệnh_teo_cơ_do_tiểu_đường_disease'})
+MERGE (o2:symptom {id: 'đau_ở_hông_symptom'})
+MERGE (o1)-[r30:isSymptomOf]->(o2)
+SET r30.text = 'Các đặc điểm chính của bệnh teo cơ do tiểu đường:'
+
+MERGE (o1:disease {id: 'bệnh_teo_cơ_do_tiểu_đường_disease'})
+MERGE (o2:symptom {id: 'đau_ở_mông_symptom'})
+MERGE (o1)-[r31:isSymptomOf]->(o2)
+SET r31.text = 'Các đặc điểm chính của bệnh teo cơ do tiểu đường:'
+
+MERGE (o1:disease {id: 'bệnh_teo_cơ_do_tiểu_đường_disease'})
+MERGE (o2:symptom {id: 'đau_ở_lưng_symptom'})
+MERGE (o1)-[r32:isSymptomOf]->(o2)
+SET r32.text = 'Các đặc điểm chính của bệnh teo cơ do tiểu đường:'
+
+MERGE (o1:disease {id: 'bệnh_teo_cơ_do_tiểu_đường_disease'})
+MERGE (o2:symptom {id: 'thường_khởi_phát_trong_thời_gian_ngắn_symptom'})
+MERGE (o1)-[r33:isSymptomOf]->(o2)
+SET r33.text = 'Các đặc điểm chính của bệnh teo cơ do tiểu đường:'
+
+MERGE (o1:disease {id: 'bệnh_teo_cơ_do_tiểu_đường_disease'})
+MERGE (o2:symptom {id: 'thay_đổi_cảm_giác_symptom'})
+MERGE (o1)-[r34:isSymptomOf]->(o2)
+SET r34.text = 'Ngoài ra, bệnh teo cơ do tiểu đường còn có các đặc điểm khác xảy ra ở một số bệnh nhân như:'
+
+MERGE (o1:disease {id: 'bệnh_teo_cơ_do_tiểu_đường_disease'})
+MERGE (o2:symptom {id: 'ngứa_ran_symptom'})
+MERGE (o1)-[r35:isSymptomOf]->(o2)
+SET r35.text = 'Ngoài ra, bệnh teo cơ do tiểu đường còn có các đặc điểm khác xảy ra ở một số bệnh nhân như:'
+
+MERGE (o1:disease {id: 'bệnh_thần_kinh_ngoại_vi_disease'})
+MERGE (o2:organ {id: 'bàn_chân_organ'})
+MERGE (o1)-[r36:affects]->(o2)
+SET r36.text = 'Bệnh nhân cũng có thể có bệnh thần kinh ngoại vi ở bàn chân, cẳng chân (ảnh hưởng lên cảm giác ở bàn chân, ngón chân ở cả hai bên cơ thể).'
+
+MERGE (o1:disease {id: 'bệnh_thần_kinh_ngoại_vi_disease'})
+MERGE (o2:organ {id: 'cẳng_chân_organ'})
+MERGE (o1)-[r37:affects]->(o2)
+SET r37.text = 'Bệnh nhân cũng có thể có bệnh thần kinh ngoại vi ở bàn chân, cẳng chân (ảnh hưởng lên cảm giác ở bàn chân, ngón chân ở cả hai bên cơ thể).'
+
+MERGE (o1:disease {id: 'bệnh_thần_kinh_ngoại_vi_disease'})
+MERGE (o2:symptom {id: 'thay_đổi_cảm_giác_ở_bàn_chân_symptom'})
+MERGE (o1)-[r38:isSymptomOf]->(o2)
+SET r38.text = 'Bệnh nhân cũng có thể có bệnh thần kinh ngoại vi ở bàn chân, cẳng chân (ảnh hưởng lên cảm giác ở bàn chân, ngón chân ở cả hai bên cơ thể).'
+
+MERGE (o1:disease {id: 'bệnh_thần_kinh_ngoại_vi_disease'})
+MERGE (o2:symptom {id: 'thay_đổi_cảm_giác_ở_ngón_chân_symptom'})
+MERGE (o1)-[r39:isSymptomOf]->(o2)
+SET r39.text = 'Bệnh nhân cũng có thể có bệnh thần kinh ngoại vi ở bàn chân, cẳng chân (ảnh hưởng lên cảm giác ở bàn chân, ngón chân ở cả hai bên cơ thể).'
+
+MERGE (o1:disease {id: 'bệnh_teo_cơ_do_tiểu_đường_disease'})
+MERGE (o2:symptom {id: 'sụt_cân_symptom'})
+MERGE (o1)-[r40:isSymptomOf]->(o2)
+SET r40.text = 'Sụt cân.'
+
+MERGE (o1:disease {id: 'bệnh_teo_cơ_do_tiểu_đường_disease'})
+MERGE (o2:symptom {id: 'teo_cơ_ở_một_bên_symptom'})
+MERGE (o1)-[r41:isSymptomOf]->(o2)
+SET r41.text = 'Các triệu chứng teo cơ thường ở một bên rồi lan sang bên còn lại của cơ thể.'
+
+MERGE (o1:disease {id: 'bệnh_teo_cơ_do_tiểu_đường_disease'})
+MERGE (o2:symptom {id: 'teo_cơ_ở_hai_bên_symptom'})
+MERGE (o1)-[r42:isSymptomOf]->(o2)
+SET r42.text = 'Các triệu chứng teo cơ thường ở một bên rồi lan sang bên còn lại của cơ thể.'
+
+MERGE (o1:disease {id: 'bệnh_teo_cơ_do_tiểu_đường_disease'})
+MERGE (o2:symptom {id: 'teo_cơ_diễn_ra_nhanh_symptom'})
+MERGE (o1)-[r43:isSymptomOf]->(o2)
+SET r43.text = 'Tình trạng này diễn ra nhanh hoặc chậm hơn, thường không đối xứng.'
+
+MERGE (o1:disease {id: 'bệnh_teo_cơ_do_tiểu_đường_disease'})
+MERGE (o2:symptom {id: 'teo_cơ_diễn_ra_chậm_symptom'})
+MERGE (o1)-[r44:isSymptomOf]->(o2)
+SET r44.text = 'Tình trạng này diễn ra nhanh hoặc chậm hơn, thường không đối xứng.'
+
+MERGE (o1:disease {id: 'bệnh_teo_cơ_do_tiểu_đường_disease'})
+MERGE (o2:symptom {id: 'teo_cơ_không_đối_xứng_symptom'})
+MERGE (o1)-[r45:isSymptomOf]->(o2)
+SET r45.text = 'Tình trạng này diễn ra nhanh hoặc chậm hơn, thường không đối xứng.'
+
+MERGE (o1:disease {id: 'bệnh_teo_cơ_do_tiểu_đường_disease'})
+MERGE (o2:symptom {id: 'phục_hồi_trong_vài_tháng_symptom'})
+MERGE (o1)-[r46:isSymptomOf]->(o2)
+SET r46.text = 'Tình trạng này có xu hướng diễn ra trong vài tháng đến 3 năm mới dần phục hồi.'
+
+MERGE (o1:disease {id: 'bệnh_teo_cơ_do_tiểu_đường_disease'})
+MERGE (o2:symptom {id: 'phục_hồi_trong_3_năm_symptom'})
+MERGE (o1)-[r47:isSymptomOf]->(o2)
+SET r47.text = 'Tình trạng này có xu hướng diễn ra trong vài tháng đến 3 năm mới dần phục hồi.'
+
+MERGE (o1:disease {id: 'bệnh_teo_cơ_do_tiểu_đường_disease'})
+MERGE (o2:symptom {id: 'di_chuyển_bằng_xe_lăn_symptom'})
+MERGE (o1)-[r48:isSymptomOf]->(o2)
+SET r48.text = 'Đôi khi bệnh nhân phải di chuyển bằng xe lăn do đau và teo cơ.'
+
+MERGE (o1:disease {id: 'bệnh_teo_cơ_do_tiểu_đường_disease'})
+MERGE (o2:symptom {id: 'đau_cánh_tay_symptom'})
+MERGE (o1)-[r49:isSymptomOf]->(o2)
+SET r49.text = 'Một số bệnh nhân cũng bị đau hoặc yếu ở cánh tay, ngực, lưng trên.'
+
+MERGE (o1:disease {id: 'bệnh_teo_cơ_do_tiểu_đường_disease'})
+MERGE (o2:symptom {id: 'yếu_cánh_tay_symptom'})
+MERGE (o1)-[r50:isSymptomOf]->(o2)
+SET r50.text = 'Một số bệnh nhân cũng bị đau hoặc yếu ở cánh tay, ngực, lưng trên.'
+
+MERGE (o1:disease {id: 'bệnh_teo_cơ_do_tiểu_đường_disease'})
+MERGE (o2:symptom {id: 'đau_ngực_symptom'})
+MERGE (o1)-[r51:isSymptomOf]->(o2)
+SET r51.text = 'Một số bệnh nhân cũng bị đau hoặc yếu ở cánh tay, ngực, lưng trên.'
+
+MERGE (o1:disease {id: 'bệnh_teo_cơ_do_tiểu_đường_disease'})
+MERGE (o2:symptom {id: 'yếu_ngực_symptom'})
+MERGE (o1)-[r52:isSymptomOf]->(o2)
+SET r52.text = 'Một số bệnh nhân cũng bị đau hoặc yếu ở cánh tay, ngực, lưng trên.'
+
+MERGE (o1:disease {id: 'bệnh_teo_cơ_do_tiểu_đường_disease'})
+MERGE (o2:symptom {id: 'đau_lưng_trên_symptom'})
+MERGE (o1)-[r53:isSymptomOf]->(o2)
+SET r53.text = 'Một số bệnh nhân cũng bị đau hoặc yếu ở cánh tay, ngực, lưng trên.'
+
+MERGE (o1:disease {id: 'bệnh_teo_cơ_do_tiểu_đường_disease'})
+MERGE (o2:symptom {id: 'yếu_lưng_trên_symptom'})
+MERGE (o1)-[r54:isSymptomOf]->(o2)
+SET r54.text = 'Một số bệnh nhân cũng bị đau hoặc yếu ở cánh tay, ngực, lưng trên.'
+
+MERGE (o1:cause {id: 'sự_thay_đổi_bất_thường_của_hệ_thống_miễn_dịch_cause'})
+MERGE (o2:disease {id: 'teo_cơ_do_đái_tháo_đường_disease'})
+MERGE (o1)-[r55:causes]->(o2)
+SET r55.text = 'Sự thay đổi bất thường của hệ thống miễn dịch gây tổn thương các mạch máu nhỏ nuôi dây thần kinh dẫn đến teo cơ do đái tháo đường'
+
+MERGE (o1:symptom {id: 'bệnh_sử_các_triệu_chứng_symptom'})
+MERGE (o2:disease {id: 'bệnh_teo_cơ_do_đái_tháo_đường_disease'})
+MERGE (o1)-[r56:diagnosedBy]->(o2)
+SET r56.text = 'Để chẩn đoán bệnh teo cơ do đái tháo đường, cần hỏi kỹ bệnh sử các triệu chứng và khám thần kinh kỹ càng.'
+
+MERGE (o1:test {id: 'khám_thần_kinh_kỹ_càng_test'})
+MERGE (o2:disease {id: 'bệnh_teo_cơ_do_đái_tháo_đường_disease'})
+MERGE (o1)-[r57:diagnosedBy]->(o2)
+SET r57.text = 'Để chẩn đoán bệnh teo cơ do đái tháo đường, cần hỏi kỹ bệnh sử các triệu chứng và khám thần kinh kỹ càng.'
+
+MERGE (o1:treatment {id: 'các_bác_sĩ_chuyên_khoa_thần_kinh__khoa_nội_tiết_-_đái_tháo_đường_treatment'})
+MERGE (o2:disease {id: 'bệnh_teo_cơ_do_đái_tháo_đường_disease'})
+MERGE (o1)-[r58:treatedBy]->(o2)
+SET r58.text = 'Các bác sĩ chuyên khoa Thần kinh, khoa Nội tiết - Đái tháo đường sẽ làm thêm các xét nghiệm cần thiết.'
+
+MERGE (o1:test {id: 'xét_nghiệm_máu_test'})
+MERGE (o2:disease {id: 'bệnh_teo_cơ_do_đái_tháo_đường_disease'})
+MERGE (o1)-[r59:diagnosedBy]->(o2)
+SET r59.text = 'Người bệnh phải làm một số xét nghiệm máu để kiểm tra sự thiếu hụt vitamin trong cơ thể.'
+
+MERGE (o1:symptom {id: 'sự_thiếu_hụt_vitamin_symptom'})
+MERGE (o2:disease {id: 'bệnh_teo_cơ_do_đái_tháo_đường_disease'})
+MERGE (o1)-[r60:isSymptomOf]->(o2)
+SET r60.text = 'Người bệnh phải làm một số xét nghiệm máu để kiểm tra sự thiếu hụt vitamin trong cơ thể.'
+
+MERGE (o1:test {id: 'chọc_dò_dịch_não_tủy_test'})
+MERGE (o2:disease {id: 'bệnh_teo_cơ_do_đái_tháo_đường_disease'})
+MERGE (o1)-[r61:diagnosedBy]->(o2)
+SET r61.text = 'Chọc dò dịch não tủy (chất lỏng xung quanh tủy sống) để tìm dấu hiệu viêm.'
+
+MERGE (o1:symptom {id: 'dấu_hiệu_viêm_symptom'})
+MERGE (o2:disease {id: 'bệnh_teo_cơ_do_đái_tháo_đường_disease'})
+MERGE (o1)-[r62:isSymptomOf]->(o2)
+SET r62.text = 'Chọc dò dịch não tủy (chất lỏng xung quanh tủy sống) để tìm dấu hiệu viêm.'
+
+MERGE (o1:test {id: 'điện_cơ_test'})
+MERGE (o2:disease {id: 'bệnh_teo_cơ_do_đái_tháo_đường_disease'})
+MERGE (o1)-[r63:diagnosedBy]->(o2)
+SET r63.text = 'Điện cơ để đánh giá dẫn truyền thần kinh để kiểm tra hoạt động các dây thần kinh ở chân.'
+
+MERGE (o1:organ {id: 'dẫn_truyền_thần_kinh_organ'})
+MERGE (o2:disease {id: 'bệnh_teo_cơ_do_đái_tháo_đường_disease'})
+MERGE (o1)-[r64:affects]->(o2)
+SET r64.text = 'Điện cơ để đánh giá dẫn truyền thần kinh để kiểm tra hoạt động các dây thần kinh ở chân.'
+
+MERGE (o1:symptom {id: 'hoạt_động_các_dây_thần_kinh_ở_chân_symptom'})
+MERGE (o2:disease {id: 'bệnh_teo_cơ_do_đái_tháo_đường_disease'})
+MERGE (o1)-[r65:isSymptomOf]->(o2)
+SET r65.text = 'Điện cơ để đánh giá dẫn truyền thần kinh để kiểm tra hoạt động các dây thần kinh ở chân.'
+
+MERGE (o1:test {id: 'chụp_mri_test'})
+MERGE (o2:disease {id: 'bệnh_teo_cơ_do_đái_tháo_đường_disease'})
+MERGE (o1)-[r66:diagnosedBy]->(o2)
+SET r66.text = 'Chụp MRI (cộng hưởng từ) vùng lưng dưới để loại trừ khả năng chèn ép các dây thần kinh xung quanh cột sống.'
+
+MERGE (o1:cause {id: 'chèn_ép_các_dây_thần_kinh_xung_quanh_cột_sống_cause'})
+MERGE (o2:disease {id: 'bệnh_teo_cơ_do_đái_tháo_đường_disease'})
+MERGE (o1)-[r67:causedBy]->(o2)
+SET r67.text = 'Chụp MRI (cộng hưởng từ) vùng lưng dưới để loại trừ khả năng chèn ép các dây thần kinh xung quanh cột sống.'
+
+MERGE (o1:treatment {id: 'kiểm_soát_đau_treatment'})
+MERGE (o2:disease {id: 'bệnh_teo_cơ_do_đái_tháo_đường_disease'})
+MERGE (o1)-[r68:treatedBy]->(o2)
+SET r68.text = 'Điều trị căn bản cho bệnh teo cơ do đái tháo đường bao gồm điều trị triệu chứng kiểm soát đau, kiểm soát đường huyết tốt và vật lý trị liệu vận động.'
+
+MERGE (o1:treatment {id: 'kiểm_soát_đường_huyết_tốt_treatment'})
+MERGE (o2:disease {id: 'bệnh_teo_cơ_do_đái_tháo_đường_disease'})
+MERGE (o1)-[r69:treatedBy]->(o2)
+SET r69.text = 'Điều trị căn bản cho bệnh teo cơ do đái tháo đường bao gồm điều trị triệu chứng kiểm soát đau, kiểm soát đường huyết tốt và vật lý trị liệu vận động.'
+
+MERGE (o1:treatment {id: 'vật_lý_trị_liệu_vận_động_treatment'})
+MERGE (o2:disease {id: 'bệnh_teo_cơ_do_đái_tháo_đường_disease'})
+MERGE (o1)-[r70:treatedBy]->(o2)
+SET r70.text = 'Điều trị căn bản cho bệnh teo cơ do đái tháo đường bao gồm điều trị triệu chứng kiểm soát đau, kiểm soát đường huyết tốt và vật lý trị liệu vận động.'
+
+MERGE (o1:treatment {id: 'tập_vận_động_treatment'})
+MERGE (o2:disease {id: 'bệnh_teo_cơ_do_đái_tháo_đường_disease'})
+MERGE (o1)-[r71:treatedBy]->(o2)
+SET r71.text = 'Việc tăng cường tập vận động rất quan trọng nhằm hạn chế teo cơ, tăng khả năng và tốc độ hồi phục.'
+
+MERGE (o1:symptom {id: 'teo_cơ_symptom'})
+MERGE (o2:disease {id: 'bệnh_teo_cơ_do_đái_tháo_đường_disease'})
+MERGE (o1)-[r72:isSymptomOf]->(o2)
+SET r72.text = 'Việc tăng cường tập vận động rất quan trọng nhằm hạn chế teo cơ, tăng khả năng và tốc độ hồi phục.'
+
+MERGE (o1:lifestyle {id: 'chế_độ_ăn_uống_hợp_lý_lifestyle'})
+MERGE (o2:disease {id: 'bệnh_teo_cơ_do_đái_tháo_đường_disease'})
+MERGE (o1)-[r73:treatedBy]->(o2)
+SET r73.text = 'Thay đổi lối sống với chế độ ăn uống hợp lý, tránh khói thuốc lá cũng giúp bệnh mau hồi phục.'
+
+MERGE (o1:lifestyle {id: 'tránh_khói_thuốc_lá_lifestyle'})
+MERGE (o2:disease {id: 'bệnh_teo_cơ_do_đái_tháo_đường_disease'})
+MERGE (o1)-[r74:treatedBy]->(o2)
+SET r74.text = 'Thay đổi lối sống với chế độ ăn uống hợp lý, tránh khói thuốc lá cũng giúp bệnh mau hồi phục.'
+
+MERGE (o1:treatment {id: 'các_bác_sĩ_treatment'})
+MERGE (o2:disease {id: 'bệnh_teo_cơ_do_đái_tháo_đường_disease'})
+MERGE (o1)-[r75:treatedBy]->(o2)
+SET r75.text = 'Các bác sĩ sẽ khám, lên phác đồ điều trị teo cơ do tiểu đường tùy vào tình trạng bệnh của từng người bệnh.'
+
+MERGE (o1:symptom {id: 'đau_do_bệnh_teo_cơ_do_đái_tháo_đường_symptom'})
+MERGE (o2:disease {id: 'bệnh_teo_cơ_do_đái_tháo_đường_disease'})
+MERGE (o1)-[r76:isSymptomOf]->(o2)
+SET r76.text = 'Đau do bệnh teo cơ do đái tháo đường gọi là đau thần kinh hoặc đau dây thần kinh, thường phản ứng kém hơn với thuốc giảm đau thông thường như paracetamol.'
+
+MERGE (o1:symptom {id: 'đau_thần_kinh_symptom'})
+MERGE (o2:disease {id: 'bệnh_teo_cơ_do_đái_tháo_đường_disease'})
+MERGE (o1)-[r77:isSymptomOf]->(o2)
+SET r77.text = 'Đau do bệnh teo cơ do đái tháo đường gọi là đau thần kinh hoặc đau dây thần kinh, thường phản ứng kém hơn với thuốc giảm đau thông thường như paracetamol.'
+
+MERGE (o1:symptom {id: 'đau_dây_thần_kinh_symptom'})
+MERGE (o2:disease {id: 'bệnh_teo_cơ_do_đái_tháo_đường_disease'})
+MERGE (o1)-[r78:isSymptomOf]->(o2)
+SET r78.text = 'Đau do bệnh teo cơ do đái tháo đường gọi là đau thần kinh hoặc đau dây thần kinh, thường phản ứng kém hơn với thuốc giảm đau thông thường như paracetamol.'
+
+MERGE (o1:treatment {id: 'thuốc_giảm_đau_thông_thường_treatment'})
+MERGE (o2:disease {id: 'bệnh_teo_cơ_do_đái_tháo_đường_disease'})
+MERGE (o1)-[r79:treatedBy]->(o2)
+SET r79.text = 'Đau do bệnh teo cơ do đái tháo đường gọi là đau thần kinh hoặc đau dây thần kinh, thường phản ứng kém hơn với thuốc giảm đau thông thường như paracetamol.'
+
+MERGE (o1:treatment {id: 'paracetamol_treatment'})
+MERGE (o2:disease {id: 'bệnh_teo_cơ_do_đái_tháo_đường_disease'})
+MERGE (o1)-[r80:treatedBy]->(o2)
+SET r80.text = 'Đau do bệnh teo cơ do đái tháo đường gọi là đau thần kinh hoặc đau dây thần kinh, thường phản ứng kém hơn với thuốc giảm đau thông thường như paracetamol.'
+
+MERGE (o1:treatment {id: 'amitriptyline_treatment'})
+MERGE (o2:disease {id: 'bệnh_teo_cơ_do_đái_tháo_đường_disease'})
+MERGE (o1)-[r81:treatedBy]->(o2)
+SET r81.text = 'Các phương pháp điều trị đau dây thần kinh chuyên khoa, bao gồm: amitriptyline, thuốc chống trầm cảm, thuốc chống động kinh.'
+
+MERGE (o1:treatment {id: 'thuốc_chống_trầm_cảm_treatment'})
+MERGE (o2:disease {id: 'bệnh_teo_cơ_do_đái_tháo_đường_disease'})
+MERGE (o1)-[r82:treatedBy]->(o2)
+SET r82.text = 'Các phương pháp điều trị đau dây thần kinh chuyên khoa, bao gồm: amitriptyline, thuốc chống trầm cảm, thuốc chống động kinh.'
+
+MERGE (o1:treatment {id: 'thuốc_chống_động_kinh_treatment'})
+MERGE (o2:disease {id: 'bệnh_teo_cơ_do_đái_tháo_đường_disease'})
+MERGE (o1)-[r83:treatedBy]->(o2)
+SET r83.text = 'Các phương pháp điều trị đau dây thần kinh chuyên khoa, bao gồm: amitriptyline, thuốc chống trầm cảm, thuốc chống động kinh.'
+
+MERGE (o1:treatment {id: 'thuốc_steroid_treatment'})
+MERGE (o2:disease {id: 'bệnh_teo_cơ_do_đái_tháo_đường_disease'})
+MERGE (o1)-[r84:treatedBy]->(o2)
+SET r84.text = 'Thuốc steroid, thuốc ức chế miễn dịch được sử dụng để giúp tăng tốc độ phục hồi.'
+
+MERGE (o1:treatment {id: 'thuốc_ức_chế_miễn_dịch_treatment'})
+MERGE (o2:disease {id: 'bệnh_teo_cơ_do_đái_tháo_đường_disease'})
+MERGE (o1)-[r85:treatedBy]->(o2)
+SET r85.text = 'Thuốc steroid, thuốc ức chế miễn dịch được sử dụng để giúp tăng tốc độ phục hồi.'
+
+MERGE (o1:symptom {id: 'diễn_biến_của_tình_trạng_bệnh_symptom'})
+MERGE (o2:disease {id: 'bệnh_teo_cơ_do_đái_tháo_đường_disease'})
+MERGE (o1)-[r86:isSymptomOf]->(o2)
+SET r86.text = 'Thời gian điều trị tùy thuộc vào diễn biến của tình trạng bệnh và mức độ tổn thương thần kinh ở mỗi bệnh nhân khác nhau.'
+
+MERGE (o1:symptom {id: 'mức_độ_tổn_thương_thần_kinh_symptom'})
+MERGE (o2:disease {id: 'bệnh_teo_cơ_do_đái_tháo_đường_disease'})
+MERGE (o1)-[r87:isSymptomOf]->(o2)
+SET r87.text = 'Thời gian điều trị tùy thuộc vào diễn biến của tình trạng bệnh và mức độ tổn thương thần kinh ở mỗi bệnh nhân khác nhau.'
+
+MERGE (o1:treatment {id: 'thuốc_treatment'})
+MERGE (o2:disease {id: 'bệnh_teo_cơ_do_đái_tháo_đường_disease'})
+MERGE (o1)-[r88:treatedBy]->(o2)
+SET r88.text = 'Tuy nhiên chưa có bằng chứng mạnh về hiệu quả của thuốc.'
+
+MERGE (o1:treatment {id: 'thuốc_treatment'})
+MERGE (o2:disease {id: 'bệnh_teo_cơ_do_đái_tháo_đường_disease'})
+MERGE (o1)-[r89:treatedBy]->(o2)
+SET r89.text = 'Người bệnh teo cơ do tiểu đường ngoài việc sử dụng thuốc để điều trị, cần áp dụng thêm những phương pháp sau để góp phần kiểm soát, chữa teo cơ hiệu quả hơn:'
+
+MERGE (o1:treatment {id: 'tập_thể_dục_thường_xuyên_treatment'})
+MERGE (o2:disease {id: 'bệnh_teo_cơ_do_đái_tháo_đường_disease'})
+MERGE (o1)-[r90:treatedBy]->(o2)
+SET r90.text = 'Tập thể dục thường xuyên giúp tăng cường sức đề kháng có tác dụng giảm viêm toàn thân, viêm cơ.'
+
+MERGE (o1:symptom {id: 'viêm_toàn_thân_symptom'})
+MERGE (o2:disease {id: 'bệnh_teo_cơ_do_đái_tháo_đường_disease'})
+MERGE (o1)-[r91:isSymptomOf]->(o2)
+SET r91.text = 'Tập thể dục thường xuyên giúp tăng cường sức đề kháng có tác dụng giảm viêm toàn thân, viêm cơ.'
+
+MERGE (o1:symptom {id: 'viêm_cơ_symptom'})
+MERGE (o2:disease {id: 'bệnh_teo_cơ_do_đái_tháo_đường_disease'})
+MERGE (o1)-[r92:isSymptomOf]->(o2)
+SET r92.text = 'Tập thể dục thường xuyên giúp tăng cường sức đề kháng có tác dụng giảm viêm toàn thân, viêm cơ.'
+
+MERGE (o1:symptom {id: 'viêm_toàn_thân_symptom'})
+MERGE (o2:symptom {id: 'kháng_insulin_symptom'})
+MERGE (o1)-[r93:affects]->(o2)
+SET r93.text = 'Tình trạng viêm toàn thân góp phần ảnh hưởng tình trạng kháng insulin của cơ thể vì vậy luyện tập thể dục làm tăng độ nhạy insulin để cải thiện tình trạng viêm (cơ, toàn thân, cục bộ).'
+
+MERGE (o1:treatment {id: 'luyện_tập_thể_dục_treatment'})
+MERGE (o2:symptom {id: 'kháng_insulin_symptom'})
+MERGE (o1)-[r94:treatedBy]->(o2)
+SET r94.text = 'Tình trạng viêm toàn thân góp phần ảnh hưởng tình trạng kháng insulin của cơ thể vì vậy luyện tập thể dục làm tăng độ nhạy insulin để cải thiện tình trạng viêm (cơ, toàn thân, cục bộ).'
+
+MERGE (o1:treatment {id: 'tăng_độ_nhạy_insulin_treatment'})
+MERGE (o2:symptom {id: 'kháng_insulin_symptom'})
+MERGE (o1)-[r95:treatedBy]->(o2)
+SET r95.text = 'Tình trạng viêm toàn thân góp phần ảnh hưởng tình trạng kháng insulin của cơ thể vì vậy luyện tập thể dục làm tăng độ nhạy insulin để cải thiện tình trạng viêm (cơ, toàn thân, cục bộ).'
+
+MERGE (o1:treatment {id: 'tập_luyện_thể_dục_thể_thao_treatment'})
+MERGE (o2:disease {id: 'bệnh_teo_cơ_do_đái_tháo_đường_disease'})
+MERGE (o1)-[r96:treatedBy]->(o2)
+SET r96.text = 'Tập luyện thể dục thể thao còn giúp điều chỉnh, tăng quá trình tổng hợp protein, giảm sự thoái hóa protein.'
+
+MERGE (o1:treatment {id: 'tăng_quá_trình_tổng_hợp_protein_treatment'})
+MERGE (o2:disease {id: 'bệnh_teo_cơ_do_đái_tháo_đường_disease'})
+MERGE (o1)-[r97:treatedBy]->(o2)
+SET r97.text = 'Tập luyện thể dục thể thao còn giúp điều chỉnh, tăng quá trình tổng hợp protein, giảm sự thoái hóa protein.'
+
+MERGE (o1:treatment {id: 'giảm_sự_thoái_hóa_protein_treatment'})
+MERGE (o2:disease {id: 'bệnh_teo_cơ_do_đái_tháo_đường_disease'})
+MERGE (o1)-[r98:treatedBy]->(o2)
+SET r98.text = 'Tập luyện thể dục thể thao còn giúp điều chỉnh, tăng quá trình tổng hợp protein, giảm sự thoái hóa protein.'
+
+MERGE (o1:treatment {id: 'đi_bộ_treatment'})
+MERGE (o2:disease {id: 'bệnh_teo_cơ_do_đái_tháo_đường_disease'})
+MERGE (o1)-[r99:treatedBy]->(o2)
+SET r99.text = 'Một số bài tập người bệnh tiểu đường có thể tập như: đi bộ, đạp xe… (2)'
+
+MERGE (o1:treatment {id: 'đạp_xe_treatment'})
+MERGE (o2:disease {id: 'bệnh_teo_cơ_do_đái_tháo_đường_disease'})
+MERGE (o1)-[r100:treatedBy]->(o2)
+SET r100.text = 'Một số bài tập người bệnh tiểu đường có thể tập như: đi bộ, đạp xe… (2)'
+
+MERGE (o1:lifestyle {id: 'chế_độ_ăn_uống_lành_mạnh_lifestyle'})
+MERGE (o2:disease {id: 'bệnh_teo_cơ_do_đái_tháo_đường_disease'})
+MERGE (o1)-[r101:treatedBy]->(o2)
+SET r101.text = 'Chế độ ăn uống lành mạnh sẽ giúp người bệnh tiểu đường phát triển cơ bắp, giảm mỡ thừa.'
+
+MERGE (o1:treatment {id: 'phát_triển_cơ_bắp_treatment'})
+MERGE (o2:disease {id: 'bệnh_teo_cơ_do_đái_tháo_đường_disease'})
+MERGE (o1)-[r102:treatedBy]->(o2)
+SET r102.text = 'Chế độ ăn uống lành mạnh sẽ giúp người bệnh tiểu đường phát triển cơ bắp, giảm mỡ thừa.'
+
+MERGE (o1:treatment {id: 'giảm_mỡ_thừa_treatment'})
+MERGE (o2:disease {id: 'bệnh_teo_cơ_do_đái_tháo_đường_disease'})
+MERGE (o1)-[r103:treatedBy]->(o2)
+SET r103.text = 'Chế độ ăn uống lành mạnh sẽ giúp người bệnh tiểu đường phát triển cơ bắp, giảm mỡ thừa.'
+
+MERGE (o1:food {id: 'cá_food'})
+MERGE (o2:disease {id: 'bệnh_teo_cơ_do_đái_tháo_đường_disease'})
+MERGE (o1)-[r104:treatedBy]->(o2)
+SET r104.text = 'Người bệnh có thể bổ sung các loại thực phẩm có chứa protein như: cá, trứng, các loại đậu… để cải thiện tình trạng suy giảm khối lượng cơ bắp.'
+
+MERGE (o1:food {id: 'trứng_food'})
+MERGE (o2:disease {id: 'bệnh_teo_cơ_do_đái_tháo_đường_disease'})
+MERGE (o1)-[r105:treatedBy]->(o2)
+SET r105.text = 'Người bệnh có thể bổ sung các loại thực phẩm có chứa protein như: cá, trứng, các loại đậu… để cải thiện tình trạng suy giảm khối lượng cơ bắp.'
+
+MERGE (o1:food {id: 'các_loại_đậu_food'})
+MERGE (o2:disease {id: 'bệnh_teo_cơ_do_đái_tháo_đường_disease'})
+MERGE (o1)-[r106:treatedBy]->(o2)
+SET r106.text = 'Người bệnh có thể bổ sung các loại thực phẩm có chứa protein như: cá, trứng, các loại đậu… để cải thiện tình trạng suy giảm khối lượng cơ bắp.'
+
+MERGE (o1:symptom {id: 'suy_giảm_khối_lượng_cơ_bắp_symptom'})
+MERGE (o2:disease {id: 'bệnh_teo_cơ_do_đái_tháo_đường_disease'})
+MERGE (o1)-[r107:isSymptomOf]->(o2)
+SET r107.text = 'Người bệnh có thể bổ sung các loại thực phẩm có chứa protein như: cá, trứng, các loại đậu… để cải thiện tình trạng suy giảm khối lượng cơ bắp.'
+
+MERGE (o1:food {id: 'cá_hồi_food'})
+MERGE (o2:disease {id: 'bệnh_teo_cơ_do_đái_tháo_đường_disease'})
+MERGE (o1)-[r108:treatedBy]->(o2)
+SET r108.text = 'Ngoài ra, các loại thực phẩm giàu vitamin D có trong các loại thực phẩm: cá hồi, cá trích, cá mòi, cá ngừ, hàu, tôm…. cũng giúp xương chắc khỏe, cải thiện cơ bắp.'
+
+MERGE (o1:food {id: 'cá_trích_food'})
+MERGE (o2:disease {id: 'bệnh_teo_cơ_do_đái_tháo_đường_disease'})
+MERGE (o1)-[r109:treatedBy]->(o2)
+SET r109.text = 'Ngoài ra, các loại thực phẩm giàu vitamin D có trong các loại thực phẩm: cá hồi, cá trích, cá mòi, cá ngừ, hàu, tôm…. cũng giúp xương chắc khỏe, cải thiện cơ bắp.'
+
+MERGE (o1:food {id: 'cá_mòi_food'})
+MERGE (o2:disease {id: 'bệnh_teo_cơ_do_đái_tháo_đường_disease'})
+MERGE (o1)-[r110:treatedBy]->(o2)
+SET r110.text = 'Ngoài ra, các loại thực phẩm giàu vitamin D có trong các loại thực phẩm: cá hồi, cá trích, cá mòi, cá ngừ, hàu, tôm…. cũng giúp xương chắc khỏe, cải thiện cơ bắp.'
+
+MERGE (o1:food {id: 'cá_ngừ_food'})
+MERGE (o2:disease {id: 'bệnh_teo_cơ_do_đái_tháo_đường_disease'})
+MERGE (o1)-[r111:treatedBy]->(o2)
+SET r111.text = 'Ngoài ra, các loại thực phẩm giàu vitamin D có trong các loại thực phẩm: cá hồi, cá trích, cá mòi, cá ngừ, hàu, tôm…. cũng giúp xương chắc khỏe, cải thiện cơ bắp.'
+
+MERGE (o1:food {id: 'hàu_food'})
+MERGE (o2:disease {id: 'bệnh_teo_cơ_do_đái_tháo_đường_disease'})
+MERGE (o1)-[r112:treatedBy]->(o2)
+SET r112.text = 'Ngoài ra, các loại thực phẩm giàu vitamin D có trong các loại thực phẩm: cá hồi, cá trích, cá mòi, cá ngừ, hàu, tôm…. cũng giúp xương chắc khỏe, cải thiện cơ bắp.'
+
+MERGE (o1:food {id: 'tôm_food'})
+MERGE (o2:disease {id: 'bệnh_teo_cơ_do_đái_tháo_đường_disease'})
+MERGE (o1)-[r113:treatedBy]->(o2)
+SET r113.text = 'Ngoài ra, các loại thực phẩm giàu vitamin D có trong các loại thực phẩm: cá hồi, cá trích, cá mòi, cá ngừ, hàu, tôm…. cũng giúp xương chắc khỏe, cải thiện cơ bắp.'
+
+MERGE (o1:symptom {id: 'xương_chắc_khỏe_symptom'})
+MERGE (o2:disease {id: 'bệnh_teo_cơ_do_đái_tháo_đường_disease'})
+MERGE (o1)-[r114:isSymptomOf]->(o2)
+SET r114.text = 'Ngoài ra, các loại thực phẩm giàu vitamin D có trong các loại thực phẩm: cá hồi, cá trích, cá mòi, cá ngừ, hàu, tôm…. cũng giúp xương chắc khỏe, cải thiện cơ bắp.'
+
+MERGE (o1:treatment {id: 'cải_thiện_cơ_bắp_treatment'})
+MERGE (o2:disease {id: 'bệnh_teo_cơ_do_đái_tháo_đường_disease'})
+MERGE (o1)-[r115:treatedBy]->(o2)
+SET r115.text = 'Ngoài ra, các loại thực phẩm giàu vitamin D có trong các loại thực phẩm: cá hồi, cá trích, cá mòi, cá ngừ, hàu, tôm…. cũng giúp xương chắc khỏe, cải thiện cơ bắp.'
+
+MERGE (o1:treatment {id: 'các_bài_tập_vật_lý_trị_liệu_treatment'})
+MERGE (o2:disease {id: 'bệnh_teo_cơ_do_đái_tháo_đường_disease'})
+MERGE (o1)-[r116:treatedBy]->(o2)
+SET r116.text = 'Ngoài việc sử dụng thuốc, tập thể dục thường xuyên, người bệnh tiểu đường bị teo cơ cần thực hiện các bài tập vật lý trị liệu theo sự hướng dẫn của bác sĩ để giữ cho cơ bắp hoạt động càng nhiều càng tốt, cải thiện tốc độ và mức độ phục hồi.'
+
+MERGE (o1:treatment {id: 'cơ_bắp_hoạt_động_treatment'})
+MERGE (o2:disease {id: 'bệnh_teo_cơ_do_đái_tháo_đường_disease'})
+MERGE (o1)-[r117:treatedBy]->(o2)
+SET r117.text = 'Ngoài việc sử dụng thuốc, tập thể dục thường xuyên, người bệnh tiểu đường bị teo cơ cần thực hiện các bài tập vật lý trị liệu theo sự hướng dẫn của bác sĩ để giữ cho cơ bắp hoạt động càng nhiều càng tốt, cải thiện tốc độ và mức độ phục hồi.'
+
+MERGE (o1:treatment {id: 'cải_thiện_tốc_độ_và_mức_độ_phục_hồi_treatment'})
+MERGE (o2:disease {id: 'bệnh_teo_cơ_do_đái_tháo_đường_disease'})
+MERGE (o1)-[r118:treatedBy]->(o2)
+SET r118.text = 'Ngoài việc sử dụng thuốc, tập thể dục thường xuyên, người bệnh tiểu đường bị teo cơ cần thực hiện các bài tập vật lý trị liệu theo sự hướng dẫn của bác sĩ để giữ cho cơ bắp hoạt động càng nhiều càng tốt, cải thiện tốc độ và mức độ phục hồi.'
+
+MERGE (o1:disease {id: 'teo_cơ_do_tiểu_đường_disease'})
+MERGE (o2:symptom {id: 'bại_liệt_symptom'})
+MERGE (o1)-[r119:causedBy]->(o2)
+SET r119.text = 'Teo cơ do tiểu đường nếu không điều trị sớm sẽ tiến triển nặng gây bại liệt'
+
+MERGE (o1:symptom {id: 'bại_liệt_symptom'})
+MERGE (o2:disease {id: 'teo_cơ_do_tiểu_đường_disease'})
+MERGE (o1)-[r120:isSymptomOf]->(o2)
+SET r120.text = 'Teo cơ do tiểu đường nếu không điều trị sớm sẽ tiến triển nặng gây bại liệt'

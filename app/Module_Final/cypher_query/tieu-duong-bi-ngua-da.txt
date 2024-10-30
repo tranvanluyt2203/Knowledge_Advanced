@@ -1,0 +1,520 @@
+
+MERGE (o1:cause {id: 'lượng_đường_trong_máu_cao_cause'})
+MERGE (o2:symptom {id: 'hệ_miễn_dịch_suy_yếu_symptom'})
+MERGE (o1)-[r0:causes]->(o2)
+SET r0.text = 'Người bệnh tiểu đường có lượng đường trong máu cao làm hệ miễn dịch suy yếu, tăng khả năng nhiễm trùng da nếu vi khuẩn xâm nhập.'
+
+MERGE (o1:symptom {id: 'hệ_miễn_dịch_suy_yếu_symptom'})
+MERGE (o2:symptom {id: 'nhiễm_trùng_da_symptom'})
+MERGE (o1)-[r1:causes]->(o2)
+SET r1.text = 'Người bệnh tiểu đường có lượng đường trong máu cao làm hệ miễn dịch suy yếu, tăng khả năng nhiễm trùng da nếu vi khuẩn xâm nhập.'
+
+MERGE (o1:symptom {id: 'nhiễm_trùng_da_symptom'})
+MERGE (o2:cause {id: 'vi_khuẩn_xâm_nhập_cause'})
+MERGE (o1)-[r2:causedBy]->(o2)
+SET r2.text = 'Người bệnh tiểu đường có lượng đường trong máu cao làm hệ miễn dịch suy yếu, tăng khả năng nhiễm trùng da nếu vi khuẩn xâm nhập.'
+
+MERGE (o1:cause {id: 'vết_cắt__phồng_rộp_hoặc_vết_nứt_trên_da_cause'})
+MERGE (o2:symptom {id: 'nhiễm_trùng_da_symptom'})
+MERGE (o1)-[r3:causes]->(o2)
+SET r3.text = 'Vết cắt, phồng rộp hoặc vết nứt trên da sẽ tạo điều kiện cho vi khuẩn xâm nhập vào cơ thể gây nguy cơ nhiễm trùng da, ngứa, viêm nang lông.'
+
+MERGE (o1:cause {id: 'vết_cắt__phồng_rộp_hoặc_vết_nứt_trên_da_cause'})
+MERGE (o2:symptom {id: 'ngứa_symptom'})
+MERGE (o1)-[r4:causes]->(o2)
+SET r4.text = 'Vết cắt, phồng rộp hoặc vết nứt trên da sẽ tạo điều kiện cho vi khuẩn xâm nhập vào cơ thể gây nguy cơ nhiễm trùng da, ngứa, viêm nang lông.'
+
+MERGE (o1:cause {id: 'vết_cắt__phồng_rộp_hoặc_vết_nứt_trên_da_cause'})
+MERGE (o2:symptom {id: 'viêm_nang_lông_symptom'})
+MERGE (o1)-[r5:causes]->(o2)
+SET r5.text = 'Vết cắt, phồng rộp hoặc vết nứt trên da sẽ tạo điều kiện cho vi khuẩn xâm nhập vào cơ thể gây nguy cơ nhiễm trùng da, ngứa, viêm nang lông.'
+
+MERGE (o1:treatment {id: 'thuốc_kháng_sinh_bôi_hoặc_uống_treatment'})
+MERGE (o2:symptom {id: 'ngứa_symptom'})
+MERGE (o1)-[r6:treatedBy]->(o2)
+SET r6.text = 'Tùy vào tình trạng da, bác sĩ sẽ chỉ định dùng thuốc kháng sinh bôi hoặc uống bôi lên vùng da bị ngứa để tiêu diệt vi khuẩn, giúp da mau phục hồi.'
+
+MERGE (o1:treatment {id: 'thuốc_kháng_sinh_bôi_hoặc_uống_treatment'})
+MERGE (o2:organ {id: 'da_organ'})
+MERGE (o1)-[r7:affects]->(o2)
+SET r7.text = 'Tùy vào tình trạng da, bác sĩ sẽ chỉ định dùng thuốc kháng sinh bôi hoặc uống bôi lên vùng da bị ngứa để tiêu diệt vi khuẩn, giúp da mau phục hồi.'
+
+MERGE (o1:symptom {id: 'hệ_miễn_dịch_yếu_symptom'})
+MERGE (o2:symptom {id: 'nhiễm_nấm_symptom'})
+MERGE (o1)-[r8:causes]->(o2)
+SET r8.text = 'Người bệnh tiểu đường có hệ miễn dịch yếu nên dễ nhiễm nấm, nhiễm trùng gây ngứa da, thường xuất hiện ở giữa các ngón chân.'
+
+MERGE (o1:symptom {id: 'hệ_miễn_dịch_yếu_symptom'})
+MERGE (o2:symptom {id: 'nhiễm_trùng_symptom'})
+MERGE (o1)-[r9:causes]->(o2)
+SET r9.text = 'Người bệnh tiểu đường có hệ miễn dịch yếu nên dễ nhiễm nấm, nhiễm trùng gây ngứa da, thường xuất hiện ở giữa các ngón chân.'
+
+MERGE (o1:symptom {id: 'nhiễm_nấm__nhiễm_trùng_symptom'})
+MERGE (o2:symptom {id: 'ngứa_da_symptom'})
+MERGE (o1)-[r10:causes]->(o2)
+SET r10.text = 'Người bệnh tiểu đường có hệ miễn dịch yếu nên dễ nhiễm nấm, nhiễm trùng gây ngứa da, thường xuất hiện ở giữa các ngón chân.'
+
+MERGE (o1:symptom {id: 'ngứa_da_symptom'})
+MERGE (o2:organ {id: 'giữa_các_ngón_chân_organ'})
+MERGE (o1)-[r11:locatedIn]->(o2)
+SET r11.text = 'Người bệnh tiểu đường có hệ miễn dịch yếu nên dễ nhiễm nấm, nhiễm trùng gây ngứa da, thường xuất hiện ở giữa các ngón chân.'
+
+MERGE (o1:disease {id: 'bệnh_nấm_da_chân_disease'})
+MERGE (o2:cause {id: 'nấm_candida_cause'})
+MERGE (o1)-[r12:causedBy]->(o2)
+SET r12.text = 'Bệnh nấm da chân do nấm candida gây ra, phát triển ở các nếp gấp của da (nếp gấp ở khuyu tay, chân, háng, cổ, nách…).'
+
+MERGE (o1:disease {id: 'bệnh_nấm_da_chân_disease'})
+MERGE (o2:organ {id: 'các_nếp_gấp_của_da_organ'})
+MERGE (o1)-[r13:locatedIn]->(o2)
+SET r13.text = 'Bệnh nấm da chân do nấm candida gây ra, phát triển ở các nếp gấp của da (nếp gấp ở khuyu tay, chân, háng, cổ, nách…).'
+
+MERGE (o1:disease {id: 'bệnh_nấm_da_chân_disease'})
+MERGE (o2:organ {id: 'khuyu_tay_organ'})
+MERGE (o1)-[r14:locatedIn]->(o2)
+SET r14.text = 'Bệnh nấm da chân do nấm candida gây ra, phát triển ở các nếp gấp của da (nếp gấp ở khuyu tay, chân, háng, cổ, nách…).'
+
+MERGE (o1:disease {id: 'bệnh_nấm_da_chân_disease'})
+MERGE (o2:organ {id: 'chân_organ'})
+MERGE (o1)-[r15:locatedIn]->(o2)
+SET r15.text = 'Bệnh nấm da chân do nấm candida gây ra, phát triển ở các nếp gấp của da (nếp gấp ở khuyu tay, chân, háng, cổ, nách…).'
+
+MERGE (o1:disease {id: 'bệnh_nấm_da_chân_disease'})
+MERGE (o2:organ {id: 'háng_organ'})
+MERGE (o1)-[r16:locatedIn]->(o2)
+SET r16.text = 'Bệnh nấm da chân do nấm candida gây ra, phát triển ở các nếp gấp của da (nếp gấp ở khuyu tay, chân, háng, cổ, nách…).'
+
+MERGE (o1:disease {id: 'bệnh_nấm_da_chân_disease'})
+MERGE (o2:organ {id: 'cổ_organ'})
+MERGE (o1)-[r17:locatedIn]->(o2)
+SET r17.text = 'Bệnh nấm da chân do nấm candida gây ra, phát triển ở các nếp gấp của da (nếp gấp ở khuyu tay, chân, háng, cổ, nách…).'
+
+MERGE (o1:disease {id: 'bệnh_nấm_da_chân_disease'})
+MERGE (o2:organ {id: 'nách_organ'})
+MERGE (o1)-[r18:locatedIn]->(o2)
+SET r18.text = 'Bệnh nấm da chân do nấm candida gây ra, phát triển ở các nếp gấp của da (nếp gấp ở khuyu tay, chân, háng, cổ, nách…).'
+
+MERGE (o1:treatment {id: 'kem_chống_nấm_tại_chỗ_treatment'})
+MERGE (o2:disease {id: 'bệnh_nấm_da_chân_disease'})
+MERGE (o1)-[r19:treatedBy]->(o2)
+SET r19.text = 'Người bệnh cần thoa kem chống nấm tại chỗ để tiêu diệt nấm, ngăn nhiễm trùng để cải thiện tình trạng da.'
+
+MERGE (o1:treatment {id: 'kem_chống_nấm_tại_chỗ_treatment'})
+MERGE (o2:organ {id: 'da_organ'})
+MERGE (o1)-[r20:affects]->(o2)
+SET r20.text = 'Người bệnh cần thoa kem chống nấm tại chỗ để tiêu diệt nấm, ngăn nhiễm trùng để cải thiện tình trạng da.'
+
+MERGE (o1:treatment {id: 'kem_chống_nấm_tại_chỗ_treatment'})
+MERGE (o2:symptom {id: 'nhiễm_trùng_symptom'})
+MERGE (o1)-[r21:preventedBy]->(o2)
+SET r21.text = 'Người bệnh cần thoa kem chống nấm tại chỗ để tiêu diệt nấm, ngăn nhiễm trùng để cải thiện tình trạng da.'
+
+MERGE (o1:symptom {id: 'ngứa_da_symptom'})
+MERGE (o2:cause {id: 'tác_dụng_phụ_của_một_số_loại_thuốc_cause'})
+MERGE (o1)-[r22:causedBy]->(o2)
+SET r22.text = 'Người bệnh tiểu đường có thể bị ngứa da do tác dụng phụ của một số loại thuốc hoặc có phản ứng dị ứng sau khi sử dụng.'
+
+MERGE (o1:symptom {id: 'ngứa_da_symptom'})
+MERGE (o2:cause {id: 'phản_ứng_dị_ứng_cause'})
+MERGE (o1)-[r23:causedBy]->(o2)
+SET r23.text = 'Người bệnh tiểu đường có thể bị ngứa da do tác dụng phụ của một số loại thuốc hoặc có phản ứng dị ứng sau khi sử dụng.'
+
+MERGE (o1:symptom {id: 'ngứa_da_do_dị_ứng_thuốc_symptom'})
+MERGE (o2:treatment {id: 'bác_sĩ_khám_treatment'})
+MERGE (o1)-[r24:treatedBy]->(o2)
+SET r24.text = 'Khi gặp tình trạng ngứa da do dị ứng thuốc, người bệnh nên đến bác sĩ khám để điều trị kịp thời, thay đổi toa thuốc phù hợp, tránh làm tổn thương da.'
+
+MERGE (o1:symptom {id: 'ngứa_da_do_dị_ứng_thuốc_symptom'})
+MERGE (o2:treatment {id: 'thay_đổi_toa_thuốc_treatment'})
+MERGE (o1)-[r25:treatedBy]->(o2)
+SET r25.text = 'Khi gặp tình trạng ngứa da do dị ứng thuốc, người bệnh nên đến bác sĩ khám để điều trị kịp thời, thay đổi toa thuốc phù hợp, tránh làm tổn thương da.'
+
+MERGE (o1:lifestyle {id: 'nước_hoa__thuốc_nhuộm__xà_phòng_chứa_chất_tẩy_mạnh_lifestyle'})
+MERGE (o2:symptom {id: 'da_khô_symptom'})
+MERGE (o1)-[r26:causes]->(o2)
+SET r26.text = 'Các sản phẩm như: nước hoa, thuốc nhuộm, xà phòng chứa chất tẩy mạnh có thể làm khô da, dẫn đến ngứa.'
+
+MERGE (o1:symptom {id: 'da_khô_symptom'})
+MERGE (o2:symptom {id: 'ngứa_symptom'})
+MERGE (o1)-[r27:causes]->(o2)
+SET r27.text = 'Các sản phẩm như: nước hoa, thuốc nhuộm, xà phòng chứa chất tẩy mạnh có thể làm khô da, dẫn đến ngứa.'
+
+MERGE (o1:treatment {id: 'thuốc_điều_trị_các_vấn_đề_sức_khỏe_treatment'})
+MERGE (o2:symptom {id: 'ngứa_da_symptom'})
+MERGE (o1)-[r28:causes]->(o2)
+SET r28.text = 'Một số loại thuốc điều trị các vấn đề sức khỏe khác thường gặp ở người bệnh tiểu đường như: huyết áp cao, cholesterol xấu LDL trong máu cao cũng gây ngứa da.'
+
+MERGE (o1:disease {id: 'huyết_áp_cao_disease'})
+MERGE (o2:disease {id: 'tiểu_đường_disease'})
+MERGE (o1)-[r29:associatedWith]->(o2)
+SET r29.text = 'Một số loại thuốc điều trị các vấn đề sức khỏe khác thường gặp ở người bệnh tiểu đường như: huyết áp cao, cholesterol xấu LDL trong máu cao cũng gây ngứa da.'
+
+MERGE (o1:symptom {id: 'ngứa_da_symptom'})
+MERGE (o2:cause {id: 'máu_lưu_thông_kém_cause'})
+MERGE (o1)-[r30:causedBy]->(o2)
+SET r30.text = 'Người bệnh tiểu đường dễ ngứa da do máu lưu thông kém.'
+
+MERGE (o1:symptom {id: 'ngứa_symptom'})
+MERGE (o2:organ {id: 'phần_dưới_của_chân_organ'})
+MERGE (o1)-[r31:locatedIn]->(o2)
+SET r31.text = 'Trong những trường hợp này, ngứa có nhiều khả năng xảy ra ở phần dưới của chân.'
+
+MERGE (o1:symptom {id: 'ngứa_da_symptom'})
+MERGE (o2:cause {id: 'các_sợi_thần_kinh_ở_lớp_ngoài_của_da_bị_tổn_thương_cause'})
+MERGE (o1)-[r32:causedBy]->(o2)
+SET r32.text = 'Đôi khi, ngứa da xảy ra do các sợi thần kinh ở lớp ngoài của da bị tổn thương.'
+
+MERGE (o1:cause {id: 'lượng_đường_trong_máu_cao_cause'})
+MERGE (o2:cause {id: 'tổn_thương_các_sợi_thần_kinh_cause'})
+MERGE (o1)-[r33:causes]->(o2)
+SET r33.text = 'Khi lượng đường trong máu cao làm tổn thương các sợi thần kinh, đặc biệt ở bàn chân, bàn tay sẽ gây biến chứng đa dây thần kinh hoặc bệnh thần kinh ngoại biên khiến người bệnh tiểu đường ngứa da.'
+
+MERGE (o1:cause {id: 'tổn_thương_các_sợi_thần_kinh_cause'})
+MERGE (o2:disease {id: 'biến_chứng_đa_dây_thần_kinh_hoặc_bệnh_thần_kinh_ngoại_biên_disease'})
+MERGE (o1)-[r34:causes]->(o2)
+SET r34.text = 'Khi lượng đường trong máu cao làm tổn thương các sợi thần kinh, đặc biệt ở bàn chân, bàn tay sẽ gây biến chứng đa dây thần kinh hoặc bệnh thần kinh ngoại biên khiến người bệnh tiểu đường ngứa da.'
+
+MERGE (o1:disease {id: 'biến_chứng_đa_dây_thần_kinh_hoặc_bệnh_thần_kinh_ngoại_biên_disease'})
+MERGE (o2:symptom {id: 'ngứa_da_symptom'})
+MERGE (o1)-[r35:causes]->(o2)
+SET r35.text = 'Khi lượng đường trong máu cao làm tổn thương các sợi thần kinh, đặc biệt ở bàn chân, bàn tay sẽ gây biến chứng đa dây thần kinh hoặc bệnh thần kinh ngoại biên khiến người bệnh tiểu đường ngứa da.'
+
+MERGE (o1:cause {id: 'lượng_cytokine_(chất_gây_viêm)_cao_cause'})
+MERGE (o2:symptom {id: 'ngứa_da_symptom'})
+MERGE (o1)-[r36:causes]->(o2)
+SET r36.text = 'Người mắc bệnh tiểu đường có lượng cytokine (chất gây viêm) cao trong cơ thể cũng gây ngứa da, tổn thương thần kinh ảnh hưởng đến sức khỏe.'
+
+MERGE (o1:cause {id: 'tổn_thương_thần_kinh_cause'})
+MERGE (o2:symptom {id: 'sức_khỏe_symptom'})
+MERGE (o1)-[r37:affects]->(o2)
+SET r37.text = 'Người mắc bệnh tiểu đường có lượng cytokine (chất gây viêm) cao trong cơ thể cũng gây ngứa da, tổn thương thần kinh ảnh hưởng đến sức khỏe.'
+
+MERGE (o1:cause {id: 'nồng_độ_cytokine_trong_cơ_thể_tăng_cao_cause'})
+MERGE (o2:disease {id: 'bệnh_thần_kinh_phát_triển_disease'})
+MERGE (o1)-[r38:causes]->(o2)
+SET r38.text = 'Khi nồng độ cytokine trong cơ thể tăng cao, nếu người bệnh tổn thần kinh không được điều trị sớm sẽ dẫn đến bệnh thần kinh phát triển gây ngứa lâu khỏi.'
+
+MERGE (o1:disease {id: 'bệnh_thần_kinh_phát_triển_disease'})
+MERGE (o2:symptom {id: 'ngứa_lâu_khỏi_symptom'})
+MERGE (o1)-[r39:causes]->(o2)
+SET r39.text = 'Khi nồng độ cytokine trong cơ thể tăng cao, nếu người bệnh tổn thần kinh không được điều trị sớm sẽ dẫn đến bệnh thần kinh phát triển gây ngứa lâu khỏi.'
+
+MERGE (o1:symptom {id: 'ngứa_da_symptom'})
+MERGE (o2:disease {id: 'bệnh_tiểu_đường_disease'})
+MERGE (o1)-[r40:isSymptomOf]->(o2)
+SET r40.text = 'Do đó, khi có triệu chứng ngứa da, người bệnh tiểu đường cần đến bác sĩ chuyên khoa Nội tiết - Đái tháo đường và chuyên khoa Da liễu - thẩm mỹ da để kiểm tra sức khỏe, điều trị kịp thời, tránh nguy hiểm sức khỏe.'
+
+MERGE (o1:symptom {id: 'ngứa_da_symptom'})
+MERGE (o2:treatment {id: 'bác_sĩ_chuyên_khoa_nội_tiết_-_đái_tháo_đường_và_chuyên_khoa_da_liễu_-_thẩm_mỹ_da_treatment'})
+MERGE (o1)-[r41:treatedBy]->(o2)
+SET r41.text = 'Do đó, khi có triệu chứng ngứa da, người bệnh tiểu đường cần đến bác sĩ chuyên khoa Nội tiết - Đái tháo đường và chuyên khoa Da liễu - thẩm mỹ da để kiểm tra sức khỏe, điều trị kịp thời, tránh nguy hiểm sức khỏe.'
+
+MERGE (o1:test {id: 'kiểm_tra_đường_huyết_test'})
+MERGE (o2:lifestyle {id: 'kiểm_soát_lượng_đường_trong_máu_lifestyle'})
+MERGE (o1)-[r42:relatedTo]->(o2)
+SET r42.text = 'Người bệnh tiểu đường nên kiểm tra đường huyết thường xuyên để kiểm soát lượng đường trong máu tốt hơn.'
+
+MERGE (o1:symptom {id: 'ngứa_da_symptom'})
+MERGE (o2:disease {id: 'bệnh_tiểu_đường_disease'})
+MERGE (o1)-[r43:isSymptomOf]->(o2)
+SET r43.text = 'Ngứa da ở người bệnh tiểu đường thường xảy ra cục bộ hơn toàn thân.'
+
+MERGE (o1:symptom {id: 'ngứa_da_symptom'})
+MERGE (o2:organ {id: 'da_đầu__mắt_cá_chân__bàn_chân__thân_hoặc_cơ_quan_sinh_dục_organ'})
+MERGE (o1)-[r44:locatedIn]->(o2)
+SET r44.text = 'Những bộ phận dễ bị ngứa da bao gồm: da đầu, mắt cá chân, bàn chân, thân hoặc cơ quan sinh dục.'
+
+MERGE (o1:symptom {id: 'ngứa_symptom'})
+MERGE (o2:disease {id: 'da_khô_hoặc_bệnh_thần_kinh_tiểu_đường_disease'})
+MERGE (o1)-[r45:associatedWith]->(o2)
+SET r45.text = 'Ngứa thường gặp ở người bệnh tiểu đường có da khô hoặc bệnh thần kinh tiểu đường.'
+
+MERGE (o1:symptom {id: 'ngứa_symptom'})
+MERGE (o2:disease {id: 'bệnh_tiểu_đường_hoặc_tiền_tiểu_đường_disease'})
+MERGE (o1)-[r46:isSymptomOf]->(o2)
+SET r46.text = 'Ngứa có thể là triệu chứng của bệnh tiểu đường hoặc tiền tiểu đường (có lượng đường trong máu cao gần đạt mức tiểu đường) (5).'
+
+MERGE (o1:symptom {id: 'da_khô__da_mất_nước_symptom'})
+MERGE (o2:cause {id: 'lượng_đường_(glucose)_trong_máu_quá_cao_cause'})
+MERGE (o1)-[r47:isSymptomOf]->(o2)
+SET r47.text = 'Khi lượng đường (glucose) trong máu quá cao. Cơ thể người bệnh sẽ cố gắng đào thải chúng bằng cách đẩy chất lỏng ra khỏi tế bào để tạo nhiều nước tiểu hơn nhằm giải phóng đường qua nước tiểu nên làm cho da khô, da mất nước dễ gây ngứa.'
+
+MERGE (o1:symptom {id: 'ngứa_symptom'})
+MERGE (o2:cause {id: 'lượng_đường_(glucose)_trong_máu_quá_cao_cause'})
+MERGE (o1)-[r48:isSymptomOf]->(o2)
+SET r48.text = 'Khi lượng đường (glucose) trong máu quá cao. Cơ thể người bệnh sẽ cố gắng đào thải chúng bằng cách đẩy chất lỏng ra khỏi tế bào để tạo nhiều nước tiểu hơn nhằm giải phóng đường qua nước tiểu nên làm cho da khô, da mất nước dễ gây ngứa.'
+
+MERGE (o1:symptom {id: 'ngứa_symptom'})
+MERGE (o2:cause {id: 'lượng_đường_trong_máu_cao_cause'})
+MERGE (o1)-[r49:isSymptomOf]->(o2)
+SET r49.text = 'Lượng đường trong máu cao sẽ làm tổn thương hàng rào bảo vệ da (lớp ngoài cùng của da bảo vệ các mô dưới da) khiến da phản ứng với các chất kích thích bằng cách ngứa.'
+
+MERGE (o1:symptom {id: 'tổn_thương_hàng_rào_bảo_vệ_da_symptom'})
+MERGE (o2:cause {id: 'lượng_đường_trong_máu_cao_cause'})
+MERGE (o1)-[r50:isSymptomOf]->(o2)
+SET r50.text = 'Lượng đường trong máu cao sẽ làm tổn thương hàng rào bảo vệ da (lớp ngoài cùng của da bảo vệ các mô dưới da) khiến da phản ứng với các chất kích thích bằng cách ngứa.'
+
+MERGE (o1:symptom {id: 'tổn_thương_da_symptom'})
+MERGE (o2:disease {id: 'tiểu_đường_disease'})
+MERGE (o1)-[r51:isSymptomOf]->(o2)
+SET r51.text = 'Nếu người bệnh tiểu đường gãi liên tục sẽ làm tổn thương da, thậm chí dẫn đến nhiễm trùng.'
+
+MERGE (o1:symptom {id: 'nhiễm_trùng_symptom'})
+MERGE (o2:disease {id: 'tiểu_đường_disease'})
+MERGE (o1)-[r52:isSymptomOf]->(o2)
+SET r52.text = 'Nếu người bệnh tiểu đường gãi liên tục sẽ làm tổn thương da, thậm chí dẫn đến nhiễm trùng.'
+
+MERGE (o1:symptom {id: 'ngứa_da_symptom'})
+MERGE (o2:cause {id: 'nồng_độ_glucose_(đường)_cao_trong_máu_cause'})
+MERGE (o1)-[r53:isSymptomOf]->(o2)
+SET r53.text = 'Nồng độ glucose (đường) cao trong máu cũng kích hoạt phản ứng của hệ miễn dịch trong cơ thể giải phóng các cytokine (tác nhân gây viêm) gây ngứa da.'
+
+MERGE (o1:symptom {id: 'tổn_thương_lớp_niêm_mạc_của_mạch_máu_symptom'})
+MERGE (o2:disease {id: 'tiểu_đường_disease'})
+MERGE (o1)-[r54:isSymptomOf]->(o2)
+SET r54.text = 'Bệnh tiểu đường ảnh hưởng đến hệ tuần hoàn trong cơ thể bằng cách làm tổn thương lớp niêm mạc của mạch máu khiến máu lưu thông kém, chất dinh dưỡng vận chuyển không hiệu quả dẫn đến bệnh thần kinh tiểu đường, tổn thương thần kinh.'
+
+MERGE (o1:symptom {id: 'máu_lưu_thông_kém_symptom'})
+MERGE (o2:disease {id: 'tiểu_đường_disease'})
+MERGE (o1)-[r55:isSymptomOf]->(o2)
+SET r55.text = 'Bệnh tiểu đường ảnh hưởng đến hệ tuần hoàn trong cơ thể bằng cách làm tổn thương lớp niêm mạc của mạch máu khiến máu lưu thông kém, chất dinh dưỡng vận chuyển không hiệu quả dẫn đến bệnh thần kinh tiểu đường, tổn thương thần kinh.'
+
+MERGE (o1:symptom {id: 'chất_dinh_dưỡng_vận_chuyển_không_hiệu_quả_symptom'})
+MERGE (o2:disease {id: 'tiểu_đường_disease'})
+MERGE (o1)-[r56:isSymptomOf]->(o2)
+SET r56.text = 'Bệnh tiểu đường ảnh hưởng đến hệ tuần hoàn trong cơ thể bằng cách làm tổn thương lớp niêm mạc của mạch máu khiến máu lưu thông kém, chất dinh dưỡng vận chuyển không hiệu quả dẫn đến bệnh thần kinh tiểu đường, tổn thương thần kinh.'
+
+MERGE (o1:disease {id: 'bệnh_thần_kinh_tiểu_đường_disease'})
+MERGE (o2:disease {id: 'tiểu_đường_disease'})
+MERGE (o1)-[r57:isSymptomOf]->(o2)
+SET r57.text = 'Bệnh tiểu đường ảnh hưởng đến hệ tuần hoàn trong cơ thể bằng cách làm tổn thương lớp niêm mạc của mạch máu khiến máu lưu thông kém, chất dinh dưỡng vận chuyển không hiệu quả dẫn đến bệnh thần kinh tiểu đường, tổn thương thần kinh.'
+
+MERGE (o1:symptom {id: 'tổn_thương_thần_kinh_symptom'})
+MERGE (o2:disease {id: 'tiểu_đường_disease'})
+MERGE (o1)-[r58:isSymptomOf]->(o2)
+SET r58.text = 'Bệnh tiểu đường ảnh hưởng đến hệ tuần hoàn trong cơ thể bằng cách làm tổn thương lớp niêm mạc của mạch máu khiến máu lưu thông kém, chất dinh dưỡng vận chuyển không hiệu quả dẫn đến bệnh thần kinh tiểu đường, tổn thương thần kinh.'
+
+MERGE (o1:symptom {id: 'tổn_thương_symptom'})
+MERGE (o2:disease {id: 'tiểu_đường_disease'})
+MERGE (o1)-[r59:isSymptomOf]->(o2)
+SET r59.text = 'Đặc biệt, bàn chân người bệnh tiểu đường dễ tổn thương nhất do giảm tuần hoàn.'
+
+MERGE (o1:symptom {id: 'giảm_tuần_hoàn_symptom'})
+MERGE (o2:disease {id: 'tiểu_đường_disease'})
+MERGE (o1)-[r60:isSymptomOf]->(o2)
+SET r60.text = 'Đặc biệt, bàn chân người bệnh tiểu đường dễ tổn thương nhất do giảm tuần hoàn.'
+
+MERGE (o1:symptom {id: 'ngứa_symptom'})
+MERGE (o2:disease {id: 'thần_kinh_tiểu_đường_disease'})
+MERGE (o1)-[r61:isSymptomOf]->(o2)
+SET r61.text = 'Người bệnh thần kinh tiểu đường thường gây ngứa nhiều ở cẳng chân nên người bệnh cần vệ sinh bàn chân thường xuyên, chăm sóc đôi chân khỏe mạnh, tránh để trầy xước da gây nhiễm trùng, nguy hiểm sức khỏe.'
+
+MERGE (o1:treatment {id: 'vệ_sinh_bàn_chân_thường_xuyên_treatment'})
+MERGE (o2:disease {id: 'thần_kinh_tiểu_đường_disease'})
+MERGE (o1)-[r62:treatedBy]->(o2)
+SET r62.text = 'Người bệnh thần kinh tiểu đường thường gây ngứa nhiều ở cẳng chân nên người bệnh cần vệ sinh bàn chân thường xuyên, chăm sóc đôi chân khỏe mạnh, tránh để trầy xước da gây nhiễm trùng, nguy hiểm sức khỏe.'
+
+MERGE (o1:treatment {id: 'chăm_sóc_đôi_chân_khỏe_mạnh_treatment'})
+MERGE (o2:disease {id: 'thần_kinh_tiểu_đường_disease'})
+MERGE (o1)-[r63:treatedBy]->(o2)
+SET r63.text = 'Người bệnh thần kinh tiểu đường thường gây ngứa nhiều ở cẳng chân nên người bệnh cần vệ sinh bàn chân thường xuyên, chăm sóc đôi chân khỏe mạnh, tránh để trầy xước da gây nhiễm trùng, nguy hiểm sức khỏe.'
+
+MERGE (o1:treatment {id: 'tránh_để_trầy_xước_da_treatment'})
+MERGE (o2:disease {id: 'thần_kinh_tiểu_đường_disease'})
+MERGE (o1)-[r64:treatedBy]->(o2)
+SET r64.text = 'Người bệnh thần kinh tiểu đường thường gây ngứa nhiều ở cẳng chân nên người bệnh cần vệ sinh bàn chân thường xuyên, chăm sóc đôi chân khỏe mạnh, tránh để trầy xước da gây nhiễm trùng, nguy hiểm sức khỏe.'
+
+MERGE (o1:symptom {id: 'nhiễm_nấm_symptom'})
+MERGE (o2:disease {id: 'tiểu_đường_disease'})
+MERGE (o1)-[r65:isSymptomOf]->(o2)
+SET r65.text = 'Bệnh tiểu đường có sức đề kháng yếu nên dễ nhiễm nấm hơn.'
+
+MERGE (o1:symptom {id: 'sự_phát_triển_quá_mức_của_nấm_men_trong_âm_đạo_symptom'})
+MERGE (o2:cause {id: 'nồng_độ_glucose_cao_trong_máu_và_nước_tiểu_cause'})
+MERGE (o1)-[r66:isSymptomOf]->(o2)
+SET r66.text = 'Nồng độ glucose cao trong máu và nước tiểu sẽ dẫn đến sự phát triển quá mức của nấm men trong âm đạo.'
+
+MERGE (o1:symptom {id: 'ngứa_symptom'})
+MERGE (o2:disease {id: 'nhiễm_nấm_men_âm_đạo_disease'})
+MERGE (o1)-[r67:isSymptomOf]->(o2)
+SET r67.text = 'Nhiễm nấm men âm đạo có thể gây ngứa rất khó chịu, ảnh hưởng đến sức khỏe, chất lượng cuộc sống của người bệnh.'
+
+MERGE (o1:symptom {id: 'ảnh_hưởng_đến_sức_khỏe_symptom'})
+MERGE (o2:disease {id: 'nhiễm_nấm_men_âm_đạo_disease'})
+MERGE (o1)-[r68:isSymptomOf]->(o2)
+SET r68.text = 'Nhiễm nấm men âm đạo có thể gây ngứa rất khó chịu, ảnh hưởng đến sức khỏe, chất lượng cuộc sống của người bệnh.'
+
+MERGE (o1:symptom {id: 'ảnh_hưởng_đến_chất_lượng_cuộc_sống_symptom'})
+MERGE (o2:disease {id: 'nhiễm_nấm_men_âm_đạo_disease'})
+MERGE (o1)-[r69:isSymptomOf]->(o2)
+SET r69.text = 'Nhiễm nấm men âm đạo có thể gây ngứa rất khó chịu, ảnh hưởng đến sức khỏe, chất lượng cuộc sống của người bệnh.'
+
+MERGE (o1:disease {id: 'tiểu_đường_disease'})
+MERGE (o2:organ {id: 'hệ_tuần_hoàn_organ'})
+MERGE (o1)-[r70:affects]->(o2)
+SET r70.text = 'Bệnh tiểu đường ảnh hưởng đến hệ tuần hoàn trong cơ thể bằng cách làm tổn thương lớp niêm mạc của mạch máu khiến máu lưu thông kém, chất dinh dưỡng vận chuyển không hiệu quả dẫn đến bệnh thần kinh tiểu đường, tổn thương thần kinh.'
+
+MERGE (o1:disease {id: 'tiểu_đường_disease'})
+MERGE (o2:organ {id: 'mạch_máu_organ'})
+MERGE (o1)-[r71:affects]->(o2)
+SET r71.text = 'Bệnh tiểu đường ảnh hưởng đến hệ tuần hoàn trong cơ thể bằng cách làm tổn thương lớp niêm mạc của mạch máu khiến máu lưu thông kém, chất dinh dưỡng vận chuyển không hiệu quả dẫn đến bệnh thần kinh tiểu đường, tổn thương thần kinh.'
+
+MERGE (o1:disease {id: 'tiểu_đường_disease'})
+MERGE (o2:organ {id: 'thần_kinh_organ'})
+MERGE (o1)-[r72:affects]->(o2)
+SET r72.text = 'Bệnh tiểu đường ảnh hưởng đến hệ tuần hoàn trong cơ thể bằng cách làm tổn thương lớp niêm mạc của mạch máu khiến máu lưu thông kém, chất dinh dưỡng vận chuyển không hiệu quả dẫn đến bệnh thần kinh tiểu đường, tổn thương thần kinh.'
+
+MERGE (o1:disease {id: 'tiểu_đường_disease'})
+MERGE (o2:organ {id: 'bàn_chân_organ'})
+MERGE (o1)-[r73:affects]->(o2)
+SET r73.text = 'Đặc biệt, bàn chân người bệnh tiểu đường dễ tổn thương nhất do giảm tuần hoàn.'
+
+MERGE (o1:lifestyle {id: 'chăm_sóc_da_tốt_lifestyle'})
+MERGE (o2:treatment {id: 'kiểm_soát_tình_trạng_bệnh_treatment'})
+MERGE (o1)-[r74:relatedTo]->(o2)
+SET r74.text = 'Người bệnh tiểu đường chăm sóc da tốt cũng rất quan trọng trong việc kiểm soát tình trạng bệnh.'
+
+MERGE (o1:disease {id: 'người_bệnh_disease'})
+MERGE (o2:treatment {id: 'hướng_dẫn__phác_đồ_điều_trị_treatment'})
+MERGE (o1)-[r75:treatedBy]->(o2)
+SET r75.text = 'Người bệnh cần thực hiện theo hướng dẫn, phác đồ điều trị của bác sĩ để quản lý lượng đường trong máu, bảo vệ sức khỏe tốt hơn.'
+
+MERGE (o1:treatment {id: 'quản_lý_lượng_đường_trong_máu_treatment'})
+MERGE (o2:treatment {id: 'kiểm_soát_tình_trạng_bệnh_treatment'})
+MERGE (o1)-[r76:relatedTo]->(o2)
+SET r76.text = 'Người bệnh cần thực hiện theo hướng dẫn, phác đồ điều trị của bác sĩ để quản lý lượng đường trong máu, bảo vệ sức khỏe tốt hơn.'
+
+MERGE (o1:disease {id: 'bệnh_tiểu_đường_disease'})
+MERGE (o2:treatment {id: 'kiểm_soát_tốt_treatment'})
+MERGE (o1)-[r77:treatedBy]->(o2)
+SET r77.text = 'Khi bệnh tiểu đường được kiểm soát tốt, toàn bộ cơ thể, cả da cũng khỏe mạnh chống lại được những tác nhân gây bệnh.'
+
+MERGE (o1:organ {id: 'da_organ'})
+MERGE (o2:cause {id: 'tác_nhân_gây_bệnh_cause'})
+MERGE (o1)-[r78:affects]->(o2)
+SET r78.text = 'Khi bệnh tiểu đường được kiểm soát tốt, toàn bộ cơ thể, cả da cũng khỏe mạnh chống lại được những tác nhân gây bệnh.'
+
+MERGE (o1:symptom {id: 'ngứa_da_symptom'})
+MERGE (o2:disease {id: 'tiểu_đường_disease'})
+MERGE (o1)-[r79:isSymptomOf]->(o2)
+SET r79.text = 'Sau đây là một số giải pháp dành cho người tiểu đường bị ngứa da giúp giữ cho da khỏe mạnh, mềm mại, tránh nhiễm trùng như:'
+
+MERGE (o1:treatment {id: 'kem_dưỡng_ẩm_dạng_kem_treatment'})
+MERGE (o2:symptom {id: 'ngứa_da_symptom'})
+MERGE (o1)-[r80:treatedBy]->(o2)
+SET r80.text = 'Người bệnh nên dưỡng ẩm bằng cách sử dụng kem dưỡng ẩm dạng kem 2 lần/ngày để da luôn đủ độ ẩm, khỏe mạnh hơn.'
+
+MERGE (o1:lifestyle {id: 'giữ_cho_da_luôn_sạch_sẽ_lifestyle'})
+MERGE (o2:symptom {id: 'ngứa_da_symptom'})
+MERGE (o1)-[r81:relatedTo]->(o2)
+SET r81.text = 'Giữ cho da luôn sạch sẽ, lau khô da sau khi tắm, rửa.'
+
+MERGE (o1:lifestyle {id: 'tắm_quá_nhiều_lần_trong_ngày_lifestyle'})
+MERGE (o2:symptom {id: 'ngứa_da_symptom'})
+MERGE (o1)-[r82:aggravatedBy]->(o2)
+SET r82.text = 'Không nên tắm quá nhiều lần trong ngày hay sử dụng xà phòng có mùi thơm vì các hóa chất trong các sản phẩm này dễ làm cho da khô hoặc kích ứng.'
+
+MERGE (o1:treatment {id: 'xà_phòng_có_mùi_thơm_treatment'})
+MERGE (o2:symptom {id: 'ngứa_da_symptom'})
+MERGE (o1)-[r83:aggravatedBy]->(o2)
+SET r83.text = 'Không nên tắm quá nhiều lần trong ngày hay sử dụng xà phòng có mùi thơm vì các hóa chất trong các sản phẩm này dễ làm cho da khô hoặc kích ứng.'
+
+MERGE (o1:treatment {id: 'xà_phòng_không_sút_treatment'})
+MERGE (o2:symptom {id: 'ngứa_da_symptom'})
+MERGE (o1)-[r84:treatedBy]->(o2)
+SET r84.text = 'Người bệnh nên chọn loại xà phòng không sút (sans savon, soap free, alkaline free); xà phòng dịu nhẹ (gentle wash , gentle cleanser), không mùi để chăm sóc da.'
+
+MERGE (o1:treatment {id: 'xà_phòng_dịu_nhẹ_treatment'})
+MERGE (o2:symptom {id: 'ngứa_da_symptom'})
+MERGE (o1)-[r85:treatedBy]->(o2)
+SET r85.text = 'Người bệnh nên chọn loại xà phòng không sút (sans savon, soap free, alkaline free); xà phòng dịu nhẹ (gentle wash , gentle cleanser), không mùi để chăm sóc da.'
+
+MERGE (o1:lifestyle {id: 'tắm_vòi_hoa_sen_lifestyle'})
+MERGE (o2:symptom {id: 'ngứa_da_symptom'})
+MERGE (o1)-[r86:relatedTo]->(o2)
+SET r86.text = 'Tắm vòi hoa sen hoặc tắm nước ấm (không quá nóng).'
+
+MERGE (o1:lifestyle {id: 'tắm_nước_ấm_lifestyle'})
+MERGE (o2:symptom {id: 'ngứa_da_symptom'})
+MERGE (o1)-[r87:relatedTo]->(o2)
+SET r87.text = 'Tắm vòi hoa sen hoặc tắm nước ấm (không quá nóng).'
+
+MERGE (o1:treatment {id: 'máy_tạo_độ_ẩm_treatment'})
+MERGE (o2:symptom {id: 'ngứa_da_symptom'})
+MERGE (o1)-[r88:treatedBy]->(o2)
+SET r88.text = 'Cân nhắc sử dụng máy tạo độ ẩm tại nhà khi thời tiết lạnh vì không khí lạnh dễ làm khô da.'
+
+MERGE (o1:cause {id: 'thời_tiết_lạnh_cause'})
+MERGE (o2:symptom {id: 'ngứa_da_symptom'})
+MERGE (o1)-[r89:aggravatedBy]->(o2)
+SET r89.text = 'Cân nhắc sử dụng máy tạo độ ẩm tại nhà khi thời tiết lạnh vì không khí lạnh dễ làm khô da.'
+
+MERGE (o1:lifestyle {id: 'quần_áo_từ_len__lụa_lifestyle'})
+MERGE (o2:symptom {id: 'ngứa_da_symptom'})
+MERGE (o1)-[r90:aggravatedBy]->(o2)
+SET r90.text = 'Một số loại quần áo từ len, lụa hay các loại vải khó thấm hút mồ hôi khiến da dễ bị kích ứng gây ngứa da.'
+
+MERGE (o1:lifestyle {id: 'quần_áo_cotton__vải_lanh__lụa_lifestyle'})
+MERGE (o2:symptom {id: 'ngứa_da_symptom'})
+MERGE (o1)-[r91:relatedTo]->(o2)
+SET r91.text = 'Do đó, người bệnh nên mặc các loại quần áo ít kích ứng như: cotton, vải lanh, lụa… để bảo vệ da.'
+
+MERGE (o1:treatment {id: 'sử_dụng_gạc_lạnh_treatment'})
+MERGE (o2:symptom {id: 'ngứa_da_symptom'})
+MERGE (o1)-[r92:treatedBy]->(o2)
+SET r92.text = 'Sử dụng gạc lạnh cũng có hiệu quả giúp giảm ngứa da.'
+
+MERGE (o1:treatment {id: 'đắp_miếng_gạc_lạnh_treatment'})
+MERGE (o2:symptom {id: 'ngứa_da_symptom'})
+MERGE (o1)-[r93:treatedBy]->(o2)
+SET r93.text = 'Người bệnh có thể đắp miếng gạc lạnh lên vùng da bị ngứa đến khi hết ngứa.'
+
+MERGE (o1:treatment {id: 'tắm_nước_lạnh_bằng_vòi_hoa_sen_treatment'})
+MERGE (o2:symptom {id: 'ngứa_da_symptom'})
+MERGE (o1)-[r94:treatedBy]->(o2)
+SET r94.text = 'Trường hợp hết gạc lạnh, người bệnh có thể tắm nước lạnh bằng vòi hoa sen.'
+
+MERGE (o1:lifestyle {id: 'tắm_thường_xuyên_lifestyle'})
+MERGE (o2:symptom {id: 'đường_huyết_không_được_kiểm_soát_tốt_symptom'})
+MERGE (o1)-[r95:aggravatedBy]->(o2)
+SET r95.text = 'Tuy nhiên, người bệnh không nên tắm thường xuyên nếu đường huyết không được kiểm soát tốt.'
+
+MERGE (o1:treatment {id: 'thuốc_mỡ_có_chứa:_camphor__menthol__phenol_hoặc_thuốc_chống_nấm__thuốc_kháng_histamin_treatment'})
+MERGE (o2:symptom {id: 'ngứa_da_symptom'})
+MERGE (o1)-[r96:treatedBy]->(o2)
+SET r96.text = 'Bác sĩ sẽ kê đơn thêm cho người bệnh có mức độ ngứa nặng một số loại thuốc mỡ có chứa: Camphor, Menthol, Phenol hoặc thuốc chống nấm, thuốc kháng histamin…'
+
+MERGE (o1:lifestyle {id: 'dùng_sai_cách_lifestyle'})
+MERGE (o2:symptom {id: 'tác_dụng_phụ_symptom'})
+MERGE (o1)-[r97:aggravatedBy]->(o2)
+SET r97.text = 'Các loại thuốc này có thể gây ra một số tác dụng phụ nếu dùng sai cách, do đó người bệnh cần tuân thủ sử dụng thuốc đúng hướng dẫn của bác sĩ.'
+
+MERGE (o1:food {id: 'thực_phẩm_giàu_chất_xơ__ít_cholesterol__hàm_lượng_chất_béo_bão_hòa_thấp_food'})
+MERGE (o2:symptom {id: 'đường_huyết_symptom'})
+MERGE (o1)-[r98:treatedBy]->(o2)
+SET r98.text = 'Người bệnh tiểu đường nên sử dụng thực phẩm giàu chất xơ, ít cholesterol, hàm lượng chất béo bão hòa thấp để kiểm soát đường huyết tốt hơn.'
+
+MERGE (o1:food {id: 'các_loại_đậu__yến_mạch__trái_mâm_xôi__hạnh_nhân__các_loại_ngũ_cốc__hạt_lanh__cá_béo_(cá_hồi__cá_thu__cá_mòi__cá_trích__rau_lá_xanh__bông_cải__bí_đỏ__dầu_oliu_nguyên_chất_food'})
+MERGE (o2:disease {id: 'tiểu_đường_disease'})
+MERGE (o1)-[r99:relatedTo]->(o2)
+SET r99.text = 'Một số loại thực phẩm lành mạnh người bệnh tiểu đường có thể lựa chọn như: các loại đậu, yến mạch, trái mâm xôi, hạnh nhân, các loại ngũ cốc, hạt lanh, cá béo (cá hồi, cá thu, cá mòi, cá trích, rau lá xanh, bông cải, bí đỏ, dầu oliu nguyên chất…).'
+
+MERGE (o1:food {id: 'ngũ_cốc_đã_qua_tinh_chế_food'})
+MERGE (o2:disease {id: 'bệnh_tim_do_biến_chứng_tiểu_đường_disease'})
+MERGE (o1)-[r100:aggravatedBy]->(o2)
+SET r100.text = 'Tuy nhiên, người bệnh hạn chế dùng ngũ cốc đã qua tinh chế nên sử dụng ngũ cốc nguyên hạt có lớp cám và mầm nguyên vẹn để giảm nguy cơ bệnh tim do biến chứng tiểu đường.'
+
+MERGE (o1:food {id: 'ngũ_cốc_nguyên_hạt_food'})
+MERGE (o2:symptom {id: 'lượng_đường_trong_máu_tăng_cao_symptom'})
+MERGE (o1)-[r101:treatedBy]->(o2)
+SET r101.text = 'Ngũ cốc nguyên hạt bổ sung chất xơ, vitamin B, magiê, selen, ngăn lượng đường trong máu tăng cao, giúp người bệnh cảm thấy no lâu hơn.'
+
+MERGE (o1:lifestyle {id: 'chế_độ_dinh_dưỡng_phù_hợp_lifestyle'})
+MERGE (o2:symptom {id: 'đường_huyết_symptom'})
+MERGE (o1)-[r102:treatedBy]->(o2)
+SET r102.text = 'Người bệnh tiểu đường cần có chế độ dinh dưỡng phù hợp giúp kiểm soát đường huyết tốt hơn.'
+
+MERGE (o1:lifestyle {id: 'tập_thể_dục_lifestyle'})
+MERGE (o2:symptom {id: 'đường_huyết_symptom'})
+MERGE (o1)-[r103:treatedBy]->(o2)
+SET r103.text = 'Tập thể dục không những giúp cơ thể tăng cường sức đề kháng mà việc tập luyện thường xuyên còn giúp cơ thể sử dụng insulin tốt hơn, kiểm soát đường huyết ổn định.'

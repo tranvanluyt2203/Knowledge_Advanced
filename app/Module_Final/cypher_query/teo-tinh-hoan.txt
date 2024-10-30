@@ -1,0 +1,820 @@
+
+MERGE (o1:organ {id: 'tinh_hoàn_organ'})
+MERGE (o2:organ {id: 'nam_giới_organ'})
+MERGE (o1)-[r0:locatedIn]->(o2)
+SET r0.text = 'Tinh hoàn là “nhà máy sản xuất tinh trùng” đồng thời là cơ quan vô cùng quan trọng với nam giới.'
+
+MERGE (o1:disease {id: 'teo_tinh_hoàn_disease'})
+MERGE (o2:disease {id: 'biến_chứng_quai_bị_disease'})
+MERGE (o1)-[r1:causedBy]->(o2)
+SET r1.text = 'Teo tinh hoàn do biến chứng quai bị, giãn tĩnh mạch thừng tinh, tuổi tác, tinh hoàn lạc chỗ…khiến nam giới đứng trước nguy cơ vô sinh.'
+
+MERGE (o1:disease {id: 'teo_tinh_hoàn_disease'})
+MERGE (o2:disease {id: 'giãn_tĩnh_mạch_thừng_tinh_disease'})
+MERGE (o1)-[r2:causedBy]->(o2)
+SET r2.text = 'Teo tinh hoàn do biến chứng quai bị, giãn tĩnh mạch thừng tinh, tuổi tác, tinh hoàn lạc chỗ…khiến nam giới đứng trước nguy cơ vô sinh.'
+
+MERGE (o1:disease {id: 'teo_tinh_hoàn_disease'})
+MERGE (o2:cause {id: 'tuổi_tác_cause'})
+MERGE (o1)-[r3:causedBy]->(o2)
+SET r3.text = 'Teo tinh hoàn do biến chứng quai bị, giãn tĩnh mạch thừng tinh, tuổi tác, tinh hoàn lạc chỗ…khiến nam giới đứng trước nguy cơ vô sinh.'
+
+MERGE (o1:disease {id: 'teo_tinh_hoàn_disease'})
+MERGE (o2:disease {id: 'tinh_hoàn_lạc_chỗ_disease'})
+MERGE (o1)-[r4:causedBy]->(o2)
+SET r4.text = 'Teo tinh hoàn do biến chứng quai bị, giãn tĩnh mạch thừng tinh, tuổi tác, tinh hoàn lạc chỗ…khiến nam giới đứng trước nguy cơ vô sinh.'
+
+MERGE (o1:disease {id: 'teo_tinh_hoàn_disease'})
+MERGE (o2:disease {id: 'vô_sinh_disease'})
+MERGE (o1)-[r5:isSymptomOf]->(o2)
+SET r5.text = 'Teo tinh hoàn do biến chứng quai bị, giãn tĩnh mạch thừng tinh, tuổi tác, tinh hoàn lạc chỗ…khiến nam giới đứng trước nguy cơ vô sinh.'
+
+MERGE (o1:disease {id: 'teo_tinh_hoàn_disease'})
+MERGE (o2:symptom {id: 'sức_khỏe_sinh_sản_symptom'})
+MERGE (o1)-[r6:affects]->(o2)
+SET r6.text = 'Kết quả teo tinh hoàn là điều không nam giới nào mong muốn, tinh hoàn bị teo ảnh hưởng không chỉ sức khỏe sinh sản, tình dục mà còn tâm lý, nhiều người đứng trước nguy cơ “mất cả chì lẫn chài” về cả khả năng làm cha và “bản lĩnh” đàn ông.'
+
+MERGE (o1:disease {id: 'teo_tinh_hoàn_disease'})
+MERGE (o2:symptom {id: 'tình_dục_symptom'})
+MERGE (o1)-[r7:affects]->(o2)
+SET r7.text = 'Kết quả teo tinh hoàn là điều không nam giới nào mong muốn, tinh hoàn bị teo ảnh hưởng không chỉ sức khỏe sinh sản, tình dục mà còn tâm lý, nhiều người đứng trước nguy cơ “mất cả chì lẫn chài” về cả khả năng làm cha và “bản lĩnh” đàn ông.'
+
+MERGE (o1:disease {id: 'teo_tinh_hoàn_disease'})
+MERGE (o2:symptom {id: 'tâm_lý_symptom'})
+MERGE (o1)-[r8:affects]->(o2)
+SET r8.text = 'Kết quả teo tinh hoàn là điều không nam giới nào mong muốn, tinh hoàn bị teo ảnh hưởng không chỉ sức khỏe sinh sản, tình dục mà còn tâm lý, nhiều người đứng trước nguy cơ “mất cả chì lẫn chài” về cả khả năng làm cha và “bản lĩnh” đàn ông.'
+
+MERGE (o1:disease {id: 'teo_tinh_hoàn_disease'})
+MERGE (o2:symptom {id: 'khả_năng_làm_cha_symptom'})
+MERGE (o1)-[r9:affects]->(o2)
+SET r9.text = 'Kết quả teo tinh hoàn là điều không nam giới nào mong muốn, tinh hoàn bị teo ảnh hưởng không chỉ sức khỏe sinh sản, tình dục mà còn tâm lý, nhiều người đứng trước nguy cơ “mất cả chì lẫn chài” về cả khả năng làm cha và “bản lĩnh” đàn ông.'
+
+MERGE (o1:disease {id: 'teo_tinh_hoàn_disease'})
+MERGE (o2:symptom {id: 'bản_lĩnh_đàn_ông_symptom'})
+MERGE (o1)-[r10:affects]->(o2)
+SET r10.text = 'Kết quả teo tinh hoàn là điều không nam giới nào mong muốn, tinh hoàn bị teo ảnh hưởng không chỉ sức khỏe sinh sản, tình dục mà còn tâm lý, nhiều người đứng trước nguy cơ “mất cả chì lẫn chài” về cả khả năng làm cha và “bản lĩnh” đàn ông.'
+
+MERGE (o1:disease {id: 'teo_tinh_hoàn_disease'})
+MERGE (o2:treatment {id: 'điều_trị_treatment'})
+MERGE (o1)-[r11:treatedBy]->(o2)
+SET r11.text = 'Tuy nhiên với sự phát triển của y học hiện nay bệnh nhân vẫn có thể điều trị và có con chính chủ.'
+
+MERGE (o1:disease {id: 'teo_tinh_hoàn_disease'})
+MERGE (o2:symptom {id: 'tinh_hoàn_bị_teo_lại_symptom'})
+MERGE (o1)-[r12:isSymptomOf]->(o2)
+SET r12.text = 'Teo tinh hoàn là hiện tượng tinh hoàn của người nam bị teo lại.'
+
+MERGE (o1:organ {id: 'tinh_hoàn_organ'})
+MERGE (o2:organ {id: 'nam_giới_organ'})
+MERGE (o1)-[r13:locatedIn]->(o2)
+SET r13.text = 'Mỗi nam giới sẽ có hai tinh hoàn và có hình dạng như quả trứng.'
+
+MERGE (o1:organ {id: 'tinh_hoàn_organ'})
+MERGE (o2:organ {id: 'bìu_organ'})
+MERGE (o1)-[r14:locatedIn]->(o2)
+SET r14.text = 'Hai tinh hoàn được bao bọc bởi bìu.'
+
+MERGE (o1:organ {id: 'bìu_organ'})
+MERGE (o2:cause {id: 'nhiệt_độ_cause'})
+MERGE (o1)-[r15:affects]->(o2)
+SET r15.text = 'Bìu có chức năng điều hòa nhiệt độ xung quanh hai tinh hoàn như nếu ở nhiệt độ lạnh thì phần bìu sẽ co lại và giãn ra khi tiếp xúc với nhiệt độ cao hơn.'
+
+MERGE (o1:disease {id: 'teo_tinh_hoàn_disease'})
+MERGE (o2:cause {id: 'chấn_thương_cause'})
+MERGE (o1)-[r16:causedBy]->(o2)
+SET r16.text = 'Tình trạng này có thể xảy ra do chấn thương, giãn tĩnh mạch thừng tinh, biến chứng viêm tinh hoàn sau quai bị…'
+
+MERGE (o1:disease {id: 'teo_tinh_hoàn_disease'})
+MERGE (o2:disease {id: 'giãn_tĩnh_mạch_thừng_tinh_disease'})
+MERGE (o1)-[r17:causedBy]->(o2)
+SET r17.text = 'Tình trạng này có thể xảy ra do chấn thương, giãn tĩnh mạch thừng tinh, biến chứng viêm tinh hoàn sau quai bị…'
+
+MERGE (o1:disease {id: 'teo_tinh_hoàn_disease'})
+MERGE (o2:disease {id: 'viêm_tinh_hoàn_sau_quai_bị_disease'})
+MERGE (o1)-[r18:causedBy]->(o2)
+SET r18.text = 'Tình trạng này có thể xảy ra do chấn thương, giãn tĩnh mạch thừng tinh, biến chứng viêm tinh hoàn sau quai bị…'
+
+MERGE (o1:disease {id: 'teo_tinh_hoàn_disease'})
+MERGE (o2:symptom {id: 'sinh_lý_symptom'})
+MERGE (o1)-[r19:affects]->(o2)
+SET r19.text = 'Theo bác sĩ Triệu Vỹ có nhiều nguyên nhân, việc teo tinh hoàn ảnh hưởng nhiều đến sinh lý, giảm ham muốn, rối loạn cương thậm chí là liệt dương và vô sinh nam.'
+
+MERGE (o1:disease {id: 'teo_tinh_hoàn_disease'})
+MERGE (o2:symptom {id: 'giảm_ham_muốn_symptom'})
+MERGE (o1)-[r20:affects]->(o2)
+SET r20.text = 'Theo bác sĩ Triệu Vỹ có nhiều nguyên nhân, việc teo tinh hoàn ảnh hưởng nhiều đến sinh lý, giảm ham muốn, rối loạn cương thậm chí là liệt dương và vô sinh nam.'
+
+MERGE (o1:disease {id: 'teo_tinh_hoàn_disease'})
+MERGE (o2:symptom {id: 'rối_loạn_cương_symptom'})
+MERGE (o1)-[r21:affects]->(o2)
+SET r21.text = 'Theo bác sĩ Triệu Vỹ có nhiều nguyên nhân, việc teo tinh hoàn ảnh hưởng nhiều đến sinh lý, giảm ham muốn, rối loạn cương thậm chí là liệt dương và vô sinh nam.'
+
+MERGE (o1:disease {id: 'teo_tinh_hoàn_disease'})
+MERGE (o2:symptom {id: 'liệt_dương_symptom'})
+MERGE (o1)-[r22:affects]->(o2)
+SET r22.text = 'Theo bác sĩ Triệu Vỹ có nhiều nguyên nhân, việc teo tinh hoàn ảnh hưởng nhiều đến sinh lý, giảm ham muốn, rối loạn cương thậm chí là liệt dương và vô sinh nam.'
+
+MERGE (o1:disease {id: 'teo_tinh_hoàn_disease'})
+MERGE (o2:disease {id: 'vô_sinh_nam_disease'})
+MERGE (o1)-[r23:isSymptomOf]->(o2)
+SET r23.text = 'Theo bác sĩ Triệu Vỹ có nhiều nguyên nhân, việc teo tinh hoàn ảnh hưởng nhiều đến sinh lý, giảm ham muốn, rối loạn cương thậm chí là liệt dương và vô sinh nam.'
+
+MERGE (o1:disease {id: 'mãn_dục_nam_disease'})
+MERGE (o2:cause {id: 'giảm_nội_tiết_tố_sinh_dục_cause'})
+MERGE (o1)-[r24:causedBy]->(o2)
+SET r24.text = 'Giống như phụ nữ phải trải qua giai đoạn mãn kinh, nam giới cũng có tình trạng giảm nội tiết tố sinh dục gây suy sinh dục hay còn gọi là mãn dục nam.'
+
+MERGE (o1:cause {id: 'testosterone_cause'})
+MERGE (o2:cause {id: 'nồng_độ_nội_tiết_nam_cause'})
+MERGE (o1)-[r25:affects]->(o2)
+SET r25.text = 'Nồng độ testosterone của người nam sẽ cao nhất ở thời điểm năm 25 tuổi và sau 30 tuổi nồng độ nội tiết nam sẽ giảm dần từ 0,8-1,4% mỗi năm.'
+
+MERGE (o1:cause {id: 'testosterone_thấp_cause'})
+MERGE (o2:disease {id: 'tinh_hoàn_bị_teo_disease'})
+MERGE (o1)-[r26:causes]->(o2)
+SET r26.text = 'Lượng testosterone thấp có thể làm cho tinh hoàn bị teo.'
+
+MERGE (o1:cause {id: 'mất_cân_bằng_hormone_cause'})
+MERGE (o2:disease {id: 'teo_tinh_hoàn_disease'})
+MERGE (o1)-[r27:causes]->(o2)
+SET r27.text = 'Việc mất cân bằng hormone có thể gây ra teo tinh hoàn.'
+
+MERGE (o1:cause {id: 'testosterone_cause'})
+MERGE (o2:disease {id: 'tinh_hoàn_bị_teo_lại_disease'})
+MERGE (o1)-[r28:causes]->(o2)
+SET r28.text = 'Nếu cơ thể sản xuất ít testosterone, tinh hoàn có thể bị teo lại.'
+
+MERGE (o1:treatment {id: 'liệu_pháp_thay_thế_testosterone_treatment'})
+MERGE (o2:disease {id: 'teo_tinh_hoàn_disease'})
+MERGE (o1)-[r29:causes]->(o2)
+SET r29.text = 'Liệu pháp thay thế testosterone có thể làm teo tinh hoàn.'
+
+MERGE (o1:treatment {id: 'liệu_pháp_thay_thế_testosterone_treatment'})
+MERGE (o2:cause {id: 'hormone_gonadotropin_cause'})
+MERGE (o1)-[r30:affects]->(o2)
+SET r30.text = 'Liệu pháp này có thể làm ngưng sản xuất hormone gonadotropin.'
+
+MERGE (o1:cause {id: 'gonadotropin_cause'})
+MERGE (o2:organ {id: 'tuyến_yên_organ'})
+MERGE (o1)-[r31:affects]->(o2)
+SET r31.text = 'Nếu gonadotropin không được giải phóng, tuyến yên sẽ ngừng sản xuất hormone luteinizing, làm cho tinh hoàn ngừng sản xuất testosterone.'
+
+MERGE (o1:organ {id: 'tuyến_yên_organ'})
+MERGE (o2:cause {id: 'hormone_luteinizing_cause'})
+MERGE (o1)-[r32:affects]->(o2)
+SET r32.text = 'Nếu gonadotropin không được giải phóng, tuyến yên sẽ ngừng sản xuất hormone luteinizing, làm cho tinh hoàn ngừng sản xuất testosterone.'
+
+MERGE (o1:cause {id: 'hormone_luteinizing_cause'})
+MERGE (o2:organ {id: 'tinh_hoàn_organ'})
+MERGE (o1)-[r33:affects]->(o2)
+SET r33.text = 'Nếu gonadotropin không được giải phóng, tuyến yên sẽ ngừng sản xuất hormone luteinizing, làm cho tinh hoàn ngừng sản xuất testosterone.'
+
+MERGE (o1:organ {id: 'tinh_hoàn_organ'})
+MERGE (o2:cause {id: 'testosterone_cause'})
+MERGE (o1)-[r34:affects]->(o2)
+SET r34.text = 'Nếu gonadotropin không được giải phóng, tuyến yên sẽ ngừng sản xuất hormone luteinizing, làm cho tinh hoàn ngừng sản xuất testosterone.'
+
+MERGE (o1:treatment {id: 'steroid_đồng_hóa_treatment'})
+MERGE (o2:disease {id: 'teo_tinh_hoàn_disease'})
+MERGE (o1)-[r35:causes]->(o2)
+SET r35.text = 'Dùng steroid đồng hóa hoặc dùng estrogen có thể gây ra teo tinh hoàn tương tự như liệu pháp thay thế testosterone.'
+
+MERGE (o1:treatment {id: 'estrogen_treatment'})
+MERGE (o2:disease {id: 'teo_tinh_hoàn_disease'})
+MERGE (o1)-[r36:causes]->(o2)
+SET r36.text = 'Dùng steroid đồng hóa hoặc dùng estrogen có thể gây ra teo tinh hoàn tương tự như liệu pháp thay thế testosterone.'
+
+MERGE (o1:disease {id: 'viêm_tinh_hoàn_disease'})
+MERGE (o2:symptom {id: 'đau_symptom'})
+MERGE (o1)-[r37:isSymptomOf]->(o2)
+SET r37.text = 'Viêm tinh hoàn gây nên tình trạng đau và sưng to ở tinh hoàn.'
+
+MERGE (o1:disease {id: 'viêm_tinh_hoàn_disease'})
+MERGE (o2:symptom {id: 'sưng_to_ở_tinh_hoàn_symptom'})
+MERGE (o1)-[r38:isSymptomOf]->(o2)
+SET r38.text = 'Viêm tinh hoàn gây nên tình trạng đau và sưng to ở tinh hoàn.'
+
+MERGE (o1:disease {id: 'tinh_hoàn_bị_teo_disease'})
+MERGE (o2:disease {id: 'viêm_tinh_hoàn_sau_khi_bị_mắc_quai_bị_disease'})
+MERGE (o1)-[r39:causedBy]->(o2)
+SET r39.text = 'Có nhiều nguyên nhân dẫn đến tinh hoàn bị teo nhưng phần lớn do biến chứng viêm tinh hoàn sau khi bị mắc quai bị.'
+
+MERGE (o1:cause {id: 'virus_quai_bị_cause'})
+MERGE (o2:organ {id: 'nhu_mô_tinh_hoàn_organ'})
+MERGE (o1)-[r40:affects]->(o2)
+SET r40.text = 'Virus quai bị có ái tính cao với nhu mô tinh hoàn, gây phù nề nhu mô, sung huyết ống sinh tinh dẫn tới hoại tử kèm theo quá trình hyalin hóa ống sinh tinh và xơ teo tinh hoàn.'
+
+MERGE (o1:cause {id: 'virus_quai_bị_cause'})
+MERGE (o2:symptom {id: 'phù_nề_nhu_mô_symptom'})
+MERGE (o1)-[r41:causes]->(o2)
+SET r41.text = 'Virus quai bị có ái tính cao với nhu mô tinh hoàn, gây phù nề nhu mô, sung huyết ống sinh tinh dẫn tới hoại tử kèm theo quá trình hyalin hóa ống sinh tinh và xơ teo tinh hoàn.'
+
+MERGE (o1:cause {id: 'virus_quai_bị_cause'})
+MERGE (o2:symptom {id: 'sung_huyết_ống_sinh_tinh_symptom'})
+MERGE (o1)-[r42:causes]->(o2)
+SET r42.text = 'Virus quai bị có ái tính cao với nhu mô tinh hoàn, gây phù nề nhu mô, sung huyết ống sinh tinh dẫn tới hoại tử kèm theo quá trình hyalin hóa ống sinh tinh và xơ teo tinh hoàn.'
+
+MERGE (o1:cause {id: 'virus_quai_bị_cause'})
+MERGE (o2:symptom {id: 'hoại_tử_symptom'})
+MERGE (o1)-[r43:causes]->(o2)
+SET r43.text = 'Virus quai bị có ái tính cao với nhu mô tinh hoàn, gây phù nề nhu mô, sung huyết ống sinh tinh dẫn tới hoại tử kèm theo quá trình hyalin hóa ống sinh tinh và xơ teo tinh hoàn.'
+
+MERGE (o1:cause {id: 'virus_quai_bị_cause'})
+MERGE (o2:symptom {id: 'hyalin_hóa_ống_sinh_tinh_symptom'})
+MERGE (o1)-[r44:causes]->(o2)
+SET r44.text = 'Virus quai bị có ái tính cao với nhu mô tinh hoàn, gây phù nề nhu mô, sung huyết ống sinh tinh dẫn tới hoại tử kèm theo quá trình hyalin hóa ống sinh tinh và xơ teo tinh hoàn.'
+
+MERGE (o1:cause {id: 'virus_quai_bị_cause'})
+MERGE (o2:disease {id: 'xơ_teo_tinh_hoàn_disease'})
+MERGE (o1)-[r45:causes]->(o2)
+SET r45.text = 'Virus quai bị có ái tính cao với nhu mô tinh hoàn, gây phù nề nhu mô, sung huyết ống sinh tinh dẫn tới hoại tử kèm theo quá trình hyalin hóa ống sinh tinh và xơ teo tinh hoàn.'
+
+MERGE (o1:cause {id: 'tổn_thương_cause'})
+MERGE (o2:symptom {id: 'số_lượng_tinh_trùng_symptom'})
+MERGE (o1)-[r46:affects]->(o2)
+SET r46.text = 'Số lượng và chất lượng tinh trùng có thể bị ảnh hưởng tùy mức độ tổn thương, nặng nề nhất có thể dẫn tới không có tinh trùng trong tinh dịch.'
+
+MERGE (o1:cause {id: 'tổn_thương_cause'})
+MERGE (o2:symptom {id: 'chất_lượng_tinh_trùng_symptom'})
+MERGE (o1)-[r47:affects]->(o2)
+SET r47.text = 'Số lượng và chất lượng tinh trùng có thể bị ảnh hưởng tùy mức độ tổn thương, nặng nề nhất có thể dẫn tới không có tinh trùng trong tinh dịch.'
+
+MERGE (o1:cause {id: 'tổn_thương_cause'})
+MERGE (o2:symptom {id: 'không_có_tinh_trùng_trong_tinh_dịch_symptom'})
+MERGE (o1)-[r48:causes]->(o2)
+SET r48.text = 'Số lượng và chất lượng tinh trùng có thể bị ảnh hưởng tùy mức độ tổn thương, nặng nề nhất có thể dẫn tới không có tinh trùng trong tinh dịch.'
+
+MERGE (o1:disease {id: 'viêm_tinh_hoàn_do_quai_bị_disease'})
+MERGE (o2:disease {id: 'vô_sinh_disease'})
+MERGE (o1)-[r49:isSymptomOf]->(o2)
+SET r49.text = 'Viêm tinh hoàn do quai bị là một trong những nguyên nhân có thể gây vô sinh, vì vậy cần phải nâng cao ý thức cộng đồng về các biện pháp phòng chống quai bị, cũng như cách xử trí các trường hợp viêm tinh hoàn do quai bị.'
+
+MERGE (o1:disease {id: 'quai_bị_disease'})
+MERGE (o2:disease {id: 'viêm_tinh_hoàn_disease'})
+MERGE (o1)-[r50:causes]->(o2)
+SET r50.text = 'Thông thường khoảng 10% người bị quai bị sẽ viêm tinh hoàn và 10% người bị viêm tinh hoàn sẽ dẫn đến teo tinh hoàn.'
+
+MERGE (o1:disease {id: 'viêm_tinh_hoàn_disease'})
+MERGE (o2:disease {id: 'teo_tinh_hoàn_disease'})
+MERGE (o1)-[r51:causes]->(o2)
+SET r51.text = 'Thông thường khoảng 10% người bị quai bị sẽ viêm tinh hoàn và 10% người bị viêm tinh hoàn sẽ dẫn đến teo tinh hoàn.'
+
+MERGE (o1:symptom {id: 'tinh_hoàn_bị_sưng_to_symptom'})
+MERGE (o2:disease {id: 'viêm_tinh_hoàn_disease'})
+MERGE (o1)-[r52:isSymptomOf]->(o2)
+SET r52.text = 'Lúc này tinh hoàn bị sưng to, các tế bào mầm bị tổn thương và không thể tự phục hồi dẫn đến việc bị xơ hóa và teo nhỏ.'
+
+MERGE (o1:symptom {id: 'tế_bào_mầm_bị_tổn_thương_symptom'})
+MERGE (o2:disease {id: 'viêm_tinh_hoàn_disease'})
+MERGE (o1)-[r53:isSymptomOf]->(o2)
+SET r53.text = 'Lúc này tinh hoàn bị sưng to, các tế bào mầm bị tổn thương và không thể tự phục hồi dẫn đến việc bị xơ hóa và teo nhỏ.'
+
+MERGE (o1:cause {id: 'tế_bào_mầm_bị_tổn_thương_cause'})
+MERGE (o2:symptom {id: 'xơ_hóa_symptom'})
+MERGE (o1)-[r54:causes]->(o2)
+SET r54.text = 'Lúc này tinh hoàn bị sưng to, các tế bào mầm bị tổn thương và không thể tự phục hồi dẫn đến việc bị xơ hóa và teo nhỏ.'
+
+MERGE (o1:cause {id: 'tế_bào_mầm_bị_tổn_thương_cause'})
+MERGE (o2:symptom {id: 'teo_nhỏ_symptom'})
+MERGE (o1)-[r55:causes]->(o2)
+SET r55.text = 'Lúc này tinh hoàn bị sưng to, các tế bào mầm bị tổn thương và không thể tự phục hồi dẫn đến việc bị xơ hóa và teo nhỏ.'
+
+MERGE (o1:disease {id: 'teo_1_bên_tinh_hoàn_disease'})
+MERGE (o2:organ {id: 'tinh_hoàn_còn_lại_organ'})
+MERGE (o1)-[r56:affects]->(o2)
+SET r56.text = 'Trong trường hợp teo 1 bên tinh hoàn, tinh hoàn còn lại có thể phát triển to lên để bù trừ cho bên bị teo.'
+
+MERGE (o1:disease {id: 'viêm_tinh_hoàn_disease'})
+MERGE (o2:cause {id: 'nhiễm_tạp_trùng_cause'})
+MERGE (o1)-[r57:causedBy]->(o2)
+SET r57.text = 'Bên cạnh đó viêm tinh hoàn còn có thể do nhiễm tạp trùng, vi trùng lao, nhiễm chlamydia, HIV/AIDS nhiễm trùng đường tiết niệu hoặc do quá trình đặt ống thông, các dụng cụ y tế khác vào dương vật.'
+
+MERGE (o1:disease {id: 'viêm_tinh_hoàn_disease'})
+MERGE (o2:cause {id: 'vi_trùng_lao_cause'})
+MERGE (o1)-[r58:causedBy]->(o2)
+SET r58.text = 'Bên cạnh đó viêm tinh hoàn còn có thể do nhiễm tạp trùng, vi trùng lao, nhiễm chlamydia, HIV/AIDS nhiễm trùng đường tiết niệu hoặc do quá trình đặt ống thông, các dụng cụ y tế khác vào dương vật.'
+
+MERGE (o1:disease {id: 'viêm_tinh_hoàn_disease'})
+MERGE (o2:cause {id: 'nhiễm_chlamydia_cause'})
+MERGE (o1)-[r59:causedBy]->(o2)
+SET r59.text = 'Bên cạnh đó viêm tinh hoàn còn có thể do nhiễm tạp trùng, vi trùng lao, nhiễm chlamydia, HIV/AIDS nhiễm trùng đường tiết niệu hoặc do quá trình đặt ống thông, các dụng cụ y tế khác vào dương vật.'
+
+MERGE (o1:disease {id: 'viêm_tinh_hoàn_disease'})
+MERGE (o2:disease {id: 'hiv/aids_nhiễm_trùng_đường_tiết_niệu_disease'})
+MERGE (o1)-[r60:causedBy]->(o2)
+SET r60.text = 'Bên cạnh đó viêm tinh hoàn còn có thể do nhiễm tạp trùng, vi trùng lao, nhiễm chlamydia, HIV/AIDS nhiễm trùng đường tiết niệu hoặc do quá trình đặt ống thông, các dụng cụ y tế khác vào dương vật.'
+
+MERGE (o1:disease {id: 'viêm_tinh_hoàn_disease'})
+MERGE (o2:treatment {id: 'đặt_ống_thông_treatment'})
+MERGE (o1)-[r61:causedBy]->(o2)
+SET r61.text = 'Bên cạnh đó viêm tinh hoàn còn có thể do nhiễm tạp trùng, vi trùng lao, nhiễm chlamydia, HIV/AIDS nhiễm trùng đường tiết niệu hoặc do quá trình đặt ống thông, các dụng cụ y tế khác vào dương vật.'
+
+MERGE (o1:disease {id: 'viêm_tinh_hoàn_disease'})
+MERGE (o2:treatment {id: 'dụng_cụ_y_tế_treatment'})
+MERGE (o1)-[r62:causedBy]->(o2)
+SET r62.text = 'Bên cạnh đó viêm tinh hoàn còn có thể do nhiễm tạp trùng, vi trùng lao, nhiễm chlamydia, HIV/AIDS nhiễm trùng đường tiết niệu hoặc do quá trình đặt ống thông, các dụng cụ y tế khác vào dương vật.'
+
+MERGE (o1:disease {id: 'xoắn_tinh_hoàn_disease'})
+MERGE (o2:symptom {id: 'đau_dữ_dội_symptom'})
+MERGE (o1)-[r63:isSymptomOf]->(o2)
+SET r63.text = 'Xoắn tinh hoàn thường hiểu hiện bằng những cơn đau dữ dội và đột ngột ở tinh hoàn, điều này xảy ra khi tinh hoàn tự xoay quanh trục gây tắc nghẽn đột ngột thừng tinh, lưu lượng máu đến tinh hoàn bị giảm hoặc tắc.'
+
+MERGE (o1:disease {id: 'xoắn_tinh_hoàn_disease'})
+MERGE (o2:symptom {id: 'đau_đột_ngột_symptom'})
+MERGE (o1)-[r64:isSymptomOf]->(o2)
+SET r64.text = 'Xoắn tinh hoàn thường hiểu hiện bằng những cơn đau dữ dội và đột ngột ở tinh hoàn, điều này xảy ra khi tinh hoàn tự xoay quanh trục gây tắc nghẽn đột ngột thừng tinh, lưu lượng máu đến tinh hoàn bị giảm hoặc tắc.'
+
+MERGE (o1:disease {id: 'xoắn_tinh_hoàn_disease'})
+MERGE (o2:cause {id: 'tinh_hoàn_tự_xoay_quanh_trục_cause'})
+MERGE (o1)-[r65:causedBy]->(o2)
+SET r65.text = 'Xoắn tinh hoàn thường hiểu hiện bằng những cơn đau dữ dội và đột ngột ở tinh hoàn, điều này xảy ra khi tinh hoàn tự xoay quanh trục gây tắc nghẽn đột ngột thừng tinh, lưu lượng máu đến tinh hoàn bị giảm hoặc tắc.'
+
+MERGE (o1:disease {id: 'xoắn_tinh_hoàn_disease'})
+MERGE (o2:symptom {id: 'tắc_nghẽn_đột_ngột_thừng_tinh_symptom'})
+MERGE (o1)-[r66:causes]->(o2)
+SET r66.text = 'Xoắn tinh hoàn thường hiểu hiện bằng những cơn đau dữ dội và đột ngột ở tinh hoàn, điều này xảy ra khi tinh hoàn tự xoay quanh trục gây tắc nghẽn đột ngột thừng tinh, lưu lượng máu đến tinh hoàn bị giảm hoặc tắc.'
+
+MERGE (o1:disease {id: 'xoắn_tinh_hoàn_disease'})
+MERGE (o2:symptom {id: 'giảm_lưu_lượng_máu_symptom'})
+MERGE (o1)-[r67:causes]->(o2)
+SET r67.text = 'Xoắn tinh hoàn thường hiểu hiện bằng những cơn đau dữ dội và đột ngột ở tinh hoàn, điều này xảy ra khi tinh hoàn tự xoay quanh trục gây tắc nghẽn đột ngột thừng tinh, lưu lượng máu đến tinh hoàn bị giảm hoặc tắc.'
+
+MERGE (o1:disease {id: 'xoắn_tinh_hoàn_disease'})
+MERGE (o2:symptom {id: 'tắc_nghẽn_symptom'})
+MERGE (o1)-[r68:causes]->(o2)
+SET r68.text = 'Xoắn tinh hoàn thường hiểu hiện bằng những cơn đau dữ dội và đột ngột ở tinh hoàn, điều này xảy ra khi tinh hoàn tự xoay quanh trục gây tắc nghẽn đột ngột thừng tinh, lưu lượng máu đến tinh hoàn bị giảm hoặc tắc.'
+
+MERGE (o1:disease {id: 'xoắn_tinh_hoàn_disease'})
+MERGE (o2:symptom {id: 'tổn_thương_vĩnh_viễn_ở_tinh_hoàn_symptom'})
+MERGE (o1)-[r69:causes]->(o2)
+SET r69.text = 'Nếu tình trạng xoắn tinh hoàn không được phát hiện và điều trị kịp thời sẽ gây tổn thương vĩnh viễn ở tinh hoàn, gây teo thậm chị phải cắt bỏ.'
+
+MERGE (o1:disease {id: 'xoắn_tinh_hoàn_disease'})
+MERGE (o2:disease {id: 'teo_tinh_hoàn_disease'})
+MERGE (o1)-[r70:causes]->(o2)
+SET r70.text = 'Nếu tình trạng xoắn tinh hoàn không được phát hiện và điều trị kịp thời sẽ gây tổn thương vĩnh viễn ở tinh hoàn, gây teo thậm chị phải cắt bỏ.'
+
+MERGE (o1:disease {id: 'xoắn_tinh_hoàn_disease'})
+MERGE (o2:treatment {id: 'cắt_bỏ_treatment'})
+MERGE (o1)-[r71:treatedBy]->(o2)
+SET r71.text = 'Nếu tình trạng xoắn tinh hoàn không được phát hiện và điều trị kịp thời sẽ gây tổn thương vĩnh viễn ở tinh hoàn, gây teo thậm chị phải cắt bỏ.'
+
+MERGE (o1:lifestyle {id: 'lạm_dụng_rượu_bia_lifestyle'})
+MERGE (o2:disease {id: 'teo_tinh_hoàn_disease'})
+MERGE (o1)-[r72:causes]->(o2)
+SET r72.text = 'Lạm dụng rượu bia, sử dụng bia rượu nhiều và liên tục trong một thời gian sẽ gây teo tinh hoàn gián tiếp.'
+
+MERGE (o1:food {id: 'rượu_food'})
+MERGE (o2:organ {id: 'mô_tinh_hoàn_organ'})
+MERGE (o1)-[r73:affects]->(o2)
+SET r73.text = 'Khi rượu được hấp thu vào cơ thể, rượu sẽ trải qua quá trình chuyển hóa và sinh ra những sản phẩm phụ gây tổn thương ở mô tinh hoàn, màng tinh hoàn và các tế bào mầm ở tinh hoàn…'
+
+MERGE (o1:food {id: 'rượu_food'})
+MERGE (o2:organ {id: 'màng_tinh_hoàn_organ'})
+MERGE (o1)-[r74:affects]->(o2)
+SET r74.text = 'Khi rượu được hấp thu vào cơ thể, rượu sẽ trải qua quá trình chuyển hóa và sinh ra những sản phẩm phụ gây tổn thương ở mô tinh hoàn, màng tinh hoàn và các tế bào mầm ở tinh hoàn…'
+
+MERGE (o1:food {id: 'rượu_food'})
+MERGE (o2:organ {id: 'tế_bào_mầm_organ'})
+MERGE (o1)-[r75:affects]->(o2)
+SET r75.text = 'Khi rượu được hấp thu vào cơ thể, rượu sẽ trải qua quá trình chuyển hóa và sinh ra những sản phẩm phụ gây tổn thương ở mô tinh hoàn, màng tinh hoàn và các tế bào mầm ở tinh hoàn…'
+
+MERGE (o1:cause {id: 'oxy_hóa_cause'})
+MERGE (o2:symptom {id: 'trao_đổi_chất_symptom'})
+MERGE (o1)-[r76:affects]->(o2)
+SET r76.text = 'Bên cạnh đó sự oxy hóa của các enzym còn ngăn chặn quá trình trao đổi chất, khiến những tế bào đã bị tổn thương không có khả năng hồi phục.'
+
+MERGE (o1:cause {id: 'oxy_hóa_cause'})
+MERGE (o2:cause {id: 'testosterone_cause'})
+MERGE (o1)-[r77:affects]->(o2)
+SET r77.text = 'Các chất oxy hóa trong quá trình chuyển hóa rượu cũng ức chế sản sinh testosterone, nam giới nghiện rượu có mức testosterone thấp hơn, chất tự nhiên opioid sản sinh nhiều hơn và làm giảm hormone vùng dưới đồi và tuyến yên, ảnh hưởng đến việc sản xuất hormone nam.'
+
+MERGE (o1:food {id: 'rượu_food'})
+MERGE (o2:cause {id: 'testosterone_cause'})
+MERGE (o1)-[r78:affects]->(o2)
+SET r78.text = 'Các chất oxy hóa trong quá trình chuyển hóa rượu cũng ức chế sản sinh testosterone, nam giới nghiện rượu có mức testosterone thấp hơn, chất tự nhiên opioid sản sinh nhiều hơn và làm giảm hormone vùng dưới đồi và tuyến yên, ảnh hưởng đến việc sản xuất hormone nam.'
+
+MERGE (o1:food {id: 'rượu_food'})
+MERGE (o2:cause {id: 'hormone_vùng_dưới_đồi_cause'})
+MERGE (o1)-[r79:affects]->(o2)
+SET r79.text = 'Các chất oxy hóa trong quá trình chuyển hóa rượu cũng ức chế sản sinh testosterone, nam giới nghiện rượu có mức testosterone thấp hơn, chất tự nhiên opioid sản sinh nhiều hơn và làm giảm hormone vùng dưới đồi và tuyến yên, ảnh hưởng đến việc sản xuất hormone nam.'
+
+MERGE (o1:symptom {id: 'co_rút_một_bên_hoặc_cả_hai_bên_tinh_hoàn_symptom'})
+MERGE (o2:disease {id: 'teo_tinh_hoàn_disease'})
+MERGE (o1)-[r80:isSymptomOf]->(o2)
+SET r80.text = 'Dấu hiệu teo tinh hoàn thường khá dễ nhận biết, dấu hiệu chính là tình trạng co rút một bên hoặc cả hai bên tinh hoàn.'
+
+MERGE (o1:disease {id: 'teo_tinh_hoàn_disease'})
+MERGE (o2:symptom {id: 'co_rút_một_bên_hoặc_cả_hai_bên_tinh_hoàn_symptom'})
+MERGE (o1)-[r81:isSymptomOf]->(o2)
+SET r81.text = 'Dấu hiệu teo tinh hoàn thường khá dễ nhận biết, dấu hiệu chính là tình trạng co rút một bên hoặc cả hai bên tinh hoàn.'
+
+MERGE (o1:disease {id: 'teo_tinh_hoàn_disease'})
+MERGE (o2:lifestyle {id: 'tuổi_lifestyle'})
+MERGE (o1)-[r82:associatedWith]->(o2)
+SET r82.text = 'Tùy vào độ tuổi của người nam mà có thể đi kèm một số triệu chứng khác nhau.'
+
+MERGE (o1:disease {id: 'teo_tinh_hoàn_disease'})
+MERGE (o2:lifestyle {id: 'tuổi_dậy_thì_lifestyle'})
+MERGE (o1)-[r83:associatedWith]->(o2)
+SET r83.text = 'Trước tuổi dậy thì: dấu hiệu teo tinh hoàn trước tuổi dậy thì thường có những triệu chứng như các đặc điểm sinh dục phụ kém phát triển: lông mặt, lông mu ít.'
+
+MERGE (o1:symptom {id: 'lông_mặt__lông_mu_ít_symptom'})
+MERGE (o2:disease {id: 'teo_tinh_hoàn_disease'})
+MERGE (o1)-[r84:isSymptomOf]->(o2)
+SET r84.text = 'Trước tuổi dậy thì: dấu hiệu teo tinh hoàn trước tuổi dậy thì thường có những triệu chứng như các đặc điểm sinh dục phụ kém phát triển: lông mặt, lông mu ít.'
+
+MERGE (o1:disease {id: 'teo_tinh_hoàn_disease'})
+MERGE (o2:organ {id: 'sinh_dục_phụ_organ'})
+MERGE (o1)-[r85:affects]->(o2)
+SET r85.text = 'Trước tuổi dậy thì: dấu hiệu teo tinh hoàn trước tuổi dậy thì thường có những triệu chứng như các đặc điểm sinh dục phụ kém phát triển: lông mặt, lông mu ít.'
+
+MERGE (o1:symptom {id: 'tinh_hoàn_teo_nhỏ_symptom'})
+MERGE (o2:disease {id: 'teo_tinh_hoàn_disease'})
+MERGE (o1)-[r86:isSymptomOf]->(o2)
+SET r86.text = 'Sau tuổi dậy thì: khi sờ nắn phát hiện tinh hoàn teo nhỏ hơn so với kích thước tinh hoàn bình thường (kích thước trung bình là 4-5cm và nặng khoảng 20g).'
+
+MERGE (o1:disease {id: 'teo_tinh_hoàn_disease'})
+MERGE (o2:organ {id: 'tinh_hoàn_organ'})
+MERGE (o1)-[r87:affects]->(o2)
+SET r87.text = 'Sau tuổi dậy thì: khi sờ nắn phát hiện tinh hoàn teo nhỏ hơn so với kích thước tinh hoàn bình thường (kích thước trung bình là 4-5cm và nặng khoảng 20g).'
+
+MERGE (o1:organ {id: 'tinh_hoàn_organ'})
+MERGE (o2:organ {id: 'cơ_thể_organ'})
+MERGE (o1)-[r88:locatedIn]->(o2)
+SET r88.text = 'Sau tuổi dậy thì: khi sờ nắn phát hiện tinh hoàn teo nhỏ hơn so với kích thước tinh hoàn bình thường (kích thước trung bình là 4-5cm và nặng khoảng 20g).'
+
+MERGE (o1:symptom {id: 'tinh_hoàn_không_căng_symptom'})
+MERGE (o2:disease {id: 'teo_tinh_hoàn_disease'})
+MERGE (o1)-[r89:isSymptomOf]->(o2)
+SET r89.text = 'Sờ vào thấy tinh hoàn không căng.'
+
+MERGE (o1:symptom {id: 'suy_giảm_ham_muốn_tình_dục_symptom'})
+MERGE (o2:disease {id: 'teo_tinh_hoàn_disease'})
+MERGE (o1)-[r90:isSymptomOf]->(o2)
+SET r90.text = 'Nam giới bị suy giảm ham muốn tình dục, giảm khối lượng cơ và lông mặt, lông mu ít.'
+
+MERGE (o1:symptom {id: 'giảm_khối_lượng_cơ_symptom'})
+MERGE (o2:disease {id: 'teo_tinh_hoàn_disease'})
+MERGE (o1)-[r91:isSymptomOf]->(o2)
+SET r91.text = 'Nam giới bị suy giảm ham muốn tình dục, giảm khối lượng cơ và lông mặt, lông mu ít.'
+
+MERGE (o1:symptom {id: 'lông_mặt__lông_mu_ít_symptom'})
+MERGE (o2:disease {id: 'teo_tinh_hoàn_disease'})
+MERGE (o1)-[r92:isSymptomOf]->(o2)
+SET r92.text = 'Nam giới bị suy giảm ham muốn tình dục, giảm khối lượng cơ và lông mặt, lông mu ít.'
+
+MERGE (o1:disease {id: 'teo_tinh_hoàn_disease'})
+MERGE (o2:organ {id: 'sinh_lý_organ'})
+MERGE (o1)-[r93:affects]->(o2)
+SET r93.text = 'Teo tinh hoàn là bệnh lý nguy hiểm, ảnh hưởng trực tiếp đến sinh lý của người nam, gây giảm ham muốn, rối loạn cương và liệt dương.'
+
+MERGE (o1:symptom {id: 'giảm_ham_muốn_symptom'})
+MERGE (o2:disease {id: 'teo_tinh_hoàn_disease'})
+MERGE (o1)-[r94:isSymptomOf]->(o2)
+SET r94.text = 'Teo tinh hoàn là bệnh lý nguy hiểm, ảnh hưởng trực tiếp đến sinh lý của người nam, gây giảm ham muốn, rối loạn cương và liệt dương.'
+
+MERGE (o1:symptom {id: 'rối_loạn_cương_symptom'})
+MERGE (o2:disease {id: 'teo_tinh_hoàn_disease'})
+MERGE (o1)-[r95:isSymptomOf]->(o2)
+SET r95.text = 'Teo tinh hoàn là bệnh lý nguy hiểm, ảnh hưởng trực tiếp đến sinh lý của người nam, gây giảm ham muốn, rối loạn cương và liệt dương.'
+
+MERGE (o1:symptom {id: 'liệt_dương_symptom'})
+MERGE (o2:disease {id: 'teo_tinh_hoàn_disease'})
+MERGE (o1)-[r96:isSymptomOf]->(o2)
+SET r96.text = 'Teo tinh hoàn là bệnh lý nguy hiểm, ảnh hưởng trực tiếp đến sinh lý của người nam, gây giảm ham muốn, rối loạn cương và liệt dương.'
+
+MERGE (o1:disease {id: 'teo_tinh_hoàn_disease'})
+MERGE (o2:organ {id: 'sản_xuất_testosterone_organ'})
+MERGE (o1)-[r97:affects]->(o2)
+SET r97.text = 'Tinh hoàn bị teo ảnh hưởng trực tiếp đến quá trình sản xuất testosterone và sinh tinh vì vậy nguy cơ hiếm muộn sẽ tăng lên.'
+
+MERGE (o1:disease {id: 'teo_tinh_hoàn_disease'})
+MERGE (o2:organ {id: 'sinh_tinh_organ'})
+MERGE (o1)-[r98:affects]->(o2)
+SET r98.text = 'Tinh hoàn bị teo ảnh hưởng trực tiếp đến quá trình sản xuất testosterone và sinh tinh vì vậy nguy cơ hiếm muộn sẽ tăng lên.'
+
+MERGE (o1:disease {id: 'teo_tinh_hoàn_disease'})
+MERGE (o2:disease {id: 'hiếm_muộn_disease'})
+MERGE (o1)-[r99:causedBy]->(o2)
+SET r99.text = 'Tinh hoàn bị teo ảnh hưởng trực tiếp đến quá trình sản xuất testosterone và sinh tinh vì vậy nguy cơ hiếm muộn sẽ tăng lên.'
+
+MERGE (o1:disease {id: 'teo_tinh_hoàn_disease'})
+MERGE (o2:organ {id: 'hormone_testosterone_organ'})
+MERGE (o1)-[r100:affects]->(o2)
+SET r100.text = 'Rối loạn hormone giới tính: teo tinh hoàn khiến cho bộ phận này bị ảnh hưởng và thậm chí không thể hoạt động được, dẫn đến việc sản xuất hormone testosterone bị ảnh hưởng lâu dài có thể dẫn đến suy dinh dục nam.'
+
+MERGE (o1:disease {id: 'teo_tinh_hoàn_disease'})
+MERGE (o2:disease {id: 'suy_dinh_dục_nam_disease'})
+MERGE (o1)-[r101:causedBy]->(o2)
+SET r101.text = 'Rối loạn hormone giới tính: teo tinh hoàn khiến cho bộ phận này bị ảnh hưởng và thậm chí không thể hoạt động được, dẫn đến việc sản xuất hormone testosterone bị ảnh hưởng lâu dài có thể dẫn đến suy dinh dục nam.'
+
+MERGE (o1:symptom {id: 'giảm_ham_muốn_tình_dục_symptom'})
+MERGE (o2:disease {id: 'teo_tinh_hoàn_disease'})
+MERGE (o1)-[r102:isSymptomOf]->(o2)
+SET r102.text = 'Quá trình sản xuất hormone nam giới bị ảnh hưởng kéo theo đó là ham muốn tình dục của người nam giảm, không còn hứng thú đến việc chăn gối, ảnh hưởng lớn đến đời sống hôn nhân.'
+
+MERGE (o1:disease {id: 'teo_tinh_hoàn_disease'})
+MERGE (o2:organ {id: 'sinh_tinh_organ'})
+MERGE (o1)-[r103:affects]->(o2)
+SET r103.text = 'Giảm khả năng sinh sản: khi tinh hoàn bị teo dẫn đến quá trình sinh tinh bị ảnh hưởng.'
+
+MERGE (o1:disease {id: 'teo_tinh_hoàn_disease'})
+MERGE (o2:disease {id: 'giảm_khả_năng_sinh_sản_disease'})
+MERGE (o1)-[r104:causedBy]->(o2)
+SET r104.text = 'Giảm khả năng sinh sản: khi tinh hoàn bị teo dẫn đến quá trình sinh tinh bị ảnh hưởng. Số lượng tinh trùng của người nam không đảm bảo về chất lượng và số lượng để có thể di chuyển đến nơi có trứng và thụ tinh.'
+
+MERGE (o1:disease {id: 'teo_tinh_hoàn_disease'})
+MERGE (o2:organ {id: 'tinh_trùng_organ'})
+MERGE (o1)-[r105:affects]->(o2)
+SET r105.text = 'Giảm khả năng sinh sản: khi tinh hoàn bị teo dẫn đến quá trình sinh tinh bị ảnh hưởng. Số lượng tinh trùng của người nam không đảm bảo về chất lượng và số lượng để có thể di chuyển đến nơi có trứng và thụ tinh.'
+
+MERGE (o1:disease {id: 'teo_tinh_hoàn_disease'})
+MERGE (o2:disease {id: 'vô_tinh_disease'})
+MERGE (o1)-[r106:causedBy]->(o2)
+SET r106.text = 'Trong một số trường hợp teo tinh hoàn khiến nam giới đối mặt với nguy cơ vô tinh, không có tinh trùng để có thể thụ thai bình thường.'
+
+MERGE (o1:disease {id: 'vô_sinh_disease'})
+MERGE (o2:organ {id: 'tinh_hoàn_organ'})
+MERGE (o1)-[r107:associatedWith]->(o2)
+SET r107.text = 'Thể tích tinh hoàn là một thông số vô cùng quan trọng trong đánh giá bệnh nhân vô sinh không có tinh trùng.'
+
+MERGE (o1:organ {id: 'tinh_hoàn_organ'})
+MERGE (o2:organ {id: 'cơ_thể_organ'})
+MERGE (o1)-[r108:locatedIn]->(o2)
+SET r108.text = 'Kích thước tinh hoàn là một yếu tố tiên lượng khả năng tìm thấy tinh trùng trong tinh hoàn.'
+
+MERGE (o1:organ {id: 'tinh_trùng_organ'})
+MERGE (o2:organ {id: 'tinh_hoàn_organ'})
+MERGE (o1)-[r109:locatedIn]->(o2)
+SET r109.text = 'Kích thước tinh hoàn là một yếu tố tiên lượng khả năng tìm thấy tinh trùng trong tinh hoàn.'
+
+MERGE (o1:disease {id: 'teo_tinh_hoàn_disease'})
+MERGE (o2:test {id: 'thăm_khám_bệnh_sử_test'})
+MERGE (o1)-[r110:diagnosedBy]->(o2)
+SET r110.text = 'Để chẩn đoán teo tinh hoàn, bác sĩ sẽ tiến hành thăm khám bệnh sử, thói quen sinh hoạt tình dục và lối sống của người nam.'
+
+MERGE (o1:disease {id: 'teo_tinh_hoàn_disease'})
+MERGE (o2:lifestyle {id: 'thói_quen_sinh_hoạt_tình_dục_lifestyle'})
+MERGE (o1)-[r111:diagnosedBy]->(o2)
+SET r111.text = 'Để chẩn đoán teo tinh hoàn, bác sĩ sẽ tiến hành thăm khám bệnh sử, thói quen sinh hoạt tình dục và lối sống của người nam.'
+
+MERGE (o1:disease {id: 'teo_tinh_hoàn_disease'})
+MERGE (o2:lifestyle {id: 'lối_sống_lifestyle'})
+MERGE (o1)-[r112:diagnosedBy]->(o2)
+SET r112.text = 'Để chẩn đoán teo tinh hoàn, bác sĩ sẽ tiến hành thăm khám bệnh sử, thói quen sinh hoạt tình dục và lối sống của người nam.'
+
+MERGE (o1:disease {id: 'bệnh_lây_truyền_qua_đường_tình_dục_disease'})
+MERGE (o2:disease {id: 'teo_tinh_hoàn_disease'})
+MERGE (o1)-[r113:associatedWith]->(o2)
+SET r113.text = 'Điều này cung cấp thông tin tổng quan về việc người bệnh có tiền sử mắc các bệnh lây truyền qua đường tình dục, quai bị hay lạm dụng rượu bia hay không.'
+
+MERGE (o1:disease {id: 'quai_bị_disease'})
+MERGE (o2:disease {id: 'teo_tinh_hoàn_disease'})
+MERGE (o1)-[r114:associatedWith]->(o2)
+SET r114.text = 'Điều này cung cấp thông tin tổng quan về việc người bệnh có tiền sử mắc các bệnh lây truyền qua đường tình dục, quai bị hay lạm dụng rượu bia hay không.'
+
+MERGE (o1:lifestyle {id: 'lạm_dụng_rượu_bia_lifestyle'})
+MERGE (o2:disease {id: 'teo_tinh_hoàn_disease'})
+MERGE (o1)-[r115:associatedWith]->(o2)
+SET r115.text = 'Điều này cung cấp thông tin tổng quan về việc người bệnh có tiền sử mắc các bệnh lây truyền qua đường tình dục, quai bị hay lạm dụng rượu bia hay không.'
+
+MERGE (o1:disease {id: 'teo_tinh_hoàn_disease'})
+MERGE (o2:test {id: 'kiểm_tra_kích_thước__cấu_trúc_và_độ_cứng_của_tinh_hoàn_test'})
+MERGE (o1)-[r116:diagnosedBy]->(o2)
+SET r116.text = 'Sau đó, bác sĩ nam khoa sẽ kiểm tra thêm về kích thước, cấu trúc và độ cứng của tinh hoàn.'
+
+MERGE (o1:organ {id: 'tinh_hoàn_organ'})
+MERGE (o2:organ {id: 'cơ_thể_organ'})
+MERGE (o1)-[r117:locatedIn]->(o2)
+SET r117.text = 'Sau đó, bác sĩ nam khoa sẽ kiểm tra thêm về kích thước, cấu trúc và độ cứng của tinh hoàn.'
+
+MERGE (o1:disease {id: 'teo_tinh_hoàn_disease'})
+MERGE (o2:test {id: 'xét_nghiệm_công_thức_máu_test'})
+MERGE (o1)-[r118:diagnosedBy]->(o2)
+SET r118.text = 'Một số xét nghiệm công thức máu, siêu âm tinh hoàn, xét nghiệm nội tiết sẽ được chỉ định để có kết quả cuối cùng về tình trạng của người bệnh.'
+
+MERGE (o1:disease {id: 'teo_tinh_hoàn_disease'})
+MERGE (o2:test {id: 'siêu_âm_tinh_hoàn_test'})
+MERGE (o1)-[r119:diagnosedBy]->(o2)
+SET r119.text = 'Một số xét nghiệm công thức máu, siêu âm tinh hoàn, xét nghiệm nội tiết sẽ được chỉ định để có kết quả cuối cùng về tình trạng của người bệnh.'
+
+MERGE (o1:symptom {id: 'teo_tinh_hoàn_symptom'})
+MERGE (o2:cause {id: 'nguyên_nhân_cause'})
+MERGE (o1)-[r120:causedBy]->(o2)
+SET r120.text = 'Hiện nay việc điều trị teo tinh hoàn phụ thuộc vào nguyên nhân dẫn đến tinh trạng teo.'
+
+MERGE (o1:disease {id: 'nhiễm_trùng_đường_tình_dục_disease'})
+MERGE (o2:symptom {id: 'teo_tinh_hoàn_symptom'})
+MERGE (o1)-[r121:causedBy]->(o2)
+SET r121.text = 'Nếu nguyên nhân xuất phát từ nhiễm trùng đường tình dục hoặc các bệnh nhiễm trùng khác, bác sĩ có thể kê kháng sinh để điều trị nhiễm trùng.'
+
+MERGE (o1:treatment {id: 'kháng_sinh_treatment'})
+MERGE (o2:disease {id: 'nhiễm_trùng_disease'})
+MERGE (o1)-[r122:treatedBy]->(o2)
+SET r122.text = 'Nếu nguyên nhân xuất phát từ nhiễm trùng đường tình dục hoặc các bệnh nhiễm trùng khác, bác sĩ có thể kê kháng sinh để điều trị nhiễm trùng.'
+
+MERGE (o1:symptom {id: 'tổn_thương_nội_tiết_symptom'})
+MERGE (o2:symptom {id: 'teo_tinh_hoàn_symptom'})
+MERGE (o1)-[r123:isSymptomOf]->(o2)
+SET r123.text = 'Theo bác sĩ với những bệnh nhân có dấu hiệu tổn thương nội tiết, giảm ham muốn tình dục do teo tinh hoàn cần thăm khám và thực hiện điều chỉnh nồng độ nội tiết.'
+
+MERGE (o1:symptom {id: 'giảm_ham_muốn_tình_dục_symptom'})
+MERGE (o2:symptom {id: 'teo_tinh_hoàn_symptom'})
+MERGE (o1)-[r124:isSymptomOf]->(o2)
+SET r124.text = 'Theo bác sĩ với những bệnh nhân có dấu hiệu tổn thương nội tiết, giảm ham muốn tình dục do teo tinh hoàn cần thăm khám và thực hiện điều chỉnh nồng độ nội tiết.'
+
+MERGE (o1:symptom {id: 'teo_tinh_hoàn_symptom'})
+MERGE (o2:treatment {id: 'điều_chỉnh_nồng_độ_nội_tiết_treatment'})
+MERGE (o1)-[r125:treatedBy]->(o2)
+SET r125.text = 'Theo bác sĩ với những bệnh nhân có dấu hiệu tổn thương nội tiết, giảm ham muốn tình dục do teo tinh hoàn cần thăm khám và thực hiện điều chỉnh nồng độ nội tiết.'
+
+MERGE (o1:symptom {id: 'teo_tinh_hoàn_symptom'})
+MERGE (o2:treatment {id: 'thuốc_điều_chỉnh_trục_hạ_đồi_-_tuyến_yên_-_sinh_dục_treatment'})
+MERGE (o1)-[r126:treatedBy]->(o2)
+SET r126.text = 'Sau khi thăm khám bác sĩ sẽ có những hướng dẫn về chế độ luyện tập, sử dụng thuốc điều chỉnh trục hạ đồi - tuyến yên - sinh dục chứ không chỉ đơn thuần bổ sung testosterone.'
+
+MERGE (o1:symptom {id: 'teo_tinh_hoàn_symptom'})
+MERGE (o2:treatment {id: 'bổ_sung_testosterone_treatment'})
+MERGE (o1)-[r127:treatedBy]->(o2)
+SET r127.text = 'Sau khi thăm khám bác sĩ sẽ có những hướng dẫn về chế độ luyện tập, sử dụng thuốc điều chỉnh trục hạ đồi - tuyến yên - sinh dục chứ không chỉ đơn thuần bổ sung testosterone.'
+
+MERGE (o1:disease {id: 'tinh_hoàn_lạc_chỗ_disease'})
+MERGE (o2:symptom {id: 'teo_tinh_hoàn_symptom'})
+MERGE (o1)-[r128:causedBy]->(o2)
+SET r128.text = 'Với những bệnh nhân có tinh hoàn bị teo do tinh hoàn lạc chỗ, không nằm ở bìu mà nằm ở bụng có thể chỉ định làm phẫu thuật hạ tinh hoàn.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_hạ_tinh_hoàn_treatment'})
+MERGE (o2:symptom {id: 'teo_tinh_hoàn_symptom'})
+MERGE (o1)-[r129:treatedBy]->(o2)
+SET r129.text = 'Với những bệnh nhân có tinh hoàn bị teo do tinh hoàn lạc chỗ, không nằm ở bìu mà nằm ở bụng có thể chỉ định làm phẫu thuật hạ tinh hoàn.'
+
+MERGE (o1:disease {id: 'giãn_tĩnh_mạch_thừng_tinh_disease'})
+MERGE (o2:symptom {id: 'suy_yếu_đời_sống_tinh_trùng_symptom'})
+MERGE (o1)-[r130:causedBy]->(o2)
+SET r130.text = 'Những bệnh nhân nhân bị giãn tĩnh mạch thừng tinh làm suy yếu đời sống tinh trùng có thể kết hợp vừa làm phẫu thuật tìm tinh trùng vừa kết hợp cột giãn tĩnh mạch thừng tinh.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_tìm_tinh_trùng_treatment'})
+MERGE (o2:symptom {id: 'suy_yếu_đời_sống_tinh_trùng_symptom'})
+MERGE (o1)-[r131:treatedBy]->(o2)
+SET r131.text = 'Những bệnh nhân nhân bị giãn tĩnh mạch thừng tinh làm suy yếu đời sống tinh trùng có thể kết hợp vừa làm phẫu thuật tìm tinh trùng vừa kết hợp cột giãn tĩnh mạch thừng tinh.'
+
+MERGE (o1:treatment {id: 'cột_giãn_tĩnh_mạch_thừng_tinh_treatment'})
+MERGE (o2:symptom {id: 'suy_yếu_đời_sống_tinh_trùng_symptom'})
+MERGE (o1)-[r132:treatedBy]->(o2)
+SET r132.text = 'Những bệnh nhân nhân bị giãn tĩnh mạch thừng tinh làm suy yếu đời sống tinh trùng có thể kết hợp vừa làm phẫu thuật tìm tinh trùng vừa kết hợp cột giãn tĩnh mạch thừng tinh.'
+
+MERGE (o1:treatment {id: 'vi_phẫu_micro-tese_trích_mô_tinh_hoàn_tìm_tinh_trùng_treatment'})
+MERGE (o2:symptom {id: 'teo_tinh_hoàn_symptom'})
+MERGE (o1)-[r133:treatedBy]->(o2)
+SET r133.text = 'Với sự phát triển của kỹ thuật vi phẫu micro-TESE trích mô tinh hoàn tìm tinh trùng, nhiều nam giới teo tinh hoàn, vô tinh vẫn có cơ hội làm cha chính chủ.'
+
+MERGE (o1:treatment {id: 'vi_phẫu_micro-tese_trích_mô_tinh_hoàn_tìm_tinh_trùng_treatment'})
+MERGE (o2:symptom {id: 'vô_tinh_symptom'})
+MERGE (o1)-[r134:treatedBy]->(o2)
+SET r134.text = 'Với sự phát triển của kỹ thuật vi phẫu micro-TESE trích mô tinh hoàn tìm tinh trùng, nhiều nam giới teo tinh hoàn, vô tinh vẫn có cơ hội làm cha chính chủ.'
+
+MERGE (o1:symptom {id: 'teo_tinh_hoàn_symptom'})
+MERGE (o2:disease {id: 'biến_chứng_quai_bị_disease'})
+MERGE (o1)-[r135:causedBy]->(o2)
+SET r135.text = 'IVFTA-HCM tiếp nhận nhiều trường hợp nam giới teo tinh hoàn, gần đây có trường hợp nam giới bị teo tinh hoàn do biến chứng quai bị, tinh hoàn teo nhỏ chỉ còn bằng ¼ so với kích thước bình thường.'
+
+MERGE (o1:symptom {id: 'tinh_hoàn_teo_nhỏ_symptom'})
+MERGE (o2:symptom {id: 'teo_tinh_hoàn_symptom'})
+MERGE (o1)-[r136:isSymptomOf]->(o2)
+SET r136.text = 'IVFTA-HCM tiếp nhận nhiều trường hợp nam giới teo tinh hoàn, gần đây có trường hợp nam giới bị teo tinh hoàn do biến chứng quai bị, tinh hoàn teo nhỏ chỉ còn bằng ¼ so với kích thước bình thường.'
+
+MERGE (o1:treatment {id: 'vi_phẫu_micro-tese_tìm_tinh_trùng_treatment'})
+MERGE (o2:symptom {id: 'teo_tinh_hoàn_symptom'})
+MERGE (o1)-[r137:treatedBy]->(o2)
+SET r137.text = 'Bác sĩ tại IVFTA-HCM đã tiến hành vi phẫu micro-TESE tìm tinh trùng cho tinh hoàn nhỏ bé như hạt lạc và thành công khi tìm được 5 tinh trùng sót lại trong ống sinh tinh bé bằng sợi tóc.'
+
+MERGE (o1:symptom {id: 'tinh_hoàn_nhỏ_bé_symptom'})
+MERGE (o2:symptom {id: 'teo_tinh_hoàn_symptom'})
+MERGE (o1)-[r138:isSymptomOf]->(o2)
+SET r138.text = 'Bác sĩ tại IVFTA-HCM đã tiến hành vi phẫu micro-TESE tìm tinh trùng cho tinh hoàn nhỏ bé như hạt lạc và thành công khi tìm được 5 tinh trùng sót lại trong ống sinh tinh bé bằng sợi tóc.'
+
+MERGE (o1:symptom {id: 'số_tinh_binh_ít_ỏi_symptom'})
+MERGE (o2:symptom {id: 'teo_tinh_hoàn_symptom'})
+MERGE (o1)-[r139:isSymptomOf]->(o2)
+SET r139.text = 'Và hạnh phúc mỉm cười khi hai vợ chồng đã có tin vui nhờ số phôi tạo được từ “số tinh binh ít ỏi” của anh chồng.'
+
+MERGE (o1:symptom {id: 'teo_tinh_hoàn_symptom'})
+MERGE (o2:treatment {id: 'kỹ_thuật_điều_trị_hiện_đại_treatment'})
+MERGE (o1)-[r140:treatedBy]->(o2)
+SET r140.text = 'Nam giới vẫn có cơ hội có con chính chủ nhờ các kỹ thuật điều trị hiện đại.'
+
+MERGE (o1:symptom {id: 'teo_tinh_hoàn_symptom'})
+MERGE (o2:disease {id: 'bệnh_lý_disease'})
+MERGE (o1)-[r141:causedBy]->(o2)
+SET r141.text = 'Có nhiều lý do có thể làm tinh hoàn của nam giới teo nhỏ lại, từ bệnh lý, việc sử dụng steroid đến các bệnh bẩm sinh.'
+
+MERGE (o1:symptom {id: 'teo_tinh_hoàn_symptom'})
+MERGE (o2:lifestyle {id: 'việc_sử_dụng_steroid_lifestyle'})
+MERGE (o1)-[r142:causedBy]->(o2)
+SET r142.text = 'Có nhiều lý do có thể làm tinh hoàn của nam giới teo nhỏ lại, từ bệnh lý, việc sử dụng steroid đến các bệnh bẩm sinh.'
+
+MERGE (o1:symptom {id: 'teo_tinh_hoàn_symptom'})
+MERGE (o2:disease {id: 'bệnh_bẩm_sinh_disease'})
+MERGE (o1)-[r143:causedBy]->(o2)
+SET r143.text = 'Có nhiều lý do có thể làm tinh hoàn của nam giới teo nhỏ lại, từ bệnh lý, việc sử dụng steroid đến các bệnh bẩm sinh.'
+
+MERGE (o1:lifestyle {id: 'chăm_sóc_sức_khỏe_sinh_sản_lifestyle'})
+MERGE (o2:symptom {id: 'teo_tinh_hoàn_symptom'})
+MERGE (o1)-[r144:preventedBy]->(o2)
+SET r144.text = 'Bất kể nguyên nhân gì, nam giới nên nâng cao ý thức về chăm sóc sức khỏe sinh sản.'
+
+MERGE (o1:test {id: 'khám_sức_khỏe_sinh_sản_test'})
+MERGE (o2:symptom {id: 'teo_tinh_hoàn_symptom'})
+MERGE (o1)-[r145:preventedBy]->(o2)
+SET r145.text = 'Hiện nay, phần lớn nam giới ở Việt Nam vẫn khá thờ ơ về việc khám sức khỏe sinh sản hay khám nam khoa định kỳ, nhiều người có thói quen tự điều trị, hay qua chỉ dẫn của người thân, điều này gây ra những hậu quả nặng nề về sau.'
+
+MERGE (o1:test {id: 'khám_nam_khoa_định_kỳ_test'})
+MERGE (o2:symptom {id: 'teo_tinh_hoàn_symptom'})
+MERGE (o1)-[r146:preventedBy]->(o2)
+SET r146.text = 'Hiện nay, phần lớn nam giới ở Việt Nam vẫn khá thờ ơ về việc khám sức khỏe sinh sản hay khám nam khoa định kỳ, nhiều người có thói quen tự điều trị, hay qua chỉ dẫn của người thân, điều này gây ra những hậu quả nặng nề về sau.'
+
+MERGE (o1:treatment {id: 'tiêm_vắc_xin_quai_bị_treatment'})
+MERGE (o2:disease {id: 'bệnh_quai_bị_disease'})
+MERGE (o1)-[r147:preventedBy]->(o2)
+SET r147.text = 'Tiêm vắc xin quai bị để phòng nguy cơ mắc bệnh quai bị.'
+
+MERGE (o1:disease {id: 'biến_chứng_teo_tinh_hoàn_disease'})
+MERGE (o2:disease {id: 'bệnh_quai_bị_disease'})
+MERGE (o1)-[r148:causedBy]->(o2)
+SET r148.text = 'Hiện nay biến chứng teo tinh hoàn do quai bị chiếm tỷ lệ khá cao, được xem là một trong những nguyên nhân chính dẫn tới tình trạng không có tinh trùng trong tinh dịch.'
+
+MERGE (o1:disease {id: 'bệnh_quai_bị_disease'})
+MERGE (o2:symptom {id: 'teo_tinh_hoàn_symptom'})
+MERGE (o1)-[r149:causedBy]->(o2)
+SET r149.text = 'Hiện nay biến chứng teo tinh hoàn do quai bị chiếm tỷ lệ khá cao, được xem là một trong những nguyên nhân chính dẫn tới tình trạng không có tinh trùng trong tinh dịch.'
+
+MERGE (o1:symptom {id: 'không_có_tinh_trùng_trong_tinh_dịch_symptom'})
+MERGE (o2:symptom {id: 'teo_tinh_hoàn_symptom'})
+MERGE (o1)-[r150:isSymptomOf]->(o2)
+SET r150.text = 'Hiện nay biến chứng teo tinh hoàn do quai bị chiếm tỷ lệ khá cao, được xem là một trong những nguyên nhân chính dẫn tới tình trạng không có tinh trùng trong tinh dịch.'
+
+MERGE (o1:treatment {id: 'vắc_xin_phòng_bệnh_quai_bị_treatment'})
+MERGE (o2:disease {id: 'bệnh_quai_bị_disease'})
+MERGE (o1)-[r151:preventedBy]->(o2)
+SET r151.text = 'Hiện nay vắc xin phòng bệnh quai bị thường được kết hợp thành mũi vắc xin 3 trong 1 phòng sởi - quai bị - rubella.'
+
+MERGE (o1:treatment {id: 'tiêm_vắc_xin_treatment'})
+MERGE (o2:symptom {id: 'teo_tinh_hoàn_symptom'})
+MERGE (o1)-[r152:preventedBy]->(o2)
+SET r152.text = 'Phác đồ tiêm khá đơn giản, có thể tiêm cho trẻ từ 12 tháng tuổi trở lên, hiệu quả bảo vệ cao.'
+
+MERGE (o1:lifestyle {id: 'hút_thuốc_lá_lifestyle'})
+MERGE (o2:symptom {id: 'tổn_thương_gen_di_truyền_symptom'})
+MERGE (o1)-[r153:causedBy]->(o2)
+SET r153.text = 'Bỏ thuốc lá vì việc hút thuốc lá làm tổn thương gen di truyền của DNA.'
+
+MERGE (o1:lifestyle {id: 'hút_thuốc_lá_lifestyle'})
+MERGE (o2:symptom {id: 'teo_tinh_hoàn_symptom'})
+MERGE (o1)-[r154:causedBy]->(o2)
+SET r154.text = 'Bỏ thuốc lá vì việc hút thuốc lá làm tổn thương gen di truyền của DNA.'
+
+MERGE (o1:food {id: 'rượu_bia_food'})
+MERGE (o2:symptom {id: 'rối_loạn_chuyển_hóa_symptom'})
+MERGE (o1)-[r155:causedBy]->(o2)
+SET r155.text = 'Hạn chế rượu bia vì đây là một trong những nguyên nhân làm rối loạn chuyển hóa.'
+
+MERGE (o1:food {id: 'rượu_bia_food'})
+MERGE (o2:symptom {id: 'teo_tinh_hoàn_symptom'})
+MERGE (o1)-[r156:causedBy]->(o2)
+SET r156.text = 'Hạn chế rượu bia vì đây là một trong những nguyên nhân làm rối loạn chuyển hóa.'
+
+MERGE (o1:lifestyle {id: 'tập_thể_dục_lifestyle'})
+MERGE (o2:symptom {id: 'teo_tinh_hoàn_symptom'})
+MERGE (o1)-[r157:preventedBy]->(o2)
+SET r157.text = 'Tập thể dụng và vận động thường xuyên, quá trình vận động giúp cơ thể đốt lượng mỡ dư thừa, tăng cường quá trình chuyển hóa cholesterol thành testosterone nội sinh thay vì chuyển hóa thành estrogen.'
+
+MERGE (o1:lifestyle {id: 'chế_độ_dinh_dưỡng_lifestyle'})
+MERGE (o2:symptom {id: 'teo_tinh_hoàn_symptom'})
+MERGE (o1)-[r158:preventedBy]->(o2)
+SET r158.text = 'Chế độ dinh dưỡng cần được chú trọng, chống béo phì, hạn chế nạp tinh bột và tăng cung cấp protein, axit amin thiết yếu cũng như thực phẩm giàu omega3.'
+
+MERGE (o1:disease {id: 'béo_phì_disease'})
+MERGE (o2:symptom {id: 'teo_tinh_hoàn_symptom'})
+MERGE (o1)-[r159:causedBy]->(o2)
+SET r159.text = 'Chế độ dinh dưỡng cần được chú trọng, chống béo phì, hạn chế nạp tinh bột và tăng cung cấp protein, axit amin thiết yếu cũng như thực phẩm giàu omega3.'
+
+MERGE (o1:food {id: 'tinh_bột_food'})
+MERGE (o2:symptom {id: 'teo_tinh_hoàn_symptom'})
+MERGE (o1)-[r160:aggravatedBy]->(o2)
+SET r160.text = 'Chế độ dinh dưỡng cần được chú trọng, chống béo phì, hạn chế nạp tinh bột và tăng cung cấp protein, axit amin thiết yếu cũng như thực phẩm giàu omega3.'
+
+MERGE (o1:food {id: 'protein_food'})
+MERGE (o2:symptom {id: 'teo_tinh_hoàn_symptom'})
+MERGE (o1)-[r161:preventedBy]->(o2)
+SET r161.text = 'Chế độ dinh dưỡng cần được chú trọng, chống béo phì, hạn chế nạp tinh bột và tăng cung cấp protein, axit amin thiết yếu cũng như thực phẩm giàu omega3.'
+
+MERGE (o1:food {id: 'axit_amin_thiết_yếu_food'})
+MERGE (o2:symptom {id: 'teo_tinh_hoàn_symptom'})
+MERGE (o1)-[r162:preventedBy]->(o2)
+SET r162.text = 'Chế độ dinh dưỡng cần được chú trọng, chống béo phì, hạn chế nạp tinh bột và tăng cung cấp protein, axit amin thiết yếu cũng như thực phẩm giàu omega3.'
+
+MERGE (o1:food {id: 'thực_phẩm_giàu_omega3_food'})
+MERGE (o2:symptom {id: 'teo_tinh_hoàn_symptom'})
+MERGE (o1)-[r163:preventedBy]->(o2)
+SET r163.text = 'Chế độ dinh dưỡng cần được chú trọng, chống béo phì, hạn chế nạp tinh bột và tăng cung cấp protein, axit amin thiết yếu cũng như thực phẩm giàu omega3.'

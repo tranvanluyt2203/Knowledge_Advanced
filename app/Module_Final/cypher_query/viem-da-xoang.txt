@@ -1,0 +1,655 @@
+
+MERGE (o1:disease {id: 'viêm_đa_xoang_disease'})
+MERGE (o2:symptom {id: 'khó_chịu_ở_vùng_mũi_xoang_symptom'})
+MERGE (o1)-[r0:isSymptomOf]->(o2)
+SET r0.text = 'Viêm đa xoang là một bệnh lý tai mũi họng thường gặp, gây triệu chứng khó chịu ở vùng mũi xoang, nhưng đôi khi có thể gặp các biến chứng nặng gây mù mắt hay đe dọa tính mạng khi có biến chứng nội sọ như viêm màng não, áp xe não.'
+
+MERGE (o1:disease {id: 'viêm_đa_xoang_disease'})
+MERGE (o2:symptom {id: 'biến_chứng_nặng_gây_mù_mắt_symptom'})
+MERGE (o1)-[r1:isSymptomOf]->(o2)
+SET r1.text = 'Viêm đa xoang là một bệnh lý tai mũi họng thường gặp, gây triệu chứng khó chịu ở vùng mũi xoang, nhưng đôi khi có thể gặp các biến chứng nặng gây mù mắt hay đe dọa tính mạng khi có biến chứng nội sọ như viêm màng não, áp xe não.'
+
+MERGE (o1:disease {id: 'viêm_đa_xoang_disease'})
+MERGE (o2:symptom {id: 'biến_chứng_nội_sọ_như_viêm_màng_não__áp_xe_não_symptom'})
+MERGE (o1)-[r2:isSymptomOf]->(o2)
+SET r2.text = 'Viêm đa xoang là một bệnh lý tai mũi họng thường gặp, gây triệu chứng khó chịu ở vùng mũi xoang, nhưng đôi khi có thể gặp các biến chứng nặng gây mù mắt hay đe dọa tính mạng khi có biến chứng nội sọ như viêm màng não, áp xe não.'
+
+MERGE (o1:disease {id: 'viêm_đa_xoang_disease'})
+MERGE (o2:organ {id: 'tai_mũi_họng_organ'})
+MERGE (o1)-[r3:locatedIn]->(o2)
+SET r3.text = 'Viêm đa xoang là một bệnh lý tai mũi họng thường gặp, gây triệu chứng khó chịu ở vùng mũi xoang, nhưng đôi khi có thể gặp các biến chứng nặng gây mù mắt hay đe dọa tính mạng khi có biến chứng nội sọ như viêm màng não, áp xe não.'
+
+MERGE (o1:disease {id: 'viêm_đa_xoang_disease'})
+MERGE (o2:symptom {id: 'viêm_từ_2_xoang_trở_lên_symptom'})
+MERGE (o1)-[r4:isSymptomOf]->(o2)
+SET r4.text = 'Viêm đa xoang là tình trạng viêm từ 2 xoang trở lên'
+
+MERGE (o1:organ {id: 'hệ_thống_xoang_organ'})
+MERGE (o2:organ {id: 'hai_bên_organ'})
+MERGE (o1)-[r5:locatedIn]->(o2)
+SET r5.text = 'Hệ thống xoang bao gồm các xoang ở hai bên: hàm, sàng, trán, bướm.'
+
+MERGE (o1:organ {id: 'xoang_organ'})
+MERGE (o2:organ {id: 'hàm_organ'})
+MERGE (o1)-[r6:locatedIn]->(o2)
+SET r6.text = 'Hệ thống xoang bao gồm các xoang ở hai bên: hàm, sàng, trán, bướm.'
+
+MERGE (o1:organ {id: 'xoang_organ'})
+MERGE (o2:organ {id: 'sàng_organ'})
+MERGE (o1)-[r7:locatedIn]->(o2)
+SET r7.text = 'Hệ thống xoang bao gồm các xoang ở hai bên: hàm, sàng, trán, bướm.'
+
+MERGE (o1:organ {id: 'xoang_organ'})
+MERGE (o2:organ {id: 'trán_organ'})
+MERGE (o1)-[r8:locatedIn]->(o2)
+SET r8.text = 'Hệ thống xoang bao gồm các xoang ở hai bên: hàm, sàng, trán, bướm.'
+
+MERGE (o1:organ {id: 'xoang_organ'})
+MERGE (o2:organ {id: 'bướm_organ'})
+MERGE (o1)-[r9:locatedIn]->(o2)
+SET r9.text = 'Hệ thống xoang bao gồm các xoang ở hai bên: hàm, sàng, trán, bướm.'
+
+MERGE (o1:disease {id: 'viêm_đa_xoang_disease'})
+MERGE (o2:symptom {id: 'viêm_sưng_nề_của_lớp_niêm_mạc_biểu_mô_lót_trong_xoang_symptom'})
+MERGE (o1)-[r10:isSymptomOf]->(o2)
+SET r10.text = 'Viêm đa xoang là tình trạng viêm sưng nề của lớp niêm mạc biểu mô lót trong xoang và có ít nhất từ hai xoang trở lên bị viêm.'
+
+MERGE (o1:disease {id: 'viêm_đa_xoang_disease'})
+MERGE (o2:symptom {id: 'viêm_symptom'})
+MERGE (o1)-[r11:isSymptomOf]->(o2)
+SET r11.text = 'Viêm đa xoang là tình trạng viêm sưng nề của lớp niêm mạc biểu mô lót trong xoang và có ít nhất từ hai xoang trở lên bị viêm.'
+
+MERGE (o1:disease {id: 'viêm_đa_xoang_disease'})
+MERGE (o2:cause {id: 'phản_ứng_viêm_cause'})
+MERGE (o1)-[r12:causedBy]->(o2)
+SET r12.text = 'Viêm đa xoang xảy ra do phản ứng viêm, dị ứng hoặc nhiễm trùng do vi khuẩn, virus hoặc do nấm.'
+
+MERGE (o1:disease {id: 'viêm_đa_xoang_disease'})
+MERGE (o2:cause {id: 'dị_ứng_cause'})
+MERGE (o1)-[r13:causedBy]->(o2)
+SET r13.text = 'Viêm đa xoang xảy ra do phản ứng viêm, dị ứng hoặc nhiễm trùng do vi khuẩn, virus hoặc do nấm.'
+
+MERGE (o1:disease {id: 'viêm_đa_xoang_disease'})
+MERGE (o2:cause {id: 'nhiễm_trùng_do_vi_khuẩn_cause'})
+MERGE (o1)-[r14:causedBy]->(o2)
+SET r14.text = 'Viêm đa xoang xảy ra do phản ứng viêm, dị ứng hoặc nhiễm trùng do vi khuẩn, virus hoặc do nấm.'
+
+MERGE (o1:disease {id: 'viêm_đa_xoang_disease'})
+MERGE (o2:cause {id: 'nhiễm_trùng_do_virus_cause'})
+MERGE (o1)-[r15:causedBy]->(o2)
+SET r15.text = 'Viêm đa xoang xảy ra do phản ứng viêm, dị ứng hoặc nhiễm trùng do vi khuẩn, virus hoặc do nấm.'
+
+MERGE (o1:disease {id: 'viêm_đa_xoang_disease'})
+MERGE (o2:cause {id: 'nhiễm_trùng_do_nấm_cause'})
+MERGE (o1)-[r16:causedBy]->(o2)
+SET r16.text = 'Viêm đa xoang xảy ra do phản ứng viêm, dị ứng hoặc nhiễm trùng do vi khuẩn, virus hoặc do nấm.'
+
+MERGE (o1:disease {id: 'viêm_đa_xoang_cấp_tính_disease'})
+MERGE (o2:symptom {id: 'khỏi_bệnh_hoàn_toàn_trong_<4_tuần_symptom'})
+MERGE (o1)-[r17:isSymptomOf]->(o2)
+SET r17.text = 'Theo ThS.BS.CKI Hồ Văn Hữu - Bác sĩ khoa Tai Mũi Họng, Bệnh viện Đa khoa Tâm Anh TP.HCM, dựa vào thời gian kéo dài triệu chứng, viêm đa xoang được phân làm các loại sau:  Viêm đa xoang cấp tính: Có thể khỏi bệnh hoàn toàn trong <4 tuần. Viêm đa xoang bán cấp tính: Có thể giải quyết hoàn toàn trong 4-8 tuần. Viêm đa xoang mạn tính: Bệnh kéo dài >12 tuần. Viêm xoang tái phát: Viêm ≥4 đợt cấp tính rải rác mỗi năm, mỗi đợt khỏi hoàn toàn trong <4 tuần nhưng tái phát theo chu kỳ, ít nhất 10 ngày từ khi hết triệu chứng đến khi bắt đầu đợt mới.'
+
+MERGE (o1:disease {id: 'viêm_đa_xoang_bán_cấp_tính_disease'})
+MERGE (o2:symptom {id: 'giải_quyết_hoàn_toàn_trong_4-8_tuần_symptom'})
+MERGE (o1)-[r18:isSymptomOf]->(o2)
+SET r18.text = 'Theo ThS.BS.CKI Hồ Văn Hữu - Bác sĩ khoa Tai Mũi Họng, Bệnh viện Đa khoa Tâm Anh TP.HCM, dựa vào thời gian kéo dài triệu chứng, viêm đa xoang được phân làm các loại sau:  Viêm đa xoang cấp tính: Có thể khỏi bệnh hoàn toàn trong <4 tuần. Viêm đa xoang bán cấp tính: Có thể giải quyết hoàn toàn trong 4-8 tuần. Viêm đa xoang mạn tính: Bệnh kéo dài >12 tuần. Viêm xoang tái phát: Viêm ≥4 đợt cấp tính rải rác mỗi năm, mỗi đợt khỏi hoàn toàn trong <4 tuần nhưng tái phát theo chu kỳ, ít nhất 10 ngày từ khi hết triệu chứng đến khi bắt đầu đợt mới.'
+
+MERGE (o1:disease {id: 'viêm_đa_xoang_mạn_tính_disease'})
+MERGE (o2:symptom {id: 'bệnh_kéo_dài_>12_tuần_symptom'})
+MERGE (o1)-[r19:isSymptomOf]->(o2)
+SET r19.text = 'Theo ThS.BS.CKI Hồ Văn Hữu - Bác sĩ khoa Tai Mũi Họng, Bệnh viện Đa khoa Tâm Anh TP.HCM, dựa vào thời gian kéo dài triệu chứng, viêm đa xoang được phân làm các loại sau:  Viêm đa xoang cấp tính: Có thể khỏi bệnh hoàn toàn trong <4 tuần. Viêm đa xoang bán cấp tính: Có thể giải quyết hoàn toàn trong 4-8 tuần. Viêm đa xoang mạn tính: Bệnh kéo dài >12 tuần. Viêm xoang tái phát: Viêm ≥4 đợt cấp tính rải rác mỗi năm, mỗi đợt khỏi hoàn toàn trong <4 tuần nhưng tái phát theo chu kỳ, ít nhất 10 ngày từ khi hết triệu chứng đến khi bắt đầu đợt mới.'
+
+MERGE (o1:disease {id: 'viêm_xoang_tái_phát_disease'})
+MERGE (o2:symptom {id: 'viêm_≥4_đợt_cấp_tính_rải_rác_mỗi_năm_symptom'})
+MERGE (o1)-[r20:isSymptomOf]->(o2)
+SET r20.text = 'Theo ThS.BS.CKI Hồ Văn Hữu - Bác sĩ khoa Tai Mũi Họng, Bệnh viện Đa khoa Tâm Anh TP.HCM, dựa vào thời gian kéo dài triệu chứng, viêm đa xoang được phân làm các loại sau:  Viêm đa xoang cấp tính: Có thể khỏi bệnh hoàn toàn trong <4 tuần. Viêm đa xoang bán cấp tính: Có thể giải quyết hoàn toàn trong 4-8 tuần. Viêm đa xoang mạn tính: Bệnh kéo dài >12 tuần. Viêm xoang tái phát: Viêm ≥4 đợt cấp tính rải rác mỗi năm, mỗi đợt khỏi hoàn toàn trong <4 tuần nhưng tái phát theo chu kỳ, ít nhất 10 ngày từ khi hết triệu chứng đến khi bắt đầu đợt mới.'
+
+MERGE (o1:disease {id: 'viêm_xoang_tái_phát_disease'})
+MERGE (o2:symptom {id: 'mỗi_đợt_khỏi_hoàn_toàn_trong_<4_tuần_symptom'})
+MERGE (o1)-[r21:isSymptomOf]->(o2)
+SET r21.text = 'Theo ThS.BS.CKI Hồ Văn Hữu - Bác sĩ khoa Tai Mũi Họng, Bệnh viện Đa khoa Tâm Anh TP.HCM, dựa vào thời gian kéo dài triệu chứng, viêm đa xoang được phân làm các loại sau:  Viêm đa xoang cấp tính: Có thể khỏi bệnh hoàn toàn trong <4 tuần. Viêm đa xoang bán cấp tính: Có thể giải quyết hoàn toàn trong 4-8 tuần. Viêm đa xoang mạn tính: Bệnh kéo dài >12 tuần. Viêm xoang tái phát: Viêm ≥4 đợt cấp tính rải rác mỗi năm, mỗi đợt khỏi hoàn toàn trong <4 tuần nhưng tái phát theo chu kỳ, ít nhất 10 ngày từ khi hết triệu chứng đến khi bắt đầu đợt mới.'
+
+MERGE (o1:disease {id: 'viêm_xoang_tái_phát_disease'})
+MERGE (o2:symptom {id: 'tái_phát_theo_chu_kỳ_symptom'})
+MERGE (o1)-[r22:isSymptomOf]->(o2)
+SET r22.text = 'Theo ThS.BS.CKI Hồ Văn Hữu - Bác sĩ khoa Tai Mũi Họng, Bệnh viện Đa khoa Tâm Anh TP.HCM, dựa vào thời gian kéo dài triệu chứng, viêm đa xoang được phân làm các loại sau:  Viêm đa xoang cấp tính: Có thể khỏi bệnh hoàn toàn trong <4 tuần. Viêm đa xoang bán cấp tính: Có thể giải quyết hoàn toàn trong 4-8 tuần. Viêm đa xoang mạn tính: Bệnh kéo dài >12 tuần. Viêm xoang tái phát: Viêm ≥4 đợt cấp tính rải rác mỗi năm, mỗi đợt khỏi hoàn toàn trong <4 tuần nhưng tái phát theo chu kỳ, ít nhất 10 ngày từ khi hết triệu chứng đến khi bắt đầu đợt mới.'
+
+MERGE (o1:disease {id: 'viêm_xoang_disease'})
+MERGE (o2:cause {id: 'các_nguyên_nhân_khác_nhau_cause'})
+MERGE (o1)-[r23:causedBy]->(o2)
+SET r23.text = 'Mỗi loại viêm xoang có thể do các nguyên nhân khác nhau gây ra. Vì vậy, việc phân loại viêm xoang có thể giúp tìm ra nguyên nhân gây bệnh.'
+
+MERGE (o1:disease {id: 'viêm_đa_xoang_cấp_tính_disease'})
+MERGE (o2:treatment {id: 'kháng_sinh_treatment'})
+MERGE (o1)-[r24:treatedBy]->(o2)
+SET r24.text = 'Viêm đa xoang cấp tính cần nhận biết tác nhân nhiễm trùng để sử dụng kháng sinh điều trị phù hợp, tránh tình trạng đề kháng kháng sinh.'
+
+MERGE (o1:disease {id: 'viêm_đa_xoang_cấp_tính_disease'})
+MERGE (o2:cause {id: 'virus_cause'})
+MERGE (o1)-[r25:causedBy]->(o2)
+SET r25.text = 'Viêm đa xoang cấp tính đa số do tác nhân virus gây ra, thường gặp các virus như: rhinovirus (virus gây cảm lạnh), cúm, parainfluenza (virus gây các bệnh viêm đường hô hấp trên).'
+
+MERGE (o1:disease {id: 'viêm_đa_xoang_cấp_tính_disease'})
+MERGE (o2:cause {id: 'rhinovirus_cause'})
+MERGE (o1)-[r26:causedBy]->(o2)
+SET r26.text = 'Viêm đa xoang cấp tính đa số do tác nhân virus gây ra, thường gặp các virus như: rhinovirus (virus gây cảm lạnh), cúm, parainfluenza (virus gây các bệnh viêm đường hô hấp trên).'
+
+MERGE (o1:disease {id: 'viêm_đa_xoang_cấp_tính_disease'})
+MERGE (o2:cause {id: 'cúm_cause'})
+MERGE (o1)-[r27:causedBy]->(o2)
+SET r27.text = 'Viêm đa xoang cấp tính đa số do tác nhân virus gây ra, thường gặp các virus như: rhinovirus (virus gây cảm lạnh), cúm, parainfluenza (virus gây các bệnh viêm đường hô hấp trên).'
+
+MERGE (o1:disease {id: 'viêm_đa_xoang_cấp_tính_disease'})
+MERGE (o2:cause {id: 'parainfluenza_cause'})
+MERGE (o1)-[r28:causedBy]->(o2)
+SET r28.text = 'Viêm đa xoang cấp tính đa số do tác nhân virus gây ra, thường gặp các virus như: rhinovirus (virus gây cảm lạnh), cúm, parainfluenza (virus gây các bệnh viêm đường hô hấp trên).'
+
+MERGE (o1:disease {id: 'viêm_đa_xoang_disease'})
+MERGE (o2:cause {id: 'nhiễm_trùng_vi_khuẩn_cause'})
+MERGE (o1)-[r29:causedBy]->(o2)
+SET r29.text = 'Một tỷ lệ nhỏ viêm đa xoang do nhiễm trùng vi khuẩn hoặc phát triển nhiễm vi khuẩn thứ phát.'
+
+MERGE (o1:disease {id: 'viêm_đa_xoang_cấp_disease'})
+MERGE (o2:cause {id: 'phế_cầu_cause'})
+MERGE (o1)-[r30:causedBy]->(o2)
+SET r30.text = 'Các vi khuẩn thường gây viêm đa xoang cấp như phế cầu, Haemophilus influenzae, Moraxella catarrhalis, tụ cầu hoặc vi khuẩn kỵ khí khi nhiễm trùng từ vùng răng miệng.'
+
+MERGE (o1:disease {id: 'viêm_đa_xoang_cấp_disease'})
+MERGE (o2:cause {id: 'haemophilus_influenzae_cause'})
+MERGE (o1)-[r31:causedBy]->(o2)
+SET r31.text = 'Các vi khuẩn thường gây viêm đa xoang cấp như phế cầu, Haemophilus influenzae, Moraxella catarrhalis, tụ cầu hoặc vi khuẩn kỵ khí khi nhiễm trùng từ vùng răng miệng.'
+
+MERGE (o1:disease {id: 'viêm_đa_xoang_cấp_disease'})
+MERGE (o2:cause {id: 'moraxella_catarrhalis_cause'})
+MERGE (o1)-[r32:causedBy]->(o2)
+SET r32.text = 'Các vi khuẩn thường gây viêm đa xoang cấp như phế cầu, Haemophilus influenzae, Moraxella catarrhalis, tụ cầu hoặc vi khuẩn kỵ khí khi nhiễm trùng từ vùng răng miệng.'
+
+MERGE (o1:disease {id: 'viêm_đa_xoang_cấp_disease'})
+MERGE (o2:cause {id: 'tụ_cầu_cause'})
+MERGE (o1)-[r33:causedBy]->(o2)
+SET r33.text = 'Các vi khuẩn thường gây viêm đa xoang cấp như phế cầu, Haemophilus influenzae, Moraxella catarrhalis, tụ cầu hoặc vi khuẩn kỵ khí khi nhiễm trùng từ vùng răng miệng.'
+
+MERGE (o1:disease {id: 'viêm_đa_xoang_cấp_disease'})
+MERGE (o2:cause {id: 'vi_khuẩn_kỵ_khí_cause'})
+MERGE (o1)-[r34:causedBy]->(o2)
+SET r34.text = 'Các vi khuẩn thường gây viêm đa xoang cấp như phế cầu, Haemophilus influenzae, Moraxella catarrhalis, tụ cầu hoặc vi khuẩn kỵ khí khi nhiễm trùng từ vùng răng miệng.'
+
+MERGE (o1:disease {id: 'viêm_đa_xoang_do_nấm_cấp_tính_disease'})
+MERGE (o2:cause {id: 'hệ_miễn_dịch_suy_giảm_cause'})
+MERGE (o1)-[r35:associatedWith]->(o2)
+SET r35.text = 'Viêm đa xoang do nấm cấp tính thường xảy ra ở các bệnh nhân có hệ miễn dịch suy giảm, như đái tháo đường, HIV, bệnh ung thư,…'
+
+MERGE (o1:disease {id: 'viêm_đa_xoang_do_nấm_cấp_tính_disease'})
+MERGE (o2:disease {id: 'đái_tháo_đường_disease'})
+MERGE (o1)-[r36:associatedWith]->(o2)
+SET r36.text = 'Viêm đa xoang do nấm cấp tính thường xảy ra ở các bệnh nhân có hệ miễn dịch suy giảm, như đái tháo đường, HIV, bệnh ung thư,…'
+
+MERGE (o1:disease {id: 'viêm_đa_xoang_do_nấm_cấp_tính_disease'})
+MERGE (o2:disease {id: 'hiv_disease'})
+MERGE (o1)-[r37:associatedWith]->(o2)
+SET r37.text = 'Viêm đa xoang do nấm cấp tính thường xảy ra ở các bệnh nhân có hệ miễn dịch suy giảm, như đái tháo đường, HIV, bệnh ung thư,…'
+
+MERGE (o1:disease {id: 'viêm_đa_xoang_do_nấm_cấp_tính_disease'})
+MERGE (o2:disease {id: 'bệnh_ung_thư_disease'})
+MERGE (o1)-[r38:associatedWith]->(o2)
+SET r38.text = 'Viêm đa xoang do nấm cấp tính thường xảy ra ở các bệnh nhân có hệ miễn dịch suy giảm, như đái tháo đường, HIV, bệnh ung thư,…'
+
+MERGE (o1:disease {id: 'viêm_đa_xoang_mạn_tính_disease'})
+MERGE (o2:cause {id: 'yếu_tố_bệnh_sinh_cause'})
+MERGE (o1)-[r39:causedBy]->(o2)
+SET r39.text = 'Theo ThS.BS.CKI Hồ Văn Hữu, viêm đa xoang mạn tính thường có nhiều yếu tố bệnh sinh kết hợp gây ra.'
+
+MERGE (o1:disease {id: 'viêm_đa_xoang_mạn_tính_disease'})
+MERGE (o2:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o1)-[r40:associatedWith]->(o2)
+SET r40.text = 'Bệnh nhân có thể mắc các bệnh đồng mắc hoặc có yếu tố nguy cơ có liên quan như: viêm mũi dị ứng, hen suyễn, hút thuốc lá, ô nhiễm không khí, bất thường cấu trúc vùng mũi xoang, bệnh hệ thống ảnh hưởng tới chức năng lông chuyển niêm mạc mũi xoang và nhiễm trùng răng miệng.'
+
+MERGE (o1:disease {id: 'viêm_đa_xoang_mạn_tính_disease'})
+MERGE (o2:disease {id: 'hen_suyễn_disease'})
+MERGE (o1)-[r41:associatedWith]->(o2)
+SET r41.text = 'Bệnh nhân có thể mắc các bệnh đồng mắc hoặc có yếu tố nguy cơ có liên quan như: viêm mũi dị ứng, hen suyễn, hút thuốc lá, ô nhiễm không khí, bất thường cấu trúc vùng mũi xoang, bệnh hệ thống ảnh hưởng tới chức năng lông chuyển niêm mạc mũi xoang và nhiễm trùng răng miệng.'
+
+MERGE (o1:disease {id: 'viêm_đa_xoang_mạn_tính_disease'})
+MERGE (o2:lifestyle {id: 'hút_thuốc_lá_lifestyle'})
+MERGE (o1)-[r42:aggravatedBy]->(o2)
+SET r42.text = 'Bệnh nhân có thể mắc các bệnh đồng mắc hoặc có yếu tố nguy cơ có liên quan như: viêm mũi dị ứng, hen suyễn, hút thuốc lá, ô nhiễm không khí, bất thường cấu trúc vùng mũi xoang, bệnh hệ thống ảnh hưởng tới chức năng lông chuyển niêm mạc mũi xoang và nhiễm trùng răng miệng.'
+
+MERGE (o1:disease {id: 'viêm_đa_xoang_mạn_tính_disease'})
+MERGE (o2:lifestyle {id: 'ô_nhiễm_không_khí_lifestyle'})
+MERGE (o1)-[r43:aggravatedBy]->(o2)
+SET r43.text = 'Bệnh nhân có thể mắc các bệnh đồng mắc hoặc có yếu tố nguy cơ có liên quan như: viêm mũi dị ứng, hen suyễn, hút thuốc lá, ô nhiễm không khí, bất thường cấu trúc vùng mũi xoang, bệnh hệ thống ảnh hưởng tới chức năng lông chuyển niêm mạc mũi xoang và nhiễm trùng răng miệng.'
+
+MERGE (o1:disease {id: 'viêm_đa_xoang_mạn_tính_disease'})
+MERGE (o2:cause {id: 'bất_thường_cấu_trúc_vùng_mũi_xoang_cause'})
+MERGE (o1)-[r44:associatedWith]->(o2)
+SET r44.text = 'Bệnh nhân có thể mắc các bệnh đồng mắc hoặc có yếu tố nguy cơ có liên quan như: viêm mũi dị ứng, hen suyễn, hút thuốc lá, ô nhiễm không khí, bất thường cấu trúc vùng mũi xoang, bệnh hệ thống ảnh hưởng tới chức năng lông chuyển niêm mạc mũi xoang và nhiễm trùng răng miệng.'
+
+MERGE (o1:disease {id: 'viêm_đa_xoang_mạn_tính_disease'})
+MERGE (o2:disease {id: 'bệnh_hệ_thống_disease'})
+MERGE (o1)-[r45:associatedWith]->(o2)
+SET r45.text = 'Bệnh nhân có thể mắc các bệnh đồng mắc hoặc có yếu tố nguy cơ có liên quan như: viêm mũi dị ứng, hen suyễn, hút thuốc lá, ô nhiễm không khí, bất thường cấu trúc vùng mũi xoang, bệnh hệ thống ảnh hưởng tới chức năng lông chuyển niêm mạc mũi xoang và nhiễm trùng răng miệng.'
+
+MERGE (o1:disease {id: 'viêm_đa_xoang_mạn_tính_disease'})
+MERGE (o2:cause {id: 'nhiễm_trùng_răng_miệng_cause'})
+MERGE (o1)-[r46:associatedWith]->(o2)
+SET r46.text = 'Bệnh nhân có thể mắc các bệnh đồng mắc hoặc có yếu tố nguy cơ có liên quan như: viêm mũi dị ứng, hen suyễn, hút thuốc lá, ô nhiễm không khí, bất thường cấu trúc vùng mũi xoang, bệnh hệ thống ảnh hưởng tới chức năng lông chuyển niêm mạc mũi xoang và nhiễm trùng răng miệng.'
+
+MERGE (o1:disease {id: 'viêm_đa_xoang_disease'})
+MERGE (o2:test {id: 'khai_thác_triệu_chứng_test'})
+MERGE (o1)-[r47:diagnosedBy]->(o2)
+SET r47.text = 'ThS.BS.CKI Hồ Văn Hữu cho biết, để chẩn đoán bệnh viêm đa xoang, bác sĩ sẽ khai thác triệu chứng, thực hiện nội soi và phương pháp hình ảnh học.'
+
+MERGE (o1:disease {id: 'viêm_đa_xoang_disease'})
+MERGE (o2:test {id: 'nội_soi_test'})
+MERGE (o1)-[r48:diagnosedBy]->(o2)
+SET r48.text = 'ThS.BS.CKI Hồ Văn Hữu cho biết, để chẩn đoán bệnh viêm đa xoang, bác sĩ sẽ khai thác triệu chứng, thực hiện nội soi và phương pháp hình ảnh học.'
+
+MERGE (o1:disease {id: 'viêm_đa_xoang_disease'})
+MERGE (o2:test {id: 'phương_pháp_hình_ảnh_học_test'})
+MERGE (o1)-[r49:diagnosedBy]->(o2)
+SET r49.text = 'ThS.BS.CKI Hồ Văn Hữu cho biết, để chẩn đoán bệnh viêm đa xoang, bác sĩ sẽ khai thác triệu chứng, thực hiện nội soi và phương pháp hình ảnh học.'
+
+MERGE (o1:symptom {id: 'nghẹt_mũi_symptom'})
+MERGE (o2:disease {id: 'viêm_đa_xoang_disease'})
+MERGE (o1)-[r50:isSymptomOf]->(o2)
+SET r50.text = 'Bệnh nhân biểu hiện bằng nghẹt mũi, chảy mũi trước hoặc sau, nhức đầu mặt, giảm hay mất khứu giác.'
+
+MERGE (o1:symptom {id: 'chảy_mũi_symptom'})
+MERGE (o2:disease {id: 'viêm_đa_xoang_disease'})
+MERGE (o1)-[r51:isSymptomOf]->(o2)
+SET r51.text = 'Bệnh nhân biểu hiện bằng nghẹt mũi, chảy mũi trước hoặc sau, nhức đầu mặt, giảm hay mất khứu giác.'
+
+MERGE (o1:symptom {id: 'nhức_đầu_mặt_symptom'})
+MERGE (o2:disease {id: 'viêm_đa_xoang_disease'})
+MERGE (o1)-[r52:isSymptomOf]->(o2)
+SET r52.text = 'Bệnh nhân biểu hiện bằng nghẹt mũi, chảy mũi trước hoặc sau, nhức đầu mặt, giảm hay mất khứu giác.'
+
+MERGE (o1:symptom {id: 'giảm_khứu_giác_symptom'})
+MERGE (o2:disease {id: 'viêm_đa_xoang_disease'})
+MERGE (o1)-[r53:isSymptomOf]->(o2)
+SET r53.text = 'Bệnh nhân biểu hiện bằng nghẹt mũi, chảy mũi trước hoặc sau, nhức đầu mặt, giảm hay mất khứu giác.'
+
+MERGE (o1:symptom {id: 'mất_khứu_giác_symptom'})
+MERGE (o2:disease {id: 'viêm_đa_xoang_disease'})
+MERGE (o1)-[r54:isSymptomOf]->(o2)
+SET r54.text = 'Bệnh nhân biểu hiện bằng nghẹt mũi, chảy mũi trước hoặc sau, nhức đầu mặt, giảm hay mất khứu giác.'
+
+MERGE (o1:symptom {id: 'ho_symptom'})
+MERGE (o2:disease {id: 'viêm_đa_xoang_disease'})
+MERGE (o1)-[r55:isSymptomOf]->(o2)
+SET r55.text = 'Với trẻ em thường biểu hiện bằng ho hơn là khó chịu về khứu giác.'
+
+MERGE (o1:symptom {id: 'nghẹt_mũi_symptom'})
+MERGE (o2:disease {id: 'viêm_xoang_disease'})
+MERGE (o1)-[r56:isSymptomOf]->(o2)
+SET r56.text = 'Khi bệnh nhân biểu hiện ít nhất 2/4 triệu chứng trên và có triệu chứng nghẹt mũi hoặc chảy mũi thì chẩn đoán là viêm xoang.'
+
+MERGE (o1:symptom {id: 'chảy_mũi_symptom'})
+MERGE (o2:disease {id: 'viêm_xoang_disease'})
+MERGE (o1)-[r57:isSymptomOf]->(o2)
+SET r57.text = 'Khi bệnh nhân biểu hiện ít nhất 2/4 triệu chứng trên và có triệu chứng nghẹt mũi hoặc chảy mũi thì chẩn đoán là viêm xoang.'
+
+MERGE (o1:symptom {id: 'sốt_symptom'})
+MERGE (o2:disease {id: 'viêm_đa_xoang_cấp_tính_disease'})
+MERGE (o1)-[r58:isSymptomOf]->(o2)
+SET r58.text = 'Khi viêm đa xoang cấp tính, triệu chứng lâm sàng thường rầm rộ, và có thể có triệu chứng toàn thân kèm theo như: sốt, ớn lạnh, chán ăn, mệt mỏi…'
+
+MERGE (o1:symptom {id: 'ớn_lạnh_symptom'})
+MERGE (o2:disease {id: 'viêm_đa_xoang_cấp_tính_disease'})
+MERGE (o1)-[r59:isSymptomOf]->(o2)
+SET r59.text = 'Khi viêm đa xoang cấp tính, triệu chứng lâm sàng thường rầm rộ, và có thể có triệu chứng toàn thân kèm theo như: sốt, ớn lạnh, chán ăn, mệt mỏi…'
+
+MERGE (o1:symptom {id: 'chán_ăn_symptom'})
+MERGE (o2:disease {id: 'viêm_đa_xoang_cấp_tính_disease'})
+MERGE (o1)-[r60:isSymptomOf]->(o2)
+SET r60.text = 'Khi viêm đa xoang cấp tính, triệu chứng lâm sàng thường rầm rộ, và có thể có triệu chứng toàn thân kèm theo như: sốt, ớn lạnh, chán ăn, mệt mỏi…'
+
+MERGE (o1:symptom {id: 'mệt_mỏi_symptom'})
+MERGE (o2:disease {id: 'viêm_đa_xoang_cấp_tính_disease'})
+MERGE (o1)-[r61:isSymptomOf]->(o2)
+SET r61.text = 'Khi viêm đa xoang cấp tính, triệu chứng lâm sàng thường rầm rộ, và có thể có triệu chứng toàn thân kèm theo như: sốt, ớn lạnh, chán ăn, mệt mỏi…'
+
+MERGE (o1:symptom {id: 'đau_nhức_vùng_má_symptom'})
+MERGE (o2:disease {id: 'viêm_xoang_hàm_disease'})
+MERGE (o1)-[r62:isSymptomOf]->(o2)
+SET r62.text = 'Vị trí đau đầu mặt của bệnh nhân sẽ gợi ý xác định xoang đang bị viêm:  Viêm xoang hàm: bệnh nhân thường đau nhức vùng má.'
+
+MERGE (o1:symptom {id: 'đau_răng_symptom'})
+MERGE (o2:disease {id: 'viêm_xoang_hàm_thứ_phát_disease'})
+MERGE (o1)-[r63:isSymptomOf]->(o2)
+SET r63.text = 'Vị trí đau đầu mặt của bệnh nhân sẽ gợi ý xác định xoang đang bị viêm:  Viêm xoang hàm: bệnh nhân thường đau nhức vùng má. Nếu kèm đau răng, cần lưu ý tới tình trạng viêm xoang hàm thứ phát sau nhiễm trùng chân răng.'
+
+MERGE (o1:symptom {id: 'đau_vùng_trước_trán_symptom'})
+MERGE (o2:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o1)-[r64:isSymptomOf]->(o2)
+SET r64.text = 'Vị trí đau đầu mặt của bệnh nhân sẽ gợi ý xác định xoang đang bị viêm:  Viêm xoang trán: thường đau vùng trước trán'
+
+MERGE (o1:symptom {id: 'đau_vùng_chẩm_sau_đầu_symptom'})
+MERGE (o2:disease {id: 'viêm_xoang_bướm_disease'})
+MERGE (o1)-[r65:isSymptomOf]->(o2)
+SET r65.text = 'Vị trí đau đầu mặt của bệnh nhân sẽ gợi ý xác định xoang đang bị viêm:  Viêm xoang bướm: thường đau vùng chẩm sau đầu, cổ gáy'
+
+MERGE (o1:symptom {id: 'đau_cổ_gáy_symptom'})
+MERGE (o2:disease {id: 'viêm_xoang_bướm_disease'})
+MERGE (o1)-[r66:isSymptomOf]->(o2)
+SET r66.text = 'Vị trí đau đầu mặt của bệnh nhân sẽ gợi ý xác định xoang đang bị viêm:  Viêm xoang bướm: thường đau vùng chẩm sau đầu, cổ gáy'
+
+MERGE (o1:symptom {id: 'đau_mơ_hồ_symptom'})
+MERGE (o2:disease {id: 'viêm_xoang_sàng_disease'})
+MERGE (o1)-[r67:isSymptomOf]->(o2)
+SET r67.text = 'Vị trí đau đầu mặt của bệnh nhân sẽ gợi ý xác định xoang đang bị viêm:  Viêm xoang sàng: thường xoang sàng nằm sâu trong hốc sọ, trải dài từ trước ra sau, nên triệu chứng đau thường mơ hồ'
+
+MERGE (o1:symptom {id: 'sung_huyết_niêm_mạc_mũi_symptom'})
+MERGE (o2:disease {id: 'viêm_đa_xoang_cấp_tính_disease'})
+MERGE (o1)-[r68:isSymptomOf]->(o2)
+SET r68.text = 'Viêm đa xoang cấp tính thường thấy niêm mạc mũi sung huyết, phù nề, có dịch nhầy đục khe xoang.'
+
+MERGE (o1:symptom {id: 'phù_nề_niêm_mạc_mũi_symptom'})
+MERGE (o2:disease {id: 'viêm_đa_xoang_cấp_tính_disease'})
+MERGE (o1)-[r69:isSymptomOf]->(o2)
+SET r69.text = 'Viêm đa xoang cấp tính thường thấy niêm mạc mũi sung huyết, phù nề, có dịch nhầy đục khe xoang.'
+
+MERGE (o1:symptom {id: 'dịch_nhầy_đục_khe_xoang_symptom'})
+MERGE (o2:disease {id: 'viêm_đa_xoang_cấp_tính_disease'})
+MERGE (o1)-[r70:isSymptomOf]->(o2)
+SET r70.text = 'Viêm đa xoang cấp tính thường thấy niêm mạc mũi sung huyết, phù nề, có dịch nhầy đục khe xoang.'
+
+MERGE (o1:symptom {id: 'phù_nề_niêm_mạc_symptom'})
+MERGE (o2:disease {id: 'viêm_đa_xoang_mạn_tính_disease'})
+MERGE (o1)-[r71:isSymptomOf]->(o2)
+SET r71.text = 'Trong khi đó, viêm đa xoang mạn tính thường biểu hiện niêm mạc phù nề, thoái hóa, có thể có polyp mũi.'
+
+MERGE (o1:symptom {id: 'thoái_hóa_niêm_mạc_symptom'})
+MERGE (o2:disease {id: 'viêm_đa_xoang_mạn_tính_disease'})
+MERGE (o1)-[r72:isSymptomOf]->(o2)
+SET r72.text = 'Trong khi đó, viêm đa xoang mạn tính thường biểu hiện niêm mạc phù nề, thoái hóa, có thể có polyp mũi.'
+
+MERGE (o1:symptom {id: 'polyp_mũi_symptom'})
+MERGE (o2:disease {id: 'viêm_đa_xoang_mạn_tính_disease'})
+MERGE (o1)-[r73:isSymptomOf]->(o2)
+SET r73.text = 'Trong khi đó, viêm đa xoang mạn tính thường biểu hiện niêm mạc phù nề, thoái hóa, có thể có polyp mũi.'
+
+MERGE (o1:test {id: 'nội_soi_mũi_xoang_test'})
+MERGE (o2:disease {id: 'viêm_đa_xoang_disease'})
+MERGE (o1)-[r74:diagnosedBy]->(o2)
+SET r74.text = 'Nội soi mũi xoang là một xét nghiệm thường quy trong chẩn đoán viêm đa xoang'
+
+MERGE (o1:disease {id: 'viêm_đa_xoang_disease'})
+MERGE (o2:test {id: 'chụp_phim_cắt_lớp_vi_tính_(ct)_test'})
+MERGE (o1)-[r75:diagnosedBy]->(o2)
+SET r75.text = 'Đây là phương tiện chẩn đoán giúp xác định có viêm đa xoang hay không, bệnh nhân được chụp phim cắt lớp vi tính (CT) hoặc cộng hưởng từ (MRI) vùng hàm mặt.'
+
+MERGE (o1:disease {id: 'viêm_đa_xoang_disease'})
+MERGE (o2:test {id: 'cộng_hưởng_từ_(mri)_test'})
+MERGE (o1)-[r76:diagnosedBy]->(o2)
+SET r76.text = 'Đây là phương tiện chẩn đoán giúp xác định có viêm đa xoang hay không, bệnh nhân được chụp phim cắt lớp vi tính (CT) hoặc cộng hưởng từ (MRI) vùng hàm mặt.'
+
+MERGE (o1:disease {id: 'viêm_đa_xoang_disease'})
+MERGE (o2:treatment {id: 'điều_trị_nội_khoa_treatment'})
+MERGE (o1)-[r77:treatedBy]->(o2)
+SET r77.text = 'ThS.BS.CKI Hồ Văn Hữu cho biết, các phương pháp điều trị viêm đa xoang bao gồm điều trị nội khoa dùng thuốc hoặc phẫu thuật.'
+
+MERGE (o1:disease {id: 'viêm_đa_xoang_disease'})
+MERGE (o2:treatment {id: 'phẫu_thuật_treatment'})
+MERGE (o1)-[r78:treatedBy]->(o2)
+SET r78.text = 'ThS.BS.CKI Hồ Văn Hữu cho biết, các phương pháp điều trị viêm đa xoang bao gồm điều trị nội khoa dùng thuốc hoặc phẫu thuật.'
+
+MERGE (o1:disease {id: 'viêm_đa_xoang_cấp_tính_disease'})
+MERGE (o2:treatment {id: 'kháng_sinh_treatment'})
+MERGE (o1)-[r79:treatedBy]->(o2)
+SET r79.text = 'Hầu hết viêm đa xoang cấp tính sẽ đáp ứng với điều trị nội khoa, bao gồm các thuốc kháng sinh, kháng viêm toàn thân hay tại chỗ, kháng dị ứng và các thuốc giảm triệu chứng.'
+
+MERGE (o1:disease {id: 'viêm_đa_xoang_cấp_tính_disease'})
+MERGE (o2:treatment {id: 'kháng_viêm_treatment'})
+MERGE (o1)-[r80:treatedBy]->(o2)
+SET r80.text = 'Hầu hết viêm đa xoang cấp tính sẽ đáp ứng với điều trị nội khoa, bao gồm các thuốc kháng sinh, kháng viêm toàn thân hay tại chỗ, kháng dị ứng và các thuốc giảm triệu chứng.'
+
+MERGE (o1:disease {id: 'viêm_đa_xoang_cấp_tính_disease'})
+MERGE (o2:treatment {id: 'kháng_dị_ứng_treatment'})
+MERGE (o1)-[r81:treatedBy]->(o2)
+SET r81.text = 'Hầu hết viêm đa xoang cấp tính sẽ đáp ứng với điều trị nội khoa, bao gồm các thuốc kháng sinh, kháng viêm toàn thân hay tại chỗ, kháng dị ứng và các thuốc giảm triệu chứng.'
+
+MERGE (o1:disease {id: 'viêm_đa_xoang_cấp_tính_disease'})
+MERGE (o2:treatment {id: 'thuốc_giảm_triệu_chứng_treatment'})
+MERGE (o1)-[r82:treatedBy]->(o2)
+SET r82.text = 'Hầu hết viêm đa xoang cấp tính sẽ đáp ứng với điều trị nội khoa, bao gồm các thuốc kháng sinh, kháng viêm toàn thân hay tại chỗ, kháng dị ứng và các thuốc giảm triệu chứng.'
+
+MERGE (o1:disease {id: 'viêm_đa_xoang_disease'})
+MERGE (o2:lifestyle {id: 'uống_nhiều_nước_lifestyle'})
+MERGE (o1)-[r83:treatedBy]->(o2)
+SET r83.text = 'Bệnh nhân thường được khuyên uống nhiều nước để làm loãng chất nhầy và sử dụng bình bơm xịt mũi để hỗ trợ trong điều trị, tránh tiếp xúc với các yếu tố dị ứng hay kích thích: không khí lạnh, khói thuốc lá, không khí ô nhiễm&#8230;'
+
+MERGE (o1:disease {id: 'viêm_đa_xoang_disease'})
+MERGE (o2:treatment {id: 'sử_dụng_bình_bơm_xịt_mũi_treatment'})
+MERGE (o1)-[r84:treatedBy]->(o2)
+SET r84.text = 'Bệnh nhân thường được khuyên uống nhiều nước để làm loãng chất nhầy và sử dụng bình bơm xịt mũi để hỗ trợ trong điều trị, tránh tiếp xúc với các yếu tố dị ứng hay kích thích: không khí lạnh, khói thuốc lá, không khí ô nhiễm&#8230;'
+
+MERGE (o1:disease {id: 'viêm_đa_xoang_disease'})
+MERGE (o2:lifestyle {id: 'không_khí_lạnh_lifestyle'})
+MERGE (o1)-[r85:aggravatedBy]->(o2)
+SET r85.text = 'Bệnh nhân thường được khuyên uống nhiều nước để làm loãng chất nhầy và sử dụng bình bơm xịt mũi để hỗ trợ trong điều trị, tránh tiếp xúc với các yếu tố dị ứng hay kích thích: không khí lạnh, khói thuốc lá, không khí ô nhiễm&#8230;'
+
+MERGE (o1:disease {id: 'viêm_đa_xoang_disease'})
+MERGE (o2:lifestyle {id: 'khói_thuốc_lá_lifestyle'})
+MERGE (o1)-[r86:aggravatedBy]->(o2)
+SET r86.text = 'Bệnh nhân thường được khuyên uống nhiều nước để làm loãng chất nhầy và sử dụng bình bơm xịt mũi để hỗ trợ trong điều trị, tránh tiếp xúc với các yếu tố dị ứng hay kích thích: không khí lạnh, khói thuốc lá, không khí ô nhiễm&#8230;'
+
+MERGE (o1:disease {id: 'viêm_đa_xoang_disease'})
+MERGE (o2:lifestyle {id: 'không_khí_ô_nhiễm_lifestyle'})
+MERGE (o1)-[r87:aggravatedBy]->(o2)
+SET r87.text = 'Bệnh nhân thường được khuyên uống nhiều nước để làm loãng chất nhầy và sử dụng bình bơm xịt mũi để hỗ trợ trong điều trị, tránh tiếp xúc với các yếu tố dị ứng hay kích thích: không khí lạnh, khói thuốc lá, không khí ô nhiễm&#8230;'
+
+MERGE (o1:disease {id: 'viêm_đa_xoang_disease'})
+MERGE (o2:treatment {id: 'phẫu_thuật_treatment'})
+MERGE (o1)-[r88:treatedBy]->(o2)
+SET r88.text = 'Phẫu thuật được chỉ định khi viêm đa xoang có biến chứng hoặc viêm đa xoang mạn tính không đáp ứng với điều trị bằng thuốc.'
+
+MERGE (o1:cause {id: 'vẹo_vách_ngăn_cause'})
+MERGE (o2:symptom {id: 'tắc_nghẽn_symptom'})
+MERGE (o1)-[r89:causes]->(o2)
+SET r89.text = 'Phẫu thuật loại bỏ các bệnh tích và các cấu trúc mũi bất thường gây tắc nghẽn như vẹo vách ngăn, phì đại cuốn mũi.'
+
+MERGE (o1:cause {id: 'phì_đại_cuốn_mũi_cause'})
+MERGE (o2:symptom {id: 'tắc_nghẽn_symptom'})
+MERGE (o1)-[r90:causes]->(o2)
+SET r90.text = 'Phẫu thuật loại bỏ các bệnh tích và các cấu trúc mũi bất thường gây tắc nghẽn như vẹo vách ngăn, phì đại cuốn mũi.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_xoang_treatment'})
+MERGE (o2:test {id: 'nội_soi_mũi_test'})
+MERGE (o1)-[r91:treatedBy]->(o2)
+SET r91.text = 'Phẫu thuật xoang tại Bệnh viện Đa khoa Tâm Anh được thực hiện qua nội soi mũi bằng máy Karl Storz của Đức cùng với hệ thống máy cắt khoan Medtronic của Mỹ.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_xoang_treatment'})
+MERGE (o2:treatment {id: 'máy_karl_storz_treatment'})
+MERGE (o1)-[r92:treatedBy]->(o2)
+SET r92.text = 'Phẫu thuật xoang tại Bệnh viện Đa khoa Tâm Anh được thực hiện qua nội soi mũi bằng máy Karl Storz của Đức cùng với hệ thống máy cắt khoan Medtronic của Mỹ.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_xoang_treatment'})
+MERGE (o2:treatment {id: 'máy_cắt_khoan_medtronic_treatment'})
+MERGE (o1)-[r93:treatedBy]->(o2)
+SET r93.text = 'Phẫu thuật xoang tại Bệnh viện Đa khoa Tâm Anh được thực hiện qua nội soi mũi bằng máy Karl Storz của Đức cùng với hệ thống máy cắt khoan Medtronic của Mỹ.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_xoang_treatment'})
+MERGE (o2:test {id: 'nội_soi_test'})
+MERGE (o1)-[r94:treatedBy]->(o2)
+SET r94.text = 'Bác sĩ phẫu thuật sẽ đưa các dụng cụ nội soi cực nhỏ vào mũi của bệnh nhân, sau đó mở rộng các lỗ thông xoang, cắt polyp, lấy mô nấm, hút sạch nhầy mủ, không gây tổn thương bộ phận lân cận.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_xoang_treatment'})
+MERGE (o2:treatment {id: 'cắt_polyp_treatment'})
+MERGE (o1)-[r95:treatedBy]->(o2)
+SET r95.text = 'Bác sĩ phẫu thuật sẽ đưa các dụng cụ nội soi cực nhỏ vào mũi của bệnh nhân, sau đó mở rộng các lỗ thông xoang, cắt polyp, lấy mô nấm, hút sạch nhầy mủ, không gây tổn thương bộ phận lân cận.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_xoang_treatment'})
+MERGE (o2:treatment {id: 'lấy_mô_nấm_treatment'})
+MERGE (o1)-[r96:treatedBy]->(o2)
+SET r96.text = 'Bác sĩ phẫu thuật sẽ đưa các dụng cụ nội soi cực nhỏ vào mũi của bệnh nhân, sau đó mở rộng các lỗ thông xoang, cắt polyp, lấy mô nấm, hút sạch nhầy mủ, không gây tổn thương bộ phận lân cận.'
+
+MERGE (o1:disease {id: 'cảm_lạnh_disease'})
+MERGE (o2:lifestyle {id: 'tránh_để_bị_cảm_lạnh_lifestyle'})
+MERGE (o1)-[r97:preventedBy]->(o2)
+SET r97.text = 'Để ngăn ngừa viêm đa xoang, ThS.BS.CKI Hồ Văn Hữu lưu ý mỗi người như sau:  Tránh để bị cảm lạnh và hoặc mắc các bệnh nhiễm trùng khác; Tránh tiếp xúc với chất gây dị ứng như phấn hoa, lông động vật… hoặc chất kích thích như khói thuốc lá&#8230; Có chế độ ăn uống lành mạnh với rau củ tươi và trái cây giàu chất chống oxy hóa; Tiêm vắc xin phòng cúm hàng năm; Rửa tay thường xuyên để tránh nhiễm khuẩn; Luôn giữ ấm cơ thể, đặc biệt là tai, mũi, họng; Khi bị cảm cúm viêm mũi cấp tính, bệnh nhân cần đi khám để được điều trị phù hợp, tránh dẫn đến tình trạng viêm đa xoang sau đó; Bệnh nhân viêm mũi dị ứng hoặc bệnh nhân mắc các bệnh lý đi kèm với viêm đa xoang nên đi khám sớm và kiểm tra thường xuyên về mũi xoang.'
+
+MERGE (o1:disease {id: 'bệnh_nhiễm_trùng_disease'})
+MERGE (o2:lifestyle {id: 'tránh_để_bị_cảm_lạnh_và_hoặc_mắc_các_bệnh_nhiễm_trùng_khác_lifestyle'})
+MERGE (o1)-[r98:preventedBy]->(o2)
+SET r98.text = 'Để ngăn ngừa viêm đa xoang, ThS.BS.CKI Hồ Văn Hữu lưu ý mỗi người như sau:  Tránh để bị cảm lạnh và hoặc mắc các bệnh nhiễm trùng khác; Tránh tiếp xúc với chất gây dị ứng như phấn hoa, lông động vật… hoặc chất kích thích như khói thuốc lá&#8230; Có chế độ ăn uống lành mạnh với rau củ tươi và trái cây giàu chất chống oxy hóa; Tiêm vắc xin phòng cúm hàng năm; Rửa tay thường xuyên để tránh nhiễm khuẩn; Luôn giữ ấm cơ thể, đặc biệt là tai, mũi, họng; Khi bị cảm cúm viêm mũi cấp tính, bệnh nhân cần đi khám để được điều trị phù hợp, tránh dẫn đến tình trạng viêm đa xoang sau đó; Bệnh nhân viêm mũi dị ứng hoặc bệnh nhân mắc các bệnh lý đi kèm với viêm đa xoang nên đi khám sớm và kiểm tra thường xuyên về mũi xoang.'
+
+MERGE (o1:cause {id: 'phấn_hoa_cause'})
+MERGE (o2:disease {id: 'viêm_đa_xoang_disease'})
+MERGE (o1)-[r99:aggravatedBy]->(o2)
+SET r99.text = 'Để ngăn ngừa viêm đa xoang, ThS.BS.CKI Hồ Văn Hữu lưu ý mỗi người như sau:  Tránh để bị cảm lạnh và hoặc mắc các bệnh nhiễm trùng khác; Tránh tiếp xúc với chất gây dị ứng như phấn hoa, lông động vật… hoặc chất kích thích như khói thuốc lá&#8230; Có chế độ ăn uống lành mạnh với rau củ tươi và trái cây giàu chất chống oxy hóa; Tiêm vắc xin phòng cúm hàng năm; Rửa tay thường xuyên để tránh nhiễm khuẩn; Luôn giữ ấm cơ thể, đặc biệt là tai, mũi, họng; Khi bị cảm cúm viêm mũi cấp tính, bệnh nhân cần đi khám để được điều trị phù hợp, tránh dẫn đến tình trạng viêm đa xoang sau đó; Bệnh nhân viêm mũi dị ứng hoặc bệnh nhân mắc các bệnh lý đi kèm với viêm đa xoang nên đi khám sớm và kiểm tra thường xuyên về mũi xoang.'
+
+MERGE (o1:cause {id: 'lông_động_vật_cause'})
+MERGE (o2:disease {id: 'viêm_đa_xoang_disease'})
+MERGE (o1)-[r100:aggravatedBy]->(o2)
+SET r100.text = 'Để ngăn ngừa viêm đa xoang, ThS.BS.CKI Hồ Văn Hữu lưu ý mỗi người như sau:  Tránh để bị cảm lạnh và hoặc mắc các bệnh nhiễm trùng khác; Tránh tiếp xúc với chất gây dị ứng như phấn hoa, lông động vật… hoặc chất kích thích như khói thuốc lá&#8230; Có chế độ ăn uống lành mạnh với rau củ tươi và trái cây giàu chất chống oxy hóa; Tiêm vắc xin phòng cúm hàng năm; Rửa tay thường xuyên để tránh nhiễm khuẩn; Luôn giữ ấm cơ thể, đặc biệt là tai, mũi, họng; Khi bị cảm cúm viêm mũi cấp tính, bệnh nhân cần đi khám để được điều trị phù hợp, tránh dẫn đến tình trạng viêm đa xoang sau đó; Bệnh nhân viêm mũi dị ứng hoặc bệnh nhân mắc các bệnh lý đi kèm với viêm đa xoang nên đi khám sớm và kiểm tra thường xuyên về mũi xoang.'
+
+MERGE (o1:cause {id: 'khói_thuốc_lá_cause'})
+MERGE (o2:disease {id: 'viêm_đa_xoang_disease'})
+MERGE (o1)-[r101:aggravatedBy]->(o2)
+SET r101.text = 'Để ngăn ngừa viêm đa xoang, ThS.BS.CKI Hồ Văn Hữu lưu ý mỗi người như sau:  Tránh để bị cảm lạnh và hoặc mắc các bệnh nhiễm trùng khác; Tránh tiếp xúc với chất gây dị ứng như phấn hoa, lông động vật… hoặc chất kích thích như khói thuốc lá&#8230; Có chế độ ăn uống lành mạnh với rau củ tươi và trái cây giàu chất chống oxy hóa; Tiêm vắc xin phòng cúm hàng năm; Rửa tay thường xuyên để tránh nhiễm khuẩn; Luôn giữ ấm cơ thể, đặc biệt là tai, mũi, họng; Khi bị cảm cúm viêm mũi cấp tính, bệnh nhân cần đi khám để được điều trị phù hợp, tránh dẫn đến tình trạng viêm đa xoang sau đó; Bệnh nhân viêm mũi dị ứng hoặc bệnh nhân mắc các bệnh lý đi kèm với viêm đa xoang nên đi khám sớm và kiểm tra thường xuyên về mũi xoang.'
+
+MERGE (o1:food {id: 'rau_củ_tươi_food'})
+MERGE (o2:disease {id: 'viêm_đa_xoang_disease'})
+MERGE (o1)-[r102:preventedBy]->(o2)
+SET r102.text = 'Để ngăn ngừa viêm đa xoang, ThS.BS.CKI Hồ Văn Hữu lưu ý mỗi người như sau:  Tránh để bị cảm lạnh và hoặc mắc các bệnh nhiễm trùng khác; Tránh tiếp xúc với chất gây dị ứng như phấn hoa, lông động vật… hoặc chất kích thích như khói thuốc lá&#8230; Có chế độ ăn uống lành mạnh với rau củ tươi và trái cây giàu chất chống oxy hóa; Tiêm vắc xin phòng cúm hàng năm; Rửa tay thường xuyên để tránh nhiễm khuẩn; Luôn giữ ấm cơ thể, đặc biệt là tai, mũi, họng; Khi bị cảm cúm viêm mũi cấp tính, bệnh nhân cần đi khám để được điều trị phù hợp, tránh dẫn đến tình trạng viêm đa xoang sau đó; Bệnh nhân viêm mũi dị ứng hoặc bệnh nhân mắc các bệnh lý đi kèm với viêm đa xoang nên đi khám sớm và kiểm tra thường xuyên về mũi xoang.'
+
+MERGE (o1:food {id: 'trái_cây_giàu_chất_chống_oxy_hóa_food'})
+MERGE (o2:disease {id: 'viêm_đa_xoang_disease'})
+MERGE (o1)-[r103:preventedBy]->(o2)
+SET r103.text = 'Để ngăn ngừa viêm đa xoang, ThS.BS.CKI Hồ Văn Hữu lưu ý mỗi người như sau:  Tránh để bị cảm lạnh và hoặc mắc các bệnh nhiễm trùng khác; Tránh tiếp xúc với chất gây dị ứng như phấn hoa, lông động vật… hoặc chất kích thích như khói thuốc lá&#8230; Có chế độ ăn uống lành mạnh với rau củ tươi và trái cây giàu chất chống oxy hóa; Tiêm vắc xin phòng cúm hàng năm; Rửa tay thường xuyên để tránh nhiễm khuẩn; Luôn giữ ấm cơ thể, đặc biệt là tai, mũi, họng; Khi bị cảm cúm viêm mũi cấp tính, bệnh nhân cần đi khám để được điều trị phù hợp, tránh dẫn đến tình trạng viêm đa xoang sau đó; Bệnh nhân viêm mũi dị ứng hoặc bệnh nhân mắc các bệnh lý đi kèm với viêm đa xoang nên đi khám sớm và kiểm tra thường xuyên về mũi xoang.'
+
+MERGE (o1:treatment {id: 'tiêm_vắc_xin_phòng_cúm_treatment'})
+MERGE (o2:disease {id: 'viêm_đa_xoang_disease'})
+MERGE (o1)-[r104:preventedBy]->(o2)
+SET r104.text = 'Để ngăn ngừa viêm đa xoang, ThS.BS.CKI Hồ Văn Hữu lưu ý mỗi người như sau:  Tránh để bị cảm lạnh và hoặc mắc các bệnh nhiễm trùng khác; Tránh tiếp xúc với chất gây dị ứng như phấn hoa, lông động vật… hoặc chất kích thích như khói thuốc lá&#8230; Có chế độ ăn uống lành mạnh với rau củ tươi và trái cây giàu chất chống oxy hóa; Tiêm vắc xin phòng cúm hàng năm; Rửa tay thường xuyên để tránh nhiễm khuẩn; Luôn giữ ấm cơ thể, đặc biệt là tai, mũi, họng; Khi bị cảm cúm viêm mũi cấp tính, bệnh nhân cần đi khám để được điều trị phù hợp, tránh dẫn đến tình trạng viêm đa xoang sau đó; Bệnh nhân viêm mũi dị ứng hoặc bệnh nhân mắc các bệnh lý đi kèm với viêm đa xoang nên đi khám sớm và kiểm tra thường xuyên về mũi xoang.'
+
+MERGE (o1:lifestyle {id: 'rửa_tay_thường_xuyên_lifestyle'})
+MERGE (o2:disease {id: 'viêm_đa_xoang_disease'})
+MERGE (o1)-[r105:preventedBy]->(o2)
+SET r105.text = 'Để ngăn ngừa viêm đa xoang, ThS.BS.CKI Hồ Văn Hữu lưu ý mỗi người như sau:  Tránh để bị cảm lạnh và hoặc mắc các bệnh nhiễm trùng khác; Tránh tiếp xúc với chất gây dị ứng như phấn hoa, lông động vật… hoặc chất kích thích như khói thuốc lá&#8230; Có chế độ ăn uống lành mạnh với rau củ tươi và trái cây giàu chất chống oxy hóa; Tiêm vắc xin phòng cúm hàng năm; Rửa tay thường xuyên để tránh nhiễm khuẩn; Luôn giữ ấm cơ thể, đặc biệt là tai, mũi, họng; Khi bị cảm cúm viêm mũi cấp tính, bệnh nhân cần đi khám để được điều trị phù hợp, tránh dẫn đến tình trạng viêm đa xoang sau đó; Bệnh nhân viêm mũi dị ứng hoặc bệnh nhân mắc các bệnh lý đi kèm với viêm đa xoang nên đi khám sớm và kiểm tra thường xuyên về mũi xoang.'
+
+MERGE (o1:lifestyle {id: 'giữ_ấm_cơ_thể_lifestyle'})
+MERGE (o2:disease {id: 'viêm_đa_xoang_disease'})
+MERGE (o1)-[r106:preventedBy]->(o2)
+SET r106.text = 'Để ngăn ngừa viêm đa xoang, ThS.BS.CKI Hồ Văn Hữu lưu ý mỗi người như sau:  Tránh để bị cảm lạnh và hoặc mắc các bệnh nhiễm trùng khác; Tránh tiếp xúc với chất gây dị ứng như phấn hoa, lông động vật… hoặc chất kích thích như khói thuốc lá&#8230; Có chế độ ăn uống lành mạnh với rau củ tươi và trái cây giàu chất chống oxy hóa; Tiêm vắc xin phòng cúm hàng năm; Rửa tay thường xuyên để tránh nhiễm khuẩn; Luôn giữ ấm cơ thể, đặc biệt là tai, mũi, họng; Khi bị cảm cúm viêm mũi cấp tính, bệnh nhân cần đi khám để được điều trị phù hợp, tránh dẫn đến tình trạng viêm đa xoang sau đó; Bệnh nhân viêm mũi dị ứng hoặc bệnh nhân mắc các bệnh lý đi kèm với viêm đa xoang nên đi khám sớm và kiểm tra thường xuyên về mũi xoang.'
+
+MERGE (o1:organ {id: 'tai__mũi__họng_organ'})
+MERGE (o2:organ {id: 'cơ_thể_organ'})
+MERGE (o1)-[r107:locatedIn]->(o2)
+SET r107.text = 'Để ngăn ngừa viêm đa xoang, ThS.BS.CKI Hồ Văn Hữu lưu ý mỗi người như sau:  Tránh để bị cảm lạnh và hoặc mắc các bệnh nhiễm trùng khác; Tránh tiếp xúc với chất gây dị ứng như phấn hoa, lông động vật… hoặc chất kích thích như khói thuốc lá&#8230; Có chế độ ăn uống lành mạnh với rau củ tươi và trái cây giàu chất chống oxy hóa; Tiêm vắc xin phòng cúm hàng năm; Rửa tay thường xuyên để tránh nhiễm khuẩn; Luôn giữ ấm cơ thể, đặc biệt là tai, mũi, họng; Khi bị cảm cúm viêm mũi cấp tính, bệnh nhân cần đi khám để được điều trị phù hợp, tránh dẫn đến tình trạng viêm đa xoang sau đó; Bệnh nhân viêm mũi dị ứng hoặc bệnh nhân mắc các bệnh lý đi kèm với viêm đa xoang nên đi khám sớm và kiểm tra thường xuyên về mũi xoang.'
+
+MERGE (o1:disease {id: 'cảm_cúm_viêm_mũi_cấp_tính_disease'})
+MERGE (o2:disease {id: 'viêm_đa_xoang_disease'})
+MERGE (o1)-[r108:isSymptomOf]->(o2)
+SET r108.text = 'Để ngăn ngừa viêm đa xoang, ThS.BS.CKI Hồ Văn Hữu lưu ý mỗi người như sau:  Tránh để bị cảm lạnh và hoặc mắc các bệnh nhiễm trùng khác; Tránh tiếp xúc với chất gây dị ứng như phấn hoa, lông động vật… hoặc chất kích thích như khói thuốc lá&#8230; Có chế độ ăn uống lành mạnh với rau củ tươi và trái cây giàu chất chống oxy hóa; Tiêm vắc xin phòng cúm hàng năm; Rửa tay thường xuyên để tránh nhiễm khuẩn; Luôn giữ ấm cơ thể, đặc biệt là tai, mũi, họng; Khi bị cảm cúm viêm mũi cấp tính, bệnh nhân cần đi khám để được điều trị phù hợp, tránh dẫn đến tình trạng viêm đa xoang sau đó; Bệnh nhân viêm mũi dị ứng hoặc bệnh nhân mắc các bệnh lý đi kèm với viêm đa xoang nên đi khám sớm và kiểm tra thường xuyên về mũi xoang.'
+
+MERGE (o1:disease {id: 'viêm_đa_xoang_disease'})
+MERGE (o2:treatment {id: 'điều_trị_phù_hợp_treatment'})
+MERGE (o1)-[r109:treatedBy]->(o2)
+SET r109.text = 'Để ngăn ngừa viêm đa xoang, ThS.BS.CKI Hồ Văn Hữu lưu ý mỗi người như sau:  Tránh để bị cảm lạnh và hoặc mắc các bệnh nhiễm trùng khác; Tránh tiếp xúc với chất gây dị ứng như phấn hoa, lông động vật… hoặc chất kích thích như khói thuốc lá&#8230; Có chế độ ăn uống lành mạnh với rau củ tươi và trái cây giàu chất chống oxy hóa; Tiêm vắc xin phòng cúm hàng năm; Rửa tay thường xuyên để tránh nhiễm khuẩn; Luôn giữ ấm cơ thể, đặc biệt là tai, mũi, họng; Khi bị cảm cúm viêm mũi cấp tính, bệnh nhân cần đi khám để được điều trị phù hợp, tránh dẫn đến tình trạng viêm đa xoang sau đó; Bệnh nhân viêm mũi dị ứng hoặc bệnh nhân mắc các bệnh lý đi kèm với viêm đa xoang nên đi khám sớm và kiểm tra thường xuyên về mũi xoang.'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o2:disease {id: 'viêm_đa_xoang_disease'})
+MERGE (o1)-[r110:relatedTo]->(o2)
+SET r110.text = 'Để ngăn ngừa viêm đa xoang, ThS.BS.CKI Hồ Văn Hữu lưu ý mỗi người như sau:  Tránh để bị cảm lạnh và hoặc mắc các bệnh nhiễm trùng khác; Tránh tiếp xúc với chất gây dị ứng như phấn hoa, lông động vật… hoặc chất kích thích như khói thuốc lá&#8230; Có chế độ ăn uống lành mạnh với rau củ tươi và trái cây giàu chất chống oxy hóa; Tiêm vắc xin phòng cúm hàng năm; Rửa tay thường xuyên để tránh nhiễm khuẩn; Luôn giữ ấm cơ thể, đặc biệt là tai, mũi, họng; Khi bị cảm cúm viêm mũi cấp tính, bệnh nhân cần đi khám để được điều trị phù hợp, tránh dẫn đến tình trạng viêm đa xoang sau đó; Bệnh nhân viêm mũi dị ứng hoặc bệnh nhân mắc các bệnh lý đi kèm với viêm đa xoang nên đi khám sớm và kiểm tra thường xuyên về mũi xoang.'
+
+MERGE (o1:treatment {id: 'tiêm_vắc_xin_phòng_cúm_mùa_treatment'})
+MERGE (o2:disease {id: 'viêm_xoang_disease'})
+MERGE (o1)-[r111:preventedBy]->(o2)
+SET r111.text = 'Tiêm vắc xin phòng cúm mùa hàng năm là một trong những cách phòng biến chứng gây viêm xoang.'
+
+MERGE (o1:disease {id: 'viêm_đa_xoang_disease'})
+MERGE (o2:disease {id: 'viêm_não_-_màng_não_disease'})
+MERGE (o1)-[r112:isSymptomOf]->(o2)
+SET r112.text = 'Viêm đa xoang là bệnh lý thường gặp trong dân số, nhưng nếu chủ quan không được điều trị, các biến chứng có thể xảy ra ảnh hưởng tới sức khỏe, để lại các di chứng hoặc đe dọa tính mạng người bệnh: viêm não - màng não, áp xe não, viêm - áp xe ổ mắt, nhiễm trùng huyết.'
+
+MERGE (o1:disease {id: 'viêm_đa_xoang_disease'})
+MERGE (o2:disease {id: 'áp_xe_não_disease'})
+MERGE (o1)-[r113:isSymptomOf]->(o2)
+SET r113.text = 'Viêm đa xoang là bệnh lý thường gặp trong dân số, nhưng nếu chủ quan không được điều trị, các biến chứng có thể xảy ra ảnh hưởng tới sức khỏe, để lại các di chứng hoặc đe dọa tính mạng người bệnh: viêm não - màng não, áp xe não, viêm - áp xe ổ mắt, nhiễm trùng huyết.'
+
+MERGE (o1:disease {id: 'viêm_đa_xoang_disease'})
+MERGE (o2:disease {id: 'viêm_-_áp_xe_ổ_mắt_disease'})
+MERGE (o1)-[r114:isSymptomOf]->(o2)
+SET r114.text = 'Viêm đa xoang là bệnh lý thường gặp trong dân số, nhưng nếu chủ quan không được điều trị, các biến chứng có thể xảy ra ảnh hưởng tới sức khỏe, để lại các di chứng hoặc đe dọa tính mạng người bệnh: viêm não - màng não, áp xe não, viêm - áp xe ổ mắt, nhiễm trùng huyết.'
+
+MERGE (o1:disease {id: 'viêm_đa_xoang_disease'})
+MERGE (o2:disease {id: 'nhiễm_trùng_huyết_disease'})
+MERGE (o1)-[r115:isSymptomOf]->(o2)
+SET r115.text = 'Viêm đa xoang là bệnh lý thường gặp trong dân số, nhưng nếu chủ quan không được điều trị, các biến chứng có thể xảy ra ảnh hưởng tới sức khỏe, để lại các di chứng hoặc đe dọa tính mạng người bệnh: viêm não - màng não, áp xe não, viêm - áp xe ổ mắt, nhiễm trùng huyết.'
+
+MERGE (o1:disease {id: 'viêm_đa_xoang_disease'})
+MERGE (o2:symptom {id: 'đau_đầu_symptom'})
+MERGE (o1)-[r116:isSymptomOf]->(o2)
+SET r116.text = 'Viêm đa xoang thường có biểu hiện đau đầu, tình trạng viêm bất cứ một xoang đơn lẻ nào cũng có thể gây đau đầu và càng nghiêm trọng hơn khi bị viêm đa xoang.'
+
+MERGE (o1:symptom {id: 'thiếu_oxy_não_symptom'})
+MERGE (o2:symptom {id: 'đau_đầu_symptom'})
+MERGE (o1)-[r117:isSymptomOf]->(o2)
+SET r117.text = 'Sự tắc nghẽn các xoang dẫn đến thiếu oxy lên não, thiếu oxy não sẽ dẫn đến đau đầu, mệt mỏi.'
+
+MERGE (o1:symptom {id: 'thiếu_oxy_não_symptom'})
+MERGE (o2:symptom {id: 'mệt_mỏi_symptom'})
+MERGE (o1)-[r118:isSymptomOf]->(o2)
+SET r118.text = 'Sự tắc nghẽn các xoang dẫn đến thiếu oxy lên não, thiếu oxy não sẽ dẫn đến đau đầu, mệt mỏi.'
+
+MERGE (o1:symptom {id: 'đau_đầu_dữ_dội_symptom'})
+MERGE (o2:disease {id: 'biến_chứng_disease'})
+MERGE (o1)-[r119:isSymptomOf]->(o2)
+SET r119.text = 'Người bệnh cần nhập viện ngay khi nghi ngờ biến chứng xảy ra, các triệu chứng gợi ý như đau đầu dữ dội, sốt cao liên tục, sưng nề mắt hoặc nhìn mờ.'
+
+MERGE (o1:symptom {id: 'sốt_cao_liên_tục_symptom'})
+MERGE (o2:disease {id: 'biến_chứng_disease'})
+MERGE (o1)-[r120:isSymptomOf]->(o2)
+SET r120.text = 'Người bệnh cần nhập viện ngay khi nghi ngờ biến chứng xảy ra, các triệu chứng gợi ý như đau đầu dữ dội, sốt cao liên tục, sưng nề mắt hoặc nhìn mờ.'
+
+MERGE (o1:symptom {id: 'sưng_nề_mắt_symptom'})
+MERGE (o2:disease {id: 'biến_chứng_disease'})
+MERGE (o1)-[r121:isSymptomOf]->(o2)
+SET r121.text = 'Người bệnh cần nhập viện ngay khi nghi ngờ biến chứng xảy ra, các triệu chứng gợi ý như đau đầu dữ dội, sốt cao liên tục, sưng nề mắt hoặc nhìn mờ.'
+
+MERGE (o1:symptom {id: 'nhìn_mờ_symptom'})
+MERGE (o2:disease {id: 'biến_chứng_disease'})
+MERGE (o1)-[r122:isSymptomOf]->(o2)
+SET r122.text = 'Người bệnh cần nhập viện ngay khi nghi ngờ biến chứng xảy ra, các triệu chứng gợi ý như đau đầu dữ dội, sốt cao liên tục, sưng nề mắt hoặc nhìn mờ.'
+
+MERGE (o1:symptom {id: 'triệu_chứng_symptom'})
+MERGE (o2:disease {id: 'bệnh_disease'})
+MERGE (o1)-[r123:isSymptomOf]->(o2)
+SET r123.text = 'Bệnh nhân cần tái khám theo lịch hẹn của bác sĩ hoặc tái khám ngay khi triệu chứng trở nặng đột ngột.'
+
+MERGE (o1:disease {id: 'viêm_đa_xoang_disease'})
+MERGE (o2:treatment {id: 'thuốc_treatment'})
+MERGE (o1)-[r124:treatedBy]->(o2)
+SET r124.text = 'Viêm đa xoang ở trẻ em thường là cấp tính nên chủ yếu điều trị bằng thuốc.'
+
+MERGE (o1:disease {id: 'viêm_đa_xoang_disease'})
+MERGE (o2:cause {id: 'virus_cause'})
+MERGE (o1)-[r125:causedBy]->(o2)
+SET r125.text = 'Điều quan trọng, bác sĩ cần xác định tác nhân là virus hay vi khuẩn để sử dụng điều trị kháng sinh thích hợp.'
+
+MERGE (o1:disease {id: 'viêm_đa_xoang_disease'})
+MERGE (o2:cause {id: 'vi_khuẩn_cause'})
+MERGE (o1)-[r126:causedBy]->(o2)
+SET r126.text = 'Điều quan trọng, bác sĩ cần xác định tác nhân là virus hay vi khuẩn để sử dụng điều trị kháng sinh thích hợp.'
+
+MERGE (o1:disease {id: 'viêm_đa_xoang_disease'})
+MERGE (o2:treatment {id: 'kháng_sinh_treatment'})
+MERGE (o1)-[r127:treatedBy]->(o2)
+SET r127.text = 'Điều quan trọng, bác sĩ cần xác định tác nhân là virus hay vi khuẩn để sử dụng điều trị kháng sinh thích hợp.'
+
+MERGE (o1:disease {id: 'viêm_đa_xoang_disease'})
+MERGE (o2:disease {id: 'biến_chứng_mắt_disease'})
+MERGE (o1)-[r128:isSymptomOf]->(o2)
+SET r128.text = 'Mặc dù viêm đa xoang gây biến chứng mắt và nội sọ hiếm gặp ở trẻ em, nhưng vẫn có thể xảy ra, các trường hợp này cần phẫu thuật kịp thời và sử dụng kháng sinh đường tĩnh mạch sau đó.'
+
+MERGE (o1:disease {id: 'viêm_đa_xoang_disease'})
+MERGE (o2:disease {id: 'biến_chứng_nội_sọ_disease'})
+MERGE (o1)-[r129:isSymptomOf]->(o2)
+SET r129.text = 'Mặc dù viêm đa xoang gây biến chứng mắt và nội sọ hiếm gặp ở trẻ em, nhưng vẫn có thể xảy ra, các trường hợp này cần phẫu thuật kịp thời và sử dụng kháng sinh đường tĩnh mạch sau đó.'
+
+MERGE (o1:disease {id: 'biến_chứng_mắt_và_nội_sọ_disease'})
+MERGE (o2:treatment {id: 'phẫu_thuật_treatment'})
+MERGE (o1)-[r130:treatedBy]->(o2)
+SET r130.text = 'Mặc dù viêm đa xoang gây biến chứng mắt và nội sọ hiếm gặp ở trẻ em, nhưng vẫn có thể xảy ra, các trường hợp này cần phẫu thuật kịp thời và sử dụng kháng sinh đường tĩnh mạch sau đó.'

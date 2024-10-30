@@ -1,0 +1,840 @@
+
+MERGE (o1:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o2:organ {id: 'nhiễm_sắc_thể_giới_tính_x_organ'})
+MERGE (o1)-[r0:relatedTo]->(o2)
+SET r0.text = 'Thiếu men G6PD (Glucose-6-Phosphate-Dehydrogenase) là rối loạn di truyền liên kết với nhiễm sắc thể giới tính X.'
+
+MERGE (o1:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o2:disease {id: 'rối_loạn_di_truyền_disease'})
+MERGE (o1)-[r1:causedBy]->(o2)
+SET r1.text = 'Thiếu men G6PD (Glucose-6-Phosphate-Dehydrogenase) là rối loạn di truyền liên kết với nhiễm sắc thể giới tính X.'
+
+MERGE (o1:disease {id: 'rối_loạn_disease'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r2:associatedWith]->(o2)
+SET r2.text = 'Trên Thế giới, hiện có trên 600 người mang rối loại này.'
+
+MERGE (o1:lifestyle {id: 'phụ_nữ_lifestyle'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r3:associatedWith]->(o2)
+SET r3.text = 'Phụ nữ thường không mắc phải căn bệnh này, nhưng họ có thể là người mang mầm bệnh và truyền sang con cái.'
+
+MERGE (o1:disease {id: 'men_g6pd_disease'})
+MERGE (o2:test {id: 'glucose-6-phosphat_dehydrogenase_test'})
+MERGE (o1)-[r4:relatedTo]->(o2)
+SET r4.text = 'Men G6PD là một enzym có tên đầy đủ là glucose-6-phosphat dehydrogenase.'
+
+MERGE (o1:disease {id: 'men_g6pd_disease'})
+MERGE (o2:organ {id: 'màng_tế_bào_hồng_cầu_organ'})
+MERGE (o1)-[r5:affects]->(o2)
+SET r5.text = 'G6PD là một loại men giúp màng tế bào hồng cầu giữ nguyên vẹn, nó vô cùng cần thiết để xúc tác phản ứng trong hồng cầu giúp cho màng hồng cầu bền vững trước các tác nhân gây hại.'
+
+MERGE (o1:disease {id: 'thiếu_hụt_g6pd_disease'})
+MERGE (o2:cause {id: 'đột_biến_cause'})
+MERGE (o1)-[r6:causedBy]->(o2)
+SET r6.text = 'Thiếu hụt G6PD là một tình trạng di truyền do đột biến hoặc thay đổi trong gen G6PD.'
+
+MERGE (o1:organ {id: 'gen_g6pd_organ'})
+MERGE (o2:test {id: 'enzym_g6pd_test'})
+MERGE (o1)-[r7:relatedTo]->(o2)
+SET r7.text = 'Gen này có chức năng đảm bảo cơ thể tạo ra đủ lượng enzym G6PD.'
+
+MERGE (o1:cause {id: 'đột_biến_gen_g6pd_cause'})
+MERGE (o2:cause {id: 'giảm_lượng_protein_cause'})
+MERGE (o1)-[r8:causes]->(o2)
+SET r8.text = 'Do đó, nếu gen G6PD bị đột biến sẽ làm giảm lượng protein hữu ích này trong cơ thể.'
+
+MERGE (o1:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o2:organ {id: 'nhiễm_sắc_thể_giới_tính_x_organ'})
+MERGE (o1)-[r9:relatedTo]->(o2)
+SET r9.text = 'Thiếu men G6PD là bệnh lý bẩm sinh di truyền lặn liên kết với nhiễm sắc thể giới tính X, bé trai có tỷ lệ mắc bệnh cao gấp hai lần bé gái.'
+
+MERGE (o1:lifestyle {id: 'bé_trai_lifestyle'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r10:associatedWith]->(o2)
+SET r10.text = 'Thiếu men G6PD là bệnh lý bẩm sinh di truyền lặn liên kết với nhiễm sắc thể giới tính X, bé trai có tỷ lệ mắc bệnh cao gấp hai lần bé gái.'
+
+MERGE (o1:lifestyle {id: 'bé_gái_lifestyle'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r11:associatedWith]->(o2)
+SET r11.text = 'Thiếu men G6PD là bệnh lý bẩm sinh di truyền lặn liên kết với nhiễm sắc thể giới tính X, bé trai có tỷ lệ mắc bệnh cao gấp hai lần bé gái.'
+
+MERGE (o1:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o2:lifestyle {id: '400_triệu_người_lifestyle'})
+MERGE (o1)-[r12:associatedWith]->(o2)
+SET r12.text = 'Trên thế giới ước tính hiện có gần 400 triệu người thiếu men G6PD.'
+
+MERGE (o1:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o2:lifestyle {id: '1.000_trẻ_chào_đời_lifestyle'})
+MERGE (o1)-[r13:associatedWith]->(o2)
+SET r13.text = 'Con số này ở Việt Nam cũng không hề nhỏ: ước tính cứ 1.000 trẻ chào đời, có 4 trẻ bị thiếu men G6PD.'
+
+MERGE (o1:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o2:organ {id: 'hồng_cầu_organ'})
+MERGE (o1)-[r14:affects]->(o2)
+SET r14.text = 'Trẻ bị thiếu men G6PD này sẽ có rất ít G6PD trong hồng cầu.'
+
+MERGE (o1:organ {id: 'hồng_cầu_organ'})
+MERGE (o2:cause {id: 'tiếp_xúc_với_thuốc__hoá_chất__thức_ăn_hoặc_nhiễm_trùng_cause'})
+MERGE (o1)-[r15:causedBy]->(o2)
+SET r15.text = 'Khi tiếp xúc với một số loại thuốc, hoá chất có chất oxy hóa, thức ăn hoặc khi bị nhiễm trùng, hồng cầu dễ bị vỡ (gọi là tán huyết) dẫn đến thiếu máu khi hồng cầu trong cơ thể còn rất ít.'
+
+MERGE (o1:symptom {id: 'tán_huyết_symptom'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r16:isSymptomOf]->(o2)
+SET r16.text = 'Khi tiếp xúc với một số loại thuốc, hoá chất có chất oxy hóa, thức ăn hoặc khi bị nhiễm trùng, hồng cầu dễ bị vỡ (gọi là tán huyết) dẫn đến thiếu máu khi hồng cầu trong cơ thể còn rất ít.'
+
+MERGE (o1:symptom {id: 'thiếu_máu_symptom'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r17:isSymptomOf]->(o2)
+SET r17.text = 'Khi tiếp xúc với một số loại thuốc, hoá chất có chất oxy hóa, thức ăn hoặc khi bị nhiễm trùng, hồng cầu dễ bị vỡ (gọi là tán huyết) dẫn đến thiếu máu khi hồng cầu trong cơ thể còn rất ít.'
+
+MERGE (o1:symptom {id: 'tan_máu_symptom'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r18:isSymptomOf]->(o2)
+SET r18.text = 'Hiện tượng tan máu diễn ra ở các mức độ khác nhau.'
+
+MERGE (o1:symptom {id: 'tan_máu_nhẹ_symptom'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r19:isSymptomOf]->(o2)
+SET r19.text = 'Tan máu nhẹ rất khó phát hiện nhưng nếu kéo dài có thể gây ảnh hưởng lên tim, thận, gan, mắt và có thể gây nguy hiểm đến tính mạng.'
+
+MERGE (o1:symptom {id: 'tan_máu_nhẹ_symptom'})
+MERGE (o2:organ {id: 'tim__thận__gan__mắt_organ'})
+MERGE (o1)-[r20:affects]->(o2)
+SET r20.text = 'Tan máu nhẹ rất khó phát hiện nhưng nếu kéo dài có thể gây ảnh hưởng lên tim, thận, gan, mắt và có thể gây nguy hiểm đến tính mạng.'
+
+MERGE (o1:symptom {id: 'tan_máu_nhẹ_symptom'})
+MERGE (o2:cause {id: 'nguy_hiểm_đến_tính_mạng_cause'})
+MERGE (o1)-[r21:causedBy]->(o2)
+SET r21.text = 'Tan máu nhẹ rất khó phát hiện nhưng nếu kéo dài có thể gây ảnh hưởng lên tim, thận, gan, mắt và có thể gây nguy hiểm đến tính mạng.'
+
+MERGE (o1:symptom {id: 'tan_máu_nặng_symptom'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r22:isSymptomOf]->(o2)
+SET r22.text = 'Các triệu chứng của tan máu nặng như:'
+
+MERGE (o1:symptom {id: 'vàng_da_symptom'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r23:isSymptomOf]->(o2)
+SET r23.text = 'Vàng da, vàng mắt;'
+
+MERGE (o1:symptom {id: 'vàng_mắt_symptom'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r24:isSymptomOf]->(o2)
+SET r24.text = 'Vàng da, vàng mắt;'
+
+MERGE (o1:symptom {id: 'khó_thở_symptom'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r25:isSymptomOf]->(o2)
+SET r25.text = 'Khó thở;'
+
+MERGE (o1:symptom {id: 'rối_loạn_nhịp_tim_symptom'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r26:isSymptomOf]->(o2)
+SET r26.text = 'Rối loạn nhịp tim;'
+
+MERGE (o1:symptom {id: 'nước_tiểu_vàng_đậm_symptom'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r27:isSymptomOf]->(o2)
+SET r27.text = 'Nước tiểu vàng đậm;'
+
+MERGE (o1:symptom {id: 'chóng_mặt_symptom'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r28:isSymptomOf]->(o2)
+SET r28.text = 'Chóng mặt, kiệt sức;'
+
+MERGE (o1:symptom {id: 'kiệt_sức_symptom'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r29:isSymptomOf]->(o2)
+SET r29.text = 'Chóng mặt, kiệt sức;'
+
+MERGE (o1:symptom {id: 'đau_bụng_symptom'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r30:isSymptomOf]->(o2)
+SET r30.text = 'Đau bụng, đau lưng;'
+
+MERGE (o1:symptom {id: 'đau_lưng_symptom'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r31:isSymptomOf]->(o2)
+SET r31.text = 'Đau bụng, đau lưng;'
+
+MERGE (o1:symptom {id: 'sốt_symptom'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r32:isSymptomOf]->(o2)
+SET r32.text = 'Sốt.'
+
+MERGE (o1:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o2:symptom {id: 'vàng_da_symptom'})
+MERGE (o1)-[r33:associatedWith]->(o2)
+SET r33.text = 'Trẻ sơ sinh thiếu G6PD có thể bị vàng da trong vòng 3-6 ngày sau sinh.'
+
+MERGE (o1:symptom {id: 'vàng_da_symptom'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r34:isSymptomOf]->(o2)
+SET r34.text = 'Trẻ sơ sinh thiếu G6PD có thể bị vàng da trong vòng 3-6 ngày sau sinh.'
+
+MERGE (o1:disease {id: 'bệnh_về_não_disease'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r35:isSymptomOf]->(o2)
+SET r35.text = 'Nếu nặng, thời gian này sẽ kéo dài hơn dẫn đến bệnh về não hay biến chứng thần kinh, chậm phát triển tâm thần, vận động.'
+
+MERGE (o1:disease {id: 'biến_chứng_thần_kinh_disease'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r36:isSymptomOf]->(o2)
+SET r36.text = 'Nếu nặng, thời gian này sẽ kéo dài hơn dẫn đến bệnh về não hay biến chứng thần kinh, chậm phát triển tâm thần, vận động.'
+
+MERGE (o1:symptom {id: 'chậm_phát_triển_tâm_thần_symptom'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r37:isSymptomOf]->(o2)
+SET r37.text = 'Nếu nặng, thời gian này sẽ kéo dài hơn dẫn đến bệnh về não hay biến chứng thần kinh, chậm phát triển tâm thần, vận động.'
+
+MERGE (o1:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o2:symptom {id: 'phá_hủy_tế_bào_hồng_cầu_symptom'})
+MERGE (o1)-[r38:causedBy]->(o2)
+SET r38.text = 'Khi thiếu men G6PD, tế bào hồng cầu sẽ bị phá hủy khi tiếp xúc với chất oxy hóa có trong thức ăn hoặc thuốc.'
+
+MERGE (o1:cause {id: 'chất_oxy_hóa_cause'})
+MERGE (o2:symptom {id: 'phá_hủy_tế_bào_hồng_cầu_symptom'})
+MERGE (o1)-[r39:causedBy]->(o2)
+SET r39.text = 'Khi thiếu men G6PD, tế bào hồng cầu sẽ bị phá hủy khi tiếp xúc với chất oxy hóa có trong thức ăn hoặc thuốc.'
+
+MERGE (o1:symptom {id: 'tán_huyết_symptom'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r40:isSymptomOf]->(o2)
+SET r40.text = 'Tán huyết làm tăng lượng bilirubin trong máu gây vàng da, vàng mắt, thiếu máu ở trẻ kèm theo suy thận.'
+
+MERGE (o1:symptom {id: 'tăng_lượng_bilirubin_trong_máu_symptom'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r41:isSymptomOf]->(o2)
+SET r41.text = 'Tán huyết làm tăng lượng bilirubin trong máu gây vàng da, vàng mắt, thiếu máu ở trẻ kèm theo suy thận.'
+
+MERGE (o1:symptom {id: 'vàng_da_symptom'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r42:isSymptomOf]->(o2)
+SET r42.text = 'Tán huyết làm tăng lượng bilirubin trong máu gây vàng da, vàng mắt, thiếu máu ở trẻ kèm theo suy thận.'
+
+MERGE (o1:symptom {id: 'vàng_mắt_symptom'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r43:isSymptomOf]->(o2)
+SET r43.text = 'Tán huyết làm tăng lượng bilirubin trong máu gây vàng da, vàng mắt, thiếu máu ở trẻ kèm theo suy thận.'
+
+MERGE (o1:symptom {id: 'thiếu_máu_symptom'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r44:isSymptomOf]->(o2)
+SET r44.text = 'Tán huyết làm tăng lượng bilirubin trong máu gây vàng da, vàng mắt, thiếu máu ở trẻ kèm theo suy thận.'
+
+MERGE (o1:symptom {id: 'suy_thận_symptom'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r45:isSymptomOf]->(o2)
+SET r45.text = 'Tán huyết làm tăng lượng bilirubin trong máu gây vàng da, vàng mắt, thiếu máu ở trẻ kèm theo suy thận.'
+
+MERGE (o1:symptom {id: 'vàng_da_nặng_symptom'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r46:isSymptomOf]->(o2)
+SET r46.text = 'Khi trẻ bị vàng da nặng, nhất là trong 2 tuần đầu sau sinh, trẻ có thể bị tổn thương não gây ra bại não, chậm phát triển tâm thần.'
+
+MERGE (o1:symptom {id: 'tổn_thương_não_symptom'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r47:isSymptomOf]->(o2)
+SET r47.text = 'Khi trẻ bị vàng da nặng, nhất là trong 2 tuần đầu sau sinh, trẻ có thể bị tổn thương não gây ra bại não, chậm phát triển tâm thần.'
+
+MERGE (o1:symptom {id: 'bại_não_symptom'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r48:isSymptomOf]->(o2)
+SET r48.text = 'Khi trẻ bị vàng da nặng, nhất là trong 2 tuần đầu sau sinh, trẻ có thể bị tổn thương não gây ra bại não, chậm phát triển tâm thần.'
+
+MERGE (o1:symptom {id: 'chậm_phát_triển_tâm_thần_symptom'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r49:isSymptomOf]->(o2)
+SET r49.text = 'Khi trẻ bị vàng da nặng, nhất là trong 2 tuần đầu sau sinh, trẻ có thể bị tổn thương não gây ra bại não, chậm phát triển tâm thần.'
+
+MERGE (o1:symptom {id: 'thiếu_máu_nặng_symptom'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r50:isSymptomOf]->(o2)
+SET r50.text = 'Nhiều trường hợp thiếu men ở thể nặng trẻ bị thiếu máu nặng, mệt mỏi, kèm theo các biểu hiện của suy gan, suy thận, có thể tử vong nếu không được cấp cứu kịp thời.'
+
+MERGE (o1:symptom {id: 'mệt_mỏi_symptom'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r51:isSymptomOf]->(o2)
+SET r51.text = 'Nhiều trường hợp thiếu men ở thể nặng trẻ bị thiếu máu nặng, mệt mỏi, kèm theo các biểu hiện của suy gan, suy thận, có thể tử vong nếu không được cấp cứu kịp thời.'
+
+MERGE (o1:symptom {id: 'suy_gan_symptom'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r52:isSymptomOf]->(o2)
+SET r52.text = 'Nhiều trường hợp thiếu men ở thể nặng trẻ bị thiếu máu nặng, mệt mỏi, kèm theo các biểu hiện của suy gan, suy thận, có thể tử vong nếu không được cấp cứu kịp thời.'
+
+MERGE (o1:symptom {id: 'suy_thận_symptom'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r53:isSymptomOf]->(o2)
+SET r53.text = 'Nhiều trường hợp thiếu men ở thể nặng trẻ bị thiếu máu nặng, mệt mỏi, kèm theo các biểu hiện của suy gan, suy thận, có thể tử vong nếu không được cấp cứu kịp thời.'
+
+MERGE (o1:symptom {id: 'tử_vong_symptom'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r54:isSymptomOf]->(o2)
+SET r54.text = 'Nhiều trường hợp thiếu men ở thể nặng trẻ bị thiếu máu nặng, mệt mỏi, kèm theo các biểu hiện của suy gan, suy thận, có thể tử vong nếu không được cấp cứu kịp thời.'
+
+MERGE (o1:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o2:treatment {id: 'phát_hiện_sớm_treatment'})
+MERGE (o1)-[r55:treatedBy]->(o2)
+SET r55.text = 'Bệnh thiếu men G6PD ở trẻ sơ sinh sẽ không nguy hiểm nếu được phát hiện sớm.'
+
+MERGE (o1:disease {id: 'thiếu_hụt_g6pd_disease'})
+MERGE (o2:cause {id: 'gen_g6pd_đột_biến_cause'})
+MERGE (o1)-[r56:causedBy]->(o2)
+SET r56.text = 'Thiếu hụt G6PD là một rối loạn di truyền - có nghĩa là nó truyền từ cha mẹ sang con cái - được đặc trưng bởi một khiếm khuyết enzyme do gen G6PD đột biến.'
+
+MERGE (o1:cause {id: 'gen_khiếm_khuyết_cause'})
+MERGE (o2:disease {id: 'thiếu_hụt_g6pd_disease'})
+MERGE (o1)-[r57:causedBy]->(o2)
+SET r57.text = 'Gen khiếm khuyết gây ra sự thiếu hụt này nằm trên nhiễm sắc thể X, là một trong hai nhiễm sắc thể giới tính.'
+
+MERGE (o1:organ {id: 'nhiễm_sắc_thể_x_organ'})
+MERGE (o2:cause {id: 'gen_khiếm_khuyết_cause'})
+MERGE (o1)-[r58:locatedIn]->(o2)
+SET r58.text = 'Gen khiếm khuyết gây ra sự thiếu hụt này nằm trên nhiễm sắc thể X, là một trong hai nhiễm sắc thể giới tính.'
+
+MERGE (o1:lifestyle {id: 'đàn_ông_lifestyle'})
+MERGE (o2:disease {id: 'thiếu_hụt_g6pd_disease'})
+MERGE (o1)-[r59:associatedWith]->(o2)
+SET r59.text = 'Đàn ông chỉ có một nhiễm sắc thể X, trong khi ở phụ nữ, số lượng nhiễm sắc thể X là hai.'
+
+MERGE (o1:lifestyle {id: 'phụ_nữ_lifestyle'})
+MERGE (o2:disease {id: 'thiếu_hụt_g6pd_disease'})
+MERGE (o1)-[r60:associatedWith]->(o2)
+SET r60.text = 'Đàn ông chỉ có một nhiễm sắc thể X, trong khi ở phụ nữ, số lượng nhiễm sắc thể X là hai.'
+
+MERGE (o1:cause {id: 'một_bản_sao_gen_bị_thay_đổi_cause'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r61:causedBy]->(o2)
+SET r61.text = 'Ở nam giới, chỉ cần một bản sao gen bị thay đổi là đủ để gây ra tình trạng thiếu men G6PD.'
+
+MERGE (o1:cause {id: 'cả_hai_bản_sao_của_gen_đều_bị_thay_đổi_cause'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r62:causedBy]->(o2)
+SET r62.text = 'Tuy nhiên ở phụ nữ, khi cả hai bản sao của gen đều bị thay đổi thì đột biến mới xảy ra.'
+
+MERGE (o1:lifestyle {id: 'nam_giới_lifestyle'})
+MERGE (o2:disease {id: 'thiếu_hụt_g6pd_disease'})
+MERGE (o1)-[r63:associatedWith]->(o2)
+SET r63.text = 'Vì ít có khả năng phụ nữ có hai bản sao bị thay đổi của gen này, nên nam giới bị ảnh hưởng bởi sự thiếu hụt G6PD phổ biến hơn nhiều so với nữ giới.'
+
+MERGE (o1:lifestyle {id: 'nữ_giới_lifestyle'})
+MERGE (o2:disease {id: 'thiếu_hụt_g6pd_disease'})
+MERGE (o1)-[r64:associatedWith]->(o2)
+SET r64.text = 'Vì ít có khả năng phụ nữ có hai bản sao bị thay đổi của gen này, nên nam giới bị ảnh hưởng bởi sự thiếu hụt G6PD phổ biến hơn nhiều so với nữ giới.'
+
+MERGE (o1:food {id: 'đậu_fava_food'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r65:aggravatedBy]->(o2)
+SET r65.text = 'Đậu fava được xem là một trong những loại thực phẩm gây nên triệu chứng thiếu men G6PD'
+
+MERGE (o1:cause {id: 'bị_bệnh_cause'})
+MERGE (o2:symptom {id: 'thiếu_máu_tán_huyết_symptom'})
+MERGE (o1)-[r66:causedBy]->(o2)
+SET r66.text = 'Các yếu tố nguy cơ góp phần phát triển các triệu chứng thiếu máu tán huyết liên quan đến thiếu men G6PD bao gồm: Bị bệnh, bao gồm cả nhiễm virus hoặc nhiễm trùng.'
+
+MERGE (o1:cause {id: 'nhiễm_virus_cause'})
+MERGE (o2:symptom {id: 'thiếu_máu_tán_huyết_symptom'})
+MERGE (o1)-[r67:causedBy]->(o2)
+SET r67.text = 'Các yếu tố nguy cơ góp phần phát triển các triệu chứng thiếu máu tán huyết liên quan đến thiếu men G6PD bao gồm: Bị bệnh, bao gồm cả nhiễm virus hoặc nhiễm trùng.'
+
+MERGE (o1:cause {id: 'nhiễm_trùng_cause'})
+MERGE (o2:symptom {id: 'thiếu_máu_tán_huyết_symptom'})
+MERGE (o1)-[r68:causedBy]->(o2)
+SET r68.text = 'Các yếu tố nguy cơ góp phần phát triển các triệu chứng thiếu máu tán huyết liên quan đến thiếu men G6PD bao gồm: Bị bệnh, bao gồm cả nhiễm virus hoặc nhiễm trùng.'
+
+MERGE (o1:cause {id: 'dùng_thuốc_cause'})
+MERGE (o2:symptom {id: 'thiếu_máu_tán_huyết_symptom'})
+MERGE (o1)-[r69:causedBy]->(o2)
+SET r69.text = 'Dùng một số loại thuốc gây ra phản ứng tiêu cực, góp phần làm cho các tế bào hồng cầu bị phá hủy nhanh hơn mức mà cơ thể sản sinh ra chúng.'
+
+MERGE (o1:cause {id: 'phản_ứng_tiêu_cực_cause'})
+MERGE (o2:symptom {id: 'thiếu_máu_tán_huyết_symptom'})
+MERGE (o1)-[r70:causedBy]->(o2)
+SET r70.text = 'Dùng một số loại thuốc gây ra phản ứng tiêu cực, góp phần làm cho các tế bào hồng cầu bị phá hủy nhanh hơn mức mà cơ thể sản sinh ra chúng.'
+
+MERGE (o1:cause {id: 'ăn_thực_phẩm_cause'})
+MERGE (o2:symptom {id: 'thiếu_máu_tán_huyết_symptom'})
+MERGE (o1)-[r71:causedBy]->(o2)
+SET r71.text = 'Ăn một số loại thực phẩm.'
+
+MERGE (o1:cause {id: 'tiền_sử_gia_đình_cause'})
+MERGE (o2:symptom {id: 'thiếu_máu_tán_huyết_symptom'})
+MERGE (o1)-[r72:causedBy]->(o2)
+SET r72.text = 'Có tiền sử gia đình về tình trạng này.'
+
+MERGE (o1:symptom {id: 'tế_bào_hồng_cầu_nhạy_cảm_symptom'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r73:isSymptomOf]->(o2)
+SET r73.text = 'Theo bác sĩ Mỹ Hạnh, trẻ bị thiếu men G6PD sẽ có tế bào hồng cầu nhạy cảm, dễ bị vỡ khi tiếp xúc với các tác nhân oxy hóa vào cơ thể trẻ qua bú mẹ, ăn uống, hoặc khi mắc bệnh nhiễm trùng.'
+
+MERGE (o1:symptom {id: 'dễ_bị_vỡ_symptom'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r74:isSymptomOf]->(o2)
+SET r74.text = 'Theo bác sĩ Mỹ Hạnh, trẻ bị thiếu men G6PD sẽ có tế bào hồng cầu nhạy cảm, dễ bị vỡ khi tiếp xúc với các tác nhân oxy hóa vào cơ thể trẻ qua bú mẹ, ăn uống, hoặc khi mắc bệnh nhiễm trùng.'
+
+MERGE (o1:cause {id: 'tác_nhân_oxy_hóa_cause'})
+MERGE (o2:symptom {id: 'thiếu_máu_tán_huyết_symptom'})
+MERGE (o1)-[r75:causedBy]->(o2)
+SET r75.text = 'Theo bác sĩ Mỹ Hạnh, trẻ bị thiếu men G6PD sẽ có tế bào hồng cầu nhạy cảm, dễ bị vỡ khi tiếp xúc với các tác nhân oxy hóa vào cơ thể trẻ qua bú mẹ, ăn uống, hoặc khi mắc bệnh nhiễm trùng.'
+
+MERGE (o1:lifestyle {id: 'bú_mẹ_lifestyle'})
+MERGE (o2:symptom {id: 'thiếu_máu_tán_huyết_symptom'})
+MERGE (o1)-[r76:aggravatedBy]->(o2)
+SET r76.text = 'Theo bác sĩ Mỹ Hạnh, trẻ bị thiếu men G6PD sẽ có tế bào hồng cầu nhạy cảm, dễ bị vỡ khi tiếp xúc với các tác nhân oxy hóa vào cơ thể trẻ qua bú mẹ, ăn uống, hoặc khi mắc bệnh nhiễm trùng.'
+
+MERGE (o1:lifestyle {id: 'ăn_uống_lifestyle'})
+MERGE (o2:symptom {id: 'thiếu_máu_tán_huyết_symptom'})
+MERGE (o1)-[r77:aggravatedBy]->(o2)
+SET r77.text = 'Theo bác sĩ Mỹ Hạnh, trẻ bị thiếu men G6PD sẽ có tế bào hồng cầu nhạy cảm, dễ bị vỡ khi tiếp xúc với các tác nhân oxy hóa vào cơ thể trẻ qua bú mẹ, ăn uống, hoặc khi mắc bệnh nhiễm trùng.'
+
+MERGE (o1:cause {id: 'bệnh_nhiễm_trùng_cause'})
+MERGE (o2:symptom {id: 'thiếu_máu_tán_huyết_symptom'})
+MERGE (o1)-[r78:causedBy]->(o2)
+SET r78.text = 'Theo bác sĩ Mỹ Hạnh, trẻ bị thiếu men G6PD sẽ có tế bào hồng cầu nhạy cảm, dễ bị vỡ khi tiếp xúc với các tác nhân oxy hóa vào cơ thể trẻ qua bú mẹ, ăn uống, hoặc khi mắc bệnh nhiễm trùng.'
+
+MERGE (o1:symptom {id: 'bỏ_bú_symptom'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r79:isSymptomOf]->(o2)
+SET r79.text = 'Khi trẻ bị thiếu hụt G6PD sẽ có các dấu hiệu: bỏ bú, tiểu vàng sậm, vàng da, vàng mắt.'
+
+MERGE (o1:symptom {id: 'tiểu_vàng_sậm_symptom'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r80:isSymptomOf]->(o2)
+SET r80.text = 'Khi trẻ bị thiếu hụt G6PD sẽ có các dấu hiệu: bỏ bú, tiểu vàng sậm, vàng da, vàng mắt.'
+
+MERGE (o1:symptom {id: 'vàng_da_symptom'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r81:isSymptomOf]->(o2)
+SET r81.text = 'Khi trẻ bị thiếu hụt G6PD sẽ có các dấu hiệu: bỏ bú, tiểu vàng sậm, vàng da, vàng mắt.'
+
+MERGE (o1:symptom {id: 'vàng_mắt_symptom'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r82:isSymptomOf]->(o2)
+SET r82.text = 'Khi trẻ bị thiếu hụt G6PD sẽ có các dấu hiệu: bỏ bú, tiểu vàng sậm, vàng da, vàng mắt.'
+
+MERGE (o1:symptom {id: 'nhiệt_độ_cơ_thể_tăng_đột_ngột_symptom'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r83:isSymptomOf]->(o2)
+SET r83.text = 'Ngoài ra, một số dấu hiệu cho thấy một người bị thiếu hụt G6PD là: Nhiệt độ cơ thể tăng đột ngột; Xanh xao, mệt mỏi, suy giảm sức khỏe; Nhịp tim nhanh; Mạch yếu, nhanh; Khó thở; Sốt; Chóng mặt…'
+
+MERGE (o1:symptom {id: 'xanh_xao_symptom'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r84:isSymptomOf]->(o2)
+SET r84.text = 'Ngoài ra, một số dấu hiệu cho thấy một người bị thiếu hụt G6PD là: Nhiệt độ cơ thể tăng đột ngột; Xanh xao, mệt mỏi, suy giảm sức khỏe; Nhịp tim nhanh; Mạch yếu, nhanh; Khó thở; Sốt; Chóng mặt…'
+
+MERGE (o1:symptom {id: 'mệt_mỏi_symptom'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r85:isSymptomOf]->(o2)
+SET r85.text = 'Ngoài ra, một số dấu hiệu cho thấy một người bị thiếu hụt G6PD là: Nhiệt độ cơ thể tăng đột ngột; Xanh xao, mệt mỏi, suy giảm sức khỏe; Nhịp tim nhanh; Mạch yếu, nhanh; Khó thở; Sốt; Chóng mặt…'
+
+MERGE (o1:symptom {id: 'suy_giảm_sức_khỏe_symptom'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r86:isSymptomOf]->(o2)
+SET r86.text = 'Ngoài ra, một số dấu hiệu cho thấy một người bị thiếu hụt G6PD là: Nhiệt độ cơ thể tăng đột ngột; Xanh xao, mệt mỏi, suy giảm sức khỏe; Nhịp tim nhanh; Mạch yếu, nhanh; Khó thở; Sốt; Chóng mặt…'
+
+MERGE (o1:symptom {id: 'nhịp_tim_nhanh_symptom'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r87:isSymptomOf]->(o2)
+SET r87.text = 'Ngoài ra, một số dấu hiệu cho thấy một người bị thiếu hụt G6PD là: Nhiệt độ cơ thể tăng đột ngột; Xanh xao, mệt mỏi, suy giảm sức khỏe; Nhịp tim nhanh; Mạch yếu, nhanh; Khó thở; Sốt; Chóng mặt…'
+
+MERGE (o1:symptom {id: 'mạch_yếu_symptom'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r88:isSymptomOf]->(o2)
+SET r88.text = 'Ngoài ra, một số dấu hiệu cho thấy một người bị thiếu hụt G6PD là: Nhiệt độ cơ thể tăng đột ngột; Xanh xao, mệt mỏi, suy giảm sức khỏe; Nhịp tim nhanh; Mạch yếu, nhanh; Khó thở; Sốt; Chóng mặt…'
+
+MERGE (o1:symptom {id: 'khó_thở_symptom'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r89:isSymptomOf]->(o2)
+SET r89.text = 'Ngoài ra, một số dấu hiệu cho thấy một người bị thiếu hụt G6PD là: Nhiệt độ cơ thể tăng đột ngột; Xanh xao, mệt mỏi, suy giảm sức khỏe; Nhịp tim nhanh; Mạch yếu, nhanh; Khó thở; Sốt; Chóng mặt…'
+
+MERGE (o1:symptom {id: 'sốt_symptom'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r90:isSymptomOf]->(o2)
+SET r90.text = 'Ngoài ra, một số dấu hiệu cho thấy một người bị thiếu hụt G6PD là: Nhiệt độ cơ thể tăng đột ngột; Xanh xao, mệt mỏi, suy giảm sức khỏe; Nhịp tim nhanh; Mạch yếu, nhanh; Khó thở; Sốt; Chóng mặt…'
+
+MERGE (o1:symptom {id: 'chóng_mặt_symptom'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r91:isSymptomOf]->(o2)
+SET r91.text = 'Ngoài ra, một số dấu hiệu cho thấy một người bị thiếu hụt G6PD là: Nhiệt độ cơ thể tăng đột ngột; Xanh xao, mệt mỏi, suy giảm sức khỏe; Nhịp tim nhanh; Mạch yếu, nhanh; Khó thở; Sốt; Chóng mặt…'
+
+MERGE (o1:symptom {id: 'vàng_da_symptom'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r92:isSymptomOf]->(o2)
+SET r92.text = 'Trẻ bị bệnh hầu hết không có triệu chứng cho đến khi xuất hiện các đợt tán huyết khi tiếp xúc với một số tác nhân gây tán huyết cơ thể sẽ có một số dấu hiệu: vàng da, vàng mắt, da tái, niêm nhạt, tiểu sậm màu, đau bụng, lách to, mệt, nhức đầu do thiếu máu.'
+
+MERGE (o1:symptom {id: 'vàng_mắt_symptom'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r93:isSymptomOf]->(o2)
+SET r93.text = 'Trẻ bị bệnh hầu hết không có triệu chứng cho đến khi xuất hiện các đợt tán huyết khi tiếp xúc với một số tác nhân gây tán huyết cơ thể sẽ có một số dấu hiệu: vàng da, vàng mắt, da tái, niêm nhạt, tiểu sậm màu, đau bụng, lách to, mệt, nhức đầu do thiếu máu.'
+
+MERGE (o1:symptom {id: 'da_tái_symptom'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r94:isSymptomOf]->(o2)
+SET r94.text = 'Trẻ bị bệnh hầu hết không có triệu chứng cho đến khi xuất hiện các đợt tán huyết khi tiếp xúc với một số tác nhân gây tán huyết cơ thể sẽ có một số dấu hiệu: vàng da, vàng mắt, da tái, niêm nhạt, tiểu sậm màu, đau bụng, lách to, mệt, nhức đầu do thiếu máu.'
+
+MERGE (o1:symptom {id: 'niêm_nhạt_symptom'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r95:isSymptomOf]->(o2)
+SET r95.text = 'Trẻ bị bệnh hầu hết không có triệu chứng cho đến khi xuất hiện các đợt tán huyết khi tiếp xúc với một số tác nhân gây tán huyết cơ thể sẽ có một số dấu hiệu: vàng da, vàng mắt, da tái, niêm nhạt, tiểu sậm màu, đau bụng, lách to, mệt, nhức đầu do thiếu máu.'
+
+MERGE (o1:symptom {id: 'tiểu_sậm_màu_symptom'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r96:isSymptomOf]->(o2)
+SET r96.text = 'Trẻ bị bệnh hầu hết không có triệu chứng cho đến khi xuất hiện các đợt tán huyết khi tiếp xúc với một số tác nhân gây tán huyết cơ thể sẽ có một số dấu hiệu: vàng da, vàng mắt, da tái, niêm nhạt, tiểu sậm màu, đau bụng, lách to, mệt, nhức đầu do thiếu máu.'
+
+MERGE (o1:symptom {id: 'đau_bụng_symptom'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r97:isSymptomOf]->(o2)
+SET r97.text = 'Trẻ bị bệnh hầu hết không có triệu chứng cho đến khi xuất hiện các đợt tán huyết khi tiếp xúc với một số tác nhân gây tán huyết cơ thể sẽ có một số dấu hiệu: vàng da, vàng mắt, da tái, niêm nhạt, tiểu sậm màu, đau bụng, lách to, mệt, nhức đầu do thiếu máu.'
+
+MERGE (o1:symptom {id: 'lách_to_symptom'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r98:isSymptomOf]->(o2)
+SET r98.text = 'Trẻ bị bệnh hầu hết không có triệu chứng cho đến khi xuất hiện các đợt tán huyết khi tiếp xúc với một số tác nhân gây tán huyết cơ thể sẽ có một số dấu hiệu: vàng da, vàng mắt, da tái, niêm nhạt, tiểu sậm màu, đau bụng, lách to, mệt, nhức đầu do thiếu máu.'
+
+MERGE (o1:symptom {id: 'mệt_symptom'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r99:isSymptomOf]->(o2)
+SET r99.text = 'Trẻ bị bệnh hầu hết không có triệu chứng cho đến khi xuất hiện các đợt tán huyết khi tiếp xúc với một số tác nhân gây tán huyết cơ thể sẽ có một số dấu hiệu: vàng da, vàng mắt, da tái, niêm nhạt, tiểu sậm màu, đau bụng, lách to, mệt, nhức đầu do thiếu máu.'
+
+MERGE (o1:symptom {id: 'nhức_đầu_symptom'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r100:isSymptomOf]->(o2)
+SET r100.text = 'Trẻ bị bệnh hầu hết không có triệu chứng cho đến khi xuất hiện các đợt tán huyết khi tiếp xúc với một số tác nhân gây tán huyết cơ thể sẽ có một số dấu hiệu: vàng da, vàng mắt, da tái, niêm nhạt, tiểu sậm màu, đau bụng, lách to, mệt, nhức đầu do thiếu máu.'
+
+MERGE (o1:symptom {id: 'thiếu_máu_symptom'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r101:isSymptomOf]->(o2)
+SET r101.text = 'Trẻ bị bệnh hầu hết không có triệu chứng cho đến khi xuất hiện các đợt tán huyết khi tiếp xúc với một số tác nhân gây tán huyết cơ thể sẽ có một số dấu hiệu: vàng da, vàng mắt, da tái, niêm nhạt, tiểu sậm màu, đau bụng, lách to, mệt, nhức đầu do thiếu máu.'
+
+MERGE (o1:symptom {id: 'triệu_chứng_nhẹ_symptom'})
+MERGE (o2:treatment {id: 'điều_trị_y_tế_treatment'})
+MERGE (o1)-[r102:treatedBy]->(o2)
+SET r102.text = 'Những triệu chứng nhẹ thường không cần điều trị y tế.'
+
+MERGE (o1:treatment {id: 'tạo_ra_các_tế_bào_hồng_cầu_mới_treatment'})
+MERGE (o2:symptom {id: 'thiếu_máu_symptom'})
+MERGE (o1)-[r103:treatedBy]->(o2)
+SET r103.text = 'Chỉ cần cơ thể tạo ra các tế bào hồng cầu mới, tình trạng thiếu máu sẽ được cải thiện.'
+
+MERGE (o1:test {id: 'xét_nghiệm_máu_test'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r104:diagnosedBy]->(o2)
+SET r104.text = 'Để chẩn đoán tình trạng thiếu men G6PD ở trẻ, bác sĩ sẽ thực hiện một xét nghiệm máu đơn giản để kiểm tra nồng độ men G6PD.'
+
+MERGE (o1:test {id: 'xét_nghiệm_tầm_soát_test'})
+MERGE (o2:disease {id: 'thiếu_g6pd_disease'})
+MERGE (o1)-[r105:diagnosedBy]->(o2)
+SET r105.text = 'Sau sinh khoảng 36-48 giờ, bé sẽ được lấy mẫu máu ở gót chân để làm xét nghiệm tầm soát tình trạng thiếu G6PD.'
+
+MERGE (o1:test {id: 'lấy_mẫu_máu_ở_gót_chân_test'})
+MERGE (o2:disease {id: 'thiếu_g6pd_disease'})
+MERGE (o1)-[r106:diagnosedBy]->(o2)
+SET r106.text = 'Sau sinh khoảng 36-48 giờ, bé sẽ được lấy mẫu máu ở gót chân để làm xét nghiệm tầm soát tình trạng thiếu G6PD.'
+
+MERGE (o1:disease {id: 'thiếu_g6pd_disease'})
+MERGE (o2:test {id: 'thẻ_xác_nhận_thiếu_g6pd_test'})
+MERGE (o1)-[r107:associatedWith]->(o2)
+SET r107.text = 'Các bé bị thiếu G6PD sẽ được tư vấn và được cấp thẻ xác nhận thiếu G6PD.'
+
+MERGE (o1:symptom {id: 'men_g6pd_thấp_symptom'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r108:isSymptomOf]->(o2)
+SET r108.text = 'Khi phát hiện trẻ có men G6PD thấp, đặc biệt trẻ sinh non sẽ được chăm sóc đặc biệt, ngăn ngừa tối đa nguy cơ bị nhiễm trùng, nhiễm virus.'
+
+MERGE (o1:treatment {id: 'chăm_sóc_đặc_biệt_treatment'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r109:treatedBy]->(o2)
+SET r109.text = 'Khi phát hiện trẻ có men G6PD thấp, đặc biệt trẻ sinh non sẽ được chăm sóc đặc biệt, ngăn ngừa tối đa nguy cơ bị nhiễm trùng, nhiễm virus.'
+
+MERGE (o1:symptom {id: 'nguy_cơ_bị_nhiễm_trùng__nhiễm_virus_symptom'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r110:isSymptomOf]->(o2)
+SET r110.text = 'Khi phát hiện trẻ có men G6PD thấp, đặc biệt trẻ sinh non sẽ được chăm sóc đặc biệt, ngăn ngừa tối đa nguy cơ bị nhiễm trùng, nhiễm virus.'
+
+MERGE (o1:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o2:treatment {id: 'truyền_máu_treatment'})
+MERGE (o1)-[r111:treatedBy]->(o2)
+SET r111.text = 'Việc điều trị thiếu men G6PD phụ thuộc vào triệu chứng, trẻ có thể được truyền máu nếu thiếu máu, hoặc chiếu đèn vàng da khi có chỉ định.'
+
+MERGE (o1:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o2:treatment {id: 'chiếu_đèn_vàng_da_treatment'})
+MERGE (o1)-[r112:treatedBy]->(o2)
+SET r112.text = 'Việc điều trị thiếu men G6PD phụ thuộc vào triệu chứng, trẻ có thể được truyền máu nếu thiếu máu, hoặc chiếu đèn vàng da khi có chỉ định.'
+
+MERGE (o1:symptom {id: 'thiếu_máu_symptom'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r113:isSymptomOf]->(o2)
+SET r113.text = 'Việc điều trị thiếu men G6PD phụ thuộc vào triệu chứng, trẻ có thể được truyền máu nếu thiếu máu, hoặc chiếu đèn vàng da khi có chỉ định.'
+
+MERGE (o1:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o2:lifestyle {id: 'tránh_dung_nạp_các_loại_thực_phẩm_hoặc_thuốc_lifestyle'})
+MERGE (o1)-[r114:treatedBy]->(o2)
+SET r114.text = 'Khi các triệu chứng thiếu men G6PD ở mức độ nhẹ, phương pháp điều trị hiệu quả nhất là tránh dung nạp các loại thực phẩm hoặc thuốc được xem là tác nhân gây ra triệu chứng bệnh.'
+
+MERGE (o1:treatment {id: 'thuốc_“không_an_toàn_đối_với_người_bị_thiếu_hụt_g6pd”_treatment'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r115:aggravatedBy]->(o2)
+SET r115.text = 'Bác sĩ sẽ cung cấp cho bạn danh sách đầy đủ các loại thuốc “Không an toàn đối với người bị thiếu hụt G6PD”.'
+
+MERGE (o1:treatment {id: 'thuốc_chống_sốt_rét_treatment'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r116:aggravatedBy]->(o2)
+SET r116.text = 'Một số loại thuốc phổ biến trong đó bao gồm: Thuốc chống sốt rét, Aspirin, Các loại thuốc giảm đau NSAID (thuốc chống viêm không steroid), Thuốc sulfat và các sản phẩm có chứa sulfit (các loại thuốc có “sulf” trong tên nên được sử dụng thận trọng), Quinine, hoặc các loại thuốc khác có “quin” trong tên, Brinzolamide, Furazolidone, Dimercaprol, Sulfadimidine.'
+
+MERGE (o1:treatment {id: 'aspirin_treatment'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r117:aggravatedBy]->(o2)
+SET r117.text = 'Một số loại thuốc phổ biến trong đó bao gồm: Thuốc chống sốt rét, Aspirin, Các loại thuốc giảm đau NSAID (thuốc chống viêm không steroid), Thuốc sulfat và các sản phẩm có chứa sulfit (các loại thuốc có “sulf” trong tên nên được sử dụng thận trọng), Quinine, hoặc các loại thuốc khác có “quin” trong tên, Brinzolamide, Furazolidone, Dimercaprol, Sulfadimidine.'
+
+MERGE (o1:treatment {id: 'các_loại_thuốc_giảm_đau_nsaid_treatment'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r118:aggravatedBy]->(o2)
+SET r118.text = 'Một số loại thuốc phổ biến trong đó bao gồm: Thuốc chống sốt rét, Aspirin, Các loại thuốc giảm đau NSAID (thuốc chống viêm không steroid), Thuốc sulfat và các sản phẩm có chứa sulfit (các loại thuốc có “sulf” trong tên nên được sử dụng thận trọng), Quinine, hoặc các loại thuốc khác có “quin” trong tên, Brinzolamide, Furazolidone, Dimercaprol, Sulfadimidine.'
+
+MERGE (o1:treatment {id: 'thuốc_sulfat_treatment'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r119:aggravatedBy]->(o2)
+SET r119.text = 'Một số loại thuốc phổ biến trong đó bao gồm: Thuốc chống sốt rét, Aspirin, Các loại thuốc giảm đau NSAID (thuốc chống viêm không steroid), Thuốc sulfat và các sản phẩm có chứa sulfit (các loại thuốc có “sulf” trong tên nên được sử dụng thận trọng), Quinine, hoặc các loại thuốc khác có “quin” trong tên, Brinzolamide, Furazolidone, Dimercaprol, Sulfadimidine.'
+
+MERGE (o1:treatment {id: 'quinine_treatment'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r120:aggravatedBy]->(o2)
+SET r120.text = 'Một số loại thuốc phổ biến trong đó bao gồm: Thuốc chống sốt rét, Aspirin, Các loại thuốc giảm đau NSAID (thuốc chống viêm không steroid), Thuốc sulfat và các sản phẩm có chứa sulfit (các loại thuốc có “sulf” trong tên nên được sử dụng thận trọng), Quinine, hoặc các loại thuốc khác có “quin” trong tên, Brinzolamide, Furazolidone, Dimercaprol, Sulfadimidine.'
+
+MERGE (o1:treatment {id: 'brinzolamide_treatment'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r121:aggravatedBy]->(o2)
+SET r121.text = 'Một số loại thuốc phổ biến trong đó bao gồm: Thuốc chống sốt rét, Aspirin, Các loại thuốc giảm đau NSAID (thuốc chống viêm không steroid), Thuốc sulfat và các sản phẩm có chứa sulfit (các loại thuốc có “sulf” trong tên nên được sử dụng thận trọng), Quinine, hoặc các loại thuốc khác có “quin” trong tên, Brinzolamide, Furazolidone, Dimercaprol, Sulfadimidine.'
+
+MERGE (o1:treatment {id: 'furazolidone_treatment'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r122:aggravatedBy]->(o2)
+SET r122.text = 'Một số loại thuốc phổ biến trong đó bao gồm: Thuốc chống sốt rét, Aspirin, Các loại thuốc giảm đau NSAID (thuốc chống viêm không steroid), Thuốc sulfat và các sản phẩm có chứa sulfit (các loại thuốc có “sulf” trong tên nên được sử dụng thận trọng), Quinine, hoặc các loại thuốc khác có “quin” trong tên, Brinzolamide, Furazolidone, Dimercaprol, Sulfadimidine.'
+
+MERGE (o1:treatment {id: 'dimercaprol_treatment'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r123:aggravatedBy]->(o2)
+SET r123.text = 'Một số loại thuốc phổ biến trong đó bao gồm: Thuốc chống sốt rét, Aspirin, Các loại thuốc giảm đau NSAID (thuốc chống viêm không steroid), Thuốc sulfat và các sản phẩm có chứa sulfit (các loại thuốc có “sulf” trong tên nên được sử dụng thận trọng), Quinine, hoặc các loại thuốc khác có “quin” trong tên, Brinzolamide, Furazolidone, Dimercaprol, Sulfadimidine.'
+
+MERGE (o1:treatment {id: 'sulfadimidine_treatment'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r124:aggravatedBy]->(o2)
+SET r124.text = 'Một số loại thuốc phổ biến trong đó bao gồm: Thuốc chống sốt rét, Aspirin, Các loại thuốc giảm đau NSAID (thuốc chống viêm không steroid), Thuốc sulfat và các sản phẩm có chứa sulfit (các loại thuốc có “sulf” trong tên nên được sử dụng thận trọng), Quinine, hoặc các loại thuốc khác có “quin” trong tên, Brinzolamide, Furazolidone, Dimercaprol, Sulfadimidine.'
+
+MERGE (o1:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o2:treatment {id: 'tránh_được_kê_loại_thuốc_nằm_trong_danh_sách_“không_an_toàn”_treatment'})
+MERGE (o1)-[r125:treatedBy]->(o2)
+SET r125.text = 'Nếu bạn được chẩn đoán thiếu men G6PD và đi khám về một vấn đề sức khỏe khác, hãy thông báo cho bác sĩ về tình trạng của mình để tránh được kê loại thuốc nằm trong danh sách “Không an toàn” nêu trên.'
+
+MERGE (o1:treatment {id: 'vitamin_hoặc_thực_phẩm_bổ_sung_treatment'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r126:treatedBy]->(o2)
+SET r126.text = 'Đồng thời, hỏi ý kiến bác sĩ về bất kỳ loại vitamin hoặc thực phẩm bổ sung nào mà bạn muốn sử dụng.'
+
+MERGE (o1:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o2:food {id: 'thực_phẩm_và_đồ_uống_được_xem_là_“khắc_tinh”_food'})
+MERGE (o1)-[r127:aggravatedBy]->(o2)
+SET r127.text = 'Không phải tất cả những người bị thiếu men G6PD đều phản ứng với thực phẩm và đồ uống được xem là “khắc tinh” của người bệnh thiếu hụt G6PD.'
+
+MERGE (o1:lifestyle {id: 'tránh_dung_nạp_chúng_lifestyle'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r128:treatedBy]->(o2)
+SET r128.text = 'Song tốt nhất, bạn nên tránh dung nạp chúng kẻo khiến tình trạng bệnh thêm trầm trọng.'
+
+MERGE (o1:food {id: 'đậu_fava_food'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r129:aggravatedBy]->(o2)
+SET r129.text = 'Danh sách thực phẩm/đồ uống cần tránh là: Đậu fava (đôi khi tất cả các loại đậu khác nữa), Quả việt quất, Tất cả các sản phẩm làm từ đậu nành (đậu phụ, đậu hũ, miso, tempeh), Thực phẩm giàu vitamin C cũng như thực phẩm bổ sung vitamin C như trái cây họ cam quýt, đồ uống có chứa vitamin C tổng hợp…'
+
+MERGE (o1:food {id: 'quả_việt_quất_food'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r130:aggravatedBy]->(o2)
+SET r130.text = 'Danh sách thực phẩm/đồ uống cần tránh là: Đậu fava (đôi khi tất cả các loại đậu khác nữa), Quả việt quất, Tất cả các sản phẩm làm từ đậu nành (đậu phụ, đậu hũ, miso, tempeh), Thực phẩm giàu vitamin C cũng như thực phẩm bổ sung vitamin C như trái cây họ cam quýt, đồ uống có chứa vitamin C tổng hợp…'
+
+MERGE (o1:food {id: 'tất_cả_các_sản_phẩm_làm_từ_đậu_nành_food'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r131:aggravatedBy]->(o2)
+SET r131.text = 'Danh sách thực phẩm/đồ uống cần tránh là: Đậu fava (đôi khi tất cả các loại đậu khác nữa), Quả việt quất, Tất cả các sản phẩm làm từ đậu nành (đậu phụ, đậu hũ, miso, tempeh), Thực phẩm giàu vitamin C cũng như thực phẩm bổ sung vitamin C như trái cây họ cam quýt, đồ uống có chứa vitamin C tổng hợp…'
+
+MERGE (o1:food {id: 'thực_phẩm_giàu_vitamin_c_food'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r132:aggravatedBy]->(o2)
+SET r132.text = 'Danh sách thực phẩm/đồ uống cần tránh là: Đậu fava (đôi khi tất cả các loại đậu khác nữa), Quả việt quất, Tất cả các sản phẩm làm từ đậu nành (đậu phụ, đậu hũ, miso, tempeh), Thực phẩm giàu vitamin C cũng như thực phẩm bổ sung vitamin C như trái cây họ cam quýt, đồ uống có chứa vitamin C tổng hợp…'
+
+MERGE (o1:food {id: 'trái_cây_họ_cam_quýt_food'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r133:aggravatedBy]->(o2)
+SET r133.text = 'Danh sách thực phẩm/đồ uống cần tránh là: Đậu fava (đôi khi tất cả các loại đậu khác nữa), Quả việt quất, Tất cả các sản phẩm làm từ đậu nành (đậu phụ, đậu hũ, miso, tempeh), Thực phẩm giàu vitamin C cũng như thực phẩm bổ sung vitamin C như trái cây họ cam quýt, đồ uống có chứa vitamin C tổng hợp…'
+
+MERGE (o1:food {id: 'đồ_uống_có_chứa_vitamin_c_tổng_hợp_food'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r134:aggravatedBy]->(o2)
+SET r134.text = 'Danh sách thực phẩm/đồ uống cần tránh là: Đậu fava (đôi khi tất cả các loại đậu khác nữa), Quả việt quất, Tất cả các sản phẩm làm từ đậu nành (đậu phụ, đậu hũ, miso, tempeh), Thực phẩm giàu vitamin C cũng như thực phẩm bổ sung vitamin C như trái cây họ cam quýt, đồ uống có chứa vitamin C tổng hợp…'
+
+MERGE (o1:food {id: 'tinh_dầu_bạc_hà_food'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r135:aggravatedBy]->(o2)
+SET r135.text = 'Danh sách thực phẩm/đồ uống cần tránh là: Đậu fava (đôi khi tất cả các loại đậu khác nữa), Quả việt quất, Tất cả các sản phẩm làm từ đậu nành (đậu phụ, đậu hũ, miso, tempeh), Thực phẩm giàu vitamin C cũng như thực phẩm bổ sung vitamin C như trái cây họ cam quýt, đồ uống có chứa vitamin C tổng hợp…'
+
+MERGE (o1:food {id: 'các_loại_thực_phẩm_có_thuốc_nhuộm_màu_nhân_tạo_food'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r136:aggravatedBy]->(o2)
+SET r136.text = 'Danh sách thực phẩm/đồ uống cần tránh là: Đậu fava (đôi khi tất cả các loại đậu khác nữa), Quả việt quất, Tất cả các sản phẩm làm từ đậu nành (đậu phụ, đậu hũ, miso, tempeh), Thực phẩm giàu vitamin C cũng như thực phẩm bổ sung vitamin C như trái cây họ cam quýt, đồ uống có chứa vitamin C tổng hợp…'
+
+MERGE (o1:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o2:food {id: 'các_loại_trái_cây_như_cà_chua__cam__nho__táo_food'})
+MERGE (o1)-[r137:treatedBy]->(o2)
+SET r137.text = 'Lưu ý, người bị thiếu men G6PD có thể dùng được các loại trái cây như cà chua, cam, nho, táo có chứa chất chống oxy hoá.'
+
+MERGE (o1:food {id: 'cà_chua__cam__nho__táo_food'})
+MERGE (o2:food {id: 'chất_chống_oxy_hoá_food'})
+MERGE (o1)-[r138:relatedTo]->(o2)
+SET r138.text = 'Lưu ý, người bị thiếu men G6PD có thể dùng được các loại trái cây như cà chua, cam, nho, táo có chứa chất chống oxy hoá.'
+
+MERGE (o1:treatment {id: 'vitamin_c_truyền_tĩnh_mạch_treatment'})
+MERGE (o2:symptom {id: 'methemoglobin_symptom'})
+MERGE (o1)-[r139:aggravatedBy]->(o2)
+SET r139.text = 'Riêng Vitamin C truyền tĩnh mạch thì thận trọng nếu có methemoglobin.'
+
+MERGE (o1:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o2:disease {id: 'các_bệnh_lý_nhiễm_trùng_như_viêm_gan_virus__thương_hàn__viêm_phổi_disease'})
+MERGE (o1)-[r140:causedBy]->(o2)
+SET r140.text = 'Nếu tình trạng thiếu men G6PD khởi phát do các bệnh lý nhiễm trùng như viêm gan virus, thương hàn, viêm phổi&#8230; thì cần điều trị tận gốc những bệnh lý này.'
+
+MERGE (o1:disease {id: 'viêm_gan_virus__thương_hàn__viêm_phổi_disease'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r141:causedBy]->(o2)
+SET r141.text = 'Nếu tình trạng thiếu men G6PD khởi phát do các bệnh lý nhiễm trùng như viêm gan virus, thương hàn, viêm phổi&#8230; thì cần điều trị tận gốc những bệnh lý này.'
+
+MERGE (o1:symptom {id: 'các_triệu_chứng_symptom'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r142:isSymptomOf]->(o2)
+SET r142.text = 'Khi đó, các triệu chứng sẽ từ từ biến mất.'
+
+MERGE (o1:disease {id: 'thiếu_máu_huyết_tán_disease'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r143:isSymptomOf]->(o2)
+SET r143.text = 'Tuy nhiên, một khi thiếu men G6PD đã tiến triển thành thiếu máu huyết tán, người bệnh cần được điều trị tích cực ngay lập tức.'
+
+MERGE (o1:disease {id: 'thiếu_máu_huyết_tán_disease'})
+MERGE (o2:treatment {id: 'truyền_máu_treatment'})
+MERGE (o1)-[r144:treatedBy]->(o2)
+SET r144.text = 'Có khả năng bác sĩ sẽ chỉ định truyền máu để giúp làm chậm tốc độ tế bào hồng cầu bị phá hủy (tan máu).'
+
+MERGE (o1:disease {id: 'thiếu_máu_huyết_tán_disease'})
+MERGE (o2:treatment {id: 'theo_dõi_chặt_chẽ_treatment'})
+MERGE (o1)-[r145:treatedBy]->(o2)
+SET r145.text = 'Trong suốt thời gian điều trị, bệnh nhân cần ở lại bệnh viện để được theo dõi chặt chẽ.'
+
+MERGE (o1:disease {id: 'thiếu_máu_huyết_tán_disease'})
+MERGE (o2:treatment {id: 'phục_hồi_hoàn_toàn_treatment'})
+MERGE (o1)-[r146:treatedBy]->(o2)
+SET r146.text = 'Việc làm này nhằm đảm bảo bệnh tình phục hồi hoàn toàn mà không để lại biến chứng.'
+
+MERGE (o1:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o2:treatment {id: 'phương_pháp_giúp_phòng_bệnh_treatment'})
+MERGE (o1)-[r147:preventedBy]->(o2)
+SET r147.text = 'Theo bác sĩ Hạnh, hiện chưa có thuốc chữa khỏi bệnh thiếu men G6PD, tuy nhiên phụ huynh lưu ý có nhiều phương pháp giúp phòng bệnh.'
+
+MERGE (o1:test {id: 'sàng_lọc_sơ_sinh_test'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r148:preventedBy]->(o2)
+SET r148.text = 'Cách tốt nhất phòng ngừa nguy cơ, phụ huynh nên cho trẻ thực hiện sàng lọc sơ sinh bằng cách lấy máu gót chân trong vòng 48-72 giờ đầu sau sinh.'
+
+MERGE (o1:test {id: 'lấy_máu_gót_chân_test'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r149:preventedBy]->(o2)
+SET r149.text = 'Cách tốt nhất phòng ngừa nguy cơ, phụ huynh nên cho trẻ thực hiện sàng lọc sơ sinh bằng cách lấy máu gót chân trong vòng 48-72 giờ đầu sau sinh.'
+
+MERGE (o1:test {id: 'xét_nghiệm_chẩn_đoán_gen_test'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r150:diagnosedBy]->(o2)
+SET r150.text = 'Trẻ có thể xét nghiệm chẩn đoán gen giúp khẳng định lại tình trạng bệnh, mức độ, cung cấp thông tin tư vấn di truyền cho bố mẹ và các thành viên khác trong gia đình như: tư vấn tiền hôn nhân, tiền mang thai.'
+
+MERGE (o1:treatment {id: 'tư_vấn_di_truyền_treatment'})
+MERGE (o2:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o1)-[r151:treatedBy]->(o2)
+SET r151.text = 'Trẻ có thể xét nghiệm chẩn đoán gen giúp khẳng định lại tình trạng bệnh, mức độ, cung cấp thông tin tư vấn di truyền cho bố mẹ và các thành viên khác trong gia đình như: tư vấn tiền hôn nhân, tiền mang thai.'
+
+MERGE (o1:food {id: 'đậu_fava_food'})
+MERGE (o2:disease {id: 'thiếu_g6pd_disease'})
+MERGE (o1)-[r152:aggravatedBy]->(o2)
+SET r152.text = 'Các thực phẩm cần tránh khi thiếu G6PD: Đậu Fava, rượu vang đỏ, dâu Blueberries, đậu nành…'
+
+MERGE (o1:food {id: 'rượu_vang_đỏ_food'})
+MERGE (o2:disease {id: 'thiếu_g6pd_disease'})
+MERGE (o1)-[r153:aggravatedBy]->(o2)
+SET r153.text = 'Các thực phẩm cần tránh khi thiếu G6PD: Đậu Fava, rượu vang đỏ, dâu Blueberries, đậu nành…'
+
+MERGE (o1:food {id: 'dâu_blueberries_food'})
+MERGE (o2:disease {id: 'thiếu_g6pd_disease'})
+MERGE (o1)-[r154:aggravatedBy]->(o2)
+SET r154.text = 'Các thực phẩm cần tránh khi thiếu G6PD: Đậu Fava, rượu vang đỏ, dâu Blueberries, đậu nành…'
+
+MERGE (o1:food {id: 'đậu_nành_food'})
+MERGE (o2:disease {id: 'thiếu_g6pd_disease'})
+MERGE (o1)-[r155:aggravatedBy]->(o2)
+SET r155.text = 'Các thực phẩm cần tránh khi thiếu G6PD: Đậu Fava, rượu vang đỏ, dâu Blueberries, đậu nành…'
+
+MERGE (o1:treatment {id: 'thuốc_gây_tan_máu_treatment'})
+MERGE (o2:disease {id: 'thiếu_g6pd_disease'})
+MERGE (o1)-[r156:aggravatedBy]->(o2)
+SET r156.text = 'Cần tránh các loại thuốc gây tan máu và các thuốc có thể gây tan máu.'
+
+MERGE (o1:disease {id: 'thiếu_men_g6pd_disease'})
+MERGE (o2:lifestyle {id: 'phòng_ngừa_tốt_lifestyle'})
+MERGE (o1)-[r157:preventedBy]->(o2)
+SET r157.text = 'Nếu được phòng ngừa tốt, trẻ không tiếp xúc với các tác nhân gây vỡ hồng cầu thì vẫn khỏe mạnh, phát triển đồng đều với bạn bè cùng trang lứa.'
+
+MERGE (o1:disease {id: 'g6pd_thấp_disease'})
+MERGE (o2:test {id: 'chẩn_đoán_test'})
+MERGE (o1)-[r158:diagnosedBy]->(o2)
+SET r158.text = 'Một em bé sơ sinh được chẩn đoán G6PD thấp cần có chế độ chăm sóc đặc biệt.'
+
+MERGE (o1:treatment {id: 'chế_độ_chăm_sóc_đặc_biệt_treatment'})
+MERGE (o2:disease {id: 'g6pd_thấp_disease'})
+MERGE (o1)-[r159:treatedBy]->(o2)
+SET r159.text = 'Một em bé sơ sinh được chẩn đoán G6PD thấp cần có chế độ chăm sóc đặc biệt.'
+
+MERGE (o1:disease {id: 'bệnh_lý_nhiễm_trùng__nhiễm_virus_disease'})
+MERGE (o2:disease {id: 'g6pd_thấp_disease'})
+MERGE (o1)-[r160:aggravatedBy]->(o2)
+SET r160.text = 'Bố mẹ lưu ý tránh để trẻ mắc các bệnh lý nhiễm trùng, nhiễm virus.'
+
+MERGE (o1:treatment {id: 'thuốc_treatment'})
+MERGE (o2:disease {id: 'g6pd_thấp_disease'})
+MERGE (o1)-[r161:treatedBy]->(o2)
+SET r161.text = 'Ngoài ra, phải hỏi ý kiến bác sĩ trước khi cho trẻ uống thuốc, không được tự ý mua thuốc cho trẻ.'
+
+MERGE (o1:treatment {id: 'thuốc_điều_trị_tẩy_giun__kháng_sinh__sốt_rét_treatment'})
+MERGE (o2:disease {id: 'g6pd_thấp_disease'})
+MERGE (o1)-[r162:aggravatedBy]->(o2)
+SET r162.text = 'Đồng thời, cảnh giác với một số loại thuốc có nguy cơ cao gây tán huyết như thuốc điều trị tẩy giun, kháng sinh, sốt rét…; thuốc nam, thuốc đông y vì những loại thuốc này có thể chứa chất oxy hóa.'
+
+MERGE (o1:treatment {id: 'thuốc_nam__thuốc_đông_y_treatment'})
+MERGE (o2:disease {id: 'g6pd_thấp_disease'})
+MERGE (o1)-[r163:aggravatedBy]->(o2)
+SET r163.text = 'Đồng thời, cảnh giác với một số loại thuốc có nguy cơ cao gây tán huyết như thuốc điều trị tẩy giun, kháng sinh, sốt rét…; thuốc nam, thuốc đông y vì những loại thuốc này có thể chứa chất oxy hóa.'
+
+MERGE (o1:cause {id: 'chất_oxy_hóa_cause'})
+MERGE (o2:symptom {id: 'tán_huyết_symptom'})
+MERGE (o1)-[r164:causedBy]->(o2)
+SET r164.text = 'Đồng thời, cảnh giác với một số loại thuốc có nguy cơ cao gây tán huyết như thuốc điều trị tẩy giun, kháng sinh, sốt rét…; thuốc nam, thuốc đông y vì những loại thuốc này có thể chứa chất oxy hóa.'
+
+MERGE (o1:treatment {id: 'thuốc_giảm_đau__hạ_sốt_treatment'})
+MERGE (o2:disease {id: 'g6pd_thấp_disease'})
+MERGE (o1)-[r165:aggravatedBy]->(o2)
+SET r165.text = 'Bố mẹ cũng cần hạn chế cho trẻ sử dụng thuốc giảm đau, hạ sốt; thuốc chống dị ứng, kháng histamin; vitamin C và vitamin K liều cao; một số thuốc khác như dopamine, xanh toluidin…'
+
+MERGE (o1:treatment {id: 'thuốc_chống_dị_ứng__kháng_histamin_treatment'})
+MERGE (o2:disease {id: 'g6pd_thấp_disease'})
+MERGE (o1)-[r166:aggravatedBy]->(o2)
+SET r166.text = 'Bố mẹ cũng cần hạn chế cho trẻ sử dụng thuốc giảm đau, hạ sốt; thuốc chống dị ứng, kháng histamin; vitamin C và vitamin K liều cao; một số thuốc khác như dopamine, xanh toluidin…'
+
+MERGE (o1:treatment {id: 'vitamin_c_và_vitamin_k_liều_cao_treatment'})
+MERGE (o2:disease {id: 'g6pd_thấp_disease'})
+MERGE (o1)-[r167:aggravatedBy]->(o2)
+SET r167.text = 'Bố mẹ cũng cần hạn chế cho trẻ sử dụng thuốc giảm đau, hạ sốt; thuốc chống dị ứng, kháng histamin; vitamin C và vitamin K liều cao; một số thuốc khác như dopamine, xanh toluidin…'

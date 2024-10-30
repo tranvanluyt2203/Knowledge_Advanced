@@ -1,0 +1,405 @@
+
+MERGE (o1:disease {id: 'tinh_trùng_yếu_disease'})
+MERGE (o2:symptom {id: 'chất_lượng_tinh_trùng_bị_suy_giảm_symptom'})
+MERGE (o1)-[r0:isSymptomOf]->(o2)
+SET r0.text = 'Tinh trùng yếu là tình trạng chất lượng của tinh trùng bị suy giảm.'
+
+MERGE (o1:symptom {id: 'tỷ_lệ_tinh_trùng_di_động_dưới_75%_symptom'})
+MERGE (o2:disease {id: 'tinh_trùng_yếu_disease'})
+MERGE (o1)-[r1:isSymptomOf]->(o2)
+SET r1.text = 'Tỷ lệ tinh trùng di động dưới 75%, tỷ lệ chết và không di động cao hơn 25%.'
+
+MERGE (o1:symptom {id: 'tỷ_lệ_chết_và_không_di_động_cao_hơn_25%_symptom'})
+MERGE (o2:disease {id: 'tinh_trùng_yếu_disease'})
+MERGE (o1)-[r2:isSymptomOf]->(o2)
+SET r2.text = 'Tỷ lệ tinh trùng di động dưới 75%, tỷ lệ chết và không di động cao hơn 25%.'
+
+MERGE (o1:symptom {id: 'tinh_trùng_di_động_thấy_được_dưới_50%_symptom'})
+MERGE (o2:disease {id: 'tinh_trùng_yếu_disease'})
+MERGE (o1)-[r3:isSymptomOf]->(o2)
+SET r3.text = 'Tinh trùng di động thấy được dưới 50%, di động nhanh dưới 25%.'
+
+MERGE (o1:symptom {id: 'di_động_nhanh_dưới_25%_symptom'})
+MERGE (o2:disease {id: 'tinh_trùng_yếu_disease'})
+MERGE (o1)-[r4:isSymptomOf]->(o2)
+SET r4.text = 'Tinh trùng di động thấy được dưới 50%, di động nhanh dưới 25%.'
+
+MERGE (o1:symptom {id: 'lượng_tinh_dịch_ít_hơn_2ml_symptom'})
+MERGE (o2:disease {id: 'tinh_trùng_ít_disease'})
+MERGE (o1)-[r5:isSymptomOf]->(o2)
+SET r5.text = 'Mỗi lần xuất tinh, lượng tinh dịch thường ít hơn 2ml, số lượng tinh trùng ít hơn 40 triệu con.'
+
+MERGE (o1:symptom {id: 'số_lượng_tinh_trùng_ít_hơn_40_triệu_con_symptom'})
+MERGE (o2:disease {id: 'tinh_trùng_ít_disease'})
+MERGE (o1)-[r6:isSymptomOf]->(o2)
+SET r6.text = 'Mỗi lần xuất tinh, lượng tinh dịch thường ít hơn 2ml, số lượng tinh trùng ít hơn 40 triệu con.'
+
+MERGE (o1:lifestyle {id: 'chế_độ_dinh_dưỡng_lifestyle'})
+MERGE (o2:symptom {id: 'chất_lượng_tinh_trùng_suy_giảm_symptom'})
+MERGE (o1)-[r7:causedBy]->(o2)
+SET r7.text = 'Tình trạng chất lượng tinh trùng suy giảm do nhiều nguyên nhân gây ra, thường liên quan trực tiếp tới chế độ dinh dưỡng, thói quen sinh hoạt của nam giới.'
+
+MERGE (o1:lifestyle {id: 'thói_quen_sinh_hoạt_lifestyle'})
+MERGE (o2:symptom {id: 'chất_lượng_tinh_trùng_suy_giảm_symptom'})
+MERGE (o1)-[r8:causedBy]->(o2)
+SET r8.text = 'Tình trạng chất lượng tinh trùng suy giảm do nhiều nguyên nhân gây ra, thường liên quan trực tiếp tới chế độ dinh dưỡng, thói quen sinh hoạt của nam giới.'
+
+MERGE (o1:symptom {id: 'tinh_dịch_loãng_symptom'})
+MERGE (o2:disease {id: 'tinh_trùng_yếu_disease'})
+MERGE (o1)-[r9:isSymptomOf]->(o2)
+SET r9.text = 'Tinh dịch không có độ dính, nhớt đặc trưng mà loãng như nước vo gạo.'
+
+MERGE (o1:symptom {id: 'tinh_dịch_loãng_như_nước_vo_gạo_symptom'})
+MERGE (o2:disease {id: 'tinh_trùng_yếu_disease'})
+MERGE (o1)-[r10:isSymptomOf]->(o2)
+SET r10.text = 'Tinh dịch không có độ dính, nhớt đặc trưng mà loãng như nước vo gạo.'
+
+MERGE (o1:symptom {id: 'tinh_dịch_loãng_symptom'})
+MERGE (o2:organ {id: 'khả_năng_sinh_sản_organ'})
+MERGE (o1)-[r11:affects]->(o2)
+SET r11.text = 'Đây là dấu hiệu gợi ý tình trạng suy giảm bất thường về số lượng, chất lượng tinh trùng, gây tác động tiêu cực đến khả năng sinh sản của nam giới.'
+
+MERGE (o1:symptom {id: 'tinh_dịch_vón_cục_symptom'})
+MERGE (o2:disease {id: 'tinh_trùng_yếu_disease'})
+MERGE (o1)-[r12:isSymptomOf]->(o2)
+SET r12.text = 'Biểu hiện là tinh dịch xuất hiện các hạt trắng nhỏ như hạt cơm, khi bóp cho cảm giác mịn như bột.'
+
+MERGE (o1:symptom {id: 'tinh_dịch_vón_cục_symptom'})
+MERGE (o2:organ {id: 'tinh_trùng_organ'})
+MERGE (o1)-[r13:affects]->(o2)
+SET r13.text = 'Tinh dịch vón cục'
+
+MERGE (o1:symptom {id: 'tinh_dịch_vón_cục_symptom'})
+MERGE (o2:organ {id: 'tinh_trùng_organ'})
+MERGE (o1)-[r14:affects]->(o2)
+SET r14.text = 'Ở trạng thái này, tinh dịch làm tinh trùng dễ bị chết, khó di chuyển để thụ tinh cho trứng.'
+
+MERGE (o1:symptom {id: 'tinh_dịch_đông_đặc_symptom'})
+MERGE (o2:disease {id: 'tinh_trùng_yếu_disease'})
+MERGE (o1)-[r15:isSymptomOf]->(o2)
+SET r15.text = 'Ở nhiệt độ 37°C, tinh dịch từ trạng thái quánh sệt hóa lỏng sau khoảng thời gian chưa đến 60 phút.'
+
+MERGE (o1:symptom {id: 'tinh_dịch_đông_đặc_symptom'})
+MERGE (o2:disease {id: 'tinh_trùng_yếu_disease'})
+MERGE (o1)-[r16:isSymptomOf]->(o2)
+SET r16.text = 'Tình trạng hóa lỏng không diễn ra hay chỉ hóa lỏng một phần là dấu hiệu tinh dịch bị đông đặc.'
+
+MERGE (o1:symptom {id: 'tinh_dịch_đông_đặc_symptom'})
+MERGE (o2:organ {id: 'kết_quả_thụ_thai_organ'})
+MERGE (o1)-[r17:affects]->(o2)
+SET r17.text = 'Điều này khiến tinh trùng khó di chuyển tới gặp trứng, gây ảnh hưởng tới kết quả thụ thai.'
+
+MERGE (o1:symptom {id: 'tinh_dịch_có_màu_vàng_hoặc_xanh_symptom'})
+MERGE (o2:disease {id: 'viêm_mào_tinh_disease'})
+MERGE (o1)-[r18:isSymptomOf]->(o2)
+SET r18.text = 'Nếu tinh dịch có màu vàng hoặc xanh, nam giới có khả năng mắc những bệnh viêm nhiễm như viêm mào tinh, viêm niệu đạo, viêm tiền liệt tuyến…'
+
+MERGE (o1:symptom {id: 'tinh_dịch_có_màu_vàng_hoặc_xanh_symptom'})
+MERGE (o2:disease {id: 'viêm_niệu_đạo_disease'})
+MERGE (o1)-[r19:isSymptomOf]->(o2)
+SET r19.text = 'Nếu tinh dịch có màu vàng hoặc xanh, nam giới có khả năng mắc những bệnh viêm nhiễm như viêm mào tinh, viêm niệu đạo, viêm tiền liệt tuyến…'
+
+MERGE (o1:symptom {id: 'tinh_dịch_có_màu_vàng_hoặc_xanh_symptom'})
+MERGE (o2:disease {id: 'viêm_tiền_liệt_tuyến_disease'})
+MERGE (o1)-[r20:isSymptomOf]->(o2)
+SET r20.text = 'Nếu tinh dịch có màu vàng hoặc xanh, nam giới có khả năng mắc những bệnh viêm nhiễm như viêm mào tinh, viêm niệu đạo, viêm tiền liệt tuyến…'
+
+MERGE (o1:symptom {id: 'tinh_dịch_có_màu_nâu_symptom'})
+MERGE (o2:disease {id: 'bệnh_liên_quan_tới_đường_tiết_niệu_disease'})
+MERGE (o1)-[r21:isSymptomOf]->(o2)
+SET r21.text = 'Nếu tinh dịch có màu nâu (thường do lẫn máu) đi kèm những triệu chứng như đau bụng, đau tức dương vật…, đây có thể là triệu chứng ban đầu của những bệnh liên quan tới đường tiết niệu hay cơ quan sinh dục.'
+
+MERGE (o1:process {id: 'quá_trình_sản_xuất_tinh_trùng_process'})
+MERGE (o2:organ {id: 'tinh_hoàn_organ'})
+MERGE (o1)-[r22:relatedTo]->(o2)
+SET r22.text = 'Quá trình sản xuất tinh trùng tương đối phức tạp, cần sự hoạt động ổn định của tất cả bộ phận liên quan như tinh hoàn, vùng dưới đồi và tuyến yên.'
+
+MERGE (o1:process {id: 'quá_trình_sản_xuất_tinh_trùng_process'})
+MERGE (o2:organ {id: 'vùng_dưới_đồi_organ'})
+MERGE (o1)-[r23:relatedTo]->(o2)
+SET r23.text = 'Quá trình sản xuất tinh trùng tương đối phức tạp, cần sự hoạt động ổn định của tất cả bộ phận liên quan như tinh hoàn, vùng dưới đồi và tuyến yên.'
+
+MERGE (o1:process {id: 'quá_trình_sản_xuất_tinh_trùng_process'})
+MERGE (o2:organ {id: 'tuyến_yên_organ'})
+MERGE (o1)-[r24:relatedTo]->(o2)
+SET r24.text = 'Quá trình sản xuất tinh trùng tương đối phức tạp, cần sự hoạt động ổn định của tất cả bộ phận liên quan như tinh hoàn, vùng dưới đồi và tuyến yên.'
+
+MERGE (o1:cause {id: 'vấn_đề_cause'})
+MERGE (o2:process {id: 'quá_trình_sản_xuất_tinh_trùng_process'})
+MERGE (o1)-[r25:affects]->(o2)
+SET r25.text = 'Bất cứ vấn đề nào xảy ra trong quá trình này đều có khả năng ảnh hưởng đến quá trình sản xuất và sức khỏe của tinh trùng.'
+
+MERGE (o1:cause {id: 'vấn_đề_cause'})
+MERGE (o2:symptom {id: 'sức_khỏe_của_tinh_trùng_symptom'})
+MERGE (o1)-[r26:affects]->(o2)
+SET r26.text = 'Bất cứ vấn đề nào xảy ra trong quá trình này đều có khả năng ảnh hưởng đến quá trình sản xuất và sức khỏe của tinh trùng.'
+
+MERGE (o1:disease {id: 'giãn_tĩnh_mạch_thừng_tinh_disease'})
+MERGE (o2:disease {id: 'vô_sinh_nam_disease'})
+MERGE (o1)-[r27:isSymptomOf]->(o2)
+SET r27.text = 'Giãn tĩnh mạch thừng tinh: Đây là nguyên nhân thường gặp nhất gây vô sinh nam.'
+
+MERGE (o1:disease {id: 'giãn_tĩnh_mạch_tinh_disease'})
+MERGE (o2:symptom {id: 'chất_lượng_tinh_trùng_symptom'})
+MERGE (o1)-[r28:affects]->(o2)
+SET r28.text = 'Giãn tĩnh mạch tinh làm suy giảm chất lượng tinh trùng.'
+
+MERGE (o1:cause {id: 'nhiễm_trùng_cause'})
+MERGE (o2:process {id: 'quá_trình_sản_xuất_tinh_trùng_process'})
+MERGE (o1)-[r29:affects]->(o2)
+SET r29.text = 'Một số tình trạng nhiễm trùng có thể gây ảnh hưởng đến quá trình sản xuất tinh trùng hay tạo ra sẹo cản trở trên đường vận chuyển tinh trùng (cản trở cơ học).'
+
+MERGE (o1:cause {id: 'nhiễm_trùng_cause'})
+MERGE (o2:organ {id: 'đường_vận_chuyển_tinh_trùng_organ'})
+MERGE (o1)-[r30:affects]->(o2)
+SET r30.text = 'Một số tình trạng nhiễm trùng có thể gây ảnh hưởng đến quá trình sản xuất tinh trùng hay tạo ra sẹo cản trở trên đường vận chuyển tinh trùng (cản trở cơ học).'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:cause {id: 'nhiễm_trùng_cause'})
+MERGE (o1)-[r31:isSymptomOf]->(o2)
+SET r31.text = 'Các trường hợp viêm nhiễm như viêm mào tinh hoàn, viêm tinh hoàn và các bệnh lây truyền qua đường tình dục (lậu, HIV…)'
+
+MERGE (o1:disease {id: 'viêm_tinh_hoàn_disease'})
+MERGE (o2:cause {id: 'nhiễm_trùng_cause'})
+MERGE (o1)-[r32:isSymptomOf]->(o2)
+SET r32.text = 'Các trường hợp viêm nhiễm như viêm mào tinh hoàn, viêm tinh hoàn và các bệnh lây truyền qua đường tình dục (lậu, HIV…)'
+
+MERGE (o1:disease {id: 'lậu_disease'})
+MERGE (o2:cause {id: 'nhiễm_trùng_cause'})
+MERGE (o1)-[r33:isSymptomOf]->(o2)
+SET r33.text = 'Các trường hợp viêm nhiễm như viêm mào tinh hoàn, viêm tinh hoàn và các bệnh lây truyền qua đường tình dục (lậu, HIV…)'
+
+MERGE (o1:disease {id: 'hiv_disease'})
+MERGE (o2:cause {id: 'nhiễm_trùng_cause'})
+MERGE (o1)-[r34:isSymptomOf]->(o2)
+SET r34.text = 'Các trường hợp viêm nhiễm như viêm mào tinh hoàn, viêm tinh hoàn và các bệnh lây truyền qua đường tình dục (lậu, HIV…)'
+
+MERGE (o1:disease {id: 'bệnh_tự_miễn_disease'})
+MERGE (o2:cause {id: 'kháng_thể_tấn_công_và_tiêu_diệt_tinh_trùng_của_cơ_thể_cause'})
+MERGE (o1)-[r35:causedBy]->(o2)
+SET r35.text = 'Bệnh tự miễn: Nguyên nhân này hiếm khi xảy ra.'
+
+MERGE (o1:cause {id: 'kháng_thể_tấn_công_và_tiêu_diệt_tinh_trùng_của_cơ_thể_cause'})
+MERGE (o2:organ {id: 'tinh_trùng_organ'})
+MERGE (o1)-[r36:affects]->(o2)
+SET r36.text = 'Đây là tình trạng kháng thể tấn công và tiêu diệt tinh trùng của cơ thể.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:organ {id: 'cơ_quan_sinh_sản_của_nam_giới_organ'})
+MERGE (o1)-[r37:affects]->(o2)
+SET r37.text = 'Khối u có khả năng gây mất cân bằng nội tiết tố, ảnh hưởng đến cơ quan sinh sản của nam giới.'
+
+MERGE (o1:treatment {id: 'quá_trình_điều_trị_khối_u_treatment'})
+MERGE (o2:symptom {id: 'khả_năng_sinh_sản_của_đàn_ông_symptom'})
+MERGE (o1)-[r38:affects]->(o2)
+SET r38.text = 'Ngoài ra, quá trình điều trị khối u cũng có thể gây ảnh hưởng đến khả năng sinh sản của đàn ông.'
+
+MERGE (o1:cause {id: 'nội_tiết_tố_cause'})
+MERGE (o2:process {id: 'quá_trình_sản_xuất_tinh_trùng_process'})
+MERGE (o1)-[r39:relatedTo]->(o2)
+SET r39.text = 'Nội tiết tố là thành phần không thể thiếu trong quá trình sản xuất tinh trùng.'
+
+MERGE (o1:cause {id: 'sự_mất_cân_bằng_nội_tiết_tố_cause'})
+MERGE (o2:process {id: 'quá_trình_sản_xuất_tinh_trùng_process'})
+MERGE (o1)-[r40:affects]->(o2)
+SET r40.text = 'Vì thế, sự mất cân bằng nội tiết tố có thể gây tổn hại đến quá trình sản xuất tinh trùng.'
+
+MERGE (o1:treatment {id: 'thuốc_điều_trị_treatment'})
+MERGE (o2:process {id: 'quá_trình_sản_xuất_tinh_trùng_process'})
+MERGE (o1)-[r41:affects]->(o2)
+SET r41.text = 'Một số loại thuốc điều trị có khả năng gây hại đến quá trình sản xuất tinh trùng, khiến khả năng sinh sản của nam giới bị suy giảm.'
+
+MERGE (o1:treatment {id: 'thuốc_điều_trị_treatment'})
+MERGE (o2:symptom {id: 'khả_năng_sinh_sản_của_nam_giới_symptom'})
+MERGE (o1)-[r42:affects]->(o2)
+SET r42.text = 'Một số loại thuốc điều trị có khả năng gây hại đến quá trình sản xuất tinh trùng, khiến khả năng sinh sản của nam giới bị suy giảm.'
+
+MERGE (o1:cause {id: 'dị_tật_bẩm_sinh_cause'})
+MERGE (o2:symptom {id: 'khả_năng_sinh_sản_của_nam_giới_symptom'})
+MERGE (o1)-[r43:affects]->(o2)
+SET r43.text = 'Dị tật bẩm sinh, rối loạn di truyền… có khả năng ảnh hưởng đến khả năng sinh sản của nam giới.'
+
+MERGE (o1:cause {id: 'rối_loạn_di_truyền_cause'})
+MERGE (o2:symptom {id: 'khả_năng_sinh_sản_của_nam_giới_symptom'})
+MERGE (o1)-[r44:affects]->(o2)
+SET r44.text = 'Dị tật bẩm sinh, rối loạn di truyền… có khả năng ảnh hưởng đến khả năng sinh sản của nam giới.'
+
+MERGE (o1:lifestyle {id: 'phơi_nhiễm_kéo_dài_với_benzene__xylene__toluene__thuốc_trừ_sâu__thuốc_diệt_cỏ__dung_môi_hữu_cơ__vật_liệu_sơn_lifestyle'})
+MERGE (o2:organ {id: 'tinh_trùng_organ'})
+MERGE (o1)-[r45:affects]->(o2)
+SET r45.text = 'Tình trạng phơi nhiễm kéo dài với benzene, xylene, toluene, thuốc trừ sâu, thuốc diệt cỏ, dung môi hữu cơ, vật liệu sơn… có thể gây tác động tiêu cực lên tinh trùng.'
+
+MERGE (o1:lifestyle {id: 'phơi_nhiễm_với_chì_và_những_kim_loại_nặng_khác_lifestyle'})
+MERGE (o2:disease {id: 'vô_sinh_nam_disease'})
+MERGE (o1)-[r46:isSymptomOf]->(o2)
+SET r46.text = 'Phơi nhiễm với chì và những kim loại nặng khác là một trong những nguyên nhân gây vô sinh nam.'
+
+MERGE (o1:lifestyle {id: 'phơi_nhiễm_với_tia_xạ_lifestyle'})
+MERGE (o2:symptom {id: 'khả_năng_sinh_tinh_symptom'})
+MERGE (o1)-[r47:affects]->(o2)
+SET r47.text = 'Phơi nhiễm với tia xạ có khả năng làm giảm hay mất hoàn toàn khả năng sinh tinh.'
+
+MERGE (o1:treatment {id: 'phục_hồi_treatment'})
+MERGE (o2:symptom {id: 'khả_năng_sinh_tinh_symptom'})
+MERGE (o1)-[r48:relatedTo]->(o2)
+SET r48.text = 'Để phục hồi, nam giới có thể mất đến vài năm.'
+
+MERGE (o1:food {id: 'rượu_và_những_thức_uống_chứa_cồn_food'})
+MERGE (o2:organ {id: 'tình_trùng_organ'})
+MERGE (o1)-[r49:affects]->(o2)
+SET r49.text = 'Rượu và những thức uống chứa cồn đều có khả năng làm giảm nồng độ testosterone, ảnh hưởng lên tình trùng.'
+
+MERGE (o1:lifestyle {id: 'hút_thuốc_lifestyle'})
+MERGE (o2:symptom {id: 'sức_khỏe_sinh_sản_symptom'})
+MERGE (o1)-[r50:affects]->(o2)
+SET r50.text = 'Hút thuốc gây hại rất nhiều khía cạnh sức khỏe, bao gồm sức khỏe sinh sản.'
+
+MERGE (o1:lifestyle {id: 'tình_trạng_căng_thẳng_kéo_dài_lifestyle'})
+MERGE (o2:symptom {id: 'chất_lượng_tinh_trùng_symptom'})
+MERGE (o1)-[r51:affects]->(o2)
+SET r51.text = 'Tình trạng căng thẳng kéo dài có thể gây tác động xấu đến chất lượng tinh trùng.'
+
+MERGE (o1:lifestyle {id: 'tình_trạng_thừa_cân__béo_phì_lifestyle'})
+MERGE (o2:organ {id: 'tinh_trùng_organ'})
+MERGE (o1)-[r52:affects]->(o2)
+SET r52.text = 'Tình trạng thừa cân, béo phì có thể vừa tác động trực tiếp lên tinh trùng vừa làm mất sự cân bằng nội tiết tố, gây ảnh hưởng đến quá trình sinh tinh.'
+
+MERGE (o1:lifestyle {id: 'tình_trạng_thừa_cân__béo_phì_lifestyle'})
+MERGE (o2:cause {id: 'sự_cân_bằng_nội_tiết_tố_cause'})
+MERGE (o1)-[r53:affects]->(o2)
+SET r53.text = 'Tình trạng thừa cân, béo phì có thể vừa tác động trực tiếp lên tinh trùng vừa làm mất sự cân bằng nội tiết tố, gây ảnh hưởng đến quá trình sinh tinh.'
+
+MERGE (o1:lifestyle {id: 'tình_trạng_thừa_cân__béo_phì_lifestyle'})
+MERGE (o2:process {id: 'quá_trình_sinh_tinh_process'})
+MERGE (o1)-[r54:affects]->(o2)
+SET r54.text = 'Tình trạng thừa cân, béo phì có thể vừa tác động trực tiếp lên tinh trùng vừa làm mất sự cân bằng nội tiết tố, gây ảnh hưởng đến quá trình sinh tinh.'
+
+MERGE (o1:test {id: 'thăm_khám_lâm_sàng_test'})
+MERGE (o2:disease {id: 'bệnh_lý_mắc_phải_trước_đây_disease'})
+MERGE (o1)-[r55:diagnosedBy]->(o2)
+SET r55.text = 'Khi thăm khám lâm sàng, bác sĩ sẽ kiểm tra cơ quan sinh dục ngoài và yêu cầu người bệnh trả lời các câu hỏi về bệnh lý mắc phải trước đây và thói quen sinh hoạt tình dục.'
+
+MERGE (o1:test {id: 'thăm_khám_lâm_sàng_test'})
+MERGE (o2:lifestyle {id: 'thói_quen_sinh_hoạt_tình_dục_lifestyle'})
+MERGE (o1)-[r56:diagnosedBy]->(o2)
+SET r56.text = 'Khi thăm khám lâm sàng, bác sĩ sẽ kiểm tra cơ quan sinh dục ngoài và yêu cầu người bệnh trả lời các câu hỏi về bệnh lý mắc phải trước đây và thói quen sinh hoạt tình dục.'
+
+MERGE (o1:test {id: 'xét_nghiệm_tinh_dịch_đồ_test'})
+MERGE (o2:disease {id: 'bệnh_disease'})
+MERGE (o1)-[r57:diagnosedBy]->(o2)
+SET r57.text = 'Ngoài ra, để đảm bảo kết quả chẩn đoán bệnh chính xác, bác sĩ sẽ chỉ định người bệnh tiến hành thực hiện xét nghiệm tinh dịch đồ.'
+
+MERGE (o1:test {id: 'xét_nghiệm_tinh_dịch_đồ_test'})
+MERGE (o2:symptom {id: 'số_lượng_tinh_trùng_symptom'})
+MERGE (o1)-[r58:relatedTo]->(o2)
+SET r58.text = 'Bác sĩ sẽ lấy tinh dịch từ người bệnh rồi mang đi phân tích về các thông số như số lượng, tính di động của tình trùng.'
+
+MERGE (o1:test {id: 'xét_nghiệm_tinh_dịch_đồ_test'})
+MERGE (o2:symptom {id: 'tính_di_động_của_tình_trùng_symptom'})
+MERGE (o1)-[r59:relatedTo]->(o2)
+SET r59.text = 'Bác sĩ sẽ lấy tinh dịch từ người bệnh rồi mang đi phân tích về các thông số như số lượng, tính di động của tình trùng.'
+
+MERGE (o1:test {id: 'xét_nghiệm_tinh_dịch_đồ_test'})
+MERGE (o2:cause {id: 'sai_số_cause'})
+MERGE (o1)-[r60:relatedTo]->(o2)
+SET r60.text = 'Để hạn chế sai số và đảm bảo tính chính xác của kết quả xét nghiệm tinh dịch đồ, nam giới cần lưu ý:'
+
+MERGE (o1:test {id: 'xét_nghiệm_tinh_dịch_đồ_test'})
+MERGE (o2:cause {id: 'tính_chính_xác_cause'})
+MERGE (o1)-[r61:relatedTo]->(o2)
+SET r61.text = 'Để hạn chế sai số và đảm bảo tính chính xác của kết quả xét nghiệm tinh dịch đồ, nam giới cần lưu ý:'
+
+MERGE (o1:lifestyle {id: 'lấy_hết_toàn_bộ_tich_dịch_lifestyle'})
+MERGE (o2:test {id: 'xét_nghiệm_tinh_dịch_đồ_test'})
+MERGE (o1)-[r62:relatedTo]->(o2)
+SET r62.text = 'Đảm bảo đã lấy hết toàn bộ tich dịch để làm mẫu thử.'
+
+MERGE (o1:lifestyle {id: 'kiêng_xuất_tinh_lifestyle'})
+MERGE (o2:test {id: 'xét_nghiệm_tinh_dịch_đồ_test'})
+MERGE (o1)-[r63:relatedTo]->(o2)
+SET r63.text = 'Cần kiêng xuất tinh ít nhất 2 ngày, nhưng không hơn 11 ngày trước khi lấy mẫu thử.'
+
+MERGE (o1:lifestyle {id: 'lấy_mẫu_thử_lần_thứ_hai_lifestyle'})
+MERGE (o2:test {id: 'xét_nghiệm_tinh_dịch_đồ_test'})
+MERGE (o1)-[r64:relatedTo]->(o2)
+SET r64.text = 'Sau khi lấy mẫu thử lần đầu, lần lấy mẫu thử thứ hai phải cách đó ít nhất 2 tuần.'
+
+MERGE (o1:lifestyle {id: 'dùng_những_chất_bôi_trơn_lifestyle'})
+MERGE (o2:symptom {id: 'khả_năng_di_động_của_tinh_trùng_symptom'})
+MERGE (o1)-[r65:affects]->(o2)
+SET r65.text = 'Tránh dùng những chất bôi trơn vì có thể ảnh hưởng tới khả năng di động của tinh trùng'
+
+MERGE (o1:test {id: 'xét_nghiệm_test'})
+MERGE (o2:disease {id: 'yếu_tinh_trùng_disease'})
+MERGE (o1)-[r66:diagnosedBy]->(o2)
+SET r66.text = 'Tùy theo sự bất thường lúc đầu, bác sĩ sẽ đề nghị người bệnh tiến hành thêm một số xét nghiệm nhằm tìm ra nguyên nhân nền của tình trạng yếu tinh trùng như:'
+
+MERGE (o1:test {id: 'siêu_âm_tinh_hoàn_test'})
+MERGE (o2:disease {id: 'yếu_tinh_trùng_disease'})
+MERGE (o1)-[r67:relatedTo]->(o2)
+SET r67.text = 'Siêu âm tinh hoàn'
+
+MERGE (o1:test {id: 'định_lượng_hormone_tuyến_yên__hormone_nam_giới_test'})
+MERGE (o2:disease {id: 'yếu_tinh_trùng_disease'})
+MERGE (o1)-[r68:relatedTo]->(o2)
+SET r68.text = 'Định lượng hormone tuyến yên, hormone nam giới'
+
+MERGE (o1:test {id: 'xét_nghiệm_nước_tiểu_sau_xuất_tinh_test'})
+MERGE (o2:disease {id: 'xuất_tinh_ngược_disease'})
+MERGE (o1)-[r69:diagnosedBy]->(o2)
+SET r69.text = 'Xét nghiệm nước tiểu sau xuất tinh nhằm phát hiện tình trạng xuất tinh ngược'
+
+MERGE (o1:test {id: 'phân_tích_gen_test'})
+MERGE (o2:disease {id: 'yếu_tinh_trùng_disease'})
+MERGE (o1)-[r70:relatedTo]->(o2)
+SET r70.text = 'Phân tích gen'
+
+MERGE (o1:test {id: 'sinh_thiết_tinh_hoàn_test'})
+MERGE (o2:disease {id: 'yếu_tinh_trùng_disease'})
+MERGE (o1)-[r71:relatedTo]->(o2)
+SET r71.text = 'Sinh thiết tinh hoàn'
+
+MERGE (o1:test {id: 'siêu_âm_tiền_liệt_tuyến_test'})
+MERGE (o2:disease {id: 'yếu_tinh_trùng_disease'})
+MERGE (o1)-[r72:relatedTo]->(o2)
+SET r72.text = 'Siêu âm tiền liệt tuyến'
+
+MERGE (o1:treatment {id: 'điều_trị_tinh_trùng_yếu_treatment'})
+MERGE (o2:disease {id: 'yếu_tinh_trùng_disease'})
+MERGE (o1)-[r73:relatedTo]->(o2)
+SET r73.text = 'Hiện nay đã có nhiều cách điều trị tinh trùng yếu, điều quan trọng là bác sĩ cần xác định đúng nguyên nhân gây ra tình trạng này ở người bệnh.'
+
+MERGE (o1:lifestyle {id: 'lối_sống_thiếu_lành_mạnh_lifestyle'})
+MERGE (o2:disease {id: 'yếu_tinh_trùng_disease'})
+MERGE (o1)-[r74:causedBy]->(o2)
+SET r74.text = 'Nếu nguyên nhân xuất phát từ lối sống thiếu lành mạnh, nam giới cần nhanh chóng thay đổi lối sống của mình, hạn chế tối đa những yếu tố gây hại tới số lượng và chất lượng tinh trùng.'
+
+MERGE (o1:disease {id: 'bệnh_lý_toàn_thân_disease'})
+MERGE (o2:disease {id: 'yếu_tinh_trùng_disease'})
+MERGE (o1)-[r75:causedBy]->(o2)
+SET r75.text = 'Nếu nguyên nhân xuất phát từ bệnh lý toàn thân hoặc bệnh lý liên quan tới sức khỏe sinh sản, người bệnh có thể được đề xuất áp dụng các phương pháp điều trị thích hợp như:'
+
+MERGE (o1:disease {id: 'bệnh_lý_liên_quan_tới_sức_khỏe_sinh_sản_disease'})
+MERGE (o2:disease {id: 'yếu_tinh_trùng_disease'})
+MERGE (o1)-[r76:causedBy]->(o2)
+SET r76.text = 'Nếu nguyên nhân xuất phát từ bệnh lý toàn thân hoặc bệnh lý liên quan tới sức khỏe sinh sản, người bệnh có thể được đề xuất áp dụng các phương pháp điều trị thích hợp như:'
+
+MERGE (o1:treatment {id: 'thuốc_kháng_sinh_treatment'})
+MERGE (o2:disease {id: 'bệnh_viêm_nhiễm_disease'})
+MERGE (o1)-[r77:treatedBy]->(o2)
+SET r77.text = 'Thuốc kháng sinh: Được dùng để điều trị những bệnh viêm nhiễm.'
+
+MERGE (o1:treatment {id: 'liệu_pháp_hormone_và_thuốc_nội_tiết_treatment'})
+MERGE (o2:disease {id: 'mất_cân_bằng_nội_tiết_tố_disease'})
+MERGE (o1)-[r78:treatedBy]->(o2)
+SET r78.text = 'Liệu pháp hormone và thuốc nội tiết: Khi nam giới mất cân bằng nội tiết tố.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_treatment'})
+MERGE (o2:disease {id: 'giãn_tĩnh_mạch_thừng_tinh_disease'})
+MERGE (o1)-[r79:treatedBy]->(o2)
+SET r79.text = 'Phẫu thuật: Được áp dụng khi nguyên nhân là do giãn tĩnh mạch thừng tinh hay tắc ống dẫn tinh.'
+
+MERGE (o1:symptom {id: 'tinh_trùng_yếu_symptom'})
+MERGE (o2:treatment {id: 'biện_pháp_phòng_ngừa_treatment'})
+MERGE (o1)-[r80:preventedBy]->(o2)
+SET r80.text = 'Không có biện pháp nào hỗ trợ phòng ngừa hiện tượng tinh trùng yếu.'

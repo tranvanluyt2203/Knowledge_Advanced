@@ -1,0 +1,560 @@
+
+MERGE (o1:disease {id: 'viêm_dạ_dày_disease'})
+MERGE (o2:symptom {id: 'đau__nóng_vùng_thượng_vị__ợ_hơi_ợ_chua_nhiều_và_xuất_huyết_dạ_dày_symptom'})
+MERGE (o1)-[r0:causes]->(o2)
+SET r0.text = 'Viêm dạ dày là nguyên nhân dẫn đến các tình trạng đau, nóng vùng thượng vị, ợ hơi ợ chua nhiều và xuất huyết dạ dày trong trường hợp nặng.'
+
+MERGE (o1:disease {id: 'viêm_dạ_dày_disease'})
+MERGE (o2:symptom {id: 'xuất_huyết_dạ_dày_symptom'})
+MERGE (o1)-[r1:causes]->(o2)
+SET r1.text = 'Viêm dạ dày là nguyên nhân dẫn đến các tình trạng đau, nóng vùng thượng vị, ợ hơi ợ chua nhiều và xuất huyết dạ dày trong trường hợp nặng.'
+
+MERGE (o1:disease {id: 'viêm_dạ_dày_cấp_disease'})
+MERGE (o2:treatment {id: 'phương_pháp_nội_khoa_đơn_giản_treatment'})
+MERGE (o1)-[r2:treatedBy]->(o2)
+SET r2.text = 'Viêm dạ dày cấp về cơ bản là một bệnh có thể điều trị dứt điểm bằng phương pháp nội khoa đơn giản.'
+
+MERGE (o1:disease {id: 'viêm_dạ_dày_mạn_tính_disease'})
+MERGE (o2:symptom {id: 'khó_để_khỏi_bệnh_hoàn_toàn_symptom'})
+MERGE (o1)-[r3:relatedTo]->(o2)
+SET r3.text = 'Tuy nhiên, bệnh viêm dạ dày mạn tính khó để khỏi bệnh hoàn toàn.'
+
+MERGE (o1:disease {id: 'viêm_dạ_dày_disease'})
+MERGE (o2:disease {id: 'viêm_niêm_mạc_dạ_dày_disease'})
+MERGE (o1)-[r4:relatedTo]->(o2)
+SET r4.text = 'Viêm dạ dày hay còn được biết là viêm niêm mạc dạ dày là một bệnh lý điển hình thuộc sức khỏe tiêu hóa.'
+
+MERGE (o1:disease {id: 'bệnh_disease'})
+MERGE (o2:cause {id: 'vi_khuẩn_hoặc_những_tác_nhân_khác_cause'})
+MERGE (o1)-[r5:causedBy]->(o2)
+SET r5.text = 'Bệnh là tình trạng bề mặt niêm mạc bị tổn thương, bào mòn do vi khuẩn hoặc những tác nhân khác.'
+
+MERGE (o1:disease {id: 'viêm_dạ_dày_disease'})
+MERGE (o2:test {id: 'xét_nghiệm_mô_bệnh_học_dạ_dày_test'})
+MERGE (o1)-[r6:diagnosedBy]->(o2)
+SET r6.text = 'Viêm dạ dày đặc trưng là sự thấm nhập các tế bào viêm, chính vì vậy bác sĩ cần kết quả xét nghiệm mô bệnh học dạ dày để có thể chẩn đoán và kết luận bệnh.'
+
+MERGE (o1:organ {id: 'niêm_mạc_dạ_dày_organ'})
+MERGE (o2:organ {id: 'dạ_dày_organ'})
+MERGE (o1)-[r7:locatedIn]->(o2)
+SET r7.text = 'Niêm mạc dạ dày là một lớp mỏng có chức năng bảo vệ thành dạ dày khỏi những tác động kích thích từ acid hoặc tấn công của vi khuẩn.'
+
+MERGE (o1:organ {id: 'niêm_mạc_dạ_dày_organ'})
+MERGE (o2:organ {id: 'dạ_dày_organ'})
+MERGE (o1)-[r8:affects]->(o2)
+SET r8.text = 'Niêm mạc dạ dày là một lớp mỏng có chức năng bảo vệ thành dạ dày khỏi những tác động kích thích từ acid hoặc tấn công của vi khuẩn.'
+
+MERGE (o1:cause {id: 'vi_khuẩn_cause'})
+MERGE (o2:disease {id: 'viêm_loét_dạ_dày_disease'})
+MERGE (o1)-[r9:causes]->(o2)
+SET r9.text = 'Theo cơ chế bệnh sinh của viêm dạ dày, khi niêm mạc dạ dày bị vi khuẩn từ bên ngoài tấn công sẽ khiến phần niêm mạc dạ dày bị tổn thương, khả năng cao phát triển thành viêm loét dạ dày.'
+
+MERGE (o1:cause {id: 'sự_bài_tiết_acid_bất_thường_cause'})
+MERGE (o2:symptom {id: 'tổn_thương_niêm_mạc_symptom'})
+MERGE (o1)-[r10:causes]->(o2)
+SET r10.text = 'Ngoài ra, niêm mạc cũng có thể bị tổn thương bởi sự bài tiết acid bất thường bên trong cơ thể.'
+
+MERGE (o1:lifestyle {id: 'thói_quen_ăn_uống_không_điều_độ_và_chế_độ_dinh_dưỡng_không_lành_mạnh_lifestyle'})
+MERGE (o2:symptom {id: 'tổn_thương_niêm_mạc_symptom'})
+MERGE (o1)-[r11:causes]->(o2)
+SET r11.text = 'Điều này là hệ lụy của một thói quen ăn uống không điều độ và chế độ dinh dưỡng không lành mạnh kéo dài.'
+
+MERGE (o1:disease {id: 'viêm_dạ_dày_cấp_tính_và_viêm_dạ_dày_mạn_tính_disease'})
+MERGE (o2:symptom {id: 'triệu_chứng_lâm_sàng_về_đường_ruột__hệ_tiêu_hóa_và_dạ_dày_bất_thường_symptom'})
+MERGE (o1)-[r12:isSymptomOf]->(o2)
+SET r12.text = 'Bệnh có hai loại viêm dạ dày cấp tính và viêm dạ dày mạn tính thường đi kèm với các triệu chứng lâm sàng về đường ruột, hệ tiêu hóa và dạ dày bất thường.'
+
+MERGE (o1:disease {id: 'viêm_dạ_dày_cấp_disease'})
+MERGE (o2:cause {id: 'thuốc__rượu_cause'})
+MERGE (o1)-[r13:causedBy]->(o2)
+SET r13.text = 'Viêm dạ dày cấp là tình trạng trạng dạ dày bị viêm cấp tính do nhiều nguyên nhân: thuốc, rượu, ….Người bệnh thường sẽ nhận biết được viêm dạ dày cấp tính ngay khi các triệu chứng phát ra.'
+
+MERGE (o1:symptom {id: 'cơn_đau_thượng_vị_symptom'})
+MERGE (o2:disease {id: 'viêm_dạ_dày_cấp_disease'})
+MERGE (o1)-[r14:isSymptomOf]->(o2)
+SET r14.text = 'Những triệu chứng chủ yếu là cơn đau thượng vị, gây ra những bất tiện khó chịu trong hoạt động ăn uống.'
+
+MERGE (o1:symptom {id: 'triệu_chứng_lâm_sàng_symptom'})
+MERGE (o2:disease {id: 'viêm_dạ_dày_cấp_disease'})
+MERGE (o1)-[r15:isSymptomOf]->(o2)
+SET r15.text = 'Đây là các triệu chứng lâm sàng điển hình của bệnh và cũng sẽ tự khỏi sau một thời gian ngắn, dao động từ 5 - 7 ngày.'
+
+MERGE (o1:disease {id: 'viêm_dạ_dày_cấp_tính_disease'})
+MERGE (o2:treatment {id: 'thay_đổi_chế_độ_dinh_dưỡng_treatment'})
+MERGE (o1)-[r16:treatedBy]->(o2)
+SET r16.text = 'Người bệnh viêm dạ dày cấp tính có thể không cần điều trị, chỉ cần thay đổi chế độ dinh dưỡng để giảm thiểu và hỗ trợ dạ dày phục hồi tổn thương.'
+
+MERGE (o1:disease {id: 'viêm_dạ_dày_mạn_disease'})
+MERGE (o2:cause {id: 'vi_khuẩn_hp_cause'})
+MERGE (o1)-[r17:causedBy]->(o2)
+SET r17.text = 'Viêm dạ dày mạn xảy ra phần lớn là do vi khuẩn HP.'
+
+MERGE (o1:disease {id: 'bệnh_disease'})
+MERGE (o2:test {id: 'nội_soi_dạ_dày_test'})
+MERGE (o1)-[r18:diagnosedBy]->(o2)
+SET r18.text = 'Bệnh diễn biến từ khi nào không rõ, bệnh thường không có triệu chứng, chủ yếu là phát hiện được do khi nội soi dạ dày.'
+
+MERGE (o1:disease {id: 'viêm_dạ_dày_mạn_disease'})
+MERGE (o2:disease {id: 'viêm_teo__dị_sản_ruột__và_tiến_triển_thành_các_tổn_thương_tiền_ung_thư_dạ_dày_cũng_như_tăng_nguy_cơ_ung_thư_dạ_dày_disease'})
+MERGE (o1)-[r19:relatedTo]->(o2)
+SET r19.text = 'Viêm dạ dày mạn có thể tiến triển thành viêm teo, dị sản ruột, và tiến triển thành các tổn thương tiền ung thư dạ dày cũng như tăng nguy cơ ung thư dạ dày cho người bệnh.'
+
+MERGE (o1:disease {id: 'viêm_dạ_dày_cấp_disease'})
+MERGE (o2:lifestyle {id: 'bất_cứ_đối_tượng_và_lứa_tuổi_nào_lifestyle'})
+MERGE (o1)-[r20:affects]->(o2)
+SET r20.text = 'Viêm dạ dày cấp có thể xảy ra ở bất cứ đối tượng và lứa tuổi nào.'
+
+MERGE (o1:disease {id: 'viêm_dạ_dày_cấp_disease'})
+MERGE (o2:symptom {id: 'bệnh_phổ_biến__dễ_mắc_phải_symptom'})
+MERGE (o1)-[r21:relatedTo]->(o2)
+SET r21.text = 'Tuy nhiên, đây không phải là một bệnh phổ biến, dễ mắc phải.'
+
+MERGE (o1:disease {id: 'viêm_dạ_dày_cấp_disease'})
+MERGE (o2:lifestyle {id: 'chế_độ_dinh_dưỡng_khoa_học__lối_sống_lành_mạnh_lifestyle'})
+MERGE (o1)-[r22:preventedBy]->(o2)
+SET r22.text = 'Bạn hoàn toàn có thể phòng ngừa viêm dạ dày cấp bằng cách thực hiện chế độ dinh dưỡng khoa học, lối sống lành mạnh.'
+
+MERGE (o1:disease {id: 'viêm_dạ_dày_disease'})
+MERGE (o2:lifestyle {id: 'một_số_đối_tượng_nhất_định_lifestyle'})
+MERGE (o1)-[r23:affects]->(o2)
+SET r23.text = 'Mặt khác, viêm dạ dày cũng có thể dễ xuất hiện với một số đối tượng nhất định.'
+
+MERGE (o1:lifestyle {id: 'môi_trường_không_đảm_bảo_vệ_sinh_lifestyle'})
+MERGE (o2:cause {id: 'nhiễm_vi_khuẩn_h.pylori_cause'})
+MERGE (o1)-[r24:causes]->(o2)
+SET r24.text = 'Những đối tượng này gồm những người sống tại những môi trường không đảm bảo vệ sinh, từ đó tăng khả năng bị nhiễm vi khuẩn H.pylori, một loại vi khuẩn gây viêm dạ dày.'
+
+MERGE (o1:cause {id: 'vi_khuẩn_h.pylori_cause'})
+MERGE (o2:disease {id: 'viêm_dạ_dày_disease'})
+MERGE (o1)-[r25:causes]->(o2)
+SET r25.text = 'Những đối tượng này gồm những người sống tại những môi trường không đảm bảo vệ sinh, từ đó tăng khả năng bị nhiễm vi khuẩn H.pylori, một loại vi khuẩn gây viêm dạ dày.'
+
+MERGE (o1:lifestyle {id: 'người_lớn_tuổi_lifestyle'})
+MERGE (o2:symptom {id: 'nguy_cơ_mắc_viêm_dạ_dày_cao_symptom'})
+MERGE (o1)-[r26:associatedWith]->(o2)
+SET r26.text = 'Bên cạnh đó, người lớn tuổi cũng được xét là đối tượng có nguy cơ mắc viêm dạ dày cao hơn những người trẻ vì có thời gian bị nhiễm HP lâu dài .'
+
+MERGE (o1:lifestyle {id: 'người_lớn_tuổi_lifestyle'})
+MERGE (o2:treatment {id: 'sử_dụng_nhiều_loại_thuốc_giảm_đau_chống_viêm_(nsaids)_treatment'})
+MERGE (o1)-[r27:associatedWith]->(o2)
+SET r27.text = 'Hơn nữa, người lớn tuổi cũng là nhóm người sử dụng nhiều loại thuốc giảm đau chống viêm (NSAIDS).'
+
+MERGE (o1:symptom {id: 'cơn_đau_vùng_thượng_vị_symptom'})
+MERGE (o2:disease {id: 'viêm_dạ_dày_disease'})
+MERGE (o1)-[r28:isSymptomOf]->(o2)
+SET r28.text = 'Triệu chứng viêm dạ dày điển hình nhất là cơn đau vùng thượng vị, ngoài ra bệnh còn gây ra cảm giác buồn nôn, chán ăn, khó chịu trong bụng và ợ chua, ợ hơi.'
+
+MERGE (o1:symptom {id: 'cảm_giác_buồn_nôn_symptom'})
+MERGE (o2:disease {id: 'viêm_dạ_dày_disease'})
+MERGE (o1)-[r29:isSymptomOf]->(o2)
+SET r29.text = 'Triệu chứng viêm dạ dày điển hình nhất là cơn đau vùng thượng vị, ngoài ra bệnh còn gây ra cảm giác buồn nôn, chán ăn, khó chịu trong bụng và ợ chua, ợ hơi.'
+
+MERGE (o1:symptom {id: 'chán_ăn_symptom'})
+MERGE (o2:disease {id: 'viêm_dạ_dày_disease'})
+MERGE (o1)-[r30:isSymptomOf]->(o2)
+SET r30.text = 'Triệu chứng viêm dạ dày điển hình nhất là cơn đau vùng thượng vị, ngoài ra bệnh còn gây ra cảm giác buồn nôn, chán ăn, khó chịu trong bụng và ợ chua, ợ hơi.'
+
+MERGE (o1:symptom {id: 'khó_chịu_trong_bụng_symptom'})
+MERGE (o2:disease {id: 'viêm_dạ_dày_disease'})
+MERGE (o1)-[r31:isSymptomOf]->(o2)
+SET r31.text = 'Triệu chứng viêm dạ dày điển hình nhất là cơn đau vùng thượng vị, ngoài ra bệnh còn gây ra cảm giác buồn nôn, chán ăn, khó chịu trong bụng và ợ chua, ợ hơi.'
+
+MERGE (o1:symptom {id: 'ợ_chua_symptom'})
+MERGE (o2:disease {id: 'viêm_dạ_dày_disease'})
+MERGE (o1)-[r32:isSymptomOf]->(o2)
+SET r32.text = 'Triệu chứng viêm dạ dày điển hình nhất là cơn đau vùng thượng vị, ngoài ra bệnh còn gây ra cảm giác buồn nôn, chán ăn, khó chịu trong bụng và ợ chua, ợ hơi.'
+
+MERGE (o1:symptom {id: 'ợ_hơi_symptom'})
+MERGE (o2:disease {id: 'viêm_dạ_dày_disease'})
+MERGE (o1)-[r33:isSymptomOf]->(o2)
+SET r33.text = 'Triệu chứng viêm dạ dày điển hình nhất là cơn đau vùng thượng vị, ngoài ra bệnh còn gây ra cảm giác buồn nôn, chán ăn, khó chịu trong bụng và ợ chua, ợ hơi.'
+
+MERGE (o1:symptom {id: 'đau_bụng_vùng_thượng_vị_symptom'})
+MERGE (o2:disease {id: 'viêm_dạ_dày_disease'})
+MERGE (o1)-[r34:isSymptomOf]->(o2)
+SET r34.text = 'Một số dấu hiệu viêm dạ dày có thể nhận biết bệnh bao gồm:  Đau bụng vùng thượng vị, có thể đau nhiều nhiều khi đói hoặc sau ăn hoặc cả hai Cảm giác trướng bụng ậm ạch sau ăn nên không ăn được nhiều như bình thường Ơ hơi, ợ chua, ợ nóng Chán ăn Buồn nôn và nôn'
+
+MERGE (o1:symptom {id: 'cảm_giác_trướng_bụng_ậm_ạch_sau_ăn_nên_không_ăn_được_nhiều_như_bình_thường_symptom'})
+MERGE (o2:disease {id: 'viêm_dạ_dày_disease'})
+MERGE (o1)-[r35:isSymptomOf]->(o2)
+SET r35.text = 'Một số dấu hiệu viêm dạ dày có thể nhận biết bệnh bao gồm:  Đau bụng vùng thượng vị, có thể đau nhiều nhiều khi đói hoặc sau ăn hoặc cả hai Cảm giác trướng bụng ậm ạch sau ăn nên không ăn được nhiều như bình thường Ơ hơi, ợ chua, ợ nóng Chán ăn Buồn nôn và nôn'
+
+MERGE (o1:symptom {id: 'ơ_hơi_symptom'})
+MERGE (o2:disease {id: 'viêm_dạ_dày_disease'})
+MERGE (o1)-[r36:isSymptomOf]->(o2)
+SET r36.text = 'Một số dấu hiệu viêm dạ dày có thể nhận biết bệnh bao gồm:  Đau bụng vùng thượng vị, có thể đau nhiều nhiều khi đói hoặc sau ăn hoặc cả hai Cảm giác trướng bụng ậm ạch sau ăn nên không ăn được nhiều như bình thường Ơ hơi, ợ chua, ợ nóng Chán ăn Buồn nôn và nôn'
+
+MERGE (o1:symptom {id: 'ợ_chua_symptom'})
+MERGE (o2:disease {id: 'viêm_dạ_dày_disease'})
+MERGE (o1)-[r37:isSymptomOf]->(o2)
+SET r37.text = 'Một số dấu hiệu viêm dạ dày có thể nhận biết bệnh bao gồm:  Đau bụng vùng thượng vị, có thể đau nhiều nhiều khi đói hoặc sau ăn hoặc cả hai Cảm giác trướng bụng ậm ạch sau ăn nên không ăn được nhiều như bình thường Ơ hơi, ợ chua, ợ nóng Chán ăn Buồn nôn và nôn'
+
+MERGE (o1:symptom {id: 'ợ_nóng_symptom'})
+MERGE (o2:disease {id: 'viêm_dạ_dày_disease'})
+MERGE (o1)-[r38:isSymptomOf]->(o2)
+SET r38.text = 'Một số dấu hiệu viêm dạ dày có thể nhận biết bệnh bao gồm:  Đau bụng vùng thượng vị, có thể đau nhiều nhiều khi đói hoặc sau ăn hoặc cả hai Cảm giác trướng bụng ậm ạch sau ăn nên không ăn được nhiều như bình thường Ơ hơi, ợ chua, ợ nóng Chán ăn Buồn nôn và nôn'
+
+MERGE (o1:symptom {id: 'chán_ăn_symptom'})
+MERGE (o2:disease {id: 'viêm_dạ_dày_disease'})
+MERGE (o1)-[r39:isSymptomOf]->(o2)
+SET r39.text = 'Một số dấu hiệu viêm dạ dày có thể nhận biết bệnh bao gồm:  Đau bụng vùng thượng vị, có thể đau nhiều nhiều khi đói hoặc sau ăn hoặc cả hai Cảm giác trướng bụng ậm ạch sau ăn nên không ăn được nhiều như bình thường Ơ hơi, ợ chua, ợ nóng Chán ăn Buồn nôn và nôn'
+
+MERGE (o1:symptom {id: 'buồn_nôn_symptom'})
+MERGE (o2:disease {id: 'viêm_dạ_dày_disease'})
+MERGE (o1)-[r40:isSymptomOf]->(o2)
+SET r40.text = 'Một số dấu hiệu viêm dạ dày có thể nhận biết bệnh bao gồm:  Đau bụng vùng thượng vị, có thể đau nhiều nhiều khi đói hoặc sau ăn hoặc cả hai Cảm giác trướng bụng ậm ạch sau ăn nên không ăn được nhiều như bình thường Ơ hơi, ợ chua, ợ nóng Chán ăn Buồn nôn và nôn'
+
+MERGE (o1:symptom {id: 'nôn_symptom'})
+MERGE (o2:disease {id: 'viêm_dạ_dày_disease'})
+MERGE (o1)-[r41:isSymptomOf]->(o2)
+SET r41.text = 'Một số dấu hiệu viêm dạ dày có thể nhận biết bệnh bao gồm:  Đau bụng vùng thượng vị, có thể đau nhiều nhiều khi đói hoặc sau ăn hoặc cả hai Cảm giác trướng bụng ậm ạch sau ăn nên không ăn được nhiều như bình thường Ơ hơi, ợ chua, ợ nóng Chán ăn Buồn nôn và nôn'
+
+MERGE (o1:disease {id: 'trào_ngược_dạ_dày_thực_quản_disease'})
+MERGE (o2:disease {id: 'viêm_dạ_dày_disease'})
+MERGE (o1)-[r42:relatedTo]->(o2)
+SET r42.text = 'Cần lưu ý rằng những triệu chứng này tương đồng với những bệnh tiêu hóa khác như trào ngược dạ dày thực quản, loét dạ dày tá tràng hoặc thậm chí như ung thư dạ dày.'
+
+MERGE (o1:disease {id: 'loét_dạ_dày_tá_tràng_disease'})
+MERGE (o2:disease {id: 'viêm_dạ_dày_disease'})
+MERGE (o1)-[r43:relatedTo]->(o2)
+SET r43.text = 'Cần lưu ý rằng những triệu chứng này tương đồng với những bệnh tiêu hóa khác như trào ngược dạ dày thực quản, loét dạ dày tá tràng hoặc thậm chí như ung thư dạ dày.'
+
+MERGE (o1:disease {id: 'ung_thư_dạ_dày_disease'})
+MERGE (o2:disease {id: 'viêm_dạ_dày_disease'})
+MERGE (o1)-[r44:relatedTo]->(o2)
+SET r44.text = 'Cần lưu ý rằng những triệu chứng này tương đồng với những bệnh tiêu hóa khác như trào ngược dạ dày thực quản, loét dạ dày tá tràng hoặc thậm chí như ung thư dạ dày.'
+
+MERGE (o1:disease {id: 'viêm_dạ_dày_disease'})
+MERGE (o2:test {id: 'khám_bệnh_test'})
+MERGE (o1)-[r45:diagnosedBy]->(o2)
+SET r45.text = 'Vì thế, khi người bệnh gặp những triệu chứng kể trên cần đi đến bệnh viện khám ngay lập tức để được chẩn đoán chuyên sâu và kết luận bệnh.'
+
+MERGE (o1:treatment {id: 'aspirin_treatment'})
+MERGE (o2:disease {id: 'viêm_dạ_dày_disease'})
+MERGE (o1)-[r46:treatedBy]->(o2)
+SET r46.text = 'Thuốc: Aspirin, thuốc giảm đau chống viêm (NSAIDS)'
+
+MERGE (o1:treatment {id: 'thuốc_giảm_đau_chống_viêm_(nsaids)_treatment'})
+MERGE (o2:disease {id: 'viêm_dạ_dày_disease'})
+MERGE (o1)-[r47:treatedBy]->(o2)
+SET r47.text = 'Thuốc: Aspirin, thuốc giảm đau chống viêm (NSAIDS)'
+
+MERGE (o1:lifestyle {id: 'rượu_lifestyle'})
+MERGE (o2:disease {id: 'viêm_dạ_dày_disease'})
+MERGE (o1)-[r48:aggravatedBy]->(o2)
+SET r48.text = 'Rượu'
+
+MERGE (o1:cause {id: 'vi_khuẩn_helicobacter_pylori_(h.p)_cause'})
+MERGE (o2:disease {id: 'viêm_dạ_dày_disease'})
+MERGE (o1)-[r49:causedBy]->(o2)
+SET r49.text = 'Do vi khuẩn Helicobacter Pylori (H.P) (3)'
+
+MERGE (o1:cause {id: 'stress_cause'})
+MERGE (o2:disease {id: 'viêm_dạ_dày_disease'})
+MERGE (o1)-[r50:causedBy]->(o2)
+SET r50.text = 'Do stress, chấn thương nặng, bỏng, nhiễm khuẩn huyết….'
+
+MERGE (o1:cause {id: 'chấn_thương_nặng_cause'})
+MERGE (o2:disease {id: 'viêm_dạ_dày_disease'})
+MERGE (o1)-[r51:causedBy]->(o2)
+SET r51.text = 'Do stress, chấn thương nặng, bỏng, nhiễm khuẩn huyết….'
+
+MERGE (o1:cause {id: 'bỏng_cause'})
+MERGE (o2:disease {id: 'viêm_dạ_dày_disease'})
+MERGE (o1)-[r52:causedBy]->(o2)
+SET r52.text = 'Do stress, chấn thương nặng, bỏng, nhiễm khuẩn huyết….'
+
+MERGE (o1:cause {id: 'nhiễm_khuẩn_huyết_cause'})
+MERGE (o2:disease {id: 'viêm_dạ_dày_disease'})
+MERGE (o1)-[r53:causedBy]->(o2)
+SET r53.text = 'Do stress, chấn thương nặng, bỏng, nhiễm khuẩn huyết….'
+
+MERGE (o1:cause {id: 'nhiễm_vi_khuẩn_helicobacter_pylori_cause'})
+MERGE (o2:disease {id: 'viêm_dạ_dày_disease'})
+MERGE (o1)-[r54:causedBy]->(o2)
+SET r54.text = 'Phổ biến là nhiễm vi khuẩn Helicobacter Pylori'
+
+MERGE (o1:cause {id: 'tự_miễn_cause'})
+MERGE (o2:disease {id: 'viêm_dạ_dày_disease'})
+MERGE (o1)-[r55:causedBy]->(o2)
+SET r55.text = 'Nguyên nhân ít gặp: do tự miễn, bệnh crohn…'
+
+MERGE (o1:disease {id: 'bệnh_crohn_disease'})
+MERGE (o2:disease {id: 'viêm_dạ_dày_disease'})
+MERGE (o1)-[r56:causedBy]->(o2)
+SET r56.text = 'Nguyên nhân ít gặp: do tự miễn, bệnh crohn…'
+
+MERGE (o1:disease {id: 'viêm_dạ_dày_disease'})
+MERGE (o2:treatment {id: 'phác_đồ_điều_trị_treatment'})
+MERGE (o1)-[r57:treatedBy]->(o2)
+SET r57.text = 'Việc thăm khám sẽ giúp cho người bệnh nhận được phác đồ điều trị phù hợp với tình trạng sức khỏe và bệnh lý.'
+
+MERGE (o1:test {id: 'chẩn_đoán_xác_định_test'})
+MERGE (o2:disease {id: 'viêm_dạ_dày_disease'})
+MERGE (o1)-[r58:diagnosedBy]->(o2)
+SET r58.text = 'Chẩn đoán xác định là hoạt động chẩn đoán nguyên nhân dẫn đến viêm dạ dày ở người bệnh.'
+
+MERGE (o1:symptom {id: 'triệu_chứng_symptom'})
+MERGE (o2:disease {id: 'viêm_dạ_dày_disease'})
+MERGE (o1)-[r59:isSymptomOf]->(o2)
+SET r59.text = 'Bác sĩ sẽ hỏi người bệnh một số câu hỏi liên quan đến triệu chứng, thói quen ăn uống trong thời gian gần và dài hạn để có thể nắm được tình hình của người bệnh.'
+
+MERGE (o1:lifestyle {id: 'thói_quen_ăn_uống_lifestyle'})
+MERGE (o2:disease {id: 'viêm_dạ_dày_disease'})
+MERGE (o1)-[r60:associatedWith]->(o2)
+SET r60.text = 'Bác sĩ sẽ hỏi người bệnh một số câu hỏi liên quan đến triệu chứng, thói quen ăn uống trong thời gian gần và dài hạn để có thể nắm được tình hình của người bệnh.'
+
+MERGE (o1:test {id: 'nội_soi_test'})
+MERGE (o2:disease {id: 'viêm_dạ_dày_disease'})
+MERGE (o1)-[r61:diagnosedBy]->(o2)
+SET r61.text = 'Nội soi là phương pháp chẩn đoán tốt nhất, giúp phân biệt với các bệnh dạ dày khác đặc biệt là ung thư dạ dày.'
+
+MERGE (o1:test {id: 'nội_soi_test'})
+MERGE (o2:disease {id: 'ung_thư_dạ_dày_disease'})
+MERGE (o1)-[r62:diagnosedBy]->(o2)
+SET r62.text = 'Nội soi là phương pháp chẩn đoán tốt nhất, giúp phân biệt với các bệnh dạ dày khác đặc biệt là ung thư dạ dày.'
+
+MERGE (o1:test {id: 'nội_soi_test'})
+MERGE (o2:organ {id: 'thực_quản__dạ_dày__tá_tràng_organ'})
+MERGE (o1)-[r63:locatedIn]->(o2)
+SET r63.text = 'Nội soi thực quản, dạ dày, tá tràng.'
+
+MERGE (o1:test {id: 'nội_soi_test'})
+MERGE (o2:organ {id: 'dạ_dày_organ'})
+MERGE (o1)-[r64:locatedIn]->(o2)
+SET r64.text = 'Phương pháp này bác sĩ sẽ đưa ống nội soi có gắn camera chuyên dụng vào dạ dày của người bệnh.'
+
+MERGE (o1:symptom {id: 'viêm_và_sưng_niêm_mạc_dạ_dày_symptom'})
+MERGE (o2:disease {id: 'viêm_dạ_dày_disease'})
+MERGE (o1)-[r65:isSymptomOf]->(o2)
+SET r65.text = 'Camera sẽ ghi lại và hiển thị tình trạng viêm và sưng niêm mạc dạ dày.'
+
+MERGE (o1:test {id: 'xét_nghiệm_chẩn_đoán_hp_test'})
+MERGE (o2:disease {id: 'viêm_dạ_dày_disease'})
+MERGE (o1)-[r66:diagnosedBy]->(o2)
+SET r66.text = 'Khi cần làm xét nghiệm chẩn đoán HP, bác sĩ sẽ lấy mẫu mô niêm mạc dạ dày để xét nghiệm.'
+
+MERGE (o1:test {id: 'xét_nghiệm_chẩn_đoán_hp_test'})
+MERGE (o2:organ {id: 'dạ_dày_organ'})
+MERGE (o1)-[r67:locatedIn]->(o2)
+SET r67.text = 'Khi cần làm xét nghiệm chẩn đoán HP, bác sĩ sẽ lấy mẫu mô niêm mạc dạ dày để xét nghiệm.'
+
+MERGE (o1:test {id: 'sinh_thiết_dạ_dày_test'})
+MERGE (o2:disease {id: 'viêm_dạ_dày_disease'})
+MERGE (o1)-[r68:diagnosedBy]->(o2)
+SET r68.text = 'Ở một số trường hợp cần thiết, thông thường là những trường hợp nghi ngờ tiền ung thư, bác sĩ cũng sẽ yêu cầu người bệnh thực hiện sinh thiết dạ dày để loại trừ một số bệnh liên quan.'
+
+MERGE (o1:test {id: 'sinh_thiết_test'})
+MERGE (o2:organ {id: 'dạ_dày_organ'})
+MERGE (o1)-[r69:locatedIn]->(o2)
+SET r69.text = 'Sinh thiết có thể được thực hiện trong quá trình nội soi, bác sĩ sẽ lấy mẫu mô niêm mạc dạ dày và xét nghiệm.'
+
+MERGE (o1:disease {id: 'viêm_dạ_dày_cấp_disease'})
+MERGE (o2:treatment {id: 'điều_trị_giảm_tiết_a_xít_treatment'})
+MERGE (o1)-[r70:treatedBy]->(o2)
+SET r70.text = 'Viêm dạ dày cấp có thể tự khỏi mà không cần điều trị, hoặc điều trị giảm tiết a xít .'
+
+MERGE (o1:disease {id: 'viêm_dạ_dày_cấp_disease'})
+MERGE (o2:symptom {id: 'xuất_huyết_tiêu_hóa_symptom'})
+MERGE (o1)-[r71:affects]->(o2)
+SET r71.text = 'Viêm dạ dày cấp dù không phải là một bệnh lý nguy hiểm nhưng cũng có thể gây xuất huyết tiêu hóa .'
+
+MERGE (o1:lifestyle {id: 'điều_chỉnh_chế_độ_ăn_và_sinh_hoạt_lifestyle'})
+MERGE (o2:disease {id: 'viêm_dạ_dày_cấp_disease'})
+MERGE (o1)-[r72:treatedBy]->(o2)
+SET r72.text = 'Vì vậy, việc đi gặp bác sĩ là cần thiết khi các triệu chứng không thuyên giảm sau điều chỉnh chế độ ăn và sinh hoạt'
+
+MERGE (o1:disease {id: 'viêm_dạ_dày_disease'})
+MERGE (o2:cause {id: 'lây_nhiễm_cause'})
+MERGE (o1)-[r73:relatedTo]->(o2)
+SET r73.text = 'Bệnh viêm dạ dày vốn không có khả năng lây nhiễm.'
+
+MERGE (o1:disease {id: 'viêm_dạ_dày_disease'})
+MERGE (o2:cause {id: 'nhiễm_trùng_vi_khuẩn_h.pylori_cause'})
+MERGE (o1)-[r74:causedBy]->(o2)
+SET r74.text = 'Tuy nhiên, đối với những người bị viêm dạ dày do nhiễm trùng vi khuẩn H.pylori thì sẽ có thể lây nhiễm.'
+
+MERGE (o1:cause {id: 'lây_nhiễm_vi_khuẩn_h.pylori_cause'})
+MERGE (o2:lifestyle {id: 'đường_ăn_uống_lifestyle'})
+MERGE (o1)-[r75:relatedTo]->(o2)
+SET r75.text = 'Cần lưu ý, việc lây nhiễm ở đây là lây nhiễm vi khuẩn H.pylori thông qua đường ăn uống.'
+
+MERGE (o1:cause {id: 'vi_khuẩn_h.pylori_cause'})
+MERGE (o2:disease {id: 'viêm_dạ_dày_disease'})
+MERGE (o1)-[r76:causes]->(o2)
+SET r76.text = 'Đây là loại vi khuẩn gây ra bệnh viêm dạ dày phổ biến nhất, nên khi vi khuẩn này lây nhiễm từ người sang người sẽ dễ gây ra bệnh viêm dạ dày.'
+
+MERGE (o1:disease {id: 'viêm_dạ_dày_cấp_tính_disease'})
+MERGE (o2:cause {id: 'nguy_hiểm_cause'})
+MERGE (o1)-[r77:relatedTo]->(o2)
+SET r77.text = 'Viêm dạ dày cấp tính không phải là một bệnh nguy hiểm.'
+
+MERGE (o1:disease {id: 'viêm_dạ_dày_disease'})
+MERGE (o2:treatment {id: 'uống_đường_uống_treatment'})
+MERGE (o1)-[r78:treatedBy]->(o2)
+SET r78.text = 'Mặt khác, viêm dạ dày có thể điều trị nội khoa dứt điểm bằng uống đường uống.'
+
+MERGE (o1:disease {id: 'viêm_dạ_dày_disease'})
+MERGE (o2:symptom {id: 'xuất_huyết_tiêu_hóa_symptom'})
+MERGE (o1)-[r79:affects]->(o2)
+SET r79.text = 'Tuy nhiên, có thể gây xuất huyết tiêu hóa: nôn ra máu, ỉa phân đen, thiếu máu…'
+
+MERGE (o1:symptom {id: 'nôn_ra_máu_symptom'})
+MERGE (o2:symptom {id: 'xuất_huyết_tiêu_hóa_symptom'})
+MERGE (o1)-[r80:isSymptomOf]->(o2)
+SET r80.text = 'Tuy nhiên, có thể gây xuất huyết tiêu hóa: nôn ra máu, ỉa phân đen, thiếu máu…'
+
+MERGE (o1:symptom {id: 'ỉa_phân_đen_symptom'})
+MERGE (o2:symptom {id: 'xuất_huyết_tiêu_hóa_symptom'})
+MERGE (o1)-[r81:isSymptomOf]->(o2)
+SET r81.text = 'Tuy nhiên, có thể gây xuất huyết tiêu hóa: nôn ra máu, ỉa phân đen, thiếu máu…'
+
+MERGE (o1:symptom {id: 'thiếu_máu_symptom'})
+MERGE (o2:symptom {id: 'xuất_huyết_tiêu_hóa_symptom'})
+MERGE (o1)-[r82:isSymptomOf]->(o2)
+SET r82.text = 'Tuy nhiên, có thể gây xuất huyết tiêu hóa: nôn ra máu, ỉa phân đen, thiếu máu…'
+
+MERGE (o1:disease {id: 'viêm_dạ_dày_mạn_tính_disease'})
+MERGE (o2:symptom {id: 'teo_niêm_mạc_dạ_dày_symptom'})
+MERGE (o1)-[r83:causes]->(o2)
+SET r83.text = 'Viêm dạ dày mạn tính cũng là một nguyên nhân dẫn đến như teo niêm mạc dạ dày dẫn đến dị sản ruột , loạn sản và nặng nhất là ung thư dạ dày.'
+
+MERGE (o1:symptom {id: 'teo_niêm_mạc_dạ_dày_symptom'})
+MERGE (o2:disease {id: 'dị_sản_ruột_disease'})
+MERGE (o1)-[r84:causes]->(o2)
+SET r84.text = 'Viêm dạ dày mạn tính cũng là một nguyên nhân dẫn đến như teo niêm mạc dạ dày dẫn đến dị sản ruột , loạn sản và nặng nhất là ung thư dạ dày.'
+
+MERGE (o1:symptom {id: 'teo_niêm_mạc_dạ_dày_symptom'})
+MERGE (o2:disease {id: 'loạn_sản_disease'})
+MERGE (o1)-[r85:causes]->(o2)
+SET r85.text = 'Viêm dạ dày mạn tính cũng là một nguyên nhân dẫn đến như teo niêm mạc dạ dày dẫn đến dị sản ruột , loạn sản và nặng nhất là ung thư dạ dày.'
+
+MERGE (o1:treatment {id: 'điều_trị_viêm_dạ_dày_treatment'})
+MERGE (o2:disease {id: 'viêm_dạ_dày_cấp_disease'})
+MERGE (o1)-[r86:treatedBy]->(o2)
+SET r86.text = 'Điều trị viêm dạ dày chủ yếu là với viêm dạ dày cấp, điều trị nội khoa bằng thuốc đường uống.'
+
+MERGE (o1:treatment {id: 'điều_trị_nội_khoa_treatment'})
+MERGE (o2:disease {id: 'viêm_dạ_dày_cấp_disease'})
+MERGE (o1)-[r87:treatedBy]->(o2)
+SET r87.text = 'Điều trị viêm dạ dày chủ yếu là với viêm dạ dày cấp, điều trị nội khoa bằng thuốc đường uống.'
+
+MERGE (o1:treatment {id: 'thuốc_đường_uống_treatment'})
+MERGE (o2:disease {id: 'viêm_dạ_dày_cấp_disease'})
+MERGE (o1)-[r88:treatedBy]->(o2)
+SET r88.text = 'Điều trị viêm dạ dày chủ yếu là với viêm dạ dày cấp, điều trị nội khoa bằng thuốc đường uống.'
+
+MERGE (o1:symptom {id: 'triệu_chứng_lâm_sàng_symptom'})
+MERGE (o2:disease {id: 'viêm_dạ_dày_disease'})
+MERGE (o1)-[r89:isSymptomOf]->(o2)
+SET r89.text = 'Tùy vào từng triệu chứng lâm sàng mà bác sĩ sẽ chỉ định các loại thuốc phù hợp với từng trường hợp bệnh.'
+
+MERGE (o1:treatment {id: 'thuốc_kháng_sinh_treatment'})
+MERGE (o2:disease {id: 'viêm_dạ_dày_vi_khuẩn_hp_disease'})
+MERGE (o1)-[r90:treatedBy]->(o2)
+SET r90.text = 'Những loại thuốc thông dụng được sử dụng để điều trị viêm dạ dày gồm:  Thuốc kháng sinh: Điều trị cho những trường hợp bị viêm dạ dày vi khuẩn HP (4)'
+
+MERGE (o1:treatment {id: 'thuốc_trung_hòa_axit_treatment'})
+MERGE (o2:disease {id: 'viêm_dạ_dày_disease'})
+MERGE (o1)-[r91:treatedBy]->(o2)
+SET r91.text = 'Thuốc trung hòa axit: Thuốc này có công dụng là giảm sự tiếp xúc của acid vào niêm mạc và thành dạ dày.'
+
+MERGE (o1:cause {id: 'acid_cause'})
+MERGE (o2:disease {id: 'viêm_dạ_dày_disease'})
+MERGE (o1)-[r92:causedBy]->(o2)
+SET r92.text = 'Thuốc trung hòa axit: Thuốc này có công dụng là giảm sự tiếp xúc của acid vào niêm mạc và thành dạ dày. Hạn chế được tình trạng viêm làm dịu nhanh các triệu chứng khó chịu'
+
+MERGE (o1:organ {id: 'niêm_mạc_organ'})
+MERGE (o2:organ {id: 'dạ_dày_organ'})
+MERGE (o1)-[r93:locatedIn]->(o2)
+SET r93.text = 'Thuốc trung hòa axit: Thuốc này có công dụng là giảm sự tiếp xúc của acid vào niêm mạc và thành dạ dày. Hạn chế được tình trạng viêm làm dịu nhanh các triệu chứng khó chịu'
+
+MERGE (o1:organ {id: 'thành_dạ_dày_organ'})
+MERGE (o2:organ {id: 'dạ_dày_organ'})
+MERGE (o1)-[r94:locatedIn]->(o2)
+SET r94.text = 'Thuốc trung hòa axit: Thuốc này có công dụng là giảm sự tiếp xúc của acid vào niêm mạc và thành dạ dày. Hạn chế được tình trạng viêm làm dịu nhanh các triệu chứng khó chịu'
+
+MERGE (o1:symptom {id: 'viêm_symptom'})
+MERGE (o2:disease {id: 'viêm_dạ_dày_disease'})
+MERGE (o1)-[r95:isSymptomOf]->(o2)
+SET r95.text = 'Thuốc trung hòa axit: Thuốc này có công dụng là giảm sự tiếp xúc của acid vào niêm mạc và thành dạ dày. Hạn chế được tình trạng viêm làm dịu nhanh các triệu chứng khó chịu'
+
+MERGE (o1:symptom {id: 'triệu_chứng_khó_chịu_symptom'})
+MERGE (o2:disease {id: 'viêm_dạ_dày_disease'})
+MERGE (o1)-[r96:isSymptomOf]->(o2)
+SET r96.text = 'Thuốc trung hòa axit: Thuốc này có công dụng là giảm sự tiếp xúc của acid vào niêm mạc và thành dạ dày. Hạn chế được tình trạng viêm làm dịu nhanh các triệu chứng khó chịu'
+
+MERGE (o1:treatment {id: 'thuốc_ức_chế_bơm_proton_treatment'})
+MERGE (o2:disease {id: 'viêm_dạ_dày_disease'})
+MERGE (o1)-[r97:treatedBy]->(o2)
+SET r97.text = 'Thuốc ức chế bơm proton: đây là thuốc giảm tiết axit giúp kiểm soát và làm giảm lượng acid mà dạ dày tạo ra.'
+
+MERGE (o1:treatment {id: 'giảm_tiết_axit_treatment'})
+MERGE (o2:disease {id: 'viêm_dạ_dày_disease'})
+MERGE (o1)-[r98:treatedBy]->(o2)
+SET r98.text = 'Thuốc ức chế bơm proton: đây là thuốc giảm tiết axit giúp kiểm soát và làm giảm lượng acid mà dạ dày tạo ra.'
+
+MERGE (o1:cause {id: 'acid_cause'})
+MERGE (o2:disease {id: 'viêm_dạ_dày_disease'})
+MERGE (o1)-[r99:causedBy]->(o2)
+SET r99.text = 'Thuốc ức chế bơm proton: đây là thuốc giảm tiết axit giúp kiểm soát và làm giảm lượng acid mà dạ dày tạo ra.'
+
+MERGE (o1:treatment {id: 'thuốc_ức_chế_bơm_proton_treatment'})
+MERGE (o2:disease {id: 'viêm_dạ_dày_cấp_disease'})
+MERGE (o1)-[r100:treatedBy]->(o2)
+SET r100.text = 'Thuốc ức chế bơm proton: đây là thuốc giảm tiết axit giúp kiểm soát và làm giảm lượng acid mà dạ dày tạo ra. Được chỉ định cho những ca viêm dạ dày cấp.'
+
+MERGE (o1:disease {id: 'viêm_dạ_dày_mạn_disease'})
+MERGE (o2:cause {id: 'vi_khuẩn_hp_cause'})
+MERGE (o1)-[r101:relatedTo]->(o2)
+SET r101.text = 'Viêm dạ dày mạn thường không có triệu chứng, nếu do HP có thể dùng thuốc diệt vi khuẩn HP.'
+
+MERGE (o1:symptom {id: 'triệu_chứng_symptom'})
+MERGE (o2:disease {id: 'viêm_dạ_dày_mạn_disease'})
+MERGE (o1)-[r102:isSymptomOf]->(o2)
+SET r102.text = 'Viêm dạ dày mạn thường không có triệu chứng, nếu do HP có thể dùng thuốc diệt vi khuẩn HP.'
+
+MERGE (o1:treatment {id: 'thuốc_diệt_vi_khuẩn_hp_treatment'})
+MERGE (o2:disease {id: 'viêm_dạ_dày_mạn_disease'})
+MERGE (o1)-[r103:treatedBy]->(o2)
+SET r103.text = 'Viêm dạ dày mạn thường không có triệu chứng, nếu do HP có thể dùng thuốc diệt vi khuẩn HP.'
+
+MERGE (o1:lifestyle {id: 'rượu_bia_lifestyle'})
+MERGE (o2:disease {id: 'viêm_dạ_dày_disease'})
+MERGE (o1)-[r104:aggravatedBy]->(o2)
+SET r104.text = 'Không lạm dụng hoặc hạn chế rượu bia'
+
+MERGE (o1:treatment {id: 'thuốc_giảm_đau_nsaid_treatment'})
+MERGE (o2:disease {id: 'viêm_dạ_dày_disease'})
+MERGE (o1)-[r105:treatedBy]->(o2)
+SET r105.text = 'Luôn sử dụng thuốc giảm đau NSAID theo chỉ định của bác sĩ.'
+
+MERGE (o1:treatment {id: 'thuốc_treatment'})
+MERGE (o2:disease {id: 'viêm_dạ_dày_disease'})
+MERGE (o1)-[r106:treatedBy]->(o2)
+SET r106.text = 'Không được tự ý sử dụng các loại thuốc này.'
+
+MERGE (o1:food {id: 'thức_ăn_cay_nóng_food'})
+MERGE (o2:disease {id: 'viêm_dạ_dày_disease'})
+MERGE (o1)-[r107:aggravatedBy]->(o2)
+SET r107.text = 'Hạn chế các thức ăn quá cay nóng'
+
+MERGE (o1:lifestyle {id: 'vệ_sinh_trong_ăn_uống_lifestyle'})
+MERGE (o2:disease {id: 'viêm_dạ_dày_disease'})
+MERGE (o1)-[r108:preventedBy]->(o2)
+SET r108.text = 'Chú ý vệ sinh trong ăn uống'
+
+MERGE (o1:treatment {id: 'trung_tâm_nội_soi_và_phẫu_thuật_nội_soi_tiêu_hóa_(bvđk_tâm_anh_tp.hcm)_và_khoa_tiêu_hóa_-_gan_mật_-_tụy_(bvđk_tâm_anh_hà_nội)_treatment'})
+MERGE (o2:disease {id: 'viêm_dạ_dày_disease'})
+MERGE (o1)-[r109:treatedBy]->(o2)
+SET r109.text = 'Trung tâm Nội soi và Phẫu thuật nội soi tiêu hóa (BVĐK Tâm Anh TP.HCM) và Khoa Tiêu hóa - Gan mật - Tụy (BVĐK Tâm Anh Hà Nội) là những trung tâm y tế chuyên khoa Tiêu hóa uy tín, cung cấp dịch vụ thăm khám và điều trị cao cấp, hiệu quả cho các bệnh nhân mắc bệnh ống tiêu hóa: như viêm dạ dày, loét dạ dày… các vấn đề về gan từ nhẹ đến nặng (gan nhiễm mỡ, viêm gan cấp tính, mạn tính, xơ gan, ung thư gan…).'
+
+MERGE (o1:disease {id: 'loét_dạ_dày_disease'})
+MERGE (o2:disease {id: 'viêm_dạ_dày_disease'})
+MERGE (o1)-[r110:relatedTo]->(o2)
+SET r110.text = 'Trung tâm Nội soi và Phẫu thuật nội soi tiêu hóa (BVĐK Tâm Anh TP.HCM) và Khoa Tiêu hóa - Gan mật - Tụy (BVĐK Tâm Anh Hà Nội) là những trung tâm y tế chuyên khoa Tiêu hóa uy tín, cung cấp dịch vụ thăm khám và điều trị cao cấp, hiệu quả cho các bệnh nhân mắc bệnh ống tiêu hóa: như viêm dạ dày, loét dạ dày… các vấn đề về gan từ nhẹ đến nặng (gan nhiễm mỡ, viêm gan cấp tính, mạn tính, xơ gan, ung thư gan…).'
+
+MERGE (o1:treatment {id: 'bác_sĩ_nội_khoa_–_ngoại_khoa_–_nội_soi_tiêu_hóa_treatment'})
+MERGE (o2:disease {id: 'viêm_dạ_dày_disease'})
+MERGE (o1)-[r111:treatedBy]->(o2)
+SET r111.text = 'Hệ thống BVĐK Tâm Anh quy tụ đội ngũ bác sĩ Nội khoa – Ngoại khoa – Nội soi tiêu hóa chuyên môn cao, giàu kinh nghiệm, bên cạnh đó là sự hỗ trợ của hệ thống thiết bị y tế hiện đại, nhập khẩu từ nước ngoài, phục vụ tối đa nhu cầu thăm khám và điều trị của khách hàng.'

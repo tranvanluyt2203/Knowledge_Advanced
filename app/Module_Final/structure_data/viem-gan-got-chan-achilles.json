@@ -1,0 +1,746 @@
+[
+    {
+        "text": "Viêm gân gót chân là bệnh thường gặp, đặc biệt là ở các vận động viên chuyên nghiệp.",
+        "head": "Viêm gân gót chân",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Vận động viên chuyên nghiệp",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Chấn thương này gây đau đớn, làm người bệnh gặp nhiều khó khăn trong sinh hoạt hằng ngày.",
+        "head": "Chấn thương",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm gân gót chân",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu không được chữa trị kịp thời và đúng cách, người bệnh có thể gặp phải các biến chứng nguy hiểm.",
+        "head": "Biến chứng",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm gân gót chân",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Viêm gân gót chân là tình trạng gân Achilles hoạt động quá mức dẫn tới tình trạng bị quá tải về lực và trọng lực, gây tổn thương vùng gót chân.",
+        "head": "Viêm gân gót chân",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Gân Achilles hoạt động quá mức",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Gân Achilles là khu vực có ít mạch máu, cách chỗ bám vào xương gót 3 - 6cm.",
+        "head": "Gân Achilles",
+        "head_type": "organ",
+        "relation": "locatedIn",
+        "tail": "Chỗ bám vào xương gót",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Cấu tạo của gân gồm nhiều sợi collagen nhỏ nên chỉ cần một tác động bất ngờ cũng đủ gây tổn thương gót chân.",
+        "head": "Tác động bất ngờ",
+        "head_type": "cause",
+        "relation": "causes",
+        "tail": "Tổn thương gót chân",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Viêm điểm bám gân Achilles (Insertional Achilles tendinitis): Tổn thương này tác động tới nơi thấp nhất của gân, nơi gân được gắn vào xương gót chân.",
+        "head": "Viêm điểm bám gân Achilles",
+        "head_type": "disease",
+        "relation": "locatedIn",
+        "tail": "Nơi thấp nhất của gân",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Viêm điểm bám gân Achilles (Insertional Achilles tendinitis): Tổn thương này tác động tới nơi thấp nhất của gân, nơi gân được gắn vào xương gót chân.",
+        "head": "Viêm điểm bám gân Achilles",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Xương gót chân",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Viêm sợi gân (Noninsertional Achilles tendinitis): Đây là tình trạng viêm liên quan tới các sợi ở phần giữa của gân, thường xảy ra ở người trẻ tuổi.",
+        "head": "Viêm sợi gân",
+        "head_type": "disease",
+        "relation": "locatedIn",
+        "tail": "Phần giữa của gân",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Căng thẳng lặp đi lặp lại nhiều lần ở chân là nguyên nhân chủ yếu gây viêm gân Achilles.",
+        "head": "Căng thẳng lặp đi lặp lại nhiều lần ở chân",
+        "head_type": "cause",
+        "relation": "causes",
+        "tail": "Viêm gân Achilles",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tình trạng này thường xảy ra ở người tập thể dục quá mức, đặc biệt là vận động viên.",
+        "head": "Tập thể dục quá mức",
+        "head_type": "lifestyle",
+        "relation": "aggravatedBy",
+        "tail": "Viêm gân Achilles",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ngoài ra, một số bệnh lý xương khớp như viêm khớp dạng thấp, viêm khớp nhiễm trùng… cũng có thể là nguyên nhân gây viêm gân gót chân.",
+        "head": "Viêm khớp dạng thấp",
+        "head_type": "disease",
+        "relation": "causes",
+        "tail": "Viêm gân gót chân",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ngoài ra, một số bệnh lý xương khớp như viêm khớp dạng thấp, viêm khớp nhiễm trùng… cũng có thể là nguyên nhân gây viêm gân gót chân.",
+        "head": "Viêm khớp nhiễm trùng",
+        "head_type": "disease",
+        "relation": "causes",
+        "tail": "Viêm gân gót chân",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Không khởi động hoặc khởi động sai cách trước khi tập thể dục.",
+        "head": "Không khởi động hoặc khởi động sai cách",
+        "head_type": "lifestyle",
+        "relation": "aggravatedBy",
+        "tail": "Viêm gân gót chân",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bị căng cơ chân khi thực hiện những động tác lặp lại nhiều lần.",
+        "head": "Căng cơ chân",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm gân gót chân",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Chơi các môn thể thao yêu cầu đổi hướng, di chuyển nhanh như bóng đá, quần vợt, bóng rổ, bóng chuyền…",
+        "head": "Bóng đá",
+        "head_type": "lifestyle",
+        "relation": "aggravatedBy",
+        "tail": "Viêm gân gót chân",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Chơi các môn thể thao yêu cầu đổi hướng, di chuyển nhanh như bóng đá, quần vợt, bóng rổ, bóng chuyền…",
+        "head": "Quần vợt",
+        "head_type": "lifestyle",
+        "relation": "aggravatedBy",
+        "tail": "Viêm gân gót chân",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Chơi các môn thể thao yêu cầu đổi hướng, di chuyển nhanh như bóng đá, quần vợt, bóng rổ, bóng chuyền…",
+        "head": "Bóng rổ",
+        "head_type": "lifestyle",
+        "relation": "aggravatedBy",
+        "tail": "Viêm gân gót chân",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Chơi các môn thể thao yêu cầu đổi hướng, di chuyển nhanh như bóng đá, quần vợt, bóng rổ, bóng chuyền…",
+        "head": "Bóng chuyền",
+        "head_type": "lifestyle",
+        "relation": "aggravatedBy",
+        "tail": "Viêm gân gót chân",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Gia tăng các hoạt động thể chất đột ngột mà không cho cơ thể thời gian thích nghi.",
+        "head": "Gia tăng các hoạt động thể chất đột ngột",
+        "head_type": "lifestyle",
+        "relation": "aggravatedBy",
+        "tail": "Viêm gân gót chân",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đi giày không vừa chân, giày quá cũ hoặc chất lượng kém.",
+        "head": "Đi giày không vừa chân",
+        "head_type": "lifestyle",
+        "relation": "aggravatedBy",
+        "tail": "Viêm gân gót chân",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đi giày không vừa chân, giày quá cũ hoặc chất lượng kém.",
+        "head": "Giày quá cũ",
+        "head_type": "lifestyle",
+        "relation": "aggravatedBy",
+        "tail": "Viêm gân gót chân",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đi giày không vừa chân, giày quá cũ hoặc chất lượng kém.",
+        "head": "Giày chất lượng kém",
+        "head_type": "lifestyle",
+        "relation": "aggravatedBy",
+        "tail": "Viêm gân gót chân",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Mang giày cao gót liên tục trong thời gian dài.",
+        "head": "Mang giày cao gót",
+        "head_type": "lifestyle",
+        "relation": "aggravatedBy",
+        "tail": "Viêm gân gót chân",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Xuất hiện gai xương ở phía sau gót chân (gai gót chân).",
+        "head": "Gai xương",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm gân gót chân",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Thoái hóa gân do tuổi tác.",
+        "head": "Thoái hóa gân",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm gân gót chân",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Giới tính: Bệnh phổ biến ở nam giới.",
+        "head": "Viêm gân gót chân",
+        "head_type": "disease",
+        "relation": "associatedWith",
+        "tail": "Nam giới",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Tuổi tác: Người càng lớn tuổi nguy cơ bị viêm gân Achilles sẽ càng cao.",
+        "head": "Viêm gân Achilles",
+        "head_type": "disease",
+        "relation": "associatedWith",
+        "tail": "Tuổi tác",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Vì khi đó, máu lưu thông tới khu vực gân bàn chân đã giảm.",
+        "head": "Máu lưu thông",
+        "head_type": "cause",
+        "relation": "causes",
+        "tail": "Viêm gân Achilles",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tình trạng này làm cho gân gót chân mất đi sự linh hoạt, dẻo dai và đàn hồi.",
+        "head": "Mất đi sự linh hoạt, dẻo dai và đàn hồi",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm gân gót chân",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Vì thế, bất kỳ tác động nào diễn ra cũng có khả năng làm tổn thương gân Achilles.",
+        "head": "Tác động",
+        "head_type": "cause",
+        "relation": "causes",
+        "tail": "Tổn thương gân Achilles",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Người mắc hội chứng bàn chân bẹt có nguy cơ bị viêm gân gót chân cao.",
+        "head": "Hội chứng bàn chân bẹt",
+        "head_type": "disease",
+        "relation": "associatedWith",
+        "tail": "Viêm gân gót chân",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nguyên nhân là do sức nặng cơ thể khi đó sẽ đổ dồn nhiều lên gân gót chân, tạo áp lực lớn lên khu vực này, dễ gây viêm gân Achilles.",
+        "head": "Sức nặng cơ thể",
+        "head_type": "cause",
+        "relation": "causes",
+        "tail": "Viêm gân gót chân",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Người bệnh vảy nến hay tăng huyết áp có tỷ lệ gân gót chân bị viêm cao hơn so với người không mắc bệnh.",
+        "head": "Bệnh vảy nến",
+        "head_type": "disease",
+        "relation": "associatedWith",
+        "tail": "Viêm gân gót chân",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Người bệnh vảy nến hay tăng huyết áp có tỷ lệ gân gót chân bị viêm cao hơn so với người không mắc bệnh.",
+        "head": "Tăng huyết áp",
+        "head_type": "disease",
+        "relation": "associatedWith",
+        "tail": "Viêm gân gót chân",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đau rát bỏng hoặc đau cứng phần thấp bắp chân sau vào buổi sáng.",
+        "head": "Đau rát bỏng hoặc đau cứng phần thấp bắp chân sau vào buổi sáng",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm gân Achilles",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Một số trường hợp có thể bị rách một phần gan hoặc đứt gân hoàn toàn.",
+        "head": "rách một phần gan hoặc đứt gân hoàn toàn",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm gân Achilles",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đau vùng gót, đặc biệt là khi căng gót hay đứng trên đầu mũi chân.",
+        "head": "Đau vùng gót",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm gân Achilles",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi tình trạng viêm gân Achilles kéo dài mà không có biện pháp can thiệp, người bệnh có nguy cơ cao bị đứt gân gót chân.",
+        "head": "Viêm gân Achilles kéo dài",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Đứt gân gót chân",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu bị đứt gân, người bệnh sẽ bị đau dai dẳng, xuất hiện tình trạng phù nề vùng gót chân do có chảy máu giữa các sợi gân.",
+        "head": "Đau dai dẳng",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Đứt gân gót chân",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu bị đứt gân, người bệnh sẽ bị đau dai dẳng, xuất hiện tình trạng phù nề vùng gót chân do có chảy máu giữa các sợi gân.",
+        "head": "Phù nề vùng gót chân",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Đứt gân gót chân",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ngoài cảm giác đau dai dẳng, viêm gân gót chân nếu trì hoãn điều trị hoặc điều trị sai cách có thể dẫn tới nhiều biến chứng nguy hiểm như:  Hạn chế khả năng đi lại Biến dạng gân và xương gót chân Đứt gân Achilles hoàn toàn",
+        "head": "Viêm gân gót chân",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Hạn chế khả năng đi lại",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Ngoài cảm giác đau dai dẳng, viêm gân gót chân nếu trì hoãn điều trị hoặc điều trị sai cách có thể dẫn tới nhiều biến chứng nguy hiểm như:  Hạn chế khả năng đi lại Biến dạng gân và xương gót chân Đứt gân Achilles hoàn toàn",
+        "head": "Viêm gân gót chân",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Biến dạng gân và xương gót chân",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Ngoài cảm giác đau dai dẳng, viêm gân gót chân nếu trì hoãn điều trị hoặc điều trị sai cách có thể dẫn tới nhiều biến chứng nguy hiểm như:  Hạn chế khả năng đi lại Biến dạng gân và xương gót chân Đứt gân Achilles hoàn toàn",
+        "head": "Viêm gân gót chân",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Đứt gân Achilles hoàn toàn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Để chẩn đoán tình trạng viêm gân gót chân, bác sĩ sẽ kiểm tra các triệu chứng và hoạt động bình thường của người bệnh.",
+        "head": "Viêm gân gót chân",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "Kiểm tra các triệu chứng và hoạt động bình thường",
+        "tail_type": "test"
+    },
+    {
+        "text": "Sau đó, bác sĩ có thể ấn nhẹ vào khu vực bị tổn thương để xác định vị trí đau sưng.",
+        "head": "Viêm gân gót chân",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "Ấn nhẹ vào khu vực bị tổn thương",
+        "tail_type": "test"
+    },
+    {
+        "text": "Người bệnh cũng có thể được yêu cầu đứng trên một quả bóng để đánh giá sự linh hoạt, phạm vi chuyển động và phản xạ của bàn chân, mắt cá chân.",
+        "head": "Viêm gân gót chân",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "Đứng trên một quả bóng",
+        "tail_type": "test"
+    },
+    {
+        "text": "Chụp X-quang: Phương pháp chẩn đoán này giúp bác sĩ quan sát hình ảnh bàn chân và xương chân.",
+        "head": "Chụp X-quang",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "Viêm gân gót chân",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Chụp X-quang: Phương pháp chẩn đoán này giúp bác sĩ quan sát hình ảnh bàn chân và xương chân. Tuy chụp X-quang không thể cung cấp hình ảnh của gân nhưng có thể giúp bác sĩ loại trừ những nguyên nhân khác có khả năng dẫn tới những triệu chứng tương tự.",
+        "head": "Chụp X-quang",
+        "head_type": "test",
+        "relation": "relatedTo",
+        "tail": "Bàn chân và xương chân",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Siêu âm: Phương pháp này sẽ dùng sóng âm tần số cao để tạo ra hình ảnh chi tiết tại các mô mềm như gân.",
+        "head": "Siêu âm",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "Viêm gân gót chân",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Siêu âm: Phương pháp này sẽ dùng sóng âm tần số cao để tạo ra hình ảnh chi tiết tại các mô mềm như gân. Ngoài ra, siêu âm cũng có thể tạo hình ảnh chuyển động của gân, qua đó bác sĩ có thể đánh giá lưu lượng máu xung quanh gân.",
+        "head": "Siêu âm",
+        "head_type": "test",
+        "relation": "relatedTo",
+        "tail": "Gân",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Chụp MRI: Đây là phương pháp chẩn đoán sử dụng từ trường mạnh, sóng vô tuyến để tạo ra hình ảnh chi tiết của gân gót chân, qua đó giúp bác sĩ phát hiện vị trí gân bị viêm.",
+        "head": "Chụp MRI",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "Viêm gân gót chân",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Phần lớn trường hợp chấn thương nhẹ đều có thể tự khỏi khi người bệnh biết cách chăm sóc tốt.",
+        "head": "chấn thương nhẹ",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "chăm sóc tốt",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Bạn có thể áp dụng phương pháp sơ cứu chấn thương R.I.C.E để điều trị viêm gân gót chân tại nhà, cụ thể:  Rest - nghỉ ngơi: Nghỉ ngơi sẽ giúp cơ thể sản sinh nguồn năng lượng mới, nhờ đó tăng khả năng phục hồi cho tổn thương gân.",
+        "head": "R.I.C.E",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "viêm gân gót chân",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bạn có thể áp dụng phương pháp sơ cứu chấn thương R.I.C.E để điều trị viêm gân gót chân tại nhà, cụ thể:  Rest - nghỉ ngơi: Nghỉ ngơi sẽ giúp cơ thể sản sinh nguồn năng lượng mới, nhờ đó tăng khả năng phục hồi cho tổn thương gân.",
+        "head": "Nghỉ ngơi",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "viêm gân gót chân",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Biện pháp này còn giúp giảm áp lực đè nén lên hệ xương, gân gót chân, giúp gân thư giãn và mau lành hơn.",
+        "head": "Nghỉ ngơi",
+        "head_type": "treatment",
+        "relation": "affects",
+        "tail": "hệ xương, gân gót chân",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Người bệnh nên nghỉ ngơi cho tới khi có thể đi lại mà không còn cảm giác đau ở bên chân bị viêm gân.",
+        "head": "viêm gân",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "cảm giác đau",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Ngoài ra, trong quá trình nghỉ ngơi, nếu muốn di chuyển, bạn nên sử dụng nạng để chống đỡ, hạn chế gây áp lực lên chân.",
+        "head": "nạng",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "viêm gân gót chân",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ice - chườm đá: Người bệnh có thể đặt một túi nước đá lên vùng bị thương khoảng 15 - 20 phút để giảm đau và sưng tấy.",
+        "head": "chườm đá",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "viêm gân gót chân",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ice - chườm đá: Người bệnh có thể đặt một túi nước đá lên vùng bị thương khoảng 15 - 20 phút để giảm đau và sưng tấy.",
+        "head": "sưng tấy",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "viêm gân gót chân",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Compression - băng ép: Bạn hãy dùng băng vải hoặc băng thun để cố định vùng bị thương, giúp giảm sưng cho gân.",
+        "head": "băng ép",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "viêm gân gót chân",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Compression - băng ép: Bạn hãy dùng băng vải hoặc băng thun để cố định vùng bị thương, giúp giảm sưng cho gân.",
+        "head": "giảm sưng",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "viêm gân gót chân",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tuy nhiên, bạn không nên băng quá chặt vì có thể làm cản trở lưu thông máu tới vùng gót chân, khiến tình trạng tổn thương trầm trọng hơn.",
+        "head": "băng quá chặt",
+        "head_type": "lifestyle",
+        "relation": "aggravatedBy",
+        "tail": "viêm gân gót chân",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Elevation - kê cao vị trí bị thương: Người bệnh nên nâng chân bị thương cao hơn tim, giúp giảm sưng và giảm đau hiệu quả.",
+        "head": "kê cao vị trí bị thương",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "viêm gân gót chân",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Elevation - kê cao vị trí bị thương: Người bệnh nên nâng chân bị thương cao hơn tim, giúp giảm sưng và giảm đau hiệu quả.",
+        "head": "giảm đau",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "viêm gân gót chân",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Người bệnh có thể sử dụng các loại thuốc giảm đau hay thuốc chống viêm không kê đơn như naproxen, ibuprofen, aspirin…",
+        "head": "thuốc giảm đau",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "viêm gân gót chân",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Với các trường hợp đau nhức trong thời gian dài, người bệnh có thể được chỉ định sử dụng một số loại thuốc giảm viêm hay giảm đau liều mạnh để cải thiện triệu chứng.",
+        "head": "đau nhức",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "viêm gân gót chân",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ngoài ra, bác sĩ cũng có thể cho người bệnh tiêm huyết tương tiểu giàu tiểu cầu (PRP) hay tiêm steroid.",
+        "head": "tiêm huyết tương tiểu giàu tiểu cầu (PRP)",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "viêm gân gót chân",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ngoài ra, bác sĩ cũng có thể cho người bệnh tiêm huyết tương tiểu giàu tiểu cầu (PRP) hay tiêm steroid.",
+        "head": "tiêm steroid",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "viêm gân gót chân",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bác sĩ hoặc chuyên gia vật lý trị liệu có thể đề nghị người bệnh thực hiện một số liệu pháp điều trị viêm gân gót chân như:  Thực hiện những bài tập trị liệu giúp thúc đẩy quá trình chữa lành vết thương, hỗ trợ tăng cường sức mạnh của gân Achilles và hạn chế các nguy cơ viêm tái phát.",
+        "head": "vật lý trị liệu",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "viêm gân gót chân",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bác sĩ hoặc chuyên gia vật lý trị liệu có thể đề nghị người bệnh thực hiện một số liệu pháp điều trị viêm gân gót chân như:  Thực hiện những bài tập trị liệu giúp thúc đẩy quá trình chữa lành vết thương, hỗ trợ tăng cường sức mạnh của gân Achilles và hạn chế các nguy cơ viêm tái phát.",
+        "head": "bài tập trị liệu",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "viêm gân gót chân",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Người bệnh nên sử dụng các thiết bị hỗ trợ như miếng đệm hay miếng lót giày nâng cao để giảm căng thẳng cho gân.",
+        "head": "miếng đệm",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "viêm gân gót chân",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Người bệnh nên sử dụng các thiết bị hỗ trợ như miếng đệm hay miếng lót giày nâng cao để giảm căng thẳng cho gân.",
+        "head": "miếng lót giày nâng cao",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "viêm gân gót chân",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi điều trị bảo tồn không hiệu quả, bác sĩ có thể chỉ định can thiệp phẫu thuật.",
+        "head": "phẫu thuật",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "viêm gân gót chân",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ngoài ra, phương pháp này cũng được chỉ định cho các trường hợp đứt gân hoặc có nguy cơ đứt gân.",
+        "head": "đứt gân",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "phẫu thuật",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Phẫu thuật nối gân Achilles sẽ giúp người bệnh phục hồi khả năng vận động.",
+        "head": "phẫu thuật nối gân Achilles",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "viêm gân gót chân",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi phẫu thuật, bác sĩ sẽ rạch một đường mổ ở phía sau gót chân.",
+        "head": "phẫu thuật",
+        "head_type": "treatment",
+        "relation": "affects",
+        "tail": "gót chân",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Nếu gân bị đứt, bác sĩ sẽ tiến hành nối lại.",
+        "head": "gân bị đứt",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "nối lại",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Nếu gân bị thoái hóa, bác sĩ sẽ cắt bỏ phần gân bị hư rồi sửa chữa phần gân còn lại bằng chỉ khâu.",
+        "head": "gân bị thoái hóa",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "cắt bỏ phần gân bị hư",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Nếu gân bị thoái hóa, bác sĩ sẽ cắt bỏ phần gân bị hư rồi sửa chữa phần gân còn lại bằng chỉ khâu.",
+        "head": "sửa chữa phần gân còn lại bằng chỉ khâu",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "gân bị thoái hóa",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Với các trường hợp tổn thương gân nghiêm trọng, bác sĩ có thể cân nhắc thay thế một phần hay toàn bộ gân gót chân.",
+        "head": "tổn thương gân nghiêm trọng",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "thay thế một phần hay toàn bộ gân gót chân",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Hiện nay, hệ thống Bệnh viện Đa khoa Tâm Anh đã áp dụng phương pháp phẫu thuật nối gân Achilles qua da như một thủ thuật xâm lấn tối thiểu.",
+        "head": "phẫu thuật nối gân Achilles qua da",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "viêm gân gót chân",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Phương pháp này giúp người bệnh phục hồi nhanh chóng, sẹo mổ nhỏ, ít đau hơn, giảm thiểu nguy cơ biến chứng.",
+        "head": "phẫu thuật nối gân Achilles qua da",
+        "head_type": "treatment",
+        "relation": "affects",
+        "tail": "sẹo mổ nhỏ, ít đau hơn, giảm thiểu nguy cơ biến chứng",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Để hạn chế nguy cơ viêm gân gót chân, bạn nên lưu ý:  Tránh tăng mức độ hoạt đột ngột: Nếu vừa bắt đầu chế độ tập luyện, bạn nên thực hiện từ từ, tăng dần thời lượng và cường độ tập luyện để cơ thể có thời gian thích nghi, tránh gây áp lực lên gót chân.",
+        "head": "tăng mức độ hoạt đột ngột",
+        "head_type": "lifestyle",
+        "relation": "aggravatedBy",
+        "tail": "viêm gân gót chân",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Không hoạt động quá sức: Bạn nên tránh những hoạt động gây căng thẳng quá mức cho gân.",
+        "head": "hoạt động quá sức",
+        "head_type": "lifestyle",
+        "relation": "aggravatedBy",
+        "tail": "viêm gân gót chân",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu phải tham gia các hoạt động gắng sức, bạn cần khởi động trước để làm ấm cơ thể, giúp các cơ và mô liên kết linh hoạt hơn khi bước vào bài tập chính.",
+        "head": "khởi động",
+        "head_type": "lifestyle",
+        "relation": "preventedBy",
+        "tail": "viêm gân gót chân",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Trong lúc tập, nếu cảm thấy đau, bạn nên dừng lại ngay và nghỉ ngơi.",
+        "head": "cảm thấy đau",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "viêm gân gót chân",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Kéo căng cơ bắp: Bạn nên dành thời gian để kéo căng cơ bắp và gân chân vào mỗi buổi sáng trước khi tập thể dục.",
+        "head": "kéo căng cơ bắp",
+        "head_type": "lifestyle",
+        "relation": "preventedBy",
+        "tail": "viêm gân gót chân",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Điều này sẽ giúp ngăn ngừa tình trạng viêm tái phát, tăng cường sức khỏe cho gân và cơ, hạn chế tình trạng viêm.",
+        "head": "kéo căng cơ bắp",
+        "head_type": "lifestyle",
+        "relation": "affects",
+        "tail": "gân và cơ",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Tránh chạy trên những mặt phẳng cứng hay dễ trượt.",
+        "head": "chạy trên những mặt phẳng cứng hay dễ trượt",
+        "head_type": "lifestyle",
+        "relation": "aggravatedBy",
+        "tail": "viêm gân gót chân",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Chọn quần áo phù hợp với loại hình luyện tập.",
+        "head": "quần áo phù hợp",
+        "head_type": "lifestyle",
+        "relation": "preventedBy",
+        "tail": "viêm gân gót chân",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đa dạng hóa bài tập: Bạn có thể thay thế những bài tập cường độ cao như chạy, leo cầu thang, bật nhảy… bằng những bài tập cường độ thấp như đi bộ, bơi lội…",
+        "head": "đa dạng hóa bài tập",
+        "head_type": "lifestyle",
+        "relation": "preventedBy",
+        "tail": "viêm gân gót chân",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Điều này sẽ giúp bạn hạn chế tình trạng tăng sức ép quá nhiều lên gân Achilles, gây chấn thương.",
+        "head": "tăng sức ép quá nhiều lên gân Achilles",
+        "head_type": "lifestyle",
+        "relation": "aggravatedBy",
+        "tail": "viêm gân gót chân",
+        "tail_type": "disease"
+    }
+]

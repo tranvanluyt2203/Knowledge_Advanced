@@ -1,0 +1,1210 @@
+
+MERGE (o1:disease {id: 'viêm_khớp_disease'})
+MERGE (o2:lifestyle {id: 'người_trưởng_thành_lifestyle'})
+MERGE (o1)-[r0:associatedWith]->(o2)
+SET r0.text = 'Cứ 5 người trưởng thành thì có 1 người bị viêm khớp.'
+
+MERGE (o1:disease {id: 'viêm_khớp_disease'})
+MERGE (o2:symptom {id: 'triệu_chứng_và_biến_chứng_nghiêm_trọng_symptom'})
+MERGE (o1)-[r1:isSymptomOf]->(o2)
+SET r1.text = 'Căn bệnh tưởng chừng “dễ trị” này lại gây ra nhiều triệu chứng và biến chứng nghiêm trọng.'
+
+MERGE (o1:disease {id: 'viêm_khớp_disease'})
+MERGE (o2:treatment {id: 'điều_trị_kịp_thời_treatment'})
+MERGE (o1)-[r2:treatedBy]->(o2)
+SET r2.text = 'May mắn thay, nếu được điều trị kịp thời, bệnh nhân viêm khớp sẽ sớm cải thiện được tình trạng bệnh, trở lại với cuộc sống vui - khỏe - có ích.'
+
+MERGE (o1:disease {id: 'viêm_khớp_disease'})
+MERGE (o2:disease {id: 'nhóm_gồm_hơn_100_bệnh_disease'})
+MERGE (o1)-[r3:relatedTo]->(o2)
+SET r3.text = 'Viêm khớp là thuật ngữ nói về một nhóm gồm hơn 100 bệnh.'
+
+MERGE (o1:disease {id: 'bệnh_lý_disease'})
+MERGE (o2:organ {id: 'khớp_organ'})
+MERGE (o1)-[r4:affects]->(o2)
+SET r4.text = 'Các bệnh lý này đều liên quan đến khớp ở mọi vị trí trên cơ thể, chẳng hạn như khớp cổ tay, đầu gối, hông, ngón tay, vai...'
+
+MERGE (o1:organ {id: 'khớp_organ'})
+MERGE (o2:organ {id: 'cơ_thể_organ'})
+MERGE (o1)-[r5:locatedIn]->(o2)
+SET r5.text = 'Các bệnh lý này đều liên quan đến khớp ở mọi vị trí trên cơ thể, chẳng hạn như khớp cổ tay, đầu gối, hông, ngón tay, vai...'
+
+MERGE (o1:disease {id: 'bệnh_lý_disease'})
+MERGE (o2:organ {id: 'da__mắt__tim__phổi_organ'})
+MERGE (o1)-[r6:affects]->(o2)
+SET r6.text = 'Đặc biệt, một số loại còn ảnh hưởng đến các mô và cơ quan liên kết khác như da, mắt, tim, phổi…'
+
+MERGE (o1:symptom {id: 'viêm_ở_khớp_symptom'})
+MERGE (o2:disease {id: 'viêm_khớp_disease'})
+MERGE (o1)-[r7:isSymptomOf]->(o2)
+SET r7.text = 'Viêm ở khớp có thể xảy ra ở mọi lứa tuổi, kể cả trẻ em, nhưng bệnh trở nên phổ biến hơn khi bạn già đi.'
+
+MERGE (o1:lifestyle {id: 'tuổi_tác_lifestyle'})
+MERGE (o2:symptom {id: 'viêm_ở_khớp_symptom'})
+MERGE (o1)-[r8:aggravatedBy]->(o2)
+SET r8.text = 'Viêm ở khớp có thể xảy ra ở mọi lứa tuổi, kể cả trẻ em, nhưng bệnh trở nên phổ biến hơn khi bạn già đi.'
+
+MERGE (o1:symptom {id: 'sưng__đau_symptom'})
+MERGE (o2:disease {id: 'viêm_khớp_disease'})
+MERGE (o1)-[r9:isSymptomOf]->(o2)
+SET r9.text = 'Khi mắc bệnh này, người bệnh sẽ bị sưng, đau của một hoặc nhiều khớp trên cơ thể.'
+
+MERGE (o1:symptom {id: 'đau_và_cứng_khớp_symptom'})
+MERGE (o2:disease {id: 'viêm_khớp_disease'})
+MERGE (o1)-[r10:isSymptomOf]->(o2)
+SET r10.text = 'Các triệu chứng chính của bệnh là đau và cứng khớp, thường nặng dần theo thời gian.'
+
+MERGE (o1:disease {id: 'viêm_khớp_gối_disease'})
+MERGE (o2:organ {id: 'khớp_gối_organ'})
+MERGE (o1)-[r11:locatedIn]->(o2)
+SET r11.text = 'Những vị trí khớp thường bị viêm nhất là: Viêm khớp gối Viêm khớp háng Viêm khớp cổ tay Viêm khớp cổ chân...'
+
+MERGE (o1:disease {id: 'viêm_khớp_háng_disease'})
+MERGE (o2:organ {id: 'khớp_háng_organ'})
+MERGE (o1)-[r12:locatedIn]->(o2)
+SET r12.text = 'Những vị trí khớp thường bị viêm nhất là: Viêm khớp gối Viêm khớp háng Viêm khớp cổ tay Viêm khớp cổ chân...'
+
+MERGE (o1:disease {id: 'viêm_khớp_cổ_tay_disease'})
+MERGE (o2:organ {id: 'khớp_cổ_tay_organ'})
+MERGE (o1)-[r13:locatedIn]->(o2)
+SET r13.text = 'Những vị trí khớp thường bị viêm nhất là: Viêm khớp gối Viêm khớp háng Viêm khớp cổ tay Viêm khớp cổ chân...'
+
+MERGE (o1:disease {id: 'viêm_khớp_cổ_chân_disease'})
+MERGE (o2:organ {id: 'khớp_cổ_chân_organ'})
+MERGE (o1)-[r14:locatedIn]->(o2)
+SET r14.text = 'Những vị trí khớp thường bị viêm nhất là: Viêm khớp gối Viêm khớp háng Viêm khớp cổ tay Viêm khớp cổ chân...'
+
+MERGE (o1:disease {id: 'viêm_disease'})
+MERGE (o2:treatment {id: 'các_phương_pháp_điều_trị_treatment'})
+MERGE (o1)-[r15:treatedBy]->(o2)
+SET r15.text = 'Tùy vào loại viêm, bác sĩ sẽ chỉ định các phương pháp điều trị khác nhau.'
+
+MERGE (o1:treatment {id: 'các_phương_pháp_điều_trị_treatment'})
+MERGE (o2:symptom {id: 'triệu_chứng_symptom'})
+MERGE (o1)-[r16:affects]->(o2)
+SET r16.text = 'Dù là phương pháp nào thì mục tiêu cũng là làm giảm các triệu chứng và cải thiện chất lượng cuộc sống cho người bệnh.'
+
+MERGE (o1:treatment {id: 'các_phương_pháp_điều_trị_treatment'})
+MERGE (o2:lifestyle {id: 'chất_lượng_cuộc_sống_lifestyle'})
+MERGE (o1)-[r17:affects]->(o2)
+SET r17.text = 'Dù là phương pháp nào thì mục tiêu cũng là làm giảm các triệu chứng và cải thiện chất lượng cuộc sống cho người bệnh.'
+
+MERGE (o1:disease {id: 'viêm_khớp_disease'})
+MERGE (o2:disease {id: 'các_bệnh_dưới_đây_disease'})
+MERGE (o1)-[r18:relatedTo]->(o2)
+SET r18.text = 'Trong số hơn 100 bệnh lý viêm khớp, các bệnh dưới đây là phổ biến nhất (1):'
+
+MERGE (o1:disease {id: 'bệnh_tự_miễn_disease'})
+MERGE (o2:symptom {id: 'phiền_toái_symptom'})
+MERGE (o1)-[r19:isSymptomOf]->(o2)
+SET r19.text = 'Đây là một trong những bệnh tự miễn gây phiền toái cho nhiều người nhất.'
+
+MERGE (o1:organ {id: 'hệ_thống_miễn_dịch_organ'})
+MERGE (o2:organ {id: 'các_mô_của_cơ_thể_organ'})
+MERGE (o1)-[r20:affects]->(o2)
+SET r20.text = 'Bệnh xảy ra khi hệ thống miễn dịch tấn công các mô của cơ thể, đặc biệt là mô liên kết.'
+
+MERGE (o1:disease {id: 'bệnh_tự_miễn_disease'})
+MERGE (o2:cause {id: 'hệ_thống_miễn_dịch_tấn_công_các_mô_của_cơ_thể_cause'})
+MERGE (o1)-[r21:causedBy]->(o2)
+SET r21.text = 'Bệnh xảy ra khi hệ thống miễn dịch tấn công các mô của cơ thể, đặc biệt là mô liên kết.'
+
+MERGE (o1:symptom {id: 'khớp_bị_tổn_thương_symptom'})
+MERGE (o2:disease {id: 'viêm_khớp_dạng_thấp_disease'})
+MERGE (o1)-[r22:isSymptomOf]->(o2)
+SET r22.text = 'Hệ quả là khớp bị tổn thương dẫn tới viêm, gây ra tình trạng đau và thoái hóa mô khớp.'
+
+MERGE (o1:symptom {id: 'viêm_symptom'})
+MERGE (o2:disease {id: 'viêm_khớp_dạng_thấp_disease'})
+MERGE (o1)-[r23:isSymptomOf]->(o2)
+SET r23.text = 'Hệ quả là khớp bị tổn thương dẫn tới viêm, gây ra tình trạng đau và thoái hóa mô khớp.'
+
+MERGE (o1:symptom {id: 'đau_symptom'})
+MERGE (o2:disease {id: 'viêm_khớp_dạng_thấp_disease'})
+MERGE (o1)-[r24:isSymptomOf]->(o2)
+SET r24.text = 'Hệ quả là khớp bị tổn thương dẫn tới viêm, gây ra tình trạng đau và thoái hóa mô khớp.'
+
+MERGE (o1:symptom {id: 'thoái_hóa_mô_khớp_symptom'})
+MERGE (o2:disease {id: 'viêm_khớp_dạng_thấp_disease'})
+MERGE (o1)-[r25:isSymptomOf]->(o2)
+SET r25.text = 'Hệ quả là khớp bị tổn thương dẫn tới viêm, gây ra tình trạng đau và thoái hóa mô khớp.'
+
+MERGE (o1:disease {id: 'viêm_khớp_dạng_thấp_disease'})
+MERGE (o2:organ {id: 'niêm_mạc_khớp_organ'})
+MERGE (o1)-[r26:affects]->(o2)
+SET r26.text = 'Không giống như tổn thương do thoái hóa khớp gây ra, viêm khớp dạng thấp ảnh hưởng đến niêm mạc khớp, gây sưng đau, cuối cùng dẫn đến xói mòn xương và biến dạng khớp.'
+
+MERGE (o1:symptom {id: 'sưng_đau_symptom'})
+MERGE (o2:disease {id: 'viêm_khớp_dạng_thấp_disease'})
+MERGE (o1)-[r27:isSymptomOf]->(o2)
+SET r27.text = 'Không giống như tổn thương do thoái hóa khớp gây ra, viêm khớp dạng thấp ảnh hưởng đến niêm mạc khớp, gây sưng đau, cuối cùng dẫn đến xói mòn xương và biến dạng khớp.'
+
+MERGE (o1:symptom {id: 'xói_mòn_xương_symptom'})
+MERGE (o2:disease {id: 'viêm_khớp_dạng_thấp_disease'})
+MERGE (o1)-[r28:isSymptomOf]->(o2)
+SET r28.text = 'Không giống như tổn thương do thoái hóa khớp gây ra, viêm khớp dạng thấp ảnh hưởng đến niêm mạc khớp, gây sưng đau, cuối cùng dẫn đến xói mòn xương và biến dạng khớp.'
+
+MERGE (o1:symptom {id: 'biến_dạng_khớp_symptom'})
+MERGE (o2:disease {id: 'viêm_khớp_dạng_thấp_disease'})
+MERGE (o1)-[r29:isSymptomOf]->(o2)
+SET r29.text = 'Không giống như tổn thương do thoái hóa khớp gây ra, viêm khớp dạng thấp ảnh hưởng đến niêm mạc khớp, gây sưng đau, cuối cùng dẫn đến xói mòn xương và biến dạng khớp.'
+
+MERGE (o1:disease {id: 'viêm_khớp_dạng_thấp_disease'})
+MERGE (o2:organ {id: 'mắt__da__phổi__mạch_máu_organ'})
+MERGE (o1)-[r30:affects]->(o2)
+SET r30.text = 'Không chỉ tác động lên khớp, bệnh còn kéo theo một loạt cơ quan bị tổn thương, chẳng hạn như mắt, da, phổi, mạch máu.'
+
+MERGE (o1:disease {id: 'viêm_khớp_dạng_thấp_disease'})
+MERGE (o2:cause {id: 'yếu_tố_cause'})
+MERGE (o1)-[r31:causedBy]->(o2)
+SET r31.text = 'Có một số yếu tố được cho là góp phần gây ra căn bệnh này.'
+
+MERGE (o1:disease {id: 'viêm_khớp_dạng_thấp_disease'})
+MERGE (o2:lifestyle {id: 'giới_tính_nữ_lifestyle'})
+MERGE (o1)-[r32:aggravatedBy]->(o2)
+SET r32.text = 'Phụ nữ là những đối tượng có nguy cơ mắc bệnh hơn nam giới'
+
+MERGE (o1:disease {id: 'viêm_khớp_dạng_thấp_disease'})
+MERGE (o2:lifestyle {id: 'tuổi_trung_niên_lifestyle'})
+MERGE (o1)-[r33:aggravatedBy]->(o2)
+SET r33.text = 'Tuổi tác: Bệnh tấn công mọi người ở mọi lứa tuổi, nhưng bệnh có xu hướng khởi phát ở tuổi trung niên'
+
+MERGE (o1:disease {id: 'viêm_khớp_dạng_thấp_disease'})
+MERGE (o2:cause {id: 'tiền_sử_gia_đình_cause'})
+MERGE (o1)-[r34:aggravatedBy]->(o2)
+SET r34.text = 'Tiền sử gia đình: Nếu một thành viên trong gia đình bạn bị viêm khớp dạng thấp, bạn sẽ tăng nguy cơ mắc bệnh.'
+
+MERGE (o1:disease {id: 'viêm_khớp_dạng_thấp_disease'})
+MERGE (o2:lifestyle {id: 'hút_thuốc_lá_lifestyle'})
+MERGE (o1)-[r35:aggravatedBy]->(o2)
+SET r35.text = 'Hút thuốc lá: Không chỉ làm tăng khả năng phát triển bệnh, hút thuốc lá còn khiến các triệu chứng bệnh trở nên trầm trọng hơn.'
+
+MERGE (o1:disease {id: 'viêm_khớp_dạng_thấp_disease'})
+MERGE (o2:cause {id: 'tiếp_xúc_với_môi_trường_chứa_hóa_chất_cause'})
+MERGE (o1)-[r36:aggravatedBy]->(o2)
+SET r36.text = 'Tiếp xúc với môi trường chứa hóa chất: Một số chất phơi nhiễm như amiăng, silica là tác nhân khiến bệnh RA phát triển.'
+
+MERGE (o1:disease {id: 'viêm_khớp_dạng_thấp_disease'})
+MERGE (o2:lifestyle {id: 'thừa_cân_-_béo_phì_lifestyle'})
+MERGE (o1)-[r37:aggravatedBy]->(o2)
+SET r37.text = 'Thừa cân - béo phì: Người có chỉ số BMI > 23 (đặc biệt là phụ nữ trên 55 tuổi)'
+
+MERGE (o1:disease {id: 'thoái_hóa_khớp_disease'})
+MERGE (o2:organ {id: 'sụn__niêm_mạc_khớp__dây_chằng_và_xương_bên_dưới_của_khớp_organ'})
+MERGE (o1)-[r38:affects]->(o2)
+SET r38.text = 'Thoái hóa khớp là bệnh lý xương khớp phổ biến, ảnh hưởng đến sụn, niêm mạc khớp, dây chằng và xương bên dưới của khớp.'
+
+MERGE (o1:disease {id: 'thoái_hóa_khớp_disease'})
+MERGE (o2:cause {id: 'lớp_sụn_bảo_vệ_các_đầu_xương_bị_mòn_theo_thời_gian_cause'})
+MERGE (o1)-[r39:causedBy]->(o2)
+SET r39.text = 'Bệnh xảy ra khi lớp sụn bảo vệ các đầu xương bị mòn theo thời gian, cuối cùng dẫn đến đau và cứng khớp.'
+
+MERGE (o1:symptom {id: 'đau_và_cứng_khớp_symptom'})
+MERGE (o2:disease {id: 'thoái_hóa_khớp_disease'})
+MERGE (o1)-[r40:isSymptomOf]->(o2)
+SET r40.text = 'Bệnh xảy ra khi lớp sụn bảo vệ các đầu xương bị mòn theo thời gian, cuối cùng dẫn đến đau và cứng khớp.'
+
+MERGE (o1:disease {id: 'thoái_hóa_khớp_disease'})
+MERGE (o2:organ {id: 'hông__đầu_gối__bàn_tay__cột_sống__khớp_ngón_cái_và_ngón_chân_cái_organ'})
+MERGE (o1)-[r41:affects]->(o2)
+SET r41.text = 'Các khớp thường bị ảnh hưởng bởi bệnh thoái hóa khớp là những khớp phải hoạt động nhiều như hông, đầu gối, bàn tay, cột sống, khớp ngón cái và ngón chân cái.'
+
+MERGE (o1:disease {id: 'thoái_hóa_khớp_disease'})
+MERGE (o2:cause {id: 'yếu_tố_nguy_cơ_cause'})
+MERGE (o1)-[r42:causedBy]->(o2)
+SET r42.text = 'Yếu tố nguy cơ của bệnh thoái hóa khớp bao gồm:'
+
+MERGE (o1:disease {id: 'thoái_hóa_khớp_disease'})
+MERGE (o2:lifestyle {id: 'tuổi_tác_lifestyle'})
+MERGE (o1)-[r43:aggravatedBy]->(o2)
+SET r43.text = 'Tuổi tác: Nguy cơ mắc bệnh tăng lên theo tuổi tác.'
+
+MERGE (o1:disease {id: 'thoái_hóa_khớp_disease'})
+MERGE (o2:lifestyle {id: 'giới_tính_nam_lifestyle'})
+MERGE (o1)-[r44:aggravatedBy]->(o2)
+SET r44.text = 'Giới tính: Nam giới ít có nguy cơ bị thoái hóa khớp hơn so với phụ nữ.'
+
+MERGE (o1:disease {id: 'thoái_hóa_khớp_disease'})
+MERGE (o2:lifestyle {id: 'thừa_cân_-_béo_phì_lifestyle'})
+MERGE (o1)-[r45:aggravatedBy]->(o2)
+SET r45.text = 'Thừa cân - béo phì: Chỉ số BMI của bạn càng cao, bạn càng tăng thêm nguy cơ thoái hóa khớp.'
+
+MERGE (o1:disease {id: 'thoái_hóa_khớp_disease'})
+MERGE (o2:cause {id: 'tổn_thương_khớp_cause'})
+MERGE (o1)-[r46:aggravatedBy]->(o2)
+SET r46.text = 'Tổn thương khớp: Những chấn thương xảy ra khi chơi thể thao hoặc do tai nạn là tác nhân làm tăng khả năng bị thoái hóa khớp.'
+
+MERGE (o1:disease {id: 'thoái_hóa_khớp_disease'})
+MERGE (o2:cause {id: 'di_truyền_cause'})
+MERGE (o1)-[r47:aggravatedBy]->(o2)
+SET r47.text = 'Di truyền: Một số người bị thoái hóa khớp là do có tiền sử gia đình mắc bệnh này.'
+
+MERGE (o1:disease {id: 'thoái_hóa_khớp_disease'})
+MERGE (o2:cause {id: 'dị_dạng_xương_cause'})
+MERGE (o1)-[r48:aggravatedBy]->(o2)
+SET r48.text = 'Dị dạng xương: Những người có khớp dị dạng hoặc sụn khiếm khuyết dễ bị thoái hóa khớp hơn.'
+
+MERGE (o1:disease {id: 'thoái_hóa_khớp_disease'})
+MERGE (o2:lifestyle {id: 'cân_nặng_dư_thừa_lifestyle'})
+MERGE (o1)-[r49:aggravatedBy]->(o2)
+SET r49.text = 'Cân nặng dư thừa sẽ tăng thêm áp lực cho khớp, khiến khớp của bạn dễ có nguy cơ bị thoái hóa hơn'
+
+MERGE (o1:disease {id: 'viêm_khớp_nhiễm_khuẩn_disease'})
+MERGE (o2:cause {id: 'nhiễm_vi_khuẩn_hoặc_nấm_cause'})
+MERGE (o1)-[r50:causedBy]->(o2)
+SET r50.text = 'Viêm khớp nhiễm khuẩn là tình trạng khớp bị viêm do nhiễm vi khuẩn hoặc nấm.'
+
+MERGE (o1:disease {id: 'viêm_khớp_nhiễm_khuẩn_disease'})
+MERGE (o2:organ {id: 'khớp_đầu_gối_và_hông_organ'})
+MERGE (o1)-[r51:affects]->(o2)
+SET r51.text = 'Các khớp thường bị ảnh hưởng nhất là khớp đầu gối và hông.'
+
+MERGE (o1:disease {id: 'viêm_khớp_nhiễm_khuẩn_disease'})
+MERGE (o2:cause {id: 'vi_khuẩn_hoặc_các_vi_sinh_vật_gây_bệnh_lây_lan_qua_máu_đến_khớp_cause'})
+MERGE (o1)-[r52:causedBy]->(o2)
+SET r52.text = 'Bệnh có thể phát triển khi vi khuẩn hoặc các vi sinh vật gây bệnh lây lan qua máu đến khớp.'
+
+MERGE (o1:disease {id: 'viêm_khớp_nhiễm_khuẩn_disease'})
+MERGE (o2:cause {id: 'chấn_thương_hoặc_phẫu_thuật_cause'})
+MERGE (o1)-[r53:causedBy]->(o2)
+SET r53.text = 'Cũng có khi khớp bị nhiễm trực tiếp vi sinh vật do chấn thương hoặc phẫu thuật.'
+
+MERGE (o1:symptom {id: 'viêm_ở_khớp_symptom'})
+MERGE (o2:disease {id: 'viêm_khớp_nhiễm_khuẩn_cấp_tính_disease'})
+MERGE (o1)-[r54:isSymptomOf]->(o2)
+SET r54.text = 'Những loại vi khuẩn như Staphylococcus, Streptococcus, Neisseria gonorrhoeae… là tác nhân của hầu hết các trường hợp viêm ở khớp do nhiễm khuẩn cấp tính.'
+
+MERGE (o1:disease {id: 'viêm_khớp_nhiễm_khuẩn_mạn_tính_disease'})
+MERGE (o2:cause {id: 'vi_khuẩn_mycobacterium_tuberculosis__candida_albicans_cause'})
+MERGE (o1)-[r55:causedBy]->(o2)
+SET r55.text = 'Trong khi đó, vi khuẩn Mycobacterium tuberculosis, Candida albicans gây nên bệnh viêm khớp nhiễm khuẩn mạn tính.'
+
+MERGE (o1:disease {id: 'viêm_khớp_nhiễm_khuẩn_disease'})
+MERGE (o2:cause {id: 'các_yếu_tố_sau_đây_cause'})
+MERGE (o1)-[r56:aggravatedBy]->(o2)
+SET r56.text = 'Các yếu tố sau đây làm tăng nguy cơ gây bệnh:'
+
+MERGE (o1:disease {id: 'viêm_khớp_nhiễm_khuẩn_disease'})
+MERGE (o2:cause {id: 'bệnh_lý_hoặc_tổn_thương_khác_ở_khớp_cause'})
+MERGE (o1)-[r57:aggravatedBy]->(o2)
+SET r57.text = 'Một bệnh lý hoặc tổn thương khác ở khớp'
+
+MERGE (o1:disease {id: 'viêm_khớp_nhiễm_khuẩn_disease'})
+MERGE (o2:treatment {id: 'cấy_ghép_khớp_nhân_tạo_treatment'})
+MERGE (o1)-[r58:aggravatedBy]->(o2)
+SET r58.text = 'Cấy ghép khớp nhân tạo'
+
+MERGE (o1:disease {id: 'viêm_khớp_nhiễm_khuẩn_disease'})
+MERGE (o2:cause {id: 'nhiễm_vi_khuẩn_ở_những_nơi_khác_trong_cơ_thể_cause'})
+MERGE (o1)-[r59:aggravatedBy]->(o2)
+SET r59.text = 'Nhiễm vi khuẩn ở những nơi khác trong cơ thể'
+
+MERGE (o1:disease {id: 'viêm_khớp_nhiễm_khuẩn_disease'})
+MERGE (o2:cause {id: 'sự_hiện_diện_của_vi_khuẩn_trong_máu_cause'})
+MERGE (o1)-[r60:aggravatedBy]->(o2)
+SET r60.text = 'Sự hiện diện của vi khuẩn trong máu'
+
+MERGE (o1:disease {id: 'viêm_khớp_nhiễm_khuẩn_disease'})
+MERGE (o2:disease {id: 'bệnh_mạn_tính_disease'})
+MERGE (o1)-[r61:aggravatedBy]->(o2)
+SET r61.text = 'Bệnh mạn tính (chẳng hạn như đái tháo đường, viêm khớp dạng thấp, bệnh hồng cầu hình liềm…)'
+
+MERGE (o1:disease {id: 'viêm_khớp_nhiễm_khuẩn_disease'})
+MERGE (o2:treatment {id: 'tiêm_tĩnh_mạch_(iv)_hoặc_tiêm_chích_ma_túy_treatment'})
+MERGE (o1)-[r62:aggravatedBy]->(o2)
+SET r62.text = 'Tiêm tĩnh mạch (IV) hoặc tiêm chích ma túy'
+
+MERGE (o1:disease {id: 'viêm_khớp_nhiễm_khuẩn_disease'})
+MERGE (o2:treatment {id: 'thuốc_ức_chế_hệ_thống_miễn_dịch_treatment'})
+MERGE (o1)-[r63:aggravatedBy]->(o2)
+SET r63.text = 'Sử dụng thuốc ức chế hệ thống miễn dịch'
+
+MERGE (o1:disease {id: 'viêm_khớp_nhiễm_khuẩn_disease'})
+MERGE (o2:disease {id: 'hiv_disease'})
+MERGE (o1)-[r64:aggravatedBy]->(o2)
+SET r64.text = 'Các tình trạng như HIV, làm suy yếu khả năng miễn dịch'
+
+MERGE (o1:disease {id: 'viêm_khớp_phản_ứng_disease'})
+MERGE (o2:cause {id: 'nhiễm_trùng_ở_một_bộ_phận_khác_của_cơ_thể_cause'})
+MERGE (o1)-[r65:causedBy]->(o2)
+SET r65.text = 'Đây là bệnh lý không quá nguy hiểm, khiến người bệnh bị sưng và đau khớp do nhiễm trùng ở một bộ phận khác của cơ thể.'
+
+MERGE (o1:cause {id: 'nhiễm_trùng_cause'})
+MERGE (o2:organ {id: 'ruột__bộ_phận_sinh_dục_hoặc_đường_tiết_niệu_organ'})
+MERGE (o1)-[r66:affects]->(o2)
+SET r66.text = 'Các bộ phận này thường là ruột, bộ phận sinh dục hoặc đường tiết niệu.'
+
+MERGE (o1:disease {id: 'viêm_khớp_phản_ứng_disease'})
+MERGE (o2:organ {id: 'đầu_gối__khớp_cổ_chân_và_bàn_chân_organ'})
+MERGE (o1)-[r67:affects]->(o2)
+SET r67.text = 'Khi bị viêm khớp phản ứng, bạn sẽ bị ảnh hưởng nhiều nhất ở vùng đầu gối, khớp cổ chân và bàn chân.'
+
+MERGE (o1:symptom {id: 'viêm_symptom'})
+MERGE (o2:disease {id: 'viêm_khớp_phản_ứng_disease'})
+MERGE (o1)-[r68:isSymptomOf]->(o2)
+SET r68.text = 'Ngoài ra, tình trạng viêm còn ảnh hưởng đến mắt, da và niệu đạo.'
+
+MERGE (o1:disease {id: 'viêm_khớp_phản_ứng_disease'})
+MERGE (o2:disease {id: 'những_loại_viêm_khớp_khác_disease'})
+MERGE (o1)-[r69:relatedTo]->(o2)
+SET r69.text = 'So với những loại viêm khớp khác, căn bệnh này có tiên lượng rất khả quan.'
+
+MERGE (o1:disease {id: 'viêm_khớp_phản_ứng_disease'})
+MERGE (o2:treatment {id: 'điều_trị_đúng_phác_đồ_treatment'})
+MERGE (o1)-[r70:treatedBy]->(o2)
+SET r70.text = 'Nếu được điều trị đúng phác đồ, các dấu hiệu và triệu chứng bệnh sẽ biến mất trong vòng 12 tháng.'
+
+MERGE (o1:disease {id: 'viêm_khớp_phản_ứng_disease'})
+MERGE (o2:cause {id: 'yếu_tố_rủi_ro_cause'})
+MERGE (o1)-[r71:aggravatedBy]->(o2)
+SET r71.text = 'Nếu có một trong các yếu tố rủi ro dưới đây, bạn rất dễ bị viêm khớp phản ứng:'
+
+MERGE (o1:disease {id: 'viêm_khớp_phản_ứng_disease'})
+MERGE (o2:lifestyle {id: 'tuổi_tác_lifestyle'})
+MERGE (o1)-[r72:aggravatedBy]->(o2)
+SET r72.text = 'Tuổi tác: Bệnh xảy ra phổ biến nhất ở các đối tượng trong độ tuổi từ 20 - 40.'
+
+MERGE (o1:disease {id: 'viêm_khớp_phản_ứng_disease'})
+MERGE (o2:lifestyle {id: 'giới_tính_lifestyle'})
+MERGE (o1)-[r73:aggravatedBy]->(o2)
+SET r73.text = 'Giới tính: Phụ nữ và nam giới có khả năng bị viêm khớp phản ứng như nhau nếu tình trạng nhiễm trùng là do thực phẩm.'
+
+MERGE (o1:disease {id: 'viêm_khớp_phản_ứng_disease'})
+MERGE (o2:cause {id: 'vi_khuẩn_lây_truyền_qua_đường_tình_dục_cause'})
+MERGE (o1)-[r74:aggravatedBy]->(o2)
+SET r74.text = 'Tuy nhiên, nam giới bị mắc bệnh do vi khuẩn lây truyền qua đường tình dục nhiều hơn phụ nữ.'
+
+MERGE (o1:disease {id: 'viêm_khớp_phản_ứng_disease'})
+MERGE (o2:cause {id: 'di_truyền_cause'})
+MERGE (o1)-[r75:aggravatedBy]->(o2)
+SET r75.text = 'Di truyền.'
+
+MERGE (o1:disease {id: 'viêm_cột_sống_dính_khớp_disease'})
+MERGE (o2:disease {id: 'bệnh_viêm_disease'})
+MERGE (o1)-[r76:causedBy]->(o2)
+SET r76.text = 'Viêm cột sống dính khớp là một bệnh viêm, khiến một số xương nhỏ trong cột sống hợp nhất lại với nhau.'
+
+MERGE (o1:disease {id: 'viêm_cột_sống_dính_khớp_disease'})
+MERGE (o2:organ {id: 'xương_nhỏ_trong_cột_sống_organ'})
+MERGE (o1)-[r77:affects]->(o2)
+SET r77.text = 'Viêm cột sống dính khớp là một bệnh viêm, khiến một số xương nhỏ trong cột sống hợp nhất lại với nhau.'
+
+MERGE (o1:disease {id: 'viêm_cột_sống_dính_khớp_disease'})
+MERGE (o2:symptom {id: 'cột_sống_kém_linh_hoạt_symptom'})
+MERGE (o1)-[r78:isSymptomOf]->(o2)
+SET r78.text = 'Quá trình này làm cho cột sống kém linh hoạt, dẫn đến tư thế gập người về phía trước.'
+
+MERGE (o1:disease {id: 'viêm_cột_sống_dính_khớp_disease'})
+MERGE (o2:symptom {id: 'tư_thế_gập_người_về_phía_trước_symptom'})
+MERGE (o1)-[r79:isSymptomOf]->(o2)
+SET r79.text = 'Quá trình này làm cho cột sống kém linh hoạt, dẫn đến tư thế gập người về phía trước.'
+
+MERGE (o1:disease {id: 'viêm_cột_sống_dính_khớp_disease'})
+MERGE (o2:organ {id: 'mắt_organ'})
+MERGE (o1)-[r80:affects]->(o2)
+SET r80.text = 'Không chỉ vậy, các cơ quan khác (chẳng hạn như mắt) cũng dễ bị viêm theo.'
+
+MERGE (o1:disease {id: 'viêm_cột_sống_dính_khớp_disease'})
+MERGE (o2:cause {id: 'yếu_tố_nguy_cơ_cause'})
+MERGE (o1)-[r81:causedBy]->(o2)
+SET r81.text = 'Các yếu tố nguy cơ của bệnh là:'
+
+MERGE (o1:disease {id: 'viêm_cột_sống_dính_khớp_disease'})
+MERGE (o2:lifestyle {id: 'giới_tính_nam_lifestyle'})
+MERGE (o1)-[r82:aggravatedBy]->(o2)
+SET r82.text = 'Giới tính: Nam giới có nguy cơ mắc bệnh viêm cột sống dính khớp cao hơn nữ giới.'
+
+MERGE (o1:disease {id: 'viêm_cột_sống_dính_khớp_disease'})
+MERGE (o2:lifestyle {id: 'tuổi_vị_thành_niên_hoặc_đầu_tuổi_trưởng_thành_lifestyle'})
+MERGE (o1)-[r83:aggravatedBy]->(o2)
+SET r83.text = 'Tuổi tác: Các dấu hiệu khởi phát bệnh thường xảy ra ở cuối tuổi vị thành niên hoặc đầu tuổi trưởng thành.'
+
+MERGE (o1:disease {id: 'viêm_cột_sống_dính_khớp_disease'})
+MERGE (o2:cause {id: 'gen_hla-b27_cause'})
+MERGE (o1)-[r84:aggravatedBy]->(o2)
+SET r84.text = 'Di truyền: Các cuộc xét nghiệm cho thấy đa số các trường hợp viêm cột sống dính khớp đều mang trong mình gen HLA-B27.'
+
+MERGE (o1:disease {id: 'viêm_cột_sống_dính_khớp_disease'})
+MERGE (o2:cause {id: 'gen_hla-b27_cause'})
+MERGE (o1)-[r85:aggravatedBy]->(o2)
+SET r85.text = 'Tuy nhiên, nhiều trường hợp mang gen này lại không phát triển bệnh viêm cột sống dính khớp.'
+
+MERGE (o1:disease {id: 'viêm_cột_sống_dính_khớp_disease'})
+MERGE (o2:treatment {id: 'các_phương_pháp_điều_trị_đúng_đắn_treatment'})
+MERGE (o1)-[r86:treatedBy]->(o2)
+SET r86.text = 'Không có phương pháp chữa khỏi hoàn toàn cho bệnh viêm cột sống dính khớp, nhưng các phương pháp điều trị đúng đắn sẽ làm giảm triệu chứng cũng như làm chậm sự tiến triển của bệnh.'
+
+MERGE (o1:disease {id: 'gout_disease'})
+MERGE (o2:cause {id: 'các_tinh_thể_axit_uric__hoặc_urat_monosodium__hình_thành_trong_các_mô_và_chất_lỏng_của_cơ_thể_cause'})
+MERGE (o1)-[r87:causedBy]->(o2)
+SET r87.text = 'Gout là một bệnh về khớp xảy ra khi các tinh thể axit uric, hoặc urat monosodium, hình thành trong các mô và chất lỏng của cơ thể.'
+
+MERGE (o1:symptom {id: 'đau_khớp_symptom'})
+MERGE (o2:disease {id: 'viêm_khớp_disease'})
+MERGE (o1)-[r88:isSymptomOf]->(o2)
+SET r88.text = 'Các dấu hiệu và triệu chứng sau cho thấy các khớp của bạn có khả năng bị viêm:'
+
+MERGE (o1:symptom {id: 'khớp_cứng_và_sưng_symptom'})
+MERGE (o2:disease {id: 'viêm_khớp_disease'})
+MERGE (o1)-[r89:isSymptomOf]->(o2)
+SET r89.text = 'Các dấu hiệu và triệu chứng sau cho thấy các khớp của bạn có khả năng bị viêm:'
+
+MERGE (o1:symptom {id: 'phạm_vi_chuyển_động_hạn_chế_ở_các_khớp_bị_ảnh_hưởng_symptom'})
+MERGE (o2:disease {id: 'viêm_khớp_disease'})
+MERGE (o1)-[r90:isSymptomOf]->(o2)
+SET r90.text = 'Các dấu hiệu và triệu chứng sau cho thấy các khớp của bạn có khả năng bị viêm:'
+
+MERGE (o1:symptom {id: 'đỏ_và_ấm_khu_vực_xung_quanh_khớp_bị_ảnh_hưởng_symptom'})
+MERGE (o2:disease {id: 'viêm_khớp_disease'})
+MERGE (o1)-[r91:isSymptomOf]->(o2)
+SET r91.text = 'Các dấu hiệu và triệu chứng sau cho thấy các khớp của bạn có khả năng bị viêm:'
+
+MERGE (o1:symptom {id: 'sốt_symptom'})
+MERGE (o2:disease {id: 'viêm_khớp_disease'})
+MERGE (o1)-[r92:isSymptomOf]->(o2)
+SET r92.text = 'Các dấu hiệu và triệu chứng sau cho thấy các khớp của bạn có khả năng bị viêm:'
+
+MERGE (o1:symptom {id: 'mệt_mỏi_symptom'})
+MERGE (o2:disease {id: 'viêm_khớp_disease'})
+MERGE (o1)-[r93:isSymptomOf]->(o2)
+SET r93.text = 'Các dấu hiệu và triệu chứng sau cho thấy các khớp của bạn có khả năng bị viêm:'
+
+MERGE (o1:symptom {id: 'khó_chịu_symptom'})
+MERGE (o2:disease {id: 'viêm_khớp_disease'})
+MERGE (o1)-[r94:isSymptomOf]->(o2)
+SET r94.text = 'Các dấu hiệu và triệu chứng sau cho thấy các khớp của bạn có khả năng bị viêm:'
+
+MERGE (o1:symptom {id: 'xuất_hiện_các_khối_u_và_bướu_symptom'})
+MERGE (o2:disease {id: 'viêm_khớp_disease'})
+MERGE (o1)-[r95:isSymptomOf]->(o2)
+SET r95.text = 'Các dấu hiệu và triệu chứng sau cho thấy các khớp của bạn có khả năng bị viêm:'
+
+MERGE (o1:disease {id: 'viêm_khớp_disease'})
+MERGE (o2:test {id: 'thăm_khám_test'})
+MERGE (o1)-[r96:diagnosedBy]->(o2)
+SET r96.text = 'Khi xuất hiện các triệu chứng viêm khớp, bạn cần đến gặp bác sĩ để được thăm khám càng sớm càng tốt.'
+
+MERGE (o1:test {id: 'thăm_khám_test'})
+MERGE (o2:test {id: 'kiểm_tra_chất_lỏng_xung_quanh_khớp_test'})
+MERGE (o1)-[r97:relatedTo]->(o2)
+SET r97.text = 'Bác sĩ sẽ khám sức khỏe tổng thể để kiểm tra chất lỏng xung quanh khớp, tình trạng khớp sưng, nóng hoặc đỏ cũng như phạm vi cử động của khớp.'
+
+MERGE (o1:test {id: 'thăm_khám_test'})
+MERGE (o2:test {id: 'kiểm_tra_tình_trạng_khớp_sưng_test'})
+MERGE (o1)-[r98:relatedTo]->(o2)
+SET r98.text = 'Bác sĩ sẽ khám sức khỏe tổng thể để kiểm tra chất lỏng xung quanh khớp, tình trạng khớp sưng, nóng hoặc đỏ cũng như phạm vi cử động của khớp.'
+
+MERGE (o1:test {id: 'thăm_khám_test'})
+MERGE (o2:test {id: 'kiểm_tra_tình_trạng_khớp_nóng_test'})
+MERGE (o1)-[r99:relatedTo]->(o2)
+SET r99.text = 'Bác sĩ sẽ khám sức khỏe tổng thể để kiểm tra chất lỏng xung quanh khớp, tình trạng khớp sưng, nóng hoặc đỏ cũng như phạm vi cử động của khớp.'
+
+MERGE (o1:test {id: 'thăm_khám_test'})
+MERGE (o2:test {id: 'kiểm_tra_tình_trạng_khớp_đỏ_test'})
+MERGE (o1)-[r100:relatedTo]->(o2)
+SET r100.text = 'Bác sĩ sẽ khám sức khỏe tổng thể để kiểm tra chất lỏng xung quanh khớp, tình trạng khớp sưng, nóng hoặc đỏ cũng như phạm vi cử động của khớp.'
+
+MERGE (o1:test {id: 'thăm_khám_test'})
+MERGE (o2:test {id: 'kiểm_tra_phạm_vi_cử_động_của_khớp_test'})
+MERGE (o1)-[r101:relatedTo]->(o2)
+SET r101.text = 'Bác sĩ sẽ khám sức khỏe tổng thể để kiểm tra chất lỏng xung quanh khớp, tình trạng khớp sưng, nóng hoặc đỏ cũng như phạm vi cử động của khớp.'
+
+MERGE (o1:test {id: 'chẩn_đoán_lâm_sàng_test'})
+MERGE (o2:disease {id: 'viêm_khớp_disease'})
+MERGE (o1)-[r102:diagnosedBy]->(o2)
+SET r102.text = 'Tiếp theo, có thể bạn sẽ được chỉ định thực hiện một số chẩn đoán lâm sàng để tìm ra bệnh.'
+
+MERGE (o1:test {id: 'xét_nghiệm_máu_test'})
+MERGE (o2:test {id: 'kiểm_tra_kháng_thể_anti-ccp_test'})
+MERGE (o1)-[r103:relatedTo]->(o2)
+SET r103.text = 'Những chẩn đoán này bao gồm: Xét nghiệm máu: để kiểm tra các loại kháng thể như anti-CCP, RF và ANA.'
+
+MERGE (o1:test {id: 'xét_nghiệm_máu_test'})
+MERGE (o2:test {id: 'kiểm_tra_kháng_thể_rf_test'})
+MERGE (o1)-[r104:relatedTo]->(o2)
+SET r104.text = 'Những chẩn đoán này bao gồm: Xét nghiệm máu: để kiểm tra các loại kháng thể như anti-CCP, RF và ANA.'
+
+MERGE (o1:test {id: 'xét_nghiệm_máu_test'})
+MERGE (o2:test {id: 'kiểm_tra_kháng_thể_ana_test'})
+MERGE (o1)-[r105:relatedTo]->(o2)
+SET r105.text = 'Những chẩn đoán này bao gồm: Xét nghiệm máu: để kiểm tra các loại kháng thể như anti-CCP, RF và ANA.'
+
+MERGE (o1:test {id: 'chụp_x-quang_test'})
+MERGE (o2:organ {id: 'hệ_cơ_xương_khớp_organ'})
+MERGE (o1)-[r106:relatedTo]->(o2)
+SET r106.text = 'Những chẩn đoán này bao gồm: Chụp X-quang, MRI và CT: để thấy rõ hình ảnh về hệ cơ xương khớp.'
+
+MERGE (o1:test {id: 'mri_test'})
+MERGE (o2:organ {id: 'hệ_cơ_xương_khớp_organ'})
+MERGE (o1)-[r107:relatedTo]->(o2)
+SET r107.text = 'Những chẩn đoán này bao gồm: Chụp X-quang, MRI và CT: để thấy rõ hình ảnh về hệ cơ xương khớp.'
+
+MERGE (o1:test {id: 'ct_test'})
+MERGE (o2:organ {id: 'hệ_cơ_xương_khớp_organ'})
+MERGE (o1)-[r108:relatedTo]->(o2)
+SET r108.text = 'Những chẩn đoán này bao gồm: Chụp X-quang, MRI và CT: để thấy rõ hình ảnh về hệ cơ xương khớp.'
+
+MERGE (o1:disease {id: 'thoái_hóa_khớp_disease'})
+MERGE (o2:symptom {id: 'rối_loạn_giấc_ngủ_symptom'})
+MERGE (o1)-[r109:isSymptomOf]->(o2)
+SET r109.text = 'Mỗi bệnh lý sẽ để lại những biến chứng khác nhau:'
+
+MERGE (o1:disease {id: 'thoái_hóa_khớp_disease'})
+MERGE (o2:symptom {id: 'vôi_hóa_sụn_khớp_symptom'})
+MERGE (o1)-[r110:isSymptomOf]->(o2)
+SET r110.text = 'Mỗi bệnh lý sẽ để lại những biến chứng khác nhau:'
+
+MERGE (o1:disease {id: 'thoái_hóa_khớp_disease'})
+MERGE (o2:symptom {id: 'biến_dạng_khớp_symptom'})
+MERGE (o1)-[r111:isSymptomOf]->(o2)
+SET r111.text = 'Mỗi bệnh lý sẽ để lại những biến chứng khác nhau:'
+
+MERGE (o1:disease {id: 'thoái_hóa_khớp_disease'})
+MERGE (o2:disease {id: 'gout_disease'})
+MERGE (o1)-[r112:isSymptomOf]->(o2)
+SET r112.text = 'Mỗi bệnh lý sẽ để lại những biến chứng khác nhau:'
+
+MERGE (o1:disease {id: 'thoái_hóa_khớp_disease'})
+MERGE (o2:symptom {id: 'liệt_symptom'})
+MERGE (o1)-[r113:isSymptomOf]->(o2)
+SET r113.text = 'Mỗi bệnh lý sẽ để lại những biến chứng khác nhau:'
+
+MERGE (o1:disease {id: 'viêm_khớp_dạng_thấp_disease'})
+MERGE (o2:organ {id: 'khớp_organ'})
+MERGE (o1)-[r114:affects]->(o2)
+SET r114.text = 'Viêm khớp dạng thấp: Bệnh tiến triển sẽ phá hủy các khớp, làm biến dạng các ngón tay, cổ tay.'
+
+MERGE (o1:disease {id: 'viêm_khớp_dạng_thấp_disease'})
+MERGE (o2:organ {id: 'ngón_tay_organ'})
+MERGE (o1)-[r115:affects]->(o2)
+SET r115.text = 'Viêm khớp dạng thấp: Bệnh tiến triển sẽ phá hủy các khớp, làm biến dạng các ngón tay, cổ tay.'
+
+MERGE (o1:disease {id: 'viêm_khớp_dạng_thấp_disease'})
+MERGE (o2:organ {id: 'cổ_tay_organ'})
+MERGE (o1)-[r116:affects]->(o2)
+SET r116.text = 'Viêm khớp dạng thấp: Bệnh tiến triển sẽ phá hủy các khớp, làm biến dạng các ngón tay, cổ tay.'
+
+MERGE (o1:disease {id: 'viêm_khớp_dạng_thấp_disease'})
+MERGE (o2:symptom {id: 'các_nốt_thấp_symptom'})
+MERGE (o1)-[r117:isSymptomOf]->(o2)
+SET r117.text = 'Bên cạnh đó, biến chứng nghiêm trọng có thể phát sinh trong các hệ cơ quan trên khắp cơ thể như: Các nốt thấp'
+
+MERGE (o1:disease {id: 'viêm_khớp_dạng_thấp_disease'})
+MERGE (o2:disease {id: 'hội_chứng_sjogren_disease'})
+MERGE (o1)-[r118:isSymptomOf]->(o2)
+SET r118.text = 'Bên cạnh đó, biến chứng nghiêm trọng có thể phát sinh trong các hệ cơ quan trên khắp cơ thể như: Hội chứng Sjogren'
+
+MERGE (o1:disease {id: 'viêm_khớp_dạng_thấp_disease'})
+MERGE (o2:disease {id: 'viêm_màng_ngoài_tim_disease'})
+MERGE (o1)-[r119:isSymptomOf]->(o2)
+SET r119.text = 'Bên cạnh đó, biến chứng nghiêm trọng có thể phát sinh trong các hệ cơ quan trên khắp cơ thể như: Viêm màng ngoài tim'
+
+MERGE (o1:disease {id: 'viêm_khớp_dạng_thấp_disease'})
+MERGE (o2:disease {id: 'viêm_mạch_máu_disease'})
+MERGE (o1)-[r120:isSymptomOf]->(o2)
+SET r120.text = 'Bên cạnh đó, biến chứng nghiêm trọng có thể phát sinh trong các hệ cơ quan trên khắp cơ thể như: Viêm mạch máu'
+
+MERGE (o1:disease {id: 'viêm_khớp_dạng_thấp_disease'})
+MERGE (o2:disease {id: 'viêm_màng_phổi_disease'})
+MERGE (o1)-[r121:isSymptomOf]->(o2)
+SET r121.text = 'Bên cạnh đó, biến chứng nghiêm trọng có thể phát sinh trong các hệ cơ quan trên khắp cơ thể như: Viêm màng phổi'
+
+MERGE (o1:disease {id: 'viêm_khớp_dạng_thấp_disease'})
+MERGE (o2:disease {id: 'bệnh_phổi_tắc_nghẽn_mãn_tính_(copd)_disease'})
+MERGE (o1)-[r122:isSymptomOf]->(o2)
+SET r122.text = 'Bên cạnh đó, biến chứng nghiêm trọng có thể phát sinh trong các hệ cơ quan trên khắp cơ thể như: Bệnh phổi tắc nghẽn mãn tính (COPD)'
+
+MERGE (o1:disease {id: 'viêm_khớp_dạng_thấp_disease'})
+MERGE (o2:disease {id: 'viêm_xơ_cứng_disease'})
+MERGE (o1)-[r123:isSymptomOf]->(o2)
+SET r123.text = 'Bên cạnh đó, biến chứng nghiêm trọng có thể phát sinh trong các hệ cơ quan trên khắp cơ thể như: Viêm xơ cứng'
+
+MERGE (o1:disease {id: 'lupus_disease'})
+MERGE (o2:organ {id: 'da_organ'})
+MERGE (o1)-[r124:affects]->(o2)
+SET r124.text = 'Lupus: Các biến chứng do bệnh lupus ban đỏ gây ra có thể làm tổn thương bất kỳ khu vực nào trong cơ thể, chẳng hạn như da, tim, phổi, thận, máu và não.'
+
+MERGE (o1:disease {id: 'lupus_disease'})
+MERGE (o2:organ {id: 'tim_organ'})
+MERGE (o1)-[r125:affects]->(o2)
+SET r125.text = 'Lupus: Các biến chứng do bệnh lupus ban đỏ gây ra có thể làm tổn thương bất kỳ khu vực nào trong cơ thể, chẳng hạn như da, tim, phổi, thận, máu và não.'
+
+MERGE (o1:disease {id: 'lupus_disease'})
+MERGE (o2:organ {id: 'phổi_organ'})
+MERGE (o1)-[r126:affects]->(o2)
+SET r126.text = 'Lupus: Các biến chứng do bệnh lupus ban đỏ gây ra có thể làm tổn thương bất kỳ khu vực nào trong cơ thể, chẳng hạn như da, tim, phổi, thận, máu và não.'
+
+MERGE (o1:disease {id: 'lupus_disease'})
+MERGE (o2:organ {id: 'thận_organ'})
+MERGE (o1)-[r127:affects]->(o2)
+SET r127.text = 'Lupus: Các biến chứng do bệnh lupus ban đỏ gây ra có thể làm tổn thương bất kỳ khu vực nào trong cơ thể, chẳng hạn như da, tim, phổi, thận, máu và não.'
+
+MERGE (o1:disease {id: 'lupus_disease'})
+MERGE (o2:organ {id: 'máu_organ'})
+MERGE (o1)-[r128:affects]->(o2)
+SET r128.text = 'Lupus: Các biến chứng do bệnh lupus ban đỏ gây ra có thể làm tổn thương bất kỳ khu vực nào trong cơ thể, chẳng hạn như da, tim, phổi, thận, máu và não.'
+
+MERGE (o1:disease {id: 'lupus_disease'})
+MERGE (o2:organ {id: 'não_organ'})
+MERGE (o1)-[r129:affects]->(o2)
+SET r129.text = 'Lupus: Các biến chứng do bệnh lupus ban đỏ gây ra có thể làm tổn thương bất kỳ khu vực nào trong cơ thể, chẳng hạn như da, tim, phổi, thận, máu và não.'
+
+MERGE (o1:disease {id: 'lupus_disease'})
+MERGE (o2:symptom {id: 'sảy_thai_symptom'})
+MERGE (o1)-[r130:isSymptomOf]->(o2)
+SET r130.text = 'Trường hợp bạn mang thai trong lúc bị lupus, bạn có nhiều khả năng bị sảy thai, cao huyết áp trong thai kỳ và sinh non.'
+
+MERGE (o1:disease {id: 'lupus_disease'})
+MERGE (o2:symptom {id: 'cao_huyết_áp_trong_thai_kỳ_symptom'})
+MERGE (o1)-[r131:isSymptomOf]->(o2)
+SET r131.text = 'Trường hợp bạn mang thai trong lúc bị lupus, bạn có nhiều khả năng bị sảy thai, cao huyết áp trong thai kỳ và sinh non.'
+
+MERGE (o1:disease {id: 'lupus_disease'})
+MERGE (o2:symptom {id: 'sinh_non_symptom'})
+MERGE (o1)-[r132:isSymptomOf]->(o2)
+SET r132.text = 'Trường hợp bạn mang thai trong lúc bị lupus, bạn có nhiều khả năng bị sảy thai, cao huyết áp trong thai kỳ và sinh non.'
+
+MERGE (o1:disease {id: 'gout_disease'})
+MERGE (o2:symptom {id: 'sỏi_thận_symptom'})
+MERGE (o1)-[r133:isSymptomOf]->(o2)
+SET r133.text = 'Gout: Nồng độ axit uric cao là nguyên nhân dẫn đến sỏi thận ở bệnh nhân gout.'
+
+MERGE (o1:disease {id: 'gout_disease'})
+MERGE (o2:disease {id: 'bệnh_thận_cấp_tính_do_axit_uric_(auan)_disease'})
+MERGE (o1)-[r134:isSymptomOf]->(o2)
+SET r134.text = 'Nếu có chức năng thận kém, bạn còn có nguy cơ mắc bệnh thận cấp tính do axit uric (AUAN), khiến chức năng thận suy giảm nhanh chóng.'
+
+MERGE (o1:disease {id: 'viêm_cột_sống_dính_khớp_disease'})
+MERGE (o2:organ {id: 'cột_sống_organ'})
+MERGE (o1)-[r135:affects]->(o2)
+SET r135.text = 'Viêm cột sống dính khớp: Khi khoảng cách giữa các đốt sống dần thu hẹp khiến đốt sống bị hợp nhất, cột sống sẽ trở nên cứng và không linh hoạt.'
+
+MERGE (o1:disease {id: 'viêm_cột_sống_dính_khớp_disease'})
+MERGE (o2:organ {id: 'khớp_háng_organ'})
+MERGE (o1)-[r136:affects]->(o2)
+SET r136.text = 'Ngoài ra, bệnh còn ảnh hưởng đến các khớp khác như khớp háng, khớp vai, khớp hàm, khớp cùng chậu… cũng như gây ra các vấn đề về mắt, tim, phổi, hệ tiêu hóa… và khiến người bệnh đối diện với nguy cơ tàn phế.'
+
+MERGE (o1:disease {id: 'viêm_cột_sống_dính_khớp_disease'})
+MERGE (o2:organ {id: 'khớp_vai_organ'})
+MERGE (o1)-[r137:affects]->(o2)
+SET r137.text = 'Ngoài ra, bệnh còn ảnh hưởng đến các khớp khác như khớp háng, khớp vai, khớp hàm, khớp cùng chậu… cũng như gây ra các vấn đề về mắt, tim, phổi, hệ tiêu hóa… và khiến người bệnh đối diện với nguy cơ tàn phế.'
+
+MERGE (o1:disease {id: 'viêm_cột_sống_dính_khớp_disease'})
+MERGE (o2:organ {id: 'khớp_hàm_organ'})
+MERGE (o1)-[r138:affects]->(o2)
+SET r138.text = 'Ngoài ra, bệnh còn ảnh hưởng đến các khớp khác như khớp háng, khớp vai, khớp hàm, khớp cùng chậu… cũng như gây ra các vấn đề về mắt, tim, phổi, hệ tiêu hóa… và khiến người bệnh đối diện với nguy cơ tàn phế.'
+
+MERGE (o1:disease {id: 'viêm_cột_sống_dính_khớp_disease'})
+MERGE (o2:organ {id: 'khớp_cùng_chậu_organ'})
+MERGE (o1)-[r139:affects]->(o2)
+SET r139.text = 'Ngoài ra, bệnh còn ảnh hưởng đến các khớp khác như khớp háng, khớp vai, khớp hàm, khớp cùng chậu… cũng như gây ra các vấn đề về mắt, tim, phổi, hệ tiêu hóa… và khiến người bệnh đối diện với nguy cơ tàn phế.'
+
+MERGE (o1:disease {id: 'viêm_cột_sống_dính_khớp_disease'})
+MERGE (o2:organ {id: 'mắt_organ'})
+MERGE (o1)-[r140:affects]->(o2)
+SET r140.text = 'Ngoài ra, bệnh còn ảnh hưởng đến các khớp khác như khớp háng, khớp vai, khớp hàm, khớp cùng chậu… cũng như gây ra các vấn đề về mắt, tim, phổi, hệ tiêu hóa… và khiến người bệnh đối diện với nguy cơ tàn phế.'
+
+MERGE (o1:disease {id: 'viêm_cột_sống_dính_khớp_disease'})
+MERGE (o2:organ {id: 'tim_organ'})
+MERGE (o1)-[r141:affects]->(o2)
+SET r141.text = 'Ngoài ra, bệnh còn ảnh hưởng đến các khớp khác như khớp háng, khớp vai, khớp hàm, khớp cùng chậu… cũng như gây ra các vấn đề về mắt, tim, phổi, hệ tiêu hóa… và khiến người bệnh đối diện với nguy cơ tàn phế.'
+
+MERGE (o1:disease {id: 'viêm_cột_sống_dính_khớp_disease'})
+MERGE (o2:organ {id: 'phổi_organ'})
+MERGE (o1)-[r142:affects]->(o2)
+SET r142.text = 'Ngoài ra, bệnh còn ảnh hưởng đến các khớp khác như khớp háng, khớp vai, khớp hàm, khớp cùng chậu… cũng như gây ra các vấn đề về mắt, tim, phổi, hệ tiêu hóa… và khiến người bệnh đối diện với nguy cơ tàn phế.'
+
+MERGE (o1:disease {id: 'viêm_cột_sống_dính_khớp_disease'})
+MERGE (o2:organ {id: 'hệ_tiêu_hóa_organ'})
+MERGE (o1)-[r143:affects]->(o2)
+SET r143.text = 'Ngoài ra, bệnh còn ảnh hưởng đến các khớp khác như khớp háng, khớp vai, khớp hàm, khớp cùng chậu… cũng như gây ra các vấn đề về mắt, tim, phổi, hệ tiêu hóa… và khiến người bệnh đối diện với nguy cơ tàn phế.'
+
+MERGE (o1:disease {id: 'viêm_khớp_nhiễm_khuẩn_disease'})
+MERGE (o2:organ {id: 'khớp_organ'})
+MERGE (o1)-[r144:affects]->(o2)
+SET r144.text = 'Viêm khớp nhiễm khuẩn: gây biến chứng viêm từ khớp sang sụn khớp và đầu xương, nếu không điều trị kịp thời sẽ gây trật khớp, mất chức năng vận động.'
+
+MERGE (o1:disease {id: 'viêm_khớp_nhiễm_khuẩn_disease'})
+MERGE (o2:organ {id: 'sụn_khớp_organ'})
+MERGE (o1)-[r145:affects]->(o2)
+SET r145.text = 'Viêm khớp nhiễm khuẩn: gây biến chứng viêm từ khớp sang sụn khớp và đầu xương, nếu không điều trị kịp thời sẽ gây trật khớp, mất chức năng vận động.'
+
+MERGE (o1:disease {id: 'viêm_khớp_nhiễm_khuẩn_disease'})
+MERGE (o2:organ {id: 'đầu_xương_organ'})
+MERGE (o1)-[r146:affects]->(o2)
+SET r146.text = 'Viêm khớp nhiễm khuẩn: gây biến chứng viêm từ khớp sang sụn khớp và đầu xương, nếu không điều trị kịp thời sẽ gây trật khớp, mất chức năng vận động.'
+
+MERGE (o1:disease {id: 'viêm_khớp_nhiễm_khuẩn_disease'})
+MERGE (o2:symptom {id: 'trật_khớp_symptom'})
+MERGE (o1)-[r147:isSymptomOf]->(o2)
+SET r147.text = 'Viêm khớp nhiễm khuẩn: gây biến chứng viêm từ khớp sang sụn khớp và đầu xương, nếu không điều trị kịp thời sẽ gây trật khớp, mất chức năng vận động.'
+
+MERGE (o1:disease {id: 'viêm_khớp_nhiễm_khuẩn_disease'})
+MERGE (o2:symptom {id: 'mất_chức_năng_vận_động_symptom'})
+MERGE (o1)-[r148:isSymptomOf]->(o2)
+SET r148.text = 'Viêm khớp nhiễm khuẩn: gây biến chứng viêm từ khớp sang sụn khớp và đầu xương, nếu không điều trị kịp thời sẽ gây trật khớp, mất chức năng vận động.'
+
+MERGE (o1:disease {id: 'viêm_khớp_nhiễm_khuẩn_disease'})
+MERGE (o2:organ {id: 'cột_sống_organ'})
+MERGE (o1)-[r149:affects]->(o2)
+SET r149.text = 'Chưa hết, viêm ở vùng cột sống còn gây chèn ép tủy sống, vẹo cột sống; nếu vi khuẩn lan sang các bộ phận khác như gan, phổi, thận sẽ gây viêm và áp xe.'
+
+MERGE (o1:disease {id: 'viêm_khớp_nhiễm_khuẩn_disease'})
+MERGE (o2:organ {id: 'tủy_sống_organ'})
+MERGE (o1)-[r150:affects]->(o2)
+SET r150.text = 'Chưa hết, viêm ở vùng cột sống còn gây chèn ép tủy sống, vẹo cột sống; nếu vi khuẩn lan sang các bộ phận khác như gan, phổi, thận sẽ gây viêm và áp xe.'
+
+MERGE (o1:disease {id: 'viêm_khớp_nhiễm_khuẩn_disease'})
+MERGE (o2:organ {id: 'gan_organ'})
+MERGE (o1)-[r151:affects]->(o2)
+SET r151.text = 'Chưa hết, viêm ở vùng cột sống còn gây chèn ép tủy sống, vẹo cột sống; nếu vi khuẩn lan sang các bộ phận khác như gan, phổi, thận sẽ gây viêm và áp xe.'
+
+MERGE (o1:disease {id: 'viêm_khớp_nhiễm_khuẩn_disease'})
+MERGE (o2:organ {id: 'phổi_organ'})
+MERGE (o1)-[r152:affects]->(o2)
+SET r152.text = 'Chưa hết, viêm ở vùng cột sống còn gây chèn ép tủy sống, vẹo cột sống; nếu vi khuẩn lan sang các bộ phận khác như gan, phổi, thận sẽ gây viêm và áp xe.'
+
+MERGE (o1:disease {id: 'viêm_khớp_nhiễm_khuẩn_disease'})
+MERGE (o2:organ {id: 'thận_organ'})
+MERGE (o1)-[r153:affects]->(o2)
+SET r153.text = 'Chưa hết, viêm ở vùng cột sống còn gây chèn ép tủy sống, vẹo cột sống; nếu vi khuẩn lan sang các bộ phận khác như gan, phổi, thận sẽ gây viêm và áp xe.'
+
+MERGE (o1:disease {id: 'viêm_khớp_phản_ứng_disease'})
+MERGE (o2:organ {id: 'bàn_tay_organ'})
+MERGE (o1)-[r154:affects]->(o2)
+SET r154.text = 'Viêm khớp phản ứng: Không chỉ làm giảm chất lượng cuộc sống của người bệnh, viêm khớp phản ứng còn ảnh hưởng tới các cơ quan khác, gây ra biến chứng như hóa sừng trong lòng bàn tay, bàn chân và đầu; viêm kết mạc, viêm giác mạc, đau nhức hốc mắt; viêm tuyến tiền liệt, bàng quang, bao quy đầu; tiểu mủ vô khuẩn, tiểu máu vi thể…'
+
+MERGE (o1:disease {id: 'viêm_khớp_phản_ứng_disease'})
+MERGE (o2:organ {id: 'bàn_chân_organ'})
+MERGE (o1)-[r155:affects]->(o2)
+SET r155.text = 'Viêm khớp phản ứng: Không chỉ làm giảm chất lượng cuộc sống của người bệnh, viêm khớp phản ứng còn ảnh hưởng tới các cơ quan khác, gây ra biến chứng như hóa sừng trong lòng bàn tay, bàn chân và đầu; viêm kết mạc, viêm giác mạc, đau nhức hốc mắt; viêm tuyến tiền liệt, bàng quang, bao quy đầu; tiểu mủ vô khuẩn, tiểu máu vi thể…'
+
+MERGE (o1:disease {id: 'viêm_khớp_phản_ứng_disease'})
+MERGE (o2:organ {id: 'đầu_organ'})
+MERGE (o1)-[r156:affects]->(o2)
+SET r156.text = 'Viêm khớp phản ứng: Không chỉ làm giảm chất lượng cuộc sống của người bệnh, viêm khớp phản ứng còn ảnh hưởng tới các cơ quan khác, gây ra biến chứng như hóa sừng trong lòng bàn tay, bàn chân và đầu; viêm kết mạc, viêm giác mạc, đau nhức hốc mắt; viêm tuyến tiền liệt, bàng quang, bao quy đầu; tiểu mủ vô khuẩn, tiểu máu vi thể…'
+
+MERGE (o1:disease {id: 'viêm_khớp_phản_ứng_disease'})
+MERGE (o2:organ {id: 'kết_mạc_organ'})
+MERGE (o1)-[r157:affects]->(o2)
+SET r157.text = 'Viêm khớp phản ứng: Không chỉ làm giảm chất lượng cuộc sống của người bệnh, viêm khớp phản ứng còn ảnh hưởng tới các cơ quan khác, gây ra biến chứng như hóa sừng trong lòng bàn tay, bàn chân và đầu; viêm kết mạc, viêm giác mạc, đau nhức hốc mắt; viêm tuyến tiền liệt, bàng quang, bao quy đầu; tiểu mủ vô khuẩn, tiểu máu vi thể…'
+
+MERGE (o1:disease {id: 'viêm_khớp_phản_ứng_disease'})
+MERGE (o2:organ {id: 'giác_mạc_organ'})
+MERGE (o1)-[r158:affects]->(o2)
+SET r158.text = 'Viêm khớp phản ứng: Không chỉ làm giảm chất lượng cuộc sống của người bệnh, viêm khớp phản ứng còn ảnh hưởng tới các cơ quan khác, gây ra biến chứng như hóa sừng trong lòng bàn tay, bàn chân và đầu; viêm kết mạc, viêm giác mạc, đau nhức hốc mắt; viêm tuyến tiền liệt, bàng quang, bao quy đầu; tiểu mủ vô khuẩn, tiểu máu vi thể…'
+
+MERGE (o1:disease {id: 'viêm_khớp_phản_ứng_disease'})
+MERGE (o2:organ {id: 'hốc_mắt_organ'})
+MERGE (o1)-[r159:affects]->(o2)
+SET r159.text = 'Viêm khớp phản ứng: Không chỉ làm giảm chất lượng cuộc sống của người bệnh, viêm khớp phản ứng còn ảnh hưởng tới các cơ quan khác, gây ra biến chứng như hóa sừng trong lòng bàn tay, bàn chân và đầu; viêm kết mạc, viêm giác mạc, đau nhức hốc mắt; viêm tuyến tiền liệt, bàng quang, bao quy đầu; tiểu mủ vô khuẩn, tiểu máu vi thể…'
+
+MERGE (o1:disease {id: 'viêm_khớp_phản_ứng_disease'})
+MERGE (o2:organ {id: 'tuyến_tiền_liệt_organ'})
+MERGE (o1)-[r160:affects]->(o2)
+SET r160.text = 'Viêm khớp phản ứng: Không chỉ làm giảm chất lượng cuộc sống của người bệnh, viêm khớp phản ứng còn ảnh hưởng tới các cơ quan khác, gây ra biến chứng như hóa sừng trong lòng bàn tay, bàn chân và đầu; viêm kết mạc, viêm giác mạc, đau nhức hốc mắt; viêm tuyến tiền liệt, bàng quang, bao quy đầu; tiểu mủ vô khuẩn, tiểu máu vi thể…'
+
+MERGE (o1:disease {id: 'viêm_khớp_phản_ứng_disease'})
+MERGE (o2:organ {id: 'bàng_quang_organ'})
+MERGE (o1)-[r161:affects]->(o2)
+SET r161.text = 'Viêm khớp phản ứng: Không chỉ làm giảm chất lượng cuộc sống của người bệnh, viêm khớp phản ứng còn ảnh hưởng tới các cơ quan khác, gây ra biến chứng như hóa sừng trong lòng bàn tay, bàn chân và đầu; viêm kết mạc, viêm giác mạc, đau nhức hốc mắt; viêm tuyến tiền liệt, bàng quang, bao quy đầu; tiểu mủ vô khuẩn, tiểu máu vi thể…'
+
+MERGE (o1:disease {id: 'viêm_khớp_phản_ứng_disease'})
+MERGE (o2:organ {id: 'bao_quy_đầu_organ'})
+MERGE (o1)-[r162:affects]->(o2)
+SET r162.text = 'Viêm khớp phản ứng: Không chỉ làm giảm chất lượng cuộc sống của người bệnh, viêm khớp phản ứng còn ảnh hưởng tới các cơ quan khác, gây ra biến chứng như hóa sừng trong lòng bàn tay, bàn chân và đầu; viêm kết mạc, viêm giác mạc, đau nhức hốc mắt; viêm tuyến tiền liệt, bàng quang, bao quy đầu; tiểu mủ vô khuẩn, tiểu máu vi thể…'
+
+MERGE (o1:disease {id: 'đau_cơ_xơ_hóa_disease'})
+MERGE (o2:symptom {id: 'mệt_mỏi_symptom'})
+MERGE (o1)-[r163:isSymptomOf]->(o2)
+SET r163.text = 'Đau cơ xơ hóa: Những cơn đau kéo dài và lan rộng của bệnh đau cơ xơ hóa sẽ khiến người bệnh luôn trong trạng thái mệt mỏi, thậm chí trầm cảm và mất ngủ thường xuyên.'
+
+MERGE (o1:disease {id: 'đau_cơ_xơ_hóa_disease'})
+MERGE (o2:symptom {id: 'trầm_cảm_symptom'})
+MERGE (o1)-[r164:isSymptomOf]->(o2)
+SET r164.text = 'Đau cơ xơ hóa: Những cơn đau kéo dài và lan rộng của bệnh đau cơ xơ hóa sẽ khiến người bệnh luôn trong trạng thái mệt mỏi, thậm chí trầm cảm và mất ngủ thường xuyên.'
+
+MERGE (o1:treatment {id: 'giảm_thiểu_cơn_đau_treatment'})
+MERGE (o2:disease {id: 'bệnh_lý_viêm_khớp_disease'})
+MERGE (o1)-[r165:treatedBy]->(o2)
+SET r165.text = 'Mục tiêu chính của việc điều trị các bệnh lý viêm khớp là giảm thiểu cơn đau và ngăn ngừa khớp bị tổn thương thêm.'
+
+MERGE (o1:treatment {id: 'ngăn_ngừa_khớp_bị_tổn_thương_thêm_treatment'})
+MERGE (o2:disease {id: 'bệnh_lý_viêm_khớp_disease'})
+MERGE (o1)-[r166:treatedBy]->(o2)
+SET r166.text = 'Mục tiêu chính của việc điều trị các bệnh lý viêm khớp là giảm thiểu cơn đau và ngăn ngừa khớp bị tổn thương thêm.'
+
+MERGE (o1:treatment {id: 'kiểm_soát_cơn_đau_treatment'})
+MERGE (o2:disease {id: 'bệnh_lý_viêm_khớp_disease'})
+MERGE (o1)-[r167:treatedBy]->(o2)
+SET r167.text = 'Bạn sẽ được bác sĩ tư vấn cách kiểm soát cơn đau phù hợp nhất với mình.'
+
+MERGE (o1:treatment {id: 'chườm_đá_treatment'})
+MERGE (o2:symptom {id: 'cơn_đau_symptom'})
+MERGE (o1)-[r168:treatedBy]->(o2)
+SET r168.text = 'Một số người nhận thấy biện pháp chườm đá và sử dụng miếng dán có tác dụng làm dịu cơn đau hiệu quả.'
+
+MERGE (o1:treatment {id: 'sử_dụng_miếng_dán_treatment'})
+MERGE (o2:symptom {id: 'cơn_đau_symptom'})
+MERGE (o1)-[r169:treatedBy]->(o2)
+SET r169.text = 'Một số người nhận thấy biện pháp chườm đá và sử dụng miếng dán có tác dụng làm dịu cơn đau hiệu quả.'
+
+MERGE (o1:treatment {id: 'các_thiết_bị_hỗ_trợ_di_chuyển_treatment'})
+MERGE (o2:symptom {id: 'khớp_bị_đau_symptom'})
+MERGE (o1)-[r170:treatedBy]->(o2)
+SET r170.text = 'Những người khác sử dụng các thiết bị hỗ trợ di chuyển, như gậy hoặc khung tập đi, để giảm áp lực cho các khớp bị đau.'
+
+MERGE (o1:treatment {id: 'gậy_treatment'})
+MERGE (o2:symptom {id: 'khớp_bị_đau_symptom'})
+MERGE (o1)-[r171:treatedBy]->(o2)
+SET r171.text = 'Những người khác sử dụng các thiết bị hỗ trợ di chuyển, như gậy hoặc khung tập đi, để giảm áp lực cho các khớp bị đau.'
+
+MERGE (o1:treatment {id: 'khung_tập_đi_treatment'})
+MERGE (o2:symptom {id: 'khớp_bị_đau_symptom'})
+MERGE (o1)-[r172:treatedBy]->(o2)
+SET r172.text = 'Những người khác sử dụng các thiết bị hỗ trợ di chuyển, như gậy hoặc khung tập đi, để giảm áp lực cho các khớp bị đau.'
+
+MERGE (o1:treatment {id: 'kiểm_soát_triệu_chứng_treatment'})
+MERGE (o2:disease {id: 'bệnh_lý_viêm_khớp_disease'})
+MERGE (o1)-[r173:treatedBy]->(o2)
+SET r173.text = 'Cùng với các biện pháp cải thiện cơn đau, bác sĩ sẽ chỉ định bạn một số phương pháp khác nhằm kiểm soát triệu chứng, chẳng hạn như:'
+
+MERGE (o1:treatment {id: 'hydrocodone_(vicodin)_treatment'})
+MERGE (o2:symptom {id: 'cơn_đau_symptom'})
+MERGE (o1)-[r174:treatedBy]->(o2)
+SET r174.text = 'Thuốc giảm đau: hydrocodone (Vicodin) hoặc acetaminophen (Tylenol) có hiệu quả trong việc kiểm soát cơn đau, nhưng không giúp giảm viêm.'
+
+MERGE (o1:treatment {id: 'acetaminophen_(tylenol)_treatment'})
+MERGE (o2:symptom {id: 'cơn_đau_symptom'})
+MERGE (o1)-[r175:treatedBy]->(o2)
+SET r175.text = 'Thuốc giảm đau: hydrocodone (Vicodin) hoặc acetaminophen (Tylenol) có hiệu quả trong việc kiểm soát cơn đau, nhưng không giúp giảm viêm.'
+
+MERGE (o1:treatment {id: 'ibuprofen_(advil)_treatment'})
+MERGE (o2:symptom {id: 'đau_symptom'})
+MERGE (o1)-[r176:treatedBy]->(o2)
+SET r176.text = 'Thuốc chống viêm không steroid (NSAID): ibuprofen (Advil) và salicylat, giúp kiểm soát đau và viêm.'
+
+MERGE (o1:treatment {id: 'ibuprofen_(advil)_treatment'})
+MERGE (o2:symptom {id: 'viêm_symptom'})
+MERGE (o1)-[r177:treatedBy]->(o2)
+SET r177.text = 'Thuốc chống viêm không steroid (NSAID): ibuprofen (Advil) và salicylat, giúp kiểm soát đau và viêm.'
+
+MERGE (o1:treatment {id: 'salicylat_treatment'})
+MERGE (o2:symptom {id: 'đau_symptom'})
+MERGE (o1)-[r178:treatedBy]->(o2)
+SET r178.text = 'Thuốc chống viêm không steroid (NSAID): ibuprofen (Advil) và salicylat, giúp kiểm soát đau và viêm.'
+
+MERGE (o1:treatment {id: 'salicylat_treatment'})
+MERGE (o2:symptom {id: 'viêm_symptom'})
+MERGE (o1)-[r179:treatedBy]->(o2)
+SET r179.text = 'Thuốc chống viêm không steroid (NSAID): ibuprofen (Advil) và salicylat, giúp kiểm soát đau và viêm.'
+
+MERGE (o1:treatment {id: 'menthol_treatment'})
+MERGE (o2:symptom {id: 'tín_hiệu_đau_symptom'})
+MERGE (o1)-[r180:treatedBy]->(o2)
+SET r180.text = 'Menthol hoặc kem capsaicin: ngăn chặn việc truyền tín hiệu đau từ các khớp lên não.'
+
+MERGE (o1:treatment {id: 'kem_capsaicin_treatment'})
+MERGE (o2:symptom {id: 'tín_hiệu_đau_symptom'})
+MERGE (o1)-[r181:treatedBy]->(o2)
+SET r181.text = 'Menthol hoặc kem capsaicin: ngăn chặn việc truyền tín hiệu đau từ các khớp lên não.'
+
+MERGE (o1:treatment {id: 'prednisone_treatment'})
+MERGE (o2:symptom {id: 'viêm_symptom'})
+MERGE (o1)-[r182:treatedBy]->(o2)
+SET r182.text = 'Thuốc ức chế miễn dịch (prednisone hoặc cortisone) giúp giảm viêm.'
+
+MERGE (o1:treatment {id: 'cortisone_treatment'})
+MERGE (o2:symptom {id: 'viêm_symptom'})
+MERGE (o1)-[r183:treatedBy]->(o2)
+SET r183.text = 'Thuốc ức chế miễn dịch (prednisone hoặc cortisone) giúp giảm viêm.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_để_thay_khớp_nhân_tạo_treatment'})
+MERGE (o2:disease {id: 'bệnh_nhân_viêm_khớp_mức_độ_nặng_disease'})
+MERGE (o1)-[r184:treatedBy]->(o2)
+SET r184.text = 'Phẫu thuật để thay khớp nhân tạo được chỉ định cho các bệnh nhân viêm khớp mức độ nặng và mọi biện pháp chữa trị đều không đem lại hiệu quả.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_để_thay_khớp_nhân_tạo_treatment'})
+MERGE (o2:organ {id: 'khớp_hông_organ'})
+MERGE (o1)-[r185:treatedBy]->(o2)
+SET r185.text = 'Phương pháp phẫu thuật này được thực hiện phổ biến nhất đối với khớp hông và đầu gối.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_để_thay_khớp_nhân_tạo_treatment'})
+MERGE (o2:organ {id: 'đầu_gối_organ'})
+MERGE (o1)-[r186:treatedBy]->(o2)
+SET r186.text = 'Phương pháp phẫu thuật này được thực hiện phổ biến nhất đối với khớp hông và đầu gối.'
+
+MERGE (o1:treatment {id: 'ghép_khớp_treatment'})
+MERGE (o2:disease {id: 'viêm_khớp_disease'})
+MERGE (o1)-[r187:treatedBy]->(o2)
+SET r187.text = 'Nếu tình trạng viêm của bạn nghiêm trọng nhất ở khớp ngón tay hoặc cổ tay, bác sĩ có thể tiến hành ghép khớp.'
+
+MERGE (o1:treatment {id: 'ghép_khớp_treatment'})
+MERGE (o2:organ {id: 'khớp_ngón_tay_organ'})
+MERGE (o1)-[r188:treatedBy]->(o2)
+SET r188.text = 'Nếu tình trạng viêm của bạn nghiêm trọng nhất ở khớp ngón tay hoặc cổ tay, bác sĩ có thể tiến hành ghép khớp.'
+
+MERGE (o1:treatment {id: 'ghép_khớp_treatment'})
+MERGE (o2:organ {id: 'cổ_tay_organ'})
+MERGE (o1)-[r189:treatedBy]->(o2)
+SET r189.text = 'Nếu tình trạng viêm của bạn nghiêm trọng nhất ở khớp ngón tay hoặc cổ tay, bác sĩ có thể tiến hành ghép khớp.'
+
+MERGE (o1:treatment {id: 'vật_lý_trị_liệu_treatment'})
+MERGE (o2:disease {id: 'bệnh_lý_viêm_khớp_disease'})
+MERGE (o1)-[r190:treatedBy]->(o2)
+SET r190.text = 'Vật lý trị liệu là liệu pháp điều trị sử dụng các bài tập giúp tăng cường các cơ xung quanh khớp bị ảnh hưởng.'
+
+MERGE (o1:treatment {id: 'các_bài_tập_treatment'})
+MERGE (o2:disease {id: 'bệnh_lý_viêm_khớp_disease'})
+MERGE (o1)-[r191:treatedBy]->(o2)
+SET r191.text = 'Vật lý trị liệu là liệu pháp điều trị sử dụng các bài tập giúp tăng cường các cơ xung quanh khớp bị ảnh hưởng.'
+
+MERGE (o1:treatment {id: 'giảm_đau_treatment'})
+MERGE (o2:disease {id: 'bệnh_lý_viêm_khớp_disease'})
+MERGE (o1)-[r192:treatedBy]->(o2)
+SET r192.text = 'Dựa trên thể trạng và mức độ viêm khớp của người bệnh, bác sĩ sẽ thiết lập cho họ những bài tập phù hợp nhằm giảm đau, tăng sự linh hoạt cho khớp và tăng phạm vi cử động của khớp.'
+
+MERGE (o1:treatment {id: 'tăng_sự_linh_hoạt_cho_khớp_treatment'})
+MERGE (o2:disease {id: 'bệnh_lý_viêm_khớp_disease'})
+MERGE (o1)-[r193:treatedBy]->(o2)
+SET r193.text = 'Dựa trên thể trạng và mức độ viêm khớp của người bệnh, bác sĩ sẽ thiết lập cho họ những bài tập phù hợp nhằm giảm đau, tăng sự linh hoạt cho khớp và tăng phạm vi cử động của khớp.'
+
+MERGE (o1:treatment {id: 'tăng_phạm_vi_cử_động_của_khớp_treatment'})
+MERGE (o2:disease {id: 'bệnh_lý_viêm_khớp_disease'})
+MERGE (o1)-[r194:treatedBy]->(o2)
+SET r194.text = 'Dựa trên thể trạng và mức độ viêm khớp của người bệnh, bác sĩ sẽ thiết lập cho họ những bài tập phù hợp nhằm giảm đau, tăng sự linh hoạt cho khớp và tăng phạm vi cử động của khớp.'
+
+MERGE (o1:treatment {id: 'tập_vật_lý_trị_liệu_treatment'})
+MERGE (o2:disease {id: 'bệnh_lý_viêm_khớp_ở_mức_độ_nhẹ_và_trung_bình_disease'})
+MERGE (o1)-[r195:treatedBy]->(o2)
+SET r195.text = 'Một số bệnh viêm khớp ở mức độ nhẹ và trung bình có thể được chữa khỏi sau một thời gian tập vật lý trị liệu.'
+
+MERGE (o1:treatment {id: 'các_bài_tập_vật_lý_trị_liệu_phù_hợp_treatment'})
+MERGE (o2:disease {id: 'bệnh_nhân_viêm_khớp_disease'})
+MERGE (o1)-[r196:treatedBy]->(o2)
+SET r196.text = 'Các bài tập vật lý trị liệu phù hợp là liều thuốc hữu hiệu đối với bệnh nhân viêm khớp'
+
+MERGE (o1:lifestyle {id: 'tập_thể_dục_thường_xuyên_lifestyle'})
+MERGE (o2:symptom {id: 'triệu_chứng_symptom'})
+MERGE (o1)-[r197:treatedBy]->(o2)
+SET r197.text = 'Tập thể dục thường xuyên: Vận động nhẹ nhàng rất có lợi cho việc cải thiện triệu chứng cũng như tăng cường sức khỏe tổng thể.'
+
+MERGE (o1:lifestyle {id: 'tập_thể_dục_thường_xuyên_lifestyle'})
+MERGE (o2:symptom {id: 'sức_khỏe_tổng_thể_symptom'})
+MERGE (o1)-[r198:treatedBy]->(o2)
+SET r198.text = 'Tập thể dục thường xuyên: Vận động nhẹ nhàng rất có lợi cho việc cải thiện triệu chứng cũng như tăng cường sức khỏe tổng thể.'
+
+MERGE (o1:lifestyle {id: 'bơi_lội_lifestyle'})
+MERGE (o2:disease {id: 'bệnh_lý_viêm_khớp_disease'})
+MERGE (o1)-[r199:treatedBy]->(o2)
+SET r199.text = 'Hãy hỏi ý kiến bác sĩ về bộ môn thể thao phù hợp với tình trạng của bạn: bơi lội, đi bộ, chạy bộ hay đạp xe…'
+
+MERGE (o1:lifestyle {id: 'đi_bộ_lifestyle'})
+MERGE (o2:disease {id: 'bệnh_lý_viêm_khớp_disease'})
+MERGE (o1)-[r200:treatedBy]->(o2)
+SET r200.text = 'Hãy hỏi ý kiến bác sĩ về bộ môn thể thao phù hợp với tình trạng của bạn: bơi lội, đi bộ, chạy bộ hay đạp xe…'
+
+MERGE (o1:lifestyle {id: 'chạy_bộ_lifestyle'})
+MERGE (o2:disease {id: 'bệnh_lý_viêm_khớp_disease'})
+MERGE (o1)-[r201:treatedBy]->(o2)
+SET r201.text = 'Hãy hỏi ý kiến bác sĩ về bộ môn thể thao phù hợp với tình trạng của bạn: bơi lội, đi bộ, chạy bộ hay đạp xe…'
+
+MERGE (o1:lifestyle {id: 'đạp_xe_lifestyle'})
+MERGE (o2:disease {id: 'bệnh_lý_viêm_khớp_disease'})
+MERGE (o1)-[r202:treatedBy]->(o2)
+SET r202.text = 'Hãy hỏi ý kiến bác sĩ về bộ môn thể thao phù hợp với tình trạng của bạn: bơi lội, đi bộ, chạy bộ hay đạp xe…'
+
+MERGE (o1:lifestyle {id: 'vận_động_lifestyle'})
+MERGE (o2:disease {id: 'bệnh_lý_viêm_khớp_disease'})
+MERGE (o1)-[r203:treatedBy]->(o2)
+SET r203.text = 'Bạn cần vận động tối thiểu 30 phút/ngày, 5 ngày/tuần.'
+
+MERGE (o1:lifestyle {id: 'chế_độ_nghỉ_ngơi_hợp_lý_lifestyle'})
+MERGE (o2:disease {id: 'bệnh_lý_viêm_khớp_disease'})
+MERGE (o1)-[r204:treatedBy]->(o2)
+SET r204.text = 'Cân bằng hoạt động với nghỉ ngơi: Ngoài việc duy trì hoạt động, chế độ nghỉ ngơi hợp lý cũng quan trọng không kém đối với người bệnh viêm khớp.'
+
+MERGE (o1:lifestyle {id: 'thả_lỏng_cơ_thể_lifestyle'})
+MERGE (o2:disease {id: 'bệnh_lý_viêm_khớp_disease'})
+MERGE (o1)-[r205:treatedBy]->(o2)
+SET r205.text = 'Hãy thả lỏng cơ thể khi các cơ có dấu hiệu mệt mỏi, và chỉ tập luyện trở lại khi mọi cơ quan đều đã sẵn sàng.'
+
+MERGE (o1:lifestyle {id: 'chế_độ_dinh_dưỡng_lành_mạnh_lifestyle'})
+MERGE (o2:disease {id: 'bệnh_lý_viêm_khớp_disease'})
+MERGE (o1)-[r206:treatedBy]->(o2)
+SET r206.text = 'Có chế độ dinh dưỡng lành mạnh: Một thực đơn ăn uống cân bằng sẽ giúp bạn duy trì cân nặng ổn định và kiểm soát chứng viêm.'
+
+MERGE (o1:food {id: 'thực_phẩm_tinh_chế_food'})
+MERGE (o2:disease {id: 'bệnh_lý_viêm_khớp_disease'})
+MERGE (o1)-[r207:aggravatedBy]->(o2)
+SET r207.text = 'Người bệnh viêm khớp nên hạn chế ăn các loại thực phẩm tinh chế, thực phẩm chế biến sẵn và thực phẩm có nguồn gốc từ động vật.'
+
+MERGE (o1:food {id: 'thực_phẩm_chế_biến_sẵn_food'})
+MERGE (o2:disease {id: 'bệnh_lý_viêm_khớp_disease'})
+MERGE (o1)-[r208:aggravatedBy]->(o2)
+SET r208.text = 'Người bệnh viêm khớp nên hạn chế ăn các loại thực phẩm tinh chế, thực phẩm chế biến sẵn và thực phẩm có nguồn gốc từ động vật.'
+
+MERGE (o1:food {id: 'thực_phẩm_có_nguồn_gốc_từ_động_vật_food'})
+MERGE (o2:disease {id: 'bệnh_lý_viêm_khớp_disease'})
+MERGE (o1)-[r209:aggravatedBy]->(o2)
+SET r209.text = 'Người bệnh viêm khớp nên hạn chế ăn các loại thực phẩm tinh chế, thực phẩm chế biến sẵn và thực phẩm có nguồn gốc từ động vật.'
+
+MERGE (o1:food {id: 'thực_phẩm_giàu_chất_chống_oxy_hóa_food'})
+MERGE (o2:disease {id: 'bệnh_lý_viêm_khớp_disease'})
+MERGE (o1)-[r210:treatedBy]->(o2)
+SET r210.text = 'Thay vào đó, hãy chọn thực phẩm giàu chất chống oxy hóa và có đặc tính chống viêm, đồng thời tăng cường thực phẩm chứa nhiều canxi và vitamin D để củng cố sức khỏe cơ xương khớp.'
+
+MERGE (o1:food {id: 'thực_phẩm_có_đặc_tính_chống_viêm_food'})
+MERGE (o2:disease {id: 'bệnh_lý_viêm_khớp_disease'})
+MERGE (o1)-[r211:treatedBy]->(o2)
+SET r211.text = 'Thay vào đó, hãy chọn thực phẩm giàu chất chống oxy hóa và có đặc tính chống viêm, đồng thời tăng cường thực phẩm chứa nhiều canxi và vitamin D để củng cố sức khỏe cơ xương khớp.'
+
+MERGE (o1:food {id: 'thực_phẩm_chứa_nhiều_canxi_food'})
+MERGE (o2:disease {id: 'bệnh_lý_viêm_khớp_disease'})
+MERGE (o1)-[r212:treatedBy]->(o2)
+SET r212.text = 'Thay vào đó, hãy chọn thực phẩm giàu chất chống oxy hóa và có đặc tính chống viêm, đồng thời tăng cường thực phẩm chứa nhiều canxi và vitamin D để củng cố sức khỏe cơ xương khớp.'
+
+MERGE (o1:food {id: 'thực_phẩm_chứa_nhiều_vitamin_d_food'})
+MERGE (o2:disease {id: 'bệnh_lý_viêm_khớp_disease'})
+MERGE (o1)-[r213:treatedBy]->(o2)
+SET r213.text = 'Thay vào đó, hãy chọn thực phẩm giàu chất chống oxy hóa và có đặc tính chống viêm, đồng thời tăng cường thực phẩm chứa nhiều canxi và vitamin D để củng cố sức khỏe cơ xương khớp.'
+
+MERGE (o1:lifestyle {id: 'giấc_ngủ_kém_chất_lượng_lifestyle'})
+MERGE (o2:symptom {id: 'đau_nhức_do_viêm_khớp_symptom'})
+MERGE (o1)-[r214:aggravatedBy]->(o2)
+SET r214.text = 'Cải thiện giấc ngủ: Giấc ngủ kém chất lượng và thiếu số lượng có thể làm trầm trọng thêm tình trạng đau nhức do viêm khớp.'
+
+MERGE (o1:lifestyle {id: 'thiếu_số_lượng_giấc_ngủ_lifestyle'})
+MERGE (o2:symptom {id: 'đau_nhức_do_viêm_khớp_symptom'})
+MERGE (o1)-[r215:aggravatedBy]->(o2)
+SET r215.text = 'Cải thiện giấc ngủ: Giấc ngủ kém chất lượng và thiếu số lượng có thể làm trầm trọng thêm tình trạng đau nhức do viêm khớp.'
+
+MERGE (o1:lifestyle {id: 'giấc_ngủ_ngon_lifestyle'})
+MERGE (o2:symptom {id: 'đau_nhức_do_viêm_khớp_symptom'})
+MERGE (o1)-[r216:treatedBy]->(o2)
+SET r216.text = 'Vì thế, bạn hãy cố gắng để có một giấc ngủ ngon, sâu và đủ giấc.'
+
+MERGE (o1:lifestyle {id: 'giấc_ngủ_sâu_lifestyle'})
+MERGE (o2:symptom {id: 'đau_nhức_do_viêm_khớp_symptom'})
+MERGE (o1)-[r217:treatedBy]->(o2)
+SET r217.text = 'giấc ngủ sâu'
+
+MERGE (o1:lifestyle {id: 'giấc_ngủ_đủ_giấc_lifestyle'})
+MERGE (o2:symptom {id: 'đau_nhức_do_viêm_khớp_symptom'})
+MERGE (o1)-[r218:treatedBy]->(o2)
+SET r218.text = 'giấc ngủ đủ giấc'
+
+MERGE (o1:disease {id: 'bệnh_viêm_khớp_disease'})
+MERGE (o2:cause {id: 'không_có_yếu_tố_nguy_cơ_cause'})
+MERGE (o1)-[r219:preventedBy]->(o2)
+SET r219.text = 'Không phải ai cũng có thể ngăn ngừa bệnh viêm khớp.'
+
+MERGE (o1:cause {id: 'tuổi_tác_cause'})
+MERGE (o2:disease {id: 'bệnh_viêm_khớp_disease'})
+MERGE (o1)-[r220:causedBy]->(o2)
+SET r220.text = 'Một số yếu tố nguy cơ như tuổi tác, tiền sử gia đình và giới tính nằm ngoài tầm kiểm soát của bạn.'
+
+MERGE (o1:cause {id: 'tiền_sử_gia_đình_cause'})
+MERGE (o2:disease {id: 'bệnh_viêm_khớp_disease'})
+MERGE (o1)-[r221:causedBy]->(o2)
+SET r221.text = 'Một số yếu tố nguy cơ như tuổi tác, tiền sử gia đình và giới tính nằm ngoài tầm kiểm soát của bạn.'
+
+MERGE (o1:cause {id: 'giới_tính_cause'})
+MERGE (o2:disease {id: 'bệnh_viêm_khớp_disease'})
+MERGE (o1)-[r222:causedBy]->(o2)
+SET r222.text = 'Một số yếu tố nguy cơ như tuổi tác, tiền sử gia đình và giới tính nằm ngoài tầm kiểm soát của bạn.'
+
+MERGE (o1:lifestyle {id: 'thói_quen_lành_mạnh_lifestyle'})
+MERGE (o2:disease {id: 'bệnh_viêm_khớp_disease'})
+MERGE (o1)-[r223:preventedBy]->(o2)
+SET r223.text = 'Tuy nhiên, có một số thói quen lành mạnh mà bạn có thể thực hiện để giảm nguy cơ phát triển bệnh.'
+
+MERGE (o1:food {id: 'cá_béo_food'})
+MERGE (o2:symptom {id: 'viêm_symptom'})
+MERGE (o1)-[r224:treatedBy]->(o2)
+SET r224.text = 'Các loại cá béo rất giàu axit béo omega-3 - một chất béo không bão hòa đa tốt cho sức khỏe có tác làm giảm chứng viêm.'
+
+MERGE (o1:food {id: 'axit_béo_omega-3_food'})
+MERGE (o2:symptom {id: 'viêm_symptom'})
+MERGE (o1)-[r225:treatedBy]->(o2)
+SET r225.text = 'Các loại cá béo rất giàu axit béo omega-3 - một chất béo không bão hòa đa tốt cho sức khỏe có tác làm giảm chứng viêm.'
+
+MERGE (o1:lifestyle {id: 'ăn_cá_thường_xuyên_lifestyle'})
+MERGE (o2:disease {id: 'bệnh_viêm_khớp_dạng_thấp_disease'})
+MERGE (o1)-[r226:preventedBy]->(o2)
+SET r226.text = 'Một nghiên cứu trên tạp chí Annals of the Rheumatic Diseases cho thấy, phụ nữ ăn cá thường xuyên ít có nguy cơ mắc bệnh viêm khớp dạng thấp.'
+
+MERGE (o1:food {id: 'cá_hồi_food'})
+MERGE (o2:disease {id: 'bệnh_lý_viêm_khớp_disease'})
+MERGE (o1)-[r227:treatedBy]->(o2)
+SET r227.text = 'Bộ Nông nghiệp Hoa Kỳ (USDA) khuyến nghị người bệnh viêm khớp nên ăn cá có nhiều omega-3 như cá hồi, cá hồi, cá thu, cá mòi… ít nhất 2 lần/tuần.'
+
+MERGE (o1:food {id: 'cá_thu_food'})
+MERGE (o2:disease {id: 'bệnh_lý_viêm_khớp_disease'})
+MERGE (o1)-[r228:treatedBy]->(o2)
+SET r228.text = 'Bộ Nông nghiệp Hoa Kỳ (USDA) khuyến nghị người bệnh viêm khớp nên ăn cá có nhiều omega-3 như cá hồi, cá hồi, cá thu, cá mòi… ít nhất 2 lần/tuần.'
+
+MERGE (o1:food {id: 'cá_mòi_food'})
+MERGE (o2:disease {id: 'bệnh_lý_viêm_khớp_disease'})
+MERGE (o1)-[r229:treatedBy]->(o2)
+SET r229.text = 'Bộ Nông nghiệp Hoa Kỳ (USDA) khuyến nghị người bệnh viêm khớp nên ăn cá có nhiều omega-3 như cá hồi, cá hồi, cá thu, cá mòi… ít nhất 2 lần/tuần.'
+
+MERGE (o1:lifestyle {id: 'tập_thể_dục_lifestyle'})
+MERGE (o2:symptom {id: 'căng_thẳng_do_trọng_lượng_dư_thừa_gây_ra_cho_khớp_symptom'})
+MERGE (o1)-[r230:treatedBy]->(o2)
+SET r230.text = 'Tập thể dục không chỉ giúp giảm căng thẳng do trọng lượng dư thừa gây ra cho khớp, mà còn tăng cường sức mạnh cho các cơ xung quanh khớp.'
+
+MERGE (o1:lifestyle {id: 'tập_thể_dục_lifestyle'})
+MERGE (o2:symptom {id: 'hao_mòn_khớp_symptom'})
+MERGE (o1)-[r231:treatedBy]->(o2)
+SET r231.text = 'Tập thể dục không chỉ giúp giảm căng thẳng do trọng lượng dư thừa gây ra cho khớp, mà còn tăng cường sức mạnh cho các cơ xung quanh khớp.'
+
+MERGE (o1:lifestyle {id: 'aerobic_lifestyle'})
+MERGE (o2:disease {id: 'bệnh_lý_viêm_khớp_disease'})
+MERGE (o1)-[r232:treatedBy]->(o2)
+SET r232.text = 'Để tối đa hóa lợi ích của chương trình tập thể dục, bạn hãy xen kẽ các hoạt động nhẹ nhàng như aerobic, đi bộ hoặc bơi lội với các bài tập tăng cường sức mạnh.'
+
+MERGE (o1:lifestyle {id: 'đi_bộ_lifestyle'})
+MERGE (o2:disease {id: 'bệnh_lý_viêm_khớp_disease'})
+MERGE (o1)-[r233:treatedBy]->(o2)
+SET r233.text = 'Để tối đa hóa lợi ích của chương trình tập thể dục, bạn hãy xen kẽ các hoạt động nhẹ nhàng như aerobic, đi bộ hoặc bơi lội với các bài tập tăng cường sức mạnh.'
+
+MERGE (o1:lifestyle {id: 'bơi_lội_lifestyle'})
+MERGE (o2:disease {id: 'bệnh_lý_viêm_khớp_disease'})
+MERGE (o1)-[r234:treatedBy]->(o2)
+SET r234.text = 'Để tối đa hóa lợi ích của chương trình tập thể dục, bạn hãy xen kẽ các hoạt động nhẹ nhàng như aerobic, đi bộ hoặc bơi lội với các bài tập tăng cường sức mạnh.'
+
+MERGE (o1:lifestyle {id: 'các_bài_tập_tăng_cường_sức_mạnh_lifestyle'})
+MERGE (o2:disease {id: 'bệnh_lý_viêm_khớp_disease'})
+MERGE (o1)-[r235:treatedBy]->(o2)
+SET r235.text = 'Để tối đa hóa lợi ích của chương trình tập thể dục, bạn hãy xen kẽ các hoạt động nhẹ nhàng như aerobic, đi bộ hoặc bơi lội với các bài tập tăng cường sức mạnh.'
+
+MERGE (o1:lifestyle {id: 'kéo_giãn_lifestyle'})
+MERGE (o2:disease {id: 'bệnh_lý_viêm_khớp_disease'})
+MERGE (o1)-[r236:treatedBy]->(o2)
+SET r236.text = 'Bên cạnh đó, cần thêm một số động tác kéo giãn để duy trì sự linh hoạt và phạm vi chuyển động của khớp.'
+
+MERGE (o1:organ {id: 'đầu_gối_organ'})
+MERGE (o2:organ {id: 'cơ_thể_organ'})
+MERGE (o1)-[r237:locatedIn]->(o2)
+SET r237.text = 'Đầu gối chịu phần lớn trọng lượng của cơ thể.'
+
+MERGE (o1:cause {id: 'thừa_cân_cause'})
+MERGE (o2:symptom {id: 'lực_lên_đầu_gối_symptom'})
+MERGE (o1)-[r238:causedBy]->(o2)
+SET r238.text = 'Nếu bạn thừa 4,5kg, lực lên đầu gối khi bạn thực hiện mỗi bước chân sẽ tăng từ 13,5 - 27kg.'
+
+MERGE (o1:cause {id: 'thừa_cân_-_béo_phì_cause'})
+MERGE (o2:disease {id: 'thoái_hóa_khớp_gối_disease'})
+MERGE (o1)-[r239:causedBy]->(o2)
+SET r239.text = 'So với phụ nữ có cân nặng bình thường, phụ nữ thừa cân - béo phì có nguy cơ bị thoái hóa khớp gối cao hơn gần 4 lần.'
+
+MERGE (o1:lifestyle {id: 'duy_trì_cân_nặng_ổn_định_lifestyle'})
+MERGE (o2:disease {id: 'thoái_hóa_khớp_gối_disease'})
+MERGE (o1)-[r240:treatedBy]->(o2)
+SET r240.text = 'Do đó, hãy duy trì cân nặng ổn định bằng cách tuân thủ chế độ dinh dưỡng khoa học và tập thể dục đều đặn.'
+
+MERGE (o1:symptom {id: 'sụn_khớp_bị_mòn_symptom'})
+MERGE (o2:disease {id: 'thoái_hóa_khớp_disease'})
+MERGE (o1)-[r241:isSymptomOf]->(o2)
+SET r241.text = 'Theo thời gian, các sụn khớp bắt đầu bị mòn.'

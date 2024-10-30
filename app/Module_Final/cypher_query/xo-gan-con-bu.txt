@@ -1,0 +1,465 @@
+
+MERGE (o1:disease {id: 'xơ_gan_còn_bù_disease'})
+MERGE (o2:disease {id: 'gan_bị_xơ_hóa_disease'})
+MERGE (o1)-[r0:isSymptomOf]->(o2)
+SET r0.text = 'Xơ gan còn bù là một tình trạng gan bị xơ hóa nhưng hầu như chức năng gan chưa bị giảm.'
+
+MERGE (o1:organ {id: 'chức_năng_gan_organ'})
+MERGE (o2:disease {id: 'xơ_gan_còn_bù_disease'})
+MERGE (o1)-[r1:affects]->(o2)
+SET r1.text = 'Xơ gan còn bù là một tình trạng gan bị xơ hóa nhưng hầu như chức năng gan chưa bị giảm.'
+
+MERGE (o1:disease {id: 'tổn_thương_gan_disease'})
+MERGE (o2:treatment {id: 'điều_trị_treatment'})
+MERGE (o1)-[r2:treatedBy]->(o2)
+SET r2.text = 'Đây là tổn thương gan có thể điều trị được trước khi bước qua giai đoạn nghiêm trọng về sau đó là xơ gan mất bù và các biến chứng, có thể dẫn tới ung thư gan.'
+
+MERGE (o1:disease {id: 'tổn_thương_gan_disease'})
+MERGE (o2:disease {id: 'xơ_gan_mất_bù_disease'})
+MERGE (o1)-[r3:isSymptomOf]->(o2)
+SET r3.text = 'Đây là tổn thương gan có thể điều trị được trước khi bước qua giai đoạn nghiêm trọng về sau đó là xơ gan mất bù và các biến chứng, có thể dẫn tới ung thư gan.'
+
+MERGE (o1:disease {id: 'tổn_thương_gan_disease'})
+MERGE (o2:disease {id: 'ung_thư_gan_disease'})
+MERGE (o1)-[r4:isSymptomOf]->(o2)
+SET r4.text = 'Đây là tổn thương gan có thể điều trị được trước khi bước qua giai đoạn nghiêm trọng về sau đó là xơ gan mất bù và các biến chứng, có thể dẫn tới ung thư gan.'
+
+MERGE (o1:organ {id: 'gan_organ'})
+MERGE (o2:organ {id: 'cơ_thể_organ'})
+MERGE (o1)-[r5:locatedIn]->(o2)
+SET r5.text = 'Gan là cơ quan nội tạng đóng vai trò vô cùng quan trọng bởi chức năng lọc thải độc tố giúp làm sạch máu cũng như vai trò tổng hợp chất dinh dưỡng.'
+
+MERGE (o1:organ {id: 'gan_organ'})
+MERGE (o2:organ {id: 'máu_organ'})
+MERGE (o1)-[r6:affects]->(o2)
+SET r6.text = 'Gan là cơ quan nội tạng đóng vai trò vô cùng quan trọng bởi chức năng lọc thải độc tố giúp làm sạch máu cũng như vai trò tổng hợp chất dinh dưỡng.'
+
+MERGE (o1:disease {id: 'mô_gan_bị_tổn_thương_disease'})
+MERGE (o2:disease {id: 'mô_sẹo_disease'})
+MERGE (o1)-[r7:isSymptomOf]->(o2)
+SET r7.text = 'Trong trường hợp mô gan bị tổn thương sẽ để lại mô sẹo.'
+
+MERGE (o1:disease {id: 'xơ_gan_disease'})
+MERGE (o2:disease {id: 'mô_sẹo_disease'})
+MERGE (o1)-[r8:isSymptomOf]->(o2)
+SET r8.text = 'Đây chính là tình trạng xơ gan.'
+
+MERGE (o1:disease {id: 'xơ_gan_disease'})
+MERGE (o2:organ {id: 'chức_năng_gan_organ'})
+MERGE (o1)-[r9:affects]->(o2)
+SET r9.text = 'Xơ gan ở mức độ càng nặng thì càng nhiều mô sẹo, càng làm giảm sút chức năng gan.'
+
+MERGE (o1:disease {id: 'tổn_thương_gan_disease'})
+MERGE (o2:disease {id: 'xơ_hóa_disease'})
+MERGE (o1)-[r10:isSymptomOf]->(o2)
+SET r10.text = 'Mức độ tổn thương gan có thể phân chia từ nhẹ tới nặng như sau:  Mức độ nhẹ Tổn thương nhẹ tới trung bình (xơ hóa) Tổn thương trung bình đến nặng (xơ hóa đến xơ gan còn bù) Tổn thương nghiêm trọng đến suy gan (xơ gan mất bù)'
+
+MERGE (o1:disease {id: 'tổn_thương_gan_disease'})
+MERGE (o2:disease {id: 'xơ_gan_còn_bù_disease'})
+MERGE (o1)-[r11:isSymptomOf]->(o2)
+SET r11.text = 'Mức độ tổn thương gan có thể phân chia từ nhẹ tới nặng như sau:  Mức độ nhẹ Tổn thương nhẹ tới trung bình (xơ hóa) Tổn thương trung bình đến nặng (xơ hóa đến xơ gan còn bù) Tổn thương nghiêm trọng đến suy gan (xơ gan mất bù)'
+
+MERGE (o1:disease {id: 'tổn_thương_gan_disease'})
+MERGE (o2:disease {id: 'xơ_gan_mất_bù_disease'})
+MERGE (o1)-[r12:isSymptomOf]->(o2)
+SET r12.text = 'Mức độ tổn thương gan có thể phân chia từ nhẹ tới nặng như sau:  Mức độ nhẹ Tổn thương nhẹ tới trung bình (xơ hóa) Tổn thương trung bình đến nặng (xơ hóa đến xơ gan còn bù) Tổn thương nghiêm trọng đến suy gan (xơ gan mất bù)'
+
+MERGE (o1:disease {id: 'tổn_thương_gan_disease'})
+MERGE (o2:disease {id: 'suy_gan_disease'})
+MERGE (o1)-[r13:isSymptomOf]->(o2)
+SET r13.text = 'Mức độ tổn thương gan có thể phân chia từ nhẹ tới nặng như sau:  Mức độ nhẹ Tổn thương nhẹ tới trung bình (xơ hóa) Tổn thương trung bình đến nặng (xơ hóa đến xơ gan còn bù) Tổn thương nghiêm trọng đến suy gan (xơ gan mất bù)'
+
+MERGE (o1:disease {id: 'xơ_gan_còn_bù_disease'})
+MERGE (o2:disease {id: 'tổn_thương_gan_trung_bình_disease'})
+MERGE (o1)-[r14:isSymptomOf]->(o2)
+SET r14.text = 'Như vậy, xơ gan còn bù là giai đoạn tổn thương gan trung bình.'
+
+MERGE (o1:organ {id: 'tế_bào_gan_khỏe_mạnh_organ'})
+MERGE (o2:organ {id: 'chức_năng_gan_organ'})
+MERGE (o1)-[r15:affects]->(o2)
+SET r15.text = 'Lúc này các tế bào gan khỏe mạnh vẫn có thể hoạt động “bù” cho các tế bào đã bị tổn thương, do đó chức năng hoạt động bình thường của gan cơ bản vẫn được duy trì.'
+
+MERGE (o1:disease {id: 'xơ_gan_còn_bù_disease'})
+MERGE (o2:treatment {id: 'điều_trị_treatment'})
+MERGE (o1)-[r16:treatedBy]->(o2)
+SET r16.text = 'Nếu phát hiện kịp thời, người bệnh có thể điều trị và phục hồi sức khỏe như ban đầu.'
+
+MERGE (o1:cause {id: 'nhiễm_virus_viêm_gan_cause'})
+MERGE (o2:disease {id: 'tổn_thương_gan_disease'})
+MERGE (o1)-[r17:causes]->(o2)
+SET r17.text = 'Ngược lại, trong trường hợp các nguyên nhân gây tổn thương như nhiễm virus viêm gan, lạm dụng rượu bia, sử dụng ma túy… không được loại bỏ, tổn thương gan sẽ tiếp tục tiến triển và làm suy giảm chức năng gan nghiêm trọng hơn.'
+
+MERGE (o1:lifestyle {id: 'lạm_dụng_rượu_bia_lifestyle'})
+MERGE (o2:disease {id: 'tổn_thương_gan_disease'})
+MERGE (o1)-[r18:causes]->(o2)
+SET r18.text = 'Ngược lại, trong trường hợp các nguyên nhân gây tổn thương như nhiễm virus viêm gan, lạm dụng rượu bia, sử dụng ma túy… không được loại bỏ, tổn thương gan sẽ tiếp tục tiến triển và làm suy giảm chức năng gan nghiêm trọng hơn.'
+
+MERGE (o1:lifestyle {id: 'sử_dụng_ma_túy_lifestyle'})
+MERGE (o2:disease {id: 'tổn_thương_gan_disease'})
+MERGE (o1)-[r19:causes]->(o2)
+SET r19.text = 'Ngược lại, trong trường hợp các nguyên nhân gây tổn thương như nhiễm virus viêm gan, lạm dụng rượu bia, sử dụng ma túy… không được loại bỏ, tổn thương gan sẽ tiếp tục tiến triển và làm suy giảm chức năng gan nghiêm trọng hơn.'
+
+MERGE (o1:disease {id: 'tổn_thương_gan_disease'})
+MERGE (o2:organ {id: 'chức_năng_gan_organ'})
+MERGE (o1)-[r20:affects]->(o2)
+SET r20.text = 'Ngược lại, trong trường hợp các nguyên nhân gây tổn thương như nhiễm virus viêm gan, lạm dụng rượu bia, sử dụng ma túy… không được loại bỏ, tổn thương gan sẽ tiếp tục tiến triển và làm suy giảm chức năng gan nghiêm trọng hơn.'
+
+MERGE (o1:disease {id: 'xơ_gan_còn_bù_disease'})
+MERGE (o2:organ {id: 'tế_bào_gan_khỏe_mạnh_organ'})
+MERGE (o1)-[r21:affects]->(o2)
+SET r21.text = 'Ở mức độ xơ gan còn bù, các tế bào gan khỏe mạnh còn có khả năng “bù” lại cho các tế bào bị tổn thương'
+
+MERGE (o1:disease {id: 'xơ_gan_còn_bù_disease'})
+MERGE (o2:symptom {id: 'triệu_chứng_symptom'})
+MERGE (o1)-[r22:isSymptomOf]->(o2)
+SET r22.text = 'Do là giai đoạn đầu nên các triệu chứng xơ gan còn bù hầu như còn chưa rõ rệt, khó có thể nhận biết hoặc dễ nhầm lẫn với các bệnh lý khác.'
+
+MERGE (o1:symptom {id: 'chán_ăn_symptom'})
+MERGE (o2:disease {id: 'xơ_gan_còn_bù_disease'})
+MERGE (o1)-[r23:isSymptomOf]->(o2)
+SET r23.text = 'Tuy nhiên, người bệnh có thể cảm thấy các bất thường như:  Chán ăn, ăn không ngon Mệt mỏi, không tỉnh táo Ngứa ngáy, bầm tím ngoài da Phù nhẹ ở chân Thỉnh thoảng có cảm giác tức vùng hạ sườn phải Nước tiểu có màu vàng đậm hơn Có thể có chảy máu cam không rõ nguyên do Suy giảm khả năng tình dục, kinh nguyệt không đều Nổi mao mạch hình sao ở lưng, ngực, cổ, bụng'
+
+MERGE (o1:symptom {id: 'ăn_không_ngon_symptom'})
+MERGE (o2:disease {id: 'xơ_gan_còn_bù_disease'})
+MERGE (o1)-[r24:isSymptomOf]->(o2)
+SET r24.text = 'Tuy nhiên, người bệnh có thể cảm thấy các bất thường như:  Chán ăn, ăn không ngon Mệt mỏi, không tỉnh táo Ngứa ngáy, bầm tím ngoài da Phù nhẹ ở chân Thỉnh thoảng có cảm giác tức vùng hạ sườn phải Nước tiểu có màu vàng đậm hơn Có thể có chảy máu cam không rõ nguyên do Suy giảm khả năng tình dục, kinh nguyệt không đều Nổi mao mạch hình sao ở lưng, ngực, cổ, bụng'
+
+MERGE (o1:symptom {id: 'mệt_mỏi_symptom'})
+MERGE (o2:disease {id: 'xơ_gan_còn_bù_disease'})
+MERGE (o1)-[r25:isSymptomOf]->(o2)
+SET r25.text = 'Tuy nhiên, người bệnh có thể cảm thấy các bất thường như:  Chán ăn, ăn không ngon Mệt mỏi, không tỉnh táo Ngứa ngáy, bầm tím ngoài da Phù nhẹ ở chân Thỉnh thoảng có cảm giác tức vùng hạ sườn phải Nước tiểu có màu vàng đậm hơn Có thể có chảy máu cam không rõ nguyên do Suy giảm khả năng tình dục, kinh nguyệt không đều Nổi mao mạch hình sao ở lưng, ngực, cổ, bụng'
+
+MERGE (o1:symptom {id: 'không_tỉnh_táo_symptom'})
+MERGE (o2:disease {id: 'xơ_gan_còn_bù_disease'})
+MERGE (o1)-[r26:isSymptomOf]->(o2)
+SET r26.text = 'Tuy nhiên, người bệnh có thể cảm thấy các bất thường như:  Chán ăn, ăn không ngon Mệt mỏi, không tỉnh táo Ngứa ngáy, bầm tím ngoài da Phù nhẹ ở chân Thỉnh thoảng có cảm giác tức vùng hạ sườn phải Nước tiểu có màu vàng đậm hơn Có thể có chảy máu cam không rõ nguyên do Suy giảm khả năng tình dục, kinh nguyệt không đều Nổi mao mạch hình sao ở lưng, ngực, cổ, bụng'
+
+MERGE (o1:symptom {id: 'ngứa_ngáy_symptom'})
+MERGE (o2:disease {id: 'xơ_gan_còn_bù_disease'})
+MERGE (o1)-[r27:isSymptomOf]->(o2)
+SET r27.text = 'Tuy nhiên, người bệnh có thể cảm thấy các bất thường như:  Chán ăn, ăn không ngon Mệt mỏi, không tỉnh táo Ngứa ngáy, bầm tím ngoài da Phù nhẹ ở chân Thỉnh thoảng có cảm giác tức vùng hạ sườn phải Nước tiểu có màu vàng đậm hơn Có thể có chảy máu cam không rõ nguyên do Suy giảm khả năng tình dục, kinh nguyệt không đều Nổi mao mạch hình sao ở lưng, ngực, cổ, bụng'
+
+MERGE (o1:symptom {id: 'bầm_tím_ngoài_da_symptom'})
+MERGE (o2:disease {id: 'xơ_gan_còn_bù_disease'})
+MERGE (o1)-[r28:isSymptomOf]->(o2)
+SET r28.text = 'Tuy nhiên, người bệnh có thể cảm thấy các bất thường như:  Chán ăn, ăn không ngon Mệt mỏi, không tỉnh táo Ngứa ngáy, bầm tím ngoài da Phù nhẹ ở chân Thỉnh thoảng có cảm giác tức vùng hạ sườn phải Nước tiểu có màu vàng đậm hơn Có thể có chảy máu cam không rõ nguyên do Suy giảm khả năng tình dục, kinh nguyệt không đều Nổi mao mạch hình sao ở lưng, ngực, cổ, bụng'
+
+MERGE (o1:symptom {id: 'phù_nhẹ_ở_chân_symptom'})
+MERGE (o2:disease {id: 'xơ_gan_còn_bù_disease'})
+MERGE (o1)-[r29:isSymptomOf]->(o2)
+SET r29.text = 'Tuy nhiên, người bệnh có thể cảm thấy các bất thường như:  Chán ăn, ăn không ngon Mệt mỏi, không tỉnh táo Ngứa ngáy, bầm tím ngoài da Phù nhẹ ở chân Thỉnh thoảng có cảm giác tức vùng hạ sườn phải Nước tiểu có màu vàng đậm hơn Có thể có chảy máu cam không rõ nguyên do Suy giảm khả năng tình dục, kinh nguyệt không đều Nổi mao mạch hình sao ở lưng, ngực, cổ, bụng'
+
+MERGE (o1:symptom {id: 'cảm_giác_tức_vùng_hạ_sườn_phải_symptom'})
+MERGE (o2:disease {id: 'xơ_gan_còn_bù_disease'})
+MERGE (o1)-[r30:isSymptomOf]->(o2)
+SET r30.text = 'Tuy nhiên, người bệnh có thể cảm thấy các bất thường như:  Chán ăn, ăn không ngon Mệt mỏi, không tỉnh táo Ngứa ngáy, bầm tím ngoài da Phù nhẹ ở chân Thỉnh thoảng có cảm giác tức vùng hạ sườn phải Nước tiểu có màu vàng đậm hơn Có thể có chảy máu cam không rõ nguyên do Suy giảm khả năng tình dục, kinh nguyệt không đều Nổi mao mạch hình sao ở lưng, ngực, cổ, bụng'
+
+MERGE (o1:symptom {id: 'nước_tiểu_có_màu_vàng_đậm_hơn_symptom'})
+MERGE (o2:disease {id: 'xơ_gan_còn_bù_disease'})
+MERGE (o1)-[r31:isSymptomOf]->(o2)
+SET r31.text = 'Tuy nhiên, người bệnh có thể cảm thấy các bất thường như:  Chán ăn, ăn không ngon Mệt mỏi, không tỉnh táo Ngứa ngáy, bầm tím ngoài da Phù nhẹ ở chân Thỉnh thoảng có cảm giác tức vùng hạ sườn phải Nước tiểu có màu vàng đậm hơn Có thể có chảy máu cam không rõ nguyên do Suy giảm khả năng tình dục, kinh nguyệt không đều Nổi mao mạch hình sao ở lưng, ngực, cổ, bụng'
+
+MERGE (o1:symptom {id: 'chảy_máu_cam_không_rõ_nguyên_do_symptom'})
+MERGE (o2:disease {id: 'xơ_gan_còn_bù_disease'})
+MERGE (o1)-[r32:isSymptomOf]->(o2)
+SET r32.text = 'Tuy nhiên, người bệnh có thể cảm thấy các bất thường như:  Chán ăn, ăn không ngon Mệt mỏi, không tỉnh táo Ngứa ngáy, bầm tím ngoài da Phù nhẹ ở chân Thỉnh thoảng có cảm giác tức vùng hạ sườn phải Nước tiểu có màu vàng đậm hơn Có thể có chảy máu cam không rõ nguyên do Suy giảm khả năng tình dục, kinh nguyệt không đều Nổi mao mạch hình sao ở lưng, ngực, cổ, bụng'
+
+MERGE (o1:symptom {id: 'suy_giảm_khả_năng_tình_dục_symptom'})
+MERGE (o2:disease {id: 'xơ_gan_còn_bù_disease'})
+MERGE (o1)-[r33:isSymptomOf]->(o2)
+SET r33.text = 'Tuy nhiên, người bệnh có thể cảm thấy các bất thường như:  Chán ăn, ăn không ngon Mệt mỏi, không tỉnh táo Ngứa ngáy, bầm tím ngoài da Phù nhẹ ở chân Thỉnh thoảng có cảm giác tức vùng hạ sườn phải Nước tiểu có màu vàng đậm hơn Có thể có chảy máu cam không rõ nguyên do Suy giảm khả năng tình dục, kinh nguyệt không đều Nổi mao mạch hình sao ở lưng, ngực, cổ, bụng'
+
+MERGE (o1:symptom {id: 'kinh_nguyệt_không_đều_symptom'})
+MERGE (o2:disease {id: 'xơ_gan_còn_bù_disease'})
+MERGE (o1)-[r34:isSymptomOf]->(o2)
+SET r34.text = 'Tuy nhiên, người bệnh có thể cảm thấy các bất thường như:  Chán ăn, ăn không ngon Mệt mỏi, không tỉnh táo Ngứa ngáy, bầm tím ngoài da Phù nhẹ ở chân Thỉnh thoảng có cảm giác tức vùng hạ sườn phải Nước tiểu có màu vàng đậm hơn Có thể có chảy máu cam không rõ nguyên do Suy giảm khả năng tình dục, kinh nguyệt không đều Nổi mao mạch hình sao ở lưng, ngực, cổ, bụng'
+
+MERGE (o1:symptom {id: 'nổi_mao_mạch_hình_sao_ở_lưng__ngực__cổ__bụng_symptom'})
+MERGE (o2:disease {id: 'xơ_gan_còn_bù_disease'})
+MERGE (o1)-[r35:isSymptomOf]->(o2)
+SET r35.text = 'Tuy nhiên, người bệnh có thể cảm thấy các bất thường như:  Chán ăn, ăn không ngon Mệt mỏi, không tỉnh táo Ngứa ngáy, bầm tím ngoài da Phù nhẹ ở chân Thỉnh thoảng có cảm giác tức vùng hạ sườn phải Nước tiểu có màu vàng đậm hơn Có thể có chảy máu cam không rõ nguyên do Suy giảm khả năng tình dục, kinh nguyệt không đều Nổi mao mạch hình sao ở lưng, ngực, cổ, bụng'
+
+MERGE (o1:disease {id: 'xơ_gan_mất_bù_disease'})
+MERGE (o2:disease {id: 'ung_thư_gan_disease'})
+MERGE (o1)-[r36:isSymptomOf]->(o2)
+SET r36.text = 'Xơ gan mất bù hoặc còn bù đều có thể dẫn đến ung thư gan nếu không xử lý đúng cách.'
+
+MERGE (o1:disease {id: 'xơ_gan_còn_bù_disease'})
+MERGE (o2:disease {id: 'ung_thư_gan_disease'})
+MERGE (o1)-[r37:isSymptomOf]->(o2)
+SET r37.text = 'Xơ gan mất bù hoặc còn bù đều có thể dẫn đến ung thư gan nếu không xử lý đúng cách.'
+
+MERGE (o1:disease {id: 'xơ_gan_disease'})
+MERGE (o2:treatment {id: 'chữa_khỏi_hoàn_toàn_treatment'})
+MERGE (o1)-[r38:treatedBy]->(o2)
+SET r38.text = 'Thêm vào đó bệnh xơ gan chỉ có thể được chữa khỏi hoàn toàn khi ở giai đoạn đầu.'
+
+MERGE (o1:disease {id: 'viêm_gan_virus_b_disease'})
+MERGE (o2:disease {id: 'xơ_gan_còn_bù_disease'})
+MERGE (o1)-[r39:causedBy]->(o2)
+SET r39.text = 'Có không ít nguyên nhân có thể dẫn tới tình trạng xơ gan còn bù. Trong số đó những người gặp phải các vấn đề về sức khỏe dưới đây có thể làm tăng nguy cơ khởi phát bệnh:  Có bệnh nền là viêm gan virus B, viêm gan virus C, viêm gan virus D chưa được kiểm soát tốt Người mắc bệnh gan nhiễm mỡ Người bị thừa cân, béo phì Người hay lạm dụng rượu bia Có chế độ ăn uống không đủ chất, quá nhiều thực phẩm chiên rán… ảnh hưởng đến chức năng hoạt động của gan Thường xuyên tiếp xúc với các chất độc hại như thạch tín, asen,…thúc đẩy quá trình phát triển xơ gan Tiền sử gia đình có người mắc các bệnh lý về gan (2)'
+
+MERGE (o1:disease {id: 'viêm_gan_virus_c_disease'})
+MERGE (o2:disease {id: 'xơ_gan_còn_bù_disease'})
+MERGE (o1)-[r40:causedBy]->(o2)
+SET r40.text = 'Có không ít nguyên nhân có thể dẫn tới tình trạng xơ gan còn bù. Trong số đó những người gặp phải các vấn đề về sức khỏe dưới đây có thể làm tăng nguy cơ khởi phát bệnh:  Có bệnh nền là viêm gan virus B, viêm gan virus C, viêm gan virus D chưa được kiểm soát tốt Người mắc bệnh gan nhiễm mỡ Người bị thừa cân, béo phì Người hay lạm dụng rượu bia Có chế độ ăn uống không đủ chất, quá nhiều thực phẩm chiên rán… ảnh hưởng đến chức năng hoạt động của gan Thường xuyên tiếp xúc với các chất độc hại như thạch tín, asen,…thúc đẩy quá trình phát triển xơ gan Tiền sử gia đình có người mắc các bệnh lý về gan (2)'
+
+MERGE (o1:disease {id: 'viêm_gan_virus_d_disease'})
+MERGE (o2:disease {id: 'xơ_gan_còn_bù_disease'})
+MERGE (o1)-[r41:causedBy]->(o2)
+SET r41.text = 'Có không ít nguyên nhân có thể dẫn tới tình trạng xơ gan còn bù. Trong số đó những người gặp phải các vấn đề về sức khỏe dưới đây có thể làm tăng nguy cơ khởi phát bệnh:  Có bệnh nền là viêm gan virus B, viêm gan virus C, viêm gan virus D chưa được kiểm soát tốt Người mắc bệnh gan nhiễm mỡ Người bị thừa cân, béo phì Người hay lạm dụng rượu bia Có chế độ ăn uống không đủ chất, quá nhiều thực phẩm chiên rán… ảnh hưởng đến chức năng hoạt động của gan Thường xuyên tiếp xúc với các chất độc hại như thạch tín, asen,…thúc đẩy quá trình phát triển xơ gan Tiền sử gia đình có người mắc các bệnh lý về gan (2)'
+
+MERGE (o1:disease {id: 'bệnh_gan_nhiễm_mỡ_disease'})
+MERGE (o2:disease {id: 'xơ_gan_còn_bù_disease'})
+MERGE (o1)-[r42:causedBy]->(o2)
+SET r42.text = 'Có không ít nguyên nhân có thể dẫn tới tình trạng xơ gan còn bù. Trong số đó những người gặp phải các vấn đề về sức khỏe dưới đây có thể làm tăng nguy cơ khởi phát bệnh:  Có bệnh nền là viêm gan virus B, viêm gan virus C, viêm gan virus D chưa được kiểm soát tốt Người mắc bệnh gan nhiễm mỡ Người bị thừa cân, béo phì Người hay lạm dụng rượu bia Có chế độ ăn uống không đủ chất, quá nhiều thực phẩm chiên rán… ảnh hưởng đến chức năng hoạt động của gan Thường xuyên tiếp xúc với các chất độc hại như thạch tín, asen,…thúc đẩy quá trình phát triển xơ gan Tiền sử gia đình có người mắc các bệnh lý về gan (2)'
+
+MERGE (o1:lifestyle {id: 'thừa_cân_lifestyle'})
+MERGE (o2:disease {id: 'xơ_gan_còn_bù_disease'})
+MERGE (o1)-[r43:causedBy]->(o2)
+SET r43.text = 'Có không ít nguyên nhân có thể dẫn tới tình trạng xơ gan còn bù. Trong số đó những người gặp phải các vấn đề về sức khỏe dưới đây có thể làm tăng nguy cơ khởi phát bệnh:  Có bệnh nền là viêm gan virus B, viêm gan virus C, viêm gan virus D chưa được kiểm soát tốt Người mắc bệnh gan nhiễm mỡ Người bị thừa cân, béo phì Người hay lạm dụng rượu bia Có chế độ ăn uống không đủ chất, quá nhiều thực phẩm chiên rán… ảnh hưởng đến chức năng hoạt động của gan Thường xuyên tiếp xúc với các chất độc hại như thạch tín, asen,…thúc đẩy quá trình phát triển xơ gan Tiền sử gia đình có người mắc các bệnh lý về gan (2)'
+
+MERGE (o1:lifestyle {id: 'béo_phì_lifestyle'})
+MERGE (o2:disease {id: 'xơ_gan_còn_bù_disease'})
+MERGE (o1)-[r44:causedBy]->(o2)
+SET r44.text = 'Có không ít nguyên nhân có thể dẫn tới tình trạng xơ gan còn bù. Trong số đó những người gặp phải các vấn đề về sức khỏe dưới đây có thể làm tăng nguy cơ khởi phát bệnh:  Có bệnh nền là viêm gan virus B, viêm gan virus C, viêm gan virus D chưa được kiểm soát tốt Người mắc bệnh gan nhiễm mỡ Người bị thừa cân, béo phì Người hay lạm dụng rượu bia Có chế độ ăn uống không đủ chất, quá nhiều thực phẩm chiên rán… ảnh hưởng đến chức năng hoạt động của gan Thường xuyên tiếp xúc với các chất độc hại như thạch tín, asen,…thúc đẩy quá trình phát triển xơ gan Tiền sử gia đình có người mắc các bệnh lý về gan (2)'
+
+MERGE (o1:lifestyle {id: 'lạm_dụng_rượu_bia_lifestyle'})
+MERGE (o2:disease {id: 'xơ_gan_còn_bù_disease'})
+MERGE (o1)-[r45:causedBy]->(o2)
+SET r45.text = 'Có không ít nguyên nhân có thể dẫn tới tình trạng xơ gan còn bù. Trong số đó những người gặp phải các vấn đề về sức khỏe dưới đây có thể làm tăng nguy cơ khởi phát bệnh:  Có bệnh nền là viêm gan virus B, viêm gan virus C, viêm gan virus D chưa được kiểm soát tốt Người mắc bệnh gan nhiễm mỡ Người bị thừa cân, béo phì Người hay lạm dụng rượu bia Có chế độ ăn uống không đủ chất, quá nhiều thực phẩm chiên rán… ảnh hưởng đến chức năng hoạt động của gan Thường xuyên tiếp xúc với các chất độc hại như thạch tín, asen,…thúc đẩy quá trình phát triển xơ gan Tiền sử gia đình có người mắc các bệnh lý về gan (2)'
+
+MERGE (o1:lifestyle {id: 'chế_độ_ăn_uống_không_đủ_chất_lifestyle'})
+MERGE (o2:disease {id: 'xơ_gan_còn_bù_disease'})
+MERGE (o1)-[r46:causedBy]->(o2)
+SET r46.text = 'Có không ít nguyên nhân có thể dẫn tới tình trạng xơ gan còn bù. Trong số đó những người gặp phải các vấn đề về sức khỏe dưới đây có thể làm tăng nguy cơ khởi phát bệnh:  Có bệnh nền là viêm gan virus B, viêm gan virus C, viêm gan virus D chưa được kiểm soát tốt Người mắc bệnh gan nhiễm mỡ Người bị thừa cân, béo phì Người hay lạm dụng rượu bia Có chế độ ăn uống không đủ chất, quá nhiều thực phẩm chiên rán… ảnh hưởng đến chức năng hoạt động của gan Thường xuyên tiếp xúc với các chất độc hại như thạch tín, asen,…thúc đẩy quá trình phát triển xơ gan Tiền sử gia đình có người mắc các bệnh lý về gan (2)'
+
+MERGE (o1:food {id: 'thực_phẩm_chiên_rán_food'})
+MERGE (o2:disease {id: 'xơ_gan_còn_bù_disease'})
+MERGE (o1)-[r47:causedBy]->(o2)
+SET r47.text = 'Có không ít nguyên nhân có thể dẫn tới tình trạng xơ gan còn bù. Trong số đó những người gặp phải các vấn đề về sức khỏe dưới đây có thể làm tăng nguy cơ khởi phát bệnh:  Có bệnh nền là viêm gan virus B, viêm gan virus C, viêm gan virus D chưa được kiểm soát tốt Người mắc bệnh gan nhiễm mỡ Người bị thừa cân, béo phì Người hay lạm dụng rượu bia Có chế độ ăn uống không đủ chất, quá nhiều thực phẩm chiên rán… ảnh hưởng đến chức năng hoạt động của gan Thường xuyên tiếp xúc với các chất độc hại như thạch tín, asen,…thúc đẩy quá trình phát triển xơ gan Tiền sử gia đình có người mắc các bệnh lý về gan (2)'
+
+MERGE (o1:cause {id: 'chất_độc_hại_cause'})
+MERGE (o2:disease {id: 'xơ_gan_còn_bù_disease'})
+MERGE (o1)-[r48:causedBy]->(o2)
+SET r48.text = 'Có không ít nguyên nhân có thể dẫn tới tình trạng xơ gan còn bù. Trong số đó những người gặp phải các vấn đề về sức khỏe dưới đây có thể làm tăng nguy cơ khởi phát bệnh:  Có bệnh nền là viêm gan virus B, viêm gan virus C, viêm gan virus D chưa được kiểm soát tốt Người mắc bệnh gan nhiễm mỡ Người bị thừa cân, béo phì Người hay lạm dụng rượu bia Có chế độ ăn uống không đủ chất, quá nhiều thực phẩm chiên rán… ảnh hưởng đến chức năng hoạt động của gan Thường xuyên tiếp xúc với các chất độc hại như thạch tín, asen,…thúc đẩy quá trình phát triển xơ gan Tiền sử gia đình có người mắc các bệnh lý về gan (2)'
+
+MERGE (o1:cause {id: 'tiền_sử_gia_đình_có_người_mắc_các_bệnh_lý_về_gan_cause'})
+MERGE (o2:disease {id: 'xơ_gan_còn_bù_disease'})
+MERGE (o1)-[r49:causedBy]->(o2)
+SET r49.text = 'Có không ít nguyên nhân có thể dẫn tới tình trạng xơ gan còn bù. Trong số đó những người gặp phải các vấn đề về sức khỏe dưới đây có thể làm tăng nguy cơ khởi phát bệnh:  Có bệnh nền là viêm gan virus B, viêm gan virus C, viêm gan virus D chưa được kiểm soát tốt Người mắc bệnh gan nhiễm mỡ Người bị thừa cân, béo phì Người hay lạm dụng rượu bia Có chế độ ăn uống không đủ chất, quá nhiều thực phẩm chiên rán… ảnh hưởng đến chức năng hoạt động của gan Thường xuyên tiếp xúc với các chất độc hại như thạch tín, asen,…thúc đẩy quá trình phát triển xơ gan Tiền sử gia đình có người mắc các bệnh lý về gan (2)'
+
+MERGE (o1:lifestyle {id: 'lạm_dụng_bia_rượu_lifestyle'})
+MERGE (o2:disease {id: 'xơ_gan_còn_bù_disease'})
+MERGE (o1)-[r50:causedBy]->(o2)
+SET r50.text = 'Lạm dụng bia rượu là một trong những lý do gây xơ gan còn bù'
+
+MERGE (o1:disease {id: 'xơ_gan_còn_bù_disease'})
+MERGE (o2:symptom {id: 'không_có_triệu_chứng_rõ_rệt_symptom'})
+MERGE (o1)-[r51:isSymptomOf]->(o2)
+SET r51.text = 'Xơ gan giai đoạn còn bù thường không có triệu chứng rõ rệt.'
+
+MERGE (o1:test {id: 'xét_nghiệm_hoá_sinh_test'})
+MERGE (o2:disease {id: 'xơ_gan_còn_bù_disease'})
+MERGE (o1)-[r52:diagnosedBy]->(o2)
+SET r52.text = 'Do đó ở giai đoạn này muốn phát hiện bệnh thì bên cạnh việc chẩn đoán lâm sàng, bác sĩ sẽ chỉ định thực hiện một số xét nghiệm cần thiết như: Xét nghiệm hoá sinh nhằm mục đích kiểm tra các chỉ số albumin, đông máu , bilirrubin, men gan, …, từ đó chẩn đoán tình hình sức khỏe của gan, xác định người bệnh có mắc xơ gan còn bù hoặc một bệnh lý về gan nào khác không.'
+
+MERGE (o1:test {id: 'xét_nghiệm_hoá_sinh_test'})
+MERGE (o2:organ {id: 'gan_organ'})
+MERGE (o1)-[r53:affects]->(o2)
+SET r53.text = 'Do đó ở giai đoạn này muốn phát hiện bệnh thì bên cạnh việc chẩn đoán lâm sàng, bác sĩ sẽ chỉ định thực hiện một số xét nghiệm cần thiết như: Xét nghiệm hoá sinh nhằm mục đích kiểm tra các chỉ số albumin, đông máu , bilirrubin, men gan, …, từ đó chẩn đoán tình hình sức khỏe của gan, xác định người bệnh có mắc xơ gan còn bù hoặc một bệnh lý về gan nào khác không.'
+
+MERGE (o1:test {id: 'đo_đàn_hồi_hay_xơ_hóa_của_gan_test'})
+MERGE (o2:disease {id: 'xơ_gan_còn_bù_disease'})
+MERGE (o1)-[r54:diagnosedBy]->(o2)
+SET r54.text = 'Khi gan bị xơ hóa và xơ gan sẽ cứng hơn không còn mềm mại như bình thường. Đo đàn hồi hay xơ hóa của gan giúp phát hiện xơ gan còn bù.'
+
+MERGE (o1:test {id: 'đo_đàn_hồi_hay_xơ_hóa_của_gan_test'})
+MERGE (o2:organ {id: 'gan_organ'})
+MERGE (o1)-[r55:affects]->(o2)
+SET r55.text = 'Khi gan bị xơ hóa và xơ gan sẽ cứng hơn không còn mềm mại như bình thường. Đo đàn hồi hay xơ hóa của gan giúp phát hiện xơ gan còn bù.'
+
+MERGE (o1:test {id: 'siêu_âm_gan_test'})
+MERGE (o2:disease {id: 'xơ_gan_còn_bù_disease'})
+MERGE (o1)-[r56:diagnosedBy]->(o2)
+SET r56.text = 'Siêu âm gan cho biết hình ảnh gián tiếp của gan như: bờ gan không đều, tĩnh mạch cử gián, lách to…. Ngoài ra siêu âm gan còn giúp phát hiện khối u gan do ung thư gan ở bệnh nhân xơ gan.'
+
+MERGE (o1:test {id: 'siêu_âm_gan_test'})
+MERGE (o2:organ {id: 'gan_organ'})
+MERGE (o1)-[r57:affects]->(o2)
+SET r57.text = 'Siêu âm gan cho biết hình ảnh gián tiếp của gan như: bờ gan không đều, tĩnh mạch cử gián, lách to…. Ngoài ra siêu âm gan còn giúp phát hiện khối u gan do ung thư gan ở bệnh nhân xơ gan.'
+
+MERGE (o1:test {id: 'siêu_âm_gan_test'})
+MERGE (o2:disease {id: 'ung_thư_gan_disease'})
+MERGE (o1)-[r58:diagnosedBy]->(o2)
+SET r58.text = 'Siêu âm gan cho biết hình ảnh gián tiếp của gan như: bờ gan không đều, tĩnh mạch cử gián, lách to…. Ngoài ra siêu âm gan còn giúp phát hiện khối u gan do ung thư gan ở bệnh nhân xơ gan.'
+
+MERGE (o1:disease {id: 'xơ_gan_còn_bù_disease'})
+MERGE (o2:test {id: 'lấy_mẫu_mô_nhỏ_từ_nhu_mô_gan_test'})
+MERGE (o1)-[r59:diagnosedBy]->(o2)
+SET r59.text = 'Cách chẩn đoán xơ gan còn bù này thực hiện bằng cách lấy một vài mẫu mô nhỏ từ nhu mô gan để làm các xét nghiệm.'
+
+MERGE (o1:test {id: 'lấy_mẫu_mô_nhỏ_từ_nhu_mô_gan_test'})
+MERGE (o2:organ {id: 'gan_organ'})
+MERGE (o1)-[r60:affects]->(o2)
+SET r60.text = 'Cách chẩn đoán xơ gan còn bù này thực hiện bằng cách lấy một vài mẫu mô nhỏ từ nhu mô gan để làm các xét nghiệm.'
+
+MERGE (o1:disease {id: 'xơ_gan_disease'})
+MERGE (o2:disease {id: 'bệnh_gan_mạn_tính_disease'})
+MERGE (o1)-[r61:relatedTo]->(o2)
+SET r61.text = 'Xơ gan được xem là giai đoạn cuối của các bệnh gan mạn tính.'
+
+MERGE (o1:disease {id: 'xơ_gan_còn_bù_disease'})
+MERGE (o2:disease {id: 'xơ_gan_disease'})
+MERGE (o1)-[r62:relatedTo]->(o2)
+SET r62.text = 'Xơ gan được xem là giai đoạn cuối của các bệnh gan mạn tính. Vì lý do này nên cho dù có là tình trạng xơ gan còn bù thì người bệnh vẫn không nên chủ quan.'
+
+MERGE (o1:disease {id: 'xơ_gan_còn_bù_disease'})
+MERGE (o2:symptom {id: 'không_có_biến_chứng_symptom'})
+MERGE (o1)-[r63:isSymptomOf]->(o2)
+SET r63.text = 'Phần lớn trường hợp bệnh không có biến chứng.'
+
+MERGE (o1:disease {id: 'xơ_gan_mất_bù_disease'})
+MERGE (o2:disease {id: 'xơ_gan_còn_bù_disease'})
+MERGE (o1)-[r64:relatedTo]->(o2)
+SET r64.text = 'Tuy nhiên, nếu để bệnh tiến triển sang giai đoạn sau - xơ gan mất bù - thì có thể xảy ra các vấn đề sức khỏe nghiêm trọng như cổ trướng, vàng da, xuất huyết tiêu hóa do vỡ giãn tĩnh mạch thực quản, dạ dày hoặc bệnh não gan.'
+
+MERGE (o1:symptom {id: 'cổ_trướng_symptom'})
+MERGE (o2:disease {id: 'xơ_gan_mất_bù_disease'})
+MERGE (o1)-[r65:isSymptomOf]->(o2)
+SET r65.text = 'Tuy nhiên, nếu để bệnh tiến triển sang giai đoạn sau - xơ gan mất bù - thì có thể xảy ra các vấn đề sức khỏe nghiêm trọng như cổ trướng, vàng da, xuất huyết tiêu hóa do vỡ giãn tĩnh mạch thực quản, dạ dày hoặc bệnh não gan.'
+
+MERGE (o1:symptom {id: 'vàng_da_symptom'})
+MERGE (o2:disease {id: 'xơ_gan_mất_bù_disease'})
+MERGE (o1)-[r66:isSymptomOf]->(o2)
+SET r66.text = 'Tuy nhiên, nếu để bệnh tiến triển sang giai đoạn sau - xơ gan mất bù - thì có thể xảy ra các vấn đề sức khỏe nghiêm trọng như cổ trướng, vàng da, xuất huyết tiêu hóa do vỡ giãn tĩnh mạch thực quản, dạ dày hoặc bệnh não gan.'
+
+MERGE (o1:symptom {id: 'xuất_huyết_tiêu_hóa_symptom'})
+MERGE (o2:disease {id: 'xơ_gan_mất_bù_disease'})
+MERGE (o1)-[r67:isSymptomOf]->(o2)
+SET r67.text = 'Tuy nhiên, nếu để bệnh tiến triển sang giai đoạn sau - xơ gan mất bù - thì có thể xảy ra các vấn đề sức khỏe nghiêm trọng như cổ trướng, vàng da, xuất huyết tiêu hóa do vỡ giãn tĩnh mạch thực quản, dạ dày hoặc bệnh não gan.'
+
+MERGE (o1:symptom {id: 'vỡ_giãn_tĩnh_mạch_thực_quản_symptom'})
+MERGE (o2:disease {id: 'xơ_gan_mất_bù_disease'})
+MERGE (o1)-[r68:isSymptomOf]->(o2)
+SET r68.text = 'Tuy nhiên, nếu để bệnh tiến triển sang giai đoạn sau - xơ gan mất bù - thì có thể xảy ra các vấn đề sức khỏe nghiêm trọng như cổ trướng, vàng da, xuất huyết tiêu hóa do vỡ giãn tĩnh mạch thực quản, dạ dày hoặc bệnh não gan.'
+
+MERGE (o1:disease {id: 'bệnh_xơ_gan_còn_bù_disease'})
+MERGE (o2:treatment {id: 'điều_trị_treatment'})
+MERGE (o1)-[r69:treatedBy]->(o2)
+SET r69.text = 'Bệnh xơ gan còn bù có thể điều trị được.'
+
+MERGE (o1:disease {id: 'bệnh_xơ_gan_disease'})
+MERGE (o2:test {id: 'xét_nghiệm_test'})
+MERGE (o1)-[r70:diagnosedBy]->(o2)
+SET r70.text = 'Dựa vào kết quả xét nghiệm có thể biết được mức độ tiến triển của bệnh xơ gan qua các giai đoạn, từ đó có hướng điều trị thích hợp.'
+
+MERGE (o1:treatment {id: 'điều_trị_xơ_gan_còn_bù_treatment'})
+MERGE (o2:disease {id: 'xơ_gan_mất_bù_disease'})
+MERGE (o1)-[r71:preventedBy]->(o2)
+SET r71.text = 'Điều trị xơ gan còn bù cũng là cách phòng ngừa bệnh chuyển sang tình trạng xơ gan mất bù.'
+
+MERGE (o1:disease {id: 'bệnh_lý_disease'})
+MERGE (o2:treatment {id: 'chỉ_định_của_bác_sĩ_treatment'})
+MERGE (o1)-[r72:treatedBy]->(o2)
+SET r72.text = 'Và trong bất kỳ một bệnh lý nào, tuân thủ chỉ định của bác sĩ luôn là ưu tiên hàng đầu.'
+
+MERGE (o1:treatment {id: 'phương_pháp_nội_khoa_treatment'})
+MERGE (o2:disease {id: 'viêm_gan_còn_bù_disease'})
+MERGE (o1)-[r73:treatedBy]->(o2)
+SET r73.text = 'Các phương pháp nội khoa là cách điều trị chủ yếu cho người bệnh viêm gan còn bù, bao gồm như: điều trị nguyên nhân nếu viêm gan virus B, C, D, loại bỏ tác nhân gây hại gan (rượu, thuốc lá, các chất độc hại,&#8230;); xây dựng chế độ ăn uống, nghỉ ngơi lành mạnh, đủ dưỡng chất, hạn chế muối.'
+
+MERGE (o1:disease {id: 'viêm_gan_virus_b__c__d_disease'})
+MERGE (o2:cause {id: 'rượu__thuốc_lá__các_chất_độc_hại_cause'})
+MERGE (o1)-[r74:causedBy]->(o2)
+SET r74.text = 'Các phương pháp nội khoa là cách điều trị chủ yếu cho người bệnh viêm gan còn bù, bao gồm như: điều trị nguyên nhân nếu viêm gan virus B, C, D, loại bỏ tác nhân gây hại gan (rượu, thuốc lá, các chất độc hại,&#8230;); xây dựng chế độ ăn uống, nghỉ ngơi lành mạnh, đủ dưỡng chất, hạn chế muối.'
+
+MERGE (o1:disease {id: 'viêm_gan_còn_bù_disease'})
+MERGE (o2:lifestyle {id: 'chế_độ_ăn_uống__nghỉ_ngơi_lành_mạnh__đủ_dưỡng_chất__hạn_chế_muối_lifestyle'})
+MERGE (o1)-[r75:treatedBy]->(o2)
+SET r75.text = 'Các phương pháp nội khoa là cách điều trị chủ yếu cho người bệnh viêm gan còn bù, bao gồm như: điều trị nguyên nhân nếu viêm gan virus B, C, D, loại bỏ tác nhân gây hại gan (rượu, thuốc lá, các chất độc hại,&#8230;); xây dựng chế độ ăn uống, nghỉ ngơi lành mạnh, đủ dưỡng chất, hạn chế muối.'
+
+MERGE (o1:treatment {id: 'thuốc_lợi_tiểu__thuốc_chống_táo_bón__corticoids__colchicine_treatment'})
+MERGE (o2:disease {id: 'bệnh_ở_giai_đoạn_đầu_disease'})
+MERGE (o1)-[r76:treatedBy]->(o2)
+SET r76.text = 'Ngoài ra có một số loại thuốc có thể sử dụng khi bệnh ở giai đoạn đầu như thuốc lợi tiểu, thuốc chống táo bón hoặc các loại thuốc chống xơ như corticoids, colchicine,…(3)'
+
+MERGE (o1:disease {id: 'xơ_gan_còn_bù_disease'})
+MERGE (o2:lifestyle {id: 'thay_đổi_lối_sống__kiểm_soát_các_bệnh_nền__tuân_thủ_theo_điều_trị_từ_bác_sĩ_lifestyle'})
+MERGE (o1)-[r77:preventedBy]->(o2)
+SET r77.text = 'Việc phòng ngừa xơ gan còn bù cần dựa vào việc thay đổi lối sống, kiểm soát các bệnh nền cũng như tuân thủ theo điều trị từ bác sĩ.'
+
+MERGE (o1:disease {id: 'bệnh_disease'})
+MERGE (o2:food {id: 'bia_rượu__đồ_uống_có_cồn_food'})
+MERGE (o1)-[r78:aggravatedBy]->(o2)
+SET r78.text = 'Để bệnh không tiến triển nặng hơn, người bệnh cần lưu ý một số điều quan trọng như:  Kiêng hoàn toàn chuyện sử dụng bia rượu hay đồ uống có cồn Quản lý cân nặng; giảm cân nếu đang thừa cân/ béo phì Cân nhắc việc dùng thuốc để tránh làm nhiễm độc gan do thuốc Tránh dùng thuốc chống viêm không steroid Kiểm soát điều trị đái tháo đường, rối loạn lipid máu Điều trị căn nguyên của bệnh gan Xây dựng chế độ ăn uống giàu rau xanh và trái cây; giảm lượng chất báo và các nguồn protein nạc Tiêm chủng đầy đủ để hạn chế nguy cơ tổn thương gan cấp tính do virus Tầm soát ung thư biểu mô tế bào gan'
+
+MERGE (o1:disease {id: 'bệnh_disease'})
+MERGE (o2:treatment {id: 'thuốc_treatment'})
+MERGE (o1)-[r79:aggravatedBy]->(o2)
+SET r79.text = 'Để bệnh không tiến triển nặng hơn, người bệnh cần lưu ý một số điều quan trọng như:  Kiêng hoàn toàn chuyện sử dụng bia rượu hay đồ uống có cồn Quản lý cân nặng; giảm cân nếu đang thừa cân/ béo phì Cân nhắc việc dùng thuốc để tránh làm nhiễm độc gan do thuốc Tránh dùng thuốc chống viêm không steroid Kiểm soát điều trị đái tháo đường, rối loạn lipid máu Điều trị căn nguyên của bệnh gan Xây dựng chế độ ăn uống giàu rau xanh và trái cây; giảm lượng chất báo và các nguồn protein nạc Tiêm chủng đầy đủ để hạn chế nguy cơ tổn thương gan cấp tính do virus Tầm soát ung thư biểu mô tế bào gan'
+
+MERGE (o1:disease {id: 'bệnh_disease'})
+MERGE (o2:treatment {id: 'thuốc_chống_viêm_không_steroid_treatment'})
+MERGE (o1)-[r80:aggravatedBy]->(o2)
+SET r80.text = 'Để bệnh không tiến triển nặng hơn, người bệnh cần lưu ý một số điều quan trọng như:  Kiêng hoàn toàn chuyện sử dụng bia rượu hay đồ uống có cồn Quản lý cân nặng; giảm cân nếu đang thừa cân/ béo phì Cân nhắc việc dùng thuốc để tránh làm nhiễm độc gan do thuốc Tránh dùng thuốc chống viêm không steroid Kiểm soát điều trị đái tháo đường, rối loạn lipid máu Điều trị căn nguyên của bệnh gan Xây dựng chế độ ăn uống giàu rau xanh và trái cây; giảm lượng chất báo và các nguồn protein nạc Tiêm chủng đầy đủ để hạn chế nguy cơ tổn thương gan cấp tính do virus Tầm soát ung thư biểu mô tế bào gan'
+
+MERGE (o1:disease {id: 'bệnh_disease'})
+MERGE (o2:treatment {id: 'điều_trị_đái_tháo_đường__rối_loạn_lipid_máu_treatment'})
+MERGE (o1)-[r81:treatedBy]->(o2)
+SET r81.text = 'Để bệnh không tiến triển nặng hơn, người bệnh cần lưu ý một số điều quan trọng như:  Kiêng hoàn toàn chuyện sử dụng bia rượu hay đồ uống có cồn Quản lý cân nặng; giảm cân nếu đang thừa cân/ béo phì Cân nhắc việc dùng thuốc để tránh làm nhiễm độc gan do thuốc Tránh dùng thuốc chống viêm không steroid Kiểm soát điều trị đái tháo đường, rối loạn lipid máu Điều trị căn nguyên của bệnh gan Xây dựng chế độ ăn uống giàu rau xanh và trái cây; giảm lượng chất báo và các nguồn protein nạc Tiêm chủng đầy đủ để hạn chế nguy cơ tổn thương gan cấp tính do virus Tầm soát ung thư biểu mô tế bào gan'
+
+MERGE (o1:disease {id: 'bệnh_disease'})
+MERGE (o2:treatment {id: 'điều_trị_căn_nguyên_của_bệnh_gan_treatment'})
+MERGE (o1)-[r82:treatedBy]->(o2)
+SET r82.text = 'Để bệnh không tiến triển nặng hơn, người bệnh cần lưu ý một số điều quan trọng như:  Kiêng hoàn toàn chuyện sử dụng bia rượu hay đồ uống có cồn Quản lý cân nặng; giảm cân nếu đang thừa cân/ béo phì Cân nhắc việc dùng thuốc để tránh làm nhiễm độc gan do thuốc Tránh dùng thuốc chống viêm không steroid Kiểm soát điều trị đái tháo đường, rối loạn lipid máu Điều trị căn nguyên của bệnh gan Xây dựng chế độ ăn uống giàu rau xanh và trái cây; giảm lượng chất báo và các nguồn protein nạc Tiêm chủng đầy đủ để hạn chế nguy cơ tổn thương gan cấp tính do virus Tầm soát ung thư biểu mô tế bào gan'
+
+MERGE (o1:disease {id: 'bệnh_disease'})
+MERGE (o2:lifestyle {id: 'chế_độ_ăn_uống_giàu_rau_xanh_và_trái_cây;_giảm_lượng_chất_báo_và_các_nguồn_protein_nạc_lifestyle'})
+MERGE (o1)-[r83:treatedBy]->(o2)
+SET r83.text = 'Để bệnh không tiến triển nặng hơn, người bệnh cần lưu ý một số điều quan trọng như:  Kiêng hoàn toàn chuyện sử dụng bia rượu hay đồ uống có cồn Quản lý cân nặng; giảm cân nếu đang thừa cân/ béo phì Cân nhắc việc dùng thuốc để tránh làm nhiễm độc gan do thuốc Tránh dùng thuốc chống viêm không steroid Kiểm soát điều trị đái tháo đường, rối loạn lipid máu Điều trị căn nguyên của bệnh gan Xây dựng chế độ ăn uống giàu rau xanh và trái cây; giảm lượng chất báo và các nguồn protein nạc Tiêm chủng đầy đủ để hạn chế nguy cơ tổn thương gan cấp tính do virus Tầm soát ung thư biểu mô tế bào gan'
+
+MERGE (o1:disease {id: 'bệnh_disease'})
+MERGE (o2:treatment {id: 'tiêm_chủng_đầy_đủ_treatment'})
+MERGE (o1)-[r84:preventedBy]->(o2)
+SET r84.text = 'Để bệnh không tiến triển nặng hơn, người bệnh cần lưu ý một số điều quan trọng như:  Kiêng hoàn toàn chuyện sử dụng bia rượu hay đồ uống có cồn Quản lý cân nặng; giảm cân nếu đang thừa cân/ béo phì Cân nhắc việc dùng thuốc để tránh làm nhiễm độc gan do thuốc Tránh dùng thuốc chống viêm không steroid Kiểm soát điều trị đái tháo đường, rối loạn lipid máu Điều trị căn nguyên của bệnh gan Xây dựng chế độ ăn uống giàu rau xanh và trái cây; giảm lượng chất báo và các nguồn protein nạc Tiêm chủng đầy đủ để hạn chế nguy cơ tổn thương gan cấp tính do virus Tầm soát ung thư biểu mô tế bào gan'
+
+MERGE (o1:disease {id: 'bệnh_disease'})
+MERGE (o2:test {id: 'tầm_soát_ung_thư_biểu_mô_tế_bào_gan_test'})
+MERGE (o1)-[r85:diagnosedBy]->(o2)
+SET r85.text = 'Để bệnh không tiến triển nặng hơn, người bệnh cần lưu ý một số điều quan trọng như:  Kiêng hoàn toàn chuyện sử dụng bia rượu hay đồ uống có cồn Quản lý cân nặng; giảm cân nếu đang thừa cân/ béo phì Cân nhắc việc dùng thuốc để tránh làm nhiễm độc gan do thuốc Tránh dùng thuốc chống viêm không steroid Kiểm soát điều trị đái tháo đường, rối loạn lipid máu Điều trị căn nguyên của bệnh gan Xây dựng chế độ ăn uống giàu rau xanh và trái cây; giảm lượng chất báo và các nguồn protein nạc Tiêm chủng đầy đủ để hạn chế nguy cơ tổn thương gan cấp tính do virus Tầm soát ung thư biểu mô tế bào gan'
+
+MERGE (o1:food {id: 'rau_củ_quả_food'})
+MERGE (o2:disease {id: 'viêm_gan_disease'})
+MERGE (o1)-[r86:treatedBy]->(o2)
+SET r86.text = 'Rau củ quả là thành phần không nên bỏ qua trong chế độ ăn cho người bị viêm gan'
+
+MERGE (o1:disease {id: 'xơ_gan_còn_bù_disease'})
+MERGE (o2:disease {id: 'ung_thư_gan_disease'})
+MERGE (o1)-[r87:relatedTo]->(o2)
+SET r87.text = 'Là giai đoạn “đứng trước” nên xơ gan còn bù sẽ ít nguy hiểm hơn so với xơ gan mất bù; tuy nhiên cả 2 đều có nguy cơ trở thành ung thư gan.'
+
+MERGE (o1:disease {id: 'xơ_gan_mất_bù_disease'})
+MERGE (o2:disease {id: 'ung_thư_gan_disease'})
+MERGE (o1)-[r88:relatedTo]->(o2)
+SET r88.text = 'Là giai đoạn “đứng trước” nên xơ gan còn bù sẽ ít nguy hiểm hơn so với xơ gan mất bù; tuy nhiên cả 2 đều có nguy cơ trở thành ung thư gan.'
+
+MERGE (o1:disease {id: 'xơ_gan_còn_bù_disease'})
+MERGE (o2:symptom {id: 'không_có_triệu_chứng_symptom'})
+MERGE (o1)-[r89:isSymptomOf]->(o2)
+SET r89.text = 'Người bệnh thường không có triệu chứng và có thời gian sống thêm trung bình từ 12 năm trở lên.'
+
+MERGE (o1:disease {id: 'xơ_gan_mất_bù_disease'})
+MERGE (o2:symptom {id: 'biến_chứng_symptom'})
+MERGE (o1)-[r90:isSymptomOf]->(o2)
+SET r90.text = 'Trong khi đó xơ gan mất bù có nguy cơ biến chứng không nhỏ - một khi đã có ít nhất 1 biến chứng thì thời gian sống còn lại sẽ giảm mạnh xuống trung bình là 2- 5 năm.'
+
+MERGE (o1:disease {id: 'bệnh_nhân_disease'})
+MERGE (o2:treatment {id: 'điều_trị_treatment'})
+MERGE (o1)-[r91:treatedBy]->(o2)
+SET r91.text = 'Khi được điều trị bệnh nhân có thời sống kéo dài rất nhiều'
+
+MERGE (o1:treatment {id: 'trung_tâm_nội_soi_và_phẫu_thuật_nội_soi_tiêu_hóa_(bvđk_tâm_anh_tp.hcm)_và_khoa_tiêu_hóa_-_gan_mật_-_tụy_(bvđk_tâm_anh_hà_nội)_treatment'})
+MERGE (o2:disease {id: 'các_vấn_đề_về_gan_từ_nhẹ_đến_nặng_(viêm_gan_virus_mạn_tính__gan_nhiễm_mỡ__viêm_gan_cấp_tính__bệnh_gan_mạn_tính_xơ_gan__ung_thư_gan…)_disease'})
+MERGE (o1)-[r92:treatedBy]->(o2)
+SET r92.text = 'Trung tâm Nội soi và Phẫu thuật nội soi tiêu hóa (BVĐK Tâm Anh TP.HCM) và Khoa Tiêu hóa - Gan mật - Tụy (BVĐK Tâm Anh Hà Nội) là những trung tâm y tế chuyên khoa Tiêu hóa uy tín, cung cấp dịch vụ thăm khám và điều trị cao cấp, hiệu quả cho các bệnh nhân mắc các vấn đề về gan từ nhẹ đến nặng (Viêm gan virus mạn tính, gan nhiễm mỡ, viêm gan cấp tính, bệnh gan mạn tính xơ gan, ung thư gan…).'

@@ -1,0 +1,444 @@
+
+MERGE (o1:organ {id: 'túi_ngực_organ'})
+MERGE (o2:disease {id: 'vỡ_túi_ngực_disease'})
+MERGE (o1)-[r0:relatedTo]->(o2)
+SET r0.text = 'Túi ngực sẽ không đảm bảo tồn tại suốt đời, túi ngực vẫn có thể vỡ ra.'
+
+MERGE (o1:organ {id: 'túi_ngực_organ'})
+MERGE (o2:lifestyle {id: 'tuổi_thọ_lifestyle'})
+MERGE (o1)-[r1:relatedTo]->(o2)
+SET r1.text = 'Tuổi thọ trung bình của 1 túi ngực khoảng 10 năm.'
+
+MERGE (o1:disease {id: 'vỡ_túi_ngực_disease'})
+MERGE (o2:symptom {id: 'khó_phát_hiện_symptom'})
+MERGE (o1)-[r2:isSymptomOf]->(o2)
+SET r2.text = 'Nếu túi ngực vỡ âm thầm, người bệnh khó phát hiện.'
+
+MERGE (o1:disease {id: 'vỡ_túi_ngực_disease'})
+MERGE (o2:symptom {id: 'túi_ngực_bị_nứt__rách_và_gel_chảy_từ_từ__rất_chậm_và_ít_ra_ngoài__nằm_ở_khoang_bóc_tách__không_gây_chảy_máu_symptom'})
+MERGE (o1)-[r3:isSymptomOf]->(o2)
+SET r3.text = 'Vỡ túi ngực (Breast Implant Rupture) là tình trạng túi ngực bị nứt, rách và gel chảy từ từ, rất chậm và ít ra ngoài, nằm ở khoang bóc tách, không gây chảy máu.'
+
+MERGE (o1:disease {id: 'vỡ_túi_ngực_disease'})
+MERGE (o2:organ {id: 'túi_ngực_organ'})
+MERGE (o1)-[r4:relatedTo]->(o2)
+SET r4.text = 'Vỡ túi ngực (Breast Implant Rupture) là tình trạng túi ngực bị nứt, rách và gel chảy từ từ, rất chậm và ít ra ngoài, nằm ở khoang bóc tách, không gây chảy máu.'
+
+MERGE (o1:disease {id: 'vỡ_túi_ngực_disease'})
+MERGE (o2:food {id: 'silicon_food'})
+MERGE (o1)-[r5:relatedTo]->(o2)
+SET r5.text = 'Sau khi vỡ túi ngực, silicon có thể nằm trong bao (khi bị giới hạn bởi bao xơ xung quanh) hoặc ngoài bao (khi silicon tự do thoát ra ngoài).'
+
+MERGE (o1:disease {id: 'vỡ_trong_bao_disease'})
+MERGE (o2:symptom {id: 'vỏ_túi_ngực_bị_vỡ_symptom'})
+MERGE (o1)-[r6:isSymptomOf]->(o2)
+SET r6.text = 'Vỡ trong bao xảy ra khi vỏ túi ngực bị vỡ nhưng bao xơ vẫn còn nguyên vẹn.'
+
+MERGE (o1:disease {id: 'vỡ_trong_bao_disease'})
+MERGE (o2:organ {id: 'bao_xơ_organ'})
+MERGE (o1)-[r7:relatedTo]->(o2)
+SET r7.text = 'Vỡ trong bao xảy ra khi vỏ túi ngực bị vỡ nhưng bao xơ vẫn còn nguyên vẹn.'
+
+MERGE (o1:food {id: 'silicon_food'})
+MERGE (o2:symptom {id: 'thoát_ra_ngoài_symptom'})
+MERGE (o1)-[r8:relatedTo]->(o2)
+SET r8.text = 'Silicon không thoát ra ngoài.'
+
+MERGE (o1:disease {id: 'vỡ_túi_ngực_disease'})
+MERGE (o2:test {id: 'thăm_khám_lâm_sàng_hoặc_chụp_nhũ_ảnh_test'})
+MERGE (o1)-[r9:diagnosedBy]->(o2)
+SET r9.text = 'Điều này gây khó khăn cho việc phát hiện túi vỡ khi thăm khám lâm sàng hoặc chụp nhũ ảnh.'
+
+MERGE (o1:disease {id: 'vỡ_ngoài_bao_disease'})
+MERGE (o2:symptom {id: 'thay_đổi_đường_viền_của_vú_symptom'})
+MERGE (o1)-[r10:isSymptomOf]->(o2)
+SET r10.text = 'Vỡ ngoài bao có thể thay đổi đường viền của vú.'
+
+MERGE (o1:disease {id: 'vỡ_ngoài_bao_disease'})
+MERGE (o2:organ {id: 'vú_organ'})
+MERGE (o1)-[r11:affects]->(o2)
+SET r11.text = 'Vỡ ngoài bao có thể thay đổi đường viền của vú.'
+
+MERGE (o1:disease {id: 'vỡ_ngoài_bao_disease'})
+MERGE (o2:test {id: 'khám_lâm_sàng_hoặc_chụp_nhũ_ảnh_test'})
+MERGE (o1)-[r12:diagnosedBy]->(o2)
+SET r12.text = 'Tình trạng này có thể phát hiện khi khám lâm sàng hoặc chụp nhũ ảnh.'
+
+MERGE (o1:treatment {id: 'túi_nước_muối_và_gel_silicon_treatment'})
+MERGE (o2:lifestyle {id: 'tồn_tại_trong_nhiều_năm_lifestyle'})
+MERGE (o1)-[r13:relatedTo]->(o2)
+SET r13.text = 'Túi nước muối và gel silicon được thiết kế để tồn tại trong nhiều năm.'
+
+MERGE (o1:treatment {id: 'túi_nước_muối_và_gel_silicon_treatment'})
+MERGE (o2:lifestyle {id: 'tồn_tại_mãi_mãi_lifestyle'})
+MERGE (o1)-[r14:relatedTo]->(o2)
+SET r14.text = 'Tuy nhiên, chúng sẽ không tồn tại mãi mãi.'
+
+MERGE (o1:organ {id: 'vỏ_silicon_organ'})
+MERGE (o2:disease {id: 'rò_rỉ_nhỏ_hoặc_túi_ngực_bị_vỡ_disease'})
+MERGE (o1)-[r15:relatedTo]->(o2)
+SET r15.text = 'Vỏ silicon giữ dung dịch nước muối và gel silicon cuối cùng sẽ bị mòn, dẫn đến rò rỉ nhỏ hoặc túi ngực bị vỡ.'
+
+MERGE (o1:organ {id: 'vỏ_silicon_organ'})
+MERGE (o2:food {id: 'dung_dịch_nước_muối_và_gel_silicon_food'})
+MERGE (o1)-[r16:relatedTo]->(o2)
+SET r16.text = 'Vỏ silicon giữ dung dịch nước muối và gel silicon cuối cùng sẽ bị mòn, dẫn đến rò rỉ nhỏ hoặc túi ngực bị vỡ.'
+
+MERGE (o1:organ {id: 'túi_ngực_organ'})
+MERGE (o2:lifestyle {id: 'tuổi_thọ_lifestyle'})
+MERGE (o1)-[r17:relatedTo]->(o2)
+SET r17.text = 'Các nhà sản xuất túi ngực cho rằng trung bình sản phẩm của họ có tuổi thọ ít nhất là 10 năm.'
+
+MERGE (o1:lifestyle {id: 'chuyển_động_hàng_ngày_lifestyle'})
+MERGE (o2:organ {id: 'vỏ_túi_ngực_organ'})
+MERGE (o1)-[r18:affects]->(o2)
+SET r18.text = 'Chuyển động hàng ngày cuối cùng có thể dẫn đến hao mòn bình thường của vỏ túi ngực.'
+
+MERGE (o1:symptom {id: 'hao_mòn_bình_thường_symptom'})
+MERGE (o2:organ {id: 'vỏ_túi_ngực_organ'})
+MERGE (o1)-[r19:isSymptomOf]->(o2)
+SET r19.text = 'Chuyển động hàng ngày cuối cùng có thể dẫn đến hao mòn bình thường của vỏ túi ngực.'
+
+MERGE (o1:cause {id: 'co_thắt_bao_xơ_cause'})
+MERGE (o2:symptom {id: 'hư_hỏng_vỏ_túi_ngực_symptom'})
+MERGE (o1)-[r20:causes]->(o2)
+SET r20.text = 'Tuy nhiên, có những yếu tố có thể khiến vỏ túi ngực bị hư hỏng nhanh hơn: Co thắt bao xơ: mô sợi hình thành xung quanh túi ngực co lại và ép túi, có khả năng gây vỡ.'
+
+MERGE (o1:organ {id: 'mô_sợi_organ'})
+MERGE (o2:organ {id: 'túi_ngực_organ'})
+MERGE (o1)-[r21:locatedIn]->(o2)
+SET r21.text = 'Tuy nhiên, có những yếu tố có thể khiến vỏ túi ngực bị hư hỏng nhanh hơn: Co thắt bao xơ: mô sợi hình thành xung quanh túi ngực co lại và ép túi, có khả năng gây vỡ.'
+
+MERGE (o1:cause {id: 'co_thắt_bao_xơ_cause'})
+MERGE (o2:symptom {id: 'vỡ_túi_ngực_symptom'})
+MERGE (o1)-[r22:causes]->(o2)
+SET r22.text = 'Tuy nhiên, có những yếu tố có thể khiến vỏ túi ngực bị hư hỏng nhanh hơn: Co thắt bao xơ: mô sợi hình thành xung quanh túi ngực co lại và ép túi, có khả năng gây vỡ.'
+
+MERGE (o1:cause {id: 'trám_trên_hoặc_dưới_implant_cause'})
+MERGE (o2:symptom {id: 'hư_hỏng_vỏ_túi_ngực_symptom'})
+MERGE (o1)-[r23:causes]->(o2)
+SET r23.text = 'Trám trên hoặc dưới implant.'
+
+MERGE (o1:cause {id: 'chấn_thương_vào_ngực_cause'})
+MERGE (o2:symptom {id: 'hư_hỏng_vỏ_túi_ngực_symptom'})
+MERGE (o1)-[r24:causes]->(o2)
+SET r24.text = 'Chấn thương vào ngực.'
+
+MERGE (o1:cause {id: 'các_chấn_thương_do_phẫu_thuật_cause'})
+MERGE (o2:symptom {id: 'hư_hỏng_vỏ_túi_ngực_symptom'})
+MERGE (o1)-[r25:causes]->(o2)
+SET r25.text = 'Các chấn thương do phẫu thuật.'
+
+MERGE (o1:symptom {id: 'đau__nhức_hoặc_sưng_symptom'})
+MERGE (o2:symptom {id: 'túi_ngực_vỡ_symptom'})
+MERGE (o1)-[r26:isSymptomOf]->(o2)
+SET r26.text = 'Người bệnh có thể nhận biết túi ngực vỡ nhờ những dấu hiệu sau đây trên tuyến vú, thường là một bên: Đau, nhức hoặc sưng.'
+
+MERGE (o1:symptom {id: 'thay_đổi_về_kích_thước_hoặc_hình_dạng_symptom'})
+MERGE (o2:symptom {id: 'túi_ngực_vỡ_symptom'})
+MERGE (o1)-[r27:isSymptomOf]->(o2)
+SET r27.text = 'Người bệnh có thể nhận biết túi ngực vỡ nhờ những dấu hiệu sau đây trên tuyến vú, thường là một bên: Thay đổi về kích thước hoặc hình dạng.'
+
+MERGE (o1:symptom {id: 'cục_u_trong_vú_symptom'})
+MERGE (o2:symptom {id: 'túi_ngực_vỡ_symptom'})
+MERGE (o1)-[r28:isSymptomOf]->(o2)
+SET r28.text = 'Người bệnh có thể nhận biết túi ngực vỡ nhờ những dấu hiệu sau đây trên tuyến vú, thường là một bên: Cục u trong vú.'
+
+MERGE (o1:symptom {id: 'có_chỗ_vú_bị_cứng_lên_symptom'})
+MERGE (o2:symptom {id: 'túi_ngực_vỡ_symptom'})
+MERGE (o1)-[r29:isSymptomOf]->(o2)
+SET r29.text = 'Người bệnh có thể nhận biết túi ngực vỡ nhờ những dấu hiệu sau đây trên tuyến vú, thường là một bên: Có chỗ vú bị cứng lên.'
+
+MERGE (o1:symptom {id: 'vỡ_túi_ngực_symptom'})
+MERGE (o2:organ {id: 'túi_ngực_organ'})
+MERGE (o1)-[r30:relatedTo]->(o2)
+SET r30.text = 'Túi ngực có thể vỡ bất cứ lúc nào.'
+
+MERGE (o1:symptom {id: 'vỡ_thầm_lặng_symptom'})
+MERGE (o2:symptom {id: 'túi_ngực_vỡ_symptom'})
+MERGE (o1)-[r31:isSymptomOf]->(o2)
+SET r31.text = 'Vỡ túi ngực mà không gây bất kỳ triệu chứng nào được gọi là “vỡ thầm lặng”.'
+
+MERGE (o1:symptom {id: 'vỡ_thầm_lặng_symptom'})
+MERGE (o2:organ {id: 'hình_dáng_bầu_ngực_organ'})
+MERGE (o1)-[r32:affects]->(o2)
+SET r32.text = 'Vỡ túi ngực thầm lặng không làm thay đổi hình dáng bầu ngực nên khó phát hiện vết nứt.'
+
+MERGE (o1:test {id: 'chụp_cộng_hưởng_từ_(mri)_test'})
+MERGE (o2:symptom {id: 'vỡ_túi_ngực_thầm_lặng_symptom'})
+MERGE (o1)-[r33:diagnosedBy]->(o2)
+SET r33.text = 'Chụp cộng hưởng từ (MRI) là phương pháp hiệu quả giúp phát hiện tình trạng này.'
+
+MERGE (o1:test {id: 'chụp_mri_test'})
+MERGE (o2:symptom {id: 'vỡ_túi_ngực_symptom'})
+MERGE (o1)-[r34:diagnosedBy]->(o2)
+SET r34.text = 'Chụp MRI giúp nhận biết vỡ túi ngực.'
+
+MERGE (o1:symptom {id: 'túi_ngực_silicon_bị_vỡ_symptom'})
+MERGE (o2:symptom {id: 'đau_vú_symptom'})
+MERGE (o1)-[r35:causes]->(o2)
+SET r35.text = 'Túi ngực silicon bị vỡ có thể gây đau vú hoặc thay đổi đường viền hoặc hình dạng của vú.'
+
+MERGE (o1:symptom {id: 'túi_ngực_silicon_bị_vỡ_symptom'})
+MERGE (o2:symptom {id: 'thay_đổi_đường_viền_hoặc_hình_dạng_của_vú_symptom'})
+MERGE (o1)-[r36:causes]->(o2)
+SET r36.text = 'Túi ngực silicon bị vỡ có thể gây đau vú hoặc thay đổi đường viền hoặc hình dạng của vú.'
+
+MERGE (o1:symptom {id: 'túi_ngực_silicon_bị_vỡ_symptom'})
+MERGE (o2:disease {id: 'ung_thư_vú_disease'})
+MERGE (o1)-[r37:notCauses]->(o2)
+SET r37.text = 'Tuy nhiên, túi ngực silicon bị vỡ không là nguyên nhân gây ung thư vú và cũng không là nguyên nhân gây ra các vấn đề về sinh sản hoặc bệnh mô liên kết như viêm khớp dạng thấp.'
+
+MERGE (o1:symptom {id: 'túi_ngực_silicon_bị_vỡ_symptom'})
+MERGE (o2:symptom {id: 'các_vấn_đề_về_sinh_sản_symptom'})
+MERGE (o1)-[r38:notCauses]->(o2)
+SET r38.text = 'Tuy nhiên, túi ngực silicon bị vỡ không là nguyên nhân gây ung thư vú và cũng không là nguyên nhân gây ra các vấn đề về sinh sản hoặc bệnh mô liên kết như viêm khớp dạng thấp.'
+
+MERGE (o1:symptom {id: 'túi_ngực_silicon_bị_vỡ_symptom'})
+MERGE (o2:disease {id: 'viêm_khớp_dạng_thấp_disease'})
+MERGE (o1)-[r39:notCauses]->(o2)
+SET r39.text = 'Tuy nhiên, túi ngực silicon bị vỡ không là nguyên nhân gây ung thư vú và cũng không là nguyên nhân gây ra các vấn đề về sinh sản hoặc bệnh mô liên kết như viêm khớp dạng thấp.'
+
+MERGE (o1:symptom {id: 'túi_silicon_bị_vỡ_symptom'})
+MERGE (o2:organ {id: 'mô_vú_organ'})
+MERGE (o1)-[r40:affects]->(o2)
+SET r40.text = 'Khi túi silicon bị vỡ, thường là âm thầm và có thể không được chú ý vì silicon có xu hướng bị mắc kẹt trong các mô vú xung quanh.'
+
+MERGE (o1:symptom {id: 'vỡ_túi_dưới_vỏ_bao_symptom'})
+MERGE (o2:symptom {id: 'túi_silicon_bị_vỡ_symptom'})
+MERGE (o1)-[r41:isSymptomOf]->(o2)
+SET r41.text = 'Điều này được gọi là vỡ túi dưới vỏ bao hay vỡ âm thầm không triệu chứng.'
+
+MERGE (o1:symptom {id: 'vỡ_âm_thầm_không_triệu_chứng_symptom'})
+MERGE (o2:symptom {id: 'túi_silicon_bị_vỡ_symptom'})
+MERGE (o1)-[r42:isSymptomOf]->(o2)
+SET r42.text = 'Điều này được gọi là vỡ túi dưới vỏ bao hay vỡ âm thầm không triệu chứng.'
+
+MERGE (o1:symptom {id: 'kích_ứng_và_sưng_symptom'})
+MERGE (o2:organ {id: 'mô_vú_organ'})
+MERGE (o1)-[r43:isSymptomOf]->(o2)
+SET r43.text = 'Tuy nhiên, mô vú xung quanh có thể bị kích ứng và sưng lên.'
+
+MERGE (o1:test {id: 'mri_test'})
+MERGE (o2:symptom {id: 'vỡ_thầm_lặng_symptom'})
+MERGE (o1)-[r44:diagnosedBy]->(o2)
+SET r44.text = 'Cơ quan quản lý Thực phẩm và Dược phẩm Hoa Kỳ (FDA) khuyến cáo:
+3 năm sau ca phẫu thuật đặt túi ngực đầu tiên và 2 năm/lần sau đó: người được đặt túi ngực bằng silicon nên kiểm tra bằng phương pháp chụp cộng hưởng từ (MRI) để kiểm tra xem ngực có dấu hiệu “vỡ thầm lặng” hay không.'
+
+MERGE (o1:symptom {id: 'vỡ_thầm_lặng_symptom'})
+MERGE (o2:organ {id: 'túi_ngực_bằng_silicon_organ'})
+MERGE (o1)-[r45:relatedTo]->(o2)
+SET r45.text = 'Cơ quan quản lý Thực phẩm và Dược phẩm Hoa Kỳ (FDA) khuyến cáo:
+3 năm sau ca phẫu thuật đặt túi ngực đầu tiên và 2 năm/lần sau đó: người được đặt túi ngực bằng silicon nên kiểm tra bằng phương pháp chụp cộng hưởng từ (MRI) để kiểm tra xem ngực có dấu hiệu “vỡ thầm lặng” hay không.'
+
+MERGE (o1:symptom {id: 'túi_ngực_thay_đổi_kích_thước_hoặc_hình_dạng_symptom'})
+MERGE (o2:symptom {id: 'vỡ_túi_ngực_symptom'})
+MERGE (o1)-[r46:isSymptomOf]->(o2)
+SET r46.text = 'Túi ngực thay đổi kích thước hoặc hình dạng:
+2 bên ngực không đều về kích thước, hình dạng bầu ngực.'
+
+MERGE (o1:symptom {id: '2_bên_ngực_không_đều_về_kích_thước__hình_dạng_bầu_ngực_symptom'})
+MERGE (o2:symptom {id: 'vỡ_túi_ngực_symptom'})
+MERGE (o1)-[r47:isSymptomOf]->(o2)
+SET r47.text = 'Túi ngực thay đổi kích thước hoặc hình dạng:
+2 bên ngực không đều về kích thước, hình dạng bầu ngực.'
+
+MERGE (o1:organ {id: 'túi_ngực_bằng_silicon_organ'})
+MERGE (o2:symptom {id: 'vỡ_túi_ngực_symptom'})
+MERGE (o1)-[r48:relatedTo]->(o2)
+SET r48.text = 'Nếu bạn đặt túi ngực bằng silicon và nghi ngờ rằng túi ngực có thể đã bị vỡ, hãy nói chuyện với bác sĩ phẫu thuật thẩm mỹ của bạn. Kiểm tra hình ảnh, chẳng hạn như chụp cộng hưởng từ vú hoặc siêu âm vú có thể cho biết túi ngực có bị vỡ hay không.'
+
+MERGE (o1:symptom {id: 'vỡ_túi_ngực_symptom'})
+MERGE (o2:test {id: 'chụp_cộng_hưởng_từ_vú_test'})
+MERGE (o1)-[r49:diagnosedBy]->(o2)
+SET r49.text = 'Nếu bạn đặt túi ngực bằng silicon và nghi ngờ rằng túi ngực có thể đã bị vỡ, hãy nói chuyện với bác sĩ phẫu thuật thẩm mỹ của bạn. Kiểm tra hình ảnh, chẳng hạn như chụp cộng hưởng từ vú hoặc siêu âm vú có thể cho biết túi ngực có bị vỡ hay không.'
+
+MERGE (o1:symptom {id: 'vỡ_túi_ngực_symptom'})
+MERGE (o2:test {id: 'siêu_âm_vú_test'})
+MERGE (o1)-[r50:diagnosedBy]->(o2)
+SET r50.text = 'Nếu bạn đặt túi ngực bằng silicon và nghi ngờ rằng túi ngực có thể đã bị vỡ, hãy nói chuyện với bác sĩ phẫu thuật thẩm mỹ của bạn. Kiểm tra hình ảnh, chẳng hạn như chụp cộng hưởng từ vú hoặc siêu âm vú có thể cho biết túi ngực có bị vỡ hay không.'
+
+MERGE (o1:test {id: 'phim_chụp_nhũ_ảnh_test'})
+MERGE (o2:symptom {id: 'vết_nứt_của_túi_ngực_symptom'})
+MERGE (o1)-[r51:diagnosedBy]->(o2)
+SET r51.text = 'Rất khó phát hiện các vết nứt của túi ngực (nhất là các vết nứt của túi ngực silicon) trên phim chụp nhũ ảnh. Việc phát hiện các vết nứt của túi ngực silicon trong bao xơ hầu như không thể nhìn thấy bằng phương pháp này.'
+
+MERGE (o1:symptom {id: 'vết_nứt_của_túi_ngực_silicon_symptom'})
+MERGE (o2:organ {id: 'túi_ngực_silicon_organ'})
+MERGE (o1)-[r52:relatedTo]->(o2)
+SET r52.text = 'Rất khó phát hiện các vết nứt của túi ngực (nhất là các vết nứt của túi ngực silicon) trên phim chụp nhũ ảnh. Việc phát hiện các vết nứt của túi ngực silicon trong bao xơ hầu như không thể nhìn thấy bằng phương pháp này.'
+
+MERGE (o1:test {id: 'siêu_âm_test'})
+MERGE (o2:symptom {id: 'vỡ_ngoài_bao_symptom'})
+MERGE (o1)-[r53:diagnosedBy]->(o2)
+SET r53.text = 'Siêu âm có thể cho thấy dấu hiệu vỡ ngoài bao do silicon thoát ra và vào trong mô tuyến vú. Siêu âm có độ nhạy và độ đặc hiệu kém.'
+
+MERGE (o1:symptom {id: 'vỡ_ngoài_bao_symptom'})
+MERGE (o2:organ {id: 'silicon_organ'})
+MERGE (o1)-[r54:relatedTo]->(o2)
+SET r54.text = 'Siêu âm có thể cho thấy dấu hiệu vỡ ngoài bao do silicon thoát ra và vào trong mô tuyến vú. Siêu âm có độ nhạy và độ đặc hiệu kém.'
+
+MERGE (o1:symptom {id: 'vỡ_ngoài_bao_symptom'})
+MERGE (o2:organ {id: 'mô_tuyến_vú_organ'})
+MERGE (o1)-[r55:relatedTo]->(o2)
+SET r55.text = 'Siêu âm có thể cho thấy dấu hiệu vỡ ngoài bao do silicon thoát ra và vào trong mô tuyến vú. Siêu âm có độ nhạy và độ đặc hiệu kém.'
+
+MERGE (o1:test {id: 'mri_vú_test'})
+MERGE (o2:symptom {id: 'vỡ_túi_ngực_symptom'})
+MERGE (o1)-[r56:diagnosedBy]->(o2)
+SET r56.text = 'MRI vú (chụp cộng hưởng từ) là phương pháp có độ nhạy cao nhất trong việc phát hiện vỡ túi ngực. Sử dụng MRI để xem xét vỡ túi ngực có thể không cần tiêm thuốc cản từ. Với việc sử dụng hình ảnh đa mặt phẳng, MRI cũng có thể phân biệt giữa các nếp gấp hướng tâm hoặc các vết nứt.'
+
+MERGE (o1:symptom {id: 'vỡ_túi_ngực_symptom'})
+MERGE (o2:organ {id: 'túi_ngực_organ'})
+MERGE (o1)-[r57:relatedTo]->(o2)
+SET r57.text = 'MRI vú (chụp cộng hưởng từ) là phương pháp có độ nhạy cao nhất trong việc phát hiện vỡ túi ngực. Sử dụng MRI để xem xét vỡ túi ngực có thể không cần tiêm thuốc cản từ. Với việc sử dụng hình ảnh đa mặt phẳng, MRI cũng có thể phân biệt giữa các nếp gấp hướng tâm hoặc các vết nứt.'
+
+MERGE (o1:symptom {id: 'vỡ_túi_ngực_symptom'})
+MERGE (o2:symptom {id: 'nếp_gấp_hướng_tâm_symptom'})
+MERGE (o1)-[r58:relatedTo]->(o2)
+SET r58.text = 'MRI vú (chụp cộng hưởng từ) là phương pháp có độ nhạy cao nhất trong việc phát hiện vỡ túi ngực. Sử dụng MRI để xem xét vỡ túi ngực có thể không cần tiêm thuốc cản từ. Với việc sử dụng hình ảnh đa mặt phẳng, MRI cũng có thể phân biệt giữa các nếp gấp hướng tâm hoặc các vết nứt.'
+
+MERGE (o1:symptom {id: 'vỡ_túi_ngực_symptom'})
+MERGE (o2:symptom {id: 'vết_nứt_symptom'})
+MERGE (o1)-[r59:relatedTo]->(o2)
+SET r59.text = 'MRI vú (chụp cộng hưởng từ) là phương pháp có độ nhạy cao nhất trong việc phát hiện vỡ túi ngực. Sử dụng MRI để xem xét vỡ túi ngực có thể không cần tiêm thuốc cản từ. Với việc sử dụng hình ảnh đa mặt phẳng, MRI cũng có thể phân biệt giữa các nếp gấp hướng tâm hoặc các vết nứt.'
+
+MERGE (o1:test {id: 'mri_không_thuốc_cản_từ_test'})
+MERGE (o2:organ {id: 'túi_silicon_organ'})
+MERGE (o1)-[r60:diagnosedBy]->(o2)
+SET r60.text = 'Ngoài ra, MRI không thuốc cản từ cũng có thể phân biệt giữa túi silicon và túi nước muối.'
+
+MERGE (o1:test {id: 'mri_không_thuốc_cản_từ_test'})
+MERGE (o2:organ {id: 'túi_nước_muối_organ'})
+MERGE (o1)-[r61:diagnosedBy]->(o2)
+SET r61.text = 'Ngoài ra, MRI không thuốc cản từ cũng có thể phân biệt giữa túi silicon và túi nước muối.'
+
+MERGE (o1:organ {id: 'túi_ngực_organ'})
+MERGE (o2:symptom {id: 'vỡ_túi_ngực_symptom'})
+MERGE (o1)-[r62:relatedTo]->(o2)
+SET r62.text = 'Túi ngực không tồn tại mãi mãi.'
+
+MERGE (o1:symptom {id: 'vỡ_âm_thầm_symptom'})
+MERGE (o2:organ {id: 'túi_ngực_organ'})
+MERGE (o1)-[r63:relatedTo]->(o2)
+SET r63.text = 'Nếu bạn bị vỡ âm thầm - đó là túi ngực có một vết nứt không gây ra dấu hiệu lâm sàng hoặc triệu chứng gì cả - thì hãy hỏi ý kiến bác sĩ phẫu thuật thẩm mỹ của bạn sẽ giải thích các lựa chọn điều trị khả thi.'
+
+MERGE (o1:symptom {id: 'vỡ_âm_thầm_symptom'})
+MERGE (o2:symptom {id: 'vết_nứt_symptom'})
+MERGE (o1)-[r64:relatedTo]->(o2)
+SET r64.text = 'Nếu bạn bị vỡ âm thầm - đó là túi ngực có một vết nứt không gây ra dấu hiệu lâm sàng hoặc triệu chứng gì cả - thì hãy hỏi ý kiến bác sĩ phẫu thuật thẩm mỹ của bạn sẽ giải thích các lựa chọn điều trị khả thi.'
+
+MERGE (o1:symptom {id: 'vỡ_âm_thầm_symptom'})
+MERGE (o2:treatment {id: 'bác_sĩ_phẫu_thuật_thẩm_mỹ_treatment'})
+MERGE (o1)-[r65:treatedBy]->(o2)
+SET r65.text = 'Nếu bạn bị vỡ âm thầm - đó là túi ngực có một vết nứt không gây ra dấu hiệu lâm sàng hoặc triệu chứng gì cả - thì hãy hỏi ý kiến bác sĩ phẫu thuật thẩm mỹ của bạn sẽ giải thích các lựa chọn điều trị khả thi.'
+
+MERGE (o1:treatment {id: 'theo_dõi_không_can_thiệp_treatment'})
+MERGE (o2:symptom {id: 'vỡ_túi_ngực_symptom'})
+MERGE (o1)-[r66:treatedBy]->(o2)
+SET r66.text = 'Một số phụ nữ chọn phương pháp theo dõi không can thiệp gì (hay gọi là biện pháp chờ xem), trong khi những người khác thích loại bỏ hoặc thay thế túi ngực bị vỡ.'
+
+MERGE (o1:treatment {id: 'loại_bỏ_túi_ngực_treatment'})
+MERGE (o2:symptom {id: 'vỡ_túi_ngực_symptom'})
+MERGE (o1)-[r67:treatedBy]->(o2)
+SET r67.text = 'Một số phụ nữ chọn phương pháp theo dõi không can thiệp gì (hay gọi là biện pháp chờ xem), trong khi những người khác thích loại bỏ hoặc thay thế túi ngực bị vỡ.'
+
+MERGE (o1:treatment {id: 'thay_thế_túi_ngực_treatment'})
+MERGE (o2:symptom {id: 'vỡ_túi_ngực_symptom'})
+MERGE (o1)-[r68:treatedBy]->(o2)
+SET r68.text = 'Một số phụ nữ chọn phương pháp theo dõi không can thiệp gì (hay gọi là biện pháp chờ xem), trong khi những người khác thích loại bỏ hoặc thay thế túi ngực bị vỡ.'
+
+MERGE (o1:treatment {id: 'bác_sĩ_phẫu_thuật_treatment'})
+MERGE (o2:symptom {id: 'vỡ_túi_ngực_symptom'})
+MERGE (o1)-[r69:treatedBy]->(o2)
+SET r69.text = 'Yêu cầu bác sĩ phẫu thuật của bạn giúp bạn cân nhắc những ưu và nhược điểm của từng phương pháp trên chính triệu chứng hiện tại của bạn.'
+
+MERGE (o1:symptom {id: 'vỡ_túi_silicon_symptom'})
+MERGE (o2:treatment {id: 'phẫu_thuật_lấy_bỏ_túi_ngực_treatment'})
+MERGE (o1)-[r70:treatedBy]->(o2)
+SET r70.text = 'Vỡ túi silicon gây ra các dấu hiệu hoặc triệu chứng, bác sĩ phẫu thuật có thể sẽ đề nghị phẫu thuật lấy bỏ túi ngực.'
+
+MERGE (o1:symptom {id: 'vỡ_túi_silicon_symptom'})
+MERGE (o2:organ {id: 'túi_ngực_organ'})
+MERGE (o1)-[r71:relatedTo]->(o2)
+SET r71.text = 'Vỡ túi silicon gây ra các dấu hiệu hoặc triệu chứng, bác sĩ phẫu thuật có thể sẽ đề nghị phẫu thuật lấy bỏ túi ngực.'
+
+MERGE (o1:treatment {id: 'đặt_túi_ngực_mới_treatment'})
+MERGE (o2:symptom {id: 'vỡ_túi_ngực_symptom'})
+MERGE (o1)-[r72:treatedBy]->(o2)
+SET r72.text = 'Nếu bạn muốn, đặt túi ngực mới ngay thì thông thường có thể được thể phẫu thuật cùng một lúc.'
+
+MERGE (o1:treatment {id: 'nâng_ngực_tránh_xệ_treatment'})
+MERGE (o2:symptom {id: 'vỡ_túi_ngực_symptom'})
+MERGE (o1)-[r73:treatedBy]->(o2)
+SET r73.text = 'Nếu bạn không còn muốn đặt ngay túi ngực mới thì bạn có thể cùng bác sĩ cân nhắc việc nâng ngực tránh xệ hoặc phẫu thuật chỉnh sửa khác, ngực cùng bên hoặc đối bên.'
+
+MERGE (o1:organ {id: 'túi_ngực_organ'})
+MERGE (o2:lifestyle {id: 'tồn_tại_suốt_đời_lifestyle'})
+MERGE (o1)-[r74:relatedTo]->(o2)
+SET r74.text = 'Dù sao bạn hãy nhớ rằng túi ngực không được đảm bảo sẽ tồn tại suốt đời.'
+
+MERGE (o1:test {id: 'khám_tầm_soát_định_kỳ_hàng_năm_test'})
+MERGE (o2:organ {id: 'túi_ngực_organ'})
+MERGE (o1)-[r75:diagnosedBy]->(o2)
+SET r75.text = 'Bạn nên được tiếp tục khám tầm soát định kỳ hàng năm bằng khám vú lâm sàng hàng, kết hợp siêu âm vú và nhũ ảnh trong độ tuổi cho phép (từ 40 tuổi trở lên)'
+
+MERGE (o1:test {id: 'khám_vú_lâm_sàng_hàng_test'})
+MERGE (o2:organ {id: 'túi_ngực_organ'})
+MERGE (o1)-[r76:diagnosedBy]->(o2)
+SET r76.text = 'Bạn nên được tiếp tục khám tầm soát định kỳ hàng năm bằng khám vú lâm sàng hàng, kết hợp siêu âm vú và nhũ ảnh trong độ tuổi cho phép (từ 40 tuổi trở lên)'
+
+MERGE (o1:test {id: 'siêu_âm_vú_test'})
+MERGE (o2:organ {id: 'túi_ngực_organ'})
+MERGE (o1)-[r77:diagnosedBy]->(o2)
+SET r77.text = 'Bạn nên được tiếp tục khám tầm soát định kỳ hàng năm bằng khám vú lâm sàng hàng, kết hợp siêu âm vú và nhũ ảnh trong độ tuổi cho phép (từ 40 tuổi trở lên)'
+
+MERGE (o1:test {id: 'nhũ_ảnh_test'})
+MERGE (o2:organ {id: 'túi_ngực_organ'})
+MERGE (o1)-[r78:diagnosedBy]->(o2)
+SET r78.text = 'Bạn nên được tiếp tục khám tầm soát định kỳ hàng năm bằng khám vú lâm sàng hàng, kết hợp siêu âm vú và nhũ ảnh trong độ tuổi cho phép (từ 40 tuổi trở lên)'
+
+MERGE (o1:symptom {id: 'thay_đổi_mới_symptom'})
+MERGE (o2:organ {id: 'túi_ngực_organ'})
+MERGE (o1)-[r79:isSymptomOf]->(o2)
+SET r79.text = 'Nếu có những thay đổi mới nào khác thì bạn hãy gặp bác sĩ phẫu thuật thẩm mỹ để theo dõi và xem xét các lựa chọn điều trị.'
+
+MERGE (o1:treatment {id: 'bác_sĩ_phẫu_thuật_thẩm_mỹ_treatment'})
+MERGE (o2:organ {id: 'túi_ngực_organ'})
+MERGE (o1)-[r80:treatedBy]->(o2)
+SET r80.text = 'Nếu có những thay đổi mới nào khác thì bạn hãy gặp bác sĩ phẫu thuật thẩm mỹ để theo dõi và xem xét các lựa chọn điều trị.'
+
+MERGE (o1:treatment {id: 'lựa_chọn_điều_trị_treatment'})
+MERGE (o2:organ {id: 'túi_ngực_organ'})
+MERGE (o1)-[r81:treatedBy]->(o2)
+SET r81.text = 'Nếu có những thay đổi mới nào khác thì bạn hãy gặp bác sĩ phẫu thuật thẩm mỹ để theo dõi và xem xét các lựa chọn điều trị.'
+
+MERGE (o1:treatment {id: 'bác_sĩ_khoa_ngoại_vú_treatment'})
+MERGE (o2:organ {id: 'túi_ngực_organ'})
+MERGE (o1)-[r82:treatedBy]->(o2)
+SET r82.text = 'Bác sĩ khoa Ngoại Vú, BVĐK Tâm Anh TP.HCM đang phẫu thuật.'
+
+MERGE (o1:treatment {id: 'bvđk_tâm_anh_tp.hcm_treatment'})
+MERGE (o2:organ {id: 'túi_ngực_organ'})
+MERGE (o1)-[r83:treatedBy]->(o2)
+SET r83.text = 'Bác sĩ khoa Ngoại Vú, BVĐK Tâm Anh TP.HCM đang phẫu thuật.'
+
+MERGE (o1:lifestyle {id: 'phục_hồi_lifestyle'})
+MERGE (o2:organ {id: 'túi_ngực_organ'})
+MERGE (o1)-[r84:relatedTo]->(o2)
+SET r84.text = 'Dành thời gian để phục hồi và tuân theo hướng dẫn của bác sĩ!'
+
+MERGE (o1:treatment {id: 'hướng_dẫn_của_bác_sĩ_treatment'})
+MERGE (o2:organ {id: 'túi_ngực_organ'})
+MERGE (o1)-[r85:treatedBy]->(o2)
+SET r85.text = 'Dành thời gian để phục hồi và tuân theo hướng dẫn của bác sĩ!'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_đặt_túi_ngực_treatment'})
+MERGE (o2:organ {id: 'túi_ngực_organ'})
+MERGE (o1)-[r86:treatedBy]->(o2)
+SET r86.text = 'Sau phẫu thuật đặt túi ngực, người bệnh cần tuân thủ các biện pháp sau để đảm bảo vết thương mau lành và duy trì bầu ngực như mong muốn:'
+
+MERGE (o1:symptom {id: 'vết_thương_mau_lành_symptom'})
+MERGE (o2:organ {id: 'túi_ngực_organ'})
+MERGE (o1)-[r87:isSymptomOf]->(o2)
+SET r87.text = 'Sau phẫu thuật đặt túi ngực, người bệnh cần tuân thủ các biện pháp sau để đảm bảo vết thương mau lành và duy trì bầu ngực như mong muốn:'

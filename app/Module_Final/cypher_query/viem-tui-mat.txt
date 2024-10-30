@@ -1,0 +1,745 @@
+
+MERGE (o1:disease {id: 'viêm_túi_mật_disease'})
+MERGE (o2:disease {id: 'biến_chứng_nguy_hiểm_disease'})
+MERGE (o1)-[r0:isSymptomOf]->(o2)
+SET r0.text = 'Viêm túi mật nếu không được chẩn đoán và điều trị kịp thời có nguy cơ sẽ dẫn đến nhiều biến chứng nguy hiểm, thậm chí là đe dọa đến tính mạng.'
+
+MERGE (o1:disease {id: 'viêm_túi_mật_disease'})
+MERGE (o2:treatment {id: 'chẩn_đoán_và_điều_trị_kịp_thời_treatment'})
+MERGE (o1)-[r1:treatedBy]->(o2)
+SET r1.text = 'Viêm túi mật nếu không được chẩn đoán và điều trị kịp thời có nguy cơ sẽ dẫn đến nhiều biến chứng nguy hiểm, thậm chí là đe dọa đến tính mạng.'
+
+MERGE (o1:disease {id: 'biến_chứng_nguy_hiểm_disease'})
+MERGE (o2:organ {id: 'tính_mạng_organ'})
+MERGE (o1)-[r2:affects]->(o2)
+SET r2.text = 'Viêm túi mật nếu không được chẩn đoán và điều trị kịp thời có nguy cơ sẽ dẫn đến nhiều biến chứng nguy hiểm, thậm chí là đe dọa đến tính mạng.'
+
+MERGE (o1:disease {id: 'viêm_túi_mật_disease'})
+MERGE (o2:cause {id: 'vi_khuẩn_cause'})
+MERGE (o1)-[r3:causedBy]->(o2)
+SET r3.text = 'Viêm túi mật là tình trạng túi mật bị viêm do vi khuẩn, thường xảy ra trên người bệnh có tắc nghẽn ống dẫn mật.'
+
+MERGE (o1:disease {id: 'viêm_túi_mật_disease'})
+MERGE (o2:cause {id: 'tắc_nghẽn_ống_dẫn_mật_cause'})
+MERGE (o1)-[r4:causedBy]->(o2)
+SET r4.text = 'Viêm túi mật là tình trạng túi mật bị viêm do vi khuẩn, thường xảy ra trên người bệnh có tắc nghẽn ống dẫn mật.'
+
+MERGE (o1:organ {id: 'túi_mật_organ'})
+MERGE (o2:organ {id: 'cơ_thể_organ'})
+MERGE (o1)-[r5:locatedIn]->(o2)
+SET r5.text = 'Theo đó, nhiệm vụ chính của cơ quan này là chứa dịch tiêu hoá (dịch mật).'
+
+MERGE (o1:organ {id: 'túi_mật_organ'})
+MERGE (o2:food {id: 'dịch_tiêu_hoá_food'})
+MERGE (o1)-[r6:affects]->(o2)
+SET r6.text = 'Theo đó, nhiệm vụ chính của cơ quan này là chứa dịch tiêu hoá (dịch mật).'
+
+MERGE (o1:food {id: 'dịch_mật_food'})
+MERGE (o2:organ {id: 'ruột_non_organ'})
+MERGE (o1)-[r7:locatedIn]->(o2)
+SET r7.text = 'Dịch mật sẽ được giải phóng vào ruột non, phục vụ cho quá trình phân huỷ chất béo.'
+
+MERGE (o1:food {id: 'dịch_mật_food'})
+MERGE (o2:cause {id: 'phân_huỷ_chất_béo_cause'})
+MERGE (o1)-[r8:affects]->(o2)
+SET r8.text = 'Dịch mật sẽ được giải phóng vào ruột non, phục vụ cho quá trình phân huỷ chất béo.'
+
+MERGE (o1:organ {id: 'ống_dẫn_mật_organ'})
+MERGE (o2:organ {id: 'túi_mật_organ'})
+MERGE (o1)-[r9:affects]->(o2)
+SET r9.text = 'Tuy nhiên, nếu ống dẫn mật bị chặn, mật sẽ mắc kẹt, kích thích túi mật gây viêm.'
+
+MERGE (o1:organ {id: 'ống_dẫn_mật_organ'})
+MERGE (o2:cause {id: 'chặn_cause'})
+MERGE (o1)-[r10:causedBy]->(o2)
+SET r10.text = 'Tuy nhiên, nếu ống dẫn mật bị chặn, mật sẽ mắc kẹt, kích thích túi mật gây viêm.'
+
+MERGE (o1:cause {id: 'vấn_đề_bất_thường_ở_ống_dẫn_mật_cause'})
+MERGE (o2:disease {id: 'viêm_túi_mật_disease'})
+MERGE (o1)-[r11:causes]->(o2)
+SET r11.text = 'Ngoài ra, một số nguyên nhân khác có thể bao gồm: vấn đề bất thường ở ống dẫn mật, khối u, nhiễm trùng…'
+
+MERGE (o1:cause {id: 'khối_u_cause'})
+MERGE (o2:disease {id: 'viêm_túi_mật_disease'})
+MERGE (o1)-[r12:causes]->(o2)
+SET r12.text = 'Ngoài ra, một số nguyên nhân khác có thể bao gồm: vấn đề bất thường ở ống dẫn mật, khối u, nhiễm trùng…'
+
+MERGE (o1:cause {id: 'nhiễm_trùng_cause'})
+MERGE (o2:disease {id: 'viêm_túi_mật_disease'})
+MERGE (o1)-[r13:causes]->(o2)
+SET r13.text = 'Ngoài ra, một số nguyên nhân khác có thể bao gồm: vấn đề bất thường ở ống dẫn mật, khối u, nhiễm trùng…'
+
+MERGE (o1:organ {id: 'túi_mật_organ'})
+MERGE (o2:organ {id: 'bên_phải_bụng_organ'})
+MERGE (o1)-[r14:locatedIn]->(o2)
+SET r14.text = 'Đề cập đến túi mật, đây là một cơ quan nhỏ, hình quả lê nằm bên phải bụng, phía dưới gan, chứa dịch mật bài tiết vào ruột non.'
+
+MERGE (o1:organ {id: 'túi_mật_organ'})
+MERGE (o2:organ {id: 'phía_dưới_gan_organ'})
+MERGE (o1)-[r15:locatedIn]->(o2)
+SET r15.text = 'Đề cập đến túi mật, đây là một cơ quan nhỏ, hình quả lê nằm bên phải bụng, phía dưới gan, chứa dịch mật bài tiết vào ruột non.'
+
+MERGE (o1:disease {id: 'viêm_túi_mật_disease'})
+MERGE (o2:treatment {id: 'điều_trị_kịp_thời_treatment'})
+MERGE (o1)-[r16:treatedBy]->(o2)
+SET r16.text = 'Tình trạng viêm xảy ra nếu không được điều trị kịp thời có nguy cơ sẽ dẫn đến nhiều biến chứng nghiêm trọng, thậm chí là thủng túi mật, gây đe dọa đến tính mạng.'
+
+MERGE (o1:disease {id: 'viêm_túi_mật_disease'})
+MERGE (o2:disease {id: 'biến_chứng_nghiêm_trọng_disease'})
+MERGE (o1)-[r17:isSymptomOf]->(o2)
+SET r17.text = 'Tình trạng viêm xảy ra nếu không được điều trị kịp thời có nguy cơ sẽ dẫn đến nhiều biến chứng nghiêm trọng, thậm chí là thủng túi mật, gây đe dọa đến tính mạng.'
+
+MERGE (o1:disease {id: 'thủng_túi_mật_disease'})
+MERGE (o2:disease {id: 'viêm_túi_mật_disease'})
+MERGE (o1)-[r18:isSymptomOf]->(o2)
+SET r18.text = 'Tình trạng viêm xảy ra nếu không được điều trị kịp thời có nguy cơ sẽ dẫn đến nhiều biến chứng nghiêm trọng, thậm chí là thủng túi mật, gây đe dọa đến tính mạng.'
+
+MERGE (o1:disease {id: 'thủng_túi_mật_disease'})
+MERGE (o2:organ {id: 'tính_mạng_organ'})
+MERGE (o1)-[r19:affects]->(o2)
+SET r19.text = 'Tình trạng viêm xảy ra nếu không được điều trị kịp thời có nguy cơ sẽ dẫn đến nhiều biến chứng nghiêm trọng, thậm chí là thủng túi mật, gây đe dọa đến tính mạng.'
+
+MERGE (o1:disease {id: 'viêm_túi_mật_disease'})
+MERGE (o2:cause {id: 'tắc_nghẽn_dòng_chảy_mật_cause'})
+MERGE (o1)-[r20:associatedWith]->(o2)
+SET r20.text = 'Tình trạng này chiếm đến khoảng 90% các trường hợp viêm túi mật.'
+
+MERGE (o1:cause {id: 'tắc_nghẽn_dòng_chảy_mật_cause'})
+MERGE (o2:symptom {id: 'túi_mật_sưng_to_symptom'})
+MERGE (o1)-[r21:causes]->(o2)
+SET r21.text = 'Cụ thể, dòng chảy của mật bị tắc nghẽn khiến dịch mật bị ứ lại làm túi mật sưng to và đau.'
+
+MERGE (o1:cause {id: 'tắc_nghẽn_dòng_chảy_mật_cause'})
+MERGE (o2:symptom {id: 'đau_túi_mật_symptom'})
+MERGE (o1)-[r22:causes]->(o2)
+SET r22.text = 'Cụ thể, dòng chảy của mật bị tắc nghẽn khiến dịch mật bị ứ lại làm túi mật sưng to và đau.'
+
+MERGE (o1:organ {id: 'túi_mật_organ'})
+MERGE (o2:cause {id: 'nhiễm_vi_khuẩn_cause'})
+MERGE (o1)-[r23:causedBy]->(o2)
+SET r23.text = 'Túi mật ban đầu vô trùng nhưng thường dễ bị nhiễm vi khuẩn, chủ yếu là E. coli, Klebsiella, Bacteroides, Staphylococus….'
+
+MERGE (o1:cause {id: 'e._coli_cause'})
+MERGE (o2:disease {id: 'nhiễm_trùng_túi_mật_disease'})
+MERGE (o1)-[r24:causes]->(o2)
+SET r24.text = 'Túi mật ban đầu vô trùng nhưng thường dễ bị nhiễm vi khuẩn, chủ yếu là E. coli, Klebsiella, Bacteroides, Staphylococus….'
+
+MERGE (o1:cause {id: 'klebsiella_cause'})
+MERGE (o2:disease {id: 'nhiễm_trùng_túi_mật_disease'})
+MERGE (o1)-[r25:causes]->(o2)
+SET r25.text = 'Túi mật ban đầu vô trùng nhưng thường dễ bị nhiễm vi khuẩn, chủ yếu là E. coli, Klebsiella, Bacteroides, Staphylococus….'
+
+MERGE (o1:cause {id: 'bacteroides_cause'})
+MERGE (o2:disease {id: 'nhiễm_trùng_túi_mật_disease'})
+MERGE (o1)-[r26:causes]->(o2)
+SET r26.text = 'Túi mật ban đầu vô trùng nhưng thường dễ bị nhiễm vi khuẩn, chủ yếu là E. coli, Klebsiella, Bacteroides, Staphylococus….'
+
+MERGE (o1:cause {id: 'staphylococus_cause'})
+MERGE (o2:disease {id: 'nhiễm_trùng_túi_mật_disease'})
+MERGE (o1)-[r27:causes]->(o2)
+SET r27.text = 'Túi mật ban đầu vô trùng nhưng thường dễ bị nhiễm vi khuẩn, chủ yếu là E. coli, Klebsiella, Bacteroides, Staphylococus….'
+
+MERGE (o1:disease {id: 'viêm_túi_mật_disease'})
+MERGE (o2:symptom {id: 'cảm_ứng_phúc_mạc_symptom'})
+MERGE (o1)-[r28:isSymptomOf]->(o2)
+SET r28.text = 'Tình trạng viêm về lâu dài có thể làm cho dịch mật thấm ra ngoài thành túi mật, lan ra cơ quan và các cấu trúc xung quanh gây ra các triệu chứng như cảm ứng phúc mạc hoặc co cứng thành bụng'
+
+MERGE (o1:disease {id: 'viêm_túi_mật_disease'})
+MERGE (o2:symptom {id: 'co_cứng_thành_bụng_symptom'})
+MERGE (o1)-[r29:isSymptomOf]->(o2)
+SET r29.text = 'Tình trạng viêm về lâu dài có thể làm cho dịch mật thấm ra ngoài thành túi mật, lan ra cơ quan và các cấu trúc xung quanh gây ra các triệu chứng như cảm ứng phúc mạc hoặc co cứng thành bụng'
+
+MERGE (o1:disease {id: 'viêm_túi_mật_mãn_tính_disease'})
+MERGE (o2:disease {id: 'viêm_túi_mật_cấp_tính_lặp_đi_lặp_lại_disease'})
+MERGE (o1)-[r30:causedBy]->(o2)
+SET r30.text = 'Tình trạng này xảy ra do viêm túi mật cấp tính lặp đi lặp lại, với nguyên nhân chính cũng là sỏi.'
+
+MERGE (o1:disease {id: 'viêm_túi_mật_mãn_tính_disease'})
+MERGE (o2:cause {id: 'sỏi_cause'})
+MERGE (o1)-[r31:causedBy]->(o2)
+SET r31.text = 'Tình trạng này xảy ra do viêm túi mật cấp tính lặp đi lặp lại, với nguyên nhân chính cũng là sỏi.'
+
+MERGE (o1:disease {id: 'viêm_túi_mật_mãn_tính_disease'})
+MERGE (o2:symptom {id: 'triệu_chứng_nghiêm_trọng_symptom'})
+MERGE (o1)-[r32:isSymptomOf]->(o2)
+SET r32.text = 'Theo đó, viêm mãn tính có thể không có triệu chính, cũng có thể biểu hiện như một trường hợp nghiêm trọng hơn cấp tính.'
+
+MERGE (o1:disease {id: 'viêm_túi_mật_mãn_tính_disease'})
+MERGE (o2:disease {id: 'hoại_thư_disease'})
+MERGE (o1)-[r33:isSymptomOf]->(o2)
+SET r33.text = 'Một số biến chứng có nguy cơ xuất hiện chẳng hạn như: hoại thư, thủng hoặc hình thành lỗ rò.'
+
+MERGE (o1:disease {id: 'viêm_túi_mật_mãn_tính_disease'})
+MERGE (o2:disease {id: 'thủng_disease'})
+MERGE (o1)-[r34:isSymptomOf]->(o2)
+SET r34.text = 'Một số biến chứng có nguy cơ xuất hiện chẳng hạn như: hoại thư, thủng hoặc hình thành lỗ rò.'
+
+MERGE (o1:disease {id: 'viêm_túi_mật_mãn_tính_disease'})
+MERGE (o2:disease {id: 'hình_thành_lỗ_rò_disease'})
+MERGE (o1)-[r35:isSymptomOf]->(o2)
+SET r35.text = 'Một số biến chứng có nguy cơ xuất hiện chẳng hạn như: hoại thư, thủng hoặc hình thành lỗ rò.'
+
+MERGE (o1:disease {id: 'viêm_túi_mật_không_sỏi_disease'})
+MERGE (o2:cause {id: 'không_tìm_thấy_sỏi_trong_ống_dẫn_mật_cause'})
+MERGE (o1)-[r36:causedBy]->(o2)
+SET r36.text = 'Đây là tình trạng viêm không tìm thấy sỏi trong ống dẫn mật, chiếm 5 - 10% tổng số các trường hợp và liên quan trực tiếp đến tỷ lệ tử vong cao.'
+
+MERGE (o1:disease {id: 'viêm_túi_mật_không_sỏi_disease'})
+MERGE (o2:cause {id: 'tỷ_lệ_tử_vong_cao_cause'})
+MERGE (o1)-[r37:associatedWith]->(o2)
+SET r37.text = 'Đây là tình trạng viêm không tìm thấy sỏi trong ống dẫn mật, chiếm 5 - 10% tổng số các trường hợp và liên quan trực tiếp đến tỷ lệ tử vong cao.'
+
+MERGE (o1:disease {id: 'viêm_túi_mật_không_sỏi_disease'})
+MERGE (o2:disease {id: 'bệnh_nặng_disease'})
+MERGE (o1)-[r38:associatedWith]->(o2)
+SET r38.text = 'Viêm túi mật không sỏi thường xảy ra ở những người đang bị bệnh nặng, chẳng hạn như nam giới sau phẫu thuật không chấn thương.'
+
+MERGE (o1:disease {id: 'viêm_túi_mật_không_sỏi_disease'})
+MERGE (o2:cause {id: 'nam_giới_sau_phẫu_thuật_không_chấn_thương_cause'})
+MERGE (o1)-[r39:associatedWith]->(o2)
+SET r39.text = 'Viêm túi mật không sỏi thường xảy ra ở những người đang bị bệnh nặng, chẳng hạn như nam giới sau phẫu thuật không chấn thương.'
+
+MERGE (o1:disease {id: 'viêm_túi_mật_không_sỏi_disease'})
+MERGE (o2:cause {id: 'viêm_mạch_máu_cause'})
+MERGE (o1)-[r40:causedBy]->(o2)
+SET r40.text = 'Theo đó, tình trạng này liên quan đến nhiều nguyên nhân khác, bao gồm: viêm mạch máu, hoá trị, chấn thương, bỏng…'
+
+MERGE (o1:disease {id: 'viêm_túi_mật_không_sỏi_disease'})
+MERGE (o2:cause {id: 'hoá_trị_cause'})
+MERGE (o1)-[r41:causedBy]->(o2)
+SET r41.text = 'Theo đó, tình trạng này liên quan đến nhiều nguyên nhân khác, bao gồm: viêm mạch máu, hoá trị, chấn thương, bỏng…'
+
+MERGE (o1:disease {id: 'viêm_túi_mật_không_sỏi_disease'})
+MERGE (o2:cause {id: 'chấn_thương_cause'})
+MERGE (o1)-[r42:causedBy]->(o2)
+SET r42.text = 'Theo đó, tình trạng này liên quan đến nhiều nguyên nhân khác, bao gồm: viêm mạch máu, hoá trị, chấn thương, bỏng…'
+
+MERGE (o1:disease {id: 'viêm_túi_mật_không_sỏi_disease'})
+MERGE (o2:cause {id: 'bỏng_cause'})
+MERGE (o1)-[r43:causedBy]->(o2)
+SET r43.text = 'Theo đó, tình trạng này liên quan đến nhiều nguyên nhân khác, bao gồm: viêm mạch máu, hoá trị, chấn thương, bỏng…'
+
+MERGE (o1:disease {id: 'viêm_túi_mật_không_sỏi_disease'})
+MERGE (o2:symptom {id: 'triệu_chứng_tương_tự_như_viêm_do_sỏi_symptom'})
+MERGE (o1)-[r44:isSymptomOf]->(o2)
+SET r44.text = 'Triệu chứng gặp phải tương tự như viêm do sỏi.'
+
+MERGE (o1:disease {id: 'viêm_túi_mật_không_sỏi_disease'})
+MERGE (o2:symptom {id: 'vàng_da_symptom'})
+MERGE (o1)-[r45:isSymptomOf]->(o2)
+SET r45.text = 'Tuy nhiên, khả năng bị vàng da thường cao hơn.'
+
+MERGE (o1:disease {id: 'viêm_túi_mật_disease'})
+MERGE (o2:test {id: 'siêu_âm_test'})
+MERGE (o1)-[r46:diagnosedBy]->(o2)
+SET r46.text = 'Tùy theo từng trường hợp, bác sĩ có thể chỉ định siêu âm hoặc chụp cắt lớp vi tính để xác định kích thước bất thường, khả năng di động của túi mật.'
+
+MERGE (o1:disease {id: 'viêm_túi_mật_disease'})
+MERGE (o2:test {id: 'chụp_cắt_lớp_vi_tính_test'})
+MERGE (o1)-[r47:diagnosedBy]->(o2)
+SET r47.text = 'Tùy theo từng trường hợp, bác sĩ có thể chỉ định siêu âm hoặc chụp cắt lớp vi tính để xác định kích thước bất thường, khả năng di động của túi mật.'
+
+MERGE (o1:lifestyle {id: 'nữ_giới_trên_50_tuổi_lifestyle'})
+MERGE (o2:disease {id: 'viêm_túi_mật_disease'})
+MERGE (o1)-[r48:associatedWith]->(o2)
+SET r48.text = 'Dưới đây là những đối tượng nằm trong nhóm nguy cơ cao mắc viêm túi mật:'
+
+MERGE (o1:lifestyle {id: 'nam_giới_trên_60_tuổi_lifestyle'})
+MERGE (o2:disease {id: 'viêm_túi_mật_disease'})
+MERGE (o1)-[r49:associatedWith]->(o2)
+SET r49.text = 'Dưới đây là những đối tượng nằm trong nhóm nguy cơ cao mắc viêm túi mật:'
+
+MERGE (o1:lifestyle {id: 'thừa_cân_lifestyle'})
+MERGE (o2:disease {id: 'viêm_túi_mật_disease'})
+MERGE (o1)-[r50:associatedWith]->(o2)
+SET r50.text = 'Dưới đây là những đối tượng nằm trong nhóm nguy cơ cao mắc viêm túi mật:'
+
+MERGE (o1:disease {id: 'tiểu_đường_disease'})
+MERGE (o2:disease {id: 'viêm_túi_mật_disease'})
+MERGE (o1)-[r51:associatedWith]->(o2)
+SET r51.text = 'Dưới đây là những đối tượng nằm trong nhóm nguy cơ cao mắc viêm túi mật:'
+
+MERGE (o1:lifestyle {id: 'mang_thai_lifestyle'})
+MERGE (o2:disease {id: 'viêm_túi_mật_disease'})
+MERGE (o1)-[r52:associatedWith]->(o2)
+SET r52.text = 'Dưới đây là những đối tượng nằm trong nhóm nguy cơ cao mắc viêm túi mật:'
+
+MERGE (o1:disease {id: 'bệnh_crohn_disease'})
+MERGE (o2:disease {id: 'viêm_túi_mật_disease'})
+MERGE (o1)-[r53:associatedWith]->(o2)
+SET r53.text = 'Dưới đây là những đối tượng nằm trong nhóm nguy cơ cao mắc viêm túi mật:'
+
+MERGE (o1:disease {id: 'bệnh_thận_giai_đoạn_cuối_disease'})
+MERGE (o2:disease {id: 'viêm_túi_mật_disease'})
+MERGE (o1)-[r54:associatedWith]->(o2)
+SET r54.text = 'Dưới đây là những đối tượng nằm trong nhóm nguy cơ cao mắc viêm túi mật:'
+
+MERGE (o1:disease {id: 'bệnh_tim_disease'})
+MERGE (o2:disease {id: 'viêm_túi_mật_disease'})
+MERGE (o1)-[r55:associatedWith]->(o2)
+SET r55.text = 'Dưới đây là những đối tượng nằm trong nhóm nguy cơ cao mắc viêm túi mật:'
+
+MERGE (o1:disease {id: 'tăng_lipid_máu_disease'})
+MERGE (o2:disease {id: 'viêm_túi_mật_disease'})
+MERGE (o1)-[r56:associatedWith]->(o2)
+SET r56.text = 'Dưới đây là những đối tượng nằm trong nhóm nguy cơ cao mắc viêm túi mật:'
+
+MERGE (o1:disease {id: 'bệnh_hồng_cầu_hình_liềm_disease'})
+MERGE (o2:disease {id: 'viêm_túi_mật_disease'})
+MERGE (o1)-[r57:associatedWith]->(o2)
+SET r57.text = 'Dưới đây là những đối tượng nằm trong nhóm nguy cơ cao mắc viêm túi mật:'
+
+MERGE (o1:cause {id: 'sỏi_chặn_đường_ống_dẫn_mật_đến_ruột_non_cause'})
+MERGE (o2:disease {id: 'viêm_túi_mật_disease'})
+MERGE (o1)-[r58:causedBy]->(o2)
+SET r58.text = 'Nguyên nhân phổ biến nhất viêm túi mật là do sỏi chặn đường ống dẫn mật đến ruột non, gây ứ đọng mật tại cơ quan.'
+
+MERGE (o1:disease {id: 'viêm_túi_mật_disease'})
+MERGE (o2:symptom {id: 'ứ_đọng_mật_tại_cơ_quan_symptom'})
+MERGE (o1)-[r59:isSymptomOf]->(o2)
+SET r59.text = 'Nguyên nhân phổ biến nhất viêm túi mật là do sỏi chặn đường ống dẫn mật đến ruột non, gây ứ đọng mật tại cơ quan.'
+
+MERGE (o1:cause {id: 'bùn_túi_mật_cause'})
+MERGE (o2:disease {id: 'viêm_túi_mật_disease'})
+MERGE (o1)-[r60:causedBy]->(o2)
+SET r60.text = 'Tuy nhiên, đây không phải là yếu tố duy nhất, nhiều trường hợp mắc bệnh có thể do:(2)  Bùn túi mật: Đây là chất rắn dạng hạt tích tụ trong túi mật, thường xảy ra trong quá trình mang thai hoặc giảm cân nhanh chóng.'
+
+MERGE (o1:cause {id: 'bùn_túi_mật_cause'})
+MERGE (o2:organ {id: 'túi_mật_organ'})
+MERGE (o1)-[r61:locatedIn]->(o2)
+SET r61.text = 'Tuy nhiên, đây không phải là yếu tố duy nhất, nhiều trường hợp mắc bệnh có thể do:(2)  Bùn túi mật: Đây là chất rắn dạng hạt tích tụ trong túi mật, thường xảy ra trong quá trình mang thai hoặc giảm cân nhanh chóng.'
+
+MERGE (o1:lifestyle {id: 'mang_thai_lifestyle'})
+MERGE (o2:cause {id: 'bùn_túi_mật_cause'})
+MERGE (o1)-[r62:associatedWith]->(o2)
+SET r62.text = 'Tuy nhiên, đây không phải là yếu tố duy nhất, nhiều trường hợp mắc bệnh có thể do:(2)  Bùn túi mật: Đây là chất rắn dạng hạt tích tụ trong túi mật, thường xảy ra trong quá trình mang thai hoặc giảm cân nhanh chóng.'
+
+MERGE (o1:lifestyle {id: 'giảm_cân_nhanh_chóng_lifestyle'})
+MERGE (o2:cause {id: 'bùn_túi_mật_cause'})
+MERGE (o1)-[r63:associatedWith]->(o2)
+SET r63.text = 'Tuy nhiên, đây không phải là yếu tố duy nhất, nhiều trường hợp mắc bệnh có thể do:(2)  Bùn túi mật: Đây là chất rắn dạng hạt tích tụ trong túi mật, thường xảy ra trong quá trình mang thai hoặc giảm cân nhanh chóng.'
+
+MERGE (o1:cause {id: 'khối_u_chặn_đường_dẫn_của_mật_cause'})
+MERGE (o2:disease {id: 'viêm_túi_mật_disease'})
+MERGE (o1)-[r64:causedBy]->(o2)
+SET r64.text = 'Khối u chặn đường dẫn của mật: Sự phát triển khối u trong tuyến tụy hoặc gan có thể ngăn không cho dịch tiêu hoá thoát ra ngoài.'
+
+MERGE (o1:cause {id: 'khối_u_cause'})
+MERGE (o2:organ {id: 'tuyến_tụy_organ'})
+MERGE (o1)-[r65:locatedIn]->(o2)
+SET r65.text = 'Khối u chặn đường dẫn của mật: Sự phát triển khối u trong tuyến tụy hoặc gan có thể ngăn không cho dịch tiêu hoá thoát ra ngoài.'
+
+MERGE (o1:cause {id: 'khối_u_cause'})
+MERGE (o2:organ {id: 'gan_organ'})
+MERGE (o1)-[r66:locatedIn]->(o2)
+SET r66.text = 'Khối u chặn đường dẫn của mật: Sự phát triển khối u trong tuyến tụy hoặc gan có thể ngăn không cho dịch tiêu hoá thoát ra ngoài.'
+
+MERGE (o1:cause {id: 'túi_mật_không_có_nguồn_cung_cấp_máu_tốt_cause'})
+MERGE (o2:disease {id: 'viêm_túi_mật_disease'})
+MERGE (o1)-[r67:causedBy]->(o2)
+SET r67.text = 'Túi mật không có nguồn cung cấp máu tốt do mắc bệnh tiểu đường.'
+
+MERGE (o1:disease {id: 'bệnh_tiểu_đường_disease'})
+MERGE (o2:organ {id: 'túi_mật_organ'})
+MERGE (o1)-[r68:affects]->(o2)
+SET r68.text = 'Túi mật không có nguồn cung cấp máu tốt do mắc bệnh tiểu đường.'
+
+MERGE (o1:cause {id: 'nhiễm_trùng_cause'})
+MERGE (o2:disease {id: 'viêm_túi_mật_disease'})
+MERGE (o1)-[r69:causedBy]->(o2)
+SET r69.text = 'Nhiễm trùng: Vi khuẩn có thể phá hỏng hệ thống dẫn lưu mật, khiến mật bị trào ngược trở lại.'
+
+MERGE (o1:cause {id: 'vi_khuẩn_cause'})
+MERGE (o2:organ {id: 'hệ_thống_dẫn_lưu_mật_organ'})
+MERGE (o1)-[r70:affects]->(o2)
+SET r70.text = 'Nhiễm trùng: Vi khuẩn có thể phá hỏng hệ thống dẫn lưu mật, khiến mật bị trào ngược trở lại.'
+
+MERGE (o1:disease {id: 'viêm_túi_mật_disease'})
+MERGE (o2:disease {id: 'vấn_đề_bệnh_lý_khác_disease'})
+MERGE (o1)-[r71:isSymptomOf]->(o2)
+SET r71.text = 'Viêm túi mật có thể gây nhầm lẫn bởi triệu chứng tương tự một số vấn đề bệnh lý khác.'
+
+MERGE (o1:symptom {id: 'cảm_thấy_đau_nhói__đột_ngột_ở_phía_trên_bên_phải_bụng_(vùng_hạ_sườn_phải)_symptom'})
+MERGE (o2:disease {id: 'viêm_túi_mật_disease'})
+MERGE (o1)-[r72:isSymptomOf]->(o2)
+SET r72.text = 'Người bệnh nên liên hệ ngay với bác sĩ nếu có nghi ngờ, đặc biệt là khi nhận thấy những dấu hiệu bất thường sau:  Cảm thấy đau nhói, đột ngột ở phía trên bên phải bụng (vùng hạ sườn phải).'
+
+MERGE (o1:symptom {id: 'cảm_thấy_đau_ở_lưng_hoặc_bên_dưới_xương_bả_vai_phải_symptom'})
+MERGE (o2:disease {id: 'viêm_túi_mật_disease'})
+MERGE (o1)-[r73:isSymptomOf]->(o2)
+SET r73.text = 'Người bệnh nên liên hệ ngay với bác sĩ nếu có nghi ngờ, đặc biệt là khi nhận thấy những dấu hiệu bất thường sau:  Cảm thấy đau ở lưng hoặc bên dưới xương bả vai phải, cảm giác này càng trở nên tồi tệ hơn khi hít thở sâu.'
+
+MERGE (o1:lifestyle {id: 'hít_thở_sâu_lifestyle'})
+MERGE (o2:symptom {id: 'cảm_thấy_đau_ở_lưng_hoặc_bên_dưới_xương_bả_vai_phải_symptom'})
+MERGE (o1)-[r74:aggravatedBy]->(o2)
+SET r74.text = 'Người bệnh nên liên hệ ngay với bác sĩ nếu có nghi ngờ, đặc biệt là khi nhận thấy những dấu hiệu bất thường sau:  Cảm thấy đau ở lưng hoặc bên dưới xương bả vai phải, cảm giác này càng trở nên tồi tệ hơn khi hít thở sâu.'
+
+MERGE (o1:symptom {id: 'buồn_nôn__nôn_symptom'})
+MERGE (o2:disease {id: 'viêm_túi_mật_disease'})
+MERGE (o1)-[r75:isSymptomOf]->(o2)
+SET r75.text = 'Người bệnh nên liên hệ ngay với bác sĩ nếu có nghi ngờ, đặc biệt là khi nhận thấy những dấu hiệu bất thường sau: Buồn nôn, nôn.'
+
+MERGE (o1:symptom {id: 'sốt_symptom'})
+MERGE (o2:disease {id: 'viêm_túi_mật_disease'})
+MERGE (o1)-[r76:isSymptomOf]->(o2)
+SET r76.text = 'Người bệnh nên liên hệ ngay với bác sĩ nếu có nghi ngờ, đặc biệt là khi nhận thấy những dấu hiệu bất thường sau: Sốt.'
+
+MERGE (o1:symptom {id: 'đầy_hơi_symptom'})
+MERGE (o2:disease {id: 'viêm_túi_mật_disease'})
+MERGE (o1)-[r77:isSymptomOf]->(o2)
+SET r77.text = 'Người bệnh nên liên hệ ngay với bác sĩ nếu có nghi ngờ, đặc biệt là khi nhận thấy những dấu hiệu bất thường sau: Đầy hơi.'
+
+MERGE (o1:symptom {id: 'vàng_da_hoặc_vàng_mắt_symptom'})
+MERGE (o2:disease {id: 'viêm_túi_mật_disease'})
+MERGE (o1)-[r78:isSymptomOf]->(o2)
+SET r78.text = 'Người bệnh nên liên hệ ngay với bác sĩ nếu có nghi ngờ, đặc biệt là khi nhận thấy những dấu hiệu bất thường sau: Vàng da hoặc vàng mắt.'
+
+MERGE (o1:symptom {id: 'phân_lỏng_và_có_màu_nhạt_symptom'})
+MERGE (o2:disease {id: 'viêm_túi_mật_disease'})
+MERGE (o1)-[r79:isSymptomOf]->(o2)
+SET r79.text = 'Người bệnh nên liên hệ ngay với bác sĩ nếu có nghi ngờ, đặc biệt là khi nhận thấy những dấu hiệu bất thường sau: Phân lỏng và có màu nhạt.'
+
+MERGE (o1:lifestyle {id: 'ăn_nhiều_chất_béo_lifestyle'})
+MERGE (o2:symptom {id: 'các_triệu_chứng_symptom'})
+MERGE (o1)-[r80:aggravatedBy]->(o2)
+SET r80.text = 'Các triệu chứng có thể trở nên tồi tệ hơn sau khi ăn nhiều chất béo.'
+
+MERGE (o1:symptom {id: 'cơn_đau_quá_dữ_dội_symptom'})
+MERGE (o2:disease {id: 'viêm_túi_mật_disease'})
+MERGE (o1)-[r81:isSymptomOf]->(o2)
+SET r81.text = 'Nếu người bệnh không cảm thấy thoải mái hoặc ngồi yên vì cơn đau quá dữ dội, hãy đến phòng cấp cứu để được xử lý kịp thời.'
+
+MERGE (o1:disease {id: 'viêm_túi_mật_disease'})
+MERGE (o2:test {id: 'xem_xét_tiền_sử_bệnh_lý__khám_sức_khỏe_test'})
+MERGE (o1)-[r82:diagnosedBy]->(o2)
+SET r82.text = 'Đối với tình trạng viêm túi mật, ban đầu bác sĩ sẽ tiến hành xem xét tiền sử bệnh lý, khám sức khỏe.'
+
+MERGE (o1:test {id: 'xét_nghiệm_công_thức_máu_toàn_bộ_(cbc)_test'})
+MERGE (o2:disease {id: 'viêm_túi_mật_disease'})
+MERGE (o1)-[r83:diagnosedBy]->(o2)
+SET r83.text = 'Sau đó, người bệnh cũng có thể được chỉ định thực một số xét nghiệm cần thiết, bao gồm:(3)    Xét nghiệm công thức máu toàn bộ (CBC): Xét nghiệm này giúp đo số lượng bạch cầu, nếu bị nhiễm trùng, số lượng này sẽ tăng cao.'
+
+MERGE (o1:test {id: 'xét_nghiệm_công_thức_máu_toàn_bộ_(cbc)_test'})
+MERGE (o2:disease {id: 'nhiễm_trùng_disease'})
+MERGE (o1)-[r84:relatedTo]->(o2)
+SET r84.text = 'Sau đó, người bệnh cũng có thể được chỉ định thực một số xét nghiệm cần thiết, bao gồm:(3)    Xét nghiệm công thức máu toàn bộ (CBC): Xét nghiệm này giúp đo số lượng bạch cầu, nếu bị nhiễm trùng, số lượng này sẽ tăng cao.'
+
+MERGE (o1:test {id: 'xét_nghiệm_chức_năng_gan_test'})
+MERGE (o2:disease {id: 'viêm_túi_mật_disease'})
+MERGE (o1)-[r85:diagnosedBy]->(o2)
+SET r85.text = 'Sau đó, người bệnh cũng có thể được chỉ định thực một số xét nghiệm cần thiết, bao gồm:(3)    Xét nghiệm chức năng gan: Xét nghiệm này sẽ giúp xác định được khả năng hoạt động của gan.'
+
+MERGE (o1:test {id: 'xét_nghiệm_chức_năng_gan_test'})
+MERGE (o2:organ {id: 'gan_organ'})
+MERGE (o1)-[r86:relatedTo]->(o2)
+SET r86.text = 'Sau đó, người bệnh cũng có thể được chỉ định thực một số xét nghiệm cần thiết, bao gồm:(3)    Xét nghiệm chức năng gan: Xét nghiệm này sẽ giúp xác định được khả năng hoạt động của gan.'
+
+MERGE (o1:test {id: 'siêu_âm_test'})
+MERGE (o2:disease {id: 'viêm_túi_mật_disease'})
+MERGE (o1)-[r87:diagnosedBy]->(o2)
+SET r87.text = 'Sau đó, người bệnh cũng có thể được chỉ định thực một số xét nghiệm cần thiết, bao gồm:(3)    Siêu âm: Với xét nghiệm này, các hình ảnh về cơ quan nội tạng bên trong cơ thể sẽ hiển thị trên màn hình máy tính bằng cách sử dụng sóng âm thanh tần số cao. Từ đó, bác sĩ có thể kiểm tra được tình trạng gan, túi mật và lưu lượng máu qua các mạch khác nhau.'
+
+MERGE (o1:test {id: 'siêu_âm_test'})
+MERGE (o2:organ {id: 'gan_organ'})
+MERGE (o1)-[r88:relatedTo]->(o2)
+SET r88.text = 'Sau đó, người bệnh cũng có thể được chỉ định thực một số xét nghiệm cần thiết, bao gồm:(3)    Siêu âm: Với xét nghiệm này, các hình ảnh về cơ quan nội tạng bên trong cơ thể sẽ hiển thị trên màn hình máy tính bằng cách sử dụng sóng âm thanh tần số cao. Từ đó, bác sĩ có thể kiểm tra được tình trạng gan, túi mật và lưu lượng máu qua các mạch khác nhau.'
+
+MERGE (o1:test {id: 'siêu_âm_test'})
+MERGE (o2:organ {id: 'túi_mật_organ'})
+MERGE (o1)-[r89:relatedTo]->(o2)
+SET r89.text = 'Sau đó, người bệnh cũng có thể được chỉ định thực một số xét nghiệm cần thiết, bao gồm:(3)    Siêu âm: Với xét nghiệm này, các hình ảnh về cơ quan nội tạng bên trong cơ thể sẽ hiển thị trên màn hình máy tính bằng cách sử dụng sóng âm thanh tần số cao. Từ đó, bác sĩ có thể kiểm tra được tình trạng gan, túi mật và lưu lượng máu qua các mạch khác nhau.'
+
+MERGE (o1:test {id: 'siêu_âm_test'})
+MERGE (o2:symptom {id: 'lưu_lượng_máu_symptom'})
+MERGE (o1)-[r90:relatedTo]->(o2)
+SET r90.text = 'Sau đó, người bệnh cũng có thể được chỉ định thực một số xét nghiệm cần thiết, bao gồm:(3)    Siêu âm: Với xét nghiệm này, các hình ảnh về cơ quan nội tạng bên trong cơ thể sẽ hiển thị trên màn hình máy tính bằng cách sử dụng sóng âm thanh tần số cao. Từ đó, bác sĩ có thể kiểm tra được tình trạng gan, túi mật và lưu lượng máu qua các mạch khác nhau.'
+
+MERGE (o1:test {id: 'chụp_x-quang_bụng_test'})
+MERGE (o2:disease {id: 'viêm_túi_mật_disease'})
+MERGE (o1)-[r91:diagnosedBy]->(o2)
+SET r91.text = 'Sau đó, người bệnh cũng có thể được chỉ định thực một số xét nghiệm cần thiết, bao gồm:(3)    Chụp X-quang bụng: Xét nghiệm này sẽ tạo ra hình ảnh chi tiết về các mô bên trong, xương và cơ quan bằng cách sử dụng những chùm năng lượng điện từ.'
+
+MERGE (o1:test {id: 'chụp_x-quang_bụng_test'})
+MERGE (o2:organ {id: 'mô_bên_trong_organ'})
+MERGE (o1)-[r92:relatedTo]->(o2)
+SET r92.text = 'Sau đó, người bệnh cũng có thể được chỉ định thực một số xét nghiệm cần thiết, bao gồm:(3)    Chụp X-quang bụng: Xét nghiệm này sẽ tạo ra hình ảnh chi tiết về các mô bên trong, xương và cơ quan bằng cách sử dụng những chùm năng lượng điện từ.'
+
+MERGE (o1:test {id: 'chụp_x-quang_bụng_test'})
+MERGE (o2:organ {id: 'xương_organ'})
+MERGE (o1)-[r93:relatedTo]->(o2)
+SET r93.text = 'Sau đó, người bệnh cũng có thể được chỉ định thực một số xét nghiệm cần thiết, bao gồm:(3)    Chụp X-quang bụng: Xét nghiệm này sẽ tạo ra hình ảnh chi tiết về các mô bên trong, xương và cơ quan bằng cách sử dụng những chùm năng lượng điện từ.'
+
+MERGE (o1:test {id: 'chụp_x-quang_bụng_test'})
+MERGE (o2:organ {id: 'cơ_quan_organ'})
+MERGE (o1)-[r94:relatedTo]->(o2)
+SET r94.text = 'Sau đó, người bệnh cũng có thể được chỉ định thực một số xét nghiệm cần thiết, bao gồm:(3)    Chụp X-quang bụng: Xét nghiệm này sẽ tạo ra hình ảnh chi tiết về các mô bên trong, xương và cơ quan bằng cách sử dụng những chùm năng lượng điện từ.'
+
+MERGE (o1:test {id: 'chụp_ct_test'})
+MERGE (o2:disease {id: 'viêm_túi_mật_disease'})
+MERGE (o1)-[r95:diagnosedBy]->(o2)
+SET r95.text = 'Sau đó, người bệnh cũng có thể được chỉ định thực một số xét nghiệm cần thiết, bao gồm:(3)    Chụp CT: Đây là xét nghiệm sử dụng tia X và máy tính để tạo ra hình ảnh chi tiết của cơ thể, bao gồm: xương, cơ, mỡ, cơ quan… So với chụp X-quang, chụp CT chi tiết hơn.'
+
+MERGE (o1:test {id: 'chụp_ct_test'})
+MERGE (o2:organ {id: 'xương_organ'})
+MERGE (o1)-[r96:relatedTo]->(o2)
+SET r96.text = 'Sau đó, người bệnh cũng có thể được chỉ định thực một số xét nghiệm cần thiết, bao gồm:(3)    Chụp CT: Đây là xét nghiệm sử dụng tia X và máy tính để tạo ra hình ảnh chi tiết của cơ thể, bao gồm: xương, cơ, mỡ, cơ quan… So với chụp X-quang, chụp CT chi tiết hơn.'
+
+MERGE (o1:test {id: 'chụp_ct_test'})
+MERGE (o2:organ {id: 'cơ_organ'})
+MERGE (o1)-[r97:relatedTo]->(o2)
+SET r97.text = 'Sau đó, người bệnh cũng có thể được chỉ định thực một số xét nghiệm cần thiết, bao gồm:(3)    Chụp CT: Đây là xét nghiệm sử dụng tia X và máy tính để tạo ra hình ảnh chi tiết của cơ thể, bao gồm: xương, cơ, mỡ, cơ quan… So với chụp X-quang, chụp CT chi tiết hơn.'
+
+MERGE (o1:test {id: 'chụp_ct_test'})
+MERGE (o2:organ {id: 'mỡ_organ'})
+MERGE (o1)-[r98:relatedTo]->(o2)
+SET r98.text = 'Sau đó, người bệnh cũng có thể được chỉ định thực một số xét nghiệm cần thiết, bao gồm:(3)    Chụp CT: Đây là xét nghiệm sử dụng tia X và máy tính để tạo ra hình ảnh chi tiết của cơ thể, bao gồm: xương, cơ, mỡ, cơ quan… So với chụp X-quang, chụp CT chi tiết hơn.'
+
+MERGE (o1:test {id: 'chụp_ct_test'})
+MERGE (o2:organ {id: 'cơ_quan_organ'})
+MERGE (o1)-[r99:relatedTo]->(o2)
+SET r99.text = 'Sau đó, người bệnh cũng có thể được chỉ định thực một số xét nghiệm cần thiết, bao gồm:(3)    Chụp CT: Đây là xét nghiệm sử dụng tia X và máy tính để tạo ra hình ảnh chi tiết của cơ thể, bao gồm: xương, cơ, mỡ, cơ quan… So với chụp X-quang, chụp CT chi tiết hơn.'
+
+MERGE (o1:test {id: 'chụp_ct_test'})
+MERGE (o2:test {id: 'chụp_x-quang_test'})
+MERGE (o1)-[r100:relatedTo]->(o2)
+SET r100.text = 'Sau đó, người bệnh cũng có thể được chỉ định thực một số xét nghiệm cần thiết, bao gồm:(3)    Chụp CT: Đây là xét nghiệm sử dụng tia X và máy tính để tạo ra hình ảnh chi tiết của cơ thể, bao gồm: xương, cơ, mỡ, cơ quan… So với chụp X-quang, chụp CT chi tiết hơn.'
+
+MERGE (o1:test {id: 'quét_hida_(chụp_xạ_hình_mật_hoặc_xạ_hình_gan_mật)_test'})
+MERGE (o2:disease {id: 'viêm_túi_mật_disease'})
+MERGE (o1)-[r101:diagnosedBy]->(o2)
+SET r101.text = 'Sau đó, người bệnh cũng có thể được chỉ định thực một số xét nghiệm cần thiết, bao gồm:(3)    Quét HIDA (chụp xạ hình mật hoặc xạ hình gan mật): Quá trình quét này sẽ giúp kiểm tra bất kỳ chuyển động bất thường (co thắt) nào ở túi mật cũng như tình trạng ống mật bị chặn.'
+
+MERGE (o1:test {id: 'quét_hida_(chụp_xạ_hình_mật_hoặc_xạ_hình_gan_mật)_test'})
+MERGE (o2:organ {id: 'túi_mật_organ'})
+MERGE (o1)-[r102:relatedTo]->(o2)
+SET r102.text = 'Sau đó, người bệnh cũng có thể được chỉ định thực một số xét nghiệm cần thiết, bao gồm:(3)    Quét HIDA (chụp xạ hình mật hoặc xạ hình gan mật): Quá trình quét này sẽ giúp kiểm tra bất kỳ chuyển động bất thường (co thắt) nào ở túi mật cũng như tình trạng ống mật bị chặn.'
+
+MERGE (o1:test {id: 'quét_hida_(chụp_xạ_hình_mật_hoặc_xạ_hình_gan_mật)_test'})
+MERGE (o2:organ {id: 'ống_mật_organ'})
+MERGE (o1)-[r103:relatedTo]->(o2)
+SET r103.text = 'Sau đó, người bệnh cũng có thể được chỉ định thực một số xét nghiệm cần thiết, bao gồm:(3)    Quét HIDA (chụp xạ hình mật hoặc xạ hình gan mật): Quá trình quét này sẽ giúp kiểm tra bất kỳ chuyển động bất thường (co thắt) nào ở túi mật cũng như tình trạng ống mật bị chặn.'
+
+MERGE (o1:test {id: 'quét_hida_(chụp_xạ_hình_mật_hoặc_xạ_hình_gan_mật)_test'})
+MERGE (o2:treatment {id: 'hoá_chất_phóng_xạ_treatment'})
+MERGE (o1)-[r104:relatedTo]->(o2)
+SET r104.text = 'Sau đó, người bệnh cũng có thể được chỉ định thực một số xét nghiệm cần thiết, bao gồm:(3)    Quét HIDA (chụp xạ hình mật hoặc xạ hình gan mật): Quá trình quét này sẽ giúp kiểm tra bất kỳ chuyển động bất thường (co thắt) nào ở túi mật cũng như tình trạng ống mật bị chặn. Với phương pháp này, bác sĩ sẽ tiêm một hoá chất phóng xạ vào tĩnh mạch.'
+
+MERGE (o1:test {id: 'quét_hida_(chụp_xạ_hình_mật_hoặc_xạ_hình_gan_mật)_test'})
+MERGE (o2:organ {id: 'gan_organ'})
+MERGE (o1)-[r105:relatedTo]->(o2)
+SET r105.text = 'Sau đó, người bệnh cũng có thể được chỉ định thực một số xét nghiệm cần thiết, bao gồm:(3)    Quét HIDA (chụp xạ hình mật hoặc xạ hình gan mật): Quá trình quét này sẽ giúp kiểm tra bất kỳ chuyển động bất thường (co thắt) nào ở túi mật cũng như tình trạng ống mật bị chặn. Với phương pháp này, bác sĩ sẽ tiêm một hoá chất phóng xạ vào tĩnh mạch. Lượng bức xạ sẽ rất nhỏ và không có hại, sẽ di chuyển vào gan và chảy đến túi mật.'
+
+MERGE (o1:test {id: 'quét_hida_(chụp_xạ_hình_mật_hoặc_xạ_hình_gan_mật)_test'})
+MERGE (o2:organ {id: 'túi_mật_organ'})
+MERGE (o1)-[r106:relatedTo]->(o2)
+SET r106.text = 'Sau đó, người bệnh cũng có thể được chỉ định thực một số xét nghiệm cần thiết, bao gồm:(3)    Quét HIDA (chụp xạ hình mật hoặc xạ hình gan mật): Quá trình quét này sẽ giúp kiểm tra bất kỳ chuyển động bất thường (co thắt) nào ở túi mật cũng như tình trạng ống mật bị chặn. Với phương pháp này, bác sĩ sẽ tiêm một hoá chất phóng xạ vào tĩnh mạch. Lượng bức xạ sẽ rất nhỏ và không có hại, sẽ di chuyển vào gan và chảy đến túi mật. Lúc này, một máy quét đặc biệt sẽ theo dõi hoá chất khi di chuyển qua các cơ quan.'
+
+MERGE (o1:test {id: 'quét_hida_(chụp_xạ_hình_mật_hoặc_xạ_hình_gan_mật)_test'})
+MERGE (o2:treatment {id: 'thuốc_treatment'})
+MERGE (o1)-[r107:relatedTo]->(o2)
+SET r107.text = 'Sau đó, người bệnh cũng có thể được chỉ định thực một số xét nghiệm cần thiết, bao gồm:(3)    Quét HIDA (chụp xạ hình mật hoặc xạ hình gan mật): Quá trình quét này sẽ giúp kiểm tra bất kỳ chuyển động bất thường (co thắt) nào ở túi mật cũng như tình trạng ống mật bị chặn. Với phương pháp này, bác sĩ sẽ tiêm một hoá chất phóng xạ vào tĩnh mạch. Lượng bức xạ sẽ rất nhỏ và không có hại, sẽ di chuyển vào gan và chảy đến túi mật. Lúc này, một máy quét đặc biệt sẽ theo dõi hoá chất khi di chuyển qua các cơ quan. Người bệnh đồng thời cũng được dùng thuốc để kích thích co bóp túi mật.'
+
+MERGE (o1:test {id: 'quét_hida_(chụp_xạ_hình_mật_hoặc_xạ_hình_gan_mật)_test'})
+MERGE (o2:symptom {id: 'co_bóp_túi_mật_symptom'})
+MERGE (o1)-[r108:relatedTo]->(o2)
+SET r108.text = 'Sau đó, người bệnh cũng có thể được chỉ định thực một số xét nghiệm cần thiết, bao gồm:(3)    Quét HIDA (chụp xạ hình mật hoặc xạ hình gan mật): Quá trình quét này sẽ giúp kiểm tra bất kỳ chuyển động bất thường (co thắt) nào ở túi mật cũng như tình trạng ống mật bị chặn. Với phương pháp này, bác sĩ sẽ tiêm một hoá chất phóng xạ vào tĩnh mạch. Lượng bức xạ sẽ rất nhỏ và không có hại, sẽ di chuyển vào gan và chảy đến túi mật. Lúc này, một máy quét đặc biệt sẽ theo dõi hoá chất khi di chuyển qua các cơ quan. Người bệnh đồng thời cũng được dùng thuốc để kích thích co bóp túi mật.'
+
+MERGE (o1:test {id: 'ptc_(chụp_đường_mật_xuyên_gan_qua_da)_test'})
+MERGE (o2:disease {id: 'viêm_túi_mật_disease'})
+MERGE (o1)-[r109:diagnosedBy]->(o2)
+SET r109.text = 'Sau đó, người bệnh cũng có thể được chỉ định thực một số xét nghiệm cần thiết, bao gồm:(3)    PTC (Chụp đường mật xuyên gan qua da): Ở phương pháp này, bác sĩ sẽ sử dụng một cây kim mỏng, luồn qua da và đi vào ống mật trong gan.'
+
+MERGE (o1:test {id: 'ptc_(chụp_đường_mật_xuyên_gan_qua_da)_test'})
+MERGE (o2:treatment {id: 'thuốc_nhuộm_treatment'})
+MERGE (o1)-[r110:relatedTo]->(o2)
+SET r110.text = 'Sau đó, người bệnh cũng có thể được chỉ định thực một số xét nghiệm cần thiết, bao gồm:(3)    PTC (Chụp đường mật xuyên gan qua da): Ở phương pháp này, bác sĩ sẽ sử dụng một cây kim mỏng, luồn qua da và đi vào ống mật trong gan. Sau đó, thuốc nhuộm cũng bắt đầu được tiêm vào để giúp hình ảnh các ống dẫn mật xuất hiện rõ ràng trên kết quả chụp.'
+
+MERGE (o1:test {id: 'ptc_(chụp_đường_mật_xuyên_gan_qua_da)_test'})
+MERGE (o2:organ {id: 'ống_dẫn_mật_organ'})
+MERGE (o1)-[r111:relatedTo]->(o2)
+SET r111.text = 'Sau đó, người bệnh cũng có thể được chỉ định thực một số xét nghiệm cần thiết, bao gồm:(3)    PTC (Chụp đường mật xuyên gan qua da): Ở phương pháp này, bác sĩ sẽ sử dụng một cây kim mỏng, luồn qua da và đi vào ống mật trong gan. Sau đó, thuốc nhuộm cũng bắt đầu được tiêm vào để giúp hình ảnh các ống dẫn mật xuất hiện rõ ràng trên kết quả chụp.'
+
+MERGE (o1:test {id: 'ercp_(chụp_mật_tụy_ngược_dòng_qua_nội_soi)_test'})
+MERGE (o2:disease {id: 'viêm_túi_mật_disease'})
+MERGE (o1)-[r112:diagnosedBy]->(o2)
+SET r112.text = 'Sau đó, người bệnh cũng có thể được chỉ định thực một số xét nghiệm cần thiết, bao gồm:(3)    ERCP (Chụp mật tụy ngược dòng qua nội soi): Phương pháp này được sử dụng để phát hiện và điều trị các vấn đề về gan, túi mật, ống mật và tuyến tụy.'
+
+MERGE (o1:test {id: 'ercp_(chụp_mật_tụy_ngược_dòng_qua_nội_soi)_test'})
+MERGE (o2:organ {id: 'gan_organ'})
+MERGE (o1)-[r113:relatedTo]->(o2)
+SET r113.text = 'Sau đó, người bệnh cũng có thể được chỉ định thực một số xét nghiệm cần thiết, bao gồm:(3)    ERCP (Chụp mật tụy ngược dòng qua nội soi): Phương pháp này được sử dụng để phát hiện và điều trị các vấn đề về gan, túi mật, ống mật và tuyến tụy.'
+
+MERGE (o1:test {id: 'ercp_(chụp_mật_tụy_ngược_dòng_qua_nội_soi)_test'})
+MERGE (o2:organ {id: 'túi_mật_organ'})
+MERGE (o1)-[r114:relatedTo]->(o2)
+SET r114.text = 'Sau đó, người bệnh cũng có thể được chỉ định thực một số xét nghiệm cần thiết, bao gồm:(3)    ERCP (Chụp mật tụy ngược dòng qua nội soi): Phương pháp này được sử dụng để phát hiện và điều trị các vấn đề về gan, túi mật, ống mật và tuyến tụy.'
+
+MERGE (o1:test {id: 'ercp_(chụp_mật_tụy_ngược_dòng_qua_nội_soi)_test'})
+MERGE (o2:organ {id: 'ống_mật_organ'})
+MERGE (o1)-[r115:relatedTo]->(o2)
+SET r115.text = 'Sau đó, người bệnh cũng có thể được chỉ định thực một số xét nghiệm cần thiết, bao gồm:(3)    ERCP (Chụp mật tụy ngược dòng qua nội soi): Phương pháp này được sử dụng để phát hiện và điều trị các vấn đề về gan, túi mật, ống mật và tuyến tụy.'
+
+MERGE (o1:test {id: 'ercp_(chụp_mật_tụy_ngược_dòng_qua_nội_soi)_test'})
+MERGE (o2:organ {id: 'tuyến_tụy_organ'})
+MERGE (o1)-[r116:relatedTo]->(o2)
+SET r116.text = 'Sau đó, người bệnh cũng có thể được chỉ định thực một số xét nghiệm cần thiết, bao gồm:(3)    ERCP (Chụp mật tụy ngược dòng qua nội soi): Phương pháp này được sử dụng để phát hiện và điều trị các vấn đề về gan, túi mật, ống mật và tuyến tụy.'
+
+MERGE (o1:test {id: 'ercp_(chụp_mật_tụy_ngược_dòng_qua_nội_soi)_test'})
+MERGE (o2:test {id: 'tia_x_test'})
+MERGE (o1)-[r117:relatedTo]->(o2)
+SET r117.text = 'Sau đó, người bệnh cũng có thể được chỉ định thực một số xét nghiệm cần thiết, bao gồm:(3)    ERCP (Chụp mật tụy ngược dòng qua nội soi): Phương pháp này được sử dụng để phát hiện và điều trị các vấn đề về gan, túi mật, ống mật và tuyến tụy. Theo đó, bác sĩ sẽ dùng tia X và một ống nội soi dài, dẻo, có đèn và camera ở một đầu.'
+
+MERGE (o1:test {id: 'ercp_(chụp_mật_tụy_ngược_dòng_qua_nội_soi)_test'})
+MERGE (o2:treatment {id: 'ống_nội_soi_treatment'})
+MERGE (o1)-[r118:relatedTo]->(o2)
+SET r118.text = 'Sau đó, người bệnh cũng có thể được chỉ định thực một số xét nghiệm cần thiết, bao gồm:(3)    ERCP (Chụp mật tụy ngược dòng qua nội soi): Phương pháp này được sử dụng để phát hiện và điều trị các vấn đề về gan, túi mật, ống mật và tuyến tụy. Theo đó, bác sĩ sẽ dùng tia X và một ống nội soi dài, dẻo, có đèn và camera ở một đầu. Ống được đưa vào miệng và cổ họng của người bệnh, đi xuống ống dẫn thức ăn (thực quản), qua dạ dày và tiến vào phần đầu tiên của ruột non (tá tràng), cuối cùng đến ống mật.'
+
+MERGE (o1:disease {id: 'viêm_túi_mật_disease'})
+MERGE (o2:treatment {id: 'phương_pháp_điều_trị_treatment'})
+MERGE (o1)-[r119:treatedBy]->(o2)
+SET r119.text = 'Tùy theo từng mức độ nghiêm trọng của bệnh, bác sĩ sẽ chỉ định phương pháp điều trị viêm túi mật phù hợp.'
+
+MERGE (o1:disease {id: 'viêm_túi_mật_disease'})
+MERGE (o2:treatment {id: 'nằm_viện_treatment'})
+MERGE (o1)-[r120:treatedBy]->(o2)
+SET r120.text = 'Đối với tình trạng viêm túi mật, người bệnh thường được chỉ định nằm viện để được theo dõi và kiểm soát hiệu quả.'
+
+MERGE (o1:treatment {id: 'ngưng_ăn_uống_treatment'})
+MERGE (o2:disease {id: 'viêm_túi_mật_disease'})
+MERGE (o1)-[r121:treatedBy]->(o2)
+SET r121.text = 'Ngưng ăn uống trong thời gian đầu: Lúc đầu, người có thể không được phép ăn hoặc uống để giảm căng thẳng cho túi mật bị viêm.'
+
+MERGE (o1:treatment {id: 'truyền_dịch_treatment'})
+MERGE (o2:disease {id: 'viêm_túi_mật_disease'})
+MERGE (o1)-[r122:treatedBy]->(o2)
+SET r122.text = 'Truyền dịch: Dịch có thể được truyền vào cơ thể thông qua một tĩnh mạch trên cánh tay, giúp bổ sung nước, điện giải cũng như chất dinh dưỡng cho người bệnh trong giai đoạn nhịn ăn.'
+
+MERGE (o1:treatment {id: 'thuốc_kháng_sinh_treatment'})
+MERGE (o2:disease {id: 'nhiễm_trùng_túi_mật_disease'})
+MERGE (o1)-[r123:treatedBy]->(o2)
+SET r123.text = 'Uống thuốc kháng sinh để chống nhiễm trùng: Nếu túi mật bị nhiễm trùng, bác sĩ có thể sẽ khuyên người bệnh dùng thuốc kháng sinh.'
+
+MERGE (o1:treatment {id: 'thuốc_giảm_đau_treatment'})
+MERGE (o2:disease {id: 'viêm_túi_mật_disease'})
+MERGE (o1)-[r124:treatedBy]->(o2)
+SET r124.text = 'Thuốc giảm đau: Thuốc giảm đau có thể được chỉ định sử dụng để giúp kiểm soát cơn đau cho đến khi chứng viêm thuyên giảm.'
+
+MERGE (o1:treatment {id: 'thủ_thuật_lấy_sỏi_treatment'})
+MERGE (o2:disease {id: 'viêm_túi_mật_disease'})
+MERGE (o1)-[r125:treatedBy]->(o2)
+SET r125.text = 'Thủ thuật lấy sỏi: Người bệnh có thể phải thực hiện một thủ thuật gọi là chụp mật tụy ngược dòng nội soi (ERCP).'
+
+MERGE (o1:treatment {id: 'thủ_thuật_lấy_sỏi_treatment'})
+MERGE (o2:disease {id: 'tắc_ống_mật_disease'})
+MERGE (o1)-[r126:treatedBy]->(o2)
+SET r126.text = 'Trong quy trình này, bác sĩ sẽ sử dụng thuốc nhuộm để làm rõ hình ảnh các ống mật trên máy tính, sau đó một số dụng cụ có thể được dùng để loại bỏ sỏi, ngăn hiện tượng tắc ống mật.'
+
+MERGE (o1:treatment {id: 'thủ_thuật_lấy_sỏi_treatment'})
+MERGE (o2:disease {id: 'viêm_túi_mật_disease'})
+MERGE (o1)-[r127:treatedBy]->(o2)
+SET r127.text = 'Thủ thuật này được thực hiện khi người bệnh viêm túi mật có sỏi ống mật chủ kèm theo.'
+
+MERGE (o1:treatment {id: 'dẫn_lưu_túi_mật_treatment'})
+MERGE (o2:disease {id: 'nhiễm_trùng_disease'})
+MERGE (o1)-[r128:treatedBy]->(o2)
+SET r128.text = 'Dẫn lưu túi mật: Trong một số trường hợp, chẳng hạn như khi không thể thực hiện phẫu thuật cắt bỏ túi mật, dẫn lưu túi mật là thủ thuật có thể được thực hiện để loại bỏ nhiễm trùng.'
+
+MERGE (o1:treatment {id: 'dẫn_lưu_túi_mật_treatment'})
+MERGE (o2:disease {id: 'nhiễm_trùng_disease'})
+MERGE (o1)-[r129:treatedBy]->(o2)
+SET r129.text = 'Quá trình này sẽ tiến hành qua da trên bụng hoặc bằng cách đưa ống soi đi qua miệng.'
+
+MERGE (o1:symptom {id: 'viêm_symptom'})
+MERGE (o2:disease {id: 'viêm_túi_mật_disease'})
+MERGE (o1)-[r130:isSymptomOf]->(o2)
+SET r130.text = 'Với những phương pháp trên, các triệu chứng viêm có khả năng cải thiện trong vòng khoảng 2 - 3 ngày.'
+
+MERGE (o1:disease {id: 'viêm_túi_mật_disease'})
+MERGE (o2:symptom {id: 'tái_phát_symptom'})
+MERGE (o1)-[r131:causedBy]->(o2)
+SET r131.text = 'Tuy nhiên, viêm túi mật vẫn có khả năng tái phát.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_cắt_bỏ_treatment'})
+MERGE (o2:disease {id: 'viêm_túi_mật_disease'})
+MERGE (o1)-[r132:treatedBy]->(o2)
+SET r132.text = 'Hầu hết những trường hợp viêm đến cuối cùng đều cần phải thực hiện phẫu thuật cắt bỏ.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_cắt_bỏ_treatment'})
+MERGE (o2:disease {id: 'viêm_túi_mật_disease'})
+MERGE (o1)-[r133:treatedBy]->(o2)
+SET r133.text = 'Với tính trạng túi mật bị viêm, nếu các phương pháp nội khoa hoàn toàn không mang lại hiệu quả cải thiện, bác sĩ có thể sẽ chỉ định thực hiện phẫu thuật cắt bỏ.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_cắt_bỏ_treatment'})
+MERGE (o2:disease {id: 'viêm_túi_mật_disease'})
+MERGE (o1)-[r134:treatedBy]->(o2)
+SET r134.text = 'Đây là một thủ thuật xâm lấn tối thiểu, với một vài vết rạch nhỏ trên bụng.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_cắt_bỏ_treatment'})
+MERGE (o2:disease {id: 'viêm_túi_mật_disease'})
+MERGE (o1)-[r135:treatedBy]->(o2)
+SET r135.text = 'Trong một số trường hợp, bác sĩ sẽ tạo vết rạch dài nhưng tương đối hiếm.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_cắt_bỏ_treatment'})
+MERGE (o2:disease {id: 'viêm_túi_mật_disease'})
+MERGE (o1)-[r136:treatedBy]->(o2)
+SET r136.text = 'Thời điểm phẫu thuật phụ thuộc vào mức độ nghiêm trọng của các triệu chứng và nguy cơ chung trước những vấn đề trong và sau điều trị.'
+
+MERGE (o1:treatment {id: 'cắt_bỏ_túi_mật_treatment'})
+MERGE (o2:disease {id: 'viêm_túi_mật_disease'})
+MERGE (o1)-[r137:treatedBy]->(o2)
+SET r137.text = 'Sau khi cắt bỏ túi mật, mật sẽ chảy trực tiếp từ gan vào ruột non, thay vì được lưu trữ trong túi mật như bình thường.'
+
+MERGE (o1:treatment {id: 'cắt_bỏ_túi_mật_treatment'})
+MERGE (o2:disease {id: 'viêm_túi_mật_disease'})
+MERGE (o1)-[r138:treatedBy]->(o2)
+SET r138.text = 'Ngay cả khi không có túi mật, cơ thể người bệnh vẫn có thể thực hiện tiêu hóa thức ăn.'
+
+MERGE (o1:disease {id: 'viêm_túi_mật_disease'})
+MERGE (o2:disease {id: 'nhiễm_trùng_túi_mật_disease'})
+MERGE (o1)-[r139:causedBy]->(o2)
+SET r139.text = 'Tình trạng viêm túi mật nếu không được điều trị kịp thời có thể dẫn đến nhiều biến chứng nghiêm trọng, chẳng hạn như: Nhiễm trùng túi mật: Nếu mật tích tụ trong túi mật gây viêm về lâu dài có thể dẫn đến nhiễm trùng.'
+
+MERGE (o1:disease {id: 'viêm_túi_mật_disease'})
+MERGE (o2:disease {id: 'hoại_thư_disease'})
+MERGE (o1)-[r140:causedBy]->(o2)
+SET r140.text = 'Hoại thư: Viêm túi mật không được điều trị có thể khiến mô bị chết (hoại thư).'
+
+MERGE (o1:disease {id: 'hoại_thư_disease'})
+MERGE (o2:disease {id: 'bệnh_tiểu_đường_disease'})
+MERGE (o1)-[r141:aggravatedBy]->(o2)
+SET r141.text = 'Đây là biến chứng nguy hiểm nhất, đặc biệt là ở những người lớn tuổi, người đang chờ điều trị hoặc mắc bệnh tiểu đường.'
+
+MERGE (o1:disease {id: 'túi_mật_bị_thủng_disease'})
+MERGE (o2:disease {id: 'viêm_túi_mật_disease'})
+MERGE (o1)-[r142:causedBy]->(o2)
+SET r142.text = 'Túi mật bị thủng: do túi mật bị sưng, nhiễm trùng hoặc chết mô.'
+
+MERGE (o1:lifestyle {id: 'giảm_cân_từ_từ_lifestyle'})
+MERGE (o2:disease {id: 'viêm_túi_mật_disease'})
+MERGE (o1)-[r143:preventedBy]->(o2)
+SET r143.text = 'Mỗi người có thể chủ động phòng ngừa viêm túi mật thông qua một số giải pháp hữu ích như sau: Giảm cân từ từ: Quá trình giảm cân nên được thực hiện từ từ, tránh vội vàng giảm nhanh chóng vì có thể làm tăng nguy cơ hình thành sỏi mật.'
+
+MERGE (o1:lifestyle {id: 'duy_trì_cân_nặng_hợp_lý_lifestyle'})
+MERGE (o2:disease {id: 'viêm_túi_mật_disease'})
+MERGE (o1)-[r144:preventedBy]->(o2)
+SET r144.text = 'Duy trì cân nặng hợp lý: Tình trạng thừa cân sẽ làm tăng nguy cơ mắc sỏi mật, vì vậy nên giảm lượng calo và tăng cường hoạt động thể chất mỗi ngày để duy trì mức cân nặng lý tưởng.'
+
+MERGE (o1:lifestyle {id: 'chế_độ_ăn_uống_lành_mạnh_lifestyle'})
+MERGE (o2:disease {id: 'viêm_túi_mật_disease'})
+MERGE (o1)-[r145:preventedBy]->(o2)
+SET r145.text = 'Chọn một chế độ ăn uống lành mạnh: Chế độ ăn lành mạnh giúp phòng ngừa viêm túi mật là nên tăng cường chất xơ, hạn chế chất béo.'
+
+MERGE (o1:food {id: 'rau__ngũ_cốc_và_trái_cây_food'})
+MERGE (o2:disease {id: 'viêm_túi_mật_disease'})
+MERGE (o1)-[r146:preventedBy]->(o2)
+SET r146.text = 'Theo đó, thực đơn nhiều rau, ngũ cốc và trái cây vẫn là gợi ý lý tưởng nhất.'
+
+MERGE (o1:organ {id: 'trung_tâm_nội_soi_và_phẫu_thuật_nội_soi_tiêu_hóa_(bvđk_tâm_anh_tp.hcm)_và_khoa_ngoại_tổng_hợp_(bvđk_tâm_anh_hà_nội)_organ'})
+MERGE (o2:organ {id: 'hệ_thống_bvđk_tâm_anh_organ'})
+MERGE (o1)-[r147:locatedIn]->(o2)
+SET r147.text = 'Trung tâm Nội soi và Phẫu thuật nội soi tiêu hóa (BVĐK Tâm Anh TP.HCM) và Khoa Ngoại Tổng hợp (BVĐK Tâm Anh Hà Nội) là những trung tâm y tế chuyên khoa Tiêu hóa uy tín, cung cấp dịch vụ thăm khám và điều trị cao cấp, hiệu quả cho các bệnh nhân mắc các vấn đề về gan từ nhẹ đến nặng (gan nhiễm mỡ, viêm gan cấp tính, mạn tính, xơ gan, ung thư gan…).'
+
+MERGE (o1:organ {id: 'hệ_thống_bvđk_tâm_anh_organ'})
+MERGE (o2:treatment {id: 'bác_sĩ_nội_khoa_–_ngoại_khoa_–_nội_soi_tiêu_hóa_treatment'})
+MERGE (o1)-[r148:treatedBy]->(o2)
+SET r148.text = 'Hệ thống BVĐK Tâm Anh quy tụ đội ngũ bác sĩ Nội khoa – Ngoại khoa – Nội soi tiêu hóa chuyên môn cao, giàu kinh nghiệm, bên cạnh đó là sự hỗ trợ của hệ thống thiết bị y tế hiện đại, nhập khẩu từ nước ngoài, phục vụ tối đa nhu cầu thăm khám và điều trị của khách hàng.'

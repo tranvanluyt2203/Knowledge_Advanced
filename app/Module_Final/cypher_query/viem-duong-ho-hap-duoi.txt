@@ -1,0 +1,905 @@
+
+MERGE (o1:disease {id: 'viêm_đường_hô_hấp_dưới_disease'})
+MERGE (o2:disease {id: 'bệnh_lý_hô_hấp_disease'})
+MERGE (o1)-[r0:isSymptomOf]->(o2)
+SET r0.text = 'Viêm đường hô hấp dưới là một trong những bệnh lý hô hấp nguy hiểm thường gặp, dẫn đến nhiều trường hợp nhập viện cấp cứu, thậm chí tử vong, đặc biệt là ở trẻ em và người lớn tuổi.'
+
+MERGE (o1:disease {id: 'viêm_đường_hô_hấp_dưới_disease'})
+MERGE (o2:cause {id: 'nhiễm_trùng_cause'})
+MERGE (o1)-[r1:causedBy]->(o2)
+SET r1.text = 'Viêm đường hô hấp dưới là một trong những bệnh lý hô hấp nguy hiểm thường gặp, dẫn đến nhiều trường hợp nhập viện cấp cứu, thậm chí tử vong, đặc biệt là ở trẻ em và người lớn tuổi.'
+
+MERGE (o1:disease {id: 'viêm_đường_hô_hấp_dưới_disease'})
+MERGE (o2:lifestyle {id: 'tuổi_già_lifestyle'})
+MERGE (o1)-[r2:aggravatedBy]->(o2)
+SET r2.text = 'Viêm đường hô hấp dưới là một trong những bệnh lý hô hấp nguy hiểm thường gặp, dẫn đến nhiều trường hợp nhập viện cấp cứu, thậm chí tử vong, đặc biệt là ở trẻ em và người lớn tuổi.'
+
+MERGE (o1:disease {id: 'viêm_đường_hô_hấp_dưới_disease'})
+MERGE (o2:lifestyle {id: 'tuổi_trẻ_lifestyle'})
+MERGE (o1)-[r3:aggravatedBy]->(o2)
+SET r3.text = 'Viêm đường hô hấp dưới là một trong những bệnh lý hô hấp nguy hiểm thường gặp, dẫn đến nhiều trường hợp nhập viện cấp cứu, thậm chí tử vong, đặc biệt là ở trẻ em và người lớn tuổi.'
+
+MERGE (o1:disease {id: 'bệnh_hô_hấp_disease'})
+MERGE (o2:lifestyle {id: 'tuổi_trẻ_lifestyle'})
+MERGE (o1)-[r4:aggravatedBy]->(o2)
+SET r4.text = 'Thống kê tại Việt Nam, trung bình một đứa trẻ có thể mắc các bệnh hô hấp khoảng 5 - 7 lần/năm.'
+
+MERGE (o1:disease {id: 'viêm_phổi_disease'})
+MERGE (o2:disease {id: 'nhiễm_trùng_đường_hô_hấp_dưới_disease'})
+MERGE (o1)-[r5:isSymptomOf]->(o2)
+SET r5.text = 'Thêm vào đó, Việt Nam ghi nhận khoảng 21 - 75% các trường hợp nhập viện cấp cứu là do viêm phổi.'
+
+MERGE (o1:disease {id: 'viêm_phổi_disease'})
+MERGE (o2:treatment {id: 'điều_trị_treatment'})
+MERGE (o1)-[r6:treatedBy]->(o2)
+SET r6.text = 'Điều này gây khó khăn cho việc điều trị trong thời gian dài, tốn nhiều công sức, chi phí cũng như nguy cơ dẫn đến các biến chứng nguy hiểm.'
+
+MERGE (o1:disease {id: 'nhiễm_trùng_đường_hô_hấp_dưới_disease'})
+MERGE (o2:organ {id: 'đường_hô_hấp_dưới_organ'})
+MERGE (o1)-[r7:affects]->(o2)
+SET r7.text = 'Nhiễm trùng đường hô hấp dướihay nhiễm trùng đường hô hấp dưới(Lower Respiratory Tract Infections - LRTI) là các bệnh lý nhiễm trùng ảnh hưởng đến đường hô hấp dưới (ở dưới thanh quản), trong đó viêm phổi và viêm phế quản là hai bệnh lý viêm hô hấp dưới thường gặp nhất.'
+
+MERGE (o1:disease {id: 'nhiễm_trùng_đường_hô_hấp_dưới_disease'})
+MERGE (o2:disease {id: 'bệnh_lý_nhiễm_trùng_disease'})
+MERGE (o1)-[r8:isSymptomOf]->(o2)
+SET r8.text = 'Nhiễm trùng đường hô hấp dướihay nhiễm trùng đường hô hấp dưới(Lower Respiratory Tract Infections - LRTI) là các bệnh lý nhiễm trùng ảnh hưởng đến đường hô hấp dưới (ở dưới thanh quản), trong đó viêm phổi và viêm phế quản là hai bệnh lý viêm hô hấp dưới thường gặp nhất.'
+
+MERGE (o1:disease {id: 'nhiễm_trùng_đường_hô_hấp_dưới_disease'})
+MERGE (o2:cause {id: 'vi_khuẩn_cause'})
+MERGE (o1)-[r9:causedBy]->(o2)
+SET r9.text = 'Bệnh lây truyền qua những giọt bắn chứa vi khuẩn, virus khi người bệnh ho, hắt hơi hoặc bám trên các bề mặt tiếp xúc.'
+
+MERGE (o1:disease {id: 'nhiễm_trùng_đường_hô_hấp_dưới_disease'})
+MERGE (o2:cause {id: 'virus_cause'})
+MERGE (o1)-[r10:causedBy]->(o2)
+SET r10.text = 'Bệnh lây truyền qua những giọt bắn chứa vi khuẩn, virus khi người bệnh ho, hắt hơi hoặc bám trên các bề mặt tiếp xúc.'
+
+MERGE (o1:disease {id: 'viêm_hô_hấp_dưới_disease'})
+MERGE (o2:cause {id: 'nhiễm_trùng_cause'})
+MERGE (o1)-[r11:isSymptomOf]->(o2)
+SET r11.text = 'Giáo sư Ngô Quý Châu cho biết, dấu hiệu củaviêm hô hấp dướikhác nhau tùy thuộc vào mức độ nhiễm trùng.'
+
+MERGE (o1:symptom {id: 'nghẹt_mũi_symptom'})
+MERGE (o2:disease {id: 'viêm_hô_hấp_dưới_disease'})
+MERGE (o1)-[r12:isSymptomOf]->(o2)
+SET r12.text = 'Trường hợp nhiễm trùng nhẹ, các triệu chứng có thể giống với bệnh cảm lạnh thông thường như:  Nghẹt mũi hoặc chảy nước mũi; Sốt nhẹ; Ho khan; Đau họng; Đau đầu, chóng mặt.'
+
+MERGE (o1:symptom {id: 'chảy_nước_mũi_symptom'})
+MERGE (o2:disease {id: 'viêm_hô_hấp_dưới_disease'})
+MERGE (o1)-[r13:isSymptomOf]->(o2)
+SET r13.text = 'Trường hợp nhiễm trùng nhẹ, các triệu chứng có thể giống với bệnh cảm lạnh thông thường như:  Nghẹt mũi hoặc chảy nước mũi; Sốt nhẹ; Ho khan; Đau họng; Đau đầu, chóng mặt.'
+
+MERGE (o1:symptom {id: 'sốt_nhẹ_symptom'})
+MERGE (o2:disease {id: 'viêm_hô_hấp_dưới_disease'})
+MERGE (o1)-[r14:isSymptomOf]->(o2)
+SET r14.text = 'Trường hợp nhiễm trùng nhẹ, các triệu chứng có thể giống với bệnh cảm lạnh thông thường như:  Nghẹt mũi hoặc chảy nước mũi; Sốt nhẹ; Ho khan; Đau họng; Đau đầu, chóng mặt.'
+
+MERGE (o1:symptom {id: 'ho_khan_symptom'})
+MERGE (o2:disease {id: 'viêm_hô_hấp_dưới_disease'})
+MERGE (o1)-[r15:isSymptomOf]->(o2)
+SET r15.text = 'Trường hợp nhiễm trùng nhẹ, các triệu chứng có thể giống với bệnh cảm lạnh thông thường như:  Nghẹt mũi hoặc chảy nước mũi; Sốt nhẹ; Ho khan; Đau họng; Đau đầu, chóng mặt.'
+
+MERGE (o1:symptom {id: 'đau_họng_symptom'})
+MERGE (o2:disease {id: 'viêm_hô_hấp_dưới_disease'})
+MERGE (o1)-[r16:isSymptomOf]->(o2)
+SET r16.text = 'Trường hợp nhiễm trùng nhẹ, các triệu chứng có thể giống với bệnh cảm lạnh thông thường như:  Nghẹt mũi hoặc chảy nước mũi; Sốt nhẹ; Ho khan; Đau họng; Đau đầu, chóng mặt.'
+
+MERGE (o1:symptom {id: 'đau_đầu_symptom'})
+MERGE (o2:disease {id: 'viêm_hô_hấp_dưới_disease'})
+MERGE (o1)-[r17:isSymptomOf]->(o2)
+SET r17.text = 'Trường hợp nhiễm trùng nhẹ, các triệu chứng có thể giống với bệnh cảm lạnh thông thường như:  Nghẹt mũi hoặc chảy nước mũi; Sốt nhẹ; Ho khan; Đau họng; Đau đầu, chóng mặt.'
+
+MERGE (o1:symptom {id: 'chóng_mặt_symptom'})
+MERGE (o2:disease {id: 'viêm_hô_hấp_dưới_disease'})
+MERGE (o1)-[r18:isSymptomOf]->(o2)
+SET r18.text = 'Trường hợp nhiễm trùng nhẹ, các triệu chứng có thể giống với bệnh cảm lạnh thông thường như:  Nghẹt mũi hoặc chảy nước mũi; Sốt nhẹ; Ho khan; Đau họng; Đau đầu, chóng mặt.'
+
+MERGE (o1:symptom {id: 'ho_dữ_dội_symptom'})
+MERGE (o2:disease {id: 'nhiễm_trùng_đường_hô_hấp_dưới_disease'})
+MERGE (o1)-[r19:isSymptomOf]->(o2)
+SET r19.text = 'Trong các trường hợpnhiễm trùng đường hô hấp dướiở mức độ nặng, người bệnh có thể xuất hiện thêm các triệu chứng gồm:  Ho dữ dội, ho có đờm; Sốt cao; Nhịp tim nhanh; Thở khò khè hoặc khó thở; Cảm thấy nặng hoặc đau ở ngực.'
+
+MERGE (o1:symptom {id: 'ho_có_đờm_symptom'})
+MERGE (o2:disease {id: 'nhiễm_trùng_đường_hô_hấp_dưới_disease'})
+MERGE (o1)-[r20:isSymptomOf]->(o2)
+SET r20.text = 'Trong các trường hợpnhiễm trùng đường hô hấp dướiở mức độ nặng, người bệnh có thể xuất hiện thêm các triệu chứng gồm:  Ho dữ dội, ho có đờm; Sốt cao; Nhịp tim nhanh; Thở khò khè hoặc khó thở; Cảm thấy nặng hoặc đau ở ngực.'
+
+MERGE (o1:symptom {id: 'sốt_cao_symptom'})
+MERGE (o2:disease {id: 'nhiễm_trùng_đường_hô_hấp_dưới_disease'})
+MERGE (o1)-[r21:isSymptomOf]->(o2)
+SET r21.text = 'Trong các trường hợpnhiễm trùng đường hô hấp dướiở mức độ nặng, người bệnh có thể xuất hiện thêm các triệu chứng gồm:  Ho dữ dội, ho có đờm; Sốt cao; Nhịp tim nhanh; Thở khò khè hoặc khó thở; Cảm thấy nặng hoặc đau ở ngực.'
+
+MERGE (o1:symptom {id: 'nhịp_tim_nhanh_symptom'})
+MERGE (o2:disease {id: 'nhiễm_trùng_đường_hô_hấp_dưới_disease'})
+MERGE (o1)-[r22:isSymptomOf]->(o2)
+SET r22.text = 'Trong các trường hợpnhiễm trùng đường hô hấp dướiở mức độ nặng, người bệnh có thể xuất hiện thêm các triệu chứng gồm:  Ho dữ dội, ho có đờm; Sốt cao; Nhịp tim nhanh; Thở khò khè hoặc khó thở; Cảm thấy nặng hoặc đau ở ngực.'
+
+MERGE (o1:symptom {id: 'thở_khò_khè_symptom'})
+MERGE (o2:disease {id: 'nhiễm_trùng_đường_hô_hấp_dưới_disease'})
+MERGE (o1)-[r23:isSymptomOf]->(o2)
+SET r23.text = 'Trong các trường hợpnhiễm trùng đường hô hấp dướiở mức độ nặng, người bệnh có thể xuất hiện thêm các triệu chứng gồm:  Ho dữ dội, ho có đờm; Sốt cao; Nhịp tim nhanh; Thở khò khè hoặc khó thở; Cảm thấy nặng hoặc đau ở ngực.'
+
+MERGE (o1:symptom {id: 'khó_thở_symptom'})
+MERGE (o2:disease {id: 'nhiễm_trùng_đường_hô_hấp_dưới_disease'})
+MERGE (o1)-[r24:isSymptomOf]->(o2)
+SET r24.text = 'Trong các trường hợpnhiễm trùng đường hô hấp dướiở mức độ nặng, người bệnh có thể xuất hiện thêm các triệu chứng gồm:  Ho dữ dội, ho có đờm; Sốt cao; Nhịp tim nhanh; Thở khò khè hoặc khó thở; Cảm thấy nặng hoặc đau ở ngực.'
+
+MERGE (o1:symptom {id: 'cảm_thấy_nặng_ngực_symptom'})
+MERGE (o2:disease {id: 'nhiễm_trùng_đường_hô_hấp_dưới_disease'})
+MERGE (o1)-[r25:isSymptomOf]->(o2)
+SET r25.text = 'Trong các trường hợpnhiễm trùng đường hô hấp dướiở mức độ nặng, người bệnh có thể xuất hiện thêm các triệu chứng gồm:  Ho dữ dội, ho có đờm; Sốt cao; Nhịp tim nhanh; Thở khò khè hoặc khó thở; Cảm thấy nặng hoặc đau ở ngực.'
+
+MERGE (o1:symptom {id: 'đau_ngực_symptom'})
+MERGE (o2:disease {id: 'nhiễm_trùng_đường_hô_hấp_dưới_disease'})
+MERGE (o1)-[r26:isSymptomOf]->(o2)
+SET r26.text = 'Trong các trường hợpnhiễm trùng đường hô hấp dướiở mức độ nặng, người bệnh có thể xuất hiện thêm các triệu chứng gồm:  Ho dữ dội, ho có đờm; Sốt cao; Nhịp tim nhanh; Thở khò khè hoặc khó thở; Cảm thấy nặng hoặc đau ở ngực.'
+
+MERGE (o1:cause {id: 'virus_cause'})
+MERGE (o2:disease {id: 'nhiễm_trùng_đường_hô_hấp_dưới_disease'})
+MERGE (o1)-[r27:causes]->(o2)
+SET r27.text = 'Tác nhân đường hô hấp dưới bị nhiễm trùng thường do virus, vi khuẩn, đặc biệt là vào thời điểm giao mùa.'
+
+MERGE (o1:cause {id: 'vi_khuẩn_cause'})
+MERGE (o2:disease {id: 'nhiễm_trùng_đường_hô_hấp_dưới_disease'})
+MERGE (o1)-[r28:causes]->(o2)
+SET r28.text = 'Tác nhân đường hô hấp dưới bị nhiễm trùng thường do virus, vi khuẩn, đặc biệt là vào thời điểm giao mùa.'
+
+MERGE (o1:cause {id: 'virus_cúm_cause'})
+MERGE (o2:disease {id: 'nhiễm_trùng_đường_hô_hấp_dưới_disease'})
+MERGE (o1)-[r29:causes]->(o2)
+SET r29.text = 'Virus: Các virus gây bệnh cúm hoặc virus hợp bào hô hấp (Respiratory Syncytial Virus - RSV).'
+
+MERGE (o1:cause {id: 'virus_hợp_bào_hô_hấp_cause'})
+MERGE (o2:disease {id: 'nhiễm_trùng_đường_hô_hấp_dưới_disease'})
+MERGE (o1)-[r30:causes]->(o2)
+SET r30.text = 'Virus: Các virus gây bệnh cúm hoặc virus hợp bào hô hấp (Respiratory Syncytial Virus - RSV).'
+
+MERGE (o1:cause {id: 'streptococcus_pneumoniae_cause'})
+MERGE (o2:disease {id: 'nhiễm_trùng_đường_hô_hấp_dưới_disease'})
+MERGE (o1)-[r31:causes]->(o2)
+SET r31.text = 'Vi khuẩn: Điển hình là các vi khuẩn Streptococcus pneumoniae (phế cầu khuẩn) hoặc Staphylococcus aureus.'
+
+MERGE (o1:cause {id: 'staphylococcus_aureus_cause'})
+MERGE (o2:disease {id: 'nhiễm_trùng_đường_hô_hấp_dưới_disease'})
+MERGE (o1)-[r32:causes]->(o2)
+SET r32.text = 'Vi khuẩn: Điển hình là các vi khuẩn Streptococcus pneumoniae (phế cầu khuẩn) hoặc Staphylococcus aureus.'
+
+MERGE (o1:cause {id: 'khói_thuốc_lá_cause'})
+MERGE (o2:disease {id: 'nhiễm_trùng_đường_hô_hấp_dưới_disease'})
+MERGE (o1)-[r33:causes]->(o2)
+SET r33.text = 'Một số trường hợpnhiễm trùng đường hô hấp dướixuất phát từ các chất trong môi trường gây kích ứng hoặc gây viêm đường thở như:  Khói thuốc lá; Khói bụi do ô nhiễm môi trường; Hóa chất, các chất gây dị ứng.'
+
+MERGE (o1:cause {id: 'khói_bụi_cause'})
+MERGE (o2:disease {id: 'nhiễm_trùng_đường_hô_hấp_dưới_disease'})
+MERGE (o1)-[r34:causes]->(o2)
+SET r34.text = 'Một số trường hợpnhiễm trùng đường hô hấp dướixuất phát từ các chất trong môi trường gây kích ứng hoặc gây viêm đường thở như:  Khói thuốc lá; Khói bụi do ô nhiễm môi trường; Hóa chất, các chất gây dị ứng.'
+
+MERGE (o1:cause {id: 'hóa_chất_cause'})
+MERGE (o2:disease {id: 'nhiễm_trùng_đường_hô_hấp_dưới_disease'})
+MERGE (o1)-[r35:causes]->(o2)
+SET r35.text = 'Một số trường hợpnhiễm trùng đường hô hấp dướixuất phát từ các chất trong môi trường gây kích ứng hoặc gây viêm đường thở như:  Khói thuốc lá; Khói bụi do ô nhiễm môi trường; Hóa chất, các chất gây dị ứng.'
+
+MERGE (o1:disease {id: 'nhiễm_trùng_đường_hô_hấp_dưới_disease'})
+MERGE (o2:lifestyle {id: 'giao_mùa_thu_đông_lifestyle'})
+MERGE (o1)-[r36:associatedWith]->(o2)
+SET r36.text = 'Nhiễm trùng đường hô hấp dưới là bệnh lý thường gặp vào thời điểm giao mùa thu đông, xuất hiện sau các đợt cảm cúm hoặc cảm lạnh.'
+
+MERGE (o1:disease {id: 'nhiễm_trùng_đường_hô_hấp_dưới_disease'})
+MERGE (o2:disease {id: 'cảm_cúm_hoặc_cảm_lạnh_disease'})
+MERGE (o1)-[r37:causedBy]->(o2)
+SET r37.text = 'Nhiễm trùng đường hô hấp dưới là bệnh lý thường gặp vào thời điểm giao mùa thu đông, xuất hiện sau các đợt cảm cúm hoặc cảm lạnh.'
+
+MERGE (o1:disease {id: 'viêm_hô_hấp_dưới_disease'})
+MERGE (o2:lifestyle {id: 'hút_thuốc_lá_lifestyle'})
+MERGE (o1)-[r38:aggravatedBy]->(o2)
+SET r38.text = 'Bất kỳ ai cũng có thể bị viêm hô hấp dưới, nhưng bệnh có nguy cơ cao hơn ở các đối tượng:  Trẻ em và người lớn tuổi, đặc biệt là trẻ em dưới 5 tuổi và người lớn trên 65 tuổi; Người có thói quen hút thuốc lá; Phụ nữ mang thai; Người mắc các bệnh lý mãn tính như hen suyễn, phổi tắc nghẽn mãn tính, bệnh tim mạch, tiểu đường, các bệnh về gan và thận.'
+
+MERGE (o1:disease {id: 'viêm_hô_hấp_dưới_disease'})
+MERGE (o2:disease {id: 'hen_suyễn_disease'})
+MERGE (o1)-[r39:aggravatedBy]->(o2)
+SET r39.text = 'Bất kỳ ai cũng có thể bị viêm hô hấp dưới, nhưng bệnh có nguy cơ cao hơn ở các đối tượng:  Trẻ em và người lớn tuổi, đặc biệt là trẻ em dưới 5 tuổi và người lớn trên 65 tuổi; Người có thói quen hút thuốc lá; Phụ nữ mang thai; Người mắc các bệnh lý mãn tính như hen suyễn, phổi tắc nghẽn mãn tính, bệnh tim mạch, tiểu đường, các bệnh về gan và thận.'
+
+MERGE (o1:disease {id: 'viêm_hô_hấp_dưới_disease'})
+MERGE (o2:disease {id: 'phổi_tắc_nghẽn_mãn_tính_disease'})
+MERGE (o1)-[r40:aggravatedBy]->(o2)
+SET r40.text = 'Bất kỳ ai cũng có thể bị viêm hô hấp dưới, nhưng bệnh có nguy cơ cao hơn ở các đối tượng:  Trẻ em và người lớn tuổi, đặc biệt là trẻ em dưới 5 tuổi và người lớn trên 65 tuổi; Người có thói quen hút thuốc lá; Phụ nữ mang thai; Người mắc các bệnh lý mãn tính như hen suyễn, phổi tắc nghẽn mãn tính, bệnh tim mạch, tiểu đường, các bệnh về gan và thận.'
+
+MERGE (o1:disease {id: 'viêm_hô_hấp_dưới_disease'})
+MERGE (o2:disease {id: 'bệnh_tim_mạch_disease'})
+MERGE (o1)-[r41:aggravatedBy]->(o2)
+SET r41.text = 'Bất kỳ ai cũng có thể bị viêm hô hấp dưới, nhưng bệnh có nguy cơ cao hơn ở các đối tượng:  Trẻ em và người lớn tuổi, đặc biệt là trẻ em dưới 5 tuổi và người lớn trên 65 tuổi; Người có thói quen hút thuốc lá; Phụ nữ mang thai; Người mắc các bệnh lý mãn tính như hen suyễn, phổi tắc nghẽn mãn tính, bệnh tim mạch, tiểu đường, các bệnh về gan và thận.'
+
+MERGE (o1:disease {id: 'viêm_hô_hấp_dưới_disease'})
+MERGE (o2:disease {id: 'tiểu_đường_disease'})
+MERGE (o1)-[r42:aggravatedBy]->(o2)
+SET r42.text = 'Bất kỳ ai cũng có thể bị viêm hô hấp dưới, nhưng bệnh có nguy cơ cao hơn ở các đối tượng:  Trẻ em và người lớn tuổi, đặc biệt là trẻ em dưới 5 tuổi và người lớn trên 65 tuổi; Người có thói quen hút thuốc lá; Phụ nữ mang thai; Người mắc các bệnh lý mãn tính như hen suyễn, phổi tắc nghẽn mãn tính, bệnh tim mạch, tiểu đường, các bệnh về gan và thận.'
+
+MERGE (o1:disease {id: 'viêm_hô_hấp_dưới_disease'})
+MERGE (o2:disease {id: 'bệnh_về_gan_và_thận_disease'})
+MERGE (o1)-[r43:aggravatedBy]->(o2)
+SET r43.text = 'Bất kỳ ai cũng có thể bị viêm hô hấp dưới, nhưng bệnh có nguy cơ cao hơn ở các đối tượng:  Trẻ em và người lớn tuổi, đặc biệt là trẻ em dưới 5 tuổi và người lớn trên 65 tuổi; Người có thói quen hút thuốc lá; Phụ nữ mang thai; Người mắc các bệnh lý mãn tính như hen suyễn, phổi tắc nghẽn mãn tính, bệnh tim mạch, tiểu đường, các bệnh về gan và thận.'
+
+MERGE (o1:symptom {id: 'hệ_miễn_dịch_suy_giảm_symptom'})
+MERGE (o2:disease {id: 'bệnh_ung_thư_disease'})
+MERGE (o1)-[r44:causedBy]->(o2)
+SET r44.text = 'Những người có hệ miễn dịch suy giảm do mắc các bệnh ung thư, hoặc vừa trải qua phẫu thuật điều trị, hóa trị liệu cao.'
+
+MERGE (o1:symptom {id: 'hệ_miễn_dịch_suy_giảm_symptom'})
+MERGE (o2:treatment {id: 'phẫu_thuật_điều_trị_treatment'})
+MERGE (o1)-[r45:causedBy]->(o2)
+SET r45.text = 'Những người có hệ miễn dịch suy giảm do mắc các bệnh ung thư, hoặc vừa trải qua phẫu thuật điều trị, hóa trị liệu cao.'
+
+MERGE (o1:symptom {id: 'hệ_miễn_dịch_suy_giảm_symptom'})
+MERGE (o2:treatment {id: 'hóa_trị_liệu_treatment'})
+MERGE (o1)-[r46:causedBy]->(o2)
+SET r46.text = 'Những người có hệ miễn dịch suy giảm do mắc các bệnh ung thư, hoặc vừa trải qua phẫu thuật điều trị, hóa trị liệu cao.'
+
+MERGE (o1:disease {id: 'viêm_phế_quản_cấp_disease'})
+MERGE (o2:organ {id: 'phế_quản_organ'})
+MERGE (o1)-[r47:locatedIn]->(o2)
+SET r47.text = 'Viêm phế quản cấp(tiếng Anh là Acute Bronchitis - AB) là hiện tượng nhiễm trùng ở phế quản.'
+
+MERGE (o1:disease {id: 'viêm_phế_quản_cấp_disease'})
+MERGE (o2:disease {id: 'viêm_hô_hấp_dưới_cấp_tính_disease'})
+MERGE (o1)-[r48:isSymptomOf]->(o2)
+SET r48.text = 'Viêm phế quản cấp(tiếng Anh là Acute Bronchitis - AB) là hiện tượng nhiễm trùng ở phế quản. Đây là bệnh thường gặp nhất trong các bệnh viêm hô hấp dướicấp tính, thường diễn tiến lành tính, không để lại di chứng.'
+
+MERGE (o1:disease {id: 'viêm_phế_quản_cấp_disease'})
+MERGE (o2:disease {id: 'cảm_cúm_disease'})
+MERGE (o1)-[r49:causedBy]->(o2)
+SET r49.text = 'Viêm phế quản cấp thường xuất hiện sau đợt cảm cúm, người bệnh có những triệu chứng đặc trưng như sốt, hắt hơi, sổ mũi, đau đầu, đau nhức cơ thể,&#8230;'
+
+MERGE (o1:symptom {id: 'sốt_symptom'})
+MERGE (o2:disease {id: 'viêm_phế_quản_cấp_disease'})
+MERGE (o1)-[r50:isSymptomOf]->(o2)
+SET r50.text = 'Viêm phế quản cấp thường xuất hiện sau đợt cảm cúm, người bệnh có những triệu chứng đặc trưng như sốt, hắt hơi, sổ mũi, đau đầu, đau nhức cơ thể,&#8230;'
+
+MERGE (o1:symptom {id: 'hắt_hơi_symptom'})
+MERGE (o2:disease {id: 'viêm_phế_quản_cấp_disease'})
+MERGE (o1)-[r51:isSymptomOf]->(o2)
+SET r51.text = 'Viêm phế quản cấp thường xuất hiện sau đợt cảm cúm, người bệnh có những triệu chứng đặc trưng như sốt, hắt hơi, sổ mũi, đau đầu, đau nhức cơ thể,&#8230;'
+
+MERGE (o1:symptom {id: 'sổ_mũi_symptom'})
+MERGE (o2:disease {id: 'viêm_phế_quản_cấp_disease'})
+MERGE (o1)-[r52:isSymptomOf]->(o2)
+SET r52.text = 'Viêm phế quản cấp thường xuất hiện sau đợt cảm cúm, người bệnh có những triệu chứng đặc trưng như sốt, hắt hơi, sổ mũi, đau đầu, đau nhức cơ thể,&#8230;'
+
+MERGE (o1:symptom {id: 'đau_đầu_symptom'})
+MERGE (o2:disease {id: 'viêm_phế_quản_cấp_disease'})
+MERGE (o1)-[r53:isSymptomOf]->(o2)
+SET r53.text = 'Viêm phế quản cấp thường xuất hiện sau đợt cảm cúm, người bệnh có những triệu chứng đặc trưng như sốt, hắt hơi, sổ mũi, đau đầu, đau nhức cơ thể,&#8230;'
+
+MERGE (o1:symptom {id: 'đau_nhức_cơ_thể_symptom'})
+MERGE (o2:disease {id: 'viêm_phế_quản_cấp_disease'})
+MERGE (o1)-[r54:isSymptomOf]->(o2)
+SET r54.text = 'Viêm phế quản cấp thường xuất hiện sau đợt cảm cúm, người bệnh có những triệu chứng đặc trưng như sốt, hắt hơi, sổ mũi, đau đầu, đau nhức cơ thể,&#8230;'
+
+MERGE (o1:symptom {id: 'ho_symptom'})
+MERGE (o2:disease {id: 'viêm_phế_quản_cấp_disease'})
+MERGE (o1)-[r55:isSymptomOf]->(o2)
+SET r55.text = 'Cơn ho có thể tăng dần theo thời gian, ho có đờm hoặc không.'
+
+MERGE (o1:symptom {id: 'đờm_symptom'})
+MERGE (o2:disease {id: 'viêm_phế_quản_cấp_disease'})
+MERGE (o1)-[r56:isSymptomOf]->(o2)
+SET r56.text = 'Cơn ho có thể tăng dần theo thời gian, ho có đờm hoặc không.'
+
+MERGE (o1:symptom {id: 'khó_thở_symptom'})
+MERGE (o2:disease {id: 'viêm_phế_quản_cấp_disease'})
+MERGE (o1)-[r57:isSymptomOf]->(o2)
+SET r57.text = 'Một số trường hợp khác người bệnh khó thở và cảm giác đau vùng ngực.'
+
+MERGE (o1:symptom {id: 'đau_vùng_ngực_symptom'})
+MERGE (o2:disease {id: 'viêm_phế_quản_cấp_disease'})
+MERGE (o1)-[r58:isSymptomOf]->(o2)
+SET r58.text = 'Một số trường hợp khác người bệnh khó thở và cảm giác đau vùng ngực.'
+
+MERGE (o1:disease {id: 'viêm_phổi_disease'})
+MERGE (o2:organ {id: 'phổi_organ'})
+MERGE (o1)-[r59:locatedIn]->(o2)
+SET r59.text = 'Viêm phổi (Pneumonia) là tình trạng nhiễm trùng phổi do vi khuẩn, virus hoặc nấm, ký sinh trùng.'
+
+MERGE (o1:disease {id: 'viêm_phổi_disease'})
+MERGE (o2:cause {id: 'vi_khuẩn_cause'})
+MERGE (o1)-[r60:causedBy]->(o2)
+SET r60.text = 'Viêm phổi (Pneumonia) là tình trạng nhiễm trùng phổi do vi khuẩn, virus hoặc nấm, ký sinh trùng.'
+
+MERGE (o1:disease {id: 'viêm_phổi_disease'})
+MERGE (o2:cause {id: 'virus_cause'})
+MERGE (o1)-[r61:causedBy]->(o2)
+SET r61.text = 'Viêm phổi (Pneumonia) là tình trạng nhiễm trùng phổi do vi khuẩn, virus hoặc nấm, ký sinh trùng.'
+
+MERGE (o1:disease {id: 'viêm_phổi_disease'})
+MERGE (o2:cause {id: 'nấm_cause'})
+MERGE (o1)-[r62:causedBy]->(o2)
+SET r62.text = 'Viêm phổi (Pneumonia) là tình trạng nhiễm trùng phổi do vi khuẩn, virus hoặc nấm, ký sinh trùng.'
+
+MERGE (o1:disease {id: 'viêm_phổi_disease'})
+MERGE (o2:cause {id: 'ký_sinh_trùng_cause'})
+MERGE (o1)-[r63:causedBy]->(o2)
+SET r63.text = 'Viêm phổi (Pneumonia) là tình trạng nhiễm trùng phổi do vi khuẩn, virus hoặc nấm, ký sinh trùng.'
+
+MERGE (o1:disease {id: 'viêm_phổi_disease'})
+MERGE (o2:disease {id: 'bệnh_lý_mãn_tính_disease'})
+MERGE (o1)-[r64:causedBy]->(o2)
+SET r64.text = 'Bệnh cũng có thể là biến chứng của các bệnh lý mãn tính khác, dấu hiệu của bệnh khác nhau tùy vào thể trạng và loại tác nhân gây bệnh.'
+
+MERGE (o1:disease {id: 'viêm_phổi_disease'})
+MERGE (o2:treatment {id: 'điều_trị_kịp_thời_treatment'})
+MERGE (o1)-[r65:treatedBy]->(o2)
+SET r65.text = 'Viêm phổi nếu không được phát hiện sớm và điều trị kịp thời, đúng cách có thể dẫn đến các biến chứng nguy hiểm, thậm chí đe dọa tính mạng.'
+
+MERGE (o1:symptom {id: 'sốt_cao_symptom'})
+MERGE (o2:disease {id: 'viêm_phổi_disease'})
+MERGE (o1)-[r66:isSymptomOf]->(o2)
+SET r66.text = 'Do đó khuyến cáo người bệnh cần đến ngay cơ sở y tế để được thăm khám, chẩn đoán và điều trị kịp thời khi có các triệu chứng như sốt cao trên 39 độ C, ớn lạnh, đổ mồ hôi, mệt mỏi kéo dài không cải thiện,&#8230;'
+
+MERGE (o1:symptom {id: 'ớn_lạnh_symptom'})
+MERGE (o2:disease {id: 'viêm_phổi_disease'})
+MERGE (o1)-[r67:isSymptomOf]->(o2)
+SET r67.text = 'Do đó khuyến cáo người bệnh cần đến ngay cơ sở y tế để được thăm khám, chẩn đoán và điều trị kịp thời khi có các triệu chứng như sốt cao trên 39 độ C, ớn lạnh, đổ mồ hôi, mệt mỏi kéo dài không cải thiện,&#8230;'
+
+MERGE (o1:symptom {id: 'đổ_mồ_hôi_symptom'})
+MERGE (o2:disease {id: 'viêm_phổi_disease'})
+MERGE (o1)-[r68:isSymptomOf]->(o2)
+SET r68.text = 'Do đó khuyến cáo người bệnh cần đến ngay cơ sở y tế để được thăm khám, chẩn đoán và điều trị kịp thời khi có các triệu chứng như sốt cao trên 39 độ C, ớn lạnh, đổ mồ hôi, mệt mỏi kéo dài không cải thiện,&#8230;'
+
+MERGE (o1:symptom {id: 'mệt_mỏi_kéo_dài_symptom'})
+MERGE (o2:disease {id: 'viêm_phổi_disease'})
+MERGE (o1)-[r69:isSymptomOf]->(o2)
+SET r69.text = 'Do đó khuyến cáo người bệnh cần đến ngay cơ sở y tế để được thăm khám, chẩn đoán và điều trị kịp thời khi có các triệu chứng như sốt cao trên 39 độ C, ớn lạnh, đổ mồ hôi, mệt mỏi kéo dài không cải thiện,&#8230;'
+
+MERGE (o1:symptom {id: 'sốt_cao_symptom'})
+MERGE (o2:disease {id: 'viêm_phổi_disease'})
+MERGE (o1)-[r70:isSymptomOf]->(o2)
+SET r70.text = 'Người bệnh nên đến ngay cơ sở y tế khi có ngay các triệu chứng sốt cao, đổ mồ hôi, mệt mỏi kéo dài&#8230;'
+
+MERGE (o1:symptom {id: 'đổ_mồ_hôi_symptom'})
+MERGE (o2:disease {id: 'viêm_phổi_disease'})
+MERGE (o1)-[r71:isSymptomOf]->(o2)
+SET r71.text = 'Người bệnh nên đến ngay cơ sở y tế khi có ngay các triệu chứng sốt cao, đổ mồ hôi, mệt mỏi kéo dài&#8230;'
+
+MERGE (o1:symptom {id: 'mệt_mỏi_kéo_dài_symptom'})
+MERGE (o2:disease {id: 'viêm_phổi_disease'})
+MERGE (o1)-[r72:isSymptomOf]->(o2)
+SET r72.text = 'Người bệnh nên đến ngay cơ sở y tế khi có ngay các triệu chứng sốt cao, đổ mồ hôi, mệt mỏi kéo dài&#8230;'
+
+MERGE (o1:disease {id: 'viêm_tiểu_phế_quản_disease'})
+MERGE (o2:organ {id: 'phổi_organ'})
+MERGE (o1)-[r73:locatedIn]->(o2)
+SET r73.text = 'Viêm tiểu phế quản (Bronchiolitis)là bệnh nhiễm trùng phổi thường gặp ở trẻ nhỏ.'
+
+MERGE (o1:disease {id: 'viêm_tiểu_phế_quản_disease'})
+MERGE (o2:lifestyle {id: 'trẻ_nhỏ_lifestyle'})
+MERGE (o1)-[r74:aggravatedBy]->(o2)
+SET r74.text = 'Viêm tiểu phế quản (Bronchiolitis)là bệnh nhiễm trùng phổi thường gặp ở trẻ nhỏ. Thống kê tại Việt Nam, bệnh chiếm khoảng 40 - 50% nguyên nhân trẻ em nhập viện điều trị tại khoa hô hấp.'
+
+MERGE (o1:symptom {id: 'ho_symptom'})
+MERGE (o2:disease {id: 'viêm_tiểu_phế_quản_disease'})
+MERGE (o1)-[r75:isSymptomOf]->(o2)
+SET r75.text = 'Các triệu chứng ban đầu của bệnh tương tự như cảm lạnh thông thường, sau đó trẻ có thể ho, thở khò khè, thậm chí khó thở.'
+
+MERGE (o1:symptom {id: 'thở_khò_khè_symptom'})
+MERGE (o2:disease {id: 'viêm_tiểu_phế_quản_disease'})
+MERGE (o1)-[r76:isSymptomOf]->(o2)
+SET r76.text = 'Các triệu chứng ban đầu của bệnh tương tự như cảm lạnh thông thường, sau đó trẻ có thể ho, thở khò khè, thậm chí khó thở.'
+
+MERGE (o1:symptom {id: 'khó_thở_symptom'})
+MERGE (o2:disease {id: 'viêm_tiểu_phế_quản_disease'})
+MERGE (o1)-[r77:isSymptomOf]->(o2)
+SET r77.text = 'Các triệu chứng ban đầu của bệnh tương tự như cảm lạnh thông thường, sau đó trẻ có thể ho, thở khò khè, thậm chí khó thở.'
+
+MERGE (o1:disease {id: 'viêm_tiểu_phế_quản_disease'})
+MERGE (o2:treatment {id: 'điều_trị_kịp_thời_treatment'})
+MERGE (o1)-[r78:treatedBy]->(o2)
+SET r78.text = 'Nếu không được điều trị kịp thời và đúng cách, trẻ có thể gặp nguy hiểm bởi các biến chứng như rối loạn chức năng hô hấp, suy hô hấp cấp, tràn khí màng phổi, xẹp phổi.'
+
+MERGE (o1:symptom {id: 'rối_loạn_chức_năng_hô_hấp_symptom'})
+MERGE (o2:disease {id: 'viêm_tiểu_phế_quản_disease'})
+MERGE (o1)-[r79:isSymptomOf]->(o2)
+SET r79.text = 'Nếu không được điều trị kịp thời và đúng cách, trẻ có thể gặp nguy hiểm bởi các biến chứng như rối loạn chức năng hô hấp, suy hô hấp cấp, tràn khí màng phổi, xẹp phổi.'
+
+MERGE (o1:symptom {id: 'suy_hô_hấp_cấp_symptom'})
+MERGE (o2:disease {id: 'viêm_tiểu_phế_quản_disease'})
+MERGE (o1)-[r80:isSymptomOf]->(o2)
+SET r80.text = 'Nếu không được điều trị kịp thời và đúng cách, trẻ có thể gặp nguy hiểm bởi các biến chứng như rối loạn chức năng hô hấp, suy hô hấp cấp, tràn khí màng phổi, xẹp phổi.'
+
+MERGE (o1:symptom {id: 'tràn_khí_màng_phổi_symptom'})
+MERGE (o2:disease {id: 'viêm_tiểu_phế_quản_disease'})
+MERGE (o1)-[r81:isSymptomOf]->(o2)
+SET r81.text = 'Nếu không được điều trị kịp thời và đúng cách, trẻ có thể gặp nguy hiểm bởi các biến chứng như rối loạn chức năng hô hấp, suy hô hấp cấp, tràn khí màng phổi, xẹp phổi.'
+
+MERGE (o1:symptom {id: 'xẹp_phổi_symptom'})
+MERGE (o2:disease {id: 'viêm_tiểu_phế_quản_disease'})
+MERGE (o1)-[r82:isSymptomOf]->(o2)
+SET r82.text = 'Nếu không được điều trị kịp thời và đúng cách, trẻ có thể gặp nguy hiểm bởi các biến chứng như rối loạn chức năng hô hấp, suy hô hấp cấp, tràn khí màng phổi, xẹp phổi.'
+
+MERGE (o1:disease {id: 'lao_phổi_disease'})
+MERGE (o2:organ {id: 'phổi_organ'})
+MERGE (o1)-[r83:locatedIn]->(o2)
+SET r83.text = 'Lao phổi, còn được biến đến với tên gọi ho lao (PulmonaryTuberculosis) là căn bệnh truyền nhiễm nguy hiểm, có thể lây lan trong cộng đồng khi người bệnh ho, hắt hơi hoặc khạc nhổ đờm.'
+
+MERGE (o1:disease {id: 'lao_phổi_disease'})
+MERGE (o2:cause {id: 'vi_khuẩn_lao_cause'})
+MERGE (o1)-[r84:causedBy]->(o2)
+SET r84.text = 'Lao phổi, còn được biến đến với tên gọi ho lao (PulmonaryTuberculosis) là căn bệnh truyền nhiễm nguy hiểm, có thể lây lan trong cộng đồng khi người bệnh ho, hắt hơi hoặc khạc nhổ đờm.'
+
+MERGE (o1:disease {id: 'lao_phổi_disease'})
+MERGE (o2:lifestyle {id: 'lây_lan_trong_cộng_đồng_lifestyle'})
+MERGE (o1)-[r85:associatedWith]->(o2)
+SET r85.text = 'Lao phổi, còn được biến đến với tên gọi ho lao (PulmonaryTuberculosis) là căn bệnh truyền nhiễm nguy hiểm, có thể lây lan trong cộng đồng khi người bệnh ho, hắt hơi hoặc khạc nhổ đờm.'
+
+MERGE (o1:symptom {id: 'ho_symptom'})
+MERGE (o2:disease {id: 'lao_phổi_disease'})
+MERGE (o1)-[r86:isSymptomOf]->(o2)
+SET r86.text = 'Lao phổi, còn được biến đến với tên gọi ho lao (PulmonaryTuberculosis) là căn bệnh truyền nhiễm nguy hiểm, có thể lây lan trong cộng đồng khi người bệnh ho, hắt hơi hoặc khạc nhổ đờm.'
+
+MERGE (o1:symptom {id: 'hắt_hơi_symptom'})
+MERGE (o2:disease {id: 'lao_phổi_disease'})
+MERGE (o1)-[r87:isSymptomOf]->(o2)
+SET r87.text = 'Lao phổi, còn được biến đến với tên gọi ho lao (PulmonaryTuberculosis) là căn bệnh truyền nhiễm nguy hiểm, có thể lây lan trong cộng đồng khi người bệnh ho, hắt hơi hoặc khạc nhổ đờm.'
+
+MERGE (o1:symptom {id: 'khạc_nhổ_đờm_symptom'})
+MERGE (o2:disease {id: 'lao_phổi_disease'})
+MERGE (o1)-[r88:isSymptomOf]->(o2)
+SET r88.text = 'Lao phổi, còn được biến đến với tên gọi ho lao (PulmonaryTuberculosis) là căn bệnh truyền nhiễm nguy hiểm, có thể lây lan trong cộng đồng khi người bệnh ho, hắt hơi hoặc khạc nhổ đờm.'
+
+MERGE (o1:cause {id: 'vi_khuẩn_lao_cause'})
+MERGE (o2:organ {id: 'phổi_organ'})
+MERGE (o1)-[r89:affects]->(o2)
+SET r89.text = 'Vi khuẩn lao có thể xâm nhập vào cơ thể, thông qua đường máu và di chuyển đến phổi cùng các bộ phận khác trong cơ thể và gây bệnh lao tại đó.'
+
+MERGE (o1:cause {id: 'vi_khuẩn_lao_cause'})
+MERGE (o2:organ {id: 'cơ_thể_organ'})
+MERGE (o1)-[r90:affects]->(o2)
+SET r90.text = 'Vi khuẩn lao có thể xâm nhập vào cơ thể, thông qua đường máu và di chuyển đến phổi cùng các bộ phận khác trong cơ thể và gây bệnh lao tại đó.'
+
+MERGE (o1:disease {id: 'viêm_hô_hấp_dưới_disease'})
+MERGE (o2:treatment {id: 'điều_trị_sớm_treatment'})
+MERGE (o1)-[r91:treatedBy]->(o2)
+SET r91.text = 'GS.TS.BS Ngô Quý Châu khuyến cáo, mặc dù các bệnh lý viêm hô hấp dưới thường không gây ra biến chứng nhưng nếu người bệnh chủ quan, không điều trị từ sớm, để bệnh diễn tiến nặng có thể gây ra các biến chứng nguy hiểm như nhiễm trùng huyết, suy tim, suy hô hấp cấp (ARDS), ngừng thở, áp xe phổi,&#8230; nguy cơ đe dọa tính mạng.'
+
+MERGE (o1:disease {id: 'nhiễm_trùng_huyết_disease'})
+MERGE (o2:disease {id: 'viêm_hô_hấp_dưới_disease'})
+MERGE (o1)-[r92:isSymptomOf]->(o2)
+SET r92.text = 'GS.TS.BS Ngô Quý Châu khuyến cáo, mặc dù các bệnh lý viêm hô hấp dưới thường không gây ra biến chứng nhưng nếu người bệnh chủ quan, không điều trị từ sớm, để bệnh diễn tiến nặng có thể gây ra các biến chứng nguy hiểm như nhiễm trùng huyết, suy tim, suy hô hấp cấp (ARDS), ngừng thở, áp xe phổi,&#8230; nguy cơ đe dọa tính mạng.'
+
+MERGE (o1:disease {id: 'suy_tim_disease'})
+MERGE (o2:disease {id: 'viêm_hô_hấp_dưới_disease'})
+MERGE (o1)-[r93:isSymptomOf]->(o2)
+SET r93.text = 'GS.TS.BS Ngô Quý Châu khuyến cáo, mặc dù các bệnh lý viêm hô hấp dưới thường không gây ra biến chứng nhưng nếu người bệnh chủ quan, không điều trị từ sớm, để bệnh diễn tiến nặng có thể gây ra các biến chứng nguy hiểm như nhiễm trùng huyết, suy tim, suy hô hấp cấp (ARDS), ngừng thở, áp xe phổi,&#8230; nguy cơ đe dọa tính mạng.'
+
+MERGE (o1:disease {id: 'suy_hô_hấp_cấp_disease'})
+MERGE (o2:disease {id: 'viêm_hô_hấp_dưới_disease'})
+MERGE (o1)-[r94:isSymptomOf]->(o2)
+SET r94.text = 'GS.TS.BS Ngô Quý Châu khuyến cáo, mặc dù các bệnh lý viêm hô hấp dưới thường không gây ra biến chứng nhưng nếu người bệnh chủ quan, không điều trị từ sớm, để bệnh diễn tiến nặng có thể gây ra các biến chứng nguy hiểm như nhiễm trùng huyết, suy tim, suy hô hấp cấp (ARDS), ngừng thở, áp xe phổi,&#8230; nguy cơ đe dọa tính mạng.'
+
+MERGE (o1:symptom {id: 'ngừng_thở_symptom'})
+MERGE (o2:disease {id: 'viêm_hô_hấp_dưới_disease'})
+MERGE (o1)-[r95:isSymptomOf]->(o2)
+SET r95.text = 'GS.TS.BS Ngô Quý Châu khuyến cáo, mặc dù các bệnh lý viêm hô hấp dưới thường không gây ra biến chứng nhưng nếu người bệnh chủ quan, không điều trị từ sớm, để bệnh diễn tiến nặng có thể gây ra các biến chứng nguy hiểm như nhiễm trùng huyết, suy tim, suy hô hấp cấp (ARDS), ngừng thở, áp xe phổi,&#8230; nguy cơ đe dọa tính mạng.'
+
+MERGE (o1:symptom {id: 'các_triệu_chứng_bệnh_symptom'})
+MERGE (o2:treatment {id: 'bác_sĩ_treatment'})
+MERGE (o1)-[r96:diagnosedBy]->(o2)
+SET r96.text = 'Để chẩn đoán chính xác tình trạng và mức độ của tình trạng viêm nhiễm, bác sĩ sẽ thăm hỏi người bệnh những thông tin liên quan như các triệu chứng bệnh, thời gian xuất hiện các triệu chứng, bệnh sử và thói quen sinh hoạt của người bệnh.'
+
+MERGE (o1:symptom {id: 'thời_gian_xuất_hiện_các_triệu_chứng_symptom'})
+MERGE (o2:treatment {id: 'bác_sĩ_treatment'})
+MERGE (o1)-[r97:diagnosedBy]->(o2)
+SET r97.text = 'Để chẩn đoán chính xác tình trạng và mức độ của tình trạng viêm nhiễm, bác sĩ sẽ thăm hỏi người bệnh những thông tin liên quan như các triệu chứng bệnh, thời gian xuất hiện các triệu chứng, bệnh sử và thói quen sinh hoạt của người bệnh.'
+
+MERGE (o1:disease {id: 'bệnh_sử_disease'})
+MERGE (o2:treatment {id: 'bác_sĩ_treatment'})
+MERGE (o1)-[r98:diagnosedBy]->(o2)
+SET r98.text = 'Để chẩn đoán chính xác tình trạng và mức độ của tình trạng viêm nhiễm, bác sĩ sẽ thăm hỏi người bệnh những thông tin liên quan như các triệu chứng bệnh, thời gian xuất hiện các triệu chứng, bệnh sử và thói quen sinh hoạt của người bệnh.'
+
+MERGE (o1:lifestyle {id: 'thói_quen_sinh_hoạt_lifestyle'})
+MERGE (o2:treatment {id: 'bác_sĩ_treatment'})
+MERGE (o1)-[r99:diagnosedBy]->(o2)
+SET r99.text = 'Để chẩn đoán chính xác tình trạng và mức độ của tình trạng viêm nhiễm, bác sĩ sẽ thăm hỏi người bệnh những thông tin liên quan như các triệu chứng bệnh, thời gian xuất hiện các triệu chứng, bệnh sử và thói quen sinh hoạt của người bệnh.'
+
+MERGE (o1:test {id: 'đo_nhiệt_độ_cơ_thể_test'})
+MERGE (o2:treatment {id: 'bác_sĩ_treatment'})
+MERGE (o1)-[r100:diagnosedBy]->(o2)
+SET r100.text = 'Tiếp đó, bác sĩ sẽ thực hiện các bước thăm khám gồm đo nhiệt độ cơ thể, nghe lồng ngực nhằm kiểm tra lượng oxy trong cơ thể.'
+
+MERGE (o1:test {id: 'nghe_lồng_ngực_test'})
+MERGE (o2:treatment {id: 'bác_sĩ_treatment'})
+MERGE (o1)-[r101:diagnosedBy]->(o2)
+SET r101.text = 'Tiếp đó, bác sĩ sẽ thực hiện các bước thăm khám gồm đo nhiệt độ cơ thể, nghe lồng ngực nhằm kiểm tra lượng oxy trong cơ thể.'
+
+MERGE (o1:symptom {id: 'lượng_oxy_trong_cơ_thể_symptom'})
+MERGE (o2:treatment {id: 'bác_sĩ_treatment'})
+MERGE (o1)-[r102:diagnosedBy]->(o2)
+SET r102.text = 'Tiếp đó, bác sĩ sẽ thực hiện các bước thăm khám gồm đo nhiệt độ cơ thể, nghe lồng ngực nhằm kiểm tra lượng oxy trong cơ thể.'
+
+MERGE (o1:test {id: 'chụp_x-quang_test'})
+MERGE (o2:treatment {id: 'bác_sĩ_treatment'})
+MERGE (o1)-[r103:diagnosedBy]->(o2)
+SET r103.text = 'Trong trường hợp người bệnh có triệu chứng nặng hơn, bác sĩ có thể chỉ định thực hiện một số phương pháp cận lâm sàng cần thiết cho việc chẩn đoán gồm:  Chụp X-quang: Xác định mức độ nhiễm trùng; Xét nghiệm máu và chất nhầy: Xác định loại vi khuẩn, virus gây viêm hô hấp dưới để có chỉ định kháng sinh phù hợp; Đo thở oxy: Xác định lượng oxy trong máu.'
+
+MERGE (o1:test {id: 'xét_nghiệm_máu_test'})
+MERGE (o2:treatment {id: 'bác_sĩ_treatment'})
+MERGE (o1)-[r104:diagnosedBy]->(o2)
+SET r104.text = 'Trong trường hợp người bệnh có triệu chứng nặng hơn, bác sĩ có thể chỉ định thực hiện một số phương pháp cận lâm sàng cần thiết cho việc chẩn đoán gồm:  Chụp X-quang: Xác định mức độ nhiễm trùng; Xét nghiệm máu và chất nhầy: Xác định loại vi khuẩn, virus gây viêm hô hấp dưới để có chỉ định kháng sinh phù hợp; Đo thở oxy: Xác định lượng oxy trong máu.'
+
+MERGE (o1:test {id: 'xét_nghiệm_chất_nhầy_test'})
+MERGE (o2:treatment {id: 'bác_sĩ_treatment'})
+MERGE (o1)-[r105:diagnosedBy]->(o2)
+SET r105.text = 'Trong trường hợp người bệnh có triệu chứng nặng hơn, bác sĩ có thể chỉ định thực hiện một số phương pháp cận lâm sàng cần thiết cho việc chẩn đoán gồm:  Chụp X-quang: Xác định mức độ nhiễm trùng; Xét nghiệm máu và chất nhầy: Xác định loại vi khuẩn, virus gây viêm hô hấp dưới để có chỉ định kháng sinh phù hợp; Đo thở oxy: Xác định lượng oxy trong máu.'
+
+MERGE (o1:test {id: 'đo_thở_oxy_test'})
+MERGE (o2:treatment {id: 'bác_sĩ_treatment'})
+MERGE (o1)-[r106:diagnosedBy]->(o2)
+SET r106.text = 'Trong trường hợp người bệnh có triệu chứng nặng hơn, bác sĩ có thể chỉ định thực hiện một số phương pháp cận lâm sàng cần thiết cho việc chẩn đoán gồm:  Chụp X-quang: Xác định mức độ nhiễm trùng; Xét nghiệm máu và chất nhầy: Xác định loại vi khuẩn, virus gây viêm hô hấp dưới để có chỉ định kháng sinh phù hợp; Đo thở oxy: Xác định lượng oxy trong máu.'
+
+MERGE (o1:disease {id: 'viêm_hô_hấp_dưới_disease'})
+MERGE (o2:cause {id: 'vi_khuẩn_cause'})
+MERGE (o1)-[r107:causedBy]->(o2)
+SET r107.text = 'Trong trường hợp người bệnh có triệu chứng nặng hơn, bác sĩ có thể chỉ định thực hiện một số phương pháp cận lâm sàng cần thiết cho việc chẩn đoán gồm:  Chụp X-quang: Xác định mức độ nhiễm trùng; Xét nghiệm máu và chất nhầy: Xác định loại vi khuẩn, virus gây viêm hô hấp dưới để có chỉ định kháng sinh phù hợp; Đo thở oxy: Xác định lượng oxy trong máu.'
+
+MERGE (o1:disease {id: 'viêm_hô_hấp_dưới_disease'})
+MERGE (o2:cause {id: 'virus_cause'})
+MERGE (o1)-[r108:causedBy]->(o2)
+SET r108.text = 'Trong trường hợp người bệnh có triệu chứng nặng hơn, bác sĩ có thể chỉ định thực hiện một số phương pháp cận lâm sàng cần thiết cho việc chẩn đoán gồm:  Chụp X-quang: Xác định mức độ nhiễm trùng; Xét nghiệm máu và chất nhầy: Xác định loại vi khuẩn, virus gây viêm hô hấp dưới để có chỉ định kháng sinh phù hợp; Đo thở oxy: Xác định lượng oxy trong máu.'
+
+MERGE (o1:disease {id: 'viêm_hô_hấp_dưới_disease'})
+MERGE (o2:treatment {id: 'kháng_sinh_treatment'})
+MERGE (o1)-[r109:treatedBy]->(o2)
+SET r109.text = 'Trong trường hợp người bệnh có triệu chứng nặng hơn, bác sĩ có thể chỉ định thực hiện một số phương pháp cận lâm sàng cần thiết cho việc chẩn đoán gồm:  Chụp X-quang: Xác định mức độ nhiễm trùng; Xét nghiệm máu và chất nhầy: Xác định loại vi khuẩn, virus gây viêm hô hấp dưới để có chỉ định kháng sinh phù hợp; Đo thở oxy: Xác định lượng oxy trong máu.'
+
+MERGE (o1:test {id: 'kiểm_tra_cận_lâm_sàng_test'})
+MERGE (o2:disease {id: 'tình_trạng_bệnh_disease'})
+MERGE (o1)-[r110:diagnosedBy]->(o2)
+SET r110.text = 'Các kiểm tra cận lâm sàng hỗ trợ cho việc chẩn đoán tình trạng bệnh chính xác'
+
+MERGE (o1:disease {id: 'nhiễm_trùng_đường_hô_hấp_dưới_disease'})
+MERGE (o2:disease {id: 'biến_chứng_nguy_hiểm_disease'})
+MERGE (o1)-[r111:isSymptomOf]->(o2)
+SET r111.text = 'Mặc dù nhiễm trùng đường hô hấp dưới thường nhẹ và tự cải thiện trong khoảng từ 7 - 10 ngày, nhưng không ít trường hợp bệnh đột ngột diễn tiến nặng, dẫn đến biến chứng nguy hiểm, đe dọa tính mạng người bệnh.'
+
+MERGE (o1:disease {id: 'nhiễm_trùng_đường_hô_hấp_dưới_disease'})
+MERGE (o2:symptom {id: 'tính_mạng_người_bệnh_symptom'})
+MERGE (o1)-[r112:relatedTo]->(o2)
+SET r112.text = 'Mặc dù nhiễm trùng đường hô hấp dưới thường nhẹ và tự cải thiện trong khoảng từ 7 - 10 ngày, nhưng không ít trường hợp bệnh đột ngột diễn tiến nặng, dẫn đến biến chứng nguy hiểm, đe dọa tính mạng người bệnh.'
+
+MERGE (o1:disease {id: 'nhiễm_trùng_đường_hô_hấp_dưới_disease'})
+MERGE (o2:treatment {id: 'thăm_khám_treatment'})
+MERGE (o1)-[r113:treatedBy]->(o2)
+SET r113.text = 'Do đó, khuyến cáo người bệnh nên đến ngay cơ sở y tế để được thăm khám, theo dõi và điều trị kịp thời.'
+
+MERGE (o1:disease {id: 'nhiễm_trùng_đường_hô_hấp_dưới_disease'})
+MERGE (o2:treatment {id: 'theo_dõi_treatment'})
+MERGE (o1)-[r114:treatedBy]->(o2)
+SET r114.text = 'Do đó, khuyến cáo người bệnh nên đến ngay cơ sở y tế để được thăm khám, theo dõi và điều trị kịp thời.'
+
+MERGE (o1:disease {id: 'nhiễm_trùng_đường_hô_hấp_dưới_disease'})
+MERGE (o2:treatment {id: 'điều_trị_treatment'})
+MERGE (o1)-[r115:treatedBy]->(o2)
+SET r115.text = 'Do đó, khuyến cáo người bệnh nên đến ngay cơ sở y tế để được thăm khám, theo dõi và điều trị kịp thời.'
+
+MERGE (o1:disease {id: 'bệnh_lý_disease'})
+MERGE (o2:treatment {id: 'phác_đồ_điều_trị_treatment'})
+MERGE (o1)-[r116:treatedBy]->(o2)
+SET r116.text = 'Tùy theo từng bệnh lý và mức độ của bệnh mà người bệnh được chỉ định các phác đồ điều trị khác nhau:'
+
+MERGE (o1:disease {id: 'mức_độ_của_bệnh_disease'})
+MERGE (o2:treatment {id: 'phác_đồ_điều_trị_treatment'})
+MERGE (o1)-[r117:treatedBy]->(o2)
+SET r117.text = 'Tùy theo từng bệnh lý và mức độ của bệnh mà người bệnh được chỉ định các phác đồ điều trị khác nhau:'
+
+MERGE (o1:treatment {id: 'nghỉ_ngơi_treatment'})
+MERGE (o2:disease {id: 'nhiễm_trùng_đường_hô_hấp_dưới_disease'})
+MERGE (o1)-[r118:treatedBy]->(o2)
+SET r118.text = 'Nghỉ ngơi, bỏ thói quen hút thuốc lá, chú ý giữ ấm cho cơ thể; Uống đủ nước trong ngày, bù nước và các chất điện giải cho cơ thể; Bổ sung vitamin và khoáng chất giúp tăng cường hệ miễn dịch; Dùng thuốc theo hướng dẫn của bác sĩ.'
+
+MERGE (o1:lifestyle {id: 'bỏ_thói_quen_hút_thuốc_lá_lifestyle'})
+MERGE (o2:disease {id: 'nhiễm_trùng_đường_hô_hấp_dưới_disease'})
+MERGE (o1)-[r119:treatedBy]->(o2)
+SET r119.text = 'Nghỉ ngơi, bỏ thói quen hút thuốc lá, chú ý giữ ấm cho cơ thể; Uống đủ nước trong ngày, bù nước và các chất điện giải cho cơ thể; Bổ sung vitamin và khoáng chất giúp tăng cường hệ miễn dịch; Dùng thuốc theo hướng dẫn của bác sĩ.'
+
+MERGE (o1:lifestyle {id: 'giữ_ấm_cho_cơ_thể_lifestyle'})
+MERGE (o2:disease {id: 'nhiễm_trùng_đường_hô_hấp_dưới_disease'})
+MERGE (o1)-[r120:treatedBy]->(o2)
+SET r120.text = 'Nghỉ ngơi, bỏ thói quen hút thuốc lá, chú ý giữ ấm cho cơ thể; Uống đủ nước trong ngày, bù nước và các chất điện giải cho cơ thể; Bổ sung vitamin và khoáng chất giúp tăng cường hệ miễn dịch; Dùng thuốc theo hướng dẫn của bác sĩ.'
+
+MERGE (o1:treatment {id: 'uống_đủ_nước_treatment'})
+MERGE (o2:disease {id: 'nhiễm_trùng_đường_hô_hấp_dưới_disease'})
+MERGE (o1)-[r121:treatedBy]->(o2)
+SET r121.text = 'Nghỉ ngơi, bỏ thói quen hút thuốc lá, chú ý giữ ấm cho cơ thể; Uống đủ nước trong ngày, bù nước và các chất điện giải cho cơ thể; Bổ sung vitamin và khoáng chất giúp tăng cường hệ miễn dịch; Dùng thuốc theo hướng dẫn của bác sĩ.'
+
+MERGE (o1:treatment {id: 'bù_nước_treatment'})
+MERGE (o2:disease {id: 'nhiễm_trùng_đường_hô_hấp_dưới_disease'})
+MERGE (o1)-[r122:treatedBy]->(o2)
+SET r122.text = 'Nghỉ ngơi, bỏ thói quen hút thuốc lá, chú ý giữ ấm cho cơ thể; Uống đủ nước trong ngày, bù nước và các chất điện giải cho cơ thể; Bổ sung vitamin và khoáng chất giúp tăng cường hệ miễn dịch; Dùng thuốc theo hướng dẫn của bác sĩ.'
+
+MERGE (o1:treatment {id: 'bổ_sung_vitamin_treatment'})
+MERGE (o2:disease {id: 'nhiễm_trùng_đường_hô_hấp_dưới_disease'})
+MERGE (o1)-[r123:treatedBy]->(o2)
+SET r123.text = 'Nghỉ ngơi, bỏ thói quen hút thuốc lá, chú ý giữ ấm cho cơ thể; Uống đủ nước trong ngày, bù nước và các chất điện giải cho cơ thể; Bổ sung vitamin và khoáng chất giúp tăng cường hệ miễn dịch; Dùng thuốc theo hướng dẫn của bác sĩ.'
+
+MERGE (o1:treatment {id: 'bổ_sung_khoáng_chất_treatment'})
+MERGE (o2:disease {id: 'nhiễm_trùng_đường_hô_hấp_dưới_disease'})
+MERGE (o1)-[r124:treatedBy]->(o2)
+SET r124.text = 'Nghỉ ngơi, bỏ thói quen hút thuốc lá, chú ý giữ ấm cho cơ thể; Uống đủ nước trong ngày, bù nước và các chất điện giải cho cơ thể; Bổ sung vitamin và khoáng chất giúp tăng cường hệ miễn dịch; Dùng thuốc theo hướng dẫn của bác sĩ.'
+
+MERGE (o1:treatment {id: 'tăng_cường_hệ_miễn_dịch_treatment'})
+MERGE (o2:disease {id: 'nhiễm_trùng_đường_hô_hấp_dưới_disease'})
+MERGE (o1)-[r125:treatedBy]->(o2)
+SET r125.text = 'Nghỉ ngơi, bỏ thói quen hút thuốc lá, chú ý giữ ấm cho cơ thể; Uống đủ nước trong ngày, bù nước và các chất điện giải cho cơ thể; Bổ sung vitamin và khoáng chất giúp tăng cường hệ miễn dịch; Dùng thuốc theo hướng dẫn của bác sĩ.'
+
+MERGE (o1:treatment {id: 'dùng_thuốc_treatment'})
+MERGE (o2:disease {id: 'nhiễm_trùng_đường_hô_hấp_dưới_disease'})
+MERGE (o1)-[r126:treatedBy]->(o2)
+SET r126.text = 'Nghỉ ngơi, bỏ thói quen hút thuốc lá, chú ý giữ ấm cho cơ thể; Uống đủ nước trong ngày, bù nước và các chất điện giải cho cơ thể; Bổ sung vitamin và khoáng chất giúp tăng cường hệ miễn dịch; Dùng thuốc theo hướng dẫn của bác sĩ.'
+
+MERGE (o1:treatment {id: 'dùng_thuốc_treatment'})
+MERGE (o2:disease {id: 'nhiễm_trùng_đường_hô_hấp_dưới_disease'})
+MERGE (o1)-[r127:treatedBy]->(o2)
+SET r127.text = 'Dùng thuốc theo chỉ định của bác sĩ, chỉ định này sẽ khác nhau tùy theo mức độ các triệu chứng và loại virus, vi khuẩn gây bệnh.'
+
+MERGE (o1:symptom {id: 'triệu_chứng_symptom'})
+MERGE (o2:disease {id: 'nhiễm_trùng_đường_hô_hấp_dưới_disease'})
+MERGE (o1)-[r128:isSymptomOf]->(o2)
+SET r128.text = 'Dùng thuốc theo chỉ định của bác sĩ, chỉ định này sẽ khác nhau tùy theo mức độ các triệu chứng và loại virus, vi khuẩn gây bệnh.'
+
+MERGE (o1:cause {id: 'virus_cause'})
+MERGE (o2:disease {id: 'nhiễm_trùng_đường_hô_hấp_dưới_disease'})
+MERGE (o1)-[r129:causedBy]->(o2)
+SET r129.text = 'Dùng thuốc theo chỉ định của bác sĩ, chỉ định này sẽ khác nhau tùy theo mức độ các triệu chứng và loại virus, vi khuẩn gây bệnh.'
+
+MERGE (o1:cause {id: 'vi_khuẩn_cause'})
+MERGE (o2:disease {id: 'nhiễm_trùng_đường_hô_hấp_dưới_disease'})
+MERGE (o1)-[r130:causedBy]->(o2)
+SET r130.text = 'Dùng thuốc theo chỉ định của bác sĩ, chỉ định này sẽ khác nhau tùy theo mức độ các triệu chứng và loại virus, vi khuẩn gây bệnh.'
+
+MERGE (o1:treatment {id: 'điều_trị_thở_oxy_treatment'})
+MERGE (o2:disease {id: 'suy_hô_hấp_cấp_disease'})
+MERGE (o1)-[r131:treatedBy]->(o2)
+SET r131.text = 'Điều trị thở oxy khi người bệnh có các dấu hiệu của suy hô hấp cấp (ARDS) như khó thở, tím tái,&#8230;'
+
+MERGE (o1:symptom {id: 'khó_thở_symptom'})
+MERGE (o2:disease {id: 'suy_hô_hấp_cấp_disease'})
+MERGE (o1)-[r132:isSymptomOf]->(o2)
+SET r132.text = 'Điều trị thở oxy khi người bệnh có các dấu hiệu của suy hô hấp cấp (ARDS) như khó thở, tím tái,&#8230;'
+
+MERGE (o1:symptom {id: 'tím_tái_symptom'})
+MERGE (o2:disease {id: 'suy_hô_hấp_cấp_disease'})
+MERGE (o1)-[r133:isSymptomOf]->(o2)
+SET r133.text = 'Điều trị thở oxy khi người bệnh có các dấu hiệu của suy hô hấp cấp (ARDS) như khó thở, tím tái,&#8230;'
+
+MERGE (o1:disease {id: 'viêm_tiểu_phế_quản_disease'})
+MERGE (o2:treatment {id: 'vắc_xin_treatment'})
+MERGE (o1)-[r134:preventedBy]->(o2)
+SET r134.text = 'Hiện nay chưa có vắc xin đặc trị cho viêm tiểu phế quản.'
+
+MERGE (o1:treatment {id: 'thuốc_kháng_sinh_treatment'})
+MERGE (o2:disease {id: 'viêm_tiểu_phế_quản_disease'})
+MERGE (o1)-[r135:treatedBy]->(o2)
+SET r135.text = 'Thuốc kháng sinh hoặc thuốc cảm thông thường cũng không hiệu quả khi điều trị bệnh này.'
+
+MERGE (o1:treatment {id: 'thuốc_cảm_treatment'})
+MERGE (o2:disease {id: 'viêm_tiểu_phế_quản_disease'})
+MERGE (o1)-[r136:treatedBy]->(o2)
+SET r136.text = 'Thuốc kháng sinh hoặc thuốc cảm thông thường cũng không hiệu quả khi điều trị bệnh này.'
+
+MERGE (o1:disease {id: 'viêm_tiểu_phế_quản_disease'})
+MERGE (o2:treatment {id: 'chăm_sóc_tại_nhà_treatment'})
+MERGE (o1)-[r137:treatedBy]->(o2)
+SET r137.text = 'Hầu hết các trường hợp sẽ tự khỏi và có thể chăm sóc tại nhà.'
+
+MERGE (o1:disease {id: 'lao_phổi_disease'})
+MERGE (o2:treatment {id: 'điều_trị_có_kiểm_soát_trực_tiếp_treatment'})
+MERGE (o1)-[r138:treatedBy]->(o2)
+SET r138.text = 'Lao phổi được điều trị theo quy chuẩn của Bộ y tế bao gồm:  Điều trị có kiểm soát trực tiếp (DOTS). (3) Điều trị theo phác đồ chuẩn được Bộ Y tế quy định cho các trường hợp lao ở phổi mới được phát hiện.'
+
+MERGE (o1:disease {id: 'lao_phổi_disease'})
+MERGE (o2:treatment {id: 'điều_trị_theo_phác_đồ_chuẩn_treatment'})
+MERGE (o1)-[r139:treatedBy]->(o2)
+SET r139.text = 'Lao phổi được điều trị theo quy chuẩn của Bộ y tế bao gồm:  Điều trị có kiểm soát trực tiếp (DOTS). (3) Điều trị theo phác đồ chuẩn được Bộ Y tế quy định cho các trường hợp lao ở phổi mới được phát hiện.'
+
+MERGE (o1:treatment {id: 'uống_thuốc_treatment'})
+MERGE (o2:disease {id: 'lao_phổi_disease'})
+MERGE (o1)-[r140:treatedBy]->(o2)
+SET r140.text = 'Bệnh nhân cần tuân thủ nguyên tắc: Uống thuốc đúng phác đồ, đủ thời gian và thường xuyên theo chỉ dẫn của bác sĩ.'
+
+MERGE (o1:disease {id: 'viêm_đường_hô_hấp_dưới_disease'})
+MERGE (o2:treatment {id: 'nghỉ_ngơi_treatment'})
+MERGE (o1)-[r141:treatedBy]->(o2)
+SET r141.text = 'GS.TS.BS Ngô Quý Châu cho biết, để quá trình điều trị viêm đường hô hấp dưới được hiệu quả như mong muốn, người bệnh nên:  Thực hiện nghỉ ngơi, tránh những việc quá sức khiến cơ thể mệt mỏi; Bù nước cho cơ thể, tránh mất nước cũng như giúp đờm trong phổi loãng hơn, người bệnh dễ khạc nhổ; Xông hít tinh dầu bạc hà để sạch đờm; Bỏ thói quen hút thuốc lá; Người bệnh có thể uống nước ấm pha mật ong và chanh để giảm triệu chứng khó chịu khi ho.'
+
+MERGE (o1:disease {id: 'viêm_đường_hô_hấp_dưới_disease'})
+MERGE (o2:treatment {id: 'bù_nước_treatment'})
+MERGE (o1)-[r142:treatedBy]->(o2)
+SET r142.text = 'GS.TS.BS Ngô Quý Châu cho biết, để quá trình điều trị viêm đường hô hấp dưới được hiệu quả như mong muốn, người bệnh nên:  Thực hiện nghỉ ngơi, tránh những việc quá sức khiến cơ thể mệt mỏi; Bù nước cho cơ thể, tránh mất nước cũng như giúp đờm trong phổi loãng hơn, người bệnh dễ khạc nhổ; Xông hít tinh dầu bạc hà để sạch đờm; Bỏ thói quen hút thuốc lá; Người bệnh có thể uống nước ấm pha mật ong và chanh để giảm triệu chứng khó chịu khi ho.'
+
+MERGE (o1:disease {id: 'viêm_đường_hô_hấp_dưới_disease'})
+MERGE (o2:treatment {id: 'xông_hít_tinh_dầu_bạc_hà_treatment'})
+MERGE (o1)-[r143:treatedBy]->(o2)
+SET r143.text = 'GS.TS.BS Ngô Quý Châu cho biết, để quá trình điều trị viêm đường hô hấp dưới được hiệu quả như mong muốn, người bệnh nên:  Thực hiện nghỉ ngơi, tránh những việc quá sức khiến cơ thể mệt mỏi; Bù nước cho cơ thể, tránh mất nước cũng như giúp đờm trong phổi loãng hơn, người bệnh dễ khạc nhổ; Xông hít tinh dầu bạc hà để sạch đờm; Bỏ thói quen hút thuốc lá; Người bệnh có thể uống nước ấm pha mật ong và chanh để giảm triệu chứng khó chịu khi ho.'
+
+MERGE (o1:disease {id: 'viêm_đường_hô_hấp_dưới_disease'})
+MERGE (o2:lifestyle {id: 'bỏ_thói_quen_hút_thuốc_lá_lifestyle'})
+MERGE (o1)-[r144:treatedBy]->(o2)
+SET r144.text = 'GS.TS.BS Ngô Quý Châu cho biết, để quá trình điều trị viêm đường hô hấp dưới được hiệu quả như mong muốn, người bệnh nên:  Thực hiện nghỉ ngơi, tránh những việc quá sức khiến cơ thể mệt mỏi; Bù nước cho cơ thể, tránh mất nước cũng như giúp đờm trong phổi loãng hơn, người bệnh dễ khạc nhổ; Xông hít tinh dầu bạc hà để sạch đờm; Bỏ thói quen hút thuốc lá; Người bệnh có thể uống nước ấm pha mật ong và chanh để giảm triệu chứng khó chịu khi ho.'
+
+MERGE (o1:disease {id: 'viêm_đường_hô_hấp_dưới_disease'})
+MERGE (o2:food {id: 'uống_nước_ấm_pha_mật_ong_và_chanh_food'})
+MERGE (o1)-[r145:treatedBy]->(o2)
+SET r145.text = 'GS.TS.BS Ngô Quý Châu cho biết, để quá trình điều trị viêm đường hô hấp dưới được hiệu quả như mong muốn, người bệnh nên:  Thực hiện nghỉ ngơi, tránh những việc quá sức khiến cơ thể mệt mỏi; Bù nước cho cơ thể, tránh mất nước cũng như giúp đờm trong phổi loãng hơn, người bệnh dễ khạc nhổ; Xông hít tinh dầu bạc hà để sạch đờm; Bỏ thói quen hút thuốc lá; Người bệnh có thể uống nước ấm pha mật ong và chanh để giảm triệu chứng khó chịu khi ho.'
+
+MERGE (o1:symptom {id: 'ho_symptom'})
+MERGE (o2:disease {id: 'viêm_đường_hô_hấp_dưới_disease'})
+MERGE (o1)-[r146:isSymptomOf]->(o2)
+SET r146.text = 'GS.TS.BS Ngô Quý Châu cho biết, để quá trình điều trị viêm đường hô hấp dưới được hiệu quả như mong muốn, người bệnh nên:  Thực hiện nghỉ ngơi, tránh những việc quá sức khiến cơ thể mệt mỏi; Bù nước cho cơ thể, tránh mất nước cũng như giúp đờm trong phổi loãng hơn, người bệnh dễ khạc nhổ; Xông hít tinh dầu bạc hà để sạch đờm; Bỏ thói quen hút thuốc lá; Người bệnh có thể uống nước ấm pha mật ong và chanh để giảm triệu chứng khó chịu khi ho.'
+
+MERGE (o1:lifestyle {id: 'hút_thuốc_lá_lifestyle'})
+MERGE (o2:disease {id: 'nhiễm_trùng_đường_hô_hấp_dưới_disease'})
+MERGE (o1)-[r147:preventedBy]->(o2)
+SET r147.text = 'Một số biện pháp giúp phòng tránhnhiễm trùng đường hô hấp dưới, cũng như ngăn ngừa mầm bệnh lây lan sang người khác như:  Bỏ thói quen hút thuốc lá, tránh những nơi khói thuốc; Rửa tay thường xuyên, tránh để vi khuẩn tấn công cơ thể; Khử trùng, làm sạch các bề mặt thường xuyên tiếp xúc; Đeo khẩu trang, che miệng khi ho hoặc hắt hơi để tránh mầm bệnh lây lan sang người khác; Tránh xa người bệnh khi phát hiện các triệu chứng củabệnh đường hô hấp dưới; Tiêm ngừa vắc xin đầy đủ theo khuyến cáo của Bộ Y tế như vắc xin phòng cúm, vắc xin phòng sởi - quai bị - rubella, vắc xin phòng bệnh do phế cầu khuẩn&#8230;   Xem thêm:6 bước rửa tay đúng cách giúp phòng tránh virus của Bộ Y tế <iframe loading="lazy" src="" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen" class=" lazyiframe" data-src="https://www.youtube.com/embed/XUheo7bovUw">'
+
+MERGE (o1:lifestyle {id: 'rửa_tay_thường_xuyên_lifestyle'})
+MERGE (o2:disease {id: 'nhiễm_trùng_đường_hô_hấp_dưới_disease'})
+MERGE (o1)-[r148:preventedBy]->(o2)
+SET r148.text = 'Một số biện pháp giúp phòng tránhnhiễm trùng đường hô hấp dưới, cũng như ngăn ngừa mầm bệnh lây lan sang người khác như:  Bỏ thói quen hút thuốc lá, tránh những nơi khói thuốc; Rửa tay thường xuyên, tránh để vi khuẩn tấn công cơ thể; Khử trùng, làm sạch các bề mặt thường xuyên tiếp xúc; Đeo khẩu trang, che miệng khi ho hoặc hắt hơi để tránh mầm bệnh lây lan sang người khác; Tránh xa người bệnh khi phát hiện các triệu chứng củabệnh đường hô hấp dưới; Tiêm ngừa vắc xin đầy đủ theo khuyến cáo của Bộ Y tế như vắc xin phòng cúm, vắc xin phòng sởi - quai bị - rubella, vắc xin phòng bệnh do phế cầu khuẩn&#8230;   Xem thêm:6 bước rửa tay đúng cách giúp phòng tránh virus của Bộ Y tế <iframe loading="lazy" src="" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen" class=" lazyiframe" data-src="https://www.youtube.com/embed/XUheo7bovUw">'
+
+MERGE (o1:lifestyle {id: 'khử_trùng__làm_sạch_các_bề_mặt_thường_xuyên_tiếp_xúc_lifestyle'})
+MERGE (o2:disease {id: 'nhiễm_trùng_đường_hô_hấp_dưới_disease'})
+MERGE (o1)-[r149:preventedBy]->(o2)
+SET r149.text = 'Một số biện pháp giúp phòng tránhnhiễm trùng đường hô hấp dưới, cũng như ngăn ngừa mầm bệnh lây lan sang người khác như:  Bỏ thói quen hút thuốc lá, tránh những nơi khói thuốc; Rửa tay thường xuyên, tránh để vi khuẩn tấn công cơ thể; Khử trùng, làm sạch các bề mặt thường xuyên tiếp xúc; Đeo khẩu trang, che miệng khi ho hoặc hắt hơi để tránh mầm bệnh lây lan sang người khác; Tránh xa người bệnh khi phát hiện các triệu chứng củabệnh đường hô hấp dưới; Tiêm ngừa vắc xin đầy đủ theo khuyến cáo của Bộ Y tế như vắc xin phòng cúm, vắc xin phòng sởi - quai bị - rubella, vắc xin phòng bệnh do phế cầu khuẩn&#8230;   Xem thêm:6 bước rửa tay đúng cách giúp phòng tránh virus của Bộ Y tế <iframe loading="lazy" src="" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen" class=" lazyiframe" data-src="https://www.youtube.com/embed/XUheo7bovUw">'
+
+MERGE (o1:lifestyle {id: 'đeo_khẩu_trang__che_miệng_khi_ho_hoặc_hắt_hơi_lifestyle'})
+MERGE (o2:disease {id: 'nhiễm_trùng_đường_hô_hấp_dưới_disease'})
+MERGE (o1)-[r150:preventedBy]->(o2)
+SET r150.text = 'Một số biện pháp giúp phòng tránhnhiễm trùng đường hô hấp dưới, cũng như ngăn ngừa mầm bệnh lây lan sang người khác như:  Bỏ thói quen hút thuốc lá, tránh những nơi khói thuốc; Rửa tay thường xuyên, tránh để vi khuẩn tấn công cơ thể; Khử trùng, làm sạch các bề mặt thường xuyên tiếp xúc; Đeo khẩu trang, che miệng khi ho hoặc hắt hơi để tránh mầm bệnh lây lan sang người khác; Tránh xa người bệnh khi phát hiện các triệu chứng củabệnh đường hô hấp dưới; Tiêm ngừa vắc xin đầy đủ theo khuyến cáo của Bộ Y tế như vắc xin phòng cúm, vắc xin phòng sởi - quai bị - rubella, vắc xin phòng bệnh do phế cầu khuẩn&#8230;   Xem thêm:6 bước rửa tay đúng cách giúp phòng tránh virus của Bộ Y tế <iframe loading="lazy" src="" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen" class=" lazyiframe" data-src="https://www.youtube.com/embed/XUheo7bovUw">'
+
+MERGE (o1:lifestyle {id: 'tránh_xa_người_bệnh_khi_phát_hiện_các_triệu_chứng_củabệnh_đường_hô_hấp_dưới_lifestyle'})
+MERGE (o2:disease {id: 'nhiễm_trùng_đường_hô_hấp_dưới_disease'})
+MERGE (o1)-[r151:preventedBy]->(o2)
+SET r151.text = 'Một số biện pháp giúp phòng tránhnhiễm trùng đường hô hấp dưới, cũng như ngăn ngừa mầm bệnh lây lan sang người khác như:  Bỏ thói quen hút thuốc lá, tránh những nơi khói thuốc; Rửa tay thường xuyên, tránh để vi khuẩn tấn công cơ thể; Khử trùng, làm sạch các bề mặt thường xuyên tiếp xúc; Đeo khẩu trang, che miệng khi ho hoặc hắt hơi để tránh mầm bệnh lây lan sang người khác; Tránh xa người bệnh khi phát hiện các triệu chứng củabệnh đường hô hấp dưới; Tiêm ngừa vắc xin đầy đủ theo khuyến cáo của Bộ Y tế như vắc xin phòng cúm, vắc xin phòng sởi - quai bị - rubella, vắc xin phòng bệnh do phế cầu khuẩn&#8230;   Xem thêm:6 bước rửa tay đúng cách giúp phòng tránh virus của Bộ Y tế <iframe loading="lazy" src="" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen" class=" lazyiframe" data-src="https://www.youtube.com/embed/XUheo7bovUw">'
+
+MERGE (o1:treatment {id: 'tiêm_ngừa_vắc_xin_đầy_đủ_theo_khuyến_cáo_của_bộ_y_tế_như_vắc_xin_phòng_cúm__vắc_xin_phòng_sởi_-_quai_bị_-_rubella__vắc_xin_phòng_bệnh_do_phế_cầu_khuẩn_treatment'})
+MERGE (o2:disease {id: 'nhiễm_trùng_đường_hô_hấp_dưới_disease'})
+MERGE (o1)-[r152:preventedBy]->(o2)
+SET r152.text = 'Một số biện pháp giúp phòng tránhnhiễm trùng đường hô hấp dưới, cũng như ngăn ngừa mầm bệnh lây lan sang người khác như:  Bỏ thói quen hút thuốc lá, tránh những nơi khói thuốc; Rửa tay thường xuyên, tránh để vi khuẩn tấn công cơ thể; Khử trùng, làm sạch các bề mặt thường xuyên tiếp xúc; Đeo khẩu trang, che miệng khi ho hoặc hắt hơi để tránh mầm bệnh lây lan sang người khác; Tránh xa người bệnh khi phát hiện các triệu chứng củabệnh đường hô hấp dưới; Tiêm ngừa vắc xin đầy đủ theo khuyến cáo của Bộ Y tế như vắc xin phòng cúm, vắc xin phòng sởi - quai bị - rubella, vắc xin phòng bệnh do phế cầu khuẩn&#8230;   Xem thêm:6 bước rửa tay đúng cách giúp phòng tránh virus của Bộ Y tế <iframe loading="lazy" src="" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen" class=" lazyiframe" data-src="https://www.youtube.com/embed/XUheo7bovUw">'
+
+MERGE (o1:disease {id: 'nhiễm_trùng_đường_hô_hấp_disease'})
+MERGE (o2:disease {id: 'bệnh_lý_disease'})
+MERGE (o1)-[r153:relatedTo]->(o2)
+SET r153.text = 'Nhiễm trùng đường hô hấp là một trong những bệnh lý khá phổ biến.'
+
+MERGE (o1:treatment {id: 'bác_sĩ_treatment'})
+MERGE (o2:disease {id: 'nhiễm_trùng_đường_hô_hấp_disease'})
+MERGE (o1)-[r154:diagnosedBy]->(o2)
+SET r154.text = 'Tuy nhiên, tùy theo vị trí nhiễm trùng và mức độ nhiễm trùng, bác sĩ sẽ chỉ định phác đồ điều trị khác nhau.'
+
+MERGE (o1:treatment {id: 'gs.ts.bs_ngô_quý_châu_treatment'})
+MERGE (o2:disease {id: 'nhiễm_trùng_đường_hô_hấp_disease'})
+MERGE (o1)-[r155:diagnosedBy]->(o2)
+SET r155.text = 'GS.TS.BS Ngô Quý Châu giải đáp một số câu hỏi thường gặp của người bệnh đến thăm khám tại khoa Nội hô hấp, BVĐK Tâm Anh.'
+
+MERGE (o1:disease {id: 'nhiễm_trùng_đường_hô_hấp_trên_disease'})
+MERGE (o2:disease {id: 'nhiễm_trùng_đường_hô_hấp_dưới_disease'})
+MERGE (o1)-[r156:relatedTo]->(o2)
+SET r156.text = 'Nhiễm trùng đường hô hấp trên (tiếng Anh là Upper Respiratory Tract Infections - URTI) khác vớinhiễm trùng đường hô hấp dướiở vùng ảnh hưởng của đường hô hấp.'
+
+MERGE (o1:disease {id: 'nhiễm_trùng_đường_hô_hấp_dưới_disease'})
+MERGE (o2:disease {id: 'nhiễm_trùng_đường_hô_hấp_trên_disease'})
+MERGE (o1)-[r157:relatedTo]->(o2)
+SET r157.text = 'Nhiễm trùng đường hô hấp trên (tiếng Anh là Upper Respiratory Tract Infections - URTI) khác vớinhiễm trùng đường hô hấp dướiở vùng ảnh hưởng của đường hô hấp.'
+
+MERGE (o1:disease {id: 'nhiễm_trùng_đường_hô_hấp_dưới_disease'})
+MERGE (o2:organ {id: 'đường_dẫn_khí_bên_dưới_thanh_quản_organ'})
+MERGE (o1)-[r158:locatedIn]->(o2)
+SET r158.text = 'Nhiễm trùng đường hô hấp dưới là tình trạng nhiễm trùng ở đường dẫn khí bên dưới thanh quản, còn nhiễm trùng đường hô hấp trên là nhiễm trùng ở cấu trúc từ thanh quản trở lên.'
+
+MERGE (o1:disease {id: 'nhiễm_trùng_đường_hô_hấp_trên_disease'})
+MERGE (o2:organ {id: 'cấu_trúc_từ_thanh_quản_trở_lên_organ'})
+MERGE (o1)-[r159:locatedIn]->(o2)
+SET r159.text = 'Nhiễm trùng đường hô hấp dưới là tình trạng nhiễm trùng ở đường dẫn khí bên dưới thanh quản, còn nhiễm trùng đường hô hấp trên là nhiễm trùng ở cấu trúc từ thanh quản trở lên.'
+
+MERGE (o1:symptom {id: 'ho_symptom'})
+MERGE (o2:disease {id: 'nhiễm_trùng_đường_hô_hấp_dưới_disease'})
+MERGE (o1)-[r160:isSymptomOf]->(o2)
+SET r160.text = 'Triệu chứng đặc trưng của các bệnh nhiễm trùng đường hô hấp dưới là ho, gồm các bệnh viêm phế quản, viêm tiểu phế quản, viêm phổi và lao.'
+
+MERGE (o1:disease {id: 'viêm_phế_quản_disease'})
+MERGE (o2:disease {id: 'nhiễm_trùng_đường_hô_hấp_dưới_disease'})
+MERGE (o1)-[r161:relatedTo]->(o2)
+SET r161.text = 'Triệu chứng đặc trưng của các bệnh nhiễm trùng đường hô hấp dưới là ho, gồm các bệnh viêm phế quản, viêm tiểu phế quản, viêm phổi và lao.'
+
+MERGE (o1:disease {id: 'viêm_tiểu_phế_quản_disease'})
+MERGE (o2:disease {id: 'nhiễm_trùng_đường_hô_hấp_dưới_disease'})
+MERGE (o1)-[r162:relatedTo]->(o2)
+SET r162.text = 'Triệu chứng đặc trưng của các bệnh nhiễm trùng đường hô hấp dưới là ho, gồm các bệnh viêm phế quản, viêm tiểu phế quản, viêm phổi và lao.'
+
+MERGE (o1:disease {id: 'viêm_phổi_disease'})
+MERGE (o2:disease {id: 'nhiễm_trùng_đường_hô_hấp_dưới_disease'})
+MERGE (o1)-[r163:relatedTo]->(o2)
+SET r163.text = 'Triệu chứng đặc trưng của các bệnh nhiễm trùng đường hô hấp dưới là ho, gồm các bệnh viêm phế quản, viêm tiểu phế quản, viêm phổi và lao.'
+
+MERGE (o1:disease {id: 'lao_disease'})
+MERGE (o2:disease {id: 'nhiễm_trùng_đường_hô_hấp_dưới_disease'})
+MERGE (o1)-[r164:relatedTo]->(o2)
+SET r164.text = 'Triệu chứng đặc trưng của các bệnh nhiễm trùng đường hô hấp dưới là ho, gồm các bệnh viêm phế quản, viêm tiểu phế quản, viêm phổi và lao.'
+
+MERGE (o1:disease {id: 'cảm_lạnh_disease'})
+MERGE (o2:disease {id: 'nhiễm_trùng_đường_hô_hấp_trên_disease'})
+MERGE (o1)-[r165:relatedTo]->(o2)
+SET r165.text = 'Còn nhiễm trùng đường hô hấp trên gồm cảm lạnh, viêm xoang, viêm amidan và viêm thanh quản… sẽ có các dấu hiệu xuất phát từ vùng cổ trở lên như đau họng, đau đầu, sốt;.'
+
+MERGE (o1:disease {id: 'viêm_xoang_disease'})
+MERGE (o2:disease {id: 'nhiễm_trùng_đường_hô_hấp_trên_disease'})
+MERGE (o1)-[r166:relatedTo]->(o2)
+SET r166.text = 'Còn nhiễm trùng đường hô hấp trên gồm cảm lạnh, viêm xoang, viêm amidan và viêm thanh quản… sẽ có các dấu hiệu xuất phát từ vùng cổ trở lên như đau họng, đau đầu, sốt;.'
+
+MERGE (o1:disease {id: 'viêm_amidan_disease'})
+MERGE (o2:disease {id: 'nhiễm_trùng_đường_hô_hấp_trên_disease'})
+MERGE (o1)-[r167:relatedTo]->(o2)
+SET r167.text = 'Còn nhiễm trùng đường hô hấp trên gồm cảm lạnh, viêm xoang, viêm amidan và viêm thanh quản… sẽ có các dấu hiệu xuất phát từ vùng cổ trở lên như đau họng, đau đầu, sốt;.'
+
+MERGE (o1:disease {id: 'viêm_thanh_quản_disease'})
+MERGE (o2:disease {id: 'nhiễm_trùng_đường_hô_hấp_trên_disease'})
+MERGE (o1)-[r168:relatedTo]->(o2)
+SET r168.text = 'Còn nhiễm trùng đường hô hấp trên gồm cảm lạnh, viêm xoang, viêm amidan và viêm thanh quản… sẽ có các dấu hiệu xuất phát từ vùng cổ trở lên như đau họng, đau đầu, sốt;.'
+
+MERGE (o1:symptom {id: 'đau_họng_symptom'})
+MERGE (o2:disease {id: 'nhiễm_trùng_đường_hô_hấp_trên_disease'})
+MERGE (o1)-[r169:isSymptomOf]->(o2)
+SET r169.text = 'Còn nhiễm trùng đường hô hấp trên gồm cảm lạnh, viêm xoang, viêm amidan và viêm thanh quản… sẽ có các dấu hiệu xuất phát từ vùng cổ trở lên như đau họng, đau đầu, sốt;.'
+
+MERGE (o1:symptom {id: 'đau_đầu_symptom'})
+MERGE (o2:disease {id: 'nhiễm_trùng_đường_hô_hấp_trên_disease'})
+MERGE (o1)-[r170:isSymptomOf]->(o2)
+SET r170.text = 'Còn nhiễm trùng đường hô hấp trên gồm cảm lạnh, viêm xoang, viêm amidan và viêm thanh quản… sẽ có các dấu hiệu xuất phát từ vùng cổ trở lên như đau họng, đau đầu, sốt;.'
+
+MERGE (o1:symptom {id: 'sốt_symptom'})
+MERGE (o2:disease {id: 'nhiễm_trùng_đường_hô_hấp_trên_disease'})
+MERGE (o1)-[r171:isSymptomOf]->(o2)
+SET r171.text = 'Còn nhiễm trùng đường hô hấp trên gồm cảm lạnh, viêm xoang, viêm amidan và viêm thanh quản… sẽ có các dấu hiệu xuất phát từ vùng cổ trở lên như đau họng, đau đầu, sốt;.'
+
+MERGE (o1:disease {id: 'nhiễm_trùng_đường_hô_hấp_dưới_disease'})
+MERGE (o2:treatment {id: 'thuốc_treatment'})
+MERGE (o1)-[r172:treatedBy]->(o2)
+SET r172.text = 'Để việc điều trịnhiễm trùng đường hô hấp dướiđạt hiệu quả cao nhất, bên cạnh việc sử dụng thuốc theo chỉ định của bác sĩ, người bệnh cũng cần quan tâm và thực hiện chế độ dinh dưỡng khoa học, bổ sung các loại trái cây và rau xanh vào chế độ ăn hàng ngày, uống nhiều nước để cung cấp đủ nước cho cơ thể.'
+
+MERGE (o1:disease {id: 'nhiễm_trùng_đường_hô_hấp_dưới_disease'})
+MERGE (o2:lifestyle {id: 'chế_độ_dinh_dưỡng_khoa_học_lifestyle'})
+MERGE (o1)-[r173:treatedBy]->(o2)
+SET r173.text = 'Để việc điều trịnhiễm trùng đường hô hấp dướiđạt hiệu quả cao nhất, bên cạnh việc sử dụng thuốc theo chỉ định của bác sĩ, người bệnh cũng cần quan tâm và thực hiện chế độ dinh dưỡng khoa học, bổ sung các loại trái cây và rau xanh vào chế độ ăn hàng ngày, uống nhiều nước để cung cấp đủ nước cho cơ thể.'
+
+MERGE (o1:disease {id: 'nhiễm_trùng_đường_hô_hấp_dưới_disease'})
+MERGE (o2:food {id: 'trái_cây_food'})
+MERGE (o1)-[r174:treatedBy]->(o2)
+SET r174.text = 'Để việc điều trịnhiễm trùng đường hô hấp dướiđạt hiệu quả cao nhất, bên cạnh việc sử dụng thuốc theo chỉ định của bác sĩ, người bệnh cũng cần quan tâm và thực hiện chế độ dinh dưỡng khoa học, bổ sung các loại trái cây và rau xanh vào chế độ ăn hàng ngày, uống nhiều nước để cung cấp đủ nước cho cơ thể.'
+
+MERGE (o1:disease {id: 'nhiễm_trùng_đường_hô_hấp_dưới_disease'})
+MERGE (o2:food {id: 'rau_xanh_food'})
+MERGE (o1)-[r175:treatedBy]->(o2)
+SET r175.text = 'Để việc điều trịnhiễm trùng đường hô hấp dướiđạt hiệu quả cao nhất, bên cạnh việc sử dụng thuốc theo chỉ định của bác sĩ, người bệnh cũng cần quan tâm và thực hiện chế độ dinh dưỡng khoa học, bổ sung các loại trái cây và rau xanh vào chế độ ăn hàng ngày, uống nhiều nước để cung cấp đủ nước cho cơ thể.'
+
+MERGE (o1:disease {id: 'nhiễm_trùng_đường_hô_hấp_dưới_disease'})
+MERGE (o2:lifestyle {id: 'uống_nhiều_nước_lifestyle'})
+MERGE (o1)-[r176:treatedBy]->(o2)
+SET r176.text = 'Để việc điều trịnhiễm trùng đường hô hấp dướiđạt hiệu quả cao nhất, bên cạnh việc sử dụng thuốc theo chỉ định của bác sĩ, người bệnh cũng cần quan tâm và thực hiện chế độ dinh dưỡng khoa học, bổ sung các loại trái cây và rau xanh vào chế độ ăn hàng ngày, uống nhiều nước để cung cấp đủ nước cho cơ thể.'
+
+MERGE (o1:food {id: 'mật_ong_pha_nước_chanh_ấm_food'})
+MERGE (o2:disease {id: 'nhiễm_trùng_đường_hô_hấp_dưới_disease'})
+MERGE (o1)-[r177:treatedBy]->(o2)
+SET r177.text = 'Người bệnh có thể uống mật ong pha nước chanh ấm, mật ong pha trà gừng giúp cải thiện các triệu chứng bệnh.'
+
+MERGE (o1:food {id: 'mật_ong_pha_trà_gừng_food'})
+MERGE (o2:disease {id: 'nhiễm_trùng_đường_hô_hấp_dưới_disease'})
+MERGE (o1)-[r178:treatedBy]->(o2)
+SET r178.text = 'Người bệnh có thể uống mật ong pha nước chanh ấm, mật ong pha trà gừng giúp cải thiện các triệu chứng bệnh.'
+
+MERGE (o1:food {id: 'thực_phẩm_đóng_hộp_food'})
+MERGE (o2:disease {id: 'nhiễm_trùng_đường_hô_hấp_dưới_disease'})
+MERGE (o1)-[r179:aggravatedBy]->(o2)
+SET r179.text = 'Bên cạnh đó, người bệnh cần kiêng một số thực phẩm có thể làm chậm hồi phục, hoặc bệnh tiến triển nặng hơn như các thực phẩm đóng hộp, nước uống có ga, thức ăn chế biến sẵn,&#8230;'
+
+MERGE (o1:food {id: 'nước_uống_có_ga_food'})
+MERGE (o2:disease {id: 'nhiễm_trùng_đường_hô_hấp_dưới_disease'})
+MERGE (o1)-[r180:aggravatedBy]->(o2)
+SET r180.text = 'Bên cạnh đó, người bệnh cần kiêng một số thực phẩm có thể làm chậm hồi phục, hoặc bệnh tiến triển nặng hơn như các thực phẩm đóng hộp, nước uống có ga, thức ăn chế biến sẵn,&#8230;'

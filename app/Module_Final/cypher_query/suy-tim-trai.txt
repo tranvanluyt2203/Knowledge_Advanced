@@ -1,0 +1,711 @@
+
+MERGE (o1:disease {id: 'suy_tim_trái_disease'})
+MERGE (o2:symptom {id: 'tim_mất_khả_năng_bơm_máu_symptom'})
+MERGE (o1)-[r0:causedBy]->(o2)
+SET r0.text = 'Suy tim trái là tình trạng xảy ra khi tim mất khả năng bơm máu.'
+
+MERGE (o1:symptom {id: 'tim_mất_khả_năng_bơm_máu_symptom'})
+MERGE (o2:organ {id: 'các_cơ_quan_trong_cơ_thể_organ'})
+MERGE (o1)-[r1:affects]->(o2)
+SET r1.text = 'Suy tim trái là tình trạng xảy ra khi tim mất khả năng bơm máu. Điều này khiến các cơ quan trong cơ thể không nhận đủ lượng oxy cần thiết.'
+
+MERGE (o1:disease {id: 'suy_tim_trái_disease'})
+MERGE (o2:symptom {id: 'suy_gan__suy_thận__rối_loạn_nhịp_hoặc_tử_vong_symptom'})
+MERGE (o1)-[r2:isSymptomOf]->(o2)
+SET r2.text = 'Suy tim trái là tình trạng xảy ra khi tim mất khả năng bơm máu. Điều này khiến các cơ quan trong cơ thể không nhận đủ lượng oxy cần thiết. Nếu không kịp thời điều trị, tình trạng suy tim trái có thể dẫn đến nhiều biến chứng như suy gan, suy thận, rối loạn nhịp hoặc tử vong.'
+
+MERGE (o1:symptom {id: 'đau_ngực_symptom'})
+MERGE (o2:disease {id: 'suy_tim_trái_disease'})
+MERGE (o1)-[r3:isSymptomOf]->(o2)
+SET r3.text = 'Đau ngực là triệu chứng thường gặp nhất của suy tim trái'
+
+MERGE (o1:disease {id: 'suy_tim_trái_disease'})
+MERGE (o2:symptom {id: 'chức_năng_co_bóp_của_tâm_thất_trái_suy_giảm_symptom'})
+MERGE (o1)-[r4:causedBy]->(o2)
+SET r4.text = 'Suy tim trái là bệnh lý xảy ra khi chức năng co bóp của tâm thất trái suy giảm.'
+
+MERGE (o1:symptom {id: 'chức_năng_co_bóp_của_tâm_thất_trái_suy_giảm_symptom'})
+MERGE (o2:organ {id: 'tim_organ'})
+MERGE (o1)-[r5:affects]->(o2)
+SET r5.text = 'Suy tim trái là bệnh lý xảy ra khi chức năng co bóp của tâm thất trái suy giảm. Theo thời gian, tình trạng này có thể khiến tim bị suy yếu và không còn khả năng xử lý máu nhận được từ phổi.'
+
+MERGE (o1:organ {id: 'tim_organ'})
+MERGE (o2:symptom {id: 'máu_nhận_được_từ_phổi_symptom'})
+MERGE (o1)-[r6:relatedTo]->(o2)
+SET r6.text = 'Suy tim trái là bệnh lý xảy ra khi chức năng co bóp của tâm thất trái suy giảm. Theo thời gian, tình trạng này có thể khiến tim bị suy yếu và không còn khả năng xử lý máu nhận được từ phổi.'
+
+MERGE (o1:disease {id: 'suy_tim_tâm_thu_disease'})
+MERGE (o2:symptom {id: 'chức_năng_co_bóp_tống_máu_của_tâm_thất_trái_quá_yếu_symptom'})
+MERGE (o1)-[r7:causedBy]->(o2)
+SET r7.text = 'Suy tim bên trái được chia thành 2 dạng: (1)
+Suy tim tâm thu: chức năng co bóp tống máu của tâm thất trái quá yếu, không khả năng bơm máu ra động mạch chủ để nuôi dưỡng các cơ quan trong cơ thể.'
+
+MERGE (o1:disease {id: 'suy_tim_tâm_thu_disease'})
+MERGE (o2:disease {id: 'suy_tim_phân_suất_tống_máu_giảm_disease'})
+MERGE (o1)-[r8:relatedTo]->(o2)
+SET r8.text = 'Suy tim bên trái được chia thành 2 dạng: (1)
+Suy tim tâm thu: chức năng co bóp tống máu của tâm thất trái quá yếu, không khả năng bơm máu ra động mạch chủ để nuôi dưỡng các cơ quan trong cơ thể. Dạng này còn được gọi là suy tim phân suất tống máu giảm.'
+
+MERGE (o1:disease {id: 'suy_tim_tâm_trương_disease'})
+MERGE (o2:symptom {id: 'tâm_thất_trái_bị_cứng__giảm_đàn_hồi_và_không_thể_thư_giãn_thích_hợp_symptom'})
+MERGE (o1)-[r9:causedBy]->(o2)
+SET r9.text = 'Suy tim bên trái được chia thành 2 dạng: (1)
+Suy tim tâm thu: chức năng co bóp tống máu của tâm thất trái quá yếu, không khả năng bơm máu ra động mạch chủ để nuôi dưỡng các cơ quan trong cơ thể. Dạng này còn được gọi là suy tim phân suất tống máu giảm.
+Suy tim tâm trương: Tâm thất trái bị cứng, giảm đàn hồi và không thể thư giãn thích hợp, gây khó khăn cho việc hút máu về tâm thất.'
+
+MERGE (o1:disease {id: 'suy_tim_tâm_trương_disease'})
+MERGE (o2:disease {id: 'suy_tim_phân_suất_tống_máu_bảo_tồn_disease'})
+MERGE (o1)-[r10:relatedTo]->(o2)
+SET r10.text = 'Suy tim bên trái được chia thành 2 dạng: (1)
+Suy tim tâm thu: chức năng co bóp tống máu của tâm thất trái quá yếu, không khả năng bơm máu ra động mạch chủ để nuôi dưỡng các cơ quan trong cơ thể. Dạng này còn được gọi là suy tim phân suất tống máu giảm.
+Suy tim tâm trương: Tâm thất trái bị cứng, giảm đàn hồi và không thể thư giãn thích hợp, gây khó khăn cho việc hút máu về tâm thất. Dạng này còn được gọi là suy tim phân suất tống máu bảo tồn.'
+
+MERGE (o1:organ {id: 'tim_organ'})
+MERGE (o2:organ {id: 'tâm_thất_phải_và_tâm_thất_trái_organ'})
+MERGE (o1)-[r11:locatedIn]->(o2)
+SET r11.text = 'Tim có hai buồng bơm chính: tâm thất phải và tâm thất trái.'
+
+MERGE (o1:organ {id: 'tâm_thất_phải_và_tâm_thất_trái_organ'})
+MERGE (o2:symptom {id: 'bơm_máu_symptom'})
+MERGE (o1)-[r12:relatedTo]->(o2)
+SET r12.text = 'Hai buồng này hoạt động theo những cách khác nhau để bơm máu:'
+
+MERGE (o1:organ {id: 'buồng_trái_organ'})
+MERGE (o2:symptom {id: 'máu_giàu_oxy_từ_phổi_symptom'})
+MERGE (o1)-[r13:relatedTo]->(o2)
+SET r13.text = 'Buồng trái: Nhận máu giàu oxy từ phổi và đưa nó đến phần còn lại của cơ thể.'
+
+MERGE (o1:symptom {id: 'máu_giàu_oxy_từ_phổi_symptom'})
+MERGE (o2:organ {id: 'các_cơ_quan__cơ_bắp_và_mô_organ'})
+MERGE (o1)-[r14:affects]->(o2)
+SET r14.text = 'Buồng trái: Nhận máu giàu oxy từ phổi và đưa nó đến phần còn lại của cơ thể. Oxy giúp các cơ quan, cơ bắp và mô hoàn thành vai trò của chúng.'
+
+MERGE (o1:organ {id: 'buồng_phải_organ'})
+MERGE (o2:symptom {id: 'máu_nghèo_oxy_từ_các_cơ_quan_trở_về_symptom'})
+MERGE (o1)-[r15:relatedTo]->(o2)
+SET r15.text = 'Buồng phải: Nhận máu nghèo oxy từ các cơ quan trở về, đưa nó đến phổi để lấy thêm oxy.'
+
+MERGE (o1:disease {id: 'suy_tim_trái_disease'})
+MERGE (o2:symptom {id: 'các_dấu_hiệu_của_bệnh_symptom'})
+MERGE (o1)-[r16:isSymptomOf]->(o2)
+SET r16.text = 'Ở giai đoạn đầu của suy tim trái, bạn có thể không nhận thấy các dấu hiệu của bệnh.'
+
+MERGE (o1:symptom {id: 'dị_ứng__nghẹt_mũi__khó_tiêu__cảm_lạnh_symptom'})
+MERGE (o2:disease {id: 'bệnh_lý_khác_disease'})
+MERGE (o1)-[r17:isSymptomOf]->(o2)
+SET r17.text = 'Hoặc, những triệu chứng nhẹ khiến bạn nghĩ tới một số bệnh lý khác, chẳng hạn như dị ứng, nghẹt mũi, khó tiêu, cảm lạnh…'
+
+MERGE (o1:organ {id: 'tim_organ'})
+MERGE (o2:symptom {id: 'sung_huyết_phổi_và_ứ_máu_ở_ngoại_biên_symptom'})
+MERGE (o1)-[r18:affects]->(o2)
+SET r18.text = 'Khi tim dần trở nên suy yếu, người bệnh sẽ có triệu chứng sung huyết phổi và ứ máu ở ngoại biên, bao gồm:'
+
+MERGE (o1:symptom {id: 'đau_ngực_symptom'})
+MERGE (o2:disease {id: 'suy_tim_trái_disease'})
+MERGE (o1)-[r19:isSymptomOf]->(o2)
+SET r19.text = 'Đau ngực'
+
+MERGE (o1:symptom {id: 'mệt_mỏi_symptom'})
+MERGE (o2:disease {id: 'suy_tim_trái_disease'})
+MERGE (o1)-[r20:isSymptomOf]->(o2)
+SET r20.text = 'Mệt mỏi'
+
+MERGE (o1:symptom {id: 'yếu_sức_symptom'})
+MERGE (o2:disease {id: 'suy_tim_trái_disease'})
+MERGE (o1)-[r21:isSymptomOf]->(o2)
+SET r21.text = 'Yếu sức'
+
+MERGE (o1:symptom {id: 'khó_thở_symptom'})
+MERGE (o2:disease {id: 'suy_tim_trái_disease'})
+MERGE (o1)-[r22:isSymptomOf]->(o2)
+SET r22.text = 'Khó thở, đặc biệt khi gắng sức'
+
+MERGE (o1:symptom {id: 'khó_thở_symptom'})
+MERGE (o2:disease {id: 'suy_tim_trái_disease'})
+MERGE (o1)-[r23:isSymptomOf]->(o2)
+SET r23.text = 'Khó thở khi nằm xuống'
+
+MERGE (o1:symptom {id: 'thức_giấc_vào_ban_đêm_và_khó_thở_symptom'})
+MERGE (o2:disease {id: 'suy_tim_trái_disease'})
+MERGE (o1)-[r24:isSymptomOf]->(o2)
+SET r24.text = 'Thức giấc vào ban đêm và khó thở (khó thở kịch phát về đêm)'
+
+MERGE (o1:symptom {id: 'nhịp_tim_nhanh_hoặc_không_đều_symptom'})
+MERGE (o2:disease {id: 'suy_tim_trái_disease'})
+MERGE (o1)-[r25:isSymptomOf]->(o2)
+SET r25.text = 'Nhịp tim nhanh hoặc không đều'
+
+MERGE (o1:symptom {id: 'sưng_bàn_chân__mắt_cá_chân_và_cẳng_chân_symptom'})
+MERGE (o2:disease {id: 'suy_tim_trái_disease'})
+MERGE (o1)-[r26:isSymptomOf]->(o2)
+SET r26.text = 'Sưng bàn chân, mắt cá chân và cẳng chân (phù ngoại vi)'
+
+MERGE (o1:symptom {id: 'tăng_cân_không_rõ_lý_do_symptom'})
+MERGE (o2:disease {id: 'suy_tim_trái_disease'})
+MERGE (o1)-[r27:isSymptomOf]->(o2)
+SET r27.text = 'Tăng cân không rõ lý do'
+
+MERGE (o1:symptom {id: 'buồn_nôn__đầy_bụng__chán_ăn__đau_thượng_vị_symptom'})
+MERGE (o2:disease {id: 'suy_tim_trái_disease'})
+MERGE (o1)-[r28:isSymptomOf]->(o2)
+SET r28.text = 'Buồn nôn, đầy bụng, chán ăn, đau thượng vị do gan to'
+
+MERGE (o1:symptom {id: 'ho_dai_dẳng_hoặc_thở_khò_khè_symptom'})
+MERGE (o2:disease {id: 'suy_tim_trái_disease'})
+MERGE (o1)-[r29:isSymptomOf]->(o2)
+SET r29.text = 'Ho dai dẳng hoặc thở khò khè'
+
+MERGE (o1:symptom {id: 'đi_tiểu_nhiều_hơn_bình_thường_hoặc_tiểu_nhiều_vào_ban_đêm_symptom'})
+MERGE (o2:disease {id: 'suy_tim_trái_disease'})
+MERGE (o1)-[r30:isSymptomOf]->(o2)
+SET r30.text = 'Đi tiểu nhiều hơn bình thường hoặc tiểu nhiều vào ban đêm.'
+
+MERGE (o1:disease {id: 'suy_thất_trái_disease'})
+MERGE (o2:cause {id: 'nhiều_nguyên_nhân_tiềm_ẩn_cause'})
+MERGE (o1)-[r31:causedBy]->(o2)
+SET r31.text = 'Theo ThS.BS Huỳnh Thanh Kiều, suy thất trái xảy ra là do nhiều nguyên nhân tiềm ẩn, chẳng hạn như:'
+
+MERGE (o1:cause {id: 'tăng_huyết_áp_mạn_tính_cause'})
+MERGE (o2:disease {id: 'suy_tim_tâm_trương_disease'})
+MERGE (o1)-[r32:causes]->(o2)
+SET r32.text = 'Tăng huyết áp: Tăng huyết áp mạn tính là một trong những nguyên nhân phổ biến nhất của suy tim tâm trương.'
+
+MERGE (o1:cause {id: 'huyết_áp_cao_cause'})
+MERGE (o2:organ {id: 'tim_organ'})
+MERGE (o1)-[r33:affects]->(o2)
+SET r33.text = 'Khi bạn bị huyết áp cao trong một thời gian dài, tim phải làm việc nhiều hơn để bơm máu đi khắp cơ thể.'
+
+MERGE (o1:organ {id: 'tim_organ'})
+MERGE (o2:organ {id: 'tim_organ'})
+MERGE (o1)-[r34:affects]->(o2)
+SET r34.text = 'Kết quả là tim trở nên dày và cứng hơn.'
+
+MERGE (o1:organ {id: 'tim_organ'})
+MERGE (o2:symptom {id: 'khả_năng_thư_giãn_giữa_các_nhịp_symptom'})
+MERGE (o1)-[r35:affects]->(o2)
+SET r35.text = 'Điều này ảnh hưởng đến khả năng thư giãn giữa các nhịp.'
+
+MERGE (o1:disease {id: 'bệnh_đái_tháo_đường_disease'})
+MERGE (o2:cause {id: 'xơ_cứng_các_mạch_máu_cause'})
+MERGE (o1)-[r36:causes]->(o2)
+SET r36.text = 'Bệnh đái tháo đường: Lượng đường trong máu cao là nguyên nhân gây xơ cứng các mạch máu.'
+
+MERGE (o1:organ {id: 'tim_organ'})
+MERGE (o2:organ {id: 'tim_organ'})
+MERGE (o1)-[r37:affects]->(o2)
+SET r37.text = 'Tình trạng này khiến tim phải làm việc nhiều hơn và làm cho cơ dày lên.'
+
+MERGE (o1:disease {id: 'bệnh_động_mạch_vành_disease'})
+MERGE (o2:symptom {id: 'máu_đến_nuôi_cơ_tim_ít_hơn_symptom'})
+MERGE (o1)-[r38:causes]->(o2)
+SET r38.text = 'Bệnh động mạch vành: Sự tắc nghẽn mạch vành khiến máu đến nuôi cơ tim ít hơn.'
+
+MERGE (o1:cause {id: 'lưu_lượng_máu_đến_tim_rất_thấp_cause'})
+MERGE (o2:symptom {id: 'các_tế_bào_cơ_tim_chết_đi_symptom'})
+MERGE (o1)-[r39:causes]->(o2)
+SET r39.text = 'Lưu lượng máu đến tim rất thấp có thể khiến các tế bào cơ tim chết đi (hoặc thiếu máu cục bộ), ngăn trái tim thư giãn và nạp đầy máu như bình thường.'
+
+MERGE (o1:disease {id: 'viêm_màng_ngoài_tim_disease'})
+MERGE (o2:symptom {id: 'hạn_chế_khả_năng_đổ_đầy_máu_của_tim_symptom'})
+MERGE (o1)-[r40:causes]->(o2)
+SET r40.text = 'Viêm màng ngoài tim: Đây là tình trạng viêm kích thích của màng ngoài tim - lớp màng mỏng bao quanh tim, dẫn tới hạn chế khả năng đổ đầy máu của tim.'
+
+MERGE (o1:lifestyle {id: 'lối_sống_ít_vận_động_lifestyle'})
+MERGE (o2:disease {id: 'huyết_áp_cao__đái_tháo_đường__bệnh_mạch_vành_và_béo_phì_disease'})
+MERGE (o1)-[r41:causes]->(o2)
+SET r41.text = 'Lối sống ít vận động: Thiếu hoạt động thể chất làm tăng nguy cơ bị huyết áp cao, đái tháo đường, bệnh mạch vành và béo phì.'
+
+MERGE (o1:cause {id: 'tất_cả_những_yếu_tố_này_cause'})
+MERGE (o2:disease {id: 'suy_tim_tâm_trương_disease'})
+MERGE (o1)-[r42:causes]->(o2)
+SET r42.text = 'Tất cả những yếu tố này góp phần gây suy tim tâm trương.'
+
+MERGE (o1:disease {id: 'ngưng_thở_khi_ngủ_do_tắc_nghẽn_(osa)_disease'})
+MERGE (o2:symptom {id: 'ngừng_thở_trong_khi_ngủ_symptom'})
+MERGE (o1)-[r43:causes]->(o2)
+SET r43.text = 'Ngưng thở khi ngủ do tắc nghẽn (OSA): Khi bị OSA, bạn sẽ ngừng thở trong khi ngủ.'
+
+MERGE (o1:symptom {id: 'ngừng_thở_trong_khi_ngủ_symptom'})
+MERGE (o2:symptom {id: 'tăng_huyết_áp__giảm_cung_cấp_oxy_đến_tim_và_tăng_hoạt_động_của_hệ_thần_kinh_symptom'})
+MERGE (o1)-[r44:causes]->(o2)
+SET r44.text = 'Điều này dẫn đến một loạt thay đổi phức tạp trong cơ thể, bao gồm tăng huyết áp, giảm cung cấp oxy đến tim và tăng hoạt động của hệ thần kinh.'
+
+MERGE (o1:cause {id: 'những_thay_đổi_này_cause'})
+MERGE (o2:disease {id: 'suy_tim_tâm_thu__suy_tim_tâm_trương_cũng_như_các_bệnh_tim_mạch_khác_disease'})
+MERGE (o1)-[r45:causes]->(o2)
+SET r45.text = 'Những thay đổi này gây ra sự không phù hợp giữa cung và cầu oxy, làm cho bạn có nguy cơ cao bị suy tim tâm thu, suy tim tâm trương cũng như các bệnh tim mạch khác.'
+
+MERGE (o1:disease {id: 'suy_tim_tâm_thu_và_suy_tim_tâm_trương_disease'})
+MERGE (o2:cause {id: 'những_nguyên_nhân_gốc_rễ_khác_nhau_cause'})
+MERGE (o1)-[r46:causedBy]->(o2)
+SET r46.text = 'Ngoài ra, suy tim tâm thu và suy tim tâm trương còn có những nguyên nhân gốc rễ khác nhau.'
+
+MERGE (o1:disease {id: 'rối_loạn_chức_năng_tâm_thu_disease'})
+MERGE (o2:disease {id: 'bệnh_cơ_tim_giãn_vô_căn__bệnh_mạch_vành__huyết_áp_tăng_cao__bệnh_van_tim__bệnh_tim_bẩm_sinh_disease'})
+MERGE (o1)-[r47:causedBy]->(o2)
+SET r47.text = 'Rối loạn chức năng tâm thu thường do:'
+
+MERGE (o1:disease {id: 'bệnh_cơ_tim_giãn_vô_căn_disease'})
+MERGE (o2:disease {id: 'rối_loạn_chức_năng_tâm_thu_disease'})
+MERGE (o1)-[r48:causes]->(o2)
+SET r48.text = 'Bệnh cơ tim giãn vô căn'
+
+MERGE (o1:disease {id: 'bệnh_mạch_vành_disease'})
+MERGE (o2:disease {id: 'rối_loạn_chức_năng_tâm_thu_disease'})
+MERGE (o1)-[r49:causes]->(o2)
+SET r49.text = 'Bệnh mạch vành'
+
+MERGE (o1:disease {id: 'huyết_áp_tăng_cao_disease'})
+MERGE (o2:disease {id: 'rối_loạn_chức_năng_tâm_thu_disease'})
+MERGE (o1)-[r50:causes]->(o2)
+SET r50.text = 'Huyết áp tăng cao'
+
+MERGE (o1:disease {id: 'bệnh_van_tim_disease'})
+MERGE (o2:disease {id: 'rối_loạn_chức_năng_tâm_thu_disease'})
+MERGE (o1)-[r51:causes]->(o2)
+SET r51.text = 'Bệnh van tim'
+
+MERGE (o1:disease {id: 'bệnh_tim_bẩm_sinh_disease'})
+MERGE (o2:disease {id: 'rối_loạn_chức_năng_tâm_thu_disease'})
+MERGE (o1)-[r52:causes]->(o2)
+SET r52.text = 'Bệnh tim bẩm sinh'
+
+MERGE (o1:disease {id: 'rối_loạn_chức_năng_tâm_trương_disease'})
+MERGE (o2:disease {id: 'huyết_áp_cao__béo_phì__bệnh_động_mạch_vành__bệnh_cơ_tim__bệnh_màng_ngoài_tim__đái_tháo_đường__rung_nhĩ__hội_chứng_ngưng_thở_khi_ngủ_disease'})
+MERGE (o1)-[r53:causedBy]->(o2)
+SET r53.text = 'Rối loạn chức năng tâm trương thường do:'
+
+MERGE (o1:disease {id: 'huyết_áp_cao_disease'})
+MERGE (o2:disease {id: 'rối_loạn_chức_năng_tâm_trương_disease'})
+MERGE (o1)-[r54:causes]->(o2)
+SET r54.text = 'Huyết áp cao'
+
+MERGE (o1:disease {id: 'béo_phì_disease'})
+MERGE (o2:disease {id: 'rối_loạn_chức_năng_tâm_trương_disease'})
+MERGE (o1)-[r55:causes]->(o2)
+SET r55.text = 'Béo phì'
+
+MERGE (o1:disease {id: 'bệnh_động_mạch_vành_disease'})
+MERGE (o2:disease {id: 'rối_loạn_chức_năng_tâm_trương_disease'})
+MERGE (o1)-[r56:causes]->(o2)
+SET r56.text = 'Bệnh động mạch vành'
+
+MERGE (o1:disease {id: 'bệnh_cơ_tim_disease'})
+MERGE (o2:disease {id: 'rối_loạn_chức_năng_tâm_trương_disease'})
+MERGE (o1)-[r57:causes]->(o2)
+SET r57.text = 'Bệnh cơ tim'
+
+MERGE (o1:disease {id: 'bệnh_màng_ngoài_tim_disease'})
+MERGE (o2:disease {id: 'rối_loạn_chức_năng_tâm_trương_disease'})
+MERGE (o1)-[r58:causes]->(o2)
+SET r58.text = 'Bệnh màng ngoài tim'
+
+MERGE (o1:disease {id: 'đái_tháo_đường_disease'})
+MERGE (o2:disease {id: 'rối_loạn_chức_năng_tâm_trương_disease'})
+MERGE (o1)-[r59:causes]->(o2)
+SET r59.text = 'Đái tháo đường'
+
+MERGE (o1:disease {id: 'rung_nhĩ_disease'})
+MERGE (o2:disease {id: 'rối_loạn_chức_năng_tâm_trương_disease'})
+MERGE (o1)-[r60:causes]->(o2)
+SET r60.text = 'Rung nhĩ'
+
+MERGE (o1:disease {id: 'hội_chứng_ngưng_thở_khi_ngủ_disease'})
+MERGE (o2:disease {id: 'rối_loạn_chức_năng_tâm_trương_disease'})
+MERGE (o1)-[r61:causes]->(o2)
+SET r61.text = 'Hội chứng ngưng thở khi ngủ'
+
+MERGE (o1:disease {id: 'béo_phì__ngưng_thở_khi_ngủ_disease'})
+MERGE (o2:disease {id: 'suy_tim_trái_disease'})
+MERGE (o1)-[r62:causes]->(o2)
+SET r62.text = 'Béo phì, ngưng thở khi ngủ là những yếu tố nguy cơ của bệnh suy tim trái'
+
+MERGE (o1:treatment {id: 'chẩn_đoán_và_điều_trị_sớm_treatment'})
+MERGE (o2:disease {id: 'suy_tim_trái_disease'})
+MERGE (o1)-[r63:treatedBy]->(o2)
+SET r63.text = 'Chẩn đoán và điều trị sớm là chìa khóa giúp làm chậm sự tiến triển của suy tim trái, kiểm soát triệu chứng và phòng ngừa biến chứng.'
+
+MERGE (o1:disease {id: 'suy_tim_trái_disease'})
+MERGE (o2:disease {id: 'các_biến_chứng_disease'})
+MERGE (o1)-[r64:causes]->(o2)
+SET r64.text = 'Ngược lại, nếu không được chữa trị kịp thời, suy tim trái có thể gây ra các biến chứng như:'
+
+MERGE (o1:disease {id: 'rối_loạn_nhịp_tim_disease'})
+MERGE (o2:disease {id: 'suy_tim_trái_disease'})
+MERGE (o1)-[r65:isSymptomOf]->(o2)
+SET r65.text = 'Rối loạn nhịp tim như nhịp nhanh thất và rung nhĩ…'
+
+MERGE (o1:disease {id: 'hở_van_tim_disease'})
+MERGE (o2:disease {id: 'suy_tim_trái_disease'})
+MERGE (o1)-[r66:isSymptomOf]->(o2)
+SET r66.text = 'Hở van tim'
+
+MERGE (o1:disease {id: 'tăng_áp_động_mạch_phổi_disease'})
+MERGE (o2:disease {id: 'suy_tim_trái_disease'})
+MERGE (o1)-[r67:isSymptomOf]->(o2)
+SET r67.text = 'Tăng áp động mạch phổi'
+
+MERGE (o1:disease {id: 'suy_chức_năng_các_cơ_quan_disease'})
+MERGE (o2:disease {id: 'suy_tim_trái_disease'})
+MERGE (o1)-[r68:isSymptomOf]->(o2)
+SET r68.text = 'Suy chức năng các cơ quan như suy gan, suy thận…'
+
+MERGE (o1:disease {id: 'suy_tim_giai_đoạn_cuối_kháng_trị_disease'})
+MERGE (o2:treatment {id: 'ghép_tim_treatment'})
+MERGE (o1)-[r69:treatedBy]->(o2)
+SET r69.text = 'Suy tim giai đoạn cuối kháng trị cần phải ghép tim'
+
+MERGE (o1:symptom {id: 'đột_tử_hoặc_tử_vong_symptom'})
+MERGE (o2:disease {id: 'suy_tim_trái_disease'})
+MERGE (o1)-[r70:isSymptomOf]->(o2)
+SET r70.text = 'Đột tử hoặc tử vong'
+
+MERGE (o1:cause {id: 'cục_máu_đông_trong_tim_cause'})
+MERGE (o2:disease {id: 'đột_quỵ_não_hoặc_tắc_mạch_disease'})
+MERGE (o1)-[r71:causes]->(o2)
+SET r71.text = 'Cục máu đông trong tim có thể đưa đến đột quỵ não hoặc tắc mạch'
+
+MERGE (o1:disease {id: 'thiếu_máu_disease'})
+MERGE (o2:disease {id: 'suy_tim_trái_disease'})
+MERGE (o1)-[r72:isSymptomOf]->(o2)
+SET r72.text = 'Thiếu máu'
+
+MERGE (o1:test {id: 'thăm_khám_tổng_quát_test'})
+MERGE (o2:disease {id: 'suy_tim_trái_disease'})
+MERGE (o1)-[r73:diagnosedBy]->(o2)
+SET r73.text = 'Để chẩn đoán suy tim trái, trước tiên, bác sĩ sẽ thăm khám tổng quát và hỏi bệnh sử của bạn.'
+
+MERGE (o1:test {id: 'hỏi_bệnh_sử_test'})
+MERGE (o2:disease {id: 'suy_tim_trái_disease'})
+MERGE (o1)-[r74:diagnosedBy]->(o2)
+SET r74.text = 'Để chẩn đoán suy tim trái, trước tiên, bác sĩ sẽ thăm khám tổng quát và hỏi bệnh sử của bạn.'
+
+MERGE (o1:test {id: 'đo_điện_tâm_đồ_test'})
+MERGE (o2:disease {id: 'suy_tim_trái_disease'})
+MERGE (o1)-[r75:diagnosedBy]->(o2)
+SET r75.text = 'Tiếp đến, bác sĩ tiến hành đo điện tâm đồ, chụp X-quang tim phổi, siêu âm tim nhằm đánh giá cấu trúc, chức năng của tâm thất trái, và xét nghiệm máu chất chỉ điểm sinh học của suy tim.'
+
+MERGE (o1:test {id: 'chụp_x-quang_tim_phổi_test'})
+MERGE (o2:disease {id: 'suy_tim_trái_disease'})
+MERGE (o1)-[r76:diagnosedBy]->(o2)
+SET r76.text = 'Tiếp đến, bác sĩ tiến hành đo điện tâm đồ, chụp X-quang tim phổi, siêu âm tim nhằm đánh giá cấu trúc, chức năng của tâm thất trái, và xét nghiệm máu chất chỉ điểm sinh học của suy tim.'
+
+MERGE (o1:test {id: 'siêu_âm_tim_test'})
+MERGE (o2:disease {id: 'suy_tim_trái_disease'})
+MERGE (o1)-[r77:diagnosedBy]->(o2)
+SET r77.text = 'Tiếp đến, bác sĩ tiến hành đo điện tâm đồ, chụp X-quang tim phổi, siêu âm tim nhằm đánh giá cấu trúc, chức năng của tâm thất trái, và xét nghiệm máu chất chỉ điểm sinh học của suy tim.'
+
+MERGE (o1:test {id: 'xét_nghiệm_máu_chất_chỉ_điểm_sinh_học_test'})
+MERGE (o2:disease {id: 'suy_tim_trái_disease'})
+MERGE (o1)-[r78:diagnosedBy]->(o2)
+SET r78.text = 'Tiếp đến, bác sĩ tiến hành đo điện tâm đồ, chụp X-quang tim phổi, siêu âm tim nhằm đánh giá cấu trúc, chức năng của tâm thất trái, và xét nghiệm máu chất chỉ điểm sinh học của suy tim.'
+
+MERGE (o1:disease {id: 'huyết_áp_cao_disease'})
+MERGE (o2:disease {id: 'suy_tim_trái_disease'})
+MERGE (o1)-[r79:relatedTo]->(o2)
+SET r79.text = 'Bác sĩ sẽ hỏi kỹ bạn về tiền sử bệnh huyết áp cao, đái tháo đường, rối loạn lipid máu, thói quen uống rượu bia, hút thuốc lá, triệu chứng đau thắt ngực hoặc tiền sử nhồi máu cơ tim, triệu chứng khó thở hoặc tiền sử bị suy tim, bệnh van tim hay rối loạn nhịp tim trước đây.'
+
+MERGE (o1:disease {id: 'đái_tháo_đường_disease'})
+MERGE (o2:disease {id: 'suy_tim_trái_disease'})
+MERGE (o1)-[r80:relatedTo]->(o2)
+SET r80.text = 'Bác sĩ sẽ hỏi kỹ bạn về tiền sử bệnh huyết áp cao, đái tháo đường, rối loạn lipid máu, thói quen uống rượu bia, hút thuốc lá, triệu chứng đau thắt ngực hoặc tiền sử nhồi máu cơ tim, triệu chứng khó thở hoặc tiền sử bị suy tim, bệnh van tim hay rối loạn nhịp tim trước đây.'
+
+MERGE (o1:disease {id: 'rối_loạn_lipid_máu_disease'})
+MERGE (o2:disease {id: 'suy_tim_trái_disease'})
+MERGE (o1)-[r81:relatedTo]->(o2)
+SET r81.text = 'Bác sĩ sẽ hỏi kỹ bạn về tiền sử bệnh huyết áp cao, đái tháo đường, rối loạn lipid máu, thói quen uống rượu bia, hút thuốc lá, triệu chứng đau thắt ngực hoặc tiền sử nhồi máu cơ tim, triệu chứng khó thở hoặc tiền sử bị suy tim, bệnh van tim hay rối loạn nhịp tim trước đây.'
+
+MERGE (o1:lifestyle {id: 'uống_rượu_bia_lifestyle'})
+MERGE (o2:disease {id: 'suy_tim_trái_disease'})
+MERGE (o1)-[r82:aggravatedBy]->(o2)
+SET r82.text = 'Bác sĩ sẽ hỏi kỹ bạn về tiền sử bệnh huyết áp cao, đái tháo đường, rối loạn lipid máu, thói quen uống rượu bia, hút thuốc lá, triệu chứng đau thắt ngực hoặc tiền sử nhồi máu cơ tim, triệu chứng khó thở hoặc tiền sử bị suy tim, bệnh van tim hay rối loạn nhịp tim trước đây.'
+
+MERGE (o1:lifestyle {id: 'hút_thuốc_lá_lifestyle'})
+MERGE (o2:disease {id: 'suy_tim_trái_disease'})
+MERGE (o1)-[r83:aggravatedBy]->(o2)
+SET r83.text = 'Bác sĩ sẽ hỏi kỹ bạn về tiền sử bệnh huyết áp cao, đái tháo đường, rối loạn lipid máu, thói quen uống rượu bia, hút thuốc lá, triệu chứng đau thắt ngực hoặc tiền sử nhồi máu cơ tim, triệu chứng khó thở hoặc tiền sử bị suy tim, bệnh van tim hay rối loạn nhịp tim trước đây.'
+
+MERGE (o1:symptom {id: 'đau_thắt_ngực_symptom'})
+MERGE (o2:disease {id: 'nhồi_máu_cơ_tim_disease'})
+MERGE (o1)-[r84:isSymptomOf]->(o2)
+SET r84.text = 'Bác sĩ sẽ hỏi kỹ bạn về tiền sử bệnh huyết áp cao, đái tháo đường, rối loạn lipid máu, thói quen uống rượu bia, hút thuốc lá, triệu chứng đau thắt ngực hoặc tiền sử nhồi máu cơ tim, triệu chứng khó thở hoặc tiền sử bị suy tim, bệnh van tim hay rối loạn nhịp tim trước đây.'
+
+MERGE (o1:disease {id: 'nhồi_máu_cơ_tim_disease'})
+MERGE (o2:disease {id: 'suy_tim_trái_disease'})
+MERGE (o1)-[r85:relatedTo]->(o2)
+SET r85.text = 'Bác sĩ sẽ hỏi kỹ bạn về tiền sử bệnh huyết áp cao, đái tháo đường, rối loạn lipid máu, thói quen uống rượu bia, hút thuốc lá, triệu chứng đau thắt ngực hoặc tiền sử nhồi máu cơ tim, triệu chứng khó thở hoặc tiền sử bị suy tim, bệnh van tim hay rối loạn nhịp tim trước đây.'
+
+MERGE (o1:symptom {id: 'khó_thở_symptom'})
+MERGE (o2:disease {id: 'suy_tim_trái_disease'})
+MERGE (o1)-[r86:isSymptomOf]->(o2)
+SET r86.text = 'Bác sĩ sẽ hỏi kỹ bạn về tiền sử bệnh huyết áp cao, đái tháo đường, rối loạn lipid máu, thói quen uống rượu bia, hút thuốc lá, triệu chứng đau thắt ngực hoặc tiền sử nhồi máu cơ tim, triệu chứng khó thở hoặc tiền sử bị suy tim, bệnh van tim hay rối loạn nhịp tim trước đây.'
+
+MERGE (o1:disease {id: 'suy_tim_disease'})
+MERGE (o2:disease {id: 'suy_tim_trái_disease'})
+MERGE (o1)-[r87:relatedTo]->(o2)
+SET r87.text = 'Bác sĩ sẽ hỏi kỹ bạn về tiền sử bệnh huyết áp cao, đái tháo đường, rối loạn lipid máu, thói quen uống rượu bia, hút thuốc lá, triệu chứng đau thắt ngực hoặc tiền sử nhồi máu cơ tim, triệu chứng khó thở hoặc tiền sử bị suy tim, bệnh van tim hay rối loạn nhịp tim trước đây.'
+
+MERGE (o1:disease {id: 'bệnh_van_tim_disease'})
+MERGE (o2:disease {id: 'suy_tim_trái_disease'})
+MERGE (o1)-[r88:relatedTo]->(o2)
+SET r88.text = 'Bác sĩ sẽ hỏi kỹ bạn về tiền sử bệnh huyết áp cao, đái tháo đường, rối loạn lipid máu, thói quen uống rượu bia, hút thuốc lá, triệu chứng đau thắt ngực hoặc tiền sử nhồi máu cơ tim, triệu chứng khó thở hoặc tiền sử bị suy tim, bệnh van tim hay rối loạn nhịp tim trước đây.'
+
+MERGE (o1:disease {id: 'rối_loạn_nhịp_tim_disease'})
+MERGE (o2:disease {id: 'suy_tim_trái_disease'})
+MERGE (o1)-[r89:relatedTo]->(o2)
+SET r89.text = 'Bác sĩ sẽ hỏi kỹ bạn về tiền sử bệnh huyết áp cao, đái tháo đường, rối loạn lipid máu, thói quen uống rượu bia, hút thuốc lá, triệu chứng đau thắt ngực hoặc tiền sử nhồi máu cơ tim, triệu chứng khó thở hoặc tiền sử bị suy tim, bệnh van tim hay rối loạn nhịp tim trước đây.'
+
+MERGE (o1:symptom {id: 'khó_thở_symptom'})
+MERGE (o2:disease {id: 'suy_tim_trái_disease'})
+MERGE (o1)-[r90:isSymptomOf]->(o2)
+SET r90.text = 'Khi thăm khám, bác sĩ sẽ chú ý đến các triệu chứng suy tim như khó thở, thở khò khè, thở co kéo, nói hụt hơi, tĩnh mạch cổ nổi to ở cổ, phù chân, gan to hay bụng báng.'
+
+MERGE (o1:symptom {id: 'thở_khò_khè_symptom'})
+MERGE (o2:disease {id: 'suy_tim_trái_disease'})
+MERGE (o1)-[r91:isSymptomOf]->(o2)
+SET r91.text = 'Khi thăm khám, bác sĩ sẽ chú ý đến các triệu chứng suy tim như khó thở, thở khò khè, thở co kéo, nói hụt hơi, tĩnh mạch cổ nổi to ở cổ, phù chân, gan to hay bụng báng.'
+
+MERGE (o1:symptom {id: 'thở_co_kéo_symptom'})
+MERGE (o2:disease {id: 'suy_tim_trái_disease'})
+MERGE (o1)-[r92:isSymptomOf]->(o2)
+SET r92.text = 'Khi thăm khám, bác sĩ sẽ chú ý đến các triệu chứng suy tim như khó thở, thở khò khè, thở co kéo, nói hụt hơi, tĩnh mạch cổ nổi to ở cổ, phù chân, gan to hay bụng báng.'
+
+MERGE (o1:symptom {id: 'nói_hụt_hơi_symptom'})
+MERGE (o2:disease {id: 'suy_tim_trái_disease'})
+MERGE (o1)-[r93:isSymptomOf]->(o2)
+SET r93.text = 'Khi thăm khám, bác sĩ sẽ chú ý đến các triệu chứng suy tim như khó thở, thở khò khè, thở co kéo, nói hụt hơi, tĩnh mạch cổ nổi to ở cổ, phù chân, gan to hay bụng báng.'
+
+MERGE (o1:symptom {id: 'tĩnh_mạch_cổ_nổi_to_symptom'})
+MERGE (o2:disease {id: 'suy_tim_trái_disease'})
+MERGE (o1)-[r94:isSymptomOf]->(o2)
+SET r94.text = 'Khi thăm khám, bác sĩ sẽ chú ý đến các triệu chứng suy tim như khó thở, thở khò khè, thở co kéo, nói hụt hơi, tĩnh mạch cổ nổi to ở cổ, phù chân, gan to hay bụng báng.'
+
+MERGE (o1:symptom {id: 'phù_chân_symptom'})
+MERGE (o2:disease {id: 'suy_tim_trái_disease'})
+MERGE (o1)-[r95:isSymptomOf]->(o2)
+SET r95.text = 'Khi thăm khám, bác sĩ sẽ chú ý đến các triệu chứng suy tim như khó thở, thở khò khè, thở co kéo, nói hụt hơi, tĩnh mạch cổ nổi to ở cổ, phù chân, gan to hay bụng báng.'
+
+MERGE (o1:symptom {id: 'gan_to_symptom'})
+MERGE (o2:disease {id: 'suy_tim_trái_disease'})
+MERGE (o1)-[r96:isSymptomOf]->(o2)
+SET r96.text = 'Khi thăm khám, bác sĩ sẽ chú ý đến các triệu chứng suy tim như khó thở, thở khò khè, thở co kéo, nói hụt hơi, tĩnh mạch cổ nổi to ở cổ, phù chân, gan to hay bụng báng.'
+
+MERGE (o1:symptom {id: 'bụng_báng_symptom'})
+MERGE (o2:disease {id: 'suy_tim_trái_disease'})
+MERGE (o1)-[r97:isSymptomOf]->(o2)
+SET r97.text = 'Khi thăm khám, bác sĩ sẽ chú ý đến các triệu chứng suy tim như khó thở, thở khò khè, thở co kéo, nói hụt hơi, tĩnh mạch cổ nổi to ở cổ, phù chân, gan to hay bụng báng.'
+
+MERGE (o1:symptom {id: 'tiếng_thổi_bất_thường_symptom'})
+MERGE (o2:disease {id: 'suy_tim_trái_disease'})
+MERGE (o1)-[r98:isSymptomOf]->(o2)
+SET r98.text = 'Nghe tim có thể có tiếng thổi bất thường, tim đập nhanh, không đều.'
+
+MERGE (o1:symptom {id: 'tim_đập_nhanh_symptom'})
+MERGE (o2:disease {id: 'suy_tim_trái_disease'})
+MERGE (o1)-[r99:isSymptomOf]->(o2)
+SET r99.text = 'Nghe tim có thể có tiếng thổi bất thường, tim đập nhanh, không đều.'
+
+MERGE (o1:symptom {id: 'tim_đập_không_đều_symptom'})
+MERGE (o2:disease {id: 'suy_tim_trái_disease'})
+MERGE (o1)-[r100:isSymptomOf]->(o2)
+SET r100.text = 'Nghe tim có thể có tiếng thổi bất thường, tim đập nhanh, không đều.'
+
+MERGE (o1:symptom {id: 'tiếng_rít_symptom'})
+MERGE (o2:disease {id: 'suy_tim_trái_disease'})
+MERGE (o1)-[r101:isSymptomOf]->(o2)
+SET r101.text = 'Nghe phổi có thể có nhiều tiếng rít ở hai bên phổi hoặc dấu hiệu nghi ngờ có nước trong phổi.'
+
+MERGE (o1:symptom {id: 'nước_trong_phổi_symptom'})
+MERGE (o2:disease {id: 'suy_tim_trái_disease'})
+MERGE (o1)-[r102:isSymptomOf]->(o2)
+SET r102.text = 'Nghe phổi có thể có nhiều tiếng rít ở hai bên phổi hoặc dấu hiệu nghi ngờ có nước trong phổi.'
+
+MERGE (o1:test {id: 'đo_điện_tâm_đồ_test'})
+MERGE (o2:disease {id: 'suy_tim_trái_disease'})
+MERGE (o1)-[r103:diagnosedBy]->(o2)
+SET r103.text = 'Đo điện tim: có dấu hiệu lớn các buồng tim, rung nhĩ, loạn nhịp tim hay dấu hiệu thiếu máu cơ tim hoặc nhồi máu cơ tim cũ trước đây.'
+
+MERGE (o1:symptom {id: 'dấu_hiệu_lớn_các_buồng_tim_symptom'})
+MERGE (o2:disease {id: 'suy_tim_trái_disease'})
+MERGE (o1)-[r104:isSymptomOf]->(o2)
+SET r104.text = 'Đo điện tim: có dấu hiệu lớn các buồng tim, rung nhĩ, loạn nhịp tim hay dấu hiệu thiếu máu cơ tim hoặc nhồi máu cơ tim cũ trước đây.'
+
+MERGE (o1:symptom {id: 'rung_nhĩ_symptom'})
+MERGE (o2:disease {id: 'suy_tim_trái_disease'})
+MERGE (o1)-[r105:isSymptomOf]->(o2)
+SET r105.text = 'Đo điện tim: có dấu hiệu lớn các buồng tim, rung nhĩ, loạn nhịp tim hay dấu hiệu thiếu máu cơ tim hoặc nhồi máu cơ tim cũ trước đây.'
+
+MERGE (o1:symptom {id: 'loạn_nhịp_tim_symptom'})
+MERGE (o2:disease {id: 'suy_tim_trái_disease'})
+MERGE (o1)-[r106:isSymptomOf]->(o2)
+SET r106.text = 'Đo điện tim: có dấu hiệu lớn các buồng tim, rung nhĩ, loạn nhịp tim hay dấu hiệu thiếu máu cơ tim hoặc nhồi máu cơ tim cũ trước đây.'
+
+MERGE (o1:disease {id: 'thiếu_máu_cơ_tim_disease'})
+MERGE (o2:disease {id: 'suy_tim_trái_disease'})
+MERGE (o1)-[r107:relatedTo]->(o2)
+SET r107.text = 'Đo điện tim: có dấu hiệu lớn các buồng tim, rung nhĩ, loạn nhịp tim hay dấu hiệu thiếu máu cơ tim hoặc nhồi máu cơ tim cũ trước đây.'
+
+MERGE (o1:disease {id: 'nhồi_máu_cơ_tim_cũ_disease'})
+MERGE (o2:disease {id: 'suy_tim_trái_disease'})
+MERGE (o1)-[r108:relatedTo]->(o2)
+SET r108.text = 'Đo điện tim: có dấu hiệu lớn các buồng tim, rung nhĩ, loạn nhịp tim hay dấu hiệu thiếu máu cơ tim hoặc nhồi máu cơ tim cũ trước đây.'
+
+MERGE (o1:test {id: 'chụp_x-quang_phổi_test'})
+MERGE (o2:disease {id: 'suy_tim_trái_disease'})
+MERGE (o1)-[r109:diagnosedBy]->(o2)
+SET r109.text = 'Chụp X-quang phổi: thấy được bóng tim to, sung huyết trong phổi hoặc có dịch trong phổi.'
+
+MERGE (o1:symptom {id: 'bóng_tim_to_symptom'})
+MERGE (o2:disease {id: 'suy_tim_trái_disease'})
+MERGE (o1)-[r110:isSymptomOf]->(o2)
+SET r110.text = 'Chụp X-quang phổi: thấy được bóng tim to, sung huyết trong phổi hoặc có dịch trong phổi.'
+
+MERGE (o1:symptom {id: 'sung_huyết_trong_phổi_symptom'})
+MERGE (o2:disease {id: 'suy_tim_trái_disease'})
+MERGE (o1)-[r111:isSymptomOf]->(o2)
+SET r111.text = 'Chụp X-quang phổi: thấy được bóng tim to, sung huyết trong phổi hoặc có dịch trong phổi.'
+
+MERGE (o1:symptom {id: 'dịch_trong_phổi_symptom'})
+MERGE (o2:disease {id: 'suy_tim_trái_disease'})
+MERGE (o1)-[r112:isSymptomOf]->(o2)
+SET r112.text = 'Chụp X-quang phổi: thấy được bóng tim to, sung huyết trong phổi hoặc có dịch trong phổi.'
+
+MERGE (o1:test {id: 'xét_nghiệm_máu_đo_chất_chỉ_thị_test'})
+MERGE (o2:disease {id: 'suy_tim_trái_disease'})
+MERGE (o1)-[r113:diagnosedBy]->(o2)
+SET r113.text = 'Xét nghiệm máu đo chất chỉ thị của suy tim (BNP/hoặc NT-ProBNP, sST2&#8230;): các chất này tăng cao trong suy tim.'
+
+MERGE (o1:test {id: 'bnp_test'})
+MERGE (o2:disease {id: 'suy_tim_trái_disease'})
+MERGE (o1)-[r114:diagnosedBy]->(o2)
+SET r114.text = 'Xét nghiệm máu đo chất chỉ thị của suy tim (BNP/hoặc NT-ProBNP, sST2&#8230;): các chất này tăng cao trong suy tim.'
+
+MERGE (o1:test {id: 'nt-probnp_test'})
+MERGE (o2:disease {id: 'suy_tim_trái_disease'})
+MERGE (o1)-[r115:diagnosedBy]->(o2)
+SET r115.text = 'Xét nghiệm máu đo chất chỉ thị của suy tim (BNP/hoặc NT-ProBNP, sST2&#8230;): các chất này tăng cao trong suy tim.'
+
+MERGE (o1:test {id: 'sst2_test'})
+MERGE (o2:disease {id: 'suy_tim_trái_disease'})
+MERGE (o1)-[r116:diagnosedBy]->(o2)
+SET r116.text = 'Xét nghiệm máu đo chất chỉ thị của suy tim (BNP/hoặc NT-ProBNP, sST2&#8230;): các chất này tăng cao trong suy tim.'
+
+MERGE (o1:test {id: 'siêu_âm_tim_test'})
+MERGE (o2:disease {id: 'suy_tim_trái_disease'})
+MERGE (o1)-[r117:diagnosedBy]->(o2)
+SET r117.text = 'Siêu âm tim: cung cấp nhiều thông tin cần thiết cho chẩn đoán và điều trị.'
+
+MERGE (o1:disease {id: 'bệnh_van_tim_disease'})
+MERGE (o2:disease {id: 'suy_tim_trái_disease'})
+MERGE (o1)-[r118:relatedTo]->(o2)
+SET r118.text = 'Siêu âm tim cho biết có bệnh van tim không, có thiếu máu cục bộ cơ tim hay sẹo nhồi máu cơ tim cũ (vùng cơ tim giảm vận động hoặc vô động, không co bóp), kích thước các buồng tim, khả năng co bóp của cơ tim (phân suất tống máu), áp lực động mạch phổi, huyết khối trong buồng tim, dịch xung quanh màng ngoài tim&#8230;'
+
+MERGE (o1:disease {id: 'thiếu_máu_cục_bộ_cơ_tim_disease'})
+MERGE (o2:disease {id: 'suy_tim_trái_disease'})
+MERGE (o1)-[r119:relatedTo]->(o2)
+SET r119.text = 'Siêu âm tim cho biết có bệnh van tim không, có thiếu máu cục bộ cơ tim hay sẹo nhồi máu cơ tim cũ (vùng cơ tim giảm vận động hoặc vô động, không co bóp), kích thước các buồng tim, khả năng co bóp của cơ tim (phân suất tống máu), áp lực động mạch phổi, huyết khối trong buồng tim, dịch xung quanh màng ngoài tim&#8230;'
+
+MERGE (o1:disease {id: 'sẹo_nhồi_máu_cơ_tim_cũ_disease'})
+MERGE (o2:disease {id: 'suy_tim_trái_disease'})
+MERGE (o1)-[r120:relatedTo]->(o2)
+SET r120.text = 'Siêu âm tim cho biết có bệnh van tim không, có thiếu máu cục bộ cơ tim hay sẹo nhồi máu cơ tim cũ (vùng cơ tim giảm vận động hoặc vô động, không co bóp), kích thước các buồng tim, khả năng co bóp của cơ tim (phân suất tống máu), áp lực động mạch phổi, huyết khối trong buồng tim, dịch xung quanh màng ngoài tim&#8230;'
+
+MERGE (o1:organ {id: 'cơ_tim_organ'})
+MERGE (o2:disease {id: 'suy_tim_trái_disease'})
+MERGE (o1)-[r121:affects]->(o2)
+SET r121.text = 'Siêu âm tim cho biết có bệnh van tim không, có thiếu máu cục bộ cơ tim hay sẹo nhồi máu cơ tim cũ (vùng cơ tim giảm vận động hoặc vô động, không co bóp), kích thước các buồng tim, khả năng co bóp của cơ tim (phân suất tống máu), áp lực động mạch phổi, huyết khối trong buồng tim, dịch xung quanh màng ngoài tim&#8230;'
+
+MERGE (o1:test {id: 'phân_suất_tống_máu_test'})
+MERGE (o2:disease {id: 'suy_tim_trái_disease'})
+MERGE (o1)-[r122:diagnosedBy]->(o2)
+SET r122.text = 'Siêu âm tim cho biết có bệnh van tim không, có thiếu máu cục bộ cơ tim hay sẹo nhồi máu cơ tim cũ (vùng cơ tim giảm vận động hoặc vô động, không co bóp), kích thước các buồng tim, khả năng co bóp của cơ tim (phân suất tống máu), áp lực động mạch phổi, huyết khối trong buồng tim, dịch xung quanh màng ngoài tim&#8230;'
+
+MERGE (o1:test {id: 'áp_lực_động_mạch_phổi_test'})
+MERGE (o2:disease {id: 'suy_tim_trái_disease'})
+MERGE (o1)-[r123:diagnosedBy]->(o2)
+SET r123.text = 'Siêu âm tim cho biết có bệnh van tim không, có thiếu máu cục bộ cơ tim hay sẹo nhồi máu cơ tim cũ (vùng cơ tim giảm vận động hoặc vô động, không co bóp), kích thước các buồng tim, khả năng co bóp của cơ tim (phân suất tống máu), áp lực động mạch phổi, huyết khối trong buồng tim, dịch xung quanh màng ngoài tim&#8230;'
+
+MERGE (o1:symptom {id: 'huyết_khối_trong_buồng_tim_symptom'})
+MERGE (o2:disease {id: 'suy_tim_trái_disease'})
+MERGE (o1)-[r124:isSymptomOf]->(o2)
+SET r124.text = 'Siêu âm tim cho biết có bệnh van tim không, có thiếu máu cục bộ cơ tim hay sẹo nhồi máu cơ tim cũ (vùng cơ tim giảm vận động hoặc vô động, không co bóp), kích thước các buồng tim, khả năng co bóp của cơ tim (phân suất tống máu), áp lực động mạch phổi, huyết khối trong buồng tim, dịch xung quanh màng ngoài tim&#8230;'
+
+MERGE (o1:symptom {id: 'dịch_xung_quanh_màng_ngoài_tim_symptom'})
+MERGE (o2:disease {id: 'suy_tim_trái_disease'})
+MERGE (o1)-[r125:isSymptomOf]->(o2)
+SET r125.text = 'Siêu âm tim cho biết có bệnh van tim không, có thiếu máu cục bộ cơ tim hay sẹo nhồi máu cơ tim cũ (vùng cơ tim giảm vận động hoặc vô động, không co bóp), kích thước các buồng tim, khả năng co bóp của cơ tim (phân suất tống máu), áp lực động mạch phổi, huyết khối trong buồng tim, dịch xung quanh màng ngoài tim&#8230;'
+
+MERGE (o1:disease {id: 'suy_tim_phân_suất_tống_máu_giảm_disease'})
+MERGE (o2:disease {id: 'suy_tim_trái_disease'})
+MERGE (o1)-[r126:relatedTo]->(o2)
+SET r126.text = 'Dựa vào kết quả siêu âm tim để phân loại suy tim, khi phân suất tống máu giảm nhỏ hơn hoặc bằng 40% thì gọi là suy tim phân suất tống máu giảm (suy tim tâm thu), nếu phân suất tống máu lớn hơn hoặc bằng 50% thì gọi là suy tim phân suất tống máu bảo tồn (suy tim tâm trương).'
+
+MERGE (o1:disease {id: 'suy_tim_tâm_thu_disease'})
+MERGE (o2:disease {id: 'suy_tim_trái_disease'})
+MERGE (o1)-[r127:relatedTo]->(o2)
+SET r127.text = 'Dựa vào kết quả siêu âm tim để phân loại suy tim, khi phân suất tống máu giảm nhỏ hơn hoặc bằng 40% thì gọi là suy tim phân suất tống máu giảm (suy tim tâm thu), nếu phân suất tống máu lớn hơn hoặc bằng 50% thì gọi là suy tim phân suất tống máu bảo tồn (suy tim tâm trương).'
+
+MERGE (o1:disease {id: 'suy_tim_phân_suất_tống_máu_bảo_tồn_disease'})
+MERGE (o2:disease {id: 'suy_tim_trái_disease'})
+MERGE (o1)-[r128:relatedTo]->(o2)
+SET r128.text = 'Dựa vào kết quả siêu âm tim để phân loại suy tim, khi phân suất tống máu giảm nhỏ hơn hoặc bằng 40% thì gọi là suy tim phân suất tống máu giảm (suy tim tâm thu), nếu phân suất tống máu lớn hơn hoặc bằng 50% thì gọi là suy tim phân suất tống máu bảo tồn (suy tim tâm trương).'
+
+MERGE (o1:disease {id: 'suy_tim_tâm_trương_disease'})
+MERGE (o2:disease {id: 'suy_tim_trái_disease'})
+MERGE (o1)-[r129:relatedTo]->(o2)
+SET r129.text = 'Dựa vào kết quả siêu âm tim để phân loại suy tim, khi phân suất tống máu giảm nhỏ hơn hoặc bằng 40% thì gọi là suy tim phân suất tống máu giảm (suy tim tâm thu), nếu phân suất tống máu lớn hơn hoặc bằng 50% thì gọi là suy tim phân suất tống máu bảo tồn (suy tim tâm trương).'
+
+MERGE (o1:test {id: 'xét_nghiệm_test'})
+MERGE (o2:disease {id: 'suy_tim_trái_disease'})
+MERGE (o1)-[r130:diagnosedBy]->(o2)
+SET r130.text = 'Sau khi xác định người bệnh có suy tim, bước kế tiếp là làm các xét nghiệm tìm nguyên nhân dẫn đến suy tim.'
+
+MERGE (o1:test {id: 'trắc_nghiệm_gắng_sức_test'})
+MERGE (o2:disease {id: 'suy_tim_trái_disease'})
+MERGE (o1)-[r131:diagnosedBy]->(o2)
+SET r131.text = 'Một số xét nghiệm chuyên sâu khác gồm trắc nghiệm gắng sức, Holter điện tâm đồ, chụp CT tim và động mạch vành có cản quang, chụp mạch vành bằng phương pháp xâm nhập, MRI tim, xạ ký cơ tim, xét nghiệm gene, sinh thiết cơ tim&#8230;'
+
+MERGE (o1:test {id: 'holter_điện_tâm_đồ_test'})
+MERGE (o2:disease {id: 'suy_tim_trái_disease'})
+MERGE (o1)-[r132:diagnosedBy]->(o2)
+SET r132.text = 'Một số xét nghiệm chuyên sâu khác gồm trắc nghiệm gắng sức, Holter điện tâm đồ, chụp CT tim và động mạch vành có cản quang, chụp mạch vành bằng phương pháp xâm nhập, MRI tim, xạ ký cơ tim, xét nghiệm gene, sinh thiết cơ tim&#8230;'
+
+MERGE (o1:test {id: 'chụp_ct_tim_và_động_mạch_vành_có_cản_quang_test'})
+MERGE (o2:disease {id: 'suy_tim_trái_disease'})
+MERGE (o1)-[r133:diagnosedBy]->(o2)
+SET r133.text = 'Một số xét nghiệm chuyên sâu khác gồm trắc nghiệm gắng sức, Holter điện tâm đồ, chụp CT tim và động mạch vành có cản quang, chụp mạch vành bằng phương pháp xâm nhập, MRI tim, xạ ký cơ tim, xét nghiệm gene, sinh thiết cơ tim&#8230;'
+
+MERGE (o1:test {id: 'chụp_mạch_vành_bằng_phương_pháp_xâm_nhập_test'})
+MERGE (o2:disease {id: 'suy_tim_trái_disease'})
+MERGE (o1)-[r134:diagnosedBy]->(o2)
+SET r134.text = 'Một số xét nghiệm chuyên sâu khác gồm trắc nghiệm gắng sức, Holter điện tâm đồ, chụp CT tim và động mạch vành có cản quang, chụp mạch vành bằng phương pháp xâm nhập, MRI tim, xạ ký cơ tim, xét nghiệm gene, sinh thiết cơ tim&#8230;'
+
+MERGE (o1:test {id: 'mri_tim_test'})
+MERGE (o2:disease {id: 'suy_tim_trái_disease'})
+MERGE (o1)-[r135:diagnosedBy]->(o2)
+SET r135.text = 'Một số xét nghiệm chuyên sâu khác gồm trắc nghiệm gắng sức, Holter điện tâm đồ, chụp CT tim và động mạch vành có cản quang, chụp mạch vành bằng phương pháp xâm nhập, MRI tim, xạ ký cơ tim, xét nghiệm gene, sinh thiết cơ tim&#8230;'
+
+MERGE (o1:test {id: 'xạ_ký_cơ_tim_test'})
+MERGE (o2:disease {id: 'suy_tim_trái_disease'})
+MERGE (o1)-[r136:diagnosedBy]->(o2)
+SET r136.text = 'Một số xét nghiệm chuyên sâu khác gồm trắc nghiệm gắng sức, Holter điện tâm đồ, chụp CT tim và động mạch vành có cản quang, chụp mạch vành bằng phương pháp xâm nhập, MRI tim, xạ ký cơ tim, xét nghiệm gene, sinh thiết cơ tim&#8230;'
+
+MERGE (o1:test {id: 'xét_nghiệm_gene_test'})
+MERGE (o2:disease {id: 'suy_tim_trái_disease'})
+MERGE (o1)-[r137:diagnosedBy]->(o2)
+SET r137.text = 'Một số xét nghiệm chuyên sâu khác gồm trắc nghiệm gắng sức, Holter điện tâm đồ, chụp CT tim và động mạch vành có cản quang, chụp mạch vành bằng phương pháp xâm nhập, MRI tim, xạ ký cơ tim, xét nghiệm gene, sinh thiết cơ tim&#8230;'
+
+MERGE (o1:test {id: 'sinh_thiết_cơ_tim_test'})
+MERGE (o2:disease {id: 'suy_tim_trái_disease'})
+MERGE (o1)-[r138:diagnosedBy]->(o2)
+SET r138.text = 'Một số xét nghiệm chuyên sâu khác gồm trắc nghiệm gắng sức, Holter điện tâm đồ, chụp CT tim và động mạch vành có cản quang, chụp mạch vành bằng phương pháp xâm nhập, MRI tim, xạ ký cơ tim, xét nghiệm gene, sinh thiết cơ tim&#8230;'
+
+MERGE (o1:test {id: 'mri_test'})
+MERGE (o2:disease {id: 'suy_tim_trái_disease'})
+MERGE (o1)-[r139:diagnosedBy]->(o2)
+SET r139.text = 'Máy chụp cộng hưởng từ (MRI) công nghệ ma trận sinh học toàn phần được sử dụng trong chẩn đoán suy tim trái'
+
+MERGE (o1:lifestyle {id: 'lối_sống_lành_mạnh_lifestyle'})
+MERGE (o2:disease {id: 'bệnh_suy_tim_trái_disease'})
+MERGE (o1)-[r140:preventedBy]->(o2)
+SET r140.text = 'Tuân thủ lối sống lành mạnh sẽ làm giảm nguy cơ mắc bệnh suy tim trái.'

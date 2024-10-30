@@ -1,0 +1,1314 @@
+[
+    {
+        "text": "Viêm bao hoạt dịch khớp gối gây nhiều phiền toái trong sinh hoạt hằng ngày của người bệnh.",
+        "head": "Viêm bao hoạt dịch khớp gối",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "sinh hoạt hằng ngày",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Viêm bao hoạt dịch khớp gối gây nhiều phiền toái trong sinh hoạt hằng ngày của người bệnh.",
+        "head": "Viêm bao hoạt dịch khớp gối",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "người bệnh",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Nếu không có biện pháp xử lý sớm, bệnh có thể dẫn tới nhiều biến chứng nặng như tàn phế.",
+        "head": "biện pháp xử lý",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "bệnh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu không có biện pháp xử lý sớm, bệnh có thể dẫn tới nhiều biến chứng nặng như tàn phế.",
+        "head": "bệnh",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "tàn phế",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Viêm bao hoạt dịch khớp gối (viêm màng hoạt dịch khớp gối) là tình trạng viêm túi chứa dịch lỏng ở khớp gối.",
+        "head": "Viêm bao hoạt dịch khớp gối",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "viêm túi chứa dịch lỏng ở khớp gối",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Viêm bao hoạt dịch khớp gối (viêm màng hoạt dịch khớp gối) là tình trạng viêm túi chứa dịch lỏng ở khớp gối.",
+        "head": "Viêm bao hoạt dịch khớp gối",
+        "head_type": "disease",
+        "relation": "locatedIn",
+        "tail": "khớp gối",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Bao hoạt dịch giúp giảm ma sát và là miếng đệm chịu lực giữa hai đầu xương và gân, cơ, da gần khớp.",
+        "head": "Bao hoạt dịch",
+        "head_type": "organ",
+        "relation": "locatedIn",
+        "tail": "khớp gối",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Bao hoạt dịch giúp giảm ma sát và là miếng đệm chịu lực giữa hai đầu xương và gân, cơ, da gần khớp.",
+        "head": "Bao hoạt dịch",
+        "head_type": "organ",
+        "relation": "affects",
+        "tail": "xương",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Bao hoạt dịch giúp giảm ma sát và là miếng đệm chịu lực giữa hai đầu xương và gân, cơ, da gần khớp.",
+        "head": "Bao hoạt dịch",
+        "head_type": "organ",
+        "relation": "affects",
+        "tail": "gân",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Bao hoạt dịch giúp giảm ma sát và là miếng đệm chịu lực giữa hai đầu xương và gân, cơ, da gần khớp.",
+        "head": "Bao hoạt dịch",
+        "head_type": "organ",
+        "relation": "affects",
+        "tail": "cơ",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Bao hoạt dịch giúp giảm ma sát và là miếng đệm chịu lực giữa hai đầu xương và gân, cơ, da gần khớp.",
+        "head": "Bao hoạt dịch",
+        "head_type": "organ",
+        "relation": "affects",
+        "tail": "da",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Bao hoạt dịch ở bất kỳ vị trí nào trong khớp gối cũng đều có khả năng bị viêm.",
+        "head": "Bao hoạt dịch",
+        "head_type": "organ",
+        "relation": "locatedIn",
+        "tail": "khớp gối",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Bao hoạt dịch ở bất kỳ vị trí nào trong khớp gối cũng đều có khả năng bị viêm.",
+        "head": "Bao hoạt dịch",
+        "head_type": "organ",
+        "relation": "isSymptomOf",
+        "tail": "viêm",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Tuy nhiên, vị trí trước xương bánh chè, phía bên trong đầu gối và bên dưới khớp là dễ bị viêm nhất.",
+        "head": "xương bánh chè",
+        "head_type": "organ",
+        "relation": "locatedIn",
+        "tail": "khớp gối",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Tuy nhiên, vị trí trước xương bánh chè, phía bên trong đầu gối và bên dưới khớp là dễ bị viêm nhất.",
+        "head": "đầu gối",
+        "head_type": "organ",
+        "relation": "locatedIn",
+        "tail": "khớp gối",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Tuy nhiên, vị trí trước xương bánh chè, phía bên trong đầu gối và bên dưới khớp là dễ bị viêm nhất.",
+        "head": "khớp",
+        "head_type": "organ",
+        "relation": "locatedIn",
+        "tail": "khớp gối",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Tổn thương này gây đau đớn và hạn chế tầm vận động của người bệnh.",
+        "head": "Tổn thương",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "đau đớn",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Tổn thương này gây đau đớn và hạn chế tầm vận động của người bệnh.",
+        "head": "Tổn thương",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "hạn chế tầm vận động",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Tổn thương này gây đau đớn và hạn chế tầm vận động của người bệnh.",
+        "head": "Tổn thương",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "người bệnh",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Điều trị thường là kết hợp những biện pháp chăm sóc tại nhà cùng phương pháp điều trị từ bác sĩ để cải thiện tình trạng viêm và đau nhức.",
+        "head": "Điều trị",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "viêm",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Điều trị thường là kết hợp những biện pháp chăm sóc tại nhà cùng phương pháp điều trị từ bác sĩ để cải thiện tình trạng viêm và đau nhức.",
+        "head": "Điều trị",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "đau nhức",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Những triệu chứng viêm bao hoạt dịch đầu gối rất đa dạng.",
+        "head": "viêm bao hoạt dịch đầu gối",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "triệu chứng",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Tùy theo bao hoạt dịch nào ảnh hưởng và nguyên nhân gây viêm, mỗi trường hợp sẽ có dấu hiệu khác nhau.",
+        "head": "bao hoạt dịch",
+        "head_type": "organ",
+        "relation": "affects",
+        "tail": "viêm",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Tùy theo bao hoạt dịch nào ảnh hưởng và nguyên nhân gây viêm, mỗi trường hợp sẽ có dấu hiệu khác nhau.",
+        "head": "nguyên nhân",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "viêm",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Một số triệu chứng viêm màng hoạt dịch khớp gối thường gặp gồm:  Vùng gối có cảm giác ấm nóng, sưng và đau khi đi lại.",
+        "head": "Vùng gối có cảm giác ấm nóng",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "viêm màng hoạt dịch khớp gối",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Một số triệu chứng viêm màng hoạt dịch khớp gối thường gặp gồm:  Vùng gối có cảm giác ấm nóng, sưng và đau khi đi lại.",
+        "head": "sưng",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "viêm màng hoạt dịch khớp gối",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Một số triệu chứng viêm màng hoạt dịch khớp gối thường gặp gồm:  Vùng gối có cảm giác ấm nóng, sưng và đau khi đi lại.",
+        "head": "đau khi đi lại",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "viêm màng hoạt dịch khớp gối",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Cơn đau không thuyên giảm hoặc chỉ giảm nhẹ kể cả khi nghỉ ngơi.",
+        "head": "Cơn đau không thuyên giảm",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "viêm màng hoạt dịch khớp gối",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Cơn đau không thuyên giảm hoặc chỉ giảm nhẹ kể cả khi nghỉ ngơi.",
+        "head": "Cơn đau giảm nhẹ",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "viêm màng hoạt dịch khớp gối",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Những yếu tố có thể khởi phát viêm bao hoạt dich, như là một cú đánh mạnh vào khớp gối có thể ngay lập tức làm xuất hiện nhiều triệu chứng.",
+        "head": "cú đánh mạnh vào khớp gối",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "viêm bao hoạt dịch",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Những yếu tố có thể khởi phát viêm bao hoạt dich, như là một cú đánh mạnh vào khớp gối có thể ngay lập tức làm xuất hiện nhiều triệu chứng.",
+        "head": "cú đánh mạnh vào khớp gối",
+        "head_type": "cause",
+        "relation": "affects",
+        "tail": "khớp gối",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Tuy nhiên, phần lớn trường hợp đều là hậu quả của sự ma sát cũng như là sự kích thích bao hoạt dịch trong các động tác yêu cầu dùng đầu gối nhiều.",
+        "head": "sự ma sát",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "viêm bao hoạt dịch",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tuy nhiên, phần lớn trường hợp đều là hậu quả của sự ma sát cũng như là sự kích thích bao hoạt dịch trong các động tác yêu cầu dùng đầu gối nhiều.",
+        "head": "sự kích thích bao hoạt dịch",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "viêm bao hoạt dịch",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tuy nhiên, phần lớn trường hợp đều là hậu quả của sự ma sát cũng như là sự kích thích bao hoạt dịch trong các động tác yêu cầu dùng đầu gối nhiều.",
+        "head": "động tác yêu cầu dùng đầu gối nhiều",
+        "head_type": "lifestyle",
+        "relation": "aggravatedBy",
+        "tail": "viêm bao hoạt dịch",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Người bệnh thường bị viêm bao hoạt dịch khớp gối do các nguyên nhân như:  Khớp gối phải chịu áp lực thường xuyên, kéo dài. Vận động khớp gối quá mức. Chấn thương khớp gối. Nhiễm trùng bao hoạt dịch. Biến chứng từ bệnh viêm xương khớp (thoái hóa khớp), gout, viêm khớp dạng thấp.",
+        "head": "Khớp gối phải chịu áp lực thường xuyên, kéo dài",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Viêm bao hoạt dịch khớp gối",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Người bệnh thường bị viêm bao hoạt dịch khớp gối do các nguyên nhân như:  Khớp gối phải chịu áp lực thường xuyên, kéo dài. Vận động khớp gối quá mức. Chấn thương khớp gối. Nhiễm trùng bao hoạt dịch. Biến chứng từ bệnh viêm xương khớp (thoái hóa khớp), gout, viêm khớp dạng thấp.",
+        "head": "Vận động khớp gối quá mức",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Viêm bao hoạt dịch khớp gối",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Người bệnh thường bị viêm bao hoạt dịch khớp gối do các nguyên nhân như:  Khớp gối phải chịu áp lực thường xuyên, kéo dài. Vận động khớp gối quá mức. Chấn thương khớp gối. Nhiễm trùng bao hoạt dịch. Biến chứng từ bệnh viêm xương khớp (thoái hóa khớp), gout, viêm khớp dạng thấp.",
+        "head": "Chấn thương khớp gối",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Viêm bao hoạt dịch khớp gối",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Người bệnh thường bị viêm bao hoạt dịch khớp gối do các nguyên nhân như:  Khớp gối phải chịu áp lực thường xuyên, kéo dài. Vận động khớp gối quá mức. Chấn thương khớp gối. Nhiễm trùng bao hoạt dịch. Biến chứng từ bệnh viêm xương khớp (thoái hóa khớp), gout, viêm khớp dạng thấp.",
+        "head": "Nhiễm trùng bao hoạt dịch",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Viêm bao hoạt dịch khớp gối",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Người bệnh thường bị viêm bao hoạt dịch khớp gối do các nguyên nhân như:  Khớp gối phải chịu áp lực thường xuyên, kéo dài. Vận động khớp gối quá mức. Chấn thương khớp gối. Nhiễm trùng bao hoạt dịch. Biến chứng từ bệnh viêm xương khớp (thoái hóa khớp), gout, viêm khớp dạng thấp.",
+        "head": "Bệnh viêm xương khớp (thoái hóa khớp)",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Viêm bao hoạt dịch khớp gối",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Người bệnh thường bị viêm bao hoạt dịch khớp gối do các nguyên nhân như:  Khớp gối phải chịu áp lực thường xuyên, kéo dài. Vận động khớp gối quá mức. Chấn thương khớp gối. Nhiễm trùng bao hoạt dịch. Biến chứng từ bệnh viêm xương khớp (thoái hóa khớp), gout, viêm khớp dạng thấp.",
+        "head": "Gout",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Viêm bao hoạt dịch khớp gối",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Người bệnh thường bị viêm bao hoạt dịch khớp gối do các nguyên nhân như:  Khớp gối phải chịu áp lực thường xuyên, kéo dài. Vận động khớp gối quá mức. Chấn thương khớp gối. Nhiễm trùng bao hoạt dịch. Biến chứng từ bệnh viêm xương khớp (thoái hóa khớp), gout, viêm khớp dạng thấp.",
+        "head": "Viêm khớp dạng thấp",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Viêm bao hoạt dịch khớp gối",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Một số yếu tố có thể làm tăng nguy cơ viêm màng hoạt dịch khớp gối như:  Quỳ gối quá lâu: Người làm các công việc yêu cầu quỳ gối quá lâu như thợ lót thảm, thợ làm vườn, thợ sửa ống nước… có nguy cơ bị viêm bao khớp gối cao hơn.",
+        "head": "Quỳ gối quá lâu",
+        "head_type": "lifestyle",
+        "relation": "aggravatedBy",
+        "tail": "Viêm bao hoạt dịch khớp gối",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Một số yếu tố có thể làm tăng nguy cơ viêm màng hoạt dịch khớp gối như:  Quỳ gối quá lâu: Người làm các công việc yêu cầu quỳ gối quá lâu như thợ lót thảm, thợ làm vườn, thợ sửa ống nước… có nguy cơ bị viêm bao khớp gối cao hơn.",
+        "head": "Thợ lót thảm",
+        "head_type": "lifestyle",
+        "relation": "associatedWith",
+        "tail": "Viêm bao hoạt dịch khớp gối",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Một số yếu tố có thể làm tăng nguy cơ viêm màng hoạt dịch khớp gối như:  Quỳ gối quá lâu: Người làm các công việc yêu cầu quỳ gối quá lâu như thợ lót thảm, thợ làm vườn, thợ sửa ống nước… có nguy cơ bị viêm bao khớp gối cao hơn.",
+        "head": "Thợ làm vườn",
+        "head_type": "lifestyle",
+        "relation": "associatedWith",
+        "tail": "Viêm bao hoạt dịch khớp gối",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Một số yếu tố có thể làm tăng nguy cơ viêm màng hoạt dịch khớp gối như:  Quỳ gối quá lâu: Người làm các công việc yêu cầu quỳ gối quá lâu như thợ lót thảm, thợ làm vườn, thợ sửa ống nước… có nguy cơ bị viêm bao khớp gối cao hơn.",
+        "head": "Thợ sửa ống nước",
+        "head_type": "lifestyle",
+        "relation": "associatedWith",
+        "tail": "Viêm bao hoạt dịch khớp gối",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Một số yếu tố có thể làm tăng nguy cơ viêm màng hoạt dịch khớp gối như:  Thừa cân, béo phì: Trọng lượng cơ thể dư thừa sẽ tạo áp lực lớn lên khớp gối, phá hủy dần sụn khớp.",
+        "head": "Thừa cân, béo phì",
+        "head_type": "lifestyle",
+        "relation": "aggravatedBy",
+        "tail": "Viêm bao hoạt dịch khớp gối",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Một số yếu tố có thể làm tăng nguy cơ viêm màng hoạt dịch khớp gối như:  Thừa cân, béo phì: Trọng lượng cơ thể dư thừa sẽ tạo áp lực lớn lên khớp gối, phá hủy dần sụn khớp.",
+        "head": "Trọng lượng cơ thể dư thừa",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Viêm bao hoạt dịch khớp gối",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Một số yếu tố có thể làm tăng nguy cơ viêm màng hoạt dịch khớp gối như:  Thừa cân, béo phì: Trọng lượng cơ thể dư thừa sẽ tạo áp lực lớn lên khớp gối, phá hủy dần sụn khớp.",
+        "head": "Áp lực lớn lên khớp gối",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Viêm bao hoạt dịch khớp gối",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Một số yếu tố có thể làm tăng nguy cơ viêm màng hoạt dịch khớp gối như:  Thừa cân, béo phì: Trọng lượng cơ thể dư thừa sẽ tạo áp lực lớn lên khớp gối, phá hủy dần sụn khớp.",
+        "head": "Phá hủy dần sụn khớp",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm bao hoạt dịch khớp gối",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Một số yếu tố có thể làm tăng nguy cơ viêm màng hoạt dịch khớp gối như:  Thoái hóa khớp: Thoái hóa khớp khiến các bao hoạt dịch ở khớp hoạt động kém hơn, dễ gặp chấn thương và tình trạng viêm nhiễm màng hoạt dịch.",
+        "head": "Thoái hóa khớp",
+        "head_type": "disease",
+        "relation": "aggravatedBy",
+        "tail": "Viêm bao hoạt dịch khớp gối",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Một số yếu tố có thể làm tăng nguy cơ viêm màng hoạt dịch khớp gối như:  Thoái hóa khớp: Thoái hóa khớp khiến các bao hoạt dịch ở khớp hoạt động kém hơn, dễ gặp chấn thương và tình trạng viêm nhiễm màng hoạt dịch.",
+        "head": "Bao hoạt dịch ở khớp hoạt động kém hơn",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Thoái hóa khớp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Một số yếu tố có thể làm tăng nguy cơ viêm màng hoạt dịch khớp gối như:  Thoái hóa khớp: Thoái hóa khớp khiến các bao hoạt dịch ở khớp hoạt động kém hơn, dễ gặp chấn thương và tình trạng viêm nhiễm màng hoạt dịch.",
+        "head": "Dễ gặp chấn thương",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Thoái hóa khớp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Một số yếu tố có thể làm tăng nguy cơ viêm màng hoạt dịch khớp gối như:  Thoái hóa khớp: Thoái hóa khớp khiến các bao hoạt dịch ở khớp hoạt động kém hơn, dễ gặp chấn thương và tình trạng viêm nhiễm màng hoạt dịch.",
+        "head": "Viêm nhiễm màng hoạt dịch",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Thoái hóa khớp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Một số môn thể thao: Các môn chơi có tính đối kháng, gây ra chấn thương trực tiếp hoặc té ngã và tiếp đất bằng gối như bóng đá, đấu vật, bóng chuyền… cũng khiến người chơi dễ bị viêm màng hoạt dịch khớp gối.",
+        "head": "Bóng đá",
+        "head_type": "lifestyle",
+        "relation": "aggravatedBy",
+        "tail": "Viêm bao hoạt dịch khớp gối",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Một số môn thể thao: Các môn chơi có tính đối kháng, gây ra chấn thương trực tiếp hoặc té ngã và tiếp đất bằng gối như bóng đá, đấu vật, bóng chuyền… cũng khiến người chơi dễ bị viêm màng hoạt dịch khớp gối.",
+        "head": "Đấu vật",
+        "head_type": "lifestyle",
+        "relation": "aggravatedBy",
+        "tail": "Viêm bao hoạt dịch khớp gối",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Một số môn thể thao: Các môn chơi có tính đối kháng, gây ra chấn thương trực tiếp hoặc té ngã và tiếp đất bằng gối như bóng đá, đấu vật, bóng chuyền… cũng khiến người chơi dễ bị viêm màng hoạt dịch khớp gối.",
+        "head": "Bóng chuyền",
+        "head_type": "lifestyle",
+        "relation": "aggravatedBy",
+        "tail": "Viêm bao hoạt dịch khớp gối",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu nghỉ ngơi kết hợp những biện pháp chăm sóc tại nhà đúng cách, các triệu chứng viêm bao hoạt dịch khớp có thể biến mất sau vài tuần.",
+        "head": "Nghỉ ngơi",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Viêm bao hoạt dịch khớp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu nghỉ ngơi kết hợp những biện pháp chăm sóc tại nhà đúng cách, các triệu chứng viêm bao hoạt dịch khớp có thể biến mất sau vài tuần.",
+        "head": "Chăm sóc tại nhà",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Viêm bao hoạt dịch khớp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tuy nhiên, nếu các triệu chứng kéo dài hơn 2 - 3 tuần sau khi nghỉ ngơi và điều trị tại nhà, người bệnh nên đi khám càng sớm càng tốt để có biện pháp can thiệp kịp thời.",
+        "head": "Các triệu chứng kéo dài hơn 2 - 3 tuần",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm bao hoạt dịch khớp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tuy nhiên, nếu các triệu chứng kéo dài hơn 2 - 3 tuần sau khi nghỉ ngơi và điều trị tại nhà, người bệnh nên đi khám càng sớm càng tốt để có biện pháp can thiệp kịp thời.",
+        "head": "Đi khám",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Viêm bao hoạt dịch khớp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Viêm bao hoạt dịch không khỏi hoặc tái phát nhiều lần được xem là tình trạng viêm mạn tính.",
+        "head": "Viêm bao hoạt dịch không khỏi",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm bao hoạt dịch mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Viêm bao hoạt dịch không khỏi hoặc tái phát nhiều lần được xem là tình trạng viêm mạn tính.",
+        "head": "Tái phát nhiều lần",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm bao hoạt dịch mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Viêm bao hoạt dịch không khỏi hoặc tái phát nhiều lần được xem là tình trạng viêm mạn tính.",
+        "head": "Viêm mạn tính",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "Viêm bao hoạt dịch",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi viêm bao hoạt dịch khớp gối chuyển sang giai đoạn mạn tính, việc điều trị sẽ khó khăn hơn.",
+        "head": "Viêm bao hoạt dịch khớp gối chuyển sang giai đoạn mạn tính",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "Điều trị khó khăn",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Khi được phát hiện và điều trị sớm, bệnh không đáng lo ngại.",
+        "head": "Phát hiện sớm",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Viêm bao hoạt dịch khớp gối",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi được phát hiện và điều trị sớm, bệnh không đáng lo ngại.",
+        "head": "Điều trị sớm",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Viêm bao hoạt dịch khớp gối",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tuy nhiên, nếu trì hoãn chữa trị, bao hoạt dịch bị viêm tăng sẽ làm giảm dịch nhầy bất thường, thay đổi tính chất của dịch khớp gối, từ đó tạo áp lực lên sụn, xương và các mô trong khớp, gây cản trở cử động khớp.",
+        "head": "Trì hoãn chữa trị",
+        "head_type": "treatment",
+        "relation": "aggravatedBy",
+        "tail": "Viêm bao hoạt dịch khớp gối",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tuy nhiên, nếu trì hoãn chữa trị, bao hoạt dịch bị viêm tăng sẽ làm giảm dịch nhầy bất thường, thay đổi tính chất của dịch khớp gối, từ đó tạo áp lực lên sụn, xương và các mô trong khớp, gây cản trở cử động khớp.",
+        "head": "Bao hoạt dịch bị viêm tăng",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm bao hoạt dịch khớp gối",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tuy nhiên, nếu trì hoãn chữa trị, bao hoạt dịch bị viêm tăng sẽ làm giảm dịch nhầy bất thường, thay đổi tính chất của dịch khớp gối, từ đó tạo áp lực lên sụn, xương và các mô trong khớp, gây cản trở cử động khớp.",
+        "head": "Giảm dịch nhầy bất thường",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm bao hoạt dịch khớp gối",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tuy nhiên, nếu trì hoãn chữa trị, bao hoạt dịch bị viêm tăng sẽ làm giảm dịch nhầy bất thường, thay đổi tính chất của dịch khớp gối, từ đó tạo áp lực lên sụn, xương và các mô trong khớp, gây cản trở cử động khớp.",
+        "head": "Thay đổi tính chất của dịch khớp gối",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm bao hoạt dịch khớp gối",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tuy nhiên, nếu trì hoãn chữa trị, bao hoạt dịch bị viêm tăng sẽ làm giảm dịch nhầy bất thường, thay đổi tính chất của dịch khớp gối, từ đó tạo áp lực lên sụn, xương và các mô trong khớp, gây cản trở cử động khớp.",
+        "head": "Tạo áp lực lên sụn, xương và các mô trong khớp",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm bao hoạt dịch khớp gối",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tuy nhiên, nếu trì hoãn chữa trị, bao hoạt dịch bị viêm tăng sẽ làm giảm dịch nhầy bất thường, thay đổi tính chất của dịch khớp gối, từ đó tạo áp lực lên sụn, xương và các mô trong khớp, gây cản trở cử động khớp.",
+        "head": "Cản trở cử động khớp",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm bao hoạt dịch khớp gối",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Một số trường hợp nghiêm trọng hơn có thể xuất hiện nhiều biến chứng nguy hiểm như:  Biến dạng khớp, dính khớp hay tràn dịch khớp.",
+        "head": "Biến dạng khớp",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm bao hoạt dịch khớp gối",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Một số trường hợp nghiêm trọng hơn có thể xuất hiện nhiều biến chứng nguy hiểm như:  Biến dạng khớp, dính khớp hay tràn dịch khớp.",
+        "head": "Dính khớp",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm bao hoạt dịch khớp gối",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Một số trường hợp nghiêm trọng hơn có thể xuất hiện nhiều biến chứng nguy hiểm như:  Biến dạng khớp, dính khớp hay tràn dịch khớp.",
+        "head": "Tràn dịch khớp",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm bao hoạt dịch khớp gối",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Yếu cơ, teo cơ dẫn tới suy giảm chức năng vận động, thậm chí là tàn phế.",
+        "head": "Yếu cơ",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm bao hoạt dịch khớp gối",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Yếu cơ, teo cơ dẫn tới suy giảm chức năng vận động, thậm chí là tàn phế.",
+        "head": "Teo cơ",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm bao hoạt dịch khớp gối",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Yếu cơ, teo cơ dẫn tới suy giảm chức năng vận động, thậm chí là tàn phế.",
+        "head": "Suy giảm chức năng vận động",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm bao hoạt dịch khớp gối",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Yếu cơ, teo cơ dẫn tới suy giảm chức năng vận động, thậm chí là tàn phế.",
+        "head": "Tàn phế",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm bao hoạt dịch khớp gối",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Một số trường hợp viêm bao hoạt dịch khớp gối do thấp khớp cấp, có thể tổn thương van tim, gây ra nhiều bệnh mạn tính như bệnh tim mạch.",
+        "head": "Thấp khớp cấp",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Viêm bao hoạt dịch khớp gối",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Một số trường hợp viêm bao hoạt dịch khớp gối do thấp khớp cấp, có thể tổn thương van tim, gây ra nhiều bệnh mạn tính như bệnh tim mạch.",
+        "head": "Tổn thương van tim",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm bao hoạt dịch khớp gối",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Một số trường hợp viêm bao hoạt dịch khớp gối do thấp khớp cấp, có thể tổn thương van tim, gây ra nhiều bệnh mạn tính như bệnh tim mạch.",
+        "head": "Bệnh tim mạch",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "Viêm bao hoạt dịch khớp gối",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Thoát vị bao hoạt dịch khớp gối (u nang bao hoạt dịch) tái phát nhiều lần, làm xuất hiện cơn đau mạn tính.",
+        "head": "Thoát vị bao hoạt dịch khớp gối (u nang bao hoạt dịch)",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "Viêm bao hoạt dịch khớp gối",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Thoát vị bao hoạt dịch khớp gối (u nang bao hoạt dịch) tái phát nhiều lần, làm xuất hiện cơn đau mạn tính.",
+        "head": "Tái phát nhiều lần",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Thoát vị bao hoạt dịch khớp gối (u nang bao hoạt dịch)",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Thoát vị bao hoạt dịch khớp gối (u nang bao hoạt dịch) tái phát nhiều lần, làm xuất hiện cơn đau mạn tính.",
+        "head": "Cơn đau mạn tính",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Thoát vị bao hoạt dịch khớp gối (u nang bao hoạt dịch)",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Người bệnh thường bị viêm bao hoạt dịch khớp gối do các nguyên nhân như:  Khớp gối phải chịu áp lực thường xuyên, kéo dài. Vận động khớp gối quá mức. Chấn thương khớp gối. Nhiễm trùng bao hoạt dịch. Biến chứng từ bệnh viêm xương khớp (thoái hóa khớp), gout, viêm khớp dạng thấp.",
+        "head": "Viêm bao hoạt dịch khớp gối",
+        "head_type": "disease",
+        "relation": "locatedIn",
+        "tail": "Khớp gối",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Một số yếu tố có thể làm tăng nguy cơ viêm màng hoạt dịch khớp gối như:  Thoái hóa khớp: Thoái hóa khớp khiến các bao hoạt dịch ở khớp hoạt động kém hơn, dễ gặp chấn thương và tình trạng viêm nhiễm màng hoạt dịch.",
+        "head": "Bao hoạt dịch",
+        "head_type": "organ",
+        "relation": "locatedIn",
+        "tail": "Khớp",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Tuy nhiên, nếu trì hoãn chữa trị, bao hoạt dịch bị viêm tăng sẽ làm giảm dịch nhầy bất thường, thay đổi tính chất của dịch khớp gối, từ đó tạo áp lực lên sụn, xương và các mô trong khớp, gây cản trở cử động khớp.",
+        "head": "Dịch khớp gối",
+        "head_type": "organ",
+        "relation": "locatedIn",
+        "tail": "Khớp gối",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Tuy nhiên, nếu trì hoãn chữa trị, bao hoạt dịch bị viêm tăng sẽ làm giảm dịch nhầy bất thường, thay đổi tính chất của dịch khớp gối, từ đó tạo áp lực lên sụn, xương và các mô trong khớp, gây cản trở cử động khớp.",
+        "head": "Sụn",
+        "head_type": "organ",
+        "relation": "locatedIn",
+        "tail": "Khớp",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Tuy nhiên, nếu trì hoãn chữa trị, bao hoạt dịch bị viêm tăng sẽ làm giảm dịch nhầy bất thường, thay đổi tính chất của dịch khớp gối, từ đó tạo áp lực lên sụn, xương và các mô trong khớp, gây cản trở cử động khớp.",
+        "head": "Xương",
+        "head_type": "organ",
+        "relation": "locatedIn",
+        "tail": "Khớp",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Bên cạnh thu thập thông tin tiền sử bệnh, bác sĩ sẽ khám thực thể người bệnh để đánh giá thời gian khởi phát, mức độ nghiêm trọng của các triệu chứng:  So sánh tình trạng hai đầu gối, đặc biệt là khi cơn đau chỉ xuất hiện một bên.",
+        "head": "cơn đau",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "viêm bao hoạt dịch",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bên cạnh thu thập thông tin tiền sử bệnh, bác sĩ sẽ khám thực thể người bệnh để đánh giá thời gian khởi phát, mức độ nghiêm trọng của các triệu chứng:  So sánh tình trạng hai đầu gối, đặc biệt là khi cơn đau chỉ xuất hiện một bên.",
+        "head": "cơn đau",
+        "head_type": "symptom",
+        "relation": "locatedIn",
+        "tail": "đầu gối",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Ấn nhẹ vào khu vực quanh khớp gối để đánh giá tình trạng sưng, nóng và nguồn gốc cơn đau.",
+        "head": "sưng",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "viêm bao hoạt dịch",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ấn nhẹ vào khu vực quanh khớp gối để đánh giá tình trạng sưng, nóng và nguồn gốc cơn đau.",
+        "head": "nóng",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "viêm bao hoạt dịch",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ấn nhẹ vào khu vực quanh khớp gối để đánh giá tình trạng sưng, nóng và nguồn gốc cơn đau.",
+        "head": "cơn đau",
+        "head_type": "symptom",
+        "relation": "locatedIn",
+        "tail": "khớp gối",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Kiểm tra da ở khu vực ảnh hưởng để xác định liệu có triệu chứng mẩn đỏ hoặc nhiễm trùng không.",
+        "head": "mẩn đỏ",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "nhiễm trùng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Kiểm tra da ở khu vực ảnh hưởng để xác định liệu có triệu chứng mẩn đỏ hoặc nhiễm trùng không.",
+        "head": "nhiễm trùng",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "da",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Chuyển động nhẹ đầu gối của người bệnh để đánh giá phạm vi chuyển động, đồng thời xem thử cơn đau có xuất hiện không, mỗi khi đầu gối gập lại hoặc di chuyển quá mức.",
+        "head": "cơn đau",
+        "head_type": "symptom",
+        "relation": "aggravatedBy",
+        "tail": "gập đầu gối",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Chuyển động nhẹ đầu gối của người bệnh để đánh giá phạm vi chuyển động, đồng thời xem thử cơn đau có xuất hiện không, mỗi khi đầu gối gập lại hoặc di chuyển quá mức.",
+        "head": "cơn đau",
+        "head_type": "symptom",
+        "relation": "aggravatedBy",
+        "tail": "di chuyển quá mức",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Để loại trừ các chấn thương có thể gây ra những triệu chứng tương tự như viêm bao hoạt dịch, bác sĩ có thể chỉ định người bệnh thực hiện một số chẩn đoán hình ảnh như:  X-quang: Kết quả X-quang giúp phát hiện vấn đề ở xương hoặc viêm khớp.",
+        "head": "X-quang",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "viêm khớp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Để loại trừ các chấn thương có thể gây ra những triệu chứng tương tự như viêm bao hoạt dịch, bác sĩ có thể chỉ định người bệnh thực hiện một số chẩn đoán hình ảnh như:  X-quang: Kết quả X-quang giúp phát hiện vấn đề ở xương hoặc viêm khớp.",
+        "head": "X-quang",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "vấn đề ở xương",
+        "tail_type": "disease"
+    },
+    {
+        "text": "MRI: Phương pháp này sử dụng sóng radio và từ trường mạnh tạo ra hình ảnh chi tiết về cấu trúc xương khớp. Qua đó, bác sĩ có thể quan sát được vị trí mô mềm như bao hoạt dịch.",
+        "head": "MRI",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "viêm bao hoạt dịch",
+        "tail_type": "disease"
+    },
+    {
+        "text": "MRI: Phương pháp này sử dụng sóng radio và từ trường mạnh tạo ra hình ảnh chi tiết về cấu trúc xương khớp. Qua đó, bác sĩ có thể quan sát được vị trí mô mềm như bao hoạt dịch.",
+        "head": "MRI",
+        "head_type": "test",
+        "relation": "affects",
+        "tail": "mô mềm",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Siêu âm: Phương pháp này giúp bác sĩ đánh giá rõ hơn về tình trạng sưng tấy ở vùng bao hoạt dịch bị viêm.",
+        "head": "Siêu âm",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "viêm bao hoạt dịch",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Siêu âm: Phương pháp này giúp bác sĩ đánh giá rõ hơn về tình trạng sưng tấy ở vùng bao hoạt dịch bị viêm.",
+        "head": "sưng tấy",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "viêm bao hoạt dịch",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Với trường hợp viêm bao khớp gối, nếu bác sĩ nghi ngờ bị nhiễm trùng hoặc mắc bệnh gout, có thể được tiến hành phân tích dịch khớp.",
+        "head": "viêm bao khớp gối",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "nhiễm trùng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Với trường hợp viêm bao khớp gối, nếu bác sĩ nghi ngờ bị nhiễm trùng hoặc mắc bệnh gout, có thể được tiến hành phân tích dịch khớp.",
+        "head": "viêm bao khớp gối",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "bệnh gout",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Người bệnh sẽ được lấy một ít dịch ở bao hoạt dịch để kiểm tra.",
+        "head": "dịch ở bao hoạt dịch",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "viêm bao hoạt dịch",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Viêm bao hoạt dịch đầu gối thường cải thiện theo thời gian.",
+        "head": "viêm bao hoạt dịch đầu gối",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "thời gian",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Vì thế, việc điều trị chủ yếu là để thuyên giảm triệu chứng.",
+        "head": "điều trị",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "viêm bao hoạt dịch",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tuỳ vào nguyên nhân gây viêm và bao hoạt dịch nào ảnh hưởng, bác sĩ sẽ đưa ra hướng điều trị phù hợp.",
+        "head": "điều trị",
+        "head_type": "treatment",
+        "relation": "causedBy",
+        "tail": "nguyên nhân gây viêm",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Nếu viêm do nhiễm trùng, bệnh nhân sẽ được dùng kháng sinh thích hợp.",
+        "head": "kháng sinh",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "nhiễm trùng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đối với một số trường hợp viêm bao hoạt dịch thông thường khác, có thể được sử dụng thuốc kháng viêm như NSAIDs (ví dụ ibuprofen hoặc naproxen,&#8230;)",
+        "head": "thuốc kháng viêm",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "viêm bao hoạt dịch",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Kỹ thuật viên vật lý trị liệu sẽ hướng dẫn người bệnh các bài tập để cải thiện sự linh hoạt và tăng cường sức mạnh cho khớp gối.",
+        "head": "vật lý trị liệu",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "viêm bao hoạt dịch",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Kỹ thuật viên vật lý trị liệu sẽ hướng dẫn người bệnh các bài tập để cải thiện sự linh hoạt và tăng cường sức mạnh cho khớp gối.",
+        "head": "bài tập",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "viêm bao hoạt dịch",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Liệu pháp này giúp cải thiện các cơn đau nhức, giảm nguy cơ tái phát những đợt viêm bao hoạt dịch khớp gối.",
+        "head": "bài tập",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "cơn đau nhức",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Liệu pháp này giúp cải thiện các cơn đau nhức, giảm nguy cơ tái phát những đợt viêm bao hoạt dịch khớp gối.",
+        "head": "bài tập",
+        "head_type": "treatment",
+        "relation": "preventedBy",
+        "tail": "tái phát viêm bao hoạt dịch",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ngoài ra, việc dùng băng quấn bảo vệ đầu gối khi vận động cũng giúp kiểm soát tình trạng sưng tấy.",
+        "head": "băng quấn",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "sưng tấy",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Tiêm corticosteroid: Nếu tình trạng viêm ở bao hoạt dịch kéo dài và không đáp ứng với các phương pháp điều trị cơ bản, bác sĩ có thể chỉ định người bệnh tiêm corticosteroid vào vị trí bao hoạt dịch bị ảnh hưởng để cải thiện tình trạng viêm.",
+        "head": "tiêm corticosteroid",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "viêm bao hoạt dịch",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tiêm corticosteroid: Nếu tình trạng viêm ở bao hoạt dịch kéo dài và không đáp ứng với các phương pháp điều trị cơ bản, bác sĩ có thể chỉ định người bệnh tiêm corticosteroid vào vị trí bao hoạt dịch bị ảnh hưởng để cải thiện tình trạng viêm.",
+        "head": "tiêm corticosteroid",
+        "head_type": "treatment",
+        "relation": "affects",
+        "tail": "bao hoạt dịch",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Sau tiêm, tình trạng viêm thường thuyên giảm nhanh chóng.",
+        "head": "tiêm corticosteroid",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "viêm",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Tuy nhiên, người bệnh có thể bị đau và sưng do tiêm thuốc khoảng vài ngày.",
+        "head": "tiêm corticosteroid",
+        "head_type": "treatment",
+        "relation": "aggravatedBy",
+        "tail": "đau",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Tuy nhiên, người bệnh có thể bị đau và sưng do tiêm thuốc khoảng vài ngày.",
+        "head": "tiêm corticosteroid",
+        "head_type": "treatment",
+        "relation": "aggravatedBy",
+        "tail": "sưng",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Chọc hút dịch (aspiration): Bác sĩ sẽ dùng một chiếc kim nhỏ đưa vào bao hoạt dịch và hút bớt lượng dịch viêm.",
+        "head": "chọc hút dịch",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "viêm bao hoạt dịch",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Chọc hút dịch (aspiration): Bác sĩ sẽ dùng một chiếc kim nhỏ đưa vào bao hoạt dịch và hút bớt lượng dịch viêm.",
+        "head": "chọc hút dịch",
+        "head_type": "treatment",
+        "relation": "affects",
+        "tail": "bao hoạt dịch",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Phương pháp này có thể gây đau và sưng trong thời gian ngắn.",
+        "head": "chọc hút dịch",
+        "head_type": "treatment",
+        "relation": "aggravatedBy",
+        "tail": "đau",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Phương pháp này có thể gây đau và sưng trong thời gian ngắn.",
+        "head": "chọc hút dịch",
+        "head_type": "treatment",
+        "relation": "aggravatedBy",
+        "tail": "sưng",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Sau tiêm, người bệnh có thể cần mang băng cố định đầu gối để giảm sưng.",
+        "head": "băng cố định đầu gối",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "sưng",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Phẫu thuật: Nếu viêm bao khớp mạn tính nặng hay tái phát nhiều lần và không đáp ứng với những phương pháp điều trị khác, bác sĩ có thể đề nghị người bệnh phẫu thuật để loại bỏ bao hoạt dịch.",
+        "head": "phẫu thuật",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "viêm bao khớp mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Phẫu thuật: Nếu viêm bao khớp mạn tính nặng hay tái phát nhiều lần và không đáp ứng với những phương pháp điều trị khác, bác sĩ có thể đề nghị người bệnh phẫu thuật để loại bỏ bao hoạt dịch.",
+        "head": "phẫu thuật",
+        "head_type": "treatment",
+        "relation": "affects",
+        "tail": "bao hoạt dịch",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Để cải thiện triệu chứng do viêm bao hoạt dịch khớp gối, người bệnh cần:  Giảm hoạt động khớp gối: Tạm ngưng những hoạt động dẫn tới viêm bao hoạt dịch, hạn chế các chuyển động khiến cơn đau trở trầm trọng hơn.",
+        "head": "giảm hoạt động khớp gối",
+        "head_type": "lifestyle",
+        "relation": "preventedBy",
+        "tail": "viêm bao hoạt dịch",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Để cải thiện triệu chứng do viêm bao hoạt dịch khớp gối, người bệnh cần:  Giảm hoạt động khớp gối: Tạm ngưng những hoạt động dẫn tới viêm bao hoạt dịch, hạn chế các chuyển động khiến cơn đau trở trầm trọng hơn.",
+        "head": "giảm hoạt động khớp gối",
+        "head_type": "lifestyle",
+        "relation": "aggravatedBy",
+        "tail": "cơn đau",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Sử dụng thuốc giảm đau không kê đơn: Sử dụng ngắn hạn những thuốc giảm đau, kháng viêm như spirin, ibuprofen hay naproxen để cải thiện tình trạng đau nhức.",
+        "head": "thuốc giảm đau không kê đơn",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "đau nhức",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Chườm đá: Đặt vài viên đá vào một chiếc khăn hoặc túi chườm lạnh rồi chườm lên đầu gối khoảng 20 phút/lần và chườm vài lần trong ngày.",
+        "head": "chườm đá",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "viêm bao hoạt dịch",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Chườm đá: Đặt vài viên đá vào một chiếc khăn hoặc túi chườm lạnh rồi chườm lên đầu gối khoảng 20 phút/lần và chườm vài lần trong ngày.",
+        "head": "chườm đá",
+        "head_type": "treatment",
+        "relation": "affects",
+        "tail": "đầu gối",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Quấn băng thun: Dùng băng thun hay những phụ kiện bảo vệ đầu gối để giảm sưng.",
+        "head": "băng thun",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "sưng",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Nâng cao đầu gối: Lấy một chiếc gối kê dưới đầu gối để cải thiện tình trạng sưng tấy.",
+        "head": "nâng cao đầu gối",
+        "head_type": "lifestyle",
+        "relation": "treatedBy",
+        "tail": "sưng tấy",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Nâng cao đầu gối: Lấy một chiếc gối kê dưới đầu gối để cải thiện tình trạng sưng tấy.",
+        "head": "nâng cao đầu gối",
+        "head_type": "lifestyle",
+        "relation": "affects",
+        "tail": "đầu gối",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Để phòng ngừa tình trạng viêm bao hoạt dịch khớp gối, người bệnh nên chủ động bảo vệ sức khỏe xương khớp ngay từ sớm, ngăn ngừa các yếu tố gây viêm, cụ thể:  Thực hiện tư thế đúng trong sinh hoạt và lao động.",
+        "head": "tư thế đúng",
+        "head_type": "lifestyle",
+        "relation": "preventedBy",
+        "tail": "viêm bao hoạt dịch",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tránh vận động quá sức, hạn chế các tư thế ngồi xổm, quỳ gối.",
+        "head": "vận động quá sức",
+        "head_type": "lifestyle",
+        "relation": "aggravatedBy",
+        "tail": "viêm bao hoạt dịch",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tránh vận động quá sức, hạn chế các tư thế ngồi xổm, quỳ gối.",
+        "head": "ngồi xổm",
+        "head_type": "lifestyle",
+        "relation": "aggravatedBy",
+        "tail": "viêm bao hoạt dịch",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tránh vận động quá sức, hạn chế các tư thế ngồi xổm, quỳ gối.",
+        "head": "quỳ gối",
+        "head_type": "lifestyle",
+        "relation": "aggravatedBy",
+        "tail": "viêm bao hoạt dịch",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các động tác khụy gối thường xuyên hoặc lặp đi lặp lại có thể tạo áp lực lớn lên khớp gối.",
+        "head": "khụy gối",
+        "head_type": "lifestyle",
+        "relation": "aggravatedBy",
+        "tail": "viêm bao hoạt dịch",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các động tác khụy gối thường xuyên hoặc lặp đi lặp lại có thể tạo áp lực lớn lên khớp gối.",
+        "head": "khụy gối",
+        "head_type": "lifestyle",
+        "relation": "affects",
+        "tail": "khớp gối",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Nếu phải quỳ trong thời gian dài nên thư giãn cho chân bằng cách duỗi thẳng, xoa bóp nhẹ nhàng.",
+        "head": "quỳ",
+        "head_type": "lifestyle",
+        "relation": "aggravatedBy",
+        "tail": "viêm bao hoạt dịch",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi chơi các môn thể thao đối kháng, bạn nên dùng vật dụng bảo hộ chuyên dụng để bảo vệ khớp gối.",
+        "head": "vật dụng bảo hộ",
+        "head_type": "treatment",
+        "relation": "preventedBy",
+        "tail": "viêm bao hoạt dịch",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Chế độ ăn uống khoa học, đảm bảo bổ sung đủ dưỡng chất.",
+        "head": "chế độ ăn uống khoa học",
+        "head_type": "lifestyle",
+        "relation": "preventedBy",
+        "tail": "viêm bao hoạt dịch",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Duy trì cân nặng hợp lý.",
+        "head": "cân nặng hợp lý",
+        "head_type": "lifestyle",
+        "relation": "preventedBy",
+        "tail": "viêm bao hoạt dịch",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Thường xuyên khám tổng quát (ít nhất 6 tháng/lần) để tầm soát các bệnh xương khớp.",
+        "head": "khám tổng quát",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "bệnh xương khớp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Trung tâm Chấn thương chỉnh hình, Hệ thống BVĐK Tâm Anh, là nơi quy tụ đội ngũ chuyên gia đầu ngành, bác sĩ ngoại khoa giàu kinh nghiệm, tận tâm, nhiệt tình như: TTND.GS.TS.BS Nguyễn Việt Tiến; PGS.TS.BS Đặng Hồng Hoa; TS.BS Tăng Hà Nam Anh; ThS.BS.CKII Trần Anh Vũ; BS.CKI Trần Xuân Anh, ThS.BS.CKI Lê Đình Khoa, TS.BS Đỗ Tiến Dũng; TS.BS.CKII Vũ Hữu Dũng…",
+        "head": "Trung tâm Chấn thương chỉnh hình",
+        "head_type": "organ",
+        "relation": "locatedIn",
+        "tail": "Hệ thống BVĐK Tâm Anh",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Trung tâm Chấn thương chỉnh hình, Hệ thống BVĐK Tâm Anh, là nơi quy tụ đội ngũ chuyên gia đầu ngành, bác sĩ ngoại khoa giàu kinh nghiệm, tận tâm, nhiệt tình như: TTND.GS.TS.BS Nguyễn Việt Tiến; PGS.TS.BS Đặng Hồng Hoa; TS.BS Tăng Hà Nam Anh; ThS.BS.CKII Trần Anh Vũ; BS.CKI Trần Xuân Anh, ThS.BS.CKI Lê Đình Khoa, TS.BS Đỗ Tiến Dũng; TS.BS.CKII Vũ Hữu Dũng…",
+        "head": "chuyên gia đầu ngành",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "viêm bao hoạt dịch",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Trung tâm Chấn thương chỉnh hình, Hệ thống BVĐK Tâm Anh, là nơi quy tụ đội ngũ chuyên gia đầu ngành, bác sĩ ngoại khoa giàu kinh nghiệm, tận tâm, nhiệt tình như: TTND.GS.TS.BS Nguyễn Việt Tiến; PGS.TS.BS Đặng Hồng Hoa; TS.BS Tăng Hà Nam Anh; ThS.BS.CKII Trần Anh Vũ; BS.CKI Trần Xuân Anh, ThS.BS.CKI Lê Đình Khoa, TS.BS Đỗ Tiến Dũng; TS.BS.CKII Vũ Hữu Dũng…",
+        "head": "bác sĩ ngoại khoa",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "viêm bao hoạt dịch",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đây cũng là một trong những đơn vị tiên phong trong việc chẩn đoán và điều trị các bệnh về cơ xương khớp với kỹ thuật hiện đại theo phác đồ cập nhật quốc tế.",
+        "head": "chẩn đoán",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "bệnh về cơ xương khớp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đây cũng là một trong những đơn vị tiên phong trong việc chẩn đoán và điều trị các bệnh về cơ xương khớp với kỹ thuật hiện đại theo phác đồ cập nhật quốc tế.",
+        "head": "điều trị",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "bệnh về cơ xương khớp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bệnh viện còn được trang bị hệ thống máy móc, trang thiết bị chẩn đoán hình ảnh hiện đại như: máy chụp CT 768 lát cắt Somatom Drive, máy cộng hưởng từ thế hệ mới Magnetom Amira BioMatrix, robot Artis Pheno, máy đo mật độ xương, máy siêu âm…; hệ thống kính vi phẫu thuật Opmi Vario 700 Zeiss, bàn mổ Meera-Maquet… để có thể phát hiện sớm các tổn thương và điều trị hiệu quả các bệnh lý về cơ xương khớp…",
+        "head": "máy chụp CT",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "tổn thương",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bệnh viện còn được trang bị hệ thống máy móc, trang thiết bị chẩn đoán hình ảnh hiện đại như: máy chụp CT 768 lát cắt Somatom Drive, máy cộng hưởng từ thế hệ mới Magnetom Amira BioMatrix, robot Artis Pheno, máy đo mật độ xương, máy siêu âm…; hệ thống kính vi phẫu thuật Opmi Vario 700 Zeiss, bàn mổ Meera-Maquet… để có thể phát hiện sớm các tổn thương và điều trị hiệu quả các bệnh lý về cơ xương khớp…",
+        "head": "máy cộng hưởng từ",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "tổn thương",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bệnh viện còn được trang bị hệ thống máy móc, trang thiết bị chẩn đoán hình ảnh hiện đại như: máy chụp CT 768 lát cắt Somatom Drive, máy cộng hưởng từ thế hệ mới Magnetom Amira BioMatrix, robot Artis Pheno, máy đo mật độ xương, máy siêu âm…; hệ thống kính vi phẫu thuật Opmi Vario 700 Zeiss, bàn mổ Meera-Maquet… để có thể phát hiện sớm các tổn thương và điều trị hiệu quả các bệnh lý về cơ xương khớp…",
+        "head": "robot Artis Pheno",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "tổn thương",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bệnh viện còn được trang bị hệ thống máy móc, trang thiết bị chẩn đoán hình ảnh hiện đại như: máy chụp CT 768 lát cắt Somatom Drive, máy cộng hưởng từ thế hệ mới Magnetom Amira BioMatrix, robot Artis Pheno, máy đo mật độ xương, máy siêu âm…; hệ thống kính vi phẫu thuật Opmi Vario 700 Zeiss, bàn mổ Meera-Maquet… để có thể phát hiện sớm các tổn thương và điều trị hiệu quả các bệnh lý về cơ xương khớp…",
+        "head": "máy đo mật độ xương",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "tổn thương",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bệnh viện còn được trang bị hệ thống máy móc, trang thiết bị chẩn đoán hình ảnh hiện đại như: máy chụp CT 768 lát cắt Somatom Drive, máy cộng hưởng từ thế hệ mới Magnetom Amira BioMatrix, robot Artis Pheno, máy đo mật độ xương, máy siêu âm…; hệ thống kính vi phẫu thuật Opmi Vario 700 Zeiss, bàn mổ Meera-Maquet… để có thể phát hiện sớm các tổn thương và điều trị hiệu quả các bệnh lý về cơ xương khớp…",
+        "head": "máy siêu âm",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "tổn thương",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bệnh viện còn được trang bị hệ thống máy móc, trang thiết bị chẩn đoán hình ảnh hiện đại như: máy chụp CT 768 lát cắt Somatom Drive, máy cộng hưởng từ thế hệ mới Magnetom Amira BioMatrix, robot Artis Pheno, máy đo mật độ xương, máy siêu âm…; hệ thống kính vi phẫu thuật Opmi Vario 700 Zeiss, bàn mổ Meera-Maquet… để có thể phát hiện sớm các tổn thương và điều trị hiệu quả các bệnh lý về cơ xương khớp…",
+        "head": "kính vi phẫu thuật",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "tổn thương",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bệnh viện còn được trang bị hệ thống máy móc, trang thiết bị chẩn đoán hình ảnh hiện đại như: máy chụp CT 768 lát cắt Somatom Drive, máy cộng hưởng từ thế hệ mới Magnetom Amira BioMatrix, robot Artis Pheno, máy đo mật độ xương, máy siêu âm…; hệ thống kính vi phẫu thuật Opmi Vario 700 Zeiss, bàn mổ Meera-Maquet… để có thể phát hiện sớm các tổn thương và điều trị hiệu quả các bệnh lý về cơ xương khớp…",
+        "head": "bàn mổ",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "tổn thương",
+        "tail_type": "disease"
+    },
+    {
+        "text": "BVĐK Tâm Anh còn sở hữu hệ thống phòng khám khang trang, khu nội trú cao cấp; khu vực phục hồi chức năng hiện đại; quy trình chăm sóc hậu phẫu toàn diện giúp bệnh nhân nhanh chóng hồi phục và ổn định sức khỏe sau phẫu thuật.",
+        "head": "phòng khám",
+        "head_type": "organ",
+        "relation": "locatedIn",
+        "tail": "BVĐK Tâm Anh",
+        "tail_type": "organ"
+    },
+    {
+        "text": "BVĐK Tâm Anh còn sở hữu hệ thống phòng khám khang trang, khu nội trú cao cấp; khu vực phục hồi chức năng hiện đại; quy trình chăm sóc hậu phẫu toàn diện giúp bệnh nhân nhanh chóng hồi phục và ổn định sức khỏe sau phẫu thuật.",
+        "head": "khu nội trú",
+        "head_type": "organ",
+        "relation": "locatedIn",
+        "tail": "BVĐK Tâm Anh",
+        "tail_type": "organ"
+    },
+    {
+        "text": "BVĐK Tâm Anh còn sở hữu hệ thống phòng khám khang trang, khu nội trú cao cấp; khu vực phục hồi chức năng hiện đại; quy trình chăm sóc hậu phẫu toàn diện giúp bệnh nhân nhanh chóng hồi phục và ổn định sức khỏe sau phẫu thuật.",
+        "head": "khu vực phục hồi chức năng",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "viêm bao hoạt dịch",
+        "tail_type": "disease"
+    }
+]

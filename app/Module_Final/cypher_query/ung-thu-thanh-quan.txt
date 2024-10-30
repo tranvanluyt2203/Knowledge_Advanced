@@ -1,0 +1,980 @@
+
+MERGE (o1:lifestyle {id: 'hút_thuốc_lá_lifestyle'})
+MERGE (o2:disease {id: 'ung_thư_thanh_quản_disease'})
+MERGE (o1)-[r0:causedBy]->(o2)
+SET r0.text = 'Hút thuốc lá là yếu tố nguy cơ hàng đầu gây ung thư thanh quản'
+
+MERGE (o1:lifestyle {id: 'uống_rượu_lifestyle'})
+MERGE (o2:disease {id: 'ung_thư_thanh_quản_disease'})
+MERGE (o1)-[r1:causedBy]->(o2)
+SET r1.text = 'Hiện nay, nguyên nhân dẫn đến ung thư thanh quản vẫn chưa được xác định rõ ràng. Tuy nhiên, các nhà nghiên cứu cho rằng một số yếu tố có thể làm tăng nguy cơ mắc bệnh, bao gồm:(2)    Hút thuốc lá và uống rượu: Yếu tố nguy cơ hàng đầu gây ung thư thanh quản là thuốc lá và rượu. Nếu người bệnh có cả thói quen hút thuốc lá và thường xuyên uống rượu, nguy cơ mắc bệnh sẽ tăng lên nhiều lần.'
+
+MERGE (o1:disease {id: 'ung_thư_thanh_quản_disease'})
+MERGE (o2:lifestyle {id: 'hút_thuốc_lá_và_uống_rượu_lifestyle'})
+MERGE (o1)-[r2:causedBy]->(o2)
+SET r2.text = 'Hiện nay, nguyên nhân dẫn đến ung thư thanh quản vẫn chưa được xác định rõ ràng. Tuy nhiên, các nhà nghiên cứu cho rằng một số yếu tố có thể làm tăng nguy cơ mắc bệnh, bao gồm:(2)    Hút thuốc lá và uống rượu: Yếu tố nguy cơ hàng đầu gây ung thư thanh quản là thuốc lá và rượu. Nếu người bệnh có cả thói quen hút thuốc lá và thường xuyên uống rượu, nguy cơ mắc bệnh sẽ tăng lên nhiều lần.'
+
+MERGE (o1:disease {id: 'viêm_thanh_quản_mạn_tính_disease'})
+MERGE (o2:disease {id: 'ung_thư_thanh_quản_disease'})
+MERGE (o1)-[r3:causedBy]->(o2)
+SET r3.text = 'Một số viêm thanh quản mạn tính (bạch sản, hồng sản): có nguy cơ cao, có tỷ lệ chuyển thành thành ác tính từ 10 - 40%.'
+
+MERGE (o1:disease {id: 'trào_ngược_dạ_dày_disease'})
+MERGE (o2:disease {id: 'ung_thư_thanh_quản_disease'})
+MERGE (o1)-[r4:causedBy]->(o2)
+SET r4.text = 'Một số bệnh lý làm tăng nguy cơ ung thư thanh quản khác bao gồm trào ngược dạ dày, thoát vị thanh quản, u nhú thanh quản, làm việc trong môi trường tiếp xúc với chất phóng xạ.'
+
+MERGE (o1:disease {id: 'thoát_vị_thanh_quản_disease'})
+MERGE (o2:disease {id: 'ung_thư_thanh_quản_disease'})
+MERGE (o1)-[r5:causedBy]->(o2)
+SET r5.text = 'Một số bệnh lý làm tăng nguy cơ ung thư thanh quản khác bao gồm trào ngược dạ dày, thoát vị thanh quản, u nhú thanh quản, làm việc trong môi trường tiếp xúc với chất phóng xạ.'
+
+MERGE (o1:disease {id: 'u_nhú_thanh_quản_disease'})
+MERGE (o2:disease {id: 'ung_thư_thanh_quản_disease'})
+MERGE (o1)-[r6:causedBy]->(o2)
+SET r6.text = 'Một số bệnh lý làm tăng nguy cơ ung thư thanh quản khác bao gồm trào ngược dạ dày, thoát vị thanh quản, u nhú thanh quản, làm việc trong môi trường tiếp xúc với chất phóng xạ.'
+
+MERGE (o1:lifestyle {id: 'làm_việc_trong_môi_trường_tiếp_xúc_với_chất_phóng_xạ_lifestyle'})
+MERGE (o2:disease {id: 'ung_thư_thanh_quản_disease'})
+MERGE (o1)-[r7:causedBy]->(o2)
+SET r7.text = 'Một số bệnh lý làm tăng nguy cơ ung thư thanh quản khác bao gồm trào ngược dạ dày, thoát vị thanh quản, u nhú thanh quản, làm việc trong môi trường tiếp xúc với chất phóng xạ.'
+
+MERGE (o1:disease {id: 'ung_thư_thanh_quản_disease'})
+MERGE (o2:symptom {id: 'khàn_tiếng_symptom'})
+MERGE (o1)-[r8:isSymptomOf]->(o2)
+SET r8.text = 'Triệu chứng của ung thư thanh quản phụ thuộc vào vị trí và kích thước của khối u ác tính, được chia thành hai nhóm:'
+
+MERGE (o1:disease {id: 'ung_thư_thanh_quản_disease'})
+MERGE (o2:symptom {id: 'ho_khan_symptom'})
+MERGE (o1)-[r9:isSymptomOf]->(o2)
+SET r9.text = 'Triệu chứng của ung thư thanh quản phụ thuộc vào vị trí và kích thước của khối u ác tính, được chia thành hai nhóm:'
+
+MERGE (o1:disease {id: 'ung_thư_thanh_quản_disease'})
+MERGE (o2:symptom {id: 'khạc_đờm_nhầy_lẫn_máu_symptom'})
+MERGE (o1)-[r10:isSymptomOf]->(o2)
+SET r10.text = 'Triệu chứng của ung thư thanh quản phụ thuộc vào vị trí và kích thước của khối u ác tính, được chia thành hai nhóm:'
+
+MERGE (o1:disease {id: 'ung_thư_thanh_quản_disease'})
+MERGE (o2:symptom {id: 'khó_chịu_ở_họng_symptom'})
+MERGE (o1)-[r11:isSymptomOf]->(o2)
+SET r11.text = 'Triệu chứng của ung thư thanh quản phụ thuộc vào vị trí và kích thước của khối u ác tính, được chia thành hai nhóm:'
+
+MERGE (o1:disease {id: 'ung_thư_thanh_quản_disease'})
+MERGE (o2:symptom {id: 'rối_loạn_nuốt_symptom'})
+MERGE (o1)-[r12:isSymptomOf]->(o2)
+SET r12.text = 'Triệu chứng của ung thư thanh quản phụ thuộc vào vị trí và kích thước của khối u ác tính, được chia thành hai nhóm:'
+
+MERGE (o1:disease {id: 'ung_thư_thanh_quản_disease'})
+MERGE (o2:symptom {id: 'khó_thở_thanh_quản_symptom'})
+MERGE (o1)-[r13:isSymptomOf]->(o2)
+SET r13.text = 'Triệu chứng của ung thư thanh quản phụ thuộc vào vị trí và kích thước của khối u ác tính, được chia thành hai nhóm:'
+
+MERGE (o1:symptom {id: 'khàn_tiếng_symptom'})
+MERGE (o2:disease {id: 'ung_thư_thanh_quản_disease'})
+MERGE (o1)-[r14:isSymptomOf]->(o2)
+SET r14.text = 'Khàn tiếng: Là triệu chứng sớm và chủ yếu của ung thư thanh quản, biểu hiện giọng khàn, kéo dài và tăng dần, dùng thuốc không đỡ. Tính chất khàn thô, cứng (rè, giọng cứng như gỗ).'
+
+MERGE (o1:symptom {id: 'giọng_khàn_symptom'})
+MERGE (o2:disease {id: 'ung_thư_thanh_quản_disease'})
+MERGE (o1)-[r15:isSymptomOf]->(o2)
+SET r15.text = 'Khàn tiếng: Là triệu chứng sớm và chủ yếu của ung thư thanh quản, biểu hiện giọng khàn, kéo dài và tăng dần, dùng thuốc không đỡ. Tính chất khàn thô, cứng (rè, giọng cứng như gỗ).'
+
+MERGE (o1:symptom {id: 'ho_khan_symptom'})
+MERGE (o2:disease {id: 'ung_thư_thanh_quản_disease'})
+MERGE (o1)-[r16:isSymptomOf]->(o2)
+SET r16.text = 'Ho khan, tiếp là ho khạc đờm nhầy lẫn máu.'
+
+MERGE (o1:symptom {id: 'khạc_đờm_nhầy_lẫn_máu_symptom'})
+MERGE (o2:disease {id: 'ung_thư_thanh_quản_disease'})
+MERGE (o1)-[r17:isSymptomOf]->(o2)
+SET r17.text = 'Ho khan, tiếp là ho khạc đờm nhầy lẫn máu.'
+
+MERGE (o1:symptom {id: 'khó_chịu_ở_họng_symptom'})
+MERGE (o2:disease {id: 'ung_thư_thanh_quản_disease'})
+MERGE (o1)-[r18:isSymptomOf]->(o2)
+SET r18.text = 'Khó chịu ở họng, cảm giác như có dị vật mắc ở họng.'
+
+MERGE (o1:symptom {id: 'rối_loạn_nuốt_symptom'})
+MERGE (o2:disease {id: 'ung_thư_thanh_quản_disease'})
+MERGE (o1)-[r19:isSymptomOf]->(o2)
+SET r19.text = 'Rối loạn nuốt: Khi khối u lan ra ngoài thanh quản đến hạ họng, người bệnh có thể bị nuốt vướng, nghẹn, đau.'
+
+MERGE (o1:symptom {id: 'nuốt_vướng_symptom'})
+MERGE (o2:disease {id: 'ung_thư_thanh_quản_disease'})
+MERGE (o1)-[r20:isSymptomOf]->(o2)
+SET r20.text = 'Rối loạn nuốt: Khi khối u lan ra ngoài thanh quản đến hạ họng, người bệnh có thể bị nuốt vướng, nghẹn, đau.'
+
+MERGE (o1:symptom {id: 'nghẹn_symptom'})
+MERGE (o2:disease {id: 'ung_thư_thanh_quản_disease'})
+MERGE (o1)-[r21:isSymptomOf]->(o2)
+SET r21.text = 'Rối loạn nuốt: Khi khối u lan ra ngoài thanh quản đến hạ họng, người bệnh có thể bị nuốt vướng, nghẹn, đau.'
+
+MERGE (o1:symptom {id: 'đau_symptom'})
+MERGE (o2:disease {id: 'ung_thư_thanh_quản_disease'})
+MERGE (o1)-[r22:isSymptomOf]->(o2)
+SET r22.text = 'Rối loạn nuốt: Khi khối u lan ra ngoài thanh quản đến hạ họng, người bệnh có thể bị nuốt vướng, nghẹn, đau.'
+
+MERGE (o1:symptom {id: 'khó_thở_thanh_quản_symptom'})
+MERGE (o2:disease {id: 'ung_thư_thanh_quản_disease'})
+MERGE (o1)-[r23:isSymptomOf]->(o2)
+SET r23.text = 'Khó thở thanh quản: Xảy khi khối u lan rộng che lấp lòng thanh quản.'
+
+MERGE (o1:symptom {id: 'hạch_cổ_symptom'})
+MERGE (o2:disease {id: 'ung_thư_thanh_quản_disease'})
+MERGE (o1)-[r24:isSymptomOf]->(o2)
+SET r24.text = 'Bên cạnh các triệu chứng cơ năng trên, người bệnh còn có thể xuất hiện hạch cổ, sớm thấy nhất ở ung thư thượng thanh môn.'
+
+MERGE (o1:disease {id: 'ung_thư_thượng_thanh_môn_disease'})
+MERGE (o2:symptom {id: 'hạch_cổ_symptom'})
+MERGE (o1)-[r25:isSymptomOf]->(o2)
+SET r25.text = 'Bên cạnh các triệu chứng cơ năng trên, người bệnh còn có thể xuất hiện hạch cổ, sớm thấy nhất ở ung thư thượng thanh môn.'
+
+MERGE (o1:symptom {id: 'hạch_cổ_symptom'})
+MERGE (o2:test {id: 'thăm_khám_test'})
+MERGE (o1)-[r26:diagnosedBy]->(o2)
+SET r26.text = 'Bác sĩ Hằng lưu ý, trong thăm khám, cần đánh giá vị trí, số lượng, độ chắc và sự di động của các hạch cổ này.'
+
+MERGE (o1:disease {id: 'ung_thư_thanh_quản_disease'})
+MERGE (o2:test {id: 'kiểm_tra_bệnh_sử_test'})
+MERGE (o1)-[r27:diagnosedBy]->(o2)
+SET r27.text = 'Để chẩn đoán ung thư thanh quản, đầu tiên, bác sĩ sẽ kiểm tra bệnh sử và hỏi người bệnh về các triệu chứng đang gặp phải.'
+
+MERGE (o1:disease {id: 'ung_thư_thanh_quản_disease'})
+MERGE (o2:test {id: 'hỏi_người_bệnh_về_các_triệu_chứng_đang_gặp_phải_test'})
+MERGE (o1)-[r28:diagnosedBy]->(o2)
+SET r28.text = 'Để chẩn đoán ung thư thanh quản, đầu tiên, bác sĩ sẽ kiểm tra bệnh sử và hỏi người bệnh về các triệu chứng đang gặp phải.'
+
+MERGE (o1:disease {id: 'ung_thư_thanh_quản_disease'})
+MERGE (o2:test {id: 'khám_lâm_sàng_test'})
+MERGE (o1)-[r29:diagnosedBy]->(o2)
+SET r29.text = 'Để chẩn đoán ung thư thanh quản, đầu tiên, bác sĩ sẽ kiểm tra bệnh sử và hỏi người bệnh về các triệu chứng đang gặp phải. Sau đó, bác sĩ sẽ tiến hành khám lâm sàng và kiểm tra cổ họng của người bệnh.'
+
+MERGE (o1:disease {id: 'ung_thư_thanh_quản_disease'})
+MERGE (o2:test {id: 'kiểm_tra_cổ_họng_test'})
+MERGE (o1)-[r30:diagnosedBy]->(o2)
+SET r30.text = 'Để chẩn đoán ung thư thanh quản, đầu tiên, bác sĩ sẽ kiểm tra bệnh sử và hỏi người bệnh về các triệu chứng đang gặp phải. Sau đó, bác sĩ sẽ tiến hành khám lâm sàng và kiểm tra cổ họng của người bệnh.'
+
+MERGE (o1:disease {id: 'ung_thư_thanh_quản_disease'})
+MERGE (o2:test {id: 'xét_nghiệm_test'})
+MERGE (o1)-[r31:diagnosedBy]->(o2)
+SET r31.text = 'Bệnh nhân có thể được yêu cầu thực hiện một số xét nghiệm cần thiết để xác định chẩn đoán.(6) Trong quá trình chẩn đoán, cần phân biệt ung thư thanh quản với lao thanh quản, cũng như các u lành tính khác của thanh quản như papilloma, polyp, sarcoidose, hạt xơ…'
+
+MERGE (o1:disease {id: 'ung_thư_thanh_quản_disease'})
+MERGE (o2:disease {id: 'lao_thanh_quản_disease'})
+MERGE (o1)-[r32:relatedTo]->(o2)
+SET r32.text = 'Bệnh nhân có thể được yêu cầu thực hiện một số xét nghiệm cần thiết để xác định chẩn đoán.(6) Trong quá trình chẩn đoán, cần phân biệt ung thư thanh quản với lao thanh quản, cũng như các u lành tính khác của thanh quản như papilloma, polyp, sarcoidose, hạt xơ…'
+
+MERGE (o1:disease {id: 'ung_thư_thanh_quản_disease'})
+MERGE (o2:disease {id: 'papilloma_disease'})
+MERGE (o1)-[r33:relatedTo]->(o2)
+SET r33.text = 'Bệnh nhân có thể được yêu cầu thực hiện một số xét nghiệm cần thiết để xác định chẩn đoán.(6) Trong quá trình chẩn đoán, cần phân biệt ung thư thanh quản với lao thanh quản, cũng như các u lành tính khác của thanh quản như papilloma, polyp, sarcoidose, hạt xơ…'
+
+MERGE (o1:disease {id: 'ung_thư_thanh_quản_disease'})
+MERGE (o2:disease {id: 'polyp_disease'})
+MERGE (o1)-[r34:relatedTo]->(o2)
+SET r34.text = 'Bệnh nhân có thể được yêu cầu thực hiện một số xét nghiệm cần thiết để xác định chẩn đoán.(6) Trong quá trình chẩn đoán, cần phân biệt ung thư thanh quản với lao thanh quản, cũng như các u lành tính khác của thanh quản như papilloma, polyp, sarcoidose, hạt xơ…'
+
+MERGE (o1:disease {id: 'ung_thư_thanh_quản_disease'})
+MERGE (o2:disease {id: 'sarcoidose_disease'})
+MERGE (o1)-[r35:relatedTo]->(o2)
+SET r35.text = 'Bệnh nhân có thể được yêu cầu thực hiện một số xét nghiệm cần thiết để xác định chẩn đoán.(6) Trong quá trình chẩn đoán, cần phân biệt ung thư thanh quản với lao thanh quản, cũng như các u lành tính khác của thanh quản như papilloma, polyp, sarcoidose, hạt xơ…'
+
+MERGE (o1:disease {id: 'ung_thư_thanh_quản_disease'})
+MERGE (o2:disease {id: 'hạt_xơ_disease'})
+MERGE (o1)-[r36:relatedTo]->(o2)
+SET r36.text = 'Bệnh nhân có thể được yêu cầu thực hiện một số xét nghiệm cần thiết để xác định chẩn đoán.(6) Trong quá trình chẩn đoán, cần phân biệt ung thư thanh quản với lao thanh quản, cũng như các u lành tính khác của thanh quản như papilloma, polyp, sarcoidose, hạt xơ…'
+
+MERGE (o1:test {id: 'nội_soi_thanh_quản_test'})
+MERGE (o2:disease {id: 'ung_thư_thanh_quản_disease'})
+MERGE (o1)-[r37:diagnosedBy]->(o2)
+SET r37.text = 'Nội soi thanh quản thường là xét nghiệm được chỉ định đầu tiên nhằm giúp bác sĩ quan sát và kiểm tra thanh quản của người bệnh chi tiết hơn.'
+
+MERGE (o1:test {id: 'nội_soi_thanh_quản_gián_tiếp_test'})
+MERGE (o2:disease {id: 'ung_thư_thanh_quản_disease'})
+MERGE (o1)-[r38:diagnosedBy]->(o2)
+SET r38.text = 'Nội soi thanh quản gián tiếp: Dùng một gương nhỏ có cán dài đặt ở cuống họng bệnh nhân để quan sát sơ bộ tổn thương.'
+
+MERGE (o1:test {id: 'nội_soi_thanh_quản_trực_tiếp_test'})
+MERGE (o2:disease {id: 'ung_thư_thanh_quản_disease'})
+MERGE (o1)-[r39:diagnosedBy]->(o2)
+SET r39.text = 'Nội soi thanh quản trực tiếp: bằng ống mềm qua đường mũi hoặc bằng ống cứng qua đường miệng, quan sát thấy khối u ở dây thanh, khối u thường ở dạng u sùi, loét.'
+
+MERGE (o1:test {id: 'nội_soi_hoạt_nghiệm_thanh_quản_test'})
+MERGE (o2:disease {id: 'ung_thư_thanh_quản_disease'})
+MERGE (o1)-[r40:diagnosedBy]->(o2)
+SET r40.text = 'Nội soi hoạt nghiệm thanh quản: bằng ống mềm qua đường mũi hoặc bằng ống cứng qua đường miệng, quan sát thấy rõ tổn thương thanh quản nghi ngờ ác tính hay không, đánh giá khối u ảnh hưởng chức năng hoạt động dây thanh, có trường hợp thâm nhiễm chỉ biểu hiện thay đổi tính chất, màu sắc niêm mạc dây thanh.'
+
+MERGE (o1:treatment {id: 'mở_khí_quản_treatment'})
+MERGE (o2:disease {id: 'ung_thư_thanh_quản_disease'})
+MERGE (o1)-[r41:treatedBy]->(o2)
+SET r41.text = 'Trong trường hợp khối u to, làm bít lấp thanh môn, có thể cần phải can thiệp mở khí quản trước khi soi.'
+
+MERGE (o1:test {id: 'sinh_thiết_test'})
+MERGE (o2:disease {id: 'ung_thư_thanh_quản_disease'})
+MERGE (o1)-[r42:diagnosedBy]->(o2)
+SET r42.text = 'Sinh thiết: Nếu xuất hiện dấu hiệu bất thường, bác sĩ có thể sinh thiết để xác định bản chất khối u và xác định chẩn đoán.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:test {id: 'sinh_thiết_test'})
+MERGE (o1)-[r43:diagnosedBy]->(o2)
+SET r43.text = 'Sinh thiết: Nếu xuất hiện dấu hiệu bất thường, bác sĩ có thể sinh thiết để xác định bản chất khối u và xác định chẩn đoán. Đây là cách duy nhất để khẳng định khối u lành tính hay ác tính.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:organ {id: 'thanh_quản_organ'})
+MERGE (o1)-[r44:locatedIn]->(o2)
+SET r44.text = 'Sinh thiết: Nếu xuất hiện dấu hiệu bất thường, bác sĩ có thể sinh thiết để xác định bản chất khối u và xác định chẩn đoán. Đây là cách duy nhất để khẳng định khối u lành tính hay ác tính.'
+
+MERGE (o1:disease {id: 'khối_u_ác_tính_disease'})
+MERGE (o2:organ {id: 'thanh_quản_organ'})
+MERGE (o1)-[r45:locatedIn]->(o2)
+SET r45.text = 'Triệu chứng của ung thư thanh quản phụ thuộc vào vị trí và kích thước của khối u ác tính, được chia thành hai nhóm:'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:organ {id: 'thanh_quản_organ'})
+MERGE (o1)-[r46:locatedIn]->(o2)
+SET r46.text = 'Rối loạn nuốt: Khi khối u lan ra ngoài thanh quản đến hạ họng, người bệnh có thể bị nuốt vướng, nghẹn, đau.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:organ {id: 'hạ_họng_organ'})
+MERGE (o1)-[r47:locatedIn]->(o2)
+SET r47.text = 'Rối loạn nuốt: Khi khối u lan ra ngoài thanh quản đến hạ họng, người bệnh có thể bị nuốt vướng, nghẹn, đau.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:organ {id: 'thanh_quản_organ'})
+MERGE (o1)-[r48:locatedIn]->(o2)
+SET r48.text = 'Khó thở thanh quản: Xảy khi khối u lan rộng che lấp lòng thanh quản.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:organ {id: 'dây_thanh_organ'})
+MERGE (o1)-[r49:locatedIn]->(o2)
+SET r49.text = 'Nội soi thanh quản trực tiếp: bằng ống mềm qua đường mũi hoặc bằng ống cứng qua đường miệng, quan sát thấy khối u ở dây thanh, khối u thường ở dạng u sùi, loét.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:symptom {id: 'u_sùi_symptom'})
+MERGE (o1)-[r50:isSymptomOf]->(o2)
+SET r50.text = 'Nội soi thanh quản trực tiếp: bằng ống mềm qua đường mũi hoặc bằng ống cứng qua đường miệng, quan sát thấy khối u ở dây thanh, khối u thường ở dạng u sùi, loét.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:symptom {id: 'loét_symptom'})
+MERGE (o1)-[r51:isSymptomOf]->(o2)
+SET r51.text = 'Nội soi thanh quản trực tiếp: bằng ống mềm qua đường mũi hoặc bằng ống cứng qua đường miệng, quan sát thấy khối u ở dây thanh, khối u thường ở dạng u sùi, loét.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:organ {id: 'dây_thanh_organ'})
+MERGE (o1)-[r52:affects]->(o2)
+SET r52.text = 'Nội soi hoạt nghiệm thanh quản: bằng ống mềm qua đường mũi hoặc bằng ống cứng qua đường miệng, quan sát thấy rõ tổn thương thanh quản nghi ngờ ác tính hay không, đánh giá khối u ảnh hưởng chức năng hoạt động dây thanh, có trường hợp thâm nhiễm chỉ biểu hiện thay đổi tính chất, màu sắc niêm mạc dây thanh.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:symptom {id: 'thay_đổi_tính_chất_symptom'})
+MERGE (o1)-[r53:isSymptomOf]->(o2)
+SET r53.text = 'Nội soi hoạt nghiệm thanh quản: bằng ống mềm qua đường mũi hoặc bằng ống cứng qua đường miệng, quan sát thấy rõ tổn thương thanh quản nghi ngờ ác tính hay không, đánh giá khối u ảnh hưởng chức năng hoạt động dây thanh, có trường hợp thâm nhiễm chỉ biểu hiện thay đổi tính chất, màu sắc niêm mạc dây thanh.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:symptom {id: 'thay_đổi_màu_sắc_niêm_mạc_dây_thanh_symptom'})
+MERGE (o1)-[r54:isSymptomOf]->(o2)
+SET r54.text = 'Nội soi hoạt nghiệm thanh quản: bằng ống mềm qua đường mũi hoặc bằng ống cứng qua đường miệng, quan sát thấy rõ tổn thương thanh quản nghi ngờ ác tính hay không, đánh giá khối u ảnh hưởng chức năng hoạt động dây thanh, có trường hợp thâm nhiễm chỉ biểu hiện thay đổi tính chất, màu sắc niêm mạc dây thanh.'
+
+MERGE (o1:organ {id: 'thanh_quản_organ'})
+MERGE (o2:organ {id: 'cổ_organ'})
+MERGE (o1)-[r55:locatedIn]->(o2)
+SET r55.text = 'Nội soi thanh quản thường là xét nghiệm được chỉ định đầu tiên nhằm giúp bác sĩ quan sát và kiểm tra thanh quản của người bệnh chi tiết hơn.'
+
+MERGE (o1:organ {id: 'thanh_quản_organ'})
+MERGE (o2:test {id: 'nội_soi_thanh_quản_test'})
+MERGE (o1)-[r56:diagnosedBy]->(o2)
+SET r56.text = 'Nội soi thanh quản thường là xét nghiệm được chỉ định đầu tiên nhằm giúp bác sĩ quan sát và kiểm tra thanh quản của người bệnh chi tiết hơn.'
+
+MERGE (o1:organ {id: 'cuống_họng_organ'})
+MERGE (o2:organ {id: 'cổ_organ'})
+MERGE (o1)-[r57:locatedIn]->(o2)
+SET r57.text = 'Nội soi thanh quản gián tiếp: Dùng một gương nhỏ có cán dài đặt ở cuống họng bệnh nhân để quan sát sơ bộ tổn thương.'
+
+MERGE (o1:disease {id: 'tổn_thương_disease'})
+MERGE (o2:organ {id: 'cuống_họng_organ'})
+MERGE (o1)-[r58:locatedIn]->(o2)
+SET r58.text = 'Nội soi thanh quản gián tiếp: Dùng một gương nhỏ có cán dài đặt ở cuống họng bệnh nhân để quan sát sơ bộ tổn thương.'
+
+MERGE (o1:treatment {id: 'ống_mềm_treatment'})
+MERGE (o2:test {id: 'nội_soi_thanh_quản_test'})
+MERGE (o1)-[r59:treatedBy]->(o2)
+SET r59.text = 'Nội soi thanh quản trực tiếp: bằng ống mềm qua đường mũi hoặc bằng ống cứng qua đường miệng, quan sát thấy khối u ở dây thanh, khối u thường ở dạng u sùi, loét.'
+
+MERGE (o1:treatment {id: 'ống_cứng_treatment'})
+MERGE (o2:test {id: 'nội_soi_thanh_quản_test'})
+MERGE (o1)-[r60:treatedBy]->(o2)
+SET r60.text = 'Nội soi thanh quản trực tiếp: bằng ống mềm qua đường mũi hoặc bằng ống cứng qua đường miệng, quan sát thấy khối u ở dây thanh, khối u thường ở dạng u sùi, loét.'
+
+MERGE (o1:organ {id: 'đường_mũi_organ'})
+MERGE (o2:organ {id: 'cổ_organ'})
+MERGE (o1)-[r61:locatedIn]->(o2)
+SET r61.text = 'Nội soi thanh quản trực tiếp: bằng ống mềm qua đường mũi hoặc bằng ống cứng qua đường miệng, quan sát thấy khối u ở dây thanh, khối u thường ở dạng u sùi, loét.'
+
+MERGE (o1:organ {id: 'đường_miệng_organ'})
+MERGE (o2:organ {id: 'cổ_organ'})
+MERGE (o1)-[r62:locatedIn]->(o2)
+SET r62.text = 'Nội soi thanh quản trực tiếp: bằng ống mềm qua đường mũi hoặc bằng ống cứng qua đường miệng, quan sát thấy khối u ở dây thanh, khối u thường ở dạng u sùi, loét.'
+
+MERGE (o1:disease {id: 'tổn_thương_thanh_quản_disease'})
+MERGE (o2:organ {id: 'thanh_quản_organ'})
+MERGE (o1)-[r63:locatedIn]->(o2)
+SET r63.text = 'Nội soi hoạt nghiệm thanh quản: bằng ống mềm qua đường mũi hoặc bằng ống cứng qua đường miệng, quan sát thấy rõ tổn thương thanh quản nghi ngờ ác tính hay không, đánh giá khối u ảnh hưởng chức năng hoạt động dây thanh, có trường hợp thâm nhiễm chỉ biểu hiện thay đổi tính chất, màu sắc niêm mạc dây thanh.'
+
+MERGE (o1:disease {id: 'tổn_thương_thanh_quản_disease'})
+MERGE (o2:test {id: 'nội_soi_hoạt_nghiệm_thanh_quản_test'})
+MERGE (o1)-[r64:diagnosedBy]->(o2)
+SET r64.text = 'Nội soi hoạt nghiệm thanh quản: bằng ống mềm qua đường mũi hoặc bằng ống cứng qua đường miệng, quan sát thấy rõ tổn thương thanh quản nghi ngờ ác tính hay không, đánh giá khối u ảnh hưởng chức năng hoạt động dây thanh, có trường hợp thâm nhiễm chỉ biểu hiện thay đổi tính chất, màu sắc niêm mạc dây thanh.'
+
+MERGE (o1:disease {id: 'tổn_thương_thanh_quản_disease'})
+MERGE (o2:disease {id: 'ung_thư_thanh_quản_disease'})
+MERGE (o1)-[r65:relatedTo]->(o2)
+SET r65.text = 'Nội soi hoạt nghiệm thanh quản: bằng ống mềm qua đường mũi hoặc bằng ống cứng qua đường miệng, quan sát thấy rõ tổn thương thanh quản nghi ngờ ác tính hay không, đánh giá khối u ảnh hưởng chức năng hoạt động dây thanh, có trường hợp thâm nhiễm chỉ biểu hiện thay đổi tính chất, màu sắc niêm mạc dây thanh.'
+
+MERGE (o1:organ {id: 'dây_thanh_organ'})
+MERGE (o2:organ {id: 'thanh_quản_organ'})
+MERGE (o1)-[r66:locatedIn]->(o2)
+SET r66.text = 'Nội soi hoạt nghiệm thanh quản: bằng ống mềm qua đường mũi hoặc bằng ống cứng qua đường miệng, quan sát thấy rõ tổn thương thanh quản nghi ngờ ác tính hay không, đánh giá khối u ảnh hưởng chức năng hoạt động dây thanh, có trường hợp thâm nhiễm chỉ biểu hiện thay đổi tính chất, màu sắc niêm mạc dây thanh.'
+
+MERGE (o1:organ {id: 'niêm_mạc_dây_thanh_organ'})
+MERGE (o2:organ {id: 'dây_thanh_organ'})
+MERGE (o1)-[r67:locatedIn]->(o2)
+SET r67.text = 'Nội soi hoạt nghiệm thanh quản: bằng ống mềm qua đường mũi hoặc bằng ống cứng qua đường miệng, quan sát thấy rõ tổn thương thanh quản nghi ngờ ác tính hay không, đánh giá khối u ảnh hưởng chức năng hoạt động dây thanh, có trường hợp thâm nhiễm chỉ biểu hiện thay đổi tính chất, màu sắc niêm mạc dây thanh.'
+
+MERGE (o1:organ {id: 'thanh_môn_organ'})
+MERGE (o2:organ {id: 'thanh_quản_organ'})
+MERGE (o1)-[r68:locatedIn]->(o2)
+SET r68.text = 'Trong trường hợp khối u to, làm bít lấp thanh môn, có thể cần phải can thiệp mở khí quản trước khi soi.'
+
+MERGE (o1:test {id: 'chụp_x-quang_phổi_test'})
+MERGE (o2:disease {id: 'ung_thư_di_căn_phổi_disease'})
+MERGE (o1)-[r69:diagnosedBy]->(o2)
+SET r69.text = 'Chụp X-quang phổi hoặc chụp cắt lớp ngực: Nhằm đánh giá ung thư di căn phổi.'
+
+MERGE (o1:test {id: 'chụp_cắt_lớp_ngực_test'})
+MERGE (o2:disease {id: 'ung_thư_di_căn_phổi_disease'})
+MERGE (o1)-[r70:diagnosedBy]->(o2)
+SET r70.text = 'Chụp X-quang phổi hoặc chụp cắt lớp ngực: Nhằm đánh giá ung thư di căn phổi.'
+
+MERGE (o1:test {id: 'ct_scan_test'})
+MERGE (o2:disease {id: 'ung_thư_thanh_quản_disease'})
+MERGE (o1)-[r71:diagnosedBy]->(o2)
+SET r71.text = 'CT scan và MRI có tiêm thuốc, cho phép đánh giá sự lan của khối u, đặc biệt ở các vị trí mép trước dây thanh, hạ thanh môn, các khoang của thanh quản như khoang giáp móng thanh thiệt, khoang cạnh thanh môn, hoặc sự lan của u đến hạ thanh môn, sụn giáp, sụn nhẫn.'
+
+MERGE (o1:test {id: 'mri_test'})
+MERGE (o2:disease {id: 'ung_thư_thanh_quản_disease'})
+MERGE (o1)-[r72:diagnosedBy]->(o2)
+SET r72.text = 'CT scan và MRI có tiêm thuốc, cho phép đánh giá sự lan của khối u, đặc biệt ở các vị trí mép trước dây thanh, hạ thanh môn, các khoang của thanh quản như khoang giáp móng thanh thiệt, khoang cạnh thanh môn, hoặc sự lan của u đến hạ thanh môn, sụn giáp, sụn nhẫn.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:organ {id: 'thanh_quản_organ'})
+MERGE (o1)-[r73:locatedIn]->(o2)
+SET r73.text = 'CT scan và MRI có tiêm thuốc, cho phép đánh giá sự lan của khối u, đặc biệt ở các vị trí mép trước dây thanh, hạ thanh môn, các khoang của thanh quản như khoang giáp móng thanh thiệt, khoang cạnh thanh môn, hoặc sự lan của u đến hạ thanh môn, sụn giáp, sụn nhẫn.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:organ {id: 'dây_thanh_organ'})
+MERGE (o1)-[r74:locatedIn]->(o2)
+SET r74.text = 'CT scan và MRI có tiêm thuốc, cho phép đánh giá sự lan của khối u, đặc biệt ở các vị trí mép trước dây thanh, hạ thanh môn, các khoang của thanh quản như khoang giáp móng thanh thiệt, khoang cạnh thanh môn, hoặc sự lan của u đến hạ thanh môn, sụn giáp, sụn nhẫn.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:organ {id: 'hạ_thanh_môn_organ'})
+MERGE (o1)-[r75:locatedIn]->(o2)
+SET r75.text = 'CT scan và MRI có tiêm thuốc, cho phép đánh giá sự lan của khối u, đặc biệt ở các vị trí mép trước dây thanh, hạ thanh môn, các khoang của thanh quản như khoang giáp móng thanh thiệt, khoang cạnh thanh môn, hoặc sự lan của u đến hạ thanh môn, sụn giáp, sụn nhẫn.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:organ {id: 'khoang_giáp_móng_thanh_thiệt_organ'})
+MERGE (o1)-[r76:locatedIn]->(o2)
+SET r76.text = 'CT scan và MRI có tiêm thuốc, cho phép đánh giá sự lan của khối u, đặc biệt ở các vị trí mép trước dây thanh, hạ thanh môn, các khoang của thanh quản như khoang giáp móng thanh thiệt, khoang cạnh thanh môn, hoặc sự lan của u đến hạ thanh môn, sụn giáp, sụn nhẫn.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:organ {id: 'khoang_cạnh_thanh_môn_organ'})
+MERGE (o1)-[r77:locatedIn]->(o2)
+SET r77.text = 'CT scan và MRI có tiêm thuốc, cho phép đánh giá sự lan của khối u, đặc biệt ở các vị trí mép trước dây thanh, hạ thanh môn, các khoang của thanh quản như khoang giáp móng thanh thiệt, khoang cạnh thanh môn, hoặc sự lan của u đến hạ thanh môn, sụn giáp, sụn nhẫn.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:organ {id: 'sụn_giáp_organ'})
+MERGE (o1)-[r78:locatedIn]->(o2)
+SET r78.text = 'CT scan và MRI có tiêm thuốc, cho phép đánh giá sự lan của khối u, đặc biệt ở các vị trí mép trước dây thanh, hạ thanh môn, các khoang của thanh quản như khoang giáp móng thanh thiệt, khoang cạnh thanh môn, hoặc sự lan của u đến hạ thanh môn, sụn giáp, sụn nhẫn.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:organ {id: 'sụn_nhẫn_organ'})
+MERGE (o1)-[r79:locatedIn]->(o2)
+SET r79.text = 'CT scan và MRI có tiêm thuốc, cho phép đánh giá sự lan của khối u, đặc biệt ở các vị trí mép trước dây thanh, hạ thanh môn, các khoang của thanh quản như khoang giáp móng thanh thiệt, khoang cạnh thanh môn, hoặc sự lan của u đến hạ thanh môn, sụn giáp, sụn nhẫn.'
+
+MERGE (o1:organ {id: 'hạch_cổ_organ'})
+MERGE (o2:disease {id: 'ung_thư_thanh_quản_disease'})
+MERGE (o1)-[r80:relatedTo]->(o2)
+SET r80.text = 'Bên cạnh đó, phương pháp này có thể giúp đánh giá tình trạng hạch cổ.'
+
+MERGE (o1:test {id: 'siêu_âm_vùng_cổ_test'})
+MERGE (o2:organ {id: 'hạch_cổ_organ'})
+MERGE (o1)-[r81:diagnosedBy]->(o2)
+SET r81.text = 'Siêu âm vùng cổ: Giúp bác sĩ phát hiện các hạch cổ mà không khám thấy trên lâm sàng.'
+
+MERGE (o1:test {id: 'pet_ct_scan_test'})
+MERGE (o2:disease {id: 'ổ_di_căn_disease'})
+MERGE (o1)-[r82:diagnosedBy]->(o2)
+SET r82.text = 'PET CT scan: Nhằm phát hiện các ổ di căn, phân biệt tái phát với các tổn thương hoại tử sụn do tia hoặc các di chứng trong quá trình điều trị, hoặc phát hiện các ổ ung thư thứ hai&#8230;'
+
+MERGE (o1:test {id: 'pet_ct_scan_test'})
+MERGE (o2:disease {id: 'tái_phát_disease'})
+MERGE (o1)-[r83:diagnosedBy]->(o2)
+SET r83.text = 'PET CT scan: Nhằm phát hiện các ổ di căn, phân biệt tái phát với các tổn thương hoại tử sụn do tia hoặc các di chứng trong quá trình điều trị, hoặc phát hiện các ổ ung thư thứ hai&#8230;'
+
+MERGE (o1:test {id: 'pet_ct_scan_test'})
+MERGE (o2:disease {id: 'tổn_thương_hoại_tử_sụn_disease'})
+MERGE (o1)-[r84:diagnosedBy]->(o2)
+SET r84.text = 'PET CT scan: Nhằm phát hiện các ổ di căn, phân biệt tái phát với các tổn thương hoại tử sụn do tia hoặc các di chứng trong quá trình điều trị, hoặc phát hiện các ổ ung thư thứ hai&#8230;'
+
+MERGE (o1:test {id: 'pet_ct_scan_test'})
+MERGE (o2:disease {id: 'ung_thư_thứ_hai_disease'})
+MERGE (o1)-[r85:diagnosedBy]->(o2)
+SET r85.text = 'PET CT scan: Nhằm phát hiện các ổ di căn, phân biệt tái phát với các tổn thương hoại tử sụn do tia hoặc các di chứng trong quá trình điều trị, hoặc phát hiện các ổ ung thư thứ hai&#8230;'
+
+MERGE (o1:disease {id: 'ung_thư_thanh_quản_disease'})
+MERGE (o2:test {id: 'chẩn_đoán_test'})
+MERGE (o1)-[r86:diagnosedBy]->(o2)
+SET r86.text = 'Khi có kết quả chẩn đoán ung thư thanh quản, bước tiếp theo, bác sĩ cần phải xác định giai đoạn ung thư để đánh giá xem ung thư đã lan rộng ra khu vực lân cận và có tình trạng di căn xa hay không.(3) Ung thư thanh quản được phân chia giai đoạn như sau:  Ung thư thanh quản giai đoạn 0: được gọi là ung thư biểu mô tại chỗ.'
+
+MERGE (o1:disease {id: 'ung_thư_thanh_quản_disease'})
+MERGE (o2:disease {id: 'di_căn_disease'})
+MERGE (o1)-[r87:relatedTo]->(o2)
+SET r87.text = 'Khi có kết quả chẩn đoán ung thư thanh quản, bước tiếp theo, bác sĩ cần phải xác định giai đoạn ung thư để đánh giá xem ung thư đã lan rộng ra khu vực lân cận và có tình trạng di căn xa hay không.(3) Ung thư thanh quản được phân chia giai đoạn như sau:  Ung thư thanh quản giai đoạn 0: được gọi là ung thư biểu mô tại chỗ.'
+
+MERGE (o1:disease {id: 'ung_thư_thanh_quản_giai_đoạn_0_disease'})
+MERGE (o2:disease {id: 'ung_thư_biểu_mô_tại_chỗ_disease'})
+MERGE (o1)-[r88:relatedTo]->(o2)
+SET r88.text = 'Ung thư thanh quản giai đoạn 0: được gọi là ung thư biểu mô tại chỗ.'
+
+MERGE (o1:disease {id: 'ung_thư_thanh_quản_giai_đoạn_t1_disease'})
+MERGE (o2:organ {id: 'thượng_thanh_môn_organ'})
+MERGE (o1)-[r89:locatedIn]->(o2)
+SET r89.text = 'Ung thư thanh quản giai đoạn T1: ung thư đã hình thành ở thượng thanh môn, thanh môn hoặc hạ thanh môn, chưa xâm lấn sang các khu vực khác'
+
+MERGE (o1:disease {id: 'ung_thư_thanh_quản_giai_đoạn_t1_disease'})
+MERGE (o2:organ {id: 'thanh_môn_organ'})
+MERGE (o1)-[r90:locatedIn]->(o2)
+SET r90.text = 'Ung thư thanh quản giai đoạn T1: ung thư đã hình thành ở thượng thanh môn, thanh môn hoặc hạ thanh môn, chưa xâm lấn sang các khu vực khác'
+
+MERGE (o1:disease {id: 'ung_thư_thanh_quản_giai_đoạn_t1_disease'})
+MERGE (o2:organ {id: 'hạ_thanh_môn_organ'})
+MERGE (o1)-[r91:locatedIn]->(o2)
+SET r91.text = 'Ung thư thanh quản giai đoạn T1: ung thư đã hình thành ở thượng thanh môn, thanh môn hoặc hạ thanh môn, chưa xâm lấn sang các khu vực khác'
+
+MERGE (o1:disease {id: 'ung_thư_thanh_quản_giai_đoạn_t2_disease'})
+MERGE (o2:organ {id: 'dây_thanh_organ'})
+MERGE (o1)-[r92:locatedIn]->(o2)
+SET r92.text = 'Ung thư thanh quản giai đoạn T2: khối u ở hai dây thanh, có thể lan lên thượng thanh môn hoặc xuống hạ thanh môn.'
+
+MERGE (o1:disease {id: 'ung_thư_thanh_quản_giai_đoạn_t2_disease'})
+MERGE (o2:organ {id: 'thượng_thanh_môn_organ'})
+MERGE (o1)-[r93:locatedIn]->(o2)
+SET r93.text = 'Ung thư thanh quản giai đoạn T2: khối u ở hai dây thanh, có thể lan lên thượng thanh môn hoặc xuống hạ thanh môn.'
+
+MERGE (o1:disease {id: 'ung_thư_thanh_quản_giai_đoạn_t2_disease'})
+MERGE (o2:organ {id: 'hạ_thanh_môn_organ'})
+MERGE (o1)-[r94:locatedIn]->(o2)
+SET r94.text = 'Ung thư thanh quản giai đoạn T2: khối u ở hai dây thanh, có thể lan lên thượng thanh môn hoặc xuống hạ thanh môn.'
+
+MERGE (o1:disease {id: 'ung_thư_thanh_quản_giai_đoạn_t3_disease'})
+MERGE (o2:organ {id: 'thanh_quản_organ'})
+MERGE (o1)-[r95:locatedIn]->(o2)
+SET r95.text = 'Ung thư thanh quản giai đoạn T3: khối u nằm trên thanh quản và có thể phát triển sang các khu vực lân cận (vùng sau thanh quản, vùng cận thanh quản, vùng trước thanh quản hoặc bên trong sụn tuyến giáp).'
+
+MERGE (o1:disease {id: 'ung_thư_thanh_quản_giai_đoạn_t3_disease'})
+MERGE (o2:organ {id: 'vùng_sau_thanh_quản_organ'})
+MERGE (o1)-[r96:locatedIn]->(o2)
+SET r96.text = 'Ung thư thanh quản giai đoạn T3: khối u nằm trên thanh quản và có thể phát triển sang các khu vực lân cận (vùng sau thanh quản, vùng cận thanh quản, vùng trước thanh quản hoặc bên trong sụn tuyến giáp).'
+
+MERGE (o1:disease {id: 'ung_thư_thanh_quản_giai_đoạn_t3_disease'})
+MERGE (o2:organ {id: 'vùng_cận_thanh_quản_organ'})
+MERGE (o1)-[r97:locatedIn]->(o2)
+SET r97.text = 'Ung thư thanh quản giai đoạn T3: khối u nằm trên thanh quản và có thể phát triển sang các khu vực lân cận (vùng sau thanh quản, vùng cận thanh quản, vùng trước thanh quản hoặc bên trong sụn tuyến giáp).'
+
+MERGE (o1:disease {id: 'ung_thư_thanh_quản_giai_đoạn_t3_disease'})
+MERGE (o2:organ {id: 'vùng_trước_thanh_quản_organ'})
+MERGE (o1)-[r98:locatedIn]->(o2)
+SET r98.text = 'Ung thư thanh quản giai đoạn T3: khối u nằm trên thanh quản và có thể phát triển sang các khu vực lân cận (vùng sau thanh quản, vùng cận thanh quản, vùng trước thanh quản hoặc bên trong sụn tuyến giáp).'
+
+MERGE (o1:disease {id: 'ung_thư_thanh_quản_giai_đoạn_t3_disease'})
+MERGE (o2:organ {id: 'sụn_tuyến_giáp_organ'})
+MERGE (o1)-[r99:locatedIn]->(o2)
+SET r99.text = 'Ung thư thanh quản giai đoạn T3: khối u nằm trên thanh quản và có thể phát triển sang các khu vực lân cận (vùng sau thanh quản, vùng cận thanh quản, vùng trước thanh quản hoặc bên trong sụn tuyến giáp).'
+
+MERGE (o1:disease {id: 'ung_thư_thanh_quản_giai_đoạn_4a_disease'})
+MERGE (o2:organ {id: 'sụn_tuyến_giáp_organ'})
+MERGE (o1)-[r100:locatedIn]->(o2)
+SET r100.text = 'Giai đoạn 4A: Khối u đã phát triển qua sụn tuyến giáp và / hoặc lan đến các mô bên ngoài thanh quản (chẳng hạn như tuyến giáp, khí quản, thực quản, cơ lưỡi hoặc cơ cổ). Khối u có thể đã hoặc chưa lan đến hạch bạch huyết ở cùng bên cổ và chưa lan đến các bộ phận xa của cơ thể.'
+
+MERGE (o1:disease {id: 'ung_thư_thanh_quản_giai_đoạn_4a_disease'})
+MERGE (o2:organ {id: 'tuyến_giáp_organ'})
+MERGE (o1)-[r101:locatedIn]->(o2)
+SET r101.text = 'Giai đoạn 4A: Khối u đã phát triển qua sụn tuyến giáp và / hoặc lan đến các mô bên ngoài thanh quản (chẳng hạn như tuyến giáp, khí quản, thực quản, cơ lưỡi hoặc cơ cổ). Khối u có thể đã hoặc chưa lan đến hạch bạch huyết ở cùng bên cổ và chưa lan đến các bộ phận xa của cơ thể.'
+
+MERGE (o1:disease {id: 'ung_thư_thanh_quản_giai_đoạn_4a_disease'})
+MERGE (o2:organ {id: 'khí_quản_organ'})
+MERGE (o1)-[r102:locatedIn]->(o2)
+SET r102.text = 'Giai đoạn 4A: Khối u đã phát triển qua sụn tuyến giáp và / hoặc lan đến các mô bên ngoài thanh quản (chẳng hạn như tuyến giáp, khí quản, thực quản, cơ lưỡi hoặc cơ cổ). Khối u có thể đã hoặc chưa lan đến hạch bạch huyết ở cùng bên cổ và chưa lan đến các bộ phận xa của cơ thể.'
+
+MERGE (o1:disease {id: 'ung_thư_thanh_quản_giai_đoạn_4a_disease'})
+MERGE (o2:organ {id: 'thực_quản_organ'})
+MERGE (o1)-[r103:locatedIn]->(o2)
+SET r103.text = 'Giai đoạn 4A: Khối u đã phát triển qua sụn tuyến giáp và / hoặc lan đến các mô bên ngoài thanh quản (chẳng hạn như tuyến giáp, khí quản, thực quản, cơ lưỡi hoặc cơ cổ). Khối u có thể đã hoặc chưa lan đến hạch bạch huyết ở cùng bên cổ và chưa lan đến các bộ phận xa của cơ thể.'
+
+MERGE (o1:disease {id: 'ung_thư_thanh_quản_giai_đoạn_4a_disease'})
+MERGE (o2:organ {id: 'cơ_lưỡi_organ'})
+MERGE (o1)-[r104:locatedIn]->(o2)
+SET r104.text = 'Giai đoạn 4A: Khối u đã phát triển qua sụn tuyến giáp và / hoặc lan đến các mô bên ngoài thanh quản (chẳng hạn như tuyến giáp, khí quản, thực quản, cơ lưỡi hoặc cơ cổ). Khối u có thể đã hoặc chưa lan đến hạch bạch huyết ở cùng bên cổ và chưa lan đến các bộ phận xa của cơ thể.'
+
+MERGE (o1:disease {id: 'ung_thư_thanh_quản_giai_đoạn_4a_disease'})
+MERGE (o2:organ {id: 'cơ_cổ_organ'})
+MERGE (o1)-[r105:locatedIn]->(o2)
+SET r105.text = 'Giai đoạn 4A: Khối u đã phát triển qua sụn tuyến giáp và / hoặc lan đến các mô bên ngoài thanh quản (chẳng hạn như tuyến giáp, khí quản, thực quản, cơ lưỡi hoặc cơ cổ). Khối u có thể đã hoặc chưa lan đến hạch bạch huyết ở cùng bên cổ và chưa lan đến các bộ phận xa của cơ thể.'
+
+MERGE (o1:disease {id: 'ung_thư_thanh_quản_giai_đoạn_4a_disease'})
+MERGE (o2:organ {id: 'hạch_bạch_huyết_organ'})
+MERGE (o1)-[r106:locatedIn]->(o2)
+SET r106.text = 'Giai đoạn 4A: Khối u đã phát triển qua sụn tuyến giáp và / hoặc lan đến các mô bên ngoài thanh quản (chẳng hạn như tuyến giáp, khí quản, thực quản, cơ lưỡi hoặc cơ cổ). Khối u có thể đã hoặc chưa lan đến hạch bạch huyết ở cùng bên cổ và chưa lan đến các bộ phận xa của cơ thể.'
+
+MERGE (o1:disease {id: 'ung_thư_thanh_quản_giai_đoạn_4b_disease'})
+MERGE (o2:organ {id: 'cột_sống_organ'})
+MERGE (o1)-[r107:locatedIn]->(o2)
+SET r107.text = 'Giai đoạn 4B: Khối u phát triển vào khu vực phía trước cột sống ở cổ (không gian đĩa đệm), bao quanh động mạch cảnh, hoặc đang phát triển xuống không gian giữa phổi.'
+
+MERGE (o1:disease {id: 'ung_thư_thanh_quản_giai_đoạn_4b_disease'})
+MERGE (o2:organ {id: 'động_mạch_cảnh_organ'})
+MERGE (o1)-[r108:locatedIn]->(o2)
+SET r108.text = 'Giai đoạn 4B: Khối u phát triển vào khu vực phía trước cột sống ở cổ (không gian đĩa đệm), bao quanh động mạch cảnh, hoặc đang phát triển xuống không gian giữa phổi.'
+
+MERGE (o1:disease {id: 'ung_thư_thanh_quản_giai_đoạn_4b_disease'})
+MERGE (o2:organ {id: 'không_gian_giữa_phổi_organ'})
+MERGE (o1)-[r109:locatedIn]->(o2)
+SET r109.text = 'Giai đoạn 4B: Khối u phát triển vào khu vực phía trước cột sống ở cổ (không gian đĩa đệm), bao quanh động mạch cảnh, hoặc đang phát triển xuống không gian giữa phổi.'
+
+MERGE (o1:disease {id: 'ung_thư_thanh_quản_giai_đoạn_4c_disease'})
+MERGE (o2:organ {id: 'phổi_organ'})
+MERGE (o1)-[r110:locatedIn]->(o2)
+SET r110.text = 'Giai đoạn 4C: Ung thư đã di căn đến các bộ phận xa của cơ thể, chẳng hạn như phổi, gan hoặc xương.'
+
+MERGE (o1:disease {id: 'ung_thư_thanh_quản_giai_đoạn_4c_disease'})
+MERGE (o2:organ {id: 'gan_organ'})
+MERGE (o1)-[r111:locatedIn]->(o2)
+SET r111.text = 'Giai đoạn 4C: Ung thư đã di căn đến các bộ phận xa của cơ thể, chẳng hạn như phổi, gan hoặc xương.'
+
+MERGE (o1:disease {id: 'ung_thư_thanh_quản_giai_đoạn_4c_disease'})
+MERGE (o2:organ {id: 'xương_organ'})
+MERGE (o1)-[r112:locatedIn]->(o2)
+SET r112.text = 'Giai đoạn 4C: Ung thư đã di căn đến các bộ phận xa của cơ thể, chẳng hạn như phổi, gan hoặc xương.'
+
+MERGE (o1:disease {id: 'ung_thư_thanh_quản_disease'})
+MERGE (o2:treatment {id: 'phương_pháp_điều_trị_treatment'})
+MERGE (o1)-[r113:treatedBy]->(o2)
+SET r113.text = 'Bác sĩ Hằng cho biết, việc lựa chọn phương pháp điều trị sẽ phụ thuộc vào giai đoạn ung thư, vị trí, kích thước khối u và sức khỏe tổng thể của người bệnh.'
+
+MERGE (o1:disease {id: 'ung_thư_thanh_quản_disease'})
+MERGE (o2:treatment {id: 'phẫu_thuật_treatment'})
+MERGE (o1)-[r114:treatedBy]->(o2)
+SET r114.text = 'Các phương pháp điều trị ung thư thanh quản bao gồm phẫu thuật, xạ trị và hóa trị.(4) Ung thư thanh quản được chẩn đoán sớm thường được chỉ định điều trị bằng xạ trị hoặc phẫu thuật.'
+
+MERGE (o1:disease {id: 'ung_thư_thanh_quản_disease'})
+MERGE (o2:treatment {id: 'xạ_trị_treatment'})
+MERGE (o1)-[r115:treatedBy]->(o2)
+SET r115.text = 'Các phương pháp điều trị ung thư thanh quản bao gồm phẫu thuật, xạ trị và hóa trị.(4) Ung thư thanh quản được chẩn đoán sớm thường được chỉ định điều trị bằng xạ trị hoặc phẫu thuật.'
+
+MERGE (o1:disease {id: 'ung_thư_thanh_quản_disease'})
+MERGE (o2:treatment {id: 'hóa_trị_treatment'})
+MERGE (o1)-[r116:treatedBy]->(o2)
+SET r116.text = 'Các phương pháp điều trị ung thư thanh quản bao gồm phẫu thuật, xạ trị và hóa trị.(4) Ung thư thanh quản được chẩn đoán sớm thường được chỉ định điều trị bằng xạ trị hoặc phẫu thuật.'
+
+MERGE (o1:disease {id: 'ung_thư_thanh_quản_disease'})
+MERGE (o2:treatment {id: 'phẫu_thuật_cắt_bỏ_treatment'})
+MERGE (o1)-[r117:treatedBy]->(o2)
+SET r117.text = 'Nếu ung thư ở giai đoạn nặng, bác sĩ có thể kết hợp cả 3 phương pháp phẫu thuật cắt bỏ (một phần hoặc toàn bộ thanh quản) kết hợp nạo vét hạch, xạ trị và hóa trị để điều trị cho người bệnh.'
+
+MERGE (o1:disease {id: 'ung_thư_thanh_quản_disease'})
+MERGE (o2:treatment {id: 'nạo_vét_hạch_treatment'})
+MERGE (o1)-[r118:treatedBy]->(o2)
+SET r118.text = 'Nếu ung thư ở giai đoạn nặng, bác sĩ có thể kết hợp cả 3 phương pháp phẫu thuật cắt bỏ (một phần hoặc toàn bộ thanh quản) kết hợp nạo vét hạch, xạ trị và hóa trị để điều trị cho người bệnh.'
+
+MERGE (o1:disease {id: 'ung_thư_thanh_quản_disease'})
+MERGE (o2:treatment {id: 'xạ_trị_treatment'})
+MERGE (o1)-[r119:treatedBy]->(o2)
+SET r119.text = 'Nếu ung thư ở giai đoạn nặng, bác sĩ có thể kết hợp cả 3 phương pháp phẫu thuật cắt bỏ (một phần hoặc toàn bộ thanh quản) kết hợp nạo vét hạch, xạ trị và hóa trị để điều trị cho người bệnh.'
+
+MERGE (o1:disease {id: 'ung_thư_thanh_quản_disease'})
+MERGE (o2:treatment {id: 'hóa_trị_treatment'})
+MERGE (o1)-[r120:treatedBy]->(o2)
+SET r120.text = 'Nếu ung thư ở giai đoạn nặng, bác sĩ có thể kết hợp cả 3 phương pháp phẫu thuật cắt bỏ (một phần hoặc toàn bộ thanh quản) kết hợp nạo vét hạch, xạ trị và hóa trị để điều trị cho người bệnh.'
+
+MERGE (o1:treatment {id: 'cắt_bỏ_thanh_quản_treatment'})
+MERGE (o2:treatment {id: 'lắp_van_thanh_âm_khí_thực_quản_treatment'})
+MERGE (o1)-[r121:treatedBy]->(o2)
+SET r121.text = 'Trường hợp phải cắt bỏ thanh quản, để giúp bệnh nhân phục hồi giọng nói, bác sĩ có thể tiến hành lắp van thanh âm khí thực quản, tập giọng nói thực quản hoặc lắp thiết bị điện vào cổ họng để tạo ra âm thanh.'
+
+MERGE (o1:treatment {id: 'cắt_bỏ_thanh_quản_treatment'})
+MERGE (o2:treatment {id: 'tập_giọng_nói_thực_quản_treatment'})
+MERGE (o1)-[r122:treatedBy]->(o2)
+SET r122.text = 'Trường hợp phải cắt bỏ thanh quản, để giúp bệnh nhân phục hồi giọng nói, bác sĩ có thể tiến hành lắp van thanh âm khí thực quản, tập giọng nói thực quản hoặc lắp thiết bị điện vào cổ họng để tạo ra âm thanh.'
+
+MERGE (o1:lifestyle {id: 'chế_độ_ăn_uống_phù_hợp_lifestyle'})
+MERGE (o2:disease {id: 'người_bệnh_disease'})
+MERGE (o1)-[r123:relatedTo]->(o2)
+SET r123.text = 'Chế độ ăn uống phù hợp có vai trò rất quan trọng đối với người bệnh.'
+
+MERGE (o1:disease {id: 'bệnh_nhân_ung_thư_thanh_quản_disease'})
+MERGE (o2:symptom {id: 'đau_khi_nuốt__ăn_không_ngon_miệng_symptom'})
+MERGE (o1)-[r124:isSymptomOf]->(o2)
+SET r124.text = 'Bệnh nhân ung thư thanh quản thường cảm thấy đau khi nuốt, ăn không ngon miệng do ảnh hưởng của khối u ác tính lẫn tác dụng phụ của các phương pháp điều trị.'
+
+MERGE (o1:cause {id: 'khối_u_ác_tính_cause'})
+MERGE (o2:symptom {id: 'đau_khi_nuốt__ăn_không_ngon_miệng_symptom'})
+MERGE (o1)-[r125:causedBy]->(o2)
+SET r125.text = 'Bệnh nhân ung thư thanh quản thường cảm thấy đau khi nuốt, ăn không ngon miệng do ảnh hưởng của khối u ác tính lẫn tác dụng phụ của các phương pháp điều trị.'
+
+MERGE (o1:cause {id: 'tác_dụng_phụ_của_các_phương_pháp_điều_trị_cause'})
+MERGE (o2:symptom {id: 'đau_khi_nuốt__ăn_không_ngon_miệng_symptom'})
+MERGE (o1)-[r126:causedBy]->(o2)
+SET r126.text = 'Bệnh nhân ung thư thanh quản thường cảm thấy đau khi nuốt, ăn không ngon miệng do ảnh hưởng của khối u ác tính lẫn tác dụng phụ của các phương pháp điều trị.'
+
+MERGE (o1:lifestyle {id: 'chế_độ_ăn_uống_lifestyle'})
+MERGE (o2:disease {id: 'bệnh_nhân_ung_thư_thanh_quản_disease'})
+MERGE (o1)-[r127:treatedBy]->(o2)
+SET r127.text = 'Vì vậy, nguyên tắc xây dựng thực đơn dinh dưỡng cần đảm bảo cung cấp đủ chất dinh dưỡng và năng lượng, ưu tiên chế biến món ăn ở dạng mềm, lỏng như cháo, súp… để bệnh nhân dễ nuốt.'
+
+MERGE (o1:food {id: 'cháo__súp_food'})
+MERGE (o2:disease {id: 'bệnh_nhân_ung_thư_thanh_quản_disease'})
+MERGE (o1)-[r128:treatedBy]->(o2)
+SET r128.text = 'Vì vậy, nguyên tắc xây dựng thực đơn dinh dưỡng cần đảm bảo cung cấp đủ chất dinh dưỡng và năng lượng, ưu tiên chế biến món ăn ở dạng mềm, lỏng như cháo, súp… để bệnh nhân dễ nuốt.'
+
+MERGE (o1:lifestyle {id: 'chia_nhỏ_khẩu_phần_lifestyle'})
+MERGE (o2:disease {id: 'bệnh_nhân_ung_thư_thanh_quản_disease'})
+MERGE (o1)-[r129:treatedBy]->(o2)
+SET r129.text = 'Bên cạnh đó, nên chia nhỏ khẩu phần thành 5 – 6 bữa thay vì 3 bữa chính để hấp thu tốt hơn.'
+
+MERGE (o1:food {id: 'protein_food'})
+MERGE (o2:disease {id: 'bệnh_nhân_ung_thư_thanh_quản_disease'})
+MERGE (o1)-[r130:treatedBy]->(o2)
+SET r130.text = 'Người bệnh ung thư thanh quản nên bổ sung thêm protein vào chế độ ăn hàng ngày'
+
+MERGE (o1:food {id: 'đậu_nành_food'})
+MERGE (o2:disease {id: 'bệnh_nhân_ung_thư_thanh_quản_disease'})
+MERGE (o1)-[r131:treatedBy]->(o2)
+SET r131.text = 'Một số thực phẩm người bệnh ung thư thanh quản nên bổ sung gồm:    Thực phẩm giàu protein: đậu nành, trứng, cá, thịt gia cầm bỏ da, thịt bò thăn, bào ngư…'
+
+MERGE (o1:food {id: 'trứng_food'})
+MERGE (o2:disease {id: 'bệnh_nhân_ung_thư_thanh_quản_disease'})
+MERGE (o1)-[r132:treatedBy]->(o2)
+SET r132.text = 'Một số thực phẩm người bệnh ung thư thanh quản nên bổ sung gồm:    Thực phẩm giàu protein: đậu nành, trứng, cá, thịt gia cầm bỏ da, thịt bò thăn, bào ngư…'
+
+MERGE (o1:food {id: 'cá_food'})
+MERGE (o2:disease {id: 'bệnh_nhân_ung_thư_thanh_quản_disease'})
+MERGE (o1)-[r133:treatedBy]->(o2)
+SET r133.text = 'Một số thực phẩm người bệnh ung thư thanh quản nên bổ sung gồm:    Thực phẩm giàu protein: đậu nành, trứng, cá, thịt gia cầm bỏ da, thịt bò thăn, bào ngư…'
+
+MERGE (o1:food {id: 'thịt_gia_cầm_bỏ_da_food'})
+MERGE (o2:disease {id: 'bệnh_nhân_ung_thư_thanh_quản_disease'})
+MERGE (o1)-[r134:treatedBy]->(o2)
+SET r134.text = 'Một số thực phẩm người bệnh ung thư thanh quản nên bổ sung gồm:    Thực phẩm giàu protein: đậu nành, trứng, cá, thịt gia cầm bỏ da, thịt bò thăn, bào ngư…'
+
+MERGE (o1:food {id: 'thịt_bò_thăn_food'})
+MERGE (o2:disease {id: 'bệnh_nhân_ung_thư_thanh_quản_disease'})
+MERGE (o1)-[r135:treatedBy]->(o2)
+SET r135.text = 'Một số thực phẩm người bệnh ung thư thanh quản nên bổ sung gồm:    Thực phẩm giàu protein: đậu nành, trứng, cá, thịt gia cầm bỏ da, thịt bò thăn, bào ngư…'
+
+MERGE (o1:food {id: 'bào_ngư_food'})
+MERGE (o2:disease {id: 'bệnh_nhân_ung_thư_thanh_quản_disease'})
+MERGE (o1)-[r136:treatedBy]->(o2)
+SET r136.text = 'Một số thực phẩm người bệnh ung thư thanh quản nên bổ sung gồm:    Thực phẩm giàu protein: đậu nành, trứng, cá, thịt gia cầm bỏ da, thịt bò thăn, bào ngư…'
+
+MERGE (o1:food {id: 'bơ_food'})
+MERGE (o2:disease {id: 'bệnh_nhân_ung_thư_thanh_quản_disease'})
+MERGE (o1)-[r137:treatedBy]->(o2)
+SET r137.text = 'Trái cây, rau củ: bơ, chuối, thanh long, bí xanh, bí đỏ, su hào, khoai sọ, khoai lang, rau ngót, rau dền, súp lơ xanh… là nguồn cung cấp vitamin và khoáng chất cần thiết cho cơ thể.'
+
+MERGE (o1:food {id: 'chuối_food'})
+MERGE (o2:disease {id: 'bệnh_nhân_ung_thư_thanh_quản_disease'})
+MERGE (o1)-[r138:treatedBy]->(o2)
+SET r138.text = 'Trái cây, rau củ: bơ, chuối, thanh long, bí xanh, bí đỏ, su hào, khoai sọ, khoai lang, rau ngót, rau dền, súp lơ xanh… là nguồn cung cấp vitamin và khoáng chất cần thiết cho cơ thể.'
+
+MERGE (o1:food {id: 'thanh_long_food'})
+MERGE (o2:disease {id: 'bệnh_nhân_ung_thư_thanh_quản_disease'})
+MERGE (o1)-[r139:treatedBy]->(o2)
+SET r139.text = 'Trái cây, rau củ: bơ, chuối, thanh long, bí xanh, bí đỏ, su hào, khoai sọ, khoai lang, rau ngót, rau dền, súp lơ xanh… là nguồn cung cấp vitamin và khoáng chất cần thiết cho cơ thể.'
+
+MERGE (o1:food {id: 'bí_xanh_food'})
+MERGE (o2:disease {id: 'bệnh_nhân_ung_thư_thanh_quản_disease'})
+MERGE (o1)-[r140:treatedBy]->(o2)
+SET r140.text = 'Trái cây, rau củ: bơ, chuối, thanh long, bí xanh, bí đỏ, su hào, khoai sọ, khoai lang, rau ngót, rau dền, súp lơ xanh… là nguồn cung cấp vitamin và khoáng chất cần thiết cho cơ thể.'
+
+MERGE (o1:food {id: 'bí_đỏ_food'})
+MERGE (o2:disease {id: 'bệnh_nhân_ung_thư_thanh_quản_disease'})
+MERGE (o1)-[r141:treatedBy]->(o2)
+SET r141.text = 'Trái cây, rau củ: bơ, chuối, thanh long, bí xanh, bí đỏ, su hào, khoai sọ, khoai lang, rau ngót, rau dền, súp lơ xanh… là nguồn cung cấp vitamin và khoáng chất cần thiết cho cơ thể.'
+
+MERGE (o1:food {id: 'su_hào_food'})
+MERGE (o2:disease {id: 'bệnh_nhân_ung_thư_thanh_quản_disease'})
+MERGE (o1)-[r142:treatedBy]->(o2)
+SET r142.text = 'Trái cây, rau củ: bơ, chuối, thanh long, bí xanh, bí đỏ, su hào, khoai sọ, khoai lang, rau ngót, rau dền, súp lơ xanh… là nguồn cung cấp vitamin và khoáng chất cần thiết cho cơ thể.'
+
+MERGE (o1:food {id: 'khoai_sọ_food'})
+MERGE (o2:disease {id: 'bệnh_nhân_ung_thư_thanh_quản_disease'})
+MERGE (o1)-[r143:treatedBy]->(o2)
+SET r143.text = 'Trái cây, rau củ: bơ, chuối, thanh long, bí xanh, bí đỏ, su hào, khoai sọ, khoai lang, rau ngót, rau dền, súp lơ xanh… là nguồn cung cấp vitamin và khoáng chất cần thiết cho cơ thể.'
+
+MERGE (o1:food {id: 'khoai_lang_food'})
+MERGE (o2:disease {id: 'bệnh_nhân_ung_thư_thanh_quản_disease'})
+MERGE (o1)-[r144:treatedBy]->(o2)
+SET r144.text = 'Trái cây, rau củ: bơ, chuối, thanh long, bí xanh, bí đỏ, su hào, khoai sọ, khoai lang, rau ngót, rau dền, súp lơ xanh… là nguồn cung cấp vitamin và khoáng chất cần thiết cho cơ thể.'
+
+MERGE (o1:food {id: 'rau_ngót_food'})
+MERGE (o2:disease {id: 'bệnh_nhân_ung_thư_thanh_quản_disease'})
+MERGE (o1)-[r145:treatedBy]->(o2)
+SET r145.text = 'Trái cây, rau củ: bơ, chuối, thanh long, bí xanh, bí đỏ, su hào, khoai sọ, khoai lang, rau ngót, rau dền, súp lơ xanh… là nguồn cung cấp vitamin và khoáng chất cần thiết cho cơ thể.'
+
+MERGE (o1:food {id: 'rau_dền_food'})
+MERGE (o2:disease {id: 'bệnh_nhân_ung_thư_thanh_quản_disease'})
+MERGE (o1)-[r146:treatedBy]->(o2)
+SET r146.text = 'Trái cây, rau củ: bơ, chuối, thanh long, bí xanh, bí đỏ, su hào, khoai sọ, khoai lang, rau ngót, rau dền, súp lơ xanh… là nguồn cung cấp vitamin và khoáng chất cần thiết cho cơ thể.'
+
+MERGE (o1:food {id: 'súp_lơ_xanh_food'})
+MERGE (o2:disease {id: 'bệnh_nhân_ung_thư_thanh_quản_disease'})
+MERGE (o1)-[r147:treatedBy]->(o2)
+SET r147.text = 'Trái cây, rau củ: bơ, chuối, thanh long, bí xanh, bí đỏ, su hào, khoai sọ, khoai lang, rau ngót, rau dền, súp lơ xanh… là nguồn cung cấp vitamin và khoáng chất cần thiết cho cơ thể.'
+
+MERGE (o1:food {id: 'rau_củ_food'})
+MERGE (o2:disease {id: 'bệnh_nhân_ung_thư_thanh_quản_disease'})
+MERGE (o1)-[r148:treatedBy]->(o2)
+SET r148.text = 'Đối với rau củ, người bệnh nên nấu chín trước khi ăn, tốt nhất là chế biến ở dạng súp loãng.'
+
+MERGE (o1:food {id: 'súp_loãng_food'})
+MERGE (o2:disease {id: 'bệnh_nhân_ung_thư_thanh_quản_disease'})
+MERGE (o1)-[r149:treatedBy]->(o2)
+SET r149.text = 'Đối với rau củ, người bệnh nên nấu chín trước khi ăn, tốt nhất là chế biến ở dạng súp loãng.'
+
+MERGE (o1:food {id: 'chất_béo_food'})
+MERGE (o2:disease {id: 'bệnh_nhân_ung_thư_thanh_quản_disease'})
+MERGE (o1)-[r150:treatedBy]->(o2)
+SET r150.text = 'Cách bổ sung chất béo: Bệnh nhân ung thư thanh quản có thể bổ sung chất béo từ nguồn thực vật như dầu thực vật, bơ thực vật, bơ Mayonnaise, kem và kem sữa chua.'
+
+MERGE (o1:food {id: 'dầu_thực_vật_food'})
+MERGE (o2:disease {id: 'bệnh_nhân_ung_thư_thanh_quản_disease'})
+MERGE (o1)-[r151:treatedBy]->(o2)
+SET r151.text = 'Cách bổ sung chất béo: Bệnh nhân ung thư thanh quản có thể bổ sung chất béo từ nguồn thực vật như dầu thực vật, bơ thực vật, bơ Mayonnaise, kem và kem sữa chua.'
+
+MERGE (o1:food {id: 'bơ_thực_vật_food'})
+MERGE (o2:disease {id: 'bệnh_nhân_ung_thư_thanh_quản_disease'})
+MERGE (o1)-[r152:treatedBy]->(o2)
+SET r152.text = 'Cách bổ sung chất béo: Bệnh nhân ung thư thanh quản có thể bổ sung chất béo từ nguồn thực vật như dầu thực vật, bơ thực vật, bơ Mayonnaise, kem và kem sữa chua.'
+
+MERGE (o1:food {id: 'bơ_mayonnaise_food'})
+MERGE (o2:disease {id: 'bệnh_nhân_ung_thư_thanh_quản_disease'})
+MERGE (o1)-[r153:treatedBy]->(o2)
+SET r153.text = 'Cách bổ sung chất béo: Bệnh nhân ung thư thanh quản có thể bổ sung chất béo từ nguồn thực vật như dầu thực vật, bơ thực vật, bơ Mayonnaise, kem và kem sữa chua.'
+
+MERGE (o1:food {id: 'kem_food'})
+MERGE (o2:disease {id: 'bệnh_nhân_ung_thư_thanh_quản_disease'})
+MERGE (o1)-[r154:treatedBy]->(o2)
+SET r154.text = 'Cách bổ sung chất béo: Bệnh nhân ung thư thanh quản có thể bổ sung chất béo từ nguồn thực vật như dầu thực vật, bơ thực vật, bơ Mayonnaise, kem và kem sữa chua.'
+
+MERGE (o1:food {id: 'kem_sữa_chua_food'})
+MERGE (o2:disease {id: 'bệnh_nhân_ung_thư_thanh_quản_disease'})
+MERGE (o1)-[r155:treatedBy]->(o2)
+SET r155.text = 'Cách bổ sung chất béo: Bệnh nhân ung thư thanh quản có thể bổ sung chất béo từ nguồn thực vật như dầu thực vật, bơ thực vật, bơ Mayonnaise, kem và kem sữa chua.'
+
+MERGE (o1:food {id: 'mỡ_động_vật_food'})
+MERGE (o2:disease {id: 'bệnh_nhân_ung_thư_thanh_quản_disease'})
+MERGE (o1)-[r156:aggravatedBy]->(o2)
+SET r156.text = 'Lưu ý không cho bệnh nhân ăn nhiều mỡ động vật.'
+
+MERGE (o1:disease {id: 'bệnh_nhân_ung_thư_thanh_quản_disease'})
+MERGE (o2:symptom {id: 'cảm_giác_khó_chịu_symptom'})
+MERGE (o1)-[r157:aggravatedBy]->(o2)
+SET r157.text = 'Một số loại thực phẩm có thể khiến bệnh nhân ung thư thanh quản tăng cảm giác khó chịu, làm nặng thêm các triệu chứng, gây ảnh hưởng đến sức khỏe và quá trình trị bệnh.'
+
+MERGE (o1:disease {id: 'bệnh_nhân_ung_thư_thanh_quản_disease'})
+MERGE (o2:symptom {id: 'triệu_chứng_symptom'})
+MERGE (o1)-[r158:aggravatedBy]->(o2)
+SET r158.text = 'Một số loại thực phẩm có thể khiến bệnh nhân ung thư thanh quản tăng cảm giác khó chịu, làm nặng thêm các triệu chứng, gây ảnh hưởng đến sức khỏe và quá trình trị bệnh.'
+
+MERGE (o1:disease {id: 'bệnh_nhân_ung_thư_thanh_quản_disease'})
+MERGE (o2:symptom {id: 'sức_khỏe_symptom'})
+MERGE (o1)-[r159:aggravatedBy]->(o2)
+SET r159.text = 'Một số loại thực phẩm có thể khiến bệnh nhân ung thư thanh quản tăng cảm giác khó chịu, làm nặng thêm các triệu chứng, gây ảnh hưởng đến sức khỏe và quá trình trị bệnh.'
+
+MERGE (o1:disease {id: 'bệnh_nhân_ung_thư_thanh_quản_disease'})
+MERGE (o2:treatment {id: 'quá_trình_trị_bệnh_treatment'})
+MERGE (o1)-[r160:aggravatedBy]->(o2)
+SET r160.text = 'Một số loại thực phẩm có thể khiến bệnh nhân ung thư thanh quản tăng cảm giác khó chịu, làm nặng thêm các triệu chứng, gây ảnh hưởng đến sức khỏe và quá trình trị bệnh.'
+
+MERGE (o1:food {id: 'đồ_ăn_cay_nóng_food'})
+MERGE (o2:disease {id: 'bệnh_nhân_ung_thư_thanh_quản_disease'})
+MERGE (o1)-[r161:aggravatedBy]->(o2)
+SET r161.text = 'Người bệnh nên tránh các nhóm thực phẩm sau:  Đồ ăn cay nóng: Tiêu, tỏi, ớt, mù tạt…'
+
+MERGE (o1:food {id: 'tiêu_food'})
+MERGE (o2:disease {id: 'bệnh_nhân_ung_thư_thanh_quản_disease'})
+MERGE (o1)-[r162:aggravatedBy]->(o2)
+SET r162.text = 'Người bệnh nên tránh các nhóm thực phẩm sau:  Đồ ăn cay nóng: Tiêu, tỏi, ớt, mù tạt…'
+
+MERGE (o1:food {id: 'tỏi_food'})
+MERGE (o2:disease {id: 'bệnh_nhân_ung_thư_thanh_quản_disease'})
+MERGE (o1)-[r163:aggravatedBy]->(o2)
+SET r163.text = 'Người bệnh nên tránh các nhóm thực phẩm sau:  Đồ ăn cay nóng: Tiêu, tỏi, ớt, mù tạt…'
+
+MERGE (o1:food {id: 'ớt_food'})
+MERGE (o2:disease {id: 'bệnh_nhân_ung_thư_thanh_quản_disease'})
+MERGE (o1)-[r164:aggravatedBy]->(o2)
+SET r164.text = 'Người bệnh nên tránh các nhóm thực phẩm sau:  Đồ ăn cay nóng: Tiêu, tỏi, ớt, mù tạt…'
+
+MERGE (o1:food {id: 'mù_tạt_food'})
+MERGE (o2:disease {id: 'bệnh_nhân_ung_thư_thanh_quản_disease'})
+MERGE (o1)-[r165:aggravatedBy]->(o2)
+SET r165.text = 'Người bệnh nên tránh các nhóm thực phẩm sau:  Đồ ăn cay nóng: Tiêu, tỏi, ớt, mù tạt…'
+
+MERGE (o1:food {id: 'thực_phẩm_cứng__giòn_food'})
+MERGE (o2:disease {id: 'bệnh_nhân_ung_thư_thanh_quản_disease'})
+MERGE (o1)-[r166:aggravatedBy]->(o2)
+SET r166.text = 'Thực phẩm cứng, giòn: Ngũ cốc giòn, bánh quy giòn, các loại hạt (hạt dưa, hạt hướng dương…)'
+
+MERGE (o1:food {id: 'ngũ_cốc_giòn_food'})
+MERGE (o2:disease {id: 'bệnh_nhân_ung_thư_thanh_quản_disease'})
+MERGE (o1)-[r167:aggravatedBy]->(o2)
+SET r167.text = 'Thực phẩm cứng, giòn: Ngũ cốc giòn, bánh quy giòn, các loại hạt (hạt dưa, hạt hướng dương…)'
+
+MERGE (o1:food {id: 'bánh_quy_giòn_food'})
+MERGE (o2:disease {id: 'bệnh_nhân_ung_thư_thanh_quản_disease'})
+MERGE (o1)-[r168:aggravatedBy]->(o2)
+SET r168.text = 'Thực phẩm cứng, giòn: Ngũ cốc giòn, bánh quy giòn, các loại hạt (hạt dưa, hạt hướng dương…)'
+
+MERGE (o1:food {id: 'các_loại_hạt_food'})
+MERGE (o2:disease {id: 'bệnh_nhân_ung_thư_thanh_quản_disease'})
+MERGE (o1)-[r169:aggravatedBy]->(o2)
+SET r169.text = 'Thực phẩm cứng, giòn: Ngũ cốc giòn, bánh quy giòn, các loại hạt (hạt dưa, hạt hướng dương…)'
+
+MERGE (o1:food {id: 'hạt_dưa_food'})
+MERGE (o2:disease {id: 'bệnh_nhân_ung_thư_thanh_quản_disease'})
+MERGE (o1)-[r170:aggravatedBy]->(o2)
+SET r170.text = 'Thực phẩm cứng, giòn: Ngũ cốc giòn, bánh quy giòn, các loại hạt (hạt dưa, hạt hướng dương…)'
+
+MERGE (o1:food {id: 'hạt_hướng_dương_food'})
+MERGE (o2:disease {id: 'bệnh_nhân_ung_thư_thanh_quản_disease'})
+MERGE (o1)-[r171:aggravatedBy]->(o2)
+SET r171.text = 'Thực phẩm cứng, giòn: Ngũ cốc giòn, bánh quy giòn, các loại hạt (hạt dưa, hạt hướng dương…)'
+
+MERGE (o1:food {id: 'thực_phẩm_chế_biến_sẵn_food'})
+MERGE (o2:disease {id: 'bệnh_nhân_ung_thư_disease'})
+MERGE (o1)-[r172:aggravatedBy]->(o2)
+SET r172.text = 'Thực phẩm chế biến sẵn: Chúng thường chứa chất bảo quản, chất chống thiu, chống mốc, chất tạo màu, tạo mùi tổng hợp, đường hóa học, không hề tốt cho người bệnh ung thư.'
+
+MERGE (o1:food {id: 'chất_bảo_quản_food'})
+MERGE (o2:disease {id: 'bệnh_nhân_ung_thư_disease'})
+MERGE (o1)-[r173:aggravatedBy]->(o2)
+SET r173.text = 'Thực phẩm chế biến sẵn: Chúng thường chứa chất bảo quản, chất chống thiu, chống mốc, chất tạo màu, tạo mùi tổng hợp, đường hóa học, không hề tốt cho người bệnh ung thư.'
+
+MERGE (o1:food {id: 'chất_chống_thiu_food'})
+MERGE (o2:disease {id: 'bệnh_nhân_ung_thư_disease'})
+MERGE (o1)-[r174:aggravatedBy]->(o2)
+SET r174.text = 'Thực phẩm chế biến sẵn: Chúng thường chứa chất bảo quản, chất chống thiu, chống mốc, chất tạo màu, tạo mùi tổng hợp, đường hóa học, không hề tốt cho người bệnh ung thư.'
+
+MERGE (o1:food {id: 'chất_chống_mốc_food'})
+MERGE (o2:disease {id: 'bệnh_nhân_ung_thư_disease'})
+MERGE (o1)-[r175:aggravatedBy]->(o2)
+SET r175.text = 'Thực phẩm chế biến sẵn: Chúng thường chứa chất bảo quản, chất chống thiu, chống mốc, chất tạo màu, tạo mùi tổng hợp, đường hóa học, không hề tốt cho người bệnh ung thư.'
+
+MERGE (o1:food {id: 'chất_tạo_màu_food'})
+MERGE (o2:disease {id: 'bệnh_nhân_ung_thư_disease'})
+MERGE (o1)-[r176:aggravatedBy]->(o2)
+SET r176.text = 'Thực phẩm chế biến sẵn: Chúng thường chứa chất bảo quản, chất chống thiu, chống mốc, chất tạo màu, tạo mùi tổng hợp, đường hóa học, không hề tốt cho người bệnh ung thư.'
+
+MERGE (o1:food {id: 'chất_tạo_mùi_tổng_hợp_food'})
+MERGE (o2:disease {id: 'bệnh_nhân_ung_thư_disease'})
+MERGE (o1)-[r177:aggravatedBy]->(o2)
+SET r177.text = 'Thực phẩm chế biến sẵn: Chúng thường chứa chất bảo quản, chất chống thiu, chống mốc, chất tạo màu, tạo mùi tổng hợp, đường hóa học, không hề tốt cho người bệnh ung thư.'
+
+MERGE (o1:food {id: 'đường_hóa_học_food'})
+MERGE (o2:disease {id: 'bệnh_nhân_ung_thư_disease'})
+MERGE (o1)-[r178:aggravatedBy]->(o2)
+SET r178.text = 'Thực phẩm chế biến sẵn: Chúng thường chứa chất bảo quản, chất chống thiu, chống mốc, chất tạo màu, tạo mùi tổng hợp, đường hóa học, không hề tốt cho người bệnh ung thư.'
+
+MERGE (o1:disease {id: 'ung_thư_thanh_quản_disease'})
+MERGE (o2:lifestyle {id: 'bỏ_hút_thuốc_lá_và_không_sử_dụng_các_sản_phẩm_thuốc_lá_không_khói_khác_hạn_chế_tối_đa_việc_tiêu_thụ_rượu_và_các_thức_uống_chứa_cồn_lifestyle'})
+MERGE (o1)-[r179:preventedBy]->(o2)
+SET r179.text = 'Ung thư thanh quản là bệnh nguy hiểm nhưng có thể phòng ngừa bằng các biện pháp sau:  Bỏ hút thuốc lá và không sử dụng các sản phẩm thuốc lá không khói khác Hạn chế tối đa việc tiêu thụ rượu và các thức uống chứa cồn.'
+
+MERGE (o1:disease {id: 'ung_thư_thanh_quản_disease'})
+MERGE (o2:lifestyle {id: 'không_sử_dụng_rượu_lifestyle'})
+MERGE (o1)-[r180:preventedBy]->(o2)
+SET r180.text = 'Các nghiên cứu đã phát hiện ra rằng nguy cơ phát triển ung thư thanh quản sẽ giảm đáng kể trong vòng 5 đến 10 năm không sử dụng rượu.'
+
+MERGE (o1:disease {id: 'ung_thư_thanh_quản_disease'})
+MERGE (o2:lifestyle {id: 'sử_dụng_thiết_bị_an_toàn_khi_thường_xuyên_phải_tiếp_xúc_với_amiăng_hoặc_các_chất_độc_khác_tại_nơi_làm_việc_lifestyle'})
+MERGE (o1)-[r181:preventedBy]->(o2)
+SET r181.text = 'Sử dụng thiết bị an toàn khi thường xuyên phải tiếp xúc với amiăng hoặc các chất độc khác tại nơi làm việc.'
+
+MERGE (o1:disease {id: 'ung_thư_thanh_quản_disease'})
+MERGE (o2:lifestyle {id: 'chế_độ_ăn_uống_lành_mạnh__hợp_lý_lifestyle'})
+MERGE (o1)-[r182:preventedBy]->(o2)
+SET r182.text = 'Xây dựng chế độ ăn uống lành mạnh, hợp lý.'
+
+MERGE (o1:disease {id: 'ung_thư_thanh_quản_disease'})
+MERGE (o2:food {id: 'chế_độ_ăn_uống_có_nhiều_trái_cây_tươi_và_rau_quả__đặc_biệt_là_cà_chua__trái_cây_họ_cam_quýt_(như_cam__bưởi_và_chanh)__dầu_ô_liu__dầu_cá_food'})
+MERGE (o1)-[r183:preventedBy]->(o2)
+SET r183.text = 'Nghiên cứu cho thấy một chế độ ăn uống có nhiều trái cây tươi và rau quả, đặc biệt là cà chua, trái cây họ cam quýt (như cam, bưởi và chanh), dầu ô liu, dầu cá… có thể làm giảm nguy cơ mắc bệnh ung thư thanh quản.'
+
+MERGE (o1:symptom {id: 'khàn_giọng_hơn_3_tuần__ho_dai_dẳng__nuốt_đau_symptom'})
+MERGE (o2:disease {id: 'ung_thư_thanh_quản_disease'})
+MERGE (o1)-[r184:isSymptomOf]->(o2)
+SET r184.text = 'Người bệnh khi có các biểu hiện bất thường như khàn giọng hơn 3 tuần, ho dai dẳng, nuốt đau… nên đến thăm khám tại các cơ sở y tế chuyên sâu Tai Mũi Họng để được nội soi thanh quản kiểm tra, nội soi hoạt nghiệm thanh quản, thực hiện các xét nghiệm chẩn đoán cần thiết khi nghi ngờ tổn thương ác tính.'
+
+MERGE (o1:test {id: 'nội_soi_thanh_quản_kiểm_tra__nội_soi_hoạt_nghiệm_thanh_quản__thực_hiện_các_xét_nghiệm_chẩn_đoán_cần_thiết_test'})
+MERGE (o2:disease {id: 'ung_thư_thanh_quản_disease'})
+MERGE (o1)-[r185:diagnosedBy]->(o2)
+SET r185.text = 'Người bệnh khi có các biểu hiện bất thường như khàn giọng hơn 3 tuần, ho dai dẳng, nuốt đau… nên đến thăm khám tại các cơ sở y tế chuyên sâu Tai Mũi Họng để được nội soi thanh quản kiểm tra, nội soi hoạt nghiệm thanh quản, thực hiện các xét nghiệm chẩn đoán cần thiết khi nghi ngờ tổn thương ác tính.'
+
+MERGE (o1:test {id: 'nội_soi_hoạt_nghiệm_thanh_quản_test'})
+MERGE (o2:organ {id: 'bệnh_viện_đa_khoa_tâm_anh_tại_tp.hcm_organ'})
+MERGE (o1)-[r186:locatedIn]->(o2)
+SET r186.text = 'Hiện tại, nội soi hoạt nghiệm thanh quản chỉ được thực hiện tại Bệnh viện Đa khoa Tâm Anh tại TP.HCM.'
+
+MERGE (o1:disease {id: 'ung_thư_thanh_quản_disease'})
+MERGE (o2:symptom {id: 'đe_dọa_đến_tính_mạng_người_bệnh_symptom'})
+MERGE (o1)-[r187:relatedTo]->(o2)
+SET r187.text = 'Bệnh ung thư thanh quản là bệnh lý ác tính nguy hiểm và có thể đe dọa đến tính mạng người bệnh.'
+
+MERGE (o1:disease {id: 'ung_thư_thanh_quản_disease'})
+MERGE (o2:treatment {id: 'các_phương_pháp_điều_trị_phù_hợp_treatment'})
+MERGE (o1)-[r188:treatedBy]->(o2)
+SET r188.text = 'Dù vậy, nếu phát hiện ở giai đoạn sớm, bệnh có thể chữa trị khỏi bằng các phương pháp điều trị phù hợp.'
+
+MERGE (o1:disease {id: 'ung_thư_dây_thanh_quản_disease'})
+MERGE (o2:symptom {id: 'giai_đoạn_bệnh__vị_trí_và_kích_thước_khối_u__độ_tuổi__giới_tính_và_sức_khỏe_chung_của_bệnh_nhân_symptom'})
+MERGE (o1)-[r189:relatedTo]->(o2)
+SET r189.text = 'Tiên lượng sống của ung thư dây thanh quản phụ thuộc vào giai đoạn bệnh, vị trí và kích thước khối u, độ tuổi, giới tính và sức khỏe chung của bệnh nhân.'
+
+MERGE (o1:symptom {id: 'tiên_lượng_sống_symptom'})
+MERGE (o2:treatment {id: 'chọn_lựa_phương_pháp_điều_trị_đúng_và_triệt_để_treatment'})
+MERGE (o1)-[r190:relatedTo]->(o2)
+SET r190.text = 'Con số này cũng phụ thuộc vào việc chọn lựa phương pháp điều trị đúng và triệt để.'
+
+MERGE (o1:symptom {id: 'tiên_lượng_sống_symptom'})
+MERGE (o2:disease {id: 'ung_thư_thanh_quản_disease'})
+MERGE (o1)-[r191:relatedTo]->(o2)
+SET r191.text = 'Trung bình, tiên lượng sống sau 5 năm của ung thư thanh quản đạt trên 60%.'
+
+MERGE (o1:symptom {id: 'tiên_lượng_symptom'})
+MERGE (o2:disease {id: 'ung_thư_thứ_hai_disease'})
+MERGE (o1)-[r192:aggravatedBy]->(o2)
+SET r192.text = 'Tiên lượng sẽ xấu hơn khi xuất hiện ung thư thứ hai.'
+
+MERGE (o1:disease {id: 'ung_thư_thanh_quản_disease'})
+MERGE (o2:symptom {id: 'lây_nhiễm_symptom'})
+MERGE (o1)-[r193:relatedTo]->(o2)
+SET r193.text = 'Ung thư thanh quản không có tính lây nhiễm.'
+
+MERGE (o1:disease {id: 'ung_thư_thanh_quản_disease'})
+MERGE (o2:cause {id: 'yếu_tố_gia_đình_cause'})
+MERGE (o1)-[r194:relatedTo]->(o2)
+SET r194.text = 'Nhưng có thể có yếu tố gia đình, nếu có người cùng huyết thống bị ung thư thanh quản, thì bạn nên khám tầm soát ung thư thanh quản theo lịch khám sức khoẻ định kỳ mỗi năm.'
+
+MERGE (o1:organ {id: 'khoa_tai_mũi_họng__bệnh_viện_đa_khoa_tâm_anh_organ'})
+MERGE (o2:disease {id: 'các_bệnh_lý_ung_thư_vùng_tai_mũi_họng_–_thanh_quản__cũng_như_các_bệnh_lý_tai_mũi_họng_khác_như:_poply_dây_thanh_quản__liệt_dây_thanh_quản__hạt_xơ_dây_thanh_quản__viêm_thanh_quản__viêm_họng__viêm_xoang__viêm_mũi_disease'})
+MERGE (o1)-[r195:locatedIn]->(o2)
+SET r195.text = 'Khoa Tai Mũi Họng, Bệnh viện Đa khoa Tâm Anh là đơn vị chuyên thăm khám và chẩn đoán sớm các bệnh lý ung thư vùng Tai Mũi Họng – Thanh Quản, cũng như các bệnh lý tai mũi họng khác như: poply dây thanh quản, liệt dây thanh quản, hạt xơ dây thanh quản, viêm thanh quản, viêm họng, viêm xoang, viêm mũi,..'

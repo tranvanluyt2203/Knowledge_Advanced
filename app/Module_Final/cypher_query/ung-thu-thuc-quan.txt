@@ -1,0 +1,1164 @@
+
+MERGE (o1:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o2:disease {id: 'ung_thư_disease'})
+MERGE (o1)-[r0:isSymptomOf]->(o2)
+SET r0.text = 'Theo Globocan 2020 (cơ sở dữ liệu ung thư của Cơ quan Nghiên cứu Ung thư Quốc tế),
+Ung thư thực quản là bệnh lý ung thư gây tử vong phổ biến thứ 6 trên toàn thế giới và thứ 9 tại Việt Nam.'
+
+MERGE (o1:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o2:organ {id: 'cơ_quan_nghiên_cứu_ung_thư_quốc_tế_organ'})
+MERGE (o1)-[r1:relatedTo]->(o2)
+SET r1.text = 'Theo Globocan 2020 (cơ sở dữ liệu ung thư của Cơ quan Nghiên cứu Ung thư Quốc tế),
+Ung thư thực quản là bệnh lý ung thư gây tử vong phổ biến thứ 6 trên toàn thế giới và thứ 9 tại Việt Nam.'
+
+MERGE (o1:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o2:treatment {id: 'điều_trị_treatment'})
+MERGE (o1)-[r2:treatedBy]->(o2)
+SET r2.text = 'Khả năng điều trị dứt điểm bệnh ung thư thực quản thường thấp, đạt 25% do thường phát hiện bệnh ở giai đoạn muộn, khi ung thư đã di căn đến các bộ phận khác trong cơ thể.'
+
+MERGE (o1:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o2:disease {id: 'di_căn_disease'})
+MERGE (o1)-[r3:relatedTo]->(o2)
+SET r3.text = 'Khả năng điều trị dứt điểm bệnh ung thư thực quản thường thấp, đạt 25% do thường phát hiện bệnh ở giai đoạn muộn, khi ung thư đã di căn đến các bộ phận khác trong cơ thể.'
+
+MERGE (o1:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o2:cause {id: 'yếu_tố_cause'})
+MERGE (o1)-[r4:causedBy]->(o2)
+SET r4.text = 'Vậy nguyên nhân ung thư thực quản bao gồm những yếu tố nào?'
+
+MERGE (o1:organ {id: 'thực_quản_organ'})
+MERGE (o2:organ {id: 'ống_tiêu_hóa_organ'})
+MERGE (o1)-[r5:locatedIn]->(o2)
+SET r5.text = 'Thực quản là một thành phần của ống tiêu hóa (còn gọi là đường tiêu hóa, đường ruột).'
+
+MERGE (o1:organ {id: 'thực_quản_organ'})
+MERGE (o2:organ {id: 'hệ_tiêu_hóa_organ'})
+MERGE (o1)-[r6:locatedIn]->(o2)
+SET r6.text = 'Hệ tiêu hóa bao gồm: miệng, họng, thực quản, dạ dày, ruột non, đại tràng (ruột già), trực tràng và hậu môn.'
+
+MERGE (o1:organ {id: 'miệng_organ'})
+MERGE (o2:organ {id: 'hệ_tiêu_hóa_organ'})
+MERGE (o1)-[r7:locatedIn]->(o2)
+SET r7.text = 'Hệ tiêu hóa bao gồm: miệng, họng, thực quản, dạ dày, ruột non, đại tràng (ruột già), trực tràng và hậu môn.'
+
+MERGE (o1:organ {id: 'họng_organ'})
+MERGE (o2:organ {id: 'hệ_tiêu_hóa_organ'})
+MERGE (o1)-[r8:locatedIn]->(o2)
+SET r8.text = 'Hệ tiêu hóa bao gồm: miệng, họng, thực quản, dạ dày, ruột non, đại tràng (ruột già), trực tràng và hậu môn.'
+
+MERGE (o1:organ {id: 'dạ_dày_organ'})
+MERGE (o2:organ {id: 'hệ_tiêu_hóa_organ'})
+MERGE (o1)-[r9:locatedIn]->(o2)
+SET r9.text = 'Hệ tiêu hóa bao gồm: miệng, họng, thực quản, dạ dày, ruột non, đại tràng (ruột già), trực tràng và hậu môn.'
+
+MERGE (o1:organ {id: 'ruột_non_organ'})
+MERGE (o2:organ {id: 'hệ_tiêu_hóa_organ'})
+MERGE (o1)-[r10:locatedIn]->(o2)
+SET r10.text = 'Hệ tiêu hóa bao gồm: miệng, họng, thực quản, dạ dày, ruột non, đại tràng (ruột già), trực tràng và hậu môn.'
+
+MERGE (o1:organ {id: 'đại_tràng_organ'})
+MERGE (o2:organ {id: 'hệ_tiêu_hóa_organ'})
+MERGE (o1)-[r11:locatedIn]->(o2)
+SET r11.text = 'Hệ tiêu hóa bao gồm: miệng, họng, thực quản, dạ dày, ruột non, đại tràng (ruột già), trực tràng và hậu môn.'
+
+MERGE (o1:organ {id: 'trực_tràng_organ'})
+MERGE (o2:organ {id: 'hệ_tiêu_hóa_organ'})
+MERGE (o1)-[r12:locatedIn]->(o2)
+SET r12.text = 'Hệ tiêu hóa bao gồm: miệng, họng, thực quản, dạ dày, ruột non, đại tràng (ruột già), trực tràng và hậu môn.'
+
+MERGE (o1:organ {id: 'hậu_môn_organ'})
+MERGE (o2:organ {id: 'hệ_tiêu_hóa_organ'})
+MERGE (o1)-[r13:locatedIn]->(o2)
+SET r13.text = 'Hệ tiêu hóa bao gồm: miệng, họng, thực quản, dạ dày, ruột non, đại tràng (ruột già), trực tràng và hậu môn.'
+
+MERGE (o1:organ {id: 'hệ_tiêu_hóa_organ'})
+MERGE (o2:treatment {id: 'tiếp_nhận_treatment'})
+MERGE (o1)-[r14:relatedTo]->(o2)
+SET r14.text = 'Hệ tiêu hóa có vai trò tiếp nhận, vận chuyển và phân hủy thức ăn, hấp thụ chất dinh dưỡng, loại bỏ chất thải ra khỏi cơ thể.'
+
+MERGE (o1:organ {id: 'hệ_tiêu_hóa_organ'})
+MERGE (o2:treatment {id: 'vận_chuyển_treatment'})
+MERGE (o1)-[r15:relatedTo]->(o2)
+SET r15.text = 'Hệ tiêu hóa có vai trò tiếp nhận, vận chuyển và phân hủy thức ăn, hấp thụ chất dinh dưỡng, loại bỏ chất thải ra khỏi cơ thể.'
+
+MERGE (o1:organ {id: 'hệ_tiêu_hóa_organ'})
+MERGE (o2:treatment {id: 'phân_hủy_treatment'})
+MERGE (o1)-[r16:relatedTo]->(o2)
+SET r16.text = 'Hệ tiêu hóa có vai trò tiếp nhận, vận chuyển và phân hủy thức ăn, hấp thụ chất dinh dưỡng, loại bỏ chất thải ra khỏi cơ thể.'
+
+MERGE (o1:organ {id: 'hệ_tiêu_hóa_organ'})
+MERGE (o2:treatment {id: 'hấp_thụ_treatment'})
+MERGE (o1)-[r17:relatedTo]->(o2)
+SET r17.text = 'Hệ tiêu hóa có vai trò tiếp nhận, vận chuyển và phân hủy thức ăn, hấp thụ chất dinh dưỡng, loại bỏ chất thải ra khỏi cơ thể.'
+
+MERGE (o1:organ {id: 'hệ_tiêu_hóa_organ'})
+MERGE (o2:treatment {id: 'loại_bỏ_treatment'})
+MERGE (o1)-[r18:relatedTo]->(o2)
+SET r18.text = 'Hệ tiêu hóa có vai trò tiếp nhận, vận chuyển và phân hủy thức ăn, hấp thụ chất dinh dưỡng, loại bỏ chất thải ra khỏi cơ thể.'
+
+MERGE (o1:organ {id: 'thực_quản_organ'})
+MERGE (o2:treatment {id: 'cấu_trúc_hình_ống_treatment'})
+MERGE (o1)-[r19:relatedTo]->(o2)
+SET r19.text = 'Thực quản có cấu trúc hình ống, dài khoảng 25cm và rộng khoảng 2,5cm.'
+
+MERGE (o1:organ {id: 'thực_quản_organ'})
+MERGE (o2:treatment {id: 'dài_khoảng_25cm_treatment'})
+MERGE (o1)-[r20:relatedTo]->(o2)
+SET r20.text = 'Thực quản có cấu trúc hình ống, dài khoảng 25cm và rộng khoảng 2,5cm.'
+
+MERGE (o1:organ {id: 'thực_quản_organ'})
+MERGE (o2:treatment {id: 'rộng_khoảng_2_5cm_treatment'})
+MERGE (o1)-[r21:relatedTo]->(o2)
+SET r21.text = 'Thực quản có cấu trúc hình ống, dài khoảng 25cm và rộng khoảng 2,5cm.'
+
+MERGE (o1:organ {id: 'thực_quản_organ'})
+MERGE (o2:treatment {id: 'nhu_động_treatment'})
+MERGE (o1)-[r22:relatedTo]->(o2)
+SET r22.text = 'Khi nuốt thức ăn vào từ miệng, nhờ vào sự co bóp của ống tiêu hóa (gọi là nhu động), đồng thời với tác động của trọng lực, thức ăn sẽ di chuyển qua thực quản và đến dạ dày.'
+
+MERGE (o1:organ {id: 'thực_quản_organ'})
+MERGE (o2:treatment {id: 'trọng_lực_treatment'})
+MERGE (o1)-[r23:relatedTo]->(o2)
+SET r23.text = 'Khi nuốt thức ăn vào từ miệng, nhờ vào sự co bóp của ống tiêu hóa (gọi là nhu động), đồng thời với tác động của trọng lực, thức ăn sẽ di chuyển qua thực quản và đến dạ dày.'
+
+MERGE (o1:organ {id: 'thực_quản_organ'})
+MERGE (o2:organ {id: 'khí_quản_organ'})
+MERGE (o1)-[r24:locatedIn]->(o2)
+SET r24.text = 'Thực quản nằm phía sau khí quản (đường thở) và phía trước cột sống.'
+
+MERGE (o1:organ {id: 'thực_quản_organ'})
+MERGE (o2:organ {id: 'cột_sống_organ'})
+MERGE (o1)-[r25:locatedIn]->(o2)
+SET r25.text = 'Thực quản nằm phía sau khí quản (đường thở) và phía trước cột sống.'
+
+MERGE (o1:organ {id: 'thực_quản_organ'})
+MERGE (o2:treatment {id: 'đoạn_trên_treatment'})
+MERGE (o1)-[r26:relatedTo]->(o2)
+SET r26.text = 'Thực quản được chia làm 3 đoạn: trên, giữa, dưới.'
+
+MERGE (o1:organ {id: 'thực_quản_organ'})
+MERGE (o2:treatment {id: 'đoạn_giữa_treatment'})
+MERGE (o1)-[r27:relatedTo]->(o2)
+SET r27.text = 'Thực quản được chia làm 3 đoạn: trên, giữa, dưới.'
+
+MERGE (o1:organ {id: 'thực_quản_organ'})
+MERGE (o2:treatment {id: 'đoạn_dưới_treatment'})
+MERGE (o1)-[r28:relatedTo]->(o2)
+SET r28.text = 'Thực quản được chia làm 3 đoạn: trên, giữa, dưới.'
+
+MERGE (o1:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o2:treatment {id: 'tế_bào_treatment'})
+MERGE (o1)-[r29:relatedTo]->(o2)
+SET r29.text = 'Ung thư thực quản xuất hiện khi các tế bào của thực quản phát triển bất thường không thể kiểm soát, bao gồm 2 dạng chính: (1)
+Ung thư biểu mô tế bào gai (còn gọi là tế bào vảy): thường gặp ở thực quản đoạn trên và giữa, phổ biến ở người châu Á và Đông Âu.'
+
+MERGE (o1:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o2:treatment {id: 'tế_bào_vảy_treatment'})
+MERGE (o1)-[r30:relatedTo]->(o2)
+SET r30.text = 'Ung thư thực quản xuất hiện khi các tế bào của thực quản phát triển bất thường không thể kiểm soát, bao gồm 2 dạng chính: (1)
+Ung thư biểu mô tế bào gai (còn gọi là tế bào vảy): thường gặp ở thực quản đoạn trên và giữa, phổ biến ở người châu Á và Đông Âu.'
+
+MERGE (o1:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o2:treatment {id: 'châu_á_treatment'})
+MERGE (o1)-[r31:relatedTo]->(o2)
+SET r31.text = 'Ung thư thực quản xuất hiện khi các tế bào của thực quản phát triển bất thường không thể kiểm soát, bao gồm 2 dạng chính: (1)
+Ung thư biểu mô tế bào gai (còn gọi là tế bào vảy): thường gặp ở thực quản đoạn trên và giữa, phổ biến ở người châu Á và Đông Âu.'
+
+MERGE (o1:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o2:treatment {id: 'đông_âu_treatment'})
+MERGE (o1)-[r32:relatedTo]->(o2)
+SET r32.text = 'Ung thư thực quản xuất hiện khi các tế bào của thực quản phát triển bất thường không thể kiểm soát, bao gồm 2 dạng chính: (1)
+Ung thư biểu mô tế bào gai (còn gọi là tế bào vảy): thường gặp ở thực quản đoạn trên và giữa, phổ biến ở người châu Á và Đông Âu.'
+
+MERGE (o1:disease {id: 'ung_thư_biểu_mô_tế_bào_tuyến_disease'})
+MERGE (o2:treatment {id: 'bắc_mỹ_treatment'})
+MERGE (o1)-[r33:relatedTo]->(o2)
+SET r33.text = 'Ung thư biểu mô tế bào tuyến: thường gặp ở thực quản đoạn dưới, nhưng cũng có thể gặp ở thực quản đoạn giữa. Dạng biểu mô tế bào tuyến thường gặp ở người Bắc Mỹ và Tây Âu.'
+
+MERGE (o1:disease {id: 'ung_thư_biểu_mô_tế_bào_tuyến_disease'})
+MERGE (o2:treatment {id: 'tây_âu_treatment'})
+MERGE (o1)-[r34:relatedTo]->(o2)
+SET r34.text = 'Ung thư biểu mô tế bào tuyến: thường gặp ở thực quản đoạn dưới, nhưng cũng có thể gặp ở thực quản đoạn giữa. Dạng biểu mô tế bào tuyến thường gặp ở người Bắc Mỹ và Tây Âu.'
+
+MERGE (o1:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o2:disease {id: 'sarcoma_disease'})
+MERGE (o1)-[r35:relatedTo]->(o2)
+SET r35.text = 'Các dạng ung thư thực quản ít gặp hơn bao gồm: sarcoma, lymphoma, ung thư biểu mô tế bào nhỏ, melanoma… Ngoài ra, cũng có thể gặp trường hợp ung thư từ cơ quan khác di căn đến thực quản, chiếm 3% số ca ung thư thực quản được ghi nhận.'
+
+MERGE (o1:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o2:disease {id: 'lymphoma_disease'})
+MERGE (o1)-[r36:relatedTo]->(o2)
+SET r36.text = 'Các dạng ung thư thực quản ít gặp hơn bao gồm: sarcoma, lymphoma, ung thư biểu mô tế bào nhỏ, melanoma… Ngoài ra, cũng có thể gặp trường hợp ung thư từ cơ quan khác di căn đến thực quản, chiếm 3% số ca ung thư thực quản được ghi nhận.'
+
+MERGE (o1:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o2:disease {id: 'ung_thư_biểu_mô_tế_bào_nhỏ_disease'})
+MERGE (o1)-[r37:relatedTo]->(o2)
+SET r37.text = 'Các dạng ung thư thực quản ít gặp hơn bao gồm: sarcoma, lymphoma, ung thư biểu mô tế bào nhỏ, melanoma… Ngoài ra, cũng có thể gặp trường hợp ung thư từ cơ quan khác di căn đến thực quản, chiếm 3% số ca ung thư thực quản được ghi nhận.'
+
+MERGE (o1:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o2:disease {id: 'melanoma_disease'})
+MERGE (o1)-[r38:relatedTo]->(o2)
+SET r38.text = 'Các dạng ung thư thực quản ít gặp hơn bao gồm: sarcoma, lymphoma, ung thư biểu mô tế bào nhỏ, melanoma… Ngoài ra, cũng có thể gặp trường hợp ung thư từ cơ quan khác di căn đến thực quản, chiếm 3% số ca ung thư thực quản được ghi nhận.'
+
+MERGE (o1:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o2:disease {id: 'di_căn_disease'})
+MERGE (o1)-[r39:relatedTo]->(o2)
+SET r39.text = 'Các dạng ung thư thực quản ít gặp hơn bao gồm: sarcoma, lymphoma, ung thư biểu mô tế bào nhỏ, melanoma… Ngoài ra, cũng có thể gặp trường hợp ung thư từ cơ quan khác di căn đến thực quản, chiếm 3% số ca ung thư thực quản được ghi nhận.'
+
+MERGE (o1:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o2:disease {id: 'ung_thư_hắc_tố_da_disease'})
+MERGE (o1)-[r40:relatedTo]->(o2)
+SET r40.text = 'Các ung thư có thể di căn đến thực quản bao gồm ung thư hắc tố da, ung thư vú, ung thư vùng đầu cổ, phổi, dạ dày, gan, thận, tuyến tiền liệt, tinh hoàn, xương…'
+
+MERGE (o1:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o2:disease {id: 'ung_thư_vú_disease'})
+MERGE (o1)-[r41:relatedTo]->(o2)
+SET r41.text = 'Các ung thư có thể di căn đến thực quản bao gồm ung thư hắc tố da, ung thư vú, ung thư vùng đầu cổ, phổi, dạ dày, gan, thận, tuyến tiền liệt, tinh hoàn, xương…'
+
+MERGE (o1:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o2:disease {id: 'ung_thư_vùng_đầu_cổ_disease'})
+MERGE (o1)-[r42:relatedTo]->(o2)
+SET r42.text = 'Các ung thư có thể di căn đến thực quản bao gồm ung thư hắc tố da, ung thư vú, ung thư vùng đầu cổ, phổi, dạ dày, gan, thận, tuyến tiền liệt, tinh hoàn, xương…'
+
+MERGE (o1:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o2:disease {id: 'ung_thư_phổi_disease'})
+MERGE (o1)-[r43:relatedTo]->(o2)
+SET r43.text = 'Các ung thư có thể di căn đến thực quản bao gồm ung thư hắc tố da, ung thư vú, ung thư vùng đầu cổ, phổi, dạ dày, gan, thận, tuyến tiền liệt, tinh hoàn, xương…'
+
+MERGE (o1:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o2:disease {id: 'ung_thư_dạ_dày_disease'})
+MERGE (o1)-[r44:relatedTo]->(o2)
+SET r44.text = 'Các ung thư có thể di căn đến thực quản bao gồm ung thư hắc tố da, ung thư vú, ung thư vùng đầu cổ, phổi, dạ dày, gan, thận, tuyến tiền liệt, tinh hoàn, xương…'
+
+MERGE (o1:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o2:disease {id: 'ung_thư_gan_disease'})
+MERGE (o1)-[r45:relatedTo]->(o2)
+SET r45.text = 'Các ung thư có thể di căn đến thực quản bao gồm ung thư hắc tố da, ung thư vú, ung thư vùng đầu cổ, phổi, dạ dày, gan, thận, tuyến tiền liệt, tinh hoàn, xương…'
+
+MERGE (o1:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o2:disease {id: 'ung_thư_thận_disease'})
+MERGE (o1)-[r46:relatedTo]->(o2)
+SET r46.text = 'Các ung thư có thể di căn đến thực quản bao gồm ung thư hắc tố da, ung thư vú, ung thư vùng đầu cổ, phổi, dạ dày, gan, thận, tuyến tiền liệt, tinh hoàn, xương…'
+
+MERGE (o1:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o2:disease {id: 'ung_thư_tuyến_tiền_liệt_disease'})
+MERGE (o1)-[r47:relatedTo]->(o2)
+SET r47.text = 'Các ung thư có thể di căn đến thực quản bao gồm ung thư hắc tố da, ung thư vú, ung thư vùng đầu cổ, phổi, dạ dày, gan, thận, tuyến tiền liệt, tinh hoàn, xương…'
+
+MERGE (o1:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o2:disease {id: 'ung_thư_tinh_hoàn_disease'})
+MERGE (o1)-[r48:relatedTo]->(o2)
+SET r48.text = 'Các ung thư có thể di căn đến thực quản bao gồm ung thư hắc tố da, ung thư vú, ung thư vùng đầu cổ, phổi, dạ dày, gan, thận, tuyến tiền liệt, tinh hoàn, xương…'
+
+MERGE (o1:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o2:disease {id: 'ung_thư_xương_disease'})
+MERGE (o1)-[r49:relatedTo]->(o2)
+SET r49.text = 'Các ung thư có thể di căn đến thực quản bao gồm ung thư hắc tố da, ung thư vú, ung thư vùng đầu cổ, phổi, dạ dày, gan, thận, tuyến tiền liệt, tinh hoàn, xương…'
+
+MERGE (o1:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o2:cause {id: 'yếu_tố_cause'})
+MERGE (o1)-[r50:causedBy]->(o2)
+SET r50.text = 'Cho đến hiện tại, chưa có yếu tố nào được xác định rõ ràng là nguyên nhân gây ra bệnh ung thư thực quản.'
+
+MERGE (o1:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o2:lifestyle {id: 'thói_quen_uống_rượu__bia_lifestyle'})
+MERGE (o1)-[r51:causedBy]->(o2)
+SET r51.text = 'Bệnh có thể xuất phát từ các yếu tố nguy cơ sau: (2)
+Thói quen uống rượu, bia: Đây là yếu tố hàng đầu tăng nguy cơ mắc ung thư thực quản.'
+
+MERGE (o1:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o2:food {id: 'rượu_mạnh_food'})
+MERGE (o1)-[r52:causedBy]->(o2)
+SET r52.text = 'Người có thói quen sử dụng đồ uống có cồn, đặc biệt là các loại rượu mạnh trong thời gian dài có nguy cơ cao mắc ung thư thực quản.'
+
+MERGE (o1:disease {id: 'ung_thư_disease'})
+MERGE (o2:food {id: 'rượu_bia_food'})
+MERGE (o1)-[r53:causedBy]->(o2)
+SET r53.text = 'Hiệp hội Ung thư lâm sàng Hoa Kỳ (ASCO) đã đưa ra tuyên bố chung về mối liên quan giữa việc uống rượu và nguy cơ ung thư nhằm cảnh báo những hệ quả từ việc sử dụng rượu bia lâu dài.'
+
+MERGE (o1:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o2:lifestyle {id: 'hút_thuốc_lá_lifestyle'})
+MERGE (o1)-[r54:causedBy]->(o2)
+SET r54.text = 'Hút thuốc lá: Cùng thói quen uống rượu bia, hút thuốc lá là nguy cơ gây ung thư thực quản hàng đầu, bao gồm hút thuốc lá chủ động (là người hút trực tiếp) và thụ động (là người tiếp xúc với khói thuốc lá).'
+
+MERGE (o1:lifestyle {id: 'hút_thuốc_lá_lifestyle'})
+MERGE (o2:disease {id: 'ung_thư_vùng_đầu_cổ_disease'})
+MERGE (o1)-[r55:causedBy]->(o2)
+SET r55.text = 'Ngoài ung thư thực quản, hút thuốc lá còn làm tăng nguy cơ mắc các bệnh lý ung thư khác như ung thư vùng đầu cổ, ung thư phổi, ung thư bàng quang…'
+
+MERGE (o1:lifestyle {id: 'hút_thuốc_lá_lifestyle'})
+MERGE (o2:disease {id: 'ung_thư_phổi_disease'})
+MERGE (o1)-[r56:causedBy]->(o2)
+SET r56.text = 'Ngoài ung thư thực quản, hút thuốc lá còn làm tăng nguy cơ mắc các bệnh lý ung thư khác như ung thư vùng đầu cổ, ung thư phổi, ung thư bàng quang…'
+
+MERGE (o1:lifestyle {id: 'hút_thuốc_lá_lifestyle'})
+MERGE (o2:disease {id: 'ung_thư_bàng_quang_disease'})
+MERGE (o1)-[r57:causedBy]->(o2)
+SET r57.text = 'Ngoài ung thư thực quản, hút thuốc lá còn làm tăng nguy cơ mắc các bệnh lý ung thư khác như ung thư vùng đầu cổ, ung thư phổi, ung thư bàng quang…'
+
+MERGE (o1:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o2:lifestyle {id: 'chế_độ_ăn_uống_lifestyle'})
+MERGE (o1)-[r58:causedBy]->(o2)
+SET r58.text = 'Chế độ ăn uống:
+Sử dụng các loại thực phẩm chứa Nitrosamin như dưa muối, cá muối, thực phẩm đóng hộp… hoặc một số loại nấm sản sinh độc tố như Aflatoxin.'
+
+MERGE (o1:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o2:food {id: 'nitrosamin_food'})
+MERGE (o1)-[r59:causedBy]->(o2)
+SET r59.text = 'Sử dụng các loại thực phẩm chứa Nitrosamin như dưa muối, cá muối, thực phẩm đóng hộp… hoặc một số loại nấm sản sinh độc tố như Aflatoxin.'
+
+MERGE (o1:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o2:food {id: 'dưa_muối_food'})
+MERGE (o1)-[r60:causedBy]->(o2)
+SET r60.text = 'Sử dụng các loại thực phẩm chứa Nitrosamin như dưa muối, cá muối, thực phẩm đóng hộp… hoặc một số loại nấm sản sinh độc tố như Aflatoxin.'
+
+MERGE (o1:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o2:food {id: 'cá_muối_food'})
+MERGE (o1)-[r61:causedBy]->(o2)
+SET r61.text = 'Sử dụng các loại thực phẩm chứa Nitrosamin như dưa muối, cá muối, thực phẩm đóng hộp… hoặc một số loại nấm sản sinh độc tố như Aflatoxin.'
+
+MERGE (o1:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o2:food {id: 'thực_phẩm_đóng_hộp_food'})
+MERGE (o1)-[r62:causedBy]->(o2)
+SET r62.text = 'Sử dụng các loại thực phẩm chứa Nitrosamin như dưa muối, cá muối, thực phẩm đóng hộp… hoặc một số loại nấm sản sinh độc tố như Aflatoxin.'
+
+MERGE (o1:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o2:food {id: 'aflatoxin_food'})
+MERGE (o1)-[r63:causedBy]->(o2)
+SET r63.text = 'Sử dụng các loại thực phẩm chứa Nitrosamin như dưa muối, cá muối, thực phẩm đóng hộp… hoặc một số loại nấm sản sinh độc tố như Aflatoxin.'
+
+MERGE (o1:disease {id: 'ung_thư_biểu_mô_tế_bào_gai_thực_quản_disease'})
+MERGE (o2:cause {id: 'nhiệt_độ_cao_cause'})
+MERGE (o1)-[r64:causedBy]->(o2)
+SET r64.text = 'Đồ uống và thực phẩm chế biến ở nhiệt độ cao: sử dụng thực phẩm chế biến ở nhiệt độ cao trên 60 độ C có thể làm tăng nguy cơ mắc ung thư biểu mô tế bào gai thực quản do nhiệt độ cao gây tổn thương niêm mạc thực quản.'
+
+MERGE (o1:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o2:lifestyle {id: 'nhai_trầu_cau_lifestyle'})
+MERGE (o1)-[r65:causedBy]->(o2)
+SET r65.text = 'Thói quen nhai trầu, cau: thói quen nhai trầu cau ở một số nước châu Á, trong đó có Việt Nam có thể gây ung thư thực quản.'
+
+MERGE (o1:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o2:lifestyle {id: 'chế_độ_ăn_thiếu_chất_xơ_lifestyle'})
+MERGE (o1)-[r66:causedBy]->(o2)
+SET r66.text = 'Chế độ ăn thiếu chất xơ, vitamin từ các loại rau, trái cây.'
+
+MERGE (o1:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o2:food {id: 'rau_food'})
+MERGE (o1)-[r67:causedBy]->(o2)
+SET r67.text = 'Chế độ ăn thiếu chất xơ, vitamin từ các loại rau, trái cây.'
+
+MERGE (o1:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o2:food {id: 'trái_cây_food'})
+MERGE (o1)-[r68:causedBy]->(o2)
+SET r68.text = 'Chế độ ăn thiếu chất xơ, vitamin từ các loại rau, trái cây.'
+
+MERGE (o1:disease {id: 'ung_thư_biểu_mô_tế_bào_tuyến_thực_quản_disease'})
+MERGE (o2:disease {id: 'bệnh_trào_ngược_dạ_dày_-_thực_quản_disease'})
+MERGE (o1)-[r69:causedBy]->(o2)
+SET r69.text = 'Bệnh trào ngược dạ dày - thực quản (GERD - Gastrointestinal reflux disease) và bệnh Barrett thực quản:  Người mắc GERD có nguy cơ mắc ung thư biểu mô tế bào tuyến thực quản cao hơn người bình thường.'
+
+MERGE (o1:disease {id: 'bệnh_barrett_thực_quản_disease'})
+MERGE (o2:disease {id: 'trào_ngược_acid_dạ_dày_disease'})
+MERGE (o1)-[r70:causedBy]->(o2)
+SET r70.text = 'Đồng thời, nếu tình trạng trào ngược acid dạ dày vào thực quản kéo dài, niêm mạc thực quản sẽ bị tổn thương và các tế bào niêm mạc thực quản sẽ thay đổi tính chất cấu trúc (gọi là chuyển sản), dẫn đến bệnh Barrett thực quản.'
+
+MERGE (o1:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o2:disease {id: 'bệnh_barrett_thực_quản_disease'})
+MERGE (o1)-[r71:causedBy]->(o2)
+SET r71.text = 'Người mắc bệnh Barrett thực quản có nguy cơ ung thư thực quản tăng gấp 30 lần so với dân số chung.'
+
+MERGE (o1:disease {id: 'ung_thư_biểu_mô_tế_bào_tuyến_thực_quản_disease'})
+MERGE (o2:lifestyle {id: 'béo_phì_lifestyle'})
+MERGE (o1)-[r72:causedBy]->(o2)
+SET r72.text = 'Béo phì: Tình trạng
+thừa cân, béo phì có thể gây tăng nguy cơ ung thư biểu mô tế bào tuyến thực quản.'
+
+MERGE (o1:disease {id: 'bệnh_trào_ngược_dạ_dày_-_thực_quản_disease'})
+MERGE (o2:lifestyle {id: 'béo_phì_lifestyle'})
+MERGE (o1)-[r73:causedBy]->(o2)
+SET r73.text = 'Điều này có thể do người béo phì thường có khả năng mắc bệnh trào ngược dạ dày - thực quản cao hơn.'
+
+MERGE (o1:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o2:cause {id: 'hpv_cause'})
+MERGE (o1)-[r74:causedBy]->(o2)
+SET r74.text = 'Nhiễm virus u nhú gai ở người (HPV - Human Papilloma Virus): HPV là một loại virus có thể gây ra những thay đổi mô ở thanh quản, hốc miệng, bộ phận sinh dục… Cơ chế của HPV dẫn đến ung thư thực quản vẫn chưa được hiểu rõ, có thể liên quan đến bệnh Barrett thực quản.'
+
+MERGE (o1:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o2:disease {id: 'bệnh_barrett_thực_quản_disease'})
+MERGE (o1)-[r75:relatedTo]->(o2)
+SET r75.text = 'Nhiễm virus u nhú gai ở người (HPV - Human Papilloma Virus): HPV là một loại virus có thể gây ra những thay đổi mô ở thanh quản, hốc miệng, bộ phận sinh dục… Cơ chế của HPV dẫn đến ung thư thực quản vẫn chưa được hiểu rõ, có thể liên quan đến bệnh Barrett thực quản.'
+
+MERGE (o1:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o2:treatment {id: 'cắt_dạ_dày_treatment'})
+MERGE (o1)-[r76:causedBy]->(o2)
+SET r76.text = 'Tiền căn cắt dạ dày: Bệnh nhân đã cắt một phần dạ dày có nguy cơ mắc ung thư thực quản.'
+
+MERGE (o1:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o2:disease {id: 'viêm_teo_dạ_dày_disease'})
+MERGE (o1)-[r77:causedBy]->(o2)
+SET r77.text = 'Viêm teo dạ dày: Tình trạng này làm tăng nguy cơ mắc ung thư thực quản gấp 2 lần.'
+
+MERGE (o1:disease {id: 'ung_thư_thực_quản_giai_đoạn_đầu_disease'})
+MERGE (o2:symptom {id: 'không_có_triệu_chứng_symptom'})
+MERGE (o1)-[r78:isSymptomOf]->(o2)
+SET r78.text = 'Ung thư thực quản giai đoạn đầu thường không có triệu chứng.'
+
+MERGE (o1:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o2:disease {id: 'giai_đoạn_tiến_xa_hoặc_giai_đoạn_cuối_disease'})
+MERGE (o1)-[r79:isSymptomOf]->(o2)
+SET r79.text = 'Vì vậy, phần lớn người bệnh được phát hiện khi ung thư đã đến giai đoạn tiến xa hoặc giai đoạn cuối, với những dấu hiệu ung thư thực quản có thể gặp bao gồm:'
+
+MERGE (o1:symptom {id: 'nuốt_nghẹn__nuốt_khó_symptom'})
+MERGE (o2:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o1)-[r80:isSymptomOf]->(o2)
+SET r80.text = 'Nuốt nghẹn, nuốt khó: Triệu chứng thường gặp nhất, xuất hiện ở 95% trường hợp ung thư thực quản.'
+
+MERGE (o1:symptom {id: 'nuốt_thức_ăn_symptom'})
+MERGE (o2:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o1)-[r81:isSymptomOf]->(o2)
+SET r81.text = 'Người bệnh gặp khó khăn khi nuốt thức ăn, cảm thấy vướng ở thực quản.'
+
+MERGE (o1:symptom {id: 'nghẹn_symptom'})
+MERGE (o2:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o1)-[r82:isSymptomOf]->(o2)
+SET r82.text = 'Ban đầu, người bệnh có thể bị nghẹn bởi thức ăn dạng đặc như thịt, cá, nhưng lâu dần cảm giác nghẹn xảy ra ngay cả khi người bệnh dùng thức ăn dạng lỏng như canh, súp, cháo, thậm chí không uống được nước, sữa.'
+
+MERGE (o1:symptom {id: 'sụt_cân_symptom'})
+MERGE (o2:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o1)-[r83:isSymptomOf]->(o2)
+SET r83.text = 'Sụt cân: Xuất hiện trong 40-50% trường hợp ung thư thực quản.'
+
+MERGE (o1:symptom {id: 'sụt_cân_symptom'})
+MERGE (o2:symptom {id: 'nuốt_khó_symptom'})
+MERGE (o1)-[r84:relatedTo]->(o2)
+SET r84.text = 'Sụt cân thường đi kèm với nuốt khó, tình trạng có thể được cải thiện nếu giải quyết được vấn đề ăn uống, dinh dưỡng cho người bệnh.'
+
+MERGE (o1:symptom {id: 'đau_tức_vùng_ngực_sau_xương_ức_khi_nuốt_symptom'})
+MERGE (o2:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o1)-[r85:isSymptomOf]->(o2)
+SET r85.text = 'Đau tức vùng ngực sau xương ức khi nuốt: Xuất hiện ở khoảng 20% trường hợp ung thư thực quản, xảy ra khi người bệnh ăn thức ăn đặc, thậm chí uống nước.'
+
+MERGE (o1:symptom {id: 'đau_tức_vùng_ngực_khi_nuốt_symptom'})
+MERGE (o2:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o1)-[r86:isSymptomOf]->(o2)
+SET r86.text = 'Đau tức vùng ngực khi nuốt có thể là dấu hiệu của bệnh ung thư thực quản.'
+
+MERGE (o1:symptom {id: 'nôn_symptom'})
+MERGE (o2:symptom {id: 'nuốt_nghẹn_symptom'})
+MERGE (o1)-[r87:isSymptomOf]->(o2)
+SET r87.text = 'Nôn: Người bệnh sẽ có biểu hiện nôn khi có tình trạng nuốt nghẹn rõ rệt.'
+
+MERGE (o1:symptom {id: 'nôn_symptom'})
+MERGE (o2:lifestyle {id: 'bữa_ăn_lifestyle'})
+MERGE (o1)-[r88:relatedTo]->(o2)
+SET r88.text = 'Nôn có thể xảy ra trong bữa ăn, hoặc ngay sau khi ăn.'
+
+MERGE (o1:symptom {id: 'chất_nôn_symptom'})
+MERGE (o2:food {id: 'thức_ăn_food'})
+MERGE (o1)-[r89:relatedTo]->(o2)
+SET r89.text = 'Chất nôn là thức ăn vừa mới ăn vào không có lẫn dịch vị (dịch tiêu hóa của dạ dày), có thể lẫn ít máu trong chất nôn.'
+
+MERGE (o1:symptom {id: 'tăng_tiết_nước_bọt_symptom'})
+MERGE (o2:symptom {id: 'nuốt_nghẹn_symptom'})
+MERGE (o1)-[r90:isSymptomOf]->(o2)
+SET r90.text = 'Tăng tiết nước bọt: Do nuốt nghẹn, nước bọt không thể theo thức ăn xuống dạ dày, người bệnh sẽ cảm giác có nhiều nước bọt trong họng và phải nhổ nước bọt thường xuyên hơn.'
+
+MERGE (o1:disease {id: 'ung_thư_xâm_lấn_khí_quản_disease'})
+MERGE (o2:organ {id: 'khí_quản_organ'})
+MERGE (o1)-[r91:affects]->(o2)
+SET r91.text = 'Các triệu chứng khác cũng có thể gặp khi khối u đã xâm lấn các cơ quan khác như: Ung thư xâm lấn khí quản gây rò khí - thực quản, ho, khó thở; ung thư xâm lấn thần kinh quặt ngược thanh quản gây khàn tiếng; ung thư xâm lấn hoặc di căn xa đến các vị trí khác (phổi, xương, gan, hạch ổ bụng…) gây tràn dịch màng phổi, màng ngoài tim, đau ngực, đau bụng, đau xương…'
+
+MERGE (o1:disease {id: 'ung_thư_xâm_lấn_khí_quản_disease'})
+MERGE (o2:symptom {id: 'rò_khí_-_thực_quản_symptom'})
+MERGE (o1)-[r92:isSymptomOf]->(o2)
+SET r92.text = 'Các triệu chứng khác cũng có thể gặp khi khối u đã xâm lấn các cơ quan khác như: Ung thư xâm lấn khí quản gây rò khí - thực quản, ho, khó thở; ung thư xâm lấn thần kinh quặt ngược thanh quản gây khàn tiếng; ung thư xâm lấn hoặc di căn xa đến các vị trí khác (phổi, xương, gan, hạch ổ bụng…) gây tràn dịch màng phổi, màng ngoài tim, đau ngực, đau bụng, đau xương…'
+
+MERGE (o1:disease {id: 'ung_thư_xâm_lấn_khí_quản_disease'})
+MERGE (o2:symptom {id: 'ho_symptom'})
+MERGE (o1)-[r93:isSymptomOf]->(o2)
+SET r93.text = 'Các triệu chứng khác cũng có thể gặp khi khối u đã xâm lấn các cơ quan khác như: Ung thư xâm lấn khí quản gây rò khí - thực quản, ho, khó thở; ung thư xâm lấn thần kinh quặt ngược thanh quản gây khàn tiếng; ung thư xâm lấn hoặc di căn xa đến các vị trí khác (phổi, xương, gan, hạch ổ bụng…) gây tràn dịch màng phổi, màng ngoài tim, đau ngực, đau bụng, đau xương…'
+
+MERGE (o1:disease {id: 'ung_thư_xâm_lấn_khí_quản_disease'})
+MERGE (o2:symptom {id: 'khó_thở_symptom'})
+MERGE (o1)-[r94:isSymptomOf]->(o2)
+SET r94.text = 'Các triệu chứng khác cũng có thể gặp khi khối u đã xâm lấn các cơ quan khác như: Ung thư xâm lấn khí quản gây rò khí - thực quản, ho, khó thở; ung thư xâm lấn thần kinh quặt ngược thanh quản gây khàn tiếng; ung thư xâm lấn hoặc di căn xa đến các vị trí khác (phổi, xương, gan, hạch ổ bụng…) gây tràn dịch màng phổi, màng ngoài tim, đau ngực, đau bụng, đau xương…'
+
+MERGE (o1:disease {id: 'ung_thư_xâm_lấn_thần_kinh_quặt_ngược_thanh_quản_disease'})
+MERGE (o2:organ {id: 'thần_kinh_quặt_ngược_thanh_quản_organ'})
+MERGE (o1)-[r95:affects]->(o2)
+SET r95.text = 'Các triệu chứng khác cũng có thể gặp khi khối u đã xâm lấn các cơ quan khác như: Ung thư xâm lấn khí quản gây rò khí - thực quản, ho, khó thở; ung thư xâm lấn thần kinh quặt ngược thanh quản gây khàn tiếng; ung thư xâm lấn hoặc di căn xa đến các vị trí khác (phổi, xương, gan, hạch ổ bụng…) gây tràn dịch màng phổi, màng ngoài tim, đau ngực, đau bụng, đau xương…'
+
+MERGE (o1:disease {id: 'ung_thư_xâm_lấn_thần_kinh_quặt_ngược_thanh_quản_disease'})
+MERGE (o2:symptom {id: 'khàn_tiếng_symptom'})
+MERGE (o1)-[r96:isSymptomOf]->(o2)
+SET r96.text = 'Các triệu chứng khác cũng có thể gặp khi khối u đã xâm lấn các cơ quan khác như: Ung thư xâm lấn khí quản gây rò khí - thực quản, ho, khó thở; ung thư xâm lấn thần kinh quặt ngược thanh quản gây khàn tiếng; ung thư xâm lấn hoặc di căn xa đến các vị trí khác (phổi, xương, gan, hạch ổ bụng…) gây tràn dịch màng phổi, màng ngoài tim, đau ngực, đau bụng, đau xương…'
+
+MERGE (o1:disease {id: 'ung_thư_xâm_lấn_hoặc_di_căn_xa_disease'})
+MERGE (o2:organ {id: 'phổi_organ'})
+MERGE (o1)-[r97:affects]->(o2)
+SET r97.text = 'Các triệu chứng khác cũng có thể gặp khi khối u đã xâm lấn các cơ quan khác như: Ung thư xâm lấn khí quản gây rò khí - thực quản, ho, khó thở; ung thư xâm lấn thần kinh quặt ngược thanh quản gây khàn tiếng; ung thư xâm lấn hoặc di căn xa đến các vị trí khác (phổi, xương, gan, hạch ổ bụng…) gây tràn dịch màng phổi, màng ngoài tim, đau ngực, đau bụng, đau xương…'
+
+MERGE (o1:disease {id: 'ung_thư_xâm_lấn_hoặc_di_căn_xa_disease'})
+MERGE (o2:organ {id: 'xương_organ'})
+MERGE (o1)-[r98:affects]->(o2)
+SET r98.text = 'Các triệu chứng khác cũng có thể gặp khi khối u đã xâm lấn các cơ quan khác như: Ung thư xâm lấn khí quản gây rò khí - thực quản, ho, khó thở; ung thư xâm lấn thần kinh quặt ngược thanh quản gây khàn tiếng; ung thư xâm lấn hoặc di căn xa đến các vị trí khác (phổi, xương, gan, hạch ổ bụng…) gây tràn dịch màng phổi, màng ngoài tim, đau ngực, đau bụng, đau xương…'
+
+MERGE (o1:disease {id: 'ung_thư_xâm_lấn_hoặc_di_căn_xa_disease'})
+MERGE (o2:organ {id: 'gan_organ'})
+MERGE (o1)-[r99:affects]->(o2)
+SET r99.text = 'Các triệu chứng khác cũng có thể gặp khi khối u đã xâm lấn các cơ quan khác như: Ung thư xâm lấn khí quản gây rò khí - thực quản, ho, khó thở; ung thư xâm lấn thần kinh quặt ngược thanh quản gây khàn tiếng; ung thư xâm lấn hoặc di căn xa đến các vị trí khác (phổi, xương, gan, hạch ổ bụng…) gây tràn dịch màng phổi, màng ngoài tim, đau ngực, đau bụng, đau xương…'
+
+MERGE (o1:disease {id: 'ung_thư_xâm_lấn_hoặc_di_căn_xa_disease'})
+MERGE (o2:organ {id: 'hạch_ổ_bụng_organ'})
+MERGE (o1)-[r100:affects]->(o2)
+SET r100.text = 'Các triệu chứng khác cũng có thể gặp khi khối u đã xâm lấn các cơ quan khác như: Ung thư xâm lấn khí quản gây rò khí - thực quản, ho, khó thở; ung thư xâm lấn thần kinh quặt ngược thanh quản gây khàn tiếng; ung thư xâm lấn hoặc di căn xa đến các vị trí khác (phổi, xương, gan, hạch ổ bụng…) gây tràn dịch màng phổi, màng ngoài tim, đau ngực, đau bụng, đau xương…'
+
+MERGE (o1:disease {id: 'ung_thư_xâm_lấn_hoặc_di_căn_xa_disease'})
+MERGE (o2:symptom {id: 'tràn_dịch_màng_phổi_symptom'})
+MERGE (o1)-[r101:isSymptomOf]->(o2)
+SET r101.text = 'Các triệu chứng khác cũng có thể gặp khi khối u đã xâm lấn các cơ quan khác như: Ung thư xâm lấn khí quản gây rò khí - thực quản, ho, khó thở; ung thư xâm lấn thần kinh quặt ngược thanh quản gây khàn tiếng; ung thư xâm lấn hoặc di căn xa đến các vị trí khác (phổi, xương, gan, hạch ổ bụng…) gây tràn dịch màng phổi, màng ngoài tim, đau ngực, đau bụng, đau xương…'
+
+MERGE (o1:disease {id: 'ung_thư_xâm_lấn_hoặc_di_căn_xa_disease'})
+MERGE (o2:symptom {id: 'tràn_dịch_màng_ngoài_tim_symptom'})
+MERGE (o1)-[r102:isSymptomOf]->(o2)
+SET r102.text = 'Các triệu chứng khác cũng có thể gặp khi khối u đã xâm lấn các cơ quan khác như: Ung thư xâm lấn khí quản gây rò khí - thực quản, ho, khó thở; ung thư xâm lấn thần kinh quặt ngược thanh quản gây khàn tiếng; ung thư xâm lấn hoặc di căn xa đến các vị trí khác (phổi, xương, gan, hạch ổ bụng…) gây tràn dịch màng phổi, màng ngoài tim, đau ngực, đau bụng, đau xương…'
+
+MERGE (o1:disease {id: 'ung_thư_xâm_lấn_hoặc_di_căn_xa_disease'})
+MERGE (o2:symptom {id: 'đau_ngực_symptom'})
+MERGE (o1)-[r103:isSymptomOf]->(o2)
+SET r103.text = 'Các triệu chứng khác cũng có thể gặp khi khối u đã xâm lấn các cơ quan khác như: Ung thư xâm lấn khí quản gây rò khí - thực quản, ho, khó thở; ung thư xâm lấn thần kinh quặt ngược thanh quản gây khàn tiếng; ung thư xâm lấn hoặc di căn xa đến các vị trí khác (phổi, xương, gan, hạch ổ bụng…) gây tràn dịch màng phổi, màng ngoài tim, đau ngực, đau bụng, đau xương…'
+
+MERGE (o1:disease {id: 'ung_thư_xâm_lấn_hoặc_di_căn_xa_disease'})
+MERGE (o2:symptom {id: 'đau_bụng_symptom'})
+MERGE (o1)-[r104:isSymptomOf]->(o2)
+SET r104.text = 'Các triệu chứng khác cũng có thể gặp khi khối u đã xâm lấn các cơ quan khác như: Ung thư xâm lấn khí quản gây rò khí - thực quản, ho, khó thở; ung thư xâm lấn thần kinh quặt ngược thanh quản gây khàn tiếng; ung thư xâm lấn hoặc di căn xa đến các vị trí khác (phổi, xương, gan, hạch ổ bụng…) gây tràn dịch màng phổi, màng ngoài tim, đau ngực, đau bụng, đau xương…'
+
+MERGE (o1:disease {id: 'ung_thư_xâm_lấn_hoặc_di_căn_xa_disease'})
+MERGE (o2:symptom {id: 'đau_xương_symptom'})
+MERGE (o1)-[r105:isSymptomOf]->(o2)
+SET r105.text = 'Các triệu chứng khác cũng có thể gặp khi khối u đã xâm lấn các cơ quan khác như: Ung thư xâm lấn khí quản gây rò khí - thực quản, ho, khó thở; ung thư xâm lấn thần kinh quặt ngược thanh quản gây khàn tiếng; ung thư xâm lấn hoặc di căn xa đến các vị trí khác (phổi, xương, gan, hạch ổ bụng…) gây tràn dịch màng phổi, màng ngoài tim, đau ngực, đau bụng, đau xương…'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:organ {id: 'niêm_mạc_thực_quản_organ'})
+MERGE (o1)-[r106:locatedIn]->(o2)
+SET r106.text = 'Hình ảnh khối u xuất hiện trên niêm mạc thực quản.'
+
+MERGE (o1:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o2:test {id: 'hệ_thống_phân_loại_của_ủy_ban_liên_hợp_ung_thư_hoa_kỳ_năm_2017_(ajcc:_american_joint_committee_on_cancer)_test'})
+MERGE (o1)-[r107:diagnosedBy]->(o2)
+SET r107.text = 'Theo hệ thống phân loại của Ủy ban Liên hợp Ung thư Hoa Kỳ năm 2017 (AJCC: American Joint Committee on Cancer), ung thư thực quản được phân giai đoạn dựa trên 3 yếu tố sau:'
+
+MERGE (o1:test {id: 't_(tumor_-_khối_u)_test'})
+MERGE (o2:disease {id: 'mức_độ_xâm_lấn_của_khối_u_disease'})
+MERGE (o1)-[r108:relatedTo]->(o2)
+SET r108.text = 'T (Tumor - Khối u): Tùy thuộc mức độ xâm lấn của khối u, T sẽ được xếp giai đoạn như sau:'
+
+MERGE (o1:test {id: 'tx_test'})
+MERGE (o2:disease {id: 'khối_u_thực_quản_disease'})
+MERGE (o1)-[r109:relatedTo]->(o2)
+SET r109.text = 'TX: Không đánh giá được khối u thực quản.'
+
+MERGE (o1:test {id: 't0_test'})
+MERGE (o2:disease {id: 'khối_u_thực_quản_disease'})
+MERGE (o1)-[r110:relatedTo]->(o2)
+SET r110.text = 'T0: Không ghi nhận được khối u thực quản.'
+
+MERGE (o1:test {id: 'tis_test'})
+MERGE (o2:disease {id: 'loạn_sản_mức_độ_nặng_disease'})
+MERGE (o1)-[r111:relatedTo]->(o2)
+SET r111.text = 'Tis: Loạn sản mức độ nặng, tế bào ung thư còn khu trú trong lớp biểu mô, chưa xâm lấn đến lớp màng đáy.'
+
+MERGE (o1:test {id: 'tis_test'})
+MERGE (o2:disease {id: 'tế_bào_ung_thư_disease'})
+MERGE (o1)-[r112:relatedTo]->(o2)
+SET r112.text = 'Tis: Loạn sản mức độ nặng, tế bào ung thư còn khu trú trong lớp biểu mô, chưa xâm lấn đến lớp màng đáy.'
+
+MERGE (o1:test {id: 'tis_test'})
+MERGE (o2:organ {id: 'lớp_biểu_mô_organ'})
+MERGE (o1)-[r113:relatedTo]->(o2)
+SET r113.text = 'Tis: Loạn sản mức độ nặng, tế bào ung thư còn khu trú trong lớp biểu mô, chưa xâm lấn đến lớp màng đáy.'
+
+MERGE (o1:test {id: 'tis_test'})
+MERGE (o2:organ {id: 'lớp_màng_đáy_organ'})
+MERGE (o1)-[r114:relatedTo]->(o2)
+SET r114.text = 'Tis: Loạn sản mức độ nặng, tế bào ung thư còn khu trú trong lớp biểu mô, chưa xâm lấn đến lớp màng đáy.'
+
+MERGE (o1:test {id: 't1_test'})
+MERGE (o2:disease {id: 'ung_thư_disease'})
+MERGE (o1)-[r115:relatedTo]->(o2)
+SET r115.text = 'T1: Ung thư xâm lấn đến lớp màng đáy, cơ niêm, lớp dưới niêm mạc.'
+
+MERGE (o1:test {id: 't1_test'})
+MERGE (o2:organ {id: 'lớp_màng_đáy_organ'})
+MERGE (o1)-[r116:relatedTo]->(o2)
+SET r116.text = 'T1: Ung thư xâm lấn đến lớp màng đáy, cơ niêm, lớp dưới niêm mạc.'
+
+MERGE (o1:test {id: 't1_test'})
+MERGE (o2:organ {id: 'cơ_niêm_organ'})
+MERGE (o1)-[r117:relatedTo]->(o2)
+SET r117.text = 'T1: Ung thư xâm lấn đến lớp màng đáy, cơ niêm, lớp dưới niêm mạc.'
+
+MERGE (o1:test {id: 't1_test'})
+MERGE (o2:organ {id: 'lớp_dưới_niêm_mạc_organ'})
+MERGE (o1)-[r118:relatedTo]->(o2)
+SET r118.text = 'T1: Ung thư xâm lấn đến lớp màng đáy, cơ niêm, lớp dưới niêm mạc.'
+
+MERGE (o1:test {id: 't2_test'})
+MERGE (o2:disease {id: 'ung_thư_disease'})
+MERGE (o1)-[r119:relatedTo]->(o2)
+SET r119.text = 'T2: Ung thư xâm lấn đến lớp cơ.'
+
+MERGE (o1:test {id: 't2_test'})
+MERGE (o2:organ {id: 'lớp_cơ_organ'})
+MERGE (o1)-[r120:relatedTo]->(o2)
+SET r120.text = 'T2: Ung thư xâm lấn đến lớp cơ.'
+
+MERGE (o1:test {id: 't3_test'})
+MERGE (o2:disease {id: 'ung_thư_disease'})
+MERGE (o1)-[r121:relatedTo]->(o2)
+SET r121.text = 'T3: Ung thư xâm lấn đến lớp vỏ (lớp ngoài cùng của thực quản).'
+
+MERGE (o1:test {id: 't3_test'})
+MERGE (o2:organ {id: 'lớp_vỏ_organ'})
+MERGE (o1)-[r122:relatedTo]->(o2)
+SET r122.text = 'T3: Ung thư xâm lấn đến lớp vỏ (lớp ngoài cùng của thực quản).'
+
+MERGE (o1:test {id: 't3_test'})
+MERGE (o2:organ {id: 'thực_quản_organ'})
+MERGE (o1)-[r123:relatedTo]->(o2)
+SET r123.text = 'T3: Ung thư xâm lấn đến lớp vỏ (lớp ngoài cùng của thực quản).'
+
+MERGE (o1:test {id: 't4_test'})
+MERGE (o2:disease {id: 'ung_thư_disease'})
+MERGE (o1)-[r124:relatedTo]->(o2)
+SET r124.text = 'T4: Ung thư xâm lấn các cơ quan lân cận, bao gồm màng phổi, màng ngoài tim, tĩnh mạch đơn, cơ hoành, phúc mạc (bụng), động mạch chủ, cột sống, đường thở.'
+
+MERGE (o1:test {id: 't4_test'})
+MERGE (o2:organ {id: 'màng_phổi_organ'})
+MERGE (o1)-[r125:relatedTo]->(o2)
+SET r125.text = 'T4: Ung thư xâm lấn các cơ quan lân cận, bao gồm màng phổi, màng ngoài tim, tĩnh mạch đơn, cơ hoành, phúc mạc (bụng), động mạch chủ, cột sống, đường thở.'
+
+MERGE (o1:test {id: 't4_test'})
+MERGE (o2:organ {id: 'màng_ngoài_tim_organ'})
+MERGE (o1)-[r126:relatedTo]->(o2)
+SET r126.text = 'T4: Ung thư xâm lấn các cơ quan lân cận, bao gồm màng phổi, màng ngoài tim, tĩnh mạch đơn, cơ hoành, phúc mạc (bụng), động mạch chủ, cột sống, đường thở.'
+
+MERGE (o1:test {id: 't4_test'})
+MERGE (o2:organ {id: 'tĩnh_mạch_đơn_organ'})
+MERGE (o1)-[r127:relatedTo]->(o2)
+SET r127.text = 'T4: Ung thư xâm lấn các cơ quan lân cận, bao gồm màng phổi, màng ngoài tim, tĩnh mạch đơn, cơ hoành, phúc mạc (bụng), động mạch chủ, cột sống, đường thở.'
+
+MERGE (o1:test {id: 't4_test'})
+MERGE (o2:organ {id: 'cơ_hoành_organ'})
+MERGE (o1)-[r128:relatedTo]->(o2)
+SET r128.text = 'T4: Ung thư xâm lấn các cơ quan lân cận, bao gồm màng phổi, màng ngoài tim, tĩnh mạch đơn, cơ hoành, phúc mạc (bụng), động mạch chủ, cột sống, đường thở.'
+
+MERGE (o1:test {id: 't4_test'})
+MERGE (o2:organ {id: 'phúc_mạc_organ'})
+MERGE (o1)-[r129:relatedTo]->(o2)
+SET r129.text = 'T4: Ung thư xâm lấn các cơ quan lân cận, bao gồm màng phổi, màng ngoài tim, tĩnh mạch đơn, cơ hoành, phúc mạc (bụng), động mạch chủ, cột sống, đường thở.'
+
+MERGE (o1:test {id: 't4_test'})
+MERGE (o2:organ {id: 'động_mạch_chủ_organ'})
+MERGE (o1)-[r130:relatedTo]->(o2)
+SET r130.text = 'T4: Ung thư xâm lấn các cơ quan lân cận, bao gồm màng phổi, màng ngoài tim, tĩnh mạch đơn, cơ hoành, phúc mạc (bụng), động mạch chủ, cột sống, đường thở.'
+
+MERGE (o1:test {id: 't4_test'})
+MERGE (o2:organ {id: 'cột_sống_organ'})
+MERGE (o1)-[r131:relatedTo]->(o2)
+SET r131.text = 'T4: Ung thư xâm lấn các cơ quan lân cận, bao gồm màng phổi, màng ngoài tim, tĩnh mạch đơn, cơ hoành, phúc mạc (bụng), động mạch chủ, cột sống, đường thở.'
+
+MERGE (o1:test {id: 't4_test'})
+MERGE (o2:organ {id: 'đường_thở_organ'})
+MERGE (o1)-[r132:relatedTo]->(o2)
+SET r132.text = 'T4: Ung thư xâm lấn các cơ quan lân cận, bao gồm màng phổi, màng ngoài tim, tĩnh mạch đơn, cơ hoành, phúc mạc (bụng), động mạch chủ, cột sống, đường thở.'
+
+MERGE (o1:test {id: 'n_(node_-_di_căn_hạch_bạch_huyết)_test'})
+MERGE (o2:disease {id: 'di_căn_hạch_vùng_disease'})
+MERGE (o1)-[r133:relatedTo]->(o2)
+SET r133.text = 'N (Node - Di căn hạch bạch huyết): Số lượng hạch bạch huyết lân cận di căn (còn gọi là di căn hạch vùng)'
+
+MERGE (o1:test {id: 'n0_test'})
+MERGE (o2:disease {id: 'di_căn_hạch_vùng_disease'})
+MERGE (o1)-[r134:relatedTo]->(o2)
+SET r134.text = 'N0: Không di căn hạch vùng.'
+
+MERGE (o1:test {id: 'n1_test'})
+MERGE (o2:disease {id: 'di_căn_hạch_vùng_disease'})
+MERGE (o1)-[r135:relatedTo]->(o2)
+SET r135.text = 'N1: Di căn 1-2 hạch vùng.'
+
+MERGE (o1:test {id: 'n2_test'})
+MERGE (o2:disease {id: 'di_căn_hạch_vùng_disease'})
+MERGE (o1)-[r136:relatedTo]->(o2)
+SET r136.text = 'N2: Di căn 3-6 hạch vùng.'
+
+MERGE (o1:test {id: 'n3_test'})
+MERGE (o2:disease {id: 'di_căn_hạch_vùng_disease'})
+MERGE (o1)-[r137:relatedTo]->(o2)
+SET r137.text = 'N3: Di căn ≥ 7 hạch vùng.'
+
+MERGE (o1:test {id: 'm_(metastasis_-_di_căn_xa)_test'})
+MERGE (o2:disease {id: 'di_căn_xa_disease'})
+MERGE (o1)-[r138:relatedTo]->(o2)
+SET r138.text = 'M (Metastasis - Di căn xa): Tình trạng di căn xa tới các cơ quan khác trong cơ thể như phổi, gan, não, xương… hoặc di căn đến các hạch không phải hạch vùng.'
+
+MERGE (o1:test {id: 'm_(metastasis_-_di_căn_xa)_test'})
+MERGE (o2:organ {id: 'phổi_organ'})
+MERGE (o1)-[r139:relatedTo]->(o2)
+SET r139.text = 'M (Metastasis - Di căn xa): Tình trạng di căn xa tới các cơ quan khác trong cơ thể như phổi, gan, não, xương… hoặc di căn đến các hạch không phải hạch vùng.'
+
+MERGE (o1:test {id: 'm_(metastasis_-_di_căn_xa)_test'})
+MERGE (o2:organ {id: 'gan_organ'})
+MERGE (o1)-[r140:relatedTo]->(o2)
+SET r140.text = 'M (Metastasis - Di căn xa): Tình trạng di căn xa tới các cơ quan khác trong cơ thể như phổi, gan, não, xương… hoặc di căn đến các hạch không phải hạch vùng.'
+
+MERGE (o1:test {id: 'm_(metastasis_-_di_căn_xa)_test'})
+MERGE (o2:organ {id: 'não_organ'})
+MERGE (o1)-[r141:relatedTo]->(o2)
+SET r141.text = 'M (Metastasis - Di căn xa): Tình trạng di căn xa tới các cơ quan khác trong cơ thể như phổi, gan, não, xương… hoặc di căn đến các hạch không phải hạch vùng.'
+
+MERGE (o1:test {id: 'm_(metastasis_-_di_căn_xa)_test'})
+MERGE (o2:organ {id: 'xương_organ'})
+MERGE (o1)-[r142:relatedTo]->(o2)
+SET r142.text = 'M (Metastasis - Di căn xa): Tình trạng di căn xa tới các cơ quan khác trong cơ thể như phổi, gan, não, xương… hoặc di căn đến các hạch không phải hạch vùng.'
+
+MERGE (o1:test {id: 'm0_test'})
+MERGE (o2:disease {id: 'di_căn_xa_disease'})
+MERGE (o1)-[r143:relatedTo]->(o2)
+SET r143.text = 'M0: Chưa di căn xa.'
+
+MERGE (o1:test {id: 'm1_test'})
+MERGE (o2:disease {id: 'di_căn_xa_disease'})
+MERGE (o1)-[r144:relatedTo]->(o2)
+SET r144.text = 'M1: Di căn xa.'
+
+MERGE (o1:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o2:test {id: '3_yếu_tố_t__n__m_test'})
+MERGE (o1)-[r145:diagnosedBy]->(o2)
+SET r145.text = 'Dựa trên 3 yếu tố T, N, M, ung thư thực quản được phân giai đoạn như sau:'
+
+MERGE (o1:disease {id: 'giai_đoạn_0_disease'})
+MERGE (o2:test {id: 'tis_test'})
+MERGE (o1)-[r146:relatedTo]->(o2)
+SET r146.text = 'Giai đoạn 0: Tis, N0, M0.'
+
+MERGE (o1:disease {id: 'giai_đoạn_0_disease'})
+MERGE (o2:test {id: 'n0_test'})
+MERGE (o1)-[r147:relatedTo]->(o2)
+SET r147.text = 'Giai đoạn 0: Tis, N0, M0.'
+
+MERGE (o1:disease {id: 'giai_đoạn_0_disease'})
+MERGE (o2:test {id: 'm0_test'})
+MERGE (o1)-[r148:relatedTo]->(o2)
+SET r148.text = 'Giai đoạn 0: Tis, N0, M0.'
+
+MERGE (o1:disease {id: 'giai_đoạn_i_disease'})
+MERGE (o2:test {id: 't1_test'})
+MERGE (o1)-[r149:relatedTo]->(o2)
+SET r149.text = 'Giai đoạn I: T1, N0-1, M0.'
+
+MERGE (o1:disease {id: 'giai_đoạn_i_disease'})
+MERGE (o2:test {id: 'n0-1_test'})
+MERGE (o1)-[r150:relatedTo]->(o2)
+SET r150.text = 'Giai đoạn I: T1, N0-1, M0.'
+
+MERGE (o1:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o2:symptom {id: 'tiến_triển_nhanh_symptom'})
+MERGE (o1)-[r151:isSymptomOf]->(o2)
+SET r151.text = 'Ung thư thực quản có tiên lượng khá xấu do bệnh tiến triển nhanh, điều trị khó khăn vì người bệnh thường đến khám và phát hiện bệnh khi tình trạng ung thư đã lan rộng (chỉ 25% trường hợp phát hiện bệnh ở giai đoạn sớm).'
+
+MERGE (o1:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o2:symptom {id: 'điều_trị_khó_khăn_symptom'})
+MERGE (o1)-[r152:isSymptomOf]->(o2)
+SET r152.text = 'Ung thư thực quản có tiên lượng khá xấu do bệnh tiến triển nhanh, điều trị khó khăn vì người bệnh thường đến khám và phát hiện bệnh khi tình trạng ung thư đã lan rộng (chỉ 25% trường hợp phát hiện bệnh ở giai đoạn sớm).'
+
+MERGE (o1:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o2:symptom {id: 'ung_thư_đã_lan_rộng_symptom'})
+MERGE (o1)-[r153:isSymptomOf]->(o2)
+SET r153.text = 'Ung thư thực quản có tiên lượng khá xấu do bệnh tiến triển nhanh, điều trị khó khăn vì người bệnh thường đến khám và phát hiện bệnh khi tình trạng ung thư đã lan rộng (chỉ 25% trường hợp phát hiện bệnh ở giai đoạn sớm).'
+
+MERGE (o1:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o2:test {id: 'khám_test'})
+MERGE (o1)-[r154:diagnosedBy]->(o2)
+SET r154.text = 'Ung thư thực quản có tiên lượng khá xấu do bệnh tiến triển nhanh, điều trị khó khăn vì người bệnh thường đến khám và phát hiện bệnh khi tình trạng ung thư đã lan rộng (chỉ 25% trường hợp phát hiện bệnh ở giai đoạn sớm).'
+
+MERGE (o1:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o2:test {id: 'phát_hiện_bệnh_test'})
+MERGE (o1)-[r155:diagnosedBy]->(o2)
+SET r155.text = 'Ung thư thực quản có tiên lượng khá xấu do bệnh tiến triển nhanh, điều trị khó khăn vì người bệnh thường đến khám và phát hiện bệnh khi tình trạng ung thư đã lan rộng (chỉ 25% trường hợp phát hiện bệnh ở giai đoạn sớm).'
+
+MERGE (o1:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o2:treatment {id: 'chữa_khỏi_bệnh_treatment'})
+MERGE (o1)-[r156:treatedBy]->(o2)
+SET r156.text = 'Mặc dù vậy, nếu phát hiện ung thư thực quản ở giai đoạn sớm, người bệnh vẫn có thể được chữa khỏi bệnh.'
+
+MERGE (o1:disease {id: 'giai_đoạn_ung_thư_disease'})
+MERGE (o2:disease {id: 'tiên_lượng_ung_thư_thực_quản_disease'})
+MERGE (o1)-[r157:affects]->(o2)
+SET r157.text = 'Giai đoạn ung thư là yếu tố ảnh hưởng lớn nhất đến tiên lượng ung thư thực quản.'
+
+MERGE (o1:disease {id: 'ung_thư_disease'})
+MERGE (o2:symptom {id: 'tiên_lượng_sống_sau_5_năm_symptom'})
+MERGE (o1)-[r158:isSymptomOf]->(o2)
+SET r158.text = 'Tùy theo giai đoạn bệnh, người bệnh ung thư thực quản sẽ có tiên lượng sống sau 5 năm như sau:
+Ung thư còn giới hạn trong lớp niêm mạc: 80%
+Ung thư lan đến lớp dưới niêm mạc: <50%
+Ung thư lan đến lớp cơ niêm: <20%
+Ung thư lan sang cấu trúc lân cận: 7%
+Ung thư di căn xa đến các cơ quan khác: <3%'
+
+MERGE (o1:disease {id: 'ung_thư_disease'})
+MERGE (o2:symptom {id: 'giới_hạn_trong_lớp_niêm_mạc_symptom'})
+MERGE (o1)-[r159:isSymptomOf]->(o2)
+SET r159.text = 'Tùy theo giai đoạn bệnh, người bệnh ung thư thực quản sẽ có tiên lượng sống sau 5 năm như sau:
+Ung thư còn giới hạn trong lớp niêm mạc: 80%
+Ung thư lan đến lớp dưới niêm mạc: <50%
+Ung thư lan đến lớp cơ niêm: <20%
+Ung thư lan sang cấu trúc lân cận: 7%
+Ung thư di căn xa đến các cơ quan khác: <3%'
+
+MERGE (o1:disease {id: 'ung_thư_disease'})
+MERGE (o2:symptom {id: 'lan_đến_lớp_dưới_niêm_mạc_symptom'})
+MERGE (o1)-[r160:isSymptomOf]->(o2)
+SET r160.text = 'Tùy theo giai đoạn bệnh, người bệnh ung thư thực quản sẽ có tiên lượng sống sau 5 năm như sau:
+Ung thư còn giới hạn trong lớp niêm mạc: 80%
+Ung thư lan đến lớp dưới niêm mạc: <50%
+Ung thư lan đến lớp cơ niêm: <20%
+Ung thư lan sang cấu trúc lân cận: 7%
+Ung thư di căn xa đến các cơ quan khác: <3%'
+
+MERGE (o1:disease {id: 'ung_thư_disease'})
+MERGE (o2:symptom {id: 'lan_đến_lớp_cơ_niêm_symptom'})
+MERGE (o1)-[r161:isSymptomOf]->(o2)
+SET r161.text = 'Tùy theo giai đoạn bệnh, người bệnh ung thư thực quản sẽ có tiên lượng sống sau 5 năm như sau:
+Ung thư còn giới hạn trong lớp niêm mạc: 80%
+Ung thư lan đến lớp dưới niêm mạc: <50%
+Ung thư lan đến lớp cơ niêm: <20%
+Ung thư lan sang cấu trúc lân cận: 7%
+Ung thư di căn xa đến các cơ quan khác: <3%'
+
+MERGE (o1:disease {id: 'ung_thư_disease'})
+MERGE (o2:symptom {id: 'lan_sang_cấu_trúc_lân_cận_symptom'})
+MERGE (o1)-[r162:isSymptomOf]->(o2)
+SET r162.text = 'Tùy theo giai đoạn bệnh, người bệnh ung thư thực quản sẽ có tiên lượng sống sau 5 năm như sau:
+Ung thư còn giới hạn trong lớp niêm mạc: 80%
+Ung thư lan đến lớp dưới niêm mạc: <50%
+Ung thư lan đến lớp cơ niêm: <20%
+Ung thư lan sang cấu trúc lân cận: 7%
+Ung thư di căn xa đến các cơ quan khác: <3%'
+
+MERGE (o1:disease {id: 'ung_thư_disease'})
+MERGE (o2:symptom {id: 'di_căn_xa_đến_các_cơ_quan_khác_symptom'})
+MERGE (o1)-[r163:isSymptomOf]->(o2)
+SET r163.text = 'Tùy theo giai đoạn bệnh, người bệnh ung thư thực quản sẽ có tiên lượng sống sau 5 năm như sau:
+Ung thư còn giới hạn trong lớp niêm mạc: 80%
+Ung thư lan đến lớp dưới niêm mạc: <50%
+Ung thư lan đến lớp cơ niêm: <20%
+Ung thư lan sang cấu trúc lân cận: 7%
+Ung thư di căn xa đến các cơ quan khác: <3%'
+
+MERGE (o1:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o2:symptom {id: 'giai_đoạn_muộn_symptom'})
+MERGE (o1)-[r164:isSymptomOf]->(o2)
+SET r164.text = 'Khoảng 50% người bệnh được chẩn đoán ung thư thực quản ở giai đoạn muộn, khiến việc điều trị trở nên khó khăn và tốn kém, đồng thời ảnh hưởng đến tiên lượng sống của người bệnh.'
+
+MERGE (o1:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o2:symptom {id: 'điều_trị_khó_khăn_symptom'})
+MERGE (o1)-[r165:isSymptomOf]->(o2)
+SET r165.text = 'Khoảng 50% người bệnh được chẩn đoán ung thư thực quản ở giai đoạn muộn, khiến việc điều trị trở nên khó khăn và tốn kém, đồng thời ảnh hưởng đến tiên lượng sống của người bệnh.'
+
+MERGE (o1:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o2:symptom {id: 'tốn_kém_symptom'})
+MERGE (o1)-[r166:isSymptomOf]->(o2)
+SET r166.text = 'Khoảng 50% người bệnh được chẩn đoán ung thư thực quản ở giai đoạn muộn, khiến việc điều trị trở nên khó khăn và tốn kém, đồng thời ảnh hưởng đến tiên lượng sống của người bệnh.'
+
+MERGE (o1:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o2:symptom {id: 'ảnh_hưởng_đến_tiên_lượng_sống_symptom'})
+MERGE (o1)-[r167:isSymptomOf]->(o2)
+SET r167.text = 'Khoảng 50% người bệnh được chẩn đoán ung thư thực quản ở giai đoạn muộn, khiến việc điều trị trở nên khó khăn và tốn kém, đồng thời ảnh hưởng đến tiên lượng sống của người bệnh.'
+
+MERGE (o1:lifestyle {id: 'kiểm_tra_sức_khỏe_định_kỳ_lifestyle'})
+MERGE (o2:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o1)-[r168:preventedBy]->(o2)
+SET r168.text = 'Vì vậy, cần kiểm tra sức khỏe định kỳ 6 tháng/lần hoặc đi khám bệnh sớm khi có những dấu hiệu bất thường.'
+
+MERGE (o1:lifestyle {id: 'khám_bệnh_sớm_lifestyle'})
+MERGE (o2:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o1)-[r169:preventedBy]->(o2)
+SET r169.text = 'Vì vậy, cần kiểm tra sức khỏe định kỳ 6 tháng/lần hoặc đi khám bệnh sớm khi có những dấu hiệu bất thường.'
+
+MERGE (o1:test {id: 'chẩn_đoán_test'})
+MERGE (o2:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o1)-[r170:diagnosedBy]->(o2)
+SET r170.text = 'Điều này giúp chẩn đoán khi bệnh còn ở giai đoạn sớm, nâng cao hiệu quả của điều trị, cải thiện tiên lượng sống cho người bệnh.'
+
+MERGE (o1:treatment {id: 'điều_trị_treatment'})
+MERGE (o2:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o1)-[r171:treatedBy]->(o2)
+SET r171.text = 'Điều này giúp chẩn đoán khi bệnh còn ở giai đoạn sớm, nâng cao hiệu quả của điều trị, cải thiện tiên lượng sống cho người bệnh.'
+
+MERGE (o1:symptom {id: 'tiên_lượng_sống_symptom'})
+MERGE (o2:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o1)-[r172:isSymptomOf]->(o2)
+SET r172.text = 'Điều này giúp chẩn đoán khi bệnh còn ở giai đoạn sớm, nâng cao hiệu quả của điều trị, cải thiện tiên lượng sống cho người bệnh.'
+
+MERGE (o1:test {id: 'nội_soi_thực_quản_test'})
+MERGE (o2:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o1)-[r173:diagnosedBy]->(o2)
+SET r173.text = 'Nội soi thực quản:'
+
+MERGE (o1:test {id: 'nội_soi_tiêu_hóa_trên_test'})
+MERGE (o2:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o1)-[r174:diagnosedBy]->(o2)
+SET r174.text = 'Nội soi tiêu hóa trên (bao gồm thực quản, dạ dày, tá tràng) thường được chỉ định khi người bệnh có những dấu hiệu nuốt khó, nuốt đau, hoặc khi phát hiện những tổn thương nghi ngờ di căn mà chưa xác định nguồn gốc ung thư bằng các xét nghiệm khác (như CT-scan, MRI…).'
+
+MERGE (o1:symptom {id: 'nuốt_khó_symptom'})
+MERGE (o2:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o1)-[r175:isSymptomOf]->(o2)
+SET r175.text = 'Nội soi tiêu hóa trên (bao gồm thực quản, dạ dày, tá tràng) thường được chỉ định khi người bệnh có những dấu hiệu nuốt khó, nuốt đau, hoặc khi phát hiện những tổn thương nghi ngờ di căn mà chưa xác định nguồn gốc ung thư bằng các xét nghiệm khác (như CT-scan, MRI…).'
+
+MERGE (o1:symptom {id: 'nuốt_đau_symptom'})
+MERGE (o2:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o1)-[r176:isSymptomOf]->(o2)
+SET r176.text = 'Nội soi tiêu hóa trên (bao gồm thực quản, dạ dày, tá tràng) thường được chỉ định khi người bệnh có những dấu hiệu nuốt khó, nuốt đau, hoặc khi phát hiện những tổn thương nghi ngờ di căn mà chưa xác định nguồn gốc ung thư bằng các xét nghiệm khác (như CT-scan, MRI…).'
+
+MERGE (o1:symptom {id: 'tổn_thương_nghi_ngờ_di_căn_symptom'})
+MERGE (o2:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o1)-[r177:isSymptomOf]->(o2)
+SET r177.text = 'Nội soi tiêu hóa trên (bao gồm thực quản, dạ dày, tá tràng) thường được chỉ định khi người bệnh có những dấu hiệu nuốt khó, nuốt đau, hoặc khi phát hiện những tổn thương nghi ngờ di căn mà chưa xác định nguồn gốc ung thư bằng các xét nghiệm khác (như CT-scan, MRI…).'
+
+MERGE (o1:test {id: 'ct-scan_test'})
+MERGE (o2:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o1)-[r178:diagnosedBy]->(o2)
+SET r178.text = 'Nội soi tiêu hóa trên (bao gồm thực quản, dạ dày, tá tràng) thường được chỉ định khi người bệnh có những dấu hiệu nuốt khó, nuốt đau, hoặc khi phát hiện những tổn thương nghi ngờ di căn mà chưa xác định nguồn gốc ung thư bằng các xét nghiệm khác (như CT-scan, MRI…).'
+
+MERGE (o1:test {id: 'mri_test'})
+MERGE (o2:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o1)-[r179:diagnosedBy]->(o2)
+SET r179.text = 'Nội soi tiêu hóa trên (bao gồm thực quản, dạ dày, tá tràng) thường được chỉ định khi người bệnh có những dấu hiệu nuốt khó, nuốt đau, hoặc khi phát hiện những tổn thương nghi ngờ di căn mà chưa xác định nguồn gốc ung thư bằng các xét nghiệm khác (như CT-scan, MRI…).'
+
+MERGE (o1:test {id: 'nội_soi_test'})
+MERGE (o2:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o1)-[r180:diagnosedBy]->(o2)
+SET r180.text = 'Nội soi giúp xác định vị trí u, mức độ hẹp lòng thực quản, tình trạng loét hoặc sùi trên bề mặt khối u.'
+
+MERGE (o1:symptom {id: 'vị_trí_u_symptom'})
+MERGE (o2:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o1)-[r181:isSymptomOf]->(o2)
+SET r181.text = 'Nội soi giúp xác định vị trí u, mức độ hẹp lòng thực quản, tình trạng loét hoặc sùi trên bề mặt khối u.'
+
+MERGE (o1:symptom {id: 'hẹp_lòng_thực_quản_symptom'})
+MERGE (o2:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o1)-[r182:isSymptomOf]->(o2)
+SET r182.text = 'Nội soi giúp xác định vị trí u, mức độ hẹp lòng thực quản, tình trạng loét hoặc sùi trên bề mặt khối u.'
+
+MERGE (o1:symptom {id: 'loét_symptom'})
+MERGE (o2:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o1)-[r183:isSymptomOf]->(o2)
+SET r183.text = 'Nội soi giúp xác định vị trí u, mức độ hẹp lòng thực quản, tình trạng loét hoặc sùi trên bề mặt khối u.'
+
+MERGE (o1:symptom {id: 'sùi_symptom'})
+MERGE (o2:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o1)-[r184:isSymptomOf]->(o2)
+SET r184.text = 'Nội soi giúp xác định vị trí u, mức độ hẹp lòng thực quản, tình trạng loét hoặc sùi trên bề mặt khối u.'
+
+MERGE (o1:test {id: 'sinh_thiết_test'})
+MERGE (o2:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o1)-[r185:diagnosedBy]->(o2)
+SET r185.text = 'Đồng thời, trong quá trình nội soi thực quản, bác sĩ có thể sinh thiết các tổn thương hoặc khối u nghi ngờ ác tính, từ đó có thể chẩn đoán xác định bản chất tổn thương bằng kết quả giải phẫu bệnh.'
+
+MERGE (o1:test {id: 'nội_soi_thực_quản_test'})
+MERGE (o2:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o1)-[r186:diagnosedBy]->(o2)
+SET r186.text = 'Nội soi thực quản có thể được kết hợp với siêu âm qua đầu dò nội soi (viết tắt là EUS: Endoscopic UltraSonography).'
+
+MERGE (o1:test {id: 'siêu_âm_qua_đầu_dò_nội_soi_test'})
+MERGE (o2:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o1)-[r187:diagnosedBy]->(o2)
+SET r187.text = 'Nội soi thực quản có thể được kết hợp với siêu âm qua đầu dò nội soi (viết tắt là EUS: Endoscopic UltraSonography).'
+
+MERGE (o1:test {id: 'siêu_âm_qua_đầu_dò_nội_soi_test'})
+MERGE (o2:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o1)-[r188:diagnosedBy]->(o2)
+SET r188.text = 'Đây là phương tiện có độ chính xác cao để đánh giá mức độ xâm lấn của khối u thực quản (còn gọi là T).'
+
+MERGE (o1:test {id: 'eus_test'})
+MERGE (o2:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o1)-[r189:diagnosedBy]->(o2)
+SET r189.text = 'Ngoài ra, bác sĩ có thể kết hợp EUS với sinh thiết bằng kim nhỏ (còn gọi là FNA: Fine Needle Aspiration) để sinh thiết các tổn thương hoặc hạch cạnh thực quản.'
+
+MERGE (o1:test {id: 'sinh_thiết_bằng_kim_nhỏ_test'})
+MERGE (o2:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o1)-[r190:diagnosedBy]->(o2)
+SET r190.text = 'Ngoài ra, bác sĩ có thể kết hợp EUS với sinh thiết bằng kim nhỏ (còn gọi là FNA: Fine Needle Aspiration) để sinh thiết các tổn thương hoặc hạch cạnh thực quản.'
+
+MERGE (o1:test {id: 'chụp_cắt_lớp_vi_tính_test'})
+MERGE (o2:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o1)-[r191:diagnosedBy]->(o2)
+SET r191.text = 'Chụp cắt lớp vi tính (CT-scan): Đây là phương pháp thường được sử dụng phổ biến tại Việt Nam nhằm đánh giá giai đoạn ung thư thực quản, nhờ khả năng phát hiện các tổn thương di căn hạch hoặc di căn xa đến các cơ quan khác.'
+
+MERGE (o1:symptom {id: 'di_căn_hạch_symptom'})
+MERGE (o2:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o1)-[r192:isSymptomOf]->(o2)
+SET r192.text = 'Chụp cắt lớp vi tính (CT-scan): Đây là phương pháp thường được sử dụng phổ biến tại Việt Nam nhằm đánh giá giai đoạn ung thư thực quản, nhờ khả năng phát hiện các tổn thương di căn hạch hoặc di căn xa đến các cơ quan khác.'
+
+MERGE (o1:symptom {id: 'di_căn_xa_symptom'})
+MERGE (o2:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o1)-[r193:isSymptomOf]->(o2)
+SET r193.text = 'Chụp cắt lớp vi tính (CT-scan): Đây là phương pháp thường được sử dụng phổ biến tại Việt Nam nhằm đánh giá giai đoạn ung thư thực quản, nhờ khả năng phát hiện các tổn thương di căn hạch hoặc di căn xa đến các cơ quan khác.'
+
+MERGE (o1:test {id: 'ct-scan_test'})
+MERGE (o2:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o1)-[r194:diagnosedBy]->(o2)
+SET r194.text = 'Mặc dù vậy, CT-scan lại có sự hạn chế trong việc đánh giá mức độ xâm lấn tại chỗ của khối u thực quản (còn gọi là xếp giai đoạn theo T: Tumor).'
+
+MERGE (o1:test {id: 'chụp_cắt_lớp_vi_tính_test'})
+MERGE (o2:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o1)-[r195:diagnosedBy]->(o2)
+SET r195.text = 'Tại Bệnh viện Đa khoa Tâm Anh, hệ thống chụp cắt lớp vi tính (CT) hai đầu bóng có khả năng tái tạo lên đến 768 lát cắt.'
+
+MERGE (o1:test {id: 'mri_não_test'})
+MERGE (o2:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o1)-[r196:diagnosedBy]->(o2)
+SET r196.text = 'Trong một số tình huống cụ thể, bác sĩ có thể chỉ định các xét nghiệm khác như MRI não (nghi ngờ di căn não), xạ hình xương (nghi ngờ di căn xương), PET/CT, nội soi ổ bụng, nội soi lồng ngực…'
+
+MERGE (o1:symptom {id: 'di_căn_não_symptom'})
+MERGE (o2:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o1)-[r197:isSymptomOf]->(o2)
+SET r197.text = 'Trong một số tình huống cụ thể, bác sĩ có thể chỉ định các xét nghiệm khác như MRI não (nghi ngờ di căn não), xạ hình xương (nghi ngờ di căn xương), PET/CT, nội soi ổ bụng, nội soi lồng ngực…'
+
+MERGE (o1:test {id: 'xạ_hình_xương_test'})
+MERGE (o2:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o1)-[r198:diagnosedBy]->(o2)
+SET r198.text = 'Trong một số tình huống cụ thể, bác sĩ có thể chỉ định các xét nghiệm khác như MRI não (nghi ngờ di căn não), xạ hình xương (nghi ngờ di căn xương), PET/CT, nội soi ổ bụng, nội soi lồng ngực…'
+
+MERGE (o1:symptom {id: 'di_căn_xương_symptom'})
+MERGE (o2:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o1)-[r199:isSymptomOf]->(o2)
+SET r199.text = 'Trong một số tình huống cụ thể, bác sĩ có thể chỉ định các xét nghiệm khác như MRI não (nghi ngờ di căn não), xạ hình xương (nghi ngờ di căn xương), PET/CT, nội soi ổ bụng, nội soi lồng ngực…'
+
+MERGE (o1:test {id: 'pet/ct_test'})
+MERGE (o2:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o1)-[r200:diagnosedBy]->(o2)
+SET r200.text = 'Trong một số tình huống cụ thể, bác sĩ có thể chỉ định các xét nghiệm khác như MRI não (nghi ngờ di căn não), xạ hình xương (nghi ngờ di căn xương), PET/CT, nội soi ổ bụng, nội soi lồng ngực…'
+
+MERGE (o1:test {id: 'nội_soi_ổ_bụng_test'})
+MERGE (o2:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o1)-[r201:diagnosedBy]->(o2)
+SET r201.text = 'Trong một số tình huống cụ thể, bác sĩ có thể chỉ định các xét nghiệm khác như MRI não (nghi ngờ di căn não), xạ hình xương (nghi ngờ di căn xương), PET/CT, nội soi ổ bụng, nội soi lồng ngực…'
+
+MERGE (o1:test {id: 'nội_soi_lồng_ngực_test'})
+MERGE (o2:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o1)-[r202:diagnosedBy]->(o2)
+SET r202.text = 'Trong một số tình huống cụ thể, bác sĩ có thể chỉ định các xét nghiệm khác như MRI não (nghi ngờ di căn não), xạ hình xương (nghi ngờ di căn xương), PET/CT, nội soi ổ bụng, nội soi lồng ngực…'
+
+MERGE (o1:test {id: 'dấu_ấn_sinh_học_ung_thư_test'})
+MERGE (o2:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o1)-[r203:diagnosedBy]->(o2)
+SET r203.text = 'Dấu ấn sinh học ung thư: Xét nghiệm máu có thể phát hiện CEA, CA 19-9 tăng cao.'
+
+MERGE (o1:test {id: 'xét_nghiệm_máu_test'})
+MERGE (o2:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o1)-[r204:diagnosedBy]->(o2)
+SET r204.text = 'Dấu ấn sinh học ung thư: Xét nghiệm máu có thể phát hiện CEA, CA 19-9 tăng cao.'
+
+MERGE (o1:test {id: 'cea_test'})
+MERGE (o2:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o1)-[r205:diagnosedBy]->(o2)
+SET r205.text = 'Dấu ấn sinh học ung thư: Xét nghiệm máu có thể phát hiện CEA, CA 19-9 tăng cao.'
+
+MERGE (o1:test {id: 'ca_19-9_test'})
+MERGE (o2:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o1)-[r206:diagnosedBy]->(o2)
+SET r206.text = 'Dấu ấn sinh học ung thư: Xét nghiệm máu có thể phát hiện CEA, CA 19-9 tăng cao.'
+
+MERGE (o1:test {id: 'dấu_ấn_sinh_học_test'})
+MERGE (o2:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o1)-[r207:diagnosedBy]->(o2)
+SET r207.text = 'Tuy nhiên, các dấu ấn sinh học không có vai trò quan trọng trong chẩn đoán ung thư thực quản, do các chỉ số này cũng có thể tăng đối với các bệnh lý khác.'
+
+MERGE (o1:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o2:treatment {id: 'điều_trị_treatment'})
+MERGE (o1)-[r208:treatedBy]->(o2)
+SET r208.text = 'Ung thư thực quản là một bệnh có thể điều trị được nhưng hiệu quả không cao do người bệnh thường đến ở giai đoạn muộn, khi ung thư đã lan rộng.'
+
+MERGE (o1:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o2:symptom {id: 'giai_đoạn_muộn_symptom'})
+MERGE (o1)-[r209:isSymptomOf]->(o2)
+SET r209.text = 'Ung thư thực quản là một bệnh có thể điều trị được nhưng hiệu quả không cao do người bệnh thường đến ở giai đoạn muộn, khi ung thư đã lan rộng.'
+
+MERGE (o1:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o2:symptom {id: 'ung_thư_đã_lan_rộng_symptom'})
+MERGE (o1)-[r210:isSymptomOf]->(o2)
+SET r210.text = 'Ung thư thực quản là một bệnh có thể điều trị được nhưng hiệu quả không cao do người bệnh thường đến ở giai đoạn muộn, khi ung thư đã lan rộng.'
+
+MERGE (o1:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o2:treatment {id: 'điều_trị_treatment'})
+MERGE (o1)-[r211:treatedBy]->(o2)
+SET r211.text = 'Tại Bệnh viện Đa khoa Tâm Anh, người bệnh mắc ung thư thực quản sẽ được lựa chọn phương pháp điều trị tối ưu giúp mang lại hiệu quả tốt nhất dựa trên đánh giá về vị trí khối u, loại tế bào ung thư, giai đoạn bệnh, sức khỏe tổng thể và mong muốn của người bệnh.'
+
+MERGE (o1:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o2:symptom {id: 'vị_trí_khối_u_symptom'})
+MERGE (o1)-[r212:isSymptomOf]->(o2)
+SET r212.text = 'Tại Bệnh viện Đa khoa Tâm Anh, người bệnh mắc ung thư thực quản sẽ được lựa chọn phương pháp điều trị tối ưu giúp mang lại hiệu quả tốt nhất dựa trên đánh giá về vị trí khối u, loại tế bào ung thư, giai đoạn bệnh, sức khỏe tổng thể và mong muốn của người bệnh.'
+
+MERGE (o1:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o2:symptom {id: 'loại_tế_bào_ung_thư_symptom'})
+MERGE (o1)-[r213:isSymptomOf]->(o2)
+SET r213.text = 'Tại Bệnh viện Đa khoa Tâm Anh, người bệnh mắc ung thư thực quản sẽ được lựa chọn phương pháp điều trị tối ưu giúp mang lại hiệu quả tốt nhất dựa trên đánh giá về vị trí khối u, loại tế bào ung thư, giai đoạn bệnh, sức khỏe tổng thể và mong muốn của người bệnh.'
+
+MERGE (o1:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o2:symptom {id: 'giai_đoạn_bệnh_symptom'})
+MERGE (o1)-[r214:isSymptomOf]->(o2)
+SET r214.text = 'Tại Bệnh viện Đa khoa Tâm Anh, người bệnh mắc ung thư thực quản sẽ được lựa chọn phương pháp điều trị tối ưu giúp mang lại hiệu quả tốt nhất dựa trên đánh giá về vị trí khối u, loại tế bào ung thư, giai đoạn bệnh, sức khỏe tổng thể và mong muốn của người bệnh.'
+
+MERGE (o1:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o2:symptom {id: 'sức_khỏe_tổng_thể_symptom'})
+MERGE (o1)-[r215:isSymptomOf]->(o2)
+SET r215.text = 'Tại Bệnh viện Đa khoa Tâm Anh, người bệnh mắc ung thư thực quản sẽ được lựa chọn phương pháp điều trị tối ưu giúp mang lại hiệu quả tốt nhất dựa trên đánh giá về vị trí khối u, loại tế bào ung thư, giai đoạn bệnh, sức khỏe tổng thể và mong muốn của người bệnh.'
+
+MERGE (o1:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o2:treatment {id: 'phẫu_thuật_treatment'})
+MERGE (o1)-[r216:treatedBy]->(o2)
+SET r216.text = 'Các phương pháp chính trong điều trị ung thư thực quản là: phẫu thuật, xạ trị, hoá trị, miễn dịch; có thể kết hợp đa mô thức phụ thuộc vào từng người bệnh.'
+
+MERGE (o1:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o2:treatment {id: 'xạ_trị_treatment'})
+MERGE (o1)-[r217:treatedBy]->(o2)
+SET r217.text = 'Các phương pháp chính trong điều trị ung thư thực quản là: phẫu thuật, xạ trị, hoá trị, miễn dịch; có thể kết hợp đa mô thức phụ thuộc vào từng người bệnh.'
+
+MERGE (o1:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o2:treatment {id: 'hoá_trị_treatment'})
+MERGE (o1)-[r218:treatedBy]->(o2)
+SET r218.text = 'Các phương pháp chính trong điều trị ung thư thực quản là: phẫu thuật, xạ trị, hoá trị, miễn dịch; có thể kết hợp đa mô thức phụ thuộc vào từng người bệnh.'
+
+MERGE (o1:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o2:treatment {id: 'miễn_dịch_treatment'})
+MERGE (o1)-[r219:treatedBy]->(o2)
+SET r219.text = 'Các phương pháp chính trong điều trị ung thư thực quản là: phẫu thuật, xạ trị, hoá trị, miễn dịch; có thể kết hợp đa mô thức phụ thuộc vào từng người bệnh.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_cắt_bỏ_khối_u_treatment'})
+MERGE (o2:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o1)-[r220:treatedBy]->(o2)
+SET r220.text = 'Phẫu thuật cắt bỏ khối u có thể sử dụng đơn thuần hoặc kết hợp với các phương pháp khác nhau.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_cắt_bỏ_khối_u_treatment'})
+MERGE (o2:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o1)-[r221:treatedBy]->(o2)
+SET r221.text = 'Tại Bệnh viện Đa khoa Tâm Anh, nhờ hệ thống nội soi thế hệ mới sẽ phát hiện u rất nhỏ, giới hạn ở niêm mạc của thực quản sẽ được cắt u tại chỗ qua nội soi bằng phương pháp cắt niêm (EMR) hoặc dưới niêm (ESD)'
+
+MERGE (o1:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o2:lifestyle {id: 'các_quốc_gia_đang_phát_triển_lifestyle'})
+MERGE (o1)-[r222:relatedTo]->(o2)
+SET r222.text = 'Ung thư thực quản ngày càng gia tăng và trẻ hóa, đặc biệt ở các quốc gia đang phát triển như Việt Nam.'
+
+MERGE (o1:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o2:lifestyle {id: 'việt_nam_lifestyle'})
+MERGE (o1)-[r223:relatedTo]->(o2)
+SET r223.text = 'Ung thư thực quản ngày càng gia tăng và trẻ hóa, đặc biệt ở các quốc gia đang phát triển như Việt Nam.'
+
+MERGE (o1:disease {id: 'ung_thư_thực_quản_disease'})
+MERGE (o2:treatment {id: 'một_số_biện_pháp_treatment'})
+MERGE (o1)-[r224:preventedBy]->(o2)
+SET r224.text = 'Ung thư thực quản ngày càng gia tăng và trẻ hóa, đặc biệt ở các quốc gia đang phát triển như Việt Nam. Vì vậy, nên chủ động phòng ngừa ung thư thực quản bằng một số biện pháp sau:'

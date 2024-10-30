@@ -1,0 +1,658 @@
+[
+    {
+        "text": "Tinh hoàn lạc chỗ là bệnh lý sinh dục ở trẻ sơ sinh năm.",
+        "head": "Tinh hoàn lạc chỗ",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "bệnh lý sinh dục",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tinh hoàn lạc chỗ là bệnh lý sinh dục ở trẻ sơ sinh năm.",
+        "head": "Tinh hoàn lạc chỗ",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "trẻ sơ sinh",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Tình trạng này thường tự điều chỉnh trong vài tháng sau khi trẻ sinh ra.",
+        "head": "Tinh hoàn lạc chỗ",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "tự điều chỉnh",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Tuy nhiên, trong một số trường hợp sẽ cần phẫu thuật để di chuyển tinh hoàn của bé trai về đúng vị trí.",
+        "head": "Tinh hoàn lạc chỗ",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "phẫu thuật",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Tình trạng tinh hoàn lạc chỗ là tình trạng một hay cả hai tinh hoàn không di chuyển xuống bìu trong khi thai nhi đang phát triển.",
+        "head": "Tinh hoàn lạc chỗ",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "tinh hoàn không di chuyển xuống bìu",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Tình trạng tinh hoàn lạc chỗ là tình trạng một hay cả hai tinh hoàn không di chuyển xuống bìu trong khi thai nhi đang phát triển.",
+        "head": "tinh hoàn",
+        "head_type": "organ",
+        "relation": "locatedIn",
+        "tail": "bìu",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Tình trạng tinh hoàn lạc chỗ là tình trạng một hay cả hai tinh hoàn không di chuyển xuống bìu trong khi thai nhi đang phát triển.",
+        "head": "tinh hoàn",
+        "head_type": "organ",
+        "relation": "locatedIn",
+        "tail": "thai nhi",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Thông thường chỉ có một tinh hoàn bị lạc chỗ.",
+        "head": "tinh hoàn lạc chỗ",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "tinh hoàn",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Có khoảng 10% trường hợp cả hai tinh hoàn đều bị ảnh hưởng.",
+        "head": "tinh hoàn lạc chỗ",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "tinh hoàn",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Theo sự phát triển của bào thai, khi hệ sinh dục hình thành, hai tinh hoàn ban đầu sẽ nằm ở bụng.",
+        "head": "tinh hoàn",
+        "head_type": "organ",
+        "relation": "locatedIn",
+        "tail": "bụng",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Theo sự phát triển của bào thai, khi hệ sinh dục hình thành, hai tinh hoàn ban đầu sẽ nằm ở bụng.",
+        "head": "hệ sinh dục",
+        "head_type": "organ",
+        "relation": "locatedIn",
+        "tail": "bào thai",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Khi gần đủ tháng và chuẩn bị sinh, hai tinh hoàn mới dần di chuyển xuống bìu nhờ ống nối riêng biệt.",
+        "head": "tinh hoàn",
+        "head_type": "organ",
+        "relation": "locatedIn",
+        "tail": "bìu",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Khi gần đủ tháng và chuẩn bị sinh, hai tinh hoàn mới dần di chuyển xuống bìu nhờ ống nối riêng biệt.",
+        "head": "tinh hoàn",
+        "head_type": "organ",
+        "relation": "relatedTo",
+        "tail": "ống nối",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Do đó, tinh hoàn của bé trai khi sinh ra và trong 6 tháng đầu đời có thể tự di chuyển rồi nằm ổn định trong bìu, ngoài 6 tháng tuổi, tỷ lệ tinh hoàn di chuyển được về bìu nếu không điều trị là rất thấp.",
+        "head": "tinh hoàn",
+        "head_type": "organ",
+        "relation": "locatedIn",
+        "tail": "bìu",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Do đó, tinh hoàn của bé trai khi sinh ra và trong 6 tháng đầu đời có thể tự di chuyển rồi nằm ổn định trong bìu, ngoài 6 tháng tuổi, tỷ lệ tinh hoàn di chuyển được về bìu nếu không điều trị là rất thấp.",
+        "head": "tinh hoàn",
+        "head_type": "organ",
+        "relation": "treatedBy",
+        "tail": "điều trị",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Tinh hoàn lạc chỗ có thể sờ thấy được hay không thể sờ thấy.",
+        "head": "tinh hoàn lạc chỗ",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "sờ thấy",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Khoảng 80% tinh hoàn lạc chỗ có thể sờ thấy được.",
+        "head": "tinh hoàn lạc chỗ",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "sờ thấy",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Nếu bác sĩ không thể cảm nhận được tinh hoàn khi sờ, tinh hoàn có khả năng nằm tại các vị trí như:  Bẹn: Khi đó, tinh hoàn đã đi vào ống bẹn để xuống bìu nhưng lại không đủ xa để có thể cảm nhận được khi sờ.",
+        "head": "tinh hoàn",
+        "head_type": "organ",
+        "relation": "locatedIn",
+        "tail": "bẹn",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Nếu bác sĩ không thể cảm nhận được tinh hoàn khi sờ, tinh hoàn có khả năng nằm tại các vị trí như:  Bẹn: Khi đó, tinh hoàn đã đi vào ống bẹn để xuống bìu nhưng lại không đủ xa để có thể cảm nhận được khi sờ.",
+        "head": "tinh hoàn",
+        "head_type": "organ",
+        "relation": "locatedIn",
+        "tail": "ống bẹn",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Nếu bác sĩ không thể cảm nhận được tinh hoàn khi sờ, tinh hoàn có khả năng nằm tại các vị trí như:  Bẹn: Khi đó, tinh hoàn đã đi vào ống bẹn để xuống bìu nhưng lại không đủ xa để có thể cảm nhận được khi sờ.",
+        "head": "tinh hoàn",
+        "head_type": "organ",
+        "relation": "locatedIn",
+        "tail": "bìu",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Bụng: Tinh hoàn có khả năng chưa di chuyển hay mới bắt đầu di chuyển để vào bìu.",
+        "head": "tinh hoàn",
+        "head_type": "organ",
+        "relation": "locatedIn",
+        "tail": "bụng",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Bụng: Tinh hoàn có khả năng chưa di chuyển hay mới bắt đầu di chuyển để vào bìu.",
+        "head": "tinh hoàn",
+        "head_type": "organ",
+        "relation": "locatedIn",
+        "tail": "bìu",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Không có hay teo tinh hoàn: Tuy tinh hoàn đã đi xuống bìu nhưng vì kích thước rất nhỏ nên không cảm nhận được khi sờ.",
+        "head": "tinh hoàn",
+        "head_type": "organ",
+        "relation": "locatedIn",
+        "tail": "bìu",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Không có hay teo tinh hoàn: Tuy tinh hoàn đã đi xuống bìu nhưng vì kích thước rất nhỏ nên không cảm nhận được khi sờ.",
+        "head": "tinh hoàn",
+        "head_type": "organ",
+        "relation": "isSymptomOf",
+        "tail": "teo tinh hoàn",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Trường hợp này bé trai có thể không có khả năng sinh sản.",
+        "head": "tinh hoàn lạc chỗ",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "không có khả năng sinh sản",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Nguyên nhân gây ra tình trạng tinh hoàn lạc chỗ vẫn chưa được biết rõ.",
+        "head": "Nguyên nhân gây ra tình trạng tinh hoàn lạc chỗ",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "tinh hoàn lạc chỗ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đó có thể là do sự kết hợp của di truyền học, sức khỏe của thai phụ hoặc những yếu tố môi trường khác có khả năng phá vỡ những kích thích tố, thay đổi vật lý và hoạt động thần kinh, ảnh hưởng tới sự phát triển của tinh hoàn.",
+        "head": "di truyền học",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "tinh hoàn lạc chỗ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đó có thể là do sự kết hợp của di truyền học, sức khỏe của thai phụ hoặc những yếu tố môi trường khác có khả năng phá vỡ những kích thích tố, thay đổi vật lý và hoạt động thần kinh, ảnh hưởng tới sự phát triển của tinh hoàn.",
+        "head": "sức khỏe của thai phụ",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "tinh hoàn lạc chỗ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đó có thể là do sự kết hợp của di truyền học, sức khỏe của thai phụ hoặc những yếu tố môi trường khác có khả năng phá vỡ những kích thích tố, thay đổi vật lý và hoạt động thần kinh, ảnh hưởng tới sự phát triển của tinh hoàn.",
+        "head": "yếu tố môi trường",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "tinh hoàn lạc chỗ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Một số yếu tố nguy cơ làm xuất hiện tình trạng tinh hoàn lạc chỗ ở trẻ sơ sinh nam như: (2)  Thiếu cân.",
+        "head": "Thiếu cân",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "tinh hoàn lạc chỗ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Một số yếu tố nguy cơ làm xuất hiện tình trạng tinh hoàn lạc chỗ ở trẻ sơ sinh nam như: (2)  Sinh non.",
+        "head": "Sinh non",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "tinh hoàn lạc chỗ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Một số yếu tố nguy cơ làm xuất hiện tình trạng tinh hoàn lạc chỗ ở trẻ sơ sinh nam như: (2)  Tiền sử gia đình có người bị tình trạng tinh hoàn lạc chỗ hay những vấn đề khác của trong quá trình phát triển của bộ phận sinh dục.",
+        "head": "Tiền sử gia đình có người bị tình trạng tinh hoàn lạc chỗ",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "tinh hoàn lạc chỗ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Một số yếu tố nguy cơ làm xuất hiện tình trạng tinh hoàn lạc chỗ ở trẻ sơ sinh nam như: (2)  Mắc các bệnh lý thai nhi ngăn cản tăng trưởng như hội chứng Down hay khiếm khuyết thành bụng.",
+        "head": "hội chứng Down",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "tinh hoàn lạc chỗ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Một số yếu tố nguy cơ làm xuất hiện tình trạng tinh hoàn lạc chỗ ở trẻ sơ sinh nam như: (2)  Mắc các bệnh lý thai nhi ngăn cản tăng trưởng như hội chứng Down hay khiếm khuyết thành bụng.",
+        "head": "khiếm khuyết thành bụng",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "tinh hoàn lạc chỗ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Một số yếu tố nguy cơ làm xuất hiện tình trạng tinh hoàn lạc chỗ ở trẻ sơ sinh nam như: (2)  Thai phụ lạm dụng rượu, bia.",
+        "head": "lạm dụng rượu, bia",
+        "head_type": "lifestyle",
+        "relation": "causedBy",
+        "tail": "tinh hoàn lạc chỗ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Một số yếu tố nguy cơ làm xuất hiện tình trạng tinh hoàn lạc chỗ ở trẻ sơ sinh nam như: (2)  Thai phụ hút thuốc lá hay thường xuyên tiếp xúc với khói thuốc.",
+        "head": "hút thuốc lá",
+        "head_type": "lifestyle",
+        "relation": "causedBy",
+        "tail": "tinh hoàn lạc chỗ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Một số yếu tố nguy cơ làm xuất hiện tình trạng tinh hoàn lạc chỗ ở trẻ sơ sinh nam như: (2)  Thai phụ hút thuốc lá hay thường xuyên tiếp xúc với khói thuốc.",
+        "head": "tiếp xúc với khói thuốc",
+        "head_type": "lifestyle",
+        "relation": "causedBy",
+        "tail": "tinh hoàn lạc chỗ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Một số yếu tố nguy cơ làm xuất hiện tình trạng tinh hoàn lạc chỗ ở trẻ sơ sinh nam như: (2)  Thai phụ bị béo phì, thừa cân.",
+        "head": "béo phì",
+        "head_type": "lifestyle",
+        "relation": "causedBy",
+        "tail": "tinh hoàn lạc chỗ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Một số yếu tố nguy cơ làm xuất hiện tình trạng tinh hoàn lạc chỗ ở trẻ sơ sinh nam như: (2)  Thai phụ bị béo phì, thừa cân.",
+        "head": "thừa cân",
+        "head_type": "lifestyle",
+        "relation": "causedBy",
+        "tail": "tinh hoàn lạc chỗ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Một số yếu tố nguy cơ làm xuất hiện tình trạng tinh hoàn lạc chỗ ở trẻ sơ sinh nam như: (2)  Thai phụ mắc bệnh tiểu đường loại 1, loại 2 hoặc tiểu đường thai kỳ.",
+        "head": "tiểu đường loại 1",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "tinh hoàn lạc chỗ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Một số yếu tố nguy cơ làm xuất hiện tình trạng tinh hoàn lạc chỗ ở trẻ sơ sinh nam như: (2)  Thai phụ mắc bệnh tiểu đường loại 1, loại 2 hoặc tiểu đường thai kỳ.",
+        "head": "tiểu đường loại 2",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "tinh hoàn lạc chỗ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Một số yếu tố nguy cơ làm xuất hiện tình trạng tinh hoàn lạc chỗ ở trẻ sơ sinh nam như: (2)  Thai phụ mắc bệnh tiểu đường loại 1, loại 2 hoặc tiểu đường thai kỳ.",
+        "head": "tiểu đường thai kỳ",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "tinh hoàn lạc chỗ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Một số yếu tố nguy cơ làm xuất hiện tình trạng tinh hoàn lạc chỗ ở trẻ sơ sinh nam như: (2)  Bố mẹ thường xuyên tiếp xúc với một số loại thuốc trừ sâu.",
+        "head": "tiếp xúc với thuốc trừ sâu",
+        "head_type": "lifestyle",
+        "relation": "causedBy",
+        "tail": "tinh hoàn lạc chỗ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Do nhiệt độ trong bụng cao hơn nhiệt độ trong bìu nên phần lớn tinh trùng sẽ không sống được với mức nhiệt độ cao trong bụng.",
+        "head": "nhiệt độ cao trong bụng",
+        "head_type": "cause",
+        "relation": "affects",
+        "tail": "tinh trùng",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Tinh trùng khi ở trong bụng sẽ bị giảm chất lượng, chết và không sản sinh được nữa.",
+        "head": "tinh trùng ở trong bụng",
+        "head_type": "cause",
+        "relation": "affects",
+        "tail": "tinh trùng",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Ngoài ra, tinh hoàn ở lâu trong bụng sẽ có nhiều khả năng dẫn tới ung thư hóa.",
+        "head": "tinh hoàn ở lâu trong bụng",
+        "head_type": "cause",
+        "relation": "affects",
+        "tail": "tinh hoàn",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Vì thế, người bệnh nên được phẫu thuật để đưa tinh hoàn xuống bìu càng sớm càng tốt để cứu vãn khả năng sinh con.",
+        "head": "phẫu thuật",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "tinh hoàn lạc chỗ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Một số biến chứng liên quan tới vị trí của tinh hoàn lạc chỗ như:  Xoắn tinh hoàn: Xoắn tinh hoàn là tình trạng xoắn dây thừng tinh, trong đó bao gồm những mạch máu, dây thần kinh, ống dẫn tinh.",
+        "head": "Xoắn tinh hoàn",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "tinh hoàn lạc chỗ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tình trạng này gây đau đớn cho người bệnh do máu đã bị chặn trên đường đi đến tinh hoàn.",
+        "head": "đau đớn",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Xoắn tinh hoàn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu không được chữa trị sớm, tình trạng này có thể dẫn tới mất tinh hoàn.",
+        "head": "mất tinh hoàn",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Xoắn tinh hoàn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tinh hoàn lạc chỗ làm tăng nguy cơ xoắn tinh hoàn.",
+        "head": "tinh hoàn lạc chỗ",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Xoắn tinh hoàn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Chấn thương: Khi không nằm trong da bìu, tinh hoàn có khả năng bị tổn thương do áp lực từ xương mu.",
+        "head": "Chấn thương",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "tinh hoàn lạc chỗ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Thoát vị bẹn: Khi tinh hoàn nằm ở bẹn có thế thể tạo ra khe hở giữa vùng bụng và ống bẹn.",
+        "head": "Thoát vị bẹn",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "tinh hoàn lạc chỗ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khe hở này càng lớn có thể đẩy một phần ruột vào háng.",
+        "head": "ruột vào háng",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Thoát vị bẹn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tinh hoàn lạc chỗ có thể gây xoắn tinh hoàn",
+        "head": "tinh hoàn lạc chỗ",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "xoắn tinh hoàn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Siêu âm bụng hoặc chụp cộng hưởng từ (MRI): Đây là những phương pháp thăm dò từ thấp tới cao để xác định vị trí chính xác của tinh hoàn ẩn.",
+        "head": "Siêu âm bụng",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "tinh hoàn lạc chỗ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Siêu âm bụng hoặc chụp cộng hưởng từ (MRI): Đây là những phương pháp thăm dò từ thấp tới cao để xác định vị trí chính xác của tinh hoàn ẩn.",
+        "head": "chụp cộng hưởng từ (MRI)",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "tinh hoàn lạc chỗ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ngoài ra, các phương pháp này còn giúp bác sĩ phát hiện sự bất thường khác của tinh hoàn như vôi hóa nhu mô tinh hoàn, u tinh hoàn…",
+        "head": "vôi hóa nhu mô tinh hoàn",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "tinh hoàn lạc chỗ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ngoài ra, các phương pháp này còn giúp bác sĩ phát hiện sự bất thường khác của tinh hoàn như vôi hóa nhu mô tinh hoàn, u tinh hoàn…",
+        "head": "u tinh hoàn",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "tinh hoàn lạc chỗ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Xét nghiệm nhiễm sắc thể: Xét nghiệm này tùy trường hợp, nhằm phát hiện những trường hợp giới tính không xác định.",
+        "head": "Xét nghiệm nhiễm sắc thể",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "tinh hoàn lạc chỗ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Trẻ sơ sinh bị tinh hoàn lạc chỗ sẽ tiếp tục được theo dõi.",
+        "head": "tinh hoàn lạc chỗ",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Trẻ sơ sinh",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Trong 6 tháng đầu đời có thể tự di chuyển rồi nằm ổn định trong bìu, ngoài 6 tháng tuổi, tỷ lệ tinh hoàn di chuyển được về bìu nếu không điều trị là rất thấp.",
+        "head": "tinh hoàn",
+        "head_type": "organ",
+        "relation": "locatedIn",
+        "tail": "bìu",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Tình trạng di chuyển muộn này không gây ra bất kỳ vấn đề gì cho sức khỏe của các bé trai.",
+        "head": "tinh hoàn",
+        "head_type": "organ",
+        "relation": "affects",
+        "tail": "sức khỏe",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Tuy nhiên, bố mẹ cũng cần theo dõi trẻ để xem có triệu chứng bất thường nào khác không.",
+        "head": "bố mẹ",
+        "head_type": "organ",
+        "relation": "relatedTo",
+        "tail": "triệu chứng bất thường",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Nếu sau 6 tháng, tinh hoàn của bé vẫn không tự di chuyển về đúng nơi, bố mẹ cần đưa trẻ đi thăm khám để có hướng điều trị phù hợp.",
+        "head": "tinh hoàn",
+        "head_type": "organ",
+        "relation": "treatedBy",
+        "tail": "thăm khám",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Nhiệt độ tại bìu được cơ thể điều chỉnh thích hợp với việc sản sinh và nuôi dưỡng tinh trùng.",
+        "head": "bìu",
+        "head_type": "organ",
+        "relation": "relatedTo",
+        "tail": "sản sinh và nuôi dưỡng tinh trùng",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Do đó, tinh hoàn cần di chuyển tới bìu, nằm ổn định tại đây cho tới suốt đời.",
+        "head": "tinh hoàn",
+        "head_type": "organ",
+        "relation": "locatedIn",
+        "tail": "bìu",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Khi tinh hoàn nằm ở bụng, phần lớn tinh trùng sinh ra sau khi cơ thể sau dậy thì đầy đủ sẽ bị chết đi do nhiệt độ cao tại vị trí này.",
+        "head": "tinh hoàn",
+        "head_type": "organ",
+        "relation": "locatedIn",
+        "tail": "bụng",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Ngoài ra, nếu có tồn tại, tinh trùng cũng sẽ bị suy giảm về chất lượng.",
+        "head": "tinh trùng",
+        "head_type": "organ",
+        "relation": "affects",
+        "tail": "chất lượng",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Khi nam giới tới độ tuổi sinh sản, lượng tinh trùng này cũng không thể giúp sinh con.",
+        "head": "tinh trùng",
+        "head_type": "organ",
+        "relation": "relatedTo",
+        "tail": "sinh con",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Trẻ sơ sinh nam khi bị tình trạng tinh hoàn lạc chỗ vẫn có khả năng duy trì được chức năng sinh sản khi được phát hiện và có biện pháp can thiệp sớm.",
+        "head": "tinh hoàn lạc chỗ",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "can thiệp sớm",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Vì phần lớn trường hợp này khi kéo dài tới tuổi thanh niên và trưởng thành, tinh hoàn đã không còn chức năng.",
+        "head": "tinh hoàn",
+        "head_type": "organ",
+        "relation": "affects",
+        "tail": "chức năng",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Đây cũng lý do vì sao bé trai vừa sinh ra luôn được kiểm tra tình trạng có mặt của tinh hoàn ở bìu.",
+        "head": "tinh hoàn",
+        "head_type": "organ",
+        "relation": "locatedIn",
+        "tail": "bìu",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Khi phát hiện tình trạng tinh hoàn lạc chỗ, trẻ sơ sinh sẽ được theo dõi trong 6 tháng đầu đời.",
+        "head": "tinh hoàn lạc chỗ",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Trẻ sơ sinh",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Khi không thấy tinh hoàn di chuyển sau 6 tháng, bác sĩ sẽ tiến hành kiểm tra và đưa ra hướng điều trị thích hợp.",
+        "head": "tinh hoàn",
+        "head_type": "organ",
+        "relation": "treatedBy",
+        "tail": "kiểm tra",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Mục tiêu của các phương pháp điều trị là đưa tinh hoàn về đúng vị trí trong bìu.",
+        "head": "tinh hoàn",
+        "head_type": "organ",
+        "relation": "locatedIn",
+        "tail": "bìu",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Điều trị sớm sẽ giúp giảm thiểu những biến chứng nguy hiểm như ung thư tinh hoàn, vô sinh&#8230;",
+        "head": "điều trị sớm",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "ung thư tinh hoàn, vô sinh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Trẻ sơ sinh nam sẽ được bác sĩ điều trị thông qua việc tiêm thuốc hCG.",
+        "head": "Trẻ sơ sinh nam",
+        "head_type": "organ",
+        "relation": "treatedBy",
+        "tail": "tiêm thuốc hCG",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Đây là một loại nội tiết tố của nhau thai, kích thích tinh hoàn di chuyển xuống đúng vị trí trong bìu.",
+        "head": "hCG",
+        "head_type": "treatment",
+        "relation": "affects",
+        "tail": "tinh hoàn",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Liều lượng tiêm, thời gian tiêm phải được bác sĩ cân nhắc kỹ để phù hợp với thể trạng của mỗi bé trai.",
+        "head": "liều lượng tiêm, thời gian tiêm",
+        "head_type": "treatment",
+        "relation": "relatedTo",
+        "tail": "thể trạng",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Việc tiêm không đúng liều lượng làm tinh hoàn không đáp ứng thuốc, dẫn tới trẻ bị bỏ lỡ quãng thời gian vàng để điều trị mà đáng lẽ không cần can thiệp phẫu thuật.",
+        "head": "tiêm không đúng liều lượng",
+        "head_type": "treatment",
+        "relation": "affects",
+        "tail": "tinh hoàn",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Nếu trì hoãn lâu, người bệnh có nguy cơ bị hỏng tinh hoàn, vôi hóa toàn bộ tinh hoàn, khiến tinh hoàn không đảm nhiệm được chức năng nội tiết và ngoại tiết rất cao.",
+        "head": "trì hoãn lâu",
+        "head_type": "treatment",
+        "relation": "affects",
+        "tail": "tinh hoàn",
+        "tail_type": "organ"
+    }
+]

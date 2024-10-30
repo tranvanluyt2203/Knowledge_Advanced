@@ -1,0 +1,630 @@
+
+MERGE (o1:disease {id: 'tai_biến_sản_khoa_disease'})
+MERGE (o2:lifestyle {id: 'mang_thai_lifestyle'})
+MERGE (o1)-[r0:relatedTo]->(o2)
+SET r0.text = 'Nỗi lo lớn nhất của hầu hết phụ nữ trong và sau khi mang thai là đối mặt với các tai biến sản khoa.'
+
+MERGE (o1:disease {id: 'hội_chứng_tiền_sản_giật_disease'})
+MERGE (o2:lifestyle {id: 'mang_thai_lifestyle'})
+MERGE (o1)-[r1:causedBy]->(o2)
+SET r1.text = 'Một trong số đó là hội chứng tiền sản giật khi mang thai - tiền căn của sản giật - được xem là nguyên nhân gây tử vong cao cho mẹ bầu và trẻ sơ sinh.'
+
+MERGE (o1:disease {id: 'hội_chứng_tiền_sản_giật_disease'})
+MERGE (o2:disease {id: 'sản_giật_disease'})
+MERGE (o1)-[r2:isSymptomOf]->(o2)
+SET r2.text = 'Một trong số đó là hội chứng tiền sản giật khi mang thai - tiền căn của sản giật - được xem là nguyên nhân gây tử vong cao cho mẹ bầu và trẻ sơ sinh.'
+
+MERGE (o1:disease {id: 'biến_chứng_thai_sản_disease'})
+MERGE (o2:symptom {id: 'tử_vong_symptom'})
+MERGE (o1)-[r3:causedBy]->(o2)
+SET r3.text = 'Các biến chứng thai sản là nguyên nhân hàng đầu gây tử vong và ảnh hưởng nghiêm trọng đến sức khỏe phụ nữ trong độ tuổi sinh đẻ.'
+
+MERGE (o1:disease {id: 'biến_chứng_thai_sản_disease'})
+MERGE (o2:organ {id: 'sức_khỏe_phụ_nữ_organ'})
+MERGE (o1)-[r4:affects]->(o2)
+SET r4.text = 'Các biến chứng thai sản là nguyên nhân hàng đầu gây tử vong và ảnh hưởng nghiêm trọng đến sức khỏe phụ nữ trong độ tuổi sinh đẻ.'
+
+MERGE (o1:symptom {id: 'tử_vong_symptom'})
+MERGE (o2:lifestyle {id: 'thai_nghén_và_sinh_nở_lifestyle'})
+MERGE (o1)-[r5:causedBy]->(o2)
+SET r5.text = 'Thống kê trên thế giới cho thấy, có hơn 500.000 phụ nữ tử vong hàng năm do các nguyên nhân liên quan tới thai nghén và sinh nở.'
+
+MERGE (o1:disease {id: 'tiền_sản_giật_disease'})
+MERGE (o2:disease {id: 'biến_chứng_sản_khoa_disease'})
+MERGE (o1)-[r6:isSymptomOf]->(o2)
+SET r6.text = 'Trong đó, hiện tượng tiền sản giật là một trong những biến chứng sản khoa thường gặp với khoảng 5% thai phụ và là một trong những nguyên nhân trực tiếp gây tử vong cho khoảng 17% bà mẹ.'
+
+MERGE (o1:disease {id: 'tiền_sản_giật_disease'})
+MERGE (o2:symptom {id: 'tử_vong_symptom'})
+MERGE (o1)-[r7:causedBy]->(o2)
+SET r7.text = 'Trong đó, hiện tượng tiền sản giật là một trong những biến chứng sản khoa thường gặp với khoảng 5% thai phụ và là một trong những nguyên nhân trực tiếp gây tử vong cho khoảng 17% bà mẹ.'
+
+MERGE (o1:symptom {id: 'triệu_chứng_symptom'})
+MERGE (o2:disease {id: 'tai_biến_disease'})
+MERGE (o1)-[r8:isSymptomOf]->(o2)
+SET r8.text = 'ThS.BS Đinh Thị Hiền Lê cảnh báo: “Có rất nhiều thai phụ không hề xuất hiện bất kỳ triệu chứng nào cho đến khi tai biến xảy ra và dẫn tới những biến chứng nghiêm trọng cho cả mẹ lẫn bé.'
+
+MERGE (o1:disease {id: 'tiền_sản_giật_disease'})
+MERGE (o2:lifestyle {id: 'mang_thai_lifestyle'})
+MERGE (o1)-[r9:relatedTo]->(o2)
+SET r9.text = 'Do vậy, nếu đang hoặc chuẩn bị mang thai, bạn cần bảo vệ bản thân và thai nhi bằng cách tìm hiểu các dấu hiệu và biến chứng tiền sản giật, đồng thời chọn cơ sở uy tín để được chăm sóc trước, trong và sau khi sinh đúng cách”.'
+
+MERGE (o1:disease {id: 'tiền_sản_giật_disease'})
+MERGE (o2:disease {id: 'biến_chứng_thai_kỳ_disease'})
+MERGE (o1)-[r10:isSymptomOf]->(o2)
+SET r10.text = 'Tiền sản giật (tiếng Anh là Preeclampsia) là một biến chứng thai kỳ, đặc trưng bởi huyết áp cao và dễ gây tổn thương đến các cơ quan khác, thường là gan và thận.'
+
+MERGE (o1:symptom {id: 'huyết_áp_cao_symptom'})
+MERGE (o2:disease {id: 'tiền_sản_giật_disease'})
+MERGE (o1)-[r11:isSymptomOf]->(o2)
+SET r11.text = 'Tiền sản giật (tiếng Anh là Preeclampsia) là một biến chứng thai kỳ, đặc trưng bởi huyết áp cao và dễ gây tổn thương đến các cơ quan khác, thường là gan và thận.'
+
+MERGE (o1:organ {id: 'gan_organ'})
+MERGE (o2:disease {id: 'tiền_sản_giật_disease'})
+MERGE (o1)-[r12:affectedBy]->(o2)
+SET r12.text = 'Tiền sản giật (tiếng Anh là Preeclampsia) là một biến chứng thai kỳ, đặc trưng bởi huyết áp cao và dễ gây tổn thương đến các cơ quan khác, thường là gan và thận.'
+
+MERGE (o1:organ {id: 'thận_organ'})
+MERGE (o2:disease {id: 'tiền_sản_giật_disease'})
+MERGE (o1)-[r13:affectedBy]->(o2)
+SET r13.text = 'Tiền sản giật (tiếng Anh là Preeclampsia) là một biến chứng thai kỳ, đặc trưng bởi huyết áp cao và dễ gây tổn thương đến các cơ quan khác, thường là gan và thận.'
+
+MERGE (o1:disease {id: 'tiền_sản_giật_disease'})
+MERGE (o2:lifestyle {id: 'tuần_thai_thứ_20_lifestyle'})
+MERGE (o1)-[r14:relatedTo]->(o2)
+SET r14.text = 'Hiện tượng này có thể xảy ra sớm sau tuần thai thứ 20, nhưng rất hiếm khi gặp trường hợp này.'
+
+MERGE (o1:symptom {id: 'triệu_chứng_symptom'})
+MERGE (o2:disease {id: 'tiền_sản_giật_disease'})
+MERGE (o1)-[r15:isSymptomOf]->(o2)
+SET r15.text = 'Đa phần các triệu chứng chỉ xuất hiện sau tuần thai thứ 34 (khoảng 3 tháng cuối thai kỳ).'
+
+MERGE (o1:disease {id: 'tiền_sản_giật_disease'})
+MERGE (o2:lifestyle {id: 'tuần_thai_thứ_34_lifestyle'})
+MERGE (o1)-[r16:relatedTo]->(o2)
+SET r16.text = 'Đa phần các triệu chứng chỉ xuất hiện sau tuần thai thứ 34 (khoảng 3 tháng cuối thai kỳ).'
+
+MERGE (o1:symptom {id: 'triệu_chứng_symptom'})
+MERGE (o2:disease {id: 'tiền_sản_giật_disease'})
+MERGE (o1)-[r17:isSymptomOf]->(o2)
+SET r17.text = 'Ở một vài thai phụ, triệu chứng lại xuất hiện sau khi lâm bồn, thường là trong vòng 48 giờ sau sinh.'
+
+MERGE (o1:disease {id: 'tiền_sản_giật_disease'})
+MERGE (o2:lifestyle {id: 'lâm_bồn_lifestyle'})
+MERGE (o1)-[r18:relatedTo]->(o2)
+SET r18.text = 'Ở một vài thai phụ, triệu chứng lại xuất hiện sau khi lâm bồn, thường là trong vòng 48 giờ sau sinh.'
+
+MERGE (o1:symptom {id: 'triệu_chứng_symptom'})
+MERGE (o2:disease {id: 'tiền_sản_giật_disease'})
+MERGE (o1)-[r19:relatedTo]->(o2)
+SET r19.text = 'May mắn là, những triệu chứng này có xu hướng tự mất đi trong vòng vài tuần sau đó.'
+
+MERGE (o1:disease {id: 'tiền_sản_giật_disease'})
+MERGE (o2:disease {id: 'sản_giật_disease'})
+MERGE (o1)-[r20:causedBy]->(o2)
+SET r20.text = 'Tiền sản giật là căn nguyên dẫn đến sản giật - một tai biến sản khoa nghiêm trọng có thể gây nguy hiểm cho sức khỏe của mẹ và bé.'
+
+MERGE (o1:disease {id: 'sản_giật_disease'})
+MERGE (o2:organ {id: 'sức_khỏe_của_mẹ_và_bé_organ'})
+MERGE (o1)-[r21:affects]->(o2)
+SET r21.text = 'Tiền sản giật là căn nguyên dẫn đến sản giật - một tai biến sản khoa nghiêm trọng có thể gây nguy hiểm cho sức khỏe của mẹ và bé.'
+
+MERGE (o1:disease {id: 'sản_giật_disease'})
+MERGE (o2:symptom {id: 'tử_vong_symptom'})
+MERGE (o1)-[r22:causedBy]->(o2)
+SET r22.text = 'Thậm chí, đây còn là nguyên nhân gây tử vong nếu không được phát hiện và điều trị kịp thời.'
+
+MERGE (o1:symptom {id: 'nhức_đầu_dữ_đội_symptom'})
+MERGE (o2:disease {id: 'tiền_sản_giật_disease'})
+MERGE (o1)-[r23:isSymptomOf]->(o2)
+SET r23.text = 'Những cơn nhức đầu dữ đội là dấu hiệu của bệnh Ở một số thai phụ, đôi khi xuất hiện và tiến triển âm thầm mà không có bất kỳ dấu hiệu nào.'
+
+MERGE (o1:symptom {id: 'tăng_huyết_áp_thai_kỳ_symptom'})
+MERGE (o2:disease {id: 'tiền_sản_giật_disease'})
+MERGE (o1)-[r24:isSymptomOf]->(o2)
+SET r24.text = 'Dấu hiệu đầu tiên thường là tăng huyết áp thai kỳ.'
+
+MERGE (o1:test {id: 'huyết_áp_test'})
+MERGE (o2:disease {id: 'tiền_sản_giật_disease'})
+MERGE (o1)-[r25:diagnosedBy]->(o2)
+SET r25.text = 'Thế nên, thai phụ cần được theo dõi huyết áp từ những ngày đầu mang thai, và đều đặn kiểm tra huyết áp trong suốt thai kỳ.'
+
+MERGE (o1:symptom {id: 'huyết_áp_vượt_quá_140/90mmhg_symptom'})
+MERGE (o2:disease {id: 'tiền_sản_giật_disease'})
+MERGE (o1)-[r26:isSymptomOf]->(o2)
+SET r26.text = 'Huyết áp vượt quá 140/90mmHg - được ghi nhận trong hai lần, cách nhau ít nhất 4 giờ - được đánh giá là bất thường.'
+
+MERGE (o1:symptom {id: 'biểu_hiện_symptom'})
+MERGE (o2:disease {id: 'tiền_sản_giật_disease'})
+MERGE (o1)-[r27:isSymptomOf]->(o2)
+SET r27.text = 'Ngoài ra, các biểu hiện khác bao gồm:'
+
+MERGE (o1:symptom {id: 'protein_niệu_symptom'})
+MERGE (o2:disease {id: 'tiền_sản_giật_disease'})
+MERGE (o1)-[r28:isSymptomOf]->(o2)
+SET r28.text = 'Protein dư thừa trong nước tiểu (protein niệu);'
+
+MERGE (o1:symptom {id: 'nhức_đầu_dữ_dội_symptom'})
+MERGE (o2:disease {id: 'tiền_sản_giật_disease'})
+MERGE (o1)-[r29:isSymptomOf]->(o2)
+SET r29.text = 'Nhức đầu dữ dội;'
+
+MERGE (o1:symptom {id: 'mất_thị_lực_tạm_thời_symptom'})
+MERGE (o2:disease {id: 'tiền_sản_giật_disease'})
+MERGE (o1)-[r30:isSymptomOf]->(o2)
+SET r30.text = 'Thay đổi về thị lực, bao gồm mất thị lực tạm thời, mờ mắt hoặc nhạy cảm với ánh sáng;'
+
+MERGE (o1:symptom {id: 'mờ_mắt_symptom'})
+MERGE (o2:disease {id: 'tiền_sản_giật_disease'})
+MERGE (o1)-[r31:isSymptomOf]->(o2)
+SET r31.text = 'Thay đổi về thị lực, bao gồm mất thị lực tạm thời, mờ mắt hoặc nhạy cảm với ánh sáng;'
+
+MERGE (o1:symptom {id: 'nhạy_cảm_với_ánh_sáng_symptom'})
+MERGE (o2:disease {id: 'tiền_sản_giật_disease'})
+MERGE (o1)-[r32:isSymptomOf]->(o2)
+SET r32.text = 'Thay đổi về thị lực, bao gồm mất thị lực tạm thời, mờ mắt hoặc nhạy cảm với ánh sáng;'
+
+MERGE (o1:symptom {id: 'đau_bụng_trên_symptom'})
+MERGE (o2:disease {id: 'tiền_sản_giật_disease'})
+MERGE (o1)-[r33:isSymptomOf]->(o2)
+SET r33.text = 'Đau bụng trên, thường là phía bên phải dưới xương sườn;'
+
+MERGE (o1:symptom {id: 'buồn_nôn_symptom'})
+MERGE (o2:disease {id: 'tiền_sản_giật_disease'})
+MERGE (o1)-[r34:isSymptomOf]->(o2)
+SET r34.text = 'Buồn nôn và nôn;'
+
+MERGE (o1:symptom {id: 'nôn_symptom'})
+MERGE (o2:disease {id: 'tiền_sản_giật_disease'})
+MERGE (o1)-[r35:isSymptomOf]->(o2)
+SET r35.text = 'Buồn nôn và nôn;'
+
+MERGE (o1:symptom {id: 'lượng_nước_tiểu_giảm_symptom'})
+MERGE (o2:disease {id: 'tiền_sản_giật_disease'})
+MERGE (o1)-[r36:isSymptomOf]->(o2)
+SET r36.text = 'Lượng nước tiểu giảm;'
+
+MERGE (o1:symptom {id: 'giảm_tiểu_cầu_symptom'})
+MERGE (o2:disease {id: 'tiền_sản_giật_disease'})
+MERGE (o1)-[r37:isSymptomOf]->(o2)
+SET r37.text = 'Giảm mức độ tiểu cầu trong máu (giảm tiểu cầu);'
+
+MERGE (o1:symptom {id: 'chức_năng_gan_suy_giảm_symptom'})
+MERGE (o2:disease {id: 'tiền_sản_giật_disease'})
+MERGE (o1)-[r38:isSymptomOf]->(o2)
+SET r38.text = 'Chức năng gan suy giảm;'
+
+MERGE (o1:symptom {id: 'khó_thở_symptom'})
+MERGE (o2:disease {id: 'tiền_sản_giật_disease'})
+MERGE (o1)-[r39:isSymptomOf]->(o2)
+SET r39.text = 'Khó thở (do chất lỏng tích tụ trong phổi);'
+
+MERGE (o1:symptom {id: 'tăng_cân_đột_ngột_symptom'})
+MERGE (o2:disease {id: 'tiền_sản_giật_disease'})
+MERGE (o1)-[r40:isSymptomOf]->(o2)
+SET r40.text = 'Tăng cân đột ngột (hơn 2kg/tuần);'
+
+MERGE (o1:symptom {id: 'sưng_symptom'})
+MERGE (o2:disease {id: 'tiền_sản_giật_disease'})
+MERGE (o1)-[r41:isSymptomOf]->(o2)
+SET r41.text = 'Sưng (phù) - đặc biệt là ở mặt và tay, chân.'
+
+MERGE (o1:test {id: 'khám_thai_test'})
+MERGE (o2:disease {id: 'tiền_sản_giật_disease'})
+MERGE (o1)-[r42:diagnosedBy]->(o2)
+SET r42.text = 'Chú ý phải luôn đi khám thai theo định kỳ, để các bác sĩ theo dõi tình trạng huyết áp của mẹ.'
+
+MERGE (o1:symptom {id: 'đau_nặng_đầu_nhiều_symptom'})
+MERGE (o2:disease {id: 'tiền_sản_giật_disease'})
+MERGE (o1)-[r43:isSymptomOf]->(o2)
+SET r43.text = 'Gọi ngay cho bác sĩ hoặc đi tới bệnh viện ngay, nếu như bạn có các triệu chứng sau: đau nặng đầu nhiều, tầm nhìn suy giảm, bụng đau quặng hay thở dốc.'
+
+MERGE (o1:symptom {id: 'tầm_nhìn_suy_giảm_symptom'})
+MERGE (o2:disease {id: 'tiền_sản_giật_disease'})
+MERGE (o1)-[r44:isSymptomOf]->(o2)
+SET r44.text = 'Gọi ngay cho bác sĩ hoặc đi tới bệnh viện ngay, nếu như bạn có các triệu chứng sau: đau nặng đầu nhiều, tầm nhìn suy giảm, bụng đau quặng hay thở dốc.'
+
+MERGE (o1:symptom {id: 'bụng_đau_quặng_symptom'})
+MERGE (o2:disease {id: 'tiền_sản_giật_disease'})
+MERGE (o1)-[r45:isSymptomOf]->(o2)
+SET r45.text = 'Gọi ngay cho bác sĩ hoặc đi tới bệnh viện ngay, nếu như bạn có các triệu chứng sau: đau nặng đầu nhiều, tầm nhìn suy giảm, bụng đau quặng hay thở dốc.'
+
+MERGE (o1:symptom {id: 'thở_dốc_symptom'})
+MERGE (o2:disease {id: 'tiền_sản_giật_disease'})
+MERGE (o1)-[r46:isSymptomOf]->(o2)
+SET r46.text = 'Gọi ngay cho bác sĩ hoặc đi tới bệnh viện ngay, nếu như bạn có các triệu chứng sau: đau nặng đầu nhiều, tầm nhìn suy giảm, bụng đau quặng hay thở dốc.'
+
+MERGE (o1:symptom {id: 'đau_đầu_symptom'})
+MERGE (o2:lifestyle {id: 'mang_thai_lifestyle'})
+MERGE (o1)-[r47:relatedTo]->(o2)
+SET r47.text = 'Vì đau đầu, nôn mửa và đau nhức người là các dấu hiệu phổ biến khi mang thai, nên khá khó để nhận ra các biểu hiện mới là 1 phần khi mang thai hay đó là dấu hiệu nghiêm trọng nào đó, đặc biệt nếu đó là lần mang bầu đầu tiên của bạn.'
+
+MERGE (o1:symptom {id: 'nôn_mửa_symptom'})
+MERGE (o2:lifestyle {id: 'mang_thai_lifestyle'})
+MERGE (o1)-[r48:relatedTo]->(o2)
+SET r48.text = 'Vì đau đầu, nôn mửa và đau nhức người là các dấu hiệu phổ biến khi mang thai, nên khá khó để nhận ra các biểu hiện mới là 1 phần khi mang thai hay đó là dấu hiệu nghiêm trọng nào đó, đặc biệt nếu đó là lần mang bầu đầu tiên của bạn.'
+
+MERGE (o1:symptom {id: 'đau_nhức_người_symptom'})
+MERGE (o2:lifestyle {id: 'mang_thai_lifestyle'})
+MERGE (o1)-[r49:relatedTo]->(o2)
+SET r49.text = 'Vì đau đầu, nôn mửa và đau nhức người là các dấu hiệu phổ biến khi mang thai, nên khá khó để nhận ra các biểu hiện mới là 1 phần khi mang thai hay đó là dấu hiệu nghiêm trọng nào đó, đặc biệt nếu đó là lần mang bầu đầu tiên của bạn.'
+
+MERGE (o1:cause {id: 'giảm_lưu_lượng_máu_đến_nhau_thai_cause'})
+MERGE (o2:disease {id: 'tiền_sản_giật_khi_mang_bầu_disease'})
+MERGE (o1)-[r50:causedBy]->(o2)
+SET r50.text = 'Theo các chuyên gia sản khoa, tiền sản giật khi mang bầu xảy ra do giảm lưu lượng máu đến nhau thai - cơ quan nuôi dưỡng thai nhi trong suốt thai kỳ.'
+
+MERGE (o1:organ {id: 'nhau_thai_organ'})
+MERGE (o2:organ {id: 'cơ_thể_người_mẹ_organ'})
+MERGE (o1)-[r51:locatedIn]->(o2)
+SET r51.text = 'Theo các chuyên gia sản khoa, tiền sản giật khi mang bầu xảy ra do giảm lưu lượng máu đến nhau thai - cơ quan nuôi dưỡng thai nhi trong suốt thai kỳ.'
+
+MERGE (o1:organ {id: 'nhau_thai_organ'})
+MERGE (o2:organ {id: 'thai_nhi_organ'})
+MERGE (o1)-[r52:affects]->(o2)
+SET r52.text = 'Theo các chuyên gia sản khoa, tiền sản giật khi mang bầu xảy ra do giảm lưu lượng máu đến nhau thai - cơ quan nuôi dưỡng thai nhi trong suốt thai kỳ.'
+
+MERGE (o1:organ {id: 'mạch_máu_organ'})
+MERGE (o2:organ {id: 'cơ_thể_người_mẹ_organ'})
+MERGE (o1)-[r53:locatedIn]->(o2)
+SET r53.text = 'Đầu thai kỳ, các mạch máu mới phát triển để đưa máu đến nhau thai một cách hiệu quả.'
+
+MERGE (o1:organ {id: 'mạch_máu_organ'})
+MERGE (o2:cause {id: 'lưu_lượng_máu_đến_nhau_thai_cause'})
+MERGE (o1)-[r54:affects]->(o2)
+SET r54.text = 'Đầu thai kỳ, các mạch máu mới phát triển để đưa máu đến nhau thai một cách hiệu quả.'
+
+MERGE (o1:organ {id: 'mạch_máu_organ'})
+MERGE (o2:disease {id: 'tiền_sản_giật_disease'})
+MERGE (o1)-[r55:relatedTo]->(o2)
+SET r55.text = 'Ở phụ nữ gặp hội chứng này, những mạch máu này dường như không phát triển hoặc vận hành đúng chức năng.'
+
+MERGE (o1:symptom {id: 'mạch_máu_hẹp_symptom'})
+MERGE (o2:disease {id: 'tiền_sản_giật_disease'})
+MERGE (o1)-[r56:isSymptomOf]->(o2)
+SET r56.text = 'Chúng hẹp hơn các mạch máu bình thường, khiến lượng máu chảy qua bị hạn chế.'
+
+MERGE (o1:cause {id: 'mạch_máu_hẹp_cause'})
+MERGE (o2:cause {id: 'giảm_lưu_lượng_máu_đến_nhau_thai_cause'})
+MERGE (o1)-[r57:causedBy]->(o2)
+SET r57.text = 'Chúng hẹp hơn các mạch máu bình thường, khiến lượng máu chảy qua bị hạn chế.'
+
+MERGE (o1:cause {id: 'lưu_lượng_máu_đến_tử_cung_không_đủ_cause'})
+MERGE (o2:disease {id: 'tiền_sản_giật_disease'})
+MERGE (o1)-[r58:causedBy]->(o2)
+SET r58.text = 'Nguyên nhân của sự phát triển bất thường này là do: Lưu lượng máu đến tử cung không đủ; Tổn thương mạch máu; Hệ thống miễn dịch suy giảm hoặc có vấn đề; Một số gen bất thường.'
+
+MERGE (o1:cause {id: 'tổn_thương_mạch_máu_cause'})
+MERGE (o2:disease {id: 'tiền_sản_giật_disease'})
+MERGE (o1)-[r59:causedBy]->(o2)
+SET r59.text = 'Nguyên nhân của sự phát triển bất thường này là do: Lưu lượng máu đến tử cung không đủ; Tổn thương mạch máu; Hệ thống miễn dịch suy giảm hoặc có vấn đề; Một số gen bất thường.'
+
+MERGE (o1:cause {id: 'hệ_thống_miễn_dịch_suy_giảm_cause'})
+MERGE (o2:disease {id: 'tiền_sản_giật_disease'})
+MERGE (o1)-[r60:causedBy]->(o2)
+SET r60.text = 'Nguyên nhân của sự phát triển bất thường này là do: Lưu lượng máu đến tử cung không đủ; Tổn thương mạch máu; Hệ thống miễn dịch suy giảm hoặc có vấn đề; Một số gen bất thường.'
+
+MERGE (o1:cause {id: 'một_số_gen_bất_thường_cause'})
+MERGE (o2:disease {id: 'tiền_sản_giật_disease'})
+MERGE (o1)-[r61:causedBy]->(o2)
+SET r61.text = 'Nguyên nhân của sự phát triển bất thường này là do: Lưu lượng máu đến tử cung không đủ; Tổn thương mạch máu; Hệ thống miễn dịch suy giảm hoặc có vấn đề; Một số gen bất thường.'
+
+MERGE (o1:cause {id: 'tiền_sử_gia_đình_cause'})
+MERGE (o2:disease {id: 'tiền_sản_giật_disease'})
+MERGE (o1)-[r62:causedBy]->(o2)
+SET r62.text = 'Nếu có một trong các yếu tố sau, bạn có nguy cơ cao mắc bệnh: (5)<br />1. Tiền sử gia đình: Nếu mẹ/chị/em gái bạn từng bị vấn đề này, nguy cơ bạn cũng bị tai biến này sẽ tăng cao;'
+
+MERGE (o1:cause {id: 'tiền_sử_tiền_sản_giật_cause'})
+MERGE (o2:disease {id: 'tiền_sản_giật_disease'})
+MERGE (o1)-[r63:causedBy]->(o2)
+SET r63.text = 'Nếu có một trong các yếu tố sau, bạn có nguy cơ cao mắc bệnh: (5)<br />2. Tiền sử tiền sản giật, cụ thể: Nếu bạn bị vào cuối thai kỳ trước, khả năng bệnh xảy ra một lần nữa là khá thấp - khoảng 13%;'
+
+MERGE (o1:cause {id: 'tiền_sản_giật_nặng_cause'})
+MERGE (o2:disease {id: 'tiền_sản_giật_disease'})
+MERGE (o1)-[r64:causedBy]->(o2)
+SET r64.text = 'Nếu có một trong các yếu tố sau, bạn có nguy cơ cao mắc bệnh: (5)<br />2. Tiền sử tiền sản giật, cụ thể: Nếu bạn bị vào cuối thai kỳ trước, khả năng bệnh xảy ra một lần nữa là khá thấp - khoảng 13%; Nếu bạn bị tiền sản giật nặng trước 29 tuần mang thai, khả năng bạn bị lại là 40% hoặc thậm chí cao hơn;'
+
+MERGE (o1:disease {id: 'tiền_sản_giật_disease'})
+MERGE (o2:lifestyle {id: 'mang_thai_lifestyle'})
+MERGE (o1)-[r65:associatedWith]->(o2)
+SET r65.text = 'Nếu có một trong các yếu tố sau, bạn có nguy cơ cao mắc bệnh: (5)<br />2. Tiền sử tiền sản giật, cụ thể: Nếu bạn bị vào cuối thai kỳ trước, khả năng bệnh xảy ra một lần nữa là khá thấp - khoảng 13%; Nếu bạn bị tiền sản giật nặng trước 29 tuần mang thai, khả năng bạn bị lại là 40% hoặc thậm chí cao hơn; Nếu bạn bị ở hai lần mang thai trước, nguy cơ bị lại ở lần mang thai thứ ba là khoảng 30%.'
+
+MERGE (o1:cause {id: 'tăng_huyết_áp_mãn_tính_cause'})
+MERGE (o2:disease {id: 'tiền_sản_giật_disease'})
+MERGE (o1)-[r66:causedBy]->(o2)
+SET r66.text = 'Nếu có một trong các yếu tố sau, bạn có nguy cơ cao mắc bệnh: (5)<br />3. Tăng huyết áp mãn tính;'
+
+MERGE (o1:cause {id: 'mang_thai_lần_đầu_cause'})
+MERGE (o2:disease {id: 'tiền_sản_giật_disease'})
+MERGE (o1)-[r67:causedBy]->(o2)
+SET r67.text = 'Nếu có một trong các yếu tố sau, bạn có nguy cơ cao mắc bệnh: (5)<br />4. Mang thai lần đầu;'
+
+MERGE (o1:cause {id: 'mang_song_thai_hoặc_đa_thai_cause'})
+MERGE (o2:disease {id: 'tiền_sản_giật_disease'})
+MERGE (o1)-[r68:causedBy]->(o2)
+SET r68.text = 'Nếu có một trong các yếu tố sau, bạn có nguy cơ cao mắc bệnh: (5)<br />5. Mang song thai hoặc đa thai;'
+
+MERGE (o1:cause {id: 'tuổi_tác_cause'})
+MERGE (o2:disease {id: 'tiền_sản_giật_disease'})
+MERGE (o1)-[r69:causedBy]->(o2)
+SET r69.text = 'Nếu có một trong các yếu tố sau, bạn có nguy cơ cao mắc bệnh: (5)<br />6. Tuổi tác: Nguy cơ mắc bệnh cao hơn đối với phụ nữ mang thai quá sớm (dưới 20 tuổi) hoặc quá muộn (trên 35 tuổi);'
+
+MERGE (o1:cause {id: 'thừa_cân_-_béo_phì_trong_thai_kỳ_cause'})
+MERGE (o2:disease {id: 'tiền_sản_giật_disease'})
+MERGE (o1)-[r70:causedBy]->(o2)
+SET r70.text = 'Nếu có một trong các yếu tố sau, bạn có nguy cơ cao mắc bệnh: (5)<br />7. Thừa cân - béo phì trong thai kỳ;'
+
+MERGE (o1:cause {id: 'khoảng_cách_giữa_các_lần_mang_thai_quá_ngắn_hoặc_quá_dài_cause'})
+MERGE (o2:disease {id: 'tiền_sản_giật_disease'})
+MERGE (o1)-[r71:causedBy]->(o2)
+SET r71.text = 'Nếu có một trong các yếu tố sau, bạn có nguy cơ cao mắc bệnh: (5)<br />8. Khoảng cách giữa các lần mang thai quá ngắn hoặc quá dài: Có con cách nhau dưới 2 năm hoặc hơn 10 năm dẫn đến nguy cơ tiền sản giật tăng cao;'
+
+MERGE (o1:cause {id: 'tiền_sử_đau_nửa_đầu_cause'})
+MERGE (o2:disease {id: 'tiền_sản_giật_disease'})
+MERGE (o1)-[r72:causedBy]->(o2)
+SET r72.text = 'Nếu có một trong các yếu tố sau, bạn có nguy cơ cao mắc bệnh: (5)<br />9. Tiền sử đau nửa đầu, đái tháo đường, bệnh thận, có xu hướng phát triển cục máu đông hoặc lupus ban đỏ…;'
+
+MERGE (o1:disease {id: 'đái_tháo_đường_disease'})
+MERGE (o2:disease {id: 'tiền_sản_giật_disease'})
+MERGE (o1)-[r73:causedBy]->(o2)
+SET r73.text = 'Nếu có một trong các yếu tố sau, bạn có nguy cơ cao mắc bệnh: (5)<br />9. Tiền sử đau nửa đầu, đái tháo đường, bệnh thận, có xu hướng phát triển cục máu đông hoặc lupus ban đỏ…;'
+
+MERGE (o1:disease {id: 'bệnh_thận_disease'})
+MERGE (o2:disease {id: 'tiền_sản_giật_disease'})
+MERGE (o1)-[r74:causedBy]->(o2)
+SET r74.text = 'Nếu có một trong các yếu tố sau, bạn có nguy cơ cao mắc bệnh: (5)<br />9. Tiền sử đau nửa đầu, đái tháo đường, bệnh thận, có xu hướng phát triển cục máu đông hoặc lupus ban đỏ…;'
+
+MERGE (o1:cause {id: 'có_xu_hướng_phát_triển_cục_máu_đông_cause'})
+MERGE (o2:disease {id: 'tiền_sản_giật_disease'})
+MERGE (o1)-[r75:causedBy]->(o2)
+SET r75.text = 'Nếu có một trong các yếu tố sau, bạn có nguy cơ cao mắc bệnh: (5)<br />9. Tiền sử đau nửa đầu, đái tháo đường, bệnh thận, có xu hướng phát triển cục máu đông hoặc lupus ban đỏ…;'
+
+MERGE (o1:disease {id: 'lupus_ban_đỏ_disease'})
+MERGE (o2:disease {id: 'tiền_sản_giật_disease'})
+MERGE (o1)-[r76:causedBy]->(o2)
+SET r76.text = 'Nếu có một trong các yếu tố sau, bạn có nguy cơ cao mắc bệnh: (5)<br />9. Tiền sử đau nửa đầu, đái tháo đường, bệnh thận, có xu hướng phát triển cục máu đông hoặc lupus ban đỏ…;'
+
+MERGE (o1:test {id: 'đo_huyết_áp_test'})
+MERGE (o2:disease {id: 'tiền_sản_giật_disease'})
+MERGE (o1)-[r77:diagnosedBy]->(o2)
+SET r77.text = 'ThS.BS Đinh Thị Hiền Lê cho biết, tại Bệnh viện Đa khoa Tâm Anh, bác sĩ sẽ thực hiện các xét nghiệm sau nhằm xác định bạn có bị hội chứng bệnh này hay không: Đo huyết áp: Với phụ nữ chưa từng bị cao huyết áp thì nếu kết quả 140/90 trở lên được xác định là huyết áp cao.'
+
+MERGE (o1:symptom {id: 'huyết_áp_cao_symptom'})
+MERGE (o2:disease {id: 'tiền_sản_giật_disease'})
+MERGE (o1)-[r78:isSymptomOf]->(o2)
+SET r78.text = 'ThS.BS Đinh Thị Hiền Lê cho biết, tại Bệnh viện Đa khoa Tâm Anh, bác sĩ sẽ thực hiện các xét nghiệm sau nhằm xác định bạn có bị hội chứng bệnh này hay không: Đo huyết áp: Với phụ nữ chưa từng bị cao huyết áp thì nếu kết quả 140/90 trở lên được xác định là huyết áp cao. Vì huyết áp thay đổi trong ngày nên bạn sẽ được đo nhiều lần vào các thời điểm khác nhau để cho ra kết quả chính xác.'
+
+MERGE (o1:test {id: 'protein_trong_nước_tiểu_test'})
+MERGE (o2:disease {id: 'tiền_sản_giật_disease'})
+MERGE (o1)-[r79:diagnosedBy]->(o2)
+SET r79.text = 'ThS.BS Đinh Thị Hiền Lê cho biết, tại Bệnh viện Đa khoa Tâm Anh, bác sĩ sẽ thực hiện các xét nghiệm sau nhằm xác định bạn có bị hội chứng bệnh này hay không: Protein trong nước tiểu: Bạn sẽ làm xét nghiệm kiểm tra tỷ lệ protein-creatinine (creatinine là chất thải do thận lọc ra) trong nước tiểu.'
+
+MERGE (o1:test {id: 'xét_nghiệm_máu_test'})
+MERGE (o2:disease {id: 'tiền_sản_giật_disease'})
+MERGE (o1)-[r80:diagnosedBy]->(o2)
+SET r80.text = 'ThS.BS Đinh Thị Hiền Lê cho biết, tại Bệnh viện Đa khoa Tâm Anh, bác sĩ sẽ thực hiện các xét nghiệm sau nhằm xác định bạn có bị hội chứng bệnh này hay không: Xét nghiệm máu: Nếu bạn có nguy cơ cao mắc bệnh, bác sĩ sẽ yêu cầu bạn xét nghiệm máu thường xuyên, bao gồm cả tổng phân tích tế bào máu ngoại vi (CBC) và xét nghiệm chức năng gan, thận.'
+
+MERGE (o1:disease {id: 'hội_chứng_hellp_disease'})
+MERGE (o2:disease {id: 'tiền_sản_giật_disease'})
+MERGE (o1)-[r81:relatedTo]->(o2)
+SET r81.text = 'ThS.BS Đinh Thị Hiền Lê cho biết, tại Bệnh viện Đa khoa Tâm Anh, bác sĩ sẽ thực hiện các xét nghiệm sau nhằm xác định bạn có bị hội chứng bệnh này hay không: Xét nghiệm máu: Nếu bạn có nguy cơ cao mắc bệnh, bác sĩ sẽ yêu cầu bạn xét nghiệm máu thường xuyên, bao gồm cả tổng phân tích tế bào máu ngoại vi (CBC) và xét nghiệm chức năng gan, thận. Việc làm này cũng giúp sàng lọc hội chứng HELLP.'
+
+MERGE (o1:test {id: 'siêu_âm_test'})
+MERGE (o2:disease {id: 'tiền_sản_giật_disease'})
+MERGE (o1)-[r82:diagnosedBy]->(o2)
+SET r82.text = 'ThS.BS Đinh Thị Hiền Lê cho biết, tại Bệnh viện Đa khoa Tâm Anh, bác sĩ sẽ thực hiện các xét nghiệm sau nhằm xác định bạn có bị hội chứng bệnh này hay không: Các xét nghiệm đánh giá sức khỏe của em bé: Bạn sẽ được siêu âm để kiểm tra sự phát triển của em bé, xem bé có đang tăng trưởng tốt hay không.'
+
+MERGE (o1:test {id: 'siêu_âm_test'})
+MERGE (o2:symptom {id: 'sự_phát_triển_của_em_bé_symptom'})
+MERGE (o1)-[r83:affects]->(o2)
+SET r83.text = 'ThS.BS Đinh Thị Hiền Lê cho biết, tại Bệnh viện Đa khoa Tâm Anh, bác sĩ sẽ thực hiện các xét nghiệm sau nhằm xác định bạn có bị hội chứng bệnh này hay không: Các xét nghiệm đánh giá sức khỏe của em bé: Bạn sẽ được siêu âm để kiểm tra sự phát triển của em bé, xem bé có đang tăng trưởng tốt hay không.'
+
+MERGE (o1:disease {id: 'tiền_sản_giật_disease'})
+MERGE (o2:treatment {id: 'theo_dõi_chặt_chẽ_treatment'})
+MERGE (o1)-[r84:treatedBy]->(o2)
+SET r84.text = 'Sau khi trải qua hàng loạt xét nghiệm, nếu được chẩn đoán bị tiền sản giật, bạn và em bé sẽ được theo dõi chặt chẽ trong suốt thời gian còn lại của thai kỳ để hạn chế tối đa biến chứng.'
+
+MERGE (o1:disease {id: 'các_biến_chứng_disease'})
+MERGE (o2:disease {id: 'tiền_sản_giật_disease'})
+MERGE (o1)-[r85:relatedTo]->(o2)
+SET r85.text = 'Các biến chứng thường gặp là:'
+
+MERGE (o1:disease {id: 'bệnh_disease'})
+MERGE (o2:organ {id: 'các_động_mạch_mang_máu_đến_nhau_thai_organ'})
+MERGE (o1)-[r86:affects]->(o2)
+SET r86.text = 'Bệnh ảnh hưởng đến các động mạch mang máu đến nhau thai.'
+
+MERGE (o1:symptom {id: 'nhau_thai_không_nhận_đủ_lượng_máu_symptom'})
+MERGE (o2:disease {id: 'tiền_sản_giật_disease'})
+MERGE (o1)-[r87:isSymptomOf]->(o2)
+SET r87.text = 'Khi nhau thai không nhận đủ lượng máu cần thiết, thai nhi sẽ không được cung cấp đủ máu, oxy và chất dinh dưỡng.'
+
+MERGE (o1:symptom {id: 'chậm_tăng_trưởng__nhẹ_cân_và_suy_dinh_dưỡng_symptom'})
+MERGE (o2:disease {id: 'tiền_sản_giật_disease'})
+MERGE (o1)-[r88:isSymptomOf]->(o2)
+SET r88.text = 'Đây là nguyên nhân khiến em bé chậm tăng trưởng, trở nên nhẹ cân và suy dinh dưỡng lúc chào đời.'
+
+MERGE (o1:treatment {id: 'sinh_sớm_treatment'})
+MERGE (o2:disease {id: 'tiền_sản_giật_disease'})
+MERGE (o1)-[r89:treatedBy]->(o2)
+SET r89.text = 'Nếu bạn bị ở mức độ nghiêm trọng, có thể bác sĩ sẽ chỉ định bạn sinh sớm để tránh nguy hiểm cho hai mẹ con.'
+
+MERGE (o1:treatment {id: 'sinh_non_treatment'})
+MERGE (o2:organ {id: 'hệ_miễn_dịch__hệ_hô_hấp__các_cơ_quan_khác_organ'})
+MERGE (o1)-[r90:affects]->(o2)
+SET r90.text = 'Tuy nhiên, sinh non sẽ khiến em bé gặp phải các vấn đề sức khỏe như suy giảm hệ miễn dịch, hệ hô hấp, các cơ quan khác bị tổn thương.'
+
+MERGE (o1:treatment {id: 'thăm_khám_thường_xuyên_treatment'})
+MERGE (o2:disease {id: 'tiền_sản_giật_disease'})
+MERGE (o1)-[r91:treatedBy]->(o2)
+SET r91.text = 'Do đó, thai phụ bị hội chứng trong khi mang bầu này cần được thăm khám thường xuyên để bác sĩ xác định thời điểm nào là tốt nhất cho chuyến vượt cạn quan trọng.'
+
+MERGE (o1:disease {id: 'tiền_sản_giật_disease'})
+MERGE (o2:disease {id: 'vỡ_nhau_thai_disease'})
+MERGE (o1)-[r92:affects]->(o2)
+SET r92.text = 'Tiền sản giật làm tăng nguy cơ vỡ nhau thai - tình trạng nhau thai tách ra khỏi thành trong của tử cung trước khi sinh.'
+
+MERGE (o1:symptom {id: 'chảy_máu_nặng_symptom'})
+MERGE (o2:disease {id: 'vỡ_nhau_thai_disease'})
+MERGE (o1)-[r93:isSymptomOf]->(o2)
+SET r93.text = 'Nhau thai bị vỡ có thể gây chảy máu nặng, đe dọa tính mạng cả mẹ và em bé.'
+
+MERGE (o1:disease {id: 'hellp_disease'})
+MERGE (o2:disease {id: 'tiền_sản_giật_disease'})
+MERGE (o1)-[r94:isSymptomOf]->(o2)
+SET r94.text = 'HELLP là hiện tượng tan máu (phá hủy các tế bào hồng cầu), men gan cao và số lượng tiểu cầu thấp.'
+
+MERGE (o1:disease {id: 'hellp_disease'})
+MERGE (o2:disease {id: 'tiền_sản_giật_disease'})
+MERGE (o1)-[r95:relatedTo]->(o2)
+SET r95.text = 'Đây là biến chứng tiền sản giật nặng, xuất hiện ở 4 - 12% mẹ bầu, nguy hiểm đến tính mạng của mẹ và bé.'
+
+MERGE (o1:symptom {id: 'buồn_nôn_và_nôn__đau_đầu__đau_bụng_trên_bên_phải_symptom'})
+MERGE (o2:disease {id: 'hellp_disease'})
+MERGE (o1)-[r96:isSymptomOf]->(o2)
+SET r96.text = 'Các triệu chứng của hội chứng HELLP bao gồm buồn nôn và nôn, đau đầu, đau bụng trên bên phải.'
+
+MERGE (o1:disease {id: 'hội_chứng_hellp_disease'})
+MERGE (o2:organ {id: 'hệ_thống_cơ_quan_organ'})
+MERGE (o1)-[r97:affects]->(o2)
+SET r97.text = 'Hội chứng HELLP đặc biệt nguy hiểm vì gây tổn thương nghiêm trọng một số hệ thống cơ quan khác.'
+
+MERGE (o1:disease {id: 'sản_giật_disease'})
+MERGE (o2:disease {id: 'tiền_sản_giật_disease'})
+MERGE (o1)-[r98:isSymptomOf]->(o2)
+SET r98.text = 'Khi không được kiểm soát, biến chứng sản giật (tiền sản giật cộng với co giật) có khả năng xảy ra.'
+
+MERGE (o1:disease {id: 'sản_giật_disease'})
+MERGE (o2:organ {id: 'mẹ_và_bé_organ'})
+MERGE (o1)-[r99:affects]->(o2)
+SET r99.text = 'Sản giật được xem là một trong những tai biến sản khoa gây tử vong hàng đầu cho mẹ và bé.'
+
+MERGE (o1:symptom {id: 'động_kinh__đau_bụng__bất_tỉnh_symptom'})
+MERGE (o2:disease {id: 'sản_giật_disease'})
+MERGE (o1)-[r100:isSymptomOf]->(o2)
+SET r100.text = 'Vì thế, ngay khi xuất hiện các dấu hiệu sản giật (động kinh, đau bụng, bất tỉnh), bác sĩ cần can thiệp ngay bất kể đang ở tuần thứ bao nhiêu của thai kỳ.'
+
+MERGE (o1:disease {id: 'tiền_sản_giật_disease'})
+MERGE (o2:organ {id: 'thận__gan__phổi__tim__mắt_organ'})
+MERGE (o1)-[r101:affects]->(o2)
+SET r101.text = 'Bệnh tiền sản giật khi mang bầu có thể gây tổn thương thận, gan, phổi, tim, mắt.'
+
+MERGE (o1:disease {id: 'tiền_sản_giật_disease'})
+MERGE (o2:disease {id: 'đột_quỵ_hoặc_chấn_thương_não_disease'})
+MERGE (o1)-[r102:affects]->(o2)
+SET r102.text = 'Bên cạnh đó, nó còn dễ gây đột quỵ hoặc chấn thương não.'
+
+MERGE (o1:disease {id: 'tiền_sản_giật_disease'})
+MERGE (o2:organ {id: 'các_cơ_quan_organ'})
+MERGE (o1)-[r103:affects]->(o2)
+SET r103.text = 'Mức độ gây tổn thương cho các cơ quan phụ thuộc vào độ nghiêm trọng của bệnh.'
+
+MERGE (o1:disease {id: 'tiền_sản_giật_disease'})
+MERGE (o2:disease {id: 'bệnh_tim_và_mạch_máu_disease'})
+MERGE (o1)-[r104:affects]->(o2)
+SET r104.text = 'Căn bệnh này làm tăng nguy cơ mắc bệnh tim và mạch máu cho sản phụ trong tương lai.'
+
+MERGE (o1:disease {id: 'tiền_sản_giật_disease'})
+MERGE (o2:treatment {id: 'sinh_non_treatment'})
+MERGE (o1)-[r105:aggravatedBy]->(o2)
+SET r105.text = 'Nguy cơ thậm chí còn lớn hơn, nếu bạn bị vấn đề này nhiều lần hoặc sinh non.'
+
+MERGE (o1:disease {id: 'tiền_sản_giật_disease'})
+MERGE (o2:lifestyle {id: 'duy_trì_cân_nặng_lý_tưởng__ăn_nhiều_trái_cây_và_rau_quả__tập_thể_dục_thường_xuyên_và_không_hút_thuốc_lá_lifestyle'})
+MERGE (o1)-[r106:preventedBy]->(o2)
+SET r106.text = 'Để giảm thiểu rủi ro này, sau khi sinh, bạn hãy cố gắng duy trì cân nặng lý tưởng, ăn nhiều trái cây và rau quả, tập thể dục thường xuyên và không hút thuốc lá.'
+
+MERGE (o1:disease {id: 'tiền_sản_giật_disease'})
+MERGE (o2:lifestyle {id: 'chế_độ_ăn_nhiều_trái_cây_và_rau_củ_lifestyle'})
+MERGE (o1)-[r107:preventedBy]->(o2)
+SET r107.text = 'Chế độ ăn nhiều trái cây và rau củ giúp giảm nguy cơ mắc bệnh tim mạch sau này cho sản phụ bị tiền sản giật'
+
+MERGE (o1:disease {id: 'tiền_sản_giật_disease'})
+MERGE (o2:treatment {id: 'sinh_nở_càng_sớm_càng_tốt_treatment'})
+MERGE (o1)-[r108:treatedBy]->(o2)
+SET r108.text = 'Cách chữa trị dứt điểm là để sản phụ sinh nở càng sớm càng tốt.'
+
+MERGE (o1:disease {id: 'tiền_sản_giật_disease'})
+MERGE (o2:test {id: 'tuần_thai__tình_trạng_phát_triển_của_thai_nhi_test'})
+MERGE (o1)-[r109:diagnosedBy]->(o2)
+SET r109.text = 'Bác sĩ sẽ trao đổi với bạn về thời điểm sinh con dựa trên tuần thai, tình trạng phát triển của thai nhi cũng như mức độ nghiêm trọng của bệnh.'
+
+MERGE (o1:disease {id: 'tiền_sản_giật_disease'})
+MERGE (o2:treatment {id: 'sinh_ngay_treatment'})
+MERGE (o1)-[r110:treatedBy]->(o2)
+SET r110.text = 'Nếu em bé phát triển tốt, đủ 37 tuần hoặc hơn, bác sĩ sẽ chỉ định sinh ngay để tình trạng tiền sản giật không diễn biến tồi tệ hơn nữa.'
+
+MERGE (o1:disease {id: 'tiền_sản_giật_disease'})
+MERGE (o2:treatment {id: 'theo_dõi_chặt_chẽ_treatment'})
+MERGE (o1)-[r111:treatedBy]->(o2)
+SET r111.text = 'Nếu em bé dưới 37 tuần tuổi và bệnh diễn biến chưa quá nghiêm trọng, bác sĩ sẽ theo dõi chặt chẽ cho đến khi thai nhi phát triển đủ để cuộc sinh nở diễn ra an toàn.'
+
+MERGE (o1:disease {id: 'tiền_sản_giật_nhẹ_disease'})
+MERGE (o2:treatment {id: 'nghỉ_ngơi_tại_giường__nằm_nghiêng_về_bên_trái__theo_dõi_cẩn_thận_bằng_máy_đo_nhịp_tim_thai_và_siêu_âm_thường_xuyên__xét_nghiệm_máu_và_nước_tiểu__uống_thuốc_hạ_huyết_áp_treatment'})
+MERGE (o1)-[r112:treatedBy]->(o2)
+SET r112.text = 'Nếu bạn bị tiền sản giật nhẹ, không có nguy cơ gây ra biến chứng nghiêm trọng, bác sĩ sẽ điều trị bằng cách:'
+
+MERGE (o1:disease {id: 'tiền_sản_giật_nhẹ_disease'})
+MERGE (o2:treatment {id: 'nghỉ_ngơi_tại_giường__nằm_nghiêng_về_bên_trái_treatment'})
+MERGE (o1)-[r113:treatedBy]->(o2)
+SET r113.text = 'Khuyên nghỉ ngơi tại giường, nên nằm nghiêng về bên trái;'
+
+MERGE (o1:disease {id: 'tiền_sản_giật_nhẹ_disease'})
+MERGE (o2:treatment {id: 'theo_dõi_cẩn_thận_bằng_máy_đo_nhịp_tim_thai_và_siêu_âm_thường_xuyên_treatment'})
+MERGE (o1)-[r114:treatedBy]->(o2)
+SET r114.text = 'Theo dõi cẩn thận bằng máy đo nhịp tim thai và siêu âm thường xuyên;'
+
+MERGE (o1:disease {id: 'tiền_sản_giật_nhẹ_disease'})
+MERGE (o2:test {id: 'xét_nghiệm_máu_và_nước_tiểu_test'})
+MERGE (o1)-[r115:treatedBy]->(o2)
+SET r115.text = 'Xét nghiệm máu và nước tiểu;'
+
+MERGE (o1:disease {id: 'tiền_sản_giật_nhẹ_disease'})
+MERGE (o2:treatment {id: 'thuốc_hạ_huyết_áp_treatment'})
+MERGE (o1)-[r116:treatedBy]->(o2)
+SET r116.text = 'Cho uống thuốc hạ huyết áp;'
+
+MERGE (o1:disease {id: 'tiền_sản_giật_nhẹ_disease'})
+MERGE (o2:treatment {id: 'nghỉ_ngơi_treatment'})
+MERGE (o1)-[r117:treatedBy]->(o2)
+SET r117.text = 'Tranh thủ nghỉ ngơi mọi lúc là cách giảm các triệu chứng'
+
+MERGE (o1:disease {id: 'tiền_sản_giật_nhẹ_disease'})
+MERGE (o2:treatment {id: 'ở_lại_bệnh_viện_treatment'})
+MERGE (o1)-[r118:treatedBy]->(o2)
+SET r118.text = 'Bác sĩ cũng có thể khuyên bạn ở lại bệnh viện để được theo dõi chặt chẽ hơn.'
+
+MERGE (o1:disease {id: 'tiền_sản_giật_nhẹ_disease'})
+MERGE (o2:treatment {id: 'uống_thuốc_giúp_ngăn_ngừa_co_giật__hạ_huyết_áp_và_phòng_tránh_các_vấn_đề_sức_khỏe_khác__tiêm_steroid_để_giúp_phổi_của_bé_phát_triển_nhanh_hơn__tiêm_magie_để_ngăn_ngừa_co_giật_liên_quan_đến_sản_giật_treatment'})
+MERGE (o1)-[r119:treatedBy]->(o2)
+SET r119.text = 'Ở đó, bác sĩ sẽ:'
+
+MERGE (o1:disease {id: 'tiền_sản_giật_nhẹ_disease'})
+MERGE (o2:treatment {id: 'thuốc_giúp_ngăn_ngừa_co_giật__hạ_huyết_áp_treatment'})
+MERGE (o1)-[r120:treatedBy]->(o2)
+SET r120.text = 'Cho bạn uống thuốc giúp ngăn ngừa co giật, hạ huyết áp và phòng tránh các vấn đề sức khỏe khác'
+
+MERGE (o1:disease {id: 'tiền_sản_giật_nhẹ_disease'})
+MERGE (o2:treatment {id: 'tiêm_steroid_treatment'})
+MERGE (o1)-[r121:treatedBy]->(o2)
+SET r121.text = 'Tiêm steroid để giúp phổi của bé phát triển nhanh hơn'
+
+MERGE (o1:disease {id: 'tiền_sản_giật_nhẹ_disease'})
+MERGE (o2:treatment {id: 'tiêm_magie_treatment'})
+MERGE (o1)-[r122:treatedBy]->(o2)
+SET r122.text = 'Tiêm magie để ngăn ngừa co giật liên quan đến sản giật'
+
+MERGE (o1:disease {id: 'tiền_sản_giật__sản_giật_và_hội_chứng_hellp_disease'})
+MERGE (o2:treatment {id: 'chuyển_dạ_hoặc_sau_khi_sinh_treatment'})
+MERGE (o1)-[r123:relatedTo]->(o2)
+SET r123.text = 'Với trường hợp tiền sản giật, sản giật và hội chứng HELLP xảy ra trong lúc chuyển dạ hoặc sau khi sinh, dấu hiệu sẽ xuất hiện trong vòng 48 giờ và muộn nhất là 6 tuần sau sinh.'
+
+MERGE (o1:disease {id: 'tiền_sản_giật__sản_giật_và_hội_chứng_hellp_disease'})
+MERGE (o2:treatment {id: 'kiểm_tra_huyết_áp_và_theo_dõi_sát_sao_treatment'})
+MERGE (o1)-[r124:treatedBy]->(o2)
+SET r124.text = 'Lúc này, sản phụ sẽ được kiểm tra huyết áp và theo dõi sát sao sau khi xuất viện.'
+
+MERGE (o1:symptom {id: 'đau_đầu_dữ_dội__đau_bụng_dữ_dội_hoặc_thay_đổi_thị_lực_symptom'})
+MERGE (o2:disease {id: 'tiền_sản_giật_hoặc_hellp_disease'})
+MERGE (o1)-[r125:isSymptomOf]->(o2)
+SET r125.text = 'Nếu bạn gặp bất kỳ triệu chứng tiền sản giật hoặc HELLP nào, chẳng hạn như đau đầu dữ dội, đau bụng dữ dội hoặc thay đổi thị lực, hãy quay trở lại bệnh viện ngay.'

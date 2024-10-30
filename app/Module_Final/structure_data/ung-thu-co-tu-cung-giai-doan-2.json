@@ -1,0 +1,522 @@
+[
+    {
+        "text": "Ung thư cổ tử cung giai đoạn II có tiên lượng tương đối tốt.",
+        "head": "Ung thư cổ tử cung giai đoạn II",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "tiên lượng tương đối tốt",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Điều trị bao gồm phẫu thuật, xạ trị, hóa trị hoặc kết hợp giữa các phương pháp với nhau.",
+        "head": "Ung thư cổ tử cung giai đoạn II",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "phẫu thuật",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Điều trị bao gồm phẫu thuật, xạ trị, hóa trị hoặc kết hợp giữa các phương pháp với nhau.",
+        "head": "Ung thư cổ tử cung giai đoạn II",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "xạ trị",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Điều trị bao gồm phẫu thuật, xạ trị, hóa trị hoặc kết hợp giữa các phương pháp với nhau.",
+        "head": "Ung thư cổ tử cung giai đoạn II",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "hóa trị",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Ung thư cổ tử cung giai đoạn II là ung thư đã bắt đầu lan ra bên ngoài cổ tử cung và xâm lấn các mô xung quanh, nhưng chưa xâm lấn tới 1/3 dưới âm đạo và thành chậu.",
+        "head": "Ung thư cổ tử cung giai đoạn II",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "cổ tử cung",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Ung thư cổ tử cung giai đoạn II là ung thư đã bắt đầu lan ra bên ngoài cổ tử cung và xâm lấn các mô xung quanh, nhưng chưa xâm lấn tới 1/3 dưới âm đạo và thành chậu.",
+        "head": "Ung thư cổ tử cung giai đoạn II",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "âm đạo",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Ung thư cổ tử cung giai đoạn II là ung thư đã bắt đầu lan ra bên ngoài cổ tử cung và xâm lấn các mô xung quanh, nhưng chưa xâm lấn tới 1/3 dưới âm đạo và thành chậu.",
+        "head": "Ung thư cổ tử cung giai đoạn II",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "thành chậu",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Giai đoạn bệnh phản ánh mức độ phát triển của khối u và tình trạng di căn.",
+        "head": "Giai đoạn bệnh",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "khối u",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Giai đoạn bệnh phản ánh mức độ phát triển của khối u và tình trạng di căn.",
+        "head": "Giai đoạn bệnh",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "di căn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Phân loại giai đoạn giúp cho các bác sĩ đưa ra chỉ định điều trị phù hợp với từng người bệnh.",
+        "head": "Phân loại giai đoạn",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "bác sĩ",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Hệ thống phân loại của Liên đoàn Sản Phụ khoa Quốc tế (FIGO) phân chia ung thư cổ tử cung thành 4 giai đoạn được ký hiệu từ I đến IV.",
+        "head": "Hệ thống phân loại của Liên đoàn Sản Phụ khoa Quốc tế (FIGO)",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "ung thư cổ tử cung",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Trong đó, giai đoạn II được chia thành IIA và IIB.",
+        "head": "giai đoạn II",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "IIA",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Trong đó, giai đoạn II được chia thành IIA và IIB.",
+        "head": "giai đoạn II",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "IIB",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ở giai đoạn này, khối u đã lan xuống 2/3 trên của âm đạo nhưng chưa xâm lấn mô xung quanh cổ tử cung (còn gọi là chu cung), gồm có:",
+        "head": "khối u",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "âm đạo",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Ở giai đoạn này, khối u đã lan xuống 2/3 trên của âm đạo nhưng chưa xâm lấn mô xung quanh cổ tử cung (còn gọi là chu cung), gồm có:",
+        "head": "khối u",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "cổ tử cung",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Ở giai đoạn này, khối u đã lan xuống 2/3 trên của âm đạo nhưng chưa xâm lấn mô xung quanh cổ tử cung (còn gọi là chu cung), gồm có:",
+        "head": "khối u",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "chu cung",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Giai đoạn IIA1: Kích thước u ≤ 4cm.",
+        "head": "Giai đoạn IIA1",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "Kích thước u ≤ 4cm",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Giai đoạn IIA2: Kích thước u &gt; 4cm.",
+        "head": "Giai đoạn IIA2",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "Kích thước u &gt; 4cm",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Ở giai đoạn này, khối u đã xâm lấn chu cung nhưng chưa lan tới thành chậu.",
+        "head": "khối u",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "chu cung",
+        "tail_type": "organ"
+    },
+    {
+        "text": "TS.BS Vũ Hữu Khiêm - Trưởng khoa Ung bướu, BVĐK Tâm Anh Hà Nội, cho biết, các dấu hiệu nhận biết ung thư cổ tử cung giai đoạn II gồm:",
+        "head": "Ung thư cổ tử cung giai đoạn II",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Ra máu âm đạo bất thường, giữa các kỳ kinh, sau khi mãn kinh",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "TS.BS Vũ Hữu Khiêm - Trưởng khoa Ung bướu, BVĐK Tâm Anh Hà Nội, cho biết, các dấu hiệu nhận biết ung thư cổ tử cung giai đoạn II gồm:",
+        "head": "Ung thư cổ tử cung giai đoạn II",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Kinh nguyệt kéo dài hơn hoặc nhiều hơn bình thường",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "TS.BS Vũ Hữu Khiêm - Trưởng khoa Ung bướu, BVĐK Tâm Anh Hà Nội, cho biết, các dấu hiệu nhận biết ung thư cổ tử cung giai đoạn II gồm:",
+        "head": "Ung thư cổ tử cung giai đoạn II",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Đau/chảy máu sau khi quan hệ tình dục",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "TS.BS Vũ Hữu Khiêm - Trưởng khoa Ung bướu, BVĐK Tâm Anh Hà Nội, cho biết, các dấu hiệu nhận biết ung thư cổ tử cung giai đoạn II gồm:",
+        "head": "Ung thư cổ tử cung giai đoạn II",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Đau tức vùng chậu",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "TS.BS Vũ Hữu Khiêm - Trưởng khoa Ung bướu, BVĐK Tâm Anh Hà Nội, cho biết, các dấu hiệu nhận biết ung thư cổ tử cung giai đoạn II gồm:",
+        "head": "Ung thư cổ tử cung giai đoạn II",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Sự thay đổi trong dịch tiết âm đạo, chẳng hạn như tiết dịch nhiều hơn hoặc dịch tiết có màu mùi bất thường",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Theo bác sĩ Khiêm, ung thư cổ tử cung giai đoạn II có tỷ lệ sống còn 5 năm là trên 60%. Ở mỗi cá nhân, tỷ lệ sống còn có thể khác nhau, điều này tùy thuộc vào nhiều yếu tố như: (2)\nGiai đoạn bệnh.",
+        "head": "Ung thư cổ tử cung giai đoạn II",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "Giai đoạn bệnh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Theo bác sĩ Khiêm, ung thư cổ tử cung giai đoạn II có tỷ lệ sống còn 5 năm là trên 60%. Ở mỗi cá nhân, tỷ lệ sống còn có thể khác nhau, điều này tùy thuộc vào nhiều yếu tố như: (2)\nLoại giải phẫu bệnh (ung thư biểu mô tuyến, ung thư biểu mô vảy,&#8230;).",
+        "head": "Ung thư cổ tử cung giai đoạn II",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "Loại giải phẫu bệnh (ung thư biểu mô tuyến, ung thư biểu mô vảy,&#8230;)",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Theo bác sĩ Khiêm, ung thư cổ tử cung giai đoạn II có tỷ lệ sống còn 5 năm là trên 60%. Ở mỗi cá nhân, tỷ lệ sống còn có thể khác nhau, điều này tùy thuộc vào nhiều yếu tố như: (2)\nTuổi, tình trạng sức khỏe chung.",
+        "head": "Ung thư cổ tử cung giai đoạn II",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "Tuổi",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Theo bác sĩ Khiêm, ung thư cổ tử cung giai đoạn II có tỷ lệ sống còn 5 năm là trên 60%. Ở mỗi cá nhân, tỷ lệ sống còn có thể khác nhau, điều này tùy thuộc vào nhiều yếu tố như: (2)\nTuổi, tình trạng sức khỏe chung.",
+        "head": "Ung thư cổ tử cung giai đoạn II",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "Tình trạng sức khỏe chung",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Theo bác sĩ Khiêm, ung thư cổ tử cung giai đoạn II có tỷ lệ sống còn 5 năm là trên 60%. Ở mỗi cá nhân, tỷ lệ sống còn có thể khác nhau, điều này tùy thuộc vào nhiều yếu tố như: (2)\nCác vấn đề sức khỏe hoặc các bệnh đi kèm, đặc biệt là tình trạng suy giảm miễn dịch hay nhiễm HIV.",
+        "head": "Ung thư cổ tử cung giai đoạn II",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "Các vấn đề sức khỏe hoặc các bệnh đi kèm",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Theo bác sĩ Khiêm, ung thư cổ tử cung giai đoạn II có tỷ lệ sống còn 5 năm là trên 60%. Ở mỗi cá nhân, tỷ lệ sống còn có thể khác nhau, điều này tùy thuộc vào nhiều yếu tố như: (2)\nCác vấn đề sức khỏe hoặc các bệnh đi kèm, đặc biệt là tình trạng suy giảm miễn dịch hay nhiễm HIV.",
+        "head": "Ung thư cổ tử cung giai đoạn II",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "Tình trạng suy giảm miễn dịch",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Theo bác sĩ Khiêm, ung thư cổ tử cung giai đoạn II có tỷ lệ sống còn 5 năm là trên 60%. Ở mỗi cá nhân, tỷ lệ sống còn có thể khác nhau, điều này tùy thuộc vào nhiều yếu tố như: (2)\nCác vấn đề sức khỏe hoặc các bệnh đi kèm, đặc biệt là tình trạng suy giảm miễn dịch hay nhiễm HIV.",
+        "head": "Ung thư cổ tử cung giai đoạn II",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "Nhiễm HIV",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Theo bác sĩ Khiêm, ung thư cổ tử cung giai đoạn II có tỷ lệ sống còn 5 năm là trên 60%. Ở mỗi cá nhân, tỷ lệ sống còn có thể khác nhau, điều này tùy thuộc vào nhiều yếu tố như: (2)\nBệnh mới được chẩn đoán hay bệnh tái phát.",
+        "head": "Ung thư cổ tử cung giai đoạn II",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "Bệnh mới được chẩn đoán",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Theo bác sĩ Khiêm, ung thư cổ tử cung giai đoạn II có tỷ lệ sống còn 5 năm là trên 60%. Ở mỗi cá nhân, tỷ lệ sống còn có thể khác nhau, điều này tùy thuộc vào nhiều yếu tố như: (2)\nBệnh mới được chẩn đoán hay bệnh tái phát.",
+        "head": "Ung thư cổ tử cung giai đoạn II",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "Bệnh tái phát",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Theo bác sĩ Khiêm, ung thư cổ tử cung giai đoạn II có tỷ lệ sống còn 5 năm là trên 60%. Ở mỗi cá nhân, tỷ lệ sống còn có thể khác nhau, điều này tùy thuộc vào nhiều yếu tố như: (2)\nPhương pháp điều trị.",
+        "head": "Ung thư cổ tử cung giai đoạn II",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "Phương pháp điều trị",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Theo bác sĩ Khiêm, ung thư cổ tử cung giai đoạn II có tỷ lệ sống còn 5 năm là trên 60%. Ở mỗi cá nhân, tỷ lệ sống còn có thể khác nhau, điều này tùy thuộc vào nhiều yếu tố như: (2)\nSự đáp ứng của cơ thể với các phương pháp điều trị.",
+        "head": "Ung thư cổ tử cung giai đoạn II",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "Sự đáp ứng của cơ thể với các phương pháp điều trị",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Để xác định ung thư cổ tử cung giai đoạn II, khi thăm khám, bác sĩ sẽ hỏi về tiền sử bệnh, khám lâm sàng và đề nghị làm kiểm tra cận lâm sàng.",
+        "head": "Ung thư cổ tử cung giai đoạn II",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "Thăm khám",
+        "tail_type": "test"
+    },
+    {
+        "text": "Để xác định ung thư cổ tử cung giai đoạn II, khi thăm khám, bác sĩ sẽ hỏi về tiền sử bệnh, khám lâm sàng và đề nghị làm kiểm tra cận lâm sàng.",
+        "head": "Ung thư cổ tử cung giai đoạn II",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "Kiểm tra cận lâm sàng",
+        "tail_type": "test"
+    },
+    {
+        "text": "Khám, tầm soát ung thư cổ tử cung giúp phát hiện sớm và điều trị kịp thời Các phương pháp được sử dụng trong chẩn đoán ung thư cổ tử cung bao gồm: (3)\nSoi cổ tử cung là phương pháp giúp quan sát hình ảnh tổn thương tại cổ tử cung.",
+        "head": "Ung thư cổ tử cung",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "Soi cổ tử cung",
+        "tail_type": "test"
+    },
+    {
+        "text": "Khám, tầm soát ung thư cổ tử cung giúp phát hiện sớm và điều trị kịp thời Các phương pháp được sử dụng trong chẩn đoán ung thư cổ tử cung bao gồm: (3)\nSinh thiết cổ tử cung là lấy một mẫu mô nghi ngờ tổn thương ác tính sau đó gửi xét nghiệm mô bệnh học.",
+        "head": "Ung thư cổ tử cung",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "Sinh thiết cổ tử cung",
+        "tail_type": "test"
+    },
+    {
+        "text": "Khám, tầm soát ung thư cổ tử cung giúp phát hiện sớm và điều trị kịp thời Các phương pháp được sử dụng trong chẩn đoán ung thư cổ tử cung bao gồm: (3)\nChụp cộng hưởng từ (MRI) vùng tiểu khung Trong ung thư cổ tử cung, chụp MRI giúp quan sát hình ảnh khối u và đánh giá tình trạng xâm lấn.",
+        "head": "Ung thư cổ tử cung",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "Chụp cộng hưởng từ (MRI) vùng tiểu khung",
+        "tail_type": "test"
+    },
+    {
+        "text": "Khám, tầm soát ung thư cổ tử cung giúp phát hiện sớm và điều trị kịp thời Các phương pháp được sử dụng trong chẩn đoán ung thư cổ tử cung bao gồm: (3)\nNội soi bàng quang, nội soi trực tràng Kỹ thuật này giúp quan sát bên trong bàng quang, trực tràng tìm các bất thường, đánh giá tình trạng xâm lấn của khối u.",
+        "head": "Ung thư cổ tử cung",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "Nội soi bàng quang",
+        "tail_type": "test"
+    },
+    {
+        "text": "Khám, tầm soát ung thư cổ tử cung giúp phát hiện sớm và điều trị kịp thời Các phương pháp được sử dụng trong chẩn đoán ung thư cổ tử cung bao gồm: (3)\nNội soi bàng quang, nội soi trực tràng Kỹ thuật này giúp quan sát bên trong bàng quang, trực tràng tìm các bất thường, đánh giá tình trạng xâm lấn của khối u.",
+        "head": "Ung thư cổ tử cung",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "Nội soi trực tràng",
+        "tail_type": "test"
+    },
+    {
+        "text": "Khám, tầm soát ung thư cổ tử cung giúp phát hiện sớm và điều trị kịp thời Các phương pháp được sử dụng trong chẩn đoán ung thư cổ tử cung bao gồm: (3)\nChụp cắt lớp vi tính ngực-bụng-chậu hoặc PET/CT:\nPhương pháp này\nđược sử dụng trong đánh giá tình trạng di căn xa của bệnh (như di căn phổi, di căn xương,..).",
+        "head": "Ung thư cổ tử cung",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "Chụp cắt lớp vi tính ngực-bụng-chậu",
+        "tail_type": "test"
+    },
+    {
+        "text": "Khám, tầm soát ung thư cổ tử cung giúp phát hiện sớm và điều trị kịp thời Các phương pháp được sử dụng trong chẩn đoán ung thư cổ tử cung bao gồm: (3)\nChụp cắt lớp vi tính ngực-bụng-chậu hoặc PET/CT:\nPhương pháp này\nđược sử dụng trong đánh giá tình trạng di căn xa của bệnh (như di căn phổi, di căn xương,..).",
+        "head": "Ung thư cổ tử cung",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "PET/CT",
+        "tail_type": "test"
+    },
+    {
+        "text": "Khám, tầm soát ung thư cổ tử cung giúp phát hiện sớm và điều trị kịp thời Các phương pháp được sử dụng trong chẩn đoán ung thư cổ tử cung bao gồm: (3)\nChụp cắt lớp vi tính ngực-bụng-chậu hoặc PET/CT:\nPhương pháp này\nđược sử dụng trong đánh giá tình trạng di căn xa của bệnh (như di căn phổi, di căn xương,..).",
+        "head": "Ung thư cổ tử cung",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "Di căn phổi",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khám, tầm soát ung thư cổ tử cung giúp phát hiện sớm và điều trị kịp thời Các phương pháp được sử dụng trong chẩn đoán ung thư cổ tử cung bao gồm: (3)\nChụp cắt lớp vi tính ngực-bụng-chậu hoặc PET/CT:\nPhương pháp này\nđược sử dụng trong đánh giá tình trạng di căn xa của bệnh (như di căn phổi, di căn xương,..).",
+        "head": "Ung thư cổ tử cung",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "Di căn xương",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khám, tầm soát ung thư cổ tử cung giúp phát hiện sớm và điều trị kịp thời Các phương pháp được sử dụng trong chẩn đoán ung thư cổ tử cung bao gồm: (3)\nTổng phân tích tế bào máu đánh giá các thành phần như số lượng hồng cầu, bạch cầu, tiểu cầu.",
+        "head": "Ung thư cổ tử cung",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "Tổng phân tích tế bào máu",
+        "tail_type": "test"
+    },
+    {
+        "text": "Khám, tầm soát ung thư cổ tử cung giúp phát hiện sớm và điều trị kịp thời Các phương pháp được sử dụng trong chẩn đoán ung thư cổ tử cung bao gồm: (3)\nTổng phân tích tế bào máu đánh giá các thành phần như số lượng hồng cầu, bạch cầu, tiểu cầu.",
+        "head": "Tổng phân tích tế bào máu",
+        "head_type": "test",
+        "relation": "relatedTo",
+        "tail": "Số lượng hồng cầu",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Khám, tầm soát ung thư cổ tử cung giúp phát hiện sớm và điều trị kịp thời Các phương pháp được sử dụng trong chẩn đoán ung thư cổ tử cung bao gồm: (3)\nTổng phân tích tế bào máu đánh giá các thành phần như số lượng hồng cầu, bạch cầu, tiểu cầu.",
+        "head": "Tổng phân tích tế bào máu",
+        "head_type": "test",
+        "relation": "relatedTo",
+        "tail": "Bạch cầu",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Khám, tầm soát ung thư cổ tử cung giúp phát hiện sớm và điều trị kịp thời Các phương pháp được sử dụng trong chẩn đoán ung thư cổ tử cung bao gồm: (3)\nTổng phân tích tế bào máu đánh giá các thành phần như số lượng hồng cầu, bạch cầu, tiểu cầu.",
+        "head": "Tổng phân tích tế bào máu",
+        "head_type": "test",
+        "relation": "relatedTo",
+        "tail": "Tiểu cầu",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Khám, tầm soát ung thư cổ tử cung giúp phát hiện sớm và điều trị kịp thời Các phương pháp được sử dụng trong chẩn đoán ung thư cổ tử cung bao gồm: (3)\nXét nghiệm sinh hóa máu đánh giá tình trạng cơ thể, chức năng cơ quan (như urê, creatinin đánh giá chức năng của thận; chức năng của gan như AST, ALT, bilirubin,&#8230;).",
+        "head": "Ung thư cổ tử cung",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "Xét nghiệm sinh hóa máu",
+        "tail_type": "test"
+    },
+    {
+        "text": "Khám, tầm soát ung thư cổ tử cung giúp phát hiện sớm và điều trị kịp thời Các phương pháp được sử dụng trong chẩn đoán ung thư cổ tử cung bao gồm: (3)\nXét nghiệm sinh hóa máu đánh giá tình trạng cơ thể, chức năng cơ quan (như urê, creatinin đánh giá chức năng của thận; chức năng của gan như AST, ALT, bilirubin,&#8230;).",
+        "head": "Xét nghiệm sinh hóa máu",
+        "head_type": "test",
+        "relation": "relatedTo",
+        "tail": "Chức năng của thận",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Khám, tầm soát ung thư cổ tử cung giúp phát hiện sớm và điều trị kịp thời Các phương pháp được sử dụng trong chẩn đoán ung thư cổ tử cung bao gồm: (3)\nXét nghiệm sinh hóa máu đánh giá tình trạng cơ thể, chức năng cơ quan (như urê, creatinin đánh giá chức năng của thận; chức năng của gan như AST, ALT, bilirubin,&#8230;).",
+        "head": "Xét nghiệm sinh hóa máu",
+        "head_type": "test",
+        "relation": "relatedTo",
+        "tail": "Chức năng của gan",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Khám, tầm soát ung thư cổ tử cung giúp phát hiện sớm và điều trị kịp thời Các phương pháp được sử dụng trong chẩn đoán ung thư cổ tử cung bao gồm: (3)\nXét nghiệm sinh hóa máu đánh giá tình trạng cơ thể, chức năng cơ quan (như urê, creatinin đánh giá chức năng của thận; chức năng của gan như AST, ALT, bilirubin,&#8230;).",
+        "head": "Xét nghiệm sinh hóa máu",
+        "head_type": "test",
+        "relation": "relatedTo",
+        "tail": "Urê",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Khám, tầm soát ung thư cổ tử cung giúp phát hiện sớm và điều trị kịp thời Các phương pháp được sử dụng trong chẩn đoán ung thư cổ tử cung bao gồm: (3)\nXét nghiệm sinh hóa máu đánh giá tình trạng cơ thể, chức năng cơ quan (như urê, creatinin đánh giá chức năng của thận; chức năng của gan như AST, ALT, bilirubin,&#8230;).",
+        "head": "Xét nghiệm sinh hóa máu",
+        "head_type": "test",
+        "relation": "relatedTo",
+        "tail": "Creatinin",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Khám, tầm soát ung thư cổ tử cung giúp phát hiện sớm và điều trị kịp thời Các phương pháp được sử dụng trong chẩn đoán ung thư cổ tử cung bao gồm: (3)\nXét nghiệm sinh hóa máu đánh giá tình trạng cơ thể, chức năng cơ quan (như urê, creatinin đánh giá chức năng của thận; chức năng của gan như AST, ALT, bilirubin,&#8230;).",
+        "head": "Xét nghiệm sinh hóa máu",
+        "head_type": "test",
+        "relation": "relatedTo",
+        "tail": "AST",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Khám, tầm soát ung thư cổ tử cung giúp phát hiện sớm và điều trị kịp thời Các phương pháp được sử dụng trong chẩn đoán ung thư cổ tử cung bao gồm: (3)\nXét nghiệm sinh hóa máu đánh giá tình trạng cơ thể, chức năng cơ quan (như urê, creatinin đánh giá chức năng của thận; chức năng của gan như AST, ALT, bilirubin,&#8230;).",
+        "head": "Xét nghiệm sinh hóa máu",
+        "head_type": "test",
+        "relation": "relatedTo",
+        "tail": "ALT",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Bác sĩ Khiêm cho biết, phương pháp điều trị ung thư cổ tử cung giai đoạn II thường được lựa chọn bao gồm: (4)\nHóa - xạ trị đồng thời (ưu tiên).",
+        "head": "Hóa - xạ trị đồng thời",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Ung thư cổ tử cung giai đoạn II",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bác sĩ Khiêm cho biết, phương pháp điều trị ung thư cổ tử cung giai đoạn II thường được lựa chọn bao gồm: (4)\nHóa - xạ trị đồng thời (ưu tiên).\nPhẫu thuật.",
+        "head": "Phẫu thuật",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Ung thư cổ tử cung giai đoạn II",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đây là phương pháp thường được ưu tiên lựa chọn trong điều trị ung thư cổ tử cung giai đoạn II. Xạ trị trong ung thư cổ tử cung gồm có xạ trị chiếu ngoài (EBRT) và xạ trị áp sát (Brachytherapy). Bác sĩ thường phối hợp 2 phương pháp này với nhau:",
+        "head": "Xạ trị chiếu ngoài",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Ung thư cổ tử cung",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đây là phương pháp thường được ưu tiên lựa chọn trong điều trị ung thư cổ tử cung giai đoạn II. Xạ trị trong ung thư cổ tử cung gồm có xạ trị chiếu ngoài (EBRT) và xạ trị áp sát (Brachytherapy). Bác sĩ thường phối hợp 2 phương pháp này với nhau:",
+        "head": "Xạ trị áp sát",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Ung thư cổ tử cung",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Xạ trị chiếu ngoài: Là phương pháp phát ra chùm tia phóng xạ từ nguồn bên ngoài cơ thể (máy phát tia xạ) đi đến khối bướu. Xạ trị điều biến liều (IMRT) là một kỹ thuật trong xạ trị chiếu ngoài thường được sử dụng cho điều trị ung thư cổ tử cung đem hiệu quả điều trị tốt cũng như làm giảm các tác dụng không mong muốn.",
+        "head": "Xạ trị điều biến liều (IMRT)",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Ung thư cổ tử cung",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Xạ trị áp sát: Còn gọi là “xạ trị chiếu trong”, xạ trị sử dụng 1 nguồn phóng xạ đặt trực tiếp vào hoặc gần khối u.",
+        "head": "Xạ trị áp sát",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Ung thư cổ tử cung",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các thuốc hóa chất được dùng kết hợp với xạ trị nhằm làm tăng hiệu quả điều trị bệnh. Cisplatin (hoặc carboplatin) thường được lựa chọn.",
+        "head": "Cisplatin (hoặc carboplatin)",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Ung thư cổ tử cung",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các thuốc hóa chất được dùng kết hợp với xạ trị nhằm làm tăng hiệu quả điều trị bệnh. Cisplatin (hoặc carboplatin) thường được lựa chọn.",
+        "head": "Thuốc hóa chất",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Ung thư cổ tử cung",
+        "tail_type": "disease"
+    }
+]

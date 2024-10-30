@@ -1,0 +1,1280 @@
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:symptom {id: 'viêm_sưng_mào_tinh_hoàn_symptom'})
+MERGE (o1)-[r0:isSymptomOf]->(o2)
+SET r0.text = 'Viêm mào tinh hoàn là tình trạng mào tinh hoàn bị viêm sưng, đôi khi đi kèm với viêm tinh hoàn.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:disease {id: 'viêm_tinh_hoàn_disease'})
+MERGE (o1)-[r1:associatedWith]->(o2)
+SET r1.text = 'Viêm mào tinh hoàn là tình trạng mào tinh hoàn bị viêm sưng, đôi khi đi kèm với viêm tinh hoàn.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:symptom {id: 'sưng_tấy_bìu_symptom'})
+MERGE (o1)-[r2:isSymptomOf]->(o2)
+SET r2.text = 'Bệnh khiến phần mào tinh hoàn sưng tấy bìu gây ra cơn đau tại vị trí và những triệu chứng khác.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:symptom {id: 'đau_tại_vị_trí_symptom'})
+MERGE (o1)-[r3:isSymptomOf]->(o2)
+SET r3.text = 'Bệnh khiến phần mào tinh hoàn sưng tấy bìu gây ra cơn đau tại vị trí và những triệu chứng khác.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:cause {id: 'nhiễm_trùng_cause'})
+MERGE (o1)-[r4:causedBy]->(o2)
+SET r4.text = 'Viêm mào tinh hoàn hầu hết là do nhiễm trùng (vi khuẩn hoặc virus), xảy ra nhiều ở nam giới dưới 35 tuổi.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:lifestyle {id: 'nam_giới_dưới_35_tuổi_lifestyle'})
+MERGE (o1)-[r5:affects]->(o2)
+SET r5.text = 'Viêm mào tinh hoàn hầu hết là do nhiễm trùng (vi khuẩn hoặc virus), xảy ra nhiều ở nam giới dưới 35 tuổi.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:treatment {id: 'nghỉ_ngơi_treatment'})
+MERGE (o1)-[r6:treatedBy]->(o2)
+SET r6.text = 'Người bệnh sẽ được điều trị chủ yếu bằng phương pháp nghỉ ngơi kèm thuốc kháng sinh.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:treatment {id: 'thuốc_kháng_sinh_treatment'})
+MERGE (o1)-[r7:treatedBy]->(o2)
+SET r7.text = 'Người bệnh sẽ được điều trị chủ yếu bằng phương pháp nghỉ ngơi kèm thuốc kháng sinh.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:treatment {id: 'biện_pháp_hỗ_trợ_treatment'})
+MERGE (o1)-[r8:treatedBy]->(o2)
+SET r8.text = 'Một số trường hợp khác sẽ được áp dụng các biện pháp hỗ trợ vào quá trình điều trị.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:symptom {id: 'đau_symptom'})
+MERGE (o1)-[r9:isSymptomOf]->(o2)
+SET r9.text = 'Viêm mào tinh hoàn là một hội chứng lâm sàng gây đau, sưng.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:symptom {id: 'sưng_symptom'})
+MERGE (o1)-[r10:isSymptomOf]->(o2)
+SET r10.text = 'Viêm mào tinh hoàn là một hội chứng lâm sàng gây đau, sưng.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:symptom {id: 'thời_gian_phát_bệnh_symptom'})
+MERGE (o1)-[r11:relatedTo]->(o2)
+SET r11.text = 'Thời gian phát bệnh thường kéo dài không quá 6 tuần.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:cause {id: 'nhiễm_trùng_cause'})
+MERGE (o1)-[r12:causedBy]->(o2)
+SET r12.text = 'Bệnh thường do sự nhiễm trùng và hệ quả của bệnh lây truyền qua đường tình dục, thường xảy ra ở độ tuổi 14 - 35 tuổi.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:disease {id: 'bệnh_lây_truyền_qua_đường_tình_dục_disease'})
+MERGE (o1)-[r13:causedBy]->(o2)
+SET r13.text = 'Bệnh thường do sự nhiễm trùng và hệ quả của bệnh lây truyền qua đường tình dục, thường xảy ra ở độ tuổi 14 - 35 tuổi.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:lifestyle {id: 'độ_tuổi_14_-_35_tuổi_lifestyle'})
+MERGE (o1)-[r14:affects]->(o2)
+SET r14.text = 'Bệnh thường do sự nhiễm trùng và hệ quả của bệnh lây truyền qua đường tình dục, thường xảy ra ở độ tuổi 14 - 35 tuổi.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:symptom {id: 'đau_dữ_dội_ở_vị_trí_tinh_hoàn_symptom'})
+MERGE (o1)-[r15:isSymptomOf]->(o2)
+SET r15.text = 'Người bệnh sẽ có những triệu chứng lâm sàng điểm hình là đau dữ dội ở vị trí tinh hoàn.'
+
+MERGE (o1:organ {id: 'mào_tinh_hoàn_organ'})
+MERGE (o2:organ {id: 'hệ_sinh_sản_của_nam_giới_organ'})
+MERGE (o1)-[r16:locatedIn]->(o2)
+SET r16.text = '(1) Mào tinh hoàn là một thành phần thiết yếu trong hệ sinh sản của nam giới, có chức năng lưu trữ và cung cấp chất dinh dưỡng cho tinh trùng bên trong trước khi chuyển đến ống dẫn tinh.'
+
+MERGE (o1:organ {id: 'mào_tinh_hoàn_organ'})
+MERGE (o2:organ {id: 'tinh_trùng_organ'})
+MERGE (o1)-[r17:relatedTo]->(o2)
+SET r17.text = '(1) Mào tinh hoàn là một thành phần thiết yếu trong hệ sinh sản của nam giới, có chức năng lưu trữ và cung cấp chất dinh dưỡng cho tinh trùng bên trong trước khi chuyển đến ống dẫn tinh.'
+
+MERGE (o1:organ {id: 'mào_tinh_hoàn_organ'})
+MERGE (o2:organ {id: 'ống_dẫn_tinh_organ'})
+MERGE (o1)-[r18:relatedTo]->(o2)
+SET r18.text = '(1) Mào tinh hoàn là một thành phần thiết yếu trong hệ sinh sản của nam giới, có chức năng lưu trữ và cung cấp chất dinh dưỡng cho tinh trùng bên trong trước khi chuyển đến ống dẫn tinh.'
+
+MERGE (o1:organ {id: 'mào_tinh_hoàn_organ'})
+MERGE (o2:symptom {id: 'chất_lượng_tinh_trùng_symptom'})
+MERGE (o1)-[r19:affects]->(o2)
+SET r19.text = '(1) Mào tinh hoàn là một thành phần thiết yếu trong hệ sinh sản của nam giới, có chức năng lưu trữ và cung cấp chất dinh dưỡng cho tinh trùng bên trong trước khi chuyển đến ống dẫn tinh.'
+
+MERGE (o1:organ {id: 'mào_tinh_hoàn_organ'})
+MERGE (o2:symptom {id: 'kích_thước_symptom'})
+MERGE (o1)-[r20:relatedTo]->(o2)
+SET r20.text = '(1) Mào tinh hoàn có kích thước từ 5 - 6cm, do khoảng 12 ống xuất tập hợp tạo thành.'
+
+MERGE (o1:organ {id: 'mào_tinh_hoàn_organ'})
+MERGE (o2:organ {id: 'ống_xuất_organ'})
+MERGE (o1)-[r21:relatedTo]->(o2)
+SET r21.text = '(1) Mào tinh hoàn có kích thước từ 5 - 6cm, do khoảng 12 ống xuất tập hợp tạo thành.'
+
+MERGE (o1:organ {id: 'mào_tinh_hoàn_organ'})
+MERGE (o2:organ {id: 'phần_trên_tinh_hoàn_organ'})
+MERGE (o1)-[r22:locatedIn]->(o2)
+SET r22.text = '(2) Mào tinh hoàn là một cơ quan có cấu trúc hình ống thon dài, cuộn tròn nằm ở phần trên tinh hoàn.'
+
+MERGE (o1:organ {id: 'mào_tinh_hoàn_organ'})
+MERGE (o2:symptom {id: 'cấu_trúc_hình_ống_symptom'})
+MERGE (o1)-[r23:relatedTo]->(o2)
+SET r23.text = '(2) Mào tinh hoàn là một cơ quan có cấu trúc hình ống thon dài, cuộn tròn nằm ở phần trên tinh hoàn.'
+
+MERGE (o1:organ {id: 'mào_tinh_hoàn_organ'})
+MERGE (o2:organ {id: 'đầu_tinh_hoàn_organ'})
+MERGE (o1)-[r24:relatedTo]->(o2)
+SET r24.text = 'Mào tinh hoàn được chia làm 3 phần đầu, thân và đuôi tinh hoàn.'
+
+MERGE (o1:organ {id: 'mào_tinh_hoàn_organ'})
+MERGE (o2:organ {id: 'thân_tinh_hoàn_organ'})
+MERGE (o1)-[r25:relatedTo]->(o2)
+SET r25.text = 'Mào tinh hoàn được chia làm 3 phần đầu, thân và đuôi tinh hoàn.'
+
+MERGE (o1:organ {id: 'mào_tinh_hoàn_organ'})
+MERGE (o2:organ {id: 'đuôi_tinh_hoàn_organ'})
+MERGE (o1)-[r26:relatedTo]->(o2)
+SET r26.text = 'Mào tinh hoàn được chia làm 3 phần đầu, thân và đuôi tinh hoàn.'
+
+MERGE (o1:organ {id: 'đuôi_tinh_hoàn_organ'})
+MERGE (o2:organ {id: 'ống_dẫn_tinh_organ'})
+MERGE (o1)-[r27:relatedTo]->(o2)
+SET r27.text = 'Trong đó, đuôi tinh hoàn là phần liên kết với ống dẫn tinh, nơi chuyển tinh trùng trưởng thành đến ông phóng tinh.'
+
+MERGE (o1:organ {id: 'đuôi_tinh_hoàn_organ'})
+MERGE (o2:organ {id: 'tinh_trùng_trưởng_thành_organ'})
+MERGE (o1)-[r28:relatedTo]->(o2)
+SET r28.text = 'Trong đó, đuôi tinh hoàn là phần liên kết với ống dẫn tinh, nơi chuyển tinh trùng trưởng thành đến ông phóng tinh.'
+
+MERGE (o1:organ {id: 'đuôi_tinh_hoàn_organ'})
+MERGE (o2:organ {id: 'ông_phóng_tinh_organ'})
+MERGE (o1)-[r29:relatedTo]->(o2)
+SET r29.text = 'Trong đó, đuôi tinh hoàn là phần liên kết với ống dẫn tinh, nơi chuyển tinh trùng trưởng thành đến ông phóng tinh.'
+
+MERGE (o1:organ {id: 'tinh_trùng_organ'})
+MERGE (o2:symptom {id: 'chất_lỏng_symptom'})
+MERGE (o1)-[r30:relatedTo]->(o2)
+SET r30.text = 'Tinh trùng ở tinh hoàn ở dạng loãng do có một lượng chất lỏng khá lớn lẫn bên trong tinh trùng.'
+
+MERGE (o1:organ {id: 'tinh_trùng_organ'})
+MERGE (o2:organ {id: 'mào_tinh_hoàn_organ'})
+MERGE (o1)-[r31:relatedTo]->(o2)
+SET r31.text = 'Khi được chuyển vào mào tinh hoàn thông qua đầu mào tinh hoàn, tinh trùng sẽ được hấp thụ các chất dinh dưỡng từ niêm mạc mào tinh hoàn.'
+
+MERGE (o1:organ {id: 'tinh_trùng_organ'})
+MERGE (o2:symptom {id: 'chất_dinh_dưỡng_symptom'})
+MERGE (o1)-[r32:relatedTo]->(o2)
+SET r32.text = 'Khi được chuyển vào mào tinh hoàn thông qua đầu mào tinh hoàn, tinh trùng sẽ được hấp thụ các chất dinh dưỡng từ niêm mạc mào tinh hoàn.'
+
+MERGE (o1:organ {id: 'tinh_trùng_organ'})
+MERGE (o2:organ {id: 'niêm_mạc_mào_tinh_hoàn_organ'})
+MERGE (o1)-[r33:relatedTo]->(o2)
+SET r33.text = 'Khi được chuyển vào mào tinh hoàn thông qua đầu mào tinh hoàn, tinh trùng sẽ được hấp thụ các chất dinh dưỡng từ niêm mạc mào tinh hoàn.'
+
+MERGE (o1:symptom {id: 'chất_lượng_tinh_trùng_symptom'})
+MERGE (o2:treatment {id: 'quá_trình_nâng_cao_treatment'})
+MERGE (o1)-[r34:relatedTo]->(o2)
+SET r34.text = 'Đây được gọi là quá trình nâng cao chất lượng tinh trùng.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:disease {id: 'viêm_mào_tinh_hoàn_cấp_tính_disease'})
+MERGE (o1)-[r35:relatedTo]->(o2)
+SET r35.text = 'Viêm mào tinh hoàn có hai loại là viêm mào tinh hoàn cấp tính và viêm mào tinh hoàn mạn tính.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:disease {id: 'viêm_mào_tinh_hoàn_mạn_tính_disease'})
+MERGE (o1)-[r36:relatedTo]->(o2)
+SET r36.text = 'Viêm mào tinh hoàn có hai loại là viêm mào tinh hoàn cấp tính và viêm mào tinh hoàn mạn tính.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_cấp_tính_disease'})
+MERGE (o2:symptom {id: 'thời_gian_bệnh_symptom'})
+MERGE (o1)-[r37:relatedTo]->(o2)
+SET r37.text = 'Dựa vào thời gian bệnh để có thể phân biệt cấp tính và mạn tính, thời gian viêm mào tinh hoàn cấp tính diễn ra là 6 tuần.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_cấp_tính_disease'})
+MERGE (o2:symptom {id: 'thời_gian_6_tuần_symptom'})
+MERGE (o1)-[r38:relatedTo]->(o2)
+SET r38.text = 'Dựa vào thời gian bệnh để có thể phân biệt cấp tính và mạn tính, thời gian viêm mào tinh hoàn cấp tính diễn ra là 6 tuần.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_mạn_tính_disease'})
+MERGE (o2:symptom {id: 'triệu_chứng_symptom'})
+MERGE (o1)-[r39:relatedTo]->(o2)
+SET r39.text = 'Nếu sau 6 tuần, người bệnh vẫn không hết triệu chứng thì có khả năng cao là viêm mào tinh hoàn mạn tính.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:symptom {id: 'khó_chịu_symptom'})
+MERGE (o1)-[r40:isSymptomOf]->(o2)
+SET r40.text = 'Viêm mào tinh hoàn là một bệnh tuy không quá nguy hiểm ở mức độ cấp tính nhưng vẫn gây khó chịu và giảm chất lượng cuộc sống của người bệnh đáng kể bởi cơn đau ở phần mào tinh hoàn và tinh hoàn.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:symptom {id: 'giảm_chất_lượng_cuộc_sống_symptom'})
+MERGE (o1)-[r41:isSymptomOf]->(o2)
+SET r41.text = 'Viêm mào tinh hoàn là một bệnh tuy không quá nguy hiểm ở mức độ cấp tính nhưng vẫn gây khó chịu và giảm chất lượng cuộc sống của người bệnh đáng kể bởi cơn đau ở phần mào tinh hoàn và tinh hoàn.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:symptom {id: 'đau_ở_phần_mào_tinh_hoàn_symptom'})
+MERGE (o1)-[r42:isSymptomOf]->(o2)
+SET r42.text = 'Viêm mào tinh hoàn là một bệnh tuy không quá nguy hiểm ở mức độ cấp tính nhưng vẫn gây khó chịu và giảm chất lượng cuộc sống của người bệnh đáng kể bởi cơn đau ở phần mào tinh hoàn và tinh hoàn.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:symptom {id: 'đau_ở_phần_tinh_hoàn_symptom'})
+MERGE (o1)-[r43:isSymptomOf]->(o2)
+SET r43.text = 'Viêm mào tinh hoàn là một bệnh tuy không quá nguy hiểm ở mức độ cấp tính nhưng vẫn gây khó chịu và giảm chất lượng cuộc sống của người bệnh đáng kể bởi cơn đau ở phần mào tinh hoàn và tinh hoàn.'
+
+MERGE (o1:disease {id: 'viêm_tinh_hoàn_cấp_tính_disease'})
+MERGE (o2:treatment {id: 'điều_trị_kịp_thời_treatment'})
+MERGE (o1)-[r44:treatedBy]->(o2)
+SET r44.text = 'Tuy vậy, nếu viêm tinh hoàn cấp tính không được điều trị kịp thời và phát triển thành viêm tinh hoàn mạn tính sẽ nguy hiểm đến sức khỏe và khả năng sinh sản của người bệnh.'
+
+MERGE (o1:disease {id: 'viêm_tinh_hoàn_cấp_tính_disease'})
+MERGE (o2:disease {id: 'viêm_tinh_hoàn_mạn_tính_disease'})
+MERGE (o1)-[r45:relatedTo]->(o2)
+SET r45.text = 'Tuy vậy, nếu viêm tinh hoàn cấp tính không được điều trị kịp thời và phát triển thành viêm tinh hoàn mạn tính sẽ nguy hiểm đến sức khỏe và khả năng sinh sản của người bệnh.'
+
+MERGE (o1:disease {id: 'viêm_tinh_hoàn_cấp_tính_disease'})
+MERGE (o2:symptom {id: 'sức_khỏe_symptom'})
+MERGE (o1)-[r46:affects]->(o2)
+SET r46.text = 'Tuy vậy, nếu viêm tinh hoàn cấp tính không được điều trị kịp thời và phát triển thành viêm tinh hoàn mạn tính sẽ nguy hiểm đến sức khỏe và khả năng sinh sản của người bệnh.'
+
+MERGE (o1:disease {id: 'viêm_tinh_hoàn_cấp_tính_disease'})
+MERGE (o2:symptom {id: 'khả_năng_sinh_sản_symptom'})
+MERGE (o1)-[r47:affects]->(o2)
+SET r47.text = 'Tuy vậy, nếu viêm tinh hoàn cấp tính không được điều trị kịp thời và phát triển thành viêm tinh hoàn mạn tính sẽ nguy hiểm đến sức khỏe và khả năng sinh sản của người bệnh.'
+
+MERGE (o1:disease {id: 'viêm_tinh_hoàn_disease'})
+MERGE (o2:symptom {id: 'đau_bất_thường_ở_tinh_hoàn_symptom'})
+MERGE (o1)-[r48:isSymptomOf]->(o2)
+SET r48.text = 'Vì vậy, người bệnh ngay khi phát hiện những cơn đau bất thường ở tinh hoàn, mào tinh hoàn hoặc những dấu hiệu lâm sàng khác cần đến bệnh viện thăm khám ngay để nhận điều trị kịp thời.'
+
+MERGE (o1:disease {id: 'viêm_tinh_hoàn_disease'})
+MERGE (o2:symptom {id: 'đau_bất_thường_ở_mào_tinh_hoàn_symptom'})
+MERGE (o1)-[r49:isSymptomOf]->(o2)
+SET r49.text = 'Vì vậy, người bệnh ngay khi phát hiện những cơn đau bất thường ở tinh hoàn, mào tinh hoàn hoặc những dấu hiệu lâm sàng khác cần đến bệnh viện thăm khám ngay để nhận điều trị kịp thời.'
+
+MERGE (o1:disease {id: 'viêm_tinh_hoàn_disease'})
+MERGE (o2:symptom {id: 'dấu_hiệu_lâm_sàng_symptom'})
+MERGE (o1)-[r50:isSymptomOf]->(o2)
+SET r50.text = 'Vì vậy, người bệnh ngay khi phát hiện những cơn đau bất thường ở tinh hoàn, mào tinh hoàn hoặc những dấu hiệu lâm sàng khác cần đến bệnh viện thăm khám ngay để nhận điều trị kịp thời.'
+
+MERGE (o1:disease {id: 'viêm_tinh_hoàn_disease'})
+MERGE (o2:treatment {id: 'thăm_khám_treatment'})
+MERGE (o1)-[r51:treatedBy]->(o2)
+SET r51.text = 'Vì vậy, người bệnh ngay khi phát hiện những cơn đau bất thường ở tinh hoàn, mào tinh hoàn hoặc những dấu hiệu lâm sàng khác cần đến bệnh viện thăm khám ngay để nhận điều trị kịp thời.'
+
+MERGE (o1:disease {id: 'viêm_tinh_hoàn_disease'})
+MERGE (o2:treatment {id: 'điều_trị_kịp_thời_treatment'})
+MERGE (o1)-[r52:treatedBy]->(o2)
+SET r52.text = 'Vì vậy, người bệnh ngay khi phát hiện những cơn đau bất thường ở tinh hoàn, mào tinh hoàn hoặc những dấu hiệu lâm sàng khác cần đến bệnh viện thăm khám ngay để nhận điều trị kịp thời.'
+
+MERGE (o1:disease {id: 'viêm_tinh_hoàn_disease'})
+MERGE (o2:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o1)-[r53:relatedTo]->(o2)
+SET r53.text = 'Về cơ bản, viêm tinh hoàn và viêm mào tinh hoàn có cơ chế bệnh sinh giống nhau, là tình trạng viêm, sưng tấy gây ra cảm giác đau đớn vùng bìu tinh hoàn.'
+
+MERGE (o1:disease {id: 'viêm_tinh_hoàn_disease'})
+MERGE (o2:symptom {id: 'viêm_symptom'})
+MERGE (o1)-[r54:isSymptomOf]->(o2)
+SET r54.text = 'Về cơ bản, viêm tinh hoàn và viêm mào tinh hoàn có cơ chế bệnh sinh giống nhau, là tình trạng viêm, sưng tấy gây ra cảm giác đau đớn vùng bìu tinh hoàn.'
+
+MERGE (o1:disease {id: 'viêm_tinh_hoàn_disease'})
+MERGE (o2:symptom {id: 'sưng_tấy_symptom'})
+MERGE (o1)-[r55:isSymptomOf]->(o2)
+SET r55.text = 'Về cơ bản, viêm tinh hoàn và viêm mào tinh hoàn có cơ chế bệnh sinh giống nhau, là tình trạng viêm, sưng tấy gây ra cảm giác đau đớn vùng bìu tinh hoàn.'
+
+MERGE (o1:disease {id: 'viêm_tinh_hoàn_disease'})
+MERGE (o2:symptom {id: 'đau_đớn_vùng_bìu_tinh_hoàn_symptom'})
+MERGE (o1)-[r56:isSymptomOf]->(o2)
+SET r56.text = 'Về cơ bản, viêm tinh hoàn và viêm mào tinh hoàn có cơ chế bệnh sinh giống nhau, là tình trạng viêm, sưng tấy gây ra cảm giác đau đớn vùng bìu tinh hoàn.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:symptom {id: 'viêm_ống_cuộn_trên_đầu_tinh_hoàn_symptom'})
+MERGE (o1)-[r57:isSymptomOf]->(o2)
+SET r57.text = 'Trong đó, viêm mào tinh hoàn là tình trạng viêm ống cuộn trên đầu tinh hoàn.'
+
+MERGE (o1:disease {id: 'viêm_tinh_hoàn_disease'})
+MERGE (o2:symptom {id: 'viêm_symptom'})
+MERGE (o1)-[r58:isSymptomOf]->(o2)
+SET r58.text = 'Trong khi đó, viêm tinh hoàn là tình trạng viêm có thể xảy ra ở bất cứ vị trí nào thuộc bộ phận tinh hoàn, bao gồm ống cuộn mào tinh hoàn.'
+
+MERGE (o1:disease {id: 'viêm_tinh_hoàn_disease'})
+MERGE (o2:organ {id: 'tinh_hoàn_organ'})
+MERGE (o1)-[r59:affects]->(o2)
+SET r59.text = 'Trong khi đó, viêm tinh hoàn là tình trạng viêm có thể xảy ra ở bất cứ vị trí nào thuộc bộ phận tinh hoàn, bao gồm ống cuộn mào tinh hoàn.'
+
+MERGE (o1:disease {id: 'viêm_tinh_hoàn_disease'})
+MERGE (o2:organ {id: 'ống_cuộn_mào_tinh_hoàn_organ'})
+MERGE (o1)-[r60:relatedTo]->(o2)
+SET r60.text = 'Trong khi đó, viêm tinh hoàn là tình trạng viêm có thể xảy ra ở bất cứ vị trí nào thuộc bộ phận tinh hoàn, bao gồm ống cuộn mào tinh hoàn.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:disease {id: 'viêm_tinh_hoàn_disease'})
+MERGE (o1)-[r61:relatedTo]->(o2)
+SET r61.text = 'Có thể hiểu rằng, viêm mào tinh hoàn là một bệnh lý nằm trong viêm tinh hoàn.'
+
+MERGE (o1:disease {id: 'viêm_tinh_hoàn_disease'})
+MERGE (o2:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o1)-[r62:relatedTo]->(o2)
+SET r62.text = 'Hai bệnh lý này có thể xảy ra cùng một lúc, khi phạm vi nhiễm trùng của tinh hoàn lan rộng lên đến phần ống cuộn mào tinh hoàn.'
+
+MERGE (o1:disease {id: 'viêm_tinh_hoàn_disease'})
+MERGE (o2:cause {id: 'nhiễm_trùng_cause'})
+MERGE (o1)-[r63:causedBy]->(o2)
+SET r63.text = 'Hai bệnh lý này có thể xảy ra cùng một lúc, khi phạm vi nhiễm trùng của tinh hoàn lan rộng lên đến phần ống cuộn mào tinh hoàn.'
+
+MERGE (o1:disease {id: 'viêm_tinh_hoàn_disease'})
+MERGE (o2:organ {id: 'tinh_hoàn_organ'})
+MERGE (o1)-[r64:affects]->(o2)
+SET r64.text = 'Hai bệnh lý này có thể xảy ra cùng một lúc, khi phạm vi nhiễm trùng của tinh hoàn lan rộng lên đến phần ống cuộn mào tinh hoàn.'
+
+MERGE (o1:disease {id: 'viêm_tinh_hoàn_disease'})
+MERGE (o2:organ {id: 'ống_cuộn_mào_tinh_hoàn_organ'})
+MERGE (o1)-[r65:relatedTo]->(o2)
+SET r65.text = 'Hai bệnh lý này có thể xảy ra cùng một lúc, khi phạm vi nhiễm trùng của tinh hoàn lan rộng lên đến phần ống cuộn mào tinh hoàn.'
+
+MERGE (o1:disease {id: 'viêm_tinh_hoàn_disease'})
+MERGE (o2:treatment {id: 'thuốc_kháng_sinh_treatment'})
+MERGE (o1)-[r66:treatedBy]->(o2)
+SET r66.text = 'Vì cơ chế bệnh sinh của viêm tinh hoàn và viêm mào tinh hoàn không khác nhau nên phương pháp điều trị cho trường hợp cấp tính cũng giống nhau, đó là dùng thuốc kháng sinh, giảm viêm, giảm đau và nghỉ ngơi tại giường.'
+
+MERGE (o1:disease {id: 'viêm_tinh_hoàn_disease'})
+MERGE (o2:treatment {id: 'giảm_viêm_treatment'})
+MERGE (o1)-[r67:treatedBy]->(o2)
+SET r67.text = 'Vì cơ chế bệnh sinh của viêm tinh hoàn và viêm mào tinh hoàn không khác nhau nên phương pháp điều trị cho trường hợp cấp tính cũng giống nhau, đó là dùng thuốc kháng sinh, giảm viêm, giảm đau và nghỉ ngơi tại giường.'
+
+MERGE (o1:disease {id: 'viêm_tinh_hoàn_disease'})
+MERGE (o2:treatment {id: 'giảm_đau_treatment'})
+MERGE (o1)-[r68:treatedBy]->(o2)
+SET r68.text = 'Vì cơ chế bệnh sinh của viêm tinh hoàn và viêm mào tinh hoàn không khác nhau nên phương pháp điều trị cho trường hợp cấp tính cũng giống nhau, đó là dùng thuốc kháng sinh, giảm viêm, giảm đau và nghỉ ngơi tại giường.'
+
+MERGE (o1:symptom {id: 'cơn_đau_bìu_cường_độ_cao_symptom'})
+MERGE (o2:disease {id: 'bệnh_viêm_mào_tinh_hoàn_disease'})
+MERGE (o1)-[r69:isSymptomOf]->(o2)
+SET r69.text = 'Bệnh viêm mào tinh hoàn đặc trưng bởi cơn đau bìu cường độ cao.'
+
+MERGE (o1:symptom {id: 'cơn_đau_symptom'})
+MERGE (o2:disease {id: 'bệnh_viêm_mào_tinh_hoàn_disease'})
+MERGE (o1)-[r70:isSymptomOf]->(o2)
+SET r70.text = 'Những trường hợp nặng cơn đau cũng lan rộng lên đến bụng người bệnh.'
+
+MERGE (o1:symptom {id: 'triệu_chứng_này_symptom'})
+MERGE (o2:disease {id: 'bệnh_viêm_mào_tinh_hoàn_disease'})
+MERGE (o1)-[r71:isSymptomOf]->(o2)
+SET r71.text = 'Triệu chứng này xảy ra ở hầu hết mọi ca bệnh, dù là có xuất hiện nhiễm trùng mào tinh hoàn hay không.'
+
+MERGE (o1:symptom {id: 'sưng_tấy_symptom'})
+MERGE (o2:disease {id: 'bệnh_viêm_mào_tinh_hoàn_disease'})
+MERGE (o1)-[r72:isSymptomOf]->(o2)
+SET r72.text = 'Phần mào tinh hoàn của người bệnh đồng thời có tình trạng sưng tấy, xơ cứng và sung huyết.'
+
+MERGE (o1:symptom {id: 'xơ_cứng_symptom'})
+MERGE (o2:disease {id: 'bệnh_viêm_mào_tinh_hoàn_disease'})
+MERGE (o1)-[r73:isSymptomOf]->(o2)
+SET r73.text = 'Phần mào tinh hoàn của người bệnh đồng thời có tình trạng sưng tấy, xơ cứng và sung huyết.'
+
+MERGE (o1:symptom {id: 'sung_huyết_symptom'})
+MERGE (o2:disease {id: 'bệnh_viêm_mào_tinh_hoàn_disease'})
+MERGE (o1)-[r74:isSymptomOf]->(o2)
+SET r74.text = 'Phần mào tinh hoàn của người bệnh đồng thời có tình trạng sưng tấy, xơ cứng và sung huyết.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:organ {id: 'sức_khỏe_organ'})
+MERGE (o1)-[r75:affects]->(o2)
+SET r75.text = 'Những triệu chứng của bệnh viêm mào tinh hoàn đều ảnh hưởng xấu đến sức khỏe và chất lượng cuộc sống người bệnh.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:lifestyle {id: 'chất_lượng_cuộc_sống_lifestyle'})
+MERGE (o1)-[r76:affects]->(o2)
+SET r76.text = 'Những triệu chứng của bệnh viêm mào tinh hoàn đều ảnh hưởng xấu đến sức khỏe và chất lượng cuộc sống người bệnh.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:organ {id: 'hệ_tiết_niệu_organ'})
+MERGE (o1)-[r77:associatedWith]->(o2)
+SET r77.text = 'Thậm chí, các triệu chứng cũng làm tăng thêm nguy cơ mắc những bệnh lý nghiêm trọng khác liên quan đến hệ tiết niệu và chức năng sinh sản ở người bệnh.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:organ {id: 'chức_năng_sinh_sản_organ'})
+MERGE (o1)-[r78:associatedWith]->(o2)
+SET r78.text = 'Thậm chí, các triệu chứng cũng làm tăng thêm nguy cơ mắc những bệnh lý nghiêm trọng khác liên quan đến hệ tiết niệu và chức năng sinh sản ở người bệnh.'
+
+MERGE (o1:symptom {id: 'đau_bìu_symptom'})
+MERGE (o2:disease {id: 'bệnh_viêm_mào_tinh_hoàn_disease'})
+MERGE (o1)-[r79:isSymptomOf]->(o2)
+SET r79.text = 'Triệu chứng viêm mào tinh hoàn bao gồm:  Đau bìu, cơn đau quặn có thể lan đến vùng bụng Chảy mủ niệu đạo Sốt Buồn nôn và nôn Đau khi chạm hoặc nắn tinh hoàn và mào tinh hoàn Mào tinh hoàn sưng tấy Nhịp tim nhanh Hạ huyết áp'
+
+MERGE (o1:symptom {id: 'cơn_đau_quặn_symptom'})
+MERGE (o2:disease {id: 'bệnh_viêm_mào_tinh_hoàn_disease'})
+MERGE (o1)-[r80:isSymptomOf]->(o2)
+SET r80.text = 'Triệu chứng viêm mào tinh hoàn bao gồm:  Đau bìu, cơn đau quặn có thể lan đến vùng bụng Chảy mủ niệu đạo Sốt Buồn nôn và nôn Đau khi chạm hoặc nắn tinh hoàn và mào tinh hoàn Mào tinh hoàn sưng tấy Nhịp tim nhanh Hạ huyết áp'
+
+MERGE (o1:symptom {id: 'chảy_mủ_niệu_đạo_symptom'})
+MERGE (o2:disease {id: 'bệnh_viêm_mào_tinh_hoàn_disease'})
+MERGE (o1)-[r81:isSymptomOf]->(o2)
+SET r81.text = 'Triệu chứng viêm mào tinh hoàn bao gồm:  Đau bìu, cơn đau quặn có thể lan đến vùng bụng Chảy mủ niệu đạo Sốt Buồn nôn và nôn Đau khi chạm hoặc nắn tinh hoàn và mào tinh hoàn Mào tinh hoàn sưng tấy Nhịp tim nhanh Hạ huyết áp'
+
+MERGE (o1:symptom {id: 'sốt_symptom'})
+MERGE (o2:disease {id: 'bệnh_viêm_mào_tinh_hoàn_disease'})
+MERGE (o1)-[r82:isSymptomOf]->(o2)
+SET r82.text = 'Triệu chứng viêm mào tinh hoàn bao gồm:  Đau bìu, cơn đau quặn có thể lan đến vùng bụng Chảy mủ niệu đạo Sốt Buồn nôn và nôn Đau khi chạm hoặc nắn tinh hoàn và mào tinh hoàn Mào tinh hoàn sưng tấy Nhịp tim nhanh Hạ huyết áp'
+
+MERGE (o1:symptom {id: 'buồn_nôn_symptom'})
+MERGE (o2:disease {id: 'bệnh_viêm_mào_tinh_hoàn_disease'})
+MERGE (o1)-[r83:isSymptomOf]->(o2)
+SET r83.text = 'Triệu chứng viêm mào tinh hoàn bao gồm:  Đau bìu, cơn đau quặn có thể lan đến vùng bụng Chảy mủ niệu đạo Sốt Buồn nôn và nôn Đau khi chạm hoặc nắn tinh hoàn và mào tinh hoàn Mào tinh hoàn sưng tấy Nhịp tim nhanh Hạ huyết áp'
+
+MERGE (o1:symptom {id: 'nôn_symptom'})
+MERGE (o2:disease {id: 'bệnh_viêm_mào_tinh_hoàn_disease'})
+MERGE (o1)-[r84:isSymptomOf]->(o2)
+SET r84.text = 'Triệu chứng viêm mào tinh hoàn bao gồm:  Đau bìu, cơn đau quặn có thể lan đến vùng bụng Chảy mủ niệu đạo Sốt Buồn nôn và nôn Đau khi chạm hoặc nắn tinh hoàn và mào tinh hoàn Mào tinh hoàn sưng tấy Nhịp tim nhanh Hạ huyết áp'
+
+MERGE (o1:symptom {id: 'đau_khi_chạm_hoặc_nắn_tinh_hoàn_và_mào_tinh_hoàn_symptom'})
+MERGE (o2:disease {id: 'bệnh_viêm_mào_tinh_hoàn_disease'})
+MERGE (o1)-[r85:isSymptomOf]->(o2)
+SET r85.text = 'Triệu chứng viêm mào tinh hoàn bao gồm:  Đau bìu, cơn đau quặn có thể lan đến vùng bụng Chảy mủ niệu đạo Sốt Buồn nôn và nôn Đau khi chạm hoặc nắn tinh hoàn và mào tinh hoàn Mào tinh hoàn sưng tấy Nhịp tim nhanh Hạ huyết áp'
+
+MERGE (o1:symptom {id: 'mào_tinh_hoàn_sưng_tấy_symptom'})
+MERGE (o2:disease {id: 'bệnh_viêm_mào_tinh_hoàn_disease'})
+MERGE (o1)-[r86:isSymptomOf]->(o2)
+SET r86.text = 'Triệu chứng viêm mào tinh hoàn bao gồm:  Đau bìu, cơn đau quặn có thể lan đến vùng bụng Chảy mủ niệu đạo Sốt Buồn nôn và nôn Đau khi chạm hoặc nắn tinh hoàn và mào tinh hoàn Mào tinh hoàn sưng tấy Nhịp tim nhanh Hạ huyết áp'
+
+MERGE (o1:symptom {id: 'nhịp_tim_nhanh_symptom'})
+MERGE (o2:disease {id: 'bệnh_viêm_mào_tinh_hoàn_disease'})
+MERGE (o1)-[r87:isSymptomOf]->(o2)
+SET r87.text = 'Triệu chứng viêm mào tinh hoàn bao gồm:  Đau bìu, cơn đau quặn có thể lan đến vùng bụng Chảy mủ niệu đạo Sốt Buồn nôn và nôn Đau khi chạm hoặc nắn tinh hoàn và mào tinh hoàn Mào tinh hoàn sưng tấy Nhịp tim nhanh Hạ huyết áp'
+
+MERGE (o1:symptom {id: 'hạ_huyết_áp_symptom'})
+MERGE (o2:disease {id: 'bệnh_viêm_mào_tinh_hoàn_disease'})
+MERGE (o1)-[r88:isSymptomOf]->(o2)
+SET r88.text = 'Triệu chứng viêm mào tinh hoàn bao gồm:  Đau bìu, cơn đau quặn có thể lan đến vùng bụng Chảy mủ niệu đạo Sốt Buồn nôn và nôn Đau khi chạm hoặc nắn tinh hoàn và mào tinh hoàn Mào tinh hoàn sưng tấy Nhịp tim nhanh Hạ huyết áp'
+
+MERGE (o1:disease {id: 'bệnh_viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:cause {id: 'nhiễm_trùng_tiết_niệu_cause'})
+MERGE (o1)-[r89:causedBy]->(o2)
+SET r89.text = 'Viêm mào tinh hoàn chủ yếu là do sự nhiễm trùng tiết niệu hoặc cơ quan sinh dục gây ra, và nguyên nhân nhiễm trùng thì rất đa dạng.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:cause {id: 'nhiễm_trùng_cơ_quan_sinh_dục_cause'})
+MERGE (o1)-[r90:causedBy]->(o2)
+SET r90.text = 'Viêm mào tinh hoàn chủ yếu là do sự nhiễm trùng tiết niệu hoặc cơ quan sinh dục gây ra, và nguyên nhân nhiễm trùng thì rất đa dạng.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:cause {id: 'không_do_nhiễm_trùng_cause'})
+MERGE (o1)-[r91:causedBy]->(o2)
+SET r91.text = 'Ngoài ra, những ca bệnh viêm mào tinh hoàn không do nhiễm trùng cũng khá phổ biến.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:cause {id: 'chấn_thương_đột_ngột_cause'})
+MERGE (o1)-[r92:causedBy]->(o2)
+SET r92.text = 'Viêm tinh hoàn không do nhiễm trùng có thể là hậu quả sau chấn thương đột ngột.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:cause {id: 'nhiễm_trùng_cause'})
+MERGE (o1)-[r93:causedBy]->(o2)
+SET r93.text = 'Viêm mào tinh hoàn do nhiễm trùng là nguyên nhân thường gặp nhất trong các ca bệnh.'
+
+MERGE (o1:cause {id: 'nhiễm_trùng_cause'})
+MERGE (o2:organ {id: 'mào_tinh_hoàn_organ'})
+MERGE (o1)-[r94:affects]->(o2)
+SET r94.text = 'Nhiễm trùng là tình trạng vi khuẩn hoặc virus gây hại xâm nhập vào cơ thể và làm tổn thương thành niêm mạc các bộ phận trong cơ thể bao gồm mào tinh hoàn.'
+
+MERGE (o1:cause {id: 'bệnh_lây_truyền_qua_đường_tình_dục_stds_cause'})
+MERGE (o2:cause {id: 'nhiễm_trùng_cause'})
+MERGE (o1)-[r95:causedBy]->(o2)
+SET r95.text = 'Trong đó, bệnh lây truyền qua đường tình dục STDs là lý do hàng đầu gây ra nhiễm trùng ở người.'
+
+MERGE (o1:organ {id: 'tinh_hoàn_organ'})
+MERGE (o2:organ {id: 'bộ_phận_sinh_dục_nam_giới_organ'})
+MERGE (o1)-[r96:locatedIn]->(o2)
+SET r96.text = 'Lý do là vì là tinh hoàn và mào tinh hoàn nằm ở gần vị trí với bộ phận sinh dục nam giới.'
+
+MERGE (o1:organ {id: 'mào_tinh_hoàn_organ'})
+MERGE (o2:organ {id: 'bộ_phận_sinh_dục_nam_giới_organ'})
+MERGE (o1)-[r97:locatedIn]->(o2)
+SET r97.text = 'Lý do là vì là tinh hoàn và mào tinh hoàn nằm ở gần vị trí với bộ phận sinh dục nam giới.'
+
+MERGE (o1:organ {id: 'mào_tinh_hoàn_organ'})
+MERGE (o2:cause {id: 'vi_sinh_vật_gây_hại_cause'})
+MERGE (o1)-[r98:associatedWith]->(o2)
+SET r98.text = 'Khi tình trạng nhiễm trùng xảy ra, mào tinh hoàn nằm ở khu vực gần, có khả năng tiếp xúc cao nhất với các vi sinh vật gây hại.'
+
+MERGE (o1:cause {id: 'bệnh_lây_truyền_qua_đường_tình_dục_stds_cause'})
+MERGE (o2:disease {id: 'bệnh_viêm_mào_tinh_hoàn_disease'})
+MERGE (o1)-[r99:causedBy]->(o2)
+SET r99.text = 'Vì vậy, bệnh lây truyền qua đường tình dục STDs thường là nguyên nhân khiến mào tinh hoàn bị viêm do nhiễm trùng nhiều nhất.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:lifestyle {id: 'nam_giới_dưới_35_tuổi_lifestyle'})
+MERGE (o1)-[r100:associatedWith]->(o2)
+SET r100.text = 'Cụ thể, đối tượng thường bị viêm mào tinh hoàn do nhiễm trùng là nam giới dưới 35 tuổi.'
+
+MERGE (o1:cause {id: 'vi_khuẩn_e.coli_cause'})
+MERGE (o2:disease {id: 'bệnh_viêm_mào_tinh_hoàn_disease'})
+MERGE (o1)-[r101:causedBy]->(o2)
+SET r101.text = 'Đặc biệt là các loại vi khuẩn E.coli, vi khuẩn Chlamydia và vi khuẩn gây bệnh lậu là những loại vi khuẩn được tìm thấy nhiều nhất trong các ca bệnh viêm mào tinh hoàn do nhiễm trùng.'
+
+MERGE (o1:cause {id: 'vi_khuẩn_chlamydia_cause'})
+MERGE (o2:disease {id: 'bệnh_viêm_mào_tinh_hoàn_disease'})
+MERGE (o1)-[r102:causedBy]->(o2)
+SET r102.text = 'Đặc biệt là các loại vi khuẩn E.coli, vi khuẩn Chlamydia và vi khuẩn gây bệnh lậu là những loại vi khuẩn được tìm thấy nhiều nhất trong các ca bệnh viêm mào tinh hoàn do nhiễm trùng.'
+
+MERGE (o1:cause {id: 'vi_khuẩn_gây_bệnh_lậu_cause'})
+MERGE (o2:disease {id: 'bệnh_viêm_mào_tinh_hoàn_disease'})
+MERGE (o1)-[r103:causedBy]->(o2)
+SET r103.text = 'Đặc biệt là các loại vi khuẩn E.coli, vi khuẩn Chlamydia và vi khuẩn gây bệnh lậu là những loại vi khuẩn được tìm thấy nhiều nhất trong các ca bệnh viêm mào tinh hoàn do nhiễm trùng.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:cause {id: 'đường_ruột_gram_âm_cause'})
+MERGE (o1)-[r104:causedBy]->(o2)
+SET r104.text = 'Đối với nam giới 35 tuổi trở lên, viêm mào tinh hoàn có thể là hậu quả của đường ruột gram âm.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:lifestyle {id: 'bệnh_sử_hoặc_sức_khỏe_tiết_niệu_yếu_lifestyle'})
+MERGE (o1)-[r105:associatedWith]->(o2)
+SET r105.text = 'Những đối tượng có nguy cơ cao mắc bệnh là nam giới có bệnh sử hoặc sức khỏe tiết niệu yếu, người bệnh có đặt ống thông đường tiểu dẫn lưu hoặc từng thực hiện thủ thuật tiết niệu trong thời gian gần.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:treatment {id: 'đặt_ống_thông_đường_tiểu_dẫn_lưu_treatment'})
+MERGE (o1)-[r106:associatedWith]->(o2)
+SET r106.text = 'Những đối tượng có nguy cơ cao mắc bệnh là nam giới có bệnh sử hoặc sức khỏe tiết niệu yếu, người bệnh có đặt ống thông đường tiểu dẫn lưu hoặc từng thực hiện thủ thuật tiết niệu trong thời gian gần.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:treatment {id: 'thực_hiện_thủ_thuật_tiết_niệu_treatment'})
+MERGE (o1)-[r107:associatedWith]->(o2)
+SET r107.text = 'Những đối tượng có nguy cơ cao mắc bệnh là nam giới có bệnh sử hoặc sức khỏe tiết niệu yếu, người bệnh có đặt ống thông đường tiểu dẫn lưu hoặc từng thực hiện thủ thuật tiết niệu trong thời gian gần.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:cause {id: 'bệnh_lây_truyền_qua_đường_tình_dục_stds_cause'})
+MERGE (o1)-[r108:causedBy]->(o2)
+SET r108.text = 'Bên cạnh đó, viêm mào tinh hoàn do nhiễm trùng cũng còn do những nguyên nhân khác như:  Tất cả các bệnh lây truyền qua đường tình dục STDs đều có nguy cơ cao gây ra viêm mào tinh hoàn Nhiễm trùng tiểu Nhiễm trùng tuyến tiền liệt Nhiễm virus quai bị Nhiễm virus, vi khuẩn lao.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:cause {id: 'nhiễm_trùng_tiểu_cause'})
+MERGE (o1)-[r109:causedBy]->(o2)
+SET r109.text = 'Bên cạnh đó, viêm mào tinh hoàn do nhiễm trùng cũng còn do những nguyên nhân khác như:  Tất cả các bệnh lây truyền qua đường tình dục STDs đều có nguy cơ cao gây ra viêm mào tinh hoàn Nhiễm trùng tiểu Nhiễm trùng tuyến tiền liệt Nhiễm virus quai bị Nhiễm virus, vi khuẩn lao.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:cause {id: 'nhiễm_trùng_tuyến_tiền_liệt_cause'})
+MERGE (o1)-[r110:causedBy]->(o2)
+SET r110.text = 'Bên cạnh đó, viêm mào tinh hoàn do nhiễm trùng cũng còn do những nguyên nhân khác như:  Tất cả các bệnh lây truyền qua đường tình dục STDs đều có nguy cơ cao gây ra viêm mào tinh hoàn Nhiễm trùng tiểu Nhiễm trùng tuyến tiền liệt Nhiễm virus quai bị Nhiễm virus, vi khuẩn lao.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:cause {id: 'nhiễm_virus_quai_bị_cause'})
+MERGE (o1)-[r111:causedBy]->(o2)
+SET r111.text = 'Bên cạnh đó, viêm mào tinh hoàn do nhiễm trùng cũng còn do những nguyên nhân khác như:  Tất cả các bệnh lây truyền qua đường tình dục STDs đều có nguy cơ cao gây ra viêm mào tinh hoàn Nhiễm trùng tiểu Nhiễm trùng tuyến tiền liệt Nhiễm virus quai bị Nhiễm virus, vi khuẩn lao.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:cause {id: 'nhiễm_virus__vi_khuẩn_lao_cause'})
+MERGE (o1)-[r112:causedBy]->(o2)
+SET r112.text = 'Bên cạnh đó, viêm mào tinh hoàn do nhiễm trùng cũng còn do những nguyên nhân khác như:  Tất cả các bệnh lây truyền qua đường tình dục STDs đều có nguy cơ cao gây ra viêm mào tinh hoàn Nhiễm trùng tiểu Nhiễm trùng tuyến tiền liệt Nhiễm virus quai bị Nhiễm virus, vi khuẩn lao.'
+
+MERGE (o1:cause {id: 'nhiễm_virus__vi_khuẩn_lao_cause'})
+MERGE (o2:lifestyle {id: 'hiếm_gặp_lifestyle'})
+MERGE (o1)-[r113:associatedWith]->(o2)
+SET r113.text = 'Tuy nhiên, trường hợp này khá hiếm gặp'
+
+MERGE (o1:disease {id: 'bệnh_viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:cause {id: 'kích_ứng_hóa_chất_cause'})
+MERGE (o1)-[r114:causedBy]->(o2)
+SET r114.text = 'Viêm mào tinh hoàn không do nhiễm trùng thường đến từ những lý do như kích ứng hóa chất và nguyên nhân thứ phát hoặc chấn thương tại chỗ.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:cause {id: 'nguyên_nhân_thứ_phát_cause'})
+MERGE (o1)-[r115:causedBy]->(o2)
+SET r115.text = 'Viêm mào tinh hoàn không do nhiễm trùng thường đến từ những lý do như kích ứng hóa chất và nguyên nhân thứ phát hoặc chấn thương tại chỗ.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:cause {id: 'chấn_thương_tại_chỗ_cause'})
+MERGE (o1)-[r116:causedBy]->(o2)
+SET r116.text = 'Viêm mào tinh hoàn không do nhiễm trùng thường đến từ những lý do như kích ứng hóa chất và nguyên nhân thứ phát hoặc chấn thương tại chỗ.'
+
+MERGE (o1:cause {id: 'nguyên_nhân_thứ_phát_cause'})
+MERGE (o2:disease {id: 'bệnh_viêm_mào_tinh_hoàn_disease'})
+MERGE (o1)-[r117:causedBy]->(o2)
+SET r117.text = '(3) các nguyên nhân thứ phát được hiểu là những bệnh tiết niệu khác dẫn đến viêm mào tinh hoàn.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:cause {id: 'tắc_nghẽn_niệu_đạo_cause'})
+MERGE (o1)-[r118:causedBy]->(o2)
+SET r118.text = 'Một số nguyên nhân viêm mào tinh hoàn không do nhiễm khuẩn bao gồm:  Tắc nghẽn niệu đạo hoặc ống dẫn tiểu Phì đại tuyến tiền liệt Người từng gắn ống thông dẫn lưu bàng quang Người gặp chấn thương đột ngột ở vùng háng'
+
+MERGE (o1:disease {id: 'bệnh_viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:organ {id: 'ống_dẫn_tiểu_organ'})
+MERGE (o1)-[r119:causedBy]->(o2)
+SET r119.text = 'Một số nguyên nhân viêm mào tinh hoàn không do nhiễm khuẩn bao gồm:  Tắc nghẽn niệu đạo hoặc ống dẫn tiểu Phì đại tuyến tiền liệt Người từng gắn ống thông dẫn lưu bàng quang Người gặp chấn thương đột ngột ở vùng háng'
+
+MERGE (o1:disease {id: 'bệnh_viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:cause {id: 'phì_đại_tuyến_tiền_liệt_cause'})
+MERGE (o1)-[r120:causedBy]->(o2)
+SET r120.text = 'Một số nguyên nhân viêm mào tinh hoàn không do nhiễm khuẩn bao gồm:  Tắc nghẽn niệu đạo hoặc ống dẫn tiểu Phì đại tuyến tiền liệt Người từng gắn ống thông dẫn lưu bàng quang Người gặp chấn thương đột ngột ở vùng háng'
+
+MERGE (o1:disease {id: 'bệnh_viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:treatment {id: 'gắn_ống_thông_dẫn_lưu_bàng_quang_treatment'})
+MERGE (o1)-[r121:causedBy]->(o2)
+SET r121.text = 'Một số nguyên nhân viêm mào tinh hoàn không do nhiễm khuẩn bao gồm:  Tắc nghẽn niệu đạo hoặc ống dẫn tiểu Phì đại tuyến tiền liệt Người từng gắn ống thông dẫn lưu bàng quang Người gặp chấn thương đột ngột ở vùng háng'
+
+MERGE (o1:disease {id: 'bệnh_viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:cause {id: 'chấn_thương_đột_ngột_ở_vùng_háng_cause'})
+MERGE (o1)-[r122:causedBy]->(o2)
+SET r122.text = 'Một số nguyên nhân viêm mào tinh hoàn không do nhiễm khuẩn bao gồm:  Tắc nghẽn niệu đạo hoặc ống dẫn tiểu Phì đại tuyến tiền liệt Người từng gắn ống thông dẫn lưu bàng quang Người gặp chấn thương đột ngột ở vùng háng'
+
+MERGE (o1:disease {id: 'bệnh_viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:disease {id: 'bệnh_tiết_niệu_disease'})
+MERGE (o1)-[r123:relatedTo]->(o2)
+SET r123.text = 'Viêm mào tinh hoàn được xếp vào một trong những căn bệnh tiết niệu dễ mắc phải.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:lifestyle {id: '18_-_35_tuổi_lifestyle'})
+MERGE (o1)-[r124:associatedWith]->(o2)
+SET r124.text = 'Ở Hoa Kỳ, năm 2022 thống kê có hơn 600.000 ca viêm mào tinh hoàn, rơi vào các đối tượng từ 18 - 35 tuổi.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:lifestyle {id: 'hoạt_động_tình_dục_lifestyle'})
+MERGE (o1)-[r125:causedBy]->(o2)
+SET r125.text = 'Nguyên nhân mà viêm mào tinh hoàn trở thành một bệnh phổ biến là bởi vì mào tinh hoàn có rất nhiều khả năng bị nhiễm trùng do hoạt động tình dục, cách thức giữ vệ sinh cơ thể và cơ quan sinh dục, và chất lượng vệ sinh ở môi trường sống.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:lifestyle {id: 'giữ_vệ_sinh_cơ_thể_lifestyle'})
+MERGE (o1)-[r126:causedBy]->(o2)
+SET r126.text = 'Nguyên nhân mà viêm mào tinh hoàn trở thành một bệnh phổ biến là bởi vì mào tinh hoàn có rất nhiều khả năng bị nhiễm trùng do hoạt động tình dục, cách thức giữ vệ sinh cơ thể và cơ quan sinh dục, và chất lượng vệ sinh ở môi trường sống.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:lifestyle {id: 'vệ_sinh_cơ_quan_sinh_dục_lifestyle'})
+MERGE (o1)-[r127:causedBy]->(o2)
+SET r127.text = 'Nguyên nhân mà viêm mào tinh hoàn trở thành một bệnh phổ biến là bởi vì mào tinh hoàn có rất nhiều khả năng bị nhiễm trùng do hoạt động tình dục, cách thức giữ vệ sinh cơ thể và cơ quan sinh dục, và chất lượng vệ sinh ở môi trường sống.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:lifestyle {id: 'chất_lượng_vệ_sinh_ở_môi_trường_sống_lifestyle'})
+MERGE (o1)-[r128:causedBy]->(o2)
+SET r128.text = 'Nguyên nhân mà viêm mào tinh hoàn trở thành một bệnh phổ biến là bởi vì mào tinh hoàn có rất nhiều khả năng bị nhiễm trùng do hoạt động tình dục, cách thức giữ vệ sinh cơ thể và cơ quan sinh dục, và chất lượng vệ sinh ở môi trường sống.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:lifestyle {id: 'hệ_miễn_dịch_yếu_lifestyle'})
+MERGE (o1)-[r129:associatedWith]->(o2)
+SET r129.text = 'Bên cạnh đó, nam giới càng lớn cũng sẽ dễ mắc những bệnh liên quan đến hệ tiết niệu, do sự yếu dần của hệ miễn dịch khiến cơ thể dễ dịch nhiễm trùng từ tác nhân bên ngoài môi trường.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:cause {id: 'nhiễm_trùng_từ_tác_nhân_bên_ngoài_môi_trường_cause'})
+MERGE (o1)-[r130:causedBy]->(o2)
+SET r130.text = 'Bên cạnh đó, nam giới càng lớn cũng sẽ dễ mắc những bệnh liên quan đến hệ tiết niệu, do sự yếu dần của hệ miễn dịch khiến cơ thể dễ dịch nhiễm trùng từ tác nhân bên ngoài môi trường.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:cause {id: 'yếu_tố_thứ_phát_cause'})
+MERGE (o1)-[r131:causedBy]->(o2)
+SET r131.text = 'Các bệnh này là những yếu tố thứ phát hàng đầu để gây ra viêm mào tinh hoàn ở nam giới trên 35 tuổi.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:lifestyle {id: 'tuổi_lifestyle'})
+MERGE (o1)-[r132:relatedTo]->(o2)
+SET r132.text = 'Không có một nghiên cứu nào chứng minh ở độ tuổi nào sẽ có nguy cơ mắc bệnh viêm mào tinh hoàn hơn những độ tuổi khác.'
+
+MERGE (o1:lifestyle {id: 'tuổi_lifestyle'})
+MERGE (o2:disease {id: 'nguy_cơ_mắc_bệnh_disease'})
+MERGE (o1)-[r133:affects]->(o2)
+SET r133.text = 'Tuy nhiên, từng độ tuổi sẽ có những yếu tố khiến nguy cơ mắc bệnh khác nhau.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:lifestyle {id: 'nam_giới_ở_độ_tuổi_từ_18_-35_lifestyle'})
+MERGE (o1)-[r134:relatedTo]->(o2)
+SET r134.text = 'Tuy nhiên, nhận thấy rằng nam giới ở độ tuổi từ 18 -35 là đối tượng dễ bị viêm mào tinh hoàn.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:cause {id: 'nhiễm_trùng_và_sự_phát_triển_của_các_bệnh_lây_truyền_qua_đường_tình_dục_cause'})
+MERGE (o1)-[r135:causedBy]->(o2)
+SET r135.text = 'Nguyên nhân đến từ nhiễm trùng và sự phát triển của các bệnh lây truyền qua đường tình dục.'
+
+MERGE (o1:lifestyle {id: 'tần_suất_hoạt_động_tình_dục_lifestyle'})
+MERGE (o2:disease {id: 'nguy_cơ_mắc_các_bệnh_lý_về_đường_tiết_niệu_disease'})
+MERGE (o1)-[r136:affects]->(o2)
+SET r136.text = 'Do đặc trưng ở nhóm tuổi này, tần suất hoạt động tình dục sẽ thường xuyên hơn những độ tuổi khác, từ đó nguy cơ mắc các bệnh lý về đường tiết niệu, bao gồm viêm mào tinh hoàn cũng tăng lên khá cao.'
+
+MERGE (o1:lifestyle {id: 'tần_suất_hoạt_động_tình_dục_lifestyle'})
+MERGE (o2:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o1)-[r137:affects]->(o2)
+SET r137.text = 'Do đặc trưng ở nhóm tuổi này, tần suất hoạt động tình dục sẽ thường xuyên hơn những độ tuổi khác, từ đó nguy cơ mắc các bệnh lý về đường tiết niệu, bao gồm viêm mào tinh hoàn cũng tăng lên khá cao.'
+
+MERGE (o1:treatment {id: 'khám_sức_khỏe_định_kỳ_treatment'})
+MERGE (o2:disease {id: 'bệnh_tình_dục_và_bệnh_tiết_niệu_disease'})
+MERGE (o1)-[r138:preventedBy]->(o2)
+SET r138.text = 'Do vậy, bộ y tế luôn khuyến cáo mỗi người cần đi khám sức khỏe định kỳ 2 lần/năm để quản lý được tình trạng sức khỏe cơ thể, phòng ngừa tối đa các bệnh tình dục và bệnh tiết niệu có thể mắc phải.'
+
+MERGE (o1:lifestyle {id: 'quan_hệ_tình_dục_không_sử_dụng_biện_pháp_an_toàn_lifestyle'})
+MERGE (o2:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o1)-[r139:affects]->(o2)
+SET r139.text = 'Những yếu tố rủi ro khiến người bệnh tăng khả năng viêm mào tinh hoàn mà người bệnh cần lưu ý và đề phòng:  Quan hệ tình dục không sử dụng biện pháp an toàn Người có bệnh sử các bệnh lây truyền qua đường tình dục Bệnh sử nhiễm trùng tuyến tiền liệt hoặc đường tiết niệu Người từng can thiệp các thủ thuật y tế có ảnh hưởng đến đường tiết niệu như đặt ống thông hoặc ống dẫn tiểu Không cắt bao quy đầu dương vật Biến chứng từ phẫu thuật đường tiết niệu Phì đại tuyến tiền liệt'
+
+MERGE (o1:lifestyle {id: 'người_có_bệnh_sử_các_bệnh_lây_truyền_qua_đường_tình_dục_lifestyle'})
+MERGE (o2:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o1)-[r140:affects]->(o2)
+SET r140.text = 'Những yếu tố rủi ro khiến người bệnh tăng khả năng viêm mào tinh hoàn mà người bệnh cần lưu ý và đề phòng:  Quan hệ tình dục không sử dụng biện pháp an toàn Người có bệnh sử các bệnh lây truyền qua đường tình dục Bệnh sử nhiễm trùng tuyến tiền liệt hoặc đường tiết niệu Người từng can thiệp các thủ thuật y tế có ảnh hưởng đến đường tiết niệu như đặt ống thông hoặc ống dẫn tiểu Không cắt bao quy đầu dương vật Biến chứng từ phẫu thuật đường tiết niệu Phì đại tuyến tiền liệt'
+
+MERGE (o1:cause {id: 'bệnh_sử_nhiễm_trùng_tuyến_tiền_liệt_hoặc_đường_tiết_niệu_cause'})
+MERGE (o2:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o1)-[r141:affects]->(o2)
+SET r141.text = 'Những yếu tố rủi ro khiến người bệnh tăng khả năng viêm mào tinh hoàn mà người bệnh cần lưu ý và đề phòng:  Quan hệ tình dục không sử dụng biện pháp an toàn Người có bệnh sử các bệnh lây truyền qua đường tình dục Bệnh sử nhiễm trùng tuyến tiền liệt hoặc đường tiết niệu Người từng can thiệp các thủ thuật y tế có ảnh hưởng đến đường tiết niệu như đặt ống thông hoặc ống dẫn tiểu Không cắt bao quy đầu dương vật Biến chứng từ phẫu thuật đường tiết niệu Phì đại tuyến tiền liệt'
+
+MERGE (o1:treatment {id: 'người_từng_can_thiệp_các_thủ_thuật_y_tế_có_ảnh_hưởng_đến_đường_tiết_niệu_như_đặt_ống_thông_hoặc_ống_dẫn_tiểu_treatment'})
+MERGE (o2:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o1)-[r142:affects]->(o2)
+SET r142.text = 'Những yếu tố rủi ro khiến người bệnh tăng khả năng viêm mào tinh hoàn mà người bệnh cần lưu ý và đề phòng:  Quan hệ tình dục không sử dụng biện pháp an toàn Người có bệnh sử các bệnh lây truyền qua đường tình dục Bệnh sử nhiễm trùng tuyến tiền liệt hoặc đường tiết niệu Người từng can thiệp các thủ thuật y tế có ảnh hưởng đến đường tiết niệu như đặt ống thông hoặc ống dẫn tiểu Không cắt bao quy đầu dương vật Biến chứng từ phẫu thuật đường tiết niệu Phì đại tuyến tiền liệt'
+
+MERGE (o1:lifestyle {id: 'không_cắt_bao_quy_đầu_dương_vật_lifestyle'})
+MERGE (o2:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o1)-[r143:affects]->(o2)
+SET r143.text = 'Những yếu tố rủi ro khiến người bệnh tăng khả năng viêm mào tinh hoàn mà người bệnh cần lưu ý và đề phòng:  Quan hệ tình dục không sử dụng biện pháp an toàn Người có bệnh sử các bệnh lây truyền qua đường tình dục Bệnh sử nhiễm trùng tuyến tiền liệt hoặc đường tiết niệu Người từng can thiệp các thủ thuật y tế có ảnh hưởng đến đường tiết niệu như đặt ống thông hoặc ống dẫn tiểu Không cắt bao quy đầu dương vật Biến chứng từ phẫu thuật đường tiết niệu Phì đại tuyến tiền liệt'
+
+MERGE (o1:cause {id: 'biến_chứng_từ_phẫu_thuật_đường_tiết_niệu_cause'})
+MERGE (o2:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o1)-[r144:affects]->(o2)
+SET r144.text = 'Những yếu tố rủi ro khiến người bệnh tăng khả năng viêm mào tinh hoàn mà người bệnh cần lưu ý và đề phòng:  Quan hệ tình dục không sử dụng biện pháp an toàn Người có bệnh sử các bệnh lây truyền qua đường tình dục Bệnh sử nhiễm trùng tuyến tiền liệt hoặc đường tiết niệu Người từng can thiệp các thủ thuật y tế có ảnh hưởng đến đường tiết niệu như đặt ống thông hoặc ống dẫn tiểu Không cắt bao quy đầu dương vật Biến chứng từ phẫu thuật đường tiết niệu Phì đại tuyến tiền liệt'
+
+MERGE (o1:disease {id: 'phì_đại_tuyến_tiền_liệt_disease'})
+MERGE (o2:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o1)-[r145:affects]->(o2)
+SET r145.text = 'Những yếu tố rủi ro khiến người bệnh tăng khả năng viêm mào tinh hoàn mà người bệnh cần lưu ý và đề phòng:  Quan hệ tình dục không sử dụng biện pháp an toàn Người có bệnh sử các bệnh lây truyền qua đường tình dục Bệnh sử nhiễm trùng tuyến tiền liệt hoặc đường tiết niệu Người từng can thiệp các thủ thuật y tế có ảnh hưởng đến đường tiết niệu như đặt ống thông hoặc ống dẫn tiểu Không cắt bao quy đầu dương vật Biến chứng từ phẫu thuật đường tiết niệu Phì đại tuyến tiền liệt'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:cause {id: 'vi_khuẩn_gây_bệnh_cause'})
+MERGE (o1)-[r146:causedBy]->(o2)
+SET r146.text = 'Viêm mào tinh hoàn chủ yếu là sự truyền nhiễm từ vi khuẩn gây bệnh.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:disease {id: 'bệnh_lây_truyền_qua_đường_tình_dục_disease'})
+MERGE (o1)-[r147:relatedTo]->(o2)
+SET r147.text = 'dù bệnh viêm mào tinh hoàn không được xếp vào bệnh lây truyền cho đường tình dục, nhưng bệnh vẫn có thể lây truyền nếu quan hệ không sử dụng biện pháp an toàn.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:disease {id: 'bệnh_truyền_qua_đường_tình_dục_disease'})
+MERGE (o1)-[r148:causedBy]->(o2)
+SET r148.text = 'Đặc biệt, những người bị viêm mào tinh hoàn do hậu quả của bệnh truyền qua đường tình dục càng có khả năng truyền nhiễm bệnh sang cho người khác cao hơn.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:treatment {id: 'điều_trị_sớm_treatment'})
+MERGE (o1)-[r149:treatedBy]->(o2)
+SET r149.text = 'Nếu người bệnh viêm mào tinh hoàn không được điều trị sớm, ít nhất trong thời gian 6 tuần giai đoạn cấp tính, bệnh sẽ phát triển thành nhiều biến chứng nguy hiểm, ảnh hưởng nghiêm trọng đến chất lượng cuộc sống và sức khỏe của người bệnh.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:lifestyle {id: 'chất_lượng_cuộc_sống_và_sức_khỏe_lifestyle'})
+MERGE (o1)-[r150:affects]->(o2)
+SET r150.text = 'Nếu người bệnh viêm mào tinh hoàn không được điều trị sớm, ít nhất trong thời gian 6 tuần giai đoạn cấp tính, bệnh sẽ phát triển thành nhiều biến chứng nguy hiểm, ảnh hưởng nghiêm trọng đến chất lượng cuộc sống và sức khỏe của người bệnh.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:organ {id: 'khả_năng_sinh_sản_organ'})
+MERGE (o1)-[r151:affects]->(o2)
+SET r151.text = 'Đặc biệt là khả năng sinh sản cũng sẽ chịu tác động xấu, nguy cơ cao dẫn đến vô sinh.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:organ {id: 'da_bìu_organ'})
+MERGE (o1)-[r152:affects]->(o2)
+SET r152.text = 'Những biến chứng đến từ viêm mào tinh hoàn sẽ liên quan nhiều đến sự tổn thương của da bìu.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:treatment {id: 'điều_trị_viêm_mào_tinh_hoàn_kịp_thời_treatment'})
+MERGE (o1)-[r153:treatedBy]->(o2)
+SET r153.text = 'Người bệnh sẽ có nguy cơ mắc phải những biến chứng sau đây nếu không được điều trị viêm mào tinh hoàn kịp thời:  Áp xe da bìu Viêm tinh hoàn Tình trạng sưng và nhiễm trùng lan rộng khắp vùng da bìu Viêm mào tinh hoàn mạn tính. Tăng nguy cơ mắc các bệnh tiết niệu khác nguy hiểm hơn'
+
+MERGE (o1:disease {id: 'áp_xe_da_bìu_disease'})
+MERGE (o2:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o1)-[r154:isSymptomOf]->(o2)
+SET r154.text = 'Người bệnh sẽ có nguy cơ mắc phải những biến chứng sau đây nếu không được điều trị viêm mào tinh hoàn kịp thời:  Áp xe da bìu Viêm tinh hoàn Tình trạng sưng và nhiễm trùng lan rộng khắp vùng da bìu Viêm mào tinh hoàn mạn tính. Tăng nguy cơ mắc các bệnh tiết niệu khác nguy hiểm hơn'
+
+MERGE (o1:disease {id: 'viêm_tinh_hoàn_disease'})
+MERGE (o2:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o1)-[r155:isSymptomOf]->(o2)
+SET r155.text = 'Người bệnh sẽ có nguy cơ mắc phải những biến chứng sau đây nếu không được điều trị viêm mào tinh hoàn kịp thời:  Áp xe da bìu Viêm tinh hoàn Tình trạng sưng và nhiễm trùng lan rộng khắp vùng da bìu Viêm mào tinh hoàn mạn tính. Tăng nguy cơ mắc các bệnh tiết niệu khác nguy hiểm hơn'
+
+MERGE (o1:symptom {id: 'tình_trạng_sưng_và_nhiễm_trùng_lan_rộng_khắp_vùng_da_bìu_symptom'})
+MERGE (o2:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o1)-[r156:isSymptomOf]->(o2)
+SET r156.text = 'Người bệnh sẽ có nguy cơ mắc phải những biến chứng sau đây nếu không được điều trị viêm mào tinh hoàn kịp thời:  Áp xe da bìu Viêm tinh hoàn Tình trạng sưng và nhiễm trùng lan rộng khắp vùng da bìu Viêm mào tinh hoàn mạn tính. Tăng nguy cơ mắc các bệnh tiết niệu khác nguy hiểm hơn'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_mạn_tính_disease'})
+MERGE (o2:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o1)-[r157:isSymptomOf]->(o2)
+SET r157.text = 'Người bệnh sẽ có nguy cơ mắc phải những biến chứng sau đây nếu không được điều trị viêm mào tinh hoàn kịp thời:  Áp xe da bìu Viêm tinh hoàn Tình trạng sưng và nhiễm trùng lan rộng khắp vùng da bìu Viêm mào tinh hoàn mạn tính. Tăng nguy cơ mắc các bệnh tiết niệu khác nguy hiểm hơn'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:symptom {id: 'triệu_chứng_symptom'})
+MERGE (o1)-[r158:isSymptomOf]->(o2)
+SET r158.text = 'Viêm mào tinh hoàn dù cấp tính hay mạn tính cũng cần đến gặp bác sĩ ngay khi vừa phát hiện triệu chứng của bệnh hoặc là nghi ngờ bệnh.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:treatment {id: 'bác_sĩ_treatment'})
+MERGE (o1)-[r159:diagnosedBy]->(o2)
+SET r159.text = 'Viêm mào tinh hoàn dù cấp tính hay mạn tính cũng cần đến gặp bác sĩ ngay khi vừa phát hiện triệu chứng của bệnh hoặc là nghi ngờ bệnh.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:treatment {id: 'điều_trị_treatment'})
+MERGE (o1)-[r160:treatedBy]->(o2)
+SET r160.text = 'Bệnh viêm mào tinh hoàn không có khả năng tự khỏi mà không cần điều trị.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_cấp_tính_disease'})
+MERGE (o2:disease {id: 'viêm_mào_tinh_hoàn_mạn_tính_disease'})
+MERGE (o1)-[r161:relatedTo]->(o2)
+SET r161.text = 'Nguy hiểm hơn, viêm mào tinh hoàn cấp tính nếu kéo dài 6 tuần sẽ trở thành mạn tính.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_cấp_tính_disease'})
+MERGE (o2:lifestyle {id: 'kéo_dài_6_tuần_lifestyle'})
+MERGE (o1)-[r162:causedBy]->(o2)
+SET r162.text = 'Nguy hiểm hơn, viêm mào tinh hoàn cấp tính nếu kéo dài 6 tuần sẽ trở thành mạn tính.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_mạn_tính_disease'})
+MERGE (o2:treatment {id: 'điều_trị_dài_hạn_treatment'})
+MERGE (o1)-[r163:treatedBy]->(o2)
+SET r163.text = 'Ở giai đoạn này, người bệnh sẽ phải thực hiện những điều trị dài hạn, nặng hơn là các biện pháp can thiệp nếu tình trạng tổn thương ở da bìu nghiêm trọng.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_mạn_tính_disease'})
+MERGE (o2:treatment {id: 'biện_pháp_can_thiệp_treatment'})
+MERGE (o1)-[r164:treatedBy]->(o2)
+SET r164.text = 'Ở giai đoạn này, người bệnh sẽ phải thực hiện những điều trị dài hạn, nặng hơn là các biện pháp can thiệp nếu tình trạng tổn thương ở da bìu nghiêm trọng.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_mạn_tính_disease'})
+MERGE (o2:organ {id: 'da_bìu_organ'})
+MERGE (o1)-[r165:affects]->(o2)
+SET r165.text = 'Ở giai đoạn này, người bệnh sẽ phải thực hiện những điều trị dài hạn, nặng hơn là các biện pháp can thiệp nếu tình trạng tổn thương ở da bìu nghiêm trọng.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:symptom {id: 'tinh_thần_symptom'})
+MERGE (o1)-[r166:affects]->(o2)
+SET r166.text = 'Điều này đầu tiên sẽ ảnh hưởng khá lớn đến tinh thần và chất lượng cuộc sống của người bệnh.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:symptom {id: 'chất_lượng_cuộc_sống_symptom'})
+MERGE (o1)-[r167:affects]->(o2)
+SET r167.text = 'Điều này đầu tiên sẽ ảnh hưởng khá lớn đến tinh thần và chất lượng cuộc sống của người bệnh.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:treatment {id: 'điều_trị_dứt_điểm_treatment'})
+MERGE (o1)-[r168:treatedBy]->(o2)
+SET r168.text = 'Tiếp đến, bệnh cũng sẽ có tỷ lệ điều trị dứt điểm không cao.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:disease {id: 'bệnh_lý_tiết_niệu_disease'})
+MERGE (o1)-[r169:relatedTo]->(o2)
+SET r169.text = 'Hơn nữa, bệnh sẽ là tiền đề cho các bệnh lý tiết niệu khác, bao gồm vô sinh.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:disease {id: 'vô_sinh_disease'})
+MERGE (o1)-[r170:relatedTo]->(o2)
+SET r170.text = 'Hơn nữa, bệnh sẽ là tiền đề cho các bệnh lý tiết niệu khác, bao gồm vô sinh.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:symptom {id: 'dấu_hiệu_lâm_sàng_symptom'})
+MERGE (o1)-[r171:isSymptomOf]->(o2)
+SET r171.text = 'Vì vậy, người bệnh viêm mào tinh hoàn cần đến gặp bác sĩ sớm khi có dấu hiệu lâm sàng để được chẩn đoán và nhận chỉ định điều trị chính xác từ bác sĩ.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:treatment {id: 'bác_sĩ_treatment'})
+MERGE (o1)-[r172:diagnosedBy]->(o2)
+SET r172.text = 'Vì vậy, người bệnh viêm mào tinh hoàn cần đến gặp bác sĩ sớm khi có dấu hiệu lâm sàng để được chẩn đoán và nhận chỉ định điều trị chính xác từ bác sĩ.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:test {id: 'đánh_giá_lâm_sàng_test'})
+MERGE (o1)-[r173:diagnosedBy]->(o2)
+SET r173.text = 'Hai bước chẩn đoán viêm mào tinh hoàn gồm đánh giá lâm sàng và dựa trên mẫu kết quả xét nghiệm dịch niệu đạo, nuôi cấy nước tiểu, siêu âm doppler tinh hoàn và mào tinh hoàn, tổng phân tích máu, đo tốc độ máu lắng.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:test {id: 'xét_nghiệm_dịch_niệu_đạo_test'})
+MERGE (o1)-[r174:diagnosedBy]->(o2)
+SET r174.text = 'Hai bước chẩn đoán viêm mào tinh hoàn gồm đánh giá lâm sàng và dựa trên mẫu kết quả xét nghiệm dịch niệu đạo, nuôi cấy nước tiểu, siêu âm doppler tinh hoàn và mào tinh hoàn, tổng phân tích máu, đo tốc độ máu lắng.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:test {id: 'nuôi_cấy_nước_tiểu_test'})
+MERGE (o1)-[r175:diagnosedBy]->(o2)
+SET r175.text = 'Hai bước chẩn đoán viêm mào tinh hoàn gồm đánh giá lâm sàng và dựa trên mẫu kết quả xét nghiệm dịch niệu đạo, nuôi cấy nước tiểu, siêu âm doppler tinh hoàn và mào tinh hoàn, tổng phân tích máu, đo tốc độ máu lắng.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:test {id: 'siêu_âm_doppler_tinh_hoàn_và_mào_tinh_hoàn_test'})
+MERGE (o1)-[r176:diagnosedBy]->(o2)
+SET r176.text = 'Hai bước chẩn đoán viêm mào tinh hoàn gồm đánh giá lâm sàng và dựa trên mẫu kết quả xét nghiệm dịch niệu đạo, nuôi cấy nước tiểu, siêu âm doppler tinh hoàn và mào tinh hoàn, tổng phân tích máu, đo tốc độ máu lắng.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:test {id: 'tổng_phân_tích_máu_test'})
+MERGE (o1)-[r177:diagnosedBy]->(o2)
+SET r177.text = 'Hai bước chẩn đoán viêm mào tinh hoàn gồm đánh giá lâm sàng và dựa trên mẫu kết quả xét nghiệm dịch niệu đạo, nuôi cấy nước tiểu, siêu âm doppler tinh hoàn và mào tinh hoàn, tổng phân tích máu, đo tốc độ máu lắng.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:test {id: 'đo_tốc_độ_máu_lắng_test'})
+MERGE (o1)-[r178:diagnosedBy]->(o2)
+SET r178.text = 'Hai bước chẩn đoán viêm mào tinh hoàn gồm đánh giá lâm sàng và dựa trên mẫu kết quả xét nghiệm dịch niệu đạo, nuôi cấy nước tiểu, siêu âm doppler tinh hoàn và mào tinh hoàn, tổng phân tích máu, đo tốc độ máu lắng.'
+
+MERGE (o1:treatment {id: 'bác_sĩ_treatment'})
+MERGE (o2:symptom {id: 'triệu_chứng_lâm_sàng_symptom'})
+MERGE (o1)-[r179:diagnosedBy]->(o2)
+SET r179.text = 'Trong buổi chẩn đoán, bác sĩ sẽ thu thập những thông tin về triệu chứng lâm sàng mà người bệnh đang có.'
+
+MERGE (o1:symptom {id: 'sưng_đau_symptom'})
+MERGE (o2:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o1)-[r180:isSymptomOf]->(o2)
+SET r180.text = 'Xem xét tình trạng sưng đau bằng cách sờ nắn mào tinh hoàn.'
+
+MERGE (o1:symptom {id: 'sưng_đau_symptom'})
+MERGE (o2:test {id: 'sờ_nắn_mào_tinh_hoàn_test'})
+MERGE (o1)-[r181:diagnosedBy]->(o2)
+SET r181.text = 'Xem xét tình trạng sưng đau bằng cách sờ nắn mào tinh hoàn.'
+
+MERGE (o1:disease {id: 'xoắn_tinh_hoàn_disease'})
+MERGE (o2:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o1)-[r182:relatedTo]->(o2)
+SET r182.text = 'Đồng thời, bác sĩ cũng sẽ kiểm tra để loại bỏ trường hợp xoắn tinh hoàn ở người bệnh, đặc biệt là đối tượng dưới 30 tuổi và có tình trạng đau bìu cấp tính.'
+
+MERGE (o1:disease {id: 'xoắn_tinh_hoàn_disease'})
+MERGE (o2:symptom {id: 'đau_bìu_cấp_tính_symptom'})
+MERGE (o1)-[r183:isSymptomOf]->(o2)
+SET r183.text = 'Đồng thời, bác sĩ cũng sẽ kiểm tra để loại bỏ trường hợp xoắn tinh hoàn ở người bệnh, đặc biệt là đối tượng dưới 30 tuổi và có tình trạng đau bìu cấp tính.'
+
+MERGE (o1:test {id: 'xét_nghiệm_dịch_niệu_đạo_test'})
+MERGE (o2:disease {id: 'bệnh_lây_truyền_qua_đường_tình_dục_stds_disease'})
+MERGE (o1)-[r184:diagnosedBy]->(o2)
+SET r184.text = 'Xét nghiệm dịch niệu đạo hoặc xét nghiệm PCR là phương pháp chẩn đoán đến kiểm tra các bệnh lây truyền qua đường tình dục STDs như lậu, chlamydia.'
+
+MERGE (o1:test {id: 'xét_nghiệm_dịch_niệu_đạo_test'})
+MERGE (o2:disease {id: 'lậu_disease'})
+MERGE (o1)-[r185:diagnosedBy]->(o2)
+SET r185.text = 'Xét nghiệm dịch niệu đạo hoặc xét nghiệm PCR là phương pháp chẩn đoán đến kiểm tra các bệnh lây truyền qua đường tình dục STDs như lậu, chlamydia.'
+
+MERGE (o1:test {id: 'xét_nghiệm_dịch_niệu_đạo_test'})
+MERGE (o2:disease {id: 'chlamydia_disease'})
+MERGE (o1)-[r186:diagnosedBy]->(o2)
+SET r186.text = 'Xét nghiệm dịch niệu đạo hoặc xét nghiệm PCR là phương pháp chẩn đoán đến kiểm tra các bệnh lây truyền qua đường tình dục STDs như lậu, chlamydia.'
+
+MERGE (o1:test {id: 'xét_nghiệm_pcr_test'})
+MERGE (o2:disease {id: 'bệnh_lây_truyền_qua_đường_tình_dục_stds_disease'})
+MERGE (o1)-[r187:diagnosedBy]->(o2)
+SET r187.text = 'Xét nghiệm dịch niệu đạo hoặc xét nghiệm PCR là phương pháp chẩn đoán đến kiểm tra các bệnh lây truyền qua đường tình dục STDs như lậu, chlamydia.'
+
+MERGE (o1:test {id: 'xét_nghiệm_pcr_test'})
+MERGE (o2:disease {id: 'lậu_disease'})
+MERGE (o1)-[r188:diagnosedBy]->(o2)
+SET r188.text = 'Xét nghiệm dịch niệu đạo hoặc xét nghiệm PCR là phương pháp chẩn đoán đến kiểm tra các bệnh lây truyền qua đường tình dục STDs như lậu, chlamydia.'
+
+MERGE (o1:test {id: 'xét_nghiệm_pcr_test'})
+MERGE (o2:disease {id: 'chlamydia_disease'})
+MERGE (o1)-[r189:diagnosedBy]->(o2)
+SET r189.text = 'Xét nghiệm dịch niệu đạo hoặc xét nghiệm PCR là phương pháp chẩn đoán đến kiểm tra các bệnh lây truyền qua đường tình dục STDs như lậu, chlamydia.'
+
+MERGE (o1:test {id: 'xét_nghiệm_test'})
+MERGE (o2:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o1)-[r190:causedBy]->(o2)
+SET r190.text = 'Kết quả của xét nghiệm sẽ cho biết nguyên nhân gây ra viêm mào tinh hoàn ở người bệnh.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:cause {id: 'nhiễm_khuẩn_trong_niệu_đạo_cause'})
+MERGE (o1)-[r191:causedBy]->(o2)
+SET r191.text = 'Đối với những ca bệnh mà không nhận thấy sự nhiễm khuẩn trong niệu đạo, bác sĩ sẽ tiếp tục chỉ định thực hiện xét nghiệm nước tiểu và nuôi cấy để nước tiểu để tiếp tục tìm ra nguyên nhân viêm mào tinh hoàn và điều trị bệnh theo đúng hướng.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:test {id: 'xét_nghiệm_nước_tiểu_test'})
+MERGE (o1)-[r192:diagnosedBy]->(o2)
+SET r192.text = 'Đối với những ca bệnh mà không nhận thấy sự nhiễm khuẩn trong niệu đạo, bác sĩ sẽ tiếp tục chỉ định thực hiện xét nghiệm nước tiểu và nuôi cấy để nước tiểu để tiếp tục tìm ra nguyên nhân viêm mào tinh hoàn và điều trị bệnh theo đúng hướng.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:test {id: 'nuôi_cấy_nước_tiểu_test'})
+MERGE (o1)-[r193:diagnosedBy]->(o2)
+SET r193.text = 'Đối với những ca bệnh mà không nhận thấy sự nhiễm khuẩn trong niệu đạo, bác sĩ sẽ tiếp tục chỉ định thực hiện xét nghiệm nước tiểu và nuôi cấy để nước tiểu để tiếp tục tìm ra nguyên nhân viêm mào tinh hoàn và điều trị bệnh theo đúng hướng.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:treatment {id: 'nghỉ_ngơi_treatment'})
+MERGE (o1)-[r194:treatedBy]->(o2)
+SET r194.text = 'Điều kiện tiên quyết trong bất kỳ phương pháp điều trị viêm mào tinh hoàn là để mào tinh hoàn nghỉ ngơi.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:organ {id: 'mào_tinh_hoàn_organ'})
+MERGE (o1)-[r195:affects]->(o2)
+SET r195.text = 'Điều kiện tiên quyết trong bất kỳ phương pháp điều trị viêm mào tinh hoàn là để mào tinh hoàn nghỉ ngơi.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:lifestyle {id: 'cọ_xát_lifestyle'})
+MERGE (o1)-[r196:aggravatedBy]->(o2)
+SET r196.text = 'Người bệnh cần giảm các cọ xát, va chạm hoặc kích thích lên phần mào tinh hoàn.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:lifestyle {id: 'va_chạm_lifestyle'})
+MERGE (o1)-[r197:aggravatedBy]->(o2)
+SET r197.text = 'Người bệnh cần giảm các cọ xát, va chạm hoặc kích thích lên phần mào tinh hoàn.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:lifestyle {id: 'kích_thích_lifestyle'})
+MERGE (o1)-[r198:aggravatedBy]->(o2)
+SET r198.text = 'Người bệnh cần giảm các cọ xát, va chạm hoặc kích thích lên phần mào tinh hoàn.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:organ {id: 'mào_tinh_hoàn_organ'})
+MERGE (o1)-[r199:affects]->(o2)
+SET r199.text = 'Người bệnh cần giảm các cọ xát, va chạm hoặc kích thích lên phần mào tinh hoàn.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:treatment {id: 'tiêm_truyền_treatment'})
+MERGE (o1)-[r200:treatedBy]->(o2)
+SET r200.text = 'Đồng thời kết hợp tiêm truyền hoặc uống thuốc điều trị và thuốc giảm đau để làm thuyên giảm các triệu chứng.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:treatment {id: 'uống_thuốc_treatment'})
+MERGE (o1)-[r201:treatedBy]->(o2)
+SET r201.text = 'Đồng thời kết hợp tiêm truyền hoặc uống thuốc điều trị và thuốc giảm đau để làm thuyên giảm các triệu chứng.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:treatment {id: 'thuốc_giảm_đau_treatment'})
+MERGE (o1)-[r202:treatedBy]->(o2)
+SET r202.text = 'Đồng thời kết hợp tiêm truyền hoặc uống thuốc điều trị và thuốc giảm đau để làm thuyên giảm các triệu chứng.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:symptom {id: 'triệu_chứng_symptom'})
+MERGE (o1)-[r203:isSymptomOf]->(o2)
+SET r203.text = 'Đồng thời kết hợp tiêm truyền hoặc uống thuốc điều trị và thuốc giảm đau để làm thuyên giảm các triệu chứng.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:treatment {id: 'nghỉ_ngơi_treatment'})
+MERGE (o1)-[r204:treatedBy]->(o2)
+SET r204.text = 'Cụ thể, các phương pháp điều trị viêm mào tinh hoàn thường được chỉ định trong phác đồ gồm:  Nghỉ ngơi: Người bệnh được yêu cầu nghỉ ngơi tại giường.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:treatment {id: 'nghỉ_ngơi_tại_giường_treatment'})
+MERGE (o1)-[r205:treatedBy]->(o2)
+SET r205.text = 'Cụ thể, các phương pháp điều trị viêm mào tinh hoàn thường được chỉ định trong phác đồ gồm:  Nghỉ ngơi: Người bệnh được yêu cầu nghỉ ngơi tại giường.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:treatment {id: 'quần_lót_hỗ_trợ_cơ_quan_sinh_dục_đứng_thẳng_treatment'})
+MERGE (o1)-[r206:treatedBy]->(o2)
+SET r206.text = 'Để bìu ở vị trí cao bằng cách sử quần lót hỗ trợ cơ quan sinh dục đứng thẳng.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:organ {id: 'bìu_organ'})
+MERGE (o1)-[r207:affects]->(o2)
+SET r207.text = 'Để bìu ở vị trí cao bằng cách sử quần lót hỗ trợ cơ quan sinh dục đứng thẳng.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:lifestyle {id: 'cọ_xát_lifestyle'})
+MERGE (o1)-[r208:aggravatedBy]->(o2)
+SET r208.text = 'cần giảm tối đa các sự cọ xát, chườm lạnh gây kích ứng ở vị trí mào tinh hoàn và da bìu'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:treatment {id: 'chườm_lạnh_treatment'})
+MERGE (o1)-[r209:aggravatedBy]->(o2)
+SET r209.text = 'cần giảm tối đa các sự cọ xát, chườm lạnh gây kích ứng ở vị trí mào tinh hoàn và da bìu'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:organ {id: 'mào_tinh_hoàn_organ'})
+MERGE (o1)-[r210:affects]->(o2)
+SET r210.text = 'cần giảm tối đa các sự cọ xát, chườm lạnh gây kích ứng ở vị trí mào tinh hoàn và da bìu'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:organ {id: 'da_bìu_organ'})
+MERGE (o1)-[r211:affects]->(o2)
+SET r211.text = 'cần giảm tối đa các sự cọ xát, chườm lạnh gây kích ứng ở vị trí mào tinh hoàn và da bìu'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:treatment {id: 'thuốc_treatment'})
+MERGE (o1)-[r212:treatedBy]->(o2)
+SET r212.text = 'Sử dụng thuốc: Tùy vào các triệu chứng và cường độ cơn đau mà bác sĩ sẽ chỉ định những loại thuốc khác nhau.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:symptom {id: 'triệu_chứng_symptom'})
+MERGE (o1)-[r213:isSymptomOf]->(o2)
+SET r213.text = 'Sử dụng thuốc: Tùy vào các triệu chứng và cường độ cơn đau mà bác sĩ sẽ chỉ định những loại thuốc khác nhau.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:symptom {id: 'cơn_đau_symptom'})
+MERGE (o1)-[r214:isSymptomOf]->(o2)
+SET r214.text = 'Sử dụng thuốc: Tùy vào các triệu chứng và cường độ cơn đau mà bác sĩ sẽ chỉ định những loại thuốc khác nhau.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:treatment {id: 'thuốc_giảm_đau_chống_viêm_treatment'})
+MERGE (o1)-[r215:treatedBy]->(o2)
+SET r215.text = 'Chủ yếu, người bệnh sẽ được chỉ định các loại thuốc giảm đau chống viêm, hoặc kháng sinh phổ rộng, và uống theo liều lượng chỉ định của bác sĩ.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:treatment {id: 'kháng_sinh_phổ_rộng_treatment'})
+MERGE (o1)-[r216:treatedBy]->(o2)
+SET r216.text = 'Chủ yếu, người bệnh sẽ được chỉ định các loại thuốc giảm đau chống viêm, hoặc kháng sinh phổ rộng, và uống theo liều lượng chỉ định của bác sĩ.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:disease {id: 'nhiễm_trùng_huyết_disease'})
+MERGE (o1)-[r217:causedBy]->(o2)
+SET r217.text = 'Với người bệnh nghi ngờ nhiễm trùng huyết, bác sĩ cũng có thể chỉ định tiêm kháng sinh nhóm aminoglycosid định kỳ mỗi ngày'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:treatment {id: 'tiêm_kháng_sinh_nhóm_aminoglycosid_treatment'})
+MERGE (o1)-[r218:treatedBy]->(o2)
+SET r218.text = 'Với người bệnh nghi ngờ nhiễm trùng huyết, bác sĩ cũng có thể chỉ định tiêm kháng sinh nhóm aminoglycosid định kỳ mỗi ngày'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:treatment {id: 'thủ_thuật_can_thiệp_treatment'})
+MERGE (o1)-[r219:treatedBy]->(o2)
+SET r219.text = 'Thực hiện thủ thuật can thiệp: Dành cho những trường hợp áp xe và tràn mủ ở màng tinh hoàn.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:symptom {id: 'áp_xe_symptom'})
+MERGE (o1)-[r220:isSymptomOf]->(o2)
+SET r220.text = 'Thực hiện thủ thuật can thiệp: Dành cho những trường hợp áp xe và tràn mủ ở màng tinh hoàn.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:symptom {id: 'tràn_mủ_symptom'})
+MERGE (o1)-[r221:isSymptomOf]->(o2)
+SET r221.text = 'Thực hiện thủ thuật can thiệp: Dành cho những trường hợp áp xe và tràn mủ ở màng tinh hoàn.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:organ {id: 'màng_tinh_hoàn_organ'})
+MERGE (o1)-[r222:affects]->(o2)
+SET r222.text = 'Thực hiện thủ thuật can thiệp: Dành cho những trường hợp áp xe và tràn mủ ở màng tinh hoàn.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:treatment {id: 'giải_phẫu_treatment'})
+MERGE (o1)-[r223:treatedBy]->(o2)
+SET r223.text = 'Bác sĩ sẽ cần thực hiện giải phẫu để dẫn lưu cho người bệnh.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:treatment {id: 'dẫn_lưu_treatment'})
+MERGE (o1)-[r224:treatedBy]->(o2)
+SET r224.text = 'Bác sĩ sẽ cần thực hiện giải phẫu để dẫn lưu cho người bệnh.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_mạn_tính_disease'})
+MERGE (o2:treatment {id: 'phẫu_thuật_cắt_bỏ_mào_tinh_hoàn_treatment'})
+MERGE (o1)-[r225:treatedBy]->(o2)
+SET r225.text = 'Phẫu thuật cắt bỏ mào tinh hoàn có thể được xem xét cho những ca bệnh mạn tính, không đáp ứng tất cả phương pháp điều trị phía trên.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:treatment {id: 'cách_ngăn_chặn_treatment'})
+MERGE (o1)-[r226:preventedBy]->(o2)
+SET r226.text = 'Không có cách ngăn chặn hoàn toàn viêm mào tinh hoàn ở người.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:lifestyle {id: 'quản_lý_sức_khỏe_tiết_niệu__thói_quen_tình_dục_và_vệ_sinh_cơ_thể_tốt_lifestyle'})
+MERGE (o1)-[r227:preventedBy]->(o2)
+SET r227.text = 'Tuy nhiên, nam giới vẫn có thể thực hiện phòng ngừa tối ưu bệnh bằng cách quản lý sức khỏe tiết niệu, thói quen tình dục và vệ sinh cơ thể tốt.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:lifestyle {id: 'sử_dụng_bao_cao_su_trong_quan_hệ_tình_dục_lifestyle'})
+MERGE (o1)-[r228:preventedBy]->(o2)
+SET r228.text = 'Một số cách giúp nam giới có thể phòng tránh viêm mào tinh hoàn: Sử dụng bao cao su trong quan hệ tình dục.'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:lifestyle {id: 'tình_dục_an_toàn_lifestyle'})
+MERGE (o1)-[r229:preventedBy]->(o2)
+SET r229.text = 'Đồng thời, giữ ý thức và thực hiện tốt về tình dục an toàn để phòng ngừa bệnh STDs'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:treatment {id: 'cắt_bao_quy_đầu_treatment'})
+MERGE (o1)-[r230:preventedBy]->(o2)
+SET r230.text = 'Cắt bao quy đầu trong độ tuổi phù hợp và quy định'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:lifestyle {id: 'giữ_vệ_sinh_lifestyle'})
+MERGE (o1)-[r231:preventedBy]->(o2)
+SET r231.text = 'Giữ vệ sinh cho môi trường xung quanh, đặc biệt là khu vực nhà tắm, phòng vệ sinh'
+
+MERGE (o1:disease {id: 'viêm_mào_tinh_hoàn_disease'})
+MERGE (o2:treatment {id: 'tiêm_phòng_treatment'})
+MERGE (o1)-[r232:preventedBy]->(o2)
+SET r232.text = 'Tiêm phòng đầy đủ các bệnh STDs, quai bị, lao'
+
+MERGE (o1:organ {id: 'trung_tâm_tiết_niệu_thận_học_organ'})
+MERGE (o2:organ {id: 'hệ_thống_bvđk_tâm_anh_organ'})
+MERGE (o1)-[r233:locatedIn]->(o2)
+SET r233.text = 'Trung tâm Tiết niệu Thận học, Khoa Nam học – Tiết niệu của Hệ thống BVĐK Tâm Anh quy tụ đội ngũ các chuyên gia đầu ngành, Nội khoa và Ngoại khoa, giỏi chuyên môn, tận tâm.'
+
+MERGE (o1:person {id: 'gs.ts.bs_trần_quán_anh_person'})
+MERGE (o2:organ {id: 'tiết_niệu_thận_học_việt_nam_organ'})
+MERGE (o1)-[r234:relatedTo]->(o2)
+SET r234.text = 'Nhà giáo nhân dân GS.TS.BS Trần Quán Anh, Thầy thuốc ưu tú PGS.TS.BS Vũ Lê Chuyên là những cây đại thụ trong ngành Tiết niệu Thận học Việt Nam.'
+
+MERGE (o1:person {id: 'pgs.ts.bs_vũ_lê_chuyên_person'})
+MERGE (o2:organ {id: 'tiết_niệu_thận_học_việt_nam_organ'})
+MERGE (o1)-[r235:relatedTo]->(o2)
+SET r235.text = 'Nhà giáo nhân dân GS.TS.BS Trần Quán Anh, Thầy thuốc ưu tú PGS.TS.BS Vũ Lê Chuyên là những cây đại thụ trong ngành Tiết niệu Thận học Việt Nam.'
+
+MERGE (o1:person {id: 'ts.bs_nguyễn_thế_trường_person'})
+MERGE (o2:organ {id: 'tiết_niệu_thận_học_organ'})
+MERGE (o1)-[r236:relatedTo]->(o2)
+SET r236.text = 'Cùng với các tên tuổi Thầy thuốc ưu tú TS.BS Nguyễn Thế Trường Thầy thuốc ưu tú BS.CKII Tạ Phương Dung, TS.BS Nguyễn Hoàng Đức, TS.BS Từ Thành Trí Dũng, ThS.BS.CKI Nguyễn Đức Nhuận, BS.CKII Nguyễn Lê Tuyên, ThS.BS Nguyễn Tân Cương, ThS.BS Tạ Ngọc Thạch, BS.CKI Phan Trường Nam…'
+
+MERGE (o1:person {id: 'bs.ckii_tạ_phương_dung_person'})
+MERGE (o2:organ {id: 'tiết_niệu_thận_học_organ'})
+MERGE (o1)-[r237:relatedTo]->(o2)
+SET r237.text = 'Cùng với các tên tuổi Thầy thuốc ưu tú TS.BS Nguyễn Thế Trường Thầy thuốc ưu tú BS.CKII Tạ Phương Dung, TS.BS Nguyễn Hoàng Đức, TS.BS Từ Thành Trí Dũng, ThS.BS.CKI Nguyễn Đức Nhuận, BS.CKII Nguyễn Lê Tuyên, ThS.BS Nguyễn Tân Cương, ThS.BS Tạ Ngọc Thạch, BS.CKI Phan Trường Nam…'
+
+MERGE (o1:person {id: 'ts.bs_nguyễn_hoàng_đức_person'})
+MERGE (o2:organ {id: 'tiết_niệu_thận_học_organ'})
+MERGE (o1)-[r238:relatedTo]->(o2)
+SET r238.text = 'Cùng với các tên tuổi Thầy thuốc ưu tú TS.BS Nguyễn Thế Trường Thầy thuốc ưu tú BS.CKII Tạ Phương Dung, TS.BS Nguyễn Hoàng Đức, TS.BS Từ Thành Trí Dũng, ThS.BS.CKI Nguyễn Đức Nhuận, BS.CKII Nguyễn Lê Tuyên, ThS.BS Nguyễn Tân Cương, ThS.BS Tạ Ngọc Thạch, BS.CKI Phan Trường Nam…'
+
+MERGE (o1:person {id: 'ts.bs_từ_thành_trí_dũng_person'})
+MERGE (o2:organ {id: 'tiết_niệu_thận_học_organ'})
+MERGE (o1)-[r239:relatedTo]->(o2)
+SET r239.text = 'Cùng với các tên tuổi Thầy thuốc ưu tú TS.BS Nguyễn Thế Trường Thầy thuốc ưu tú BS.CKII Tạ Phương Dung, TS.BS Nguyễn Hoàng Đức, TS.BS Từ Thành Trí Dũng, ThS.BS.CKI Nguyễn Đức Nhuận, BS.CKII Nguyễn Lê Tuyên, ThS.BS Nguyễn Tân Cương, ThS.BS Tạ Ngọc Thạch, BS.CKI Phan Trường Nam…'
+
+MERGE (o1:person {id: 'ths.bs.cki_nguyễn_đức_nhuận_person'})
+MERGE (o2:organ {id: 'tiết_niệu_thận_học_organ'})
+MERGE (o1)-[r240:relatedTo]->(o2)
+SET r240.text = 'Cùng với các tên tuổi Thầy thuốc ưu tú TS.BS Nguyễn Thế Trường Thầy thuốc ưu tú BS.CKII Tạ Phương Dung, TS.BS Nguyễn Hoàng Đức, TS.BS Từ Thành Trí Dũng, ThS.BS.CKI Nguyễn Đức Nhuận, BS.CKII Nguyễn Lê Tuyên, ThS.BS Nguyễn Tân Cương, ThS.BS Tạ Ngọc Thạch, BS.CKI Phan Trường Nam…'
+
+MERGE (o1:person {id: 'bs.ckii_nguyễn_lê_tuyên_person'})
+MERGE (o2:organ {id: 'tiết_niệu_thận_học_organ'})
+MERGE (o1)-[r241:relatedTo]->(o2)
+SET r241.text = 'Cùng với các tên tuổi Thầy thuốc ưu tú TS.BS Nguyễn Thế Trường Thầy thuốc ưu tú BS.CKII Tạ Phương Dung, TS.BS Nguyễn Hoàng Đức, TS.BS Từ Thành Trí Dũng, ThS.BS.CKI Nguyễn Đức Nhuận, BS.CKII Nguyễn Lê Tuyên, ThS.BS Nguyễn Tân Cương, ThS.BS Tạ Ngọc Thạch, BS.CKI Phan Trường Nam…'
+
+MERGE (o1:person {id: 'ths.bs_nguyễn_tân_cương_person'})
+MERGE (o2:organ {id: 'tiết_niệu_thận_học_organ'})
+MERGE (o1)-[r242:relatedTo]->(o2)
+SET r242.text = 'Cùng với các tên tuổi Thầy thuốc ưu tú TS.BS Nguyễn Thế Trường Thầy thuốc ưu tú BS.CKII Tạ Phương Dung, TS.BS Nguyễn Hoàng Đức, TS.BS Từ Thành Trí Dũng, ThS.BS.CKI Nguyễn Đức Nhuận, BS.CKII Nguyễn Lê Tuyên, ThS.BS Nguyễn Tân Cương, ThS.BS Tạ Ngọc Thạch, BS.CKI Phan Trường Nam…'
+
+MERGE (o1:person {id: 'ths.bs_tạ_ngọc_thạch_person'})
+MERGE (o2:organ {id: 'tiết_niệu_thận_học_organ'})
+MERGE (o1)-[r243:relatedTo]->(o2)
+SET r243.text = 'Cùng với các tên tuổi Thầy thuốc ưu tú TS.BS Nguyễn Thế Trường Thầy thuốc ưu tú BS.CKII Tạ Phương Dung, TS.BS Nguyễn Hoàng Đức, TS.BS Từ Thành Trí Dũng, ThS.BS.CKI Nguyễn Đức Nhuận, BS.CKII Nguyễn Lê Tuyên, ThS.BS Nguyễn Tân Cương, ThS.BS Tạ Ngọc Thạch, BS.CKI Phan Trường Nam…'
+
+MERGE (o1:person {id: 'bs.cki_phan_trường_nam_person'})
+MERGE (o2:organ {id: 'tiết_niệu_thận_học_organ'})
+MERGE (o1)-[r244:relatedTo]->(o2)
+SET r244.text = 'Cùng với các tên tuổi Thầy thuốc ưu tú TS.BS Nguyễn Thế Trường Thầy thuốc ưu tú BS.CKII Tạ Phương Dung, TS.BS Nguyễn Hoàng Đức, TS.BS Từ Thành Trí Dũng, ThS.BS.CKI Nguyễn Đức Nhuận, BS.CKII Nguyễn Lê Tuyên, ThS.BS Nguyễn Tân Cương, ThS.BS Tạ Ngọc Thạch, BS.CKI Phan Trường Nam…'
+
+MERGE (o1:organ {id: 'trung_tâm_tiết_niệu_thận_học_organ'})
+MERGE (o2:disease {id: 'các_bệnh_lý_về_thận_và_đường_tiết_niệu_disease'})
+MERGE (o1)-[r245:treatedBy]->(o2)
+SET r245.text = 'Các chuyên gia, bác sĩ của Trung tâm luôn tự tin làm chủ những kỹ thuật mới nhất, phát hiện sớm và điều trị hiệu quả các bệnh lý về thận và đường tiết niệu, giúp người bệnh rút ngắn thời gian nằm viện, hạn chế nguy cơ tái phát, nâng cao chất lượng cuộc sống.'
+
+MERGE (o1:organ {id: 'trung_tâm_tiết_niệu_thận_học_organ'})
+MERGE (o2:disease {id: 'các_bệnh_lý_đường_tiết_niệu_disease'})
+MERGE (o1)-[r246:treatedBy]->(o2)
+SET r246.text = 'Với hệ thống máy móc, trang thiết bị hiện đại hàng đầu trong nước và khu vực; Phòng mổ đạt tiêu chuẩn quốc tế; Cùng với khu nội trú và dịch vụ cao cấp 5 sao… Trung tâm Tiết niệu Thận học nổi bật với các dịch vụ thăm khám, tầm soát và điều trị tất cả các bệnh lý đường tiết niệu.'
+
+MERGE (o1:disease {id: 'các_bệnh_lý_đường_tiết_niệu_disease'})
+MERGE (o2:treatment {id: 'các_cuộc_đại_phẫu_thuật_kỹ_thuật_cao_treatment'})
+MERGE (o1)-[r247:treatedBy]->(o2)
+SET r247.text = 'Từ các thường gặp cho đến các cuộc đại phẫu thuật kỹ thuật cao.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_nội_soi_sỏi_thận_treatment'})
+MERGE (o2:disease {id: 'sỏi_thận_disease'})
+MERGE (o1)-[r248:treatedBy]->(o2)
+SET r248.text = 'Có thể kể đến phẫu thuật nội soi sỏi thận, ghép thận, cắt bướu bảo tồn nhu mô thận; cắt thận tận gốc; cắt tuyến tiền liệt tận gốc; cắt toàn bộ bàng quang tạo hình bàng quang bằng ruột non; cắt tuyến thượng thận; tạo hình các dị tật đường tiết niệu…'
+
+MERGE (o1:treatment {id: 'ghép_thận_treatment'})
+MERGE (o2:disease {id: 'bệnh_thận_disease'})
+MERGE (o1)-[r249:treatedBy]->(o2)
+SET r249.text = 'Có thể kể đến phẫu thuật nội soi sỏi thận, ghép thận, cắt bướu bảo tồn nhu mô thận; cắt thận tận gốc; cắt tuyến tiền liệt tận gốc; cắt toàn bộ bàng quang tạo hình bàng quang bằng ruột non; cắt tuyến thượng thận; tạo hình các dị tật đường tiết niệu…'
+
+MERGE (o1:treatment {id: 'cắt_bướu_bảo_tồn_nhu_mô_thận_treatment'})
+MERGE (o2:disease {id: 'bướu_thận_disease'})
+MERGE (o1)-[r250:treatedBy]->(o2)
+SET r250.text = 'Có thể kể đến phẫu thuật nội soi sỏi thận, ghép thận, cắt bướu bảo tồn nhu mô thận; cắt thận tận gốc; cắt tuyến tiền liệt tận gốc; cắt toàn bộ bàng quang tạo hình bàng quang bằng ruột non; cắt tuyến thượng thận; tạo hình các dị tật đường tiết niệu…'
+
+MERGE (o1:treatment {id: 'cắt_thận_tận_gốc_treatment'})
+MERGE (o2:disease {id: 'ung_thư_thận_disease'})
+MERGE (o1)-[r251:treatedBy]->(o2)
+SET r251.text = 'Có thể kể đến phẫu thuật nội soi sỏi thận, ghép thận, cắt bướu bảo tồn nhu mô thận; cắt thận tận gốc; cắt tuyến tiền liệt tận gốc; cắt toàn bộ bàng quang tạo hình bàng quang bằng ruột non; cắt tuyến thượng thận; tạo hình các dị tật đường tiết niệu…'
+
+MERGE (o1:treatment {id: 'cắt_tuyến_tiền_liệt_tận_gốc_treatment'})
+MERGE (o2:disease {id: 'ung_thư_tuyến_tiền_liệt_disease'})
+MERGE (o1)-[r252:treatedBy]->(o2)
+SET r252.text = 'Có thể kể đến phẫu thuật nội soi sỏi thận, ghép thận, cắt bướu bảo tồn nhu mô thận; cắt thận tận gốc; cắt tuyến tiền liệt tận gốc; cắt toàn bộ bàng quang tạo hình bàng quang bằng ruột non; cắt tuyến thượng thận; tạo hình các dị tật đường tiết niệu…'
+
+MERGE (o1:treatment {id: 'cắt_toàn_bộ_bàng_quang_tạo_hình_bàng_quang_bằng_ruột_non_treatment'})
+MERGE (o2:disease {id: 'ung_thư_bàng_quang_disease'})
+MERGE (o1)-[r253:treatedBy]->(o2)
+SET r253.text = 'Có thể kể đến phẫu thuật nội soi sỏi thận, ghép thận, cắt bướu bảo tồn nhu mô thận; cắt thận tận gốc; cắt tuyến tiền liệt tận gốc; cắt toàn bộ bàng quang tạo hình bàng quang bằng ruột non; cắt tuyến thượng thận; tạo hình các dị tật đường tiết niệu…'
+
+MERGE (o1:treatment {id: 'cắt_tuyến_thượng_thận_treatment'})
+MERGE (o2:disease {id: 'ung_thư_tuyến_thượng_thận_disease'})
+MERGE (o1)-[r254:treatedBy]->(o2)
+SET r254.text = 'Có thể kể đến phẫu thuật nội soi sỏi thận, ghép thận, cắt bướu bảo tồn nhu mô thận; cắt thận tận gốc; cắt tuyến tiền liệt tận gốc; cắt toàn bộ bàng quang tạo hình bàng quang bằng ruột non; cắt tuyến thượng thận; tạo hình các dị tật đường tiết niệu…'
+
+MERGE (o1:treatment {id: 'tạo_hình_các_dị_tật_đường_tiết_niệu_treatment'})
+MERGE (o2:disease {id: 'dị_tật_đường_tiết_niệu_disease'})
+MERGE (o1)-[r255:treatedBy]->(o2)
+SET r255.text = 'Có thể kể đến phẫu thuật nội soi sỏi thận, ghép thận, cắt bướu bảo tồn nhu mô thận; cắt thận tận gốc; cắt tuyến tiền liệt tận gốc; cắt toàn bộ bàng quang tạo hình bàng quang bằng ruột non; cắt tuyến thượng thận; tạo hình các dị tật đường tiết niệu…'

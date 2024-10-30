@@ -1,0 +1,545 @@
+
+MERGE (o1:cause {id: 'metapneumovirus_cause'})
+MERGE (o2:disease {id: 'bệnh_viêm_đường_hô_hấp_disease'})
+MERGE (o1)-[r0:causedBy]->(o2)
+SET r0.text = 'Metapneumovirus là một chủng virus gây ra các bệnh viêm đường hô hấp ở trẻ nhỏ.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_đường_hô_hấp_disease'})
+MERGE (o2:lifestyle {id: 'trẻ_nhỏ_lifestyle'})
+MERGE (o1)-[r1:affects]->(o2)
+SET r1.text = 'Metapneumovirus là một chủng virus gây ra các bệnh viêm đường hô hấp ở trẻ nhỏ.'
+
+MERGE (o1:disease {id: 'viêm_phổi_do_metapneumovirus_disease'})
+MERGE (o2:cause {id: 'metapneumovirus_cause'})
+MERGE (o1)-[r2:isSymptomOf]->(o2)
+SET r2.text = 'Trong đó, viêm phổi do Metapneumovirus là một bệnh lý nguy hiểm cần được phát hiện và điều trị sớm để ngăn ngừa các biến chứng nguy hiểm.'
+
+MERGE (o1:disease {id: 'viêm_phổi_do_metapneumovirus_disease'})
+MERGE (o2:organ {id: 'nhu_mô_phổi_organ'})
+MERGE (o1)-[r3:affects]->(o2)
+SET r3.text = 'Viêm phổi do Metapneumovirus là tình trạng nhu mô phổi bị viêm nhiễm, bao gồm viêm phế nang, túi phế nang, ống phế nang, tổ chức liên kết khe kẽ và viêm tiểu phế quản tận cùng do sự xâm nhập và lây lan nhanh chóng của Metapneumovirus.'
+
+MERGE (o1:disease {id: 'viêm_phổi_do_metapneumovirus_disease'})
+MERGE (o2:symptom {id: 'viêm_phế_nang_symptom'})
+MERGE (o1)-[r4:affects]->(o2)
+SET r4.text = 'Viêm phổi do Metapneumovirus là tình trạng nhu mô phổi bị viêm nhiễm, bao gồm viêm phế nang, túi phế nang, ống phế nang, tổ chức liên kết khe kẽ và viêm tiểu phế quản tận cùng do sự xâm nhập và lây lan nhanh chóng của Metapneumovirus.'
+
+MERGE (o1:disease {id: 'viêm_phổi_do_metapneumovirus_disease'})
+MERGE (o2:organ {id: 'túi_phế_nang_organ'})
+MERGE (o1)-[r5:affects]->(o2)
+SET r5.text = 'Viêm phổi do Metapneumovirus là tình trạng nhu mô phổi bị viêm nhiễm, bao gồm viêm phế nang, túi phế nang, ống phế nang, tổ chức liên kết khe kẽ và viêm tiểu phế quản tận cùng do sự xâm nhập và lây lan nhanh chóng của Metapneumovirus.'
+
+MERGE (o1:disease {id: 'viêm_phổi_do_metapneumovirus_disease'})
+MERGE (o2:organ {id: 'ống_phế_nang_organ'})
+MERGE (o1)-[r6:affects]->(o2)
+SET r6.text = 'Viêm phổi do Metapneumovirus là tình trạng nhu mô phổi bị viêm nhiễm, bao gồm viêm phế nang, túi phế nang, ống phế nang, tổ chức liên kết khe kẽ và viêm tiểu phế quản tận cùng do sự xâm nhập và lây lan nhanh chóng của Metapneumovirus.'
+
+MERGE (o1:disease {id: 'viêm_phổi_do_metapneumovirus_disease'})
+MERGE (o2:organ {id: 'tổ_chức_liên_kết_khe_kẽ_organ'})
+MERGE (o1)-[r7:affects]->(o2)
+SET r7.text = 'Viêm phổi do Metapneumovirus là tình trạng nhu mô phổi bị viêm nhiễm, bao gồm viêm phế nang, túi phế nang, ống phế nang, tổ chức liên kết khe kẽ và viêm tiểu phế quản tận cùng do sự xâm nhập và lây lan nhanh chóng của Metapneumovirus.'
+
+MERGE (o1:disease {id: 'viêm_phổi_do_metapneumovirus_disease'})
+MERGE (o2:symptom {id: 'viêm_tiểu_phế_quản_tận_cùng_symptom'})
+MERGE (o1)-[r8:affects]->(o2)
+SET r8.text = 'Viêm phổi do Metapneumovirus là tình trạng nhu mô phổi bị viêm nhiễm, bao gồm viêm phế nang, túi phế nang, ống phế nang, tổ chức liên kết khe kẽ và viêm tiểu phế quản tận cùng do sự xâm nhập và lây lan nhanh chóng của Metapneumovirus.'
+
+MERGE (o1:disease {id: 'viêm_phổi_do_metapneumovirus_disease'})
+MERGE (o2:lifestyle {id: 'trẻ_em_dưới_5_tuổi_lifestyle'})
+MERGE (o1)-[r9:affects]->(o2)
+SET r9.text = 'Trẻ em dưới 5 tuổi, người lớn trên 65 tuổi và những người có hệ thống miễn dịch yếu là đối tượng dễ mắc viêm phổi do Metapneumovirus.'
+
+MERGE (o1:disease {id: 'viêm_phổi_do_metapneumovirus_disease'})
+MERGE (o2:lifestyle {id: 'người_lớn_trên_65_tuổi_lifestyle'})
+MERGE (o1)-[r10:affects]->(o2)
+SET r10.text = 'Trẻ em dưới 5 tuổi, người lớn trên 65 tuổi và những người có hệ thống miễn dịch yếu là đối tượng dễ mắc viêm phổi do Metapneumovirus.'
+
+MERGE (o1:disease {id: 'viêm_phổi_do_metapneumovirus_disease'})
+MERGE (o2:lifestyle {id: 'những_người_có_hệ_thống_miễn_dịch_yếu_lifestyle'})
+MERGE (o1)-[r11:affects]->(o2)
+SET r11.text = 'Trẻ em dưới 5 tuổi, người lớn trên 65 tuổi và những người có hệ thống miễn dịch yếu là đối tượng dễ mắc viêm phổi do Metapneumovirus.'
+
+MERGE (o1:symptom {id: 'nhiễm_bệnh_symptom'})
+MERGE (o2:disease {id: 'viêm_phổi_do_metapneumovirus_disease'})
+MERGE (o1)-[r12:isSymptomOf]->(o2)
+SET r12.text = 'Khi một trẻ nhiễm bệnh sẽ dễ lây bệnh cho người khác trong gia đình, trường học, khu vui chơi… từ đó bùng phát thành dịch trong cộng đồng.'
+
+MERGE (o1:symptom {id: 'lây_bệnh_symptom'})
+MERGE (o2:disease {id: 'viêm_phổi_do_metapneumovirus_disease'})
+MERGE (o1)-[r13:isSymptomOf]->(o2)
+SET r13.text = 'Khi một trẻ nhiễm bệnh sẽ dễ lây bệnh cho người khác trong gia đình, trường học, khu vui chơi… từ đó bùng phát thành dịch trong cộng đồng.'
+
+MERGE (o1:symptom {id: 'mắc_bệnh_symptom'})
+MERGE (o2:disease {id: 'viêm_phổi_do_metapneumovirus_disease'})
+MERGE (o1)-[r14:isSymptomOf]->(o2)
+SET r14.text = 'Hơn nữa, khi mắc bệnh, tình trạng bệnh có nguy cơ xuất hiện biến chứng cao hơn.'
+
+MERGE (o1:symptom {id: 'biến_chứng_symptom'})
+MERGE (o2:disease {id: 'viêm_phổi_do_metapneumovirus_disease'})
+MERGE (o1)-[r15:isSymptomOf]->(o2)
+SET r15.text = 'Hơn nữa, khi mắc bệnh, tình trạng bệnh có nguy cơ xuất hiện biến chứng cao hơn.'
+
+MERGE (o1:symptom {id: 'sốt_symptom'})
+MERGE (o2:disease {id: 'viêm_phổi_do_metapneumovirus_disease'})
+MERGE (o1)-[r16:isSymptomOf]->(o2)
+SET r16.text = 'Sốt, ho, chảy nước mũi, khó thở là những triệu chứng phổ biến của viêm phổi do Metapneumovirus'
+
+MERGE (o1:symptom {id: 'ho_symptom'})
+MERGE (o2:disease {id: 'viêm_phổi_do_metapneumovirus_disease'})
+MERGE (o1)-[r17:isSymptomOf]->(o2)
+SET r17.text = 'Sốt, ho, chảy nước mũi, khó thở là những triệu chứng phổ biến của viêm phổi do Metapneumovirus'
+
+MERGE (o1:symptom {id: 'chảy_nước_mũi_symptom'})
+MERGE (o2:disease {id: 'viêm_phổi_do_metapneumovirus_disease'})
+MERGE (o1)-[r18:isSymptomOf]->(o2)
+SET r18.text = 'Sốt, ho, chảy nước mũi, khó thở là những triệu chứng phổ biến của viêm phổi do Metapneumovirus'
+
+MERGE (o1:symptom {id: 'khó_thở_symptom'})
+MERGE (o2:disease {id: 'viêm_phổi_do_metapneumovirus_disease'})
+MERGE (o1)-[r19:isSymptomOf]->(o2)
+SET r19.text = 'Sốt, ho, chảy nước mũi, khó thở là những triệu chứng phổ biến của viêm phổi do Metapneumovirus'
+
+MERGE (o1:symptom {id: 'các_triệu_chứng_symptom'})
+MERGE (o2:disease {id: 'viêm_phổi_do_metapneumovirus_disease'})
+MERGE (o1)-[r20:isSymptomOf]->(o2)
+SET r20.text = 'Các triệu chứng của bệnh viêm phổi do Metapneumovirus thường sẽ có biểu hiện sau khoảng 3-5 ngày kể từ khi bị nhiễm virus gây bệnh.'
+
+MERGE (o1:disease {id: 'viêm_phổi_do_metapneumovirus_disease'})
+MERGE (o2:cause {id: 'nhiễm_virus_cause'})
+MERGE (o1)-[r21:causedBy]->(o2)
+SET r21.text = 'Các triệu chứng của bệnh viêm phổi do Metapneumovirus thường sẽ có biểu hiện sau khoảng 3-5 ngày kể từ khi bị nhiễm virus gây bệnh.'
+
+MERGE (o1:symptom {id: 'các_triệu_chứng_ban_đầu_symptom'})
+MERGE (o2:disease {id: 'viêm_phổi_do_metapneumovirus_disease'})
+MERGE (o1)-[r22:isSymptomOf]->(o2)
+SET r22.text = 'Các triệu chứng ban đầu thường diễn ra ở mức độ nhẹ, dễ nhầm lẫn với cảm cúm thông thường như:'
+
+MERGE (o1:disease {id: 'cảm_cúm_thông_thường_disease'})
+MERGE (o2:disease {id: 'viêm_phổi_do_metapneumovirus_disease'})
+MERGE (o1)-[r23:relatedTo]->(o2)
+SET r23.text = 'Các triệu chứng ban đầu thường diễn ra ở mức độ nhẹ, dễ nhầm lẫn với cảm cúm thông thường như:'
+
+MERGE (o1:symptom {id: 'ho_symptom'})
+MERGE (o2:disease {id: 'viêm_phổi_do_metapneumovirus_disease'})
+MERGE (o1)-[r24:isSymptomOf]->(o2)
+SET r24.text = 'Ho;'
+
+MERGE (o1:symptom {id: 'chảy_nước_mũi_symptom'})
+MERGE (o2:disease {id: 'viêm_phổi_do_metapneumovirus_disease'})
+MERGE (o1)-[r25:isSymptomOf]->(o2)
+SET r25.text = 'Chảy nước mũi;'
+
+MERGE (o1:symptom {id: 'sốt_symptom'})
+MERGE (o2:disease {id: 'viêm_phổi_do_metapneumovirus_disease'})
+MERGE (o1)-[r26:isSymptomOf]->(o2)
+SET r26.text = 'Sốt.'
+
+MERGE (o1:disease {id: 'bệnh_disease'})
+MERGE (o2:disease {id: 'viêm_phổi_do_metapneumovirus_disease'})
+MERGE (o1)-[r27:isSymptomOf]->(o2)
+SET r27.text = 'Sau đó, bệnh bắt đầu trở nên tồi tệ hơn sau một vài ngày với các triệu chứng như:'
+
+MERGE (o1:symptom {id: 'các_triệu_chứng_symptom'})
+MERGE (o2:disease {id: 'viêm_phổi_do_metapneumovirus_disease'})
+MERGE (o1)-[r28:isSymptomOf]->(o2)
+SET r28.text = 'Sau đó, bệnh bắt đầu trở nên tồi tệ hơn sau một vài ngày với các triệu chứng như:'
+
+MERGE (o1:symptom {id: 'sốt_cao_symptom'})
+MERGE (o2:disease {id: 'viêm_phổi_do_metapneumovirus_disease'})
+MERGE (o1)-[r29:isSymptomOf]->(o2)
+SET r29.text = 'Sốt cao;'
+
+MERGE (o1:symptom {id: 'khó_thở_symptom'})
+MERGE (o2:disease {id: 'viêm_phổi_do_metapneumovirus_disease'})
+MERGE (o1)-[r30:isSymptomOf]->(o2)
+SET r30.text = 'Khó thở, thở khò khè;'
+
+MERGE (o1:symptom {id: 'thở_khò_khè_symptom'})
+MERGE (o2:disease {id: 'viêm_phổi_do_metapneumovirus_disease'})
+MERGE (o1)-[r31:isSymptomOf]->(o2)
+SET r31.text = 'Khó thở, thở khò khè;'
+
+MERGE (o1:symptom {id: 'ho_nặng_symptom'})
+MERGE (o2:disease {id: 'viêm_phổi_do_metapneumovirus_disease'})
+MERGE (o1)-[r32:isSymptomOf]->(o2)
+SET r32.text = 'Ho nặng, có đờm đặc;'
+
+MERGE (o1:symptom {id: 'có_đờm_đặc_symptom'})
+MERGE (o2:disease {id: 'viêm_phổi_do_metapneumovirus_disease'})
+MERGE (o1)-[r33:isSymptomOf]->(o2)
+SET r33.text = 'Ho nặng, có đờm đặc;'
+
+MERGE (o1:symptom {id: 'da__môi_tím_tái_symptom'})
+MERGE (o2:disease {id: 'viêm_phổi_do_metapneumovirus_disease'})
+MERGE (o1)-[r34:isSymptomOf]->(o2)
+SET r34.text = 'Da, môi tím tái;'
+
+MERGE (o1:cause {id: 'metapneumovirus_(human_metapneumovirus-_hmpv)_cause'})
+MERGE (o2:disease {id: 'viêm_phổi_disease'})
+MERGE (o1)-[r35:causedBy]->(o2)
+SET r35.text = 'Nguyên nhân gây nên tình trạng viêm phổi này là do sự xâm nhập của Metapneumovirus (Human Metapneumovirus- hMPV).'
+
+MERGE (o1:cause {id: 'metapneumovirus_cause'})
+MERGE (o2:cause {id: 'rsv__virus_hợp_bào_hô_hấp_cause'})
+MERGE (o1)-[r36:relatedTo]->(o2)
+SET r36.text = 'Metapneumovirus là một virus mới thuộc họ Paramyxovirus được phát hiện từ năm 2001 bởi các nhà khoa học ở Hà Lan, có nhiều đặc điểm dịch tễ tương tự như RSV, virus hợp bào hô hấp thường gây bệnh vào dịp đông - xuân tại Việt Nam.'
+
+MERGE (o1:cause {id: 'metapneumovirus_cause'})
+MERGE (o2:lifestyle {id: 'tiếp_xúc_trực_tiếp_với_các_giọt_bắn_có_chứa_virus_gây_bệnh_trong_không_khí_lifestyle'})
+MERGE (o1)-[r37:causedBy]->(o2)
+SET r37.text = 'Metapneumovirus được lây truyền từ người này sang người khác chủ yếu do tiếp xúc trực tiếp với các giọt bắn có chứa virus gây bệnh trong không khí được người bệnh giải phóng ra khỏi cơ thể khi giao tiếp, ho, hắt hơi,&#8230; Một số ít trường hợp, bệnh nhân bị nhiễm bệnh do tiếp xúc với các bề mặt có chứa virus gây bệnh nhưng tay nắm cửa, đồ chơi, đồ dùng cá nhân,&#8230;'
+
+MERGE (o1:cause {id: 'metapneumovirus_cause'})
+MERGE (o2:lifestyle {id: 'tiếp_xúc_với_các_bề_mặt_có_chứa_virus_gây_bệnh_lifestyle'})
+MERGE (o1)-[r38:causedBy]->(o2)
+SET r38.text = 'Metapneumovirus được lây truyền từ người này sang người khác chủ yếu do tiếp xúc trực tiếp với các giọt bắn có chứa virus gây bệnh trong không khí được người bệnh giải phóng ra khỏi cơ thể khi giao tiếp, ho, hắt hơi,&#8230; Một số ít trường hợp, bệnh nhân bị nhiễm bệnh do tiếp xúc với các bề mặt có chứa virus gây bệnh nhưng tay nắm cửa, đồ chơi, đồ dùng cá nhân,&#8230;'
+
+MERGE (o1:cause {id: 'metapneumovirus_cause'})
+MERGE (o2:disease {id: 'viêm_đường_hô_hấp_cấp_trên_và_dưới_disease'})
+MERGE (o1)-[r39:affects]->(o2)
+SET r39.text = 'Chủng virus này có thể gây viêm đường hô hấp cấp trên và dưới ở mọi lứa tuổi.'
+
+MERGE (o1:symptom {id: 'ho_nhiều_symptom'})
+MERGE (o2:disease {id: 'nhiễm_virus_disease'})
+MERGE (o1)-[r40:isSymptomOf]->(o2)
+SET r40.text = 'Khi nhiễm virus, người bệnh xuất hiện các triệu chứng hô hấp trên như ho nhiều, khó thở kèm theo sốt.'
+
+MERGE (o1:symptom {id: 'khó_thở_symptom'})
+MERGE (o2:disease {id: 'nhiễm_virus_disease'})
+MERGE (o1)-[r41:isSymptomOf]->(o2)
+SET r41.text = 'Khi nhiễm virus, người bệnh xuất hiện các triệu chứng hô hấp trên như ho nhiều, khó thở kèm theo sốt.'
+
+MERGE (o1:symptom {id: 'sốt_symptom'})
+MERGE (o2:disease {id: 'nhiễm_virus_disease'})
+MERGE (o1)-[r42:isSymptomOf]->(o2)
+SET r42.text = 'Khi nhiễm virus, người bệnh xuất hiện các triệu chứng hô hấp trên như ho nhiều, khó thở kèm theo sốt.'
+
+MERGE (o1:symptom {id: 'ho_nhiều_symptom'})
+MERGE (o2:disease {id: 'viêm_phổi_disease'})
+MERGE (o1)-[r43:isSymptomOf]->(o2)
+SET r43.text = 'Sau đó bệnh tiến triển thêm với các dấu hiệu ho nhiều, cảm giác khó thở, thở khò khè, một số trường hợp nặng hơn có dấu hiệu tổn thương phổi khi chụp X-quang, viêm phổi hoặc viêm tiểu phế quản.'
+
+MERGE (o1:symptom {id: 'cảm_giác_khó_thở_symptom'})
+MERGE (o2:disease {id: 'viêm_phổi_disease'})
+MERGE (o1)-[r44:isSymptomOf]->(o2)
+SET r44.text = 'Sau đó bệnh tiến triển thêm với các dấu hiệu ho nhiều, cảm giác khó thở, thở khò khè, một số trường hợp nặng hơn có dấu hiệu tổn thương phổi khi chụp X-quang, viêm phổi hoặc viêm tiểu phế quản.'
+
+MERGE (o1:symptom {id: 'thở_khò_khè_symptom'})
+MERGE (o2:disease {id: 'viêm_phổi_disease'})
+MERGE (o1)-[r45:isSymptomOf]->(o2)
+SET r45.text = 'Sau đó bệnh tiến triển thêm với các dấu hiệu ho nhiều, cảm giác khó thở, thở khò khè, một số trường hợp nặng hơn có dấu hiệu tổn thương phổi khi chụp X-quang, viêm phổi hoặc viêm tiểu phế quản.'
+
+MERGE (o1:symptom {id: 'tổn_thương_phổi_symptom'})
+MERGE (o2:disease {id: 'viêm_phổi_disease'})
+MERGE (o1)-[r46:isSymptomOf]->(o2)
+SET r46.text = 'Sau đó bệnh tiến triển thêm với các dấu hiệu ho nhiều, cảm giác khó thở, thở khò khè, một số trường hợp nặng hơn có dấu hiệu tổn thương phổi khi chụp X-quang, viêm phổi hoặc viêm tiểu phế quản.'
+
+MERGE (o1:disease {id: 'viêm_phổi_disease'})
+MERGE (o2:disease {id: 'nhiễm_virus_disease'})
+MERGE (o1)-[r47:isSymptomOf]->(o2)
+SET r47.text = 'Sau đó bệnh tiến triển thêm với các dấu hiệu ho nhiều, cảm giác khó thở, thở khò khè, một số trường hợp nặng hơn có dấu hiệu tổn thương phổi khi chụp X-quang, viêm phổi hoặc viêm tiểu phế quản.'
+
+MERGE (o1:disease {id: 'viêm_tiểu_phế_quản_disease'})
+MERGE (o2:disease {id: 'nhiễm_virus_disease'})
+MERGE (o1)-[r48:isSymptomOf]->(o2)
+SET r48.text = 'Sau đó bệnh tiến triển thêm với các dấu hiệu ho nhiều, cảm giác khó thở, thở khò khè, một số trường hợp nặng hơn có dấu hiệu tổn thương phổi khi chụp X-quang, viêm phổi hoặc viêm tiểu phế quản.'
+
+MERGE (o1:cause {id: 'metapneumovirus_cause'})
+MERGE (o2:symptom {id: 'diễn_tiến_nặng_symptom'})
+MERGE (o1)-[r49:associatedWith]->(o2)
+SET r49.text = 'Theo đánh giá của các chuyên gia y tế, Metapneumovirus ít phổ biến và thường không gây diễn tiến nặng.'
+
+MERGE (o1:lifestyle {id: 'thời_tiết_thay_đổi_thất_thường_lifestyle'})
+MERGE (o2:disease {id: 'viêm_phổi_disease'})
+MERGE (o1)-[r50:aggravatedBy]->(o2)
+SET r50.text = 'Tuy nhiên, tại miền Bắc nước ta, giai đoạn chuyển mùa đông và đầu mùa xuân thời tiết thay đổi thất thường, độ ẩm trong không khí cao tạo điều kiện cho virus, vi khuẩn gây bệnh hô hấp như RSV, phế cầu, cúm, Hib, Metapneumovirus… phát triển mạnh, từ đó làm gia tăng số ca mắc bệnh.'
+
+MERGE (o1:lifestyle {id: 'độ_ẩm_trong_không_khí_cao_lifestyle'})
+MERGE (o2:disease {id: 'viêm_phổi_disease'})
+MERGE (o1)-[r51:aggravatedBy]->(o2)
+SET r51.text = 'Tuy nhiên, tại miền Bắc nước ta, giai đoạn chuyển mùa đông và đầu mùa xuân thời tiết thay đổi thất thường, độ ẩm trong không khí cao tạo điều kiện cho virus, vi khuẩn gây bệnh hô hấp như RSV, phế cầu, cúm, Hib, Metapneumovirus… phát triển mạnh, từ đó làm gia tăng số ca mắc bệnh.'
+
+MERGE (o1:cause {id: 'rsv__phế_cầu__cúm__hib__metapneumovirus_cause'})
+MERGE (o2:disease {id: 'viêm_phổi_disease'})
+MERGE (o1)-[r52:causedBy]->(o2)
+SET r52.text = 'Tuy nhiên, tại miền Bắc nước ta, giai đoạn chuyển mùa đông và đầu mùa xuân thời tiết thay đổi thất thường, độ ẩm trong không khí cao tạo điều kiện cho virus, vi khuẩn gây bệnh hô hấp như RSV, phế cầu, cúm, Hib, Metapneumovirus… phát triển mạnh, từ đó làm gia tăng số ca mắc bệnh.'
+
+MERGE (o1:cause {id: 'đồng_nhiễm_metapneumovirus_cùng_các_vi_khuẩn__virus_khác_cause'})
+MERGE (o2:disease {id: 'viêm_phổi_disease'})
+MERGE (o1)-[r53:aggravatedBy]->(o2)
+SET r53.text = 'Khi đồng nhiễm Metapneumovirus cùng các vi khuẩn, virus khác thì nguy cơ bệnh diễn tiến nặng, gây biến chứng sẽ tăng cao.'
+
+MERGE (o1:cause {id: 'nợ_miễn_dịch_cause'})
+MERGE (o2:disease {id: 'viêm_phổi_disease'})
+MERGE (o1)-[r54:causedBy]->(o2)
+SET r54.text = 'Bên cạnh đó, việc gia tăng số ca bệnh diễn tiến nặng do Metapneumovirus có nguyên nhân cộng hưởng do &#8220;nợ miễn dịch&#8221; sau thời gian giãn cách xã hội và giảm tiếp xúc trong đại dịch Covid-19.'
+
+MERGE (o1:disease {id: 'viêm_phổi_do_metapneumovirus_disease'})
+MERGE (o2:test {id: 'thăm_khám_lâm_sàng_test'})
+MERGE (o1)-[r55:diagnosedBy]->(o2)
+SET r55.text = 'Để chẩn đoán viêm phổi do Metapneumovirus, bên cạnh việc thăm khám lâm sàng, hỏi về các tiền sử bệnh, bác sĩ có thể yêu cầu thực hiện thêm một số thủ thuật y khoa để chẩn đoán nguyên nhân gây bệnh, mức độ nghiêm trọng của bênh, từ đó, lựa chọn phương pháp điều trị phù hợp.'
+
+MERGE (o1:disease {id: 'viêm_phổi_do_metapneumovirus_disease'})
+MERGE (o2:test {id: 'hỏi_về_các_tiền_sử_bệnh_test'})
+MERGE (o1)-[r56:diagnosedBy]->(o2)
+SET r56.text = 'Để chẩn đoán viêm phổi do Metapneumovirus, bên cạnh việc thăm khám lâm sàng, hỏi về các tiền sử bệnh, bác sĩ có thể yêu cầu thực hiện thêm một số thủ thuật y khoa để chẩn đoán nguyên nhân gây bệnh, mức độ nghiêm trọng của bênh, từ đó, lựa chọn phương pháp điều trị phù hợp.'
+
+MERGE (o1:disease {id: 'viêm_phổi_do_metapneumovirus_disease'})
+MERGE (o2:test {id: 'chụp_x-quang_phổi_ngực_test'})
+MERGE (o1)-[r57:diagnosedBy]->(o2)
+SET r57.text = 'Để chẩn đoán viêm phổi do Metapneumovirus, bên cạnh việc thăm khám lâm sàng, hỏi về các tiền sử bệnh, bác sĩ có thể yêu cầu thực hiện thêm một số thủ thuật y khoa để chẩn đoán nguyên nhân gây bệnh, mức độ nghiêm trọng của bênh, từ đó, lựa chọn phương pháp điều trị phù hợp.'
+
+MERGE (o1:disease {id: 'viêm_phổi_do_metapneumovirus_disease'})
+MERGE (o2:test {id: 'nuôi_cấy_đờm_test'})
+MERGE (o1)-[r58:diagnosedBy]->(o2)
+SET r58.text = 'Để chẩn đoán viêm phổi do Metapneumovirus, bên cạnh việc thăm khám lâm sàng, hỏi về các tiền sử bệnh, bác sĩ có thể yêu cầu thực hiện thêm một số thủ thuật y khoa để chẩn đoán nguyên nhân gây bệnh, mức độ nghiêm trọng của bênh, từ đó, lựa chọn phương pháp điều trị phù hợp.'
+
+MERGE (o1:disease {id: 'viêm_phổi_do_metapneumovirus_disease'})
+MERGE (o2:test {id: 'xét_nghiệm_máu_test'})
+MERGE (o1)-[r59:diagnosedBy]->(o2)
+SET r59.text = 'Để chẩn đoán viêm phổi do Metapneumovirus, bên cạnh việc thăm khám lâm sàng, hỏi về các tiền sử bệnh, bác sĩ có thể yêu cầu thực hiện thêm một số thủ thuật y khoa để chẩn đoán nguyên nhân gây bệnh, mức độ nghiêm trọng của bênh, từ đó, lựa chọn phương pháp điều trị phù hợp.'
+
+MERGE (o1:disease {id: 'viêm_phổi_do_metapneumovirus_disease'})
+MERGE (o2:test {id: 'nội_soi_phế_quản_test'})
+MERGE (o1)-[r60:diagnosedBy]->(o2)
+SET r60.text = 'Để chẩn đoán viêm phổi do Metapneumovirus, bên cạnh việc thăm khám lâm sàng, hỏi về các tiền sử bệnh, bác sĩ có thể yêu cầu thực hiện thêm một số thủ thuật y khoa để chẩn đoán nguyên nhân gây bệnh, mức độ nghiêm trọng của bênh, từ đó, lựa chọn phương pháp điều trị phù hợp.'
+
+MERGE (o1:disease {id: 'viêm_phổi_do_metapneumovirus_disease'})
+MERGE (o2:test {id: 'chụp_ct_test'})
+MERGE (o1)-[r61:diagnosedBy]->(o2)
+SET r61.text = 'Để chẩn đoán viêm phổi do Metapneumovirus, bên cạnh việc thăm khám lâm sàng, hỏi về các tiền sử bệnh, bác sĩ có thể yêu cầu thực hiện thêm một số thủ thuật y khoa để chẩn đoán nguyên nhân gây bệnh, mức độ nghiêm trọng của bênh, từ đó, lựa chọn phương pháp điều trị phù hợp.'
+
+MERGE (o1:disease {id: 'viêm_phổi_do_metapneumovirus_disease'})
+MERGE (o2:test {id: 'xét_nghiệm_pcr_test'})
+MERGE (o1)-[r62:diagnosedBy]->(o2)
+SET r62.text = 'Để chẩn đoán viêm phổi do Metapneumovirus, bên cạnh việc thăm khám lâm sàng, hỏi về các tiền sử bệnh, bác sĩ có thể yêu cầu thực hiện thêm một số thủ thuật y khoa để chẩn đoán nguyên nhân gây bệnh, mức độ nghiêm trọng của bênh, từ đó, lựa chọn phương pháp điều trị phù hợp.'
+
+MERGE (o1:disease {id: 'viêm_phổi_do_metapneumovirus_disease'})
+MERGE (o2:test {id: 'xét_nghiệm_panel_2_test'})
+MERGE (o1)-[r63:diagnosedBy]->(o2)
+SET r63.text = 'Để chẩn đoán viêm phổi do Metapneumovirus, bên cạnh việc thăm khám lâm sàng, hỏi về các tiền sử bệnh, bác sĩ có thể yêu cầu thực hiện thêm một số thủ thuật y khoa để chẩn đoán nguyên nhân gây bệnh, mức độ nghiêm trọng của bênh, từ đó, lựa chọn phương pháp điều trị phù hợp.'
+
+MERGE (o1:cause {id: 'metapneumovirus_cause'})
+MERGE (o2:treatment {id: 'thuốc_điều_trị_đặc_hiệu_treatment'})
+MERGE (o1)-[r64:relatedTo]->(o2)
+SET r64.text = 'Hiện tại, chưa có nhiều nghiên cứu cụ thể về thuốc điều trị đặc hiệu hay biến chứng sau khi nhiễm Metapneumovirus.'
+
+MERGE (o1:cause {id: 'metapneumovirus_cause'})
+MERGE (o2:symptom {id: 'biến_chứng_symptom'})
+MERGE (o1)-[r65:relatedTo]->(o2)
+SET r65.text = 'Hiện tại, chưa có nhiều nghiên cứu cụ thể về thuốc điều trị đặc hiệu hay biến chứng sau khi nhiễm Metapneumovirus.'
+
+MERGE (o1:disease {id: 'viêm_phổi_do_metapneumovirus_disease'})
+MERGE (o2:treatment {id: 'điều_trị_triệu_chứng_treatment'})
+MERGE (o1)-[r66:treatedBy]->(o2)
+SET r66.text = 'Các phương pháp điều trị hiện có đều hướng đến điều trị triệu chứng, nhiễm trùng và ngăn ngừa xuất hiện biến chứng, gồm:'
+
+MERGE (o1:disease {id: 'viêm_phổi_do_metapneumovirus_disease'})
+MERGE (o2:treatment {id: 'điều_trị_nhiễm_trùng_treatment'})
+MERGE (o1)-[r67:treatedBy]->(o2)
+SET r67.text = 'Các phương pháp điều trị hiện có đều hướng đến điều trị triệu chứng, nhiễm trùng và ngăn ngừa xuất hiện biến chứng, gồm:'
+
+MERGE (o1:disease {id: 'viêm_phổi_do_metapneumovirus_disease'})
+MERGE (o2:treatment {id: 'ngăn_ngừa_xuất_hiện_biến_chứng_treatment'})
+MERGE (o1)-[r68:treatedBy]->(o2)
+SET r68.text = 'Các phương pháp điều trị hiện có đều hướng đến điều trị triệu chứng, nhiễm trùng và ngăn ngừa xuất hiện biến chứng, gồm:'
+
+MERGE (o1:treatment {id: 'thuốc_hạ_sốt_(paracetamol_hoặc_ibuprofen)_treatment'})
+MERGE (o2:symptom {id: 'sốt_cao_symptom'})
+MERGE (o1)-[r69:treatedBy]->(o2)
+SET r69.text = 'Dùng thuốc hạ sốt (paracetamol hoặc ibuprofen) với liều lượng phù hợp khi bệnh nhân sốt cao;'
+
+MERGE (o1:lifestyle {id: 'uống_nhiều_nước_lifestyle'})
+MERGE (o2:symptom {id: 'sốt__nôn_ói_symptom'})
+MERGE (o1)-[r70:treatedBy]->(o2)
+SET r70.text = 'Uống nhiều nước, nhất là các loại nước ép hoa quả hoặc dung dịch bù nước và điện giải oresol để cân bằng điện giải, bổ sung lượng nước bị mất đi do sốt, nôn ói;'
+
+MERGE (o1:treatment {id: 'khí_dung_treatment'})
+MERGE (o2:symptom {id: 'co_thắt_symptom'})
+MERGE (o1)-[r71:treatedBy]->(o2)
+SET r71.text = 'Thực hiện phương pháp khí dung khi bệnh nhân xuất hiện tình trạng co thắt;'
+
+MERGE (o1:treatment {id: 'thở_oxy_treatment'})
+MERGE (o2:symptom {id: 'suy_hô_hấp_symptom'})
+MERGE (o1)-[r72:treatedBy]->(o2)
+SET r72.text = 'Hỗ trợ hô hấp bằng các phương pháp thở oxy, máy thở khi bệnh nhân bị suy hô hấp;'
+
+MERGE (o1:treatment {id: 'máy_thở_treatment'})
+MERGE (o2:symptom {id: 'suy_hô_hấp_symptom'})
+MERGE (o1)-[r73:treatedBy]->(o2)
+SET r73.text = 'Hỗ trợ hô hấp bằng các phương pháp thở oxy, máy thở khi bệnh nhân bị suy hô hấp;'
+
+MERGE (o1:lifestyle {id: 'cân_chỉnh_chế_độ_dinh_dưỡng_lifestyle'})
+MERGE (o2:disease {id: 'viêm_phổi_disease'})
+MERGE (o1)-[r74:treatedBy]->(o2)
+SET r74.text = 'Cân chỉnh chế độ dinh dưỡng để bổ sung năng lượng và nâng cao sức đề kháng cho bệnh nhân;'
+
+MERGE (o1:treatment {id: 'thuốc_trị_ho_treatment'})
+MERGE (o2:symptom {id: 'ho_symptom'})
+MERGE (o1)-[r75:treatedBy]->(o2)
+SET r75.text = 'Sử dụng các loại thuốc trị ho, sổ mũi,&#8230; theo đúng chỉ định của bác sĩ.'
+
+MERGE (o1:treatment {id: 'thuốc_sổ_mũi_treatment'})
+MERGE (o2:symptom {id: 'sổ_mũi_symptom'})
+MERGE (o1)-[r76:treatedBy]->(o2)
+SET r76.text = 'Sử dụng các loại thuốc trị ho, sổ mũi,&#8230; theo đúng chỉ định của bác sĩ.'
+
+MERGE (o1:disease {id: 'viêm_phổi_disease'})
+MERGE (o2:treatment {id: 'chăm_sóc_và_hỗ_trợ_điều_trị_đúng_cách_treatment'})
+MERGE (o1)-[r77:treatedBy]->(o2)
+SET r77.text = 'Thông thường, các trường hợp viêm phổi ở mức độ nhẹ, bệnh sẽ tự hết sau khoảng 7 ngày nếu được chăm sóc và hỗ trợ điều trị đúng cách.'
+
+MERGE (o1:disease {id: 'viêm_phổi_disease'})
+MERGE (o2:treatment {id: 'đưa_đến_bệnh_viện_treatment'})
+MERGE (o1)-[r78:treatedBy]->(o2)
+SET r78.text = 'Tuy nhiên, trong một số trường hợp bệnh nhân cần được đưa đến bệnh viện để được hỗ trợ nếu bệnh không có dấu hiệu thuyên giảm sau khoảng 7-10 ngày hoặc xuất hiện dấu hiệu bất thường như:'
+
+MERGE (o1:disease {id: 'viêm_phổi_disease'})
+MERGE (o2:symptom {id: 'không_có_dấu_hiệu_thuyên_giảm_sau_khoảng_7-10_ngày_symptom'})
+MERGE (o1)-[r79:isSymptomOf]->(o2)
+SET r79.text = 'Tuy nhiên, trong một số trường hợp bệnh nhân cần được đưa đến bệnh viện để được hỗ trợ nếu bệnh không có dấu hiệu thuyên giảm sau khoảng 7-10 ngày hoặc xuất hiện dấu hiệu bất thường như:'
+
+MERGE (o1:disease {id: 'viêm_phổi_disease'})
+MERGE (o2:symptom {id: 'xuất_hiện_dấu_hiệu_bất_thường_symptom'})
+MERGE (o1)-[r80:isSymptomOf]->(o2)
+SET r80.text = 'Tuy nhiên, trong một số trường hợp bệnh nhân cần được đưa đến bệnh viện để được hỗ trợ nếu bệnh không có dấu hiệu thuyên giảm sau khoảng 7-10 ngày hoặc xuất hiện dấu hiệu bất thường như:'
+
+MERGE (o1:symptom {id: 'sốt_cao_liên_tục_symptom'})
+MERGE (o2:disease {id: 'viêm_phổi_disease'})
+MERGE (o1)-[r81:isSymptomOf]->(o2)
+SET r81.text = 'Sốt cao liên tục;'
+
+MERGE (o1:symptom {id: 'sốt_trên_39_độ_symptom'})
+MERGE (o2:disease {id: 'viêm_phổi_disease'})
+MERGE (o1)-[r82:isSymptomOf]->(o2)
+SET r82.text = 'Sốt trên 39 độ và không có dấu hiệu hạ thân nhiệt sau khi đã dùng thuốc hạ sốt;'
+
+MERGE (o1:symptom {id: 'không_có_dấu_hiệu_hạ_thân_nhiệt_symptom'})
+MERGE (o2:disease {id: 'viêm_phổi_disease'})
+MERGE (o1)-[r83:isSymptomOf]->(o2)
+SET r83.text = 'Sốt trên 39 độ và không có dấu hiệu hạ thân nhiệt sau khi đã dùng thuốc hạ sốt;'
+
+MERGE (o1:symptom {id: 'khó_thở_symptom'})
+MERGE (o2:disease {id: 'viêm_phổi_disease'})
+MERGE (o1)-[r84:isSymptomOf]->(o2)
+SET r84.text = 'Khó thở;'
+
+MERGE (o1:symptom {id: 'khò_khè_nhiều_symptom'})
+MERGE (o2:disease {id: 'viêm_phổi_disease'})
+MERGE (o1)-[r85:isSymptomOf]->(o2)
+SET r85.text = 'Khò khè nhiều;'
+
+MERGE (o1:symptom {id: 'ăn_kém_symptom'})
+MERGE (o2:disease {id: 'viêm_phổi_disease'})
+MERGE (o1)-[r86:isSymptomOf]->(o2)
+SET r86.text = 'Ăn kém, bỏ ăn, bỏ bú;'
+
+MERGE (o1:symptom {id: 'bỏ_ăn_symptom'})
+MERGE (o2:disease {id: 'viêm_phổi_disease'})
+MERGE (o1)-[r87:isSymptomOf]->(o2)
+SET r87.text = 'Ăn kém, bỏ ăn, bỏ bú;'
+
+MERGE (o1:symptom {id: 'bỏ_bú_symptom'})
+MERGE (o2:disease {id: 'viêm_phổi_disease'})
+MERGE (o1)-[r88:isSymptomOf]->(o2)
+SET r88.text = 'Ăn kém, bỏ ăn, bỏ bú;'
+
+MERGE (o1:symptom {id: 'tím_môi_symptom'})
+MERGE (o2:disease {id: 'viêm_phổi_disease'})
+MERGE (o1)-[r89:isSymptomOf]->(o2)
+SET r89.text = 'Tím môi, tím đầu chi;'
+
+MERGE (o1:symptom {id: 'tím_đầu_chi_symptom'})
+MERGE (o2:disease {id: 'viêm_phổi_disease'})
+MERGE (o1)-[r90:isSymptomOf]->(o2)
+SET r90.text = 'Tím môi, tím đầu chi;'
+
+MERGE (o1:disease {id: 'viêm_phổi_do_metapneumovirus_disease'})
+MERGE (o2:test {id: 'đếm_nhịp_thở_test'})
+MERGE (o1)-[r91:isSymptomOf]->(o2)
+SET r91.text = 'Ngoài ra, khi trẻ mắc bệnh viêm phổi do Metapneumovirus, mẹ có thể theo dõi tại nhà bằng cách đếm nhịp thở khi trẻ nằm yên, ngủ yên, không quấy khóc.'
+
+MERGE (o1:disease {id: 'viêm_phổi_do_metapneumovirus_disease'})
+MERGE (o2:symptom {id: 'nhịp_thở_vượt_qua_các_chỉ_số_symptom'})
+MERGE (o1)-[r92:isSymptomOf]->(o2)
+SET r92.text = 'Nếu nhịp thở của trẻ vượt qua các chỉ số sau, bố mẹ nên đưa trẻ đến bệnh viện càng sớm càng tốt:'
+
+MERGE (o1:symptom {id: 'nhịp_thở_trên_60_lần/phút_symptom'})
+MERGE (o2:disease {id: 'viêm_phổi_do_metapneumovirus_disease'})
+MERGE (o1)-[r93:isSymptomOf]->(o2)
+SET r93.text = 'Trẻ dưới 2 tháng tuổi, nhịp thở trên 60 lần/phút,'
+
+MERGE (o1:symptom {id: 'nhịp_thở_dưới_50_lần/phút_symptom'})
+MERGE (o2:disease {id: 'viêm_phổi_do_metapneumovirus_disease'})
+MERGE (o1)-[r94:isSymptomOf]->(o2)
+SET r94.text = 'Trẻ từ 2 tháng - 1 tuổi, nhịp thở dưới 50 lần/phút.'
+
+MERGE (o1:disease {id: 'metapneumovirus_disease'})
+MERGE (o2:treatment {id: 'các_biện_pháp_phòng_ngừa_treatment'})
+MERGE (o1)-[r95:preventedBy]->(o2)
+SET r95.text = 'Hiện nay, Metapneumovirus chưa có vacxin phòng ngừa, tuy nhiên chúng ta có thể giảm nguy cơ mắc bệnh bằng cách thực hiện tốt các biện pháp phòng ngừa sau:'
+
+MERGE (o1:lifestyle {id: 'chế_độ_dinh_dưỡng_khoa_học__đầy_đủ_dưỡng_chất_và_uống_đủ_nước_mỗi_ngày_lifestyle'})
+MERGE (o2:disease {id: 'metapneumovirus_disease'})
+MERGE (o1)-[r96:preventedBy]->(o2)
+SET r96.text = 'Thực hiện chế độ dinh dưỡng khoa học, đầy đủ dưỡng chất và uống đủ nước mỗi ngày;'
+
+MERGE (o1:lifestyle {id: 'đeo_khẩu_trang_lifestyle'})
+MERGE (o2:disease {id: 'metapneumovirus_disease'})
+MERGE (o1)-[r97:preventedBy]->(o2)
+SET r97.text = 'Đeo khẩu trang khi đến những nơi công cộng;'
+
+MERGE (o1:lifestyle {id: 'hạn_chế_đến_những_nơi_đông_người_lifestyle'})
+MERGE (o2:disease {id: 'metapneumovirus_disease'})
+MERGE (o1)-[r98:preventedBy]->(o2)
+SET r98.text = 'Hạn chế đến những nơi đông người khi dịch bệnh bùng phát;'
+
+MERGE (o1:lifestyle {id: 'tiếp_xúc_với_những_người_có_dấu_hiệu_mắc_các_bệnh_về_đường_hô_hấp_lifestyle'})
+MERGE (o2:disease {id: 'metapneumovirus_disease'})
+MERGE (o1)-[r99:preventedBy]->(o2)
+SET r99.text = 'Tránh tiếp xúc với những người có dấu hiệu mắc các bệnh về đường hô hấp;'
+
+MERGE (o1:lifestyle {id: 'rửa_tay_với_xà_phòng_hoặc_nước_rửa_tay_có_cồn_khử_khuẩn_lifestyle'})
+MERGE (o2:disease {id: 'metapneumovirus_disease'})
+MERGE (o1)-[r100:preventedBy]->(o2)
+SET r100.text = 'Xây dựng thói quen thường xuyên rửa tay với xà phòng hoặc nước rửa tay có cồn khử khuẩn;'
+
+MERGE (o1:lifestyle {id: 'súc_miệng_bằng_nước_muối_hoặc_dung_dịch_sát_khuẩn_lifestyle'})
+MERGE (o2:disease {id: 'metapneumovirus_disease'})
+MERGE (o1)-[r101:preventedBy]->(o2)
+SET r101.text = 'Thường xuyên súc miệng bằng nước muối hoặc dung dịch sát khuẩn;'
+
+MERGE (o1:lifestyle {id: 'dọn_dẹp_nhà_cửa_gọn_gàng__sạch_sẽ_lifestyle'})
+MERGE (o2:disease {id: 'metapneumovirus_disease'})
+MERGE (o1)-[r102:preventedBy]->(o2)
+SET r102.text = 'Dọn dẹp nhà cửa gọn gàng, sạch sẽ;'
+
+MERGE (o1:lifestyle {id: 'khử_khuẩn_môi_trường_sống_lifestyle'})
+MERGE (o2:disease {id: 'metapneumovirus_disease'})
+MERGE (o1)-[r103:preventedBy]->(o2)
+SET r103.text = 'Thường xuyên khử khuẩn môi trường sống;'
+
+MERGE (o1:lifestyle {id: 'hút_thuốc_lá_lifestyle'})
+MERGE (o2:disease {id: 'metapneumovirus_disease'})
+MERGE (o1)-[r104:aggravatedBy]->(o2)
+SET r104.text = 'Không hút thuốc lá và hạn chế tiếp xúc với môi trường nhiều khói bụi, khói thuốc lá;'
+
+MERGE (o1:lifestyle {id: 'dùng_chung_các_vật_dụng_cá_nhân_lifestyle'})
+MERGE (o2:disease {id: 'metapneumovirus_disease'})
+MERGE (o1)-[r105:aggravatedBy]->(o2)
+SET r105.text = 'Hạn chế dùng chung các vật dụng cá nhân với người khác;'
+
+MERGE (o1:treatment {id: 'tiêm_vacxin_treatment'})
+MERGE (o2:disease {id: 'metapneumovirus_disease'})
+MERGE (o1)-[r106:preventedBy]->(o2)
+SET r106.text = 'Tiêm vacxin đầy đủ theo khuyến cáo của Bộ Y tế;'
+
+MERGE (o1:lifestyle {id: 'ngủ_đủ_giấc__giữ_tinh_thần_thoải_mái__thường_xuyên_tập_luyện_thể_dục__thể_thao_lifestyle'})
+MERGE (o2:disease {id: 'metapneumovirus_disease'})
+MERGE (o1)-[r107:preventedBy]->(o2)
+SET r107.text = 'Tăng cường hệ miễn dịch bằng cách ngủ đủ giấc, giữ tinh thần thoải mái, thường xuyên tập luyện thể dục, thể thao;'
+
+MERGE (o1:disease {id: 'viêm_phổi_disease'})
+MERGE (o2:disease {id: 'metapneumovirus_disease'})
+MERGE (o1)-[r108:isSymptomOf]->(o2)
+SET r108.text = 'Thực hiện phương pháp điều trị dự phòng khi có dấu hiệu viêm phổi và đến bệnh viện ngay khi bệnh trở nặng, nghi ngờ viêm phổi.'

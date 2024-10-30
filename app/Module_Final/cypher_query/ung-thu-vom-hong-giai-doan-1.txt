@@ -1,0 +1,360 @@
+
+MERGE (o1:disease {id: 'ung_thư_vòm_họng_giai_đoạn_1_disease'})
+MERGE (o2:symptom {id: 'cảm_cúm__viêm_họng__viêm_đường_hô_hấp_symptom'})
+MERGE (o1)-[r0:isSymptomOf]->(o2)
+SET r0.text = 'Ung thư vòm họng giai đoạn 1 thường bị nhầm lẫn với các bệnh lý lành tính khác như cảm cúm, viêm họng, viêm đường hô hấp nên không điều trị kịp thời khiến bệnh tiến triển.'
+
+MERGE (o1:disease {id: 'ung_thư_vòm_họng_giai_đoạn_1_disease'})
+MERGE (o2:disease {id: 'tiến_triển_disease'})
+MERGE (o1)-[r1:relatedTo]->(o2)
+SET r1.text = 'Ung thư vòm họng giai đoạn 1 thường bị nhầm lẫn với các bệnh lý lành tính khác như cảm cúm, viêm họng, viêm đường hô hấp nên không điều trị kịp thời khiến bệnh tiến triển.'
+
+MERGE (o1:disease {id: 'ung_thư_vòm_họng_giai_đoạn_1_disease'})
+MERGE (o2:treatment {id: 'điều_trị_treatment'})
+MERGE (o1)-[r2:treatedBy]->(o2)
+SET r2.text = 'Khi bệnh được phát hiện ở giai đoạn sớm, tỷ lệ điều trị khỏi cao và tăng thời gian sống còn, ước tính trên 80% bệnh nhân được kỳ vọng sống trên 5 năm.'
+
+MERGE (o1:disease {id: 'ung_thư_vòm_họng_giai_đoạn_1_disease'})
+MERGE (o2:disease {id: 'sống_còn_disease'})
+MERGE (o1)-[r3:relatedTo]->(o2)
+SET r3.text = 'Khi bệnh được phát hiện ở giai đoạn sớm, tỷ lệ điều trị khỏi cao và tăng thời gian sống còn, ước tính trên 80% bệnh nhân được kỳ vọng sống trên 5 năm.'
+
+MERGE (o1:disease {id: 'ung_thư_vòm_họng_giai_đoạn_1_disease'})
+MERGE (o2:organ {id: 'vòm_họng_organ'})
+MERGE (o1)-[r4:locatedIn]->(o2)
+SET r4.text = 'Ung thư vòm họng giai đoạn 1 là bệnh lý mà khối u được giới hạn sự phát triển chỉ ở vị trí vòm họng.'
+
+MERGE (o1:disease {id: 'ung_thư_vòm_họng_disease'})
+MERGE (o2:disease {id: 'tử_vong_disease'})
+MERGE (o1)-[r5:relatedTo]->(o2)
+SET r5.text = 'Theo Tổ chức Y tế Thế giới (WHO), mỗi năm có khoảng 133.000 ca mắc mới và hơn 80.000 ca tử vong do ung thư vòm họng.'
+
+MERGE (o1:disease {id: 'ung_thư_vòm_họng_disease'})
+MERGE (o2:lifestyle {id: 'đông_nam_á__trung_đông_và_bắc_phi_lifestyle'})
+MERGE (o1)-[r6:relatedTo]->(o2)
+SET r6.text = 'Các khu vực ghi nhận số ca bệnh mắc ung thư vòm họng trung bình và cao gồm các nước trong khu vực Đông Nam Á, Trung Đông và Bắc Phi, với tỷ lệ 25/100.000 dân.'
+
+MERGE (o1:disease {id: 'ung_thư_vòm_họng_disease'})
+MERGE (o2:lifestyle {id: 'nam_giới_lifestyle'})
+MERGE (o1)-[r7:relatedTo]->(o2)
+SET r7.text = 'Nhìn chung, nam giới có nguy cơ mắc ung thư vòm họng cao gấp 2-3 lần so với nữ giới.'
+
+MERGE (o1:disease {id: 'ung_thư_vòm_họng_disease'})
+MERGE (o2:lifestyle {id: 'nữ_giới_lifestyle'})
+MERGE (o1)-[r8:relatedTo]->(o2)
+SET r8.text = 'Nhìn chung, nam giới có nguy cơ mắc ung thư vòm họng cao gấp 2-3 lần so với nữ giới.'
+
+MERGE (o1:disease {id: 'ung_thư_vòm_họng_disease'})
+MERGE (o2:lifestyle {id: 'nam_giới_lifestyle'})
+MERGE (o1)-[r9:relatedTo]->(o2)
+SET r9.text = 'Tỷ lệ ung thư vòm họng trên nam giới cao gấp 2-3 lần nữ giới.'
+
+MERGE (o1:disease {id: 'ung_thư_vòm_họng_disease'})
+MERGE (o2:lifestyle {id: 'nữ_giới_lifestyle'})
+MERGE (o1)-[r10:relatedTo]->(o2)
+SET r10.text = 'Tỷ lệ ung thư vòm họng trên nam giới cao gấp 2-3 lần nữ giới.'
+
+MERGE (o1:disease {id: 'ung_thư_vòm_họng_disease'})
+MERGE (o2:cause {id: 'nguyên_nhân_bệnh_sinh_cause'})
+MERGE (o1)-[r11:causedBy]->(o2)
+SET r11.text = 'Theo ThS.BS Lưu Thảo Ngọc, khoa Ung bướu, BVĐK Tâm Anh Hà Nội, nguyên nhân bệnh sinh được cho là có liên quan tới sự phát triển của ung thư vòm họng gồm:'
+
+MERGE (o1:disease {id: 'ung_thư_vòm_họng_disease'})
+MERGE (o2:cause {id: 'virus_ebv_cause'})
+MERGE (o1)-[r12:causedBy]->(o2)
+SET r12.text = 'Nhiễm virus Epstein-Barr (EBV): Virus EBV là yếu tố nguy cơ chiếm đến 90% các ca bệnh, là tác nhân căn nguyên chính trong cơ chế bệnh sinh của ung thư vòm họng.'
+
+MERGE (o1:disease {id: 'ung_thư_vòm_họng_disease'})
+MERGE (o2:cause {id: 'virus_u_nhú_hpv_cause'})
+MERGE (o1)-[r13:causedBy]->(o2)
+SET r13.text = 'Nhiễm virus u nhú HPV: Đây là tác nhân bệnh sinh được nhắc tới trong ung thư vòm họng sau EBV, chiếm tỷ lệ khoảng 10% so với các ca bệnh do nhiễm virus Epstein-Barr.'
+
+MERGE (o1:disease {id: 'ung_thư_vòm_họng_disease'})
+MERGE (o2:lifestyle {id: 'thuốc_lá__rượu_bia_lifestyle'})
+MERGE (o1)-[r14:causedBy]->(o2)
+SET r14.text = 'Sử dụng thuốc lá, rượu bia: Lạm dụng rượu bia và hút thuốc lá nhiều có thể là nguyên nhân gây ra ung thư vòm họng cũng như kích thích sự tái hoạt động EBV.'
+
+MERGE (o1:disease {id: 'ung_thư_vòm_họng_disease'})
+MERGE (o2:cause {id: 'yếu_tố_di_truyền_cause'})
+MERGE (o1)-[r15:causedBy]->(o2)
+SET r15.text = 'Yếu tố di truyền: Nếu trong gia đình ghi nhận có người thân bậc 1 được chẩn đoán ung thư vòm họng thì nguy cơ mắc ung thư vòm họng sẽ cao gấp 7 lần so với người không có tiền sử gia đình mắc bệnh.'
+
+MERGE (o1:disease {id: 'ung_thư_vòm_họng_disease'})
+MERGE (o2:lifestyle {id: 'chế_độ_dinh_dưỡng_không_hợp_lý_lifestyle'})
+MERGE (o1)-[r16:causedBy]->(o2)
+SET r16.text = 'Chế độ dinh dưỡng không hợp lý: Chế độ ăn ít chất xơ, lạm dụng các thực phẩm ủ chua, lên men (như cá muối, thịt muối, trứng muối, dưa cải muối…) có hàm lượng nitrosamine cao cũng như các chất gây đột biến, độc tố gen trực tiếp và các chất gây tái hoạt EBV.'
+
+MERGE (o1:disease {id: 'ung_thư_vòm_họng_disease'})
+MERGE (o2:lifestyle {id: 'làm_việc_trong_môi_trường_thiếu_an_toàn_lifestyle'})
+MERGE (o1)-[r17:causedBy]->(o2)
+SET r17.text = 'Làm việc trong môi trường thiếu an toàn: Người lao động thường xuyên làm việc trong khu vực có nhiều khói bụi độc hại, bụi gỗ, hóa chất formaldehyde, phơi nhiễm phóng xạ…'
+
+MERGE (o1:disease {id: 'ung_thư_vòm_họng_giai_đoạn_1_disease'})
+MERGE (o2:test {id: 'hệ_thống_tnm_test'})
+MERGE (o1)-[r18:diagnosedBy]->(o2)
+SET r18.text = 'Theo hệ thống TNM của Ủy ban liên hợp về Ung thư Hoa Kỳ (AJCC) sử dụng trong đánh giá giai đoạn bệnh ung thư vòm họng, ý nghĩa của phân loại T, N, M trong ung thư vòm họng giai đoạn 1 được hiểu như sau: (1)'
+
+MERGE (o1:organ {id: 'khối_u_organ'})
+MERGE (o2:test {id: 't_test'})
+MERGE (o1)-[r19:relatedTo]->(o2)
+SET r19.text = 'T (Tumor) = khối u: Mô tả kích thước và tính xâm lấn của khối u.'
+
+MERGE (o1:organ {id: 'hạch_organ'})
+MERGE (o2:test {id: 'n_test'})
+MERGE (o1)-[r20:relatedTo]->(o2)
+SET r20.text = 'N (Node) = hạch: Mô tả tình trạng di căn của bệnh ung thư đến các hạch vùng.'
+
+MERGE (o1:disease {id: 'di_căn_xa_disease'})
+MERGE (o2:test {id: 'm_test'})
+MERGE (o1)-[r21:relatedTo]->(o2)
+SET r21.text = 'M (Metastasis) = di căn xa: Mô tả tình trạng di căn của bệnh ung thư đến các bộ phận khác trong cơ thể.'
+
+MERGE (o1:disease {id: 'ung_thư_vòm_họng_giai_đoạn_1_disease'})
+MERGE (o2:test {id: 't1_test'})
+MERGE (o1)-[r22:relatedTo]->(o2)
+SET r22.text = 'Đối với ung thư vòm họng giai đoạn 1, nhóm bệnh nhân có khối u nguyên phát T1 (khối u giới hạn ở vị trí vòm họng, có thể phát triển tới vùng họng miệng, hoặc khoang mũi mà chưa xâm lấn vùng quanh hầu họng, bệnh chưa di căn hạch bạch huyết (N0) và không ghi nhận di căn xa (M0). (2)'
+
+MERGE (o1:disease {id: 'ung_thư_vòm_họng_giai_đoạn_1_disease'})
+MERGE (o2:test {id: 'n0_test'})
+MERGE (o1)-[r23:relatedTo]->(o2)
+SET r23.text = 'Đối với ung thư vòm họng giai đoạn 1, nhóm bệnh nhân có khối u nguyên phát T1 (khối u giới hạn ở vị trí vòm họng, có thể phát triển tới vùng họng miệng, hoặc khoang mũi mà chưa xâm lấn vùng quanh hầu họng, bệnh chưa di căn hạch bạch huyết (N0) và không ghi nhận di căn xa (M0). (2)'
+
+MERGE (o1:disease {id: 'ung_thư_vòm_họng_giai_đoạn_1_disease'})
+MERGE (o2:test {id: 'm0_test'})
+MERGE (o1)-[r24:relatedTo]->(o2)
+SET r24.text = 'Đối với ung thư vòm họng giai đoạn 1, nhóm bệnh nhân có khối u nguyên phát T1 (khối u giới hạn ở vị trí vòm họng, có thể phát triển tới vùng họng miệng, hoặc khoang mũi mà chưa xâm lấn vùng quanh hầu họng, bệnh chưa di căn hạch bạch huyết (N0) và không ghi nhận di căn xa (M0). (2)'
+
+MERGE (o1:disease {id: 'ung_thư_vòm_họng_giai_đoạn_0_disease'})
+MERGE (o2:disease {id: 'ung_thư_vòm_họng_giai_đoạn_2_disease'})
+MERGE (o1)-[r25:relatedTo]->(o2)
+SET r25.text = 'Ung thư vòm họng giai đoạn 0 Ung thư vòm họng giai đoạn 2 Ung thư vòm họng giai đoạn 3 Ung thư vòm họng giai đoạn 4'
+
+MERGE (o1:disease {id: 'ung_thư_vòm_họng_giai_đoạn_0_disease'})
+MERGE (o2:disease {id: 'ung_thư_vòm_họng_giai_đoạn_3_disease'})
+MERGE (o1)-[r26:relatedTo]->(o2)
+SET r26.text = 'Ung thư vòm họng giai đoạn 0 Ung thư vòm họng giai đoạn 2 Ung thư vòm họng giai đoạn 3 Ung thư vòm họng giai đoạn 4'
+
+MERGE (o1:disease {id: 'ung_thư_vòm_họng_giai_đoạn_0_disease'})
+MERGE (o2:disease {id: 'ung_thư_vòm_họng_giai_đoạn_4_disease'})
+MERGE (o1)-[r27:relatedTo]->(o2)
+SET r27.text = 'Ung thư vòm họng giai đoạn 0 Ung thư vòm họng giai đoạn 2 Ung thư vòm họng giai đoạn 3 Ung thư vòm họng giai đoạn 4'
+
+MERGE (o1:disease {id: 'ung_thư_vòm_họng_giai_đoạn_2_disease'})
+MERGE (o2:disease {id: 'ung_thư_vòm_họng_giai_đoạn_3_disease'})
+MERGE (o1)-[r28:relatedTo]->(o2)
+SET r28.text = 'Ung thư vòm họng giai đoạn 0 Ung thư vòm họng giai đoạn 2 Ung thư vòm họng giai đoạn 3 Ung thư vòm họng giai đoạn 4'
+
+MERGE (o1:disease {id: 'ung_thư_vòm_họng_giai_đoạn_2_disease'})
+MERGE (o2:disease {id: 'ung_thư_vòm_họng_giai_đoạn_4_disease'})
+MERGE (o1)-[r29:relatedTo]->(o2)
+SET r29.text = 'Ung thư vòm họng giai đoạn 0 Ung thư vòm họng giai đoạn 2 Ung thư vòm họng giai đoạn 3 Ung thư vòm họng giai đoạn 4'
+
+MERGE (o1:disease {id: 'ung_thư_vòm_họng_giai_đoạn_3_disease'})
+MERGE (o2:disease {id: 'ung_thư_vòm_họng_giai_đoạn_4_disease'})
+MERGE (o1)-[r30:relatedTo]->(o2)
+SET r30.text = 'Ung thư vòm họng giai đoạn 0 Ung thư vòm họng giai đoạn 2 Ung thư vòm họng giai đoạn 3 Ung thư vòm họng giai đoạn 4'
+
+MERGE (o1:symptom {id: 'dấu_hiệu_ung_thư_vòm_họng_giai_đoạn_1_symptom'})
+MERGE (o2:organ {id: 'vùng_hố_rosenmüller_organ'})
+MERGE (o1)-[r31:locatedIn]->(o2)
+SET r31.text = 'ThS.BS Lưu Thảo Ngọc cho biết, dấu hiệu ung thư vòm họng giai đoạn 1 thường thấy ở vùng hố Rosenmüller.'
+
+MERGE (o1:disease {id: 'ung_thư_vòm_họng_disease'})
+MERGE (o2:symptom {id: 'các_triệu_chứng_của_các_bệnh_lý_hô_hấp_thông_thường_symptom'})
+MERGE (o1)-[r32:isSymptomOf]->(o2)
+SET r32.text = 'Bệnh thường bị nhầm lẫn với các triệu chứng của các bệnh lý hô hấp thông thường, thậm chí không có triệu chứng hoặc chẩn đoán thiếu chuẩn xác dẫn đến sự chủ quan của người bệnh.'
+
+MERGE (o1:disease {id: 'ung_thư_vòm_họng_disease'})
+MERGE (o2:symptom {id: 'chuyển_sang_giai_đoạn_tiến_xa_và_di_căn_symptom'})
+MERGE (o1)-[r33:causedBy]->(o2)
+SET r33.text = 'Hệ quả, bệnh chỉ được phát hiện khi ung thư vòm họng chuyển sang giai đoạn tiến xa và di căn, gây khó khăn trong việc điều trị cũng như gây đau đớn cho người bệnh.'
+
+MERGE (o1:symptom {id: 'triệu_chứng_ung_thư_vòm_họng_giai_đoạn_1_symptom'})
+MERGE (o2:disease {id: 'ung_thư_vòm_họng_disease'})
+MERGE (o1)-[r34:isSymptomOf]->(o2)
+SET r34.text = 'Triệu chứng ung thư vòm họng giai đoạn 1 thường không đặc hiệu hoặc các triệu chứng thường nhẹ như triệu chứng tại mũi (như nghẹt mũi, chảy máu mũi, tắc nghẽn mũi,&#8230;), hay triệu chứng vùng miệng họng như đau rát họng,&#8230;'
+
+MERGE (o1:symptom {id: 'nghẹt_mũi_symptom'})
+MERGE (o2:disease {id: 'ung_thư_vòm_họng_disease'})
+MERGE (o1)-[r35:isSymptomOf]->(o2)
+SET r35.text = 'Triệu chứng ung thư vòm họng giai đoạn 1 thường không đặc hiệu hoặc các triệu chứng thường nhẹ như triệu chứng tại mũi (như nghẹt mũi, chảy máu mũi, tắc nghẽn mũi,&#8230;), hay triệu chứng vùng miệng họng như đau rát họng,&#8230;'
+
+MERGE (o1:symptom {id: 'chảy_máu_mũi_symptom'})
+MERGE (o2:disease {id: 'ung_thư_vòm_họng_disease'})
+MERGE (o1)-[r36:isSymptomOf]->(o2)
+SET r36.text = 'Triệu chứng ung thư vòm họng giai đoạn 1 thường không đặc hiệu hoặc các triệu chứng thường nhẹ như triệu chứng tại mũi (như nghẹt mũi, chảy máu mũi, tắc nghẽn mũi,&#8230;), hay triệu chứng vùng miệng họng như đau rát họng,&#8230;'
+
+MERGE (o1:symptom {id: 'tắc_nghẽn_mũi_symptom'})
+MERGE (o2:disease {id: 'ung_thư_vòm_họng_disease'})
+MERGE (o1)-[r37:isSymptomOf]->(o2)
+SET r37.text = 'Triệu chứng ung thư vòm họng giai đoạn 1 thường không đặc hiệu hoặc các triệu chứng thường nhẹ như triệu chứng tại mũi (như nghẹt mũi, chảy máu mũi, tắc nghẽn mũi,&#8230;), hay triệu chứng vùng miệng họng như đau rát họng,&#8230;'
+
+MERGE (o1:symptom {id: 'đau_rát_họng_symptom'})
+MERGE (o2:disease {id: 'ung_thư_vòm_họng_disease'})
+MERGE (o1)-[r38:isSymptomOf]->(o2)
+SET r38.text = 'Triệu chứng ung thư vòm họng giai đoạn 1 thường không đặc hiệu hoặc các triệu chứng thường nhẹ như triệu chứng tại mũi (như nghẹt mũi, chảy máu mũi, tắc nghẽn mũi,&#8230;), hay triệu chứng vùng miệng họng như đau rát họng,&#8230;'
+
+MERGE (o1:symptom {id: 'mất_thính_giác_symptom'})
+MERGE (o2:disease {id: 'ung_thư_vòm_họng_disease'})
+MERGE (o1)-[r39:isSymptomOf]->(o2)
+SET r39.text = 'Khi không được chẩn đoán sớm, bệnh tiến triển gây ra các triệu chứng của bệnh giai đoạn tiến xa như: Mất thính giác, ù tai, cảm giác đầy tai, viêm tai giữa thanh dịch xảy ra không thường xuyên; Đau đầu, nhìn đôi hoặc nhìn mờ; Tê mặt do khối u ảnh hưởng đến dây thần kinh số V; Nổi hạch ở cổ, có thể sưng đau hoặc không; Khạc đờm có lẫn máu, mủ.'
+
+MERGE (o1:symptom {id: 'ù_tai_symptom'})
+MERGE (o2:disease {id: 'ung_thư_vòm_họng_disease'})
+MERGE (o1)-[r40:isSymptomOf]->(o2)
+SET r40.text = 'Khi không được chẩn đoán sớm, bệnh tiến triển gây ra các triệu chứng của bệnh giai đoạn tiến xa như: Mất thính giác, ù tai, cảm giác đầy tai, viêm tai giữa thanh dịch xảy ra không thường xuyên; Đau đầu, nhìn đôi hoặc nhìn mờ; Tê mặt do khối u ảnh hưởng đến dây thần kinh số V; Nổi hạch ở cổ, có thể sưng đau hoặc không; Khạc đờm có lẫn máu, mủ.'
+
+MERGE (o1:symptom {id: 'cảm_giác_đầy_tai_symptom'})
+MERGE (o2:disease {id: 'ung_thư_vòm_họng_disease'})
+MERGE (o1)-[r41:isSymptomOf]->(o2)
+SET r41.text = 'Khi không được chẩn đoán sớm, bệnh tiến triển gây ra các triệu chứng của bệnh giai đoạn tiến xa như: Mất thính giác, ù tai, cảm giác đầy tai, viêm tai giữa thanh dịch xảy ra không thường xuyên; Đau đầu, nhìn đôi hoặc nhìn mờ; Tê mặt do khối u ảnh hưởng đến dây thần kinh số V; Nổi hạch ở cổ, có thể sưng đau hoặc không; Khạc đờm có lẫn máu, mủ.'
+
+MERGE (o1:symptom {id: 'viêm_tai_giữa_thanh_dịch_symptom'})
+MERGE (o2:disease {id: 'ung_thư_vòm_họng_disease'})
+MERGE (o1)-[r42:isSymptomOf]->(o2)
+SET r42.text = 'Khi không được chẩn đoán sớm, bệnh tiến triển gây ra các triệu chứng của bệnh giai đoạn tiến xa như: Mất thính giác, ù tai, cảm giác đầy tai, viêm tai giữa thanh dịch xảy ra không thường xuyên; Đau đầu, nhìn đôi hoặc nhìn mờ; Tê mặt do khối u ảnh hưởng đến dây thần kinh số V; Nổi hạch ở cổ, có thể sưng đau hoặc không; Khạc đờm có lẫn máu, mủ.'
+
+MERGE (o1:symptom {id: 'đau_đầu_symptom'})
+MERGE (o2:disease {id: 'ung_thư_vòm_họng_disease'})
+MERGE (o1)-[r43:isSymptomOf]->(o2)
+SET r43.text = 'Khi không được chẩn đoán sớm, bệnh tiến triển gây ra các triệu chứng của bệnh giai đoạn tiến xa như: Mất thính giác, ù tai, cảm giác đầy tai, viêm tai giữa thanh dịch xảy ra không thường xuyên; Đau đầu, nhìn đôi hoặc nhìn mờ; Tê mặt do khối u ảnh hưởng đến dây thần kinh số V; Nổi hạch ở cổ, có thể sưng đau hoặc không; Khạc đờm có lẫn máu, mủ.'
+
+MERGE (o1:symptom {id: 'nhìn_đôi_symptom'})
+MERGE (o2:disease {id: 'ung_thư_vòm_họng_disease'})
+MERGE (o1)-[r44:isSymptomOf]->(o2)
+SET r44.text = 'Khi không được chẩn đoán sớm, bệnh tiến triển gây ra các triệu chứng của bệnh giai đoạn tiến xa như: Mất thính giác, ù tai, cảm giác đầy tai, viêm tai giữa thanh dịch xảy ra không thường xuyên; Đau đầu, nhìn đôi hoặc nhìn mờ; Tê mặt do khối u ảnh hưởng đến dây thần kinh số V; Nổi hạch ở cổ, có thể sưng đau hoặc không; Khạc đờm có lẫn máu, mủ.'
+
+MERGE (o1:symptom {id: 'nhìn_mờ_symptom'})
+MERGE (o2:disease {id: 'ung_thư_vòm_họng_disease'})
+MERGE (o1)-[r45:isSymptomOf]->(o2)
+SET r45.text = 'Khi không được chẩn đoán sớm, bệnh tiến triển gây ra các triệu chứng của bệnh giai đoạn tiến xa như: Mất thính giác, ù tai, cảm giác đầy tai, viêm tai giữa thanh dịch xảy ra không thường xuyên; Đau đầu, nhìn đôi hoặc nhìn mờ; Tê mặt do khối u ảnh hưởng đến dây thần kinh số V; Nổi hạch ở cổ, có thể sưng đau hoặc không; Khạc đờm có lẫn máu, mủ.'
+
+MERGE (o1:symptom {id: 'tê_mặt_symptom'})
+MERGE (o2:disease {id: 'ung_thư_vòm_họng_disease'})
+MERGE (o1)-[r46:isSymptomOf]->(o2)
+SET r46.text = 'Khi không được chẩn đoán sớm, bệnh tiến triển gây ra các triệu chứng của bệnh giai đoạn tiến xa như: Mất thính giác, ù tai, cảm giác đầy tai, viêm tai giữa thanh dịch xảy ra không thường xuyên; Đau đầu, nhìn đôi hoặc nhìn mờ; Tê mặt do khối u ảnh hưởng đến dây thần kinh số V; Nổi hạch ở cổ, có thể sưng đau hoặc không; Khạc đờm có lẫn máu, mủ.'
+
+MERGE (o1:symptom {id: 'nổi_hạch_ở_cổ_symptom'})
+MERGE (o2:disease {id: 'ung_thư_vòm_họng_disease'})
+MERGE (o1)-[r47:isSymptomOf]->(o2)
+SET r47.text = 'Khi không được chẩn đoán sớm, bệnh tiến triển gây ra các triệu chứng của bệnh giai đoạn tiến xa như: Mất thính giác, ù tai, cảm giác đầy tai, viêm tai giữa thanh dịch xảy ra không thường xuyên; Đau đầu, nhìn đôi hoặc nhìn mờ; Tê mặt do khối u ảnh hưởng đến dây thần kinh số V; Nổi hạch ở cổ, có thể sưng đau hoặc không; Khạc đờm có lẫn máu, mủ.'
+
+MERGE (o1:symptom {id: 'khạc_đờm_có_lẫn_máu_symptom'})
+MERGE (o2:disease {id: 'ung_thư_vòm_họng_disease'})
+MERGE (o1)-[r48:isSymptomOf]->(o2)
+SET r48.text = 'Khi không được chẩn đoán sớm, bệnh tiến triển gây ra các triệu chứng của bệnh giai đoạn tiến xa như: Mất thính giác, ù tai, cảm giác đầy tai, viêm tai giữa thanh dịch xảy ra không thường xuyên; Đau đầu, nhìn đôi hoặc nhìn mờ; Tê mặt do khối u ảnh hưởng đến dây thần kinh số V; Nổi hạch ở cổ, có thể sưng đau hoặc không; Khạc đờm có lẫn máu, mủ.'
+
+MERGE (o1:symptom {id: 'khạc_đờm_có_lẫn_mủ_symptom'})
+MERGE (o2:disease {id: 'ung_thư_vòm_họng_disease'})
+MERGE (o1)-[r49:isSymptomOf]->(o2)
+SET r49.text = 'Khi không được chẩn đoán sớm, bệnh tiến triển gây ra các triệu chứng của bệnh giai đoạn tiến xa như: Mất thính giác, ù tai, cảm giác đầy tai, viêm tai giữa thanh dịch xảy ra không thường xuyên; Đau đầu, nhìn đôi hoặc nhìn mờ; Tê mặt do khối u ảnh hưởng đến dây thần kinh số V; Nổi hạch ở cổ, có thể sưng đau hoặc không; Khạc đờm có lẫn máu, mủ.'
+
+MERGE (o1:disease {id: 'ung_thư_vòm_họng_giai_đoạn_1_disease'})
+MERGE (o2:treatment {id: 'xạ_trị_triệt_để_đơn_thuần_treatment'})
+MERGE (o1)-[r50:treatedBy]->(o2)
+SET r50.text = 'ThS.BS Lưu Thảo Ngọc cho biết, từ thực tiễn lâm sàng, tỷ lệ cao các ca bệnh ung thư vòm họng giai đoạn 1 đã được điều trị khỏi sau khi xạ trị triệt để đơn thuần (trên 90%), đặc biệt sử dụng các kỹ thuật xạ trị tân tiến như xạ trị điều biến liều (IMRT) đã mang lại sự kiểm soát bệnh tốt, giảm các biến chứng cấp và mạn tính liên quan tới điều trị, và nâng cao chất lượng sống cho người bệnh.'
+
+MERGE (o1:treatment {id: 'xạ_trị_điều_biến_liều_(imrt)_treatment'})
+MERGE (o2:disease {id: 'ung_thư_vòm_họng_giai_đoạn_1_disease'})
+MERGE (o1)-[r51:treatedBy]->(o2)
+SET r51.text = 'ThS.BS Lưu Thảo Ngọc cho biết, từ thực tiễn lâm sàng, tỷ lệ cao các ca bệnh ung thư vòm họng giai đoạn 1 đã được điều trị khỏi sau khi xạ trị triệt để đơn thuần (trên 90%), đặc biệt sử dụng các kỹ thuật xạ trị tân tiến như xạ trị điều biến liều (IMRT) đã mang lại sự kiểm soát bệnh tốt, giảm các biến chứng cấp và mạn tính liên quan tới điều trị, và nâng cao chất lượng sống cho người bệnh.'
+
+MERGE (o1:test {id: 'nội_soi_tai_mũi_họng_test'})
+MERGE (o2:disease {id: 'ung_thư_vòm_họng_disease'})
+MERGE (o1)-[r52:diagnosedBy]->(o2)
+SET r52.text = 'Sau khi khám lâm sàng và khai thác về tiền sử bệnh, một số chỉ định sẽ được bác sĩ tiến hành để đánh giá một bệnh nhân có triệu chứng về tai mũi họng: Nội soi tai mũi họng: sử dụng các dụng cụ chuyên dụng hiện đại để phát hiện các bất thường vùng vòm họng.'
+
+MERGE (o1:test {id: 'nội_soi_test'})
+MERGE (o2:organ {id: 'vùng_niêm_mạc_vòm_họng_organ'})
+MERGE (o1)-[r53:affects]->(o2)
+SET r53.text = 'Nội soi giúp hỗ trợ quan sát vùng niêm mạc vòm họng để tìm các bất thường.'
+
+MERGE (o1:test {id: 'sinh_thiết_mẫu_nhỏ_u_test'})
+MERGE (o2:disease {id: 'ung_thư_vòm_họng_disease'})
+MERGE (o1)-[r54:diagnosedBy]->(o2)
+SET r54.text = 'Qua nội soi, bác sĩ có thể chỉ định sinh thiết mẫu nhỏ u làm xét nghiệm giải phẫu bệnh khi nghi ngờ ác tính.'
+
+MERGE (o1:test {id: 'chụp_cộng_hưởng_từ_(mri)_test'})
+MERGE (o2:disease {id: 'ung_thư_vòm_họng_disease'})
+MERGE (o1)-[r55:diagnosedBy]->(o2)
+SET r55.text = 'Chụp cộng hưởng từ (MRI): So với CT, MRI giúp đánh giá tình trạng khối u, xâm lấn các mô mềm xung quanh tốt hơn, giúp hỗ trợ chẩn đoán giai đoạn bệnh cũng như trong lập kế hoạch xạ trị khối u khi có chỉ định.'
+
+MERGE (o1:test {id: 'mri_test'})
+MERGE (o2:disease {id: 'khối_u_disease'})
+MERGE (o1)-[r56:affects]->(o2)
+SET r56.text = 'Chụp cộng hưởng từ (MRI): So với CT, MRI giúp đánh giá tình trạng khối u, xâm lấn các mô mềm xung quanh tốt hơn, giúp hỗ trợ chẩn đoán giai đoạn bệnh cũng như trong lập kế hoạch xạ trị khối u khi có chỉ định.'
+
+MERGE (o1:test {id: 'mri_test'})
+MERGE (o2:organ {id: 'các_mô_mềm_xung_quanh_organ'})
+MERGE (o1)-[r57:affects]->(o2)
+SET r57.text = 'Chụp cộng hưởng từ (MRI): So với CT, MRI giúp đánh giá tình trạng khối u, xâm lấn các mô mềm xung quanh tốt hơn, giúp hỗ trợ chẩn đoán giai đoạn bệnh cũng như trong lập kế hoạch xạ trị khối u khi có chỉ định.'
+
+MERGE (o1:test {id: 'chụp_cắt_lớp_vi_tính_(ct)_test'})
+MERGE (o2:disease {id: 'ung_thư_vòm_họng_disease'})
+MERGE (o1)-[r58:diagnosedBy]->(o2)
+SET r58.text = 'Chụp cắt lớp vi tính (CT) hoặc PET/CT: Kỹ thuật này nhằm xác định chính xác kích thước, hình dạng, mức độ xâm lấn của khối u đối với các vùng mô xung quanh, tình trạng di căn xa tới các cơ quan khác như xương, phổi,&#8230;'
+
+MERGE (o1:test {id: 'pet/ct_test'})
+MERGE (o2:disease {id: 'ung_thư_vòm_họng_disease'})
+MERGE (o1)-[r59:diagnosedBy]->(o2)
+SET r59.text = 'Chụp cắt lớp vi tính (CT) hoặc PET/CT: Kỹ thuật này nhằm xác định chính xác kích thước, hình dạng, mức độ xâm lấn của khối u đối với các vùng mô xung quanh, tình trạng di căn xa tới các cơ quan khác như xương, phổi,&#8230;'
+
+MERGE (o1:test {id: 'ct_test'})
+MERGE (o2:disease {id: 'khối_u_disease'})
+MERGE (o1)-[r60:affects]->(o2)
+SET r60.text = 'Chụp cắt lớp vi tính (CT) hoặc PET/CT: Kỹ thuật này nhằm xác định chính xác kích thước, hình dạng, mức độ xâm lấn của khối u đối với các vùng mô xung quanh, tình trạng di căn xa tới các cơ quan khác như xương, phổi,&#8230;'
+
+MERGE (o1:test {id: 'ct_test'})
+MERGE (o2:organ {id: 'các_vùng_mô_xung_quanh_organ'})
+MERGE (o1)-[r61:affects]->(o2)
+SET r61.text = 'Chụp cắt lớp vi tính (CT) hoặc PET/CT: Kỹ thuật này nhằm xác định chính xác kích thước, hình dạng, mức độ xâm lấn của khối u đối với các vùng mô xung quanh, tình trạng di căn xa tới các cơ quan khác như xương, phổi,&#8230;'
+
+MERGE (o1:test {id: 'ct_test'})
+MERGE (o2:organ {id: 'xương_organ'})
+MERGE (o1)-[r62:affects]->(o2)
+SET r62.text = 'Chụp cắt lớp vi tính (CT) hoặc PET/CT: Kỹ thuật này nhằm xác định chính xác kích thước, hình dạng, mức độ xâm lấn của khối u đối với các vùng mô xung quanh, tình trạng di căn xa tới các cơ quan khác như xương, phổi,&#8230;'
+
+MERGE (o1:test {id: 'ct_test'})
+MERGE (o2:organ {id: 'phổi_organ'})
+MERGE (o1)-[r63:affects]->(o2)
+SET r63.text = 'Chụp cắt lớp vi tính (CT) hoặc PET/CT: Kỹ thuật này nhằm xác định chính xác kích thước, hình dạng, mức độ xâm lấn của khối u đối với các vùng mô xung quanh, tình trạng di căn xa tới các cơ quan khác như xương, phổi,&#8230;'
+
+MERGE (o1:test {id: 'phân_tích_dna_ebv_trong_huyết_tương_test'})
+MERGE (o2:disease {id: 'ung_thư_vòm_họng_disease'})
+MERGE (o1)-[r64:diagnosedBy]->(o2)
+SET r64.text = 'Phân tích DNA EBV trong huyết tương: DNA EBV trong huyết tương có vai trò như một marker đánh giá hiệu quả của hóa trị và xạ trị trong ung thư vòm họng.'
+
+MERGE (o1:test {id: 'dna_ebv_trong_huyết_tương_test'})
+MERGE (o2:disease {id: 'ung_thư_vòm_họng_disease'})
+MERGE (o1)-[r65:affects]->(o2)
+SET r65.text = 'Phân tích DNA EBV trong huyết tương: DNA EBV trong huyết tương có vai trò như một marker đánh giá hiệu quả của hóa trị và xạ trị trong ung thư vòm họng.'
+
+MERGE (o1:test {id: 'ebv_dna_trong_máu_test'})
+MERGE (o2:disease {id: 'ung_thư_vòm_họng_disease'})
+MERGE (o1)-[r66:affects]->(o2)
+SET r66.text = 'Đánh giá DNA EBV trước và sau điều trị có giá trị tiên lượng cho các bệnh nhân mắc ung thư vòm họng, đặc biệt khi nồng độ EBV DNA trong máu còn cao sau điều trị chỉ ra nguy cơ cao tái phát bệnh và di căn xa, từ đó định hướng chọn lựa điều trị hóa trị bổ trợ sau đó.'
+
+MERGE (o1:treatment {id: 'hóa_trị_bổ_trợ_treatment'})
+MERGE (o2:disease {id: 'ung_thư_vòm_họng_disease'})
+MERGE (o1)-[r67:treatedBy]->(o2)
+SET r67.text = 'Đánh giá DNA EBV trước và sau điều trị có giá trị tiên lượng cho các bệnh nhân mắc ung thư vòm họng, đặc biệt khi nồng độ EBV DNA trong máu còn cao sau điều trị chỉ ra nguy cơ cao tái phát bệnh và di căn xa, từ đó định hướng chọn lựa điều trị hóa trị bổ trợ sau đó.'
+
+MERGE (o1:test {id: 'chụp_cộng_hưởng_từ_test'})
+MERGE (o2:disease {id: 'ung_thư_vòm_họng_disease'})
+MERGE (o1)-[r68:diagnosedBy]->(o2)
+SET r68.text = 'Chụp cộng hưởng từ giúp đánh giá tình trạng khối u để lên kế hoạch điều trị ung thư vòm họng'
+
+MERGE (o1:disease {id: 'ung_thư_vòm_họng_disease'})
+MERGE (o2:test {id: 'thăm_khám_test'})
+MERGE (o1)-[r69:diagnosedBy]->(o2)
+SET r69.text = 'Sau khi thăm khám và phân loại giai đoạn ung thư vòm họng, tùy thuộc vào giai đoạn tiến triển bệnh cũng như tình trạng sức khỏe của bệnh nhân, các bác sĩ tiến hành hội chẩn và áp dụng các phương pháp điều trị hiệu quả, an toàn, phù hợp với điều kiện của bệnh nhân.'
+
+MERGE (o1:disease {id: 'ung_thư_vòm_họng_disease'})
+MERGE (o2:disease {id: 'giai_đoạn_tiến_triển_bệnh_disease'})
+MERGE (o1)-[r70:relatedTo]->(o2)
+SET r70.text = 'Sau khi thăm khám và phân loại giai đoạn ung thư vòm họng, tùy thuộc vào giai đoạn tiến triển bệnh cũng như tình trạng sức khỏe của bệnh nhân, các bác sĩ tiến hành hội chẩn và áp dụng các phương pháp điều trị hiệu quả, an toàn, phù hợp với điều kiện của bệnh nhân.'
+
+MERGE (o1:disease {id: 'ung_thư_vòm_họng_disease'})
+MERGE (o2:treatment {id: 'các_phương_pháp_điều_trị_treatment'})
+MERGE (o1)-[r71:treatedBy]->(o2)
+SET r71.text = 'Sau khi thăm khám và phân loại giai đoạn ung thư vòm họng, tùy thuộc vào giai đoạn tiến triển bệnh cũng như tình trạng sức khỏe của bệnh nhân, các bác sĩ tiến hành hội chẩn và áp dụng các phương pháp điều trị hiệu quả, an toàn, phù hợp với điều kiện của bệnh nhân.'

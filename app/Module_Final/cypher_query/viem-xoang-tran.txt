@@ -1,0 +1,1070 @@
+
+MERGE (o1:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o2:organ {id: 'mắt_organ'})
+MERGE (o1)-[r0:affects]->(o2)
+SET r0.text = 'Viêm xoang trán có thể gây biến chứng ở mắt làm suy giảm thị lực, biến chứng nội sọ đe dọa tính mạng người bệnh.'
+
+MERGE (o1:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o2:symptom {id: 'suy_giảm_thị_lực_symptom'})
+MERGE (o1)-[r1:isSymptomOf]->(o2)
+SET r1.text = 'Viêm xoang trán có thể gây biến chứng ở mắt làm suy giảm thị lực, biến chứng nội sọ đe dọa tính mạng người bệnh.'
+
+MERGE (o1:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o2:organ {id: 'nội_sọ_organ'})
+MERGE (o1)-[r2:affects]->(o2)
+SET r2.text = 'Viêm xoang trán có thể gây biến chứng ở mắt làm suy giảm thị lực, biến chứng nội sọ đe dọa tính mạng người bệnh.'
+
+MERGE (o1:disease {id: 'biến_chứng_nội_sọ_disease'})
+MERGE (o2:symptom {id: 'đe_dọa_tính_mạng_symptom'})
+MERGE (o1)-[r3:isSymptomOf]->(o2)
+SET r3.text = 'Viêm xoang trán có thể gây biến chứng ở mắt làm suy giảm thị lực, biến chứng nội sọ đe dọa tính mạng người bệnh.'
+
+MERGE (o1:disease {id: 'bài_viết_disease'})
+MERGE (o2:treatment {id: 'bsnt.ckii_trần_thị_thuý_hằng_treatment'})
+MERGE (o1)-[r4:treatedBy]->(o2)
+SET r4.text = 'Bài viết được tư vấn chuyên môn bởi BSNT.CKII Trần Thị Thuý Hằng, Trưởng khoa Tai mũi họng, Bệnh viện Đa khoa Tâm Anh TP.HCM.'
+
+MERGE (o1:treatment {id: 'kháng_sinh_treatment'})
+MERGE (o2:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o1)-[r5:treatedBy]->(o2)
+SET r5.text = 'BSNT.CKII Trần Thị Thuý Hằng, Trưởng khoa Tai mũi họng, Bệnh viện Đa khoa Tâm Anh TP.HCM cho biết, mặc dù kháng sinh ngày nay đã làm giảm đáng kể tỷ lệ mắc bệnh viêm xoang trán nhưng nhiễm trùng xoang trán vẫn gây ra những biến chứng nghiêm trọng.'
+
+MERGE (o1:disease {id: 'nhiễm_trùng_xoang_trán_disease'})
+MERGE (o2:symptom {id: 'biến_chứng_nghiêm_trọng_symptom'})
+MERGE (o1)-[r6:isSymptomOf]->(o2)
+SET r6.text = 'BSNT.CKII Trần Thị Thuý Hằng, Trưởng khoa Tai mũi họng, Bệnh viện Đa khoa Tâm Anh TP.HCM cho biết, mặc dù kháng sinh ngày nay đã làm giảm đáng kể tỷ lệ mắc bệnh viêm xoang trán nhưng nhiễm trùng xoang trán vẫn gây ra những biến chứng nghiêm trọng.'
+
+MERGE (o1:disease {id: 'biến_chứng_nội_sọ_disease'})
+MERGE (o2:disease {id: 'viêm_tủy_xương_disease'})
+MERGE (o1)-[r7:isSymptomOf]->(o2)
+SET r7.text = 'Đặc biệt là các biến chứng nội sọ có thể đe dọa tính mạng như viêm tủy xương, huyết khối xoang hang, viêm màng não, áp xe ngoài màng cứng, áp xe dưới màng cứng và áp xe não…'
+
+MERGE (o1:disease {id: 'biến_chứng_nội_sọ_disease'})
+MERGE (o2:disease {id: 'huyết_khối_xoang_hang_disease'})
+MERGE (o1)-[r8:isSymptomOf]->(o2)
+SET r8.text = 'Đặc biệt là các biến chứng nội sọ có thể đe dọa tính mạng như viêm tủy xương, huyết khối xoang hang, viêm màng não, áp xe ngoài màng cứng, áp xe dưới màng cứng và áp xe não…'
+
+MERGE (o1:disease {id: 'biến_chứng_nội_sọ_disease'})
+MERGE (o2:disease {id: 'viêm_màng_não_disease'})
+MERGE (o1)-[r9:isSymptomOf]->(o2)
+SET r9.text = 'Đặc biệt là các biến chứng nội sọ có thể đe dọa tính mạng như viêm tủy xương, huyết khối xoang hang, viêm màng não, áp xe ngoài màng cứng, áp xe dưới màng cứng và áp xe não…'
+
+MERGE (o1:disease {id: 'biến_chứng_nội_sọ_disease'})
+MERGE (o2:disease {id: 'áp_xe_ngoài_màng_cứng_disease'})
+MERGE (o1)-[r10:isSymptomOf]->(o2)
+SET r10.text = 'Đặc biệt là các biến chứng nội sọ có thể đe dọa tính mạng như viêm tủy xương, huyết khối xoang hang, viêm màng não, áp xe ngoài màng cứng, áp xe dưới màng cứng và áp xe não…'
+
+MERGE (o1:disease {id: 'biến_chứng_nội_sọ_disease'})
+MERGE (o2:disease {id: 'áp_xe_dưới_màng_cứng_disease'})
+MERGE (o1)-[r11:isSymptomOf]->(o2)
+SET r11.text = 'Đặc biệt là các biến chứng nội sọ có thể đe dọa tính mạng như viêm tủy xương, huyết khối xoang hang, viêm màng não, áp xe ngoài màng cứng, áp xe dưới màng cứng và áp xe não…'
+
+MERGE (o1:disease {id: 'biến_chứng_nội_sọ_disease'})
+MERGE (o2:disease {id: 'áp_xe_não_disease'})
+MERGE (o1)-[r12:isSymptomOf]->(o2)
+SET r12.text = 'Đặc biệt là các biến chứng nội sọ có thể đe dọa tính mạng như viêm tủy xương, huyết khối xoang hang, viêm màng não, áp xe ngoài màng cứng, áp xe dưới màng cứng và áp xe não…'
+
+MERGE (o1:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o2:symptom {id: 'biến_chứng_nguy_hiểm_symptom'})
+MERGE (o1)-[r13:isSymptomOf]->(o2)
+SET r13.text = 'Viêm xoang trán là tình trạng cấp tính có thể gây ra nhiều biến chứng nguy hiểm'
+
+MERGE (o1:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o2:symptom {id: 'chất_nhầy_trong_xoang_trán_bị_bít_tắc_symptom'})
+MERGE (o1)-[r14:causedBy]->(o2)
+SET r14.text = 'Viêm xoang trán là tình trạng viêm xoang cấp tính do chất nhầy trong xoang trán bị bít tắc, không thoát ra ngoài đúng cách nên tạo thành môi trường thuận lợi cho vi khuẩn và các mầm bệnh phát triển.'
+
+MERGE (o1:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o2:cause {id: 'vi_khuẩn_và_các_mầm_bệnh_phát_triển_cause'})
+MERGE (o1)-[r15:causedBy]->(o2)
+SET r15.text = 'Viêm xoang trán là tình trạng viêm xoang cấp tính do chất nhầy trong xoang trán bị bít tắc, không thoát ra ngoài đúng cách nên tạo thành môi trường thuận lợi cho vi khuẩn và các mầm bệnh phát triển.'
+
+MERGE (o1:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o2:disease {id: 'viêm_xoang_trán_cấp_tính_disease'})
+MERGE (o1)-[r16:isSymptomOf]->(o2)
+SET r16.text = 'Khi các triệu chứng viêm xoang trán kéo dài dưới 4 tuần được gọi là viêm xoang trán cấp tính.'
+
+MERGE (o1:organ {id: 'xoang_trán_organ'})
+MERGE (o2:organ {id: 'vùng_chân_mày_organ'})
+MERGE (o1)-[r17:locatedIn]->(o2)
+SET r17.text = 'Xoang trán là một cặp xoang nhỏ chứa đầy không khí nằm ngay trên mắt ở vùng chân mày.'
+
+MERGE (o1:organ {id: 'xoang_trán_organ'})
+MERGE (o2:organ {id: 'trên_mắt_organ'})
+MERGE (o1)-[r18:locatedIn]->(o2)
+SET r18.text = 'Xoang trán là một cặp xoang nhỏ chứa đầy không khí nằm ngay trên mắt ở vùng chân mày.'
+
+MERGE (o1:organ {id: 'xoang_organ'})
+MERGE (o2:symptom {id: 'làm_ẩm_và_làm_ấm_không_khí_symptom'})
+MERGE (o1)-[r19:isSymptomOf]->(o2)
+SET r19.text = 'Cùng với ba cặp xoang cạnh mũi khác, những xoang này sẽ tạo ra một lượng chất nhầy cho mũi, có tác dụng làm ẩm và làm ấm không khí.'
+
+MERGE (o1:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o2:cause {id: 'vi_trùng_vượt_qua_khả_năng_phòng_vệ_tự_nhiên_của_cơ_thể_cause'})
+MERGE (o1)-[r20:causedBy]->(o2)
+SET r20.text = 'Bác sĩ Thuý Hằng cho biết, viêm xoang trán có thể phát triển khi một số vi trùng vượt qua khả năng phòng vệ tự nhiên của cơ thể hoặc khi các yếu tố khác gây ra viêm.'
+
+MERGE (o1:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o2:cause {id: 'các_yếu_tố_khác_gây_ra_viêm_cause'})
+MERGE (o1)-[r21:causedBy]->(o2)
+SET r21.text = 'Bác sĩ Thuý Hằng cho biết, viêm xoang trán có thể phát triển khi một số vi trùng vượt qua khả năng phòng vệ tự nhiên của cơ thể hoặc khi các yếu tố khác gây ra viêm.'
+
+MERGE (o1:cause {id: 'nhiễm_virus_đường_hô_hấp_trên_cause'})
+MERGE (o2:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o1)-[r22:causes]->(o2)
+SET r22.text = 'Nhiễm virus đường hô hấp trên có thể dẫn đến bệnh viêm xoang trán vì sẽ gây tắc nghẽn đường dẫn lưu xoang, làm chất nhầy trong xoang trán bị ứ đọng, dẫn đến tình trạng viêm, đau.'
+
+MERGE (o1:cause {id: 'nhiễm_virus_đường_hô_hấp_trên_cause'})
+MERGE (o2:symptom {id: 'tắc_nghẽn_đường_dẫn_lưu_xoang_symptom'})
+MERGE (o1)-[r23:isSymptomOf]->(o2)
+SET r23.text = 'Nhiễm virus đường hô hấp trên có thể dẫn đến bệnh viêm xoang trán vì sẽ gây tắc nghẽn đường dẫn lưu xoang, làm chất nhầy trong xoang trán bị ứ đọng, dẫn đến tình trạng viêm, đau.'
+
+MERGE (o1:cause {id: 'nhiễm_virus_đường_hô_hấp_trên_cause'})
+MERGE (o2:symptom {id: 'chất_nhầy_trong_xoang_trán_bị_ứ_đọng_symptom'})
+MERGE (o1)-[r24:isSymptomOf]->(o2)
+SET r24.text = 'Nhiễm virus đường hô hấp trên có thể dẫn đến bệnh viêm xoang trán vì sẽ gây tắc nghẽn đường dẫn lưu xoang, làm chất nhầy trong xoang trán bị ứ đọng, dẫn đến tình trạng viêm, đau.'
+
+MERGE (o1:cause {id: 'nhiễm_virus_đường_hô_hấp_trên_cause'})
+MERGE (o2:symptom {id: 'viêm_symptom'})
+MERGE (o1)-[r25:isSymptomOf]->(o2)
+SET r25.text = 'Nhiễm virus đường hô hấp trên có thể dẫn đến bệnh viêm xoang trán vì sẽ gây tắc nghẽn đường dẫn lưu xoang, làm chất nhầy trong xoang trán bị ứ đọng, dẫn đến tình trạng viêm, đau.'
+
+MERGE (o1:cause {id: 'nhiễm_virus_đường_hô_hấp_trên_cause'})
+MERGE (o2:symptom {id: 'đau_symptom'})
+MERGE (o1)-[r26:isSymptomOf]->(o2)
+SET r26.text = 'Nhiễm virus đường hô hấp trên có thể dẫn đến bệnh viêm xoang trán vì sẽ gây tắc nghẽn đường dẫn lưu xoang, làm chất nhầy trong xoang trán bị ứ đọng, dẫn đến tình trạng viêm, đau.'
+
+MERGE (o1:cause {id: 'nhiễm_virus_đường_hô_hấp_trên_cause'})
+MERGE (o2:symptom {id: 'hệ_thống_miễn_dịch_non_nớt_symptom'})
+MERGE (o1)-[r27:isSymptomOf]->(o2)
+SET r27.text = 'Bác sĩ Thuý Hằng cho biết, đây là một loại nhiễm trùng thường gặp, người trưởng thành có thể mắc một vài lần nhiễm virus đường hô hấp trên mỗi năm, trẻ nhỏ có thể mắc nhiều hơn vì hệ thống miễn dịch lúc này còn non nớt.'
+
+MERGE (o1:cause {id: 'nhiễm_trùng_do_vi_khuẩn_cause'})
+MERGE (o2:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o1)-[r28:causes]->(o2)
+SET r28.text = 'Nhiễm trùng do vi khuẩn kéo dài hơn so với nhiễm virus.'
+
+MERGE (o1:cause {id: 'nhiễm_trùng_do_vi_khuẩn_cause'})
+MERGE (o2:treatment {id: 'thuốc_kháng_sinh_treatment'})
+MERGE (o1)-[r29:treatedBy]->(o2)
+SET r29.text = 'Nếu bị nhiễm trùng do vi khuẩn, người bệnh có thể cần điều trị bằng thuốc kháng sinh.'
+
+MERGE (o1:cause {id: 'nhiễm_trùng_do_virus_cause'})
+MERGE (o2:cause {id: 'nhiễm_trùng_do_vi_khuẩn_cause'})
+MERGE (o1)-[r30:causes]->(o2)
+SET r30.text = 'Cũng có nhiều trường hợp sau khi bị nhiễm trùng do virus, người bệnh lại tiếp tục bị nhiễm trùng do vi khuẩn.'
+
+MERGE (o1:cause {id: 'khả_năng_miễn_dịch_suy_yếu_cause'})
+MERGE (o2:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o1)-[r31:causes]->(o2)
+SET r31.text = 'Bác sĩ Thuý Hằng lý giải, những trường hợp như vậy thường do khả năng miễn dịch đã bị suy yếu sau đợt nhiễm virus, cũng như các xoang trở nên nhạy cảm, dễ bị tổn thương hơn, dẫn đến vi khuẩn dễ dàng có cơ hội xâm nhập gây bệnh sau đó.'
+
+MERGE (o1:cause {id: 'xoang_nhạy_cảm_cause'})
+MERGE (o2:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o1)-[r32:causes]->(o2)
+SET r32.text = 'Bác sĩ Thuý Hằng lý giải, những trường hợp như vậy thường do khả năng miễn dịch đã bị suy yếu sau đợt nhiễm virus, cũng như các xoang trở nên nhạy cảm, dễ bị tổn thương hơn, dẫn đến vi khuẩn dễ dàng có cơ hội xâm nhập gây bệnh sau đó.'
+
+MERGE (o1:cause {id: 'nhiễm_trùng_kéo_dài_cause'})
+MERGE (o2:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o1)-[r33:causes]->(o2)
+SET r33.text = 'Nếu tình trạng nhiễm trùng kéo dài hơn 10 hoặc 14 ngày, nhiều khả năng có nguyên nhân từ vi khuẩn hoặc đã có bội nhiễm vi khuẩn hơn là virus.'
+
+MERGE (o1:cause {id: 'chất_gây_dị_ứng_cause'})
+MERGE (o2:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o1)-[r34:causes]->(o2)
+SET r34.text = 'Việc tiếp xúc với một số chất gây dị ứng, chẳng hạn như bụi, phấn hoa và lông động vật gây hắt hơi và ngứa có thể dẫn đến viêm, phù nề và tích tụ chất nhầy trong xoang.'
+
+MERGE (o1:cause {id: 'chất_gây_dị_ứng_cause'})
+MERGE (o2:symptom {id: 'hắt_hơi_symptom'})
+MERGE (o1)-[r35:isSymptomOf]->(o2)
+SET r35.text = 'Việc tiếp xúc với một số chất gây dị ứng, chẳng hạn như bụi, phấn hoa và lông động vật gây hắt hơi và ngứa có thể dẫn đến viêm, phù nề và tích tụ chất nhầy trong xoang.'
+
+MERGE (o1:cause {id: 'chất_gây_dị_ứng_cause'})
+MERGE (o2:symptom {id: 'ngứa_symptom'})
+MERGE (o1)-[r36:isSymptomOf]->(o2)
+SET r36.text = 'Việc tiếp xúc với một số chất gây dị ứng, chẳng hạn như bụi, phấn hoa và lông động vật gây hắt hơi và ngứa có thể dẫn đến viêm, phù nề và tích tụ chất nhầy trong xoang.'
+
+MERGE (o1:cause {id: 'chất_gây_dị_ứng_cause'})
+MERGE (o2:symptom {id: 'viêm_symptom'})
+MERGE (o1)-[r37:isSymptomOf]->(o2)
+SET r37.text = 'Việc tiếp xúc với một số chất gây dị ứng, chẳng hạn như bụi, phấn hoa và lông động vật gây hắt hơi và ngứa có thể dẫn đến viêm, phù nề và tích tụ chất nhầy trong xoang.'
+
+MERGE (o1:cause {id: 'chất_gây_dị_ứng_cause'})
+MERGE (o2:symptom {id: 'phù_nề_symptom'})
+MERGE (o1)-[r38:isSymptomOf]->(o2)
+SET r38.text = 'Việc tiếp xúc với một số chất gây dị ứng, chẳng hạn như bụi, phấn hoa và lông động vật gây hắt hơi và ngứa có thể dẫn đến viêm, phù nề và tích tụ chất nhầy trong xoang.'
+
+MERGE (o1:cause {id: 'chất_gây_dị_ứng_cause'})
+MERGE (o2:symptom {id: 'tích_tụ_chất_nhầy_trong_xoang_symptom'})
+MERGE (o1)-[r39:isSymptomOf]->(o2)
+SET r39.text = 'Việc tiếp xúc với một số chất gây dị ứng, chẳng hạn như bụi, phấn hoa và lông động vật gây hắt hơi và ngứa có thể dẫn đến viêm, phù nề và tích tụ chất nhầy trong xoang.'
+
+MERGE (o1:cause {id: 'tích_tụ_chất_nhầy_cause'})
+MERGE (o2:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o1)-[r40:causes]->(o2)
+SET r40.text = 'Sự tích tụ này có thể làm tắc các xoang mũi, gây ra viêm và viêm lên xoang trán.'
+
+MERGE (o1:cause {id: 'tích_tụ_chất_nhầy_cause'})
+MERGE (o2:symptom {id: 'tắc_xoang_mũi_symptom'})
+MERGE (o1)-[r41:isSymptomOf]->(o2)
+SET r41.text = 'Sự tích tụ này có thể làm tắc các xoang mũi, gây ra viêm và viêm lên xoang trán.'
+
+MERGE (o1:cause {id: 'tích_tụ_chất_nhầy_cause'})
+MERGE (o2:symptom {id: 'viêm_symptom'})
+MERGE (o1)-[r42:isSymptomOf]->(o2)
+SET r42.text = 'Sự tích tụ này có thể làm tắc các xoang mũi, gây ra viêm và viêm lên xoang trán.'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o2:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o1)-[r43:associatedWith]->(o2)
+SET r43.text = 'Tình trạng viêm xoang trán kèm viêm mũi dị ứng thường có thể gây ra các triệu chứng rất giống với viêm xoang trán thông thường.'
+
+MERGE (o1:disease {id: 'viêm_mũi_dị_ứng_disease'})
+MERGE (o2:treatment {id: 'điều_trị_viêm_mũi_dị_ứng_treatment'})
+MERGE (o1)-[r44:treatedBy]->(o2)
+SET r44.text = 'Tuy nhiên, điều trị viêm mũi dị ứng khác với điều trị viêm xoang trán thông thường nên bệnh nhân cần được chẩn đoán chính xác và có phương pháp điều trị phù hợp.'
+
+MERGE (o1:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o2:treatment {id: 'điều_trị_viêm_xoang_trán_treatment'})
+MERGE (o1)-[r45:treatedBy]->(o2)
+SET r45.text = 'Tuy nhiên, điều trị viêm mũi dị ứng khác với điều trị viêm xoang trán thông thường nên bệnh nhân cần được chẩn đoán chính xác và có phương pháp điều trị phù hợp.'
+
+MERGE (o1:organ {id: 'vách_ngăn_mũi_organ'})
+MERGE (o2:organ {id: 'khoang_mũi_organ'})
+MERGE (o1)-[r46:locatedIn]->(o2)
+SET r46.text = 'Vách ngăn mũi giống như một bức tường mỏng của niêm mạc và sụn hoặc xương để chia đôi khoang mũi.'
+
+MERGE (o1:organ {id: 'vách_ngăn_mũi_organ'})
+MERGE (o2:organ {id: 'khoang_mũi_organ'})
+MERGE (o1)-[r47:affects]->(o2)
+SET r47.text = 'Thông thường, vách ngăn mũi sẽ chia khoang mũi thành hai hốc mũi có kích thước bằng nhau.'
+
+MERGE (o1:disease {id: 'lệch_vách_ngăn_mũi_disease'})
+MERGE (o2:organ {id: 'mũi_organ'})
+MERGE (o1)-[r48:affects]->(o2)
+SET r48.text = 'Theo Hiệp hội Tai Mũi Họng - Phẫu thuật Đầu và Cổ của Hoa Kỳ, khoảng 80% dân số có lệch vách ngăn mũi nhưng hầu hết không ảnh hưởng đến các hoạt động của mũi.'
+
+MERGE (o1:disease {id: 'lệch_vách_ngăn_mũi_disease'})
+MERGE (o2:symptom {id: 'khó_thở_symptom'})
+MERGE (o1)-[r49:isSymptomOf]->(o2)
+SET r49.text = 'Tuy nhiên, cũng có trường hợp lệch vách ngăn mũi gây khó thở hoặc làm tắc nghẽn các xoang và có thể gây ra nhiễm trùng xoang trán.'
+
+MERGE (o1:disease {id: 'lệch_vách_ngăn_mũi_disease'})
+MERGE (o2:symptom {id: 'tắc_nghẽn_xoang_symptom'})
+MERGE (o1)-[r50:isSymptomOf]->(o2)
+SET r50.text = 'Tuy nhiên, cũng có trường hợp lệch vách ngăn mũi gây khó thở hoặc làm tắc nghẽn các xoang và có thể gây ra nhiễm trùng xoang trán.'
+
+MERGE (o1:disease {id: 'lệch_vách_ngăn_mũi_disease'})
+MERGE (o2:disease {id: 'nhiễm_trùng_xoang_trán_disease'})
+MERGE (o1)-[r51:causes]->(o2)
+SET r51.text = 'Tuy nhiên, cũng có trường hợp lệch vách ngăn mũi gây khó thở hoặc làm tắc nghẽn các xoang và có thể gây ra nhiễm trùng xoang trán.'
+
+MERGE (o1:disease {id: 'polyp_mũi_disease'})
+MERGE (o2:organ {id: 'mũi_organ'})
+MERGE (o1)-[r52:locatedIn]->(o2)
+SET r52.text = 'Polyp mũi là một khối mềm, không đau phát triển trong mũi hoặc các xoang.'
+
+MERGE (o1:disease {id: 'polyp_mũi_disease'})
+MERGE (o2:organ {id: 'xoang_organ'})
+MERGE (o1)-[r53:locatedIn]->(o2)
+SET r53.text = 'Polyp mũi là một khối mềm, không đau phát triển trong mũi hoặc các xoang.'
+
+MERGE (o1:disease {id: 'polyp_mũi_disease'})
+MERGE (o2:symptom {id: 'bít_tắc_mũi_xoang_symptom'})
+MERGE (o1)-[r54:isSymptomOf]->(o2)
+SET r54.text = 'Trong hầu hết các trường hợp, polyp mũi là vô hại, nhưng nếu chúng gây ra bít tắc mũi xoang, có thể dẫn đến nhiễm trùng xoang.'
+
+MERGE (o1:disease {id: 'polyp_mũi_disease'})
+MERGE (o2:disease {id: 'nhiễm_trùng_xoang_disease'})
+MERGE (o1)-[r55:causes]->(o2)
+SET r55.text = 'Trong hầu hết các trường hợp, polyp mũi là vô hại, nhưng nếu chúng gây ra bít tắc mũi xoang, có thể dẫn đến nhiễm trùng xoang.'
+
+MERGE (o1:disease {id: 'polyp_mũi_disease'})
+MERGE (o2:cause {id: 'nhiễm_trùng_tái_đi_tái_lại_cause'})
+MERGE (o1)-[r56:causedBy]->(o2)
+SET r56.text = 'Polyp mũi có thể phát triển do:  Nhiễm trùng tái đi tái lại.'
+
+MERGE (o1:cause {id: 'dị_ứng_cause'})
+MERGE (o2:disease {id: 'polyp_mũi_disease'})
+MERGE (o1)-[r57:causes]->(o2)
+SET r57.text = 'Dị ứng với chất kích ứng trong môi trường như khói bụi, hóa chất, nấm hoặc thuốc.'
+
+MERGE (o1:cause {id: 'dị_ứng_cause'})
+MERGE (o2:cause {id: 'khói_bụi_cause'})
+MERGE (o1)-[r58:isSymptomOf]->(o2)
+SET r58.text = 'Dị ứng với chất kích ứng trong môi trường như khói bụi, hóa chất, nấm hoặc thuốc.'
+
+MERGE (o1:cause {id: 'dị_ứng_cause'})
+MERGE (o2:cause {id: 'hóa_chất_cause'})
+MERGE (o1)-[r59:isSymptomOf]->(o2)
+SET r59.text = 'Dị ứng với chất kích ứng trong môi trường như khói bụi, hóa chất, nấm hoặc thuốc.'
+
+MERGE (o1:cause {id: 'dị_ứng_cause'})
+MERGE (o2:cause {id: 'nấm_cause'})
+MERGE (o1)-[r60:isSymptomOf]->(o2)
+SET r60.text = 'Dị ứng với chất kích ứng trong môi trường như khói bụi, hóa chất, nấm hoặc thuốc.'
+
+MERGE (o1:cause {id: 'dị_ứng_cause'})
+MERGE (o2:treatment {id: 'thuốc_treatment'})
+MERGE (o1)-[r61:isSymptomOf]->(o2)
+SET r61.text = 'Dị ứng với chất kích ứng trong môi trường như khói bụi, hóa chất, nấm hoặc thuốc.'
+
+MERGE (o1:disease {id: 'bệnh_mạn_tính_về_hô_hấp_disease'})
+MERGE (o2:disease {id: 'polyp_mũi_disease'})
+MERGE (o1)-[r62:causes]->(o2)
+SET r62.text = 'Mắc các bệnh mạn tính về hô hấp như hen suyễn.'
+
+MERGE (o1:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o2:disease {id: 'viêm_xoang_disease'})
+MERGE (o1)-[r63:isSymptomOf]->(o2)
+SET r63.text = 'Theo bác sĩ Thuý Hằng các dấu hiệu viêm xoang trán cũng tương tự như triệu chứng viêm xoang nói chung, vì vậy rất khó để phân biệt giữa các loại viêm xoang với nhau kể cả khi có biến chứng.'
+
+MERGE (o1:disease {id: 'viêm_xoang_disease'})
+MERGE (o2:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o1)-[r64:isSymptomOf]->(o2)
+SET r64.text = 'Theo bác sĩ Thuý Hằng các dấu hiệu viêm xoang trán cũng tương tự như triệu chứng viêm xoang nói chung, vì vậy rất khó để phân biệt giữa các loại viêm xoang với nhau kể cả khi có biến chứng.'
+
+MERGE (o1:symptom {id: 'chảy_nước_mũi_symptom'})
+MERGE (o2:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o1)-[r65:isSymptomOf]->(o2)
+SET r65.text = 'Các triệu chứng viêm xoang trán thường gặp bao gồm:(2)  Chảy nước mũi Cảm giác “nặng” hoặc căng tức sau mắt Đau đầu Mệt mỏi Đau họng Đau cơ Nghẹt mũi Giảm khứu giác Hôi miệng Sốt nhẹ hoặc sốt cao'
+
+MERGE (o1:symptom {id: 'cảm_giác_“nặng”_hoặc_căng_tức_sau_mắt_symptom'})
+MERGE (o2:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o1)-[r66:isSymptomOf]->(o2)
+SET r66.text = 'Các triệu chứng viêm xoang trán thường gặp bao gồm:(2)  Chảy nước mũi Cảm giác “nặng” hoặc căng tức sau mắt Đau đầu Mệt mỏi Đau họng Đau cơ Nghẹt mũi Giảm khứu giác Hôi miệng Sốt nhẹ hoặc sốt cao'
+
+MERGE (o1:symptom {id: 'đau_đầu_symptom'})
+MERGE (o2:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o1)-[r67:isSymptomOf]->(o2)
+SET r67.text = 'Các triệu chứng viêm xoang trán thường gặp bao gồm:(2)  Chảy nước mũi Cảm giác “nặng” hoặc căng tức sau mắt Đau đầu Mệt mỏi Đau họng Đau cơ Nghẹt mũi Giảm khứu giác Hôi miệng Sốt nhẹ hoặc sốt cao'
+
+MERGE (o1:symptom {id: 'mệt_mỏi_symptom'})
+MERGE (o2:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o1)-[r68:isSymptomOf]->(o2)
+SET r68.text = 'Các triệu chứng viêm xoang trán thường gặp bao gồm:(2)  Chảy nước mũi Cảm giác “nặng” hoặc căng tức sau mắt Đau đầu Mệt mỏi Đau họng Đau cơ Nghẹt mũi Giảm khứu giác Hôi miệng Sốt nhẹ hoặc sốt cao'
+
+MERGE (o1:symptom {id: 'đau_họng_symptom'})
+MERGE (o2:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o1)-[r69:isSymptomOf]->(o2)
+SET r69.text = 'Các triệu chứng viêm xoang trán thường gặp bao gồm:(2)  Chảy nước mũi Cảm giác “nặng” hoặc căng tức sau mắt Đau đầu Mệt mỏi Đau họng Đau cơ Nghẹt mũi Giảm khứu giác Hôi miệng Sốt nhẹ hoặc sốt cao'
+
+MERGE (o1:symptom {id: 'đau_cơ_symptom'})
+MERGE (o2:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o1)-[r70:isSymptomOf]->(o2)
+SET r70.text = 'Các triệu chứng viêm xoang trán thường gặp bao gồm:(2)  Chảy nước mũi Cảm giác “nặng” hoặc căng tức sau mắt Đau đầu Mệt mỏi Đau họng Đau cơ Nghẹt mũi Giảm khứu giác Hôi miệng Sốt nhẹ hoặc sốt cao'
+
+MERGE (o1:symptom {id: 'nghẹt_mũi_symptom'})
+MERGE (o2:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o1)-[r71:isSymptomOf]->(o2)
+SET r71.text = 'Các triệu chứng viêm xoang trán thường gặp bao gồm:(2)  Chảy nước mũi Cảm giác “nặng” hoặc căng tức sau mắt Đau đầu Mệt mỏi Đau họng Đau cơ Nghẹt mũi Giảm khứu giác Hôi miệng Sốt nhẹ hoặc sốt cao'
+
+MERGE (o1:symptom {id: 'giảm_khứu_giác_symptom'})
+MERGE (o2:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o1)-[r72:isSymptomOf]->(o2)
+SET r72.text = 'Các triệu chứng viêm xoang trán thường gặp bao gồm:(2)  Chảy nước mũi Cảm giác “nặng” hoặc căng tức sau mắt Đau đầu Mệt mỏi Đau họng Đau cơ Nghẹt mũi Giảm khứu giác Hôi miệng Sốt nhẹ hoặc sốt cao'
+
+MERGE (o1:symptom {id: 'hôi_miệng_symptom'})
+MERGE (o2:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o1)-[r73:isSymptomOf]->(o2)
+SET r73.text = 'Các triệu chứng viêm xoang trán thường gặp bao gồm:(2)  Chảy nước mũi Cảm giác “nặng” hoặc căng tức sau mắt Đau đầu Mệt mỏi Đau họng Đau cơ Nghẹt mũi Giảm khứu giác Hôi miệng Sốt nhẹ hoặc sốt cao'
+
+MERGE (o1:symptom {id: 'sốt_nhẹ_hoặc_sốt_cao_symptom'})
+MERGE (o2:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o1)-[r74:isSymptomOf]->(o2)
+SET r74.text = 'Các triệu chứng viêm xoang trán thường gặp bao gồm:(2)  Chảy nước mũi Cảm giác “nặng” hoặc căng tức sau mắt Đau đầu Mệt mỏi Đau họng Đau cơ Nghẹt mũi Giảm khứu giác Hôi miệng Sốt nhẹ hoặc sốt cao'
+
+MERGE (o1:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o2:cause {id: 'nguyên_nhân_gây_bệnh_cause'})
+MERGE (o1)-[r75:causedBy]->(o2)
+SET r75.text = 'Bác sĩ Thuý Hằng cho biết, mặc dù viêm xoang trán thường có các triệu chứng kể trên nhưng cũng tùy vào nguyên nhân gây bệnh mà triệu chứng có thể khác nhau.'
+
+MERGE (o1:cause {id: 'nhiễm_virus_cause'})
+MERGE (o2:symptom {id: 'mệt_mỏi__sốt__đau_nhức_cơ_và_đau_họng_symptom'})
+MERGE (o1)-[r76:causedBy]->(o2)
+SET r76.text = 'Chẳng hạn, nếu người bệnh có triệu chứng mệt mỏi, sốt, đau nhức cơ và đau họng, nhiều khả năng đó là dấu hiệu của nhiễm virus hơn là nhiễm vi khuẩn.'
+
+MERGE (o1:cause {id: 'nhiễm_vi_khuẩn_cause'})
+MERGE (o2:symptom {id: 'mệt_mỏi__sốt__đau_nhức_cơ_và_đau_họng_symptom'})
+MERGE (o1)-[r77:causedBy]->(o2)
+SET r77.text = 'Chẳng hạn, nếu người bệnh có triệu chứng mệt mỏi, sốt, đau nhức cơ và đau họng, nhiều khả năng đó là dấu hiệu của nhiễm virus hơn là nhiễm vi khuẩn.'
+
+MERGE (o1:cause {id: 'virus_cause'})
+MERGE (o2:disease {id: 'viêm_xoang_trán_cấp_tính_disease'})
+MERGE (o1)-[r78:causedBy]->(o2)
+SET r78.text = 'Hoặc nếu triệu chứng kéo dài dưới 10 ngày có thể nguyên nhân gây viêm xoang trán cấp tính là do virus.'
+
+MERGE (o1:cause {id: 'lệch_vách_ngăn_mũi_cause'})
+MERGE (o2:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o1)-[r79:causedBy]->(o2)
+SET r79.text = 'Ngược lại, nếu biểu hiện viêm xoang trán kéo dài trên vài tháng, nguyên nhân viêm xoang trán có thể do lệch vách ngăn mũi hoặc polyp mũi.'
+
+MERGE (o1:cause {id: 'polyp_mũi_cause'})
+MERGE (o2:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o1)-[r80:causedBy]->(o2)
+SET r80.text = 'Ngược lại, nếu biểu hiện viêm xoang trán kéo dài trên vài tháng, nguyên nhân viêm xoang trán có thể do lệch vách ngăn mũi hoặc polyp mũi.'
+
+MERGE (o1:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o2:symptom {id: 'các_triệu_chứng_lâm_sàng_như_chảy_nước_mũi__nghẹt_mũi__đau_đầu__đau_nhức_vùng_trán_và_tiền_sử_mắc_bệnh_tai_mũi_họng_symptom'})
+MERGE (o1)-[r81:diagnosedBy]->(o2)
+SET r81.text = 'Bác sĩ Thuý Hằng cho biết, viêm xoang trán có thể được chẩn đoán dựa vào các triệu chứng lâm sàng như chảy nước mũi, nghẹt mũi, đau đầu, đau nhức vùng trán và tiền sử mắc bệnh tai mũi họng…'
+
+MERGE (o1:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o2:test {id: 'các_kiểm_tra_cận_lâm_sàng_test'})
+MERGE (o1)-[r82:diagnosedBy]->(o2)
+SET r82.text = 'Ngoài ra, các kiểm tra cận lâm sàng cũng có thể được chỉ định để củng cố chẩn đoán viêm xoang trán.'
+
+MERGE (o1:disease {id: 'viêm_xoang_disease'})
+MERGE (o2:test {id: 'hai_phương_pháp_này_test'})
+MERGE (o1)-[r83:diagnosedBy]->(o2)
+SET r83.text = 'Hai phương pháp này có thể cho biết mức độ của bệnh viêm xoang và trong một số trường hợp, có thể dùng để chẩn đoán phân biệt hoặc tìm ra nguyên nhân gây bệnh.'
+
+MERGE (o1:disease {id: 'viêm_xoang_disease'})
+MERGE (o2:treatment {id: 'ống_nội_soi_có_camera_đưa_vào_sâu_bên_trong_mũi_để_khảo_sát_tình_trạng_hốc_mũi_và_các_xoang_bên_trong_treatment'})
+MERGE (o1)-[r84:treatedBy]->(o2)
+SET r84.text = 'Bác sĩ sẽ sử dụng một ống nội soi có camera đưa vào sâu bên trong mũi để khảo sát tình trạng hốc mũi và các xoang bên trong, từ đó đưa ra phương pháp điều trị thích hợp.'
+
+MERGE (o1:disease {id: 'viêm_màng_não_disease'})
+MERGE (o2:test {id: 'lấy_dịch_não_tủy_test'})
+MERGE (o1)-[r85:diagnosedBy]->(o2)
+SET r85.text = 'Phương pháp này để lấy dịch não tủy giúp chẩn đoán viêm màng não.'
+
+MERGE (o1:test {id: 'chọc_dò_tủy_sống_test'})
+MERGE (o2:disease {id: 'biến_chứng_nội_sọ_disease'})
+MERGE (o1)-[r86:diagnosedBy]->(o2)
+SET r86.text = 'Tuy nhiên, chọc dò tủy sống chỉ được chỉ định khi nghi ngờ biến chứng nội sọ, sau khi loại trừ áp xe não bằng phương pháp chẩn đoán hình ảnh.'
+
+MERGE (o1:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o2:organ {id: 'sọ_não_organ'})
+MERGE (o1)-[r87:affects]->(o2)
+SET r87.text = 'Viêm xoang trán có nguy hiểm không? Theo bác sĩ Thuý Hằng, viêm xoang trán có thể gây ra nhiều biến chứng nguy hiểm, nhất là các biến chứng ở sọ não.'
+
+MERGE (o1:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o2:disease {id: 'biến_chứng_disease'})
+MERGE (o1)-[r88:causedBy]->(o2)
+SET r88.text = 'Các biến chứng của viêm xoang trán bao gồm:'
+
+MERGE (o1:organ {id: 'xoang_trán_organ'})
+MERGE (o2:organ {id: 'hốc_mắt_organ'})
+MERGE (o1)-[r89:locatedIn]->(o2)
+SET r89.text = 'Do cấu trúc xoang trán gần với hốc mắt nên nhiễm trùng dễ dàng lan vào hốc mắt gây viêm các dây thần kinh và túi lệ.'
+
+MERGE (o1:cause {id: 'nhiễm_trùng_cause'})
+MERGE (o2:disease {id: 'viêm_các_dây_thần_kinh_và_túi_lệ_disease'})
+MERGE (o1)-[r90:causedBy]->(o2)
+SET r90.text = 'Do cấu trúc xoang trán gần với hốc mắt nên nhiễm trùng dễ dàng lan vào hốc mắt gây viêm các dây thần kinh và túi lệ.'
+
+MERGE (o1:disease {id: 'viêm_disease'})
+MERGE (o2:symptom {id: 'suy_giảm_thị_lực_hoặc_mù_lòa_vĩnh_viễn_symptom'})
+MERGE (o1)-[r91:causedBy]->(o2)
+SET r91.text = 'Nếu tình trạng viêm không được kiểm soát tốt có thể dẫn đến suy giảm thị lực hoặc mù lòa vĩnh viễn.'
+
+MERGE (o1:disease {id: 'viêm_màng_não_disease'})
+MERGE (o2:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o1)-[r92:isSymptomOf]->(o2)
+SET r92.text = 'Các biến chứng của viêm xoang trán ở sọ não bao gồm viêm màng não, áp xe não, áp xe ngoài màng cứng, áp xe dưới màng cứng, phù não, huyết khối tĩnh mạch xoang hang…'
+
+MERGE (o1:disease {id: 'áp_xe_não_disease'})
+MERGE (o2:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o1)-[r93:isSymptomOf]->(o2)
+SET r93.text = 'Các biến chứng của viêm xoang trán ở sọ não bao gồm viêm màng não, áp xe não, áp xe ngoài màng cứng, áp xe dưới màng cứng, phù não, huyết khối tĩnh mạch xoang hang…'
+
+MERGE (o1:disease {id: 'áp_xe_ngoài_màng_cứng_disease'})
+MERGE (o2:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o1)-[r94:isSymptomOf]->(o2)
+SET r94.text = 'Các biến chứng của viêm xoang trán ở sọ não bao gồm viêm màng não, áp xe não, áp xe ngoài màng cứng, áp xe dưới màng cứng, phù não, huyết khối tĩnh mạch xoang hang…'
+
+MERGE (o1:disease {id: 'áp_xe_dưới_màng_cứng_disease'})
+MERGE (o2:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o1)-[r95:isSymptomOf]->(o2)
+SET r95.text = 'Các biến chứng của viêm xoang trán ở sọ não bao gồm viêm màng não, áp xe não, áp xe ngoài màng cứng, áp xe dưới màng cứng, phù não, huyết khối tĩnh mạch xoang hang…'
+
+MERGE (o1:disease {id: 'phù_não_disease'})
+MERGE (o2:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o1)-[r96:isSymptomOf]->(o2)
+SET r96.text = 'Các biến chứng của viêm xoang trán ở sọ não bao gồm viêm màng não, áp xe não, áp xe ngoài màng cứng, áp xe dưới màng cứng, phù não, huyết khối tĩnh mạch xoang hang…'
+
+MERGE (o1:disease {id: 'huyết_khối_tĩnh_mạch_xoang_hang_disease'})
+MERGE (o2:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o1)-[r97:isSymptomOf]->(o2)
+SET r97.text = 'Các biến chứng của viêm xoang trán ở sọ não bao gồm viêm màng não, áp xe não, áp xe ngoài màng cứng, áp xe dưới màng cứng, phù não, huyết khối tĩnh mạch xoang hang…'
+
+MERGE (o1:organ {id: 'xoang_trán_organ'})
+MERGE (o2:organ {id: 'màng_não__xoang_hang_và_xoang_màng_cứng_organ'})
+MERGE (o1)-[r98:affects]->(o2)
+SET r98.text = 'Xoang trán dễ bị nhiễm trùng lây lan ra bên ngoài một phần vì sự dẫn lưu tĩnh mạch của nó xảy ra thông qua các tĩnh mạch liên lạc đi ngang qua thành sau và thông với tĩnh mạch cung cấp cho màng não, xoang hang và xoang màng cứng.'
+
+MERGE (o1:disease {id: 'viêm_tắc_tĩnh_mạch_huyết_khối_disease'})
+MERGE (o2:organ {id: 'tĩnh_mạch_màng_não_organ'})
+MERGE (o1)-[r99:affects]->(o2)
+SET r99.text = 'Viêm tắc tĩnh mạch huyết khối của mạng tĩnh mạch dưới niêm mạc xoang lan qua các tĩnh mạch không van vào tĩnh mạch liên lạc vùng xương trán rồi đến các tĩnh mạch màng não.'
+
+MERGE (o1:treatment {id: 'cải_thiện_sự_thoát_dịch_nhầy_và_giữ_cho_xoang_thông_thoáng_treatment'})
+MERGE (o2:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o1)-[r100:treatedBy]->(o2)
+SET r100.text = 'Bác sĩ Thuý Hằng cho biết, mục tiêu của việc điều trị viêm xoang trán là cải thiện sự thoát dịch nhầy và giữ cho xoang thông thoáng.'
+
+MERGE (o1:symptom {id: 'tắc_nghẽn_symptom'})
+MERGE (o2:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o1)-[r101:isSymptomOf]->(o2)
+SET r101.text = 'Theo đó, tùy vào nguyên nhân gây tắc nghẽn, bác sĩ có thể chỉ định các phương pháp điều trị khác nhau.'
+
+MERGE (o1:treatment {id: 'nghỉ_ngơi_treatment'})
+MERGE (o2:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o1)-[r102:treatedBy]->(o2)
+SET r102.text = 'Chỉ định thường bao gồm nghỉ ngơi, uống nhiều nước và sử dụng thuốc xịt mũi hoặc thuốc giả nghẹt mũi không kê đơn.'
+
+MERGE (o1:treatment {id: 'uống_nhiều_nước_treatment'})
+MERGE (o2:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o1)-[r103:treatedBy]->(o2)
+SET r103.text = 'Chỉ định thường bao gồm nghỉ ngơi, uống nhiều nước và sử dụng thuốc xịt mũi hoặc thuốc giả nghẹt mũi không kê đơn.'
+
+MERGE (o1:treatment {id: 'thuốc_xịt_mũi_treatment'})
+MERGE (o2:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o1)-[r104:treatedBy]->(o2)
+SET r104.text = 'Chỉ định thường bao gồm nghỉ ngơi, uống nhiều nước và sử dụng thuốc xịt mũi hoặc thuốc giả nghẹt mũi không kê đơn.'
+
+MERGE (o1:treatment {id: 'thuốc_giả_nghẹt_mũi_treatment'})
+MERGE (o2:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o1)-[r105:treatedBy]->(o2)
+SET r105.text = 'Chỉ định thường bao gồm nghỉ ngơi, uống nhiều nước và sử dụng thuốc xịt mũi hoặc thuốc giả nghẹt mũi không kê đơn.'
+
+MERGE (o1:treatment {id: 'kháng_sinh_treatment'})
+MERGE (o2:disease {id: 'nhiễm_trùng_disease'})
+MERGE (o1)-[r106:treatedBy]->(o2)
+SET r106.text = 'Chỉ định kháng sinh để điều trị nhiễm trùng.'
+
+MERGE (o1:treatment {id: 'amoxicillin-clavulanate_treatment'})
+MERGE (o2:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o1)-[r107:treatedBy]->(o2)
+SET r107.text = 'Đối với các trường hợp không có biến chứng, điều trị kháng sinh amoxicillin-clavulanate được chỉ định trong 7–14 ngày ở những bệnh nhân không bị dị ứng với penicillin.(3)'
+
+MERGE (o1:treatment {id: 'kháng_sinh_đường_tĩnh_mạch_treatment'})
+MERGE (o2:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o1)-[r108:treatedBy]->(o2)
+SET r108.text = 'Nếu viêm xoang trán có biến chứng, người bệnh cần nhập viện để điều trị bằng kháng sinh đường tĩnh mạch và truyền dịch qua đường tĩnh mạch.'
+
+MERGE (o1:treatment {id: 'truyền_dịch_qua_đường_tĩnh_mạch_treatment'})
+MERGE (o2:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o1)-[r109:treatedBy]->(o2)
+SET r109.text = 'Nếu viêm xoang trán có biến chứng, người bệnh cần nhập viện để điều trị bằng kháng sinh đường tĩnh mạch và truyền dịch qua đường tĩnh mạch.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_nội_soi_xoang_trán_treatment'})
+MERGE (o2:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o1)-[r110:treatedBy]->(o2)
+SET r110.text = 'Phẫu thuật nội soi xoang trán hoặc chọc dò xoang trán có thể cần thiết để dẫn lưu xoang trán.'
+
+MERGE (o1:treatment {id: 'chọc_dò_xoang_trán_treatment'})
+MERGE (o2:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o1)-[r111:treatedBy]->(o2)
+SET r111.text = 'Phẫu thuật nội soi xoang trán hoặc chọc dò xoang trán có thể cần thiết để dẫn lưu xoang trán.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_mở_hộp_sọ_treatment'})
+MERGE (o2:disease {id: 'áp_xe_nội_sọ_disease'})
+MERGE (o1)-[r112:treatedBy]->(o2)
+SET r112.text = 'Phẫu thuật mở hộp sọ có thể được chỉ định để xử trí áp xe nội sọ.'
+
+MERGE (o1:treatment {id: 'thuốc_xịt_mũi_corticosteroid_treatment'})
+MERGE (o2:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o1)-[r113:treatedBy]->(o2)
+SET r113.text = 'Sử dụng thuốc xịt mũi corticosteroid và thuốc kháng histamin để làm giảm các triệu chứng viêm xoang trán.'
+
+MERGE (o1:treatment {id: 'thuốc_kháng_histamin_treatment'})
+MERGE (o2:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o1)-[r114:treatedBy]->(o2)
+SET r114.text = 'Sử dụng thuốc xịt mũi corticosteroid và thuốc kháng histamin để làm giảm các triệu chứng viêm xoang trán.'
+
+MERGE (o1:treatment {id: 'thuốc_thông_mũi_treatment'})
+MERGE (o2:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o1)-[r115:treatedBy]->(o2)
+SET r115.text = 'Các loại thuốc thông mũi và thuốc xịt mũi không kê đơn có chứa phenylephrine hoặc oxymetazoline giúp giảm nghẹt mũi cũng có thể chỉ định cho điều trị.'
+
+MERGE (o1:treatment {id: 'thuốc_xịt_mũi_không_kê_đơn_treatment'})
+MERGE (o2:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o1)-[r116:treatedBy]->(o2)
+SET r116.text = 'Các loại thuốc thông mũi và thuốc xịt mũi không kê đơn có chứa phenylephrine hoặc oxymetazoline giúp giảm nghẹt mũi cũng có thể chỉ định cho điều trị.'
+
+MERGE (o1:treatment {id: 'phenylephrine_treatment'})
+MERGE (o2:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o1)-[r117:treatedBy]->(o2)
+SET r117.text = 'Các loại thuốc thông mũi và thuốc xịt mũi không kê đơn có chứa phenylephrine hoặc oxymetazoline giúp giảm nghẹt mũi cũng có thể chỉ định cho điều trị.'
+
+MERGE (o1:treatment {id: 'oxymetazoline_treatment'})
+MERGE (o2:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o1)-[r118:treatedBy]->(o2)
+SET r118.text = 'Các loại thuốc thông mũi và thuốc xịt mũi không kê đơn có chứa phenylephrine hoặc oxymetazoline giúp giảm nghẹt mũi cũng có thể chỉ định cho điều trị.'
+
+MERGE (o1:symptom {id: 'tác_dụng_phụ_symptom'})
+MERGE (o2:treatment {id: 'thuốc_thông_mũi_treatment'})
+MERGE (o1)-[r119:causedBy]->(o2)
+SET r119.text = 'Bác sĩ Thuý Hằng khuyến cáo, người bệnh không nên dùng các loại thuốc này kéo dài vì chúng có thể gây tác dụng phụ không có lợi cho niêm mạc mũi.'
+
+MERGE (o1:symptom {id: 'tác_dụng_phụ_symptom'})
+MERGE (o2:treatment {id: 'thuốc_xịt_mũi_không_kê_đơn_treatment'})
+MERGE (o1)-[r120:causedBy]->(o2)
+SET r120.text = 'Bác sĩ Thuý Hằng khuyến cáo, người bệnh không nên dùng các loại thuốc này kéo dài vì chúng có thể gây tác dụng phụ không có lợi cho niêm mạc mũi.'
+
+MERGE (o1:symptom {id: 'tác_dụng_phụ_symptom'})
+MERGE (o2:treatment {id: 'phenylephrine_treatment'})
+MERGE (o1)-[r121:causedBy]->(o2)
+SET r121.text = 'Bác sĩ Thuý Hằng khuyến cáo, người bệnh không nên dùng các loại thuốc này kéo dài vì chúng có thể gây tác dụng phụ không có lợi cho niêm mạc mũi.'
+
+MERGE (o1:symptom {id: 'tác_dụng_phụ_symptom'})
+MERGE (o2:treatment {id: 'oxymetazoline_treatment'})
+MERGE (o1)-[r122:causedBy]->(o2)
+SET r122.text = 'Bác sĩ Thuý Hằng khuyến cáo, người bệnh không nên dùng các loại thuốc này kéo dài vì chúng có thể gây tác dụng phụ không có lợi cho niêm mạc mũi.'
+
+MERGE (o1:treatment {id: 'thuốc_kê_đơn_gây_huyết_áp_cao_treatment'})
+MERGE (o2:treatment {id: 'phenylephrine_treatment'})
+MERGE (o1)-[r123:relatedTo]->(o2)
+SET r123.text = 'Ngoài ra, các thuốc có chứa phenylephrine hoặc oxymetazoline có thể tương tác với thuốc kê đơn gây huyết áp cao.'
+
+MERGE (o1:treatment {id: 'thuốc_kê_đơn_gây_huyết_áp_cao_treatment'})
+MERGE (o2:treatment {id: 'oxymetazoline_treatment'})
+MERGE (o1)-[r124:relatedTo]->(o2)
+SET r124.text = 'Ngoài ra, các thuốc có chứa phenylephrine hoặc oxymetazoline có thể tương tác với thuốc kê đơn gây huyết áp cao.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_treatment'})
+MERGE (o2:disease {id: 'lệch_vách_ngăn_disease'})
+MERGE (o1)-[r125:treatedBy]->(o2)
+SET r125.text = 'Phẫu thuật có thể được chỉ định cho các trường hợp lệch vách ngăn hoặc polyp mũi trong trường hợp cần thiết để điều trị triệt để và cải thiện sức khỏe cũng như hoạt động của các xoang.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_treatment'})
+MERGE (o2:disease {id: 'polyp_mũi_disease'})
+MERGE (o1)-[r126:treatedBy]->(o2)
+SET r126.text = 'Phẫu thuật có thể được chỉ định cho các trường hợp lệch vách ngăn hoặc polyp mũi trong trường hợp cần thiết để điều trị triệt để và cải thiện sức khỏe cũng như hoạt động của các xoang.'
+
+MERGE (o1:disease {id: 'lệch_vách_ngăn_disease'})
+MERGE (o2:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o1)-[r127:causedBy]->(o2)
+SET r127.text = 'Phẫu thuật có thể được chỉ định cho các trường hợp lệch vách ngăn hoặc polyp mũi trong trường hợp cần thiết để điều trị triệt để và cải thiện sức khỏe cũng như hoạt động của các xoang.'
+
+MERGE (o1:disease {id: 'polyp_mũi_disease'})
+MERGE (o2:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o1)-[r128:causedBy]->(o2)
+SET r128.text = 'Phẫu thuật có thể được chỉ định cho các trường hợp lệch vách ngăn hoặc polyp mũi trong trường hợp cần thiết để điều trị triệt để và cải thiện sức khỏe cũng như hoạt động của các xoang.'
+
+MERGE (o1:treatment {id: 'chăm_sóc_mũi_xoang_tại_nhà_treatment'})
+MERGE (o2:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o1)-[r129:treatedBy]->(o2)
+SET r129.text = 'Bên cạnh việc điều trị bằng thuốc và các phương pháp ngoại khoa, người bệnh có thể kết hợp chăm sóc mũi xoang tại nhà để cải thiện hiệu quả các triệu chứng viêm xoang trán.'
+
+MERGE (o1:treatment {id: 'xông_hơi_treatment'})
+MERGE (o2:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o1)-[r130:treatedBy]->(o2)
+SET r130.text = 'Xông hơi: Bằng cách hít hơi nước ấm, các triệu chứng đau nhức, nghẹt mũi có thể được cải thiện nhanh chóng.'
+
+MERGE (o1:symptom {id: 'đau_nhức_symptom'})
+MERGE (o2:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o1)-[r131:isSymptomOf]->(o2)
+SET r131.text = 'Xông hơi: Bằng cách hít hơi nước ấm, các triệu chứng đau nhức, nghẹt mũi có thể được cải thiện nhanh chóng.'
+
+MERGE (o1:symptom {id: 'nghẹt_mũi_symptom'})
+MERGE (o2:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o1)-[r132:isSymptomOf]->(o2)
+SET r132.text = 'Xông hơi: Bằng cách hít hơi nước ấm, các triệu chứng đau nhức, nghẹt mũi có thể được cải thiện nhanh chóng.'
+
+MERGE (o1:treatment {id: 'hơi_nước_nóng_treatment'})
+MERGE (o2:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o1)-[r133:treatedBy]->(o2)
+SET r133.text = 'Theo đó, bạn có thể đun một nồi nước xông và trùm khăn kín đầu để hơi nước nóng bốc lên.'
+
+MERGE (o1:food {id: 'trà_hoa_cúc_food'})
+MERGE (o2:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o1)-[r134:treatedBy]->(o2)
+SET r134.text = 'Hoặc dùng một ly trà hoa cúc, trà gừng đưa gần mũi và hít hơi nước ấm.'
+
+MERGE (o1:food {id: 'trà_gừng_food'})
+MERGE (o2:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o1)-[r135:treatedBy]->(o2)
+SET r135.text = 'Hoặc dùng một ly trà hoa cúc, trà gừng đưa gần mũi và hít hơi nước ấm.'
+
+MERGE (o1:symptom {id: 'tổn_thương_niêm_mạc_mũi_symptom'})
+MERGE (o2:treatment {id: 'xông_hơi_treatment'})
+MERGE (o1)-[r136:causedBy]->(o2)
+SET r136.text = 'Tuy nhiên không nên lạm dụng xông hơi vì có thể gây tổn thương niêm mạc mũi khiến bệnh lý mũi họng thêm trầm trọng.'
+
+MERGE (o1:disease {id: 'bệnh_lý_mũi_họng_disease'})
+MERGE (o2:treatment {id: 'xông_hơi_treatment'})
+MERGE (o1)-[r137:aggravatedBy]->(o2)
+SET r137.text = 'Tuy nhiên không nên lạm dụng xông hơi vì có thể gây tổn thương niêm mạc mũi khiến bệnh lý mũi họng thêm trầm trọng.'
+
+MERGE (o1:treatment {id: 'rửa_mũi_bằng_nước_muối_treatment'})
+MERGE (o2:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o1)-[r138:treatedBy]->(o2)
+SET r138.text = 'Rửa mũi bằng nước muối: Vệ sinh mũi bằng nước muối có thể làm giảm các triệu chứng viêm xoang trán.'
+
+MERGE (o1:treatment {id: 'máy_xông_tinh_dầu_treatment'})
+MERGE (o2:disease {id: 'viêm_đường_hô_hấp_trên_disease'})
+MERGE (o1)-[r139:treatedBy]->(o2)
+SET r139.text = 'Máy xông tinh dầu: Các loại tinh dầu bạch đàn, tinh dầu bạc hà, hoa cúc… có thể giúp giảm sự khó chịu của các triệu chứng viêm đường hô hấp trên.'
+
+MERGE (o1:treatment {id: 'tinh_dầu_bạch_đàn_treatment'})
+MERGE (o2:disease {id: 'viêm_đường_hô_hấp_trên_disease'})
+MERGE (o1)-[r140:treatedBy]->(o2)
+SET r140.text = 'Máy xông tinh dầu: Các loại tinh dầu bạch đàn, tinh dầu bạc hà, hoa cúc… có thể giúp giảm sự khó chịu của các triệu chứng viêm đường hô hấp trên.'
+
+MERGE (o1:treatment {id: 'tinh_dầu_bạc_hà_treatment'})
+MERGE (o2:disease {id: 'viêm_đường_hô_hấp_trên_disease'})
+MERGE (o1)-[r141:treatedBy]->(o2)
+SET r141.text = 'Máy xông tinh dầu: Các loại tinh dầu bạch đàn, tinh dầu bạc hà, hoa cúc… có thể giúp giảm sự khó chịu của các triệu chứng viêm đường hô hấp trên.'
+
+MERGE (o1:treatment {id: 'hoa_cúc_treatment'})
+MERGE (o2:disease {id: 'viêm_đường_hô_hấp_trên_disease'})
+MERGE (o1)-[r142:treatedBy]->(o2)
+SET r142.text = 'Máy xông tinh dầu: Các loại tinh dầu bạch đàn, tinh dầu bạc hà, hoa cúc… có thể giúp giảm sự khó chịu của các triệu chứng viêm đường hô hấp trên.'
+
+MERGE (o1:treatment {id: 'tinh_dầu_treatment'})
+MERGE (o2:disease {id: 'viêm_đường_hô_hấp_trên_disease'})
+MERGE (o1)-[r143:treatedBy]->(o2)
+SET r143.text = 'Bạn có thể đổ một chén nước vào máy xông, thêm vài giọt tinh dầu và đặt ở đầu giường trong khi ngủ.'
+
+MERGE (o1:treatment {id: 'xịt_mũi_treatment'})
+MERGE (o2:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o1)-[r144:treatedBy]->(o2)
+SET r144.text = 'Xịt mũi đúng cách có thể giúp giảm các triệu chứng của viêm xoang trán'
+
+MERGE (o1:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o2:disease {id: 'biến_chứng_disease'})
+MERGE (o1)-[r145:causedBy]->(o2)
+SET r145.text = 'Bác sĩ Thuý Hằng khuyên, nếu viêm xoang trán kéo dài và có biến chứng, người bệnh nên đến ngay bệnh viện để được chẩn đoán nguyên nhân và điều trị phù hợp.'
+
+MERGE (o1:symptom {id: 'mù_lòa_symptom'})
+MERGE (o2:disease {id: 'biến_chứng_nội_sọ_disease'})
+MERGE (o1)-[r146:isSymptomOf]->(o2)
+SET r146.text = 'Các biến chứng nội sọ nguy hiểm có thể để lại di chứng bệnh tật suốt đời như mù lòa, bại liệt… hoặc gây nguy cơ tử vong cho người bệnh.'
+
+MERGE (o1:symptom {id: 'bại_liệt_symptom'})
+MERGE (o2:disease {id: 'biến_chứng_nội_sọ_disease'})
+MERGE (o1)-[r147:isSymptomOf]->(o2)
+SET r147.text = 'Các biến chứng nội sọ nguy hiểm có thể để lại di chứng bệnh tật suốt đời như mù lòa, bại liệt… hoặc gây nguy cơ tử vong cho người bệnh.'
+
+MERGE (o1:symptom {id: 'tử_vong_symptom'})
+MERGE (o2:disease {id: 'biến_chứng_nội_sọ_disease'})
+MERGE (o1)-[r148:isSymptomOf]->(o2)
+SET r148.text = 'Các biến chứng nội sọ nguy hiểm có thể để lại di chứng bệnh tật suốt đời như mù lòa, bại liệt… hoặc gây nguy cơ tử vong cho người bệnh.'
+
+MERGE (o1:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o2:cause {id: 'vi_khuẩn_cause'})
+MERGE (o1)-[r149:causedBy]->(o2)
+SET r149.text = 'Theo bác sĩ Thuý Hằng, viêm xoang trán do vi khuẩn, vi rút, dị ứng hoặc do lệch vách ngăn mũi gây ra, cho nên muốn phòng ngừa, điều cơ bản là chúng ta cần tránh các yếu tố nguy cơ gây bệnh.'
+
+MERGE (o1:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o2:cause {id: 'vi_rút_cause'})
+MERGE (o1)-[r150:causedBy]->(o2)
+SET r150.text = 'Theo bác sĩ Thuý Hằng, viêm xoang trán do vi khuẩn, vi rút, dị ứng hoặc do lệch vách ngăn mũi gây ra, cho nên muốn phòng ngừa, điều cơ bản là chúng ta cần tránh các yếu tố nguy cơ gây bệnh.'
+
+MERGE (o1:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o2:cause {id: 'dị_ứng_cause'})
+MERGE (o1)-[r151:causedBy]->(o2)
+SET r151.text = 'Theo bác sĩ Thuý Hằng, viêm xoang trán do vi khuẩn, vi rút, dị ứng hoặc do lệch vách ngăn mũi gây ra, cho nên muốn phòng ngừa, điều cơ bản là chúng ta cần tránh các yếu tố nguy cơ gây bệnh.'
+
+MERGE (o1:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o2:disease {id: 'lệch_vách_ngăn_mũi_disease'})
+MERGE (o1)-[r152:causedBy]->(o2)
+SET r152.text = 'Theo bác sĩ Thuý Hằng, viêm xoang trán do vi khuẩn, vi rút, dị ứng hoặc do lệch vách ngăn mũi gây ra, cho nên muốn phòng ngừa, điều cơ bản là chúng ta cần tránh các yếu tố nguy cơ gây bệnh.'
+
+MERGE (o1:lifestyle {id: 'vệ_sinh_cơ_thể_sạch_sẽ_hàng_ngày_nhất_là_vệ_sinh_tay_trước_khi_ăn_và_sau_khi_đi_vệ_sinh_lifestyle'})
+MERGE (o2:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o1)-[r153:preventedBy]->(o2)
+SET r153.text = 'Theo đó, mỗi người cần chú ý các điều sau.'
+
+MERGE (o1:lifestyle {id: 'giữ_ấm_tai__mũi__họng_để_bảo_vệ_đường_tai_mũi_họng_không_bị_cảm_lạnh_lifestyle'})
+MERGE (o2:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o1)-[r154:preventedBy]->(o2)
+SET r154.text = 'Theo đó, mỗi người cần chú ý các điều sau.'
+
+MERGE (o1:treatment {id: 'tiêm_vắc_xin_phòng_bệnh_cúm_mùa_và_các_bệnh_lý_mũi_họng__hô_hấp_treatment'})
+MERGE (o2:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o1)-[r155:preventedBy]->(o2)
+SET r155.text = 'Theo đó, mỗi người cần chú ý các điều sau.'
+
+MERGE (o1:lifestyle {id: 'đeo_khẩu_trang_khi_ra_khỏi_nhà_để_phòng_ngừa_nguy_cơ_lây_nhiễm_các_bệnh_truyền_nhiễm_như_cúm_mùa_lifestyle'})
+MERGE (o2:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o1)-[r156:preventedBy]->(o2)
+SET r156.text = 'Theo đó, mỗi người cần chú ý các điều sau.'
+
+MERGE (o1:lifestyle {id: 'hạn_chế_ăn_và_uống_đồ_lạnh__đặc_biệt_là_nước_đá_vì_có_thể_gây_kích_thích_các_niêm_mạc_họng_gây_viêm_họng_và_lan_lên_mũi_xoang_lifestyle'})
+MERGE (o2:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o1)-[r157:preventedBy]->(o2)
+SET r157.text = 'Theo đó, mỗi người cần chú ý các điều sau.'
+
+MERGE (o1:lifestyle {id: 'tránh_tiếp_xúc_với_các_chất_có_thể_gây_dị_ứng_như_xà_phòng__khói_bụi__bụi_than__phấn_hoa__lông_động_vật__nấm_lifestyle'})
+MERGE (o2:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o1)-[r158:preventedBy]->(o2)
+SET r158.text = 'Theo đó, mỗi người cần chú ý các điều sau.'
+
+MERGE (o1:treatment {id: 'điều_trị_sớm__triệt_để_các_bệnh_về_mũi__họng_để_tránh_biến_chứng_viêm_xoang_treatment'})
+MERGE (o2:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o1)-[r159:preventedBy]->(o2)
+SET r159.text = 'Theo đó, mỗi người cần chú ý các điều sau.'
+
+MERGE (o1:lifestyle {id: 'ăn_uống_đủ_chất_lifestyle'})
+MERGE (o2:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o1)-[r160:preventedBy]->(o2)
+SET r160.text = 'Theo đó, mỗi người cần chú ý các điều sau.'
+
+MERGE (o1:lifestyle {id: 'sinh_hoạt_điều_độ_lifestyle'})
+MERGE (o2:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o1)-[r161:preventedBy]->(o2)
+SET r161.text = 'Theo đó, mỗi người cần chú ý các điều sau.'
+
+MERGE (o1:lifestyle {id: 'luyện_tập_thể_dục_mỗi_ngày_để_tăng_cường_sức_đề_kháng_giúp_cơ_thể_chống_lại_các_mầm_bệnh_lifestyle'})
+MERGE (o2:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o1)-[r162:preventedBy]->(o2)
+SET r162.text = 'Theo đó, mỗi người cần chú ý các điều sau.'
+
+MERGE (o1:disease {id: 'viêm_mũi_disease'})
+MERGE (o2:disease {id: 'lệch_vách_ngăn_mũi_disease'})
+MERGE (o1)-[r163:causedBy]->(o2)
+SET r163.text = 'Nếu bị viêm mũi lặp lại nhiều lần hãy đi khám tai mũi họng để tìm ra nguyên nhân, có thể lệch vách ngăn mũi gây ra viêm mũi thường xuyên dẫn đến viêm xoang trán.'
+
+MERGE (o1:lifestyle {id: 'chế_độ_ăn_uống_lifestyle'})
+MERGE (o2:disease {id: 'viêm_xoang_disease'})
+MERGE (o1)-[r164:relatedTo]->(o2)
+SET r164.text = 'Bác sĩ Thuý Hằng cho biết, không có khuyến nghị cụ thể về chế độ ăn uống cho người bệnh viêm xoang và viêm xoang trán nói riêng.'
+
+MERGE (o1:food {id: 'đồ_ăn__thức_uống_food'})
+MERGE (o2:disease {id: 'viêm_disease'})
+MERGE (o1)-[r165:aggravatedBy]->(o2)
+SET r165.text = 'Tuy nhiên, thực tế quan sát thấy một số loại đồ ăn, thức uống có thể gây kích ứng niêm mạc mũi, họng khiến cho tình trạng viêm trở nên trầm trọng hơn.'
+
+MERGE (o1:food {id: 'thực_phẩm_food'})
+MERGE (o2:symptom {id: 'triệu_chứng_symptom'})
+MERGE (o1)-[r166:treatedBy]->(o2)
+SET r166.text = 'Ngược lại, việc ăn, uống một số thực phẩm lại giúp cải thiện các triệu chứng đáng kể.'
+
+MERGE (o1:food {id: 'đồ_ăn_cay_food'})
+MERGE (o2:symptom {id: 'khó_chịu_symptom'})
+MERGE (o1)-[r167:aggravatedBy]->(o2)
+SET r167.text = 'Đồ ăn cay: Vị cay bốc lên đường thở có thể gây kích ứng niêm mạc mũi khiến cho người bệnh cảm thấy khó chịu.'
+
+MERGE (o1:cause {id: 'vị_cay_cause'})
+MERGE (o2:symptom {id: 'khó_chịu_symptom'})
+MERGE (o1)-[r168:causedBy]->(o2)
+SET r168.text = 'Đồ ăn cay: Vị cay bốc lên đường thở có thể gây kích ứng niêm mạc mũi khiến cho người bệnh cảm thấy khó chịu.'
+
+MERGE (o1:symptom {id: 'khó_chịu_symptom'})
+MERGE (o2:disease {id: 'viêm_xoang_disease'})
+MERGE (o1)-[r169:isSymptomOf]->(o2)
+SET r169.text = 'Đồ ăn cay: Vị cay bốc lên đường thở có thể gây kích ứng niêm mạc mũi khiến cho người bệnh cảm thấy khó chịu.'
+
+MERGE (o1:food {id: 'hải_sản_food'})
+MERGE (o2:symptom {id: 'khó_thở_symptom'})
+MERGE (o1)-[r170:aggravatedBy]->(o2)
+SET r170.text = 'Một số loại hải sản: Những người bị dị ứng hải sản có thể xuất hiện phù nề niêm mạc mũi, họng khiến cho đường thở bị hẹp lại, làm tăng triệu chứng khó thở, ngứa nhức mũi xoang.'
+
+MERGE (o1:food {id: 'hải_sản_food'})
+MERGE (o2:symptom {id: 'ngứa_nhức_mũi_xoang_symptom'})
+MERGE (o1)-[r171:aggravatedBy]->(o2)
+SET r171.text = 'Một số loại hải sản: Những người bị dị ứng hải sản có thể xuất hiện phù nề niêm mạc mũi, họng khiến cho đường thở bị hẹp lại, làm tăng triệu chứng khó thở, ngứa nhức mũi xoang.'
+
+MERGE (o1:lifestyle {id: 'thuốc_lá_lifestyle'})
+MERGE (o2:symptom {id: 'khó_chịu_symptom'})
+MERGE (o1)-[r172:aggravatedBy]->(o2)
+SET r172.text = 'Thuốc lá: Ngay cả với người khỏe mạnh, tác động của khói thuốc lá có thể khiến cho niêm mạc mũi bị kích ứng, dẫn đến khó chịu.'
+
+MERGE (o1:food {id: 'đá_lạnh_food'})
+MERGE (o2:symptom {id: 'nghẹt_mũi_symptom'})
+MERGE (o1)-[r173:aggravatedBy]->(o2)
+SET r173.text = 'Đá lạnh: Đá lạnh khiến cho tình trạng nghẹt mũi thêm nghiêm trọng.'
+
+MERGE (o1:food {id: 'tỏi_và_gừng_food'})
+MERGE (o2:disease {id: 'viêm_xoang_disease'})
+MERGE (o1)-[r174:treatedBy]->(o2)
+SET r174.text = 'Thêm tỏi, gừng vào món ăn: Tỏi và gừng là hai loại gia vị giàu chất chống viêm, có thể tăng cường đề kháng và giảm các triệu chứng viêm xoang.'
+
+MERGE (o1:food {id: 'tỏi_và_gừng_food'})
+MERGE (o2:symptom {id: 'triệu_chứng_viêm_xoang_symptom'})
+MERGE (o1)-[r175:treatedBy]->(o2)
+SET r175.text = 'Thêm tỏi, gừng vào món ăn: Tỏi và gừng là hai loại gia vị giàu chất chống viêm, có thể tăng cường đề kháng và giảm các triệu chứng viêm xoang.'
+
+MERGE (o1:food {id: 'cháo_gà_nấm_food'})
+MERGE (o2:disease {id: 'cảm_lạnh_disease'})
+MERGE (o1)-[r176:treatedBy]->(o2)
+SET r176.text = 'Ăn cháo, súp gà: Cháo gà nấm có tác dụng làm ấm người, bồi bổ cơ thể rất tốt cho người bị cảm lạnh.'
+
+MERGE (o1:food {id: 'trà_hoa_cúc__trà_gừng__trà_bạc_hà_food'})
+MERGE (o2:disease {id: 'viêm_xoang_disease'})
+MERGE (o1)-[r177:treatedBy]->(o2)
+SET r177.text = 'Uống trà thảo dược: Các loại trà hoa cúc, trà gừng, trà bạc hà… giàu chất chống viêm rất tốt để cải thiện các triệu chứng viêm xoang.'
+
+MERGE (o1:food {id: 'trà_hoa_cúc__trà_gừng__trà_bạc_hà_food'})
+MERGE (o2:symptom {id: 'triệu_chứng_viêm_xoang_symptom'})
+MERGE (o1)-[r178:treatedBy]->(o2)
+SET r178.text = 'Uống trà thảo dược: Các loại trà hoa cúc, trà gừng, trà bạc hà… giàu chất chống viêm rất tốt để cải thiện các triệu chứng viêm xoang.'
+
+MERGE (o1:food {id: 'các_loại_trái_cây_họ_cam_food'})
+MERGE (o2:disease {id: 'bệnh_disease'})
+MERGE (o1)-[r179:treatedBy]->(o2)
+SET r179.text = 'Các loại trái cây họ cam: Các loại trái cây họ cam mọng nước giàu vitamin C như cam, chanh, bưởi rất tốt để bồi bổ trong giai đoạn mắc bệnh giúp bù nước và tăng cường sức đề kháng cho cơ thể.'
+
+MERGE (o1:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o2:symptom {id: 'bít_tắc_các_xoang_symptom'})
+MERGE (o1)-[r180:isSymptomOf]->(o2)
+SET r180.text = 'Viêm xoang trán nói riêng và viêm xoang nói chung là tình trạng bít tắc các xoang gây ra viêm.'
+
+MERGE (o1:disease {id: 'viêm_xoang_disease'})
+MERGE (o2:symptom {id: 'bít_tắc_các_xoang_symptom'})
+MERGE (o1)-[r181:isSymptomOf]->(o2)
+SET r181.text = 'Viêm xoang trán nói riêng và viêm xoang nói chung là tình trạng bít tắc các xoang gây ra viêm.'
+
+MERGE (o1:disease {id: 'viêm_disease'})
+MERGE (o2:symptom {id: 'chảy_nước_mũi_symptom'})
+MERGE (o1)-[r182:isSymptomOf]->(o2)
+SET r182.text = 'Khi viêm xảy ra sẽ xuất hiện các triệu chứng khó chịu, đặc thù là chảy nước mũi, nghẹt mũi, ho.'
+
+MERGE (o1:disease {id: 'viêm_disease'})
+MERGE (o2:symptom {id: 'nghẹt_mũi_symptom'})
+MERGE (o1)-[r183:isSymptomOf]->(o2)
+SET r183.text = 'Khi viêm xảy ra sẽ xuất hiện các triệu chứng khó chịu, đặc thù là chảy nước mũi, nghẹt mũi, ho.'
+
+MERGE (o1:disease {id: 'viêm_disease'})
+MERGE (o2:symptom {id: 'ho_symptom'})
+MERGE (o1)-[r184:isSymptomOf]->(o2)
+SET r184.text = 'Khi viêm xảy ra sẽ xuất hiện các triệu chứng khó chịu, đặc thù là chảy nước mũi, nghẹt mũi, ho.'
+
+MERGE (o1:symptom {id: 'nghẹt_mũi_symptom'})
+MERGE (o2:symptom {id: 'thiếu_oxy_lên_não_symptom'})
+MERGE (o1)-[r185:causedBy]->(o2)
+SET r185.text = 'Nghẹt mũi sẽ gây thiếu oxy lên não, phổi khiến người bệnh khó thở và không thể ngủ ngon giấc.'
+
+MERGE (o1:symptom {id: 'nghẹt_mũi_symptom'})
+MERGE (o2:symptom {id: 'khó_thở_symptom'})
+MERGE (o1)-[r186:causedBy]->(o2)
+SET r186.text = 'Nghẹt mũi sẽ gây thiếu oxy lên não, phổi khiến người bệnh khó thở và không thể ngủ ngon giấc.'
+
+MERGE (o1:symptom {id: 'nghẹt_mũi_symptom'})
+MERGE (o2:symptom {id: 'không_thể_ngủ_ngon_giấc_symptom'})
+MERGE (o1)-[r187:causedBy]->(o2)
+SET r187.text = 'Nghẹt mũi sẽ gây thiếu oxy lên não, phổi khiến người bệnh khó thở và không thể ngủ ngon giấc.'
+
+MERGE (o1:symptom {id: 'nghẹt_mũi_symptom'})
+MERGE (o2:symptom {id: 'khô_miệng_symptom'})
+MERGE (o1)-[r188:causedBy]->(o2)
+SET r188.text = 'Ngoài ra, việc thở bằng miệng do nghẹt mũi còn khiến người bệnh bị khô miệng và họng, dẫn đến ho.'
+
+MERGE (o1:symptom {id: 'nghẹt_mũi_symptom'})
+MERGE (o2:symptom {id: 'khô_họng_symptom'})
+MERGE (o1)-[r189:causedBy]->(o2)
+SET r189.text = 'Ngoài ra, việc thở bằng miệng do nghẹt mũi còn khiến người bệnh bị khô miệng và họng, dẫn đến ho.'
+
+MERGE (o1:symptom {id: 'nghẹt_mũi_symptom'})
+MERGE (o2:symptom {id: 'ho_symptom'})
+MERGE (o1)-[r190:causedBy]->(o2)
+SET r190.text = 'Ngoài ra, việc thở bằng miệng do nghẹt mũi còn khiến người bệnh bị khô miệng và họng, dẫn đến ho.'
+
+MERGE (o1:symptom {id: 'ho_symptom'})
+MERGE (o2:symptom {id: 'mất_ngủ_symptom'})
+MERGE (o1)-[r191:causedBy]->(o2)
+SET r191.text = 'Ho cũng gây mất ngủ.'
+
+MERGE (o1:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o2:symptom {id: 'đau_đầu_symptom'})
+MERGE (o1)-[r192:isSymptomOf]->(o2)
+SET r192.text = 'Viêm xoang trán chắc chắn có gây ra triệu chứng đau đầu vì hai lý do sau.'
+
+MERGE (o1:disease {id: 'viêm_xoang_disease'})
+MERGE (o2:symptom {id: 'nghẹt_mũi_symptom'})
+MERGE (o1)-[r193:causedBy]->(o2)
+SET r193.text = 'Thứ nhất, viêm xoang thường gây nghẹt mũi, khó thở, dẫn đến oxy lên não kém.'
+
+MERGE (o1:disease {id: 'viêm_xoang_disease'})
+MERGE (o2:symptom {id: 'khó_thở_symptom'})
+MERGE (o1)-[r194:causedBy]->(o2)
+SET r194.text = 'Thứ nhất, viêm xoang thường gây nghẹt mũi, khó thở, dẫn đến oxy lên não kém.'
+
+MERGE (o1:disease {id: 'viêm_xoang_disease'})
+MERGE (o2:symptom {id: 'thiếu_oxy_lên_não_symptom'})
+MERGE (o1)-[r195:causedBy]->(o2)
+SET r195.text = 'Thứ nhất, viêm xoang thường gây nghẹt mũi, khó thở, dẫn đến oxy lên não kém.'
+
+MERGE (o1:symptom {id: 'thiếu_oxy_lên_não_symptom'})
+MERGE (o2:symptom {id: 'đau_đầu_symptom'})
+MERGE (o1)-[r196:causedBy]->(o2)
+SET r196.text = 'Tình trạng thiếu oxy lên não sẽ gây ra đau đầu.'
+
+MERGE (o1:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o2:symptom {id: 'đau_nhức_vùng_trán_symptom'})
+MERGE (o1)-[r197:isSymptomOf]->(o2)
+SET r197.text = 'Thứ 2, viêm xoang trán chắc chắn sẽ gây đau nhức vùng trán, đặc biệt nếu có các biến chứng sọ não thì triệu chứng đau đầu càng rõ hơn.'
+
+MERGE (o1:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o2:symptom {id: 'đau_đầu_symptom'})
+MERGE (o1)-[r198:isSymptomOf]->(o2)
+SET r198.text = 'Thứ 2, viêm xoang trán chắc chắn sẽ gây đau nhức vùng trán, đặc biệt nếu có các biến chứng sọ não thì triệu chứng đau đầu càng rõ hơn.'
+
+MERGE (o1:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o2:organ {id: 'sọ_não_organ'})
+MERGE (o1)-[r199:relatedTo]->(o2)
+SET r199.text = 'Viêm xoang trán có biến chứng có thể liên quan rất nhiều đến các cấu trúc lân cận xoang bao gồm sọ não, tai, mũi, thần kinh, mắt và liên quan đến các bệnh truyền nhiễm…'
+
+MERGE (o1:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o2:organ {id: 'tai_organ'})
+MERGE (o1)-[r200:relatedTo]->(o2)
+SET r200.text = 'Viêm xoang trán có biến chứng có thể liên quan rất nhiều đến các cấu trúc lân cận xoang bao gồm sọ não, tai, mũi, thần kinh, mắt và liên quan đến các bệnh truyền nhiễm…'
+
+MERGE (o1:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o2:organ {id: 'mũi_organ'})
+MERGE (o1)-[r201:relatedTo]->(o2)
+SET r201.text = 'Viêm xoang trán có biến chứng có thể liên quan rất nhiều đến các cấu trúc lân cận xoang bao gồm sọ não, tai, mũi, thần kinh, mắt và liên quan đến các bệnh truyền nhiễm…'
+
+MERGE (o1:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o2:organ {id: 'thần_kinh_organ'})
+MERGE (o1)-[r202:relatedTo]->(o2)
+SET r202.text = 'Viêm xoang trán có biến chứng có thể liên quan rất nhiều đến các cấu trúc lân cận xoang bao gồm sọ não, tai, mũi, thần kinh, mắt và liên quan đến các bệnh truyền nhiễm…'
+
+MERGE (o1:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o2:organ {id: 'mắt_organ'})
+MERGE (o1)-[r203:relatedTo]->(o2)
+SET r203.text = 'Viêm xoang trán có biến chứng có thể liên quan rất nhiều đến các cấu trúc lân cận xoang bao gồm sọ não, tai, mũi, thần kinh, mắt và liên quan đến các bệnh truyền nhiễm…'
+
+MERGE (o1:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o2:disease {id: 'bệnh_truyền_nhiễm_disease'})
+MERGE (o1)-[r204:relatedTo]->(o2)
+SET r204.text = 'Viêm xoang trán có biến chứng có thể liên quan rất nhiều đến các cấu trúc lân cận xoang bao gồm sọ não, tai, mũi, thần kinh, mắt và liên quan đến các bệnh truyền nhiễm…'
+
+MERGE (o1:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o2:test {id: 'chuyên_khoa_tai_mũi_họng_test'})
+MERGE (o1)-[r205:diagnosedBy]->(o2)
+SET r205.text = 'Do đó, người bệnh nên đến các cơ sở y tế uy tín có các chuyên khoa Tai Mũi Họng, Thần kinh, Mắt, Truyền nhiễm… để được phối hợp chẩn đoán và điều trị hiệu quả.'
+
+MERGE (o1:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o2:test {id: 'chuyên_khoa_thần_kinh_test'})
+MERGE (o1)-[r206:diagnosedBy]->(o2)
+SET r206.text = 'Do đó, người bệnh nên đến các cơ sở y tế uy tín có các chuyên khoa Tai Mũi Họng, Thần kinh, Mắt, Truyền nhiễm… để được phối hợp chẩn đoán và điều trị hiệu quả.'
+
+MERGE (o1:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o2:test {id: 'chuyên_khoa_mắt_test'})
+MERGE (o1)-[r207:diagnosedBy]->(o2)
+SET r207.text = 'Do đó, người bệnh nên đến các cơ sở y tế uy tín có các chuyên khoa Tai Mũi Họng, Thần kinh, Mắt, Truyền nhiễm… để được phối hợp chẩn đoán và điều trị hiệu quả.'
+
+MERGE (o1:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o2:test {id: 'chuyên_khoa_truyền_nhiễm_test'})
+MERGE (o1)-[r208:diagnosedBy]->(o2)
+SET r208.text = 'Do đó, người bệnh nên đến các cơ sở y tế uy tín có các chuyên khoa Tai Mũi Họng, Thần kinh, Mắt, Truyền nhiễm… để được phối hợp chẩn đoán và điều trị hiệu quả.'
+
+MERGE (o1:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o2:treatment {id: 'dịch_vụ_của_mỗi_cơ_sở_y_tế_treatment'})
+MERGE (o1)-[r209:treatedBy]->(o2)
+SET r209.text = 'Chi phí khám, chữa bệnh tùy thuộc vào dịch vụ của mỗi cơ sở y tế hoặc phương pháp điều trị.'
+
+MERGE (o1:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o2:treatment {id: 'phương_pháp_điều_trị_treatment'})
+MERGE (o1)-[r210:treatedBy]->(o2)
+SET r210.text = 'Chi phí khám, chữa bệnh tùy thuộc vào dịch vụ của mỗi cơ sở y tế hoặc phương pháp điều trị.'
+
+MERGE (o1:treatment {id: 'khoa_tai_mũi_họng__bệnh_viện_đa_khoa_tâm_anh_treatment'})
+MERGE (o2:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o1)-[r211:treatedBy]->(o2)
+SET r211.text = 'Khoa Tai mũi họng, Bệnh viện Đa khoa Tâm Anh là đơn vị thăm khám, chẩn đoán, điều trị chuyên sâu các bệnh lý về tai mũi họng, trong đó có viêm xoang trán.'
+
+MERGE (o1:treatment {id: 'máy_bào_mô_microdebrider_của_medtronic_(mỹ)_treatment'})
+MERGE (o2:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o1)-[r212:treatedBy]->(o2)
+SET r212.text = 'Với đội ngũ chuyên gia, bác sĩ đầu ngành giỏi nghề, giàu kinh nghiệm, được hỗ trợ bởi hệ thống trang thiết bị chẩn đoán và phẫu thuật hiện đại như: Máy bào mô Microdebrider của Medtronic (Mỹ), máy nội soi XION của Đức, Hệ thống máy COBLATOR của Smith Nephew (Mỹ)&#8230; cùng sự kết hợp mật thiết giữa các chuyên khoa Tai Mũi Họng, Hô hấp, Tim mạch, Nhi khoa… giúp điều trị toàn diện, hiệu quả cao.'
+
+MERGE (o1:treatment {id: 'máy_nội_soi_xion_của_đức_treatment'})
+MERGE (o2:disease {id: 'viêm_xoang_trán_disease'})
+MERGE (o1)-[r213:treatedBy]->(o2)
+SET r213.text = 'Với đội ngũ chuyên gia, bác sĩ đầu ngành giỏi nghề, giàu kinh nghiệm, được hỗ trợ bởi hệ thống trang thiết bị chẩn đoán và phẫu thuật hiện đại như: Máy bào mô Microdebrider của Medtronic (Mỹ), máy nội soi XION của Đức, Hệ thống máy COBLATOR của Smith Nephew (Mỹ)&#8230; cùng sự kết hợp mật thiết giữa các chuyên khoa Tai Mũi Họng, Hô hấp, Tim mạch, Nhi khoa… giúp điều trị toàn diện, hiệu quả cao.'

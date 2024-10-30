@@ -1,0 +1,746 @@
+[
+    {
+        "text": "Xơ gan còn bù là một tình trạng gan bị xơ hóa nhưng hầu như chức năng gan chưa bị giảm.",
+        "head": "Xơ gan còn bù",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "gan bị xơ hóa",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Xơ gan còn bù là một tình trạng gan bị xơ hóa nhưng hầu như chức năng gan chưa bị giảm.",
+        "head": "chức năng gan",
+        "head_type": "organ",
+        "relation": "affects",
+        "tail": "Xơ gan còn bù",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đây là tổn thương gan có thể điều trị được trước khi bước qua giai đoạn nghiêm trọng về sau đó là xơ gan mất bù và các biến chứng, có thể dẫn tới ung thư gan.",
+        "head": "tổn thương gan",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "điều trị",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Đây là tổn thương gan có thể điều trị được trước khi bước qua giai đoạn nghiêm trọng về sau đó là xơ gan mất bù và các biến chứng, có thể dẫn tới ung thư gan.",
+        "head": "tổn thương gan",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "xơ gan mất bù",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đây là tổn thương gan có thể điều trị được trước khi bước qua giai đoạn nghiêm trọng về sau đó là xơ gan mất bù và các biến chứng, có thể dẫn tới ung thư gan.",
+        "head": "tổn thương gan",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "ung thư gan",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Gan là cơ quan nội tạng đóng vai trò vô cùng quan trọng bởi chức năng lọc thải độc tố giúp làm sạch máu cũng như vai trò tổng hợp chất dinh dưỡng.",
+        "head": "Gan",
+        "head_type": "organ",
+        "relation": "locatedIn",
+        "tail": "cơ thể",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Gan là cơ quan nội tạng đóng vai trò vô cùng quan trọng bởi chức năng lọc thải độc tố giúp làm sạch máu cũng như vai trò tổng hợp chất dinh dưỡng.",
+        "head": "Gan",
+        "head_type": "organ",
+        "relation": "affects",
+        "tail": "máu",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Trong trường hợp mô gan bị tổn thương sẽ để lại mô sẹo.",
+        "head": "mô gan bị tổn thương",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "mô sẹo",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đây chính là tình trạng xơ gan.",
+        "head": "xơ gan",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "mô sẹo",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Xơ gan ở mức độ càng nặng thì càng nhiều mô sẹo, càng làm giảm sút chức năng gan.",
+        "head": "xơ gan",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "chức năng gan",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Mức độ tổn thương gan có thể phân chia từ nhẹ tới nặng như sau:  Mức độ nhẹ Tổn thương nhẹ tới trung bình (xơ hóa) Tổn thương trung bình đến nặng (xơ hóa đến xơ gan còn bù) Tổn thương nghiêm trọng đến suy gan (xơ gan mất bù)",
+        "head": "Tổn thương gan",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "xơ hóa",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Mức độ tổn thương gan có thể phân chia từ nhẹ tới nặng như sau:  Mức độ nhẹ Tổn thương nhẹ tới trung bình (xơ hóa) Tổn thương trung bình đến nặng (xơ hóa đến xơ gan còn bù) Tổn thương nghiêm trọng đến suy gan (xơ gan mất bù)",
+        "head": "Tổn thương gan",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "xơ gan còn bù",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Mức độ tổn thương gan có thể phân chia từ nhẹ tới nặng như sau:  Mức độ nhẹ Tổn thương nhẹ tới trung bình (xơ hóa) Tổn thương trung bình đến nặng (xơ hóa đến xơ gan còn bù) Tổn thương nghiêm trọng đến suy gan (xơ gan mất bù)",
+        "head": "Tổn thương gan",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "xơ gan mất bù",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Mức độ tổn thương gan có thể phân chia từ nhẹ tới nặng như sau:  Mức độ nhẹ Tổn thương nhẹ tới trung bình (xơ hóa) Tổn thương trung bình đến nặng (xơ hóa đến xơ gan còn bù) Tổn thương nghiêm trọng đến suy gan (xơ gan mất bù)",
+        "head": "Tổn thương gan",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "suy gan",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Như vậy, xơ gan còn bù là giai đoạn tổn thương gan trung bình.",
+        "head": "xơ gan còn bù",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "tổn thương gan trung bình",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Lúc này các tế bào gan khỏe mạnh vẫn có thể hoạt động “bù” cho các tế bào đã bị tổn thương, do đó chức năng hoạt động bình thường của gan cơ bản vẫn được duy trì.",
+        "head": "tế bào gan khỏe mạnh",
+        "head_type": "organ",
+        "relation": "affects",
+        "tail": "chức năng gan",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Nếu phát hiện kịp thời, người bệnh có thể điều trị và phục hồi sức khỏe như ban đầu.",
+        "head": "xơ gan còn bù",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "điều trị",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Ngược lại, trong trường hợp các nguyên nhân gây tổn thương như nhiễm virus viêm gan, lạm dụng rượu bia, sử dụng ma túy… không được loại bỏ, tổn thương gan sẽ tiếp tục tiến triển và làm suy giảm chức năng gan nghiêm trọng hơn.",
+        "head": "nhiễm virus viêm gan",
+        "head_type": "cause",
+        "relation": "causes",
+        "tail": "tổn thương gan",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ngược lại, trong trường hợp các nguyên nhân gây tổn thương như nhiễm virus viêm gan, lạm dụng rượu bia, sử dụng ma túy… không được loại bỏ, tổn thương gan sẽ tiếp tục tiến triển và làm suy giảm chức năng gan nghiêm trọng hơn.",
+        "head": "lạm dụng rượu bia",
+        "head_type": "lifestyle",
+        "relation": "causes",
+        "tail": "tổn thương gan",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ngược lại, trong trường hợp các nguyên nhân gây tổn thương như nhiễm virus viêm gan, lạm dụng rượu bia, sử dụng ma túy… không được loại bỏ, tổn thương gan sẽ tiếp tục tiến triển và làm suy giảm chức năng gan nghiêm trọng hơn.",
+        "head": "sử dụng ma túy",
+        "head_type": "lifestyle",
+        "relation": "causes",
+        "tail": "tổn thương gan",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ngược lại, trong trường hợp các nguyên nhân gây tổn thương như nhiễm virus viêm gan, lạm dụng rượu bia, sử dụng ma túy… không được loại bỏ, tổn thương gan sẽ tiếp tục tiến triển và làm suy giảm chức năng gan nghiêm trọng hơn.",
+        "head": "tổn thương gan",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "chức năng gan",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Ở mức độ xơ gan còn bù, các tế bào gan khỏe mạnh còn có khả năng “bù” lại cho các tế bào bị tổn thương",
+        "head": "xơ gan còn bù",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "tế bào gan khỏe mạnh",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Do là giai đoạn đầu nên các triệu chứng xơ gan còn bù hầu như còn chưa rõ rệt, khó có thể nhận biết hoặc dễ nhầm lẫn với các bệnh lý khác.",
+        "head": "xơ gan còn bù",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "triệu chứng",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Tuy nhiên, người bệnh có thể cảm thấy các bất thường như:  Chán ăn, ăn không ngon Mệt mỏi, không tỉnh táo Ngứa ngáy, bầm tím ngoài da Phù nhẹ ở chân Thỉnh thoảng có cảm giác tức vùng hạ sườn phải Nước tiểu có màu vàng đậm hơn Có thể có chảy máu cam không rõ nguyên do Suy giảm khả năng tình dục, kinh nguyệt không đều Nổi mao mạch hình sao ở lưng, ngực, cổ, bụng",
+        "head": "Chán ăn",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "xơ gan còn bù",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tuy nhiên, người bệnh có thể cảm thấy các bất thường như:  Chán ăn, ăn không ngon Mệt mỏi, không tỉnh táo Ngứa ngáy, bầm tím ngoài da Phù nhẹ ở chân Thỉnh thoảng có cảm giác tức vùng hạ sườn phải Nước tiểu có màu vàng đậm hơn Có thể có chảy máu cam không rõ nguyên do Suy giảm khả năng tình dục, kinh nguyệt không đều Nổi mao mạch hình sao ở lưng, ngực, cổ, bụng",
+        "head": "ăn không ngon",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "xơ gan còn bù",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tuy nhiên, người bệnh có thể cảm thấy các bất thường như:  Chán ăn, ăn không ngon Mệt mỏi, không tỉnh táo Ngứa ngáy, bầm tím ngoài da Phù nhẹ ở chân Thỉnh thoảng có cảm giác tức vùng hạ sườn phải Nước tiểu có màu vàng đậm hơn Có thể có chảy máu cam không rõ nguyên do Suy giảm khả năng tình dục, kinh nguyệt không đều Nổi mao mạch hình sao ở lưng, ngực, cổ, bụng",
+        "head": "Mệt mỏi",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "xơ gan còn bù",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tuy nhiên, người bệnh có thể cảm thấy các bất thường như:  Chán ăn, ăn không ngon Mệt mỏi, không tỉnh táo Ngứa ngáy, bầm tím ngoài da Phù nhẹ ở chân Thỉnh thoảng có cảm giác tức vùng hạ sườn phải Nước tiểu có màu vàng đậm hơn Có thể có chảy máu cam không rõ nguyên do Suy giảm khả năng tình dục, kinh nguyệt không đều Nổi mao mạch hình sao ở lưng, ngực, cổ, bụng",
+        "head": "không tỉnh táo",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "xơ gan còn bù",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tuy nhiên, người bệnh có thể cảm thấy các bất thường như:  Chán ăn, ăn không ngon Mệt mỏi, không tỉnh táo Ngứa ngáy, bầm tím ngoài da Phù nhẹ ở chân Thỉnh thoảng có cảm giác tức vùng hạ sườn phải Nước tiểu có màu vàng đậm hơn Có thể có chảy máu cam không rõ nguyên do Suy giảm khả năng tình dục, kinh nguyệt không đều Nổi mao mạch hình sao ở lưng, ngực, cổ, bụng",
+        "head": "Ngứa ngáy",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "xơ gan còn bù",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tuy nhiên, người bệnh có thể cảm thấy các bất thường như:  Chán ăn, ăn không ngon Mệt mỏi, không tỉnh táo Ngứa ngáy, bầm tím ngoài da Phù nhẹ ở chân Thỉnh thoảng có cảm giác tức vùng hạ sườn phải Nước tiểu có màu vàng đậm hơn Có thể có chảy máu cam không rõ nguyên do Suy giảm khả năng tình dục, kinh nguyệt không đều Nổi mao mạch hình sao ở lưng, ngực, cổ, bụng",
+        "head": "bầm tím ngoài da",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "xơ gan còn bù",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tuy nhiên, người bệnh có thể cảm thấy các bất thường như:  Chán ăn, ăn không ngon Mệt mỏi, không tỉnh táo Ngứa ngáy, bầm tím ngoài da Phù nhẹ ở chân Thỉnh thoảng có cảm giác tức vùng hạ sườn phải Nước tiểu có màu vàng đậm hơn Có thể có chảy máu cam không rõ nguyên do Suy giảm khả năng tình dục, kinh nguyệt không đều Nổi mao mạch hình sao ở lưng, ngực, cổ, bụng",
+        "head": "Phù nhẹ ở chân",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "xơ gan còn bù",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tuy nhiên, người bệnh có thể cảm thấy các bất thường như:  Chán ăn, ăn không ngon Mệt mỏi, không tỉnh táo Ngứa ngáy, bầm tím ngoài da Phù nhẹ ở chân Thỉnh thoảng có cảm giác tức vùng hạ sườn phải Nước tiểu có màu vàng đậm hơn Có thể có chảy máu cam không rõ nguyên do Suy giảm khả năng tình dục, kinh nguyệt không đều Nổi mao mạch hình sao ở lưng, ngực, cổ, bụng",
+        "head": "cảm giác tức vùng hạ sườn phải",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "xơ gan còn bù",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tuy nhiên, người bệnh có thể cảm thấy các bất thường như:  Chán ăn, ăn không ngon Mệt mỏi, không tỉnh táo Ngứa ngáy, bầm tím ngoài da Phù nhẹ ở chân Thỉnh thoảng có cảm giác tức vùng hạ sườn phải Nước tiểu có màu vàng đậm hơn Có thể có chảy máu cam không rõ nguyên do Suy giảm khả năng tình dục, kinh nguyệt không đều Nổi mao mạch hình sao ở lưng, ngực, cổ, bụng",
+        "head": "Nước tiểu có màu vàng đậm hơn",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "xơ gan còn bù",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tuy nhiên, người bệnh có thể cảm thấy các bất thường như:  Chán ăn, ăn không ngon Mệt mỏi, không tỉnh táo Ngứa ngáy, bầm tím ngoài da Phù nhẹ ở chân Thỉnh thoảng có cảm giác tức vùng hạ sườn phải Nước tiểu có màu vàng đậm hơn Có thể có chảy máu cam không rõ nguyên do Suy giảm khả năng tình dục, kinh nguyệt không đều Nổi mao mạch hình sao ở lưng, ngực, cổ, bụng",
+        "head": "chảy máu cam không rõ nguyên do",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "xơ gan còn bù",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tuy nhiên, người bệnh có thể cảm thấy các bất thường như:  Chán ăn, ăn không ngon Mệt mỏi, không tỉnh táo Ngứa ngáy, bầm tím ngoài da Phù nhẹ ở chân Thỉnh thoảng có cảm giác tức vùng hạ sườn phải Nước tiểu có màu vàng đậm hơn Có thể có chảy máu cam không rõ nguyên do Suy giảm khả năng tình dục, kinh nguyệt không đều Nổi mao mạch hình sao ở lưng, ngực, cổ, bụng",
+        "head": "Suy giảm khả năng tình dục",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "xơ gan còn bù",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tuy nhiên, người bệnh có thể cảm thấy các bất thường như:  Chán ăn, ăn không ngon Mệt mỏi, không tỉnh táo Ngứa ngáy, bầm tím ngoài da Phù nhẹ ở chân Thỉnh thoảng có cảm giác tức vùng hạ sườn phải Nước tiểu có màu vàng đậm hơn Có thể có chảy máu cam không rõ nguyên do Suy giảm khả năng tình dục, kinh nguyệt không đều Nổi mao mạch hình sao ở lưng, ngực, cổ, bụng",
+        "head": "kinh nguyệt không đều",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "xơ gan còn bù",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tuy nhiên, người bệnh có thể cảm thấy các bất thường như:  Chán ăn, ăn không ngon Mệt mỏi, không tỉnh táo Ngứa ngáy, bầm tím ngoài da Phù nhẹ ở chân Thỉnh thoảng có cảm giác tức vùng hạ sườn phải Nước tiểu có màu vàng đậm hơn Có thể có chảy máu cam không rõ nguyên do Suy giảm khả năng tình dục, kinh nguyệt không đều Nổi mao mạch hình sao ở lưng, ngực, cổ, bụng",
+        "head": "Nổi mao mạch hình sao ở lưng, ngực, cổ, bụng",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "xơ gan còn bù",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Xơ gan mất bù hoặc còn bù đều có thể dẫn đến ung thư gan nếu không xử lý đúng cách.",
+        "head": "xơ gan mất bù",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "ung thư gan",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Xơ gan mất bù hoặc còn bù đều có thể dẫn đến ung thư gan nếu không xử lý đúng cách.",
+        "head": "xơ gan còn bù",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "ung thư gan",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Thêm vào đó bệnh xơ gan chỉ có thể được chữa khỏi hoàn toàn khi ở giai đoạn đầu.",
+        "head": "xơ gan",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "chữa khỏi hoàn toàn",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Có không ít nguyên nhân có thể dẫn tới tình trạng xơ gan còn bù. Trong số đó những người gặp phải các vấn đề về sức khỏe dưới đây có thể làm tăng nguy cơ khởi phát bệnh:  Có bệnh nền là viêm gan virus B, viêm gan virus C, viêm gan virus D chưa được kiểm soát tốt Người mắc bệnh gan nhiễm mỡ Người bị thừa cân, béo phì Người hay lạm dụng rượu bia Có chế độ ăn uống không đủ chất, quá nhiều thực phẩm chiên rán… ảnh hưởng đến chức năng hoạt động của gan Thường xuyên tiếp xúc với các chất độc hại như thạch tín, asen,…thúc đẩy quá trình phát triển xơ gan Tiền sử gia đình có người mắc các bệnh lý về gan (2)",
+        "head": "Viêm gan virus B",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Xơ gan còn bù",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Có không ít nguyên nhân có thể dẫn tới tình trạng xơ gan còn bù. Trong số đó những người gặp phải các vấn đề về sức khỏe dưới đây có thể làm tăng nguy cơ khởi phát bệnh:  Có bệnh nền là viêm gan virus B, viêm gan virus C, viêm gan virus D chưa được kiểm soát tốt Người mắc bệnh gan nhiễm mỡ Người bị thừa cân, béo phì Người hay lạm dụng rượu bia Có chế độ ăn uống không đủ chất, quá nhiều thực phẩm chiên rán… ảnh hưởng đến chức năng hoạt động của gan Thường xuyên tiếp xúc với các chất độc hại như thạch tín, asen,…thúc đẩy quá trình phát triển xơ gan Tiền sử gia đình có người mắc các bệnh lý về gan (2)",
+        "head": "Viêm gan virus C",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Xơ gan còn bù",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Có không ít nguyên nhân có thể dẫn tới tình trạng xơ gan còn bù. Trong số đó những người gặp phải các vấn đề về sức khỏe dưới đây có thể làm tăng nguy cơ khởi phát bệnh:  Có bệnh nền là viêm gan virus B, viêm gan virus C, viêm gan virus D chưa được kiểm soát tốt Người mắc bệnh gan nhiễm mỡ Người bị thừa cân, béo phì Người hay lạm dụng rượu bia Có chế độ ăn uống không đủ chất, quá nhiều thực phẩm chiên rán… ảnh hưởng đến chức năng hoạt động của gan Thường xuyên tiếp xúc với các chất độc hại như thạch tín, asen,…thúc đẩy quá trình phát triển xơ gan Tiền sử gia đình có người mắc các bệnh lý về gan (2)",
+        "head": "Viêm gan virus D",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Xơ gan còn bù",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Có không ít nguyên nhân có thể dẫn tới tình trạng xơ gan còn bù. Trong số đó những người gặp phải các vấn đề về sức khỏe dưới đây có thể làm tăng nguy cơ khởi phát bệnh:  Có bệnh nền là viêm gan virus B, viêm gan virus C, viêm gan virus D chưa được kiểm soát tốt Người mắc bệnh gan nhiễm mỡ Người bị thừa cân, béo phì Người hay lạm dụng rượu bia Có chế độ ăn uống không đủ chất, quá nhiều thực phẩm chiên rán… ảnh hưởng đến chức năng hoạt động của gan Thường xuyên tiếp xúc với các chất độc hại như thạch tín, asen,…thúc đẩy quá trình phát triển xơ gan Tiền sử gia đình có người mắc các bệnh lý về gan (2)",
+        "head": "Bệnh gan nhiễm mỡ",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Xơ gan còn bù",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Có không ít nguyên nhân có thể dẫn tới tình trạng xơ gan còn bù. Trong số đó những người gặp phải các vấn đề về sức khỏe dưới đây có thể làm tăng nguy cơ khởi phát bệnh:  Có bệnh nền là viêm gan virus B, viêm gan virus C, viêm gan virus D chưa được kiểm soát tốt Người mắc bệnh gan nhiễm mỡ Người bị thừa cân, béo phì Người hay lạm dụng rượu bia Có chế độ ăn uống không đủ chất, quá nhiều thực phẩm chiên rán… ảnh hưởng đến chức năng hoạt động của gan Thường xuyên tiếp xúc với các chất độc hại như thạch tín, asen,…thúc đẩy quá trình phát triển xơ gan Tiền sử gia đình có người mắc các bệnh lý về gan (2)",
+        "head": "Thừa cân",
+        "head_type": "lifestyle",
+        "relation": "causedBy",
+        "tail": "Xơ gan còn bù",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Có không ít nguyên nhân có thể dẫn tới tình trạng xơ gan còn bù. Trong số đó những người gặp phải các vấn đề về sức khỏe dưới đây có thể làm tăng nguy cơ khởi phát bệnh:  Có bệnh nền là viêm gan virus B, viêm gan virus C, viêm gan virus D chưa được kiểm soát tốt Người mắc bệnh gan nhiễm mỡ Người bị thừa cân, béo phì Người hay lạm dụng rượu bia Có chế độ ăn uống không đủ chất, quá nhiều thực phẩm chiên rán… ảnh hưởng đến chức năng hoạt động của gan Thường xuyên tiếp xúc với các chất độc hại như thạch tín, asen,…thúc đẩy quá trình phát triển xơ gan Tiền sử gia đình có người mắc các bệnh lý về gan (2)",
+        "head": "Béo phì",
+        "head_type": "lifestyle",
+        "relation": "causedBy",
+        "tail": "Xơ gan còn bù",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Có không ít nguyên nhân có thể dẫn tới tình trạng xơ gan còn bù. Trong số đó những người gặp phải các vấn đề về sức khỏe dưới đây có thể làm tăng nguy cơ khởi phát bệnh:  Có bệnh nền là viêm gan virus B, viêm gan virus C, viêm gan virus D chưa được kiểm soát tốt Người mắc bệnh gan nhiễm mỡ Người bị thừa cân, béo phì Người hay lạm dụng rượu bia Có chế độ ăn uống không đủ chất, quá nhiều thực phẩm chiên rán… ảnh hưởng đến chức năng hoạt động của gan Thường xuyên tiếp xúc với các chất độc hại như thạch tín, asen,…thúc đẩy quá trình phát triển xơ gan Tiền sử gia đình có người mắc các bệnh lý về gan (2)",
+        "head": "Lạm dụng rượu bia",
+        "head_type": "lifestyle",
+        "relation": "causedBy",
+        "tail": "Xơ gan còn bù",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Có không ít nguyên nhân có thể dẫn tới tình trạng xơ gan còn bù. Trong số đó những người gặp phải các vấn đề về sức khỏe dưới đây có thể làm tăng nguy cơ khởi phát bệnh:  Có bệnh nền là viêm gan virus B, viêm gan virus C, viêm gan virus D chưa được kiểm soát tốt Người mắc bệnh gan nhiễm mỡ Người bị thừa cân, béo phì Người hay lạm dụng rượu bia Có chế độ ăn uống không đủ chất, quá nhiều thực phẩm chiên rán… ảnh hưởng đến chức năng hoạt động của gan Thường xuyên tiếp xúc với các chất độc hại như thạch tín, asen,…thúc đẩy quá trình phát triển xơ gan Tiền sử gia đình có người mắc các bệnh lý về gan (2)",
+        "head": "Chế độ ăn uống không đủ chất",
+        "head_type": "lifestyle",
+        "relation": "causedBy",
+        "tail": "Xơ gan còn bù",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Có không ít nguyên nhân có thể dẫn tới tình trạng xơ gan còn bù. Trong số đó những người gặp phải các vấn đề về sức khỏe dưới đây có thể làm tăng nguy cơ khởi phát bệnh:  Có bệnh nền là viêm gan virus B, viêm gan virus C, viêm gan virus D chưa được kiểm soát tốt Người mắc bệnh gan nhiễm mỡ Người bị thừa cân, béo phì Người hay lạm dụng rượu bia Có chế độ ăn uống không đủ chất, quá nhiều thực phẩm chiên rán… ảnh hưởng đến chức năng hoạt động của gan Thường xuyên tiếp xúc với các chất độc hại như thạch tín, asen,…thúc đẩy quá trình phát triển xơ gan Tiền sử gia đình có người mắc các bệnh lý về gan (2)",
+        "head": "Thực phẩm chiên rán",
+        "head_type": "food",
+        "relation": "causedBy",
+        "tail": "Xơ gan còn bù",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Có không ít nguyên nhân có thể dẫn tới tình trạng xơ gan còn bù. Trong số đó những người gặp phải các vấn đề về sức khỏe dưới đây có thể làm tăng nguy cơ khởi phát bệnh:  Có bệnh nền là viêm gan virus B, viêm gan virus C, viêm gan virus D chưa được kiểm soát tốt Người mắc bệnh gan nhiễm mỡ Người bị thừa cân, béo phì Người hay lạm dụng rượu bia Có chế độ ăn uống không đủ chất, quá nhiều thực phẩm chiên rán… ảnh hưởng đến chức năng hoạt động của gan Thường xuyên tiếp xúc với các chất độc hại như thạch tín, asen,…thúc đẩy quá trình phát triển xơ gan Tiền sử gia đình có người mắc các bệnh lý về gan (2)",
+        "head": "Chất độc hại",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Xơ gan còn bù",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Có không ít nguyên nhân có thể dẫn tới tình trạng xơ gan còn bù. Trong số đó những người gặp phải các vấn đề về sức khỏe dưới đây có thể làm tăng nguy cơ khởi phát bệnh:  Có bệnh nền là viêm gan virus B, viêm gan virus C, viêm gan virus D chưa được kiểm soát tốt Người mắc bệnh gan nhiễm mỡ Người bị thừa cân, béo phì Người hay lạm dụng rượu bia Có chế độ ăn uống không đủ chất, quá nhiều thực phẩm chiên rán… ảnh hưởng đến chức năng hoạt động của gan Thường xuyên tiếp xúc với các chất độc hại như thạch tín, asen,…thúc đẩy quá trình phát triển xơ gan Tiền sử gia đình có người mắc các bệnh lý về gan (2)",
+        "head": "Tiền sử gia đình có người mắc các bệnh lý về gan",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Xơ gan còn bù",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Lạm dụng bia rượu là một trong những lý do gây xơ gan còn bù",
+        "head": "Lạm dụng bia rượu",
+        "head_type": "lifestyle",
+        "relation": "causedBy",
+        "tail": "Xơ gan còn bù",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Xơ gan giai đoạn còn bù thường không có triệu chứng rõ rệt.",
+        "head": "Xơ gan còn bù",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Không có triệu chứng rõ rệt",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Do đó ở giai đoạn này muốn phát hiện bệnh thì bên cạnh việc chẩn đoán lâm sàng, bác sĩ sẽ chỉ định thực hiện một số xét nghiệm cần thiết như: Xét nghiệm hoá sinh nhằm mục đích kiểm tra các chỉ số albumin, đông máu , bilirrubin, men gan, …, từ đó chẩn đoán tình hình sức khỏe của gan, xác định người bệnh có mắc xơ gan còn bù hoặc một bệnh lý về gan nào khác không.",
+        "head": "Xét nghiệm hoá sinh",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "Xơ gan còn bù",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Do đó ở giai đoạn này muốn phát hiện bệnh thì bên cạnh việc chẩn đoán lâm sàng, bác sĩ sẽ chỉ định thực hiện một số xét nghiệm cần thiết như: Xét nghiệm hoá sinh nhằm mục đích kiểm tra các chỉ số albumin, đông máu , bilirrubin, men gan, …, từ đó chẩn đoán tình hình sức khỏe của gan, xác định người bệnh có mắc xơ gan còn bù hoặc một bệnh lý về gan nào khác không.",
+        "head": "Xét nghiệm hoá sinh",
+        "head_type": "test",
+        "relation": "affects",
+        "tail": "Gan",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Khi gan bị xơ hóa và xơ gan sẽ cứng hơn không còn mềm mại như bình thường. Đo đàn hồi hay xơ hóa của gan giúp phát hiện xơ gan còn bù.",
+        "head": "Đo đàn hồi hay xơ hóa của gan",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "Xơ gan còn bù",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi gan bị xơ hóa và xơ gan sẽ cứng hơn không còn mềm mại như bình thường. Đo đàn hồi hay xơ hóa của gan giúp phát hiện xơ gan còn bù.",
+        "head": "Đo đàn hồi hay xơ hóa của gan",
+        "head_type": "test",
+        "relation": "affects",
+        "tail": "Gan",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Siêu âm gan cho biết hình ảnh gián tiếp của gan như: bờ gan không đều, tĩnh mạch cử gián, lách to…. Ngoài ra siêu âm gan còn giúp phát hiện khối u gan do ung thư gan ở bệnh nhân xơ gan.",
+        "head": "Siêu âm gan",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "Xơ gan còn bù",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Siêu âm gan cho biết hình ảnh gián tiếp của gan như: bờ gan không đều, tĩnh mạch cử gián, lách to…. Ngoài ra siêu âm gan còn giúp phát hiện khối u gan do ung thư gan ở bệnh nhân xơ gan.",
+        "head": "Siêu âm gan",
+        "head_type": "test",
+        "relation": "affects",
+        "tail": "Gan",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Siêu âm gan cho biết hình ảnh gián tiếp của gan như: bờ gan không đều, tĩnh mạch cử gián, lách to…. Ngoài ra siêu âm gan còn giúp phát hiện khối u gan do ung thư gan ở bệnh nhân xơ gan.",
+        "head": "Siêu âm gan",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "Ung thư gan",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Cách chẩn đoán xơ gan còn bù này thực hiện bằng cách lấy một vài mẫu mô nhỏ từ nhu mô gan để làm các xét nghiệm.",
+        "head": "Xơ gan còn bù",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "Lấy mẫu mô nhỏ từ nhu mô gan",
+        "tail_type": "test"
+    },
+    {
+        "text": "Cách chẩn đoán xơ gan còn bù này thực hiện bằng cách lấy một vài mẫu mô nhỏ từ nhu mô gan để làm các xét nghiệm.",
+        "head": "Lấy mẫu mô nhỏ từ nhu mô gan",
+        "head_type": "test",
+        "relation": "affects",
+        "tail": "Gan",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Xơ gan được xem là giai đoạn cuối của các bệnh gan mạn tính.",
+        "head": "Xơ gan",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "Bệnh gan mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Xơ gan được xem là giai đoạn cuối của các bệnh gan mạn tính. Vì lý do này nên cho dù có là tình trạng xơ gan còn bù thì người bệnh vẫn không nên chủ quan.",
+        "head": "Xơ gan còn bù",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "Xơ gan",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Phần lớn trường hợp bệnh không có biến chứng.",
+        "head": "Xơ gan còn bù",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Không có biến chứng",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Tuy nhiên, nếu để bệnh tiến triển sang giai đoạn sau - xơ gan mất bù - thì có thể xảy ra các vấn đề sức khỏe nghiêm trọng như cổ trướng, vàng da, xuất huyết tiêu hóa do vỡ giãn tĩnh mạch thực quản, dạ dày hoặc bệnh não gan.",
+        "head": "Xơ gan mất bù",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "Xơ gan còn bù",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tuy nhiên, nếu để bệnh tiến triển sang giai đoạn sau - xơ gan mất bù - thì có thể xảy ra các vấn đề sức khỏe nghiêm trọng như cổ trướng, vàng da, xuất huyết tiêu hóa do vỡ giãn tĩnh mạch thực quản, dạ dày hoặc bệnh não gan.",
+        "head": "Cổ trướng",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Xơ gan mất bù",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tuy nhiên, nếu để bệnh tiến triển sang giai đoạn sau - xơ gan mất bù - thì có thể xảy ra các vấn đề sức khỏe nghiêm trọng như cổ trướng, vàng da, xuất huyết tiêu hóa do vỡ giãn tĩnh mạch thực quản, dạ dày hoặc bệnh não gan.",
+        "head": "Vàng da",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Xơ gan mất bù",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tuy nhiên, nếu để bệnh tiến triển sang giai đoạn sau - xơ gan mất bù - thì có thể xảy ra các vấn đề sức khỏe nghiêm trọng như cổ trướng, vàng da, xuất huyết tiêu hóa do vỡ giãn tĩnh mạch thực quản, dạ dày hoặc bệnh não gan.",
+        "head": "Xuất huyết tiêu hóa",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Xơ gan mất bù",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tuy nhiên, nếu để bệnh tiến triển sang giai đoạn sau - xơ gan mất bù - thì có thể xảy ra các vấn đề sức khỏe nghiêm trọng như cổ trướng, vàng da, xuất huyết tiêu hóa do vỡ giãn tĩnh mạch thực quản, dạ dày hoặc bệnh não gan.",
+        "head": "Vỡ giãn tĩnh mạch thực quản",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Xơ gan mất bù",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bệnh xơ gan còn bù có thể điều trị được.",
+        "head": "Bệnh xơ gan còn bù",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "Điều trị",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Dựa vào kết quả xét nghiệm có thể biết được mức độ tiến triển của bệnh xơ gan qua các giai đoạn, từ đó có hướng điều trị thích hợp.",
+        "head": "Bệnh xơ gan",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "Xét nghiệm",
+        "tail_type": "test"
+    },
+    {
+        "text": "Điều trị xơ gan còn bù cũng là cách phòng ngừa bệnh chuyển sang tình trạng xơ gan mất bù.",
+        "head": "Điều trị xơ gan còn bù",
+        "head_type": "treatment",
+        "relation": "preventedBy",
+        "tail": "Xơ gan mất bù",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Và trong bất kỳ một bệnh lý nào, tuân thủ chỉ định của bác sĩ luôn là ưu tiên hàng đầu.",
+        "head": "Bệnh lý",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "Chỉ định của bác sĩ",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Các phương pháp nội khoa là cách điều trị chủ yếu cho người bệnh viêm gan còn bù, bao gồm như: điều trị nguyên nhân nếu viêm gan virus B, C, D, loại bỏ tác nhân gây hại gan (rượu, thuốc lá, các chất độc hại,&#8230;); xây dựng chế độ ăn uống, nghỉ ngơi lành mạnh, đủ dưỡng chất, hạn chế muối.",
+        "head": "Phương pháp nội khoa",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Viêm gan còn bù",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các phương pháp nội khoa là cách điều trị chủ yếu cho người bệnh viêm gan còn bù, bao gồm như: điều trị nguyên nhân nếu viêm gan virus B, C, D, loại bỏ tác nhân gây hại gan (rượu, thuốc lá, các chất độc hại,&#8230;); xây dựng chế độ ăn uống, nghỉ ngơi lành mạnh, đủ dưỡng chất, hạn chế muối.",
+        "head": "Viêm gan virus B, C, D",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Rượu, thuốc lá, các chất độc hại",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Các phương pháp nội khoa là cách điều trị chủ yếu cho người bệnh viêm gan còn bù, bao gồm như: điều trị nguyên nhân nếu viêm gan virus B, C, D, loại bỏ tác nhân gây hại gan (rượu, thuốc lá, các chất độc hại,&#8230;); xây dựng chế độ ăn uống, nghỉ ngơi lành mạnh, đủ dưỡng chất, hạn chế muối.",
+        "head": "Viêm gan còn bù",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "Chế độ ăn uống, nghỉ ngơi lành mạnh, đủ dưỡng chất, hạn chế muối",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Ngoài ra có một số loại thuốc có thể sử dụng khi bệnh ở giai đoạn đầu như thuốc lợi tiểu, thuốc chống táo bón hoặc các loại thuốc chống xơ như corticoids, colchicine,…(3)",
+        "head": "Thuốc lợi tiểu, thuốc chống táo bón, corticoids, colchicine",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Bệnh ở giai đoạn đầu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Việc phòng ngừa xơ gan còn bù cần dựa vào việc thay đổi lối sống, kiểm soát các bệnh nền cũng như tuân thủ theo điều trị từ bác sĩ.",
+        "head": "Xơ gan còn bù",
+        "head_type": "disease",
+        "relation": "preventedBy",
+        "tail": "Thay đổi lối sống, kiểm soát các bệnh nền, tuân thủ theo điều trị từ bác sĩ",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Để bệnh không tiến triển nặng hơn, người bệnh cần lưu ý một số điều quan trọng như:  Kiêng hoàn toàn chuyện sử dụng bia rượu hay đồ uống có cồn Quản lý cân nặng; giảm cân nếu đang thừa cân/ béo phì Cân nhắc việc dùng thuốc để tránh làm nhiễm độc gan do thuốc Tránh dùng thuốc chống viêm không steroid Kiểm soát điều trị đái tháo đường, rối loạn lipid máu Điều trị căn nguyên của bệnh gan Xây dựng chế độ ăn uống giàu rau xanh và trái cây; giảm lượng chất báo và các nguồn protein nạc Tiêm chủng đầy đủ để hạn chế nguy cơ tổn thương gan cấp tính do virus Tầm soát ung thư biểu mô tế bào gan",
+        "head": "Bệnh",
+        "head_type": "disease",
+        "relation": "aggravatedBy",
+        "tail": "Bia rượu, đồ uống có cồn",
+        "tail_type": "food"
+    },
+    {
+        "text": "Để bệnh không tiến triển nặng hơn, người bệnh cần lưu ý một số điều quan trọng như:  Kiêng hoàn toàn chuyện sử dụng bia rượu hay đồ uống có cồn Quản lý cân nặng; giảm cân nếu đang thừa cân/ béo phì Cân nhắc việc dùng thuốc để tránh làm nhiễm độc gan do thuốc Tránh dùng thuốc chống viêm không steroid Kiểm soát điều trị đái tháo đường, rối loạn lipid máu Điều trị căn nguyên của bệnh gan Xây dựng chế độ ăn uống giàu rau xanh và trái cây; giảm lượng chất báo và các nguồn protein nạc Tiêm chủng đầy đủ để hạn chế nguy cơ tổn thương gan cấp tính do virus Tầm soát ung thư biểu mô tế bào gan",
+        "head": "Bệnh",
+        "head_type": "disease",
+        "relation": "aggravatedBy",
+        "tail": "Thuốc",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Để bệnh không tiến triển nặng hơn, người bệnh cần lưu ý một số điều quan trọng như:  Kiêng hoàn toàn chuyện sử dụng bia rượu hay đồ uống có cồn Quản lý cân nặng; giảm cân nếu đang thừa cân/ béo phì Cân nhắc việc dùng thuốc để tránh làm nhiễm độc gan do thuốc Tránh dùng thuốc chống viêm không steroid Kiểm soát điều trị đái tháo đường, rối loạn lipid máu Điều trị căn nguyên của bệnh gan Xây dựng chế độ ăn uống giàu rau xanh và trái cây; giảm lượng chất báo và các nguồn protein nạc Tiêm chủng đầy đủ để hạn chế nguy cơ tổn thương gan cấp tính do virus Tầm soát ung thư biểu mô tế bào gan",
+        "head": "Bệnh",
+        "head_type": "disease",
+        "relation": "aggravatedBy",
+        "tail": "Thuốc chống viêm không steroid",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Để bệnh không tiến triển nặng hơn, người bệnh cần lưu ý một số điều quan trọng như:  Kiêng hoàn toàn chuyện sử dụng bia rượu hay đồ uống có cồn Quản lý cân nặng; giảm cân nếu đang thừa cân/ béo phì Cân nhắc việc dùng thuốc để tránh làm nhiễm độc gan do thuốc Tránh dùng thuốc chống viêm không steroid Kiểm soát điều trị đái tháo đường, rối loạn lipid máu Điều trị căn nguyên của bệnh gan Xây dựng chế độ ăn uống giàu rau xanh và trái cây; giảm lượng chất báo và các nguồn protein nạc Tiêm chủng đầy đủ để hạn chế nguy cơ tổn thương gan cấp tính do virus Tầm soát ung thư biểu mô tế bào gan",
+        "head": "Bệnh",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "Điều trị đái tháo đường, rối loạn lipid máu",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Để bệnh không tiến triển nặng hơn, người bệnh cần lưu ý một số điều quan trọng như:  Kiêng hoàn toàn chuyện sử dụng bia rượu hay đồ uống có cồn Quản lý cân nặng; giảm cân nếu đang thừa cân/ béo phì Cân nhắc việc dùng thuốc để tránh làm nhiễm độc gan do thuốc Tránh dùng thuốc chống viêm không steroid Kiểm soát điều trị đái tháo đường, rối loạn lipid máu Điều trị căn nguyên của bệnh gan Xây dựng chế độ ăn uống giàu rau xanh và trái cây; giảm lượng chất báo và các nguồn protein nạc Tiêm chủng đầy đủ để hạn chế nguy cơ tổn thương gan cấp tính do virus Tầm soát ung thư biểu mô tế bào gan",
+        "head": "Bệnh",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "Điều trị căn nguyên của bệnh gan",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Để bệnh không tiến triển nặng hơn, người bệnh cần lưu ý một số điều quan trọng như:  Kiêng hoàn toàn chuyện sử dụng bia rượu hay đồ uống có cồn Quản lý cân nặng; giảm cân nếu đang thừa cân/ béo phì Cân nhắc việc dùng thuốc để tránh làm nhiễm độc gan do thuốc Tránh dùng thuốc chống viêm không steroid Kiểm soát điều trị đái tháo đường, rối loạn lipid máu Điều trị căn nguyên của bệnh gan Xây dựng chế độ ăn uống giàu rau xanh và trái cây; giảm lượng chất báo và các nguồn protein nạc Tiêm chủng đầy đủ để hạn chế nguy cơ tổn thương gan cấp tính do virus Tầm soát ung thư biểu mô tế bào gan",
+        "head": "Bệnh",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "Chế độ ăn uống giàu rau xanh và trái cây; giảm lượng chất báo và các nguồn protein nạc",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Để bệnh không tiến triển nặng hơn, người bệnh cần lưu ý một số điều quan trọng như:  Kiêng hoàn toàn chuyện sử dụng bia rượu hay đồ uống có cồn Quản lý cân nặng; giảm cân nếu đang thừa cân/ béo phì Cân nhắc việc dùng thuốc để tránh làm nhiễm độc gan do thuốc Tránh dùng thuốc chống viêm không steroid Kiểm soát điều trị đái tháo đường, rối loạn lipid máu Điều trị căn nguyên của bệnh gan Xây dựng chế độ ăn uống giàu rau xanh và trái cây; giảm lượng chất báo và các nguồn protein nạc Tiêm chủng đầy đủ để hạn chế nguy cơ tổn thương gan cấp tính do virus Tầm soát ung thư biểu mô tế bào gan",
+        "head": "Bệnh",
+        "head_type": "disease",
+        "relation": "preventedBy",
+        "tail": "Tiêm chủng đầy đủ",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Để bệnh không tiến triển nặng hơn, người bệnh cần lưu ý một số điều quan trọng như:  Kiêng hoàn toàn chuyện sử dụng bia rượu hay đồ uống có cồn Quản lý cân nặng; giảm cân nếu đang thừa cân/ béo phì Cân nhắc việc dùng thuốc để tránh làm nhiễm độc gan do thuốc Tránh dùng thuốc chống viêm không steroid Kiểm soát điều trị đái tháo đường, rối loạn lipid máu Điều trị căn nguyên của bệnh gan Xây dựng chế độ ăn uống giàu rau xanh và trái cây; giảm lượng chất báo và các nguồn protein nạc Tiêm chủng đầy đủ để hạn chế nguy cơ tổn thương gan cấp tính do virus Tầm soát ung thư biểu mô tế bào gan",
+        "head": "Bệnh",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "Tầm soát ung thư biểu mô tế bào gan",
+        "tail_type": "test"
+    },
+    {
+        "text": "Rau củ quả là thành phần không nên bỏ qua trong chế độ ăn cho người bị viêm gan",
+        "head": "Rau củ quả",
+        "head_type": "food",
+        "relation": "treatedBy",
+        "tail": "Viêm gan",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Là giai đoạn “đứng trước” nên xơ gan còn bù sẽ ít nguy hiểm hơn so với xơ gan mất bù; tuy nhiên cả 2 đều có nguy cơ trở thành ung thư gan.",
+        "head": "Xơ gan còn bù",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "Ung thư gan",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Là giai đoạn “đứng trước” nên xơ gan còn bù sẽ ít nguy hiểm hơn so với xơ gan mất bù; tuy nhiên cả 2 đều có nguy cơ trở thành ung thư gan.",
+        "head": "Xơ gan mất bù",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "Ung thư gan",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Người bệnh thường không có triệu chứng và có thời gian sống thêm trung bình từ 12 năm trở lên.",
+        "head": "Xơ gan còn bù",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Không có triệu chứng",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Trong khi đó xơ gan mất bù có nguy cơ biến chứng không nhỏ - một khi đã có ít nhất 1 biến chứng thì thời gian sống còn lại sẽ giảm mạnh xuống trung bình là 2- 5 năm.",
+        "head": "Xơ gan mất bù",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Biến chứng",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Khi được điều trị bệnh nhân có thời sống kéo dài rất nhiều",
+        "head": "Bệnh nhân",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "Điều trị",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Trung tâm Nội soi và Phẫu thuật nội soi tiêu hóa (BVĐK Tâm Anh TP.HCM) và Khoa Tiêu hóa - Gan mật - Tụy (BVĐK Tâm Anh Hà Nội) là những trung tâm y tế chuyên khoa Tiêu hóa uy tín, cung cấp dịch vụ thăm khám và điều trị cao cấp, hiệu quả cho các bệnh nhân mắc các vấn đề về gan từ nhẹ đến nặng (Viêm gan virus mạn tính, gan nhiễm mỡ, viêm gan cấp tính, bệnh gan mạn tính xơ gan, ung thư gan…).",
+        "head": "Trung tâm Nội soi và Phẫu thuật nội soi tiêu hóa (BVĐK Tâm Anh TP.HCM) và Khoa Tiêu hóa - Gan mật - Tụy (BVĐK Tâm Anh Hà Nội)",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Các vấn đề về gan từ nhẹ đến nặng (Viêm gan virus mạn tính, gan nhiễm mỡ, viêm gan cấp tính, bệnh gan mạn tính xơ gan, ung thư gan…)",
+        "tail_type": "disease"
+    }
+]

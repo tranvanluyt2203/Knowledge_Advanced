@@ -1,0 +1,1034 @@
+[
+    {
+        "text": "Tiền tiểu đường có thể tiến triển thành đái tháo đường tuýp 2 nếu không điều chỉnh chế độ ăn uống, sinh hoạt lành mạnh.",
+        "head": "Tiền tiểu đường",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "Đái tháo đường tuýp 2",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tiền tiểu đường có thể tiến triển thành đái tháo đường tuýp 2 nếu không điều chỉnh chế độ ăn uống, sinh hoạt lành mạnh.",
+        "head": "Chế độ ăn uống",
+        "head_type": "lifestyle",
+        "relation": "preventedBy",
+        "tail": "Đái tháo đường tuýp 2",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tiền tiểu đường có thể tiến triển thành đái tháo đường tuýp 2 nếu không điều chỉnh chế độ ăn uống, sinh hoạt lành mạnh.",
+        "head": "Sinh hoạt lành mạnh",
+        "head_type": "lifestyle",
+        "relation": "preventedBy",
+        "tail": "Đái tháo đường tuýp 2",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Người dân cần đi khám sức khỏe định kỳ để phát hiện bệnh sớm và đẩy lùi tiền tiểu đường cũng như đái tháo đường tuýp 2.",
+        "head": "Khám sức khỏe định kỳ",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "Tiền tiểu đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Người dân cần đi khám sức khỏe định kỳ để phát hiện bệnh sớm và đẩy lùi tiền tiểu đường cũng như đái tháo đường tuýp 2.",
+        "head": "Khám sức khỏe định kỳ",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "Đái tháo đường tuýp 2",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tiền tiểu đường là tình trạng đường trong máu cao hơn bình thường (ở người bình thường, mức đường huyết trước khi ăn dao động 90-130mg/dl và sau khi ăn dưới 180 mg/dl) nhưng chưa đủ cao để bác sĩ chẩn đoán bệnh đái tháo đường tuýp 2.",
+        "head": "Tiền tiểu đường",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Đường huyết cao",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Tiền tiểu đường là tình trạng đường trong máu cao hơn bình thường (ở người bình thường, mức đường huyết trước khi ăn dao động 90-130mg/dl và sau khi ăn dưới 180 mg/dl) nhưng chưa đủ cao để bác sĩ chẩn đoán bệnh đái tháo đường tuýp 2.",
+        "head": "Đường huyết",
+        "head_type": "symptom",
+        "relation": "relatedTo",
+        "tail": "Tiền tiểu đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tiền tiểu đường là tình trạng đường trong máu cao hơn bình thường (ở người bình thường, mức đường huyết trước khi ăn dao động 90-130mg/dl và sau khi ăn dưới 180 mg/dl) nhưng chưa đủ cao để bác sĩ chẩn đoán bệnh đái tháo đường tuýp 2.",
+        "head": "Đường huyết",
+        "head_type": "symptom",
+        "relation": "relatedTo",
+        "tail": "Đái tháo đường tuýp 2",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Hiện Việt Nam có khoảng 5,3 triệu người bị tiền đái tháo đường và dự kiến 2/3 số này (chiếm 70%) sẽ chuyển thành đái tháo đường vào năm 2045.",
+        "head": "Tiền đái tháo đường",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "Đái tháo đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tiền tiểu đường không ảnh hưởng lớn đến sức khỏe; tuy nhiên, nếu không thay đổi lối sống, người lớn và trẻ em bị tiền tiểu đường có nguy cơ cao bị bệnh đái tháo đường tuýp 2.",
+        "head": "Tiền tiểu đường",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "Đái tháo đường tuýp 2",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tiền tiểu đường không ảnh hưởng lớn đến sức khỏe; tuy nhiên, nếu không thay đổi lối sống, người lớn và trẻ em bị tiền tiểu đường có nguy cơ cao bị bệnh đái tháo đường tuýp 2.",
+        "head": "Thay đổi lối sống",
+        "head_type": "lifestyle",
+        "relation": "preventedBy",
+        "tail": "Đái tháo đường tuýp 2",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Lúc đó, bệnh ảnh hưởng nặng nề đến tim, mạch máu, mắt, thận.",
+        "head": "Đái tháo đường tuýp 2",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Tim",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Lúc đó, bệnh ảnh hưởng nặng nề đến tim, mạch máu, mắt, thận.",
+        "head": "Đái tháo đường tuýp 2",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Mạch máu",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Lúc đó, bệnh ảnh hưởng nặng nề đến tim, mạch máu, mắt, thận.",
+        "head": "Đái tháo đường tuýp 2",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Mắt",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Lúc đó, bệnh ảnh hưởng nặng nề đến tim, mạch máu, mắt, thận.",
+        "head": "Đái tháo đường tuýp 2",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Thận",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Phát hiện ra giai đoạn tiền tiểu đường cũng là cơ hội giúp bạn điều chỉnh lối sống, cải thiện sức khỏe kịp thời để ngăn chặn bệnh tiến triển thành đái tháo đường.",
+        "head": "Tiền tiểu đường",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "Đái tháo đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Phát hiện ra giai đoạn tiền tiểu đường cũng là cơ hội giúp bạn điều chỉnh lối sống, cải thiện sức khỏe kịp thời để ngăn chặn bệnh tiến triển thành đái tháo đường.",
+        "head": "Thay đổi lối sống",
+        "head_type": "lifestyle",
+        "relation": "preventedBy",
+        "tail": "Đái tháo đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tiền đái tháo đường thường không có triệu chứng.",
+        "head": "Tiền đái tháo đường",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Không có triệu chứng",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Ở một số người, tiền đái tháo đường thể hiện qua các dấu hiệu:\nVùng da ở một số bộ phận trên cơ thể như: cổ, nách, bẹn bị sẫm màu.",
+        "head": "Da sẫm màu",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Tiền đái tháo đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ở một số người, tiền đái tháo đường thể hiện qua các dấu hiệu:\nUống nhiều nước, đi tiểu nhiều lần trong ngày.",
+        "head": "Uống nhiều nước",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Tiền đái tháo đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ở một số người, tiền đái tháo đường thể hiện qua các dấu hiệu:\nUống nhiều nước, đi tiểu nhiều lần trong ngày.",
+        "head": "Đi tiểu nhiều lần",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Tiền đái tháo đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ở một số người, tiền đái tháo đường thể hiện qua các dấu hiệu:\nTầm nhìn mờ dần hoặc hạn chế.",
+        "head": "Tầm nhìn mờ",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Tiền đái tháo đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ở một số người, tiền đái tháo đường thể hiện qua các dấu hiệu:\nCơ thể thường xuyên mệt mỏi, khó tập trung nhưng không rõ nguyên nhân.",
+        "head": "Mệt mỏi",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Tiền đái tháo đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ở một số người, tiền đái tháo đường thể hiện qua các dấu hiệu:\nCơ thể thường xuyên mệt mỏi, khó tập trung nhưng không rõ nguyên nhân.",
+        "head": "Khó tập trung",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Tiền đái tháo đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các dấu hiệu của tiền đái tháo đường thường dễ nhầm lẫn với một số tình trạng sức khỏe khác, do đó, người dân nên khám sức khỏe định kỳ để tầm soát, phát hiện sớm bệnh, từ đó điều chỉnh chế độ sinh hoạt, ăn uống, vận động phù hợp.",
+        "head": "Khám sức khỏe định kỳ",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "Tiền đái tháo đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các dấu hiệu của tiền đái tháo đường thường dễ nhầm lẫn với một số tình trạng sức khỏe khác, do đó, người dân nên khám sức khỏe định kỳ để tầm soát, phát hiện sớm bệnh, từ đó điều chỉnh chế độ sinh hoạt, ăn uống, vận động phù hợp.",
+        "head": "Chế độ sinh hoạt",
+        "head_type": "lifestyle",
+        "relation": "treatedBy",
+        "tail": "Tiền đái tháo đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các dấu hiệu của tiền đái tháo đường thường dễ nhầm lẫn với một số tình trạng sức khỏe khác, do đó, người dân nên khám sức khỏe định kỳ để tầm soát, phát hiện sớm bệnh, từ đó điều chỉnh chế độ sinh hoạt, ăn uống, vận động phù hợp.",
+        "head": "Chế độ ăn uống",
+        "head_type": "lifestyle",
+        "relation": "treatedBy",
+        "tail": "Tiền đái tháo đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Y học hiện đại chưa tìm ra nguyên nhân chính xác của tiền đái tháo đường, tuy nhiên, yếu tố di truyền đóng vai trò quan trọng.",
+        "head": "yếu tố di truyền",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "tiền đái tháo đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Y học hiện đại chưa tìm ra nguyên nhân chính xác của tiền đái tháo đường, tuy nhiên, yếu tố di truyền đóng vai trò quan trọng.",
+        "head": "tiền đái tháo đường",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "yếu tố di truyền",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Một nguyên nhân nữa là do rối loạn chuyển hóa trong cơ thể khiến đường glucose bị “tồn đọng”, không được xử lý đúng cách.",
+        "head": "rối loạn chuyển hóa",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "tiền đái tháo đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Một nguyên nhân nữa là do rối loạn chuyển hóa trong cơ thể khiến đường glucose bị “tồn đọng”, không được xử lý đúng cách.",
+        "head": "tiền đái tháo đường",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "rối loạn chuyển hóa",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Y học có thể lý giải như sau, glucose là nguồn năng lượng chính của cơ thể, được tạo ra từ các thực phẩm mà chúng ta ăn hàng ngày.",
+        "head": "glucose",
+        "head_type": "food",
+        "relation": "relatedTo",
+        "tail": "cơ thể",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Y học có thể lý giải như sau, glucose là nguồn năng lượng chính của cơ thể, được tạo ra từ các thực phẩm mà chúng ta ăn hàng ngày.",
+        "head": "glucose",
+        "head_type": "food",
+        "relation": "relatedTo",
+        "tail": "năng lượng",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Trong quá trình đó, insulin (do tuyến tụy sản xuất) đóng vai trò vận chuyển, giải phóng glucose đến các tế bào.",
+        "head": "insulin",
+        "head_type": "organ",
+        "relation": "locatedIn",
+        "tail": "tuyến tụy",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Trong quá trình đó, insulin (do tuyến tụy sản xuất) đóng vai trò vận chuyển, giải phóng glucose đến các tế bào.",
+        "head": "insulin",
+        "head_type": "organ",
+        "relation": "relatedTo",
+        "tail": "glucose",
+        "tail_type": "food"
+    },
+    {
+        "text": "Trong quá trình đó, insulin (do tuyến tụy sản xuất) đóng vai trò vận chuyển, giải phóng glucose đến các tế bào.",
+        "head": "insulin",
+        "head_type": "organ",
+        "relation": "relatedTo",
+        "tail": "tế bào",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Glucose dư thừa được lưu trữ dưới dạng glycogen ở gan.",
+        "head": "glucose",
+        "head_type": "food",
+        "relation": "relatedTo",
+        "tail": "glycogen",
+        "tail_type": "food"
+    },
+    {
+        "text": "Glucose dư thừa được lưu trữ dưới dạng glycogen ở gan.",
+        "head": "glycogen",
+        "head_type": "food",
+        "relation": "locatedIn",
+        "tail": "gan",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Giữa các bữa ăn hoặc khi đang ngủ, gan chuyển đổi glycogen thành glucose thông qua một quá trình gọi là glycogenesis, giúp cơ thể duy trì lượng đường trong máu lưu thông đều đặn để cung cấp năng lượng cho các tế bào.",
+        "head": "gan",
+        "head_type": "organ",
+        "relation": "relatedTo",
+        "tail": "glycogen",
+        "tail_type": "food"
+    },
+    {
+        "text": "Giữa các bữa ăn hoặc khi đang ngủ, gan chuyển đổi glycogen thành glucose thông qua một quá trình gọi là glycogenesis, giúp cơ thể duy trì lượng đường trong máu lưu thông đều đặn để cung cấp năng lượng cho các tế bào.",
+        "head": "gan",
+        "head_type": "organ",
+        "relation": "relatedTo",
+        "tail": "glucose",
+        "tail_type": "food"
+    },
+    {
+        "text": "Giữa các bữa ăn hoặc khi đang ngủ, gan chuyển đổi glycogen thành glucose thông qua một quá trình gọi là glycogenesis, giúp cơ thể duy trì lượng đường trong máu lưu thông đều đặn để cung cấp năng lượng cho các tế bào.",
+        "head": "glycogenesis",
+        "head_type": "treatment",
+        "relation": "relatedTo",
+        "tail": "glucose",
+        "tail_type": "food"
+    },
+    {
+        "text": "Giữa các bữa ăn hoặc khi đang ngủ, gan chuyển đổi glycogen thành glucose thông qua một quá trình gọi là glycogenesis, giúp cơ thể duy trì lượng đường trong máu lưu thông đều đặn để cung cấp năng lượng cho các tế bào.",
+        "head": "glycogenesis",
+        "head_type": "treatment",
+        "relation": "relatedTo",
+        "tail": "gan",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Giữa các bữa ăn hoặc khi đang ngủ, gan chuyển đổi glycogen thành glucose thông qua một quá trình gọi là glycogenesis, giúp cơ thể duy trì lượng đường trong máu lưu thông đều đặn để cung cấp năng lượng cho các tế bào.",
+        "head": "lượng đường trong máu",
+        "head_type": "symptom",
+        "relation": "relatedTo",
+        "tail": "cơ thể",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Giữa các bữa ăn hoặc khi đang ngủ, gan chuyển đổi glycogen thành glucose thông qua một quá trình gọi là glycogenesis, giúp cơ thể duy trì lượng đường trong máu lưu thông đều đặn để cung cấp năng lượng cho các tế bào.",
+        "head": "lượng đường trong máu",
+        "head_type": "symptom",
+        "relation": "relatedTo",
+        "tail": "năng lượng",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Giữa các bữa ăn hoặc khi đang ngủ, gan chuyển đổi glycogen thành glucose thông qua một quá trình gọi là glycogenesis, giúp cơ thể duy trì lượng đường trong máu lưu thông đều đặn để cung cấp năng lượng cho các tế bào.",
+        "head": "lượng đường trong máu",
+        "head_type": "symptom",
+        "relation": "relatedTo",
+        "tail": "tế bào",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Nếu tuyến tụy không sản xuất đủ insulin, tế bào sử dụng insuline không hiệu quả, việc đưa glucose vào tế bào sẽ bị gián đoạn.",
+        "head": "tuyến tụy",
+        "head_type": "organ",
+        "relation": "relatedTo",
+        "tail": "insulin",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Nếu tuyến tụy không sản xuất đủ insulin, tế bào sử dụng insuline không hiệu quả, việc đưa glucose vào tế bào sẽ bị gián đoạn.",
+        "head": "tế bào",
+        "head_type": "organ",
+        "relation": "relatedTo",
+        "tail": "insulin",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Nếu tuyến tụy không sản xuất đủ insulin, tế bào sử dụng insuline không hiệu quả, việc đưa glucose vào tế bào sẽ bị gián đoạn.",
+        "head": "glucose",
+        "head_type": "food",
+        "relation": "relatedTo",
+        "tail": "tế bào",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Lúc này bạn liên tục đói, khát nước, ăn uống liên tục nhưng cơ thể không có năng lượng cho các hoạt động sống.",
+        "head": "đói",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "tiền đái tháo đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Lúc này bạn liên tục đói, khát nước, ăn uống liên tục nhưng cơ thể không có năng lượng cho các hoạt động sống.",
+        "head": "khát nước",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "tiền đái tháo đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Lúc này bạn liên tục đói, khát nước, ăn uống liên tục nhưng cơ thể không có năng lượng cho các hoạt động sống.",
+        "head": "ăn uống liên tục",
+        "head_type": "lifestyle",
+        "relation": "isSymptomOf",
+        "tail": "tiền đái tháo đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Lúc này bạn liên tục đói, khát nước, ăn uống liên tục nhưng cơ thể không có năng lượng cho các hoạt động sống.",
+        "head": "năng lượng",
+        "head_type": "symptom",
+        "relation": "relatedTo",
+        "tail": "cơ thể",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Ăn nhiều thức ăn ngọt, tinh bột,… dễ bị tiền tiểu đường.",
+        "head": "thức ăn ngọt",
+        "head_type": "food",
+        "relation": "aggravatedBy",
+        "tail": "tiền tiểu đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ăn nhiều thức ăn ngọt, tinh bột,… dễ bị tiền tiểu đường.",
+        "head": "tinh bột",
+        "head_type": "food",
+        "relation": "aggravatedBy",
+        "tail": "tiền tiểu đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ăn nhiều thức ăn ngọt, tinh bột,… dễ bị tiền tiểu đường.",
+        "head": "tiền tiểu đường",
+        "head_type": "disease",
+        "relation": "aggravatedBy",
+        "tail": "thức ăn ngọt",
+        "tail_type": "food"
+    },
+    {
+        "text": "Ăn nhiều thức ăn ngọt, tinh bột,… dễ bị tiền tiểu đường.",
+        "head": "tiền tiểu đường",
+        "head_type": "disease",
+        "relation": "aggravatedBy",
+        "tail": "tinh bột",
+        "tail_type": "food"
+    },
+    {
+        "text": "Ngoài ra, người có các yếu tố dưới dây cũng có nguy cơ bị tiền tiểu đường:",
+        "head": "tiền tiểu đường",
+        "head_type": "disease",
+        "relation": "associatedWith",
+        "tail": "yếu tố",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Sau 45 tuổi.",
+        "head": "tuổi",
+        "head_type": "cause",
+        "relation": "associatedWith",
+        "tail": "tiền tiểu đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Trong gia đình có cha/mẹ hoặc anh/chị/em ruột bị bệnh đái tháo đường tuýp 2.",
+        "head": "bệnh đái tháo đường tuýp 2",
+        "head_type": "disease",
+        "relation": "associatedWith",
+        "tail": "tiền tiểu đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nam giới có vòng eo lớn hơn 101.6 cm và với nữ có vòng eo lớn hơn 88.9 cm.",
+        "head": "vòng eo",
+        "head_type": "symptom",
+        "relation": "associatedWith",
+        "tail": "tiền tiểu đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi vòng eo lớn hơn mức bình thường thì cơ thể đối diện nguy cơ kháng insulin.",
+        "head": "vòng eo",
+        "head_type": "symptom",
+        "relation": "associatedWith",
+        "tail": "kháng insulin",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Sử dụng nhiều thịt đỏ (thịt bò, thịt trâu, thịt bò, thịt cừu, thịt dê, thịt nai…), thức ăn chế biến sẵn, đồ uống có đường.",
+        "head": "thịt đỏ",
+        "head_type": "food",
+        "relation": "aggravatedBy",
+        "tail": "tiền tiểu đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Sử dụng nhiều thịt đỏ (thịt bò, thịt trâu, thịt bò, thịt cừu, thịt dê, thịt nai…), thức ăn chế biến sẵn, đồ uống có đường.",
+        "head": "thức ăn chế biến sẵn",
+        "head_type": "food",
+        "relation": "aggravatedBy",
+        "tail": "tiền tiểu đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Sử dụng nhiều thịt đỏ (thịt bò, thịt trâu, thịt bò, thịt cừu, thịt dê, thịt nai…), thức ăn chế biến sẵn, đồ uống có đường.",
+        "head": "đồ uống có đường",
+        "head_type": "food",
+        "relation": "aggravatedBy",
+        "tail": "tiền tiểu đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ít ăn trái cây, rau xanh, các loại đậu và lười tập thể dục.",
+        "head": "trái cây",
+        "head_type": "food",
+        "relation": "preventedBy",
+        "tail": "tiền tiểu đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ít ăn trái cây, rau xanh, các loại đậu và lười tập thể dục.",
+        "head": "rau xanh",
+        "head_type": "food",
+        "relation": "preventedBy",
+        "tail": "tiền tiểu đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ít ăn trái cây, rau xanh, các loại đậu và lười tập thể dục.",
+        "head": "các loại đậu",
+        "head_type": "food",
+        "relation": "preventedBy",
+        "tail": "tiền tiểu đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ít ăn trái cây, rau xanh, các loại đậu và lười tập thể dục.",
+        "head": "lười tập thể dục",
+        "head_type": "lifestyle",
+        "relation": "aggravatedBy",
+        "tail": "tiền tiểu đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Thừa cân béo phì, đặc biệt bụng mỡ là yếu tố nguy cơ chính của tiền tiểu đường.",
+        "head": "Thừa cân béo phì",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "tiền tiểu đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Thừa cân béo phì, đặc biệt bụng mỡ là yếu tố nguy cơ chính của tiền tiểu đường.",
+        "head": "bụng mỡ",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "tiền tiểu đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Thừa cân béo phì, đặc biệt bụng mỡ là yếu tố nguy cơ chính của tiền tiểu đường.",
+        "head": "tiền tiểu đường",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Thừa cân béo phì",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Thừa cân béo phì, đặc biệt bụng mỡ là yếu tố nguy cơ chính của tiền tiểu đường.",
+        "head": "tiền tiểu đường",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "bụng mỡ",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Nếu vùng giữa cơ và xung quanh bụng có nhiều mô mỡ càng dễ đề kháng insulin.",
+        "head": "mô mỡ",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "kháng insulin",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Cơ thể có cholesterol cao, chất béo trung tính cao, cholesterol HDL thấp và cholesterol LDL cao.",
+        "head": "cholesterol cao",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "tiền tiểu đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Cơ thể có cholesterol cao, chất béo trung tính cao, cholesterol HDL thấp và cholesterol LDL cao.",
+        "head": "chất béo trung tính cao",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "tiền tiểu đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Cơ thể có cholesterol cao, chất béo trung tính cao, cholesterol HDL thấp và cholesterol LDL cao.",
+        "head": "cholesterol HDL thấp",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "tiền tiểu đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Cơ thể có cholesterol cao, chất béo trung tính cao, cholesterol HDL thấp và cholesterol LDL cao.",
+        "head": "cholesterol LDL cao",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "tiền tiểu đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu bị tiểu đường khi đang mang thai (tiểu đường thai kỳ), thai phụ và em bé có nguy cơ bị tiền tiểu đường cao hơn.",
+        "head": "tiểu đường thai kỳ",
+        "head_type": "disease",
+        "relation": "associatedWith",
+        "tail": "tiền tiểu đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Phụ nữ bị hội chứng buồng trứng đa nang thường gặp các vấn đề kinh nguyệt không đều, tóc mọc nhiều và béo phì, các rối loạn chuyển hóa trong cơ thể.",
+        "head": "hội chứng buồng trứng đa nang",
+        "head_type": "disease",
+        "relation": "associatedWith",
+        "tail": "tiền tiểu đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Phụ nữ bị hội chứng buồng trứng đa nang thường gặp các vấn đề kinh nguyệt không đều, tóc mọc nhiều và béo phì, các rối loạn chuyển hóa trong cơ thể.",
+        "head": "kinh nguyệt không đều",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "hội chứng buồng trứng đa nang",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Phụ nữ bị hội chứng buồng trứng đa nang thường gặp các vấn đề kinh nguyệt không đều, tóc mọc nhiều và béo phì, các rối loạn chuyển hóa trong cơ thể.",
+        "head": "tóc mọc nhiều",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "hội chứng buồng trứng đa nang",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Phụ nữ bị hội chứng buồng trứng đa nang thường gặp các vấn đề kinh nguyệt không đều, tóc mọc nhiều và béo phì, các rối loạn chuyển hóa trong cơ thể.",
+        "head": "béo phì",
+        "head_type": "cause",
+        "relation": "isSymptomOf",
+        "tail": "hội chứng buồng trứng đa nang",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Phụ nữ bị hội chứng buồng trứng đa nang thường gặp các vấn đề kinh nguyệt không đều, tóc mọc nhiều và béo phì, các rối loạn chuyển hóa trong cơ thể.",
+        "head": "các rối loạn chuyển hóa",
+        "head_type": "cause",
+        "relation": "isSymptomOf",
+        "tail": "hội chứng buồng trứng đa nang",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Người mắc chứng ngưng thở khi ngủ có nguy cơ kháng insulin nên dễ dẫn đến tiền đái tháo đường.",
+        "head": "ngưng thở khi ngủ",
+        "head_type": "symptom",
+        "relation": "associatedWith",
+        "tail": "tiền đái tháo đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Người mắc chứng ngưng thở khi ngủ có nguy cơ kháng insulin nên dễ dẫn đến tiền đái tháo đường.",
+        "head": "kháng insulin",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "tiền đái tháo đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Hút thuốc có thể làm tăng đề kháng insulin, riêng người đã bị tiền tiểu đường nếu không bỏ thuốc thì tiếp tục đối diện nguy cơ bị bệnh tiểu đường loại 2.",
+        "head": "Hút thuốc",
+        "head_type": "lifestyle",
+        "relation": "aggravatedBy",
+        "tail": "tiền tiểu đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Hút thuốc có thể làm tăng đề kháng insulin, riêng người đã bị tiền tiểu đường nếu không bỏ thuốc thì tiếp tục đối diện nguy cơ bị bệnh tiểu đường loại 2.",
+        "head": "Hút thuốc",
+        "head_type": "lifestyle",
+        "relation": "aggravatedBy",
+        "tail": "bệnh tiểu đường loại 2",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Hút thuốc có thể làm tăng đề kháng insulin, riêng người đã bị tiền tiểu đường nếu không bỏ thuốc thì tiếp tục đối diện nguy cơ bị bệnh tiểu đường loại 2.",
+        "head": "kháng insulin",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Hút thuốc",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Hút thuốc lá cũng tăng nguy cơ các biến chứng tiểu đường khác như: viêm phổi, lao, suy thận,…",
+        "head": "Hút thuốc lá",
+        "head_type": "lifestyle",
+        "relation": "aggravatedBy",
+        "tail": "viêm phổi",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Hút thuốc lá cũng tăng nguy cơ các biến chứng tiểu đường khác như: viêm phổi, lao, suy thận,…",
+        "head": "Hút thuốc lá",
+        "head_type": "lifestyle",
+        "relation": "aggravatedBy",
+        "tail": "lao",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Hút thuốc lá cũng tăng nguy cơ các biến chứng tiểu đường khác như: viêm phổi, lao, suy thận,…",
+        "head": "Hút thuốc lá",
+        "head_type": "lifestyle",
+        "relation": "aggravatedBy",
+        "tail": "suy thận",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi có các dấu hiệu trên, người dân nên đi khám định kỳ với bác sĩ khoa Nội tiết - Đái tháo đường để được thực hiện các xét nghiệm kiểm tra, từ đó theo dõi sức khỏe, thực hiện các biện pháp phòng ngừa.",
+        "head": "xét nghiệm kiểm tra",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "tiền đái tháo đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các bác sĩ khoa Nội tiết - Đái tháo đường, BVĐK Tâm Anh TP.HCM có kiến thức chuyên môn sâu rộng, nhiều kinh nghiệm giúp người bệnh phát hiện tiền đái tháo đường và ngăn ngừa ở giai đoạn sớm.",
+        "head": "tiền đái tháo đường",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "bác sĩ khoa Nội tiết - Đái tháo đường",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Nhờ đó, tránh tình trạng tiến triển thành bệnh đái tháo đường tuýp 2.",
+        "head": "bệnh đái tháo đường tuýp 2",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "tiền đái tháo đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tiền đái tháo đường có thể tiến triển thành đái tháo đường tuýp 2 nếu người bệnh không điều chỉnh chế độ ăn uống khoa học, sống lành lạnh, tập thể dục thường xuyên.",
+        "head": "tiền đái tháo đường",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "đái tháo đường tuýp 2",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tiền đái tháo đường có thể tiến triển thành đái tháo đường tuýp 2 nếu người bệnh không điều chỉnh chế độ ăn uống khoa học, sống lành lạnh, tập thể dục thường xuyên.",
+        "head": "chế độ ăn uống khoa học",
+        "head_type": "lifestyle",
+        "relation": "preventedBy",
+        "tail": "tiền đái tháo đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tiền đái tháo đường có thể tiến triển thành đái tháo đường tuýp 2 nếu người bệnh không điều chỉnh chế độ ăn uống khoa học, sống lành lạnh, tập thể dục thường xuyên.",
+        "head": "sống lành mạnh",
+        "head_type": "lifestyle",
+        "relation": "preventedBy",
+        "tail": "tiền đái tháo đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "BVĐK Tâm Anh TP.HCM quy tụ những bác sĩ chuyên ngành Nội tiết - Đái tháo đường giàu kinh nghiệm, giỏi chuyên môn, tận tâm chăm sóc từng ca bệnh.",
+        "head": "Nội tiết - Đái tháo đường",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "Bác sĩ chuyên ngành Nội tiết - Đái tháo đường",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Đặc biệt, các bác sĩ từng công tác tại các bệnh viện hàng đầu tại Việt Nam.",
+        "head": "Bác sĩ",
+        "head_type": "treatment",
+        "relation": "locatedIn",
+        "tail": "Bệnh viện hàng đầu tại Việt Nam",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Với kiến thức y học chuyên sâu cùng kinh nghiệm thực tiễn dày dặn, bác sĩ sẽ nhận ra các dấu hiệu nghi ngờ, chỉ định người bệnh thực hiện các xét nghiệm chẩn đoán.",
+        "head": "Bác sĩ",
+        "head_type": "treatment",
+        "relation": "diagnosedBy",
+        "tail": "Xét nghiệm chẩn đoán",
+        "tail_type": "test"
+    },
+    {
+        "text": "Đơn cử như, người bệnh được lấy máu làm xét nghiệm glucose huyết tương lúc đói, nhịn ăn ít nhất 8 giờ trước khi xét nghiệm.",
+        "head": "Xét nghiệm glucose huyết tương lúc đói",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "Đái tháo đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khám sức khỏe định kỳ giúp phát hiện sớm tiền tiểu đường, để điều trị kịp thời.",
+        "head": "Khám sức khỏe định kỳ",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "Tiền tiểu đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu kết quả xét nghiệm đường huyết dưới 100 mg/dL thì bình thường.",
+        "head": "Kết quả xét nghiệm đường huyết dưới 100 mg/dL",
+        "head_type": "test",
+        "relation": "relatedTo",
+        "tail": "Bình thường",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Nếu đường huyết từ 126 mg/dL trở lên, bạn bị đái tháo đường.",
+        "head": "Đường huyết từ 126 mg/dL trở lên",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "Đái tháo đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Lúc này, bạn sẽ được tiếp tục kiểm tra đường huyết bằng thử nghiệm dung nạp glucose qua đường uống.",
+        "head": "Thử nghiệm dung nạp glucose qua đường uống",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "Đái tháo đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Sau khi kiểm tra đường huyết lúc đói, bạn được uống dung dịch đường.",
+        "head": "Dung dịch đường",
+        "head_type": "food",
+        "relation": "relatedTo",
+        "tail": "Kiểm tra đường huyết lúc đói",
+        "tail_type": "test"
+    },
+    {
+        "text": "Sau 2 giờ, nhân viên y tế sẽ lấy máu để xét nghiệm tiếp (còn gọi là xét nghiệm đường huyết bất kỳ, xét nghiệm đường huyết sau khi ăn).",
+        "head": "Xét nghiệm đường huyết bất kỳ",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "Đái tháo đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu đường huyết dưới 140 mg/dL thì bình thường.",
+        "head": "Đường huyết dưới 140 mg/dL",
+        "head_type": "test",
+        "relation": "relatedTo",
+        "tail": "Bình thường",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Nếu đường huyết từ 140 đến 199mg/dL, bạn bị tiền tiểu đường.",
+        "head": "Đường huyết từ 140 đến 199mg/dL",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "Tiền tiểu đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu đường huyết từ 200 mg/dL trở lên, bạn bị đái tháo đường.",
+        "head": "Đường huyết từ 200 mg/dL trở lên",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "Đái tháo đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ngoài ra, bạn sẽ được làm xét nghiệm HbA1C.",
+        "head": "Xét nghiệm HbA1C",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "Đái tháo đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đây là xét nghiệm máu cho biết mức đường huyết trung bình trong 3 tháng qua, thường được dùng để kiểm tra một người bệnh có kiểm soát tốt đường huyết hay không.",
+        "head": "Xét nghiệm HbA1C",
+        "head_type": "test",
+        "relation": "relatedTo",
+        "tail": "Kiểm soát đường huyết",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "HbA1C cũng được dùng để chẩn đoán tiền tiểu đường.",
+        "head": "Xét nghiệm HbA1C",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "Tiền tiểu đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu HbA1C dưới 5.6% thì bình thường.",
+        "head": "HbA1C dưới 5.6%",
+        "head_type": "test",
+        "relation": "relatedTo",
+        "tail": "Bình thường",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Nếu HbA1C từ 5.7 đến 6.4% thì tiền tiểu đường.",
+        "head": "HbA1C từ 5.7 đến 6.4%",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "Tiền tiểu đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu HbA1C từ 6.5% trở lên đã bị đái tháo đường.",
+        "head": "HbA1C từ 6.5% trở lên",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "Đái tháo đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bác sĩ có thể chỉ định bạn kiểm tra đường huyết một lần nữa để khẳng định.",
+        "head": "Bác sĩ",
+        "head_type": "treatment",
+        "relation": "diagnosedBy",
+        "tail": "Kiểm tra đường huyết",
+        "tail_type": "test"
+    },
+    {
+        "text": "Trẻ em cũng có nguy cơ bị tiền đái tháo đường.",
+        "head": "Trẻ em",
+        "head_type": "organ",
+        "relation": "isSymptomOf",
+        "tail": "Tiền đái tháo đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Theo Hiệp hội Đái tháo đường Hoa Kỳ, trẻ em từ 10 tuổi trở lên nếu thuộc các trường hợp dưới đây nên kiểm tra đường huyết định kỳ để sớm phát hiện tiền đái tháo đường và ngăn chặn kịp thời.",
+        "head": "Kiểm tra đường huyết định kỳ",
+        "head_type": "test",
+        "relation": "preventedBy",
+        "tail": "Tiền đái tháo đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Cụ thể: Thừa cân, béo phì.",
+        "head": "Thừa cân, béo phì",
+        "head_type": "lifestyle",
+        "relation": "isSymptomOf",
+        "tail": "Tiền đái tháo đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Có người thân trong gia đình bị đái tháo đường tuýp 2.",
+        "head": "Đái tháo đường tuýp 2",
+        "head_type": "disease",
+        "relation": "associatedWith",
+        "tail": "Tiền đái tháo đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Mẹ của trẻ bị đái tháo đường thai kỳ khi mang thai.",
+        "head": "Đái tháo đường thai kỳ",
+        "head_type": "disease",
+        "relation": "associatedWith",
+        "tail": "Tiền đái tháo đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu trẻ có nguy cơ cao bị tiền đái tháo đường có kết quả đường huyết bình thường, Hiệp hội Đái tháo đường Hoa Kỳ khuyên vẫn nên xét nghiệm lại ít nhất 3 năm 1 lần.",
+        "head": "Xét nghiệm lại",
+        "head_type": "test",
+        "relation": "relatedTo",
+        "tail": "Tiền đái tháo đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đái tháo đường là một trong những bệnh gây nhiều ca tử vong hàng đầu thế giới.",
+        "head": "Đái tháo đường",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Tử vong",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Năm 2021, thế giới có 537 triệu người đái tháo đường.",
+        "head": "Đái tháo đường",
+        "head_type": "disease",
+        "relation": "associatedWith",
+        "tail": "537 triệu người",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Mỗi 5 giây có một người đái tháo đường tử vong.",
+        "head": "Đái tháo đường",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Tử vong",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Riêng Việt Nam có hơn 3,5 triệu người bệnh, dự kiến tăng lên 6,5 triệu ca vào năm 2045.",
+        "head": "Đái tháo đường",
+        "head_type": "disease",
+        "relation": "associatedWith",
+        "tail": "3,5 triệu người bệnh",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Do đó, khi phát hiện tiền đái tháo đường, bạn nên khám với bác sĩ Nội tiết - Đái tháo đường cũng như lựa chọn bệnh viện có trang thiết bị, máy móc hiện đại để được đánh giá chính xác tình trạng sức khỏe và điều chỉnh chế độ ăn uống.",
+        "head": "Tiền đái tháo đường",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "Bác sĩ Nội tiết - Đái tháo đường",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Đây là cơ hội thay đổi cuối cùng trước khi tiền đái tháo đường tiến triển thành bệnh đái tháo đường.",
+        "head": "Tiền đái tháo đường",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Đái tháo đường",
+        "tail_type": "disease"
+    }
+]

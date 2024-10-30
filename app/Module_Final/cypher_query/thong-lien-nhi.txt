@@ -1,0 +1,595 @@
+
+MERGE (o1:disease {id: 'thông_liên_nhĩ_disease'})
+MERGE (o2:disease {id: 'bệnh_lý_tim_bẩm_sinh_disease'})
+MERGE (o1)-[r0:isSymptomOf]->(o2)
+SET r0.text = 'Thông liên nhĩ chiếm từ 6-10% bệnh lý tim bẩm sinh.'
+
+MERGE (o1:disease {id: 'thông_liên_nhĩ_disease'})
+MERGE (o2:treatment {id: 'điều_trị_sớm_treatment'})
+MERGE (o1)-[r1:treatedBy]->(o2)
+SET r1.text = 'Nếu được phát hiện và điều trị sớm, phần lớn trường hợp thông liên nhĩ lành tính và không ảnh hưởng đến sức khỏe.'
+
+MERGE (o1:disease {id: 'thông_liên_nhĩ_disease'})
+MERGE (o2:disease {id: 'bệnh_lý_tim_bẩm_sinh_disease'})
+MERGE (o1)-[r2:isSymptomOf]->(o2)
+SET r2.text = 'Thông liên nhĩ tên tiếng anh là Atrial Septal Defect (ASD), đây làbệnh lý tim bẩm sinh với sự xuất hiện của một lỗ thủng giữa hai buồng tâm nhĩ.'
+
+MERGE (o1:symptom {id: 'lỗ_thủng_symptom'})
+MERGE (o2:disease {id: 'thông_liên_nhĩ_disease'})
+MERGE (o1)-[r3:isSymptomOf]->(o2)
+SET r3.text = 'Thông liên nhĩ tên tiếng anh là Atrial Septal Defect (ASD), đây làbệnh lý tim bẩm sinh với sự xuất hiện của một lỗ thủng giữa hai buồng tâm nhĩ.'
+
+MERGE (o1:symptom {id: 'lỗ_thủng_symptom'})
+MERGE (o2:organ {id: 'hai_buồng_tâm_nhĩ_organ'})
+MERGE (o1)-[r4:locatedIn]->(o2)
+SET r4.text = 'Thông liên nhĩ tên tiếng anh là Atrial Septal Defect (ASD), đây làbệnh lý tim bẩm sinh với sự xuất hiện của một lỗ thủng giữa hai buồng tâm nhĩ.'
+
+MERGE (o1:symptom {id: 'lỗ_thông_liên_nhĩ_symptom'})
+MERGE (o2:organ {id: 'vách_liên_nhĩ_organ'})
+MERGE (o1)-[r5:locatedIn]->(o2)
+SET r5.text = 'Lỗ thông liên nhĩ có thể nằm ở nhiều vị trí khác nhau trên vách liên nhĩ.'
+
+MERGE (o1:symptom {id: 'lỗ_thông_liên_nhĩ_nhỏ_symptom'})
+MERGE (o2:treatment {id: 'tự_đóng_treatment'})
+MERGE (o1)-[r6:relatedTo]->(o2)
+SET r6.text = 'Thông thường, nếu lỗ thông liên nhĩ nhỏ, lỗ này có thể tự đóng.'
+
+MERGE (o1:symptom {id: 'lỗ_thông_lớn_symptom'})
+MERGE (o2:disease {id: 'biến_chứng_nguy_hiểm_disease'})
+MERGE (o1)-[r7:causedBy]->(o2)
+SET r7.text = 'Tuy nhiên với lỗ thông lớn, điều này có thể dẫn tới những biến chứng nguy hiểm.'
+
+MERGE (o1:disease {id: 'thông_liên_nhĩ_disease'})
+MERGE (o2:disease {id: 'tim_bẩm_sinh_disease'})
+MERGE (o1)-[r8:isSymptomOf]->(o2)
+SET r8.text = 'Thông liên nhĩ (TLN) chiếm khoảng từ 5% đến 10% các trường hợp tim bẩm sinh'
+
+MERGE (o1:disease {id: 'thông_liên_nhĩ_lỗ_thứ_nhất_(asd-op)_disease'})
+MERGE (o2:disease {id: 'kênh_nhĩ_thất_disease'})
+MERGE (o1)-[r9:relatedTo]->(o2)
+SET r9.text = 'Thông liên nhĩ lỗ thứ nhất (ASD-op) hay còn gọi là thông liên nhĩ lỗ nguyên phát: có thể xảy ra đơn độc nhưng thông thường xảy ra trong bệnh cảnh tim bẩm sinh phức tạp (kênh nhĩ thất), vị trí nằm thấp, sát van nhĩ thất.'
+
+MERGE (o1:disease {id: 'thông_liên_nhĩ_lỗ_thứ_nhất_(asd-op)_disease'})
+MERGE (o2:organ {id: 'van_nhĩ_thất_organ'})
+MERGE (o1)-[r10:locatedIn]->(o2)
+SET r10.text = 'Thông liên nhĩ lỗ thứ nhất (ASD-op) hay còn gọi là thông liên nhĩ lỗ nguyên phát: có thể xảy ra đơn độc nhưng thông thường xảy ra trong bệnh cảnh tim bẩm sinh phức tạp (kênh nhĩ thất), vị trí nằm thấp, sát van nhĩ thất.'
+
+MERGE (o1:disease {id: 'thông_liên_nhĩ_lỗ_thứ_hai_(asd-os)_disease'})
+MERGE (o2:organ {id: 'vách_liên_nhĩ_organ'})
+MERGE (o1)-[r11:locatedIn]->(o2)
+SET r11.text = 'Thông liên nhĩ lỗ thứ hai (ASD-os) hay còn gọi là thông liên nhĩ lỗ thứ phát: thường gặp nhất, chiếm đến 70% các trường hợp, có thể xảy ra đơn độc và vị trí nằm ở trung tâm của vách liên nhĩ.'
+
+MERGE (o1:disease {id: 'thông_liên_nhĩ_lỗ_thứ_hai_(asd-os)_disease'})
+MERGE (o2:organ {id: 'vách_liên_nhĩ_organ'})
+MERGE (o1)-[r12:relatedTo]->(o2)
+SET r12.text = 'Thông liên nhĩ lỗ thứ hai (ASD-os) hay còn gọi là thông liên nhĩ lỗ thứ phát: thường gặp nhất, chiếm đến 70% các trường hợp, có thể xảy ra đơn độc và vị trí nằm ở trung tâm của vách liên nhĩ.'
+
+MERGE (o1:symptom {id: 'lỗ_thông_liên_nhĩ_thứ_phát_symptom'})
+MERGE (o2:symptom {id: 'kích_thước_symptom'})
+MERGE (o1)-[r13:relatedTo]->(o2)
+SET r13.text = 'Lỗ thông liên nhĩ thứ phát thường có kích thước từ 10-30mm.'
+
+MERGE (o1:disease {id: 'thông_liên_nhĩ_xoang_tĩnh_mạch_(asd-sv)_disease'})
+MERGE (o2:organ {id: 'tĩnh_mạch_chủ_trên_organ'})
+MERGE (o1)-[r14:relatedTo]->(o2)
+SET r14.text = 'Thông liên nhĩ xoang tĩnh mạch (ASD-sv): Đây là một tình trạng hiếm gặp và có 2 loại:'
+
+MERGE (o1:disease {id: 'thông_liên_nhĩ_xoang_tĩnh_mạch_(asd-sv)_disease'})
+MERGE (o2:organ {id: 'tĩnh_mạch_chủ_dưới_organ'})
+MERGE (o1)-[r15:relatedTo]->(o2)
+SET r15.text = 'Thông liên nhĩ xoang tĩnh mạch (ASD-sv): Đây là một tình trạng hiếm gặp và có 2 loại:'
+
+MERGE (o1:organ {id: 'tĩnh_mạch_chủ_trên_organ'})
+MERGE (o2:organ {id: 'nhĩ_phải_organ'})
+MERGE (o1)-[r16:locatedIn]->(o2)
+SET r16.text = 'Tĩnh mạch chủ trên: nằm ngay dưới lỗ đổ của tĩnh mạch chủ trên vào nhĩ phải.'
+
+MERGE (o1:disease {id: 'thông_liên_nhĩ_xoang_tĩnh_mạch_chủ_trên_disease'})
+MERGE (o2:disease {id: 'hồi_lưu_tĩnh_mạch_phổi_bất_thường_disease'})
+MERGE (o1)-[r17:relatedTo]->(o2)
+SET r17.text = 'Thông liên nhĩ xoang tĩnh mạch chủ trên thường đi kèm với hồi lưu tĩnh mạch phổi bất thường.'
+
+MERGE (o1:organ {id: 'tĩnh_mạch_chủ_dưới_organ'})
+MERGE (o2:organ {id: 'nhĩ_phải_organ'})
+MERGE (o1)-[r18:locatedIn]->(o2)
+SET r18.text = 'Tĩnh mạch chủ dưới thì nằm sát lỗ đổ vào của tĩnh mạch chủ dưới vào nhĩ phải, thể này vô cùng hiếm gặp.'
+
+MERGE (o1:symptom {id: 'không_có_triệu_chứng_symptom'})
+MERGE (o2:disease {id: 'khiếm_khuyết_vách_ngăn_liên_nhĩ_disease'})
+MERGE (o1)-[r19:isSymptomOf]->(o2)
+SET r19.text = 'Nhiều trẻ em có khiếm khuyết vách ngăn liên nhĩ sẽ không có triệu chứng và vẫn khỏe mạnh, sinh hoạt bình thường.'
+
+MERGE (o1:symptom {id: 'khỏe_mạnh_symptom'})
+MERGE (o2:disease {id: 'khiếm_khuyết_vách_ngăn_liên_nhĩ_disease'})
+MERGE (o1)-[r20:isSymptomOf]->(o2)
+SET r20.text = 'Nhiều trẻ em có khiếm khuyết vách ngăn liên nhĩ sẽ không có triệu chứng và vẫn khỏe mạnh, sinh hoạt bình thường.'
+
+MERGE (o1:symptom {id: 'dễ_mệt_mỏi_symptom'})
+MERGE (o2:disease {id: 'lỗ_thông_liên_nhĩ_lớn_disease'})
+MERGE (o1)-[r21:isSymptomOf]->(o2)
+SET r21.text = 'Tuy nhiên, nếu lỗ thông liên nhĩ lớn, người bệnh có thể có một số dấu hiệu và triệu chứng sau:
+Dễ mệt mỏi;
+Thở nhanh;
+Khó thở;
+Chậm tăng trưởng.
+Thường xuyên bị nhiễm trùng đường hô hấp;
+Rối loạn nhịp tim.'
+
+MERGE (o1:symptom {id: 'thở_nhanh_symptom'})
+MERGE (o2:disease {id: 'lỗ_thông_liên_nhĩ_lớn_disease'})
+MERGE (o1)-[r22:isSymptomOf]->(o2)
+SET r22.text = 'Tuy nhiên, nếu lỗ thông liên nhĩ lớn, người bệnh có thể có một số dấu hiệu và triệu chứng sau:
+Dễ mệt mỏi;
+Thở nhanh;
+Khó thở;
+Chậm tăng trưởng.
+Thường xuyên bị nhiễm trùng đường hô hấp;
+Rối loạn nhịp tim.'
+
+MERGE (o1:symptom {id: 'khó_thở_symptom'})
+MERGE (o2:disease {id: 'lỗ_thông_liên_nhĩ_lớn_disease'})
+MERGE (o1)-[r23:isSymptomOf]->(o2)
+SET r23.text = 'Tuy nhiên, nếu lỗ thông liên nhĩ lớn, người bệnh có thể có một số dấu hiệu và triệu chứng sau:
+Dễ mệt mỏi;
+Thở nhanh;
+Khó thở;
+Chậm tăng trưởng.
+Thường xuyên bị nhiễm trùng đường hô hấp;
+Rối loạn nhịp tim.'
+
+MERGE (o1:symptom {id: 'chậm_tăng_trưởng_symptom'})
+MERGE (o2:disease {id: 'lỗ_thông_liên_nhĩ_lớn_disease'})
+MERGE (o1)-[r24:isSymptomOf]->(o2)
+SET r24.text = 'Tuy nhiên, nếu lỗ thông liên nhĩ lớn, người bệnh có thể có một số dấu hiệu và triệu chứng sau:
+Dễ mệt mỏi;
+Thở nhanh;
+Khó thở;
+Chậm tăng trưởng.
+Thường xuyên bị nhiễm trùng đường hô hấp;
+Rối loạn nhịp tim.'
+
+MERGE (o1:symptom {id: 'thường_xuyên_bị_nhiễm_trùng_đường_hô_hấp_symptom'})
+MERGE (o2:disease {id: 'lỗ_thông_liên_nhĩ_lớn_disease'})
+MERGE (o1)-[r25:isSymptomOf]->(o2)
+SET r25.text = 'Tuy nhiên, nếu lỗ thông liên nhĩ lớn, người bệnh có thể có một số dấu hiệu và triệu chứng sau:
+Dễ mệt mỏi;
+Thở nhanh;
+Khó thở;
+Chậm tăng trưởng.
+Thường xuyên bị nhiễm trùng đường hô hấp;
+Rối loạn nhịp tim.'
+
+MERGE (o1:symptom {id: 'rối_loạn_nhịp_tim_symptom'})
+MERGE (o2:disease {id: 'lỗ_thông_liên_nhĩ_lớn_disease'})
+MERGE (o1)-[r26:isSymptomOf]->(o2)
+SET r26.text = 'Tuy nhiên, nếu lỗ thông liên nhĩ lớn, người bệnh có thể có một số dấu hiệu và triệu chứng sau:
+Dễ mệt mỏi;
+Thở nhanh;
+Khó thở;
+Chậm tăng trưởng.
+Thường xuyên bị nhiễm trùng đường hô hấp;
+Rối loạn nhịp tim.'
+
+MERGE (o1:symptom {id: 'đau_nửa_đầu_symptom'})
+MERGE (o2:disease {id: 'thông_liên_nhĩ_disease'})
+MERGE (o1)-[r27:isSymptomOf]->(o2)
+SET r27.text = 'Trẻ lớn và người lớn có bệnh bẩm sinh này có thể bị đau nửa đầu. Tuy nhiên, vẫn chưa có nhiều nghiên cứu chứng minh liệu thông liên nhĩ có phải là nguyên nhân gây ra tình trạng này hay không.'
+
+MERGE (o1:cause {id: 'yếu_tố_di_truyền_cause'})
+MERGE (o2:disease {id: 'dị_tật_tim_bẩm_sinh_disease'})
+MERGE (o1)-[r28:causedBy]->(o2)
+SET r28.text = 'Hiện nay, chưa giải thích được nguyên nhân gây thông liên nhĩ
+, nhưng một số dị tật tim bẩm sinh dường như có yếu tố di truyền.'
+
+MERGE (o1:cause {id: 'yếu_tố_di_truyền_cause'})
+MERGE (o2:disease {id: 'thông_liên_nhĩ_disease'})
+MERGE (o1)-[r29:causedBy]->(o2)
+SET r29.text = 'Hiện nay, chưa giải thích được nguyên nhân gây thông liên nhĩ
+, nhưng một số dị tật tim bẩm sinh dường như có yếu tố di truyền.'
+
+MERGE (o1:lifestyle {id: 'mang_thai_lifestyle'})
+MERGE (o2:disease {id: 'dị_tật_tim_bẩm_sinh_disease'})
+MERGE (o1)-[r30:causedBy]->(o2)
+SET r30.text = 'Bên cạnh đó, một số yếu tố khi mang thai có thể làm tăng nguy cơ em bé sinh ra
+mắc dị tật
+tim bẩm sinh bao gồm:'
+
+MERGE (o1:cause {id: 'nhiễm_trùng_rubella_cause'})
+MERGE (o2:disease {id: 'dị_tật_tim_thai_disease'})
+MERGE (o1)-[r31:causedBy]->(o2)
+SET r31.text = 'Nhiễm trùng rubella: Bị nhiễm rubella trong vài tháng đầu của thai kỳ có thể làm tăng nguy cơ dị tật tim thai.'
+
+MERGE (o1:lifestyle {id: 'sử_dụng_ma_túy_lifestyle'})
+MERGE (o2:disease {id: 'dị_tật_tim_bẩm_sinh_disease'})
+MERGE (o1)-[r32:causedBy]->(o2)
+SET r32.text = 'Sử dụng ma túy, thuốc lá, uống rượu hoặc tiếp xúc với một số chất kích thích như cocaine, trong khi mang thai có thể gây hại đến sự phát triển của thai nhi.'
+
+MERGE (o1:lifestyle {id: 'thuốc_lá_lifestyle'})
+MERGE (o2:disease {id: 'dị_tật_tim_bẩm_sinh_disease'})
+MERGE (o1)-[r33:causedBy]->(o2)
+SET r33.text = 'Sử dụng ma túy, thuốc lá, uống rượu hoặc tiếp xúc với một số chất kích thích như cocaine, trong khi mang thai có thể gây hại đến sự phát triển của thai nhi.'
+
+MERGE (o1:lifestyle {id: 'uống_rượu_lifestyle'})
+MERGE (o2:disease {id: 'dị_tật_tim_bẩm_sinh_disease'})
+MERGE (o1)-[r34:causedBy]->(o2)
+SET r34.text = 'Sử dụng ma túy, thuốc lá, uống rượu hoặc tiếp xúc với một số chất kích thích như cocaine, trong khi mang thai có thể gây hại đến sự phát triển của thai nhi.'
+
+MERGE (o1:lifestyle {id: 'tiếp_xúc_với_cocaine_lifestyle'})
+MERGE (o2:disease {id: 'dị_tật_tim_bẩm_sinh_disease'})
+MERGE (o1)-[r35:causedBy]->(o2)
+SET r35.text = 'Sử dụng ma túy, thuốc lá, uống rượu hoặc tiếp xúc với một số chất kích thích như cocaine, trong khi mang thai có thể gây hại đến sự phát triển của thai nhi.'
+
+MERGE (o1:disease {id: 'bệnh_tiểu_đường_disease'})
+MERGE (o2:disease {id: 'dị_tật_tim_disease'})
+MERGE (o1)-[r36:causedBy]->(o2)
+SET r36.text = 'Bệnh tiểu đường hoặc lupus: Mắc bệnh tiểu đường hoặc lupus có thể làm tăng nguy cơ sinh con bị dị tật tim.'
+
+MERGE (o1:disease {id: 'lupus_disease'})
+MERGE (o2:disease {id: 'dị_tật_tim_disease'})
+MERGE (o1)-[r37:causedBy]->(o2)
+SET r37.text = 'Bệnh tiểu đường hoặc lupus: Mắc bệnh tiểu đường hoặc lupus có thể làm tăng nguy cơ sinh con bị dị tật tim.'
+
+MERGE (o1:disease {id: 'tim_bẩm_sinh_disease'})
+MERGE (o2:test {id: 'kiểm_tra_cận_lâm_sàng_test'})
+MERGE (o1)-[r38:diagnosedBy]->(o2)
+SET r38.text = 'Một khi nghi ngờ trẻ bị tim bẩm sinh nói chung và thông liên nhĩ nói riêng, bác sĩ tim mạch có thể yêu cầu những
+kiểm tra cận lâm sàng
+sau:'
+
+MERGE (o1:disease {id: 'thông_liên_nhĩ_disease'})
+MERGE (o2:test {id: 'kiểm_tra_cận_lâm_sàng_test'})
+MERGE (o1)-[r39:diagnosedBy]->(o2)
+SET r39.text = 'Một khi nghi ngờ trẻ bị tim bẩm sinh nói chung và thông liên nhĩ nói riêng, bác sĩ tim mạch có thể yêu cầu những
+kiểm tra cận lâm sàng
+sau:'
+
+MERGE (o1:test {id: 'điện_tâm_đồ_(ecg)_test'})
+MERGE (o2:disease {id: 'thông_liên_nhĩ_disease'})
+MERGE (o1)-[r40:diagnosedBy]->(o2)
+SET r40.text = 'Điện tâm đồ (ECG): ghi lại hoạt động điện của tim và cho thấy các bất thường trên điện tim do thông liên nhĩ gây ra.'
+
+MERGE (o1:test {id: 'điện_tâm_đồ_(ecg)_test'})
+MERGE (o2:organ {id: 'tim_organ'})
+MERGE (o1)-[r41:affects]->(o2)
+SET r41.text = 'Điện tâm đồ (ECG): ghi lại hoạt động điện của tim và cho thấy các bất thường trên điện tim do thông liên nhĩ gây ra.'
+
+MERGE (o1:test {id: 'chụp_x-quang_tim_phổi_test'})
+MERGE (o2:disease {id: 'thông_liên_nhĩ_disease'})
+MERGE (o1)-[r42:diagnosedBy]->(o2)
+SET r42.text = 'Chụp X-quang tim phổi: có thể cho thấy kích thước tim hoặc
+những thay đổi trong phổi của con bạn do tăng lưu lượng máu lên phổi.'
+
+MERGE (o1:test {id: 'chụp_x-quang_tim_phổi_test'})
+MERGE (o2:organ {id: 'tim_organ'})
+MERGE (o1)-[r43:affects]->(o2)
+SET r43.text = 'Chụp X-quang tim phổi: có thể cho thấy kích thước tim hoặc
+những thay đổi trong phổi của con bạn do tăng lưu lượng máu lên phổi.'
+
+MERGE (o1:test {id: 'chụp_x-quang_tim_phổi_test'})
+MERGE (o2:organ {id: 'phổi_organ'})
+MERGE (o1)-[r44:affects]->(o2)
+SET r44.text = 'Chụp X-quang tim phổi: có thể cho thấy kích thước tim hoặc
+những thay đổi trong phổi của con bạn do tăng lưu lượng máu lên phổi.'
+
+MERGE (o1:test {id: 'siêu_âm_tim_test'})
+MERGE (o2:disease {id: 'dị_tật_thông_liên_nhĩ_disease'})
+MERGE (o1)-[r45:diagnosedBy]->(o2)
+SET r45.text = 'Siêu âm tim:
+Đây được xem là phương pháp chính trong chẩn đoán dị tật thông liên nhĩ, bệnh nhân nhỏ tuổi thường sử dụng phương pháp siêu âm qua thành ngực còn đối với những bệnh nhân lớn tuổi, có thành ngực dày, phương pháp siêu âm tim qua thực quản có thể được chỉ định để xác định chẩn đoán và định hướng phương pháp điều trị.'
+
+MERGE (o1:test {id: 'siêu_âm_tim_test'})
+MERGE (o2:organ {id: 'tim_organ'})
+MERGE (o1)-[r46:affects]->(o2)
+SET r46.text = 'Siêu âm tim:
+Đây được xem là phương pháp chính trong chẩn đoán dị tật thông liên nhĩ, bệnh nhân nhỏ tuổi thường sử dụng phương pháp siêu âm qua thành ngực còn đối với những bệnh nhân lớn tuổi, có thành ngực dày, phương pháp siêu âm tim qua thực quản có thể được chỉ định để xác định chẩn đoán và định hướng phương pháp điều trị.'
+
+MERGE (o1:test {id: 'siêu_âm_tim_qua_thành_ngực_test'})
+MERGE (o2:disease {id: 'dị_tật_thông_liên_nhĩ_disease'})
+MERGE (o1)-[r47:diagnosedBy]->(o2)
+SET r47.text = 'Siêu âm tim:
+Đây được xem là phương pháp chính trong chẩn đoán dị tật thông liên nhĩ, bệnh nhân nhỏ tuổi thường sử dụng phương pháp siêu âm qua thành ngực còn đối với những bệnh nhân lớn tuổi, có thành ngực dày, phương pháp siêu âm tim qua thực quản có thể được chỉ định để xác định chẩn đoán và định hướng phương pháp điều trị.'
+
+MERGE (o1:disease {id: 'lỗ_thông_nhỏ_disease'})
+MERGE (o2:symptom {id: 'biến_chứng_nguy_hiểm_symptom'})
+MERGE (o1)-[r48:associatedWith]->(o2)
+SET r48.text = 'Nếu lỗ thông nhỏ, thường sẽ không gây ra biến chứng gì nguy hiểm.'
+
+MERGE (o1:disease {id: 'lỗ_thông_nhỏ_disease'})
+MERGE (o2:treatment {id: 'tự_bít_lại_treatment'})
+MERGE (o1)-[r49:treatedBy]->(o2)
+SET r49.text = 'Một số lỗ thông nhỏ sẽ tự bít lại khi trẻ 1-4 tuổi.'
+
+MERGE (o1:disease {id: 'lỗ_thông_lớn_disease'})
+MERGE (o2:symptom {id: 'suy_tim_bên_phải_symptom'})
+MERGE (o1)-[r50:isSymptomOf]->(o2)
+SET r50.text = 'Nếu lỗ thông lớn có thể gây một số biến chứng nghiêm trọng như: Suy tim bên phải, Rối loạn nhịp tim, Tăng nguy cơ đột quỵ, Giảm tuổi thọ'
+
+MERGE (o1:disease {id: 'lỗ_thông_lớn_disease'})
+MERGE (o2:symptom {id: 'rối_loạn_nhịp_tim_symptom'})
+MERGE (o1)-[r51:isSymptomOf]->(o2)
+SET r51.text = 'Nếu lỗ thông lớn có thể gây một số biến chứng nghiêm trọng như: Suy tim bên phải, Rối loạn nhịp tim, Tăng nguy cơ đột quỵ, Giảm tuổi thọ'
+
+MERGE (o1:disease {id: 'lỗ_thông_lớn_disease'})
+MERGE (o2:symptom {id: 'tăng_nguy_cơ_đột_quỵ_symptom'})
+MERGE (o1)-[r52:isSymptomOf]->(o2)
+SET r52.text = 'Nếu lỗ thông lớn có thể gây một số biến chứng nghiêm trọng như: Suy tim bên phải, Rối loạn nhịp tim, Tăng nguy cơ đột quỵ, Giảm tuổi thọ'
+
+MERGE (o1:disease {id: 'lỗ_thông_lớn_disease'})
+MERGE (o2:symptom {id: 'giảm_tuổi_thọ_symptom'})
+MERGE (o1)-[r53:isSymptomOf]->(o2)
+SET r53.text = 'Nếu lỗ thông lớn có thể gây một số biến chứng nghiêm trọng như: Suy tim bên phải, Rối loạn nhịp tim, Tăng nguy cơ đột quỵ, Giảm tuổi thọ'
+
+MERGE (o1:symptom {id: 'tăng_áp_động_mạch_phổi_symptom'})
+MERGE (o2:disease {id: 'lỗ_thông_liên_nhĩ_lớn_disease'})
+MERGE (o1)-[r54:isSymptomOf]->(o2)
+SET r54.text = 'Các biến chứng nghiêm trọng ít gặp hơn là: Tăng áp động mạch phổi: Nếu lỗ thông liên nhĩ lớn không được điều trị, lượng máu đến phổi tăng lên sẽ làm tăng áp lực máu trong động mạch phổi (tăng áp động mạch phổi).'
+
+MERGE (o1:disease {id: 'lỗ_thông_liên_nhĩ_lớn_disease'})
+MERGE (o2:symptom {id: 'lượng_máu_đến_phổi_tăng_lên_symptom'})
+MERGE (o1)-[r55:causedBy]->(o2)
+SET r55.text = 'Các biến chứng nghiêm trọng ít gặp hơn là: Tăng áp động mạch phổi: Nếu lỗ thông liên nhĩ lớn không được điều trị, lượng máu đến phổi tăng lên sẽ làm tăng áp lực máu trong động mạch phổi (tăng áp động mạch phổi).'
+
+MERGE (o1:symptom {id: 'lượng_máu_đến_phổi_tăng_lên_symptom'})
+MERGE (o2:organ {id: 'áp_lực_máu_trong_động_mạch_phổi_organ'})
+MERGE (o1)-[r56:affects]->(o2)
+SET r56.text = 'Các biến chứng nghiêm trọng ít gặp hơn là: Tăng áp động mạch phổi: Nếu lỗ thông liên nhĩ lớn không được điều trị, lượng máu đến phổi tăng lên sẽ làm tăng áp lực máu trong động mạch phổi (tăng áp động mạch phổi).'
+
+MERGE (o1:symptom {id: 'áp_lực_máu_trong_động_mạch_phổi_symptom'})
+MERGE (o2:symptom {id: 'tăng_áp_động_mạch_phổi_symptom'})
+MERGE (o1)-[r57:isSymptomOf]->(o2)
+SET r57.text = 'Các biến chứng nghiêm trọng ít gặp hơn là: Tăng áp động mạch phổi: Nếu lỗ thông liên nhĩ lớn không được điều trị, lượng máu đến phổi tăng lên sẽ làm tăng áp lực máu trong động mạch phổi (tăng áp động mạch phổi).'
+
+MERGE (o1:disease {id: 'hội_chứng_eisenmenger_disease'})
+MERGE (o2:symptom {id: 'tăng_áp_động_mạch_phổi_symptom'})
+MERGE (o1)-[r58:causedBy]->(o2)
+SET r58.text = 'Hội chứng Eisenmenger: Đây là sự phát triển của tăng áp động mạch phổi do khuyết tật tim bẩm sinh không được điều trị.'
+
+MERGE (o1:disease {id: 'hội_chứng_eisenmenger_disease'})
+MERGE (o2:disease {id: 'khuyết_tật_tim_bẩm_sinh_disease'})
+MERGE (o1)-[r59:causedBy]->(o2)
+SET r59.text = 'Hội chứng Eisenmenger: Đây là sự phát triển của tăng áp động mạch phổi do khuyết tật tim bẩm sinh không được điều trị.'
+
+MERGE (o1:disease {id: 'hội_chứng_eisenmenger_disease'})
+MERGE (o2:symptom {id: 'tổn_thương_tim_symptom'})
+MERGE (o1)-[r60:isSymptomOf]->(o2)
+SET r60.text = 'Bệnh có thể gây ra các biến chứng bao gồm tổn thương tim và phổi vĩnh viễn.'
+
+MERGE (o1:disease {id: 'hội_chứng_eisenmenger_disease'})
+MERGE (o2:symptom {id: 'tổn_thương_phổi_symptom'})
+MERGE (o1)-[r61:isSymptomOf]->(o2)
+SET r61.text = 'Bệnh có thể gây ra các biến chứng bao gồm tổn thương tim và phổi vĩnh viễn.'
+
+MERGE (o1:disease {id: 'thông_liên_nhĩ_disease'})
+MERGE (o2:symptom {id: 'tăng_áp_động_mạch_phổi_symptom'})
+MERGE (o1)-[r62:associatedWith]->(o2)
+SET r62.text = 'Thông liên nhĩ thường ít gây biến chứng tăng áp động mạch phổi và đặc biệt là hội chứng Eisenmenger.'
+
+MERGE (o1:disease {id: 'thông_liên_nhĩ_disease'})
+MERGE (o2:disease {id: 'hội_chứng_eisenmenger_disease'})
+MERGE (o1)-[r63:associatedWith]->(o2)
+SET r63.text = 'Thông liên nhĩ thường ít gây biến chứng tăng áp động mạch phổi và đặc biệt là hội chứng Eisenmenger.'
+
+MERGE (o1:symptom {id: 'tăng_áp_phổi_symptom'})
+MERGE (o2:cause {id: 'nguyên_nhân_khác_cause'})
+MERGE (o1)-[r64:causedBy]->(o2)
+SET r64.text = 'Do đó, nếu phát hiện phải tầm soát các nguyên nhân khác gây tăng áp phổi hoặc tăng áp phổi tiên phát đi kèm.'
+
+MERGE (o1:disease {id: 'thông_liên_nhĩ_disease'})
+MERGE (o2:treatment {id: 'điều_trị_treatment'})
+MERGE (o1)-[r65:treatedBy]->(o2)
+SET r65.text = 'Lựa chọn phương pháp điều trị thông liên nhĩ phụ thuộc vào kích thước lỗ thông cũng như trẻ có các dị tật tim bẩm sinh khác kèm theo hay không.'
+
+MERGE (o1:disease {id: 'lỗ_thông_disease'})
+MERGE (o2:treatment {id: 'tự_đóng_treatment'})
+MERGE (o1)-[r66:treatedBy]->(o2)
+SET r66.text = 'Trường hợp thông liên nhĩ kích thước nhỏ, lỗ thông có khả năng tự đóng trong thời thơ ấu.'
+
+MERGE (o1:disease {id: 'lỗ_thông_nhỏ_disease'})
+MERGE (o2:symptom {id: 'thuyên_tắc_ngược_dòng_symptom'})
+MERGE (o1)-[r67:isSymptomOf]->(o2)
+SET r67.text = 'Đối với những lỗ thông nhỏ không tự đóng lại được, chỉ cần theo dõi và chỉ đóng nếu có thuyên tắc ngược dòng gây nhồi máu não.'
+
+MERGE (o1:symptom {id: 'thuyên_tắc_ngược_dòng_symptom'})
+MERGE (o2:symptom {id: 'nhồi_máu_não_symptom'})
+MERGE (o1)-[r68:isSymptomOf]->(o2)
+SET r68.text = 'Đối với những lỗ thông nhỏ không tự đóng lại được, chỉ cần theo dõi và chỉ đóng nếu có thuyên tắc ngược dòng gây nhồi máu não.'
+
+MERGE (o1:disease {id: 'lỗ_thông_liên_nhĩ_lớn_disease'})
+MERGE (o2:treatment {id: 'thông_tim_đóng_lỗ_thông_bằng_dụng_cụ_treatment'})
+MERGE (o1)-[r69:treatedBy]->(o2)
+SET r69.text = 'Các lỗ thông liên nhĩ lớn hơn có thể phải cần thông tim đóng lỗ thông bằng dụng cụ hoặc phẫu thuật tim.'
+
+MERGE (o1:disease {id: 'lỗ_thông_liên_nhĩ_lớn_disease'})
+MERGE (o2:treatment {id: 'phẫu_thuật_tim_treatment'})
+MERGE (o1)-[r70:treatedBy]->(o2)
+SET r70.text = 'Các lỗ thông liên nhĩ lớn hơn có thể phải cần thông tim đóng lỗ thông bằng dụng cụ hoặc phẫu thuật tim.'
+
+MERGE (o1:symptom {id: 'tăng_áp_động_mạch_phổi_nặng_symptom'})
+MERGE (o2:treatment {id: 'tiến_hành_treatment'})
+MERGE (o1)-[r71:aggravatedBy]->(o2)
+SET r71.text = 'Tuy nhiên, không nên tiến hành nếu trẻ có tăng áp động mạch phổi nặng.'
+
+MERGE (o1:treatment {id: 'thuốc_treatment'})
+MERGE (o2:disease {id: 'lỗ_thông_liên_nhĩ_disease'})
+MERGE (o1)-[r72:treatedBy]->(o2)
+SET r72.text = 'Dùng thuốc: Thuốc không chữa được lỗ thông liên nhĩ nhưng có thể giúp ích trong một số trường hợp.'
+
+MERGE (o1:treatment {id: 'thuốc_chẹn_beta_treatment'})
+MERGE (o2:symptom {id: 'rối_loạn_nhịp_symptom'})
+MERGE (o1)-[r73:treatedBy]->(o2)
+SET r73.text = 'Các loại thuốc được dùng điều trị thông liên nhĩ là thuốc chẹn beta (để kiểm soát nhịp tim khi có rối loạn nhịp) và thuốc chống đông máu (để giảm nguy cơ hình thành cục máu đông gây thuyên tắc trong một số trường hợp).'
+
+MERGE (o1:treatment {id: 'thuốc_chống_đông_máu_treatment'})
+MERGE (o2:symptom {id: 'cục_máu_đông_symptom'})
+MERGE (o1)-[r74:preventedBy]->(o2)
+SET r74.text = 'Các loại thuốc được dùng điều trị thông liên nhĩ là thuốc chẹn beta (để kiểm soát nhịp tim khi có rối loạn nhịp) và thuốc chống đông máu (để giảm nguy cơ hình thành cục máu đông gây thuyên tắc trong một số trường hợp).'
+
+MERGE (o1:disease {id: 'lỗ_thông_liên_nhĩ_disease'})
+MERGE (o2:treatment {id: 'bít_lỗ_thông_treatment'})
+MERGE (o1)-[r75:treatedBy]->(o2)
+SET r75.text = 'Phẫu thuật/thủ thuật: Lỗ thông liên nhĩ có kích thước từ trung bình đến lớn sẽ được điều trị bằng cách bít lỗ thông để ngăn ngừa các biến chứng trong tương lai.'
+
+MERGE (o1:treatment {id: 'bít_lỗ_thông_treatment'})
+MERGE (o2:symptom {id: 'biến_chứng_symptom'})
+MERGE (o1)-[r76:preventedBy]->(o2)
+SET r76.text = 'Phẫu thuật/thủ thuật: Lỗ thông liên nhĩ có kích thước từ trung bình đến lớn sẽ được điều trị bằng cách bít lỗ thông để ngăn ngừa các biến chứng trong tương lai.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_tim_hở_treatment'})
+MERGE (o2:disease {id: 'lỗ_thông_liên_nhĩ_disease'})
+MERGE (o1)-[r77:treatedBy]->(o2)
+SET r77.text = 'Có 2 phương pháp can thiệp: phẫu thuật tim hở (mở ngực để tiếp cận trực tiếp với tim) và thông tim (đưa dụng cụ vào để bít lỗ thông ở vách ngăn liên nhĩ).'
+
+MERGE (o1:treatment {id: 'thông_tim_treatment'})
+MERGE (o2:disease {id: 'lỗ_thông_liên_nhĩ_disease'})
+MERGE (o1)-[r78:treatedBy]->(o2)
+SET r78.text = 'Có 2 phương pháp can thiệp: phẫu thuật tim hở (mở ngực để tiếp cận trực tiếp với tim) và thông tim (đưa dụng cụ vào để bít lỗ thông ở vách ngăn liên nhĩ).'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_đóng_lỗ_thông_liên_nhĩ_treatment'})
+MERGE (o2:disease {id: 'lỗ_thông_liên_nhĩ_disease'})
+MERGE (o1)-[r79:treatedBy]->(o2)
+SET r79.text = 'Đôi khi, phẫu thuật đóng lỗ thông liên nhĩ có thể được thực hiện bằng những đường mổ rất nhỏ (phẫu thuật xâm lấn tối thiểu) và bằng robot (phẫu thuật tim có sự hỗ trợ của robot).'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_xâm_lấn_tối_thiểu_treatment'})
+MERGE (o2:disease {id: 'lỗ_thông_liên_nhĩ_disease'})
+MERGE (o1)-[r80:treatedBy]->(o2)
+SET r80.text = 'Đôi khi, phẫu thuật đóng lỗ thông liên nhĩ có thể được thực hiện bằng những đường mổ rất nhỏ (phẫu thuật xâm lấn tối thiểu) và bằng robot (phẫu thuật tim có sự hỗ trợ của robot).'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_tim_có_sự_hỗ_trợ_của_robot_treatment'})
+MERGE (o2:disease {id: 'lỗ_thông_liên_nhĩ_disease'})
+MERGE (o1)-[r81:treatedBy]->(o2)
+SET r81.text = 'Đôi khi, phẫu thuật đóng lỗ thông liên nhĩ có thể được thực hiện bằng những đường mổ rất nhỏ (phẫu thuật xâm lấn tối thiểu) và bằng robot (phẫu thuật tim có sự hỗ trợ của robot).'
+
+MERGE (o1:disease {id: 'dị_tật_thông_liên_nhĩ_disease'})
+MERGE (o2:treatment {id: 'không_có_cách_nào_treatment'})
+MERGE (o1)-[r82:preventedBy]->(o2)
+SET r82.text = 'Trong hầu hết các trường hợp, không có cách nào để ngăn ngừa dị tật thông liên nhĩ, vì vậy nếu bạn dự định có thai, hãy lên lịch thăm khám với bác sĩ để đánh giá trước mang thai:'
+
+MERGE (o1:disease {id: 'bệnh_rubella_disease'})
+MERGE (o2:treatment {id: 'tiêm_vắc_xin_treatment'})
+MERGE (o1)-[r83:preventedBy]->(o2)
+SET r83.text = 'Đánh giá tình trạng miễn dịch với bệnh rubella: Nếu bạn chưa có kháng thể miễn dịch, cần cân nhắc việc tiêm vắc xin để phòng bệnh.'
+
+MERGE (o1:symptom {id: 'tình_trạng_sức_khỏe_symptom'})
+MERGE (o2:test {id: 'bác_sĩ_test'})
+MERGE (o1)-[r84:diagnosedBy]->(o2)
+SET r84.text = 'Thông báo với bác sĩ về tình trạng sức khỏe và các loại thuốc hiện tại mà bạn đang dùng.'
+
+MERGE (o1:symptom {id: 'vấn_đề_sức_khỏe_symptom'})
+MERGE (o2:test {id: 'theo_dõi_test'})
+MERGE (o1)-[r85:diagnosedBy]->(o2)
+SET r85.text = 'Bạn cần theo dõi các vấn đề sức khỏe định kỳ trong lúc mang thai.'
+
+MERGE (o1:treatment {id: 'thuốc_treatment'})
+MERGE (o2:lifestyle {id: 'mang_thai_lifestyle'})
+MERGE (o1)-[r86:relatedTo]->(o2)
+SET r86.text = 'Bên cạnh đó, bác sĩ sẽ khuyến cáo các loại thuốc đang dùng trước khi mang thai và có điều chỉnh phù hợp.'
+
+MERGE (o1:lifestyle {id: 'tập_thể_dục_lifestyle'})
+MERGE (o2:disease {id: 'bệnh_nhân_thông_liên_nhĩ_disease'})
+MERGE (o1)-[r87:relatedTo]->(o2)
+SET r87.text = 'Những thói quen sinh hoạt và lối sống khoa học sẽ giúp bạn kiểm soát tốt diễn tiến bệnh cũng như ngăn ngừa biến chứng:  Tập thể dục: Với bệnh nhân thông liên nhĩ, tập thể dục không phải chống chỉ định.'
+
+MERGE (o1:lifestyle {id: 'tập_thể_dục_lifestyle'})
+MERGE (o2:disease {id: 'biến_chứng_disease'})
+MERGE (o1)-[r88:preventedBy]->(o2)
+SET r88.text = 'Những thói quen sinh hoạt và lối sống khoa học sẽ giúp bạn kiểm soát tốt diễn tiến bệnh cũng như ngăn ngừa biến chứng:  Tập thể dục: Với bệnh nhân thông liên nhĩ, tập thể dục không phải chống chỉ định. Tuy nhiên, ở một số bệnh nhân có các biến chứng như loạn nhịp tim, suy tim, tăng áp phổi… việc tập luyện cần được hướng dẫn bởi các bác sĩ để đảm bảo an toàn và hiệu quả'
+
+MERGE (o1:lifestyle {id: 'tập_thể_dục_lifestyle'})
+MERGE (o2:disease {id: 'bệnh_nhân_thông_liên_nhĩ_disease'})
+MERGE (o1)-[r89:treatedBy]->(o2)
+SET r89.text = 'Những thói quen sinh hoạt và lối sống khoa học sẽ giúp bạn kiểm soát tốt diễn tiến bệnh cũng như ngăn ngừa biến chứng:  Tập thể dục: Với bệnh nhân thông liên nhĩ, tập thể dục không phải chống chỉ định. Tuy nhiên, ở một số bệnh nhân có các biến chứng như loạn nhịp tim, suy tim, tăng áp phổi… việc tập luyện cần được hướng dẫn bởi các bác sĩ để đảm bảo an toàn và hiệu quả'
+
+MERGE (o1:symptom {id: 'loạn_nhịp_tim_symptom'})
+MERGE (o2:disease {id: 'biến_chứng_disease'})
+MERGE (o1)-[r90:isSymptomOf]->(o2)
+SET r90.text = 'Những thói quen sinh hoạt và lối sống khoa học sẽ giúp bạn kiểm soát tốt diễn tiến bệnh cũng như ngăn ngừa biến chứng:  Tập thể dục: Với bệnh nhân thông liên nhĩ, tập thể dục không phải chống chỉ định. Tuy nhiên, ở một số bệnh nhân có các biến chứng như loạn nhịp tim, suy tim, tăng áp phổi… việc tập luyện cần được hướng dẫn bởi các bác sĩ để đảm bảo an toàn và hiệu quả'
+
+MERGE (o1:symptom {id: 'suy_tim_symptom'})
+MERGE (o2:disease {id: 'biến_chứng_disease'})
+MERGE (o1)-[r91:isSymptomOf]->(o2)
+SET r91.text = 'Những thói quen sinh hoạt và lối sống khoa học sẽ giúp bạn kiểm soát tốt diễn tiến bệnh cũng như ngăn ngừa biến chứng:  Tập thể dục: Với bệnh nhân thông liên nhĩ, tập thể dục không phải chống chỉ định. Tuy nhiên, ở một số bệnh nhân có các biến chứng như loạn nhịp tim, suy tim, tăng áp phổi… việc tập luyện cần được hướng dẫn bởi các bác sĩ để đảm bảo an toàn và hiệu quả'
+
+MERGE (o1:symptom {id: 'tăng_áp_phổi_symptom'})
+MERGE (o2:disease {id: 'biến_chứng_disease'})
+MERGE (o1)-[r92:isSymptomOf]->(o2)
+SET r92.text = 'Những thói quen sinh hoạt và lối sống khoa học sẽ giúp bạn kiểm soát tốt diễn tiến bệnh cũng như ngăn ngừa biến chứng:  Tập thể dục: Với bệnh nhân thông liên nhĩ, tập thể dục không phải chống chỉ định. Tuy nhiên, ở một số bệnh nhân có các biến chứng như loạn nhịp tim, suy tim, tăng áp phổi… việc tập luyện cần được hướng dẫn bởi các bác sĩ để đảm bảo an toàn và hiệu quả'
+
+MERGE (o1:lifestyle {id: 'chế_độ_dinh_dưỡng_lifestyle'})
+MERGE (o2:disease {id: 'bệnh_nhân_thông_liên_nhĩ_disease'})
+MERGE (o1)-[r93:relatedTo]->(o2)
+SET r93.text = 'Những thói quen sinh hoạt và lối sống khoa học sẽ giúp bạn kiểm soát tốt diễn tiến bệnh cũng như ngăn ngừa biến chứng:  Tập thể dục: Với bệnh nhân thông liên nhĩ, tập thể dục không phải chống chỉ định. Tuy nhiên, ở một số bệnh nhân có các biến chứng như loạn nhịp tim, suy tim, tăng áp phổi… việc tập luyện cần được hướng dẫn bởi các bác sĩ để đảm bảo an toàn và hiệu quả Chế độ dinh dưỡng: Cân bằng chế độ dinh dưỡng với nhiều nhóm chất, bổ sung thêm rau củ, ngũ cốc và hạn chế cholesterol cũng như chất béo.'
+
+MERGE (o1:lifestyle {id: 'chế_độ_dinh_dưỡng_lifestyle'})
+MERGE (o2:disease {id: 'biến_chứng_disease'})
+MERGE (o1)-[r94:preventedBy]->(o2)
+SET r94.text = 'Những thói quen sinh hoạt và lối sống khoa học sẽ giúp bạn kiểm soát tốt diễn tiến bệnh cũng như ngăn ngừa biến chứng:  Tập thể dục: Với bệnh nhân thông liên nhĩ, tập thể dục không phải chống chỉ định. Tuy nhiên, ở một số bệnh nhân có các biến chứng như loạn nhịp tim, suy tim, tăng áp phổi… việc tập luyện cần được hướng dẫn bởi các bác sĩ để đảm bảo an toàn và hiệu quả Chế độ dinh dưỡng: Cân bằng chế độ dinh dưỡng với nhiều nhóm chất, bổ sung thêm rau củ, ngũ cốc và hạn chế cholesterol cũng như chất béo.'
+
+MERGE (o1:symptom {id: 'viêm_nhiễm_symptom'})
+MERGE (o2:disease {id: 'bệnh_tim_bẩm_sinh_disease'})
+MERGE (o1)-[r95:aggravatedBy]->(o2)
+SET r95.text = 'Những thói quen sinh hoạt và lối sống khoa học sẽ giúp bạn kiểm soát tốt diễn tiến bệnh cũng như ngăn ngừa biến chứng:  Tập thể dục: Với bệnh nhân thông liên nhĩ, tập thể dục không phải chống chỉ định. Tuy nhiên, ở một số bệnh nhân có các biến chứng như loạn nhịp tim, suy tim, tăng áp phổi… việc tập luyện cần được hướng dẫn bởi các bác sĩ để đảm bảo an toàn và hiệu quả Chế độ dinh dưỡng: Cân bằng chế độ dinh dưỡng với nhiều nhóm chất, bổ sung thêm rau củ, ngũ cốc và hạn chế cholesterol cũng như chất béo. Tránh bị viêm nhiễm: bệnh tim bẩm sinh có thể làm tăng nguy cơ viêm phổi, nhiễm trùng hô hấp.'
+
+MERGE (o1:symptom {id: 'viêm_phổi_symptom'})
+MERGE (o2:symptom {id: 'viêm_nhiễm_symptom'})
+MERGE (o1)-[r96:isSymptomOf]->(o2)
+SET r96.text = 'Những thói quen sinh hoạt và lối sống khoa học sẽ giúp bạn kiểm soát tốt diễn tiến bệnh cũng như ngăn ngừa biến chứng:  Tập thể dục: Với bệnh nhân thông liên nhĩ, tập thể dục không phải chống chỉ định. Tuy nhiên, ở một số bệnh nhân có các biến chứng như loạn nhịp tim, suy tim, tăng áp phổi… việc tập luyện cần được hướng dẫn bởi các bác sĩ để đảm bảo an toàn và hiệu quả Chế độ dinh dưỡng: Cân bằng chế độ dinh dưỡng với nhiều nhóm chất, bổ sung thêm rau củ, ngũ cốc và hạn chế cholesterol cũng như chất béo. Tránh bị viêm nhiễm: bệnh tim bẩm sinh có thể làm tăng nguy cơ viêm phổi, nhiễm trùng hô hấp.'
+
+MERGE (o1:symptom {id: 'nhiễm_trùng_hô_hấp_symptom'})
+MERGE (o2:symptom {id: 'viêm_nhiễm_symptom'})
+MERGE (o1)-[r97:isSymptomOf]->(o2)
+SET r97.text = 'Những thói quen sinh hoạt và lối sống khoa học sẽ giúp bạn kiểm soát tốt diễn tiến bệnh cũng như ngăn ngừa biến chứng:  Tập thể dục: Với bệnh nhân thông liên nhĩ, tập thể dục không phải chống chỉ định. Tuy nhiên, ở một số bệnh nhân có các biến chứng như loạn nhịp tim, suy tim, tăng áp phổi… việc tập luyện cần được hướng dẫn bởi các bác sĩ để đảm bảo an toàn và hiệu quả Chế độ dinh dưỡng: Cân bằng chế độ dinh dưỡng với nhiều nhóm chất, bổ sung thêm rau củ, ngũ cốc và hạn chế cholesterol cũng như chất béo. Tránh bị viêm nhiễm: bệnh tim bẩm sinh có thể làm tăng nguy cơ viêm phổi, nhiễm trùng hô hấp.'
+
+MERGE (o1:disease {id: 'bệnh_tim_bẩm_sinh_disease'})
+MERGE (o2:treatment {id: 'phác_đồ_điều_trị_treatment'})
+MERGE (o1)-[r98:treatedBy]->(o2)
+SET r98.text = 'Những thói quen sinh hoạt và lối sống khoa học sẽ giúp bạn kiểm soát tốt diễn tiến bệnh cũng như ngăn ngừa biến chứng:  Tập thể dục: Với bệnh nhân thông liên nhĩ, tập thể dục không phải chống chỉ định. Tuy nhiên, ở một số bệnh nhân có các biến chứng như loạn nhịp tim, suy tim, tăng áp phổi… việc tập luyện cần được hướng dẫn bởi các bác sĩ để đảm bảo an toàn và hiệu quả Chế độ dinh dưỡng: Cân bằng chế độ dinh dưỡng với nhiều nhóm chất, bổ sung thêm rau củ, ngũ cốc và hạn chế cholesterol cũng như chất béo. Tránh bị viêm nhiễm: bệnh tim bẩm sinh có thể làm tăng nguy cơ viêm phổi, nhiễm trùng hô hấp. Vì vậy cần theo dõi phác đồ điều trị của bác sĩ, dùng thuốc đúng với kê toa để đảm bảo hiệu quả điều trị tốt nhất.'
+
+MERGE (o1:treatment {id: 'thuốc_treatment'})
+MERGE (o2:disease {id: 'bệnh_tim_bẩm_sinh_disease'})
+MERGE (o1)-[r99:treatedBy]->(o2)
+SET r99.text = 'Những thói quen sinh hoạt và lối sống khoa học sẽ giúp bạn kiểm soát tốt diễn tiến bệnh cũng như ngăn ngừa biến chứng:  Tập thể dục: Với bệnh nhân thông liên nhĩ, tập thể dục không phải chống chỉ định. Tuy nhiên, ở một số bệnh nhân có các biến chứng như loạn nhịp tim, suy tim, tăng áp phổi… việc tập luyện cần được hướng dẫn bởi các bác sĩ để đảm bảo an toàn và hiệu quả Chế độ dinh dưỡng: Cân bằng chế độ dinh dưỡng với nhiều nhóm chất, bổ sung thêm rau củ, ngũ cốc và hạn chế cholesterol cũng như chất béo. Tránh bị viêm nhiễm: bệnh tim bẩm sinh có thể làm tăng nguy cơ viêm phổi, nhiễm trùng hô hấp. Vì vậy cần theo dõi phác đồ điều trị của bác sĩ, dùng thuốc đúng với kê toa để đảm bảo hiệu quả điều trị tốt nhất.'
+
+MERGE (o1:organ {id: 'trung_tâm_tim_mạch_bvđk_tâm_anh_organ'})
+MERGE (o2:organ {id: 'bvđk_tâm_anh_organ'})
+MERGE (o1)-[r100:locatedIn]->(o2)
+SET r100.text = 'Với mục tiêu phát hiện sớm - chẩn đoán chính xác - điều trị kịp thời các bệnh lý tim mạch và nguy cơ dẫn đến các bệnh tim mạch, Trung tâm Tim mạch BVĐK Tâm Anh được thành lập, quy tụ đội ngũ chuyên gia giàu kinh nghiệm, đầu tư hệ thống máy móc hiện đại, tiên tiến, hỗ trợ bác sĩ chẩn đoán và đưa ra phác đồ điều trị tốt nhất cho bệnh nhân từ trẻ sơ sinh, trẻ nhỏ đến người lớn, người cao tuổi…'
+
+MERGE (o1:organ {id: 'trung_tâm_tim_mạch_bvđk_tâm_anh_organ'})
+MERGE (o2:disease {id: 'bệnh_lý_tim_mạch_disease'})
+MERGE (o1)-[r101:diagnosedBy]->(o2)
+SET r101.text = 'Với mục tiêu phát hiện sớm - chẩn đoán chính xác - điều trị kịp thời các bệnh lý tim mạch và nguy cơ dẫn đến các bệnh tim mạch, Trung tâm Tim mạch BVĐK Tâm Anh được thành lập, quy tụ đội ngũ chuyên gia giàu kinh nghiệm, đầu tư hệ thống máy móc hiện đại, tiên tiến, hỗ trợ bác sĩ chẩn đoán và đưa ra phác đồ điều trị tốt nhất cho bệnh nhân từ trẻ sơ sinh, trẻ nhỏ đến người lớn, người cao tuổi…'
+
+MERGE (o1:organ {id: 'trung_tâm_tim_mạch_bvđk_tâm_anh_organ'})
+MERGE (o2:disease {id: 'bệnh_lý_tim_mạch_disease'})
+MERGE (o1)-[r102:treatedBy]->(o2)
+SET r102.text = 'Với mục tiêu phát hiện sớm - chẩn đoán chính xác - điều trị kịp thời các bệnh lý tim mạch và nguy cơ dẫn đến các bệnh tim mạch, Trung tâm Tim mạch BVĐK Tâm Anh được thành lập, quy tụ đội ngũ chuyên gia giàu kinh nghiệm, đầu tư hệ thống máy móc hiện đại, tiên tiến, hỗ trợ bác sĩ chẩn đoán và đưa ra phác đồ điều trị tốt nhất cho bệnh nhân từ trẻ sơ sinh, trẻ nhỏ đến người lớn, người cao tuổi…'
+
+MERGE (o1:treatment {id: 'chuyên_gia_treatment'})
+MERGE (o2:disease {id: 'bệnh_lý_tim_mạch_disease'})
+MERGE (o1)-[r103:treatedBy]->(o2)
+SET r103.text = 'Với mục tiêu phát hiện sớm - chẩn đoán chính xác - điều trị kịp thời các bệnh lý tim mạch và nguy cơ dẫn đến các bệnh tim mạch, Trung tâm Tim mạch BVĐK Tâm Anh được thành lập, quy tụ đội ngũ chuyên gia giàu kinh nghiệm, đầu tư hệ thống máy móc hiện đại, tiên tiến, hỗ trợ bác sĩ chẩn đoán và đưa ra phác đồ điều trị tốt nhất cho bệnh nhân từ trẻ sơ sinh, trẻ nhỏ đến người lớn, người cao tuổi…'
+
+MERGE (o1:treatment {id: 'máy_móc_treatment'})
+MERGE (o2:disease {id: 'bệnh_lý_tim_mạch_disease'})
+MERGE (o1)-[r104:treatedBy]->(o2)
+SET r104.text = 'Với mục tiêu phát hiện sớm - chẩn đoán chính xác - điều trị kịp thời các bệnh lý tim mạch và nguy cơ dẫn đến các bệnh tim mạch, Trung tâm Tim mạch BVĐK Tâm Anh được thành lập, quy tụ đội ngũ chuyên gia giàu kinh nghiệm, đầu tư hệ thống máy móc hiện đại, tiên tiến, hỗ trợ bác sĩ chẩn đoán và đưa ra phác đồ điều trị tốt nhất cho bệnh nhân từ trẻ sơ sinh, trẻ nhỏ đến người lớn, người cao tuổi…'
+
+MERGE (o1:treatment {id: 'bác_sĩ_treatment'})
+MERGE (o2:disease {id: 'bệnh_lý_tim_mạch_disease'})
+MERGE (o1)-[r105:treatedBy]->(o2)
+SET r105.text = 'Với mục tiêu phát hiện sớm - chẩn đoán chính xác - điều trị kịp thời các bệnh lý tim mạch và nguy cơ dẫn đến các bệnh tim mạch, Trung tâm Tim mạch BVĐK Tâm Anh được thành lập, quy tụ đội ngũ chuyên gia giàu kinh nghiệm, đầu tư hệ thống máy móc hiện đại, tiên tiến, hỗ trợ bác sĩ chẩn đoán và đưa ra phác đồ điều trị tốt nhất cho bệnh nhân từ trẻ sơ sinh, trẻ nhỏ đến người lớn, người cao tuổi…'
+
+MERGE (o1:disease {id: 'trẻ_sơ_sinh_disease'})
+MERGE (o2:organ {id: 'trung_tâm_tim_mạch_bvđk_tâm_anh_organ'})
+MERGE (o1)-[r106:treatedBy]->(o2)
+SET r106.text = 'Với mục tiêu phát hiện sớm - chẩn đoán chính xác - điều trị kịp thời các bệnh lý tim mạch và nguy cơ dẫn đến các bệnh tim mạch, Trung tâm Tim mạch BVĐK Tâm Anh được thành lập, quy tụ đội ngũ chuyên gia giàu kinh nghiệm, đầu tư hệ thống máy móc hiện đại, tiên tiến, hỗ trợ bác sĩ chẩn đoán và đưa ra phác đồ điều trị tốt nhất cho bệnh nhân từ trẻ sơ sinh, trẻ nhỏ đến người lớn, người cao tuổi…'
+
+MERGE (o1:disease {id: 'trẻ_nhỏ_disease'})
+MERGE (o2:organ {id: 'trung_tâm_tim_mạch_bvđk_tâm_anh_organ'})
+MERGE (o1)-[r107:treatedBy]->(o2)
+SET r107.text = 'Với mục tiêu phát hiện sớm - chẩn đoán chính xác - điều trị kịp thời các bệnh lý tim mạch và nguy cơ dẫn đến các bệnh tim mạch, Trung tâm Tim mạch BVĐK Tâm Anh được thành lập, quy tụ đội ngũ chuyên gia giàu kinh nghiệm, đầu tư hệ thống máy móc hiện đại, tiên tiến, hỗ trợ bác sĩ chẩn đoán và đưa ra phác đồ điều trị tốt nhất cho bệnh nhân từ trẻ sơ sinh, trẻ nhỏ đến người lớn, người cao tuổi…'
+
+MERGE (o1:disease {id: 'người_lớn_disease'})
+MERGE (o2:organ {id: 'trung_tâm_tim_mạch_bvđk_tâm_anh_organ'})
+MERGE (o1)-[r108:treatedBy]->(o2)
+SET r108.text = 'Với mục tiêu phát hiện sớm - chẩn đoán chính xác - điều trị kịp thời các bệnh lý tim mạch và nguy cơ dẫn đến các bệnh tim mạch, Trung tâm Tim mạch BVĐK Tâm Anh được thành lập, quy tụ đội ngũ chuyên gia giàu kinh nghiệm, đầu tư hệ thống máy móc hiện đại, tiên tiến, hỗ trợ bác sĩ chẩn đoán và đưa ra phác đồ điều trị tốt nhất cho bệnh nhân từ trẻ sơ sinh, trẻ nhỏ đến người lớn, người cao tuổi…'

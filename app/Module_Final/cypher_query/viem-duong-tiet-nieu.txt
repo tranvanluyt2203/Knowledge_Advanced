@@ -1,0 +1,475 @@
+
+MERGE (o1:disease {id: 'viêm_đường_tiết_niệu_disease'})
+MERGE (o2:treatment {id: 'điều_trị_treatment'})
+MERGE (o1)-[r0:treatedBy]->(o2)
+SET r0.text = 'Viêm đường tiết niệu là bệnh lý khá phổ biến và có thể điều trị khỏi hoàn toàn.'
+
+MERGE (o1:disease {id: 'viêm_đường_tiết_niệu_disease'})
+MERGE (o2:lifestyle {id: 'không_phát_hiện_và_điều_trị_kịp_thời_lifestyle'})
+MERGE (o1)-[r1:causedBy]->(o2)
+SET r1.text = 'Tuy nhiên, nếu không phát hiện và điều trị kịp thời, tình trạng này có thể gây ra nhiều biến chứng nghiêm trọng, thậm chí là tử vong.'
+
+MERGE (o1:disease {id: 'viêm_đường_tiết_niệu_disease'})
+MERGE (o2:cause {id: 'vi_khuẩn_cause'})
+MERGE (o1)-[r2:causedBy]->(o2)
+SET r2.text = 'Viêm đường tiết niệu hay viêm đường tiểu là tình trạng xảy ra khi nước tiểu có sự xâm nhập của vi khuẩn khiến một số cơ quan trong hệ tiết niệu bị viêm nhiễm.'
+
+MERGE (o1:disease {id: 'viêm_đường_tiết_niệu_disease'})
+MERGE (o2:organ {id: 'hệ_tiết_niệu_organ'})
+MERGE (o1)-[r3:affects]->(o2)
+SET r3.text = 'Viêm đường tiết niệu hay viêm đường tiểu là tình trạng xảy ra khi nước tiểu có sự xâm nhập của vi khuẩn khiến một số cơ quan trong hệ tiết niệu bị viêm nhiễm.'
+
+MERGE (o1:disease {id: 'viêm_đường_tiết_niệu_trên_disease'})
+MERGE (o2:organ {id: 'thận_organ'})
+MERGE (o1)-[r4:locatedIn]->(o2)
+SET r4.text = 'Phân loại theo vị trí: Viêm đường tiết niệu trên (viêm thận - bể thận cấp, viêm thận - bể thận mạn tính, áp xe thận, thận ứ mủ) và viêm đường tiết niệu dưới (viêm bàng quang, viêm niệu đạo, viêm tinh hoàn, viêm tiền liệt tuyến).'
+
+MERGE (o1:disease {id: 'viêm_đường_tiết_niệu_trên_disease'})
+MERGE (o2:disease {id: 'viêm_thận_-_bể_thận_cấp_disease'})
+MERGE (o1)-[r5:isSymptomOf]->(o2)
+SET r5.text = 'Phân loại theo vị trí: Viêm đường tiết niệu trên (viêm thận - bể thận cấp, viêm thận - bể thận mạn tính, áp xe thận, thận ứ mủ) và viêm đường tiết niệu dưới (viêm bàng quang, viêm niệu đạo, viêm tinh hoàn, viêm tiền liệt tuyến).'
+
+MERGE (o1:disease {id: 'viêm_đường_tiết_niệu_trên_disease'})
+MERGE (o2:disease {id: 'viêm_thận_-_bể_thận_mạn_tính_disease'})
+MERGE (o1)-[r6:isSymptomOf]->(o2)
+SET r6.text = 'Phân loại theo vị trí: Viêm đường tiết niệu trên (viêm thận - bể thận cấp, viêm thận - bể thận mạn tính, áp xe thận, thận ứ mủ) và viêm đường tiết niệu dưới (viêm bàng quang, viêm niệu đạo, viêm tinh hoàn, viêm tiền liệt tuyến).'
+
+MERGE (o1:disease {id: 'viêm_đường_tiết_niệu_trên_disease'})
+MERGE (o2:disease {id: 'áp_xe_thận_disease'})
+MERGE (o1)-[r7:isSymptomOf]->(o2)
+SET r7.text = 'Phân loại theo vị trí: Viêm đường tiết niệu trên (viêm thận - bể thận cấp, viêm thận - bể thận mạn tính, áp xe thận, thận ứ mủ) và viêm đường tiết niệu dưới (viêm bàng quang, viêm niệu đạo, viêm tinh hoàn, viêm tiền liệt tuyến).'
+
+MERGE (o1:disease {id: 'viêm_đường_tiết_niệu_trên_disease'})
+MERGE (o2:disease {id: 'thận_ứ_mủ_disease'})
+MERGE (o1)-[r8:isSymptomOf]->(o2)
+SET r8.text = 'Phân loại theo vị trí: Viêm đường tiết niệu trên (viêm thận - bể thận cấp, viêm thận - bể thận mạn tính, áp xe thận, thận ứ mủ) và viêm đường tiết niệu dưới (viêm bàng quang, viêm niệu đạo, viêm tinh hoàn, viêm tiền liệt tuyến).'
+
+MERGE (o1:disease {id: 'viêm_đường_tiết_niệu_dưới_disease'})
+MERGE (o2:organ {id: 'bàng_quang_organ'})
+MERGE (o1)-[r9:locatedIn]->(o2)
+SET r9.text = 'Phân loại theo vị trí: Viêm đường tiết niệu trên (viêm thận - bể thận cấp, viêm thận - bể thận mạn tính, áp xe thận, thận ứ mủ) và viêm đường tiết niệu dưới (viêm bàng quang, viêm niệu đạo, viêm tinh hoàn, viêm tiền liệt tuyến).'
+
+MERGE (o1:disease {id: 'viêm_đường_tiết_niệu_dưới_disease'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_disease'})
+MERGE (o1)-[r10:isSymptomOf]->(o2)
+SET r10.text = 'Phân loại theo vị trí: Viêm đường tiết niệu trên (viêm thận - bể thận cấp, viêm thận - bể thận mạn tính, áp xe thận, thận ứ mủ) và viêm đường tiết niệu dưới (viêm bàng quang, viêm niệu đạo, viêm tinh hoàn, viêm tiền liệt tuyến).'
+
+MERGE (o1:disease {id: 'viêm_đường_tiết_niệu_dưới_disease'})
+MERGE (o2:disease {id: 'viêm_niệu_đạo_disease'})
+MERGE (o1)-[r11:isSymptomOf]->(o2)
+SET r11.text = 'Phân loại theo vị trí: Viêm đường tiết niệu trên (viêm thận - bể thận cấp, viêm thận - bể thận mạn tính, áp xe thận, thận ứ mủ) và viêm đường tiết niệu dưới (viêm bàng quang, viêm niệu đạo, viêm tinh hoàn, viêm tiền liệt tuyến).'
+
+MERGE (o1:disease {id: 'viêm_đường_tiết_niệu_dưới_disease'})
+MERGE (o2:disease {id: 'viêm_tinh_hoàn_disease'})
+MERGE (o1)-[r12:isSymptomOf]->(o2)
+SET r12.text = 'Phân loại theo vị trí: Viêm đường tiết niệu trên (viêm thận - bể thận cấp, viêm thận - bể thận mạn tính, áp xe thận, thận ứ mủ) và viêm đường tiết niệu dưới (viêm bàng quang, viêm niệu đạo, viêm tinh hoàn, viêm tiền liệt tuyến).'
+
+MERGE (o1:disease {id: 'viêm_đường_tiết_niệu_dưới_disease'})
+MERGE (o2:disease {id: 'viêm_tiền_liệt_tuyến_disease'})
+MERGE (o1)-[r13:isSymptomOf]->(o2)
+SET r13.text = 'Phân loại theo vị trí: Viêm đường tiết niệu trên (viêm thận - bể thận cấp, viêm thận - bể thận mạn tính, áp xe thận, thận ứ mủ) và viêm đường tiết niệu dưới (viêm bàng quang, viêm niệu đạo, viêm tinh hoàn, viêm tiền liệt tuyến).'
+
+MERGE (o1:disease {id: 'nhiễm_khuẩn_niệu_đơn_giản_disease'})
+MERGE (o2:disease {id: 'nhiễm_khuẩn_niệu_phức_tạp_disease'})
+MERGE (o1)-[r14:relatedTo]->(o2)
+SET r14.text = 'Phân loại theo diễn biến: Nhiễm khuẩn niệu đơn giản và nhiễm khuẩn niệu phức tạp.'
+
+MERGE (o1:disease {id: 'nhiễm_khuẩn_niệu_phức_tạp_disease'})
+MERGE (o2:cause {id: 'bất_thường_về_hệ_tiết_niệu_cause'})
+MERGE (o1)-[r15:causedBy]->(o2)
+SET r15.text = 'Nhiễm khuẩn niệu phức tạp thường gặp ở những người có bất thường về hệ tiết niệu gây tắc nghẽn đường tiết niệu như bàng quang thần kinh, sỏi tiết niệu, phì đại tuyến tiền liệt, phụ nữ mang thai, đặt Catheter đường tiết niệu.'
+
+MERGE (o1:disease {id: 'nhiễm_khuẩn_niệu_phức_tạp_disease'})
+MERGE (o2:disease {id: 'bàng_quang_thần_kinh_disease'})
+MERGE (o1)-[r16:causedBy]->(o2)
+SET r16.text = 'Nhiễm khuẩn niệu phức tạp thường gặp ở những người có bất thường về hệ tiết niệu gây tắc nghẽn đường tiết niệu như bàng quang thần kinh, sỏi tiết niệu, phì đại tuyến tiền liệt, phụ nữ mang thai, đặt Catheter đường tiết niệu.'
+
+MERGE (o1:disease {id: 'nhiễm_khuẩn_niệu_phức_tạp_disease'})
+MERGE (o2:disease {id: 'sỏi_tiết_niệu_disease'})
+MERGE (o1)-[r17:causedBy]->(o2)
+SET r17.text = 'Nhiễm khuẩn niệu phức tạp thường gặp ở những người có bất thường về hệ tiết niệu gây tắc nghẽn đường tiết niệu như bàng quang thần kinh, sỏi tiết niệu, phì đại tuyến tiền liệt, phụ nữ mang thai, đặt Catheter đường tiết niệu.'
+
+MERGE (o1:disease {id: 'nhiễm_khuẩn_niệu_phức_tạp_disease'})
+MERGE (o2:disease {id: 'phì_đại_tuyến_tiền_liệt_disease'})
+MERGE (o1)-[r18:causedBy]->(o2)
+SET r18.text = 'Nhiễm khuẩn niệu phức tạp thường gặp ở những người có bất thường về hệ tiết niệu gây tắc nghẽn đường tiết niệu như bàng quang thần kinh, sỏi tiết niệu, phì đại tuyến tiền liệt, phụ nữ mang thai, đặt Catheter đường tiết niệu.'
+
+MERGE (o1:disease {id: 'nhiễm_khuẩn_niệu_phức_tạp_disease'})
+MERGE (o2:lifestyle {id: 'phụ_nữ_mang_thai_lifestyle'})
+MERGE (o1)-[r19:causedBy]->(o2)
+SET r19.text = 'Nhiễm khuẩn niệu phức tạp thường gặp ở những người có bất thường về hệ tiết niệu gây tắc nghẽn đường tiết niệu như bàng quang thần kinh, sỏi tiết niệu, phì đại tuyến tiền liệt, phụ nữ mang thai, đặt Catheter đường tiết niệu.'
+
+MERGE (o1:disease {id: 'nhiễm_khuẩn_niệu_phức_tạp_disease'})
+MERGE (o2:treatment {id: 'đặt_catheter_đường_tiết_niệu_treatment'})
+MERGE (o1)-[r20:causedBy]->(o2)
+SET r20.text = 'Nhiễm khuẩn niệu phức tạp thường gặp ở những người có bất thường về hệ tiết niệu gây tắc nghẽn đường tiết niệu như bàng quang thần kinh, sỏi tiết niệu, phì đại tuyến tiền liệt, phụ nữ mang thai, đặt Catheter đường tiết niệu.'
+
+MERGE (o1:disease {id: 'viêm_đường_tiết_niệu_disease'})
+MERGE (o2:cause {id: 'vi_khuẩn_cause'})
+MERGE (o1)-[r21:causedBy]->(o2)
+SET r21.text = 'Khoảng 95% nguyên nhân gây viêm đường tiết niệu là do vi khuẩn bội nhiễm ngược dòng niệu đạo vào bàng quang (5% từ đường máu), trong đó Escherichia coli (E.coli) chiếm 80% tác nhân gây bệnh.'
+
+MERGE (o1:disease {id: 'viêm_đường_tiết_niệu_disease'})
+MERGE (o2:cause {id: 'escherichia_coli_(e.coli)_cause'})
+MERGE (o1)-[r22:causedBy]->(o2)
+SET r22.text = 'Khoảng 95% nguyên nhân gây viêm đường tiết niệu là do vi khuẩn bội nhiễm ngược dòng niệu đạo vào bàng quang (5% từ đường máu), trong đó Escherichia coli (E.coli) chiếm 80% tác nhân gây bệnh.'
+
+MERGE (o1:cause {id: 'escherichia_coli_cause'})
+MERGE (o2:organ {id: 'đường_ruột_organ'})
+MERGE (o1)-[r23:locatedIn]->(o2)
+SET r23.text = 'Escherichia Coli là vi khuẩn thường trú ở đường ruột, chúng cũng xuất hiện nhiều ở trên da gần hậu môn và có khả năng thâm nhập vào đường tiết niệu nếu bạn không biết vệ sinh đúng cách.'
+
+MERGE (o1:cause {id: 'escherichia_coli_cause'})
+MERGE (o2:organ {id: 'da_gần_hậu_môn_organ'})
+MERGE (o1)-[r24:locatedIn]->(o2)
+SET r24.text = 'Escherichia Coli là vi khuẩn thường trú ở đường ruột, chúng cũng xuất hiện nhiều ở trên da gần hậu môn và có khả năng thâm nhập vào đường tiết niệu nếu bạn không biết vệ sinh đúng cách.'
+
+MERGE (o1:cause {id: 'escherichia_coli_cause'})
+MERGE (o2:organ {id: 'đường_tiết_niệu_organ'})
+MERGE (o1)-[r25:affects]->(o2)
+SET r25.text = 'Escherichia Coli là vi khuẩn thường trú ở đường ruột, chúng cũng xuất hiện nhiều ở trên da gần hậu môn và có khả năng thâm nhập vào đường tiết niệu nếu bạn không biết vệ sinh đúng cách.'
+
+MERGE (o1:disease {id: 'viêm_nhiễm_disease'})
+MERGE (o2:lifestyle {id: 'vị_trí_đường_tiểu_và_hậu_môn_của_nữ_gần_hơn_nam_lifestyle'})
+MERGE (o1)-[r26:aggravatedBy]->(o2)
+SET r26.text = 'Vị trí đường tiểu và hậu môn của nữ gần hơn nam nên nguy cơ bị viêm nhiễm cũng sẽ cao hơn.'
+
+MERGE (o1:disease {id: 'viêm_quy_đầu_disease'})
+MERGE (o2:lifestyle {id: 'vệ_sinh_không_đúng_cách_lifestyle'})
+MERGE (o1)-[r27:causedBy]->(o2)
+SET r27.text = 'Bị viêm quy đầu, da quy đầu do vệ sinh không đúng cách'
+
+MERGE (o1:disease {id: 'viêm_da_quy_đầu_disease'})
+MERGE (o2:lifestyle {id: 'vệ_sinh_không_đúng_cách_lifestyle'})
+MERGE (o1)-[r28:causedBy]->(o2)
+SET r28.text = 'Bị viêm quy đầu, da quy đầu do vệ sinh không đúng cách'
+
+MERGE (o1:cause {id: 'chấn_thương_dương_vật_cause'})
+MERGE (o2:disease {id: 'viêm_niệu_đạo_disease'})
+MERGE (o1)-[r29:causes]->(o2)
+SET r29.text = 'Chấn thương dương vật do quan hệ tình dục thô bạo, gây kích thích niệu đạo dẫn tới tình trạng viêm niệu đạo.'
+
+MERGE (o1:lifestyle {id: 'quan_hệ_tình_dục_thô_bạo_lifestyle'})
+MERGE (o2:disease {id: 'viêm_niệu_đạo_disease'})
+MERGE (o1)-[r30:causes]->(o2)
+SET r30.text = 'Chấn thương dương vật do quan hệ tình dục thô bạo, gây kích thích niệu đạo dẫn tới tình trạng viêm niệu đạo.'
+
+MERGE (o1:cause {id: 'kích_thích_niệu_đạo_cause'})
+MERGE (o2:disease {id: 'viêm_niệu_đạo_disease'})
+MERGE (o1)-[r31:causes]->(o2)
+SET r31.text = 'Chấn thương dương vật do quan hệ tình dục thô bạo, gây kích thích niệu đạo dẫn tới tình trạng viêm niệu đạo.'
+
+MERGE (o1:cause {id: 'sỏi_cause'})
+MERGE (o2:disease {id: 'viêm_đường_tiết_niệu_disease'})
+MERGE (o1)-[r32:causes]->(o2)
+SET r32.text = 'Các yếu tố làm tăng nguy cơ mắc bệnh: sỏi, phì đại tuyến tiền liệt, bàng quang thần kinh, hẹp niệu quản, hẹp niệu đạo…'
+
+MERGE (o1:disease {id: 'phì_đại_tuyến_tiền_liệt_disease'})
+MERGE (o2:disease {id: 'viêm_đường_tiết_niệu_disease'})
+MERGE (o1)-[r33:causes]->(o2)
+SET r33.text = 'Các yếu tố làm tăng nguy cơ mắc bệnh: sỏi, phì đại tuyến tiền liệt, bàng quang thần kinh, hẹp niệu quản, hẹp niệu đạo…'
+
+MERGE (o1:disease {id: 'bàng_quang_thần_kinh_disease'})
+MERGE (o2:disease {id: 'viêm_đường_tiết_niệu_disease'})
+MERGE (o1)-[r34:causes]->(o2)
+SET r34.text = 'Các yếu tố làm tăng nguy cơ mắc bệnh: sỏi, phì đại tuyến tiền liệt, bàng quang thần kinh, hẹp niệu quản, hẹp niệu đạo…'
+
+MERGE (o1:disease {id: 'hẹp_niệu_quản_disease'})
+MERGE (o2:disease {id: 'viêm_đường_tiết_niệu_disease'})
+MERGE (o1)-[r35:causes]->(o2)
+SET r35.text = 'Các yếu tố làm tăng nguy cơ mắc bệnh: sỏi, phì đại tuyến tiền liệt, bàng quang thần kinh, hẹp niệu quản, hẹp niệu đạo…'
+
+MERGE (o1:disease {id: 'hẹp_niệu_đạo_disease'})
+MERGE (o2:disease {id: 'viêm_đường_tiết_niệu_disease'})
+MERGE (o1)-[r36:causes]->(o2)
+SET r36.text = 'Các yếu tố làm tăng nguy cơ mắc bệnh: sỏi, phì đại tuyến tiền liệt, bàng quang thần kinh, hẹp niệu quản, hẹp niệu đạo…'
+
+MERGE (o1:lifestyle {id: 'vệ_sinh_vùng_kín_từ_sau_ra_trước_lifestyle'})
+MERGE (o2:disease {id: 'viêm_đường_tiết_niệu_disease'})
+MERGE (o1)-[r37:causes]->(o2)
+SET r37.text = 'Thói quen vệ sinh vùng kín từ sau ra trước, nhịn tiểu quá lâu, vệ sinh cá nhân không sạch sẽ… sẽ tạo điều kiện cho vi khuẩn xâm nhập phát triển và gây viêm nhiễm đường tiết niệu.'
+
+MERGE (o1:lifestyle {id: 'nhịn_tiểu_quá_lâu_lifestyle'})
+MERGE (o2:disease {id: 'viêm_đường_tiết_niệu_disease'})
+MERGE (o1)-[r38:causes]->(o2)
+SET r38.text = 'Thói quen vệ sinh vùng kín từ sau ra trước, nhịn tiểu quá lâu, vệ sinh cá nhân không sạch sẽ… sẽ tạo điều kiện cho vi khuẩn xâm nhập phát triển và gây viêm nhiễm đường tiết niệu.'
+
+MERGE (o1:lifestyle {id: 'vệ_sinh_cá_nhân_không_sạch_sẽ_lifestyle'})
+MERGE (o2:disease {id: 'viêm_đường_tiết_niệu_disease'})
+MERGE (o1)-[r39:causes]->(o2)
+SET r39.text = 'Thói quen vệ sinh vùng kín từ sau ra trước, nhịn tiểu quá lâu, vệ sinh cá nhân không sạch sẽ… sẽ tạo điều kiện cho vi khuẩn xâm nhập phát triển và gây viêm nhiễm đường tiết niệu.'
+
+MERGE (o1:lifestyle {id: 'quan_hệ_tình_dục_không_lành_mạnh_lifestyle'})
+MERGE (o2:disease {id: 'viêm_đường_tiết_niệu_disease'})
+MERGE (o1)-[r40:causes]->(o2)
+SET r40.text = 'Quan hệ tình dục không lành mạnh, không vệ sinh vùng kín trước và sau khi giao hợp.'
+
+MERGE (o1:lifestyle {id: 'không_vệ_sinh_vùng_kín_trước_và_sau_khi_giao_hợp_lifestyle'})
+MERGE (o2:disease {id: 'viêm_đường_tiết_niệu_disease'})
+MERGE (o1)-[r41:causes]->(o2)
+SET r41.text = 'Quan hệ tình dục không lành mạnh, không vệ sinh vùng kín trước và sau khi giao hợp.'
+
+MERGE (o1:cause {id: 'băng_vệ_sinh_kém_chất_lượng_cause'})
+MERGE (o2:disease {id: 'viêm_đường_tiết_niệu_disease'})
+MERGE (o1)-[r42:causes]->(o2)
+SET r42.text = 'Phụ nữ trong kỳ kinh nguyệt sử dụng băng vệ sinh kém chất lượng hoặc không thay băng vệ sinh sau mỗi 3 - 4 tiếng.'
+
+MERGE (o1:lifestyle {id: 'không_thay_băng_vệ_sinh_sau_mỗi_3_-_4_tiếng_lifestyle'})
+MERGE (o2:disease {id: 'viêm_đường_tiết_niệu_disease'})
+MERGE (o1)-[r43:causes]->(o2)
+SET r43.text = 'Phụ nữ trong kỳ kinh nguyệt sử dụng băng vệ sinh kém chất lượng hoặc không thay băng vệ sinh sau mỗi 3 - 4 tiếng.'
+
+MERGE (o1:disease {id: 'sỏi_đường_tiết_niệu_disease'})
+MERGE (o2:disease {id: 'viêm_đường_tiết_niệu_disease'})
+MERGE (o1)-[r44:causes]->(o2)
+SET r44.text = 'Một số yếu tố nguy cơ: sỏi đường tiết niệu, bàng quang thần kinh, hẹp niệu quản, có thai.'
+
+MERGE (o1:disease {id: 'bàng_quang_thần_kinh_disease'})
+MERGE (o2:disease {id: 'viêm_đường_tiết_niệu_disease'})
+MERGE (o1)-[r45:causes]->(o2)
+SET r45.text = 'Một số yếu tố nguy cơ: sỏi đường tiết niệu, bàng quang thần kinh, hẹp niệu quản, có thai.'
+
+MERGE (o1:disease {id: 'hẹp_niệu_quản_disease'})
+MERGE (o2:disease {id: 'viêm_đường_tiết_niệu_disease'})
+MERGE (o1)-[r46:causes]->(o2)
+SET r46.text = 'Một số yếu tố nguy cơ: sỏi đường tiết niệu, bàng quang thần kinh, hẹp niệu quản, có thai.'
+
+MERGE (o1:lifestyle {id: 'có_thai_lifestyle'})
+MERGE (o2:disease {id: 'viêm_đường_tiết_niệu_disease'})
+MERGE (o1)-[r47:causes]->(o2)
+SET r47.text = 'Một số yếu tố nguy cơ: sỏi đường tiết niệu, bàng quang thần kinh, hẹp niệu quản, có thai.'
+
+MERGE (o1:disease {id: 'viêm_tiết_niệu_khi_mang_thai_disease'})
+MERGE (o2:lifestyle {id: 'thai_phụ_lifestyle'})
+MERGE (o1)-[r48:relatedTo]->(o2)
+SET r48.text = 'Viêm tiết niệu khi mang thai là một trong những tình trạng thường gặp nhất ở thai phụ.'
+
+MERGE (o1:disease {id: 'viêm_tiết_niệu_khi_mang_thai_disease'})
+MERGE (o2:disease {id: 'viêm_bể_thận_disease'})
+MERGE (o1)-[r49:causes]->(o2)
+SET r49.text = 'Bệnh làm tăng nguy cơ mắc các biến chứng nguy hiểm cho cả và bé như viêm bể thận, sảy thai, sinh non, nhiễm khuẩn sơ sinh,&#8230;'
+
+MERGE (o1:disease {id: 'viêm_tiết_niệu_khi_mang_thai_disease'})
+MERGE (o2:disease {id: 'sảy_thai_disease'})
+MERGE (o1)-[r50:causes]->(o2)
+SET r50.text = 'Bệnh làm tăng nguy cơ mắc các biến chứng nguy hiểm cho cả và bé như viêm bể thận, sảy thai, sinh non, nhiễm khuẩn sơ sinh,&#8230;'
+
+MERGE (o1:disease {id: 'viêm_tiết_niệu_khi_mang_thai_disease'})
+MERGE (o2:disease {id: 'sinh_non_disease'})
+MERGE (o1)-[r51:causes]->(o2)
+SET r51.text = 'Bệnh làm tăng nguy cơ mắc các biến chứng nguy hiểm cho cả và bé như viêm bể thận, sảy thai, sinh non, nhiễm khuẩn sơ sinh,&#8230;'
+
+MERGE (o1:disease {id: 'viêm_tiết_niệu_đơn_giản_disease'})
+MERGE (o2:lifestyle {id: 'phụ_nữ_trẻ_lifestyle'})
+MERGE (o1)-[r52:associatedWith]->(o2)
+SET r52.text = 'Viêm tiết niệu đơn giản, xảy ra ở phụ nữ trẻ và không có bất thường về đường tiết niệu thì đa phần không gây biến chứng.'
+
+MERGE (o1:disease {id: 'viêm_tiết_niệu_đơn_giản_disease'})
+MERGE (o2:symptom {id: 'không_có_bất_thường_về_đường_tiết_niệu_symptom'})
+MERGE (o1)-[r53:associatedWith]->(o2)
+SET r53.text = 'Viêm tiết niệu đơn giản, xảy ra ở phụ nữ trẻ và không có bất thường về đường tiết niệu thì đa phần không gây biến chứng.'
+
+MERGE (o1:disease {id: 'viêm_tiết_niệu_đơn_giản_disease'})
+MERGE (o2:symptom {id: 'không_gây_biến_chứng_symptom'})
+MERGE (o1)-[r54:associatedWith]->(o2)
+SET r54.text = 'Viêm tiết niệu đơn giản, xảy ra ở phụ nữ trẻ và không có bất thường về đường tiết niệu thì đa phần không gây biến chứng.'
+
+MERGE (o1:disease {id: 'nhiễm_trùng_tiết_niệu_phức_tạp_disease'})
+MERGE (o2:cause {id: 'có_sẵn_các_yếu_tố_thuận_lợi_cause'})
+MERGE (o1)-[r55:associatedWith]->(o2)
+SET r55.text = 'Ngược lại, nhiễm trùng tiết niệu phức tạp ở những người bệnh có sẵn các yếu tố thuận lợi trước đó có thể dẫn tới nhiều biến chứng nặng, thậm chí là gây nguy hiểm đến tính mạng nếu không được can thiệp điều trị kịp thời.'
+
+MERGE (o1:disease {id: 'nhiễm_trùng_tiết_niệu_phức_tạp_disease'})
+MERGE (o2:symptom {id: 'biến_chứng_nặng_symptom'})
+MERGE (o1)-[r56:associatedWith]->(o2)
+SET r56.text = 'Ngược lại, nhiễm trùng tiết niệu phức tạp ở những người bệnh có sẵn các yếu tố thuận lợi trước đó có thể dẫn tới nhiều biến chứng nặng, thậm chí là gây nguy hiểm đến tính mạng nếu không được can thiệp điều trị kịp thời.'
+
+MERGE (o1:disease {id: 'nhiễm_trùng_tiết_niệu_phức_tạp_disease'})
+MERGE (o2:symptom {id: 'nguy_hiểm_đến_tính_mạng_symptom'})
+MERGE (o1)-[r57:associatedWith]->(o2)
+SET r57.text = 'Ngược lại, nhiễm trùng tiết niệu phức tạp ở những người bệnh có sẵn các yếu tố thuận lợi trước đó có thể dẫn tới nhiều biến chứng nặng, thậm chí là gây nguy hiểm đến tính mạng nếu không được can thiệp điều trị kịp thời.'
+
+MERGE (o1:disease {id: 'nhiễm_trùng_niệu_disease'})
+MERGE (o2:cause {id: 'độc_lực_vi_khuẩn_gây_phá_hủy_chủ_mô_thận_cause'})
+MERGE (o1)-[r58:associatedWith]->(o2)
+SET r58.text = 'Nguy cơ và biến chứng của nhiễm trùng niệu rất nhiều như là độc lực vi khuẩn gây phá hủy chủ mô thận, hoại tử nhú thận, gây tắc nghẽn hay suy giảm chức năng của thận.'
+
+MERGE (o1:disease {id: 'nhiễm_trùng_niệu_disease'})
+MERGE (o2:symptom {id: 'hoại_tử_nhú_thận_symptom'})
+MERGE (o1)-[r59:associatedWith]->(o2)
+SET r59.text = 'Nguy cơ và biến chứng của nhiễm trùng niệu rất nhiều như là độc lực vi khuẩn gây phá hủy chủ mô thận, hoại tử nhú thận, gây tắc nghẽn hay suy giảm chức năng của thận.'
+
+MERGE (o1:disease {id: 'nhiễm_trùng_niệu_disease'})
+MERGE (o2:symptom {id: 'tắc_nghẽn_symptom'})
+MERGE (o1)-[r60:associatedWith]->(o2)
+SET r60.text = 'Nguy cơ và biến chứng của nhiễm trùng niệu rất nhiều như là độc lực vi khuẩn gây phá hủy chủ mô thận, hoại tử nhú thận, gây tắc nghẽn hay suy giảm chức năng của thận.'
+
+MERGE (o1:disease {id: 'nhiễm_trùng_niệu_disease'})
+MERGE (o2:symptom {id: 'suy_giảm_chức_năng_của_thận_symptom'})
+MERGE (o1)-[r61:associatedWith]->(o2)
+SET r61.text = 'Nguy cơ và biến chứng của nhiễm trùng niệu rất nhiều như là độc lực vi khuẩn gây phá hủy chủ mô thận, hoại tử nhú thận, gây tắc nghẽn hay suy giảm chức năng của thận.'
+
+MERGE (o1:disease {id: 'suy_thận_vĩnh_viễn_disease'})
+MERGE (o2:disease {id: 'nhiễm_trùng_niệu_disease'})
+MERGE (o1)-[r62:causedBy]->(o2)
+SET r62.text = 'Tình trạng này nếu để lâu dài có thể dẫn tới suy thận vĩnh viễn hoặc phải cắt bỏ thận.'
+
+MERGE (o1:treatment {id: 'cắt_bỏ_thận_treatment'})
+MERGE (o2:disease {id: 'nhiễm_trùng_niệu_disease'})
+MERGE (o1)-[r63:treatedBy]->(o2)
+SET r63.text = 'Tình trạng này nếu để lâu dài có thể dẫn tới suy thận vĩnh viễn hoặc phải cắt bỏ thận.'
+
+MERGE (o1:disease {id: 'nhiễm_trùng_hệ_tiết_niệu_disease'})
+MERGE (o2:organ {id: 'tuyến_tiền_liệt_organ'})
+MERGE (o1)-[r64:affects]->(o2)
+SET r64.text = 'Nhiễm trùng hệ tiết niệu ở nam giới có thể gây áp-xe tuyến tiền liệt, viêm tinh hoàn, viêm mào tinh, làm bít tắc ống dẫn tinh, tăng nguy cơ vô sinh.'
+
+MERGE (o1:disease {id: 'nhiễm_trùng_hệ_tiết_niệu_disease'})
+MERGE (o2:organ {id: 'tinh_hoàn_organ'})
+MERGE (o1)-[r65:affects]->(o2)
+SET r65.text = 'Nhiễm trùng hệ tiết niệu ở nam giới có thể gây áp-xe tuyến tiền liệt, viêm tinh hoàn, viêm mào tinh, làm bít tắc ống dẫn tinh, tăng nguy cơ vô sinh.'
+
+MERGE (o1:disease {id: 'nhiễm_trùng_hệ_tiết_niệu_disease'})
+MERGE (o2:organ {id: 'mào_tinh_organ'})
+MERGE (o1)-[r66:affects]->(o2)
+SET r66.text = 'Nhiễm trùng hệ tiết niệu ở nam giới có thể gây áp-xe tuyến tiền liệt, viêm tinh hoàn, viêm mào tinh, làm bít tắc ống dẫn tinh, tăng nguy cơ vô sinh.'
+
+MERGE (o1:disease {id: 'nhiễm_trùng_hệ_tiết_niệu_disease'})
+MERGE (o2:organ {id: 'ống_dẫn_tinh_organ'})
+MERGE (o1)-[r67:affects]->(o2)
+SET r67.text = 'Nhiễm trùng hệ tiết niệu ở nam giới có thể gây áp-xe tuyến tiền liệt, viêm tinh hoàn, viêm mào tinh, làm bít tắc ống dẫn tinh, tăng nguy cơ vô sinh.'
+
+MERGE (o1:disease {id: 'nhiễm_trùng_hệ_tiết_niệu_disease'})
+MERGE (o2:symptom {id: 'vô_sinh_symptom'})
+MERGE (o1)-[r68:associatedWith]->(o2)
+SET r68.text = 'Nhiễm trùng hệ tiết niệu ở nam giới có thể gây áp-xe tuyến tiền liệt, viêm tinh hoàn, viêm mào tinh, làm bít tắc ống dẫn tinh, tăng nguy cơ vô sinh.'
+
+MERGE (o1:disease {id: 'nhiễm_khuẩn_huyết_disease'})
+MERGE (o2:cause {id: 'vi_khuẩn_cause'})
+MERGE (o1)-[r69:causedBy]->(o2)
+SET r69.text = 'Nếu sự hiện diện dai dẳng của vi khuẩn tại hệ niệu không được điều trị kịp thời và đủ liều kháng sinh, vi khuẩn sẽ dễ dàng di chuyển vào máu, gây nhiễm khuẩn huyết, sốc nhiễm khuẩn, tử vong.'
+
+MERGE (o1:disease {id: 'sốc_nhiễm_khuẩn_disease'})
+MERGE (o2:cause {id: 'vi_khuẩn_cause'})
+MERGE (o1)-[r70:causedBy]->(o2)
+SET r70.text = 'Nếu sự hiện diện dai dẳng của vi khuẩn tại hệ niệu không được điều trị kịp thời và đủ liều kháng sinh, vi khuẩn sẽ dễ dàng di chuyển vào máu, gây nhiễm khuẩn huyết, sốc nhiễm khuẩn, tử vong.'
+
+MERGE (o1:symptom {id: 'tử_vong_symptom'})
+MERGE (o2:cause {id: 'vi_khuẩn_cause'})
+MERGE (o1)-[r71:causedBy]->(o2)
+SET r71.text = 'Nếu sự hiện diện dai dẳng của vi khuẩn tại hệ niệu không được điều trị kịp thời và đủ liều kháng sinh, vi khuẩn sẽ dễ dàng di chuyển vào máu, gây nhiễm khuẩn huyết, sốc nhiễm khuẩn, tử vong.'
+
+MERGE (o1:treatment {id: 'kháng_sinh_treatment'})
+MERGE (o2:disease {id: 'viêm_đường_tiết_niệu_disease'})
+MERGE (o1)-[r72:treatedBy]->(o2)
+SET r72.text = 'Kháng sinh là cách điều trị viêm đường tiết niệu thường được sử dụng nhất (3).'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_disease'})
+MERGE (o2:treatment {id: 'kháng_sinh_đường_uống_treatment'})
+MERGE (o1)-[r73:treatedBy]->(o2)
+SET r73.text = 'Nếu người bệnh chỉ xuất hiện những triệu chứng khu trú ở đường tiết niệu dưới do viêm bàng quang, viêm niệu đạo, bác sĩ sẽ chỉ định kháng sinh đường uống trong 5 - 7 ngày.'
+
+MERGE (o1:disease {id: 'viêm_niệu_đạo_disease'})
+MERGE (o2:treatment {id: 'kháng_sinh_đường_uống_treatment'})
+MERGE (o1)-[r74:treatedBy]->(o2)
+SET r74.text = 'Nếu người bệnh chỉ xuất hiện những triệu chứng khu trú ở đường tiết niệu dưới do viêm bàng quang, viêm niệu đạo, bác sĩ sẽ chỉ định kháng sinh đường uống trong 5 - 7 ngày.'
+
+MERGE (o1:symptom {id: 'sốt_symptom'})
+MERGE (o2:disease {id: 'nhiễm_trùng_huyết_disease'})
+MERGE (o1)-[r75:isSymptomOf]->(o2)
+SET r75.text = 'Nếu có triệu chứng sốt và ớn lạnh, nhiễm trùng huyết, ổ viêm tại đường niệu trên, người bệnh cần nhập viện để sử dụng kháng đường tĩnh mạch.'
+
+MERGE (o1:symptom {id: 'ớn_lạnh_symptom'})
+MERGE (o2:disease {id: 'nhiễm_trùng_huyết_disease'})
+MERGE (o1)-[r76:isSymptomOf]->(o2)
+SET r76.text = 'Nếu có triệu chứng sốt và ớn lạnh, nhiễm trùng huyết, ổ viêm tại đường niệu trên, người bệnh cần nhập viện để sử dụng kháng đường tĩnh mạch.'
+
+MERGE (o1:disease {id: 'nhiễm_trùng_huyết_disease'})
+MERGE (o2:treatment {id: 'kháng_đường_tĩnh_mạch_treatment'})
+MERGE (o1)-[r77:treatedBy]->(o2)
+SET r77.text = 'Nếu có triệu chứng sốt và ớn lạnh, nhiễm trùng huyết, ổ viêm tại đường niệu trên, người bệnh cần nhập viện để sử dụng kháng đường tĩnh mạch.'
+
+MERGE (o1:symptom {id: 'ổ_viêm_tại_đường_niệu_trên_symptom'})
+MERGE (o2:disease {id: 'nhiễm_trùng_huyết_disease'})
+MERGE (o1)-[r78:isSymptomOf]->(o2)
+SET r78.text = 'Nếu có triệu chứng sốt và ớn lạnh, nhiễm trùng huyết, ổ viêm tại đường niệu trên, người bệnh cần nhập viện để sử dụng kháng đường tĩnh mạch.'
+
+MERGE (o1:symptom {id: 'bệnh_tái_đi_tái_lại_nhiều_lần_symptom'})
+MERGE (o2:disease {id: 'dị_dạng_đường_niệu_disease'})
+MERGE (o1)-[r79:isSymptomOf]->(o2)
+SET r79.text = 'Trong trường hợp bệnh tái đi tái lại nhiều lần, người bệnh có dị dạng đường niệu hoặc đang đặt ống tiểu, bác sĩ sẽ nuôi cấy vi khuẩn để tìm đúng kháng sinh nhạy cảm với chủng vi khuẩn đó.'
+
+MERGE (o1:symptom {id: 'bệnh_tái_đi_tái_lại_nhiều_lần_symptom'})
+MERGE (o2:treatment {id: 'đặt_ống_tiểu_treatment'})
+MERGE (o1)-[r80:isSymptomOf]->(o2)
+SET r80.text = 'Trong trường hợp bệnh tái đi tái lại nhiều lần, người bệnh có dị dạng đường niệu hoặc đang đặt ống tiểu, bác sĩ sẽ nuôi cấy vi khuẩn để tìm đúng kháng sinh nhạy cảm với chủng vi khuẩn đó.'
+
+MERGE (o1:test {id: 'nuôi_cấy_vi_khuẩn_test'})
+MERGE (o2:disease {id: 'dị_dạng_đường_niệu_disease'})
+MERGE (o1)-[r81:diagnosedBy]->(o2)
+SET r81.text = 'Trong trường hợp bệnh tái đi tái lại nhiều lần, người bệnh có dị dạng đường niệu hoặc đang đặt ống tiểu, bác sĩ sẽ nuôi cấy vi khuẩn để tìm đúng kháng sinh nhạy cảm với chủng vi khuẩn đó.'
+
+MERGE (o1:test {id: 'nuôi_cấy_vi_khuẩn_test'})
+MERGE (o2:treatment {id: 'đặt_ống_tiểu_treatment'})
+MERGE (o1)-[r82:diagnosedBy]->(o2)
+SET r82.text = 'Trong trường hợp bệnh tái đi tái lại nhiều lần, người bệnh có dị dạng đường niệu hoặc đang đặt ống tiểu, bác sĩ sẽ nuôi cấy vi khuẩn để tìm đúng kháng sinh nhạy cảm với chủng vi khuẩn đó.'
+
+MERGE (o1:treatment {id: 'thuốc_sát_trùng_treatment'})
+MERGE (o2:disease {id: 'nhiễm_trùng_niệu_disease'})
+MERGE (o1)-[r83:treatedBy]->(o2)
+SET r83.text = 'Bên cạnh đó, các loại thuốc có tính sát trùng trên hệ niệu cũng được ghi nhận về hiệu quả trong việc tiêu diệt vi khuẩn, có thể được chỉ định dùng với kháng sinh.'
+
+MERGE (o1:treatment {id: 'thuốc_sát_trùng_treatment'})
+MERGE (o2:symptom {id: 'bằng_chứng_chưa_rõ_ràng_symptom'})
+MERGE (o1)-[r84:associatedWith]->(o2)
+SET r84.text = 'Tuy nhiên, bằng chứng của các loại thuốc này vẫn chưa rõ ràng.'
+
+MERGE (o1:disease {id: 'ổ_nhiễm_khuẩn_disease'})
+MERGE (o2:treatment {id: 'điều_trị_phẫu_thuật_treatment'})
+MERGE (o1)-[r85:treatedBy]->(o2)
+SET r85.text = 'Nếu ổ nhiễm khuẩn không khống chế được bằng thuốc hoặc có biến chứng ở thận như thận ứ nước nhiễm khuẩn, thận ứ mủ, áp-xe thận, người bệnh cần áp dụng điều trị phẫu thuật dễ dẫn lưu ổ nhiễm khuẩn.'
+
+MERGE (o1:disease {id: 'thận_ứ_nước_nhiễm_khuẩn_disease'})
+MERGE (o2:disease {id: 'ổ_nhiễm_khuẩn_disease'})
+MERGE (o1)-[r86:associatedWith]->(o2)
+SET r86.text = 'Nếu ổ nhiễm khuẩn không khống chế được bằng thuốc hoặc có biến chứng ở thận như thận ứ nước nhiễm khuẩn, thận ứ mủ, áp-xe thận, người bệnh cần áp dụng điều trị phẫu thuật dễ dẫn lưu ổ nhiễm khuẩn.'
+
+MERGE (o1:disease {id: 'thận_ứ_mủ_disease'})
+MERGE (o2:disease {id: 'ổ_nhiễm_khuẩn_disease'})
+MERGE (o1)-[r87:associatedWith]->(o2)
+SET r87.text = 'Nếu ổ nhiễm khuẩn không khống chế được bằng thuốc hoặc có biến chứng ở thận như thận ứ nước nhiễm khuẩn, thận ứ mủ, áp-xe thận, người bệnh cần áp dụng điều trị phẫu thuật dễ dẫn lưu ổ nhiễm khuẩn.'
+
+MERGE (o1:disease {id: 'áp-xe_thận_disease'})
+MERGE (o2:disease {id: 'ổ_nhiễm_khuẩn_disease'})
+MERGE (o1)-[r88:associatedWith]->(o2)
+SET r88.text = 'Nếu ổ nhiễm khuẩn không khống chế được bằng thuốc hoặc có biến chứng ở thận như thận ứ nước nhiễm khuẩn, thận ứ mủ, áp-xe thận, người bệnh cần áp dụng điều trị phẫu thuật dễ dẫn lưu ổ nhiễm khuẩn.'
+
+MERGE (o1:disease {id: 'dị_tật_hệ_niệu_disease'})
+MERGE (o2:treatment {id: 'phẫu_thuật_chỉnh_sửa_treatment'})
+MERGE (o1)-[r89:treatedBy]->(o2)
+SET r89.text = 'Tương tự những dị tật hệ niệu, khi không phẫu thuật chỉnh sửa hoàn thiện, bệnh nhân có thể đối mặt với nguy cơ bệnh tái đi tái lại, lâu ngày dẫn tới biến chứng nguy hiểm.'
+
+MERGE (o1:disease {id: 'dị_tật_hệ_niệu_disease'})
+MERGE (o2:symptom {id: 'bệnh_tái_đi_tái_lại_symptom'})
+MERGE (o1)-[r90:associatedWith]->(o2)
+SET r90.text = 'Tương tự những dị tật hệ niệu, khi không phẫu thuật chỉnh sửa hoàn thiện, bệnh nhân có thể đối mặt với nguy cơ bệnh tái đi tái lại, lâu ngày dẫn tới biến chứng nguy hiểm.'
+
+MERGE (o1:disease {id: 'dị_tật_hệ_niệu_disease'})
+MERGE (o2:symptom {id: 'biến_chứng_nguy_hiểm_symptom'})
+MERGE (o1)-[r91:associatedWith]->(o2)
+SET r91.text = 'Tương tự những dị tật hệ niệu, khi không phẫu thuật chỉnh sửa hoàn thiện, bệnh nhân có thể đối mặt với nguy cơ bệnh tái đi tái lại, lâu ngày dẫn tới biến chứng nguy hiểm.'
+
+MERGE (o1:lifestyle {id: 'uống_đủ_nước_lifestyle'})
+MERGE (o2:disease {id: 'nhiễm_trùng_niệu_disease'})
+MERGE (o1)-[r92:preventedBy]->(o2)
+SET r92.text = 'Đảm bảo uống đủ 2l - 2,5l nước mỗi ngày.'
+
+MERGE (o1:lifestyle {id: 'uống_đủ_nước_lifestyle'})
+MERGE (o2:organ {id: 'thận_organ'})
+MERGE (o1)-[r93:affects]->(o2)
+SET r93.text = 'Vì thói quen này sẽ giúp thận tăng bài tiết nước tiểu để tống vi trùng ra ngoài, hạn chế lây nhiễm ngược dòng.'
+
+MERGE (o1:lifestyle {id: 'uống_đủ_nước_lifestyle'})
+MERGE (o2:symptom {id: 'bài_tiết_nước_tiểu_symptom'})
+MERGE (o1)-[r94:affects]->(o2)
+SET r94.text = 'Vì thói quen này sẽ giúp thận tăng bài tiết nước tiểu để tống vi trùng ra ngoài, hạn chế lây nhiễm ngược dòng.'

@@ -1,0 +1,874 @@
+[
+    {
+        "text": "Thông liên nhĩ chiếm từ 6-10% bệnh lý tim bẩm sinh.",
+        "head": "Thông liên nhĩ",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "bệnh lý tim bẩm sinh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu được phát hiện và điều trị sớm, phần lớn trường hợp thông liên nhĩ lành tính và không ảnh hưởng đến sức khỏe.",
+        "head": "Thông liên nhĩ",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "điều trị sớm",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Thông liên nhĩ tên tiếng anh là Atrial Septal Defect (ASD), đây làbệnh lý tim bẩm sinh với sự xuất hiện của một lỗ thủng giữa hai buồng tâm nhĩ.",
+        "head": "Thông liên nhĩ",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "bệnh lý tim bẩm sinh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Thông liên nhĩ tên tiếng anh là Atrial Septal Defect (ASD), đây làbệnh lý tim bẩm sinh với sự xuất hiện của một lỗ thủng giữa hai buồng tâm nhĩ.",
+        "head": "lỗ thủng",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Thông liên nhĩ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Thông liên nhĩ tên tiếng anh là Atrial Septal Defect (ASD), đây làbệnh lý tim bẩm sinh với sự xuất hiện của một lỗ thủng giữa hai buồng tâm nhĩ.",
+        "head": "lỗ thủng",
+        "head_type": "symptom",
+        "relation": "locatedIn",
+        "tail": "hai buồng tâm nhĩ",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Lỗ thông liên nhĩ có thể nằm ở nhiều vị trí khác nhau trên vách liên nhĩ.",
+        "head": "Lỗ thông liên nhĩ",
+        "head_type": "symptom",
+        "relation": "locatedIn",
+        "tail": "vách liên nhĩ",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Thông thường, nếu lỗ thông liên nhĩ nhỏ, lỗ này có thể tự đóng.",
+        "head": "lỗ thông liên nhĩ nhỏ",
+        "head_type": "symptom",
+        "relation": "relatedTo",
+        "tail": "tự đóng",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Tuy nhiên với lỗ thông lớn, điều này có thể dẫn tới những biến chứng nguy hiểm.",
+        "head": "lỗ thông lớn",
+        "head_type": "symptom",
+        "relation": "causedBy",
+        "tail": "biến chứng nguy hiểm",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Thông liên nhĩ (TLN) chiếm khoảng từ 5% đến 10% các trường hợp tim bẩm sinh",
+        "head": "Thông liên nhĩ",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "tim bẩm sinh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Thông liên nhĩ lỗ thứ nhất (ASD-op) hay còn gọi là thông liên nhĩ lỗ nguyên phát: có thể xảy ra đơn độc nhưng thông thường xảy ra trong bệnh cảnh tim bẩm sinh phức tạp (kênh nhĩ thất), vị trí nằm thấp, sát van nhĩ thất.",
+        "head": "Thông liên nhĩ lỗ thứ nhất (ASD-op)",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "kênh nhĩ thất",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Thông liên nhĩ lỗ thứ nhất (ASD-op) hay còn gọi là thông liên nhĩ lỗ nguyên phát: có thể xảy ra đơn độc nhưng thông thường xảy ra trong bệnh cảnh tim bẩm sinh phức tạp (kênh nhĩ thất), vị trí nằm thấp, sát van nhĩ thất.",
+        "head": "Thông liên nhĩ lỗ thứ nhất (ASD-op)",
+        "head_type": "disease",
+        "relation": "locatedIn",
+        "tail": "van nhĩ thất",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Thông liên nhĩ lỗ thứ hai (ASD-os) hay còn gọi là thông liên nhĩ lỗ thứ phát: thường gặp nhất, chiếm đến 70% các trường hợp, có thể xảy ra đơn độc và vị trí nằm ở trung tâm của vách liên nhĩ.",
+        "head": "Thông liên nhĩ lỗ thứ hai (ASD-os)",
+        "head_type": "disease",
+        "relation": "locatedIn",
+        "tail": "vách liên nhĩ",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Thông liên nhĩ lỗ thứ hai (ASD-os) hay còn gọi là thông liên nhĩ lỗ thứ phát: thường gặp nhất, chiếm đến 70% các trường hợp, có thể xảy ra đơn độc và vị trí nằm ở trung tâm của vách liên nhĩ.",
+        "head": "Thông liên nhĩ lỗ thứ hai (ASD-os)",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "vách liên nhĩ",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Lỗ thông liên nhĩ thứ phát thường có kích thước từ 10-30mm.",
+        "head": "Lỗ thông liên nhĩ thứ phát",
+        "head_type": "symptom",
+        "relation": "relatedTo",
+        "tail": "kích thước",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Thông liên nhĩ xoang tĩnh mạch (ASD-sv): Đây là một tình trạng hiếm gặp và có 2 loại:",
+        "head": "Thông liên nhĩ xoang tĩnh mạch (ASD-sv)",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "tĩnh mạch chủ trên",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Thông liên nhĩ xoang tĩnh mạch (ASD-sv): Đây là một tình trạng hiếm gặp và có 2 loại:",
+        "head": "Thông liên nhĩ xoang tĩnh mạch (ASD-sv)",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "tĩnh mạch chủ dưới",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Tĩnh mạch chủ trên: nằm ngay dưới lỗ đổ của tĩnh mạch chủ trên vào nhĩ phải.",
+        "head": "tĩnh mạch chủ trên",
+        "head_type": "organ",
+        "relation": "locatedIn",
+        "tail": "nhĩ phải",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Thông liên nhĩ xoang tĩnh mạch chủ trên thường đi kèm với hồi lưu tĩnh mạch phổi bất thường.",
+        "head": "Thông liên nhĩ xoang tĩnh mạch chủ trên",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "hồi lưu tĩnh mạch phổi bất thường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tĩnh mạch chủ dưới thì nằm sát lỗ đổ vào của tĩnh mạch chủ dưới vào nhĩ phải, thể này vô cùng hiếm gặp.",
+        "head": "tĩnh mạch chủ dưới",
+        "head_type": "organ",
+        "relation": "locatedIn",
+        "tail": "nhĩ phải",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Nhiều trẻ em có khiếm khuyết vách ngăn liên nhĩ sẽ không có triệu chứng và vẫn khỏe mạnh, sinh hoạt bình thường.",
+        "head": "không có triệu chứng",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "khiếm khuyết vách ngăn liên nhĩ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nhiều trẻ em có khiếm khuyết vách ngăn liên nhĩ sẽ không có triệu chứng và vẫn khỏe mạnh, sinh hoạt bình thường.",
+        "head": "khỏe mạnh",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "khiếm khuyết vách ngăn liên nhĩ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tuy nhiên, nếu lỗ thông liên nhĩ lớn, người bệnh có thể có một số dấu hiệu và triệu chứng sau:\nDễ mệt mỏi;\nThở nhanh;\nKhó thở;\nChậm tăng trưởng.\nThường xuyên bị nhiễm trùng đường hô hấp;\nRối loạn nhịp tim.",
+        "head": "Dễ mệt mỏi",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "lỗ thông liên nhĩ lớn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tuy nhiên, nếu lỗ thông liên nhĩ lớn, người bệnh có thể có một số dấu hiệu và triệu chứng sau:\nDễ mệt mỏi;\nThở nhanh;\nKhó thở;\nChậm tăng trưởng.\nThường xuyên bị nhiễm trùng đường hô hấp;\nRối loạn nhịp tim.",
+        "head": "Thở nhanh",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "lỗ thông liên nhĩ lớn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tuy nhiên, nếu lỗ thông liên nhĩ lớn, người bệnh có thể có một số dấu hiệu và triệu chứng sau:\nDễ mệt mỏi;\nThở nhanh;\nKhó thở;\nChậm tăng trưởng.\nThường xuyên bị nhiễm trùng đường hô hấp;\nRối loạn nhịp tim.",
+        "head": "Khó thở",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "lỗ thông liên nhĩ lớn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tuy nhiên, nếu lỗ thông liên nhĩ lớn, người bệnh có thể có một số dấu hiệu và triệu chứng sau:\nDễ mệt mỏi;\nThở nhanh;\nKhó thở;\nChậm tăng trưởng.\nThường xuyên bị nhiễm trùng đường hô hấp;\nRối loạn nhịp tim.",
+        "head": "Chậm tăng trưởng",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "lỗ thông liên nhĩ lớn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tuy nhiên, nếu lỗ thông liên nhĩ lớn, người bệnh có thể có một số dấu hiệu và triệu chứng sau:\nDễ mệt mỏi;\nThở nhanh;\nKhó thở;\nChậm tăng trưởng.\nThường xuyên bị nhiễm trùng đường hô hấp;\nRối loạn nhịp tim.",
+        "head": "Thường xuyên bị nhiễm trùng đường hô hấp",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "lỗ thông liên nhĩ lớn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tuy nhiên, nếu lỗ thông liên nhĩ lớn, người bệnh có thể có một số dấu hiệu và triệu chứng sau:\nDễ mệt mỏi;\nThở nhanh;\nKhó thở;\nChậm tăng trưởng.\nThường xuyên bị nhiễm trùng đường hô hấp;\nRối loạn nhịp tim.",
+        "head": "Rối loạn nhịp tim",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "lỗ thông liên nhĩ lớn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Trẻ lớn và người lớn có bệnh bẩm sinh này có thể bị đau nửa đầu. Tuy nhiên, vẫn chưa có nhiều nghiên cứu chứng minh liệu thông liên nhĩ có phải là nguyên nhân gây ra tình trạng này hay không.",
+        "head": "đau nửa đầu",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "thông liên nhĩ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Hiện nay, chưa giải thích được nguyên nhân gây thông liên nhĩ\n, nhưng một số dị tật tim bẩm sinh dường như có yếu tố di truyền.",
+        "head": "yếu tố di truyền",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "dị tật tim bẩm sinh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Hiện nay, chưa giải thích được nguyên nhân gây thông liên nhĩ\n, nhưng một số dị tật tim bẩm sinh dường như có yếu tố di truyền.",
+        "head": "yếu tố di truyền",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "thông liên nhĩ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bên cạnh đó, một số yếu tố khi mang thai có thể làm tăng nguy cơ em bé sinh ra\nmắc dị tật\ntim bẩm sinh bao gồm:",
+        "head": "mang thai",
+        "head_type": "lifestyle",
+        "relation": "causedBy",
+        "tail": "dị tật tim bẩm sinh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nhiễm trùng rubella: Bị nhiễm rubella trong vài tháng đầu của thai kỳ có thể làm tăng nguy cơ dị tật tim thai.",
+        "head": "Nhiễm trùng rubella",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "dị tật tim thai",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Sử dụng ma túy, thuốc lá, uống rượu hoặc tiếp xúc với một số chất kích thích như cocaine, trong khi mang thai có thể gây hại đến sự phát triển của thai nhi.",
+        "head": "Sử dụng ma túy",
+        "head_type": "lifestyle",
+        "relation": "causedBy",
+        "tail": "dị tật tim bẩm sinh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Sử dụng ma túy, thuốc lá, uống rượu hoặc tiếp xúc với một số chất kích thích như cocaine, trong khi mang thai có thể gây hại đến sự phát triển của thai nhi.",
+        "head": "thuốc lá",
+        "head_type": "lifestyle",
+        "relation": "causedBy",
+        "tail": "dị tật tim bẩm sinh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Sử dụng ma túy, thuốc lá, uống rượu hoặc tiếp xúc với một số chất kích thích như cocaine, trong khi mang thai có thể gây hại đến sự phát triển của thai nhi.",
+        "head": "uống rượu",
+        "head_type": "lifestyle",
+        "relation": "causedBy",
+        "tail": "dị tật tim bẩm sinh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Sử dụng ma túy, thuốc lá, uống rượu hoặc tiếp xúc với một số chất kích thích như cocaine, trong khi mang thai có thể gây hại đến sự phát triển của thai nhi.",
+        "head": "tiếp xúc với cocaine",
+        "head_type": "lifestyle",
+        "relation": "causedBy",
+        "tail": "dị tật tim bẩm sinh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bệnh tiểu đường hoặc lupus: Mắc bệnh tiểu đường hoặc lupus có thể làm tăng nguy cơ sinh con bị dị tật tim.",
+        "head": "Bệnh tiểu đường",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "dị tật tim",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bệnh tiểu đường hoặc lupus: Mắc bệnh tiểu đường hoặc lupus có thể làm tăng nguy cơ sinh con bị dị tật tim.",
+        "head": "lupus",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "dị tật tim",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Một khi nghi ngờ trẻ bị tim bẩm sinh nói chung và thông liên nhĩ nói riêng, bác sĩ tim mạch có thể yêu cầu những\nkiểm tra cận lâm sàng\nsau:",
+        "head": "tim bẩm sinh",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "kiểm tra cận lâm sàng",
+        "tail_type": "test"
+    },
+    {
+        "text": "Một khi nghi ngờ trẻ bị tim bẩm sinh nói chung và thông liên nhĩ nói riêng, bác sĩ tim mạch có thể yêu cầu những\nkiểm tra cận lâm sàng\nsau:",
+        "head": "thông liên nhĩ",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "kiểm tra cận lâm sàng",
+        "tail_type": "test"
+    },
+    {
+        "text": "Điện tâm đồ (ECG): ghi lại hoạt động điện của tim và cho thấy các bất thường trên điện tim do thông liên nhĩ gây ra.",
+        "head": "Điện tâm đồ (ECG)",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "thông liên nhĩ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Điện tâm đồ (ECG): ghi lại hoạt động điện của tim và cho thấy các bất thường trên điện tim do thông liên nhĩ gây ra.",
+        "head": "Điện tâm đồ (ECG)",
+        "head_type": "test",
+        "relation": "affects",
+        "tail": "tim",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Chụp X-quang tim phổi: có thể cho thấy kích thước tim hoặc\nnhững thay đổi trong phổi của con bạn do tăng lưu lượng máu lên phổi.",
+        "head": "Chụp X-quang tim phổi",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "thông liên nhĩ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Chụp X-quang tim phổi: có thể cho thấy kích thước tim hoặc\nnhững thay đổi trong phổi của con bạn do tăng lưu lượng máu lên phổi.",
+        "head": "Chụp X-quang tim phổi",
+        "head_type": "test",
+        "relation": "affects",
+        "tail": "tim",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Chụp X-quang tim phổi: có thể cho thấy kích thước tim hoặc\nnhững thay đổi trong phổi của con bạn do tăng lưu lượng máu lên phổi.",
+        "head": "Chụp X-quang tim phổi",
+        "head_type": "test",
+        "relation": "affects",
+        "tail": "phổi",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Siêu âm tim:\nĐây được xem là phương pháp chính trong chẩn đoán dị tật thông liên nhĩ, bệnh nhân nhỏ tuổi thường sử dụng phương pháp siêu âm qua thành ngực còn đối với những bệnh nhân lớn tuổi, có thành ngực dày, phương pháp siêu âm tim qua thực quản có thể được chỉ định để xác định chẩn đoán và định hướng phương pháp điều trị.",
+        "head": "Siêu âm tim",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "dị tật thông liên nhĩ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Siêu âm tim:\nĐây được xem là phương pháp chính trong chẩn đoán dị tật thông liên nhĩ, bệnh nhân nhỏ tuổi thường sử dụng phương pháp siêu âm qua thành ngực còn đối với những bệnh nhân lớn tuổi, có thành ngực dày, phương pháp siêu âm tim qua thực quản có thể được chỉ định để xác định chẩn đoán và định hướng phương pháp điều trị.",
+        "head": "Siêu âm tim",
+        "head_type": "test",
+        "relation": "affects",
+        "tail": "tim",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Siêu âm tim:\nĐây được xem là phương pháp chính trong chẩn đoán dị tật thông liên nhĩ, bệnh nhân nhỏ tuổi thường sử dụng phương pháp siêu âm qua thành ngực còn đối với những bệnh nhân lớn tuổi, có thành ngực dày, phương pháp siêu âm tim qua thực quản có thể được chỉ định để xác định chẩn đoán và định hướng phương pháp điều trị.",
+        "head": "Siêu âm tim qua thành ngực",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "dị tật thông liên nhĩ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu lỗ thông nhỏ, thường sẽ không gây ra biến chứng gì nguy hiểm.",
+        "head": "lỗ thông nhỏ",
+        "head_type": "disease",
+        "relation": "associatedWith",
+        "tail": "biến chứng nguy hiểm",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Một số lỗ thông nhỏ sẽ tự bít lại khi trẻ 1-4 tuổi.",
+        "head": "lỗ thông nhỏ",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "tự bít lại",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Nếu lỗ thông lớn có thể gây một số biến chứng nghiêm trọng như: Suy tim bên phải, Rối loạn nhịp tim, Tăng nguy cơ đột quỵ, Giảm tuổi thọ",
+        "head": "lỗ thông lớn",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Suy tim bên phải",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Nếu lỗ thông lớn có thể gây một số biến chứng nghiêm trọng như: Suy tim bên phải, Rối loạn nhịp tim, Tăng nguy cơ đột quỵ, Giảm tuổi thọ",
+        "head": "lỗ thông lớn",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Rối loạn nhịp tim",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Nếu lỗ thông lớn có thể gây một số biến chứng nghiêm trọng như: Suy tim bên phải, Rối loạn nhịp tim, Tăng nguy cơ đột quỵ, Giảm tuổi thọ",
+        "head": "lỗ thông lớn",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Tăng nguy cơ đột quỵ",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Nếu lỗ thông lớn có thể gây một số biến chứng nghiêm trọng như: Suy tim bên phải, Rối loạn nhịp tim, Tăng nguy cơ đột quỵ, Giảm tuổi thọ",
+        "head": "lỗ thông lớn",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Giảm tuổi thọ",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Các biến chứng nghiêm trọng ít gặp hơn là: Tăng áp động mạch phổi: Nếu lỗ thông liên nhĩ lớn không được điều trị, lượng máu đến phổi tăng lên sẽ làm tăng áp lực máu trong động mạch phổi (tăng áp động mạch phổi).",
+        "head": "Tăng áp động mạch phổi",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "lỗ thông liên nhĩ lớn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các biến chứng nghiêm trọng ít gặp hơn là: Tăng áp động mạch phổi: Nếu lỗ thông liên nhĩ lớn không được điều trị, lượng máu đến phổi tăng lên sẽ làm tăng áp lực máu trong động mạch phổi (tăng áp động mạch phổi).",
+        "head": "lỗ thông liên nhĩ lớn",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "lượng máu đến phổi tăng lên",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Các biến chứng nghiêm trọng ít gặp hơn là: Tăng áp động mạch phổi: Nếu lỗ thông liên nhĩ lớn không được điều trị, lượng máu đến phổi tăng lên sẽ làm tăng áp lực máu trong động mạch phổi (tăng áp động mạch phổi).",
+        "head": "lượng máu đến phổi tăng lên",
+        "head_type": "symptom",
+        "relation": "affects",
+        "tail": "áp lực máu trong động mạch phổi",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Các biến chứng nghiêm trọng ít gặp hơn là: Tăng áp động mạch phổi: Nếu lỗ thông liên nhĩ lớn không được điều trị, lượng máu đến phổi tăng lên sẽ làm tăng áp lực máu trong động mạch phổi (tăng áp động mạch phổi).",
+        "head": "áp lực máu trong động mạch phổi",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Tăng áp động mạch phổi",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Hội chứng Eisenmenger: Đây là sự phát triển của tăng áp động mạch phổi do khuyết tật tim bẩm sinh không được điều trị.",
+        "head": "Hội chứng Eisenmenger",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "tăng áp động mạch phổi",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Hội chứng Eisenmenger: Đây là sự phát triển của tăng áp động mạch phổi do khuyết tật tim bẩm sinh không được điều trị.",
+        "head": "Hội chứng Eisenmenger",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "khuyết tật tim bẩm sinh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bệnh có thể gây ra các biến chứng bao gồm tổn thương tim và phổi vĩnh viễn.",
+        "head": "Hội chứng Eisenmenger",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "tổn thương tim",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Bệnh có thể gây ra các biến chứng bao gồm tổn thương tim và phổi vĩnh viễn.",
+        "head": "Hội chứng Eisenmenger",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "tổn thương phổi",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Thông liên nhĩ thường ít gây biến chứng tăng áp động mạch phổi và đặc biệt là hội chứng Eisenmenger.",
+        "head": "Thông liên nhĩ",
+        "head_type": "disease",
+        "relation": "associatedWith",
+        "tail": "tăng áp động mạch phổi",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Thông liên nhĩ thường ít gây biến chứng tăng áp động mạch phổi và đặc biệt là hội chứng Eisenmenger.",
+        "head": "Thông liên nhĩ",
+        "head_type": "disease",
+        "relation": "associatedWith",
+        "tail": "Hội chứng Eisenmenger",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Do đó, nếu phát hiện phải tầm soát các nguyên nhân khác gây tăng áp phổi hoặc tăng áp phổi tiên phát đi kèm.",
+        "head": "tăng áp phổi",
+        "head_type": "symptom",
+        "relation": "causedBy",
+        "tail": "nguyên nhân khác",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Lựa chọn phương pháp điều trị thông liên nhĩ phụ thuộc vào kích thước lỗ thông cũng như trẻ có các dị tật tim bẩm sinh khác kèm theo hay không.",
+        "head": "Thông liên nhĩ",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "điều trị",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Trường hợp thông liên nhĩ kích thước nhỏ, lỗ thông có khả năng tự đóng trong thời thơ ấu.",
+        "head": "lỗ thông",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "tự đóng",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Đối với những lỗ thông nhỏ không tự đóng lại được, chỉ cần theo dõi và chỉ đóng nếu có thuyên tắc ngược dòng gây nhồi máu não.",
+        "head": "lỗ thông nhỏ",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "thuyên tắc ngược dòng",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Đối với những lỗ thông nhỏ không tự đóng lại được, chỉ cần theo dõi và chỉ đóng nếu có thuyên tắc ngược dòng gây nhồi máu não.",
+        "head": "thuyên tắc ngược dòng",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "nhồi máu não",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Các lỗ thông liên nhĩ lớn hơn có thể phải cần thông tim đóng lỗ thông bằng dụng cụ hoặc phẫu thuật tim.",
+        "head": "lỗ thông liên nhĩ lớn",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "thông tim đóng lỗ thông bằng dụng cụ",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Các lỗ thông liên nhĩ lớn hơn có thể phải cần thông tim đóng lỗ thông bằng dụng cụ hoặc phẫu thuật tim.",
+        "head": "lỗ thông liên nhĩ lớn",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "phẫu thuật tim",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Tuy nhiên, không nên tiến hành nếu trẻ có tăng áp động mạch phổi nặng.",
+        "head": "tăng áp động mạch phổi nặng",
+        "head_type": "symptom",
+        "relation": "aggravatedBy",
+        "tail": "tiến hành",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Dùng thuốc: Thuốc không chữa được lỗ thông liên nhĩ nhưng có thể giúp ích trong một số trường hợp.",
+        "head": "Thuốc",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "lỗ thông liên nhĩ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các loại thuốc được dùng điều trị thông liên nhĩ là thuốc chẹn beta (để kiểm soát nhịp tim khi có rối loạn nhịp) và thuốc chống đông máu (để giảm nguy cơ hình thành cục máu đông gây thuyên tắc trong một số trường hợp).",
+        "head": "thuốc chẹn beta",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "rối loạn nhịp",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Các loại thuốc được dùng điều trị thông liên nhĩ là thuốc chẹn beta (để kiểm soát nhịp tim khi có rối loạn nhịp) và thuốc chống đông máu (để giảm nguy cơ hình thành cục máu đông gây thuyên tắc trong một số trường hợp).",
+        "head": "thuốc chống đông máu",
+        "head_type": "treatment",
+        "relation": "preventedBy",
+        "tail": "cục máu đông",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Phẫu thuật/thủ thuật: Lỗ thông liên nhĩ có kích thước từ trung bình đến lớn sẽ được điều trị bằng cách bít lỗ thông để ngăn ngừa các biến chứng trong tương lai.",
+        "head": "lỗ thông liên nhĩ",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "bít lỗ thông",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Phẫu thuật/thủ thuật: Lỗ thông liên nhĩ có kích thước từ trung bình đến lớn sẽ được điều trị bằng cách bít lỗ thông để ngăn ngừa các biến chứng trong tương lai.",
+        "head": "bít lỗ thông",
+        "head_type": "treatment",
+        "relation": "preventedBy",
+        "tail": "biến chứng",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Có 2 phương pháp can thiệp: phẫu thuật tim hở (mở ngực để tiếp cận trực tiếp với tim) và thông tim (đưa dụng cụ vào để bít lỗ thông ở vách ngăn liên nhĩ).",
+        "head": "phẫu thuật tim hở",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "lỗ thông liên nhĩ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Có 2 phương pháp can thiệp: phẫu thuật tim hở (mở ngực để tiếp cận trực tiếp với tim) và thông tim (đưa dụng cụ vào để bít lỗ thông ở vách ngăn liên nhĩ).",
+        "head": "thông tim",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "lỗ thông liên nhĩ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đôi khi, phẫu thuật đóng lỗ thông liên nhĩ có thể được thực hiện bằng những đường mổ rất nhỏ (phẫu thuật xâm lấn tối thiểu) và bằng robot (phẫu thuật tim có sự hỗ trợ của robot).",
+        "head": "phẫu thuật đóng lỗ thông liên nhĩ",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "lỗ thông liên nhĩ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đôi khi, phẫu thuật đóng lỗ thông liên nhĩ có thể được thực hiện bằng những đường mổ rất nhỏ (phẫu thuật xâm lấn tối thiểu) và bằng robot (phẫu thuật tim có sự hỗ trợ của robot).",
+        "head": "phẫu thuật xâm lấn tối thiểu",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "lỗ thông liên nhĩ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đôi khi, phẫu thuật đóng lỗ thông liên nhĩ có thể được thực hiện bằng những đường mổ rất nhỏ (phẫu thuật xâm lấn tối thiểu) và bằng robot (phẫu thuật tim có sự hỗ trợ của robot).",
+        "head": "phẫu thuật tim có sự hỗ trợ của robot",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "lỗ thông liên nhĩ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Trong hầu hết các trường hợp, không có cách nào để ngăn ngừa dị tật thông liên nhĩ, vì vậy nếu bạn dự định có thai, hãy lên lịch thăm khám với bác sĩ để đánh giá trước mang thai:",
+        "head": "dị tật thông liên nhĩ",
+        "head_type": "disease",
+        "relation": "preventedBy",
+        "tail": "không có cách nào",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Đánh giá tình trạng miễn dịch với bệnh rubella: Nếu bạn chưa có kháng thể miễn dịch, cần cân nhắc việc tiêm vắc xin để phòng bệnh.",
+        "head": "bệnh rubella",
+        "head_type": "disease",
+        "relation": "preventedBy",
+        "tail": "tiêm vắc xin",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Thông báo với bác sĩ về tình trạng sức khỏe và các loại thuốc hiện tại mà bạn đang dùng.",
+        "head": "tình trạng sức khỏe",
+        "head_type": "symptom",
+        "relation": "diagnosedBy",
+        "tail": "bác sĩ",
+        "tail_type": "test"
+    },
+    {
+        "text": "Bạn cần theo dõi các vấn đề sức khỏe định kỳ trong lúc mang thai.",
+        "head": "vấn đề sức khỏe",
+        "head_type": "symptom",
+        "relation": "diagnosedBy",
+        "tail": "theo dõi",
+        "tail_type": "test"
+    },
+    {
+        "text": "Bên cạnh đó, bác sĩ sẽ khuyến cáo các loại thuốc đang dùng trước khi mang thai và có điều chỉnh phù hợp.",
+        "head": "thuốc",
+        "head_type": "treatment",
+        "relation": "relatedTo",
+        "tail": "mang thai",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Những thói quen sinh hoạt và lối sống khoa học sẽ giúp bạn kiểm soát tốt diễn tiến bệnh cũng như ngăn ngừa biến chứng:  Tập thể dục: Với bệnh nhân thông liên nhĩ, tập thể dục không phải chống chỉ định.",
+        "head": "Tập thể dục",
+        "head_type": "lifestyle",
+        "relation": "relatedTo",
+        "tail": "Bệnh nhân thông liên nhĩ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Những thói quen sinh hoạt và lối sống khoa học sẽ giúp bạn kiểm soát tốt diễn tiến bệnh cũng như ngăn ngừa biến chứng:  Tập thể dục: Với bệnh nhân thông liên nhĩ, tập thể dục không phải chống chỉ định. Tuy nhiên, ở một số bệnh nhân có các biến chứng như loạn nhịp tim, suy tim, tăng áp phổi… việc tập luyện cần được hướng dẫn bởi các bác sĩ để đảm bảo an toàn và hiệu quả",
+        "head": "Tập thể dục",
+        "head_type": "lifestyle",
+        "relation": "preventedBy",
+        "tail": "Biến chứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Những thói quen sinh hoạt và lối sống khoa học sẽ giúp bạn kiểm soát tốt diễn tiến bệnh cũng như ngăn ngừa biến chứng:  Tập thể dục: Với bệnh nhân thông liên nhĩ, tập thể dục không phải chống chỉ định. Tuy nhiên, ở một số bệnh nhân có các biến chứng như loạn nhịp tim, suy tim, tăng áp phổi… việc tập luyện cần được hướng dẫn bởi các bác sĩ để đảm bảo an toàn và hiệu quả",
+        "head": "Tập thể dục",
+        "head_type": "lifestyle",
+        "relation": "treatedBy",
+        "tail": "Bệnh nhân thông liên nhĩ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Những thói quen sinh hoạt và lối sống khoa học sẽ giúp bạn kiểm soát tốt diễn tiến bệnh cũng như ngăn ngừa biến chứng:  Tập thể dục: Với bệnh nhân thông liên nhĩ, tập thể dục không phải chống chỉ định. Tuy nhiên, ở một số bệnh nhân có các biến chứng như loạn nhịp tim, suy tim, tăng áp phổi… việc tập luyện cần được hướng dẫn bởi các bác sĩ để đảm bảo an toàn và hiệu quả",
+        "head": "Loạn nhịp tim",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Biến chứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Những thói quen sinh hoạt và lối sống khoa học sẽ giúp bạn kiểm soát tốt diễn tiến bệnh cũng như ngăn ngừa biến chứng:  Tập thể dục: Với bệnh nhân thông liên nhĩ, tập thể dục không phải chống chỉ định. Tuy nhiên, ở một số bệnh nhân có các biến chứng như loạn nhịp tim, suy tim, tăng áp phổi… việc tập luyện cần được hướng dẫn bởi các bác sĩ để đảm bảo an toàn và hiệu quả",
+        "head": "Suy tim",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Biến chứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Những thói quen sinh hoạt và lối sống khoa học sẽ giúp bạn kiểm soát tốt diễn tiến bệnh cũng như ngăn ngừa biến chứng:  Tập thể dục: Với bệnh nhân thông liên nhĩ, tập thể dục không phải chống chỉ định. Tuy nhiên, ở một số bệnh nhân có các biến chứng như loạn nhịp tim, suy tim, tăng áp phổi… việc tập luyện cần được hướng dẫn bởi các bác sĩ để đảm bảo an toàn và hiệu quả",
+        "head": "Tăng áp phổi",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Biến chứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Những thói quen sinh hoạt và lối sống khoa học sẽ giúp bạn kiểm soát tốt diễn tiến bệnh cũng như ngăn ngừa biến chứng:  Tập thể dục: Với bệnh nhân thông liên nhĩ, tập thể dục không phải chống chỉ định. Tuy nhiên, ở một số bệnh nhân có các biến chứng như loạn nhịp tim, suy tim, tăng áp phổi… việc tập luyện cần được hướng dẫn bởi các bác sĩ để đảm bảo an toàn và hiệu quả Chế độ dinh dưỡng: Cân bằng chế độ dinh dưỡng với nhiều nhóm chất, bổ sung thêm rau củ, ngũ cốc và hạn chế cholesterol cũng như chất béo.",
+        "head": "Chế độ dinh dưỡng",
+        "head_type": "lifestyle",
+        "relation": "relatedTo",
+        "tail": "Bệnh nhân thông liên nhĩ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Những thói quen sinh hoạt và lối sống khoa học sẽ giúp bạn kiểm soát tốt diễn tiến bệnh cũng như ngăn ngừa biến chứng:  Tập thể dục: Với bệnh nhân thông liên nhĩ, tập thể dục không phải chống chỉ định. Tuy nhiên, ở một số bệnh nhân có các biến chứng như loạn nhịp tim, suy tim, tăng áp phổi… việc tập luyện cần được hướng dẫn bởi các bác sĩ để đảm bảo an toàn và hiệu quả Chế độ dinh dưỡng: Cân bằng chế độ dinh dưỡng với nhiều nhóm chất, bổ sung thêm rau củ, ngũ cốc và hạn chế cholesterol cũng như chất béo.",
+        "head": "Chế độ dinh dưỡng",
+        "head_type": "lifestyle",
+        "relation": "preventedBy",
+        "tail": "Biến chứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Những thói quen sinh hoạt và lối sống khoa học sẽ giúp bạn kiểm soát tốt diễn tiến bệnh cũng như ngăn ngừa biến chứng:  Tập thể dục: Với bệnh nhân thông liên nhĩ, tập thể dục không phải chống chỉ định. Tuy nhiên, ở một số bệnh nhân có các biến chứng như loạn nhịp tim, suy tim, tăng áp phổi… việc tập luyện cần được hướng dẫn bởi các bác sĩ để đảm bảo an toàn và hiệu quả Chế độ dinh dưỡng: Cân bằng chế độ dinh dưỡng với nhiều nhóm chất, bổ sung thêm rau củ, ngũ cốc và hạn chế cholesterol cũng như chất béo. Tránh bị viêm nhiễm: bệnh tim bẩm sinh có thể làm tăng nguy cơ viêm phổi, nhiễm trùng hô hấp.",
+        "head": "Viêm nhiễm",
+        "head_type": "symptom",
+        "relation": "aggravatedBy",
+        "tail": "Bệnh tim bẩm sinh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Những thói quen sinh hoạt và lối sống khoa học sẽ giúp bạn kiểm soát tốt diễn tiến bệnh cũng như ngăn ngừa biến chứng:  Tập thể dục: Với bệnh nhân thông liên nhĩ, tập thể dục không phải chống chỉ định. Tuy nhiên, ở một số bệnh nhân có các biến chứng như loạn nhịp tim, suy tim, tăng áp phổi… việc tập luyện cần được hướng dẫn bởi các bác sĩ để đảm bảo an toàn và hiệu quả Chế độ dinh dưỡng: Cân bằng chế độ dinh dưỡng với nhiều nhóm chất, bổ sung thêm rau củ, ngũ cốc và hạn chế cholesterol cũng như chất béo. Tránh bị viêm nhiễm: bệnh tim bẩm sinh có thể làm tăng nguy cơ viêm phổi, nhiễm trùng hô hấp.",
+        "head": "Viêm phổi",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm nhiễm",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Những thói quen sinh hoạt và lối sống khoa học sẽ giúp bạn kiểm soát tốt diễn tiến bệnh cũng như ngăn ngừa biến chứng:  Tập thể dục: Với bệnh nhân thông liên nhĩ, tập thể dục không phải chống chỉ định. Tuy nhiên, ở một số bệnh nhân có các biến chứng như loạn nhịp tim, suy tim, tăng áp phổi… việc tập luyện cần được hướng dẫn bởi các bác sĩ để đảm bảo an toàn và hiệu quả Chế độ dinh dưỡng: Cân bằng chế độ dinh dưỡng với nhiều nhóm chất, bổ sung thêm rau củ, ngũ cốc và hạn chế cholesterol cũng như chất béo. Tránh bị viêm nhiễm: bệnh tim bẩm sinh có thể làm tăng nguy cơ viêm phổi, nhiễm trùng hô hấp.",
+        "head": "Nhiễm trùng hô hấp",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm nhiễm",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Những thói quen sinh hoạt và lối sống khoa học sẽ giúp bạn kiểm soát tốt diễn tiến bệnh cũng như ngăn ngừa biến chứng:  Tập thể dục: Với bệnh nhân thông liên nhĩ, tập thể dục không phải chống chỉ định. Tuy nhiên, ở một số bệnh nhân có các biến chứng như loạn nhịp tim, suy tim, tăng áp phổi… việc tập luyện cần được hướng dẫn bởi các bác sĩ để đảm bảo an toàn và hiệu quả Chế độ dinh dưỡng: Cân bằng chế độ dinh dưỡng với nhiều nhóm chất, bổ sung thêm rau củ, ngũ cốc và hạn chế cholesterol cũng như chất béo. Tránh bị viêm nhiễm: bệnh tim bẩm sinh có thể làm tăng nguy cơ viêm phổi, nhiễm trùng hô hấp. Vì vậy cần theo dõi phác đồ điều trị của bác sĩ, dùng thuốc đúng với kê toa để đảm bảo hiệu quả điều trị tốt nhất.",
+        "head": "Bệnh tim bẩm sinh",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "Phác đồ điều trị",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Những thói quen sinh hoạt và lối sống khoa học sẽ giúp bạn kiểm soát tốt diễn tiến bệnh cũng như ngăn ngừa biến chứng:  Tập thể dục: Với bệnh nhân thông liên nhĩ, tập thể dục không phải chống chỉ định. Tuy nhiên, ở một số bệnh nhân có các biến chứng như loạn nhịp tim, suy tim, tăng áp phổi… việc tập luyện cần được hướng dẫn bởi các bác sĩ để đảm bảo an toàn và hiệu quả Chế độ dinh dưỡng: Cân bằng chế độ dinh dưỡng với nhiều nhóm chất, bổ sung thêm rau củ, ngũ cốc và hạn chế cholesterol cũng như chất béo. Tránh bị viêm nhiễm: bệnh tim bẩm sinh có thể làm tăng nguy cơ viêm phổi, nhiễm trùng hô hấp. Vì vậy cần theo dõi phác đồ điều trị của bác sĩ, dùng thuốc đúng với kê toa để đảm bảo hiệu quả điều trị tốt nhất.",
+        "head": "Thuốc",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Bệnh tim bẩm sinh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Với mục tiêu phát hiện sớm - chẩn đoán chính xác - điều trị kịp thời các bệnh lý tim mạch và nguy cơ dẫn đến các bệnh tim mạch, Trung tâm Tim mạch BVĐK Tâm Anh được thành lập, quy tụ đội ngũ chuyên gia giàu kinh nghiệm, đầu tư hệ thống máy móc hiện đại, tiên tiến, hỗ trợ bác sĩ chẩn đoán và đưa ra phác đồ điều trị tốt nhất cho bệnh nhân từ trẻ sơ sinh, trẻ nhỏ đến người lớn, người cao tuổi…",
+        "head": "Trung tâm Tim mạch BVĐK Tâm Anh",
+        "head_type": "organ",
+        "relation": "locatedIn",
+        "tail": "BVĐK Tâm Anh",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Với mục tiêu phát hiện sớm - chẩn đoán chính xác - điều trị kịp thời các bệnh lý tim mạch và nguy cơ dẫn đến các bệnh tim mạch, Trung tâm Tim mạch BVĐK Tâm Anh được thành lập, quy tụ đội ngũ chuyên gia giàu kinh nghiệm, đầu tư hệ thống máy móc hiện đại, tiên tiến, hỗ trợ bác sĩ chẩn đoán và đưa ra phác đồ điều trị tốt nhất cho bệnh nhân từ trẻ sơ sinh, trẻ nhỏ đến người lớn, người cao tuổi…",
+        "head": "Trung tâm Tim mạch BVĐK Tâm Anh",
+        "head_type": "organ",
+        "relation": "diagnosedBy",
+        "tail": "Bệnh lý tim mạch",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Với mục tiêu phát hiện sớm - chẩn đoán chính xác - điều trị kịp thời các bệnh lý tim mạch và nguy cơ dẫn đến các bệnh tim mạch, Trung tâm Tim mạch BVĐK Tâm Anh được thành lập, quy tụ đội ngũ chuyên gia giàu kinh nghiệm, đầu tư hệ thống máy móc hiện đại, tiên tiến, hỗ trợ bác sĩ chẩn đoán và đưa ra phác đồ điều trị tốt nhất cho bệnh nhân từ trẻ sơ sinh, trẻ nhỏ đến người lớn, người cao tuổi…",
+        "head": "Trung tâm Tim mạch BVĐK Tâm Anh",
+        "head_type": "organ",
+        "relation": "treatedBy",
+        "tail": "Bệnh lý tim mạch",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Với mục tiêu phát hiện sớm - chẩn đoán chính xác - điều trị kịp thời các bệnh lý tim mạch và nguy cơ dẫn đến các bệnh tim mạch, Trung tâm Tim mạch BVĐK Tâm Anh được thành lập, quy tụ đội ngũ chuyên gia giàu kinh nghiệm, đầu tư hệ thống máy móc hiện đại, tiên tiến, hỗ trợ bác sĩ chẩn đoán và đưa ra phác đồ điều trị tốt nhất cho bệnh nhân từ trẻ sơ sinh, trẻ nhỏ đến người lớn, người cao tuổi…",
+        "head": "Chuyên gia",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Bệnh lý tim mạch",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Với mục tiêu phát hiện sớm - chẩn đoán chính xác - điều trị kịp thời các bệnh lý tim mạch và nguy cơ dẫn đến các bệnh tim mạch, Trung tâm Tim mạch BVĐK Tâm Anh được thành lập, quy tụ đội ngũ chuyên gia giàu kinh nghiệm, đầu tư hệ thống máy móc hiện đại, tiên tiến, hỗ trợ bác sĩ chẩn đoán và đưa ra phác đồ điều trị tốt nhất cho bệnh nhân từ trẻ sơ sinh, trẻ nhỏ đến người lớn, người cao tuổi…",
+        "head": "Máy móc",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Bệnh lý tim mạch",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Với mục tiêu phát hiện sớm - chẩn đoán chính xác - điều trị kịp thời các bệnh lý tim mạch và nguy cơ dẫn đến các bệnh tim mạch, Trung tâm Tim mạch BVĐK Tâm Anh được thành lập, quy tụ đội ngũ chuyên gia giàu kinh nghiệm, đầu tư hệ thống máy móc hiện đại, tiên tiến, hỗ trợ bác sĩ chẩn đoán và đưa ra phác đồ điều trị tốt nhất cho bệnh nhân từ trẻ sơ sinh, trẻ nhỏ đến người lớn, người cao tuổi…",
+        "head": "Bác sĩ",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Bệnh lý tim mạch",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Với mục tiêu phát hiện sớm - chẩn đoán chính xác - điều trị kịp thời các bệnh lý tim mạch và nguy cơ dẫn đến các bệnh tim mạch, Trung tâm Tim mạch BVĐK Tâm Anh được thành lập, quy tụ đội ngũ chuyên gia giàu kinh nghiệm, đầu tư hệ thống máy móc hiện đại, tiên tiến, hỗ trợ bác sĩ chẩn đoán và đưa ra phác đồ điều trị tốt nhất cho bệnh nhân từ trẻ sơ sinh, trẻ nhỏ đến người lớn, người cao tuổi…",
+        "head": "Trẻ sơ sinh",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "Trung tâm Tim mạch BVĐK Tâm Anh",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Với mục tiêu phát hiện sớm - chẩn đoán chính xác - điều trị kịp thời các bệnh lý tim mạch và nguy cơ dẫn đến các bệnh tim mạch, Trung tâm Tim mạch BVĐK Tâm Anh được thành lập, quy tụ đội ngũ chuyên gia giàu kinh nghiệm, đầu tư hệ thống máy móc hiện đại, tiên tiến, hỗ trợ bác sĩ chẩn đoán và đưa ra phác đồ điều trị tốt nhất cho bệnh nhân từ trẻ sơ sinh, trẻ nhỏ đến người lớn, người cao tuổi…",
+        "head": "Trẻ nhỏ",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "Trung tâm Tim mạch BVĐK Tâm Anh",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Với mục tiêu phát hiện sớm - chẩn đoán chính xác - điều trị kịp thời các bệnh lý tim mạch và nguy cơ dẫn đến các bệnh tim mạch, Trung tâm Tim mạch BVĐK Tâm Anh được thành lập, quy tụ đội ngũ chuyên gia giàu kinh nghiệm, đầu tư hệ thống máy móc hiện đại, tiên tiến, hỗ trợ bác sĩ chẩn đoán và đưa ra phác đồ điều trị tốt nhất cho bệnh nhân từ trẻ sơ sinh, trẻ nhỏ đến người lớn, người cao tuổi…",
+        "head": "Người lớn",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "Trung tâm Tim mạch BVĐK Tâm Anh",
+        "tail_type": "organ"
+    }
+]

@@ -1,0 +1,358 @@
+{
+	"info": {
+		"_postman_id": "5aee47e8-66a5-4d72-b9e7-e2dcdff68ba8",
+		"name": "KnowledgeAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "26675063"
+	},
+	"item": [
+		{
+			"name": "Folder",
+			"item": [
+				{
+					"name": "GetAllFolder",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": "http://127.0.0.1:8000/api/folder/"
+					},
+					"response": []
+				},
+				{
+					"name": "FindFolder",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"search\": \"\",\r\n    \"page\": 1,\r\n    \"per_page\": 5,\r\n    \"order_by\": \"id\",\r\n    \"order_direction\": \"desc\" \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/folder/?search=&page=1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"folder",
+								""
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": ""
+								},
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddFolder",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Cap 3",
+									"type": "text"
+								},
+								{
+									"key": "id_parent",
+									"value": "150",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://127.0.0.1:8000/api/folder/add/"
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateFolder",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "158",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "New folder 10acdcddsvdsvsdv",
+									"type": "text"
+								},
+								{
+									"key": "id_parent",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://127.0.0.1:8000/api/folder/update/"
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteFolder",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/folder/delete/?id=145",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"folder",
+								"delete",
+								""
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "145"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetTree",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://127.0.0.1:8000/api/folder/tree"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "File",
+			"item": [
+				{
+					"name": "AddFile",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id_folder",
+									"value": "151",
+									"type": "text"
+								},
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/C:/Users/ADMIN/Downloads/Knowledge Advanced/Knowledge_Advanced/knowledgeGraph/note_api.txt"
+								}
+							]
+						},
+						"url": "http://127.0.0.1:8000/api/file/add/"
+					},
+					"response": []
+				},
+				{
+					"name": "GetFileById",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "79",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://127.0.0.1:8000/api/file/"
+					},
+					"response": []
+				},
+				{
+					"name": "FindFile",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"search\": \"\",\r\n    \"page\": 1,\r\n    \"per_page\": 5,\r\n    \"order_by\": \"id\",\r\n    \"order_direction\": \"desc\" \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/file/?id_folder=3&search&page=1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"file",
+								""
+							],
+							"query": [
+								{
+									"key": "id_folder",
+									"value": "3"
+								},
+								{
+									"key": "search",
+									"value": null
+								},
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateFIle",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "80",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "new file 1cssdvsdvsdvsdv",
+									"type": "text"
+								},
+								{
+									"key": "id_folder",
+									"value": "140",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://127.0.0.1:8000/api/file/update/"
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteFile",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/file/delete/?id=80",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"file",
+								"delete",
+								""
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "80"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "QA",
+			"item": [
+				{
+					"name": "Chatbot",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "question",
+									"value": "Bệnh trĩ là gì ?",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://127.0.0.1:8000/api/chatbot/"
+					},
+					"response": []
+				},
+				{
+					"name": "Cypher(Dung de truy van do thi)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "question",
+									"value": "Bệnh trĩ là gì ?",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://127.0.0.1:8000/api/cypher/"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

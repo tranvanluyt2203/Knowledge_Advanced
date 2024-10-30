@@ -1,0 +1,610 @@
+
+MERGE (o1:disease {id: 'viêm_tai_giữa_mạn_tính_thủng_nhĩ_disease'})
+MERGE (o2:symptom {id: 'nghe_kém_vĩnh_viễn_symptom'})
+MERGE (o1)-[r0:isSymptomOf]->(o2)
+SET r0.text = 'Viêm tai giữa mạn tính thủng nhĩ là một tình trạng bệnh cần được điều trị sớm để tránh nguy cơ nghe kém vĩnh viễn.'
+
+MERGE (o1:disease {id: 'viêm_tai_giữa_mạn_tính_thủng_nhĩ_disease'})
+MERGE (o2:treatment {id: 'điều_trị_sớm_treatment'})
+MERGE (o1)-[r1:treatedBy]->(o2)
+SET r1.text = 'Viêm tai giữa mạn tính thủng nhĩ là một tình trạng bệnh cần được điều trị sớm để tránh nguy cơ nghe kém vĩnh viễn.'
+
+MERGE (o1:disease {id: 'viêm_tai_giữa_mạn_tính_thủng_nhĩ_disease'})
+MERGE (o2:symptom {id: 'ù_tai_symptom'})
+MERGE (o1)-[r2:isSymptomOf]->(o2)
+SET r2.text = 'ThS.BSNT Nguyễn Thị Hương, khoa Tai mũi họng, Bệnh viện Đa khoa Tâm Anh TP.HCM cho biết, viêm tai giữa mạn tính thủng nhĩ có thể gây biến chứng ù tai, giảm thính lực, điếc vĩnh viễn, ảnh hưởng đến khả năng phát triển ngôn ngữ của trẻ, thậm chí gây các biến chứng viêm não - màng não nguy hiểm đến tính mạng..'
+
+MERGE (o1:disease {id: 'viêm_tai_giữa_mạn_tính_thủng_nhĩ_disease'})
+MERGE (o2:symptom {id: 'giảm_thính_lực_symptom'})
+MERGE (o1)-[r3:isSymptomOf]->(o2)
+SET r3.text = 'ThS.BSNT Nguyễn Thị Hương, khoa Tai mũi họng, Bệnh viện Đa khoa Tâm Anh TP.HCM cho biết, viêm tai giữa mạn tính thủng nhĩ có thể gây biến chứng ù tai, giảm thính lực, điếc vĩnh viễn, ảnh hưởng đến khả năng phát triển ngôn ngữ của trẻ, thậm chí gây các biến chứng viêm não - màng não nguy hiểm đến tính mạng..'
+
+MERGE (o1:disease {id: 'viêm_tai_giữa_mạn_tính_thủng_nhĩ_disease'})
+MERGE (o2:symptom {id: 'điếc_vĩnh_viễn_symptom'})
+MERGE (o1)-[r4:isSymptomOf]->(o2)
+SET r4.text = 'ThS.BSNT Nguyễn Thị Hương, khoa Tai mũi họng, Bệnh viện Đa khoa Tâm Anh TP.HCM cho biết, viêm tai giữa mạn tính thủng nhĩ có thể gây biến chứng ù tai, giảm thính lực, điếc vĩnh viễn, ảnh hưởng đến khả năng phát triển ngôn ngữ của trẻ, thậm chí gây các biến chứng viêm não - màng não nguy hiểm đến tính mạng..'
+
+MERGE (o1:disease {id: 'viêm_tai_giữa_mạn_tính_thủng_nhĩ_disease'})
+MERGE (o2:symptom {id: 'ảnh_hưởng_đến_khả_năng_phát_triển_ngôn_ngữ_của_trẻ_symptom'})
+MERGE (o1)-[r5:isSymptomOf]->(o2)
+SET r5.text = 'ThS.BSNT Nguyễn Thị Hương, khoa Tai mũi họng, Bệnh viện Đa khoa Tâm Anh TP.HCM cho biết, viêm tai giữa mạn tính thủng nhĩ có thể gây biến chứng ù tai, giảm thính lực, điếc vĩnh viễn, ảnh hưởng đến khả năng phát triển ngôn ngữ của trẻ, thậm chí gây các biến chứng viêm não - màng não nguy hiểm đến tính mạng..'
+
+MERGE (o1:disease {id: 'viêm_tai_giữa_mạn_tính_thủng_nhĩ_disease'})
+MERGE (o2:disease {id: 'viêm_não_-_màng_não_disease'})
+MERGE (o1)-[r6:isSymptomOf]->(o2)
+SET r6.text = 'ThS.BSNT Nguyễn Thị Hương, khoa Tai mũi họng, Bệnh viện Đa khoa Tâm Anh TP.HCM cho biết, viêm tai giữa mạn tính thủng nhĩ có thể gây biến chứng ù tai, giảm thính lực, điếc vĩnh viễn, ảnh hưởng đến khả năng phát triển ngôn ngữ của trẻ, thậm chí gây các biến chứng viêm não - màng não nguy hiểm đến tính mạng..'
+
+MERGE (o1:disease {id: 'viêm_tai_giữa_thủng_nhĩ_disease'})
+MERGE (o2:disease {id: 'viêm_tai_giữa_cấp_tính_disease'})
+MERGE (o1)-[r7:isSymptomOf]->(o2)
+SET r7.text = 'Viêm tai giữa thủng nhĩ là một biến chứng của viêm tai giữa cấp tính không được điều trị kịp thời, đúng cách, tái phát nhiều lần dẫn đến thủng màng nhĩ.'
+
+MERGE (o1:disease {id: 'viêm_tai_giữa_thủng_nhĩ_disease'})
+MERGE (o2:lifestyle {id: 'không_được_điều_trị_kịp_thời__đúng_cách__tái_phát_nhiều_lần_lifestyle'})
+MERGE (o1)-[r8:causedBy]->(o2)
+SET r8.text = 'Viêm tai giữa thủng nhĩ là một biến chứng của viêm tai giữa cấp tính không được điều trị kịp thời, đúng cách, tái phát nhiều lần dẫn đến thủng màng nhĩ.'
+
+MERGE (o1:disease {id: 'viêm_tai_giữa_thủng_nhĩ_disease'})
+MERGE (o2:symptom {id: 'thủng_màng_nhĩ_symptom'})
+MERGE (o1)-[r9:isSymptomOf]->(o2)
+SET r9.text = 'Viêm tai giữa thủng nhĩ là một biến chứng của viêm tai giữa cấp tính không được điều trị kịp thời, đúng cách, tái phát nhiều lần dẫn đến thủng màng nhĩ.'
+
+MERGE (o1:disease {id: 'viêm_tai_giữa_mạn_tính_thủng_nhĩ_disease'})
+MERGE (o2:symptom {id: 'thủng_màng_nhĩ_kéo_dài_trên_12_tuần_symptom'})
+MERGE (o1)-[r10:isSymptomOf]->(o2)
+SET r10.text = 'Theo bác sĩ Hương, tình trạng viêm tai giữa mạn tính thủng nhĩ có đặc trưng là thủng màng nhĩ kéo dài trên 12 tuần, gây chảy dịch tai, viêm niêm mạc tai giữa và xương chũm.'
+
+MERGE (o1:disease {id: 'viêm_tai_giữa_mạn_tính_thủng_nhĩ_disease'})
+MERGE (o2:symptom {id: 'chảy_dịch_tai_symptom'})
+MERGE (o1)-[r11:isSymptomOf]->(o2)
+SET r11.text = 'Theo bác sĩ Hương, tình trạng viêm tai giữa mạn tính thủng nhĩ có đặc trưng là thủng màng nhĩ kéo dài trên 12 tuần, gây chảy dịch tai, viêm niêm mạc tai giữa và xương chũm.'
+
+MERGE (o1:disease {id: 'viêm_tai_giữa_mạn_tính_thủng_nhĩ_disease'})
+MERGE (o2:symptom {id: 'viêm_niêm_mạc_tai_giữa_symptom'})
+MERGE (o1)-[r12:isSymptomOf]->(o2)
+SET r12.text = 'Theo bác sĩ Hương, tình trạng viêm tai giữa mạn tính thủng nhĩ có đặc trưng là thủng màng nhĩ kéo dài trên 12 tuần, gây chảy dịch tai, viêm niêm mạc tai giữa và xương chũm.'
+
+MERGE (o1:disease {id: 'viêm_tai_giữa_mạn_tính_thủng_nhĩ_disease'})
+MERGE (o2:organ {id: 'xương_chũm_organ'})
+MERGE (o1)-[r13:isSymptomOf]->(o2)
+SET r13.text = 'Theo bác sĩ Hương, tình trạng viêm tai giữa mạn tính thủng nhĩ có đặc trưng là thủng màng nhĩ kéo dài trên 12 tuần, gây chảy dịch tai, viêm niêm mạc tai giữa và xương chũm.'
+
+MERGE (o1:disease {id: 'viêm_tai_giữa_disease'})
+MERGE (o2:disease {id: 'viêm_tai_giữa_thủng_nhĩ_disease'})
+MERGE (o1)-[r14:isSymptomOf]->(o2)
+SET r14.text = 'Viêm tai giữa không được điều trị sớm có thể dẫn đến viêm tai giữa thủng nhĩ.'
+
+MERGE (o1:disease {id: 'viêm_tai_giữa_disease'})
+MERGE (o2:lifestyle {id: 'không_được_điều_trị_sớm_lifestyle'})
+MERGE (o1)-[r15:causedBy]->(o2)
+SET r15.text = 'Viêm tai giữa không được điều trị sớm có thể dẫn đến viêm tai giữa thủng nhĩ.'
+
+MERGE (o1:disease {id: 'viêm_tai_giữa_disease'})
+MERGE (o2:lifestyle {id: 'trẻ_từ_6-36_tháng_tuổi_lifestyle'})
+MERGE (o1)-[r16:affects]->(o2)
+SET r16.text = 'Theo bác sĩ Hương, bất kỳ ai cũng có thể bị viêm tai giữa nhưng bệnh phổ biến hơn ở trẻ từ 6-36 tháng tuổi do cấu trúc vòi nhĩ ngắn và nằm ngang hơn so với người lớn nên khả năng dẫn lưu dịch kém hơn.'
+
+MERGE (o1:organ {id: 'vòi_nhĩ_organ'})
+MERGE (o2:organ {id: 'tai_giữa_organ'})
+MERGE (o1)-[r17:locatedIn]->(o2)
+SET r17.text = 'Theo bác sĩ Hương, bất kỳ ai cũng có thể bị viêm tai giữa nhưng bệnh phổ biến hơn ở trẻ từ 6-36 tháng tuổi do cấu trúc vòi nhĩ ngắn và nằm ngang hơn so với người lớn nên khả năng dẫn lưu dịch kém hơn.'
+
+MERGE (o1:organ {id: 'vòi_nhĩ_organ'})
+MERGE (o2:symptom {id: 'khả_năng_dẫn_lưu_dịch_kém_symptom'})
+MERGE (o1)-[r18:relatedTo]->(o2)
+SET r18.text = 'Theo bác sĩ Hương, bất kỳ ai cũng có thể bị viêm tai giữa nhưng bệnh phổ biến hơn ở trẻ từ 6-36 tháng tuổi do cấu trúc vòi nhĩ ngắn và nằm ngang hơn so với người lớn nên khả năng dẫn lưu dịch kém hơn.'
+
+MERGE (o1:organ {id: 'vòi_nhĩ_organ'})
+MERGE (o2:organ {id: 'tai_giữa_organ'})
+MERGE (o1)-[r19:locatedIn]->(o2)
+SET r19.text = 'Vòi nhĩ là bộ phận nối liền tai giữa với vòm mũi, nếu tắc vòi nhĩ, dịch nhầy sẽ ứ đọng trong tai giữa tạo môi trường thuận lợi cho các loại vi khuẩn hoạt động gây viêm và nhiễm trùng.'
+
+MERGE (o1:organ {id: 'vòi_nhĩ_organ'})
+MERGE (o2:symptom {id: 'tắc_vòi_nhĩ_symptom'})
+MERGE (o1)-[r20:relatedTo]->(o2)
+SET r20.text = 'Vòi nhĩ là bộ phận nối liền tai giữa với vòm mũi, nếu tắc vòi nhĩ, dịch nhầy sẽ ứ đọng trong tai giữa tạo môi trường thuận lợi cho các loại vi khuẩn hoạt động gây viêm và nhiễm trùng.'
+
+MERGE (o1:symptom {id: 'tắc_vòi_nhĩ_symptom'})
+MERGE (o2:disease {id: 'viêm_và_nhiễm_trùng_disease'})
+MERGE (o1)-[r21:isSymptomOf]->(o2)
+SET r21.text = 'Vòi nhĩ là bộ phận nối liền tai giữa với vòm mũi, nếu tắc vòi nhĩ, dịch nhầy sẽ ứ đọng trong tai giữa tạo môi trường thuận lợi cho các loại vi khuẩn hoạt động gây viêm và nhiễm trùng.'
+
+MERGE (o1:symptom {id: 'dịch_nhầy_symptom'})
+MERGE (o2:disease {id: 'viêm_và_nhiễm_trùng_disease'})
+MERGE (o1)-[r22:isSymptomOf]->(o2)
+SET r22.text = 'Vòi nhĩ là bộ phận nối liền tai giữa với vòm mũi, nếu tắc vòi nhĩ, dịch nhầy sẽ ứ đọng trong tai giữa tạo môi trường thuận lợi cho các loại vi khuẩn hoạt động gây viêm và nhiễm trùng.'
+
+MERGE (o1:lifestyle {id: 'trẻ_sử_dụng_núm_vú_giả__bú_bình_lifestyle'})
+MERGE (o2:disease {id: 'viêm_tai_giữa_disease'})
+MERGE (o1)-[r23:aggravatedBy]->(o2)
+SET r23.text = 'Những trẻ có nguy cơ viêm tai giữa bao gồm:  Trẻ sử dụng núm vú giả, bú bình.'
+
+MERGE (o1:lifestyle {id: 'trẻ_sống_ở_môi_trường_ô_nhiễm_không_khí_lifestyle'})
+MERGE (o2:disease {id: 'viêm_tai_giữa_disease'})
+MERGE (o1)-[r24:aggravatedBy]->(o2)
+SET r24.text = 'Những trẻ có nguy cơ viêm tai giữa bao gồm:  Trẻ sống ở môi trường ô nhiễm không khí hoặc thường xuyên trải qua những thay đổi về độ cao, thay đổi khí hậu.'
+
+MERGE (o1:lifestyle {id: 'thường_xuyên_trải_qua_những_thay_đổi_về_độ_cao__thay_đổi_khí_hậu_lifestyle'})
+MERGE (o2:disease {id: 'viêm_tai_giữa_disease'})
+MERGE (o1)-[r25:aggravatedBy]->(o2)
+SET r25.text = 'Những trẻ có nguy cơ viêm tai giữa bao gồm:  Trẻ sống ở môi trường ô nhiễm không khí hoặc thường xuyên trải qua những thay đổi về độ cao, thay đổi khí hậu.'
+
+MERGE (o1:lifestyle {id: 'trẻ_bị_cảm_lạnh__viêm_xoang__cúm__hoặc_nhiễm_trùng_tai_tái_phát_lifestyle'})
+MERGE (o2:disease {id: 'viêm_tai_giữa_disease'})
+MERGE (o1)-[r26:aggravatedBy]->(o2)
+SET r26.text = 'Những trẻ có nguy cơ viêm tai giữa bao gồm:  Trẻ bị cảm lạnh, viêm xoang, cúm, hoặc nhiễm trùng tai tái phát.'
+
+MERGE (o1:lifestyle {id: 'trẻ_bị_dị_tật_bẩm_sinh_vùng_mũi_họng_lifestyle'})
+MERGE (o2:disease {id: 'viêm_tai_giữa_disease'})
+MERGE (o1)-[r27:aggravatedBy]->(o2)
+SET r27.text = 'Những trẻ có nguy cơ viêm tai giữa bao gồm:  Trẻ bị dị tật bẩm sinh vùng mũi họng.'
+
+MERGE (o1:lifestyle {id: 'trẻ_có_miễn_dịch_yếu_lifestyle'})
+MERGE (o2:disease {id: 'viêm_tai_giữa_disease'})
+MERGE (o1)-[r28:aggravatedBy]->(o2)
+SET r28.text = 'Những trẻ có nguy cơ viêm tai giữa bao gồm:  Trẻ có miễn dịch yếu.'
+
+MERGE (o1:disease {id: 'viêm_tai_giữa_cấp_tính_tái_phát_nhiều_lần_disease'})
+MERGE (o2:disease {id: 'thủng_màng_nhĩ_disease'})
+MERGE (o1)-[r29:causedBy]->(o2)
+SET r29.text = 'Thủng màng nhĩ xuất phát từ nhiều nguyên nhân nhưng phổ biến nhất là do:  Viêm tai giữa cấp tính tái phát nhiều lần. Rối loạn chức năng/tổn thương giải phẫu vòi nhĩ. Chấn thương gây thủng màng nhĩ. Đặt ống thông khí không đúng cách của bác sĩ. Người có bất thường về xương sọ như mắc hội chứng Mèo kêu, hội chứng Down, hở hàm ếch và/hoặc thiểu sản màn hầu - dị dạng tim mạch (hội chứng Shprintzen).(1) Nhiễm trùng đường hô hấp trên.'
+
+MERGE (o1:disease {id: 'rối_loạn_chức_năng/tổn_thương_giải_phẫu_vòi_nhĩ_disease'})
+MERGE (o2:disease {id: 'thủng_màng_nhĩ_disease'})
+MERGE (o1)-[r30:causedBy]->(o2)
+SET r30.text = 'Thủng màng nhĩ xuất phát từ nhiều nguyên nhân nhưng phổ biến nhất là do:  Viêm tai giữa cấp tính tái phát nhiều lần. Rối loạn chức năng/tổn thương giải phẫu vòi nhĩ. Chấn thương gây thủng màng nhĩ. Đặt ống thông khí không đúng cách của bác sĩ. Người có bất thường về xương sọ như mắc hội chứng Mèo kêu, hội chứng Down, hở hàm ếch và/hoặc thiểu sản màn hầu - dị dạng tim mạch (hội chứng Shprintzen).(1) Nhiễm trùng đường hô hấp trên.'
+
+MERGE (o1:cause {id: 'chấn_thương_cause'})
+MERGE (o2:disease {id: 'thủng_màng_nhĩ_disease'})
+MERGE (o1)-[r31:causedBy]->(o2)
+SET r31.text = 'Thủng màng nhĩ xuất phát từ nhiều nguyên nhân nhưng phổ biến nhất là do:  Viêm tai giữa cấp tính tái phát nhiều lần. Rối loạn chức năng/tổn thương giải phẫu vòi nhĩ. Chấn thương gây thủng màng nhĩ. Đặt ống thông khí không đúng cách của bác sĩ. Người có bất thường về xương sọ như mắc hội chứng Mèo kêu, hội chứng Down, hở hàm ếch và/hoặc thiểu sản màn hầu - dị dạng tim mạch (hội chứng Shprintzen).(1) Nhiễm trùng đường hô hấp trên.'
+
+MERGE (o1:treatment {id: 'đặt_ống_thông_khí_không_đúng_cách_treatment'})
+MERGE (o2:disease {id: 'thủng_màng_nhĩ_disease'})
+MERGE (o1)-[r32:causedBy]->(o2)
+SET r32.text = 'Thủng màng nhĩ xuất phát từ nhiều nguyên nhân nhưng phổ biến nhất là do:  Viêm tai giữa cấp tính tái phát nhiều lần. Rối loạn chức năng/tổn thương giải phẫu vòi nhĩ. Chấn thương gây thủng màng nhĩ. Đặt ống thông khí không đúng cách của bác sĩ. Người có bất thường về xương sọ như mắc hội chứng Mèo kêu, hội chứng Down, hở hàm ếch và/hoặc thiểu sản màn hầu - dị dạng tim mạch (hội chứng Shprintzen).(1) Nhiễm trùng đường hô hấp trên.'
+
+MERGE (o1:disease {id: 'hội_chứng_mèo_kêu_disease'})
+MERGE (o2:disease {id: 'thủng_màng_nhĩ_disease'})
+MERGE (o1)-[r33:causedBy]->(o2)
+SET r33.text = 'Thủng màng nhĩ xuất phát từ nhiều nguyên nhân nhưng phổ biến nhất là do:  Viêm tai giữa cấp tính tái phát nhiều lần. Rối loạn chức năng/tổn thương giải phẫu vòi nhĩ. Chấn thương gây thủng màng nhĩ. Đặt ống thông khí không đúng cách của bác sĩ. Người có bất thường về xương sọ như mắc hội chứng Mèo kêu, hội chứng Down, hở hàm ếch và/hoặc thiểu sản màn hầu - dị dạng tim mạch (hội chứng Shprintzen).(1) Nhiễm trùng đường hô hấp trên.'
+
+MERGE (o1:disease {id: 'hội_chứng_down_disease'})
+MERGE (o2:disease {id: 'thủng_màng_nhĩ_disease'})
+MERGE (o1)-[r34:causedBy]->(o2)
+SET r34.text = 'Thủng màng nhĩ xuất phát từ nhiều nguyên nhân nhưng phổ biến nhất là do:  Viêm tai giữa cấp tính tái phát nhiều lần. Rối loạn chức năng/tổn thương giải phẫu vòi nhĩ. Chấn thương gây thủng màng nhĩ. Đặt ống thông khí không đúng cách của bác sĩ. Người có bất thường về xương sọ như mắc hội chứng Mèo kêu, hội chứng Down, hở hàm ếch và/hoặc thiểu sản màn hầu - dị dạng tim mạch (hội chứng Shprintzen).(1) Nhiễm trùng đường hô hấp trên.'
+
+MERGE (o1:disease {id: 'hở_hàm_ếch_disease'})
+MERGE (o2:disease {id: 'thủng_màng_nhĩ_disease'})
+MERGE (o1)-[r35:causedBy]->(o2)
+SET r35.text = 'Thủng màng nhĩ xuất phát từ nhiều nguyên nhân nhưng phổ biến nhất là do:  Viêm tai giữa cấp tính tái phát nhiều lần. Rối loạn chức năng/tổn thương giải phẫu vòi nhĩ. Chấn thương gây thủng màng nhĩ. Đặt ống thông khí không đúng cách của bác sĩ. Người có bất thường về xương sọ như mắc hội chứng Mèo kêu, hội chứng Down, hở hàm ếch và/hoặc thiểu sản màn hầu - dị dạng tim mạch (hội chứng Shprintzen).(1) Nhiễm trùng đường hô hấp trên.'
+
+MERGE (o1:disease {id: 'thiểu_sản_màn_hầu_-_dị_dạng_tim_mạch_(hội_chứng_shprintzen)_disease'})
+MERGE (o2:disease {id: 'thủng_màng_nhĩ_disease'})
+MERGE (o1)-[r36:causedBy]->(o2)
+SET r36.text = 'Thủng màng nhĩ xuất phát từ nhiều nguyên nhân nhưng phổ biến nhất là do:  Viêm tai giữa cấp tính tái phát nhiều lần. Rối loạn chức năng/tổn thương giải phẫu vòi nhĩ. Chấn thương gây thủng màng nhĩ. Đặt ống thông khí không đúng cách của bác sĩ. Người có bất thường về xương sọ như mắc hội chứng Mèo kêu, hội chứng Down, hở hàm ếch và/hoặc thiểu sản màn hầu - dị dạng tim mạch (hội chứng Shprintzen).(1) Nhiễm trùng đường hô hấp trên.'
+
+MERGE (o1:disease {id: 'nhiễm_trùng_đường_hô_hấp_trên_disease'})
+MERGE (o2:disease {id: 'thủng_màng_nhĩ_disease'})
+MERGE (o1)-[r37:causedBy]->(o2)
+SET r37.text = 'Thủng màng nhĩ xuất phát từ nhiều nguyên nhân nhưng phổ biến nhất là do:  Viêm tai giữa cấp tính tái phát nhiều lần. Rối loạn chức năng/tổn thương giải phẫu vòi nhĩ. Chấn thương gây thủng màng nhĩ. Đặt ống thông khí không đúng cách của bác sĩ. Người có bất thường về xương sọ như mắc hội chứng Mèo kêu, hội chứng Down, hở hàm ếch và/hoặc thiểu sản màn hầu - dị dạng tim mạch (hội chứng Shprintzen).(1) Nhiễm trùng đường hô hấp trên.'
+
+MERGE (o1:symptom {id: 'lỗ_thủng_màng_nhĩ_quá_rộng_symptom'})
+MERGE (o2:disease {id: 'viêm_tai_giữa_mạn_tính_thủng_nhĩ_disease'})
+MERGE (o1)-[r38:isSymptomOf]->(o2)
+SET r38.text = 'Khi lỗ thủng màng nhĩ quá rộng, hoặc điều trị viêm tai không đúng cách, viêm nhiễm kéo dài, lỗ thủng màng nhĩ không được đóng kín, sẽ gây viêm tai giữa mạn tính thủng nhĩ.'
+
+MERGE (o1:treatment {id: 'điều_trị_viêm_tai_không_đúng_cách_treatment'})
+MERGE (o2:disease {id: 'viêm_tai_giữa_mạn_tính_thủng_nhĩ_disease'})
+MERGE (o1)-[r39:isSymptomOf]->(o2)
+SET r39.text = 'Khi lỗ thủng màng nhĩ quá rộng, hoặc điều trị viêm tai không đúng cách, viêm nhiễm kéo dài, lỗ thủng màng nhĩ không được đóng kín, sẽ gây viêm tai giữa mạn tính thủng nhĩ.'
+
+MERGE (o1:symptom {id: 'viêm_nhiễm_kéo_dài_symptom'})
+MERGE (o2:disease {id: 'viêm_tai_giữa_mạn_tính_thủng_nhĩ_disease'})
+MERGE (o1)-[r40:isSymptomOf]->(o2)
+SET r40.text = 'Khi lỗ thủng màng nhĩ quá rộng, hoặc điều trị viêm tai không đúng cách, viêm nhiễm kéo dài, lỗ thủng màng nhĩ không được đóng kín, sẽ gây viêm tai giữa mạn tính thủng nhĩ.'
+
+MERGE (o1:symptom {id: 'lỗ_thủng_màng_nhĩ_không_được_đóng_kín_symptom'})
+MERGE (o2:disease {id: 'viêm_tai_giữa_mạn_tính_thủng_nhĩ_disease'})
+MERGE (o1)-[r41:isSymptomOf]->(o2)
+SET r41.text = 'Khi lỗ thủng màng nhĩ quá rộng, hoặc điều trị viêm tai không đúng cách, viêm nhiễm kéo dài, lỗ thủng màng nhĩ không được đóng kín, sẽ gây viêm tai giữa mạn tính thủng nhĩ.'
+
+MERGE (o1:symptom {id: 'màng_nhĩ_bị_thủng_kéo_dài_trên_12_tuần_symptom'})
+MERGE (o2:disease {id: 'viêm_tai_giữa_mạn_tính_thủng_nhĩ_disease'})
+MERGE (o1)-[r42:isSymptomOf]->(o2)
+SET r42.text = 'Bác sĩ Hương cho biết, các dấu hiệu viêm tai giữa mạn tính thủng nhĩ phổ biến bao gồm:  Màng nhĩ bị thủng kéo dài trên 12 tuần; Chảy mủ tai, tai có mùi hôi; Ù tai;(2) Nghe kém dẫn truyền; Tai giữa niêm mạc phù nề, thoái hóa; Triệu chứng đau thường không phổ biến; Ở trẻ em, các triệu chứng kể trên có thể dẫn đến trẻ phản ứng kém với âm thanh do nghe kém, khả năng thăng bằng kém.'
+
+MERGE (o1:symptom {id: 'chảy_mủ_tai_symptom'})
+MERGE (o2:disease {id: 'viêm_tai_giữa_mạn_tính_thủng_nhĩ_disease'})
+MERGE (o1)-[r43:isSymptomOf]->(o2)
+SET r43.text = 'Bác sĩ Hương cho biết, các dấu hiệu viêm tai giữa mạn tính thủng nhĩ phổ biến bao gồm:  Màng nhĩ bị thủng kéo dài trên 12 tuần; Chảy mủ tai, tai có mùi hôi; Ù tai;(2) Nghe kém dẫn truyền; Tai giữa niêm mạc phù nề, thoái hóa; Triệu chứng đau thường không phổ biến; Ở trẻ em, các triệu chứng kể trên có thể dẫn đến trẻ phản ứng kém với âm thanh do nghe kém, khả năng thăng bằng kém.'
+
+MERGE (o1:symptom {id: 'tai_có_mùi_hôi_symptom'})
+MERGE (o2:disease {id: 'viêm_tai_giữa_mạn_tính_thủng_nhĩ_disease'})
+MERGE (o1)-[r44:isSymptomOf]->(o2)
+SET r44.text = 'Bác sĩ Hương cho biết, các dấu hiệu viêm tai giữa mạn tính thủng nhĩ phổ biến bao gồm:  Màng nhĩ bị thủng kéo dài trên 12 tuần; Chảy mủ tai, tai có mùi hôi; Ù tai;(2) Nghe kém dẫn truyền; Tai giữa niêm mạc phù nề, thoái hóa; Triệu chứng đau thường không phổ biến; Ở trẻ em, các triệu chứng kể trên có thể dẫn đến trẻ phản ứng kém với âm thanh do nghe kém, khả năng thăng bằng kém.'
+
+MERGE (o1:symptom {id: 'ù_tai_symptom'})
+MERGE (o2:disease {id: 'viêm_tai_giữa_mạn_tính_thủng_nhĩ_disease'})
+MERGE (o1)-[r45:isSymptomOf]->(o2)
+SET r45.text = 'Bác sĩ Hương cho biết, các dấu hiệu viêm tai giữa mạn tính thủng nhĩ phổ biến bao gồm:  Màng nhĩ bị thủng kéo dài trên 12 tuần; Chảy mủ tai, tai có mùi hôi; Ù tai;(2) Nghe kém dẫn truyền; Tai giữa niêm mạc phù nề, thoái hóa; Triệu chứng đau thường không phổ biến; Ở trẻ em, các triệu chứng kể trên có thể dẫn đến trẻ phản ứng kém với âm thanh do nghe kém, khả năng thăng bằng kém.'
+
+MERGE (o1:symptom {id: 'nghe_kém_dẫn_truyền_symptom'})
+MERGE (o2:disease {id: 'viêm_tai_giữa_mạn_tính_thủng_nhĩ_disease'})
+MERGE (o1)-[r46:isSymptomOf]->(o2)
+SET r46.text = 'Bác sĩ Hương cho biết, các dấu hiệu viêm tai giữa mạn tính thủng nhĩ phổ biến bao gồm:  Màng nhĩ bị thủng kéo dài trên 12 tuần; Chảy mủ tai, tai có mùi hôi; Ù tai;(2) Nghe kém dẫn truyền; Tai giữa niêm mạc phù nề, thoái hóa; Triệu chứng đau thường không phổ biến; Ở trẻ em, các triệu chứng kể trên có thể dẫn đến trẻ phản ứng kém với âm thanh do nghe kém, khả năng thăng bằng kém.'
+
+MERGE (o1:symptom {id: 'tai_giữa_niêm_mạc_phù_nề__thoái_hóa_symptom'})
+MERGE (o2:disease {id: 'viêm_tai_giữa_mạn_tính_thủng_nhĩ_disease'})
+MERGE (o1)-[r47:isSymptomOf]->(o2)
+SET r47.text = 'Bác sĩ Hương cho biết, các dấu hiệu viêm tai giữa mạn tính thủng nhĩ phổ biến bao gồm:  Màng nhĩ bị thủng kéo dài trên 12 tuần; Chảy mủ tai, tai có mùi hôi; Ù tai;(2) Nghe kém dẫn truyền; Tai giữa niêm mạc phù nề, thoái hóa; Triệu chứng đau thường không phổ biến; Ở trẻ em, các triệu chứng kể trên có thể dẫn đến trẻ phản ứng kém với âm thanh do nghe kém, khả năng thăng bằng kém.'
+
+MERGE (o1:symptom {id: 'triệu_chứng_đau_symptom'})
+MERGE (o2:disease {id: 'viêm_tai_giữa_mạn_tính_thủng_nhĩ_disease'})
+MERGE (o1)-[r48:isSymptomOf]->(o2)
+SET r48.text = 'Bác sĩ Hương cho biết, các dấu hiệu viêm tai giữa mạn tính thủng nhĩ phổ biến bao gồm:  Màng nhĩ bị thủng kéo dài trên 12 tuần; Chảy mủ tai, tai có mùi hôi; Ù tai;(2) Nghe kém dẫn truyền; Tai giữa niêm mạc phù nề, thoái hóa; Triệu chứng đau thường không phổ biến; Ở trẻ em, các triệu chứng kể trên có thể dẫn đến trẻ phản ứng kém với âm thanh do nghe kém, khả năng thăng bằng kém.'
+
+MERGE (o1:symptom {id: 'trẻ_phản_ứng_kém_với_âm_thanh_symptom'})
+MERGE (o2:disease {id: 'viêm_tai_giữa_mạn_tính_thủng_nhĩ_disease'})
+MERGE (o1)-[r49:isSymptomOf]->(o2)
+SET r49.text = 'Bác sĩ Hương cho biết, các dấu hiệu viêm tai giữa mạn tính thủng nhĩ phổ biến bao gồm:  Màng nhĩ bị thủng kéo dài trên 12 tuần; Chảy mủ tai, tai có mùi hôi; Ù tai;(2) Nghe kém dẫn truyền; Tai giữa niêm mạc phù nề, thoái hóa; Triệu chứng đau thường không phổ biến; Ở trẻ em, các triệu chứng kể trên có thể dẫn đến trẻ phản ứng kém với âm thanh do nghe kém, khả năng thăng bằng kém.'
+
+MERGE (o1:symptom {id: 'khả_năng_thăng_bằng_kém_symptom'})
+MERGE (o2:disease {id: 'viêm_tai_giữa_mạn_tính_thủng_nhĩ_disease'})
+MERGE (o1)-[r50:isSymptomOf]->(o2)
+SET r50.text = 'Bác sĩ Hương cho biết, các dấu hiệu viêm tai giữa mạn tính thủng nhĩ phổ biến bao gồm:  Màng nhĩ bị thủng kéo dài trên 12 tuần; Chảy mủ tai, tai có mùi hôi; Ù tai;(2) Nghe kém dẫn truyền; Tai giữa niêm mạc phù nề, thoái hóa; Triệu chứng đau thường không phổ biến; Ở trẻ em, các triệu chứng kể trên có thể dẫn đến trẻ phản ứng kém với âm thanh do nghe kém, khả năng thăng bằng kém.'
+
+MERGE (o1:disease {id: 'viêm_tai_giữa_mạn_tính_thủng_nhĩ_disease'})
+MERGE (o2:test {id: 'đánh_giá_lâm_sàng_test'})
+MERGE (o1)-[r51:diagnosedBy]->(o2)
+SET r51.text = 'Theo bác sĩ Hương, phương pháp chẩn đoán viêm tai giữa mạn tính thủng nhĩ thường dựa trên đánh giá lâm sàng, cận lâm sàng và chẩn đoán phân biệt cũng rất cần thiết.'
+
+MERGE (o1:disease {id: 'viêm_tai_giữa_mạn_tính_thủng_nhĩ_disease'})
+MERGE (o2:test {id: 'cận_lâm_sàng_test'})
+MERGE (o1)-[r52:diagnosedBy]->(o2)
+SET r52.text = 'Theo bác sĩ Hương, phương pháp chẩn đoán viêm tai giữa mạn tính thủng nhĩ thường dựa trên đánh giá lâm sàng, cận lâm sàng và chẩn đoán phân biệt cũng rất cần thiết.'
+
+MERGE (o1:disease {id: 'viêm_tai_giữa_mạn_tính_thủng_nhĩ_disease'})
+MERGE (o2:test {id: 'chẩn_đoán_phân_biệt_test'})
+MERGE (o1)-[r53:diagnosedBy]->(o2)
+SET r53.text = 'Theo bác sĩ Hương, phương pháp chẩn đoán viêm tai giữa mạn tính thủng nhĩ thường dựa trên đánh giá lâm sàng, cận lâm sàng và chẩn đoán phân biệt cũng rất cần thiết.'
+
+MERGE (o1:disease {id: 'viêm_tai_giữa_mạn_tính_thủng_nhĩ_disease'})
+MERGE (o2:test {id: 'nội_soi_tai_test'})
+MERGE (o1)-[r54:diagnosedBy]->(o2)
+SET r54.text = 'Nội soi tai: Thấy mủ tai đặc, thối, chảy tai kéo dài, có thể có tổ chức cholesteatoma. Màng nhĩ có thể bị xẹp lõm vào trong, phồng, bị thủng, bờ lỗ thủng nham nhở, có thể có mô viêm ở hòm nhĩ, đáy hòm nhĩ bẩn. Cấy dịch tai: Phương pháp này giúp xác định vi khuẩn gây bệnh và làm kháng sinh đồ. Chụp CT-scan, MRI tai thái dương: giúp xác định chẩn đoán, mức độ bệnh lý trong tai giữa và cấu trúc xung quanh, tình trạng tiêu xương con hoặc xương thái dương, các biến chứng nội sọ… Đo thính lực: Phương pháp này giúp đánh giá sức nghe của bệnh nhân.(3)'
+
+MERGE (o1:disease {id: 'viêm_tai_giữa_mạn_tính_thủng_nhĩ_disease'})
+MERGE (o2:test {id: 'cấy_dịch_tai_test'})
+MERGE (o1)-[r55:diagnosedBy]->(o2)
+SET r55.text = 'Nội soi tai: Thấy mủ tai đặc, thối, chảy tai kéo dài, có thể có tổ chức cholesteatoma. Màng nhĩ có thể bị xẹp lõm vào trong, phồng, bị thủng, bờ lỗ thủng nham nhở, có thể có mô viêm ở hòm nhĩ, đáy hòm nhĩ bẩn. Cấy dịch tai: Phương pháp này giúp xác định vi khuẩn gây bệnh và làm kháng sinh đồ. Chụp CT-scan, MRI tai thái dương: giúp xác định chẩn đoán, mức độ bệnh lý trong tai giữa và cấu trúc xung quanh, tình trạng tiêu xương con hoặc xương thái dương, các biến chứng nội sọ… Đo thính lực: Phương pháp này giúp đánh giá sức nghe của bệnh nhân.(3)'
+
+MERGE (o1:disease {id: 'viêm_tai_giữa_mạn_tính_thủng_nhĩ_disease'})
+MERGE (o2:test {id: 'chụp_ct-scan_test'})
+MERGE (o1)-[r56:diagnosedBy]->(o2)
+SET r56.text = 'Nội soi tai: Thấy mủ tai đặc, thối, chảy tai kéo dài, có thể có tổ chức cholesteatoma. Màng nhĩ có thể bị xẹp lõm vào trong, phồng, bị thủng, bờ lỗ thủng nham nhở, có thể có mô viêm ở hòm nhĩ, đáy hòm nhĩ bẩn. Cấy dịch tai: Phương pháp này giúp xác định vi khuẩn gây bệnh và làm kháng sinh đồ. Chụp CT-scan, MRI tai thái dương: giúp xác định chẩn đoán, mức độ bệnh lý trong tai giữa và cấu trúc xung quanh, tình trạng tiêu xương con hoặc xương thái dương, các biến chứng nội sọ… Đo thính lực: Phương pháp này giúp đánh giá sức nghe của bệnh nhân.(3)'
+
+MERGE (o1:disease {id: 'viêm_tai_giữa_mạn_tính_thủng_nhĩ_disease'})
+MERGE (o2:test {id: 'mri_tai_thái_dương_test'})
+MERGE (o1)-[r57:diagnosedBy]->(o2)
+SET r57.text = 'Nội soi tai: Thấy mủ tai đặc, thối, chảy tai kéo dài, có thể có tổ chức cholesteatoma. Màng nhĩ có thể bị xẹp lõm vào trong, phồng, bị thủng, bờ lỗ thủng nham nhở, có thể có mô viêm ở hòm nhĩ, đáy hòm nhĩ bẩn. Cấy dịch tai: Phương pháp này giúp xác định vi khuẩn gây bệnh và làm kháng sinh đồ. Chụp CT-scan, MRI tai thái dương: giúp xác định chẩn đoán, mức độ bệnh lý trong tai giữa và cấu trúc xung quanh, tình trạng tiêu xương con hoặc xương thái dương, các biến chứng nội sọ… Đo thính lực: Phương pháp này giúp đánh giá sức nghe của bệnh nhân.(3)'
+
+MERGE (o1:disease {id: 'viêm_tai_giữa_mạn_tính_thủng_nhĩ_disease'})
+MERGE (o2:test {id: 'đo_thính_lực_test'})
+MERGE (o1)-[r58:diagnosedBy]->(o2)
+SET r58.text = 'Nội soi tai: Thấy mủ tai đặc, thối, chảy tai kéo dài, có thể có tổ chức cholesteatoma. Màng nhĩ có thể bị xẹp lõm vào trong, phồng, bị thủng, bờ lỗ thủng nham nhở, có thể có mô viêm ở hòm nhĩ, đáy hòm nhĩ bẩn. Cấy dịch tai: Phương pháp này giúp xác định vi khuẩn gây bệnh và làm kháng sinh đồ. Chụp CT-scan, MRI tai thái dương: giúp xác định chẩn đoán, mức độ bệnh lý trong tai giữa và cấu trúc xung quanh, tình trạng tiêu xương con hoặc xương thái dương, các biến chứng nội sọ… Đo thính lực: Phương pháp này giúp đánh giá sức nghe của bệnh nhân.(3)'
+
+MERGE (o1:disease {id: 'viêm_tai_giữa_mạn_tính_thủng_nhĩ_disease'})
+MERGE (o2:disease {id: 'nhọt_hay_viêm_ống_tai_ngoài_disease'})
+MERGE (o1)-[r59:relatedTo]->(o2)
+SET r59.text = 'Bác sĩ Hương cho biết, các chẩn đoán phân biệt nhằm phân biệt viêm tai giữa mạn tính thủng nhĩ và các tình trạng khác có nhiều biểu hiện tương tự dễ gây nhầm lẫn với viêm tai giữa mạn tính thủng nhĩ bao gồm:  Nhọt hay viêm ống tai ngoài: khi kéo vành tai và ấn bình tai thấy đau, nội soi thấy tình trạng viêm của ống tai ngoài. Viêm tấy hạch hoặc tổ chức liên kết sau tai: Bệnh này không có tiền sử chảy mủ tai, sức nghe bình thường. Viêm tai giữa sau lao phổi: Cần hỏi về tiền sử và chụp X-quang phổi&#8230;. Viêm tai giữa do xoắn khuẩn bệnh giang mai: Cần hỏi tiền sử bệnh và làm các xét nghiệm chuyên biệt để chẩn đoán.'
+
+MERGE (o1:disease {id: 'viêm_tai_giữa_mạn_tính_thủng_nhĩ_disease'})
+MERGE (o2:disease {id: 'viêm_tấy_hạch_hoặc_tổ_chức_liên_kết_sau_tai_disease'})
+MERGE (o1)-[r60:relatedTo]->(o2)
+SET r60.text = 'Bác sĩ Hương cho biết, các chẩn đoán phân biệt nhằm phân biệt viêm tai giữa mạn tính thủng nhĩ và các tình trạng khác có nhiều biểu hiện tương tự dễ gây nhầm lẫn với viêm tai giữa mạn tính thủng nhĩ bao gồm:  Nhọt hay viêm ống tai ngoài: khi kéo vành tai và ấn bình tai thấy đau, nội soi thấy tình trạng viêm của ống tai ngoài. Viêm tấy hạch hoặc tổ chức liên kết sau tai: Bệnh này không có tiền sử chảy mủ tai, sức nghe bình thường. Viêm tai giữa sau lao phổi: Cần hỏi về tiền sử và chụp X-quang phổi&#8230;. Viêm tai giữa do xoắn khuẩn bệnh giang mai: Cần hỏi tiền sử bệnh và làm các xét nghiệm chuyên biệt để chẩn đoán.'
+
+MERGE (o1:disease {id: 'viêm_tai_giữa_mạn_tính_thủng_nhĩ_disease'})
+MERGE (o2:disease {id: 'viêm_tai_giữa_sau_lao_phổi_disease'})
+MERGE (o1)-[r61:relatedTo]->(o2)
+SET r61.text = 'Bác sĩ Hương cho biết, các chẩn đoán phân biệt nhằm phân biệt viêm tai giữa mạn tính thủng nhĩ và các tình trạng khác có nhiều biểu hiện tương tự dễ gây nhầm lẫn với viêm tai giữa mạn tính thủng nhĩ bao gồm:  Nhọt hay viêm ống tai ngoài: khi kéo vành tai và ấn bình tai thấy đau, nội soi thấy tình trạng viêm của ống tai ngoài. Viêm tấy hạch hoặc tổ chức liên kết sau tai: Bệnh này không có tiền sử chảy mủ tai, sức nghe bình thường. Viêm tai giữa sau lao phổi: Cần hỏi về tiền sử và chụp X-quang phổi&#8230;. Viêm tai giữa do xoắn khuẩn bệnh giang mai: Cần hỏi tiền sử bệnh và làm các xét nghiệm chuyên biệt để chẩn đoán.'
+
+MERGE (o1:disease {id: 'viêm_tai_giữa_mạn_tính_thủng_nhĩ_disease'})
+MERGE (o2:disease {id: 'viêm_tai_giữa_do_xoắn_khuẩn_bệnh_giang_mai_disease'})
+MERGE (o1)-[r62:relatedTo]->(o2)
+SET r62.text = 'Bác sĩ Hương cho biết, các chẩn đoán phân biệt nhằm phân biệt viêm tai giữa mạn tính thủng nhĩ và các tình trạng khác có nhiều biểu hiện tương tự dễ gây nhầm lẫn với viêm tai giữa mạn tính thủng nhĩ bao gồm:  Nhọt hay viêm ống tai ngoài: khi kéo vành tai và ấn bình tai thấy đau, nội soi thấy tình trạng viêm của ống tai ngoài. Viêm tấy hạch hoặc tổ chức liên kết sau tai: Bệnh này không có tiền sử chảy mủ tai, sức nghe bình thường. Viêm tai giữa sau lao phổi: Cần hỏi về tiền sử và chụp X-quang phổi&#8230;. Viêm tai giữa do xoắn khuẩn bệnh giang mai: Cần hỏi tiền sử bệnh và làm các xét nghiệm chuyên biệt để chẩn đoán.'
+
+MERGE (o1:disease {id: 'cholesteatoma_disease'})
+MERGE (o2:disease {id: 'viêm_tai_giữa_mạn_tính_thủng_nhĩ_disease'})
+MERGE (o1)-[r63:isSymptomOf]->(o2)
+SET r63.text = 'Nội soi tai: Thấy mủ tai đặc, thối, chảy tai kéo dài, có thể có tổ chức cholesteatoma. Màng nhĩ có thể bị xẹp lõm vào trong, phồng, bị thủng, bờ lỗ thủng nham nhở, có thể có mô viêm ở hòm nhĩ, đáy hòm nhĩ bẩn. Cấy dịch tai: Phương pháp này giúp xác định vi khuẩn gây bệnh và làm kháng sinh đồ. Chụp CT-scan, MRI tai thái dương: giúp xác định chẩn đoán, mức độ bệnh lý trong tai giữa và cấu trúc xung quanh, tình trạng tiêu xương con hoặc xương thái dương, các biến chứng nội sọ… Đo thính lực: Phương pháp này giúp đánh giá sức nghe của bệnh nhân.(3)'
+
+MERGE (o1:symptom {id: 'mô_viêm_ở_hòm_nhĩ_symptom'})
+MERGE (o2:disease {id: 'viêm_tai_giữa_mạn_tính_thủng_nhĩ_disease'})
+MERGE (o1)-[r64:isSymptomOf]->(o2)
+SET r64.text = 'Nội soi tai: Thấy mủ tai đặc, thối, chảy tai kéo dài, có thể có tổ chức cholesteatoma. Màng nhĩ có thể bị xẹp lõm vào trong, phồng, bị thủng, bờ lỗ thủng nham nhở, có thể có mô viêm ở hòm nhĩ, đáy hòm nhĩ bẩn. Cấy dịch tai: Phương pháp này giúp xác định vi khuẩn gây bệnh và làm kháng sinh đồ. Chụp CT-scan, MRI tai thái dương: giúp xác định chẩn đoán, mức độ bệnh lý trong tai giữa và cấu trúc xung quanh, tình trạng tiêu xương con hoặc xương thái dương, các biến chứng nội sọ… Đo thính lực: Phương pháp này giúp đánh giá sức nghe của bệnh nhân.(3)'
+
+MERGE (o1:symptom {id: 'đáy_hòm_nhĩ_bẩn_symptom'})
+MERGE (o2:disease {id: 'viêm_tai_giữa_mạn_tính_thủng_nhĩ_disease'})
+MERGE (o1)-[r65:isSymptomOf]->(o2)
+SET r65.text = 'Nội soi tai: Thấy mủ tai đặc, thối, chảy tai kéo dài, có thể có tổ chức cholesteatoma. Màng nhĩ có thể bị xẹp lõm vào trong, phồng, bị thủng, bờ lỗ thủng nham nhở, có thể có mô viêm ở hòm nhĩ, đáy hòm nhĩ bẩn. Cấy dịch tai: Phương pháp này giúp xác định vi khuẩn gây bệnh và làm kháng sinh đồ. Chụp CT-scan, MRI tai thái dương: giúp xác định chẩn đoán, mức độ bệnh lý trong tai giữa và cấu trúc xung quanh, tình trạng tiêu xương con hoặc xương thái dương, các biến chứng nội sọ… Đo thính lực: Phương pháp này giúp đánh giá sức nghe của bệnh nhân.(3)'
+
+MERGE (o1:disease {id: 'viêm_tai_giữa_mạn_tính_thủng_nhĩ_disease'})
+MERGE (o2:treatment {id: 'điều_trị_ngoại_khoa_treatment'})
+MERGE (o1)-[r66:treatedBy]->(o2)
+SET r66.text = 'Bác sĩ Hương cho biết, không thể điều trị viêm tai giữa mạn tính thủng nhĩ bằng phương pháp nội khoa, chỉ có điều trị ngoại khoa mới giúp đóng kín màng nhĩ, góp phần phục hồi chức năng nghe của bệnh nhân.'
+
+MERGE (o1:treatment {id: 'điều_trị_ngoại_khoa_treatment'})
+MERGE (o2:organ {id: 'màng_nhĩ_organ'})
+MERGE (o1)-[r67:affects]->(o2)
+SET r67.text = 'Bác sĩ Hương cho biết, không thể điều trị viêm tai giữa mạn tính thủng nhĩ bằng phương pháp nội khoa, chỉ có điều trị ngoại khoa mới giúp đóng kín màng nhĩ, góp phần phục hồi chức năng nghe của bệnh nhân.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_vá_màng_nhĩ_treatment'})
+MERGE (o2:disease {id: 'viêm_tai_giữa_mạn_tính_thủng_nhĩ_disease'})
+MERGE (o1)-[r68:treatedBy]->(o2)
+SET r68.text = 'Phẫu thuật phục hồi: Phẫu thuật vá màng nhĩ đơn thuần qua nội soi hoặc đường sau tai và có thể kết hợp mở sào bào thượng nhĩ.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_vá_màng_nhĩ_treatment'})
+MERGE (o2:organ {id: 'tai_organ'})
+MERGE (o1)-[r69:locatedIn]->(o2)
+SET r69.text = 'Phẫu thuật phục hồi: Phẫu thuật vá màng nhĩ đơn thuần qua nội soi hoặc đường sau tai và có thể kết hợp mở sào bào thượng nhĩ.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_vá_màng_nhĩ_treatment'})
+MERGE (o2:test {id: 'nội_soi_test'})
+MERGE (o1)-[r70:relatedTo]->(o2)
+SET r70.text = 'Phẫu thuật phục hồi: Phẫu thuật vá màng nhĩ đơn thuần qua nội soi hoặc đường sau tai và có thể kết hợp mở sào bào thượng nhĩ.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_vá_màng_nhĩ_treatment'})
+MERGE (o2:organ {id: 'đường_sau_tai_organ'})
+MERGE (o1)-[r71:relatedTo]->(o2)
+SET r71.text = 'Phẫu thuật phục hồi: Phẫu thuật vá màng nhĩ đơn thuần qua nội soi hoặc đường sau tai và có thể kết hợp mở sào bào thượng nhĩ.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_vá_màng_nhĩ_treatment'})
+MERGE (o2:treatment {id: 'mở_sào_bào_thượng_nhĩ_treatment'})
+MERGE (o1)-[r72:relatedTo]->(o2)
+SET r72.text = 'Phẫu thuật phục hồi: Phẫu thuật vá màng nhĩ đơn thuần qua nội soi hoặc đường sau tai và có thể kết hợp mở sào bào thượng nhĩ.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_tiệt_căn_xương_chũm_treatment'})
+MERGE (o2:disease {id: 'cholesteatoma_disease'})
+MERGE (o1)-[r73:treatedBy]->(o2)
+SET r73.text = 'Phẫu thuật tiệt căn xương chũm trong một số trường hợp có cholesteatoma.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_tiệt_căn_xương_chũm_treatment'})
+MERGE (o2:organ {id: 'xương_chũm_organ'})
+MERGE (o1)-[r74:affects]->(o2)
+SET r74.text = 'Phẫu thuật tiệt căn xương chũm trong một số trường hợp có cholesteatoma.'
+
+MERGE (o1:disease {id: 'viêm_tai_giữa_mạn_tính_thủng_nhĩ_disease'})
+MERGE (o2:treatment {id: 'phòng_ngừa_và_điều_trị_viêm_tai_giữa_cấp_treatment'})
+MERGE (o1)-[r75:preventedBy]->(o2)
+SET r75.text = 'Để phòng ngừa viêm tai giữa mạn tính thủng nhĩ, bác sĩ Hương khuyến nghị mỗi người nên:  Phòng ngừa và điều trị các nguyên nhân gây viêm tai giữa cấp như viêm VA, viêm mũi họng, sâu răng.'
+
+MERGE (o1:disease {id: 'viêm_tai_giữa_cấp_disease'})
+MERGE (o2:disease {id: 'viêm_va_disease'})
+MERGE (o1)-[r76:causedBy]->(o2)
+SET r76.text = 'Để phòng ngừa viêm tai giữa mạn tính thủng nhĩ, bác sĩ Hương khuyến nghị mỗi người nên:  Phòng ngừa và điều trị các nguyên nhân gây viêm tai giữa cấp như viêm VA, viêm mũi họng, sâu răng.'
+
+MERGE (o1:disease {id: 'viêm_tai_giữa_cấp_disease'})
+MERGE (o2:disease {id: 'viêm_mũi_họng_disease'})
+MERGE (o1)-[r77:causedBy]->(o2)
+SET r77.text = 'Để phòng ngừa viêm tai giữa mạn tính thủng nhĩ, bác sĩ Hương khuyến nghị mỗi người nên:  Phòng ngừa và điều trị các nguyên nhân gây viêm tai giữa cấp như viêm VA, viêm mũi họng, sâu răng.'
+
+MERGE (o1:disease {id: 'viêm_tai_giữa_cấp_disease'})
+MERGE (o2:disease {id: 'sâu_răng_disease'})
+MERGE (o1)-[r78:causedBy]->(o2)
+SET r78.text = 'Để phòng ngừa viêm tai giữa mạn tính thủng nhĩ, bác sĩ Hương khuyến nghị mỗi người nên:  Phòng ngừa và điều trị các nguyên nhân gây viêm tai giữa cấp như viêm VA, viêm mũi họng, sâu răng.'
+
+MERGE (o1:disease {id: 'viêm_tai_giữa_cấp_disease'})
+MERGE (o2:treatment {id: 'theo_dõi_và_điều_trị_triệt_để_treatment'})
+MERGE (o1)-[r79:treatedBy]->(o2)
+SET r79.text = 'Cần theo dõi và điều trị triệt để tình trạng viêm tai giữa cấp, không để tái phát lặp lại.'
+
+MERGE (o1:disease {id: 'viêm_tai_giữa_mạn_tính_disease'})
+MERGE (o2:treatment {id: 'điều_trị_sớm__đúng_cách_treatment'})
+MERGE (o1)-[r80:treatedBy]->(o2)
+SET r80.text = 'Tình trạng viêm tai giữa mạn tính cần điều trị sớm, đúng cách đồng thời theo dõi sát sao để phòng ngừa biến chứng.'
+
+MERGE (o1:disease {id: 'viêm_tai_giữa_mạn_tính_disease'})
+MERGE (o2:treatment {id: 'theo_dõi_sát_sao_treatment'})
+MERGE (o1)-[r81:preventedBy]->(o2)
+SET r81.text = 'Tình trạng viêm tai giữa mạn tính cần điều trị sớm, đúng cách đồng thời theo dõi sát sao để phòng ngừa biến chứng.'
+
+MERGE (o1:disease {id: 'viêm_tai_giữa_mạn_tính_disease'})
+MERGE (o2:treatment {id: 'kháng_sinh_treatment'})
+MERGE (o1)-[r82:treatedBy]->(o2)
+SET r82.text = 'Nếu điều trị bằng kháng sinh thì cần theo tuân theo chỉ định của bác sĩ chuyên khoa, uống đúng liều, không tự ý ngưng thuốc ngay cả khi các triệu chứng không còn xuất hiện để tránh tình trạng lờn thuốc, gây khó khăn cho việc điều trị về sau.'
+
+MERGE (o1:disease {id: 'viêm_tai_giữa_mạn_tính_thủng_nhĩ_disease'})
+MERGE (o2:symptom {id: 'thủng_màng_nhĩ_symptom'})
+MERGE (o1)-[r83:isSymptomOf]->(o2)
+SET r83.text = 'Viêm tai giữa mạn tính thủng nhĩ có nguy hiểm không? Viêm tai giữa mạn tính thủng màng nhĩ kéo dài có thể gây ra các biến chứng nghiêm trọng bao gồm hình thành khối cholesteatoma trong tai giữa, gây ăn mòn xương chũm, lan bệnh tích lên não; thoái hóa niêm mạc tai giữa; điếc dẫn truyền do chuỗi xương con bị phá hủy; liệt mặt do tổn thương dây thần kinh số VII; chậm phát triển ngôn ngữ nếu điếc cả hai tai ở trẻ nhỏ.'
+
+MERGE (o1:disease {id: 'viêm_tai_giữa_mạn_tính_thủng_nhĩ_disease'})
+MERGE (o2:disease {id: 'cholesteatoma_disease'})
+MERGE (o1)-[r84:causedBy]->(o2)
+SET r84.text = 'Viêm tai giữa mạn tính thủng nhĩ có nguy hiểm không? Viêm tai giữa mạn tính thủng màng nhĩ kéo dài có thể gây ra các biến chứng nghiêm trọng bao gồm hình thành khối cholesteatoma trong tai giữa, gây ăn mòn xương chũm, lan bệnh tích lên não; thoái hóa niêm mạc tai giữa; điếc dẫn truyền do chuỗi xương con bị phá hủy; liệt mặt do tổn thương dây thần kinh số VII; chậm phát triển ngôn ngữ nếu điếc cả hai tai ở trẻ nhỏ.'
+
+MERGE (o1:disease {id: 'cholesteatoma_disease'})
+MERGE (o2:organ {id: 'xương_chũm_organ'})
+MERGE (o1)-[r85:affects]->(o2)
+SET r85.text = 'Viêm tai giữa mạn tính thủng nhĩ có nguy hiểm không? Viêm tai giữa mạn tính thủng màng nhĩ kéo dài có thể gây ra các biến chứng nghiêm trọng bao gồm hình thành khối cholesteatoma trong tai giữa, gây ăn mòn xương chũm, lan bệnh tích lên não; thoái hóa niêm mạc tai giữa; điếc dẫn truyền do chuỗi xương con bị phá hủy; liệt mặt do tổn thương dây thần kinh số VII; chậm phát triển ngôn ngữ nếu điếc cả hai tai ở trẻ nhỏ.'
+
+MERGE (o1:disease {id: 'cholesteatoma_disease'})
+MERGE (o2:organ {id: 'não_organ'})
+MERGE (o1)-[r86:affects]->(o2)
+SET r86.text = 'Viêm tai giữa mạn tính thủng nhĩ có nguy hiểm không? Viêm tai giữa mạn tính thủng màng nhĩ kéo dài có thể gây ra các biến chứng nghiêm trọng bao gồm hình thành khối cholesteatoma trong tai giữa, gây ăn mòn xương chũm, lan bệnh tích lên não; thoái hóa niêm mạc tai giữa; điếc dẫn truyền do chuỗi xương con bị phá hủy; liệt mặt do tổn thương dây thần kinh số VII; chậm phát triển ngôn ngữ nếu điếc cả hai tai ở trẻ nhỏ.'
+
+MERGE (o1:disease {id: 'cholesteatoma_disease'})
+MERGE (o2:organ {id: 'niêm_mạc_tai_giữa_organ'})
+MERGE (o1)-[r87:affects]->(o2)
+SET r87.text = 'Viêm tai giữa mạn tính thủng nhĩ có nguy hiểm không? Viêm tai giữa mạn tính thủng màng nhĩ kéo dài có thể gây ra các biến chứng nghiêm trọng bao gồm hình thành khối cholesteatoma trong tai giữa, gây ăn mòn xương chũm, lan bệnh tích lên não; thoái hóa niêm mạc tai giữa; điếc dẫn truyền do chuỗi xương con bị phá hủy; liệt mặt do tổn thương dây thần kinh số VII; chậm phát triển ngôn ngữ nếu điếc cả hai tai ở trẻ nhỏ.'
+
+MERGE (o1:disease {id: 'cholesteatoma_disease'})
+MERGE (o2:organ {id: 'chuỗi_xương_con_organ'})
+MERGE (o1)-[r88:affects]->(o2)
+SET r88.text = 'Viêm tai giữa mạn tính thủng nhĩ có nguy hiểm không? Viêm tai giữa mạn tính thủng màng nhĩ kéo dài có thể gây ra các biến chứng nghiêm trọng bao gồm hình thành khối cholesteatoma trong tai giữa, gây ăn mòn xương chũm, lan bệnh tích lên não; thoái hóa niêm mạc tai giữa; điếc dẫn truyền do chuỗi xương con bị phá hủy; liệt mặt do tổn thương dây thần kinh số VII; chậm phát triển ngôn ngữ nếu điếc cả hai tai ở trẻ nhỏ.'
+
+MERGE (o1:disease {id: 'cholesteatoma_disease'})
+MERGE (o2:organ {id: 'dây_thần_kinh_số_vii_organ'})
+MERGE (o1)-[r89:affects]->(o2)
+SET r89.text = 'Viêm tai giữa mạn tính thủng nhĩ có nguy hiểm không? Viêm tai giữa mạn tính thủng màng nhĩ kéo dài có thể gây ra các biến chứng nghiêm trọng bao gồm hình thành khối cholesteatoma trong tai giữa, gây ăn mòn xương chũm, lan bệnh tích lên não; thoái hóa niêm mạc tai giữa; điếc dẫn truyền do chuỗi xương con bị phá hủy; liệt mặt do tổn thương dây thần kinh số VII; chậm phát triển ngôn ngữ nếu điếc cả hai tai ở trẻ nhỏ.'
+
+MERGE (o1:disease {id: 'viêm_tai_giữa_mạn_tính_thủng_nhĩ_disease'})
+MERGE (o2:symptom {id: 'điếc_dẫn_truyền_symptom'})
+MERGE (o1)-[r90:isSymptomOf]->(o2)
+SET r90.text = 'Viêm tai giữa mạn tính thủng nhĩ có nguy hiểm không? Viêm tai giữa mạn tính thủng màng nhĩ kéo dài có thể gây ra các biến chứng nghiêm trọng bao gồm hình thành khối cholesteatoma trong tai giữa, gây ăn mòn xương chũm, lan bệnh tích lên não; thoái hóa niêm mạc tai giữa; điếc dẫn truyền do chuỗi xương con bị phá hủy; liệt mặt do tổn thương dây thần kinh số VII; chậm phát triển ngôn ngữ nếu điếc cả hai tai ở trẻ nhỏ.'
+
+MERGE (o1:disease {id: 'viêm_tai_giữa_mạn_tính_thủng_nhĩ_disease'})
+MERGE (o2:symptom {id: 'liệt_mặt_symptom'})
+MERGE (o1)-[r91:isSymptomOf]->(o2)
+SET r91.text = 'Viêm tai giữa mạn tính thủng nhĩ có nguy hiểm không? Viêm tai giữa mạn tính thủng màng nhĩ kéo dài có thể gây ra các biến chứng nghiêm trọng bao gồm hình thành khối cholesteatoma trong tai giữa, gây ăn mòn xương chũm, lan bệnh tích lên não; thoái hóa niêm mạc tai giữa; điếc dẫn truyền do chuỗi xương con bị phá hủy; liệt mặt do tổn thương dây thần kinh số VII; chậm phát triển ngôn ngữ nếu điếc cả hai tai ở trẻ nhỏ.'
+
+MERGE (o1:disease {id: 'viêm_tai_giữa_mạn_tính_thủng_nhĩ_disease'})
+MERGE (o2:symptom {id: 'chậm_phát_triển_ngôn_ngữ_symptom'})
+MERGE (o1)-[r92:isSymptomOf]->(o2)
+SET r92.text = 'Viêm tai giữa mạn tính thủng nhĩ có nguy hiểm không? Viêm tai giữa mạn tính thủng màng nhĩ kéo dài có thể gây ra các biến chứng nghiêm trọng bao gồm hình thành khối cholesteatoma trong tai giữa, gây ăn mòn xương chũm, lan bệnh tích lên não; thoái hóa niêm mạc tai giữa; điếc dẫn truyền do chuỗi xương con bị phá hủy; liệt mặt do tổn thương dây thần kinh số VII; chậm phát triển ngôn ngữ nếu điếc cả hai tai ở trẻ nhỏ.'
+
+MERGE (o1:disease {id: 'áp_xe_ngoài_màng_cứng_disease'})
+MERGE (o2:disease {id: 'viêm_tai_giữa_mạn_tính_thủng_nhĩ_disease'})
+MERGE (o1)-[r93:isSymptomOf]->(o2)
+SET r93.text = 'Đặc biệt, biến chứng áp xe ngoài màng cứng hoặc áp xe não rất nguy hiểm vì có thể dẫn đến tử vong.'
+
+MERGE (o1:disease {id: 'áp_xe_não_disease'})
+MERGE (o2:disease {id: 'viêm_tai_giữa_mạn_tính_thủng_nhĩ_disease'})
+MERGE (o1)-[r94:isSymptomOf]->(o2)
+SET r94.text = 'Đặc biệt, biến chứng áp xe ngoài màng cứng hoặc áp xe não rất nguy hiểm vì có thể dẫn đến tử vong.'
+
+MERGE (o1:disease {id: 'viêm_tai_giữa_disease'})
+MERGE (o2:symptom {id: 'thủng_màng_nhĩ_symptom'})
+MERGE (o1)-[r95:isSymptomOf]->(o2)
+SET r95.text = 'Viêm tai giữa không được chẩn đoán và điều trị kịp thời có thể gây ra nhiều biến chứng trong đó có thủng màng nhĩ.'
+
+MERGE (o1:symptom {id: 'thủng_màng_nhĩ_symptom'})
+MERGE (o2:treatment {id: 'vệ_sinh_tai_treatment'})
+MERGE (o1)-[r96:treatedBy]->(o2)
+SET r96.text = 'Bác sĩ Hương hướng dẫn cách vệ sinh tai khi bị thủng màng nhĩ như sau:  Lấy một ít nước ấm vào ly rồi pha thêm nước muối sinh lý.'
+
+MERGE (o1:treatment {id: 'vệ_sinh_tai_treatment'})
+MERGE (o2:food {id: 'nước_ấm_food'})
+MERGE (o1)-[r97:relatedTo]->(o2)
+SET r97.text = 'Bác sĩ Hương hướng dẫn cách vệ sinh tai khi bị thủng màng nhĩ như sau:  Lấy một ít nước ấm vào ly rồi pha thêm nước muối sinh lý. Dùng khăn mềm nhúng vào nước đã pha, sau đó vắt khô rồi lau phía ngoài tai sạch sẽ.'
+
+MERGE (o1:treatment {id: 'vệ_sinh_tai_treatment'})
+MERGE (o2:food {id: 'nước_muối_sinh_lý_food'})
+MERGE (o1)-[r98:relatedTo]->(o2)
+SET r98.text = 'Bác sĩ Hương hướng dẫn cách vệ sinh tai khi bị thủng màng nhĩ như sau:  Lấy một ít nước ấm vào ly rồi pha thêm nước muối sinh lý. Dùng khăn mềm nhúng vào nước đã pha, sau đó vắt khô rồi lau phía ngoài tai sạch sẽ.'
+
+MERGE (o1:treatment {id: 'vệ_sinh_tai_treatment'})
+MERGE (o2:lifestyle {id: 'khăn_mềm_lifestyle'})
+MERGE (o1)-[r99:relatedTo]->(o2)
+SET r99.text = 'Bác sĩ Hương hướng dẫn cách vệ sinh tai khi bị thủng màng nhĩ như sau:  Lấy một ít nước ấm vào ly rồi pha thêm nước muối sinh lý. Dùng khăn mềm nhúng vào nước đã pha, sau đó vắt khô rồi lau phía ngoài tai sạch sẽ.'
+
+MERGE (o1:treatment {id: 'vệ_sinh_tai_treatment'})
+MERGE (o2:treatment {id: 'thuốc_nhỏ_tai_treatment'})
+MERGE (o1)-[r100:relatedTo]->(o2)
+SET r100.text = 'Bác sĩ Hương hướng dẫn cách vệ sinh tai khi bị thủng màng nhĩ như sau:  Lấy một ít nước ấm vào ly rồi pha thêm nước muối sinh lý. Dùng khăn mềm nhúng vào nước đã pha, sau đó vắt khô rồi lau phía ngoài tai sạch sẽ. Nằm nghiêng với phần tai bị viêm hướng lên trần, sau đó nhỏ thuốc nhỏ tai theo chỉ định của bác sĩ.'
+
+MERGE (o1:treatment {id: 'vệ_sinh_tai_treatment'})
+MERGE (o2:symptom {id: 'dịch_trong_tai_symptom'})
+MERGE (o1)-[r101:relatedTo]->(o2)
+SET r101.text = 'Bác sĩ Hương hướng dẫn cách vệ sinh tai khi bị thủng màng nhĩ như sau:  Lấy một ít nước ấm vào ly rồi pha thêm nước muối sinh lý. Dùng khăn mềm nhúng vào nước đã pha, sau đó vắt khô rồi lau phía ngoài tai sạch sẽ. Nằm nghiêng với phần tai bị viêm hướng lên trần, sau đó nhỏ thuốc nhỏ tai theo chỉ định của bác sĩ. Giữ nguyên tư thế trong vài phút rồi nghiêng đầu sang phía tai bị viêm để dịch trong tai chảy ra.'
+
+MERGE (o1:disease {id: 'viêm_tai_giữa_mạn_tính_thủng_nhĩ_disease'})
+MERGE (o2:treatment {id: 'bác_sĩ_giàu_kinh_nghiệm_treatment'})
+MERGE (o1)-[r102:treatedBy]->(o2)
+SET r102.text = 'Đối với bệnh viêm tai giữa mạn tính thủng nhĩ, bạn nên đến các cơ sở y tế có chuyên khoa tai mũi họng với bác sĩ giàu kinh nghiệm để được chẩn đoán và điều trị.'
+
+MERGE (o1:disease {id: 'viêm_tai_giữa_mạn_tính_thủng_nhĩ_disease'})
+MERGE (o2:treatment {id: 'bác_sĩ_giàu_kinh_nghiệm_treatment'})
+MERGE (o1)-[r103:diagnosedBy]->(o2)
+SET r103.text = 'Đối với bệnh viêm tai giữa mạn tính thủng nhĩ, bạn nên đến các cơ sở y tế có chuyên khoa tai mũi họng với bác sĩ giàu kinh nghiệm để được chẩn đoán và điều trị.'
+
+MERGE (o1:disease {id: 'viêm_tai_giữa_mạn_tính_thủng_nhĩ_disease'})
+MERGE (o2:treatment {id: 'thiết_bị__máy_móc__công_nghệ_hiện_đại_treatment'})
+MERGE (o1)-[r104:treatedBy]->(o2)
+SET r104.text = 'Tốt hơn là bạn nên lựa chọn các bệnh viện được trang bị các thiết bị, máy móc, công nghệ hiện đại.'
+
+MERGE (o1:disease {id: 'viêm_phức_tạp_disease'})
+MERGE (o2:treatment {id: 'trang_thiết_bị_treatment'})
+MERGE (o1)-[r105:diagnosedBy]->(o2)
+SET r105.text = 'Bởi vì nhiều trường hợp viêm phức tạp, các trang thiết bị sẽ giúp bác sĩ rất nhiều trong việc chẩn đoán chính xác, mang lại hiệu quả điều trị cao cũng như rút ngắn thời gian nằm viện.'
+
+MERGE (o1:disease {id: 'viêm_phức_tạp_disease'})
+MERGE (o2:treatment {id: 'trang_thiết_bị_treatment'})
+MERGE (o1)-[r106:treatedBy]->(o2)
+SET r106.text = 'Bởi vì nhiều trường hợp viêm phức tạp, các trang thiết bị sẽ giúp bác sĩ rất nhiều trong việc chẩn đoán chính xác, mang lại hiệu quả điều trị cao cũng như rút ngắn thời gian nằm viện.'
+
+MERGE (o1:organ {id: 'khoa_tai_mũi_họng_bệnh_viện_đa_khoa_tâm_anh_organ'})
+MERGE (o2:organ {id: 'bệnh_viện_đa_khoa_tâm_anh_organ'})
+MERGE (o1)-[r107:locatedIn]->(o2)
+SET r107.text = 'Hiện nay, khoa Tai Mũi Họng Bệnh viện Đa khoa Tâm Anh là đơn vị khám chữa các bệnh về tai mũi họng chuyên nghiệp với đội ngũ chuyên gia, bác sĩ hàng đầu, giỏi nghề, giàu kinh nghiệm.'
+
+MERGE (o1:organ {id: 'khoa_tai_mũi_họng_bệnh_viện_đa_khoa_tâm_anh_organ'})
+MERGE (o2:treatment {id: 'chuyên_gia__bác_sĩ_hàng_đầu__giỏi_nghề__giàu_kinh_nghiệm_treatment'})
+MERGE (o1)-[r108:treatedBy]->(o2)
+SET r108.text = 'Hiện nay, khoa Tai Mũi Họng Bệnh viện Đa khoa Tâm Anh là đơn vị khám chữa các bệnh về tai mũi họng chuyên nghiệp với đội ngũ chuyên gia, bác sĩ hàng đầu, giỏi nghề, giàu kinh nghiệm.'
+
+MERGE (o1:organ {id: 'khoa_tai_mũi_họng_bệnh_viện_đa_khoa_tâm_anh_organ'})
+MERGE (o2:treatment {id: 'công_nghệ__máy_móc_hiện_đại_bậc_nhất_treatment'})
+MERGE (o1)-[r109:treatedBy]->(o2)
+SET r109.text = 'Đặc biệt, khoa Tai Mũi Họng Bệnh viện Đa khoa Tâm Anh cũng được trang bị các công nghệ, máy móc hiện đại bậc nhất phục vụ cho việc thăm khám và điều trị chuyên sâu các bệnh lý về tai mũi họng, trong đó có viêm tai giữa mạn tính thủng nhĩ.'
+
+MERGE (o1:disease {id: 'viêm_tai_giữa_mạn_tính_thủng_nhĩ_disease'})
+MERGE (o2:treatment {id: 'công_nghệ__máy_móc_hiện_đại_bậc_nhất_treatment'})
+MERGE (o1)-[r110:treatedBy]->(o2)
+SET r110.text = 'Đặc biệt, khoa Tai Mũi Họng Bệnh viện Đa khoa Tâm Anh cũng được trang bị các công nghệ, máy móc hiện đại bậc nhất phục vụ cho việc thăm khám và điều trị chuyên sâu các bệnh lý về tai mũi họng, trong đó có viêm tai giữa mạn tính thủng nhĩ.'
+
+MERGE (o1:test {id: 'máy_đo_tiền_đình_natus_test'})
+MERGE (o2:disease {id: 'tổn_thương_tiền_đình_disease'})
+MERGE (o1)-[r111:diagnosedBy]->(o2)
+SET r111.text = 'Máy đo tiền đình NATUS của Mỹ (hiện chỉ có tại bệnh viện Đa khoa Tâm Anh TP.HCM); vHIT và SHIMP có độ chính xác theo tiêu chuẩn vàng, đánh giá được tất cả 6 ống bán khuyên chỉ với một lần kiểm tra duy nhất; Hệ thống máy đo ảnh động nhãn đồ (VNG) và Tập phục hồi chức năng tiền đình (TRV) (hiện chỉ có tại bệnh viện Đa khoa Tâm Anh Hà Nội) giúp chẩn đoán chính xác về nguyên nhân của tổn thương tiền đình; xây dựng các phác đồ tập phục hồi chuyên biệt với máy TRV; Máy nội soi của Đức có đầu tiên ở BVĐK Tâm Anh giúp phát hiện sớm tổn thương trên dây thanh, chẩn đoán chính xác nguyên nhân khàn tiếng, đo rối loạn Giọng, chẩn đoán rối loạn Nuốt vùng hạ họng – miệng thực quản; máy đo chức năng thính học Interacoustic (Đan Mạch) chẩn đoán khiếm thính đo âm ốc tai; hệ thống kính vi phẫu mổ tai Zeiss (Đức), hệ thống nội soi Karl Storz (Đức) cùng với hệ thống khoan Skeeter dùng phẫu thuật nội soi mũi xoang, nội soi vi phẫu thanh quản và mổ nội soi tai; hệ thống máy Coblator của Smith Nephew (Mỹ), dao plasma của Medtronic (Mỹ) dùng phẫu thuật cắt Amidan, nạo VA, đốt cuốn mũi, chỉnh hình màn hầu&#8230;'
+
+MERGE (o1:test {id: 'vhit_và_shimp_test'})
+MERGE (o2:disease {id: 'tổn_thương_tiền_đình_disease'})
+MERGE (o1)-[r112:diagnosedBy]->(o2)
+SET r112.text = 'Máy đo tiền đình NATUS của Mỹ (hiện chỉ có tại bệnh viện Đa khoa Tâm Anh TP.HCM); vHIT và SHIMP có độ chính xác theo tiêu chuẩn vàng, đánh giá được tất cả 6 ống bán khuyên chỉ với một lần kiểm tra duy nhất; Hệ thống máy đo ảnh động nhãn đồ (VNG) và Tập phục hồi chức năng tiền đình (TRV) (hiện chỉ có tại bệnh viện Đa khoa Tâm Anh Hà Nội) giúp chẩn đoán chính xác về nguyên nhân của tổn thương tiền đình; xây dựng các phác đồ tập phục hồi chuyên biệt với máy TRV; Máy nội soi của Đức có đầu tiên ở BVĐK Tâm Anh giúp phát hiện sớm tổn thương trên dây thanh, chẩn đoán chính xác nguyên nhân khàn tiếng, đo rối loạn Giọng, chẩn đoán rối loạn Nuốt vùng hạ họng – miệng thực quản; máy đo chức năng thính học Interacoustic (Đan Mạch) chẩn đoán khiếm thính đo âm ốc tai; hệ thống kính vi phẫu mổ tai Zeiss (Đức), hệ thống nội soi Karl Storz (Đức) cùng với hệ thống khoan Skeeter dùng phẫu thuật nội soi mũi xoang, nội soi vi phẫu thanh quản và mổ nội soi tai; hệ thống máy Coblator của Smith Nephew (Mỹ), dao plasma của Medtronic (Mỹ) dùng phẫu thuật cắt Amidan, nạo VA, đốt cuốn mũi, chỉnh hình màn hầu&#8230;'
+
+MERGE (o1:test {id: 'hệ_thống_máy_đo_ảnh_động_nhãn_đồ_(vng)_test'})
+MERGE (o2:disease {id: 'tổn_thương_tiền_đình_disease'})
+MERGE (o1)-[r113:diagnosedBy]->(o2)
+SET r113.text = 'Máy đo tiền đình NATUS của Mỹ (hiện chỉ có tại bệnh viện Đa khoa Tâm Anh TP.HCM); vHIT và SHIMP có độ chính xác theo tiêu chuẩn vàng, đánh giá được tất cả 6 ống bán khuyên chỉ với một lần kiểm tra duy nhất; Hệ thống máy đo ảnh động nhãn đồ (VNG) và Tập phục hồi chức năng tiền đình (TRV) (hiện chỉ có tại bệnh viện Đa khoa Tâm Anh Hà Nội) giúp chẩn đoán chính xác về nguyên nhân của tổn thương tiền đình; xây dựng các phác đồ tập phục hồi chuyên biệt với máy TRV; Máy nội soi của Đức có đầu tiên ở BVĐK Tâm Anh giúp phát hiện sớm tổn thương trên dây thanh, chẩn đoán chính xác nguyên nhân khàn tiếng, đo rối loạn Giọng, chẩn đoán rối loạn Nuốt vùng hạ họng – miệng thực quản; máy đo chức năng thính học Interacoustic (Đan Mạch) chẩn đoán khiếm thính đo âm ốc tai; hệ thống kính vi phẫu mổ tai Zeiss (Đức), hệ thống nội soi Karl Storz (Đức) cùng với hệ thống khoan Skeeter dùng phẫu thuật nội soi mũi xoang, nội soi vi phẫu thanh quản và mổ nội soi tai; hệ thống máy Coblator của Smith Nephew (Mỹ), dao plasma của Medtronic (Mỹ) dùng phẫu thuật cắt Amidan, nạo VA, đốt cuốn mũi, chỉnh hình màn hầu&#8230;'
+
+MERGE (o1:treatment {id: 'tập_phục_hồi_chức_năng_tiền_đình_(trv)_treatment'})
+MERGE (o2:disease {id: 'tổn_thương_tiền_đình_disease'})
+MERGE (o1)-[r114:treatedBy]->(o2)
+SET r114.text = 'Máy đo tiền đình NATUS của Mỹ (hiện chỉ có tại bệnh viện Đa khoa Tâm Anh TP.HCM); vHIT và SHIMP có độ chính xác theo tiêu chuẩn vàng, đánh giá được tất cả 6 ống bán khuyên chỉ với một lần kiểm tra duy nhất; Hệ thống máy đo ảnh động nhãn đồ (VNG) và Tập phục hồi chức năng tiền đình (TRV) (hiện chỉ có tại bệnh viện Đa khoa Tâm Anh Hà Nội) giúp chẩn đoán chính xác về nguyên nhân của tổn thương tiền đình; xây dựng các phác đồ tập phục hồi chuyên biệt với máy TRV; Máy nội soi của Đức có đầu tiên ở BVĐK Tâm Anh giúp phát hiện sớm tổn thương trên dây thanh, chẩn đoán chính xác nguyên nhân khàn tiếng, đo rối loạn Giọng, chẩn đoán rối loạn Nuốt vùng hạ họng – miệng thực quản; máy đo chức năng thính học Interacoustic (Đan Mạch) chẩn đoán khiếm thính đo âm ốc tai; hệ thống kính vi phẫu mổ tai Zeiss (Đức), hệ thống nội soi Karl Storz (Đức) cùng với hệ thống khoan Skeeter dùng phẫu thuật nội soi mũi xoang, nội soi vi phẫu thanh quản và mổ nội soi tai; hệ thống máy Coblator của Smith Nephew (Mỹ), dao plasma của Medtronic (Mỹ) dùng phẫu thuật cắt Amidan, nạo VA, đốt cuốn mũi, chỉnh hình màn hầu&#8230;'
+
+MERGE (o1:test {id: 'máy_nội_soi_test'})
+MERGE (o2:disease {id: 'tổn_thương_trên_dây_thanh_disease'})
+MERGE (o1)-[r115:diagnosedBy]->(o2)
+SET r115.text = 'Máy đo tiền đình NATUS của Mỹ (hiện chỉ có tại bệnh viện Đa khoa Tâm Anh TP.HCM); vHIT và SHIMP có độ chính xác theo tiêu chuẩn vàng, đánh giá được tất cả 6 ống bán khuyên chỉ với một lần kiểm tra duy nhất; Hệ thống máy đo ảnh động nhãn đồ (VNG) và Tập phục hồi chức năng tiền đình (TRV) (hiện chỉ có tại bệnh viện Đa khoa Tâm Anh Hà Nội) giúp chẩn đoán chính xác về nguyên nhân của tổn thương tiền đình; xây dựng các phác đồ tập phục hồi chuyên biệt với máy TRV; Máy nội soi của Đức có đầu tiên ở BVĐK Tâm Anh giúp phát hiện sớm tổn thương trên dây thanh, chẩn đoán chính xác nguyên nhân khàn tiếng, đo rối loạn Giọng, chẩn đoán rối loạn Nuốt vùng hạ họng – miệng thực quản; máy đo chức năng thính học Interacoustic (Đan Mạch) chẩn đoán khiếm thính đo âm ốc tai; hệ thống kính vi phẫu mổ tai Zeiss (Đức), hệ thống nội soi Karl Storz (Đức) cùng với hệ thống khoan Skeeter dùng phẫu thuật nội soi mũi xoang, nội soi vi phẫu thanh quản và mổ nội soi tai; hệ thống máy Coblator của Smith Nephew (Mỹ), dao plasma của Medtronic (Mỹ) dùng phẫu thuật cắt Amidan, nạo VA, đốt cuốn mũi, chỉnh hình màn hầu&#8230;'
+
+MERGE (o1:test {id: 'máy_đo_chức_năng_thính_học_interacoustic_test'})
+MERGE (o2:disease {id: 'khiếm_thính_disease'})
+MERGE (o1)-[r116:diagnosedBy]->(o2)
+SET r116.text = 'Máy đo tiền đình NATUS của Mỹ (hiện chỉ có tại bệnh viện Đa khoa Tâm Anh TP.HCM); vHIT và SHIMP có độ chính xác theo tiêu chuẩn vàng, đánh giá được tất cả 6 ống bán khuyên chỉ với một lần kiểm tra duy nhất; Hệ thống máy đo ảnh động nhãn đồ (VNG) và Tập phục hồi chức năng tiền đình (TRV) (hiện chỉ có tại bệnh viện Đa khoa Tâm Anh Hà Nội) giúp chẩn đoán chính xác về nguyên nhân của tổn thương tiền đình; xây dựng các phác đồ tập phục hồi chuyên biệt với máy TRV; Máy nội soi của Đức có đầu tiên ở BVĐK Tâm Anh giúp phát hiện sớm tổn thương trên dây thanh, chẩn đoán chính xác nguyên nhân khàn tiếng, đo rối loạn Giọng, chẩn đoán rối loạn Nuốt vùng hạ họng – miệng thực quản; máy đo chức năng thính học Interacoustic (Đan Mạch) chẩn đoán khiếm thính đo âm ốc tai; hệ thống kính vi phẫu mổ tai Zeiss (Đức), hệ thống nội soi Karl Storz (Đức) cùng với hệ thống khoan Skeeter dùng phẫu thuật nội soi mũi xoang, nội soi vi phẫu thanh quản và mổ nội soi tai; hệ thống máy Coblator của Smith Nephew (Mỹ), dao plasma của Medtronic (Mỹ) dùng phẫu thuật cắt Amidan, nạo VA, đốt cuốn mũi, chỉnh hình màn hầu&#8230;'
+
+MERGE (o1:treatment {id: 'hệ_thống_kính_vi_phẫu_mổ_tai_zeiss_treatment'})
+MERGE (o2:disease {id: 'viêm_tai_giữa_mạn_tính_thủng_nhĩ_disease'})
+MERGE (o1)-[r117:treatedBy]->(o2)
+SET r117.text = 'Máy đo tiền đình NATUS của Mỹ (hiện chỉ có tại bệnh viện Đa khoa Tâm Anh TP.HCM); vHIT và SHIMP có độ chính xác theo tiêu chuẩn vàng, đánh giá được tất cả 6 ống bán khuyên chỉ với một lần kiểm tra duy nhất; Hệ thống máy đo ảnh động nhãn đồ (VNG) và Tập phục hồi chức năng tiền đình (TRV) (hiện chỉ có tại bệnh viện Đa khoa Tâm Anh Hà Nội) giúp chẩn đoán chính xác về nguyên nhân của tổn thương tiền đình; xây dựng các phác đồ tập phục hồi chuyên biệt với máy TRV; Máy nội soi của Đức có đầu tiên ở BVĐK Tâm Anh giúp phát hiện sớm tổn thương trên dây thanh, chẩn đoán chính xác nguyên nhân khàn tiếng, đo rối loạn Giọng, chẩn đoán rối loạn Nuốt vùng hạ họng – miệng thực quản; máy đo chức năng thính học Interacoustic (Đan Mạch) chẩn đoán khiếm thính đo âm ốc tai; hệ thống kính vi phẫu mổ tai Zeiss (Đức), hệ thống nội soi Karl Storz (Đức) cùng với hệ thống khoan Skeeter dùng phẫu thuật nội soi mũi xoang, nội soi vi phẫu thanh quản và mổ nội soi tai; hệ thống máy Coblator của Smith Nephew (Mỹ), dao plasma của Medtronic (Mỹ) dùng phẫu thuật cắt Amidan, nạo VA, đốt cuốn mũi, chỉnh hình màn hầu&#8230;'
+
+MERGE (o1:treatment {id: 'hệ_thống_nội_soi_karl_storz_treatment'})
+MERGE (o2:disease {id: 'viêm_tai_giữa_mạn_tính_thủng_nhĩ_disease'})
+MERGE (o1)-[r118:treatedBy]->(o2)
+SET r118.text = 'Máy đo tiền đình NATUS của Mỹ (hiện chỉ có tại bệnh viện Đa khoa Tâm Anh TP.HCM); vHIT và SHIMP có độ chính xác theo tiêu chuẩn vàng, đánh giá được tất cả 6 ống bán khuyên chỉ với một lần kiểm tra duy nhất; Hệ thống máy đo ảnh động nhãn đồ (VNG) và Tập phục hồi chức năng tiền đình (TRV) (hiện chỉ có tại bệnh viện Đa khoa Tâm Anh Hà Nội) giúp chẩn đoán chính xác về nguyên nhân của tổn thương tiền đình; xây dựng các phác đồ tập phục hồi chuyên biệt với máy TRV; Máy nội soi của Đức có đầu tiên ở BVĐK Tâm Anh giúp phát hiện sớm tổn thương trên dây thanh, chẩn đoán chính xác nguyên nhân khàn tiếng, đo rối loạn Giọng, chẩn đoán rối loạn Nuốt vùng hạ họng – miệng thực quản; máy đo chức năng thính học Interacoustic (Đan Mạch) chẩn đoán khiếm thính đo âm ốc tai; hệ thống kính vi phẫu mổ tai Zeiss (Đức), hệ thống nội soi Karl Storz (Đức) cùng với hệ thống khoan Skeeter dùng phẫu thuật nội soi mũi xoang, nội soi vi phẫu thanh quản và mổ nội soi tai; hệ thống máy Coblator của Smith Nephew (Mỹ), dao plasma của Medtronic (Mỹ) dùng phẫu thuật cắt Amidan, nạo VA, đốt cuốn mũi, chỉnh hình màn hầu&#8230;'
+
+MERGE (o1:treatment {id: 'hệ_thống_khoan_skeeter_treatment'})
+MERGE (o2:disease {id: 'viêm_tai_giữa_mạn_tính_thủng_nhĩ_disease'})
+MERGE (o1)-[r119:treatedBy]->(o2)
+SET r119.text = 'Máy đo tiền đình NATUS của Mỹ (hiện chỉ có tại bệnh viện Đa khoa Tâm Anh TP.HCM); vHIT và SHIMP có độ chính xác theo tiêu chuẩn vàng, đánh giá được tất cả 6 ống bán khuyên chỉ với một lần kiểm tra duy nhất; Hệ thống máy đo ảnh động nhãn đồ (VNG) và Tập phục hồi chức năng tiền đình (TRV) (hiện chỉ có tại bệnh viện Đa khoa Tâm Anh Hà Nội) giúp chẩn đoán chính xác về nguyên nhân của tổn thương tiền đình; xây dựng các phác đồ tập phục hồi chuyên biệt với máy TRV; Máy nội soi của Đức có đầu tiên ở BVĐK Tâm Anh giúp phát hiện sớm tổn thương trên dây thanh, chẩn đoán chính xác nguyên nhân khàn tiếng, đo rối loạn Giọng, chẩn đoán rối loạn Nuốt vùng hạ họng – miệng thực quản; máy đo chức năng thính học Interacoustic (Đan Mạch) chẩn đoán khiếm thính đo âm ốc tai; hệ thống kính vi phẫu mổ tai Zeiss (Đức), hệ thống nội soi Karl Storz (Đức) cùng với hệ thống khoan Skeeter dùng phẫu thuật nội soi mũi xoang, nội soi vi phẫu thanh quản và mổ nội soi tai; hệ thống máy Coblator của Smith Nephew (Mỹ), dao plasma của Medtronic (Mỹ) dùng phẫu thuật cắt Amidan, nạo VA, đốt cuốn mũi, chỉnh hình màn hầu&#8230;'
+
+MERGE (o1:treatment {id: 'hệ_thống_máy_coblator_treatment'})
+MERGE (o2:disease {id: 'viêm_tai_giữa_mạn_tính_thủng_nhĩ_disease'})
+MERGE (o1)-[r120:treatedBy]->(o2)
+SET r120.text = 'Máy đo tiền đình NATUS của Mỹ (hiện chỉ có tại bệnh viện Đa khoa Tâm Anh TP.HCM); vHIT và SHIMP có độ chính xác theo tiêu chuẩn vàng, đánh giá được tất cả 6 ống bán khuyên chỉ với một lần kiểm tra duy nhất; Hệ thống máy đo ảnh động nhãn đồ (VNG) và Tập phục hồi chức năng tiền đình (TRV) (hiện chỉ có tại bệnh viện Đa khoa Tâm Anh Hà Nội) giúp chẩn đoán chính xác về nguyên nhân của tổn thương tiền đình; xây dựng các phác đồ tập phục hồi chuyên biệt với máy TRV; Máy nội soi của Đức có đầu tiên ở BVĐK Tâm Anh giúp phát hiện sớm tổn thương trên dây thanh, chẩn đoán chính xác nguyên nhân khàn tiếng, đo rối loạn Giọng, chẩn đoán rối loạn Nuốt vùng hạ họng – miệng thực quản; máy đo chức năng thính học Interacoustic (Đan Mạch) chẩn đoán khiếm thính đo âm ốc tai; hệ thống kính vi phẫu mổ tai Zeiss (Đức), hệ thống nội soi Karl Storz (Đức) cùng với hệ thống khoan Skeeter dùng phẫu thuật nội soi mũi xoang, nội soi vi phẫu thanh quản và mổ nội soi tai; hệ thống máy Coblator của Smith Nephew (Mỹ), dao plasma của Medtronic (Mỹ) dùng phẫu thuật cắt Amidan, nạo VA, đốt cuốn mũi, chỉnh hình màn hầu&#8230;'
+
+MERGE (o1:treatment {id: 'dao_plasma_treatment'})
+MERGE (o2:disease {id: 'viêm_tai_giữa_mạn_tính_thủng_nhĩ_disease'})
+MERGE (o1)-[r121:treatedBy]->(o2)
+SET r121.text = 'Máy đo tiền đình NATUS của Mỹ (hiện chỉ có tại bệnh viện Đa khoa Tâm Anh TP.HCM); vHIT và SHIMP có độ chính xác theo tiêu chuẩn vàng, đánh giá được tất cả 6 ống bán khuyên chỉ với một lần kiểm tra duy nhất; Hệ thống máy đo ảnh động nhãn đồ (VNG) và Tập phục hồi chức năng tiền đình (TRV) (hiện chỉ có tại bệnh viện Đa khoa Tâm Anh Hà Nội) giúp chẩn đoán chính xác về nguyên nhân của tổn thương tiền đình; xây dựng các phác đồ tập phục hồi chuyên biệt với máy TRV; Máy nội soi của Đức có đầu tiên ở BVĐK Tâm Anh giúp phát hiện sớm tổn thương trên dây thanh, chẩn đoán chính xác nguyên nhân khàn tiếng, đo rối loạn Giọng, chẩn đoán rối loạn Nuốt vùng hạ họng – miệng thực quản; máy đo chức năng thính học Interacoustic (Đan Mạch) chẩn đoán khiếm thính đo âm ốc tai; hệ thống kính vi phẫu mổ tai Zeiss (Đức), hệ thống nội soi Karl Storz (Đức) cùng với hệ thống khoan Skeeter dùng phẫu thuật nội soi mũi xoang, nội soi vi phẫu thanh quản và mổ nội soi tai; hệ thống máy Coblator của Smith Nephew (Mỹ), dao plasma của Medtronic (Mỹ) dùng phẫu thuật cắt Amidan, nạo VA, đốt cuốn mũi, chỉnh hình màn hầu&#8230;'

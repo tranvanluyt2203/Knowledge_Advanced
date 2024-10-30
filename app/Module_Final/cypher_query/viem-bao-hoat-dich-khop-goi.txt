@@ -1,0 +1,820 @@
+
+MERGE (o1:disease {id: 'viêm_bao_hoạt_dịch_khớp_gối_disease'})
+MERGE (o2:lifestyle {id: 'sinh_hoạt_hằng_ngày_lifestyle'})
+MERGE (o1)-[r0:affects]->(o2)
+SET r0.text = 'Viêm bao hoạt dịch khớp gối gây nhiều phiền toái trong sinh hoạt hằng ngày của người bệnh.'
+
+MERGE (o1:disease {id: 'viêm_bao_hoạt_dịch_khớp_gối_disease'})
+MERGE (o2:organ {id: 'người_bệnh_organ'})
+MERGE (o1)-[r1:affects]->(o2)
+SET r1.text = 'Viêm bao hoạt dịch khớp gối gây nhiều phiền toái trong sinh hoạt hằng ngày của người bệnh.'
+
+MERGE (o1:treatment {id: 'biện_pháp_xử_lý_treatment'})
+MERGE (o2:disease {id: 'bệnh_disease'})
+MERGE (o1)-[r2:treatedBy]->(o2)
+SET r2.text = 'Nếu không có biện pháp xử lý sớm, bệnh có thể dẫn tới nhiều biến chứng nặng như tàn phế.'
+
+MERGE (o1:disease {id: 'bệnh_disease'})
+MERGE (o2:symptom {id: 'tàn_phế_symptom'})
+MERGE (o1)-[r3:isSymptomOf]->(o2)
+SET r3.text = 'Nếu không có biện pháp xử lý sớm, bệnh có thể dẫn tới nhiều biến chứng nặng như tàn phế.'
+
+MERGE (o1:disease {id: 'viêm_bao_hoạt_dịch_khớp_gối_disease'})
+MERGE (o2:symptom {id: 'viêm_túi_chứa_dịch_lỏng_ở_khớp_gối_symptom'})
+MERGE (o1)-[r4:isSymptomOf]->(o2)
+SET r4.text = 'Viêm bao hoạt dịch khớp gối (viêm màng hoạt dịch khớp gối) là tình trạng viêm túi chứa dịch lỏng ở khớp gối.'
+
+MERGE (o1:disease {id: 'viêm_bao_hoạt_dịch_khớp_gối_disease'})
+MERGE (o2:organ {id: 'khớp_gối_organ'})
+MERGE (o1)-[r5:locatedIn]->(o2)
+SET r5.text = 'Viêm bao hoạt dịch khớp gối (viêm màng hoạt dịch khớp gối) là tình trạng viêm túi chứa dịch lỏng ở khớp gối.'
+
+MERGE (o1:organ {id: 'bao_hoạt_dịch_organ'})
+MERGE (o2:organ {id: 'khớp_gối_organ'})
+MERGE (o1)-[r6:locatedIn]->(o2)
+SET r6.text = 'Bao hoạt dịch giúp giảm ma sát và là miếng đệm chịu lực giữa hai đầu xương và gân, cơ, da gần khớp.'
+
+MERGE (o1:organ {id: 'bao_hoạt_dịch_organ'})
+MERGE (o2:organ {id: 'xương_organ'})
+MERGE (o1)-[r7:affects]->(o2)
+SET r7.text = 'Bao hoạt dịch giúp giảm ma sát và là miếng đệm chịu lực giữa hai đầu xương và gân, cơ, da gần khớp.'
+
+MERGE (o1:organ {id: 'bao_hoạt_dịch_organ'})
+MERGE (o2:organ {id: 'gân_organ'})
+MERGE (o1)-[r8:affects]->(o2)
+SET r8.text = 'Bao hoạt dịch giúp giảm ma sát và là miếng đệm chịu lực giữa hai đầu xương và gân, cơ, da gần khớp.'
+
+MERGE (o1:organ {id: 'bao_hoạt_dịch_organ'})
+MERGE (o2:organ {id: 'cơ_organ'})
+MERGE (o1)-[r9:affects]->(o2)
+SET r9.text = 'Bao hoạt dịch giúp giảm ma sát và là miếng đệm chịu lực giữa hai đầu xương và gân, cơ, da gần khớp.'
+
+MERGE (o1:organ {id: 'bao_hoạt_dịch_organ'})
+MERGE (o2:organ {id: 'da_organ'})
+MERGE (o1)-[r10:affects]->(o2)
+SET r10.text = 'Bao hoạt dịch giúp giảm ma sát và là miếng đệm chịu lực giữa hai đầu xương và gân, cơ, da gần khớp.'
+
+MERGE (o1:organ {id: 'bao_hoạt_dịch_organ'})
+MERGE (o2:organ {id: 'khớp_gối_organ'})
+MERGE (o1)-[r11:locatedIn]->(o2)
+SET r11.text = 'Bao hoạt dịch ở bất kỳ vị trí nào trong khớp gối cũng đều có khả năng bị viêm.'
+
+MERGE (o1:organ {id: 'bao_hoạt_dịch_organ'})
+MERGE (o2:symptom {id: 'viêm_symptom'})
+MERGE (o1)-[r12:isSymptomOf]->(o2)
+SET r12.text = 'Bao hoạt dịch ở bất kỳ vị trí nào trong khớp gối cũng đều có khả năng bị viêm.'
+
+MERGE (o1:organ {id: 'xương_bánh_chè_organ'})
+MERGE (o2:organ {id: 'khớp_gối_organ'})
+MERGE (o1)-[r13:locatedIn]->(o2)
+SET r13.text = 'Tuy nhiên, vị trí trước xương bánh chè, phía bên trong đầu gối và bên dưới khớp là dễ bị viêm nhất.'
+
+MERGE (o1:organ {id: 'đầu_gối_organ'})
+MERGE (o2:organ {id: 'khớp_gối_organ'})
+MERGE (o1)-[r14:locatedIn]->(o2)
+SET r14.text = 'Tuy nhiên, vị trí trước xương bánh chè, phía bên trong đầu gối và bên dưới khớp là dễ bị viêm nhất.'
+
+MERGE (o1:organ {id: 'khớp_organ'})
+MERGE (o2:organ {id: 'khớp_gối_organ'})
+MERGE (o1)-[r15:locatedIn]->(o2)
+SET r15.text = 'Tuy nhiên, vị trí trước xương bánh chè, phía bên trong đầu gối và bên dưới khớp là dễ bị viêm nhất.'
+
+MERGE (o1:disease {id: 'tổn_thương_disease'})
+MERGE (o2:symptom {id: 'đau_đớn_symptom'})
+MERGE (o1)-[r16:isSymptomOf]->(o2)
+SET r16.text = 'Tổn thương này gây đau đớn và hạn chế tầm vận động của người bệnh.'
+
+MERGE (o1:disease {id: 'tổn_thương_disease'})
+MERGE (o2:symptom {id: 'hạn_chế_tầm_vận_động_symptom'})
+MERGE (o1)-[r17:isSymptomOf]->(o2)
+SET r17.text = 'Tổn thương này gây đau đớn và hạn chế tầm vận động của người bệnh.'
+
+MERGE (o1:disease {id: 'tổn_thương_disease'})
+MERGE (o2:organ {id: 'người_bệnh_organ'})
+MERGE (o1)-[r18:affects]->(o2)
+SET r18.text = 'Tổn thương này gây đau đớn và hạn chế tầm vận động của người bệnh.'
+
+MERGE (o1:treatment {id: 'điều_trị_treatment'})
+MERGE (o2:symptom {id: 'viêm_symptom'})
+MERGE (o1)-[r19:treatedBy]->(o2)
+SET r19.text = 'Điều trị thường là kết hợp những biện pháp chăm sóc tại nhà cùng phương pháp điều trị từ bác sĩ để cải thiện tình trạng viêm và đau nhức.'
+
+MERGE (o1:treatment {id: 'điều_trị_treatment'})
+MERGE (o2:symptom {id: 'đau_nhức_symptom'})
+MERGE (o1)-[r20:treatedBy]->(o2)
+SET r20.text = 'Điều trị thường là kết hợp những biện pháp chăm sóc tại nhà cùng phương pháp điều trị từ bác sĩ để cải thiện tình trạng viêm và đau nhức.'
+
+MERGE (o1:disease {id: 'viêm_bao_hoạt_dịch_đầu_gối_disease'})
+MERGE (o2:symptom {id: 'triệu_chứng_symptom'})
+MERGE (o1)-[r21:isSymptomOf]->(o2)
+SET r21.text = 'Những triệu chứng viêm bao hoạt dịch đầu gối rất đa dạng.'
+
+MERGE (o1:organ {id: 'bao_hoạt_dịch_organ'})
+MERGE (o2:symptom {id: 'viêm_symptom'})
+MERGE (o1)-[r22:affects]->(o2)
+SET r22.text = 'Tùy theo bao hoạt dịch nào ảnh hưởng và nguyên nhân gây viêm, mỗi trường hợp sẽ có dấu hiệu khác nhau.'
+
+MERGE (o1:cause {id: 'nguyên_nhân_cause'})
+MERGE (o2:symptom {id: 'viêm_symptom'})
+MERGE (o1)-[r23:causedBy]->(o2)
+SET r23.text = 'Tùy theo bao hoạt dịch nào ảnh hưởng và nguyên nhân gây viêm, mỗi trường hợp sẽ có dấu hiệu khác nhau.'
+
+MERGE (o1:symptom {id: 'vùng_gối_có_cảm_giác_ấm_nóng_symptom'})
+MERGE (o2:disease {id: 'viêm_màng_hoạt_dịch_khớp_gối_disease'})
+MERGE (o1)-[r24:isSymptomOf]->(o2)
+SET r24.text = 'Một số triệu chứng viêm màng hoạt dịch khớp gối thường gặp gồm:  Vùng gối có cảm giác ấm nóng, sưng và đau khi đi lại.'
+
+MERGE (o1:symptom {id: 'sưng_symptom'})
+MERGE (o2:disease {id: 'viêm_màng_hoạt_dịch_khớp_gối_disease'})
+MERGE (o1)-[r25:isSymptomOf]->(o2)
+SET r25.text = 'Một số triệu chứng viêm màng hoạt dịch khớp gối thường gặp gồm:  Vùng gối có cảm giác ấm nóng, sưng và đau khi đi lại.'
+
+MERGE (o1:symptom {id: 'đau_khi_đi_lại_symptom'})
+MERGE (o2:disease {id: 'viêm_màng_hoạt_dịch_khớp_gối_disease'})
+MERGE (o1)-[r26:isSymptomOf]->(o2)
+SET r26.text = 'Một số triệu chứng viêm màng hoạt dịch khớp gối thường gặp gồm:  Vùng gối có cảm giác ấm nóng, sưng và đau khi đi lại.'
+
+MERGE (o1:symptom {id: 'cơn_đau_không_thuyên_giảm_symptom'})
+MERGE (o2:disease {id: 'viêm_màng_hoạt_dịch_khớp_gối_disease'})
+MERGE (o1)-[r27:isSymptomOf]->(o2)
+SET r27.text = 'Cơn đau không thuyên giảm hoặc chỉ giảm nhẹ kể cả khi nghỉ ngơi.'
+
+MERGE (o1:symptom {id: 'cơn_đau_giảm_nhẹ_symptom'})
+MERGE (o2:disease {id: 'viêm_màng_hoạt_dịch_khớp_gối_disease'})
+MERGE (o1)-[r28:isSymptomOf]->(o2)
+SET r28.text = 'Cơn đau không thuyên giảm hoặc chỉ giảm nhẹ kể cả khi nghỉ ngơi.'
+
+MERGE (o1:cause {id: 'cú_đánh_mạnh_vào_khớp_gối_cause'})
+MERGE (o2:disease {id: 'viêm_bao_hoạt_dịch_disease'})
+MERGE (o1)-[r29:causedBy]->(o2)
+SET r29.text = 'Những yếu tố có thể khởi phát viêm bao hoạt dich, như là một cú đánh mạnh vào khớp gối có thể ngay lập tức làm xuất hiện nhiều triệu chứng.'
+
+MERGE (o1:cause {id: 'cú_đánh_mạnh_vào_khớp_gối_cause'})
+MERGE (o2:organ {id: 'khớp_gối_organ'})
+MERGE (o1)-[r30:affects]->(o2)
+SET r30.text = 'Những yếu tố có thể khởi phát viêm bao hoạt dich, như là một cú đánh mạnh vào khớp gối có thể ngay lập tức làm xuất hiện nhiều triệu chứng.'
+
+MERGE (o1:cause {id: 'sự_ma_sát_cause'})
+MERGE (o2:disease {id: 'viêm_bao_hoạt_dịch_disease'})
+MERGE (o1)-[r31:causedBy]->(o2)
+SET r31.text = 'Tuy nhiên, phần lớn trường hợp đều là hậu quả của sự ma sát cũng như là sự kích thích bao hoạt dịch trong các động tác yêu cầu dùng đầu gối nhiều.'
+
+MERGE (o1:cause {id: 'sự_kích_thích_bao_hoạt_dịch_cause'})
+MERGE (o2:disease {id: 'viêm_bao_hoạt_dịch_disease'})
+MERGE (o1)-[r32:causedBy]->(o2)
+SET r32.text = 'Tuy nhiên, phần lớn trường hợp đều là hậu quả của sự ma sát cũng như là sự kích thích bao hoạt dịch trong các động tác yêu cầu dùng đầu gối nhiều.'
+
+MERGE (o1:lifestyle {id: 'động_tác_yêu_cầu_dùng_đầu_gối_nhiều_lifestyle'})
+MERGE (o2:disease {id: 'viêm_bao_hoạt_dịch_disease'})
+MERGE (o1)-[r33:aggravatedBy]->(o2)
+SET r33.text = 'Tuy nhiên, phần lớn trường hợp đều là hậu quả của sự ma sát cũng như là sự kích thích bao hoạt dịch trong các động tác yêu cầu dùng đầu gối nhiều.'
+
+MERGE (o1:cause {id: 'khớp_gối_phải_chịu_áp_lực_thường_xuyên__kéo_dài_cause'})
+MERGE (o2:disease {id: 'viêm_bao_hoạt_dịch_khớp_gối_disease'})
+MERGE (o1)-[r34:causedBy]->(o2)
+SET r34.text = 'Người bệnh thường bị viêm bao hoạt dịch khớp gối do các nguyên nhân như:  Khớp gối phải chịu áp lực thường xuyên, kéo dài. Vận động khớp gối quá mức. Chấn thương khớp gối. Nhiễm trùng bao hoạt dịch. Biến chứng từ bệnh viêm xương khớp (thoái hóa khớp), gout, viêm khớp dạng thấp.'
+
+MERGE (o1:cause {id: 'vận_động_khớp_gối_quá_mức_cause'})
+MERGE (o2:disease {id: 'viêm_bao_hoạt_dịch_khớp_gối_disease'})
+MERGE (o1)-[r35:causedBy]->(o2)
+SET r35.text = 'Người bệnh thường bị viêm bao hoạt dịch khớp gối do các nguyên nhân như:  Khớp gối phải chịu áp lực thường xuyên, kéo dài. Vận động khớp gối quá mức. Chấn thương khớp gối. Nhiễm trùng bao hoạt dịch. Biến chứng từ bệnh viêm xương khớp (thoái hóa khớp), gout, viêm khớp dạng thấp.'
+
+MERGE (o1:cause {id: 'chấn_thương_khớp_gối_cause'})
+MERGE (o2:disease {id: 'viêm_bao_hoạt_dịch_khớp_gối_disease'})
+MERGE (o1)-[r36:causedBy]->(o2)
+SET r36.text = 'Người bệnh thường bị viêm bao hoạt dịch khớp gối do các nguyên nhân như:  Khớp gối phải chịu áp lực thường xuyên, kéo dài. Vận động khớp gối quá mức. Chấn thương khớp gối. Nhiễm trùng bao hoạt dịch. Biến chứng từ bệnh viêm xương khớp (thoái hóa khớp), gout, viêm khớp dạng thấp.'
+
+MERGE (o1:cause {id: 'nhiễm_trùng_bao_hoạt_dịch_cause'})
+MERGE (o2:disease {id: 'viêm_bao_hoạt_dịch_khớp_gối_disease'})
+MERGE (o1)-[r37:causedBy]->(o2)
+SET r37.text = 'Người bệnh thường bị viêm bao hoạt dịch khớp gối do các nguyên nhân như:  Khớp gối phải chịu áp lực thường xuyên, kéo dài. Vận động khớp gối quá mức. Chấn thương khớp gối. Nhiễm trùng bao hoạt dịch. Biến chứng từ bệnh viêm xương khớp (thoái hóa khớp), gout, viêm khớp dạng thấp.'
+
+MERGE (o1:disease {id: 'bệnh_viêm_xương_khớp_(thoái_hóa_khớp)_disease'})
+MERGE (o2:disease {id: 'viêm_bao_hoạt_dịch_khớp_gối_disease'})
+MERGE (o1)-[r38:causedBy]->(o2)
+SET r38.text = 'Người bệnh thường bị viêm bao hoạt dịch khớp gối do các nguyên nhân như:  Khớp gối phải chịu áp lực thường xuyên, kéo dài. Vận động khớp gối quá mức. Chấn thương khớp gối. Nhiễm trùng bao hoạt dịch. Biến chứng từ bệnh viêm xương khớp (thoái hóa khớp), gout, viêm khớp dạng thấp.'
+
+MERGE (o1:disease {id: 'gout_disease'})
+MERGE (o2:disease {id: 'viêm_bao_hoạt_dịch_khớp_gối_disease'})
+MERGE (o1)-[r39:causedBy]->(o2)
+SET r39.text = 'Người bệnh thường bị viêm bao hoạt dịch khớp gối do các nguyên nhân như:  Khớp gối phải chịu áp lực thường xuyên, kéo dài. Vận động khớp gối quá mức. Chấn thương khớp gối. Nhiễm trùng bao hoạt dịch. Biến chứng từ bệnh viêm xương khớp (thoái hóa khớp), gout, viêm khớp dạng thấp.'
+
+MERGE (o1:disease {id: 'viêm_khớp_dạng_thấp_disease'})
+MERGE (o2:disease {id: 'viêm_bao_hoạt_dịch_khớp_gối_disease'})
+MERGE (o1)-[r40:causedBy]->(o2)
+SET r40.text = 'Người bệnh thường bị viêm bao hoạt dịch khớp gối do các nguyên nhân như:  Khớp gối phải chịu áp lực thường xuyên, kéo dài. Vận động khớp gối quá mức. Chấn thương khớp gối. Nhiễm trùng bao hoạt dịch. Biến chứng từ bệnh viêm xương khớp (thoái hóa khớp), gout, viêm khớp dạng thấp.'
+
+MERGE (o1:lifestyle {id: 'quỳ_gối_quá_lâu_lifestyle'})
+MERGE (o2:disease {id: 'viêm_bao_hoạt_dịch_khớp_gối_disease'})
+MERGE (o1)-[r41:aggravatedBy]->(o2)
+SET r41.text = 'Một số yếu tố có thể làm tăng nguy cơ viêm màng hoạt dịch khớp gối như:  Quỳ gối quá lâu: Người làm các công việc yêu cầu quỳ gối quá lâu như thợ lót thảm, thợ làm vườn, thợ sửa ống nước… có nguy cơ bị viêm bao khớp gối cao hơn.'
+
+MERGE (o1:lifestyle {id: 'thợ_lót_thảm_lifestyle'})
+MERGE (o2:disease {id: 'viêm_bao_hoạt_dịch_khớp_gối_disease'})
+MERGE (o1)-[r42:associatedWith]->(o2)
+SET r42.text = 'Một số yếu tố có thể làm tăng nguy cơ viêm màng hoạt dịch khớp gối như:  Quỳ gối quá lâu: Người làm các công việc yêu cầu quỳ gối quá lâu như thợ lót thảm, thợ làm vườn, thợ sửa ống nước… có nguy cơ bị viêm bao khớp gối cao hơn.'
+
+MERGE (o1:lifestyle {id: 'thợ_làm_vườn_lifestyle'})
+MERGE (o2:disease {id: 'viêm_bao_hoạt_dịch_khớp_gối_disease'})
+MERGE (o1)-[r43:associatedWith]->(o2)
+SET r43.text = 'Một số yếu tố có thể làm tăng nguy cơ viêm màng hoạt dịch khớp gối như:  Quỳ gối quá lâu: Người làm các công việc yêu cầu quỳ gối quá lâu như thợ lót thảm, thợ làm vườn, thợ sửa ống nước… có nguy cơ bị viêm bao khớp gối cao hơn.'
+
+MERGE (o1:lifestyle {id: 'thợ_sửa_ống_nước_lifestyle'})
+MERGE (o2:disease {id: 'viêm_bao_hoạt_dịch_khớp_gối_disease'})
+MERGE (o1)-[r44:associatedWith]->(o2)
+SET r44.text = 'Một số yếu tố có thể làm tăng nguy cơ viêm màng hoạt dịch khớp gối như:  Quỳ gối quá lâu: Người làm các công việc yêu cầu quỳ gối quá lâu như thợ lót thảm, thợ làm vườn, thợ sửa ống nước… có nguy cơ bị viêm bao khớp gối cao hơn.'
+
+MERGE (o1:lifestyle {id: 'thừa_cân__béo_phì_lifestyle'})
+MERGE (o2:disease {id: 'viêm_bao_hoạt_dịch_khớp_gối_disease'})
+MERGE (o1)-[r45:aggravatedBy]->(o2)
+SET r45.text = 'Một số yếu tố có thể làm tăng nguy cơ viêm màng hoạt dịch khớp gối như:  Thừa cân, béo phì: Trọng lượng cơ thể dư thừa sẽ tạo áp lực lớn lên khớp gối, phá hủy dần sụn khớp.'
+
+MERGE (o1:cause {id: 'trọng_lượng_cơ_thể_dư_thừa_cause'})
+MERGE (o2:disease {id: 'viêm_bao_hoạt_dịch_khớp_gối_disease'})
+MERGE (o1)-[r46:causedBy]->(o2)
+SET r46.text = 'Một số yếu tố có thể làm tăng nguy cơ viêm màng hoạt dịch khớp gối như:  Thừa cân, béo phì: Trọng lượng cơ thể dư thừa sẽ tạo áp lực lớn lên khớp gối, phá hủy dần sụn khớp.'
+
+MERGE (o1:cause {id: 'áp_lực_lớn_lên_khớp_gối_cause'})
+MERGE (o2:disease {id: 'viêm_bao_hoạt_dịch_khớp_gối_disease'})
+MERGE (o1)-[r47:causedBy]->(o2)
+SET r47.text = 'Một số yếu tố có thể làm tăng nguy cơ viêm màng hoạt dịch khớp gối như:  Thừa cân, béo phì: Trọng lượng cơ thể dư thừa sẽ tạo áp lực lớn lên khớp gối, phá hủy dần sụn khớp.'
+
+MERGE (o1:symptom {id: 'phá_hủy_dần_sụn_khớp_symptom'})
+MERGE (o2:disease {id: 'viêm_bao_hoạt_dịch_khớp_gối_disease'})
+MERGE (o1)-[r48:isSymptomOf]->(o2)
+SET r48.text = 'Một số yếu tố có thể làm tăng nguy cơ viêm màng hoạt dịch khớp gối như:  Thừa cân, béo phì: Trọng lượng cơ thể dư thừa sẽ tạo áp lực lớn lên khớp gối, phá hủy dần sụn khớp.'
+
+MERGE (o1:disease {id: 'thoái_hóa_khớp_disease'})
+MERGE (o2:disease {id: 'viêm_bao_hoạt_dịch_khớp_gối_disease'})
+MERGE (o1)-[r49:aggravatedBy]->(o2)
+SET r49.text = 'Một số yếu tố có thể làm tăng nguy cơ viêm màng hoạt dịch khớp gối như:  Thoái hóa khớp: Thoái hóa khớp khiến các bao hoạt dịch ở khớp hoạt động kém hơn, dễ gặp chấn thương và tình trạng viêm nhiễm màng hoạt dịch.'
+
+MERGE (o1:symptom {id: 'bao_hoạt_dịch_ở_khớp_hoạt_động_kém_hơn_symptom'})
+MERGE (o2:disease {id: 'thoái_hóa_khớp_disease'})
+MERGE (o1)-[r50:isSymptomOf]->(o2)
+SET r50.text = 'Một số yếu tố có thể làm tăng nguy cơ viêm màng hoạt dịch khớp gối như:  Thoái hóa khớp: Thoái hóa khớp khiến các bao hoạt dịch ở khớp hoạt động kém hơn, dễ gặp chấn thương và tình trạng viêm nhiễm màng hoạt dịch.'
+
+MERGE (o1:symptom {id: 'dễ_gặp_chấn_thương_symptom'})
+MERGE (o2:disease {id: 'thoái_hóa_khớp_disease'})
+MERGE (o1)-[r51:isSymptomOf]->(o2)
+SET r51.text = 'Một số yếu tố có thể làm tăng nguy cơ viêm màng hoạt dịch khớp gối như:  Thoái hóa khớp: Thoái hóa khớp khiến các bao hoạt dịch ở khớp hoạt động kém hơn, dễ gặp chấn thương và tình trạng viêm nhiễm màng hoạt dịch.'
+
+MERGE (o1:symptom {id: 'viêm_nhiễm_màng_hoạt_dịch_symptom'})
+MERGE (o2:disease {id: 'thoái_hóa_khớp_disease'})
+MERGE (o1)-[r52:isSymptomOf]->(o2)
+SET r52.text = 'Một số yếu tố có thể làm tăng nguy cơ viêm màng hoạt dịch khớp gối như:  Thoái hóa khớp: Thoái hóa khớp khiến các bao hoạt dịch ở khớp hoạt động kém hơn, dễ gặp chấn thương và tình trạng viêm nhiễm màng hoạt dịch.'
+
+MERGE (o1:lifestyle {id: 'bóng_đá_lifestyle'})
+MERGE (o2:disease {id: 'viêm_bao_hoạt_dịch_khớp_gối_disease'})
+MERGE (o1)-[r53:aggravatedBy]->(o2)
+SET r53.text = 'Một số môn thể thao: Các môn chơi có tính đối kháng, gây ra chấn thương trực tiếp hoặc té ngã và tiếp đất bằng gối như bóng đá, đấu vật, bóng chuyền… cũng khiến người chơi dễ bị viêm màng hoạt dịch khớp gối.'
+
+MERGE (o1:lifestyle {id: 'đấu_vật_lifestyle'})
+MERGE (o2:disease {id: 'viêm_bao_hoạt_dịch_khớp_gối_disease'})
+MERGE (o1)-[r54:aggravatedBy]->(o2)
+SET r54.text = 'Một số môn thể thao: Các môn chơi có tính đối kháng, gây ra chấn thương trực tiếp hoặc té ngã và tiếp đất bằng gối như bóng đá, đấu vật, bóng chuyền… cũng khiến người chơi dễ bị viêm màng hoạt dịch khớp gối.'
+
+MERGE (o1:lifestyle {id: 'bóng_chuyền_lifestyle'})
+MERGE (o2:disease {id: 'viêm_bao_hoạt_dịch_khớp_gối_disease'})
+MERGE (o1)-[r55:aggravatedBy]->(o2)
+SET r55.text = 'Một số môn thể thao: Các môn chơi có tính đối kháng, gây ra chấn thương trực tiếp hoặc té ngã và tiếp đất bằng gối như bóng đá, đấu vật, bóng chuyền… cũng khiến người chơi dễ bị viêm màng hoạt dịch khớp gối.'
+
+MERGE (o1:treatment {id: 'nghỉ_ngơi_treatment'})
+MERGE (o2:disease {id: 'viêm_bao_hoạt_dịch_khớp_disease'})
+MERGE (o1)-[r56:treatedBy]->(o2)
+SET r56.text = 'Nếu nghỉ ngơi kết hợp những biện pháp chăm sóc tại nhà đúng cách, các triệu chứng viêm bao hoạt dịch khớp có thể biến mất sau vài tuần.'
+
+MERGE (o1:treatment {id: 'chăm_sóc_tại_nhà_treatment'})
+MERGE (o2:disease {id: 'viêm_bao_hoạt_dịch_khớp_disease'})
+MERGE (o1)-[r57:treatedBy]->(o2)
+SET r57.text = 'Nếu nghỉ ngơi kết hợp những biện pháp chăm sóc tại nhà đúng cách, các triệu chứng viêm bao hoạt dịch khớp có thể biến mất sau vài tuần.'
+
+MERGE (o1:symptom {id: 'các_triệu_chứng_kéo_dài_hơn_2_-_3_tuần_symptom'})
+MERGE (o2:disease {id: 'viêm_bao_hoạt_dịch_khớp_disease'})
+MERGE (o1)-[r58:isSymptomOf]->(o2)
+SET r58.text = 'Tuy nhiên, nếu các triệu chứng kéo dài hơn 2 - 3 tuần sau khi nghỉ ngơi và điều trị tại nhà, người bệnh nên đi khám càng sớm càng tốt để có biện pháp can thiệp kịp thời.'
+
+MERGE (o1:treatment {id: 'đi_khám_treatment'})
+MERGE (o2:disease {id: 'viêm_bao_hoạt_dịch_khớp_disease'})
+MERGE (o1)-[r59:treatedBy]->(o2)
+SET r59.text = 'Tuy nhiên, nếu các triệu chứng kéo dài hơn 2 - 3 tuần sau khi nghỉ ngơi và điều trị tại nhà, người bệnh nên đi khám càng sớm càng tốt để có biện pháp can thiệp kịp thời.'
+
+MERGE (o1:symptom {id: 'viêm_bao_hoạt_dịch_không_khỏi_symptom'})
+MERGE (o2:disease {id: 'viêm_bao_hoạt_dịch_mạn_tính_disease'})
+MERGE (o1)-[r60:isSymptomOf]->(o2)
+SET r60.text = 'Viêm bao hoạt dịch không khỏi hoặc tái phát nhiều lần được xem là tình trạng viêm mạn tính.'
+
+MERGE (o1:symptom {id: 'tái_phát_nhiều_lần_symptom'})
+MERGE (o2:disease {id: 'viêm_bao_hoạt_dịch_mạn_tính_disease'})
+MERGE (o1)-[r61:isSymptomOf]->(o2)
+SET r61.text = 'Viêm bao hoạt dịch không khỏi hoặc tái phát nhiều lần được xem là tình trạng viêm mạn tính.'
+
+MERGE (o1:disease {id: 'viêm_mạn_tính_disease'})
+MERGE (o2:disease {id: 'viêm_bao_hoạt_dịch_disease'})
+MERGE (o1)-[r62:relatedTo]->(o2)
+SET r62.text = 'Viêm bao hoạt dịch không khỏi hoặc tái phát nhiều lần được xem là tình trạng viêm mạn tính.'
+
+MERGE (o1:disease {id: 'viêm_bao_hoạt_dịch_khớp_gối_chuyển_sang_giai_đoạn_mạn_tính_disease'})
+MERGE (o2:treatment {id: 'điều_trị_khó_khăn_treatment'})
+MERGE (o1)-[r63:relatedTo]->(o2)
+SET r63.text = 'Khi viêm bao hoạt dịch khớp gối chuyển sang giai đoạn mạn tính, việc điều trị sẽ khó khăn hơn.'
+
+MERGE (o1:treatment {id: 'phát_hiện_sớm_treatment'})
+MERGE (o2:disease {id: 'viêm_bao_hoạt_dịch_khớp_gối_disease'})
+MERGE (o1)-[r64:treatedBy]->(o2)
+SET r64.text = 'Khi được phát hiện và điều trị sớm, bệnh không đáng lo ngại.'
+
+MERGE (o1:treatment {id: 'điều_trị_sớm_treatment'})
+MERGE (o2:disease {id: 'viêm_bao_hoạt_dịch_khớp_gối_disease'})
+MERGE (o1)-[r65:treatedBy]->(o2)
+SET r65.text = 'Khi được phát hiện và điều trị sớm, bệnh không đáng lo ngại.'
+
+MERGE (o1:treatment {id: 'trì_hoãn_chữa_trị_treatment'})
+MERGE (o2:disease {id: 'viêm_bao_hoạt_dịch_khớp_gối_disease'})
+MERGE (o1)-[r66:aggravatedBy]->(o2)
+SET r66.text = 'Tuy nhiên, nếu trì hoãn chữa trị, bao hoạt dịch bị viêm tăng sẽ làm giảm dịch nhầy bất thường, thay đổi tính chất của dịch khớp gối, từ đó tạo áp lực lên sụn, xương và các mô trong khớp, gây cản trở cử động khớp.'
+
+MERGE (o1:symptom {id: 'bao_hoạt_dịch_bị_viêm_tăng_symptom'})
+MERGE (o2:disease {id: 'viêm_bao_hoạt_dịch_khớp_gối_disease'})
+MERGE (o1)-[r67:isSymptomOf]->(o2)
+SET r67.text = 'Tuy nhiên, nếu trì hoãn chữa trị, bao hoạt dịch bị viêm tăng sẽ làm giảm dịch nhầy bất thường, thay đổi tính chất của dịch khớp gối, từ đó tạo áp lực lên sụn, xương và các mô trong khớp, gây cản trở cử động khớp.'
+
+MERGE (o1:symptom {id: 'giảm_dịch_nhầy_bất_thường_symptom'})
+MERGE (o2:disease {id: 'viêm_bao_hoạt_dịch_khớp_gối_disease'})
+MERGE (o1)-[r68:isSymptomOf]->(o2)
+SET r68.text = 'Tuy nhiên, nếu trì hoãn chữa trị, bao hoạt dịch bị viêm tăng sẽ làm giảm dịch nhầy bất thường, thay đổi tính chất của dịch khớp gối, từ đó tạo áp lực lên sụn, xương và các mô trong khớp, gây cản trở cử động khớp.'
+
+MERGE (o1:symptom {id: 'thay_đổi_tính_chất_của_dịch_khớp_gối_symptom'})
+MERGE (o2:disease {id: 'viêm_bao_hoạt_dịch_khớp_gối_disease'})
+MERGE (o1)-[r69:isSymptomOf]->(o2)
+SET r69.text = 'Tuy nhiên, nếu trì hoãn chữa trị, bao hoạt dịch bị viêm tăng sẽ làm giảm dịch nhầy bất thường, thay đổi tính chất của dịch khớp gối, từ đó tạo áp lực lên sụn, xương và các mô trong khớp, gây cản trở cử động khớp.'
+
+MERGE (o1:symptom {id: 'tạo_áp_lực_lên_sụn__xương_và_các_mô_trong_khớp_symptom'})
+MERGE (o2:disease {id: 'viêm_bao_hoạt_dịch_khớp_gối_disease'})
+MERGE (o1)-[r70:isSymptomOf]->(o2)
+SET r70.text = 'Tuy nhiên, nếu trì hoãn chữa trị, bao hoạt dịch bị viêm tăng sẽ làm giảm dịch nhầy bất thường, thay đổi tính chất của dịch khớp gối, từ đó tạo áp lực lên sụn, xương và các mô trong khớp, gây cản trở cử động khớp.'
+
+MERGE (o1:symptom {id: 'cản_trở_cử_động_khớp_symptom'})
+MERGE (o2:disease {id: 'viêm_bao_hoạt_dịch_khớp_gối_disease'})
+MERGE (o1)-[r71:isSymptomOf]->(o2)
+SET r71.text = 'Tuy nhiên, nếu trì hoãn chữa trị, bao hoạt dịch bị viêm tăng sẽ làm giảm dịch nhầy bất thường, thay đổi tính chất của dịch khớp gối, từ đó tạo áp lực lên sụn, xương và các mô trong khớp, gây cản trở cử động khớp.'
+
+MERGE (o1:symptom {id: 'biến_dạng_khớp_symptom'})
+MERGE (o2:disease {id: 'viêm_bao_hoạt_dịch_khớp_gối_disease'})
+MERGE (o1)-[r72:isSymptomOf]->(o2)
+SET r72.text = 'Một số trường hợp nghiêm trọng hơn có thể xuất hiện nhiều biến chứng nguy hiểm như:  Biến dạng khớp, dính khớp hay tràn dịch khớp.'
+
+MERGE (o1:symptom {id: 'dính_khớp_symptom'})
+MERGE (o2:disease {id: 'viêm_bao_hoạt_dịch_khớp_gối_disease'})
+MERGE (o1)-[r73:isSymptomOf]->(o2)
+SET r73.text = 'Một số trường hợp nghiêm trọng hơn có thể xuất hiện nhiều biến chứng nguy hiểm như:  Biến dạng khớp, dính khớp hay tràn dịch khớp.'
+
+MERGE (o1:symptom {id: 'tràn_dịch_khớp_symptom'})
+MERGE (o2:disease {id: 'viêm_bao_hoạt_dịch_khớp_gối_disease'})
+MERGE (o1)-[r74:isSymptomOf]->(o2)
+SET r74.text = 'Một số trường hợp nghiêm trọng hơn có thể xuất hiện nhiều biến chứng nguy hiểm như:  Biến dạng khớp, dính khớp hay tràn dịch khớp.'
+
+MERGE (o1:symptom {id: 'yếu_cơ_symptom'})
+MERGE (o2:disease {id: 'viêm_bao_hoạt_dịch_khớp_gối_disease'})
+MERGE (o1)-[r75:isSymptomOf]->(o2)
+SET r75.text = 'Yếu cơ, teo cơ dẫn tới suy giảm chức năng vận động, thậm chí là tàn phế.'
+
+MERGE (o1:symptom {id: 'teo_cơ_symptom'})
+MERGE (o2:disease {id: 'viêm_bao_hoạt_dịch_khớp_gối_disease'})
+MERGE (o1)-[r76:isSymptomOf]->(o2)
+SET r76.text = 'Yếu cơ, teo cơ dẫn tới suy giảm chức năng vận động, thậm chí là tàn phế.'
+
+MERGE (o1:symptom {id: 'suy_giảm_chức_năng_vận_động_symptom'})
+MERGE (o2:disease {id: 'viêm_bao_hoạt_dịch_khớp_gối_disease'})
+MERGE (o1)-[r77:isSymptomOf]->(o2)
+SET r77.text = 'Yếu cơ, teo cơ dẫn tới suy giảm chức năng vận động, thậm chí là tàn phế.'
+
+MERGE (o1:symptom {id: 'tàn_phế_symptom'})
+MERGE (o2:disease {id: 'viêm_bao_hoạt_dịch_khớp_gối_disease'})
+MERGE (o1)-[r78:isSymptomOf]->(o2)
+SET r78.text = 'Yếu cơ, teo cơ dẫn tới suy giảm chức năng vận động, thậm chí là tàn phế.'
+
+MERGE (o1:disease {id: 'thấp_khớp_cấp_disease'})
+MERGE (o2:disease {id: 'viêm_bao_hoạt_dịch_khớp_gối_disease'})
+MERGE (o1)-[r79:causedBy]->(o2)
+SET r79.text = 'Một số trường hợp viêm bao hoạt dịch khớp gối do thấp khớp cấp, có thể tổn thương van tim, gây ra nhiều bệnh mạn tính như bệnh tim mạch.'
+
+MERGE (o1:symptom {id: 'tổn_thương_van_tim_symptom'})
+MERGE (o2:disease {id: 'viêm_bao_hoạt_dịch_khớp_gối_disease'})
+MERGE (o1)-[r80:isSymptomOf]->(o2)
+SET r80.text = 'Một số trường hợp viêm bao hoạt dịch khớp gối do thấp khớp cấp, có thể tổn thương van tim, gây ra nhiều bệnh mạn tính như bệnh tim mạch.'
+
+MERGE (o1:disease {id: 'bệnh_tim_mạch_disease'})
+MERGE (o2:disease {id: 'viêm_bao_hoạt_dịch_khớp_gối_disease'})
+MERGE (o1)-[r81:relatedTo]->(o2)
+SET r81.text = 'Một số trường hợp viêm bao hoạt dịch khớp gối do thấp khớp cấp, có thể tổn thương van tim, gây ra nhiều bệnh mạn tính như bệnh tim mạch.'
+
+MERGE (o1:disease {id: 'thoát_vị_bao_hoạt_dịch_khớp_gối_(u_nang_bao_hoạt_dịch)_disease'})
+MERGE (o2:disease {id: 'viêm_bao_hoạt_dịch_khớp_gối_disease'})
+MERGE (o1)-[r82:relatedTo]->(o2)
+SET r82.text = 'Thoát vị bao hoạt dịch khớp gối (u nang bao hoạt dịch) tái phát nhiều lần, làm xuất hiện cơn đau mạn tính.'
+
+MERGE (o1:symptom {id: 'tái_phát_nhiều_lần_symptom'})
+MERGE (o2:disease {id: 'thoát_vị_bao_hoạt_dịch_khớp_gối_(u_nang_bao_hoạt_dịch)_disease'})
+MERGE (o1)-[r83:isSymptomOf]->(o2)
+SET r83.text = 'Thoát vị bao hoạt dịch khớp gối (u nang bao hoạt dịch) tái phát nhiều lần, làm xuất hiện cơn đau mạn tính.'
+
+MERGE (o1:symptom {id: 'cơn_đau_mạn_tính_symptom'})
+MERGE (o2:disease {id: 'thoát_vị_bao_hoạt_dịch_khớp_gối_(u_nang_bao_hoạt_dịch)_disease'})
+MERGE (o1)-[r84:isSymptomOf]->(o2)
+SET r84.text = 'Thoát vị bao hoạt dịch khớp gối (u nang bao hoạt dịch) tái phát nhiều lần, làm xuất hiện cơn đau mạn tính.'
+
+MERGE (o1:disease {id: 'viêm_bao_hoạt_dịch_khớp_gối_disease'})
+MERGE (o2:organ {id: 'khớp_gối_organ'})
+MERGE (o1)-[r85:locatedIn]->(o2)
+SET r85.text = 'Người bệnh thường bị viêm bao hoạt dịch khớp gối do các nguyên nhân như:  Khớp gối phải chịu áp lực thường xuyên, kéo dài. Vận động khớp gối quá mức. Chấn thương khớp gối. Nhiễm trùng bao hoạt dịch. Biến chứng từ bệnh viêm xương khớp (thoái hóa khớp), gout, viêm khớp dạng thấp.'
+
+MERGE (o1:organ {id: 'bao_hoạt_dịch_organ'})
+MERGE (o2:organ {id: 'khớp_organ'})
+MERGE (o1)-[r86:locatedIn]->(o2)
+SET r86.text = 'Một số yếu tố có thể làm tăng nguy cơ viêm màng hoạt dịch khớp gối như:  Thoái hóa khớp: Thoái hóa khớp khiến các bao hoạt dịch ở khớp hoạt động kém hơn, dễ gặp chấn thương và tình trạng viêm nhiễm màng hoạt dịch.'
+
+MERGE (o1:organ {id: 'dịch_khớp_gối_organ'})
+MERGE (o2:organ {id: 'khớp_gối_organ'})
+MERGE (o1)-[r87:locatedIn]->(o2)
+SET r87.text = 'Tuy nhiên, nếu trì hoãn chữa trị, bao hoạt dịch bị viêm tăng sẽ làm giảm dịch nhầy bất thường, thay đổi tính chất của dịch khớp gối, từ đó tạo áp lực lên sụn, xương và các mô trong khớp, gây cản trở cử động khớp.'
+
+MERGE (o1:organ {id: 'sụn_organ'})
+MERGE (o2:organ {id: 'khớp_organ'})
+MERGE (o1)-[r88:locatedIn]->(o2)
+SET r88.text = 'Tuy nhiên, nếu trì hoãn chữa trị, bao hoạt dịch bị viêm tăng sẽ làm giảm dịch nhầy bất thường, thay đổi tính chất của dịch khớp gối, từ đó tạo áp lực lên sụn, xương và các mô trong khớp, gây cản trở cử động khớp.'
+
+MERGE (o1:organ {id: 'xương_organ'})
+MERGE (o2:organ {id: 'khớp_organ'})
+MERGE (o1)-[r89:locatedIn]->(o2)
+SET r89.text = 'Tuy nhiên, nếu trì hoãn chữa trị, bao hoạt dịch bị viêm tăng sẽ làm giảm dịch nhầy bất thường, thay đổi tính chất của dịch khớp gối, từ đó tạo áp lực lên sụn, xương và các mô trong khớp, gây cản trở cử động khớp.'
+
+MERGE (o1:symptom {id: 'cơn_đau_symptom'})
+MERGE (o2:disease {id: 'viêm_bao_hoạt_dịch_disease'})
+MERGE (o1)-[r90:isSymptomOf]->(o2)
+SET r90.text = 'Bên cạnh thu thập thông tin tiền sử bệnh, bác sĩ sẽ khám thực thể người bệnh để đánh giá thời gian khởi phát, mức độ nghiêm trọng của các triệu chứng:  So sánh tình trạng hai đầu gối, đặc biệt là khi cơn đau chỉ xuất hiện một bên.'
+
+MERGE (o1:symptom {id: 'cơn_đau_symptom'})
+MERGE (o2:organ {id: 'đầu_gối_organ'})
+MERGE (o1)-[r91:locatedIn]->(o2)
+SET r91.text = 'Bên cạnh thu thập thông tin tiền sử bệnh, bác sĩ sẽ khám thực thể người bệnh để đánh giá thời gian khởi phát, mức độ nghiêm trọng của các triệu chứng:  So sánh tình trạng hai đầu gối, đặc biệt là khi cơn đau chỉ xuất hiện một bên.'
+
+MERGE (o1:symptom {id: 'sưng_symptom'})
+MERGE (o2:disease {id: 'viêm_bao_hoạt_dịch_disease'})
+MERGE (o1)-[r92:isSymptomOf]->(o2)
+SET r92.text = 'Ấn nhẹ vào khu vực quanh khớp gối để đánh giá tình trạng sưng, nóng và nguồn gốc cơn đau.'
+
+MERGE (o1:symptom {id: 'nóng_symptom'})
+MERGE (o2:disease {id: 'viêm_bao_hoạt_dịch_disease'})
+MERGE (o1)-[r93:isSymptomOf]->(o2)
+SET r93.text = 'Ấn nhẹ vào khu vực quanh khớp gối để đánh giá tình trạng sưng, nóng và nguồn gốc cơn đau.'
+
+MERGE (o1:symptom {id: 'cơn_đau_symptom'})
+MERGE (o2:organ {id: 'khớp_gối_organ'})
+MERGE (o1)-[r94:locatedIn]->(o2)
+SET r94.text = 'Ấn nhẹ vào khu vực quanh khớp gối để đánh giá tình trạng sưng, nóng và nguồn gốc cơn đau.'
+
+MERGE (o1:symptom {id: 'mẩn_đỏ_symptom'})
+MERGE (o2:disease {id: 'nhiễm_trùng_disease'})
+MERGE (o1)-[r95:isSymptomOf]->(o2)
+SET r95.text = 'Kiểm tra da ở khu vực ảnh hưởng để xác định liệu có triệu chứng mẩn đỏ hoặc nhiễm trùng không.'
+
+MERGE (o1:disease {id: 'nhiễm_trùng_disease'})
+MERGE (o2:organ {id: 'da_organ'})
+MERGE (o1)-[r96:affects]->(o2)
+SET r96.text = 'Kiểm tra da ở khu vực ảnh hưởng để xác định liệu có triệu chứng mẩn đỏ hoặc nhiễm trùng không.'
+
+MERGE (o1:symptom {id: 'cơn_đau_symptom'})
+MERGE (o2:lifestyle {id: 'gập_đầu_gối_lifestyle'})
+MERGE (o1)-[r97:aggravatedBy]->(o2)
+SET r97.text = 'Chuyển động nhẹ đầu gối của người bệnh để đánh giá phạm vi chuyển động, đồng thời xem thử cơn đau có xuất hiện không, mỗi khi đầu gối gập lại hoặc di chuyển quá mức.'
+
+MERGE (o1:symptom {id: 'cơn_đau_symptom'})
+MERGE (o2:lifestyle {id: 'di_chuyển_quá_mức_lifestyle'})
+MERGE (o1)-[r98:aggravatedBy]->(o2)
+SET r98.text = 'Chuyển động nhẹ đầu gối của người bệnh để đánh giá phạm vi chuyển động, đồng thời xem thử cơn đau có xuất hiện không, mỗi khi đầu gối gập lại hoặc di chuyển quá mức.'
+
+MERGE (o1:test {id: 'x-quang_test'})
+MERGE (o2:disease {id: 'viêm_khớp_disease'})
+MERGE (o1)-[r99:diagnosedBy]->(o2)
+SET r99.text = 'Để loại trừ các chấn thương có thể gây ra những triệu chứng tương tự như viêm bao hoạt dịch, bác sĩ có thể chỉ định người bệnh thực hiện một số chẩn đoán hình ảnh như:  X-quang: Kết quả X-quang giúp phát hiện vấn đề ở xương hoặc viêm khớp.'
+
+MERGE (o1:test {id: 'x-quang_test'})
+MERGE (o2:disease {id: 'vấn_đề_ở_xương_disease'})
+MERGE (o1)-[r100:diagnosedBy]->(o2)
+SET r100.text = 'Để loại trừ các chấn thương có thể gây ra những triệu chứng tương tự như viêm bao hoạt dịch, bác sĩ có thể chỉ định người bệnh thực hiện một số chẩn đoán hình ảnh như:  X-quang: Kết quả X-quang giúp phát hiện vấn đề ở xương hoặc viêm khớp.'
+
+MERGE (o1:test {id: 'mri_test'})
+MERGE (o2:disease {id: 'viêm_bao_hoạt_dịch_disease'})
+MERGE (o1)-[r101:diagnosedBy]->(o2)
+SET r101.text = 'MRI: Phương pháp này sử dụng sóng radio và từ trường mạnh tạo ra hình ảnh chi tiết về cấu trúc xương khớp. Qua đó, bác sĩ có thể quan sát được vị trí mô mềm như bao hoạt dịch.'
+
+MERGE (o1:test {id: 'mri_test'})
+MERGE (o2:organ {id: 'mô_mềm_organ'})
+MERGE (o1)-[r102:affects]->(o2)
+SET r102.text = 'MRI: Phương pháp này sử dụng sóng radio và từ trường mạnh tạo ra hình ảnh chi tiết về cấu trúc xương khớp. Qua đó, bác sĩ có thể quan sát được vị trí mô mềm như bao hoạt dịch.'
+
+MERGE (o1:test {id: 'siêu_âm_test'})
+MERGE (o2:disease {id: 'viêm_bao_hoạt_dịch_disease'})
+MERGE (o1)-[r103:diagnosedBy]->(o2)
+SET r103.text = 'Siêu âm: Phương pháp này giúp bác sĩ đánh giá rõ hơn về tình trạng sưng tấy ở vùng bao hoạt dịch bị viêm.'
+
+MERGE (o1:symptom {id: 'sưng_tấy_symptom'})
+MERGE (o2:disease {id: 'viêm_bao_hoạt_dịch_disease'})
+MERGE (o1)-[r104:isSymptomOf]->(o2)
+SET r104.text = 'Siêu âm: Phương pháp này giúp bác sĩ đánh giá rõ hơn về tình trạng sưng tấy ở vùng bao hoạt dịch bị viêm.'
+
+MERGE (o1:disease {id: 'viêm_bao_khớp_gối_disease'})
+MERGE (o2:disease {id: 'nhiễm_trùng_disease'})
+MERGE (o1)-[r105:relatedTo]->(o2)
+SET r105.text = 'Với trường hợp viêm bao khớp gối, nếu bác sĩ nghi ngờ bị nhiễm trùng hoặc mắc bệnh gout, có thể được tiến hành phân tích dịch khớp.'
+
+MERGE (o1:disease {id: 'viêm_bao_khớp_gối_disease'})
+MERGE (o2:disease {id: 'bệnh_gout_disease'})
+MERGE (o1)-[r106:relatedTo]->(o2)
+SET r106.text = 'Với trường hợp viêm bao khớp gối, nếu bác sĩ nghi ngờ bị nhiễm trùng hoặc mắc bệnh gout, có thể được tiến hành phân tích dịch khớp.'
+
+MERGE (o1:test {id: 'dịch_ở_bao_hoạt_dịch_test'})
+MERGE (o2:disease {id: 'viêm_bao_hoạt_dịch_disease'})
+MERGE (o1)-[r107:diagnosedBy]->(o2)
+SET r107.text = 'Người bệnh sẽ được lấy một ít dịch ở bao hoạt dịch để kiểm tra.'
+
+MERGE (o1:disease {id: 'viêm_bao_hoạt_dịch_đầu_gối_disease'})
+MERGE (o2:treatment {id: 'thời_gian_treatment'})
+MERGE (o1)-[r108:treatedBy]->(o2)
+SET r108.text = 'Viêm bao hoạt dịch đầu gối thường cải thiện theo thời gian.'
+
+MERGE (o1:treatment {id: 'điều_trị_treatment'})
+MERGE (o2:disease {id: 'viêm_bao_hoạt_dịch_disease'})
+MERGE (o1)-[r109:treatedBy]->(o2)
+SET r109.text = 'Vì thế, việc điều trị chủ yếu là để thuyên giảm triệu chứng.'
+
+MERGE (o1:treatment {id: 'điều_trị_treatment'})
+MERGE (o2:cause {id: 'nguyên_nhân_gây_viêm_cause'})
+MERGE (o1)-[r110:causedBy]->(o2)
+SET r110.text = 'Tuỳ vào nguyên nhân gây viêm và bao hoạt dịch nào ảnh hưởng, bác sĩ sẽ đưa ra hướng điều trị phù hợp.'
+
+MERGE (o1:treatment {id: 'kháng_sinh_treatment'})
+MERGE (o2:disease {id: 'nhiễm_trùng_disease'})
+MERGE (o1)-[r111:treatedBy]->(o2)
+SET r111.text = 'Nếu viêm do nhiễm trùng, bệnh nhân sẽ được dùng kháng sinh thích hợp.'
+
+MERGE (o1:treatment {id: 'thuốc_kháng_viêm_treatment'})
+MERGE (o2:disease {id: 'viêm_bao_hoạt_dịch_disease'})
+MERGE (o1)-[r112:treatedBy]->(o2)
+SET r112.text = 'Đối với một số trường hợp viêm bao hoạt dịch thông thường khác, có thể được sử dụng thuốc kháng viêm như NSAIDs (ví dụ ibuprofen hoặc naproxen,&#8230;)'
+
+MERGE (o1:treatment {id: 'vật_lý_trị_liệu_treatment'})
+MERGE (o2:disease {id: 'viêm_bao_hoạt_dịch_disease'})
+MERGE (o1)-[r113:treatedBy]->(o2)
+SET r113.text = 'Kỹ thuật viên vật lý trị liệu sẽ hướng dẫn người bệnh các bài tập để cải thiện sự linh hoạt và tăng cường sức mạnh cho khớp gối.'
+
+MERGE (o1:treatment {id: 'bài_tập_treatment'})
+MERGE (o2:disease {id: 'viêm_bao_hoạt_dịch_disease'})
+MERGE (o1)-[r114:treatedBy]->(o2)
+SET r114.text = 'Kỹ thuật viên vật lý trị liệu sẽ hướng dẫn người bệnh các bài tập để cải thiện sự linh hoạt và tăng cường sức mạnh cho khớp gối.'
+
+MERGE (o1:treatment {id: 'bài_tập_treatment'})
+MERGE (o2:symptom {id: 'cơn_đau_nhức_symptom'})
+MERGE (o1)-[r115:treatedBy]->(o2)
+SET r115.text = 'Liệu pháp này giúp cải thiện các cơn đau nhức, giảm nguy cơ tái phát những đợt viêm bao hoạt dịch khớp gối.'
+
+MERGE (o1:treatment {id: 'bài_tập_treatment'})
+MERGE (o2:disease {id: 'tái_phát_viêm_bao_hoạt_dịch_disease'})
+MERGE (o1)-[r116:preventedBy]->(o2)
+SET r116.text = 'Liệu pháp này giúp cải thiện các cơn đau nhức, giảm nguy cơ tái phát những đợt viêm bao hoạt dịch khớp gối.'
+
+MERGE (o1:treatment {id: 'băng_quấn_treatment'})
+MERGE (o2:symptom {id: 'sưng_tấy_symptom'})
+MERGE (o1)-[r117:treatedBy]->(o2)
+SET r117.text = 'Ngoài ra, việc dùng băng quấn bảo vệ đầu gối khi vận động cũng giúp kiểm soát tình trạng sưng tấy.'
+
+MERGE (o1:treatment {id: 'tiêm_corticosteroid_treatment'})
+MERGE (o2:disease {id: 'viêm_bao_hoạt_dịch_disease'})
+MERGE (o1)-[r118:treatedBy]->(o2)
+SET r118.text = 'Tiêm corticosteroid: Nếu tình trạng viêm ở bao hoạt dịch kéo dài và không đáp ứng với các phương pháp điều trị cơ bản, bác sĩ có thể chỉ định người bệnh tiêm corticosteroid vào vị trí bao hoạt dịch bị ảnh hưởng để cải thiện tình trạng viêm.'
+
+MERGE (o1:treatment {id: 'tiêm_corticosteroid_treatment'})
+MERGE (o2:organ {id: 'bao_hoạt_dịch_organ'})
+MERGE (o1)-[r119:affects]->(o2)
+SET r119.text = 'Tiêm corticosteroid: Nếu tình trạng viêm ở bao hoạt dịch kéo dài và không đáp ứng với các phương pháp điều trị cơ bản, bác sĩ có thể chỉ định người bệnh tiêm corticosteroid vào vị trí bao hoạt dịch bị ảnh hưởng để cải thiện tình trạng viêm.'
+
+MERGE (o1:treatment {id: 'tiêm_corticosteroid_treatment'})
+MERGE (o2:symptom {id: 'viêm_symptom'})
+MERGE (o1)-[r120:treatedBy]->(o2)
+SET r120.text = 'Sau tiêm, tình trạng viêm thường thuyên giảm nhanh chóng.'
+
+MERGE (o1:treatment {id: 'tiêm_corticosteroid_treatment'})
+MERGE (o2:symptom {id: 'đau_symptom'})
+MERGE (o1)-[r121:aggravatedBy]->(o2)
+SET r121.text = 'Tuy nhiên, người bệnh có thể bị đau và sưng do tiêm thuốc khoảng vài ngày.'
+
+MERGE (o1:treatment {id: 'tiêm_corticosteroid_treatment'})
+MERGE (o2:symptom {id: 'sưng_symptom'})
+MERGE (o1)-[r122:aggravatedBy]->(o2)
+SET r122.text = 'Tuy nhiên, người bệnh có thể bị đau và sưng do tiêm thuốc khoảng vài ngày.'
+
+MERGE (o1:treatment {id: 'chọc_hút_dịch_treatment'})
+MERGE (o2:disease {id: 'viêm_bao_hoạt_dịch_disease'})
+MERGE (o1)-[r123:treatedBy]->(o2)
+SET r123.text = 'Chọc hút dịch (aspiration): Bác sĩ sẽ dùng một chiếc kim nhỏ đưa vào bao hoạt dịch và hút bớt lượng dịch viêm.'
+
+MERGE (o1:treatment {id: 'chọc_hút_dịch_treatment'})
+MERGE (o2:organ {id: 'bao_hoạt_dịch_organ'})
+MERGE (o1)-[r124:affects]->(o2)
+SET r124.text = 'Chọc hút dịch (aspiration): Bác sĩ sẽ dùng một chiếc kim nhỏ đưa vào bao hoạt dịch và hút bớt lượng dịch viêm.'
+
+MERGE (o1:treatment {id: 'chọc_hút_dịch_treatment'})
+MERGE (o2:symptom {id: 'đau_symptom'})
+MERGE (o1)-[r125:aggravatedBy]->(o2)
+SET r125.text = 'Phương pháp này có thể gây đau và sưng trong thời gian ngắn.'
+
+MERGE (o1:treatment {id: 'chọc_hút_dịch_treatment'})
+MERGE (o2:symptom {id: 'sưng_symptom'})
+MERGE (o1)-[r126:aggravatedBy]->(o2)
+SET r126.text = 'Phương pháp này có thể gây đau và sưng trong thời gian ngắn.'
+
+MERGE (o1:treatment {id: 'băng_cố_định_đầu_gối_treatment'})
+MERGE (o2:symptom {id: 'sưng_symptom'})
+MERGE (o1)-[r127:treatedBy]->(o2)
+SET r127.text = 'Sau tiêm, người bệnh có thể cần mang băng cố định đầu gối để giảm sưng.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_treatment'})
+MERGE (o2:disease {id: 'viêm_bao_khớp_mạn_tính_disease'})
+MERGE (o1)-[r128:treatedBy]->(o2)
+SET r128.text = 'Phẫu thuật: Nếu viêm bao khớp mạn tính nặng hay tái phát nhiều lần và không đáp ứng với những phương pháp điều trị khác, bác sĩ có thể đề nghị người bệnh phẫu thuật để loại bỏ bao hoạt dịch.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_treatment'})
+MERGE (o2:organ {id: 'bao_hoạt_dịch_organ'})
+MERGE (o1)-[r129:affects]->(o2)
+SET r129.text = 'Phẫu thuật: Nếu viêm bao khớp mạn tính nặng hay tái phát nhiều lần và không đáp ứng với những phương pháp điều trị khác, bác sĩ có thể đề nghị người bệnh phẫu thuật để loại bỏ bao hoạt dịch.'
+
+MERGE (o1:lifestyle {id: 'giảm_hoạt_động_khớp_gối_lifestyle'})
+MERGE (o2:disease {id: 'viêm_bao_hoạt_dịch_disease'})
+MERGE (o1)-[r130:preventedBy]->(o2)
+SET r130.text = 'Để cải thiện triệu chứng do viêm bao hoạt dịch khớp gối, người bệnh cần:  Giảm hoạt động khớp gối: Tạm ngưng những hoạt động dẫn tới viêm bao hoạt dịch, hạn chế các chuyển động khiến cơn đau trở trầm trọng hơn.'
+
+MERGE (o1:lifestyle {id: 'giảm_hoạt_động_khớp_gối_lifestyle'})
+MERGE (o2:symptom {id: 'cơn_đau_symptom'})
+MERGE (o1)-[r131:aggravatedBy]->(o2)
+SET r131.text = 'Để cải thiện triệu chứng do viêm bao hoạt dịch khớp gối, người bệnh cần:  Giảm hoạt động khớp gối: Tạm ngưng những hoạt động dẫn tới viêm bao hoạt dịch, hạn chế các chuyển động khiến cơn đau trở trầm trọng hơn.'
+
+MERGE (o1:treatment {id: 'thuốc_giảm_đau_không_kê_đơn_treatment'})
+MERGE (o2:symptom {id: 'đau_nhức_symptom'})
+MERGE (o1)-[r132:treatedBy]->(o2)
+SET r132.text = 'Sử dụng thuốc giảm đau không kê đơn: Sử dụng ngắn hạn những thuốc giảm đau, kháng viêm như spirin, ibuprofen hay naproxen để cải thiện tình trạng đau nhức.'
+
+MERGE (o1:treatment {id: 'chườm_đá_treatment'})
+MERGE (o2:disease {id: 'viêm_bao_hoạt_dịch_disease'})
+MERGE (o1)-[r133:treatedBy]->(o2)
+SET r133.text = 'Chườm đá: Đặt vài viên đá vào một chiếc khăn hoặc túi chườm lạnh rồi chườm lên đầu gối khoảng 20 phút/lần và chườm vài lần trong ngày.'
+
+MERGE (o1:treatment {id: 'chườm_đá_treatment'})
+MERGE (o2:organ {id: 'đầu_gối_organ'})
+MERGE (o1)-[r134:affects]->(o2)
+SET r134.text = 'Chườm đá: Đặt vài viên đá vào một chiếc khăn hoặc túi chườm lạnh rồi chườm lên đầu gối khoảng 20 phút/lần và chườm vài lần trong ngày.'
+
+MERGE (o1:treatment {id: 'băng_thun_treatment'})
+MERGE (o2:symptom {id: 'sưng_symptom'})
+MERGE (o1)-[r135:treatedBy]->(o2)
+SET r135.text = 'Quấn băng thun: Dùng băng thun hay những phụ kiện bảo vệ đầu gối để giảm sưng.'
+
+MERGE (o1:lifestyle {id: 'nâng_cao_đầu_gối_lifestyle'})
+MERGE (o2:symptom {id: 'sưng_tấy_symptom'})
+MERGE (o1)-[r136:treatedBy]->(o2)
+SET r136.text = 'Nâng cao đầu gối: Lấy một chiếc gối kê dưới đầu gối để cải thiện tình trạng sưng tấy.'
+
+MERGE (o1:lifestyle {id: 'nâng_cao_đầu_gối_lifestyle'})
+MERGE (o2:organ {id: 'đầu_gối_organ'})
+MERGE (o1)-[r137:affects]->(o2)
+SET r137.text = 'Nâng cao đầu gối: Lấy một chiếc gối kê dưới đầu gối để cải thiện tình trạng sưng tấy.'
+
+MERGE (o1:lifestyle {id: 'tư_thế_đúng_lifestyle'})
+MERGE (o2:disease {id: 'viêm_bao_hoạt_dịch_disease'})
+MERGE (o1)-[r138:preventedBy]->(o2)
+SET r138.text = 'Để phòng ngừa tình trạng viêm bao hoạt dịch khớp gối, người bệnh nên chủ động bảo vệ sức khỏe xương khớp ngay từ sớm, ngăn ngừa các yếu tố gây viêm, cụ thể:  Thực hiện tư thế đúng trong sinh hoạt và lao động.'
+
+MERGE (o1:lifestyle {id: 'vận_động_quá_sức_lifestyle'})
+MERGE (o2:disease {id: 'viêm_bao_hoạt_dịch_disease'})
+MERGE (o1)-[r139:aggravatedBy]->(o2)
+SET r139.text = 'Tránh vận động quá sức, hạn chế các tư thế ngồi xổm, quỳ gối.'
+
+MERGE (o1:lifestyle {id: 'ngồi_xổm_lifestyle'})
+MERGE (o2:disease {id: 'viêm_bao_hoạt_dịch_disease'})
+MERGE (o1)-[r140:aggravatedBy]->(o2)
+SET r140.text = 'Tránh vận động quá sức, hạn chế các tư thế ngồi xổm, quỳ gối.'
+
+MERGE (o1:lifestyle {id: 'quỳ_gối_lifestyle'})
+MERGE (o2:disease {id: 'viêm_bao_hoạt_dịch_disease'})
+MERGE (o1)-[r141:aggravatedBy]->(o2)
+SET r141.text = 'Tránh vận động quá sức, hạn chế các tư thế ngồi xổm, quỳ gối.'
+
+MERGE (o1:lifestyle {id: 'khụy_gối_lifestyle'})
+MERGE (o2:disease {id: 'viêm_bao_hoạt_dịch_disease'})
+MERGE (o1)-[r142:aggravatedBy]->(o2)
+SET r142.text = 'Các động tác khụy gối thường xuyên hoặc lặp đi lặp lại có thể tạo áp lực lớn lên khớp gối.'
+
+MERGE (o1:lifestyle {id: 'khụy_gối_lifestyle'})
+MERGE (o2:organ {id: 'khớp_gối_organ'})
+MERGE (o1)-[r143:affects]->(o2)
+SET r143.text = 'Các động tác khụy gối thường xuyên hoặc lặp đi lặp lại có thể tạo áp lực lớn lên khớp gối.'
+
+MERGE (o1:lifestyle {id: 'quỳ_lifestyle'})
+MERGE (o2:disease {id: 'viêm_bao_hoạt_dịch_disease'})
+MERGE (o1)-[r144:aggravatedBy]->(o2)
+SET r144.text = 'Nếu phải quỳ trong thời gian dài nên thư giãn cho chân bằng cách duỗi thẳng, xoa bóp nhẹ nhàng.'
+
+MERGE (o1:treatment {id: 'vật_dụng_bảo_hộ_treatment'})
+MERGE (o2:disease {id: 'viêm_bao_hoạt_dịch_disease'})
+MERGE (o1)-[r145:preventedBy]->(o2)
+SET r145.text = 'Khi chơi các môn thể thao đối kháng, bạn nên dùng vật dụng bảo hộ chuyên dụng để bảo vệ khớp gối.'
+
+MERGE (o1:lifestyle {id: 'chế_độ_ăn_uống_khoa_học_lifestyle'})
+MERGE (o2:disease {id: 'viêm_bao_hoạt_dịch_disease'})
+MERGE (o1)-[r146:preventedBy]->(o2)
+SET r146.text = 'Chế độ ăn uống khoa học, đảm bảo bổ sung đủ dưỡng chất.'
+
+MERGE (o1:lifestyle {id: 'cân_nặng_hợp_lý_lifestyle'})
+MERGE (o2:disease {id: 'viêm_bao_hoạt_dịch_disease'})
+MERGE (o1)-[r147:preventedBy]->(o2)
+SET r147.text = 'Duy trì cân nặng hợp lý.'
+
+MERGE (o1:test {id: 'khám_tổng_quát_test'})
+MERGE (o2:disease {id: 'bệnh_xương_khớp_disease'})
+MERGE (o1)-[r148:diagnosedBy]->(o2)
+SET r148.text = 'Thường xuyên khám tổng quát (ít nhất 6 tháng/lần) để tầm soát các bệnh xương khớp.'
+
+MERGE (o1:organ {id: 'trung_tâm_chấn_thương_chỉnh_hình_organ'})
+MERGE (o2:organ {id: 'hệ_thống_bvđk_tâm_anh_organ'})
+MERGE (o1)-[r149:locatedIn]->(o2)
+SET r149.text = 'Trung tâm Chấn thương chỉnh hình, Hệ thống BVĐK Tâm Anh, là nơi quy tụ đội ngũ chuyên gia đầu ngành, bác sĩ ngoại khoa giàu kinh nghiệm, tận tâm, nhiệt tình như: TTND.GS.TS.BS Nguyễn Việt Tiến; PGS.TS.BS Đặng Hồng Hoa; TS.BS Tăng Hà Nam Anh; ThS.BS.CKII Trần Anh Vũ; BS.CKI Trần Xuân Anh, ThS.BS.CKI Lê Đình Khoa, TS.BS Đỗ Tiến Dũng; TS.BS.CKII Vũ Hữu Dũng…'
+
+MERGE (o1:treatment {id: 'chuyên_gia_đầu_ngành_treatment'})
+MERGE (o2:disease {id: 'viêm_bao_hoạt_dịch_disease'})
+MERGE (o1)-[r150:treatedBy]->(o2)
+SET r150.text = 'Trung tâm Chấn thương chỉnh hình, Hệ thống BVĐK Tâm Anh, là nơi quy tụ đội ngũ chuyên gia đầu ngành, bác sĩ ngoại khoa giàu kinh nghiệm, tận tâm, nhiệt tình như: TTND.GS.TS.BS Nguyễn Việt Tiến; PGS.TS.BS Đặng Hồng Hoa; TS.BS Tăng Hà Nam Anh; ThS.BS.CKII Trần Anh Vũ; BS.CKI Trần Xuân Anh, ThS.BS.CKI Lê Đình Khoa, TS.BS Đỗ Tiến Dũng; TS.BS.CKII Vũ Hữu Dũng…'
+
+MERGE (o1:treatment {id: 'bác_sĩ_ngoại_khoa_treatment'})
+MERGE (o2:disease {id: 'viêm_bao_hoạt_dịch_disease'})
+MERGE (o1)-[r151:treatedBy]->(o2)
+SET r151.text = 'Trung tâm Chấn thương chỉnh hình, Hệ thống BVĐK Tâm Anh, là nơi quy tụ đội ngũ chuyên gia đầu ngành, bác sĩ ngoại khoa giàu kinh nghiệm, tận tâm, nhiệt tình như: TTND.GS.TS.BS Nguyễn Việt Tiến; PGS.TS.BS Đặng Hồng Hoa; TS.BS Tăng Hà Nam Anh; ThS.BS.CKII Trần Anh Vũ; BS.CKI Trần Xuân Anh, ThS.BS.CKI Lê Đình Khoa, TS.BS Đỗ Tiến Dũng; TS.BS.CKII Vũ Hữu Dũng…'
+
+MERGE (o1:test {id: 'chẩn_đoán_test'})
+MERGE (o2:disease {id: 'bệnh_về_cơ_xương_khớp_disease'})
+MERGE (o1)-[r152:diagnosedBy]->(o2)
+SET r152.text = 'Đây cũng là một trong những đơn vị tiên phong trong việc chẩn đoán và điều trị các bệnh về cơ xương khớp với kỹ thuật hiện đại theo phác đồ cập nhật quốc tế.'
+
+MERGE (o1:treatment {id: 'điều_trị_treatment'})
+MERGE (o2:disease {id: 'bệnh_về_cơ_xương_khớp_disease'})
+MERGE (o1)-[r153:treatedBy]->(o2)
+SET r153.text = 'Đây cũng là một trong những đơn vị tiên phong trong việc chẩn đoán và điều trị các bệnh về cơ xương khớp với kỹ thuật hiện đại theo phác đồ cập nhật quốc tế.'
+
+MERGE (o1:test {id: 'máy_chụp_ct_test'})
+MERGE (o2:disease {id: 'tổn_thương_disease'})
+MERGE (o1)-[r154:diagnosedBy]->(o2)
+SET r154.text = 'Bệnh viện còn được trang bị hệ thống máy móc, trang thiết bị chẩn đoán hình ảnh hiện đại như: máy chụp CT 768 lát cắt Somatom Drive, máy cộng hưởng từ thế hệ mới Magnetom Amira BioMatrix, robot Artis Pheno, máy đo mật độ xương, máy siêu âm…; hệ thống kính vi phẫu thuật Opmi Vario 700 Zeiss, bàn mổ Meera-Maquet… để có thể phát hiện sớm các tổn thương và điều trị hiệu quả các bệnh lý về cơ xương khớp…'
+
+MERGE (o1:test {id: 'máy_cộng_hưởng_từ_test'})
+MERGE (o2:disease {id: 'tổn_thương_disease'})
+MERGE (o1)-[r155:diagnosedBy]->(o2)
+SET r155.text = 'Bệnh viện còn được trang bị hệ thống máy móc, trang thiết bị chẩn đoán hình ảnh hiện đại như: máy chụp CT 768 lát cắt Somatom Drive, máy cộng hưởng từ thế hệ mới Magnetom Amira BioMatrix, robot Artis Pheno, máy đo mật độ xương, máy siêu âm…; hệ thống kính vi phẫu thuật Opmi Vario 700 Zeiss, bàn mổ Meera-Maquet… để có thể phát hiện sớm các tổn thương và điều trị hiệu quả các bệnh lý về cơ xương khớp…'
+
+MERGE (o1:test {id: 'robot_artis_pheno_test'})
+MERGE (o2:disease {id: 'tổn_thương_disease'})
+MERGE (o1)-[r156:diagnosedBy]->(o2)
+SET r156.text = 'Bệnh viện còn được trang bị hệ thống máy móc, trang thiết bị chẩn đoán hình ảnh hiện đại như: máy chụp CT 768 lát cắt Somatom Drive, máy cộng hưởng từ thế hệ mới Magnetom Amira BioMatrix, robot Artis Pheno, máy đo mật độ xương, máy siêu âm…; hệ thống kính vi phẫu thuật Opmi Vario 700 Zeiss, bàn mổ Meera-Maquet… để có thể phát hiện sớm các tổn thương và điều trị hiệu quả các bệnh lý về cơ xương khớp…'
+
+MERGE (o1:test {id: 'máy_đo_mật_độ_xương_test'})
+MERGE (o2:disease {id: 'tổn_thương_disease'})
+MERGE (o1)-[r157:diagnosedBy]->(o2)
+SET r157.text = 'Bệnh viện còn được trang bị hệ thống máy móc, trang thiết bị chẩn đoán hình ảnh hiện đại như: máy chụp CT 768 lát cắt Somatom Drive, máy cộng hưởng từ thế hệ mới Magnetom Amira BioMatrix, robot Artis Pheno, máy đo mật độ xương, máy siêu âm…; hệ thống kính vi phẫu thuật Opmi Vario 700 Zeiss, bàn mổ Meera-Maquet… để có thể phát hiện sớm các tổn thương và điều trị hiệu quả các bệnh lý về cơ xương khớp…'
+
+MERGE (o1:test {id: 'máy_siêu_âm_test'})
+MERGE (o2:disease {id: 'tổn_thương_disease'})
+MERGE (o1)-[r158:diagnosedBy]->(o2)
+SET r158.text = 'Bệnh viện còn được trang bị hệ thống máy móc, trang thiết bị chẩn đoán hình ảnh hiện đại như: máy chụp CT 768 lát cắt Somatom Drive, máy cộng hưởng từ thế hệ mới Magnetom Amira BioMatrix, robot Artis Pheno, máy đo mật độ xương, máy siêu âm…; hệ thống kính vi phẫu thuật Opmi Vario 700 Zeiss, bàn mổ Meera-Maquet… để có thể phát hiện sớm các tổn thương và điều trị hiệu quả các bệnh lý về cơ xương khớp…'
+
+MERGE (o1:treatment {id: 'kính_vi_phẫu_thuật_treatment'})
+MERGE (o2:disease {id: 'tổn_thương_disease'})
+MERGE (o1)-[r159:treatedBy]->(o2)
+SET r159.text = 'Bệnh viện còn được trang bị hệ thống máy móc, trang thiết bị chẩn đoán hình ảnh hiện đại như: máy chụp CT 768 lát cắt Somatom Drive, máy cộng hưởng từ thế hệ mới Magnetom Amira BioMatrix, robot Artis Pheno, máy đo mật độ xương, máy siêu âm…; hệ thống kính vi phẫu thuật Opmi Vario 700 Zeiss, bàn mổ Meera-Maquet… để có thể phát hiện sớm các tổn thương và điều trị hiệu quả các bệnh lý về cơ xương khớp…'
+
+MERGE (o1:treatment {id: 'bàn_mổ_treatment'})
+MERGE (o2:disease {id: 'tổn_thương_disease'})
+MERGE (o1)-[r160:treatedBy]->(o2)
+SET r160.text = 'Bệnh viện còn được trang bị hệ thống máy móc, trang thiết bị chẩn đoán hình ảnh hiện đại như: máy chụp CT 768 lát cắt Somatom Drive, máy cộng hưởng từ thế hệ mới Magnetom Amira BioMatrix, robot Artis Pheno, máy đo mật độ xương, máy siêu âm…; hệ thống kính vi phẫu thuật Opmi Vario 700 Zeiss, bàn mổ Meera-Maquet… để có thể phát hiện sớm các tổn thương và điều trị hiệu quả các bệnh lý về cơ xương khớp…'
+
+MERGE (o1:organ {id: 'phòng_khám_organ'})
+MERGE (o2:organ {id: 'bvđk_tâm_anh_organ'})
+MERGE (o1)-[r161:locatedIn]->(o2)
+SET r161.text = 'BVĐK Tâm Anh còn sở hữu hệ thống phòng khám khang trang, khu nội trú cao cấp; khu vực phục hồi chức năng hiện đại; quy trình chăm sóc hậu phẫu toàn diện giúp bệnh nhân nhanh chóng hồi phục và ổn định sức khỏe sau phẫu thuật.'
+
+MERGE (o1:organ {id: 'khu_nội_trú_organ'})
+MERGE (o2:organ {id: 'bvđk_tâm_anh_organ'})
+MERGE (o1)-[r162:locatedIn]->(o2)
+SET r162.text = 'BVĐK Tâm Anh còn sở hữu hệ thống phòng khám khang trang, khu nội trú cao cấp; khu vực phục hồi chức năng hiện đại; quy trình chăm sóc hậu phẫu toàn diện giúp bệnh nhân nhanh chóng hồi phục và ổn định sức khỏe sau phẫu thuật.'
+
+MERGE (o1:treatment {id: 'khu_vực_phục_hồi_chức_năng_treatment'})
+MERGE (o2:disease {id: 'viêm_bao_hoạt_dịch_disease'})
+MERGE (o1)-[r163:treatedBy]->(o2)
+SET r163.text = 'BVĐK Tâm Anh còn sở hữu hệ thống phòng khám khang trang, khu nội trú cao cấp; khu vực phục hồi chức năng hiện đại; quy trình chăm sóc hậu phẫu toàn diện giúp bệnh nhân nhanh chóng hồi phục và ổn định sức khỏe sau phẫu thuật.'

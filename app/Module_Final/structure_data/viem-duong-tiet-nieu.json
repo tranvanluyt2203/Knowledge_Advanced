@@ -1,0 +1,762 @@
+[
+    {
+        "text": "Viêm đường tiết niệu là bệnh lý khá phổ biến và có thể điều trị khỏi hoàn toàn.",
+        "head": "Viêm đường tiết niệu",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "điều trị",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Tuy nhiên, nếu không phát hiện và điều trị kịp thời, tình trạng này có thể gây ra nhiều biến chứng nghiêm trọng, thậm chí là tử vong.",
+        "head": "Viêm đường tiết niệu",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "không phát hiện và điều trị kịp thời",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Viêm đường tiết niệu hay viêm đường tiểu là tình trạng xảy ra khi nước tiểu có sự xâm nhập của vi khuẩn khiến một số cơ quan trong hệ tiết niệu bị viêm nhiễm.",
+        "head": "Viêm đường tiết niệu",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "vi khuẩn",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Viêm đường tiết niệu hay viêm đường tiểu là tình trạng xảy ra khi nước tiểu có sự xâm nhập của vi khuẩn khiến một số cơ quan trong hệ tiết niệu bị viêm nhiễm.",
+        "head": "Viêm đường tiết niệu",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "hệ tiết niệu",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Phân loại theo vị trí: Viêm đường tiết niệu trên (viêm thận - bể thận cấp, viêm thận - bể thận mạn tính, áp xe thận, thận ứ mủ) và viêm đường tiết niệu dưới (viêm bàng quang, viêm niệu đạo, viêm tinh hoàn, viêm tiền liệt tuyến).",
+        "head": "Viêm đường tiết niệu trên",
+        "head_type": "disease",
+        "relation": "locatedIn",
+        "tail": "thận",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Phân loại theo vị trí: Viêm đường tiết niệu trên (viêm thận - bể thận cấp, viêm thận - bể thận mạn tính, áp xe thận, thận ứ mủ) và viêm đường tiết niệu dưới (viêm bàng quang, viêm niệu đạo, viêm tinh hoàn, viêm tiền liệt tuyến).",
+        "head": "Viêm đường tiết niệu trên",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "viêm thận - bể thận cấp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Phân loại theo vị trí: Viêm đường tiết niệu trên (viêm thận - bể thận cấp, viêm thận - bể thận mạn tính, áp xe thận, thận ứ mủ) và viêm đường tiết niệu dưới (viêm bàng quang, viêm niệu đạo, viêm tinh hoàn, viêm tiền liệt tuyến).",
+        "head": "Viêm đường tiết niệu trên",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "viêm thận - bể thận mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Phân loại theo vị trí: Viêm đường tiết niệu trên (viêm thận - bể thận cấp, viêm thận - bể thận mạn tính, áp xe thận, thận ứ mủ) và viêm đường tiết niệu dưới (viêm bàng quang, viêm niệu đạo, viêm tinh hoàn, viêm tiền liệt tuyến).",
+        "head": "Viêm đường tiết niệu trên",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "áp xe thận",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Phân loại theo vị trí: Viêm đường tiết niệu trên (viêm thận - bể thận cấp, viêm thận - bể thận mạn tính, áp xe thận, thận ứ mủ) và viêm đường tiết niệu dưới (viêm bàng quang, viêm niệu đạo, viêm tinh hoàn, viêm tiền liệt tuyến).",
+        "head": "Viêm đường tiết niệu trên",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "thận ứ mủ",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Phân loại theo vị trí: Viêm đường tiết niệu trên (viêm thận - bể thận cấp, viêm thận - bể thận mạn tính, áp xe thận, thận ứ mủ) và viêm đường tiết niệu dưới (viêm bàng quang, viêm niệu đạo, viêm tinh hoàn, viêm tiền liệt tuyến).",
+        "head": "Viêm đường tiết niệu dưới",
+        "head_type": "disease",
+        "relation": "locatedIn",
+        "tail": "bàng quang",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Phân loại theo vị trí: Viêm đường tiết niệu trên (viêm thận - bể thận cấp, viêm thận - bể thận mạn tính, áp xe thận, thận ứ mủ) và viêm đường tiết niệu dưới (viêm bàng quang, viêm niệu đạo, viêm tinh hoàn, viêm tiền liệt tuyến).",
+        "head": "Viêm đường tiết niệu dưới",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "viêm bàng quang",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Phân loại theo vị trí: Viêm đường tiết niệu trên (viêm thận - bể thận cấp, viêm thận - bể thận mạn tính, áp xe thận, thận ứ mủ) và viêm đường tiết niệu dưới (viêm bàng quang, viêm niệu đạo, viêm tinh hoàn, viêm tiền liệt tuyến).",
+        "head": "Viêm đường tiết niệu dưới",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "viêm niệu đạo",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Phân loại theo vị trí: Viêm đường tiết niệu trên (viêm thận - bể thận cấp, viêm thận - bể thận mạn tính, áp xe thận, thận ứ mủ) và viêm đường tiết niệu dưới (viêm bàng quang, viêm niệu đạo, viêm tinh hoàn, viêm tiền liệt tuyến).",
+        "head": "Viêm đường tiết niệu dưới",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "viêm tinh hoàn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Phân loại theo vị trí: Viêm đường tiết niệu trên (viêm thận - bể thận cấp, viêm thận - bể thận mạn tính, áp xe thận, thận ứ mủ) và viêm đường tiết niệu dưới (viêm bàng quang, viêm niệu đạo, viêm tinh hoàn, viêm tiền liệt tuyến).",
+        "head": "Viêm đường tiết niệu dưới",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "viêm tiền liệt tuyến",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Phân loại theo diễn biến: Nhiễm khuẩn niệu đơn giản và nhiễm khuẩn niệu phức tạp.",
+        "head": "Nhiễm khuẩn niệu đơn giản",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "Nhiễm khuẩn niệu phức tạp",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nhiễm khuẩn niệu phức tạp thường gặp ở những người có bất thường về hệ tiết niệu gây tắc nghẽn đường tiết niệu như bàng quang thần kinh, sỏi tiết niệu, phì đại tuyến tiền liệt, phụ nữ mang thai, đặt Catheter đường tiết niệu.",
+        "head": "Nhiễm khuẩn niệu phức tạp",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "bất thường về hệ tiết niệu",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Nhiễm khuẩn niệu phức tạp thường gặp ở những người có bất thường về hệ tiết niệu gây tắc nghẽn đường tiết niệu như bàng quang thần kinh, sỏi tiết niệu, phì đại tuyến tiền liệt, phụ nữ mang thai, đặt Catheter đường tiết niệu.",
+        "head": "Nhiễm khuẩn niệu phức tạp",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "bàng quang thần kinh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nhiễm khuẩn niệu phức tạp thường gặp ở những người có bất thường về hệ tiết niệu gây tắc nghẽn đường tiết niệu như bàng quang thần kinh, sỏi tiết niệu, phì đại tuyến tiền liệt, phụ nữ mang thai, đặt Catheter đường tiết niệu.",
+        "head": "Nhiễm khuẩn niệu phức tạp",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "sỏi tiết niệu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nhiễm khuẩn niệu phức tạp thường gặp ở những người có bất thường về hệ tiết niệu gây tắc nghẽn đường tiết niệu như bàng quang thần kinh, sỏi tiết niệu, phì đại tuyến tiền liệt, phụ nữ mang thai, đặt Catheter đường tiết niệu.",
+        "head": "Nhiễm khuẩn niệu phức tạp",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "phì đại tuyến tiền liệt",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nhiễm khuẩn niệu phức tạp thường gặp ở những người có bất thường về hệ tiết niệu gây tắc nghẽn đường tiết niệu như bàng quang thần kinh, sỏi tiết niệu, phì đại tuyến tiền liệt, phụ nữ mang thai, đặt Catheter đường tiết niệu.",
+        "head": "Nhiễm khuẩn niệu phức tạp",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "phụ nữ mang thai",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Nhiễm khuẩn niệu phức tạp thường gặp ở những người có bất thường về hệ tiết niệu gây tắc nghẽn đường tiết niệu như bàng quang thần kinh, sỏi tiết niệu, phì đại tuyến tiền liệt, phụ nữ mang thai, đặt Catheter đường tiết niệu.",
+        "head": "Nhiễm khuẩn niệu phức tạp",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "đặt Catheter đường tiết niệu",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Khoảng 95% nguyên nhân gây viêm đường tiết niệu là do vi khuẩn bội nhiễm ngược dòng niệu đạo vào bàng quang (5% từ đường máu), trong đó Escherichia coli (E.coli) chiếm 80% tác nhân gây bệnh.",
+        "head": "Viêm đường tiết niệu",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "vi khuẩn",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Khoảng 95% nguyên nhân gây viêm đường tiết niệu là do vi khuẩn bội nhiễm ngược dòng niệu đạo vào bàng quang (5% từ đường máu), trong đó Escherichia coli (E.coli) chiếm 80% tác nhân gây bệnh.",
+        "head": "Viêm đường tiết niệu",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Escherichia coli (E.coli)",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Escherichia Coli là vi khuẩn thường trú ở đường ruột, chúng cũng xuất hiện nhiều ở trên da gần hậu môn và có khả năng thâm nhập vào đường tiết niệu nếu bạn không biết vệ sinh đúng cách.",
+        "head": "Escherichia Coli",
+        "head_type": "cause",
+        "relation": "locatedIn",
+        "tail": "đường ruột",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Escherichia Coli là vi khuẩn thường trú ở đường ruột, chúng cũng xuất hiện nhiều ở trên da gần hậu môn và có khả năng thâm nhập vào đường tiết niệu nếu bạn không biết vệ sinh đúng cách.",
+        "head": "Escherichia Coli",
+        "head_type": "cause",
+        "relation": "locatedIn",
+        "tail": "da gần hậu môn",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Escherichia Coli là vi khuẩn thường trú ở đường ruột, chúng cũng xuất hiện nhiều ở trên da gần hậu môn và có khả năng thâm nhập vào đường tiết niệu nếu bạn không biết vệ sinh đúng cách.",
+        "head": "Escherichia Coli",
+        "head_type": "cause",
+        "relation": "affects",
+        "tail": "đường tiết niệu",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Vị trí đường tiểu và hậu môn của nữ gần hơn nam nên nguy cơ bị viêm nhiễm cũng sẽ cao hơn.",
+        "head": "Viêm nhiễm",
+        "head_type": "disease",
+        "relation": "aggravatedBy",
+        "tail": "vị trí đường tiểu và hậu môn của nữ gần hơn nam",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Bị viêm quy đầu, da quy đầu do vệ sinh không đúng cách",
+        "head": "Viêm quy đầu",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "vệ sinh không đúng cách",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Bị viêm quy đầu, da quy đầu do vệ sinh không đúng cách",
+        "head": "Viêm da quy đầu",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "vệ sinh không đúng cách",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Chấn thương dương vật do quan hệ tình dục thô bạo, gây kích thích niệu đạo dẫn tới tình trạng viêm niệu đạo.",
+        "head": "Chấn thương dương vật",
+        "head_type": "cause",
+        "relation": "causes",
+        "tail": "viêm niệu đạo",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Chấn thương dương vật do quan hệ tình dục thô bạo, gây kích thích niệu đạo dẫn tới tình trạng viêm niệu đạo.",
+        "head": "quan hệ tình dục thô bạo",
+        "head_type": "lifestyle",
+        "relation": "causes",
+        "tail": "viêm niệu đạo",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Chấn thương dương vật do quan hệ tình dục thô bạo, gây kích thích niệu đạo dẫn tới tình trạng viêm niệu đạo.",
+        "head": "kích thích niệu đạo",
+        "head_type": "cause",
+        "relation": "causes",
+        "tail": "viêm niệu đạo",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các yếu tố làm tăng nguy cơ mắc bệnh: sỏi, phì đại tuyến tiền liệt, bàng quang thần kinh, hẹp niệu quản, hẹp niệu đạo…",
+        "head": "sỏi",
+        "head_type": "cause",
+        "relation": "causes",
+        "tail": "Viêm đường tiết niệu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các yếu tố làm tăng nguy cơ mắc bệnh: sỏi, phì đại tuyến tiền liệt, bàng quang thần kinh, hẹp niệu quản, hẹp niệu đạo…",
+        "head": "phì đại tuyến tiền liệt",
+        "head_type": "disease",
+        "relation": "causes",
+        "tail": "Viêm đường tiết niệu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các yếu tố làm tăng nguy cơ mắc bệnh: sỏi, phì đại tuyến tiền liệt, bàng quang thần kinh, hẹp niệu quản, hẹp niệu đạo…",
+        "head": "bàng quang thần kinh",
+        "head_type": "disease",
+        "relation": "causes",
+        "tail": "Viêm đường tiết niệu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các yếu tố làm tăng nguy cơ mắc bệnh: sỏi, phì đại tuyến tiền liệt, bàng quang thần kinh, hẹp niệu quản, hẹp niệu đạo…",
+        "head": "hẹp niệu quản",
+        "head_type": "disease",
+        "relation": "causes",
+        "tail": "Viêm đường tiết niệu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các yếu tố làm tăng nguy cơ mắc bệnh: sỏi, phì đại tuyến tiền liệt, bàng quang thần kinh, hẹp niệu quản, hẹp niệu đạo…",
+        "head": "hẹp niệu đạo",
+        "head_type": "disease",
+        "relation": "causes",
+        "tail": "Viêm đường tiết niệu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Thói quen vệ sinh vùng kín từ sau ra trước, nhịn tiểu quá lâu, vệ sinh cá nhân không sạch sẽ… sẽ tạo điều kiện cho vi khuẩn xâm nhập phát triển và gây viêm nhiễm đường tiết niệu.",
+        "head": "Vệ sinh vùng kín từ sau ra trước",
+        "head_type": "lifestyle",
+        "relation": "causes",
+        "tail": "Viêm đường tiết niệu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Thói quen vệ sinh vùng kín từ sau ra trước, nhịn tiểu quá lâu, vệ sinh cá nhân không sạch sẽ… sẽ tạo điều kiện cho vi khuẩn xâm nhập phát triển và gây viêm nhiễm đường tiết niệu.",
+        "head": "nhịn tiểu quá lâu",
+        "head_type": "lifestyle",
+        "relation": "causes",
+        "tail": "Viêm đường tiết niệu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Thói quen vệ sinh vùng kín từ sau ra trước, nhịn tiểu quá lâu, vệ sinh cá nhân không sạch sẽ… sẽ tạo điều kiện cho vi khuẩn xâm nhập phát triển và gây viêm nhiễm đường tiết niệu.",
+        "head": "vệ sinh cá nhân không sạch sẽ",
+        "head_type": "lifestyle",
+        "relation": "causes",
+        "tail": "Viêm đường tiết niệu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Quan hệ tình dục không lành mạnh, không vệ sinh vùng kín trước và sau khi giao hợp.",
+        "head": "Quan hệ tình dục không lành mạnh",
+        "head_type": "lifestyle",
+        "relation": "causes",
+        "tail": "Viêm đường tiết niệu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Quan hệ tình dục không lành mạnh, không vệ sinh vùng kín trước và sau khi giao hợp.",
+        "head": "không vệ sinh vùng kín trước và sau khi giao hợp",
+        "head_type": "lifestyle",
+        "relation": "causes",
+        "tail": "Viêm đường tiết niệu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Phụ nữ trong kỳ kinh nguyệt sử dụng băng vệ sinh kém chất lượng hoặc không thay băng vệ sinh sau mỗi 3 - 4 tiếng.",
+        "head": "băng vệ sinh kém chất lượng",
+        "head_type": "cause",
+        "relation": "causes",
+        "tail": "Viêm đường tiết niệu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Phụ nữ trong kỳ kinh nguyệt sử dụng băng vệ sinh kém chất lượng hoặc không thay băng vệ sinh sau mỗi 3 - 4 tiếng.",
+        "head": "không thay băng vệ sinh sau mỗi 3 - 4 tiếng",
+        "head_type": "lifestyle",
+        "relation": "causes",
+        "tail": "Viêm đường tiết niệu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Một số yếu tố nguy cơ: sỏi đường tiết niệu, bàng quang thần kinh, hẹp niệu quản, có thai.",
+        "head": "sỏi đường tiết niệu",
+        "head_type": "disease",
+        "relation": "causes",
+        "tail": "Viêm đường tiết niệu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Một số yếu tố nguy cơ: sỏi đường tiết niệu, bàng quang thần kinh, hẹp niệu quản, có thai.",
+        "head": "bàng quang thần kinh",
+        "head_type": "disease",
+        "relation": "causes",
+        "tail": "Viêm đường tiết niệu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Một số yếu tố nguy cơ: sỏi đường tiết niệu, bàng quang thần kinh, hẹp niệu quản, có thai.",
+        "head": "hẹp niệu quản",
+        "head_type": "disease",
+        "relation": "causes",
+        "tail": "Viêm đường tiết niệu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Một số yếu tố nguy cơ: sỏi đường tiết niệu, bàng quang thần kinh, hẹp niệu quản, có thai.",
+        "head": "có thai",
+        "head_type": "lifestyle",
+        "relation": "causes",
+        "tail": "Viêm đường tiết niệu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Viêm tiết niệu khi mang thai là một trong những tình trạng thường gặp nhất ở thai phụ.",
+        "head": "Viêm tiết niệu khi mang thai",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "thai phụ",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Bệnh làm tăng nguy cơ mắc các biến chứng nguy hiểm cho cả và bé như viêm bể thận, sảy thai, sinh non, nhiễm khuẩn sơ sinh,&#8230;",
+        "head": "Viêm tiết niệu khi mang thai",
+        "head_type": "disease",
+        "relation": "causes",
+        "tail": "viêm bể thận",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bệnh làm tăng nguy cơ mắc các biến chứng nguy hiểm cho cả và bé như viêm bể thận, sảy thai, sinh non, nhiễm khuẩn sơ sinh,&#8230;",
+        "head": "Viêm tiết niệu khi mang thai",
+        "head_type": "disease",
+        "relation": "causes",
+        "tail": "sảy thai",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bệnh làm tăng nguy cơ mắc các biến chứng nguy hiểm cho cả và bé như viêm bể thận, sảy thai, sinh non, nhiễm khuẩn sơ sinh,&#8230;",
+        "head": "Viêm tiết niệu khi mang thai",
+        "head_type": "disease",
+        "relation": "causes",
+        "tail": "sinh non",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Viêm tiết niệu đơn giản, xảy ra ở phụ nữ trẻ và không có bất thường về đường tiết niệu thì đa phần không gây biến chứng.",
+        "head": "Viêm tiết niệu đơn giản",
+        "head_type": "disease",
+        "relation": "associatedWith",
+        "tail": "Phụ nữ trẻ",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Viêm tiết niệu đơn giản, xảy ra ở phụ nữ trẻ và không có bất thường về đường tiết niệu thì đa phần không gây biến chứng.",
+        "head": "Viêm tiết niệu đơn giản",
+        "head_type": "disease",
+        "relation": "associatedWith",
+        "tail": "Không có bất thường về đường tiết niệu",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Viêm tiết niệu đơn giản, xảy ra ở phụ nữ trẻ và không có bất thường về đường tiết niệu thì đa phần không gây biến chứng.",
+        "head": "Viêm tiết niệu đơn giản",
+        "head_type": "disease",
+        "relation": "associatedWith",
+        "tail": "Không gây biến chứng",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Ngược lại, nhiễm trùng tiết niệu phức tạp ở những người bệnh có sẵn các yếu tố thuận lợi trước đó có thể dẫn tới nhiều biến chứng nặng, thậm chí là gây nguy hiểm đến tính mạng nếu không được can thiệp điều trị kịp thời.",
+        "head": "Nhiễm trùng tiết niệu phức tạp",
+        "head_type": "disease",
+        "relation": "associatedWith",
+        "tail": "Có sẵn các yếu tố thuận lợi",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Ngược lại, nhiễm trùng tiết niệu phức tạp ở những người bệnh có sẵn các yếu tố thuận lợi trước đó có thể dẫn tới nhiều biến chứng nặng, thậm chí là gây nguy hiểm đến tính mạng nếu không được can thiệp điều trị kịp thời.",
+        "head": "Nhiễm trùng tiết niệu phức tạp",
+        "head_type": "disease",
+        "relation": "associatedWith",
+        "tail": "Biến chứng nặng",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Ngược lại, nhiễm trùng tiết niệu phức tạp ở những người bệnh có sẵn các yếu tố thuận lợi trước đó có thể dẫn tới nhiều biến chứng nặng, thậm chí là gây nguy hiểm đến tính mạng nếu không được can thiệp điều trị kịp thời.",
+        "head": "Nhiễm trùng tiết niệu phức tạp",
+        "head_type": "disease",
+        "relation": "associatedWith",
+        "tail": "Nguy hiểm đến tính mạng",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Nguy cơ và biến chứng của nhiễm trùng niệu rất nhiều như là độc lực vi khuẩn gây phá hủy chủ mô thận, hoại tử nhú thận, gây tắc nghẽn hay suy giảm chức năng của thận.",
+        "head": "Nhiễm trùng niệu",
+        "head_type": "disease",
+        "relation": "associatedWith",
+        "tail": "Độc lực vi khuẩn gây phá hủy chủ mô thận",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Nguy cơ và biến chứng của nhiễm trùng niệu rất nhiều như là độc lực vi khuẩn gây phá hủy chủ mô thận, hoại tử nhú thận, gây tắc nghẽn hay suy giảm chức năng của thận.",
+        "head": "Nhiễm trùng niệu",
+        "head_type": "disease",
+        "relation": "associatedWith",
+        "tail": "Hoại tử nhú thận",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Nguy cơ và biến chứng của nhiễm trùng niệu rất nhiều như là độc lực vi khuẩn gây phá hủy chủ mô thận, hoại tử nhú thận, gây tắc nghẽn hay suy giảm chức năng của thận.",
+        "head": "Nhiễm trùng niệu",
+        "head_type": "disease",
+        "relation": "associatedWith",
+        "tail": "Tắc nghẽn",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Nguy cơ và biến chứng của nhiễm trùng niệu rất nhiều như là độc lực vi khuẩn gây phá hủy chủ mô thận, hoại tử nhú thận, gây tắc nghẽn hay suy giảm chức năng của thận.",
+        "head": "Nhiễm trùng niệu",
+        "head_type": "disease",
+        "relation": "associatedWith",
+        "tail": "Suy giảm chức năng của thận",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Tình trạng này nếu để lâu dài có thể dẫn tới suy thận vĩnh viễn hoặc phải cắt bỏ thận.",
+        "head": "Suy thận vĩnh viễn",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Nhiễm trùng niệu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tình trạng này nếu để lâu dài có thể dẫn tới suy thận vĩnh viễn hoặc phải cắt bỏ thận.",
+        "head": "Cắt bỏ thận",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Nhiễm trùng niệu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nhiễm trùng hệ tiết niệu ở nam giới có thể gây áp-xe tuyến tiền liệt, viêm tinh hoàn, viêm mào tinh, làm bít tắc ống dẫn tinh, tăng nguy cơ vô sinh.",
+        "head": "Nhiễm trùng hệ tiết niệu",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Tuyến tiền liệt",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Nhiễm trùng hệ tiết niệu ở nam giới có thể gây áp-xe tuyến tiền liệt, viêm tinh hoàn, viêm mào tinh, làm bít tắc ống dẫn tinh, tăng nguy cơ vô sinh.",
+        "head": "Nhiễm trùng hệ tiết niệu",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Tinh hoàn",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Nhiễm trùng hệ tiết niệu ở nam giới có thể gây áp-xe tuyến tiền liệt, viêm tinh hoàn, viêm mào tinh, làm bít tắc ống dẫn tinh, tăng nguy cơ vô sinh.",
+        "head": "Nhiễm trùng hệ tiết niệu",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Mào tinh",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Nhiễm trùng hệ tiết niệu ở nam giới có thể gây áp-xe tuyến tiền liệt, viêm tinh hoàn, viêm mào tinh, làm bít tắc ống dẫn tinh, tăng nguy cơ vô sinh.",
+        "head": "Nhiễm trùng hệ tiết niệu",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Ống dẫn tinh",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Nhiễm trùng hệ tiết niệu ở nam giới có thể gây áp-xe tuyến tiền liệt, viêm tinh hoàn, viêm mào tinh, làm bít tắc ống dẫn tinh, tăng nguy cơ vô sinh.",
+        "head": "Nhiễm trùng hệ tiết niệu",
+        "head_type": "disease",
+        "relation": "associatedWith",
+        "tail": "Vô sinh",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Nếu sự hiện diện dai dẳng của vi khuẩn tại hệ niệu không được điều trị kịp thời và đủ liều kháng sinh, vi khuẩn sẽ dễ dàng di chuyển vào máu, gây nhiễm khuẩn huyết, sốc nhiễm khuẩn, tử vong.",
+        "head": "Nhiễm khuẩn huyết",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Vi khuẩn",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Nếu sự hiện diện dai dẳng của vi khuẩn tại hệ niệu không được điều trị kịp thời và đủ liều kháng sinh, vi khuẩn sẽ dễ dàng di chuyển vào máu, gây nhiễm khuẩn huyết, sốc nhiễm khuẩn, tử vong.",
+        "head": "Sốc nhiễm khuẩn",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Vi khuẩn",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Nếu sự hiện diện dai dẳng của vi khuẩn tại hệ niệu không được điều trị kịp thời và đủ liều kháng sinh, vi khuẩn sẽ dễ dàng di chuyển vào máu, gây nhiễm khuẩn huyết, sốc nhiễm khuẩn, tử vong.",
+        "head": "Tử vong",
+        "head_type": "symptom",
+        "relation": "causedBy",
+        "tail": "Vi khuẩn",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Kháng sinh là cách điều trị viêm đường tiết niệu thường được sử dụng nhất (3).",
+        "head": "Kháng sinh",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Viêm đường tiết niệu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu người bệnh chỉ xuất hiện những triệu chứng khu trú ở đường tiết niệu dưới do viêm bàng quang, viêm niệu đạo, bác sĩ sẽ chỉ định kháng sinh đường uống trong 5 - 7 ngày.",
+        "head": "Viêm bàng quang",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "Kháng sinh đường uống",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Nếu người bệnh chỉ xuất hiện những triệu chứng khu trú ở đường tiết niệu dưới do viêm bàng quang, viêm niệu đạo, bác sĩ sẽ chỉ định kháng sinh đường uống trong 5 - 7 ngày.",
+        "head": "Viêm niệu đạo",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "Kháng sinh đường uống",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Nếu có triệu chứng sốt và ớn lạnh, nhiễm trùng huyết, ổ viêm tại đường niệu trên, người bệnh cần nhập viện để sử dụng kháng đường tĩnh mạch.",
+        "head": "Sốt",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Nhiễm trùng huyết",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu có triệu chứng sốt và ớn lạnh, nhiễm trùng huyết, ổ viêm tại đường niệu trên, người bệnh cần nhập viện để sử dụng kháng đường tĩnh mạch.",
+        "head": "Ớn lạnh",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Nhiễm trùng huyết",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu có triệu chứng sốt và ớn lạnh, nhiễm trùng huyết, ổ viêm tại đường niệu trên, người bệnh cần nhập viện để sử dụng kháng đường tĩnh mạch.",
+        "head": "Nhiễm trùng huyết",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "Kháng đường tĩnh mạch",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Nếu có triệu chứng sốt và ớn lạnh, nhiễm trùng huyết, ổ viêm tại đường niệu trên, người bệnh cần nhập viện để sử dụng kháng đường tĩnh mạch.",
+        "head": "Ổ viêm tại đường niệu trên",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Nhiễm trùng huyết",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Trong trường hợp bệnh tái đi tái lại nhiều lần, người bệnh có dị dạng đường niệu hoặc đang đặt ống tiểu, bác sĩ sẽ nuôi cấy vi khuẩn để tìm đúng kháng sinh nhạy cảm với chủng vi khuẩn đó.",
+        "head": "Bệnh tái đi tái lại nhiều lần",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Dị dạng đường niệu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Trong trường hợp bệnh tái đi tái lại nhiều lần, người bệnh có dị dạng đường niệu hoặc đang đặt ống tiểu, bác sĩ sẽ nuôi cấy vi khuẩn để tìm đúng kháng sinh nhạy cảm với chủng vi khuẩn đó.",
+        "head": "Bệnh tái đi tái lại nhiều lần",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Đặt ống tiểu",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Trong trường hợp bệnh tái đi tái lại nhiều lần, người bệnh có dị dạng đường niệu hoặc đang đặt ống tiểu, bác sĩ sẽ nuôi cấy vi khuẩn để tìm đúng kháng sinh nhạy cảm với chủng vi khuẩn đó.",
+        "head": "Nuôi cấy vi khuẩn",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "Dị dạng đường niệu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Trong trường hợp bệnh tái đi tái lại nhiều lần, người bệnh có dị dạng đường niệu hoặc đang đặt ống tiểu, bác sĩ sẽ nuôi cấy vi khuẩn để tìm đúng kháng sinh nhạy cảm với chủng vi khuẩn đó.",
+        "head": "Nuôi cấy vi khuẩn",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "Đặt ống tiểu",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Bên cạnh đó, các loại thuốc có tính sát trùng trên hệ niệu cũng được ghi nhận về hiệu quả trong việc tiêu diệt vi khuẩn, có thể được chỉ định dùng với kháng sinh.",
+        "head": "Thuốc sát trùng",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Nhiễm trùng niệu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tuy nhiên, bằng chứng của các loại thuốc này vẫn chưa rõ ràng.",
+        "head": "Thuốc sát trùng",
+        "head_type": "treatment",
+        "relation": "associatedWith",
+        "tail": "Bằng chứng chưa rõ ràng",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Nếu ổ nhiễm khuẩn không khống chế được bằng thuốc hoặc có biến chứng ở thận như thận ứ nước nhiễm khuẩn, thận ứ mủ, áp-xe thận, người bệnh cần áp dụng điều trị phẫu thuật dễ dẫn lưu ổ nhiễm khuẩn.",
+        "head": "Ổ nhiễm khuẩn",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "Điều trị phẫu thuật",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Nếu ổ nhiễm khuẩn không khống chế được bằng thuốc hoặc có biến chứng ở thận như thận ứ nước nhiễm khuẩn, thận ứ mủ, áp-xe thận, người bệnh cần áp dụng điều trị phẫu thuật dễ dẫn lưu ổ nhiễm khuẩn.",
+        "head": "Thận ứ nước nhiễm khuẩn",
+        "head_type": "disease",
+        "relation": "associatedWith",
+        "tail": "Ổ nhiễm khuẩn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu ổ nhiễm khuẩn không khống chế được bằng thuốc hoặc có biến chứng ở thận như thận ứ nước nhiễm khuẩn, thận ứ mủ, áp-xe thận, người bệnh cần áp dụng điều trị phẫu thuật dễ dẫn lưu ổ nhiễm khuẩn.",
+        "head": "Thận ứ mủ",
+        "head_type": "disease",
+        "relation": "associatedWith",
+        "tail": "Ổ nhiễm khuẩn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu ổ nhiễm khuẩn không khống chế được bằng thuốc hoặc có biến chứng ở thận như thận ứ nước nhiễm khuẩn, thận ứ mủ, áp-xe thận, người bệnh cần áp dụng điều trị phẫu thuật dễ dẫn lưu ổ nhiễm khuẩn.",
+        "head": "Áp-xe thận",
+        "head_type": "disease",
+        "relation": "associatedWith",
+        "tail": "Ổ nhiễm khuẩn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tương tự những dị tật hệ niệu, khi không phẫu thuật chỉnh sửa hoàn thiện, bệnh nhân có thể đối mặt với nguy cơ bệnh tái đi tái lại, lâu ngày dẫn tới biến chứng nguy hiểm.",
+        "head": "Dị tật hệ niệu",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "Phẫu thuật chỉnh sửa",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Tương tự những dị tật hệ niệu, khi không phẫu thuật chỉnh sửa hoàn thiện, bệnh nhân có thể đối mặt với nguy cơ bệnh tái đi tái lại, lâu ngày dẫn tới biến chứng nguy hiểm.",
+        "head": "Dị tật hệ niệu",
+        "head_type": "disease",
+        "relation": "associatedWith",
+        "tail": "Bệnh tái đi tái lại",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Tương tự những dị tật hệ niệu, khi không phẫu thuật chỉnh sửa hoàn thiện, bệnh nhân có thể đối mặt với nguy cơ bệnh tái đi tái lại, lâu ngày dẫn tới biến chứng nguy hiểm.",
+        "head": "Dị tật hệ niệu",
+        "head_type": "disease",
+        "relation": "associatedWith",
+        "tail": "Biến chứng nguy hiểm",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Đảm bảo uống đủ 2l - 2,5l nước mỗi ngày.",
+        "head": "Uống đủ nước",
+        "head_type": "lifestyle",
+        "relation": "preventedBy",
+        "tail": "Nhiễm trùng niệu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Vì thói quen này sẽ giúp thận tăng bài tiết nước tiểu để tống vi trùng ra ngoài, hạn chế lây nhiễm ngược dòng.",
+        "head": "Uống đủ nước",
+        "head_type": "lifestyle",
+        "relation": "affects",
+        "tail": "Thận",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Vì thói quen này sẽ giúp thận tăng bài tiết nước tiểu để tống vi trùng ra ngoài, hạn chế lây nhiễm ngược dòng.",
+        "head": "Uống đủ nước",
+        "head_type": "lifestyle",
+        "relation": "affects",
+        "tail": "Bài tiết nước tiểu",
+        "tail_type": "symptom"
+    }
+]

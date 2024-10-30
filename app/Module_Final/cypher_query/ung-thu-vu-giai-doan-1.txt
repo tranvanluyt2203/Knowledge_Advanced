@@ -1,0 +1,790 @@
+
+MERGE (o1:disease {id: 'ung_thư_vú_giai_đoạn_1_disease'})
+MERGE (o2:symptom {id: 'tiên_lượng_tốt_symptom'})
+MERGE (o1)-[r0:relatedTo]->(o2)
+SET r0.text = 'Ung thư vú giai đoạn 1 được xếp vào giai đoạn sớm, tiên lượng tốt, có thể chữa khỏi hoặc tỷ lệ sống sau 5 năm tương đối khả quan.'
+
+MERGE (o1:disease {id: 'ung_thư_vú_giai_đoạn_1_disease'})
+MERGE (o2:treatment {id: 'chữa_khỏi_treatment'})
+MERGE (o1)-[r1:relatedTo]->(o2)
+SET r1.text = 'Ung thư vú giai đoạn 1 được xếp vào giai đoạn sớm, tiên lượng tốt, có thể chữa khỏi hoặc tỷ lệ sống sau 5 năm tương đối khả quan.'
+
+MERGE (o1:disease {id: 'ung_thư_vú_giai_đoạn_1_disease'})
+MERGE (o2:symptom {id: 'tỷ_lệ_sống_sau_5_năm_symptom'})
+MERGE (o1)-[r2:relatedTo]->(o2)
+SET r2.text = 'Ung thư vú giai đoạn 1 được xếp vào giai đoạn sớm, tiên lượng tốt, có thể chữa khỏi hoặc tỷ lệ sống sau 5 năm tương đối khả quan.'
+
+MERGE (o1:disease {id: 'ung_thư_vú_disease'})
+MERGE (o2:symptom {id: 'di_căn_symptom'})
+MERGE (o1)-[r3:relatedTo]->(o2)
+SET r3.text = 'Ung thư vú được phân giai đoạn giống như các bệnh ung thư khác để xác định mức độ di căn của ung thư.'
+
+MERGE (o1:disease {id: 'các_giai_đoạn_disease'})
+MERGE (o2:treatment {id: 'điều_trị_treatment'})
+MERGE (o1)-[r4:relatedTo]->(o2)
+SET r4.text = 'Các giai đoạn giúp hướng dẫn điều trị và tiên lượng.'
+
+MERGE (o1:disease {id: 'các_giai_đoạn_disease'})
+MERGE (o2:symptom {id: 'tiên_lượng_symptom'})
+MERGE (o1)-[r5:relatedTo]->(o2)
+SET r5.text = 'Các giai đoạn giúp hướng dẫn điều trị và tiên lượng.'
+
+MERGE (o1:disease {id: 'khối_u_giai_đoạn_1_disease'})
+MERGE (o2:symptom {id: 'tiên_lượng_symptom'})
+MERGE (o1)-[r6:relatedTo]->(o2)
+SET r6.text = 'Hiểu được khối u giai đoạn 1 là gì, lựa chọn điều trị nào và tiên lượng ra sao có thể giúp tiếp thêm sức mạnh và xoa dịu nỗi sợ hãi cho người bệnh.'
+
+MERGE (o1:disease {id: 'khối_u_giai_đoạn_1_disease'})
+MERGE (o2:treatment {id: 'điều_trị_treatment'})
+MERGE (o1)-[r7:relatedTo]->(o2)
+SET r7.text = 'Hiểu được khối u giai đoạn 1 là gì, lựa chọn điều trị nào và tiên lượng ra sao có thể giúp tiếp thêm sức mạnh và xoa dịu nỗi sợ hãi cho người bệnh.'
+
+MERGE (o1:disease {id: 'ung_thư_vú_giai_đoạn_1_disease'})
+MERGE (o2:disease {id: 'ung_thư_vú_xâm_lấn_disease'})
+MERGE (o1)-[r8:isSymptomOf]->(o2)
+SET r8.text = 'Ung thư vú giai đoạn 1 là giai đoạn sớm nhất của ung thư vú xâm lấn.'
+
+MERGE (o1:symptom {id: 'xâm_lấn_symptom'})
+MERGE (o2:disease {id: 'ung_thư_disease'})
+MERGE (o1)-[r9:isSymptomOf]->(o2)
+SET r9.text = '“Xâm lấn” không có nghĩa là ung thư đã xâm lấn các khu vực khác của cơ thể mà các tế bào trong khối u đã xâm nhập vào khu vực qua màng đệm.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:disease {id: 'ung_thư_biểu_mô_tại_chỗ_disease'})
+MERGE (o1)-[r10:relatedTo]->(o2)
+SET r10.text = 'Khi một khối u mới bắt đầu thì vẫn chưa phát triển qua lớp màng này và gọi là ung thư biểu mô tại chỗ.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:disease {id: 'khối_u_giai_đoạn_0_disease'})
+MERGE (o1)-[r11:relatedTo]->(o2)
+SET r11.text = 'Những khối u này được gọi là khối u giai đoạn 0.'
+
+MERGE (o1:disease {id: 'ung_thư_biểu_mô_tại_chỗ_disease'})
+MERGE (o2:treatment {id: 'phẫu_thuật_treatment'})
+MERGE (o1)-[r12:treatedBy]->(o2)
+SET r12.text = 'Ung thư biểu mô tại chỗ có thể chữa khỏi 100% bằng phẫu thuật vì các tế bào được ngăn chặn hoàn toàn.'
+
+MERGE (o1:disease {id: 'khối_u_giai_đoạn_1_disease'})
+MERGE (o2:disease {id: 'ung_thư_vú_xâm_lấn_disease'})
+MERGE (o1)-[r13:isSymptomOf]->(o2)
+SET r13.text = 'Các khối u giai đoạn 1 là giai đoạn sớm nhất của ung thư vú xâm lấn.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:organ {id: 'hạch_bạch_huyết_organ'})
+MERGE (o1)-[r14:relatedTo]->(o2)
+SET r14.text = 'Những khối u này nhỏ, và nếu chúng đã lan đến các hạch bạch huyết, thì sự lây lan chỉ ở mức độ vi mô.'
+
+MERGE (o1:disease {id: 'ung_thư_biểu_mô_ống_dẫn_sữa_xâm_lấn_(idc)_disease'})
+MERGE (o2:disease {id: 'ung_thư_vú_disease'})
+MERGE (o1)-[r15:isSymptomOf]->(o2)
+SET r15.text = 'Ung thư vú có nhiều dạng, và một số dạng ung thư vú giai đoạn 1 có thể bao gồm: Ung thư biểu mô ống dẫn sữa xâm lấn (IDC): Ung thư bắt nguồn từ các ống dẫn sữa của vú và đã lan vào các mô vú xung quanh.'
+
+MERGE (o1:disease {id: 'ung_thư_biểu_mô_ống_dẫn_sữa_xâm_lấn_(idc)_disease'})
+MERGE (o2:organ {id: 'ống_dẫn_sữa_của_vú_organ'})
+MERGE (o1)-[r16:locatedIn]->(o2)
+SET r16.text = 'Ung thư vú có nhiều dạng, và một số dạng ung thư vú giai đoạn 1 có thể bao gồm: Ung thư biểu mô ống dẫn sữa xâm lấn (IDC): Ung thư bắt nguồn từ các ống dẫn sữa của vú và đã lan vào các mô vú xung quanh.'
+
+MERGE (o1:disease {id: 'ung_thư_biểu_mô_ống_dẫn_sữa_xâm_lấn_(idc)_disease'})
+MERGE (o2:organ {id: 'mô_vú_organ'})
+MERGE (o1)-[r17:affects]->(o2)
+SET r17.text = 'Ung thư vú có nhiều dạng, và một số dạng ung thư vú giai đoạn 1 có thể bao gồm: Ung thư biểu mô ống dẫn sữa xâm lấn (IDC): Ung thư bắt nguồn từ các ống dẫn sữa của vú và đã lan vào các mô vú xung quanh.'
+
+MERGE (o1:disease {id: 'idc_disease'})
+MERGE (o2:disease {id: 'ung_thư_vú_disease'})
+MERGE (o1)-[r18:relatedTo]->(o2)
+SET r18.text = 'IDC là loại ung thư vú phổ biến nhất, chiếm 80% các loại ung thư vú.'
+
+MERGE (o1:disease {id: 'ung_thư_biểu_mô_tiểu_thùy_xâm_lấn_(ilc)_disease'})
+MERGE (o2:disease {id: 'ung_thư_vú_disease'})
+MERGE (o1)-[r19:isSymptomOf]->(o2)
+SET r19.text = 'Ung thư vú có nhiều dạng, và một số dạng ung thư vú giai đoạn 1 có thể bao gồm: Ung thư biểu mô tiểu thùy xâm lấn (ILC): Ung thư bắt nguồn từ các tiểu thùy (tuyến) sản xuất sữa của vú và đã lan vào các mô vú xung quanh.'
+
+MERGE (o1:disease {id: 'ung_thư_biểu_mô_tiểu_thùy_xâm_lấn_(ilc)_disease'})
+MERGE (o2:organ {id: 'tiểu_thùy_(tuyến)_sản_xuất_sữa_của_vú_organ'})
+MERGE (o1)-[r20:locatedIn]->(o2)
+SET r20.text = 'Ung thư vú có nhiều dạng, và một số dạng ung thư vú giai đoạn 1 có thể bao gồm: Ung thư biểu mô tiểu thùy xâm lấn (ILC): Ung thư bắt nguồn từ các tiểu thùy (tuyến) sản xuất sữa của vú và đã lan vào các mô vú xung quanh.'
+
+MERGE (o1:disease {id: 'ung_thư_biểu_mô_tiểu_thùy_xâm_lấn_(ilc)_disease'})
+MERGE (o2:organ {id: 'mô_vú_organ'})
+MERGE (o1)-[r21:affects]->(o2)
+SET r21.text = 'Ung thư vú có nhiều dạng, và một số dạng ung thư vú giai đoạn 1 có thể bao gồm: Ung thư biểu mô tiểu thùy xâm lấn (ILC): Ung thư bắt nguồn từ các tiểu thùy (tuyến) sản xuất sữa của vú và đã lan vào các mô vú xung quanh.'
+
+MERGE (o1:disease {id: 'ilc_disease'})
+MERGE (o2:disease {id: 'ung_thư_vú_disease'})
+MERGE (o1)-[r22:relatedTo]->(o2)
+SET r22.text = 'ILC là loại ung thư vú phổ biến thứ hai, và chiếm 10% các loại ung thư vú.'
+
+MERGE (o1:disease {id: 'ung_thư_vú_dạng_viêm_disease'})
+MERGE (o2:disease {id: 'ung_thư_vú_disease'})
+MERGE (o1)-[r23:isSymptomOf]->(o2)
+SET r23.text = 'Ngoài ra còn có các dạng ung thư vú xâm lấn khác ít phổ biến hơn, chẳng hạn ung thư vú dạng viêm và bệnh Paget của núm vú.'
+
+MERGE (o1:disease {id: 'bệnh_paget_của_núm_vú_disease'})
+MERGE (o2:disease {id: 'ung_thư_vú_disease'})
+MERGE (o1)-[r24:isSymptomOf]->(o2)
+SET r24.text = 'Ngoài ra còn có các dạng ung thư vú xâm lấn khác ít phổ biến hơn, chẳng hạn ung thư vú dạng viêm và bệnh Paget của núm vú.'
+
+MERGE (o1:disease {id: 'ung_thư_vú_giai_đoạn_1_disease'})
+MERGE (o2:organ {id: 'vú_organ'})
+MERGE (o1)-[r25:affects]->(o2)
+SET r25.text = 'Ung thư vú giai đoạn 1 chỉ giới hạn ở khu vực bắt đầu phân chia tế bào bất thường và vẫn chưa lây lan đến bất kỳ nơi nào khác trong vú hoặc cơ thể.'
+
+MERGE (o1:disease {id: 'ung_thư_vú_giai_đoạn_1_disease'})
+MERGE (o2:organ {id: 'cơ_thể_organ'})
+MERGE (o1)-[r26:affects]->(o2)
+SET r26.text = 'Ung thư vú giai đoạn 1 chỉ giới hạn ở khu vực bắt đầu phân chia tế bào bất thường và vẫn chưa lây lan đến bất kỳ nơi nào khác trong vú hoặc cơ thể.'
+
+MERGE (o1:treatment {id: 'các_bác_sĩ_treatment'})
+MERGE (o2:disease {id: 'ung_thư_vú_disease'})
+MERGE (o1)-[r27:diagnosedBy]->(o2)
+SET r27.text = 'Các bác sĩ thường dựa vào hệ thống TNM để phân loại ung thư vú.'
+
+MERGE (o1:test {id: 'hệ_thống_tnm_test'})
+MERGE (o2:disease {id: 'ung_thư_vú_disease'})
+MERGE (o1)-[r28:diagnosedBy]->(o2)
+SET r28.text = 'Các bác sĩ thường dựa vào hệ thống TNM để phân loại ung thư vú.'
+
+MERGE (o1:test {id: 'hệ_thống_tnm_test'})
+MERGE (o2:disease {id: 'giai_đoạn_ung_thư_vú_disease'})
+MERGE (o1)-[r29:relatedTo]->(o2)
+SET r29.text = 'Vì vậy hiểu về hệ thống TNM sẽ hữu ích cho người bệnh trong việc tìm hiểu giai đoạn ung thư vú.'
+
+MERGE (o1:test {id: 't_test'})
+MERGE (o2:symptom {id: 'kích_thước_khối_u_symptom'})
+MERGE (o1)-[r30:relatedTo]->(o2)
+SET r30.text = 'T = Kích thước khối u: Tất cả ung thư giai đoạn 1 là T-0 hoặc T-1, có nghĩa là khối u có đường kính từ 2cm trở xuống.'
+
+MERGE (o1:test {id: 't-0_test'})
+MERGE (o2:disease {id: 'khối_u_disease'})
+MERGE (o1)-[r31:relatedTo]->(o2)
+SET r31.text = 'T = Kích thước khối u: Tất cả ung thư giai đoạn 1 là T-0 hoặc T-1, có nghĩa là khối u có đường kính từ 2cm trở xuống.'
+
+MERGE (o1:test {id: 't-1_test'})
+MERGE (o2:disease {id: 'khối_u_disease'})
+MERGE (o1)-[r32:relatedTo]->(o2)
+SET r32.text = 'T = Kích thước khối u: Tất cả ung thư giai đoạn 1 là T-0 hoặc T-1, có nghĩa là khối u có đường kính từ 2cm trở xuống.'
+
+MERGE (o1:test {id: 'n_test'})
+MERGE (o2:symptom {id: 'nodes_symptom'})
+MERGE (o1)-[r33:relatedTo]->(o2)
+SET r33.text = 'N = Nodes: Tất cả ung thư giai đoạn 1 là N-0 hoặc N-1mi.'
+
+MERGE (o1:test {id: 'n-0_test'})
+MERGE (o2:organ {id: 'hạch_bạch_huyết_organ'})
+MERGE (o1)-[r34:relatedTo]->(o2)
+SET r34.text = 'N = Nodes: Tất cả ung thư giai đoạn 1 là N-0 hoặc N-1mi.'
+
+MERGE (o1:test {id: 'n-1_test'})
+MERGE (o2:organ {id: 'hạch_bạch_huyết_organ'})
+MERGE (o1)-[r35:relatedTo]->(o2)
+SET r35.text = 'N = Nodes: Tất cả ung thư giai đoạn 1 là N-0 hoặc N-1mi.'
+
+MERGE (o1:test {id: 'n-0_test'})
+MERGE (o2:organ {id: 'hạch_bạch_huyết_organ'})
+MERGE (o1)-[r36:relatedTo]->(o2)
+SET r36.text = 'N-0, có nghĩa là chưa lây lan đến bất kỳ hạch bạch huyết nào.'
+
+MERGE (o1:test {id: 'n-1_test'})
+MERGE (o2:organ {id: 'hạch_bạch_huyết_organ'})
+MERGE (o1)-[r37:relatedTo]->(o2)
+SET r37.text = 'N-1 có nghĩa là đã lan đến các hạch bạch huyết gần đó.'
+
+MERGE (o1:test {id: 'mi_test'})
+MERGE (o2:symptom {id: 'vi_hạt_symptom'})
+MERGE (o1)-[r38:relatedTo]->(o2)
+SET r38.text = '“Mi” có nghĩa là có các vi hạt, chỉ có thể nhìn thấy dưới kính hiển vi.'
+
+MERGE (o1:test {id: 'micrometastases_test'})
+MERGE (o2:symptom {id: 'đường_kính_symptom'})
+MERGE (o1)-[r39:relatedTo]->(o2)
+SET r39.text = 'Các micrometastases có đường kính từ 0,2mm - 2mm.'
+
+MERGE (o1:test {id: 'm_test'})
+MERGE (o2:symptom {id: 'di_căn_symptom'})
+MERGE (o1)-[r40:relatedTo]->(o2)
+SET r40.text = 'M = Di căn: M-0 có nghĩa là ung thư chưa di căn đến các vùng khác của cơ thể.'
+
+MERGE (o1:test {id: 'm-0_test'})
+MERGE (o2:disease {id: 'ung_thư_disease'})
+MERGE (o1)-[r41:relatedTo]->(o2)
+SET r41.text = 'M = Di căn: M-0 có nghĩa là ung thư chưa di căn đến các vùng khác của cơ thể.'
+
+MERGE (o1:test {id: 'hệ_thống_tnm_test'})
+MERGE (o2:disease {id: 'ung_thư_giai_đoạn_1_disease'})
+MERGE (o1)-[r42:diagnosedBy]->(o2)
+SET r42.text = 'Do đó, bằng cách sử dụng hệ thống TNM, ung thư giai đoạn 1 được xác định như sau:'
+
+MERGE (o1:disease {id: 'ung_thư_vú_giai_đoạn_1_disease'})
+MERGE (o2:disease {id: 'giai_đoạn_1a_disease'})
+MERGE (o1)-[r43:relatedTo]->(o2)
+SET r43.text = 'Ung thư vú giai đoạn 1 được chia nhỏ thành Giai đoạn 1A và 1B.'
+
+MERGE (o1:disease {id: 'ung_thư_vú_giai_đoạn_1_disease'})
+MERGE (o2:disease {id: 'giai_đoạn_1b_disease'})
+MERGE (o1)-[r44:relatedTo]->(o2)
+SET r44.text = 'Ung thư vú giai đoạn 1 được chia nhỏ thành Giai đoạn 1A và 1B.'
+
+MERGE (o1:disease {id: 'giai_đoạn_này_disease'})
+MERGE (o2:treatment {id: 'điều_trị_treatment'})
+MERGE (o1)-[r45:relatedTo]->(o2)
+SET r45.text = 'Trong giai đoạn này, việc điều trị thường rất hiệu quả và tiên lượng tốt.'
+
+MERGE (o1:disease {id: 'giai_đoạn_này_disease'})
+MERGE (o2:symptom {id: 'tiên_lượng_tốt_symptom'})
+MERGE (o1)-[r46:relatedTo]->(o2)
+SET r46.text = 'Trong giai đoạn này, việc điều trị thường rất hiệu quả và tiên lượng tốt.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:organ {id: 'hạch_bạch_huyết_organ'})
+MERGE (o1)-[r47:relatedTo]->(o2)
+SET r47.text = 'Khối u có kích thước dưới 20mm và không lan đến các hạch bạch huyết.'
+
+MERGE (o1:test {id: 't1n1mim0_test'})
+MERGE (o2:disease {id: 'khối_u_disease'})
+MERGE (o1)-[r48:relatedTo]->(o2)
+SET r48.text = 'T1N1miM0: Khối u có kích thước dưới 20mm và có các vi hạt trong một hạch bạch huyết gần đó.'
+
+MERGE (o1:test {id: 't1n1mim0_test'})
+MERGE (o2:organ {id: 'hạch_bạch_huyết_organ'})
+MERGE (o1)-[r49:relatedTo]->(o2)
+SET r49.text = 'T1N1miM0: Khối u có kích thước dưới 20mm và có các vi hạt trong một hạch bạch huyết gần đó.'
+
+MERGE (o1:test {id: 't1n1mim0_test'})
+MERGE (o2:symptom {id: 'vi_hạt_symptom'})
+MERGE (o1)-[r50:relatedTo]->(o2)
+SET r50.text = 'T1N1miM0: Khối u có kích thước dưới 20mm và có các vi hạt trong một hạch bạch huyết gần đó.'
+
+MERGE (o1:test {id: 't0n1mim0_test'})
+MERGE (o2:disease {id: 'khối_u_disease'})
+MERGE (o1)-[r51:relatedTo]->(o2)
+SET r51.text = 'T0N1miM0: Không có bằng chứng về khối u nguyên phát ở vú nhưng có các vi hạt trong hạch bạch huyết (thường ở nách).'
+
+MERGE (o1:test {id: 't0n1mim0_test'})
+MERGE (o2:organ {id: 'hạch_bạch_huyết_organ'})
+MERGE (o1)-[r52:relatedTo]->(o2)
+SET r52.text = 'T0N1miM0: Không có bằng chứng về khối u nguyên phát ở vú nhưng có các vi hạt trong hạch bạch huyết (thường ở nách).'
+
+MERGE (o1:test {id: 't0n1mim0_test'})
+MERGE (o2:symptom {id: 'vi_hạt_symptom'})
+MERGE (o1)-[r53:relatedTo]->(o2)
+SET r53.text = 'T0N1miM0: Không có bằng chứng về khối u nguyên phát ở vú nhưng có các vi hạt trong hạch bạch huyết (thường ở nách).'
+
+MERGE (o1:test {id: 't0n1mim0_test'})
+MERGE (o2:organ {id: 'nách_organ'})
+MERGE (o1)-[r54:relatedTo]->(o2)
+SET r54.text = 'T0N1miM0: Không có bằng chứng về khối u nguyên phát ở vú nhưng có các vi hạt trong hạch bạch huyết (thường ở nách).'
+
+MERGE (o1:symptom {id: 'dấu_hiệu_ung_thư_vú_giai_đoạn_1_symptom'})
+MERGE (o2:disease {id: 'ung_thư_vú_disease'})
+MERGE (o1)-[r55:isSymptomOf]->(o2)
+SET r55.text = 'Dấu hiệu ung thư vú giai đoạn 1 có thể không rõ ràng, nhưng nếu có, các biểu hiện thường bao gồm những điều sau đây.'
+
+MERGE (o1:symptom {id: 'tiết_dịch_núm_vú_symptom'})
+MERGE (o2:disease {id: 'ung_thư_vú_disease'})
+MERGE (o1)-[r56:isSymptomOf]->(o2)
+SET r56.text = 'Dấu hiệu ung thư vú giai đoạn 1 có thể không rõ ràng, nhưng nếu có, các biểu hiện thường bao gồm những điều sau đây.  Tiết dịch núm vú; Da bị lõm; Sưng hoặc đỏ vú; Một khối u ở vú hoặc ở nách; Thay đổi kết cấu của da vú; Núm vú dẹt; Giảm cân không rõ nguyên nhân.'
+
+MERGE (o1:symptom {id: 'da_bị_lõm_symptom'})
+MERGE (o2:disease {id: 'ung_thư_vú_disease'})
+MERGE (o1)-[r57:isSymptomOf]->(o2)
+SET r57.text = 'Dấu hiệu ung thư vú giai đoạn 1 có thể không rõ ràng, nhưng nếu có, các biểu hiện thường bao gồm những điều sau đây.  Tiết dịch núm vú; Da bị lõm; Sưng hoặc đỏ vú; Một khối u ở vú hoặc ở nách; Thay đổi kết cấu của da vú; Núm vú dẹt; Giảm cân không rõ nguyên nhân.'
+
+MERGE (o1:symptom {id: 'sưng_hoặc_đỏ_vú_symptom'})
+MERGE (o2:disease {id: 'ung_thư_vú_disease'})
+MERGE (o1)-[r58:isSymptomOf]->(o2)
+SET r58.text = 'Dấu hiệu ung thư vú giai đoạn 1 có thể không rõ ràng, nhưng nếu có, các biểu hiện thường bao gồm những điều sau đây.  Tiết dịch núm vú; Da bị lõm; Sưng hoặc đỏ vú; Một khối u ở vú hoặc ở nách; Thay đổi kết cấu của da vú; Núm vú dẹt; Giảm cân không rõ nguyên nhân.'
+
+MERGE (o1:symptom {id: 'một_khối_u_ở_vú_hoặc_ở_nách_symptom'})
+MERGE (o2:disease {id: 'ung_thư_vú_disease'})
+MERGE (o1)-[r59:isSymptomOf]->(o2)
+SET r59.text = 'Dấu hiệu ung thư vú giai đoạn 1 có thể không rõ ràng, nhưng nếu có, các biểu hiện thường bao gồm những điều sau đây.  Tiết dịch núm vú; Da bị lõm; Sưng hoặc đỏ vú; Một khối u ở vú hoặc ở nách; Thay đổi kết cấu của da vú; Núm vú dẹt; Giảm cân không rõ nguyên nhân.'
+
+MERGE (o1:symptom {id: 'thay_đổi_kết_cấu_của_da_vú_symptom'})
+MERGE (o2:disease {id: 'ung_thư_vú_disease'})
+MERGE (o1)-[r60:isSymptomOf]->(o2)
+SET r60.text = 'Dấu hiệu ung thư vú giai đoạn 1 có thể không rõ ràng, nhưng nếu có, các biểu hiện thường bao gồm những điều sau đây.  Tiết dịch núm vú; Da bị lõm; Sưng hoặc đỏ vú; Một khối u ở vú hoặc ở nách; Thay đổi kết cấu của da vú; Núm vú dẹt; Giảm cân không rõ nguyên nhân.'
+
+MERGE (o1:symptom {id: 'núm_vú_dẹt_symptom'})
+MERGE (o2:disease {id: 'ung_thư_vú_disease'})
+MERGE (o1)-[r61:isSymptomOf]->(o2)
+SET r61.text = 'Dấu hiệu ung thư vú giai đoạn 1 có thể không rõ ràng, nhưng nếu có, các biểu hiện thường bao gồm những điều sau đây.  Tiết dịch núm vú; Da bị lõm; Sưng hoặc đỏ vú; Một khối u ở vú hoặc ở nách; Thay đổi kết cấu của da vú; Núm vú dẹt; Giảm cân không rõ nguyên nhân.'
+
+MERGE (o1:symptom {id: 'giảm_cân_không_rõ_nguyên_nhân_symptom'})
+MERGE (o2:disease {id: 'ung_thư_vú_disease'})
+MERGE (o1)-[r62:isSymptomOf]->(o2)
+SET r62.text = 'Dấu hiệu ung thư vú giai đoạn 1 có thể không rõ ràng, nhưng nếu có, các biểu hiện thường bao gồm những điều sau đây.  Tiết dịch núm vú; Da bị lõm; Sưng hoặc đỏ vú; Một khối u ở vú hoặc ở nách; Thay đổi kết cấu của da vú; Núm vú dẹt; Giảm cân không rõ nguyên nhân.'
+
+MERGE (o1:disease {id: 'ung_thư_vú_disease'})
+MERGE (o2:test {id: 'chẩn_đoán_sớm_test'})
+MERGE (o1)-[r63:diagnosedBy]->(o2)
+SET r63.text = 'Theo dữ liệu từ Viện Y tế và Phúc lợi Úc, ung thư vú được chẩn đoán lần đầu tiên càng sớm thì kết quả càng tốt.'
+
+MERGE (o1:disease {id: 'ung_thư_vú_disease'})
+MERGE (o2:treatment {id: 'điều_trị_treatment'})
+MERGE (o1)-[r64:treatedBy]->(o2)
+SET r64.text = 'Tỷ lệ sống thêm của những người được chẩn đoán mắc bệnh ung thư vú cũng được cải thiện theo thời gian do phát hiện sớm hơn và cải thiện trong điều trị.'
+
+MERGE (o1:disease {id: 'ung_thư_vú_giai_đoạn_1_disease'})
+MERGE (o2:treatment {id: 'điều_trị_treatment'})
+MERGE (o1)-[r65:treatedBy]->(o2)
+SET r65.text = 'Ung thư vú giai đoạn 1 có chữa được không? Hầu hết những người bị ung thư vú giai đoạn 1 đều có thể được điều trị thành công với tỷ lệ gần 100%.'
+
+MERGE (o1:disease {id: 'ung_thư_disease'})
+MERGE (o2:lifestyle {id: 'thời_gian_sống_lifestyle'})
+MERGE (o1)-[r66:relatedTo]->(o2)
+SET r66.text = 'Tuy nhiên, không thể dự đoán chính xác quá trình ung thư và thời gian sống của mỗi người.'
+
+MERGE (o1:lifestyle {id: 'tiên_lượng_sống_sót_lifestyle'})
+MERGE (o2:treatment {id: 'hiệu_quả_điều_trị_treatment'})
+MERGE (o1)-[r67:relatedTo]->(o2)
+SET r67.text = 'Tiên lượng sống sót cũng như hiệu quả điều trị phụ thuộc vào nhiều yếu tố.'
+
+MERGE (o1:lifestyle {id: 'khả_năng_đáp_ứng_với_điều_trị_lifestyle'})
+MERGE (o2:lifestyle {id: 'tiên_lượng_sống_lifestyle'})
+MERGE (o1)-[r68:affects]->(o2)
+SET r68.text = 'Các yếu tố ảnh hưởng đến tiên lượng sống của bệnh nhân bao gồm:  Khả năng đáp ứng với điều trị; Loại ung thư vú mắc phải; Tốc độ phát triển khối u; Các yếu tố khác như tuổi, tiền sử bệnh và sức khỏe tổng thể; Phương pháp điều trị có thể ảnh hưởng đến khả năng sống thêm của ung thư vú giai đoạn sớm.'
+
+MERGE (o1:disease {id: 'loại_ung_thư_vú_mắc_phải_disease'})
+MERGE (o2:lifestyle {id: 'tiên_lượng_sống_lifestyle'})
+MERGE (o1)-[r69:affects]->(o2)
+SET r69.text = 'Các yếu tố ảnh hưởng đến tiên lượng sống của bệnh nhân bao gồm:  Khả năng đáp ứng với điều trị; Loại ung thư vú mắc phải; Tốc độ phát triển khối u; Các yếu tố khác như tuổi, tiền sử bệnh và sức khỏe tổng thể; Phương pháp điều trị có thể ảnh hưởng đến khả năng sống thêm của ung thư vú giai đoạn sớm.'
+
+MERGE (o1:symptom {id: 'tốc_độ_phát_triển_khối_u_symptom'})
+MERGE (o2:lifestyle {id: 'tiên_lượng_sống_lifestyle'})
+MERGE (o1)-[r70:affects]->(o2)
+SET r70.text = 'Các yếu tố ảnh hưởng đến tiên lượng sống của bệnh nhân bao gồm:  Khả năng đáp ứng với điều trị; Loại ung thư vú mắc phải; Tốc độ phát triển khối u; Các yếu tố khác như tuổi, tiền sử bệnh và sức khỏe tổng thể; Phương pháp điều trị có thể ảnh hưởng đến khả năng sống thêm của ung thư vú giai đoạn sớm.'
+
+MERGE (o1:lifestyle {id: 'tuổi_lifestyle'})
+MERGE (o2:lifestyle {id: 'tiên_lượng_sống_lifestyle'})
+MERGE (o1)-[r71:affects]->(o2)
+SET r71.text = 'Các yếu tố ảnh hưởng đến tiên lượng sống của bệnh nhân bao gồm:  Khả năng đáp ứng với điều trị; Loại ung thư vú mắc phải; Tốc độ phát triển khối u; Các yếu tố khác như tuổi, tiền sử bệnh và sức khỏe tổng thể; Phương pháp điều trị có thể ảnh hưởng đến khả năng sống thêm của ung thư vú giai đoạn sớm.'
+
+MERGE (o1:disease {id: 'tiền_sử_bệnh_disease'})
+MERGE (o2:lifestyle {id: 'tiên_lượng_sống_lifestyle'})
+MERGE (o1)-[r72:affects]->(o2)
+SET r72.text = 'Các yếu tố ảnh hưởng đến tiên lượng sống của bệnh nhân bao gồm:  Khả năng đáp ứng với điều trị; Loại ung thư vú mắc phải; Tốc độ phát triển khối u; Các yếu tố khác như tuổi, tiền sử bệnh và sức khỏe tổng thể; Phương pháp điều trị có thể ảnh hưởng đến khả năng sống thêm của ung thư vú giai đoạn sớm.'
+
+MERGE (o1:lifestyle {id: 'sức_khỏe_tổng_thể_lifestyle'})
+MERGE (o2:lifestyle {id: 'tiên_lượng_sống_lifestyle'})
+MERGE (o1)-[r73:affects]->(o2)
+SET r73.text = 'Các yếu tố ảnh hưởng đến tiên lượng sống của bệnh nhân bao gồm:  Khả năng đáp ứng với điều trị; Loại ung thư vú mắc phải; Tốc độ phát triển khối u; Các yếu tố khác như tuổi, tiền sử bệnh và sức khỏe tổng thể; Phương pháp điều trị có thể ảnh hưởng đến khả năng sống thêm của ung thư vú giai đoạn sớm.'
+
+MERGE (o1:treatment {id: 'phương_pháp_điều_trị_treatment'})
+MERGE (o2:lifestyle {id: 'khả_năng_sống_thêm_lifestyle'})
+MERGE (o1)-[r74:affects]->(o2)
+SET r74.text = 'Các yếu tố ảnh hưởng đến tiên lượng sống của bệnh nhân bao gồm:  Khả năng đáp ứng với điều trị; Loại ung thư vú mắc phải; Tốc độ phát triển khối u; Các yếu tố khác như tuổi, tiền sử bệnh và sức khỏe tổng thể; Phương pháp điều trị có thể ảnh hưởng đến khả năng sống thêm của ung thư vú giai đoạn sớm.'
+
+MERGE (o1:disease {id: 'ung_thư_vú_disease'})
+MERGE (o2:treatment {id: 'điều_trị_sớm_treatment'})
+MERGE (o1)-[r75:treatedBy]->(o2)
+SET r75.text = 'Trong hầu hết các trường hợp, ung thư vú càng được chẩn đoán và điều trị sớm, cơ hội sống thêm càng cao.'
+
+MERGE (o1:disease {id: 'tế_bào_ung_thư_disease'})
+MERGE (o2:treatment {id: 'điều_trị_treatment'})
+MERGE (o1)-[r76:treatedBy]->(o2)
+SET r76.text = 'Tế bào ung thư thường trở nên khó điều trị hơn và có thể phát triển khả năng kháng thuốc khi bệnh lan tràn.'
+
+MERGE (o1:treatment {id: 'điều_trị_ung_thư_vú_giai_đoạn_1_treatment'})
+MERGE (o2:disease {id: 'ung_thư_vú_disease'})
+MERGE (o1)-[r77:affects]->(o2)
+SET r77.text = 'Mục đích của điều trị ung thư vú giai đoạn 1 là loại bỏ ung thư vú và bất kỳ tế bào ung thư nào khác còn sót lại trong vú, nách hoặc các bộ phận khác của cơ thể.'
+
+MERGE (o1:treatment {id: 'điều_trị_ung_thư_vú_giai_đoạn_1_treatment'})
+MERGE (o2:disease {id: 'tế_bào_ung_thư_disease'})
+MERGE (o1)-[r78:affects]->(o2)
+SET r78.text = 'Mục đích của điều trị ung thư vú giai đoạn 1 là loại bỏ ung thư vú và bất kỳ tế bào ung thư nào khác còn sót lại trong vú, nách hoặc các bộ phận khác của cơ thể.'
+
+MERGE (o1:treatment {id: 'điều_trị_ung_thư_vú_giai_đoạn_1_treatment'})
+MERGE (o2:organ {id: 'vú_organ'})
+MERGE (o1)-[r79:locatedIn]->(o2)
+SET r79.text = 'Mục đích của điều trị ung thư vú giai đoạn 1 là loại bỏ ung thư vú và bất kỳ tế bào ung thư nào khác còn sót lại trong vú, nách hoặc các bộ phận khác của cơ thể.'
+
+MERGE (o1:treatment {id: 'điều_trị_ung_thư_vú_giai_đoạn_1_treatment'})
+MERGE (o2:organ {id: 'nách_organ'})
+MERGE (o1)-[r80:locatedIn]->(o2)
+SET r80.text = 'Mục đích của điều trị ung thư vú giai đoạn 1 là loại bỏ ung thư vú và bất kỳ tế bào ung thư nào khác còn sót lại trong vú, nách hoặc các bộ phận khác của cơ thể.'
+
+MERGE (o1:treatment {id: 'điều_trị_treatment'})
+MERGE (o2:disease {id: 'nguy_cơ_ung_thư_tái_phát_disease'})
+MERGE (o1)-[r81:affects]->(o2)
+SET r81.text = 'Điều trị ở giai đoạn này cũng có thể làm giảm nguy cơ ung thư tái phát.'
+
+MERGE (o1:treatment {id: 'bác_sĩ_treatment'})
+MERGE (o2:disease {id: 'bệnh_disease'})
+MERGE (o1)-[r82:diagnosedBy]->(o2)
+SET r82.text = 'Bác sĩ có thể dựa trên việc thăm khám lâm sàng, hỏi bệnh sử cá nhân, gia đình và các triệu chứng để chẩn đoán bệnh.'
+
+MERGE (o1:disease {id: 'ung_thư_vú_disease'})
+MERGE (o2:test {id: 'kiểm_tra_cận_lâm_sàng_test'})
+MERGE (o1)-[r83:diagnosedBy]->(o2)
+SET r83.text = 'Nếu nghi ngờ ung thư vú, bác sĩ sẽ chỉ định thêm một số kiểm tra cận lâm sàng, bao gồm:'
+
+MERGE (o1:test {id: 'chụp_nhũ_ảnh_test'})
+MERGE (o2:disease {id: 'ung_thư_vú_disease'})
+MERGE (o1)-[r84:diagnosedBy]->(o2)
+SET r84.text = 'Phương pháp chụp nhũ ảnh thường được áp dụng thường quy trong chẩn đoán ung thư vú hiện nay.'
+
+MERGE (o1:treatment {id: 'bệnh_viện_đa_khoa_tâm_anh_treatment'})
+MERGE (o2:disease {id: 'ung_thư_vú_disease'})
+MERGE (o1)-[r85:diagnosedBy]->(o2)
+SET r85.text = 'Bệnh viện Đa khoa Tâm Anh thực hiện chẩn đoán ung thư vú bằng hệ thống chụp nhũ ảnh kỹ thuật số cắt lớp (DPT) với nhiều ưu điểm vượt trội so với chụp nhũ ảnh 2D.'
+
+MERGE (o1:test {id: 'chụp_nhũ_ảnh_kỹ_thuật_số_cắt_lớp_(dpt)_test'})
+MERGE (o2:disease {id: 'ung_thư_vú_disease'})
+MERGE (o1)-[r86:diagnosedBy]->(o2)
+SET r86.text = 'Bệnh viện Đa khoa Tâm Anh thực hiện chẩn đoán ung thư vú bằng hệ thống chụp nhũ ảnh kỹ thuật số cắt lớp (DPT) với nhiều ưu điểm vượt trội so với chụp nhũ ảnh 2D.'
+
+MERGE (o1:test {id: 'hệ_thống_nhũ_ảnh_test'})
+MERGE (o2:disease {id: 'ung_thư_disease'})
+MERGE (o1)-[r87:diagnosedBy]->(o2)
+SET r87.text = 'Đây là hệ thống nhũ ảnh hiện đại bậc nhất, cho tỷ lệ phát hiện ung thư tăng lên 40% và giảm tỷ lệ dương tính giả 40%.'
+
+MERGE (o1:treatment {id: 'bác_sĩ_treatment'})
+MERGE (o2:disease {id: 'ung_thư_disease'})
+MERGE (o1)-[r88:diagnosedBy]->(o2)
+SET r88.text = 'Bác sĩ có thể dựa vào các kết quả từ chụp nhũ ảnh để đưa ra kết luận chính xác và xây dựng phác đồ điều trị cá thể hóa hiệu quả.'
+
+MERGE (o1:test {id: 'chụp_nhũ_ảnh_test'})
+MERGE (o2:disease {id: 'ung_thư_disease'})
+MERGE (o1)-[r89:diagnosedBy]->(o2)
+SET r89.text = 'Bác sĩ có thể dựa vào các kết quả từ chụp nhũ ảnh để đưa ra kết luận chính xác và xây dựng phác đồ điều trị cá thể hóa hiệu quả.'
+
+MERGE (o1:test {id: 'siêu_âm_test'})
+MERGE (o2:disease {id: 'ung_thư_vú_disease'})
+MERGE (o1)-[r90:diagnosedBy]->(o2)
+SET r90.text = 'Siêu âm thường là phương pháp được chỉ định tiếp theo chụp nhũ ảnh không nhạy.'
+
+MERGE (o1:test {id: 'siêu_âm_test'})
+MERGE (o2:symptom {id: 'kích_thước_khối_u_vú_symptom'})
+MERGE (o1)-[r91:affects]->(o2)
+SET r91.text = 'Siêu âm có thể đánh giá kích thước cũng như độ đặc của các khối u vú hiệu quả.'
+
+MERGE (o1:test {id: 'siêu_âm_test'})
+MERGE (o2:symptom {id: 'độ_đặc_khối_u_vú_symptom'})
+MERGE (o1)-[r92:affects]->(o2)
+SET r92.text = 'Siêu âm có thể đánh giá kích thước cũng như độ đặc của các khối u vú hiệu quả.'
+
+MERGE (o1:test {id: 'mri_test'})
+MERGE (o2:disease {id: 'bệnh_ác_tính_đa_ổ_disease'})
+MERGE (o1)-[r93:diagnosedBy]->(o2)
+SET r93.text = 'MRI thường được chỉ định cho bệnh nhân nghi ngờ bệnh ác tính đa ổ hoặc hai bên hoặc có tổn thương ẩn.'
+
+MERGE (o1:test {id: 'mri_test'})
+MERGE (o2:disease {id: 'bệnh_ác_tính_hai_bên_disease'})
+MERGE (o1)-[r94:diagnosedBy]->(o2)
+SET r94.text = 'MRI thường được chỉ định cho bệnh nhân nghi ngờ bệnh ác tính đa ổ hoặc hai bên hoặc có tổn thương ẩn.'
+
+MERGE (o1:test {id: 'mri_test'})
+MERGE (o2:symptom {id: 'tổn_thương_ẩn_symptom'})
+MERGE (o1)-[r95:diagnosedBy]->(o2)
+SET r95.text = 'MRI thường được chỉ định cho bệnh nhân nghi ngờ bệnh ác tính đa ổ hoặc hai bên hoặc có tổn thương ẩn.'
+
+MERGE (o1:test {id: 'mri_test'})
+MERGE (o2:disease {id: 'ung_thư_biểu_mô_tiểu_thùy_xâm_lấn_disease'})
+MERGE (o1)-[r96:diagnosedBy]->(o2)
+SET r96.text = 'Đặc biệt, chỉ định MRI là rất quan trọng trong các trường hợp như: Ung thư biểu mô tiểu thùy xâm lấn hoặc cần đánh giá đáp ứng với hóa trị liệu bổ trợ, lập kế hoạch sàng lọc và phẫu thuật bảo tồn vú ở những bệnh nhân có nguy cơ cao.'
+
+MERGE (o1:treatment {id: 'hóa_trị_liệu_bổ_trợ_treatment'})
+MERGE (o2:disease {id: 'ung_thư_biểu_mô_tiểu_thùy_xâm_lấn_disease'})
+MERGE (o1)-[r97:treatedBy]->(o2)
+SET r97.text = 'Đặc biệt, chỉ định MRI là rất quan trọng trong các trường hợp như: Ung thư biểu mô tiểu thùy xâm lấn hoặc cần đánh giá đáp ứng với hóa trị liệu bổ trợ, lập kế hoạch sàng lọc và phẫu thuật bảo tồn vú ở những bệnh nhân có nguy cơ cao.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_bảo_tồn_vú_treatment'})
+MERGE (o2:disease {id: 'ung_thư_biểu_mô_tiểu_thùy_xâm_lấn_disease'})
+MERGE (o1)-[r98:treatedBy]->(o2)
+SET r98.text = 'Đặc biệt, chỉ định MRI là rất quan trọng trong các trường hợp như: Ung thư biểu mô tiểu thùy xâm lấn hoặc cần đánh giá đáp ứng với hóa trị liệu bổ trợ, lập kế hoạch sàng lọc và phẫu thuật bảo tồn vú ở những bệnh nhân có nguy cơ cao.'
+
+MERGE (o1:test {id: 'hệ_thống_chụp_cộng_hưởng_từ_(mri)_test'})
+MERGE (o2:disease {id: 'ung_thư_disease'})
+MERGE (o1)-[r99:diagnosedBy]->(o2)
+SET r99.text = 'Hệ thống chụp cộng hưởng từ (MRI) ứng dụng công nghệ “Ma trận sinh học toàn phần” đang được ứng dụng tại bệnh viện Đa khoa Tâm Anh cho kết quả chẩn đoán vượt trội, tiết kiệm 50% thời gian chụp, giảm thiểu bức xạ so với quy trình chuẩn.'
+
+MERGE (o1:test {id: 'sinh_thiết_mô_test'})
+MERGE (o2:disease {id: 'ung_thư_vú_disease'})
+MERGE (o1)-[r100:diagnosedBy]->(o2)
+SET r100.text = 'Sinh thiết mô là việc lấy mô vú để giải phẫu bệnh dưới kính hiển vi.'
+
+MERGE (o1:test {id: 'sinh_thiết_mô_test'})
+MERGE (o2:disease {id: 'mức_độ_nghiêm_trọng_của_ung_thư_vú_disease'})
+MERGE (o1)-[r101:affects]->(o2)
+SET r101.text = 'Đây là một bước quan trọng để đánh giá mức độ nghiêm trọng của ung thư vú.'
+
+MERGE (o1:test {id: 'chọc_hút_tế_bào_bằng_kim_nhỏ_test'})
+MERGE (o2:disease {id: 'ung_thư_vú_disease'})
+MERGE (o1)-[r102:diagnosedBy]->(o2)
+SET r102.text = 'Sinh thiết có thể bao gồm chọc hút tế bào bằng kim nhỏ, sinh thiết lõi (Trucut) hoặc sinh thiết rạch hay cắt.'
+
+MERGE (o1:test {id: 'sinh_thiết_lõi_(trucut)_test'})
+MERGE (o2:disease {id: 'ung_thư_vú_disease'})
+MERGE (o1)-[r103:diagnosedBy]->(o2)
+SET r103.text = 'Sinh thiết có thể bao gồm chọc hút tế bào bằng kim nhỏ, sinh thiết lõi (Trucut) hoặc sinh thiết rạch hay cắt.'
+
+MERGE (o1:test {id: 'sinh_thiết_rạch_test'})
+MERGE (o2:disease {id: 'ung_thư_vú_disease'})
+MERGE (o1)-[r104:diagnosedBy]->(o2)
+SET r104.text = 'Sinh thiết có thể bao gồm chọc hút tế bào bằng kim nhỏ, sinh thiết lõi (Trucut) hoặc sinh thiết rạch hay cắt.'
+
+MERGE (o1:treatment {id: 'phương_pháp_điều_trị_tại_chỗ_treatment'})
+MERGE (o2:disease {id: 'ung_thư_vú_giai_đoạn_1_disease'})
+MERGE (o1)-[r105:treatedBy]->(o2)
+SET r105.text = 'Các lựa chọn điều trị bệnh ung thư vú giai đoạn 1 được chia thành hai loại chính:  Phương pháp điều trị tại chỗ: Các phương pháp này điều trị ung thư tại chỗ, bao gồm phẫu thuật và xạ trị.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_treatment'})
+MERGE (o2:disease {id: 'ung_thư_vú_giai_đoạn_1_disease'})
+MERGE (o1)-[r106:treatedBy]->(o2)
+SET r106.text = 'Các lựa chọn điều trị bệnh ung thư vú giai đoạn 1 được chia thành hai loại chính:  Phương pháp điều trị tại chỗ: Các phương pháp này điều trị ung thư tại chỗ, bao gồm phẫu thuật và xạ trị.'
+
+MERGE (o1:treatment {id: 'xạ_trị_treatment'})
+MERGE (o2:disease {id: 'ung_thư_vú_giai_đoạn_1_disease'})
+MERGE (o1)-[r107:treatedBy]->(o2)
+SET r107.text = 'Các lựa chọn điều trị bệnh ung thư vú giai đoạn 1 được chia thành hai loại chính:  Phương pháp điều trị tại chỗ: Các phương pháp này điều trị ung thư tại chỗ, bao gồm phẫu thuật và xạ trị.'
+
+MERGE (o1:treatment {id: 'phương_pháp_điều_trị_toàn_thân_treatment'})
+MERGE (o2:disease {id: 'ung_thư_vú_giai_đoạn_1_disease'})
+MERGE (o1)-[r108:treatedBy]->(o2)
+SET r108.text = 'Các lựa chọn điều trị bệnh ung thư vú giai đoạn 1 được chia thành hai loại chính:  Phương pháp điều trị toàn thân: Những phương pháp này điều trị hệ thống, bao gồm hóa trị, liệu pháp nội tiết, liệu pháp nhắm mục tiêu và liệu pháp miễn dịch.'
+
+MERGE (o1:treatment {id: 'hóa_trị_treatment'})
+MERGE (o2:disease {id: 'ung_thư_vú_giai_đoạn_1_disease'})
+MERGE (o1)-[r109:treatedBy]->(o2)
+SET r109.text = 'Các lựa chọn điều trị bệnh ung thư vú giai đoạn 1 được chia thành hai loại chính:  Phương pháp điều trị toàn thân: Những phương pháp này điều trị hệ thống, bao gồm hóa trị, liệu pháp nội tiết, liệu pháp nhắm mục tiêu và liệu pháp miễn dịch.'
+
+MERGE (o1:treatment {id: 'liệu_pháp_nội_tiết_treatment'})
+MERGE (o2:disease {id: 'ung_thư_vú_giai_đoạn_1_disease'})
+MERGE (o1)-[r110:treatedBy]->(o2)
+SET r110.text = 'Các lựa chọn điều trị bệnh ung thư vú giai đoạn 1 được chia thành hai loại chính:  Phương pháp điều trị toàn thân: Những phương pháp này điều trị hệ thống, bao gồm hóa trị, liệu pháp nội tiết, liệu pháp nhắm mục tiêu và liệu pháp miễn dịch.'
+
+MERGE (o1:treatment {id: 'liệu_pháp_nhắm_mục_tiêu_treatment'})
+MERGE (o2:disease {id: 'ung_thư_vú_giai_đoạn_1_disease'})
+MERGE (o1)-[r111:treatedBy]->(o2)
+SET r111.text = 'Các lựa chọn điều trị bệnh ung thư vú giai đoạn 1 được chia thành hai loại chính:  Phương pháp điều trị toàn thân: Những phương pháp này điều trị hệ thống, bao gồm hóa trị, liệu pháp nội tiết, liệu pháp nhắm mục tiêu và liệu pháp miễn dịch.'
+
+MERGE (o1:treatment {id: 'liệu_pháp_miễn_dịch_treatment'})
+MERGE (o2:disease {id: 'ung_thư_vú_giai_đoạn_1_disease'})
+MERGE (o1)-[r112:treatedBy]->(o2)
+SET r112.text = 'Các lựa chọn điều trị bệnh ung thư vú giai đoạn 1 được chia thành hai loại chính:  Phương pháp điều trị toàn thân: Những phương pháp này điều trị hệ thống, bao gồm hóa trị, liệu pháp nội tiết, liệu pháp nhắm mục tiêu và liệu pháp miễn dịch.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:treatment {id: 'điều_trị_tại_chỗ_treatment'})
+MERGE (o1)-[r113:treatedBy]->(o2)
+SET r113.text = 'Nếu khối u rất nhỏ, thường chỉ cần điều trị tại chỗ.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:treatment {id: 'phương_pháp_điều_trị_toàn_thân_treatment'})
+MERGE (o1)-[r114:treatedBy]->(o2)
+SET r114.text = 'Trường hợp khối u lớn hơn, xâm lấn hơn đã lan đến các hạch bạch huyết hoặc có cấu trúc phân tử cho thấy có nhiều khả năng lan xa hơn, bác sĩ thường chỉ định điều trị bằng các phương pháp toàn thân.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:organ {id: 'hạch_bạch_huyết_organ'})
+MERGE (o1)-[r115:affects]->(o2)
+SET r115.text = 'Trường hợp khối u lớn hơn, xâm lấn hơn đã lan đến các hạch bạch huyết hoặc có cấu trúc phân tử cho thấy có nhiều khả năng lan xa hơn, bác sĩ thường chỉ định điều trị bằng các phương pháp toàn thân.'
+
+MERGE (o1:treatment {id: 'liệu_pháp_toàn_thân_treatment'})
+MERGE (o2:disease {id: 'ung_thư_vú_giai_đoạn_1_disease'})
+MERGE (o1)-[r116:treatedBy]->(o2)
+SET r116.text = 'Với ung thư vú giai đoạn 1, việc sử dụng liệu pháp toàn thân được xem là liệu pháp bổ trợ nhằm loại bỏ bất kỳ tế bào ung thư có thể đã lan ra ngoài vú.'
+
+MERGE (o1:disease {id: 'ung_thư_vú_giai_đoạn_1_disease'})
+MERGE (o2:treatment {id: 'phẫu_thuật_treatment'})
+MERGE (o1)-[r117:treatedBy]->(o2)
+SET r117.text = 'Phần lớn các bệnh nhân ung thư vú giai đoạn 1 thường được điều trị bằng phẫu thuật.'
+
+MERGE (o1:treatment {id: 'cắt_bỏ_khối_u_treatment'})
+MERGE (o2:disease {id: 'ung_thư_vú_disease'})
+MERGE (o1)-[r118:treatedBy]->(o2)
+SET r118.text = 'Các lựa chọn bao gồm cắt bỏ khối u (chỉ cắt bỏ một phần vú) hoặc cắt bỏ vú (cắt bỏ toàn bộ vú).'
+
+MERGE (o1:treatment {id: 'cắt_bỏ_vú_treatment'})
+MERGE (o2:disease {id: 'ung_thư_vú_disease'})
+MERGE (o1)-[r119:treatedBy]->(o2)
+SET r119.text = 'Các lựa chọn bao gồm cắt bỏ khối u (chỉ cắt bỏ một phần vú) hoặc cắt bỏ vú (cắt bỏ toàn bộ vú).'
+
+MERGE (o1:treatment {id: 'xạ_trị_treatment'})
+MERGE (o2:disease {id: 'ung_thư_disease'})
+MERGE (o1)-[r120:treatedBy]->(o2)
+SET r120.text = 'Nếu cắt bỏ khối u, sau phẫu thuật người bệnh thường được xạ trị để kiểm soát ung thư và ngăn ngừa tái phát.'
+
+MERGE (o1:treatment {id: 'xạ_trị_treatment'})
+MERGE (o2:disease {id: 'tái_phát_disease'})
+MERGE (o1)-[r121:preventedBy]->(o2)
+SET r121.text = 'Nếu cắt bỏ khối u, sau phẫu thuật người bệnh thường được xạ trị để kiểm soát ung thư và ngăn ngừa tái phát.'
+
+MERGE (o1:treatment {id: 'tái_tạo_vú_treatment'})
+MERGE (o2:disease {id: 'ung_thư_vú_disease'})
+MERGE (o1)-[r122:treatedBy]->(o2)
+SET r122.text = 'Nếu cắt bỏ toàn bộ vú, người bệnh có thể được tái tạo vú ngay trong phẫu thuật cắt bỏ.'
+
+MERGE (o1:treatment {id: 'tạo_hình_treatment'})
+MERGE (o2:disease {id: 'ung_thư_vú_disease'})
+MERGE (o1)-[r123:treatedBy]->(o2)
+SET r123.text = 'Trong quy trình này, tạo hình thường được đặt cùng lúc với phẫu thuật cắt bỏ vú.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_cắt_bỏ_vú_treatment'})
+MERGE (o2:cause {id: 'yếu_tố_nguy_cơ_cause'})
+MERGE (o1)-[r124:relatedTo]->(o2)
+SET r124.text = 'Ngoài ra, tùy thuộc vào các yếu tố nguy cơ, người bệnh có thể cần phải cân nhắc giữa rủi ro và lợi ích của việc phẫu thuật cắt bỏ vú một lần so với hai lần.'
+
+MERGE (o1:treatment {id: 'hóa_trị_treatment'})
+MERGE (o2:disease {id: 'ung_thư_vú_giai_đoạn_1_disease'})
+MERGE (o1)-[r125:treatedBy]->(o2)
+SET r125.text = 'Hóa trị đôi khi được sử dụng như một phương pháp điều trị bổ trợ cho ung thư vú giai đoạn 1.'
+
+MERGE (o1:disease {id: 'tế_bào_ung_thư_disease'})
+MERGE (o2:treatment {id: 'hóa_trị_treatment'})
+MERGE (o1)-[r126:treatedBy]->(o2)
+SET r126.text = 'Phương pháp này nhằm điều trị bất kỳ tế bào ung thư nào đã lan ra khỏi vú trước khi phát triển thành di căn.'
+
+MERGE (o1:disease {id: 'di_căn_disease'})
+MERGE (o2:disease {id: 'tế_bào_ung_thư_disease'})
+MERGE (o1)-[r127:causedBy]->(o2)
+SET r127.text = 'Phương pháp này nhằm điều trị bất kỳ tế bào ung thư nào đã lan ra khỏi vú trước khi phát triển thành di căn.'
+
+MERGE (o1:treatment {id: 'hóa_trị_treatment'})
+MERGE (o2:disease {id: 'khối_u_disease'})
+MERGE (o1)-[r128:relatedTo]->(o2)
+SET r128.text = 'Việc sử dụng hóa trị cũng phụ thuộc rất nhiều vào tình trạng đáp ứng của khối u.'
+
+MERGE (o1:treatment {id: 'hóa_trị_treatment'})
+MERGE (o2:disease {id: 'bệnh_nhân_her-2_dương_tính_disease'})
+MERGE (o1)-[r129:treatedBy]->(o2)
+SET r129.text = 'Ở một bệnh nhân HER-2 dương tính hoặc bộ ba âm tính, hóa trị thường được sử dụng ngay cả khi các hạch bạch huyết hoàn toàn âm tính.'
+
+MERGE (o1:treatment {id: 'hóa_trị_treatment'})
+MERGE (o2:disease {id: 'bệnh_nhân_bộ_ba_âm_tính_disease'})
+MERGE (o1)-[r130:treatedBy]->(o2)
+SET r130.text = 'Ở một bệnh nhân HER-2 dương tính hoặc bộ ba âm tính, hóa trị thường được sử dụng ngay cả khi các hạch bạch huyết hoàn toàn âm tính.'
+
+MERGE (o1:organ {id: 'hạch_bạch_huyết_organ'})
+MERGE (o2:disease {id: 'bệnh_nhân_her-2_dương_tính_disease'})
+MERGE (o1)-[r131:relatedTo]->(o2)
+SET r131.text = 'Ở một bệnh nhân HER-2 dương tính hoặc bộ ba âm tính, hóa trị thường được sử dụng ngay cả khi các hạch bạch huyết hoàn toàn âm tính.'
+
+MERGE (o1:organ {id: 'hạch_bạch_huyết_organ'})
+MERGE (o2:disease {id: 'bệnh_nhân_bộ_ba_âm_tính_disease'})
+MERGE (o1)-[r132:relatedTo]->(o2)
+SET r132.text = 'Ở một bệnh nhân HER-2 dương tính hoặc bộ ba âm tính, hóa trị thường được sử dụng ngay cả khi các hạch bạch huyết hoàn toàn âm tính.'
+
+MERGE (o1:treatment {id: 'hóa_trị_liệu_treatment'})
+MERGE (o2:disease {id: 'người_bệnh_disease'})
+MERGE (o1)-[r133:relatedTo]->(o2)
+SET r133.text = 'Tuy nhiên, rất khó để xác định rằng người bệnh có thể được hưởng lợi từ hóa trị liệu hay không.'
+
+MERGE (o1:disease {id: 'khối_u_vú_giai_đoạn_1_disease'})
+MERGE (o2:organ {id: 'thụ_thể_hormone_organ'})
+MERGE (o1)-[r134:relatedTo]->(o2)
+SET r134.text = 'Điều này càng đặc biệt khó ở các khối u vú giai đoạn 1 âm tính hoặc dương tính với các thụ thể hormone hoặc âm tính với HER-2.'
+
+MERGE (o1:disease {id: 'khối_u_vú_giai_đoạn_1_disease'})
+MERGE (o2:organ {id: 'her-2_organ'})
+MERGE (o1)-[r135:relatedTo]->(o2)
+SET r135.text = 'Điều này càng đặc biệt khó ở các khối u vú giai đoạn 1 âm tính hoặc dương tính với các thụ thể hormone hoặc âm tính với HER-2.'
+
+MERGE (o1:treatment {id: 'xạ_trị_treatment'})
+MERGE (o2:organ {id: 'mô_vú_organ'})
+MERGE (o1)-[r136:treatedBy]->(o2)
+SET r136.text = 'Nếu cắt bỏ khối u, xạ trị thường được sử dụng để điều trị các mô vú còn lại.'
+
+MERGE (o1:treatment {id: 'xạ_trị_treatment'})
+MERGE (o2:treatment {id: 'cắt_bỏ_khối_u_treatment'})
+MERGE (o1)-[r137:treatedBy]->(o2)
+SET r137.text = 'Xạ trị có thể được thực hiện sau khi cắt bỏ khối u và cắt bỏ vú.'
+
+MERGE (o1:treatment {id: 'xạ_trị_treatment'})
+MERGE (o2:treatment {id: 'cắt_bỏ_vú_treatment'})
+MERGE (o1)-[r138:treatedBy]->(o2)
+SET r138.text = 'Xạ trị có thể được thực hiện sau khi cắt bỏ khối u và cắt bỏ vú.'
+
+MERGE (o1:treatment {id: 'xạ_trị_treatment'})
+MERGE (o2:disease {id: 'tế_bào_ung_thư_disease'})
+MERGE (o1)-[r139:treatedBy]->(o2)
+SET r139.text = 'Xạ trị giúp tiêu diệt các tế bào ung thư có thể còn sót lại hoặc những tế bào quá nhỏ không thể nhìn thấy.'
+
+MERGE (o1:treatment {id: 'liệu_pháp_nội_tiết_tố_treatment'})
+MERGE (o2:disease {id: 'ung_thư_disease'})
+MERGE (o1)-[r140:treatedBy]->(o2)
+SET r140.text = 'Nếu khối u dương tính với thụ thể estrogen, liệu pháp nội tiết tố thường được khuyến cáo sau khi điều trị bằng phẫu thuật, hóa trị và xạ trị nhằm giảm nguy cơ ung thư tái phát, di căn.'
+
+MERGE (o1:treatment {id: 'liệu_pháp_nội_tiết_tố_treatment'})
+MERGE (o2:disease {id: 'tái_phát_disease'})
+MERGE (o1)-[r141:preventedBy]->(o2)
+SET r141.text = 'Nếu khối u dương tính với thụ thể estrogen, liệu pháp nội tiết tố thường được khuyến cáo sau khi điều trị bằng phẫu thuật, hóa trị và xạ trị nhằm giảm nguy cơ ung thư tái phát, di căn.'
+
+MERGE (o1:treatment {id: 'liệu_pháp_nội_tiết_tố_treatment'})
+MERGE (o2:disease {id: 'di_căn_disease'})
+MERGE (o1)-[r142:preventedBy]->(o2)
+SET r142.text = 'Nếu khối u dương tính với thụ thể estrogen, liệu pháp nội tiết tố thường được khuyến cáo sau khi điều trị bằng phẫu thuật, hóa trị và xạ trị nhằm giảm nguy cơ ung thư tái phát, di căn.'
+
+MERGE (o1:treatment {id: 'liệu_pháp_nội_tiết_tố_treatment'})
+MERGE (o2:disease {id: 'khối_u_disease'})
+MERGE (o1)-[r143:treatedBy]->(o2)
+SET r143.text = 'Nếu khối u dương tính với thụ thể estrogen, liệu pháp nội tiết tố thường được khuyến cáo sau khi điều trị bằng phẫu thuật, hóa trị và xạ trị nhằm giảm nguy cơ ung thư tái phát, di căn.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:organ {id: 'thụ_thể_estrogen_organ'})
+MERGE (o1)-[r144:relatedTo]->(o2)
+SET r144.text = 'Khối u dương tính với thụ thể estrogen có nhiều khả năng tái phát muộn (hơn 5 năm sau khi chẩn đoán).'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:test {id: 'chẩn_đoán_test'})
+MERGE (o1)-[r145:preventedBy]->(o2)
+SET r145.text = 'Khối u dương tính với thụ thể estrogen có nhiều khả năng tái phát muộn (hơn 5 năm sau khi chẩn đoán).'
+
+MERGE (o1:treatment {id: 'tamoxifen_treatment'})
+MERGE (o2:disease {id: 'phụ_nữ_tiền_mãn_kinh_disease'})
+MERGE (o1)-[r146:treatedBy]->(o2)
+SET r146.text = 'Thuốc tamoxifen thường được dùng cho phụ nữ tiền mãn kinh.'
+
+MERGE (o1:treatment {id: 'chất_ức_chế_aromatase_treatment'})
+MERGE (o2:disease {id: 'phụ_nữ_sau_mãn_kinh_disease'})
+MERGE (o1)-[r147:treatedBy]->(o2)
+SET r147.text = 'Phụ nữ sau mãn kinh thường được điều trị bằng chất ức chế aromatase như Aromasin (exemestane), Arimidex (anastrozole), hoặc Femara (letrozole).'
+
+MERGE (o1:treatment {id: 'aromasin_(exemestane)_treatment'})
+MERGE (o2:disease {id: 'phụ_nữ_sau_mãn_kinh_disease'})
+MERGE (o1)-[r148:treatedBy]->(o2)
+SET r148.text = 'Phụ nữ sau mãn kinh thường được điều trị bằng chất ức chế aromatase như Aromasin (exemestane), Arimidex (anastrozole), hoặc Femara (letrozole).'
+
+MERGE (o1:treatment {id: 'arimidex_(anastrozole)_treatment'})
+MERGE (o2:disease {id: 'phụ_nữ_sau_mãn_kinh_disease'})
+MERGE (o1)-[r149:treatedBy]->(o2)
+SET r149.text = 'Phụ nữ sau mãn kinh thường được điều trị bằng chất ức chế aromatase như Aromasin (exemestane), Arimidex (anastrozole), hoặc Femara (letrozole).'
+
+MERGE (o1:treatment {id: 'femara_(letrozole)_treatment'})
+MERGE (o2:disease {id: 'phụ_nữ_sau_mãn_kinh_disease'})
+MERGE (o1)-[r150:treatedBy]->(o2)
+SET r150.text = 'Phụ nữ sau mãn kinh thường được điều trị bằng chất ức chế aromatase như Aromasin (exemestane), Arimidex (anastrozole), hoặc Femara (letrozole).'
+
+MERGE (o1:treatment {id: 'chất_ức_chế_aromatase_treatment'})
+MERGE (o2:disease {id: 'phụ_nữ_tiền_mãn_kinh_disease'})
+MERGE (o1)-[r151:treatedBy]->(o2)
+SET r151.text = 'Ở một số phụ nữ tiền mãn kinh có nguy cơ cao, chất ức chế aromatase đôi khi được sử dụng cùng với thuốc ức chế chức năng buồng trứng.'
+
+MERGE (o1:treatment {id: 'thuốc_ức_chế_chức_năng_buồng_trứng_treatment'})
+MERGE (o2:disease {id: 'phụ_nữ_tiền_mãn_kinh_disease'})
+MERGE (o1)-[r152:treatedBy]->(o2)
+SET r152.text = 'Ở một số phụ nữ tiền mãn kinh có nguy cơ cao, chất ức chế aromatase đôi khi được sử dụng cùng với thuốc ức chế chức năng buồng trứng.'
+
+MERGE (o1:treatment {id: 'liệu_pháp_nhắm_mục_tiêu_her2_treatment'})
+MERGE (o2:organ {id: 'her2_organ'})
+MERGE (o1)-[r153:treatedBy]->(o2)
+SET r153.text = 'Là các liệu pháp được nhắm mục tiêu HER2.'
+
+MERGE (o1:treatment {id: 'thuốc_nhắm_mục_tiêu_her2_treatment'})
+MERGE (o2:disease {id: 'khối_u_her2_dương_tính_disease'})
+MERGE (o1)-[r154:treatedBy]->(o2)
+SET r154.text = 'Nếu khối u HER2 dương tính, thuốc nhắm mục tiêu HER2 như Herceptin (trastuzumab) thường được chỉ định.'
+
+MERGE (o1:treatment {id: 'herceptin_(trastuzumab)_treatment'})
+MERGE (o2:disease {id: 'khối_u_her2_dương_tính_disease'})
+MERGE (o1)-[r155:treatedBy]->(o2)
+SET r155.text = 'Nếu khối u HER2 dương tính, thuốc nhắm mục tiêu HER2 như Herceptin (trastuzumab) thường được chỉ định.'
+
+MERGE (o1:test {id: 'thử_nghiệm_lâm_sàng_test'})
+MERGE (o2:treatment {id: 'điều_trị_ung_thư_vú_treatment'})
+MERGE (o1)-[r156:relatedTo]->(o2)
+SET r156.text = 'Cách duy nhất để đạt được tiến bộ trong điều trị ung thư vú là thông qua việc nghiên cứu các loại thuốc và quy trình mới trong các thử nghiệm lâm sàng.'
+
+MERGE (o1:test {id: 'thử_nghiệm_lâm_sàng_test'})
+MERGE (o2:treatment {id: 'phương_pháp_điều_trị_treatment'})
+MERGE (o1)-[r157:relatedTo]->(o2)
+SET r157.text = 'Rất nhiều lầm tưởng về các thử nghiệm lâm sàng, nhưng sự thật là mọi phương pháp điều trị đang được sử dụng ngày nay đều đã từng được nghiên cứu trong một thử nghiệm lâm sàng.'

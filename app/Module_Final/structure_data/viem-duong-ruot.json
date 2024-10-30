@@ -1,0 +1,1034 @@
+[
+    {
+        "text": "Đến thời điểm hiện tại, nguyên nhân gây viêm đường ruột vẫn chưa được xác định chính xác.",
+        "head": "nguyên nhân gây viêm đường ruột",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "viêm đường ruột",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Trước đây, chế độ ăn uống và tâm lý căng thẳng được nghi ngờ nhưng bác sĩ kết luận đây không phải là nguyên nhân gây bệnh mà chỉ là những yếu tố làm bệnh nặng hơn.",
+        "head": "chế độ ăn uống",
+        "head_type": "lifestyle",
+        "relation": "aggravatedBy",
+        "tail": "viêm đường ruột",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Trước đây, chế độ ăn uống và tâm lý căng thẳng được nghi ngờ nhưng bác sĩ kết luận đây không phải là nguyên nhân gây bệnh mà chỉ là những yếu tố làm bệnh nặng hơn.",
+        "head": "tâm lý căng thẳng",
+        "head_type": "lifestyle",
+        "relation": "aggravatedBy",
+        "tail": "viêm đường ruột",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nhiều nghiên cứu cho thấy có thể do rối loạn chức năng hệ thống miễn dịch.",
+        "head": "rối loạn chức năng hệ thống miễn dịch",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "viêm đường ruột",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi hệ thống miễn dịch chống lại sự xâm nhập của virus, vi khuẩn, phản ứng miễn dịch bất thường làm hệ thống miễn dịch tấn công nhầm vào các tế bào trong đường tiêu hóa.",
+        "head": "hệ thống miễn dịch",
+        "head_type": "organ",
+        "relation": "affects",
+        "tail": "các tế bào trong đường tiêu hóa",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Ngoài ra, một số đột biến gen cũng liên quan đến tình trạng viêm ruột.",
+        "head": "đột biến gen",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "viêm ruột",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các yếu tố nguy cơ:  Tuổi tác: Viêm ruột thường xảy ra phổ biến ở những người dưới 30 tuổi, một số trường hợp xuất hiện trong giai đoạn 50 - 60 tuổi.",
+        "head": "Tuổi tác",
+        "head_type": "cause",
+        "relation": "associatedWith",
+        "tail": "viêm ruột",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Chủng tộc: Viêm đường ruột xảy ra phổ biến ở người da trắng.",
+        "head": "Chủng tộc",
+        "head_type": "cause",
+        "relation": "associatedWith",
+        "tail": "viêm đường ruột",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tiền sử gia đình có người mắc bệnh",
+        "head": "Tiền sử gia đình có người mắc bệnh",
+        "head_type": "cause",
+        "relation": "associatedWith",
+        "tail": "viêm đường ruột",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Thói quen hút thuốc lá",
+        "head": "Thói quen hút thuốc lá",
+        "head_type": "lifestyle",
+        "relation": "aggravatedBy",
+        "tail": "viêm đường ruột",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Sử dụng thuốc chống viêm không steroid, gồm: Ibuprofen, Naproxen natri, Diclofenac natri…",
+        "head": "thuốc chống viêm không steroid",
+        "head_type": "treatment",
+        "relation": "aggravatedBy",
+        "tail": "viêm đường ruột",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Xét nghiệm đánh giá thiếu máu hoặc nhiễm trùng: Mục đích là để kiểm tra tình trạng thiếu máu (thiếu hồng cầu, gây giảm vận chuyển oxy đến các mô) hoặc dấu hiệu nhiễm trùng do vi khuẩn hoặc virus.",
+        "head": "Xét nghiệm đánh giá thiếu máu hoặc nhiễm trùng",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "viêm đường ruột",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Xét nghiệm phân: Bác sĩ tiến hành xét nghiệm phân tích mẫu phân để phát hiện máu ẩn và ký sinh trùng.",
+        "head": "Xét nghiệm phân",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "viêm đường ruột",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nội soi đại tràng: Bác sĩ sử dụng một ống nội soi nhỏ được gắn máy ảnh để xem xét toàn bộ đại tràng bên trong.",
+        "head": "Nội soi đại tràng",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "viêm đường ruột",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nội soi đại tràng sigma: Bác sĩ sử dụng một ống soi nhỏ để kiểm tra trực tràng và đại tràng sigma.",
+        "head": "Nội soi đại tràng sigma",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "viêm đường ruột",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nội soi viên nang: Người bệnh nuốt một viên nang có chứa camera bên trong.",
+        "head": "Nội soi viên nang",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "viêm đường ruột",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nội soi ruột non dùng bóng hỗ trợ: Xét nghiệm này cho phép nhìn sâu hơn vào bên trong ruột non - vị trí mà máy nội soi tiêu chuẩn không thể di chuyển tới.",
+        "head": "Nội soi ruột non dùng bóng hỗ trợ",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "viêm đường ruột",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nội soi tiêu hóa trên: bác sĩ dùng ống soi để kiểm tra thực quản, dạ dày và tá tràng.",
+        "head": "Nội soi tiêu hóa trên",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "viêm đường ruột",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Những vùng này ít khi bị tổn thương trong bệnh Crohn nên xét nghiệm này thường được thực hiện chỉ khi bệnh nhân có triệu chứng buồn nôn, nôn, nuốt khó hoặc đau vùng bụng trên.",
+        "head": "buồn nôn",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "bệnh Crohn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Những vùng này ít khi bị tổn thương trong bệnh Crohn nên xét nghiệm này thường được thực hiện chỉ khi bệnh nhân có triệu chứng buồn nôn, nôn, nuốt khó hoặc đau vùng bụng trên.",
+        "head": "nôn",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "bệnh Crohn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Những vùng này ít khi bị tổn thương trong bệnh Crohn nên xét nghiệm này thường được thực hiện chỉ khi bệnh nhân có triệu chứng buồn nôn, nôn, nuốt khó hoặc đau vùng bụng trên.",
+        "head": "nuốt khó",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "bệnh Crohn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Chụp X-quang: Nếu người bệnh có các triệu chứng nghiêm trọng, bác sĩ có thể chỉ định chụp X-quang vùng bụng để kiểm tra tình trạng phình đại tràng hoặc thủng đại tràng.",
+        "head": "Chụp X-quang",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "Phình đại tràng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Chụp X-quang: Nếu người bệnh có các triệu chứng nghiêm trọng, bác sĩ có thể chỉ định chụp X-quang vùng bụng để kiểm tra tình trạng phình đại tràng hoặc thủng đại tràng.",
+        "head": "Chụp X-quang",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "Thủng đại tràng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Chụp cắt lớp vi tính (CT): Phương pháp chụp cắt lớp vi tính (CT) giúp thu được hình ảnh chi tiết về toàn bộ ruột cũng như các mô bên ngoài ruột.",
+        "head": "Chụp cắt lớp vi tính (CT)",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "Viêm đường ruột",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Chụp cắt lớp vi tính (CT): Phương pháp chụp cắt lớp vi tính (CT) giúp thu được hình ảnh chi tiết về toàn bộ ruột cũng như các mô bên ngoài ruột.",
+        "head": "Chụp cắt lớp vi tính (CT)",
+        "head_type": "test",
+        "relation": "affects",
+        "tail": "Ruột",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Chụp cộng hưởng từ (MRI): Máy quét MRI sử dụng từ trường để tạo ra hình ảnh chi tiết về các mô, cơ quan, từ đó giúp phát hiện lỗ rò xung quanh hậu môn hoặc ruột non.",
+        "head": "Chụp cộng hưởng từ (MRI)",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "Lỗ rò xung quanh hậu môn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Chụp cộng hưởng từ (MRI): Máy quét MRI sử dụng từ trường để tạo ra hình ảnh chi tiết về các mô, cơ quan, từ đó giúp phát hiện lỗ rò xung quanh hậu môn hoặc ruột non.",
+        "head": "Chụp cộng hưởng từ (MRI)",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "Lỗ rò xung quanh ruột non",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Xét nghiệm hình ảnh có thể được chỉ định trong chẩn đoán bệnh viêm đường ruột",
+        "head": "Xét nghiệm hình ảnh",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "Viêm đường ruột",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tùy theo mức độ nghiêm trọng của bệnh viêm đường ruột, bác sĩ sẽ chỉ định phương pháp điều trị phù hợp:",
+        "head": "Viêm đường ruột",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "Phương pháp điều trị",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Đối với hầu hết các trường hợp bệnh viêm đường ruột, bác sĩ sẽ chỉ định sử dụng một số loại thuốc điều trị như sau:",
+        "head": "Viêm đường ruột",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "Thuốc điều trị",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Nhóm thuốc chống viêm:  Thuốc chống viêm nhóm aminosalicylate như mesalamine, balsalazide, olsalazine thường là giải pháp đầu tiên trong điều trị viêm loét đại tràng từ nhẹ đến trung bình.",
+        "head": "Thuốc chống viêm nhóm aminosalicylate",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Viêm loét đại tràng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nhóm thuốc chống viêm:  Thuốc chống viêm nhóm aminosalicylate như mesalamine, balsalazide, olsalazine thường là giải pháp đầu tiên trong điều trị viêm loét đại tràng từ nhẹ đến trung bình.",
+        "head": "Mesalamine",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Viêm loét đại tràng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nhóm thuốc chống viêm:  Thuốc chống viêm nhóm aminosalicylate như mesalamine, balsalazide, olsalazine thường là giải pháp đầu tiên trong điều trị viêm loét đại tràng từ nhẹ đến trung bình.",
+        "head": "Balsalazide",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Viêm loét đại tràng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nhóm thuốc chống viêm:  Thuốc chống viêm nhóm aminosalicylate như mesalamine, balsalazide, olsalazine thường là giải pháp đầu tiên trong điều trị viêm loét đại tràng từ nhẹ đến trung bình.",
+        "head": "Olsalazine",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Viêm loét đại tràng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Thuốc ức chế miễn dịch: Những loại thuốc này hoạt động với cơ chế ngăn chặn phản ứng miễn dịch giải phóng các hóa chất gây viêm trong cơ thể, từ đó tránh tình trạng tổn thương niêm mạc ruột.",
+        "head": "Thuốc ức chế miễn dịch",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Viêm đường ruột",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Thuốc ức chế miễn dịch: Những loại thuốc này hoạt động với cơ chế ngăn chặn phản ứng miễn dịch giải phóng các hóa chất gây viêm trong cơ thể, từ đó tránh tình trạng tổn thương niêm mạc ruột.",
+        "head": "Thuốc ức chế miễn dịch",
+        "head_type": "treatment",
+        "relation": "affects",
+        "tail": "Phản ứng miễn dịch",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Thuốc ức chế miễn dịch: Những loại thuốc này hoạt động với cơ chế ngăn chặn phản ứng miễn dịch giải phóng các hóa chất gây viêm trong cơ thể, từ đó tránh tình trạng tổn thương niêm mạc ruột.",
+        "head": "Thuốc ức chế miễn dịch",
+        "head_type": "treatment",
+        "relation": "affects",
+        "tail": "Hóa chất gây viêm",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Thuốc ức chế miễn dịch: Những loại thuốc này hoạt động với cơ chế ngăn chặn phản ứng miễn dịch giải phóng các hóa chất gây viêm trong cơ thể, từ đó tránh tình trạng tổn thương niêm mạc ruột.",
+        "head": "Thuốc ức chế miễn dịch",
+        "head_type": "treatment",
+        "relation": "affects",
+        "tail": "Tổn thương niêm mạc ruột",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Một số loại thường được chỉ định gồm: azathioprine, mercaptopurine, methotrexate.",
+        "head": "azathioprine, mercaptopurine, methotrexate",
+        "head_type": "treatment",
+        "relation": "isSymptomOf",
+        "tail": "Thuốc ức chế miễn dịch",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Thuốc sinh học: thuốc sinh học là nhóm thuốc mới được dùng để ức chế những protein gây ra phản ứng viêm trong cơ thể.",
+        "head": "Thuốc sinh học",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Viêm đường ruột",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Thuốc sinh học: thuốc sinh học là nhóm thuốc mới được dùng để ức chế những protein gây ra phản ứng viêm trong cơ thể.",
+        "head": "Thuốc sinh học",
+        "head_type": "treatment",
+        "relation": "affects",
+        "tail": "Protein gây ra phản ứng viêm",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Một số thuốc thường dùng là infliximab, adalimumab, certolizumab, vedolizumab, ustekinumab.",
+        "head": "infliximab, adalimumab, certolizumab, vedolizumab, ustekinumab",
+        "head_type": "treatment",
+        "relation": "isSymptomOf",
+        "tail": "Thuốc sinh học",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Thuốc kháng sinh thường dùng khi nghi ngờ có tình trạng nhiễm trùng, như trong trường hợp bệnh Crohn quanh hậu môn.",
+        "head": "Thuốc kháng sinh",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Nhiễm trùng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Thuốc kháng sinh thường dùng khi nghi ngờ có tình trạng nhiễm trùng, như trong trường hợp bệnh Crohn quanh hậu môn.",
+        "head": "Thuốc kháng sinh",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Bệnh Crohn quanh hậu môn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Thuốc chống tiêu chảy: Thuốc bổ sung chất xơ như bột psyllium, methylcellulose.",
+        "head": "Thuốc chống tiêu chảy",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Tiêu chảy",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Thuốc chống tiêu chảy: Thuốc bổ sung chất xơ như bột psyllium, methylcellulose.",
+        "head": "Bột psyllium, methylcellulose",
+        "head_type": "treatment",
+        "relation": "isSymptomOf",
+        "tail": "Thuốc chống tiêu chảy",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Loperamid được dùng trong trường hợp tiêu chảy nặng.",
+        "head": "Loperamid",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Tiêu chảy nặng",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Thuốc giảm đau: Acetaminophen trong trường hợp đau nhẹ.",
+        "head": "Acetaminophen",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Đau nhẹ",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Nhóm thuốc giảm đau không steroid như ibuprofen, naproxen, diclofenac… có thể làm cho bệnh nặng hơn và nên tránh sử dụng.",
+        "head": "Ibuprofen, naproxen, diclofenac",
+        "head_type": "treatment",
+        "relation": "aggravatedBy",
+        "tail": "Viêm đường ruột",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Những người bị bệnh viêm đường ruột phải tham khảo ý kiến bác sĩ trước khi sử dụng thuốc.",
+        "head": "Bệnh viêm đường ruột",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "Thuốc",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Một số loại thuốc ức chế miễn dịch có thể làm tăng nguy cơ nhiễm trùng nặng.",
+        "head": "Thuốc ức chế miễn dịch",
+        "head_type": "treatment",
+        "relation": "aggravatedBy",
+        "tail": "Nhiễm trùng nặng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Do đó, người bệnh nên làm xét nghiệm tầm soát lao, viêm gan siêu vi B, C… và tiêm tất cả các loại vacxin được khuyến nghị trước khi bắt đầu điều trị các thuốc có khả năng ức chế miễn dịch.",
+        "head": "Xét nghiệm tầm soát lao, viêm gan siêu vi B, C",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "Viêm đường ruột",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Do đó, người bệnh nên làm xét nghiệm tầm soát lao, viêm gan siêu vi B, C… và tiêm tất cả các loại vacxin được khuyến nghị trước khi bắt đầu điều trị các thuốc có khả năng ức chế miễn dịch.",
+        "head": "Vacxin",
+        "head_type": "treatment",
+        "relation": "preventedBy",
+        "tail": "Viêm đường ruột",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Với các trường hợp nghiêm trọng không thể điều trị hiệu quả bằng thuốc, bác sĩ có thể đề nghị phẫu thuật, cụ thể như sau:  Phẫu thuật viêm loét đại tràng (cắt bỏ toàn bộ đại tràng và trực tràng).",
+        "head": "Phẫu thuật viêm loét đại tràng",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Viêm đường ruột",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Với các trường hợp nghiêm trọng không thể điều trị hiệu quả bằng thuốc, bác sĩ có thể đề nghị phẫu thuật, cụ thể như sau:  Phẫu thuật viêm loét đại tràng (cắt bỏ toàn bộ đại tràng và trực tràng).",
+        "head": "Phẫu thuật viêm loét đại tràng",
+        "head_type": "treatment",
+        "relation": "affects",
+        "tail": "Đại tràng và trực tràng",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Cắt bỏ một phần đường tiêu hóa bị tổn thương và nối các phần khỏe mạnh lại với nhau.",
+        "head": "Cắt bỏ một phần đường tiêu hóa",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Viêm đường ruột",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Cắt bỏ một phần đường tiêu hóa bị tổn thương và nối các phần khỏe mạnh lại với nhau.",
+        "head": "Cắt bỏ một phần đường tiêu hóa",
+        "head_type": "treatment",
+        "relation": "affects",
+        "tail": "Đường tiêu hóa",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Dưới đây là một số giải pháp điều trị tại nhà thường được chỉ định áp dụng cho tình trạng viêm đường ruột:  Hạn chế ăn các loại thực phẩm, đồ uống từ sữa để tránh làm trầm trọng hơn triệu chứng đau bụng, đầy hơi, tiêu chảy…",
+        "head": "Thực phẩm, đồ uống từ sữa",
+        "head_type": "food",
+        "relation": "aggravatedBy",
+        "tail": "Viêm đường ruột",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Dưới đây là một số giải pháp điều trị tại nhà thường được chỉ định áp dụng cho tình trạng viêm đường ruột:  Hạn chế ăn các loại thực phẩm, đồ uống từ sữa để tránh làm trầm trọng hơn triệu chứng đau bụng, đầy hơi, tiêu chảy…",
+        "head": "Đau bụng, đầy hơi, tiêu chảy",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm đường ruột",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ăn nhiều bữa nhỏ trong ngày (5 - 6 bữa nhỏ thay vì 2 - 3 bữa lớn).",
+        "head": "Ăn nhiều bữa nhỏ trong ngày",
+        "head_type": "lifestyle",
+        "relation": "treatedBy",
+        "tail": "Viêm đường ruột",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Uống nhiều nước mỗi ngày, tránh sử dụng rượu, trà, cà phê, đồ uống cáo gas.",
+        "head": "Uống nhiều nước mỗi ngày",
+        "head_type": "lifestyle",
+        "relation": "treatedBy",
+        "tail": "Viêm đường ruột",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Uống nhiều nước mỗi ngày, tránh sử dụng rượu, trà, cà phê, đồ uống cáo gas.",
+        "head": "Rượu, trà, cà phê, đồ uống cáo gas",
+        "head_type": "food",
+        "relation": "aggravatedBy",
+        "tail": "Viêm đường ruột",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Xem xét bổ sung Vitamin tổng hợp.",
+        "head": "Vitamin tổng hợp",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Viêm đường ruột",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tình trạng chán ăn, tiêu chảy và hấp thu kém do viêm có thể khiến cơ thể người bệnh khó nhận được lượng calo và chất dinh dưỡng cần thiết.",
+        "head": "Chán ăn, tiêu chảy, hấp thu kém",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm đường ruột",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Theo đó, trẻ em bị viêm đường ruột nên ăn nhiều loại thực phẩm có lợi, uống nhiều nước và tránh một số loại đồ ăn (sữa, cà phê…) dễ làm các triệu chứng trở nên tồi tệ hơn.",
+        "head": "Sữa, cà phê",
+        "head_type": "food",
+        "relation": "aggravatedBy",
+        "tail": "Viêm đường ruột",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Một số trường hợp có thể cần bổ sung Vitamin, khoáng chất, đặc biệt là Canxi và Vitamin D.",
+        "head": "Canxi và Vitamin D",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Viêm đường ruột",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Trẻ em không phát triển tốt đôi khi phải tham khảo các công thức đặc biệt khác để tăng cường lượng calo và dinh dưỡng.",
+        "head": "Công thức đặc biệt",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Viêm đường ruột",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Viêm đường ruột gây ra nhiều triệu chứng đau đớn, khó chịu, thậm chí có thể dẫn đến vô vàn biến chứng nghiêm trọng nếu không được điều trị hiệu quả.",
+        "head": "Viêm đường ruột",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Đau đớn, khó chịu",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Viêm đường ruột gây ra nhiều triệu chứng đau đớn, khó chịu, thậm chí có thể dẫn đến vô vàn biến chứng nghiêm trọng nếu không được điều trị hiệu quả.",
+        "head": "Viêm đường ruột",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Biến chứng nghiêm trọng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Hiện nay, chưa có phương pháp phòng ngừa bệnh viêm ruột.",
+        "head": "Viêm ruột",
+        "head_type": "disease",
+        "relation": "preventedBy",
+        "tail": "Phương pháp phòng ngừa",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Dưới đây là một số giải pháp hữu ích có thể giúp kiểm soát triệu chứng mà người bệnh nên thực hiện:(2)  Ăn các bữa nhỏ cách nhau 2 - 4 giờ.",
+        "head": "Ăn các bữa nhỏ cách nhau 2 - 4 giờ",
+        "head_type": "lifestyle",
+        "relation": "treatedBy",
+        "tail": "Viêm đường ruột",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Kiểm soát căng thẳng bằng cách thiền, tập thái cực quyền, yoga, nghe nhạc…",
+        "head": "Thiền, tập thái cực quyền, yoga, nghe nhạc",
+        "head_type": "lifestyle",
+        "relation": "treatedBy",
+        "tail": "Viêm đường ruột",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Duy trì ngủ đủ giấc và hoạt động thể chất đều đặn.",
+        "head": "Ngủ đủ giấc, hoạt động thể chất đều đặn",
+        "head_type": "lifestyle",
+        "relation": "treatedBy",
+        "tail": "Viêm đường ruột",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tránh tiêu thụ các loại thực phẩm có thể gây kích thích đường ruột điển hình là sữa, thức ăn nhiều gia vị, thức ăn nhiều dầu mỡ…",
+        "head": "Sữa, thức ăn nhiều gia vị, thức ăn nhiều dầu mỡ",
+        "head_type": "food",
+        "relation": "aggravatedBy",
+        "tail": "Viêm đường ruột",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Hạn chế tiêu thụ thức uống chứa cồn, caffeine, gas…",
+        "head": "Thức uống chứa cồn, caffeine, gas",
+        "head_type": "food",
+        "relation": "aggravatedBy",
+        "tail": "Viêm đường ruột",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Luôn uống nhiều nước mỗi ngày.",
+        "head": "Uống nhiều nước mỗi ngày",
+        "head_type": "lifestyle",
+        "relation": "treatedBy",
+        "tail": "Viêm đường ruột",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Từ bỏ thói quen hút thuốc lá.",
+        "head": "Hút thuốc lá",
+        "head_type": "lifestyle",
+        "relation": "aggravatedBy",
+        "tail": "Viêm đường ruột",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bệnh viêm ruột có thể dẫn đến nhiều biến chứng nghiêm trọng cho sức khỏe, thậm chí đe dọa đến tính mạng nếu không điều trị hiệu quả.",
+        "head": "Bệnh viêm ruột",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Biến chứng nghiêm trọng",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Bệnh viêm ruột có thể dẫn đến nhiều biến chứng nghiêm trọng cho sức khỏe, thậm chí đe dọa đến tính mạng nếu không điều trị hiệu quả.",
+        "head": "Bệnh viêm ruột",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Thiếu điều trị hiệu quả",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Bệnh viêm ruột có thể dẫn đến nhiều biến chứng nghiêm trọng cho sức khỏe, thậm chí đe dọa đến tính mạng nếu không điều trị hiệu quả.",
+        "head": "Biến chứng nghiêm trọng",
+        "head_type": "symptom",
+        "relation": "relatedTo",
+        "tail": "đe dọa đến tính mạng",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Một trong số đó là làm tăng nguy cơ mắc ung thư đại tràng.",
+        "head": "Bệnh viêm ruột",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Ung thư đại tràng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Vì vậy, người bệnh nên tầm soát, thăm khám định kỳ để theo dõi tình trạng một cách sát sao, tránh bệnh triển trầm trọng.",
+        "head": "Bệnh viêm ruột",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "Tầm soát, thăm khám định kỳ",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Chế độ ăn uống hằng ngày có thể ảnh hưởng đến hiệu quả cải thiện triệu chứng viêm ruột.",
+        "head": "Chế độ ăn uống",
+        "head_type": "lifestyle",
+        "relation": "affects",
+        "tail": "Triệu chứng viêm ruột",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Thực phẩm nên ăn: Thực phẩm giàu axit béo Omega-3 (hạt lanh, dầu cá…), thực phẩm dễ tiêu hóa (bánh mì, bột yến mạch…).",
+        "head": "Thực phẩm giàu axit béo Omega-3",
+        "head_type": "food",
+        "relation": "relatedTo",
+        "tail": "Bệnh viêm ruột",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Thực phẩm nên ăn: Thực phẩm giàu axit béo Omega-3 (hạt lanh, dầu cá…), thực phẩm dễ tiêu hóa (bánh mì, bột yến mạch…).",
+        "head": "Thực phẩm dễ tiêu hóa",
+        "head_type": "food",
+        "relation": "relatedTo",
+        "tail": "Bệnh viêm ruột",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Thực phẩm nên kiêng: Thực phẩm giàu Omega-6 (thịt đỏ, đồ chiên…), sữa, các sản phẩm từ sữa (phô mai, sữa chua…), thức ăn nhiều đường, đồ uống có cồn, caffeine…",
+        "head": "Thực phẩm giàu Omega-6",
+        "head_type": "food",
+        "relation": "aggravatedBy",
+        "tail": "Bệnh viêm ruột",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Thực phẩm nên kiêng: Thực phẩm giàu Omega-6 (thịt đỏ, đồ chiên…), sữa, các sản phẩm từ sữa (phô mai, sữa chua…), thức ăn nhiều đường, đồ uống có cồn, caffeine…",
+        "head": "Sữa",
+        "head_type": "food",
+        "relation": "aggravatedBy",
+        "tail": "Bệnh viêm ruột",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Thực phẩm nên kiêng: Thực phẩm giàu Omega-6 (thịt đỏ, đồ chiên…), sữa, các sản phẩm từ sữa (phô mai, sữa chua…), thức ăn nhiều đường, đồ uống có cồn, caffeine…",
+        "head": "Các sản phẩm từ sữa",
+        "head_type": "food",
+        "relation": "aggravatedBy",
+        "tail": "Bệnh viêm ruột",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Thực phẩm nên kiêng: Thực phẩm giàu Omega-6 (thịt đỏ, đồ chiên…), sữa, các sản phẩm từ sữa (phô mai, sữa chua…), thức ăn nhiều đường, đồ uống có cồn, caffeine…",
+        "head": "Thức ăn nhiều đường",
+        "head_type": "food",
+        "relation": "aggravatedBy",
+        "tail": "Bệnh viêm ruột",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Thực phẩm nên kiêng: Thực phẩm giàu Omega-6 (thịt đỏ, đồ chiên…), sữa, các sản phẩm từ sữa (phô mai, sữa chua…), thức ăn nhiều đường, đồ uống có cồn, caffeine…",
+        "head": "Đồ uống có cồn",
+        "head_type": "food",
+        "relation": "aggravatedBy",
+        "tail": "Bệnh viêm ruột",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Thực phẩm nên kiêng: Thực phẩm giàu Omega-6 (thịt đỏ, đồ chiên…), sữa, các sản phẩm từ sữa (phô mai, sữa chua…), thức ăn nhiều đường, đồ uống có cồn, caffeine…",
+        "head": "Caffeine",
+        "head_type": "food",
+        "relation": "aggravatedBy",
+        "tail": "Bệnh viêm ruột",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Viêm đường ruột nếu không được điều trị kịp thời về lâu dài có thể dẫn đến nhiều biến chứng nghiêm trọng như sau:(3)",
+        "head": "Viêm đường ruột",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Thiếu điều trị kịp thời",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Viêm đường ruột nếu không được điều trị kịp thời về lâu dài có thể dẫn đến nhiều biến chứng nghiêm trọng như sau:(3)",
+        "head": "Viêm đường ruột",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Biến chứng nghiêm trọng",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Ung thư đại tràng: Viêm loét đại tràng hoặc bệnh Crohn ảnh hưởng đến phần lớn ruột kết, có thể làm tăng nguy cơ ung thư cho cơ quan này.",
+        "head": "Ung thư đại tràng",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Viêm loét đại tràng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ung thư đại tràng: Viêm loét đại tràng hoặc bệnh Crohn ảnh hưởng đến phần lớn ruột kết, có thể làm tăng nguy cơ ung thư cho cơ quan này.",
+        "head": "Ung thư đại tràng",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Bệnh Crohn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ung thư đại tràng: Viêm loét đại tràng hoặc bệnh Crohn ảnh hưởng đến phần lớn ruột kết, có thể làm tăng nguy cơ ung thư cho cơ quan này.",
+        "head": "Viêm loét đại tràng",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Ruột kết",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Ung thư đại tràng: Viêm loét đại tràng hoặc bệnh Crohn ảnh hưởng đến phần lớn ruột kết, có thể làm tăng nguy cơ ung thư cho cơ quan này.",
+        "head": "Bệnh Crohn",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Ruột kết",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Ung thư đại tràng: Viêm loét đại tràng hoặc bệnh Crohn ảnh hưởng đến phần lớn ruột kết, có thể làm tăng nguy cơ ung thư cho cơ quan này.",
+        "head": "Viêm loét đại tràng",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Ung thư đại tràng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ung thư đại tràng: Viêm loét đại tràng hoặc bệnh Crohn ảnh hưởng đến phần lớn ruột kết, có thể làm tăng nguy cơ ung thư cho cơ quan này.",
+        "head": "Bệnh Crohn",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Ung thư đại tràng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Theo đó, sàng lọc ung thư bằng nội soi đại tràng định kỳ thường chỉ định thực hiện từ khoảng 8 - 10 năm sau khi được chẩn đoán.",
+        "head": "Ung thư đại tràng",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "Nội soi đại tràng định kỳ",
+        "tail_type": "test"
+    },
+    {
+        "text": "Thiếu máu: Tình trạng này xảy ra khi số lượng tế bào hồng cầu khỏe mạnh không đủ để vận chuyển oxy để tất cả các bộ phận trong cơ thể.",
+        "head": "Thiếu máu",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Số lượng tế bào hồng cầu khỏe mạnh không đủ",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Thiếu máu: Tình trạng này xảy ra khi số lượng tế bào hồng cầu khỏe mạnh không đủ để vận chuyển oxy để tất cả các bộ phận trong cơ thể.",
+        "head": "Thiếu máu",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Vận chuyển oxy",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Mất nước hoặc suy dinh dưỡng: Tiêu chảy, đau bụng kéo dài khiến cơ thể bị mất nước và khó hấp thụ dinh dưỡng.",
+        "head": "Mất nước",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm đường ruột",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Mất nước hoặc suy dinh dưỡng: Tiêu chảy, đau bụng kéo dài khiến cơ thể bị mất nước và khó hấp thụ dinh dưỡng.",
+        "head": "Suy dinh dưỡng",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm đường ruột",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Mất nước hoặc suy dinh dưỡng: Tiêu chảy, đau bụng kéo dài khiến cơ thể bị mất nước và khó hấp thụ dinh dưỡng.",
+        "head": "Tiêu chảy",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm đường ruột",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Mất nước hoặc suy dinh dưỡng: Tiêu chảy, đau bụng kéo dài khiến cơ thể bị mất nước và khó hấp thụ dinh dưỡng.",
+        "head": "Đau bụng",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm đường ruột",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Phình đại tràng: Viêm ruột có thể khiến đại tràng giãn nở bất thường, ngừng hoạt động, gây đau dữ dội và thậm chí là tử vong.",
+        "head": "Phình đại tràng",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Viêm ruột",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Phình đại tràng: Viêm ruột có thể khiến đại tràng giãn nở bất thường, ngừng hoạt động, gây đau dữ dội và thậm chí là tử vong.",
+        "head": "Viêm ruột",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Đại tràng",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Phình đại tràng: Viêm ruột có thể khiến đại tràng giãn nở bất thường, ngừng hoạt động, gây đau dữ dội và thậm chí là tử vong.",
+        "head": "Đau dữ dội",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Phình đại tràng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Phình đại tràng: Viêm ruột có thể khiến đại tràng giãn nở bất thường, ngừng hoạt động, gây đau dữ dội và thậm chí là tử vong.",
+        "head": "Tử vong",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Phình đại tràng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Yếu xương: Bệnh Crohn có thể gây loãng xương và mất xương.",
+        "head": "Yếu xương",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Bệnh Crohn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Yếu xương: Bệnh Crohn có thể gây loãng xương và mất xương.",
+        "head": "Bệnh Crohn",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Xương",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Viêm ở cơ quan khác: Viêm gan, sỏi mật, viêm tuyến tụy.",
+        "head": "Viêm gan",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Viêm đường ruột",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Viêm ở cơ quan khác: Viêm gan, sỏi mật, viêm tuyến tụy.",
+        "head": "Sỏi mật",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Viêm đường ruột",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Viêm ở cơ quan khác: Viêm gan, sỏi mật, viêm tuyến tụy.",
+        "head": "Viêm tuyến tụy",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Viêm đường ruột",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Lỗ rò: Đôi khi tình trạng viêm có thể lan rộng hoàn toàn qua thành ruột, tạo ra lỗ rò gần hoặc xung quanh vùng hậu môn (loại phổ biến nhất) hoặc vùng bên trong, hướng vào thành bụng.",
+        "head": "Lỗ rò",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Viêm đường ruột",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Lỗ rò: Đôi khi tình trạng viêm có thể lan rộng hoàn toàn qua thành ruột, tạo ra lỗ rò gần hoặc xung quanh vùng hậu môn (loại phổ biến nhất) hoặc vùng bên trong, hướng vào thành bụng.",
+        "head": "Lỗ rò",
+        "head_type": "disease",
+        "relation": "locatedIn",
+        "tail": "Vùng hậu môn",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Lỗ rò: Đôi khi tình trạng viêm có thể lan rộng hoàn toàn qua thành ruột, tạo ra lỗ rò gần hoặc xung quanh vùng hậu môn (loại phổ biến nhất) hoặc vùng bên trong, hướng vào thành bụng.",
+        "head": "Lỗ rò",
+        "head_type": "disease",
+        "relation": "locatedIn",
+        "tail": "Thành bụng",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Trong một số trường hợp, lỗ rò có thể bị nhiễm trùng, từ đó tạo thành một túi mủ gọi là áp xe.",
+        "head": "Lỗ rò",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Nhiễm trùng",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Trong một số trường hợp, lỗ rò có thể bị nhiễm trùng, từ đó tạo thành một túi mủ gọi là áp xe.",
+        "head": "Áp xe",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Nhiễm trùng",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Nứt hậu môn: Đây là một vết rách nhỏ ở mô lót hoặc vùng da xung quanh hậu môn - nơi nhiễm trùng có thể xảy ra.",
+        "head": "Nứt hậu môn",
+        "head_type": "disease",
+        "relation": "locatedIn",
+        "tail": "Vùng hậu môn",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Nứt hậu môn: Đây là một vết rách nhỏ ở mô lót hoặc vùng da xung quanh hậu môn - nơi nhiễm trùng có thể xảy ra.",
+        "head": "Nứt hậu môn",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Nhiễm trùng",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Tình trạng này thường gây ra triệu chứng điển hình là đau đơn khi đi đại tiện và có thể dẫn đến rò quanh hậu môn.",
+        "head": "Đau đơn khi đi đại tiện",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Nứt hậu môn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tình trạng này thường gây ra triệu chứng điển hình là đau đơn khi đi đại tiện và có thể dẫn đến rò quanh hậu môn.",
+        "head": "Rò quanh hậu môn",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Nứt hậu môn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Trung tâm Nội soi và Phẫu thuật nội soi tiêu hóa (BVĐK Tâm Anh TP.HCM) và Khoa Ngoại Tổng hợp (BVĐK Tâm Anh Hà Nội) là những trung tâm y tế chuyên khoa Tiêu hóa uy tín, cung cấp dịch vụ thăm khám và điều trị cao cấp, hiệu quả cho các bệnh nhân mắc các vấn đề về gan từ nhẹ đến nặng (gan nhiễm mỡ, viêm gan cấp tính, mạn tính, xơ gan, ung thư gan…).",
+        "head": "Trung tâm Nội soi và Phẫu thuật nội soi tiêu hóa",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Bệnh viêm ruột",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Trung tâm Nội soi và Phẫu thuật nội soi tiêu hóa (BVĐK Tâm Anh TP.HCM) và Khoa Ngoại Tổng hợp (BVĐK Tâm Anh Hà Nội) là những trung tâm y tế chuyên khoa Tiêu hóa uy tín, cung cấp dịch vụ thăm khám và điều trị cao cấp, hiệu quả cho các bệnh nhân mắc các vấn đề về gan từ nhẹ đến nặng (gan nhiễm mỡ, viêm gan cấp tính, mạn tính, xơ gan, ung thư gan…).",
+        "head": "Khoa Ngoại Tổng hợp",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Bệnh viêm ruột",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Hệ thống BVĐK Tâm Anh quy tụ đội ngũ bác sĩ Nội khoa - Ngoại khoa - Nội soi tiêu hóa chuyên môn cao, giàu kinh nghiệm, bên cạnh đó là sự hỗ trợ của hệ thống thiết bị y tế hiện đại, nhập khẩu từ nước ngoài, phục vụ tối đa nhu cầu thăm khám và điều trị của khách hàng.",
+        "head": "Bác sĩ Nội khoa",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Bệnh viêm ruột",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Hệ thống BVĐK Tâm Anh quy tụ đội ngũ bác sĩ Nội khoa - Ngoại khoa - Nội soi tiêu hóa chuyên môn cao, giàu kinh nghiệm, bên cạnh đó là sự hỗ trợ của hệ thống thiết bị y tế hiện đại, nhập khẩu từ nước ngoài, phục vụ tối đa nhu cầu thăm khám và điều trị của khách hàng.",
+        "head": "Bác sĩ Ngoại khoa",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Bệnh viêm ruột",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Hệ thống BVĐK Tâm Anh quy tụ đội ngũ bác sĩ Nội khoa - Ngoại khoa - Nội soi tiêu hóa chuyên môn cao, giàu kinh nghiệm, bên cạnh đó là sự hỗ trợ của hệ thống thiết bị y tế hiện đại, nhập khẩu từ nước ngoài, phục vụ tối đa nhu cầu thăm khám và điều trị của khách hàng.",
+        "head": "Bác sĩ Nội soi tiêu hóa",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Bệnh viêm ruột",
+        "tail_type": "disease"
+    }
+]

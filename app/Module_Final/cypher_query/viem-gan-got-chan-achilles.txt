@@ -1,0 +1,465 @@
+
+MERGE (o1:disease {id: 'viêm_gân_gót_chân_disease'})
+MERGE (o2:lifestyle {id: 'vận_động_viên_chuyên_nghiệp_lifestyle'})
+MERGE (o1)-[r0:isSymptomOf]->(o2)
+SET r0.text = 'Viêm gân gót chân là bệnh thường gặp, đặc biệt là ở các vận động viên chuyên nghiệp.'
+
+MERGE (o1:symptom {id: 'chấn_thương_symptom'})
+MERGE (o2:disease {id: 'viêm_gân_gót_chân_disease'})
+MERGE (o1)-[r1:isSymptomOf]->(o2)
+SET r1.text = 'Chấn thương này gây đau đớn, làm người bệnh gặp nhiều khó khăn trong sinh hoạt hằng ngày.'
+
+MERGE (o1:symptom {id: 'biến_chứng_symptom'})
+MERGE (o2:disease {id: 'viêm_gân_gót_chân_disease'})
+MERGE (o1)-[r2:isSymptomOf]->(o2)
+SET r2.text = 'Nếu không được chữa trị kịp thời và đúng cách, người bệnh có thể gặp phải các biến chứng nguy hiểm.'
+
+MERGE (o1:disease {id: 'viêm_gân_gót_chân_disease'})
+MERGE (o2:cause {id: 'gân_achilles_hoạt_động_quá_mức_cause'})
+MERGE (o1)-[r3:causedBy]->(o2)
+SET r3.text = 'Viêm gân gót chân là tình trạng gân Achilles hoạt động quá mức dẫn tới tình trạng bị quá tải về lực và trọng lực, gây tổn thương vùng gót chân.'
+
+MERGE (o1:organ {id: 'gân_achilles_organ'})
+MERGE (o2:organ {id: 'chỗ_bám_vào_xương_gót_organ'})
+MERGE (o1)-[r4:locatedIn]->(o2)
+SET r4.text = 'Gân Achilles là khu vực có ít mạch máu, cách chỗ bám vào xương gót 3 - 6cm.'
+
+MERGE (o1:cause {id: 'tác_động_bất_ngờ_cause'})
+MERGE (o2:symptom {id: 'tổn_thương_gót_chân_symptom'})
+MERGE (o1)-[r5:causes]->(o2)
+SET r5.text = 'Cấu tạo của gân gồm nhiều sợi collagen nhỏ nên chỉ cần một tác động bất ngờ cũng đủ gây tổn thương gót chân.'
+
+MERGE (o1:disease {id: 'viêm_điểm_bám_gân_achilles_disease'})
+MERGE (o2:organ {id: 'nơi_thấp_nhất_của_gân_organ'})
+MERGE (o1)-[r6:locatedIn]->(o2)
+SET r6.text = 'Viêm điểm bám gân Achilles (Insertional Achilles tendinitis): Tổn thương này tác động tới nơi thấp nhất của gân, nơi gân được gắn vào xương gót chân.'
+
+MERGE (o1:disease {id: 'viêm_điểm_bám_gân_achilles_disease'})
+MERGE (o2:organ {id: 'xương_gót_chân_organ'})
+MERGE (o1)-[r7:affects]->(o2)
+SET r7.text = 'Viêm điểm bám gân Achilles (Insertional Achilles tendinitis): Tổn thương này tác động tới nơi thấp nhất của gân, nơi gân được gắn vào xương gót chân.'
+
+MERGE (o1:disease {id: 'viêm_sợi_gân_disease'})
+MERGE (o2:organ {id: 'phần_giữa_của_gân_organ'})
+MERGE (o1)-[r8:locatedIn]->(o2)
+SET r8.text = 'Viêm sợi gân (Noninsertional Achilles tendinitis): Đây là tình trạng viêm liên quan tới các sợi ở phần giữa của gân, thường xảy ra ở người trẻ tuổi.'
+
+MERGE (o1:cause {id: 'căng_thẳng_lặp_đi_lặp_lại_nhiều_lần_ở_chân_cause'})
+MERGE (o2:disease {id: 'viêm_gân_achilles_disease'})
+MERGE (o1)-[r9:causes]->(o2)
+SET r9.text = 'Căng thẳng lặp đi lặp lại nhiều lần ở chân là nguyên nhân chủ yếu gây viêm gân Achilles.'
+
+MERGE (o1:lifestyle {id: 'tập_thể_dục_quá_mức_lifestyle'})
+MERGE (o2:disease {id: 'viêm_gân_achilles_disease'})
+MERGE (o1)-[r10:aggravatedBy]->(o2)
+SET r10.text = 'Tình trạng này thường xảy ra ở người tập thể dục quá mức, đặc biệt là vận động viên.'
+
+MERGE (o1:disease {id: 'viêm_khớp_dạng_thấp_disease'})
+MERGE (o2:disease {id: 'viêm_gân_gót_chân_disease'})
+MERGE (o1)-[r11:causes]->(o2)
+SET r11.text = 'Ngoài ra, một số bệnh lý xương khớp như viêm khớp dạng thấp, viêm khớp nhiễm trùng… cũng có thể là nguyên nhân gây viêm gân gót chân.'
+
+MERGE (o1:disease {id: 'viêm_khớp_nhiễm_trùng_disease'})
+MERGE (o2:disease {id: 'viêm_gân_gót_chân_disease'})
+MERGE (o1)-[r12:causes]->(o2)
+SET r12.text = 'Ngoài ra, một số bệnh lý xương khớp như viêm khớp dạng thấp, viêm khớp nhiễm trùng… cũng có thể là nguyên nhân gây viêm gân gót chân.'
+
+MERGE (o1:lifestyle {id: 'không_khởi_động_hoặc_khởi_động_sai_cách_lifestyle'})
+MERGE (o2:disease {id: 'viêm_gân_gót_chân_disease'})
+MERGE (o1)-[r13:aggravatedBy]->(o2)
+SET r13.text = 'Không khởi động hoặc khởi động sai cách trước khi tập thể dục.'
+
+MERGE (o1:symptom {id: 'căng_cơ_chân_symptom'})
+MERGE (o2:disease {id: 'viêm_gân_gót_chân_disease'})
+MERGE (o1)-[r14:isSymptomOf]->(o2)
+SET r14.text = 'Bị căng cơ chân khi thực hiện những động tác lặp lại nhiều lần.'
+
+MERGE (o1:lifestyle {id: 'bóng_đá_lifestyle'})
+MERGE (o2:disease {id: 'viêm_gân_gót_chân_disease'})
+MERGE (o1)-[r15:aggravatedBy]->(o2)
+SET r15.text = 'Chơi các môn thể thao yêu cầu đổi hướng, di chuyển nhanh như bóng đá, quần vợt, bóng rổ, bóng chuyền…'
+
+MERGE (o1:lifestyle {id: 'quần_vợt_lifestyle'})
+MERGE (o2:disease {id: 'viêm_gân_gót_chân_disease'})
+MERGE (o1)-[r16:aggravatedBy]->(o2)
+SET r16.text = 'Chơi các môn thể thao yêu cầu đổi hướng, di chuyển nhanh như bóng đá, quần vợt, bóng rổ, bóng chuyền…'
+
+MERGE (o1:lifestyle {id: 'bóng_rổ_lifestyle'})
+MERGE (o2:disease {id: 'viêm_gân_gót_chân_disease'})
+MERGE (o1)-[r17:aggravatedBy]->(o2)
+SET r17.text = 'Chơi các môn thể thao yêu cầu đổi hướng, di chuyển nhanh như bóng đá, quần vợt, bóng rổ, bóng chuyền…'
+
+MERGE (o1:lifestyle {id: 'bóng_chuyền_lifestyle'})
+MERGE (o2:disease {id: 'viêm_gân_gót_chân_disease'})
+MERGE (o1)-[r18:aggravatedBy]->(o2)
+SET r18.text = 'Chơi các môn thể thao yêu cầu đổi hướng, di chuyển nhanh như bóng đá, quần vợt, bóng rổ, bóng chuyền…'
+
+MERGE (o1:lifestyle {id: 'gia_tăng_các_hoạt_động_thể_chất_đột_ngột_lifestyle'})
+MERGE (o2:disease {id: 'viêm_gân_gót_chân_disease'})
+MERGE (o1)-[r19:aggravatedBy]->(o2)
+SET r19.text = 'Gia tăng các hoạt động thể chất đột ngột mà không cho cơ thể thời gian thích nghi.'
+
+MERGE (o1:lifestyle {id: 'đi_giày_không_vừa_chân_lifestyle'})
+MERGE (o2:disease {id: 'viêm_gân_gót_chân_disease'})
+MERGE (o1)-[r20:aggravatedBy]->(o2)
+SET r20.text = 'Đi giày không vừa chân, giày quá cũ hoặc chất lượng kém.'
+
+MERGE (o1:lifestyle {id: 'giày_quá_cũ_lifestyle'})
+MERGE (o2:disease {id: 'viêm_gân_gót_chân_disease'})
+MERGE (o1)-[r21:aggravatedBy]->(o2)
+SET r21.text = 'Đi giày không vừa chân, giày quá cũ hoặc chất lượng kém.'
+
+MERGE (o1:lifestyle {id: 'giày_chất_lượng_kém_lifestyle'})
+MERGE (o2:disease {id: 'viêm_gân_gót_chân_disease'})
+MERGE (o1)-[r22:aggravatedBy]->(o2)
+SET r22.text = 'Đi giày không vừa chân, giày quá cũ hoặc chất lượng kém.'
+
+MERGE (o1:lifestyle {id: 'mang_giày_cao_gót_lifestyle'})
+MERGE (o2:disease {id: 'viêm_gân_gót_chân_disease'})
+MERGE (o1)-[r23:aggravatedBy]->(o2)
+SET r23.text = 'Mang giày cao gót liên tục trong thời gian dài.'
+
+MERGE (o1:symptom {id: 'gai_xương_symptom'})
+MERGE (o2:disease {id: 'viêm_gân_gót_chân_disease'})
+MERGE (o1)-[r24:isSymptomOf]->(o2)
+SET r24.text = 'Xuất hiện gai xương ở phía sau gót chân (gai gót chân).'
+
+MERGE (o1:symptom {id: 'thoái_hóa_gân_symptom'})
+MERGE (o2:disease {id: 'viêm_gân_gót_chân_disease'})
+MERGE (o1)-[r25:isSymptomOf]->(o2)
+SET r25.text = 'Thoái hóa gân do tuổi tác.'
+
+MERGE (o1:disease {id: 'viêm_gân_gót_chân_disease'})
+MERGE (o2:lifestyle {id: 'nam_giới_lifestyle'})
+MERGE (o1)-[r26:associatedWith]->(o2)
+SET r26.text = 'Giới tính: Bệnh phổ biến ở nam giới.'
+
+MERGE (o1:disease {id: 'viêm_gân_achilles_disease'})
+MERGE (o2:lifestyle {id: 'tuổi_tác_lifestyle'})
+MERGE (o1)-[r27:associatedWith]->(o2)
+SET r27.text = 'Tuổi tác: Người càng lớn tuổi nguy cơ bị viêm gân Achilles sẽ càng cao.'
+
+MERGE (o1:cause {id: 'máu_lưu_thông_cause'})
+MERGE (o2:disease {id: 'viêm_gân_achilles_disease'})
+MERGE (o1)-[r28:causes]->(o2)
+SET r28.text = 'Vì khi đó, máu lưu thông tới khu vực gân bàn chân đã giảm.'
+
+MERGE (o1:symptom {id: 'mất_đi_sự_linh_hoạt__dẻo_dai_và_đàn_hồi_symptom'})
+MERGE (o2:disease {id: 'viêm_gân_gót_chân_disease'})
+MERGE (o1)-[r29:isSymptomOf]->(o2)
+SET r29.text = 'Tình trạng này làm cho gân gót chân mất đi sự linh hoạt, dẻo dai và đàn hồi.'
+
+MERGE (o1:cause {id: 'tác_động_cause'})
+MERGE (o2:symptom {id: 'tổn_thương_gân_achilles_symptom'})
+MERGE (o1)-[r30:causes]->(o2)
+SET r30.text = 'Vì thế, bất kỳ tác động nào diễn ra cũng có khả năng làm tổn thương gân Achilles.'
+
+MERGE (o1:disease {id: 'hội_chứng_bàn_chân_bẹt_disease'})
+MERGE (o2:disease {id: 'viêm_gân_gót_chân_disease'})
+MERGE (o1)-[r31:associatedWith]->(o2)
+SET r31.text = 'Người mắc hội chứng bàn chân bẹt có nguy cơ bị viêm gân gót chân cao.'
+
+MERGE (o1:cause {id: 'sức_nặng_cơ_thể_cause'})
+MERGE (o2:disease {id: 'viêm_gân_gót_chân_disease'})
+MERGE (o1)-[r32:causes]->(o2)
+SET r32.text = 'Nguyên nhân là do sức nặng cơ thể khi đó sẽ đổ dồn nhiều lên gân gót chân, tạo áp lực lớn lên khu vực này, dễ gây viêm gân Achilles.'
+
+MERGE (o1:disease {id: 'bệnh_vảy_nến_disease'})
+MERGE (o2:disease {id: 'viêm_gân_gót_chân_disease'})
+MERGE (o1)-[r33:associatedWith]->(o2)
+SET r33.text = 'Người bệnh vảy nến hay tăng huyết áp có tỷ lệ gân gót chân bị viêm cao hơn so với người không mắc bệnh.'
+
+MERGE (o1:disease {id: 'tăng_huyết_áp_disease'})
+MERGE (o2:disease {id: 'viêm_gân_gót_chân_disease'})
+MERGE (o1)-[r34:associatedWith]->(o2)
+SET r34.text = 'Người bệnh vảy nến hay tăng huyết áp có tỷ lệ gân gót chân bị viêm cao hơn so với người không mắc bệnh.'
+
+MERGE (o1:symptom {id: 'đau_rát_bỏng_hoặc_đau_cứng_phần_thấp_bắp_chân_sau_vào_buổi_sáng_symptom'})
+MERGE (o2:disease {id: 'viêm_gân_achilles_disease'})
+MERGE (o1)-[r35:isSymptomOf]->(o2)
+SET r35.text = 'Đau rát bỏng hoặc đau cứng phần thấp bắp chân sau vào buổi sáng.'
+
+MERGE (o1:symptom {id: 'rách_một_phần_gan_hoặc_đứt_gân_hoàn_toàn_symptom'})
+MERGE (o2:disease {id: 'viêm_gân_achilles_disease'})
+MERGE (o1)-[r36:isSymptomOf]->(o2)
+SET r36.text = 'Một số trường hợp có thể bị rách một phần gan hoặc đứt gân hoàn toàn.'
+
+MERGE (o1:symptom {id: 'đau_vùng_gót_symptom'})
+MERGE (o2:disease {id: 'viêm_gân_achilles_disease'})
+MERGE (o1)-[r37:isSymptomOf]->(o2)
+SET r37.text = 'Đau vùng gót, đặc biệt là khi căng gót hay đứng trên đầu mũi chân.'
+
+MERGE (o1:disease {id: 'viêm_gân_achilles_kéo_dài_disease'})
+MERGE (o2:disease {id: 'đứt_gân_gót_chân_disease'})
+MERGE (o1)-[r38:causedBy]->(o2)
+SET r38.text = 'Khi tình trạng viêm gân Achilles kéo dài mà không có biện pháp can thiệp, người bệnh có nguy cơ cao bị đứt gân gót chân.'
+
+MERGE (o1:symptom {id: 'đau_dai_dẳng_symptom'})
+MERGE (o2:disease {id: 'đứt_gân_gót_chân_disease'})
+MERGE (o1)-[r39:isSymptomOf]->(o2)
+SET r39.text = 'Nếu bị đứt gân, người bệnh sẽ bị đau dai dẳng, xuất hiện tình trạng phù nề vùng gót chân do có chảy máu giữa các sợi gân.'
+
+MERGE (o1:symptom {id: 'phù_nề_vùng_gót_chân_symptom'})
+MERGE (o2:disease {id: 'đứt_gân_gót_chân_disease'})
+MERGE (o1)-[r40:isSymptomOf]->(o2)
+SET r40.text = 'Nếu bị đứt gân, người bệnh sẽ bị đau dai dẳng, xuất hiện tình trạng phù nề vùng gót chân do có chảy máu giữa các sợi gân.'
+
+MERGE (o1:disease {id: 'viêm_gân_gót_chân_disease'})
+MERGE (o2:symptom {id: 'hạn_chế_khả_năng_đi_lại_symptom'})
+MERGE (o1)-[r41:causedBy]->(o2)
+SET r41.text = 'Ngoài cảm giác đau dai dẳng, viêm gân gót chân nếu trì hoãn điều trị hoặc điều trị sai cách có thể dẫn tới nhiều biến chứng nguy hiểm như:  Hạn chế khả năng đi lại Biến dạng gân và xương gót chân Đứt gân Achilles hoàn toàn'
+
+MERGE (o1:disease {id: 'viêm_gân_gót_chân_disease'})
+MERGE (o2:symptom {id: 'biến_dạng_gân_và_xương_gót_chân_symptom'})
+MERGE (o1)-[r42:causedBy]->(o2)
+SET r42.text = 'Ngoài cảm giác đau dai dẳng, viêm gân gót chân nếu trì hoãn điều trị hoặc điều trị sai cách có thể dẫn tới nhiều biến chứng nguy hiểm như:  Hạn chế khả năng đi lại Biến dạng gân và xương gót chân Đứt gân Achilles hoàn toàn'
+
+MERGE (o1:disease {id: 'viêm_gân_gót_chân_disease'})
+MERGE (o2:disease {id: 'đứt_gân_achilles_hoàn_toàn_disease'})
+MERGE (o1)-[r43:causedBy]->(o2)
+SET r43.text = 'Ngoài cảm giác đau dai dẳng, viêm gân gót chân nếu trì hoãn điều trị hoặc điều trị sai cách có thể dẫn tới nhiều biến chứng nguy hiểm như:  Hạn chế khả năng đi lại Biến dạng gân và xương gót chân Đứt gân Achilles hoàn toàn'
+
+MERGE (o1:disease {id: 'viêm_gân_gót_chân_disease'})
+MERGE (o2:test {id: 'kiểm_tra_các_triệu_chứng_và_hoạt_động_bình_thường_test'})
+MERGE (o1)-[r44:diagnosedBy]->(o2)
+SET r44.text = 'Để chẩn đoán tình trạng viêm gân gót chân, bác sĩ sẽ kiểm tra các triệu chứng và hoạt động bình thường của người bệnh.'
+
+MERGE (o1:disease {id: 'viêm_gân_gót_chân_disease'})
+MERGE (o2:test {id: 'ấn_nhẹ_vào_khu_vực_bị_tổn_thương_test'})
+MERGE (o1)-[r45:diagnosedBy]->(o2)
+SET r45.text = 'Sau đó, bác sĩ có thể ấn nhẹ vào khu vực bị tổn thương để xác định vị trí đau sưng.'
+
+MERGE (o1:disease {id: 'viêm_gân_gót_chân_disease'})
+MERGE (o2:test {id: 'đứng_trên_một_quả_bóng_test'})
+MERGE (o1)-[r46:diagnosedBy]->(o2)
+SET r46.text = 'Người bệnh cũng có thể được yêu cầu đứng trên một quả bóng để đánh giá sự linh hoạt, phạm vi chuyển động và phản xạ của bàn chân, mắt cá chân.'
+
+MERGE (o1:test {id: 'chụp_x-quang_test'})
+MERGE (o2:disease {id: 'viêm_gân_gót_chân_disease'})
+MERGE (o1)-[r47:diagnosedBy]->(o2)
+SET r47.text = 'Chụp X-quang: Phương pháp chẩn đoán này giúp bác sĩ quan sát hình ảnh bàn chân và xương chân.'
+
+MERGE (o1:test {id: 'chụp_x-quang_test'})
+MERGE (o2:organ {id: 'bàn_chân_và_xương_chân_organ'})
+MERGE (o1)-[r48:relatedTo]->(o2)
+SET r48.text = 'Chụp X-quang: Phương pháp chẩn đoán này giúp bác sĩ quan sát hình ảnh bàn chân và xương chân. Tuy chụp X-quang không thể cung cấp hình ảnh của gân nhưng có thể giúp bác sĩ loại trừ những nguyên nhân khác có khả năng dẫn tới những triệu chứng tương tự.'
+
+MERGE (o1:test {id: 'siêu_âm_test'})
+MERGE (o2:disease {id: 'viêm_gân_gót_chân_disease'})
+MERGE (o1)-[r49:diagnosedBy]->(o2)
+SET r49.text = 'Siêu âm: Phương pháp này sẽ dùng sóng âm tần số cao để tạo ra hình ảnh chi tiết tại các mô mềm như gân.'
+
+MERGE (o1:test {id: 'siêu_âm_test'})
+MERGE (o2:organ {id: 'gân_organ'})
+MERGE (o1)-[r50:relatedTo]->(o2)
+SET r50.text = 'Siêu âm: Phương pháp này sẽ dùng sóng âm tần số cao để tạo ra hình ảnh chi tiết tại các mô mềm như gân. Ngoài ra, siêu âm cũng có thể tạo hình ảnh chuyển động của gân, qua đó bác sĩ có thể đánh giá lưu lượng máu xung quanh gân.'
+
+MERGE (o1:test {id: 'chụp_mri_test'})
+MERGE (o2:disease {id: 'viêm_gân_gót_chân_disease'})
+MERGE (o1)-[r51:diagnosedBy]->(o2)
+SET r51.text = 'Chụp MRI: Đây là phương pháp chẩn đoán sử dụng từ trường mạnh, sóng vô tuyến để tạo ra hình ảnh chi tiết của gân gót chân, qua đó giúp bác sĩ phát hiện vị trí gân bị viêm.'
+
+MERGE (o1:disease {id: 'chấn_thương_nhẹ_disease'})
+MERGE (o2:treatment {id: 'chăm_sóc_tốt_treatment'})
+MERGE (o1)-[r52:treatedBy]->(o2)
+SET r52.text = 'Phần lớn trường hợp chấn thương nhẹ đều có thể tự khỏi khi người bệnh biết cách chăm sóc tốt.'
+
+MERGE (o1:treatment {id: 'r.i.c.e_treatment'})
+MERGE (o2:disease {id: 'viêm_gân_gót_chân_disease'})
+MERGE (o1)-[r53:treatedBy]->(o2)
+SET r53.text = 'Bạn có thể áp dụng phương pháp sơ cứu chấn thương R.I.C.E để điều trị viêm gân gót chân tại nhà, cụ thể:  Rest - nghỉ ngơi: Nghỉ ngơi sẽ giúp cơ thể sản sinh nguồn năng lượng mới, nhờ đó tăng khả năng phục hồi cho tổn thương gân.'
+
+MERGE (o1:treatment {id: 'nghỉ_ngơi_treatment'})
+MERGE (o2:disease {id: 'viêm_gân_gót_chân_disease'})
+MERGE (o1)-[r54:treatedBy]->(o2)
+SET r54.text = 'Bạn có thể áp dụng phương pháp sơ cứu chấn thương R.I.C.E để điều trị viêm gân gót chân tại nhà, cụ thể:  Rest - nghỉ ngơi: Nghỉ ngơi sẽ giúp cơ thể sản sinh nguồn năng lượng mới, nhờ đó tăng khả năng phục hồi cho tổn thương gân.'
+
+MERGE (o1:treatment {id: 'nghỉ_ngơi_treatment'})
+MERGE (o2:organ {id: 'hệ_xương__gân_gót_chân_organ'})
+MERGE (o1)-[r55:affects]->(o2)
+SET r55.text = 'Biện pháp này còn giúp giảm áp lực đè nén lên hệ xương, gân gót chân, giúp gân thư giãn và mau lành hơn.'
+
+MERGE (o1:disease {id: 'viêm_gân_disease'})
+MERGE (o2:symptom {id: 'cảm_giác_đau_symptom'})
+MERGE (o1)-[r56:isSymptomOf]->(o2)
+SET r56.text = 'Người bệnh nên nghỉ ngơi cho tới khi có thể đi lại mà không còn cảm giác đau ở bên chân bị viêm gân.'
+
+MERGE (o1:treatment {id: 'nạng_treatment'})
+MERGE (o2:disease {id: 'viêm_gân_gót_chân_disease'})
+MERGE (o1)-[r57:treatedBy]->(o2)
+SET r57.text = 'Ngoài ra, trong quá trình nghỉ ngơi, nếu muốn di chuyển, bạn nên sử dụng nạng để chống đỡ, hạn chế gây áp lực lên chân.'
+
+MERGE (o1:treatment {id: 'chườm_đá_treatment'})
+MERGE (o2:disease {id: 'viêm_gân_gót_chân_disease'})
+MERGE (o1)-[r58:treatedBy]->(o2)
+SET r58.text = 'Ice - chườm đá: Người bệnh có thể đặt một túi nước đá lên vùng bị thương khoảng 15 - 20 phút để giảm đau và sưng tấy.'
+
+MERGE (o1:symptom {id: 'sưng_tấy_symptom'})
+MERGE (o2:disease {id: 'viêm_gân_gót_chân_disease'})
+MERGE (o1)-[r59:isSymptomOf]->(o2)
+SET r59.text = 'Ice - chườm đá: Người bệnh có thể đặt một túi nước đá lên vùng bị thương khoảng 15 - 20 phút để giảm đau và sưng tấy.'
+
+MERGE (o1:treatment {id: 'băng_ép_treatment'})
+MERGE (o2:disease {id: 'viêm_gân_gót_chân_disease'})
+MERGE (o1)-[r60:treatedBy]->(o2)
+SET r60.text = 'Compression - băng ép: Bạn hãy dùng băng vải hoặc băng thun để cố định vùng bị thương, giúp giảm sưng cho gân.'
+
+MERGE (o1:treatment {id: 'giảm_sưng_treatment'})
+MERGE (o2:disease {id: 'viêm_gân_gót_chân_disease'})
+MERGE (o1)-[r61:treatedBy]->(o2)
+SET r61.text = 'Compression - băng ép: Bạn hãy dùng băng vải hoặc băng thun để cố định vùng bị thương, giúp giảm sưng cho gân.'
+
+MERGE (o1:lifestyle {id: 'băng_quá_chặt_lifestyle'})
+MERGE (o2:disease {id: 'viêm_gân_gót_chân_disease'})
+MERGE (o1)-[r62:aggravatedBy]->(o2)
+SET r62.text = 'Tuy nhiên, bạn không nên băng quá chặt vì có thể làm cản trở lưu thông máu tới vùng gót chân, khiến tình trạng tổn thương trầm trọng hơn.'
+
+MERGE (o1:treatment {id: 'kê_cao_vị_trí_bị_thương_treatment'})
+MERGE (o2:disease {id: 'viêm_gân_gót_chân_disease'})
+MERGE (o1)-[r63:treatedBy]->(o2)
+SET r63.text = 'Elevation - kê cao vị trí bị thương: Người bệnh nên nâng chân bị thương cao hơn tim, giúp giảm sưng và giảm đau hiệu quả.'
+
+MERGE (o1:treatment {id: 'giảm_đau_treatment'})
+MERGE (o2:disease {id: 'viêm_gân_gót_chân_disease'})
+MERGE (o1)-[r64:treatedBy]->(o2)
+SET r64.text = 'Elevation - kê cao vị trí bị thương: Người bệnh nên nâng chân bị thương cao hơn tim, giúp giảm sưng và giảm đau hiệu quả.'
+
+MERGE (o1:treatment {id: 'thuốc_giảm_đau_treatment'})
+MERGE (o2:disease {id: 'viêm_gân_gót_chân_disease'})
+MERGE (o1)-[r65:treatedBy]->(o2)
+SET r65.text = 'Người bệnh có thể sử dụng các loại thuốc giảm đau hay thuốc chống viêm không kê đơn như naproxen, ibuprofen, aspirin…'
+
+MERGE (o1:symptom {id: 'đau_nhức_symptom'})
+MERGE (o2:disease {id: 'viêm_gân_gót_chân_disease'})
+MERGE (o1)-[r66:isSymptomOf]->(o2)
+SET r66.text = 'Với các trường hợp đau nhức trong thời gian dài, người bệnh có thể được chỉ định sử dụng một số loại thuốc giảm viêm hay giảm đau liều mạnh để cải thiện triệu chứng.'
+
+MERGE (o1:treatment {id: 'tiêm_huyết_tương_tiểu_giàu_tiểu_cầu_(prp)_treatment'})
+MERGE (o2:disease {id: 'viêm_gân_gót_chân_disease'})
+MERGE (o1)-[r67:treatedBy]->(o2)
+SET r67.text = 'Ngoài ra, bác sĩ cũng có thể cho người bệnh tiêm huyết tương tiểu giàu tiểu cầu (PRP) hay tiêm steroid.'
+
+MERGE (o1:treatment {id: 'tiêm_steroid_treatment'})
+MERGE (o2:disease {id: 'viêm_gân_gót_chân_disease'})
+MERGE (o1)-[r68:treatedBy]->(o2)
+SET r68.text = 'Ngoài ra, bác sĩ cũng có thể cho người bệnh tiêm huyết tương tiểu giàu tiểu cầu (PRP) hay tiêm steroid.'
+
+MERGE (o1:treatment {id: 'vật_lý_trị_liệu_treatment'})
+MERGE (o2:disease {id: 'viêm_gân_gót_chân_disease'})
+MERGE (o1)-[r69:treatedBy]->(o2)
+SET r69.text = 'Bác sĩ hoặc chuyên gia vật lý trị liệu có thể đề nghị người bệnh thực hiện một số liệu pháp điều trị viêm gân gót chân như:  Thực hiện những bài tập trị liệu giúp thúc đẩy quá trình chữa lành vết thương, hỗ trợ tăng cường sức mạnh của gân Achilles và hạn chế các nguy cơ viêm tái phát.'
+
+MERGE (o1:treatment {id: 'bài_tập_trị_liệu_treatment'})
+MERGE (o2:disease {id: 'viêm_gân_gót_chân_disease'})
+MERGE (o1)-[r70:treatedBy]->(o2)
+SET r70.text = 'Bác sĩ hoặc chuyên gia vật lý trị liệu có thể đề nghị người bệnh thực hiện một số liệu pháp điều trị viêm gân gót chân như:  Thực hiện những bài tập trị liệu giúp thúc đẩy quá trình chữa lành vết thương, hỗ trợ tăng cường sức mạnh của gân Achilles và hạn chế các nguy cơ viêm tái phát.'
+
+MERGE (o1:treatment {id: 'miếng_đệm_treatment'})
+MERGE (o2:disease {id: 'viêm_gân_gót_chân_disease'})
+MERGE (o1)-[r71:treatedBy]->(o2)
+SET r71.text = 'Người bệnh nên sử dụng các thiết bị hỗ trợ như miếng đệm hay miếng lót giày nâng cao để giảm căng thẳng cho gân.'
+
+MERGE (o1:treatment {id: 'miếng_lót_giày_nâng_cao_treatment'})
+MERGE (o2:disease {id: 'viêm_gân_gót_chân_disease'})
+MERGE (o1)-[r72:treatedBy]->(o2)
+SET r72.text = 'Người bệnh nên sử dụng các thiết bị hỗ trợ như miếng đệm hay miếng lót giày nâng cao để giảm căng thẳng cho gân.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_treatment'})
+MERGE (o2:disease {id: 'viêm_gân_gót_chân_disease'})
+MERGE (o1)-[r73:treatedBy]->(o2)
+SET r73.text = 'Khi điều trị bảo tồn không hiệu quả, bác sĩ có thể chỉ định can thiệp phẫu thuật.'
+
+MERGE (o1:disease {id: 'đứt_gân_disease'})
+MERGE (o2:treatment {id: 'phẫu_thuật_treatment'})
+MERGE (o1)-[r74:treatedBy]->(o2)
+SET r74.text = 'Ngoài ra, phương pháp này cũng được chỉ định cho các trường hợp đứt gân hoặc có nguy cơ đứt gân.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_nối_gân_achilles_treatment'})
+MERGE (o2:disease {id: 'viêm_gân_gót_chân_disease'})
+MERGE (o1)-[r75:treatedBy]->(o2)
+SET r75.text = 'Phẫu thuật nối gân Achilles sẽ giúp người bệnh phục hồi khả năng vận động.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_treatment'})
+MERGE (o2:organ {id: 'gót_chân_organ'})
+MERGE (o1)-[r76:affects]->(o2)
+SET r76.text = 'Khi phẫu thuật, bác sĩ sẽ rạch một đường mổ ở phía sau gót chân.'
+
+MERGE (o1:disease {id: 'gân_bị_đứt_disease'})
+MERGE (o2:treatment {id: 'nối_lại_treatment'})
+MERGE (o1)-[r77:treatedBy]->(o2)
+SET r77.text = 'Nếu gân bị đứt, bác sĩ sẽ tiến hành nối lại.'
+
+MERGE (o1:disease {id: 'gân_bị_thoái_hóa_disease'})
+MERGE (o2:treatment {id: 'cắt_bỏ_phần_gân_bị_hư_treatment'})
+MERGE (o1)-[r78:treatedBy]->(o2)
+SET r78.text = 'Nếu gân bị thoái hóa, bác sĩ sẽ cắt bỏ phần gân bị hư rồi sửa chữa phần gân còn lại bằng chỉ khâu.'
+
+MERGE (o1:treatment {id: 'sửa_chữa_phần_gân_còn_lại_bằng_chỉ_khâu_treatment'})
+MERGE (o2:disease {id: 'gân_bị_thoái_hóa_disease'})
+MERGE (o1)-[r79:treatedBy]->(o2)
+SET r79.text = 'Nếu gân bị thoái hóa, bác sĩ sẽ cắt bỏ phần gân bị hư rồi sửa chữa phần gân còn lại bằng chỉ khâu.'
+
+MERGE (o1:disease {id: 'tổn_thương_gân_nghiêm_trọng_disease'})
+MERGE (o2:treatment {id: 'thay_thế_một_phần_hay_toàn_bộ_gân_gót_chân_treatment'})
+MERGE (o1)-[r80:treatedBy]->(o2)
+SET r80.text = 'Với các trường hợp tổn thương gân nghiêm trọng, bác sĩ có thể cân nhắc thay thế một phần hay toàn bộ gân gót chân.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_nối_gân_achilles_qua_da_treatment'})
+MERGE (o2:disease {id: 'viêm_gân_gót_chân_disease'})
+MERGE (o1)-[r81:treatedBy]->(o2)
+SET r81.text = 'Hiện nay, hệ thống Bệnh viện Đa khoa Tâm Anh đã áp dụng phương pháp phẫu thuật nối gân Achilles qua da như một thủ thuật xâm lấn tối thiểu.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_nối_gân_achilles_qua_da_treatment'})
+MERGE (o2:symptom {id: 'sẹo_mổ_nhỏ__ít_đau_hơn__giảm_thiểu_nguy_cơ_biến_chứng_symptom'})
+MERGE (o1)-[r82:affects]->(o2)
+SET r82.text = 'Phương pháp này giúp người bệnh phục hồi nhanh chóng, sẹo mổ nhỏ, ít đau hơn, giảm thiểu nguy cơ biến chứng.'
+
+MERGE (o1:lifestyle {id: 'tăng_mức_độ_hoạt_đột_ngột_lifestyle'})
+MERGE (o2:disease {id: 'viêm_gân_gót_chân_disease'})
+MERGE (o1)-[r83:aggravatedBy]->(o2)
+SET r83.text = 'Để hạn chế nguy cơ viêm gân gót chân, bạn nên lưu ý:  Tránh tăng mức độ hoạt đột ngột: Nếu vừa bắt đầu chế độ tập luyện, bạn nên thực hiện từ từ, tăng dần thời lượng và cường độ tập luyện để cơ thể có thời gian thích nghi, tránh gây áp lực lên gót chân.'
+
+MERGE (o1:lifestyle {id: 'hoạt_động_quá_sức_lifestyle'})
+MERGE (o2:disease {id: 'viêm_gân_gót_chân_disease'})
+MERGE (o1)-[r84:aggravatedBy]->(o2)
+SET r84.text = 'Không hoạt động quá sức: Bạn nên tránh những hoạt động gây căng thẳng quá mức cho gân.'
+
+MERGE (o1:lifestyle {id: 'khởi_động_lifestyle'})
+MERGE (o2:disease {id: 'viêm_gân_gót_chân_disease'})
+MERGE (o1)-[r85:preventedBy]->(o2)
+SET r85.text = 'Nếu phải tham gia các hoạt động gắng sức, bạn cần khởi động trước để làm ấm cơ thể, giúp các cơ và mô liên kết linh hoạt hơn khi bước vào bài tập chính.'
+
+MERGE (o1:symptom {id: 'cảm_thấy_đau_symptom'})
+MERGE (o2:disease {id: 'viêm_gân_gót_chân_disease'})
+MERGE (o1)-[r86:isSymptomOf]->(o2)
+SET r86.text = 'Trong lúc tập, nếu cảm thấy đau, bạn nên dừng lại ngay và nghỉ ngơi.'
+
+MERGE (o1:lifestyle {id: 'kéo_căng_cơ_bắp_lifestyle'})
+MERGE (o2:disease {id: 'viêm_gân_gót_chân_disease'})
+MERGE (o1)-[r87:preventedBy]->(o2)
+SET r87.text = 'Kéo căng cơ bắp: Bạn nên dành thời gian để kéo căng cơ bắp và gân chân vào mỗi buổi sáng trước khi tập thể dục.'
+
+MERGE (o1:lifestyle {id: 'kéo_căng_cơ_bắp_lifestyle'})
+MERGE (o2:organ {id: 'gân_và_cơ_organ'})
+MERGE (o1)-[r88:affects]->(o2)
+SET r88.text = 'Điều này sẽ giúp ngăn ngừa tình trạng viêm tái phát, tăng cường sức khỏe cho gân và cơ, hạn chế tình trạng viêm.'
+
+MERGE (o1:lifestyle {id: 'chạy_trên_những_mặt_phẳng_cứng_hay_dễ_trượt_lifestyle'})
+MERGE (o2:disease {id: 'viêm_gân_gót_chân_disease'})
+MERGE (o1)-[r89:aggravatedBy]->(o2)
+SET r89.text = 'Tránh chạy trên những mặt phẳng cứng hay dễ trượt.'
+
+MERGE (o1:lifestyle {id: 'quần_áo_phù_hợp_lifestyle'})
+MERGE (o2:disease {id: 'viêm_gân_gót_chân_disease'})
+MERGE (o1)-[r90:preventedBy]->(o2)
+SET r90.text = 'Chọn quần áo phù hợp với loại hình luyện tập.'
+
+MERGE (o1:lifestyle {id: 'đa_dạng_hóa_bài_tập_lifestyle'})
+MERGE (o2:disease {id: 'viêm_gân_gót_chân_disease'})
+MERGE (o1)-[r91:preventedBy]->(o2)
+SET r91.text = 'Đa dạng hóa bài tập: Bạn có thể thay thế những bài tập cường độ cao như chạy, leo cầu thang, bật nhảy… bằng những bài tập cường độ thấp như đi bộ, bơi lội…'
+
+MERGE (o1:lifestyle {id: 'tăng_sức_ép_quá_nhiều_lên_gân_achilles_lifestyle'})
+MERGE (o2:disease {id: 'viêm_gân_gót_chân_disease'})
+MERGE (o1)-[r92:aggravatedBy]->(o2)
+SET r92.text = 'Điều này sẽ giúp bạn hạn chế tình trạng tăng sức ép quá nhiều lên gân Achilles, gây chấn thương.'

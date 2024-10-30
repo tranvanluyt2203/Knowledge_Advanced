@@ -1,0 +1,834 @@
+[
+    {
+        "text": "Người bệnh tiểu đường có lượng đường trong máu cao làm hệ miễn dịch suy yếu, tăng khả năng nhiễm trùng da nếu vi khuẩn xâm nhập.",
+        "head": "lượng đường trong máu cao",
+        "head_type": "cause",
+        "relation": "causes",
+        "tail": "hệ miễn dịch suy yếu",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Người bệnh tiểu đường có lượng đường trong máu cao làm hệ miễn dịch suy yếu, tăng khả năng nhiễm trùng da nếu vi khuẩn xâm nhập.",
+        "head": "hệ miễn dịch suy yếu",
+        "head_type": "symptom",
+        "relation": "causes",
+        "tail": "nhiễm trùng da",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Người bệnh tiểu đường có lượng đường trong máu cao làm hệ miễn dịch suy yếu, tăng khả năng nhiễm trùng da nếu vi khuẩn xâm nhập.",
+        "head": "nhiễm trùng da",
+        "head_type": "symptom",
+        "relation": "causedBy",
+        "tail": "vi khuẩn xâm nhập",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Vết cắt, phồng rộp hoặc vết nứt trên da sẽ tạo điều kiện cho vi khuẩn xâm nhập vào cơ thể gây nguy cơ nhiễm trùng da, ngứa, viêm nang lông.",
+        "head": "Vết cắt, phồng rộp hoặc vết nứt trên da",
+        "head_type": "cause",
+        "relation": "causes",
+        "tail": "nhiễm trùng da",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Vết cắt, phồng rộp hoặc vết nứt trên da sẽ tạo điều kiện cho vi khuẩn xâm nhập vào cơ thể gây nguy cơ nhiễm trùng da, ngứa, viêm nang lông.",
+        "head": "Vết cắt, phồng rộp hoặc vết nứt trên da",
+        "head_type": "cause",
+        "relation": "causes",
+        "tail": "ngứa",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Vết cắt, phồng rộp hoặc vết nứt trên da sẽ tạo điều kiện cho vi khuẩn xâm nhập vào cơ thể gây nguy cơ nhiễm trùng da, ngứa, viêm nang lông.",
+        "head": "Vết cắt, phồng rộp hoặc vết nứt trên da",
+        "head_type": "cause",
+        "relation": "causes",
+        "tail": "viêm nang lông",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Tùy vào tình trạng da, bác sĩ sẽ chỉ định dùng thuốc kháng sinh bôi hoặc uống bôi lên vùng da bị ngứa để tiêu diệt vi khuẩn, giúp da mau phục hồi.",
+        "head": "thuốc kháng sinh bôi hoặc uống",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "ngứa",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Tùy vào tình trạng da, bác sĩ sẽ chỉ định dùng thuốc kháng sinh bôi hoặc uống bôi lên vùng da bị ngứa để tiêu diệt vi khuẩn, giúp da mau phục hồi.",
+        "head": "thuốc kháng sinh bôi hoặc uống",
+        "head_type": "treatment",
+        "relation": "affects",
+        "tail": "da",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Người bệnh tiểu đường có hệ miễn dịch yếu nên dễ nhiễm nấm, nhiễm trùng gây ngứa da, thường xuất hiện ở giữa các ngón chân.",
+        "head": "hệ miễn dịch yếu",
+        "head_type": "symptom",
+        "relation": "causes",
+        "tail": "nhiễm nấm",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Người bệnh tiểu đường có hệ miễn dịch yếu nên dễ nhiễm nấm, nhiễm trùng gây ngứa da, thường xuất hiện ở giữa các ngón chân.",
+        "head": "hệ miễn dịch yếu",
+        "head_type": "symptom",
+        "relation": "causes",
+        "tail": "nhiễm trùng",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Người bệnh tiểu đường có hệ miễn dịch yếu nên dễ nhiễm nấm, nhiễm trùng gây ngứa da, thường xuất hiện ở giữa các ngón chân.",
+        "head": "nhiễm nấm, nhiễm trùng",
+        "head_type": "symptom",
+        "relation": "causes",
+        "tail": "ngứa da",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Người bệnh tiểu đường có hệ miễn dịch yếu nên dễ nhiễm nấm, nhiễm trùng gây ngứa da, thường xuất hiện ở giữa các ngón chân.",
+        "head": "ngứa da",
+        "head_type": "symptom",
+        "relation": "locatedIn",
+        "tail": "giữa các ngón chân",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Bệnh nấm da chân do nấm candida gây ra, phát triển ở các nếp gấp của da (nếp gấp ở khuyu tay, chân, háng, cổ, nách…).",
+        "head": "Bệnh nấm da chân",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "nấm candida",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Bệnh nấm da chân do nấm candida gây ra, phát triển ở các nếp gấp của da (nếp gấp ở khuyu tay, chân, háng, cổ, nách…).",
+        "head": "Bệnh nấm da chân",
+        "head_type": "disease",
+        "relation": "locatedIn",
+        "tail": "các nếp gấp của da",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Bệnh nấm da chân do nấm candida gây ra, phát triển ở các nếp gấp của da (nếp gấp ở khuyu tay, chân, háng, cổ, nách…).",
+        "head": "Bệnh nấm da chân",
+        "head_type": "disease",
+        "relation": "locatedIn",
+        "tail": "khuyu tay",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Bệnh nấm da chân do nấm candida gây ra, phát triển ở các nếp gấp của da (nếp gấp ở khuyu tay, chân, háng, cổ, nách…).",
+        "head": "Bệnh nấm da chân",
+        "head_type": "disease",
+        "relation": "locatedIn",
+        "tail": "chân",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Bệnh nấm da chân do nấm candida gây ra, phát triển ở các nếp gấp của da (nếp gấp ở khuyu tay, chân, háng, cổ, nách…).",
+        "head": "Bệnh nấm da chân",
+        "head_type": "disease",
+        "relation": "locatedIn",
+        "tail": "háng",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Bệnh nấm da chân do nấm candida gây ra, phát triển ở các nếp gấp của da (nếp gấp ở khuyu tay, chân, háng, cổ, nách…).",
+        "head": "Bệnh nấm da chân",
+        "head_type": "disease",
+        "relation": "locatedIn",
+        "tail": "cổ",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Bệnh nấm da chân do nấm candida gây ra, phát triển ở các nếp gấp của da (nếp gấp ở khuyu tay, chân, háng, cổ, nách…).",
+        "head": "Bệnh nấm da chân",
+        "head_type": "disease",
+        "relation": "locatedIn",
+        "tail": "nách",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Người bệnh cần thoa kem chống nấm tại chỗ để tiêu diệt nấm, ngăn nhiễm trùng để cải thiện tình trạng da.",
+        "head": "kem chống nấm tại chỗ",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Bệnh nấm da chân",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Người bệnh cần thoa kem chống nấm tại chỗ để tiêu diệt nấm, ngăn nhiễm trùng để cải thiện tình trạng da.",
+        "head": "kem chống nấm tại chỗ",
+        "head_type": "treatment",
+        "relation": "affects",
+        "tail": "da",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Người bệnh cần thoa kem chống nấm tại chỗ để tiêu diệt nấm, ngăn nhiễm trùng để cải thiện tình trạng da.",
+        "head": "kem chống nấm tại chỗ",
+        "head_type": "treatment",
+        "relation": "preventedBy",
+        "tail": "nhiễm trùng",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Người bệnh tiểu đường có thể bị ngứa da do tác dụng phụ của một số loại thuốc hoặc có phản ứng dị ứng sau khi sử dụng.",
+        "head": "ngứa da",
+        "head_type": "symptom",
+        "relation": "causedBy",
+        "tail": "tác dụng phụ của một số loại thuốc",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Người bệnh tiểu đường có thể bị ngứa da do tác dụng phụ của một số loại thuốc hoặc có phản ứng dị ứng sau khi sử dụng.",
+        "head": "ngứa da",
+        "head_type": "symptom",
+        "relation": "causedBy",
+        "tail": "phản ứng dị ứng",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Khi gặp tình trạng ngứa da do dị ứng thuốc, người bệnh nên đến bác sĩ khám để điều trị kịp thời, thay đổi toa thuốc phù hợp, tránh làm tổn thương da.",
+        "head": "ngứa da do dị ứng thuốc",
+        "head_type": "symptom",
+        "relation": "treatedBy",
+        "tail": "bác sĩ khám",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Khi gặp tình trạng ngứa da do dị ứng thuốc, người bệnh nên đến bác sĩ khám để điều trị kịp thời, thay đổi toa thuốc phù hợp, tránh làm tổn thương da.",
+        "head": "ngứa da do dị ứng thuốc",
+        "head_type": "symptom",
+        "relation": "treatedBy",
+        "tail": "thay đổi toa thuốc",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Các sản phẩm như: nước hoa, thuốc nhuộm, xà phòng chứa chất tẩy mạnh có thể làm khô da, dẫn đến ngứa.",
+        "head": "nước hoa, thuốc nhuộm, xà phòng chứa chất tẩy mạnh",
+        "head_type": "lifestyle",
+        "relation": "causes",
+        "tail": "da khô",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Các sản phẩm như: nước hoa, thuốc nhuộm, xà phòng chứa chất tẩy mạnh có thể làm khô da, dẫn đến ngứa.",
+        "head": "da khô",
+        "head_type": "symptom",
+        "relation": "causes",
+        "tail": "ngứa",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Một số loại thuốc điều trị các vấn đề sức khỏe khác thường gặp ở người bệnh tiểu đường như: huyết áp cao, cholesterol xấu LDL trong máu cao cũng gây ngứa da.",
+        "head": "thuốc điều trị các vấn đề sức khỏe",
+        "head_type": "treatment",
+        "relation": "causes",
+        "tail": "ngứa da",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Một số loại thuốc điều trị các vấn đề sức khỏe khác thường gặp ở người bệnh tiểu đường như: huyết áp cao, cholesterol xấu LDL trong máu cao cũng gây ngứa da.",
+        "head": "huyết áp cao",
+        "head_type": "disease",
+        "relation": "associatedWith",
+        "tail": "tiểu đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Người bệnh tiểu đường dễ ngứa da do máu lưu thông kém.",
+        "head": "ngứa da",
+        "head_type": "symptom",
+        "relation": "causedBy",
+        "tail": "máu lưu thông kém",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Trong những trường hợp này, ngứa có nhiều khả năng xảy ra ở phần dưới của chân.",
+        "head": "ngứa",
+        "head_type": "symptom",
+        "relation": "locatedIn",
+        "tail": "phần dưới của chân",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Đôi khi, ngứa da xảy ra do các sợi thần kinh ở lớp ngoài của da bị tổn thương.",
+        "head": "ngứa da",
+        "head_type": "symptom",
+        "relation": "causedBy",
+        "tail": "các sợi thần kinh ở lớp ngoài của da bị tổn thương",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Khi lượng đường trong máu cao làm tổn thương các sợi thần kinh, đặc biệt ở bàn chân, bàn tay sẽ gây biến chứng đa dây thần kinh hoặc bệnh thần kinh ngoại biên khiến người bệnh tiểu đường ngứa da.",
+        "head": "lượng đường trong máu cao",
+        "head_type": "cause",
+        "relation": "causes",
+        "tail": "tổn thương các sợi thần kinh",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Khi lượng đường trong máu cao làm tổn thương các sợi thần kinh, đặc biệt ở bàn chân, bàn tay sẽ gây biến chứng đa dây thần kinh hoặc bệnh thần kinh ngoại biên khiến người bệnh tiểu đường ngứa da.",
+        "head": "tổn thương các sợi thần kinh",
+        "head_type": "cause",
+        "relation": "causes",
+        "tail": "biến chứng đa dây thần kinh hoặc bệnh thần kinh ngoại biên",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi lượng đường trong máu cao làm tổn thương các sợi thần kinh, đặc biệt ở bàn chân, bàn tay sẽ gây biến chứng đa dây thần kinh hoặc bệnh thần kinh ngoại biên khiến người bệnh tiểu đường ngứa da.",
+        "head": "biến chứng đa dây thần kinh hoặc bệnh thần kinh ngoại biên",
+        "head_type": "disease",
+        "relation": "causes",
+        "tail": "ngứa da",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Người mắc bệnh tiểu đường có lượng cytokine (chất gây viêm) cao trong cơ thể cũng gây ngứa da, tổn thương thần kinh ảnh hưởng đến sức khỏe.",
+        "head": "lượng cytokine (chất gây viêm) cao",
+        "head_type": "cause",
+        "relation": "causes",
+        "tail": "ngứa da",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Người mắc bệnh tiểu đường có lượng cytokine (chất gây viêm) cao trong cơ thể cũng gây ngứa da, tổn thương thần kinh ảnh hưởng đến sức khỏe.",
+        "head": "tổn thương thần kinh",
+        "head_type": "cause",
+        "relation": "affects",
+        "tail": "sức khỏe",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Khi nồng độ cytokine trong cơ thể tăng cao, nếu người bệnh tổn thần kinh không được điều trị sớm sẽ dẫn đến bệnh thần kinh phát triển gây ngứa lâu khỏi.",
+        "head": "nồng độ cytokine trong cơ thể tăng cao",
+        "head_type": "cause",
+        "relation": "causes",
+        "tail": "bệnh thần kinh phát triển",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi nồng độ cytokine trong cơ thể tăng cao, nếu người bệnh tổn thần kinh không được điều trị sớm sẽ dẫn đến bệnh thần kinh phát triển gây ngứa lâu khỏi.",
+        "head": "bệnh thần kinh phát triển",
+        "head_type": "disease",
+        "relation": "causes",
+        "tail": "ngứa lâu khỏi",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Do đó, khi có triệu chứng ngứa da, người bệnh tiểu đường cần đến bác sĩ chuyên khoa Nội tiết - Đái tháo đường và chuyên khoa Da liễu - thẩm mỹ da để kiểm tra sức khỏe, điều trị kịp thời, tránh nguy hiểm sức khỏe.",
+        "head": "ngứa da",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "bệnh tiểu đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Do đó, khi có triệu chứng ngứa da, người bệnh tiểu đường cần đến bác sĩ chuyên khoa Nội tiết - Đái tháo đường và chuyên khoa Da liễu - thẩm mỹ da để kiểm tra sức khỏe, điều trị kịp thời, tránh nguy hiểm sức khỏe.",
+        "head": "ngứa da",
+        "head_type": "symptom",
+        "relation": "treatedBy",
+        "tail": "bác sĩ chuyên khoa Nội tiết - Đái tháo đường và chuyên khoa Da liễu - thẩm mỹ da",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Người bệnh tiểu đường nên kiểm tra đường huyết thường xuyên để kiểm soát lượng đường trong máu tốt hơn.",
+        "head": "kiểm tra đường huyết",
+        "head_type": "test",
+        "relation": "relatedTo",
+        "tail": "kiểm soát lượng đường trong máu",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Ngứa da ở người bệnh tiểu đường thường xảy ra cục bộ hơn toàn thân.",
+        "head": "ngứa da",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "bệnh tiểu đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Những bộ phận dễ bị ngứa da bao gồm: da đầu, mắt cá chân, bàn chân, thân hoặc cơ quan sinh dục.",
+        "head": "ngứa da",
+        "head_type": "symptom",
+        "relation": "locatedIn",
+        "tail": "da đầu, mắt cá chân, bàn chân, thân hoặc cơ quan sinh dục",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Ngứa thường gặp ở người bệnh tiểu đường có da khô hoặc bệnh thần kinh tiểu đường.",
+        "head": "ngứa",
+        "head_type": "symptom",
+        "relation": "associatedWith",
+        "tail": "da khô hoặc bệnh thần kinh tiểu đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ngứa có thể là triệu chứng của bệnh tiểu đường hoặc tiền tiểu đường (có lượng đường trong máu cao gần đạt mức tiểu đường) (5).",
+        "head": "ngứa",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "bệnh tiểu đường hoặc tiền tiểu đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi lượng đường (glucose) trong máu quá cao. Cơ thể người bệnh sẽ cố gắng đào thải chúng bằng cách đẩy chất lỏng ra khỏi tế bào để tạo nhiều nước tiểu hơn nhằm giải phóng đường qua nước tiểu nên làm cho da khô, da mất nước dễ gây ngứa.",
+        "head": "da khô, da mất nước",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "lượng đường (glucose) trong máu quá cao",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Khi lượng đường (glucose) trong máu quá cao. Cơ thể người bệnh sẽ cố gắng đào thải chúng bằng cách đẩy chất lỏng ra khỏi tế bào để tạo nhiều nước tiểu hơn nhằm giải phóng đường qua nước tiểu nên làm cho da khô, da mất nước dễ gây ngứa.",
+        "head": "ngứa",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "lượng đường (glucose) trong máu quá cao",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Lượng đường trong máu cao sẽ làm tổn thương hàng rào bảo vệ da (lớp ngoài cùng của da bảo vệ các mô dưới da) khiến da phản ứng với các chất kích thích bằng cách ngứa.",
+        "head": "ngứa",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "lượng đường trong máu cao",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Lượng đường trong máu cao sẽ làm tổn thương hàng rào bảo vệ da (lớp ngoài cùng của da bảo vệ các mô dưới da) khiến da phản ứng với các chất kích thích bằng cách ngứa.",
+        "head": "tổn thương hàng rào bảo vệ da",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "lượng đường trong máu cao",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Nếu người bệnh tiểu đường gãi liên tục sẽ làm tổn thương da, thậm chí dẫn đến nhiễm trùng.",
+        "head": "tổn thương da",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "tiểu đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu người bệnh tiểu đường gãi liên tục sẽ làm tổn thương da, thậm chí dẫn đến nhiễm trùng.",
+        "head": "nhiễm trùng",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "tiểu đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nồng độ glucose (đường) cao trong máu cũng kích hoạt phản ứng của hệ miễn dịch trong cơ thể giải phóng các cytokine (tác nhân gây viêm) gây ngứa da.",
+        "head": "ngứa da",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "nồng độ glucose (đường) cao trong máu",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Bệnh tiểu đường ảnh hưởng đến hệ tuần hoàn trong cơ thể bằng cách làm tổn thương lớp niêm mạc của mạch máu khiến máu lưu thông kém, chất dinh dưỡng vận chuyển không hiệu quả dẫn đến bệnh thần kinh tiểu đường, tổn thương thần kinh.",
+        "head": "tổn thương lớp niêm mạc của mạch máu",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "tiểu đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bệnh tiểu đường ảnh hưởng đến hệ tuần hoàn trong cơ thể bằng cách làm tổn thương lớp niêm mạc của mạch máu khiến máu lưu thông kém, chất dinh dưỡng vận chuyển không hiệu quả dẫn đến bệnh thần kinh tiểu đường, tổn thương thần kinh.",
+        "head": "máu lưu thông kém",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "tiểu đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bệnh tiểu đường ảnh hưởng đến hệ tuần hoàn trong cơ thể bằng cách làm tổn thương lớp niêm mạc của mạch máu khiến máu lưu thông kém, chất dinh dưỡng vận chuyển không hiệu quả dẫn đến bệnh thần kinh tiểu đường, tổn thương thần kinh.",
+        "head": "chất dinh dưỡng vận chuyển không hiệu quả",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "tiểu đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bệnh tiểu đường ảnh hưởng đến hệ tuần hoàn trong cơ thể bằng cách làm tổn thương lớp niêm mạc của mạch máu khiến máu lưu thông kém, chất dinh dưỡng vận chuyển không hiệu quả dẫn đến bệnh thần kinh tiểu đường, tổn thương thần kinh.",
+        "head": "bệnh thần kinh tiểu đường",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "tiểu đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bệnh tiểu đường ảnh hưởng đến hệ tuần hoàn trong cơ thể bằng cách làm tổn thương lớp niêm mạc của mạch máu khiến máu lưu thông kém, chất dinh dưỡng vận chuyển không hiệu quả dẫn đến bệnh thần kinh tiểu đường, tổn thương thần kinh.",
+        "head": "tổn thương thần kinh",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "tiểu đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đặc biệt, bàn chân người bệnh tiểu đường dễ tổn thương nhất do giảm tuần hoàn.",
+        "head": "tổn thương",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "tiểu đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đặc biệt, bàn chân người bệnh tiểu đường dễ tổn thương nhất do giảm tuần hoàn.",
+        "head": "giảm tuần hoàn",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "tiểu đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Người bệnh thần kinh tiểu đường thường gây ngứa nhiều ở cẳng chân nên người bệnh cần vệ sinh bàn chân thường xuyên, chăm sóc đôi chân khỏe mạnh, tránh để trầy xước da gây nhiễm trùng, nguy hiểm sức khỏe.",
+        "head": "ngứa",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "thần kinh tiểu đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Người bệnh thần kinh tiểu đường thường gây ngứa nhiều ở cẳng chân nên người bệnh cần vệ sinh bàn chân thường xuyên, chăm sóc đôi chân khỏe mạnh, tránh để trầy xước da gây nhiễm trùng, nguy hiểm sức khỏe.",
+        "head": "vệ sinh bàn chân thường xuyên",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "thần kinh tiểu đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Người bệnh thần kinh tiểu đường thường gây ngứa nhiều ở cẳng chân nên người bệnh cần vệ sinh bàn chân thường xuyên, chăm sóc đôi chân khỏe mạnh, tránh để trầy xước da gây nhiễm trùng, nguy hiểm sức khỏe.",
+        "head": "chăm sóc đôi chân khỏe mạnh",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "thần kinh tiểu đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Người bệnh thần kinh tiểu đường thường gây ngứa nhiều ở cẳng chân nên người bệnh cần vệ sinh bàn chân thường xuyên, chăm sóc đôi chân khỏe mạnh, tránh để trầy xước da gây nhiễm trùng, nguy hiểm sức khỏe.",
+        "head": "tránh để trầy xước da",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "thần kinh tiểu đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bệnh tiểu đường có sức đề kháng yếu nên dễ nhiễm nấm hơn.",
+        "head": "nhiễm nấm",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "tiểu đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nồng độ glucose cao trong máu và nước tiểu sẽ dẫn đến sự phát triển quá mức của nấm men trong âm đạo.",
+        "head": "sự phát triển quá mức của nấm men trong âm đạo",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "nồng độ glucose cao trong máu và nước tiểu",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Nhiễm nấm men âm đạo có thể gây ngứa rất khó chịu, ảnh hưởng đến sức khỏe, chất lượng cuộc sống của người bệnh.",
+        "head": "ngứa",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "nhiễm nấm men âm đạo",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nhiễm nấm men âm đạo có thể gây ngứa rất khó chịu, ảnh hưởng đến sức khỏe, chất lượng cuộc sống của người bệnh.",
+        "head": "ảnh hưởng đến sức khỏe",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "nhiễm nấm men âm đạo",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nhiễm nấm men âm đạo có thể gây ngứa rất khó chịu, ảnh hưởng đến sức khỏe, chất lượng cuộc sống của người bệnh.",
+        "head": "ảnh hưởng đến chất lượng cuộc sống",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "nhiễm nấm men âm đạo",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bệnh tiểu đường ảnh hưởng đến hệ tuần hoàn trong cơ thể bằng cách làm tổn thương lớp niêm mạc của mạch máu khiến máu lưu thông kém, chất dinh dưỡng vận chuyển không hiệu quả dẫn đến bệnh thần kinh tiểu đường, tổn thương thần kinh.",
+        "head": "tiểu đường",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "hệ tuần hoàn",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Bệnh tiểu đường ảnh hưởng đến hệ tuần hoàn trong cơ thể bằng cách làm tổn thương lớp niêm mạc của mạch máu khiến máu lưu thông kém, chất dinh dưỡng vận chuyển không hiệu quả dẫn đến bệnh thần kinh tiểu đường, tổn thương thần kinh.",
+        "head": "tiểu đường",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "mạch máu",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Bệnh tiểu đường ảnh hưởng đến hệ tuần hoàn trong cơ thể bằng cách làm tổn thương lớp niêm mạc của mạch máu khiến máu lưu thông kém, chất dinh dưỡng vận chuyển không hiệu quả dẫn đến bệnh thần kinh tiểu đường, tổn thương thần kinh.",
+        "head": "tiểu đường",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "thần kinh",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Đặc biệt, bàn chân người bệnh tiểu đường dễ tổn thương nhất do giảm tuần hoàn.",
+        "head": "tiểu đường",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "bàn chân",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Người bệnh tiểu đường chăm sóc da tốt cũng rất quan trọng trong việc kiểm soát tình trạng bệnh.",
+        "head": "Chăm sóc da tốt",
+        "head_type": "lifestyle",
+        "relation": "relatedTo",
+        "tail": "Kiểm soát tình trạng bệnh",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Người bệnh cần thực hiện theo hướng dẫn, phác đồ điều trị của bác sĩ để quản lý lượng đường trong máu, bảo vệ sức khỏe tốt hơn.",
+        "head": "Người bệnh",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "Hướng dẫn, phác đồ điều trị",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Người bệnh cần thực hiện theo hướng dẫn, phác đồ điều trị của bác sĩ để quản lý lượng đường trong máu, bảo vệ sức khỏe tốt hơn.",
+        "head": "Quản lý lượng đường trong máu",
+        "head_type": "treatment",
+        "relation": "relatedTo",
+        "tail": "Kiểm soát tình trạng bệnh",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Khi bệnh tiểu đường được kiểm soát tốt, toàn bộ cơ thể, cả da cũng khỏe mạnh chống lại được những tác nhân gây bệnh.",
+        "head": "Bệnh tiểu đường",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "Kiểm soát tốt",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Khi bệnh tiểu đường được kiểm soát tốt, toàn bộ cơ thể, cả da cũng khỏe mạnh chống lại được những tác nhân gây bệnh.",
+        "head": "Da",
+        "head_type": "organ",
+        "relation": "affects",
+        "tail": "Tác nhân gây bệnh",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Sau đây là một số giải pháp dành cho người tiểu đường bị ngứa da giúp giữ cho da khỏe mạnh, mềm mại, tránh nhiễm trùng như:",
+        "head": "Ngứa da",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Tiểu đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Người bệnh nên dưỡng ẩm bằng cách sử dụng kem dưỡng ẩm dạng kem 2 lần/ngày để da luôn đủ độ ẩm, khỏe mạnh hơn.",
+        "head": "Kem dưỡng ẩm dạng kem",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Ngứa da",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Giữ cho da luôn sạch sẽ, lau khô da sau khi tắm, rửa.",
+        "head": "Giữ cho da luôn sạch sẽ",
+        "head_type": "lifestyle",
+        "relation": "relatedTo",
+        "tail": "Ngứa da",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Không nên tắm quá nhiều lần trong ngày hay sử dụng xà phòng có mùi thơm vì các hóa chất trong các sản phẩm này dễ làm cho da khô hoặc kích ứng.",
+        "head": "Tắm quá nhiều lần trong ngày",
+        "head_type": "lifestyle",
+        "relation": "aggravatedBy",
+        "tail": "Ngứa da",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Không nên tắm quá nhiều lần trong ngày hay sử dụng xà phòng có mùi thơm vì các hóa chất trong các sản phẩm này dễ làm cho da khô hoặc kích ứng.",
+        "head": "Xà phòng có mùi thơm",
+        "head_type": "treatment",
+        "relation": "aggravatedBy",
+        "tail": "Ngứa da",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Người bệnh nên chọn loại xà phòng không sút (sans savon, soap free, alkaline free); xà phòng dịu nhẹ (gentle wash , gentle cleanser), không mùi để chăm sóc da.",
+        "head": "Xà phòng không sút",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Ngứa da",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Người bệnh nên chọn loại xà phòng không sút (sans savon, soap free, alkaline free); xà phòng dịu nhẹ (gentle wash , gentle cleanser), không mùi để chăm sóc da.",
+        "head": "Xà phòng dịu nhẹ",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Ngứa da",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Tắm vòi hoa sen hoặc tắm nước ấm (không quá nóng).",
+        "head": "Tắm vòi hoa sen",
+        "head_type": "lifestyle",
+        "relation": "relatedTo",
+        "tail": "Ngứa da",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Tắm vòi hoa sen hoặc tắm nước ấm (không quá nóng).",
+        "head": "Tắm nước ấm",
+        "head_type": "lifestyle",
+        "relation": "relatedTo",
+        "tail": "Ngứa da",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Cân nhắc sử dụng máy tạo độ ẩm tại nhà khi thời tiết lạnh vì không khí lạnh dễ làm khô da.",
+        "head": "Máy tạo độ ẩm",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "Ngứa da",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Cân nhắc sử dụng máy tạo độ ẩm tại nhà khi thời tiết lạnh vì không khí lạnh dễ làm khô da.",
+        "head": "Thời tiết lạnh",
+        "head_type": "cause",
+        "relation": "aggravatedBy",
+        "tail": "Ngứa da",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Một số loại quần áo từ len, lụa hay các loại vải khó thấm hút mồ hôi khiến da dễ bị kích ứng gây ngứa da.",
+        "head": "Quần áo từ len, lụa",
+        "head_type": "lifestyle",
+        "relation": "aggravatedBy",
+        "tail": "Ngứa da",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Do đó, người bệnh nên mặc các loại quần áo ít kích ứng như: cotton, vải lanh, lụa… để bảo vệ da.",
+        "head": "Quần áo cotton, vải lanh, lụa",
+        "head_type": "lifestyle",
+        "relation": "relatedTo",
+        "tail": "Ngứa da",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Sử dụng gạc lạnh cũng có hiệu quả giúp giảm ngứa da.",
+        "head": "Sử dụng gạc lạnh",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "ngứa da",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Người bệnh có thể đắp miếng gạc lạnh lên vùng da bị ngứa đến khi hết ngứa.",
+        "head": "đắp miếng gạc lạnh",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "ngứa da",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Trường hợp hết gạc lạnh, người bệnh có thể tắm nước lạnh bằng vòi hoa sen.",
+        "head": "tắm nước lạnh bằng vòi hoa sen",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "ngứa da",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Tuy nhiên, người bệnh không nên tắm thường xuyên nếu đường huyết không được kiểm soát tốt.",
+        "head": "tắm thường xuyên",
+        "head_type": "lifestyle",
+        "relation": "aggravatedBy",
+        "tail": "đường huyết không được kiểm soát tốt",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Bác sĩ sẽ kê đơn thêm cho người bệnh có mức độ ngứa nặng một số loại thuốc mỡ có chứa: Camphor, Menthol, Phenol hoặc thuốc chống nấm, thuốc kháng histamin…",
+        "head": "thuốc mỡ có chứa: Camphor, Menthol, Phenol hoặc thuốc chống nấm, thuốc kháng histamin",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "ngứa da",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Các loại thuốc này có thể gây ra một số tác dụng phụ nếu dùng sai cách, do đó người bệnh cần tuân thủ sử dụng thuốc đúng hướng dẫn của bác sĩ.",
+        "head": "dùng sai cách",
+        "head_type": "lifestyle",
+        "relation": "aggravatedBy",
+        "tail": "tác dụng phụ",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Người bệnh tiểu đường nên sử dụng thực phẩm giàu chất xơ, ít cholesterol, hàm lượng chất béo bão hòa thấp để kiểm soát đường huyết tốt hơn.",
+        "head": "thực phẩm giàu chất xơ, ít cholesterol, hàm lượng chất béo bão hòa thấp",
+        "head_type": "food",
+        "relation": "treatedBy",
+        "tail": "đường huyết",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Một số loại thực phẩm lành mạnh người bệnh tiểu đường có thể lựa chọn như: các loại đậu, yến mạch, trái mâm xôi, hạnh nhân, các loại ngũ cốc, hạt lanh, cá béo (cá hồi, cá thu, cá mòi, cá trích, rau lá xanh, bông cải, bí đỏ, dầu oliu nguyên chất…).",
+        "head": "các loại đậu, yến mạch, trái mâm xôi, hạnh nhân, các loại ngũ cốc, hạt lanh, cá béo (cá hồi, cá thu, cá mòi, cá trích, rau lá xanh, bông cải, bí đỏ, dầu oliu nguyên chất",
+        "head_type": "food",
+        "relation": "relatedTo",
+        "tail": "tiểu đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tuy nhiên, người bệnh hạn chế dùng ngũ cốc đã qua tinh chế nên sử dụng ngũ cốc nguyên hạt có lớp cám và mầm nguyên vẹn để giảm nguy cơ bệnh tim do biến chứng tiểu đường.",
+        "head": "ngũ cốc đã qua tinh chế",
+        "head_type": "food",
+        "relation": "aggravatedBy",
+        "tail": "bệnh tim do biến chứng tiểu đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ngũ cốc nguyên hạt bổ sung chất xơ, vitamin B, magiê, selen, ngăn lượng đường trong máu tăng cao, giúp người bệnh cảm thấy no lâu hơn.",
+        "head": "Ngũ cốc nguyên hạt",
+        "head_type": "food",
+        "relation": "treatedBy",
+        "tail": "lượng đường trong máu tăng cao",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Người bệnh tiểu đường cần có chế độ dinh dưỡng phù hợp giúp kiểm soát đường huyết tốt hơn.",
+        "head": "chế độ dinh dưỡng phù hợp",
+        "head_type": "lifestyle",
+        "relation": "treatedBy",
+        "tail": "đường huyết",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Tập thể dục không những giúp cơ thể tăng cường sức đề kháng mà việc tập luyện thường xuyên còn giúp cơ thể sử dụng insulin tốt hơn, kiểm soát đường huyết ổn định.",
+        "head": "Tập thể dục",
+        "head_type": "lifestyle",
+        "relation": "treatedBy",
+        "tail": "đường huyết",
+        "tail_type": "symptom"
+    }
+]

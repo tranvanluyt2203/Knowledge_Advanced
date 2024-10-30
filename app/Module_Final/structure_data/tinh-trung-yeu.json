@@ -1,0 +1,649 @@
+[
+    {
+        "text": "Tinh trùng yếu là tình trạng chất lượng của tinh trùng bị suy giảm.",
+        "head": "Tinh trùng yếu",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Chất lượng tinh trùng bị suy giảm",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Tỷ lệ tinh trùng di động dưới 75%, tỷ lệ chết và không di động cao hơn 25%.",
+        "head": "Tỷ lệ tinh trùng di động dưới 75%",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Tinh trùng yếu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tỷ lệ tinh trùng di động dưới 75%, tỷ lệ chết và không di động cao hơn 25%.",
+        "head": "Tỷ lệ chết và không di động cao hơn 25%",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Tinh trùng yếu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tinh trùng di động thấy được dưới 50%, di động nhanh dưới 25%.",
+        "head": "Tinh trùng di động thấy được dưới 50%",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Tinh trùng yếu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tinh trùng di động thấy được dưới 50%, di động nhanh dưới 25%.",
+        "head": "Di động nhanh dưới 25%",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Tinh trùng yếu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Mỗi lần xuất tinh, lượng tinh dịch thường ít hơn 2ml, số lượng tinh trùng ít hơn 40 triệu con.",
+        "head": "Lượng tinh dịch ít hơn 2ml",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Tinh trùng ít",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Mỗi lần xuất tinh, lượng tinh dịch thường ít hơn 2ml, số lượng tinh trùng ít hơn 40 triệu con.",
+        "head": "Số lượng tinh trùng ít hơn 40 triệu con",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Tinh trùng ít",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tình trạng chất lượng tinh trùng suy giảm do nhiều nguyên nhân gây ra, thường liên quan trực tiếp tới chế độ dinh dưỡng, thói quen sinh hoạt của nam giới.",
+        "head": "Chế độ dinh dưỡng",
+        "head_type": "lifestyle",
+        "relation": "causedBy",
+        "tail": "Chất lượng tinh trùng suy giảm",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Tình trạng chất lượng tinh trùng suy giảm do nhiều nguyên nhân gây ra, thường liên quan trực tiếp tới chế độ dinh dưỡng, thói quen sinh hoạt của nam giới.",
+        "head": "Thói quen sinh hoạt",
+        "head_type": "lifestyle",
+        "relation": "causedBy",
+        "tail": "Chất lượng tinh trùng suy giảm",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Tinh dịch không có độ dính, nhớt đặc trưng mà loãng như nước vo gạo.",
+        "head": "Tinh dịch loãng",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Tinh trùng yếu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tinh dịch không có độ dính, nhớt đặc trưng mà loãng như nước vo gạo.",
+        "head": "Tinh dịch loãng như nước vo gạo",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Tinh trùng yếu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đây là dấu hiệu gợi ý tình trạng suy giảm bất thường về số lượng, chất lượng tinh trùng, gây tác động tiêu cực đến khả năng sinh sản của nam giới.",
+        "head": "Tinh dịch loãng",
+        "head_type": "symptom",
+        "relation": "affects",
+        "tail": "Khả năng sinh sản",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Biểu hiện là tinh dịch xuất hiện các hạt trắng nhỏ như hạt cơm, khi bóp cho cảm giác mịn như bột.",
+        "head": "Tinh dịch vón cục",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Tinh trùng yếu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tinh dịch vón cục",
+        "head_type": "symptom",
+        "relation": "affects",
+        "tail": "Tinh trùng",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Ở trạng thái này, tinh dịch làm tinh trùng dễ bị chết, khó di chuyển để thụ tinh cho trứng.",
+        "head": "Tinh dịch vón cục",
+        "head_type": "symptom",
+        "relation": "affects",
+        "tail": "Tinh trùng",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Ở nhiệt độ 37°C, tinh dịch từ trạng thái quánh sệt hóa lỏng sau khoảng thời gian chưa đến 60 phút.",
+        "head": "Tinh dịch đông đặc",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Tinh trùng yếu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tình trạng hóa lỏng không diễn ra hay chỉ hóa lỏng một phần là dấu hiệu tinh dịch bị đông đặc.",
+        "head": "Tinh dịch đông đặc",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Tinh trùng yếu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Điều này khiến tinh trùng khó di chuyển tới gặp trứng, gây ảnh hưởng tới kết quả thụ thai.",
+        "head": "Tinh dịch đông đặc",
+        "head_type": "symptom",
+        "relation": "affects",
+        "tail": "Kết quả thụ thai",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Nếu tinh dịch có màu vàng hoặc xanh, nam giới có khả năng mắc những bệnh viêm nhiễm như viêm mào tinh, viêm niệu đạo, viêm tiền liệt tuyến…",
+        "head": "Tinh dịch có màu vàng hoặc xanh",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm mào tinh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu tinh dịch có màu vàng hoặc xanh, nam giới có khả năng mắc những bệnh viêm nhiễm như viêm mào tinh, viêm niệu đạo, viêm tiền liệt tuyến…",
+        "head": "Tinh dịch có màu vàng hoặc xanh",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm niệu đạo",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu tinh dịch có màu vàng hoặc xanh, nam giới có khả năng mắc những bệnh viêm nhiễm như viêm mào tinh, viêm niệu đạo, viêm tiền liệt tuyến…",
+        "head": "Tinh dịch có màu vàng hoặc xanh",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Viêm tiền liệt tuyến",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu tinh dịch có màu nâu (thường do lẫn máu) đi kèm những triệu chứng như đau bụng, đau tức dương vật…, đây có thể là triệu chứng ban đầu của những bệnh liên quan tới đường tiết niệu hay cơ quan sinh dục.",
+        "head": "Tinh dịch có màu nâu",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Bệnh liên quan tới đường tiết niệu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Quá trình sản xuất tinh trùng tương đối phức tạp, cần sự hoạt động ổn định của tất cả bộ phận liên quan như tinh hoàn, vùng dưới đồi và tuyến yên.",
+        "head": "Quá trình sản xuất tinh trùng",
+        "head_type": "process",
+        "relation": "relatedTo",
+        "tail": "tinh hoàn",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Quá trình sản xuất tinh trùng tương đối phức tạp, cần sự hoạt động ổn định của tất cả bộ phận liên quan như tinh hoàn, vùng dưới đồi và tuyến yên.",
+        "head": "Quá trình sản xuất tinh trùng",
+        "head_type": "process",
+        "relation": "relatedTo",
+        "tail": "vùng dưới đồi",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Quá trình sản xuất tinh trùng tương đối phức tạp, cần sự hoạt động ổn định của tất cả bộ phận liên quan như tinh hoàn, vùng dưới đồi và tuyến yên.",
+        "head": "Quá trình sản xuất tinh trùng",
+        "head_type": "process",
+        "relation": "relatedTo",
+        "tail": "tuyến yên",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Bất cứ vấn đề nào xảy ra trong quá trình này đều có khả năng ảnh hưởng đến quá trình sản xuất và sức khỏe của tinh trùng.",
+        "head": "vấn đề",
+        "head_type": "cause",
+        "relation": "affects",
+        "tail": "Quá trình sản xuất tinh trùng",
+        "tail_type": "process"
+    },
+    {
+        "text": "Bất cứ vấn đề nào xảy ra trong quá trình này đều có khả năng ảnh hưởng đến quá trình sản xuất và sức khỏe của tinh trùng.",
+        "head": "vấn đề",
+        "head_type": "cause",
+        "relation": "affects",
+        "tail": "sức khỏe của tinh trùng",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Giãn tĩnh mạch thừng tinh: Đây là nguyên nhân thường gặp nhất gây vô sinh nam.",
+        "head": "Giãn tĩnh mạch thừng tinh",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "vô sinh nam",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Giãn tĩnh mạch tinh làm suy giảm chất lượng tinh trùng.",
+        "head": "Giãn tĩnh mạch tinh",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "chất lượng tinh trùng",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Một số tình trạng nhiễm trùng có thể gây ảnh hưởng đến quá trình sản xuất tinh trùng hay tạo ra sẹo cản trở trên đường vận chuyển tinh trùng (cản trở cơ học).",
+        "head": "nhiễm trùng",
+        "head_type": "cause",
+        "relation": "affects",
+        "tail": "Quá trình sản xuất tinh trùng",
+        "tail_type": "process"
+    },
+    {
+        "text": "Một số tình trạng nhiễm trùng có thể gây ảnh hưởng đến quá trình sản xuất tinh trùng hay tạo ra sẹo cản trở trên đường vận chuyển tinh trùng (cản trở cơ học).",
+        "head": "nhiễm trùng",
+        "head_type": "cause",
+        "relation": "affects",
+        "tail": "đường vận chuyển tinh trùng",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Các trường hợp viêm nhiễm như viêm mào tinh hoàn, viêm tinh hoàn và các bệnh lây truyền qua đường tình dục (lậu, HIV…)",
+        "head": "viêm mào tinh hoàn",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "nhiễm trùng",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Các trường hợp viêm nhiễm như viêm mào tinh hoàn, viêm tinh hoàn và các bệnh lây truyền qua đường tình dục (lậu, HIV…)",
+        "head": "viêm tinh hoàn",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "nhiễm trùng",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Các trường hợp viêm nhiễm như viêm mào tinh hoàn, viêm tinh hoàn và các bệnh lây truyền qua đường tình dục (lậu, HIV…)",
+        "head": "lậu",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "nhiễm trùng",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Các trường hợp viêm nhiễm như viêm mào tinh hoàn, viêm tinh hoàn và các bệnh lây truyền qua đường tình dục (lậu, HIV…)",
+        "head": "HIV",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "nhiễm trùng",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Bệnh tự miễn: Nguyên nhân này hiếm khi xảy ra.",
+        "head": "Bệnh tự miễn",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "kháng thể tấn công và tiêu diệt tinh trùng của cơ thể",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Đây là tình trạng kháng thể tấn công và tiêu diệt tinh trùng của cơ thể.",
+        "head": "kháng thể tấn công và tiêu diệt tinh trùng của cơ thể",
+        "head_type": "cause",
+        "relation": "affects",
+        "tail": "tinh trùng",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Khối u có khả năng gây mất cân bằng nội tiết tố, ảnh hưởng đến cơ quan sinh sản của nam giới.",
+        "head": "Khối u",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "cơ quan sinh sản của nam giới",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Ngoài ra, quá trình điều trị khối u cũng có thể gây ảnh hưởng đến khả năng sinh sản của đàn ông.",
+        "head": "quá trình điều trị khối u",
+        "head_type": "treatment",
+        "relation": "affects",
+        "tail": "khả năng sinh sản của đàn ông",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Nội tiết tố là thành phần không thể thiếu trong quá trình sản xuất tinh trùng.",
+        "head": "Nội tiết tố",
+        "head_type": "cause",
+        "relation": "relatedTo",
+        "tail": "Quá trình sản xuất tinh trùng",
+        "tail_type": "process"
+    },
+    {
+        "text": "Vì thế, sự mất cân bằng nội tiết tố có thể gây tổn hại đến quá trình sản xuất tinh trùng.",
+        "head": "sự mất cân bằng nội tiết tố",
+        "head_type": "cause",
+        "relation": "affects",
+        "tail": "Quá trình sản xuất tinh trùng",
+        "tail_type": "process"
+    },
+    {
+        "text": "Một số loại thuốc điều trị có khả năng gây hại đến quá trình sản xuất tinh trùng, khiến khả năng sinh sản của nam giới bị suy giảm.",
+        "head": "thuốc điều trị",
+        "head_type": "treatment",
+        "relation": "affects",
+        "tail": "Quá trình sản xuất tinh trùng",
+        "tail_type": "process"
+    },
+    {
+        "text": "Một số loại thuốc điều trị có khả năng gây hại đến quá trình sản xuất tinh trùng, khiến khả năng sinh sản của nam giới bị suy giảm.",
+        "head": "thuốc điều trị",
+        "head_type": "treatment",
+        "relation": "affects",
+        "tail": "khả năng sinh sản của nam giới",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Dị tật bẩm sinh, rối loạn di truyền… có khả năng ảnh hưởng đến khả năng sinh sản của nam giới.",
+        "head": "Dị tật bẩm sinh",
+        "head_type": "cause",
+        "relation": "affects",
+        "tail": "khả năng sinh sản của nam giới",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Dị tật bẩm sinh, rối loạn di truyền… có khả năng ảnh hưởng đến khả năng sinh sản của nam giới.",
+        "head": "rối loạn di truyền",
+        "head_type": "cause",
+        "relation": "affects",
+        "tail": "khả năng sinh sản của nam giới",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Tình trạng phơi nhiễm kéo dài với benzene, xylene, toluene, thuốc trừ sâu, thuốc diệt cỏ, dung môi hữu cơ, vật liệu sơn… có thể gây tác động tiêu cực lên tinh trùng.",
+        "head": "phơi nhiễm kéo dài với benzene, xylene, toluene, thuốc trừ sâu, thuốc diệt cỏ, dung môi hữu cơ, vật liệu sơn",
+        "head_type": "lifestyle",
+        "relation": "affects",
+        "tail": "tinh trùng",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Phơi nhiễm với chì và những kim loại nặng khác là một trong những nguyên nhân gây vô sinh nam.",
+        "head": "Phơi nhiễm với chì và những kim loại nặng khác",
+        "head_type": "lifestyle",
+        "relation": "isSymptomOf",
+        "tail": "vô sinh nam",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Phơi nhiễm với tia xạ có khả năng làm giảm hay mất hoàn toàn khả năng sinh tinh.",
+        "head": "Phơi nhiễm với tia xạ",
+        "head_type": "lifestyle",
+        "relation": "affects",
+        "tail": "khả năng sinh tinh",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Để phục hồi, nam giới có thể mất đến vài năm.",
+        "head": "Phục hồi",
+        "head_type": "treatment",
+        "relation": "relatedTo",
+        "tail": "khả năng sinh tinh",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Rượu và những thức uống chứa cồn đều có khả năng làm giảm nồng độ testosterone, ảnh hưởng lên tình trùng.",
+        "head": "Rượu và những thức uống chứa cồn",
+        "head_type": "food",
+        "relation": "affects",
+        "tail": "tình trùng",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Hút thuốc gây hại rất nhiều khía cạnh sức khỏe, bao gồm sức khỏe sinh sản.",
+        "head": "Hút thuốc",
+        "head_type": "lifestyle",
+        "relation": "affects",
+        "tail": "sức khỏe sinh sản",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Tình trạng căng thẳng kéo dài có thể gây tác động xấu đến chất lượng tinh trùng.",
+        "head": "Tình trạng căng thẳng kéo dài",
+        "head_type": "lifestyle",
+        "relation": "affects",
+        "tail": "chất lượng tinh trùng",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Tình trạng thừa cân, béo phì có thể vừa tác động trực tiếp lên tinh trùng vừa làm mất sự cân bằng nội tiết tố, gây ảnh hưởng đến quá trình sinh tinh.",
+        "head": "Tình trạng thừa cân, béo phì",
+        "head_type": "lifestyle",
+        "relation": "affects",
+        "tail": "tinh trùng",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Tình trạng thừa cân, béo phì có thể vừa tác động trực tiếp lên tinh trùng vừa làm mất sự cân bằng nội tiết tố, gây ảnh hưởng đến quá trình sinh tinh.",
+        "head": "Tình trạng thừa cân, béo phì",
+        "head_type": "lifestyle",
+        "relation": "affects",
+        "tail": "sự cân bằng nội tiết tố",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Tình trạng thừa cân, béo phì có thể vừa tác động trực tiếp lên tinh trùng vừa làm mất sự cân bằng nội tiết tố, gây ảnh hưởng đến quá trình sinh tinh.",
+        "head": "Tình trạng thừa cân, béo phì",
+        "head_type": "lifestyle",
+        "relation": "affects",
+        "tail": "quá trình sinh tinh",
+        "tail_type": "process"
+    },
+    {
+        "text": "Khi thăm khám lâm sàng, bác sĩ sẽ kiểm tra cơ quan sinh dục ngoài và yêu cầu người bệnh trả lời các câu hỏi về bệnh lý mắc phải trước đây và thói quen sinh hoạt tình dục.",
+        "head": "thăm khám lâm sàng",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "bệnh lý mắc phải trước đây",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi thăm khám lâm sàng, bác sĩ sẽ kiểm tra cơ quan sinh dục ngoài và yêu cầu người bệnh trả lời các câu hỏi về bệnh lý mắc phải trước đây và thói quen sinh hoạt tình dục.",
+        "head": "thăm khám lâm sàng",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "thói quen sinh hoạt tình dục",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Ngoài ra, để đảm bảo kết quả chẩn đoán bệnh chính xác, bác sĩ sẽ chỉ định người bệnh tiến hành thực hiện xét nghiệm tinh dịch đồ.",
+        "head": "xét nghiệm tinh dịch đồ",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "bệnh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bác sĩ sẽ lấy tinh dịch từ người bệnh rồi mang đi phân tích về các thông số như số lượng, tính di động của tình trùng.",
+        "head": "xét nghiệm tinh dịch đồ",
+        "head_type": "test",
+        "relation": "relatedTo",
+        "tail": "số lượng tinh trùng",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Bác sĩ sẽ lấy tinh dịch từ người bệnh rồi mang đi phân tích về các thông số như số lượng, tính di động của tình trùng.",
+        "head": "xét nghiệm tinh dịch đồ",
+        "head_type": "test",
+        "relation": "relatedTo",
+        "tail": "tính di động của tình trùng",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Để hạn chế sai số và đảm bảo tính chính xác của kết quả xét nghiệm tinh dịch đồ, nam giới cần lưu ý:",
+        "head": "xét nghiệm tinh dịch đồ",
+        "head_type": "test",
+        "relation": "relatedTo",
+        "tail": "sai số",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Để hạn chế sai số và đảm bảo tính chính xác của kết quả xét nghiệm tinh dịch đồ, nam giới cần lưu ý:",
+        "head": "xét nghiệm tinh dịch đồ",
+        "head_type": "test",
+        "relation": "relatedTo",
+        "tail": "tính chính xác",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Đảm bảo đã lấy hết toàn bộ tich dịch để làm mẫu thử.",
+        "head": "lấy hết toàn bộ tich dịch",
+        "head_type": "lifestyle",
+        "relation": "relatedTo",
+        "tail": "xét nghiệm tinh dịch đồ",
+        "tail_type": "test"
+    },
+    {
+        "text": "Cần kiêng xuất tinh ít nhất 2 ngày, nhưng không hơn 11 ngày trước khi lấy mẫu thử.",
+        "head": "kiêng xuất tinh",
+        "head_type": "lifestyle",
+        "relation": "relatedTo",
+        "tail": "xét nghiệm tinh dịch đồ",
+        "tail_type": "test"
+    },
+    {
+        "text": "Sau khi lấy mẫu thử lần đầu, lần lấy mẫu thử thứ hai phải cách đó ít nhất 2 tuần.",
+        "head": "lấy mẫu thử lần thứ hai",
+        "head_type": "lifestyle",
+        "relation": "relatedTo",
+        "tail": "xét nghiệm tinh dịch đồ",
+        "tail_type": "test"
+    },
+    {
+        "text": "Tránh dùng những chất bôi trơn vì có thể ảnh hưởng tới khả năng di động của tinh trùng",
+        "head": "dùng những chất bôi trơn",
+        "head_type": "lifestyle",
+        "relation": "affects",
+        "tail": "khả năng di động của tinh trùng",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Tùy theo sự bất thường lúc đầu, bác sĩ sẽ đề nghị người bệnh tiến hành thêm một số xét nghiệm nhằm tìm ra nguyên nhân nền của tình trạng yếu tinh trùng như:",
+        "head": "xét nghiệm",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "yếu tinh trùng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Siêu âm tinh hoàn",
+        "head": "Siêu âm tinh hoàn",
+        "head_type": "test",
+        "relation": "relatedTo",
+        "tail": "yếu tinh trùng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Định lượng hormone tuyến yên, hormone nam giới",
+        "head": "Định lượng hormone tuyến yên, hormone nam giới",
+        "head_type": "test",
+        "relation": "relatedTo",
+        "tail": "yếu tinh trùng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Xét nghiệm nước tiểu sau xuất tinh nhằm phát hiện tình trạng xuất tinh ngược",
+        "head": "Xét nghiệm nước tiểu sau xuất tinh",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "xuất tinh ngược",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Phân tích gen",
+        "head": "Phân tích gen",
+        "head_type": "test",
+        "relation": "relatedTo",
+        "tail": "yếu tinh trùng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Sinh thiết tinh hoàn",
+        "head": "Sinh thiết tinh hoàn",
+        "head_type": "test",
+        "relation": "relatedTo",
+        "tail": "yếu tinh trùng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Siêu âm tiền liệt tuyến",
+        "head": "Siêu âm tiền liệt tuyến",
+        "head_type": "test",
+        "relation": "relatedTo",
+        "tail": "yếu tinh trùng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Hiện nay đã có nhiều cách điều trị tinh trùng yếu, điều quan trọng là bác sĩ cần xác định đúng nguyên nhân gây ra tình trạng này ở người bệnh.",
+        "head": "điều trị tinh trùng yếu",
+        "head_type": "treatment",
+        "relation": "relatedTo",
+        "tail": "yếu tinh trùng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu nguyên nhân xuất phát từ lối sống thiếu lành mạnh, nam giới cần nhanh chóng thay đổi lối sống của mình, hạn chế tối đa những yếu tố gây hại tới số lượng và chất lượng tinh trùng.",
+        "head": "lối sống thiếu lành mạnh",
+        "head_type": "lifestyle",
+        "relation": "causedBy",
+        "tail": "yếu tinh trùng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu nguyên nhân xuất phát từ bệnh lý toàn thân hoặc bệnh lý liên quan tới sức khỏe sinh sản, người bệnh có thể được đề xuất áp dụng các phương pháp điều trị thích hợp như:",
+        "head": "bệnh lý toàn thân",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "yếu tinh trùng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu nguyên nhân xuất phát từ bệnh lý toàn thân hoặc bệnh lý liên quan tới sức khỏe sinh sản, người bệnh có thể được đề xuất áp dụng các phương pháp điều trị thích hợp như:",
+        "head": "bệnh lý liên quan tới sức khỏe sinh sản",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "yếu tinh trùng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Thuốc kháng sinh: Được dùng để điều trị những bệnh viêm nhiễm.",
+        "head": "Thuốc kháng sinh",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "bệnh viêm nhiễm",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Liệu pháp hormone và thuốc nội tiết: Khi nam giới mất cân bằng nội tiết tố.",
+        "head": "Liệu pháp hormone và thuốc nội tiết",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "mất cân bằng nội tiết tố",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Phẫu thuật: Được áp dụng khi nguyên nhân là do giãn tĩnh mạch thừng tinh hay tắc ống dẫn tinh.",
+        "head": "Phẫu thuật",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "giãn tĩnh mạch thừng tinh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Không có biện pháp nào hỗ trợ phòng ngừa hiện tượng tinh trùng yếu.",
+        "head": "Tinh trùng yếu",
+        "head_type": "symptom",
+        "relation": "preventedBy",
+        "tail": "Biện pháp phòng ngừa",
+        "tail_type": "treatment"
+    }
+]

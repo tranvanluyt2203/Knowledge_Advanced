@@ -1,0 +1,230 @@
+
+MERGE (o1:disease {id: 'ung_thư_vú_giai_đoạn_ii_disease'})
+MERGE (o2:disease {id: 'ung_thư_vú_giai_đoạn_sớm_disease'})
+MERGE (o1)-[r0:relatedTo]->(o2)
+SET r0.text = 'Ung thư vú giai đoạn II thuộc ung thư vú giai đoạn sớm.'
+
+MERGE (o1:disease {id: 'ung_thư_vú_giai_đoạn_ii_disease'})
+MERGE (o2:symptom {id: 'tỷ_lệ_sống_sau_5_năm_symptom'})
+MERGE (o1)-[r1:associatedWith]->(o2)
+SET r1.text = 'Tỷ lệ sống sau 5 năm của ung thư vú giai đoạn II là khoảng 88-93%.'
+
+MERGE (o1:disease {id: 'ung_thư_vú_giai_đoạn_ii_disease'})
+MERGE (o2:organ {id: 'vú_organ'})
+MERGE (o1)-[r2:locatedIn]->(o2)
+SET r2.text = 'Ung thư vú giai đoạn II là nhóm ung thư phát triển ở vú hoặc trong các hạch bạch huyết vùng nách cùng bên hoặc cả hai.'
+
+MERGE (o1:disease {id: 'ung_thư_vú_giai_đoạn_ii_disease'})
+MERGE (o2:organ {id: 'hạch_bạch_huyết_vùng_nách_organ'})
+MERGE (o1)-[r3:locatedIn]->(o2)
+SET r3.text = 'Ung thư vú giai đoạn II là nhóm ung thư phát triển ở vú hoặc trong các hạch bạch huyết vùng nách cùng bên hoặc cả hai.'
+
+MERGE (o1:disease {id: 'ung_thư_vú_giai_đoạn_i_disease'})
+MERGE (o2:disease {id: 'giai_đoạn_đầu_disease'})
+MERGE (o1)-[r4:relatedTo]->(o2)
+SET r4.text = 'Ung thư vú giai đoạn I đến ung thư vú giai đoạn IIA có thể được phân vào nhóm “giai đoạn đầu” của bệnh; ung thư vú giai đoạn IIB đến giai đoạn III có thể được phân vào nhóm “ung thư vú tiến triển tại chỗ tại vùng”.'
+
+MERGE (o1:disease {id: 'ung_thư_vú_giai_đoạn_iia_disease'})
+MERGE (o2:disease {id: 'giai_đoạn_đầu_disease'})
+MERGE (o1)-[r5:relatedTo]->(o2)
+SET r5.text = 'Ung thư vú giai đoạn I đến ung thư vú giai đoạn IIA có thể được phân vào nhóm “giai đoạn đầu” của bệnh; ung thư vú giai đoạn IIB đến giai đoạn III có thể được phân vào nhóm “ung thư vú tiến triển tại chỗ tại vùng”.'
+
+MERGE (o1:disease {id: 'ung_thư_vú_giai_đoạn_iib_disease'})
+MERGE (o2:disease {id: 'ung_thư_vú_tiến_triển_tại_chỗ_tại_vùng_disease'})
+MERGE (o1)-[r6:relatedTo]->(o2)
+SET r6.text = 'Ung thư vú giai đoạn I đến ung thư vú giai đoạn IIA có thể được phân vào nhóm “giai đoạn đầu” của bệnh; ung thư vú giai đoạn IIB đến giai đoạn III có thể được phân vào nhóm “ung thư vú tiến triển tại chỗ tại vùng”.'
+
+MERGE (o1:disease {id: 'ung_thư_vú_giai_đoạn_iii_disease'})
+MERGE (o2:disease {id: 'ung_thư_vú_tiến_triển_tại_chỗ_tại_vùng_disease'})
+MERGE (o1)-[r7:relatedTo]->(o2)
+SET r7.text = 'Ung thư vú giai đoạn I đến ung thư vú giai đoạn IIA có thể được phân vào nhóm “giai đoạn đầu” của bệnh; ung thư vú giai đoạn IIB đến giai đoạn III có thể được phân vào nhóm “ung thư vú tiến triển tại chỗ tại vùng”.'
+
+MERGE (o1:disease {id: 'ung_thư_vú_giai_đoạn_ii_disease'})
+MERGE (o2:symptom {id: 'một_khối_u_ở_vú_hoặc_nách_symptom'})
+MERGE (o1)-[r8:isSymptomOf]->(o2)
+SET r8.text = 'Khi bị ung thư vú giai đoạn II, người bệnh có thể gặp một số triệu chứng như: Một khối u ở vú hoặc nách.'
+
+MERGE (o1:disease {id: 'ung_thư_vú_giai_đoạn_ii_disease'})
+MERGE (o2:symptom {id: 'thay_đổi_kích_thước_hoặc_hình_dạng_của_vú_symptom'})
+MERGE (o1)-[r9:isSymptomOf]->(o2)
+SET r9.text = 'Khi bị ung thư vú giai đoạn II, người bệnh có thể gặp một số triệu chứng như: Thay đổi kích thước hoặc hình dạng của vú.'
+
+MERGE (o1:disease {id: 'ung_thư_vú_giai_đoạn_ii_disease'})
+MERGE (o2:symptom {id: 'khối_u_ở_vú_hoặc_nách_cùng_bên_symptom'})
+MERGE (o1)-[r10:isSymptomOf]->(o2)
+SET r10.text = 'Với ung thư vú giai đoạn II, bệnh nhân có thể sờ thấy khối u ở vú hoặc nách cùng bên.'
+
+MERGE (o1:disease {id: 'giai_đoạn_của_ung_thư_disease'})
+MERGE (o2:symptom {id: 'kích_thước_-_mức_độ_xâm_lấn_của_khối_u_ác_tính_và_mức_độ_di_căn_symptom'})
+MERGE (o1)-[r11:relatedTo]->(o2)
+SET r11.text = 'Theo BS.CKII Trần Thị Thiên Hương,​​ khoa Ung bướu BVĐK Tâm Anh TP.HCM, giai đoạn của ung thư cho biết kích thước - mức độ xâm lấn của khối u ác tính và mức độ di căn.'
+
+MERGE (o1:disease {id: 'giai_đoạn_ung_thư_disease'})
+MERGE (o2:treatment {id: 'phương_pháp_điều_trị_phù_hợp_treatment'})
+MERGE (o1)-[r12:treatedBy]->(o2)
+SET r12.text = 'Dựa vào giai đoạn ung thư và tính chất sinh học của khối u, bác sĩ có thể đưa ra phương pháp điều trị phù hợp.'
+
+MERGE (o1:test {id: 'siêu_âm_vú_test'})
+MERGE (o2:disease {id: 'ung_thư_vú_disease'})
+MERGE (o1)-[r13:diagnosedBy]->(o2)
+SET r13.text = 'Để xác định giai đoạn bệnh, ngoài các xét nghiệm để chẩn đoán bệnh như siêu âm vú, nhũ ảnh, chụp MRI vú, sinh thiết tổn thương vú, bệnh nhân cần làm thêm một số phương pháp kiểm tra toàn thân khác như: siêu âm bụng, siêu âm cổ, X-quang ngực hoặc CT scan bụng, CT scan ngực, CT scan não, xạ hình xương… (tùy thuộc tình trạng khối u, sinh học u và triệu chứng các cơ quan).'
+
+MERGE (o1:test {id: 'nhũ_ảnh_test'})
+MERGE (o2:disease {id: 'ung_thư_vú_disease'})
+MERGE (o1)-[r14:diagnosedBy]->(o2)
+SET r14.text = 'Để xác định giai đoạn bệnh, ngoài các xét nghiệm để chẩn đoán bệnh như siêu âm vú, nhũ ảnh, chụp MRI vú, sinh thiết tổn thương vú, bệnh nhân cần làm thêm một số phương pháp kiểm tra toàn thân khác như: siêu âm bụng, siêu âm cổ, X-quang ngực hoặc CT scan bụng, CT scan ngực, CT scan não, xạ hình xương… (tùy thuộc tình trạng khối u, sinh học u và triệu chứng các cơ quan).'
+
+MERGE (o1:test {id: 'chụp_mri_vú_test'})
+MERGE (o2:disease {id: 'ung_thư_vú_disease'})
+MERGE (o1)-[r15:diagnosedBy]->(o2)
+SET r15.text = 'Để xác định giai đoạn bệnh, ngoài các xét nghiệm để chẩn đoán bệnh như siêu âm vú, nhũ ảnh, chụp MRI vú, sinh thiết tổn thương vú, bệnh nhân cần làm thêm một số phương pháp kiểm tra toàn thân khác như: siêu âm bụng, siêu âm cổ, X-quang ngực hoặc CT scan bụng, CT scan ngực, CT scan não, xạ hình xương… (tùy thuộc tình trạng khối u, sinh học u và triệu chứng các cơ quan).'
+
+MERGE (o1:test {id: 'sinh_thiết_tổn_thương_vú_test'})
+MERGE (o2:disease {id: 'ung_thư_vú_disease'})
+MERGE (o1)-[r16:diagnosedBy]->(o2)
+SET r16.text = 'Để xác định giai đoạn bệnh, ngoài các xét nghiệm để chẩn đoán bệnh như siêu âm vú, nhũ ảnh, chụp MRI vú, sinh thiết tổn thương vú, bệnh nhân cần làm thêm một số phương pháp kiểm tra toàn thân khác như: siêu âm bụng, siêu âm cổ, X-quang ngực hoặc CT scan bụng, CT scan ngực, CT scan não, xạ hình xương… (tùy thuộc tình trạng khối u, sinh học u và triệu chứng các cơ quan).'
+
+MERGE (o1:test {id: 'siêu_âm_bụng_test'})
+MERGE (o2:disease {id: 'ung_thư_vú_disease'})
+MERGE (o1)-[r17:diagnosedBy]->(o2)
+SET r17.text = 'Để xác định giai đoạn bệnh, ngoài các xét nghiệm để chẩn đoán bệnh như siêu âm vú, nhũ ảnh, chụp MRI vú, sinh thiết tổn thương vú, bệnh nhân cần làm thêm một số phương pháp kiểm tra toàn thân khác như: siêu âm bụng, siêu âm cổ, X-quang ngực hoặc CT scan bụng, CT scan ngực, CT scan não, xạ hình xương… (tùy thuộc tình trạng khối u, sinh học u và triệu chứng các cơ quan).'
+
+MERGE (o1:test {id: 'siêu_âm_cổ_test'})
+MERGE (o2:disease {id: 'ung_thư_vú_disease'})
+MERGE (o1)-[r18:diagnosedBy]->(o2)
+SET r18.text = 'Để xác định giai đoạn bệnh, ngoài các xét nghiệm để chẩn đoán bệnh như siêu âm vú, nhũ ảnh, chụp MRI vú, sinh thiết tổn thương vú, bệnh nhân cần làm thêm một số phương pháp kiểm tra toàn thân khác như: siêu âm bụng, siêu âm cổ, X-quang ngực hoặc CT scan bụng, CT scan ngực, CT scan não, xạ hình xương… (tùy thuộc tình trạng khối u, sinh học u và triệu chứng các cơ quan).'
+
+MERGE (o1:test {id: 'x-quang_ngực_test'})
+MERGE (o2:disease {id: 'ung_thư_vú_disease'})
+MERGE (o1)-[r19:diagnosedBy]->(o2)
+SET r19.text = 'Để xác định giai đoạn bệnh, ngoài các xét nghiệm để chẩn đoán bệnh như siêu âm vú, nhũ ảnh, chụp MRI vú, sinh thiết tổn thương vú, bệnh nhân cần làm thêm một số phương pháp kiểm tra toàn thân khác như: siêu âm bụng, siêu âm cổ, X-quang ngực hoặc CT scan bụng, CT scan ngực, CT scan não, xạ hình xương… (tùy thuộc tình trạng khối u, sinh học u và triệu chứng các cơ quan).'
+
+MERGE (o1:test {id: 'ct_scan_bụng_test'})
+MERGE (o2:disease {id: 'ung_thư_vú_disease'})
+MERGE (o1)-[r20:diagnosedBy]->(o2)
+SET r20.text = 'Để xác định giai đoạn bệnh, ngoài các xét nghiệm để chẩn đoán bệnh như siêu âm vú, nhũ ảnh, chụp MRI vú, sinh thiết tổn thương vú, bệnh nhân cần làm thêm một số phương pháp kiểm tra toàn thân khác như: siêu âm bụng, siêu âm cổ, X-quang ngực hoặc CT scan bụng, CT scan ngực, CT scan não, xạ hình xương… (tùy thuộc tình trạng khối u, sinh học u và triệu chứng các cơ quan).'
+
+MERGE (o1:test {id: 'ct_scan_ngực_test'})
+MERGE (o2:disease {id: 'ung_thư_vú_disease'})
+MERGE (o1)-[r21:diagnosedBy]->(o2)
+SET r21.text = 'Để xác định giai đoạn bệnh, ngoài các xét nghiệm để chẩn đoán bệnh như siêu âm vú, nhũ ảnh, chụp MRI vú, sinh thiết tổn thương vú, bệnh nhân cần làm thêm một số phương pháp kiểm tra toàn thân khác như: siêu âm bụng, siêu âm cổ, X-quang ngực hoặc CT scan bụng, CT scan ngực, CT scan não, xạ hình xương… (tùy thuộc tình trạng khối u, sinh học u và triệu chứng các cơ quan).'
+
+MERGE (o1:test {id: 'ct_scan_não_test'})
+MERGE (o2:disease {id: 'ung_thư_vú_disease'})
+MERGE (o1)-[r22:diagnosedBy]->(o2)
+SET r22.text = 'Để xác định giai đoạn bệnh, ngoài các xét nghiệm để chẩn đoán bệnh như siêu âm vú, nhũ ảnh, chụp MRI vú, sinh thiết tổn thương vú, bệnh nhân cần làm thêm một số phương pháp kiểm tra toàn thân khác như: siêu âm bụng, siêu âm cổ, X-quang ngực hoặc CT scan bụng, CT scan ngực, CT scan não, xạ hình xương… (tùy thuộc tình trạng khối u, sinh học u và triệu chứng các cơ quan).'
+
+MERGE (o1:test {id: 'xạ_hình_xương_test'})
+MERGE (o2:disease {id: 'ung_thư_vú_disease'})
+MERGE (o1)-[r23:diagnosedBy]->(o2)
+SET r23.text = 'Để xác định giai đoạn bệnh, ngoài các xét nghiệm để chẩn đoán bệnh như siêu âm vú, nhũ ảnh, chụp MRI vú, sinh thiết tổn thương vú, bệnh nhân cần làm thêm một số phương pháp kiểm tra toàn thân khác như: siêu âm bụng, siêu âm cổ, X-quang ngực hoặc CT scan bụng, CT scan ngực, CT scan não, xạ hình xương… (tùy thuộc tình trạng khối u, sinh học u và triệu chứng các cơ quan).'
+
+MERGE (o1:test {id: 'xét_nghiệm_xác_định_tình_trạng_thụ_thể_nội_tiết_estrogen_(er)_test'})
+MERGE (o2:disease {id: 'ung_thư_vú_disease'})
+MERGE (o1)-[r24:diagnosedBy]->(o2)
+SET r24.text = 'Để biết tính chất sinh học của khối u, trên mẫu bệnh phẩm đã xác định ung thư cần làm thêm các xét nghiệm xác định tình trạng thụ thể nội tiết Estrogen (ER), Progesteron (PR), thụ thể yếu tố tăng trưởng biểu bì (HER2), đánh giá mức độ tăng sinh tế bào (Ki67) hoặc đột biến gen BRCA (trên mẫu bệnh phẩm đã xác định ung thư, hoặc trong máu).'
+
+MERGE (o1:test {id: 'xét_nghiệm_xác_định_tình_trạng_thụ_thể_nội_tiết_progesteron_(pr)_test'})
+MERGE (o2:disease {id: 'ung_thư_vú_disease'})
+MERGE (o1)-[r25:diagnosedBy]->(o2)
+SET r25.text = 'Để biết tính chất sinh học của khối u, trên mẫu bệnh phẩm đã xác định ung thư cần làm thêm các xét nghiệm xác định tình trạng thụ thể nội tiết Estrogen (ER), Progesteron (PR), thụ thể yếu tố tăng trưởng biểu bì (HER2), đánh giá mức độ tăng sinh tế bào (Ki67) hoặc đột biến gen BRCA (trên mẫu bệnh phẩm đã xác định ung thư, hoặc trong máu).'
+
+MERGE (o1:test {id: 'xét_nghiệm_xác_định_tình_trạng_thụ_thể_yếu_tố_tăng_trưởng_biểu_bì_(her2)_test'})
+MERGE (o2:disease {id: 'ung_thư_vú_disease'})
+MERGE (o1)-[r26:diagnosedBy]->(o2)
+SET r26.text = 'Để biết tính chất sinh học của khối u, trên mẫu bệnh phẩm đã xác định ung thư cần làm thêm các xét nghiệm xác định tình trạng thụ thể nội tiết Estrogen (ER), Progesteron (PR), thụ thể yếu tố tăng trưởng biểu bì (HER2), đánh giá mức độ tăng sinh tế bào (Ki67) hoặc đột biến gen BRCA (trên mẫu bệnh phẩm đã xác định ung thư, hoặc trong máu).'
+
+MERGE (o1:test {id: 'đánh_giá_mức_độ_tăng_sinh_tế_bào_(ki67)_test'})
+MERGE (o2:disease {id: 'ung_thư_vú_disease'})
+MERGE (o1)-[r27:diagnosedBy]->(o2)
+SET r27.text = 'Để biết tính chất sinh học của khối u, trên mẫu bệnh phẩm đã xác định ung thư cần làm thêm các xét nghiệm xác định tình trạng thụ thể nội tiết Estrogen (ER), Progesteron (PR), thụ thể yếu tố tăng trưởng biểu bì (HER2), đánh giá mức độ tăng sinh tế bào (Ki67) hoặc đột biến gen BRCA (trên mẫu bệnh phẩm đã xác định ung thư, hoặc trong máu).'
+
+MERGE (o1:test {id: 'xét_nghiệm_đột_biến_gen_brca_test'})
+MERGE (o2:disease {id: 'ung_thư_vú_disease'})
+MERGE (o1)-[r28:diagnosedBy]->(o2)
+SET r28.text = 'Để biết tính chất sinh học của khối u, trên mẫu bệnh phẩm đã xác định ung thư cần làm thêm các xét nghiệm xác định tình trạng thụ thể nội tiết Estrogen (ER), Progesteron (PR), thụ thể yếu tố tăng trưởng biểu bì (HER2), đánh giá mức độ tăng sinh tế bào (Ki67) hoặc đột biến gen BRCA (trên mẫu bệnh phẩm đã xác định ung thư, hoặc trong máu).'
+
+MERGE (o1:disease {id: 'ung_bướu_disease'})
+MERGE (o2:treatment {id: 'theo_dõi_trong_ít_nhất_5_năm_bởi_các_bác_sĩ_chuyên_khoa_treatment'})
+MERGE (o1)-[r29:treatedBy]->(o2)
+SET r29.text = 'Sau khi kết thúc điều trị, bệnh nhân cần được theo dõi trong ít nhất 5 năm bởi các bác sĩ chuyên khoa Ung Bướu.'
+
+MERGE (o1:treatment {id: 'tái_khám_treatment'})
+MERGE (o2:disease {id: 'ung_bướu_disease'})
+MERGE (o1)-[r30:relatedTo]->(o2)
+SET r30.text = 'Lịch tái khám thường là mỗi 3-4 tháng trong 2-3 năm đầu, sau đó là mỗi 4-6 tháng trong 2-3 năm tiếp theo.'
+
+MERGE (o1:treatment {id: 'tái_khám_treatment'})
+MERGE (o2:cause {id: 'mức_độ_nguy_cơ_và_các_yếu_tố_sức_khỏe_cause'})
+MERGE (o1)-[r31:relatedTo]->(o2)
+SET r31.text = 'Lịch tái khám này không cố định cho tất cả các bệnh nhân, mà có thể được điều chỉnh tùy theo mức độ nguy cơ và các yếu tố sức khỏe của từng bệnh nhân.'
+
+MERGE (o1:treatment {id: 'liệu_pháp_nội_tiết_hỗ_trợ_treatment'})
+MERGE (o2:disease {id: 'ung_bướu_disease'})
+MERGE (o1)-[r32:relatedTo]->(o2)
+SET r32.text = 'Trong thời gian này, bệnh nhân có chỉ định dùng liệu pháp nội tiết hỗ trợ (thụ thể nội tiết ER PR dương tính) vẫn tiếp tục duy trì việc dùng thuốc.'
+
+MERGE (o1:test {id: 'xét_nghiệm_máu__siêu_âm_vú__nhũ_ảnh__đo_mật_độ_khoáng_xương_toàn_thân__khám_phụ_khoa__x-quang_ngực_thẳng__ct_hoặc_pet-ct_test'})
+MERGE (o2:disease {id: 'ung_bướu_disease'})
+MERGE (o1)-[r33:diagnosedBy]->(o2)
+SET r33.text = 'Các kiểm tra cận lâm sàng trong thời gian tái khám (xét nghiệm máu, siêu âm vú, nhũ ảnh, đo mật độ khoáng xương toàn thân, khám phụ khoa, X-quang ngực thẳng, CT hoặc PET-CT…) có thể sẽ được chỉ định khác nhau ở từng bệnh nhân, tùy theo các yếu tố như giai đoạn bệnh, các biện pháp điều trị ung thư vú đã và đang thực hiện, tình trạng sức khỏe, độ tuổi, giai đoạn đã mãn kinh,…'
+
+MERGE (o1:test {id: 'chụp_nhũ_ảnh_kiểm_tra_test'})
+MERGE (o2:disease {id: 'ung_bướu_disease'})
+MERGE (o1)-[r34:diagnosedBy]->(o2)
+SET r34.text = 'Bệnh nhân phẫu thuật bảo tồn vú kèm xạ trị vú nên chụp nhũ ảnh kiểm tra mỗi năm, bắt đầu từ 6-12 tháng sau kết thúc xạ trị.'
+
+MERGE (o1:test {id: 'khám_phụ_khoa_kiểm_tra_test'})
+MERGE (o2:disease {id: 'ung_bướu_disease'})
+MERGE (o1)-[r35:diagnosedBy]->(o2)
+SET r35.text = 'Bệnh nhân điều trị hỗ trợ bằng Tamoxifen nên khám phụ khoa kiểm tra ít nhất 1 lần/năm.'
+
+MERGE (o1:treatment {id: 'theo_dõi_sức_khỏe_treatment'})
+MERGE (o2:disease {id: 'ung_bướu_disease'})
+MERGE (o1)-[r36:relatedTo]->(o2)
+SET r36.text = 'Đối với bệnh nhân đã hoàn tất quá trình điều trị, cần lưu ý theo dõi sức khỏe để sớm phát hiện các dấu hiệu và triệu chứng bất thường.'
+
+MERGE (o1:symptom {id: 'mối_lo_ngại_symptom'})
+MERGE (o2:disease {id: 'ung_bướu_disease'})
+MERGE (o1)-[r37:isSymptomOf]->(o2)
+SET r37.text = 'Khi thấy bất kỳ mối lo ngại nào, bệnh nhân nên đến bệnh viện càng sớm, càng tốt.'
+
+MERGE (o1:disease {id: 'ung_thư_vú_giai_đoạn_ii_disease'})
+MERGE (o2:treatment {id: 'theo_dõi_trong_ít_nhất_5_năm_treatment'})
+MERGE (o1)-[r38:treatedBy]->(o2)
+SET r38.text = 'Sau khi hoàn tất quá trình điều trị bệnh ung thư vú giai đoạn II, bệnh nhân tiếp tục được bác sĩ theo dõi trong ít nhất 5 năm.'
+
+MERGE (o1:symptom {id: 'tỷ_lệ_sống_còn_symptom'})
+MERGE (o2:disease {id: 'ung_thư_vú_giai_đoạn_ii_disease'})
+MERGE (o1)-[r39:isSymptomOf]->(o2)
+SET r39.text = 'Tỷ lệ sống còn phản ánh số người trung bình sẽ sống sót trong một khoảng thời gian nhất định.'
+
+MERGE (o1:symptom {id: 'tỷ_lệ_sống_còn_sau_5_năm_symptom'})
+MERGE (o2:disease {id: 'ung_thư_vú_giai_đoạn_ii_disease'})
+MERGE (o1)-[r40:isSymptomOf]->(o2)
+SET r40.text = 'Theo Hiệp hội Ung thư Hoa Kỳ, tỷ lệ sống còn sau 5 năm đối với ung thư vú giai đoạn II là 88-93% đối với những phụ nữ đã hoàn thành điều trị.'
+
+MERGE (o1:treatment {id: 'chữa_khỏi_bệnh_treatment'})
+MERGE (o2:disease {id: 'ung_thư_vú_disease'})
+MERGE (o1)-[r41:relatedTo]->(o2)
+SET r41.text = 'Sau 5 năm điều trị, bệnh nhân ung thư vú không bị tái phát sẽ được coi là chữa khỏi bệnh.'
+
+MERGE (o1:symptom {id: 'khả_năng_chữa_khỏi_bệnh_symptom'})
+MERGE (o2:disease {id: 'ung_thư_vú_giai_đoạn_ii_disease'})
+MERGE (o1)-[r42:isSymptomOf]->(o2)
+SET r42.text = 'Đối với ung thư vú giai đoạn II, khả năng chữa khỏi bệnh rất cao.'
+
+MERGE (o1:symptom {id: 'tiên_lượng_sống_sót_sau_5_năm_symptom'})
+MERGE (o2:disease {id: 'ung_thư_vú_giai_đoạn_ii_disease'})
+MERGE (o1)-[r43:isSymptomOf]->(o2)
+SET r43.text = 'Ung thư vú giai đoạn II được xếp vào giai đoạn sớm, nếu đáp ứng tốt với điều trị, tiên lượng sống sót sau 5 năm khoảng 88-93%.'
+
+MERGE (o1:symptom {id: 'sống_sót_sau_5_năm_symptom'})
+MERGE (o2:disease {id: 'ung_thư_vú_giai_đoạn_ii_disease'})
+MERGE (o1)-[r44:isSymptomOf]->(o2)
+SET r44.text = 'Điều này có nghĩa hầu hết các bệnh nhân bị ung thư vú giai đoạn II có thể sống sót sau 5 năm nếu được điều trị kịp thời, hiệu quả.'
+
+MERGE (o1:symptom {id: 'tái_phát_tại_chỗ_symptom'})
+MERGE (o2:disease {id: 'ung_thư_vú_disease'})
+MERGE (o1)-[r45:isSymptomOf]->(o2)
+SET r45.text = 'Ở những bệnh nhân được điều trị bảo tồn vú, khả năng tái phát tại chỗ khoảng 2% trong 10 năm.'

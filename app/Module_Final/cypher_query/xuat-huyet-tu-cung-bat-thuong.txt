@@ -1,0 +1,415 @@
+
+MERGE (o1:disease {id: 'xuất_huyết_tử_cung_bất_thường_disease'})
+MERGE (o2:disease {id: 'u_xơ_tử_cung_disease'})
+MERGE (o1)-[r0:causedBy]->(o2)
+SET r0.text = 'Xuất huyết tử cung bất thường là tình trạng bệnh lý xảy ra có thể liên quan đến u xơ tử cung, polype lòng tử cung, rối loạn nội tiết, tăng sinh nội mạc tử cung, bướu tại cổ tử cung, viêm nhiễm, bệnh lý huyết học…'
+
+MERGE (o1:disease {id: 'xuất_huyết_tử_cung_bất_thường_disease'})
+MERGE (o2:disease {id: 'polype_lòng_tử_cung_disease'})
+MERGE (o1)-[r1:causedBy]->(o2)
+SET r1.text = 'Xuất huyết tử cung bất thường là tình trạng bệnh lý xảy ra có thể liên quan đến u xơ tử cung, polype lòng tử cung, rối loạn nội tiết, tăng sinh nội mạc tử cung, bướu tại cổ tử cung, viêm nhiễm, bệnh lý huyết học…'
+
+MERGE (o1:disease {id: 'xuất_huyết_tử_cung_bất_thường_disease'})
+MERGE (o2:disease {id: 'rối_loạn_nội_tiết_disease'})
+MERGE (o1)-[r2:causedBy]->(o2)
+SET r2.text = 'Xuất huyết tử cung bất thường là tình trạng bệnh lý xảy ra có thể liên quan đến u xơ tử cung, polype lòng tử cung, rối loạn nội tiết, tăng sinh nội mạc tử cung, bướu tại cổ tử cung, viêm nhiễm, bệnh lý huyết học…'
+
+MERGE (o1:disease {id: 'xuất_huyết_tử_cung_bất_thường_disease'})
+MERGE (o2:disease {id: 'tăng_sinh_nội_mạc_tử_cung_disease'})
+MERGE (o1)-[r3:causedBy]->(o2)
+SET r3.text = 'Xuất huyết tử cung bất thường là tình trạng bệnh lý xảy ra có thể liên quan đến u xơ tử cung, polype lòng tử cung, rối loạn nội tiết, tăng sinh nội mạc tử cung, bướu tại cổ tử cung, viêm nhiễm, bệnh lý huyết học…'
+
+MERGE (o1:disease {id: 'xuất_huyết_tử_cung_bất_thường_disease'})
+MERGE (o2:disease {id: 'bướu_tại_cổ_tử_cung_disease'})
+MERGE (o1)-[r4:causedBy]->(o2)
+SET r4.text = 'Xuất huyết tử cung bất thường là tình trạng bệnh lý xảy ra có thể liên quan đến u xơ tử cung, polype lòng tử cung, rối loạn nội tiết, tăng sinh nội mạc tử cung, bướu tại cổ tử cung, viêm nhiễm, bệnh lý huyết học…'
+
+MERGE (o1:disease {id: 'xuất_huyết_tử_cung_bất_thường_disease'})
+MERGE (o2:disease {id: 'viêm_nhiễm_disease'})
+MERGE (o1)-[r5:causedBy]->(o2)
+SET r5.text = 'Xuất huyết tử cung bất thường là tình trạng bệnh lý xảy ra có thể liên quan đến u xơ tử cung, polype lòng tử cung, rối loạn nội tiết, tăng sinh nội mạc tử cung, bướu tại cổ tử cung, viêm nhiễm, bệnh lý huyết học…'
+
+MERGE (o1:disease {id: 'xuất_huyết_tử_cung_bất_thường_disease'})
+MERGE (o2:disease {id: 'bệnh_lý_huyết_học_disease'})
+MERGE (o1)-[r6:causedBy]->(o2)
+SET r6.text = 'Xuất huyết tử cung bất thường là tình trạng bệnh lý xảy ra có thể liên quan đến u xơ tử cung, polype lòng tử cung, rối loạn nội tiết, tăng sinh nội mạc tử cung, bướu tại cổ tử cung, viêm nhiễm, bệnh lý huyết học…'
+
+MERGE (o1:symptom {id: 'chảy_máu_vùng_kín_symptom'})
+MERGE (o2:disease {id: 'xuất_huyết_tử_cung_bất_thường_disease'})
+MERGE (o1)-[r7:isSymptomOf]->(o2)
+SET r7.text = 'Bệnh gây ra các triệu chứng chảy máu vùng kín, xảy ra tự nhiên có hay không có liên quan đến chu kỳ kinh, hoặc sau quan hệ tình dục.'
+
+MERGE (o1:disease {id: 'xuất_huyết_tử_cung_bất_thường_disease'})
+MERGE (o2:symptom {id: 'chảy_máu_từ_tử_cung_một_cách_bất_thường_symptom'})
+MERGE (o1)-[r8:isSymptomOf]->(o2)
+SET r8.text = 'Xuất huyết tử cung bất thường (thuật ngữ Y khoa là Abnormal Uterine Bleeding - AUB) là tình trạng chảy máu từ tử cung một cách bất thường, khác với các đặc điểm của một chu kỳ kinh nguyệt bình thường.'
+
+MERGE (o1:disease {id: 'xuất_huyết_tử_cung_bất_thường_disease'})
+MERGE (o2:lifestyle {id: 'chu_kỳ_kinh_nguyệt_bình_thường_lifestyle'})
+MERGE (o1)-[r9:relatedTo]->(o2)
+SET r9.text = 'Xuất huyết tử cung bất thường (thuật ngữ Y khoa là Abnormal Uterine Bleeding - AUB) là tình trạng chảy máu từ tử cung một cách bất thường, khác với các đặc điểm của một chu kỳ kinh nguyệt bình thường.'
+
+MERGE (o1:disease {id: 'xuất_huyết_tử_cung_bất_thường_disease'})
+MERGE (o2:lifestyle {id: 'sức_khỏe_lifestyle'})
+MERGE (o1)-[r10:affects]->(o2)
+SET r10.text = 'Tình trạng này làm ảnh hưởng sức khỏe khoảng 1/3 dân số phụ nữ ở độ tuổi sinh sản.'
+
+MERGE (o1:disease {id: 'xuất_huyết_tử_cung_bất_thường_disease'})
+MERGE (o2:test {id: 'chẩn_đoán_test'})
+MERGE (o1)-[r11:diagnosedBy]->(o2)
+SET r11.text = 'Việc chẩn đoán nguyên nhân của tình trạng này khá khó khăn và phức tạp.'
+
+MERGE (o1:symptom {id: 'triệu_chứng_bất_thường_symptom'})
+MERGE (o2:disease {id: 'xuất_huyết_tử_cung_bất_thường_disease'})
+MERGE (o1)-[r12:isSymptomOf]->(o2)
+SET r12.text = 'Do đó, ngay khi có các triệu chứng bất thường, các chị em nên đến ngay cơ sở y tế để được điều trị kịp thời.'
+
+MERGE (o1:disease {id: 'xuất_huyết_tử_cung_bất_thường_disease'})
+MERGE (o2:treatment {id: 'điều_trị_treatment'})
+MERGE (o1)-[r13:treatedBy]->(o2)
+SET r13.text = 'Do đó, ngay khi có các triệu chứng bất thường, các chị em nên đến ngay cơ sở y tế để được điều trị kịp thời.'
+
+MERGE (o1:lifestyle {id: 'chu_kỳ_kinh_nguyệt_lifestyle'})
+MERGE (o2:symptom {id: 'ra_máu_kinh_symptom'})
+MERGE (o1)-[r14:relatedTo]->(o2)
+SET r14.text = 'Một chu kỳ kinh nguyệt được tính từ ngày đầu tiên ra máu kinh của lần hành kinh này cho đến ngày đầu tiên ra máu kinh của lần hành kinh tiếp theo.'
+
+MERGE (o1:lifestyle {id: 'chu_kỳ_kinh_nguyệt_lifestyle'})
+MERGE (o2:symptom {id: 'hành_kinh_symptom'})
+MERGE (o1)-[r15:relatedTo]->(o2)
+SET r15.text = 'Thông thường, chu kỳ kinh nguyệt kéo dài trong khoảng 21 - 35 ngày, hành kinh khoảng từ 3 - 8 ngày, những ngày đầu tiên kinh thường ra nhiều, sau đó giảm dần và sạch kinh.'
+
+MERGE (o1:lifestyle {id: 'chu_kỳ_kinh_nguyệt_lifestyle'})
+MERGE (o2:disease {id: 'vô_kinh_disease'})
+MERGE (o1)-[r16:relatedTo]->(o2)
+SET r16.text = 'Nếu chu kỳ kinh nguyệt ngắn hơn 21 ngày hay kéo dài hơn 35 ngày, hoặc thay đổi không hành kinh từ 3 - 6 tháng (còn gọi là vô kinh) đều phải được xem là bất thường.'
+
+MERGE (o1:disease {id: 'xuất_huyết_tử_cung_bất_thường_disease'})
+MERGE (o2:cause {id: 'palm_&_coein_cause'})
+MERGE (o1)-[r17:causedBy]->(o2)
+SET r17.text = 'BS.CKII Nguyễn Bá Mỹ Nhi, Giám đốc Trung tâm Sản Phụ khoa, Bệnh viện Đa khoa Tâm Anh TP.HCM cho biết, có rất nhiều nguyên nhân gây ra tình trạng xuất huyết tử cung bất thường, các nguyên nhân này được hệ thống hóa lại nằm trong các chữ cái viết tắt tên các nguyên nhân và nhóm các nguyên nhân (PALM & COEIN) giúp các bác sĩ phụ khoa dễ dàng tìm kiếm nguyên nhân gây bệnh một cách toàn diện để điều trị phù hợp.'
+
+MERGE (o1:cause {id: 'palm_&_coein_cause'})
+MERGE (o2:disease {id: 'polype_lòng_tử_cung_disease'})
+MERGE (o1)-[r18:causedBy]->(o2)
+SET r18.text = 'Hệ thống phân loại nguyên nhân theo PALM & COEIN được Liên đoàn Sản Phụ khoa Quốc tế (FIGO) mô tả từ năm 2011, bao gồm: Polype lòng tử cung Bệnh cơ tuyến tử cung hay bệnh lý lạc tuyến nội mạc tử cung vào cơ tử cung U xơ tử cung Các bướu ác tính tử cung Bệnh lý đông cầm máu Rối loạn phóng noãn Lạc nội mạc cổ tử cung Chảy máu do các điều trị khác gây ra Bệnh lý chưa xác định rõ'
+
+MERGE (o1:cause {id: 'palm_&_coein_cause'})
+MERGE (o2:disease {id: 'bệnh_cơ_tuyến_tử_cung_disease'})
+MERGE (o1)-[r19:causedBy]->(o2)
+SET r19.text = 'Hệ thống phân loại nguyên nhân theo PALM & COEIN được Liên đoàn Sản Phụ khoa Quốc tế (FIGO) mô tả từ năm 2011, bao gồm: Polype lòng tử cung Bệnh cơ tuyến tử cung hay bệnh lý lạc tuyến nội mạc tử cung vào cơ tử cung U xơ tử cung Các bướu ác tính tử cung Bệnh lý đông cầm máu Rối loạn phóng noãn Lạc nội mạc cổ tử cung Chảy máu do các điều trị khác gây ra Bệnh lý chưa xác định rõ'
+
+MERGE (o1:cause {id: 'palm_&_coein_cause'})
+MERGE (o2:disease {id: 'bệnh_lý_lạc_tuyến_nội_mạc_tử_cung_vào_cơ_tử_cung_disease'})
+MERGE (o1)-[r20:causedBy]->(o2)
+SET r20.text = 'Hệ thống phân loại nguyên nhân theo PALM & COEIN được Liên đoàn Sản Phụ khoa Quốc tế (FIGO) mô tả từ năm 2011, bao gồm: Polype lòng tử cung Bệnh cơ tuyến tử cung hay bệnh lý lạc tuyến nội mạc tử cung vào cơ tử cung U xơ tử cung Các bướu ác tính tử cung Bệnh lý đông cầm máu Rối loạn phóng noãn Lạc nội mạc cổ tử cung Chảy máu do các điều trị khác gây ra Bệnh lý chưa xác định rõ'
+
+MERGE (o1:cause {id: 'palm_&_coein_cause'})
+MERGE (o2:disease {id: 'u_xơ_tử_cung_disease'})
+MERGE (o1)-[r21:causedBy]->(o2)
+SET r21.text = 'Hệ thống phân loại nguyên nhân theo PALM & COEIN được Liên đoàn Sản Phụ khoa Quốc tế (FIGO) mô tả từ năm 2011, bao gồm: Polype lòng tử cung Bệnh cơ tuyến tử cung hay bệnh lý lạc tuyến nội mạc tử cung vào cơ tử cung U xơ tử cung Các bướu ác tính tử cung Bệnh lý đông cầm máu Rối loạn phóng noãn Lạc nội mạc cổ tử cung Chảy máu do các điều trị khác gây ra Bệnh lý chưa xác định rõ'
+
+MERGE (o1:cause {id: 'palm_&_coein_cause'})
+MERGE (o2:disease {id: 'các_bướu_ác_tính_tử_cung_disease'})
+MERGE (o1)-[r22:causedBy]->(o2)
+SET r22.text = 'Hệ thống phân loại nguyên nhân theo PALM & COEIN được Liên đoàn Sản Phụ khoa Quốc tế (FIGO) mô tả từ năm 2011, bao gồm: Polype lòng tử cung Bệnh cơ tuyến tử cung hay bệnh lý lạc tuyến nội mạc tử cung vào cơ tử cung U xơ tử cung Các bướu ác tính tử cung Bệnh lý đông cầm máu Rối loạn phóng noãn Lạc nội mạc cổ tử cung Chảy máu do các điều trị khác gây ra Bệnh lý chưa xác định rõ'
+
+MERGE (o1:cause {id: 'palm_&_coein_cause'})
+MERGE (o2:disease {id: 'bệnh_lý_đông_cầm_máu_disease'})
+MERGE (o1)-[r23:causedBy]->(o2)
+SET r23.text = 'Hệ thống phân loại nguyên nhân theo PALM & COEIN được Liên đoàn Sản Phụ khoa Quốc tế (FIGO) mô tả từ năm 2011, bao gồm: Polype lòng tử cung Bệnh cơ tuyến tử cung hay bệnh lý lạc tuyến nội mạc tử cung vào cơ tử cung U xơ tử cung Các bướu ác tính tử cung Bệnh lý đông cầm máu Rối loạn phóng noãn Lạc nội mạc cổ tử cung Chảy máu do các điều trị khác gây ra Bệnh lý chưa xác định rõ'
+
+MERGE (o1:cause {id: 'palm_&_coein_cause'})
+MERGE (o2:disease {id: 'rối_loạn_phóng_noãn_disease'})
+MERGE (o1)-[r24:causedBy]->(o2)
+SET r24.text = 'Hệ thống phân loại nguyên nhân theo PALM & COEIN được Liên đoàn Sản Phụ khoa Quốc tế (FIGO) mô tả từ năm 2011, bao gồm: Polype lòng tử cung Bệnh cơ tuyến tử cung hay bệnh lý lạc tuyến nội mạc tử cung vào cơ tử cung U xơ tử cung Các bướu ác tính tử cung Bệnh lý đông cầm máu Rối loạn phóng noãn Lạc nội mạc cổ tử cung Chảy máu do các điều trị khác gây ra Bệnh lý chưa xác định rõ'
+
+MERGE (o1:cause {id: 'palm_&_coein_cause'})
+MERGE (o2:disease {id: 'lạc_nội_mạc_cổ_tử_cung_disease'})
+MERGE (o1)-[r25:causedBy]->(o2)
+SET r25.text = 'Hệ thống phân loại nguyên nhân theo PALM & COEIN được Liên đoàn Sản Phụ khoa Quốc tế (FIGO) mô tả từ năm 2011, bao gồm: Polype lòng tử cung Bệnh cơ tuyến tử cung hay bệnh lý lạc tuyến nội mạc tử cung vào cơ tử cung U xơ tử cung Các bướu ác tính tử cung Bệnh lý đông cầm máu Rối loạn phóng noãn Lạc nội mạc cổ tử cung Chảy máu do các điều trị khác gây ra Bệnh lý chưa xác định rõ'
+
+MERGE (o1:cause {id: 'palm_&_coein_cause'})
+MERGE (o2:disease {id: 'chảy_máu_do_các_điều_trị_khác_gây_ra_disease'})
+MERGE (o1)-[r26:causedBy]->(o2)
+SET r26.text = 'Hệ thống phân loại nguyên nhân theo PALM & COEIN được Liên đoàn Sản Phụ khoa Quốc tế (FIGO) mô tả từ năm 2011, bao gồm: Polype lòng tử cung Bệnh cơ tuyến tử cung hay bệnh lý lạc tuyến nội mạc tử cung vào cơ tử cung U xơ tử cung Các bướu ác tính tử cung Bệnh lý đông cầm máu Rối loạn phóng noãn Lạc nội mạc cổ tử cung Chảy máu do các điều trị khác gây ra Bệnh lý chưa xác định rõ'
+
+MERGE (o1:cause {id: 'palm_&_coein_cause'})
+MERGE (o2:disease {id: 'bệnh_lý_chưa_xác_định_rõ_disease'})
+MERGE (o1)-[r27:causedBy]->(o2)
+SET r27.text = 'Hệ thống phân loại nguyên nhân theo PALM & COEIN được Liên đoàn Sản Phụ khoa Quốc tế (FIGO) mô tả từ năm 2011, bao gồm: Polype lòng tử cung Bệnh cơ tuyến tử cung hay bệnh lý lạc tuyến nội mạc tử cung vào cơ tử cung U xơ tử cung Các bướu ác tính tử cung Bệnh lý đông cầm máu Rối loạn phóng noãn Lạc nội mạc cổ tử cung Chảy máu do các điều trị khác gây ra Bệnh lý chưa xác định rõ'
+
+MERGE (o1:symptom {id: 'rối_loạn_kinh_nguyệt_symptom'})
+MERGE (o2:disease {id: 'xuất_huyết_tử_cung_bất_thường_disease'})
+MERGE (o1)-[r28:isSymptomOf]->(o2)
+SET r28.text = 'Các chị em phụ nữ có thể nhận biết các dấu hiệu của bệnh lý thông qua các triệu chứng đi kèm ban đầu như rối loạn kinh nguyệt (kinh kéo dài, lượng nhiều, ra kinh không đúng ngày dự kiến, chảy máu sau giao hợp…), rối loạn tiểu tiện, đau tức vùng hạ vị…'
+
+MERGE (o1:symptom {id: 'kinh_kéo_dài_symptom'})
+MERGE (o2:disease {id: 'xuất_huyết_tử_cung_bất_thường_disease'})
+MERGE (o1)-[r29:isSymptomOf]->(o2)
+SET r29.text = 'Các chị em phụ nữ có thể nhận biết các dấu hiệu của bệnh lý thông qua các triệu chứng đi kèm ban đầu như rối loạn kinh nguyệt (kinh kéo dài, lượng nhiều, ra kinh không đúng ngày dự kiến, chảy máu sau giao hợp…), rối loạn tiểu tiện, đau tức vùng hạ vị…'
+
+MERGE (o1:symptom {id: 'lượng_nhiều_symptom'})
+MERGE (o2:disease {id: 'xuất_huyết_tử_cung_bất_thường_disease'})
+MERGE (o1)-[r30:isSymptomOf]->(o2)
+SET r30.text = 'Các chị em phụ nữ có thể nhận biết các dấu hiệu của bệnh lý thông qua các triệu chứng đi kèm ban đầu như rối loạn kinh nguyệt (kinh kéo dài, lượng nhiều, ra kinh không đúng ngày dự kiến, chảy máu sau giao hợp…), rối loạn tiểu tiện, đau tức vùng hạ vị…'
+
+MERGE (o1:symptom {id: 'ra_kinh_không_đúng_ngày_dự_kiến_symptom'})
+MERGE (o2:disease {id: 'xuất_huyết_tử_cung_bất_thường_disease'})
+MERGE (o1)-[r31:isSymptomOf]->(o2)
+SET r31.text = 'Các chị em phụ nữ có thể nhận biết các dấu hiệu của bệnh lý thông qua các triệu chứng đi kèm ban đầu như rối loạn kinh nguyệt (kinh kéo dài, lượng nhiều, ra kinh không đúng ngày dự kiến, chảy máu sau giao hợp…), rối loạn tiểu tiện, đau tức vùng hạ vị…'
+
+MERGE (o1:symptom {id: 'chảy_máu_sau_giao_hợp_symptom'})
+MERGE (o2:disease {id: 'xuất_huyết_tử_cung_bất_thường_disease'})
+MERGE (o1)-[r32:isSymptomOf]->(o2)
+SET r32.text = 'Các chị em phụ nữ có thể nhận biết các dấu hiệu của bệnh lý thông qua các triệu chứng đi kèm ban đầu như rối loạn kinh nguyệt (kinh kéo dài, lượng nhiều, ra kinh không đúng ngày dự kiến, chảy máu sau giao hợp…), rối loạn tiểu tiện, đau tức vùng hạ vị…'
+
+MERGE (o1:symptom {id: 'rối_loạn_tiểu_tiện_symptom'})
+MERGE (o2:disease {id: 'xuất_huyết_tử_cung_bất_thường_disease'})
+MERGE (o1)-[r33:isSymptomOf]->(o2)
+SET r33.text = 'Các chị em phụ nữ có thể nhận biết các dấu hiệu của bệnh lý thông qua các triệu chứng đi kèm ban đầu như rối loạn kinh nguyệt (kinh kéo dài, lượng nhiều, ra kinh không đúng ngày dự kiến, chảy máu sau giao hợp…), rối loạn tiểu tiện, đau tức vùng hạ vị…'
+
+MERGE (o1:symptom {id: 'đau_tức_vùng_hạ_vị_symptom'})
+MERGE (o2:disease {id: 'xuất_huyết_tử_cung_bất_thường_disease'})
+MERGE (o1)-[r34:isSymptomOf]->(o2)
+SET r34.text = 'Các chị em phụ nữ có thể nhận biết các dấu hiệu của bệnh lý thông qua các triệu chứng đi kèm ban đầu như rối loạn kinh nguyệt (kinh kéo dài, lượng nhiều, ra kinh không đúng ngày dự kiến, chảy máu sau giao hợp…), rối loạn tiểu tiện, đau tức vùng hạ vị…'
+
+MERGE (o1:disease {id: 'xuất_huyết_âm_đạo_bất_thường_disease'})
+MERGE (o2:lifestyle {id: 'chức_năng_mang_thai_lifestyle'})
+MERGE (o1)-[r35:affects]->(o2)
+SET r35.text = 'Nếu không được điều trị kịp thời và đúng cách, xuất huyết âm đạo bất thường có thể sẽ gây ảnh hưởng đến chức năng mang thai, sinh sản, và ảnh hưởng đáng kể đến chất lượng sống của người phụ nữ.'
+
+MERGE (o1:disease {id: 'xuất_huyết_âm_đạo_bất_thường_disease'})
+MERGE (o2:lifestyle {id: 'sinh_sản_lifestyle'})
+MERGE (o1)-[r36:affects]->(o2)
+SET r36.text = 'Nếu không được điều trị kịp thời và đúng cách, xuất huyết âm đạo bất thường có thể sẽ gây ảnh hưởng đến chức năng mang thai, sinh sản, và ảnh hưởng đáng kể đến chất lượng sống của người phụ nữ.'
+
+MERGE (o1:disease {id: 'xuất_huyết_âm_đạo_bất_thường_disease'})
+MERGE (o2:lifestyle {id: 'chất_lượng_sống_lifestyle'})
+MERGE (o1)-[r37:affects]->(o2)
+SET r37.text = 'Nếu không được điều trị kịp thời và đúng cách, xuất huyết âm đạo bất thường có thể sẽ gây ảnh hưởng đến chức năng mang thai, sinh sản, và ảnh hưởng đáng kể đến chất lượng sống của người phụ nữ.'
+
+MERGE (o1:symptom {id: 'đau_tức_vùng_hạ_vị_symptom'})
+MERGE (o2:disease {id: 'xuất_huyết_tử_cung_bất_thường_disease'})
+MERGE (o1)-[r38:isSymptomOf]->(o2)
+SET r38.text = 'Đau tức vùng hạ vị, rối loạn kinh nguyệt… là những triệu chứng thường gặp của các bệnh lý sản phụ khoa gây xuất huyết tử cung bất thường'
+
+MERGE (o1:symptom {id: 'xuất_huyết_giữa_chu_kỳ_kinh_symptom'})
+MERGE (o2:disease {id: 'xuất_huyết_tử_cung_bất_thường_disease'})
+MERGE (o1)-[r39:isSymptomOf]->(o2)
+SET r39.text = 'Các thời điểm và một số hình thái xuất huyết tử cung bất thường (3)  Xuất huyết giữa chu kỳ kinh, hoặc không liên quan đến chu kỳ kinh.'
+
+MERGE (o1:symptom {id: 'xuất_huyết_không_liên_quan_đến_chu_kỳ_kinh_symptom'})
+MERGE (o2:disease {id: 'xuất_huyết_tử_cung_bất_thường_disease'})
+MERGE (o1)-[r40:isSymptomOf]->(o2)
+SET r40.text = 'Các thời điểm và một số hình thái xuất huyết tử cung bất thường (3)  Xuất huyết giữa chu kỳ kinh, hoặc không liên quan đến chu kỳ kinh.'
+
+MERGE (o1:symptom {id: 'xuất_huyết_ở_tuổi_dậy_thì_symptom'})
+MERGE (o2:disease {id: 'xuất_huyết_tử_cung_bất_thường_disease'})
+MERGE (o1)-[r41:isSymptomOf]->(o2)
+SET r41.text = 'Xuất huyết ở tuổi dậy thì hoặc quanh mãn kinh, sau mãn kinh.'
+
+MERGE (o1:symptom {id: 'xuất_huyết_quanh_mãn_kinh_symptom'})
+MERGE (o2:disease {id: 'xuất_huyết_tử_cung_bất_thường_disease'})
+MERGE (o1)-[r42:isSymptomOf]->(o2)
+SET r42.text = 'Xuất huyết ở tuổi dậy thì hoặc quanh mãn kinh, sau mãn kinh.'
+
+MERGE (o1:symptom {id: 'xuất_huyết_sau_mãn_kinh_symptom'})
+MERGE (o2:disease {id: 'xuất_huyết_tử_cung_bất_thường_disease'})
+MERGE (o1)-[r43:isSymptomOf]->(o2)
+SET r43.text = 'Xuất huyết ở tuổi dậy thì hoặc quanh mãn kinh, sau mãn kinh.'
+
+MERGE (o1:symptom {id: 'xuất_huyết_sau_quan_hệ_tình_dục_symptom'})
+MERGE (o2:disease {id: 'xuất_huyết_tử_cung_bất_thường_disease'})
+MERGE (o1)-[r44:isSymptomOf]->(o2)
+SET r44.text = 'Xuất huyết sau quan hệ tình dục.'
+
+MERGE (o1:symptom {id: 'ra_máu_kiểu_nhỏ_giọt_lượng_ít_symptom'})
+MERGE (o2:disease {id: 'xuất_huyết_tử_cung_bất_thường_disease'})
+MERGE (o1)-[r45:isSymptomOf]->(o2)
+SET r45.text = 'Ra máu kiểu nhỏ giọt lượng ít vào bất kỳ thời điểm nào trong kỳ kinh nguyệt.'
+
+MERGE (o1:symptom {id: 'ra_máu_lượng_nhiều_symptom'})
+MERGE (o2:disease {id: 'xuất_huyết_tử_cung_bất_thường_disease'})
+MERGE (o1)-[r46:isSymptomOf]->(o2)
+SET r46.text = 'Ra máu lượng nhiều (cường kinh), ra máu kéo dài hơn 8 ngày so với bình thường (rong kinh).'
+
+MERGE (o1:symptom {id: 'ra_máu_kéo_dài_hơn_8_ngày_symptom'})
+MERGE (o2:disease {id: 'xuất_huyết_tử_cung_bất_thường_disease'})
+MERGE (o1)-[r47:isSymptomOf]->(o2)
+SET r47.text = 'Ra máu lượng nhiều (cường kinh), ra máu kéo dài hơn 8 ngày so với bình thường (rong kinh).'
+
+MERGE (o1:symptom {id: 'xuất_huyết_sau_sinh_symptom'})
+MERGE (o2:disease {id: 'xuất_huyết_tử_cung_bất_thường_disease'})
+MERGE (o1)-[r48:isSymptomOf]->(o2)
+SET r48.text = 'Xuất huyết sau 6 - 12 tuần sau sinh, sau mổ lấy thai, sau nạo hút thai…'
+
+MERGE (o1:symptom {id: 'xuất_huyết_sau_mổ_lấy_thai_symptom'})
+MERGE (o2:disease {id: 'xuất_huyết_tử_cung_bất_thường_disease'})
+MERGE (o1)-[r49:isSymptomOf]->(o2)
+SET r49.text = 'Xuất huyết sau 6 - 12 tuần sau sinh, sau mổ lấy thai, sau nạo hút thai…'
+
+MERGE (o1:symptom {id: 'xuất_huyết_sau_nạo_hút_thai_symptom'})
+MERGE (o2:disease {id: 'xuất_huyết_tử_cung_bất_thường_disease'})
+MERGE (o1)-[r50:isSymptomOf]->(o2)
+SET r50.text = 'Xuất huyết sau 6 - 12 tuần sau sinh, sau mổ lấy thai, sau nạo hút thai…'
+
+MERGE (o1:symptom {id: 'xuất_huyết_sau_sử_dụng_thuốc_nội_tiết_symptom'})
+MERGE (o2:disease {id: 'xuất_huyết_tử_cung_bất_thường_disease'})
+MERGE (o1)-[r51:isSymptomOf]->(o2)
+SET r51.text = 'Xuất huyết sau sử dụng một số thuốc, thường là thuốc nội tiết.'
+
+MERGE (o1:treatment {id: 'thăm_hỏi_sức_khỏe_treatment'})
+MERGE (o2:disease {id: 'xuất_huyết_tử_cung_bất_thường_disease'})
+MERGE (o1)-[r52:treatedBy]->(o2)
+SET r52.text = 'Đầu tiên, bác sĩ sẽ thăm hỏi về sức khỏe của bạn và gia đình, cũng như khai thác sâu các vấn đề về chu kỳ kinh nguyệt của bạn.'
+
+MERGE (o1:lifestyle {id: 'ghi_lại_chi_tiết_chu_kỳ_kinh_lifestyle'})
+MERGE (o2:disease {id: 'xuất_huyết_tử_cung_bất_thường_disease'})
+MERGE (o1)-[r53:relatedTo]->(o2)
+SET r53.text = 'Do đó, bạn nên ghi lại chi tiết về chu kỳ kinh trước khi gặp bác sĩ như ngày bắt đầu có kinh, thời gian kéo dài mỗi chu kỳ, lượng kinh như thế nào (ít, bình thường, nhiều hay nhỏ giọt…), có kèm triệu chứng đau bụng nhiều hay không…'
+
+MERGE (o1:test {id: 'kiểm_tra_phụ_khoa_tổng_quát_test'})
+MERGE (o2:disease {id: 'xuất_huyết_tử_cung_bất_thường_disease'})
+MERGE (o1)-[r54:diagnosedBy]->(o2)
+SET r54.text = 'BS.CKII Nguyễn Bá Mỹ Nhi đang thực hiện ca mổ tại Trung tâm Sản Phụ khoa BVĐK Tâm Anh TP.HCM Tiếp đến, bác sĩ tiến hành kiểm tra phụ khoa tổng quát,'
+
+MERGE (o1:test {id: 'xét_nghiệm_và_cận_lâm_sàng_test'})
+MERGE (o2:disease {id: 'xuất_huyết_tử_cung_bất_thường_disease'})
+MERGE (o1)-[r55:diagnosedBy]->(o2)
+SET r55.text = 'và có thể chỉ định thêm một số xét nghiệm và cận lâm sàng cần thiết:'
+
+MERGE (o1:test {id: 'xét_nghiệm_máu_test'})
+MERGE (o2:disease {id: 'xuất_huyết_tử_cung_bất_thường_disease'})
+MERGE (o1)-[r56:diagnosedBy]->(o2)
+SET r56.text = 'Xét nghiệm máu đánh giá loại trừ có thai, đánh giá có thiếu máu không và mức độ thiếu máu; có rối loạn nội tiết không; có rối loạn đông máu, rối loạn chức năng gan thận không…'
+
+MERGE (o1:test {id: 'siêu_âm_vùng_chậu_test'})
+MERGE (o2:disease {id: 'xuất_huyết_tử_cung_bất_thường_disease'})
+MERGE (o1)-[r57:diagnosedBy]->(o2)
+SET r57.text = 'Siêu âm vùng chậu, siêu âm bơm dịch vào buồng tử cung.'
+
+MERGE (o1:test {id: 'siêu_âm_bơm_dịch_vào_buồng_tử_cung_test'})
+MERGE (o2:disease {id: 'xuất_huyết_tử_cung_bất_thường_disease'})
+MERGE (o1)-[r58:diagnosedBy]->(o2)
+SET r58.text = 'Siêu âm vùng chậu, siêu âm bơm dịch vào buồng tử cung.'
+
+MERGE (o1:test {id: 'chụp_mri_test'})
+MERGE (o2:disease {id: 'xuất_huyết_tử_cung_bất_thường_disease'})
+MERGE (o1)-[r59:diagnosedBy]->(o2)
+SET r59.text = 'Chụp MRI hoặc CT scan vùng bụng chậu.'
+
+MERGE (o1:test {id: 'ct_scan_vùng_bụng_chậu_test'})
+MERGE (o2:disease {id: 'xuất_huyết_tử_cung_bất_thường_disease'})
+MERGE (o1)-[r60:diagnosedBy]->(o2)
+SET r60.text = 'Chụp MRI hoặc CT scan vùng bụng chậu.'
+
+MERGE (o1:test {id: 'nội_soi_buồng_tử_cung_test'})
+MERGE (o2:disease {id: 'xuất_huyết_tử_cung_bất_thường_disease'})
+MERGE (o1)-[r61:diagnosedBy]->(o2)
+SET r61.text = 'Nội soi buồng tử cung.'
+
+MERGE (o1:test {id: 'hút_sinh_thiết_nội_mạc_tử_cung_test'})
+MERGE (o2:disease {id: 'xuất_huyết_tử_cung_bất_thường_disease'})
+MERGE (o1)-[r62:diagnosedBy]->(o2)
+SET r62.text = 'Hút sinh thiết nội mạc tử cung.'
+
+MERGE (o1:disease {id: 'xuất_huyết_tử_cung_bất_thường_disease'})
+MERGE (o2:organ {id: 'sức_khỏe_organ'})
+MERGE (o1)-[r63:affects]->(o2)
+SET r63.text = 'Tình trạng xuất huyết tử cung bất thường không chỉ ảnh hưởng đến sức khỏe, mà còn tác động tiêu cực đến tâm lý của bệnh nhân.'
+
+MERGE (o1:disease {id: 'xuất_huyết_tử_cung_bất_thường_disease'})
+MERGE (o2:organ {id: 'tâm_lý_organ'})
+MERGE (o1)-[r64:affects]->(o2)
+SET r64.text = 'Tình trạng xuất huyết tử cung bất thường không chỉ ảnh hưởng đến sức khỏe, mà còn tác động tiêu cực đến tâm lý của bệnh nhân.'
+
+MERGE (o1:disease {id: 'thiếu_máu_mãn_và_nặng_disease'})
+MERGE (o2:disease {id: 'xuất_huyết_tử_cung_bất_thường_disease'})
+MERGE (o1)-[r65:causedBy]->(o2)
+SET r65.text = 'Nếu không được can thiệp điều trị kịp thời, chị em phụ nữ có nguy cơ phải đối mặt với nhiều biến chứng nguy hiểm như: Thiếu máu mãn và nặng dẫn đến suy tim, suy nhược cơ thể, mất khả năng tập trung làm việc, vô sinh, sảy thai, sảy thai tiếp, sinh non, thai chết trong tử cung… hoặc bỏ sót các bệnh lý ác tính diễn tiến qua giai đoạn xa và nặng.'
+
+MERGE (o1:disease {id: 'suy_tim_disease'})
+MERGE (o2:disease {id: 'xuất_huyết_tử_cung_bất_thường_disease'})
+MERGE (o1)-[r66:causedBy]->(o2)
+SET r66.text = 'Nếu không được can thiệp điều trị kịp thời, chị em phụ nữ có nguy cơ phải đối mặt với nhiều biến chứng nguy hiểm như: Thiếu máu mãn và nặng dẫn đến suy tim, suy nhược cơ thể, mất khả năng tập trung làm việc, vô sinh, sảy thai, sảy thai tiếp, sinh non, thai chết trong tử cung… hoặc bỏ sót các bệnh lý ác tính diễn tiến qua giai đoạn xa và nặng.'
+
+MERGE (o1:disease {id: 'suy_nhược_cơ_thể_disease'})
+MERGE (o2:disease {id: 'xuất_huyết_tử_cung_bất_thường_disease'})
+MERGE (o1)-[r67:causedBy]->(o2)
+SET r67.text = 'Nếu không được can thiệp điều trị kịp thời, chị em phụ nữ có nguy cơ phải đối mặt với nhiều biến chứng nguy hiểm như: Thiếu máu mãn và nặng dẫn đến suy tim, suy nhược cơ thể, mất khả năng tập trung làm việc, vô sinh, sảy thai, sảy thai tiếp, sinh non, thai chết trong tử cung… hoặc bỏ sót các bệnh lý ác tính diễn tiến qua giai đoạn xa và nặng.'
+
+MERGE (o1:symptom {id: 'mất_khả_năng_tập_trung_làm_việc_symptom'})
+MERGE (o2:disease {id: 'xuất_huyết_tử_cung_bất_thường_disease'})
+MERGE (o1)-[r68:causedBy]->(o2)
+SET r68.text = 'Nếu không được can thiệp điều trị kịp thời, chị em phụ nữ có nguy cơ phải đối mặt với nhiều biến chứng nguy hiểm như: Thiếu máu mãn và nặng dẫn đến suy tim, suy nhược cơ thể, mất khả năng tập trung làm việc, vô sinh, sảy thai, sảy thai tiếp, sinh non, thai chết trong tử cung… hoặc bỏ sót các bệnh lý ác tính diễn tiến qua giai đoạn xa và nặng.'
+
+MERGE (o1:disease {id: 'vô_sinh_disease'})
+MERGE (o2:disease {id: 'xuất_huyết_tử_cung_bất_thường_disease'})
+MERGE (o1)-[r69:causedBy]->(o2)
+SET r69.text = 'Nếu không được can thiệp điều trị kịp thời, chị em phụ nữ có nguy cơ phải đối mặt với nhiều biến chứng nguy hiểm như: Thiếu máu mãn và nặng dẫn đến suy tim, suy nhược cơ thể, mất khả năng tập trung làm việc, vô sinh, sảy thai, sảy thai tiếp, sinh non, thai chết trong tử cung… hoặc bỏ sót các bệnh lý ác tính diễn tiến qua giai đoạn xa và nặng.'
+
+MERGE (o1:disease {id: 'sảy_thai_disease'})
+MERGE (o2:disease {id: 'xuất_huyết_tử_cung_bất_thường_disease'})
+MERGE (o1)-[r70:causedBy]->(o2)
+SET r70.text = 'Nếu không được can thiệp điều trị kịp thời, chị em phụ nữ có nguy cơ phải đối mặt với nhiều biến chứng nguy hiểm như: Thiếu máu mãn và nặng dẫn đến suy tim, suy nhược cơ thể, mất khả năng tập trung làm việc, vô sinh, sảy thai, sảy thai tiếp, sinh non, thai chết trong tử cung… hoặc bỏ sót các bệnh lý ác tính diễn tiến qua giai đoạn xa và nặng.'
+
+MERGE (o1:disease {id: 'sảy_thai_tiếp_disease'})
+MERGE (o2:disease {id: 'xuất_huyết_tử_cung_bất_thường_disease'})
+MERGE (o1)-[r71:causedBy]->(o2)
+SET r71.text = 'Nếu không được can thiệp điều trị kịp thời, chị em phụ nữ có nguy cơ phải đối mặt với nhiều biến chứng nguy hiểm như: Thiếu máu mãn và nặng dẫn đến suy tim, suy nhược cơ thể, mất khả năng tập trung làm việc, vô sinh, sảy thai, sảy thai tiếp, sinh non, thai chết trong tử cung… hoặc bỏ sót các bệnh lý ác tính diễn tiến qua giai đoạn xa và nặng.'
+
+MERGE (o1:disease {id: 'sinh_non_disease'})
+MERGE (o2:disease {id: 'xuất_huyết_tử_cung_bất_thường_disease'})
+MERGE (o1)-[r72:causedBy]->(o2)
+SET r72.text = 'Nếu không được can thiệp điều trị kịp thời, chị em phụ nữ có nguy cơ phải đối mặt với nhiều biến chứng nguy hiểm như: Thiếu máu mãn và nặng dẫn đến suy tim, suy nhược cơ thể, mất khả năng tập trung làm việc, vô sinh, sảy thai, sảy thai tiếp, sinh non, thai chết trong tử cung… hoặc bỏ sót các bệnh lý ác tính diễn tiến qua giai đoạn xa và nặng.'
+
+MERGE (o1:disease {id: 'thai_chết_trong_tử_cung_disease'})
+MERGE (o2:disease {id: 'xuất_huyết_tử_cung_bất_thường_disease'})
+MERGE (o1)-[r73:causedBy]->(o2)
+SET r73.text = 'Nếu không được can thiệp điều trị kịp thời, chị em phụ nữ có nguy cơ phải đối mặt với nhiều biến chứng nguy hiểm như: Thiếu máu mãn và nặng dẫn đến suy tim, suy nhược cơ thể, mất khả năng tập trung làm việc, vô sinh, sảy thai, sảy thai tiếp, sinh non, thai chết trong tử cung… hoặc bỏ sót các bệnh lý ác tính diễn tiến qua giai đoạn xa và nặng.'
+
+MERGE (o1:symptom {id: 'xuất_huyết_tử_cung_bất_thường_symptom'})
+MERGE (o2:cause {id: 'nguyên_nhân_cause'})
+MERGE (o1)-[r74:causedBy]->(o2)
+SET r74.text = 'BS.CKII Nguyễn Bá Mỹ Nhi cho biết, việc xác định phương pháp điều trị sẽ phụ thuộc vào nguyên nhân gây xuất huyết tử cung bất thường và một số yếu tố khác như độ tuổi, số con đã có và mong muốn sinh con của bệnh nhân.'
+
+MERGE (o1:symptom {id: 'xuất_huyết_tử_cung_bất_thường_symptom'})
+MERGE (o2:lifestyle {id: 'độ_tuổi_lifestyle'})
+MERGE (o1)-[r75:relatedTo]->(o2)
+SET r75.text = 'BS.CKII Nguyễn Bá Mỹ Nhi cho biết, việc xác định phương pháp điều trị sẽ phụ thuộc vào nguyên nhân gây xuất huyết tử cung bất thường và một số yếu tố khác như độ tuổi, số con đã có và mong muốn sinh con của bệnh nhân.'
+
+MERGE (o1:symptom {id: 'xuất_huyết_tử_cung_bất_thường_symptom'})
+MERGE (o2:lifestyle {id: 'số_con_đã_có_lifestyle'})
+MERGE (o1)-[r76:relatedTo]->(o2)
+SET r76.text = 'BS.CKII Nguyễn Bá Mỹ Nhi cho biết, việc xác định phương pháp điều trị sẽ phụ thuộc vào nguyên nhân gây xuất huyết tử cung bất thường và một số yếu tố khác như độ tuổi, số con đã có và mong muốn sinh con của bệnh nhân.'
+
+MERGE (o1:symptom {id: 'xuất_huyết_tử_cung_bất_thường_symptom'})
+MERGE (o2:lifestyle {id: 'mong_muốn_sinh_con_lifestyle'})
+MERGE (o1)-[r77:relatedTo]->(o2)
+SET r77.text = 'BS.CKII Nguyễn Bá Mỹ Nhi cho biết, việc xác định phương pháp điều trị sẽ phụ thuộc vào nguyên nhân gây xuất huyết tử cung bất thường và một số yếu tố khác như độ tuổi, số con đã có và mong muốn sinh con của bệnh nhân.'
+
+MERGE (o1:symptom {id: 'xuất_huyết_tử_cung_bất_thường_symptom'})
+MERGE (o2:treatment {id: 'nội_khoa_treatment'})
+MERGE (o1)-[r78:treatedBy]->(o2)
+SET r78.text = 'Tùy nguyên nhân mà các điều trị có thể là nội khoa (điều trị bằng thuốc) hoặc là ngoại khoa (can thiệp phẫu thuật).'
+
+MERGE (o1:symptom {id: 'xuất_huyết_tử_cung_bất_thường_symptom'})
+MERGE (o2:treatment {id: 'ngoại_khoa_treatment'})
+MERGE (o1)-[r79:treatedBy]->(o2)
+SET r79.text = 'Tùy nguyên nhân mà các điều trị có thể là nội khoa (điều trị bằng thuốc) hoặc là ngoại khoa (can thiệp phẫu thuật).'
+
+MERGE (o1:treatment {id: 'nội_khoa_treatment'})
+MERGE (o2:treatment {id: 'điều_trị_bằng_thuốc_treatment'})
+MERGE (o1)-[r80:relatedTo]->(o2)
+SET r80.text = 'Tùy nguyên nhân mà các điều trị có thể là nội khoa (điều trị bằng thuốc) hoặc là ngoại khoa (can thiệp phẫu thuật).'
+
+MERGE (o1:treatment {id: 'ngoại_khoa_treatment'})
+MERGE (o2:treatment {id: 'can_thiệp_phẫu_thuật_treatment'})
+MERGE (o1)-[r81:relatedTo]->(o2)
+SET r81.text = 'Tùy nguyên nhân mà các điều trị có thể là nội khoa (điều trị bằng thuốc) hoặc là ngoại khoa (can thiệp phẫu thuật).'
+
+MERGE (o1:symptom {id: 'xuất_huyết_tử_cung_bất_thường_symptom'})
+MERGE (o2:treatment {id: 'điều_trị_phù_hợp_treatment'})
+MERGE (o1)-[r82:treatedBy]->(o2)
+SET r82.text = 'Tùy vào nguyên nhân gây xuất huyết tử cung bất thường mà bác sĩ sẽ có chỉ định điều trị phù hợp và hiệu quả'

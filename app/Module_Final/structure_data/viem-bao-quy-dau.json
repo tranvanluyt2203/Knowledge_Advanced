@@ -1,0 +1,1170 @@
+[
+    {
+        "text": "Viêm bao quy đầu là bệnh lý ảnh hưởng tới sức khỏe và khả năng sinh sản của nam giới.",
+        "head": "Viêm bao quy đầu",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "sức khỏe",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Viêm bao quy đầu là bệnh lý ảnh hưởng tới sức khỏe và khả năng sinh sản của nam giới.",
+        "head": "Viêm bao quy đầu",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "khả năng sinh sản",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Viêm bao quy đầu là bệnh lý ảnh hưởng tới sức khỏe và khả năng sinh sản của nam giới. Nếu không điều trị sớm và đúng cách, bệnh có thể dẫn tới nhiều biến chứng nguy hiểm.",
+        "head": "Viêm bao quy đầu",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "điều trị",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Viêm bao quy đầu (balanoposthitis) là tình trạng bao quy đầu và quy đầu bị sưng, đau nhức, khó chịu.",
+        "head": "Viêm bao quy đầu",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "sưng",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Viêm bao quy đầu (balanoposthitis) là tình trạng bao quy đầu và quy đầu bị sưng, đau nhức, khó chịu.",
+        "head": "Viêm bao quy đầu",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "đau nhức",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Viêm bao quy đầu (balanoposthitis) là tình trạng bao quy đầu và quy đầu bị sưng, đau nhức, khó chịu.",
+        "head": "Viêm bao quy đầu",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "khó chịu",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Nguyên nhân gây bệnh thường là do vi sinh vật có hại, phổ biến là nấm và vi khuẩn, virus, ngoài ra còn có ký sinh trùng.",
+        "head": "Vi sinh vật có hại",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Viêm bao quy đầu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nguyên nhân gây bệnh thường là do vi sinh vật có hại, phổ biến là nấm và vi khuẩn, virus, ngoài ra còn có ký sinh trùng.",
+        "head": "nấm",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Viêm bao quy đầu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nguyên nhân gây bệnh thường là do vi sinh vật có hại, phổ biến là nấm và vi khuẩn, virus, ngoài ra còn có ký sinh trùng.",
+        "head": "vi khuẩn",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Viêm bao quy đầu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nguyên nhân gây bệnh thường là do vi sinh vật có hại, phổ biến là nấm và vi khuẩn, virus, ngoài ra còn có ký sinh trùng.",
+        "head": "virus",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Viêm bao quy đầu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nguyên nhân gây bệnh thường là do vi sinh vật có hại, phổ biến là nấm và vi khuẩn, virus, ngoài ra còn có ký sinh trùng.",
+        "head": "ký sinh trùng",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "Viêm bao quy đầu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "(1) Bao quy đầu là lớp bao da mỏng trùm lên đầu dương vật và phần lỗ tiểu.",
+        "head": "Bao quy đầu",
+        "head_type": "organ",
+        "relation": "locatedIn",
+        "tail": "đầu dương vật",
+        "tail_type": "organ"
+    },
+    {
+        "text": "(1) Bao quy đầu là lớp bao da mỏng trùm lên đầu dương vật và phần lỗ tiểu.",
+        "head": "Bao quy đầu",
+        "head_type": "organ",
+        "relation": "locatedIn",
+        "tail": "lỗ tiểu",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Dương vật khi cương lên do kích thích, phần bao quy đầu sẽ bị kéo xuống, để lộ phần đầu của dương vật.",
+        "head": "Dương vật",
+        "head_type": "organ",
+        "relation": "relatedTo",
+        "tail": "Bao quy đầu",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Viêm bao quy đầu thường bị nhầm lẫn với hai bệnh lý là hẹp bao quy đầu và viêm đầu dương vật (viêm quy đầu).",
+        "head": "Viêm bao quy đầu",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "hẹp bao quy đầu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Viêm bao quy đầu thường bị nhầm lẫn với hai bệnh lý là hẹp bao quy đầu và viêm đầu dương vật (viêm quy đầu).",
+        "head": "Viêm bao quy đầu",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "viêm đầu dương vật",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Cả ba bệnh lý đều ảnh hưởng đến dương vật.",
+        "head": "Bệnh lý",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Dương vật",
+        "tail_type": "organ"
+    },
+    {
+        "text": "(2)  Hẹp bao quy đầu là tình trạng da bao quy đầu không tuột lên hoàn toàn khỏi quy đầu.",
+        "head": "Hẹp bao quy đầu",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "da bao quy đầu không tuột lên hoàn toàn khỏi quy đầu",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Viêm đầu dương vật (viêm quy đầu) là tình trạng viêm nhiễm ở quy đầu.",
+        "head": "Viêm đầu dương vật",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "viêm nhiễm ở quy đầu",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Viêm bao quy đầu là tình trạng viêm nhiễm cả quy đầu và bao quy đầu.",
+        "head": "Viêm bao quy đầu",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "viêm nhiễm cả quy đầu và bao quy đầu",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Hẹp bao quy đầu có thể xảy ra cùng với viêm quy đầu hoặc viêm bao quy đầu.",
+        "head": "Hẹp bao quy đầu",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "viêm quy đầu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Hẹp bao quy đầu có thể xảy ra cùng với viêm quy đầu hoặc viêm bao quy đầu.",
+        "head": "Hẹp bao quy đầu",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "Viêm bao quy đầu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tình trạng hẹp bao quy đầu dễ gây kích ứng quy đầu và bao quy đầu.",
+        "head": "Hẹp bao quy đầu",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "kích ứng quy đầu",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Tình trạng hẹp bao quy đầu dễ gây kích ứng quy đầu và bao quy đầu.",
+        "head": "Hẹp bao quy đầu",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "kích ứng bao quy đầu",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Một khi kích ứng này xảy ra, các triệu chứng như đau và sưng có thể khiến cho việc kéo bao quy đầu trở nên khó khăn hơn.",
+        "head": "đau",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "kích ứng",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Có nhiều nguyên nhân gây viêm bao quy đầu.",
+        "head": "viêm bao quy đầu",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "nhiều nguyên nhân",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Trong đó, việc xác định rõ nguyên nhân sẽ hỗ trợ điều trị viêm bao quy đầu hiệu quả hơn.",
+        "head": "viêm bao quy đầu",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "xác định rõ nguyên nhân",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Hẹp bao quy đầu: Bệnh khiến đầu của dương vật không thể lộ ra bên ngoài, dẫn tới khó khăn trong việc vệ sinh phần đầu của dương vật.",
+        "head": "Hẹp bao quy đầu",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "viêm bao quy đầu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Hẹp bao quy đầu: Bệnh khiến đầu của dương vật không thể lộ ra bên ngoài, dẫn tới khó khăn trong việc vệ sinh phần đầu của dương vật.",
+        "head": "Hẹp bao quy đầu",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "dương vật",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Lâu dần, phần cặn của nước tiểu và chất bẩn sẽ tích tụ tại đầu dương vật.",
+        "head": "cặn của nước tiểu và chất bẩn",
+        "head_type": "cause",
+        "relation": "causes",
+        "tail": "viêm bao quy đầu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Điều này chính là cơ hội thuận lợi cho hàng loạt vi khuẩn, nấm sinh sôi và phát triển mạnh mẽ.",
+        "head": "vi khuẩn, nấm",
+        "head_type": "cause",
+        "relation": "causes",
+        "tail": "viêm bao quy đầu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Quan hệ tình dục không lành mạnh: Một nguyên nhân phổ biến khác gây viêm bao quy đầu là quan hệ tình dục bừa bãi, thiếu những biện pháp an toàn, dẫn tới gia tăng nguy cơ mắc những bệnh tình dục như giang mai, lậu…, theo đó là nguy cơ viêm bao quy đầu rất cao.",
+        "head": "Quan hệ tình dục không lành mạnh",
+        "head_type": "lifestyle",
+        "relation": "causes",
+        "tail": "viêm bao quy đầu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Quan hệ tình dục không lành mạnh: Một nguyên nhân phổ biến khác gây viêm bao quy đầu là quan hệ tình dục bừa bãi, thiếu những biện pháp an toàn, dẫn tới gia tăng nguy cơ mắc những bệnh tình dục như giang mai, lậu…, theo đó là nguy cơ viêm bao quy đầu rất cao.",
+        "head": "giang mai, lậu",
+        "head_type": "disease",
+        "relation": "associatedWith",
+        "tail": "viêm bao quy đầu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Không vệ sinh hoặc vệ sinh sai cách bộ phận sinh dục: Nguyên nhân thường gặp ở trẻ em.",
+        "head": "Không vệ sinh hoặc vệ sinh sai cách bộ phận sinh dục",
+        "head_type": "lifestyle",
+        "relation": "causes",
+        "tail": "viêm bao quy đầu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Vì các bé chưa có ý thức vệ sinh cá nhân.",
+        "head": "chưa có ý thức vệ sinh cá nhân",
+        "head_type": "lifestyle",
+        "relation": "causes",
+        "tail": "viêm bao quy đầu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Cơ địa dễ kích ứng: Viêm bao quy đầu có thể xảy ra ở người bệnh có cơ địa dễ kích ứng với môi trường hoặc các sản phẩm giặt rửa, sản phẩm vệ sinh bộ phận sinh dục, sữa tắm, dầu gội&#8230; Khi đó, phần bao quy đầu sẽ bị ửng đỏ, ngứa ngáy trong vài ngày, sau đó sẽ chấm dứt hoàn toàn.",
+        "head": "Cơ địa dễ kích ứng",
+        "head_type": "cause",
+        "relation": "causes",
+        "tail": "viêm bao quy đầu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Cơ địa dễ kích ứng: Viêm bao quy đầu có thể xảy ra ở người bệnh có cơ địa dễ kích ứng với môi trường hoặc các sản phẩm giặt rửa, sản phẩm vệ sinh bộ phận sinh dục, sữa tắm, dầu gội&#8230; Khi đó, phần bao quy đầu sẽ bị ửng đỏ, ngứa ngáy trong vài ngày, sau đó sẽ chấm dứt hoàn toàn.",
+        "head": "ửng đỏ, ngứa ngáy",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "viêm bao quy đầu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Một số bệnh lý: Các bệnh lý như viêm niệu đạo hoặc nhiễm trùng đường tiết niệu cũng làm tăng nguy cơ viêm bao quy đầu rất cao.",
+        "head": "viêm niệu đạo hoặc nhiễm trùng đường tiết niệu",
+        "head_type": "disease",
+        "relation": "associatedWith",
+        "tail": "viêm bao quy đầu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Dương vật ngứa ngáy, khó chịu.",
+        "head": "Dương vật ngứa ngáy, khó chịu",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "viêm bao quy đầu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Vùng da bao quy đầu bị sưng đỏ, đau nhức.",
+        "head": "Vùng da bao quy đầu bị sưng đỏ, đau nhức",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "viêm bao quy đầu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi tiểu thường xuyên thấy rát, khó chịu&#8230;",
+        "head": "tiểu rát, khó chịu",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "viêm bao quy đầu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bao quy đầu có mùi hôi, thường xuất hiện máu, mủ trắng không rõ nguyên nhân.",
+        "head": "Bao quy đầu có mùi hôi, thường xuất hiện máu, mủ trắng",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "viêm bao quy đầu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tiểu đau và rát, ngứa ngáy; đau khi quan hệ tình dục.",
+        "head": "Tiểu đau và rát, ngứa ngáy; đau khi quan hệ tình dục",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "viêm bao quy đầu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Giảm ham muốn rõ rệt vì cơ thể luôn trong tình trạng đau nhức, mệt mỏi, kém tập trung&#8230;",
+        "head": "Giảm ham muốn rõ rệt",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "viêm bao quy đầu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Giảm ham muốn rõ rệt vì cơ thể luôn trong tình trạng đau nhức, mệt mỏi, kém tập trung&#8230;",
+        "head": "đau nhức, mệt mỏi, kém tập trung",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "viêm bao quy đầu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các yếu tố làm tăng nguy cơ viêm bao quy đầu gồm:  Mắc bệnh đái tháo đường nhưng không điều trị hoặc kiểm soát đường huyết không tốt.",
+        "head": "bệnh đái tháo đường",
+        "head_type": "disease",
+        "relation": "associatedWith",
+        "tail": "viêm bao quy đầu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Viêm bao quy đầu không phải là bệnh lây truyền qua đường tình dục (STD), cũng không phải là nhiễm trùng lây truyền qua đường tình dục (STI).",
+        "head": "Viêm bao quy đầu",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "Bệnh lây truyền qua đường tình dục (STD)",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Viêm bao quy đầu không phải là bệnh lây truyền qua đường tình dục (STD), cũng không phải là nhiễm trùng lây truyền qua đường tình dục (STI).",
+        "head": "Viêm bao quy đầu",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "Nhiễm trùng lây truyền qua đường tình dục (STI)",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Vì thế, nam giới khi mắc bệnh không cần phải quá lo lắng.",
+        "head": "Viêm bao quy đầu",
+        "head_type": "disease",
+        "relation": "associatedWith",
+        "tail": "Lo lắng",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Tuy nhiên, bạn nên có biện pháp chăm sóc tại nhà đúng cách để cải thiện tình trạng này.",
+        "head": "Viêm bao quy đầu",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "Chăm sóc tại nhà",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Phần lớn các trường hợp viêm bao quy đầu thường không tự khỏi nếu thiếu phác đồ điều trị thích hợp.",
+        "head": "Viêm bao quy đầu",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "Phác đồ điều trị",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Khi tiến triển nặng, bệnh có thể khiến dương vật thay đổi hình dạng, dẫn tới nhiều biến chứng nguy hiểm, gây ảnh hưởng nghiêm trọng tới cuộc sống sinh hoạt của nam giới.",
+        "head": "Viêm bao quy đầu",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Dương vật",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Khi tiến triển nặng, bệnh có thể khiến dương vật thay đổi hình dạng, dẫn tới nhiều biến chứng nguy hiểm, gây ảnh hưởng nghiêm trọng tới cuộc sống sinh hoạt của nam giới.",
+        "head": "Viêm bao quy đầu",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Cuộc sống sinh hoạt",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Do đó, khi có những biểu hiện viêm bao quy đầu, người bệnh nên nhanh chóng đi tới những cơ sở y tế uy tín để được thăm khám, chẩn đoán và điều trị kịp thời, ngăn ngừa những biến chứng nặng.",
+        "head": "Viêm bao quy đầu",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "Thăm khám",
+        "tail_type": "test"
+    },
+    {
+        "text": "Do đó, khi có những biểu hiện viêm bao quy đầu, người bệnh nên nhanh chóng đi tới những cơ sở y tế uy tín để được thăm khám, chẩn đoán và điều trị kịp thời, ngăn ngừa những biến chứng nặng.",
+        "head": "Viêm bao quy đầu",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "Điều trị",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Nếu trì hoãn điều trị, nam giới có thể đối mặt với những biến chứng như:  Khởi phát những bệnh lý viêm nhiễm khác: Vi khuẩn sau khi xâm nhập, gây viêm loét tại bao quy đầu có thể phát triển và xâm nhập sâu hơn vào những cơ quan khác.",
+        "head": "Viêm bao quy đầu",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Vi khuẩn",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Nếu trì hoãn điều trị, nam giới có thể đối mặt với những biến chứng như:  Khởi phát những bệnh lý viêm nhiễm khác: Vi khuẩn sau khi xâm nhập, gây viêm loét tại bao quy đầu có thể phát triển và xâm nhập sâu hơn vào những cơ quan khác.",
+        "head": "Viêm bao quy đầu",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Viêm loét",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Chúng gây ra nhiều bệnh lý viêm nhiễm như viêm ống dẫn tinh, viêm tinh hoàn, viêm mào tinh hoàn…",
+        "head": "Viêm bao quy đầu",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Viêm ống dẫn tinh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Chúng gây ra nhiều bệnh lý viêm nhiễm như viêm ống dẫn tinh, viêm tinh hoàn, viêm mào tinh hoàn…",
+        "head": "Viêm bao quy đầu",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Viêm tinh hoàn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Chúng gây ra nhiều bệnh lý viêm nhiễm như viêm ống dẫn tinh, viêm tinh hoàn, viêm mào tinh hoàn…",
+        "head": "Viêm bao quy đầu",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Viêm mào tinh hoàn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Giảm ham muốn tình dục: Viêm bao quy đầu khiến nam giới luôn bị đau nhức.",
+        "head": "Viêm bao quy đầu",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Giảm ham muốn tình dục",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Giảm ham muốn tình dục: Viêm bao quy đầu khiến nam giới luôn bị đau nhức.",
+        "head": "Viêm bao quy đầu",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Đau nhức",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Vì thế, người bệnh thường không còn hứng thú với chuyện chăn gối.",
+        "head": "Viêm bao quy đầu",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Chuyện chăn gối",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Theo thời gian, bệnh có khả năng gây rối loạn chức năng sinh lý, rối loạn cương dương, liệt dương, xuất tinh sớm…",
+        "head": "Viêm bao quy đầu",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Rối loạn chức năng sinh lý",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Theo thời gian, bệnh có khả năng gây rối loạn chức năng sinh lý, rối loạn cương dương, liệt dương, xuất tinh sớm…",
+        "head": "Viêm bao quy đầu",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Rối loạn cương dương",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Theo thời gian, bệnh có khả năng gây rối loạn chức năng sinh lý, rối loạn cương dương, liệt dương, xuất tinh sớm…",
+        "head": "Viêm bao quy đầu",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Liệt dương",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Theo thời gian, bệnh có khả năng gây rối loạn chức năng sinh lý, rối loạn cương dương, liệt dương, xuất tinh sớm…",
+        "head": "Viêm bao quy đầu",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Xuất tinh sớm",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Vô sinh, hiếm muộn: Viêm bao quy đầu mạn tính có thể làm suy giảm số lượng và chất lượng tinh trùng, qua đó tăng nguy cơ vô sinh, hiếm muộn.",
+        "head": "Viêm bao quy đầu",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Vô sinh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Vô sinh, hiếm muộn: Viêm bao quy đầu mạn tính có thể làm suy giảm số lượng và chất lượng tinh trùng, qua đó tăng nguy cơ vô sinh, hiếm muộn.",
+        "head": "Viêm bao quy đầu",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Hiếm muộn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Vô sinh, hiếm muộn: Viêm bao quy đầu mạn tính có thể làm suy giảm số lượng và chất lượng tinh trùng, qua đó tăng nguy cơ vô sinh, hiếm muộn.",
+        "head": "Viêm bao quy đầu",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Tinh trùng",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Ung thư dương vật: Viêm bao quy đầu kèm với những vết loét, chảy dịch mủ có thể làm tăng nguy cơ ung thư dương vật.",
+        "head": "Viêm bao quy đầu",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Ung thư dương vật",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ung thư dương vật: Viêm bao quy đầu kèm với những vết loét, chảy dịch mủ có thể làm tăng nguy cơ ung thư dương vật.",
+        "head": "Viêm bao quy đầu",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Vết loét",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Ung thư dương vật: Viêm bao quy đầu kèm với những vết loét, chảy dịch mủ có thể làm tăng nguy cơ ung thư dương vật.",
+        "head": "Viêm bao quy đầu",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Chảy dịch mủ",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Viêm bao quy đầu làm suy giảm ham muốn tình dục",
+        "head": "Viêm bao quy đầu",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Suy giảm ham muốn tình dục",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Ngoài ra, viêm bao quy đầu có thể gây viêm niệu đạo, viêm bàng quang.",
+        "head": "Viêm bao quy đầu",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Viêm niệu đạo",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ngoài ra, viêm bao quy đầu có thể gây viêm niệu đạo, viêm bàng quang.",
+        "head": "Viêm bao quy đầu",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Viêm bàng quang",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Một số trường hợp có thể bị ảnh hưởng tới chức năng thận, làm tăng nguy cơ mắc bệnh suy thận.",
+        "head": "Viêm bao quy đầu",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "Chức năng thận",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Một số trường hợp có thể bị ảnh hưởng tới chức năng thận, làm tăng nguy cơ mắc bệnh suy thận.",
+        "head": "Viêm bao quy đầu",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "Suy thận",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bác sĩ thường xem xét tiền sử bệnh lý và kiểm tra sức khỏe của người bệnh.",
+        "head": "Viêm bao quy đầu",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "Kiểm tra sức khỏe",
+        "tail_type": "test"
+    },
+    {
+        "text": "Một số trường hợp có thể được lấy mủ ở quy đầu để xác định nguyên nhân có phải là do vi khuẩn hoặc nấm không.",
+        "head": "Viêm bao quy đầu",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "Lấy mủ ở quy đầu",
+        "tail_type": "test"
+    },
+    {
+        "text": "Một số trường hợp có thể được lấy mủ ở quy đầu để xác định nguyên nhân có phải là do vi khuẩn hoặc nấm không.",
+        "head": "Viêm bao quy đầu",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Vi khuẩn",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Một số trường hợp có thể được lấy mủ ở quy đầu để xác định nguyên nhân có phải là do vi khuẩn hoặc nấm không.",
+        "head": "Viêm bao quy đầu",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Nấm",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Ngoài ra, bác sĩ cũng có thể chỉ định tiến hành thử máu nếu nam giới mắc các bệnh lý nghiêm trọng như đái tháo đường hoặc giang mai.",
+        "head": "Viêm bao quy đầu",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "Thử máu",
+        "tail_type": "test"
+    },
+    {
+        "text": "Ngoài ra, bác sĩ cũng có thể chỉ định tiến hành thử máu nếu nam giới mắc các bệnh lý nghiêm trọng như đái tháo đường hoặc giang mai.",
+        "head": "Viêm bao quy đầu",
+        "head_type": "disease",
+        "relation": "associatedWith",
+        "tail": "Đái tháo đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Với tình trạng viêm ở mức độ nhẹ, những loại thuốc uống đặc trị (kháng sinh, kháng viêm, diệt virus, giảm sưng đau…) sẽ giúp loại bỏ những tác nhân gây bệnh, thuyên giảm nhanh chóng những triệu chứng khó chịu.",
+        "head": "Viêm",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "Thuốc uống đặc trị",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Với tình trạng viêm ở mức độ nhẹ, những loại thuốc uống đặc trị (kháng sinh, kháng viêm, diệt virus, giảm sưng đau…) sẽ giúp loại bỏ những tác nhân gây bệnh, thuyên giảm nhanh chóng những triệu chứng khó chịu.",
+        "head": "Thuốc uống đặc trị",
+        "head_type": "treatment",
+        "relation": "relatedTo",
+        "tail": "Kháng sinh",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Với tình trạng viêm ở mức độ nhẹ, những loại thuốc uống đặc trị (kháng sinh, kháng viêm, diệt virus, giảm sưng đau…) sẽ giúp loại bỏ những tác nhân gây bệnh, thuyên giảm nhanh chóng những triệu chứng khó chịu.",
+        "head": "Thuốc uống đặc trị",
+        "head_type": "treatment",
+        "relation": "relatedTo",
+        "tail": "Kháng viêm",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Với tình trạng viêm ở mức độ nhẹ, những loại thuốc uống đặc trị (kháng sinh, kháng viêm, diệt virus, giảm sưng đau…) sẽ giúp loại bỏ những tác nhân gây bệnh, thuyên giảm nhanh chóng những triệu chứng khó chịu.",
+        "head": "Thuốc uống đặc trị",
+        "head_type": "treatment",
+        "relation": "relatedTo",
+        "tail": "Diệt virus",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Với tình trạng viêm ở mức độ nhẹ, những loại thuốc uống đặc trị (kháng sinh, kháng viêm, diệt virus, giảm sưng đau…) sẽ giúp loại bỏ những tác nhân gây bệnh, thuyên giảm nhanh chóng những triệu chứng khó chịu.",
+        "head": "Thuốc uống đặc trị",
+        "head_type": "treatment",
+        "relation": "relatedTo",
+        "tail": "Giảm sưng đau",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Với tình trạng viêm ở mức độ nhẹ, những loại thuốc uống đặc trị (kháng sinh, kháng viêm, diệt virus, giảm sưng đau…) sẽ giúp loại bỏ những tác nhân gây bệnh, thuyên giảm nhanh chóng những triệu chứng khó chịu.",
+        "head": "Thuốc uống đặc trị",
+        "head_type": "treatment",
+        "relation": "treats",
+        "tail": "Viêm",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi điều trị bệnh bằng kháng sinh, bác sĩ có thể chỉ định một số nhóm thuốc như:  Kháng sinh polymyxin, neomycin, penicillin, chloramphenicol, glycerine, sorbolene…: Điều trị các vấn đề viêm do vi khuẩn.",
+        "head": "Kháng sinh",
+        "head_type": "treatment",
+        "relation": "treats",
+        "tail": "Viêm do vi khuẩn",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi điều trị bệnh bằng kháng sinh, bác sĩ có thể chỉ định một số nhóm thuốc như:  Kháng sinh polymyxin, neomycin, penicillin, chloramphenicol, glycerine, sorbolene…: Điều trị các vấn đề viêm do vi khuẩn.",
+        "head": "Kháng sinh polymyxin",
+        "head_type": "treatment",
+        "relation": "relatedTo",
+        "tail": "Kháng sinh",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Khi điều trị bệnh bằng kháng sinh, bác sĩ có thể chỉ định một số nhóm thuốc như:  Kháng sinh polymyxin, neomycin, penicillin, chloramphenicol, glycerine, sorbolene…: Điều trị các vấn đề viêm do vi khuẩn.",
+        "head": "Neomycin",
+        "head_type": "treatment",
+        "relation": "relatedTo",
+        "tail": "Kháng sinh",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Khi điều trị bệnh bằng kháng sinh, bác sĩ có thể chỉ định một số nhóm thuốc như:  Kháng sinh polymyxin, neomycin, penicillin, chloramphenicol, glycerine, sorbolene…: Điều trị các vấn đề viêm do vi khuẩn.",
+        "head": "Penicillin",
+        "head_type": "treatment",
+        "relation": "relatedTo",
+        "tail": "Kháng sinh",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Khi điều trị bệnh bằng kháng sinh, bác sĩ có thể chỉ định một số nhóm thuốc như:  Kháng sinh polymyxin, neomycin, penicillin, chloramphenicol, glycerine, sorbolene…: Điều trị các vấn đề viêm do vi khuẩn.",
+        "head": "Chloramphenicol",
+        "head_type": "treatment",
+        "relation": "relatedTo",
+        "tail": "Kháng sinh",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Khi điều trị bệnh bằng kháng sinh, bác sĩ có thể chỉ định một số nhóm thuốc như:  Kháng sinh polymyxin, neomycin, penicillin, chloramphenicol, glycerine, sorbolene…: Điều trị các vấn đề viêm do vi khuẩn.",
+        "head": "Glycerine",
+        "head_type": "treatment",
+        "relation": "relatedTo",
+        "tail": "Kháng sinh",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Khi điều trị bệnh bằng kháng sinh, bác sĩ có thể chỉ định một số nhóm thuốc như:  Kháng sinh polymyxin, neomycin, penicillin, chloramphenicol, glycerine, sorbolene…: Điều trị các vấn đề viêm do vi khuẩn.",
+        "head": "Sorbolene",
+        "head_type": "treatment",
+        "relation": "relatedTo",
+        "tail": "Kháng sinh",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Những loại thuốc kháng virus như valacyclovir hoặc famciclovir: Có thể được chỉ định nếu tình trạng viêm bao quy đầu có tác nhân gây bệnh là virus.",
+        "head": "Valacyclovir",
+        "head_type": "treatment",
+        "relation": "relatedTo",
+        "tail": "Kháng virus",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Những loại thuốc kháng virus như valacyclovir hoặc famciclovir: Có thể được chỉ định nếu tình trạng viêm bao quy đầu có tác nhân gây bệnh là virus.",
+        "head": "Famciclovir",
+        "head_type": "treatment",
+        "relation": "relatedTo",
+        "tail": "Kháng virus",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Những loại thuốc kháng virus như valacyclovir hoặc famciclovir: Có thể được chỉ định nếu tình trạng viêm bao quy đầu có tác nhân gây bệnh là virus.",
+        "head": "Kháng virus",
+        "head_type": "treatment",
+        "relation": "treats",
+        "tail": "Viêm bao quy đầu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi dùng kháng sinh, người bệnh nên chú ý một số điều quan trọng nhằm hạn chế tối đa nguy cơ cơ thể gặp tình trạng kháng kháng sinh:  Đảm bảo dùng kháng sinh với liều lượng chính xác theo chỉ định từ bác sĩ, không nhiều và không ít hơn.",
+        "head": "Kháng kháng sinh",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Dùng kháng sinh không đúng liều",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Khi dùng kháng sinh, người bệnh nên chú ý một số điều quan trọng nhằm hạn chế tối đa nguy cơ cơ thể gặp tình trạng kháng kháng sinh:  Đảm bảo dùng kháng sinh với liều lượng chính xác theo chỉ định từ bác sĩ, không nhiều và không ít hơn.",
+        "head": "Kháng kháng sinh",
+        "head_type": "disease",
+        "relation": "preventedBy",
+        "tail": "Dùng kháng sinh đúng liều",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Đối với người bệnh viêm mạn tính và đã điều trị với thuốc nhưng không hiệu quả, bác sĩ có thể đề nghị phẫu thuật để loại bỏ bao da quy đầu.",
+        "head": "Viêm mạn tính",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "Phẫu thuật",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Đối với người bệnh viêm mạn tính và đã điều trị với thuốc nhưng không hiệu quả, bác sĩ có thể đề nghị phẫu thuật để loại bỏ bao da quy đầu.",
+        "head": "Phẫu thuật",
+        "head_type": "treatment",
+        "relation": "treats",
+        "tail": "Viêm mạn tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Hiện nay, những kỹ thuật cắt bao quy đầu khá đa dạng, thường được chỉ định dựa theo độ tuổi, điều kiện sức khỏe và mức độ viêm của mỗi người bệnh.",
+        "head": "Cắt bao quy đầu",
+        "head_type": "treatment",
+        "relation": "treats",
+        "tail": "Viêm",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Để giảm nguy cơ mắc bệnh viêm bao quy đầu, nam giới cần lưu ý:  Điều trị những yếu tố nguy cơ như hẹp da bao quy đầu, da bao quy đầu dài…",
+        "head": "Viêm bao quy đầu",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Hẹp da bao quy đầu",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Để giảm nguy cơ mắc bệnh viêm bao quy đầu, nam giới cần lưu ý:  Điều trị những yếu tố nguy cơ như hẹp da bao quy đầu, da bao quy đầu dài…",
+        "head": "Viêm bao quy đầu",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Da bao quy đầu dài",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Vệ sinh bộ phận sinh dục đúng cách mỗi ngày, đặc biệt là phần rãnh bao quy đầu.",
+        "head": "Vệ sinh bộ phận sinh dục",
+        "head_type": "lifestyle",
+        "relation": "preventedBy",
+        "tail": "Viêm bao quy đầu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Lưu ý tránh cọ rửa mạnh vì sẽ làm trầy xước, tổn thương bao quy đầu.",
+        "head": "Cọ rửa mạnh",
+        "head_type": "lifestyle",
+        "relation": "aggravatedBy",
+        "tail": "Viêm bao quy đầu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tránh dùng xà phòng, những chất tẩy rửa có độ kiềm quá cao để vệ sinh bộ phận sinh dục.",
+        "head": "Xà phòng",
+        "head_type": "food",
+        "relation": "aggravatedBy",
+        "tail": "Viêm bao quy đầu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tránh dùng xà phòng, những chất tẩy rửa có độ kiềm quá cao để vệ sinh bộ phận sinh dục.",
+        "head": "Chất tẩy rửa có độ kiềm quá cao",
+        "head_type": "food",
+        "relation": "aggravatedBy",
+        "tail": "Viêm bao quy đầu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tránh thủ dâm quá nhiều: Số lần thủ dâm mỗi tuần chỉ nên từ 1 đến 2.",
+        "head": "Thủ dâm quá nhiều",
+        "head_type": "lifestyle",
+        "relation": "aggravatedBy",
+        "tail": "Viêm bao quy đầu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Điều quan trọng là sau khi thủ dâm, nam giới không bị mệt mỏi, sa sút sức khỏe hoặc ảnh hưởng tới tinh thần trong học tập hoặc làm việc.",
+        "head": "Thủ dâm",
+        "head_type": "lifestyle",
+        "relation": "affects",
+        "tail": "Sức khỏe",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Ngoài ra, cần lưu ý vệ sinh kỹ những vật dụng thủ dâm sau mỗi lần dùng.",
+        "head": "Vệ sinh vật dụng thủ dâm",
+        "head_type": "lifestyle",
+        "relation": "preventedBy",
+        "tail": "Viêm bao quy đầu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Ưu tiên chọn những loại quần có chất liệu thoáng mát, không bó sát vùng kín để tránh cọ xát vào vùng bao quy đầu, gây bí bách và khó chịu.",
+        "head": "Quần bó sát",
+        "head_type": "lifestyle",
+        "relation": "aggravatedBy",
+        "tail": "Viêm bao quy đầu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Trung tâm Tiết niệu Thận học, Khoa Nam học – Tiết niệu của Hệ thống BVĐK Tâm Anh quy tụ đội ngũ các chuyên gia đầu ngành, Nội khoa và Ngoại khoa, giỏi chuyên môn, tận tâm.",
+        "head": "Trung tâm Tiết niệu Thận học",
+        "head_type": "organ",
+        "relation": "locatedIn",
+        "tail": "Hệ thống BVĐK Tâm Anh",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Trung tâm Tiết niệu Thận học, Khoa Nam học – Tiết niệu của Hệ thống BVĐK Tâm Anh quy tụ đội ngũ các chuyên gia đầu ngành, Nội khoa và Ngoại khoa, giỏi chuyên môn, tận tâm.",
+        "head": "Khoa Nam học – Tiết niệu",
+        "head_type": "organ",
+        "relation": "locatedIn",
+        "tail": "Hệ thống BVĐK Tâm Anh",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Trung tâm Tiết niệu Thận học, Khoa Nam học – Tiết niệu của Hệ thống BVĐK Tâm Anh quy tụ đội ngũ các chuyên gia đầu ngành, Nội khoa và Ngoại khoa, giỏi chuyên môn, tận tâm.",
+        "head": "Chuyên gia",
+        "head_type": "treatment",
+        "relation": "treats",
+        "tail": "Bệnh lý đường tiết niệu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nhà giáo nhân dân GS.TS.BS Trần Quán Anh, Thầy thuốc ưu tú PGS.TS.BS Vũ Lê Chuyên là những cây đại thụ trong ngành Tiết niệu Thận học Việt Nam.",
+        "head": "GS.TS.BS Trần Quán Anh",
+        "head_type": "treatment",
+        "relation": "relatedTo",
+        "tail": "Chuyên gia",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Nhà giáo nhân dân GS.TS.BS Trần Quán Anh, Thầy thuốc ưu tú PGS.TS.BS Vũ Lê Chuyên là những cây đại thụ trong ngành Tiết niệu Thận học Việt Nam.",
+        "head": "PGS.TS.BS Vũ Lê Chuyên",
+        "head_type": "treatment",
+        "relation": "relatedTo",
+        "tail": "Chuyên gia",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Cùng với các tên tuổi Thầy thuốc ưu tú TS.BS Nguyễn Thế Trường Thầy thuốc ưu tú BS.CKII Tạ Phương Dung, TS.BS Nguyễn Hoàng Đức, TS.BS Từ Thành Trí Dũng, ThS.BS.CKI Nguyễn Đức Nhuận, BS.CKII Nguyễn Lê Tuyên, ThS.BS Nguyễn Tân Cương, BS.CKII Đinh Cẩm Tú, BS.CKII Ngô Đồng Dũng, BS.CKII Võ Thị Kim Thanh ThS.BS Tạ Ngọc Thạch, BS.CKI Phan Trường Nam…",
+        "head": "TS.BS Nguyễn Thế Trường",
+        "head_type": "treatment",
+        "relation": "relatedTo",
+        "tail": "Chuyên gia",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Cùng với các tên tuổi Thầy thuốc ưu tú TS.BS Nguyễn Thế Trường Thầy thuốc ưu tú BS.CKII Tạ Phương Dung, TS.BS Nguyễn Hoàng Đức, TS.BS Từ Thành Trí Dũng, ThS.BS.CKI Nguyễn Đức Nhuận, BS.CKII Nguyễn Lê Tuyên, ThS.BS Nguyễn Tân Cương, BS.CKII Đinh Cẩm Tú, BS.CKII Ngô Đồng Dũng, BS.CKII Võ Thị Kim Thanh ThS.BS Tạ Ngọc Thạch, BS.CKI Phan Trường Nam…",
+        "head": "BS.CKII Tạ Phương Dung",
+        "head_type": "treatment",
+        "relation": "relatedTo",
+        "tail": "Chuyên gia",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Cùng với các tên tuổi Thầy thuốc ưu tú TS.BS Nguyễn Thế Trường Thầy thuốc ưu tú BS.CKII Tạ Phương Dung, TS.BS Nguyễn Hoàng Đức, TS.BS Từ Thành Trí Dũng, ThS.BS.CKI Nguyễn Đức Nhuận, BS.CKII Nguyễn Lê Tuyên, ThS.BS Nguyễn Tân Cương, BS.CKII Đinh Cẩm Tú, BS.CKII Ngô Đồng Dũng, BS.CKII Võ Thị Kim Thanh ThS.BS Tạ Ngọc Thạch, BS.CKI Phan Trường Nam…",
+        "head": "TS.BS Nguyễn Hoàng Đức",
+        "head_type": "treatment",
+        "relation": "relatedTo",
+        "tail": "Chuyên gia",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Cùng với các tên tuổi Thầy thuốc ưu tú TS.BS Nguyễn Thế Trường Thầy thuốc ưu tú BS.CKII Tạ Phương Dung, TS.BS Nguyễn Hoàng Đức, TS.BS Từ Thành Trí Dũng, ThS.BS.CKI Nguyễn Đức Nhuận, BS.CKII Nguyễn Lê Tuyên, ThS.BS Nguyễn Tân Cương, BS.CKII Đinh Cẩm Tú, BS.CKII Ngô Đồng Dũng, BS.CKII Võ Thị Kim Thanh ThS.BS Tạ Ngọc Thạch, BS.CKI Phan Trường Nam…",
+        "head": "TS.BS Từ Thành Trí Dũng",
+        "head_type": "treatment",
+        "relation": "relatedTo",
+        "tail": "Chuyên gia",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Cùng với các tên tuổi Thầy thuốc ưu tú TS.BS Nguyễn Thế Trường Thầy thuốc ưu tú BS.CKII Tạ Phương Dung, TS.BS Nguyễn Hoàng Đức, TS.BS Từ Thành Trí Dũng, ThS.BS.CKI Nguyễn Đức Nhuận, BS.CKII Nguyễn Lê Tuyên, ThS.BS Nguyễn Tân Cương, BS.CKII Đinh Cẩm Tú, BS.CKII Ngô Đồng Dũng, BS.CKII Võ Thị Kim Thanh ThS.BS Tạ Ngọc Thạch, BS.CKI Phan Trường Nam…",
+        "head": "ThS.BS.CKI Nguyễn Đức Nhuận",
+        "head_type": "treatment",
+        "relation": "relatedTo",
+        "tail": "Chuyên gia",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Cùng với các tên tuổi Thầy thuốc ưu tú TS.BS Nguyễn Thế Trường Thầy thuốc ưu tú BS.CKII Tạ Phương Dung, TS.BS Nguyễn Hoàng Đức, TS.BS Từ Thành Trí Dũng, ThS.BS.CKI Nguyễn Đức Nhuận, BS.CKII Nguyễn Lê Tuyên, ThS.BS Nguyễn Tân Cương, BS.CKII Đinh Cẩm Tú, BS.CKII Ngô Đồng Dũng, BS.CKII Võ Thị Kim Thanh ThS.BS Tạ Ngọc Thạch, BS.CKI Phan Trường Nam…",
+        "head": "BS.CKII Nguyễn Lê Tuyên",
+        "head_type": "treatment",
+        "relation": "relatedTo",
+        "tail": "Chuyên gia",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Cùng với các tên tuổi Thầy thuốc ưu tú TS.BS Nguyễn Thế Trường Thầy thuốc ưu tú BS.CKII Tạ Phương Dung, TS.BS Nguyễn Hoàng Đức, TS.BS Từ Thành Trí Dũng, ThS.BS.CKI Nguyễn Đức Nhuận, BS.CKII Nguyễn Lê Tuyên, ThS.BS Nguyễn Tân Cương, BS.CKII Đinh Cẩm Tú, BS.CKII Ngô Đồng Dũng, BS.CKII Võ Thị Kim Thanh ThS.BS Tạ Ngọc Thạch, BS.CKI Phan Trường Nam…",
+        "head": "ThS.BS Nguyễn Tân Cương",
+        "head_type": "treatment",
+        "relation": "relatedTo",
+        "tail": "Chuyên gia",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Cùng với các tên tuổi Thầy thuốc ưu tú TS.BS Nguyễn Thế Trường Thầy thuốc ưu tú BS.CKII Tạ Phương Dung, TS.BS Nguyễn Hoàng Đức, TS.BS Từ Thành Trí Dũng, ThS.BS.CKI Nguyễn Đức Nhuận, BS.CKII Nguyễn Lê Tuyên, ThS.BS Nguyễn Tân Cương, BS.CKII Đinh Cẩm Tú, BS.CKII Ngô Đồng Dũng, BS.CKII Võ Thị Kim Thanh ThS.BS Tạ Ngọc Thạch, BS.CKI Phan Trường Nam…",
+        "head": "BS.CKII Đinh Cẩm Tú",
+        "head_type": "treatment",
+        "relation": "relatedTo",
+        "tail": "Chuyên gia",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Cùng với các tên tuổi Thầy thuốc ưu tú TS.BS Nguyễn Thế Trường Thầy thuốc ưu tú BS.CKII Tạ Phương Dung, TS.BS Nguyễn Hoàng Đức, TS.BS Từ Thành Trí Dũng, ThS.BS.CKI Nguyễn Đức Nhuận, BS.CKII Nguyễn Lê Tuyên, ThS.BS Nguyễn Tân Cương, BS.CKII Đinh Cẩm Tú, BS.CKII Ngô Đồng Dũng, BS.CKII Võ Thị Kim Thanh ThS.BS Tạ Ngọc Thạch, BS.CKI Phan Trường Nam…",
+        "head": "BS.CKII Ngô Đồng Dũng",
+        "head_type": "treatment",
+        "relation": "relatedTo",
+        "tail": "Chuyên gia",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Cùng với các tên tuổi Thầy thuốc ưu tú TS.BS Nguyễn Thế Trường Thầy thuốc ưu tú BS.CKII Tạ Phương Dung, TS.BS Nguyễn Hoàng Đức, TS.BS Từ Thành Trí Dũng, ThS.BS.CKI Nguyễn Đức Nhuận, BS.CKII Nguyễn Lê Tuyên, ThS.BS Nguyễn Tân Cương, BS.CKII Đinh Cẩm Tú, BS.CKII Ngô Đồng Dũng, BS.CKII Võ Thị Kim Thanh ThS.BS Tạ Ngọc Thạch, BS.CKI Phan Trường Nam…",
+        "head": "BS.CKII Võ Thị Kim Thanh",
+        "head_type": "treatment",
+        "relation": "relatedTo",
+        "tail": "Chuyên gia",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Cùng với các tên tuổi Thầy thuốc ưu tú TS.BS Nguyễn Thế Trường Thầy thuốc ưu tú BS.CKII Tạ Phương Dung, TS.BS Nguyễn Hoàng Đức, TS.BS Từ Thành Trí Dũng, ThS.BS.CKI Nguyễn Đức Nhuận, BS.CKII Nguyễn Lê Tuyên, ThS.BS Nguyễn Tân Cương, BS.CKII Đinh Cẩm Tú, BS.CKII Ngô Đồng Dũng, BS.CKII Võ Thị Kim Thanh ThS.BS Tạ Ngọc Thạch, BS.CKI Phan Trường Nam…",
+        "head": "ThS.BS Tạ Ngọc Thạch",
+        "head_type": "treatment",
+        "relation": "relatedTo",
+        "tail": "Chuyên gia",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Cùng với các tên tuổi Thầy thuốc ưu tú TS.BS Nguyễn Thế Trường Thầy thuốc ưu tú BS.CKII Tạ Phương Dung, TS.BS Nguyễn Hoàng Đức, TS.BS Từ Thành Trí Dũng, ThS.BS.CKI Nguyễn Đức Nhuận, BS.CKII Nguyễn Lê Tuyên, ThS.BS Nguyễn Tân Cương, BS.CKII Đinh Cẩm Tú, BS.CKII Ngô Đồng Dũng, BS.CKII Võ Thị Kim Thanh ThS.BS Tạ Ngọc Thạch, BS.CKI Phan Trường Nam…",
+        "head": "BS.CKI Phan Trường Nam",
+        "head_type": "treatment",
+        "relation": "relatedTo",
+        "tail": "Chuyên gia",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Các chuyên gia, bác sĩ của Trung tâm luôn tự tin làm chủ những kỹ thuật mới nhất, phát hiện sớm và điều trị hiệu quả các bệnh lý về thận, đường tiết niệu, giúp người bệnh rút ngắn thời gian nằm viện, hạn chế nguy cơ tái phát, nâng cao chất lượng cuộc sống.",
+        "head": "Chuyên gia",
+        "head_type": "treatment",
+        "relation": "treats",
+        "tail": "Bệnh lý về thận",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các chuyên gia, bác sĩ của Trung tâm luôn tự tin làm chủ những kỹ thuật mới nhất, phát hiện sớm và điều trị hiệu quả các bệnh lý về thận, đường tiết niệu, giúp người bệnh rút ngắn thời gian nằm viện, hạn chế nguy cơ tái phát, nâng cao chất lượng cuộc sống.",
+        "head": "Chuyên gia",
+        "head_type": "treatment",
+        "relation": "treats",
+        "tail": "Bệnh lý đường tiết niệu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Với hệ thống máy móc, trang thiết bị hiện đại hàng đầu trong nước và khu vực; Phòng mổ đạt tiêu chuẩn quốc tế; Cùng với khu nội trú và dịch vụ cao cấp 5 sao… Trung tâm Tiết niệu Thận học nổi bật với các dịch vụ thăm khám, tầm soát và điều trị tất cả các bệnh lý đường tiết niệu.",
+        "head": "Trung tâm Tiết niệu Thận học",
+        "head_type": "organ",
+        "relation": "treats",
+        "tail": "Bệnh lý đường tiết niệu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Từ các thường gặp cho đến các cuộc đại phẫu thuật kỹ thuật cao.",
+        "head": "Phẫu thuật",
+        "head_type": "treatment",
+        "relation": "treats",
+        "tail": "Bệnh lý đường tiết niệu",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Có thể kể đến phẫu thuật nội soi sỏi thận, ghép thận, cắt bướu bảo tồn nhu mô thận; cắt thận tận gốc; cắt tuyến tiền liệt tận gốc; cắt toàn bộ bàng quang tạo hình bàng quang bằng ruột non; cắt tuyến thượng thận; tạo hình các dị tật đường tiết niệu…",
+        "head": "Phẫu thuật nội soi sỏi thận",
+        "head_type": "treatment",
+        "relation": "relatedTo",
+        "tail": "Phẫu thuật",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Có thể kể đến phẫu thuật nội soi sỏi thận, ghép thận, cắt bướu bảo tồn nhu mô thận; cắt thận tận gốc; cắt tuyến tiền liệt tận gốc; cắt toàn bộ bàng quang tạo hình bàng quang bằng ruột non; cắt tuyến thượng thận; tạo hình các dị tật đường tiết niệu…",
+        "head": "Ghép thận",
+        "head_type": "treatment",
+        "relation": "relatedTo",
+        "tail": "Phẫu thuật",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Có thể kể đến phẫu thuật nội soi sỏi thận, ghép thận, cắt bướu bảo tồn nhu mô thận; cắt thận tận gốc; cắt tuyến tiền liệt tận gốc; cắt toàn bộ bàng quang tạo hình bàng quang bằng ruột non; cắt tuyến thượng thận; tạo hình các dị tật đường tiết niệu…",
+        "head": "Cắt bướu bảo tồn nhu mô thận",
+        "head_type": "treatment",
+        "relation": "relatedTo",
+        "tail": "Phẫu thuật",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Có thể kể đến phẫu thuật nội soi sỏi thận, ghép thận, cắt bướu bảo tồn nhu mô thận; cắt thận tận gốc; cắt tuyến tiền liệt tận gốc; cắt toàn bộ bàng quang tạo hình bàng quang bằng ruột non; cắt tuyến thượng thận; tạo hình các dị tật đường tiết niệu…",
+        "head": "Cắt thận tận gốc",
+        "head_type": "treatment",
+        "relation": "relatedTo",
+        "tail": "Phẫu thuật",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Có thể kể đến phẫu thuật nội soi sỏi thận, ghép thận, cắt bướu bảo tồn nhu mô thận; cắt thận tận gốc; cắt tuyến tiền liệt tận gốc; cắt toàn bộ bàng quang tạo hình bàng quang bằng ruột non; cắt tuyến thượng thận; tạo hình các dị tật đường tiết niệu…",
+        "head": "Cắt tuyến tiền liệt tận gốc",
+        "head_type": "treatment",
+        "relation": "relatedTo",
+        "tail": "Phẫu thuật",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Có thể kể đến phẫu thuật nội soi sỏi thận, ghép thận, cắt bướu bảo tồn nhu mô thận; cắt thận tận gốc; cắt tuyến tiền liệt tận gốc; cắt toàn bộ bàng quang tạo hình bàng quang bằng ruột non; cắt tuyến thượng thận; tạo hình các dị tật đường tiết niệu…",
+        "head": "Cắt toàn bộ bàng quang tạo hình bàng quang bằng ruột non",
+        "head_type": "treatment",
+        "relation": "relatedTo",
+        "tail": "Phẫu thuật",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Có thể kể đến phẫu thuật nội soi sỏi thận, ghép thận, cắt bướu bảo tồn nhu mô thận; cắt thận tận gốc; cắt tuyến tiền liệt tận gốc; cắt toàn bộ bàng quang tạo hình bàng quang bằng ruột non; cắt tuyến thượng thận; tạo hình các dị tật đường tiết niệu…",
+        "head": "Cắt tuyến thượng thận",
+        "head_type": "treatment",
+        "relation": "relatedTo",
+        "tail": "Phẫu thuật",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Có thể kể đến phẫu thuật nội soi sỏi thận, ghép thận, cắt bướu bảo tồn nhu mô thận; cắt thận tận gốc; cắt tuyến tiền liệt tận gốc; cắt toàn bộ bàng quang tạo hình bàng quang bằng ruột non; cắt tuyến thượng thận; tạo hình các dị tật đường tiết niệu…",
+        "head": "Tạo hình các dị tật đường tiết niệu",
+        "head_type": "treatment",
+        "relation": "relatedTo",
+        "tail": "Phẫu thuật",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Chẩn đoán - điều trị nội khoa và ngoại khoa tất cả các bệnh lý.",
+        "head": "Chẩn đoán",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "Bệnh lý",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Chẩn đoán - điều trị nội khoa và ngoại khoa tất cả các bệnh lý.",
+        "head": "Điều trị nội khoa",
+        "head_type": "treatment",
+        "relation": "treats",
+        "tail": "Bệnh lý",
+        "tail_type": "disease"
+    }
+]

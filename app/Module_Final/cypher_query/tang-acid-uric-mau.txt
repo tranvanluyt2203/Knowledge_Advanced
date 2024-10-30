@@ -1,0 +1,885 @@
+
+MERGE (o1:symptom {id: 'tăng_acid_uric_máu_symptom'})
+MERGE (o2:disease {id: 'bệnh_gout_disease'})
+MERGE (o1)-[r0:isSymptomOf]->(o2)
+SET r0.text = 'Tăng acid uric máu là một dấu hiệu cảnh báo điển hình của các bệnh Gout và thận.'
+
+MERGE (o1:symptom {id: 'tăng_acid_uric_máu_symptom'})
+MERGE (o2:disease {id: 'bệnh_thận_disease'})
+MERGE (o1)-[r1:isSymptomOf]->(o2)
+SET r1.text = 'Tăng acid uric máu là một dấu hiệu cảnh báo điển hình của các bệnh Gout và thận.'
+
+MERGE (o1:symptom {id: 'tình_trạng_acid_uric_cao_trong_máu_symptom'})
+MERGE (o2:cause {id: 'tình_trạng_cơ_thể_của_người_bệnh_cause'})
+MERGE (o1)-[r2:causedBy]->(o2)
+SET r2.text = 'Tình trạng acid uric cao trong máu có thể do tình trạng cơ thể của người bệnh hoặc do thực phẩm.'
+
+MERGE (o1:symptom {id: 'tình_trạng_acid_uric_cao_trong_máu_symptom'})
+MERGE (o2:food {id: 'thực_phẩm_food'})
+MERGE (o1)-[r3:causedBy]->(o2)
+SET r3.text = 'Tình trạng acid uric cao trong máu có thể do tình trạng cơ thể của người bệnh hoặc do thực phẩm.'
+
+MERGE (o1:symptom {id: 'acid_uric_tăng_cao_symptom'})
+MERGE (o2:lifestyle {id: 'thói_quen_sống_không_lành_mạnh_lifestyle'})
+MERGE (o1)-[r4:associatedWith]->(o2)
+SET r4.text = 'Acid uric tăng cao thường gặp ở những người có thói quen sống không lành mạnh và chế độ dinh dưỡng không khoa học.'
+
+MERGE (o1:symptom {id: 'acid_uric_tăng_cao_symptom'})
+MERGE (o2:lifestyle {id: 'chế_độ_dinh_dưỡng_không_khoa_học_lifestyle'})
+MERGE (o1)-[r5:associatedWith]->(o2)
+SET r5.text = 'Acid uric tăng cao thường gặp ở những người có thói quen sống không lành mạnh và chế độ dinh dưỡng không khoa học.'
+
+MERGE (o1:symptom {id: 'tăng_acid_uric_máu_symptom'})
+MERGE (o2:cause {id: 'phân_hủy_purin_quá_mức_cause'})
+MERGE (o1)-[r6:causedBy]->(o2)
+SET r6.text = 'Tăng acid uric máu là tình trạng chỉ số acid uric trong máu cao bất thường, xảy ra khi cơ thể phân hủy purin quá mức hoặc không đào thải được acid uric ra khỏi cơ thể.'
+
+MERGE (o1:symptom {id: 'tăng_acid_uric_máu_symptom'})
+MERGE (o2:cause {id: 'không_đào_thải_được_acid_uric_ra_khỏi_cơ_thể_cause'})
+MERGE (o1)-[r7:causedBy]->(o2)
+SET r7.text = 'Tăng acid uric máu là tình trạng chỉ số acid uric trong máu cao bất thường, xảy ra khi cơ thể phân hủy purin quá mức hoặc không đào thải được acid uric ra khỏi cơ thể.'
+
+MERGE (o1:symptom {id: 'tăng_acid_uric_symptom'})
+MERGE (o2:organ {id: 'xương_organ'})
+MERGE (o1)-[r8:affects]->(o2)
+SET r8.text = 'Tăng acid uric là một tình trạng sức khỏe báo động, có thể dẫn đến tổn thương xương, khớp vĩnh viễn, lắng đọng tophi dưới da, cũng như tăng nguy cơ bệnh lý tim và thận.'
+
+MERGE (o1:symptom {id: 'tăng_acid_uric_symptom'})
+MERGE (o2:organ {id: 'khớp_organ'})
+MERGE (o1)-[r9:affects]->(o2)
+SET r9.text = 'Tăng acid uric là một tình trạng sức khỏe báo động, có thể dẫn đến tổn thương xương, khớp vĩnh viễn, lắng đọng tophi dưới da, cũng như tăng nguy cơ bệnh lý tim và thận.'
+
+MERGE (o1:symptom {id: 'tăng_acid_uric_symptom'})
+MERGE (o2:organ {id: 'da_organ'})
+MERGE (o1)-[r10:affects]->(o2)
+SET r10.text = 'Tăng acid uric là một tình trạng sức khỏe báo động, có thể dẫn đến tổn thương xương, khớp vĩnh viễn, lắng đọng tophi dưới da, cũng như tăng nguy cơ bệnh lý tim và thận.'
+
+MERGE (o1:symptom {id: 'tăng_acid_uric_symptom'})
+MERGE (o2:organ {id: 'tim_organ'})
+MERGE (o1)-[r11:affects]->(o2)
+SET r11.text = 'Tăng acid uric là một tình trạng sức khỏe báo động, có thể dẫn đến tổn thương xương, khớp vĩnh viễn, lắng đọng tophi dưới da, cũng như tăng nguy cơ bệnh lý tim và thận.'
+
+MERGE (o1:symptom {id: 'tăng_acid_uric_symptom'})
+MERGE (o2:organ {id: 'thận_organ'})
+MERGE (o1)-[r12:affects]->(o2)
+SET r12.text = 'Tăng acid uric là một tình trạng sức khỏe báo động, có thể dẫn đến tổn thương xương, khớp vĩnh viễn, lắng đọng tophi dưới da, cũng như tăng nguy cơ bệnh lý tim và thận.'
+
+MERGE (o1:symptom {id: 'acid_uric_symptom'})
+MERGE (o2:organ {id: 'máu_organ'})
+MERGE (o1)-[r13:locatedIn]->(o2)
+SET r13.text = '(1) Acid uric là một chất chuyển hóa có trong máu, là sản phẩm từ quá trình chuyển hóa purin trong cơ thể người và được đào thải chủ yếu ra khỏi thận (80%) và một phần qua đường ruột (20%).'
+
+MERGE (o1:symptom {id: 'acid_uric_symptom'})
+MERGE (o2:cause {id: 'chuyển_hóa_purin_cause'})
+MERGE (o1)-[r14:causedBy]->(o2)
+SET r14.text = '(1) Acid uric là một chất chuyển hóa có trong máu, là sản phẩm từ quá trình chuyển hóa purin trong cơ thể người và được đào thải chủ yếu ra khỏi thận (80%) và một phần qua đường ruột (20%).'
+
+MERGE (o1:symptom {id: 'acid_uric_symptom'})
+MERGE (o2:organ {id: 'thận_organ'})
+MERGE (o1)-[r15:relatedTo]->(o2)
+SET r15.text = '(1) Acid uric là một chất chuyển hóa có trong máu, là sản phẩm từ quá trình chuyển hóa purin trong cơ thể người và được đào thải chủ yếu ra khỏi thận (80%) và một phần qua đường ruột (20%).'
+
+MERGE (o1:symptom {id: 'acid_uric_symptom'})
+MERGE (o2:organ {id: 'ruột_organ'})
+MERGE (o1)-[r16:relatedTo]->(o2)
+SET r16.text = '(1) Acid uric là một chất chuyển hóa có trong máu, là sản phẩm từ quá trình chuyển hóa purin trong cơ thể người và được đào thải chủ yếu ra khỏi thận (80%) và một phần qua đường ruột (20%).'
+
+MERGE (o1:symptom {id: 'nồng_độ_acid_uric_trong_máu_symptom'})
+MERGE (o2:lifestyle {id: 'chế_độ_dinh_dưỡng_lifestyle'})
+MERGE (o1)-[r17:affectedBy]->(o2)
+SET r17.text = 'Nồng độ acid uric trong máu cũng sẽ tăng giảm tùy theo chế độ dinh dưỡng.'
+
+MERGE (o1:symptom {id: 'nồng_độ_acid_uric_symptom'})
+MERGE (o2:food {id: 'thịt_đỏ_food'})
+MERGE (o1)-[r18:aggravatedBy]->(o2)
+SET r18.text = 'Nồng độ acid uric sẽ gia tăng khi tăng tiêu thụ lượng lớn purin vào cơ thể như các loại thịt đỏ, hải sản có vỏ, rượu bia&#8230;'
+
+MERGE (o1:symptom {id: 'nồng_độ_acid_uric_symptom'})
+MERGE (o2:food {id: 'hải_sản_có_vỏ_food'})
+MERGE (o1)-[r19:aggravatedBy]->(o2)
+SET r19.text = 'Nồng độ acid uric sẽ gia tăng khi tăng tiêu thụ lượng lớn purin vào cơ thể như các loại thịt đỏ, hải sản có vỏ, rượu bia&#8230;'
+
+MERGE (o1:symptom {id: 'nồng_độ_acid_uric_symptom'})
+MERGE (o2:food {id: 'rượu_bia_food'})
+MERGE (o1)-[r20:aggravatedBy]->(o2)
+SET r20.text = 'Nồng độ acid uric sẽ gia tăng khi tăng tiêu thụ lượng lớn purin vào cơ thể như các loại thịt đỏ, hải sản có vỏ, rượu bia&#8230;'
+
+MERGE (o1:symptom {id: 'nồng_độ_acid_uric_máu_symptom'})
+MERGE (o2:cause {id: 'tổn_thương_thận_cause'})
+MERGE (o1)-[r21:aggravatedBy]->(o2)
+SET r21.text = 'Ngoài ra, nồng độ acid uric máu cũng tăng trong những trường hợp tổn thương thận như suy thận, làm giảm thải trừ acid uric ra khỏi cơ thể.'
+
+MERGE (o1:symptom {id: 'nồng_độ_acid_uric_máu_symptom'})
+MERGE (o2:disease {id: 'suy_thận_disease'})
+MERGE (o1)-[r22:aggravatedBy]->(o2)
+SET r22.text = 'Ngoài ra, nồng độ acid uric máu cũng tăng trong những trường hợp tổn thương thận như suy thận, làm giảm thải trừ acid uric ra khỏi cơ thể.'
+
+MERGE (o1:disease {id: 'bệnh_lý_đột_biến_gen_disease'})
+MERGE (o2:cause {id: 'chuyển_hóa_purin_cause'})
+MERGE (o1)-[r23:affects]->(o2)
+SET r23.text = 'Những bệnh lý đột biến gen gây ảnh hưởng đến quá trình chuyển hóa purin và đào thải acid uric cũng gây nên tình trạng này.'
+
+MERGE (o1:disease {id: 'bệnh_lý_đột_biến_gen_disease'})
+MERGE (o2:cause {id: 'đào_thải_acid_uric_cause'})
+MERGE (o1)-[r24:affects]->(o2)
+SET r24.text = 'Những bệnh lý đột biến gen gây ảnh hưởng đến quá trình chuyển hóa purin và đào thải acid uric cũng gây nên tình trạng này.'
+
+MERGE (o1:symptom {id: 'tăng_acid_uric_máu_symptom'})
+MERGE (o2:organ {id: 'mô_khớp_organ'})
+MERGE (o1)-[r25:affects]->(o2)
+SET r25.text = 'Tăng acid uric máu trên ngưỡng bão hòa của acid uric sẽ gây ra lắng đọng các tinh thể MSU (monosodium urate) ở các mô như mô khớp, mô dưới da, ống thận, mạch máu&#8230;'
+
+MERGE (o1:symptom {id: 'tăng_acid_uric_máu_symptom'})
+MERGE (o2:organ {id: 'mô_dưới_da_organ'})
+MERGE (o1)-[r26:affects]->(o2)
+SET r26.text = 'Tăng acid uric máu trên ngưỡng bão hòa của acid uric sẽ gây ra lắng đọng các tinh thể MSU (monosodium urate) ở các mô như mô khớp, mô dưới da, ống thận, mạch máu&#8230;'
+
+MERGE (o1:symptom {id: 'tăng_acid_uric_máu_symptom'})
+MERGE (o2:organ {id: 'ống_thận_organ'})
+MERGE (o1)-[r27:affects]->(o2)
+SET r27.text = 'Tăng acid uric máu trên ngưỡng bão hòa của acid uric sẽ gây ra lắng đọng các tinh thể MSU (monosodium urate) ở các mô như mô khớp, mô dưới da, ống thận, mạch máu&#8230;'
+
+MERGE (o1:symptom {id: 'tăng_acid_uric_máu_symptom'})
+MERGE (o2:organ {id: 'mạch_máu_organ'})
+MERGE (o1)-[r28:affects]->(o2)
+SET r28.text = 'Tăng acid uric máu trên ngưỡng bão hòa của acid uric sẽ gây ra lắng đọng các tinh thể MSU (monosodium urate) ở các mô như mô khớp, mô dưới da, ống thận, mạch máu&#8230;'
+
+MERGE (o1:disease {id: 'bệnh_gout_disease'})
+MERGE (o2:symptom {id: 'tăng_acid_uric_kéo_dài_symptom'})
+MERGE (o1)-[r29:isSymptomOf]->(o2)
+SET r29.text = 'Bệnh gout là biểu hiện của tăng acid uric kéo dài.'
+
+MERGE (o1:cause {id: 'lắng_đọng_và_hình_thành_tinh_thể_msu_cause'})
+MERGE (o2:disease {id: 'viêm_khớp_disease'})
+MERGE (o1)-[r30:causes]->(o2)
+SET r30.text = 'Tình trạng lắng đọng và hình thành tinh thể MSU có thể dẫn đến tình trạng viêm khớp với các biểu hiện như sưng nóng đỏ đau các khớp.'
+
+MERGE (o1:disease {id: 'viêm_khớp_disease'})
+MERGE (o2:symptom {id: 'sưng_nóng_đỏ_đau_các_khớp_symptom'})
+MERGE (o1)-[r31:isSymptomOf]->(o2)
+SET r31.text = 'Tình trạng lắng đọng và hình thành tinh thể MSU có thể dẫn đến tình trạng viêm khớp với các biểu hiện như sưng nóng đỏ đau các khớp.'
+
+MERGE (o1:cause {id: 'lắng_đọng_ở_thận_cause'})
+MERGE (o2:disease {id: 'sỏi_thận_disease'})
+MERGE (o1)-[r32:causes]->(o2)
+SET r32.text = 'Ngoài ra, lắng đọng ở thận có thể hình thành sỏi thận.'
+
+MERGE (o1:test {id: 'nồng_độ_acid_uric_bình_thường_test'})
+MERGE (o2:symptom {id: 'acid_uric_symptom'})
+MERGE (o1)-[r33:relatedTo]->(o2)
+SET r33.text = 'Theo các chuyên gia y tế từ tổ chức Medical News Today, nồng độ acid uric bình thường ở người dao động từ 1,5-7 mg/dl.'
+
+MERGE (o1:symptom {id: 'lượng_acid_uric_symptom'})
+MERGE (o2:cause {id: 'nam_giới_cause'})
+MERGE (o1)-[r34:relatedTo]->(o2)
+SET r34.text = 'Lượng acid uric bên trong cơ thể nam giới sẽ cao hơn nữ giới khoảng 1 mg/dl.'
+
+MERGE (o1:symptom {id: 'lượng_acid_uric_symptom'})
+MERGE (o2:cause {id: 'nữ_giới_cause'})
+MERGE (o1)-[r35:relatedTo]->(o2)
+SET r35.text = 'Lượng acid uric bên trong cơ thể nam giới sẽ cao hơn nữ giới khoảng 1 mg/dl.'
+
+MERGE (o1:symptom {id: 'acid_uric_máu_tăng_symptom'})
+MERGE (o2:cause {id: 'nam_cause'})
+MERGE (o1)-[r36:relatedTo]->(o2)
+SET r36.text = 'Do đó, một người có tình trạng acid uric máu tăng khi nồng độ của hợp chất này cao hơn 7 mg/dl đối với nam và 6 mg/dl đối với nữ.'
+
+MERGE (o1:cause {id: 'hàm_lượng_purin_nạp_vào_trong_cơ_thể_cao_cause'})
+MERGE (o2:disease {id: 'acid_uric_cao_disease'})
+MERGE (o1)-[r37:causedBy]->(o2)
+SET r37.text = 'Nguyên nhân khiến acid uric cao chủ yếu đến từ hàm lượng purin nạp vào trong cơ thể cao hơn mức cần thiết.'
+
+MERGE (o1:cause {id: 'di_truyền_cause'})
+MERGE (o2:disease {id: 'acid_uric_cao_disease'})
+MERGE (o1)-[r38:causedBy]->(o2)
+SET r38.text = 'Ngoài ra, các yếu tố như di truyền, môi trường, chế độ dinh dưỡng và thói quen sống là những lý do có thể ảnh hưởng đến sự tăng giảm của acid uric trong cơ thể người.'
+
+MERGE (o1:cause {id: 'môi_trường_cause'})
+MERGE (o2:disease {id: 'acid_uric_cao_disease'})
+MERGE (o1)-[r39:causedBy]->(o2)
+SET r39.text = 'Ngoài ra, các yếu tố như di truyền, môi trường, chế độ dinh dưỡng và thói quen sống là những lý do có thể ảnh hưởng đến sự tăng giảm của acid uric trong cơ thể người.'
+
+MERGE (o1:lifestyle {id: 'chế_độ_dinh_dưỡng_lifestyle'})
+MERGE (o2:disease {id: 'acid_uric_cao_disease'})
+MERGE (o1)-[r40:causedBy]->(o2)
+SET r40.text = 'Ngoài ra, các yếu tố như di truyền, môi trường, chế độ dinh dưỡng và thói quen sống là những lý do có thể ảnh hưởng đến sự tăng giảm của acid uric trong cơ thể người.'
+
+MERGE (o1:lifestyle {id: 'thói_quen_sống_lifestyle'})
+MERGE (o2:disease {id: 'acid_uric_cao_disease'})
+MERGE (o1)-[r41:causedBy]->(o2)
+SET r41.text = 'Ngoài ra, các yếu tố như di truyền, môi trường, chế độ dinh dưỡng và thói quen sống là những lý do có thể ảnh hưởng đến sự tăng giảm của acid uric trong cơ thể người.'
+
+MERGE (o1:disease {id: 'hội_chứng_chuyển_hóa_disease'})
+MERGE (o2:disease {id: 'tăng_acid_máu_disease'})
+MERGE (o1)-[r42:causedBy]->(o2)
+SET r42.text = 'Các yếu tố nguy cơ gây tăng acid máu bao gồm:  Hội chứng chuyển hóa Lạm dụng hoặc sử dụng rượu bia thường xuyên Người có bệnh sử tăng huyết áp Người bị đái tháo đường Người ăn không kiểm soát các thực phẩm giàu purine các loại thịt đỏ, hải sản có vỏ&#8230; Người sử dụng các thuốc lợi tiểu quai, thiazide.'
+
+MERGE (o1:lifestyle {id: 'lạm_dụng_hoặc_sử_dụng_rượu_bia_thường_xuyên_lifestyle'})
+MERGE (o2:disease {id: 'tăng_acid_máu_disease'})
+MERGE (o1)-[r43:causedBy]->(o2)
+SET r43.text = 'Các yếu tố nguy cơ gây tăng acid máu bao gồm:  Hội chứng chuyển hóa Lạm dụng hoặc sử dụng rượu bia thường xuyên Người có bệnh sử tăng huyết áp Người bị đái tháo đường Người ăn không kiểm soát các thực phẩm giàu purine các loại thịt đỏ, hải sản có vỏ&#8230; Người sử dụng các thuốc lợi tiểu quai, thiazide.'
+
+MERGE (o1:disease {id: 'tăng_huyết_áp_disease'})
+MERGE (o2:disease {id: 'tăng_acid_máu_disease'})
+MERGE (o1)-[r44:causedBy]->(o2)
+SET r44.text = 'Các yếu tố nguy cơ gây tăng acid máu bao gồm:  Hội chứng chuyển hóa Lạm dụng hoặc sử dụng rượu bia thường xuyên Người có bệnh sử tăng huyết áp Người bị đái tháo đường Người ăn không kiểm soát các thực phẩm giàu purine các loại thịt đỏ, hải sản có vỏ&#8230; Người sử dụng các thuốc lợi tiểu quai, thiazide.'
+
+MERGE (o1:disease {id: 'đái_tháo_đường_disease'})
+MERGE (o2:disease {id: 'tăng_acid_máu_disease'})
+MERGE (o1)-[r45:causedBy]->(o2)
+SET r45.text = 'Các yếu tố nguy cơ gây tăng acid máu bao gồm:  Hội chứng chuyển hóa Lạm dụng hoặc sử dụng rượu bia thường xuyên Người có bệnh sử tăng huyết áp Người bị đái tháo đường Người ăn không kiểm soát các thực phẩm giàu purine các loại thịt đỏ, hải sản có vỏ&#8230; Người sử dụng các thuốc lợi tiểu quai, thiazide.'
+
+MERGE (o1:food {id: 'thịt_đỏ_food'})
+MERGE (o2:disease {id: 'tăng_acid_máu_disease'})
+MERGE (o1)-[r46:aggravatedBy]->(o2)
+SET r46.text = 'Các yếu tố nguy cơ gây tăng acid máu bao gồm:  Hội chứng chuyển hóa Lạm dụng hoặc sử dụng rượu bia thường xuyên Người có bệnh sử tăng huyết áp Người bị đái tháo đường Người ăn không kiểm soát các thực phẩm giàu purine các loại thịt đỏ, hải sản có vỏ&#8230; Người sử dụng các thuốc lợi tiểu quai, thiazide.'
+
+MERGE (o1:food {id: 'hải_sản_có_vỏ_food'})
+MERGE (o2:disease {id: 'tăng_acid_máu_disease'})
+MERGE (o1)-[r47:aggravatedBy]->(o2)
+SET r47.text = 'Các yếu tố nguy cơ gây tăng acid máu bao gồm:  Hội chứng chuyển hóa Lạm dụng hoặc sử dụng rượu bia thường xuyên Người có bệnh sử tăng huyết áp Người bị đái tháo đường Người ăn không kiểm soát các thực phẩm giàu purine các loại thịt đỏ, hải sản có vỏ&#8230; Người sử dụng các thuốc lợi tiểu quai, thiazide.'
+
+MERGE (o1:treatment {id: 'thuốc_lợi_tiểu_quai_treatment'})
+MERGE (o2:disease {id: 'tăng_acid_máu_disease'})
+MERGE (o1)-[r48:causedBy]->(o2)
+SET r48.text = 'Các yếu tố nguy cơ gây tăng acid máu bao gồm:  Hội chứng chuyển hóa Lạm dụng hoặc sử dụng rượu bia thường xuyên Người có bệnh sử tăng huyết áp Người bị đái tháo đường Người ăn không kiểm soát các thực phẩm giàu purine các loại thịt đỏ, hải sản có vỏ&#8230; Người sử dụng các thuốc lợi tiểu quai, thiazide.'
+
+MERGE (o1:treatment {id: 'thuốc_thiazide_treatment'})
+MERGE (o2:disease {id: 'tăng_acid_máu_disease'})
+MERGE (o1)-[r49:causedBy]->(o2)
+SET r49.text = 'Các yếu tố nguy cơ gây tăng acid máu bao gồm:  Hội chứng chuyển hóa Lạm dụng hoặc sử dụng rượu bia thường xuyên Người có bệnh sử tăng huyết áp Người bị đái tháo đường Người ăn không kiểm soát các thực phẩm giàu purine các loại thịt đỏ, hải sản có vỏ&#8230; Người sử dụng các thuốc lợi tiểu quai, thiazide.'
+
+MERGE (o1:symptom {id: 'sưng__nóng__đỏ__đau_khớp_symptom'})
+MERGE (o2:disease {id: 'bệnh_gout_disease'})
+MERGE (o1)-[r50:isSymptomOf]->(o2)
+SET r50.text = 'Những triệu chứng của tình trạng tăng acid uric trong máu thường thấy là các triệu chứng của bệnh gout và sỏi thận.'
+
+MERGE (o1:symptom {id: 'giới_hạn_vận_động_các_khớp_symptom'})
+MERGE (o2:disease {id: 'bệnh_gout_disease'})
+MERGE (o1)-[r51:isSymptomOf]->(o2)
+SET r51.text = 'Những triệu chứng của tình trạng tăng acid uric trong máu thường thấy là các triệu chứng của bệnh gout và sỏi thận.'
+
+MERGE (o1:symptom {id: 'cứng_khớp_symptom'})
+MERGE (o2:disease {id: 'bệnh_gout_disease'})
+MERGE (o1)-[r52:isSymptomOf]->(o2)
+SET r52.text = 'Những triệu chứng của tình trạng tăng acid uric trong máu thường thấy là các triệu chứng của bệnh gout và sỏi thận.'
+
+MERGE (o1:symptom {id: 'biến_dạng_khớp_symptom'})
+MERGE (o2:disease {id: 'bệnh_gout_disease'})
+MERGE (o1)-[r53:isSymptomOf]->(o2)
+SET r53.text = 'Những triệu chứng của tình trạng tăng acid uric trong máu thường thấy là các triệu chứng của bệnh gout và sỏi thận.'
+
+MERGE (o1:symptom {id: 'nổi_hạt_tophi_dưới_da_symptom'})
+MERGE (o2:disease {id: 'bệnh_gout_disease'})
+MERGE (o1)-[r54:isSymptomOf]->(o2)
+SET r54.text = 'Những triệu chứng của tình trạng tăng acid uric trong máu thường thấy là các triệu chứng của bệnh gout và sỏi thận.'
+
+MERGE (o1:symptom {id: 'đau_quặn_bụng_symptom'})
+MERGE (o2:disease {id: 'sỏi_thận_disease'})
+MERGE (o1)-[r55:isSymptomOf]->(o2)
+SET r55.text = 'Những triệu chứng của tình trạng tăng acid uric trong máu thường thấy là các triệu chứng của bệnh gout và sỏi thận.'
+
+MERGE (o1:symptom {id: 'tiểu_ra_máu_symptom'})
+MERGE (o2:disease {id: 'sỏi_thận_disease'})
+MERGE (o1)-[r56:isSymptomOf]->(o2)
+SET r56.text = 'Những triệu chứng của tình trạng tăng acid uric trong máu thường thấy là các triệu chứng của bệnh gout và sỏi thận.'
+
+MERGE (o1:symptom {id: 'rối_loạn_đi_tiểu_symptom'})
+MERGE (o2:disease {id: 'sỏi_thận_disease'})
+MERGE (o1)-[r57:isSymptomOf]->(o2)
+SET r57.text = 'Những triệu chứng của tình trạng tăng acid uric trong máu thường thấy là các triệu chứng của bệnh gout và sỏi thận.'
+
+MERGE (o1:symptom {id: 'đi_tiểu_thường_xuyên_symptom'})
+MERGE (o2:disease {id: 'sỏi_thận_disease'})
+MERGE (o1)-[r58:isSymptomOf]->(o2)
+SET r58.text = 'Những triệu chứng của tình trạng tăng acid uric trong máu thường thấy là các triệu chứng của bệnh gout và sỏi thận.'
+
+MERGE (o1:symptom {id: 'nước_tiểu_đục_symptom'})
+MERGE (o2:disease {id: 'sỏi_thận_disease'})
+MERGE (o1)-[r59:isSymptomOf]->(o2)
+SET r59.text = 'Những triệu chứng của tình trạng tăng acid uric trong máu thường thấy là các triệu chứng của bệnh gout và sỏi thận.'
+
+MERGE (o1:symptom {id: 'nước_tiểu_có_mùi_hôi_nồng_symptom'})
+MERGE (o2:disease {id: 'sỏi_thận_disease'})
+MERGE (o1)-[r60:isSymptomOf]->(o2)
+SET r60.text = 'Những triệu chứng của tình trạng tăng acid uric trong máu thường thấy là các triệu chứng của bệnh gout và sỏi thận.'
+
+MERGE (o1:symptom {id: 'nước_tiểu_lẫn_máu_symptom'})
+MERGE (o2:disease {id: 'sỏi_thận_disease'})
+MERGE (o1)-[r61:isSymptomOf]->(o2)
+SET r61.text = 'Những triệu chứng của tình trạng tăng acid uric trong máu thường thấy là các triệu chứng của bệnh gout và sỏi thận.'
+
+MERGE (o1:disease {id: 'acid_uric_cao_disease'})
+MERGE (o2:symptom {id: 'không_có_dấu_hiệu_lâm_sàng_cụ_thể_symptom'})
+MERGE (o1)-[r62:isSymptomOf]->(o2)
+SET r62.text = 'Tuy nhiên, trong giai đoạn đầu, tình trạng acid uric cao sẽ không có dấu hiệu lâm sàng cụ thể để nhận biết.'
+
+MERGE (o1:symptom {id: 'triệu_chứng_symptom'})
+MERGE (o2:disease {id: 'acid_uric_cao_disease'})
+MERGE (o1)-[r63:isSymptomOf]->(o2)
+SET r63.text = 'Triệu chứng chỉ xuất hiện khi tình trạng đã kéo dài một thời gian mà không được điều trị thích hợp, và mức độ bệnh cũng nghiêm trọng hơn.'
+
+MERGE (o1:disease {id: 'tăng_acid_uric_disease'})
+MERGE (o2:test {id: 'xét_nghiệm_máu_test'})
+MERGE (o1)-[r64:diagnosedBy]->(o2)
+SET r64.text = 'Chẩn đoán tăng acid uric chủ yếu dựa vào xét nghiệm máu.'
+
+MERGE (o1:disease {id: 'tăng_acid_uric_máu_disease'})
+MERGE (o2:test {id: 'xét_nghiệm_nước_tiểu_test'})
+MERGE (o1)-[r65:diagnosedBy]->(o2)
+SET r65.text = 'Ngoài ra, xét nghiệm nước tiểu cũng góp phần hỗ trợ chẩn đoán và tìm nguyên nhân tắc acid uric máu .'
+
+MERGE (o1:test {id: 'nồng_độ_acid_uric_test'})
+MERGE (o2:disease {id: 'tăng_acid_uric_disease'})
+MERGE (o1)-[r66:relatedTo]->(o2)
+SET r66.text = 'Kết quả xét nghiệm máu và nước tiểu sẽ thể hiện những chỉ số sau:  Nồng độ acid uric Nồng độ acid uric niệu Tìm tinh thể MSU trong nước tiểu.'
+
+MERGE (o1:test {id: 'nồng_độ_acid_uric_niệu_test'})
+MERGE (o2:disease {id: 'tăng_acid_uric_disease'})
+MERGE (o1)-[r67:relatedTo]->(o2)
+SET r67.text = 'Kết quả xét nghiệm máu và nước tiểu sẽ thể hiện những chỉ số sau:  Nồng độ acid uric Nồng độ acid uric niệu Tìm tinh thể MSU trong nước tiểu.'
+
+MERGE (o1:test {id: 'tìm_tinh_thể_msu_trong_nước_tiểu_test'})
+MERGE (o2:disease {id: 'tăng_acid_uric_disease'})
+MERGE (o1)-[r68:relatedTo]->(o2)
+SET r68.text = 'Kết quả xét nghiệm máu và nước tiểu sẽ thể hiện những chỉ số sau:  Nồng độ acid uric Nồng độ acid uric niệu Tìm tinh thể MSU trong nước tiểu.'
+
+MERGE (o1:disease {id: 'bệnh_gout_disease'})
+MERGE (o2:test {id: 'siêu_âm_test'})
+MERGE (o1)-[r69:diagnosedBy]->(o2)
+SET r69.text = 'Cần lưu ý rằng, các phương tiện hỗ trợ chẩn đoán bệnh gout có thể cần sử dụng siêu âm, chụp x quang vùng bị sưng đau hoặc chọc dịch khớp để tìm tinh thể MSU.'
+
+MERGE (o1:disease {id: 'bệnh_gout_disease'})
+MERGE (o2:test {id: 'chụp_x_quang_test'})
+MERGE (o1)-[r70:diagnosedBy]->(o2)
+SET r70.text = 'Cần lưu ý rằng, các phương tiện hỗ trợ chẩn đoán bệnh gout có thể cần sử dụng siêu âm, chụp x quang vùng bị sưng đau hoặc chọc dịch khớp để tìm tinh thể MSU.'
+
+MERGE (o1:disease {id: 'tăng_acid_uric_disease'})
+MERGE (o2:symptom {id: 'tình_trạng_sức_khỏe_đáng_báo_động_symptom'})
+MERGE (o1)-[r71:isSymptomOf]->(o2)
+SET r71.text = 'Tăng acid uric là một tình trạng sức khỏe đáng báo động cho người bệnh.'
+
+MERGE (o1:disease {id: 'tăng_acid_uric_disease'})
+MERGE (o2:disease {id: 'bệnh_lý_về_cơ_xương_khớp_disease'})
+MERGE (o1)-[r72:causes]->(o2)
+SET r72.text = 'Tình trạng này là nguyên nhân dẫn đến các bệnh lý về cơ xương khớp, đặc biệt là gout, tổn thương thận gây sỏi thận và suy thận, tổn thương tim mạch gây tăng huyết áp&#8230;'
+
+MERGE (o1:disease {id: 'tăng_acid_uric_disease'})
+MERGE (o2:disease {id: 'gout_disease'})
+MERGE (o1)-[r73:causes]->(o2)
+SET r73.text = 'Tình trạng này là nguyên nhân dẫn đến các bệnh lý về cơ xương khớp, đặc biệt là gout, tổn thương thận gây sỏi thận và suy thận, tổn thương tim mạch gây tăng huyết áp&#8230;'
+
+MERGE (o1:disease {id: 'tăng_acid_uric_disease'})
+MERGE (o2:disease {id: 'tổn_thương_thận_disease'})
+MERGE (o1)-[r74:causes]->(o2)
+SET r74.text = 'Tình trạng này là nguyên nhân dẫn đến các bệnh lý về cơ xương khớp, đặc biệt là gout, tổn thương thận gây sỏi thận và suy thận, tổn thương tim mạch gây tăng huyết áp&#8230;'
+
+MERGE (o1:disease {id: 'tăng_acid_uric_disease'})
+MERGE (o2:disease {id: 'sỏi_thận_disease'})
+MERGE (o1)-[r75:causes]->(o2)
+SET r75.text = 'Tình trạng này là nguyên nhân dẫn đến các bệnh lý về cơ xương khớp, đặc biệt là gout, tổn thương thận gây sỏi thận và suy thận, tổn thương tim mạch gây tăng huyết áp&#8230;'
+
+MERGE (o1:disease {id: 'tăng_acid_uric_disease'})
+MERGE (o2:disease {id: 'suy_thận_disease'})
+MERGE (o1)-[r76:causes]->(o2)
+SET r76.text = 'Tình trạng này là nguyên nhân dẫn đến các bệnh lý về cơ xương khớp, đặc biệt là gout, tổn thương thận gây sỏi thận và suy thận, tổn thương tim mạch gây tăng huyết áp&#8230;'
+
+MERGE (o1:disease {id: 'tăng_acid_uric_disease'})
+MERGE (o2:disease {id: 'tổn_thương_tim_mạch_disease'})
+MERGE (o1)-[r77:causes]->(o2)
+SET r77.text = 'Tình trạng này là nguyên nhân dẫn đến các bệnh lý về cơ xương khớp, đặc biệt là gout, tổn thương thận gây sỏi thận và suy thận, tổn thương tim mạch gây tăng huyết áp&#8230;'
+
+MERGE (o1:disease {id: 'tăng_acid_uric_disease'})
+MERGE (o2:disease {id: 'tăng_huyết_áp_disease'})
+MERGE (o1)-[r78:causes]->(o2)
+SET r78.text = 'Tình trạng này là nguyên nhân dẫn đến các bệnh lý về cơ xương khớp, đặc biệt là gout, tổn thương thận gây sỏi thận và suy thận, tổn thương tim mạch gây tăng huyết áp&#8230;'
+
+MERGE (o1:disease {id: 'tăng_acid_uric_kéo_dài_disease'})
+MERGE (o2:disease {id: 'rối_loạn_chuyển_hóa_disease'})
+MERGE (o1)-[r79:causes]->(o2)
+SET r79.text = 'Ngoài ra, tình trạng tăng acid uric kéo dài cũng sẽ làm tăng cao nguy cơ mắc các bệnh như rối loạn chuyển hóa, bệnh đái tháo đường, tim mạch và bệnh thận mạn tính.'
+
+MERGE (o1:disease {id: 'tăng_acid_uric_kéo_dài_disease'})
+MERGE (o2:disease {id: 'bệnh_đái_tháo_đường_disease'})
+MERGE (o1)-[r80:causes]->(o2)
+SET r80.text = 'Ngoài ra, tình trạng tăng acid uric kéo dài cũng sẽ làm tăng cao nguy cơ mắc các bệnh như rối loạn chuyển hóa, bệnh đái tháo đường, tim mạch và bệnh thận mạn tính.'
+
+MERGE (o1:disease {id: 'tăng_acid_uric_kéo_dài_disease'})
+MERGE (o2:disease {id: 'bệnh_tim_mạch_disease'})
+MERGE (o1)-[r81:causes]->(o2)
+SET r81.text = 'Ngoài ra, tình trạng tăng acid uric kéo dài cũng sẽ làm tăng cao nguy cơ mắc các bệnh như rối loạn chuyển hóa, bệnh đái tháo đường, tim mạch và bệnh thận mạn tính.'
+
+MERGE (o1:disease {id: 'tăng_acid_uric_kéo_dài_disease'})
+MERGE (o2:disease {id: 'bệnh_thận_mạn_tính_disease'})
+MERGE (o1)-[r82:causes]->(o2)
+SET r82.text = 'Ngoài ra, tình trạng tăng acid uric kéo dài cũng sẽ làm tăng cao nguy cơ mắc các bệnh như rối loạn chuyển hóa, bệnh đái tháo đường, tim mạch và bệnh thận mạn tính.'
+
+MERGE (o1:symptom {id: 'nồng_độ_acid_cao_bất_thường_symptom'})
+MERGE (o2:treatment {id: 'thay_đổi_và_duy_trì_chế_độ_dinh_dưỡng_phù_hợp_treatment'})
+MERGE (o1)-[r83:treatedBy]->(o2)
+SET r83.text = 'Khi một người có nồng độ acid cao bất thường, điều quan trọng nhất là phải thay đổi và duy trì chế độ dinh dưỡng phù hợp.'
+
+MERGE (o1:symptom {id: 'nồng_độ_acid_máu_cao_symptom'})
+MERGE (o2:disease {id: 'gút_disease'})
+MERGE (o1)-[r84:associatedWith]->(o2)
+SET r84.text = 'Do đo, bệnh nhân có nồng độ acid máu cao và bị gút cần phải tuân thủ và có ý thức chủ động bảo vệ sức khỏe của chính mình, nhất là đối với những người lớn tuổi, có nhiều bệnh nền, dễ bị ảnh hưởng nhiều hơn các nhóm đối tượng khác.'
+
+MERGE (o1:symptom {id: 'nồng_độ_acid_máu_cao_symptom'})
+MERGE (o2:lifestyle {id: 'người_lớn_tuổi_lifestyle'})
+MERGE (o1)-[r85:associatedWith]->(o2)
+SET r85.text = 'Do đo, bệnh nhân có nồng độ acid máu cao và bị gút cần phải tuân thủ và có ý thức chủ động bảo vệ sức khỏe của chính mình, nhất là đối với những người lớn tuổi, có nhiều bệnh nền, dễ bị ảnh hưởng nhiều hơn các nhóm đối tượng khác.'
+
+MERGE (o1:symptom {id: 'nồng_độ_acid_máu_cao_symptom'})
+MERGE (o2:disease {id: 'bệnh_nền_disease'})
+MERGE (o1)-[r86:associatedWith]->(o2)
+SET r86.text = 'Do đo, bệnh nhân có nồng độ acid máu cao và bị gút cần phải tuân thủ và có ý thức chủ động bảo vệ sức khỏe của chính mình, nhất là đối với những người lớn tuổi, có nhiều bệnh nền, dễ bị ảnh hưởng nhiều hơn các nhóm đối tượng khác.'
+
+MERGE (o1:disease {id: 'acid_uric_máu_cao_disease'})
+MERGE (o2:lifestyle {id: 'nam_giới_lifestyle'})
+MERGE (o1)-[r87:associatedWith]->(o2)
+SET r87.text = 'Bất cứ ai cũng có thể bị acid uric máu cao, tuy nhiên các nghiên cứu cho thấy rằng nam giới có khả năng dễ bị tăng acid uric trong máu hơn so với nữ giới.'
+
+MERGE (o1:disease {id: 'acid_uric_máu_cao_disease'})
+MERGE (o2:lifestyle {id: 'nữ_giới_lifestyle'})
+MERGE (o1)-[r88:associatedWith]->(o2)
+SET r88.text = 'Bất cứ ai cũng có thể bị acid uric máu cao, tuy nhiên các nghiên cứu cho thấy rằng nam giới có khả năng dễ bị tăng acid uric trong máu hơn so với nữ giới.'
+
+MERGE (o1:lifestyle {id: 'tính_chất_công_việc_lifestyle'})
+MERGE (o2:disease {id: 'acid_uric_tăng_cao_trong_máu_disease'})
+MERGE (o1)-[r89:causes]->(o2)
+SET r89.text = 'Điều này có thể liên quan đến tính chất công việc và thói quen sinh hoạt của phần lớn nam giới đều có nguy cơ làm acid uric tăng cao trong máu.'
+
+MERGE (o1:lifestyle {id: 'thói_quen_sinh_hoạt_lifestyle'})
+MERGE (o2:disease {id: 'acid_uric_tăng_cao_trong_máu_disease'})
+MERGE (o1)-[r90:causes]->(o2)
+SET r90.text = 'Điều này có thể liên quan đến tính chất công việc và thói quen sinh hoạt của phần lớn nam giới đều có nguy cơ làm acid uric tăng cao trong máu.'
+
+MERGE (o1:lifestyle {id: 'sử_dụng_rượu_bia_nhiều_lifestyle'})
+MERGE (o2:disease {id: 'acid_uric_tăng_cao_trong_máu_disease'})
+MERGE (o1)-[r91:causes]->(o2)
+SET r91.text = 'Những yếu tố điển hình bao gồm sử dụng rượu bia nhiều, cường độ hoạt động thể chất nặng.'
+
+MERGE (o1:lifestyle {id: 'cường_độ_hoạt_động_thể_chất_nặng_lifestyle'})
+MERGE (o2:disease {id: 'acid_uric_tăng_cao_trong_máu_disease'})
+MERGE (o1)-[r92:causes]->(o2)
+SET r92.text = 'Những yếu tố điển hình bao gồm sử dụng rượu bia nhiều, cường độ hoạt động thể chất nặng.'
+
+MERGE (o1:disease {id: 'bệnh_lý_thận_disease'})
+MERGE (o2:disease {id: 'acid_uric_tăng_cao_trong_máu_disease'})
+MERGE (o1)-[r93:causes]->(o2)
+SET r93.text = 'Bên cạnh đó, một số bệnh lý cũng có thể góp phần gây ra tình trạng này như bệnh lý thận, huyết áp cao, đái tháo đường, suy giáp, béo phì, sử dụng thuốc điều trị bệnh tim mạch.'
+
+MERGE (o1:disease {id: 'huyết_áp_cao_disease'})
+MERGE (o2:disease {id: 'acid_uric_tăng_cao_trong_máu_disease'})
+MERGE (o1)-[r94:causes]->(o2)
+SET r94.text = 'Bên cạnh đó, một số bệnh lý cũng có thể góp phần gây ra tình trạng này như bệnh lý thận, huyết áp cao, đái tháo đường, suy giáp, béo phì, sử dụng thuốc điều trị bệnh tim mạch.'
+
+MERGE (o1:disease {id: 'đái_tháo_đường_disease'})
+MERGE (o2:disease {id: 'acid_uric_tăng_cao_trong_máu_disease'})
+MERGE (o1)-[r95:causes]->(o2)
+SET r95.text = 'Bên cạnh đó, một số bệnh lý cũng có thể góp phần gây ra tình trạng này như bệnh lý thận, huyết áp cao, đái tháo đường, suy giáp, béo phì, sử dụng thuốc điều trị bệnh tim mạch.'
+
+MERGE (o1:disease {id: 'suy_giáp_disease'})
+MERGE (o2:disease {id: 'acid_uric_tăng_cao_trong_máu_disease'})
+MERGE (o1)-[r96:causes]->(o2)
+SET r96.text = 'Bên cạnh đó, một số bệnh lý cũng có thể góp phần gây ra tình trạng này như bệnh lý thận, huyết áp cao, đái tháo đường, suy giáp, béo phì, sử dụng thuốc điều trị bệnh tim mạch.'
+
+MERGE (o1:disease {id: 'béo_phì_disease'})
+MERGE (o2:disease {id: 'acid_uric_tăng_cao_trong_máu_disease'})
+MERGE (o1)-[r97:causes]->(o2)
+SET r97.text = 'Bên cạnh đó, một số bệnh lý cũng có thể góp phần gây ra tình trạng này như bệnh lý thận, huyết áp cao, đái tháo đường, suy giáp, béo phì, sử dụng thuốc điều trị bệnh tim mạch.'
+
+MERGE (o1:treatment {id: 'sử_dụng_thuốc_điều_trị_bệnh_tim_mạch_treatment'})
+MERGE (o2:disease {id: 'acid_uric_tăng_cao_trong_máu_disease'})
+MERGE (o1)-[r98:causes]->(o2)
+SET r98.text = 'Bên cạnh đó, một số bệnh lý cũng có thể góp phần gây ra tình trạng này như bệnh lý thận, huyết áp cao, đái tháo đường, suy giáp, béo phì, sử dụng thuốc điều trị bệnh tim mạch.'
+
+MERGE (o1:disease {id: 'tăng_acid_uric_máu_disease'})
+MERGE (o2:treatment {id: 'điều_chỉnh_chế_độ_dinh_dưỡng_treatment'})
+MERGE (o1)-[r99:treatedBy]->(o2)
+SET r99.text = 'Điều trị tăng acid uric máu được chủ yếu là điều chỉnh chế độ dinh dưỡng, giảm hàm lượng purine động vật có trong bữa ăn.'
+
+MERGE (o1:disease {id: 'tăng_acid_uric_máu_disease'})
+MERGE (o2:treatment {id: 'giảm_hàm_lượng_purine_động_vật_treatment'})
+MERGE (o1)-[r100:treatedBy]->(o2)
+SET r100.text = 'Điều trị tăng acid uric máu được chủ yếu là điều chỉnh chế độ dinh dưỡng, giảm hàm lượng purine động vật có trong bữa ăn.'
+
+MERGE (o1:disease {id: 'bệnh_lý_gout_disease'})
+MERGE (o2:symptom {id: 'triệu_chứng_symptom'})
+MERGE (o1)-[r101:isSymptomOf]->(o2)
+SET r101.text = 'Trong trường hợp người bệnh có xuất hiện những triệu chứng của bệnh lý gout, bác sĩ sẽ kê thuốc để kiểm soát các triệu chứng này, đồng thời sử dụng thuốc hạ acid uric máu khi có chỉ định.'
+
+MERGE (o1:disease {id: 'bệnh_lý_gout_disease'})
+MERGE (o2:treatment {id: 'thuốc_treatment'})
+MERGE (o1)-[r102:treatedBy]->(o2)
+SET r102.text = 'Trong trường hợp người bệnh có xuất hiện những triệu chứng của bệnh lý gout, bác sĩ sẽ kê thuốc để kiểm soát các triệu chứng này, đồng thời sử dụng thuốc hạ acid uric máu khi có chỉ định.'
+
+MERGE (o1:disease {id: 'bệnh_lý_gout_disease'})
+MERGE (o2:treatment {id: 'thuốc_hạ_acid_uric_máu_treatment'})
+MERGE (o1)-[r103:treatedBy]->(o2)
+SET r103.text = 'Trong trường hợp người bệnh có xuất hiện những triệu chứng của bệnh lý gout, bác sĩ sẽ kê thuốc để kiểm soát các triệu chứng này, đồng thời sử dụng thuốc hạ acid uric máu khi có chỉ định.'
+
+MERGE (o1:disease {id: 'acid_uric_tăng_trong_máu_disease'})
+MERGE (o2:organ {id: 'xương_khớp_organ'})
+MERGE (o1)-[r104:affects]->(o2)
+SET r104.text = 'Đối với những trường hợp người bệnh không có bất kỳ triệu chứng gì và chưa có dấu hiệu ảnh hưởng đến xương khớp hay thận do acid uric tăng trong máu thì chưa cần sử dụng thuốc điều trị hạ acid uric máu.'
+
+MERGE (o1:disease {id: 'acid_uric_tăng_trong_máu_disease'})
+MERGE (o2:organ {id: 'thận_organ'})
+MERGE (o1)-[r105:affects]->(o2)
+SET r105.text = 'Đối với những trường hợp người bệnh không có bất kỳ triệu chứng gì và chưa có dấu hiệu ảnh hưởng đến xương khớp hay thận do acid uric tăng trong máu thì chưa cần sử dụng thuốc điều trị hạ acid uric máu.'
+
+MERGE (o1:disease {id: 'acid_uric_tăng_trong_máu_disease'})
+MERGE (o2:treatment {id: 'thuốc_điều_trị_hạ_acid_uric_máu_treatment'})
+MERGE (o1)-[r106:treatedBy]->(o2)
+SET r106.text = 'Đối với những trường hợp người bệnh không có bất kỳ triệu chứng gì và chưa có dấu hiệu ảnh hưởng đến xương khớp hay thận do acid uric tăng trong máu thì chưa cần sử dụng thuốc điều trị hạ acid uric máu.'
+
+MERGE (o1:disease {id: 'gout_disease'})
+MERGE (o2:treatment {id: 'thuốc_điều_trị_đặc_hiệu_treatment'})
+MERGE (o1)-[r107:treatedBy]->(o2)
+SET r107.text = 'Đối với những người đã có biểu hiện và được chẩn đoán gout, bác sĩ sẽ khởi trị thuốc điều trị đặc hiệu song song với thay đổi chế độ dinh dưỡng phù hợp với tình trạng sức khỏe của bản thân.'
+
+MERGE (o1:disease {id: 'gout_disease'})
+MERGE (o2:treatment {id: 'thay_đổi_chế_độ_dinh_dưỡng_treatment'})
+MERGE (o1)-[r108:treatedBy]->(o2)
+SET r108.text = 'Đối với những người đã có biểu hiện và được chẩn đoán gout, bác sĩ sẽ khởi trị thuốc điều trị đặc hiệu song song với thay đổi chế độ dinh dưỡng phù hợp với tình trạng sức khỏe của bản thân.'
+
+MERGE (o1:disease {id: 'gout_disease'})
+MERGE (o2:treatment {id: 'thuốc_kháng_viêm_treatment'})
+MERGE (o1)-[r109:treatedBy]->(o2)
+SET r109.text = 'Những loại thuốc được sử dụng cho người bị gout bao gồm các thuốc kháng viêm nhằn điều trị các triệu chứng sưng đau khớp như thuốc chống viêm không steroid, colchicine hoặc corticoid.'
+
+MERGE (o1:disease {id: 'gout_disease'})
+MERGE (o2:treatment {id: 'thuốc_chống_viêm_không_steroid_treatment'})
+MERGE (o1)-[r110:treatedBy]->(o2)
+SET r110.text = 'Những loại thuốc được sử dụng cho người bị gout bao gồm các thuốc kháng viêm nhằn điều trị các triệu chứng sưng đau khớp như thuốc chống viêm không steroid, colchicine hoặc corticoid.'
+
+MERGE (o1:disease {id: 'gout_disease'})
+MERGE (o2:treatment {id: 'colchicine_treatment'})
+MERGE (o1)-[r111:treatedBy]->(o2)
+SET r111.text = 'Những loại thuốc được sử dụng cho người bị gout bao gồm các thuốc kháng viêm nhằn điều trị các triệu chứng sưng đau khớp như thuốc chống viêm không steroid, colchicine hoặc corticoid.'
+
+MERGE (o1:disease {id: 'gout_disease'})
+MERGE (o2:treatment {id: 'corticoid_treatment'})
+MERGE (o1)-[r112:treatedBy]->(o2)
+SET r112.text = 'Những loại thuốc được sử dụng cho người bị gout bao gồm các thuốc kháng viêm nhằn điều trị các triệu chứng sưng đau khớp như thuốc chống viêm không steroid, colchicine hoặc corticoid.'
+
+MERGE (o1:treatment {id: 'thuốc_treatment'})
+MERGE (o2:symptom {id: 'cắt_cơn_sưng_đau_khớp_symptom'})
+MERGE (o1)-[r113:treatedBy]->(o2)
+SET r113.text = 'Tuy nhiên câc thuốc này chỉ nên sử dụng để cắt cơn sưng đau khớp và dùng trong giai đoạn đầu để ngừa cơn gout cấp, suy một vài tháng nên ngưng sử dụng.'
+
+MERGE (o1:treatment {id: 'thuốc_treatment'})
+MERGE (o2:disease {id: 'ngừa_cơn_gout_cấp_disease'})
+MERGE (o1)-[r114:treatedBy]->(o2)
+SET r114.text = 'Tuy nhiên câc thuốc này chỉ nên sử dụng để cắt cơn sưng đau khớp và dùng trong giai đoạn đầu để ngừa cơn gout cấp, suy một vài tháng nên ngưng sử dụng.'
+
+MERGE (o1:treatment {id: 'thuốc_treatment'})
+MERGE (o2:disease {id: 'hạ_nồng_độ_acid_uric_máu_disease'})
+MERGE (o1)-[r115:treatedBy]->(o2)
+SET r115.text = 'Trong khi đó, ác thuốc sử dụng để hạ nồng độ acid uric máu bao gồm allopurinol, febuxostat, probenecid được sử dụng kéo dài để duy trì nồng độ acid uric máu dưới ngưỡng cần thiết hằng định và kéo dài để ngăn ngừa hình thành các tinh thể MSU, gây tổn thương khớp.'
+
+MERGE (o1:treatment {id: 'thuốc_treatment'})
+MERGE (o2:disease {id: 'duy_trì_nồng_độ_acid_uric_máu_dưới_ngưỡng_cần_thiết_disease'})
+MERGE (o1)-[r116:treatedBy]->(o2)
+SET r116.text = 'Trong khi đó, ác thuốc sử dụng để hạ nồng độ acid uric máu bao gồm allopurinol, febuxostat, probenecid được sử dụng kéo dài để duy trì nồng độ acid uric máu dưới ngưỡng cần thiết hằng định và kéo dài để ngăn ngừa hình thành các tinh thể MSU, gây tổn thương khớp.'
+
+MERGE (o1:treatment {id: 'thuốc_treatment'})
+MERGE (o2:disease {id: 'ngăn_ngừa_hình_thành_các_tinh_thể_msu_disease'})
+MERGE (o1)-[r117:treatedBy]->(o2)
+SET r117.text = 'Trong khi đó, ác thuốc sử dụng để hạ nồng độ acid uric máu bao gồm allopurinol, febuxostat, probenecid được sử dụng kéo dài để duy trì nồng độ acid uric máu dưới ngưỡng cần thiết hằng định và kéo dài để ngăn ngừa hình thành các tinh thể MSU, gây tổn thương khớp.'
+
+MERGE (o1:treatment {id: 'thuốc_treatment'})
+MERGE (o2:disease {id: 'tổn_thương_khớp_disease'})
+MERGE (o1)-[r118:treatedBy]->(o2)
+SET r118.text = 'Trong khi đó, ác thuốc sử dụng để hạ nồng độ acid uric máu bao gồm allopurinol, febuxostat, probenecid được sử dụng kéo dài để duy trì nồng độ acid uric máu dưới ngưỡng cần thiết hằng định và kéo dài để ngăn ngừa hình thành các tinh thể MSU, gây tổn thương khớp.'
+
+MERGE (o1:treatment {id: 'allopurinol_treatment'})
+MERGE (o2:disease {id: 'hạ_nồng_độ_acid_uric_máu_disease'})
+MERGE (o1)-[r119:treatedBy]->(o2)
+SET r119.text = 'Trong khi đó, ác thuốc sử dụng để hạ nồng độ acid uric máu bao gồm allopurinol, febuxostat, probenecid được sử dụng kéo dài để duy trì nồng độ acid uric máu dưới ngưỡng cần thiết hằng định và kéo dài để ngăn ngừa hình thành các tinh thể MSU, gây tổn thương khớp.'
+
+MERGE (o1:treatment {id: 'febuxostat_treatment'})
+MERGE (o2:disease {id: 'hạ_nồng_độ_acid_uric_máu_disease'})
+MERGE (o1)-[r120:treatedBy]->(o2)
+SET r120.text = 'Trong khi đó, ác thuốc sử dụng để hạ nồng độ acid uric máu bao gồm allopurinol, febuxostat, probenecid được sử dụng kéo dài để duy trì nồng độ acid uric máu dưới ngưỡng cần thiết hằng định và kéo dài để ngăn ngừa hình thành các tinh thể MSU, gây tổn thương khớp.'
+
+MERGE (o1:treatment {id: 'probenecid_treatment'})
+MERGE (o2:disease {id: 'hạ_nồng_độ_acid_uric_máu_disease'})
+MERGE (o1)-[r121:treatedBy]->(o2)
+SET r121.text = 'Trong khi đó, ác thuốc sử dụng để hạ nồng độ acid uric máu bao gồm allopurinol, febuxostat, probenecid được sử dụng kéo dài để duy trì nồng độ acid uric máu dưới ngưỡng cần thiết hằng định và kéo dài để ngăn ngừa hình thành các tinh thể MSU, gây tổn thương khớp.'
+
+MERGE (o1:symptom {id: 'hạt_tophi_lớn_symptom'})
+MERGE (o2:disease {id: 'lắng_acid_uric_kéo_dài_disease'})
+MERGE (o1)-[r122:causedBy]->(o2)
+SET r122.text = 'Ngoài ra, Nếu người bệnh có hạt tophi lớn do lắng acid uric kéo dài có thể gây ra tình trạng cứng khớp, ảnh hưởng nghiêm trọng đến vận động khớp, người bệnh có thể sẽ cần thực hiện phẫu thuật để cắt bỏ.'
+
+MERGE (o1:symptom {id: 'hạt_tophi_lớn_symptom'})
+MERGE (o2:disease {id: 'cứng_khớp_disease'})
+MERGE (o1)-[r123:causes]->(o2)
+SET r123.text = 'Ngoài ra, Nếu người bệnh có hạt tophi lớn do lắng acid uric kéo dài có thể gây ra tình trạng cứng khớp, ảnh hưởng nghiêm trọng đến vận động khớp, người bệnh có thể sẽ cần thực hiện phẫu thuật để cắt bỏ.'
+
+MERGE (o1:symptom {id: 'hạt_tophi_lớn_symptom'})
+MERGE (o2:disease {id: 'ảnh_hưởng_nghiêm_trọng_đến_vận_động_khớp_disease'})
+MERGE (o1)-[r124:causes]->(o2)
+SET r124.text = 'Ngoài ra, Nếu người bệnh có hạt tophi lớn do lắng acid uric kéo dài có thể gây ra tình trạng cứng khớp, ảnh hưởng nghiêm trọng đến vận động khớp, người bệnh có thể sẽ cần thực hiện phẫu thuật để cắt bỏ.'
+
+MERGE (o1:symptom {id: 'hạt_tophi_lớn_symptom'})
+MERGE (o2:treatment {id: 'phẫu_thuật_treatment'})
+MERGE (o1)-[r125:treatedBy]->(o2)
+SET r125.text = 'Ngoài ra, Nếu người bệnh có hạt tophi lớn do lắng acid uric kéo dài có thể gây ra tình trạng cứng khớp, ảnh hưởng nghiêm trọng đến vận động khớp, người bệnh có thể sẽ cần thực hiện phẫu thuật để cắt bỏ.'
+
+MERGE (o1:disease {id: 'suy_thận_disease'})
+MERGE (o2:disease {id: 'acid_uric_cao_disease'})
+MERGE (o1)-[r126:causedBy]->(o2)
+SET r126.text = 'Đối với người bị suy thận, sỏi thận do acid uric cao, bác sĩ sẽ xử lý sỏi thận cho người bệnh trước.'
+
+MERGE (o1:disease {id: 'sỏi_thận_disease'})
+MERGE (o2:disease {id: 'acid_uric_cao_disease'})
+MERGE (o1)-[r127:causedBy]->(o2)
+SET r127.text = 'Đối với người bị suy thận, sỏi thận do acid uric cao, bác sĩ sẽ xử lý sỏi thận cho người bệnh trước.'
+
+MERGE (o1:disease {id: 'sỏi_thận_disease'})
+MERGE (o2:treatment {id: 'xử_lý_sỏi_thận_treatment'})
+MERGE (o1)-[r128:treatedBy]->(o2)
+SET r128.text = 'Đối với người bị suy thận, sỏi thận do acid uric cao, bác sĩ sẽ xử lý sỏi thận cho người bệnh trước.'
+
+MERGE (o1:disease {id: 'sỏi_thận_disease'})
+MERGE (o2:treatment {id: 'uống_thuốc_giảm_đau_treatment'})
+MERGE (o1)-[r129:treatedBy]->(o2)
+SET r129.text = 'Các phương pháp sử dụng có thể là uống thuốc giảm đau, tán sỏi hoặc phẫu thuật cắt bỏ.'
+
+MERGE (o1:disease {id: 'sỏi_thận_disease'})
+MERGE (o2:treatment {id: 'tán_sỏi_treatment'})
+MERGE (o1)-[r130:treatedBy]->(o2)
+SET r130.text = 'Các phương pháp sử dụng có thể là uống thuốc giảm đau, tán sỏi hoặc phẫu thuật cắt bỏ.'
+
+MERGE (o1:disease {id: 'sỏi_thận_disease'})
+MERGE (o2:treatment {id: 'phẫu_thuật_cắt_bỏ_treatment'})
+MERGE (o1)-[r131:treatedBy]->(o2)
+SET r131.text = 'Các phương pháp sử dụng có thể là uống thuốc giảm đau, tán sỏi hoặc phẫu thuật cắt bỏ.'
+
+MERGE (o1:symptom {id: 'kích_thước_sỏi_symptom'})
+MERGE (o2:disease {id: 'sỏi_thận_disease'})
+MERGE (o1)-[r132:associatedWith]->(o2)
+SET r132.text = 'Điều này tùy vào kích thước sỏi của người bệnh.'
+
+MERGE (o1:disease {id: 'bệnh_thận_do_acid_uric_disease'})
+MERGE (o2:treatment {id: 'chế_độ_ăn_uống_phù_hợp_treatment'})
+MERGE (o1)-[r133:treatedBy]->(o2)
+SET r133.text = 'Kết hợp với chế độ ăn uống phù hợp với người bị bệnh thận do acid uric để thúc đẩy quá trình cải thiện chức năng thận và cân bằng hàm lượng acid uric.'
+
+MERGE (o1:disease {id: 'bệnh_thận_do_acid_uric_disease'})
+MERGE (o2:organ {id: 'chức_năng_thận_organ'})
+MERGE (o1)-[r134:affects]->(o2)
+SET r134.text = 'Kết hợp với chế độ ăn uống phù hợp với người bị bệnh thận do acid uric để thúc đẩy quá trình cải thiện chức năng thận và cân bằng hàm lượng acid uric.'
+
+MERGE (o1:disease {id: 'bệnh_thận_do_acid_uric_disease'})
+MERGE (o2:disease {id: 'cân_bằng_hàm_lượng_acid_uric_disease'})
+MERGE (o1)-[r135:treatedBy]->(o2)
+SET r135.text = 'Kết hợp với chế độ ăn uống phù hợp với người bị bệnh thận do acid uric để thúc đẩy quá trình cải thiện chức năng thận và cân bằng hàm lượng acid uric.'
+
+MERGE (o1:disease {id: 'tăng_acid_uric_disease'})
+MERGE (o2:food {id: 'không_ăn_nội_tạng_động_vật_food'})
+MERGE (o1)-[r136:treatedBy]->(o2)
+SET r136.text = 'Những lưu ý dinh dưỡng dành cho người tăng acid uric bao gồm:  Không ăn nội tạng động vật Hạn chế hải sản có vỏ như tôm, cua… Hạn chế những loại thịt đỏ như thit bò, thịt dê, thịt cừu&#8230; Không uống rượu bia và các thực phẩm có chứa cafein, không hút thuốc lá. Ưu tiên hấp thu đạm từ thực vật Ăn nhiều rau xanh Uống nhiều nước'
+
+MERGE (o1:disease {id: 'tăng_acid_uric_disease'})
+MERGE (o2:food {id: 'hạn_chế_hải_sản_có_vỏ_food'})
+MERGE (o1)-[r137:treatedBy]->(o2)
+SET r137.text = 'Những lưu ý dinh dưỡng dành cho người tăng acid uric bao gồm:  Không ăn nội tạng động vật Hạn chế hải sản có vỏ như tôm, cua… Hạn chế những loại thịt đỏ như thit bò, thịt dê, thịt cừu&#8230; Không uống rượu bia và các thực phẩm có chứa cafein, không hút thuốc lá. Ưu tiên hấp thu đạm từ thực vật Ăn nhiều rau xanh Uống nhiều nước'
+
+MERGE (o1:disease {id: 'tăng_acid_uric_disease'})
+MERGE (o2:food {id: 'hạn_chế_những_loại_thịt_đỏ_food'})
+MERGE (o1)-[r138:treatedBy]->(o2)
+SET r138.text = 'Những lưu ý dinh dưỡng dành cho người tăng acid uric bao gồm:  Không ăn nội tạng động vật Hạn chế hải sản có vỏ như tôm, cua… Hạn chế những loại thịt đỏ như thit bò, thịt dê, thịt cừu&#8230; Không uống rượu bia và các thực phẩm có chứa cafein, không hút thuốc lá. Ưu tiên hấp thu đạm từ thực vật Ăn nhiều rau xanh Uống nhiều nước'
+
+MERGE (o1:disease {id: 'tăng_acid_uric_disease'})
+MERGE (o2:food {id: 'không_uống_rượu_bia_food'})
+MERGE (o1)-[r139:treatedBy]->(o2)
+SET r139.text = 'Những lưu ý dinh dưỡng dành cho người tăng acid uric bao gồm:  Không ăn nội tạng động vật Hạn chế hải sản có vỏ như tôm, cua… Hạn chế những loại thịt đỏ như thit bò, thịt dê, thịt cừu&#8230; Không uống rượu bia và các thực phẩm có chứa cafein, không hút thuốc lá. Ưu tiên hấp thu đạm từ thực vật Ăn nhiều rau xanh Uống nhiều nước'
+
+MERGE (o1:disease {id: 'tăng_acid_uric_disease'})
+MERGE (o2:food {id: 'các_thực_phẩm_có_chứa_cafein_food'})
+MERGE (o1)-[r140:treatedBy]->(o2)
+SET r140.text = 'Những lưu ý dinh dưỡng dành cho người tăng acid uric bao gồm:  Không ăn nội tạng động vật Hạn chế hải sản có vỏ như tôm, cua… Hạn chế những loại thịt đỏ như thit bò, thịt dê, thịt cừu&#8230; Không uống rượu bia và các thực phẩm có chứa cafein, không hút thuốc lá. Ưu tiên hấp thu đạm từ thực vật Ăn nhiều rau xanh Uống nhiều nước'
+
+MERGE (o1:disease {id: 'tăng_acid_uric_disease'})
+MERGE (o2:lifestyle {id: 'không_hút_thuốc_lá_lifestyle'})
+MERGE (o1)-[r141:treatedBy]->(o2)
+SET r141.text = 'Những lưu ý dinh dưỡng dành cho người tăng acid uric bao gồm:  Không ăn nội tạng động vật Hạn chế hải sản có vỏ như tôm, cua… Hạn chế những loại thịt đỏ như thit bò, thịt dê, thịt cừu&#8230; Không uống rượu bia và các thực phẩm có chứa cafein, không hút thuốc lá. Ưu tiên hấp thu đạm từ thực vật Ăn nhiều rau xanh Uống nhiều nước'
+
+MERGE (o1:disease {id: 'tăng_acid_uric_disease'})
+MERGE (o2:food {id: 'ưu_tiên_hấp_thu_đạm_từ_thực_vật_food'})
+MERGE (o1)-[r142:treatedBy]->(o2)
+SET r142.text = 'Những lưu ý dinh dưỡng dành cho người tăng acid uric bao gồm:  Không ăn nội tạng động vật Hạn chế hải sản có vỏ như tôm, cua… Hạn chế những loại thịt đỏ như thit bò, thịt dê, thịt cừu&#8230; Không uống rượu bia và các thực phẩm có chứa cafein, không hút thuốc lá. Ưu tiên hấp thu đạm từ thực vật Ăn nhiều rau xanh Uống nhiều nước'
+
+MERGE (o1:treatment {id: 'phương_pháp_phòng_ngừa_tăng_acid_uric_trong_máu_treatment'})
+MERGE (o2:lifestyle {id: 'quá_trình_chăm_sóc_sức_khỏe_toàn_diện_lifestyle'})
+MERGE (o1)-[r143:preventedBy]->(o2)
+SET r143.text = 'Phương pháp phòng ngừa tăng acid uric trong máu hiệu quả nhất đến từ quá trình chăm sóc sức khỏe toàn diện.'
+
+MERGE (o1:disease {id: 'acid_uric_cao_disease'})
+MERGE (o2:cause {id: 'nguyên_nhân_trực_tiếp_cause'})
+MERGE (o1)-[r144:causedBy]->(o2)
+SET r144.text = 'Vì chưa xác định cụ thể nguyên nhân trực tiếp gây ra acid uric cao, việc phòng ngừa sẽ tập trung vào việc điều chỉnh chế độ dinh dưỡng lành mạnh, đầy đủ các chất.'
+
+MERGE (o1:treatment {id: 'việc_phòng_ngừa_treatment'})
+MERGE (o2:lifestyle {id: 'chế_độ_dinh_dưỡng_lành_mạnh__đầy_đủ_các_chất_lifestyle'})
+MERGE (o1)-[r145:preventedBy]->(o2)
+SET r145.text = 'Vì chưa xác định cụ thể nguyên nhân trực tiếp gây ra acid uric cao, việc phòng ngừa sẽ tập trung vào việc điều chỉnh chế độ dinh dưỡng lành mạnh, đầy đủ các chất.'
+
+MERGE (o1:lifestyle {id: 'hấp_thu_quá_nhiều_purine_lifestyle'})
+MERGE (o2:disease {id: 'rối_loạn_chuyển_hóa_disease'})
+MERGE (o1)-[r146:causes]->(o2)
+SET r146.text = 'Đảm bảo không hấp thu quá nhiều purine để gây ra rối loạn chuyển hóa.'
+
+MERGE (o1:disease {id: 'tăng_acid_uric_máu_disease'})
+MERGE (o2:disease {id: 'gout_disease'})
+MERGE (o1)-[r147:isSymptomOf]->(o2)
+SET r147.text = 'Nhận biết sớm các tình trạng gout và bệnh thận cũng góp phần làm giảm gánh nặng điều trị ở những bệnh nhân tăng acid uric máu.'
+
+MERGE (o1:disease {id: 'tăng_acid_uric_máu_disease'})
+MERGE (o2:disease {id: 'bệnh_thận_disease'})
+MERGE (o1)-[r148:isSymptomOf]->(o2)
+SET r148.text = 'Nhận biết sớm các tình trạng gout và bệnh thận cũng góp phần làm giảm gánh nặng điều trị ở những bệnh nhân tăng acid uric máu.'
+
+MERGE (o1:treatment {id: 'gánh_nặng_điều_trị_treatment'})
+MERGE (o2:disease {id: 'tăng_acid_uric_máu_disease'})
+MERGE (o1)-[r149:treatedBy]->(o2)
+SET r149.text = 'Nhận biết sớm các tình trạng gout và bệnh thận cũng góp phần làm giảm gánh nặng điều trị ở những bệnh nhân tăng acid uric máu.'
+
+MERGE (o1:lifestyle {id: 'cắt_bỏ_bất_kỳ_loại_thực_phẩm_nào_ra_khỏi_chế_độ_ăn_lifestyle'})
+MERGE (o2:disease {id: 'vấn_đề_bệnh_lý_khác_disease'})
+MERGE (o1)-[r150:relatedTo]->(o2)
+SET r150.text = 'Cần lưu ý rằng, không nhất thiết phải cắt bỏ bất kỳ loại thực phẩm nào ra khỏi chế độ ăn nếu không có vấn đề bệnh lý khác hoặc bị dị ứng.'
+
+MERGE (o1:lifestyle {id: 'cắt_bỏ_bất_kỳ_loại_thực_phẩm_nào_ra_khỏi_chế_độ_ăn_lifestyle'})
+MERGE (o2:disease {id: 'dị_ứng_disease'})
+MERGE (o1)-[r151:relatedTo]->(o2)
+SET r151.text = 'Cần lưu ý rằng, không nhất thiết phải cắt bỏ bất kỳ loại thực phẩm nào ra khỏi chế độ ăn nếu không có vấn đề bệnh lý khác hoặc bị dị ứng.'
+
+MERGE (o1:lifestyle {id: 'chế_độ_dinh_dưỡng_khoa_học_lifestyle'})
+MERGE (o2:disease {id: 'tăng_acid_uric_trong_máu_disease'})
+MERGE (o1)-[r152:preventedBy]->(o2)
+SET r152.text = 'Một chế độ dinh dưỡng khoa học, phù hợp là chế độ ăn có kiểm soát các lượng chất mà bạn hấp thu vào cơ thể mỗi ngày.'
+
+MERGE (o1:disease {id: 'acid_uric_cao_disease'})
+MERGE (o2:food {id: 'các_loại_trái_cây_ngọt__có_hàm_lượng_đường_fructose_cao_food'})
+MERGE (o1)-[r153:aggravatedBy]->(o2)
+SET r153.text = 'Những loại thực phẩm cần kiểm soát cẩn thận hàm lượng dung nạp vào cơ thể để tránh bị acid uric cao gồm:'
+
+MERGE (o1:disease {id: 'acid_uric_cao_disease'})
+MERGE (o2:food {id: 'nội_tạng_động_vật_food'})
+MERGE (o1)-[r154:aggravatedBy]->(o2)
+SET r154.text = 'Những loại thực phẩm cần kiểm soát cẩn thận hàm lượng dung nạp vào cơ thể để tránh bị acid uric cao gồm:'
+
+MERGE (o1:disease {id: 'acid_uric_cao_disease'})
+MERGE (o2:food {id: 'thịt_đỏ_food'})
+MERGE (o1)-[r155:aggravatedBy]->(o2)
+SET r155.text = 'Những loại thực phẩm cần kiểm soát cẩn thận hàm lượng dung nạp vào cơ thể để tránh bị acid uric cao gồm:'
+
+MERGE (o1:disease {id: 'acid_uric_cao_disease'})
+MERGE (o2:food {id: 'hải_sản_có_vỏ_food'})
+MERGE (o1)-[r156:aggravatedBy]->(o2)
+SET r156.text = 'Những loại thực phẩm cần kiểm soát cẩn thận hàm lượng dung nạp vào cơ thể để tránh bị acid uric cao gồm:'
+
+MERGE (o1:disease {id: 'acid_uric_cao_disease'})
+MERGE (o2:food {id: 'đồ_uống_có_cồn_food'})
+MERGE (o1)-[r157:aggravatedBy]->(o2)
+SET r157.text = 'Những loại thực phẩm cần kiểm soát cẩn thận hàm lượng dung nạp vào cơ thể để tránh bị acid uric cao gồm:'
+
+MERGE (o1:organ {id: 'trung_tâm_chấn_thương_chỉnh_hình__hệ_thống_bvđk_tâm_anh_organ'})
+MERGE (o2:organ {id: 'hệ_thống_bvđk_tâm_anh_organ'})
+MERGE (o1)-[r158:locatedIn]->(o2)
+SET r158.text = 'Trung tâm Chấn thương chỉnh hình, Hệ thống BVĐK Tâm Anh, là nơi quy tụ đội ngũ chuyên gia đầu ngành, bác sĩ ngoại khoa giàu kinh nghiệm, tận tâm, nhiệt tình như: TTND.GS.TS.BS Nguyễn Việt Tiến; PGS.TS.BS Đặng Hồng Hoa; TS.BS Tăng Hà Nam Anh; ThS.BS.CKII Trần Anh Vũ; BS.CKI Trần Xuân Anh, ThS.BS.CKI Lê Đình Khoa, ThS.BS Nguyễn Quang Tôn Quyền; TS.BS Đỗ Tiến Dũng; TS.BS.CKII Vũ Hữu Dũng…'
+
+MERGE (o1:treatment {id: 'ttnd.gs.ts.bs_nguyễn_việt_tiến_treatment'})
+MERGE (o2:disease {id: 'tăng_acid_uric_trong_máu_disease'})
+MERGE (o1)-[r159:treatedBy]->(o2)
+SET r159.text = 'Trung tâm Chấn thương chỉnh hình, Hệ thống BVĐK Tâm Anh, là nơi quy tụ đội ngũ chuyên gia đầu ngành, bác sĩ ngoại khoa giàu kinh nghiệm, tận tâm, nhiệt tình như: TTND.GS.TS.BS Nguyễn Việt Tiến; PGS.TS.BS Đặng Hồng Hoa; TS.BS Tăng Hà Nam Anh; ThS.BS.CKII Trần Anh Vũ; BS.CKI Trần Xuân Anh, ThS.BS.CKI Lê Đình Khoa, ThS.BS Nguyễn Quang Tôn Quyền; TS.BS Đỗ Tiến Dũng; TS.BS.CKII Vũ Hữu Dũng…'
+
+MERGE (o1:treatment {id: 'pgs.ts.bs_đặng_hồng_hoa_treatment'})
+MERGE (o2:disease {id: 'tăng_acid_uric_trong_máu_disease'})
+MERGE (o1)-[r160:treatedBy]->(o2)
+SET r160.text = 'Trung tâm Chấn thương chỉnh hình, Hệ thống BVĐK Tâm Anh, là nơi quy tụ đội ngũ chuyên gia đầu ngành, bác sĩ ngoại khoa giàu kinh nghiệm, tận tâm, nhiệt tình như: TTND.GS.TS.BS Nguyễn Việt Tiến; PGS.TS.BS Đặng Hồng Hoa; TS.BS Tăng Hà Nam Anh; ThS.BS.CKII Trần Anh Vũ; BS.CKI Trần Xuân Anh, ThS.BS.CKI Lê Đình Khoa, ThS.BS Nguyễn Quang Tôn Quyền; TS.BS Đỗ Tiến Dũng; TS.BS.CKII Vũ Hữu Dũng…'
+
+MERGE (o1:treatment {id: 'ts.bs_tăng_hà_nam_anh_treatment'})
+MERGE (o2:disease {id: 'tăng_acid_uric_trong_máu_disease'})
+MERGE (o1)-[r161:treatedBy]->(o2)
+SET r161.text = 'Trung tâm Chấn thương chỉnh hình, Hệ thống BVĐK Tâm Anh, là nơi quy tụ đội ngũ chuyên gia đầu ngành, bác sĩ ngoại khoa giàu kinh nghiệm, tận tâm, nhiệt tình như: TTND.GS.TS.BS Nguyễn Việt Tiến; PGS.TS.BS Đặng Hồng Hoa; TS.BS Tăng Hà Nam Anh; ThS.BS.CKII Trần Anh Vũ; BS.CKI Trần Xuân Anh, ThS.BS.CKI Lê Đình Khoa, ThS.BS Nguyễn Quang Tôn Quyền; TS.BS Đỗ Tiến Dũng; TS.BS.CKII Vũ Hữu Dũng…'
+
+MERGE (o1:treatment {id: 'ths.bs.ckii_trần_anh_vũ_treatment'})
+MERGE (o2:disease {id: 'tăng_acid_uric_trong_máu_disease'})
+MERGE (o1)-[r162:treatedBy]->(o2)
+SET r162.text = 'Trung tâm Chấn thương chỉnh hình, Hệ thống BVĐK Tâm Anh, là nơi quy tụ đội ngũ chuyên gia đầu ngành, bác sĩ ngoại khoa giàu kinh nghiệm, tận tâm, nhiệt tình như: TTND.GS.TS.BS Nguyễn Việt Tiến; PGS.TS.BS Đặng Hồng Hoa; TS.BS Tăng Hà Nam Anh; ThS.BS.CKII Trần Anh Vũ; BS.CKI Trần Xuân Anh, ThS.BS.CKI Lê Đình Khoa, ThS.BS Nguyễn Quang Tôn Quyền; TS.BS Đỗ Tiến Dũng; TS.BS.CKII Vũ Hữu Dũng…'
+
+MERGE (o1:treatment {id: 'bs.cki_trần_xuân_anh_treatment'})
+MERGE (o2:disease {id: 'tăng_acid_uric_trong_máu_disease'})
+MERGE (o1)-[r163:treatedBy]->(o2)
+SET r163.text = 'Trung tâm Chấn thương chỉnh hình, Hệ thống BVĐK Tâm Anh, là nơi quy tụ đội ngũ chuyên gia đầu ngành, bác sĩ ngoại khoa giàu kinh nghiệm, tận tâm, nhiệt tình như: TTND.GS.TS.BS Nguyễn Việt Tiến; PGS.TS.BS Đặng Hồng Hoa; TS.BS Tăng Hà Nam Anh; ThS.BS.CKII Trần Anh Vũ; BS.CKI Trần Xuân Anh, ThS.BS.CKI Lê Đình Khoa, ThS.BS Nguyễn Quang Tôn Quyền; TS.BS Đỗ Tiến Dũng; TS.BS.CKII Vũ Hữu Dũng…'
+
+MERGE (o1:treatment {id: 'ths.bs.cki_lê_đình_khoa_treatment'})
+MERGE (o2:disease {id: 'tăng_acid_uric_trong_máu_disease'})
+MERGE (o1)-[r164:treatedBy]->(o2)
+SET r164.text = 'Trung tâm Chấn thương chỉnh hình, Hệ thống BVĐK Tâm Anh, là nơi quy tụ đội ngũ chuyên gia đầu ngành, bác sĩ ngoại khoa giàu kinh nghiệm, tận tâm, nhiệt tình như: TTND.GS.TS.BS Nguyễn Việt Tiến; PGS.TS.BS Đặng Hồng Hoa; TS.BS Tăng Hà Nam Anh; ThS.BS.CKII Trần Anh Vũ; BS.CKI Trần Xuân Anh, ThS.BS.CKI Lê Đình Khoa, ThS.BS Nguyễn Quang Tôn Quyền; TS.BS Đỗ Tiến Dũng; TS.BS.CKII Vũ Hữu Dũng…'
+
+MERGE (o1:treatment {id: 'ths.bs_nguyễn_quang_tôn_quyền_treatment'})
+MERGE (o2:disease {id: 'tăng_acid_uric_trong_máu_disease'})
+MERGE (o1)-[r165:treatedBy]->(o2)
+SET r165.text = 'Trung tâm Chấn thương chỉnh hình, Hệ thống BVĐK Tâm Anh, là nơi quy tụ đội ngũ chuyên gia đầu ngành, bác sĩ ngoại khoa giàu kinh nghiệm, tận tâm, nhiệt tình như: TTND.GS.TS.BS Nguyễn Việt Tiến; PGS.TS.BS Đặng Hồng Hoa; TS.BS Tăng Hà Nam Anh; ThS.BS.CKII Trần Anh Vũ; BS.CKI Trần Xuân Anh, ThS.BS.CKI Lê Đình Khoa, ThS.BS Nguyễn Quang Tôn Quyền; TS.BS Đỗ Tiến Dũng; TS.BS.CKII Vũ Hữu Dũng…'
+
+MERGE (o1:treatment {id: 'ts.bs_đỗ_tiến_dũng_treatment'})
+MERGE (o2:disease {id: 'tăng_acid_uric_trong_máu_disease'})
+MERGE (o1)-[r166:treatedBy]->(o2)
+SET r166.text = 'Trung tâm Chấn thương chỉnh hình, Hệ thống BVĐK Tâm Anh, là nơi quy tụ đội ngũ chuyên gia đầu ngành, bác sĩ ngoại khoa giàu kinh nghiệm, tận tâm, nhiệt tình như: TTND.GS.TS.BS Nguyễn Việt Tiến; PGS.TS.BS Đặng Hồng Hoa; TS.BS Tăng Hà Nam Anh; ThS.BS.CKII Trần Anh Vũ; BS.CKI Trần Xuân Anh, ThS.BS.CKI Lê Đình Khoa, ThS.BS Nguyễn Quang Tôn Quyền; TS.BS Đỗ Tiến Dũng; TS.BS.CKII Vũ Hữu Dũng…'
+
+MERGE (o1:treatment {id: 'ts.bs.ckii_vũ_hữu_dũng_treatment'})
+MERGE (o2:disease {id: 'tăng_acid_uric_trong_máu_disease'})
+MERGE (o1)-[r167:treatedBy]->(o2)
+SET r167.text = 'Trung tâm Chấn thương chỉnh hình, Hệ thống BVĐK Tâm Anh, là nơi quy tụ đội ngũ chuyên gia đầu ngành, bác sĩ ngoại khoa giàu kinh nghiệm, tận tâm, nhiệt tình như: TTND.GS.TS.BS Nguyễn Việt Tiến; PGS.TS.BS Đặng Hồng Hoa; TS.BS Tăng Hà Nam Anh; ThS.BS.CKII Trần Anh Vũ; BS.CKI Trần Xuân Anh, ThS.BS.CKI Lê Đình Khoa, ThS.BS Nguyễn Quang Tôn Quyền; TS.BS Đỗ Tiến Dũng; TS.BS.CKII Vũ Hữu Dũng…'
+
+MERGE (o1:treatment {id: 'chẩn_đoán_và_điều_trị_các_bệnh_về_cơ_xương_khớp_treatment'})
+MERGE (o2:disease {id: 'tăng_acid_uric_trong_máu_disease'})
+MERGE (o1)-[r168:treatedBy]->(o2)
+SET r168.text = 'Đây cũng là một trong những đơn vị tiên phong trong việc chẩn đoán và điều trị các bệnh về cơ xương khớp với kỹ thuật hiện đại theo phác đồ cập nhật quốc tế.'
+
+MERGE (o1:test {id: 'máy_chụp_ct_768_lát_cắt_somatom_drive_test'})
+MERGE (o2:disease {id: 'tăng_acid_uric_trong_máu_disease'})
+MERGE (o1)-[r169:diagnosedBy]->(o2)
+SET r169.text = 'Bệnh viện còn được trang bị hệ thống máy móc, trang thiết bị chẩn đoán hình ảnh hiện đại như: máy chụp CT 768 lát cắt Somatom Drive, máy cộng hưởng từ thế hệ mới Magnetom Amira BioMatrix, robot Artis Pheno, máy đo mật độ xương, máy siêu âm…; hệ thống kính vi phẫu thuật Opmi Vario 700 Zeiss, bàn mổ Meera-Maquet… để có thể phát hiện sớm các tổn thương và điều trị hiệu quả các bệnh lý về cơ xương khớp…'
+
+MERGE (o1:test {id: 'máy_cộng_hưởng_từ_thế_hệ_mới_magnetom_amira_biomatrix_test'})
+MERGE (o2:disease {id: 'tăng_acid_uric_trong_máu_disease'})
+MERGE (o1)-[r170:diagnosedBy]->(o2)
+SET r170.text = 'Bệnh viện còn được trang bị hệ thống máy móc, trang thiết bị chẩn đoán hình ảnh hiện đại như: máy chụp CT 768 lát cắt Somatom Drive, máy cộng hưởng từ thế hệ mới Magnetom Amira BioMatrix, robot Artis Pheno, máy đo mật độ xương, máy siêu âm…; hệ thống kính vi phẫu thuật Opmi Vario 700 Zeiss, bàn mổ Meera-Maquet… để có thể phát hiện sớm các tổn thương và điều trị hiệu quả các bệnh lý về cơ xương khớp…'
+
+MERGE (o1:test {id: 'robot_artis_pheno_test'})
+MERGE (o2:disease {id: 'tăng_acid_uric_trong_máu_disease'})
+MERGE (o1)-[r171:diagnosedBy]->(o2)
+SET r171.text = 'Bệnh viện còn được trang bị hệ thống máy móc, trang thiết bị chẩn đoán hình ảnh hiện đại như: máy chụp CT 768 lát cắt Somatom Drive, máy cộng hưởng từ thế hệ mới Magnetom Amira BioMatrix, robot Artis Pheno, máy đo mật độ xương, máy siêu âm…; hệ thống kính vi phẫu thuật Opmi Vario 700 Zeiss, bàn mổ Meera-Maquet… để có thể phát hiện sớm các tổn thương và điều trị hiệu quả các bệnh lý về cơ xương khớp…'
+
+MERGE (o1:test {id: 'máy_đo_mật_độ_xương_test'})
+MERGE (o2:disease {id: 'tăng_acid_uric_trong_máu_disease'})
+MERGE (o1)-[r172:diagnosedBy]->(o2)
+SET r172.text = 'Bệnh viện còn được trang bị hệ thống máy móc, trang thiết bị chẩn đoán hình ảnh hiện đại như: máy chụp CT 768 lát cắt Somatom Drive, máy cộng hưởng từ thế hệ mới Magnetom Amira BioMatrix, robot Artis Pheno, máy đo mật độ xương, máy siêu âm…; hệ thống kính vi phẫu thuật Opmi Vario 700 Zeiss, bàn mổ Meera-Maquet… để có thể phát hiện sớm các tổn thương và điều trị hiệu quả các bệnh lý về cơ xương khớp…'
+
+MERGE (o1:test {id: 'máy_siêu_âm_test'})
+MERGE (o2:disease {id: 'tăng_acid_uric_trong_máu_disease'})
+MERGE (o1)-[r173:diagnosedBy]->(o2)
+SET r173.text = 'Bệnh viện còn được trang bị hệ thống máy móc, trang thiết bị chẩn đoán hình ảnh hiện đại như: máy chụp CT 768 lát cắt Somatom Drive, máy cộng hưởng từ thế hệ mới Magnetom Amira BioMatrix, robot Artis Pheno, máy đo mật độ xương, máy siêu âm…; hệ thống kính vi phẫu thuật Opmi Vario 700 Zeiss, bàn mổ Meera-Maquet… để có thể phát hiện sớm các tổn thương và điều trị hiệu quả các bệnh lý về cơ xương khớp…'
+
+MERGE (o1:test {id: 'kính_vi_phẫu_thuật_opmi_vario_700_zeiss_test'})
+MERGE (o2:disease {id: 'tăng_acid_uric_trong_máu_disease'})
+MERGE (o1)-[r174:diagnosedBy]->(o2)
+SET r174.text = 'Bệnh viện còn được trang bị hệ thống máy móc, trang thiết bị chẩn đoán hình ảnh hiện đại như: máy chụp CT 768 lát cắt Somatom Drive, máy cộng hưởng từ thế hệ mới Magnetom Amira BioMatrix, robot Artis Pheno, máy đo mật độ xương, máy siêu âm…; hệ thống kính vi phẫu thuật Opmi Vario 700 Zeiss, bàn mổ Meera-Maquet… để có thể phát hiện sớm các tổn thương và điều trị hiệu quả các bệnh lý về cơ xương khớp…'
+
+MERGE (o1:test {id: 'bàn_mổ_meera-maquet_test'})
+MERGE (o2:disease {id: 'tăng_acid_uric_trong_máu_disease'})
+MERGE (o1)-[r175:diagnosedBy]->(o2)
+SET r175.text = 'Bệnh viện còn được trang bị hệ thống máy móc, trang thiết bị chẩn đoán hình ảnh hiện đại như: máy chụp CT 768 lát cắt Somatom Drive, máy cộng hưởng từ thế hệ mới Magnetom Amira BioMatrix, robot Artis Pheno, máy đo mật độ xương, máy siêu âm…; hệ thống kính vi phẫu thuật Opmi Vario 700 Zeiss, bàn mổ Meera-Maquet… để có thể phát hiện sớm các tổn thương và điều trị hiệu quả các bệnh lý về cơ xương khớp…'
+
+MERGE (o1:organ {id: 'bvđk_tâm_anh_organ'})
+MERGE (o2:organ {id: 'hệ_thống_bvđk_tâm_anh_organ'})
+MERGE (o1)-[r176:locatedIn]->(o2)
+SET r176.text = 'BVĐK Tâm Anh còn sở hữu hệ thống phòng khám khang trang, khu nội trú cao cấp; khu vực phục hồi chức năng hiện đại; quy trình chăm sóc hậu phẫu toàn diện giúp bệnh nhân nhanh chóng hồi phục và ổn định sức khỏe sau phẫu thuật.'

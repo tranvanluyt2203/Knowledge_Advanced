@@ -1,0 +1,750 @@
+
+MERGE (o1:disease {id: 'u_tuyến_tùng_disease'})
+MERGE (o2:lifestyle {id: 'trẻ_em_và_người_lớn_dưới_40_tuổi_lifestyle'})
+MERGE (o1)-[r0:isSymptomOf]->(o2)
+SET r0.text = 'U tuyến tùng là bệnh hiếm gặp nhưng không nên chủ quan vì trẻ em và người lớn dưới 40 tuổi vẫn có thể gặp phải.'
+
+MERGE (o1:disease {id: 'u_tuyến_tùng_disease'})
+MERGE (o2:organ {id: 'não_organ'})
+MERGE (o1)-[r1:relatedTo]->(o2)
+SET r1.text = 'Vậy u tuyến tùng là gì? U tuyến tùng có nguy hiểm không? Hay nguyên nhân u tuyến tùng trong não ra sao?'
+
+MERGE (o1:disease {id: 'u_tuyến_tùng_disease'})
+MERGE (o2:test {id: 'thuật_ngữ_y_khoa_test'})
+MERGE (o1)-[r2:relatedTo]->(o2)
+SET r2.text = 'U tuyến tùng là một trong những thuật ngữ y khoa nhận được lượt tìm kiếm tăng cao trong thời gian gần đây.'
+
+MERGE (o1:disease {id: 'u_tuyến_tùng_disease'})
+MERGE (o2:test {id: 'chẩn_đoán_test'})
+MERGE (o1)-[r3:diagnosedBy]->(o2)
+SET r3.text = 'Các thắc mắc thường gặp bao gồm: u tuyến tùng là gì, u tuyến tùng có nguy hiểm không, dấu hiệu, nguyên nhân và cách chẩn đoán u tuyến tùng trong não ra sao...'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:organ {id: 'vùng_tuyến_tùng_organ'})
+MERGE (o1)-[r4:locatedIn]->(o2)
+SET r4.text = 'Sự xuất hiện của khối u ở vùng tuyến tùng tương đối hiếm gặp nên có thể gây khó khăn hay nhầm lẫn trong chẩn đoán.'
+
+MERGE (o1:organ {id: 'tuyến_tùng_organ'})
+MERGE (o2:organ {id: 'não_organ'})
+MERGE (o1)-[r5:relatedTo]->(o2)
+SET r5.text = 'Hiện nay, có thể nhiều người vẫn còn cảm thấy xa lạ khi nghe nhắc đến “tuyến tùng”.'
+
+MERGE (o1:organ {id: 'tuyến_tùng_organ'})
+MERGE (o2:organ {id: 'hộp_sọ_organ'})
+MERGE (o1)-[r6:locatedIn]->(o2)
+SET r6.text = 'Tuyến tùng là một tuyến nội tiết nhỏ trong hộp sọ, nằm ở vị trí gần trung tâm não, có chức năng điều chỉnh nhịp sinh học (chu kỳ thức – ngủ) cho cơ thể.'
+
+MERGE (o1:organ {id: 'tuyến_tùng_organ'})
+MERGE (o2:organ {id: 'não_organ'})
+MERGE (o1)-[r7:locatedIn]->(o2)
+SET r7.text = 'Tuyến tùng là một tuyến nội tiết nhỏ trong hộp sọ, nằm ở vị trí gần trung tâm não, có chức năng điều chỉnh nhịp sinh học (chu kỳ thức – ngủ) cho cơ thể.'
+
+MERGE (o1:organ {id: 'tuyến_tùng_organ'})
+MERGE (o2:symptom {id: 'nhịp_sinh_học_symptom'})
+MERGE (o1)-[r8:affects]->(o2)
+SET r8.text = 'Tuyến tùng là một tuyến nội tiết nhỏ trong hộp sọ, nằm ở vị trí gần trung tâm não, có chức năng điều chỉnh nhịp sinh học (chu kỳ thức – ngủ) cho cơ thể.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_treatment'})
+MERGE (o2:organ {id: 'vùng_tuyến_tùng_organ'})
+MERGE (o1)-[r9:treatedBy]->(o2)
+SET r9.text = 'Với vị trí nằm sâu trong nhu mô của não bộ, xung quanh là rất nhiều mạch máu nên việc phẫu thuật tiếp cận vùng tuyến tùng luôn là thách thức lớn đối với các bác sĩ phẫu thuật thần kinh.'
+
+MERGE (o1:disease {id: 'khối_u_tuyến_tùng_disease'})
+MERGE (o2:organ {id: 'vùng_tuyến_tùng_organ'})
+MERGE (o1)-[r10:locatedIn]->(o2)
+SET r10.text = 'Khối u tuyến tùng xuất hiện ở vùng tuyến tùng, bao gồm u các thành phần và u của tuyến tùng.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:organ {id: 'não_thất_iii_organ'})
+MERGE (o1)-[r11:affects]->(o2)
+SET r11.text = 'Khối u này có khả năng cao sẽ chèn ép não thất III, chèn ép cống não và gây ra tình trạng não úng thủy.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:organ {id: 'cống_não_organ'})
+MERGE (o1)-[r12:affects]->(o2)
+SET r12.text = 'Khối u này có khả năng cao sẽ chèn ép não thất III, chèn ép cống não và gây ra tình trạng não úng thủy.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:disease {id: 'não_úng_thủy_disease'})
+MERGE (o1)-[r13:isSymptomOf]->(o2)
+SET r13.text = 'Khối u này có khả năng cao sẽ chèn ép não thất III, chèn ép cống não và gây ra tình trạng não úng thủy.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:organ {id: 'tiểu_não_organ'})
+MERGE (o1)-[r14:affects]->(o2)
+SET r14.text = 'Chưa dừng lại, khối u ở vùng tuyến tùng còn gây chèn ép tiểu não, cuống não trên và chèn ép hố sau,… gây ra rất nhiều tình trạng rối loạn.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:organ {id: 'cuống_não_trên_organ'})
+MERGE (o1)-[r15:affects]->(o2)
+SET r15.text = 'Chưa dừng lại, khối u ở vùng tuyến tùng còn gây chèn ép tiểu não, cuống não trên và chèn ép hố sau,… gây ra rất nhiều tình trạng rối loạn.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:organ {id: 'hố_sau_organ'})
+MERGE (o1)-[r16:affects]->(o2)
+SET r16.text = 'Chưa dừng lại, khối u ở vùng tuyến tùng còn gây chèn ép tiểu não, cuống não trên và chèn ép hố sau,… gây ra rất nhiều tình trạng rối loạn.'
+
+MERGE (o1:disease {id: 'khối_u_vùng_tuyến_tùng_disease'})
+MERGE (o2:test {id: 'nghiên_cứu_y_khoa_test'})
+MERGE (o1)-[r17:relatedTo]->(o2)
+SET r17.text = 'Theo nhiều nghiên cứu y khoa trên thế giới, khối u vùng tuyến tùng khá hiếm gặp.'
+
+MERGE (o1:disease {id: 'khối_u_vùng_tuyến_tùng_disease'})
+MERGE (o2:lifestyle {id: 'người_trưởng_thành_lifestyle'})
+MERGE (o1)-[r18:relatedTo]->(o2)
+SET r18.text = 'Các kết quả nghiên cứu cho thấy rằng tỉ lệ người mắc phải chỉ khoảng 0,4 – 1% ở người trưởng thành và 3 – 8% ở trẻ em tại Châu Mỹ, Châu Âu (u trong não).'
+
+MERGE (o1:disease {id: 'khối_u_vùng_tuyến_tùng_disease'})
+MERGE (o2:lifestyle {id: 'trẻ_em_lifestyle'})
+MERGE (o1)-[r19:relatedTo]->(o2)
+SET r19.text = 'Các kết quả nghiên cứu cho thấy rằng tỉ lệ người mắc phải chỉ khoảng 0,4 – 1% ở người trưởng thành và 3 – 8% ở trẻ em tại Châu Mỹ, Châu Âu (u trong não).'
+
+MERGE (o1:disease {id: 'khối_u_vùng_tuyến_tùng_disease'})
+MERGE (o2:lifestyle {id: 'châu_mỹ_lifestyle'})
+MERGE (o1)-[r20:relatedTo]->(o2)
+SET r20.text = 'Các kết quả nghiên cứu cho thấy rằng tỉ lệ người mắc phải chỉ khoảng 0,4 – 1% ở người trưởng thành và 3 – 8% ở trẻ em tại Châu Mỹ, Châu Âu (u trong não).'
+
+MERGE (o1:disease {id: 'khối_u_vùng_tuyến_tùng_disease'})
+MERGE (o2:lifestyle {id: 'châu_âu_lifestyle'})
+MERGE (o1)-[r21:relatedTo]->(o2)
+SET r21.text = 'Các kết quả nghiên cứu cho thấy rằng tỉ lệ người mắc phải chỉ khoảng 0,4 – 1% ở người trưởng thành và 3 – 8% ở trẻ em tại Châu Mỹ, Châu Âu (u trong não).'
+
+MERGE (o1:disease {id: 'khối_u_vùng_tuyến_tùng_disease'})
+MERGE (o2:lifestyle {id: 'châu_á_lifestyle'})
+MERGE (o1)-[r22:relatedTo]->(o2)
+SET r22.text = 'Bệnh xuất hiện nhiều hơn ở Châu Á với tỉ lệ 3 – 9% (u trong sọ).'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:disease {id: 'ung_thư_disease'})
+MERGE (o1)-[r23:diagnosedBy]->(o2)
+SET r23.text = 'Các khối u tại vùng tuyến tùng không phải lúc nào cũng được chẩn đoán là ung thư.'
+
+MERGE (o1:disease {id: 'khối_u_tuyến_tùng_disease'})
+MERGE (o2:organ {id: 'não_bộ_organ'})
+MERGE (o1)-[r24:affects]->(o2)
+SET r24.text = 'Tuy nhiên, ngay cả khi lành tính thì khối u tuyến tùng vẫn gây ra nhiều vấn đề trong quá trình phát triển: chèn ép lên các phần khác của não bộ, tắc nghẽn lưu thông của dịch não tủy, làm tăng áp lực nội sọ.'
+
+MERGE (o1:disease {id: 'khối_u_tuyến_tùng_disease'})
+MERGE (o2:organ {id: 'dịch_não_tủy_organ'})
+MERGE (o1)-[r25:affects]->(o2)
+SET r25.text = 'Tuy nhiên, ngay cả khi lành tính thì khối u tuyến tùng vẫn gây ra nhiều vấn đề trong quá trình phát triển: chèn ép lên các phần khác của não bộ, tắc nghẽn lưu thông của dịch não tủy, làm tăng áp lực nội sọ.'
+
+MERGE (o1:disease {id: 'khối_u_tuyến_tùng_disease'})
+MERGE (o2:symptom {id: 'áp_lực_nội_sọ_symptom'})
+MERGE (o1)-[r26:isSymptomOf]->(o2)
+SET r26.text = 'Tuy nhiên, ngay cả khi lành tính thì khối u tuyến tùng vẫn gây ra nhiều vấn đề trong quá trình phát triển: chèn ép lên các phần khác của não bộ, tắc nghẽn lưu thông của dịch não tủy, làm tăng áp lực nội sọ.'
+
+MERGE (o1:disease {id: 'u_tế_bào_mầm_disease'})
+MERGE (o2:disease {id: 'u_tuyến_tùng_disease'})
+MERGE (o1)-[r27:relatedTo]->(o2)
+SET r27.text = 'Các loại u tuyến tùng thường gặp: u tế bào mầm, u nhu mô tuyến tùng, u tuyến tùng dạng nhú, u nguyên bào thông, u tuyến tùng hỗn hợp'
+
+MERGE (o1:disease {id: 'u_nhu_mô_tuyến_tùng_disease'})
+MERGE (o2:disease {id: 'u_tuyến_tùng_disease'})
+MERGE (o1)-[r28:relatedTo]->(o2)
+SET r28.text = 'Các loại u tuyến tùng thường gặp: u tế bào mầm, u nhu mô tuyến tùng, u tuyến tùng dạng nhú, u nguyên bào thông, u tuyến tùng hỗn hợp'
+
+MERGE (o1:disease {id: 'u_tuyến_tùng_dạng_nhú_disease'})
+MERGE (o2:disease {id: 'u_tuyến_tùng_disease'})
+MERGE (o1)-[r29:relatedTo]->(o2)
+SET r29.text = 'Các loại u tuyến tùng thường gặp: u tế bào mầm, u nhu mô tuyến tùng, u tuyến tùng dạng nhú, u nguyên bào thông, u tuyến tùng hỗn hợp'
+
+MERGE (o1:disease {id: 'u_nguyên_bào_thông_disease'})
+MERGE (o2:disease {id: 'u_tuyến_tùng_disease'})
+MERGE (o1)-[r30:relatedTo]->(o2)
+SET r30.text = 'Các loại u tuyến tùng thường gặp: u tế bào mầm, u nhu mô tuyến tùng, u tuyến tùng dạng nhú, u nguyên bào thông, u tuyến tùng hỗn hợp'
+
+MERGE (o1:disease {id: 'u_tuyến_tùng_hỗn_hợp_disease'})
+MERGE (o2:disease {id: 'u_tuyến_tùng_disease'})
+MERGE (o1)-[r31:relatedTo]->(o2)
+SET r31.text = 'Các loại u tuyến tùng thường gặp: u tế bào mầm, u nhu mô tuyến tùng, u tuyến tùng dạng nhú, u nguyên bào thông, u tuyến tùng hỗn hợp'
+
+MERGE (o1:disease {id: 'u_tế_bào_mầm_disease'})
+MERGE (o2:organ {id: 'sọ_não_organ'})
+MERGE (o1)-[r32:locatedIn]->(o2)
+SET r32.text = 'U tế bào mầm là nhóm các khối u nguyên phát trong sọ não và tương đối hiếm gặp.'
+
+MERGE (o1:disease {id: 'u_tế_bào_mầm_disease'})
+MERGE (o2:lifestyle {id: 'trẻ_từ_10_đến_12_tuổi_lifestyle'})
+MERGE (o1)-[r33:relatedTo]->(o2)
+SET r33.text = 'Loại u tế bào này thường phát triển ở trẻ từ 10 đến 12 tuổi.'
+
+MERGE (o1:disease {id: 'u_tế_bào_mầm_disease'})
+MERGE (o2:organ {id: 'vùng_tuyến_tùng_organ'})
+MERGE (o1)-[r34:locatedIn]->(o2)
+SET r34.text = 'U tế bào mầm thường gặp chủ yếu ở vùng tuyến tùng và vùng trên hố yên.'
+
+MERGE (o1:disease {id: 'u_tế_bào_mầm_disease'})
+MERGE (o2:organ {id: 'vùng_trên_hố_yên_organ'})
+MERGE (o1)-[r35:locatedIn]->(o2)
+SET r35.text = 'U tế bào mầm thường gặp chủ yếu ở vùng tuyến tùng và vùng trên hố yên.'
+
+MERGE (o1:disease {id: 'khối_u_nhu_mô_vùng_tuyến_tùng_disease'})
+MERGE (o2:symptom {id: 'lành_tính_symptom'})
+MERGE (o1)-[r36:relatedTo]->(o2)
+SET r36.text = 'Khối u nhu mô vùng tuyến tùng gồm nhóm các khối u từ tương đối lành tính đến ác tính cao.'
+
+MERGE (o1:disease {id: 'khối_u_nhu_mô_vùng_tuyến_tùng_disease'})
+MERGE (o2:symptom {id: 'ác_tính_symptom'})
+MERGE (o1)-[r37:relatedTo]->(o2)
+SET r37.text = 'Khối u nhu mô vùng tuyến tùng gồm nhóm các khối u từ tương đối lành tính đến ác tính cao.'
+
+MERGE (o1:disease {id: 'khối_u_nhu_mô_vùng_tuyến_tùng_disease'})
+MERGE (o2:symptom {id: 'cấp_độ_ii_hoặc_iii_symptom'})
+MERGE (o1)-[r38:relatedTo]->(o2)
+SET r38.text = 'Đây là cấp độ II hoặc III (cấp độ trung cấp) và có thể gặp ở mọi lứa tuổi.'
+
+MERGE (o1:disease {id: 'khối_u_nhu_mô_vùng_tuyến_tùng_disease'})
+MERGE (o2:symptom {id: 'tái_phát_symptom'})
+MERGE (o1)-[r39:relatedTo]->(o2)
+SET r39.text = 'Vì thuộc cấp độ trung cấp nên các khối u này vẫn có nguy cơ tái phát sau khi được loại bỏ.'
+
+MERGE (o1:disease {id: 'khối_u_nhú_vùng_tuyến_tùng_disease'})
+MERGE (o2:organ {id: 'vùng_tuyến_tùng_organ'})
+MERGE (o1)-[r40:locatedIn]->(o2)
+SET r40.text = 'Khối u nhú vùng tuyến tùng (PTPR) chỉ xuất hiện ở vùng tuyến tùng và xảy ra phổ biến nhất ở người trưởng thành.'
+
+MERGE (o1:disease {id: 'khối_u_nhú_vùng_tuyến_tùng_disease'})
+MERGE (o2:lifestyle {id: 'người_trưởng_thành_lifestyle'})
+MERGE (o1)-[r41:relatedTo]->(o2)
+SET r41.text = 'Khối u nhú vùng tuyến tùng (PTPR) chỉ xuất hiện ở vùng tuyến tùng và xảy ra phổ biến nhất ở người trưởng thành.'
+
+MERGE (o1:symptom {id: 'đau_đầu_symptom'})
+MERGE (o2:disease {id: 'khối_u_vùng_tuyến_tùng_dạng_nhú_disease'})
+MERGE (o1)-[r42:isSymptomOf]->(o2)
+SET r42.text = 'Đau đầu trong thời gian ngắn là triệu chứng phổ biến của khối u vùng tuyến tùng dạng nhú.'
+
+MERGE (o1:disease {id: 'khối_u_nhú_vùng_tuyến_tùng_disease'})
+MERGE (o2:symptom {id: 'tái_phát_symptom'})
+MERGE (o1)-[r43:relatedTo]->(o2)
+SET r43.text = 'Các khối u nhú của vùng tuyến tùng tái phát tại chỗ một cách thường xuyên, nhưng thỉnh thoảng di căn cột sống.'
+
+MERGE (o1:disease {id: 'khối_u_nhú_vùng_tuyến_tùng_disease'})
+MERGE (o2:symptom {id: 'di_căn_cột_sống_symptom'})
+MERGE (o1)-[r44:relatedTo]->(o2)
+SET r44.text = 'Các khối u nhú của vùng tuyến tùng tái phát tại chỗ một cách thường xuyên, nhưng thỉnh thoảng di căn cột sống.'
+
+MERGE (o1:disease {id: 'khối_u_nhú_vùng_tuyến_tùng_disease'})
+MERGE (o2:test {id: 'who_test'})
+MERGE (o1)-[r45:relatedTo]->(o2)
+SET r45.text = 'Tổ chức Y tế Thế giới (WHO) đã xếp chúng vào loại II hoặc III.'
+
+MERGE (o1:disease {id: 'u_nguyên_bào_tuyến_tùng_disease'})
+MERGE (o2:disease {id: 'ung_thư_disease'})
+MERGE (o1)-[r46:relatedTo]->(o2)
+SET r46.text = 'U nguyên bào tuyến tùng là một loại ung thư bắt đầu từ tuyến tùng.'
+
+MERGE (o1:disease {id: 'u_nguyên_bào_tuyến_tùng_disease'})
+MERGE (o2:organ {id: 'tuyến_tùng_organ'})
+MERGE (o1)-[r47:locatedIn]->(o2)
+SET r47.text = 'U nguyên bào tuyến tùng là một loại ung thư bắt đầu từ tuyến tùng.'
+
+MERGE (o1:disease {id: 'u_nguyên_bào_tuyến_tùng_disease'})
+MERGE (o2:organ {id: 'mô_khỏe_mạnh_organ'})
+MERGE (o1)-[r48:affects]->(o2)
+SET r48.text = 'Các tế bào này phát triển nhanh chóng và có thể xâm lấn và phá hủy các mô khỏe mạnh của cơ thể.'
+
+MERGE (o1:disease {id: 'u_nguyên_bào_disease'})
+MERGE (o2:lifestyle {id: 'trẻ_nhỏ_lifestyle'})
+MERGE (o1)-[r49:relatedTo]->(o2)
+SET r49.text = 'U nguyên bào hoàn toàn có thể xảy ra ở mọi lứa tuổi và xảy ra thường xuyên nhất ở trẻ nhỏ.'
+
+MERGE (o1:disease {id: 'u_nguyên_bào_disease'})
+MERGE (o2:symptom {id: 'đau_đầu_symptom'})
+MERGE (o1)-[r50:isSymptomOf]->(o2)
+SET r50.text = 'U nguyên bào có thể gây đau đầu, buồn ngủ và thay đổi cách mắt di chuyển trở nên bất bình thường hơn.'
+
+MERGE (o1:disease {id: 'u_nguyên_bào_disease'})
+MERGE (o2:symptom {id: 'buồn_ngủ_symptom'})
+MERGE (o1)-[r51:isSymptomOf]->(o2)
+SET r51.text = 'U nguyên bào có thể gây đau đầu, buồn ngủ và thay đổi cách mắt di chuyển trở nên bất bình thường hơn.'
+
+MERGE (o1:disease {id: 'u_nguyên_bào_disease'})
+MERGE (o2:symptom {id: 'thay_đổi_cách_mắt_di_chuyển_symptom'})
+MERGE (o1)-[r52:isSymptomOf]->(o2)
+SET r52.text = 'U nguyên bào có thể gây đau đầu, buồn ngủ và thay đổi cách mắt di chuyển trở nên bất bình thường hơn.'
+
+MERGE (o1:disease {id: 'u_nguyên_bào_disease'})
+MERGE (o2:treatment {id: 'điều_trị_treatment'})
+MERGE (o1)-[r53:treatedBy]->(o2)
+SET r53.text = 'U nguyên bào tại tuyến tùng có thể rất khó điều trị.'
+
+MERGE (o1:disease {id: 'u_nguyên_bào_disease'})
+MERGE (o2:organ {id: 'não_organ'})
+MERGE (o1)-[r54:affects]->(o2)
+SET r54.text = 'Chúng có thể lây lan trong não và vào dịch não tủy.'
+
+MERGE (o1:disease {id: 'u_nguyên_bào_disease'})
+MERGE (o2:organ {id: 'dịch_não_tủy_organ'})
+MERGE (o1)-[r55:affects]->(o2)
+SET r55.text = 'Chúng có thể lây lan trong não và vào dịch não tủy.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_treatment'})
+MERGE (o2:disease {id: 'khối_u_disease'})
+MERGE (o1)-[r56:treatedBy]->(o2)
+SET r56.text = 'Việc phẫu thuật để loại bỏ khối u này là phương pháp điều trị cần thiết.'
+
+MERGE (o1:organ {id: 'tế_bào_organ'})
+MERGE (o2:symptom {id: 'phát_triển_chậm_symptom'})
+MERGE (o1)-[r57:relatedTo]->(o2)
+SET r57.text = 'Đây chính là sự kết hợp của các loại tế bào phát triển chậm và phát triển nhanh.'
+
+MERGE (o1:organ {id: 'tế_bào_organ'})
+MERGE (o2:symptom {id: 'phát_triển_nhanh_symptom'})
+MERGE (o1)-[r58:relatedTo]->(o2)
+SET r58.text = 'Đây chính là sự kết hợp của các loại tế bào phát triển chậm và phát triển nhanh.'
+
+MERGE (o1:organ {id: 'tế_bào_organ'})
+MERGE (o2:symptom {id: 'cấp_i_symptom'})
+MERGE (o1)-[r59:relatedTo]->(o2)
+SET r59.text = 'Các tế bào ở cấp I có độ phát triển chậm nhất và tế bào ở cấp IV có độ phát triển nhanh nhất.'
+
+MERGE (o1:disease {id: 'khối_u_vùng_tuyến_tùng_trong_não_disease'})
+MERGE (o2:cause {id: 'nguyên_nhân_chưa_rõ_cause'})
+MERGE (o1)-[r60:causedBy]->(o2)
+SET r60.text = 'Hiện khoa học chưa có câu trả lời chính xác về những nguyên nhân hình thành khối u vùng tuyến tùng trong não.'
+
+MERGE (o1:disease {id: 'khối_u_trong_não_disease'})
+MERGE (o2:cause {id: 'sự_tắc_nghẽn_các_ống_bài_tiết_của_tuyến_sau_quá_trình_chấn_thương_sọ_não_cause'})
+MERGE (o1)-[r61:causedBy]->(o2)
+SET r61.text = 'Tuy nhiên, việc xuất hiện khối u trong não có thể do các tác động của những yếu tố nguy cơ như: (2)
+Sự tắc nghẽn các ống bài tiết của tuyến sau quá trình chấn thương sọ não
+Nhiễm trùng hệ thần kinh.
+Bệnh lý về mạch máu.
+Sự mất cân bằng nội tiết.
+Vi khuẩn echinococcus ăn vào các tế bào cơ thể.'
+
+MERGE (o1:disease {id: 'khối_u_trong_não_disease'})
+MERGE (o2:cause {id: 'nhiễm_trùng_hệ_thần_kinh_cause'})
+MERGE (o1)-[r62:causedBy]->(o2)
+SET r62.text = 'Tuy nhiên, việc xuất hiện khối u trong não có thể do các tác động của những yếu tố nguy cơ như: (2)
+Sự tắc nghẽn các ống bài tiết của tuyến sau quá trình chấn thương sọ não
+Nhiễm trùng hệ thần kinh.
+Bệnh lý về mạch máu.
+Sự mất cân bằng nội tiết.
+Vi khuẩn echinococcus ăn vào các tế bào cơ thể.'
+
+MERGE (o1:disease {id: 'khối_u_trong_não_disease'})
+MERGE (o2:cause {id: 'bệnh_lý_về_mạch_máu_cause'})
+MERGE (o1)-[r63:causedBy]->(o2)
+SET r63.text = 'Tuy nhiên, việc xuất hiện khối u trong não có thể do các tác động của những yếu tố nguy cơ như: (2)
+Sự tắc nghẽn các ống bài tiết của tuyến sau quá trình chấn thương sọ não
+Nhiễm trùng hệ thần kinh.
+Bệnh lý về mạch máu.
+Sự mất cân bằng nội tiết.
+Vi khuẩn echinococcus ăn vào các tế bào cơ thể.'
+
+MERGE (o1:disease {id: 'khối_u_trong_não_disease'})
+MERGE (o2:cause {id: 'sự_mất_cân_bằng_nội_tiết_cause'})
+MERGE (o1)-[r64:causedBy]->(o2)
+SET r64.text = 'Tuy nhiên, việc xuất hiện khối u trong não có thể do các tác động của những yếu tố nguy cơ như: (2)
+Sự tắc nghẽn các ống bài tiết của tuyến sau quá trình chấn thương sọ não
+Nhiễm trùng hệ thần kinh.
+Bệnh lý về mạch máu.
+Sự mất cân bằng nội tiết.
+Vi khuẩn echinococcus ăn vào các tế bào cơ thể.'
+
+MERGE (o1:disease {id: 'khối_u_trong_não_disease'})
+MERGE (o2:cause {id: 'vi_khuẩn_echinococcus_ăn_vào_các_tế_bào_cơ_thể_cause'})
+MERGE (o1)-[r65:causedBy]->(o2)
+SET r65.text = 'Tuy nhiên, việc xuất hiện khối u trong não có thể do các tác động của những yếu tố nguy cơ như: (2)
+Sự tắc nghẽn các ống bài tiết của tuyến sau quá trình chấn thương sọ não
+Nhiễm trùng hệ thần kinh.
+Bệnh lý về mạch máu.
+Sự mất cân bằng nội tiết.
+Vi khuẩn echinococcus ăn vào các tế bào cơ thể.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:cause {id: 'yếu_tố_bẩm_sinh_cause'})
+MERGE (o1)-[r66:causedBy]->(o2)
+SET r66.text = 'Hoặc nguyên nhân hình thành khối u này cũng có thể đến từ các yếu tố bẩm sinh khác.'
+
+MERGE (o1:disease {id: 'khối_u_tuyến_tùng_disease'})
+MERGE (o2:cause {id: 'bộ_gen_của_cơ_thể_mỗi_người_cause'})
+MERGE (o1)-[r67:causedBy]->(o2)
+SET r67.text = 'Ngoài ra, bộ gen của cơ thể mỗi người và tác động của môi trường cũng là tác nhân gây nên sự hình thành khối u tuyến tùng.'
+
+MERGE (o1:disease {id: 'khối_u_tuyến_tùng_disease'})
+MERGE (o2:cause {id: 'tác_động_của_môi_trường_cause'})
+MERGE (o1)-[r68:causedBy]->(o2)
+SET r68.text = 'Ngoài ra, bộ gen của cơ thể mỗi người và tác động của môi trường cũng là tác nhân gây nên sự hình thành khối u tuyến tùng.'
+
+MERGE (o1:disease {id: 'khối_u_vùng_tuyến_tùng_disease'})
+MERGE (o2:cause {id: 'tiếp_xúc_với_những_bức_xạ_cause'})
+MERGE (o1)-[r69:causedBy]->(o2)
+SET r69.text = 'Ở một số trường hợp, việc tiếp xúc với những bức xạ hoặc các vấn đề khác xảy ra trong gen cũng có thể hình thành nên khối u vùng tuyến tùng.'
+
+MERGE (o1:disease {id: 'khối_u_vùng_tuyến_tùng_disease'})
+MERGE (o2:cause {id: 'các_vấn_đề_khác_xảy_ra_trong_gen_cause'})
+MERGE (o1)-[r70:causedBy]->(o2)
+SET r70.text = 'Ở một số trường hợp, việc tiếp xúc với những bức xạ hoặc các vấn đề khác xảy ra trong gen cũng có thể hình thành nên khối u vùng tuyến tùng.'
+
+MERGE (o1:disease {id: 'u_tuyến_tùng_trong_não_disease'})
+MERGE (o2:cause {id: 'yếu_tố_rủi_ro_cause'})
+MERGE (o1)-[r71:causedBy]->(o2)
+SET r71.text = 'Nguyên nhân u tuyến tùng trong não đến từ nhiều yếu tố rủi ro và bẩm sinh'
+
+MERGE (o1:disease {id: 'u_tuyến_tùng_trong_não_disease'})
+MERGE (o2:cause {id: 'yếu_tố_bẩm_sinh_cause'})
+MERGE (o1)-[r72:causedBy]->(o2)
+SET r72.text = 'Nguyên nhân u tuyến tùng trong não đến từ nhiều yếu tố rủi ro và bẩm sinh'
+
+MERGE (o1:symptom {id: 'áp_lực_trong_sọ_tăng_lên_bất_thường_symptom'})
+MERGE (o2:disease {id: 'khối_u_gây_tắc_nghẽn_lưu_thông_dòng_chảy_của_nước_não_tủy_disease'})
+MERGE (o1)-[r73:isSymptomOf]->(o2)
+SET r73.text = 'Áp lực trong sọ tăng lên bất thường chính là báo hiệu có sự xuất hiện của khối u gây tắc nghẽn lưu thông dòng chảy của nước não tủy.'
+
+MERGE (o1:disease {id: 'bệnh_u_vùng_tuyến_tùng_disease'})
+MERGE (o2:disease {id: 'não_úng_thủy_disease'})
+MERGE (o1)-[r74:isSymptomOf]->(o2)
+SET r74.text = 'Bệnh u vùng tuyến tùng khởi phát âm thầm nên đôi khi chỉ gây nên các tình trạng não úng thủy khá đơn thuần và rất dễ nhầm với bệnh lý não úng thủy khác thường gặp.'
+
+MERGE (o1:symptom {id: 'đau_đầu_symptom'})
+MERGE (o2:symptom {id: 'tăng_áp_lực_nội_sọ_symptom'})
+MERGE (o1)-[r75:isSymptomOf]->(o2)
+SET r75.text = 'Để nhận biết việc tăng áp lực nội sọ, bạn đừng chủ quan bỏ qua các triệu chứng sau: đau đầu, buồn nôn, ói mửa, rối loạn nhịp thở.'
+
+MERGE (o1:symptom {id: 'buồn_nôn_symptom'})
+MERGE (o2:symptom {id: 'tăng_áp_lực_nội_sọ_symptom'})
+MERGE (o1)-[r76:isSymptomOf]->(o2)
+SET r76.text = 'Để nhận biết việc tăng áp lực nội sọ, bạn đừng chủ quan bỏ qua các triệu chứng sau: đau đầu, buồn nôn, ói mửa, rối loạn nhịp thở.'
+
+MERGE (o1:symptom {id: 'ói_mửa_symptom'})
+MERGE (o2:symptom {id: 'tăng_áp_lực_nội_sọ_symptom'})
+MERGE (o1)-[r77:isSymptomOf]->(o2)
+SET r77.text = 'Để nhận biết việc tăng áp lực nội sọ, bạn đừng chủ quan bỏ qua các triệu chứng sau: đau đầu, buồn nôn, ói mửa, rối loạn nhịp thở.'
+
+MERGE (o1:symptom {id: 'rối_loạn_nhịp_thở_symptom'})
+MERGE (o2:symptom {id: 'tăng_áp_lực_nội_sọ_symptom'})
+MERGE (o1)-[r78:isSymptomOf]->(o2)
+SET r78.text = 'Để nhận biết việc tăng áp lực nội sọ, bạn đừng chủ quan bỏ qua các triệu chứng sau: đau đầu, buồn nôn, ói mửa, rối loạn nhịp thở.'
+
+MERGE (o1:disease {id: 'rối_loạn_tiêu_hóa_disease'})
+MERGE (o2:symptom {id: 'tăng_áp_lực_nội_sọ_symptom'})
+MERGE (o1)-[r79:relatedTo]->(o2)
+SET r79.text = 'Những triệu chứng này rất thường gặp ở các bệnh lý như rối loạn tiêu hóa, ngộ độc thực phẩm,… do đó có thể gây nhầm lẫn.'
+
+MERGE (o1:disease {id: 'ngộ_độc_thực_phẩm_disease'})
+MERGE (o2:symptom {id: 'tăng_áp_lực_nội_sọ_symptom'})
+MERGE (o1)-[r80:relatedTo]->(o2)
+SET r80.text = 'Những triệu chứng này rất thường gặp ở các bệnh lý như rối loạn tiêu hóa, ngộ độc thực phẩm,… do đó có thể gây nhầm lẫn.'
+
+MERGE (o1:test {id: 'kiểm_tra_sức_khỏe_test'})
+MERGE (o2:symptom {id: 'tăng_áp_lực_nội_sọ_symptom'})
+MERGE (o1)-[r81:diagnosedBy]->(o2)
+SET r81.text = 'Người bệnh nếu có các dấu hiệu nghi ngờ, cần đến bệnh viện để kiểm tra sức khỏe một cách nhanh chóng, giúp chẩn đoán chính xác tình trạng bệnh.'
+
+MERGE (o1:symptom {id: 'tăng_áp_lực_sọ_symptom'})
+MERGE (o2:disease {id: 'khối_u_tuyến_tùng_disease'})
+MERGE (o1)-[r82:isSymptomOf]->(o2)
+SET r82.text = 'Tăng áp lực sọ báo hiệu có sự xuất hiện của khối u tuyến tùng'
+
+MERGE (o1:symptom {id: 'nhìn_mờ_symptom'})
+MERGE (o2:disease {id: 'u_tuyến_tùng_disease'})
+MERGE (o1)-[r83:isSymptomOf]->(o2)
+SET r83.text = 'Một triệu chứng khác của u tuyến tùng có thể nhận biết chính là nhìn mờ, khó ngước mắt lên trên, mất tập trung 2 nhãn cầu (dấu hiệu Parinaud).'
+
+MERGE (o1:symptom {id: 'khó_ngước_mắt_lên_trên_symptom'})
+MERGE (o2:disease {id: 'u_tuyến_tùng_disease'})
+MERGE (o1)-[r84:isSymptomOf]->(o2)
+SET r84.text = 'Một triệu chứng khác của u tuyến tùng có thể nhận biết chính là nhìn mờ, khó ngước mắt lên trên, mất tập trung 2 nhãn cầu (dấu hiệu Parinaud).'
+
+MERGE (o1:symptom {id: 'mất_tập_trung_2_nhãn_cầu_symptom'})
+MERGE (o2:disease {id: 'u_tuyến_tùng_disease'})
+MERGE (o1)-[r85:isSymptomOf]->(o2)
+SET r85.text = 'Một triệu chứng khác của u tuyến tùng có thể nhận biết chính là nhìn mờ, khó ngước mắt lên trên, mất tập trung 2 nhãn cầu (dấu hiệu Parinaud).'
+
+MERGE (o1:symptom {id: 'khó_tập_trung_symptom'})
+MERGE (o2:disease {id: 'u_tuyến_tùng_disease'})
+MERGE (o1)-[r86:isSymptomOf]->(o2)
+SET r86.text = 'Người bệnh sẽ có dấu hiệu khó tập trung, rối loạn tâm thần, tính cách, mất dần khả năng phối hợp động tác và rối loạn nội tiết do khối u phát triển chèn ép xung quanh vùng tuyến tùng.'
+
+MERGE (o1:symptom {id: 'rối_loạn_tâm_thần_symptom'})
+MERGE (o2:disease {id: 'u_tuyến_tùng_disease'})
+MERGE (o1)-[r87:isSymptomOf]->(o2)
+SET r87.text = 'Người bệnh sẽ có dấu hiệu khó tập trung, rối loạn tâm thần, tính cách, mất dần khả năng phối hợp động tác và rối loạn nội tiết do khối u phát triển chèn ép xung quanh vùng tuyến tùng.'
+
+MERGE (o1:symptom {id: 'rối_loạn_tính_cách_symptom'})
+MERGE (o2:disease {id: 'u_tuyến_tùng_disease'})
+MERGE (o1)-[r88:isSymptomOf]->(o2)
+SET r88.text = 'Người bệnh sẽ có dấu hiệu khó tập trung, rối loạn tâm thần, tính cách, mất dần khả năng phối hợp động tác và rối loạn nội tiết do khối u phát triển chèn ép xung quanh vùng tuyến tùng.'
+
+MERGE (o1:symptom {id: 'mất_dần_khả_năng_phối_hợp_động_tác_symptom'})
+MERGE (o2:disease {id: 'u_tuyến_tùng_disease'})
+MERGE (o1)-[r89:isSymptomOf]->(o2)
+SET r89.text = 'Người bệnh sẽ có dấu hiệu khó tập trung, rối loạn tâm thần, tính cách, mất dần khả năng phối hợp động tác và rối loạn nội tiết do khối u phát triển chèn ép xung quanh vùng tuyến tùng.'
+
+MERGE (o1:symptom {id: 'rối_loạn_nội_tiết_symptom'})
+MERGE (o2:disease {id: 'u_tuyến_tùng_disease'})
+MERGE (o1)-[r90:isSymptomOf]->(o2)
+SET r90.text = 'Người bệnh sẽ có dấu hiệu khó tập trung, rối loạn tâm thần, tính cách, mất dần khả năng phối hợp động tác và rối loạn nội tiết do khối u phát triển chèn ép xung quanh vùng tuyến tùng.'
+
+MERGE (o1:symptom {id: 'đau_đầu_mạn_tính_symptom'})
+MERGE (o2:disease {id: 'khối_u_vùng_tuyến_tùng_disease'})
+MERGE (o1)-[r91:isSymptomOf]->(o2)
+SET r91.text = 'Đau đầu mạn tính cũng là triệu chứng của việc vùng tuyến tùng đã hình thành khối u.'
+
+MERGE (o1:symptom {id: 'suy_giảm_tri_giác_symptom'})
+MERGE (o2:disease {id: 'khối_u_ác_tính_disease'})
+MERGE (o1)-[r92:isSymptomOf]->(o2)
+SET r92.text = 'Nếu như khối u này ở thể ác tính, phát triển nhanh, bệnh nhân sẽ xuất hiện biểu hiện lâm sàng cấp tính cũng như suy giảm tri giác hoặc hôn mê.'
+
+MERGE (o1:symptom {id: 'hôn_mê_symptom'})
+MERGE (o2:disease {id: 'khối_u_ác_tính_disease'})
+MERGE (o1)-[r93:isSymptomOf]->(o2)
+SET r93.text = 'Nếu như khối u này ở thể ác tính, phát triển nhanh, bệnh nhân sẽ xuất hiện biểu hiện lâm sàng cấp tính cũng như suy giảm tri giác hoặc hôn mê.'
+
+MERGE (o1:symptom {id: 'đau_sau_gáy_symptom'})
+MERGE (o2:disease {id: 'khối_u_ác_tính_disease'})
+MERGE (o1)-[r94:isSymptomOf]->(o2)
+SET r94.text = 'Triệu chứng đau sau gáy, đau lưng cũng là biểu hiện của việc khối u ác tính này theo nước não tủy di chuyển xuống tủy sống.'
+
+MERGE (o1:symptom {id: 'đau_lưng_symptom'})
+MERGE (o2:disease {id: 'khối_u_ác_tính_disease'})
+MERGE (o1)-[r95:isSymptomOf]->(o2)
+SET r95.text = 'Triệu chứng đau sau gáy, đau lưng cũng là biểu hiện của việc khối u ác tính này theo nước não tủy di chuyển xuống tủy sống.'
+
+MERGE (o1:disease {id: 'đái_tháo_nhạt_disease'})
+MERGE (o2:disease {id: 'khối_u_vùng_tuyến_tùng_xâm_lấn_vào_vùng_dưới_đồi__tuyến_yên_disease'})
+MERGE (o1)-[r96:isSymptomOf]->(o2)
+SET r96.text = 'Nếu khối u vùng tuyến tùng xâm lấn vào vùng dưới đồi, tuyến yên sẽ gây ra tình trạng đái tháo nhạt, tăng nồng độ HCG.'
+
+MERGE (o1:symptom {id: 'tăng_nồng_độ_hcg_symptom'})
+MERGE (o2:disease {id: 'khối_u_vùng_tuyến_tùng_xâm_lấn_vào_vùng_dưới_đồi__tuyến_yên_disease'})
+MERGE (o1)-[r97:isSymptomOf]->(o2)
+SET r97.text = 'Nếu khối u vùng tuyến tùng xâm lấn vào vùng dưới đồi, tuyến yên sẽ gây ra tình trạng đái tháo nhạt, tăng nồng độ HCG.'
+
+MERGE (o1:symptom {id: 'dậy_thì_sớm_symptom'})
+MERGE (o2:disease {id: 'khối_u_vùng_tuyến_tùng_xâm_lấn_vào_vùng_dưới_đồi__tuyến_yên_disease'})
+MERGE (o1)-[r98:isSymptomOf]->(o2)
+SET r98.text = 'Từ đó sẽ khiến bệnh nhân dậy thì sớm (trước 10 tuổi).'
+
+MERGE (o1:symptom {id: 'đau_đầu_mạn_tính_symptom'})
+MERGE (o2:disease {id: 'u_tuyến_tùng_disease'})
+MERGE (o1)-[r99:isSymptomOf]->(o2)
+SET r99.text = 'Đau đầu mạn tính cũng có thể là triệu chứng của u tuyến tùng'
+
+MERGE (o1:disease {id: 'u_tuyến_tùng_disease'})
+MERGE (o2:cause {id: 'tính_chất__mức_độ__vị_trí_của_khối_u_cause'})
+MERGE (o1)-[r100:relatedTo]->(o2)
+SET r100.text = 'U tuyến tùng có nguy hiểm không còn phụ thuộc vào tính chất, mức độ, vị trí của khối u.'
+
+MERGE (o1:disease {id: 'khối_u_vùng_tuyến_tùng_disease'})
+MERGE (o2:treatment {id: 'xạ_trị_treatment'})
+MERGE (o1)-[r101:treatedBy]->(o2)
+SET r101.text = 'Thực tế cho thấy rằng khối u vùng tuyến tùng phần lớn là ác tính (chiếm đến 40%) nhưng đa số sẽ nhạy với phương pháp xạ trị.'
+
+MERGE (o1:disease {id: 'khối_u_vùng_tuyến_tùng_lành_tính_disease'})
+MERGE (o2:treatment {id: 'phẫu_thuật_treatment'})
+MERGE (o1)-[r102:treatedBy]->(o2)
+SET r102.text = 'Trong khi đó, các khối u vùng tuyến tùng lành tính thì sẽ được điều trị khỏi bệnh bằng phương pháp phẫu thuật.'
+
+MERGE (o1:disease {id: 'bệnh_lý_u_vùng_tuyến_tùng_disease'})
+MERGE (o2:treatment {id: 'điều_trị_tích_cực_treatment'})
+MERGE (o1)-[r103:treatedBy]->(o2)
+SET r103.text = 'Điều này cho thấy rằng bệnh lý u vùng tuyến tùng dù lành tính hay ác tính đều có hướng điều trị tích cực.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:organ {id: 'não_bộ_organ'})
+MERGE (o1)-[r104:affects]->(o2)
+SET r104.text = 'Tuy nhiên, những ảnh hưởng xấu của khối u này đến não bộ là vấn đề nghiêm trọng.'
+
+MERGE (o1:lifestyle {id: 'tiền_sử_gia_đình_lifestyle'})
+MERGE (o2:symptom {id: 'triệu_chứng_symptom'})
+MERGE (o1)-[r105:relatedTo]->(o2)
+SET r105.text = 'Trước tiên, bác sĩ sẽ hỏi về tiền sử gia đình của bạn và bất kỳ triệu chứng nào bạn đang gặp phải.'
+
+MERGE (o1:symptom {id: 'triệu_chứng_symptom'})
+MERGE (o2:disease {id: 'u_vùng_tuyến_tùng_disease'})
+MERGE (o1)-[r106:isSymptomOf]->(o2)
+SET r106.text = 'Trước tiên, bác sĩ sẽ hỏi về tiền sử gia đình của bạn và bất kỳ triệu chứng nào bạn đang gặp phải.'
+
+MERGE (o1:test {id: 'kiểm_tra_thần_kinh_test'})
+MERGE (o2:disease {id: 'u_vùng_tuyến_tùng_disease'})
+MERGE (o1)-[r107:diagnosedBy]->(o2)
+SET r107.text = 'Bạn cũng có thể được kiểm tra thần kinh để kiểm tra phản xạ, chuyển động của mắt, chức năng vận động, cảm giác, sự phối hợp và thăng bằng.'
+
+MERGE (o1:symptom {id: 'phản_xạ_symptom'})
+MERGE (o2:disease {id: 'u_vùng_tuyến_tùng_disease'})
+MERGE (o1)-[r108:isSymptomOf]->(o2)
+SET r108.text = 'Bạn cũng có thể được kiểm tra thần kinh để kiểm tra phản xạ, chuyển động của mắt, chức năng vận động, cảm giác, sự phối hợp và thăng bằng.'
+
+MERGE (o1:symptom {id: 'chuyển_động_của_mắt_symptom'})
+MERGE (o2:disease {id: 'u_vùng_tuyến_tùng_disease'})
+MERGE (o1)-[r109:isSymptomOf]->(o2)
+SET r109.text = 'Bạn cũng có thể được kiểm tra thần kinh để kiểm tra phản xạ, chuyển động của mắt, chức năng vận động, cảm giác, sự phối hợp và thăng bằng.'
+
+MERGE (o1:symptom {id: 'chức_năng_vận_động_symptom'})
+MERGE (o2:disease {id: 'u_vùng_tuyến_tùng_disease'})
+MERGE (o1)-[r110:isSymptomOf]->(o2)
+SET r110.text = 'Bạn cũng có thể được kiểm tra thần kinh để kiểm tra phản xạ, chuyển động của mắt, chức năng vận động, cảm giác, sự phối hợp và thăng bằng.'
+
+MERGE (o1:symptom {id: 'cảm_giác_symptom'})
+MERGE (o2:disease {id: 'u_vùng_tuyến_tùng_disease'})
+MERGE (o1)-[r111:isSymptomOf]->(o2)
+SET r111.text = 'Bạn cũng có thể được kiểm tra thần kinh để kiểm tra phản xạ, chuyển động của mắt, chức năng vận động, cảm giác, sự phối hợp và thăng bằng.'
+
+MERGE (o1:symptom {id: 'sự_phối_hợp_symptom'})
+MERGE (o2:disease {id: 'u_vùng_tuyến_tùng_disease'})
+MERGE (o1)-[r112:isSymptomOf]->(o2)
+SET r112.text = 'Bạn cũng có thể được kiểm tra thần kinh để kiểm tra phản xạ, chuyển động của mắt, chức năng vận động, cảm giác, sự phối hợp và thăng bằng.'
+
+MERGE (o1:symptom {id: 'thăng_bằng_symptom'})
+MERGE (o2:disease {id: 'u_vùng_tuyến_tùng_disease'})
+MERGE (o1)-[r113:isSymptomOf]->(o2)
+SET r113.text = 'Bạn cũng có thể được kiểm tra thần kinh để kiểm tra phản xạ, chuyển động của mắt, chức năng vận động, cảm giác, sự phối hợp và thăng bằng.'
+
+MERGE (o1:disease {id: 'khối_u_vùng_tuyến_tùng_disease'})
+MERGE (o2:test {id: 'xét_nghiệm_test'})
+MERGE (o1)-[r114:diagnosedBy]->(o2)
+SET r114.text = 'Nếu bác sĩ của bạn nghĩ rằng bạn có thể có khối u vùng tuyến tùng, bác sĩ có thể yêu cầu thêm các xét nghiệm, có thể bao gồm:'
+
+MERGE (o1:disease {id: 'u_vùng_tuyến_tùng_disease'})
+MERGE (o2:treatment {id: 'phẫu_thuật_treatment'})
+MERGE (o1)-[r115:treatedBy]->(o2)
+SET r115.text = 'Nếu không phải là trường hợp khẩn cấp thì u vùng tuyến tùng sẽ không được bác sĩ chỉ định mổ ngay.'
+
+MERGE (o1:test {id: 'thăm_dò_định_lượng_afp__hcg__sinh_thiết_test'})
+MERGE (o2:disease {id: 'khối_u_tuyến_tùng_disease'})
+MERGE (o1)-[r116:diagnosedBy]->(o2)
+SET r116.text = 'Lúc này, người bệnh có thể được thực hiện quá trình thăm dò định lượng AFP, HCG, sinh thiết để có thể định vị và xác định bản chất của khối u tuyến tùng.'
+
+MERGE (o1:disease {id: 'khối_u_lành_tính_disease'})
+MERGE (o2:disease {id: 'khối_u_tuyến_tùng_disease'})
+MERGE (o1)-[r117:relatedTo]->(o2)
+SET r117.text = 'Việc này sẽ giúp bác sĩ có thể xác định được đây là khối u lành tính hay ác tính.'
+
+MERGE (o1:disease {id: 'khối_u_ác_tính_disease'})
+MERGE (o2:disease {id: 'khối_u_tuyến_tùng_disease'})
+MERGE (o1)-[r118:relatedTo]->(o2)
+SET r118.text = 'Việc này sẽ giúp bác sĩ có thể xác định được đây là khối u lành tính hay ác tính.'
+
+MERGE (o1:test {id: 'định_lượng_nồng_độ_afp__hcg_test'})
+MERGE (o2:treatment {id: 'hiệu_quả_điều_trị_treatment'})
+MERGE (o1)-[r119:diagnosedBy]->(o2)
+SET r119.text = 'Định lượng nồng độ AFP, HCG sẽ cho phép bác sĩ theo dõi hiệu quả điều trị (kết quả điều trị có hiệu quả thì nồng độ giảm dần và không hiệu quả nếu nồng độ không giảm hoặc tăng thêm).'
+
+MERGE (o1:test {id: 'định_lượng_nồng_độ_afp__hcg_test'})
+MERGE (o2:disease {id: 'khả_năng_tái_phát_của_khối_u_tuyến_tùng_disease'})
+MERGE (o1)-[r120:diagnosedBy]->(o2)
+SET r120.text = 'Định lượng này cũng có phép bác sĩ điều trị đánh giá được khả năng tái phát của khối u tuyến tùng.'
+
+MERGE (o1:test {id: 'chụp_cắt_cộng_hưởng_từ_(mri)_test'})
+MERGE (o2:disease {id: 'u_tuyến_tùng_disease'})
+MERGE (o1)-[r121:diagnosedBy]->(o2)
+SET r121.text = 'Chẩn đoán hình ảnh đóng vai trò quan trọng nhất trong chẩn đoán bệnh u tuyến tùng là chụp cắt cộng hưởng từ (MRI) và chụp cắt lớp điện toán (CT-Scan).'
+
+MERGE (o1:test {id: 'chụp_cắt_lớp_điện_toán_(ct-scan)_test'})
+MERGE (o2:disease {id: 'u_tuyến_tùng_disease'})
+MERGE (o1)-[r122:diagnosedBy]->(o2)
+SET r122.text = 'Chẩn đoán hình ảnh đóng vai trò quan trọng nhất trong chẩn đoán bệnh u tuyến tùng là chụp cắt cộng hưởng từ (MRI) và chụp cắt lớp điện toán (CT-Scan).'
+
+MERGE (o1:test {id: 'ct-scan_test'})
+MERGE (o2:disease {id: 'khối_u_vùng_tuyến_tùng_disease'})
+MERGE (o1)-[r123:diagnosedBy]->(o2)
+SET r123.text = 'Có thể bạn chưa biết, hình ảnh trên CT-Scan có giá trị tốt trong chẩn đoán khối u vùng tuyến tùng.'
+
+MERGE (o1:disease {id: 'khối_u_vùng_tuyến_tùng_disease'})
+MERGE (o2:symptom {id: 'vôi_hóa_symptom'})
+MERGE (o1)-[r124:relatedTo]->(o2)
+SET r124.text = 'Khối u vùng tuyến tùng thường vôi hóa trong khối u và sẽ ngấm thuốc cản quang mạnh mẽ.'
+
+MERGE (o1:disease {id: 'khối_u_vùng_tuyến_tùng_disease'})
+MERGE (o2:symptom {id: 'ngấm_thuốc_cản_quang_symptom'})
+MERGE (o1)-[r125:relatedTo]->(o2)
+SET r125.text = 'Khối u vùng tuyến tùng thường vôi hóa trong khối u và sẽ ngấm thuốc cản quang mạnh mẽ.'
+
+MERGE (o1:disease {id: 'khối_u_disease'})
+MERGE (o2:organ {id: 'não_thất_organ'})
+MERGE (o1)-[r126:affects]->(o2)
+SET r126.text = 'Đồng thời, khối u sẽ chèn ép gây tắc nghẽn, giãn não thất.'
+
+MERGE (o1:test {id: 'mri_test'})
+MERGE (o2:disease {id: 'u_vùng_tuyến_tùng_disease'})
+MERGE (o1)-[r127:diagnosedBy]->(o2)
+SET r127.text = 'Hình ảnh chụp MRI sẽ có giá trị trong việc chẩn đoán cũng như dự báo những thương tổn giải phẫu của u vùng tuyến tùng.'
+
+MERGE (o1:test {id: 'mri_test'})
+MERGE (o2:symptom {id: 'thương_tổn_giải_phẫu_symptom'})
+MERGE (o1)-[r128:diagnosedBy]->(o2)
+SET r128.text = 'Hình ảnh chụp MRI sẽ có giá trị trong việc chẩn đoán cũng như dự báo những thương tổn giải phẫu của u vùng tuyến tùng.'
+
+MERGE (o1:test {id: 'mri_test'})
+MERGE (o2:symptom {id: 'kích_thước_khối_u_symptom'})
+MERGE (o1)-[r129:diagnosedBy]->(o2)
+SET r129.text = 'Đồng thời, hình ảnh MRI còn đánh giá được kích thước, hình thái và đánh giá được mức độ xâm lấn của khối u.'
+
+MERGE (o1:test {id: 'mri_test'})
+MERGE (o2:symptom {id: 'hình_thái_khối_u_symptom'})
+MERGE (o1)-[r130:diagnosedBy]->(o2)
+SET r130.text = 'Đồng thời, hình ảnh MRI còn đánh giá được kích thước, hình thái và đánh giá được mức độ xâm lấn của khối u.'
+
+MERGE (o1:test {id: 'mri_test'})
+MERGE (o2:symptom {id: 'mức_độ_xâm_lấn_của_khối_u_symptom'})
+MERGE (o1)-[r131:diagnosedBy]->(o2)
+SET r131.text = 'Đồng thời, hình ảnh MRI còn đánh giá được kích thước, hình thái và đánh giá được mức độ xâm lấn của khối u.'
+
+MERGE (o1:test {id: 'sinh_thiết_test'})
+MERGE (o2:disease {id: 'u_vùng_tuyến_tùng_disease'})
+MERGE (o1)-[r132:diagnosedBy]->(o2)
+SET r132.text = 'Để có được hướng điều trị u vùng tuyến tùng chính xác, bệnh nhân cần làm sinh thiết để xác định bản chất và loại của khối u.'
+
+MERGE (o1:disease {id: 'khối_u_tuyến_tùng_ác_tính_disease'})
+MERGE (o2:treatment {id: 'xạ_trị_treatment'})
+MERGE (o1)-[r133:treatedBy]->(o2)
+SET r133.text = 'Nếu khối u tuyến tùng được chẩn đoán là ác tính thì bệnh nhân sẽ được chỉ định xạ trị.'
+
+MERGE (o1:treatment {id: 'xạ_trị_treatment'})
+MERGE (o2:disease {id: 'khối_u_vùng_tuyến_tùng_disease'})
+MERGE (o1)-[r134:treatedBy]->(o2)
+SET r134.text = 'Đa số khối u vùng này tương đối nhạy với xạ trị, cho kết quả tốt.'
+
+MERGE (o1:disease {id: 'khối_u_lành_tính_disease'})
+MERGE (o2:treatment {id: 'phẫu_thuật_loại_bỏ_treatment'})
+MERGE (o1)-[r135:treatedBy]->(o2)
+SET r135.text = 'Ngược lại, nếu khối u lành tính thì sẽ được chỉ định phẫu thuật loại bỏ.'
+
+MERGE (o1:disease {id: 'não_úng_thủy_disease'})
+MERGE (o2:treatment {id: 'nội_soi_mở_thông_sàn_não_thất_treatment'})
+MERGE (o1)-[r136:treatedBy]->(o2)
+SET r136.text = 'Nếu bệnh nhân mắc phải tình trạng não úng thủy thì cần phải điều trị vấn đề này đầu tiên bằng việc nội soi mở thông sàn não thất hoặc dẫn lưu não thất và ổ bụng.'
+
+MERGE (o1:disease {id: 'não_úng_thủy_disease'})
+MERGE (o2:treatment {id: 'dẫn_lưu_não_thất_và_ổ_bụng_treatment'})
+MERGE (o1)-[r137:treatedBy]->(o2)
+SET r137.text = 'Nếu bệnh nhân mắc phải tình trạng não úng thủy thì cần phải điều trị vấn đề này đầu tiên bằng việc nội soi mở thông sàn não thất hoặc dẫn lưu não thất và ổ bụng.'
+
+MERGE (o1:disease {id: 'não_úng_thủy_disease'})
+MERGE (o2:disease {id: 'khối_u_disease'})
+MERGE (o1)-[r138:relatedTo]->(o2)
+SET r138.text = 'Nếu như người bệnh không mắc phải não úng thủy hoặc mắc phải ở mức độ nhẹ thì sẽ được phối hợp nhiều xét nghiệm để có thể biết được bản chất của khối u này.'
+
+MERGE (o1:disease {id: 'u_tế_bào_mầm_disease'})
+MERGE (o2:treatment {id: 'tia_xạ_treatment'})
+MERGE (o1)-[r139:treatedBy]->(o2)
+SET r139.text = 'Hướng điều trị bằng tia xạ sẽ được các bác sĩ chỉ định cho trường hợp u tế bào mầm.'
+
+MERGE (o1:test {id: 'sinh_thiết_test'})
+MERGE (o2:disease {id: 'khối_u_disease'})
+MERGE (o1)-[r140:diagnosedBy]->(o2)
+SET r140.text = 'Cần làm sinh thiết để xác định bản chất của khối u từ đó đưa ra hướng điều trị phù hợp nhất'
+
+MERGE (o1:cause {id: 'chấn_thương_cause'})
+MERGE (o2:disease {id: 'khối_u_disease'})
+MERGE (o1)-[r141:causedBy]->(o2)
+SET r141.text = 'Khối u này hình thành thường do kết quả của quá trình chấn thương, viêm nhiễm, bệnh lý về mạch máu, mất cân bằng của nội tiết tố.'
+
+MERGE (o1:cause {id: 'viêm_nhiễm_cause'})
+MERGE (o2:disease {id: 'khối_u_disease'})
+MERGE (o1)-[r142:causedBy]->(o2)
+SET r142.text = 'Khối u này hình thành thường do kết quả của quá trình chấn thương, viêm nhiễm, bệnh lý về mạch máu, mất cân bằng của nội tiết tố.'
+
+MERGE (o1:cause {id: 'bệnh_lý_về_mạch_máu_cause'})
+MERGE (o2:disease {id: 'khối_u_disease'})
+MERGE (o1)-[r143:causedBy]->(o2)
+SET r143.text = 'Khối u này hình thành thường do kết quả của quá trình chấn thương, viêm nhiễm, bệnh lý về mạch máu, mất cân bằng của nội tiết tố.'
+
+MERGE (o1:cause {id: 'mất_cân_bằng_của_nội_tiết_tố_cause'})
+MERGE (o2:disease {id: 'khối_u_disease'})
+MERGE (o1)-[r144:causedBy]->(o2)
+SET r144.text = 'Khối u này hình thành thường do kết quả của quá trình chấn thương, viêm nhiễm, bệnh lý về mạch máu, mất cân bằng của nội tiết tố.'

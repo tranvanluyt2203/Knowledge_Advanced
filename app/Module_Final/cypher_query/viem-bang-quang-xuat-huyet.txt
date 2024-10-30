@@ -1,0 +1,720 @@
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o2:disease {id: 'nhiễm_trùng_tiết_niệu_disease'})
+MERGE (o1)-[r0:isSymptomOf]->(o2)
+SET r0.text = 'Viêm bàng quang xuất huyết là tình trạng nhiễm trùng tiết niệu nguy hiểm.'
+
+MERGE (o1:symptom {id: 'đi_tiểu_ra_máu_symptom'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o1)-[r1:isSymptomOf]->(o2)
+SET r1.text = 'Người bệnh có thể nhận biết viêm bàng quang xuất huyết qua dấu hiệu lâm sàng rõ nhất là đi tiểu ra máu do tổn thương và chảy máu ở bàng quang gây ra.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o2:lifestyle {id: 'bất_kỳ_đối_tượng_và_độ_tuổi_nào_lifestyle'})
+MERGE (o1)-[r2:affects]->(o2)
+SET r2.text = 'Bệnh có thể xảy ra ở bất kỳ đối tượng và độ tuổi nào.'
+
+MERGE (o1:lifestyle {id: 'phụ_nữ_và_người_đang_hóa_trị__xạ_trị_lifestyle'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o1)-[r3:associatedWith]->(o2)
+SET r3.text = 'Tuy nhiên, nhóm phụ nữ và người đang hóa trị, xạ trị được xác nhận là nhóm cơ nguy cơ cao mắc viêm bàng quang xuất huyết.'
+
+MERGE (o1:symptom {id: 'tiểu_ra_máu_symptom'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o1)-[r4:isSymptomOf]->(o2)
+SET r4.text = 'Viêm bàng quang xuất huyết là người bệnh sẽ xuất hiện thêm tình trạng tiểu ra máu.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o2:treatment {id: 'lấy_máu_bên_trong_bàng_quang_kết_hợp_với_uống_thuốc_treatment'})
+MERGE (o1)-[r5:treatedBy]->(o2)
+SET r5.text = 'Bệnh có thể điều trị khỏi hoàn toàn bằng cách lấy máu bên trong bàng quang kết hợp với uống thuốc.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o2:lifestyle {id: 'hóa_trị__xạ_trị_hoặc_có_hệ_miễn_dịch_yếu_lifestyle'})
+MERGE (o1)-[r6:associatedWith]->(o2)
+SET r6.text = 'Tuy nhiên, viêm bàng quang xuất huyết cũng có thể tiến triển thành bệnh mạn tính đối với những người đang được hóa trị, xạ trị hoặc có hệ miễn dịch yếu.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_disease'})
+MERGE (o2:symptom {id: 'chảy_máu_symptom'})
+MERGE (o1)-[r7:isSymptomOf]->(o2)
+SET r7.text = 'Bên cạnh đó viêm bàng quang là tình trạng viêm lan tỏa của bàng quang dẫn đến chảy máu.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_disease'})
+MERGE (o2:disease {id: 'biến_chứng_sức_khỏe_disease'})
+MERGE (o1)-[r8:associatedWith]->(o2)
+SET r8.text = 'Đây là một loại bệnh tiết niệu nguy hiểm, nguy cơ gây ra những biến chứng sức khỏe khác.'
+
+MERGE (o1:organ {id: 'bàng_quang_organ'})
+MERGE (o2:organ {id: 'cơ_thể_organ'})
+MERGE (o1)-[r9:locatedIn]->(o2)
+SET r9.text = 'Bàng quang có chức năng chứa nước tiểu trước khi đào thải ra khỏi cơ thể.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_disease'})
+MERGE (o2:cause {id: 'nhiễm_trùng_đường_tiết_niệu_hoặc_do_ảnh_hưởng_từ_điều_trị_bệnh_khác_cause'})
+MERGE (o1)-[r10:causedBy]->(o2)
+SET r10.text = 'Viêm bàng quang xảy ra khi đường tiết niệu bị nhiễm trùng hoặc do ảnh hưởng từ điều trị bệnh khác.'
+
+MERGE (o1:organ {id: 'lớp_niêm_mạc_và_dưới_niêm_mạc_organ'})
+MERGE (o2:organ {id: 'bàng_quang_organ'})
+MERGE (o1)-[r11:locatedIn]->(o2)
+SET r11.text = 'Lớp niêm mạc và dưới niêm mạc của bàng quang sẽ bị bào mòn.'
+
+MERGE (o1:cause {id: 'vi_khuẩn_và_các_chất_độc_cause'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_disease'})
+MERGE (o1)-[r12:causes]->(o2)
+SET r12.text = 'Vi khuẩn và các chất độc tấn công, làm tổn thương biểu mô chuyển tiếp của bàng quang, gây ra những triệu chứng như cơn đau thắt vùng chậu, hạ sườn và những tình trạng tiểu dắt, tiểu gấp, đau buốt khi đi tiểu.'
+
+MERGE (o1:symptom {id: 'cơn_đau_thắt_vùng_chậu__hạ_sườn_và_những_tình_trạng_tiểu_dắt__tiểu_gấp__đau_buốt_khi_đi_tiểu_symptom'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_disease'})
+MERGE (o1)-[r13:isSymptomOf]->(o2)
+SET r13.text = 'Cơn đau thắt vùng chậu, hạ sườn và những tình trạng tiểu dắt, tiểu gấp, đau buốt khi đi tiểu'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o2:cause {id: 'nhiễm_trùng_đường_tiết_niệu_cause'})
+MERGE (o1)-[r14:causedBy]->(o2)
+SET r14.text = 'Viêm bàng quang xuất huyết có thể do nhiễm trùng đường tiết niệu hoặc không.'
+
+MERGE (o1:cause {id: 'vi_khuẩn_hoặc_chất_độc_gây_hại_cause'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o1)-[r15:causes]->(o2)
+SET r15.text = 'Tuy nhiên, hiện tượng viêm bàng quang xuất huyết xuất hiện vi khuẩn hoặc chất độc gây hại bên trong bàng quang.'
+
+MERGE (o1:cause {id: 'tổn_thương_bàng_quang_cause'})
+MERGE (o2:symptom {id: 'xuất_huyết_symptom'})
+MERGE (o1)-[r16:causes]->(o2)
+SET r16.text = 'Đây được xem là nguyên nhân chính gây tổn thương bàng quang, dẫn đến tình trạng xuất huyết.'
+
+MERGE (o1:treatment {id: 'hóa_trị_treatment'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o1)-[r17:associatedWith]->(o2)
+SET r17.text = 'Người thực hiện hóa trị có thể bị viêm bàng quang xuất huyết cao hơn những người khác.'
+
+MERGE (o1:treatment {id: 'cyclophosphamide_và_ifosfamide_treatment'})
+MERGE (o2:disease {id: 'ung_thư_disease'})
+MERGE (o1)-[r18:treatedBy]->(o2)
+SET r18.text = 'Đối với việc làm hóa trị, cyclophosphamide và ifosfamide là hai loại thuốc thường được dùng để tiêu diệt các tế bào ung thư.'
+
+MERGE (o1:treatment {id: 'cyclophosphamide_và_ifosfamide_treatment'})
+MERGE (o2:cause {id: 'chất_độc_acrolein_cause'})
+MERGE (o1)-[r19:causedBy]->(o2)
+SET r19.text = 'Tuy nhiên bạn cần lưu ý rằng, hai loại thuốc này có khả năng phân hủy thành chất độc acrolein.'
+
+MERGE (o1:cause {id: 'chất_độc_acrolein_cause'})
+MERGE (o2:organ {id: 'bàng_quang_organ'})
+MERGE (o1)-[r20:affects]->(o2)
+SET r20.text = 'Vì thế, khi chất acrolein dẫn đến bàng quang, lớp niêm mạc và thành bàng quang có thể bị tổn thương và nhiễm trùng nặng.'
+
+MERGE (o1:symptom {id: 'chảy_máu_bàng_quang_symptom'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o1)-[r21:isSymptomOf]->(o2)
+SET r21.text = 'Từ đó, dẫn đến việc chảy máu bàng quang và viêm bàng quang xuất huyết.'
+
+MERGE (o1:treatment {id: 'hóa_trị_treatment'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_xuất_huyết_mạn_tính_disease'})
+MERGE (o1)-[r22:associatedWith]->(o2)
+SET r22.text = 'Cần lưu ý, việc hóa trị cũng làm người bệnh tăng nguy cơ mắc viêm bàng quang xuất huyết mạn tính cao hơn người khác.'
+
+MERGE (o1:treatment {id: 'xạ_trị_treatment'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_xuất_huyết_và_viêm_bàng_quang_xuất_huyết_mạn_tính_disease'})
+MERGE (o1)-[r23:causes]->(o2)
+SET r23.text = 'Xạ trị là một trong những nguyên nhân gây viêm bàng quang xuất huyết và viêm bàng quang xuất huyết mạn tính do suy yếu chức năng niêm mạc.'
+
+MERGE (o1:cause {id: 'chùm_tia_phóng_xạ_ion_hóa_cause'})
+MERGE (o2:symptom {id: 'vỡ_mạch_máu_của_lớp_niêm_mạc_bàng_quang_symptom'})
+MERGE (o1)-[r24:causes]->(o2)
+SET r24.text = 'Người thực hiện xạ trị phải tiếp xúc với chùm tia phóng xạ ion hóa, đây là tác nhân gây vỡ mạch máu của lớp niêm mạc bàng quang.'
+
+MERGE (o1:treatment {id: 'xạ_trị_treatment'})
+MERGE (o2:organ {id: 'niêm_mạc_organ'})
+MERGE (o1)-[r25:affects]->(o2)
+SET r25.text = 'Những tác động của xạ trị lên niêm mạc có thể kéo dài từ vài tháng đến vài năm.'
+
+MERGE (o1:cause {id: 'vi_khuẩn_cause'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o1)-[r26:causes]->(o2)
+SET r26.text = 'Người bệnh sẽ có nguy cơ bị vi khuẩn xâm nhập vào bàng quang gây ra viêm bàng quang xuất huyết.'
+
+MERGE (o1:cause {id: 'nhiễm_trùng_cause'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o1)-[r27:causes]->(o2)
+SET r27.text = 'Nhiễm trùng là một trong những nguyên nhân hàng đầu gây viêm bàng quang xuất huyết, phổ biến nhất là nhiễm trùng đường tiết niệu.'
+
+MERGE (o1:lifestyle {id: 'phụ_nữ_lifestyle'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_xuất_huyết_do_nhiễm_trùng_disease'})
+MERGE (o1)-[r28:associatedWith]->(o2)
+SET r28.text = 'Phụ nữ có khả năng bị viêm bàng quang xuất huyết do nhiễm trùng nhiều hơn nam giới bởi cấu trúc niệu đạo của phụ nữ ngắn hơn nam giới.'
+
+MERGE (o1:cause {id: 'escherichia_coli__proteus_mirabilis_tụ_cầu_vàng__lậu_cầu__trực_khuẩn_mủ_xanh_cause'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o1)-[r29:causes]->(o2)
+SET r29.text = 'Escherichia coli là loại vi khuẩn gây ra 80% ca viêm bàng quang xuất huyết, bên cạnh đó proteus mirabilis tụ cầu vàng, lậu cầu, trực khuẩn mủ xanh cũng là những vi khuẩn khiến bạn gặp vấn đề về bàng quang.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_xuất_huyết_do_nguyên_nhân_nhiễm_trùng_nhẹ_disease'})
+MERGE (o2:treatment {id: 'điều_trị_treatment'})
+MERGE (o1)-[r30:treatedBy]->(o2)
+SET r30.text = 'Điều trị viêm bàng quang xuất huyết do nguyên nhân nhiễm trùng nhẹ sẽ có kết quả tốt hơn so với do nguyên nhân hóa trị và xạ trị.'
+
+MERGE (o1:symptom {id: 'đi_tiểu_ra_máu_symptom'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o1)-[r31:isSymptomOf]->(o2)
+SET r31.text = 'Triệu chứng của viêm bàng quang xuất huyết rõ ràng nhất là đi tiểu ra máu.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o2:symptom {id: 'độ_nghiêm_trọng_của_bệnh_symptom'})
+MERGE (o1)-[r32:relatedTo]->(o2)
+SET r32.text = 'Có 4 loại viêm bàng quang xuất huyết tương ứng với độ nghiêm trọng của bệnh.'
+
+MERGE (o1:symptom {id: 'lượng_máu_trong_nước_tiểu_symptom'})
+MERGE (o2:symptom {id: 'tình_trạng_tiết_niệu_symptom'})
+MERGE (o1)-[r33:relatedTo]->(o2)
+SET r33.text = 'Dựa vào lượng máu trong nước tiểu, người bệnh có thể tự đánh giá tình trạng tiết niệu của mình trước khi đi đến thăm khám với bác sĩ để có thể cung cấp cho bác sĩ thông tin chính xác.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o2:symptom {id: 'chảy_máu_vi_thể_symptom'})
+MERGE (o1)-[r34:relatedTo]->(o2)
+SET r34.text = '4 loại viêm bàng quang xuất huyết gồm:  Loại I: Chảy máu vi thể, không thể nhìn thấy máu lẫn trong nước tiểu bằng mắt thường Loại II: Có thể nhìn thấy hiện tượng máu lẫn trong nước tiểu bằng mắt thường Loại III: Máu trong nước tiểu là những cục máu đông li ti Loại IV: Cục máu đông to đủ để ngăn chặn nước tiểu thoát ra khỏi cơ thể'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o2:symptom {id: 'máu_lẫn_trong_nước_tiểu_symptom'})
+MERGE (o1)-[r35:relatedTo]->(o2)
+SET r35.text = '4 loại viêm bàng quang xuất huyết gồm:  Loại I: Chảy máu vi thể, không thể nhìn thấy máu lẫn trong nước tiểu bằng mắt thường Loại II: Có thể nhìn thấy hiện tượng máu lẫn trong nước tiểu bằng mắt thường Loại III: Máu trong nước tiểu là những cục máu đông li ti Loại IV: Cục máu đông to đủ để ngăn chặn nước tiểu thoát ra khỏi cơ thể'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o2:symptom {id: 'cục_máu_đông_li_ti_symptom'})
+MERGE (o1)-[r36:relatedTo]->(o2)
+SET r36.text = '4 loại viêm bàng quang xuất huyết gồm:  Loại I: Chảy máu vi thể, không thể nhìn thấy máu lẫn trong nước tiểu bằng mắt thường Loại II: Có thể nhìn thấy hiện tượng máu lẫn trong nước tiểu bằng mắt thường Loại III: Máu trong nước tiểu là những cục máu đông li ti Loại IV: Cục máu đông to đủ để ngăn chặn nước tiểu thoát ra khỏi cơ thể'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o2:symptom {id: 'cục_máu_đông_to_symptom'})
+MERGE (o1)-[r37:relatedTo]->(o2)
+SET r37.text = '4 loại viêm bàng quang xuất huyết gồm:  Loại I: Chảy máu vi thể, không thể nhìn thấy máu lẫn trong nước tiểu bằng mắt thường Loại II: Có thể nhìn thấy hiện tượng máu lẫn trong nước tiểu bằng mắt thường Loại III: Máu trong nước tiểu là những cục máu đông li ti Loại IV: Cục máu đông to đủ để ngăn chặn nước tiểu thoát ra khỏi cơ thể'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o2:symptom {id: 'đau_ở_vùng_chậu_symptom'})
+MERGE (o1)-[r38:isSymptomOf]->(o2)
+SET r38.text = 'Ngoài ra, bạn cũng có thể biết được mình mắc viêm bàng quang xuất huyết thông qua những dấu hiệu lâm sàng như:  Đau ở vùng chậu, xương mu, hạ sườn Đau, nóng rát khi đi tiểu Tần suất và nhu cầu đi tiểu tăng cao bất thường Thường gặp tình trạng tiểu gấp, tiểu són Nước tiểu màu đậm, có mùi hôi, nồng'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o2:symptom {id: 'đau__nóng_rát_khi_đi_tiểu_symptom'})
+MERGE (o1)-[r39:isSymptomOf]->(o2)
+SET r39.text = 'Ngoài ra, bạn cũng có thể biết được mình mắc viêm bàng quang xuất huyết thông qua những dấu hiệu lâm sàng như:  Đau ở vùng chậu, xương mu, hạ sườn Đau, nóng rát khi đi tiểu Tần suất và nhu cầu đi tiểu tăng cao bất thường Thường gặp tình trạng tiểu gấp, tiểu són Nước tiểu màu đậm, có mùi hôi, nồng'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o2:symptom {id: 'tần_suất_và_nhu_cầu_đi_tiểu_tăng_cao_bất_thường_symptom'})
+MERGE (o1)-[r40:isSymptomOf]->(o2)
+SET r40.text = 'Ngoài ra, bạn cũng có thể biết được mình mắc viêm bàng quang xuất huyết thông qua những dấu hiệu lâm sàng như:  Đau ở vùng chậu, xương mu, hạ sườn Đau, nóng rát khi đi tiểu Tần suất và nhu cầu đi tiểu tăng cao bất thường Thường gặp tình trạng tiểu gấp, tiểu són Nước tiểu màu đậm, có mùi hôi, nồng'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o2:symptom {id: 'tiểu_gấp_symptom'})
+MERGE (o1)-[r41:isSymptomOf]->(o2)
+SET r41.text = 'Ngoài ra, bạn cũng có thể biết được mình mắc viêm bàng quang xuất huyết thông qua những dấu hiệu lâm sàng như:  Đau ở vùng chậu, xương mu, hạ sườn Đau, nóng rát khi đi tiểu Tần suất và nhu cầu đi tiểu tăng cao bất thường Thường gặp tình trạng tiểu gấp, tiểu són Nước tiểu màu đậm, có mùi hôi, nồng'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o2:symptom {id: 'tiểu_són_symptom'})
+MERGE (o1)-[r42:isSymptomOf]->(o2)
+SET r42.text = 'Ngoài ra, bạn cũng có thể biết được mình mắc viêm bàng quang xuất huyết thông qua những dấu hiệu lâm sàng như:  Đau ở vùng chậu, xương mu, hạ sườn Đau, nóng rát khi đi tiểu Tần suất và nhu cầu đi tiểu tăng cao bất thường Thường gặp tình trạng tiểu gấp, tiểu són Nước tiểu màu đậm, có mùi hôi, nồng'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o2:symptom {id: 'nước_tiểu_màu_đậm_symptom'})
+MERGE (o1)-[r43:isSymptomOf]->(o2)
+SET r43.text = 'Ngoài ra, bạn cũng có thể biết được mình mắc viêm bàng quang xuất huyết thông qua những dấu hiệu lâm sàng như:  Đau ở vùng chậu, xương mu, hạ sườn Đau, nóng rát khi đi tiểu Tần suất và nhu cầu đi tiểu tăng cao bất thường Thường gặp tình trạng tiểu gấp, tiểu són Nước tiểu màu đậm, có mùi hôi, nồng'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o2:symptom {id: 'nước_tiểu_có_mùi_hôi_symptom'})
+MERGE (o1)-[r44:isSymptomOf]->(o2)
+SET r44.text = 'Ngoài ra, bạn cũng có thể biết được mình mắc viêm bàng quang xuất huyết thông qua những dấu hiệu lâm sàng như:  Đau ở vùng chậu, xương mu, hạ sườn Đau, nóng rát khi đi tiểu Tần suất và nhu cầu đi tiểu tăng cao bất thường Thường gặp tình trạng tiểu gấp, tiểu són Nước tiểu màu đậm, có mùi hôi, nồng'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o2:symptom {id: 'nước_tiểu_nồng_symptom'})
+MERGE (o1)-[r45:isSymptomOf]->(o2)
+SET r45.text = 'Ngoài ra, bạn cũng có thể biết được mình mắc viêm bàng quang xuất huyết thông qua những dấu hiệu lâm sàng như:  Đau ở vùng chậu, xương mu, hạ sườn Đau, nóng rát khi đi tiểu Tần suất và nhu cầu đi tiểu tăng cao bất thường Thường gặp tình trạng tiểu gấp, tiểu són Nước tiểu màu đậm, có mùi hôi, nồng'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_cấp_tính_disease'})
+MERGE (o1)-[r46:relatedTo]->(o2)
+SET r46.text = 'Những triệu chứng trên giống với viêm bàng quang cấp tính tuy nhiên cường độ đau ở người bệnh viêm bàng quang xuất huyết sẽ nặng hơn do tình trạng nhiễm trùng nặng như viêm và chảy máu ở bàng quang.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o2:symptom {id: 'cường_độ_đau_nặng_symptom'})
+MERGE (o1)-[r47:isSymptomOf]->(o2)
+SET r47.text = 'Những triệu chứng trên giống với viêm bàng quang cấp tính tuy nhiên cường độ đau ở người bệnh viêm bàng quang xuất huyết sẽ nặng hơn do tình trạng nhiễm trùng nặng như viêm và chảy máu ở bàng quang.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o2:cause {id: 'nhiễm_trùng_nặng_cause'})
+MERGE (o1)-[r48:causedBy]->(o2)
+SET r48.text = 'Những triệu chứng trên giống với viêm bàng quang cấp tính tuy nhiên cường độ đau ở người bệnh viêm bàng quang xuất huyết sẽ nặng hơn do tình trạng nhiễm trùng nặng như viêm và chảy máu ở bàng quang.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o2:symptom {id: 'viêm_symptom'})
+MERGE (o1)-[r49:causedBy]->(o2)
+SET r49.text = 'Những triệu chứng trên giống với viêm bàng quang cấp tính tuy nhiên cường độ đau ở người bệnh viêm bàng quang xuất huyết sẽ nặng hơn do tình trạng nhiễm trùng nặng như viêm và chảy máu ở bàng quang.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o2:symptom {id: 'chảy_máu_ở_bàng_quang_symptom'})
+MERGE (o1)-[r50:causedBy]->(o2)
+SET r50.text = 'Những triệu chứng trên giống với viêm bàng quang cấp tính tuy nhiên cường độ đau ở người bệnh viêm bàng quang xuất huyết sẽ nặng hơn do tình trạng nhiễm trùng nặng như viêm và chảy máu ở bàng quang.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o2:cause {id: 'nhiễm_trùng_nặng_cause'})
+MERGE (o1)-[r51:causedBy]->(o2)
+SET r51.text = 'Viêm bàng quang xuất huyết là một bệnh nhiễm trùng nặng, không chỉ gây ra những cảm giác khó chịu và bất tiện cho người bệnh mà còn có những biến chứng liên quan đến thận.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o2:organ {id: 'thận_organ'})
+MERGE (o1)-[r52:affects]->(o2)
+SET r52.text = 'Viêm bàng quang xuất huyết là một bệnh nhiễm trùng nặng, không chỉ gây ra những cảm giác khó chịu và bất tiện cho người bệnh mà còn có những biến chứng liên quan đến thận.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o2:treatment {id: 'điều_trị_treatment'})
+MERGE (o1)-[r53:treatedBy]->(o2)
+SET r53.text = 'Cách điều trị viêm bàng quang xuất huyết, đặc biệt là do nhiễm trùng không quá phức tạp và có thể khỏi hoàn toàn.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o2:cause {id: 'nhiễm_trùng_cause'})
+MERGE (o1)-[r54:causedBy]->(o2)
+SET r54.text = 'Cách điều trị viêm bàng quang xuất huyết, đặc biệt là do nhiễm trùng không quá phức tạp và có thể khỏi hoàn toàn.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o2:treatment {id: 'không_được_điều_trị_kịp_thời_treatment'})
+MERGE (o1)-[r55:causedBy]->(o2)
+SET r55.text = 'Tuy nhiên, nếu bệnh không được điều trị kịp thời hoặc bệnh tái lại nhiều lần sẽ dẫn đến những biến chứng nguy hiểm, ảnh hưởng nặng nề đến sức khỏe và hệ miễn dịch của người bệnh.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o2:symptom {id: 'bệnh_tái_lại_nhiều_lần_symptom'})
+MERGE (o1)-[r56:causedBy]->(o2)
+SET r56.text = 'Tuy nhiên, nếu bệnh không được điều trị kịp thời hoặc bệnh tái lại nhiều lần sẽ dẫn đến những biến chứng nguy hiểm, ảnh hưởng nặng nề đến sức khỏe và hệ miễn dịch của người bệnh.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o2:symptom {id: 'sức_khỏe_symptom'})
+MERGE (o1)-[r57:affects]->(o2)
+SET r57.text = 'Tuy nhiên, nếu bệnh không được điều trị kịp thời hoặc bệnh tái lại nhiều lần sẽ dẫn đến những biến chứng nguy hiểm, ảnh hưởng nặng nề đến sức khỏe và hệ miễn dịch của người bệnh.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o2:organ {id: 'hệ_miễn_dịch_organ'})
+MERGE (o1)-[r58:affects]->(o2)
+SET r58.text = 'Tuy nhiên, nếu bệnh không được điều trị kịp thời hoặc bệnh tái lại nhiều lần sẽ dẫn đến những biến chứng nguy hiểm, ảnh hưởng nặng nề đến sức khỏe và hệ miễn dịch của người bệnh.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o2:symptom {id: 'mất_máu_symptom'})
+MERGE (o1)-[r59:isSymptomOf]->(o2)
+SET r59.text = 'Một số những biến chứng của viêm bàng quang xuất huyết mà người bệnh cần lưu ý và ngăn ngừa:  Mất máu, thiếu máu: Nếu bàng quang không được cầm máu và điều trị kịp thời, tình trạng chảy máu bàng quang sẽ kéo dài liên tục và khiến cho người bệnh thiếu máu.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o2:symptom {id: 'thiếu_máu_symptom'})
+MERGE (o1)-[r60:isSymptomOf]->(o2)
+SET r60.text = 'Một số những biến chứng của viêm bàng quang xuất huyết mà người bệnh cần lưu ý và ngăn ngừa:  Mất máu, thiếu máu: Nếu bàng quang không được cầm máu và điều trị kịp thời, tình trạng chảy máu bàng quang sẽ kéo dài liên tục và khiến cho người bệnh thiếu máu.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o2:symptom {id: 'chảy_máu_bàng_quang_symptom'})
+MERGE (o1)-[r61:causedBy]->(o2)
+SET r61.text = 'Một số những biến chứng của viêm bàng quang xuất huyết mà người bệnh cần lưu ý và ngăn ngừa:  Mất máu, thiếu máu: Nếu bàng quang không được cầm máu và điều trị kịp thời, tình trạng chảy máu bàng quang sẽ kéo dài liên tục và khiến cho người bệnh thiếu máu.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o2:organ {id: 'bàng_quang_organ'})
+MERGE (o1)-[r62:affects]->(o2)
+SET r62.text = 'Một số những biến chứng của viêm bàng quang xuất huyết mà người bệnh cần lưu ý và ngăn ngừa:  Mất máu, thiếu máu: Nếu bàng quang không được cầm máu và điều trị kịp thời, tình trạng chảy máu bàng quang sẽ kéo dài liên tục và khiến cho người bệnh thiếu máu.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o2:disease {id: 'nhiễm_trùng_thận_disease'})
+MERGE (o1)-[r63:isSymptomOf]->(o2)
+SET r63.text = 'Nhiễm trùng thận và suy thận: Vi khuẩn ở bên trong bàng quang có thể nhiễm trùng ngược lên thận và gây tổn thương cho thận, tăng nguy cơ mắc suy thận cao ở người bệnh.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o2:disease {id: 'suy_thận_disease'})
+MERGE (o1)-[r64:isSymptomOf]->(o2)
+SET r64.text = 'Nhiễm trùng thận và suy thận: Vi khuẩn ở bên trong bàng quang có thể nhiễm trùng ngược lên thận và gây tổn thương cho thận, tăng nguy cơ mắc suy thận cao ở người bệnh.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o2:cause {id: 'vi_khuẩn_cause'})
+MERGE (o1)-[r65:causedBy]->(o2)
+SET r65.text = 'Nhiễm trùng thận và suy thận: Vi khuẩn ở bên trong bàng quang có thể nhiễm trùng ngược lên thận và gây tổn thương cho thận, tăng nguy cơ mắc suy thận cao ở người bệnh.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o2:organ {id: 'thận_organ'})
+MERGE (o1)-[r66:affects]->(o2)
+SET r66.text = 'Nhiễm trùng thận và suy thận: Vi khuẩn ở bên trong bàng quang có thể nhiễm trùng ngược lên thận và gây tổn thương cho thận, tăng nguy cơ mắc suy thận cao ở người bệnh.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o2:disease {id: 'ung_thư_bàng_quang_disease'})
+MERGE (o1)-[r67:isSymptomOf]->(o2)
+SET r67.text = 'Ung thư bàng quang: Viêm bàng quang xuất huyết kéo dài hoặc tái lại nhiều lần là một trong những tác nhân khiến người bệnh đối mặt với khả năng ung thư bàng quang.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o2:symptom {id: 'kéo_dài_symptom'})
+MERGE (o1)-[r68:causedBy]->(o2)
+SET r68.text = 'Ung thư bàng quang: Viêm bàng quang xuất huyết kéo dài hoặc tái lại nhiều lần là một trong những tác nhân khiến người bệnh đối mặt với khả năng ung thư bàng quang.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o2:symptom {id: 'tái_lại_nhiều_lần_symptom'})
+MERGE (o1)-[r69:causedBy]->(o2)
+SET r69.text = 'Ung thư bàng quang: Viêm bàng quang xuất huyết kéo dài hoặc tái lại nhiều lần là một trong những tác nhân khiến người bệnh đối mặt với khả năng ung thư bàng quang.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o2:organ {id: 'bàng_quang_organ'})
+MERGE (o1)-[r70:affects]->(o2)
+SET r70.text = 'Ung thư bàng quang: Viêm bàng quang xuất huyết kéo dài hoặc tái lại nhiều lần là một trong những tác nhân khiến người bệnh đối mặt với khả năng ung thư bàng quang.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o2:disease {id: 'vô_sinh_disease'})
+MERGE (o1)-[r71:isSymptomOf]->(o2)
+SET r71.text = 'Vô sinh: Biến chứng này xuất hiện khi viêm bàng quang xuất huyết có thể gây ra nhiễm trùng lây cho cơ quan sinh dục, cản trở đường xuất tinh đối với nam giới.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o2:cause {id: 'nhiễm_trùng_cause'})
+MERGE (o1)-[r72:causedBy]->(o2)
+SET r72.text = 'Vô sinh: Biến chứng này xuất hiện khi viêm bàng quang xuất huyết có thể gây ra nhiễm trùng lây cho cơ quan sinh dục, cản trở đường xuất tinh đối với nam giới.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o2:organ {id: 'cơ_quan_sinh_dục_organ'})
+MERGE (o1)-[r73:affects]->(o2)
+SET r73.text = 'Vô sinh: Biến chứng này xuất hiện khi viêm bàng quang xuất huyết có thể gây ra nhiễm trùng lây cho cơ quan sinh dục, cản trở đường xuất tinh đối với nam giới.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o2:organ {id: 'đường_xuất_tinh_organ'})
+MERGE (o1)-[r74:affects]->(o2)
+SET r74.text = 'Vô sinh: Biến chứng này xuất hiện khi viêm bàng quang xuất huyết có thể gây ra nhiễm trùng lây cho cơ quan sinh dục, cản trở đường xuất tinh đối với nam giới.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o2:test {id: 'hỏi_và_thu_thập_những_triệu_chứng_hiện_tại_test'})
+MERGE (o1)-[r75:diagnosedBy]->(o2)
+SET r75.text = 'Với bất kỳ người bệnh đến khám viêm bàng quang xuất huyết, bác sĩ sẽ thực hiện hỏi và thu thập những triệu chứng hiện tại cùng với bệnh sử.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o2:test {id: 'thu_thập_bệnh_sử_test'})
+MERGE (o1)-[r76:diagnosedBy]->(o2)
+SET r76.text = 'Với bất kỳ người bệnh đến khám viêm bàng quang xuất huyết, bác sĩ sẽ thực hiện hỏi và thu thập những triệu chứng hiện tại cùng với bệnh sử.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o2:disease {id: 'sỏi_bàng_quang_disease'})
+MERGE (o1)-[r77:relatedTo]->(o2)
+SET r77.text = 'Đây là bước để bác sĩ có thể nắm được tình trạng sức khỏe của bạn, loại trừ những nguy cơ từ những bệnh khác như sỏi bàng quang, u bàng quang.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o2:disease {id: 'u_bàng_quang_disease'})
+MERGE (o1)-[r78:relatedTo]->(o2)
+SET r78.text = 'Đây là bước để bác sĩ có thể nắm được tình trạng sức khỏe của bạn, loại trừ những nguy cơ từ những bệnh khác như sỏi bàng quang, u bàng quang.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o2:test {id: 'xét_nghiệm_cận_lâm_sàng_test'})
+MERGE (o1)-[r79:diagnosedBy]->(o2)
+SET r79.text = 'Hơn nữa, dựa vào thông tin bệnh sử, bác sĩ cũng có thể xác định được nguyên nhân nhiễm bệnh của bạn, từ đó chỉ định thực hiện phương pháp xét nghiệm cận lâm sàng phù hợp.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o2:test {id: 'xét_nghiệm_test'})
+MERGE (o1)-[r80:diagnosedBy]->(o2)
+SET r80.text = 'Chẩn đoán cận lâm sàng đối với viêm bàng quang xuất huyết là những hoạt động xét nghiệm hoặc nội soi, cung cấp cho bác sĩ về tình trạng viêm, chảy máu của bàng quang và các vi khuẩn trong máu, nước tiểu.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o2:test {id: 'nội_soi_test'})
+MERGE (o1)-[r81:diagnosedBy]->(o2)
+SET r81.text = 'Chẩn đoán cận lâm sàng đối với viêm bàng quang xuất huyết là những hoạt động xét nghiệm hoặc nội soi, cung cấp cho bác sĩ về tình trạng viêm, chảy máu của bàng quang và các vi khuẩn trong máu, nước tiểu.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o2:symptom {id: 'viêm_symptom'})
+MERGE (o1)-[r82:isSymptomOf]->(o2)
+SET r82.text = 'Chẩn đoán cận lâm sàng đối với viêm bàng quang xuất huyết là những hoạt động xét nghiệm hoặc nội soi, cung cấp cho bác sĩ về tình trạng viêm, chảy máu của bàng quang và các vi khuẩn trong máu, nước tiểu.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o2:symptom {id: 'chảy_máu_symptom'})
+MERGE (o1)-[r83:isSymptomOf]->(o2)
+SET r83.text = 'Chẩn đoán cận lâm sàng đối với viêm bàng quang xuất huyết là những hoạt động xét nghiệm hoặc nội soi, cung cấp cho bác sĩ về tình trạng viêm, chảy máu của bàng quang và các vi khuẩn trong máu, nước tiểu.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o2:cause {id: 'vi_khuẩn_cause'})
+MERGE (o1)-[r84:causedBy]->(o2)
+SET r84.text = 'Chẩn đoán cận lâm sàng đối với viêm bàng quang xuất huyết là những hoạt động xét nghiệm hoặc nội soi, cung cấp cho bác sĩ về tình trạng viêm, chảy máu của bàng quang và các vi khuẩn trong máu, nước tiểu.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o2:organ {id: 'bàng_quang_organ'})
+MERGE (o1)-[r85:affects]->(o2)
+SET r85.text = 'Chẩn đoán cận lâm sàng đối với viêm bàng quang xuất huyết là những hoạt động xét nghiệm hoặc nội soi, cung cấp cho bác sĩ về tình trạng viêm, chảy máu của bàng quang và các vi khuẩn trong máu, nước tiểu.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o2:test {id: 'xét_nghiệm_máu_test'})
+MERGE (o1)-[r86:diagnosedBy]->(o2)
+SET r86.text = 'Những phương pháp chẩn đoán cận lâm sàng mà người bệnh viêm bàng quang xuất huyết cần thực hiện:  Xét nghiệm máu: Dựa trên các chỉ số xét nghiệm máu, bác sĩ có thể chẩn đoán được tình trạng nhiễm trùng máu của người bệnh.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o2:symptom {id: 'nhiễm_trùng_máu_symptom'})
+MERGE (o1)-[r87:isSymptomOf]->(o2)
+SET r87.text = 'Những phương pháp chẩn đoán cận lâm sàng mà người bệnh viêm bàng quang xuất huyết cần thực hiện:  Xét nghiệm máu: Dựa trên các chỉ số xét nghiệm máu, bác sĩ có thể chẩn đoán được tình trạng nhiễm trùng máu của người bệnh.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o2:symptom {id: 'thiếu_máu_symptom'})
+MERGE (o1)-[r88:isSymptomOf]->(o2)
+SET r88.text = 'Bên cạnh đó, bác sĩ cũng có thể biết được bạn có đang bị thiếu máu hoặc rối loạn chảy máu do viêm bàng quang xuất huyết gây ra hay không.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o2:symptom {id: 'rối_loạn_chảy_máu_symptom'})
+MERGE (o1)-[r89:isSymptomOf]->(o2)
+SET r89.text = 'Bên cạnh đó, bác sĩ cũng có thể biết được bạn có đang bị thiếu máu hoặc rối loạn chảy máu do viêm bàng quang xuất huyết gây ra hay không.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o2:test {id: 'xét_nghiệm_nước_tiểu_test'})
+MERGE (o1)-[r90:diagnosedBy]->(o2)
+SET r90.text = 'Xét nghiệm nước tiểu: Bác sĩ sẽ quan sát số lượng bạch cầu và hồng cầu trong nước tiểu.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o2:symptom {id: 'bạch_cầu_trong_nước_tiểu_symptom'})
+MERGE (o1)-[r91:isSymptomOf]->(o2)
+SET r91.text = 'Xét nghiệm nước tiểu: Bác sĩ sẽ quan sát số lượng bạch cầu và hồng cầu trong nước tiểu.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o2:symptom {id: 'hồng_cầu_trong_nước_tiểu_symptom'})
+MERGE (o1)-[r92:isSymptomOf]->(o2)
+SET r92.text = 'Xét nghiệm nước tiểu: Bác sĩ sẽ quan sát số lượng bạch cầu và hồng cầu trong nước tiểu.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o2:symptom {id: 'bạch_cầu_trong_nước_tiểu_trên_104_bạch_cầu/ml_symptom'})
+MERGE (o1)-[r93:isSymptomOf]->(o2)
+SET r93.text = 'Người bệnh viêm bàng quang xuất huyết có số lượng bạch cầu trong nước tiểu trên 104 bạch cầu/ml.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o2:symptom {id: 'không_có_protein_trong_nước_tiểu_symptom'})
+MERGE (o1)-[r94:isSymptomOf]->(o2)
+SET r94.text = 'Một dấu hiệu cận lâm sàng khác ở người viêm bàng quang xuất huyết là không có protein trong nước tiểu.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o2:test {id: 'chụp_mri_test'})
+MERGE (o1)-[r95:diagnosedBy]->(o2)
+SET r95.text = 'Chụp MRI hoặc siêu âm: Với phương pháp này, bác sĩ có thể quan sát được hình thái bàng quang, đặc biệt là độ dày của thành bàng quang để đưa ra kết luận.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o2:test {id: 'siêu_âm_test'})
+MERGE (o1)-[r96:diagnosedBy]->(o2)
+SET r96.text = 'Chụp MRI hoặc siêu âm: Với phương pháp này, bác sĩ có thể quan sát được hình thái bàng quang, đặc biệt là độ dày của thành bàng quang để đưa ra kết luận.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o2:organ {id: 'bàng_quang_organ'})
+MERGE (o1)-[r97:affects]->(o2)
+SET r97.text = 'Chụp MRI hoặc siêu âm: Với phương pháp này, bác sĩ có thể quan sát được hình thái bàng quang, đặc biệt là độ dày của thành bàng quang để đưa ra kết luận.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o2:test {id: 'nội_soi_bàng_quang_test'})
+MERGE (o1)-[r98:diagnosedBy]->(o2)
+SET r98.text = 'Nội soi bàng quang: Người bệnh sẽ được đưa một ống nội soi vào bên trong bàng quang thông qua ngã niệu đạo.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o2:organ {id: 'bàng_quang_organ'})
+MERGE (o1)-[r99:affects]->(o2)
+SET r99.text = 'Nội soi bàng quang: Người bệnh sẽ được đưa một ống nội soi vào bên trong bàng quang thông qua ngã niệu đạo.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o2:symptom {id: 'vết_lở_loét_symptom'})
+MERGE (o1)-[r100:isSymptomOf]->(o2)
+SET r100.text = 'Bác sĩ có thể quan sát được tình trạng tổn thương của bàng quang, bao gồm các vết lở loét, viêm và tình trạng chảy máu.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o2:treatment {id: 'thuốc_kháng_sinh_treatment'})
+MERGE (o1)-[r101:treatedBy]->(o2)
+SET r101.text = 'Viêm bàng quang xuất huyết do nhiễm trùng có thể điều trị bằng thuốc kháng sinh.'
+
+MERGE (o1:treatment {id: 'thuốc_kháng_sinh_treatment'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o1)-[r102:treatedBy]->(o2)
+SET r102.text = 'Viêm bàng quang xuất huyết do nhiễm trùng có thể điều trị bằng thuốc kháng sinh.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o2:symptom {id: 'triệu_chứng_bệnh_symptom'})
+MERGE (o1)-[r103:isSymptomOf]->(o2)
+SET r103.text = 'Trường hợp người bệnh có triệu chứng bệnh không quá nghiêm trọng cũng sẽ được bác sĩ chỉ định phương pháp điều trị này.'
+
+MERGE (o1:treatment {id: 'amoxicillin__ciprofloxacin_và_nitrofurantoin_treatment'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o1)-[r104:treatedBy]->(o2)
+SET r104.text = 'Các loại thuốc kháng sinh, thường được biết đến như amoxicillin, ciprofloxacin và nitrofurantoin là những loại thuốc dùng để ức chế sự phát triển của vi khuẩn bên trong bàng quang.'
+
+MERGE (o1:cause {id: 'vi_khuẩn_cause'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o1)-[r105:causedBy]->(o2)
+SET r105.text = 'Các loại thuốc kháng sinh, thường được biết đến như amoxicillin, ciprofloxacin và nitrofurantoin là những loại thuốc dùng để ức chế sự phát triển của vi khuẩn bên trong bàng quang.'
+
+MERGE (o1:organ {id: 'bàng_quang_organ'})
+MERGE (o2:cause {id: 'vi_khuẩn_cause'})
+MERGE (o1)-[r106:locatedIn]->(o2)
+SET r106.text = 'Các loại thuốc kháng sinh, thường được biết đến như amoxicillin, ciprofloxacin và nitrofurantoin là những loại thuốc dùng để ức chế sự phát triển của vi khuẩn bên trong bàng quang.'
+
+MERGE (o1:treatment {id: 'thuốc_giảm_đau_treatment'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o1)-[r107:treatedBy]->(o2)
+SET r107.text = 'Một số trường hợp cần thiết, bác sĩ cũng sẽ kê thuốc giảm đau cho người bệnh nhằm làm thuyên giảm các cơn đau.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o2:treatment {id: 'thuốc_kháng_sinh_và_thuốc_giảm_đau_treatment'})
+MERGE (o1)-[r108:treatedBy]->(o2)
+SET r108.text = 'Cần lưu ý khi thực hiện điều trị viêm bàng quang xuất huyết bằng thuốc kháng sinh và thuốc giảm đau cần làm đúng theo liều lượng được bác sĩ chỉ định.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o2:symptom {id: 'triệu_chứng_symptom'})
+MERGE (o1)-[r109:isSymptomOf]->(o2)
+SET r109.text = 'Người bệnh không được tự ý ngừng điều trị khi các triệu chứng thuyên giảm hoặc biến mất.'
+
+MERGE (o1:treatment {id: 'kháng_sinh_treatment'})
+MERGE (o2:organ {id: 'hệ_miễn_dịch_cơ_thể_organ'})
+MERGE (o1)-[r110:affects]->(o2)
+SET r110.text = 'Việc sử dụng kháng sinh không đúng liệu trình sẽ ảnh hưởng xấu đến hệ miễn dịch cơ thể, đồng thời làm giảm áp ứng thuốc trong những lần điều trị sau này.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o2:symptom {id: 'chảy_máu_nhiều_symptom'})
+MERGE (o1)-[r111:isSymptomOf]->(o2)
+SET r111.text = 'Người bị viêm bàng quang xuất huyết nếu có tình trạng chảy máu nhiều hoặc kích thước máu đông lớn, làm tắc nghẽn bàng quang, bác sĩ sẽ thực hiện lấy máu đông bằng ống thông chuyên dụng.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o2:symptom {id: 'máu_đông_lớn_symptom'})
+MERGE (o1)-[r112:isSymptomOf]->(o2)
+SET r112.text = 'Người bị viêm bàng quang xuất huyết nếu có tình trạng chảy máu nhiều hoặc kích thước máu đông lớn, làm tắc nghẽn bàng quang, bác sĩ sẽ thực hiện lấy máu đông bằng ống thông chuyên dụng.'
+
+MERGE (o1:symptom {id: 'máu_đông_symptom'})
+MERGE (o2:organ {id: 'bàng_quang_organ'})
+MERGE (o1)-[r113:affects]->(o2)
+SET r113.text = 'Người bị viêm bàng quang xuất huyết nếu có tình trạng chảy máu nhiều hoặc kích thước máu đông lớn, làm tắc nghẽn bàng quang, bác sĩ sẽ thực hiện lấy máu đông bằng ống thông chuyên dụng.'
+
+MERGE (o1:treatment {id: 'lấy_máu_đông_treatment'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o1)-[r114:treatedBy]->(o2)
+SET r114.text = 'Người bị viêm bàng quang xuất huyết nếu có tình trạng chảy máu nhiều hoặc kích thước máu đông lớn, làm tắc nghẽn bàng quang, bác sĩ sẽ thực hiện lấy máu đông bằng ống thông chuyên dụng.'
+
+MERGE (o1:symptom {id: 'chảy_máu_trong_bàng_quang_symptom'})
+MERGE (o2:treatment {id: 'dòng_điện_hoặc_tia_laser_fulguration_treatment'})
+MERGE (o1)-[r115:treatedBy]->(o2)
+SET r115.text = 'Mặt khác, việc điều trị chảy máu trong bàng quang cũng có thể cầm máu bằng dòng điện hoặc tia laser fulguration.'
+
+MERGE (o1:test {id: 'máy_nội_soi_bàng_quang_test'})
+MERGE (o2:symptom {id: 'chảy_máu_symptom'})
+MERGE (o1)-[r116:diagnosedBy]->(o2)
+SET r116.text = 'Để thực hiện phương pháp này, bác sĩ sẽ dùng máy nội soi bàng quang đưa vào bên trong bàng quang của người bệnh để xác định được vị trí chảy máu cần xử lý trước khi thực hiện cầm máu.'
+
+MERGE (o1:treatment {id: 'cắt_bỏ_bàng_quang_hoặc_cắt_u_nang_treatment'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o1)-[r117:treatedBy]->(o2)
+SET r117.text = 'Phương pháp phẫu thuật cắt bỏ bàng quang hoặc cắt u nang là phương pháp điều trị cuối cùng.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o2:symptom {id: 'cơn_đau_cao_symptom'})
+MERGE (o1)-[r118:isSymptomOf]->(o2)
+SET r118.text = 'Áp dụng cho những ca bệnh nghiêm trọng, có cường độ cơn đau cao, bàng quang chảy máu nhiều nhưng người bệnh không đáp ứng hoặc đáp ứng kém với các phương pháp điều trị khác.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o2:symptom {id: 'bàng_quang_chảy_máu_nhiều_symptom'})
+MERGE (o1)-[r119:isSymptomOf]->(o2)
+SET r119.text = 'Áp dụng cho những ca bệnh nghiêm trọng, có cường độ cơn đau cao, bàng quang chảy máu nhiều nhưng người bệnh không đáp ứng hoặc đáp ứng kém với các phương pháp điều trị khác.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o2:lifestyle {id: 'lối_sống_lifestyle'})
+MERGE (o1)-[r120:causedBy]->(o2)
+SET r120.text = 'Viêm bàng quang xuất huyết có khả năng tái phát và tiến triển thành mạn tính nếu người bệnh không chú ý đến sức khỏe, lối sống và vệ sinh của mình.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o2:lifestyle {id: 'vệ_sinh_lifestyle'})
+MERGE (o1)-[r121:causedBy]->(o2)
+SET r121.text = 'Viêm bàng quang xuất huyết có khả năng tái phát và tiến triển thành mạn tính nếu người bệnh không chú ý đến sức khỏe, lối sống và vệ sinh của mình.'
+
+MERGE (o1:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o2:lifestyle {id: 'kiểm_soát_tốt_sức_khỏe_tiết_niệu_lifestyle'})
+MERGE (o1)-[r122:treatedBy]->(o2)
+SET r122.text = 'Nhằm hỗ trợ người bệnh viêm bàng quang xuất huyết rút ngắn thời gian điều trị, ngăn ngừa tái phát, Thư viện Y học Quốc gia Mỹ đã đưa ra khuyến cáo những hoạt động cần thực hiện giúp người bệnh kiểm soát tốt sức khỏe tiết niệu của mình.'
+
+MERGE (o1:lifestyle {id: 'uống_nhiều_nước_lifestyle'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o1)-[r123:preventedBy]->(o2)
+SET r123.text = 'Những hoạt động hỗ trợ điều trị và ngăn ngừa tái phát viêm bàng quang gồm:  Uống nhiều nước Không nhịn tiểu hoặc nhịn tiểu quá lâu Hạn chế thực phẩm có lượng kali cao như cà phê Tập vật lý trị liệu cho bàng quang để cải thiện chức năng'
+
+MERGE (o1:lifestyle {id: 'không_nhịn_tiểu_lifestyle'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o1)-[r124:preventedBy]->(o2)
+SET r124.text = 'Những hoạt động hỗ trợ điều trị và ngăn ngừa tái phát viêm bàng quang gồm:  Uống nhiều nước Không nhịn tiểu hoặc nhịn tiểu quá lâu Hạn chế thực phẩm có lượng kali cao như cà phê Tập vật lý trị liệu cho bàng quang để cải thiện chức năng'
+
+MERGE (o1:lifestyle {id: 'hạn_chế_thực_phẩm_có_lượng_kali_cao_lifestyle'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o1)-[r125:preventedBy]->(o2)
+SET r125.text = 'Những hoạt động hỗ trợ điều trị và ngăn ngừa tái phát viêm bàng quang gồm:  Uống nhiều nước Không nhịn tiểu hoặc nhịn tiểu quá lâu Hạn chế thực phẩm có lượng kali cao như cà phê Tập vật lý trị liệu cho bàng quang để cải thiện chức năng'
+
+MERGE (o1:treatment {id: 'tập_vật_lý_trị_liệu_cho_bàng_quang_treatment'})
+MERGE (o2:disease {id: 'viêm_bàng_quang_xuất_huyết_disease'})
+MERGE (o1)-[r126:treatedBy]->(o2)
+SET r126.text = 'Những hoạt động hỗ trợ điều trị và ngăn ngừa tái phát viêm bàng quang gồm:  Uống nhiều nước Không nhịn tiểu hoặc nhịn tiểu quá lâu Hạn chế thực phẩm có lượng kali cao như cà phê Tập vật lý trị liệu cho bàng quang để cải thiện chức năng'
+
+MERGE (o1:organ {id: 'trung_tâm_tiết_niệu_thận_học_organ'})
+MERGE (o2:organ {id: 'hệ_thống_bvđk_tâm_anh_organ'})
+MERGE (o1)-[r127:locatedIn]->(o2)
+SET r127.text = 'Trung tâm Tiết niệu Thận học, Khoa Nam họccủa Hệ thống BVĐK Tâm Anh quy tụ đội ngũ các chuyên gia đầu ngành, Nội khoa và Ngoại khoa, giỏi chuyên môn, tận tâm.'
+
+MERGE (o1:organ {id: 'trung_tâm_tiết_niệu_thận_học_organ'})
+MERGE (o2:disease {id: 'bệnh_lý_về_thận_và_đường_tiết_niệu_disease'})
+MERGE (o1)-[r128:treatedBy]->(o2)
+SET r128.text = 'Các chuyên gia, bác sĩ của Trung tâm luôn tự tin làm chủ những kỹ thuật mới nhất, phát hiện sớm và điều trị hiệu quả các bệnh lý về thận và đường tiết niệu, giúp người bệnh rút ngắn thời gian nằm viện, hạn chế nguy cơ tái phát, nâng cao chất lượng cuộc sống.'
+
+MERGE (o1:organ {id: 'trung_tâm_tiết_niệu_thận_học_organ'})
+MERGE (o2:disease {id: 'bệnh_lý_đường_tiết_niệu_disease'})
+MERGE (o1)-[r129:treatedBy]->(o2)
+SET r129.text = 'Với hệ thống máy móc, trang thiết bị hiện đại hàng đầu trong nước và khu vực; Phòng mổ đạt tiêu chuẩn quốc tế; Cùng với khu nội trú và dịch vụ cao cấp 5 sao… Trung tâm Tiết niệu Thận học nổi bật với các dịch vụ thăm khám, tầm soát và điều trị tất cả các bệnh lý đường tiết niệu.'
+
+MERGE (o1:treatment {id: 'đại_phẫu_thuật_kỹ_thuật_cao_treatment'})
+MERGE (o2:disease {id: 'bệnh_lý_đường_tiết_niệu_disease'})
+MERGE (o1)-[r130:treatedBy]->(o2)
+SET r130.text = 'Từ các thường gặp cho đến các cuộc đại phẫu thuật kỹ thuật cao.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_nội_soi_sỏi_thận_treatment'})
+MERGE (o2:disease {id: 'bệnh_lý_đường_tiết_niệu_disease'})
+MERGE (o1)-[r131:treatedBy]->(o2)
+SET r131.text = 'Có thể kể đến phẫu thuật nội soi sỏi thận, ghép thận, cắt bướu bảo tồn nhu mô thận; cắt thận tận gốc; cắt tuyến tiền liệt tận gốc; cắt toàn bộ bàng quang tạo hình bàng quang bằng ruột non; cắt tuyến thượng thận; tạo hình các dị tật đường tiết niệu… Chẩn đoán - điều trị nội khoa và ngoại khoa tất cả các bệnh lý Nam khoa.'
+
+MERGE (o1:treatment {id: 'ghép_thận_treatment'})
+MERGE (o2:disease {id: 'bệnh_lý_đường_tiết_niệu_disease'})
+MERGE (o1)-[r132:treatedBy]->(o2)
+SET r132.text = 'Có thể kể đến phẫu thuật nội soi sỏi thận, ghép thận, cắt bướu bảo tồn nhu mô thận; cắt thận tận gốc; cắt tuyến tiền liệt tận gốc; cắt toàn bộ bàng quang tạo hình bàng quang bằng ruột non; cắt tuyến thượng thận; tạo hình các dị tật đường tiết niệu… Chẩn đoán - điều trị nội khoa và ngoại khoa tất cả các bệnh lý Nam khoa.'
+
+MERGE (o1:treatment {id: 'cắt_bướu_bảo_tồn_nhu_mô_thận_treatment'})
+MERGE (o2:disease {id: 'bệnh_lý_đường_tiết_niệu_disease'})
+MERGE (o1)-[r133:treatedBy]->(o2)
+SET r133.text = 'Có thể kể đến phẫu thuật nội soi sỏi thận, ghép thận, cắt bướu bảo tồn nhu mô thận; cắt thận tận gốc; cắt tuyến tiền liệt tận gốc; cắt toàn bộ bàng quang tạo hình bàng quang bằng ruột non; cắt tuyến thượng thận; tạo hình các dị tật đường tiết niệu… Chẩn đoán - điều trị nội khoa và ngoại khoa tất cả các bệnh lý Nam khoa.'
+
+MERGE (o1:treatment {id: 'cắt_thận_tận_gốc_treatment'})
+MERGE (o2:disease {id: 'bệnh_lý_đường_tiết_niệu_disease'})
+MERGE (o1)-[r134:treatedBy]->(o2)
+SET r134.text = 'Có thể kể đến phẫu thuật nội soi sỏi thận, ghép thận, cắt bướu bảo tồn nhu mô thận; cắt thận tận gốc; cắt tuyến tiền liệt tận gốc; cắt toàn bộ bàng quang tạo hình bàng quang bằng ruột non; cắt tuyến thượng thận; tạo hình các dị tật đường tiết niệu… Chẩn đoán - điều trị nội khoa và ngoại khoa tất cả các bệnh lý Nam khoa.'
+
+MERGE (o1:treatment {id: 'cắt_tuyến_tiền_liệt_tận_gốc_treatment'})
+MERGE (o2:disease {id: 'bệnh_lý_đường_tiết_niệu_disease'})
+MERGE (o1)-[r135:treatedBy]->(o2)
+SET r135.text = 'Có thể kể đến phẫu thuật nội soi sỏi thận, ghép thận, cắt bướu bảo tồn nhu mô thận; cắt thận tận gốc; cắt tuyến tiền liệt tận gốc; cắt toàn bộ bàng quang tạo hình bàng quang bằng ruột non; cắt tuyến thượng thận; tạo hình các dị tật đường tiết niệu… Chẩn đoán - điều trị nội khoa và ngoại khoa tất cả các bệnh lý Nam khoa.'
+
+MERGE (o1:treatment {id: 'cắt_toàn_bộ_bàng_quang_tạo_hình_bàng_quang_bằng_ruột_non_treatment'})
+MERGE (o2:disease {id: 'bệnh_lý_đường_tiết_niệu_disease'})
+MERGE (o1)-[r136:treatedBy]->(o2)
+SET r136.text = 'Có thể kể đến phẫu thuật nội soi sỏi thận, ghép thận, cắt bướu bảo tồn nhu mô thận; cắt thận tận gốc; cắt tuyến tiền liệt tận gốc; cắt toàn bộ bàng quang tạo hình bàng quang bằng ruột non; cắt tuyến thượng thận; tạo hình các dị tật đường tiết niệu… Chẩn đoán - điều trị nội khoa và ngoại khoa tất cả các bệnh lý Nam khoa.'
+
+MERGE (o1:treatment {id: 'cắt_tuyến_thượng_thận_treatment'})
+MERGE (o2:disease {id: 'bệnh_lý_đường_tiết_niệu_disease'})
+MERGE (o1)-[r137:treatedBy]->(o2)
+SET r137.text = 'Có thể kể đến phẫu thuật nội soi sỏi thận, ghép thận, cắt bướu bảo tồn nhu mô thận; cắt thận tận gốc; cắt tuyến tiền liệt tận gốc; cắt toàn bộ bàng quang tạo hình bàng quang bằng ruột non; cắt tuyến thượng thận; tạo hình các dị tật đường tiết niệu… Chẩn đoán - điều trị nội khoa và ngoại khoa tất cả các bệnh lý Nam khoa.'
+
+MERGE (o1:treatment {id: 'tạo_hình_các_dị_tật_đường_tiết_niệu_treatment'})
+MERGE (o2:disease {id: 'bệnh_lý_đường_tiết_niệu_disease'})
+MERGE (o1)-[r138:treatedBy]->(o2)
+SET r138.text = 'Có thể kể đến phẫu thuật nội soi sỏi thận, ghép thận, cắt bướu bảo tồn nhu mô thận; cắt thận tận gốc; cắt tuyến tiền liệt tận gốc; cắt toàn bộ bàng quang tạo hình bàng quang bằng ruột non; cắt tuyến thượng thận; tạo hình các dị tật đường tiết niệu… Chẩn đoán - điều trị nội khoa và ngoại khoa tất cả các bệnh lý Nam khoa.'
+
+MERGE (o1:disease {id: 'bệnh_lý_nam_khoa_disease'})
+MERGE (o2:treatment {id: 'chẩn_đoán_-_điều_trị_nội_khoa_và_ngoại_khoa_treatment'})
+MERGE (o1)-[r139:treatedBy]->(o2)
+SET r139.text = 'Có thể kể đến phẫu thuật nội soi sỏi thận, ghép thận, cắt bướu bảo tồn nhu mô thận; cắt thận tận gốc; cắt tuyến tiền liệt tận gốc; cắt toàn bộ bàng quang tạo hình bàng quang bằng ruột non; cắt tuyến thượng thận; tạo hình các dị tật đường tiết niệu… Chẩn đoán - điều trị nội khoa và ngoại khoa tất cả các bệnh lý Nam khoa.'
+
+MERGE (o1:treatment {id: 'phẫu_thuật_tuyến_tiền_liệt_treatment'})
+MERGE (o2:disease {id: 'bệnh_lý_nam_khoa_disease'})
+MERGE (o1)-[r140:treatedBy]->(o2)
+SET r140.text = 'Để đặt lịch khám và phẫu thuật tuyến tiền liệt với các chuyên gia đầu ngành tại Trung tâm Tiết niệu Thận học, Khoa Nam học – Tiết niệu Hệ thống Bệnh viện Đa khoa Tâm Anh, quý khách có thể đặt hẹn trực tuyến qua các cách sau đây:'
+
+MERGE (o1:test {id: '0287_102_6789_-_093_180_6858_hoặc_024_3872_3872_-_024_7106_6858_test'})
+MERGE (o2:disease {id: 'bệnh_lý_nam_khoa_disease'})
+MERGE (o1)-[r141:diagnosedBy]->(o2)
+SET r141.text = 'Gọi tổng đài 0287 102 6789 - 093 180 6858 hoặc 024 3872 3872 - 024 7106 6858 (Hà Nội) để đăng ký lịch hẹn khám bệnh riêng với chuyên gia, thông qua nhân viên chăm sóc khách hàng.'
+
+MERGE (o1:test {id: 'https://tamanhhospital.vn/danh-cho-khach-hang/dat-lich-kham/_test'})
+MERGE (o2:disease {id: 'bệnh_lý_nam_khoa_disease'})
+MERGE (o1)-[r142:diagnosedBy]->(o2)
+SET r142.text = 'Đăng ký hẹn khám bệnh với bất kỳ bác sĩ nào mà mình tin tưởng tại đường link: https://tamanhhospital.vn/danh-cho-khach-hang/dat-lich-kham/'
+
+MERGE (o1:test {id: 'fanpage_bệnh_viện_đa_khoa_tâm_anh_hoặc_fanpage_tiết_niệu_–_nam_học_bvđk_tâm_anh_test'})
+MERGE (o2:disease {id: 'bệnh_lý_nam_khoa_disease'})
+MERGE (o1)-[r143:diagnosedBy]->(o2)
+SET r143.text = 'Gửi tin nhắn trên Fanpage Bệnh viện Đa khoa Tâm Anh hoặc Fanpage Tiết niệu – Nam học BVĐK Tâm Anh'

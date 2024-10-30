@@ -1,0 +1,1178 @@
+[
+    {
+        "text": "BS.CKI Hồ Thị Khánh Quyên, Bác sĩ Trung tâm Sản Phụ khoa Bệnh viện Đa khoa Tâm Anh TP.HCM chia sẻ một số yếu tố làm tăng nguy cơ u nang buồng trứng như:",
+        "head": "u nang buồng trứng",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Thai kỳ",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Một số trường hợp ghi nhận u nang có thể hình thành khi rụng trứng tồn tại trên buồng trứng trong suốt thai kỳ.",
+        "head": "u nang",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "rụng trứng tồn tại trên buồng trứng trong suốt thai kỳ",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Lạc nội mạc tử cung: Các tế bào nội mạc tử cung phát triển bên ngoài tử cung, một số mô có thể gắn ở buồng trứng.",
+        "head": "Lạc nội mạc tử cung",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "Các tế bào nội mạc tử cung phát triển bên ngoài tử cung",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Lạc nội mạc tử cung: Các tế bào nội mạc tử cung phát triển bên ngoài tử cung, một số mô có thể gắn ở buồng trứng.",
+        "head": "Lạc nội mạc tử cung",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "buồng trứng",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Nhiễm trùng vùng chậu: Khi nhiễm trùng lan đến buồng trứng có thể hình thành u nang.",
+        "head": "Nhiễm trùng vùng chậu",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "u nang",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nhiễm trùng vùng chậu: Khi nhiễm trùng lan đến buồng trứng có thể hình thành u nang.",
+        "head": "Nhiễm trùng vùng chậu",
+        "head_type": "cause",
+        "relation": "affects",
+        "tail": "buồng trứng",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Trường hợp đã từng xuất hiện u nang trước đó, người bệnh có thể tái phát lại.",
+        "head": "u nang",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "tái phát",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Tiền sử gia đình có mẹ hoặc chị gái bị u buồng trứng.",
+        "head": "u buồng trứng",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "Tiền sử gia đình",
+        "tail_type": "cause"
+    },
+    {
+        "text": "U nang buồng trứng đa số xuất hiện và diễn tiến âm thầm, không có triệu chứng, hầu hết các trường hợp được phát hiện khi khám phụ khoa định kỳ hay khi siêu âm kiểm tra sức khỏe.",
+        "head": "u nang buồng trứng",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "khám phụ khoa định kỳ",
+        "tail_type": "test"
+    },
+    {
+        "text": "U nang buồng trứng đa số xuất hiện và diễn tiến âm thầm, không có triệu chứng, hầu hết các trường hợp được phát hiện khi khám phụ khoa định kỳ hay khi siêu âm kiểm tra sức khỏe.",
+        "head": "u nang buồng trứng",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "siêu âm kiểm tra sức khỏe",
+        "tail_type": "test"
+    },
+    {
+        "text": "Các triệu chứng sau có thể có khi u đã lớn:  Đau ở vùng chậu, vùng thắt lưng : Đây là triệu chứng phổ biến nhất, người bệnh gặp những cơn đau âm ỉ quanh vùng bụng dưới, vùng thắt lưng do các khối u chèn ép các cơ quan hoặc dây thần kinh chạy dọc ở vùng sau xương chậu.",
+        "head": "Đau ở vùng chậu, vùng thắt lưng",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "u nang buồng trứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các triệu chứng sau có thể có khi u đã lớn:  Đau ở vùng chậu, vùng thắt lưng : Đây là triệu chứng phổ biến nhất, người bệnh gặp những cơn đau âm ỉ quanh vùng bụng dưới, vùng thắt lưng do các khối u chèn ép các cơ quan hoặc dây thần kinh chạy dọc ở vùng sau xương chậu.",
+        "head": "Đau ở vùng chậu, vùng thắt lưng",
+        "head_type": "symptom",
+        "relation": "causedBy",
+        "tail": "các khối u chèn ép các cơ quan hoặc dây thần kinh chạy dọc ở vùng sau xương chậu",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Gây cảm giác khó chịu do khối u to chèn ép các cơ quan lân cận gây tiểu khó, táo bón…",
+        "head": "tiểu khó",
+        "head_type": "symptom",
+        "relation": "causedBy",
+        "tail": "khối u to chèn ép các cơ quan lân cận",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Gây cảm giác khó chịu do khối u to chèn ép các cơ quan lân cận gây tiểu khó, táo bón…",
+        "head": "táo bón",
+        "head_type": "symptom",
+        "relation": "causedBy",
+        "tail": "khối u to chèn ép các cơ quan lân cận",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Bụng chướng.",
+        "head": "Bụng chướng",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "u nang buồng trứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đau khi quan hệ tình dục: Khi giao hợp, nếu cảm thấy đau ở một bên so với bên còn lại, có thể đây là triệu chứng của u buồng trứng.",
+        "head": "Đau khi quan hệ tình dục",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "u buồng trứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Một số trường hợp khối u phát triển lớn dần, nằm ngay vị trí gần cổ tử cung gây đau khi quan hệ tình dục.",
+        "head": "Đau khi quan hệ tình dục",
+        "head_type": "symptom",
+        "relation": "causedBy",
+        "tail": "khối u phát triển lớn dần, nằm ngay vị trí gần cổ tử cung",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Kinh nguyệt thất thường: Rối loạn kinh nguyệt ở nữ giới là một trong những dấu hiệu liên quan đến bệnh lý phụ khoa, trong đó có u buồng trứng buồng trứng.",
+        "head": "Kinh nguyệt thất thường",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "u buồng trứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các trường hợp u to nhanh , bụng chướng to kèm sụt cân, chán ăn, mệt mỏi là các dấu hiệu gợi ý ác tính cần đi khám ngay.",
+        "head": "u to nhanh",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "u nang buồng trứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các trường hợp u to nhanh , bụng chướng to kèm sụt cân, chán ăn, mệt mỏi là các dấu hiệu gợi ý ác tính cần đi khám ngay.",
+        "head": "bụng chướng to",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "u nang buồng trứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các trường hợp u to nhanh , bụng chướng to kèm sụt cân, chán ăn, mệt mỏi là các dấu hiệu gợi ý ác tính cần đi khám ngay.",
+        "head": "sụt cân",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "u nang buồng trứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các trường hợp u to nhanh , bụng chướng to kèm sụt cân, chán ăn, mệt mỏi là các dấu hiệu gợi ý ác tính cần đi khám ngay.",
+        "head": "chán ăn",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "u nang buồng trứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các trường hợp u to nhanh , bụng chướng to kèm sụt cân, chán ăn, mệt mỏi là các dấu hiệu gợi ý ác tính cần đi khám ngay.",
+        "head": "mệt mỏi",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "u nang buồng trứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Đau bụng dưới là một trong những dấu hiệu u nang buồng trứng",
+        "head": "Đau bụng dưới",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "u nang buồng trứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Thông thường, u nang buồng trứng trái, phải hoặc cả 2 bên là lành tính và có thể tự biến mất, không gây hại cho sức khỏe và tính mạng.",
+        "head": "u nang buồng trứng",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "lành tính",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Tuy nhiên, trong một số trường hợp u nang tiến triển chậm và âm thầm kéo dài nhiều năm, chèn ép các cơ quan nội tạng có thể gây ra các biến chứng nguy hiểm như:",
+        "head": "u nang",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "tiến triển chậm",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Tuy nhiên, trong một số trường hợp u nang tiến triển chậm và âm thầm kéo dài nhiều năm, chèn ép các cơ quan nội tạng có thể gây ra các biến chứng nguy hiểm như:",
+        "head": "u nang",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "chèn ép các cơ quan nội tạng",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Xoắn u nang: Biến chứng này có thể xảy ra ở mọi khối u, nhất là những khối u nhỏ, cuống dài, không dính rất dễ bị xoắn.",
+        "head": "Xoắn u nang",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "u nang buồng trứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Xoắn u nang: Biến chứng này có thể xảy ra ở mọi khối u, nhất là những khối u nhỏ, cuống dài, không dính rất dễ bị xoắn.",
+        "head": "Xoắn u nang",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "khối u nhỏ, cuống dài, không dính",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Khi u bị xoắn người bệnh đau bụng dữ dội, liên tục, buồn nôn, nôn, đôi khi sẽ choáng vì đau.",
+        "head": "đau bụng dữ dội",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Xoắn u nang",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi u bị xoắn người bệnh đau bụng dữ dội, liên tục, buồn nôn, nôn, đôi khi sẽ choáng vì đau.",
+        "head": "liên tục",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Xoắn u nang",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi u bị xoắn người bệnh đau bụng dữ dội, liên tục, buồn nôn, nôn, đôi khi sẽ choáng vì đau.",
+        "head": "buồn nôn",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Xoắn u nang",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi u bị xoắn người bệnh đau bụng dữ dội, liên tục, buồn nôn, nôn, đôi khi sẽ choáng vì đau.",
+        "head": "nôn",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Xoắn u nang",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khi u bị xoắn người bệnh đau bụng dữ dội, liên tục, buồn nôn, nôn, đôi khi sẽ choáng vì đau.",
+        "head": "choáng",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Xoắn u nang",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khám thấy bụng chướng ấn đau hạ vị, có phản ứng thành bụng.",
+        "head": "bụng chướng",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Xoắn u nang",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khám thấy bụng chướng ấn đau hạ vị, có phản ứng thành bụng.",
+        "head": "ấn đau hạ vị",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Xoắn u nang",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khám thấy bụng chướng ấn đau hạ vị, có phản ứng thành bụng.",
+        "head": "phản ứng thành bụng",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Xoắn u nang",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Thăm âm đạo thấy khối u căng to, ấn đau nhói.",
+        "head": "khối u căng to",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Xoắn u nang",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Thăm âm đạo thấy khối u căng to, ấn đau nhói.",
+        "head": "ấn đau nhói",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Xoắn u nang",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Vỡ u nang buồng trứng: Khi áp lực dịch bên trong khối u quá lớn có thể gây vỡ u nang.",
+        "head": "Vỡ u nang buồng trứng",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "u nang buồng trứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Vỡ u nang buồng trứng: Khi áp lực dịch bên trong khối u quá lớn có thể gây vỡ u nang.",
+        "head": "Vỡ u nang buồng trứng",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "áp lực dịch bên trong khối u quá lớn",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Lúc này, người bệnh có thể đau bụng đột ngột và liên tục.",
+        "head": "đau bụng đột ngột",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Vỡ u nang buồng trứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Lúc này, người bệnh có thể đau bụng đột ngột và liên tục.",
+        "head": "liên tục",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Vỡ u nang buồng trứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Một số trường hợp vỡ nang có thể gây chảy máu trong ổ bụng, người bệnh choáng và ngất xỉu.",
+        "head": "chảy máu trong ổ bụng",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Vỡ u nang buồng trứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Một số trường hợp vỡ nang có thể gây chảy máu trong ổ bụng, người bệnh choáng và ngất xỉu.",
+        "head": "choáng",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Vỡ u nang buồng trứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Một số trường hợp vỡ nang có thể gây chảy máu trong ổ bụng, người bệnh choáng và ngất xỉu.",
+        "head": "ngất xỉu",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Vỡ u nang buồng trứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Sau khi nang vỡ, người bệnh có thể có hội chứng nhiễm khuẩn, có phản ứng ở phúc mạc, khám âm đạo chạm u dính, ấn thấy đau.",
+        "head": "hội chứng nhiễm khuẩn",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Vỡ u nang buồng trứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Sau khi nang vỡ, người bệnh có thể có hội chứng nhiễm khuẩn, có phản ứng ở phúc mạc, khám âm đạo chạm u dính, ấn thấy đau.",
+        "head": "phản ứng ở phúc mạc",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Vỡ u nang buồng trứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Sau khi nang vỡ, người bệnh có thể có hội chứng nhiễm khuẩn, có phản ứng ở phúc mạc, khám âm đạo chạm u dính, ấn thấy đau.",
+        "head": "khám âm đạo chạm u dính",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Vỡ u nang buồng trứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Sau khi nang vỡ, người bệnh có thể có hội chứng nhiễm khuẩn, có phản ứng ở phúc mạc, khám âm đạo chạm u dính, ấn thấy đau.",
+        "head": "ấn thấy đau",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Vỡ u nang buồng trứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Nếu không được phát hiện sớm và điều trị kịp thời, người bệnh có thể bị đe dọa đến tính mạng.",
+        "head": "đe dọa đến tính mạng",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Vỡ u nang buồng trứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Chèn ép nội tạng: Đây là biến chứng xuất hiện muộn khi khối u lâu ngày đã phát triển lớn.",
+        "head": "Chèn ép nội tạng",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "u nang buồng trứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Chèn ép nội tạng: Đây là biến chứng xuất hiện muộn khi khối u lâu ngày đã phát triển lớn.",
+        "head": "Chèn ép nội tạng",
+        "head_type": "disease",
+        "relation": "causedBy",
+        "tail": "khối u lâu ngày đã phát triển lớn",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Các khối u chèn ép bàng quang gây đau buốt khi tiểu tiện, chèn ép trực tràng dẫn đến táo bón, chèn ép niệu quản làm ứ nước bể thận, thậm chí chèn ép tĩnh mạch chủ dưới dẫn đến tuần hoàn bàng hệ, phù hai chi dưới, cổ trướng.",
+        "head": "đau buốt khi tiểu tiện",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Chèn ép nội tạng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các khối u chèn ép bàng quang gây đau buốt khi tiểu tiện, chèn ép trực tràng dẫn đến táo bón, chèn ép niệu quản làm ứ nước bể thận, thậm chí chèn ép tĩnh mạch chủ dưới dẫn đến tuần hoàn bàng hệ, phù hai chi dưới, cổ trướng.",
+        "head": "táo bón",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Chèn ép nội tạng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các khối u chèn ép bàng quang gây đau buốt khi tiểu tiện, chèn ép trực tràng dẫn đến táo bón, chèn ép niệu quản làm ứ nước bể thận, thậm chí chèn ép tĩnh mạch chủ dưới dẫn đến tuần hoàn bàng hệ, phù hai chi dưới, cổ trướng.",
+        "head": "ứ nước bể thận",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Chèn ép nội tạng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các khối u chèn ép bàng quang gây đau buốt khi tiểu tiện, chèn ép trực tràng dẫn đến táo bón, chèn ép niệu quản làm ứ nước bể thận, thậm chí chèn ép tĩnh mạch chủ dưới dẫn đến tuần hoàn bàng hệ, phù hai chi dưới, cổ trướng.",
+        "head": "tuần hoàn bàng hệ",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Chèn ép nội tạng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các khối u chèn ép bàng quang gây đau buốt khi tiểu tiện, chèn ép trực tràng dẫn đến táo bón, chèn ép niệu quản làm ứ nước bể thận, thậm chí chèn ép tĩnh mạch chủ dưới dẫn đến tuần hoàn bàng hệ, phù hai chi dưới, cổ trướng.",
+        "head": "phù hai chi dưới",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Chèn ép nội tạng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các khối u chèn ép bàng quang gây đau buốt khi tiểu tiện, chèn ép trực tràng dẫn đến táo bón, chèn ép niệu quản làm ứ nước bể thận, thậm chí chèn ép tĩnh mạch chủ dưới dẫn đến tuần hoàn bàng hệ, phù hai chi dưới, cổ trướng.",
+        "head": "cổ trướng",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "Chèn ép nội tạng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các khối u chèn ép bàng quang gây đau buốt khi tiểu tiện, chèn ép trực tràng dẫn đến táo bón, chèn ép niệu quản làm ứ nước bể thận, thậm chí chèn ép tĩnh mạch chủ dưới dẫn đến tuần hoàn bàng hệ, phù hai chi dưới, cổ trướng.",
+        "head": "khối u",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "bàng quang",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Các khối u chèn ép bàng quang gây đau buốt khi tiểu tiện, chèn ép trực tràng dẫn đến táo bón, chèn ép niệu quản làm ứ nước bể thận, thậm chí chèn ép tĩnh mạch chủ dưới dẫn đến tuần hoàn bàng hệ, phù hai chi dưới, cổ trướng.",
+        "head": "khối u",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "trực tràng",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Các khối u chèn ép bàng quang gây đau buốt khi tiểu tiện, chèn ép trực tràng dẫn đến táo bón, chèn ép niệu quản làm ứ nước bể thận, thậm chí chèn ép tĩnh mạch chủ dưới dẫn đến tuần hoàn bàng hệ, phù hai chi dưới, cổ trướng.",
+        "head": "khối u",
+        "head_type": "disease",
+        "relation": "affects",
+        "tail": "niệu quản",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Bác sĩ Hồ Thị Khánh Quyên cho biết, việc chẩn đoán u nang buồng trứng luôn kết hợp đồng thời kiểm tra lâm sàng và cận lâm sàng để có chẩn đoán chính xác nhất, tránh bỏ sót các dấu hiệu nhỏ ảnh hưởng đến kết quả.",
+        "head": "chẩn đoán u nang buồng trứng",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "kiểm tra lâm sàng và cận lâm sàng",
+        "tail_type": "test"
+    },
+    {
+        "text": "Bác sĩ Hồ Thị Khánh Quyên cho biết, việc chẩn đoán u nang buồng trứng luôn kết hợp đồng thời kiểm tra lâm sàng và cận lâm sàng để có chẩn đoán chính xác nhất, tránh bỏ sót các dấu hiệu nhỏ ảnh hưởng đến kết quả.",
+        "head": "chẩn đoán u nang buồng trứng",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "dấu hiệu nhỏ",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Bác sĩ có thể khai thác một số thông tin của người bệnh làm cơ sở chẩn đoán như:  Rối loạn chu kỳ kinh nguyệt; Triệu chứng đau nhức, khó chịu ở vùng chậu; Đau khi quan hệ tình dục; Tiểu khó, bí tiểu, táo bón.",
+        "head": "Rối loạn chu kỳ kinh nguyệt",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "u nang buồng trứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bác sĩ có thể khai thác một số thông tin của người bệnh làm cơ sở chẩn đoán như:  Rối loạn chu kỳ kinh nguyệt; Triệu chứng đau nhức, khó chịu ở vùng chậu; Đau khi quan hệ tình dục; Tiểu khó, bí tiểu, táo bón.",
+        "head": "Triệu chứng đau nhức, khó chịu ở vùng chậu",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "u nang buồng trứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bác sĩ có thể khai thác một số thông tin của người bệnh làm cơ sở chẩn đoán như:  Rối loạn chu kỳ kinh nguyệt; Triệu chứng đau nhức, khó chịu ở vùng chậu; Đau khi quan hệ tình dục; Tiểu khó, bí tiểu, táo bón.",
+        "head": "Đau khi quan hệ tình dục",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "u nang buồng trứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bác sĩ có thể khai thác một số thông tin của người bệnh làm cơ sở chẩn đoán như:  Rối loạn chu kỳ kinh nguyệt; Triệu chứng đau nhức, khó chịu ở vùng chậu; Đau khi quan hệ tình dục; Tiểu khó, bí tiểu, táo bón.",
+        "head": "Tiểu khó, bí tiểu, táo bón",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "u nang buồng trứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Kiểm tra triệu chứng đau ở vùng bụng dưới, vùng chậu",
+        "head": "Kiểm tra triệu chứng đau ở vùng bụng dưới, vùng chậu",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "u nang buồng trứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các phương pháp chẩn đoán cận lâm sàng gồm:  Siêu âm: Đây là phương pháp chẩn đoán hình ảnh không xâm lấn, giá thành rẻ, cho biết được vị trí u, hình dạng, kích thước khối u, tính chất bên trong u. Hình ảnh trong siêu âm có thể gợi ý u lành hay u ác.",
+        "head": "Siêu âm",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "u nang buồng trứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Các phương pháp chẩn đoán cận lâm sàng gồm:  Siêu âm: Đây là phương pháp chẩn đoán hình ảnh không xâm lấn, giá thành rẻ, cho biết được vị trí u, hình dạng, kích thước khối u, tính chất bên trong u. Hình ảnh trong siêu âm có thể gợi ý u lành hay u ác.",
+        "head": "Siêu âm",
+        "head_type": "test",
+        "relation": "relatedTo",
+        "tail": "vị trí u, hình dạng, kích thước khối u, tính chất bên trong u",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Các phương pháp chẩn đoán cận lâm sàng gồm:  Siêu âm: Đây là phương pháp chẩn đoán hình ảnh không xâm lấn, giá thành rẻ, cho biết được vị trí u, hình dạng, kích thước khối u, tính chất bên trong u. Hình ảnh trong siêu âm có thể gợi ý u lành hay u ác.",
+        "head": "Siêu âm",
+        "head_type": "test",
+        "relation": "relatedTo",
+        "tail": "u lành hay u ác",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Chụp CT scan hoặc MRI: Nếu u to nghi ngờ chụp MRI giúp thấy rõ hơn kết quả siêu âm, còn kết quả CT scan hỗ trợ chẩn đoán chính xác sự lan rộng hay di căn của khối u.",
+        "head": "Chụp CT scan hoặc MRI",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "u nang buồng trứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Chụp CT scan hoặc MRI: Nếu u to nghi ngờ chụp MRI giúp thấy rõ hơn kết quả siêu âm, còn kết quả CT scan hỗ trợ chẩn đoán chính xác sự lan rộng hay di căn của khối u.",
+        "head": "Chụp MRI",
+        "head_type": "test",
+        "relation": "relatedTo",
+        "tail": "kết quả siêu âm",
+        "tail_type": "test"
+    },
+    {
+        "text": "Chụp CT scan hoặc MRI: Nếu u to nghi ngờ chụp MRI giúp thấy rõ hơn kết quả siêu âm, còn kết quả CT scan hỗ trợ chẩn đoán chính xác sự lan rộng hay di căn của khối u.",
+        "head": "Chụp CT scan",
+        "head_type": "test",
+        "relation": "relatedTo",
+        "tail": "sự lan rộng hay di căn của khối u",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Xét nghiệm tìm các dấu ấn bướu có thể gợi ý tính ác tính của u như: CA 125, AFP, beta HCG, HE4…",
+        "head": "Xét nghiệm tìm các dấu ấn bướu",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "u nang buồng trứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Xét nghiệm tìm các dấu ấn bướu có thể gợi ý tính ác tính của u như: CA 125, AFP, beta HCG, HE4…",
+        "head": "Xét nghiệm tìm các dấu ấn bướu",
+        "head_type": "test",
+        "relation": "relatedTo",
+        "tail": "tính ác tính của u",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Đối với u nang cơ năng: Không cần điều trị, khối u thường biến mất sau vài chu kỳ kinh nguyệt. Người bệnh được theo dõi bằng cách siêu âm lặp lại sau hành kinh xong. Người bệnh có thể kết hợp dùng thuốc tránh thai và các biện pháp được hướng dẫn để điều trị u nang buồng trứng cơ năng.",
+        "head": "u nang cơ năng",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "siêu âm lặp lại sau hành kinh xong",
+        "tail_type": "test"
+    },
+    {
+        "text": "Đối với u nang cơ năng: Không cần điều trị, khối u thường biến mất sau vài chu kỳ kinh nguyệt. Người bệnh được theo dõi bằng cách siêu âm lặp lại sau hành kinh xong. Người bệnh có thể kết hợp dùng thuốc tránh thai và các biện pháp được hướng dẫn để điều trị u nang buồng trứng cơ năng.",
+        "head": "u nang cơ năng",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "thuốc tránh thai",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Đối với u nang cơ năng: Không cần điều trị, khối u thường biến mất sau vài chu kỳ kinh nguyệt. Người bệnh được theo dõi bằng cách siêu âm lặp lại sau hành kinh xong. Người bệnh có thể kết hợp dùng thuốc tránh thai và các biện pháp được hướng dẫn để điều trị u nang buồng trứng cơ năng.",
+        "head": "u nang cơ năng",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "biến mất sau vài chu kỳ kinh nguyệt",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Tuy nhiên, một số trường hợp u nang cơ năng gây biến chứng nguy hiểm như xoắn nang, vỡ nang gây mất máu, cần phải cấp cứu và xử trí kịp thời.",
+        "head": "u nang cơ năng",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "xoắn nang, vỡ nang gây mất máu",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Đối với u thực thể: Cần được phát hiện sớm và điều trị kịp thời để tránh các biến chứng nguy hiểm.",
+        "head": "u thực thể",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "phát hiện sớm",
+        "tail_type": "test"
+    },
+    {
+        "text": "Đối với u thực thể: Cần được phát hiện sớm và điều trị kịp thời để tránh các biến chứng nguy hiểm.",
+        "head": "u thực thể",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "điều trị kịp thời",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Đối với u thực thể: Cần được phát hiện sớm và điều trị kịp thời để tránh các biến chứng nguy hiểm.",
+        "head": "u thực thể",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "biến chứng nguy hiểm",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Có nhiều phương pháp điều trị khác nhau, tùy theo tuổi và kích thước khối u, nguyện vọng mang thai và sinh con của người phụ nữ, bác sĩ sẽ tư vấn phương pháp phù hợp, có thể phẫu thuật cắt bỏ toàn bộ khối u và buồng trứng, hoặc chỉ bóc tách khối u lành khỏi buồng trứng.",
+        "head": "u thực thể",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "phẫu thuật cắt bỏ toàn bộ khối u và buồng trứng",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Có nhiều phương pháp điều trị khác nhau, tùy theo tuổi và kích thước khối u, nguyện vọng mang thai và sinh con của người phụ nữ, bác sĩ sẽ tư vấn phương pháp phù hợp, có thể phẫu thuật cắt bỏ toàn bộ khối u và buồng trứng, hoặc chỉ bóc tách khối u lành khỏi buồng trứng.",
+        "head": "u thực thể",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "bóc tách khối u lành khỏi buồng trứng",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Tuy nhiên, phương pháp bóc tách này vẫn có nguy cơ tái phát bệnh u nang buồng trứng trong tương lai đặc biệt là nang lạc nội mạc.",
+        "head": "bóc tách khối u lành khỏi buồng trứng",
+        "head_type": "treatment",
+        "relation": "relatedTo",
+        "tail": "tái phát bệnh u nang buồng trứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tùy theo kích thước u nang và mong muốn sinh con của phụ nữ mà có chỉ định điều trị phù hợp Bác sĩ Hồ Thị Khánh Quyên chia sẻ một số phương pháp mổ u nang buồng trứng hiện được áp dụng tại Trung tâm Sản Phụ khoa, Bệnh viện Đa khoa Tâm Anh gồm:",
+        "head": "u nang buồng trứng",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "mổ u nang buồng trứng",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Đây là phương pháp được tin dùng hiện nay trong phẫu thuật điều trị u nang buồng trứng bởi ít gây đau và thời gian nằm viện ít, thời gian phục hồi nhanh.",
+        "head": "mổ u nang buồng trứng",
+        "head_type": "treatment",
+        "relation": "relatedTo",
+        "tail": "ít gây đau và thời gian nằm viện ít, thời gian phục hồi nhanh",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Phương pháp này được chỉ định trong các trường hợp:  U buồng trứng không nghi ngờ ác tính. U buồng trứng không quá to, không quá dính. Ung thư vú có chỉ định cắt buồng trứng.",
+        "head": "mổ u nang buồng trứng",
+        "head_type": "treatment",
+        "relation": "relatedTo",
+        "tail": "U buồng trứng không nghi ngờ ác tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Phương pháp này được chỉ định trong các trường hợp:  U buồng trứng không nghi ngờ ác tính. U buồng trứng không quá to, không quá dính. Ung thư vú có chỉ định cắt buồng trứng.",
+        "head": "mổ u nang buồng trứng",
+        "head_type": "treatment",
+        "relation": "relatedTo",
+        "tail": "U buồng trứng không quá to, không quá dính",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Phương pháp này được chỉ định trong các trường hợp:  U buồng trứng không nghi ngờ ác tính. U buồng trứng không quá to, không quá dính. Ung thư vú có chỉ định cắt buồng trứng.",
+        "head": "mổ u nang buồng trứng",
+        "head_type": "treatment",
+        "relation": "relatedTo",
+        "tail": "Ung thư vú có chỉ định cắt buồng trứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Với những khối u nang có kích thước lớn, nghi ngờ ung thư sẽ được chỉ định thực hiện cắt bỏ thông qua phương pháp phẫu thuật mở bụng.",
+        "head": "phẫu thuật mở bụng",
+        "head_type": "treatment",
+        "relation": "treatedBy",
+        "tail": "u nang buồng trứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Với những khối u nang có kích thước lớn, nghi ngờ ung thư sẽ được chỉ định thực hiện cắt bỏ thông qua phương pháp phẫu thuật mở bụng.",
+        "head": "phẫu thuật mở bụng",
+        "head_type": "treatment",
+        "relation": "relatedTo",
+        "tail": "khối u nang có kích thước lớn, nghi ngờ ung thư",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Sau khi phẫu thuật, khối u buồng trứng sẽ được đem đi giải phẫu nhằm kiểm tra mô bệnh học của u.",
+        "head": "phẫu thuật",
+        "head_type": "treatment",
+        "relation": "relatedTo",
+        "tail": "kiểm tra mô bệnh học của u",
+        "tail_type": "test"
+    },
+    {
+        "text": "Sau khi phẫu thuật, khối u buồng trứng sẽ được đem đi giải phẫu nhằm kiểm tra mô bệnh học của u.",
+        "head": "phẫu thuật",
+        "head_type": "treatment",
+        "relation": "relatedTo",
+        "tail": "khối u buồng trứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Tuy nhiên, với phương pháp này người bệnh sẽ mất nhiều thời gian để hồi phục.",
+        "head": "phẫu thuật mở bụng",
+        "head_type": "treatment",
+        "relation": "relatedTo",
+        "tail": "mất nhiều thời gian để hồi phục",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Không thể dự phòng được khối u buồng trứng.",
+        "head": "khối u buồng trứng",
+        "head_type": "disease",
+        "relation": "preventedBy",
+        "tail": "không thể dự phòng",
+        "tail_type": "lifestyle"
+    },
+    {
+        "text": "Sử dụng thuốc ngừa thai, cho con bú trên 6 tháng được ghi nhận có thể giảm nguy cơ ung thư buồng trứng.",
+        "head": "thuốc ngừa thai",
+        "head_type": "treatment",
+        "relation": "preventedBy",
+        "tail": "ung thư buồng trứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Sử dụng thuốc ngừa thai, cho con bú trên 6 tháng được ghi nhận có thể giảm nguy cơ ung thư buồng trứng.",
+        "head": "cho con bú trên 6 tháng",
+        "head_type": "lifestyle",
+        "relation": "preventedBy",
+        "tail": "ung thư buồng trứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Thăm khám phụ khoa định kỳ: Việc theo dõi, thăm khám sức khỏe phụ khoa định kỳ 6 tháng/lần chính là giải pháp tối ưu giúp phát hiện sớm các dấu hiệu bất thường, từ đó có chẩn đoán chính xác và can thiệp điều trị ngay từ đầu, mang lại hiệu quả điều trị cao, cũng như tránh được những biến chứng nguy hiểm xảy ra.",
+        "head": "Thăm khám phụ khoa định kỳ",
+        "head_type": "test",
+        "relation": "diagnosedBy",
+        "tail": "u nang buồng trứng",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Thăm khám phụ khoa định kỳ: Việc theo dõi, thăm khám sức khỏe phụ khoa định kỳ 6 tháng/lần chính là giải pháp tối ưu giúp phát hiện sớm các dấu hiệu bất thường, từ đó có chẩn đoán chính xác và can thiệp điều trị ngay từ đầu, mang lại hiệu quả điều trị cao, cũng như tránh được những biến chứng nguy hiểm xảy ra.",
+        "head": "Thăm khám phụ khoa định kỳ",
+        "head_type": "test",
+        "relation": "relatedTo",
+        "tail": "dấu hiệu bất thường",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Thăm khám phụ khoa định kỳ: Việc theo dõi, thăm khám sức khỏe phụ khoa định kỳ 6 tháng/lần chính là giải pháp tối ưu giúp phát hiện sớm các dấu hiệu bất thường, từ đó có chẩn đoán chính xác và can thiệp điều trị ngay từ đầu, mang lại hiệu quả điều trị cao, cũng như tránh được những biến chứng nguy hiểm xảy ra.",
+        "head": "Thăm khám phụ khoa định kỳ",
+        "head_type": "test",
+        "relation": "relatedTo",
+        "tail": "biến chứng nguy hiểm",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Được đầu tư xây dựng cơ sở vật chất khang trang; quy tụ đội ngũ chuyên gia, bác sĩ đầu ngành giỏi chuyên môn, giàu kinh nghiệm; trang bị hệ thống máy móc tối tân như máy siêu âm 2D, 3D, 4D, siêu âm màu Doppler, siêu âm Voluson E10 thế hệ mới nhất… Trung tâm Sản Phụ khoa, Bệnh viện Đa khoa Tâm Anh triển khai đa dạng các gói thăm khám và chăm sóc sức khỏe toàn diện cho phụ nữ.",
+        "head": "Trung tâm Sản Phụ khoa, Bệnh viện Đa khoa Tâm Anh",
+        "head_type": "organ",
+        "relation": "locatedIn",
+        "tail": "Bệnh viện Đa khoa Tâm Anh",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Được đầu tư xây dựng cơ sở vật chất khang trang; quy tụ đội ngũ chuyên gia, bác sĩ đầu ngành giỏi chuyên môn, giàu kinh nghiệm; trang bị hệ thống máy móc tối tân như máy siêu âm 2D, 3D, 4D, siêu âm màu Doppler, siêu âm Voluson E10 thế hệ mới nhất… Trung tâm Sản Phụ khoa, Bệnh viện Đa khoa Tâm Anh triển khai đa dạng các gói thăm khám và chăm sóc sức khỏe toàn diện cho phụ nữ.",
+        "head": "Trung tâm Sản Phụ khoa, Bệnh viện Đa khoa Tâm Anh",
+        "head_type": "organ",
+        "relation": "relatedTo",
+        "tail": "máy siêu âm 2D, 3D, 4D, siêu âm màu Doppler, siêu âm Voluson E10 thế hệ mới nhất",
+        "tail_type": "test"
+    },
+    {
+        "text": "U nang buồng trứng\nlà bệnh lý phổ biến, lành tính nhưng cũng tiềm ẩn nhiều nguy cơ.",
+        "head": "U nang buồng trứng",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "bệnh lý phổ biến",
+        "tail_type": "disease"
+    },
+    {
+        "text": "U nang buồng trứng\nlà bệnh lý phổ biến, lành tính nhưng cũng tiềm ẩn nhiều nguy cơ.",
+        "head": "U nang buồng trứng",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "bệnh lý lành tính",
+        "tail_type": "disease"
+    },
+    {
+        "text": "U nang buồng trứng\nlà bệnh lý phổ biến, lành tính nhưng cũng tiềm ẩn nhiều nguy cơ.",
+        "head": "U nang buồng trứng",
+        "head_type": "disease",
+        "relation": "associatedWith",
+        "tail": "nguy cơ",
+        "tail_type": "cause"
+    },
+    {
+        "text": "Đây là bệnh lý phụ khoa thường gặp ở nữ giới, có thể xảy ra ở mọi đối tượng và độ tuổi, từ bé gái trước dậy thì, phụ nữ mang thai đến phụ nữ mãn kinh… đều có nguy cơ mắc bệnh.",
+        "head": "U nang buồng trứng",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "nữ giới",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Đây là bệnh lý phụ khoa thường gặp ở nữ giới, có thể xảy ra ở mọi đối tượng và độ tuổi, từ bé gái trước dậy thì, phụ nữ mang thai đến phụ nữ mãn kinh… đều có nguy cơ mắc bệnh.",
+        "head": "U nang buồng trứng",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "bé gái trước dậy thì",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Đây là bệnh lý phụ khoa thường gặp ở nữ giới, có thể xảy ra ở mọi đối tượng và độ tuổi, từ bé gái trước dậy thì, phụ nữ mang thai đến phụ nữ mãn kinh… đều có nguy cơ mắc bệnh.",
+        "head": "U nang buồng trứng",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "phụ nữ mang thai",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Đây là bệnh lý phụ khoa thường gặp ở nữ giới, có thể xảy ra ở mọi đối tượng và độ tuổi, từ bé gái trước dậy thì, phụ nữ mang thai đến phụ nữ mãn kinh… đều có nguy cơ mắc bệnh.",
+        "head": "U nang buồng trứng",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "phụ nữ mãn kinh",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Đặc biệt, u nang ở phụ nữ mang thai thường bắt đầu với kích thước nhỏ khoảng dưới 3 - 4cm, không có triệu chứng hoặc triệu chứng không rõ ràng nên gây nhầm lẫn, chủ quan không thăm khám.",
+        "head": "U nang buồng trứng",
+        "head_type": "disease",
+        "relation": "relatedTo",
+        "tail": "phụ nữ mang thai",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Đặc biệt, u nang ở phụ nữ mang thai thường bắt đầu với kích thước nhỏ khoảng dưới 3 - 4cm, không có triệu chứng hoặc triệu chứng không rõ ràng nên gây nhầm lẫn, chủ quan không thăm khám.",
+        "head": "U nang buồng trứng",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "kích thước nhỏ",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Đặc biệt, u nang ở phụ nữ mang thai thường bắt đầu với kích thước nhỏ khoảng dưới 3 - 4cm, không có triệu chứng hoặc triệu chứng không rõ ràng nên gây nhầm lẫn, chủ quan không thăm khám.",
+        "head": "U nang buồng trứng",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "không có triệu chứng",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Đặc biệt, u nang ở phụ nữ mang thai thường bắt đầu với kích thước nhỏ khoảng dưới 3 - 4cm, không có triệu chứng hoặc triệu chứng không rõ ràng nên gây nhầm lẫn, chủ quan không thăm khám.",
+        "head": "U nang buồng trứng",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "triệu chứng không rõ ràng",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Bệnh này đặc trưng với khối u phát triển bất thường ở buồng trứng.",
+        "head": "U nang buồng trứng",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "khối u phát triển bất thường",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Bệnh này đặc trưng với khối u phát triển bất thường ở buồng trứng.",
+        "head": "U nang buồng trứng",
+        "head_type": "disease",
+        "relation": "locatedIn",
+        "tail": "buồng trứng",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Khối u này có thể là một tổ chức mới xuất hiện trên buồng trứng (hay còn gọi là tổ chức tân binh), hoặc có thể là sự tích tụ dịch tạo thành một nang chứa dịch ở buồng trứng.",
+        "head": "khối u",
+        "head_type": "disease",
+        "relation": "locatedIn",
+        "tail": "buồng trứng",
+        "tail_type": "organ"
+    },
+    {
+        "text": "Khối u này có thể là một tổ chức mới xuất hiện trên buồng trứng (hay còn gọi là tổ chức tân binh), hoặc có thể là sự tích tụ dịch tạo thành một nang chứa dịch ở buồng trứng.",
+        "head": "khối u",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "tổ chức tân binh",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Khối u này có thể là một tổ chức mới xuất hiện trên buồng trứng (hay còn gọi là tổ chức tân binh), hoặc có thể là sự tích tụ dịch tạo thành một nang chứa dịch ở buồng trứng.",
+        "head": "khối u",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "sự tích tụ dịch",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Khối u này có thể là một tổ chức mới xuất hiện trên buồng trứng (hay còn gọi là tổ chức tân binh), hoặc có thể là sự tích tụ dịch tạo thành một nang chứa dịch ở buồng trứng.",
+        "head": "khối u",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "nang chứa dịch",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Có rất nhiều cách để phân loại khối u nang này như: theo kích thước, tính chất hoặc hình dạng nhìn thấy trên siêu âm… nhưng quan trọng nhất là cần xem xét u nang buồng trứng lành tính hay ác tính.",
+        "head": "khối u nang",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "siêu âm",
+        "tail_type": "test"
+    },
+    {
+        "text": "Có rất nhiều cách để phân loại khối u nang này như: theo kích thước, tính chất hoặc hình dạng nhìn thấy trên siêu âm… nhưng quan trọng nhất là cần xem xét u nang buồng trứng lành tính hay ác tính.",
+        "head": "khối u nang",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "kích thước",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Có rất nhiều cách để phân loại khối u nang này như: theo kích thước, tính chất hoặc hình dạng nhìn thấy trên siêu âm… nhưng quan trọng nhất là cần xem xét u nang buồng trứng lành tính hay ác tính.",
+        "head": "khối u nang",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "tính chất",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Có rất nhiều cách để phân loại khối u nang này như: theo kích thước, tính chất hoặc hình dạng nhìn thấy trên siêu âm… nhưng quan trọng nhất là cần xem xét u nang buồng trứng lành tính hay ác tính.",
+        "head": "khối u nang",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "hình dạng",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Có rất nhiều cách để phân loại khối u nang này như: theo kích thước, tính chất hoặc hình dạng nhìn thấy trên siêu âm… nhưng quan trọng nhất là cần xem xét u nang buồng trứng lành tính hay ác tính.",
+        "head": "u nang buồng trứng",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "lành tính",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Có rất nhiều cách để phân loại khối u nang này như: theo kích thước, tính chất hoặc hình dạng nhìn thấy trên siêu âm… nhưng quan trọng nhất là cần xem xét u nang buồng trứng lành tính hay ác tính.",
+        "head": "u nang buồng trứng",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "ác tính",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Để phân biệt giữa u ác tính và lành tính, khối u sẽ được lấy ra khỏi cơ thể và tiến hành giải phẫu bệnh.",
+        "head": "u ác tính",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "giải phẫu bệnh",
+        "tail_type": "test"
+    },
+    {
+        "text": "Để phân biệt giữa u ác tính và lành tính, khối u sẽ được lấy ra khỏi cơ thể và tiến hành giải phẫu bệnh.",
+        "head": "u lành tính",
+        "head_type": "disease",
+        "relation": "diagnosedBy",
+        "tail": "giải phẫu bệnh",
+        "tail_type": "test"
+    },
+    {
+        "text": "Quá trình diễn biến của một khối u có thể là không thay đổi kích thước (trường hợp này hiếm gặp); khối u biến mất (thường gặp ở khối u cơ năng); khối u to dần và kèm theo các biến chứng chèn ép như đau, bí tiểu, rối loạn tiểu tiện,&#8230;; khối u bị xoắn làm ngưng trệ tuần hoàn máu đến buồng trứng, lâu ngày dẫn đến thiếu máu nuôi gây hoại tử, vỡ u nang cần phải phẫu thuật ngay.",
+        "head": "khối u",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "không thay đổi kích thước",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Quá trình diễn biến của một khối u có thể là không thay đổi kích thước (trường hợp này hiếm gặp); khối u biến mất (thường gặp ở khối u cơ năng); khối u to dần và kèm theo các biến chứng chèn ép như đau, bí tiểu, rối loạn tiểu tiện,&#8230;; khối u bị xoắn làm ngưng trệ tuần hoàn máu đến buồng trứng, lâu ngày dẫn đến thiếu máu nuôi gây hoại tử, vỡ u nang cần phải phẫu thuật ngay.",
+        "head": "khối u",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "biến mất",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Quá trình diễn biến của một khối u có thể là không thay đổi kích thước (trường hợp này hiếm gặp); khối u biến mất (thường gặp ở khối u cơ năng); khối u to dần và kèm theo các biến chứng chèn ép như đau, bí tiểu, rối loạn tiểu tiện,&#8230;; khối u bị xoắn làm ngưng trệ tuần hoàn máu đến buồng trứng, lâu ngày dẫn đến thiếu máu nuôi gây hoại tử, vỡ u nang cần phải phẫu thuật ngay.",
+        "head": "khối u",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "to dần",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Quá trình diễn biến của một khối u có thể là không thay đổi kích thước (trường hợp này hiếm gặp); khối u biến mất (thường gặp ở khối u cơ năng); khối u to dần và kèm theo các biến chứng chèn ép như đau, bí tiểu, rối loạn tiểu tiện,&#8230;; khối u bị xoắn làm ngưng trệ tuần hoàn máu đến buồng trứng, lâu ngày dẫn đến thiếu máu nuôi gây hoại tử, vỡ u nang cần phải phẫu thuật ngay.",
+        "head": "khối u",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "biến chứng chèn ép",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Quá trình diễn biến của một khối u có thể là không thay đổi kích thước (trường hợp này hiếm gặp); khối u biến mất (thường gặp ở khối u cơ năng); khối u to dần và kèm theo các biến chứng chèn ép như đau, bí tiểu, rối loạn tiểu tiện,&#8230;; khối u bị xoắn làm ngưng trệ tuần hoàn máu đến buồng trứng, lâu ngày dẫn đến thiếu máu nuôi gây hoại tử, vỡ u nang cần phải phẫu thuật ngay.",
+        "head": "khối u",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "đau",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Quá trình diễn biến của một khối u có thể là không thay đổi kích thước (trường hợp này hiếm gặp); khối u biến mất (thường gặp ở khối u cơ năng); khối u to dần và kèm theo các biến chứng chèn ép như đau, bí tiểu, rối loạn tiểu tiện,&#8230;; khối u bị xoắn làm ngưng trệ tuần hoàn máu đến buồng trứng, lâu ngày dẫn đến thiếu máu nuôi gây hoại tử, vỡ u nang cần phải phẫu thuật ngay.",
+        "head": "khối u",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "bí tiểu",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Quá trình diễn biến của một khối u có thể là không thay đổi kích thước (trường hợp này hiếm gặp); khối u biến mất (thường gặp ở khối u cơ năng); khối u to dần và kèm theo các biến chứng chèn ép như đau, bí tiểu, rối loạn tiểu tiện,&#8230;; khối u bị xoắn làm ngưng trệ tuần hoàn máu đến buồng trứng, lâu ngày dẫn đến thiếu máu nuôi gây hoại tử, vỡ u nang cần phải phẫu thuật ngay.",
+        "head": "khối u",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "rối loạn tiểu tiện",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Quá trình diễn biến của một khối u có thể là không thay đổi kích thước (trường hợp này hiếm gặp); khối u biến mất (thường gặp ở khối u cơ năng); khối u to dần và kèm theo các biến chứng chèn ép như đau, bí tiểu, rối loạn tiểu tiện,&#8230;; khối u bị xoắn làm ngưng trệ tuần hoàn máu đến buồng trứng, lâu ngày dẫn đến thiếu máu nuôi gây hoại tử, vỡ u nang cần phải phẫu thuật ngay.",
+        "head": "khối u",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "xoắn",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Quá trình diễn biến của một khối u có thể là không thay đổi kích thước (trường hợp này hiếm gặp); khối u biến mất (thường gặp ở khối u cơ năng); khối u to dần và kèm theo các biến chứng chèn ép như đau, bí tiểu, rối loạn tiểu tiện,&#8230;; khối u bị xoắn làm ngưng trệ tuần hoàn máu đến buồng trứng, lâu ngày dẫn đến thiếu máu nuôi gây hoại tử, vỡ u nang cần phải phẫu thuật ngay.",
+        "head": "khối u",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "ngưng trệ tuần hoàn máu",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Quá trình diễn biến của một khối u có thể là không thay đổi kích thước (trường hợp này hiếm gặp); khối u biến mất (thường gặp ở khối u cơ năng); khối u to dần và kèm theo các biến chứng chèn ép như đau, bí tiểu, rối loạn tiểu tiện,&#8230;; khối u bị xoắn làm ngưng trệ tuần hoàn máu đến buồng trứng, lâu ngày dẫn đến thiếu máu nuôi gây hoại tử, vỡ u nang cần phải phẫu thuật ngay.",
+        "head": "khối u",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "thiếu máu nuôi",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Quá trình diễn biến của một khối u có thể là không thay đổi kích thước (trường hợp này hiếm gặp); khối u biến mất (thường gặp ở khối u cơ năng); khối u to dần và kèm theo các biến chứng chèn ép như đau, bí tiểu, rối loạn tiểu tiện,&#8230;; khối u bị xoắn làm ngưng trệ tuần hoàn máu đến buồng trứng, lâu ngày dẫn đến thiếu máu nuôi gây hoại tử, vỡ u nang cần phải phẫu thuật ngay.",
+        "head": "khối u",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "hoại tử",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Quá trình diễn biến của một khối u có thể là không thay đổi kích thước (trường hợp này hiếm gặp); khối u biến mất (thường gặp ở khối u cơ năng); khối u to dần và kèm theo các biến chứng chèn ép như đau, bí tiểu, rối loạn tiểu tiện,&#8230;; khối u bị xoắn làm ngưng trệ tuần hoàn máu đến buồng trứng, lâu ngày dẫn đến thiếu máu nuôi gây hoại tử, vỡ u nang cần phải phẫu thuật ngay.",
+        "head": "khối u",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "vỡ u nang",
+        "tail_type": "symptom"
+    },
+    {
+        "text": "Quá trình diễn biến của một khối u có thể là không thay đổi kích thước (trường hợp này hiếm gặp); khối u biến mất (thường gặp ở khối u cơ năng); khối u to dần và kèm theo các biến chứng chèn ép như đau, bí tiểu, rối loạn tiểu tiện,&#8230;; khối u bị xoắn làm ngưng trệ tuần hoàn máu đến buồng trứng, lâu ngày dẫn đến thiếu máu nuôi gây hoại tử, vỡ u nang cần phải phẫu thuật ngay.",
+        "head": "khối u",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "phẫu thuật",
+        "tail_type": "treatment"
+    },
+    {
+        "text": "Cảm giác tê buốt bàn chân là triệu chứng của biến chứng bàn chân đái tháo đường.",
+        "head": "Cảm giác tê buốt bàn chân",
+        "head_type": "symptom",
+        "relation": "isSymptomOf",
+        "tail": "biến chứng bàn chân đái tháo đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Xơ vữa mạch máu là một trong những nguyên nhân chính gây ra biến chứng bàn chân đái tháo đường.",
+        "head": "Xơ vữa mạch máu",
+        "head_type": "cause",
+        "relation": "causedBy",
+        "tail": "biến chứng bàn chân đái tháo đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Loét bàn chân đái tháo đường là biến chứng phức tạp của bệnh đái tháo đường.",
+        "head": "Loét bàn chân đái tháo đường",
+        "head_type": "disease",
+        "relation": "isSymptomOf",
+        "tail": "bệnh đái tháo đường",
+        "tail_type": "disease"
+    },
+    {
+        "text": "Bệnh nhân đái tháo đường có thể kiểm soát được biến chứng bàn chân thông qua các biện pháp chăm sóc bàn chân.",
+        "head": "Biến chứng bàn chân",
+        "head_type": "disease",
+        "relation": "treatedBy",
+        "tail": "Chăm sóc bàn chân",
+        "tail_type": "treatment"
+    }
+]
